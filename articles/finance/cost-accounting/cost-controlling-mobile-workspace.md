@@ -121,7 +121,7 @@ If version 1611 with Platform update 3 or later has been deployed for your organ
 
 
 ## Download and install the mobile app
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

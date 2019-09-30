@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points to content for system administrators of Microsoft Dynamics 365 for Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
+This topic points to content for system administrators of Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
 
 ## One Version
 In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to stay current.
@@ -61,7 +61,7 @@ The management of the implementation involves many different stakeholders from t
 You can deploy in the cloud or on-premises. Cloud deployments offer an enterprise resource planning (ERP) service that is fully managed by Microsoft. On-premises deployments are deployed locally in a customer's data center.
 
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
-- [Dynamics 365 for Finance and Operations cloud deployment overview](../deployment/cloud-deployment-overview.md)
+- [Dynamics 365 Finance and Operations cloud deployment overview](../deployment/cloud-deployment-overview.md)
 - [System requirements for cloud deployments](../../fin-and-ops/get-started/system-requirements.md)
 - [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
 - [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -115,7 +115,7 @@ The integration with Microsoft Office provides a set of productive, collaborativ
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Mobile
-The Microsoft Dynamics 365 for Unified Operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.
+The Finance and Operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.
 
 - [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
 - [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)

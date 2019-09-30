@@ -230,7 +230,7 @@ Maintenance checklist templates can be used as a common set of tasks that a work
 26. To set up attachments on a selected maintenance job type default line, select **Attach documents**. Attachments that are set up on a maintenance job type default line are automatically included on work order lines that use that maintenance job type default line.
 27. Select **New**, and then select a document type.
 28. Upload the document or file.
-29. Set the fields on the **Attachments** page. The attachment setup uses standard document setup functionality in Finance and Operations.
+29. Set the fields on the **Attachments** page. The attachment setup uses standard document setup functionality.
 30. Select **Save** to save the attachment.
 
     > [!NOTE]

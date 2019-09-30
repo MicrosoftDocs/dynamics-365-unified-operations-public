@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Synchronize sales quotation headers and lines directly from Sales to Finance and Operations
-description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Finance and Operations. 
+title: Synchronize sales quotation headers and lines directly from Sales to Supply Chain Management
+description: The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -30,26 +30,26 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize sales quotation headers and lines directly from Sales to Finance and Operations
+# Synchronize sales quotation headers and lines directly from Sales to Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
-The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Finance and Operations.
+The topic discusses the templates and underlying tasks that are used to synchronize sales quotation headers and lines directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## Data flow in Prospect to cash
 
-The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Finance and Operations and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. The following illustration shows how the data is synchronized between Finance and Operations and Sales.
+The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data for accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
 [![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## Template and tasks
 
-The following template and underlying tasks are used to synchronize sales quotation headers and lines directly from Sales to Finance and Operations:
+The following template and underlying tasks are used to synchronize sales quotation headers and lines directly from Sales to Supply Chain Management:
 
-- **Name of the template in Data integration:** Sales Quotes (Sales to Fin and Ops) - Direct
+- **Name of the template in Data integration:** Sales Quotes (Sales to Supply Chain Management) - Direct
 - **Names of the tasks in the Data integration project:**
 
     - QuoteHeader
@@ -57,9 +57,9 @@ The following template and underlying tasks are used to synchronize sales quotat
 
 The following synchronization tasks are required before synchronization of sales quotation headers and lines can occur:
 
-- Products (Fin and Ops to Sales) - Direct
-- Accounts (Sales to Fin and Ops) - Direct (if used)
-- Contacts to Customers (Sales to Fin and Ops) - Direct (if used)
+- Products (Supply Chain Management to Sales) - Direct
+- Accounts (Sales to Supply Chain Management) - Direct (if used)
+- Contacts to Customers (Sales to Supply Chain Management) - Direct (if used)
 
 ## Entity set
 
@@ -70,7 +70,7 @@ The following synchronization tasks are required before synchronization of sales
 
 ## Entity flow
 
-Sales quotations are created in Sales and synchronized to Finance and Operations.
+Sales quotations are created in Sales and synchronized to Supply Chain Management.
 
 Sales quotations from Sales are synchronized only if the following conditions are met:
 
@@ -79,13 +79,13 @@ Sales quotations from Sales are synchronized only if the following conditions ar
 
 ## Prospect to cash solution for Sales
 
-The **Has Externally Maintained Products Only** field has been added to the **Quote** entity to consistently track whether the sales quotation consists entirely of externally maintained products. If a sales quotation has only externally maintained products, the products are maintained in Finance and Operations. This behavior helps guarantee that you don't try to synchronize sales quotation lines that have products that are unknown to Finance and Operations.
+The **Has Externally Maintained Products Only** field has been added to the **Quote** entity to consistently track whether the sales quotation consists entirely of externally maintained products. If a sales quotation has only externally maintained products, the products are maintained in Supply Chain Management. This behavior helps guarantee that you don't try to synchronize sales quotation lines that have products that are unknown to Supply Chain Management.
 
 All quote products on the sales quotation are updated with the **Has Externally Maintained Products Only** information from the sales quotation header. This information is found in the **Quote Has Externally Maintained Products Only** field on the **QuoteDetails** entity.
 
-A discount can be added to the quote product and will be synchronized to Finance and Operations. The **Discount**, **Charges**, and **Tax** fields on the header are controlled by a setup in Finance and Operations. Currently, this setup doesn't support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are maintained and handled in Finance and Operations.
+A discount can be added to the quote product and will be synchronized to Supply Chain Management. The **Discount**, **Charges**, and **Tax** fields on the header are controlled by a setup in Supply Chain Management. Currently, this setup doesn't support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are maintained and handled in FSupply Chain Management.
 
-In Sales, the solution makes the following fields read-only, because the values aren't synchronized to Finance and Operations:
+In Sales, the solution makes the following fields read-only, because the values aren't synchronized to Supply Chain Management:
 
 - Read-only fields on the sales quotation header: **Discount %**, **Discount**, and **Freight Amount**
 - Read-only fields on quote products: **Tax**
@@ -115,20 +115,20 @@ Before sales quotations are synchronized, it's important that you update the fol
 
 #### QuoteLine
 
-- Make sure that the required value map exists for **SalesUnitSymbol** in Finance and Operations.
+- Make sure that the required value map exists for **SalesUnitSymbol** in Supply Chain Management.
 - Make sure that the required units are defined in Sales.
 
     A template value that has a value map is defined for **oumid.name** to **SalesUnitSymbol**.
 
-- Optional: You can add the following mappings to help guarantee that sales quotation lines are imported into Finance and Operations if there is no default information from either the customer or the product:
+- Optional: You can add the following mappings to help guarantee that sales quotation lines are imported into Supply Chain Management if there is no default information from either the customer or the product:
 
-    - **SiteId** – A site is required in order to generate quotations and sales order lines in Finance and Operations. There is no default template value for **SiteId**.
-    - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Finance and Operations. There is no default template value for **WarehouseId**.
+    - **SiteId** – A site is required in order to generate quotations and sales order lines in Supply Chain Management. There is no default template value for **SiteId**.
+    - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Supply Chain Management. There is no default template value for **WarehouseId**.
 
 ## Template mapping in data integrator
 
 > [!NOTE]
-> - The **Discount**, **Charges**, and **Tax** fields are controlled by a complex setup in Finance and Operations. Currently, this setup doesn't support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are handled by Finance and Operations.
+> - The **Discount**, **Charges**, and **Tax** fields are controlled by a complex setup in Supply Chain Management. Currently, this setup doesn't support integration mapping. In the current design, the **Price**, **Discount**, **Charge**, and **Tax** fields are handled by Supply Chain Management.
 > - The **Payment terms**, **Freight terms**, **Delivery terms**, **Shipping method**, and **Delivery mode** fields aren't part of the default mappings. To map these fields, you must set up a value mapping that is specific to the data in the organizations that the entity is synchronized between.
 
 The following illustrations show an example of a template mapping in data integrator.

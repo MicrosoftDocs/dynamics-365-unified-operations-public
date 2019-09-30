@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations **version 8.1 (October 2018) and later**. This is applicable for cloud releases only.
+The following set of topics provide information that is related to service updates for Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018) and later. This is applicable for cloud releases only.
 
 - [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md) – This topic provides information about the release cadence and release process.
 - [Software lifecycle policy and cloud releases](../migration-upgrade/versions-update-policy.md) – This topic provides information about the service updates, availability, and end of service.

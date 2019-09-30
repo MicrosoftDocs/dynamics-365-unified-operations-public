@@ -59,18 +59,14 @@ To debug X++ code, follow these steps.
 
    [![Hover](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Another tool that is specific to the Finance and Operations applications is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**. 
+   Another tool that is specific to Finance and Operations applications is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**. 
 
    [![Infolog](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 
-7. After you've finished debugging the application, exit the Finance and Operations application. Visual Studio will exit debugging mode.
+7. After you've finished debugging the application, exit the application. Visual Studio will exit debugging mode.
 
 
 Additional resources
 --------
 
 [Developer home page](developer-home-page.md)
-
-
-
-

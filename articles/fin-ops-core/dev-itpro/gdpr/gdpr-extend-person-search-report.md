@@ -125,7 +125,7 @@ For a filter to be created, a **PersonSearchResult** record with the matching fi
 
 ## Additional resources
 
-If you're extending the Person search report as part of a response to a request for data under the General Data Protection Regulation (GDPR) in the European Union, more information about that regulation is available in the [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](./gdpr-guide.md).
+If you're extending the Person search report as part of a response to a request for data under the General Data Protection Regulation (GDPR) in the European Union, more information about that regulation is available in the [General Data Protection Regulation overview](./gdpr-guide.md).
 
 You can learn more about the GDPR on the [European Union's website](https://europa.eu/) and on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
 

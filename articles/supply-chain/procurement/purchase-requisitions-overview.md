@@ -146,7 +146,7 @@ In the procurement policies, you can control the requisition purposes that are a
 
 ### Requisitions that have a purpose of consumption
 
-A requisition that has a purpose of consumption represents demand for items or services that will be used internally by your organization. The demand that is created by this kind of requisition is always fulfilled by a purchase order. If Finance and Operations is set up to automatically generate purchase orders, purchase orders are created after the purchase requisition is approved.
+A requisition that has a purpose of consumption represents demand for items or services that will be used internally by your organization. The demand that is created by this kind of requisition is always fulfilled by a purchase order. If Supply Chain Management is set up to automatically generate purchase orders, purchase orders are created after the purchase requisition is approved.
 
 ### Requisitions that have a purpose of replenishment
 

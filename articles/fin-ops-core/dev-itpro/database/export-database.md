@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a database
-description: This topic explains how to export a database for Finance and Operations.
+description: This topic explains how to export a database for Finance and Operations applications.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 08/15/2019

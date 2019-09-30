@@ -3,7 +3,7 @@
 # required metadata
 
 title: What's new or changed home page
-description: This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
+description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
 manager: AnnBe
 ms.date: 09/16/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 # What's new or changed home page
 [!include [banner](../includes/banner.md)]
 
-This page points you to topics that can help you learn about the new features in the latest versions of Microsoft Dynamics 365 for Finance and Operations.
+This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 
 For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 

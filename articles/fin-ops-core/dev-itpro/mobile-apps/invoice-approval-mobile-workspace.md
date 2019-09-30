@@ -33,7 +33,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic provides information about the **Invoice approvals** mobile workspace. This workspace provides a list of invoices that have been assigned to you through the vendor invoice header workflow process. 
 
-This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+This mobile workspace is intended to be used with the Finance and Operations mobile app.
 
 ## Overview
 
@@ -68,7 +68,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 
 ## Download and install the mobile app
 
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

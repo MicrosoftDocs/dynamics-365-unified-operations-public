@@ -187,7 +187,7 @@ identical where data may be maintained in both systems.
 
 ## When creating my connection set, I am unable to see the connection in the Connection drop-down list. What do I do?
 
-Make sure when creating your connections, you choose Dynamics 365 for Finance and Operations (currently in preview) and Common Data Service.
+Make sure when creating your connections, you choose Dynamics 365 Finance and Common Data Service.
 
 ## When syncing employments, I get the errors “CompanyInfo_FK doesn’t exist" or “The value '12/31/2154 11:59:59 pm' in field 'Employment end date' is not found in the related table 'Employment'.” What should I do?
 

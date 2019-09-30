@@ -50,9 +50,8 @@ We have made some improvements to how extensions are handled during an upgrade. 
 In Finance and Operations and Retail we introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Finance and Operations and Retail, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
 We introduced a new schema called the **ext schema** to support extensions. In previous versions, if you wanted to add an extension to channel DB, you would add it to the CRT or AX schema. In both Retail and Finance and Operations, you cannot change the CRT, AX, or DBO schemas. All changes must be made in the **ext schema**. If you modify anything in the CRT or AX schemas, then deployment in Lifecycle Services (LCS) will fail. An error message states that don’t have permission to modify the CRT, AX, and DBO schemas.
 
-
 > [!NOTE]
-> If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Finance and Operations will not automatically push the changes to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
+> If you want to increase any channel DB field length, you must create an extensibility request in LCS, increasing the EDT length or decimal precision. Changes will not be automatically pushed to the channel DB, and extensions will not have permissions to change or modify anything in the channel DB - CRT, AX or DBO schema. If you modify anything in the CRT or AX schemas, then deployment in LCS will fail.
 
 ## Best practices for channel DB extensions
 

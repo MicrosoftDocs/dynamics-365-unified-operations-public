@@ -98,13 +98,13 @@ In this example, the balance statement shows the following.
 | Purch acc  | 102   | 0      | 102     |
 | Vendor acc | 0     | 102    | -102    |
 
-Partial Storno can create an issue on the Original Print form. If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount. As a result, partial Storno is only allowed for certain documents. Microsoft Dynamics 365 for Operations provides partial Storno functionality for documents and countries/regions where it is allowed.
+Partial Storno can create an issue on the Original Print form. If there is a difference between the date of the original document and the date of Storno, it can make it difficult to get an accurate currency amount. As a result, partial Storno is only allowed for certain documents. Dynamics 365 Finance provides partial Storno functionality for documents and countries/regions where it is allowed.
 
 ## How to enter Storno on journal lines
 Enter the debit or credit amount with a negative sign on the journal line to make a Storno entry. The **Correction** field is set during the posting process. 
 
 ## How Storno is displayed
-Dynamics 365 for Operations handles negative journal amounts in a special way. The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.
+Finance handles negative journal amounts in a special way. The general journal entry, customer transaction, vendor transaction, and other transactions provide a Storno function, as shown below.
 
 <table>
 <thead>

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER) in Dynamics 365 for Finance and Operations. Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
+This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
 
 ## Create a provider
 1. Go to the **navigation pane** in the upper left corner and select **Organization administration**.

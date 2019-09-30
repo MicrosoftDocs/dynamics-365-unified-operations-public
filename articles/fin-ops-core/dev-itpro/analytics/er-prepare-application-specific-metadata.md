@@ -42,7 +42,7 @@ This topic walks you through examples of the following tasks:
 
 ## Prepare application metadata that can be used in RCS
 
-The following procedure shows how a user of Finance and Operations who has the **System Administrator** or **Electronic Reporting Developer** role can create an Electronic reporting (ER) configuration that contains metadata for the application, and that is used to design ER model mapping configurations in Regulatory configuration service (RCS). The sample ER model mapping configuration that is created in this example will be used to access foreign trade transactions.
+The following procedure shows how a user who has the **System Administrator** or **Electronic Reporting Developer** role can create an Electronic reporting (ER) configuration that contains metadata for the application, and that is used to design ER model mapping configurations in Regulatory configuration service (RCS). The sample ER model mapping configuration that is created in this example will be used to access foreign trade transactions.
 
 For this example, you want to use RCS to design an ER solution for the application that will be used to generate electronic documents that contain information from the foreign trade business domain. To specify the mapping between the ER data model and the sources of required data, you must have access to application metadata in RCS. Therefore, as part of the process of designing the ER solution, you must configure a new ER metadata configuration that contains all the metadata that is currently required in order to generate ER reports for the selected business domain.
 

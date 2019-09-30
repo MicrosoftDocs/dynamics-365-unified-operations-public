@@ -40,7 +40,7 @@ This topic describes the **Workforce metrics** Microsoft Power BI content. It ex
 The **Workforce metrics** Power BI content appears in the **Personnel management** workspace if you use one of these products:
 
 - Microsoft Dynamics 365 Finance
-- Microsoft Dynamics 365 for Talent
+- Microsoft Dynamics 365 Talent
 
 ## Metrics that are included in the Power BI content
 The following table lists the metrics that are shown on each report.

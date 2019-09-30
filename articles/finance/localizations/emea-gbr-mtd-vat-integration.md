@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)
-description: This topic walks you through the process of setting up Dynamics 365 Finance and Operations for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
+description: This topic walks you through the process of setting up Dynamics 365 Finance Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/10/2019
@@ -534,7 +534,7 @@ With respect to these versions of ER configurations, the application must be the
 | 10.0.2                                              | 10.0.80.10022    |
 | 10.0.3                                              | 10.0.107.0       |
 
-For Dynamics 365 for Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+For version 7.3, KB \#4504462 must be installed.
 
 ### Headers that are marked "Included (in part 2)"
 
@@ -552,7 +552,7 @@ With respect to these versions of ER configurations, the application must be the
 |-----------------------------------------------------|------------------|
 | 10.0.5                                              | 10.0.197.14       |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be installed.
+For version 7.3, KB \#4513878 must be installed.
 
 ### Implementation details
 
@@ -889,7 +889,7 @@ Sufficient versions of the applications:
 |-------------------|-----------|
 | 10.0.1 and higher | 10.0.51.0 |
 
-For Finance and Operations, Enterprise edition 7.3, the following KBs must be installed: 4489431, 4492999, and 4493076.
+For version 7.3, the following KBs must be installed: 4489431, 4492999, and 4493076.
 
 ### Hotfix "VAT report Box 5 should not be negative" (KB 4499784)
 
@@ -950,7 +950,7 @@ These versions of the ER configurations must be imported and used in the followi
 | 10.0.2  | 10.0.80.10022  |
 | 10.0.3  | 10.0.107.0     |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+For version 7.3, KB \#4504462 must be installed.
 
 ### "United Kingdom: Making Tax Digital (MTD) - Electronic reporting format configurations - remove country/region code" (KB 4513582)
 
@@ -973,7 +973,7 @@ These versions of the ER configurations can be imported into any version of the 
 | 10.0.2  | 10.0.80.10022  |
 | 10.0.3  | 10.0.107.0     |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+For version 7.3, KB \#4504462 must be installed.
 
 The following ER formats that are used to generate a VAT declaration (VAT 100 report in Excel format and VAT return in JSON format) still have **GB** as the value of the **ISO country/region code** parameter:
 
@@ -998,4 +998,4 @@ These versions of the ER configurations must be imported and used on the followi
 |---------|----------------|
 | 10.0.5  | 10.0.197.14    |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be installed.
+For version 7.3, KB \#4513878 must be installed.

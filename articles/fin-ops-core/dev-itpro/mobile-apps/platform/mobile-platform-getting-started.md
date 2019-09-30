@@ -63,8 +63,8 @@ We provide a sample workspace for Reservation management. This workspace is base
 
 The mobile app is being made available for the most popular mobile operating systems. You must have a Dynamics 365 Unified Operations instance and valid user credentials in order to log in to the app.
 
--   Android (available now) - [Microsoft Dynamics 365 Unified Operations on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   iPhone (available now) - [Microsoft Dynamics 365 Unified Operations on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+-   Android (available now) - [Finance and Operations mobile app on the Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
+-   iPhone (available now) - [Finance and Operations mobile app on the iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
 You're done! Launch the app from your mobile device to see the sample workspace.
 

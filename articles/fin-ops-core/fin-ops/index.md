@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 for Finance and Operations documentation
-description: Documentation for Microsoft Dynamics 365 for Finance and Operations. 
+title: Finance and Operations application documentation
+description: Documentation for Finance and Operations apps. 
 author: robinarh
 manager: AnnBe
 ms.date: 07/25/2019
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Dynamics 365 for Finance and Operations documentation
+# Finance and Operations application documentation
 
 [!include [banner](includes/banner.md)]
 
-Learn how to make Microsoft Dynamics 365 for Finance and Operations work for your business, using the resources below to find great content for end users, developers, and IT professionals. 
+Learn how to make Finance and Operations applications work for your business, using the resources in this topic to find great content for end users, developers, and IT professionals. 
 
 Much of this content also applies to the related products: Dynamics 365 Retail and Talent. 
 
@@ -134,7 +134,7 @@ Much of this content also applies to the related products: Dynamics 365 Retail a
 </td>
 <td>
 <h3>Related products</h3>
-<h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
+<h4><a href="../retail/index.md">Dynamics 365 Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Call center</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Channel setup and management</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>

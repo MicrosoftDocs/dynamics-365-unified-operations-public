@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/preview-banner.md)]
 
-Many tasks in Microsoft Dynamics 365 for Finance and Operations can be run as part of a batch job. Batch jobs are typically created for tasks such as processing reports, coordinating scheduled maintenance, and creating and sending documents such as invoices. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. The tasks in a batch job can run either sequentially or at the same time.
+Many tasks in Microsoft Dynamics 365 Finance can be run as part of a batch job. Batch jobs are typically created for tasks such as processing reports, coordinating scheduled maintenance, and creating and sending documents such as invoices. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours. The tasks in a batch job can run either sequentially or at the same time.
 
 In India, every legal entity must file Goods and Services Tax (GST) returns. Typically, the transaction volume is very high, because all details of sales and purchase invoices are reported to the government. Currently, GST return (GSTR) reports can be generated either directly from the report dialog box or by using the batch process. However, report generation can sometimes take quite a while. To make the process more dynamic and efficient, the multi-batch processing feature is provided for GSTR reports. This feature should significantly improve the performance of report generation.
 

@@ -39,7 +39,7 @@ This topic explains how you can design an Electronic reporting (ER) data source 
 ## Prerequisites
 To complete the examples in this topic, you must have the following access:
 
-- Access to one of these Microsoft Dynamics 365 for Finance and Operations roles:
+- Access to one of these roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -319,7 +319,7 @@ When a parameterized calculated field returns a record, you need to support bind
 You can run the initial and improved ER formats to make sure that configured parameterized calculated fields work properly.
 
 ### Import ER configurations
-You can import reviewed configurations from RCS to Finance and Operations by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting configurations from Regulatory Configuration Services](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
+You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting configurations from Regulatory Configuration Services](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
 
 1. Select the **DEMF** company and on the default dashboard, select **Electronic reporting**.
 2. Select **Reporting configurations**.
