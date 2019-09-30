@@ -812,10 +812,12 @@
     items:
     - name: Templates and layouts overview
       href: templates-layouts-overview.md
-      items: Templates
+    - name: Templates
+      items:
       - name: Work with templates
         href: work-with-templates.md
-      items: Layouts
+    - name: Layouts
+      items:
       - name: Work with preset layouts
         href: work-with-layouts.md
   - name: Site navigation
