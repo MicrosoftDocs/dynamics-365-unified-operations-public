@@ -1157,7 +1157,7 @@
     - name: Product recommendations on POS 
       href: ../retail/product.md
     - name: Add a recommendations control on POS devices
-      href: ../retail/add-recommendations-control-pos-screen
+      href: ../retail/add-recommendations-control-pos-screen.md
 - name: Monitoring and analysis
   items:
   - name: Monitor sales and margin performance
