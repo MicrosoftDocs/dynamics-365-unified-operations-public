@@ -630,7 +630,7 @@
     href: create-editorial-recommendation-lists.md
   - name: Manage AI-ML-based product recommendation results
     href: modify-product-recommendation-results.md
-  - name: Onmi-channel product recommendations using demo data
+  - name: Get product recommendations using demo data
     href: product-recommendations-demo-data.md
   - name: Product recommendations FAQ
     href: faq-recommendations.md
