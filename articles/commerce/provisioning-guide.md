@@ -66,7 +66,7 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce P
 https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345
 
 2. **Do not click the URL directly**, instead copy and paste it into your browser or text editor and replace **\{AAD_TENANT_ID\}** with your **AAD Tenant Id**, before navigating to the URL.
-3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant **e-Commerce UX** access to your subscription.
+3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant **Dynamics 365 Commerce (Preview)** access to your subscription.
 4. You will be sent to a page which confirms whether the operation was successful.
 
 *Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
@@ -75,10 +75,10 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Make sure that you are logged in with the same LCS account you used to request access to the Preview.
 ##### Confirm that preview features are available and enabled
 1. On the LCS front page, scroll all the way to the right and click "**Preview feature management**" tile.
-1. Scroll down to the "PRIVATE PREVIEW FEATURES", make sure that the following features are available and enabled.
+1. Scroll down to the "PRIVATE PREVIEW FEATURES" and make sure that the following features are available and enabled.
 	1. **e-Commerce Evaluation**
 	1. **Commerce Preview Program Environments**
-1. If you are unable to see these features in the list, please reach out to us with your account and tenant details. Please see "**Additional resources**" section for link to Yammer group and other contact information.
+1. If you are unable to see these features in the list, please reach out to us with your work email, LCS account and tenant details. Please see "**Additional resources**" section for information on how to contact.
 
 ![Preview management tile](./media/preview1.png)
 
