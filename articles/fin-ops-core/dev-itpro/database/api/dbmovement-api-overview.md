@@ -37,11 +37,11 @@ Database Movement API is a RESTful endpoint used for data lifecycle management o
 
 ## What's supported by Database Movement API?
 Database Movement API exposes RESTful endpoints for the following Microsoft Dynamics 365 services:
-* Dynamics 365 for Finance
-* Dynamics 365 for Supply Chain Management
-* Dynamics 365 for Retail
+* Dynamics 365 Finance
+* Dynamics 365 Supply Chain Management
+* Dynamics 365 Retail
 
 ## Next steps
-* Understand how to setup [Authentication](dbmovement-api-authentication.md).
+* Understand how to set up [authentication](dbmovement-api-authentication.md)
 * [API reference](./v1/dbmovement-api-v1-overview.md)
 
