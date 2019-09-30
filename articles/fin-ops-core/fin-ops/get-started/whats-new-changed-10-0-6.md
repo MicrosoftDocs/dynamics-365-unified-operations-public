@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations apps for version 10.0.6 (November 2019)
-description: This topic describes features that are either new or changed in Finance and Operations apps for version 10.0.6. This version will be released in October.
+title: Preview features in Finance and Operations apps version 10.0.6 (November 2019)
+description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.6. This version will be released in October.
 author: tonyafehr
 manager: AnnBe
 ms.date: 09/29/2019
