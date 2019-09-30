@@ -1,5 +1,5 @@
 ---
-title: Delivering ISV solutions - One Version guidelines
+title: Delivering ISV solutions using One Version
 description: The topic provides information about how independent software vendors (ISVs) can use One Version to deliver their solutions.
 author: FrankDahl
 manager: AnnBe
@@ -26,7 +26,7 @@ ms.search.validFrom: 2019-4-12
 ms.dyn365.ops.version: Platform update 24 
 ---
 
-# Delivering ISV solutions - One Version guidelines
+# Delivering ISV solutions using One Version
 
 [!include [banner](../includes/banner.md)]
 
