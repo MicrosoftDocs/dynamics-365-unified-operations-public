@@ -66,7 +66,7 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce P
 https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345
 
 2. **Do not click the URL directly**, instead copy and paste it into your browser or text editor and replace **\{AAD_TENANT_ID\}** with your **AAD Tenant Id**, before navigating to the URL.
-3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant **Dynamics 365 Commerce (Preview)** access to your subscription.
+3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant "**Dynamics 365 Commerce (Preview)"** access to your subscription.
 4. You will be sent to a page which confirms whether the operation was successful.
 
 *Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
