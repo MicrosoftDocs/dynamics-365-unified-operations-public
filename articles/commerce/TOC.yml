@@ -198,335 +198,338 @@
       href: ../retail/dev-itpro/updating-environments.md
     - name: Testing and performance issues
       href: ../retail/dev-itpro/retail-implementation-testing-performance.md   
-
-- name: Core cross-channel setup
+- name: Channel setup and management
   items:
-  - name: Initialize seed data in new Retail environments
-    href: ../retail/enable-configure-retail-functionality.md
-  - name: Configure and install Retail hardware station
-    href: ../retail/retail-hardware-station-configuration-installation.md
-  - name: Info codes and info code groups
-    href: ../retail/info-codes-retail.md     
-- name: Store channel management 
-  items:
-  - name: Set up retail channels
-    href: ../retail/define-maintain-retail-channels.md
-  - name: Create and change store hours
-    href: ../retail/dev-itpro/store-hours.md
-  - name: Configure and install Retail hardware station
-    href: ../retail/retail-hardware-station-configuration-installation.md
-- name: Online channel management 
-  items:
-  - name: Set up online stores
-    href: ../retail/online-stores.md
-  - name: Create an e-Commerce site
+  - name: Core cross-channel setup
     items:
-    - name: Online store overview
-      href: online-store-overview.md
+    - name: Initialize seed data in new Retail environments
+      href: ../retail/enable-configure-retail-functionality.md
+    - name: Configure and install Retail hardware station
+      href: ../retail/retail-hardware-station-configuration-installation.md
+    - name: Info codes and info code groups
+      href: ../retail/info-codes-retail.md     
+  - name: Store channel management 
+    items:
+    - name: Set up retail channels
+      href: ../retail/define-maintain-retail-channels.md
+    - name: Create and change store hours
+      href: ../retail/dev-itpro/store-hours.md
+    - name: Configure and install Retail hardware station
+      href: ../retail/retail-hardware-station-configuration-installation.md
+  - name: Online channel management 
+    items:
+    - name: Set up online stores
+      href: ../retail/online-stores.md
     - name: Create an e-Commerce site
-      href: create-ecommerce-site.md
-    - name: Deploy a new e-Commerce site
-      href: deploy-ecommerce-site.md
-    - name: Associate an online site with a channel
-      href: associate-site-online-store.md
-    - name: Configure your domain name
-      href: configure-your-domain-name.md
-  - name: Manage your site
-    items:
-    - name: Manage users and roles
-      href: manage-ecommerce-users-roles.md
-    - name: Add script code to site pages to support telemetry
-      href: add-telemetry.md
-  - name: Add and manage content on your site
-    items:
-    - name: Ways to add content
-      href: add-manage-content.md
-    - name: Page elements
-      href: page-elements-overview.md
-    - name: Document states and lifecycle
-      href: document-states-overview.md 
-  - name: Brand your site and add store details
-    items:
-    - name: Add a logo
-      href: add-logo.md 
-    - name: Select a site theme
-      href: select-site-theme.md
-    - name: Add a favicon
-      href: add-favicon.md
-    - name: Add a welcome message
-      href: add-welcome-message.md 
-    - name: Add a copyright notice
-      href: add-copyright-notice.md
-    - name: Add languages
-      href: add-languages-to-site.md
-  - name: Pages
-    items:
-    - name: Select page layouts
-      href: select-page-layouts.md
-    - name: Search engine optimization (SEO) considerations for your site
-      href: search-engine-optimization-considerations.md
-  - name: Modules
-    items:
-    - name: Work with modules
-      href: work-with-modules.md
-  - name: Fragments
-    items:
-    - name: Work with fragments
-      href: work-with-fragments.md
-  - name: Templates and layouts
-    items:
-    - name: Templates and layouts overview
-      href: templates-layouts-overview.md
-    - name: Templates
       items:
-      - name: Work with templates
-        href: work-with-templates.md
-    - name: Layouts
+      - name: Online store overview
+        href: online-store-overview.md
+      - name: Create an e-Commerce site
+        href: create-ecommerce-site.md
+      - name: Deploy a new e-Commerce site
+        href: deploy-ecommerce-site.md
+      - name: Associate an online site with a channel
+        href: associate-site-online-store.md
+      - name: Configure your domain name
+        href: configure-your-domain-name.md
+    - name: Manage your site
       items:
-      - name: Work with preset layouts
-        href: work-with-layouts.md
-  - name: Site navigation
+      - name: Manage users and roles
+        href: manage-ecommerce-users-roles.md
+      - name: Add script code to site pages to support telemetry
+        href: add-telemetry.md
+    - name: Add and manage content on your site
+      items:
+      - name: Ways to add content
+        href: add-manage-content.md
+      - name: Page elements
+        href: page-elements-overview.md
+      - name: Document states and lifecycle
+        href: document-states-overview.md 
+    - name: Brand your site and add store details
+      items:
+      - name: Add a logo
+        href: add-logo.md 
+      - name: Select a site theme
+        href: select-site-theme.md
+      - name: Add a favicon
+        href: add-favicon.md
+      - name: Add a welcome message
+        href: add-welcome-message.md 
+      - name: Add a copyright notice
+        href: add-copyright-notice.md
+      - name: Add languages
+        href: add-languages-to-site.md
+    - name: Pages
+      items:
+      - name: Select page layouts
+        href: select-page-layouts.md
+      - name: Search engine optimization (SEO) considerations for your site
+        href: search-engine-optimization-considerations.md
+    - name: Modules
+      items:
+      - name: Work with modules
+        href: work-with-modules.md
+    - name: Fragments
+      items:
+      - name: Work with fragments
+        href: work-with-fragments.md
+    - name: Templates and layouts
+      items:
+      - name: Templates and layouts overview
+        href: templates-layouts-overview.md
+      - name: Templates
+        items:
+        - name: Work with templates
+          href: work-with-templates.md
+      - name: Layouts
+        items:
+        - name: Work with preset layouts
+          href: work-with-layouts.md
+    - name: Site navigation
+      items:
+      - name: Customize site navigation
+        href: customize-site-navigation.md
+      - name: Create a page URL
+        href: create-page-URL.md
+    - name: Starter kit
+      items: 
+      - name: Starter kit overview
+        href: starter-kit-overview.md
+      - name: Account management page
+        href: account-management.md
+      - name: Add an alert module 
+        href: add-alert.md
+      - name: Add a buy box
+        href: add-buy-box.md
+      - name: Add a carousel module
+        href: add-carousel.md
+      - name: Add a cart module
+        href: add-cart-module.md
+      - name: Add a checkout module
+        href: add-checkout-module.md
+      - name: Add a container module
+        href: add-container-module.md
+      - name: Add a content placement module
+        href: add-content-placement-modules.md
+      - name: Add a content rich block module
+        href: add-content-rich-block.md
+      - name: Add a feature module
+        href: add-feature-module.md
+      - name: Create a footer module
+        href: author-footer-module.md
+      - name: Create a header module
+        href: author-header-module.md
+      - name: Add a hero module
+        href: add-hero-module.md 
+      - name: Create an order confirmation module
+        href: order-confirmation-module.md 
+      - name: Add a video player module
+        href: add-video-player.md
+    - name: Reporting
+      items:
+      - name: Generate online channel reports
+        href: generate-reports.md
+    - name: Error handling
+      items:
+      - name: Build custom response pages for 4xx/5xx status code errors
+        href: build-pages-400-500-errors.md
+  - name: Call center channel management
     items:
-    - name: Customize site navigation
-      href: customize-site-navigation.md
-    - name: Create a page URL
-      href: create-page-URL.md
-  - name: Starter kit
-    items: 
-    - name: Starter kit overview
-      href: starter-kit-overview.md
-    - name: Account management page
-      href: account-management.md
-    - name: Add an alert module 
-      href: add-alert.md
-    - name: Add a buy box
-      href: add-buy-box.md
-    - name: Add a carousel module
-      href: add-carousel.md
-    - name: Add a cart module
-      href: add-cart-module.md
-    - name: Add a checkout module
-      href: add-checkout-module.md
-    - name: Add a container module
-      href: add-container-module.md
-    - name: Add a content placement module
-      href: add-content-placement-modules.md
-    - name: Add a content rich block module
-      href: add-content-rich-block.md
-    - name: Add a feature module
-      href: add-feature-module.md
-    - name: Create a footer module
-      href: author-footer-module.md
-    - name: Create a header module
-      href: author-header-module.md
-    - name: Add a hero module
-      href: add-hero-module.md 
-    - name: Create an order confirmation module
-      href: order-confirmation-module.md 
-    - name: Add a video player module
-      href: add-video-player.md
-  - name: Reporting
+    - name: Call center sales functionality
+      href: ../retail/call-center-functionality.md
+    - name: Set up call center channels
+      href: ../retail/set-up-order-processing-options.md
+    - name: Call center catalogs
+      href: ../retail/call-center-catalogs.md
+    - name: Configure delivery modes and charges
+      href: ../retail/configure-call-center-delivery.md
+    - name: Set up and work with fraud alerts
+      href: ../retail/set-up-fraud-alerts.md
+    - name: Set up continuity programs for call centers
+      href: ../retail/set-up-continuity-program.md
+    - name: Configure and work with call center order holds
+      href: ../retail/work-with-order-holds.md
+- name: Omni-channel configuration
+  items:
+  - name: Products and merchandising
     items:
-    - name: Generate online channel reports
-      href: generate-reports.md
-  - name: Error handling
+    - name: Product information overview
+      href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Retail hierarchies
+      href: ../retail/retail-hierarchies.md
+    - name: Attributes and attribute groups
+      href: ../retail/attribute-attributegroups-lifecycle.md
+    - name: Create and manage attributes
+      href: ../retail/create-manage-attributes.md
+    - name: Set up retail products
+      href: ../retail/set-up-retail-products.md
+    - name: Manage retail product categories and products
+      href: ../retail/category-management-product-creation.md
+    - name: Product dimensions
+      href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Assortment management
+      href: ../retail/assortments.md
+    - name: Set up assortments
+      href: ../retail/set-up-assortments.md
+    - name: Set up bar codes
+      href: ../retail/set-up-bar-codes.md
+    - name: Set up bar code masks
+      href: ../retail/set-up-bar-code-masks.md
+    - name: Change the sort order for merchandising entities
+      href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md
+  - name: Pricing and discounts
     items:
-    - name: Build custom response pages for 4xx/5xx status code errors
-      href: build-pages-400-500-errors.md
-- name: Call center channel management
-  items:
-  - name: Call center sales functionality
-    href: ../retail/call-center-functionality.md
-  - name: Set up call center channels
-    href: ../retail/set-up-order-processing-options.md
-  - name: Call center catalogs
-    href: ../retail/call-center-catalogs.md
-  - name: Configure delivery modes and charges
-    href: ../retail/configure-call-center-delivery.md
-  - name: Set up and work with fraud alerts
-    href: ../retail/set-up-fraud-alerts.md
-  - name: Set up continuity programs for call centers
-    href: ../retail/set-up-continuity-program.md
-  - name: Configure and work with call center order holds
-    href: ../retail/work-with-order-holds.md
-- name: Products and merchandising
-  items:
-  - name: Product information overview
-    href: ../supply-chain/pim/product-information.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Retail hierarchies
-    href: ../retail/retail-hierarchies.md
-  - name: Attributes and attribute groups
-    href: ../retail/attribute-attributegroups-lifecycle.md
-  - name: Create and manage attributes
-    href: ../retail/create-manage-attributes.md
-  - name: Set up retail products
-    href: ../retail/set-up-retail-products.md
-  - name: Manage retail product categories and products
-    href: ../retail/category-management-product-creation.md
-  - name: Product dimensions
-    href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Assortment management
-    href: ../retail/assortments.md
-  - name: Set up assortments
-    href: ../retail/set-up-assortments.md
-  - name: Set up bar codes
-    href: ../retail/set-up-bar-codes.md
-  - name: Set up bar code masks
-    href: ../retail/set-up-bar-code-masks.md
-  - name: Change the sort order for merchandising entities
-    href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md
-- name: Pricing and discounts
-  items:
-  - name: Retail discounts
-    href: ../retail/retail-discounts-overview.md
-  - name: Retail sales price management
-    href: ../retail/price-management.md
-  - name: Price adjustments and discounts
-    href: ../retail/price-adjustments-discounts.md
-  - name: Apply multiple discounts to a product
-    href: ../retail/Apply-multiple-retail-discounts.md
-  - name: Determine the optimal combination of overlapping discounts
-    href: ../retail/optimal-combination-overlapping-discounts.md
-  - name: Define channel-specific discounts
-    href: ../retail/define-channel-specific-discounts.md
-  - name: Options for preventing discounts for retail products
-    href: ../retail/prevent-discounts.md
-  - name: Shipping discount overview
-    href: ../retail/retail-shipping-discount.md
-  - name: Set up coupons for retail sales
-    href: ../retail/retail-coupons.md
-  - name: Retail price reports
-    href: ../retail/price-report.md
-- name: Loyalty
-  items:
-  - name: Loyalty overview
-    href: ../retail/set-up-customer-loyalty-program.md
-- name: Payments
-  items:
-  - name: Payment methods
-    href: ../retail/payment-methods.md
-  - name: Payment methods in call centers
-    href: ../retail/work-with-payments.md
-  - name: Credit card setup, authorization, and capture
-    href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Configure cash denominations for the POS
-    href: ../retail/cash-denominations.md
-  - name: Configure credit card processing
-    href: ../retail/tasks/configure-credit-card-processing.md
-  - name: Dynamics 365 Payment Connector for Adyen
-    href: ../retail/dev-itpro/adyen-connector.md
-  - name: Saving online payment instruments with the Adyen connector
-    href: ../retail/dev-itpro/adyen-connector-listPI.md
-  - name: Set up pay invoice scenarios
-    href: ../retail/payinvoice.md
-  - name: Duplicate payments prevention
-    href: ../retail/duplicate-payment-protection.md
-  - name: Omni-channel payments overview
-    href: ../retail/omni-channel-payments.md
-  - name: Payments FAQ
-    href: ../retail/dev-itpro/payments-retail.md
-- name: Advanced auto charges
-  items:
-  - name: Configure and use advanced auto charges
-    href: ../retail/omni-auto-charges.md
-  - name: Prorate header charges to matching sales lines
-    href: ../retail/pro-rate-charges-matching-lines.md
-- name: Sales tax
-  items:
-  - name: Sales tax overview
-    href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Sales tax calculation methods in the Origin field
-    href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Sales tax assignment and overrides
-    href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Whole amount and Interval calculation options for sales tax codes
-    href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json    
-- name: Purchase orders
-  items:
-  - name: Purchase order overview
-    href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Create purchase orders
-    href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Product receipt against purchase orders
-    href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Approve and confirm purchase orders
-    href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Purchase order approval mobile workspace
-    href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
-- name: Inventory
-  items:
-  - name: Store inventory management
-    href: ../retail/work-with-store-inventory.md
-  - name: Register serial numbers in the sales process
-    href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Inventory journals
-    href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Inventory tag counting
-    href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: FIFO with physical value and marking
-    href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: LIFO Date with physical value and marking
-    href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: LIFO with physical value and marking
-    href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Weighted average date
-    href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Weighted average with physical value and marking
-    href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Quarantine orders
-    href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Running average cost price
-    href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/unified-operations/retail/toc.json
-  - name: Track running average cost per inventory dimension
-    href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/unified-operations/retail/toc.json
-- name: Statements
-  items:
-  - name: Retail statements
-    href: ../retail/retail-statements.md
-  - name: Retail transaction consistency checker
-    href: ../retail/valid-checker.md
-  - name: Create, calculate, and post statements for a retail store
-    href: ../retail/tasks/create-calculate-post-statement-retail-store.md
-  - name: Improvements to statement posting functionality
-    href: ../retail/statement-posting-EOD.md
-  - name: Improved handling of batch tracked items
-    href: ../retail/batch.md
-  - name: Configure Retail parameters that affect retail statements
-    href: ../retail/tasks/parameter-configurations-retail-statements.md
-  - name: Configure payment method settings that affect retail statements
-    href: ../retail/tasks/payment-configurations-retail-statements.md
-  - name: Configure and run a job to calculate statements
-    href: ../retail/tasks/run-job-calculate-statements.md
-  - name: Configure and run a job to post statements
-    href: ../retail/tasks/run-job-post-statements.md
-  - name: Configure store settings that affect retail statements
-    href: ../retail/tasks/store-configurations-retail-statements.md
-- name: Distributed order management (DOM)
-  items:
-  - name: DOM overview
-    href: ../retail/dom.md
-  - name: Cost configuration
-    href: ../retail/cost.md
-- name: Order fulfillment and processing
-  items:
-  - name: Store order fulfillment
-    href: ../retail/Order-fulfillment-overview.md
-  - name: Set up order fulfillment for stores
-    href: ../retail/Order-fulfillment-POS-setup.md
-  - name: Show order notifications in the POS
-    href: ../retail/Notifications-POS.md
-- name: Returns
-  items:
-  - name: Linked refunds
-    href: ../retail/dev-itpro/linked-refunds.md
-  - name: Sell and return products not included in a store's assortment
-    href: ../retail/sell-return-outside-assortments.md
-  - name: Configure and process an exchange on a return order
-    href: ../retail/orderexchanges.md
-  - name: Restrict payment methods for returns without a receipt
-    href: ../retail/payment-methods-restrictions.md
-  - name: Return items across multiple customer orders and invoices
-    href: ../retail/multireturn.md
+    - name: Retail discounts
+      href: ../retail/retail-discounts-overview.md
+    - name: Retail sales price management
+      href: ../retail/price-management.md
+    - name: Price adjustments and discounts
+      href: ../retail/price-adjustments-discounts.md
+    - name: Apply multiple discounts to a product
+      href: ../retail/Apply-multiple-retail-discounts.md
+    - name: Determine the optimal combination of overlapping discounts
+      href: ../retail/optimal-combination-overlapping-discounts.md
+    - name: Define channel-specific discounts
+      href: ../retail/define-channel-specific-discounts.md
+    - name: Options for preventing discounts for retail products
+      href: ../retail/prevent-discounts.md
+    - name: Shipping discount overview
+      href: ../retail/retail-shipping-discount.md
+    - name: Set up coupons for retail sales
+      href: ../retail/retail-coupons.md
+    - name: Retail price reports
+      href: ../retail/price-report.md
+  - name: Loyalty
+    items:
+    - name: Loyalty overview
+      href: ../retail/set-up-customer-loyalty-program.md
+  - name: Payments
+    items:
+    - name: Payment methods
+      href: ../retail/payment-methods.md
+    - name: Payment methods in call centers
+      href: ../retail/work-with-payments.md
+    - name: Credit card setup, authorization, and capture
+      href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Configure cash denominations for the POS
+      href: ../retail/cash-denominations.md
+    - name: Configure credit card processing
+      href: ../retail/tasks/configure-credit-card-processing.md
+    - name: Dynamics 365 Payment Connector for Adyen
+      href: ../retail/dev-itpro/adyen-connector.md
+    - name: Saving online payment instruments with the Adyen connector
+      href: ../retail/dev-itpro/adyen-connector-listPI.md
+    - name: Set up pay invoice scenarios
+      href: ../retail/payinvoice.md
+    - name: Duplicate payments prevention
+      href: ../retail/duplicate-payment-protection.md
+    - name: Omni-channel payments overview
+      href: ../retail/omni-channel-payments.md
+    - name: Payments FAQ
+      href: ../retail/dev-itpro/payments-retail.md
+  - name: Advanced auto charges
+    items:
+    - name: Configure and use advanced auto charges
+      href: ../retail/omni-auto-charges.md
+    - name: Prorate header charges to matching sales lines
+      href: ../retail/pro-rate-charges-matching-lines.md
+  - name: Sales tax
+    items:
+    - name: Sales tax overview
+      href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sales tax calculation methods in the Origin field
+      href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Sales tax assignment and overrides
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Whole amount and Interval calculation options for sales tax codes
+      href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/unified-operations/retail/toc.json    
+  - name: Purchase orders
+    items:
+    - name: Purchase order overview
+      href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Create purchase orders
+      href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Product receipt against purchase orders
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Approve and confirm purchase orders
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Purchase order approval mobile workspace
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Inventory
+    items:
+    - name: Store inventory management
+      href: ../retail/work-with-store-inventory.md
+    - name: Register serial numbers in the sales process
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Inventory journals
+      href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Inventory tag counting
+      href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: FIFO with physical value and marking
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: LIFO Date with physical value and marking
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: LIFO with physical value and marking
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Weighted average date
+      href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Weighted average with physical value and marking
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Quarantine orders
+      href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Running average cost price
+      href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/unified-operations/retail/toc.json
+    - name: Track running average cost per inventory dimension
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/unified-operations/retail/toc.json
+  - name: Statements
+    items:
+    - name: Retail statements
+      href: ../retail/retail-statements.md
+    - name: Retail transaction consistency checker
+      href: ../retail/valid-checker.md
+    - name: Create, calculate, and post statements for a retail store
+      href: ../retail/tasks/create-calculate-post-statement-retail-store.md
+    - name: Improvements to statement posting functionality
+      href: ../retail/statement-posting-EOD.md
+    - name: Improved handling of batch tracked items
+      href: ../retail/batch.md
+    - name: Configure Retail parameters that affect retail statements
+      href: ../retail/tasks/parameter-configurations-retail-statements.md
+    - name: Configure payment method settings that affect retail statements
+      href: ../retail/tasks/payment-configurations-retail-statements.md
+    - name: Configure and run a job to calculate statements
+      href: ../retail/tasks/run-job-calculate-statements.md
+    - name: Configure and run a job to post statements
+      href: ../retail/tasks/run-job-post-statements.md
+    - name: Configure store settings that affect retail statements
+      href: ../retail/tasks/store-configurations-retail-statements.md
+  - name: Distributed order management (DOM)
+    items:
+    - name: DOM overview
+      href: ../retail/dom.md
+    - name: Cost configuration
+      href: ../retail/cost.md
+  - name: Order fulfillment and processing
+    items:
+    - name: Store order fulfillment
+      href: ../retail/Order-fulfillment-overview.md
+    - name: Set up order fulfillment for stores
+      href: ../retail/Order-fulfillment-POS-setup.md
+    - name: Show order notifications in the POS
+      href: ../retail/Notifications-POS.md
+  - name: Returns
+    items:
+    - name: Linked refunds
+      href: ../retail/dev-itpro/linked-refunds.md
+    - name: Sell and return products not included in a store's assortment
+      href: ../retail/sell-return-outside-assortments.md
+    - name: Configure and process an exchange on a return order
+      href: ../retail/orderexchanges.md
+    - name: Restrict payment methods for returns without a receipt
+      href: ../retail/payment-methods-restrictions.md
+    - name: Return items across multiple customer orders and invoices
+      href: ../retail/multireturn.md
 - name: Modern Point of Sale (MPOS) and Cloud POS
   items:
   - name: Choose between MPOS and Cloud POS
