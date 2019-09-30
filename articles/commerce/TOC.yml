@@ -1138,7 +1138,7 @@
     href: configure-ratings-reviews.md
 - name: Omni-channel product recommendations
   items:
-  - name: Product recommendations
+  - name: Product recommendations overview
     href: product-recommendations.md
   - name: Add product recommendations lists to e-Commerce pages
     href: add-reco-list-to-page.md
