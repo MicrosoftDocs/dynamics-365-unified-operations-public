@@ -104,7 +104,7 @@ If your site already has a header fragment, follow these steps to add a header a
 
 All pages that use the template will now automatically inherit this header fragment.
 
-If your site doesn't yet have a header fragment, see [Create a fragment](fragments.md#create-a-fragment) for information about how to create it, and then complete the previous procedure.
+If your site doesn't yet have a header fragment, see [Create a fragment](work-with-fragments.md#create-a-fragment) for information about how to create it, and then complete the previous procedure.
 
 ## Change the template theme
 
