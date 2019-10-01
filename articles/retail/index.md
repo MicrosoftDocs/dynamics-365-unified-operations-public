@@ -38,6 +38,12 @@ Microsoft Dynamics 365 Retail is an end-to-end retail solution that delivers uni
 
 In the left pane, select a feature area to learn more about it.
 
+## Dynamics 365 Commerce (Preview)
+
+Dynamics 365 Commerce—built on the proven Dynamics 365 Retail capabilities—delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences. Commerce is available to preview customers now. Existing Dynamics 365 Retail customers will be able to update to Commerce once it becomes generally available.
+
+For more information about Dynamics 365 Commerce, go to the [Help resources for Dynamics 365 Commerce](../commerce/index.md) page.
+
 ## Channel management
 
 As you set up your Retail experience, you will decide how to define and configure your stores, which can be brick-and-mortar stores, online stores, or call centers.
