@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add a welcome message to your site
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
 

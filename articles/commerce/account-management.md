@@ -31,8 +31,8 @@ ms.dyn365.ops.version:
 
 # Account management pages
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic covers account management pages in Microsoft Dynamics 365 Commerce.
 

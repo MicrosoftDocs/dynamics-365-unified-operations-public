@@ -32,8 +32,8 @@ ms.dyn365.ops.version:
 
 # Manage AI-ML-based product recommendation results
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 

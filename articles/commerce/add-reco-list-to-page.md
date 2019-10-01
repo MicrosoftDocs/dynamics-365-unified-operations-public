@@ -32,8 +32,8 @@ ms.dyn365.ops.version: 10.0.5
 
 # Add product recommendation lists to e-Commerce pages
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic explains how to add a product recommendation list to an e-Commerce page.
 

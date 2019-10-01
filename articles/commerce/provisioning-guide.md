@@ -31,8 +31,8 @@ ms.dyn365.ops.version:
 
 # Configure an e-Commerce evaluation environment
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment. Before you begin, we recommend that you at least skim through the documentation to get an idea of what the process entails and what the guide contains.
 
