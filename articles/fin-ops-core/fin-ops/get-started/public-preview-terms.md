@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Topic name
+title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 description: Topic description
 author: ShellyBakke
 manager: AnnBe
@@ -28,8 +28,55 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ---
 
-# Topic name
+# Supplemental Terms of User for Microsoft Dynamics 365 Previews
 
 [!include[banner](../includes/banner.md)]
 
-Content goes here.
+These Supplemental Terms of Use ("Terms") cover use of those MIcrosoft Dynamics 365 previews that link to these Terms.
+
+#General Terms
+
+Dynamics 365 may include preview, beta, or other pre-release features, services, or software, 
+offered by Microsoft to obtain customer feedback ("Previews")>  Previews are made available to you 
+on the condition that you agree to these terms of use, which supplement your agreement governing 
+use of Dynamics 365. 
+
+PREVIEWS ARE PROVIDED "AS-IS", "WITH ALL FAULTS", AND "AS AVAILABLE", AND ARE EXCLUDED FROM
+THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY.  Previews may not be covered by customer
+support.  Preview may be subject to reduce or different security, compliance and privacy
+commitments, as further explained in the Microsoft Privacy Statement, Microsoft Dynamics 365 Trust Center, the Online Services Terms, and any additional notices provided with the Preview.
+
+Customers should not use Previews to process Personal Data or other data that is subject to 
+heightened compliance requirements.  In addition, Customers should not use Previews in a 'live 
+operating' or production environment.  Certain named Previews may also be subject to additional 
+terms, if any, set forth below.  We may change or discountue Previews at any time without notice.  
+We also may choose not to release a Preview into "General Availability".
+
+You will provide, as your own expense, the equipment, technology, and infrastructure necessary
+to participate in the Previews, unless otherwise specified in the applicable Preview program 
+description.  In addition, you may use consultants, contractors, advisors, or other third parties 
+to assist with performing the activities or any professional services in connection with the 
+
+Preview, but only if you have entered into an agreement with any such thris party that contains 
+terms at least as protective of Microsoft's rights as those in the Agreement.  You will bear all 
+costs and expenses associated with engaging a thrid party to perform any of your activities in the 
+Previews.  You may use the Preview only if you have a valid license or subscription to the 
+required Dynamics 365 application.  You may not access or use the Previews if you do not have the 
+required license or subscription.
+
+#Use Preview in a Production Enviroment
+
+The "General Terms" section applies generally to all Previews that lihnk to these Terms.  This section containst terms taht apply only if a Preview allows you to use Customer Data or Personal Data (collectively "Data") in a 'live operating' or production enviroment and is in addition to the General Terms.  These "Use Preview in a Production Enviroment" terms govern if there are any conflicts with the "General Terms" or the "Service-Specific Terms" sections.
+
+Notwithstanding any provision to the contrary in the General Terms, Microsoft bereby grans you permission to use the Preview to access or process Data in a 'live operating' or production enviorment on in connection with participating in the Preview.  By accessing or processing Data in a 'live operations' or production enviorment, you consent to share your Data with external systems outside of the geography where your production environment is deployed.
+
+#Service-Specific Terms
+
+The "General Terms" section applies generally to all Previews that lnik to these Teams.  These service-specific terms are in addition to the "General Terms" and the "Use Preview in a Production Enviroment" sections.  These service-specific terms govern if there are any conflicts with the "General Terms" or the "Use Preview in a Production Environment" sections.
+
+#Dynamics 365 Commerce (Preview):
+You must obtain your own patent license(s) from any third party H.265/HEVC patent pools or rights holders before using Azure Media Services to encode or decode H.265/HEVC media.  In addition, this Preview may include H.264/AVC, VC-1, MPEG-4 Part 2, and MPEG-2 visual compression technology.  MPEG LA, L.L.C. which requires this notice:  THIS PRODUCT IS LICENSED UNDER THE AVC, THE VC-1, THE MPEG-4 PART 2 AND MPEG-2 VISUAL PATENT PORTFOLIO LICENSES FOR THE PERSONAL AND NON-COMMERCIAL USE OF A CONSUMER TO (i) ENCODE VIDEO IN COMPLIANCE WITH THE ABOVE (VIDO STANDARDS) AND/OR (ii) DECODE AVC, VC-1, MPEG-4  PART 2, AND MPEG-2 VIDOE THAT WAS ENCODED BY A CONSUMER ENGAGED INA PERSON AND NON-COMMERCIAL ACTIVITY AND/OR WAS OBTAINED FROM A VIDEO PROVIDER LICENSE TO PROVIDE SUCH VIDEO.  NO LICENSE IS GRANTED OR SHALL BE IMPLIED FOR ANY OTHER USE.  ADDITIONAL INFORMAITON MAY BE OBTAINED FROM MPEG LA, L.L.C. REFER TO wwww.mpegla.com.  For clarification purposes, this notice does not limit or inhibit the use of the osftware for normal business uses that are personal to that abusiness which do not include (i) redistribution of the software to thrid parties, or (ii) creation of content complian with the VIDEO STANDARDS technologies for distribuion t theird parties.  If there is any inconsistency between the Agreement and these Perview terms of use, then to the extent of such inconsistency, these Preview terms of use will control over the conflicting terms in the Agreement.
+
+#Supplemental Preview Software License Terms.  Microsoft will provide you with access to certain software for use in connection with this Preview.  Notwithstanding any provision to the contrary in the Microsoft Preview Software License Terms for the Dynamics 365 Commerce Software Development Kit ("SDK License Terms") or the Dynamics 365 Commer Store Starter Kit ("Store Kit License Terms") (collectively, the "SLTs"), Microsoft hereby grants you permission to use the Software Development Kit and the Store Starter Kit (collectively, the "software") in a 'live operating or production enviroment for Dynamics 365 Commerce.  If you comply wiht the terms and conditions in the SLTs, you may also (A) use the software to develop and test your websites in a 'live operating' or prodution environment of Dynamics 365 Commerce; (B) use the software to design and test the websites that you create with the software to conduct e-commerce transactions (i.e., exchange of goods and services by means of the Internet or other computer networks accessible by their parties), including wihtout limitation any shipping, credit card, monetary, or other banking transactions; and (C) deploy the websites that you create with the software for thirt parties to access over the Internet, but only if you also comply with the following:
+#1.  External Production Use:  (i) you take adequate precautionairy measures to backu and protect your data; (ii) you agree to cease such use immedidately upon notice from Microsoft; (iii) you include in your website a visiable notice to your users that the websites were created with or rely on pre-release, time-sensitive, unsupported software that may not operate corectly; and (iv) you will not make any represntations, warranties, or promises on behalf of Microsoft or with respect to the software or its performance.
+#2
