@@ -44,7 +44,7 @@ use of Dynamics 365.
 PREVIEWS ARE PROVIDED "AS-IS", "WITH ALL FAULTS", AND "AS AVAILABLE", AND ARE EXCLUDED FROM
 THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY.  Previews may not be covered by customer
 support.  Preview may be subject to reduce or different security, compliance and privacy
-commitments, as further explained in the Microsoft Privacy Statement, Microsoft Dynamics 365 Trust 
+commitments, as further explained in the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=131004&clcid=0x409 "Alt text"), Microsoft Dynamics 365 Trust 
 Center, the Online Services Terms, and any additional notices provided with the Preview.
 
 Customers should not use Previews to process Personal Data or other data that is subject to 
