@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
+title: What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
+description: This topic describes features in Platform update 29 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
+# What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This topic describes features that are new or changed in Platform update 29 for Finance and Operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 
 ## Feature management
@@ -111,7 +111,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
