@@ -118,12 +118,14 @@ computer networks accessible by their parties), including without limitation any
 card, monetary, or other banking transactions; and (C) deploy the websites that you create with the 
 software for third parties to access over the Internet, but only if you also comply with the 
 following:
+
 **#1.  External Production Use:**  (i) you take adequate precautionairy measures to backup and 
 protect your data; (ii) you agree to cease such use immedidately upon notice from Microsoft; (iii) 
 you include in your website a visable notice to your users that the websites were created with or 
 rely on pre-release, time-sensitive, unsupported software that may not operate corectly; and (iv) 
 you will not make any representations, warranties, or promises on behalf of Microsoft or with 
 respect to the software or its performance.
+
 **#2  Hazardous Environments.**  You may not use the software to develop and test websites for 
 hazardous environments requiring fail-safe controls, including without limitation, the design, 
 construction, maintenance or operation of nuclear facilities, aircraft navigation or communication 
