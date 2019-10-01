@@ -1837,8 +1837,6 @@
             href: warehousing/catch-weight-processing.md
           - name: Copy a formula
             href: production-control/tasks/copy-formula.md
-          - name: Create a formula by copying from an existing formula
-            href: production-control/tasks/create-formula-copying-existing-formula.md
           - name: Copy co-products from an existing formula version
             href: production-control/tasks/copy-co-products-existing-formula-version.md
           - name: Create a formula by copying from an existing formula
