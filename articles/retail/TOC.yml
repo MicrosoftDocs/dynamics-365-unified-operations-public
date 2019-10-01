@@ -764,7 +764,7 @@
           href: retail-time-attendance.md
         - name: Create and change store hours
           href: dev-itpro/store-hours.md
-      - name: Call center chanel management
+      - name: Call center channel management
         items:
         - name: Call center sales functionality
           href: call-center-functionality.md
