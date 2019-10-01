@@ -43,7 +43,7 @@ When we increment the version of the API (for example, from v1 to v2), we are an
 When an API is marked as deprecated, the **VersionEOL** or Version End-of-Life field will have the end date value populated.  This allows you to proactively monitor this field for a non-date-maximum value and to plan for the upcoming changes.  
 
 ### Compatible and breaking changes
-Microsoft will continue to detail the API changes in the [What's new](something.md) article.  If the changes are non-breaking then we will maintain the same version number.  If the changes are breaking in nature, we will increment the API version.
+Microsoft will detail the API changes in the private preview group.  If the changes are non-breaking then we will maintain the same version number.  If the changes are breaking in nature, we will increment the API version.
 
 The following are examples of a breaking change:
 * Change to the URL or fundamental request/response 
