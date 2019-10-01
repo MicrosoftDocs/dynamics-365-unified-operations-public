@@ -44,7 +44,6 @@ This topic explains how to add a product recommendation list to an e-Commerce pa
 
 To learn more about the types of lists that you can add to a page, see [Product recommendations overview](product-recommendations.md).
 
-To learn more about the **product collection** module, see [product collection module overview](product-placement-module-overview.md).
 
 ## Additional resources
 
