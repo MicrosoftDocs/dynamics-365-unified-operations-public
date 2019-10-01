@@ -51,4 +51,4 @@ The following table shows the possible document states of page elements in Comme
 ## Additional resources
 
 - [Add and manage content](add-manage-content.md)
-- [Page elements overview](page-elements-overview)
+
