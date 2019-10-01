@@ -31,15 +31,17 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [new flexible service updates being made available] (https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/).   This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
 
 ### Can the update be delayed, what is the policy?
-Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to delay up to 3 consecutive updates.  Below is an example:
-      Customer is currently on version 10.0.2, customer can pause updates 10.0.3, 10.0.4, and 10.0.5.  The customer must take the 10.0.6 update when it is available.
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to delay up to 3 consecutive updates. The following is an example of a delayed update: 
+- The customer is currently on version 10.0.2.
+- The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
+- The customer must take the 10.0.6 update when it is available.
   
-### With a release date in early April, when will the GA package be made available?
-Production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+### With a release date in early April, when will the general availability package be made available?
+Production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in Lifecycle Services (LCS), you will receive updates during that specific week.
  
 For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
 
