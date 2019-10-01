@@ -98,5 +98,5 @@ When you make consumption registrations, financial dimensions related to the dif
 *Item registrations:* First, financial dimensions from the journal header are added, if any. Then, financial dimensions from the related work order project are added. Next, financial dimensions from the site are added. Finally, financial dimensions from the item are added.
 
 >[!NOTE]
->For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup in Dynamics 365 for Finance and Operations.
+>For all three registration types, the financial dimension combination is validated, and invalid combinations are blanked. This is standard setup in Finance and Operations.
 

@@ -41,7 +41,7 @@ Multiple store hours can be configured across different channels. These channels
 
 If a customer has a pickup order for a different store, the cashier can select dates when the pickup will be available in that store. The store lookup will provide a reference to the dates and store times. The cashier can select a date and location, and can also print a pickup receipt that includes the store hours.
 
-This functionality is available in Microsoft Dynamics 365 for Retail versions 8.1.2 and later.
+This functionality is available in Microsoft Dynamics 365 Retail versions 8.1.2 and later.
 
 ## Configure store hours
 

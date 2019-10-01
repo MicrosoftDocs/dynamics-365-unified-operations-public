@@ -40,7 +40,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 | Term | Description |
 |---|---|
-| Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 for Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
+| Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
 | Card not present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
@@ -59,51 +59,51 @@ The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard paymen
 ### Supported Versions
 
 #### Microsoft Dynamics 365 Supported Versions
-The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 for Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
+The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
 
 #### Supported Adyen Firmware Versions
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 for Retail POS.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
 
 ---
 
 # [8.1.3](#tab/8-1-3)
-### Dynamics 365 for Retail POS version 8.1.3
+### Dynamics 365 Retail POS version 8.1.3
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0](#tab/10-0)
-### Dynamics 365 for Retail POS version 10.0
+### Dynamics 365 Retail POS version 10.0
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0.1](#tab/10-0-1)
-### Dynamics 365 for Retail POS version 10.0.1
+### Dynamics 365 Retail POS version 10.0.1
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_35p15 |
 
 # [10.0.2](#tab/10-0-2)
-### Dynamics 365 for Retail POS version 10.0.2
+### Dynamics 365 Retail POS version 10.0.2
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
 
 # [10.0.3](#tab/10-0-3)
-### Dynamics 365 for Retail POS version 10.0.3
+### Dynamics 365 Retail POS version 10.0.3
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_35p15 | adyen_v1_38p5 |
 
 # [10.0.4](#tab/10-0-4)
-### Dynamics 365 for Retail POS version 10.0.4
+### Dynamics 365 Retail POS version 10.0.4
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_38p6 |
 
 # [10.0.5](#tab/10-0-5)
-### Dynamics 365 for Retail POS version 10.0.5
+### Dynamics 365 Retail POS version 10.0.5
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_40p6 |

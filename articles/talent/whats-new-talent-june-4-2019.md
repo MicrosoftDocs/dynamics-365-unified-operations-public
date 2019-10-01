@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (June 4, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (June 4, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365  Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/04/2019
@@ -29,15 +29,15 @@ ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (June 4, 2019)
+# What's new or changed in Dynamics 365 Talent (June 4, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
 ## Changes in Attract
 
-This release includes minor bug fixes for Dynamics 365 for Talent: Attract.
+This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Coming soon in Attract
 
@@ -47,7 +47,7 @@ Approvals appear in an **Approvals** section on the dashboard. Approvers can rev
 
 ## Changes in Onboard
 
-This release includes minor bug fixes for Dynamics 365 for Talent: Onboard.
+This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
@@ -71,7 +71,7 @@ The ability to track employee time off and understand how time off is calculated
 
 ### Deleting a record from Talent doesn't remove the record from Common Data Service
 
-Records that are removed from Talent Core HR are now also removed from Common Data Service.
+Records that are removed from Talent: Core HR are now also removed from Common Data Service.
 
 ### Variable compensation plan valid from/to dates aren't being honored
 

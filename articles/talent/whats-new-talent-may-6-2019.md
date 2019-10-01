@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (May 6, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (May 6, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/06/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (May 6, 2019)
+# What's new or changed in Dynamics 365 Talent (May 6, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -49,9 +49,9 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 Changes described in this section apply to build number 8.1.2282. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-### Platform update 26
+### Platform update 26 for Finance and Operations
 
-For additional details about Platform update 26, see [Preview features in Dynamics 365 for Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+For additional details about Platform update 26 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### Common Data Service entity support for custom fields
 
@@ -71,7 +71,7 @@ With this release, you can now update financial dimension using **Open in Excel*
 
 ### Worker address created in Common Data Service isn't synced to Talent (317555)
 
-With this change, addresses created in Common Data Service are updated in Talent Core HR.
+With this change, addresses created in Common Data Service are updated in Talent: Core HR.
 
 
 ## In preview

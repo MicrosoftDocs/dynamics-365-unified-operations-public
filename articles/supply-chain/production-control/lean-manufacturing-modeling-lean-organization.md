@@ -43,7 +43,7 @@ In production scenarios that are based on production orders, material is issued 
 
 To reduce the delivery lead times and excess inventory between work centers that batch production causes, lean manufacturing introduces kanban replenishment and supermarkets in manufacturing and warehouse replenishment. Typically, these features disrupt the production of partially independent kanban cycles. The replenishment of a kanban for a semi-finished product is no longer triggered by an order for a finished product. 
 
-To re-establish a production and cost context for the various kanban scenarios that are proposed in Microsoft Dynamics 365 for Finance and Operations, activity-based production flows have been introduced as the backbone of lean manufacturing. All kanban rules refer to this predefined structure. The activity-based model supports the setup of a wide range of scenarios. However, this model doesn't add complexity for the shop floor workers, because all scenarios use the same activity-based user interface.
+To re-establish a production and cost context for the various kanban scenarios that are proposed, activity-based production flows have been introduced as the backbone of lean manufacturing. All kanban rules refer to this predefined structure. The activity-based model supports the setup of a wide range of scenarios. However, this model doesn't add complexity for the shop floor workers, because all scenarios use the same activity-based user interface.
 
 ## Semi-finished products (non-BOM levels)
 Lean manufacturing integrates kanbans for inventoried products and semi-finished products in a single framework, and therefore offers a unified user experience for all cases. Because of this architecture, additional BOM levels no longer have to be introduced to enable kanbans to be used for semi-finished products. This architecture also helps reduce inventory transactions to a minimum.
@@ -54,7 +54,7 @@ The reduction of batch sizes to the ideal state of a single piece flow in lean m
 ## Value streams and value stream mapping
 The architecture of Lean manufacturing is inspired by the five Lean principles that were formulated by Womack and Jones: Customer value, Value stream, flow, pull, and perfection. One approved method for implementing lean manufacturing solutions in the physical world of manufacturing is value stream mapping (VSM). This method was introduced by Rother and Shook in their publication “Learning to See” at the Lean Manufacturing Institute. 
 
-In Finance and Operations, the future-state value stream can be modeled as a production flow version. All processes of the value stream are modeled as process activities. Movements or transfers can be modeled as transfer activities if the transfer status must be registered, or if integration with inventory picking or consolidated shipments is required. 
+The future-state value stream can be modeled as a production flow version. All processes of the value stream are modeled as process activities. Movements or transfers can be modeled as transfer activities if the transfer status must be registered, or if integration with inventory picking or consolidated shipments is required. 
 
 The value stream itself is modeled as an operating unit. Therefore, the value stream can be used as a financial dimension.
 

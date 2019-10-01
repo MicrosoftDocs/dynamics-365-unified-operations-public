@@ -100,7 +100,7 @@ After an order has been accepted, lines can be selected and marked as **Picking*
 
 Picking lists can be printed at the point of sale to assist workers performing the picking process. A printed picking list can be carried with the worker performing picking and as products are picked, the worker would manually mark them as picked on the picking list.
 
-The picking list format is configured in Dynamics 365 for Retail and added to the receipt profile. For more information about setting up receipt
+The picking list format is configured in Retail and added to the receipt profile. For more information about setting up receipt
 profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 If lines are selected and a picking list is printed for those lines, they are automatically updated with the **Picking** status.
@@ -110,7 +110,7 @@ If lines are selected and a picking list is printed for those lines, they are au
 - **Resulting status:** Picked or partially picked
 - **Resulting back office status:** Picked or partially picked
 
-After the physical picking process has been performed, lines can be marked as **Picked**. Selecting a line and marking it as **Picked** performs a real-time call to update the order line in Dynamics 365 for Retail. After the line has been marked as **Picked** at the point of sale, the status in the back office is also updated to **Picked** and inventory transactions reflect that the specified quantity has been decremented.
+After the physical picking process has been performed, lines can be marked as **Picked**. Selecting a line and marking it as **Picked** performs a real-time call to update the order line. After the line has been marked as **Picked** at the point of sale, the status in the back office is also updated to **Picked** and inventory transactions reflect that the specified quantity has been decremented.
 
 When orders are processed over time, partial quantities can be processed for a specific line. If a line is selected and the action **Mark as picked** is taken, and the quantity is greater than one, the user is prompted for the quantity. The remaining quantity to be picked is auto-filled. If less than the remaining quantity is specified, the status of the line becomes **Partially picked**. When the order line is updated in the back office, it will also reflect the partially picked status and the quantity entered by the user is used for the inventory update.
 
@@ -127,7 +127,7 @@ Order lines can be packed at any point after the order line has been accepted.
 - **Resulting status:** Packed or partially packed
 - **Resulting back office status:** Delivered or partially delivered
 
-This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Dynamics 365 for Retail and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Retail and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Action: Mark as packed**
 

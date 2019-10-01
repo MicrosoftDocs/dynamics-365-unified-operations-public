@@ -5,7 +5,7 @@ title: Retail software development kit (SDK) samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: mugunthanm
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -38,7 +38,7 @@ This topic describes three new samples that were released together with the Reta
 
 ## Override message handler sample
 
-**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 for Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
+**Scenario:** Sometimes, one of Fabrikam's customers is in the customer relationship management (CRM) system but isn't imported into Microsoft Dynamics 365 Retail. Therefore, Fabrikam wants to look up the customer from the CRM system and the point of sale (POS). Here are the business requirements:
 
 - Search for customers from the CRM system and the POS.
 - Merge the results, and show a unified result set in Retail Modern POS (MPOS).
@@ -168,6 +168,9 @@ The following steps show the CRT code changes. For MPOS and the channel database
     ```
 
 Before you try this sample, be sure to create the custom tables, views, and stored procedures in the channel database. Additionally, make the relevant changes to MPOS. The full sample code, together with additional comments, is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.EmailPreferenceSample folder of the SDK. For information about how to create custom database artifacts, see the RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference folder of the SDK.
+
+> [!NOTE]
+> The above code sample and the sample script in the RetailSDK\\Documents\\SampleExtensionsInstructions\\EmailPreference folder use [crt].EXTENSIONPROPERTIESTABLETYPE. Starting in version 7.3 we no longer support using crt or ax schema objects/data types in ext schema. You must create your custom extension table property type in ext schema and use it.
 
 ### Best practice
 

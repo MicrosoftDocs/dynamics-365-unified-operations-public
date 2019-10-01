@@ -2,7 +2,7 @@
 # required metadata
 
 title: Initialize seed data in new Retail environments
-description: This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.
+description: This article describes the data that's created as part of the initialization process for Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article describes the data that's created as part of the initialization process for Microsoft Dynamics 365 for Retail.
+This article describes the data that's created as part of the initialization process for Dynamics 365 Retail.
 
 After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data.
 
@@ -44,7 +44,7 @@ After the Retail solution has been deployed through Microsoft Dynamics Lifecycle
 
 To initialize the retail configuration, follow these steps.
 
-1. Start the Dynamics 365 for Retail client.
+1. Start the Retail client.
 2. Click **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
 3. Click **Initialize**.
 
@@ -62,7 +62,7 @@ Initialization creates the following default configuration data:
 - Entity validation templates
 - Batch job to purge Commerce Data Exchange session history
 
-Additionally, logging that is related to the payment card industry (PCI) is enabled for the Dynamics 365 for Retail database.
+Additionally, logging that is related to the payment card industry (PCI) is enabled for the Retail database.
 
 > [!NOTE]
 > There is an option to separately configure the Retail scheduler. This option lets you reset the Retail scheduler configuration to its default settings.

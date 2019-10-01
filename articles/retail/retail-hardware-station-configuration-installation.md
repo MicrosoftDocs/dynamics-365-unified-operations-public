@@ -37,14 +37,17 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 
+> [!IMPORTANT]
+> It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+
 ## Download Retail hardware station by using self-service
 
 ### Configure a new Retail hardware station profile (Start here for Dynamics 365 for Retail, February 2016)
 
 > [!NOTE]
-> This procedure is required only if you're running the February 2016 (RTW) version of Microsoft Dynamics 365 for Retail. If you're running version 1611, start with the next procedure.
+> This procedure is required only if you're running the February 2016 (RTW) version of Retail. If you're running version 1611, start with the next procedure.
 
-1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Microsoft Dynamics 365 for Retail trial.
+1. Use your Microsoft Azure Active Directory (Azure AD) credentials to sign in to the Retail headquarters or Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware station profiles**.
 3. On the **Hardware station profile** page, on the Action Pane, select **New**.
 4. In the **Hardware station ID** field, enter a unique hardware station ID.
@@ -59,12 +62,12 @@ This topic explains how to configure, download, and install Retail hardware stat
 
 6. On the Action Pane, select **Save**.
 
-### Configure a new Retail hardware station (Start here for Dynamics 365 for Retail, version 1611 or later)
+### Configure a new Retail hardware station (Start here for Retail, version 1611 or later)
 
 > [!NOTE]
-> If you're running the February 2016, non-upgraded version of Dynamics 365 for Retail (Initial release), skip step 6.
+> If you're running the February 2016, non-upgraded version of Retail (Initial release), skip step 6.
 
-1. Use your Azure AD credentials to sign in to the Dynamics 365 for Retail trial.
+1. Use your Azure AD credentials to sign in to the Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 3. On the **All retail stores** page, select the retail channel ID of the desired store. The details view for the store appears.
 
@@ -94,7 +97,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 
 ### Download the Retail hardware station installer
 
-1. Use your Azure AD credentials to sign in to the Retail headquarters or Dynamics 365 for Retail trial.
+1. Use your Azure AD credentials to sign in to the Retail headquarters or Retail trial.
 2. On the **Welcome** page, use the menu in the upper left to go to **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**.
 3. On the **All retail stores** page, select the retail channel ID of the desired store. The details view for the store appears.
 
@@ -142,7 +145,7 @@ The Retail hardware station installer first extracts the associated files and th
 5. Enter the HTTPS port to use.
 
     > [!NOTE]
-    > - You can find the HTTPS port in Dynamics 365 for Retail. (See the configuration instructions earlier in this topic).
+    > - You can find the HTTPS port in Retail. (See the configuration instructions earlier in this topic).
     > - The installer automatically enters the host name. If, for any reason, you must change the host name for the installation, you can change it here. The host name must be the fully-qualified domain name (FQDN) of the system, and it must be entered in the **Host name** field for the selected hardware station entry.
 
 6. The installer installs Retail hardware station and then indicates whether the installation was successful.
@@ -157,7 +160,7 @@ The Retail hardware station installer first extracts the associated files and th
 9. The Retail Server URL is determined through the Retail hardware station installation and is entered automatically. The installer uses this URL to load the list of stores that the user is connected to via the address book.
 10. Select the retail store that the hardware station was installed for.
 11. Select the hardware profile that matches the hardware station that was installed on the current computer.
-12. Verify that the host names and EFT terminal IDs are correct, based on the current computer and the Retail hardware station configuration that has already been completed in Dynamics 365 for Retail. After you've verified this information, select **Install**.
+12. Verify that the host names and EFT terminal IDs are correct, based on the current computer and the Retail hardware station configuration that has already been completed in Retail. After you've verified this information, select **Install**.
 13. When you receive a message that states that the merchant account information was installed correctly, exit the installer by selecting the **Close** button.
 
 ## Help secure Retail hardware station

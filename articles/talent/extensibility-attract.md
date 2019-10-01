@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extensibility in Attract
-description: This topic describes how you can extend the Microsoft Dynamics 365 for Talent - Attract application by using the Microsoft Power platform.
+description: This topic describes how you can extend Microsoft Dynamics 365 Talent - Attract by using the Microsoft Power platform.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent is built on top of the Common Data Service platform, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Common Data Service offers. Therefore, you can configure and personalize the system by using Microsoft PowerApps and Microsoft Flow. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the PowerApps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
+Microsoft Dynamics 365 Talent is built on top of Common Data Service, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Common Data Service offers. Therefore, you can configure and personalize the system by using Microsoft PowerApps and Microsoft Flow. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the PowerApps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
 
 ## Extending Option sets in Attract
 
@@ -59,9 +59,9 @@ Listed below are the steps to update the **Rejection reason** field with values 
 12. Select **Save**.
 13. Select **Publish** at the top of the page.
 
-## Take advantage of the Microsoft Power platform 
+## Take advantage of the Microsoft Power Platform 
 
-Because all the data from Attract resides in Common Data Service, you can use tools from the Microsoft Power platform to incorporate your unique business needs into Attract.
+Because all the data from Attract resides in Common Data Service, you can use tools from the Microsoft Power Platform to incorporate your unique business needs into Attract.
 
 ### PowerApps
 

@@ -36,7 +36,7 @@ ms.search.validFrom: 2016-11-30
 
 This topic provides information about the **Sales orders** mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
 
-This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+This mobile workspace is intended to be used with the Finance and Operations mobile app.
 
 ## Overview
 The **Sales orders** mobile workspace lets you view detailed information about each sales order. This information includes the status of the order, contact information for the customer, and contact information for the order taker. The **Sales orders** mobile workspace provides an instant view of sales orders. You can view all sales orders, view sales orders by customer, or view information about a specific sales order. 
@@ -88,8 +88,8 @@ This view lists sales orders by customer.
 ## Prerequisites
 The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations 
-If the Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Sales orders** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Supply Chain Management 
+If Supply Chain Management has been deployed for your organization, the system administrator must publish the **Sales orders** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Dynamics 365 for Operations version 1611 with platform update 3 or later
 If Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
@@ -125,7 +125,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </table>
 
 ## Download and install the mobile app
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

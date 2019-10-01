@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get the Dynamics 365 for Talent - Onboard app
-description: This topic explains how to get the stand-alone version of the Microsoft Dynamics 365 for Talent - Onboard app or the version that includes the Comprehensive Hiring Add-On.
+title: Get the Dynamics 365 Talent - Onboard app
+description: This topic explains how to get the stand-alone version of the Microsoft Dynamics 365 Talent - Onboard app or the version that includes the Comprehensive Hiring Add-On.
 author: andreabichsel
 manager:
 ms.date: 05/02/2019
@@ -29,23 +29,23 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
 ---
 
-# Get the Dynamics 365 for Talent: Onboard app
+# Get the Dynamics 365 Talent: Onboard app
 
 [!include [banner](includes/banner.md)]
 
-You can view a demo and try the Microsoft Dynamics 365 for Talent: Onboard app for free from the [Onboard product page](https://dynamics.microsoft.com/talent/onboard/).
+You can view a demo and try the Microsoft Dynamics 365 Talent: Onboard app for free from the [Onboard product page](https://dynamics.microsoft.com/talent/onboard/).
 
 > [!NOTE]
 > The free trial requires a business email account.
 
-You can purchase a subscription to Onboard as either a stand-alone app or part of Dynamics 365 for Talent. Talent is a comprehensive human capital management (HCM) system that includes Dynamics 365 for Talent: Attract, Onboard, and Core HR. For more information about how to purchase Onboard, see the [Onboard product page](https://dynamics.microsoft.com/talent/onboard/).
+You can purchase a subscription to Onboard as either a stand-alone app or part of Dynamics 365 Talent. Talent is a comprehensive human capital management (HCM) system that includes Dynamics 365 Talent: Attract, Onboard, and Core HR. For more information about how to purchase Onboard, see the [Onboard product page](https://dynamics.microsoft.com/talent/onboard/).
 
 During the trial or purchase process, you will set up your Microsoft 365 email address and password. Be sure to make a note of these values.
 
 > [!WARNING]
 > You can't migrate data from your trial to your paid subscription environment. <!--Reviewers: please verify.-->
 
-To find out about new features in Talent, see [What's new or changed in Dynamics 365 for Talent](./whats-new.md) and [Dynamics 365 and Power Platform release notes](https://docs.microsoft.com/business-applications-release-notes/index). If you want to preview new features in Onboard, see [Access preview features in Talent](./access-preview-feature.md).
+To find out about new features in Talent, see [What's new or changed in Dynamics 365 Talent](./whats-new.md) and [Dynamics 365 and Power Platform release notes](https://docs.microsoft.com/business-applications-release-notes/index). If you want to preview new features in Onboard, see [Access preview features in Talent](./access-preview-feature.md).
 
 If you're an IT professional and want to learn more about how the two versions of the Onboard app are provisioned, see [Provisioning for the Onboard app](./modular-app-tech-faq.md).
 
