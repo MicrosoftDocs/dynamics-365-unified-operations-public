@@ -129,7 +129,7 @@ To add a script to a template, follow these steps.
 1. In the property pane, enter any other optional settings that you want to configure.
 
 > [!TIP]
-> If you want to reuse any of your script modules for other templates, you can convert them to fragments. In this way, you help make the authoring process more efficient, and you centralize the update process. For information about how to convert a script module to a fragment, see [Save an existing module configuration as a fragment](fragments.md#save-an-existing-module-configuration-as-a-fragment).
+> If you want to reuse any of your script modules for other templates, you can convert them to fragments. In this way, you help make the authoring process more efficient, and you centralize the update process. For information about how to convert a script module to a fragment, see [Save an existing module configuration as a fragment](work-with-fragments.md#save-an-existing-module-configuration-as-a-fragment).
 
 ## Save, check in, preview, and publish a template
 
