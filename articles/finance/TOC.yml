@@ -1357,7 +1357,7 @@
           - name: Post the pre-acquisition
             href: localizations/emea-pre-acquisition-acquisition-fixed-asset.md
         - name: Post periodic journals
-          href: ../financials/general-ledger/tasks/post-periodic-journals.md
+          href: general-ledger/tasks/post-periodic-journals.md
         - name: Set up signers for print forms
           href: localizations/emea-set-up-signers-for-printing-forms.md
         - name: Split periods in periodic journals
@@ -1505,9 +1505,9 @@
         - name: Reverse charges
           href: localizations/emea-reverse-charge.md
         - name: SEPA credit transfer overview
-          href: ../financials/accounts-payable/sepa-credit-transfer.md
+          href: accounts-payable/sepa-credit-transfer.md
         - name: SEPA direct debit overview
-          href: ../financials/accounts-receivable/sepa-direct-debit-overview.md
+          href: accounts-receivable/sepa-direct-debit-overview.md
         - name: Set up customer and vendor compensation
           href: localizations/emea-compensation-customer-vendor-transactions.md
         - name: Set up EU sales list reporting
@@ -1827,18 +1827,18 @@
         - name: Tax engine
           items: 
           - name: Tax engine overview
-            href: ../financials/general-ledger/tax-engine.md
+            href: general-ledger/tax-engine.md
             items:     
             - name: Create tax components
               href: localizations/tax-engine-create-tax-component.md
             - name: Import configuration
-              href: ../financials/general-ledger/tax-engine-import-configuration.md
+              href: general-ledger/tax-engine-import-configuration.md
             - name: Tax engine applicability
-              href: ../financials/general-ledger/tax-engine-applicability.md
+              href: general-ledger/tax-engine-applicability.md
             - name: Tax engine integration
-              href: ../financials/general-ledger/tax-engine-integration.md
+              href: general-ledger/tax-engine-integration.md
             - name: Extending the Tax engine
-              href: ../financials/general-ledger/extend-tax-engine-configurations.md
+              href: general-ledger/extend-tax-engine-configurations.md
         - name: Tax thresholds FAQ
           href: localizations/apac-ind-tax-thresholds.md          
         - name: Stock transfers
@@ -2178,7 +2178,7 @@
           - name: Set up exchange rates for currency transactions
             href: localizations/rus-exchange-difference.md
           - name: Import currency exchange rates from CBRF 
-            href: ../financials/general-ledger/import-currency-exchange-rates.md
+            href: general-ledger/import-currency-exchange-rates.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
@@ -2582,7 +2582,7 @@
         - name: Benefits
           href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Cash overview
-          href: ../financials/cash-bank-management/Cash-Overview-Power-BI-content.md
+          href: cash-bank-management/Cash-Overview-Power-BI-content.md
         - name: CFO overview
           href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Compensation
@@ -2598,7 +2598,7 @@
         - name: Cost management
           href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Credit and collections management
-          href: ../financials/accounts-receivable/credit-collections-power-bi.md
+          href: accounts-receivable/credit-collections-power-bi.md
         - name: Employee competencies and development
           href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Employee development
@@ -2610,7 +2610,7 @@
         - name: Financial insights
           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Fixed asset management
-          href: ../financials/fixed-assets/Fixed-asset-management-workspace.md
+          href: fixed-assets/Fixed-asset-management-workspace.md
         - name: Learning
           href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Organizational training
@@ -2628,7 +2628,7 @@
         - name: Sales and profitability performance
           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Vendor payments
-          href: ../financials/accounts-payable/Vendor-payments-workspace.md
+          href: accounts-payable/Vendor-payments-workspace.md
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Workforce metrics
@@ -2926,9 +2926,9 @@
         - name: Company directory
           href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Cost controlling
-          href: ../financials/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
+          href: cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Expense management
-          href: ../financials/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
+          href: expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Invoice approvals
@@ -2936,11 +2936,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Project mobile applications overview
-          href: ../financials/project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/finance/toc.json
+          href: project-management/project-mobile-application-overview.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Project time entry
-          href: ../financials/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
+          href: project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Project timesheet
-          href: ../financials/project-management/project-timesheet.md?toc=/dynamics365/unified-operations/finance/toc.json
+          href: project-management/project-timesheet.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/unified-operations/finance/toc.json
         - name: Sales orders
@@ -3173,9 +3173,9 @@
           href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-payroll-data-updates.md
         - name: Standard payroll reports
           href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-payroll-reports.md
-    - name: Financials development
+    - name: Finance development
       items:
-      - name: Financials development home page
+      - name: Finance development home page
         href: ../fin-ops-core/dev-itpro/financial/financial-dev-home-page.md
       - name: Financial dimension framework
         items:
