@@ -37,7 +37,7 @@ These Supplemental Terms of Use ("Terms") cover use of those Microsoft Dynamics 
 ## General Terms
 
 Dynamics 365 may include preview, beta, or other pre-release features, services, or software, 
-offered by Microsoft to obtain customer feedback ("Previews")>  Previews are made available to you 
+offered by Microsoft to obtain customer feedback ("Previews").  Previews are made available to you 
 on the condition that you agree to these terms of use, which supplement your agreement governing 
 use of Dynamics 365. 
 
