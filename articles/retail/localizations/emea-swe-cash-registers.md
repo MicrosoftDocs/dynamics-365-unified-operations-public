@@ -79,7 +79,7 @@ Retail includes a sample for integration of POS with Sweden-specific fiscal devi
 > [!NOTE]
 > Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
 
-For more information about the control unit integration sample, see [Fiscal integration sample for Sweden](./emea-swe-fi-sample.md).
+For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
 
 ## Setting up Retail for Sweden
 
