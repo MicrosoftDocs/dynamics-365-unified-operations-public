@@ -2,7 +2,7 @@
   items: 
   - name: Dynamics 365 Retail
     items:
-    - name: Dynamics 365 Retail home page
+    - name: Dynamics 365 Retail
       href: index.md
     - name: Get started
       items:
