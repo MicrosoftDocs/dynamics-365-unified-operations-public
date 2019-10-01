@@ -51,6 +51,7 @@ This release enables the creation of digital experiences using built-in web auth
 ## Core concepts and tasks
 
 Select a feature area to learn more about it.
+- [Configure an e-Commerce evaluation environment](provisioning-guide.md)
 - [Store starter kit](starter-kit-overview.md)
 - [Product recommendations](product-recommendations.md)
 - [Ratings and reviews](ratings-reviews-overview.md)
