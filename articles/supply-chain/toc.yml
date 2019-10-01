@@ -614,7 +614,7 @@
         - name: Benefits
           href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/supply-chain/toc.json
         - name: Cash overview
-          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
+          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/supply-chain/toc.json
         - name: CFO overview
           href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/supply-chain/toc.json
         - name: Compensation
