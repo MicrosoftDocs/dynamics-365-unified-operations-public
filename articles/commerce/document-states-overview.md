@@ -36,7 +36,7 @@ This topic covers the various document states of page elements in Microsoft Dyna
 
 ## Document state descriptions
 
-The [Page elements overview](page-elements-overview) topic lists various documents types in the content management system (CMS). These document types can have several states in the authoring tool. The document states help prevent data conflicts and enforce version control. They determine who can change the documents, when the documents can be changed, and when changes can be viewed by other people.
+The [Page elements overview](page-elements-overview.md) topic lists various documents types in the content management system (CMS). These document types can have several states in the authoring tool. The document states help prevent data conflicts and enforce version control. They determine who can change the documents, when the documents can be changed, and when changes can be viewed by other people.
 
 The following table shows the possible document states of page elements in Commerce.
 
