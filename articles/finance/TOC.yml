@@ -889,49 +889,49 @@
         - name: Define audit policies for source documents
           href: general-ledger/tasks/define-audit-policies-source-documents.md 
     - name: Project management and accounting
-	    items:
-	    - name: Project management and accounting overview
-	      href: ../financials/project-management/overview-project-management-accounting.md
-	    - name: Intercompany invoicing
-	      href: ../financials/project-management/intercompany-invoicing.md
-	    - name: Configure intercompany project invoicing
-	      href: ../financials/project-management/tasks/configure-intercompany-project-invoicing.md
-	    - name: Configure standard costs for labor and expenses
-	      href: ../financials/project-management/tasks/configure-standard-costs-labor-expenses.md
-	    - name: Project cost accrual purchase receipts
-	      href: ../financials/accounts-payable/project-cost-accrual-purchase-receipts.md
-	    - name: Project invoicing
-	      href: ../financials/accounts-payable/project-invoicing.md
-	    - name: Project contracts
-	      href: ../financials/project-management/project-contracts.md
-	    - name: Project forecasts and budgets
-	      href: ../financials/project-management/project-forecasts-budgets.md
-	    - name: Project sales orders
-	      href: ../financials/project-management/project-sales-orders.md
-	    - name: Purchase orders for a project
-	      href: ../financials/project-management/project-purchase-orders.md
-	    - name: Project quotations
-	      href: ../financials/project-management/project-quotations.md
-	    - name: Project resourcing
-	      href: ../financials/project-management/project-resourcing.md
-	    - name: Receive items on purchase order from item requirement
-	      href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
-	    - name: Work breakdown structures
-	      items:
-	      - name: Work breakdown structures overview
-	        href: ../financials/project-management/work-breakdown-structures.md
-	      - name: Microsoft Project Client integration
-	        href: ../financials/project-management/project-integration.md
-	    - name: Project mobile applications overview
-	      href: ../financials/project-management/project-mobile-application-overview.md
-	    - name: Project time entry mobile workspace
-	      href: ../financials/project-management/project-time-entry-mobile-workspace.md
-	    - name: Project timesheet mobile app
-	      href: ../financials/project-management/project-timesheet.md
-	    - name: Project timesheets on a mobile device
-	      href: ../financials/project-management/mobile-timesheets.md
-	    - name: Implement custom fields for the Project timesheet mobile app
-	      href: ../financials/project-management/custom-fields-mobile.md
+      items:
+      - name: Project management and accounting overview
+        href: ../financials/project-management/overview-project-management-accounting.md
+      - name: Intercompany invoicing
+        href: ../financials/project-management/intercompany-invoicing.md
+      - name: Configure intercompany project invoicing
+        href: ../financials/project-management/tasks/configure-intercompany-project-invoicing.md
+      - name: Configure standard costs for labor and expenses
+        href: ../financials/project-management/tasks/configure-standard-costs-labor-expenses.md
+      - name: Project cost accrual purchase receipts
+        href: ../financials/accounts-payable/project-cost-accrual-purchase-receipts.md
+      - name: Project invoicing
+        href: ../financials/accounts-payable/project-invoicing.md
+      - name: Project contracts
+        href: ../financials/project-management/project-contracts.md
+      - name: Project forecasts and budgets
+        href: ../financials/project-management/project-forecasts-budgets.md
+      - name: Project sales orders
+        href: ../financials/project-management/project-sales-orders.md
+      - name: Purchase orders for a project
+        href: ../financials/project-management/project-purchase-orders.md
+      - name: Project quotations
+        href: ../financials/project-management/project-quotations.md
+      - name: Project resourcing
+        href: ../financials/project-management/project-resourcing.md
+      - name: Receive items on purchase order from item requirement
+        href: ../financials/project-management/tasks/receive-items-purchase-order-item-requirement.md
+      - name: Work breakdown structures
+        items:
+        - name: Work breakdown structures overview
+          href: ../financials/project-management/work-breakdown-structures.md
+        - name: Microsoft Project Client integration
+          href: ../financials/project-management/project-integration.md
+	- name: Project mobile applications overview
+          href: ../financials/project-management/project-mobile-application-overview.md
+        - name: Project time entry mobile workspace
+          href: ../financials/project-management/project-time-entry-mobile-workspace.md
+        - name: Project timesheet mobile app
+          href: ../financials/project-management/project-timesheet.md
+        - name: Project timesheets on a mobile device
+          href: ../financials/project-management/mobile-timesheets.md
+        - name: Implement custom fields for the Project timesheet mobile app
+          href: ../financials/project-management/custom-fields-mobile.md
     - name: Public sector
       items:
       - name: Public sector home page
