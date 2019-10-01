@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 ---
 
-# Supplemental Terms of User for Microsoft Dynamics 365 Previews
+# Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 
 [!include[banner](../includes/banner.md)]
 
