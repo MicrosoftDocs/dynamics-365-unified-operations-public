@@ -5,7 +5,7 @@ title: Supply Chain Management home page
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -43,6 +43,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
+- [Asset management](asset-management/index.md)
 - [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
