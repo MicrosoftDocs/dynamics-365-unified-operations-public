@@ -56,6 +56,10 @@ Select a feature area to learn more about it.
 - [Transportation management](transportation/transportation-management-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
 
+## Dynamics 365 Finance
+
+For information on Dynamics 365 Finance, go to the [Dynamics 365 Finance help resources](../finance/index.md) page.
+
 ## Videos
 
 These short videos help you learn about the new features that are in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
