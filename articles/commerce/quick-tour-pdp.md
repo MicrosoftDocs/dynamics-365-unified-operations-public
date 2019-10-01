@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quick tour of product details pages
-description: This topic provides a quick tour of product details pages in Dynamics 365 Commerce.
+description: This topic provides a quick tour of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -32,46 +32,47 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic provides a quick tour of product details pages in Dynamics 365 Commerce.
+This topic provides a quick tour of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A product details page (PDP) provides detailed information about a product, and enables customers to select product options such as size, style, and color. A PDP should showcase all the product information a customer needs to make a purchase decision.
+A PDP provides detailed information about a product, and lets customers select product options such as a size, style, and color. A PDP should showcase all the product information that a customer requires to make a purchase decision.
 
-The following image shows an example of a PDP.
+The following illustration shows an example of a PDP.
 
-![Product details page](./media/pdp.PNG)
+![Example of a product details page](./media/pdp.PNG)
 
-### Header and footer modules
+## Header and footer modules
 
-The top of the page has a header which shows all the product categories and other pages that the retailer wants the customer to browse. On the bottom of the page is a footer with quick links to various topics that may interest customers.
+The top of a PDP has a header that shows all the product categories and other pages that the retailer wants customers to browse. The bottom of the page has a footer that contains quick links to various topics that might interest customers.
 
-### Buy box module
+## Buy box module
 
-The main section of the PDP begins with a **buy box**, which is the most important module on a PDP. The buy box is a container module that hosts several modules which hold key information about the product such as product name, product images, description, price, and product ratings. It enables the user to select any product options (for example, size, style, and color) and add the product to the cart. A buy box module needs a product ID, which is derived from the page context. If this module is placed on a page where the page context does not have a product ID, it will not render the information correctly. 
+The most important module on a PDP is the buy box module. Therefore, it's the first item in the main section of the page. A buy box module is a container module and hosts several modules that contain the most important information about the product. This information includes the product name, product images, the description, the price, and product ratings.
 
-A buy box module also enables the shopper to buy the product online and pick it up in a nearby store. The buy online and pick up in store module integrates with Bing Maps APIs to find stores nearby or in a customer-specified location.
+The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart. It also lets the customer buy the product online and pick it up in a store. The buy online and pick up in store module uses integration with Bing Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.
 
-### Product specifications module
+A buy box module requires a product ID. This ID is derived from the page context. If a buy box module is added to a page where the page context doesn't include a product ID, it won't render the information correctly.
 
-The **product specifications** module can be used to showcase additional details about the product, and are pulled from product attributes in Dynamics 365 Retail. Any attribute that is set to "visible=true" will be shown on the product specifications module. This module requires a product ID to retrieve the product attributes.
+## Product specifications module
 
-### Recommendations module
+The product specifications module can be used to showcase additional details about the product. These details are taken from product attributes in Dynamics 365 Retail. The product specifications module shows every attribute where the **visible** property is set to **true**. It requires a product ID to retrieve the product attributes.
 
-The **Recommendations module** is a key module on the product details page. When browsing for products, customers should be presented with more product options so they can find the right product and make a purchase. Recommendations help customers easily discover more related content and continue their shopping journey. This can be achieved using different types of recommendation lists, as follows.
+## Recommendations module
 
-- **People also like** is a machine learning-based list that uses the transaction history of other customers to provide recommendations. This list is is generated by the recommendations service and is similar to "Customers who bought this also bought *(another product)*" lists. A product ID is needed to generate the list.
-- **Related** is a list that can be configured for a product in Retail. For example, for a brown travel leather handbag, more handbags that are leather-based or are for travel purposes can be configured for the related list. Other types of related lists such as **Accessories** and **More like this** can also be configured in Retail. A product ID is needed to generate related lists, so if added to a home page where there is no product ID context, the list will be empty. 
-- Algorithmically-generated recommendation lists such as **Trending**, **Best Selling**, and **New** can be used on product details pages. These lists may not be directly related to the product but they are another way to help customers find products that may interest them. These types of lists don't require a product ID context, but are generic lists that are generated based on shopping patterns across the site.
-- **Editorial** lists are manually-curated lists. For example, a retailer may decide to manually curate lists of products that they want to showcase.
+The recommendations module is an important module on a PDP. While customers browse for products, more product options should be presented to them, so that they can find the correct product and make a purchase. Recommendations help customers easily discover related content and continue to shop.
 
-### Ratings and reviews module
+Different types of recommendation lists are available:
 
-The **ratings and reviews** module displays ratings and reviews that have been provided by other shoppers. In addition, it enables the shopper to write a review for a product. It also displays a histogram that shows the ratings trend for a product. For more details see [Ratings and reviews overview](ratings-reviews-overview.md).
+- The **People also like** list is based on machine learning. It uses the transaction history of other customers to provide recommendations. This list is generated by the recommendations service and resembles "Customers who bought this also bought..." lists. A product ID is required to generate this list.
+- A **Related** list can be configured for a product in Retail. For example, for a brown leather travel handbag, more handbags that are leather-based or designed for travel purposes can be configured for the related list. Other types of related lists, such as **Accessories** and **More like this**, can also be configured in Retail. A product ID is required to generate this list. Therefore, if it's added to a home page, where the page context doesn't include a product ID, the list will be empty.
+- Algorithmically generated recommendation lists, such as **Trending**, **Best Selling**, and **New**, can be used on PDPs. Although these lists might not be directly related to the product on the PDP, they are another way to help customers find products that might interest them. These types of lists don't require a product ID. They are generic lists that are generated based on shopping patterns across the site.
+- Editorial lists are manually curated lists. For example, a retailer might decide to manually curate lists of products that it wants to showcase.
 
-### Marketing modules
+## Ratings and reviews module
 
-If marketing content is unique to a specific product, any marketing module can be added to a product details page. This can be achieved by enriching a product details page. For more information, see [Enriching a product page](enrich-product-page.md). 
+The ratings and reviews module shows ratings and reviews that have been provided by other customers. It also lets a customer write his or her own review of the product. Additionally, it includes a histogram that shows the ratings trend for the product. For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
 
+## Marketing modules
 
-
+If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. For more information, see [Enriching a product page](enrich-product-page.md).
