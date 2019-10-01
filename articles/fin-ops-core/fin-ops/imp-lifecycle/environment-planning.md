@@ -189,4 +189,4 @@ Create the environments plan early in your implementation.
 
 After you've identified the environments, the environments plan can be used to structure the Application Lifecycle Management (ALM) flows. For example, after you finalize your environments plan, you can define the flows for building and moving the code and the data across environments.
 
-We strongly recommend that you watch the [Environment Planning TechTalk](https://infopedia.eventbuilder.com/event?eventid=o8a5q2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks). From the linked page, you can also download the *Sample Environment Planning exercise* spreadsheet to get a head start on your environment planning exercise.
+We strongly recommend that you watch the [Environment Planning TechTalk](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018). From the linked page, you can also download the *Sample Environment Planning exercise* spreadsheet to get a head start on your environment planning exercise.
