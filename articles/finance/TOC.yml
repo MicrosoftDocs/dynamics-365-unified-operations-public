@@ -1718,7 +1718,7 @@
               href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
           - name: Purchase transaction
             items:
-            - name: Purchases from unregsitered vendors
+            - name: Purchases from unregistered vendors
               href: localizations/apac-ind-GST-purchases-unregistered-vendor.md
             - name: Purchase a taxable item from an unregistered vendor
               href: localizations/apac-ind-gst-unregistered-vendor-purchase.md
