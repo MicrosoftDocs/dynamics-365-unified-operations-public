@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3.2
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This sample fiscal integration functionality does not take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in future updates. You should use the [fiscal integration sample for Sweden](./emea-swe-fi-sample.md) instead.
+> This sample fiscal integration functionality does not take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in future updates. You should use the [Control unit integration sample for Sweden](./emea-swe-fi-sample.md) instead.
 
 **SAMPLE CODE NOTICE**
 
