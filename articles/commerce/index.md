@@ -47,3 +47,13 @@ This release enables the creation of digital experiences using built-in web auth
 - Flexible and intelligent omnichannel experience: Unify physical and digital commerce by providing consistent experiences to customers across cloud search and discovery, product reviews, wish lists, inventory, gift cards, and loyalty. Allow customers to purchase when, how, and where they want, on any device—while providing choice around modern payment methods and product collection or delivery.
 
 - Streamline operations using AI in the cloud: Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
+
+## Core concepts and tasks
+
+Select a feature area to learn more about it.
+- [Store starter kit](starter-kit-overview.md)
+- [Product recommendations](product-recommendations.md)
+- [Ratings and reviews](ratings-reviews-overview.md)
+- [Templates and layouts](templates-layouts-overview.md)
+- [Add and manage content](add-manage-content.md)
+- [Extensibility](e-commerce-extensibility/overview.md)
