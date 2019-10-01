@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 These Supplemental Terms of Use ("Terms") cover use of those Microsoft Dynamics 365 previews that link to these Terms.
 
-# General Terms
+## General Terms
 
 Dynamics 365 may include preview, beta, or other pre-release features, services, or software, 
 offered by Microsoft to obtain customer feedback ("Previews")>  Previews are made available to you 
@@ -64,7 +64,7 @@ Previews.  You may use the Preview only if you have a valid license or subscript
 required Dynamics 365 application.  You may not access or use the Previews if you do not have the 
 required license or subscription.
 
-# Use Preview in a Production Enviroment
+## Use Preview in a Production Enviroment
 
 The "General Terms" section applies generally to all Previews that link to these Terms.  This 
 section contains terms that apply only if a Preview allows you to use Customer Data or Personal 
@@ -78,15 +78,15 @@ environment in connection with participating in the Preview.  By accessing or pr
 in a 'live operations' or production enviorment, you consent to share your Data with external 
 systems outside of the geography where your production environment is deployed.
 
-# Service-Specific Terms
+## Service-Specific Terms
 
 The "General Terms" section applies generally to all Previews that link to these Teams.  These 
 service-specific terms are in addition to the "General Terms" and the "Use Preview in a Production 
 Enviroment" sections.  These service-specific terms govern if there are any conflicts with the 
 "General Terms" or the "Use Preview in a Production Environment" sections.
 
-# Dynamics 365 Commerce (Preview):
-You must obtain your own patent license(s) from any third party H.265/HEVC patent pools or rights 
+### Dynamics 365 Commerce (Preview):
++ You must obtain your own patent license(s) from any third party H.265/HEVC patent pools or rights 
 holders before using Azure Media Services to encode or decode H.265/HEVC media.  In addition, this 
 Preview may include H.264/AVC, VC-1, MPEG-4 Part 2, and MPEG-2 visual compression technology.  
 MPEG LA, L.L.C. which requires this notice:  THIS PRODUCT IS LICENSED UNDER THE AVC, THE VC-1, THE 
@@ -103,7 +103,7 @@ distribuion to third parties.  If there is any inconsistency between the Agreeme
 Perview terms of use, then to the extent of such inconsistency, these Preview terms of use will 
 control over the conflicting terms in the Agreement.
 
-# Supplemental Preview Software License Terms.  
++ **Supplemental Preview Software License Terms.**  
 Microsoft will provide you with access to certain software for use in connection with this Preview. 
 Notwithstanding any provision to the contrary in the Microsoft Preview Software License Terms for 
 the Dynamics 365 Commerce Software Development Kit ("SDK License Terms") or the Dynamics 365 
@@ -118,12 +118,12 @@ computer networks accessible by their parties), including without limitation any
 card, monetary, or other banking transactions; and (C) deploy the websites that you create with the 
 software for third parties to access over the Internet, but only if you also comply with the 
 following:
-**#1.  External Production Use:**  (i) you take adequate precautionairy measures to backup and protect 
-your data; (ii) you agree to cease such use immedidately upon notice from Microsoft; (iii) you 
-include in your website a visable notice to your users that the websites were created with or rely 
-on pre-release, time-sensitive, unsupported software that may not operate corectly; and (iv) you 
-will not make any representations, warranties, or promises on behalf of Microsoft or with respect 
-to the software or its performance.
+**#1.  External Production Use:**  (i) you take adequate precautionairy measures to backup and 
+protect your data; (ii) you agree to cease such use immedidately upon notice from Microsoft; (iii) 
+you include in your website a visable notice to your users that the websites were created with or 
+rely on pre-release, time-sensitive, unsupported software that may not operate corectly; and (iv) 
+you will not make any representations, warranties, or promises on behalf of Microsoft or with 
+respect to the software or its performance.
 **#2  Hazardous Environments.**  You may not use the software to develop and test websites for 
 hazardous environments requiring fail-safe controls, including without limitation, the design, 
 construction, maintenance or operation of nuclear facilities, aircraft navigation or communication 
