@@ -89,8 +89,8 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. If you are a partner, choose **Migrate, create solutions, and learn**.
 1. If you are a customer, choose **Prospective presales**.
 1. Enter a name, description and industry as you see fit.
-1. For **Product name**, select **Microsoft Dynamics 365 for Retail**.
-1. For **Product version**, select **Microsoft Dynamics 365 for Retail**.
+1. For **Product name**, select **Microsoft Dynamics 365 Retail**.
+1. For **Product version**, select **Microsoft Dynamics 365 Retail**.
 1. For **Methodology**, select **Dynamics AX implementation methodology**.
 1. You may import roles and users from an existing project if that is desired.
 1. Click **Create**.
@@ -343,7 +343,7 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 * [RCSU (Retail Cloud Scale Unit)](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 * [Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal)
 * [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
-* [Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail)
+* [Dynamics 365 Retail](../retail/index.md)
 ### Microsoft Dynamics 365 Commerce Preview support
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
