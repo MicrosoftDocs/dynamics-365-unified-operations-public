@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Help resources for Supply Chain Managemen
+# Help resources for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
