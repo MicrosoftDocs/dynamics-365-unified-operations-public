@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
+title: What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
+description: This topic describes features in Platform update 29 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
+# What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This topic describes features that are new or changed in Platform update 29 for Finance and Operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 
 ## Feature management
@@ -52,7 +52,7 @@ For more information, see [Feature management overview](feature-management/featu
 [Role-based security](../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events) can be now applied to individual business events in the business event catalog. When this security is enabled and configured, users will be able to only view and subscribe to business events to which their roles have access. This security also applies to integration scenarios, such as Microsoft Flow.
 
 ## Attachment recovery
-An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md).
+An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For details, see [Configure document management](../organization-administration/configure-document-management.md).
 
 ## Session idle timeout
 The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the user interface and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that may cause an extra load on the system. For more information, see [Set the session idle timeout](../../dev-itpro/sysadmin/session-idle-timeout.md).
@@ -111,7 +111,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

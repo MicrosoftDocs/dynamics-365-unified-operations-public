@@ -1363,6 +1363,8 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Purchase order approval mobile workspace
           href: procurement/purchase-order-mobile-workspace.md
+        - name: Record the receipt of goods on the purchase order
+          href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
       - name: Purchase order creation
         items:
         - name: Create purchase orders manually
@@ -1817,6 +1819,66 @@
             href: production-control/tasks/transfer-materials-kanban-jobs.md
           - name: Update kanban status
             href: production-control/tasks/update-kanban-status.md
+      - name: Process manufacturing
+        items:
+        - name: Maintain production master data
+          items:
+          - name: Bills of materials and formulas
+            href: production-control/bill-of-material-bom.md
+          - name: Formulas and formula versions
+            href: production-control/formulas-versions.md
+          - name: Operations resources
+            href: production-control/operations-resources.md
+          - name: Resource capabilities
+            href: production-control/resource-capabilities.md
+          - name: Batch attributes
+            href: production-control/batch-attributes.md
+          - name: Batch balancing
+            href: production-control/batch-balancing.md
+          - name: Catch weight product processing
+            href: warehousing/catch-weight-processing.md
+          - name: Copy a formula
+            href: production-control/tasks/copy-formula.md
+          - name: Copy co-products from an existing formula version
+            href: production-control/tasks/copy-co-products-existing-formula-version.md
+          - name: Create a formula by copying from an existing formula
+            href: production-control/tasks/create-formula-copying-existing-formula.md
+          - name: Production parameters in Manufacturing execution
+            href: production-control/production-parameters-manufacturing-execution.md
+          - name: Production setup requirements
+            href: production-control/production-set-up-requirements.md
+        - name: Schedule production operations
+          items:
+          - name: Operations scheduling
+            href: production-control/operations-scheduling.md
+          - name: Operations scheduling options
+            href: production-control/operation-scheduling-options.md
+          - name: Job scheduling
+            href: production-control/job-scheduling.md
+        - name: Operate production jobs
+          items:
+          - name: Consolidated batch orders
+            href: production-control/consolidated-batch-orders.md
+          - name: Batch order lifecycle from create to start
+            href: production-control/tasks/batch-order-lifecycle-start.md
+          - name: Sequence production jobs for process manufacturing
+            href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
+          - name: Material substitution in manufacturing
+            href: production-control/substitute-items-bom-lines.md
+          - name: Registration for manufacturing execution
+            href: production-control/registration-manufacturing-execution.md
+          - name: Production feedback
+            href: production-control/production-feedback.md
+          - name: Time and attendance registration
+            href: production-control/time-attendance-registrations.md
+        - name: Manage financials in production
+          items:
+          - name: Allocate time to jobs in a job bundle
+            href: production-control/allocate-time-jobs-job-bundle.md
+          - name: Calculate material consumption
+            href: production-control/consumption.md
+          - name: Production posting
+            href: cost-management/production-posting.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
@@ -2281,6 +2343,8 @@
           href: warehousing/material-replenishment-withdrawal-kanban.md
         - name: Set up a min-max replenishment process
           href: warehousing/tasks/set-up-min-max-replenishment-process.md
+        - name: Set up a work template for purchase orders
+          href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
       - name: Install and configure the warehousing app
         items:
         - name: Install and configure overview
