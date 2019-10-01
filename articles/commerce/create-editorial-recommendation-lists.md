@@ -47,7 +47,7 @@ To create a curated product recommendation list, follow these steps.
 1. Select **New**.
 1. In the **List Id** field, enter a value.
 1. In the **List name** field, enter a value.
-    - The **List name** is the title of the list that will appear in the curated lists section of the **Product collection** module. For more information about this module, go [here.](product-placement-module-overview.md)
+    - The **List name** is the title of the list that will appear in the curated lists section of the **Product collection** module.
 1. To add products to the list, select **Add products**.
 1. To change the order of the products in the list, enter a value in the **Display order** column.
     - If two products have the same display order value, then the final order of those two results may differ from the back office.
