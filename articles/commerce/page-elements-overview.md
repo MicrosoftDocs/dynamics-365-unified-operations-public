@@ -29,8 +29,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Page elements
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 
@@ -40,7 +40,7 @@ The following table provides a summary of terms that you should be familiar with
 
 | Term | Description and notes |
 |------|-----------------------|
-| [Module](modules.md) | <p>**Definition:** Modules are building block that can be authored and make up the skeleton of a webpage. Examples include header, hero, and carousel modules.</p><p>**Where it's selected:** Deployed modules can be selected and configured in various stages of the site authoring workflow, such as the template, layout, page, and fragment authoring stages.</p><p>**Where it's edited:** Custom modules are created in code by using the software development kit (SDK). They are then uploaded to your site, where they become available for selection.</p> |
+| [Module](work-with-modules.md) | <p>**Definition:** Modules are building block that can be authored and make up the skeleton of a webpage. Examples include header, hero, and carousel modules.</p><p>**Where it's selected:** Deployed modules can be selected and configured in various stages of the site authoring workflow, such as the template, layout, page, and fragment authoring stages.</p><p>**Where it's edited:** Custom modules are created in code by using the software development kit (SDK). They are then uploaded to your site, where they become available for selection.</p> |
 | Module property | <p>**Definition:** Module properties are specific settings that are defined by the module. They can be edited in the e-Commerce authoring tools. For example, module properties are used to set the heading and background image of a banner module.</p><p>**Where it's configured:** Module properties are selected and configured in the property pane that appears in the authoring environments (editors) for templates, layouts, pages, fragments, and app settings.</p> |
 | [Template](templates-layouts-overview.md) | <p>**Definition:** Templates define the module combinations and options that should be used for a category of pages (for example, marketing pages, category pages, and product pages).</p><p>**Where it's selected:** Templates can be selected during page or layout creation workflows.</p><p>**Where it's edited:** Templates are authored in the template editor. No code is required to create or modify them.</p> |
 | [Layout](templates-layouts-overview.md) | <p>**Definition:** Layouts define the final selection and arrangement of modules from the parent template's set of options. A layout can be configured for a single page (*custom layout*), or it can be shared by multiple pages (*preset layout*).</p><p>**Where it's selected:** Layouts can be selected during new page creation or when a different layout is required for an existing page.</p><p>**Where it's edited:** Layouts are authored in the layout editor. No code is required to create or modify them.</p> |

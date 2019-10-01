@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Generate online channel reports
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to generate reports for your online channel in Microsoft Dynamics 365 Retail.
 

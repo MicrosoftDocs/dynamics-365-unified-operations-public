@@ -32,8 +32,8 @@ ms.dyn365.ops.version: 10.0.5
 
 # Configure a domain name
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-Commerce site. 
 

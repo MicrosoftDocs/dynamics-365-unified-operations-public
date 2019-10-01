@@ -31,8 +31,8 @@ ms.dyn365.ops.version:
 
 # Starter kit overview
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
 

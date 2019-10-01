@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Work with templates
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
 
@@ -104,7 +104,7 @@ If your site already has a header fragment, follow these steps to add a header a
 
 All pages that use the template will now automatically inherit this header fragment.
 
-If your site doesn't yet have a header fragment, see [Create a fragment](fragments.md#create-a-fragment) for information about how to create it, and then complete the previous procedure.
+If your site doesn't yet have a header fragment, see [Create a fragment](work-with-fragments.md#create-a-fragment) for information about how to create it, and then complete the previous procedure.
 
 ## Change the template theme
 
@@ -129,7 +129,7 @@ To add a script to a template, follow these steps.
 1. In the property pane, enter any other optional settings that you want to configure.
 
 > [!TIP]
-> If you want to reuse any of your script modules for other templates, you can convert them to fragments. In this way, you help make the authoring process more efficient, and you centralize the update process. For information about how to convert a script module to a fragment, see [Save an existing module configuration as a fragment](fragments.md#save-an-existing-module-configuration-as-a-fragment).
+> If you want to reuse any of your script modules for other templates, you can convert them to fragments. In this way, you help make the authoring process more efficient, and you centralize the update process. For information about how to convert a script module to a fragment, see [Save an existing module configuration as a fragment](work-with-fragments.md#save-an-existing-module-configuration-as-a-fragment).
 
 ## Save, check in, preview, and publish a template
 
