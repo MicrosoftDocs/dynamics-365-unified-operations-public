@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,26 +29,29 @@ ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 Talent (October 01, 2019)"
+# What's new or changed in Dynamics 365 Talent (October 01, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2509.
+
+Changes described in this section apply to build number 8.1.2509. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Streamlined employee entry and navigation
 
-This functionality is now available in all environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
+This functionality is now available in all environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This enables these changes for all users. You can turn this option off at any time.
 
-For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md). To see the changes, watch the video [Dynamics 365 for Talent 2019 release wave 2 overview](https://aka.ms/ROGT19RW2ROV).
+For more information, see [Streamlined employee entry and navigation](./streamlined-employee-entry.md). To watch a video of these changes, see [Dynamics 365 for Talent 2019 release wave 2 overview](https://aka.ms/ROGT19RW2ROV).
 
 ### You can enable preview features in Sandbox and Trial environments
 
@@ -58,30 +61,30 @@ For more information about how changes are published, see [Provision Talent](./p
 
 ### Compensation date defaults to a different date than the position assignment (337694)
 
-With this change, the default for the compensation start date will default to the position assignment start date.
+With this change, the compensation start date defaults to the position assignment start date.
 
-### Not able to end compensation together with its position assignment (328993)
+### Not able to end compensation along with its position assignment (328993)
 
-With this change compensation can be ended when ending the position assignment through the End assignment option in the worker position assignments page with personnel actions turned on.
+With this change, you can end compensation when you end the position assignment by using **End assignment** in the **Worker position assignments** page with personnel actions turned on.
 
 ### Bank account validation requires routing and account numbers in all locations (340403)
 
-With this week's changes, a new configuration option has been added to disable Routing number and Account number required validation. 
+With this week's changes, a new configuration option has been added to disable **Routing number** and **Account number** required validation. 
 
 ### Attachments are not enabled in MSS performance journals for performance feedback (341794)
 
 With this week's release, attachments are enabled for feedback items in the performance journal page.
 
-### Leave request details don't sync from CDS to Talent (369608)
+### Leave request details don't sync from Common Data Service to Talent (369608)
 
-With these changes, the leave request details that are updated in CDS will sync back to the Talent application.
+With these changes, leave request details that are updated in Common Data Service will sync back to Talent.
 
-### Skill gap analysis job–person, the job description field does not display (369398)
+### Job description doesn't display for the job in the Skill gap analysis page (369398)
 
-In this week's build, the description will be displayed when selecting the job in the Skill gap analysis page.
+In this week's build, the description will display when selecting the job in the **Skill gap analysis** page.
 
 ## Coming soon
 
 ### Print performance reviews
 
-Employees, managers, and HR will be able to print an employee's performance review.
+Employees, managers, and HR professionals will be able to print an employee's performance review.
