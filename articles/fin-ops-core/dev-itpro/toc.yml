@@ -307,7 +307,7 @@
         - name: Overview
           href: database/api/dbmovement-api-overview.md
         - name: Versioning and support
-          href: database/api/dbmovement-api-versioning.md
+          href: database/api/dbmovement-api-versioning-support.md
         - name: Authentication
           href: database/api/dbmovement-api-authentication.md
         - name: Throttling
