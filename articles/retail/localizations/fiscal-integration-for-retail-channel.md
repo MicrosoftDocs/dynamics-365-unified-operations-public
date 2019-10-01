@@ -148,6 +148,6 @@ The following fiscal integration functionality is also available in the Retail S
 - [Digital signature for France](emea-fra-cash-registers.md)
 - [Digital signature for Norway](emea-nor-cash-registers.md)
 
-The following legacy fiscal integration functionality that is available in Retail SDK does not use the fiscal integration framework and will be deprecated in future updates:
+The following legacy fiscal integration functionality that is available in Retail SDK does not use the fiscal integration framework and will be deprecated in later updates:
 
 - [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)
