@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Configure .env file
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to configure a development environment **.env** file for Microsoft Dynamics 365 Commerce.
 
@@ -119,6 +119,6 @@ To obtain the correct tenant ID follow these steps:
 
 See below image example to find the tenant ID
 
-![Obtain teant ID](media/obtain-tenant-id.png)
+![Obtain tenant ID](media/obtain-tenant-id.png)
 
 Once changes are made to the **.env** file, restart the node server with the ```yarn start``` command.
