@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform updates 8 and 11)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/19/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -103,11 +103,11 @@ The hardware configuration includes the following components:
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](../../fin-and-ops/get-started/system-requirements-on-prem.md) and Sizing guidelines.
+For more information, see [System requirements](../../fin-ops/get-started/system-requirements-on-prem.md) and Sizing guidelines.
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup.
 
