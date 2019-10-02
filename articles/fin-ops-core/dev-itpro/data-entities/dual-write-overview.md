@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Near-real-time data integration between Finance and Operations and Common Data Service
+title: Near-real-time data integration with Common Data Service
 description: This topic provides an overview of the integration between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
