@@ -252,6 +252,8 @@
             href: manage-ecommerce-users-roles.md
           - name: Add script code to site pages to support telemetry
             href: add-telemetry.md
+          - name: Search engine optimization (SEO) considerations for your site
+            href: search-engine-optimization-considerations.md
         - name: Add and manage content on your site
           items:
           - name: Ways to add content
@@ -278,8 +280,8 @@
           items:
           - name: Select page layouts
             href: select-page-layouts.md
-          - name: Search engine optimization (SEO) considerations for your site
-            href: search-engine-optimization-considerations.md
+          - name: Manage SEO metadata
+            href: manage-seo-metadata.md
         - name: Modules
           items:
           - name: Work with modules
