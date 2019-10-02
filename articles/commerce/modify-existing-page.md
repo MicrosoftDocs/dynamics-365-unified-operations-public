@@ -2,7 +2,7 @@
 # required metadata
 
 title: Modify an existing site page
-description: This topic describes how to to modify an existing site page in Dynamics 365 Commerce.
+description: This topic describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -34,43 +34,45 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to to modify an existing site page in Dynamics 365 Commerce.
+This topic describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-When you need to modify your page, you will first want to open it in the page editor.
-
-Navigate to the site which contains your page, then from the list of pages locate the page you want to change. If you are unable to locate the page easily, you can use the rich search functionality of the authoring tool. By typing the exact page name or first few letters followed with an asterisk, you will get a filtered list of pages that helps you to locate your page. Proceed to click the page name in order to open it in the page editor.
+When you must modify a page, the first step is to open it in the page editor. Go to the site that contains your page, and then, in the list of pages, find the page that you want. If you can't find the page, you can use the authoring tool's rich search functionality. Either type the exact page name, or type the first few letters of it and then an asterisk (\*). A filtered list of pages appears. You can use this list to find the page that you want. After you find the correct page, select the page name to open the page in the page editor.
 
 > [!TIP]
-> When you have your page visible in the page inspector, you may proceed to select it and check it out before opening it in the page editor. This allows you to check out multiple pages at the same time should you have the need to do that.
+> If your page is visible in the page inspector, you can select it and check it out before you open it in the page editor. In this way, you can check out multiple pages at the same time.
 
-When you have the page open in the page editor, you need to make sure it is checked out to you. The action ribbon in the authoring tool is dynamic and context- and state-sensitive, which means that it only shows you the actions you can perform on the page. If the page is not checked out, you will not see "Save" or "Check in" in the action ribbon. The state of the page is also visible on the right hand side of the screen. If the page is not checked out to you, proceed to click "Check out" from the action ribbon. The action ribbon will change to reflect the new state of the page and you will also get a notification indicating that the page was checked out to you.
+After the page is open in the page editor, you must make sure that it's checked out to you. The action ribbon in the authoring tool is dynamic, context-sensitive, and state-sensitive. Therefore, it shows only the actions that you can curently perform on the page. For example, if the page isn't checked out to you, the **Save** and **Check in** buttons don't appear on the action ribbon. The state of the page is also shown on the right side of the window.
 
-The next step is to implement the actual modifications. Typically you would use the "Page Outline" view to navigate to the module that you want to modify, select it, and perform modifications in the right-side properties pane. Your modification could also be adding a module, removing a module, or adding or removing a fragment. In order to add a fragment or module, use the "Page Outline" view to locate the slot you want to add your module or fragment to and then click the ellipsis button (**...**) on the right. This shows you a menu with options to add a module or fragment. If you want to remove module or fragment, you will again use the "Page Outline" view to locate the module or fragment in question and then click the ellipsis button (**...**) on the right. This will give you the option to delete the module or fragment.
+If the page isn't already checked out to you, select **Check out** on the action ribbon. The action ribbon changes to reflect the new state of the page. You also receive a notification that states that the page was checked out to you.
 
->[!TIP]
-> You can also click directly on a module visible in the WYSIWYG preview to show and edit its properties.
+The next step is to make your actual changes. Often, you will use the page outline tree on the left to find and select the module that you want to change, and then make changes in the properties pane on the right. 
 
-After performing your modifications and previewing them, you should check in your changes by clicking **Check in** on the action ribbon. 
+However, your change might sometimes involve adding or removing models or fragments. To add a fragment or module, use the page outline tree to find the slot that you want to add the module or fragment to, and then select the ellipsis button (**...**) for that slot. A menu appears that includes commands for adding a module or fragment. To remove a module or fragment, find and select it in the page outline tree, select the ellipsis button, and then select the command to delete the module or fragment.
 
-If you want to publish your modifications right away, click **Publish** on the action ribbon. The latest checked-in version of the page with your modifications will then be published and available to external users viewing your site. 
+> [!TIP]
+> You can also view and edit the properties for any module that is visible in the "what you see is what you get" (WYSIWYG) preview by selecting it directly.
 
-### Example: Change the video on the home page
+After you've finished making your changes and previewing their effect, you should check in the page by selecting **Check in** on the action ribbon. 
 
-Then following is an example procedure for modifying a page.
+To publish your changes immediately, select **Publish** on the action ribbon. The latest checked-in version of the page that you modified is published and becomes available to external users who view your site. 
 
-To change the video on the home page, do the following.
+## Example: Change the video on the home page
 
-1. Under **Sites**, click **Fabrikam** (or your site name).
-1. On the left-side navigation pane, click **Pages**. Locate the home page and click it to open it in the page editor.
-1. Click **Check Out** from the action bar.
-1. From the **Page Outline**, select **Main Slot**.
-1. Expand all the **Fluid container** modules under **Main Slot**.
-1. Locate and select the **Video player** module.
-1. In the right-side properties pane, click the **video** property. The asset picker appears.
-1. From the asset picker, select an available video asset, or click **Upload new asset** to upload a new video asset.
-1. Click **OK**.
-1. Click **Save**, then click **Check In**. In the **Comments** text box, enter "Changed the video", then click **OK**.
-1. Click **Preview** to preview your enriched product page. When done, close the preview tab to return to the authoring tool.
-1. Click **Publish**.
+The following example shows how to modify the home page by changing the video that appears in the video player module.
+
+1. Under **Sites**, select **Fabrikam** (or the name of your site).
+1. In the navigation pane on the left, select **Pages**.
+1. Find and select the home page to open it in the page editor.
+1. On the action bar, select **Check Out**.
+1. In the page outline, select the **Main** slot.
+1. Under the **Main** slot, expand all the fluid container modules.
+1. Find and select the video player module.
+1. In the properties pane on the right, select the **video** property. The asset picker appears.
+1. In the asset picker, select an available video asset, or select **Upload new asset** to upload a new video asset.
+1. Select **OK**.
+1. Select **Save**, and then select **Check In**.
+1. In the **Comments** field, enter **Changed the video**, and then select **OK**.
+1. Select **Preview** to preview the updated page. When you've finished, close the preview tab to return to the authoring tool.
+1. Select **Publish**.
