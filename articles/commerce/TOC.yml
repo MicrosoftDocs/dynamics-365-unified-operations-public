@@ -636,6 +636,8 @@
         href: manage-reviews.md
       - name: Configure ratings and reviews
         href: configure-ratings-reviews.md
+      - name: Sync product ratings in Dynamics 365 Retail
+        href: sync-product-ratings.md
     - name: Product recommendations
       items:
       - name: Product recommendations overview
