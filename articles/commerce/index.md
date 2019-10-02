@@ -48,6 +48,10 @@ This release enables the creation of digital experiences using built-in web auth
 
 - Streamline operations using AI in the cloud: Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
 
+## Sign up for the preview
+
+Go to the [Dynamics 365 Commerce (Preview)](https://dynamics.microsoft.com/en-us/commerce/overview/) page to fill out an application to join the preview. Existing Dynamics 365 Retail customers will be able to update to Commerce once it becomes generally available. 
+
 ## Core concepts and tasks
 
 Select a feature area to learn more about it.
