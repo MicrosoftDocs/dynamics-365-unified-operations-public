@@ -509,19 +509,19 @@
       - name: Embedded analytical solutions
         items:
         - name: Embedded Power BI in workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/retail/toc.json
         - name: Power BI Embedded integration
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Select analytical workspaces from PowerBI.com
-          href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/retail/toc.json
+        - name: Customize embedded reports in Analytical workspaces 
+          href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/retail/toc.json
       - name: Personalization options with PowerBI.com
         items:
         - name: Features and services available via Power BI integration
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/retail/toc.json
         - name: Pin Power BI reports to workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Customize embedded reports in Analytical workspaces 
-          href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md
+          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/retail/toc.json
+        - name: Select analytical workspaces from PowerBI.com
+          href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/retail/toc.json
       - name: Tools for creating and extending solutions
         items:
         - name: Analytics, aggregate measurements, and KPI modeling
