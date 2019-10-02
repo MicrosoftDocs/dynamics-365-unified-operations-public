@@ -244,6 +244,8 @@
             href: associate-site-online-store.md
           - name: Configure your domain name
             href: configure-your-domain-name.md
+          - name: Enable location-based store detection
+            href: enable-store-detection.md
         - name: Manage your site
           items:
           - name: Manage users and roles
