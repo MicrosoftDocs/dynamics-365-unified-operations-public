@@ -14,7 +14,7 @@ title: Associate an online site with a channel
 
 
 
-description: This topic explains how to bind your Microsoft Dynamics 365 for Commerce site to one or more online stores.
+description: This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 
 
 
@@ -150,7 +150,7 @@ ms.dyn365.ops.version: 10.0.5
 
 
 
-This topic explains how to bind your Microsoft Dynamics 365 for Commerce site to one or more online stores. For an introduction to online stores, see [Create a new Dynamics 365 channel](https://).
+This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores. For an introduction to online stores, see [Create a new Dynamics 365 channel](https://).
 
 
 
