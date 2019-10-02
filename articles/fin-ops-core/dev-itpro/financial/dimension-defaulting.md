@@ -374,7 +374,7 @@ The **serviceCreateLedgerDimForDefaultDim()** API resembles the **serviceCreateL
 ```
 public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
     DimensionDefault    _defaultDimension,
-    LedgerDimensionBase _ledgerDimensionId)![\\\\blackwoodstone\\share\\Research\\GFMBlog2\\media\\MSDNBlogsFS\\prod.evol.blogs.msdn.com\\CommunityServer.Blogs.Components.WeblogFiles\\00\\00\\01\\50\\86\\5710.c65.png](media/146d284328279f4737c6e2bd23a30530.png)
+    LedgerDimensionBase _ledgerDimensionId)
 ```
 
 #### serviceLedgerDimensionFromLedgerDims()
