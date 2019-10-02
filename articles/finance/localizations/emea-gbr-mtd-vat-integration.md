@@ -934,7 +934,7 @@ A new version of the application-specific parameters configuration example can b
 
 ### Support of fraud prevention headers – part 1 (KB 4504462)
 
-This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
+This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
 
 In the scope of this update, the following ER configurations are released:
 
