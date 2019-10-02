@@ -2137,6 +2137,8 @@
             href: ../financials/localizations/rus-exchange-difference.md
           - name: Import currency exchange rates from CBRF 
             href: ../financials/general-ledger/import-currency-exchange-rates.md
+          - name: Ledger translation
+            href: ../financials/localizations/rus-ledger-translation-procedure.md
         - name: Advance holders
           items:
           - name: Russia advance holders overview
