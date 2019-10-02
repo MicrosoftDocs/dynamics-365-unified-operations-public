@@ -231,7 +231,6 @@ Use the **Translation ledger account rules** page to set up translation rules fo
 > You can set up multiple conversion rules for one rule group.
 
 3. Select **New** to create a line.
-
 4. On the **Overview** tab, in the **To account** field, select the ledger account from the target company's chart of accounts that transactions in the source company should be translated to. After you save your changes to the line, the name of the target company is automatically selected in the **Account name** field.
 5. In the **Main account** field, select the ledger account in the source company that should be used to translate transactions to the target company.
 6. In the **Offset account** field, select the offset account in the source company that should be used to translate transactions that have the specified correspondence. Leave this field blank to select all transactions, regardless of the offset account.
@@ -240,27 +239,18 @@ Use the **Translation ledger account rules** page to set up translation rules fo
     - **No** – Translate only debit account transactions.
     - **Yes** – Translate only credit account transactions.
 
->   Leave this field blank to translate both credit and debit transactions.
+Leave this field blank to translate both credit and debit transactions.
 
->   Depending on the values of the **Offset account** and **Crediting** fields,
->   the following transactions are translated:
+Depending on the values of the **Offset account** and **Crediting** fields, the following transactions are translated:
 
--   All transactions
+   - All transactions
+   - Only debit transactions
+   - Only credit transactions
+   - Account transactions that correspond to the specified offset account
+   - Debit account transactions that correspond to the specified credit offset account
+   - Credit account transactions that correspond to the specified debit offset account
 
--   Only debit transactions
-
--   Only credit transactions
-
--   Account transactions that correspond to the specified offset account
-
--   Debit account transactions that correspond to the specified credit offset
-    account
-
--   Credit account transactions that correspond to the specified debit offset
-    account
-
->   The following table shows examples for the various possible values of the
->   **Main account**, **Crediting**, and **Offset account** fields.
+The following table shows examples for the various possible values of the **Main account**, **Crediting**, and **Offset account** fields.
 
 | Main account | Crediting | Offset account | Result                                                                              |
 |--------------|-----------|----------------|-------------------------------------------------------------------------------------|
@@ -360,7 +350,7 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 13. Select **Next** two times to import the translation data into the target company.
 14. After the translation is completed, select **Finish**.
 
->   When the translation session for the source company is successfully completed, the following actions occur:
+When the translation session for the source company is successfully completed, the following actions occur:
 
    - The **Translation sessions** page automatically creates a line for the status of the translation session. The **Export status** and **Import status** fields are automatically updated to **Completed**.
    - The **Translation session** field is updated to the number of the translation session.
