@@ -64,32 +64,48 @@ The **MSDyn365_APP_TYPE** variable is required and can only be set to **partner*
 
 ## PORT
 The **PORT** variable defined the port number used to preview your node application when the node server is started with the **yarn start** command.  The default is 4000.
+
 An example URL on a development environment is **https://localhost:4000/version**
 
 ## MSDyn365_HOST
 The **MSDyn365_HOST** variable is the domain name of your customer facing e-Commerce site.  When this variable is set, launching **https://localhost:4000/** on a development environment will locally render your e-Commerce site. If your site is protected with AAD credentials a username and password prompt will appear.
+
 Example: MSDyn365_HOST=demo.fabrikam.com
 
 ## MSDyn365Commerce_BASEURL
 The **MSDyn365Commerce_BASEURL** variable can be used to specify the Microsoft Dynamics 365 Retail server URL.  This will allow local development and testing against Retail APIs.  You will also need to set the **MSDyn365Commerce_CHANNELID**, **MSDyn365Commerce_OUN** and **MSDyn365Commerce_CATALOGID**.
-Example: MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
+
+Example: ```MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com```
 
 ## MSDyn365Commerce_OUN
 The **MSDyn365Commerce_OUN** variable is used to set the Channel operating unit number. To find the channel ID, launch the Dynamics 365 Headquarters web page, type in "Online channels" in the top search bar and select the channel you want to use.  You should see a column for the "Operating unit number".  See below image for an example.
+
+
 Example: MSDyn365Commerce_OUN=128
 
 ![Operating unit number](media/operating-unit-number.png)
 
+## MSDyn365Commerce_CATALOGID
+The **MSDyn365Commerce_CATALOGID** variable holds the catalog ID for the online store you are connecting to.  Only catalog ID 0 is currently supported
+
 ## MSDyn365Commerce_CHANNELID
 The **MSDyn365Commerce_CHANNELID** variable represents the online channel you want to connect to. To find the channel ID, launch the Dynamics 365 Headquarters web page, type in "Online channels" in the top search bar and select the channel you want to use. Select the "Options" tab at the top followed by "Record Info" (under the "Page options" section), you can then get the "Record-ID" which is the Channel ID.
+
+
 Example MSDyn365Commerce_CHANNELID=68719478279
 
 ![Channel ID](media/channel-id.png)
 
 ## MSDyn365Commerce_BASEIMAGEURL
 The **MSDyn365Commerce_BASEIMAGEURL** variable holds the URL for a site image assets.  The URL follows a pattern and must be manually generated.
-The URL is in the following format **https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_ID}/imageFileData/search?fileName=/** for an evaluation site.
-The URL is in the following format **https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/{CMS_TENANT_ID}/imageFileData/search?fileName=/** for a product site.
+
+
+For evaluations sites the URL is in the following format **https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_ID}/imageFileData/search?fileName=/**
+
+
+For production sites the URL is in the following format **https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/{CMS_TENANT_ID}/imageFileData/search?fileName=/** for a product site.
+
+
 The **{CMS_TENANT_ID}** must be replaced by the assigned tenant ID for your site.  
 
 To obtain the correct tenant ID follow these steps:
