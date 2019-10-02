@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a product collection module to a category page  
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to add a product collection module to a category page in Microsoft Dynamics 365 Commerce.
 
@@ -58,9 +58,9 @@ The following table shows the list types that are available for selection in the
    
 | Type                       | Description | General practice | Context that can be derived from the page context | Context that the author can override the page context with |
 |----------------------------|-------------|------------------|-------------------------------------|-----------------------------------------------|
-| Products by category       | A list of products that belong to a given category. This category is determined from either the page context or the context that the author provides. | Enrich category page, home page, checkout and cart pages, and product pages | Category | Exclusively selected category |
-| Related products           | A list of products that a merchandising manager has configured as related products in Retail, for the relation type that the author selected. | Product pages, checkout and cart pages, wish list page, and customer account page | Product, Relation type (Mandatory)  | Product, Relation type |
+| Products by category       | A list of products that belong to a given category. This category is determined from either the page context or the context that the author provides. | Enrich category page, home page, checkout and cart pages, and product pages | Category | Category determined by author |
+| Related products           | A list of products that a merchandising manager has configured as related products in Retail for the relation type. | Product pages, checkout and cart pages, wish list page, and customer account page | Product, Relation type (Mandatory)  | Product, Relation type |
 | Curated                    | A custom list that merchandisers and editors have created in Retail. | Enrich category page, home page, checkout and cart pages, and product pages | Not applicable | List picker |
-| Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category | Exclusively selected category |
+| Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category | Category determined by author |
 | Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Product pages, and checkout and cart pages | Product, Cart | Include cart |
 | People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Product pages, and checkout and cart pages | Product, Cart | Not applicable |
