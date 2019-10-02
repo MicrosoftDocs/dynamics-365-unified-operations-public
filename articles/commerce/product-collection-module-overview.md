@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Product collection module overview  
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 
@@ -52,7 +52,7 @@ The following illustration shows the different types of product collections bein
 ![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Always use product collection modules to show a group of products of a similar type or theme other than the search results.
+> Always use product collection modules to show a group of products of a similar type or theme.
 
 ## Product collection modules and types
 
