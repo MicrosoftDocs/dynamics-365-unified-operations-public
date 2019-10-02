@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product collection module overview
-description: This topic provides an overview of product collection modules in Dynamics 365 Commerce.
+description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: asharchw
 manager: annbe
 ms.date: 10/01/2019
@@ -33,38 +33,41 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of product collection modules in Dynamics 365 Commerce.
+This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Product discovery is a primary tool for retailers to engage with their customers on an e-Commerce website. Product collection modules provide retailers with a quick and intuitive visual interface for authoring product collections and enable them to build compelling shopping experiences.
+Product discovery is a primary tool that retailers use to engage with their customers on an e-Commerce website. Product collection modules help retailers build compelling shopping experiences by providing an intuitive visual interface that can be used to quickly author product collections.
 
-Product collection modules represent physical products and services on the website. On interaction, a product collection module typically links to a detail page where customers can purchase or learn more about a product or service. 
+Product collection modules represent physical products and services on the website. A product collection module is typically linked to a details page where customers can purchase a product or service, or learn more about it. 
 
-The sources for product collections can be editorial lists (manually defined in Dynamics 365 Retail as related products for a product, or product lists), algorithmic lists (such as "new," "best-selling," or "trending"), or machine learning-based recommendations. 
+The sources for product collections can be lists of three types:
 
-The following diagram shows the different types of product collections used on an e-Commerce site.
+- Editorial lists of products that are manually defined in Dynamics 365 Retail as related products for a product, or product lists
+- Algorithmic lists, such as lists of new, best-selling, or trending products
+- Recommendation lists that are based on machine learning
 
-![A diagram showing the different types of product collections used on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+The following illustration shows the different types of product collections being used on an e-Commerce site.
+
+![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Always use product collection modules to show a group of products of a similar type or theme other than the search results. 
+> Always use product collection modules to show a group of products of a similar type or theme other than the search results.
 
-## Product collection modules, types, and descriptions
+## Product collection modules and types
 
-The following table lists various types of Commerce product collection modules and their descriptions.
+The following table describes various types of product collection modules in Dynamics 365 Commerce.
 
-| Product collection module     | Type | Description                                                                                                                                                                                                                   |
-|----------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Category browse           | Editorial | Uses a retail channel navigation category hierarchy created by retailers to a display a browsing flow for products offered in a site category|
-| Search results           | Search query | Displays a list of products that best match the search query entered by the customer|
-| Related products           | Editorial | Displays a list of products configured as related products in Retail by a merchandising manager for the relation type chosen by the author|
-| Curated product lists    | Editorial | Displays custom lists created in Retail by merchandizers and editors|
-| New                        | Algorithmic | Displays a list of the newest products assorted to channels and catalogs|
-| Best selling               | Algorithmic | Displays a list of products ranked by the highest number of sales                      |               
-| Trending                   | Algorithmic | Displays a list of the highest performing products for a given time period|
-| Frequently bought together | Artificial intelligence / Machine learning  | Uses machine learning to analyze consumer purchase patterns to recommend related items that are commonly purchased with a given product|
-| People also like           | Artificial intelligence / Machine learning | Uses machine learning to analyze consumer purchase patterns to recommend items related to a given product|
+| Product collection module  | Type | Description |
+|----------------------------|------|-------------|
+| Category browse            | Editorial | This type of product collection module uses the navigation category hierarchy that the retailer created for a retail channel to show a browsing flow for products that are offered in a specific site category. |
+| Search results             | Search query | This type of product collection module shows a list of products that best match the search query that the customer entered. |
+| Related products           | Editorial | This type of product collection module shows a list of products that a merchandising manager has configured as related products in Retail, for the relation type that the author selected. |
+| Curated product lists      | Editorial | This type of product collection module shows custom lists that merchandisers and editors have created in Retail. |
+| New                        | Algorithmic | This type of product collection module shows a list of the newest products that have been assorted to channels and catalogs. |
+| Best selling               | Algorithmic | This type of product collection module shows a list of products that are ranked by the highest number of sales. |
+| Trending                   | Algorithmic | This type of product collection module shows a list of the highest-performing products for a given period. |
+| Frequently bought together | Artificial intelligence/Machine learning | This type of product collection module uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. |
+| People also like           | Artificial intelligence/Machine learning | This type of product collection module uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. |
 
-For information on using product collection modules, see [Add collection modules to a category page](add-product-collection-modules.md).
-
+For information about how to use product collection modules, see [Add a product collection module to a category page](add-product-collection-modules.md).
