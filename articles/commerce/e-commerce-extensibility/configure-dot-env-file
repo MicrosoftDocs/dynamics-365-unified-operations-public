@@ -71,111 +71,37 @@ The **MSDyn365_HOST** variable is the domain name of your customer facing e-Comm
 Example: MSDyn365_HOST=demo.fabrikam.com
 
 ## MSDyn365Commerce_BASEURL
-The **MSDyn365Commerce_BASEURL** variable can be used to specify the Microsoft Dynamics 365 Retail server URL.  This will allow local de 
+The **MSDyn365Commerce_BASEURL** variable can be used to specify the Microsoft Dynamics 365 Retail server URL.  This will allow local development and testing against Retail APIs.  You will also need to set the **MSDyn365Commerce_CHANNELID**, **MSDyn365Commerce_OUN** and **MSDyn365Commerce_CATALOGID**.
+Example: MSDyn365Commerce_BASEURL=https://fabrikamb1de06d29165320bret.cloud.retail.dynamics.com
 
+## MSDyn365Commerce_OUN
+The **MSDyn365Commerce_OUN** variable is used to set the Channel operating unit number. To find the channel ID, launch the Dynamics 365 Headquarters web page, type in "Online channels" in the top search bar and select the channel you want to use.  You should see a column for the "Operating unit number".  See below image for an example.
+Example: MSDyn365Commerce_OUN=128
 
-## Install Node.js
+![Operating unit number](media/operating-unit-number.png)
 
-Node.js is a JavaScript runtime that is built on [Chrome's V8 JavaScript Engine](https://v8.dev/).
+## MSDyn365Commerce_CHANNELID
+The **MSDyn365Commerce_CHANNELID** variable represents the online channel you want to connect to. To find the channel ID, launch the Dynamics 365 Headquarters web page, type in "Online channels" in the top search bar and select the channel you want to use. Select the "Options" tab at the top followed by "Record Info" (under the "Page options" section), you can then get the "Record-ID" which is the Channel ID.
+Example MSDyn365Commerce_CHANNELID=68719478279
 
-Go to the [Node.js site](https://nodejs.org), and download and install the latest Long Term Support (LTS) build.
+![Channel ID](media/channel-id.png)
 
-If you rely on other versions of Node.js for other projects, we recommend that you use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to help guarantee that each version runs in its own isolated environment.
+## MSDyn365Commerce_BASEIMAGEURL
+The **MSDyn365Commerce_BASEIMAGEURL** variable holds the URL for a site image assets.  The URL follows a pattern and must be manually generated.
+The URL is in the following format **https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_ID}/imageFileData/search?fileName=/** for an evaluation site.
+The URL is in the following format **https://img-prod-cms-mr-microsoft-com.akamaized.net/cms/api/{CMS_TENANT_ID}/imageFileData/search?fileName=/** for a product site.
+The **{CMS_TENANT_ID}** must be replaced by the assigned tenant ID for your site.  
 
-## Install Yarn
+To obtain the correct tenant ID follow these steps:
+1. Log in to the site management tool (authoring tools)
+1. Select the site you are using (ex: “Fabrikam”)
+1. Choose Assets from the menu on the left
+1. From the Select type drop-down list, choose Images. 
+1. Select the first image. 
+1. Locate Public URL from the property inspector on the right. It has an URL in it
+1. In the Public URL field, your CMS tenant identifier is between /cms/api/ and /imageFileData, make note of that. For example, in ../cms/api/fabrikam/imageFileData/.., fabrikam would be the CMS tenant identifier. 
 
-Yarn is a dependency management tool that helps guarantee that you have all the latest packages that you require for e-Commerce extensibility.
+See below image example to find the tenant ID
 
-Go to the [Yarn site](https://yarnpkg.com), and download and install the latest stable build.
+![Obtain teant ID](media/obtain-tenant-id.png)
 
-## Install the Online SDK and Store Starter Kit
-
-The Online SDK provides everything that you require to extend your online channel. It even lets you create new modules, data actions, and themes.
-
-The SDK configuration package is available through the [Project.Rushmore GitHub repository](https://github.com/Microsoft/Project.Rushmore). Either download or clone the repo to a local folder on your development machine.
-
-> [!NOTE]
-> The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
-
-If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
-
-We recommend that you use a source code repository to manage your configuration changes. Many options are available, such as [Git](https://git-scm.com/downloads).
-
-## Download SDK dependencies
-
-To download the SDK dependency packages, follow these steps.
-
-1. At a command prompt, go to the root folder of the e-Commerce SDK (**c:\\repos\\MyEcommerceSite** in the following example).
-2. To get all the latest dependency packages that are required, run the **yarn** command.
-
-    > [!IMPORTANT]
-    > This step should be done after you've completed any update to the packages.json file.
-
-    ```
-    c:\repos\MyEcommerceSite>yarn
-    ```
-
-    This command can take several minutes to run.
-
-## Run your Node app
-
-To run your Node app, follow these steps.
-
-1. Run the **yarn start** command to open the Node app.
-
-    ```
-    c:\repos\MyEcommerceSite>yarn start
-    ```
-
-This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (**4000**, by default).
-
-2. To test that your Node app is running correctly, open the following URLs in a web browser:
-
-    * `https://localhost:4000/version`
-    * `https://localhost:4000/_sdk/allmodules`
-
-3. To close the Node app, at the command prompt, press **Ctrl+C** two times.
-
-## Create a new module
-
-To add a new module that is named **campaignBanner**, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example.
-
-```
-c:\repos\MyEcommerceSite>yarn msdyn365 add-module campaignBanner
-```
-
-This command can take up to a minute to run. It adds a new module under \\src\\modules\\campaignBanner.
-
-## Clone an existing core module
-
-Several of the available core modules can be cloned, such as the alert, banner, and hero modules.
-
-For example, to modify the hero module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
-
-```
-c:\repos\MyEcommerceSite>yarn msdyn365 clone hero heroExtended
-```
-
-You can find the hero module under \\src\\modules\\heroExtended.
-
-## Preview modules
-
-To preview a specific module (for example, campaignBanner) in a local web browser, follow these steps.
-
-1. At a command prompt, open your Node app by running the **yarn start** command.
-
-    ```
-    c:\repos\MyEcommerceSite>yarn start
-    ```
-
-1. In a web browser, open the following URLs. Notice the module name in the **"type=MODULE\_NAME"** query string parameter.
-
-    * `https://localhost:4000/modules?type=campaignBanner`
-    * `https://localhost:4000/modules?type=hero`
-    * `https://localhost:4000/modules?type=banner`
-    
-## Adding an SSL certificate
-
-The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment which work against localhost.  You can find these files inside the **.ssl** folder under the root SDK folder.  Note:  *yarn start* must be run at least once for these files to be generated.
-
-To install a new certificate on a developer environment, replace the public key (cert.pem) and private key (key.pem) files with your own.
