@@ -29,8 +29,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Quick tour of cart and checkout pages
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides a quick tour of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 

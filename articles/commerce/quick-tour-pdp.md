@@ -29,8 +29,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Quick tour of product details pages
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic provides a quick tour of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
