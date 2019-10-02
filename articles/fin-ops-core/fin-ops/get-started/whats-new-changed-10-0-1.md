@@ -5,7 +5,7 @@ title: What's new or changed in Finance and Operations version 10.0.1 (April 201
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April.
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/22/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -75,7 +75,7 @@ For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/
 This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-sales-books-purchase-books).
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Extensibility enhancements
 

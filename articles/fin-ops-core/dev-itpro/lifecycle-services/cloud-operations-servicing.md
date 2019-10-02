@@ -5,7 +5,7 @@ title: Cloud operations and servicing
 description: The Finance and Operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems. 
 author: manalidongre
 manager: AnnBe
-ms.date: 07/02/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -80,7 +80,7 @@ Updates are applied as deployable package on an environment. A deployable packag
     - For Application updates, check the version of the model that included the fix. For example, if the fix was in Application suite, then the version of the Application suite is updated.
 
 ## Upgrade your environment
-For information about how to upgrade to the latest version, see [Overview of moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
+For information about how to upgrade to the latest version, see [Overview of moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed](../../fin-ops/get-started/whats-new-changed.md).
 
 ## Environment data management
 These are the options for managing databases, including the ability to copy a database from one environment to another or restore a database to a previous state.

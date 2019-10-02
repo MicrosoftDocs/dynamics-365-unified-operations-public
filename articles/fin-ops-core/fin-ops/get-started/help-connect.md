@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for Finance and Operations apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,7 +48,7 @@ The following illustration shows the parts of the Help system. The in-product He
 ## Connecting the Help system
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both Retail and Talent.
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
 

@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -278,9 +278,9 @@ The Tax Engine (GTE) is an essential part of the configurable business applicati
 
 ### More information
 
-- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
-- [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
-- [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
+- [Tax engine overview](../../../finance/general-ledger/tax-engine.md)
+- [Tax engine integration](../../../finance/general-ledger/tax-engine-integration.md)
+- [Extending the Tax engine](../../../finance/general-ledger/extend-tax-engine-configurations.md)
 
 ## Vendor collaboration
 

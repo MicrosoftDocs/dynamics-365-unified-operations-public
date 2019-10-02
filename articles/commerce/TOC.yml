@@ -1,8 +1,8 @@
-- name: Dynamics 365 Commerce
+- name: Dynamics 365 Commerce (Preview)
   items:
-  - name: Dynamics 365 Commerce
+  - name: Dynamics 365 Commerce (Preview)
     items:
-    - name: Dynamics 365 Commerce
+    - name: Dynamics 365 Commerce (Preview)
       href: index.md
     - name: Get started
       items:
@@ -224,6 +224,14 @@
         items:
         - name: Set up online stores
           href: ../retail/online-stores.md
+        - name: Quick tour of home page
+          href: quick-tour-home-page.md
+        - name: Quick tour of product details page
+          href: quick-tour-pdp.md 
+        - name: Quick tour of cart and checkout 
+          href: quick-tour-cart-checkout.md
+        - name: Quick tour of Account management 
+          href: quick-tour-account-management.md 
         - name: Create an e-Commerce site
           items:
           - name: Online store overview
@@ -236,12 +244,16 @@
             href: associate-site-online-store.md
           - name: Configure your domain name
             href: configure-your-domain-name.md
+          - name: Enable location-based store detection
+            href: enable-store-detection.md
         - name: Manage your site
           items:
           - name: Manage users and roles
             href: manage-ecommerce-users-roles.md
           - name: Add script code to site pages to support telemetry
             href: add-telemetry.md
+          - name: Search engine optimization (SEO) considerations for your site
+            href: search-engine-optimization-considerations.md
         - name: Add and manage content on your site
           items:
           - name: Ways to add content
@@ -268,8 +280,10 @@
           items:
           - name: Select page layouts
             href: select-page-layouts.md
-          - name: Search engine optimization (SEO) considerations for your site
-            href: search-engine-optimization-considerations.md
+          - name: Manage SEO metadata
+            href: manage-seo-metadata.md
+          - name: Enrich a product page
+            href: enrich-product-page.md
         - name: Modules
           items:
           - name: Work with modules
@@ -622,6 +636,8 @@
         href: manage-reviews.md
       - name: Configure ratings and reviews
         href: configure-ratings-reviews.md
+      - name: Sync product ratings in Dynamics 365 Retail
+        href: sync-product-ratings.md
     - name: Product recommendations
       items:
       - name: Product recommendations overview
