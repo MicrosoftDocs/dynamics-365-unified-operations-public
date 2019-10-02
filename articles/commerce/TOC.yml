@@ -1,8 +1,8 @@
-- name: Dynamics 365 Commerce
+- name: Dynamics 365 Commerce (Preview)
   items:
-  - name: Dynamics 365 Commerce
+  - name: Dynamics 365 Commerce (Preview)
     items:
-    - name: Dynamics 365 Commerce
+    - name: Dynamics 365 Commerce (Preview)
       href: index.md
     - name: Get started
       items:
@@ -224,6 +224,14 @@
         items:
         - name: Set up online stores
           href: ../retail/online-stores.md
+        - name: Quick tour of home page
+          href: quick-tour-home-page.md
+        - name: Quick tour of product details page
+          href: quick-tour-pdp.md 
+        - name: Quick tour of cart and checkout 
+          href: quick-tour-cart-checkout.md
+        - name: Quick tour of Account management 
+          href: quick-tour-account-management.md 
         - name: Create an e-Commerce site
           items:
           - name: Online store overview
