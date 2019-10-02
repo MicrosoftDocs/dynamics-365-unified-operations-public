@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Welcome to Dynamics 365 Retail 
+title: Help resources for Dynamics 365 Retail 
 description: Home page for Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
@@ -30,13 +30,19 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Welcome to Dynamics 365 Retail
+# Help resources for Dynamics 365 Retail
 
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Retail is an end-to-end retail solution that delivers unified commerce across all channels. It encompasses sales, mobility, intelligence, and productivity, to help retailers and workers achieve more in a cloud-first, mobile-first manner. Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities. It also provides immersive customer experiences across all touchpoints.
 
 In the left pane, select a feature area to learn more about it.
+
+## Dynamics 365 Commerce (Preview)
+
+Dynamics 365 Commerce—built on the proven Dynamics 365 Retail capabilities—delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences. Commerce is available to preview customers now. Existing Dynamics 365 Retail customers will be able to update to Commerce once it becomes generally available.
+
+For more information about Dynamics 365 Commerce, go to the [Help resources for Dynamics 365 Commerce](../commerce/index.md) page.
 
 ## Channel management
 

@@ -74,7 +74,7 @@ resource groups are set up in **Organization administration** > **Resources** > 
 In the **Fixed assets number** field, you can select a fixed asset to be related to the asset. This is relevant if your asset is related to an investment project.
 
 - If the asset is related to a fixed asset, you can create a work order type to be used for work orders related to an investment project. 
-- Information about fixed assets for an asset is related to the **Fixed assets** module in Dynamics 365 for Finance and Operations. This means that in **Fixed assets** > **Fixed assets** > **Fixed assets**, you can get an overview of the Asset Management projects that may be related to a fixed asset by selecting the asset in the list and viewing the contents in the **Related information** pane > **Associated projects** section.
+- Information about fixed assets for an asset is related to the **Fixed assets** module in Dynamics 365 Supply Chain Management. This means that in **Fixed assets** > **Fixed assets** > **Fixed assets**, you can get an overview of the Asset Management projects that may be related to a fixed asset by selecting the asset in the list and viewing the contents in the **Related information** pane > **Associated projects** section.
 
 
 ## Details

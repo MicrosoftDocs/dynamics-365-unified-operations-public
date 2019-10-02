@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Synchronize warehouses from Finance and Operations to Field Service
-description: This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Finance and Operations to Dynamics 365 Field Service.
+title: Synchronize warehouses from Supply Chain Management to Field Service
+description: This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 03/13/2019
@@ -30,34 +30,34 @@ ms.search.validFrom: 2018-12-01
 
 ---
 
-# Synchronize warehouses from Finance and Operations to Field Service
+# Synchronize warehouses from Supply Chain Management to Field Service
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Finance and Operations to Dynamics 365 Field Service.
+This topic discusses the templates and underlying tasks that are used to synchronize warehouses from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Finance and Operations and Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## Templates and tasks
-The following template and underlying tasks are used to run synchronization of warehouses from Finance and Operations to Field Service.
+The following template and underlying tasks are used to run synchronization of warehouses from Supply Chain Management to Field Service.
 
 **Template in Data integration**
-- Warehouses (Fin and Ops to Field Service)
+- Warehouses (Supply Chain Management to Field Service)
 
 **Task in the Data integration project**
 - Warehouse
 
 ## Entity set
-| Field Service    | Finance and Operations                 |
+| Field Service    | Supply Chain Management                 |
 |------------------|----------------------------------------|
 | msdyn_warehouses | Warehouses                             |
 
 ## Entity flow
-Warehouses that are created and maintained in Finance and Operations can be synchronized to Field Service via a Common Data Service (CDS) Data integration project. The warehouses that you want to synchronize to Field Service can be controlled with the Advanced query and filtering on the project. Warehouses that synchronize from Finance and Operations are created in Field Service with the **Is maintained externally** field set to **Yes** and the record is read only.
+Warehouses that are created and maintained in Supply Chain Management can be synchronized to Field Service via a Common Data Service (CDS) Data integration project. The warehouses that you want to synchronize to Field Service can be controlled with the Advanced query and filtering on the project. Warehouses that synchronize from Supply Chain Management are created in Field Service with the **Is maintained externally** field set to **Yes** and the record is read only.
 
 ## Field Service CRM solution
-To support the integration between Field Service and Finance and Operations, additional functionality from the Field Service CRM solution is required. In the solution, the **Is Maintained Externally** field has been added to the **Warehouse (msdyn_warehouses)** entity. This field helps to identify if the warehouse is handled from Finance and Operations or if it only exists in Field Service. The settings for this field include:
-- **Yes** – The warehouse originated from Finance and Operations and won't be editable in Sales.
+To support the integration between Field Service and Finance and Operations, additional functionality from the Field Service CRM solution is required. In the solution, the **Is Maintained Externally** field has been added to the **Warehouse (msdyn_warehouses)** entity. This field helps to identify if the warehouse is handled from Supply Chain Management or if it only exists in Field Service. The settings for this field include:
+- **Yes** – The warehouse originated from Supply Chain Management and won't be editable in Sales.
 - **No** – The warehouse was entered directly in Field Service and is maintained here.
 
 The **Is Externally Maintained** field helps control the synchronization of inventory levels, adjustments, transfers, and usage on work orders. Only warehouses with **Is Externally Maintained** set to **Yes** can be used to synchronize directly to the same warehouse in the other system. 
@@ -67,7 +67,7 @@ The **Is Externally Maintained** field helps control the synchronization of inve
 
 ## Prerequisites and mapping setup
 ### Data Integration project
-Before synchronizing the warehouses, make sure to update the Advanced query and filtering on the project to only include the warehouses that you want to bring from Finance and Operations to Field Service. Note that you will need the warehouse in Field Service to apply it on work orders, adjustments, and transfers.  
+Before synchronizing the warehouses, make sure to update the Advanced query and filtering on the project to only include the warehouses that you want to bring from Supply Chain Management to Field Service. Note that you will need the warehouse in Field Service to apply it on work orders, adjustments, and transfers.  
 
 To ensure that the **Integration key** exists for **msdyn_warehouses**:
 1. Go to Data Integration.
@@ -80,6 +80,6 @@ To ensure that the **Integration key** exists for **msdyn_warehouses**:
 
 The following illustration shows the template mapping in Data integration.
 
-### Warehouses (Fin and Ops to Field Service): Warehouse
+### Warehouses (Supply Chain Management to Field Service): Warehouse
 
 [![Template mapping in Data integration](./media/Warehouse1.png)](./media/Warehouse1.png)

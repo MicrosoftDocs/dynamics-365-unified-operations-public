@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 This topic explains how to use the new test recorder tool in Retail Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
-This topic applies to Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) and later.
+This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
 > The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
@@ -59,7 +59,7 @@ RSAT provides options for investigating test failures. It also decouples the tes
 
 ## Prerequisites
 
-+ You must have a Finance and Operations Retail POS environment.
++ You must have a Retail POS environment.
 + Your test environment must be running binary update 10.0.5 or later.
 + RSAT must have access to your test environment via a web browser.
 + You must have Excel installed to generate and edit test parameters.

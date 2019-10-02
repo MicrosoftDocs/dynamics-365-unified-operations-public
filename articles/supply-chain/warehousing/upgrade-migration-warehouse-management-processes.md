@@ -2,7 +2,7 @@
 # required metadata
 
 
-title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations 
+title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management 
 
 description: This topic provides an overview of product and warehouse management migration options.
 author: perlynne
@@ -31,22 +31,22 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# Upgrade warehouse management from Microsoft Dynamics AX 2012 to Finance and Operations
+# Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Finance and Operations.
+This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Supply Chain Management .
 
-Finance and Operations, no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the **Warehouse management** module. In the WMSII module, the Location and Pallet ID inventory dimensions could be selected for financial inventory, however, the Pallet ID inventory dimension cannot be used for financial inventory in Finance and Operations.
+Supply Chain Management no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the **Warehouse management** module. In the WMSII module, the Location and Pallet ID inventory dimensions could be selected for financial inventory, however, the Pallet ID inventory dimension cannot be used for financial inventory in Supply Chain Management .
 
 During an upgrade, all products that are associated with a storage dimension group that uses the Pallet ID inventory dimension are identified, marked as blocked, and not processed for upgrade.
 
-## Upgrading to Finance and Operations, when AX 2012 R3 WMSII is used
+## Upgrading to Supply Chain Management when AX 2012 R3 WMSII is used
 After the upgrade, you can use a set of options in the **Change storage dimension group for items** form to unblock products that were blocked during upgrade, and then process transactions for those products.
 
-### Enabling items in Finance and Operations
-This change is required because in Finance and Operations, item tracking is part of the warehouse management processes. For these processes, all warehouses and their locations must be associated with a location profile. If you want to use warehouse management processes, the following must be configured:
+### Enabling items in Supply Chain Management 
+This change is required because in Supply Chain Management, item tracking is part of the warehouse management processes. For these processes, all warehouses and their locations must be associated with a location profile. If you want to use warehouse management processes, the following must be configured:
 -   Existing warehouses must be enabled to use warehouse management processes 
 -   Existing released products must be associated with a storage dimension group that uses warehouse management processes 
 

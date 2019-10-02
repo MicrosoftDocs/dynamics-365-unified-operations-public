@@ -104,7 +104,7 @@ one of the other integration technologies described below.
 <sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 
 ### DMF/DIXF entities
-Core HR, built primarily on the same platform as Dynamics 365 Finance and Operations, provides a [Data Management Framework(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
+Core HR, built primarily on the same platform as Finance and Operations applications, provides a [Data Management Framework(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
 DIXF, and a set of data entities that can be used for importing/exporting data
 into/from Talent. While Common Data Service entities are the preferred data integration
 interface for Talent, the DMF entities will still be useful in some
