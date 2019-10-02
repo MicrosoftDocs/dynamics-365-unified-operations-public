@@ -40,7 +40,6 @@ This topic provides information about functionality that supports Russian regula
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Import currency exchange rates from CBRF](../general-ledger/import-currency-exchange-rates.md)
-- [Ledger translation](rus-ledger-translation-procedure.md)
 
 ## Advance holders
 
