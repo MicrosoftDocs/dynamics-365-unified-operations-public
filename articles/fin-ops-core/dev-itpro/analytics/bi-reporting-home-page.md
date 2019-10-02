@@ -5,7 +5,7 @@ title: Business intelligence (BI) and reporting home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
