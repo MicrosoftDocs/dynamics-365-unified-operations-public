@@ -2,7 +2,7 @@
 # required metadata
 
 title: Save, preview, and publish a page
-description: This topic describes how to save, preview, and publish a page in Dynamics 365 Commerce.
+description: This topic describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -34,47 +34,59 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to save, preview, and publish a page in Dynamics 365 Commerce.
+This topic describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
 
 ## Save a page
 
-In order to save a page you need to have it checked out to you and open in the page editor. You should save a page immediately after modifying it to ensure that your changes are stored.
+To save a page, you must have it checked out to yourself and open in the page editor. You should save a page immediately after you modify it, to help guarantee that your changes are stored.
 
-When you save a page, the changes are only visible only to you. Saving a page is primarily meant to be used for storing modifications when the page is not yet ready to be checked in. When you have finished modifying the page, it is recommended to check it in so that the changes become visible to others. It can then also be checked out by others who may need to modify the page.
+When you save a page, the changes are visible only to you. The save operation is intended primarily to store changes while the page isn't yet ready to be checked in. When you've finished modifying the page, we recommend that you check it in, so that the changes become visible to others. At that point, the page can also be checked out by other users who must modify it.
 
 ## Preview a page
 
-The authoring tool offers two kinds of preview features. WYSIWYG preview is visible in the middle pane when you are using the page editor. WYSIWYG preview is automatically refreshed when you save the page and can also be manually refreshed by clicking the **Refresh** button on the action ribbon. WYSIWYG preview renders the page as the end user will see it, but with authoring helpers rendered on top of the page. When you have finished modifying the page, you may want to preview the page to see exactly what the customer would see. To preview, click the **Preview** button on the action ribbon and the page preview will open up in a separate window. The page in the preview window is rendered exactly as the end user would see it. You can resize the browser to confirm that responsive modules are rendering correctly in all view ports. One thing to keep in mind is that previewing unpublished content requires authentication and proper permissions. If you share the URL to the preview, anyone who opens it needs to have proper permissions in order to access the content.
+The authoring tool offers two kinds of preview features: a "what you see is what you get" (WYSIWYG) preview pane in the page editor and a separate preview window.
+
+While you're using the page editor, a "what you see is what you get" (WYSIWYG) preview appears in the center pane. This preview is automatically updated whenever you save the page. You can also manually update it by selecting **Refresh** on the action ribbon. The WYSIWYG preview renders the page just as the site's users will see it, but authoring helpers are rendered on top of it.
+
+When you've finished modifying the page, you might want to preview it to see what customers will see. To preview a page, select **Preview** on the action ribbon. The preview will appear in a separate browser window. The page in the preview window is rendered just as the site's user will see it. You can resize the window to make sure that responsive modules are correctly rendered in all view ports.
+
+> [!NOTE]
+> Authentication and correct permissions are required to preview unpublished content. Therefore, if you share the URL of the preview with someone, that person must have the correct permissions to access the content.
 
 ## Publish a page
 
-When you have your page all ready to go, the next step is to publish it so that external users are able to see the content. Before publishing, the page needs to be checked in. You can publish and unpublish pages from either the page inspector or the page editor. Page inspector shows a list of pages and allows bulk operations. The page editor will always operate on the single page that is open in it.
+When your page is ready, the next step is to publish it, so that external users can view the content. Before you can publish a page, you must check it in.
 
-If you want to publish your page(s) from the page inspector, you need to select your page(s), make sure they are checked in, and then click **Publish** on the action ribbon. This will publish the pages and you will see a notification in the authoring tool telling you that.
+You can publish and unpublish pages from either the page inspector or the page editor. The page inspector shows a list of pages and allows for bulk operations. The page editor can be used to publish or unpublish only the single page that is open in it.
 
-If you want to publish single page from page editor, the procedure is very similar. With the page open in the page editor, ensure that it has been checked in and then click **Publish** on the action ribbon. This will publish the page and display a publish notification.
+To publish one or more pages from the page inspector, select the pages, make sure that they are checked in, and then select **Publish** on the action ribbon. The pages are published, and you receive a notification about the operation in the authoring tool.
 
-When you publish a page, it publishes just the page. In order to be able to navigate to your page and see it, you must have a URL associated with it. The URL will need to be published separately.
+To publish a single page from the page editor, the procedure is similar. While the page is open in the page editor, make sure that it has been checked in, and then select **Publish** on the action ribbon. The page is published, and you receive a notification about the operation.
 
-One important thing to keep in mind is that to be able to publish a page, any images or fragments referenced by the page must have been published already.
+When you publish a page, just the page content is published. You and other users can go to the page and view it only after a URL is associated with it. The URL must be published separately.
+
+> [!IMPORTANT]
+> Before you can publish a page, any images or fragments that the page references must already be published.
 
 ## Save, preview, and publish a home page
 
-To save, preview, and publish a home page, do the following.
+To save, preview, and publish a home page, follow these steps.
 
-1. Under **Sites**, click **Fabrikam** (or your site name).
-1. On the left-side navigation pane, click **Pages**. Locate the home page and click it to open it in the page editor.
-1. Click **Check Out**.
-1. Make desired changes to the page.
-1. Click **Save**, then click **Check In**. In the **Comments** text box, enter a note about the changes you made, then click **OK**.
-1. Click **Preview** to preview your page. When done, close the preview tab to return to the authoring tool.
-1. Click **Publish**.
+1. Under **Sites**, select **Fabrikam** (or the name of your site).
+1. In the navigation pane on the left, select **Pages**.
+1. Find and select the home page to open it in the page editor.
+1. Select **Check Out**.
+1. Modify the page as you require.
+1. Select **Save**, and then select **Check In**.
+1. In the **Comments** field, enter a note about the changes that you made, and then select **OK**.
+1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
+1. Select **Publish**.
 
 ## Publish a URL
 
-To publish a URL, do the following.
+To publish a URL, follow these steps.
 
-1. Under **Sites**, click **Fabrikam** (or your site name).
-1. On the left-side navigation pane, click **URLs**.
-1. Locate and select the URL you want to publish.
-1. Click **Publish** from the action bar.
+1. Under **Sites**, select **Fabrikam** (or the name of your site).
+1. In the navigation pane on the left, select **URLs**.
+1. Find and select the URL to publish.
+1. On the action bar, select **Publish**.
