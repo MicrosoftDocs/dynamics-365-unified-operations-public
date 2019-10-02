@@ -90,49 +90,49 @@ You can create translation group rules to specify all translation settings.
 >   \> The value of the target company's standard currency is automatically
 >   updated in the **To currency** field.
 
-1.  In the **Description** field, enter a description of the translation rule
+6.  In the **Description** field, enter a description of the translation rule
     group.
 
-2.  On the **Translation methods** FastTab, select **Methods initialization** to
+7.  On the **Translation methods** FastTab, select **Methods initialization** to
     create a list of translation methods.
 
-3.  Select **Add**, and then, in the **Method** field, select **Ledger
+8.  Select **Add**, and then, in the **Method** field, select **Ledger
     translation**.
 
 ![Translation groups](media/1%20Translation%20groups.jpg)
 
 
-1.  On the **Ledger parameters** FastTab, in the **Default currency group**
+9.  On the **Ledger parameters** FastTab, in the **Default currency group**
     field, select the currency group that should be used by default for the
     account translation rules.
 
-2.  In the **Default dimension group** field, select the dimension group that
+10.  In the **Default dimension group** field, select the dimension group that
     should be used by default for the account translation rules.
 
-3.  In the **Default priorities** field, enter the priority that should be used
+11.  In the **Default priorities** field, enter the priority that should be used
     by default for the account translation rules.
 
-4.  Set the **New ledger vouchers** option to **Yes** to create new ledger
+12.  Set the **New ledger vouchers** option to **Yes** to create new ledger
     voucher numbers when you do translations. If the **New ledger vouchers**
     option is set to **No**, ledger account transactions are translated to the
     ledger account of the target company by using the voucher number of the
     source company.
 
-5.  In the **Number sequence code** field, select the number sequence for the
+13.  In the **Number sequence code** field, select the number sequence for the
     vouchers.
 
 >   \> [!NOTE]  
 >   \> The **Number sequence code** field is available only if you set the **New
 >   ledger vouchers** option to **Yes**.
 
-1.  In the **Translation difference** section, you define the level that the
+14.  In the **Translation difference** section, you define the level that the
     translation difference should be checked to and the account where
     translation difference amounts should be put. The translation difference is
     the imbalance that occurs in the target company's primary and secondary
     currencies because the valuation of the corresponding entries is done at
     different rates.
 
-2.  In the **Check translation difference** field, select one of the following
+15.  In the **Check translation difference** field, select one of the following
     validation methods for the translation difference:
 
     -   **Error** – When the transaction is posted to the translation difference
@@ -144,7 +144,7 @@ You can create translation group rules to specify all translation settings.
         shown. All transactions are translated to the ledger account of the
         target company.
 
-3.  In the **Ledger account** field, select the main account number that should
+16.  In the **Ledger account** field, select the main account number that should
     reflect the translation differences for the target company's default and
     secondary currencies.
 
@@ -159,7 +159,7 @@ You can create translation group rules to specify all translation settings.
 >   target company because the valuation of the corresponding transactions is
 >   done at different rates.
 
-1.  In the **Check imbalance** field, select the validate method for the
+17.  In the **Check imbalance** field, select the validate method for the
     imbalance:
 
     -   **Error** – When the transaction is posted to the imbalance account, an
@@ -169,7 +169,7 @@ You can create translation group rules to specify all translation settings.
         the amounts that are posted to the imbalance account is shown. All
         transactions are translated to the ledger account of the target company.
 
-2.  In the **Ledger account** field, select the account number that should be
+18.  In the **Ledger account** field, select the account number that should be
     used to accumulate the imbalance amounts in the target company's transaction
     currency.
 
@@ -178,7 +178,7 @@ You can create translation group rules to specify all translation settings.
 >   transaction is translated to the target company, but the credit side of the
 >   transaction isn't translated.
 
-1.  Select **Save**, and then close the page.
+19.  Select **Save**, and then close the page.
 
 Set up currency groups so that they have currency conversion rules
 ------------------------------------------------------------------
@@ -197,19 +197,19 @@ during translation.
 ![](media/2%20Currency%20groups.jpg)
 
 
-1.  Create a currency group.
+3.  Create a currency group.
 
-2.  In the **Currency group** field, enter a unique code for the currency group.
+4.  In the **Currency group** field, enter a unique code for the currency group.
 
-3.  In the **Description** field, enter a description of the currency group.
+5.  In the **Description** field, enter a description of the currency group.
 
-4.  On the **Currency conversion rules** FastTab, select **Add** to create a
+6.  On the **Currency conversion rules** FastTab, select **Add** to create a
     line.
 
-5.  In the **Currency** field, select the code for the currency in the source
+7.  In the **Currency** field, select the code for the currency in the source
     company that the conversion method is being set up for.
 
-6.  In the **Rate method** field, select the currency conversion method that
+8.  In the **Rate method** field, select the currency conversion method that
     should be used when transactions are translated from the source company to
     the target company:
 
@@ -266,7 +266,7 @@ during translation.
 
 -   **1 (one)** – The value **1** (one) is substituted.
 
-1.  Select **Save**, and then close the page.
+9.  Select **Save**, and then close the page.
 
 Set up an inflation index
 -------------------------
@@ -279,16 +279,16 @@ Set up an inflation index
 >   \> [!NOTE]  
 >   \> You can set up multiple inflation indexes for one rule group.
 
-1.  Select **New** to create an inflation index.
+3.  Select **New** to create an inflation index.
 
-2.  In the **Inflation index** field, enter a unique code for the inflation
+4.  In the **Inflation index** field, enter a unique code for the inflation
     index.
 
-3.  In the **Description** field, enter a description of the inflation index.
+5.  In the **Description** field, enter a description of the inflation index.
 
-4.  On the **Rules for dimensions** FastTab, select **Add** to create a line.
+6.  On the **Rules for dimensions** FastTab, select **Add** to create a line.
 
-5.  In the **From date** field, select the start date when the index becomes
+7.  In the **From date** field, select the start date when the index becomes
     valid.
 
 >   \> [!NOTE]  
@@ -297,13 +297,13 @@ Set up an inflation index
 >   can also set up an index without specifying a start date. In this case, the
 >   index works for all transactions before the start date of another index.
 
-1.  In the **Exchange rate** field, enter the index value that should be used
+8.  In the **Exchange rate** field, enter the index value that should be used
     during the index validity period.
 
 ![](media/3%20Inflation%20indexes.jpg)
 
 
-1.  Select **Save**, and then close the page.
+9.  Select **Save**, and then close the page.
 
 Set up a dimension group and conversion rules for dimensions
 ------------------------------------------------------------
@@ -325,25 +325,25 @@ dimension conversion options is specified for this group.
 ![](media/4%20Dimension%20groups.jpg)
 
 
-1.  Select **New** to create a dimension group.
+3.  Select **New** to create a dimension group.
 
-2.  In the **Dimension group** field, enter a unique code for the dimension
+4.  In the **Dimension group** field, enter a unique code for the dimension
     group.
 
-3.  In the **To company** field, enter the code for the target company that
+5.  In the **To company** field, enter the code for the target company that
     should be used for transactions during translation.
 
-4.  In the **Description** field, enter a description of the dimension group.
+6.  In the **Description** field, enter a description of the dimension group.
 
-5.  On the **Rules for dimensions** FastTab, select **Add** to create a line.
+7.  On the **Rules for dimensions** FastTab, select **Add** to create a line.
 
-6.  In the **Dimension** field, select the dimension in the source company that
+8.  In the **Dimension** field, select the dimension in the source company that
     the conversion rule is being configured for.
 
-7.  In the **From dimension code** and **To dimension code** fields, define the
+9.  In the **From dimension code** and **To dimension code** fields, define the
     range of dimension values.
 
-8.  In the **Conversion method** field, select the method that is used to
+10.  In the **Conversion method** field, select the method that is used to
     convert the dimension of the translated transaction from the source company:
 
     -   **No changes** – The source dimension is transferred without changes.
@@ -357,10 +357,10 @@ dimension conversion options is specified for this group.
     -   **Customer/Vendor** – The current dimension is replaced with the
         customer or vendor code.
 
-9.  In the **To dimension** field, select the type of dimension in the target
+11.  In the **To dimension** field, select the type of dimension in the target
     company that the values should be transferred to.
 
-10. In the **To dimension code** field, select the code for the dimension in the
+12. In the **To dimension code** field, select the code for the dimension in the
     target company that the transaction dimension in the source company should
     be moved to during translation.
 
@@ -368,7 +368,7 @@ dimension conversion options is specified for this group.
 >   \> This field is available only if you select **Value** in the **Conversion
 >   method** field.
 
-1.  Select **Save**, and then close the page.
+13.  Select **Save**, and then close the page.
 
 The following table shows examples of dimension conversion settings and their
 effects on translation.
@@ -397,23 +397,23 @@ currency and dimensions.
 >   \> [!NOTE]  
 >   \> You can set up multiple conversion rules for one rule group.
 
-1.  Select **New** to create a line.
+3.  Select **New** to create a line.
 
-2.  On the **Overview** tab, in the **To account** field, select the ledger
+4.  On the **Overview** tab, in the **To account** field, select the ledger
     account from the target company's chart of accounts that transactions in the
     source company should be translated to. After you save your changes to the
     line, the name of the target company is automatically selected in the
     **Account name** field.
 
-3.  In the **Main account** field, select the ledger account in the source
+5.  In the **Main account** field, select the ledger account in the source
     company that should be used to translate transactions to the target company.
 
-4.  In the **Offset account** field, select the offset account in the source
+6.  In the **Offset account** field, select the offset account in the source
     company that should be used to translate transactions that have the
     specified correspondence. Leave this field blank to select all transactions,
     regardless of the offset account.
 
-5.  In the **Crediting** field, select the type of transactions to translate:
+7.  In the **Crediting** field, select the type of transactions to translate:
 
     -   **No** – Translate only debit account transactions.
 
@@ -466,18 +466,18 @@ currency and dimensions.
 
 -   Debit B, Credit A
 
-1.  In the **Currency group** field, select the code for the currency conversion
+8.  In the **Currency group** field, select the code for the currency conversion
     group. If a default currency group is configured for the translation rule
     group that is selected in the **Rule group** field, the value is
     automatically entered. However, you can change the value as you require.
 
-2.  In the **Dimension group** field, select the code for the dimension
+9.  In the **Dimension group** field, select the code for the dimension
     conversion group. If a default dimension group is configured for the
     translation rule group that is selected in the **Rule group** field, the
     value is automatically entered. However, you can change the value as you
     require.
 
-3.  In the **Priority** field, enter the priority of the rule. If a default
+10.  In the **Priority** field, enter the priority of the rule. If a default
     priority is selected for the translation rule group that is selected in the
     **Rule group** field, the value is automatically entered. However, you can
     change the value as you require.
@@ -491,34 +491,34 @@ currency and dimensions.
 ![](media/5%20Translation%20ledger%20account%20rules.jpg)
 
 
-1.  On the **General** tab, in the first **Posting type** field, select a
+11.  On the **General** tab, in the first **Posting type** field, select a
     voucher type to translate only transactions that have that voucher type. For
     example, if you select **Petty cash**, only transactions in the bank module
     are translated.
 
-2.  In the second **Posting type** field, select a voucher type to translate
+12.  In the second **Posting type** field, select a voucher type to translate
     only transactions that have that voucher type for the offset account.
 
-3.  In the **Posting layer** field, select a posting layer to translate only
+13.  In the **Posting layer** field, select a posting layer to translate only
     transactions that have that posting layer.
 
-4.  In the **Only reversing entry** field, select **Yes** to translate only
+14.  In the **Only reversing entry** field, select **Yes** to translate only
     reversing transactions, or select **No** to translate only regular
     transactions. Leave this field blank to translate both regular transactions
     and reversing transactions.
 
-5.  In the **To posting layer** field, select the posting layer that the
+15.  In the **To posting layer** field, select the posting layer that the
     translated transactions should be assigned to in the target company.
 
 ![](media/6%20Translation%20ledger%20account%20rules.jpg)
 
 
-1.  Select **Initialize** to automatically create a line that has an account
+16.  Select **Initialize** to automatically create a line that has an account
     translation rule for all the ledger accounts in the target company. In the
     **Initialize** dialog box, you can select **Filter** to filter the required
     accounts.
 
-2.  Select **OK**. The system creates a line that has a rule for each selected
+17.  Select **OK**. The system creates a line that has a rule for each selected
     ledger account.
 
 Set up translation parameters
@@ -568,12 +568,12 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 ![](media/7%20Welcome.jpg)
 
 
-1.  On the **Consistency check** page, select **Consistency check** to validate
+5.  On the **Consistency check** page, select **Consistency check** to validate
     the conversion parameters.
 
 ![](media/8%20Consistency%20check.jpg)
 
-1.  In the **Consistency check** dialog box, specify the details, and then
+6.  In the **Consistency check** dialog box, specify the details, and then
     select **OK**.
 
 >   \> [!NOTE]  
@@ -585,30 +585,30 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 ![](media/9%20Consistency%20check.jpg)
 
 
-1.  Select **Next**.
+7.  Select **Next**.
 
-2.  On the **Selection** page, in the **From date** and **To date** fields,
+8.  On the **Selection** page, in the **From date** and **To date** fields,
     define the period that the translation should be done for.
 
-3.  Select **Inquiry** to specify additional transaction selection criteria.
+9.  Select **Inquiry** to specify additional transaction selection criteria.
 
 ![](media/10%20Selection.jpg)
 
 
-1.  Select **Next**.
+10.  Select **Next**.
 
-2.  On the **Transaction processing** page, select **Next** to run the data
+11.  On the **Transaction processing** page, select **Next** to run the data
     conversion.
 
 ![](media/11%20Translation%20processing.jpg)
 
 
-1.  Select **Preview** to view the conversion results.
+12.  Select **Preview** to view the conversion results.
 
-2.  Select **Next** two times to import the translation data into the target
+13.  Select **Next** two times to import the translation data into the target
     company.
 
-3.  After the translation is completed, select **Finish**.
+14.  After the translation is completed, select **Finish**.
 
 >   When the translation session for the source company is successfully
 >   completed, the following actions occur:
@@ -626,7 +626,7 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 -   The **Number of transactions** field is updated to the number of vouchers
     that were successfully processed during the translation session.
 
-1.  Go to the target company, and verify that the transactions have been
+15.  Go to the target company, and verify that the transactions have been
     successfully transferred. The date of the transactions that are transferred
     to the target company will be the date when the transactions were posted in
     the source company.
@@ -658,14 +658,14 @@ specific rules in batch mode.
 ![](media/12%20Batch%20translation.jpg)
 
 
-1.  On the **Run in the background** FastTab, select **Recurrence** to open the
+5.  On the **Run in the background** FastTab, select **Recurrence** to open the
     **Define recurrence** dialog box, where you can set up the recurrence of the
     batch translation.
 
 ![](media/13%20Define%20recurrence.jpg)
 
 
-1.  In the **Batch translation** dialog box, select **OK** to do the batch
+6.  In the **Batch translation** dialog box, select **OK** to do the batch
     translation.
 
 Translation cancellation
