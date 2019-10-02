@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a new site page
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to add a new site page in Microsoft Dynamics 365 Commerce.
 
@@ -50,7 +50,7 @@ The page name must be unique to your page. It should be descriptive, so that you
 
 ## Page URL
 
-You can have the option to enter a URL for your new page. If you enter a URL when you create a page, a new URL is created, and the new page is assigned to it. You can change the URL later, before you publish the page. For more information, see [Create a page URL](create-page-URL.md).
+You can have the option to enter a URL for your new page. When you create a page, you can enter a string that will be used to form a complete URL. This string is known as a relative URL or a URL slug. A complete URL is then generated based on the URL slug, and the new page is assigned to it. You can change the URL slug later, before you publish the page. For more information, see [Create a page URL](create-page-URL.md).
 
 > [!NOTE]
 > Dynamics 365 Commerce decouples URLs and content. In other words, a page can be created that isn't associated with an URL, and a URL can be created that isn't associated with a page. Therefore, content swapping can be done for a URL and doesn't require downtime, and redirects are easier to manage.
@@ -63,7 +63,7 @@ To add a new site page to your site, follow these steps.
 1. Select **New Page**.
 1. In the **New Page** dialog box, select a template, and then select **OK**.
 1. In the **Page Name** field, enter a page name (for example, **My New Page**).
-1. In the **URL** field, enter a string to complete the URL (for example, **mynewpage**).
+1. In the **URL** field, enter a string (URL slug) to complete the URL (for example, **mynewpage**).
 1. Select **OK**. The page editor appears. Notice that a header and a footer are automatically added to the page, based on the template that you selected.
 1. In the page outline, select the **Main** slot, select the ellipsis button (**...**), and then select **Add Module**.
 1. Select **Container**, and then select **OK**
