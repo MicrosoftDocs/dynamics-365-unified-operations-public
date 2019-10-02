@@ -300,9 +300,8 @@ Set up an inflation index
 1.  In the **Exchange rate** field, enter the index value that should be used
     during the index validity period.
 
-![](media/91df9e675e0d9aef13bde5c47e8ed705.jpg)
+![](media/3%20Inflation%20indexes.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  Select **Save**, and then close the page.
 
@@ -323,9 +322,8 @@ dimension conversion options is specified for this group.
 >   \> You can set up multiple conversion rules for the dimensions of one rule
 >   group.
 
-![](media/4f85acfa9a20d19a09ddbce376d1ba0a.jpg)
+![](media/4%20Dimension%20groups.jpg)
 
->   A screenshot of a social media post Description automatically generated
 
 1.  Select **New** to create a dimension group.
 
@@ -490,9 +488,8 @@ currency and dimensions.
 >   recommend that you specify the priority if there are several mutually
 >   exclusive rules.
 
-![](media/36f09461d2b274768aab1396e0894654.jpg)
+![](media/5%20Translation%20ledger%20account%20rules.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  On the **General** tab, in the first **Posting type** field, select a
     voucher type to translate only transactions that have that voucher type. For
@@ -513,9 +510,8 @@ currency and dimensions.
 5.  In the **To posting layer** field, select the posting layer that the
     translated transactions should be assigned to in the target company.
 
-![](media/cedffc0ac8155b2fedee271bb6e73704.jpg)
+![](media/6%20Translation%20ledger%20account%20rules.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  Select **Initialize** to automatically create a line that has an account
     translation rule for all the ledger accounts in the target company. In the
@@ -569,16 +565,13 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 
 4.  On the **Welcome** page, select **Next**.
 
-![](media/c5412e9bf8d45a6e093e1d9cb92902b0.jpg)
+![](media/7%20Welcome.jpg)
 
->   A screenshot of a social media post Description automatically generated
 
 1.  On the **Consistency check** page, select **Consistency check** to validate
     the conversion parameters.
 
-![](media/6a811857522946714ccc2763ef2123a2.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/8%20Consistency%20check.jpg)
 
 1.  In the **Consistency check** dialog box, specify the details, and then
     select **OK**.
@@ -589,9 +582,8 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 >   to the next page of the wizard until the conversion parameters are checked
 >   for additional errors.
 
-![](media/2d39372f9bc335c1476fe57ad032ea44.jpg)
+![](media/9%20Consistency%20check.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  Select **Next**.
 
@@ -600,18 +592,16 @@ Follow these steps to use the **Translation** wizard to do a single translation.
 
 3.  Select **Inquiry** to specify additional transaction selection criteria.
 
-![](media/3273e23240d4403b5e3f14095960ca87.jpg)
+![](media/10%20Selection.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  Select **Next**.
 
 2.  On the **Transaction processing** page, select **Next** to run the data
     conversion.
 
-![](media/734f1eb3abaa4de57173e0b06efeffc3.jpg)
+![](media/11%20Translation%20processing.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  Select **Preview** to view the conversion results.
 
@@ -665,17 +655,15 @@ specific rules in batch mode.
 4.  On the **Parameters** FastTab, in the **From date** and **To date** fields,
     define the period that the batch translation should be done for.
 
-![](media/4390489b0d91e2b2fd736adbc151f979.jpg)
+![](media/12%20Batch%20translation.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  On the **Run in the background** FastTab, select **Recurrence** to open the
     **Define recurrence** dialog box, where you can set up the recurrence of the
     batch translation.
 
-![](media/710dc01a7e61a1ecb50bdc609b517aaf.jpg)
+![](media/13%20Define%20recurrence.jpg)
 
->   A screenshot of a cell phone Description automatically generated
 
 1.  In the **Batch translation** dialog box, select **OK** to do the batch
     translation.
