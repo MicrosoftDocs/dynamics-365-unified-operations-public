@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activities in the processes in Microsoft Dynamics 365 Talent - Attract
+title: Activities in hiring processes 
 description: This topic provides information about the various types of activities that can be used in the hiring process in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe

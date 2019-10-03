@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-05-31
 ---
 
 
-# Activate storno accounting
+# Activate storno accounting for Poland
 
 [!include [banner](../includes/banner.md)]
 

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Petty cash for Eastern Europe
+# Petty cash for Eastern Europe and Russia
 
 [!include [banner](../includes/banner.md)]
 

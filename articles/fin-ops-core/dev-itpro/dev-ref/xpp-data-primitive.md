@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Primitive data types
+# X++ Primitive data types
 
 [!include [banner](../includes/banner.md)]
 

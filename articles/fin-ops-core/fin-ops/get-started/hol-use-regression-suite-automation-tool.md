@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use Regression suite automation tool tutorial
+title: Use the Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
 author: kfend
 manager: AnnBe

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Support parameterized calls of ER data sources of Calculated field type
+title: Support parameterized calls of ER data sources of the Calculated field type
 description: This topic provides information about how to use the Calculated field type for ER data sources.
 author: NickSelin
 manager: AnnBe

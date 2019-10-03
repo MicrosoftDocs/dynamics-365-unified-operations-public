@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
 ---
 
-# Update onboarding guides
+# Update onboarding guides in Dynamics 365 Talent - Onboard
 
 [!include [banner](includes/banner.md)]
 

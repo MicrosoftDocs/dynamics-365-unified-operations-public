@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset criticalities
+# Asset criticality types
 
 [!include [banner](../../includes/banner.md)]
 

@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Import tax engine configurations
+# Tax engine import configuration
 
 [!include [banner](../includes/banner.md)]
 

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.0.4
 
 ---
 
-# Manage International Bank Account Number (IBAN) validation
+# Manage International Bank Account Number (IBAN) account validation
 
 [!include [banner](../includes/banner.md)]
 

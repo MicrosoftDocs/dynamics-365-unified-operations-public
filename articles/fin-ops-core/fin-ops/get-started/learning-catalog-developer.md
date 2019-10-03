@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Developers Learning Catalog
+title: Developer Learning Catalog
 description: 
 author: margoc
 manager: AnnBe

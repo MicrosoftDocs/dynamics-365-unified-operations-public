@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Talent 2019 Wave 1 update
 
 ---
 
-# Close a job
+# Close a job in Microsoft Dynamics Talent - Attract
 
 [!include [banner](includes/banner.md)]
 
