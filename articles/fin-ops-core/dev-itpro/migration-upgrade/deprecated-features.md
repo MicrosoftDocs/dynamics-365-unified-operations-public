@@ -5,7 +5,7 @@ title: Removed or deprecated features for Finance and Operations
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
