@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get updates from Lifecycle Services (LCS)
+# Download updates from Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
