@@ -81,20 +81,20 @@ For information about how to set up Azure Front Door Service, see [Quickstart: C
 
 ### Configure a back-end pool
 
-To configure a back-end pool, follow these steps.
+To configure a back-end pool in Azure Front Door Service, follow these steps.
 
 1. Add **&lt;ecom-tenant-name&gt;.commerce.dynamics.com** to a back-end pool as a custom host that has an empty back-end host header.
 1. Under **Health probes**, in the **Path** field, enter **/keepalive**.
 1. In the **Intervals (seconds)** field, enter **255**.
 1. Under **Load balancing**, leave the default values.
 
-The following illustration shows the **Add a backend pool** dialog box.
+The following illustration shows the **Add a backend pool** dialog box in Azure Front Door Service.
 
 ![Add a backend pool dialog box](./media/CDN_BackendPool.png)
 
 ### Set up rules
 
-To set up a routing rule, follow these steps.
+To set up a routing rule in Azure Front Door Service, follow these steps.
 
 1. Add a routing rule.
 1. In the **Name** field, enter **default**.
@@ -107,7 +107,7 @@ To set up a routing rule, follow these steps.
 1. Set the **URL rewrite** option to **Disabled**.
 1. Set the **Caching** option to **Disabled**.
 
-To set up a caching rule, follow these steps.
+To set up a caching rule in Azure Front Door Service, follow these steps.
 
 1. Add a caching rule.
 1. In the **Name** field, enter **statics**.
@@ -122,13 +122,13 @@ To set up a caching rule, follow these steps.
 1. In the **Query string caching behavior** field, select **Cache every unique URL**.
 1. In the **Dynamic compression** field group, select the **Enabled** option.
 
-The following illustration shows the **Add a rule** dialog box.
+The following illustration shows the **Add a rule** dialog box in Azure Front Door Service.
 
 ![Add a rule dialog box](./media/CDN_CachingRule.png)
 
 After this initial configuration is deployed, you must add your custom domain to the configuration for Azure Front Door Service. To add the custom domain (for example, `www.fabrikam.com`), you must configure a Canonical Name (CNAME) for the domain.
 
-The following illustration shows the **CNAME configuration** dialog box.
+The following illustration shows the **CNAME configuration** dialog box in Azure Front Door Service.
 
 ![CNAME Configuration dialog box](./media/CNAME_Configuration.png)
 
@@ -137,7 +137,7 @@ The following illustration shows the **CNAME configuration** dialog box.
 
 You can use Azure Front Door Service to manage the certificate, or you can use your own certificate for the custom domain.
 
-The following illustration shows the **Custom Domain HTTPS** dialog box.
+The following illustration shows the **Custom Domain HTTPS** dialog box in Azure Front Door Service.
 
 ![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
 
