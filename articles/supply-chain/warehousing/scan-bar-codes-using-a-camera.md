@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Scan bar codes using a camera in Dynamics 365 Supply Chain Management - Warehousing app
-description: This topic explains how to set up Dynamics 365 Supply Chain Management - Warehousing app to scan bar codes using a camera on a mobile device. 
+title: Scan bar codes using a camera in Dynamics 365 for Finance and Operations – Warehousing app
+description: This topic explains how to set up Dynamics 365 for Finance and Operations – Warehousing app to scan bar codes using a camera on a mobile device. 
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up Dynamics 365 Supply Chain Management - Warehousing app to scan bar codes using a camera on a mobile device. 
+This topic explains how to set up Dynamics 365 for Finance and Operations – Warehousing app to scan bar codes using a camera on a mobile device. 
 
 ## Prerequisites
 To use this feature, you need to have version 1.2.0.0 of the Warehousing app installed, and your device must have a camera. When you open the app after updating, you will be prompted to allow the app to use the camera. If your device doesn’t have a camera, no prompt will be shown, and you will not be able to use a camera as a scanner. 
