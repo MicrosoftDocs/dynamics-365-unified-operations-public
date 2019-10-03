@@ -24,7 +24,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Substitution/adjustment tax invoice for Thailand
+# Substitution/adjustment tax invoices for Thailand
 
 [!include [banner](../includes/banner.md)]
 
