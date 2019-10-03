@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile barcode support
+title: Mobile bar code support
 description: This topic describes how to handle the Warehouse mobile scanning app on Android-compatible devices.
 author: Mirzaab
 manager: AnnBe
