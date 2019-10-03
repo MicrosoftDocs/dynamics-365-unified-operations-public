@@ -58,8 +58,8 @@ This topic describes how to use the Regression suite automation tool (RSAT)/Task
 5. The default values in Excel come from the task recording. For **Reference Group** controls such as storage dimensions or tracking dimensions, it stores the key of the lookup instead of the value, for example, **2** instead of **SiteWH**. We recommend that you update these fields with the actual value in Excel so that the test is more robust and resilient to changes.
 6. It is recommended to set the same locale for **Language** and **Date ,time, and number format** settings of your environment prior to running RSAT. If these values are inconsistent, it may result in validation errors.  
 
-   > [!div class="mx-imgBorder"]
-   > ![Set locale, date, time, and number format](media/locale.png)
+  
+   ![Set locale, date, time, and number format](media/locale.png)
 
 The following are typical usage sequences.
 
