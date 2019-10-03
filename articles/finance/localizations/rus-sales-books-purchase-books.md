@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Sales books, purchase books, and invoice-factures journals for Russia 
+title: Sales books, purchase books, and invoice-factures journals  
 description: This topic provides information about sales books, purchase books, and invoice-factures journals for Russia.
 author: ShylaThompson
 manager: AnnBe
