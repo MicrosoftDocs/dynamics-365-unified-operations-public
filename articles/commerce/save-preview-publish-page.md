@@ -46,9 +46,9 @@ When you save a page, the changes are visible only to you. The save operation is
 
 The authoring tool offers two kinds of preview features: a "what you see is what you get" (WYSIWYG) preview pane in the page editor and a separate preview window.
 
-While you're using the page editor, a "what you see is what you get" (WYSIWYG) preview appears in the center pane. This preview is automatically updated whenever you save the page. You can also manually update it by selecting **Refresh** on the action ribbon. The WYSIWYG preview renders the page just as the site's users will see it, but authoring helpers are rendered on top of it.
+While you're using the page editor, a "what you see is what you get" (WYSIWYG) preview appears in the center pane. This preview is automatically updated whenever you save the page. You can also manually update it by selecting **Refresh** on the command bar. The WYSIWYG preview renders the page just as the site's users will see it, but authoring helpers are rendered on top of it.
 
-When you've finished modifying the page, you might want to preview it to see what customers will see. To preview a page, select **Preview** on the action ribbon. The preview will appear in a separate browser window. The page in the preview window is rendered just as the site's user will see it. You can resize the window to make sure that responsive modules are correctly rendered in all view ports.
+When you've finished modifying the page, you might want to preview it to see what customers will see. To preview a page, select **Preview** on the command bar. The preview will appear in a separate browser window. The page in the preview window is rendered just as the site's user will see it. You can resize the window to make sure that responsive modules are correctly rendered in all view ports.
 
 > [!NOTE]
 > Authentication and correct permissions are required to preview unpublished content. Therefore, if you share the URL of the preview with someone, that person must have the correct permissions to access the content.
@@ -59,9 +59,9 @@ When your page is ready, the next step is to publish it, so that external users 
 
 You can publish and unpublish pages from either the page inspector or the page editor. The page inspector shows a list of pages and allows for bulk operations. The page editor can be used to publish or unpublish only the single page that is open in it.
 
-To publish one or more pages from the page inspector, select the pages, make sure that they are checked in, and then select **Publish** on the action ribbon. The pages are published, and you receive a notification about the operation in the authoring tool.
+To publish one or more pages from the page inspector, select the pages, make sure that they are checked in, and then select **Publish** on the command bar. The pages are published, and you receive a notification about the operation in the authoring tool.
 
-To publish a single page from the page editor, the procedure is similar. While the page is open in the page editor, make sure that it has been checked in, and then select **Publish** on the action ribbon. The page is published, and you receive a notification about the operation.
+To publish a single page from the page editor, the procedure is similar. While the page is open in the page editor, make sure that it has been checked in, and then select **Publish** on the command bar. The page is published, and you receive a notification about the operation.
 
 When you publish a page, just the page content is published. You and other users can go to the page and view it only after a URL is associated with it. The URL must be published separately.
 
@@ -89,4 +89,4 @@ To publish a URL, follow these steps.
 1. Under **Sites**, select **Fabrikam** (or the name of your site).
 1. In the navigation pane on the left, select **URLs**.
 1. Find and select the URL to publish.
-1. On the action bar, select **Publish**.
+1. On the command bar, select **Publish**.
