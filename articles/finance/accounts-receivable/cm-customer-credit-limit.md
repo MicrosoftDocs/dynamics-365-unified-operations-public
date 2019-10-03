@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the process for managing customer credit limits and using those limits to block and release sales orders. **Customer credit limit management** uses a defined process, and data, to managing customer credit limits. You can update credit limits using an adjustment journal in which you can either manually enter changes, or automatically create new credit limits based on percentage increases or risk factors such as years in business or credit rating. These updates can be reviewed via workflow and then applied to customers using a posting process.
+This topic describes the process for managing customer credit limits and using those limits to block and release sales orders. **Customer credit limit management** uses a defined process, and data, to managing customer credit limits. You can update credit limits using adjustments in which you can either manually enter changes, or automatically create new credit limits based on percentage increases or risk factors such as years in business or credit rating. These updates can be reviewed via workflow and then applied to customers using a posting process.
 
 ## Credit management setup	
 
@@ -45,31 +45,31 @@ To begin using credit management features, enable the parameters in **Credit man
 There are four tabs where you can change the parameters that control credit management.
  
 #### Order on hold
-1. Select **Yes** for **Allow edit of sales orders after order hold is released** to require the sales order to check the rules again if it has been edited after being released from the on-hold queue. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.  
+1. Select **Yes** for **Allow edit of sales orders after order hold is released** to require the sales order to check the rules again if it has been edited after being released from the on-hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed again after the number of grace days.  
 2. Select the default **release reason** for the **Reasons for canceled orders**. This will be the default reason used when a sales order that was on credit management hold is cancelled.
 3. Select **Yes** for the **Check customer credit groups credit limit** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked and, if the credit limit is sufficient, then the credit limit of the customer will be checked.
 4. Select **Yes** for **Check credit limit when payment terms are increased** to check the payment terms rankings to see if the payment terms on the sales order are different from the payment terms on the sales order. If the ranking of the new payment term is higher than the original payment term, then the order is placed on credit management hold.
 5. Select **Yes** for **Check credit limit when a settlement discount is increased** to check the settlement discount rankings to see if the cash discount on the sales order is different from the cash discount on the sales order. If the new cash discount ranking is higher than the original cash discount, the order is placed on credit management hold.
 6. Select the default **release reason** for **Reason for releasing modified orders** that will be used when modified orders are automatically released from credit management hold.
-7. Select **Yes** for **Allow credit limit with no expiration date** to allow a customer to have a blank expiration date, which means their credit limit won't expire. Select **No** to require an expiration date for each customer's credit limit.
+7. Select **Yes** for **Ignore credit limit expired rule when expiration date is blank** to ignore the blocking rule that checks for expired credit limits when the expiration date is blank. Select **No** to have the blocking rule interpret the blank expiration as an expired credit limit.
 8. Within warehouse management, it is possible to automatically create loads at sales order entry. Select **No** for **Remove blocked load lines** to leave the sales order lines on the load when a sales order is on credit hold. The load cannot be processed when the sales order is on hold. Select **Yes** to remove the sales order lines from the load when a sales order is on credit hold. The load can then be processed. 
 9. Sales orders can be automatically released from credit management review. Select the **release reason** for **Reason to release automatically** that will be used as the default entry when sales orders are released automatically.
 10. Sales orders can be automatically released from credit management review. Select **Without posting** for **Automatically release** to allow an order to be posted using the same posting process that was executed when the sales order was placed on hold. Select **Original posting** to post the order using the same posting process that was executed when the sales order was placed on hold.
 
-#### Credit management posting
+#### Credit management checkpoints
 
-You can set the timing for checking sales orders for credit issues. The credit management posting tab is used to identify which document posting processes will include processing of credit management rules. You can also choose to check the credit rules while doing either a proforma posting or full posting of the sales order. Select each check box to define which posting processes will put an order on hold if an issue is found after processing the credit management blocking rules.
+You can set the timing for checking sales orders for credit issues. The credit management checkpoints tab is used to identify which document posting processes will include processing of credit management rules. You can also choose to check the credit rules while doing either a proforma posting or full posting of the sales order. Select each check box to define which posting processes will put an order on hold if an issue is found after processing the credit management blocking rules.
 
 You can also define the number of grace days before the credit rules are rechecked after they've been checked the first time. Although you may specify that the credit management rules are checked at posting, the rules will not be checked for the specified number of grace days. For example, if you confirm a sales order on day 1 and you specify 2 grace days for the confirmation step, then credit rules won't be checked at the next posting step, such as creating a packing slip, invoicing the order, and so on, until day 4. On or after day 4, the rules will be checked again when posting occurs and the number of grace days will be changed to the number of grace days for the next posting checkpoint. 
 
-If you don't specify the number of grace days,  the credit rules will be checked at the first posting step that is set to execute credit management rules. All subsequent checks will be ignored. 
+If you don't specify the number of grace days,  the credit rules will be checked at every posting step that is set to execute credit management rules.  
 
-You can't specify grace days for some posting checkpoints and without any grace days for other checkpoints. You must set up all posting checkpoints with grace days or set up none of them with grace days.
+You can't specify grace days for some posting checkpoints and not for other checkpoints. You must set up all posting checkpoints with grace days or set up none of them with grace days.
 
-1. Select the check box in the **Posting column** to execute the credit management rules when the posting checkpoint shown on the line is executed. If you don't select the check box, the rules will only be checked once during the entire posting process.
-2. If you selected the **Posting column** check box, add **Grace days** to identified how many days will pass before the blocking rules will be checked again. You can't add grace days when the box is not checked.
+1. Select the check box in the **Posting column** to execute the credit management rules when the posting checkpoint shown on the line is executed. If you don't select the check box, the rules will not be checked for that posting process.
+2. If you selected the **Posting column** check box, add **Grace days** to identified how many days will pass before the blocking rules will be checked again. You can't add grace days unless the box is checked.
 3. Select the check box in the **Pro forma column** to execute the credit management rules when the proforma posting checkpoint shown on the line is executed. In most cases, the posting box is set to **No** on the dialog that shows when a sales order is posted.
-4. If you checked the **Posting column** box, add **Grace days** to identified how many days will pass before the blocking rules will be checked again. You can't add grace days when the box is not checked.
+4. If you checked the **Pro forma column** box, add **Grace days** to identified how many days will pass before the blocking rules will be checked again. You can't add grace days unless the box is checked.
 
 #### Credit management statistics
 
@@ -96,7 +96,7 @@ You must set up the following number sequences for credit management:
 
 ### Credit management workflow
 
-Select **Credit and collections > Setup > Credit management workflows** to define the workflows that are used to manage credit limit adjustments. You can create a workflow that allows you to approve all of the credit limits adjustments in a journal with a single approval. You can also add workflow at the line level that allow you to approve each credit limit adjustment. 
+Select **Credit and collections > Setup > Credit management workflows** to define the workflows that are used to manage credit limit adjustments. You can create a workflow that allows you to approve all of the credit limits adjustments with a single approval. You can also add workflow at the line level that allow you to approve each credit limit adjustment line. 
 
 ### Blocking rules
 
@@ -121,20 +121,22 @@ There are several types of reasons used in credit management:
 
 ### Credit management groups
  
-Credit management groups are used to identify a customer or group of customers that have the same credit management properties. For example, the credit management group can be used to determine the blocking and exclusion credit management rules for the customer.  
+Credit management groups are used to identify a customer or group of customers that share a credit limit as a group. The group can contain customers from any and all legal entities. However, a customer can only belong to one group. 
 
-You can create the groups on the **Credit management > Setup> Groups setup> Credit management groups** page. 
+You can create the groups on the **Credit management > Customers> Credit management groups** page. 
 
 1. Click **New** to create a new line
 2. Enter a **Group ID**, using up to 10 characters, and enter a **Group name** using up to 60 characters in the description field.
+3. Enter a **credit limit** for the group
+4. Enter the **currency** for the credit limit.
 
-The credit management group is assigned to a customer on the **Account receivable > Customers > All customers > Credit and collections** fast tab. 
+You can click on **Add customers** to add one or more customers to the group. A slider will appear when you can specify the company from which you want to choose a customer and you can select a customer ID. The selected customer is shown in a grid along with all customers that are related parties through the global address book. You can pick one or more customers from the grid and add them to the list of customers included in the customer credit group.
 
 ### Account statuses
 
 You can create an **Account status** to identify the credit standing of a customer account. You can define the status and its effect on the invoicing and delivery on hold processes.  Account statuses can also be used to determine blocking rules for a customer.  
 
-You can create **Account statuses** from the **Credit management > Setup> Groups setup> Account statuses** page.
+You can create **Account statuses** from the **Credit management > Setup> Credit management> Account statuses** page.
 
 1. Add an account status and a description for the status that represents the credit standing for a customer. For example, use **Normal** to represent a customer is in good standing and open orders are to go through standard credit management processing.
 2. In the **Invoicing and Delivery on Hold**, select the type of hold that will occur for customers with this status. You can hold all processing, hold only invoice processing, or do no hold processing when executing the credit limit rules. 
@@ -143,7 +145,7 @@ You can create **Account statuses** from the **Credit management > Setup> Groups
 
 You can set up scoring groups to define risk factors and the criteria for how these risk factors can be measured. When information about a customer is applied to a scoring group, a score is calculated for each risk factor and used to place the customer in a risk group. The risk group can be used for identifying credit worthiness and for calculating automatic credit limits.
 
-You can create scoring groups on the **Credit management > Setup > Risk setup > Scoring groups** page.
+You can create scoring groups on the **Credit management > Setup > Credit management> Risk > Scoring groups** page.
 
 1. Create a **Scoring group** name for the group.
 2. Create a **Description** to further describe the scoring group.
@@ -163,9 +165,9 @@ For **User defined** score types, add lines to define the user defined values an
 
 ### Risk Assessments
 
-You can define **Risk assessments** that can be assigned to customers based on their risk scores. A risk score is calculated by comparing customer information to each of the scoring groups. The scores are summed together and the total score is compared to the values in the risk group setup to identify the risk group the customer belongs to. The risk group score is then used to define credit management blocking and exclusion rules for the customer.
+You can define **Risk assessments** that can be assigned to customers based on their risk scores. A risk score is calculated by comparing customer information to each of the scoring groups. The scores are summed together and the total score is compared to the values in the risk group setup to identify the risk group the customer belongs to. The risk group is then used to define credit management blocking and exclusion rules for the customer.
 
-You can set up risk groups on the **Credit management > Setup > Risk setup > Risk assessments** page.
+You can set up risk groups on the **Credit management > Setup > Credit management> Risk > Risk assessments** page.
 
 1. Enter a **Risk group** identifier. 
 2. Enter a risk group **Description** to further explain the group.
