@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Posting definition examples
+# Posting definitions
 
 [!include [banner](../includes/banner.md)]
 
