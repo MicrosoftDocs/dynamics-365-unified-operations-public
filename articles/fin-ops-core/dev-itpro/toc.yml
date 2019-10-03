@@ -1,8 +1,8 @@
-- name: Development and administration for Finance and Operations
+- name: Development and administration for Finance and Operations apps
   items:
-  - name: Development and administration for Finance and Operations
+  - name: Development and administration for Finance and Operations apps
     items:
-    - name: Development and administration for Finance and Operations
+    - name: Development and administration for Finance and Operations apps
       href: index.md
     - name: What's new or changed
       items:
