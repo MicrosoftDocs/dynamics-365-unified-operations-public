@@ -5,7 +5,7 @@ title: Welcome to Dynamics 365 Talent
 description: Talent streamlines many routine recordkeeping tasks and automates a number of processes related to staffing your organization. These processes include employee retention, benefits administration, training, performance reviews, and change management.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/04/2018
+ms.date: 10/03/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
