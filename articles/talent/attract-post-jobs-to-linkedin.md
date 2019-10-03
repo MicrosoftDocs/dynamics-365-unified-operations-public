@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Post jobs to LinkedIn
+# Post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract
 
 [!include [banner](../includes/banner.md)]
 
