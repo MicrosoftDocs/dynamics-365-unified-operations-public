@@ -5,7 +5,7 @@ title: System administration home page
 description: This topic lists resources that are available for system administrators.
 author: sericks007
 manager: AnnBe
-ms.date: 05/03/2019
+ms.date: 10/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
