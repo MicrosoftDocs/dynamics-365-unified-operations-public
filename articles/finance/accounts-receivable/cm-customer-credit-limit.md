@@ -244,9 +244,9 @@ Open the **Aged balances** menu to view the details of the aging balance for all
 
 ## Create Insurance Policies and Guarantees
 
-You can create one or more insurance policies and guarantees for each customer and use them to calculate the exposure that your company has when offering credit to a customer. Insurance policies and guarantees can also be used in calculating the credit limit for a customer.
+You can create one or more insurance policies and guarantees for each customer and use them to calculate the exposure that your company has when offering credit to a customer. Insurance policies and guarantees can also be included in the credit limit for a customer.
 
-You can create insurance policies and guarantees on the **Accounts receivable > Customers > All customers** page. Select the **Credit management action pane** and select **Insurance and guarantees**.
+You can create insurance policies and guarantees on the **Accounts receivable > Customers > All customers** page. Select a customer, select the **Credit management** action pane and select **Insurance and guarantees**.
 
 [!Note] In the following procedure, you'll select an insurer/guarantor from the global address book. If the insurers and guarantors haven't been added to the address book, they must be added before beginning this procedure.
 
@@ -277,19 +277,19 @@ For Example:
 
 ## Credit Limit Adjustments	
 
-### Credit Limit Adjustment Journal
+### Credit Limit Adjustments
 
-The **Credit limit adjustment journal** allows credit managers to update the credit limits and expiration dates of a single customer, group of customers, or all customers using a journal process. You can add credit limit adjustment journal entries to update customers and customer credit groups or use it to calculate automatic credit limits. The journal entries can then be reviewed, sent for approval through workflow, and posted to the customer accounts. 
+**Credit limit adjustments** allow credit managers to update the credit limits and expiration dates of a single customer, group of customers, or all customers using a submission process. You can add credit limit adjustment entries to update customers and customer credit groups or use it to calculate automatic credit limits. The entries can then be reviewed, sent for approval through workflow, and posted to the customer accounts. 
 
-You can create entries in the **Credit limit adjustment journal** on the **Credit management > Journal entries > Credit limit adjustment journal** page.
+You can create **Credit limit adjustments** entires on the **Credit management > Credit limit adjustments > Credit limit adjustments** page.
 
-1. When you select **New**, a new journal is created with a **Credit limit adjustment journal number**
+1. When you select **New**, a new adjustment batch is created with a **Credit limit adjustment number**
 2. Select the **Credit limit adjustment type**. You can select **Credit limit** to adjust the customer credit limit. You can select **Temporary credit limit** to create temporary credit limits instead of changing the existing credit limits. Temporary credit limits override a customer's credit limit for a defined period of time, after which the customer's credit limit is used again. 
 2. Enter a journal **Description**
 4. The **Posted** check box indicates that the credit limits have been applied.
 5. The **Approval status** indicates the workflow status of the journal.
 
-Selecting  **Lines**, lets you enter credit limit changes manually onto the journal lines. You can also use the **Generate** menu to create the credit limit changes automatically. 
+Selecting  **Lines**, lets you enter credit limit changes manually onto the adjustment page. You can also use the **Generate** menu to create the credit limit changes automatically. 
 
 To enter credit limit changes manually, add the following information to the journal lines:
 1. Select the **Customer adjustments** menu to create an adjustment for a customer. Select **Customer credit group adjustments** to add a credit limit for a customer credit group.
@@ -320,21 +320,19 @@ You can also generate credit limits automatically using the **Generate** menu in
 
 #### From existing customers
 
-You can create journal lines to adjust credit limits for existing customers. When you select **Generate > From existing - customer**, a dialog is presented that you can use to provide criteria for selecting customers and calculating the new limits:
+You can create journal lines to adjust credit limits for existing customers. When you select **Generate > From existing customers**, a dialog is presented that you can use to provide criteria for selecting customers and calculating the new limits:
 
-1. Select **Yes** to **Include customer credit limits** to generate a new credit limit using the current customer credit limit field found in the customer credit limit field.
-2. Select **Yes** to **Include advanced credit limits** to generate a new credit limit using the advanced credit limits.
-3. Enter an **Adjustment value** to add or subtract an amount from the credit limit. Enter a negative value to adjust the credit limit down or a positive to adjust it up. The **Value type** controls how the value will be used to calculate the new credit limit.
-4. Select a **Value type** that will control how the value is used in the credit limit calculation. Select **Fixed value**, to change the credit limit by an amount,  or **Percentage** to change it by a percentage.
-5. Enter a **Round off** value to round off the calculated credit limit.  For example, 10.00 will round the credit limit to the nearest 10.00.
-6. Select the **Rounding form** to determine if the rounded remainder is rounded up or down.
-7. Select the method for adjusting dates. If you select **Absolute**, you can enter a **New from date** and **New to date** to define the date range for the credit limits. If you select **Relative**, you can enter a **From date offset** and a **To date offset** that will adjust the current from and to date ranges for the credit limits by the offset.
+1. Enter an **Adjustment value** to add or subtract an amount from the credit limit. Enter a negative value to adjust the credit limit down or a positive to adjust it up. The **Value type** controls how the value will be used to calculate the new credit limit.
+2. Select a **Value type** that will control how the value is used in the credit limit calculation. Select **Fixed value**, to change the credit limit by an amount,  or **Percentage** to change it by a percentage.
+3. Enter a **Round off** value to round off the calculated credit limit.  For example, 10.00 will round the credit limit to the nearest 10.00.
+4. Select the **Rounding form** to determine if the rounded remainder is rounded up or down.
+5. Select the method for adjusting dates. If you select **Absolute**, you can enter a **New from date** and **New to date** to define the date range for the credit limits. If you select **Relative**, you can enter a **From date offset** and a **To date offset** that will adjust the current from and to date ranges for the credit limits by the offset.
 
-Click **OK** to create the credit limit adjustment journal entries.
+Click **OK** to create the credit limit adjustment entries.
 
-#### From existing linked customers
+#### From existing customer credit groups
 
-You can create journal lines from existing customers. When you select **Generate > From existing - linked customers**, a dialog is presented that you can use to provide criteria for selecting linked customers and calculating the new limits. The criteria is the same as shown above for **From existing - customers**.
+You can create adjustment entries from existing customers. When you select **Generate > From existing customer credit groups**, a dialog is presented that you can use to provide criteria for selecting linked customers and calculating the new limits. The criteria is the same as shown above for **From existing customers**.
 
 Click **OK** to create the credit limit adjustment journal entries.
 
@@ -342,7 +340,7 @@ Click **OK** to create the credit limit adjustment journal entries.
 You can create **Automatic credit limits** to define and update customer credit limits. The automatic credit limits are created for a risk group and are based on specific values used in the scoring groups. You can use these automatic credit limits to generate credit limits in the credit limit adjustment journals. If a customer has been assigned a specific risk group and the customer's credit information matches the criteria for an automatic credit limit, then a line in the credit limit adjustment journal is created.
 
 #### Defining automatic credit limit criteria
-You can create **Automatic credit limits** criteria on the **Credit management > Setup > Risk setup > Automatic credit limits** page.
+You can create **Automatic credit limits** criteria on the **Credit management > Setup > Credit management > Risk > Automatic credit limits** page.
 
 1. Select a **Risk group** to which the automatic credit limit is assigned.
 2. Select the **Currency** for the automatic credit limit. You can create multiple automatic credits limits for the same risk group for credit limits in different currencies.
@@ -359,24 +357,25 @@ For example, you can create an automatic credit limit for the Low scoring group.
 
 #### Creating automatic credit limits 
 
-You create automatic credit limits using **Credit limit adjustments**. When you select **Generate > Automatic limits**, a dialog is presented that you can use to provide a **New expiry date** for the new credit limits that will be created based on the risk groups that customers have. Click **OK** to create the credit limit adjustment lines.
+You create automatic credit limits using **Credit limit adjustments**. When you select **Generate > Automatic credit limits**, a dialog is presented that you can use to provide a **New expiry date** for the new credit limits that will be created based on the risk groups that customers have. If you are creating temporary credit limits, provide a **Start date**. Click **OK** to create the credit limit adjustment lines.
 
 ### Posting adjustments 
 
-Once you have created credit limit adjustment lines, you can use the **Post** button in the action pane to post the journal lines and update the customer credit limits. However, if you have set up workflow for the journal, you will need to use the **Workflow > Submit** button on the action pane to submit the journal for approval.
+Once you have created credit limit adjustment lines, you can use the **Post** button in the action pane to post the lines and update the customer credit limits. However, if you have set up workflow for the journal, you will need to use the **Workflow > Submit** button on the action pane to submit the journal for approval.
 
 #### Credit Limit Adjustment Journal Workflow
-The **Credit limit adjustment journal workflow** can be used to send credit limit adjustment journals through a workflow approval. There are two workflows that you can create on the **Credit management > Setup >Credit management worfklow** page.: 
-1. The **Credit limit adjustment journal workflow** can be used to approve journals at the header level.
-2. The **Credit limit adjustment journal line workflow** can be use to approve the journal lines so that the journal lines can be approved by different people based on the criteria in the workflow.
 
-[!NOTE] When creating the Credit limit adjustment journal workflow, you can set up the workflow to Post the adjustment journal once the lines are approved.  Include the Post Journal automatic task in the workflow to automatically post the journal.
+The **Credit limit adjustment journal workflow** can be used to send credit limit adjustments through a workflow approval. There are two workflows that you can create on the **Credit management > Setup > Credit management worfklow** page.: 
+1. The **Credit limit adjustment workflow** can be used to approve journals at the header level.
+2. The **Credit limit adjustment line workflow** can be use to approve the adjustment lines so that the lines can be approved by different people based on the criteria in the workflow.
+
+[!NOTE] When creating the Credit limit adjustment workflow, you can set up the workflow to Post the adjustment journal once the lines are approved.  Include the Post Journal automatic task in the workflow to automatically post all of the adjustments.
 
 ## Periodic tasks	
 
 ### Update risk scores
 
-As you process invoices, the risk for a customer can change. You must periodically review the criteria for each risk score and update the scores for each customer. You can use **Credit and collections > Periodic tasks > Update risk scores** to update the following scores:
+As you process invoices, the risk for a customer can change. You must periodically review the criteria for each risk score and update the scores for each customer. You can use **Credit and collections > Periodic tasks > Credit management > Update risk scores** to update the following scores:
 
 #### Payment days
   
@@ -392,7 +391,7 @@ Customer since is one of the scoring group criteria that must be calculated peri
 
 ### Update Customer Balance Statistics
 
-You can run the **Update customer balance statistics** process to update the balance statistics calculation that viewed on the **Balance statistics inquiry** page. You can run the process and set up a periodic batch job on the **Credit management > Periodic tasks > Calculate balance statistics** page.
+You can run the **Update customer balance statistics** process to update the balance statistics calculation that viewed on the **Balance statistics inquiry** page. You can run the process and set up a periodic batch job on the **Credit management > Periodic tasks > Credit management > Calculate balance statistics** page.
 
 
 ## See also
