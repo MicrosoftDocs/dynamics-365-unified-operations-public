@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
-# Calculate depreciation (Russia)
+# Calculate depreciation for Russia
 
 [!include [banner](../includes/banner.md)]
 
