@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail

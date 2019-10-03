@@ -54,7 +54,7 @@ On the **Posted statements** page, on the Action Pane, you can do the following:
 
 You must complete the following setup procedure before you use cash management in Retail:
 
-- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods in Retail, see [Payment methods](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods, see [Payment methods](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
 - Set up retail parameters for cash operations.
 - Set up a payment method for cash payments in a retail store.
 

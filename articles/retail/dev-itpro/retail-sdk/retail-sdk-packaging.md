@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create retail deployable packages
-description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 for Finance and Operations.
+description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
 author: mugunthanm
 manager: AnnBe
 ms.date: 03/25/2019
@@ -52,7 +52,7 @@ This topic explains how to create a Retail deployable package (which is a packag
 A retail deployable package is one combined package that contains all your customizations together with all the metadata that is required for deployment. You can use this retail deployable package to deploy your customizations to various environments. You can do the deployment by using the automated flow in LCS, or you can do it manually by using the scripts that are provided inside the package. This topic guides you through the process of generating the retail deployable package.
 
 > [!IMPORTANT]
-> All customizations for the Retail components are packaged as a single retail deployable package. Finance and Operations doesn't support separate packages for individual Retail components, such as Modern POS, Cloud POS, Retail Store Scale Unit, CRT, and Retail Server. You must package all extensions as a single retail deployable package, even if you must merge or combine extensions from independent software vendors (ISVs) or various partners.
+> All customizations for the Retail components are packaged as a single retail deployable package. Separate packages for individual Retail components, such as Modern POS, Cloud POS, Retail Store Scale Unit, CRT, and Retail Server are not supported. You must package all extensions as a single retail deployable package, even if you must merge or combine extensions from independent software vendors (ISVs) or various partners.
 >
 > If your customizations were built and packaged as individual Retail component packages by using a version of the Retail software development kit (SDK) that is older than application version 7.1.1541.3036, the packages are no longer supported for deployment in LCS. You must uptake the hotfix in [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download), and then rebuild and repackage your customizations.
 

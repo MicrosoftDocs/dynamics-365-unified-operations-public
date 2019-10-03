@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Update onboarding guides in Dynamics 365 for Talent - Onboard
-description: This topic explains how to update onboarding guides in Microsoft Dynamics 365 for Talent - Onboard, and how to push changes to existing guides.
+title: Update onboarding guides in Dynamics 365 Talent - Onboard
+description: This topic explains how to update onboarding guides in Microsoft Dynamics 365 Talent - Onboard, and how to push changes to existing guides.
 author: andreabichsel
 manager:
 ms.date: 06/21/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
 ---
 
-# Update onboarding guides in Dynamics 365 for Talent: Onboard
+# Update onboarding guides
 
 [!include [banner](includes/banner.md)]
 
-If you must make changes to onboarding guides in Microsoft Dynamics 365 for Talent: Onboard, you can update them and push the changes, even if you've already sent the guides. You have two options for updating an onboarding guide:
+If you must make changes to onboarding guides in Microsoft Dynamics 365 Talent: Onboard, you can update them and push the changes, even if you've already sent the guides. You have two options for updating an onboarding guide:
 
 - Edit the onboarding guide directly, and save your changes.
 - Edit the onboarding template, and then push the changes to all the onboarding guides that were created from it.

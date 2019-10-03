@@ -57,11 +57,9 @@ Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see
 ### Inventory accounting 
 To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
 
-### Manufacturing and supply chain management blogs
+### Manufacturing and Supply Chain Management blogs
 You can find opinions, news, and other information about Inventory management and other solutions on the
 [Dynamics AX Manufacturing R&D Team Blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the **Help** button on any page.
-
-
+Additional help is available as task guides. To access task guides, click the **Help** button on any page

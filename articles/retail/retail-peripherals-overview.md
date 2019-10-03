@@ -120,9 +120,9 @@ Payment device support is implemented through the payment connector. Payment dev
 
 ### OPOS
 
-To help guarantee that the largest range of devices can be used with Microsoft Dynamics 365 for Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported in Microsoft Dynamics 365 for Retail. The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices. OPOS is a widely adopted implementation of the OLE for POS standard. It was developed in the mid-1990s and has been updated several times since then. OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems. OPOS controls handle communication between compatible hardware and the POS software. An OPOS control consists of two parts:
+To help guarantee that the largest range of devices can be used with Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported. The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices. OPOS is a widely adopted implementation of the OLE for POS standard. It was developed in the mid-1990s and has been updated several times since then. OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems. OPOS controls handle communication between compatible hardware and the POS software. An OPOS control consists of two parts:
 
-- **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Microsoft Dynamics 365 for Retail. Therefore, the testing helps guarantee that, if Microsoft Dynamics 365 for Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS. You don't have to explicitly test each device type.
+- **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Retail. Therefore, the testing helps guarantee that, if Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS. You don't have to explicitly test each device type.
 - **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
 [![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -130,7 +130,7 @@ To help guarantee that the largest range of devices can be used with Microsoft D
 Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.
 
 > [!NOTE]
-> OPOS support doesn't guarantee support for all devices that have OPOS drivers. Microsoft Dynamics 365 for Retail must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
+> OPOS support doesn't guarantee support for all devices that have OPOS drivers. Retail must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
 
 ### Windows
 
@@ -140,7 +140,7 @@ Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster 
 - Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the slip printer might not word as you expect.
 - OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.
 
-If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Microsoft Dynamics 365 for Retail.
+If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Retail.
 
 ### Universal Windows Platform
 
@@ -196,7 +196,7 @@ You can specify IP addresses for network peripherals in two places. If the Moder
 
 #### Modern POS for Android
 
-As of Dynamics 365 for Retail version 8.1.3, the Modern POS for Android application includes a built-in IPC hardware station. This hardware station supports communicating with network printers and payment connectors. For more information, visit the [Hybrid app for Android docs article](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+As of Retail version 8.1.3, the Modern POS for Android application includes a built-in IPC hardware station. This hardware station supports communicating with network printers and payment connectors. For more information, visit the [Hybrid app for Android docs article](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### Cloud POS and Modern POS for iOS
 
@@ -530,7 +530,7 @@ Network peripherals can be supported directly through the hardware station that 
 For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> For Microsoft Dynamics 365 for Retail version 1611, the hardware station profile is no longer used. Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.
+> For Retail version 1611, the hardware station profile is no longer used. Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.
 
 ### Modern POS for Windows with an IPC (built-in) hardware station
 

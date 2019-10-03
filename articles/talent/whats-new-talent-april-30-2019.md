@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (April 30, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (April 30, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/30/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (April 30, 2019)
+# What's new or changed in Dynamics 365 Talent (April 30, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -104,4 +104,4 @@ The ability to track employee time off and understand how time off is calculated
 
 ### Email support for alerts
 
-In platform update 26, users can create alert rules that automatically send email notifications to contacts when notifications are triggered by an event.
+In platform update 26 for Finance and Operations, users can create alert rules that automatically send email notifications to contacts when notifications are triggered by an event.

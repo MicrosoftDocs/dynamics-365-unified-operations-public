@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Post jobs to LinkedIn from Microsoft Dynamics 365 for Talent - Attract
-description: This topic explains how to use Dynamics 365 for Talent - Attract to post jobs to LinkedIn.
+title: Post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract
+description: This topic explains how to use Dynamics 365 Talent - Attract to post jobs to LinkedIn.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn is the largest online professional network, giving you access to the world's top talent. Microsoft Dynamics 365 for Talent: Attract helps you get the talent that you need by letting you post your jobs directly from Attract to LinkedIn.
+LinkedIn is the largest online professional network, giving you access to the world's top talent. Microsoft Dynamics 365 Talent: Attract helps you get the talent that you need by letting you post your jobs directly from Attract to LinkedIn.
 
 Attract lets you post Limited Listings to LinkedIn at no extra cost. These listings are available only through LinkedIn software partners such as Attract. They don't appear in the **Careers** panel on your company's LinkedIn page, because only paid listings appear there. However, they are shown when potential candidates view all available jobs. Limited Listings are also shown in LinkedIn job searches.
 

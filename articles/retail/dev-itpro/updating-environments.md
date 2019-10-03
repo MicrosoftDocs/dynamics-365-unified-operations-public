@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update code and environments for Retail projects
-description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 for Retail implementation projects.
+description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Retail implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -43,7 +43,7 @@ Other updates are code updates. The environment page in Microsoft Dynamics Lifec
 
 ![LCS environment page](./media/17-LCS-environment-page.png)
 
-Platform code is at a very low level, and no Microsoft Dynamics 365 for Retail features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
+Platform code is at a very low level, and no Microsoft Dynamics 365 Retail features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
 Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together as a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
 
@@ -75,7 +75,7 @@ After you've restored the database, follow these steps.
 2. Make sure that the batch service is running.
 3. Run the Environment reprovisioning tool. (Find the latest version in the global Shared asset library in LCS, and then deploy it by using the **Maintain** function.)
 4. Verify that the tool succeeded, the Retail channel profile is up to date with the correct URLs, and the data synchronization jobs for the Default data group succeeded.
-5. In Microsoft Dynamics 365 for Finance and Operations, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
+5. In Microsoft Dynamics 365 Retail, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
 
 ## Taking updates frequently
 
@@ -95,7 +95,7 @@ Just as the branching strategy is dictated by project, team, or other constraint
 
 ### Steps 1–3: Obtain and apply updates
 
-For full details about steps 1 through 3 (taking updates), see [Dynamics 365 for Finance and Operations hotfix and deployment cheat sheet (including Retail)](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/). If the branches are set up in the same manner that is shown in the preceding illustration, you should do this work in the Dev branch.
+For full details about steps 1 through 3 (taking updates), see the [hotfix and deployment cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/). If the branches are set up in the same manner that is shown in the preceding illustration, you should do this work in the Dev branch.
 
 ### Steps 3.1–3.2: Keep development environments up to date
 
@@ -147,7 +147,7 @@ Immediately after deployment to production, and before any new feature work is a
 
 You should always deploy binary updates and platform updates by using LCS package deployment.
 
-Finance and Operations and Retail customization packages should not be deployed to a build environment.
+Finance and Retail customization packages should not be deployed to a build environment.
 
 ![Environment change history build](./media/1-7-environment-change-history-build.png)
 
@@ -183,7 +183,7 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
     - After deployment, does LCS show the expected deployment history together with the correct package names?
     - After deployment, do the LCS environment page and Finance and Operations show the correct and expected version numbers?
-    - Can Retail Modern Point of Sale (MPOS) offline mode be used during downtime of Operations and Finances? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
+    - Can Retail Modern Point of Sale (MPOS) offline mode be used during downtime of Retail? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
     - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
     - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
     - The "Initialize Retail scheduler" job should be run.

@@ -74,7 +74,7 @@ You can create a skill profile analysis to view a list of the competencies of a 
 Additional resources
 --------
 
-[Human resources](index.md)
+[Human resources](index.yml)
 
 
 

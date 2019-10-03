@@ -53,7 +53,7 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 ## Generate the Typescript proxy
 
 > [!IMPORTANT]
-> The following procedure applies only to Microsoft Dynamics 365 for Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
+> The following procedure applies only to Microsoft Dynamics 365 Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
 
 You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folder to generate the Typescript proxy for the POS.
 

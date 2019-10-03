@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Supply chain management home page
-description: This page provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations.   
-author: ShylaThompson
+title: Help resources for Supply Chain Management
+description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Supply chain management home page
+# Help resources for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the supply chain management features in Microsoft Dynamics 365 for Finance and Operations. 
+This topic provides a list of the help topics and other resources in Dynamics 365 Supply Chain Management. 
 
 ## What's new and in development
 Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to see what new features are released and what new features are in development. 
@@ -43,6 +43,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
+- [Asset management](asset-management/index.md)
 - [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
@@ -54,6 +55,10 @@ Select a feature area to learn more about it.
 - [Service management](service-management/service-management-home-page.md)
 - [Transportation management](transportation/transportation-management-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
+
+## Dynamics 365 Finance
+
+For information on Dynamics 365 Finance, go to the [Dynamics 365 Finance help resources](../finance/index.md) page.
 
 ## Videos
 
@@ -118,6 +123,6 @@ There are many topics about manufacturing and supply chain management on the <a 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## eLearning courses
-For information about Microsoft Dynamics 365 for Finance and Operations training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 
+For information about Dynamics 365 training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 
 
 

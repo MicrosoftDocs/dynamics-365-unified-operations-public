@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-When working with inventory in Dynamics 365 for Retail and using the POS application, it is important to note that POS provides limited support for inventory dimensions and certain inventory item types.
+When working with inventory in Dynamics 365 Retail and using the POS application, it is important to note that POS provides limited support for inventory dimensions and certain inventory item types.
 
 The POS solution does not support the following item configurations:
 
@@ -61,7 +61,7 @@ The POS solution provides limited support for the following dimensions. Limited 
 
 ## Purchase orders
 
-Purchase orders are created at the head office. If a retail warehouse is included in the purchase order header, the order can be received at the store by using Modern POS (MPOS) or Cloud POS in Microsoft Dynamics 365 for Retail through the **Picking/Receiving** operation. After the quantities that are received at the store are entered in the **Receive Now** field in POS for the purchase order document, they can be saved locally or committed. Saving this data locally has no effect on in-stock inventory. Saving should be done only if the user is not ready to post the receipt to HQ and just needs a way to temporarily store the previously entered **Receive Now** data. This saves the receive now data locally to the user's channel database. After the document is processed using the **Commit** option, the **Receive Now** data is sent to HQ and the purchase order receipt will be posted. 
+Purchase orders are created at the head office. If a retail warehouse is included in the purchase order header, the order can be received at the store by using Modern POS (MPOS) or Cloud POS through the **Picking/Receiving** operation. After the quantities that are received at the store are entered in the **Receive Now** field in POS for the purchase order document, they can be saved locally or committed. Saving this data locally has no effect on in-stock inventory. Saving should be done only if the user is not ready to post the receipt to HQ and just needs a way to temporarily store the previously entered **Receive Now** data. This saves the receive now data locally to the user's channel database. After the document is processed using the **Commit** option, the **Receive Now** data is sent to HQ and the purchase order receipt will be posted. 
 
 ## Transfer orders
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure walks through creating a new product in the retail product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
+This procedure walks through creating a new product in the Retail product hierarchy. The demo data company used to create this task is USRT, and this task is intended for the Merchandising Manager and Product Designer.
 
 1. Go to Retail and commerce > .. > Products by category.
 2. Click New.

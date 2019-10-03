@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Close a job in Microsoft Dynamics for Talent 0 Attract
-description: This topic explains how to close a job in Microsoft Dynamics 365 for Talent - Attract.
+title: Close a job in Microsoft Dynamics Talent - Attract
+description: This topic explains how to close a job in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/10/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent 2019 Wave 1 update
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Talent: Attract, you can close a job as either **Job cancelled** or **Position filled**. You can cancel a job at any time.
+In Microsoft Dynamics 365 Talent: Attract, you can close a job as either **Job cancelled** or **Position filled**. You can cancel a job at any time.
 
 If you want to indicate that the position was filled, a candidate must have accepted an offer for the job.
 

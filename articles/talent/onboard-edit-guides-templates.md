@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Edit onboarding guides and templates in Dynamics 365 for Talent - Onboard
-description: This topic explains how to add activities and other information to onboarding guides and templates in Microsoft Dynamics 365 for Talent - Onboard.
+title: Edit onboarding guides and templates in Dynamics 365 Talent - Onboard
+description: This topic explains how to add activities and other information to onboarding guides and templates in Microsoft Dynamics 365 Talent - Onboard.
 author: andreabichsel
 manager:
 ms.date: 06/19/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
 ---
 
-# Edit onboarding guides and templates in Dynamics 365 for Talent: Onboard
+# Edit onboarding guides and templates
 
 [!include [banner](includes/banner.md)]
 
-After you create an onboarding guide or template in Microsoft Dynamics 365 for Talent: Onboard, you must add an introduction, activities, contacts, and resources. Onboard lets you include rich content in your onboarding guides, including:
+After you create an onboarding guide or template in Microsoft Dynamics 365 Talent: Onboard, you must add an introduction, activities, contacts, and resources. Onboard lets you include rich content in your onboarding guides, including:
 
 - YouTube videos
 - Microsoft Sway presentations
