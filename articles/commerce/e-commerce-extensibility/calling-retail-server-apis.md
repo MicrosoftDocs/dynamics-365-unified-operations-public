@@ -36,11 +36,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes how to set call Microsoft 365 Dynamics Retail Server APIs from a data action.
 
 ## Overview
-tbd
-
-# Retail Server Proxy
-
-The Retail Server Proxy (also known as the TypeScriptProxy or TSProxy), is a library provided by the Dynamics 365 Retail Server to allow for streamlined communication with Retail Server from JavaScript or TypeScript based environments.
+To call Retail Server APIs, we'll leverage the Retail Server Proxy library (also known as the TypeScriptProxy or TSProxy), provided by the Dynamics 365 Retail Server to allow for streamlined communication with Retail Server from JavaScript or TypeScript based environments.
 
 ## Getting Started With the Retail Server Proxy
 
@@ -104,7 +100,7 @@ We will cover a few common Retail Server Proxy usage scenarios below in more dep
 
 ### Creating a Page-Load Retail Server Proxy Data Action
 
-When you want to attach a Retail Server Proxy API call to a module so it will run on page load, you need to create a new Data Action, very similar in practice to just creating a standard [Page-load Data Action](./page-load-data-actions). For this example, we will create a module which will use the Retail Server Proxy to get all the categories available for the configured channel on page load. To start we need to identify the correct Retail Server Proxy API we want to use, which in this case happens to be the `GetCategories` API provided by the CategoriesDataActions manager. Now that we know the API we need to use, we need to construct a data action so that it can be used within a module definition. To do so we generally need to do two things:
+When you want to attach a Retail Server Proxy API call to a module so it will run on page load, you need to create a new Data Action, very similar in practice to just creating a standard [Page-load Data Action](./page-load-data-actions). For this example, we will create a module which will use the Retail Server Proxy to get all the categories available for the configured channel on page load. To start we need to identify the correct Retail Server Proxy API we want to use, which in this case happens to be the `GetCategories` API provided by the CategoriesDataActions manager. Now that we know the API we need to use, we can construct a [data action](./data-actions) so that it can be used within a module definition. To do so we generally need to do two things:
 
 1. Provide a createInput method which calls the Retail Server Proxy provided createInput method for our desired API, and passing along any contextual data we want to the API (such as ChannelId).
 
