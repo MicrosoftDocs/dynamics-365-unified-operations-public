@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mobile bar code support
+title: Mobile barcode support
 description: This topic describes how to handle the Warehouse mobile scanning app on Android-compatible devices.
 author: Mirzaab
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Mobile bar code support
+# Mobile barcode support
 
 [!include [banner](../includes/banner.md)]
 
