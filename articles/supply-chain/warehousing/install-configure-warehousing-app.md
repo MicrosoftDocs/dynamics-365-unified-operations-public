@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Install and configure the warehousing app overview
-description: This topic describes how to install and configure Dynamics 365 Supply Chain Management - Warehousing app.
+title: Install and configure the Warehousing app overview
+description: This topic describes how to install and configure Dynamics 365 for Finance and Operations – Warehousing app.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Install and configure the warehousing app overview
+# Install and configure the Warehousing app overview
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ ms.dyn365.ops.version: Version 1611
 > This topic describes how to configure warehousing for cloud deployments. If you are looking for how to configure warehousing for on-premises deployments, please see [Warehousing for on-premises deployments](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-This topic describes how to install and configure Dynamics 365 Supply Chain Management - Warehousing app.
+This topic describes how to install and configure Dynamics 365 for Finance and Operations – Warehousing app.
 
 Warehousing app is available on Google Play Store and Windows Store. For the current version of Dynamics 365 Supply Chain Management, this app is provided as a standalone component, which means self-deployment on devices used for warehouse tasks. In order to use the app, you must download the app on each device and configure it to connect to your Supply Chain Management environment. This topic describes how to install the app on your devices. It also explains how to configure the app to connect to your Supply Chain Management environment.
 
