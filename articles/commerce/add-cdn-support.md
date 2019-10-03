@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add support for a content delivery network (CDN)
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 
@@ -42,7 +42,7 @@ When you set up an e-Commerce environment in Dynamics 365 Commerce, you can conf
 
 Your custom domain can be enabled during the provisioning process for your e-Commerce environment. Alternatively, you can use a service request to set it up after the provisioning process is completed. The provisioning process for the e-Commerce environment generates a host name that is associated with the environment. This host name has the following format, where *e-commerce-tenant-name* is the name of your environment:
 
-&lt;e-commerce-tenant-name&gt;.commerce.dynamics.com)
+&lt;e-commerce-tenant-name&gt;.commerce.dynamics.com
 
 The host name or endpoint that is generated during the provisioning process supports a Secure Sockets Layer (SSL) certificate only for \*.commerce.dynamics.com. It doesn't support SSL for custom domains. Therefore, you must terminate SSL for custom domains in your CDN and forward traffic from the CDN to the host name or endpoint that Commerce generated. 
 
@@ -50,7 +50,7 @@ Additionally, the *statics* (JavaScript or Cascading Style Sheets \[CSS\] files)
 
 ## Set up SSL
 
-To help guarantee that SSL is set up, and that statics are cached, you must configure your CDN so that it directs to the host name that Commerce generated for your environment. You must also cache the following pattern for statics only: 
+To help guarantee that SSL is set up, and that statics are cached, you must configure your CDN so that it is associated with the host name that Commerce generated for your environment. You must also cache the following pattern for statics only: 
 
 /\_msdyn365/\_scnr/\*
 
@@ -133,7 +133,7 @@ The following illustration shows the **CNAME configuration** dialog box in Comme
 ![CNAME Configuration dialog box](./media/CNAME_Configuration.png)
 
 > [!NOTE]
-> If the domain that you will use is already active and live, contact support for enabling this domain with Azure Front Door Service to set up a test.
+> If the domain that you will use is already active and live, contact support to enable this domain with Azure Front Door Service to set up a test.
 
 You can use Azure Front Door Service to manage the certificate, or you can use your own certificate for the custom domain.
 
