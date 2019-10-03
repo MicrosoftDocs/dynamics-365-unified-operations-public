@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax engine
+title: Tax engine overview
 description: This topic provides an overview of the Tax engine functionality in Microsoft Dynamics 365 Finance.
 author: yijialuan
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Tax engine
+# Tax engine overview
 
 [!include [banner](../includes/banner.md)]
 
