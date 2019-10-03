@@ -74,12 +74,7 @@ Although the processes for each type of upgrade are similar, they differ enough 
 - [Upgrade home page](../migration-upgrade/upgrade-home-page.md)
 
 ## Database management
-The following content will help you move a database to new environment and restore a database to a specific point in time:
-
-- [Copy a Finance and Operations database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md)
-- [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md)
-- [Restore a database on a non-production environment](../database/request-point-in-time-restore.md)
-- [Create a copy of a Finance and Operations database to restore later](../database/copy-operations-database.md)
+For information to help you move a database to new environment and restore a database to a specific point in time, see [Database movement operations home page](dbmovement-operations.md).
 
 ## Security
 Finance and Operation apps uses role-based security. Access is granted only to security roles, not to individual users. Users are assigned to roles. A user who is assigned to a security role has access to the set of privileges that is associated with that role. A user who isn't assigned to any role has no privileges.
