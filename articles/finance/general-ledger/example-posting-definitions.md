@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Posting definitions
+title: Posting definition examples
 description: This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Posting definitions
+# Posting definition examples
 
 [!include [banner](../includes/banner.md)]
 
