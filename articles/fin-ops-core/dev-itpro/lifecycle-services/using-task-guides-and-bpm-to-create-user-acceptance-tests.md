@@ -185,7 +185,7 @@ To learn more about using the Regression suite automation tool, see the followin
 For a hands-on lab experience, see the following topics:
 
 - [Set up and install Regression suite automation tool](../../fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Use Regression suite automation tool](../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md)
+- [Use Regression suite automation tool](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.
