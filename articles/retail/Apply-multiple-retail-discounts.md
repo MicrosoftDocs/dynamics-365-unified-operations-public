@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail discounts
+title: Apply multiple Retail discounts to a product
 description: This topic reviews all the factors considered when multiple discounts can be applied to a product. 
 author: shajain
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 ---
 
-# Retail discounts
+# Apply multiple Retail discounts to a product
 
 [!include [banner](includes/banner.md)]
 
