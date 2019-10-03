@@ -79,7 +79,7 @@ Any CDN service can be used, but for the example in this topic, Azure Front Door
 
 For information about how to set up Azure Front Door Service, see [Quickstart: Create a Front Door for a highly available global web application](https://docs.microsoft.com/azure/frontdoor/quickstart-create-front-door).
 
-### Configure a back-end pool
+### Configure a back-end pool in Azure Front Door Service
 
 To configure a back-end pool in Azure Front Door Service, follow these steps.
 
@@ -92,7 +92,7 @@ The following illustration shows the **Add a backend pool** dialog box in Azure 
 
 ![Add a backend pool dialog box](./media/CDN_BackendPool.png)
 
-### Set up rules
+### Set up rules in Azure Front Door Service
 
 To set up a routing rule in Azure Front Door Service, follow these steps.
 
