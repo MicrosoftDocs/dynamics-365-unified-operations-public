@@ -386,7 +386,7 @@ Change the **Gov-Test-Scenario** property in the new format for all the scenario
 
 ### Collect data for VAT return
 
-The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview).
 
 Before you start to prepare and submit a VAT return to HMRC, complete the regular **Settle and post sales tax** job for the period that you will report to HMRC. When this job is run, new sales tax payment transactions are created. Go to **Tax** \> **Inquires and reports** \> **Sales tax inquires** \> **Sales tax payments** to view the sales tax payments. You can review the resulting values for each sales tax payment transaction on the **VAT 100** report in SSRS or Excel format. For information about how to define the format that is used, see the [Set up General ledger parameters](#vat-statement-format-mapping) section of this topic. To generate a **VAT 100** report for selected sales tax payment transactions, select **Print report** on the Action Pane.
 
@@ -934,7 +934,7 @@ A new version of the application-specific parameters configuration example can b
 
 ### Support of fraud prevention headers – part 1 (KB 4504462)
 
-This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
+This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
 
 In the scope of this update, the following ER configurations are released:
 
