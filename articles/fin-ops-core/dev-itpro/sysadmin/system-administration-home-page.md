@@ -40,8 +40,8 @@ This topic points to content for system administrators of Finance and Operations
 In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to stay current.
 
 - [One Version service updates overview](../lifecycle-services/oneversion-overview.md)
-- [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md)
-- [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md)
+- [One Version service updates FAQ](../../fin-ops/get-started/one-version.md)
+- [Service update availability](../../fin-ops/get-started/public-preview-releases.md)
 - [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
 - [Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md)
 - [Pause service updates through Lifecycle Services (LCS)](../lifecycle-services/pause-service-updates.md)
@@ -52,7 +52,7 @@ Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provi
 
 The lifecycle of an implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
 
-The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [FastTrack for Dynamics program](../../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md) and through the partner's implementation approach. 
+The management of the implementation involves many different stakeholders from the customer and partner organizations and, especially in the cloud-hosted deployment model, from Microsoft. The implementation is supported through tools provided on LCS and through processes defined within the [FastTrack for Dynamics program](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md) and through the partner's implementation approach. 
 
 - [Lifecycle Services for Finance and Operations](../lifecycle-services/lcs.md)
 - [Dynamics Lifecycle Services user guide](../lifecycle-services/lcs-user-guide.md)
@@ -62,9 +62,9 @@ You can deploy in the cloud or on-premises. Cloud deployments offer an enterpris
 
 - [Online service and on-premises software lifecycle policy](../migration-upgrade/versions-update-policy.md)
 - [Dynamics 365 Finance and Operations cloud deployment overview](../deployment/cloud-deployment-overview.md)
-- [System requirements for cloud deployments](../../fin-and-ops/get-started/system-requirements.md)
+- [System requirements for cloud deployments](../../fin-ops/get-started/system-requirements.md)
 - [On-premises deployment landing page](../deployment/on-premises-deployment-landing-page.md)
-- [System requirements for on-premises deployments](../../fin-and-ops/get-started/system-requirements-on-prem.md)
+- [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md)
 
 ## Upgrade
 An upgrade can involve moving to a new product version, migrating and upgrading code, moving to an update, or deploying a hotfix.
@@ -111,7 +111,7 @@ The integration with Microsoft Office provides a set of productive, collaborativ
 - [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md)
 - [Add templates to the Open lines in Excel menu](../user-interface/add-templates-open-lines-excel-menu.md)
 - [Customize the Open in Microsoft Office menu](../office-integration/customize-open-office-menu.md)
-- [Configure and send email](../../fin-and-ops/organization-administration/configure-email.md)
+- [Configure and send email](../../fin-ops/organization-administration/configure-email.md)
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Mobile
@@ -121,7 +121,7 @@ The Finance and Operations mobile app enables your organization to make its busi
 - [Mobile workspaces](../mobile-apps/mobile-workspaces-released.md)
 
 ## General administration
-- [Demo data overview](../../fin-and-ops/get-started/demo-data.md)
+- [Demo data overview](../../fin-ops/get-started/demo-data.md)
 - [Cross-company data sharing](../sysadmin/cross-company-data-sharing.md)
 - [Add links to your organization's legal terms and privacy statement](legal-terms-privacy-statement.md)
 - [License codes and configuration keys report](license-codes-configuration-keys-report.md)
