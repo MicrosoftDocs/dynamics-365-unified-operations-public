@@ -184,7 +184,7 @@ To learn more about using the Regression suite automation tool, see the followin
  
 For a hands-on lab experience, see the following topics:
 
-- [Set up and install Regression suite automation tool](../../fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
+- [Set up and install Regression suite automation tool](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
 - [Use Regression suite automation tool](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
 
 #### Investigate test runs
