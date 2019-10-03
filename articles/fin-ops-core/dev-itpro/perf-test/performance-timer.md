@@ -44,7 +44,7 @@ To open the Performance timer, open your webpage with the added parameter debug=
 To open a list page, for example, such as the purchase order list page, click the Performance timer. The following screenshot shows the separation between client time and server time, and the total time. Additionally, you can see a set of performance counters and expensive server calls. 
 
 > [!div class="mx-imgBorder"]
-[! Example showing separation between client time and server time ](./media/2_timer.png)](./media/2_timer.png) 
+[![Example showing separation between client time and server time](./media/2_timer.png)](./media/2_timer.png) 
 
 For more information about the server performance counters, click on any of the links.
 
