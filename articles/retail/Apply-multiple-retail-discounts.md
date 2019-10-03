@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 
 ---
 
-# Apply multiple Retail discounts to a product
+# Retail discounts
 
 [!include [banner](includes/banner.md)]
 
