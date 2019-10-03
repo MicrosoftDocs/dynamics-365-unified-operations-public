@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Statements
+# X++ statements
 
 [!include [banner](../includes/banner.md)]
 

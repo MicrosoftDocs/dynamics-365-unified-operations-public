@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# General ledger overview
+# General ledger and Financial reporting overview
 
 [!include [banner](../includes/banner.md)]
 

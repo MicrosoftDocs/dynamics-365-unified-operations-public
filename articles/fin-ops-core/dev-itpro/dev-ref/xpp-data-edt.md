@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Extended data types
+# X++ extended data types
 
 [!include [banner](../includes/banner.md)]
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Warranty on assets and asset types
+# Warranties on assets and asset types
 
 [!include [banner](../../includes/banner.md)]
 

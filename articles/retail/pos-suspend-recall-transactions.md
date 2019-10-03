@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Suspend and resume transactions in the point of sale (POS)
+# Suspend and resume a transaction in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]

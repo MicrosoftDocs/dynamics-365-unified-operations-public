@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Preferred maintenance workers
+# Set up preferred maintenance workers
 
 [!include [banner](../../includes/banner.md)]
 

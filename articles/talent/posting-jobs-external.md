@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Post jobs to Broadbean
+# Post jobs to external career sites from Attract
 
 [!include [banner](../includes/banner.md)]
 

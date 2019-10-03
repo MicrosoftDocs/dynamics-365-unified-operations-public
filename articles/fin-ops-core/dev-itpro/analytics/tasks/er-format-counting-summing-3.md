@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# ER Configure format to do counting and summing (Part 3: Use computations to make the output)
+# ER Configure format to do counting and summing (Part 3 - Use computations to make the output)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

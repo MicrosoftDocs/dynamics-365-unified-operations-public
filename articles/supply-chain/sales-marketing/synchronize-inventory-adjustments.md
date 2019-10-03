@@ -30,7 +30,7 @@ ms.search.validFrom: 2018-12-01
 
 ---
 
-# Synchronize inventory adjustments from Field Service to Supply Chain Management
+# Synchronize inventory transfers and adjustments from Field Service to Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 

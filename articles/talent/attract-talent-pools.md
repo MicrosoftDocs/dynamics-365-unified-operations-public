@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Source candidates with talent pools
+# Source candidates with talent pools in Microsoft Dynamics 365 Talent - Attract
 
 [!include[banner](../includes/banner.md)]
 
