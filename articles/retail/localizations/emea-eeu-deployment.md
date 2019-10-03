@@ -26,7 +26,7 @@ ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
 
 ---
-# Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+# Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
 
 [!include [banner](../includes/banner.md)]
 
