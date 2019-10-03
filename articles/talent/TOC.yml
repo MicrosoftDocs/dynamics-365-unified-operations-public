@@ -114,6 +114,8 @@
       href: talent-versions-update-policy.md
     - name: Provision Talent
       href: provisioning-talent.md
+    - name: Copy a Core HR instance
+      href: hr-copy-instance.md
     - name: Remove Talent environments
       href: remove-talent-environment.md
     - name: Provisioning for the Onboard app
