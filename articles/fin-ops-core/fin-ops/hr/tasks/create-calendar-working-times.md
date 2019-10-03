@@ -26,7 +26,7 @@ ms.author: anbichse
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Create calendar and generate working times
+# Create calendars and generate working times
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
