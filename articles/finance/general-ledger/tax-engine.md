@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Tax engine overview
+# Tax engine
 
 [!include [banner](../includes/banner.md)]
 
