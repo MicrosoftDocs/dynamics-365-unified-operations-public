@@ -46,6 +46,29 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Finance and Operations 10.0.7 with Platform update 31
+
+### DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1 as found here: https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new api <TBD> |
+
+### Hash.ComputeSHA1Hash(string message)
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1 as found here: https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Platform |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new api <TBD> |
+
+
 
 ## Finance and Operations 10.0.6 with Platform update 30
 
