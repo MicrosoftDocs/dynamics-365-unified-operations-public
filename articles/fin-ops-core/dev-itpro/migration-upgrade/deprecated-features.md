@@ -314,7 +314,7 @@ No features have been removed or deprecated with this release. Platform update 1
 ## Finance and Operations, Enterprise edition 7.3 with Platform update 12
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../../retail/personalized-product-recommendations.md).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -419,7 +419,7 @@ Users can download this from the government portal.
 ## Dynamics 365 for Retail 7.2
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../../retail/personalized-product-recommendations.md).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
