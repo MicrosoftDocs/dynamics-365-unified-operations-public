@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail software development kit (SDK)
+title: POS Override request handler (SDK)
 description: This topic provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
