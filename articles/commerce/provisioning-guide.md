@@ -285,19 +285,9 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. In the **Count** field, enter **2**.
 1. Click **OK**.
 1. Click **OK**.
-##### Scheduling a recurring email distributor batch job
-1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Modules > System administration > Periodic tasks > Email processing > Email distributor batch.**.
-1. Expand the **Run in the background** section.
-1. Select **Yes** in the **Batch processing** field.
-1. Click **Recurrence**.
-1. Select the **No end date** option.
-1. In the **Count** field, enter **2**.
-1. Click **OK**.
-1. Click **OK**.
 ##### Run full data sync
 1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Retail scheduler > Channel database**.
-1. **Default** channel should be selected from the list on the left. Select the other channel available.
+1. **Default** channel is selected from the list on the left. *Select the **other** channel available (named **scXXXXXXXXX**)*.
 1. Click **Full data sync** from the action pane.
 1. Enter **9999** as the distribution schedule.
 1. Click **OK**.
