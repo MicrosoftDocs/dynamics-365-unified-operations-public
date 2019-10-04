@@ -12,6 +12,7 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
+        "LandingData": "Content",
         "ContentObject": "Toc"
       },
       "build_entry_point": "docs",
