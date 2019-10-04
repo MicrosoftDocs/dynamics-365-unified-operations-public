@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Chain data actions
+# Content Security Policy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
