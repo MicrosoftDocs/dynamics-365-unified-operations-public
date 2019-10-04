@@ -8,9 +8,8 @@ that they receive from customers (buyers). They must then issue prepayment
 factures to the customers. Customers can then deduct the VAT, based on the
 prepayment facture that they receive from a seller.
 
-![A screenshot of a cell phone Description automatically generated](media/7a0489ec82968b10254dcaac736543a3.jpg)
+![A screenshot of a cell phone Description automatically generated](media/1%20Scheme%20english.jpg)
 
-A screenshot of a cell phone Description automatically generated
 
 Processing prepayments from customers
 =====================================
