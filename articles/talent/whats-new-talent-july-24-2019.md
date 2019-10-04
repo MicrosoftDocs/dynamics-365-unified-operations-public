@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Talent (July 23, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Talent.
+title: What's new or changed in Dynamics 365 Talent (July 23, 2019)
+description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/23/2019
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 for Talent (July 23, 2019)
+# What's new or changed in Dynamics 365 Talent (July 23, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Talent.
+This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -79,6 +79,6 @@ A new option will let managers view the performance of both their direct reports
 
 ### Region support for Canada and Southeast Asia
 
-We are pleased to announce that Canada and Southeast Asia regions will be available for Microsoft Dynamics 365 for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+We are pleased to announce that Canada and Southeast Asia regions will be available for Talent on August 1, 2019. With this change, you can create environments in the Canadian and Asian regions, and all Talent data will be maintained solely within those locations. You can create an environment in these new regions by selecting the location in the New Environment dialog and use that environment to provision Talent in LCS as described here [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
 
 Data migration of existing projects from other regions to the Canadian and Asian regions is not supported. Only new projects can be provisioned to the these new supported regions.

@@ -45,14 +45,14 @@ To set up the communication, your vendor has to provide pieces of information fo
 ## Setting up an external catalog
 
 The external catalog should enable an employee who enters a purchase requisition to be redirected to an external site to select products. 
-The products that the employee selects from the external catalog are returned to Dynamics 365 for Finance and Operations with up-to-date price information and from here, they can be added to the purchase requisition. 
+The products that the employee selects from the external catalog are returned with up-to-date price information and from here, they can be added to the purchase requisition. 
 The intention is not to enable employees to place an order on the external site. 
 When setting up the external catalog, you need to make sure that the purpose of the site that can be accessed by the external catalog is to collect quote information and not to place a real order.
 
 ### To set up an external vendor catalog, complete the following tasks:
 
 1. Set up a procurement category hierarchy. For more information, see [Set up policies for procurement category hierarchies](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Register the vendor in Finance and Operations. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors in Microsoft Dynamics 365, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md). 
+2. Register the vendor in Supply Chain Management. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md). 
 For information about how to assign vendors to a procurement category, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
 4. Configure the external vendor catalog by using the requirements for your vendor’s external catalog site. For more details about this task, see [Configure the external vendor catalog](#configure-the-external-vendor-catalog).
@@ -102,9 +102,9 @@ Specify a name for the extrinsic element that the vendor can recognize and map i
 For more information about the cXML protocol, see the [cXML.org website](http://cxml.org/).
 
 ## Post back message
-The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Finance and Operations. Post back messages can’t be configured. The messages are based on the cXML protocol definition. Here is the information that can be part of the post back message that is received on a requisition line:
+The post back message is the message that is received from the vendor when the user checks out from the external site and returns to Supply Chain Management. Post back messages can’t be configured. The messages are based on the cXML protocol definition. Here is the information that can be part of the post back message that is received on a requisition line.
 
-| Message received from vendor | Copied to requisition line in Finance and Operations|
+| Message received from vendor | Copied to requisition line|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Quantity|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|External item ID|

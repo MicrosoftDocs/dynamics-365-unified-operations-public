@@ -2,7 +2,7 @@
 # required metadata
 
 title: Monitor sales and margin performance
-description: You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Retail.
+description: You can monitor sales and margin performance in real time using Dynamics 365 Retail.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Retail.
+You can monitor sales and margin performance in real time using Dynamics 365 Retail.
 
-As part of Dynamics 365 for Retail, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:
+As part of Retail, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:
 
 - Products
 - Categories

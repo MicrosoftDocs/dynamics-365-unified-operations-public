@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assess customer and product profitability
-description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Microsoft Dynamics 365 for Retail data. 
+description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Dynamics 365 Retail data. 
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Microsoft Dynamics 365 for Retail data.
+This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about customers and product profitability from your Dynamics 365 Retail data.
 
-As part of Dynamics 365 for Retail, users can study profitability for the top customers (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:
+As part of Retail, users can study profitability for the top customers (10 to 100) across different levels of the organization hierarchy, based on one of the following criteria:
 
 - Sales amount
 - Quantity

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Saving online payments with the Adyen connector
+# Saving online payment instruments with the Adyen connector
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -57,7 +57,7 @@ The out-of-box implementation of the List PI capability relies on the payment pr
 
 The List PI capability requires the following elements:
 
-- An e-commerce integration with Microsoft Dynamics 365 for Retail
+- An e-commerce integration with Microsoft Dynamics 365 Retail
 - A payment connector that is compatible with the List PI capability
 - A payment processor that maps unique customer IDs to the payment instruments that the customers want that payment processor to save
 

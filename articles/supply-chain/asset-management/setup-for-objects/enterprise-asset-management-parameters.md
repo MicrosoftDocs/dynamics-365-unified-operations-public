@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up. This topic explains how to set them up. Select **asset management** > **Setup** > **Asset management parameters** to open the form.
 
-The **Create data wizard** button can be used to automatically create setup data for test or demo data purposes in a company in Dynamics 365 for Finance and Operations. Refer to the white paper "Set up Test Data in Asset Management" for information on how to use the wizard.
+The **Create data wizard** button can be used to automatically create setup data for test or demo data purposes in a company in Dynamics 365 Supply Chain Management. Refer to the white paper "Set up Test Data in Asset Management" for information on how to use the wizard.
 
 **Assets** link
 
@@ -62,7 +62,7 @@ The **Create data wizard** button can be used to automatically create setup data
 - Select "Yes" on the **Copy faults** toggle button if you want to automatically copy faults registered on work orders to related maintenance requests.  
 - In the **Level** field, you define the functional location level that is automatically inserted on a work order if all related work order jobs refer to the same functional location. If the work order jobs do not all relate to the same functional location on the defined level, the **Functional location** field is left blank on the work order. Example: If you insert the number "1" in this field, that is the top level in a functional location structure. If you insert the number "0" in this field, you have not defined a specific functional location level, only that all work order jobs on a work order must be related to the same functional location for that functional location to be added to the work order.  
 - Journals used when posting consumption on a work order can be selected on the **General** FastTab in the **Hour**, **Item**, and **Expense** fields.  
-- In the **Product language source** field, select which language to use for product names in Asset management reports. You can select the language set up on the company account, or the language set up for the user currently logged in on Dynamics 365 for Finance and Operations.  
+- In the **Product language source** field, select which language to use for product names in Asset management reports. You can select the language set up on the company account, or the language set up for the user currently logged in.  
 - Select "Yes" on the **Real time update** toggle button if you want to automatically update changes to job type defaults, maintenance plans, and maintenance rounds.
 > - If you select "No", changes to job type defaults, maintenance plans, and maintenance rounds are not updated automatically in Asset Management  
 > - Select "No" on the toggle button if you have large amounts of data being synchronized, for example, many assets or functional locations set up on maintenance plans or maintenance rounds, or a large number of maintenance plans or rounds.  
@@ -80,7 +80,7 @@ The **Create data wizard** button can be used to automatically create setup data
 - The **Master plan** relates to resources in the **Organization administration** module. If you select a master plan in this field, you will be able to see capacity reservations related to work orders in **Capacity reservations** (**Organization administration** > **Resources** > **Resources** > select resource > **Resource** tab > **Capacity reservations** button). If you leave this field blank, you will be able to see capacity load related to work orders in **Capacity load** (**Organization administration** \> **Resources** \> **Resources** \> select resource \> **Resource** tab \> **Capacity load** button).  
 
 >[!NOTE]
->The selection regarding using a master plan or not in the **Asset management** module, and the related form used to get an overview of capacity reservations or capacity load is standard Dynamics 365 for Finance and Operations setup. Depending on your setup in the **Master plan** field, you will be able to access capacity information in either **Capacity reservations** or **Capacity load** in the **Organization administration** module. It is not possible to create a setup in which capacity reservations are shown in both views.  
+>The selection regarding using a master plan or not in the **Asset management** module, and the related form used to get an overview of capacity reservations or capacity load is the standard setup. Depending on your setup in the **Master plan** field, you will be able to access capacity information in either **Capacity reservations** or **Capacity load** in the **Organization administration** module. It is not possible to create a setup in which capacity reservations are shown in both views.  
 
 The fields described in the bullet list below all relate to calculated rating scores, which are used to calculate work order priority during work order scheduling.
 

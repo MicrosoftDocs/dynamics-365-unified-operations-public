@@ -2,7 +2,7 @@
 # required metadata
 
 title: Select an in-store topology
-description: This topic provides information about the various Dynamics 365 for Retail in-store topologies.
+description: This topic provides information about the various Dynamics 365 Retail in-store topologies.
 author: rassadi
 manager: AnnBe
 ms.date: 05/13/2019
@@ -32,7 +32,7 @@ ms.search.validFrom: 2019-03-01
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides an overview of the various Dynamics 365 for Retail in-store topologies. 
+This topic provides an overview of the various Dynamics 365 Retail in-store topologies. 
 
 <a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)</a>
 

@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 Fixed compensation refers to an employee's regular gross salary or wages. This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 
-Fixed compensation amounts can be calculated for your employees, based on factors such as performance, region, and budget increases. Microsoft Talent supports step, grade, and band compensation types.
+Fixed compensation amounts can be calculated for your employees, based on factors such as performance, region, and budget increases. Dynamics 365 Talent supports step, grade, and band compensation types.
 
 ## Fixed compensation components
 ### Compensation levels

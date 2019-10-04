@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 8.1
 
 ---
 
-# Create a process template
+# Create a process template in Attract
 
 [!include [banner](includes/banner.md)]
 
-A *hiring process template* contains all the activities that should be included as part of the hiring process for a job. This topic describes the elements of a process template in Microsoft Dynamics 365 for Talent: Attract. It also explains how to create a template.
+A *hiring process template* contains all the activities that should be included as part of the hiring process for a job. This topic describes the elements of a process template in Microsoft Dynamics 365 Talent: Attract. It also explains how to create a template.
 
 > [!NOTE]
 > Template creation is part of the Comprehensive Hiring Add-on for Attract.

@@ -32,14 +32,14 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 for Finance and Operations, based on information that is collected from a person who represents the vendor.
+New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 Supply Chain Management, based on information that is collected from a person who represents the vendor.
 
 The process consists of the following steps, where various roles perform actions in the system.
 
 1. **Data management OData** – Entity import - The initial request is the prospective vendor registration request. Typically, this request comes from a source such as a customer-hosted website that allows anonymous access. Vendors can sign up by providing basic information, such as the vendor name, justification, organization number, and name and email address of the contact person. The requests are imported via the Data management interface.
-2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page in Finance and Operations.
+2. **Prospective vendor registration request list page** - Based on the information that is provided in the prospective vendor registration request, a procurement professional decides whether the vendor should be onboarded. The procurement professional views the incoming request on the **Prospective vendor registration requests** list page.
 3. **User provisioning workflow** - When a procurement professional has verified the information in the incoming request and has decided to continue with the onboarding process, the user request workflow provisions the new user and sends an invitation email to accept the contact person as an authenticated user of Microsoft Dynamics 365.
-4. **Vendor registration wizard** - The vendor's contact person signs in to Finance and Operations by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
+4. **Vendor registration wizard** - The vendor's contact person signs in by using the new user account. He or she completes a vendor registration wizard to provide information such as addresses, business information, procurement categories, and questionnaire responses.
 5. **Approval workflow** - A vendor request that includes the registration information is created. This vendor request is submitted to a workflow, and is routed for review and approval.
 6. **Creation of a vendor master and user role modification** - When the vendor request is approved, a vendor record is created. The user account of the vendor's contact person is either granted permission to vendor collaboration or inactivated.
 
@@ -49,14 +49,14 @@ The following table shows the steps and roles that are involved in the process.
 |--------------------------|---|---|---|---|---|---|
 | System                   | The request for a new vendor is imported. | | | | | After the vendor request is accepted, the vendor record is created. |
 | Procurement professional | | Start the onboarding process. | | | Review and either accept or reject the vendor request. | |
-| Administrator            | | | Create a user in Finance and Operations and Microsoft Azure. | | | |
+| Administrator            | | | Create a user in Supply Chain Management and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
 
-For a quick demonstration of the vendor onboarding process, watch this short YouTube video: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video about [How to onboard a new vendor in Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## Importing the prospective vendor registration request
 
-The prospective vendor registration request is an entity in Finance and Operations. You can set up the system to import data via this entity. 
+The prospective vendor registration request is an entity in Supply Chain Management. You can set up the system to import data via this entity. 
 
 The following table shows the information that this entity contains, and that can be imported.
 
@@ -69,18 +69,18 @@ The following table shows the information that this entity contains, and that ca
 | Contact person's first name  | The first name of the person who will be invited to register vendor information. |
 | Contact person's middle name | The middle name of the person who will be invited to register vendor information. |
 | Contact person's last name   | The last name of the person who will be invited to register vendor information. |
-| Contact person's email       | The email address that will be used to create a new user in Finance and Operations, and that will be registered in the tenant's Azure Active Directory (Azure AD) account. |
+| Contact person's email       | The email address that will be used to create a new user in Supply Chain Management, and that will be registered in the tenant's Azure Active Directory (Azure AD) account. |
 | Submitted date               | The date when the request was created in an external system. |
-| Legal entity                 | The legal entity where the vendor is requesting to become a vendor. This value must be a legal entity code that has been registered in Finance and Operations. If no value is received though the import process, a value from the Procurement and sourcing parameters is applied. |
+| Legal entity                 | The legal entity where the vendor is requesting to become a vendor. This value must be a legal entity code that has been registered in Supply Chain Management. If no value is received though the import process, a value from the Procurement and sourcing parameters is applied. |
 | Vendor type                  | The vendor can be either an organization or a person. The vendor type determines how the vendor is finally created. |
 
 After the prospective vendor registration request is imported, it appears on the **Prospective vendor registration request** list page. From this list page, a procurement professional can invite the user. A user request for provisioning the user is sent to a workflow.
 
 ## Submitting a prospective vendor user request
 
-The purpose of a prospective vendor user request is to provision the person who submitted the initial request, so that he or she can sign in to Finance and Operations by using the email account that is provided in the prospective vendor registration request.
+The purpose of a prospective vendor user request is to provision the person who submitted the initial request, so that he or she can sign in to Supply Chain Management by using the email account that is provided in the prospective vendor registration request.
 
-The prospective vendor user request is processed by the user request workflow. This workflow communicates through Azure AD B2B collaboration. It creates a user in Finance and Operations that has the appropriate security settings.
+The prospective vendor user request is processed by the user request workflow. This workflow communicates through Azure AD B2B collaboration. It creates a user in Supply Chain Management that has the appropriate security settings.
 
 New users that are set up have the following security roles:
 
@@ -93,7 +93,7 @@ For information about the configuration of the email and the workflow in general
 
 ## Vendor registration
 
-A prospective vendor user who signs in to Finance and Operations will see the first page of a vendor registration wizard, where he or she can enter vendor information.
+A prospective vendor user who signs in to Supply Chain Management will see the first page of a vendor registration wizard, where he or she can enter vendor information.
 
 The wizard reflects the configuration of the vendor request. The country or region where the vendor does business determines what information is requested in the wizard and what information is mandatory.
 
@@ -123,7 +123,7 @@ Vendor requests are available on the **Vendor collaboration user requests** page
 
 A vendor request contains the information that the prospective vendor user entered in the vendor registration wizard.
 
-The request lets you review the vendor information and decide whether the vendor should become a registered vendor in Finance and Operations.
+The request lets you review the vendor information and decide whether the vendor should become a registered vendor.
 
 The vendor request should be submitted to a workflow, and it should be routed to the relevant reviewers and approvers. For basic information about how to set up workflows, see [Procurement and sourcing workflows](procurement-sourcing-workflows.md).
 
@@ -145,7 +145,7 @@ When a vendor request is approved, a vendor account is created, and the status *
 
 Before you approve a vendor request, on the **New vendor** page, on the **General** FastTab, select **Vendor group** to select a vendor group.
 
-If the prospective vendor user should have access to Finance and Operations as a vendor collaboration user who represents the vendor, set the vendor collaboration access permission to **Yes**. To inactivate the user account that the prospective vendor used to register, set this permission to **No**.
+If the prospective vendor user should have access to Supply Chain Management as a vendor collaboration user who represents the vendor, set the vendor collaboration access permission to **Yes**. To inactivate the user account that the prospective vendor used to register, set this permission to **No**.
 
 If the vendor collaboration access permission is set to **Yes**, when the vendor request is approved, a request is submitted to modify the user's roles so that the user has the roles that are defined for the **Vendor** type in **External roles**. If this permission is set to **No**, when the vendor request is approved, a request is submitted to inactivate the user. In this case, the workflow to inactivate a user request must be set up.
 

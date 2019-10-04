@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Talent
 
 **Environment details** 
 
-Microsoft Dynamics 365 for Talent, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)
+Microsoft Dynamics 365 Talent, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)
 
 **Issue**
 
