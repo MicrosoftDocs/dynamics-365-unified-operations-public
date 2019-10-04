@@ -579,7 +579,7 @@ and the previously registered prepayment are settled.
 
 >   *Note:* The VAT recovery general ledger transaction is a reversal of the VAT
 >   deduction general ledger transaction:
-
+>
 >   **Debit 76 [Other debts and liabilities] / VAT on prepayment – Credit 68
 >   [Taxes] / VAT – on VAT amount**
 
