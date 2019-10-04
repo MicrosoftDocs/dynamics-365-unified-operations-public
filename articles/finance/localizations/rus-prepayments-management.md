@@ -59,12 +59,12 @@ profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/a
 
 >   *Note:* To satisfy the requirements of the Russian legislation, the following
 >   settings should be used:
-
--   The **Summary account** field should typically be set to ledger account **62
-    [Debts]**, subaccount **Advances received**.
-
--   The **Sales tax prepayments** field should typically be set to ledger
-    account **76 [Taxes]**, subaccount **VAT**.
+>
+>   -   The **Summary account** field should typically be set to ledger account **62
+>       [Debts]**, subaccount **Advances received**.
+>
+>   -   The **Sales tax prepayments** field should typically be set to ledger
+>       account **76 [Taxes]**, subaccount **VAT**.
 
 ### Set up a sales tax payable ledger account
 
