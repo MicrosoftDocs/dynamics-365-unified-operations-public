@@ -1,7 +1,6 @@
 # Prepayments management
 
 ## Introduction
-================
 
 Sellers are legally required to pay value-added tax (VAT) from the prepayments
 that they receive from customers (buyers). They must then issue prepayment
@@ -11,11 +10,9 @@ prepayment facture that they receive from a seller.
 ![A screenshot of a cell phone Description automatically generated](media/1%20Scheme%20english.jpg)
 
 
-Processing prepayments from customers
-=====================================
+## Processing prepayments from customers
 
-Overview
---------
+### Overview
 
 When sellers issue a facture for prepayment to a customer, they also pay the
 indicated VAT amount. When sellers issue a facture for goods, they also pay the
@@ -48,10 +45,9 @@ following actions:
     prepayments for settled payments and invoices, and include factures for
     prepayments in the purchase book.
 
-Setup
------
+### Setup
 
-### Set up a posting profile for prepayments
+#### Set up a posting profile for prepayments
 
 To create a posting profile for prepayments, follow the procedure that is
 described in [[Customer posting
@@ -66,7 +62,7 @@ profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/a
 >   -   The **Sales tax prepayments** field should typically be set to ledger
 >       account **76 [Taxes]**, subaccount **VAT**.
 
-### Set up a sales tax payable ledger account
+#### Set up a sales tax payable ledger account
 
 1.  Go to **Tax \> Setup \> Sales tax \> Ledger posting groups**.
 
@@ -83,7 +79,7 @@ For more information about how to create ledger posting groups, see [[Set up
 Ledger posting groups for sales
 tax](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-ledger-posting-groups-sales-tax)](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md).
 
-### Set up a number sequence for the facture
+#### Set up a number sequence for the facture
 
 After a prepayment is registered, a facture is automatically created. The
 facture number is generated based on the number sequence that is set up in the
@@ -98,7 +94,7 @@ General ledger parameters.
 >   **Facture** references. In this way, you help guarantee that you're
 >   following the legal requirement for sequential numbering of all factures.
 
-### Set up Accounts receivable parameters for prepayments
+#### Set up Accounts receivable parameters for prepayments
 
 1.  Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 
@@ -157,10 +153,10 @@ General ledger parameters.
 
 3.  Close the page.
 
-Operations
+###Operations
 ----------
 
-### Register a prepayment from a customer and print the facture
+#### Register a prepayment from a customer and print the facture
 
 1.  Go to **Accounts receivable \> Payments \> Customer payment journal**.
 
@@ -215,7 +211,7 @@ Operations
 13.  Select the line for the facture, and then, on the Action Pane, select
     **Print**.
 
-### Transform a customer payment to a customer prepayment
+#### Transform a customer payment to a customer prepayment
 
 If unsettled payment documents (that is, part of the payment amount) remain at
 the end of reporting period, the payment documents (or part of the documents)
@@ -263,7 +259,7 @@ select **Prepayment handling \> Post** to convert it to a prepayment.
 Additionally, you can transform a prepayment back to a payment. In this case,
 the previously created prepayment facture will be deleted.
 
-### Create factures at the end of a reporting period
+#### Create factures at the end of a reporting period
 
 At the end of the reporting period, you can view prepayments and create factures
 for any prepayments that factures weren't automatically created for at the
@@ -283,7 +279,7 @@ posting stage.
 
 >   *Note:* The date that you select must be a date in the sales book period.
 
-### Settle a customer prepayment with a facture for shipment
+#### Settle a customer prepayment with a facture for shipment
 
 1.  Go to **Accounts receivable \> Customers \> All customers**.
 
@@ -308,11 +304,9 @@ When the transactions are settled, the following events occur:
 -   After incoming VAT is processed and the purchase book lines are updated, a
     reverse entry for the customer advance payment appears in the purchase book.
 
-Processing prepayments to suppliers
-===================================
+## Processing prepayments to suppliers
 
-Overview
---------
+### Overview
 
 Customers can take the indicated VAT for deduction when they receive a facture
 for prepayment from a seller. When customers receive a facture for goods from a
@@ -339,10 +333,9 @@ accounting.
 >   Sales tax \> Sales tax codes**) and a separate posting group on the **Ledger
 >   posting groups** page (**Tax \> Setup \> Sales tax \> Ledger posting groups**).
 
-Setup
------
+### Setup
 
-### Set up a posting profile for prepayments
+#### Set up a posting profile for prepayments
 
 To create a posting profile for prepayments, follow the procedure that is
 described in [[Vendor posting
@@ -357,7 +350,7 @@ profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/a
 >   -   The **Sales tax prepayments** field should typically be set to ledger
 >       account **68 [Taxes]**, subaccount **VAT**.
 
-### Set up an incoming tax payment ledger account
+#### Set up an incoming tax payment ledger account
 
 1.  Go to **Tax \> Setup \> Sales tax \> Ledger posting groups**.
 
@@ -370,7 +363,7 @@ profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/a
     ledger account should typically be ledger account **76 [Other debts and
     liabilities]**, subaccount **VAT from prepayment**.
 
-### Set up Accounts payable parameters for prepayments
+#### Set up Accounts payable parameters for prepayments
 
 1.  Go to **Accounts payable \> Setup \> Accounts payable parameters**.
 
@@ -415,17 +408,16 @@ profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/a
 
 4.  Close the page.
 
-### Set up a number sequence for incoming VAT processing
+#### Set up a number sequence for incoming VAT processing
 
 1.  Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 
 2.  On the **Number sequences** tab, in the **Number sequence code** field,
     select a number sequence code for the **VAT processing voucher** reference.
 
-Operations
-----------
+### Operations
 
-### Register a supplier's facture for a prepayment
+#### Register a supplier's facture for a prepayment
 
 1.  Go to **Accounts payable \> Payments \> Vendor payment journal**, and create
     a journal.
@@ -495,7 +487,7 @@ The generated facture will be reflected on the **Facture journal** page, where
 the **Facture source** field will be set to the **Prepayment journal voucher**
 type.
 
-### Process incoming VAT on the received facture for the prepayment
+#### Process incoming VAT on the received facture for the prepayment
 
 After you register a prepayment facture, the VAT amount from the prepayment
 facture can be processed for deduction.
@@ -527,7 +519,7 @@ facture can be processed for deduction.
     period. To view the processed facture in the purchase book, select **Lines**
     on the Action Pane.
 
-### Recover previously accepted deductible VAT on prepayment
+#### Recover previously accepted deductible VAT on prepayment
 
 When a facture for the purchase of goods is received from a seller, the customer
 deducts the specified VAT on the purchase facture. In that same tax period, the
