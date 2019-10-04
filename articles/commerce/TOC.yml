@@ -290,6 +290,8 @@
             href: select-page-layouts.md
           - name: Manage SEO metadata
             href: manage-seo-metadata.md
+          - name: Save, preview, and publish a page
+            href: save-preview-publish-page.md
           - name: Enrich a product page
             href: enrich-product-page.md
         - name: Modules
