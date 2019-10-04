@@ -156,7 +156,7 @@ General ledger parameters.
     dimensions from the invoice to the payment when the payment proposal is
     used.
 
-1.  Close the page.
+3.  Close the page.
 
 Operations
 ----------
@@ -186,23 +186,23 @@ Operations
 >   **General** tab, and the **Posting profile** field on the **Payment** tab,
 >   are automatically set, based on the setup of your system.
 
-1.  Make sure that the **Automatically facture creation** option is set to
+7.  Make sure that the **Automatically facture creation** option is set to
     **Yes**, so that a facture is automatically created when prepayments are
     posted.
 
 >   *Note:* If you set the **Automatically facture creation** option to **No**,
 >   the factures on prepayments are created in postponed mode.
 
-1.  On the Action Pane, select **Post \> Post** to post the prepayment.
+8.  On the Action Pane, select **Post \> Post** to post the prepayment.
 
-2.  Go to **Accounts receivable \> Inquiries and reports \> Facture** to review
+9.  Go to **Accounts receivable \> Inquiries and reports \> Facture** to review
     the payment facture that is generated.
 
-3.  In the lower part of the **Facture journal** page, on the **General** tab,
+10.  In the lower part of the **Facture journal** page, on the **General** tab,
     in the **Note** field, enter the list of goods that the prepayment is
     registered for.
 
-4.  Select **Fill line details**, and then, in the **Journal of invoices for
+11.  Select **Fill line details**, and then, in the **Journal of invoices for
     payment** dialog box, select the **Mark** check box for every invoices for
     payment for which the names of goods (works and services) should be included
     in the description of the prepayment facture. For more information, see
@@ -213,9 +213,9 @@ Operations
 
 >   A screenshot of a cell phone Description automatically generated
 
-1.  Select **OK**. The names of goods are added to the **Note** field.
+12.  Select **OK**. The names of goods are added to the **Note** field.
 
-2.  Select the line for the facture, and then, on the Action Pane, select
+13.  Select the line for the facture, and then, on the Action Pane, select
     **Print**.
 
 ### Transform a customer payment to a customer prepayment
@@ -242,13 +242,13 @@ must be converted to prepayments and included in the sales book.
 >   payment, you can set the **Same date** field to **Yes**. Prepayment
 >   transactions and factures will then be generated on the transaction date.
 
-1.  Set the **Automatically facture creation** option to **Yes** so that a
+6.  Set the **Automatically facture creation** option to **Yes** so that a
     facture is automatically created on the prepayment.
 
 >   *Note:* If you set the **Automatically facture creation** option to **No**,
 >   you should create the factures on prepayments in postponed mode.
 
-1.  Select **OK** to transform the customer payment to a customer prepayment.
+7.  Select **OK** to transform the customer payment to a customer prepayment.
 
 >   *Note:* When you select **OK**, the payment transactions are reversed, and
 >   prepayment transactions are created. The prepayment transactions are dated
@@ -408,7 +408,7 @@ settings should be used:
 -   Set the **Create facture on nonposted payments** option to **Yes** to
     register a facture for unposted prepayments.
 
-1.  On the **Purchase book** FastTab, in the **Facture issue period** field,
+3.  On the **Purchase book** FastTab, in the **Facture issue period** field,
     enter the number of days to exclude factures that are issued by a supplier.
     The exclusion must be later than the statutory deadline.
 
@@ -416,7 +416,7 @@ settings should be used:
 >   **0** (zero), factures are reflected on the **Purchase book (Incoming VAT
 >   processing)** page independently of the facture date.
 
-1.  Close the page.
+4.  Close the page.
 
 ### Set up a number sequence for incoming VAT processing
 
@@ -460,12 +460,12 @@ Operations
 >   tax payments in the **Incoming tax payment** field on the **Ledger posting
 >   groups** page.
 
-1.  Post the journal that has a prepayment to the supplier.
+6.  Post the journal that has a prepayment to the supplier.
 
-2.  Go to **Accounts payable \> Periodic tasks \> Facture \> Facture creation
+7.  Go to **Accounts payable \> Periodic tasks \> Facture \> Facture creation
     for prepayment**.
 
-3.  On the Action Pane, select **Select** to open the **Select prepayments**
+8.  On the Action Pane, select **Select** to open the **Select prepayments**
     dialog box. You can use this dialog box to find the required payment by, for
     example, the supplier's code and the payment order details.
 
@@ -474,17 +474,17 @@ Operations
 
     You can register a facture for an unposted prepayment.
 
-1.  Select **OK** to add the lines for processing. Then, on the **General** tab,
+9.  Select **OK** to add the lines for processing. Then, on the **General** tab,
     in the **Facture** section, in the **Facture** field, enter the number of
     received factures.
 
-2.  In the **Date of the registration** field, enter the facture date of the
+10.  In the **Date of the registration** field, enter the facture date of the
     registration.
 
-3.  If the registration date differs from the document date, set the **Facture
+11.  If the registration date differs from the document date, set the **Facture
     date** field.
 
-4.  Set the **Sales tax group** and **Item sales tax group** fields.
+12.  Set the **Sales tax group** and **Item sales tax group** fields.
 
 *Note:*
 
@@ -511,7 +511,7 @@ facture can be processed for deduction.
 -   *Note:* The prepayment facture has a value of **Prepayment** in the
     **Operation** field.
 
-1.  Mark the facture, and post the operation. After posting, there are a tax
+3.  Mark the facture, and post the operation. After posting, there are a tax
     transaction and a general ledger transaction for the VAT amount:
 
 -   **Debit 68 [Tax] / VAT – Credit 76 [Other debts and liabilities] / VAT from
@@ -522,10 +522,10 @@ facture can be processed for deduction.
     (Canceling processed VAT)** page (**Accounts payable \> Periodic tasks \>
     Purchase book \> Canceling processed VAT**).
 
-1.  Go to **Accounts payable \> Periodic tasks \> Purchase book \> VAT
+4.  Go to **Accounts payable \> Periodic tasks \> Purchase book \> VAT
     processing log** to view the processed prepayment facture.
 
-2.  Go to **Accounts payable \> Periodic tasks \> Purchase book \> Purchase
+5.  Go to **Accounts payable \> Periodic tasks \> Purchase book \> Purchase
     books journal** to create and update the purchase book for the reporting
     period. To view the processed facture in the purchase book, select **Lines**
     on the Action Pane.
@@ -577,7 +577,7 @@ and the previously registered prepayment are settled.
 >   amount of VAT to recover equals the amount of the processed incoming VAT on
 >   the received goods that falls in the settled part of the invoice.
 
-1.  Mark the facture, and post the operation. The system creates a tax
+11.  Mark the facture, and post the operation. The system creates a tax
     transaction and a general ledger transaction for the processed tax amount.
 
 >   *Note:* The VAT recovery general ledger transaction is a reversal of the VAT
@@ -586,10 +586,10 @@ and the previously registered prepayment are settled.
 >   **Debit 76 [Other debts and liabilities] / VAT on prepayment – Credit 68
 >   [Taxes] / VAT – on VAT amount**
 
-1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> VAT
+12.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> VAT
     processing log** to view the processed facture.
 
-2.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Sales books
+13.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> Sales books
     journal**. Update the sales book, and verify that the facture is reflected
     in the Sales books journal for the processed amount.
 
