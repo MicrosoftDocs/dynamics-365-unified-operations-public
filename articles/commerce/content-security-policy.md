@@ -71,11 +71,13 @@ Fortunately, CSP logs some helpful errors to the console and we can use these er
 
 Below is an example error shown within a web browser's developer tools.
 
-![Content Security Policy Error](media/content-security-policy-error.png)
+![Content Security Policy Error](media/content-security-policy-errors.png)
 
 In this case we have two CSP errors:
 
 1.	Eval is blocked by default because it can lead to arbitrary Javascript execution. If you must allow it, you must add ‘unsafe-eval’ (single quotes required) to your sites script-src directive.
 2.	The stylesheet from https://int.fabrikam.com  is blocked. To allow it, add an entry to the style-src to allow stylesheets to be loaded from this domain
 
+Below shows how the fixed settings look like in the **Content Security Policy** tab:
 
+![Content Security Policy Fix](media/content-security-policy-fixed.png)
