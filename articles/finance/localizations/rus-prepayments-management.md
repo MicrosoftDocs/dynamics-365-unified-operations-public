@@ -1,6 +1,6 @@
 # Prepayments management
 
-<br>Introduction
+## Introduction
 ================
 
 Sellers are legally required to pay value-added tax (VAT) from the prepayments
