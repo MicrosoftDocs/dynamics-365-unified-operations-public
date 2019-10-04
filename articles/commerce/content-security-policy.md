@@ -81,3 +81,22 @@ In this case we have two CSP errors:
 Below shows how the fixed settings look like in the **Content Security Policy** tab:
 
 ![Content Security Policy Fix](media/content-security-policy-fixed.png)
+
+## Updating page mocks with new Content Security Policy
+
+If you are testing modules in a development environment with the Online SDK, you can also add Content Security Policies through page mocks. In a page mock, you’ll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
+
+Here you may add key value pairs of directives to policies.
+
+If you are adding CSP policies in your page mock, please note that it will not include any of the default CSP policies provided by the platform. 
+
+![Content Security Policy Page Mock](media/content-security-policy-page-mock.png)
+
+You may also disable Content Security Policy on your page mock by using:
+
+![Content Security Policy Page Mock 2](media/content-security-policy-page-mock2.png)
+
+## Disabling CSP
+If for whatever reason, you want to disable CSP from applying policies to your site, you may disable it altogether. Simply check the “Disable content security policy” and hit save and publish.
+
+![Disable Content Security Policy](media/content-security-policy-disable.png)
