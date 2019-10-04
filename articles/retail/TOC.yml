@@ -215,7 +215,7 @@
         - name: Benefits
           href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Cash overview
-          href: ../financials/cash-bank-management/Cash-Overview-Power-BI-content.md
+          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
         - name: CFO overview
           href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Compensation
@@ -231,7 +231,7 @@
         - name: Cost management
           href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Credit and collections management
-          href: ../financials/accounts-receivable/credit-collections-power-bi.md
+          href: ../finance/accounts-receivable/credit-collections-power-bi.md
         - name: Employee competencies and development
           href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Employee development
@@ -243,7 +243,7 @@
         - name: Financial insights
           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Fixed asset management
-          href: ../financials/fixed-assets/Fixed-asset-management-workspace.md
+          href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
         - name: Learning
           href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Organizational training
@@ -261,7 +261,7 @@
         - name: Sales and profitability performance
           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Vendor payments
-          href: ../financials/accounts-payable/Vendor-payments-workspace.md
+          href: ../finance/accounts-payable/Vendor-payments-workspace.md
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/unified-operations/retail/toc.json
         - name: Workforce metrics
@@ -509,19 +509,19 @@
       - name: Embedded analytical solutions
         items:
         - name: Embedded Power BI in workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/retail/toc.json
         - name: Power BI Embedded integration
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Select analytical workspaces from PowerBI.com
-          href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/retail/toc.json
+        - name: Customize embedded reports in Analytical workspaces 
+          href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/retail/toc.json
       - name: Personalization options with PowerBI.com
         items:
         - name: Features and services available via Power BI integration
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/unified-operations/retail/toc.json
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/retail/toc.json
         - name: Pin Power BI reports to workspaces
-          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/unified-operations/retail/toc.json
-        - name: Customize embedded reports in Analytical workspaces 
-          href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md
+          href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/retail/toc.json
+        - name: Select analytical workspaces from PowerBI.com
+          href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/retail/toc.json
       - name: Tools for creating and extending solutions
         items:
         - name: Analytics, aggregate measurements, and KPI modeling
@@ -764,7 +764,7 @@
           href: retail-time-attendance.md
         - name: Create and change store hours
           href: dev-itpro/store-hours.md
-      - name: Call center chanel management
+      - name: Call center channel management
         items:
         - name: Call center sales functionality
           href: call-center-functionality.md
@@ -1405,8 +1405,6 @@
         items:
         - name: Loyalty extension
           href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-  - name: Dynamics 365 Commerce (Preview)
-    href: ../commerce/toc.yml  
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance

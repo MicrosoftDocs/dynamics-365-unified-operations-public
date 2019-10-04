@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Electronic fiscal document for services
+# Service electronic fiscal document for Brazil
 
 [!include [banner](../includes/banner.md)]
 

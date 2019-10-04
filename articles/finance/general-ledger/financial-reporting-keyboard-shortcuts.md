@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 
 
-### Keyboard shortcuts in Report Designer
+# Keyboard shortcuts for missing account analysis
 This topic lists the keyboard shortcuts that are available when you run a missing account analysis in Management Reporter.
 
 | **To do this** | **Press** |

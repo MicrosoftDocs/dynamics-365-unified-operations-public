@@ -5,7 +5,7 @@ title: Cost accounting analysis Power BI content
 description: This topic describes what is included in the Cost accounting analysis Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,7 +44,7 @@ Because the **Cost accounting analysis** content highlights variances between th
 
 The **Cost accounting analysis** content lets cost accountants analyze how cost flows through the cost objects of the whole organization.
 
-To learn more about Cost accounting, see [Cost accounting home page](../../financials/cost-accounting/cost-accounting-home-page.md).
+To learn more about Cost accounting, see [Cost accounting home page](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
 By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
 

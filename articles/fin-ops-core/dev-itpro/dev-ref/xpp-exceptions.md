@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Exception handling: throw, try...catch, finally, and retry
+# X++ exception handling
 
 [!include [banner](../includes/banner.md)]
 

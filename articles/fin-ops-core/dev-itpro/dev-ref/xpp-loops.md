@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Loop statements: for, while, and do...while
+# X++ loop statements
 
 [!include [banner](../includes/banner.md)]
 

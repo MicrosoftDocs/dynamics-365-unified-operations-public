@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales tax report for Norway
+title: VAT statement for Norway
 description: This topic explains how to set up and generate the VAT statement for legal entities that have a primary address in Norway. 
 author: epodkolz
 ms.author: epodkolz

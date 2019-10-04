@@ -5,7 +5,7 @@ title: Default financial dimensions
 description: This topic describes default financial dimensions. It explains where the dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
 author: jasonsto
 manager: annbe
-ms.date: 04/17/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ This topic explains default financial dimensions for developers. It explains whe
 
 This topic uses examples from the **USMF** demo data company.
 
-For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
+For conceptual information about financial dimensions and how they affect business processes, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
 
 ### Entering default dimensions
 
@@ -374,7 +374,7 @@ The **serviceCreateLedgerDimForDefaultDim()** API resembles the **serviceCreateL
 ```
 public static LedgerDimensionBase serviceCreateLedgerDimForDefaultDim(
     DimensionDefault    _defaultDimension,
-    LedgerDimensionBase _ledgerDimensionId)![\\\\blackwoodstone\\share\\Research\\GFMBlog2\\media\\MSDNBlogsFS\\prod.evol.blogs.msdn.com\\CommunityServer.Blogs.Components.WeblogFiles\\00\\00\\01\\50\\86\\5710.c65.png](media/146d284328279f4737c6e2bd23a30530.png)
+    LedgerDimensionBase _ledgerDimensionId)
 ```
 
 #### serviceLedgerDimensionFromLedgerDims()

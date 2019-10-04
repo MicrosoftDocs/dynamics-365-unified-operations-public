@@ -5,7 +5,7 @@ title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
 author: robadawy
 manager: AnnBe
-ms.date: 05/03/2018
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -257,8 +257,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [Retail POS device activation](../../retail/dev-itpro/retail-device-activation.md)
+-   [Retail SDK overview](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
+-   [Retail POS device activation](../../../retail/dev-itpro/retail-device-activation.md)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Create a job
+# Create, approve, and post jobs in Attract
 
 [!include [banner](includes/banner.md)]
 
