@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Database movement API - Reference - v1 Overview
-description: This topic provides a reference for v1 of the Database Movement API. 
+title: Database movement API - Reference - v1 - Overview
+description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 manager: AnnBe
 ms.date: 09/30/2019
@@ -28,12 +28,13 @@ ms.dyn365.ops.version: 10.0.0
 
 ---
 
-# API v1 reference
+# API v1 reference overview
 
 [!include [banner](../../../includes/banner.md)]
 [!include [banner](../../../includes/preview-banner.md)]
 
-Welcome to the Database Movement API reference for the v1 endpoint.  Resources available on the v1 endpoint (https://lcsapi.lcs.dynamics.com/databasemovement/v1) are in private preview status, and are receiving additional feedback.  Updates to the API may be breaking in nature. 
+Welcome to the Database Movement application programming interfaces (API) reference for the version 1 (v1) endpoint. Resources that are available on the v1 endpoint (<https://lcsapi.lcs.dynamics.com/databasemovement/v1>) are currently in private preview status and are receiving additional feedback. Updates to the API might be breaking in nature.
 
 ## Connect with us
-All feedback is being retrieved from the private preview program.  To sign up, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
+
+All feedback is being retrieved from the private preview program. To sign up, [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
