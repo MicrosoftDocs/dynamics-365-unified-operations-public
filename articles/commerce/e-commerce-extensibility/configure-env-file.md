@@ -71,7 +71,7 @@ The following is an example of a development environment URL.
 ```https://localhost:4000/version```
 
 ## MSDyn365_HOST
-The **MSDyn365_HOST** variable is the domain name of your customer-facing e-Commerce site. When this variable is set, launching **https://localhost:4000/** on a development environment will render your e-Commerce site locally. If your site is protected with Azure Active Directory (AAD) credentials, a username and password prompt will appear.
+The **MSDyn365_HOST** variable is the domain name of your customer-facing e-Commerce site. When this variable is set, launching ```https://localhost:4000/``` on a development environment will render your e-Commerce site locally. If your site is protected with Azure Active Directory (AAD) credentials, a username and password prompt will appear.
 
 Syntax example: 
 
