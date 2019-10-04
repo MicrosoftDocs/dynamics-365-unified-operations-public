@@ -126,20 +126,20 @@
               href: data-entities/dual-write-organization.md
             - name: Company integration
               items:
-                - name: Company concept in Common Data Services
-                href: ../dev-itpro/data-entities/dual-write-company.md?toc=/fin-and-ops/toc.json
-                - name: Bootstrap with company data
-                href: ../dev-itpro/data-entities/dual-write-bootstrap.md?toc=/fin-and-ops/toc.json
+              - name: Company concept in Common Data Services
+                href: ../dev-itpro/data-entities/dual-write-company.md
+              - name: Bootstrap with company data
+                href: ../dev-itpro/data-entities/dual-write-bootstrap.md
             - name: Integrated Customer Master
-              href: ../dev-itpro/data-entities/dual-write-customer.md?toc=/fin-and-ops/toc.json
+              href: ../dev-itpro/data-entities/dual-write-customer.md
             - name: Unified product experience
-              href: ../dev-itpro/data-entities/dual-write-product.md?toc=/fin-and-ops/toc.json
+              href: ../dev-itpro/data-entities/dual-write-product.md
             - name: Vendor integration
               items:
               - name: Integrated Vendor Master
-                href: ../dev-itpro/data-entities/dual-write-vendor.md?toc=/fin-and-ops/toc.json
+                href: ../dev-itpro/data-entities/dual-write-vendor.md
               - name: Switch between vendor designs
-                href: ../dev-itpro/data-entities/dual-write-vendor-switch.md?toc=/fin-and-ops/toc.json
+                href: ../dev-itpro/data-entities/dual-write-vendor-switch.md
             - name: Integrated sites and warehouses
               href: data-entities/dual-write-sites-and-warehouses.md
             - name: Initial synchronization
