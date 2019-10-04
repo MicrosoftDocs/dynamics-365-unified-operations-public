@@ -282,6 +282,8 @@
             href: add-languages-to-site.md
         - name: Pages
           items:
+          - name: Add a new site page
+            href: add-new-page.md
           - name: Select page layouts
             href: select-page-layouts.md
           - name: Manage SEO metadata
