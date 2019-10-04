@@ -57,8 +57,8 @@ To create a posting profile for prepayments, follow the procedure that is
 described in [[Customer posting
 profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles)](../accounts-receivable/customer-posting-profiles.md).
 
-*Note:* To satisfy the requirements of the Russian legislation, the following
-settings should be used:
+>   *Note:* To satisfy the requirements of the Russian legislation, the following
+>   settings should be used:
 
 -   The **Summary account** field should typically be set to ledger account **62
     [Debts]**, subaccount **Advances received**.
@@ -75,9 +75,9 @@ settings should be used:
 3.  In the **Sales tax payable** field, select the ledger account for sales tax
     payable.
 
--   *Note:* According to the requirements of the Russian legislation, this
-    ledger account should typically be ledger account **68 [Taxes]**, subaccount
-    **VAT**.
+>   *Note:* According to the requirements of the Russian legislation, this
+>   ledger account should typically be ledger account **68 [Taxes]**, subaccount
+>   **VAT**.
 
 For more information about how to create ledger posting groups, see [[Set up
 Ledger posting groups for sales
