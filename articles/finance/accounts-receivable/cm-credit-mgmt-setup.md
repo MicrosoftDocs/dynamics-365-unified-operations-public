@@ -98,6 +98,5 @@ There are several credit management statistics included in the credit management
 2.	Select **No** for **Allow manual editing of credit limits** to stop users from editing credit limits on the customer form. When this field is set to No, changes to a customer's credit limit can be only by posting credit limit adjustment transactions.
 
 ### Number sequences and shared number sequences parameters
-You must set up the following number sequences for credit management:
 
-1.	Add the **Credit limit adjustment number** that will be used to generate the journal ID needed for processing credit limit adjustments.
+You must add the **Credit limit adjustment number** that will be used to generate the journal ID needed for processing credit limit adjustments.
