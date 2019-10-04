@@ -76,7 +76,7 @@ You can't specify grace days for some posting checkpoints and no grace days for 
 
 2. If you selected the **Posting column** check box, add Grace days to identify how many days will pass before the blocking rules will be checked again. You can't add grace days when the check box is not selected.
 
-3. Select the check box in the Pro forma column to execute the credit management rules when the proforma posting checkpoint shown on the line is executed. In most cases, the posting box is set to No on the dialog that shows when a sales order is posted.
+3. Select the check box in the **Pro forma** column to execute the credit management rules when the proforma posting checkpoint shown on the line is executed. In most cases, the posting box is set to No on the dialog that shows when a sales order is posted.
 
 4. If you selected the **Posting column** check box, add the number of grace days that identify how many days will pass before the blocking rules will be checked again. You can't add grace days when the check box is not selected.
 
@@ -93,10 +93,11 @@ There are several credit management statistics included in the credit management
 
 ### Credit limits
 
-1.	In Credit management, the customer credit limit is shown using the customer's currency. You must define the exchange rate type for the credit limit using the customer's currency. Select the Credit Limit exchange rate type that will be used to convert the primary credit limit to the customer's credit limit.
+1.	In Credit management, the customer credit limit is shown using the customer's currency. You must define the exchange rate type for the credit limit using the customer's currency. Select the **Credit Limit exchange rate type** that will be used to convert the primary credit limit to the customer's credit limit.
 
-2.	Select No for Allow manual editing of credit limits to stop users from editing credit limits on the customer form. When this field is set to No, changes to a customer's credit limit can be only by posting credit limit adjustment transactions.
-Number sequences and shared number sequences parameters
+2.	Select **No** for **Allow manual editing of credit limits** to stop users from editing credit limits on the customer form. When this field is set to No, changes to a customer's credit limit can be only by posting credit limit adjustment transactions.
+
+### Number sequences and shared number sequences parameters
 You must set up the following number sequences for credit management:
 
-1.	Add the Credit limit adjustment number that will be used to generate the journal ID needed for processing credit limit adjustments.
+1.	Add the **Credit limit adjustment number** that will be used to generate the journal ID needed for processing credit limit adjustments.
