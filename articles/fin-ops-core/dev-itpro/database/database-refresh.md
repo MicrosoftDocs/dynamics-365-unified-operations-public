@@ -50,7 +50,7 @@ With the goal of providing Data Application Lifecycle Management (also referred 
 ### Refresh operation failed
 In case of failure, the option to perform a rollback is available.  By clicking the **Rollback** option after the operation has initially failed, your target sandbox environment will be restored to the state it was before the refresh began. This is made possible by the Azure SQL point-in-time restore capability to restore the database. This is often required if a customization, that is present in the target sandbox, cannot complete a database synchronization with the newly refreshed data.
 
-To determine the root cause of the failure, download the runbook logs using the available buttons before starting the rollback operation.  
+To determine the root cause of the failure, use the available buttons to download the runbook logs before you start the rollback operation.  
 
 ### Data elements that aren't copied during refresh
 When refreshing a production environment to a sandbox environment, or a sandbox environment to another sandbox environment, there are certain elements of the database that are not copied over to the target environment. These elements include:
@@ -61,11 +61,11 @@ When refreshing a production environment to a sandbox environment, or a sandbox 
 * SMTP Relay server in the SysEmailParameters table.
 * Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 * Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-* **Document attachments** in the DocuValue table. This includes any Office Templates that were overriden in the source environment.
+* Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overridden in the source environment.
 * Connection string in the PersonnellIntegrationConfiguration table.
 * All users except the admin will be set to **Disabled** status.
 * All batch jobs are set to **Withhold** status.
-* All users will have their partition value reset to the 'initial' partition record id.
+* All users will have their partition value reset to the "initial" partition record ID.
 
 Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
 
@@ -74,13 +74,13 @@ The System Administrator account in the target environment (UserId of 'Admin') i
 
 If you have used the Admin User Provisioning Tool on your environment to change the web.config file to a different value, it may not match what is in Lifecycle Services.  If you require a different account to be used, you will need to deallocate and delete the target sandbox, and redeploy selecting another account. After this, you can perform another refresh database action to restore the data.
 
-It is not supported to refresh an environment from one tenant to another.  This includes .onmicrosoft.com tenants.  You will want to ensure that the source and target environment administrator accounts are from the same tenant domain.
+An environment can't be refreshed from one tenant to another. This restriction applies even to .onmicrosoft.com tenants. You should make sure that the admin accounts in the source and target environments are from the same tenant domain.
 
 ### Conditions of a database refresh
 Here is the list of requirements and conditions of operation for a database refresh:
 
-- A refresh performs a delete on the original target database.  A bread crumb is added so that point-in-time restore back to this is still possible. (For all refreshes after October 2019)
-- The target environment will be available until the database copy has reached the target server.  From there, the environment will be offline until the refresh process is completed.
+- A refresh performs a delete on the original target database. A breadcrumb is added so that a point-in-time restore can still be done. (This condition applies to all refreshes that are done after October 2019.)
+- The target environment will be available until the database copy has reached the target server. After that point, the environment will be offline until the refresh process is completed.
 - The refresh will affect only the application and Financial Reporting databases.
 - Documents in Azure blob storage are not copied from one environment to another. This means that attached document handling documents and templates won't be changed and will remain in their current state.
 - All users except the Admin user and other internal service user accounts will be unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
@@ -94,7 +94,7 @@ Here is the list of requirements and conditions of operation for a database refr
 ## Known issues
 
 ### Refresh is denied for environments running Platform update 11 or earlier
-The database refresh process can't be completed if the environment is running Platform update 11 or earlier.  In December 2019, this will increase to Platform update 20. For more information, see the [list of currently supported Platform updates](../migration-upgrade/versions-update-policy.md).
+The database refresh process can't currently be completed if the environment is running Platform update 11 or earlier. Starting in December 2019, the process won't be able to be completed for Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
 The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
