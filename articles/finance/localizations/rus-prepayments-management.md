@@ -135,7 +135,7 @@ General ledger parameters.
 -   Set the **Automatically facture creation** option to **Yes** to
     automatically create a facture when prepayments are posted.
 
->   **Note:** If you set the **Automatically facture creation** option to
+>   *Note:* If you set the **Automatically facture creation** option to
 >   **No**, the factures on prepayments are created in postponed mode. The
 >   setting of this parameter is inherited and can be changed in the following
 >   places:
@@ -209,8 +209,6 @@ Operations
     payment](rus-invoice-payment.md)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-invoice-payment).
 
 ![](media/2%20Journal%20of%20invoices%20for%20payment.png)
-
->   A screenshot of a cell phone Description automatically generated
 
 12.  Select **OK**. The names of goods are added to the **Note** field.
 
@@ -335,11 +333,11 @@ accounting.
 | D 68 [Taxes]/VAT                           | К 19 [VAT from purchase]                               | Deduction of VAT from received goods                       | **Purchase book (Incoming VAT processing)** page (**Accounts payable \> Periodic tasks \> Purchase book \> Incoming VAT processing**)                                                                                                                                                                                                                                                                                                                           |
 | D 76 [Other debts and liabilities]/VAT Pr. | К 68 [Taxes]/VAT                                       | Recovery of VAT accepted for deduction from the prepayment | **Sales book (Outgoing VAT processing)** page (**Accounts receivable \> Periodic tasks \> Sales book \> Outgoing VAT processing**)                                                                                                                                                                                                                                                                                                                              |
 
-*Note:* To post VAT on prepayments to a dedicated ledger account, such as
-76/VAT, from a prepayment, we recommend that you set up a separate sales tax
-code for prepayments on the **Sales tax codes** page (**Tax \> Indirect taxes \>
-Sales tax \> Sales tax codes**) and a separate posting group on the **Ledger
-posting groups** page (**Tax \> Setup \> Sales tax \> Ledger posting groups**).
+>   *Note:* To post VAT on prepayments to a dedicated ledger account, such as
+>   76/VAT, from a prepayment, we recommend that you set up a separate sales tax
+>   code for prepayments on the **Sales tax codes** page (**Tax \> Indirect taxes \>
+>   Sales tax \> Sales tax codes**) and a separate posting group on the **Ledger
+>   posting groups** page (**Tax \> Setup \> Sales tax \> Ledger posting groups**).
 
 Setup
 -----
@@ -350,8 +348,8 @@ To create a posting profile for prepayments, follow the procedure that is
 described in [[Vendor posting
 profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles)](../accounts-payable/vendor-posting-profiles.md).
 
-*Note:* To satisfy the requirements of the Russian legislation, the following
-settings should be used:
+>   *Note:* To satisfy the requirements of the Russian legislation, the following
+>   settings should be used:
 
 -   The **Summary account** field should typically be set to ledger account **60
     [Liabilities]**, subaccount **Advances paid**.
@@ -368,7 +366,7 @@ settings should be used:
 3.  In the **Incoming tax payment** field, select the ledger account for
     incoming tax payments.
 
--   *Note:* According to the requirements of the Russian legislation, this
+>   *Note:* According to the requirements of the Russian legislation, this
     ledger account should typically be ledger account **76 [Other debts and
     liabilities]**, subaccount **VAT from prepayment**.
 
@@ -485,7 +483,7 @@ Operations
 
 12.  Set the **Sales tax group** and **Item sales tax group** fields.
 
-*Note:*
+>   *Note:*
 
 -   The calculated tax will be recorded on the line for the generated facture.
     Select the **Marked** check box for each line for the facture, and then, on
@@ -516,10 +514,10 @@ facture can be processed for deduction.
 -   **Debit 68 [Tax] / VAT – Credit 76 [Other debts and liabilities] / VAT from
     prepayment – on VAT amount**
 
-    *Note:* After the input VAT is processed, you can't delete the prepayment
-    facture. To cancel the processing of incoming VAT, use the **Purchase book
-    (Canceling processed VAT)** page (**Accounts payable \> Periodic tasks \>
-    Purchase book \> Canceling processed VAT**).
+>   *Note:* After the input VAT is processed, you can't delete the prepayment
+>   facture. To cancel the processing of incoming VAT, use the **Purchase book
+>   (Canceling processed VAT)** page (**Accounts payable \> Periodic tasks \>
+>   Purchase book \> Canceling processed VAT**).
 
 4.  Go to **Accounts payable \> Periodic tasks \> Purchase book \> VAT
     processing log** to view the processed prepayment facture.
