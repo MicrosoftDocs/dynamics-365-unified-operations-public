@@ -106,7 +106,7 @@ When you want to attach a Retail Server Proxy API call to a module so it will ru
 
 2. Have the action method of our new data action be the Retail Server Proxy provided `retailAction`. `retailAction` is designed to parse the input that is passed to it and call the corresponding Retail Server Proxy API
 
-For example a new data action can be createe under the ***src\actions\*** directory called **getCagegoryList** with the below code:
+For example a new data action can be created under the ***src\actions\*** directory called **getCagegoryList.ts** with the below code:
 
 ```typescript
 import { IAction, createObservableDataAction, ICreateActionContext, } from '@msdyn365-commerce/core';
