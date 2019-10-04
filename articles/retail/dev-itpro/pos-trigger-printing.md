@@ -83,6 +83,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
 | PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |
 | PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |
+| PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |
 | PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |
 | PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |
@@ -157,9 +158,13 @@ The following table lists the available triggers and denotes whether they can be
 | PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
 | PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
 | PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during customer order.|
+| PreGetFulfillmentLinesTrigger 	| Cancelable 	 | Executed before the Order fulfillment lines is loaded onto the Order fulfillment view.|
 | PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by clicking the ship button.|
+| PostShipFulfillmentLinesTrigger	| Non-Cancelable 	 | Executed after the shipping is done from the Order fulfillment view by clicking the ship button.|
 | PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by clicking the Pack button.|
+| PostMarkFulfillmentLinesAsPackedTrigger	| Non-Cancelable 	 | Executed after the mark as packed option is triggered from the order fulfillment view by clicking the Pack button.|
 | PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option triggered is from the order fulfillment view by clicking the Pack button.|
+| PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option triggered is from the order fulfillment view by clicking the Pack button.|
 
 
 ## Shift triggers
