@@ -166,7 +166,9 @@ To enable saved views while the feature is in preview, follow the steps below:
 
 4.	**Enable the feature**: Find the **Saved views** feature in the list of features, and select **Enable now** on the details pane.
 
-All subsequent user sessions will start with saved views enabled.  
+All subsequent user sessions will start with saved views enabled.
+
+At this time, Saved Views is only for use in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments to allow for additional testing and design changes. A preview of Saved Views will be available in production environments soon.
 
 Note that if personalization is turned off for the environment, views will be disabled even if you follow the above steps. This is because the views feature is built on top of the personalization subsystem.
 
