@@ -127,21 +127,23 @@
             - name: Company integration
               items:
               - name: Company concept in Common Data Services
-                href: ../dev-itpro/data-entities/dual-write-company.md
+                href: data-entities/dual-write-company.md
               - name: Bootstrap with company data
-                href: ../dev-itpro/data-entities/dual-write-bootstrap.md
+                href: data-entities/dual-write-bootstrap.md
             - name: Integrated Customer Master
-              href: ../dev-itpro/data-entities/dual-write-customer.md
+              href: data-entities/dual-write-customer.md
             - name: Unified product experience
-              href: ../dev-itpro/data-entities/dual-write-product.md
+              href: data-entities/dual-write-product.md
             - name: Vendor integration
               items:
               - name: Integrated Vendor Master
-                href: ../dev-itpro/data-entities/dual-write-vendor.md
+                href: data-entities/dual-write-vendor.md
               - name: Switch between vendor designs
-                href: ../dev-itpro/data-entities/dual-write-vendor-switch.md
+                href: data-entities/dual-write-vendor-switch.md
             - name: Integrated sites and warehouses
               href: data-entities/dual-write-sites-and-warehouses.md
+            - name: Integrated Tax Master
+              href: data-entities/dual-write-tax.md
             - name: Initial synchronization
               href: data-entities/dual-write-initial.md
             - name: Troubleshooting data integration
