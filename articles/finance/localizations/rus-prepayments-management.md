@@ -139,21 +139,21 @@ General ledger parameters.
 >   **No**, the factures on prepayments are created in postponed mode. The
 >   setting of this parameter is inherited and can be changed in the following
 >   places:
-
--   On the **Payments** tab of the **Customer payments** page. (To open this
-    page, go to **Accounts receivable \> Payments \> Customer payment journal**,
-    and then, on the **Customer payment journal** page, on the Action Pane,
-    select **Lines**.)
-
--   In the **Convert to prepayment** dialog box. (To open this dialog box, go to
-    **Accounts receivable \> Periodic tasks \> Sales book \> Sales books
-    journal**, and then, on the **Sales book journal** page, on the Action Pane,
-    select **Functions \> Transform to prepayment**. Then, on the **Unsettled
-    payments** page, on the Action Pane, select **Prepayment handling**.)
-
--   Set the **Inherit invoice dimensions** option to **Yes** to copy financial
-    dimensions from the invoice to the payment when the payment proposal is
-    used.
+>
+>   -   On the **Payments** tab of the **Customer payments** page. (To open this
+>       page, go to **Accounts receivable \> Payments \> Customer payment journal**,
+>       and then, on the **Customer payment journal** page, on the Action Pane,
+>       select **Lines**.)
+>
+>   -   In the **Convert to prepayment** dialog box. (To open this dialog box, go to
+>       **Accounts receivable \> Periodic tasks \> Sales book \> Sales books
+>       journal**, and then, on the **Sales book journal** page, on the Action Pane,
+>       select **Functions \> Transform to prepayment**. Then, on the **Unsettled
+>       payments** page, on the Action Pane, select **Prepayment handling**.)
+>
+>   -   Set the **Inherit invoice dimensions** option to **Yes** to copy financial
+>       dimensions from the invoice to the payment when the payment proposal is
+>       used.
 
 3.  Close the page.
 
@@ -350,12 +350,12 @@ profiles](https://docs.microsoft.com/dynamics365/unified-operations/financials/a
 
 >   *Note:* To satisfy the requirements of the Russian legislation, the following
 >   settings should be used:
-
--   The **Summary account** field should typically be set to ledger account **60
-    [Liabilities]**, subaccount **Advances paid**.
-
--   The **Sales tax prepayments** field should typically be set to ledger
-    account **68 [Taxes]**, subaccount **VAT**.
+>
+>   -   The **Summary account** field should typically be set to ledger account **60
+>       [Liabilities]**, subaccount **Advances paid**.
+>
+>   -   The **Sales tax prepayments** field should typically be set to ledger
+>       account **68 [Taxes]**, subaccount **VAT**.
 
 ### Set up an incoming tax payment ledger account
 
@@ -484,12 +484,12 @@ Operations
 12.  Set the **Sales tax group** and **Item sales tax group** fields.
 
 >   *Note:*
-
--   The calculated tax will be recorded on the line for the generated facture.
-    Select the **Marked** check box for each line for the facture, and then, on
-    the Action Pane, select **Create**.
-
--   If dates or facture numbers aren't set, you receive a warning message.
+>
+>   -   The calculated tax will be recorded on the line for the generated facture.
+>       Select the **Marked** check box for each line for the facture, and then, on
+>       the Action Pane, select **Create**.
+>   
+>   -   If dates or facture numbers aren't set, you receive a warning message.
 
 The generated facture will be reflected on the **Facture journal** page, where
 the **Facture source** field will be set to the **Prepayment journal voucher**
@@ -505,8 +505,8 @@ facture can be processed for deduction.
 
 2.  On the Action Pane, select **Select** to find the required facture.
 
--   *Note:* The prepayment facture has a value of **Prepayment** in the
-    **Operation** field.
+>   -   *Note:* The prepayment facture has a value of **Prepayment** in the
+>       **Operation** field.
 
 3.  Mark the facture, and post the operation. After posting, there are a tax
     transaction and a general ledger transaction for the VAT amount:
