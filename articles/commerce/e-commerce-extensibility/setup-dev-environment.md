@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -65,7 +65,7 @@ Go to the [Yarn site](https://yarnpkg.com), and download and install the latest 
 
 The Online SDK provides everything that you require to extend your online channel. It even lets you create new modules, data actions, and themes.
 
-The SDK configuration package is available through the [Project.Rushmore GitHub repository](https://github.com/Microsoft/Project.Rushmore). Either download or clone the repo to a local folder on your development machine.
+The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository](https://github.com/microsoft/Msdyn365.Commerce.Online). Either download or clone the repo to a local folder on your development machine.
 
 > [!NOTE]
 > The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
