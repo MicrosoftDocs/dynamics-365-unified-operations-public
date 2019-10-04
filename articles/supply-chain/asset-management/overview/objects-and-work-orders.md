@@ -59,4 +59,4 @@ Several steps must be completed when you want to schedule and run a maintenance 
 ![Figure 4](media/08-overview-image.png)
 
 > [!NOTE]
-> In general, when you work in Microsoft Dynamics 365 for Finance and Operations and the **Asset Management** module, you select **New** to create a new record, you select **Edit** to update an existing record, and you select **Save** to save new or edited data.
+> In general, when you work in Dynamics 365 Supply Chain Management and the **Asset Management** module, you select **New** to create a new record, you select **Edit** to update an existing record, and you select **Save** to save new or edited data.

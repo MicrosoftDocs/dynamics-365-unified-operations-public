@@ -30,7 +30,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. This procedure requires Dynamics AX application 7.0.1 or later, and Dynamics AX platform 7.1.  
+This procedure demonstrates how to create and publish a new product assortment and uses the demo data company USRT. 
+
 
 1. Click Category and product management.
 

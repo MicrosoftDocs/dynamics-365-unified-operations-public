@@ -79,7 +79,7 @@ You can find opinions, news, and other information about Master planning and oth
 [Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the **Help** button on any page.
+Additional help is available as task guides. To access task guides, click the **Help** button on any page.
 
 ### Webinars
 [Use Azure machine learning for demand forecasting](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for external gift cards
-description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 for Retail.
+description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Retail.
 author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Application update 4
 
 To provide a seamless experience for their customers, retailers want to be able to accept a wide variety of payment methods. Gift cards are one of the most frequently used payment methods after cash and credit cards. An important requirement for many retailers is the ability to accept various types of gift cards, from various providers, at the point of sale (POS).
 
-Microsoft Dynamics 365 for Retail now supports external gift cards. Therefore, retailers can accept third-party gift cards from gift card providers such GiveX by using the POS. To take advantage of this functionality, you must have an account with an external gift card service provider. This functionality differs from the out-of-box gift card support that the solution offered.
+Microsoft Dynamics 365 Retail now supports external gift cards. Therefore, retailers can accept third-party gift cards from gift card providers such GiveX by using the POS. To take advantage of this functionality, you must have an account with an external gift card service provider. This functionality differs from the out-of-box gift card support that the solution offered.
 
 The out-of-box Verifone Payment connector has also been updated so that it supports the functionality for external gift cards. The initial update enables integration with GiveX.
 

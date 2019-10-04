@@ -74,5 +74,5 @@ features are in development.
 You can find opinions, news, and other information about Cost management on the [Dynamics AX Manufacturing R&D Team blog](https://blogs.msdn.microsoft.com/axmfg) and [Supply Chain Management in Dynamics AX R&D Team blog](https://blogs.msdn.microsoft.com/dynamicsaxscm). Although some of these posts were written for the previous version of Cost management, the same concepts still apply, and the procedures are also similar in the current version.
 
 #### Task guides
-Additional help is available as task guides inside Finance and Operations. To access task guides, click the Help button on any page.
+Additional help is available as task guides. To access task guides, click the Help button on any page.
 

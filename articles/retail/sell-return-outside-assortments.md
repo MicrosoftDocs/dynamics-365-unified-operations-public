@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sell and return products that aren't part of a store's assortment
-description: With Dynamics 365 for Retail, you can sell and return products outside of assortments.
+description: With Dynamics 365 Retail, you can sell and return products outside of assortments.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -41,7 +41,7 @@ Here are some typical scenarios:
 + A retailer doesn't carry specific products in the store or doesn't have them in stock at the store the customer visited, but the products are available in other stores. The store associate can assist the customer by searching or browsing the products in the other store, add them to the cart, and complete the checkout by selecting a delivery method.
 + A retailer has many stores in and around a specific city or zip code and doesn't want to force the customers to return products to the same store they were purchased in. Instead, customers can return products to any store.
 
-Those common scenarios are available for retailers using Dynamics 365 for Retail. With Retail, you can:
+Those common scenarios are available for retailers using Retail. With Retail, you can:
 
 + Search or browse products at other stores.
 + Search or browse all released products.

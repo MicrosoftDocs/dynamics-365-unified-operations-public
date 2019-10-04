@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Retail version 10.0.1
-description: This topic describes features that are in preview in Dynamics 365 for Retail. 
+description: This topic describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
 ms.date: 03/08/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
+This topic describes features that are new or changed in Dynamics 365 Retail. 
 
 To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.1 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-1).
 
@@ -51,7 +51,7 @@ For more information, see [Prorate header charges to matching sales lines](../..
 
 ## Loyalty changes
 
-Functionality has been added to enhance the loyalty features in Dynamics 365 for Retail.
+Functionality has been added to enhance the loyalty features in Retail.
 
 For more information, see [Loyalty overview](../../retail/set-up-customer-loyalty-program.md).
 

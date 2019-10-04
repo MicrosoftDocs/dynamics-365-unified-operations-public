@@ -30,9 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This procedure demonstrates how to assign sales tax groups to retail channels. It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group. This procedure
-
-uses the USRT company in demo data.
+This procedure demonstrates how to assign sales tax groups to retail channels. It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group. This procedure uses the USRT company in demo data.
 
 1. Go to Retail and commerce > Channels > Retail stores > All retail stores.
 2. In the list, click the Retail Channel ID link for "Houston."
