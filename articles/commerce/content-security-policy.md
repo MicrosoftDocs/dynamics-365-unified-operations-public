@@ -61,7 +61,21 @@ Content Security Policy is enabled by default and will require some extra config
 
 As an example, with content security policy enabled, if a site needs to call an external script such as https://www.example.com/scripts/example.js, an entry must add it to the **script-src** directive under the **Content Security Policy** tab on the **Site Management** **Extensibilty** page.
 
-[Content Security Policy](media\content-security-policy.png)
+![Content Security Policy](media/content-security-policy.png)
 
-Navigate to the app-settings section in the authoring experience by clicking on ‘Site Management’ and then click on ‘Extensibility’
+After any changes are made, ensure the "Save adn Publish" button is pressed.
+
+## Understanding CSP errors
+When initially configuring CSP for a site it can be common to see pages not load or not work as intended because CSP is preventing requests, scripts, etc. from loading. 
+Fortunately, CSP logs some helpful errors to the console and we can use these errors to fix, fine-tune and even help cleanup unwanted or unneeded requests.
+
+Below is an example error shown within a web browser's developer tools.
+
+![Content Security Policy Error](media/content-security-policy-error.png)
+
+In this case we have two CSP errors:
+
+1.	Eval is blocked by default because it can lead to arbitrary Javascript execution. If you must allow it, you must add ‘unsafe-eval’ (single quotes required) to your sites script-src directive.
+2.	The stylesheet from https://int.fabrikam.com  is blocked. To allow it, add an entry to the style-src to allow stylesheets to be loaded from this domain
+
 
