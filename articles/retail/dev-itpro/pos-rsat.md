@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Retail Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 This topic explains how to use the new test recorder tool in Retail Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
-This topic applies to Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Finance and Operations version 10.0.5 (October 2019) and later.
+This topic applies to Microsoft Dynamics 365 Retail and Microsoft Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
 > The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
@@ -224,13 +224,13 @@ Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regre
 
 The following procedure describes the configuration that is required to run the Retail POS test cases.
 
-If you are using the preview version of POS RSAT then after installation of RSAT, add the below setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file located in main RSAT installation folder (usually  C:\Program Files (x86)\Regression Suite Automation Tool).
+If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
 
 ```C#
 <add key="RetailPos" value="true" />
 ```
 
-If this setting is not set, Retail POS tab will not be shown in RSAT Settings tab.
+If this setting is not used, Retail POS tab will not be shown on the **RSAT Settings** tab.
 
 ### Configure the Retail POS settings
 
@@ -350,6 +350,6 @@ You must manually delete these files and secure them as you require. All these f
 + Recording and playback must be done in the same screen layout and at the same resolution. If recording and playback are done in different layouts and at different resolutions, playback will fail.
 + You can't change the POS user name during playback of a recording. When you make a recording, always use the same user name that will be used later for playback.
 + Recording the POS activation flow is not supported.
-+ Keystroke recording performance is getting improved, while recording please type slowly so that all the events are captured property.
-+ Peripheral emulation is not supported for now, use keyboard wedge based device.
-+ Don’t hold a key down during recording to avoid multiple key press events.
++ Keystroke recording performance may be slow, so type slowly while recording so that all the events are captured property.
++ Peripheral emulation is currently not supported, use a keyboard wedge-based device.
++ Don’t hold a key down during recording, as this could record multiple key press events.
