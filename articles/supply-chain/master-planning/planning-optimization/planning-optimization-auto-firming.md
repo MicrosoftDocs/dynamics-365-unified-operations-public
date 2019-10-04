@@ -52,9 +52,11 @@ The **Automatic firming time fence (days)** control what planned orders to firm.
 - **Item coverage** > **General** > **Automatic firming time fence (days):** You can overwrite the firming time fence defined on the **Coverage group** for a specific item **.**
 - **Master plans** > **Time fence in days** > **Firming:** For a specific Master plan you can overwrite the firming time fence defined on the **Coverage group** and **Item coverage** by selecting **Yes** and set the number of days. This will apply to all items included during the planning run.
 
-Note that the date used to determine what planned orders to firm differs between the built-in Finance and Operations planning engine and Planning Optimization. The built-in Finance and Operations planning engine use **Requirement date** (end date) from planned orders to determine what planned orders to firm. Planning Optimization use the **Order date** (start date).
+For master planning run with Planning Optimization there is an option to **Enable auto-firming**. When checkmarked the auto-firming process is performed according to auto-firming setup. Without checkmark the auto-firming process is skipped.
 
-**Built-in Finance and Operations planning engine**
+Note that the date used to determine what planned orders to firm differs between the built-in Supply Chain Management planning engine and Planning Optimization. The built-in Supply Chain Management planning engine use **Requirement date** (end date) from planned orders to determine what planned orders to firm. Planning Optimization use the **Order date** (start date).
+
+**Built-in Supply Chain Management planning engine**
 
 - Auto firming based is on **Requirements date** (end date).
 - You need the firming time fence to be longer than your lead time to ensure that orders are firmed (released) in due time.
