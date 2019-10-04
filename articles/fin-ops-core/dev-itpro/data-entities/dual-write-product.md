@@ -40,7 +40,7 @@ When a business ecosystem is made up of Dynamics 365 applications, such as Finan
 
 Here is the product data model from Sales.
 
-![Data model for products Sales](media/dual-write-product-4.jpg)
+![Data model for products in CE](media/dual-write-product-4.jpg)
 
 Here is the product data model from Finance and Operations apps.
 
@@ -62,7 +62,7 @@ Released products V2 | msdyn\_sharedproductdetails
 CDS released distinct products | Product
 Product number identified barcode | msdyn\_productbarcodes
 Default order settings | msdyn\_productdefaultordersettings
-Product specific default order settings | msdyn_productspecificdefaultordersettings
+Product specific default order settings | msdyn_productdefaultordersettings
 Product dimension groups | msdyn\_productdimensiongroups
 Storage dimension groups | msdyn\_productstoragedimensiongroups
 Tracking dimension groups | msdyn\_producttrackingdimensiongroups
@@ -80,6 +80,10 @@ Unit conversions | msdyn_ unitofmeasureconversions
 Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
 Sites | msdyn\_operationalsites
 Warehouses | msdyn\_inventwarehouses
+Product categories | msdyn_productcategories
+Product category hierachies | msdyn_productcategoryhierarhies
+Product category hierarchy roles | msdyn_productcategoryhierarchies
+Product category assignments | msdyn_productcategoryassignments
 
 [!include [symbols](../includes/dual-write-symbols.md)]
 
@@ -97,7 +101,9 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 With the dual-write functionality enabled, the apps from Finance and Operations will be syncronized in other Dynamics 365 apps in **Draft** state. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in a Dynamics 365 app that matches the currency of your legal entity where the product is released in a Finance and Operations app. 
 
-To synchronize the product with **Active** state, so you can directly use it in sales order quotations, for example, the following setting needs to be chosen: under **System> Adminstration > System administration > System settings > Sales** select **Create products in active state = yes**. 
+By default products from Finance and Operations apps are synchronized to Customer Engagement in **Draft** state. To synchronize the product with **Active** state, so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: under **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
+
+Note that the synchronization of products happens from Finance and Operations apps to CDS. This means that the values of the product entity fields can be changed in Common Data Service, but when the synchronization is triggered (when a product field is modified in a Finance and Operations app), this will overwrite the values in Common Data Service. 
 
 ### CDS released distinct products to Product
 
@@ -251,7 +257,7 @@ Product dimensions are characteristics that identify a product variant. The four
 
 ### Colors
 
-The possible colors in are available in Common Data Service through the following mappings.
+The possible colors in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -259,7 +265,7 @@ COLORID | \>\> | msdyn\_productcolorname
 
 ### Sizes
 
-The possible sizes in are available in Common Data Service through the following mappings.
+The possible sizes in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -267,7 +273,7 @@ SIZEID | \>\> | msdyn\_productsize
 
 ### Styles
 
-The possible styles in are available in Common Data Service through the following mappings.
+The possible styles in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -275,7 +281,7 @@ STYLEID | \>\> | msdyn\_productstyle
 
 ### Configurations
 
-The possible configurations in are available in Common Data Service through the following mappings.
+The possible configurations in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -298,7 +304,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_retaildisplayorder
 
 ### Shared product size
 
-The **Shared product size** entity indicates the sizes that a specific product master ican have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
+The **Shared product size** entity indicates the sizes that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 Source field | Map type | Destination field
 ---|---|---
@@ -610,3 +616,79 @@ GROUPDESCRIPTION | = | msdyn_groupdescription
 ISBLANKRECEIPTALLOWEDFORLOCATION | >< | msdyn_isblankreceiptallowedforlocation
 ISBLANKISSUEALLOWEDFORLOCATION | >< | msdyn_isblankissueallowedforlocation
 
+## Product hierarchies
+
+You use product hierarchies to categorize or group products. The product categories, category hierachies and the category roles from Dynamics 365 Finance and Operations are available in CDS using the following entities.
+
+### Product category hierarchy
+
+The category hierarchies are available in CDS using the Prodcut category hierarchy entity. This entity lists all the hierarchies and their descriptions. It has the following mappings. 
+
+Source field | Map type | Destination field
+---|---|---
+HIERARCHYNAME | = | msdyn_name
+HIERARCHYDESCRIPTION | = | msdyn_description
+
+### Product category
+
+Each of the product categories and information about its structure and characteristics are contained in the product category entity. The mappings are shown in the table below. 
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_hierarchy.msdyn_name
+ISCATEGORYINHERITINGPARENTPRODUCTATTRIBUTES | >< | msdyn_isinheritingparentproductattributes
+PROJECTCATEGORYNAME | = | msdyn_projectcategoryname
+ISTANGIBLEPRODUCT | >< | msdyn_istangibleproduct
+ISCATEGORYINHERITINGPARENTCATEGORYATTRIBUTES | >< | msdyn_isinheritingparentcategoryattributes
+CATEGORYCODE | = | msdyn_code
+CATEGORYDESCRIPTION | = | msdyn_description
+CATEGORYKEYWORDS | = | msdyn_keywords
+CATEGORYNAME | = | msdyn_name
+FRIENDLYCATEGORYNAME | = | msdyn_friendlycategoryname
+PARENTPRODUCTCATEGORYNAME | = | msdyn_parentproductcategory.msdyn_name
+PRODUCTCATEGORYHIERARCHYNAME | >> | msdyn_parentproductcategory.msdyn_hierarchy.msdyn_name
+
+### Product category assignments
+
+To assign a product to a category the product category assignments entity can be used. It relates the product and the category using the following mappings. 
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTNUMBER | = | msdyn_globalproduct.msdyn_productnumber
+PRODUCTCATEGORYNAME | = | msdyn_productcategory.msdyn_name
+PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_productcategory.msdyn_hierarchy.msdyn_name
+PRODUCTNUMBER | >> | msdyn_name
+
+### Product category role
+
+Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
+
+Source field | Map type | Destination field
+---|---|---
+PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_hierarchy.msdyn_name
+HIERARCHYROLE | >< | msdyn_hierarchyrole
+
+## Integration key for products 
+
+To uniquely identify products between Dynamics 365 for Finance and Operations and products in CDS the integration keys are used. 
+For products the **(productnumber)** is the unique key that identifies a product in CDS. It is composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in Finance and Operations and **msdyn_productnumber** indicates the product number for the specific product in Finance and Operations. 
+
+For a Customer Engagement user, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the field is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) field, the unique key for a product, is not shown. 
+
+Note that if apps are built on top of CDS, especial attention should be paid to using the (productnumber), that is the unique product ID, as the integration key, and not the msdyn_productnumber, due to the fact that the last is not unique. 
+
+## Initial synchronization of products and migration of data from CDS to Finance and Operations
+
+### Initial synchronization of products 
+
+When dual write is enabled, products from Dynamics 365 Finance and Operations are synchronized to CDS/Customer Engagement. Note that prior to enabling dual-write, products created in CDS/Customer Engagement will not be updated or matched with product data from Finance and Operations. 
+
+### Matching product data from Finance and Operations and Customer Engagement
+
+If the same products are kept (overalpping/matching) in Finance and Operations and in CDS/Customer Engagement, when enabling dual-write the synchronization of products from Finance and Operations will take place, and duplicate records will appear in CDS for the same product. 
+
+To avoid the previous situation, if Customer Engagement has products that are overlapping/matching with Finance and Operations, then the administrator enabling dual write must bootstrap the fields "**Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") once dual-write is enabled. It will update those Customer Engagement products with data from Finance and Operations. This is applicable for both distinct products and product variants. 
+
+### Migration of product data from Customer Engagement to Finance and Operations
+
+If Customer Engagement has products that are not present in Finance and Oeprations, the administrator can first use the **EcoResReleasedProdcutCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and Customer Engagement as described above. 
