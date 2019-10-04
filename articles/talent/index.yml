@@ -15,7 +15,7 @@ metadata:
   hide_bc: false
 
 # productDirectory section (optional)
-productDirectory:
+# productDirectory:
   items:
     # Card
     - title: "Dynamics 365 Talent: Core HR"
