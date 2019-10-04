@@ -80,6 +80,9 @@ The following table shows the POS views that currently support extensions. It al
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
 | FulfillmentLineView             | No                            | Yes                          | No                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
+| PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                    |
+| PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
+
 
 
 > [!NOTE]
