@@ -154,7 +154,6 @@ General ledger parameters.
 3.  Close the page.
 
 ### Operations
-----------
 
 #### Register a prepayment from a customer and print the facture
 
