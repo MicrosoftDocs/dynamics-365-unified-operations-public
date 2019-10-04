@@ -208,7 +208,7 @@ Operations
     [[Invoices for
     payment](rus-invoice-payment.md)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/rus-invoice-payment).
 
-![](media/e848aaa5cea7617741a0f5e80f308964.png)
+![](media/2%20Journal%20of%20invoices%20for%20payment.png)
 
 >   A screenshot of a cell phone Description automatically generated
 
