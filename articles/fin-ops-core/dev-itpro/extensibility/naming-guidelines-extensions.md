@@ -71,3 +71,155 @@ Fields, field groups, indexes, relations, and metadata elements added in extensi
 Variables and methods added in extension classes must have a name that is unique across both the type that is being extended and all other extension classes that extend the same type. Therefore, **these variables and methods should include a prefix** that minimizes the risk of conflicts across models. 
 
 + Include a prefix, term, or abbreviation at the beginning of the member name. For example, an approving worker class-level variable might be named **WHSApprovingWorker** if **WHS** is one of the prefixes that are used by other elements in the model. An **approveWork** method might be named **WHSApproveWork** if **WHS** is one of the prefixes that are used by other elements in the hosting model.
+
+## Alternative naming convention
+
+Implementation team could choose another way of naming objects with following convention.
+
+### Simple naming rule
+
+The naming rule is quite simple and straighforward - to use suffixes instead of prefixes:
+
+- Use suffix <b>_PRJ_Extension</b> (hereafter <b>_PRJ</b> is capitalized model acronym) to name the class extension.
+
+  Example:
+  ```
+  Classes\InventJournalTrans_PRJ_Extension  
+  Classes\PurchTableForm_PurchTableDS_PRJ_Extension
+  Classes\SalesFormLetter_PRJ_Extension
+  ```
+
+- Use suffix <b>_PRJ</b> to name any other application object/element (including methods and form artifacts on extensions).
+
+  Example:
+  ```
+  BaseEnums\BankClientStreamType_PRJ
+  BaseEnums\DayNight_PRJ
+  BaseEnums\GanttBorderType_PRJ
+  ExtendedDataTypes\DirOrganizationRoles_PRJ
+  ExtendedDataTypes\ProjCategoryItemId_PRJ
+  ExtendedDataTypes\EcoResProductTypeCategoryId_PRJ
+  Tables\EcoResCategoryGroupsTable_PRJ
+  Tables\CustomerEntityStaging_PRJ
+  Tables\DispatchBoardProfile_PRJ
+  Views\WorkflowCommentList_PRJ
+  Views\PurchTableLastReqView_PRJ
+  Queries\ActivityListOpen_PRJ
+  Queries\AssetRecordList_PRJ
+  BaseEnumExtensions\CaseCategoryGroupType.Extension_PRJ
+  BaseEnumExtensions\NumberSeqModule.Extension_PRJ
+  ExtendedDataTypesExtensions\CalendarId.Extension_PRJ
+  ExtendedDataTypesExtensions\Description.Extension_PRJ
+  ExtendedDataTypesExtensions\Name.Extension_PRJ
+  TableExtensions\EcoResCategory.Extension_PRJ
+  ViewsExtensions\CaseCategoryGroupType.Extension_PRJ
+  ViewsExtensions\NumberSeqModule.Extension_PRJ
+  QueryExtensions\smmActivities.Extension_PRJ
+  FormExtensions\RetailStoreTable.Extension_PRJ
+  FormExtensions\SalesAgreement.Extension_PRJ
+  DataEntities\InventJournalTableEntity_PRJ
+  Tables\InventJournalTableStaging_PRJ
+  SecurityPrivileges\InventJournalTableEntityMaintain_PRJ
+  SecurityPrivileges\InventJournalTableEntityView_PRJ
+  Forms\PurchTable.Extension_PRJ\Datasources\PurchTable_PRJ
+  Classes\SalesFormLetter_PRJ_Extension
+  Classes\PurchReqWFExpendiParticipantProvider_PRJ_Extension
+  ```
+
+- Use special naming for Jobs(Runnable classes) to find them by Work Item Id.
+
+  Example:
+  
+  ```
+  PRJ00101_UpdateSalesOrder (where 00101 is Work Item Id) 
+  ```
+
+- For implementing event handlers we should use <b>EventHandler_PRJ</b> suffix, accompanying table name.
+
+  ```
+  class EcoResAttributeValueEventHandler_PRJ
+  {
+      [DataEventHandler(tableStr(EcoResAttributeValue), DataEventType::Inserting)]
+      public static void EcoResAttributeValue_onInserting(Common sender, DataEventArgs e)
+      {
+          EcoResAttributeValue ecoResAttributeValue = sender as EcoResAttributeValue;
+          // Call the method as if it was defined directly on EcoResAttributeValue.
+          ecoResAttributeValue.defaultCategoryGroupId_PRJ();
+      }
+  }
+  ```
+
+- For implementing event handlers on the forms, please use <b>FormEventHandler_PRJ</b> suffix, accompanying with form name.
+
+  ```
+  class EcoResAttributeValueFormEventHandler_PRJ
+  {
+      [FormEventHandler(formStr(EcoResAttributeValue), FormEventType::Closing)]
+      public static void EcoResAttributeValue_OnClosing(xFormRun sender, FormEventArgs e)
+      {
+          FormDataSource ecoResProduct_ds = sender.dataSource(formDataSourceStr(EcoResAttributeValue, EcoResProductAttributeValue));
+          EcoResProductAttributeValue ecoResAttributeValue = ecoResProduct_ds.cursor();
+      }
+  }
+  ```
+
+### Benefits
+
+- Proposed naming will help the developer easily find the existing extensions or customizations for the object.<br/>Thus class-extentions will be aligned with extended class as well as inherited-classes.
+
+  Example:
+
+  ```
+  Tables\EcoResProduct
+  Tables\EcoResProductType_PRJ
+  Table Extensions\EcoResProduct.Extension_PRJ
+  ...
+  Classes\SalesFormLetter
+  Classes\SalesFormLetter_PRJ_Extension
+  ...
+  Classes\SalesFormLetter_Invoice  
+  Classes\SalesFormLetter_Invoice_PRJ_Extension
+  ```
+
+- Code extentions well-aligned with standard methods
+
+  Example:
+
+  ```
+  [ExtensionOf(tableStr(EcoResCategory))]
+  final class EcoResCategory_PRJ_Extension
+  {
+      public static EcoResCategory findByCode_PRJ(EcoResCategoryCommodityCode _ecoResCategoryCommodityCode,
+                                                  EcoResCategoryHierarchyId   _ecoResCategoryHierarchyId,
+                                                  boolean                     _forUpdate = false)
+      {
+        ...
+      }
+  }
+
+
+  // example of using
+
+  class PRJ0001_TutorialJob
+  {
+     EcoResCategory ecoResCategory = EcoResCategory::findByCode_PRJ(...);
+  }
+
+  ```
+
+- VisualStudio IntelliSense helps to the developer to code with looking up of standard and new objects, alphabetically ordered.
+Naming conventions contribute to consistency and to making the application easier to understand.
+
+- The naming rule is well-determined leaving the developer from doubts in naming. 
+
+- Present naming convention is fully align with having several models used in implementation projects.
+
+  Example (with single _global_ model with models by countries\regions):
+
+  ```
+  Table Extensions\PurchTable\Fields\PaymClassId_PRJ (sample model 'Project' with arconym 'PRJ')
+  Table Extensions\PurchTable\Fields\IntrastatCode_PRJEU
+  Table Extensions\PurchTable\Fields\PaymClassId_PRJAPAC
+  Table Extensions\PurchTable\Fields\PaymClassId_PRJUS
+  ```
+  
