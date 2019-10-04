@@ -39,27 +39,29 @@ In this topic, you will learn how to use database movement operations to perform
 
 ## Database movement quick start guides
 Learn how to perform the individual operations on your Standard or Premier Acceptance Test environments:
- * [Refresh database](database-refresh.md)
- * [Export a database](export-database.md)
- * [Import a database](import-database.md)
- * [Point-in-time restore (PITR)](database-point-in-time-restore.md)
 
- ## Step-by-step tutorials
- Learn how to achieve common implementation scenarios using DataALM to your advantage:
- * [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
- * [Debug a copy of the production database](dbmovement-scenario-debugdiag.md)
- * [Export a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
- * [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
- * [Destructive testing](dbmovement-scenario-destructivetests.md)
+* [Refresh database](database-refresh.md)
+* [Export a database](export-database.md)
+* [Import a database](import-database.md)
+* [Point-in-time restore (PITR)](database-point-in-time-restore.md)
 
- ## Database Movement API
- Our Database Movement API enables you to integrate several of the above database movement operations in to your overall ALM process.  In addition, by using the API with your scheduling engine of choice, you can build in recurrence to execute daily or on-demand.
- * [Overview](./api/dbmovement-api-overview.md)
- * [Versioning and support](./api/dbmovement-api-versioning-support.md)
- * [Authentication](./api/dbmovement-api-authentication.md)
- * [Throttling](./api/dbmovement-api-throttling.md)
- * [Reference](./api/v1/dbmovement-api-v1-overview.md)
- 
+## Step-by-step tutorials
+Learn how to achieve common implementation scenarios using DataALM to your advantage:
 
- > [!IMPORTANT]
- > New features around point-in-time restore, and RESTful APIs are in private preview. To sign up for the private preview program, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
+* [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
+* [Debug a copy of the production database](dbmovement-scenario-debugdiag.md)
+* [Export a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
+* [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
+* [Destructive testing](dbmovement-scenario-destructivetests.md)
+
+## Database Movement API
+The Database Movement application programming interface (API) lets you integrate several of the previously mentioned database movement operations into your overall ALM process. In addition, by using the API together with your preferred scheduling engine, you can build recurrence into the process, so that it runs daily or on demand.
+
+* [Overview](./api/dbmovement-api-overview.md)
+* [Versioning and support](./api/dbmovement-api-versioning-support.md)
+* [Authentication](./api/dbmovement-api-authentication.md)
+* [Throttling](./api/dbmovement-api-throttling.md)
+* [Reference](./api/v1/dbmovement-api-v1-overview.md)
+
+> [!IMPORTANT]
+> New features around point-in-time restore, and RESTful APIs are in private preview. To sign up for the private preview program, please [complete the private preview survey](https://aka.ms/SelfServiceDatabaseMovementPreview).
