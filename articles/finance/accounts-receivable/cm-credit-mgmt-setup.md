@@ -68,9 +68,9 @@ You can set the timing for checking sales orders for credit issues. The **Credit
 
 You can also define the number of grace days before the credit rules are checked again. Although you may specify that the credit management rules are checked at posting, the rules will not be checked for the specified number of grace days. For example, if you confirm a sales order on day 1 and you specify 2 grace days for the confirmation step, then credit rules won't be checked at the next posting step, such as creating a packing slip, invoicing the order, and so on, until day 4. On or after day 4, the rules will be checked again when posting occurs and the number of grace days will be changed to the grace days value for the next posting checkpoint.
 
-If you don't specify the number of grace days, the credit rules will be checked at the first posting step that is set to execute credit management rules. All subsequent checks will be ignored.
+If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set to execute credit management rules. If you release the sales order without posting and then execute the same order processing step again, it will check the credit rules again. For exmaple, if an order is put on hold after a confirmation and you release it with or without posting, it will be placed on hold again if you confirm it again. Use grace days if you want the order to move on to the next processing step without being held again.
 
-You can't specify grace days for some posting checkpoints and without any grace days for other checkpoints. You must set up all posting checkpoints with grace days or set them up so that none of them have grace days.
+You can't specify grace days for some posting checkpoints and no grace days for other checkpoints. You must set up all posting checkpoints with grace days or set them all up with no grace days.
 
 1. Select the check box in the **Posting** column to execute the credit management rules when the posting checkpoint shown on the line is executed. If you don't select the check box, the rules will only be checked once during the entire posting process.
 
