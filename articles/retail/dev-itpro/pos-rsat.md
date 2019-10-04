@@ -226,7 +226,7 @@ The following procedure describes the configuration that is required to run the 
 
 If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
 
-```C#
+```Xml
 <add key="RetailPos" value="true" />
 ```
 
