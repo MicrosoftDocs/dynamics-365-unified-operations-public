@@ -51,13 +51,19 @@ You can place a sales order on hold if the cash discount on the order doesn't ma
 
 If settlement discounts rankings are active, the sales orders will be placed on hold if the cash discount on the order has a higher rank than the default cash discount on the customer.
 
-### Reasons
+## Reasons
 
 There are several types of reasons used in credit management:
 
 - Hold reasons are used to define why a sales order was placed on hold
 - Release reasons are assigned to an order when the order that was on hold is released
 - Status reasons are used to indicate the reason that an account status was assigned to a customer
+
+You can set up Reasons on the **Credit management > Setup > Credit management> Credit management reasons** page.
+
+1. Select the **Reason type** for the reason. You can select Hold or Release
+2. Enter the **Reason** name for the reason.
+2. Enter the **Description** for the reason code.
 
 ## Credit management groups
 
