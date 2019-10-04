@@ -88,17 +88,6 @@ The behavior of the **Credit limit used** rule will change based on the settings
 2. If the parameter is set to Yes and the **Message when exceeding credit limit** is set to warning, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be executed to see if you have rules that you want executed. However, for this scenario, you would normally not add any rules.
 3. If the parameter is set to Yes and the **Message when exceeding credit limit** is set to error, then the credit limit will be checked and the order will be put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be executed to see if you have additional rules that you want executed. An error message will not be shown but the "Exceeded credit limit** blocking reason will be shown. 
 
-## MOVE Set up reasons to a better location
-## Set up Reasons	
-
-When you place an order on hold or release an order from hold, you must specify the reasons for the hold actions. Hold reasons are used when setting orders on hold and are available on the customer detail form and on the forced hold periodic job.  Release reasons are used when releasing orders from credit management review in the credit management queue. 
-
-You can set up Reasons on the **Credit management > Setup > Reasons** page.
-
-1. Select the **Reason type** for the reason. You can select Hold or Release
-2. Enter the **Reason** name for the reason.
-2. Enter the **Description** for the reason code.
-
 ## Put a sales order on hold based on other criteria
   
 ### Rank Payment Terms	
