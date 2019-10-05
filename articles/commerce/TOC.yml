@@ -244,6 +244,8 @@
             href: associate-site-online-store.md
           - name: Configure your domain name
             href: configure-your-domain-name.md
+          - name: Add support for a content delivery network (CDN)
+            href: add-cdn-support.md
           - name: Enable location-based store detection
             href: enable-store-detection.md
         - name: Manage your site
