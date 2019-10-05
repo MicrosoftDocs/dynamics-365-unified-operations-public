@@ -23,7 +23,7 @@ ms.search.scope: Operations, Retail
 ms.search.region: Austria
 ms.search.industry: Retail
 ms.author: v-alexec
-ms.search.scope: Retail
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 

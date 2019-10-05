@@ -1,8 +1,8 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
 title: Microsoft Dynamics 365 Talent documentation # < 60 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
-# brand: dynamics
+brand: dynamics
 
 metadata:
   title: Microsoft Dynamics 365 Talent documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -15,7 +15,7 @@ metadata:
   hide_bc: false
 
 # productDirectory section (optional)
-# productDirectory:
+productDirectory:
   items:
     # Card
     - title: "Dynamics 365 Talent: Core HR"
