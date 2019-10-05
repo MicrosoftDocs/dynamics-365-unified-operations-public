@@ -248,6 +248,8 @@
             href: add-cdn-support.md
           - name: Enable location-based store detection
             href: enable-store-detection.md
+          - name: Set up custom pages for user sign-ins
+            href: custom-pages-user-logins.md
         - name: Manage your site
           items:
           - name: Manage users and roles
@@ -280,10 +282,16 @@
             href: add-languages-to-site.md
         - name: Pages
           items:
+          - name: Modify an existing site page
+            href: modify-existing-page.md
+          - name: Add a new site page
+            href: add-new-page.md
           - name: Select page layouts
             href: select-page-layouts.md
           - name: Manage SEO metadata
             href: manage-seo-metadata.md
+          - name: Save, preview, and publish a page
+            href: save-preview-publish-page.md
           - name: Enrich a product page
             href: enrich-product-page.md
         - name: Modules
