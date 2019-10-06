@@ -171,7 +171,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. For region, select **East US**, **East US 2**, **West US** or **West US 2**.
 1. For "**Select a version**", first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below.
 1. Enable **Apply extension**.
-1. From the list of extensions, choose **Dynamics 365 Commerce Preview Demo Extension**.
+1. From the list of extensions, choose **Commerce Preview Demo Base Extension**.
 1. Click **Initialize**.
 1. On the deployment confirmation screen, after verifying that the details are correct, click **Yes**.
 1. You are returned to the **Retail management** view with the **Retail** tab activated. Your RCSU has been queued for provisioning.
