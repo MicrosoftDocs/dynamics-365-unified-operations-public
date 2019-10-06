@@ -129,7 +129,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. If you are a customer, choose **Asset library** from the top menu.
 1. Select **Software deployable package** from the list on the left.
 1. Click **IMPORT** from the action pane.
-1. Select **Dynamics 365 Commerce Preview Demo Extension** from the list of assets under **SHARED ASSET LIBRARY**.
+1. Select **Commerce Preview Demo Base Extension** from the list of assets under **SHARED ASSET LIBRARY**.
 1. Click **Pick**.
 1. You will be returned to the Asset library and you should see the extension in the list.
 
