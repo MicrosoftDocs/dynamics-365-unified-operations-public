@@ -42,7 +42,7 @@ There are four tabs where you can change the parameters that control credit mana
 
 ### Order on hold
 
-1.	Select **Yes** for **Allow edit of sales orders after order hold is released** to require the sales order to check the rules again if it has been edited after being released from the on-hold queue. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
+1.	Select **Yes** for **Allow edit of sales orders after order hold is released** to require the sales order to check the rules again if it has been edited after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
 
 2.	Select the default release reason for the **Reasons for canceled orders** field. This will be the default reason used when a sales order that was on credit management hold is cancelled.
 
@@ -68,7 +68,7 @@ You can set the timing for checking sales orders for credit issues. The **Credit
 
 You can also define the number of grace days before the credit rules are checked again. Although you may specify that the credit management rules are checked at posting, the rules will not be checked for the specified number of grace days. For example, if you confirm a sales order on day 1 and you specify 2 grace days for the confirmation step, then credit rules won't be checked at the next posting step, such as creating a packing slip, invoicing the order, and so on, until day 4. On or after day 4, the rules will be checked again when posting occurs and the number of grace days will be changed to the grace days value for the next posting checkpoint.
 
-If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set to execute credit management rules. If you release the sales order without posting and then execute the same order processing step again, it will check the credit rules again. For exmaple, if an order is put on hold after a confirmation and you release it with or without posting, it will be placed on hold again if you confirm it again. Use grace days if you want the order to move on to the next processing step without being held again.
+If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set to execute credit management rules. If you release the sales order without posting and then execute the same order processing step again, it will check the credit rules again. For example, if an order is put on hold after a confirmation and you release it with or without posting, it will be placed on hold again if you confirm it again. Use grace days if you want the order to move on to the next processing step without being held again.
 
 You can't specify grace days for some posting checkpoints and no grace days for other checkpoints. You must set up all posting checkpoints with grace days or set them all up with no grace days.
 
