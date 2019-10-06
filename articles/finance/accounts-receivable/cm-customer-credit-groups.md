@@ -37,9 +37,7 @@ ms.dyn365.ops.version:
 
 ## Customer credit groups
 
-You can define a group of customers so that members of the group can share a credit limit. In addition, the individual credit limit defined on the customer invoice account is also considered. Members of a customer credit group can be selected from different legal entities. 
-
-If a customer is added to a customer credit group, the customer credit group credit limit is assigned to that customer, although you can use the standard credit limit functionality. When you add a customer to the list of customers in the customer credit group, the credit limit expiration date for each customer will be changed to the expiration date that is assigned to the group. 
+You can define a group of customers so that members of the group can share a credit limit. In addition, the individual credit limit defined on the customer invoice account is also considered. Members of a customer credit group can be selected from different legal entities. When you add a customer to the list of customers in the customer credit group, the credit limit expiration date for each customer will be changed to the expiration date that is assigned to the group. 
 
 You can set up the customer credit groups on the **Credit management > Customer credit groups > Customer credit groups** page.
 
