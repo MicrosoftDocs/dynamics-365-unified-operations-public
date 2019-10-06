@@ -61,7 +61,7 @@ There are several types of reasons used in credit management:
 
 You can set up Reasons on the **Credit management > Setup > Credit management> Credit management reasons** page.
 
-1. Select the **Reason type** for the reason. You can select Hold or Release
+1. Select the **Reason type** for the reason. You can select Hold, Release, or Status
 2. Enter the **Reason** name for the reason.
 2. Enter the **Description** for the reason code.
 
