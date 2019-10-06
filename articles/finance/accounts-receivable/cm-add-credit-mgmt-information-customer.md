@@ -61,7 +61,3 @@ Also note that some information that is shown on the customer page is created by
 3.	**Temporary credit limits** override the customer credit limit for a period of time.  It will be used instead of the credit limit to calculate the total credit limit. It is only shown if there is an active credit limit. You can add temporary credit limits using credit limit adjustments.
 4.	The amount displayed in the **Insurance and guarantees** field shows the total value of insurance and guarantees that can increase the credit limit for the customer.
 5.	The **Total credit limit** fields shows the final credit limit for the customer including insurance and guarantees, and temporary credit limits.
-
-## Temporary credit limits
-
-Temporary credit limits override the customer credit limit for a period of time. You can add temporary credit limits using credit limit adjustments.
