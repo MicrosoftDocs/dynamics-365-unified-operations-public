@@ -82,13 +82,13 @@ To enter temporary credit limit changes manually, add the following information 
 
 You can also generate credit limits automatically using the **Generate** menu in the Action Pane.
 
-- From existing - customer
-- From existing - customer credit group
+- From existing customer
+- From existing customer credit group
 - Automatic credit limits
 
 ### From existing customers
 
-You can create journal lines from existing customers. When you select **Generate > From existing - customer**, a dialog displays that you can use to provide criteria for selecting customers and calculating the new limits:
+You can create journal lines from existing customers. When you select **Generate > From existing customer**, a dialog displays that you can use to provide criteria for selecting customers and calculating the new limits:
 
 1. Select **Yes** in the **Include customer credit limits** field to generate a new credit limit using the current customer credit limit found in the **Customer credit limit** field.
 
@@ -108,7 +108,7 @@ You can create journal lines from existing customers. When you select **Generate
 
 ### From existing customer credit groups
 
-You can create journal lines from existing customers. When you select **Generate > From existing - Customer credit groups**, a dialog is presented that you can use the dialog that displays to provide criteria for selecting customer credit groups and calculating the new limits. The criteria is the same as shown in the preceding section on adjusting credit limits for existing customers.
+You can create journal lines from existing customers. When you select **Generate > From existing customer credit groups**, a dialog is presented that you can use the dialog that displays to provide criteria for selecting customer credit groups and calculating the new limits. The criteria is the same as shown in the preceding section on adjusting credit limits for existing customers.
 
 Click **OK** to create the credit limit adjustment journal entries.
 
