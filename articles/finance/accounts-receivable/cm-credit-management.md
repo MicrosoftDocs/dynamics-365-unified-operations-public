@@ -46,7 +46,7 @@ The process for using credit management can include some or all of the following
 - Assign risk scores to customers and then use those scores to automatically generate credit limits for customers using credit limit adjustments
 - Create blocking rules that will place an order on hold during one or more posting processes based on factors such as risk, payment terms, credit limits, overdue amounts, and percentage of credit limit used
 - Manage a list of sales orders that are on hold, review the reasons for the hold, and mitigate the issues
-- Release the order and allow it to continue through the posting process
+- Release sales orders and allow it to continue through the posting process
 - Set up workflow to manage the approval of credit limit changes and sales order releases
 
 
