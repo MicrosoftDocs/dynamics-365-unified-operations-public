@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the options available for configuring Credit management to fit your business' needs. To begin using Credit management features, set the parameters in **Credit management > Setup > Credit management parameters**.
+This topic describes the options available for configuring Credit management to fit your business' needs. To begin using Credit management features, setup the parameters in **Credit management > Setup > Credit management parameters**.
 
 ## Credit parameters
 
