@@ -3,7 +3,7 @@
 
 title: Product collection module overview
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
-author: asharchw
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
