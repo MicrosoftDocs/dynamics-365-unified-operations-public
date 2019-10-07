@@ -56,7 +56,7 @@ Maintenance request lifecycle states define the stages that a request can go thr
 
 The follow illustration shows an example of the **Maintenance request lifecycle states** page.
 
-![Figure 1](media/02-setup-for-requests.png)
+![Maintenance request lifecycle states page](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Maintenance request lifecycle states, lifecycle state groups, and types are related to, and used in the same way as, work order lifecycle states, lifecycle state groups, and types. 
@@ -85,4 +85,4 @@ After you've created the lifecycle states that are required for your maintenance
 
 The following illustration shows an example of the **Maintenance request lifecycle models** page.
 
-![Figure 2](media/06-setup-for-requests.png)
+![Maintenance request lifecycle models page](media/06-setup-for-requests.png)
