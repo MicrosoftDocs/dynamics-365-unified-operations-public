@@ -248,7 +248,7 @@ This section provides troubleshooting information for the different stages of da
 ### Export process troubleshooting
 - If you get an error during the export process, click **View execution log** and review the log text, staging log details, and Infolog for more information.
 - If you get an error during the export process with a note directing you to not skip staging, turn off the **Skip staging** option, and then add the entity. If you are exporting multiple data entities, you can use the **Skip staging** button for individual data entities.
-- Prior to platform update 31, there is a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution.
+- Prior to Platform update 31, there was a 256 MB limit for the file size that can be handled via export. If there are a large number of records that will be exported, be sure that the resulting file size does not exceed this limit. An alternate way to handle such scenarios would be to use filters on the entity to export only a subset of data. If this is not feasible, then bring your own database must be considered for the overall solution.
 
 ### Import process troubleshooting
 When uploading data entity files:
@@ -288,9 +288,9 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DMFDisableDoubleByteCharacterExport     | A fix was made to ensure that data can be exported when the format is configured to use code page 932 setting. If an issue is encountered in relation to double byte exports, this fix can be turned off by disabling this flight to unblock, if applicable. |
 | DisablePendingRecordFromJobStatus     | A fix was made to ensure that pending records are taken into consideration while evaluating the final status of an import job. If implementations have a dependency on the status evaluation logic and this change is considered a breaking change for an implementation, this new logic can be disabled using this flight.  |
 | DMFDisableEnumFieldDefaultValueMapping     | A fix was made to ensure that default values set in advanced mapping for enum fields are successfully saved in the data package manifest file when generating the data package. This makes it possible for the data package to be used as a template for integrations when such advanced mappings are used. This fix is protected by this flight and can be disabled if the previous behavior is still needed (which is to always set the value to 0 in the data package manifest).  |
-| DMFBlobSize256     | A fix is made in platform update 31 which removes the export file size limitation of 256MB. The old behavior can be brought back by enabling this flight if any issues are encountered due to this change.  |
-| DMFWorkspaceLoadPerformance      | A fix is made in platform update 31 which improves the load times of the data mangement workspace. This change is OFF by default and can be enabled by turing ON this flight.  |
-| DMFExecuteSSISOutOfProc      | A fix is made in platform update 31 which optimizes the memory consumption of SSIS processing in data management import/export jobs. This change is OFF by default and can be enabled by turning this flight ON.  |
+| DMFBlobSize256     | A fix is made in Platform update 31 that removes the export file size limitation of 256MB. The old behavior can be brought back by enabling this flight if any issues are encountered due to this change.  |
+| DMFWorkspaceLoadPerformance      | A fix is made in Platform update 31 that improves the load times of the data management workspace. This change is OFF by default and can be enabled by turning ON this flight. |
+| DMFExecuteSSISOutOfProc      | A fix is made in Platform update 31 that optimizes the memory consumption of SSIS processing in data management import/export jobs. This change is OFF by default and can be enabled by turning this flight ON.  |
 
 The following steps enable a flight in a non-production environment. Execute the following SQL command.
 
