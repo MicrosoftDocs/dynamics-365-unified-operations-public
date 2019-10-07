@@ -46,6 +46,18 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 
     - **SAT product code** – Use this classification for scenarios where the item code isn't identified.
     - **SAT unit code** – Use this classification for scenarios where the unit of measure isn't identified.
+    
+## Foreign trade 
+
+If your organization issue electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
+The following changes are introduced as part of generation of CFDI foreign trade complement
+
+- **Operation type:** Select Export
+- **CFDI foreign trade version:** Select version 1.1
+- **CFDI foreign trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
+- **Currency code:** Select the currency code configured in Microsoft Dynamics AX that represents the US Dollar since the foreign complement should be expressed in this currency.
+- **Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
+
 
 ## SAT catalogs
 
@@ -159,6 +171,26 @@ The sales tax code configuration identifies the <strong>Exempt</strong> type as 
 <td>cTipoRelacion</td>
 <td>New CFDI reference functionality has been implemented that lets users identify the various types of relations between CFDI documents. Some of these relation types are assigned automatically. Users can manually select other relationship types in specific scenarios.</td>
 </tr>
+<tr>
+<tr>
+<td> <strong> FOREIGN TRADE </strog></td>
+</tr>
+<tr>    
+<td>cIncoterm</td>
+<td><strong>Organization administration > Setup > Einvoice > SAT classifications > Incoterm</strong>, to introduce the list of incoterm classification defined by the government. The user will be able to introduce the following information: SAT code classification, description, version effective and expiration date. Once the list is created or updated, the user will be able to map the related classification in the following master data:
+<ul>
+<li>Electronic invoice parameters in default classifications. This is used for Project invoice and proposals when is not generated from Sales order.
+    <li>Product information > Released products> General > Electronic invoices</li>
+    <li>Account receivables > Sales orders and Return orders> Sales order header</li>
+    <li>Account receivables > Free text invoice  > All free text invoices > Header </li>
+</ul>
+</tr>
+<tr>
+<td> cTipoOperation</td>
+<td> Only available value is <strong>Exportacion</strong> (Export) and it's selected from Einvoice parameters </td>
+</tr>
+
+  
 </tbody>
 </table>
 
