@@ -3,7 +3,7 @@
 
 title: Add a product collection module to a category page
 description: This topic describes how to add a product collection module to a category page in Microsoft Dynamics 365 Commerce.
-author: asharchw
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
