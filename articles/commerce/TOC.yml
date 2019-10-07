@@ -1359,6 +1359,8 @@
             href: e-commerce-extensibility/system-requirements.md
           - name: Set up a development environment
             href: e-commerce-extensibility/setup-dev-environment.md
+          - name: Configure a development environment (.env) file
+            href: e-commerce-extensibility/configure-env-file.md
         - name: Platform overview
           items:
           - name: Architectural overview
