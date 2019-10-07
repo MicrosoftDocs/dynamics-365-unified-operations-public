@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Database movement API - Versioning and support
-description: This topic provides an overview of the versioning and breaking change policies for Database Movement API. 
+title: Database Movement API - Versioning and support
+description: This topic provides an overview of the versioning and breaking change policies for the Database Movement application programming interface (API).
 author: laneswenka
 manager: AnnBe
 ms.date: 09/30/2019
@@ -33,43 +33,44 @@ ms.dyn365.ops.version: 10.0.0
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic provides an overview of the versioning and breaking change policies for the Database Movement API.
+This topic provides an overview of the versioning and breaking change policies for the Database Movement application programming interface (API).
 
 ## Support and deprecation information
-As new versions of the REST APIs are released, earlier versions will be retired.  Microsoft will declare a version as deprecated at least 6 months in advance of retiring an API endpoint.  
 
-When we increment the version of the API (for example, from v1 to v2), we are announcing that the lowest version (in this example, v1) is immediately deprecated and we will no longer support it 6 months after the announcement.  We may take exceptions to this policy for service health and security issues.
+As new versions of the REST APIs are released, earlier versions will be retired. Microsoft will declare a version deprecated at least six months before it retires an API endpoint.
 
-When an API is marked as deprecated, the **VersionEOL** or Version End-of-Life field will have the end date value populated.  This allows you to proactively monitor this field for a non-date-maximum value and to plan for the upcoming changes.  
+By incrementing the version number of the API (for example, from v1 to v2), Microsoft announces that the lowest version (in this example, v1) is immediately deprecated and will no longer be supported six months after the announcement. However, Microsoft might make exceptions to this policy for service health and security issues.
+
+When an API is marked as deprecated, a date value will be entered in the **VersionEOL** (Version end of life) field. Therefore, you can proactively monitor this field and plan for upcoming changes.
 
 ### Compatible and breaking changes
-Microsoft will detail the API changes in the private preview group.  If the changes are non-breaking then we will maintain the same version number.  If the changes are breaking in nature, we will increment the API version.
 
-The following are examples of a breaking change:
-* Change to the URL or fundamental request/response 
-* Removal, rename, or change of the type of a declared property
-* Removal or rename of the API or API parameters
-* Addition of a required request parameter
+Microsoft will provide details of API changes in the private preview group. If the changes are non-breaking in nature, the API version number will remain the same. If the changes are breaking in nature, Microsoft will increment the API version number.
 
-The following are examples of non-breaking changes:
-* Addition of properties which are nullable or have a default value
-* Addition of a member to an enumeration
-* Introduction of paging to existing collections
-* Changes to error codes
-* Changes to the order of properties in request/response
+Here are some examples of breaking changes:
+
+* The URL or fundamental request/response is changed.
+* A declared property is removed or renamed, or its type is changed.
+* The API or API parameters are removed or renamed.
+* A required request parameter is added.
+
+Here are some examples of non-breaking changes:
+
+* Properties are added that are nullable or have a default value.
+* A member is added to an enumeration.
+* Paging is introduced to existing collections.
+* Error codes are changed.
+* The order of properties in requests or responses is changed.
 
 ### Example of VersionEOL in a response contract
-Below you will find a response contract in JSON.  All response contracts contain the **VersionEOL** property of which defaults to DateMax() in .NET.  Your applications can monitor the value of this field on our responses to get an immediate alert when we have deprecated a particular endpoint or an entire API version.
+
+The following example shows a response contract in JavaScript Object Notation (JSON) format. All response contracts contain the **VersionEOL** property of which defaults to DateMax() in .NET. Your applications can monitor the value of this field on responses from Microsoft to get an immediate alert when Microsoft has deprecated a specific endpoint or a whole API version.
 
 ```json
 {
     "IsSuccess": true,
-
     "OperationActivityId": "55eb4327-9346-4c7b-82bd-fe8ef15112c6",
-
     "ErrorMessage": null,
-
     "VersionEOL": "9999-12-31T23:59:59.9999999"
-
 }
 ```
