@@ -82,6 +82,19 @@ If part of the ordered quantity for a PO line has been delivered, you can’t ch
 
 After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn’t been received or invoiced.
 
+## Cancelling purchase orders
+
+The purchase order can be cancelled using the **Cancel** action on the header.
+ 
+If the quantity has been partially registered, received or invoiced, then you can only cancel the remaining quantity that has not been registered, received or invoiced, and the order quantity will be reduced accordingly. The line status will also change in response to the updated quantity on the line. For example, if the original quantity on the line is 5, and 3 have been received, only 2 can be cancelled; the line will be updated to **Received** status.
+ 
+If a delivery remainder has been added to the order line that is exceeding the quantity on the order line, then that additional quantity will not be cancelled by the **Cancel** action on the header, cancelling the order in in that case will cause the line to stay in **Open order** status because it will have a remaining quantity. For example, if the original quantity on the line is 5; the delivery remainder is 7, and the order is cancelled, then 5 will be cancelled and 2 will be remaining. This is visible in the inventory transactions.
+ 
+If the purpose is to cancel the entire quantity on a purchase order line, you should cancel quantity delivery remainder on the line and the order line will change to **Cancelled**. 
+ 
+If the purchase order is under change management, then any change, such as cancelling the order or cancelling the delivery remainder, must be submitted to workflow and approved before the process is completed and the inventory transactions are updated as cancelled.
+
+
 Additional resources
 --------
 
@@ -91,7 +104,7 @@ Additional resources
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 
