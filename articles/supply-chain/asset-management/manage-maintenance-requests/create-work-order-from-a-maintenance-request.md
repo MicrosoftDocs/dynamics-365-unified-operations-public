@@ -57,5 +57,5 @@ After you've created maintenance requests, you can easily convert them to work o
 
 6. Select **Asset management** \> **Common** \> **Work orders** \> **All work orders**, and open the new work order.
 
-    ![Figure 1](media/05-manage-maintenance-requests.png)
+    ![Open new work order](media/05-manage-maintenance-requests.png)
 
