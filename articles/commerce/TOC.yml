@@ -294,6 +294,8 @@
             href: save-preview-publish-page.md
           - name: Enrich a product page
             href: enrich-product-page.md
+          - name: Enrich a cateogry landing page
+            href: enrich-category-page.md
         - name: Modules
           items:
           - name: Work with modules
@@ -352,8 +354,16 @@
             href: add-hero-module.md 
           - name: Create an order confirmation module
             href: order-confirmation-module.md 
+          - name: Add a product collection module
+            href: add-product-collection-modules.md
           - name: Add a video player module
             href: add-video-player.md
+        - name: Search
+          items:
+          - name: Default category landing page and search results page
+            href: category-search-page-overview.md
+          - name: Cloud-powered search overview
+            href: cloud-powered-search-overview.md
         - name: Reporting
           items:
           - name: Generate online channel reports
