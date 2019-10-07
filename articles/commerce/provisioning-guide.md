@@ -206,7 +206,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 
 ### Configure POS
 ##### Associate worker with your identity
-1. Using the menu on the left, go to **Modules > Human resources > Workers > Workers**.
+1. Using the menu on the left, go to **Modules > Retail > Employees > Workers**.
 1. In the list, find and select record **000713 - Andrew Collette**.
 1. On the Action Pane, click **Retail**.
 1. Click **Associate existing identity**.
@@ -251,6 +251,9 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling a recurring P-job
+1. Using the menu on the left, go to **Modules > Retail > Inquiries and reports > Batch jobs**.
+1. Use the Quick Filter to search for a record with Job description field with a value of '**P-0001**'.
+1. If you find a matching record and its status is "**Withhold**", select it and click Delete, then Click Yes.
 1. Using the menu on the left, go to **Workspaces > Retail IT**.
 1. Click **Distribution schedule**.
 1. Select **P-0001**.
@@ -359,7 +362,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 ##### Updating the media base URL
 Using the CMS tenant identifier you noted earlier, craft the **DAM Base URL**.
 
-https://cms-ppe-imageresizer-mr.trafficmanager.net/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
+https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
 
 Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL available when performing the following steps:
 
