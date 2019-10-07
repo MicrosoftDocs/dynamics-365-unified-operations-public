@@ -58,4 +58,4 @@ Before you can set up responsible maintenance workers, you must set up the worke
 
 The following illustration shows an example of the **Responsible maintenance workers** page.
 
-![Figure 1](media/08-setup-for-requests.png)
+![Responsible maintenance workers page](media/08-setup-for-requests.png)
