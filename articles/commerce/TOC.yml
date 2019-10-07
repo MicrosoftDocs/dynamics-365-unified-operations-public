@@ -354,6 +354,8 @@
             href: add-hero-module.md 
           - name: Create an order confirmation module
             href: order-confirmation-module.md 
+          - name: Product collection module overview
+            href: product-collection-module-overview.md 
           - name: Add a product collection module
             href: add-product-collection-modules.md
           - name: Add a video player module
