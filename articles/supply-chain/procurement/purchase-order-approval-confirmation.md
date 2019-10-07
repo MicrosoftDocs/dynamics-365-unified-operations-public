@@ -90,9 +90,9 @@ If the quantity has been partially registered, received or invoiced, then you ca
  
 If a delivery remainder has been added to the order line that is exceeding the quantity on the order line, then that additional quantity will not be cancelled by the **Cancel** action on the header, cancelling the order in in that case will cause the line to stay in **Open order** status because it will have a remaining quantity. For example, if the original quantity on the line is 5; the delivery remainder is 7, and the order is cancelled, then 5 will be cancelled and 2 will be remaining. This is visible in the inventory transactions.
  
-If the purpose is to cancel the entire quantity on a purchase order line, you should cancel quantity delivery remainder on the line and the order line will change to **Cancelled**. 
+To cancel the entire quantity on a purchase order line, you should cancel quantity delivery remainder on the line and the order line will change to **Cancelled**. 
  
-If the purchase order is under change management, then any change, such as cancelling the order or cancelling the delivery remainder, must be submitted to workflow and approved before the process is completed and the inventory transactions are updated as cancelled.
+If a purchase order is under change management, then any change, such as cancelling the order or cancelling the delivery remainder, must be submitted to workflow and approved before the process is completed and the inventory transactions are updated as cancelled.
 
 
 Additional resources
