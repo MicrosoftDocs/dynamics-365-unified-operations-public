@@ -1,10 +1,10 @@
 ## Financial dimension format to msdyn_financialdimensionformats
 
-This template synchronizes data between Finance and Operations and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source field | Map type | Destination field
----|---|---
-DIMENSIONFORMATNAME | = | msdyn_dimensionformatname
-DIMENSIONFORMATTYPE | >< | msdyn_dimensionformattype
-FINANCIALDIMENSIONFORMAT | = | msdyn_financialdimensionformat
-ISACTIVE | >< | msdyn_isactive
+Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+---|---|---|---
+DIMENSIONFORMATNAME | = | msdyn_dimensionformatname | 
+DIMENSIONFORMATTYPE | >< | msdyn_dimensionformattype | 
+FINANCIALDIMENSIONFORMAT | = | msdyn_financialdimensionformat | 
+ISACTIVE | >< | msdyn_isactive | 
