@@ -40,7 +40,7 @@ When sellers issue a facture for prepayment to a customer, they also pay the ind
 
 The following table shows the general ledger (GL) transactions and user operations for VAT accounting in a prepayment scenario.
 
-| GL transaction                         | User operation                        | Source of information                                                                                  |                                                                                                                                       |
+| GL transaction                         | GL transaction                        | User operation                                                                                  | Source of information                                                                                                                                      |
 |----------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | D 51 [Bank]                            | C 62 [Debts]/Advances                 | Registration of a prepayment from a customer                                                           | **Customer payment journal** page                                                                                                     |
 | D 76 [Other debts and liabilities]/VAT | C 68 [Taxes]/VAT                      | Facture registration                                                                                   | **Facture create** page (**Accounts receivable \> Periodic tasks \> Facture creation for prepayment**)                                |
@@ -102,10 +102,10 @@ After a prepayment is registered, a facture is automatically created. The factur
         - **Reverse** – Post VAT transaction cancellations as reverses
         - **Reversing entry** – Post VAT transaction cancellations as "red" storno transactions.
 
-- In the **Tax group for prepayment** field, select the sales tax group for the prepayment.
-- In the **Item sales tax group** field, select the item sales tax group for the prepayment.
-- In the **Prepayment handling** field, select **Simple**.
-- Set the **Automatically facture creation** option to **Yes** to automatically create a facture when prepayments are posted.
+    - In the **Tax group for prepayment** field, select the sales tax group for the prepayment.
+    - In the **Item sales tax group** field, select the item sales tax group for the prepayment.
+    - In the **Prepayment handling** field, select **Simple**.
+    - Set the **Automatically facture creation** option to **Yes** to automatically create a facture when prepayments are posted.
 
 > [!NOTE]
 > If you set the **Automatically facture creation** option to **No**, the factures on prepayments are created in postponed mode. The setting of this parameter is inherited and can be changed in the following places:
@@ -204,7 +204,7 @@ Customers can take the indicated VAT for deduction when they receive a facture f
 
 The following table shows the GL transactions and user operations for VAT accounting.
 
-| GL transaction                             | User operation                                         | Source of information                                      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| GL transaction                             | Gl transaction                                         | User operation                                      | Source of infomration                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------|--------------------------------------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D 60 [Liabilities]/Advances                | К 51 [Bank]                                            | Prepayment is sent to the supplier.                        | **Vendor payment journal** page                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |                                            |                                                        | Prepayment facture registration                            | **Create prepayment facture** page (**Accounts payable** \> **Periodic tasks** \> **Facture** \> **Facture creation for prepayment**)                                                                                                                                                                                                                                                                                                                                       |
@@ -333,7 +333,7 @@ Additional actions are required after the incoming facture for goods, work, and 
 7. In the **Restoration type** field, select **Prepayment journal voucher**.
 8. Set the **By default** option to **Yes** to indicate that this transaction is the default transaction for VAT processing.
 9. Set the **Include in book** option to **Yes** if factures that are processed by using this transaction code should be included in the sales book.
-10.To process the outgoing VAT, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Outgoing VAT processing**.
+10. To process the outgoing VAT, go to **Accounts receivable** \> **Periodic tasks** \> **Sales book** \> **Outgoing VAT processing**.
 
 For settled payments where the incoming VAT was previously processed, the factures have a transaction type of **Prepayment's storno**. The facture number corresponds to the number of the registered prepayment facture. The amount of VAT to recover equals the amount of the processed incoming VAT on the received goods that falls in the settled part of the invoice.
 
