@@ -44,7 +44,7 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 Select a feature area to learn more about it.
 
 - [Asset management](asset-management/index.md)
-- [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Cost accounting](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)

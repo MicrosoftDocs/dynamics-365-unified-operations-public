@@ -56,7 +56,7 @@ Because of these potential issues, we recommend that you adhere to this guidance
 ### Keyboard shortcut links
 Here are links to the keyboard shortcuts that are documented for Finance and Operations apps and supported browsers:
 
-- <a href="../../fin-and-ops/get-started/shortcut-keys.md">Keyboard shortcuts</a>
+- <a href="../../fin-ops/get-started/shortcut-keys.md">Keyboard shortcuts</a>
 - <a href="https://support.microsoft.com/help/13805">Microsoft Edge</a>
 - <a href="https://support.google.com/chrome/answer/157179">Google Chrome</a>
 - <a href="https://support.microsoft.com/help/15357/windows-internet-explorer-11-keyboard-shortcuts">Internet Explorer 11</a>

@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 08/01/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -166,7 +166,9 @@ To enable saved views while the feature is in preview, follow the steps below:
 
 4.	**Enable the feature**: Find the **Saved views** feature in the list of features, and select **Enable now** on the details pane.
 
-All subsequent user sessions will start with saved views enabled.  
+All subsequent user sessions will start with saved views enabled.
+
+Saved Views is only for use in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes. A preview of Saved Views will be available in production environments in a future release.
 
 Note that if personalization is turned off for the environment, views will be disabled even if you follow the above steps. This is because the views feature is built on top of the personalization subsystem.
 
