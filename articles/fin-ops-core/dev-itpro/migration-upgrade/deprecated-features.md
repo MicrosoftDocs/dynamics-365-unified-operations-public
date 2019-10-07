@@ -5,7 +5,7 @@ title: Removed or deprecated features for Finance and Operations
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 10/03/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -55,21 +55,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1 as found here: https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx  |
+| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1, as documented in [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new api <TBD> |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API <TBD>. |
 
 ### Hash.ComputeSHA1Hash(string message)
 
 |   |  |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1 as found here: https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx  |
+| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1, as documented in [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Platform |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new api <TBD> |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API <TBD>. |
 
 
 ### FormDateTimeControl.setUtcString()
