@@ -1,7 +1,7 @@
 ## Sales tax codes to msdyn_taxcodes
 
-This template synchronizes data between Finance and Operations and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source field | Map type | Destination field
----|---|---
-TAXCODE | >> | msdyn_name
+Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+---|---|---|---
+TAXCODE | >> | msdyn_name | 

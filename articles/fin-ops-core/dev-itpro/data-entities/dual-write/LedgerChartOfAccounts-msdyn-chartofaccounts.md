@@ -1,9 +1,9 @@
 ## Chart of accounts to msdyn_chartofaccountses
 
-This template synchronizes data between Finance and Operations and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source field | Map type | Destination field
----|---|---
-DESCRIPTION | = | msdyn_description
-MAINACCOUNTMASK | = | msdyn_mainaccountmask
-CHARTOFACCOUNTS | = | msdyn_name
+Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+---|---|---|---
+DESCRIPTION | = | msdyn_description | 
+MAINACCOUNTMASK | = | msdyn_mainaccountmask | 
+CHARTOFACCOUNTS | = | msdyn_name | 

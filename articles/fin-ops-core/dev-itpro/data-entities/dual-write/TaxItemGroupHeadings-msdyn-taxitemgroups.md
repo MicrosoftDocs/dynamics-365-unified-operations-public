@@ -1,8 +1,8 @@
 ## Item sales tax group to msdyn_taxitemgroups
 
-This template synchronizes data between Finance and Operations and Common Data Service.
+This template synchronizes data between Finance and Operations apps and Common Data Service.
 
-Source field | Map type | Destination field
----|---|---
-TAXITEMGROUP | = | msdyn_name
-NAME | = | msdyn_description
+Finance and Operations field | Map type | Other Dynamics 365 field | Default value
+---|---|---|---
+TAXITEMGROUP | = | msdyn_name | 
+NAME | = | msdyn_description | 
