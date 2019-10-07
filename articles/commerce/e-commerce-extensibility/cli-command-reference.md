@@ -103,7 +103,7 @@ yarn msdyn365 pack
 
 This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
 
-The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
+The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
 
 **Example**
 
