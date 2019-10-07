@@ -3,7 +3,7 @@
 
 title: Default category landing page and search results page
 description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
-author: asharchw
+author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
@@ -61,7 +61,7 @@ The following components are essential for a category:
 
 ## Enrich a category landing page
 
-If you want a category landing page to have a more tailored experience for a specific category, you can "enrich" the category landing page for that category. For example, you can add a marketing video and some category storytelling to get the shopper's attention. For more information, see [Enrich a category landing page](./articles/commerce/enrich-a-category.md).
+If you want a category landing page to have a more tailored experience for a specific category, you can "enrich" the category landing page for that category. For example, you can add a marketing video and some category storytelling to get the shopper's attention. For more information, see [Enrich a category landing page](enrich-category-page.md).
 
 ![Enriched category landing page](./media/CategoryLandingPages.png)
 
