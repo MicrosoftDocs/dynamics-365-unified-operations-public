@@ -44,9 +44,9 @@ You should use it before enabling dual-write entity maps (during step #5).
 1. To setup the dual-write connection between your Finance and Operations instance and the Common Data Service or Customer Engagement instance that has business data, log in to Finance and Operations as an administrator. 
 2. Go to the **Data Management** module can click on the **Dual-Write** button. This will launch the **Data Integrator**. 
 3. Create the dual-write connection for one or more companies.  
-    ![Create dual-write connection](dual-write-boot-1.png)
+    ![Create dual-write connection](media/dual-write-boot-1.png)
 4. Enable the **Cdm_companies** entity map. This synchronizes companies from Finance and Operations to Common Data Service.  
-    ![Enable the entity map](dual-write-boot-2.png)
+    ![Enable the entity map](media/dual-write-boot-2.png)
 5. Run the sample bootstrapping code on Common Data Service or Customer Engagement instance to bootstrap company data.  
 6. When the bootstrapping is done and the system is ready for live sync, enable the entity maps.  
 7. Enabling the entity maps triggers the initial data sync for the enabled entity maps. The data corresponding to the companies chosen on dual-write connection is synchronized between Finance and Operations and Common Data Service. 
