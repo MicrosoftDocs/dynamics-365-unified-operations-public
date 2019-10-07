@@ -96,7 +96,7 @@ Typically, work orders that are manually created are related to corrective maint
 
 ## Spare parts on the asset type setup
 
-As was described in the "Create asset type setup lines" section, spare parts are set up on asset models on the **Asset type setup** page. Therefore, when you open the **Asset type setup** page, you see only the spare parts that are related to the selected combination of an asset type, asset manufacturer, and asset model. To see a list of all spare part records, open the **Spare parts** page (**Asset management** \> **Inquiries** \> **Spare parts**).
+As was described in the [Create asset type setup lines](create-asset-type-setup-lines) section, spare parts are set up on asset models on the **Asset type setup** page. Therefore, when you open the **Asset type setup** page, you see only the spare parts that are related to the selected combination of an asset type, asset manufacturer, and asset model. To see a list of all spare part records, open the **Spare parts** page (**Asset management** \> **Inquiries** \> **Spare parts**).
 
 On the **Spare parts** page, you can also create new spare parts for existing combinations of an asset type, asset manufacturer, and asset model. You can decide whether you prefer to create spare part records on the **Asset type setup** page or the **Spare parts** page. The **Asset type setup** page provides an overview of data on the selected combination of an asset type, asset manufacturer, and asset model, whereas the **Spare parts** page provides a complete overview of all asset type setup lines. If the **Spare parts** page contains many records, the **Asset type setup** page might give you a better overview.
 
