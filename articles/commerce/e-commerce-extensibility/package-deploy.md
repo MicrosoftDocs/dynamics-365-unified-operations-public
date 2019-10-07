@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -49,7 +49,7 @@ The command should be run from the root directory of your local online software 
 Here is an example.
 
 ``` bash
-c:\repos\D365.Commerce.Fabrikam>yarn d365 pack
+c:\repos\D365.Commerce.Fabrikam>yarn msdyn365 pack
 ```
 
 ## Upload a package by using LCS
