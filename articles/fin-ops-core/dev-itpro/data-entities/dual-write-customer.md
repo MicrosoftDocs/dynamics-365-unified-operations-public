@@ -74,14 +74,25 @@ Terms of payment          | msdyn_paymentterms              | This template sync
 [!include [banner](../includes/dual-write-symbols.md)]
 
 [!include [mapping contacts contacts](dual-write/CDSContactsV2-contacts.md)]
+
 [!include [mapping customer group](dual-write/CustCustomerGroup-msdyn-customergroups.md)]
+
 [!include [mapping customer payment method](dual-write/CustomerPaymentMethod-msdyn-customerpaymentmethods.md)]
+
 [!include [mapping customer accounts](dual-write/CustomersV3-accounts.md)]
+
 [!include [mapping customer contacts](dual-write/CustomersV3-contacts.md)]
+
 [!include [mapping loyalty card](dual-write/LoyaltyCard-msdyn-loyaltycards.md)]
+
 [!include [mapping name affixes](dual-write/NameAffixes-msdyn-nameaffixes.md)]
+
 [!include [mapping payment day lines](dual-write/PaymentDayLinesCdsV2-msdyn-paymentdaylines.md)]
+
 [!include [mapping payment days](dual-write/PaymentDaysCds-msdyn-paymentdays.md)]
+
 [!include [mapping payment schedule lines](dual-write/PaymentScheduleLines-msdyn-paymentschedulelines.md)]
+
 [!include [mapping payment schedules](dual-write/PaymentSchedules-msdyn-paymentschedules.md)]
+
 [!include [mapping terms of payment](dual-write/TermsofPayment-msdyn-paymentterms.md)]
