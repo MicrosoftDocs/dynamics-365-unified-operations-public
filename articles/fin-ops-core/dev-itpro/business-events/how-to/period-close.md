@@ -53,38 +53,38 @@ The business process transformation exercise revealed the following business req
 To achieve the above requirements, we used out of the box capabilities of the Financial period close workspace. A gap analysis revealed
 that with minor extensions to the workspace and the underlying data entities, we could fulfill requirement 2, 4 (partial), 5 and 6. However for requirements 1, 3 and 4 (partial), we chose MS flow. Following is an architectural overview of the solution.
 
-<img alt="High level design" src="../../media/image1.png" width="70%">
+<img alt="High level design" src="../../media/Image1.PNG" width="70%">
 
 ## Managing attachments with Flow and Sharepoint Online
 Accountants view their tasks in the workspace and start working on them. Attachments are added using a Sharepoint Online (SPO) Document type to the tasks. Using Sharepoint triggers in Microsoft Flow, the below Flow gets triggered. The Flow updates the Sharepoint metadata with metadata from the task in the workspace. Sharepoint columns were created for this in the document library. A separate attachment data entity was created that holds the attachment metadata for every attachment that has been added to the Financial close
 workspace. Fields from the custom entity were mapped to the SPO columns in the below Flow. When documents are created in the pre-defined SPO library using the specific document type, Flow is triggered to obtain the metadata from the custom data entity and update the document’s metadata columns in Sharepoint online.
 
-<img alt="Managing attachments" src="../../media/image2.png" width="70%">
+<img alt="Managing attachments" src="../../media/Image2.png" width="70%">
 
 ## Enabling internal controls via Business Events and Flow
 As accountants complete their tasks and are ready to get them reviewed, the review status field (custom) changes to “Ready for review”. The Flow shown below is triggered using the *When the change-based alert is triggered* business event. The business event payload contains the task name and the area name. Using this combination, along with the Review status field, the Flow routes the task through email based workflow orchestrated by Flow. The Flow waits for approval, appends the task log with new comments and updates the Financial period close workspace task in F&O based on the outcome of the approval process along with related metadata. Custom data entities were built in D365FO to query and update the Financial Period Close Workspace using MS Flow. The Flow is shown in detail below.
 
-<img alt="Business events and Flow" src="../../media/image3.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image3.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image4.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image4.PNG" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image5.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image5.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image6.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image6.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image7.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image7.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image8.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image8.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image9.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image9.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image10.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image10.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image11.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image11.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image12.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image12.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/image13.png" width="70%">
+<img alt="Business events and Flow" src="../../media/Image13.png" width="70%">
 
 
 ## Conclusion
