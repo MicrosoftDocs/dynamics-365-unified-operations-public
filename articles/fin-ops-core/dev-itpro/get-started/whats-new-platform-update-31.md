@@ -40,10 +40,10 @@ This topic describes preview features that are new or changed for Platform updat
 Exporting files using data management had a limitation of maximum flie size of 256MB. This limitation has been removed. This change is guarded by a flight DMFBlobSize256 which can be enabled to revert back to old behavior if any issues are encountered due to this change.
 
 ## Optimization of Data management workspace load
-Loading of data management workspace has been slow under certain conditions. There are new optimizations put in place to reduce the time it takes to load the workspace.
+Loading of data management workspace has been slow under certain conditions. There are new optimizations put in place to reduce the time it takes to load the workspace. This change can be enabled via flight DMFWorkspaceLoadPerformance.
 
 ## Inefficient memory usage by Data management export/import jobs
-There have been several issues reported where the memory consumed by data management export/import jobs have been high enough to result in performance issues for users. The SSIS package execution logic has been optimized to address this issue. This change is OFF be default as its guarded by a flight. After getting validations through PEAP and CAAP process, the change will be enabled as default in a later platform update.
+There have been several issues reported where the memory consumed by data management export/import jobs have been high enough to result in performance issues for users. The SSIS package execution logic has been optimized to address this issue. This change is OFF be default as its guarded by a flight DMFExecuteSSISOutOfProc. After getting validations through PEAP and CAAP release process, the change will be enabled as default in a later platform update.
 
 ## Feature
 Provide a brief description of the feature and explain how it helps customers. Provide a link to an article where customers can read details about the feature.
