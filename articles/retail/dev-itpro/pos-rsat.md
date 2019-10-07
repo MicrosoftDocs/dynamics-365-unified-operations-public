@@ -40,7 +40,7 @@ This topic explains how to use the new test recorder tool in Retail Cloud POS to
 This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
+> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.POS RSAT in preview, it’s not available in public download version, if you like to try the preview version please create a support ticket.
 
 ## Test recorder
 
