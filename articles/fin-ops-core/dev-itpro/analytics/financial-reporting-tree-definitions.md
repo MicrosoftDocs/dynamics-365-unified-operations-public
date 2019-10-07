@@ -5,7 +5,7 @@ title: Reporting tree definitions in financial reports
 description: This article provides information about reporting tree definitions. A reporting tree definition is a report component, or building block, that helps define the structure and hierarchy of your organization.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,7 +55,7 @@ A reporting tree definition contains the columns that are described in the follo
 
 | Reporting tree column | Description |
 |-----------------------|-------------|
-| Company               | The company name for the reporting unit. The **@ANY** value, which is typically assigned only to the summary level, enables the reporting tree to be used for all companies. All child branches have a company assigned to them. |
+| Company               | The company name for the reporting unit. The **\@ANY** value, which is typically assigned only to the summary level, enables the reporting tree to be used for all companies. All child branches have a company assigned to them. |
 | Unit Name             | The code that identifies this reporting unit in the graphical reporting tree. Be sure to establish a unique coding system that is consistent, and that will be easy for users to understand. |
 | Unit Description      | The reporting unit title appears in the report header or footer if you enter **UnitDesc** as a code on the **Headers and Footers** tab of the report definition. The title appears in the report row description if you enter **UnitDesc** in the **Description** cell of the row definition. |
 | Dimensions            | A reporting unit that draws information directly from the financial data. It defines the logical positioning and lengths for the account and related segments. Every reporting unit row must have a dimension in this column. You can also put a dimension in a summary unit row (for example, for expenses that are directly related to that unit). If you enter a dimension in a summary unit row, accounts that are used in parent units should not be used in child units. Otherwise, amounts might be duplicated. |
