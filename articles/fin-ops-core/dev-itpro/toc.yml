@@ -132,6 +132,8 @@
                 href: data-entities/dual-write-bootstrap.md
             - name: Integrated Customer Master
               href: data-entities/dual-write-customer.md
+            - name: Integrated Ledger
+              href: data-entities/dual-write-ledger.md            
             - name: Unified product experience
               href: data-entities/dual-write-product.md
             - name: Vendor integration
