@@ -46,7 +46,10 @@ This list is intended to help you consider these removals and deprecations for y
 
 > Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
-## Finance and Operations 10.0.7 with Platform update 31
+## Finance and Operations 10.0.6 with Platform update 30
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 ### DimensionHash.getHash(str _message)
 
@@ -68,12 +71,6 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By April 1, 2020, developers must use the new api <TBD> |
 
-
-
-## Finance and Operations 10.0.6 with Platform update 30
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 ### FormDateTimeControl.setUtcString()
 
