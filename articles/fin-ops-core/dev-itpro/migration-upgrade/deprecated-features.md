@@ -59,7 +59,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API <TBD>. |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
 
 ### Hash.ComputeSHA1Hash(string message)
 
@@ -69,7 +69,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Platform |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API <TBD>. |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
 
 
 ### FormDateTimeControl.setUtcString()
