@@ -37,32 +37,32 @@ This topic describes how to configure and enable Content Security Policy (CSP) i
 
 ## Overview
 
-Enabling content security policy will enhance the security of an e-Commerce site by blocking connections, scripts, fonts, etc. from unknown sources.
+Enabling CSP enhances the security of an e-Commerce site by blocking connections, scripts, fonts, etc. from unknown sources.
 
-The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. The allow list can also be extended from within the Dynamics 365 Commerce authoring tools **Extensibility** section.  
+The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. This allow list can also be extended on the Dynamics 365 Commerce **Extensibility** page.  
 
-Content Security Policy in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. 
+CSP in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. 
 
-For more details on Content Security Policy, see the [Content Security Policy Reference](https://content-security-policy.com/).
+For more details on CSP, see the [Content Security Policy Reference](https://content-security-policy.com/).
 
 ## CSP directives
 
-The following CSP directives are available and configurable on Dynamics 365 Commerce sites.
+The following CSP directives are available for use on Dynamics 365 Commerce sites.
 
 Directive | Description
 --- | ---
-child-src | Defines valid sources for web workers and nested browsing contexts loaded using elements such as <frame> and <iframe>
-connect-src | The connect-src directive restricts to which URLs AJAX requests can be made.
-font-src | Defines valid sources for fonts.
-img-src | Defines valid sources for images.
-media-src | Defines valid sources of audio and video, eg HTML5 <audio>, <video> elements.
-object-src | Defines valid sources of plugins, eg <object>, <embed> or <applet>.
-script-src | Defines valid sources of JavaScript.
-style-src | Defines valid sources of stylesheets.
+child-src | Defines valid sources for web workers and nested browsing contexts loaded using elements such as &lt;frame&gt; and &lt;iframe&gt;
+connect-src | Define from which URLs AJAX requests can be made
+font-src | Defines valid sources for fonts
+img-src | Defines valid sources for images
+media-src | Defines valid sources of audio and video, for example HTML5 &lt;audio&gt; or &lt;video&gt; elements
+object-src | Defines valid sources of plugins, for example &lt;object&gt;, &lt;embed&gt;, or &lt;applet&gt;
+script-src | Defines valid sources of JavaScript
+style-src | Defines valid sources of stylesheets
 
+### Example of CSP directive configuration
 
-
-As an example, with content security policy enabled, if a site needs to call an external script such as https://www.example.com/scripts/example.js, an entry must add it to the **script-src** directive under the **Content Security Policy** tab on the **Site Management** **Extensibilty** page.
+For an example of CSP directive configuration, if a site with CSP enabled needs to call an external script such as https://www.example.com/scripts/example.js, an entry must be added to the **script-src** directive under the **Content Security Policy** tab on the **Site Management** **Extensibility** page, as shown in the following screenshot.
 
 ![Content Security Policy](media/content-security-policy.png)
 
@@ -74,22 +74,22 @@ When initially configuring CSP for a site it can be common to see pages not load
 
 Fortunately, CSP logs some helpful errors to the console and we can use these errors to fix, fine-tune and even help cleanup unwanted or unneeded requests.
 
-Below is an example error shown within a web browser's developer tools.
+The image below shows an example error as seen within a web browser's developer tools.
 
 ![Content Security Policy Error](media/content-security-policy-errors.png)
 
 In this case we have two CSP errors:
 
-1.	Eval is blocked by default because it can lead to arbitrary Javascript execution. If you must allow it, you must add ‘unsafe-eval’ (single quotes required) to your sites script-src directive.
-2.	The stylesheet from https://int.fabrikam.com  is blocked. To allow it, add an entry to the style-src to allow stylesheets to be loaded from this domain
+- Eval is blocked by default because it can lead to arbitrary Javascript execution. If you must allow it, you must add ‘unsafe-eval’ (single quotes required) to your sites script-src directive.
+- The stylesheet from https://int.fabrikam.com  is blocked. To allow it, add an entry to the style-src to allow stylesheets to be loaded from this domain.
 
-Below shows how the fixed settings look like in the **Content Security Policy** tab:
+The image below shows how the fixed settings look like in the Dynamics 365 Commerce **Content Security Policy** tab.
 
 ![Content Security Policy Fix](media/content-security-policy-fixed.png)
 
 ## Update page mocks with new CSP
 
-If you are testing modules in a development environment with the Online SDK, you can also add CSP using page mocks. In a page mock, you'll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
+If you are testing modules in a development environment with the online SDK, you can also add CSP using page mocks. In a page mock, you'll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
 
 Here you may add key value pairs of directives to policies.
 
@@ -97,11 +97,11 @@ If you are adding CSP policies in your page mock, please note that it will not i
 
 ![Content Security Policy Page Mock](media/content-security-policy-page-mock.png)
 
-You may also disable Content Security Policy on your page mock by using:
+You may also disable CSPO on your page mock by using:
 
 ![Content Security Policy Page Mock 2](media/content-security-policy-page-mock2.png)
 
 ## Disable CSP
-If for whatever reason, you want to disable CSP from applying policies to your site, you may disable it altogether. Simply check the “Disable content security policy” and hit save and publish.
+If for whatever reason, you want to disable CSP from applying policies to your site, you may disable it altogether. Simply check the **Disable content security policy** check box and then select **Save and publish**.
 
 ![Disable Content Security Policy](media/content-security-policy-disable.png)
