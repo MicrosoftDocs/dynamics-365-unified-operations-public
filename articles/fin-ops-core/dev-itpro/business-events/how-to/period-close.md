@@ -66,27 +66,34 @@ As accountants complete their tasks and are ready to get them reviewed, the revi
 
 ### Subscribing to the business event
 
-<img alt="Business events and Flow" src="../../media/Image3.png" width="70%">
+<img alt="Subscribing to the business event" src="../../media/Image3.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image4.PNG" width="70%">
+### Parsing the business event payload
+<img alt="Parsing the business event payload" src="../../media/Image4.PNG" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image5.png" width="70%">
+### Retrieve the task from F&O based on the values from the payload
+<img alt="Retrieve tasks" src="../../media/Image5.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image6.png" width="70%">
+### Retreive approvers from the excel file based on the criteria
+<img alt="Retrieve approvers" src="../../media/Image6.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image7.png" width="70%">
+### Prepare to send for approval
+<img alt="Prepare to send for approval" src="../../media/Image7.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image8.png" width="70%">
+<img alt="Prepare to send for approval" src="../../media/Image8.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image9.png" width="70%">
+<img alt="Prepare to send for approval" src="../../media/Image9.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image10.png" width="70%">
+### Start the approval process
+<img alt="Start the approval process" src="../../media/Image10.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image11.png" width="70%">
+### Process the approval action taken by approvers
+<img alt="Process the approval action" src="../../media/Image11.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image12.png" width="70%">
+### Update the task in F&O with the approval outcome
+<img alt="Update the task in F&O" src="../../media/Image12.png" width="70%">
 
-<img alt="Business events and Flow" src="../../media/Image13.png" width="70%">
+<img alt="Update the task in F&O" src="../../media/Image13.png" width="70%">
 
 
 ## Conclusion
