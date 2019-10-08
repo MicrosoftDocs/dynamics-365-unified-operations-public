@@ -64,6 +64,8 @@ workspace. Fields from the custom entity were mapped to the SPO columns in the b
 ## Enabling internal controls via Business Events and Flow
 As accountants complete their tasks and are ready to get them reviewed, the review status field (custom) changes to “Ready for review”. The Flow shown below is triggered using the *When the change-based alert is triggered* business event. The business event payload contains the task name and the area name. Using this combination, along with the Review status field, the Flow routes the task through email based workflow orchestrated by Flow. The Flow waits for approval, appends the task log with new comments and updates the Financial period close workspace task in F&O based on the outcome of the approval process along with related metadata. Custom data entities were built in D365FO to query and update the Financial Period Close Workspace using MS Flow. The Flow is shown in detail below.
 
+### Subscribing to the business event
+
 <img alt="Business events and Flow" src="../../media/Image3.png" width="70%">
 
 <img alt="Business events and Flow" src="../../media/Image4.PNG" width="70%">
