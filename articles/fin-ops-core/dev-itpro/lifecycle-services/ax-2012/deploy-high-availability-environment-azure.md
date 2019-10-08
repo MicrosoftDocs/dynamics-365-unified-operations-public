@@ -429,7 +429,11 @@ The high availability environment includes an availability set for each tier of 
 
 ### Install the data import/export framework and RapidStart Connector
 
-For high availability, the **Data import/export framework** and the **RapidStart Connector** should be installed on all virtual machines that are AOS servers. You may need to install these components. For instructions, see: • [Install the Data import/export framework (DIXF, DMF)](install-dixf.md) • [Install the RapidStart Connector](https://technet.microsoft.com/library/hh771574.aspx)
+For high availability, the **Data import/export framework** and the **RapidStart Connector** should be installed on all virtual machines that are AOS servers. You may need to install these components. For instructions, see: 
+
+• [Install the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-dixf-dmf) 
+
+• [Install the RapidStart Connector](https://technet.microsoft.com/library/hh771574.aspx)
 
 ### Configure Microsoft SQL Server Reporting Services for load balancing
 
