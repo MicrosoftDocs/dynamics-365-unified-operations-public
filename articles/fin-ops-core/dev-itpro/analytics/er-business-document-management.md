@@ -126,7 +126,7 @@ Use the following procedure to enable Business document management functionality
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
-For more information about activating new features, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+For more information about activating new features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure parameters
 
@@ -143,7 +143,7 @@ For this document type, the following attribute values must be selected.
 | Group               | File                  |
 | Location            | SharePoint            |
 
-For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
+For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md).
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
