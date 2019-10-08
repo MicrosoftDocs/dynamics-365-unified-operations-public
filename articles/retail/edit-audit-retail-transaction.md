@@ -5,7 +5,7 @@ title: Edit and audit retail store transactions
 description: This topic describes the functionality for editing and auditing retail store transactions. 
 author: josaw1
 manager: AnnBe
-ms.date: 09/29/2019
+ms.date: 10/08/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -31,17 +31,17 @@ ms.dyn365.ops.version:
 ---
 # Edit and audit retail store transactions
 
-Dynamics 365 for Retail customers use first-party as well as third-party point of sale (POS) applications. With first-party POS application, retail store transactions are pulled into headquarters (HQ) from the channels through a batch process. With third-party applications, transactions are pulled into HQ through integration. In both cases, after transactions are pulled into HQ, a consistency check process needs to be executed that runs multiple validations on the transactions so that only successfully validated transactions are pulled into the statement to be posted in HQ. 
+Dynamics 365 Retail customers use first-party as well as third-party point of sale (POS) applications. With the first-party POS application, retail store transactions are pulled into headquarters (HQ) from the channels through a batch process. With third-party applications, transactions are pulled into HQ through integration. In both cases, after transactions are pulled into HQ, a consistency check process needs to be executed that runs multiple validations on the transactions so that only successfully validated transactions are pulled into the statement to be posted in HQ. 
 
-Sometimes, retail transactions fail validation for various reasons. For example, a bug in the integration code or a bug in the POS application may cause inconsistent data, or a user error, such as deleting a product after it was synchronized to the channel or closing a fiscal period without posting retail transactions for that period, can cause inconsistent data.
+Retail transactions fail validation for various reasons. For example, a bug in the integration code or a bug in the POS application may cause inconsistent data, or a user error, such as deleting a product after it was synchronized to the channel or closing a fiscal period without posting retail transactions for that period, can cause inconsistent data.
 
 While these transactions get flagged and are excluded from the statements, the transactions can disrupt a customer’s daily process of posting daily retail sales to the financials.
 
 In Retail, you can edit the specific retail transactions that fail validation while maintaining audit of all the changes. 
 
-## To edit and audit transactions
+## Edit and audit transactions
 
-In Retail version 10.0.5, only cash and carry transactions like sales and returns can be edited. Editing customer orders or online orders is not supported. In Retail version 10.0.6 and higher, editing cash management transactions is also supported.
+In Retail version 10.0.5, cash and carry transactions like sales and returns are the only transactions that can be edited. Editing customer orders or online orders is not supported. In Retail version 10.0.6 and higher, editing cash management transactions is also supported.
 
 1. Install the Dynamics Excel Add-in.
 
@@ -81,21 +81,21 @@ In Retail version 10.0.6 and higher, the option to bulk edit retail transactions
 
     - **Edit cash and carry transactions**. This option enables you to edit all the cash and carry transactions included in the statement. The following Excel worksheets are available.
     
-       - **Transaction**: This worksheet has all the header-level information for the sales transactions.
-       - **Sales transaction**: This worksheet has all the lines-level information for the sales transactions.
-       - **Payment transactions**: This worksheet has all the payment lines information for the sales transactions.
-       - **Discount transactions**: This worksheet has all the discount lines information for the sales transactions.
-       - **Tax transactions**: This worksheet has all the tax lines information for the sales transactions.
-       - **Charge transactions**: This worksheet has all the charge lines information for the sales transactions.
+     - **Transaction**: This worksheet has all the header-level information for the sales transactions.
+     - **Sales transaction**: This worksheet has all the lines-level information for the sales transactions.
+     - **Payment transactions**: This worksheet has all the payment lines information for the sales transactions.
+     - **Discount transactions**: This worksheet has all the discount lines information for the sales transactions.
+     - **Tax transactions**: This worksheet has all the tax lines information for the sales transactions.
+     - **Charge transactions**: This worksheet has all the charge lines information for the sales transactions.
 
     - **Edit cash management transactions**. This option enables you to edit all the cash management transactions included in the statement. The following Excel worksheets are available.
      
-      - **Transaction**: This worksheet has all the header-level information for the cash management transactions.
-      - **Bank tender transactions**: This worksheet has all the bank drop transaction details.
-      - **Safe tender transactions**: This worksheet has all the safe drop transaction details.
-      - **Tender declaration**: This worksheet has all the tender declaration transaction details.
-      - **Income-expense transaction**: This worksheet has all the income-expense transaction line details.
-      - **Payment transactions**: This worksheet has all the payment-related information for the **Pay invoice** operation as well 
+     - **Transaction**: This worksheet has all the header-level information for the cash management transactions.
+     - **Bank tender transactions**: This worksheet has all the bank drop transaction details.
+     - **Safe tender transactions**: This worksheet has all the safe drop transaction details.
+     - **Tender declaration**: This worksheet has all the tender declaration transaction details.
+     - **Income-expense transaction**: This worksheet has all the income-expense transaction line details.
+     - **Payment transactions**: This worksheet has all the payment-related information for the **Pay invoice** operation as well 
              as the income-expense transaction.
 
-3.	Validations are not performed when you publish bulk edited transactions. You need to ensure that all your edits are accurate and the fidelity of data across the worksheets is maintained. For example, if you want to change the transaction date to manage the scenarios where the fiscal or inventory period for the open retail transactions is closed, you need to change the date on all the Excel worksheets that have the **Business date** column. To validate transactions after they have been edited, you can use **Revalidate transactions** on the **Retail statements** page.
+3.	Validations are not performed when you publish bulk edited transactions. You must ensure that all your edits are accurate and the fidelity of data across the worksheets is maintained. For example, if you want to change the transaction date to manage the scenarios where the fiscal or inventory period for the open retail transactions is closed, you need to change the date on all the Excel worksheets that have the **Business date** column. To validate transactions after they have been edited, you can use **Revalidate transactions** on the **Retail statements** page.
