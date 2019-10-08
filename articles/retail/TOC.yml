@@ -928,10 +928,16 @@
         href: retail-statements.md
       - name: Retail transaction consistency checker
         href: valid-checker.md
+      - name: Disable rules in retail transaction consistency checker
+        href: disable-consistency-check-rule.md
+      - name: Edit and audit retail store transactions
+        href: edit-audit-retail-transaction.md
       - name: Create, calculate, and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
       - name: Improvements to statement posting functionality
         href: statement-posting-EOD.md
+      - name: Trickle feed-based order creation for retail store transactions
+        href: trickle-feed.md
       - name: Improved handling of batch tracked items
         href: batch.md
       - name: Configure Retail parameters that affect retail statements
