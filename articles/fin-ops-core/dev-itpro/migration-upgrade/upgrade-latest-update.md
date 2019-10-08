@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the process of updating or upgrading to the latest release of Finance and Operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each release of Finance and Operations, see [What's new or changed](../fin-ops/get-started/whats-new-changed.md).
+For information about the contents of each release of Finance and Operations, see [What's new or changed](../../fin-ops/get-started/whats-new-changed.md).
 
 For information about One Version service updates, see the [One Version service updates overview](../lifecycle-services/oneversion-overview.md).
 
