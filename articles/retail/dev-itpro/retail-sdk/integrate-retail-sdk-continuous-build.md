@@ -71,7 +71,7 @@ Add a new step at the beginning of the build pipeline, as shown in the following
 
 This build step enables Microsoft to copy the latest built Retail binaries to the Retail bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.
 
-[![Adding a copy step for binaries from the Retail SDK to the Dynamics 365 Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Adding a copy step for binaries from the Retail SDK to the Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## Add a copy step for all Retail packages
 
