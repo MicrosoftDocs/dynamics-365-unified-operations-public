@@ -5,7 +5,7 @@ title: Configure an e-Commerce evaluation environment
 description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -252,8 +252,8 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 ##### Scheduling a recurring P-job
 1. Using the menu on the left, go to **Modules > Retail > Inquiries and reports > Batch jobs**.
-1. Use the Quick Filter to search for a record with Job description field with a value of '**P-0001**'.
-1. If you find a matching record and its status is "**Withhold**", select it and click Delete, then Click Yes.
+1. Use the Quick Filter to search for a record with Job description field with a value of **P-0001**.
+1. If you find a matching record and its status is **Withhold**, select it, click **Delete**, then click **Yes**.
 1. Using the menu on the left, go to **Workspaces > Retail IT**.
 1. Click **Distribution schedule**.
 1. Select **P-0001**.
@@ -290,14 +290,15 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 ##### Run full data sync
 1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Retail scheduler > Channel database**.
-1. **Default** channel is selected from the list on the left. *Select the **other** channel available (named **scXXXXXXXXX**)*.
+1. **Default** channel is selected from the list on the left. *Select the other available channel (named **scXXXXXXXXX**)*.
 1. Click **Full data sync** from the action pane.
 1. Enter **9999** as the distribution schedule.
 1. Click **OK**.
 1. Click **OK**.
 ### After these steps you are ready to start evaluating your preview environment!
 Use the **e-Commerce site management tool** URL to navigate to the C1 authoring experience and the **e-Commerce site** URL to navigate to the C2 site experience.
-***
+
+
 ## Additional resources
 ### How to find your AAD Tenant Id
 AAD Tenant Id is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**
