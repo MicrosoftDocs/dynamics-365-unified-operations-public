@@ -196,3 +196,7 @@ There will be proactive communications when you're approaching your database and
 ### Is there an option to export all document attachments from the system?
 
 Although attachments can be exported, that capability isn't a standard capability, because there isn't a standard attachment entity. Entities that provide attachments for a specific business document or record must be built.
+
+### How can attachments be extracted from the system?
+
+To extract attachments from the system, an "Attachments Entity" must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an "Attachments Entity", view   examples in the application explorer by searching for "Attachment" under the AOT > Data Model > Data Entities node.
