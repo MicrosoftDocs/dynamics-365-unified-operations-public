@@ -5,7 +5,7 @@ title: Fiscal printer integration sample for Italy
 description: This topic provides an overview of the fiscal integration sample for Italy.
 author: josaw
 manager: annbe
-ms.date: 01/23/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -72,6 +72,8 @@ The following scenarios are covered by the fiscal printer integration sample for
 
     - Print a bar code for the receipt number on a fiscal receipt.
 
+    - Print the [customer information](emea-ita-customer-information.md) that is specified for a sales transaction (such as the customer's fiscal code) on a fiscal receipt. 
+
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 
@@ -130,6 +132,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 - [Set up fiscal X/Z reports from the POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+- [Set up the functionality for management of customer information in POS](emea-ita-customer-information.md#setup)
 
 ### Enable extensions
 
