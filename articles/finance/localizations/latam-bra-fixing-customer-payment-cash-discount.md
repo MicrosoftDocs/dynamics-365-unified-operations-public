@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
-description: This topic provides information about the process for calculating and reporting the compensation and restitution of ICMS-ST tax amounts in internal operations to final consumers when goods are acquired under the Tax substitution regime (ICMS-ST). .
-author: sndray
+title: 
+description:
+author: kfend
 manager: AnnBe
-ms.date: 08/30/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,11 +25,14 @@ ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 ms.search.region: Brazil
 # ms.search.industry: 
 ms.author: sndray
-ms.search.validFrom: 2019-07-31
+ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
+# 
 
 [!include [banner](../includes/banner.md)]
+
+When you create a Customer payment journal in a legal entity that is configured for Brazil, and the payment date grants cash discounts, if the date of payment in the payment journal is changed to another date where the discounts are not applicable anymore, the payment journal continues to calculate cash discounts.
+This alteration fixes the algorithm for calculation of cash discounts to grant cash discounts within the proper range of the dates, according to the setup of Payment methods.”
