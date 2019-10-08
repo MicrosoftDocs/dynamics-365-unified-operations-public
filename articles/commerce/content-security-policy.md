@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Content Security Policy
-description: This topic describes how to enable and configure content security policy.
+title: Configure and enable Content Security Policy (CSP)
+description: This topic describes how to configure and enable Content Security Policy (CSP) in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience:  Application user
+audience:  Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -28,21 +28,26 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Content Security Policy
+# Configure and enable Content Security Policy (CSP)
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to enable and configure content security policy.
+This topic describes how to configure and enable Content Security Policy (CSP) in Dynamics 365 Commerce.
 
 ## Overview
+
 Enabling content security policy will enhance the security of an e-Commerce site by blocking connections, scripts, fonts, etc. from unknown sources.
 
-The Dynamics 365 Commerce Online SDK provide a default allow list of source URLs where styles, scripts and API calls can be made.  The allow list can also be extended from within the authoring tools **Extensibility section** per site on a tenant.  
+The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. The allow list can also be extended from within the Dynamics 365 Commerce authoring tools **Extensibility** section.  
 
-For more details see the [Content Security Policy referece guide](https://content-security-policy.com/) .
+Content Security Policy in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. 
 
-The following directives are extendable on each site.
+For more details on Content Security Policy, see the [Content Security Policy Reference](https://content-security-policy.com/).
+
+## CSP directives
+
+The following CSP directives are available and configurable on Dynamics 365 Commerce sites.
 
 Directive | Description
 --- | ---
@@ -55,18 +60,18 @@ object-src | Defines valid sources of plugins, eg <object>, <embed> or <applet>.
 script-src | Defines valid sources of JavaScript.
 style-src | Defines valid sources of stylesheets.
 
-Extending these policies can be done through authoring on a per-site basis.
 
-Content Security Policy is enabled by default and will require some extra configuration for most sites.  Below outlines how this can be done.
 
 As an example, with content security policy enabled, if a site needs to call an external script such as https://www.example.com/scripts/example.js, an entry must add it to the **script-src** directive under the **Content Security Policy** tab on the **Site Management** **Extensibilty** page.
 
 ![Content Security Policy](media/content-security-policy.png)
 
-After any changes are made, ensure the "Save adn Publish" button is pressed.
+After any changes are made, ensure the "Save and Publish" button is pressed.
 
 ## Understanding CSP errors
+
 When initially configuring CSP for a site it can be common to see pages not load or not work as intended because CSP is preventing requests, scripts, etc. from loading. 
+
 Fortunately, CSP logs some helpful errors to the console and we can use these errors to fix, fine-tune and even help cleanup unwanted or unneeded requests.
 
 Below is an example error shown within a web browser's developer tools.
@@ -82,9 +87,9 @@ Below shows how the fixed settings look like in the **Content Security Policy** 
 
 ![Content Security Policy Fix](media/content-security-policy-fixed.png)
 
-## Updating page mocks with new Content Security Policy
+## Update page mocks with new CSP
 
-If you are testing modules in a development environment with the Online SDK, you can also add Content Security Policies through page mocks. In a page mock, you’ll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
+If you are testing modules in a development environment with the Online SDK, you can also add CSP using page mocks. In a page mock, you'll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
 
 Here you may add key value pairs of directives to policies.
 
@@ -96,7 +101,7 @@ You may also disable Content Security Policy on your page mock by using:
 
 ![Content Security Policy Page Mock 2](media/content-security-policy-page-mock2.png)
 
-## Disabling CSP
+## Disable CSP
 If for whatever reason, you want to disable CSP from applying policies to your site, you may disable it altogether. Simply check the “Disable content security policy” and hit save and publish.
 
 ![Disable Content Security Policy](media/content-security-policy-disable.png)
