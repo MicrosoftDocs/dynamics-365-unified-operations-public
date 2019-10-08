@@ -89,9 +89,9 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. If you are a partner, choose **Migrate, create solutions, and learn**.
 1. If you are a customer, choose **Prospective presales**.
 1. Enter a name, description and industry as you see fit.
-1. For **Product name**, select **Microsoft Dynamics 365 Retail**.
-1. For **Product version**, select **Microsoft Dynamics 365 Retail**.
-1. For **Methodology**, select **Dynamics AX implementation methodology**.
+1. For **Product name**, select **Dynamics 365 Retail**.
+1. For **Product version**, select **Dynamics 365 Retail**.
+1. For **Methodology**, select **Dynamics AX implementation methodology** or **Dynamics Retail implementation methodology**.
 1. You may import roles and users from an existing project if that is desired.
 1. Click **Create**.
 1. You are sent to the project view.
