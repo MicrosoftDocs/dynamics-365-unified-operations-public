@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cancel warehouse work for exception handling
-description: This topic describes the scope of the "cancel work" functionality that allows warehouse supervisors to handle blocked work.
+description: This topic describes the Cancel work functionality that lets warehouse supervisors handle blocked work.
 author: omulvad
 manager: AnnBe
 ms.date: 10/01/2019
@@ -34,20 +34,21 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-"Cancel work" functionality in Dynamics 365 Supply Chain Management enables the admin user to cancel specific warehouse work that is currently in progress but is blocked by the system or cannot be completed due to some exceptional circumstances. The cancel functionality is an attractive and secure alternative to SQL corrective scripts that are typically requested from IT professionals to fix inconsistent data, and can be employed by the company’s users with admin rights.
+The Cancel work functionality in Microsoft Dynamics 365 Supply Chain Management lets the admin user cancel specific warehouse work that is currently in progress, but that is blocked by the system or can't be completed because of exceptional circumstances. This functionality is an attractive and secure alternative to SQL corrective scripts that fix inconsistent data. However, whereas these scripts are typically requested from IT professionals, the Cancel work functionality can be used by users in the company who have admin rights.
 
+You can access the Cancel work functionality at **Warehouse management** \> **Periodic tasks** \> **Clean up \> Cancel work**. In the **Cancel work** dialog box, specify the work ID of the work to cancel, and then select **OK**.
 
-## Warehouse work that can be cancelled
+## Warehouse work that can be canceled
 
-You can access the **Cancel work** menu from **Warehouse management** \> **Periodic tasks** \> **Clean up**.
+During warehouse picking operations, a worker might encounter situations where they have registered quantities as picked from a storage location to their user location, but then they can't register the put operation. Inconsistent warehouse data is often, but not always, the reason why work is blocked.
 
-During warehouse picking operations, a worker may encounter situations where, after having registered quantities as picked from a storage location to their user location, they cannot proceed with registering the put operation. Inconsistent warehouse data is often, though not always, the reason that work gets blocked.
+Unlike the regular Cancel functionality that can be accessed by using the **Cancel** button on the work header, the Cancel work functionality doesn't require that the last completed work line be a work line of the **put** type. In other words, for the Cancel work functionality, cancellation logic can be run even if the item quantity on a work line is in a user location.
 
-The **Cancel work** function does not have a pre-condition for the last completed work line to be of type "put", like the standard **Cancel** button that is accessible directly from the work header does. In other words, it does not require item quantity on a work line to be on a non-user location to execute cancel logic. 
+> [!NOTE]
+> For work that must be canceled for operational reasons, warehouse users must continue to use the regular Cancel functionality on the work page.
 
-   > [!NOTE]
-   > Warehouse users must continue to use the regular **Cancel** action on the work page for work that needs to be canceled for operational reasons.
+Only work of the **Sales**, **Transfer issue**, **Raw material picking**, or **Replenishment** type can be canceled by using the Cancel work functionality. Cancellation logic won't be run for frozen raw material picking work or work that can be canceled by using the regular Cancel functionality (see the preceding note).
 
-Only work of type **Sales**, **Transfer issue**, **Raw material picking**, or **Replenishment** can be canceled by this job. Cancellation will not be executed for frozen raw material picking work or work that can be canceled by a regular cancel function (see the note above). 
+To unblock the work, the system cancels any remaining work lines and fixes the warehouse data that is associated with the work ID that the user specified. Any regular warehouse-handling operations that involve the affected item quantity can then resume.
 
-To unblock the work, the system will cancel any remaining work lines and fix the warehouse data that is associated with the work ID specified by the user. This will allow any regular warehouse-handling operations that involve the impacted item quantity to resume. To place the impacted item in a specific location after the work is canceled, the user must utilize inventory movement or quantity adjustment operation on a mobile device.
+To put the affected item in a specific location after the work is canceled, the user must use an inventory movement or quantity adjustment operation on a mobile device.
