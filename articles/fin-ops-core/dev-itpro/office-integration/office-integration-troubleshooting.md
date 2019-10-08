@@ -128,6 +128,10 @@ If you encounter issues with Centralized Deployment for some users, it could be 
 -	One or more users are members in a group that is more restrictive than others
 -	The user referenced is on a different Office 365 account (such as a personal account)
 
+### What is the cell limit for the Excel Add-in?
+
+The default Excel Add-in cell limit is about half the limit of what the Excel Add-in can handle on a reasonably fast machine. The speed of the machine is the limitation. If problems are encountered, then the cell limit should be reduced and/or the filter should be adjusted to reduce the data set. A common workaround is to use a filter to deal with the data in a number of "chunks" instead of all at once.
+
 ## Troubleshooting issues
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
