@@ -114,7 +114,7 @@ In the fault designer, you set up fault data on asset types.
 
 7. Select **Save** to save your changes.
 
-![Figure 1](media/21-setup-for-work-orders.png)
+![Fault designer page](media/21-setup-for-work-orders.png)
 
 ## Create fault causes
 

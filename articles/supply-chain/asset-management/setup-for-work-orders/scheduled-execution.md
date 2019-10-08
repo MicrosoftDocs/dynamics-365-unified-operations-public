@@ -47,4 +47,4 @@ Scheduled execution setup, which is related to work orders, can be generic or sp
 5. In the **Scheduled execution** field, select the time interval.
 6. Select **Save**.
 
-![Figure 1](media/20-setup-for-work-orders.png)
+![Scheduled execution](media/20-setup-for-work-orders.png)

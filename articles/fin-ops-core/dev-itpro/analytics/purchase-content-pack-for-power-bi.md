@@ -67,7 +67,7 @@ The following sections provide an overview of the visualizations.
 - Total # of active vendors
 
 **Example**
-<img src="media/spend1.PNG" alt="Purchase by vendor">
+<img src="media/spend1.png" alt="Purchase by vendor">
 
 ### Purchase by product report page
 
@@ -84,7 +84,7 @@ The following sections provide an overview of the visualizations.
 **Example**
 
 
-<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+<img src="media/purchaseByProduct.png" alt="Purchase by Product">
 
 ### Purchase by period report page
 This page shows purchases this year and last year, and growth by procurement category.
@@ -100,7 +100,7 @@ This page shows purchases this year and last year, and growth by procurement cat
 - YOY purchase growth %
 
 **Example**
-<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+<img src="media/purchaseByPeriod.png" alt="Purchase by Period">
 
 ### Purchase by vendor location report page
 
@@ -110,7 +110,7 @@ This page shows purchases this year and last year, and growth by procurement cat
 - Purchase by country
 
 **Example**
-<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+<img src="media/purchByVendorLocation.png" alt="Purchase by Vendor Location">
 
 ### Purchase spend analysis by time report page
 
@@ -119,7 +119,7 @@ This page shows purchases this year and last year, and growth by procurement cat
 - Purchase current and last year (line and column chart)
 
 **Example**
-<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+<img src="media/PurchByTIme.png" alt="Purchase by Time">
 
 ### Purchase spend analysis by vendor report page
 
@@ -129,7 +129,7 @@ This page shows purchases this year and last year, and growth by procurement cat
 - Top 10 vendors with decreased spending YOY
 
 **Example** 
-<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+<img src="media/PurchSpendAnalysisByVendor.png" alt="Purchase spend by vendor">
 
 
 ## Data model and entities
