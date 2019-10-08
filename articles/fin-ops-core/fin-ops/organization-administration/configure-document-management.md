@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -199,4 +199,5 @@ Although attachments can be exported, that capability isn't a standard capabilit
 
 ### How can attachments be extracted from the system?
 
-To extract attachments from the system, an "Attachments Entity" must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an "Attachments Entity", view   examples in the application explorer by searching for "Attachment" under the AOT > Data Model > Data Entities node.
+To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT > Data Model > Data Entities** node.
+
