@@ -91,7 +91,7 @@ Additional resources
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

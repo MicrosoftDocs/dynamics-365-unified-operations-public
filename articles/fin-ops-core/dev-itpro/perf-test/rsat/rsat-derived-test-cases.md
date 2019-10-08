@@ -38,11 +38,11 @@ The Regression suite automation tool lets you execute the same test case with mu
 
 In the following image, a derived test case has been created from a test case called **Create Vendor**.
 
-![](media/derived-test-case.png)
+![Example of derived test case created from test case called Create Vendor](media/derived-test-case.png)
  
 The derived test case is automatically created in Azure DevOps. It is a child item of the **Create Vendor** test case and is tagged with the special keyword **RSAT:DerivedTestSteps**.
 
-![](media/derived-1.png)
+![Example of derived test case that is automatically created](media/derived-1.png)
  
 When you run (play back) a derived test case, it will use the recording of its parent test case and its own copy of the Excel parameters file. This will allow you to run the same test with different parameters without the need to maintain more than one recording.
 
