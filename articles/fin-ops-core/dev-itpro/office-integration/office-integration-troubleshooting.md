@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -130,7 +130,7 @@ If you encounter issues with Centralized Deployment for some users, it could be 
 
 ### What is the cell limit for the Excel Add-in?
 
-The default Excel Add-in cell limit is about half the limit of what the Excel Add-in can handle on a reasonably fast machine. The speed of the machine is the limitation. If problems are encountered, then the cell limit should be reduced and/or the filter should be adjusted to reduce the data set. A common workaround is to use a filter to deal with the data in a number of "chunks" instead of all at once.
+The default Excel Add-in cell limit is about half the limit of what the Excel Add-in can handle on a reasonably fast machine. The speed of the machine is the limitation. If problems are encountered, then the cell limit should be reduced and/or the filter should be adjusted to reduce the data set. A common workaround is to use a filter to manage the data in smaller pieces instead of all at once.
 
 ## Troubleshooting issues
 
