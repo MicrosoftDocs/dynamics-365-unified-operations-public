@@ -72,4 +72,4 @@ The results of the reversal process will display on the screen after it's comple
 
 ## Known limitations
 
-Transactions can be reversed only if they meet the business rules for reversing them. For example, General ledger transactions can be reversed only is the **Transaction reversal** field is set to Yes on the General ledger parameters page. Vendor payments cannot be reversed using the capability described in this topic. Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment). 
+Transactions can be reversed only if they meet the business rules for reversing them. Vendor payments cannot be reversed using the capability described in this topic. Vendor payments must be reversed by following the steps listed in [Reverse a vendor payment](https://docs.microsoft.com/en-us/dynamics365/finance/accounts-payable/reverse-vendor-payment). 
