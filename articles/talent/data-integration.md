@@ -101,6 +101,9 @@ Core HR entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
 one of the other integration technologies described below.
 
+> [!NOTE]
+> The CDS integration is off by default on new environments that don’t include the provided demo data. New environments with demo data will have the integration turned on and will start syncing data when the environment is provisioned. Once your environment is ready to sync data, it can be enabled on the [Common Data Service configuration form](https://docs.microsoft.com/en-us/dynamics365/talent/hr-cds-admin-form).
+
 <sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 
 ### DMF/DIXF entities
