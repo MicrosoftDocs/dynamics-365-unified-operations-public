@@ -51,7 +51,7 @@ Work with new prospects to help them understand the business processes that are 
 
 #### Migrate, create solutions, and learn the project for Finance and Operations apps 
 
-Create a Microsoft Dynamics AX 2012 project workspace. You can use the project to support the upgrade from Dynamics AX 2012 to the current version. You can also use the project to learn how to use the current version or create solutions in Microsoft Dynamics AX Lifecycle Services (LCS). [![lcsforpartnersbrandingupdateart](./media/lcsforpartnersbrandingupdateart.png)](./media/lcsforpartnersbrandingupdateart.png)
+Create a Microsoft Dynamics AX 2012 project workspace. You can use the project to support the upgrade from Dynamics AX 2012 to the current version. You can also use the project to learn how to use the current version or create solutions in Microsoft Dynamics AX Lifecycle Services (LCS).
 
 ### Projects for customers in LCS
 
