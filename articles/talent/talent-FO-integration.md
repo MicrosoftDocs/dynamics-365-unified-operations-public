@@ -43,6 +43,9 @@ the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance]
 
 For Attract and Onboard, all data is native to Common Data Service.
 
+## Why don't I see any data synced to CDS?
+The CDS integration is off by default on new environments that don’t include the provided demo data. New environments with demo data will have the integration turned on and will start syncing data when the environment is provisioned. Once your environment is ready to sync data, it can be enabled on the [Common Data Service configuration form](https://docs.microsoft.com/en-us/dynamics365/talent/hr-cds-admin-form).
+
 ## Can I create a new mapping without using the templates?
 
 Templates are the starting point. You can create your own template, but a
