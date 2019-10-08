@@ -391,12 +391,14 @@
         href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
   - name: Integration
     items:
+    - name: Data integration guidance for Dynamics 365 for Talent
+      href: data-integration.md
+    - name: Common Data Service configuration form
+      href: hr-cds-admin-form.md
     - name: Integrate with Dynamics 365 for Finance and Operations
       href: talent-financeandoperations-integration.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
-    - name: Data integration guidance for Dynamics 365 for Talent
-      href: data-integration.md
     - name: Integration FAQ
       href: talent-fo-integration.md
     - name: Recurring data export using Azure Logic apps
