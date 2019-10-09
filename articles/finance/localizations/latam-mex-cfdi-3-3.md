@@ -47,7 +47,7 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
     - **SAT product code** – Use this classification for scenarios where the item code isn't identified.
     - **SAT unit code** – Use this classification for scenarios where the unit of measure isn't identified.
     
-### Foreign trade 
+#### CFDI Foreign trade parameters
 
 If your organization uses electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
 The following changes are introduced as part of generation of CFDI foreign trade complement
@@ -58,7 +58,7 @@ The following changes are introduced as part of generation of CFDI foreign trade
 - **CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
 - **Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
 
-### CFDI witholding documents
+#### CFDI witholding parameters
 If your organization uses electronic invoicwithholding documents es that are validated and certified by a third-party digital signature service provider (PAC), you enable electronic invoicing by using the fields in the **CFDI Withholding** and **Number sequences** area of the **Electronic invoice parameters** page.
 
 -**Enable CFDI witholding:** Select Yes to enable the generation of CFDI withholding
@@ -216,6 +216,10 @@ The sales tax code configuration identifies the <strong>Exempt</strong> type as 
 <tr>
 <td> c_Retenciones </>
 	<td> <strong> Organization administration > Setup > Einvoice > SAT classifications > Withholding type </strong>, to introduce the list of withholding type classification defined by the government. The user will be able to introduce the following information: Code, description, type of complement that the CFDI withholding will generates </td>
+</tr>
+<tr>
+	<td>c_TipoContribuyenteSujetoRetencio </>
+		<td> This categorization is included in the <strong>Vendor master data> Invoice and delivery </strong>, where the user will be able to select the type of tax payer subject to withholding </td>
 </tr>
 
 </tbody>
@@ -403,3 +407,40 @@ Note CFDI packing slip documents are only generated from Transfers orders betwee
 10. View, email, export, or print a CFDI packing slip. The printed CFDI packing slip includes two-dimensional bar code in accordance with the format of QR Code (Quick Response Code) that is described in the standard ISO/IEC18004.
  
  
+ ## CFDI Withholding
+ 
+CFDI withholding document is an electronic withholding certificate established by the tax authorities in Mexico (SAT) and applicable for vendor payments when ISR and VAT withholding taxes are applied.
+
+The CFDI withholding document includes all information required by government as company details, vendor account and amount of withholding taxes related.
+
+CFDI withholding documents will be generated from tax transactions where the sales tax codes **IVA** and **ISR** tax type are defined as Negative in the following transactions entry points:
+- Purchase invoice;
+- Vendor invoice (non PO);
+- Invoice register;
+- Invoice journal;
+- Journal transaction in General Ledger module when vendor account is present.
+
+Withholding type is defaulted from the vendor account and the user can change the withholding type during the transaction registration process.
+
+#### Periodic process
+The generation of CFDI withholding document is performed from Accounts payables > Periodic > CFDI > Generate CFDI withholding.
+The user can select the vendor account, from and to **Month/year**
+
+After the process if confirmed, CFDI withholding documents are generated and the user must to start the process to request the digital stamp to PAC service provider, **Accounts payables > Periodic > CFDI > Export/Import CFDI withholding process.**
+
+Specific complements are generated for the following withholding types:
+- **Interest (16).** Additional information is required during the transaction registration as:  
+    - Transaction belongs to financial system;
+    - Interest cashed in the current period/year;
+    - Interests belongs to derived financial operations;
+    - Nominal, real interest and loss interest amounts.
+- **Foreign payments (18).** Additional information must be configured in the vendor master data when foreign vendor RFC of legal representative in Mexico.
+
+Note Other complement are not currently supported in this feature.
+
+#### Inquire CFDI withholding documents
+
+After the CFDI withholding document is issued to PAC, you can inquire the status and perform the related actions in **Accounts payables >Inquire > Journals > CFDI withholding journal.**
+
+
+
