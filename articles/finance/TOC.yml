@@ -307,11 +307,11 @@
       - name: Revenue recognition overview
         href: accounts-receivable/revenue-recognition-overview.md
       - name: Revenue recognition setup
-        href: accounts-receivable/revenue-recognition-setup.md.md
+        href: accounts-receivable/revenue-recognition-setup.md
       - name: Recognize deferred revenue
-        href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md.md
+        href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md
       - name: Revenue recognition on sales orders
-        href: accounts-receivable/revenue-recognition-so-basics.md.md        
+        href: accounts-receivable/revenue-recognition-so-basics.md        
       - name: Set up and process recurring invoices
         href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
