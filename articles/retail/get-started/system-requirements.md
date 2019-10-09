@@ -88,7 +88,7 @@ The following Microsoft Office applications are supported:
 ## Retail Modern POS for Windows requirements
 
 > [!NOTE]
-> - If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server. An offline database for Retail Modern POS requires SQL Server 2012 with Service Pack 3 or later, SQL Server 2014 with Service Pack 2 or later, or SQL Server 2016. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
+> - If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available (It is recommended to have no less than 20 GB of disk space available). An offline database for Retail Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
 > - Starting October 1, 2018, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported Windows operating systems
@@ -175,13 +175,13 @@ Take note that the minimum system requirements listed below are the bare minimum
 
 - 4 GB of RAM
 - 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
-- At least 10 GB of free space (The channel database can require a large amount of space.)
+- At least 15 GB of free space (The channel database can require a large amount of space.)
 
 ### Recommended system requirements
 
 - 6 GB of RAM
 - 2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
-- At least 10 GB of free space (The channel database can require a large amount of space.)
+- At least 20 GB of free space (The channel database can require a large amount of space.)
 
 It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
 
