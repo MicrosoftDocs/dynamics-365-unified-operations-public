@@ -52,11 +52,11 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 If your organization uses electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
 The following changes are introduced as part of generation of CFDI foreign trade complement
 
--**Operation type:** Select Export
--**CFDI version:** Select version 1.1
--**Reporting currency:** Select the currency code that represents the US Dollar since the foreign complement should be expressed in this currency
--**CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
--**Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
+- **Operation type:** Select Export
+- **CFDI version:** Select version 1.1
+- **Reporting currency:** Select the currency code that represents the US Dollar since the foreign complement should be expressed in this currency
+- **CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
+- **Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
 
 ### CFDI witholding documents
 If your organization uses electronic invoicwithholding documents es that are validated and certified by a third-party digital signature service provider (PAC), you enable electronic invoicing by using the fields in the **CFDI Withholding** and **Number sequences** area of the **Electronic invoice parameters** page.
@@ -187,10 +187,6 @@ The sales tax code configuration identifies the <strong>Exempt</strong> type as 
 <td>c_TipoRelacion</td>
 <td>New CFDI reference functionality has been implemented that lets users identify the various types of relations between CFDI documents. Some of these relation types are assigned automatically. Users can manually select other relationship types in specific scenarios.</td>
 </tr>
-<tr>
-<tr>
-<td> <strong> FOREIGN TRADE </strog></td>
-</tr>
 <tr>    
 <td>c_Incoterm</td>
 <td><strong>Organization administration > Setup > Einvoice > SAT classifications > Incoterm</strong>, to introduce the list of incoterm classification defined by the government. The user will be able to introduce the following information: SAT code classification, description, version effective and expiration date. Once the list is created or updated, the user will be able to map the related classification in the following master data:
@@ -217,7 +213,11 @@ The sales tax code configuration identifies the <strong>Exempt</strong> type as 
     <td> c_UnidadAduana </td>
     <td> <strong>Organization administration > Setup > Einvoice > SAT Classifications > Customs unit of measure </strong>, to introduce the list custom unit of measure classification defined by the government. The user will be able to introduce the following information: SAT code classification, description, version effective and expiration date. Once the list is created or updated, the user will be able to select the customs unit of measureat the line level in sales order line, free text invoice lines and project invoice  </td>
 </tr>
- 
+<tr>
+<td> c_Retenciones </>
+	<td> <strong> Organization administration > Setup > Einvoice > SAT classifications > Withholding type </strong>, to introduce the list of withholding type classification defined by the government. The user will be able to introduce the following information: Code, description, type of complement that the CFDI withholding will generates </td>
+</tr>
+
 </tbody>
 </table>
 
