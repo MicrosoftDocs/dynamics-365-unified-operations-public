@@ -39,11 +39,11 @@ ms.search.validFrom: 2019-09-20
 
 ## Vendor data flow 
 
-If you use Customer Engagement apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.  
+If you use other Dynamics 365 apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.  
 
 ![Basic vendor flow](media/dual-write-switch-1.png)
  
-If you use Customer Engagement apps for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, use this extended vendor design. In this design, extended vendor information like vendor on-hold status and vendor profile is stored in the **vendors** entity in Common Data Service. 
+If you use other Dynamics 365 apps for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, use this extended vendor design. In this design, extended vendor information like vendor on-hold status and vendor profile is stored in the **vendors** entity in Common Data Service. 
 
 ![Extended vendor flow](media/dual-write-switch-2.png)
  
