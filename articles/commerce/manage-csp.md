@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure and enable Content Security Policy (CSP)
-description: This topic describes how to configure and enable Content Security Policy (CSP) in Dynamics 365 Commerce.
+title: Manage Content Security Policy (CSP)
+description: This topic describes how to manage Content Security Policy (CSP) in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,16 +28,16 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Configure and enable Content Security Policy (CSP)
+# Manage Content Security Policy (CSP)
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure and enable Content Security Policy (CSP) in Dynamics 365 Commerce.
+This topic describes how to manage Content Security Policy (CSP) in Dynamics 365 Commerce.
 
 ## Overview
 
-Content Security Policy (CSP) is an additional layer of security that helps to detect and mitigate certain types of web attacks, the purpose of which can be anything from data theft to site defacement to distribution of malware. CSP provides an extensive set of policy directives that enable you to control the resources that a page is allowed to load. Each directive defines the restrictions for a particular resource type.
+Content Security Policy (CSP) is an additional layer of security that helps to detect and mitigate certain types of web attacks, the purpose of which can be anything from data theft to site defacement to distribution of malware. CSP provides an extensive set of policy directives that enable you to control the resources that a site page is allowed to load. Each directive defines the restrictions for a particular resource type.
 
 Enabling CSP for an e-Commerce site enhances security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. CSP in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. This list can be modified on the Dynamics 365 Commerce Extensibility page.
 
@@ -60,7 +60,7 @@ style-src | Defines valid sources of stylesheets
 
 ### Example of CSP directive configuration
 
-The following example describes how to enable an external script to be called in Dynamics 365 Commerce.
+The following example describes how to enable an external script to be called from your site.
 
 To configure a directive to allow an external script to be called, follow these steps.
 
@@ -76,7 +76,7 @@ The following screenshot shows where an external script URL would be entered on 
 
 ## Interpret and fix CSP errors
 
-When initially configuring CSP for a site, it is common to see pages that will not load or work as intended because CSP is preventing requests, scripts, etc. from loading. Fortunately CSP logs some helpful errors that can be used to fix, tune, and clean up unwanted or unneeded requests.
+When initially configuring CSP for a site, it is common to see pages that will not load or work as intended because CSP is blocking external connections, scripts, fonts, and other types of resources from loading. Fortunately CSP logs some helpful errors that can be used to fix, tune, and clean up unwanted or unneeded requests.
 
 The following example screenshot shows some CSP errors as seen within a web browser's developer tools.
 
@@ -85,32 +85,32 @@ The following example screenshot shows some CSP errors as seen within a web brow
 In this example we have two CSP errors:
 
 - The Eval function is blocked by default because it can lead to arbitrary Javascript execution. To allow it, you must add 'unsafe-eval' (single quotes required) to your site's script-src directive.
-- The stylesheet is blocked. To allow stylesheets to be loaded from an external domain, you would add the URL to the style-src directive.
+- The stylesheet is blocked. To allow a stylesheet to be loaded from an external domain, you must add the URL to the style-src directive.
 
 The following screenshot shows what the fixed settings would look like on the Dynamics 365 Commerce **Content Security Policy** tab.
 
 ![Content Security Policy Fix](media/content-security-policy-fixed.png)
 
-## Update page mocks with new CSP
+## Update page mocks with CSP
 
-If you are testing modules in a development environment with the online SDK, you can also add CSP using page mocks. In a page mock, you'll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
+If you are testing modules with the online SDK in a development environment, you can also add CSP using page mocks. In a page mock, you'll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
 There you can add key value pairs of directives to policies, as in the following example code.
 
 ```
-"appContext": [
+"appContext": {
 	"contentSecurityPolicy": {
-		"script-src": ["https://www.3schools.com/js/myScript.js"],
+		"script-src": ["https://www.w3schools.com/js/myScript.js"],
 		"font-src": ["https://*.commerce.dynamics.com"]
 	}
 }
 ```
 
-If you are adding CSP policies in your page mock, please note that it will not include any of the default CSP policies provided by the platform. 
+If you are adding CSP policies in a page mock, please note that it will not include any of the default CSP policies provided by the platform. 
 
-You can also disable CSP on your page mock by using the following code.
+You can also disable CSP on a page mock by using the following code.
 
 ```
-"appContext": [
+"appContext": {
 	"contentSecurityPolicy": {
 		"disableContentSecurityPolicy": true
 	}
@@ -119,15 +119,16 @@ You can also disable CSP on your page mock by using the following code.
 
 ## Disable CSP
 
-If you want to disable CSP from applying policies to your site, you can disable it altogether. 
+If you want to disable CSP from applying policies to your site, you can do so on the Dynamics 365 Commerce Extensibility page. 
 
-To disable CSP, follow these steps.
+To disable CSP on your site, follow these steps.
 
 1. In Dynamics 365 Commerce, navigate to your site.
 1. Go to **Site Management \> Extensibility**.
+1. Select the **Content Security Policy** tab.
 1. Select **Disable content security policy**.
 1. Select **Save and Publish**.
 
 The following screenshot shows where to disable CSP on the **Content Security Policy** tab.
 
-![Disable CSP](media/content-security-policy-disable.png)
+![Disable CSP on the Dynamics 365 Commerce Extensibility page](media/content-security-policy-disable.png)
