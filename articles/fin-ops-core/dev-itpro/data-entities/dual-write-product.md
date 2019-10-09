@@ -265,7 +265,7 @@ Product dimensions are characteristics that identify a product variant. The four
 
 The possible colors in Finance and Operations apps are available in Common Data Service through the following mappings.
 
-[!include [product colors](dual-write/EcoResProductColorEntity-msdyn-productcolors.md)]
+[!include [product colors](dual-write/EcoResProductColorEntity-msdyn-productcolor.md)]
 
 Source field | Map type | Destination field
 ---|---|---
