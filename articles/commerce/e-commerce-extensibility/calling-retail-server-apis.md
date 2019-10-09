@@ -97,15 +97,15 @@ For an entire list of all available Retail APIs within each Data Action Manager,
 
 The Retail Server proxy is closely tied to the [Data Action Framework](data-actions.md), so for every Retail Server API, there are two exposed Retail Server proxy methods:
 
-- **The createInput method** – This method will always be named **create{RETAIL_SERVER_API_NAME}Input**. This method will create an **IActionInput** class, which can be used to either run a [Page-load Data Action](page-load-data-action.md) or do direct state updating/fetching via the **actionContext.update()** or **actionContext.get()** methods.
+- **The createInput method** – This method will always be named **create{RETAIL_SERVER_API_NAME}Input**. This method will create an **IActionInput** class, which can be used to either run a [page load data action](page-load-data-action.md) or do direct state updating/fetching via the **actionContext.update()** or **actionContext.get()** methods.
 
-- **The action method** – This method will always be named **{RETAIL_SERVER_API_NAME}Async**. This method can be invoked on its own as an [Event-based Data Action](./event-based-data-actions), or added inside another action method to create a [Data Action Chain](chain-data-actions.md).
+- **The action method** – This method will always be named **{RETAIL_SERVER_API_NAME}Async**. This method can be invoked on its own as an [event-based data action](event-based-data-actions.md), or added inside another action method to create a [data action chain](chain-data-actions.md).
 
 ## Create a page load Retail Server proxy data action
 
-When you want to attach a Retail Server proxy API call to a module so that it will run on page load, you need to create a new data action. This is very similar in practice to creating a standard [Page-load Data Action](page-load-data-action.md). 
+When you want to attach a Retail Server proxy API call to a module so that it will run on page load, you need to create a new data action. This is very similar in practice to creating a standard page load data action. 
 
-For this example, we will create a module which will use the Retail Server proxy to get all the categories available for the configured channel on page load. To start, we need to identify the correct Retail Server proxy API we want to use, which in this case happens to be the **GetCategories** API provided by the CategoriesDataActions manager. We can then construct a [data action](data-actions.md) so that it can be used within a module definition. To accomplish this, we generally need to do two things:
+For this example, we will create a module which will use the Retail Server proxy to get all the categories available for the configured channel on page load. To start, we need to identify the correct Retail Server proxy API we want to use, which in this case happens to be the **GetCategories** API provided by the CategoriesDataActions manager. We can then construct a data action so that it can be used within a module definition. To accomplish this, we generally need to do two things:
 
 - Provide a **createInput** method which calls the Retail Server proxy **createInput** method for our desired API, and passes along any contextual data we want to the API (for example ChannelId).
 
