@@ -298,6 +298,253 @@ The following table provides more information about how quality orders can be ge
 </tbody>
 </table>
 
+## Quality order auto generation examples
+In purchasing, if you set **Event type** as **Product receipt** and **Execution** as **After** in **Quality associations**, the following will result. 
+
+-   When **Per updated quantity** is set to **Yes**, a quality order will be generated with every receipt based on the the received quantity and settings in item sampling. Every time quantity is received against the purchase order, new quality orders are generated based on newly received quantity.
+-   When **Per updated quantity** is set to **No**, a quality order will be generated **at the first time** it is received based on received quantity, plus one or more quality orders are created based on the remaining quantity dependent on the tracking dimensions. Subsequent receipts against the purchase order will not generate quality orders.
+
+<table>
+<tbody>
+<tr>
+<th>Quality specification</th>
+<th>Per updated quantity</th>
+<th>Per tracking dimension</th>
+<th>Result</th>
+</tr>
+<tr>
+<td>Percentage: 10%</td>
+<td>Yes</td>
+<td>
+<p>Batch number: No;</p>
+<p>Serial number: No;</p>
+</td>
+<td>
+<p>Order quantity: 100</p>
+<ol>
+<li>Report as finished for 30
+<ul>
+<li>Quality order #1 for 3 (10% of 30)</li>
+</ul>
+</li>
+<li>Report as finished for 70
+<ul>
+<li>Quality order #2 for 7 (10% of what is remaining on the order, here is 70)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixed quantity: 1</td>
+<td>No</td>
+<td>
+<p>Batch number: No;</p>
+<p>Serial number: No;</p>
+</td>
+<td>Order quantity: 100
+<ol>
+<li>Report as finished for 30
+<ul>
+<li>Quality order #1 is created for 1 (for first reported as finished quantity, fixed value as 1)</li>
+<li><strong>No more</strong> quality order are created against remaining quantity</li>
+</ul>
+</li>
+<li>Report as finished for 10
+<ul>
+<li>No quality orders are created</li>
+</ul>
+</li>
+<li>Report as finished for 60
+<ul>
+<li>No quality orders are created</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixed quantity: 1</td>
+<td>Yes</td>
+<td>
+<p>Batch number: Yes;</p>
+<p>Serial number: Yes;</p>
+</td>
+<td>
+<p>Order quantity: 10</p>
+<ol>
+<li>Report as finished for 3<br />
+<ul>
+<li>Quality order #1 for 1 of batch #b1, serial #s1</li>
+<li>Quality order #2 for 1 of batch #b2, serial #s2</li>
+<li>Quality order #3 for 1 of batch #b3, serial #s3</li>
+</ul>
+</li>
+<li>Report as finished for 2
+<ul>
+<li>Quality order #4 for 1 of batch #b4, serial #s4</li>
+<li>Quality order #5 for 1 of batch #b5, serial #s5</li>
+</ul>
+</li>
+</ol>
+<p>Note: the batch could be reused actually.</p>
+</td>
+</tr>
+<tr>
+<td>Fixed quantity: 2</td>
+<td>No</td>
+<td>
+<p>Batch number: Yes;</p>
+<p>Serial number: Yes;</p>
+</td>
+<td>
+<p>Order quantity: 10</p>
+<ol>
+<li>Report as finished for 4<br />
+<ul>
+<li>Quality order #1 for 1 of batch #b1, serial #s1</li>
+<li>Quality order #2 for 1 of batch #b2, serial #s2</li>
+<li>Quality order #3 for 1 of batch #b3, serial #s3</li>
+<li>Quality order #4 for 1 of batch #b4, serial #s4</li>
+</ul>
+<ul>
+<li><strong>No more</strong> quality order are created against remaining quantity</li>
+</ul>
+</li>
+<li>Report as finished for 6
+<ul>
+<li>No quality orders are created</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+In production, if you set **Event type** as **Report as finished** and **Execution** as **After** in **Quality associations**, the following will result.
+
+-   When **Per updated quantity** is set to **Yes**, a quality order will be generated based on every finished quantity and settings in item sampling. Every time quantity is reported as finished against the production order, new quality orders are generated based on newly finished quantity. This generation logic is consistent with purchasing.
+-   When **Per updated quantity** is set to **No**, a quality order will be generated **at the first time** it is reported as finished based on the finished quantity, plus one or more quality orders are created based on the remaining quantity dependent on the tracking dimensions of item sampling. Subsequent finished quantity against the production order will **NOT** generate quality orders.
+
+<table>
+<tbody>
+<tr>
+<th>Quality specification</th>
+<th>Per updated quantity</th>
+<th>Per tracking dimension</th>
+<th>Result</th>
+</tr>
+<tr>
+<td>Percentage: 10%</td>
+<td>Yes</td>
+<td>
+<p>Batch number: No;</p>
+<p>Serial number: No;</p>
+</td>
+<td>
+<p>Order quantity: 100</p>
+<ol>
+<li>Report as finished for 30
+<ul>
+<li>Quality order #1 for 3 (10% of 30)</li>
+</ul>
+</li>
+<li>Report as finished for 70
+<ul>
+<li>Quality order #2 for 7 (10% of what is remaining on the order, here is 70)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixed quantity: 1</td>
+<td>No</td>
+<td>
+<p>Batch number: No;</p>
+<p>Serial number: No;</p>
+</td>
+<td>Order quantity: 100
+<ol>
+<li>Report as finished for 30
+<ul>
+<li>Quality order #1 for 1 (for first reported as finished quantity, fixed value as 1)</li>
+<li>Quality order #2 for 1 (for remaining quantity, but still 1 as fixed value)</li>
+</ul>
+</li>
+<li>Report as finished for 10
+<ul>
+<li>No quality orders are created</li>
+</ul>
+</li>
+<li>Report as finished for 60
+<ul>
+<li>No quality orders are created</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Fixed quantity: 1</td>
+<td>Yes</td>
+<td>
+<p>Batch number: Yes;</p>
+<p>Serial number: Yes;</p>
+</td>
+<td>
+<p>Order quantity: 10</p>
+<ol>
+<li>Report as finished for 3. 1 for #b1, #s1; 1 for #b2, #s2; 1 for #b3, #s3.<br />
+<ul>
+<li>Quality order #1 for 1 of batch #b1, serial #s1</li>
+<li>Quality order #2 for 1 of batch #b2, serial #s2</li>
+<li>Quality order #3 for 1 of batch #b3, serial #s3</li>
+</ul>
+</li>
+<li>Report as finished for 2. 1 for #b4, #s4; 1 for #b5, #s5.
+<ul>
+<li>Quality order #4 for 1 of batch #b4, serial #s4</li>
+<li>Quality order #5 for 1 of batch #b5, serial #s5</li>
+</ul>
+</li>
+</ol>
+<p>Note: the batch could be reused actually.</p>
+</td>
+</tr>
+<tr>
+<td>Fixed quantity: 2</td>
+<td>No</td>
+<td>
+<p>Batch number: Yes;</p>
+<p>Serial number: Yes;</p>
+</td>
+<td>
+<p>Order quantity: 10</p>
+<ol>
+<li>Report as finished for 4. 1 for #b1, #s1; 1 for #b2, #s2; 1 for #b3, #s3; 1 for #b4, #s4.<br />
+<ul>
+<li>Quality order #1 for 1 of batch #b1, serial #s1</li>
+<li>Quality order #2 for 1 of batch #b2, serial #s2</li>
+<li>Quality order #3 for 1 of batch #b3, serial #s3</li>
+<li>Quality order #4 for 1 of batch #b4, serial #s4</li>
+</ul>
+<ul>
+<li>Quality order #5 for <strong>2</strong> referencing no batch and no serial number</li>
+</ul>
+</li>
+<li>Report as finished for 6. 1 for #b5, #s5; 1 for #b6, #s6; 1 for #b7, #s7; 1 for #b8, #s8; 1 for #b9, #s9; 1 for #b10, #s10.
+<ul>
+<li>No quality orders are created</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## Quality management pages
 <table>
 <colgroup>
