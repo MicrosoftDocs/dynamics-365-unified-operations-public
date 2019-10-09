@@ -531,6 +531,54 @@ INNEROFFSET | = | msdyn_inneroffset
 OUTEROFFSET | = | msdyn_outeroffset
 ROUNDING | >< | msdyn_rounding
 
+### Initial synchronization of units data matching between Finance and Operations
+and CDS**
+
+#### Initial synchronization of units
+
+When dual write is enabled, units from Dynamics 365 Finance and Operations are
+synchronized to CDS/Customer Engagement. The units synchronized from Finance and
+Operations in CDS have a flag set that indicates that the unit is “Externally
+maintained”.
+
+#### Matching units and unit classes/groups data from Finance and Operations and Customer Engagement
+
+First, it is important to note that the integration key for unit is
+msdyn_symbol. Therefore, this value must be unique in CDS/Customer Engagement.
+Due to the fact that in CE it is the pair “Unit group ID” and “Name” are what
+define the uniqueness of a unit, different scenarios need to be considered for
+matching unit data between Finance and Operations and CDS.
+
+*For units matching/overlapping in Finance and Operations and Customer
+Engagement*:
+
+1.  **The unit belongs to a unit group in CE that corresponds to a unit class in
+    Finance and Operations**: then, the field msdyn_symbol in CE must be filled
+    in with the unit symbol from Finance and Operations. Therefore, when the
+    data will be matched, and the unit will be set as “Externally maintained” in
+    CE.
+
+2.  **The unit belongs to a unit group in CE that does not correspond to any
+    unit class in Finance and Operations (no existing unit class in Finance and
+    Operations for the unit class in CE**): the msdyn_symbol must be filled in
+    with a random string. Note that this value must be unique in CE.
+
+*For units in Finance and Operations not existing in CE:*
+
+As part of dual-write the units from Finance and Operations are created and
+synchronized in Customer Engagement/CDS and will be set as “Externally
+maintained”. No extra bootstrapping effort is required.
+
+*For units in CE not existing in Finance and Operations:*
+
+The field msdyn_symbol must be filled in for all units. The units can always be
+created in Finance and Operations in the corresponding unit class (if it
+exists). If the unit class does not exist, firstly the unit class must be
+created matching the CE unit group and secondly the unit can be created. Note
+that the unit symbol in Finance and Operations must be the msdyn_symbol
+previously specified in CE for the unit.
+
+
 ## Product policies: dimension, tracking and storage groups
 
 The product policies are sets of policies used for defining products and its characteristics in inventory. The product dimension group, product tracking dimension group and storage dimension group can be found as product policies. 
@@ -681,14 +729,16 @@ Note that if apps are built on top of CDS, especial attention should be paid to 
 
 ### Initial synchronization of products 
 
-When dual write is enabled, products from Dynamics 365 Finance and Operations are synchronized to CDS/Customer Engagement. Note that prior to enabling dual-write, products created in CDS/Customer Engagement will not be updated or matched with product data from Finance and Operations. 
+When dual write is enabled, products from Dynamics 365 Finance and Operations are synchronized to CDS/Customer Engagement. Note that products created in CDS/Customer Engagement prior to dual write, will not be updated or matched with product data from Finance and Operations.
 
 ### Matching product data from Finance and Operations and Customer Engagement
 
-If the same products are kept (overalpping/matching) in Finance and Operations and in CDS/Customer Engagement, when enabling dual-write the synchronization of products from Finance and Operations will take place, and duplicate records will appear in CDS for the same product. 
+If the same products are kept (overlapping/matching) in Finance and Operations and in CDS/Customer Engagement, when enabling dual-write the synchronization of products from Finance and Operations will take place, and duplicate records will appear in CDS for the same product.
+To avoid the previous situation, if Customer Engagement has products that are overlapping/matching with Finance and Operations, then the administrator enabling dual write must bootstrap the fields **Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") before the synchronization of products takes place. In other words, these two fields in the product in CDS must be filled in with the respective company in Finance and Operations to which the product needs to be matched with and with its product number. 
 
-To avoid the previous situation, if Customer Engagement has products that are overlapping/matching with Finance and Operations, then the administrator enabling dual write must bootstrap the fields "**Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") once dual-write is enabled. It will update those Customer Engagement products with data from Finance and Operations. This is applicable for both distinct products and product variants. 
+Then, when the synchronization is enabled and takes place, the products from Finance and Operations will be synchronized with the matched products in Customer Engagement/CDS. This is applicable for both distinct products and product variants. 
+
 
 ### Migration of product data from Customer Engagement to Finance and Operations
 
-If Customer Engagement has products that are not present in Finance and Oeprations, the administrator can first use the **EcoResReleasedProdcutCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and Customer Engagement as described above. 
+If Customer Engagement has products that are not present in Finance and Operations, the administrator can first use the **EcoResReleasedProdcutCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and Customer Engagement as described above. 
