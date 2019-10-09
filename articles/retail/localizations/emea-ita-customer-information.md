@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer information management (Italy)
+title: Customer information management for Italy
 description: This topic describes how to handle customer information in Retail POS for Italy.
 author:
 manager: annbe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-08
 ms.dyn365.ops.version: 10.0.7
 
 ---
-# Customer information management (Italy)
+# Customer information management for Italy
 
 [!include [banner](../includes/banner.md)]
 
