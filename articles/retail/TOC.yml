@@ -1116,7 +1116,7 @@
         items:
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
-        - name: Management of customer information for Italy
+        - name: Customer information management for Italy
           href: localizations/emea-ita-customer-information.md 
       - name: Mexico
         items:
