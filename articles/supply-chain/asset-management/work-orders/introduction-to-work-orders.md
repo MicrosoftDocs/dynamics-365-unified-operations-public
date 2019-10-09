@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Work orders are used to manage, provide required information for, and register consumption on maintenance jobs. A work order may contain one or more work order jobs, and one or more assets can be connected to a work order. Each work order line defines a maintenance job scheduled on the asset.
 

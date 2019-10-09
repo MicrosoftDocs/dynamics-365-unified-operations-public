@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Work order lifecycle states define the states that a work order can go through. Examples include **Created**, **Scheduled**, **In progress**, and **Ended**. Work order lifecycle states can be manually updated on a work order, or they can be automatically updated (for example, during work order scheduling).
 
@@ -43,7 +43,7 @@ The work order lifecycle states that are required for your work orders must be a
 
 The following table describes the options in the **Work order** and **Schedule** sections on the **General** FastTab of the **Work order lifecycle state** page (**Asset management** \> **Setup** \> **Work orders** \> **Lifecycle states**).
 
-![Figure 1](media/09-setup-for-work-orders.png)
+![Work order lifecycle state page](media/09-setup-for-work-orders.png)
 
 | Option name                   | Description |
 |-------------------------------|-------------|
@@ -101,7 +101,7 @@ The following table describes the options in the **Work order** and **Schedule**
     - If the **Maintenance downtime** option is set to **Yes** for the lifecycle state that a work order is updated to, maintenance downtime validation is done on the asset that is related to the work order. If a maintenance downtime registration has been made, but there is no **Ended** registration, a message is shown when the work order is updated to this lifecycle state.
     - If the standard project setup doesn't include all the stages that you require for your Asset Management setup, you can set up user-defined project stages on the **Project stage** tab of the **Project management and accounting parameters** page. The following illustration shows the **Project stage** tab on the **Project management and accounting parameters** page.
 
-    ![Figure 2](media/10-setup-for-work-orders.png)
+    ![Set up project stages for various project types page](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > If the lifecycle state that you update a work order to is inactive, journals that are related to the work order but that haven't yet been posted are automatically deleted. This behavior helps guarantee automatic cleanup of unused data. (A lifecycle state is inactive if the **Active** option for it is set to **No** on the **General** FastTab of the **Work order lifecycle state** page.)
@@ -119,7 +119,7 @@ The reason for using types is that when a type is defined on, for example, a wor
 
 The following illustration shows the relation between work order types, lifecycle models, and lifecycle states.
 
-![Figure 3](media/11-setup-for-work-orders.png)
+![Work order type page compared to Work order lifectyle models page](media/11-setup-for-work-orders.png)
 
 ## Work order lifecycle models
 
@@ -143,4 +143,4 @@ After you've created the work order lifecycle states that are required for your 
 8. In the **Unscheduled lifecycle state** field, select the lifecycle state that should always be selected for a work order if work order scheduling is deleted.
 9. Save the work order lifecycle model.
 
-![Figure 4](media/15-setup-for-work-orders.png)
+![Work order lifecycle models page](media/15-setup-for-work-orders.png)

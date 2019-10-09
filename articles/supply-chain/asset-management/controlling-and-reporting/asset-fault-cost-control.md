@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can calculate costs on asset fault registrations to get an overview of actual costs compared to budget costs on faults. Actual costs are based on posted transactions. The date is the fault date on which the symptom was recorded.
 

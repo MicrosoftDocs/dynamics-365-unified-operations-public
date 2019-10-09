@@ -435,6 +435,7 @@ For high availability, the **Data import/export framework** and the **RapidStart
 
 - [Install the RapidStart Connector](https://technet.microsoft.com/library/hh771574.aspx)
 
+
 ### Configure Microsoft SQL Server Reporting Services for load balancing
 
 The BI servers in the environment host Microsoft SQL Server Reporting Services. To configure Reporting Services for load balancing, see the [Configure SSRS for load balancing in your Azure deployment](http://blogs.msdn.com/b/axsupport/archive/2015/06/25/configure-ssrs-for-load-balancing-in-your-azure-deployment.aspx) blog post.

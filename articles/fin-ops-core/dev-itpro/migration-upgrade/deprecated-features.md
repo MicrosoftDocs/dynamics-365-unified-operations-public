@@ -5,7 +5,7 @@ title: Removed or deprecated features for Finance and Operations
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 10/07/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,12 +44,10 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Starting with the Finance and Operations July 2017 release with Platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-> Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
 ## Finance and Operations 10.0.6 with Platform update 30
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
 ### DimensionHash.getHash(str _message)
 

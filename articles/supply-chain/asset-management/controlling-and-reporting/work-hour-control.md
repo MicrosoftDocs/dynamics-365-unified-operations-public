@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can calculate hours to get an overview of actual hours compared to budget hours on assets, functional locations, or work orders. Actual hours are based on posted transactions.
 
