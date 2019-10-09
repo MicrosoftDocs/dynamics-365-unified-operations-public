@@ -109,8 +109,7 @@ Note that the synchronization of products happens from Finance and Operations ap
 
 The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResReleasedDistinctProductCDSEntity-products.md
-
+[!include [products](dual-write/EcoResReleasedDistinctProductCDSEntity-products.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -134,7 +133,7 @@ PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle
 
 The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResReleasedProductV2-msdyn-sharedproductdetails.md
+[!include [products](dual-write/EcoResReleasedProductV2-msdyn-sharedproductdetails.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -249,7 +248,7 @@ PRODUCTDIMENSIONGROUPNAME | >> | msdyn_productdimensiongroupid.msdyn_groupname
 
 The all products entity contains all the products available in Finance and Operations apps, both the released products and the non-released products. These products are available in the Common Data Service using the following mappings:
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResEveryProductEntity-msdyn-globalproducts.md
+[!include [global products](dual-write/EcoResEveryProductEntity-msdyn-globalproducts.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -266,7 +265,7 @@ Product dimensions are characteristics that identify a product variant. The four
 
 The possible colors in Finance and Operations apps are available in Common Data Service through the following mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductColorEntity-msdyn-productcolor.md
+[!include [product colors](dual-write/EcoResProductColorEntity-msdyn-productcolors.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -276,7 +275,7 @@ COLORID | \>\> | msdyn\_productcolorname
 
 The possible sizes in Finance and Operations apps are available in Common Data Service through the following mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductSizeEntity-msdyn-productsizes.md
+[!include [product sizes](dual-write/EcoResProductSizeEntity-msdyn-productsizes.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -286,7 +285,7 @@ SIZEID | \>\> | msdyn\_productsize
 
 The possible styles in Finance and Operations apps are available in Common Data Service through the following mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductStyleEntity-msdyn-productstyles.md
+[!include [product sizes](dual-write/EcoResProductStyleEntity-msdyn-productstyles.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -296,7 +295,7 @@ STYLEID | \>\> | msdyn\_productstyle
 
 The possible configurations in Finance and Operations apps are available in Common Data Service through the following mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductConfigurationsEntity-msdyn-productconfigurations.md
+[!include [product sizes](dual-write/EcoResProductConfigurationsEntity-msdyn-productconfigurations.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -310,7 +309,7 @@ To keep track of the product dimensions that a product master can take, the foll
 
 The **Shared product color** entity indicates the colors that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md
+[!include [product sizes](dual-write/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -323,7 +322,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_retaildisplayorder
 
 The **Shared product size** entity indicates the sizes that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductMasterSize-msdyn-sharedproductsizes.md
+[!include [product sizes](dual-write/EcoResProductMasterSize-msdyn-sharedproductsizes.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -336,7 +335,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
 The **Shared product style** entity indicates the styles that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md
+[!include [product sizes](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -350,7 +349,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
 The **Shared product configuration** entity indicates the configurations that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md
+[!include [product sizes](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -364,7 +363,7 @@ DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
 Product bar codes are used to uniquely identify products. The following mappings are used to make these product bar codes available in Common Data Service.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md
+[!include [product sizes](dual-write/EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -387,7 +386,7 @@ Default order settings define the site and warehouse where items will be sourced
 
 The following mappings are used to make the default order settings available in Common Data Service.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md
+[!include [product sizes](dual-write/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -446,7 +445,7 @@ ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
 
 The following mappings are used to make the product specific default order settings available in Common Data Service.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md
+[!include [product sizes](dual-write/InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -518,7 +517,7 @@ The unit of measure concept is integrated between Finance and Operations apps an
 
 The following mappings are used to make the units of measure in Finance and Operations apps available in Common Data Service.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\UnitOfMeasureEntity-uom.md
+[!include [product sizes](dual-write/UnitOfMeasureEntity-uom.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -535,7 +534,7 @@ UNITDESCRIPTION | >> | msdyn_description
 
 The following mappings are used to make the units of measure conversions in Finance and Operations apps available in Common Data Service.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md
+[!include [product sizes](dual-write/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -552,7 +551,7 @@ FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
 
 The following mappings are used to make the product specific unit of measure conversions in Finance and Operations apps available in Common Data Service.
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md
+[!include [product sizes](dual-write/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -604,7 +603,7 @@ The product policies are sets of policies used for defining products and its cha
 
 The product dimension group defined which product dimensions define the product. The four possible product dimension groups are: size, color, style and configuration. The product dimension groups are available in the Common Data Service using the following mappings. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductDimensionGroup-msdyn-productdimensiongroups.md
+[!include [product dimension group](dual-write/EcoResProductDimensionGroup-msdyn-productdimensiongroups.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -628,7 +627,7 @@ WILLSALESPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willsalespricesearchuseproductsi
 
 The product tracking dimension group represents the method used to track the product in inventory. These are available in the Common Data Service using the following mappings. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResTrackingDimensionGroup-msdyn-producttrackingdimensiongroups.md
+[!include [product tracking dimension group](dual-write/EcoResTrackingDimensionGroup-msdyn-producttrackingdimensiongroups.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -662,7 +661,7 @@ ISINVENTORYOWNERACTIVE | >< | msdyn_isinventoryowneractive
 
 The product storage dimension group represents the method used to define the placement the product in the warehouse. These are available in the Common Data Service using the following mappings. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResStorageDimensionGroup-msdyn-productstoragedimensiongroups.md
+[!include [product storage dimension group](dual-write/EcoResStorageDimensionGroup-msdyn-productstoragedimensiongroups.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -695,7 +694,7 @@ You use product hierarchies to categorize or group products. The product categor
 
 The category hierarchies are available in CDS using the Prodcut category hierarchy entity. This entity lists all the hierarchies and their descriptions. It has the following mappings. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md
+[!include [product category hierarchy](dual-write/EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -706,7 +705,7 @@ HIERARCHYDESCRIPTION | = | msdyn_description
 
 Each of the product categories and information about its structure and characteristics are contained in the product category entity. The mappings are shown in the table below. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductCategoryEntity-msdyn-productcategory.md
+[!include [product category](dual-write/EcoResProductCategoryEntity-msdyn-productcategory.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -727,7 +726,7 @@ PRODUCTCATEGORYHIERARCHYNAME | >> | msdyn_parentproductcategory.msdyn_hierarchy.
 
 To assign a product to a category the product category assignments entity can be used. It relates the product and the category using the following mappings. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductCategoryAssignmentEntity-msdyn-productcategoryassignment.md
+[!include [product category assignments](dual-write/EcoResProductCategoryAssignmentEntity-msdyn-productcategoryassignment.md)]
 
 Source field | Map type | Destination field
 ---|---|---
@@ -740,7 +739,7 @@ PRODUCTNUMBER | >> | msdyn_name
 
 Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
 
-C:\Users\roreynol\Documents\dual-write\all-mappings\output\EcoResProductCategoryHierarchyRoleEntity-msdyn-productcategoryhierarchyrole.md
+[!include [product category role](dual-write/EcoResProductCategoryHierarchyRoleEntity-msdyn-productcategoryhierarchyrole.md)]
 
 Source field | Map type | Destination field
 ---|---|---
