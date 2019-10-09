@@ -63,7 +63,7 @@ If your organization uses electronic invoicwithholding documents es that are val
 
 -**Enable CFDI witholding:** Select Yes to enable the generation of CFDI withholding
 
--**CDFI XSLT file:**Path and schema file to validate the CFDI withhdolding document
+-**CDFI XSLT file:** Path and schema file to validate the CFDI withhdolding document
 
 -**CFDI digest algorithm:** SHA-256
 
