@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 This topic explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 
 Many companies just want to capture serial numbers for service and warranty purposes, and don't have to maintain serial numbers in inventory from receipt to issue. In these scenarios, you can register the serial numbers on the packing slips or invoices when products are sold. If products are later returned, you can trace each product to an invoice to determine whether you sold the product, and whether the service or warranty obligations are valid.

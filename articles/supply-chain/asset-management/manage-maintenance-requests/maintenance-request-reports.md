@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can generate two reports that are related to maintenance requests. One report shows details, and the other report provides a list that can be used for planning and follow-up.
 

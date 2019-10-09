@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 You can generate a work order report that shows detailed information about a work order. It is possible to select one or several work orders to be displayed in the report.

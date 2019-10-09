@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
 
 In the Last in, First out (LIFO) inventory model, the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory, based on the date of the inventory transaction. When you use LIFO, you don't have to use the LIFO rule. Instead you can mark inventory transactions so that a specific item issue is settled against a specific receipt. We recommend a periodic inventory closing when you use the LIFO inventory model. 

@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 You can add faults set up in the fault designer to a work order. The asset selected in the work order must contain asset types that have one or more fault records connected to it. Read more about setup in the [Fault management](../setup-for-work-orders/fault-management.md) section.
