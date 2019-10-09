@@ -56,4 +56,4 @@ For more information about work order lifecycle states and project stages, see [
 
 8. Select **Save**.
 
-![Figure 1](media/16-setup-for-work-orders.png)
+![Work order types](media/16-setup-for-work-orders.png)

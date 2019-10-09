@@ -28,7 +28,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Core HR and Common Data Service
+# Core HR entities in Common Data Service
 
 [!include [banner](includes/banner.md)]
 

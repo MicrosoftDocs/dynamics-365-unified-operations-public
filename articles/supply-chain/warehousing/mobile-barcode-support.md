@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Mobile bar code support
+# Mobile barcode support
 
 [!include [banner](../includes/banner.md)]
 

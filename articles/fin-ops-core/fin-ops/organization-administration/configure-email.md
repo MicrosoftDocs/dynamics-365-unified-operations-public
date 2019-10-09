@@ -141,7 +141,7 @@ Email workflows that are enabled via the SysEmail framework can generate email m
 
 Email workflows that are enabled via the SysEmail framework can also be created in a simple email dialog box and then sent via Simple Mail Transfer Protocol (SMTP).
 
-1. In Finance and Operations, go to the **Email parameters** page.
+1. Go to the **Email parameters** page.
 2. Click **SMTP settings**.
 3. Set the **Outgoing mail server** to the desired SMTP server:
 

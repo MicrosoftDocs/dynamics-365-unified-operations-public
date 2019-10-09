@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,12 +35,12 @@ ms.dyn365.ops.version: Platform update 9
 
 This topic shows whether each feature is available in these products:
 
-+ Dynamics 365 for Finance and Operations (cloud)
-+ Dynamics 365 for Finance and Operations (on-premises)
++ Finance and Operations (cloud)
++ Finance + Operations (on-premises)
 
 The following tables list the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
-## Dynamics 365 for Finance and Operations
+## Finance and Operations applications
 
 | Area | Feature | Cloud | On-premises |
 |---|---|---|---|
@@ -122,8 +122,8 @@ The following tables list the product areas. Cloud and on-premises support is li
 | | Upgrade and support for previous versions | Yes | No |
 | Visual Studio development | | Yes | Yes |
 
-### Retail 
-To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md).
+### Dynamics 365 Retail 
+To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
 ## Dynamics 365 Talent
 

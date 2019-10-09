@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,19 +31,17 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
-
-## Schedule for April 10.0 release
-
-### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
-Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. The ability to set up this configuration or pause updates is available through LCS. Customers will be able to pause up to 2 consecutive updates. Here are a few examples:
-
-- The customer is currently on version 8.1.2 and can choose to pause version 10. The customer will be required to take version 10.0.1
-- The customer is currently on version 8.1.3, the customer can choose to pause version 10 and version 10.0.1. The customer will be required to take the service update 10.0.2.  
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
 
-### With a release date in early April, when will the GA package be made available?
-Production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+### Can the update be delayed, what is the policy?
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to delay up to 3 consecutive updates. The following is an example of a delayed update: 
+- The customer is currently on version 10.0.2.
+- The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
+- The customer must take the 10.0.6 update when it is available.
+  
+### With a release date in early April, when will the general availability package be made available?
+Production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in Lifecycle Services (LCS), you will receive updates during that specific week.
  
 For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
 
@@ -249,7 +247,7 @@ All fixes and updates for retail components will be cumulative.
 
 ### What are the maintenance downtime requirements that may impact channel operations?
 
-For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../retail/pos-operations.md).
+For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../retail/pos-operations.md).
 
 ### When will I need to update my in-store components?
 
@@ -267,6 +265,6 @@ Customers can choose to update self-hosted components manually at each store or 
 
 Microsoft provides several mechanisms to progressively roll-out and enable functional enhancements across stores, devices, and users.
 
-- **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../../retail/pos-screen-layouts.md).
+- **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../../../retail/pos-screen-layouts.md).
 - **Functionality profiles, POS permissions, Retail parameters** – Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
 - **Modern Point of Sale and Retail Store Scale Unit** – Because Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.

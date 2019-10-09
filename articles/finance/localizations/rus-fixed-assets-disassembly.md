@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title:  Partial fixed asset disassembly (liquidation)
+title: Partial fixed asset disassembly (liquidation)
 description: This topic provides information about partial fixed asset disassembly or liquidation for Russia.
 author: v-oloski
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Partial fixed asset disassembly (liquidation) (Russia)
+# Partial fixed asset disassembly (liquidation)
 
 [!include [banner](../includes/banner.md)]
 

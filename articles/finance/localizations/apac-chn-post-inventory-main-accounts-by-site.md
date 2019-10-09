@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Posting inventory main accounts by site for China
+title: Post inventory main accounts by site for China
 description: This topic provides information about the posting of inventory main accounts by site for China.
 author: ShylaThompson
 manager: AnnBe

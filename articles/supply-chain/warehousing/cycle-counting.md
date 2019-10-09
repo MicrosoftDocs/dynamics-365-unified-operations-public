@@ -118,10 +118,10 @@ You can schedule cycle counting plans to create cycle counting work immediately 
 To create cycle counting work manually, you can use the **Cycle count work by item** or **Cycle count work by location** page. You can specify the maximum number of cycle counts to create. For example, if the warehouse manager specifies a value of **5**, cycle counting work is created for five locations, even if the item is present in 10 locations. You can also select a work pool ID to assign the cycle counting work IDs that are created to. When a work pool ID is processed for cycle counting, the cycle counting work IDs that are assigned to the work pool are processed as a group.
 
 ## Perform a cycle count by using a mobile device
-There are several methods for processing cycle counting work by using Finance and Operations on a mobile device:
+There are several methods for processing cycle counting work by using Supply Chain Management on a mobile device:
 
 -   **User directed** – The worker can specify a cycle counting work ID that has a status of **Open**.
--   **System directed** – Finance and Operations assigns a cycle counting work ID to the worker.
+-   **System directed** – Supply Chain Management assigns a cycle counting work ID to the worker.
 -   **Cycle count grouping** – The worker can group cycle counting work IDs that are specific to a particular location, zone, or work pool.
 -   **Spot cycle counting** – The worker can count items in a warehouse location at any time, without creating cycle counting work. To perform spot cycle counting in a location, the worker enters the location ID.
 

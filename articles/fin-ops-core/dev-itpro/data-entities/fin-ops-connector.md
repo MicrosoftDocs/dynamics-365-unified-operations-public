@@ -26,7 +26,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Finance and Operations Connector
+# Application Connector
 
 [!include[banner](../includes/banner.md)]
 

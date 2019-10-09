@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Features that aren't implemented in on-premises deployments
+title: Features not implemented in on-premises deployments
 description: This topic lists features that have not been implemented in on-premises deployments.
 author: sericks007
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 8
 ---
 
-# Features that aren't implemented in on-premises deployments
+# Features not implemented in on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +62,7 @@ The following features have not yet been implemented in on-premises deployments.
 
 | Feature | Description |
 |---------|-------------|
-| Retail  | To see a list of currently available retail capabilities in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../retail/retail-onprem.md). |
+| Retail  | To see a list of currently available retail capabilities in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md). |
 
 ## Features not intended for use in on-premises deployments
 

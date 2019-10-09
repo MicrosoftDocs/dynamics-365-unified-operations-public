@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Conditional statements: if, if...else, switch, and ternary operator (?)
+# X++ conditional statements
 
 [!include [banner](../includes/banner.md)]
 

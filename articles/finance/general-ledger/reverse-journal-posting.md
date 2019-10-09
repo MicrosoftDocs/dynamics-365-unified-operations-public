@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reverse journal posting
-description: This topic describes capabilities in Microsoft Dynamics 365 for Finance and Operations that allows you to reverse vouchers from the voucher transaction list or from financial journals.  
+description: This topic describes capabilities that allows you to reverse vouchers from the voucher transaction list or from financial journals.  
 author: MikeFalkner
 manager: AnnBe
 ms.date: 08/01/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes capabilities in Microsoft Dynamics 365 for Finance and Operations that allows you to reverse an entire
+This topic describes capabilities Microsoft Dynamics 365 Finance that allows you to reverse an entire
 journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. 
 
 ## Reversing journals

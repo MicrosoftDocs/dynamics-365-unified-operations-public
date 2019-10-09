@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/30/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,19 +35,19 @@ Workflow business events are generated at various points in the processing of a 
 
 To construct a workflow, a developer can define workflows components in metadata and code in the Visual Studio tools.
 
-An administrator can create workflows in the web client and then design them in the workflow designer. For more information, see [Create workflows](../../fin-and-ops/organization-administration/create-workflow.md).
+An administrator can create workflows in the web client and then design them in the workflow designer. For more information, see [Create workflows](../../fin-ops/organization-administration/create-workflow.md).
 
 ### Workflow components
 Workflow components are defined in metadata as:
 - **Workflow types** - Also known as templates, workflow types define the elements allowed in a workflow. The administrator decides which elements are actually used when they create the workflow design. 
      - In the Application Explorer, go to **AOT > Business Process and Workflow > Workflow Types**.
-- **Workflow elements** - Workflow elements are the executable pieces that make up a workflow. For details, see [Workflow elements](../../fin-and-ops/organization-administration/workflow-elements.md).
+- **Workflow elements** - Workflow elements are the executable pieces that make up a workflow. For details, see [Workflow elements](../../fin-ops/organization-administration/workflow-elements.md).
      - Tasks (aka manual tasks) - Go to **AOT > Business Process and Workflow > Workflow Tasks**.
      - Approvals - Go to **AOT > Business Process and Workflow > Workflow Approvals**.
      - Automated tasks - Go to **AOT > Business Process and Workflow > Workflow Automated Tasks**.
 
 ## Workflow runtime
-After a workflow is submitted by a user, it is added to a queue and run using the **Workflow message processing** batch job. As the workflow runs, it will progress through all the [connected workflow elements](../../fin-and-ops/organization-administration/create-workflow.md#connect-the-elements) until it reaches the end. When the workflow runtime encounters a [manual task element](../../fin-and-ops/organization-administration/workflow-elements.md#manual-task), it will create a work item for the [user assigned to the task](../../fin-and-ops/organization-administration/configure-manual-task-workflow.md#assign-the-task). When the workflow runtime encounters an [approval element](../../fin-and-ops/organization-administration/workflow-elements.md#approval-processes), it will create a work item for each [user assigned to each approval step](../../fin-and-ops/organization-administration/configure-approval-step-workflow.md#assign-the-approval-step).
+After a workflow is submitted by a user, it is added to a queue and run using the **Workflow message processing** batch job. As the workflow runs, it will progress through all the [connected workflow elements](../../fin-ops/organization-administration/create-workflow.md#connect-the-elements) until it reaches the end. When the workflow runtime encounters a [manual task element](../../fin-ops/organization-administration/workflow-elements.md#manual-task), it will create a work item for the [user assigned to the task](../../fin-ops/organization-administration/configure-manual-task-workflow.md#assign-the-task). When the workflow runtime encounters an [approval element](../../fin-ops/organization-administration/workflow-elements.md#approval-processes), it will create a work item for each [user assigned to each approval step](../../fin-ops/organization-administration/configure-approval-step-workflow.md#assign-the-approval-step).
 
 ## Workflow business event categories
 

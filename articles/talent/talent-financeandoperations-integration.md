@@ -248,7 +248,7 @@ When integrating data from Talent to Finance, the integration will attempt to ma
 occurs, the data in Finance will be overwritten with the values in Talent. However, an issue may occur if logically
 these are different records and the same ID was generated in either Talent or Finance based on the respective number sequence.
 
-The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences. As a result, if the same job ID is present in both Talent and Finance, the Talent information will overwrite the Finance and Operations information. 
+The areas where this can occur are Worker, which uses Personnel number to make the match, and Positions. Jobs do not use number sequences. As a result, if the same job ID is present in both Talent and Finance, the Talent information will overwrite the Dynamics 365 Finance information. 
 
 To prevent issues with duplicate IDs, you can either add a prefix on the [number sequence](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), or set a beginning number on the number sequence that is beyond the range of the other system. 
 
