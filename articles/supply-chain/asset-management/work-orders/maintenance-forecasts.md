@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 When you create a work order, you create work order jobs with related assets and maintenance job types. When you select a maintenance job type containing maintenance forecasts, the forecasts are automatically copied to the work order.

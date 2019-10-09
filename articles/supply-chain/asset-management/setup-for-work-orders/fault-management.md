@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can use the fault designer to set up fault symptoms, fault areas, and fault types on asset types. In this way, you can manage faults that are detected on assets. Additionally, fault causes and suggestions for fixing faults can be registered on a work order.
 

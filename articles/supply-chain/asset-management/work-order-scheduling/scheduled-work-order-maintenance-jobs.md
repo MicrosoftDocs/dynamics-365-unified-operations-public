@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 The **Scheduled work order maintenance jobs** page is used to get an overview of the work orders allocated to a resource. Work orders using resource types "Human resources", "Tool", and "Machine" are shown in the list. The list can be used to get an overview of work orders allocated to a specific resource. You can also use it to quickly find a work order allocated to a maintenance worker who, for example, called in sick this morning, and then quickly allocate another maintenance worker to the job.
 
