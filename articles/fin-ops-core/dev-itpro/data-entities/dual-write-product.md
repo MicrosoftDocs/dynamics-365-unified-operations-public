@@ -536,10 +536,7 @@ and CDS**
 
 #### Initial synchronization of units
 
-When dual write is enabled, units from Dynamics 365 Finance and Operations are
-synchronized to CDS/Customer Engagement. The units synchronized from Finance and
-Operations in CDS have a flag set that indicates that the unit is “Externally
-maintained”.
+When dual write is enabled, units from Dynamics 365 Finance and Operations are synchronized to CDS/Customer Engagement. The unit groups synchronized from Finance and Operations in CDS have a flag set that indicates they are “Externally maintained”.
 
 #### Matching units and unit classes/groups data from Finance and Operations and Customer Engagement
 
@@ -552,32 +549,17 @@ matching unit data between Finance and Operations and CDS.
 *For units matching/overlapping in Finance and Operations and Customer
 Engagement*:
 
-1.  **The unit belongs to a unit group in CE that corresponds to a unit class in
-    Finance and Operations**: then, the field msdyn_symbol in CE must be filled
-    in with the unit symbol from Finance and Operations. Therefore, when the
-    data will be matched, and the unit will be set as “Externally maintained” in
-    CE.
+1.  **The unit belongs to a unit group in CE that corresponds to the associated unit class in Finance and Operations**: then, the field msdyn_symbol in CE must be filled in with the unit symbol from Finance and Operations. Therefore, when the data will be matched, and the unit group will be set as “Externally maintained” in CE.
 
-2.  **The unit belongs to a unit group in CE that does not correspond to any
-    unit class in Finance and Operations (no existing unit class in Finance and
-    Operations for the unit class in CE**): the msdyn_symbol must be filled in
-    with a random string. Note that this value must be unique in CE.
+2.  **The unit belongs to a unit group in CE that does not correspond to the associated unit class in Finance and Operations (no existing unit class in Finance and Operations for the unit class in CE**): the msdyn_symbol must be filled in with a random string. Note that this value must be unique in CE.
 
-*For units in Finance and Operations not existing in CE:*
+*For units and unit classes in Finance and Operations not existing in CE:*
 
-As part of dual-write the units from Finance and Operations are created and
-synchronized in Customer Engagement/CDS and will be set as “Externally
-maintained”. No extra bootstrapping effort is required.
+As part of dual-write the unit groups from Finance and Operations and its corresponding units are created and synchronized in Customer Engagement/CDS and the unit group will be set as “Externally maintained”. No extra bootstrapping effort is required.
 
 *For units in CE not existing in Finance and Operations:*
 
-The field msdyn_symbol must be filled in for all units. The units can always be
-created in Finance and Operations in the corresponding unit class (if it
-exists). If the unit class does not exist, firstly the unit class must be
-created matching the CE unit group and secondly the unit can be created. Note
-that the unit symbol in Finance and Operations must be the msdyn_symbol
-previously specified in CE for the unit.
-
+The field msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations in the corresponding unit class (if it exists). If the unit class does not exist, firstly the unit class must be created (note that you cannot create a unit class in F&O except through extension if you are extending the enum) matching the CE unit group and secondly the unit can be created. Note that the unit symbol in Finance and Operations must be the msdyn_symbol previously specified in CE for the unit.
 
 ## Product policies: dimension, tracking and storage groups
 
@@ -741,4 +723,4 @@ Then, when the synchronization is enabled and takes place, the products from Fin
 
 ### Migration of product data from Customer Engagement to Finance and Operations
 
-If Customer Engagement has products that are not present in Finance and Operations, the administrator can first use the **EcoResReleasedProdcutCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and Customer Engagement as described above. 
+If Customer Engagement has products that are not present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and Customer Engagement as described above. 
