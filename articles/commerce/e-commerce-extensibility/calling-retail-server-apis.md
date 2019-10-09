@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up calling Retail Server APIs
-description: This topic describes how to set call Microsoft 365 Dynamics Retail Server APIs from a data action.
+title: Call Retail Server APIs
+description: This topic describes how to call Microsoft Dynamics 365 Retail Server APIs from a data action or directly from module code.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -28,35 +28,38 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Calling Retail Server APIs
+# Call Retail Server APIs
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up calling Microsoft Dynamics 365 Retail Server APIs from either a data action or directly from module code.
+This topic describes how to call Microsoft Dynamics 365 Retail Server APIs from a data action or directly from module code.
 
 ## Overview
-To call Retail Server APIs, we'll leverage the Retail Server proxy library (also known as the TypeScriptProxy or TSProxy), provided by the Dynamics 365 Retail Server to allow for streamlined communication with Retail Server from JavaScript or TypeScript-based environments.
 
-## Get started with the Retail Server proxy
+To call Retail Server APIs, you'll need to leverage the Retail Server proxy library (also known as the TypeScriptProxy or TSProxy) that is provided by Dynamics 365 Retail Server to allow for streamlined communication with Retail Server from JavaScript or TypeScript-based environments.
 
-The Retail Server Proxy is available for download via the Dynamics 365 NPM Feed and can be obtained by adding a reference to the packages.json file. Below are the steps needed to install the Retail Server Proxy into your SDK dev environment.
+## Install the Retail Server proxy
 
-1. Determine your current active version of Retail Server. This will be the version of the Retail Server NuGet you use for Retail Server backend extensibility. 
+The Retail Server proxy is available for download via the Dynamics 365 npm feed and can be obtained by adding a reference to the packages.json file. 
 
-2. Add the following entry to the dependencies section of your package.json (it may already be there with up to date version info):
+To install the Retail Server proxy into your SDK development environment, follow these steps.
+
+1. Determine your current active version of Retail Server. This will be the version of the Retail Server NuGet package you use for Retail Server backend extensibility. 
+
+1. Add the following entry to the dependencies section of your package.json (it may already be there with up-to-date version info):
 
     ```json
         "@msdyn365-commerce/retail-proxy": "{RETAIL_SERVER_VERSION}"
     ```
 
-3. Run `yarn install`
+1. Run `yarn install`.
 
 Now you should have access to the correct Retail Server proxy for your project. You may already see a reference included as part of the Store Starter Kit.
 
-## Using the Retail Server Proxy
+## Retail Server proxy data action managers
 
-The Retail Server proxy mainly contains a set of APIs which internally communicate with Retail Server using HTTP. These APIs are all available through a set of Data Action Managers which can be imported in code using the following import paths.
+The Retail Server proxy contains a set of APIs which communicate internally with Retail Server via HTTP. These APIs are all available through a set of data action managers whose code can be imported using the following import paths.
 
 ```typescript
 // Generic example
@@ -66,7 +69,7 @@ import {} from '@msdyn365-commerce/retail-proxy/dist/DataActions/{DATA_ACTION_MA
 import { getByIdsAsync } from '@msdyn365-commerce/retail-proxy/dist/DataActions/ProductsDataActions.g';
 ```
 
-The following Data Action Managers are available:
+The following data action managers are available:
 
 - CartsDataActions
 - CatalogsDataActions
@@ -88,25 +91,23 @@ The following Data Action Managers are available:
 - TransferOrdersDataActions
 - WarehousesDataActions
 
-For an entire list of all available Retail API's within each Data Action Manager, please refer to the [Retail Server Customer and consumer APIs](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api) documentation.
+For an entire list of all available Retail API's within each Data Action Manager, please see [Retail Server Customer and consumer APIs](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api).
 
 The Retail Server proxy is closely tied to the [Data Action Framework](./data-actions), so for every Retail Server API, there are two exposed Retail Server proxy methods:
 
-- The createInput method for the Retail Server API. This method will always be named **create{RETAIL_SERVER_API_NAME}Input**. This method will create an `IActionInput`, which can be used to either run a [Page-load Data Action](./page-load-data-actions) or be used to do direct state updating/fetching via `actionContext.update()**` or `actionContext.get()` methods.
+- **The createInput method**: This method will always be named **create{RETAIL_SERVER_API_NAME}Input**. This method will create an `IActionInput`, which can be used to either run a [Page-load Data Action](./page-load-data-actions) or do direct state updating/fetching via the `actionContext.update()**` or `actionContext.get()` methods.
 
-- The action method for the Retail Server API. This method will always be named {RETAIL_SERVER_API_NAME}Async. This method can be invoked on it's own to as a [Event-based Data Action](./event-based-data-actions), or added inside another Action method to create a [Data Action Chain](./chain-data-actions).
+- **The action method**: This method will always be named **{RETAIL_SERVER_API_NAME}Async**. This method can be invoked on its own as an [Event-based Data Action](./event-based-data-actions), or added inside another action method to create a [Data Action Chain](./chain-data-actions).
 
-We will cover a few common Retail Server proxy usage scenarios below in more depth.
+## Create a page load Retail Server proxy data action
 
-### Create a page load Retail Server proxy data action
+When you want to attach a Retail Server proxy API call to a module so that it will run on page load, you need to create a new data action. This is very similar in practice to creating a standard [Page-load Data Action](./page-load-data-actions). 
 
-When you want to attach a Retail Server Proxy API call to a module so it will run on page load, you need to create a new data action, very similar in practice to just creating a standard [Page-load Data Action](./page-load-data-actions). 
+For this example, we will create a module which will use the Retail Server proxy to get all the categories available for the configured channel on page load. To start, we need to identify the correct Retail Server proxy API we want to use, which in this case happens to be the `GetCategories` API provided by the CategoriesDataActions manager. We can then construct a [data action](./data-actions) so that it can be used within a module definition. To accomplish this, we generally need to do two things:
 
-For this example, we will create a module which will use the Retail Server proxy to get all the categories available for the configured channel on page load. To start we need to identify the correct Retail Server proxy API we want to use, which in this case happens to be the `GetCategories` API provided by the CategoriesDataActions manager. We can now construct a [data action](./data-actions) so that it can be used within a module definition. To do so we generally need to do two things:
+- Provide a `createInput` method which calls the Retail Server proxy `createInput` method for our desired API, and passes along any contextual data we want to the API (for example ChannelId).
 
-1. Provide a createInput method which calls the Retail Server proxy provided createInput method for our desired API, and passing along any contextual data we want to the API (such as ChannelId).
-
-2. Have the action method of our new data action be the Retail Server proxy provided `retailAction`. `retailAction` is designed to parse the input that is passed to it and call the corresponding Retail Server proxy API
+- Have the action method of our new data action be the `retailAction` method provided by the Retail Server proxy. The `retailAction` method is designed to parse the input that is passed to it and call the corresponding Retail Server proxy API.
 
 For example, a new data action can be created under the **src\actions** directory called **getCategoryList.ts** with the following code.
 
@@ -128,9 +129,9 @@ export default createObservableDataAction({
 });
 ```
 
-This above file will now export a data action which can be regsitered on a module to get the first 10 categories from whatever channel has been configure for the project! Because this requires much less custom code to make the HTTP call than communicating with Retail Server manually, it is highly suggested that you only call Retail Server using the Retail Server proxy.
+The **getCategoryList.ts** file will now export a data action which can be registered on a module to get the first 10 categories from whatever channel has been configured for the project. Because this requires much less custom code to make the HTTP call than communicating with Retail Server manually, it is suggested that you only call Retail Server using the Retail Server proxy.
 
-The following example shows how this data action can be registered in the module definition file inside the **"module" -> "dataActions"** node.
+The following example shows how the **getCategoryList.ts** data action can be registered in the module definition file inside the **"module" -> "dataActions"** node.
 
 ```{
     "$type": "contentModule",
@@ -176,7 +177,7 @@ export interface IProductFeatureData {
 }
 ```
     
-### Call a Retail Proxy API directly in module code
+## Call a Retail Server proxy API directly in module code
 
 The following code snippet shows how to call the getCategories Retail API with the Retail proxy wrapper API **getCategoriesAsync**.  This API call will return a list of all categories.
 
