@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Finance 10.0.6 (November 2019)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.6.
 author: roschlom
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.6. This version has a build number of 10.0.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-finance-10-0-6.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-finance-10-0-6.md#additional-resources).
 
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
