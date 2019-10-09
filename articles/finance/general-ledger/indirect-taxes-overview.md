@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 
 Overview

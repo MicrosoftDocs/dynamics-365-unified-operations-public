@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Maintenance requests can be used if maintenance workers or production workers discover that equipment requires repair, but the repair job can't be done right away.
 

@@ -5,7 +5,7 @@ title: Process for moving to the latest update of Finance and Operations
 description: This topic explains the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 manager: AnnBe
-ms.date: 04/30/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the process of updating or upgrading to the latest release of Finance and Operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each release of Finance and Operations, see [What's new or changed](../../fin-and-ops/get-started/whats-new-changed.md).
+For information about the contents of each release of Finance and Operations, see [What's new or changed](../../fin-ops/get-started/whats-new-changed.md).
 
 For information about One Version service updates, see the [One Version service updates overview](../lifecycle-services/oneversion-overview.md).
 

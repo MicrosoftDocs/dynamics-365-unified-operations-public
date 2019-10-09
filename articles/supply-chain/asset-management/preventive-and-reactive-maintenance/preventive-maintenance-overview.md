@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic explains preventive maintenance in Asset Management. Preventive maintenance is a discipline involving planned maintenance jobs, for example, regular service, calibration, and inspections. In **Asset Management**, you can create maintenance plans and set them up on assets and functional locations. You can also set up maintenance rounds on functional locations. Maintenance plans on assets are active regardless of where the asset is installed. Maintenance plans and maintenance rounds on functional location are active for the assets currently installed at the location. Instead of setting up maintenance plans on assets, or setting up maintenance rounds on functional locations, you can create maintenance rounds that include multiple assets on which you need to perform related types of maintenance jobs in the same work routine. Maintenance rounds created from assets - instead of created on functional locations - means that you can select a number of assets for one maintenance round, which are not installed on the same functional location.
 

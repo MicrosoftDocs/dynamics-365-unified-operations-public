@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 An asset type is attached to every asset. Asset types define the maintenance job types (and therefore, the maintenance jobs) that can be performed on assets. When you create a work order, you must select a maintenance job type. You can select only the maintenance job types that are related to the setup of the asset type that is used for the asset.
 
