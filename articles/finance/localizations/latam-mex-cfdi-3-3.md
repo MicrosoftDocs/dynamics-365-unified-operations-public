@@ -49,14 +49,25 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
     
 ## Foreign trade 
 
-If your organization issue electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
+If your organization uses electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
 The following changes are introduced as part of generation of CFDI foreign trade complement
 
 - **Operation type:** Select Export
-- **CFDI foreign trade version:** Select version 1.1
-- **CFDI foreign trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
-- **Currency code:** Select the currency code configured in Microsoft Dynamics AX that represents the US Dollar since the foreign complement should be expressed in this currency.
+- **CFDI version:** Select version 1.1
+- **Reporting currency:** Select the currency code configured in Microsoft Dynamics AX that represents the US Dollar since the foreign complement should be expressed in this currency.
+- **CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
 - **Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
+
+## CFDI witholding documents
+If your organization uses electronic invoicwithholding documents es that are validated and certified by a third-party digital signature service provider (PAC), you enable electronic invoicing by using the fields in the **CFDI Withholding** and **Number sequences** area of the **Electronic invoice parameters** page.
+
+-**Enable CFDI witholding:** Select Yes to enable the generation of CFDI withholding
+-**CDFI XSLT file:**Path and schema file to validate the CFDI withhdolding document
+-**CFDI digest algorithm:** SHA-256
+-**CFDI XML schema file:**Path and schema file to validate the CFDI withhdolding  document
+-**Send mail:** Select Yes to enable the action to send email with the CFDI withholding XMLfile attached
+-**Email ID:** Select the email ID template
+-**Number sequences:** Select the number sequence code used for Withdoling journals
 
 
 ## SAT catalogs
@@ -120,7 +131,7 @@ After the list is created or updated, you can map the related classification in 
 This information must be entered in the <strong>Payment type</strong> field on the sales invoice transaction header. You can also define the default payment type per customer by selecting <strong>Customers</strong> and using the <strong>Invoice and delivery</strong> option.</td>
 </tr>
 <tr>
-<td>cMoneda</td>
+<td>c_Moneda</td>
 <td>This information is identified by the <strong>Currency code</strong> value that is configured in Finance.
 
 The government defines the exchange rate variation that is allowed. This value must be configured at <strong>General ledger</strong> &gt; <strong>Setup</strong> &gt; <strong>Currencies</strong> &gt; <strong>Electronic invoices</strong>. You can enter the <strong>Exchange rate variation limit</strong> value per currency.</td>
@@ -130,7 +141,7 @@ The government defines the exchange rate variation that is allowed. This value m
 <td>Existing information in the <strong>Custom Number</strong> field on the sales invoice transaction line is used.</td>
 </tr>
 <tr>
-<td>cPais</td>
+<td>c_Pais</td>
 <td>This information is identified by the <strong>Country code</strong> value that is configured in Finance.</td>
 </tr>
 <tr>
@@ -138,7 +149,7 @@ The government defines the exchange rate variation that is allowed. This value m
 <td>Not applicable</td>
 </tr>
 <tr>
-<td>cRegimenFiscal</td>
+<td>c_RegimenFiscal</td>
 <td>Select <strong>Organization administration</strong> &gt; <strong>Setup</strong> &gt; <strong>Einvoice</strong> &gt; <strong>SAT classifications</strong> &gt; <strong>Tax regime</strong> to enter the list of tax regime classifications that are defined by the government. You can enter the following information: SAT code classification, description, effective version, and expiration date.
 
 After the list is created or updated, you can map the related classification in the following master data:
@@ -148,11 +159,11 @@ After the list is created or updated, you can map the related classification in 
 </td>
 </tr>
 <tr>
-<td>cTasaCuota</td>
+<td>c_TasaCuota</td>
 <td>This information is determined by the <strong>Tax type</strong> value in the sales tax code setup.</td>
 </tr>
 <tr>
-<td>cTipodeComprobante</td>
+<td>c_TipodeComprobante</td>
 <td>This information is determined by the type of sales invoice transaction. The following types are supported for this feature:
 <ul>
 <li>Incoming</li>
@@ -162,13 +173,13 @@ After the list is created or updated, you can map the related classification in 
 </td>
 </tr>
 <tr>
-<td>cTipoFactor</td>
+<td>c_TipoFactor</td>
 <td>This information is determined by the <strong>Tax type</strong> value in the sales tax code setup.
 
 The sales tax code configuration identifies the <strong>Exempt</strong> type as <strong>tax rate = 0.00</strong> and <strong>tax type = VAT</strong>. It identifies the <strong>TASA</strong> type as <strong>tax rate &lt;&gt; 0.00</strong>.</td>
 </tr>
 <tr>
-<td>cTipoRelacion</td>
+<td>c_TipoRelacion</td>
 <td>New CFDI reference functionality has been implemented that lets users identify the various types of relations between CFDI documents. Some of these relation types are assigned automatically. Users can manually select other relationship types in specific scenarios.</td>
 </tr>
 <tr>
@@ -176,7 +187,7 @@ The sales tax code configuration identifies the <strong>Exempt</strong> type as 
 <td> <strong> FOREIGN TRADE </strog></td>
 </tr>
 <tr>    
-<td>cIncoterm</td>
+<td>c_Incoterm</td>
 <td><strong>Organization administration > Setup > Einvoice > SAT classifications > Incoterm</strong>, to introduce the list of incoterm classification defined by the government. The user will be able to introduce the following information: SAT code classification, description, version effective and expiration date. Once the list is created or updated, the user will be able to map the related classification in the following master data:
 <ul>
 <li>Electronic invoice parameters in default classifications. This is used for Project invoice and proposals when is not generated from Sales order.
@@ -186,11 +197,22 @@ The sales tax code configuration identifies the <strong>Exempt</strong> type as 
 </ul>
 </tr>
 <tr>
-<td> cTipoOperation</td>
+<td> c_TipoOperation</td>
 <td> Only available value is <strong>Exportacion</strong> (Export) and it's selected from Einvoice parameters </td>
 </tr>
-
-  
+<tr>
+    <td>c_Brand </td>
+    <td><strong>Product Information Management > Setup >Brand</strong>, to introduce the brand code. The user will be able to introduce the following information: brand code and description. </td>
+</tr>
+<tr>
+    <td> c_FraccionArancelaria </td>
+    <td> <strong>Organization administration > Setup > Einvoice > SAT Classifications > Tariff fraction</strong> to introduce the list of tariff fraction classification defined by the government. The user will be able to introduce the following information: SAT code classification, description, version effective and expiration date. Once the list is created or updated, the user will be able to select the tariff fraction at the line level in sales order line, free text invoice lines and project invoice  </td>
+</tr>
+<tr>
+    <td> c_UnidadAduana </td>
+    <td> <strong>Organization administration > Setup > Einvoice > SAT Classifications > Customs unit of measure </strong>, to introduce the list custom unit of measure classification defined by the government. The user will be able to introduce the following information: SAT code classification, description, version effective and expiration date. Once the list is created or updated, the user will be able to select the customs unit of measureat the line level in sales order line, free text invoice lines and project invoice  </td>
+</tr>
+ 
 </tbody>
 </table>
 
