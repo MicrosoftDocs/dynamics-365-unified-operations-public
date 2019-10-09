@@ -3,7 +3,7 @@
 
 title: Integrated ledger
 description: This topic describes the integration of ledger data between Finance and Operations and Customer Engagement using the Common Data Service.
-author:  
+author:  robinarh
 manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
@@ -36,17 +36,13 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-Ledger data defines the core set up of a business applicaiton in how it does business. For example, it describes the fiscal year they follow, the currencies they transact in, and the accounts they use. This document describes the integration of this core financial data.
-
-## Data flow
-
-The table describes what data is integrating between Finance & Operations and Customer Engagement and what direction it flows.
+Ledger data defines the core set up of a business application in how it does business. For example, it describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses. This document describes the integration of this core financial data.
 
 ## Templates
 
-Ledger data includes a collection of core financial entity maps works together during data interaction, as shown in the following table.
+Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations           | Customer Engagement application
+Finance and Operations apps      | Other Dynamics 365 apps
 ---------------------------------|---------------------------------
 Currencies                       | transactioncurrencies
 FiscalCalendar                   | msdyn\_fiscalcalendars
