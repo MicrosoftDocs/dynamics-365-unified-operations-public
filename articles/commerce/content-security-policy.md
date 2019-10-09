@@ -72,24 +72,22 @@ To configure a directive to allow an external script to be called, follow these 
 
 The following screenshot shows where an external script URL would be entered on the **Content Security Policy** tab.
 
-![Content Security Policy](media/content-security-policy.png)
+![CSP directive configuration in Commerce](media/content-security-policy.png)
 
-## Understanding CSP errors
+## Interpret and fix CSP errors
 
-When initially configuring CSP for a site it can be common to see pages not load or not work as intended because CSP is preventing requests, scripts, etc. from loading. 
+When initially configuring CSP for a site, it is common to see pages that will not load or work as intended because CSP is preventing requests, scripts, etc. from loading. Fortunately CSP logs some helpful errors that can be used to fix, tune, and clean up unwanted or unneeded requests.
 
-Fortunately, CSP logs some helpful errors to the console and we can use these errors to fix, fine-tune and even help cleanup unwanted or unneeded requests.
+The following example screenshot shows some CSP errors as seen within a web browser's developer tools.
 
-The image below shows an example error as seen within a web browser's developer tools.
+![CSP errors as seen within a web browser's developer tools](media/content-security-policy-errors.png)
 
-![Content Security Policy Error](media/content-security-policy-errors.png)
+In this example we have two CSP errors:
 
-In this case we have two CSP errors:
+- The Eval function is blocked by default because it can lead to arbitrary Javascript execution. To allow it, you must add 'unsafe-eval' (single quotes required) to your site's script-src directive.
+- The stylesheet is blocked. To allow stylesheets to be loaded from an external domain, you would add the URL to the style-src directive.
 
-- Eval is blocked by default because it can lead to arbitrary Javascript execution. If you must allow it, you must add ‘unsafe-eval’ (single quotes required) to your sites script-src directive.
-- The stylesheet from https://int.fabrikam.com  is blocked. To allow it, add an entry to the style-src to allow stylesheets to be loaded from this domain.
-
-The image below shows how the fixed settings look like in the Dynamics 365 Commerce **Content Security Policy** tab.
+The following screenshot shows what the fixed settings would look like on the Dynamics 365 Commerce **Content Security Policy** tab.
 
 ![Content Security Policy Fix](media/content-security-policy-fixed.png)
 
