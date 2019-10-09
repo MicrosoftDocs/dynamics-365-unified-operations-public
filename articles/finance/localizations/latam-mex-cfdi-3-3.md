@@ -52,23 +52,28 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
 If your organization uses electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
 The following changes are introduced as part of generation of CFDI foreign trade complement
 
-- **Operation type:** Select Export
-- **CFDI version:** Select version 1.1
-- **Reporting currency:** Select the currency code configured in Microsoft Dynamics AX that represents the US Dollar since the foreign complement should be expressed in this currency.
-- **CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
-- **Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
+-**Operation type:** Select Export
+-**CFDI version:** Select version 1.1
+-**Reporting currency:** Select the currency code that represents the US Dollar since the foreign complement should be expressed in this currency
+-**CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
+-**Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
 
 ## CFDI witholding documents
 If your organization uses electronic invoicwithholding documents es that are validated and certified by a third-party digital signature service provider (PAC), you enable electronic invoicing by using the fields in the **CFDI Withholding** and **Number sequences** area of the **Electronic invoice parameters** page.
 
 -**Enable CFDI witholding:** Select Yes to enable the generation of CFDI withholding
--**CDFI XSLT file:**Path and schema file to validate the CFDI withhdolding document
--**CFDI digest algorithm:** SHA-256
--**CFDI XML schema file:**Path and schema file to validate the CFDI withhdolding  document
--**Send mail:** Select Yes to enable the action to send email with the CFDI withholding XMLfile attached
--**Email ID:** Select the email ID template
--**Number sequences:** Select the number sequence code used for Withdoling journals
 
+-**CDFI XSLT file:**Path and schema file to validate the CFDI withhdolding document
+
+-**CFDI digest algorithm:** SHA-256
+
+-**CFDI XML schema file:** Path and schema file to validate the CFDI withhdolding  document
+
+-**Send mail:** Select Yes to enable the action to send email with the CFDI withholding XMLfile attached
+
+-**Email ID:** Select the email ID template
+
+-**Number sequences:** Select the number sequence code used for Withdoling journals
 
 ## SAT catalogs
 
