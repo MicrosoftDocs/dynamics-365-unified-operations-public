@@ -56,20 +56,20 @@ When a non-sellable contact participates in a quotation or order process, **Sell
 
 Customer data includes all information about the customer, such as the customer group, addresses, contact information, payment profile, invoice profile, and loyalty status. A collection of entity maps works together during customer data interaction, as shown in the following table.
 
-Finance and Operations    | Customer Engagement             | Description
---------------------------|---------------------------------|------------
-CDS Contacts V2           | contacts                        | This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.
-Customer groups           | msdyn_customergroups            | This template synchronizes customer group information.
-Customer payment method   | msdyn_customerpaymentmethods    | This template synchronizes customer payment method information.
-Customers V3              | accounts                        | This template synchronizes customer master information for commercial and organizational customers.
-Customers V3              | contacts                        | This template synchronizes customer master data for consumers and end users.
-Loyalty card              | msdyn_loyaltycards              | This template synchronizes customer loyalty card information.
-Name affixes              | msdyn_nameaffixes               | This template synchronizes name affixes reference data, for both customers and vendors.
-Payment day lines CDS V2  | msdyn_paymentdaylines           | This template synchronizes payment day lines reference data, for both customers and vendors.
-Payment days CDS          | msdyn_paymentdays               | This template synchronizes payment days reference data, for both customers and vendors.
-Payment schedule lines    | msdyn_paymentschedulelines      | Syncs payment schedule lines reference data, for both customers and vendors.
-Payment schedule          | msdyn_paymentschedules          | This template synchronizes payment schedule reference data, for both customers and vendors.
-Terms of payment          | msdyn_paymentterms              | This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors.
+Finance and Operations apps | Other Dynamics 365 apps         | Description
+----------------------------|---------------------------------|------------
+CDS Contacts V2             | contacts                        | This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.
+Customer groups             | msdyn_customergroups            | This template synchronizes customer group information.
+Customer payment method     | msdyn_customerpaymentmethods    | This template synchronizes customer payment method information.
+Customers V3                | accounts                        | This template synchronizes customer master information for commercial and organizational customers.
+Customers V3                | contacts                        | This template synchronizes customer master data for consumers and end users.
+Loyalty card                | msdyn_loyaltycards              | This template synchronizes customer loyalty card information.
+Name affixes                | msdyn_nameaffixes               | This template synchronizes name affixes reference data, for both customers and vendors.
+Payment day lines CDS V2    | msdyn_paymentdaylines           | This template synchronizes payment day lines reference data, for both customers and vendors.
+Payment days CDS            | msdyn_paymentdays               | This template synchronizes payment days reference data, for both customers and vendors.
+Payment schedule lines      | msdyn_paymentschedulelines      | Syncs payment schedule lines reference data, for both customers and vendors.
+Payment schedule            | msdyn_paymentschedules          | This template synchronizes payment schedule reference data, for both customers and vendors.
+Terms of payment            | msdyn_paymentterms              | This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors.
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
