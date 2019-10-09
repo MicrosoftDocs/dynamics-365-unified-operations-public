@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Platform update 30 for Finance and Operations apps (November 2019)
+title: What's new or changed in Platform update 30 for Finance and Operations apps (November 2019)
 description: This topic describes features that are in preview in Platform update 30 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
@@ -29,10 +29,10 @@ ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: Platform update 30
 
 ---
-# Preview features in Platform update 30 for Finance and Operations apps (November 2019)
+# What's new or changed in Platform update 30 for Finance and Operations apps (November 2019)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 This topic describes preview features that are new or changed for Platform update 30 for Finance and Operations apps. This version has a build number of 7.0.5407. While the general availability date is in November, the new features are available for early release in September. For more information about Platform update 30, see [Additional resources](whats-new-platform-update-30.md#additional-resources).
 
