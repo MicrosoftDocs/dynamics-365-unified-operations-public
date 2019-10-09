@@ -5,7 +5,7 @@ title: Configure an e-Commerce evaluation environment
 description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -89,9 +89,9 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. If you are a partner, choose **Migrate, create solutions, and learn**.
 1. If you are a customer, choose **Prospective presales**.
 1. Enter a name, description and industry as you see fit.
-1. For **Product name**, select **Microsoft Dynamics 365 Retail**.
-1. For **Product version**, select **Microsoft Dynamics 365 Retail**.
-1. For **Methodology**, select **Dynamics AX implementation methodology**.
+1. For **Product name**, select **Dynamics 365 Retail**.
+1. For **Product version**, select **Dynamics 365 Retail**.
+1. For **Methodology**, select **Dynamics AX implementation methodology** or **Dynamics Retail implementation methodology**.
 1. You may import roles and users from an existing project if that is desired.
 1. Click **Create**.
 1. You are sent to the project view.
@@ -129,7 +129,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. If you are a customer, choose **Asset library** from the top menu.
 1. Select **Software deployable package** from the list on the left.
 1. Click **IMPORT** from the action pane.
-1. Select **Dynamics 365 Commerce Preview Demo Extension** from the list of assets under **SHARED ASSET LIBRARY**.
+1. Select **Commerce Preview Demo Base Extension** from the list of assets under **SHARED ASSET LIBRARY**.
 1. Click **Pick**.
 1. You will be returned to the Asset library and you should see the extension in the list.
 
@@ -168,10 +168,10 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. From the environment view on the right side of the screen, click **Full details**. The environment details view will display.
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
 1. From **Retail** tab, click **Initialize**. The RCSU initialization parameters view will display.
-1. For region, select **East US**, **East US 2**, **West US** or **West US 2**.
-1. For "**Select a version**", first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below.
+1. For **REGION**, select **East US**, **East US 2**, **West US** or **West US 2**.
+1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below.
 1. Enable **Apply extension**.
-1. From the list of extensions, choose **Dynamics 365 Commerce Preview Demo Extension**.
+1. From the list of extensions, choose **Commerce Preview Demo Base Extension**.
 1. Click **Initialize**.
 1. On the deployment confirmation screen, after verifying that the details are correct, click **Yes**.
 1. You are returned to the **Retail management** view with the **Retail** tab activated. Your RCSU has been queued for provisioning.
@@ -206,7 +206,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 
 ### Configure POS
 ##### Associate worker with your identity
-1. Using the menu on the left, go to **Modules > Human resources > Workers > Workers**.
+1. Using the menu on the left, go to **Modules > Retail > Employees > Workers**.
 1. In the list, find and select record **000713 - Andrew Collette**.
 1. On the Action Pane, click **Retail**.
 1. Click **Associate existing identity**.
@@ -251,6 +251,9 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling a recurring P-job
+1. Using the menu on the left, go to **Modules > Retail > Inquiries and reports > Batch jobs**.
+1. Use the Quick Filter to search for a record with Job description field with a value of **P-0001**.
+1. If you find a matching record and its status is **Withhold**, select it, click **Delete**, then click **Yes**.
 1. Using the menu on the left, go to **Workspaces > Retail IT**.
 1. Click **Distribution schedule**.
 1. Select **P-0001**.
@@ -285,26 +288,17 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. In the **Count** field, enter **2**.
 1. Click **OK**.
 1. Click **OK**.
-##### Scheduling a recurring email distributor batch job
-1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Modules > System administration > Periodic tasks > Email processing > Email distributor batch.**.
-1. Expand the **Run in the background** section.
-1. Select **Yes** in the **Batch processing** field.
-1. Click **Recurrence**.
-1. Select the **No end date** option.
-1. In the **Count** field, enter **2**.
-1. Click **OK**.
-1. Click **OK**.
 ##### Run full data sync
 1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Retail scheduler > Channel database**.
-1. **Default** channel should be selected from the list on the left. Select the other channel available.
+1. **Default** channel is selected from the list on the left. *Select the other available channel (named **scXXXXXXXXX**)*.
 1. Click **Full data sync** from the action pane.
 1. Enter **9999** as the distribution schedule.
 1. Click **OK**.
 1. Click **OK**.
 ### After these steps you are ready to start evaluating your preview environment!
 Use the **e-Commerce site management tool** URL to navigate to the C1 authoring experience and the **e-Commerce site** URL to navigate to the C2 site experience.
-***
+
+
 ## Additional resources
 ### How to find your AAD Tenant Id
 AAD Tenant Id is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**
@@ -369,7 +363,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 ##### Updating the media base URL
 Using the CMS tenant identifier you noted earlier, craft the **DAM Base URL**.
 
-https://cms-ppe-imageresizer-mr.trafficmanager.net/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
+https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
 
 Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL available when performing the following steps:
 

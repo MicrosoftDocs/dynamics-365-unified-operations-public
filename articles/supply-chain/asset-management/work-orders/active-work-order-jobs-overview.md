@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In **Active work order maintenance jobs**, you can get an overview of work orders in relation to how many work orders have been created on specific assets, asset types, manufacturers, models, maintenance job types, and so on. If you select a work order job and click **Edit**, you open the related work order. If you select a job and click one of the buttons on the **Work order maintenance jobs** tab, you see data for the work order to which the work order job is related.
 

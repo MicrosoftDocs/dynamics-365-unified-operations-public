@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can get an overview of purchase requisitions and purchase orders related to work orders. It is also possible to create a purchase order or a purchase requisition from a work order.
 

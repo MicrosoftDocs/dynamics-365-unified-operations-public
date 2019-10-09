@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In the previous section, manual registration of asset counters is described. Setup of asset counters is described in [Counters](../setup-for-objects/counters.md).
 
