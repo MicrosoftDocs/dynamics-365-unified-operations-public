@@ -5,7 +5,7 @@ title: Configure workspaces by using the SysAppWorkspace class
 description: This topic explains how you can use the SysAppWorkspace class to configure and publish workspaces on the server. 
 author: makhabaz
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,20 +34,17 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include [banner](../../../includes/banner.md)]
 
-Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following two categories of APIs are available for use in sysAppWorkspace;
+Workspace class, **SysAppWorkspace**, is the starting point to create, configure and publish workspaces on the server. The following categories of APIs are available for use in sysAppWorkspace
 
-+ **Workspace attributes**; used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. 
+- **Workspace attributes** - This is used to create pages, tasks, entities, lookups, relationships in order to build mobile workspaces. 
+    - Download the sample project for Fleet Management Mobile App. This is an .axpp file found at [Dynamics365-for-Operations-mobile-FleetManagementSamples](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples).
+    - After downloading the file, open Visual Studio on your Operations development environment, select **Dynamics 365 > Import Project**, and browse for the downloaded project file. On the same dialog box, select **Overwrite** and select **Create a new solution**. After the import is complete, build the solution (or build the Fleet Management model). 
+    - To review the example, start by reviewing the FMReservationManagementWorkspace class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.
+    - A mobile workspace can be created through designer pane, using X++ attribute APIs or a combination of both. See the "Use the workspace class to publish workspaces from AOT resources" section below for more details about how to import mobile app metadata from designer to AOT. The sample project Fleet Management Mobile App is a complete mobile app built using X++ attribute APIs.
 
-    [Download the sample project for Fleet Management Mobile App](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).
-    *After downloading the file, open Visual Studio on your Operations development environment, then click Dynamics 365 > Import Project, and browse for the downloaded project file. On the same dialog, check "overwrite" and check "create a new solution". After the import is complete, build the solution (or build the Fleet Management model). 
-    To review the example, start by reviewing 'FMReservationManagementWorkspace' class to see all the pages and actions included in the workspace. Use Solution Explorer to find page and task classes, and all the assets included in each. Use the API reference for more details on each API.*
-    
-    **A mobile workspace can be created through designer pane, using X++ attribute APIs or a combination of both. See topic 'Use the workspace class to publish workspaces from AOT resources' below for more details on importing mobile app metadata from designer to AOT. Sample above is a complete mobile app built using X++ attribute APIs.**
+- **Workspace metadata classes** - This is used to inspect and apply server-side business logic to metadata for mobile workspaces. 
 
-+ **Workspace metadata classes**; used to inspect and apply server-side business logic to metadata for mobile workspaces. 
-
-[See complete list of server-side APIs](../mobile-workspace-server-apis.md)
-
+For a complete list of server-side APIs, see [Server-side development (workspace X++ APIs)](../mobile-workspace-server-apis.md).
 
 
 ## Create a new workspace class
