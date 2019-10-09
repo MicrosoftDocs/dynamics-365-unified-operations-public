@@ -38,5 +38,5 @@ This page points you to topics that can help you learn about the new features in
 
 | Version | Build number | Availability | Learn more |
 |---------|--------------|---------------|-------------|
-| 10.0.6 | 10.0.XXX       | November 2019 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (November 2019)](whats-new-scm-10-0-6.md)|
+| 10.0.6 | 10.0.234       | November 2019 | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (November 2019)](whats-new-scm-10-0-6.md)|
 
