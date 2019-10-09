@@ -306,6 +306,12 @@
         href: accounts-receivable/tasks/review-collections-information.md
       - name: Revenue recognition overview
         href: accounts-receivable/revenue-recognition-overview.md
+      - name: Revenue recognition setup
+        href: accounts-receivable/revenue-recognition-setup.md.md
+      - name: Recognize deferred revenue
+        href: accounts-receivable/revenue-recognition-recognize-deferred-revenue.md.md
+      - name: Revenue recognition on sales orders
+        href: accounts-receivable/revenue-recognition-so-basics.md.md        
       - name: Set up and process recurring invoices
         href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Accounting distributions and subledger journal entries for free text invoices
@@ -857,7 +863,7 @@
         - name: Whole amount and interval calculation options for sales tax codes
           href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
         - name: Sales tax calculation on general journal lines
-          href: general-ledger/tasks/sales-tax-calculation-on-general-journal.md          
+          href: general-ledger/sales-tax-calculation-on-general-journal.md          
         - name: Calculate and adjust sales tax on a vendor invoice
           href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
         - name: Enable delayed tax calculation on journal
