@@ -94,16 +94,28 @@ The following screenshot shows what the fixed settings would look like on the Dy
 ## Update page mocks with new CSP
 
 If you are testing modules in a development environment with the online SDK, you can also add CSP using page mocks. In a page mock, you'll need to add or navigate to the top level property "appContext" and create a property under that titled "contentSecurityPolicy".
+There you can add key value pairs of directives to policies, as in the following example code.
 
-Here you may add key value pairs of directives to policies.
+```
+"appContext": [
+	"contentSecurityPolicy": {
+		"script-src": ["https://www.3schools.com/js/myScript.js"],
+		"font-src": ["https://*.commerce.dynamics.com"]
+	}
+}
+```
 
 If you are adding CSP policies in your page mock, please note that it will not include any of the default CSP policies provided by the platform. 
 
-![Content Security Policy Page Mock](media/content-security-policy-page-mock.png)
+You can also disable CSP on your page mock by using the following code.
 
-You may also disable CSPO on your page mock by using:
-
-![Content Security Policy Page Mock 2](media/content-security-policy-page-mock2.png)
+```
+"appContext": [
+	"contentSecurityPolicy": {
+		"disableContentSecurityPolicy": true
+	}
+}
+```
 
 ## Disable CSP
 If for whatever reason, you want to disable CSP from applying policies to your site, you may disable it altogether. Simply check the **Disable content security policy** check box and then select **Save and publish**.
