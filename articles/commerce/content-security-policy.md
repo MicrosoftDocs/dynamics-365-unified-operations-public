@@ -60,11 +60,19 @@ style-src | Defines valid sources of stylesheets
 
 ### Example of CSP directive configuration
 
-For an example of CSP directive configuration, if a site with CSP enabled needs to call an external script such as https://www.example.com/scripts/example.js, an entry must be added to the **script-src** directive under the **Content Security Policy** tab on the **Site Management** **Extensibility** page, as shown in the following screenshot.
+The following example describes how to enable an external script to be called in Dynamics 365 Commerce.
+
+To configure a directive to allow an external script to be called, follow these steps.
+
+1. In Dynamics 365 Commerce, navigate to your site.
+1. Go to **Site Management \> Extensibility**.
+1. Select the **Content Security Policy** tab.
+1. Under **script-src**, select **+Add**, and then enter the full URL of the external script to be called.
+1. Select **Save and Publish**.
+
+The following screenshot shows where an external script URL would be entered on the **Content Security Policy** tab.
 
 ![Content Security Policy](media/content-security-policy.png)
-
-After any changes are made, ensure the "Save and Publish" button is pressed.
 
 ## Understanding CSP errors
 
