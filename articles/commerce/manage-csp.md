@@ -39,7 +39,7 @@ This topic describes how to manage Content Security Policy (CSP) in Dynamics 365
 
 Content Security Policy (CSP) is an additional layer of security that helps to detect and mitigate certain types of web attacks, the purpose of which can be anything from data theft to site defacement to distribution of malware. CSP provides an extensive set of policy directives that enable you to control the resources that a site page is allowed to load. Each directive defines the restrictions for a particular resource type.
 
-Enabling CSP for an e-Commerce site enhances security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. CSP in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. This list can be modified on the Dynamics 365 Commerce Extensibility page.
+Enabling CSP for an e-Commerce site enhances security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. In Dynamics 365 Commerce, CSP is enabled by default and will likely require some additional configuration for most sites. The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. This list can be modified on the Dynamics 365 Commerce Extensibility page.
 
 For more details on CSP, see the [Content Security Policy Reference](https://content-security-policy.com/).
 
@@ -82,10 +82,10 @@ The following example screenshot shows some CSP errors as seen within a web brow
 
 ![CSP errors as seen within a web browser's developer tools](media/content-security-policy-errors.png)
 
-In this example we have two CSP errors:
+In this example we see two CSP errors:
 
 - The Eval function is blocked by default because it can lead to arbitrary Javascript execution. To allow it, you must add 'unsafe-eval' (single quotes required) to your site's script-src directive.
-- The stylesheet is blocked. To allow a stylesheet to be loaded from an external domain, you must add the URL to the style-src directive.
+- The external stylesheet is blocked. To allow a stylesheet to be loaded from an external domain, you must add the URL to the style-src directive.
 
 The following screenshot shows what the fixed settings would look like on the Dynamics 365 Commerce **Content Security Policy** tab.
 
