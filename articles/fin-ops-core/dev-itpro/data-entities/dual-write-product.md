@@ -111,149 +111,18 @@ The **Product** entity contains the fields that define the product. It includes 
 
 [!include [products](dual-write/EcoResReleasedDistinctProductCDSEntity-products.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTNUMBER | >> | productnumber
-PRODUCTNAME | >> | name
-PRODUCTDESCRIPTION | >> | description
-ITEMNUMBER | >> | msdyn_itemnumber
-CURRENCYCODE | >> | transactioncurrencyid.isocurrencycode
-SALESUNITSYMBOL | >> | defaultuomid.msdyn_symbol
-SALESPRICE | >> | price
-UNITCOST | >> | currentcost
-PRODUCTTYPE | >> | producttypecode
-SALESUNITDECIMALPRECISION | >> | quantitydecimal
-ISCATCHWEIGHTPRODUCT | >> | msdyn_iscatchweight
-PRODUCTCOLORID | >> | msdyn_productcolor.msdyn_productcolorname
-PRODUCTCONFIGURATIONID | >> | msdyn_productconfiguration.msdyn_productconfiguration
-PRODUCTSIZEID | >> | msdyn_productsize.msdyn_productsize
-PRODUCTSTYLEID | >> | msdyn_productstyle.msdyn_productstyle
-
 ### Released products V2 to msdyn\_sharedproductdetails
 
 The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
 
 [!include [products](dual-write/EcoResReleasedProductV2-msdyn-sharedproductdetails.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTNUMBER | > | msdyn_globalproduct.msdyn_productnumber
-INTRASTATCHARGEPERCENTAGE | > | msdyn_intrastatchargepercentage
-ITEMNUMBER | >> | msdyn_itemnumber
-APPROXIMATESALESTAXPERCENTAGE | > | msdyn_approximatesalestaxpercentage
-BESTBEFOREPERIODDAYS | > | msdyn_bestbeforeperioddays
-CARRYINGCOSTABCCODE | >> | msdyn_carryingcostabccode
-CONSTANTSCRAPQUANTITY | > | msdyn_constantscrapquantity
-COSTCHARGESQUANTITY | > | msdyn_costchargesquantity
-DEFAULTRECEIVINGQUANTITY | > | msdyn_defaultreceivingquantity
-FIXEDPURCHASEPRICECHARGES | > | msdyn_fixedpurchasepricecharges
-FIXEDSALESPRICECHARGES | > | msdyn_fixedsalespricecharges
-GROSSDEPTH | > | msdyn_grossdepth
-GROSSPRODUCTHEIGHT | > | msdyn_grossproductheight
-GROSSPRODUCTWIDTH | > | msdyn_grossproductwidth
-INVENTORYUNITSYMBOL | > | msdyn_inventoryunitsymbol.msdyn_symbol
-ISDISCOUNTPOSREGISTRATIONPROHIBITED | >> | msdyn_isdiscountposregistrationprohibited
-ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION | >> | msdyn_exemptautomaticnotificationcancel
-ISINSTALLMENTELIGIBLE | >> | msdyn_isinstallmenteligible
-ISINTERCOMPANYPURCHASEUSAGEBLOCKED | >> | msdyn_isintercompanypurchaseusageblocked
-ISINTERCOMPANYSALESUSAGEBLOCKED | >> | msdyn_isintercompanysalesusageblocked
-ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED | >> | msdyn_ismanualdiscposregistrationprohibited
-ISPHANTOM | >> | msdyn_isphantom
-ISPOSREGISTRATIONBLOCKED | >> | msdyn_isposregistrationblocked
-ISPOSREGISTRATIONQUANTITYNEGATIVE | >> | msdyn_isposregistrationquantitynegative
-ISPURCHASEPRICEAUTOMATICALLYUPDATED | >> | msdyn_ispurchasepriceautomaticallyupdated
-ISPURCHASEPRICEINCLUDINGCHARGES | >> | msdyn_ispurchasepriceincludingcharges
-ISSALESWITHHOLDINGTAXCALCULATED | >> | msdyn_issaleswithholdingtaxcalculated
-ISRESTRICTEDFORCOUPONS | >> | msdyn_isrestrictedforcoupons
-ISSALESPRICEADJUSTMENTALLOWED | >> | msdyn_issalespriceadjustmentallowed
-ISSALESPRICEINCLUDINGCHARGES | >> | msdyn_issalespriceincludingcharges
-ISSCALEPRODUCT | >> | msdyn_isscaleproduct
-ISSHIPALONEENABLED | >> | msdyn_isshipaloneenabled
-ISUNITCOSTPRODUCTVARIANTSPECIFIC | >> | msdyn_isunitcostproductvariantspecific
-ISVARIANTSHELFLABELSPRINTINGENABLED | >> | msdyn_isvariantshelflabelsprintingenabled
-ISZEROPRICEPOSREGISTRATIONALLOWED | >> | msdyn_iszeropriceposregistrationallowed
-KEYINPRICEREQUIREMENTSATPOSREGISTER | >> | msdyn_keyinpricerequirementsatposregister
-KEYINQUANTITYREQUIREMENTSATPOSREGISTER | >> | msdyn_keyinquantityrequirementsatposregister
-MARGINABCCODE | >> | msdyn_marginabccode
-MAXIMUMPICKQUANTITY | > | msdyn_maximumpickquantity
-MUSTKEYINCOMMENTATPOSREGISTER | >> | msdyn_mustkeyincommentatposregister
-NECESSARYPRODUCTIONWORKINGTIMESCHEDULINGPROPERTYID | > | msdyn_necessaryproductionworkingtimeschedulingp
-NETPRODUCTWEIGHT | > | msdyn_netproductweight
-PACKINGDUTYQUANTITY | > | msdyn_packingdutyquantity
-POSREGISTRATIONACTIVATIONDATE | > | msdyn_posregistrationactivationdate
-POSREGISTRATIONBLOCKEDDATE | > | msdyn_posregistrationblockeddate
-POSREGISTRATIONPLANNEDBLOCKEDDATE | > | msdyn_posregistrationplannedblockeddate
-POTENCYBASEATTIBUTETARGETVALUE | > | msdyn_potencybaseattibutetargetvalue
-POTENCYBASEATTRIBUTEVALUEENTRYEVENT | >> | msdyn_potencybaseattributevalueentryevent
-PRODUCTTYPE | >> | msdyn_producttype
-PRODUCTIONCONSUMPTIONDENSITYCONVERSIONFACTOR | > | msdyn_productionconsumptiondensityconversion
-PRODUCTIONCONSUMPTIONDEPTHCONVERSIONFACTOR | > | msdyn_productionconsumptiondepthconversion
-PRODUCTIONCONSUMPTIONHEIGHTCONVERSIONFACTOR | > | msdyn_productionconsumptionheightconversion
-PRODUCTIONCONSUMPTIONWIDTHCONVERSIONFACTOR | > | msdyn_productionconsumptionwidthconversion
-PRODUCTVOLUME | > | msdyn_productvolume
-PURCHASECHARGESQUANTITY | > | msdyn_purchasechargesquantity
-PURCHASEOVERDELIVERYPERCENTAGE | > | msdyn_purchaseoverdeliverypercentage
-PURCHASEPRICE | > | msdyn_purchaseprice
-PURCHASEPRICEDATE | > | msdyn_purchasepricedate
-PURCHASEPRICINGPRECISION | > | msdyn_purchasepricingprecision
-PURCHASEUNDERDELIVERYPERCENTAGE | > | msdyn_purchaseunderdeliverypercentage
-RAWMATERIALPICKINGPRINCIPLE | >> | msdyn_rawmaterialpickingprinciple
-SALESCHARGESQUANTITY | > | msdyn_saleschargesquantity
-SALESOVERDELIVERYPERCENTAGE | > | msdyn_salesoverdeliverypercentage
-SALESPRICE | > | msdyn_salesprice
-SALESPRICECALCULATIONCHARGESPERCENTAGE | > | msdyn_salespricecalculationchargespercentage
-SALESPRICECALCULATIONCONTRIBUTIONRATIO | > | msdyn_salespricecalculationcontributionratio
-SALESPRICECALCULATIONMODEL | >> | msdyn_salespricecalculationmodel
-SALESPRICEDATE | > | msdyn_salespricedate
-SALESPRICINGPRECISION | > | msdyn_salespricingprecision
-SALESUNDERDELIVERYPERCENTAGE | > | msdyn_salesunderdeliverypercentage
-SALESUNITSYMBOL | > | msdyn_salesunitsymbol.msdyn_symbol
-SCALEINDICATOR | >> | msdyn_scaleindicator
-SELLSTARTDATE | > | msdyn_sellstartdate
-SHELFADVICEPERIODDAYS | > | msdyn_shelfadviceperioddays
-SHELFLIFEPERIODDAYS | > | msdyn_shelflifeperioddays
-SHIPSTARTDATE | > | msdyn_shipstartdate
-TAREPRODUCTWEIGHT | > | msdyn_tareproductweight
-TRANSFERORDEROVERDELIVERYPERCENTAGE | > | msdyn_transferorderoverdeliverypercentage
-TRANSFERORDERUNDERDELIVERYPERCENTAGE | > | msdyn_transferorderunderdeliverypercentage
-UNITCOST | > | msdyn_unitcost
-UNITCOSTDATE | > | msdyn_unitcostdate
-UNITCOSTQUANTITY | > | msdyn_unitcostquantity
-VARIABLESCRAPPERCENTAGE | > | msdyn_variablescrappercentage
-WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE1 | > | msdyn_warehousemobiledevicedescriptionline1
-WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE2 | > | msdyn_warehousemobiledevicedescriptionline2
-WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED | >> | msdyn_willinventoryissueautoreportasfinished
-WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE | >> | msdyn_willinventoryreceiptignoreflushing
-WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC | >> | msdyn_willpickingworkbenchapplyboxinglogic
-WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT | >> | msdyn_willtotalpurchdiscountcalcincludeproduct
-WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT | >> | msdyn_willtotalsalesdiscountcalcincludeproduct
-WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY | >> | msdyn_willworkcenterpickingallownegativeinvent
-YIELDPERCENTAGE | > | msdyn_yieldpercentage
-ISUNITCOSTAUTOMATICALLYUPDATED | >> | msdyn_isunitcostautomaticallyupdated
-PURCHASEUNITSYMBOL | > | msdyn_purchaseunitsymbol.msdyn_symbol
-PURCHASEPRICEQUANTITY | > | msdyn_purchasepricequantity
-ISUNITCOSTINCLUDINGCHARGES | >> | msdyn_isunitcostincludingcharges
-FIXEDCOSTCHARGES | >> | msdyn_fixedcostcharges
-MINIMUMCATCHWEIGHTQUANTITY | >> | msdyn_minimumcatchweightquantity
-MAXIMUMCATCHWEIGHTQUANTITY | >> | msdyn_maximumcatchweightquantity
-ALTERNATIVEITEMNUMBER | >> | msdyn_alternativeitemnumber.msdyn_itemnumber
-BOMUNITSYMBOL | >> | msdyn_bomunitsymbol.msdyn_symbol
-CATCHWEIGHTUNITSYMBOL | >> | msdyn_catchweightunitsymbol.msdyn_symbol
-COMPARISONPRICEBASEUNITSYMBOL | >> | msdyn_comparisonpricebaseunitsymbol.msdyn_symbol
-PRIMARYVENDORACCOUNTNUMBER | >> | msdyn_vendorid.msdyn_vendoraccountnumber
-ISCATCHWEIGHTPRODUCT | >> | msdyn_iscatchweight
-PRODUCTDIMENSIONGROUPNAME | >> | msdyn_productdimensiongroupid.msdyn_groupname
 
 ## All product to msdyn_global products
 
 The all products entity contains all the products available in Finance and Operations apps, both the released products and the non-released products. These products are available in the Common Data Service using the following mappings:
 
 [!include [global products](dual-write/EcoResEveryProductEntity-msdyn-globalproducts.md)]
-
-Source field | Map type | Destination field
----|---|---
-PRODUCTNAME | >> | msdyn_productname
-PRODUCTNUMBER | >> | msdyn_productnumber
 
 ## Product dimensions 
 
@@ -267,19 +136,11 @@ The possible colors in Finance and Operations apps are available in Common Data 
 
 [!include [product colors](dual-write/EcoResProductColorEntity-msdyn-productcolor.md)]
 
-Source field | Map type | Destination field
----|---|---
-COLORID | \>\> | msdyn\_productcolorname
-
 ### Sizes
 
 The possible sizes in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 [!include [product sizes](dual-write/EcoResProductSizeEntity-msdyn-productsizes.md)]
-
-Source field | Map type | Destination field
----|---|---
-SIZEID | \>\> | msdyn\_productsize
 
 ### Styles
 
@@ -287,19 +148,11 @@ The possible styles in Finance and Operations apps are available in Common Data 
 
 [!include [product sizes](dual-write/EcoResProductStyleEntity-msdyn-productstyles.md)]
 
-Source field | Map type | Destination field
----|---|---
-STYLEID | \>\> | msdyn\_productstyle
-
 ### Configurations
 
 The possible configurations in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 [!include [product sizes](dual-write/EcoResProductConfigurationsEntity-msdyn-productconfigurations.md)]
-
-Source field | Map type | Destination field
----|---|---
-CONFIGURATIONID | \>\> | msdyn\_name
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
 
@@ -311,25 +164,11 @@ The **Shared product color** entity indicates the colors that a specific product
 
 [!include [product sizes](dual-write/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTCOLORID | \>\> | msdyn\_productcolorid.msdyn\_productcolorname
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_retaildisplayorder
-
 ### Shared product size
 
 The **Shared product size** entity indicates the sizes that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 [!include [product sizes](dual-write/EcoResProductMasterSize-msdyn-sharedproductsizes.md)]
-
-Source field | Map type | Destination field
----|---|---
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
-PRODUCTSIZEID | \>\> | msdyn\_productsizeid.msdyn\_productsize
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
 
 ### Shared product style
 
@@ -337,46 +176,17 @@ The **Shared product style** entity indicates the styles that a specific product
 
 [!include [product sizes](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailsid.msdyn\_itemnumber
-PRODUCTSTYLEID | \>\> | msdyn\_productstyleintegration
-PRODUCTSTYLEID | \>\> | msdyn\_productstyleid.msdyn\_productstyle
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
-
 ### Shared product configuration
 
 The **Shared product configuration** entity indicates the configurations that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 [!include [product sizes](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
 
-Source field | Map type | Destination field
----|---|---
-CONTAINERUNITSYMBOL | \>\> | msdyn\_containerunitsymbol
-PRODUCTCONFIGURATIONID | \>\> | msdyn\_productconfigurationid.msdyn\_productconfiguration
-PRODUCTMASTERNUMBER | \>\> | msdyn\_sharedproductdetailid.msdyn\_itemnumber
-REPLENISHMENTWEIGHT | \>\> | msdyn\_replenishmentweight
-DISPLAYSEQUENCENUMBER | \>\> | msdyn\_displaysequencenumber
-
 ## Product number identifier bar codes
 
 Product bar codes are used to uniquely identify products. The following mappings are used to make these product bar codes available in Common Data Service.
 
 [!include [product sizes](dual-write/EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md)]
-
-Source field | Map type | Destination field
----|---|---
-PRODUCTNUMBER | \> | msdyn\_productnumberid.productnumber
-BARCODE | \> | msdyn\_name
-BARCODE | \> | msdyn\_barcode
-PRODUCTQUANTITY | \> | msdyn\_productquantity
-PRODUCTDESCRIPTION | \> | msdyn\_productdescription
-BARCODESETUPID | \> | msdyn\_barcodesetupid
-PRODUCTQUANTITYUNITSYMBOL | \> | msdyn\_unitofmeasureid.name
-ISDEFAULTSCANNEDBARCODE | \>\> | msdyn\_isdefaultscannedbarcode
-ISDEFAULTPRINTEDBARCODE | \>\> | msdyn\_isdefaultprintedbarcode
-ISDEFAULTDISPLAYEDBARCODE | \>\> | msdyn\_isdefaultdisplayedbarcode
 
 ## Default order settings and product specific default order settings
 
@@ -388,122 +198,11 @@ The following mappings are used to make the default order settings available in 
 
 [!include [product sizes](dual-write/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
-Source field | Map type | Destination field
----|---|---
-INVENTWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier
-INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid
-INVENTORYATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_inventoryatpdelayeddemandoffsetdays
-INVENTORYATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_inventoryatpdelayedsupplyoffsetdays
-ITEMNUMBER | = | msdyn_itemnumber.msdyn_itemnumber
-INVENTORYATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_inventoryatpbackwarddemandtimefencedays
-INVENTORYATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_inventoryatpbackwardsupplytimefencedays
-INVENTORYATPTIMEFENCEDAYS | = | msdyn_inventoryatptimefencedays
-MAXIMUMINVENTORYORDERQUANTITY | = | msdyn_maximuminventoryorderquantity
-MAXIMUMPROCUREMENTORDERQUANTITY | = | msdyn_maximumprocurementorderquantity
-MAXIMUMSALESORDERQUANTITY | = | msdyn_maximumsalesorderquantity
-MINIMUMINVENTORYORDERQUANTITY | = | msdyn_minimuminventoryorderquantity
-MINIMUMPROCUREMENTORDERQUANTITY | = | msdyn_minimumprocurementorderquantity
-MINIMUMSALESORDERQUANTITY | = | msdyn_minimumsalesorderquantity
-STANDARDINVENTORYORDERQUANTITY | = | msdyn_standardinventoryorderquantity
-STANDARDPROCUREMENTORDERQUANTITY | = | msdyn_standardprocurementorderquantity
-STANDARDSALESORDERQUANTITY | = | msdyn_standardsalesorderquantity
-INVENTORYLEADTIMEDAYS | = | msdyn_inventoryleadtimedays
-INVENTORYQUANTITYMULTIPLES | = | msdyn_inventoryquantitymultiples
-PROCUREMENTQUANTITYMULTIPLES | = | msdyn_procurementquantitymultiples
-SALESQUANTITYMULTIPLES | = | msdyn_salesquantitymultiples
-PROCUREMENTSITEID | = | msdyn_procurementsite.msdyn_siteid
-PROCUREMENTLEADTIMEDAYS | = | msdyn_procurementleadtimedays
-SALESSITEID | = | msdyn_salessite.msdyn_siteid
-SALESATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_salesatpdelayeddemandoffsetdays
-SALESATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_salesatpdelayedsupplyoffsetdays
-SALESATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_salesatpbackwarddemandtimefencedays
-SALESATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_salesatpbackwardsupplytimefencedays
-SALESATPTIMEFENCEDAYS | = | msdyn_salesatptimefencedays
-SALESLEADTIMEDAYS | = | msdyn_salesleadtimedays
-PROCUREMENTWAREHOUSEID | = | msdyn_procurementwarehouse.msdyn_warehouseidentifier
-SALESWAREHOUSEID | = | msdyn_saleswarehouse.msdyn_warehouseidentifier
-AREINVENTORYORDERPROMISINGDEFAULTSOVERRIDDEN | >< | msdyn_areinventoryorderdefaultsoverridden
-INVENTORYORDERPROMISINGMETHOD | >< | msdyn_inventoryorderpromisingmethod
-ISINVENTORYATPINCLUDINGPLANNEDORDERS | >< | msdyn_isinventoryatpincludingplannedorders
-ISINVENTORYUSINGWORKINGDAYS | >< | msdyn_isinventoryusingworkingdays
-ISINVENTORYSITEMANDATORY | >< | msdyn_isinventorysitemandatory
-ISINVENTORYPROCESSINGSTOPPED | >< | msdyn_isinventoryprocessingstopped
-ISPROCUREMENTUSINGWORKINGDAYS | >< | msdyn_isprocurementusingworkingdays
-ISPROCUREMENTSITEMANDATORY | >< | msdyn_isprocurementsitemandatory
-ISPROCUREMENTPROCESSINGSTOPPED | >< | msdyn_isprocurementprocessingstopped
-ARESALESORDERPROMISINGDEFAULTSOVERRIDDEN | >< | msdyn_aresalesorderdefaultsoverridden
-SALESORDERPROMISINGMETHOD | >< | msdyn_salesorderpromisingmethod
-ISSALESATPINCLUDINGPLANNEDORDERS | >< | msdyn_issalesatpincludingplannedorders
-ISSALESSITEMANDATORY | >< | msdyn_issalessitemandatory
-ISSALESLEADTIMEOVERRIDDEN | >< | msdyn_issalesleadtimeoverridden
-ISSALESPROCESSINGSTOPPED | >< | msdyn_issalesprocessingstopped
-ISINVENTORYWAREHOUSEMANDATORY | >< | msdyn_isinventorywarehousemandatory
-ISPROCUREMENTWAREHOUSEMANDATORY | >< | msdyn_isprocurementwarehousemandatory
-ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
-
 ### Product specific default order settings
 
 The following mappings are used to make the product specific default order settings available in Common Data Service.
 
 [!include [product sizes](dual-write/InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md)]
-
-Source field | Map type | Destination field
----|---|---
-INVENTORYWAREHOUSEID | = | msdyn_inventorywarehouse.msdyn_warehouseidentifier
-INVENTORYSITEID | = | msdyn_inventorysite.msdyn_siteid
-INVENTORYATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_inventoryatpdelayeddemandoffsetdays
-INVENTORYATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_inventoryatpdelayedsupplyoffsetdays
-ITEMNUMBER | = | msdyn_itemnumber.msdyn_itemnumber
-INVENTORYATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_inventoryatpbackwarddemandtimefencedays
-INVENTORYATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_inventoryatpbackwardsupplytimefencedays
-INVENTORYATPTIMEFENCEDAYS | = | msdyn_inventoryatptimefencedays
-MAXIMUMINVENTORYORDERQUANTITY | = | msdyn_maximuminventoryorderquantity
-MAXIMUMPROCUREMENTORDERQUANTITY | = | msdyn_maximumprocurementorderquantity
-MAXIMUMSALESORDERQUANTITY | = | msdyn_maximumsalesorderquantity
-MINIMUMINVENTORYORDERQUANTITY | = | msdyn_minimuminventoryorderquantity
-MINIMUMPROCUREMENTORDERQUANTITY | = | msdyn_minimumprocurementorderquantity
-MINIMUMSALESORDERQUANTITY | = | msdyn_minimumsalesorderquantity
-STANDARDINVENTORYORDERQUANTITY | = | msdyn_standardinventoryorderquantity
-STANDARDPROCUREMENTORDERQUANTITY | = | msdyn_standardprocurementorderquantity
-STANDARDSALESORDERQUANTITY | = | msdyn_standardsalesorderquantity
-INVENTORYLEADTIMEDAYS | = | msdyn_inventoryleadtimedays
-INVENTORYQUANTITYMULTIPLES | = | msdyn_inventoryquantitymultiples
-PROCUREMENTQUANTITYMULTIPLES | = | msdyn_procurementquantitymultiples
-SALESQUANTITYMULTIPLES | = | msdyn_salesquantitymultiples
-PROCUREMENTSITEID | = | msdyn_procurementsite.msdyn_siteid
-PROCUREMENTLEADTIMEDAYS | = | msdyn_procurementleadtimedays
-SALESSITEID | = | msdyn_salessite.msdyn_siteid
-SALESATPDELAYEDDEMANDOFFSETDAYS | = | msdyn_salesatpdelayeddemandoffsetdays
-SALESATPDELAYEDSUPPLYOFFSETDAYS | = | msdyn_salesatpdelayedsupplyoffsetdays
-SALESATPBACKWARDDEMANDTIMEFENCEDAYS | = | msdyn_salesatpbackwarddemandtimefencedays
-SALESATPBACKWARDSUPPLYTIMEFENCEDAYS | = | msdyn_salesatpbackwardsupplytimefencedays
-SALESATPTIMEFENCEDAYS | = | msdyn_salesatptimefencedays
-SALESLEADTIMEDAYS | = | msdyn_salesleadtimedays
-PROCUREMENTWAREHOUSEID | = | msdyn_procurementwarehouse.msdyn_warehouseidentifier
-SALESWAREHOUSEID | = | msdyn_saleswarehouse.msdyn_warehouseidentifier
-AREINVENTORYDEFAULTORDERSETTINGSOVERRIDDEN | >< | msdyn_areinventoryorderdefaultsoverridden
-INVENTORYORDERPROMISINGMETHOD | >< | msdyn_inventoryorderpromisingmethod
-ISINVENTORYATPINCLUDINGPLANNEDORDERS | >< | msdyn_isinventoryatpincludingplannedorders
-ISINVENTORYUSINGWORKINGDAYS | >< | msdyn_isinventoryusingworkingdays
-ISINVENTORYSITEMANDATORY | >< | msdyn_isinventorysitemandatory
-ISINVENTORYPROCESSINGSTOPPED | >< | msdyn_isinventoryprocessingstopped
-ISPROCUREMENTUSINGWORKINGDAYS | >< | msdyn_isprocurementusingworkingdays
-ISPROCUREMENTSITEMANDATORY | >< | msdyn_isprocurementsitemandatory
-ISPROCUREMENTPROCESSINGSTOPPED | >< | msdyn_isprocurementprocessingstopped
-ARESALESDEFAULTORDERSETTINGSOVERRIDDEN | >< | msdyn_aresalesorderdefaultsoverridden
-SALESORDERPROMISINGMETHOD | >< | msdyn_salesorderpromisingmethod
-ISSALESATPINCLUDINGPLANNEDORDERS | >< | msdyn_issalesatpincludingplannedorders
-ISSALESSITEMANDATORY | >< | msdyn_issalessitemandatory
-ISSALESLEADTIMEOVERRIDDEN | >< | msdyn_issalesleadtimeoverridden
-ISSALESPROCESSINGSTOPPED | >< | msdyn_issalesprocessingstopped
-ISINVENTORYWAREHOUSEMANDATORY | >< | msdyn_isinventorywarehousemandatory
-ISPROCUREMENTWAREHOUSEMANDATORY | >< | msdyn_isprocurementwarehousemandatory
-ISSALESWAREHOUSEMANDATORY | >< | msdyn_issaleswarehousemandatory
-OPERATIONALSITEID | = | msdyn_operationalsite.msdyn_siteid
-PRODUCTCOLORID | = | msdyn_productcolor.msdyn_productcolorname
-PRODUCTCONFIGURATIONID | = | msdyn_productconfiguration.msdyn_productconfiguration
-PRODUCTSIZEID | = | msdyn_productsize.msdyn_productsize
-PRODUCTSTYLEID | = | msdyn_productstyle.msdyn_productstyle
 
 ## Unit of measure and unit of measure conversions
 
@@ -519,51 +218,17 @@ The following mappings are used to make the units of measure in Finance and Oper
 
 [!include [product sizes](dual-write/UnitOfMeasureEntity-uom.md)]
 
-Source field | Map type | Destination field
----|---|---
-UNITSYMBOL | >> | msdyn_symbol
-UNITCLASS | >> | msdyn_externalunitclassname
-DECIMALPRECISION | >> | msdyn_decimalprecision
-ISBASEUNIT | >> | msdyn_isbaseunit
-ISSYSTEMUNIT | >> | msdyn_issystemunit
-SYSTEMOFUNITS | >> | msdyn_systemofunits
-UNITSYMBOL | >> | name
-UNITDESCRIPTION | >> | msdyn_description
-
 ### Unit of measure conversions
 
 The following mappings are used to make the units of measure conversions in Finance and Operations apps available in Common Data Service.
 
 [!include [product sizes](dual-write/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-Source field | Map type | Destination field
----|---|---
-DENOMINATOR | = | msdyn_denominator
-NUMERATOR | = | msdyn_numerator
-FACTOR | = | msdyn_factor
-INNEROFFSET | = | msdyn_inneroffset
-OUTEROFFSET | = | msdyn_outeroffset
-ROUNDING | >< | msdyn_rounding
-TOUNITSYMBOL | = | msdyn_tounit.msdyn_symbol
-FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
-
 ### Product specific unit of measure conversions
 
 The following mappings are used to make the product specific unit of measure conversions in Finance and Operations apps available in Common Data Service.
 
 [!include [product sizes](dual-write/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
-
-Source field | Map type | Destination field
----|---|---
-DENOMINATOR | = | msdyn_denominator
-NUMERATOR | = | msdyn_numerator
-FACTOR | = | msdyn_factor
-FROMUNITSYMBOL | = | msdyn_fromunit.msdyn_symbol
-TOUNITSYMBOL | = | msdyn_tounit.msdyn_symbol
-PRODUCTNUMBER | = | msdyn_globalproduct.msdyn_productnumber
-INNEROFFSET | = | msdyn_inneroffset
-OUTEROFFSET | = | msdyn_outeroffset
-ROUNDING | >< | msdyn_rounding
 
 ### Initial synchronization of units data matching between Finance and Operations
 and CDS**
@@ -605,23 +270,6 @@ The product dimension group defined which product dimensions define the product.
 
 [!include [product dimension group](dual-write/EcoResProductDimensionGroup-msdyn-productdimensiongroups.md)]
 
-Source field | Map type | Destination field
----|---|---
-WILLSALESPRICESEARCHUSEPRODUCTSTYLE | >< | msdyn_willsalespricesearchuseproductstyle
-WILLPURCHASEPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willpurchasepricesearchuseproductsize
-WILLSALESPRICESEARCHUSEPRODUCTCONFIGURATION | >< | msdyn_willsalespricesearchuseprodconfig
-WILLSALESPRICESEARCHUSEPRODUCTCOLOR | >< | msdyn_willsalespricesearchuseproductcolor
-WILLPURCHASEPRICESEARCHUSEPRODUCTSTYLE | >< | msdyn_willpurchasepricesearchuseproductstyle
-WILLPURCHASEPRICESEARCHUSEPRODUCTCONFIGURATION | >< | msdyn_willpurchpricesearchuseprodconfig
-WILLPURCHASEPRICESEARCHUSEPRODUCTCOLOR | >< | msdyn_willpurchpricesearchuseproductcolor
-ISPRODUCTSTYLEACTIVE | >< | msdyn_isproductstyleactive
-ISPRODUCTSIZEACTIVE | >< | msdyn_isproductsizeactive
-ISPRODUCTCONFIGURATIONACTIVE | >< | msdyn_isproductconfigurationactive
-ISPRODUCTCOLORACTIVE | >< | msdyn_isproductcoloractive
-GROUPNAME | = | msdyn_groupname
-GROUPDESCRIPTION | = | msdyn_groupdescription
-PRODUCTVARIANTNOMENCLATURENAME | = | msdyn_productvariantnomenclaturename
-WILLSALESPRICESEARCHUSEPRODUCTSIZE | >< | msdyn_willsalespricesearchuseproductsize
 
 ### Product tracking dimension group
 
@@ -629,33 +277,6 @@ The product tracking dimension group represents the method used to track the pro
 
 [!include [product tracking dimension group](dual-write/EcoResTrackingDimensionGroup-msdyn-producttrackingdimensiongroups.md)]
 
-Source field | Map type | Destination field
----|---|---
-SERIALNUMBERCAPTURINGOPERATION | >< | msdyn_serialnumbercapturingoperation
-GROUPNAME | = | msdyn_groupname
-GROUPDESCRIPTION | = | msdyn_groupdescription
-ISSERIALNUMBERENABLEDFORPRODUCTIONCONSUMPTIONPROCESS | >< | msdyn_issnenabledforpcprocess
-ISSERIALNUMBERCONTROLENABLED | >< | msdyn_isserialnumbercontrolenabled
-ISSERIALNUMBERENABLEDFORSALESPROCESS | >< | msdyn_isserialnumberenabledforsalesprocess
-ISSERIALNUMBERACTIVE | >< | msdyn_isserialnumberactive
-ISSALESPRICEBYSERIALNUMBER | >< | msdyn_issalespricebyserialnumber
-ISSALESPRICEBYBATCHNUMBER | >< | msdyn_issalespricebybatchnumber
-ISPURCHASEPRICEBYSERIALNUMBER | >< | msdyn_ispurchasepricebyserialnumber
-ISPURCHASEPRICEBYBATCHNUMBER | >< | msdyn_ispurchasepricebybatchnumber
-ISPRIMARYSTOCKINGENABLEDFORSERIALNUMBER | >< | msdyn_isprimarystockingenabledforsn
-ISPRIMARYSTOCKINGENABLEDFORBATCHNUMBER | >< | msdyn_isprimarystockingenabledforbn
-ISPHYSICALINVENTORYENABLEDFORSERIALNUMBER | >< | msdyn_isphysicalinventoryenabledforsn
-ISPHYSICALINVENTORYENABLEDFORBATCHNUMBER | >< | msdyn_isphysicalinventoryenabledforbn
-ISFINANCIALINVENTORYENABLEDFORSERIALNUMBER | >< | msdyn_isfinancialinventoryenabledforsn
-ISFINANCIALINVENTORYENABLEDFORBATCHNUMBER | >< | msdyn_isfinancialinventoryenabledforbn
-ISCOVERAGEPLANENABLEDFORSERIALNUMBER | >< | msdyn_iscoverageplanenabledforserialnumber
-ISCOVERAGEPLANENABLEDFORBATCHNUMBER | >< | msdyn_iscoverageplanenabledforbatchnumber
-ISBLANKRECEIPTALLOWEDFORSERIALNUMBER | >< | msdyn_isblankreceiptallowedforserialnumber
-ISBLANKRECEIPTALLOWEDFORBATCHNUMBER | >< | msdyn_isblankreceiptallowedforbatchnumber
-ISBLANKISSUEALLOWEDFORSERIALNUMBER | >< | msdyn_isblankissueallowedforserialnumber
-ISBLANKISSUEALLOWEDFORBATCHNUMBER | >< | msdyn_isblankissueallowedforbatchnumber
-ISBATCHNUMBERACTIVE | >< | msdyn_isbatchnumberactive
-ISINVENTORYOWNERACTIVE | >< | msdyn_isinventoryowneractive
 
 ### Product storage dimension group
 
@@ -663,28 +284,6 @@ The product storage dimension group represents the method used to define the pla
 
 [!include [product storage dimension group](dual-write/EcoResStorageDimensionGroup-msdyn-productstoragedimensiongroups.md)]
 
-Source field | Map type | Destination field
----|---|---
-WILLSALESPRICESEARCHUSEWAREHOUSE | >< | msdyn_willsalespricesearchusewarehouse
-WILLSALESPRICESEARCHUSESITE | >< | msdyn_willsalespricesearchusesite
-WILLSALESPRICESEARCHUSEINVENTORYSTATUS | >< | msdyn_willsalespricesearchuseinventorystatus
-WILLPURCHASEPRICESEARCHUSEWAREHOUSE | >< | msdyn_willpurchasepricesearchusewarehouse
-WILLPURCHASEPRICESEARCHUSESITE | >< | msdyn_willpurchasepricesearchusesite
-WILLPURCHASEPRICESEARCHUSEINVENTORYSTATUS | >< | msdyn_willpurchpricesearchuseinventstatus
-WILLCOVERAGEPLANNINGUSEWAREHOUSE | >< | msdyn_willcoverageplanusewarehouse
-WILLCOVERAGEPLANNINGUSELOCATION | >< | msdyn_iscoverageplanenabledforlocation
-WILLCOVERAGEPLANNINGUSEINVENTORYSTATUS | >< | msdyn_willcoverageplanuseinventorystatus
-AREADVANCEDWAREHOUSEMANAGEMENTPROCESSESENABLED | >< | msdyn_areadvancedwmprocessesenabled
-ISWAREHOUSEPRIMARYSTORAGEDIMENSION | >< | msdyn_iswarehouseprimarystoragedimension
-ISWAREHOUSEMANDATORY | >< | msdyn_iswarehousemandatory
-ISPHYSICALINVENTORYENABLEDFORWAREHOUSE | >< | msdyn_isphysicalinventoryenabledforwarehouse
-ISPHYSICALINVENTORYENABLEDFORLOCATION | >< | msdyn_isphysicalinventoryenabledforlocation
-ISLOCATIONACTIVE | >< | msdyn_islocationactive
-ISFINANCIALINVENTORYENABLEDFORWAREHOUSE | >< | msdyn_isfinancialinventoryenabledforwarehouse
-GROUPNAME | = | msdyn_groupname
-GROUPDESCRIPTION | = | msdyn_groupdescription
-ISBLANKRECEIPTALLOWEDFORLOCATION | >< | msdyn_isblankreceiptallowedforlocation
-ISBLANKISSUEALLOWEDFORLOCATION | >< | msdyn_isblankissueallowedforlocation
 
 ## Product hierarchies
 
@@ -696,31 +295,12 @@ The category hierarchies are available in CDS using the Prodcut category hierarc
 
 [!include [product category hierarchy](dual-write/EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md)]
 
-Source field | Map type | Destination field
----|---|---
-HIERARCHYNAME | = | msdyn_name
-HIERARCHYDESCRIPTION | = | msdyn_description
-
 ### Product category
 
 Each of the product categories and information about its structure and characteristics are contained in the product category entity. The mappings are shown in the table below. 
 
 [!include [product category](dual-write/EcoResProductCategoryEntity-msdyn-productcategory.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_hierarchy.msdyn_name
-ISCATEGORYINHERITINGPARENTPRODUCTATTRIBUTES | >< | msdyn_isinheritingparentproductattributes
-PROJECTCATEGORYNAME | = | msdyn_projectcategoryname
-ISTANGIBLEPRODUCT | >< | msdyn_istangibleproduct
-ISCATEGORYINHERITINGPARENTCATEGORYATTRIBUTES | >< | msdyn_isinheritingparentcategoryattributes
-CATEGORYCODE | = | msdyn_code
-CATEGORYDESCRIPTION | = | msdyn_description
-CATEGORYKEYWORDS | = | msdyn_keywords
-CATEGORYNAME | = | msdyn_name
-FRIENDLYCATEGORYNAME | = | msdyn_friendlycategoryname
-PARENTPRODUCTCATEGORYNAME | = | msdyn_parentproductcategory.msdyn_name
-PRODUCTCATEGORYHIERARCHYNAME | >> | msdyn_parentproductcategory.msdyn_hierarchy.msdyn_name
 
 ### Product category assignments
 
@@ -728,23 +308,12 @@ To assign a product to a category the product category assignments entity can be
 
 [!include [product category assignments](dual-write/EcoResProductCategoryAssignmentEntity-msdyn-productcategoryassignment.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTNUMBER | = | msdyn_globalproduct.msdyn_productnumber
-PRODUCTCATEGORYNAME | = | msdyn_productcategory.msdyn_name
-PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_productcategory.msdyn_hierarchy.msdyn_name
-PRODUCTNUMBER | >> | msdyn_name
-
 ### Product category role
 
 Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
 
 [!include [product category role](dual-write/EcoResProductCategoryHierarchyRoleEntity-msdyn-productcategoryhierarchyrole.md)]
 
-Source field | Map type | Destination field
----|---|---
-PRODUCTCATEGORYHIERARCHYNAME | = | msdyn_hierarchy.msdyn_name
-HIERARCHYROLE | >< | msdyn_hierarchyrole
 
 ## Integration key for products 
 
