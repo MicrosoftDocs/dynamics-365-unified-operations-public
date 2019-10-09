@@ -92,7 +92,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
     [![Certificate in PerfSDK\\PerfS folder](./media/multi-user-test-local-05.png)](./media/multi-user-test-local-05.png)
 
-6. Replace the **setup.md** file in the **Visual Studio Online** folder by running the following commands.
+6. Replace the **setup.md** file in the **Visual Studio Online** folder with the following.
 
     ```
     setx testroot "%DeploymentDirectory%"
