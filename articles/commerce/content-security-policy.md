@@ -37,15 +37,13 @@ This topic describes how to configure and enable Content Security Policy (CSP) i
 
 ## Overview
 
-Enabling CSP enhances the security of an e-Commerce site by blocking connections, scripts, fonts, etc. from unknown sources.
+Content Security Policy (CSP) is an additional layer of security that helps to detect and mitigate certain types of web attacks, the purpose of which can be anything from data theft to site defacement to distribution of malware. CSP provides an extensive set of policy directives that enable you to control the resources that a page is allowed to load. Each directive defines the restrictions for a particular resource type.
 
-The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. This allow list can also be extended on the Dynamics 365 Commerce **Extensibility** page.  
-
-CSP in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. 
+Enabling CSP for an e-Commerce site enhances security by blocking connections, scripts, fonts, and other types of resources that originate from unknown or malicious sources. CSP in Dynamics 365 Commerce is enabled by default and will likely require some additional configuration for most sites. The Dynamics 365 Commerce online SDK provides a default list of allowed source URLs from which style, script, and API calls can be made. This list can be modified on the Dynamics 365 Commerce Extensibility page.
 
 For more details on CSP, see the [Content Security Policy Reference](https://content-security-policy.com/).
 
-## CSP directives
+## CSP directives in Dynamics 365 Commerce
 
 The following CSP directives are available for use on Dynamics 365 Commerce sites.
 
