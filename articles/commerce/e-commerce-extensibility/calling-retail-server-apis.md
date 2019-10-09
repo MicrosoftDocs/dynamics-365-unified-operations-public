@@ -95,7 +95,7 @@ For an entire list of all available Retail API's within each Data Action Manager
 
 The Retail Server proxy is closely tied to the [Data Action Framework](./data-actions), so for every Retail Server API, there are two exposed Retail Server proxy methods:
 
-- **The createInput method**: This method will always be named **create{RETAIL_SERVER_API_NAME}Input**. This method will create an `IActionInput`, which can be used to either run a [Page-load Data Action](./page-load-data-actions) or do direct state updating/fetching via the `actionContext.update()**` or `actionContext.get()` methods.
+- **The createInput method**: This method will always be named **create{RETAIL_SERVER_API_NAME}Input**. This method will create an `IActionInput` class, which can be used to either run a [Page-load Data Action](./page-load-data-actions) or do direct state updating/fetching via the `actionContext.update()` or `actionContext.get()` methods.
 
 - **The action method**: This method will always be named **{RETAIL_SERVER_API_NAME}Async**. This method can be invoked on its own as an [Event-based Data Action](./event-based-data-actions), or added inside another action method to create a [Data Action Chain](./chain-data-actions).
 
