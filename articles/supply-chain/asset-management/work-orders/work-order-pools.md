@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 You can use work order pools to group work orders that have something in common. For example, you can create work order pools for

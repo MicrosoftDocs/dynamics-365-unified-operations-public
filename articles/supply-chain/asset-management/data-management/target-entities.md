@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In **Dynamics 365 for Finance and Operations** > **Data management** workspace, you can get an overview of target entities, related entity types and staging tables related to the **Asset management** module. 
 

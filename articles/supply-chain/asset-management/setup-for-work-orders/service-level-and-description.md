@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 When you create a work order, you might want to define the service levels for it and add a general description to it. You can create work order service levels on the **Work order service levels** page and descriptions on the **Work order description** page.
 
