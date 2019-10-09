@@ -3,9 +3,9 @@
 
 title: Integrated sites and warehouses
 description: This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service.
-author: LaneSwenka 
+author: t-benebo
 manager: AnnBe
-ms.date: 15/8/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

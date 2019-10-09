@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic explains how you can create a list of asset items that can be used as a basis for creating assets for maintenance jobs in Asset Management. Based on the asset items, you are able to view a list of the purchase order lines that have been created on those items. The purpose of this functionality is to easily create an asset in Asset Management based on a purchase order.
 

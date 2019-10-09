@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 You can create maintenance downtime registrations on the asset selected on a work order. This is useful if you want to register maintenance downtime on one or more machines in the production area. First, you create the maintenance downtime reason codes that you want to use, for example, breakdown and planned stop. This is done in **Maintenance downtime reason codes**. Next, you can create maintenance downtime registrations in **Maintenance downtime** and add the relevant reason codes.
 

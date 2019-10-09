@@ -5,7 +5,7 @@ title: Deploy high-availability environments on Azure
 description: This article explains how to deploy a high availability environment on Microsoft Azure. To deploy the environment, you’ll use the Cloud-hosted environments tool in Microsoft Dynamics Lifecycle Services. 
 author: kfend
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -430,6 +430,7 @@ The high availability environment includes an availability set for each tier of 
 ### Install the data import/export framework and RapidStart Connector
 
 For high availability, the **Data import/export framework** and the **RapidStart Connector** should be installed on all virtual machines that are AOS servers. You may need to install these components. For instructions, see: • [Install the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-dixf-dmf) • [Install the RapidStart Connector](https://technet.microsoft.com/library/hh771574.aspx)
+
 
 ### Configure Microsoft SQL Server Reporting Services for load balancing
 

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic explains how to schedule work orders in Asset Management. The required number of hours for a work order is defined by the sum of forecasted hours on the work order jobs minus posted hours. If more time is required, the forecast on the work order must be adjusted accordingly. In **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**, you can view or edit forecasts on a work order by selecting the work order and clicking **Forecast** on the **Work order** tab. When work orders have been created and estimated, next step is to allocate the required maintenance workers and tools to complete the work orders.
 
