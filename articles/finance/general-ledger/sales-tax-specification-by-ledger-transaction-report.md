@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 10.0.6
 
 # Sales tax specification by ledger transaction report
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to use the **Sales tax specification by ledger transaction** report to view and print information about ledger transactions that sales tax is calculated for.
 
