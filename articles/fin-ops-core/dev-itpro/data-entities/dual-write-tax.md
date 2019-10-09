@@ -3,7 +3,7 @@
 
 title: Integrated tax
 description: This topic describes the integration of tax data between Finance and Operations and Common Data Service.
-author:  
+author: robinarh
 manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
@@ -36,16 +36,15 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-When a business ecosystem is made up of Dynamics 365 applications including Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement, it's natural for customers to use a shared tax setup to enable the unified product experience. 
-For example, customers manage their field service business with Dynamics 365 for Field Service, and process invoicing, payment, tax payment, tax return etc. in Dynamics 365 for Finance and Operations. With shared tax setup, a work order in Field Service can be synced with a sales order in Finance and Operations with tax. On the other hand, regardless of where the tax setup record originates, it's integrated behind the scenes across application boundaries and infrastructure differences. Integrated tax setup helps handle multi-mastering scenarios and provides a comprehensive view of the tax setup to the Dynamics 365 application suite.
+When a business ecosystem is made up of Dynamics 365 apps, it's natural for customers to use a shared tax setup to enable the unified product experience. For example, customers manage their field service business with Dynamics 365 Field Service, and process invoicing, payment, tax payment, tax return etc. in Dynamics 365 Finance. With shared tax setup, a work order in Field Service can be synced with a sales order in Finance with tax. On the other hand, regardless of where the tax setup record originates, it's integrated behind the scenes across app boundaries and infrastructure differences. Integrated tax setup helps handle multi-mastering scenarios and provides a comprehensive view of the tax setup.
 
 ## Data flow
 
-Tax code is a well-defined concept in both Finance and Operations and Customer Engagement. In Finance and Operations, there are Sales tax group and Item Sales tax group which are attached to party and item, while in Customer Engagement, tax group is just a special tax code.
+Tax code is a well-defined concept in both Finance and other Dynamics 365 apps. In Finance, there is a Sales tax group and an Item Sales tax group that are attached to party and item, while in other Dynamics 365 apps, tax group is a special tax code.
 
 ## Templates
 
-Tax data includes ... A collection of entity maps works together during data interaction, as shown in the following table.
+Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.
 
 Finance and Operations   | Customer Engagement application
 -------------------------|---------------------------------
