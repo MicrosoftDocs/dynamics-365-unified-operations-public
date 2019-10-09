@@ -47,7 +47,7 @@ The following changes are introduced in version 3.3 of the Comprobante Fiscal Di
     - **SAT product code** – Use this classification for scenarios where the item code isn't identified.
     - **SAT unit code** – Use this classification for scenarios where the unit of measure isn't identified.
     
-## Foreign trade 
+### Foreign trade 
 
 If your organization uses electronic invoices for foreign trade business (CFDI), enable the following information in the CFDI foreign trade area of the Electronic invoice parameters
 The following changes are introduced as part of generation of CFDI foreign trade complement
@@ -58,7 +58,7 @@ The following changes are introduced as part of generation of CFDI foreign trade
 -**CFDI Foregn trade XML schema file:** Path and schema file to validate the CFDI foreign trade complement
 -**Brand:** Use this field to introduce the brand for scenarios where the product or service is not identified as a Microsoft Dynamics AX item code
 
-## CFDI witholding documents
+### CFDI witholding documents
 If your organization uses electronic invoicwithholding documents es that are validated and certified by a third-party digital signature service provider (PAC), you enable electronic invoicing by using the fields in the **CFDI Withholding** and **Number sequences** area of the **Electronic invoice parameters** page.
 
 -**Enable CFDI witholding:** Select Yes to enable the generation of CFDI withholding
@@ -313,3 +313,40 @@ The confirmation number is required on a CFDI invoice when the total amount of t
 
 - If the company knows that the limits have been exceeded, you can include the confirmation code on the sales invoice transaction header.
 - If you receive a rejection from PAC because the limits have been exceeded, you can set the confirmation code for the approval process at **CFDI electronic invoice inquire** &gt; **Functions** &gt; **Set authorization code and Resend again**.
+
+## CFDI Foreign trade
+When you post a sales order, free text invoice, credit note, return order, project invoice, or project sales order as an electronic invoice CFDI layout 3.3 for a foreign customer, you will able to generate the foreign trade complement 1.1 by introducing the following information that is required for the generation of this complement. 
+
+**Sales order header**
+- Purpose: You must select the option P01 otherwise you will get a rejection from PAC services
+
+- Incoterm: Select the incoterm code established by the government in the catalog cIncoterm
+
+- Foreign trade: Mark this field to generate CFDI foreign trade complement
+
+- Source certificate: Use this option . The selection will depend on free trade agreements that the Mexican government has with different countries:
+		-Unmarked (0): No certificate is required
+		-Marked (1): Certificate is required 
+- Certificate: Certificate number in case of source certificate has been defined as marked (1)
+
+	
+Note: Registration number and fiscal address fields are used to submit CFDI packing slip with foreign complement. Please refer to CFDI packing slip foreign complement feature
+
+**Line**
+-CFDI electronic invoice:
+
+   - Consignment
+   
+   - Samples
+   
+   - Tariff Fraction: Select the tariff fraction code established by the government in the catalog cFraccionArancelaria.
+   
+   - Custom unit of measure: Select the custom unit of measure code established by the government in the catalog cUnidadAduana.
+   
+- Brand: Select the related brand. This information is defaulted from product information in case of Sales order and from electronic invoice parameters when free text invoice and project is used.
+
+- Product: Tracking dimensions > Serial number: Mandatory information to specify the serial number of goods. 
+	
+After you completed all the required information, you need to proceed with the regular process of CFDI 3.3 invoice generation. Please refer to CFDI 3.3 invoice layout feature recently released.
+
+
