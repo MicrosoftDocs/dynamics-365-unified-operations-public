@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
-# CIAP fixed asset
+# Acquire and dispose a CIAP fixed asset
 
 [!include [banner](../includes/banner.md)]
 

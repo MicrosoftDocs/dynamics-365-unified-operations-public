@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
-# View an expense report
+# View an expense report from General ledger or Procurement and sourcing
 
 [!include [banner](../includes/banner.md)]
 

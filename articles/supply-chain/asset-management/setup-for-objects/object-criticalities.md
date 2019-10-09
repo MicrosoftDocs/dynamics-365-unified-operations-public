@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset criticalities
+# Asset criticality types
 
 [!include [banner](../../includes/banner.md)]
 
@@ -48,7 +48,7 @@ To set up criticality, you first create the criticality types that should be use
 4. In the **Name** field, enter a name for the criticality type.
 5. In the **Factor** field, enter a factor. This factor is used during the calculation of work order scheduling to determine the criticality record that should be used. (The record that has the highest factor is always used.) This setting is relevant if, as shown in the following illustration, criticality lines are created that have the same criticality value.
 
-    ![Figure 1](media/23-setup-for-objects.png)
+    ![Criticality types page](media/23-setup-for-objects.png)
 
 ## Set up asset criticalities
 

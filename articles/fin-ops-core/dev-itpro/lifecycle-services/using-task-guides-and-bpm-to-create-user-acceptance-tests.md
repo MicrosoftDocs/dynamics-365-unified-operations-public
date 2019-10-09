@@ -170,7 +170,7 @@ We recommend that you take advantage of Azure DevOps as it provides a rich set o
 
 ### Run automated test cases
 
-The Dynamics 365 Finance and Operations platform provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
+The platform for Finance and Operations provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
 
 Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md).
 
@@ -184,8 +184,8 @@ To learn more about using the Regression suite automation tool, see the followin
  
 For a hands-on lab experience, see the following topics:
 
-- [Set up and install Regression suite automation tool](../../fin-and-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Use Regression suite automation tool](../../fin-and-ops/get-started/hol-use-regression-suite-automation-tool.md)
+- [Set up and install Regression suite automation tool](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
+- [Use Regression suite automation tool](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.

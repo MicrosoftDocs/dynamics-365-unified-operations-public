@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Finance and Operations version 10.0.5 (October 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.5. This version will be released in October.
+title: What's new or changed in Finance and Operations apps version 10.0.5 (October 2019)
+description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.5. This version releases in October.
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,12 +29,12 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# What's new or changed in Finance and Operations version 10.0.5 (October 2019)
+# What's new or changed in Finance and Operations apps version 10.0.5 (October 2019)
 
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
+This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
 
 To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [Preview features in Dynamics 365 for Retail version 10.0.5](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-5).
@@ -76,7 +76,7 @@ This feature helps you control the currency (either the accounting or reporting 
 
 You can now define the currency gender. On **Currencies** page, select **Declension**. In the **Gender** field, select **Masculine**, **Feminine**, or **Neuter**. This parameter may have influence on declension of the amount written in text in local language on a Cash order. For example, if the amount of 1,01 EUR is written in English text as *One euro 01 cent* on a cash order, when you set up **Gender** for EUR currency as **Neuter**, this amount will be translated to Czech language and written on a cash order as *Edno euro 01 cent*.
 
-For information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms).
+For information about existing functionality, see [Update how amounts are displayed on reports and documents](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-amount-printing-forms).
 
 ## Cash control (Public Sector)
 
@@ -99,10 +99,10 @@ A new button is available on the journal page to unlock a journal that has a sta
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.5, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e).
+For information about the bug fixes included in each of the updates that are part of version 10.0.5, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=348248&dbType=3&qc=71f7c009fafc56f21399d05a7062454208256c806b7f5c706a89f4452964c26e).
 
 ### Platform update 29
-Microsoft Dynamics 365 for Finance and Operations version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [What's new or changed in Finance and Operations platform update 29 (October 2019)](whats-new-platform-update-29.md).
+Version 10.0.5 includes Platform update 29. To learn more about Platform update 29, see [What's new or changed in Platform update 29 (October 2019)](whats-new-platform-update-29.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
@@ -110,7 +110,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

@@ -5,7 +5,7 @@ title: Business intelligence (BI) and reporting home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -95,4 +95,4 @@ The following reports provide reference information about the objects:
 - [Data entities report](../data-entities/data-entities-report.md)
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
 - [SQL Server Reporting Services reports report](SSRS-report.md)
-- [Workflow types report](../../fin-and-ops/organization-administration/workflow-types-report.md)
+- [Workflow types report](../../fin-ops/organization-administration/workflow-types-report.md)

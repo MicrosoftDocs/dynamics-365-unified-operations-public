@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up vendor invoice policies
-description: This topic explains how to set up vendor invoice policies in Dynamics 365 for Finance and Operatoins. 
+description: This topic explains how to set up vendor invoice policies. 
 author: ShivamPandey-msft
 manager: AnnBe 
 ms.date: 07/11/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-This topic explains how to set up vendor invoice policies in Dynamics 365 for Finance and Operatoins. Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
+This topic explains how to set up vendor invoice policies. Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
 
 - Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.  
 - Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.  

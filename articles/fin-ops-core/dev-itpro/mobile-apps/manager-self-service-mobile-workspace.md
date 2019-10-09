@@ -33,7 +33,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic provides information about the **My team** mobile workspace. This workspace lets managers view their direct reports and extended staff. They can also send praise to individuals in their reporting chain.
 
-This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+This mobile workspace is intended to be used with the Finance and Operations mobile app.
 
 ## Overview 
 The **My team** mobile workspace lets managers perform these tasks:
@@ -58,7 +58,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 <tr class="odd">
 <td>One of the following products must be deployed in your organization:
 <ul><li>A Finance and Operations app</li>
-<li>Microsoft Dynamics 365 for Talent</li>
+<li>Microsoft Dynamics 365 Talent</li>
 </ul>
 </td>
 <td>System administrator</td>
@@ -75,7 +75,7 @@ Before you can use this mobile workspace, the following prerequisites must be me
 
 ## Download and install the mobile app
 
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

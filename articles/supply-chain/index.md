@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Supply Chain Management home page
+title: Help resources for Supply Chain Management
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
-author: ShylaThompson
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Supply Chain Management home page
+# Help resources for Supply Chain Management
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,8 @@ Go to the <a href="https://roadmap.dynamics.com/">Dynamics 365 Roadmap</a> to se
 
 Select a feature area to learn more about it.
 
-- [Cost accounting](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Asset management](asset-management/index.md)
+- [Cost accounting](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Cost management](cost-management/cost-management-home-page.md)  
 - [Inventory management](inventory/inventory-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
@@ -54,6 +55,10 @@ Select a feature area to learn more about it.
 - [Service management](service-management/service-management-home-page.md)
 - [Transportation management](transportation/transportation-management-overview.md)
 - [Warehouse management](warehousing/warehouse-configuration.md)
+
+## Dynamics 365 Finance
+
+For information on Dynamics 365 Finance, go to the [Dynamics 365 Finance help resources](../finance/index.md) page.
 
 ## Videos
 

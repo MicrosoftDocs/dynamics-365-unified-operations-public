@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
 
 ---
-# Use analytic reports
+# Use analytic reports in Microsoft Dynamics 365 Talent - Attract
 
 Analytic reports in Microsoft Dynamics 365 Talent: Attract provide an out-of-the-box (OOTB) solution for hiring process insights. Availabe features include:
 

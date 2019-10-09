@@ -41,7 +41,7 @@ This topic describes features that are either new or changed in Microsoft Dynami
 ## Set up interest distribution for cash accounts (Public Sector)
 Your agency can allocate (distribute) the interest on a bank account to specific General ledger accounts, based on the average daily balance in cash accounts. You can use this process to generate an advanced ledger entry for the interest amounts. Alternatively, you can generate the interest amounts for review, without posting them.
 
-For more information, see [Interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
+For more information, see [Set up interest distribution for cash accounts](https://go.microsoft.com/fwlink/?linkid=2088607).
 
 ## Budget analysis report (Public Sector)
 Similar to the Budget analysis inquiry, you can now use the new **Budget analysis** report to generate a summarized report that compares budgeted amounts to actual expense and revenue activity during a period that you specify. For each account, the report lists budgeted amounts, actual expenses or revenue, encumbrance amounts from purchase orders, and pre-encumbrance amounts from purchase requisitions. Additionally, the report lists the remaining budget amount for each account and fund.
@@ -49,7 +49,7 @@ Similar to the Budget analysis inquiry, you can now use the new **Budget analysi
 For more information, see [Budget analysis report](https://go.microsoft.com/fwlink/?linkid=2087447).
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Additional resources
 

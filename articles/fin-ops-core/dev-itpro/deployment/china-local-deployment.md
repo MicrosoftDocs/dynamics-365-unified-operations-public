@@ -2,7 +2,7 @@
 # required metadata
 
 title: Finance and Operations apps - operated by 21Vianet in China
-description: This topic provides information about inance and Operations apps - operated by 21Vianet in China.
+description: This topic provides information about Finance and Operations apps - operated by 21Vianet in China.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/20/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Finance and Operations - operated by 21Vianet in China
+# Finance and Operations apps - operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,9 +40,9 @@ Microsoft strives to maintain functional parity between our commercially availab
 
 ## Provisioning
 
-Customers in China have two options from which to select how they want to access Finance and Operations.
+Customers in China have two options from which to select how they want to access Finance and Operations apps.
 
-- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Operations services in China. This option provides a consistent Finance and Operations experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
+- Services operated by 21Vianet in China - 21Vianet operates and offers Finance and Operations services in China. This option provides a consistent application experience that is the same as global offerings. This option also meets the demands of customers who prefer to use online services provided by a local company that stores their data within China. These services are subject to Chinese laws.
 
 - Services operated by Microsoft – This option is for Finance and Operations customers that prefer to use services managed and delivered by Microsoft. For all new customers and existing customers, if the customer purchases Microsoft Azure, Dynamics 365, and Office using an Enterprise Agreement, Office 365 and/or Dynamics 365 can co-exist on the tenant.
 
@@ -68,11 +68,11 @@ Due to certain technical dependencies, the following features listed will not be
 
 -   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
 
--   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail store scale unit](../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
+-   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail store scale unit](../../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
 
--   [Vendor management and collaboration](../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
+-   [Vendor management and collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 
--   Certain **mobile apps** (e.g., [Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](../../financials/project-management/mobile-timesheets.md)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
+-   Certain **mobile apps** (e.g., [Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](../../../finance/project-management/project-time-entry-mobile-workspace.md)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
 
@@ -84,7 +84,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
-    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Finance and Operations Operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
+    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Finance and Operations apps operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
     
     -   [Extensibility support requests](../extensibility/extensibility-requests.md) will be unavailable.
     
@@ -92,7 +92,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
 
--   [Embedded PowerApps](../../fin-and-ops/get-started/embed-power-apps.md) and connectivity to Microsoft PowerApps and Microsoft Flow will be unavailable.
+-   [Embedded PowerApps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft PowerApps and Microsoft Flow will be unavailable.
 
 -   [Data integration by using Common Data Service](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
 
@@ -105,11 +105,11 @@ Due to certain technical dependencies, the following features listed will not be
 ## Additional resources
 
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Support for Finance and Operations - operated by 21Vianet](../lifecycle-services/21vianet-support.md)
+- [Support for Finance and Operations apps operated by 21Vianet](../lifecycle-services/21vianet-support.md)
 - [Dynamics 365 for Customer Engagement - operated by 21Vianet](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
-- [Dynamics 365  Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
+- [Dynamics 365 Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
 - [Service terms for Dynamics 365 Lifecycle Services](https://www.21vbluecloud.com/dynamics365/d365-lcs/)
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)

@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Attract features and capabilities
+# Microsoft Dynamics 365 Talent - Attract features and capabilities
 
 [!include [banner](includes/banner.md)]
 

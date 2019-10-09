@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 8.0
 
 This topic describes the strategy and scope for Brazilian tax, finance, and accounting laws and regulations that Microsoft has included in Microsoft Dynamics 365 Finance for Brazil. 
 
-In general, Microsoft invests significant resources on extending the business process functionality of Finance and Operations applications, by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
+In general, Microsoft invests significant resources on extending the business process functionality of Dynamics 365 Finance by developing features and functionality to address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Microsoft Dynamics generally available.
 
 The software helps organizations run their business operations while complying with country/region-specific laws, regulations, and common business practices for handling their daily activities. This software includes features and functionality that are designed to address specific federal tax, accounting, financial, or statutory reporting laws or regulations that commonly affect businesses in Brazil.
 

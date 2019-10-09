@@ -5,7 +5,7 @@ title: Support for Dynamics 365 Finance and Operations apps operated by 21Vianet
 description: Dynamics 365 Finance and Operations apps provides many self-service support options and support through 21Vianet. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/01/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,8 +39,8 @@ Dynamics 365 Finance and Operations apps provides many self-service support opti
 ## Self-help resources
 
 
-- [Dynamics 365 Finance](../../fin-and-ops/index.md)
-- [Dynamics 365 Supply Chain Management](../../supply-chain/index.md)
+- [Dynamics 365 Finance](../../fin-ops/index.md)
+- [Dynamics 365 Supply Chain Management](../../../supply-chain/index.md)
 - [Dynamics 365 Finance and Operations apps operated by 21Vianet](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn](https://docs.microsoft.com/learn/)

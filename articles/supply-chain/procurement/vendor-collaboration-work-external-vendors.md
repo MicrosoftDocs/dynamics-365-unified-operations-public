@@ -34,12 +34,12 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Finance and Operations. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
+The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 Supply Chain Management. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
 
 For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
 > [!NOTE]
-> The information about vendor collaboration in this topic applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
+> The information about vendor collaboration in this topic applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
@@ -56,7 +56,7 @@ If you must add messages in more than one language, create separate messages, an
 
 ## Setting the vendor collaboration options for a specific vendor
 
-An administrator configures the general settings for vendor collaboration in Finance and Operations, such as the security roles that are available for all vendors that you collaborate with. However, there are also settings that can differ for each vendor account. You should configure these settings.
+An administrator configures the general settings for vendor collaboration, such as the security roles that are available for all vendors that you collaborate with. However, there are also settings that can differ for each vendor account. You should configure these settings.
 
 - Enable vendor collaboration.
 - Specify whether the vendor should see price information.
@@ -76,7 +76,7 @@ To share price information for POs via the vendor collaboration interface, you m
 
 ### Sending a PO to a vendor
 
-POs are prepared in Finance and Operations. When a PO has a status of **Approved**, you send it to the vendor by selecting **Send for confirmation** on the **Purchase order** page. The PO status is then changed to **In External Review**. After the PO has been sent, the vendor can see it on the **Purchase orders for review** page in the vendor collaboration interface. The vendor can then accept the PO, reject it, or suggest changes to it. The vendor can also add comments to communicate information such as changes to the PO. If you want to draw the vendor's attention to a new PO, you can also use the Print management system to send the PO by email.
+POs are prepared in Supply Chain Management. When a PO has a status of **Approved**, you send it to the vendor by selecting **Send for confirmation** on the **Purchase order** page. The PO status is then changed to **In External Review**. After the PO has been sent, the vendor can see it on the **Purchase orders for review** page in the vendor collaboration interface. The vendor can then accept the PO, reject it, or suggest changes to it. The vendor can also add comments to communicate information such as changes to the PO. If you want to draw the vendor's attention to a new PO, you can also use the Print management system to send the PO by email.
 
 ### Confirmation and acceptance of a PO by a vendor
 
@@ -97,13 +97,13 @@ The following table shows the typical exchange of information, depending on the 
 </thead>
 <tbody>
 <tr class="even">
-<td>The vendor <strong>accepts</strong> the order, and Finance and Operations is configured to automatically confirm POs that the vendor accepts.</td>
+<td>The vendor <strong>accepts</strong> the order, and Supply Chain Management is configured to automatically confirm POs that the vendor accepts.</td>
 <td>The status of the order is updated to <strong>Confirmed</strong>. If the order can&#39;t be updated for some reason, the vendor response is still recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>. 
 
 The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed delivery dates on the lines. This update initiates a new version that is automatically set to <strong>Confirmed</strong> status. When the PO is confirmed, it appears in the vendor collaboration interface.</td>
 </tr>
 <tr class="odd">
-<td>The vendor <strong>accepts</strong> the order, but Finance and Operations isn&#39;t configured to automatically confirm POs that the vendor accepts.</td>
+<td>The vendor <strong>accepts</strong> the order, but Supply Chain Management isn&#39;t configured to automatically confirm POs that the vendor accepts.</td>
 <td>The vendor response is recorded as <strong>Accepted</strong>, but the status of the PO remains <strong>In External Review</strong>.
 
 The PO that was sent to the vendor and that has a status of <strong>In External Review</strong> is updated with confirmed delivery dates on the lines. This update initiates a new version that is automatically set to <strong>In External Review</strong> status. You can then manually confirm the PO.</td>
@@ -185,14 +185,14 @@ The following table shows an example of the changes in status and version that a
 
 | Action | Status and version |
 |--------|--------------------|
-| The initial version of the PO is created in Finance and Operations. | The status is **Approved**. |
+| The initial version of the PO is created in Supply Chain Management. | The status is **Approved**. |
 | The PO is sent to the vendor. | A version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
 | The vendor sends an **Accepted with changes** response. | The status is still **In External review**. |
 | You make some changes that the vendor requested. | The state is changed to **Approved**. |
 | You send the new version of the PO to the vendor. | A new version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
 | The vendor accepts the new version of the PO. | The status is still **In External Review**, unless the vendor account is configured to automatically set POs to **Confirmed** status when the vendor accepts them. |
 
-Vendors don't have to confirm a PO by using the vendor collaboration interface. They can also send an email or communicate their acceptance of a PO via other channels. You can then manually confirm the order in Finance and Operations. In this case, you receive a warning that states that the order is being confirmed even though there is no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn't have any responses. At this point, the vendor no longer has the option to confirm or reject the PO.
+Vendors don't have to confirm a PO by using the vendor collaboration interface. They can also send an email or communicate their acceptance of a PO via other channels. You can then manually confirm the order. In this case, you receive a warning that states that the order is being confirmed even though there is no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn't have any responses. At this point, the vendor no longer has the option to confirm or reject the PO.
 
 > [!NOTE]
 > The version of the PO that is available to other processes in Finance and Operations is always the latest version, even if that version hasn't yet been registered in the vendor collaboration interface.
@@ -205,7 +205,7 @@ The following table shows an example of the changes in status and version that a
 
 | Action | Status and version |
 |--------|--------------------|
-| The initial version of the PO is created in Finance and Operations. | The status is **Draft**. |
+| The initial version of the PO is created in Supply Chain Management. | The status is **Draft**. |
 | The PO is submitted to the approval process. (The approval process is an internal process that the vendor isn't involved in.) | The status is changed from **Draft** to **In Review** to **Approval** if the PO isn't rejected during the approval process. The approved PO is registered as a version. | 
 | The PO is sent to the vendor. | The version is registered in the vendor collaboration interface, and the status is changed to **In External Review**. |
 | You make some changes that the vendor requested, either manually or by using the **Process PO update** action on the response to update the PO. | The status is changed back to **Draft**. |
@@ -243,13 +243,13 @@ For a basic overview of support for the RFQ process, see [Request for quotations
 
 ## Public sector extensions
 
-For Public sector, the extended functionality enables an RFQ case to be sent to vendors and published. When you publish an RFQ, anyone who requests the information can view the work that complies with most public-sector regulations. All available work is reflected on the **Open published requests for quotations** list page, and the canceled, pending, or awarded RFQs can be viewed on the **Closed published requests for quotations** list page. These documents can also be viewed on a site outside Finance and Operations through integrations with the following data entities:
+For Public sector, the extended functionality enables an RFQ case to be sent to vendors and published. When you publish an RFQ, anyone who requests the information can view the work that complies with most public-sector regulations. All available work is reflected on the **Open published requests for quotations** list page, and the canceled, pending, or awarded RFQs can be viewed on the **Closed published requests for quotations** list page. These documents can also be viewed on a site outside Supply Chain Management through integrations with the following data entities:
 
 - Published requests for quotations
 - Published requests for quotations line
 - Published requests for quotations header attachments
 
-These entities let peoples who aren't provisioned users in Finance and Operations, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, he or she must select the email template to send the required information to the vendors on the RFQ case. 
+These entities let people who aren't provisioned users in Supply Chain Management, but who have anonymous access to the external site, view the available and closed work. Additionally, extended functionality in **Send and publish** lets the user who sets up parameters for the RFQ process define an email template. Then, when the procurement professional creates the RFQ case, he or she must select the email template to send the required information to the vendors on the RFQ case. 
 
 The user who sets up parameters for the RFQ process can create multiple email templates. These email templates can contain both static text and the following replacement tokens. The tokens will be replaced with contextual values when an email is created.
 

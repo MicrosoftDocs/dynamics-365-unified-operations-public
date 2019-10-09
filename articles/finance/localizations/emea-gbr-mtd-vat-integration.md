@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)
-description: This topic walks you through the process of setting up Dynamics 365 Finance and Operations for Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
+description: This topic walks you through the process of setting up Dynamics 365 Finance Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/10/2019
@@ -386,7 +386,7 @@ Change the **Gov-Test-Scenario** property in the new format for all the scenario
 
 ### Collect data for VAT return
 
-The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview).
 
 Before you start to prepare and submit a VAT return to HMRC, complete the regular **Settle and post sales tax** job for the period that you will report to HMRC. When this job is run, new sales tax payment transactions are created. Go to **Tax** \> **Inquires and reports** \> **Sales tax inquires** \> **Sales tax payments** to view the sales tax payments. You can review the resulting values for each sales tax payment transaction on the **VAT 100** report in SSRS or Excel format. For information about how to define the format that is used, see the [Set up General ledger parameters](#vat-statement-format-mapping) section of this topic. To generate a **VAT 100** report for selected sales tax payment transactions, select **Print report** on the Action Pane.
 
@@ -534,7 +534,7 @@ With respect to these versions of ER configurations, the application must be the
 | 10.0.2                                              | 10.0.80.10022    |
 | 10.0.3                                              | 10.0.107.0       |
 
-For Dynamics 365 for Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+For version 7.3, KB \#4504462 must be installed.
 
 ### Headers that are marked "Included (in part 2)"
 
@@ -552,7 +552,7 @@ With respect to these versions of ER configurations, the application must be the
 |-----------------------------------------------------|------------------|
 | 10.0.5                                              | 10.0.197.14       |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be installed.
+For version 7.3, KB \#4513878 must be installed.
 
 ### Implementation details
 
@@ -889,7 +889,7 @@ Sufficient versions of the applications:
 |-------------------|-----------|
 | 10.0.1 and higher | 10.0.51.0 |
 
-For Finance and Operations, Enterprise edition 7.3, the following KBs must be installed: 4489431, 4492999, and 4493076.
+For version 7.3, the following KBs must be installed: 4489431, 4492999, and 4493076.
 
 ### Hotfix "VAT report Box 5 should not be negative" (KB 4499784)
 
@@ -934,7 +934,7 @@ A new version of the application-specific parameters configuration example can b
 
 ### Support of fraud prevention headers – part 1 (KB 4504462)
 
-This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
+This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
 
 In the scope of this update, the following ER configurations are released:
 
@@ -950,7 +950,7 @@ These versions of the ER configurations must be imported and used in the followi
 | 10.0.2  | 10.0.80.10022  |
 | 10.0.3  | 10.0.107.0     |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+For version 7.3, KB \#4504462 must be installed.
 
 ### "United Kingdom: Making Tax Digital (MTD) - Electronic reporting format configurations - remove country/region code" (KB 4513582)
 
@@ -973,7 +973,7 @@ These versions of the ER configurations can be imported into any version of the 
 | 10.0.2  | 10.0.80.10022  |
 | 10.0.3  | 10.0.107.0     |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4504462 must be installed.
+For version 7.3, KB \#4504462 must be installed.
 
 The following ER formats that are used to generate a VAT declaration (VAT 100 report in Excel format and VAT return in JSON format) still have **GB** as the value of the **ISO country/region code** parameter:
 
@@ -998,4 +998,4 @@ These versions of the ER configurations must be imported and used on the followi
 |---------|----------------|
 | 10.0.5  | 10.0.197.14    |
 
-For Finance and Operations, Enterprise edition 7.3, KB \#4513878 must be installed.
+For version 7.3, KB \#4513878 must be installed.

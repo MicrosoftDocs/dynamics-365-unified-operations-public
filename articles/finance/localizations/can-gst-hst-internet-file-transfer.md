@@ -35,15 +35,13 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Taxpayers in Canada use form GST 34 to manually file Goods and Services Tax or Harmonized Sales Tax (GST/HST) returns, and to remit payments to the Canada Revenue Agency (CRA). However, the CRA allows taxpayers to electronically file and remit taxes that are calculated on acquired fixed assets. You can electronically file GST/HST returns by using any of the following methods:
 
 - **Net file transfer** – An internet-based filing service that taxpayers can use to file their returns directly over the internet.
 - **Electronic Data Interchange (EDI)** – A data transfer method that taxpayers can use to file their returns either directly with the CRA or through a third-party service provider.
 - **GST/HST Internet File Transfer (GIFT)** – An upload tool that taxpayers can use to submit text files to the CRA website to file GST/HST returns and remit payments.
 
-Both Microsoft Dynamics AX and Microsoft Dynamics 365 for Finance and Operations support GIFT. Before you generate a GIFT file, you have to set up your software identification code, sales tax code, and sales tax group.
+Before you generate a GIFT file, you have to set up your software identification code, sales tax code, and sales tax group.
 
 Use the following procedures to enter legal entity details, a sales tax code, and a sales tax group for GIFT, and to create sales tax entries for taxes that were paid on fixed asset acquisition.
 

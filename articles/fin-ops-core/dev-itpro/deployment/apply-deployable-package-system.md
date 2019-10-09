@@ -5,7 +5,7 @@ title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -121,13 +121,13 @@ If package deployment fails, see the [Troubleshoot package application issues](d
 
 If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. For more information, see [Apply updates and extensions to cloud hosted retail channel components](Update-retail-channel.md).
 
-If you're using retail components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../retail/retail-modern-pos-device-activation.md).
+If you're using retail components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 
 Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
 
-**Deployable package** – A deployable package is a unit of deployment that can be applied in an environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. For example, a Finance and Operations deployable package cannot be applied in a Retail app environment, and vice versa. If you have an existing customization for a Finance and Operations app that is compatible with the Retail app, and you would like to apply it to a Retail environment, you will need to re-package your source code in a Retail development environment, and conversely if moving in the other direction.   
+**Deployable package** – A deployable package is a unit of deployment that can be applied in an environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. For example, a Finance deployable package cannot be applied in a Retail app environment, and vice versa. If you have an existing customization for a Finance and Operations app that is compatible with the Retail app, and you would like to apply it to a Retail environment, you will need to re-package your source code in a Retail development environment, and conversely if moving in the other direction.   
 
 [![Example of a deployable package](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 

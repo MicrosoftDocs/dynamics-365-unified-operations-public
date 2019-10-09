@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Project sales orders
+title: Project sales orders for time and material projects
 description: This topic explains how to create project-based sales orders for time and material projects.
 author: KimANelson
 manager: AnnBe

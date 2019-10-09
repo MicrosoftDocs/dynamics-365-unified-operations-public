@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Advance holder reports (Russia)
+title: Advance holders reports
 description: This topic describes the Advance holder reports that are available for Russia. 
 author: ShylaThompson
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2018-10-31
 
 ---
 
-# Advance holders reports (Russia)
+# Advance holders reports
 
 [!include [banner](../includes/banner.md)]
 

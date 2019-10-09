@@ -118,7 +118,7 @@ You need to download the following latest versions of the ER configurations mode
 4.  Journal XML MX (format)
 5.  Trial Balance XML MX (format)
 
-Then, you need to import the above files in Dynamics 365 for Operations
+Next, you need to import the above files in Dynamics 365 Finance. 
 
 1. **Organization administration > Electronic Reporting > Configurations**
 2. **Exchange > Load from XML file** and **OK** to confirm. You need to repeat this action for each XML file.

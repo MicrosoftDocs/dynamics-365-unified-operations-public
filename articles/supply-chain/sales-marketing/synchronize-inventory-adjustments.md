@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
-description: This topic discusses the templates and underlying tasks that are used to synchronize inventory adjustments and transfers from Finance and Operations to Dynamics 365 Field Service.
+title: Synchronize inventory transfers and adjustments from Field Service to Supply Chain Management
+description: This topic discusses the templates and underlying tasks that are used to synchronize inventory adjustments and transfers from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/30/2019
@@ -30,56 +30,56 @@ ms.search.validFrom: 2018-12-01
 
 ---
 
-# Synchronize inventory adjustments from Field Service to Finance and Operations
+# Synchronize inventory transfers and adjustments from Field Service to Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
 
-This topic discusses the templates and underlying tasks that are used to synchronize inventory adjustments and transfers from Finance and Operations to Dynamics 365 Field Service.
+This topic discusses the templates and underlying tasks that are used to synchronize inventory adjustments and transfers from Dynamics 365 Supply Chain Management to Dynamics 365 Field Service.
 
-[![Synchronization of business processes between Finance and Operations and Field Service](./media/FSTransAdjOW.png)](./media/FSTransAdjOW.png)
+[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSTransAdjOW.png)](./media/FSTransAdjOW.png)
 
 ## Templates and tasks
-The following template and underlying tasks are used to synchronize inventory adjustments and transfers from Field Service to Finance and Operations.
+The following template and underlying tasks are used to synchronize inventory adjustments and transfers from Field Service to Supply Chain Management.
 
 **Templates in Data integration**
-- Inventory Adjustment (Field Service to Fin and Ops)
-- Inventory Transfers (Field Service to Fin and Ops)
+- Inventory Adjustment (Field Service to Supply Chain Management)
+- Inventory Transfers (Field Service to Supply Chain Management)
 
 **Tasks in the Data integration projects**
 - Inventory Adjustments
 - Inventory Transfers
 
 ## Entity set
-| Field Service	                    | Finance and Operations                             |
+| Field Service	                    | Supply Chain Management                          |
 |-----------------------------------|----------------------------------------------------|
 | msdyn_inventoryadjustmentproducts |	CDS Inventory adjustment journal headers and lines |
 | msdyn_inventoryadjustmentproducts	| CDS inventory transfer journal headers and lines   |
 
 ## Entity flow
-Inventory adjustments and transfers made in Field Service will synchronize to Finance and Operations after the **Post status** changes from **Created** to **Posted**. When this occurs, the adjustment or the transfer order will be locked and become read only. This means that adjustments and transfers can be posted in Finance and Operations, but cannot be modified. In Finance and Operations, you can set up a batch job to automatically post the adjustments and transfer inventory journals that have been generated during the integration. See the following prerequisites for details on how to enable the batch job.
+Inventory adjustments and transfers made in Field Service will synchronize to Supply Chain Management after the **Post status** changes from **Created** to **Posted**. When this occurs, the adjustment or the transfer order will be locked and become read only. This means that adjustments and transfers can be posted in Supply Chain Management, but cannot be modified. In Supply Chain Management, you can set up a batch job to automatically post the adjustments and transfer inventory journals that have been generated during the integration. See the following prerequisites for details on how to enable the batch job.
 
 ## Field Service CRM solution 
-The **Inventory unit** field has been added to the **Product** entity. This field is needed because the Sales and Inventory unit is not always the same in Finance and Operations, and the Inventory Unit is needed for the Warehouse Inventory in Finance and Operations.
+The **Inventory unit** field has been added to the **Product** entity. This field is needed because the Sales and Inventory unit is not always the same in Supply Chain Management, and the Inventory Unit is needed for the Warehouse Inventory in Supply Chain Management.
 When you set the product on an Inventory adjustment product for both Inventory adjustments and Inventory transfers, the unit will be fetched from the inventory product value. If a value is found, the **Unit** field will be locked on the Inventory adjustment product.
 
-The **Post status** field has been added to both the **Inventory adjustment** entity and the **Inventory transfer** entity. This field is used as a filter when an adjustment or transfer is sent to Finance and Operations. The default for this field is Created (1), however it is not sent to Finance and Operations. When you update the value to Posted (2), it is sent to Finance and Operations, but after that you will no longer be able to change the adjustment or transfer or add new lines.
+The **Post status** field has been added to both the **Inventory adjustment** entity and the **Inventory transfer** entity. This field is used as a filter when an adjustment or transfer is sent to Supply Chain Management. The default for this field is Created (1), however it is not sent to Supply Chain Management. When you update the value to Posted (2), it is sent to Supply Chain Management, but after that you will no longer be able to change the adjustment or transfer or add new lines.
 
 The **Number sequence** field has been added to the **Inventory adjustment product** entity. This field ensures that the integration has a unique number, so the integration can create and update the adjustment. When you create your first inventory adjustment product, it will create a new record in the **P2C AutoNumber** entity to maintain the number series and the prefix that is used.
 
 ## Prerequisites and mapping setup
 
-### Finance and Operations
+### Supply Chain Management
 The integration inventory journals generated by the integration can automatically be posted using a batch job. This is enabled from **Inventory management > Periodic tasks > CDS integration > Post integration inventory journals**.
 
 ## Template mapping in Data integration
 
 The following illustrations show the template mapping in Data integration.
 
-### Inventory adjustment (Field Service to Fin and Ops): Inventory adjustment
+### Inventory adjustment (Field Service to Supply Chain Management): Inventory adjustment
 
 [![Template mapping in Data integration](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
-### Inventory transfer (Field Service to Fin and Ops): Inventory transfer
+### Inventory transfer (Field Service to Supply Chain Management): Inventory transfer
 
 [![Template mapping in Data integration](./media/FSTrans1.png)](./media/FSTrans1.png)

@@ -39,7 +39,7 @@ Your first step in responding to a request for data will usually be to use the P
 
 ## Overview
 
-- [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr-guide.md)
+- [General Data Protection Regulation overview](gdpr-guide.md)
 - [Use the Person search report](gdpr-person-search-report.md)
 - [Extend the Person search report](gdpr-extend-person-search-report.md)
 - [Review roles in your organization with access to sensitive data](gdpr-auditing-sensitive-data.md)
@@ -49,7 +49,7 @@ Your first step in responding to a request for data will usually be to use the P
 
 - [Respond to a DSR request for data from Microsoft Dynamics AX 2012](gdpr-ax2012.md)
 - [Respond to a DSR request for data from Microsoft Dynamics 365 Talent](respond-dsr-request-talent.md)
-- [Guide to the GDPR for Microsoft Dynamics 365 for Finance and Operations](gdpr-guide.md)
+- [General Data Protection Regulation overview](gdpr-guide.md)
 - [GDPR data requests for Lifecycle Services](gdpr-lcs.md)
 
 ## Compliance Manager
