@@ -118,6 +118,16 @@ You can also disable CSP on your page mock by using the following code.
 ```
 
 ## Disable CSP
-If for whatever reason, you want to disable CSP from applying policies to your site, you may disable it altogether. Simply check the **Disable content security policy** check box and then select **Save and publish**.
 
-![Disable Content Security Policy](media/content-security-policy-disable.png)
+If you want to disable CSP from applying policies to your site, you can disable it altogether. 
+
+To disable CSP, follow these steps.
+
+1. In Dynamics 365 Commerce, navigate to your site.
+1. Go to **Site Management \> Extensibility**.
+1. Select **Disable content security policy**.
+1. Select **Save and Publish**.
+
+The following screenshot shows where to disable CSP on the **Content Security Policy** tab.
+
+![Disable CSP](media/content-security-policy-disable.png)
