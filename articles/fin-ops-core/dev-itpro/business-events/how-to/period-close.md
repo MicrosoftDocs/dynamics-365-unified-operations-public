@@ -65,19 +65,28 @@ workspace. Fields from the custom entity were mapped to the SPO columns in the b
 As accountants complete their tasks and are ready to get them reviewed, the review status field (custom) changes to “Ready for review”. The Flow shown below is triggered using the *When the change-based alert is triggered* business event. The business event payload contains the task name and the area name. Using this combination, along with the Review status field, the Flow routes the task through email based workflow orchestrated by Flow. The Flow waits for approval, appends the task log with new comments and updates the Financial period close workspace task in F&O based on the outcome of the approval process along with related metadata. Custom data entities were built in D365FO to query and update the Financial Period Close Workspace using MS Flow. The Flow is shown in detail below.
 
 ### Subscribing to the business event
+Add the F&O connector trigger to the Flow app and subscribe to the change based alert business event.
 
 <img alt="Subscribing to the business event" src="../../media/Image3.png" width="70%">
 
 ### Parsing the business event payload
+When the business event is triggered in F&O, the business event will trigger the Flow app and will contain a payload. In this step, the payload is parsed and the necessary variables are initialized.
+
 <img alt="Parsing the business event payload" src="../../media/Image4.PNG" width="70%">
 
 ### Retrieve the task from F&O based on the values from the payload
+When the task is updated in F&O, the business event will trigger the Flow app. At this time, after parsing the payload, we will know basic information about the task(s). To fetch more information on the tasks(s) we will use the custom data entity in this step to retrieve additional task information.
+
 <img alt="Retrieve tasks" src="../../media/Image5.png" width="70%">
 
 ### Retreive approvers from the excel file based on the criteria
+In this step, we must determine the list of approvers so that we can send the approval request accordingly. This is a custom excel sheet on a Sharepoint online library which we will query in this step to get the list of approvers. We will also get the links to the attachments for each task to send it to the approvers.
+
 <img alt="Retrieve approvers" src="../../media/Image6.png" width="70%">
 
 ### Prepare to send for approval
+In this step we prepare Flow to send the approval request using all the information gathered and assembled in the previous step.
+
 <img alt="Prepare to send for approval" src="../../media/Image7.png" width="70%">
 
 <img alt="Prepare to send for approval" src="../../media/Image8.png" width="70%">
@@ -85,12 +94,18 @@ As accountants complete their tasks and are ready to get them reviewed, the revi
 <img alt="Prepare to send for approval" src="../../media/Image9.png" width="70%">
 
 ### Start the approval process
+Send the approval request from Flow
+
 <img alt="Start the approval process" src="../../media/Image10.png" width="70%">
 
 ### Process the approval action taken by approvers
+Once the approvers get the approval request and take an action, the Flow gets notified and further processing is performed.
+
 <img alt="Process the approval action" src="../../media/Image11.png" width="70%">
 
 ### Update the task in F&O with the approval outcome
+Based on the outcome of the approval process, the task in F&O is updated with the result.
+
 <img alt="Update the task in F&O" src="../../media/Image12.png" width="70%">
 
 <img alt="Update the task in F&O" src="../../media/Image13.png" width="70%">
