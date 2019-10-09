@@ -76,7 +76,7 @@ Users can enter a different price that they will recognize as different from wha
 ## Revenue schedules
 Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
 
-[![Revenue schedules screenshot](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)](../accounts-receivable/rev-rec-whats-new-2-revenue-schedules.png)
+[![Revenue schedules screenshot](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)
 
 ## Multiple sales order reallocation
 
