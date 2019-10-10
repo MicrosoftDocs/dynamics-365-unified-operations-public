@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 
@@ -58,7 +58,7 @@ Maintenance budgets are based on the cost types that are used in Asset Managemen
     > [!NOTE]
     > After you've approved a maintenance budget, you can't recalculate or adjust the related lines on the **Maintenance budget lines** page unless you first remove the approval. To remove the approval of a maintenance budget, select it on the **Maintenance budgets** page, and then select **Approve**. Then, in the **Approve budget** dialog box, select **OK**.
 
-![Figure 1](media/01-maintenance-budgets.png)
+![Maintenance Budgets](media/01-maintenance-budgets.png)
 
 You can also create a new maintenance budget by copying an existing budget. On the **Maintenance budgets** page, select the budget to copy, and then select **Copy**. This approach is useful if, for example, you've created a budget for one month and want to copy it to other months.
 

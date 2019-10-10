@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Enable Broadbean integration
+# Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract
 
 [!include[banner](../includes/banner.md)]
 

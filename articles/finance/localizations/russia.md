@@ -40,6 +40,7 @@ This topic provides information about functionality that supports Russian regula
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
 - [Import currency exchange rates from CBRF](../general-ledger/import-currency-exchange-rates.md)
+- [Ledger translation](rus-ledger-translation-procedure.md)
 
 ## Advance holders
 
@@ -55,7 +56,7 @@ This topic provides information about functionality that supports Russian regula
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
 - [Exchange adjustment](rus-exchange-adjustment.md)
-- [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
+- [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
 
 ## VAT

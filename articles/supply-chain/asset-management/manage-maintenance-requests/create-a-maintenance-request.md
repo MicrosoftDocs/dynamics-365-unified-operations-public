@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Maintenance requests can be used if maintenance workers or production workers discover that equipment requires repair, but the repair job can't be done right away.
 
@@ -60,7 +60,7 @@ The **Active maintenance requests** section of the **Related information** pane 
 11. In the **Notes** field, enter any additional notes that are required.
 12. Select **OK**.
 
-![Figure 1](media/03-manage-maintenance-requests.png)
+![Create maintenance request](media/03-manage-maintenance-requests.png)
 
 ## Subsequent processing of maintenance requests
 
@@ -75,7 +75,7 @@ In the details view, you can update various information. Here are some examples:
 - Select a maintenance job type and, if this information is relevant, a related maintenance job variant and a job trade.
 - In the **Latitude** and **Longitude** fields, enter geographic coordinates. Any coordinates that are added to a maintenance request are automatically transferred to a related work order. 
 
-![Figure 2](media/04-manage-maintenance-requests.png)
+![Update maintance request](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > If you select an asset when you create a maintenance request, you can add one fault to the asset. After the maintenance request has been created, you can add more faults, as you require. To add faults, select **Asset fault** on the **All maintenance requests** page.

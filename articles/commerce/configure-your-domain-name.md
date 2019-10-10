@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure a domain name
-description: This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-Commerce site.
+description: This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-commerce site.
 author: psimolin
 manager: AnnBe
 ms.date: 10/01/2019
@@ -32,14 +32,14 @@ ms.dyn365.ops.version: 10.0.5
 
 # Configure a domain name
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
-This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-Commerce site. 
+This topic explains how to configure a domain name for a Microsoft Dynamics 365 e-commerce site. 
 
 ## Add domains during e-Commerce initialization
 
-To associate domains with your e-Commerce environment, initialize e-Commerce as described in [Deploy an e-Commerce site](deploy-ecommerce-site.md). During initialization, you're asked to provide information that will be used to provision your e-Commerce environment. In the **Supported host names** field, add all the domains that you plan to use with this environment. Multiple domains should be separated with semi-colon. In this way, the domains are configured in all the required e-Commerce components, and they are ready to be used when you switch traffic from your content delivery network (CDN) or web server and point it to the e-Commerce front ends.
+To associate domains with your e-commerce environment, initialize e-Commerce as described in [Deploy an e-Commerce site](deploy-ecommerce-site.md). During initialization, you're asked to provide information that will be used to provision your e-Commerce environment. In the **Supported host names** field, add all the domains that you plan to use with this environment. Multiple domains should be separated with semi-colon. In this way, the domains are configured in all the required e-Commerce components, and they are ready to be used when you switch traffic from your content delivery network (CDN) or web server and point it to the e-Commerce front ends.
 
 ## Add domains after e-Commerce initialization
 

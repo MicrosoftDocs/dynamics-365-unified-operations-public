@@ -72,7 +72,7 @@ Due to certain technical dependencies, the following features listed will not be
 
 -   [Vendor management and collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 
--   Certain **mobile apps** (e.g., [Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](../../../financials/project-management/mobile-timesheets.md)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
+-   Certain **mobile apps** (e.g., [Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](../../../finance/project-management/project-time-entry-mobile-workspace.md)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
 

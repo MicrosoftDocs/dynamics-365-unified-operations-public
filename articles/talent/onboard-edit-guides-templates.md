@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
 ---
 
-# Edit onboarding guides and templates
+# Edit onboarding guides and templates in Dynamics 365 Talent - Onboard
 
 [!include [banner](includes/banner.md)]
 

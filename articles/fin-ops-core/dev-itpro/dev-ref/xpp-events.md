@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Event terminology and keywords
+# X++ event terminology and keywords
 
 [!include [banner](../includes/banner.md)]
 

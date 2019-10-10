@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax engine
+title: Extend tax engine configurations
 description: This topic provides information about extending tax engine configurations.
 author: yijialuan
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Extending tax engine configurations
+# Extend tax engine configurations 
 
 [!include [banner](../includes/banner.md)]
 

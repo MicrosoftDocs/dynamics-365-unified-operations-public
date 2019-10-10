@@ -101,8 +101,6 @@ The database refresh process (self-service or via a service request) can't be co
 
 To determine the version you have installed in your source and target environments, visit the **View detailed version information** link on the **Environment Details** page.
 
-<img src="media/FinancialReporting_Binaries1.png" width="350px" alt="View detailed version information"><br/>
-
 Search for **MRApplicationService** and ensure that the target environment is greater than or equal to the source environment.
 
 <img src="media/FinancialReporting_Binaries2.png" width="500px" alt="MRApplicationService">

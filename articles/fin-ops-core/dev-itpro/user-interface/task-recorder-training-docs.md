@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create documentation or training by using task recordings
+title: Create documentation or training with Task Recorder
 description: This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 author: josaw1
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create documentation or training by using task recordings
+# Create documentation or training with Task Recorder
 
 [!include [banner](../includes/banner.md)]
 
@@ -120,14 +120,14 @@ You can download and edit Microsoft's task recordings to use them for your own H
 11. Choose how you want to save the task recording.
 
 ## Include your task recordings in the Help pane
-To show your own custom task recordings in the Help pane so that they can be played back as task guides or viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connect the Help system.](../../fin-and-ops/get-started/help-connect.md)
+To show your own custom task recordings in the Help pane so that they can be played back as task guides or viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connect the Help system.](../../fin-ops/get-started/help-connect.md)
 
 Additional resources
 --------
 
-[Help overview](../../fin-and-ops/get-started/help-overview.md)
+[Help overview](../../fin-ops/get-started/help-overview.md)
 
-[Connect Help](../../fin-and-ops/get-started/help-connect.md)
+[Connect Help](../../fin-ops/get-started/help-connect.md)
 
 [Task Recorder](task-recorder.md)
 

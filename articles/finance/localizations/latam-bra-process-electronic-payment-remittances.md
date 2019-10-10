@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ---
 
-# Process electronic payment remittances for Brazil
+# Process electronic payment remittances
 
 [!include [banner](../includes/banner.md)]
 

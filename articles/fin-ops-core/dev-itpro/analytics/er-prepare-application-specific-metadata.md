@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Prepare application-specific metadata for RCS
+# Prepare application-specific metadata for RCS and ER
 
 [!include[banner](../includes/banner.md)]
 

@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform update 12 and later)
 description: This topic provides information about how to plan, set up, and deploy Dynamics 365 Finance + Operations (on-premises) with Platform update 12 and later.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/19/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -111,11 +111,11 @@ The hardware configuration includes the following components:
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](../../fin-and-ops/get-started/system-requirements-on-prem.md).
+For more information, see [System requirements](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
 
@@ -995,7 +995,7 @@ In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where y
 ## Additional resources
 - [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
 - [Redeploy an on-premises deployment](redeploy-on-prem.md)
-- [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md)
+- [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)

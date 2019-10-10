@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Connect to a custom help site
+title: Connect a custom help site
 description: Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane.  
 author: margoc
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Connect to a custom help site
+# Connect a custom help site
 
 [!include [banner](../includes/banner.md)]
 

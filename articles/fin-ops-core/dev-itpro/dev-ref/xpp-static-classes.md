@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Static class members
+# X++ static classes
 
 [!include [banner](../includes/banner.md)]
 

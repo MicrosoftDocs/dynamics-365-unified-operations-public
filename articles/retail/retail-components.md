@@ -96,4 +96,4 @@ Retail provides mid-market and large retailers with a complete head office and p
 </tbody>
 </table>
 
-![SystemArchitecture](./media/Dynamics-365-for-Retail-System-Architecture.PNG)
+![System Architecture](./media/Dynamics-365-for-Retail-System-Architecture.png)

@@ -14,7 +14,7 @@ title: Associate an online site with a channel
 
 
 
-description: This topic explains how to bind your Microsoft Dynamics 365 for Commerce site to one or more online stores.
+description: This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 
 
 
@@ -150,7 +150,7 @@ ms.dyn365.ops.version: 10.0.5
 
 
 
-This topic explains how to bind your Microsoft Dynamics 365 for Commerce site to one or more online stores. For an introduction to online stores, see [Create a new Dynamics 365 channel](https://).
+This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores. 
 
 
 
@@ -166,7 +166,7 @@ After you've provisioned e-Commerce by using the Microsoft Dynamics Lifecycle Se
 
 
 
-To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment. Then, on the page for the site authoring environment, select **New site**. In the **New site** dialog box, you must provide some basic information about your site. For a complete explanation of the information that you must provide, see [Create a new e-Commerce site]().
+To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment. Then, on the page for the site authoring environment, select **New site**. In the **New site** dialog box, you must provide some basic information about your site. For a complete explanation of the information that you must provide, see [Create a new e-Commerce site](create-ecommerce-site.md).
 
 
 

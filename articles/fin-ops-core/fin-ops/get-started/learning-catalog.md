@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 for Finance and Operations Learning Catalog
+title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article

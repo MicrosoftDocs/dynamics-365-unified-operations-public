@@ -32,8 +32,8 @@ ms.dyn365.ops.version: 10.0.5
 
 # Help resources for Dynamics 365 Commerce
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 
 Dynamics 365 Commerce—built on the proven Dynamics 365 Retail capabilities—delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences. Dynamics 365 Commerce enables you to build brand loyalty through personalized customer engagements, increase revenue with improved employee productivity, optimize operations to reduce costs and drive supply chain efficiencies, ultimately delivering better business outcomes.
@@ -47,3 +47,18 @@ This release enables the creation of digital experiences using built-in web auth
 - Flexible and intelligent omnichannel experience: Unify physical and digital commerce by providing consistent experiences to customers across cloud search and discovery, product reviews, wish lists, inventory, gift cards, and loyalty. Allow customers to purchase when, how, and where they want, on any device—while providing choice around modern payment methods and product collection or delivery.
 
 - Streamline operations using AI in the cloud: Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
+
+## Sign up for the preview
+
+Go to the [Dynamics 365 Commerce (Preview)](https://dynamics.microsoft.com/en-us/commerce/overview/) page to fill out an application to join the preview. Existing Dynamics 365 Retail customers will be able to update to Commerce once it becomes generally available. 
+
+## Core concepts and tasks
+
+Select a feature area to learn more about it.
+- [Configure an e-Commerce evaluation environment](provisioning-guide.md)
+- [Store starter kit](starter-kit-overview.md)
+- [Product recommendations](product-recommendations.md)
+- [Ratings and reviews](ratings-reviews-overview.md)
+- [Templates and layouts](templates-layouts-overview.md)
+- [Add and manage content](add-manage-content.md)
+- [Extensibility](e-commerce-extensibility/overview.md)

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Collection classes
+# X++ collection classes
 
 [!include [banner](../includes/banner.md)]
 

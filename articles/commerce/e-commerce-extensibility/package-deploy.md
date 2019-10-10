@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Package configurations and deploy them to an online environment
 
-[!include [banner](../../includes/preview-banner.md)]
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
 
@@ -49,7 +49,7 @@ The command should be run from the root directory of your local online software 
 Here is an example.
 
 ``` bash
-c:\repos\D365.Commerce.Fabrikam>yarn d365 pack
+c:\repos\D365.Commerce.Fabrikam>yarn msdyn365 pack
 ```
 
 ## Upload a package by using LCS

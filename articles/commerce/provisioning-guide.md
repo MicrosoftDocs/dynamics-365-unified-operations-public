@@ -5,7 +5,7 @@ title: Configure an e-Commerce evaluation environment
 description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -31,10 +31,12 @@ ms.dyn365.ops.version:
 
 # Configure an e-Commerce evaluation environment
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment. Before you begin, we recommend that you at least skim through the documentation to get an idea of what the process entails and what the guide contains.
+
+*Note: If you have not been granted access to the Microsoft Dynamics 365 Commerce Preview yet, you can request preview access from the [Commerce website](https://aka.ms/Dynamics365CommerceWebsite).*
 
 ## Summary
 To provision the environment successfully, the project needs to be created with a specific product name and type. The environment and Retail Cloud Scale Unit also have some specific parameters you need to use to start the e-Commerce provisioning later. The instructions in this guide contain all the required steps you need to take and parameters you need to use.
@@ -55,6 +57,8 @@ The following are prerequisites for provisioning your Dynamics 365 Preview envir
 * You have created a **AAD security group** to be used as **Ratings and Reviews moderator group** and you have its ID available (can be the same SG as the system admin group above)
 ## Provisioning preview environment
 These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce Preview environment. After successfully completing these steps, you will have a Preview environment that is ready to be configured. All the activities described here take place in the LCS portal.
+
+*Please note that the preview access is tied to the LCS account and organization you specified in your preview application. You need to use that same account for provisioning. If you have to use different LCS account or tenant for the Preview environment, you need to provide us with those details. For contact information, please see "Additional resources" below.*
 ### Before starting
 ##### Grant access to e-Commerce applications
 1. For this step, you need your **AAD Tenant Id**. You need to authorize e-Commerce applications to access your Azure subscription. The easiest way to accomplish this is to assemble a URL like this:
@@ -62,33 +66,35 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce P
 https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345
 
 2. **Do not click the URL directly**, instead copy and paste it into your browser or text editor and replace **\{AAD_TENANT_ID\}** with your **AAD Tenant Id**, before navigating to the URL.
-3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant **e-Commerce UX** access to your subscription.
+3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant "Dynamics 365 Commerce (Preview)" access to your subscription.
 4. You will be sent to a page which confirms whether the operation was successful.
 
 *Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
 ##### Log in to the LCS
 1. Log in to the LCS portal: https://lcs.dynamics.com
 1. Make sure that you are logged in with the same LCS account you used to request access to the Preview.
+##### Confirm that preview features are available and enabled
+1. On the LCS front page, scroll all the way to the right and click the **Preview feature management** tile.
+1. Scroll down to the "PRIVATE PREVIEW FEATURES" and make sure that the following features are available and enabled:
+	1. **e-Commerce Evaluation**
+	1. **Commerce Preview Program Environments**
+1. If you are unable to see these features in the list, please reach out to us with your work email, LCS account, and tenant details. Please see **Additional resources** below for information on how to contact us.
+
+![Preview management tile](./media/preview1.png)
+
+![Preview features](./media/preview2.png)
 ### Create project
 ##### Creating new project
 1. Click **+** to create a new project.
 1. If you are a partner, choose **Migrate, create solutions, and learn**.
 1. If you are a customer, choose **Prospective presales**.
 1. Enter a name, description and industry as you see fit.
-1. For **Product name**, select **Microsoft Dynamics 365 for Retail**.
-1. For **Product version**, select **Microsoft Dynamics 365 for Retail**.
-1. For **Methodology**, select **Dynamics AX implementation methodology**.
+1. For **Product name**, select **Dynamics 365 Retail**.
+1. For **Product version**, select **Dynamics 365 Retail**.
+1. For **Methodology**, select **Dynamics AX implementation methodology** or **Dynamics Retail implementation methodology**.
 1. You may import roles and users from an existing project if that is desired.
 1. Click **Create**.
 1. You are sent to the project view.
-
-![Project creation - versions](./media/project1.png)
-
-![Project creation - topology 1](./media/project2.png)
-
-![Project creation - topology 2](./media/project3.png)
-
-![Project creation - environment parameters](./media/project4.png)
 ##### Add Azure Connector
 1. If you are a partner, click **Project settings** from the tools tiles to the far right.
 1. If you are a customer, choose **Project settings** from the top menu.
@@ -123,12 +129,15 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. If you are a customer, choose **Asset library** from the top menu.
 1. Select **Software deployable package** from the list on the left.
 1. Click **IMPORT** from the action pane.
-1. Select **Dynamics 365 Commerce Preview Demo Extension** from the list of assets under **SHARED ASSET LIBRARY**.
+1. Select **Commerce Preview Demo Base Extension** from the list of assets under **SHARED ASSET LIBRARY**.
 1. Click **Pick**.
 1. You will be returned to the Asset library and you should see the extension in the list.
 
 ![Project creation - versions](./media/import.png)
 ### Deploy environment
+
+*Note: It is possible that steps 6, 7, and/or 8 will not be shown, as the screens with single option are skipped. When you are in the **Environment parameters** view, please confirm that you have the text "Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)" directly above the **Environment name** field. See the screenshot below.*
+
 1. From the top menu, select **Cloud-hosted environments**.
 1. Click **+ Add** to add ahttps://lcs.dynamics.com/v2n environment.
 1. For **Application version**, select **10.0.6**.
@@ -138,23 +147,31 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. For environment topology, choose **Dynamics 365 Commerce (Preview) - Demo**.
 1. If you configured a single Azure Connector earlier, that will be used for this environment. If you configured multiple Azure Connectors, you have the option to select which connector you would like to use: **East US**, **East US 2**, **West US** or **West US 2** (recommended for best end-to-end performance)
 1. Enter an **Environment name**.
-1. Adjust the VM size as you see fit.
+1. Adjust the VM size as you see fit. (We recommend VM SKU **D13 v2**.)
 1. Leave **Advanced settings** as they are.
-1. After studying the pricing and licensing terms on the screen, check the box to indicate agreement.
+1. After reviewing the pricing and licensing terms on the screen, check the box to indicate agreement.
 1. Click **Next**.
 1. On the deployment confirmation screen, after verifying that the details are correct, click **Deploy**.
 1. You will return to the **Cloud-hosted environments** view and your environment should appear in the list.
 1. Your requested environment will show as queued and then deploying. It will take some time for all of the environment workflows to complete, so please check back after a few hours (approximately 6 – 9 hours).
 1. Before proceeding, make sure that your environment status is **Deployed**.
+
+![Project creation - versions](./media/project1.png)
+
+![Project creation - topology 1](./media/project2.png)
+
+![Project creation - topology 2](./media/project3.png)
+
+![Project creation - environment parameters](./media/project4.png)
 ### Initialize RCSU
 1. While in the **Cloud-hosted environments** view, select your environment from the list.
 1. From the environment view on the right side of the screen, click **Full details**. The environment details view will display.
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
 1. From **Retail** tab, click **Initialize**. The RCSU initialization parameters view will display.
-1. For region, select **East US**, **East US 2**, **West US** or **West US 2**.
-1. For version, specify **XXXXX**.
+1. For **REGION**, select **East US**, **East US 2**, **West US** or **West US 2**.
+1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below.
 1. Enable **Apply extension**.
-1. From the list of extensions, choose **Dynamics 365 Commerce Preview Demo Extension**.
+1. From the list of extensions, choose **Commerce Preview Demo Base Extension**.
 1. Click **Initialize**.
 1. On the deployment confirmation screen, after verifying that the details are correct, click **Yes**.
 1. You are returned to the **Retail management** view with the **Retail** tab activated. Your RCSU has been queued for provisioning.
@@ -169,7 +186,8 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. For **Supported host names**, enter any valid domain (e.g. www.fabrikam.com).
 1. For **AAD security group for system admin**, enter the AAD SG ID that you wish to use as e-Commerce system admin group.
 1. For **AAD security group for ratings and review moderator**, enter the AAD SG ID that you wish to use as Ratings and Reviews moderator group.
-1. Leave the B2C values empty (7 fields that start with B2C).
+1. Leave the **B2C** values empty (7 fields that start with B2C).
+1. Leave **Enable ratings and review service** enabled.
 1. Click **Initialize**.
 1. You are returned to the **Retail management** view with the **e-Commerce (Preview)** tab activated. Your e-Commerce initialization has started.
 1. Before proceeding, wait until your e-Commerce initialization status is **INITIALIZATION SUCCESSFUL**.
@@ -188,7 +206,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 
 ### Configure POS
 ##### Associate worker with your identity
-1. Using the menu on the left, go to **Human resources > Workers > Workers**.
+1. Using the menu on the left, go to **Modules > Retail > Employees > Workers**.
 1. In the list, find and select record **000713 - Andrew Collette**.
 1. On the Action Pane, click **Retail**.
 1. Click **Associate existing identity**.
@@ -224,7 +242,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 ### Set up and run jobs
 ##### Scheduling a recurring product availability job
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Retail > Retail IT > Products and inventory > Product availability**.
+1. Using the menu on the left, go to **Modules > Retail > Retail IT > Products and inventory > Product availability**.
 1. Expand the **Run in the background** section.
 1. Select **Yes** in the **Batch processing** field.
 1. Click **Recurrence**.
@@ -233,7 +251,10 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling a recurring P-job
-1. Using the menu on the left, go to **All workspaces > Retail IT**.
+1. Using the menu on the left, go to **Modules > Retail > Inquiries and reports > Batch jobs**.
+1. Use the Quick Filter to search for a record with Job description field with a value of **P-0001**.
+1. If you find a matching record and its status is **Withhold**, select it, click **Delete**, then click **Yes**.
+1. Using the menu on the left, go to **Workspaces > Retail IT**.
 1. Click **Distribution schedule**.
 1. Select **P-0001**.
 1. Click **Create batch job**.
@@ -245,7 +266,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling recurring order synchronization
-1. Using the menu on the left, go to **All workspaces > Retail store financials**.
+1. Using the menu on the left, go to **Workspaces > Retail store financials**.
 1. Under **Posting** on the right side-menu, click **Synchronize orders**.
 1. In the **Organization hierarchy** field, select **Retail Stores by Region**.
 1. Make sure that the root node is selected.
@@ -258,7 +279,7 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Scheduling a recurring send notifications job
-1. Using the menu on the left, go to **Retail > Retail IT > Email and notifications > Send email notification**.
+1. Using the menu on the left, go to **Modules > Retail > Retail IT > Email and notifications > Send email notification**.
 1. Expand the **Run in the background** section.
 1. Select **Yes** in the **Batch processing** field.
 1. Click **Recurrence**.
@@ -268,15 +289,16 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 1. Click **OK**.
 ##### Run full data sync
-1. Using the menu on the left, go to **Retail > Headquarters setup > Retail scheduler > Channel database**.
-1. **Default** channel should be selected from the list on the left. Select the other channel available.
+1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Retail scheduler > Channel database**.
+1. **Default** channel is selected from the list on the left. *Select the other available channel (named **scXXXXXXXXX**)*.
 1. Click **Full data sync** from the action pane.
 1. Enter **9999** as the distribution schedule.
 1. Click **OK**.
 1. Click **OK**.
 ### After these steps you are ready to start evaluating your preview environment!
 Use the **e-Commerce site management tool** URL to navigate to the C1 authoring experience and the **e-Commerce site** URL to navigate to the C2 site experience.
-***
+
+
 ## Additional resources
 ### How to find your AAD Tenant Id
 AAD Tenant Id is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**
@@ -315,7 +337,7 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 * [RCSU (Retail Cloud Scale Unit)](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 * [Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal)
 * [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
-* [Dynamics 365 for Retail](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail)
+* [Dynamics 365 Retail](../retail/index.md)
 ### Microsoft Dynamics 365 Commerce Preview support
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
@@ -341,12 +363,12 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 ##### Updating the media base URL
 Using the CMS tenant identifier you noted earlier, craft the **DAM Base URL**.
 
-https://cms-ppe-imageresizer-mr.trafficmanager.net/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
+https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
 
 Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL available when performing the following steps:
 
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Retail > Channel setup > Channel profiles**.
+1. Using the menu on the left, go to **Modules > Retail > Channel setup > Channel profiles**.
 1. Click **Edit**.
 1. From the **Profile properties**, replace the property value for **Media Server Base URL** with the URL you created earlier (DAM Base URL).
 1. Select the other channel from the list on the left, under **Default** channel.
@@ -357,7 +379,7 @@ Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL a
 ### Configure email server (optional)
 Please note that the SMTP server or email service you enter here must be accessible from within the Azure subscription you are using for the environment.
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **System administration > Setup > Email > Email parameters**.
+1. Using the menu on the left, go to **Modules > System administration > Setup > Email > Email parameters**.
 1. Click the **SMTP settings** tab.
 1. In the **Outgoing mail server field**, type the FQDN or IP address of your SMTP server or email service.
 1. In the **SMTP port number** field, enter the port number (default is the 25 when not using SSL).
@@ -371,7 +393,7 @@ Please note that the SMTP server or email service you enter here must be accessi
 1. Click **Send test email**.
 ### Configure email templates (optional)
 The email template for each transactional event that you wish to send emails for needs to be updated with a valid sender email address.
-1. Using the menu on the left, go to **Organization administration > Setup > Organization email templates**.
+1. Using the menu on the left, go to **Modules > Organization administration > Setup > Organization email templates**.
 1. Click **Show list**.
 1. For each of the templates in the list:
 	1. In the **Sender email** field, type the sender email address for this email template.
@@ -387,7 +409,7 @@ You might want to customize the email templates to use different images or updat
 	1. Pick order template
 1. Customize the templates using a text or HTML editor. Please see a list of supported tokens below.
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Organization administration > Setup > Organization email templates**.
+1. Using the menu on the left, go to **Modules > Organization administration > Setup > Organization email templates**.
 1. Expand the list on the left to see all the templates.
 1. For each of the templates you wish to customize, perform the following steps:
 	1. Select the template from the list.

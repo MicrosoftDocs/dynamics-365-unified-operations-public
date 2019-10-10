@@ -5,7 +5,7 @@ title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # CLI command reference
 
-[!include [banner](../../includes/preview-banner.md)]
-[!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 This topic covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
@@ -103,7 +103,7 @@ yarn msdyn365 pack
 
 This command creates a package of the local site configurations (modules, data actions, themes, and so on). This package will then be uploaded to the node server by using Microsoft Dynamics Lifecycle Services (LCS). This command should be run from the root directory of your local SDK files.
 
-The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
+The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
 
 **Example**
 

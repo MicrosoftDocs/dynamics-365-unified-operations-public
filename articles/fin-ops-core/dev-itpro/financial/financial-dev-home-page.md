@@ -5,7 +5,7 @@ title: Financials development home page
 description: This topic provides links to topics about financials development.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,4 +48,4 @@ ms.dyn365.ops.version: AX 7.0.0
 - [Financial dimension configuration for integrating applications](../financial/financial-dimension-configuration-integration.md)
 - [Activating financial dimensions](../financial/activate-financial-dimensions.md)
 - [Add the ability to look up values for financial dimensions in Microsoft Excel templates](../financial/add-dimensions-excel-templates.md)
-- [Extend the budget planning layout](../../financials/budgeting/extending-budget-planning-layout.md)
+- [Extend the budget planning layout](../../../finance/budgeting/extending-budget-planning-layout.md)

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.0.1
 
 ---
 
-# Consolidate online
+# Online financial consolidations
 
 [!include [banner](../includes/banner.md)]
 

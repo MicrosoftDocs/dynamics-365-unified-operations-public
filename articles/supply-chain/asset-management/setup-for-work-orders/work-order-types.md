@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Work order types are used to categorize work orders. For example, you might have work orders that are related to preventive maintenance or corrective maintenance.
 
@@ -56,4 +56,4 @@ For more information about work order lifecycle states and project stages, see [
 
 8. Select **Save**.
 
-![Figure 1](media/16-setup-for-work-orders.png)
+![Work order types](media/16-setup-for-work-orders.png)

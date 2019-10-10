@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a cart module to a page
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

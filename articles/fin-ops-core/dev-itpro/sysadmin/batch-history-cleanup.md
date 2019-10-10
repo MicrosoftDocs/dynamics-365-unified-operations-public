@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 25
 
 ---
 
-# Clean up the job batch history
+# Clean up the batch job history
 
 [!include [banner](../includes/banner.md)]
 

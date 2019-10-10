@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Half-yearly depreciation on fixed asset disposal for the Czech Republic
+# Half year depreciation on fixed asset disposal for the Czech Republic
 
 [!include [banner](../includes/banner.md)]
 

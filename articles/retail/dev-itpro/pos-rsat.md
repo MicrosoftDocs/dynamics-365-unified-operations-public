@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Retail Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -40,7 +40,7 @@ This topic explains how to use the new test recorder tool in Retail Cloud POS to
 This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
+> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later. Currently, POS RSAT is in preview. This means that it's not available in a public download version. If you would like to try the preview version, please create a support ticket.
 
 ## Test recorder
 
@@ -224,6 +224,14 @@ Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regre
 
 The following procedure describes the configuration that is required to run the Retail POS test cases.
 
+If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
+
+```Xml
+<add key="RetailPos" value="true" />
+```
+
+If this setting is not used, Retail POS tab will not be shown on the **RSAT Settings** tab.
+
 ### Configure the Retail POS settings
 
 1. Open RSAT from your desktop.
@@ -336,8 +344,12 @@ You must manually delete these files and secure them as you require. All these f
 
 ### Creating test cases by using the test recorder
 
-+ Make sure that all your recordings start from the POS sign-in screen.
++ Make sure that all your recordings start from the POS log-in screen.
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
 + Recording and playback must be done in the same screen layout and at the same resolution. If recording and playback are done in different layouts and at different resolutions, playback will fail.
 + You can't change the POS user name during playback of a recording. When you make a recording, always use the same user name that will be used later for playback.
++ Recording the POS activation flow is not supported.
++ Keystroke recording performance may be slow, so type slowly while recording so that all the events are captured property.
++ Peripheral emulation is currently not supported, use a keyboard wedge-based device.
++ Don’t hold a key down during recording, as this could record multiple key press events.
