@@ -302,6 +302,26 @@
           href: database/dbmovement-scenario-goldenconfig.md
         - name: Destructive testing
           href: database/dbmovement-scenario-destructivetests.md
+      - name: RESTful API
+        items:
+        - name: Overview
+          href: database/api/dbmovement-api-overview.md
+        - name: Versioning and support
+          href: database/api/dbmovement-api-versioning-support.md
+        - name: Authentication
+          href: database/api/dbmovement-api-authentication.md
+        - name: Throttling
+          href: database/api/dbmovement-api-throttling.md
+        - name: Reference
+          items:
+          - name: API v1 reference
+            href: database/api/v1/dbmovement-api-v1-overview.md
+          - name: List database backups
+            href: database/api/v1/reference-list-backups.md
+          - name: Create database refresh
+            href: database/api/v1/reference-create-refresh.md
+          - name: Get operation activity status
+            href: database/api/v1/reference-get-status.md
     - name: Demo data
       items: 
       - name: Demo data overview
