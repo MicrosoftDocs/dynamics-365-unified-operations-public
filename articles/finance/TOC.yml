@@ -60,8 +60,6 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed
         items:
-        - name: What's new or changed in Finance
-          href: get-started/whats-new-home-page.md
         - name: Finance 10.0.6 (November 2019)
           href: get-started/whats-new-finance-10-0-6.md
         - name: What's new or changed in previous versions
