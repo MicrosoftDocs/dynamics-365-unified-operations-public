@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use cash control limits
-description: This topic explains how to use cash control to define transaction limits when there is no cash balance or a transaction will cause the cash balance to fall below a predefined amount.
+title: Cash Position Inquiry Setup
+description: This topic describes the Cash position inquiry, which lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
 author: velofog
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,20 +16,21 @@ ms.technology:
 # ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.search.scope: Operations, Core 
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: public sector
 ms.author: v-alpavk
-ms.search.validFrom: 2019-8-04
-ms.dyn365.ops.version: 10.0.5
+ms.search.validFrom: 2019-10-07
+ms.dyn365.ops.version: 10.0.7
 
 ---
-
+# Cash Position Inquiry Setup
 
 This topic describes the Cash position inquiry, which lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. The inquiry shows the following items: 
+
 •	The beginning cash balance
 •	The effect of the addition of cash receipts
 •	The subtraction of cash disbursements
