@@ -34,8 +34,11 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-## Credit management workflow
-Select **Credit and collections > Setup > Credit management workflows** to define the workflows that are used to manage credit limit adjustments. You can create a workflow that allows you to approve all of the credit limits adjustments in a journal with a single approval. You can also add workflow at the line level so that credit limit adjustments can be approved individually.
+## Credit management workflows
+Select **Credit and collections > Setup > Credit management workflows** to define the workflows that are used to manage credit limit adjustments. 
+- You can create a workflow that allows you to approve a batch of the credit limits adjustments with a single approval. 
+- You can also add workflow at the line level so that credit limit adjustments can be approved individually.
+- You can create a release workflow that will automatically route holds to a workflow process
 
 ## Blocking rules
 
