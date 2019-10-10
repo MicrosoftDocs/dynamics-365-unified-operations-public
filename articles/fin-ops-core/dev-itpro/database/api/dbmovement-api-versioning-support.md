@@ -64,7 +64,7 @@ Here are some examples of non-breaking changes:
 
 ### Example of VersionEOL in a response contract
 
-The following example shows a response contract in JavaScript Object Notation (JSON) format. All response contracts contain the **VersionEOL** property of which defaults to DateMax() in .NET. Your applications can monitor the value of this field on responses from Microsoft to get an immediate alert when Microsoft has deprecated a specific endpoint or a whole API version.
+The following example shows a response contract in JavaScript Object Notation (JSON) format. All response contracts contain the **VersionEOL** property of which has a default value of DateMax() from the Microsoft .NET Framework. Your applications can monitor the value of this field on responses from Microsoft to get an immediate alert when Microsoft has deprecated a specific endpoint or a whole API version.
 
 ```json
 {
