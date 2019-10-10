@@ -5,7 +5,7 @@ title: Move licenses between agreement types
 description: This topic explains how to move licenses between agreement types.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 06/05/2018
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
