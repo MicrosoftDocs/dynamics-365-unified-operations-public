@@ -67,11 +67,11 @@
         - name: What's new or changed in previous versions
           items:
           - name: Finance and Operations 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
           - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
         - name: Removed or deprecated features
           href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
