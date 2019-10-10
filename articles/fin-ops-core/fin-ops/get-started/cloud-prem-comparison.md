@@ -161,7 +161,7 @@ To see a list of retail capabilities that are available in on-premises deploymen
 |------------------|---------------------|-----------|-----------------|
 | All Talent areas | All Talent features | Yes       | No              |
 
-## Development and administration
+## Development and administration features
 
 | **Area**                   | **Feature**                               | **Cloud** | **On-premises** |
 |----------------------------|-------------------------------------------|-----------|-----------------|
