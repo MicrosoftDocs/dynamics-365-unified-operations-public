@@ -35,7 +35,9 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-When you have set up the parameters that control advanced credit management, you can add additional details to each customer that will control the credit management processes and provide additional information that helps members of the collections team manage customers. You can add the additional infomation on the **Account receivable > Customers > All customers page on the Credit and collections** FastTab.
+When you have set up the parameters that control advanced credit management, you can add additional details to each customer that will control the credit management processes and provide additional information that helps members of the collections team manage customers. 
+
+You can add the additional infomation on the **Account receivable > Customers > All customers page on the Credit and collections** FastTab.
 
 1.	Select **Yes** for **Unlimited credit limit** if you don't want your customer to be limited by any credit limit tests.
 2.	Select **Yes** for **Exclude from credit management** to exclude the customer from any actions that would normally occur during credit management processes.
