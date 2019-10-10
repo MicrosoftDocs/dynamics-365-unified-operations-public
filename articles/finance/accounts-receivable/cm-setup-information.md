@@ -133,10 +133,30 @@ You can set up guarantee/insurance types using the **Credit management > Setup >
 
 2.	Enter a description to describe the guarantor/insurance broker.
 
-### Coverage Types
+## Coverage Types
 
 Coverage types can be used to further classify the insurance policy; they can't be used with guarantees. You can add coverage types on the **Credit management > Setup > Guarantee/insurance setup > Coverage types page**.
 
 1.	Enter a coverage type to identify the type of coverage that will be added as insurance or a guarantee.
 
 2.	Enter a description to describe of the coverage type.
+
+## Automatic credit limits
+
+You can create automatic credit limits criteria on the **Automatic credit limits** page (**Credit management > Setup > Risk setup > Automatic credit limits**).
+
+1. Select a risk group to which the automatic credit limit is assigned.
+
+2. Select the currency for the automatic credit limit. You can create multiple automatic credit limits for the same risk group for credit limits in different currencies.
+
+3. Enter the revenue amount that represents the maximum company revenue that can be used for this automatic credit limit. When credit limits are created, the revenue amount is compared to a revenue value found on the **Financials** page (**Accounts Receivable > All customers> Select a customer > General > Statistics > Financial**). The system uses the latest value in the **Overview** section.
+
+Complete the following steps to add lines that represent the credit limit that will be generated based on criteria selected.
+
+1.	Select the scoring group that defines the customer information that will be used to calculate the credit limit.
+
+2.	Select the comparison operator that will be used to define how the scoring group information will be evaluated.
+
+3.	Enter the value that will be compared to scoring group value.
+
+4.	Enter the credit limit that will be assigned if the customer information matches the value specified for the scoring group. For example, you can create an automatic credit limit for the Low scoring group. If the years in business is one of the scoring groups, you can define one line that will assign a 100,000 credit limit if the customer has been in business five years, and define another line that will assign a 200,000 credit limit if the customer has been in business for 10 years.
