@@ -2,7 +2,7 @@
 
 # required metadata
 
-title: What's new or changed home page
+title: What's new or changed in Finance and Operations home page
 description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# What's new or changed home page
+# What's new or changed in Finance and Operations home page
 [!include [banner](../includes/banner.md)]
 
 As of October 2019 this page is no longer maintained. The information in this topic shows where to find feature information for Finance and Operations applications that were released before October 2019.
