@@ -88,10 +88,10 @@ The following tables list the application areas. Cloud and on-premises support i
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 
-**Supply Chain Management applications**
+## Dynamics 365 Supply Chain Management 
 
-| **Area**                             | **Feature**                                                                               | **Cloud** | **On-premises** |
-|--------------------------------------|-------------------------------------------------------------------------------------------|-----------|-----------------|
+| **Area**                | **Feature**             | **Cloud** | **On-premises** |
+|-------------------------|-------------------|-----------|-----------------|
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
 | Cost accounting                      |                                                                                           | Yes       | Yes             |
@@ -151,19 +151,17 @@ The following tables list the application areas. Cloud and on-premises support i
 | Support                              |                                                                                           | Yes       | Yes             |
 |                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 
-**Retail applications**
+## Dynamics 365 Retail 
 
-To see a list of retail capabilities that are available in on-premises
-deployments, see [Retail capabilities that are available in on-premises
-deployments](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
 
-**Talent applications**
+## Dynamics 365 Talent 
 
 | **Area**         | **Feature**         | **Cloud** | **On-premises** |
 |------------------|---------------------|-----------|-----------------|
 | All Talent areas | All Talent features | Yes       | No              |
 
-**Development and administration**
+## Development and administration
 
 | **Area**                   | **Feature**                               | **Cloud** | **On-premises** |
 |----------------------------|-------------------------------------------|-----------|-----------------|
