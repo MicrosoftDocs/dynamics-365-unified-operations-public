@@ -60,8 +60,6 @@ Additional resources
 
 [Customer credit groups](./cm-customer-credit-groups.md)
 
-[Customer credit management setup](./cm-customer-credit-limit.md)
-
 [Customer credit limit adjustments](./cm-credit-limit-adjustments.md)
 
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
