@@ -127,10 +127,6 @@ You can create the groups on the **Credit management > Customers> Credit managem
 
 1. Click **New** to create a new line
 2. Enter a **Group ID**, using up to 10 characters, and enter a **Group name** using up to 60 characters in the description field.
-3. Enter a **credit limit** for the group
-4. Enter the **currency** for the credit limit.
-
-You can click on **Add customers** to add one or more customers to the group. A slider will appear when you can specify the company from which you want to choose a customer and you can select a customer ID. The selected customer is shown in a grid along with all customers that are related parties through the global address book. You can pick one or more customers from the grid and add them to the list of customers included in the customer credit group.
 
 ### Account statuses
 
