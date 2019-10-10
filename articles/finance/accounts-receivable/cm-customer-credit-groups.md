@@ -41,13 +41,13 @@ You can define a group of customers so that members of the group can share a cre
 
 You can set up the customer credit groups on the **Credit management > Customer credit groups > Customer credit groups** page.
 
-1. Enter a Group number and a Description of the group.
+1. Enter a **Group number** and a **Description** of the group.
 
-2. Enter the Credit limit and Currency that will be used when the credit limit for any member of the group is checked.
+2. Enter the **Credit limit** and **Currency** that will be used when the credit limit for any member of the group is checked.
 
-3. Enter the Credit limit to date, which is the date that the credit limit expires. Customer credit groups must have expiration dates.
+3. Enter the **Credit limit to date**, which is the date that the credit limit expires. Customer credit groups must have expiration dates.
 
-4. Select Yes to use the days overdue for each customer in the group when the credit rules are processed.
+4. Select **Yes** to use the **days overdue** for each customer in the group when the credit rules are processed.
 
 After the customer credit group has been set up, you can add customers to the group by specifying their legal entity and customer account ID. When adding a new customer to the customer credit group, the system will search for the same customer account across all legal entities and prompt you to add them to the customer credit group.
 
