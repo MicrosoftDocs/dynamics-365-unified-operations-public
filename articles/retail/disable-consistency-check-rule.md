@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Disable rules in retail transaction consistency checker
+title: Disable rules in the retail transaction consistency checker
 description: This topic describes the functionality for disabling retail transaction consistency checker rules in Microsoft Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
@@ -28,17 +28,16 @@ ms.dyn365.ops.version:
 
 ---
 
-# Disable rules in retail transaction consistency checker 
+# Disable rules in the retail transaction consistency checker 
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-Because retailers may have specific business scenarios and processes that are unique to them, not all of the retail transaction consistency checker rules that are shipped in the product are applicable. To accomodate these differences, Dynamics 365 Retail provides functionality that can be used to disable the rules that are not applicable.
+Retailers can have business scenarios and processes that are unique to them. Therefore, not all the rules that are included by default in the retail transaction consistency checker are applicable to all retailers. To accommodate differences, Microsoft Dynamics 365 Retail provides functionality that can be used to disable the rules that aren't applicable.
 
-On the **Retail > Headquarters setup > Parameters > Retail parameters** page, click the **Transaction validation** tab to see the list of retail transaction consistency checker rules that are available in your environment and the status of the rules. 
+To view the list of rules that are available in the retail transaction consistency checker in your environment, and to see the status of each rule, go to **Retail \> Headquarters setup \> Parameters \> Retail parameters**, and select the **Transaction validation** tab.
 
-By default, all the rules are set to **Enabled**, so all the rules will be used to validate retail transactions before they are pulled into the retail statements. To disable individual rules, change the status for the rule to **Disabled**. Disabled rules are not considered in the validation run of the retail transactions during the statement calculation process. 
+By default, the status of every rule is set to **Enabled**. Therefore, all the rules are used to validate retail transactions before they are pulled into the retail statements. To disable a rule, change its status to **Disabled**. Disabled rules aren't considered when retail transactions are validated during the statement calculation process.
 
-To bypass the entire validation process regardless of which rules are enabled, go to the **Retail > Headquarters setup > Parameters > Retail parameters** page and set the **Disable consistency checker for Retail transactions** parameter to **On**. Once this parameter is turned off, it will not be possible to turn it on again from the user interface.
-
+To bypass the whole validation process, regardless of the rules that are enabled, go to **Retail \> Headquarters setup \> Parameters \> Retail parameters**, and then, on the **Transaction validation** tab, set the **Disable consistency checker for Retail transactions** option to **Yes**. After this option is set to **No**, it can't be set back to **Yes** from the user interface (UI).
