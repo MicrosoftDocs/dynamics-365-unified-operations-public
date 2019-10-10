@@ -52,7 +52,20 @@ The process for using credit management can include some or all of the following
 
 Additional resources
 --------
+[Customer credit management setup](./cm-credit-mgmt-setup.md)
 
-[Customer credit limit management](./cm-customer-credit-limit.md)
+[Customer credit management setup information](./cm-setup-information.md)
+
+[Add credit management information to a customer](./cm-add-credit-mgmt-information-customer.md)
+
+[Customer credit groups](./cm-customer-credit-groups.md)
+
+[Customer credit management setup](./cm-customer-credit-limit.md)
+
+[Customer credit limit adjustments](./cm-credit-limit-adjustments.md)
 
 [Credit holds for sales orders](./cm-sales-order-credit-holds.md)
+
+[Customer credit management periodic tasks](./cm-periodic-tasks.md)
+
+
