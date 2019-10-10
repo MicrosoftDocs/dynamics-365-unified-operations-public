@@ -52,7 +52,7 @@ The process for using credit management can include some or all of the following
 
 Additional resources
 --------
-[Customer credit management setup](./cm-credit-mgmt-setup.md)
+[Customer credit management parameters setup](./cm-credit-mgmt-setup.md)
 
 [Customer credit management setup information](./cm-setup-information.md)
 
