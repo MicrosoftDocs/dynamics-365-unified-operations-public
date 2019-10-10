@@ -29,35 +29,25 @@ ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ---
 
-**Comparison of cloud and on-premises features**
+# Comparison of cloud and on-premises features
 
-[!include
-[banner](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/fin-ops-core/fin-ops/includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-This topic shows a comparison of features available in cloud vs. on premises for
-the following applications:
+This topic shows a comparison of features available in cloud vs. on-premises for the following applications:
 
--   [Finance](#Finance)
+- Dynamics 365 Finance
+- Dynamics 365 Supply Chain Management
+- Dynamics 365 Retail
+- Dynamics 365 Talent
 
--   [Supply Chain Management](#SCM)
+Information about the development and administration features is included, as well.
 
-Information is also provided for:
+The following tables list the application areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
--   [Retail](#Retail)
+## Dynamics 365 Finance
 
--   [Talent](#Talent)
-
-[Development and Administration](#Dev) is applicable for all the above
-applications.
-
-The following tables list the application areas. Cloud and on-premises support
-is listed for the feature as a whole. Where specific features differ from the
-area overall, the features are listed on a separate line in the Feature column.
-
-**Finance applications**
-
-| **Area**                             | **Feature**                                                                               | **Cloud** | **On-premises** |
-|--------------------------------------|-------------------------------------------------------------------------------------------|-----------|-----------------|
+| **Area**             | **Feature**                | **Cloud** | **On-premises** |
+|---------------------|-----------------------------|-----------|-----------------|
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
 | Data management and integration      |                                                                                           | Yes       | Yes             |
