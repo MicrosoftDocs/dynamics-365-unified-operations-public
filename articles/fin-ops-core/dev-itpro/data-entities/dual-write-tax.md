@@ -36,11 +36,7 @@ ms.search.validFrom: 2019-07-15
 
 [!include [preview](../includes/preview-banner.md)]
 
-When a business ecosystem is made up of Dynamics 365 apps, it's natural for customers to use a shared tax setup to enable the unified product experience. For example, customers manage their field service business with Dynamics 365 Field Service, and process invoicing, payment, tax payment, tax return etc. in Dynamics 365 Finance. With shared tax setup, a work order in Field Service can be synced with a sales order in Finance with tax. On the other hand, regardless of where the tax setup record originates, it's integrated behind the scenes across app boundaries and infrastructure differences. Integrated tax setup helps handle multi-mastering scenarios and provides a comprehensive view of the tax setup.
-
-## Data flow
-
-Tax code is a well-defined concept in both Finance and other Dynamics 365 apps. In Finance, there is a Sales tax group and an Item Sales tax group that are attached to party and item, while in other Dynamics 365 apps, tax group is a special tax code.
+Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax. It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.
 
 ## Templates
 
