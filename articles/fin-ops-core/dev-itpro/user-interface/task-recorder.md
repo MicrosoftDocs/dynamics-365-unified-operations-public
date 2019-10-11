@@ -67,12 +67,10 @@ The following steps show the process for creating a new recording using Task rec
     ![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)
     
 4.  The **Task recorder pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task recorder pane** before beginning a new recording. The pane can be reopened by following the previous steps.
-    [![This image shows the Task recorder main menu.](./media/taskrecorderguide-taskrecordermainmenu.png)](./media/taskrecorderguide-taskrecordermainmenu.png)
-    
+        
 5.  Click **Create a new recording**.
 6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
-    [![This image shows the new Task recording menu which allows you to specify a name for your recording.](./media/taskrecorderguide-taskrecordercreatemenu.png)](./media/taskrecorderguide-taskrecordercreatemenu.png) 
-    
+        
     During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
     
     [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
@@ -86,16 +84,16 @@ Now you're ready to record a business process using Task recorder. If you're fol
 1.  In the **Task recorder pane**, click **Start task**.
 2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
 3.  Click **OK**. 
-[![This image shows the menu used to start a task while recording.](./media/taskrecorderguide-taskrecorderaddingatask.png)](./media/taskrecorderguide-taskrecorderaddingatask.png)
 4.  The task is added to the **Steps list**. 
-**[![This image shows the Steps List after a task has been added.](./media/taskrecorderguide-taskrecordertaskadded.png)](./media/taskrecorderguide-taskrecordertaskadded.png)**
+   [![This image shows the Steps List after a task has been added.](./media/taskrecorderguide-taskrecordertaskadded.png)] 
+   (./media/taskrecorderguide-taskrecordertaskadded.png)
 5.  Go to **Dashboard &gt; Fleet Management &gt; Reservation Management**.
 6.  Go to **All customers** under the **Summary** tab.
 7.  In the Action Pane, click **New**.
 8.  Enter a first and last name for the customer.
 9.  Click **Save**.
 10. In the **Task recorder pane**, click **End task**. 
-**[![This image shows what the Steps List looks like after recording a few steps.](./media/taskrecorderguide-taskrecordertaskended.png)](./media/taskrecorderguide-taskrecordertaskended.png)**
+  [![This image shows what the Steps List looks like after recording a few steps.](./media/taskrecorderguide-taskrecordertaskended.png)]   (./media/taskrecorderguide-taskrecordertaskended.png)
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
 12. In the **Task recorder pane**, click **Start task**. Name the task "Rent a vehicle to the new customer." Click **Start**.
 13. Click (**+**) **Rental** under **Summary**.
@@ -115,6 +113,7 @@ Congratulations! You have created your first task recording. You can proceed to 
 ### Stop
 
 **Stop** is used to end the recording session. Ending the recording session isn't reversible, so the user should be sure that the recording is complete before clicking **Stop**. Clicking **Stop** will take the user to the download options screen.
+
 [![Stop control](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### Start/End task
