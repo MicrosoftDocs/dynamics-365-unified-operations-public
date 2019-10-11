@@ -61,7 +61,9 @@
         - name: Business events and Microsoft Forms Pro 
           href: business-events/how-to/FormsPro.md
         - name: Business events and Azure Event Hubs
-          href: business-events/how-to/event-hub.md      
+          href: business-events/how-to/event-hub.md 
+        - name: Business events in financial period close
+          href: business-events/how-to/period-close.md
     - name: Continuous delivery
       items:
       - name: Continuous delivery home page
