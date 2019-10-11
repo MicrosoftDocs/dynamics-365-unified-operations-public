@@ -264,6 +264,8 @@
             href: add-telemetry.md
           - name: Search engine optimization (SEO) considerations for your site
             href: search-engine-optimization-considerations.md
+          - name: Manage Content Security Policy (CSP)
+            href: manage-csp.md
         - name: Add and manage content on your site
           items:
           - name: Ways to add content
