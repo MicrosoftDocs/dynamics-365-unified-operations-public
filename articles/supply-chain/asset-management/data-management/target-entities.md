@@ -5,7 +5,7 @@ title: Target entities
 description: This topic explains how to get an overview of target entities in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 09/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
