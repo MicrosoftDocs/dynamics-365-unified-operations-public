@@ -85,15 +85,12 @@ Now you're ready to record a business process using Task recorder. If you're fol
 2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
 3.  Click **OK**. 
 4.  The task is added to the **Steps list**. 
-   [![This image shows the Steps List after a task has been added.](./media/taskrecorderguide-taskrecordertaskadded.png)] 
-   (./media/taskrecorderguide-taskrecordertaskadded.png)
 5.  Go to **Dashboard &gt; Fleet Management &gt; Reservation Management**.
 6.  Go to **All customers** under the **Summary** tab.
 7.  In the Action Pane, click **New**.
 8.  Enter a first and last name for the customer.
 9.  Click **Save**.
 10. In the **Task recorder pane**, click **End task**. 
-  [![This image shows what the Steps List looks like after recording a few steps.](./media/taskrecorderguide-taskrecordertaskended.png)]   (./media/taskrecorderguide-taskrecordertaskended.png)
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
 12. In the **Task recorder pane**, click **Start task**. Name the task "Rent a vehicle to the new customer." Click **Start**.
 13. Click (**+**) **Rental** under **Summary**.
