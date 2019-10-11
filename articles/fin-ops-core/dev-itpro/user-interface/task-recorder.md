@@ -115,7 +115,7 @@ Congratulations! You have created your first task recording. You can proceed to 
 ### Stop
 
 **Stop** is used to end the recording session. Ending the recording session isn't reversible, so the user should be sure that the recording is complete before clicking **Stop**. Clicking **Stop** will take the user to the download options screen.
-[![TaskRecorderGuide-TaskRecorderToolbarStop](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
+[![Stop control](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### Start/End task
 
@@ -135,7 +135,7 @@ Congratulations! You have created your first task recording. You can proceed to 
 > [!NOTE]
 > The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
 
-[![TaskRecorderGuide-TaskRecorderRecordingControlsDelete](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
+[![Delete button](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
 
 
 ### Add validation
@@ -268,11 +268,11 @@ You can now add a step anywhere in a task guide without playing back or re-recor
 
    In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn’t open. 
 
-   [![taskguide1](./media/taskguide1.png)](./media/taskguide1.png)
+   [![Insert step feature](./media/taskguide1.png)](./media/taskguide1.png)
 
    When you are on the correct page, **Insert step** becomes available.
 
-   [![taskguide2](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+   [![Insert step available on correct page](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  Click **Insert step**.
 
@@ -290,7 +290,7 @@ You can move steps under a sub-task without playing back or re-recording the ent
 1.  Select the step or sub-task step that you want to move. Make sure that the step is highlighted.
 2.  Click **… &gt; Move step after**.
 
-    [![taskguide3](./media/taskguide3.png)](./media/taskguide3.png)
+    [![Example of Move step after](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  Select the step or sub-task step that you want to move the step or sub-task step after. Task recorder will move the step.
 4.  To move the end sub-task step, select it, click **… &gt; Move step after**, and then select the step after which you want the end sub-task step to be.
@@ -302,7 +302,7 @@ If you want the first step in the task guide to be within a sub-task, create a s
 
 You can expand and collapse the **Recording name** and **Recording description** fields. When these fields are collapsed, more steps will be visible in the Task recorder editing pane. 
 
-[![taskguide4](./media/taskguide4-300x252.png)](./media/taskguide4.png)
+[![Expand and collapse recording name and description](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
 ## Advanced recording options
 
@@ -385,8 +385,6 @@ Using a **pre-release** Chrome extension, Task recorder is able to take screensh
 4.  Click **Load unpacked extension**.
 5.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
 
-    [![This image shows what the Extensions settings page looks like once the screenshot extension has been loaded.](./media/taskrecorderguide-googlechromeextensionsmenu1.png)](./media/taskrecorderguide-googlechromeextensionsmenu1.png)
-
 6.  Restart Chrome.
 
 Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 15 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
@@ -408,7 +406,7 @@ After completing a business process recording using Task recorder, a developer m
 5.  If creating a new project, select the Model for the project. The generated X++ test will be placed in this model. The model needs to have references to the TestEssentials model for the generated test to build successfully.
 6.  Click **Import**.
 
-[![ImportNewProject\_TaskRecorderGuide](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
+    [![Import task recording dialog box](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  In the **New Project** dialog box, provide a name for the project.
 8.  After the project is created, the user can open and inspect the generated code.
