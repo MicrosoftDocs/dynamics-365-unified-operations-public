@@ -298,11 +298,14 @@ The following table provides more information about how quality orders can be ge
 </tbody>
 </table>
 
-## Quality order auto generation examples
-In purchasing, if you set **Event type** as **Product receipt** and **Execution** as **After** in **Quality associations**, the following will result. 
+## Quality order auto-generation examples
 
--   When **Per updated quantity** is set to **Yes**, a quality order will be generated with every receipt based on the the received quantity and settings in item sampling. Every time quantity is received against the purchase order, new quality orders are generated based on newly received quantity.
--   When **Per updated quantity** is set to **No**, a quality order will be generated **at the first time** it is received based on received quantity, plus one or more quality orders are created based on the remaining quantity dependent on the tracking dimensions. Subsequent receipts against the purchase order will not generate quality orders.
+### Purchasing
+
+In purchasing, if you set the **Event type** field to **Product receipt** and the **Execution** field to **After** on the **Quality associations** page, you get the following results: 
+
+- If the **Per updated quantity** option is set to **Yes**, a quality order is generated for every receipt against the purchase order, based on the received quantity and settings in the item sampling. Every time that a quantity is received against the purchase order, new quality orders are generated based on the newly received quantity.
+- If the **Per updated quantity** option is set to **No**, a quality order is generated for the first receipt against the purchase order, based on the received quantity. Additionally, one or more quality orders are created based on the remaining quantity, depending on the tracking dimensions. Quality orders aren't generated for subsequent receipts against the purchase order.
 
 <table>
 <tbody>
@@ -316,8 +319,8 @@ In purchasing, if you set **Event type** as **Product receipt** and **Execution*
 <td>Percentage: 10%</td>
 <td>Yes</td>
 <td>
-<p>Batch number: No;</p>
-<p>Serial number: No;</p>
+<p>Batch number: No</p>
+<p>Serial number: No</p>
 </td>
 <td>
 <p>Order quantity: 100</p>
@@ -329,7 +332,7 @@ In purchasing, if you set **Event type** as **Product receipt** and **Execution*
 </li>
 <li>Report as finished for 70
 <ul>
-<li>Quality order #2 for 7 (10% of what is remaining on the order, here is 70)</li>
+<li>Quality order #2 for 7 (10% of the remaining order quantity, which equals 70 in this case)</li>
 </ul>
 </li>
 </ol>
@@ -339,25 +342,25 @@ In purchasing, if you set **Event type** as **Product receipt** and **Execution*
 <td>Fixed quantity: 1</td>
 <td>No</td>
 <td>
-<p>Batch number: No;</p>
-<p>Serial number: No;</p>
+<p>Batch number: No</p>
+<p>Serial number: No</p>
 </td>
 <td>Order quantity: 100
 <ol>
 <li>Report as finished for 30
 <ul>
-<li>Quality order #1 is created for 1 (for first reported as finished quantity, fixed value as 1)</li>
-<li><strong>No more</strong> quality order are created against remaining quantity</li>
+<li>Quality order #1 is created for 1 (for the first reported-as-finished quantity, which has a fixed value of 1).</li>
+<li>No more quality orders are created against the remaining quantity.</li>
 </ul>
 </li>
 <li>Report as finished for 10
 <ul>
-<li>No quality orders are created</li>
+<li>No quality orders are created.</li>
 </ul>
 </li>
 <li>Report as finished for 60
 <ul>
-<li>No quality orders are created</li>
+<li>No quality orders are created.</li>
 </ul>
 </li>
 </ol>
@@ -367,13 +370,13 @@ In purchasing, if you set **Event type** as **Product receipt** and **Execution*
 <td>Fixed quantity: 1</td>
 <td>Yes</td>
 <td>
-<p>Batch number: Yes;</p>
-<p>Serial number: Yes;</p>
+<p>Batch number: Yes</p>
+<p>Serial number: Yes</p>
 </td>
 <td>
 <p>Order quantity: 10</p>
 <ol>
-<li>Report as finished for 3<br />
+<li>Report as finished for 3
 <ul>
 <li>Quality order #1 for 1 of batch #b1, serial #s1</li>
 <li>Quality order #2 for 1 of batch #b2, serial #s2</li>
@@ -387,33 +390,31 @@ In purchasing, if you set **Event type** as **Product receipt** and **Execution*
 </ul>
 </li>
 </ol>
-<p>Note: the batch could be reused actually.</p>
+<p><strong>Note:</strong> The batch can be reused actually.</p>
 </td>
 </tr>
 <tr>
 <td>Fixed quantity: 2</td>
 <td>No</td>
 <td>
-<p>Batch number: Yes;</p>
-<p>Serial number: Yes;</p>
+<p>Batch number: Yes</p>
+<p>Serial number: Yes</p>
 </td>
 <td>
 <p>Order quantity: 10</p>
 <ol>
-<li>Report as finished for 4<br />
+<li>Report as finished for 4
 <ul>
-<li>Quality order #1 for 1 of batch #b1, serial #s1</li>
-<li>Quality order #2 for 1 of batch #b2, serial #s2</li>
-<li>Quality order #3 for 1 of batch #b3, serial #s3</li>
-<li>Quality order #4 for 1 of batch #b4, serial #s4</li>
-</ul>
-<ul>
-<li><strong>No more</strong> quality order are created against remaining quantity</li>
+<li>Quality order #1 for 1 of batch #b1, serial #s1.</li>
+<li>Quality order #2 for 1 of batch #b2, serial #s2.</li>
+<li>Quality order #3 for 1 of batch #b3, serial #s3.</li>
+<li>Quality order #4 for 1 of batch #b4, serial #s4.</li>
+<li>No more quality orders are created against the remaining quantity.</li>
 </ul>
 </li>
 <li>Report as finished for 6
 <ul>
-<li>No quality orders are created</li>
+<li>No quality orders are created.</li>
 </ul>
 </li>
 </ol>
@@ -422,10 +423,12 @@ In purchasing, if you set **Event type** as **Product receipt** and **Execution*
 </tbody>
 </table>
 
-In production, if you set **Event type** as **Report as finished** and **Execution** as **After** in **Quality associations**, the following will result.
+### Production
 
--   When **Per updated quantity** is set to **Yes**, a quality order will be generated based on every finished quantity and settings in item sampling. Every time quantity is reported as finished against the production order, new quality orders are generated based on newly finished quantity. This generation logic is consistent with purchasing.
--   When **Per updated quantity** is set to **No**, a quality order will be generated **at the first time** it is reported as finished based on the finished quantity, plus one or more quality orders are created based on the remaining quantity dependent on the tracking dimensions of item sampling. Subsequent finished quantity against the production order will **NOT** generate quality orders.
+In production, if you set the **Event type** field to **Report as finished** and the **Execution** field to **After** on the **Quality associations** page, you get the following results:
+
+- If the **Per updated quantity** option is set to **Yes**, a quality order is generated based on every finished quantity and settings in the item sampling. Every time that a quantity is reported as finished against the production order, new quality orders are generated based on newly finished quantity. This generation logic is consistent with purchasing.
+- If the **Per updated quantity** option is set to **No**, a quality order is generated the first time that a quantity is reported as finished, based on the finished quantity. Additionally, one or more quality orders are created based on the remaining quantity, depending on the tracking dimensions of the item sampling. Quality orders aren't generated for subsequent finished quantities.
 
 <table>
 <tbody>
@@ -439,8 +442,8 @@ In production, if you set **Event type** as **Report as finished** and **Executi
 <td>Percentage: 10%</td>
 <td>Yes</td>
 <td>
-<p>Batch number: No;</p>
-<p>Serial number: No;</p>
+<p>Batch number: No</p>
+<p>Serial number: No</p>
 </td>
 <td>
 <p>Order quantity: 100</p>
@@ -452,7 +455,7 @@ In production, if you set **Event type** as **Report as finished** and **Executi
 </li>
 <li>Report as finished for 70
 <ul>
-<li>Quality order #2 for 7 (10% of what is remaining on the order, here is 70)</li>
+<li>Quality order #2 for 7 (10% of the remaining order quantity, which equals 70 in this case)</li>
 </ul>
 </li>
 </ol>
@@ -462,25 +465,25 @@ In production, if you set **Event type** as **Report as finished** and **Executi
 <td>Fixed quantity: 1</td>
 <td>No</td>
 <td>
-<p>Batch number: No;</p>
-<p>Serial number: No;</p>
+<p>Batch number: No</p>
+<p>Serial number: No</p>
 </td>
 <td>Order quantity: 100
 <ol>
 <li>Report as finished for 30
 <ul>
-<li>Quality order #1 for 1 (for first reported as finished quantity, fixed value as 1)</li>
-<li>Quality order #2 for 1 (for remaining quantity, but still 1 as fixed value)</li>
+<li>Quality order #1 for 1 (for the first reported-as-finished quantity, which has a fixed value of 1)</li>
+<li>Quality order #2 for 1 (for the remaining quantity, which still has a fixed value of 1)</li>
 </ul>
 </li>
 <li>Report as finished for 10
 <ul>
-<li>No quality orders are created</li>
+<li>No quality orders are created.</li>
 </ul>
 </li>
 <li>Report as finished for 60
 <ul>
-<li>No quality orders are created</li>
+<li>No quality orders are created.</li>
 </ul>
 </li>
 </ol>
@@ -490,40 +493,40 @@ In production, if you set **Event type** as **Report as finished** and **Executi
 <td>Fixed quantity: 1</td>
 <td>Yes</td>
 <td>
-<p>Batch number: Yes;</p>
-<p>Serial number: Yes;</p>
+<p>Batch number: Yes</p>
+<p>Serial number: Yes</p>
 </td>
 <td>
 <p>Order quantity: 10</p>
 <ol>
-<li>Report as finished for 3. 1 for #b1, #s1; 1 for #b2, #s2; 1 for #b3, #s3.<br />
+<li>Report as finished for 3: 1 for #b1, #s1; 1 for #b2, #s2; and 1 for #b3, #s3
 <ul>
 <li>Quality order #1 for 1 of batch #b1, serial #s1</li>
 <li>Quality order #2 for 1 of batch #b2, serial #s2</li>
 <li>Quality order #3 for 1 of batch #b3, serial #s3</li>
 </ul>
 </li>
-<li>Report as finished for 2. 1 for #b4, #s4; 1 for #b5, #s5.
+<li>Report as finished for 2: 1 for #b4, #s4; and 1 for #b5, #s5
 <ul>
 <li>Quality order #4 for 1 of batch #b4, serial #s4</li>
 <li>Quality order #5 for 1 of batch #b5, serial #s5</li>
 </ul>
 </li>
 </ol>
-<p>Note: the batch could be reused actually.</p>
+<p><strong>Note:</strong> The batch can be reused actually.</p>
 </td>
 </tr>
 <tr>
 <td>Fixed quantity: 2</td>
 <td>No</td>
 <td>
-<p>Batch number: Yes;</p>
-<p>Serial number: Yes;</p>
+<p>Batch number: Yes</p>
+<p>Serial number: Yes</p>
 </td>
 <td>
 <p>Order quantity: 10</p>
 <ol>
-<li>Report as finished for 4. 1 for #b1, #s1; 1 for #b2, #s2; 1 for #b3, #s3; 1 for #b4, #s4.<br />
+<li>Report as finished for 4: 1 for #b1, #s1; 1 for #b2, #s2; 1 for #b3, #s3; and 1 for #b4, #s4
 <ul>
 <li>Quality order #1 for 1 of batch #b1, serial #s1</li>
 <li>Quality order #2 for 1 of batch #b2, serial #s2</li>
@@ -531,12 +534,12 @@ In production, if you set **Event type** as **Report as finished** and **Executi
 <li>Quality order #4 for 1 of batch #b4, serial #s4</li>
 </ul>
 <ul>
-<li>Quality order #5 for <strong>2</strong> referencing no batch and no serial number</li>
+<li>Quality order #5 for 2, without a reference to a batch and a serial number</li>
 </ul>
 </li>
-<li>Report as finished for 6. 1 for #b5, #s5; 1 for #b6, #s6; 1 for #b7, #s7; 1 for #b8, #s8; 1 for #b9, #s9; 1 for #b10, #s10.
+<li>Report as finished for 6: 1 for #b5, #s5; 1 for #b6, #s6; 1 for #b7, #s7; 1 for #b8, #s8; 1 for #b9, #s9; and 1 for #b10, #s10
 <ul>
-<li>No quality orders are created</li>
+<li>No quality orders are created.</li>
 </ul>
 </li>
 </ol>
