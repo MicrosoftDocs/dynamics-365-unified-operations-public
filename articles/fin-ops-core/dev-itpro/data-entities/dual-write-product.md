@@ -56,36 +56,34 @@ The dual-write entity maps for products have been designed to flow data one-way 
 
 Product information contains all the information that is related to the product and its definition, such as the product dimensions or the tracking and storage dimensions. As the following table shows, a collection of entity maps is created to sync products and related information.
 
-Finance and Operations | Other Dynamics 365 apps
------------------------|--------------------------------
-Released products V2 | msdyn\_sharedproductdetails
-CDS released distinct products | Product
-Product number identified barcode | msdyn\_productbarcodes
+Finance and Operations | Other Dynamics 365 apps | Description
+-----------------------|--------------------------------|---
+Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
+CDS released distinct products | Product | The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
+Product number identified barcode | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
 Default order settings | msdyn\_productdefaultordersettings
 Product specific default order settings | msdyn_productdefaultordersettings
-Product dimension groups | msdyn\_productdimensiongroups
-Storage dimension groups | msdyn\_productstoragedimensiongroups
-Tracking dimension groups | msdyn\_producttrackingdimensiongroups
+Product dimension groups | msdyn\_productdimensiongroups | The product dimension group defined which product dimensions define the product. 
+Storage dimension groups | msdyn\_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.
+Tracking dimension groups | msdyn\_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.
 Colors | msdyn\_productcolors
 Sizes | msdyn\_productsizes
 Styles | msdyn\_productsytles
 Configurations | msdyn\_productconfigurations
-Product master colors | msdyn_sharedproductcolors
-Product master sizes | msdyn_sharedproductsizes
-Product master styles | msdyn_sharedproductstyles
-Product master configurations | msdyn_sharedproductconfigurations
-All products | msdyn_globalproducts
+Product master colors | msdyn_sharedproductcolors | The **Shared product color** entity indicates the colors that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent.
+Product master sizes | msdyn_sharedproductsizes | The **Shared product size** entity indicates the sizes that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent.
+Product master styles | msdyn_sharedproductstyles | The **Shared product style** entity indicates the styles that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent.
+Product master configurations | msdyn_sharedproductconfigurations | The **Shared product configuration** entity indicates the configurations that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent.
+All products | msdyn_globalproducts | The all products entity contains all the products available in Finance and Operations apps, both the released products and the non-released products.
 Unit | uoms
 Unit conversions | msdyn_ unitofmeasureconversions
 Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
 Sites | msdyn\_operationalsites
 Warehouses | msdyn\_inventwarehouses
-Product categories | msdyn_productcategories
-Product category hierachies | msdyn_productcategoryhierarhies
-Product category hierarchy roles | msdyn_productcategoryhierarchies
-Product category assignments | msdyn_productcategoryassignments
-
-[!include [symbols](../includes/dual-write-symbols.md)]
+Product categories | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category entity. 
+Product category hierachies | msdyn_productcategoryhierarhies | The category hierarchies are available in CDS using the Prodcut category hierarchy entity. 
+Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
+Product category assignments | msdyn_productcategoryassignments | To assign a product to a category the product category assignments entity can be used.
 
 ## Integration of products
 
@@ -105,22 +103,11 @@ By default products from Finance and Operations apps are synchronized to Custome
 
 Note that the synchronization of products happens from Finance and Operations apps to CDS. This means that the values of the product entity fields can be changed in Common Data Service, but when the synchronization is triggered (when a product field is modified in a Finance and Operations app), this will overwrite the values in Common Data Service. 
 
-### CDS released distinct products to Product
-
-The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
+[!include [symbols](../includes/dual-write-symbols.md)]
 
 [!include [products](dual-write/EcoResReleasedDistinctProductCDSEntity-products.md)]
 
-### Released products V2 to msdyn\_sharedproductdetails
-
-The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
-
 [!include [products](dual-write/EcoResReleasedProductV2-msdyn-sharedproductdetails.md)]
-
-
-## All product to msdyn_global products
-
-The all products entity contains all the products available in Finance and Operations apps, both the released products and the non-released products. These products are available in the Common Data Service using the following mappings:
 
 [!include [global products](dual-write/EcoResEveryProductEntity-msdyn-globalproducts.md)]
 
@@ -130,27 +117,11 @@ Product dimensions are characteristics that identify a product variant. The four
 
 ![Data model for products](media/dual-write-product-2.PNG)
 
-### Colors
-
-The possible colors in Finance and Operations apps are available in Common Data Service through the following mappings.
-
 [!include [product colors](dual-write/EcoResProductColorEntity-msdyn-productcolor.md)]
-
-### Sizes
-
-The possible sizes in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 [!include [product sizes](dual-write/EcoResProductSizeEntity-msdyn-productsizes.md)]
 
-### Styles
-
-The possible styles in Finance and Operations apps are available in Common Data Service through the following mappings.
-
 [!include [product sizes](dual-write/EcoResProductStyleEntity-msdyn-productstyles.md)]
-
-### Configurations
-
-The possible configurations in Finance and Operations apps are available in Common Data Service through the following mappings.
 
 [!include [product sizes](dual-write/EcoResProductConfigurationsEntity-msdyn-productconfigurations.md)]
 
@@ -158,33 +129,13 @@ When a product has different product dimensions (for example, a product master h
 
 To keep track of the product dimensions that a product master can take, the following entities are created and mapped in Common Data Service for each product dimension. For more information, see [Product information overview](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/pim/product-information).
 
-### Shared product color
-
-The **Shared product color** entity indicates the colors that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
-
 [!include [product sizes](dual-write/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
-
-### Shared product size
-
-The **Shared product size** entity indicates the sizes that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
 
 [!include [product sizes](dual-write/EcoResProductMasterSize-msdyn-sharedproductsizes.md)]
 
-### Shared product style
-
-The **Shared product style** entity indicates the styles that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
-
 [!include [product sizes](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
 
-### Shared product configuration
-
-The **Shared product configuration** entity indicates the configurations that a specific product master can have. This concept is migrated to Common Data Service to keep data consistent. The following table shows the mappings.
-
 [!include [product sizes](dual-write/EcoResProductMasterConfigurationEntity-msdyn-sharedproductconfigurations.md)]
-
-## Product number identifier bar codes
-
-Product bar codes are used to uniquely identify products. The following mappings are used to make these product bar codes available in Common Data Service.
 
 [!include [product sizes](dual-write/EcoResProductNumberIdentifiedBarcode-msdyn-productbarcodes.md)]
 
@@ -192,15 +143,7 @@ Product bar codes are used to uniquely identify products. The following mappings
 
 Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. These information will be available in CDS using the default order settings and product specific default order settings entity. You can read more information about the functionality on [Default order settings page](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
 
-### Default order settings
-
-The following mappings are used to make the default order settings available in Common Data Service.
-
 [!include [product sizes](dual-write/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
-
-### Product specific default order settings
-
-The following mappings are used to make the product specific default order settings available in Common Data Service.
 
 [!include [product sizes](dual-write/InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md)]
 
@@ -212,105 +155,54 @@ The units of measure and its respective conversions will be available in the Com
 
 The unit of measure concept is integrated between Finance and Operations apps and other Dynamics 365 apps. For each unit class in a Finance and Operations app a unit group is created in a Dynamics 365 app, which contains the untis belonging to the unit class. A default base unit is also created for every unit group. 
 
-### Unit of measure
-
-The following mappings are used to make the units of measure in Finance and Operations apps available in Common Data Service.
-
 [!include [product sizes](dual-write/UnitOfMeasureEntity-uom.md)]
-
-### Unit of measure conversions
-
-The following mappings are used to make the units of measure conversions in Finance and Operations apps available in Common Data Service.
 
 [!include [product sizes](dual-write/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-### Product specific unit of measure conversions
-
-The following mappings are used to make the product specific unit of measure conversions in Finance and Operations apps available in Common Data Service.
-
 [!include [product sizes](dual-write/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
-### Initial synchronization of units data matching between Finance and Operations
-and CDS**
+## Initial synchronization of units data matching between Finance and Operations and Common Data Service
 
-#### Initial synchronization of units
+### Initial synchronization of units
 
-When dual write is enabled, units from Dynamics 365 Finance and Operations are synchronized to CDS/Customer Engagement. The unit groups synchronized from Finance and Operations in CDS have a flag set that indicates they are “Externally maintained”.
+When dual write is enabled, units from Finance and Operations apps are synchronized to other Dynamics 365 apps. The unit groups synchronized from Finance and Operations apps in Common Data Service have a flag set that indicates they are “Externally maintained”.
 
-#### Matching units and unit classes/groups data from Finance and Operations and Customer Engagement
+### Matching units and unit classes/groups data from Finance and Operations and Customer Engagement
 
-First, it is important to note that the integration key for unit is
-msdyn_symbol. Therefore, this value must be unique in CDS/Customer Engagement.
-Due to the fact that in CE it is the pair “Unit group ID” and “Name” are what
-define the uniqueness of a unit, different scenarios need to be considered for
-matching unit data between Finance and Operations and CDS.
+First, it is important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Common Data Service or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair “Unit group ID” and “Name” that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Common Data Service.
 
-*For units matching/overlapping in Finance and Operations and Customer
-Engagement*:
+For units matching/overlapping in Finance and Operations apps and other Dynamics 365 apps:
 
-1.  **The unit belongs to a unit group in CE that corresponds to the associated unit class in Finance and Operations**: then, the field msdyn_symbol in CE must be filled in with the unit symbol from Finance and Operations. Therefore, when the data will be matched, and the unit group will be set as “Externally maintained” in CE.
++ **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in Finance and Operations apps**. In this case, the field msdyn_symbol in other Dynamics 365 apps must be filled in with the unit symbol from Finance and Operations apps. Therefore, when the data will be matched, and the unit group will be set as “Externally maintained” in other Dynamics 365 apps.
++ **The unit belongs to a unit group in other Dynamics 365 apps that does not correspond to the associated unit class in Finance and Operations apps (no existing unit class in Finance and Operations apps for the unit class in other Dynamics 365 apps).** In this case, the msdyn_symbol must be filled in with a random string. Note that this value must be unique in other Dynamics 365 apps.
 
-2.  **The unit belongs to a unit group in CE that does not correspond to the associated unit class in Finance and Operations (no existing unit class in Finance and Operations for the unit class in CE**): the msdyn_symbol must be filled in with a random string. Note that this value must be unique in CE.
+For units and unit classes in Finance and Operations not existing in other Dynamics 365 apps:
 
-*For units and unit classes in Finance and Operations not existing in CE:*
+As part of dual-write the unit groups from Finance and Operations apps and its corresponding units are created and synchronized in other Dynamics 365 apps and Common Data Service and the unit group will be set as “Externally maintained”. No extra bootstrapping effort is required.
 
-As part of dual-write the unit groups from Finance and Operations and its corresponding units are created and synchronized in Customer Engagement/CDS and the unit group will be set as “Externally maintained”. No extra bootstrapping effort is required.
+For units in other Dynamics 365 apps not existing in Finance and Operations apps:
 
-*For units in CE not existing in Finance and Operations:*
-
-The field msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations in the corresponding unit class (if it exists). If the unit class does not exist, firstly the unit class must be created (note that you cannot create a unit class in F&O except through extension if you are extending the enum) matching the CE unit group and secondly the unit can be created. Note that the unit symbol in Finance and Operations must be the msdyn_symbol previously specified in CE for the unit.
+The field msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations apps in the corresponding unit class (if it exists). If the unit class does not exist, first the unit class must be created (note that you cannot create a unit class in Finance and Operations apps except through extension if you are extending the enum) matching the other Dynamics 365 apps unit group. Then you can create the unit. Note that the unit symbol in Finance and Operations apps must be the msdyn_symbol previously specified in other Dynamics 365 apps for the unit.
 
 ## Product policies: dimension, tracking and storage groups
 
 The product policies are sets of policies used for defining products and its characteristics in inventory. The product dimension group, product tracking dimension group and storage dimension group can be found as product policies. 
 
-### Product dimension group
-
-The product dimension group defined which product dimensions define the product. The four possible product dimension groups are: size, color, style and configuration. The product dimension groups are available in the Common Data Service using the following mappings. 
-
 [!include [product dimension group](dual-write/EcoResProductDimensionGroup-msdyn-productdimensiongroups.md)]
-
-
-### Product tracking dimension group
-
-The product tracking dimension group represents the method used to track the product in inventory. These are available in the Common Data Service using the following mappings. 
 
 [!include [product tracking dimension group](dual-write/EcoResTrackingDimensionGroup-msdyn-producttrackingdimensiongroups.md)]
 
-
-### Product storage dimension group
-
-The product storage dimension group represents the method used to define the placement the product in the warehouse. These are available in the Common Data Service using the following mappings. 
-
 [!include [product storage dimension group](dual-write/EcoResStorageDimensionGroup-msdyn-productstoragedimensiongroups.md)]
-
 
 ## Product hierarchies
 
 You use product hierarchies to categorize or group products. The product categories, category hierachies and the category roles from Dynamics 365 Finance and Operations are available in CDS using the following entities.
 
-### Product category hierarchy
-
-The category hierarchies are available in CDS using the Prodcut category hierarchy entity. This entity lists all the hierarchies and their descriptions. It has the following mappings. 
-
 [!include [product category hierarchy](dual-write/EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md)]
-
-### Product category
-
-Each of the product categories and information about its structure and characteristics are contained in the product category entity. The mappings are shown in the table below. 
 
 [!include [product category](dual-write/EcoResProductCategoryEntity-msdyn-productcategory.md)]
 
-
-### Product category assignments
-
-To assign a product to a category the product category assignments entity can be used. It relates the product and the category using the following mappings. 
-
 [!include [product category assignments](dual-write/EcoResProductCategoryAssignmentEntity-msdyn-productcategoryassignment.md)]
-
-### Product category role
-
-Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
 
 [!include [product category role](dual-write/EcoResProductCategoryHierarchyRoleEntity-msdyn-productcategoryhierarchyrole.md)]
 
