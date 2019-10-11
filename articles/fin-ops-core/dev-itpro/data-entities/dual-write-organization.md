@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Organization hierarchy in Common Data Service
+# Organization hierarchy in Common Data Service
 
 [!include [banner](../includes/banner.md)]
 
