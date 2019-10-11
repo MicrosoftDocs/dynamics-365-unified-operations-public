@@ -32,11 +32,11 @@ ms.dyn365.ops.version: 2019-6-30
 
 This topic explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 
-To complete this topic, you must be running Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019) with platform update 26 or later.
+To complete this topic, you must be running version 10.0.2 (May 2019) with Platform update 26 or later.
 
 ## Scenario overview
 
-Task management is fundamental to managing business processes across industries. Out-of-box capabilities in Finance and Operations let users manage business process tasks in a structured manner. The **Financial period close** workspace illustrates these capabilities by offering a central location for managing tasks in a company's accounting period close process.
+Task management is fundamental to managing business processes across industries. Out-of-box capabilities let users manage business process tasks in a structured manner. The **Financial period close** workspace illustrates these capabilities by offering a central location for managing tasks in a company's accounting period close process.
 
 This topic looks at an organization that recently decided to explore how it can use the **Financial period close** workspace to track and report tasks that are associated with every period close. Performance management and traceability are some of the challenges that this organization faces in the current setup. Therefore, the organization undertook an exercise in business process transformation to identify the capabilities of the **Financial period close** workspace. This exercise revealed the following business requirements:
 
@@ -61,25 +61,25 @@ Accountants view their tasks in the **Financial period close** workspace and sta
 
 ## Enabling internal controls by using business events and Microsoft Flow
 
-As accountants complete their tasks, and the tasks become ready for review, the value of the **Review status** custom field is updated to **Ready for review**. The Flow gets triggered by the **When the change-based alert is triggered** business event when this update is made. The payload of this business event contains the task name and the area name. The flow uses the combination of the task name and area name, together with the value of the **Review status** field, to route the task through an email-based workflow that is orchestrated by Microsoft Flow. The flow waits for approval, add new comments to the task log, and updates the task in the **Financial period close** workspace in Finance and Operations, based on both the outcome of the approval process and related metadata. Custom data entities were built in Finance and Operations to query and update the **Financial period close** workspace by using Microsoft Flow.
+As accountants complete their tasks, and the tasks become ready for review, the value of the **Review status** custom field is updated to **Ready for review**. The Flow gets triggered by the **When the change-based alert is triggered** business event when this update is made. The payload of this business event contains the task name and the area name. The flow uses the combination of the task name and area name, together with the value of the **Review status** field, to route the task through an email-based workflow that is orchestrated by Microsoft Flow. The flow waits for approval, add new comments to the task log, and updates the task in the **Financial period close** workspace , based on both the outcome of the approval process and related metadata. Custom data entities were built in to query and update the **Financial period close** workspace by using Microsoft Flow.
 
 ### Subscribing to the business event
 
 The following example describes the general steps for subscribing to a change-based alert business event.
 
-1. Add the Finance and Operations connector trigger to the Microsoft Flow app, and subscribe to the change-based alert business event.
+1. Add the connector trigger to the Microsoft Flow app, and subscribe to the change-based alert business event.
 
     <img alt="Subscribing to the business event" src="../../media/Image3.png" width="70%">
 
 2. Parse the business event payload.
 
-    When the business event is triggered in Finance and Operations, it triggers Microsoft Flow. This business event contains a payload. In this step, the payload is parsed, and the required variables are initialized.
+    When the business event is triggered, it triggers Microsoft Flow. This business event contains a payload. In this step, the payload is parsed, and the required variables are initialized.
 
     <img alt="Parsing the business event payload" src="../../media/Image4.PNG" width="70%">
 
-3. Retrieve the task from Finance and Operations, based on the values from the payload.
+3. Retrieve the task, based on the values from the payload.
 
-    When the task is updated in Finance and Operations, the business event triggers Microsoft Flow. At that point, after the payload has been parsed, you will know basic information about the task. In this step, the custom data entity is used to retrieve more information about the task.
+    When the task is updated, the business event triggers Microsoft Flow. At that point, after the payload has been parsed, you will know basic information about the task. In this step, the custom data entity is used to retrieve more information about the task.
 
     <img alt="Retrieving the task" src="../../media/Image5.png" width="70%">
 
@@ -111,21 +111,21 @@ The following example describes the general steps for subscribing to a change-ba
 
     <img alt="Processing the approval action" src="../../media/Image11.png" width="70%">
 
-8. Update the task in Finance and Operations with the approval outcome.
+8. Update the task iwith the approval outcome.
 
-    Based on the outcome of the approval process, the task in Finance and Operations is updated with the result.
+    Based on the outcome of the approval process, the task is updated with the result.
 
-    <img alt="Updating the task in Finance and Operations, part 1" src="../../media/Image12.png" width="70%">
+    <img alt="Updating the task, part 1" src="../../media/Image12.png" width="70%">
 
-    <img alt="Updating the task in Finance and Operations, part 2" src="../../media/Image13.png" width="70%">
+    <img alt="Updating the task, part 2" src="../../media/Image13.png" width="70%">
 
 ## Conclusion
 
-For the business requirements of the organization that is described in this topic, this solution involves minimal development and relies mostly on the **Financial period close** workspace, business events, SharePoint Online, and Microsoft Flow to drive functionality. Development is restricted to the addition of fields to Finance and Operations pages, the creation of custom data entities, and changes to page labels. Microsoft Flow also provides greater flexibility in the approval process. Because the solution takes advantage of the various applications in the Microsoft Office 365 suite, internal users can use applications that they are already familiar with. Therefore, the amount of change management that is required is limited.
+For the business requirements of the organization that is described in this topic, this solution involves minimal development and relies mostly on the **Financial period close** workspace, business events, SharePoint Online, and Microsoft Flow to drive functionality. Development is restricted to the addition of fields to pages, the creation of custom data entities, and changes to page labels. Microsoft Flow also provides greater flexibility in the approval process. Because the solution takes advantage of the various applications in the Microsoft Office 365 suite, internal users can use applications that they are already familiar with. Therefore, the amount of change management that is required is limited.
 
-In conclusion, business events offer unique opportunities for extending Finance and Operations functionality but also let you avoid extensive in-app customizations. Here are some things to consider before you start to use business events:
+In conclusion, business events offer unique opportunities for extending functionality but also let you avoid extensive in-app customizations. Here are some things to consider before you start to use business events:
 
-- Establish the security requirements of your solution. Business events honor role-based security in Finance and Operations. This behavior can be beneficial in some use cases.
+- Establish the security requirements of your solution. Business events honor role-based security. This behavior can be beneficial in some use cases.
 - Business events functionality continues to get enhanced. Be on the lookout for new capabilities.
 
-Business events and Microsoft Flow offer great opportunities for implementing low-code or no-code extensions to Finance and Operations. The important thing is that you identify opportunities where this framework can help, but that you also understand some of the limitations.
+Business events and Microsoft Flow offer great opportunities for implementing low-code or no-code extensions. The important thing is that you identify opportunities where this framework can help, but that you also understand some of the limitations.
