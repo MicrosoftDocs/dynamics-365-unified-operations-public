@@ -36,89 +36,97 @@ To complete this topic, you must be running Microsoft Dynamics 365 for Finance a
 
 ## Scenario overview
 
-Task management is fundamental to managing business processes across industries. Out of the box, D365FO offers users with capabilities to manage business process tasks in a structured manner. The financial period close workspace illustrates such capabilities by offering a central location to manage tasks in a company’s accounting period close process.
+Task management is fundamental to managing business processes across industries. Out-of-box capabilities in Finance and Operations let users manage business process tasks in a structured manner. The **Financial period close** workspace illustrates these capabilities by offering a central location for managing tasks in a company's accounting period close process.
 
-A few months back our organization decided to explore the utilization of the Financial period close workspace to track and report tasks associated with every period close. Performance management and traceability are some of the challenges faced by the organization in the current set up. As a result, we undertook a business process transformation exercise to identify the capabilities of the financial period close workspace.
+This topic looks at an organization that recently decided to explore how it can use the **Financial period close** workspace to track and report tasks that are associated with every period close. Performance management and traceability are some of the challenges that this organization faces in the current setup. Therefore, the organization undertook an exercise in business process transformation to identify the capabilities of the **Financial period close** workspace. This exercise revealed the following business requirements:
 
-The business process transformation exercise revealed the following business requirements:
+1. The ability to be notified when tasks must be started
+2. The ability to attach documents
+3. Record management and disposition capabilities for attachments
+4. The ability for multiple approvers to approve tasks, based on predefined logic
+5. Task questionnaires for audits
+6. Reporting capabilities to track the current status of the period close process and do performance analysis for insights into efficiency
 
-1.  Ability to get notified when tasks needed to be started
-2.  Ability to attach documents
-3.  Records management and disposition capabilities for attachments
-4.  Ability to approve tasks (by multiple approvers) based on a pre-defined logic
-5.  Task questionnaires for audit
-6.  Reporting capabilities to track current status of the period close process as well as performance analysis for efficieny insights
+## High-level design
 
-## High level design
-To achieve the above requirements, we used out of the box capabilities of the Financial period close workspace. A gap analysis revealed
-that with minor extensions to the workspace and the underlying data entities, we could fulfill requirement 2, 4 (partial), 5 and 6. However for requirements 1, 3 and 4 (partial), we chose MS flow. Following is an architectural overview of the solution.
+To achieve the previously mentioned requirements, the organization used out-of-box capabilities of the **Financial period close** workspace. A gap analysis revealed that, by doing minor extensions to the workspace and the underlying data entities, the organization could achieve requirements 2, 5, and 6, and could partially achieve requirement 4. To achieve requirements 1 and 3, and parts of requirement 4, the organization chose to use Microsoft Flow. The following illustration shows an architectural overview of the solution.
 
-<img alt="High level design" src="../../media/Image1.PNG" width="70%">
+<img alt="High-level design" src="../../media/Image1.PNG" width="70%">
 
-## Managing attachments with Flow and Sharepoint Online
-Accountants view their tasks in the workspace and start working on them. Attachments are added using a Sharepoint Online (SPO) Document type to the tasks. Using Sharepoint triggers in Microsoft Flow, the below Flow gets triggered. The Flow updates the Sharepoint metadata with metadata from the task in the workspace. Sharepoint columns were created for this in the document library. A separate attachment data entity was created that holds the attachment metadata for every attachment that has been added to the Financial close
-workspace. Fields from the custom entity were mapped to the SPO columns in the below Flow. When documents are created in the pre-defined SPO library using the specific document type, Flow is triggered to obtain the metadata from the custom data entity and update the document’s metadata columns in Sharepoint online.
+## Managing attachments by using Microsoft Flow and SharePoint Online
 
-<img alt="Managing attachments" src="../../media/Image2.png" width="70%">
+Accountants view their tasks in the **Financial period close** workspace and start to work on them. Attachments are added to the task by using a SharePoint Online document type. SharePoint triggers in Microsoft Flow are used to trigger the flow that is shown in the following illustration. This flow updates the SharePoint metadata with metadata from the task in the **Financial period close** workspace. SharePoint columns were created for this purpose in the document library. A separate attachment data entity was created to hold the attachment metadata for every attachment that is added to the **Financial close** workspace. Fields from the custom entity were mapped to the SharePoint Online columns in the flow. When documents that use the specified document type are created in the predefined SharePoint Online library, Microsoft Flow is triggered, obtains the metadata from the custom data entity, and updates the document's metadata columns in SharePoint Online.
 
-## Enabling internal controls via Business Events and Flow
-As accountants complete their tasks and are ready to get them reviewed, the review status field (custom) changes to “Ready for review”. The Flow shown below is triggered using the *When the change-based alert is triggered* business event. The business event payload contains the task name and the area name. Using this combination, along with the Review status field, the Flow routes the task through email based workflow orchestrated by Flow. The Flow waits for approval, appends the task log with new comments and updates the Financial period close workspace task in F&O based on the outcome of the approval process along with related metadata. Custom data entities were built in D365FO to query and update the Financial Period Close Workspace using MS Flow. The Flow is shown in detail below.
+<img alt="Flow for managing attachments" src="../../media/Image2.png" width="70%">
+
+## Enabling internal controls by using business events and Microsoft Flow
+
+As accountants complete their tasks, and the tasks become ready for review, the value of the **Review status** custom field is updated to **Ready for review**. The flow that is shown in the following illustration is triggered by using the **When the change-based alert is triggered** business event. The payload of this business event contains the task name and the area name. The flow uses the combination of the task name and area name, together with the value of the **Review status** field, to route the task through an email-based workflow that is orchestrated by Microsoft Flow. The flow waits for approval, add new comments to the task log, and updates the task in the **Financial period close** workspace in Finance and Operations, based on both the outcome of the approval process and related metadata. Custom data entities were built in Finance and Operations to query and update the **Financial period close** workspace by using Microsoft Flow.
 
 ### Subscribing to the business event
-Add the F&O connector trigger to the Flow app and subscribe to the change based alert business event.
 
-<img alt="Subscribing to the business event" src="../../media/Image3.png" width="70%">
+The following example describes the general steps for subscribing to a change-based alert business event.
 
-1. Parsing the business event payload
-When the business event is triggered in F&O, the business event will trigger the Flow app and will contain a payload. In this step, the payload is parsed and the necessary variables are initialized.
+1. Add the Finance and Operations connector trigger to the Microsoft Flow app, and subscribe to the change-based alert business event.
 
-<img alt="Parsing the business event payload" src="../../media/Image4.PNG" width="70%">
+    <img alt="Subscribing to the business event" src="../../media/Image3.png" width="70%">
 
-2. Retrieve the task from F&O based on the values from the payload
-When the task is updated in F&O, the business event will trigger the Flow app. At this time, after parsing the payload, we will know basic information about the task(s). To fetch more information on the tasks(s) we will use the custom data entity in this step to retrieve additional task information.
+2. Parse the business event payload.
 
-<img alt="Retrieve tasks" src="../../media/Image5.png" width="70%">
+    When the business event is triggered in Finance and Operations, it triggers Microsoft Flow. This business event contains a payload. In this step, the payload is parsed, and the required variables are initialized.
 
-3. Retreive approvers from the excel file based on the criteria
-In this step, we must determine the list of approvers so that we can send the approval request accordingly. This is a custom excel sheet on a Sharepoint online library which we will query in this step to get the list of approvers. We will also get the links to the attachments for each task to send it to the approvers.
+    <img alt="Parsing the business event payload" src="../../media/Image4.PNG" width="70%">
 
-<img alt="Retrieve approvers" src="../../media/Image6.png" width="70%">
+3. Retrieve the task from Finance and Operations, based on the values from the payload.
 
-4. Prepare to send for approval
-In this step we prepare Flow to send the approval request using all the information gathered and assembled in the previous step.
+    When the task is updated in Finance and Operations, the business event triggers Microsoft Flow. At that point, after the payload has been parsed, you will know basic information about the task. In this step, the custom data entity is used to retrieve more information about the task.
 
-<img alt="Prepare to send for approval" src="../../media/Image7.png" width="70%">
+    <img alt="Retrieving the task" src="../../media/Image5.png" width="70%">
 
-<img alt="Prepare to send for approval" src="../../media/Image8.png" width="70%">
+4. Retrieve approvers from the Microsoft Excel file, based on the criteria.
 
-<img alt="Prepare to send for approval" src="../../media/Image9.png" width="70%">
+    Next, you must determine the list of approvers, so that you can send the approval request in the appropriate manner. This list is a custom Excel file in a SharePoint Online library. In this step, you query the Excel file to get the list of approvers. You also get the links to the attachments for each task, so that you can send it to the approvers.
 
-5. Start the approval process
-Send the approval request from Flow
+    <img alt="Retrieving approvers" src="../../media/Image6.png" width="70%">
 
-<img alt="Start the approval process" src="../../media/Image10.png" width="70%">
+5. Prepare to send the request for approval.
 
-6. Process the approval action taken by approvers
-Once the approvers get the approval request and take an action, the Flow gets notified and further processing is performed.
+    In this step, you prepare Microsoft Flow to send the approval request by using all the information that was gathered and assembled in the previous step.
 
-<img alt="Process the approval action" src="../../media/Image11.png" width="70%">
+    <img alt="Preparing to send the request for approval, part 1" src="../../media/Image7.png" width="70%">
 
-7. Update the task in F&O with the approval outcome
-Based on the outcome of the approval process, the task in F&O is updated with the result.
+    <img alt="Preparing to send the request for approval, part 2" src="../../media/Image8.png" width="70%">
 
-<img alt="Update the task in F&O" src="../../media/Image12.png" width="70%">
+    <img alt="Preparing to send the request for approval, part 3" src="../../media/Image9.png" width="70%">
 
-<img alt="Update the task in F&O" src="../../media/Image13.png" width="70%">
+6. Start the approval process.
 
+    In this step, the approval request is sent from Microsoft Flow.
+
+    <img alt="Starting the approval process" src="../../media/Image10.png" width="70%">
+
+7. Process the approval action that is taken by approvers.
+
+    After the approvers receive the approval request and take action, the flow is notified, and additional processing is done.
+
+    <img alt="Processing the approval action" src="../../media/Image11.png" width="70%">
+
+8. Update the task in Finance and Operations with the approval outcome.
+
+    Based on the outcome of the approval process, the task in Finance and Operations is updated with the result.
+
+    <img alt="Updating the task in Finance and Operations, part 1" src="../../media/Image12.png" width="70%">
+
+    <img alt="Updating the task in Finance and Operations, part 2" src="../../media/Image13.png" width="70%">
 
 ## Conclusion
-For our business requirements, this solution entails minimal development needs and relies pre-dominantly on the financial period close workspace, business events, Sharepoint Online and MS Flow to drive functionality. Development is restricted to addition of fields to F&O forms, creation of custom data entities and change of form labels. Flow also provided greater flexibility in the approval process. Utilizing the multiple Microsoft applications within the Office 365 suite, the solution enables the utilization of applications that our
-internal end-users are already familiar with and therefore minimizes change management.
 
-In conclusion, business events offers unique opportunities to extend Finance and Operations functionality while avoiding extensive in-app customizations. Some things to consider prior to embarking on your journey with business events journey are the following:
+For the business requirements of the organization that is described in this topic, this solution involves minimal development and relies mostly on the **Financial period close** workspace, business events, SharePoint Online, and Microsoft Flow to drive functionality. Development is restricted to the addition of fields to Finance and Operations pages, the creation of custom data entities, and changes to page labels. Microsoft Flow also provides greater flexibility in the approval process. Because the solution takes advantage of the various applications in the Microsoft Office 365 suite, internal users can use applications that they are already familiar with. Therefore, the amount of change management that is required is limited.
 
-1.  Determine your administration and maintenance process with business events
-2.  Establish the security needs of your solution. Business events honor role based security in F&O. This can be beneficial in certain use cases.
-3.  Business events and their interaction with MS Flow is still evolving. Be on the lookout for new capabilities.
+In conclusion, business events offer unique opportunities for extending Finance and Operations functionality but also let you avoid extensive in-app customizations. Here are some things to consider before you start to use business events:
 
-Business events and Flow offer great opportunities to implement low code, no code extensions to F&O. Identifying opportunities where this framework can help while understanding some of the limitations is key.
+- Determine your administration and maintenance process with business events.
+- Establish the security requirements of your solution. Business events honor role-based security in Finance and Operations. This behavior can be beneficial in some use cases.
+- Business events and their interaction with Microsoft Flow are still evolving. Be on the lookout for new capabilities.
+
+Business events and Microsoft Flow offer great opportunities for implementing low-code or no-code extensions to Finance and Operations. The important thing is that you identify opportunities where this framework can help, but that you also understand some of the limitations.
