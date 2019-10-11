@@ -49,15 +49,17 @@ Changes described in this section apply to build number 8.1.2542. The numbers in
 
 ### Removal of benefits open enrollment from public preview
 
-In conjunction with our announcement in the blog post [Strategic investments in core HR drive operational excellence](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence/), we are removing benefits open enrollment from public preview on October 18, 2019, in favor of  launching new functionality in the future. Production use of the benefits open enrollment feature currently in public preview won't be supported. 
+In conjunction with our announcement in the blog post [Strategic investments in core HR drive operational excellence](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence/), we are removing benefits open enrollment from public preview on October 18, 2019, in favor of launching new functionality in the future. Production use of the benefits open enrollment feature that is currently in public preview won't be supported. 
 
 ### Common Data Service integration is now turned off by default on new provisions (343675)
  
-New environments are now provisioned with Common Data Service integration turned off. For more information, see [name of article](https://docs.microsoft.com/en-us/dynamics365/talent/hr-cds-admin-form).
+New environments are now provisioned with Common Data Service integration turned off. For more information, see [name of article--still pending](https://docs.microsoft.com/en-us/dynamics365/talent/hr-cds-admin-form).
 
 ### Streamlined employee entry and navigation
 
-This functionality is now available in all environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
+This functionality is now available in all environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This enables this feature for all users. You can turn this option off at any time.
+
+For more information, see [Streamlined employee data entry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) in the Dynamics 365: 2019 release wave 2 plan.
 
 ### Issue: Attract and Onboard create inactive workers in Core HR (380517)
 
