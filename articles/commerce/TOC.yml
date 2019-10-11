@@ -252,6 +252,10 @@
             href: enable-store-detection.md
           - name: Set up custom pages for user sign-ins
             href: custom-pages-user-logins.md
+        - name: Authoring tools
+          items:
+          - name: Authoring home page overview
+            href: authoring-home-overview.md
         - name: Manage your site
           items:
           - name: Manage users and roles
