@@ -55,13 +55,13 @@ To achieve the previously mentioned requirements, the organization used out-of-b
 
 ## Managing attachments by using Microsoft Flow and SharePoint Online
 
-Accountants view their tasks in the **Financial period close** workspace and start to work on them. Attachments are added to the task by using a SharePoint Online document type. SharePoint triggers in Microsoft Flow are used to trigger the flow that is shown in the following illustration. This flow updates the SharePoint metadata with metadata from the task in the **Financial period close** workspace. SharePoint columns were created for this purpose in the document library. A separate attachment data entity was created to hold the attachment metadata for every attachment that is added to the **Financial close** workspace. Fields from the custom entity were mapped to the SharePoint Online columns in the flow. When documents that use the specified document type are created in the predefined SharePoint Online library, Microsoft Flow is triggered, obtains the metadata from the custom data entity, and updates the document's metadata columns in SharePoint Online.
+Accountants view their tasks in the **Financial period close** workspace and start to work on them. Attachments are added to the task by using a SharePoint Online document type. SharePoint triggers in Microsoft Flow are used to trigger the flow that is shown in the following illustration. This flow updates the SharePoint metadata with metadata from the task in the **Financial period close** workspace. SharePoint columns were created for this purpose in the document library. A separate attachment data entity was created to hold the attachment metadata for every attachment that is added to the **Financial period close** workspace. Fields from the custom entity were mapped to the SharePoint Online columns in the flow. When documents that use the specified document type are created in the predefined SharePoint Online library, Microsoft Flow is triggered, obtains the metadata from the custom data entity, and updates the document's metadata columns in SharePoint Online.
 
 <img alt="Flow for managing attachments" src="../../media/Image2.png" width="70%">
 
 ## Enabling internal controls by using business events and Microsoft Flow
 
-As accountants complete their tasks, and the tasks become ready for review, the value of the **Review status** custom field is updated to **Ready for review**. The flow that is shown in the following illustration is triggered by using the **When the change-based alert is triggered** business event. The payload of this business event contains the task name and the area name. The flow uses the combination of the task name and area name, together with the value of the **Review status** field, to route the task through an email-based workflow that is orchestrated by Microsoft Flow. The flow waits for approval, add new comments to the task log, and updates the task in the **Financial period close** workspace in Finance and Operations, based on both the outcome of the approval process and related metadata. Custom data entities were built in Finance and Operations to query and update the **Financial period close** workspace by using Microsoft Flow.
+As accountants complete their tasks, and the tasks become ready for review, the value of the **Review status** custom field is updated to **Ready for review**. The Flow gets triggered by the **When the change-based alert is triggered** business event when this update is made. The payload of this business event contains the task name and the area name. The flow uses the combination of the task name and area name, together with the value of the **Review status** field, to route the task through an email-based workflow that is orchestrated by Microsoft Flow. The flow waits for approval, add new comments to the task log, and updates the task in the **Financial period close** workspace in Finance and Operations, based on both the outcome of the approval process and related metadata. Custom data entities were built in Finance and Operations to query and update the **Financial period close** workspace by using Microsoft Flow.
 
 ### Subscribing to the business event
 
@@ -85,7 +85,7 @@ The following example describes the general steps for subscribing to a change-ba
 
 4. Retrieve approvers from the Microsoft Excel file, based on the criteria.
 
-    Next, you must determine the list of approvers, so that you can send the approval request in the appropriate manner. This list is a custom Excel file in a SharePoint Online library. In this step, you query the Excel file to get the list of approvers. You also get the links to the attachments for each task, so that you can send it to the approvers.
+    Next, you must determine the list of approvers, so that you can send the approval request in the appropriate manner. This list is a custom Excel file in a SharePoint Online library. In this step, you query the Excel file to get the list of approvers. You also get the links to the attachments for each task, so that you can send the attachments to the approvers.
 
     <img alt="Retrieving approvers" src="../../media/Image6.png" width="70%">
 
@@ -125,8 +125,7 @@ For the business requirements of the organization that is described in this topi
 
 In conclusion, business events offer unique opportunities for extending Finance and Operations functionality but also let you avoid extensive in-app customizations. Here are some things to consider before you start to use business events:
 
-- Determine your administration and maintenance process with business events.
 - Establish the security requirements of your solution. Business events honor role-based security in Finance and Operations. This behavior can be beneficial in some use cases.
-- Business events and their interaction with Microsoft Flow are still evolving. Be on the lookout for new capabilities.
+- Business events functionality continues to get enhanced. Be on the lookout for new capabilities.
 
 Business events and Microsoft Flow offer great opportunities for implementing low-code or no-code extensions to Finance and Operations. The important thing is that you identify opportunities where this framework can help, but that you also understand some of the limitations.
