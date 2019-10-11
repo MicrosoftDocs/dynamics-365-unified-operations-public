@@ -196,8 +196,6 @@ The product policies are sets of policies used for defining products and its cha
 
 ## Product hierarchies
 
-You use product hierarchies to categorize or group products. The product categories, category hierachies and the category roles from Dynamics 365 Finance and Operations are available in CDS using the following entities.
-
 [!include [product category hierarchy](dual-write/EcoResProductCategoryHierarchyEntity-msdyn-productcategoryhierarchy.md)]
 
 [!include [product category](dual-write/EcoResProductCategoryEntity-msdyn-productcategory.md)]
