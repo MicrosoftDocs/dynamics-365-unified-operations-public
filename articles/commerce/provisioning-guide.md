@@ -61,6 +61,9 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce P
 *Please note that the preview access is tied to the LCS account and organization you specified in your preview application. You need to use that same account for provisioning. If you have to use different LCS account or tenant for the Preview environment, you need to provide us with those details. For contact information, please see "Additional resources" below.*
 ### Before starting
 ##### Grant access to e-Commerce applications
+
+*Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
+
 1. For this step, you need your **AAD Tenant Id**. You need to authorize e-Commerce applications to access your Azure subscription. The easiest way to accomplish this is to assemble a URL like this:
 
 https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345
@@ -69,7 +72,6 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 3. You will be presented with the Microsoft AAD login dialog where you will confirm that you wish to grant "Dynamics 365 Commerce (Preview)" access to your subscription.
 4. You will be sent to a page which confirms whether the operation was successful.
 
-*Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
 ##### Log in to the LCS
 1. Log in to the LCS portal: https://lcs.dynamics.com
 1. Make sure that you are logged in with the same LCS account you used to request access to the Preview.
@@ -91,7 +93,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Enter a name, description and industry as you see fit.
 1. For **Product name**, select **Dynamics 365 Retail**.
 1. For **Product version**, select **Dynamics 365 Retail**.
-1. For **Methodology**, select **Dynamics AX implementation methodology** or **Dynamics Retail implementation methodology**.
+1. For **Methodology**, select **Dynamics Retail implementation methodology**.
 1. You may import roles and users from an existing project if that is desired.
 1. Click **Create**.
 1. You are sent to the project view.
@@ -169,7 +171,7 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
 1. From **Retail** tab, click **Initialize**. The RCSU initialization parameters view will display.
 1. For **REGION**, select **East US**, **East US 2**, **West US** or **West US 2**.
-1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below.
+1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below. *Note: Please make sure to **specify the exact version** listed here to avoid having to update RCSU later to correct version.*
 1. Enable **Apply extension**.
 1. From the list of extensions, choose **Commerce Preview Demo Base Extension**.
 1. Click **Initialize**.
@@ -234,61 +236,25 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Log in to the **site management tool** using the URL you noted earlier.
 1. Click on the **Fabrikam** site to open the site setup dialog.
 1. For domain, select the domain you entered earlier when initializing the e-Commerce.
-1. For default channel, select **Fabrikam extended online store**.
+1. For default channel, select **Fabrikam extended online store**. *Note: Make sure you select the **extended** online store*
 1. For default language, select **en-us**.
 1. Leave **Path** as it is.
 1. Click **OK**.
 1. You will be sent to the list of pages on the site.
-### Set up and run jobs
-##### Scheduling a recurring product availability job
+### Enable jobs
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Modules > Retail > Retail IT > Products and inventory > Product availability**.
-1. Expand the **Run in the background** section.
-1. Select **Yes** in the **Batch processing** field.
-1. Click **Recurrence**.
-1. Select the **No end date** option.
-1. In the **Count** field, enter **15**.
-1. Click **OK**.
-1. Click **OK**.
-##### Scheduling a recurring P-job
-1. Using the menu on the left, go to **Modules > Retail > Inquiries and reports > Batch jobs**.
-1. Use the Quick Filter to search for a record with Job description field with a value of **P-0001**.
-1. If you find a matching record and its status is **Withhold**, select it, click **Delete**, then click **Yes**.
-1. Using the menu on the left, go to **Workspaces > Retail IT**.
-1. Click **Distribution schedule**.
-1. Select **P-0001**.
-1. Click **Create batch job**.
-1. Click **Run in the background**.
-1. Enable **Batch processing**.
-1. Click **Recurrence**.
-1. Select the **No end date** option.
-1. In the **Count** field, enter **10**.
-1. Click **OK**.
-1. Click **OK**.
-##### Scheduling recurring order synchronization
-1. Using the menu on the left, go to **Workspaces > Retail store financials**.
-1. Under **Posting** on the right side-menu, click **Synchronize orders**.
-1. In the **Organization hierarchy** field, select **Retail Stores by Region**.
-1. Make sure that the root node is selected.
-1. Click the arrow to add your selection.
-1. Click the **Run in the background** tab.
-1. Enable **Batch processing**.
-1. Click **Recurrence**.
-1. Select the **No end date** option.
-1. In the **Count** field, enter **10**.
-1. Click **OK**.
-1. Click **OK**.
-##### Scheduling a recurring send notifications job
-1. Using the menu on the left, go to **Modules > Retail > Retail IT > Email and notifications > Send email notification**.
-1. Expand the **Run in the background** section.
-1. Select **Yes** in the **Batch processing** field.
-1. Click **Recurrence**.
-1. Set the **Recurrence pattern** to **Minutes**.
-1. Select the **No end date** option.
-1. In the **Count** field, enter **2**.
-1. Click **OK**.
-1. Click **OK**.
-##### Run full data sync
+1. Using the menu on the left, go to **Retail > Inquiries and reports > Batch jobs**.
+1. Perform the following steps for each of the jobs in the list below:
+	* **Process retail order email notification**
+	* **Product availability**
+	* **P-0001**
+	* **Synchronize orders job**
+1. Use the Quick Filter to search for the job using its name (listed above).
+1. If the Status of the job is **Withhold**, perform the following steps:
+	1. Select the record.
+	1. From the action pane, open **Batch job**-ribbon and click **Change status**.
+	1. Select **Waiting** and Click **OK**.
+### Run full data sync
 1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Retail scheduler > Channel database**.
 1. **Default** channel is selected from the list on the left. *Select the other available channel (named **scXXXXXXXXX**)*.
 1. Click **Full data sync** from the action pane.
@@ -297,7 +263,6 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Click **OK**.
 ### After these steps you are ready to start evaluating your preview environment!
 Use the **e-Commerce site management tool** URL to navigate to the C1 authoring experience and the **e-Commerce site** URL to navigate to the C2 site experience.
-
 
 ## Additional resources
 ### How to find your AAD Tenant Id
@@ -351,29 +316,25 @@ If you want to evaluate the transactional email features, the following prerequi
 If you want to evaluate Digital Asset Management features, specifically ingest new omni-channel images, the following pre-requisites must be met:
 * You need to have your **CMS tenant name** available. Instructions for finding this name are below.
 ### Configure image backend (optional)
-##### Finding your CMS tenant identifier
+##### Finding your Media base URL
 *Note: Before you can complete this step, you must complete **Site Setup**.*
 1. Log in to the site management tool using the URL you noted earlier.
 1. Open the **Fabrikam** site.
 1. Choose **Assets** from the menu on the left.
-1. From the **Select type** drop-down list, choose **Images**.
-1. Select the first image.
+1. Select any single image asset.
 1. Locate **Public URL** from the property inspector on the right. It has an URL in it.
-1. In the **Public URL** field, your CMS tenant identifier is between **/cms/api/** and **/imageFileData**, make note of that. For example, in **../cms/api/fabrikam/imageFileData/..**, **fabrikam** would be the CMS tenant identifier.
+	* Example URL: https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/MA1nQC
+1. Replace the last identifier in the URL (MA1nQC in the example URL above) with the following string: **search?fileName=**
+	* Example URL after replacement: https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/search?fileName=
+	* This is your **Media base URL** - make note of it 
 ##### Updating the media base URL
-Using the CMS tenant identifier you noted earlier, craft the **DAM Base URL**.
-
-https://images-us-sb.cms.commerce.dynamics.com/cms/api/{CMS_TENANT_NAME}/imageFileData/search?fileName=
-
-Replace **\{CMS_TENANT_NAME\}** with your CMS tenant identifier. Have this URL available when performing the following steps:
-
 1. Log in to the environment (HQ).
 1. Using the menu on the left, go to **Modules > Retail > Channel setup > Channel profiles**.
 1. Click **Edit**.
-1. From the **Profile properties**, replace the property value for **Media Server Base URL** with the URL you created earlier (DAM Base URL).
+1. From the **Profile properties**, replace the property value for **Media Server Base URL** with the **Media base URL** you created earlier.
 1. Select the other channel from the list on the left, under **Default** channel.
 1. Under **Profile properties**, click **+ Add**.
-1. For the property that was added, choose **Media Server Base URL** as property key and enter the URL you created earlier for property value (DAM Base URL).
+1. For the property that was added, choose **Media Server Base URL** as property key and for property value, enter the **Media base URL** you created earlier.
 1. Click **Save**.
 
 ### Configure email server (optional)
