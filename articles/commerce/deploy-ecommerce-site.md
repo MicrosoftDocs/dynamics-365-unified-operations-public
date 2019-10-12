@@ -55,7 +55,8 @@ Use this procedure to initialize the e-Commerce feature in an existing environme
 Before you begin, make sure that you have the following required information:
 
 - The RCSU that will be used
-- The Microsoft Azure Active Directory (Azure AD) security group that will be used for system admins
+- The Microsoft Azure Active Directory security group that will be used for e-Commerce system admins
+- The Microsoft Azure Active Directory security group that will be used for ratings and reviews moderators
 - The domains that will be associated with the environment
 
 In addition, you can collect the following optional information:
@@ -69,7 +70,6 @@ In addition, you can collect the following optional information:
 	- SignUp SignIn Policy ID
 	- Reset password Policy ID
 	- Edit Profile Policy ID
-	- The security group that will be used for moderation of ratings and reviews
 
 [!NOTE]
 This information can be added later, through a service request.
