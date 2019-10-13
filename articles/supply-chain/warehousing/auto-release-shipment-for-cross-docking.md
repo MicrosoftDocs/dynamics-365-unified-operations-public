@@ -56,7 +56,7 @@ This cross-docking functionality has two advantages:
 | Work class | A cross-docking work class ID must be created for the **Cross docking** work order type. |
 | Work templates | Work templates of the **Cross docking** work order type are required to create cross-docking pick and put work. |
 | Location directives | Location directives of the **Cross docking** work order type are required to guide put work in the locations where sales order quantities will be packed and shipped. |
-| Marking between a demand order and a production order | The warehouse system can trigger automatic release of the outbound order shipment and create cross-docking work at the report-as-finished action only if sales orders and transfer orders are reserved and marked against a production order. |
+| Marking between a demand order and a production order | The warehouse system can trigger automatic release of the outbound order shipment and create cross-docking work from the output location at the report-as-finished action only if sales orders and transfer orders are reserved and marked against a production order. |
 
 ## Example cross-docking flow
 
@@ -126,7 +126,7 @@ To limit the types of locations where cross-docked finished goods can be put, yo
 
 A standard put-away process for finished goods requires a **Put** location directive to guide the movement of picked production quantities to a regular storage space. Likewise, you must set up a cross-docking **Put** location directive to instruct the work to put the finished quantity in a designated outbound location that services the shipment of the associated sales order.
 
-As is the case for regular put-away of finished goods, you don't have to create a location directive for the pick work action, because the output location is given. Additionally, this output location is expected to be set up either as the default output location on one of the resource-related records (that is, the resource, resource group relation, or resource group) or as a default production finished goods location for a warehouse.
+For cross-docking, as for regular put-away of finished goods, you don't have to create a location directive for the pick work action, because the output location is given. Additionally, this output location is expected to be set up either as the default output location on one of the resource-related records (that is, the resource, resource group relation, or resource group) or as a default production finished goods location for a warehouse.
 
 1. Go to **Warehouse management** \> **Setup** \> **Location directives**.
 2. In the **Work order type** field, select **Cross docking**.
@@ -175,7 +175,7 @@ To cross-dock the quantity of finished goods to the outbound location of the ass
 12. Go to **Production** \> **Production pick**.
 13. Enter the work ID to start and complete the raw material picking. 
 
-    After the work is registered as finished, the quantity of raw materials is available in the production input location (**005** in USMF demo data), and execution of the production order can start.
+    After the work is reported as finished, the quantity of raw materials is available in the production input location (**005** in USMF demo data), and execution of the production order can start.
 
 14. On the **Production order** page, on the Action Pane, on the **Production order** tab, in the **Process** group, select **Start**, and then select **OK**.
 15. In the Warehouse Mobile App, go to **Production** \> **RAF and put away**.
