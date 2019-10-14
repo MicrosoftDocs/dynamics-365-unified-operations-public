@@ -5,7 +5,7 @@ title: Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
 description: This topic explains what data is synchronized in a Talent and Finance integration.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -43,8 +43,9 @@ the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance]
 
 For Attract and Onboard, all data is native to Common Data Service.
 
-## Why don't I see any data synced to CDS?
-The CDS integration is off by default on new environments that don’t include the provided demo data. New environments with demo data will have the integration turned on and will start syncing data when the environment is provisioned. Once your environment is ready to sync data, it can be enabled on the [Common Data Service configuration form](https://docs.microsoft.com/en-us/dynamics365/talent/hr-cds-admin-form).
+## Why don't I see any data synced to Common Data Service?
+
+Common Data Service integration is off by default on new environments that don’t include the provided demo data. It's on by default in new environments that have demo data, and data syncing begins when the environment is provisioned. Once your environment is ready to sync data, you can turn on integration. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
 
 ## Can I create a new mapping without using the templates?
 

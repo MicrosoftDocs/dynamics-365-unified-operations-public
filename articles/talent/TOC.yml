@@ -393,8 +393,8 @@
     items:
     - name: Data integration guidance for Dynamics 365 for Talent
       href: data-integration.md
-    - name: Common Data Service configuration form
-      href: hr-cds-admin-form.md
+    - name: Configure Common Data Service integration
+      href: hr-common-data-service-integration.md
     - name: Integrate with Dynamics 365 for Finance and Operations
       href: talent-financeandoperations-integration.md
     - name: Configure the payroll integration between Talent and Dayforce
