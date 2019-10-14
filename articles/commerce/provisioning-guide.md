@@ -5,7 +5,7 @@ title: Configure an e-Commerce evaluation environment
 description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 10/08/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
