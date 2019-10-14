@@ -121,11 +121,17 @@ After you sign in to the environment through Remote Desktop, if you want to acce
 
 
 ## VM that is running on-premises
-An environment virtual hard disk (VHD) is made available for download from LCS, so that it can be set up on a local machine. This system is intended to be accessed by a developer.
+An virtual hard disk (VHD) is made available for download from LCS, so that it can be set up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
-1.  On the main page for your LCS project, in the **Environments** section, click the plus sign (**+**), and then click **Locally**. You're taken to the Connect site.
-2.  Go to the **Downloads** page to download the latest VHD.
-3.  In Microsoft Hyper-V Manager, create a local VM from the VHD that you downloaded. It's a good idea to give your VM the recommended 16 gigabytes (GB) of memory and two virtual processors. Don't use dynamic memory allocation.
+1. Go to the LCS main page and select **Shared asset library** or click [here](https://lcs.dynamics.com/V2/SharedAssetLibrary)
+2. Select the asset type **Downloadable VHD**
+3. Find the VHD you are looking for based on the desired Finance and Operation version.
+
+The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
+
+4. Download all files (parts) associated with the desired VHD to a local folder.
+5. When you complete the download, run the executuable file that you downloded, accept the software license agreement, and choose a file path to extract the VHD to.
+6. This will create a local VHD file that can be used to run a local Virtual Machine (VM).
 
 ### Retail configuration
 
