@@ -56,7 +56,7 @@ You might want to disable integration if:
 > When you disable data integration, be sure not to edit the same record in both environments. When you turn integration back on, the record you last edited will sync. This could result in data loss if you don't make the same changes to the record in both environments.
 
 ## Access the Common Data Service integration page
-
+ 
 1. In the Talent instance where you want to view or configure settings for integration with Common Data Service, select the **System administration** tile.
 
    [![System administration tile](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
