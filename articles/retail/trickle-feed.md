@@ -40,7 +40,7 @@ In Dynamics 365 Retail versions 10.0.4 and earlier, retail statement posting is 
 With the public preview of trickle feed-based order creation introduced in Retail version 10.0.5, transactions are processed throughout the day, and only the financial reconciliation of tenders and other cash management transactions are processed at the end of the day. This functionality splits the load of creating sales orders, invoices, and payments throughout the day, providing better perceived performance and the ability to recognize revenue and payments in the books in near real-time. 
 
 
-# How to use trickle feed-based posting
+## How to use trickle feed-based posting
   
 1. To enable trickle feed-based posting of retail transactions, go to **System administration > Set up > License configuration** and disable the the **Retail statements** key.
 
