@@ -50,7 +50,7 @@ What do you need to do to take this change?
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
 
-## Project contact committed detail
+## Project contract committed detail
 You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
 
 ## Purchase agreement responsible party

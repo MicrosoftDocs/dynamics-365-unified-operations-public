@@ -536,6 +536,16 @@
           href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
         - name: Retail transaction consistency checker
           href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
+        - name: Disable rules in retail transaction consistency checker
+          href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
+        - name: Edit and audit retail store transactions
+          href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
+        - name: Create, calculate, and post statements for a retail store
+          href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
+        - name: Improvements to statement posting functionality
+          href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
+        - name: Trickle feed-based order creation for retail store transactions
+          href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
         - name: Create, calculate, and post statements for a retail store
           href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
         - name: Improvements to statement posting functionality

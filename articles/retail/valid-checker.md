@@ -5,7 +5,7 @@ title: Retail transaction consistency checker
 description: This topic describes the retail transaction consistency checker functionality in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -63,7 +63,10 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Gift card item** – Retail doesn't support the return of gift card items. However, the balance on a gift card can be cashed out. Any gift card item that is processed as a return line instead of a cash-out line fails the statement posting process. The validation process for gift card items helps guarantee that the only return gift card line items on the retail transaction tables are gift card cash-out lines.
 - **Negative price** – Validates that there are no negative price transaction lines.
 - **Item & Variant** – Validates that items and variants on the transaction lines exist in the item and variant master file.
-- **Tax amount** - Validate tax records match the tax amounts on the lines. 
+- **Tax amount** - Validates that tax records match the tax amounts on the lines.
+- **Serial number** - Validates that the serial number is present in the transaction lines for items that are controlled by serial number.
+- **Sign** - Validates that the sign on the quantity and the net amount are the same in all the transaction lines.
+- **Business date** - Validates that the financial periods for all the business dates for the retail transactions are open.
 
 ## Set up the consistency checker
 

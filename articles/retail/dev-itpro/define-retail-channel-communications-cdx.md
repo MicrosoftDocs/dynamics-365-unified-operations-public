@@ -41,8 +41,6 @@ Overview
 
 Commerce Data Exchange is a system that transfers data between Retail headquarters and retail channels, such as online stores or brick-and-mortar stores. The database that stores data for a retail channel is separate from the Retail database. The channel database holds only the data that is required for retail transactions. Master data is configured in Retail headquarters and distributed to channels. Transactional data is created in the point of sale (POS) system or the online store, and then uploaded to Retail headquarters. Data distribution is asynchronous. In other words, the process of gathering and packaging data at the source occurs separately from the process of receiving and applying data at the destination. For some scenarios, such as price and inventory lookups, data must be retrieved in real time. To support these scenarios, Commerce Data Exchange also includes a service that enables real-time communication between Retail headquarters and a channel. 
 
-[![updated-retail-graphic](./media/updated-retail-graphic.png)](./media/updated-retail-graphic.png)  
-
 ## Async Service
 Microsoft SQL Server change tracking on the Retail database is used to determine the data changes that must be sent to channels. Based on a distribution schedule, Retail headquarters packages that data and saves it to central storage (Azure blob storage). A separate batch process uses the Commerce Data Exchange: Async Client library to insert this data package into the channel database. 
 
