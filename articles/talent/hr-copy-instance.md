@@ -38,7 +38,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dyna
 > [!IMPORTANT]
 > When you copy the Core HR database, you don't copy the elements (apps or data) that are contained in a Microsoft PowerApps environment. For information about how to copy elements in a PowerApps environment, see [Copy an environment](https://docs.microsoft.com/power-platform/admin/copy-environment).
 
-## Effects of a copying a Core HR database
+## Effects of copying a Core HR database
 
 The following events occur when you copy a Core HR database:
 
