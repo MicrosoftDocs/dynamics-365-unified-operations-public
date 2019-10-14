@@ -5,7 +5,7 @@ title: Deploy a new e-Commerce site
 description: This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -54,22 +54,22 @@ Use this procedure to initialize the e-Commerce feature in an existing environme
 
 Before you begin, make sure that you have the following required information:
 
-- The RCSU that will be used
-- The Microsoft Azure Active Directory (Azure AD) security group that will be used for system admins
-- The domains that will be associated with the environment
+- The RCSU that will be used.
+- The Microsoft Azure Active Directory security group that will be used for e-Commerce system admins.
+- The Microsoft Azure Active Directory security group that will be used for ratings and reviews moderators.
+- The domains that will be associated with the environment.
 
 In addition, you can collect the following optional information:
 
 - Azure AD business-to-consumer (B2C) information:
 
-	- Tenant Name
-	- Client ID
-	- Login Custom Domain
-	- Reply URL
-	- SignUp SignIn Policy ID
-	- Reset password Policy ID
-	- Edit Profile Policy ID
-	- The security group that will be used for moderation of ratings and reviews
+	- Tenant Name.
+	- Client ID.
+	- Login Custom Domain.
+	- Reply URL.
+	- SignUp SignIn Policy ID.
+	- Reset password Policy ID.
+	- Edit Profile Policy ID.
 
 [!NOTE]
 This information can be added later, through a service request.
