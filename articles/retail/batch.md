@@ -43,3 +43,6 @@ To define the default batch ID that is used for sales order invoicing through st
 
 > [!NOTE]
 > This functionality is available only when advanced warehousing is turned on for the specific store warehouse and items. In a later release, the functionality will also be supported for scenarios where advanced warehouse management isn't used.
+
+> [Note]
+> Support for improved handling of batch-tracked items during statement posting for non advanced warehouse management sceanrios was introduced in the release 10.0.5
