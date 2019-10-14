@@ -47,7 +47,7 @@ With the public preview of trickle feed-based order creation introduced in Retai
 2. On the same page, enable the **Retail statements (trickle feed) – Preview** license key. When you enable this key, make sure there are no pending statements waiting to be posted. 
 
 > [!Important]
-> Before you enable the **Retail statements (trickle feed) – Preview** license key, make sure that no pending statements are waiting to > be posted.
+> Before you enable the **Retail statements (trickle feed) – Preview** license key, make sure that no pending statements are waiting to be posted.
 
 3. The current statement document will be split into two different types; transactional statement and financial statement.
 
