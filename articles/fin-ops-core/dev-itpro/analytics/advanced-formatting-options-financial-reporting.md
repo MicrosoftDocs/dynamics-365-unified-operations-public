@@ -221,7 +221,7 @@ In this example, the calculation formula **@100+@330** means that the amount in 
 When the row in a row definition has a format code of **CAL**, and you enter a mathematical calculation in the **Related Formulas/Rows/Units** cell, you must also enter the letter of the associated column and row on the report. For example, enter **A.120** to represent column A, row 120. Alternatively, you can use an at sign (@) to indicate all columns. For example, enter **@120** to represent all columns in row 120. Any mathematical calculation that doesn't have a column letter or an at sign (@) is assumed to be a real number.
 
 > [!NOTE]
-> If you use a label row code to reference a row, you must use a period (.) as a separator between the column letter and the label (for example, **A.GROSS\_MARGIN/A.SALES**). If you use an at sign (@), a separator isn't required (for example, **@GROSS\_MARGIN/@SALES**).
+> If you use a label row code to reference a row, you must use a period (.) as a separator between the column letter and the label (for example, **A.GROSS\_MARGIN/A.SALES**). If you use an at sign (@), a separator isn't required (for example, **\@GROSS\_MARGIN/@SALES**).
 
 ### Example of a calculation formula for a specific column
 
@@ -277,15 +277,15 @@ The **THEN** and **ELSE** formulas can be any valid calculation, from very simpl
 
 ### Restricting a calculation to a reporting unit in a row definition
 
-To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree.
+To restrict a calculation to a single reporting unit in a reporting tree, so that the resulting amount isn't rolled up to a higher-level unit, you can use the **\@Unit** code in the **Related Formulas/Rows/Units** cell in the row definition. The **\@Unit** code is listed in column B of the reporting tree, **Unit Name**. When you use the **\@Unit** code, the values aren't rolled up, but the calculation is evaluated at every level of the reporting tree.
 
 > [!NOTE]
 > To use this function, a reporting tree must be associated with the row definition.
 
 The calculation row can refer to a calculation row or a financial data row. The calculation is recorded in the **Related Formulas/Rows/Units** cell of the row definition and the financial data–type restriction. The calculation must use a conditional calculation that starts with an **IF @Unit** construction. Here is an example: IF @Unit(SALES) THEN @100 ELSE 0 This calculation includes the amount from row 100 in every column of the report, but only for the SALES unit. If multiple units are named SALES, the amount appears in each of those units. Additionally, row 100 can be a financial data row and can be defined as non-printing. In this case, the amount is prevented from appearing in all units in the tree. You can also limit the amount to a single column of the report, such as column H, by using a column restriction to print the value only in that column of the report. You can include **OR** combinations in an **IF** statement. Here is an example: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 You can specify a unit in a calculation-type restriction in one of the following ways:
 
-- Enter a unit name to include units that match. For example, **IF @Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
-- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF @Unit(ACME:SALES**) to restrict the calculation to SALES units in the ACME company.
+- Enter a unit name to include units that match. For example, **IF \@Unit(SALES)** enables the calculation for any unit that is named SALES, even if there are several SALES units in the reporting tree.
+- Enter the company and unit name to restrict the calculation to specific units in a specific company. For example, enter **IF \@Unit(ACME:SALES**) to restrict the calculation to SALES units in the ACME company.
 - Enter the full hierarchy code from the reporting tree to restrict the calculation to a specific unit. For example, enter **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.
 
 > [!NOTE]
