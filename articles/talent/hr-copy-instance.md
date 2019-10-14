@@ -47,7 +47,7 @@ The following events occur when you copy a Core HR database:
 - Documents in Microsoft Azure Blob storage aren't copied from one environment to another. Therefore, any document handling documents and templates that are attached won't be changed but will remain in their current state.
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before other users are allowed back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
-- All data management framework that have recurring import and export jobs must be fully processed and stopped in the target system before the restore process is started. In addition, we recommend that you select the database from the source system after all recurring import and export jobs have been fully processed. In this way, you help guarantee that there are no orphaned files in Azure Storage from either system. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore process, the integration jobs can resume.
+- All data management frameworks that have recurring import and export jobs must be fully processed and stopped in the target system before the copy process is started. In addition, we recommend that you select the database from the source system after all recurring import and export jobs have been fully processed. In this way, you help guarantee that there are no orphaned files in Azure Storage from either system. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore process, the integration jobs can resume.
 
 ## Copy the Core HR database
 
@@ -62,27 +62,27 @@ To complete this task, you first copy an instance. You then sign in to the Micro
 4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the value of the **Copy status** field to be updated to **Completed**.
 5. Select **Power Platform**, and sign in to the Microsoft Power Platform Admin Center.
 6. Select the PowerApps environment to copy, and then select **Copy**.
-7. When the copy process is completed, sign in to your instance, and enable Common Data Service integration. For more information and instructions, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
+7. When the copy process is completed, sign in to the target instance, and enable Common Data Service integration. For more information and instructions, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
 
 ## Data elements and statuses
 
 The following data elements aren't copied when you copy a Core HR instance:
 
-- Email addresses in the LogisticsElectronicAddress table.
-- Th ebatch job history in the BatchJobHistory, BatchHistory, and BatchConstraintHistory tables.
-- The Simple Mail Transfer Protocol (SMTP) password in the SysEmailSMTPPassword table.
-- The SMTP Relay server in the SysEmailParameters table.
-- Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
-- Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-- Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overridden in the source environment.
-- The connection string in the PersonnellIntegrationConfiguration table.
+- Email addresses in the **LogisticsElectronicAddress** table.
+- The batch job history in the **BatchJobHistory**, **BatchHistory**, and **BatchConstraintHistory** tables.
+- The Simple Mail Transfer Protocol (SMTP) password in the **SysEmailSMTPPassword** table.
+- The SMTP Relay server in the **SysEmailParameters** table.
+- Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables.
+- Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables.
+- Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
+- The connection string in the **PersonnellIntegrationConfiguration** table.
 
-Some of these elements aren't copied because they are environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still enabled in the user acceptance testing (UAT) environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup actions.
+Some of these elements aren't copied because they are environment-specific. Examples include **BatchServerConfig** and **SysCorpNetPrinters** records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still enabled in the user acceptance testing (UAT) environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup actions.
 
 In addition, the following statuses change when you copy an instance:
 
-- All users except the Admin user are set to **Disabled** status.
-- All batch jobs are set to **Withhold** status.
+- All users except Admin are set to **Disabled**.
+- All batch jobs are set to **Withhold**.
 
 ## Environment admin
 
