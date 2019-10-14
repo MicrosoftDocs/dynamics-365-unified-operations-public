@@ -5,7 +5,7 @@ title: Edit and audit retail store transactions
 description: This topic describes the functionality for editing and auditing retail store transactions. 
 author: josaw1
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 10/15/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
