@@ -933,7 +933,7 @@
       - name: Disable rules in retail transaction consistency checker
         href: disable-consistency-check-rule.md
       - name: Edit and audit retail store transactions
-        href: edit-audit-retail-transaction.md
+        href: edit-audit-retail-transactions.md
       - name: Create, calculate, and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
       - name: Improvements to statement posting functionality
