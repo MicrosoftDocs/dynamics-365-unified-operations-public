@@ -2239,6 +2239,8 @@
             href: localizations/rus-VAT-declaration.md
           - name: Sales books, purchase books, and invoice-factures journals
             href: localizations/rus-sales-books-purchase-books.md
+          - name: Prepayments management
+            href: localizations/rus-prepayments-management.md
         - name: Fixed assets
           items: 
           - name: Managing fixed assets
