@@ -746,6 +746,8 @@
           href: general-ledger/posting-definitions.md
         - name: Posting definition examples
           href: general-ledger/example-posting-definitions.md
+        - name: Set up default descriptions for automatic posting 
+          href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
         - name: General ledger account balances
           href: general-ledger/general-ledger-account-balances.md
         - name: Define financial dimensions
