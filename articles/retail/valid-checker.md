@@ -66,7 +66,7 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Tax amount** - Validates that tax records match the tax amounts on the lines.
 - **Serial number** - Validates that the serial number is present in the transaction lines for items that are controlled by serial number.
 - **Sign** - Validates that the sign on the quantity and the net amount are the same in all the transaction lines.
--**Business date** - Validates that the financial periods for all the business dates for the retail transactions are open
+- **Business date** - Validates that the financial periods for all the business dates for the retail transactions are open
 
 ## Set up the consistency checker
 
