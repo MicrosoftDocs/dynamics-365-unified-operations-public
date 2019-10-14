@@ -245,10 +245,10 @@ Make sure that **USRT** legal entity is selected (top right corner).
 1. Log in to the environment (HQ).
 1. Using the menu on the left, go to **Retail > Inquiries and reports > Batch jobs**.
 1. Perform the following steps for each of the jobs in the list below:
-	* **Process retail order email notification**
-	* **Product availability**
-	* **P-0001**
-	* **Synchronize orders job**
+	* **Process retail order email notification**.
+	* **Product availability**.
+	* **P-0001**.
+	* **Synchronize orders job**.
 1. Use the Quick Filter to search for the job using its name (listed above).
 1. If the Status of the job is **Withhold**, perform the following steps:
 	1. Select the record.
