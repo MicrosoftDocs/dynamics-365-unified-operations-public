@@ -326,7 +326,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 	* Example URL: https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/MA1nQC
 1. Replace the last identifier in the URL (MA1nQC in the example URL above) with the following string: **search?fileName=**
 	* Example URL after replacement: https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/search?fileName=
-	* This is your **Media base URL** - make note of it 
+	* This is your **Media base URL** - make note of it.
 ##### Updating the media base URL
 1. Log in to the environment (HQ).
 1. Using the menu on the left, go to **Modules > Retail > Channel setup > Channel profiles**.
