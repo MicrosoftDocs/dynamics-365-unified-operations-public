@@ -59,7 +59,7 @@ Use Microsoft Visual Studio to import the tutorial project. The tutorial project
 5.  In the **Select the file to import** dialog box, browse to the **Downloads** folder, click **FMTutorialDataModel.axpp**, and then click **Open**.
 6.  Select the **Overwrite Elements** check box and the **Current solution** option. The following illustration shows the completed **Import Project** dialog box. 
 
-    [![Import project](./media/importproject1.png)](./media/importproject1.png)
+    [![Completed Import Project dialog box](./media/importproject1.png)](./media/importproject1.png)
 
 7.  Click **OK**.
 8.  In Solution Explorer, expand **Classes**, and then, under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
