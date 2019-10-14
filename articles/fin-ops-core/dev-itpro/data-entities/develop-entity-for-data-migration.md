@@ -5,7 +5,7 @@ title: Develop entities for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,7 +48,7 @@ This tutorial requires that you access the environment by using Remote Desktop. 
 Throughout this tutorial, "base URL" refers to the base URL of the instance.
 
 - In the cloud environment, you obtain the base URL from Microsoft Dynamics Lifecycle Services (LCS).
-- On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
+- On a local virtual machine (VM), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 ## Developing an entity in Visual Studio and enabling it for data export
 ### Business problem
