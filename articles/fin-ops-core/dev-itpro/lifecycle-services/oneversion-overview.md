@@ -62,7 +62,7 @@ Users must opt in to new features and turn them on. All updates are applied firs
 
 Additionally, a notification email will be sent five days in advance, and a notification will appear in LCS just before an update, as shown in the following illustration.
 
-[![Upcoming updates notification in LCS](./media/Notification-bar.PNG)](./media/Notification-bar.PNG)
+[![Upcoming updates notification in LCS](./media/Notification-bar.png)](./media/Notification-bar.png)
 
 ## Update
 
