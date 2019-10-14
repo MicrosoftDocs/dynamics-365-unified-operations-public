@@ -31,6 +31,12 @@ ms.dyn365.ops.version: 10.0
 ---
 # Improved handling of batch-tracked items
 
+
+[!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
+
+
 In Retail Point of Sale (POS), batch numbers can't be captured for batch-tracked items at the time of sale. However, for specific configurations, when sales are posted in the headquarters through customer orders or statement posting, the Microsoft Dynamics system expects that valid batch numbers for batch-tracked items exist, and that they will be used during the invoicing process.
 
 If valid batch numbers are available for products, the customer order invoicing process and the sales order invoicing process from statement posting use them. Otherwise, the customer order invoicing process can't post, and the POS user receives an error message. Statement posting then goes into an error state. This error state occurs even when negative inventory has been turned on for the products.
