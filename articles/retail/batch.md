@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0
 # Improved handling of batch-tracked items
 
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 
 In Retail Point of Sale (POS), batch numbers can't be captured for batch-tracked items at the time of sale. However, for specific configurations, when sales are posted in the headquarters through customer orders or statement posting, the Microsoft Dynamics system expects that valid batch numbers for batch-tracked items exist, and that they will be used during the invoicing process.
@@ -50,5 +50,5 @@ To define the default batch ID that is used for sales order invoicing through st
 > [!NOTE]
 > This functionality is available only when advanced warehousing is turned on for the specific store warehouse and items. In a later release, the functionality will also be supported for scenarios where advanced warehouse management isn't used.
 
-> [Note]
+> [!NOTE]
 > Support for improved handling of batch-tracked items during statement posting for non-advanced warehouse management scenarios was introduced in Retail version 10.0.5.
