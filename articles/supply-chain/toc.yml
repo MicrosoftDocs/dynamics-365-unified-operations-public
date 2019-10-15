@@ -1691,10 +1691,6 @@
             href: production-control/register-material-consumption-hand-held-device.md
           - name: Control raw material consumption by using flushing principles
             href: production-control/flushing-principles.md
-          - name: Cross-docking from production orders to outbound docks
-            href: production-control/cross-docking-opportunities.md
-          - name: Auto-release shipment for cross-docking 
-            href: warehousing/auto-release-shipment-for-cross-docking.md
           - name: Set the production output location for finished goods
             href: production-control/production-output-location.md
           - name: Report BOMs as finished
@@ -2291,8 +2287,12 @@
           href: warehousing/manage-warehouse-workers.md
         - name: Deferred processing of warehouse work
           href: warehousing/deferred-put.md
-        - name: Cancel warehouse work for exception handling
-          href: warehousing/cancel-warehouse-work.md
+      - name: Cross-docking
+        items:
+        - name: Cross-docking from production orders to outbound docks
+          href: production-control/cross-docking-opportunities.md
+        - name: Auto-release shipment for cross-docking 
+          href: warehousing/auto-release-shipment-for-cross-docking.md
       - name: Partial release and partial shipment
         items:
         - name: Partial shipment of a transport load
@@ -2319,6 +2319,8 @@
           href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
         - name: Set up short picking item reallocation
           href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+        - name: Cancel warehouse work for exception handling
+          href: warehousing/cancel-warehouse-work.md
       - name: Inventory counting
         items:
         - name: Reason codes for inventory counting
