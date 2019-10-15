@@ -42,9 +42,11 @@ With traditional personalization, users could only have a single set of personal
 
 -    Views created for particular page types can also include user-added filters or sorts, which allows users to quickly return to commonly filtered datasets. See the [What pages support views](saved-views.md#what-pages-support-views) section for more details. 
 
--    Views can be published to security roles, meaning any user with that role will be able to access and use that view, regardless of the user’s ability to personalize. This publish capability allows organizations to define corporate standard views that are optimized for their business. See the [Managing personalizations at an organizational level with views](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) section for more information.
+-    Views can be published to users in specific security roles and in specific legal entities, meaning any user with that role in the desired legal entity will be able to access and use that view, regardless of the user’s ability to personalize. This publish capability allows organizations to define corporate standard views that are optimized for their business. See the [Managing personalizations at an organizational level with views](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) section for more information.
 
 -    Unlike traditional personalization, views are not automatically saved when a user performs explicit personalizations or filters a list. Explicit saves are required to provide flexibility in creating a view before or after the changes associated with that view have been made and to ensure that view definitions are not unintentionally altered by filters or personalizations that are not intended for long-term use.  
+
+-    Views can be added to workspaces as tiles, lists, or links. This allows not only a filtered dataset to be surfaced on a workspace, but allows the user to associate a set of personalizations that are relevant to that dataset with the tile or link.  
 
 ## Switching between views
 After views have been enabled for an environment, any page that supports views will include a collapsed view selector control at the top of the form that shows the name of the current view.  
