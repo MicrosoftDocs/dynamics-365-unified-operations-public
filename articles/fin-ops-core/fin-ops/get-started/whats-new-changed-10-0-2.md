@@ -45,7 +45,7 @@ To learn about the new features and changes in the latest releases of Retail, se
 
 You can use the **Recover vendor invoices** page to recover or release vendor invoices that have been in use for more than four hours, so that they can be edited. You can open this page from the **Periodic task** navigation link or a tile on the **Vendor invoice entry** workspace. After an invoice is recovered, it will be available for editing on the **Vendor invoice** page.
 
-For more information, see [Vendor invoices overview](../../finance/accounts-payable/vendor-invoices-overview.md).
+For more information, see [Vendor invoices overview](../../../finance/accounts-payable/vendor-invoices-overview.md).
   
 ## Bank foreign currency revaluation
 
@@ -64,7 +64,7 @@ This feature lets you create sales orders for time and material projects where t
 This developer features enables you to efficiently write unit and component tests using a rich domain-specific language that contains hundreds of entities such as sales orders, customers, and items. For more information, see  [Acceptance test library](../../dev-itpro/perf-test/acceptance-test-library.md).  
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Extensibility enhancements
 
