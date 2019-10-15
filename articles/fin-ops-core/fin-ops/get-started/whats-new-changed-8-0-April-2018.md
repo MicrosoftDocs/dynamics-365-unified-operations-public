@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/28/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -135,7 +135,7 @@ Provides a quick and effective channel to escalate issues to Microsoft Support i
 
 ### Vendor collaboration – RFQ process
 
-Enhancements make it easy to tell who entered a bid (a vendor or a procurement department). For more information, see [Requests for quotation (RFQs)](../../supply-chain/procurement/request-quotations.md).
+Enhancements make it easy to tell who entered a bid (a vendor or a procurement department). For more information, see [Requests for quotation (RFQs)](../../../supply-chain/procurement/request-quotations.md).
 
 ### Partial shipment of a load (split load)
 
@@ -143,15 +143,15 @@ Allows single loads or multiple loads to be fully or partially loaded.
 
 ### Immediate replenishment of locations
 
-Used during wave execution if allocation fails for a location directive line that has a replenishment template. For more information about immediate replenishment, see [Immediate replenishment](../../supply-chain/warehousing/immediate-replenishment.md).
+Used during wave execution if allocation fails for a location directive line that has a replenishment template. For more information about immediate replenishment, see [Immediate replenishment](../../../supply-chain/warehousing/immediate-replenishment.md).
 
 ### Reason codes added to warehouse counting and adjustment
 
-Users can add a reason code when performing counts and when making an adjustment. For more information about reason codes, see [Reason codes for inventory counting](../../supply-chain/warehousing/reason-codes-for-counting-journals.md).
+Users can add a reason code when performing counts and when making an adjustment. For more information about reason codes, see [Reason codes for inventory counting](../../../supply-chain/warehousing/reason-codes-for-counting-journals.md).
 
 ### Batch balancing enabled for advanced warehousing processes
 
-The batch balancing process is now available for products that are set up for warehouse management processes (in earlier releases, the batch balancing process was enabled only for products that were not set up for warehouse management processes). This enhancement makes it possible for the user to release ingredients to picking after the batch balancing process has been completed. For more information about batch balancing, see [Batch balancing](../../supply-chain/production-control/batch-balancing.md).
+The batch balancing process is now available for products that are set up for warehouse management processes (in earlier releases, the batch balancing process was enabled only for products that were not set up for warehouse management processes). This enhancement makes it possible for the user to release ingredients to picking after the batch balancing process has been completed. For more information about batch balancing, see [Batch balancing](../../../supply-chain/production-control/batch-balancing.md).
 
 ### Analytical workspaces with embedded Power BI for Cost management
 
@@ -171,7 +171,7 @@ New features include import and testing scenarios, and also broader support for 
 
 ### Improved delivery of platform and financial reporting updates
 
-Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible. For more information, see [Finance and Operations cloud platform monthly updates FAQ](../../dev-itpro/sysadmin/faq-platform-monthly-updates.md).
+Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible. For more information, see [Finance and Operations cloud platform monthly updates FAQ](../../../dev-itpro/sysadmin/faq-platform-monthly-updates.md).
 
 ### Upgrade automation
 
