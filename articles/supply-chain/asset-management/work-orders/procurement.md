@@ -5,7 +5,7 @@ title: Procurement
 description: This topic explains procurement in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,81 +25,83 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
 ---
 
 # Procurement
 
-
 [!include [banner](../../includes/banner.md)]
 
- 
+In Asset Management, you can get an overview of purchase requisitions and purchase orders that are related to work orders. You can also create a purchase order or a purchase requisition from a work order.
 
-In Asset Management, you can get an overview of purchase requisitions and purchase orders related to work orders. It is also possible to create a purchase order or a purchase requisition from a work order.
+The **Work order purchase requisition** list page (**Asset management** > **Common** > **Procurement** > **Work order purchase requisition**) shows a list of purchase requisitions that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase requisition** Action Pane tab to perform various actions:
 
-In the **Work order purchase requisition** list (**Asset management** > **Common** > **Procurement** > **Work order purchase requisition**), you see a list of purchase requisitions related to work orders.
+- To open the related purchase requisition, select **Purchase requisition**. 
+- To open the related work order, select **Work order**.
+- To get an overview that shows where the item on the selected line is used in relation to assets, maintenance job type defaults, spare parts, and work orders in Asset Management, select **Item where used**. For more information about this overview, see [Item where used](../controlling-and-reporting/item-where-used.md).
 
-- Select a work order job in the **Work order purchase requisition** list, and click the **Purchase requisition** button to open the related purchase requisition.  
-- Select a work order job in the **Work order purchase requisition** list, and click the **Work order** button to open the related work order.  
-- Select a work order job in the **Work order purchase requisition** list, and click the **Item where used** button if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. 
+The illustration below shows an example of the **Work order purchase requisition** list page.
 
 ![Figure 1](media/08-work-orders.png)
 
 
-In the **Work order purchase** list (**Enterprise asset management** > **Common** > **Procurement** > **Work order purchase**), you can see a list of purchase orders related to work orders.
+The **Work order purchase** list page (**Asset management** > **Common** > **Procurement** > **Work order purchase**) shows a list of purchase orders that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase** tab of the Action Pane to perform various actions:
 
-- Select a work order job in the **Work order purchase** list, and click the **Purchase order** button to open the related purchase order.  
-- Select a work order job in the **Work order purchase** list, and click the **Work order** button to open the related work order.  
-- Select a work order job in the **Work order** purchase list, and click the **Item where used** button if you want to get an overview of where the item on the selected line is used in Asset Management in relation to assets, maintenance job type defaults, spare parts, and work orders. 
+- To open the related purchase order, select **Purchase order**. 
+- To open the related work order, select **Work order**.
+- To get an overview that shows where the item on the selected line is used in relation to assets, maintenance job type defaults, spare parts, and work orders in Asset Management, select **Item where used**. For more information about this overview, see [Item where used](../controlling-and-reporting/item-where-used.md).
+
+The illustration below shows an example of the **Work order purchase** list page.
 
 ![Figure 2](media/09-work-orders.png)
 
 
-In the lists shown above, an icon regarding delivery date control is placed to the right on each line. If the icon shows an exclamation mark in a red circle, it means that delivery on the related purchase requisition or purchase order may be delayed.
+On both the **Work order purchase** list page and the **Work order purchase requisition** list page, a symbol that is related to delivery date control appears on the right side of each line. If the symbol is an exclamation point in a red circle, delivery of the related purchase order or purchase requisition might be delayed.
 
-On a purchase requisition, the date used to calculate possible delay is found in the **Purchase requisitions** form > **Purchase requisition header** FastTab > **Requested date** field. That date is compared to the available date on the work order or work order job in the same way as the purchase order date.
+For a purchase order, the date that is related to the purchase order line is used to calculate a possible delay. To view this date, on the **Purchase order** page, select the purchase order line. The date is shown in the **Confirmed delivery date** field on the **Setup** tab of the **Line details** FastTab. If the **Confirmed delivery date** field isn't set, the date in the **Delivery date** field on the **Purchase order header** FastTab is used for the calculation. One of those dates is compared to the available date on the work order or work order job, in the following order:
 
-On a purchase order, the date used to calculate possible delay is the date related to the purchase order line, which shown in the **Purchase order** form > select purchase order line > **Line details** FastTab > **Setup** tab > **Confirmed delivery date** field. If that field is not filled out, the date in the **Delivery date** field on the **Purchase order header** FastTab is used. One of those dates is compared to the available date on the work order or work order job in the following order:
+1. Actual start date on the work order  
 
-- Actual start date on the work order, or  
+2. Scheduled start date on the related work order job 
 
-- Scheduled start date on the related work order job, or  
+3. Scheduled start date on the work order 
 
-- Scheduled start date on the work order, or  
+4. Expected start date on the work order 
 
-- Expected start date on the work order  
+For a purchase requisition, the date in the **Requested date** field on the **Purchase requisition header** FastTab of the **Purchase requisitions** page is used to calculate a possible delay. The date in that field is compared to the available date on the work order or work order job, in the same order that is used for a purchase order.
 
 
-## Create purchase order from a work order
+## Create a purchase order from a work order
 
-In **All Work orders**, you select a work order job and create a related purchase order or a purchase requisition. This is done to ensure project relations between the purchase order or purchase requisition and the work order.
+On the **All work orders** list page, you can select a work order job, and then create a related purchase order or a related purchase requisition. In this way, you help guarantee that project relations exist between the purchase order or purchase requisition and the work order.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
 
-2. In the **All work orders** or **Active work orders** list, select the work order for which you want to create a purchase order, and click **Edit**.
+2. Select the work order to create a purchase order for, and then select **Edit**.
 
-3. In the **Work order** form > **Work order maintenance jobs** FastTab, select the work order job for which you want to create the purchase order.
+3. On the **Work order maintenance jobs** FastTab, select the work order job to create the purchase order for.
 
-4. Click **Item tasks** > **Purchase order from work order job**.
+4. Select **Item tasks** > **Purchase order from work order job**.
 
-5. In the **Project purchase orders** list page, click **New**.
+5. On the **Project purchase orders** list page, click **New**.
 
 6. Create the purchase order.
 
 >[!NOTE]
->Creating a purchase requisition is almost identical to creating a purchase order. The only difference is that in the above procedure, you click **Item tasks** > **Purchase requisition from work order job** in step 2.
+>To create a related purchase requisition, follow the same steps. However, select **Item tasks** > **Purchase requisition from work order job** in step 4.
+
 
 ## Project relation between work order and purchase order or purchase requisition
 
-A purchase order line or purchase requisition line is related to a work order job via the work order project and the related project activity number. When you create a purchase order or purchase requisition from a work order job, the related project activity number is mandatory. The project activity number is automatically inserted on a purchase order or purchase requisition if the related work order contains work order jobs that all use the same maintenance job type. If the work order jobs contain different maintenance job types, the project activity number must be inserted manually.
+A purchase order line or purchase requisition line is related to a work order job via the work order project and the related project activity number. When you create a purchase order or purchase requisition from a work order job, the related project activity number is mandatory. If all the work order jobs in the related work order have the same maintenance job type, the project activity number is automatically entered on the purchase order or purchase requisition. If the work order jobs have different maintenance job types, you must manually enter the project activity number on the purchase order or purchase requisition.
 
-To see or insert the activity number related to a purchase order line, open **Work order purchase** > select the purchase order record > click on the purchase order in the **Purchase order** column > **Line details** FastTab > **Project** tab > **Activity number** field.
+To view or enter the activity number that is related to a purchase order line, on the **Work order purchase** list page, select the purchase order record, and then, in the **Purchase order** column, select the link for the purchase order. You can find the **Activity number** field on the **Project** tab of the **Line details** FastTab.
 
+The illustration below shows an example of the **Purchase order** page, with focus on the **Activity number**.
 
 ![Figure 3](media/10-work-orders.png)
 
-
-Likewise, to see or insert the activity number related to a work order purchase requisition line, open **Work order purchase requisition** > select the purchase requisition record > click on the purchase requisition in the **Purchase requisition** column > **Line details** FastTab > **Project** tab > **Activity number** field.
+Likewise, to view or enter the activity number that is related to a work order purchase requisition line, on the **Work order purchase requisition** list page, select the purchase requisition record, and then, in the **Purchase requisition** column, select the link for the purchase requisition. You can find the **Activity number** field on the **Project** tab of the **Line details** FastTab.
 
