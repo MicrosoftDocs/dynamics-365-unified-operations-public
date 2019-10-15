@@ -39,15 +39,14 @@ This topic explains how to set up and print accompanying invoices which also con
 
 - The primary address of the legal entity must be in Italy.
 - In **Feature management**, enable the feature, **Invoicing of packing slips**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
-- In **Print management** set the reference to *SalesInvoice.Report_IT* layout for Customer invoice.
+- In **Print management** set the reference to *SalesInvoice.Report_IT* layout for Customer invoice (Original).
 
 ***Accounts receivable > Setup > Forms > Form setup > General*** (FastTab) ***> Print management***:
 ![Invoicing of packing slips setup](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
 
 ## Accompanying invoices printing
-No specific setup required. Once enabled with **Invoicing of packing slips** feature, the layout of invoice report will be changed from a standard to the layout that contains packing slips details.
+Once enabled and set up, the invoice report printout will contain packing slips details.
 
-The example of an invoice printout with packing slips details:
 ![Invoicing of packing slips](media/emea-ita-exil-invoice-packing-slip-pic.jpg)
 
 > [!NOTE]
