@@ -53,7 +53,7 @@ In conjunction with our announcement in the [Strategic investments in core HR dr
 
 ### Common Data Service integration is now turned off by default on new provisions (343675)
  
-When new environments are provisioned, Common Data Service integration is now turned off. For more information, see [name of article--still pending](https://docs.microsoft.com/dynamics365/talent/hr-cds-admin-form).
+When new environments are provisioned, Common Data Service integration is now turned off. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
 
 ### Streamlined employee entry and navigation
 
