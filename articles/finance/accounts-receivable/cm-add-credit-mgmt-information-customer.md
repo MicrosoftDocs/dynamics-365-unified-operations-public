@@ -77,7 +77,8 @@ You can create one or more insurance policies and guarantees for each customer a
 
 You can create insurance policies and guarantees on the **Accounts receivable > Customers > All customers** page. Select a customer, select the **Credit management** action pane and select **Insurance and guarantees**.
 
-[!Note] In the following procedure, you'll select an insurer/guarantor from the global address book. If the insurers and guarantors haven't been added to the address book, they must be added before beginning this procedure.
+> [!Note]
+> In the following procedure, you'll select an insurer/guarantor from the global address book. If the insurers and guarantors haven't been added to the address book, they must be added before beginning this procedure.
 
 1. Enter  **Guarantee** or **Insurance** in the **Identifier** field.
 2. Select the **Guarantee/Insurance type** from the list of Guarantee/Insurance types that you set up previously.
@@ -89,17 +90,17 @@ You can create insurance policies and guarantees on the **Accounts receivable > 
 8. Enter the **Value** of the insurance or guarantee. This is the full value of the policy.
 9. Select the **Currency** for the policy value. 
 10. Select the **Update credit limit** percentage using a number between 0 and 100. The percentage will be applied to the policy value and the resulting amount will be used to increase the credit limit used in credit limit calculations. The calculated value is called the **Effective credit limit** and is displayed on the **Customers** page in the **Credit management statistics** fact box.
-For Example:
-  -  Assume a credit limit of 100,000 (A)
-  -  Assume a policy value of 50,000 (B)
-  -  Assume an update credit limit value of 50.00 (C)
-  -  The effective credit limit will now be 125,000 (A + (B * C))
+   For Example:
+   -  Assume a credit limit of 100,000 (A)
+   -  Assume a policy value of 50,000 (B)
+   -  Assume an update credit limit value of 50.00 (C)
+   -  The effective credit limit will now be 125,000 (A + (B * C))
 11. Select **Included in exposure** to reduce the credit limit used in credit limit calculations by the full value of the policy. The value calculated when specifying the **Update credit limit** percentage won't be used in credit limit calculations when this check box is selected.   
 For Example:
   -  Assume a credit limit of 100,000 (A)
   -  Assume a policy value of 50,000 (B)
   -  Assume an update credit limit value of 50.00 (C)
   -  The effective credit limit will now be 125,000 (A + (B * C))
-  -  Selct the check box to change the Included in exposure value to **Checked**.
+  -  Selct the check box to change the in the **Included in exposure** field to **Checked**.
   -  Remove the update credit limit value of 50,000
   -  The exposure value is 75,000 (A + (B * C)) – B
