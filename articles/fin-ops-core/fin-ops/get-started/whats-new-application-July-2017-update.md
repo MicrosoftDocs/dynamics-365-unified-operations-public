@@ -901,7 +901,7 @@ The Retail customer will also have an option for N-1 support if they are using D
 
 Enabling N-1 support requires customers to install the N-1 components that will enable the Dynamics AX 2012 R3 CU 11 or CU12 stores to connect with the new HQ. If the customer is using a pre-CU 11 version, then they must upgrade to at least Dynamics AX 2012 R3 CU 11 to leverage the N-1 support.
 
-For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](../../retail/dev-itpro/overview-upgrade-n-minus1.md) and [N-1 installation and configuration](../../../retail/dev-itpro/overview-upgrade-n-minus1.md).
+For details about Retail upgrade and N-1 support, see [Overview of upgrade and N-1 support](../../../retail/dev-itpro/overview-upgrade-n-minus1.md) and [N-1 installation and configuration](../../../retail/dev-itpro/overview-upgrade-n-minus1.md).
 
 ## Supply chain management
 
