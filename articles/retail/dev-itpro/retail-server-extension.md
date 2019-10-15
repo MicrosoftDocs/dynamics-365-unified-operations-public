@@ -173,4 +173,4 @@ The following illustration shows the class structure of the extension.
 
 10. To call the Retail Server extension in your client, you must generate the Retail proxy. You can then use the proxy to call your new Retail Server APIs from the client.
 
-    For information about how to generate the Retail proxy, see [Generate Retail proxy](typescript-proxy-retail-pos).
+    For information about how to generate the Retail proxy, see [Generate Retail proxy](typescript-proxy-retail-pos.md).
