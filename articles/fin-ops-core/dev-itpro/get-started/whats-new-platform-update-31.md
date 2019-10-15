@@ -36,6 +36,20 @@ ms.dyn365.ops.version: Platform update 31
 
 This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.XXXX. While the general availability date is in January, the new features are available for early release in October. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
+## New grid control (Preview) now available in Feature management
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace. 
+
+## Updates to Saved views (Preview)
+The saved views feature continues to evolve with Platform update 31! Notably included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities.   
+
+## Two new controls available for developers
+The Website Host control has been added to allow developers to embed third-party apps directly into Finance and Operations inside iframes. This is the first step towards allowing privileged users to embed apps via personalization, similar to the existing story for embedding PowerApps.  
+
+A new star rating control is also available for developers to use in Finance and Operations. This controls shows a rating on a scale of 1 to 5 stars in quarter-star increments.
+
+## Updated Finance and Operations product icon
+The new Finance and Operations product icon, which aligns with the latest icon stylings across Dynamics 365, is now visible in the web client.
+
 ## Data management export file size limitation of 256MB has been removed
 Exporting files using data management had a limitation of maximum flie size of 256MB. This limitation has been removed. This change is guarded by a flight DMFBlobSize256 which can be enabled to revert back to old behavior if any issues are encountered due to this change.
 
