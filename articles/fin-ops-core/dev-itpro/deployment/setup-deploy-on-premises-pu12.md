@@ -347,8 +347,8 @@ We have provided several scripts to help improve the setup experience. Follow th
 
 The infrastructure setup scripts use the following configuration files to drive the setup.
 - infrastructure\ConfigTemplate.xml
-- infrastructure\D365FO-OP\NodeTopologyDefintion.xml
-- infrastructure\D365FO-OP\DatabaseTopologyDefintion.xml
+- infrastructure\D365FO-OP\NodeTopologyDefinition.xml
+- infrastructure\D365FO-OP\DatabaseTopologyDefinition.xml
 
 >[!NOTE]
 >Configuration files must be updated based on your environment for the setup scripts to work correctly. Be sure to update these files with the proper computer names, IP addresses, service accounts, and domain based on your setup.
