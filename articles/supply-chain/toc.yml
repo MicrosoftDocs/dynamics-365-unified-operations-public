@@ -1693,6 +1693,8 @@
             href: production-control/flushing-principles.md
           - name: Cross-docking from production orders to outbound docks
             href: production-control/cross-docking-opportunities.md
+          - name: Auto-release shipment for cross-docking 
+            href: warehousing/auto-release-shipment-for-cross-docking.md
           - name: Set the production output location for finished goods
             href: production-control/production-output-location.md
           - name: Report BOMs as finished
@@ -2289,6 +2291,8 @@
           href: warehousing/manage-warehouse-workers.md
         - name: Deferred processing of warehouse work
           href: warehousing/deferred-put.md
+        - name: Cancel warehouse work for exception handling
+          href: warehousing/cancel-warehouse-work.md
       - name: Partial release and partial shipment
         items:
         - name: Partial shipment of a transport load
