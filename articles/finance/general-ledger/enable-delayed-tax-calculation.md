@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Enable delayed tax calculation on journal
-description: This topic explains how to use the **Enable delayed tax calculation on journal** feature to improve tax calculation performance when the volume of journal lines is huge.
+title: Enable delayed tax calculation on journals
+description: This topic explains how to turn on the Delayed tax calculation feature to help improve the performance of tax calculations when the number of journal lines is very large.
 
 author: ericwang
 manager: Ann Beebe
@@ -32,44 +32,43 @@ ms.dyn365.ops.version: 10.0.7
 
 ---
 
-# Enable delayed tax calculation on journal
+# Enable delayed tax calculation on journals
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains the steps for delaying sales tax calculcations on journals. This capability helps improve the performance of tax calculations when there are a large number journal lines.
+This topic explains how you can delay sales tax calculation on journals. This capability helps improve the performance of tax calculations when there are many journal lines.
 
-By default, sales tax amounts on journal lines are calculated whenever tax related fields are updated, such as sales tax groups or item sales tax group. Any update to a journal line will cause tax amounts to be recalculated for all journal lines. It helps user to see real-time calculated tax amount but it could also bring performance issue if the volume of journal lines is huge.
+By default, sales tax amounts on journal lines are calculated whenever tax-related fields are updated. These fields include the fields for sales tax groups and item sales tax groups. Any update to a journal line causes tax amounts to be recalculated for all journal lines. Although this behavior helps user see tax amounts calculated in real time, it can also affect performance if the number of journal lines is very large.
 
-This feature provides an option to delay tax calculation to solve performance issue. If this feature is turned on, tax amount will only be calculated when user clicks "Sales Tax" command or posts the journal.
+The Delayed tax calculation feature lets you delay tax calculation on journals and therefore helps fix performance issues. When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.
 
 You can delay the calculation of sales taxes at three levels:
-- By legal entity
-- By journal name
-- By journal header
 
-The system gives priority to the setting of the journal header. The parameter setting for the journal header defaults from the journal name. The setting of the journal name defaults from the setting on the **General ledger parameters** page when the journal name is created. The following sections list the steps for enabling delayed tax calculation for legal entities, journal names, and journal headers.
+- Legal entity
+- Journal name
+- Journal header
 
-## Enable delayed tax calculation by legal entity
+The system gives priority to the setting for the journal header. By default, this setting is taken from the journal name. By default, the setting for the journal name is taken from the setting on the **General ledger parameters** page when the journal name is created. The following sections explain how to turn on delayed tax calculation for legal entities, journal names, and journal headers.
 
-1. Go to **General ledger > Ledger setup > General ledger parameters**.
-2. Open the **Sales tax** tab.
-3. In the **General** FastTab, locate the **Delayed tax calculation** field and set it to **On**.
+## Turn on delayed tax calculation at the legal entity level
+
+1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
+2. On the **Sales tax** tab, on the **General** FastTab, set the **Delayed tax calculation** option to **Yes**.
 
 ![](media/delayed-tax-calculation-gl.png)
 
-## Enable delayed tax calculation by journal name
+## Turn on delayed tax calculation at the journal name level
 
-1. Go to **General ledger > Journal setup > Journal names**.
-2. In the **General** FastTab, locate the **Delayed tax calculation** field and set it to **On**.
+1. Go to **General ledger \> Journal setup \> Journal names**.
+2. On the **General** FastTab, in the **Sales tax** section, set the **Delayed tax calculation** option to **Yes**.
 
 ![](media/delayed-tax-calculation-journal-name.png)
 
-## Enable delayed tax calculation by journal
+## Turn on delayed tax calculation at the journal header level
 
-1. Go to **General ledger > Journal entries > General journals**.
-2. Click **New**.
+1. Go to **General ledger \> Journal entries \> General journals**.
+2. Select **New**.
 3. Select a journal name.
-4. Click **Setup**.
-5. Locate the **Delayed tax calculation** field and set it to **On**. 
+4. On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.
 
 ![](media/delayed-tax-calculation-journal-header.png)
