@@ -70,7 +70,7 @@ You can also define the number of grace days before the credit rules are checked
 
 If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set to execute credit management rules. If you release the sales order without posting and then execute the same order processing step again, it will check the credit rules again. For example, if an order is put on hold after a confirmation and you release it with or without posting, it will be placed on hold again if you confirm it again. Use grace days if you want the order to move on to the next processing step without being held again.
 
-You can't specify grace days for some posting checkpoints and no grace days for other checkpoints. You must set up all posting checkpoints with grace days or set them all up with no grace days.
+You can't specify grace days for some posting checkpoints and not for others. You must set up all posting checkpoints with grace days or set them all up with no grace days.
 
 1. Select the check box in the **Posting** column to execute the credit management rules when the posting checkpoint shown on the line is executed. If you don't select the check box, the rules will only be checked once during the entire posting process.
 
