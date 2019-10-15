@@ -5,7 +5,7 @@ title: Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
 description: This topic explains what data is synchronized in a Talent and Finance integration.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -43,6 +43,10 @@ the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance]
 
 For Attract and Onboard, all data is native to Common Data Service.
 
+## Why don't I see any data synced to Common Data Service?
+
+By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
+
 ## Can I create a new mapping without using the templates?
 
 Templates are the starting point. You can create your own template, but a
@@ -76,7 +80,7 @@ integration mapping.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![Active workers advanced quaery](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Active workers advanced query](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Can I specify which fields to send to Finance for a specific entity?
 
