@@ -5,7 +5,7 @@ title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: manalidongre
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
