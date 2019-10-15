@@ -171,14 +171,14 @@ To cross-dock the quantity of finished goods to the outbound location of the ass
 8. On the **Production order** page, on the Action Pane, on the **Production order** tab, in the **Process** group, select **Estimate**, and then select **OK**. The order is estimated, and the raw material quantity is reserved for the production.
 9. On the Action Pane, on the **Production order** tab, in the **Process** group, select **Release**, and then select **OK**. Warehouse pick work is created for the raw materials.
 10. Open and review the work. On the Action Pane, on the **Warehouse** tab, in the **General** group, select **Work details**. Make a note of the work ID.
-11. Open and sign in to the Warehouse Mobile App to run work in warehouse 51.
+11. Open and sign in to Dynamics 365 for Finance and Operations – Warehousing app to run work in warehouse 51.
 12. Go to **Production** \> **Production pick**.
 13. Enter the work ID to start and complete the raw material picking. 
 
     After the work is reported as finished, the quantity of raw materials is available in the production input location (**005** in USMF demo data), and execution of the production order can start.
 
 14. On the **Production order** page, on the Action Pane, on the **Production order** tab, in the **Process** group, select **Start**, and then select **OK**.
-15. In the Warehouse Mobile App, go to **Production** \> **RAF and put away**.
+15. In the app, go to **Production** \> **RAF and put away**.
 16. In the **Prod ID** field, enter the production order number and other mandatory details, and then select **OK**.
 
 Notice that the following events occur:
