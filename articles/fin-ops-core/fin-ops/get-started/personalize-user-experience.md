@@ -55,7 +55,7 @@ The **User options** page contains several system-wide settings for the current 
 
 In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to view and manage the personal changes that you have made to pages in the system. Feature callouts, the pop-up windows that introduce you to new features in the system, can also be reset from this tab so that you are again alerted about previously encountered features.  
 
-Note after the **Saved views** feature has been enabled, your personalizations can be viewed and managing by clicking the **Personalization** button on the **User options** page.  
+Note after the [Saved views](saved-views.md) feature has been enabled, your personalizations can be viewed and managing by clicking the **Personalization** button on the **User options** page.  
 
 ## Implicit personalizations
 
@@ -123,7 +123,7 @@ The following tools are available on the **Personalization** toolbar:
 
 - Select the **Close** button to close the **Personalization** toolbar and return the page to its previous interactive state.
 
-Traditionally, when the **Personalization** toolbar is used, your personalizations take effect as soon as you make them. However, once the the saved views feature has been enabled, you will need to explicitly save personalizations to the view of your choice. 
+Traditionally, when the **Personalization** toolbar is used, your personalizations take effect as soon as you make them. However, once the the [Saved views](saved-views.md) feature has been enabled, you will need to explicitly save personalizations to the view of your choice. 
 
 In some cases, when you select a tool, a padlock symbol appears next to an element. This symbol indicates that you can't modify the element properties that are related to the selected tool, because changes to those properties will prevent the page from working correctly.
 
@@ -131,7 +131,7 @@ In some cases, when you select a tool, a padlock symbol appears next to an eleme
 
 For some pages that include lists, the **Add to workspace** personalization feature (located in the **Personalize group** on the **Options** tab of the Action Pane) is available, which lets you push relevant information from the current list to a specific workspace. The information you show in the workspace can be based on the entire list, or a filtered and sorted version of the list. You can also specify whether that information appears in the workspace as a list, as a summary tile that can show the number of items in the list, or as a link. 
 
-Note that after the saved views feature has been enabled, the content you surface in a workspace will be directly linked to a view. The view's query will be used to fetch data on the workspace, and clicking the corresponding tile or link on the workspace will open the page to that view, with its query and personalizations.  
+Note that after the [Saved views](saved-views.md) feature has been enabled, the content you surface in a workspace will be directly linked to a view. The view's query will be used to fetch data on the workspace, and clicking the corresponding tile or link on the workspace will open the page to that view, with its query and personalizations.  
 
 [![Add to workspace](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
@@ -168,7 +168,7 @@ For customers who have not enabled the saved views feature, this page has four t
 - **Users** – Select a user to see the list of pages that the user has personalized. You can then enable or disable the selected user's ability to use personalizations for specific pages, or for the entire system. You can also import, export, or clear a personalization for the selected user. In addition, you can reset feature callouts for the selected user, which will make all previously dismissed pop-up windows that introduced new features display again the next time that the user encounters those features.   
 - **System** – You can temporarily disable all personalizations for all users in the system. In this case, the personalizations are deleted. All pages are just reset to their default state for all users. If you re-enable personalization later, all personalizations will be reapplied. You can also permanently delete all personalizations for all users in the system. There is no way to recover personalizations that have been deleted. Therefore, before you perform this task, be sure to export any personalizations that you might want later.
 
-For customers who have enabled saved views, this page has five tabs:
+For customers who have enabled [Saved views](saved-views.md), this page has five tabs:
 
 - **Published views** – These views have been published to your organization. You can modify which users are being targeted with these views by changing the security roles or legal entities associated with each view. You can also export or delete one or more published views. 
 - **Unpublished views** – These are template views have been imported into your system, but have not yet been published. You can publish, export, or delete these views.  
