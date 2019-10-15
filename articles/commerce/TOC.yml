@@ -710,8 +710,6 @@
     items:
     - name: Cash register functionality
       href: ../retail/localizations/emea-swe-cash-registers.md
-    - name: Control unit integration sample for Sweden
-      href: ../retail/localizations/emea-swe-fi-sample.md
     - name: Sample for Retail POS integration with control units (legacy)
       href: ../retail/localizations/retail-sdk-control-unit-sample.md
 - name: Retail tasks
