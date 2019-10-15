@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Retail Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/04/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -356,16 +356,13 @@ You must manually delete these files and secure them as you require. All these f
 
 ## Troubleshooting guides
 
-**Chrome driver:**
+**Chrome driver**
 
-If playback fails by flickering(opens and closes browser multiple times without starting playback), then it may be related to chrome driver version issue.  Check the error log in the RSAT tool and if it's says chrome driver version not supported then download the supported chromedriver.exe version mentioned in the error message and paste it in the …\Regression Suite Automation Tool\Common\External\Selenium folder.  You can download the chrome driver from this [link](
-https://chromedriver.chromium.org/downloads).
+If playback fails by flickering (opens and closes browser multiple times without starting playback), this could be related to the Chrome driver version. Check the error log in the RSAT tool. If the error states that the Chrome driver version is not supported, then download the supported chromedriver.exe version mentioned in the error message and paste it in the …\Regression Suite Automation Tool\Common\External\Selenium folder.  You can download the Chrome driver from [ChromeDriver](https://chromedriver.chromium.org/downloads).
 
+**.NET standard error**
 
-**.Net standard error:**
+If you get the following 'netstandard’ error, install .NET Framework 4.8 runtime. You can download the .NET Runtime from [Download SDKs](https://dotnet.microsoft.com/download/visual-studio-sdks).
 
-If you get the below 'netstandard’ error, please install .NET Framework 4.8 runtime, you can download the .NET Runtime from this [link](
-https://dotnet.microsoft.com/download/visual-studio-sdks).
-
-Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified.   at Microsoft.Dynamics.Commerce.PosPlayback.RecordingsRunner.Program.Main(String[] args).
+Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified at Microsoft.Dynamics.Commerce.PosPlayback.RecordingsRunner.Program.Main(String[] args).
 
