@@ -5,7 +5,7 @@ title: Cancel warehouse work for exception handling
 description: This topic describes the Cancel work functionality that lets warehouse supervisors handle blocked work.
 author: omulvad
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
