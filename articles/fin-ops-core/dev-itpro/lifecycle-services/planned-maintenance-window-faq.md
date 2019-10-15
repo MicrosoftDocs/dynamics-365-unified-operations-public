@@ -99,10 +99,5 @@ If the patching fails during an operating system–level update, the specific pa
 ### Will I be compensated if the update takes longer than the scheduled maintenance window?
 If the update takes longer than the scheduled maintenance window, the extra time is considered unplanned downtime and is subject to the general service level agreement (SLA).
 
-### Can I reschedule the planned maintenance?
-Microsoft doesn't offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
-
-### How do I opt out of the current maintenance cycle?
-To opt out of the current maintenance cycle on Tier 2 through Tier 5 sandbox environments and production environments, file a support ticket with Microsoft. The deadline for filing the support ticket to request an opt-out will be included in your notification email. Any opt-out submitted after that deadline will not be honored. Your environment will be excluded from the maintenance cycle for the current month, however your environment will be updated in the next month.
-
-We do not allow you to opt out of the patching scheduled on Microsoft-managed Tier 1 environments.
+### How do I re-schedule the current maintenance cycle?
+The health and stability of your Dynamics 365 for Finance and Operations online service is our primary concern. This security maintenance is in the interest of ensuring a secure environment for our customers, and not doing the maintenance would potentially introduce an avoidable security risk. If there is an absolute business need and you are unable to move forward with this maintenance during the timeframe listed above, you can request to re-schedule the current maintenance activity for Tier 2 through Tier 5 sandbox environments and production environments by filing a support ticket with Microsoft. The deadline for filing the support ticket to request a re-schedule will be included in your notification email. Any request submitted after that deadline will not be honored. We do not allow you to re-schedule patching scheduled on Microsoft-managed Tier 1 environments.
