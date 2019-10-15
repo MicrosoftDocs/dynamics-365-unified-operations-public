@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Cash Position Inquiry Setup
-description: This topic describes the Cash position inquiry, which lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
+title: Set up and run the Cash position inquiry
+description: This topic provides information about the Cash position inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions.
 author: velofog
 manager: AnnBe
 ms.date: 10/07/2019
@@ -27,61 +27,67 @@ ms.search.validFrom: 2019-10-07
 ms.dyn365.ops.version: 10.0.7
 
 ---
-# Cash Position Inquiry Setup
+# Set up and run the Cash position inquiry
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the Cash position inquiry, which lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. The inquiry shows the following items: 
+This topic provides information about the Cash position inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. It shows the following items:
 
--	The beginning cash balance
--	The effect of the addition of cash receipts
--	The subtraction of cash disbursements
--	The subtraction of interfund transfers to arrive at an ending balance. 
--	From the ending balance, general budget reservations, encumbrances, or pre-encumbrances are subtracted to arrive at an unencumbered balance
+- The beginning cash balance
+- The effect of the addition of cash receipts
+- The subtraction of cash disbursements
+- The subtraction of interfund transfers to arrive at an ending balance
+- The subtraction of general budget reservations, encumbrances, or pre-encumbrances from the ending balance to arrive at an unencumbered balance
 
-This inquiry differs from other inquiries in that it lets you customize the terminology for column names and for the main accounts that are used to derive amounts displayed in the columns. On the **Cash position parameters** page, the columns that appear in the inquiry are numbered starting, with the left-most data column as Column one.
+This inquiry differs from other inquiries because you can customize the terminology for column names and for the main accounts that are used to derive the amounts that appear in the columns. On the **Cash position parameters** page, the columns that appear in the inquiry are numbered sequentially from left to right. The left-most column is **Column one**.
 
 ## Set up the Cash position inquiry
 
-1. Go to **General ledger > Ledger setup > Cash position parameters.**
-2. In the **Cash position parameters** page, in the Column one group:
-   - In the **Column name** field, type a label for the heading on the inquiry’s first column, for example, "Beginning balance."
-   - In the **Opening balance main accounts** field, select the account(s) that you want to reference for inquiring on the opening balance.
-3. In the Column two group:
-   - Specify a label for the second column in the inquiry for example, “Cash receipts.”
-> [!Note]
-> In the **Debit and credit main accounts** list, select the main accounts to use only the sum of all debit and credit transaction amounts in the data included in the inquiry. 
-   - The inquiry will add the net of the debit and credit accounts plus the debit amount and credit amounts from the main accounts in the other fields in the group.
-   - In the **Debit-only main accounts** list, select the main accounts from which to use only the sum of all debit transaction amounts for the inquiry's data.
-   - In the **Credit-only main accounts** list, select the main accounts from which to use only the sum of all credit transaction amounts for the inquiry's data.
-4. In the Column three and Column four groups:
+1. Go to **General ledger \> Ledger setup \> Cash position parameters**.
+2. On the **Cash position parameters** page, in the **Column one** group, follow these steps:
 
-   - Specify a label for the third column (for example, "Cash disbursements") and fourth column (for example, "Interfund transfers").
-   - For both columns, specify the main account numbers to distribute debit and credit entries, as well as debit-only main accounts, and credit-only main accounts.
-5. In the Column five group, specify a label for the fifth column (for example, Ending balance).
+    - In the **Column name** field, enter a label for the heading of the first column in the inquiry (for example, **Beginning balance**).
+    - In the **Opening balance main accounts** field, select the accounts that you want to reference for inquiries about the opening balance.
 
-> [Note!] 
-> A sum will be calculated from the accounts you specified in the first four columns, which in the examples will include Beginning balance plus Cash receipts, minus Cash disbursements, minus Interfund transfers.
+3. In the **Column two** group, follow these steps:
 
-6. In the Column six and Column seven groups:
-   - Specify a label for column six, for example, "General budget reservations" or "Encumbrances" and column seven, for example, "Pre-encumbrances.
-   - For both columns, specify account numbers for the **Debit and credit main accounts**, **Debit-only main accounts**, and **Credit-only main accounts**.
-7. In the Column eight group:
-   - Specify a column label, for example, "Unencumbered balance."
+    - Enter a label for the heading of the second column (for example, **Cash receipts**).
+    - To use only the sum of all debit and credit transaction amounts for the data that is included in the inquiry, select the main accounts in the **Debit and credit main accounts** list.
+    
+        The inquiry will add the net amount of the debit and credit accounts, plus the debit and credit amounts from the main accounts that are specified in the other fields in the group.
 
-> [Note!] 
-> Microsoft Dynamics 365 for Finance and Operations automatically calculates a result from the accounts you specified for columns five through seven will be calculated. In the examples, the accounts include Ending balance minus Encumbrances, minus Pre-encumbrances.
-8. Click **Save**.
+    - To use only the sum of all debit transaction amounts for the inquiry's data, select the main accounts in the **Debit-only main accounts** list.
+    - To use only the sum of all credit transaction amounts for the inquiry's data, select the main accounts in the **Credit-only main accounts** list.
 
-## Running the inquiry
-1. Go to **General ledger > Inquiries and reports > Cash position**.
-2. In the **Parameters** section:
-   - Select the **Date interval** code, or the **From date** and **To date**.
-   - Select the **Financial dimension set**.
-   - Click **Calculate balances** to run the inquiry.
+4. In the **Column three** and **Column four** groups, follow these steps:
 
-### Optional
+    - Enter a label for the heading of the third column (for example, **Cash disbursements**) and the fourth column (for example, **Interfund transfers**).
+    - For both columns, specify the main accounts to distribute debit and credit entries. Also specify the debit-only main accounts and credit-only main accounts.
 
--	Set the **Suppress accounts with all zeroes option** to Yes to exclude accounts that have all zero balances from the inquiry.
--	Set the **Display segments in separate columns option** to Yes to show the account names for each dimension as separate columns in the grid.
--	To filter the values for a specific dimension, select the dimensions to include in the fields below the **Financial dimension set** field. The options that are available depend on which financial dimension set you selected.
+5. In the **Column five** group, enter a label for the heading of the fifth column (for example, **Ending balance**).
+
+    A result is automatically calculated from the accounts that you specified in the first four columns. For this example, the calculation is Beginning balance + Cash receipts – Cash disbursements – Interfund transfers.
+
+6. In the **Column six** and **Column seven** groups, follow these steps:
+
+    - Enter a label for the heading of the sixth column (for example, **General budget reservations** or **Encumbrances**) and the seventh column (for example, **Pre-encumbrances**).
+    - For both columns, specify account numbers for the debit and credit main accounts, and for the debit-only main accounts and credit-only main accounts.
+
+7. In the **Column eight** group, enter a label for the heading of the eighth column (for example, **Unencumbered balance**).
+
+    A result is automatically calculated from the accounts that you specified in the fifth through seventh columns. For this example, the calculation is Ending balance – Encumbrances – Pre-encumbrances.
+
+8. Select **Save**.
+
+## Run the Cash position inquiry
+
+1. Go to **General ledger \> Inquiries and reports \> Cash position**.
+2. In the **Parameters** section, follow these steps:
+
+    - In the **Date interval** field, select the code for the date interval. Alternatively, in the **From date** and **To date** fields, define the date interval.
+    - In the **Financial dimension set** field, select the financial dimension set.
+    - Optional: Set the **Suppress accounts with all zeroes** option to **Yes** to exclude accounts from the inquiry if they have all 0 (zero) balances.
+    - Optional: Set the **Display segments in separate columns** option to **Yes** to show the account names for each dimension as separate columns in the grid.
+    - Optional: To filter the values for a specific dimension, in the fields below the **Financial dimension set** field, select the dimensions to include. The options that are available vary, depending on the financial dimension set that you selected.
+
+3. Select **Calculate balances** to run the inquiry.
