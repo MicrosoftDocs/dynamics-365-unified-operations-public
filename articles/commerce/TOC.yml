@@ -616,6 +616,8 @@
         href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
       - name: Ship orders from another store
         href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+      - name: Hide non-carrier delivery modes from POS shipment dialog
+        href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
       - name: Task recorder and Help for MPOS and Cloud POS
         href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
       - name: Hardware peripherals
