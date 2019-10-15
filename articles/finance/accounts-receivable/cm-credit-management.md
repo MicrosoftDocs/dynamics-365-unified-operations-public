@@ -56,7 +56,7 @@ Additional resources
 
 [Customer credit management setup information](./cm-setup-information.md)
 
-[Add credit management information to a customer](./cm-add-credit-mgmt-information-customer.md)
+[Add credit management information for a customer](./cm-add-credit-mgmt-information-customer.md)
 
 [Customer credit groups](./cm-customer-credit-groups.md)
 
