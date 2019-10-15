@@ -5,7 +5,7 @@ title: Quality management overview
 description: This topic describes how you can use quality management in Dynamics 365 Supply Chain Management to help improve product quality within your supply chain.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -390,7 +390,7 @@ In purchasing, if you set the **Event type** field to **Product receipt** and th
 </ul>
 </li>
 </ol>
-<p><strong>Note:</strong> The batch can be reused actually.</p>
+<p><strong>Note:</strong> The batch can be reused.</p>
 </td>
 </tr>
 <tr>
@@ -513,7 +513,7 @@ In production, if you set the **Event type** field to **Report as finished** and
 </ul>
 </li>
 </ol>
-<p><strong>Note:</strong> The batch can be reused actually.</p>
+<p><strong>Note:</strong> The batch can be reused.</p>
 </td>
 </tr>
 <tr>
