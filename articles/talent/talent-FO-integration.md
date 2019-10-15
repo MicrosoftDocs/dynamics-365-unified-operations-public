@@ -45,7 +45,7 @@ For Attract and Onboard, all data is native to Common Data Service.
 
 ## Why don't I see any data synced to Common Data Service?
 
-Common Data Service integration is off by default on new environments that don’t include the provided demo data. It's on by default in new environments that have demo data, and data syncing begins when the environment is provisioned. Once your environment is ready to sync data, you can turn on integration. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
+By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
 
 ## Can I create a new mapping without using the templates?
 
@@ -80,7 +80,7 @@ integration mapping.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![Active workers advanced quaery](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Active workers advanced query](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Can I specify which fields to send to Finance for a specific entity?
 
