@@ -5,7 +5,7 @@ title: Code migration and upgrade home page
 description: This topic provides links to topics about code migration.
 author: RobinARH
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -55,8 +55,6 @@ The following links (also included in the methodology) describe key concepts and
 
 - [Delegates for migration](delegates-migration.md)
 - [How to import a SQL Server Analysis Services Project into the AOT](https://technet.microsoft.com/library/dn754850.aspx)
-- [Database synchronization](../dev-tools/database-synchronization.md)
-<!--- [Understand the migration task list (Office Mix)](https://mix.office.com/watch/kcek55rc5cau)-->
 - [Upgrade and migration](upgrade-home-page.md)
 - [Workflow subsystem updates](workflow-subsystem.md)
 - [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](migrate-upgraded-cube-entity-store.md)
