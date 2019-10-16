@@ -57,7 +57,7 @@ In both cases, the grid view is structured the same.
 
 [![Details Master wireframe: Grid view](./media/detailsmaster2-1024x575.png)](./media/detailsmaster2.png)
 
-### Details Master w/Standard Tabs
+### Details Master with Standard Tabs
 
 #### Details view
 
@@ -115,7 +115,7 @@ Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
             - MainGrid (Grid)
             - MainGridDefaultAction (CommandButton)
 
-### Details Master w/Standard Tabs – High-level structure
+### Details Master with Standard Tabs – High-level structure
 
 - Design
 
@@ -223,7 +223,7 @@ Form: **CustTable**
 
 [![Details Master (basic) example: Grid view](./media/detailsmaster7-1024x509.png)](./media/detailsmaster7.png)
 
-### Details Master w/Standard Tabs
+### Details Master with Standard Tabs
 
 Form: **HcmWorker**
 
@@ -261,7 +261,7 @@ None.
 
 [![AX 2012 example: Details Master (basic) 2](./media/detailsmaster12-1024x647.png)](./media/detailsmaster12.png)
 
-##### Details Master w/Standard Tabs
+##### Details Master with Standard Tabs
 
 [![AX 2012 example: Details Master with Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
