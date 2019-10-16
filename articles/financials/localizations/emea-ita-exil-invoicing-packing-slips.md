@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Invoicing of packing slips
-description: Invoicing of packing slips.
+title: Sales invoice lines sorting by packing slips
+description: Sales invoice lines sorting by packing slips.
 author: ilkond
 manager: AnnBe
 ms.date: 27/08/2019
@@ -28,17 +28,17 @@ ms.dyn365.ops.version: 10.0.7
 
 ---
 
-# Invoicing of packing slips
+# Sales invoice lines sorting by packing slips
 
 [!include [banner](../includes/banner.md)]
 
 In Italy, companies often need to issue so-called accompanying invoices which combine an ordinary invoice with DDT (transposrt document or packing slip).
-This topic explains how to set up and print accompanying invoices which also contain all the rquired packing slips details.
+This topic explains how to set up and print accompanying invoices which also contain all the required packing slips details properly grouped and sorted.
  
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In **Feature management**, enable the feature, **Invoicing of packing slips**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
+- In **Feature management**, enable the feature, **Sales invoice lines sorting by packing slips**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
 - In **Print management** set the reference to *SalesInvoice.Report_IT* layout for Customer invoice (Original).
 
 ***Accounts receivable > Setup > Forms > Form setup > General*** (FastTab) ***> Print management***:
