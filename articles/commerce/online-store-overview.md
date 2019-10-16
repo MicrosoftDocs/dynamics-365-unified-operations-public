@@ -47,7 +47,7 @@ After an online store is set up, it can be associated with the Dynamics 365 Comm
 - [Create an e-Commerce site](create-ecommerce-site.md)
 - [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
 - [Associate an online site with a channel](associate-site-online-store.md)
-- [Configure a domain name](configure-your-domain-name.md)
+- [Configure your domain name](configure-your-domain-name.md)
 - [Add support for a content delivery network (CDN)](add-cdn-support.md)
 - [Enable location-based store detection](enable-store-detection.md)
 - [Set up custom pages for user logins](custom-pages-user-logins.md)
