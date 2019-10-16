@@ -254,7 +254,7 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
    
    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
-    [![Playback environment](./media/Settings.png)](./media/Settings.png)
+    [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
 
 5. Select the **POS login credentials** tab.
 
