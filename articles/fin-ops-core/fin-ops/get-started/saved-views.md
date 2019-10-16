@@ -5,7 +5,7 @@ title: Saved views
 description: This topic describes how to use the saved views features.   
 author: jasongre
 manager: AnnBe
-ms.date: 10/07/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -42,7 +42,7 @@ With traditional personalization, users could only have a single set of personal
 
 -    Views created for particular page types can also include user-added filters or sorts, which allows users to quickly return to commonly filtered datasets. See the [What pages support views](saved-views.md#what-pages-support-views) section for more details. 
 
--    Views can be published to users in specific security roles and in specific legal entities, meaning any user with that role in the desired legal entity will be able to access and use that view, regardless of the user’s ability to personalize. This publish capability allows organizations to define corporate standard views that are optimized for their business. See the [Managing personalizations at an organizational level with views](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) section for more information.
+-    Views can be published to users in specific security roles and in specific legal entities, meaning any user with that role in the desired legal entity will be able to access and use that view, regardless of the user’s ability to personalize. This publish capability allows organizations to define corporate, standard views that are optimized for their business. See the [Managing personalizations at an organizational level with views](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) section for more information.
 
 -    Unlike traditional personalization, views are not automatically saved when a user performs explicit personalizations or filters a list. Explicit saves are required to provide flexibility in creating a view before or after the changes associated with that view have been made and to ensure that view definitions are not unintentionally altered by filters or personalizations that are not intended for long-term use.  
 
@@ -59,7 +59,7 @@ There are two size variations to the view selector:
  
 If you click on the view name, the view selector opens and shows the list of available views for this page
 
--    **Standard view**: The Standard view (formerly the Classic view) is the out-of-the-box view of the page with no explicit personalizations applied.  
+-    **Standard view**: The Standard view (formerly the *Classic view*) is the out-of-the-box view of the page with no explicit personalizations applied.  
 -    **Personal views**: The views without padlocks represent your personal views. These are views that either you have created or that an administrator has given to you.  
 -    **Locked views**: Some views (like the Standard view and any views published to your role) have a padlock next to them in the view selector, indicating that you cannot edit those views. However, implicit personalizations that reflect page usage are automatically saved, such as changing the width of a grid column or expanding or collapsing a FastTab. You can, however, make a personal view based on a locked view using the **Save as...** action, if you have personalization privileges.
 -    **New views**: Published views that have not yet been opened are delineated with a spark to the left of the view name.  
@@ -104,7 +104,7 @@ For a list of available views for that page, the following set of actions are av
 Any changes made in this dialog box will take effect after you select the **Save** button.
 
 ## Managing personalizations at an organizational level with views
-To understand the improvements saved views provides in managing personalizations at an organizational level, let’s first look at how management of personalization worked before views.  
+To understand the improvements saved views provide in managing personalizations at an organizational level, let’s first look at how management of personalization worked before views.  
 
 Without views, administrators would apply a set of personalizations for a page to a user or a group of users via the Personalization page. If those users had personalization rights, the personalizations would be applied to that page. However, there was no ability to prevent users from further personalizing the page, which meant the organization could not ensure that its users had a consistent user interface. If any of those users didn’t have personalization rights, the personalizations given to them by an administrator were not loaded. Further, if new users were hired into an organization, administrators needed to manually load a set of personalizations for the user. There was no automatic mechanism for specifying that a certain set of personalizations should be available for users in that role.
 
@@ -113,7 +113,7 @@ With the saved views feature, organizational management of personalizations is s
 The publish capability allows organizations to define corporate standard views that are optimized for their business, targeted at users in specific security roles.  
 
 ## Publishing views
-During the publish process, views can be assigned to one or more security roles for one or more legal entities, meaning any user with access to a legal entity and with one of those roles will be able to access and use that view, though they cannot edit the view. System administrators have access to the **Publish** action in the view selector drop-down menu; however, other trusted users in your organization can also be given access to view publishing via the new **Saved views administrator** role.   
+During the publish process, views can be assigned to one or more security roles for one or more legal entities. This means that any user with access to a legal entity and assigned to one of those roles will be able to access and use that view, though they cannot edit the view. System administrators have access to the **Publish** action in the view selector drop-down menu; however, other trusted users in your organization can also be given access to view publishing via the new **Saved views administrator** role.   
 
 To publish a view, follow these steps: 
 1.	Create and save a personal copy of the view that you want to publish. 
@@ -182,7 +182,7 @@ When views are enabled, any existing personalizations for a user and form are sa
 Views are available on most, but not all pages. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, also currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
 
 ### Who is allowed to publish views?
-System administrators and users who have been granted the Saved views administrator role are the only users who have rights to publish views. 
+System administrators and users who have been assigned to the Saved views administrator role are the only users who have rights to publish views. 
 
 ### Why am I not able to save filters with this view? 
 There are a few reasons why a filter may not appear to save with a view: 
