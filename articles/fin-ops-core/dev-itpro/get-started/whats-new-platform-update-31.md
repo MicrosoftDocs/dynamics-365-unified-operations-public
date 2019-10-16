@@ -59,6 +59,16 @@ Loading of data management workspace has been slow under certain conditions. The
 ## Inefficient memory usage by Data management export/import jobs
 There have been several issues reported where the memory consumed by data management export/import jobs have been high enough to result in performance issues for users. The SSIS package execution logic has been optimized to address this issue. This change is OFF be default as its guarded by a flight DMFExecuteSSISOutOfProc. After getting validations through PEAP and CAAP release process, the change will be enabled as default in a later platform update.
 
+## Extensibility enhancements
+The following enhanced extensibility capabilities have been added in Platform update 31:
+
+- Adjust method WorkflowDocumentField.substitutePlaceholderAsUser separator from semi-colon to bar to elimintate conflicts with exported data (Ref# 299129).
+- Refactor method SysWorkflowParticipantProvider.SysWorkflowParticipantProvider to provide access to the list of resolved users (Ref# 310122).
+- Allow table display methods added via extension to be cached though cacheCalculateMethod API (Ref# 341431).
+- Improve locking approach of SysExtensionAppClassFactory.getClassFromSysExtAttribute to reduce blocking issues (Ref# 338254).
+- Enable clearing of Grid.DataGroup property via extension so a group can be added that has a different field group set on it (Ref# 303030).
+- Allow extension of DataEntity.PrimaryCompanyContext (Ref# 292575).
+
 ## Feature
 Provide a brief description of the feature and explain how it helps customers. Provide a link to an article where customers can read details about the feature.
 
