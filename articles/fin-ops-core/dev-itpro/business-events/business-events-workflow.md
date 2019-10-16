@@ -85,9 +85,14 @@ An approval or task work item can be completed in Flow using the following steps
 - If the workitem is ready for completion, then request a response from the assigned user by sending the available response options to the user.
 - After a response is provided, complete the workitem with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
 
-Templates for work item completion in Microsoft Flow will be available soon and a link will be provided here for easy reference.
-
 For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
+
+## Templates for work item completion in Microsoft Flow
+Templates for work item completion in Microsoft Flow are available:
+- [Complete Dynamics 365 for Finance and Operations workflow work items (PU26)](https://flow.microsoft.com/en-us/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
+- [Complete Dynamics 365 for Finance and Operations workflow work items (PU29)](https://flow.microsoft.com/en-us/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
+
+The "PU29" version gets completion options from the business event payload, they were added in platform update 29, and presents them to the user via the approval action. 
 
 ## Troubleshooting workflow business events
 
