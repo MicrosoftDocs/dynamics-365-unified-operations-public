@@ -175,3 +175,13 @@ To establish a new site and associate an online store with it, in LCS, select th
 
 
 After your site is created, you can verify that it's associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down field in the upper left of the page to access the products by category.
+
+## Additional resources
+
+- [Online store overview](online-store-overview.md)
+- [Create an e-Commerce site](create-ecommerce-site.md)
+- [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+- [Configure a domain name](configure-your-domain-name.md)
+- [Add support for a content delivery network (CDN)](add-cdn-support.md)
+- [Enable location-based store detection](enable-store-detection.md)
+- [Set up custom pages for user logins](custom-pages-user-logins.md)
