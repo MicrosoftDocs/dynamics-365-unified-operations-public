@@ -62,3 +62,12 @@ To create the HTML for the favicon, use the following HTML snippet. For the **hr
 ## Add the HTML for the favicon to the \<head\> element of your pages
 
 To add a favicon to your site, use the same procedure that is used to add any type of HTML or script to the **\<head\>** element of your site pages.
+
+## Additional resources
+
+- [Add a logo](add-logo.md)
+- [Select a site theme](select-site-theme.md)
+- [Add a welcome message](add-welcome-message.md)
+- [Add a copyright notice](add-copyright-notice.md)
+- [Add languages to your site](add-languages-to-site.md)
+
