@@ -38,9 +38,9 @@ This topic describes the options available for configuring Credit management to 
 
 ## Credit parameters
 
-There are four FastTabs where you can change the parameters that control credit management: **Order on hold**; **Credit management posting**; **Credit management statistics**; **Credit limits**. The following sections describe the settings that are available in each of them. 
+There are four FastTabs where you can change the parameters that control credit management: **Credit holds**; **Credit management checkpoint**; **Credit management statistics**; **Credit limits**. The following sections describe the settings that are available in each of them. 
 
-### Order on hold
+### Credit holds
 
 -	Select **Yes** for **Allow edit of sales orders after order hold is released** to require the sales order to check the rules again if it has been edited after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
 
@@ -62,9 +62,9 @@ There are four FastTabs where you can change the parameters that control credit 
 
 -	Sales orders can be automatically released from credit management review. Select **Without posting** for **Automatically release** to allow an order to be posted using the same posting process that ran when the sales order was placed on hold. Select **Original posting** to post the order using the same posting process that was executed when the sales order was placed on hold.
 
-### Credit management posting
+### Credit management checkpoint
 
-You can set the timing for checking sales orders for credit issues. The **Credit management posting** tab is used to identify which document posting processes will include processing of credit management rules. You can also choose to check the credit rules while doing either a proforma posting or full posting of the sales order. Select each check box to define which posting processes will put an order on hold after if an issue is found after processing the credit management blocking rules.
+You can set the timing for checking sales orders for credit issues. The **Credit management checkpoint** FastTab is used to identify which document posting processes will include processing of credit management rules. You can also choose to check the credit rules while doing either a proforma posting or full posting of the sales order. Select each check box to define which posting processes will put an order on hold after if an issue is found after processing the credit management blocking rules.
 
 You can also define the number of grace days before the credit rules are checked again. Although you may specify that the credit management rules are checked at posting, the rules will not be checked for the specified number of grace days. For example, if you confirm a sales order on day 1 and you specify 2 grace days for the confirmation step, then credit rules won't be checked at the next posting step, such as creating a packing slip, invoicing the order, and so on, until day 4. On or after day 4, the rules will be checked again when posting occurs and the number of grace days will be changed to the grace days value for the next posting checkpoint.
 
