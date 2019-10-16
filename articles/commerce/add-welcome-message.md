@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add a welcome message to your site
+title: Add a welcome message
 description: This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
 author: psimolin
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add a welcome message to your site
+# Add a welcome message
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -58,3 +58,12 @@ To add a welcome message to your site, follow these steps.
 1. Save the header fragment, check it in, and publish it.
 
 The welcome message will now appear at the top of every site page that uses the selected header fragment.
+
+## Additional resources
+
+- [Add a logo](add-logo.md)
+- [Select a site theme](select-site-theme.md)
+- [Add a favicon](add-favicon.md)
+- [Add a copyright notice](add-copyright-notice.md)
+- [Add languages to your site](add-languages-to-site.md)
+
