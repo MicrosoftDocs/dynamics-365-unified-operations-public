@@ -5,7 +5,7 @@ title: Develop and customize home page
 description: This topic provides links to topics about development.
 author: RobinARH
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -124,7 +124,6 @@ The Finance and Operations applications represent the next-generation enterprise
 
 ## Performance
 - [Take a trace with the Trace Parser and analyze it](../perf-test/trace-trace-tutorial.md)
-- [Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
 - [Using the desktop version of trace parser to diagnose problems and analyze performance issues](../perf-test/trace-parser.md)
 - [Performance timer](../perf-test/performance-timer.md)
 <!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
@@ -173,7 +172,7 @@ The client is an HTML web client that runs in all major browsers. For informatio
 
 ## Supply Chain Management
 - [Gantt development guide](../user-interface/gantt-development-guide.md)
-- [Create a new transportation management engine](../../supply-chain/transportation/create-new-transportation-management-engine.md)
+- [Create a new transportation management engine](../../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 ## Additional resources
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
