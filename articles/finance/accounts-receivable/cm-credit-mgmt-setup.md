@@ -38,7 +38,7 @@ This topic describes the options available for configuring Credit management to 
 
 ## Credit parameters
 
-There are four FastTabs where you can change the parameters that control credit management: Order on hold; Credit management posting; Credit management statistics; Credit limits. The following sections describe the settings that are available in each FastTab. 
+There are four FastTabs where you can change the parameters that control credit management: **Order on hold**; **Credit management posting**; **Credit management statistics**; **Credit limits**. The following sections describe the settings that are available in each of them. 
 
 ### Order on hold
 
