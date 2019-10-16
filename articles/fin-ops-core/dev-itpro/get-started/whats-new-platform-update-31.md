@@ -69,6 +69,13 @@ The following enhanced extensibility capabilities have been added in Platform up
 - Enable clearing of Grid.DataGroup property via extension so a group can be added that has a different field group set on it (Ref# 303030).
 - Allow extension of DataEntity.PrimaryCompanyContext (Ref# 292575).
 
+## Excel Add-in authentication and authorization enhancements
+The Excel Add-in has had a number of authentication and authorization enhancements to improve the handling of certain cases:
+- The sign-in process validates any existing authentication tokens to see if the user can continue using an existing authentication context or if they need to sign in again. Previously, if the authentication token had expired the Excel Add-in would tell the user about that. Now, the user will simply be presented with the standard sign in screen and a background informational message will report the authentication token expiration for debugging purposes.
+- There were some cases where the authentication process didn't complete in time, so the user was almost always seeing an error dialog with a "sign out" button. Ignoring the error and clicking "sign in" again resulted in a successful authentication, but the users that clicked "sign out" could get stuck in an endless loop.
+- The sign-out mechanism has been put inside a dialog to improve support for customers that are using ADFS, since communication from the Excel Add-in to ADFS servers is not allowed except for in a separate dialog.
+- Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server then the Excel Add-in would just present a "Load applets" link, since the loading of the applets would fail. This was an implicit authorization permissions failure. Now, that authorization permissions failure will be detailed explicitly for the user so they understand better what has happened and can double check that they are signing in as the correct user to the correct server.
+
 ## Feature
 Provide a brief description of the feature and explain how it helps customers. Provide a link to an article where customers can read details about the feature.
 
