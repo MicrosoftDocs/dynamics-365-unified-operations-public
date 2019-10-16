@@ -89,7 +89,7 @@ You can use the property window to personalize an element in the following ways:
 - Change the element's label.
 - Hide the element so that it isn't shown on the page. The data in the field isn't deleted or modified. The information just doesn't appear on the page any longer.
 - Include the information in the FastTab summary section (if the element is on a FastTab).
-- Skip the field so that that field never gets focus when you're tabbing through page.
+- Skip the field so that the field never gets focus when you're tabbing through the page.
 - Prevent data in the field (for any record) from being edited.
 
 The property window might include other personalization capabilities, depending on the element. For example, the property window for a tile might let you promote that tile to a dashboard, and the property window for a dashboard might let you create a new workspace on that dashboard.
@@ -102,14 +102,14 @@ If you want to make multiple changes to a page or make changes that aren't avail
 
 #### Navigating the page
 
-When the **Personalization** toolbar is open, the underlying page is read-only (meaning you cannot edit data) but is still interactive. Specifically, you can expand or collapse the Related information pane, switch tabs, and expand or collapse sections while the **Personalization** toolbar is open in the same manner as you typically would on the page. To apply a personalization change to a collapsible section or tab (such as to hide a FastTab), you just need to trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.
+When the **Personalization** toolbar is open, the underlying page is read-only (meaning you cannot edit data) but it is still interactive. Specifically, you can expand or collapse the Related information pane, switch tabs, and expand or collapse sections while the **Personalization** toolbar is open in the same manner that you would typically complete those actions on the page. To apply a personalization change to a collapsible section or tab (such as to hide a FastTab), you just need to trigger the button that appears beside the collapsible section or tab when it gains keyboard focus or when you hover over it.
 
 #### Personalization tools
 
 The following tools are available on the **Personalization** toolbar:
 
 - Use the **Select** tool to select and change the properties of an element. To use this tool, click the **Select** tool, and then select the desired element. This causes the element's property window to appear, which allows you to modify any of the properties of that element. You can repeat the process for other elements that can be personalized on that page. It should be noted that some personalization properties may not be available in some scenarios. For example, you can't lock a field that is required. 
-- Use the **Hide** tool to hide an element on the page. To use this tool, select the **Hide** tool, and then select the element you wish to hide. When using the **Hide** tool, all elements that are currently hidden are made visible but are shown in a shaded container. You can then unhide them by selecting them. Switch to another personalization tool to see how the page will look when the selected elements are hidden. 
+- Use the **Hide** tool to hide an element on the page. To use this tool, select the **Hide** tool, and then select the element that you wish to hide. When using the **Hide** tool, all elements that are currently hidden are made visible but are shown in a shaded container. You can then make an eleement visible by selecting it. Switch to another personalization tool to see how the page will look when elements are hidden. 
 
     - You are allowed to hide required fields and sections that contain required fields, which allows you to create a simplified experience where required fields that are defaulted by business logic are not shown. Hidden required fields will be temporarily made visible if they are empty when a save is attempted on a page.
 - Use the **Add a field** tool to add a field to your page. When you use the **Add a field** tool, you can add only fields that are part of the page definition. For information about how to create new fields that aren't part of the current page definition, see [Custom fields](user-defined-fields.md). After you select the **Add a field** tool, you must first select the group or area where you want to add a field. A dialog box will show the list of fields that are related to the selected group or area. In the dialog box, select one or more fields to add, and then select **Insert**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
