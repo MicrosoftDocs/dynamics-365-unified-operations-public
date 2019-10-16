@@ -41,8 +41,6 @@ Overview
 
 The file upload control lets users upload a file. It also lets developers control the upload process and manage the file that is uploaded, based on their requirements. 
 
-[![FileUpload001](./media/fileupload001.png)](./media/fileupload001.png) 
-
 The file upload control can have three styles. You control the style by using the **Style** property.
 
 -   The **Standard** style shows the file name field together with **Browse**, **Upload**, and **Cancel** buttons.
@@ -53,10 +51,10 @@ The **FileTypesAccepted** property of the file upload control lets you limit the
 
 | Allowed file types    | Allowed file types from the upload strategy | Final result                          |
 |-----------------------|---------------------------------------------|---------------------------------------|
-| ".jpg,.png"           | ".jpg,.png,.gif,.txt"                       | ".jpg,.png"                           |
+| ".jpg, .png"          | ".jpg, .png, .gif, .txt"                    | ".jpg, .png"                           |
 | "image/png"           | "image/\*"                                  | "image/png"                           |
 | "image/\*"            | "image/png"                                 | The **Browse** button is unavailable. |
-| ".jpg,.png,.gif,.txt" | ".jpg,.png"                                 | The **Browse** button is unavailable. |
+| ".jpg, .png, .gif, .txt" | ".jpg, .png"                              | The **Browse** button is unavailable. |
 
 You can use the **OnBrowseButtonClicked**, **OnUploadAttemptStarted**, and **OnUploadCompleted** overrides to hook into the various stages of the file upload process. You can also create custom file upload strategies and associate them with a file upload control by using the **FileUpload Strategy Class** property.
 
@@ -71,7 +69,7 @@ The framework provides a default upload strategy class that is named **FileUploa
 ## Sequence diagram
 The file upload control accepts the file and upload strategy in the client, and sends them to the file services. The file services start a new session, create an instance of a strategy class, and call the **uploadFile** method. When the **uploadFile** method has finished storing the file in the data source, a file upload result class returns to the file services. This class is sent back to the client, which might trigger the **OnUploadCompleted** event to deal with the post-process. 
 
-[![FileUploadControlUsageAndDesign1](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
+[![File upload control usage and design](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 
 
