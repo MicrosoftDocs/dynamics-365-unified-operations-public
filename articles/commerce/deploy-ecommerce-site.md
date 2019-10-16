@@ -90,3 +90,13 @@ When e-Commerce is initialized from LCS, the system provisions several component
 ## Access the authoring environment
 
 To access the authoring environment, go to the **e-Commerce** tab on the **Retail management** page. There, you will find links to your e-Commerce site and the site management tool.
+
+## Additional resources
+
+- [Online store overview](online-store-overview.md)
+- [Create an e-Commerce site](create-ecommerce-site.md)
+- [Associate an online site with a channel](associate-site-online-store.md)
+- [Configure a domain name](configure-your-domain-name.md)
+- [Add support for a content delivery network (CDN)](add-cdn-support.md)
+- [Enable location-based store detection](enable-store-detection.md)
+- [Set up custom pages for user logins](custom-pages-user-logins.md)
