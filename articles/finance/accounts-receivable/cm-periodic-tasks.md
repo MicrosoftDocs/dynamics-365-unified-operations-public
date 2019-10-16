@@ -42,12 +42,12 @@ This topic describes periodic tasks that are a necessary component of managing c
 As you process invoices, the risk for a customer can change. You must periodically review the criteria for each risk score and update the scores for each customer. You can use the Update risk scores page (**Credit and collections > Periodic tasks > Update risk scores**) to update the following scores:
 
 - **Average payment days** is the average number of days that it takes a customer to pay their invoices. 
-- **Customer since** is the number of years that a customer has been a customer of your organization
+- **Customer since** is the number of years that a customer has been a customer of your organization.
 - **In business since** is the number of years that a customer has been in business using the **Business start** value on the **Customers** page. 
-- **Days sales outstanding** is based on the accounts receivables balance, sales revenue, and number of days for the previous 12 month period
-- **Average balance** is based on the accounts receivables balance for the previous 12 month period
-- **Average balance** is based on the accounts receivables balance for the previous 12 month period
-- **Credit management group**, **Account status** and **Country** used information from the customer 
+- **Days sales outstanding** is based on the accounts receivables balance, sales revenue, and number of days for the previous 12 month period.
+- **Average balance** is based on the accounts receivables balance for the previous 12 month period.
+- **Average balance** is based on the accounts receivables balance for the previous 12 month period.
+- **Credit management group**, **Account status** and **Country** used information from the customer. 
 
 In addition, all user defined calculations are processed.
 
