@@ -87,7 +87,9 @@ REV-17.5 – negative value
 29. Click Save.
 30. Close the page.
 
-Please note, that the reverse charge should be setup for specific scenarios:
- - Domestic reverse charge, e.g. purchase of the UK services, Gold, Computers chips, Mobile phones.
- - European service purchase. For the European goods (items) purchasing, the Use tax can be activated on the sales tax group.
+> [!NOTE]
+> The reverse charge should be set up for specific scenarios, including:
+>
+> - Domestic reverse charge. For example, the purchase of UK services, gold, computers chips, or mobile phones.
+> - European service purchase. For the European goods (items) purchasing, the **Use tax** can be activated on the sales tax group.
 
