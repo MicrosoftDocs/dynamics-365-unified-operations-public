@@ -181,7 +181,7 @@ After your site is created, you can verify that it's associated with your online
 - [Online store overview](online-store-overview.md)
 - [Create an e-Commerce site](create-ecommerce-site.md)
 - [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-- [Configure a domain name](configure-your-domain-name.md)
+- [Configure your domain name](configure-your-domain-name.md)
 - [Add support for a content delivery network (CDN)](add-cdn-support.md)
 - [Enable location-based store detection](enable-store-detection.md)
 - [Set up custom pages for user logins](custom-pages-user-logins.md)
