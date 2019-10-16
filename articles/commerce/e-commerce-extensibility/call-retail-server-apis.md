@@ -90,7 +90,7 @@ The following data action managers are available:
 - TransferOrdersDataActions
 - WarehousesDataActions
 
-For a list of all the available Retail APIs in each data action manager, see [Retail Server Customer and Consumer APIs](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api).
+For a list of all the available Retail Server APIs in each data action manager, see [Retail Server Customer and Consumer APIs](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-customer-consumer-api).
 
 ## Retail Server proxy data methods
 
@@ -121,7 +121,7 @@ import { createGetCategoriesInput } from '@msdyn365-commerce/retail-proxy/dist/D
 export default createObservableDataAction({
     action: <IAction<Category[]>>retailAction,
     input: (context: ICreateActionContext) => {
-        console.log('Creating the unput');
+        console.log('Creating the input');
         console.log(context);
         return createGetCategoriesInput({ Paging: { Top: 10 } }, context.requestContext.apiSettings.channelId);
     }
@@ -166,7 +166,7 @@ The following example shows how the **getCategoryList** data action can be regis
 }
 ```
 
-The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After it's implemented, the property can be accessed from the modules view file by using the **this.props.data.** object.
+The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After it's implemented, the property can be accessed from the module's view file by using the **this.props.data.** object.
 
 ```
 import { AsyncResult , Category, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
