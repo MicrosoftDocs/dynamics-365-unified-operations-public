@@ -65,3 +65,12 @@ To add a copyright notice to the bottom of every page that uses a specific templ
 1. Check in the template, and publish it.
 
 The footer that contains the copyright notice automatically appears at the bottom of all pages that use the selected template.
+
+## Additional resources
+
+- [Add a logo](add-logo.md)
+- [Select a site theme](select-site-theme.md)
+- [Add a favicon](add-favicon.md)
+- [Add a welcome message](add-welcome-message.md)
+- [Add languages to your site](add-languages-to-site.md)
+
