@@ -44,7 +44,7 @@ This topic only describes the differences between the two templates:
 - **Work Orders with Project (Field Service to Supply Chain Management)**
 - **Work Orders (Field Service to Supply Chain Management)**
 
-The main difference is that this template includes mapping of the project number asigned to the Work order in Field Service, ensuring that the Sales order created in Supply Chain Management include the project number and that invoicing can happen on the related project. Besides this the template use Advanced Query and Filtering.
+The main difference is that this template includes mapping of the project number assigned to the Work order in Field Service, ensuring that the Sales order created in Supply Chain Management include the project number and that invoicing can happen on the related project. Besides this the template use Advanced Query and Filtering.
 
 ## Templates and tasks
 
