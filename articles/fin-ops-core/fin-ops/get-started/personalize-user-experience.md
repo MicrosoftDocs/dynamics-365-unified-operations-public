@@ -56,7 +56,7 @@ The **User options** page contains several system-wide settings for the current 
 
 In addition to modifying your user settings, you can also view and delete your usage data and personalizations by clicking the **Usage data** button. When you use the application, many of your selections are remembered to make the system easier for you to use in the future. The **Personalization** tab, in particular, allows you to view and manage the personal changes that you have made to pages in the system. Feature callouts, the pop-up windows that introduce you to new features in the system, can also be reset from this tab so that you are again alerted about previously encountered features.  
 
-Note after the [Saved views](saved-views.md) feature has been enabled, your personalizations can be viewed and managing by clicking the **Personalization** button on the **User options** page.  
+Note that after the [Saved views](saved-views.md) feature has been enabled, your personalizations can be viewed and managing by clicking the **Personalization** button on the **User options** page.  
 
 ## Implicit personalizations
 
