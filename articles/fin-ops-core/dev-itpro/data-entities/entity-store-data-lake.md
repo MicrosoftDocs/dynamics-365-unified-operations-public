@@ -38,12 +38,12 @@ ms.dyn365.ops.version: Platform Update 23
 [!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
-> Access to this scenario is made available via flighting. The scenario is being released through multiple platform updates:
+> This feature is currently in public preview. The feature comprises of several components:
 >
 > - **Automated Entity store refresh:** Available in Platform update 23
-> - **Entity store data in Microsoft Azure Data Lake (full push):** Available in Platform update 23 (Restricted)
+> - **Entity store data in Microsoft Azure Data Lake (full push):** Available in Platform update 26 
 > - **DataFlows for Entity store schemas on PowerBI.com:** Available in a future platform update
-> - **Entity store data in Azure Data Lake (trickle feed):** Available in a future platform update
+> - **Entity store data in Azure Data Lake (trickle feed):** Available in Platform update 28 
 > - **Extend analytical workspaces by using PowerBI.com:** Available in a future platform update
 
 ## Automated Entity store refresh
@@ -79,7 +79,7 @@ In addition, an admin can refresh any aggregate measurement on demand by selecti
 ## Entity store data in Azure Data Lake (full push)
 
 > [!IMPORTANT]
-> This restricted feature is turned on via flighting. This feature is available only if your environment is included in the flight.
+> This feature is currently in public preview. You should not enable this feature in production environments.
 
 When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store.
 
