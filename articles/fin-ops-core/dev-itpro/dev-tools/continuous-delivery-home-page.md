@@ -5,7 +5,7 @@ title: Continuous delivery home page
 description: These topics describe tools and guidelines related to application lifecycle management and continuous delivery of your solution.
 author: RobinARH
 manager: AnnBe
-ms.date: 02/13/2018
+ms.date: 10/16/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,8 +44,7 @@ FAQ and guidelines
 ## Build and test automation
 - [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md)
 - [Testing and validations](../perf-test/testing-validation.md)
-- [PERF103: Introduction to the PerfSDK and multiuser testing with Visual Studio Online](../perf-test/perfsdk-tutorial.md)
-- [Integrate the Retail SDK with the continuous build system (Azure DevOps)](../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
+- [Integrate the Retail SDK with the continuous build system (Azure DevOps)](../../../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 - [SysTest filtering using Class and Method attributes](../perf-test/systest-filtering.md)
 - [Acceptance test library](../perf-test/acceptance-test-library.md)
 
