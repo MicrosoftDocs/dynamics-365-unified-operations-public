@@ -61,11 +61,11 @@ In both cases, the grid view is structured the same.
 
 #### Details view
 
-[![Details Master w/Standard Tabs wireframe: Details view](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
+[![Details Master with Standard Tabs wireframe: Details view](./media/detailsmaster3-1024x576.png)](./media/detailsmaster3.png)
 
 #### Grid view
 
-[![Details Master w/Standard Tabs wireframe: Grid view](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
+[![Details Master with Standard Tabs wireframe: Grid view](./media/detailsmaster4-1024x575.png)](./media/detailsmaster4.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -233,11 +233,11 @@ Form: **HcmWorker**
 
 #### Details view (navigation list on)
 
-[![Details Master w/Standard Tabs example: Details view (navigation list on)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
+[![Details Master with Standard Tabs example: Details view (navigation list on)](./media/detailsmaster9-1024x508.png)](./media/detailsmaster9.png)
 
 #### Grid view
 
-[![Details Master w/Standard Tabs example: Grid view](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
+[![Details Master with Standard Tabs example: Grid view](./media/detailsmaster10-1024x509.png)](./media/detailsmaster10.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -263,9 +263,9 @@ None.
 
 ##### Details Master w/Standard Tabs
 
-[![AX 2012 example: Details Master w/Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
+[![AX 2012 example: Details Master with Standard Tabs 1](./media/detailsmaster13-1024x726.png)](./media/detailsmaster13.png) 
 
-[![AX 2012 example: Details Master w/Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
+[![AX 2012 example: Details Master with Standard Tabs 2](./media/detailsmaster14-1024x620.png)](./media/detailsmaster14.png)
 
 
 
