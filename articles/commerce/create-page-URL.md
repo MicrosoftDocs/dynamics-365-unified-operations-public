@@ -101,3 +101,10 @@ To redirect a URL to a different URL, follow these steps.
     - **Temporary redirect (302)** – Select this option to redirect traffic without updating search engines. This approach is typically used if the content will soon revert to its previous URL.
 
 1. When you're ready to implement the redirect, save and publish the URL.
+
+## Additional resources
+
+- [Customize site navigation](customize-site-navigation.md)
+- [Add a new site page](add-new-page.md)
+- [Configure your domain name](configure-your-domain-name.md)
+- [Add languages to your site](add-languages-to-site.md)
