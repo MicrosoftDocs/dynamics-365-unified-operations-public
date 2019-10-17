@@ -71,3 +71,14 @@ To add an alert module to a page and set the required properties, follow these s
 1. In the settings for the alert module, enter the alert text. You can edit the other properties if you want to customize the alert module further.
 1. Save and preview the page. At the top of the page, you should see an alert that has the text that you added.
 1. Check in the page, and publish it. 
+
+## Additional resources
+
+- [Starter kit overview](starter-kit-overview.md)
+- [Add a container module to a page](add-container-module.md)
+- [Add a buy box to a page](add-buy-box.md)
+- [Add a cart module to a page](add-cart-module.md)
+- [Add a checkout module to a page](add-checkout-module.md)
+- [Create an order confirmation module](order-confirmation-module.md)
+- [Create a header module](author-header-module.md)
+- [Create a footer module](author-footer-module.md)
