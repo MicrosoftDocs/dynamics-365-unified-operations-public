@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -88,11 +88,12 @@ An approval or task work item can be completed in Flow using the following steps
 For a step-by-step guide to setting up work item completion in Microsoft Flow, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
 
 ## Templates for work item completion in Microsoft Flow
-Templates for work item completion in Microsoft Flow are available:
+
+The following templates for work item completion in Microsoft Flow are available:
 - [Complete Dynamics 365 for Finance and Operations workflow work items (PU26)](https://flow.microsoft.com/en-us/galleries/public/templates/efb564143834442283c41e19cdc2a6bb/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu26/)
 - [Complete Dynamics 365 for Finance and Operations workflow work items (PU29)](https://flow.microsoft.com/en-us/galleries/public/templates/ebeccaa6f7aa40899828d8d01151d268/complete-dynamics-365-for-finance-and-operations-workflow-work-items-pu29/)
 
-The "PU29" version gets completion options from the business event payload, they were added in platform update 29, and presents them to the user via the approval action. 
+The Platform update 29 version gets completion options from the business event payload. These options were added in Platform update 29, and presented to the user via the approval action. 
 
 ## Troubleshooting workflow business events
 
