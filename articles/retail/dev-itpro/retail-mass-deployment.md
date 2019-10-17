@@ -109,10 +109,13 @@ ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 
 #### Silently install Retail hardware station
 
-The following command silently installs (Or updates) Retail hardware station. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer.
+> [!NOTE]
+> The delimiter **-SkipMerchantInfo** is required to install Retail hardware station.  The Merchant Account Information Utility that opens at the end of the hardware station installation is no longer required to be used due to the feature functionality that when POS pairs to hardware station, it also pushes the latest merchant account information to the component for use.
+
+The following command silently installs (Or updates) Retail hardware station. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**, along with the delimiter to skip the merchant account information download through the utility typical at the end of a GUI-based installation. This command uses the configuration file that is located in the same file location as the installer.
 
 ```
-HardwareStationSetup_V10.exe -S
+HardwareStationSetup_V10.exe -S -SkipMerchantInfo
 ```
 
 > [!NOTE]
@@ -123,5 +126,5 @@ HardwareStationSetup_V10.exe -S
 The following command silently installs the current installation of Retail hardware station by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
 ```
-HardwareStationSetup_V10.exe -S -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
+HardwareStationSetup_V10.exe -S -SkipMerchantInfo -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
 ```
