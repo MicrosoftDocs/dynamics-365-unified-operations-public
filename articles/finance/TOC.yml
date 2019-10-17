@@ -353,6 +353,13 @@
       - name: Create a collection letter sequence
         href: accounts-receivable/tasks/create-collection-letter-sequence.md
       - name: Process collection letters
+      - name: Credit management
+        items:
+        - name: Customer credit management overview
+          href: accounts-receivable/cm-credit-managment.md
+        - name: Credit management setup
+          href: accounts-receivable/cm-credit-mgmt-setup.md
+
         href: accounts-receivable/tasks/process-collection-letters.md
       - name: Create a direct debit mandate for a customer
         href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
