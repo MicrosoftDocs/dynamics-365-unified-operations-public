@@ -75,3 +75,14 @@ The wish list page shows the items that have been added to the customer's wish l
 ### Loyalty page
 
 The loyalty page lets customers join a loyalty program or, if they are already loyalty program members, view their program details. They can also view the points that they have earned and redeemed in recent transactions.
+
+## Additional resources
+
+- [Starter kit overview](starter-kit-overview.md)
+- [Add a container module to a page](add-container-module.md)
+- [Add a buy box to a page](add-buy-box.md)
+- [Add a cart module to a page](add-cart-module.md)
+- [Add a checkout module to a page](add-checkout-module.md)
+- [Create an order confirmation module](order-confirmation-module.md)
+- [Create a header module](author-header-module.md)
+- [Create a footer module](author-footer-module.md)
