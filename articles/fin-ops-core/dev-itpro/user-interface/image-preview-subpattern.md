@@ -50,7 +50,7 @@ Image Preview can be used for most images that appear within a form container, e
     -   Fill text
 
 ## Wireframe
-[![ImagePreview(1)](./media/imagepreview1.png)](./media/imagepreview1.png)
+[![Wireframe of Image Preview](./media/imagepreview1.png)](./media/imagepreview1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -97,7 +97,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **RetailVisualProfile** **(Login)** 
 
-[![ImagePreview(2)](./media/imagepreview2.png)](./media/imagepreview2.png)
+[![Example of Image Preview](./media/imagepreview2.png)](./media/imagepreview2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -119,4 +119,4 @@ None.
 
 ### AX 2012 content
 
-[![ImagePreview(3)](./media/imagepreview3.png)](./media/imagepreview3.png)
+[![Example of Image Preview](./media/imagepreview3.png)](./media/imagepreview3.png)
