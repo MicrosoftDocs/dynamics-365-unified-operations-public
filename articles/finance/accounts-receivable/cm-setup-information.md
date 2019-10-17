@@ -38,7 +38,7 @@ ms.dyn365.ops.version:
 Select **Credit and collections > Setup > Credit management workflows** to define the workflows that are used to manage credit limit adjustments. 
 - You can create a workflow that allows you to approve a batch of the credit limits adjustments with a single approval. 
 - You can also add workflow at the line level so that credit limit adjustments can be approved individually.
-- You can create a release workflow that will automatically route holds to a workflow process
+- You can create a release workflow that will automatically route holds to a workflow process.
 
 ## Blocking rules
 
@@ -81,13 +81,13 @@ The credit management group is assigned to a customer on the **Account receivabl
 
 ## Account statuses
 
-You can create an account status to identify the credit standing of a customer account. You can define the status and its effect on the invoicing and delivery on hold processes. Account statuses can also be used to determine blocking rules for a customer.
+You can create an account status to identify the credit standing of a customer account. You can define the status and its effect on the invoicing and delivery on-hold processes. Account statuses can also be used to determine blocking rules for a customer.
 
 You can create Account statuses from the **Credit management > Setup> Groups setup> Account statuses** page.
 
 1. Add an account status and a description for the status that represents the credit standing for a customer. For example, use **Normal** to indicate that a customer is in good standing and open orders are subject to standard credit management processing.
 
-2.	In the **Invoicing** and **Delivery on Hold** fields, select the type of hold that will occur for customers with this status. You can hold all processing, hold only invoice processing, or do no hold processing when executing the credit limit rules.
+2.	In the **Invoicing** and **Delivery on Hold** fields, select the type of hold that will occur for customers with this status. You can hold all processing, hold only invoice processing, or choose not to hold processing when applying the credit limit rules.
 
 ## Scoring Groups
 
