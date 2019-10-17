@@ -55,3 +55,13 @@ The following types of modules are provided in the starter kit:
 - **Purchase modules** – Purchase modules include the cart module, which can be used to add items to the cart. The checkout module captures the shipping address, delivery options, and gift card, loyalty program, and credit card information, so that an order can be processed. After an order is placed, the order confirmation module can be used to show the confirmation details.
 - **Account management modules** – The sign-in module lets customers sign in to an existing account, and the sign-up module lets them create a new account. After an account is created, the order history module can be used to view recent orders, and the order details module can be used to view order details.
 - **Recommendations module** – Recommendations are shown by using the product placement module. This module supports algorithmic and editorial lists that can be showcased on any page.
+
+## Additional resources
+
+- [Add a container module to a page](add-container-module.md)
+- [Add a buy box to a page](add-buy-box.md)
+- [Add a cart module to a page](add-cart-module.md)
+- [Add a checkout module to a page](add-checkout-module.md)
+- [Create an order confirmation module](order-confirmation-module.md)
+- [Create a header module](author-header-module.md)
+- [Create a footer module](author-footer-module.md)
