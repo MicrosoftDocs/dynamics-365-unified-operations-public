@@ -145,12 +145,14 @@ Select **Credit limit used**  if the blocking rule applies to the customer credi
    - Select a **Group** if the rule applies to a customer credit management group.
    - Select **All** if the rule applies to all customers. 
 3. Select a **Risk group** if you want to further limit the list of customers that go on credit management hold. 
-4. Select the type of rule that you are setting up.  **Blocking** will create a rule that blocks an order. **Exclusion** creates a rule that will exclude a rule from blocking an order. 
+4. Select the type of rule that you are setting up.
+   - Select **Blocking** to create a rule that blocks an order. 
+   - Select **Exclusion** to create a rule that will exclude another rule from blocking an order. 
 5. Select the **Threshold remaining** that defines the percentage of the credit limit that will block the sales order. If the value of an order increases the amount of the credit limit used above the percentage, then the order will be placed on hold. 
 
 ## Put a sales order on hold based on other criteria
   
-### Rank Payment Terms	
+### Rank payment terms	
 
 You can force the credit control rules to be executed when payment terms are changed. You must rank the payment terms and assign them a ranking value. If you change the payment terms on the order to payment terms that are ranked higher than the old payment terms, then the order will be sent to credit management and require approval.
 
@@ -161,18 +163,19 @@ You can set up the payment terms rankings on the **Credit management > Setup > C
 
 ### Rank settlement discounts	
 
-You can force the credit control rules to be executed when settlement discounts are changed. You must rank the settlement discounts and assign them a ranking value. If you change the settlement discounts on the order to settlement discounts that are ranked higher than the old settlement discounts, then the order will be sent to credit management and require approval.
+You can force the credit control rules to be executed when settlement discounts are changed. You must rank the settlement discounts and assign them a ranking value. If you change the settlement discounts on the order to settlement discounts that are ranked higher than the old settlement discounts, then the order will be sent to credit management and require    approval.
 
 You can set up the payment terms rankings on the **Credit management > Setup > Credit management setup > Rank settlement discounts** page.
 
 1. Select the **Cash discount** that you want to rank. The **Description** of the settlement discount will be displayed.
 2. Select the **Rank** value. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the settlement discounts so that only one or two settlement discounts will trigger the credit check.
 
-## Managing the priority of executing rules
+## Sequence the application of rules
 
-Rules are executed in a specific order
-1. The Sales order rule allows you to override all rules if an exclusion rule is true. If you mark an exclusion rule so that the Release Sales order is checked, the order will not be put on hold if that rule is true and no other rules will be checked.
-2. Blocking rules are executed for every rule. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the credit management hold page.
+Rules are executed in a specific order and you change the order that they're executed in. 
+
+1. The Sales order rule let you override all rules if an exclusion rule is true. If you mark an exclusion rule so that the **Release Sales order** option is selected, the order will not be put on hold if that rule is true, and no other rules will be checked.
+2. Blocking rules are executed for every rule. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
 3. Exclusion rules are executed last. If an exclusion rule is true on one rule, it will not override the blocking rule for the same rule. Exclusions will only affect the rule on which they are defined. 
 4. Blocking and exclusion rules are executed in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be executed because an exclusion rule at the Table or Group level is executed.
 
@@ -183,25 +186,25 @@ The behavior of the **Credit limit used** rule will change based on the settings
 
 ## Processing orders on hold using the credit management hold list
 
-The Credit management hold list allows credit managers to view all sales orders that have been placed on hold and enables them to remove the holds once the credit issues have been mitigated. The **Credit management hold list** page shows all sales orders that have been placed on hold. You can view the hold list on the **Credit management > Credit management hold list > All credit holds** page.
+The Credit management hold list lets credit managers view all sales orders that have been placed on hold and lets them remove the holds when the credit issues have been mitigated. The **Credit management hold list** page shows all sales orders that have been placed on hold. You can view the hold list on the **All credit holds** page (**Credit management > Credit management hold list > All credit holds**).
 Sales orders from all legal entities are sent to the same credit management hold list, providing a centralized view of all transactions that require attention. Users will only see information for the legal entities that they have access to.
 
 A sales order can be placed in the hold list for the following reasons:
 1. The customer has an invoice that has been overdue for a specified number of days. 
 2. The order has a specific account status.
-3. The order has a specific terms of payment.
+3. The order has specific terms of payment.
 4. The customer has an expired credit limit.
 5. The customer has an overdue amount and has used a specified percentage of its credit limit
 6. The sales order exceeds a certain amount.
-7. The customer has exceeded a certain percentage of its credit limit
+7. The customer has exceeded a certain percentage of its credit limit.
 8. The payment terms differ from the default payment terms for the customer.
 9. The settlement discounts differ from the default settlement discount for the customer.
 
-The blocking reason is displayed for each sales order in the hold list. If there are more than one reason for the hold, the reason will show as "Multiple". You can use the ** Blocking reasons** menu on the action pane to view all of the reasons why the sales order was placed on hold.
+The blocking reason is displayed for each sales order in the hold list. If there are more than one reason for the hold, the reason will show as **Multiple**. You can use the **Blocking reasons** menu on the Action Pane to view all of the reasons why the sales order was placed on hold.
 
-### Releasing orders from the hold list for processing	
+### Releasing orders from the hold list for processing
 
-Once you have researched the reasons for the hold and you have mitigated them, you can release the sales orders for further processing.
+When you have researched the reasons for the hold and you have mitigated them, you can release the sales orders for further processing.
 
 1) Select a line in the hold list. You can release multiple orders by selecting more than one line.
 2) Select a **Release reason** for the order that has been selected for release.  
@@ -227,9 +230,9 @@ You can use the **Evaluate for release** menu to review the sales orders in the 
 
 You can also create **Credit management workflows** to control the release of credit holds. Once you have set up workflow using the **Credit management > Setup > Credit management workflows** page, the orders marked for release or rejection will be sent to workflow where they must be approved first before they will be released or rejected. 
 
-### Forced Credit Hold	
+### Forced credit hold	
   
-At times, sales orders may be released prematurely when a credit manager reviews a blocked order, releases it and then later discovers another reason for it to remain on hold.  You can manually force a sales order to be on hold if that situation occurs.
+At times, sales orders may be released prematurely when a credit manager reviews a blocked order, releases it and then later discovers another reason for it to remain on hold. You can manually force a sales order to be on hold if that situation occurs.
 
 1. Open the sales order that you want to place on hold.  
 2. Select **Force credit hold** in the **Credit management** tab on the **Credit management** action pane.
