@@ -70,3 +70,9 @@ The main section of the home page can highlight products, categories, or promoti
 
 > [!NOTE]
 > All the modules that are listed here can be used on any site page. However, their placement on the home page is important because that page is where customers first interact with your site.
+
+## Additional resources
+
+- [Quick tour of product details pages](quick-tour-pdp.md)
+- [Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+- [Quick tour of account management](quick-tour-account-management.md)
