@@ -56,6 +56,6 @@ The ratings and reviews solution also provides a business intelligence (BI) temp
 ## Additional resources
 
 - [Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
-- [Manage ratings and reviewss](manage-reviews.md)
+- [Manage ratings and reviews](manage-reviews.md)
 - [Configure ratings and reviews](configure-ratings-reviews.md)
 - [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
