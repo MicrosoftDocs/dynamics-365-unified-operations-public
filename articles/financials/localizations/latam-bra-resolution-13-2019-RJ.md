@@ -82,42 +82,33 @@ Example of an automatically created adjustment transaction in SPED Fiscal:
 
    \|E111\|RJ18003\| RJ801137\|\<Adjustment amount\>\|
 
-### Reduction of Tax base or percentage 
-      
-    During the Sync process two types of adjustment transactions will be created
-    in ICMS tax assessment under these specific criteria:
+### Reduction of tax base or percentage 
+
+During the synchronization process, two types of adjustment transactions will be created in ICMS tax assessment under these specific criteria:
 
 -   Outgoing fiscal document issued from RJ state with taxation code = 20 ,70
+-   Benefit code from table 5.2 and 5.3 are assigned to the related item and state of above fiscal document. For example, code from 5.2 table = RJ802164, code from 5.3 table = RJ90980000.
 
--   Benefit code from table 5.2 and 5.3 are assigned to the related item and
-    state of above fiscal document  
-      
-    For example, code from 5.2 table = RJ802164, code from 5.3 table =
-    RJ90980000
+Examples of automatically created adjustment transactions in SPED Fiscal:
 
-Adjustment transactions created automatically (examples) in SPED Fiscal:
-
--   Adjustment code table 5.2 generates E115 record  
+- Adjustment code table 5.2 generates E115 record  
       
     \|E115\|RJ802164\|0\|\|
 
--   Adjustment code from table 5.3 generates a C197 record
+- Adjustment code from table 5.3 generates a C197 record
 
-\|C197\|RJ90980000\|RJ802164\|ItemId\|0,00\|0,00\|0,00\|0,20\|
+    \|C197\|RJ90980000\|RJ802164\|ItemId\|0,00\|0,00\|0,00\|0,20\|
+> [!NOTE]
+> In this example the base amount = 3.5, ICMS %= 12, Percentage reduction = 41.67, amount 0.20 is calculated as:
+>
+> 3,5 \* (1-(0,12\*(1-0,4167)))/ (1-0,12)-3,5
 
-*Note*. In this example the base amount = 3.5, ICMS %= 12, Percentage reduction
-=41.67, amount 0.20 is calculated as:
+- Observation code, assigned to the related item and state of above fiscal document, generates C195 and 0460 records:
 
-3,5 \* (1-(0,12\*(1-0,4167)))/ (1-0,12)-3,5
+    \|C195\|\<Observation code\>\|\<Observation code description\>\|
 
--   Observation code, assigned to the related item and state of above fiscal
-    document, generates C195 and 0460 records:
+    \|0460\|\<Observation code\>\|\<Observation code description\>\|
 
-\|C195\|\<Observation code\>\|\<Observation code description\>\|
-
-\|0460\|\<Observation code\>\|\<Observation code description\>\|
-
- 
 
 ### Presumed credit
 
@@ -130,8 +121,6 @@ with the code from the table 5.2.
  Adjustment transactions created automatically (examples) in SPED Fiscal:
 
 \|E111\| RJ018003\|RJ805289\|\<Adjustment amount\>\|
-
- 
 
 ### Tax on Total sales, output, and billing
 
