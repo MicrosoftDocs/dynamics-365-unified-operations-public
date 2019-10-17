@@ -1449,6 +1449,8 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
+          - name: Call Retail Server APIs
+            href: e-commerce-extensibility/call-retail-server-apis.md
         - name: Advanced data action topics
           items:
           - name: Chain data actions
