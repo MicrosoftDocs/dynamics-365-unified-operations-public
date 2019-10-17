@@ -103,3 +103,9 @@ When the customer places an order, a confirmation number is provided. At this po
 After an order is created, an order confirmation email is sent to the customer.
 
 For more information about how to author a checkout page, see [Add a checkout module to a page](add-checkout-module.md).
+
+## Additional resources
+
+- [Quick tour of the home page](quick-tour-home-page.md)
+- [Quick tour of product details pages](quick-tour-pdp.md)
+- [Quick tour of account management](quick-tour-account-management.md)
