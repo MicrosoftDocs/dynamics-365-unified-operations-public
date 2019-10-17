@@ -91,3 +91,13 @@ To add a cart module to a new page and set the required properties, follow these
 1. Create a page that uses the new template.
 1. Save and preview the page.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+- [Starter kit overview](starter-kit-overview.md)
+- [Add a container module to a page](add-container-module.md)
+- [Add a buy box to a page](add-buy-box.md)
+- [Add a checkout module to a page](add-checkout-module.md)
+- [Create an order confirmation module](order-confirmation-module.md)
+- [Create a header module](author-header-module.md)
+- [Create a footer module](author-footer-module.md)
