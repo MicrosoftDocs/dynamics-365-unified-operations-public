@@ -37,15 +37,21 @@ This topic explains how to set up and print accompanying invoices which also con
  
 ## Prerequisites
 
-- The primary address of the legal entity must be in Italy.
-- In **Feature management**, enable the feature, **Sales invoice lines sorting by packing slips**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
+- The primary address of the legal entity must be in **Italy**.
+- In **Feature management**, enable the feature **Sales invoice lines sorting by packing slips**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
 - In **Print management** set the reference to *SalesInvoice.Report_IT* layout for Customer invoice (Original).
 
 ***Accounts receivable > Setup > Forms > Form setup > General*** (FastTab) ***> Print management***:
 ![Invoicing of packing slips setup](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
 
+> [!NOTE]
+> With the enabled feature **Sales invoice lines sorting by packing slips** the following parameter **Print packing slip specifications** will be ignored, i.e. always considered as turned off.
+
+***Accounts receivable > Setup > Forms > Form setup > Invoice*** (FastTab):
+![Print packing slip specifications](media/emea-ita-exil-invoice-packing-slip-pic3.jpg)
+
 ## Accompanying invoices printing
-Once enabled and set up, the invoice report printout will contain packing slips details.
+Once enabled and set up, the invoice report printout will contain invoice lines grouped and sorted by packing slips.
 
 ![Invoicing of packing slips](media/emea-ita-exil-invoice-packing-slip-pic.jpg)
 
