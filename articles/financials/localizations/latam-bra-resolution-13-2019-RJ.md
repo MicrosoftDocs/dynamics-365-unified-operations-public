@@ -5,7 +5,7 @@ title: SPED fiscal resolution 13/2019 RJ
 description: This topic explains how to set up and generate SPED ECD text files.
 author: v-oloski
 manager: AnnBe
-ms.date: 09/24/2019
+ms.date: 10/16/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,77 +32,57 @@ ms.dyn365.ops.version: 7.0
 
 [!include [banner](../includes/banner.md)]
 
-RJ has published Resolution 13/2019, ( “Resolution” below in text) which defines
-how an NF-e should be issued, and how to record such information in the EFD ICMS
-IPI, when executing the following operations (Decree No. 27.815 / 01):
+RJ has published Resolution 13/2019. This resolution defines how an NF-e should be issued, and how to record the information in the EFD ICMS IPI when executing the following operations (Decree No. 27.815 / 01):
 
-1.  EXEMPTION
+- Exemption
+- Reduction of the basis of calculation or reduction of rate
+- Presumed credit
+- Taxation on billing, taxation on recipe, or taxation on output
+- Deferral
+- Ineligibility of credit reverse
+- Fiscal credit repair or accumulated credit balance transfer
 
-2.  REDUCTION OF THE BASIS OF CALCULATION OR REDUCTION OF RATE
+According to this resolution, exonerations are registered as adjustments on fiscal documents and in fiscal books, and should be reported in SPED Files.
 
-3.  PRESUMED CREDIT
+The resolution requirements impact the output of the E111, E115, C195/C197/0460 lines in SPED fiscal.
 
-4.  "TAXATION ON BILLING", "TAXATION ON RECIPE" OR "TAXATION ON OUTPUT"
+## SPED Fiscal records by operations
 
-5.  DEFERRAL
+### Exemption and credit reversal
 
-6.  INEXIGIBILITY OF CREDIT REVERSE
+During the synchronization process, two types of adjustment transactions will be created in ICMS tax assessment under these specific criteria:
 
-7.  FISCAL CREDIT REPAIR OR ACCUMULATED CREDIT BALANCE TRANSFER
+- Outgoing fiscal document issued from RJ state with taxation code = 30 or 40
+- Benefit codes from table 5.2 and 5.3, as well as observation codes, are assigned to the related item and state of above fiscal document. For example, code from 5.2 table = RJ801137 and code from 5.3 table = RJ90980000.
 
-According to this Resolution "Exonerations" are to be registered as adjustments
-on Fiscal Documents and as adjustments in Fiscal Books and to be reported in
-SPED Files.
+Examples of adjustment transactions created automatically in SPED Fiscal:
 
-The Resolution requirements impact on output the E111, E115, C195/C197/0460 lines
-in SPEC fiscal.
+- Adjustment code from table 5.2 generates a E115 record
 
-Overview of SPED Fiscal records by operations, listed in the Resolution
-=======================================================================
+    \|E115\|RJ801137\|0\|\|
 
-1.  *Exemption and credit reversal*
+- Adjustment code from table 5.3 generates a C197 record
 
-During the Sync process two types of adjustment transactions will be created in
-ICMS tax assessment under these specific criteria:
+    \|C197\|RJ90980000\|RJ801137\|ItemId\|0,00\|0,00\|0,00\|0.88\|
 
--   Outgoing fiscal document issued from RJ state with taxation code = 30 or 40
+> [!NOTE]
+> In this example the base amount = 3.5, ICMS %=18, FCP=0,02, amount 0.88 is calculated as:
+>
+> 3,5/ (1-(0,18+0.02)) \* (0,18+0,02)
 
--   Benefit codes from table 5.2 and 5.3 as well as observation code are
-    assigned to the related item and state of above fiscal document.
+- Observation code, assigned to the related item and state of above fiscal document, generates C195 and 0460 records:
 
-For example, code from 5.2 table = RJ801137, code from 5.3 table = RJ90980000
+    \|C195\|\<Observation code\>\|\<Observation code description\>\|
 
-Adjustment transactions created automatically in SPED Fiscal (examples):
+    \|0460\|\<Observation code\>\|\<Observation code description\>\|
 
--   Adjustment code from table 5.2 generates a E115 record
+To register the reversal of credits, create a manual adjustment in the General tax adjustment/benefit/incentive journal and add the code from the table 5.2 to the **Description** field.
 
-\|E115\|RJ801137\|0\|\|
+Example of an automatically created adjustment transaction in SPED Fiscal:
 
--   Adjustment code from table 5.3 generates a C197 record
+   \|E111\|RJ18003\| RJ801137\|\<Adjustment amount\>\|
 
-\|C197\|RJ90980000\|RJ801137\|ItemId\|0,00\|0,00\|0,00\|0.88\|
-
-*Note*. In this example the base amount = 3.5, ICMS %=18, FCP=0,02, amount 0.88
-is calculated as:
-
-3,5/ (1-(0,18+0.02)) \* (0,18+0,02)
-
--   Observation code, assigned to the related item and state of above fiscal
-    document, generates C195 and 0460 records:
-
-\|C195\|\<Observation code\>\|\<Observation code description\>\|
-
-\|0460\|\<Observation code\>\|\<Observation code description\>\|
-
-To register the reversal of credits, a user creates manual adjustment in the
-General tax adjustment/ benefit/ incentive journal and fill in Description field
-with the code from the table 5.2.
-
- Adjustment transactions created automatically (examples) in SPED Fiscal:
-
-\|E111\|RJ18003\| RJ801137\|\<Adjustment amount\>\|
-
-1.  *Reduction of Tax base or percentage:*  
+### Reduction of Tax base or percentage 
       
     During the Sync process two types of adjustment transactions will be created
     in ICMS tax assessment under these specific criteria:
@@ -139,7 +119,7 @@ Adjustment transactions created automatically (examples) in SPED Fiscal:
 
  
 
-1.  *Presumed credit*
+### Presumed credit
 
 *Out of scope*: the system can’t prepare additional % necessary for C197.
 
@@ -153,222 +133,152 @@ with the code from the table 5.2.
 
  
 
-1.  *Tax on Total sales, output, billing*
+### Tax on Total sales, output, and billing
 
-During the Sync process one type of adjustment transactions will be created in
-ICMS tax assessment under these specific criteria:
+During the synchronization process, one type of adjustment transaction will be created in ICMS tax assessment under these specific criteria:
 
--   Outgoing fiscal document issued from RJ state with taxation code = 00
+- Outgoing fiscal documents issued from RJ state with taxation code = 00
+- The benefit code from table 5.2 is assigned to the related item and state of a fiscal document (code from the table 5.3 is not assigned). For example, code from 5.2 table = RJ822371.
 
--   Benefit code from the table 5.2 is assigned to the related item and state of
-    above fiscal document (code from the table 5.3 is not assigned)  
-      
-    For example, code from 5.2 table = RJ822371
+Examples of adjustment transactions created automatically in SPED Fiscal:
 
-Adjustment transactions created automatically (examples) in SPED Fiscal:
-
--   Adjustment code table 5.2 generates E115 record:  
+- Adjustment code table 5.2 generates E115 record:  
       
     \|E115\| RJ822371\|0\|\|
 
-*Note*. As there is no code 5.3, records C195, C197 and 0460 are note created
-
+> [!NOTE]
+> As there is no code 5.3, records C195, C197, and 0460 are not created.
  
+To register the reversal of credits and debits, you can create manual adjustments in the General tax adjustment/benefit/incentive journal and fill in **Description** field with the code from the table 5.2.
 
-To register the reversal of credits/ debits/ the debits of 3,5%, a user creates
-manual adjustments in the General tax adjustment/ benefit/ incentive journal and
-fill in Description field with the code from the table 5.2.
+ Examples of adjustment transactions created automatically in SPED Fiscal:
 
- Adjustment transactions created automatically (examples) in SPED Fiscal:
+   \|E111\|RJ18003\|RJ822371\|\<Adjustment amount\>\|
 
-\|E111\|RJ18003\|RJ822371\|\<Adjustment amount\>\|
+   \|E111\|RJ38003\|RJ822371\|\<Adjustment amount\>\|
 
-\|E111\|RJ38003\|RJ822371\|\<Adjustment amount\>\|
+   \|E111\|RJ08006\|RJ822371\|\<Adjustment amount\>\|
 
-\|E111\|RJ08006\|RJ822371\|\<Adjustment amount\>\|
+### Deferral
 
-1.  *Deferral*
+During the synchronization process, two types of adjustment transactions will be created in ICMS tax assessment under these specific criteria:
 
-During the Sync process two types of adjustment transactions will be created in
-ICMS tax assessment under these specific criteria:
+- Outgoing fiscal documents issued from RJ state with taxation code = 51.
+- Benefit codes from table 5.2 and 5.3 are assigned to the related item and state of above fiscal document. For example, code from 5.2 table = RJ818317 and code from 5.3 table = RJ90980001.
 
--   Outgoing fiscal document issued from RJ state with taxation code = 51
+Examples of adjustment transactions created automatically in SPED Fiscal:
 
--   Benefit codes from table 5.2 and 5.3 are assigned to the related item and
-    state of above fiscal document.
+- Adjustment code from table 5.2 generates a E115 record
 
-For example, code from 5.2 table = RJ818317, code from 5.3 table = RJ90980001
+    \|E115\| RJ818317\|0\|\|
 
-Adjustment transactions created automatically (examples) in SPED Fiscal:
+- Adjustment code from table 5.3 generates a C197 record
 
--   Adjustment code from table 5.2 generates a E115 record
+    \|C197\| RJ90980001\| RJ818317\|ItemId\|0,00\|0,00\|0,00\|6585.36\|
 
-\|E115\| RJ818317\|0\|\|
+> [!NOTE]
+> In this example the base amount = 30000,00, and amount 6585.36 is calculated as:
+>
+> 30000,00/ (1-0,18)\*0,18
 
--   Adjustment code from table 5.3 generates a C197 record
+- Observation code, assigned to the related item and state of above fiscal document, generates C195 and 0460 records:
 
-\|C197\| RJ90980001\| RJ818317\|ItemId\|0,00\|0,00\|0,00\|6585.36\|
+    \|C195\|\<Observation code\>\|\<Observation code description\>\|
+    
+    \|0460\|\<Observation code\>\|\<Observation code description\>\|
 
-*Note*. In this example the base amount = 30000,00, amount 6585.36 is calculated
-as:
+### Enforceability of credit reversal
 
-30000,00/ (1-0,18)\*0,18
+During the synchronization process, two types of adjustment transactions will be created in ICMS tax assessment under these specific criteria:
 
--   Observation code, assigned to the related item and state of above fiscal
-    document, generates C195 and 0460 records:
+- Outgoing fiscal document issued from RJ state with taxation code = 40
+- Benefit codes from table 5.2 and 5.3 are assigned to the related item and state of above fiscal document.
+    
+  For example, code form 5.2 table = RJ801163 and code form 5.3 table = RJ90980000
 
-\|C195\|\<Observation code\>\|\<Observation code description\>\|
+Examples of adjustment transactions created automatically in SPED Fiscal:
 
-\|0460\|\<Observation code\>\|\<Observation code description\>\|
+- Adjustment code from table 5.2 generates a E115 record
 
- 
+    \|E115\| RJ801163\|0\|\|
 
-1.  *Enforceability of credit reversal*
+- Adjustment code from table 5.3 generates a C197 record
 
-During the Sync process two types of adjustment transactions will be created in
-ICMS tax assessment under these specific criteria:
+    \|C197\|RJ90980000\|RJ801137\|ItemId\|0,00\|0,00\|0,00\|20\|
 
--   Outgoing fiscal document issued from RJ state with taxation code = 40
+> [!NOTE]
+> In this example the base amount = 200, ICMS %=18, FCP=0,02, amount 20 is calculated as:
+>
+>   200/ (1-(0,18+0,02))\*(0,18+0.02)
 
--   Benefit codes from table 5.2 and 5.3 are assigned to the related item and
-    state of above fiscal document.
+- The observation code, assigned to the related item and state of above fiscal document, generates C195 and 0460 records:
 
-For example, code form 5.2 table = RJ801163, code form 5.3 table = RJ90980000
+    \|C195\|\<Observation code\>\|\<Observation code description\>\|
 
-Adjustment transactions created automatically (examples) in SPED Fiscal:
+    \|0460\|\<Observation code\>\|\<Observation code description\>\|
 
--   Adjustment code from table 5.2 generates a E115 record
+To register the reversal of credits, a user creates manual adjustments in the General tax adjustment/benefit/incentive journal and in the **Description** field, provides the code from the table 5.2.
 
-\|E115\| RJ801163\|0\|\|
+Example of an adjustment transaction created automatically in SPED Fiscal:
 
--   Adjustment code from table 5.3 generates a C197 record
+   \|E111\|RJ18003\| RJ801163\|\<Adjustment amount\>\|
 
-\|C197\|RJ90980000\|RJ801137\|ItemId\|0,00\|0,00\|0,00\|20\|
+### Pass on or transfer a tax credit
 
-*Note*. In this example the base amount = 200, ICMS %=18, FCP=0,02, amount 20 is
-calculated as:
+During the synchronization process, two types of adjustment transactions will be created in the ICMS tax assessment under these specific criteria:
 
-200/ (1-(0,18+0,02))\*(0,18+0.02)
+- Outgoing tax fiscal document issued from RJ state with taxation code = 90
+- Benefit codes from table 5.2 and 5.3 are assigned to the related item/CFOP and state of above fiscal document.
+   
+For example, code form 5.2 table = RJ801163 and code form 5.3 table = RJ90980000.
 
--   Observation code, assigned to the related item and state of above fiscal
-    document, generates C195 and 0460 records:
+To register the reversal of credits, the system automatically creates adjustments in the General tax adjustment/benefit/incentive journal and relates the journal line to the tax fiscal document.
 
-\|C195\|\<Observation code\>\|\<Observation code description\>\|
+Example for a sender - Adjustment transactions created automatically in SPED Fiscal:
 
-\|0460\|\<Observation code\>\|\<Observation code description\>\|
+    E115\|RJ821231\|0\|\|
+    C197\| RJ40080001\|RJ821231\|codigoitem\|0,00\|0,00\|\<Tax amount\>\|0,00\|
 
-To register the reversal of credits, a user creates manual adjustments in the
-General tax adjustment/ benefit/ incentive journal and fill in Description field
-with the code from the table 5.2.
+Example for a recipeint - Adjustment transactions created automatically in SPED Fiscal:
 
- Adjustment transactions created automatically (examples) in SPED Fiscal:
+    E115\|RJ821231\|0\|\|
+    C197\|RJ10080002\|RJ821231\|codigoitem\|0,00\|0,00\|\<Tax amount\>\|0,00\|           
 
-\|E111\|RJ18003\| RJ801163\|\<Adjustment amount\>\|
+## Setup 
 
- 
+### Fiscal books parameters per state
+Complete the following steps to set up Fiscal books parameters per state.
 
-1.  *Passing on or transfer of Tax credit*
+1. Select **Fiscal books** \> **Setup** \> **Fiscal books parameters per state**.
+2. Expend the **SPEC Fiscal** FastTab and in the **Resolution 13/2019** field group, and enable the **Document adjustment** toggle. Selecting this will tell the system to process document adjustments according to Resolution 13/2019. If this parameter isn't enabled, the resolution requirements will not be applied.
+3. In the **Name** field, enter the name of the General tax adjustment/benefit/incentive journal. The system uses this journal name, when a user needs to perform ICMS transfer operation to another fiscal establishment. 
 
-During the Sync process two types of adjustment transactions will be created in
-ICMS tax assessment under these specific criteria:
+## Benefit code per item or state
 
--   Outgoing tax fiscal document issued from RJ state with taxation code = 90
+1. Select **Tax** \> **Setup** \> **Sales tax** \> **Benefit code per Item/ state**.
+2. Set up **Adjustment code 5.2**, **Adjustment code 5.3** and **Observation code**, if needed.
 
--   Benefit codes from table 5.2 and 5.3 are assigned to the related item/ CFOP
-    and state of above fiscal document.
+These settings are used to automatically generate ICMS adjustment records for the fiscal document line when posting and during the sync operation.
 
-For example, code form 5.2 table = RJ801163, code form 5.3 table = RJ90980000
+A user should execute these settings, in order to get the correct SPEC fiscal according to the Resolution.
 
-To register the reversal of credits, the system automatically creates
-adjustments in the General tax adjustment/ benefit/ incentive journal and
-relates the journal line to the tax fiscal document.
+## Tax fiscal document 
 
- 
+If the **Document adjustment** toggle is selected in **Fiscal books parameters per state**, then a user may select only a sales tax code with a Fiscal value equal to 3 (taxation code, as it relates to the sales tax code has a Fiscal value that is equal to 3, without credit/debit) in the Tax fiscal document line (**General ledger** \> **Journals** \> **All tax fiscal documents*).
 
-Adjustment transactions created automatically (example for a sender) in SPED
-Fiscal:
+> [!NOTE]
+> For correct posting, the tax fiscal document the selected sales tax code should have the following calculation settings:
+>
+> - Origin - **Percentage of net amount**
+> - Marginal base - **Net amount per line**
+> - Calculation method - **Whole amount**
 
-E115\|RJ821231\|0\|\|
+When posting a **Tax fiscal document** that has a sales tax code attached to the line, the system does not create a voucher transaction. When a user executes the Sync operation (**Fiscal books** \> **Common** \> **Booking period**, and select **Sync**), the system creates and posts a General tax/adjustment/benefit/incentive journal related with the posted Tax fiscal document for ICMS transfer to another fiscal establishment.
 
-C197\| RJ40080001\|RJ821231\|codigoitem\|0,00\|0,00\|\<Tax amount\>\|0,00\|
+The system fills in data in the journal lines from the Posting profile of adjustment code 5.3 and the amount fills in from the Tax fiscal document.
 
-Adjustment transactions created automatically (example for a recipient) in SPED
-Fiscal:
-
-                    E115\|RJ821231\|0\|\|
-
-C197\|RJ10080002\|RJ821231\|codigoitem\|0,00\|0,00\|\<Tax
-amount\>\|0,00\|           
-
-Setup 
-======
-
-Fiscal books parameters per state
----------------------------------
-
-1.  Navigate *Fiscal books \> Setup \> Fiscal books parameters per state*
-
-2.  Expend **SPEC Fiscal** FastTab and in the **Resolution 13/2019** field
-    group:
-
-    -   Select **Document adjustment** check box – Processing document
-        adjustment according to Resolution 13/2019. If this parameter is not
-        selected, the system does not apply the Resolution requirements.
-
-    -   **Name** – Journal name for General tax adjustment/ benefit/ incentive
-        journal. The system uses this journal name, when a user needs to perform
-        ICMS transfer operation to another fiscal establishment. 
-
-Benefit code per Item/ state
-----------------------------
-
-1.  Navigate *Tax \> Setup \> Sales tax \> Benefit code per Item/ state.*
-
-2.  Set up **Adjustment code 5.2**, **Adjustment code 5.3** and **Observation
-    code**, if needed.
-
-These settings are used for automatic creation ICMS adjustment records for
-Fiscal document line when posting and Sync operation executing.
-
-A user should execute these settings, in order to get the correct SPEC fiscal
-according to the Resolution.
-
-Creation of Tax fiscal document 
-================================
-
-If the **Document adjustment** check box is selected in **Fiscal books
-parameters per state**  for the state then a user may select only sales tax code
-with Fiscal value equal to 3 (taxation code, related to the sales tax code has
-Fiscal value=3, without credit/debit) in the Tax fiscal document line (*General
-ledger \> Journals \> All tax fiscal documents*).
-
-**Note.** For correct posting the tax fiscal document the selected sales tax
-code should have the following calculation setting:
-
--   Origin **Percentage of net amount**
-
--   Marginal base **Net amount per line**.
-
--   Calculation method **Whole amount**.
-
-When posting a **Tax fiscal document** that has such sales tax code attached to
-the line, the system does not create voucher transaction. But when a user
-executes Sync operation (*Fiscal books \> Common \> Booking period*, the
-**Sync** button), the system creates and posts General tax/ adjustment/ benefit
-/ incentive journal (*Fiscal books \> Journals*) related with the posted Tax
-fiscal document for ICMS transfer to another fiscal establishment.
-
-The system fills in data in the journal lines from Posting profile of adjustment
-code 5.3 (*Fiscal books \> Setup \> Tax adjustment codes \> Adjustment and
-information for fiscal documents*, **Posting** FastTab) and the amount fills in
-from the Tax fiscal document.
-
-**Note**. A user should setup **Benefit code per Item/ State** (*General ledger
-\> Setup \> Sales tax \> Benefit code per Item/ state*) for ICMS transfer before
-using this functionality.  According to the Resolution adjustments codes should
-be set up for ICMS transfer:
-
--   Adjustment code 5.2 =RJ821231 and Adjustment code 5.3= RJ10080002 for Sender
-
--   Adjustment code 5.2 =RJ821231 and Adjustment code 5.3 = RJ10080002 for
-    Recipient.    
+> [!NOTE]
+> Before you use this functionality, set up the **Benefit code per Item/ State** by navigating to **General ledger** \> **Setup** \> **Sales tax** \> **Benefit code per Item/ state** for ICMS transfer.  According to the Resolution adjustments, codes should be set up for ICMS transfer:
+>
+> - Adjustment code 5.2 =RJ821231 and Adjustment code 5.3= RJ10080002 for Sender
+> - Adjustment code 5.2 =RJ821231 and Adjustment code 5.3 = RJ10080002 for Recipient.    
