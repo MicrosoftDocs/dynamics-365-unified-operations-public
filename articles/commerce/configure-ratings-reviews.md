@@ -146,3 +146,10 @@ To configure the link for the privacy and policy page, follow these steps.
 The following illustration shows what this configuration looks like in Dynamics 365 Commerce.
 
 ![Configuring the link for the privacy and policy page](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+
+## Additional resources
+
+- [Ratings and reviews overview](ratings-reviews-overview.md)
+- [Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+- [Manage ratings and reviews](manage-reviews.md)
+- [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
