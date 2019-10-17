@@ -76,3 +76,14 @@ To add a carousel module to a new page and set the required properties, follow t
 1. In the feature module, add an image, a heading, and a paragraph of text.
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+- [Starter kit overview](starter-kit-overview.md)
+- [Add a container module to a page](add-container-module.md)
+- [Add a buy box to a page](add-buy-box.md)
+- [Add a cart module to a page](add-cart-module.md)
+- [Add a checkout module to a page](add-checkout-module.md)
+- [Create an order confirmation module](order-confirmation-module.md)
+- [Create a header module](author-header-module.md)
+- [Create a footer module](author-footer-module.md)
