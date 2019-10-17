@@ -106,9 +106,10 @@ The following command silently installs the current installation of Retail Moder
 ```
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 ```
+
 #### Silently install Retail hardware station
 
-The following command silently installs (Or updates) Retail hardware station. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there. This command should not be used if multiple configuration files are available for selection.
+The following command silently installs (Or updates) Retail hardware station. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer.
 
 ```
 HardwareStationSetup_V10.exe -S
@@ -119,7 +120,7 @@ HardwareStationSetup_V10.exe -S
 
 #### Silently install Retail hardware station by using a specific configuration file
 
-The following command silently installs the current installation of Retail Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
+The following command silently installs the current installation of Retail hardware station by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
 ```
 HardwareStationSetup_V10.exe -S -C "C:\Temp\HardwareStationSetup_V10__20-19-35.xml"
