@@ -42,6 +42,8 @@ Many retailers, especially high-end specialty retailers, want their sales associ
 ## Tender based discounts
 It has now become a common practice for retailers to release private branded credit cards. Retailers benefit from getting preferred rates from the banks, and according to a study, such credits cards result in an increase in the store visit frequency, thus directly improving the bottom line of the retailer. So, retailers are motivated to increase the usage frequency of such credit cards. To achieve this goal, retailers often provide additional discounts for using these cards.With this feature, the retailers can configure a discount percentage that would be applied on the qualified lines if the user pays using the preferred tender.  
 
+## Hardware station mass deployment
+As companies increase in size, massive deployment and installation of components, such as hardware station, has become relatively unmanageable. This feature will not only dramatically reduce the difficulty of initial and long-term deployment and maintenance, it will enhance the flow of hardware station which increases reliability and resiliency.  This new feature allows users to silently perform a mass deployment of the hardware station. Retailers can choose the deployment tool of their choice (such as System Center) to deploy and service this component. This will provide improvements to reliability and resiliency over time for the hardware station on top of the enhanced speed and ease with which deployment occurs.
 
 
 
