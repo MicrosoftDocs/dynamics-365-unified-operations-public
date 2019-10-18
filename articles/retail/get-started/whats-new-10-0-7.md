@@ -34,9 +34,7 @@ ms.dyn365.ops.version: Release 10.0.7
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. 
-
-To learn about the features in Finance and Operations applications, see [Preview features in Finance and Operations apps version 10.0.7 (December 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-7).
+This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283. While the general availability date is in December, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-10-0-7.md#additional-resources).
 
 ## Feature
 Description
