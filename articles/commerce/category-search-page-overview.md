@@ -104,4 +104,5 @@ The following components are essential for a search results page:
 
 - [Enrich a category landing page](enrich-category-page.md)
 - [Cloud-powered search overview](cloud-powered-search-overview.md)
+- [Manage SEO metadata](manage-seo-metadata.md)
 
