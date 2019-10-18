@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -76,11 +76,8 @@ The Excel Add-in has had a number of authentication and authorization enhancemen
 - **Support for ADFS sign out improved** - The sign-out mechanism has been put inside a dialog to improve support for customers that are using ADFS, since communication from the Excel Add-in to ADFS servers is not allowed except for in a separate dialog.
 - **Authorization failure information now provided** - Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server then the Excel Add-in would just present a "Load applets" link, since the loading of the applets would fail. This was an implicit authorization permissions failure. Now, that authorization permissions failure will be detailed explicitly for the user so they understand better what has happened and can double check that they are signing in as the correct user to the correct server.
 
-## Feature
-Provide a brief description of the feature and explain how it helps customers. Provide a link to an article where customers can read details about the feature.
-
-## Feature
-Provide a brief description of the feature and explain how it helps customers. Provide a link to an article where customers can read details about the feature.
+## skipAutoOrderBy API
+When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q-classes](../dev-itpro/dev-ref/q-classes.md)
 
 
 ## Additional resources
