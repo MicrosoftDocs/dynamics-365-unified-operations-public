@@ -55,17 +55,13 @@ You can use the **Forecast position summary** report to generate forecast positi
 
 Agencies use purchasing cards so that employees can procure goods and services without using the standard purchase requisition process. The pages and fields that are related to purchasing cards provide a mechanism for tracking purchases. Each purchase that an employee makes by using a purchasing card is recorded on a vendor invoice. However, the invoice isn't paid by using a check or electronic payment to the vendor that provided the goods or services. Instead, each invoice of this type is associated with another vendor invoice that is created to pay the vendor that provides the purchasing card services (that is, the financial institution). The card purchases are paid off when the balance that is owed to the purchasing card services provider is paid each month.
 
-## Mark a Purchase argreement as "Closed"
-
-Users can now mark a Purchase agreement as "Closed" to signal the agreement is no longer actively used, making it so users will not be able to create release orders from the purchase agreement.
-
 ## Delayed tax calculation on journal
 
-To improve the performance of tax calculation on journal when the journal volume is huge, a new feature "delayed tax calculation" is provided. Tax amounts will only be calculated when user clicks "Sales Tax" command or posts the journal if this feature is turned on. Please refer to [Enable delayed tax calculation on journal](../general-ledger/enable-delayed-tax-calculation.md) for details.
+This feature improves the performance of tax calculations on journals when the they contain a significant number of transactions. Tax amounts will only be calculated when you click the **Sales Tax** command or when you post the journal when this feature is enabled. For more information, see [Enable delayed tax calculation on journal](../general-ledger/enable-delayed-tax-calculation.md) for details.
 
 ## Reverse journal posting
 
-Users can now reverse an entire posted journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. Please rever to [Reverse journal posting](../general-ledger/reverse-journal-posting.md) for details.
+This feature lets you reverse an entire posted journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. Please refer to [Reverse journal posting](../general-ledger/reverse-journal-posting.md) for details.
 
 ## Prohibit submission to workflow when there are unallocated charges on a vendor invoice
 This feature lets you prevent a vendor invoice from being submitted to the workflow process when it contains unallocated charges. Instead, the person who submitted the invoice receives an alert that it has unallocated charges and lets them correct it before submitting it to workflow.
