@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Retail version 10.0.6
+title: Preview features in Dynamics 365 Retail version 10.0.7
 description: This topic describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -26,28 +26,22 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: Release 10.0.6
+ms.dyn365.ops.version: Release 10.0.7
 
 ---
-# What's new or changed in Dynamics 365 Retail version 10.0.6
+# Preview features in Dynamics 365 Retail version 10.0.7
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.6. 
+This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. 
 
-To learn about the features in Finance and Operations applications, see [What's new or changed in Finance and Operations apps version 10.0.6 (November 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6).
+To learn about the features in Finance and Operations applications, see [Preview features in Finance and Operations apps version 10.0.7 (December 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-7).
 
-## New Inventory Availability API's for E-commerce use
-4 new API's will be made available to provide e-commerce or 3rd party solutions with an estimation of on-hand inventory for a requested item and warehouse.  These API's are intended to replace the existing GetProductAvailabilities and GetAvailableInventoryNearby API's that are currently in-market.   These new API's will have improved calculation logic and caching to improve performance.  The names of the new API's are:
-* GetEstimatedProductWarehouseAvailability
-* GetEstimatedAvailabilityDefaultWarehouse
-* GetEstimatedAvailabilityNearby
-* GetEstimatedAvailabilityAllWarehouses
+## Feature
+Description
 
-Additionally, new tables have been added for tracking available ecommerce inventory in the channel database.  Retail and Retail Shared parameters will be made available that must be configured to uptake these new API's and tables turn off the existing expensive e-commerce inventory availability logic that existed in previous versions.
 
-### Install merchant properties deprecated from the Hardware station installer
-To better support future enhancements to headless installation, the merchant properties installer has been removed from the Hardware station installation experience. New for 10.0.6, the hardware station merchant properties will be set at runtime when the POS is paired to a hardware station and updated when the hardware station is made active, if needed. If both the POS and hardware station are not updated to 10.0.6 at the same time, the setting and updating of merchant properties by POS will not function correctly. This means that if the POS is updated, but not the hardware station, then the hardware station will continue to use old merchant properties until it is updated as well. 
 
 ## Additional resources
 
