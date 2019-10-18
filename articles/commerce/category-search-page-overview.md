@@ -99,3 +99,9 @@ The following components are essential for a search results page:
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
+
+## Additional resources
+
+- [Enrich a category landing page](enrich-category-page.md)
+- [Cloud-powered search overview](cloud-powered-search-overview.md)
+
