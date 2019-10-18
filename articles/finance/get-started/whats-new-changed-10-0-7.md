@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.6 (November 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.6.
+title: Preview features in Dynamics 365 Finance 10.0.7 (December 2019)
+description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.7.
 author: roschlom
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -26,89 +26,46 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: roschlom
 ms.search.validFrom: 2019-10-31 
-ms.dyn365.ops.version: 10.0.6
+ms.dyn365.ops.version: 10.0.7
 
 ---
-# What's new or changed in Dynamics 365 Finance 10.0.6 (November 2019)
+# Preview features in Dynamics 365 Finance 10.0.7 (December 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-finance-10-0-6.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of XX.X.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-and-ops/get-started/whats-new-changed-10-0-7.md#additional-resources).
 
-## Feature management enhancements
-Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
+The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to determine a price per quantity.
+https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration
 
-## “Select consolidation amount from” control on the consolidate online for dual currency consolidation
-This features helps you control the currency (either the accounting or reporting currency) that's used as the transaction currency in the consolidation company and can automatically copy amounts from the source company to the consolidation company if the currencies are the same.
+The **Budget register entries defaulting of amount type** feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line.
+https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration## Ability to export records from the Accounts payable invoice pool form
+This feature lets you export records from the **Accounts payable invoice pool** form to Excel. This capability provides a productive environment to review and analyze the grid data in Excel. 
 
-## Cancel bank reconciliation
-Users will be able to cancel bank reconciliations in chronological order of reconciliation starting with the most recent. History is tracked to show when and by whom the reconciliation was reversed. This will prevent users from having to manually adjust journals to correct any errors that occurred during the periodic process.
+## Financial reporting retention feature
 
-## Create checks with a blank status on the Checks page
-The **Checks** page is where you perform maintenance tasks on checks, such as creating new check numbers and deleting checks. During the payment process, when this feature is enabled, you can't create checks with a blank status during the payment process. This enhancement helps prevent wasting checks unnecessarily.
+The **Ledger settlement by user** feature allows processing ledger settlement by user ID.  When enabled, a user will only see records in Advanced ledger settlement that have no user ID (not marked for settlement) or have their user ID (records they marked for settlement). Only the records marked by that user will be processed when choosing Settle marked transactions. A new button, Unmark for selected users, was also added to unmark records marked for settlement but not processed.  This could be used after a user leaves an organization. 
 
-## Reset workflow status for vendor invoices from Unrecoverable to Draft
-You can use the Workflow history page to reset the workflow status to Draft. This page can be opened from the Vendor invoice page or by going to Common > Inquires > Workflow. To reset the workflow status to Draft, select Recall. You can also reset the workflow status to Draft by selecting the Recall action on either the Vendor invoice or Pending vendor invoices page. After the workflow status is reset to Draft, it becomes available for editing on the Vendor invoice page.
+## Forecast position reports (Public Sector)
 
-## Revenue recognition
-Revenue recognition management helps accounting and finance professionals automate the steps they take to comply with International Financial Reporting Standard (IFRS) 15 and Accounting Standards Codification (ASC) 606.
+You can use the **Forecast position summary** report to generate forecast position information for during a budget plan and scenario that you specify.  The **Forecast position summary** report shows forecast position costs by account distributions. The forecast position costs are shown, grouped by their assigned account distributions. The cost amounts are factored by the percentage assigned to the account distribution. 
 
-New capabilities will include support for product bundles and kits such as:
+## Purchasing cards (Public Sector)
 
-- Software and maintenance
-- Software and services
-- Software
-- Hardware and service
+Agencies use purchasing cards so that employees can procure goods and services without using the standard purchase requisition process. The pages and fields that are related to purchasing cards provide a mechanism for tracking purchases. Each purchase that an employee makes by using a purchasing card is recorded on a vendor invoice. However, the invoice isn't paid by using a check or electronic payment to the vendor that provided the goods or services. Instead, each invoice of this type is associated with another vendor invoice that is created to pay the vendor that provides the purchasing card services (that is, the financial institution). The card purchases are paid off when the balance that is owed to the purchasing card services provider is paid each month.
 
-These capabilities will handle the following features:
+## Mark a Purchase argreement as "Closed"
 
-- Revenue pricing 
-- Revenue schedules
-- Bundle setup 
-- Multiple sales order reallocation
-- Workspace navigation and reporting
+Users can now mark a Purchase agreement as "Closed" to signal the agreement is no longer actively used, making it so users will not be able to create release orders from the purchase agreement.
 
-## Revenue pricing
-Users can enter a different price that they will recognize as different from what they charge the customer.
+## Delayed tax calculation on journal
 
-[![Revenue pricing screenshot](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)](../accounts-receivable/media/rev-rec-whats-new-1-revenue-pricing.png)
+To improve the performance of tax calculation on journal when the journal volume is huge, a new feature "delayed tax calculation" is provided. Tax amounts will only be calculated when user clicks "Sales Tax" command or posts the journal if this feature is turned on. Please refer to [Enable delayed tax calculation on journal](../../financials/general-ledger/enable-delayed-tax-calculation.md) for details.
 
-## Revenue schedules
-Revenue schedules determine the number of months for the revenue deferral. Options are available to create the schedule based on actual days of the month, splitting equally across month or based on a set number of occurrences.
+## Reverse journal posting
 
-[![Revenue schedules screenshot](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)](../accounts-receivable/media/rev-rec-whats-new-2-revenue-schedules.png)
+Users can now reverse an entire posted journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. Please rever to [Reverse journal posting](../general-ledger/reverse-journal-posting) for details.
 
-## Multiple sales order reallocation
+## Prohibit submission to workflow when there are unallocated charges on a vendor invoice
+This feature lets you prevent a vendor invoice from being submitted to the workflow process when it contains unallocated charges. Instead, the person who submitted the invoice receives an alert that it has unallocated charges and lets them correct it before submitting it to workflow.
 
-[![Multiple sales order reallocation screenshot](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)](../accounts-receivable/media/rev-rec-whats-new-3-multiple-sales-order-reallocation.png)
-
-## Workspace 
-The new workspace is used to look at the status of the revenues schedule records created for deferred revenue.
-
-[![Revenue recognition workspace screenshot](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)](../accounts-receivable/media/rev-rec-whats-new-4-revenue-recognition-workspace.png)
-
-## Project contact committed detail
-You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
-
-## Additional resources
-
-### Bug fixes
-For information about the bug fixes included in each of the updates that are part of 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
-
-### Platform update 30
-Dynamics 365 Finance 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [What's new or changed in Platform update 30](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-30.md).
-
-### Dynamics 365: 2019 release wave 2 plan
-Wondering about upcoming and recently released capabilities in any of our business apps or platform?
-
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
-
-### Removed and deprecated features
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 forfin-ops-core/ Finance and Operations.
-
-- A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
-
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
-
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
