@@ -36,8 +36,12 @@ ms.dyn365.ops.version: Release 10.0.7
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283. While the general availability date is in December, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-10-0-7.md#additional-resources).
 
-## Feature
-Description
+## Clienteling
+Many retailers, especially high-end specialty retailers, want their sales associates to form long term relationships with their key customers. The sales associates are expected to know about their customer's likes and dislikes, purchase history, product preferences, important dates such as anniversary, birthday etc. The associates need a place to capture such information and easily find the information when needed. Once this information is available in a single view, then the associates can easily target the customers that meet certain criteria for e.g. find all the customers that prefer to shop for Handbags, find customers for whom an important live event such as birthday, anniversary, graduation etc. is approaching. The new clienteling capabilities in in Dynamics 365 Retail can help your associates easily build and maintain such relationships.
+
+## Tender based discounts
+It has now become a common practice for retailers to release private branded credit cards. Retailers benefit from getting preferred rates from the banks, and according to a study, such credits cards result in an increase in the store visit frequency, thus directly improving the bottom line of the retailer. So, retailers are motivated to increase the usage frequency of such credit cards. To achieve this goal, retailers often provide additional discounts for using these cards.With this feature, the retailers can configure a discount percentage that would be applied on the qualified lines if the user pays using the preferred tender.  
+
 
 
 
