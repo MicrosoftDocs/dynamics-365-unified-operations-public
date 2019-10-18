@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a copy of the standard user acceptance testing (UAT) database
-description: This topic explains a database export scenario for Finance and Operations applications.
+description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 07/08/2019
@@ -43,6 +43,9 @@ In this tutorial, you will learn how to:
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
 As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+
+> [!IMPORTANT]
+> Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments)
 
 ## Known limitations
 

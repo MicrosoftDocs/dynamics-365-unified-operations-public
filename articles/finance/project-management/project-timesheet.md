@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-01-15
 
 ---
 
-# Microsoft Dynamics 365 Project Timesheet mobile application
+# Project timesheet mobile application
 
 [!include [banner](../includes/banner.md)]
 

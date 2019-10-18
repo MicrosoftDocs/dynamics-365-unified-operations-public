@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Report 340
+# Report 340 for Spain
 
 [!include [banner](../includes/banner.md)]
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Finance and Operations apps version 10.0.6 (November 2019)
+title: What's new or changed in Finance and Operations apps version 10.0.6 (November 2019)
 description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.6. This version will be released in October.
 author: tonyafehr
 manager: AnnBe
@@ -29,15 +29,14 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.6
 
 ---
-# Preview features in Finance and Operations apps version 10.0.6 (November 2019)
+# What's new or changed in Finance and Operations apps version 10.0.6 (November 2019)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management for version 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](whats-new-changed-10-0-6.md#additional-resources).
 
-To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail, see [Preview features in Dynamics 365 Retail version 10.0.6](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6).
+To learn about the new features and changes in the latest releases of Microsoft Dynamics 365 Retail, see [What's new or changed in Dynamics 365 Retail version 10.0.6](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/get-started/whats-new-10-0-6).
 
 ## Product configuration models V2 data entity
 
@@ -51,7 +50,7 @@ What do you need to do to take this change?
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
 
-## Project contact committed detail
+## Project contract committed detail
 You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
 
 ## Purchase agreement responsible party
@@ -66,7 +65,7 @@ You can add a reference link from the Purchase order lines back to the correspon
 For information about the bug fixes included in each of the updates that are part of version 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
 
 ### Platform update 30
-Version 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [Preview features in Platform update 30 (November 2019)](whats-new-platform-update-30.md).
+Version 10.0.6 includes Platform update 30. To learn more about Platform update 30, see [What's new or changed in Platform update 30 (November 2019)](whats-new-platform-update-30.md).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?

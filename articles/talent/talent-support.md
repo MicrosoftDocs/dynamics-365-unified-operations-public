@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 ---
 
-# Get support for Talent
+# Get support for Microsoft Dynamics 365 Talent
 
 [!include [banner](includes/banner.md)]
 

@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -78,7 +78,7 @@ Dynamics 365 for Operations Ideas forum is now available on our [Ideas portal](h
 
 Click the **Ideas** link to go to the Dynamics 365 for Operations forum.
 
-[![ideas-page](./media/ideas-page.png)](./media/ideas-page.png)
+
 
 - The forums are pre-populated with existing ideas, so customers and partners can immediately vote or suggest new ideas.
 - You can filter ideas by using status and time. You can also quickly view top, hot, and new ideas.

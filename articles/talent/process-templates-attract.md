@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1
 
 ---
 
-# Create a process template
+# Create a process template in Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Only admins can set the default template. The default template is used if a temp
 
 ## Create a process template
 
-Admins, recruiters, and hiring managers can create process templates. A process template consists of *stages* and *activities*. Stages group together one or more activities. By default, every process template has Prospect, Application, and Offer activities. The stages that contain these activities can be renamed. You can add more stages by selecting **+ New Stage**. You can activities to a stage either by dragging them to the appropriate stage or by double-clicking them in the activity list.
+Admins, recruiters, and hiring managers can create process templates. A process template consists of *stages* and *activities*. Stages group together one or more activities. By default, every process template has Prospect, Application, and Offer activities. The stages that contain these activities can be renamed. You can add more stages by selecting **+ New Stage**. You can add activities to a stage either by dragging them to the appropriate stage or by double-clicking them in the activity list.
 
 > [!NOTE]
 > Stage names are visible to candidates on the **Application status** page. You should consider this fact when you choose names for stages.

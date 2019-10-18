@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Cost control overview 
+# Cost control workspace 
 
 [!include [banner](../includes/banner.md)]
 

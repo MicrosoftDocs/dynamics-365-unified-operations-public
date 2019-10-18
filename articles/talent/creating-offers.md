@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Creating, approving, and signing offers
+title: Create, approve, and sign offers
 description: This topic details how to create, approve, and sign an offer for a candidate using Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe

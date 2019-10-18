@@ -98,7 +98,7 @@ This feature provides support for functionality that is available in expense man
 - Support for intercompany expenses.
 - Support for per diem expenses.
 
-For more information, see [Expense management mobile workspace](https://docs.microsoft.com/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+For more information, see [Expense management mobile workspace](https://docs.microsoft.com/dynamics365/finance/expense-management/expense-management-mobile-workspace).
 
 ## Financial reporting using Power BI
 

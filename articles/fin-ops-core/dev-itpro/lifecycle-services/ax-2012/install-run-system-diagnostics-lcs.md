@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 2012
 
 ---
 
-# Install and run System diagnostics (AX 2012)
+# Install and run System diagnostics 
 
 [!include [banner](../../includes/banner.md)]
 

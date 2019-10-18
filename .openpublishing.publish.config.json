@@ -12,6 +12,7 @@
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
+        "LandingData": "Content",
         "ContentObject": "Toc"
       },
       "build_entry_point": "docs",
@@ -56,6 +57,6 @@
   },
   "need_generate_intellisense": false,
   "docs_build_engine": {
-    "name": "docfx_v3"
+  "name": "docfx_v3"
   }
 }

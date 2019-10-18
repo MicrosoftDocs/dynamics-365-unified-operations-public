@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Functional Consultant Learning Catalog
+title: Functional Application Consultant Learning Catalog
 description: This topic describes the functionality that is designed to help users who have various disabilities use Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 for Talent.
 author: margoc
 manager: AnnBe

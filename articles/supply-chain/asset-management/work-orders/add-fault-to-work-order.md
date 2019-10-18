@@ -1,11 +1,12 @@
 ---
+
 # required metadata
 
 title: Add fault to work order
 description: This topic describes how to add fault registrations to work orders in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +26,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
 ---
@@ -35,28 +36,29 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-You can add faults set up in the fault designer to a work order. The asset selected in the work order must contain asset types that have one or more fault records connected to it. Read more about setup in the [Fault management](../setup-for-work-orders/fault-management.md) section.
+You can add faults that were set up in the fault designer to a work order. One or more fault records must be connected to the asset types that are used for the asset that is selected in the work order. For more information about the setup, see [Fault management](../setup-for-work-orders/fault-management.md).
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Select **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
 
-2. In the list, select the work order on which you want to make a fault registration and click **Asset fault**.
+2. Select the work order to make a fault registration on, and then, on the Action Pane, on the **Work order** tab, in the **Asset** group, select **Asset fault**.
 
-3. On the **Symptoms** FastTab, click **Add line**. A sequential fault number is automatically inserted in the **Fault** field.
+3. On the **Symptoms** FastTab, select **Add line**. A sequential fault number is automatically entered in the **Fault** field.
 
-4. Select the relevant symptom in the **Fault symptom** field.
+4. In the **Fault symptom** field, select the relevant symptom.
 
-5. Select **Fault area** and **Fault type**.
+5. In the **Fault area** and **Fault type** fields, select the appropriate values.
 
-6. In the **Fault date** field, the current date is automatically inserted. You can select another date, if necessary.
+6. In the **Fault date** field, the current date is automatically inserted. You can select a different date as you require.
 
-7. On the **Causes for selected symptom** FastTab, add a line describing the cause of the problem.
+7. On the **Causes for selected symptom** FastTab, add a line to describe the cause of the issue.
 
-8. On the **Remedies for selected symptom** FastTab, add a line describing a possible solution to the problem.
+8. On the **Remedies for selected symptom** FastTab, add a line to describe a possible solution to the issue.
 
-9. Click **Save**.
+9. Select **Save**.
+
+The illustration below shows an example of a fault registration.
 
 ![Figure 1](media/19-work-orders.png)
 
@@ -65,23 +67,23 @@ You can add faults set up in the fault designer to a work order. The asset selec
 
 In the **Asset faults** list, you can get an overview of all faults registered on assets.
 
-Click **Asset management** > **Inquiries** > **Asset fault** > **Asset faults** to open the list.
+On the **Asset faults** list page, you can get an overview of all faults that have been registered on assets. To open the page, select **Asset management** > **Inquiries** > **Asset fault** > **Asset faults**.
 
 
 ## Print asset fault report
 
-From the **All assets** list page, you can print an asset fault report displaying all fault registrations as well as a graphic overview of fault statistics.
+From the **All assets** list page, you can print an asset fault report that shows all fault registrations and a graphical overview of fault statistics.
 
-1. Click **Asset management** > **Common** > **Assets** > **All assets**.
+1. Select **Asset management** > **Common** > **Assets** > **All assets**.
 
-2. In the **Assets** list, select the asset for which you want to print a fault report.
+2. Select the asset to print a fault report for.
 
-3. On the **General** tab > **Reports section**, click **Asset fault**.
+3. On the Action Pane, on the **General** tab, in the **Reports** group, select **Asset fault**.
 
-4. Insert a specific period, or select a fault type.
+4. Enter a specific period, or select a fault type.
 
-5. Click **OK** to print the report.
+5. Select **OK** to print the report.
 
 >[!NOTE]
->You can also print a fault report for several assets or asset types by clicking **Asset management** > **Reports** > **Assets** > **Asset fault**.
+>To print a fault report for several assets or asset types, select **Asset management** > **Reports** > **Assets** > **Asset fault**.
 

@@ -35,8 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 This article explains the options for the Calculation method field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 
 You can set up a sales tax code to be calculated based on a whole amount or an interval amount. In the Sales tax codes page, use the Calculation method field on the Calculation FastTab to select how to calculate a sales tax code.

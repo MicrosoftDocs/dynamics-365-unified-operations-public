@@ -49,7 +49,7 @@ commitments, as further explained in the [Microsoft Privacy Statement](https://g
 Customers should not use Previews to process Personal Data or other data that is subject to 
 heightened compliance requirements.  In addition, Customers should not use Previews in a 'live 
 operating' or production environment.  Certain named Previews may also be subject to additional 
-terms, if any, set forth below.  We may change or discountue Previews at any time without notice.
+terms, if any, set forth below.  We may change or discontinue Previews at any time without notice.
 We also may choose not to release a Preview into "General Availability".
 
 You will provide, as your own expense, the equipment, technology, and infrastructure necessary
@@ -63,25 +63,25 @@ Previews.  You may use the Preview only if you have a valid license or subscript
 required Dynamics 365 application.  You may not access or use the Previews if you do not have the 
 required license or subscription.
 
-## Use Preview in a Production Enviroment
+## Use Preview in a Production Environment
 
 The "General Terms" section applies generally to all Previews that link to these Terms.  This 
 section contains terms that apply only if a Preview allows you to use Customer Data or Personal 
-Data (collectively "Data") in a 'live operating' or production enviroment and is in addition to 
-the General Terms.  These "Use Preview in a Production Enviroment" terms govern if there are any 
+Data (collectively "Data") in a 'live operating' or production environment and is in addition to 
+the General Terms.  These "Use Preview in a Production Environment" terms govern if there are any 
 conflicts with the "General Terms" or the "Service-Specific Terms" sections.
 
-Notwithstanding any provision to the contrary in the General Terms, Microsoft bereby grants you 
+Notwithstanding any provision to the contrary in the General Terms, Microsoft hereby grants you 
 permission to use the Preview to access or process Data in a 'live operating' or production 
 environment in connection with participating in the Preview.  By accessing or processing Data 
-in a 'live operations' or production enviorment, you consent to share your Data with external 
+in a 'live operations' or production environment, you consent to share your Data with external 
 systems outside of the geography where your production environment is deployed.
 
 ## Service-Specific Terms
 
 The "General Terms" section applies generally to all Previews that link to these Teams.  These 
 service-specific terms are in addition to the "General Terms" and the "Use Preview in a Production 
-Enviroment" sections.  These service-specific terms govern if there are any conflicts with the 
+Environment" sections.  These service-specific terms govern if there are any conflicts with the 
 "General Terms" or the "Use Preview in a Production Environment" sections.
 
 ### Dynamics 365 Commerce (Preview):
@@ -98,8 +98,8 @@ MAY BE OBTAINED FROM MPEG LA, L.L.C. REFER TO [wwww.mpegla.com](http://www.mpegl
 notice does not limit or inhibit the use of the software for normal business uses that are 
 personal to that business which do not include (i) redistribution of the software to third 
 parties, or (ii) creation of content compliant with the VIDEO STANDARDS technologies for 
-distribuion to third parties.  If there is any inconsistency between the Agreement and these 
-Perview terms of use, then to the extent of such inconsistency, these Preview terms of use will 
+distribution to third parties.  If there is any inconsistency between the Agreement and these 
+Preview terms of use, then to the extent of such inconsistency, these Preview terms of use will 
 control over the conflicting terms in the Agreement.
 
 + **Supplemental Preview Software License Terms.**  
@@ -108,7 +108,7 @@ Notwithstanding any provision to the contrary in the Microsoft Preview Software 
 the Dynamics 365 Commerce [Software Development Kit](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Ffin-and-ops%2Fget-started%2FSDK-terms-conditions&data=02%7C01%7CShelly.Miller%40microsoft.com%7C3763e8620d084929d6bf08d746845b2f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055406584165663&sdata=%2BB2AJLfmOpCDAj%2BkDfhvITdnQKft7eZLC4ZHwld8ANI%3D&reserved=0 "Alt Text") ("SDK License Terms") or the Dynamics 365 
 Commerce [Store Starter Kit](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Ffin-and-ops%2Fget-started%2FRSSK-terms-conditions&data=02%7C01%7CShelly.Miller%40microsoft.com%7C3763e8620d084929d6bf08d746845b2f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055406584165663&sdata=3y3B4h5UdKqLDIwWi12Ob98w02PJubxjqbOLfDobw98%3D&reserved=0 "Alt Text") ("Store Kit License Terms") (collectively, the "SLTs"), Microsoft hereby 
 grants you permission to use the Software Development Kit and the Store Starter Kit (collectively, 
-the "software") in a 'live operating or production enviroment for Dynamics 365 Commerce.  If you 
+the "software") in a 'live operating or production environment for Dynamics 365 Commerce.  If you 
 comply with the terms and conditions in the SLTs, you may also (A) use the software to develop and 
 test your websites in a 'live operating' or production environment of Dynamics 365 Commerce; (B) 
 use the software to design and test the websites that you create with the software to conduct e-
@@ -118,10 +118,10 @@ card, monetary, or other banking transactions; and (C) deploy the websites that 
 software for third parties to access over the Internet, but only if you also comply with the 
 following:
 
-     **#1.  External Production Use:**  (i) you take adequate precautionairy measures to backup and 
-protect your data; (ii) you agree to cease such use immedidately upon notice from Microsoft; (iii) 
-you include in your website a visable notice to your users that the websites were created with or 
-rely on pre-release, time-sensitive, unsupported software that may not operate corectly; and (iv) 
+     **#1.  External Production Use:**  (i) you take adequate precautionary measures to backup and 
+protect your data; (ii) you agree to cease such use immediately upon notice from Microsoft; (iii) 
+you include in your website a visible notice to your users that the websites were created with or 
+rely on pre-release, time-sensitive, unsupported software that may not operate correctly; and (iv) 
 you will not make any representations, warranties, or promises on behalf of Microsoft or with 
 respect to the software or its performance.
 

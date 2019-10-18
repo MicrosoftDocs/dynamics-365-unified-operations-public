@@ -29,7 +29,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ---
 
-# Controlling raw material consumption by using flushing principles
+# Flushing principles
 
 [!include [banner](../includes/banner.md)]
 

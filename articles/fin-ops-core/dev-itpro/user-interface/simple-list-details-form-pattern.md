@@ -52,7 +52,7 @@ Three patterns are described in this document:
 
 ## Wireframe
 
-[![Wireframe](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
+[![Simple list and details wireframe](./media/simplelistanddetails1-1024x575.png)](./media/simplelistanddetails1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:

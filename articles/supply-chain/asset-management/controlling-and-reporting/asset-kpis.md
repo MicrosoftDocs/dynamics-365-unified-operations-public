@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can calculate various Key Performance Indicators (KPIs) for assets and asset types. You use KPIs to get an overview of performance on assets in relation to, for example, uptime, downtime, repair time, and Mean Time Between Failure (MTBF).
 

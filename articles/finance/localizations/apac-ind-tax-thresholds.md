@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tax thresholds for India FAQ | Microsoft Docs
+title: Tax thresholds for India FAQ
 description: This topic provides information about tax thresholds for India.
 author: yijialuan
 manager: AnnBe

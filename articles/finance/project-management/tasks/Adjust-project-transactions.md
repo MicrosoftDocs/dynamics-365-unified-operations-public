@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Adjust transactions
+title: Adjust project transactions
 description: This task guide shows you how to adjust a transaction on a project.  
 author: KimANelson
 manager: AnnBe 

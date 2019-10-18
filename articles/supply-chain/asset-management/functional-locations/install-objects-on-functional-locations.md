@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 After you've created functional location structures, the next step is to install assets on the relevant functional locations. This topic explains how to install assets on those functional locations in Asset Management. For information about how to create assets, see [Assets](../objects/introduction-to-objects.md).
 

@@ -1414,7 +1414,7 @@ Inline delegates are now available. The most common way to use inline delegates 
 
 ## SQL operations made extensible
 
-Application code with embedded SQL statements cannot be modified through extensions. Changes have been made to the standard application to enable extensibility in the methods listed in the folllowing table. This has commonly been enabled by transforming embedded SQL statements into query objects that support extending how SQL statements are built in these methods.
+Application code with embedded SQL statements cannot be modified through extensions. Changes have been made to the standard application to enable extensibility in the methods listed in the following table. This has commonly been enabled by transforming embedded SQL statements into query objects that support extending how SQL statements are built in these methods.
 
 |  Method |
 | -------------|

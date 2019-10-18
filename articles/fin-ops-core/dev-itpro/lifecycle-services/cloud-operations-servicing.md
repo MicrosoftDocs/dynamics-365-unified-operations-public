@@ -5,7 +5,7 @@ title: Cloud operations and servicing
 description: The Finance and Operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems. 
 author: manalidongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -83,10 +83,7 @@ Updates are applied as deployable package on an environment. A deployable packag
 For information about how to upgrade to the latest version, see [Overview of moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed](../../fin-ops/get-started/whats-new-changed.md).
 
 ## Environment data management
-These are the options for managing databases, including the ability to copy a database from one environment to another or restore a database to a previous state.
-- Refresh database: Refresh a sandbox environment with a copy of the Production database (database restore from Prod to Sandbox). You can submit a Refresh database request in LCS to copy a database from one Azure SQL Database based environment to another.
-- Point-in-time restore: You can submit a request to have a non-production database restored to a specific point in time that is within 35 days of your request. For more information about a database point-in-time restore, see [Request a point-in-time database restore on a non-production environment](../database/request-point-in-time-restore.md).
-- Export a database from Azure SQL Database to SQL Server or vice versa. For more information, see [Copy a Microsoft Dynamics 365 Finance and Operations apps database from SQL Server to an Azure SQL Database environment](../database/copy-database-from-sql-server-to-azure-sql.md) and [Copy a Microsoft Dynamics 365 Finance and Operation sapps database from Azure SQL Database to a SQL Server environment](../database/copy-database-from-azure-sql-to-sql-server.md).
+These are the options for managing databases, including the ability to copy a database from one environment to another or restore a database to a previous state. For more information, see [Database movement operations home page](../database/dbmovement-operations.md).
 
 ## Sign up for cloud operations notifications
 When the status of the package application is changed, LCS sends a notification to all of the users in a project. Any additional stakeholders who should be notified must be specified in the notification list.

@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 When you've created and posted consumption registrations on work orders in Asset Management, two reports are available to display consumption details.
 

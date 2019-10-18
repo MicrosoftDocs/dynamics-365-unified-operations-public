@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Embed PowerApps apps in Core HR
+# Embed PowerApps apps in Dynamics 365 - Core HR
 
 [!include [banner](includes/banner.md)]
 

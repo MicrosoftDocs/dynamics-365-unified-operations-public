@@ -56,7 +56,7 @@ This topic provides information about functionality that supports Russian regula
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
 - [Exchange adjustment](rus-exchange-adjustment.md)
-- [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
+- [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
 
 ## VAT
@@ -67,6 +67,7 @@ This topic provides information about functionality that supports Russian regula
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [VAT declaration](rus-VAT-declaration.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
+- [Prepayments management](rus-prepayments-management.md)
 
 ## Fixed assets (Russia)
 - [Fixed assets (Russia)](rus-fixed-assets.md)

@@ -64,7 +64,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Example
 Form: **ProcCategoryAddVendor** (Click **Procurement and sourcing** &gt; **Procurement categories**. On the **Vendors** FastTab, click **Add**.) 
 
-[![advancedSelectionExample](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
+[![Example of advanced selection](./media/advancedselectionexample.png)](./media/advancedselectionexample.png)
 
 ## Appendix
 ### Frequently asked questions

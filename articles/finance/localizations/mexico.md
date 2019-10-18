@@ -48,7 +48,7 @@ This topic includes information and links to resources that can help you set up 
 - [Inquire and print an electronic invoice](tasks/mx-00010-inquire-print-electronic-invoice.md)
 - [ISR declaration report](latam-mex-isr-declaration-report-supporting-processes.md)
 - [Post a free text invoice](tasks/mx-00010-post-free-text-invoice.md)
-- [Produce Mexican electronic ledger accounting report version 1.1](tasks/mx-00020-electronic-ledger.md)
+- [Electronic ledger accounting statements](latam-mex-electronic-ledger-accounting-statements.md)
 - [Set parameters for an electronic invoice](tasks/mx-00010-set-parameters-electronic-invoice.md)
 - [Set up sales tax codes for Mexico](tasks/mx-00006-sales-tax-code.md)
 - [Set up the chart of accounts for a legal entity in Mexico](tasks/mx-00020-chart-accounts-legal-entity-mexico.md)
