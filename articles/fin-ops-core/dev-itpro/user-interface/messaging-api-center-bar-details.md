@@ -48,6 +48,7 @@ Microsoft Dynamics AX 2012 has an all-purpose, "one size fits all" window that d
 
 ## Legacy API support: info(), warning()/checkfailed(), and error()
 The legacy **info()**, **warning()**, and **error()** application programming interfaces (APIs) are still supported. However, they now sit upon the framework's new messaging system, and their destination is deterministic. In other words, it uses the context of the call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (A drop dialog and a slider dialog are both considered forms.) **Note:** There are a few exceptions to this rule. If the message API was called from a slider dialog, and that dialog was closed, the message appears on the slider's parent form. Alternatively, if that slider was closed, and it was hosted by a workspace, the message is routed to the Message center. The message API never "eats" a message. If an appropriate host form isn't found, the message is sent to the Message center. The following screen shot shows the info, warning/checkfailed, and error bars. 
+
 [![Screen shot showing the info, warning/checkfailed, and error bars](./media/1_api.jpg)](./media/1_api.jpg)
 
 ## Message API and batch or asynchronous operations
