@@ -78,3 +78,9 @@ To set up a redirect for the status code error response page, follow these steps
 
 > [!NOTE]
 > If you're using a single status code error response page for both error categories, repeat this procedure to link an alias for the other error category to the same page.
+
+## Additional resources
+
+- [Work with templates](work-with-templates.md)
+- [Add a new site page](add-new-page.md)
+- [Create a page URL](create-page-url.md)
