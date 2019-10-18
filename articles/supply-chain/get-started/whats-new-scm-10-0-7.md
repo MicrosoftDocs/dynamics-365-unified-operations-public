@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.7. This version has a build number of 10.0.XXX. While the general availability date is in December, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-scm-10-0-7.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.7. This version has a build number of 10.0.283. While the general availability date is in December, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-scm-10-0-7.md#additional-resources).
 
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
