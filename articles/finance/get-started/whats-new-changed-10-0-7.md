@@ -37,10 +37,10 @@ ms.dyn365.ops.version: 10.0.7
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of XX.X.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-and-ops/get-started/whats-new-changed-10-0-7.md#additional-resources).
 
 The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to determine a price per quantity.
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration
+https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration
 
 The **Budget register entries defaulting of amount type** feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line.
-https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration## Ability to export records from the Accounts payable invoice pool form
+https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration## Ability to export records from the Accounts payable invoice pool form
 This feature lets you export records from the **Accounts payable invoice pool** form to Excel. This capability provides a productive environment to review and analyze the grid data in Excel. 
 
 ## Financial reporting retention feature
@@ -61,11 +61,11 @@ Users can now mark a Purchase agreement as "Closed" to signal the agreement is n
 
 ## Delayed tax calculation on journal
 
-To improve the performance of tax calculation on journal when the journal volume is huge, a new feature "delayed tax calculation" is provided. Tax amounts will only be calculated when user clicks "Sales Tax" command or posts the journal if this feature is turned on. Please refer to [Enable delayed tax calculation on journal](../../financials/general-ledger/enable-delayed-tax-calculation.md) for details.
+To improve the performance of tax calculation on journal when the journal volume is huge, a new feature "delayed tax calculation" is provided. Tax amounts will only be calculated when user clicks "Sales Tax" command or posts the journal if this feature is turned on. Please refer to [Enable delayed tax calculation on journal](../general-ledger/enable-delayed-tax-calculation.md) for details.
 
 ## Reverse journal posting
 
-Users can now reverse an entire posted journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. Please rever to [Reverse journal posting](../general-ledger/reverse-journal-posting) for details.
+Users can now reverse an entire posted journal or reverse one or more vouchers from the voucher transaction list regardless of their origin. Please rever to [Reverse journal posting](../general-ledger/reverse-journal-posting.md) for details.
 
 ## Prohibit submission to workflow when there are unallocated charges on a vendor invoice
 This feature lets you prevent a vendor invoice from being submitted to the workflow process when it contains unallocated charges. Instead, the person who submitted the invoice receives an alert that it has unallocated charges and lets them correct it before submitting it to workflow.
