@@ -37,10 +37,10 @@ ms.dyn365.ops.version: Platform update 31
 This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.XXXX. While the general availability date is in January, the new features are available for early release in October. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace. 
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace. To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
 ## Updates to saved views (Preview)
-The saved views feature continues to evolve with Platform update 31! Notably included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities.   
+The saved views feature continues to evolve with Platform update 31! Notably included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities. For more information about Saved views, see [Saved views](../../fin-ops/get-started/saved-views.md).  
 
 ## Two new controls available for developers
 The Website Host control has been added to allow developers to embed third-party apps directly into Finance and Operations inside iframes. This is the first step towards allowing privileged users to embed apps via personalization, similar to the existing story for embedding PowerApps.  
