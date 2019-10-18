@@ -74,5 +74,5 @@ Note: The activity types are pulled by the retail server by making a real time c
 - Add two new buttons to the appropriate POS Screen layout to enable sales associate to view their client book and view the client book for the store i.e. clients from all the client books of the associates that share an address book with the store. These operations are named “View customers in client book” and “View customers from store client books” respectively. You will find three more new operations related to client book which govern which sales associates can Add/Remove/Reassign customers from the client book. These operations are named “Add customer to client book”, “Remove customers from client book” & “Reassign customers to a client book” respectively.
 - Run the distribution schedule jobs numbered, 1040, 1150, 1110, and 1090. 
 Now, the sales associates can navigate to the customer details page on POS and add customers to their client book, view and capture activities/notes for the customers, and target customers by filtering the client book based on customer and client book attributes (refer the image “Client_book” below).
-![Client book](./media/Client_book.png "View clientbook")
+![Client book](./media/client_book.png "View clientbook")
 
