@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.3. This version will be released in January 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/02/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -57,11 +57,11 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 
 ## Collection letters
 
-You can now set up collection letters at the customer level, so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored for the customer. For more information, see [Process collection letters](../../financials/accounts-receivable/tasks/process-collection-letters.md).
+You can now set up collection letters at the customer level, so that the collection letter code for each transaction is tracked but the collection letter processing will be based on a single collection letter level that is stored for the customer. For more information, see [Process collection letters](../../../finance/accounts-receivable/tasks/process-collection-letters.md).
 
 ## Settle remainder
 
-You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions. For more information, see [Settle remainder](../../financials/cash-bank-management/settle-remainder.md).
+You can settle the amount remaining from settlement activity by applying that amount to a ledger account or another customer. You can settle the remainder when you are settling amounts entered into a journal or when you are only settling open transactions. For more information, see [Settle remainder](../../../finance/cash-bank-management/settle-remainder.md).
 
 ## Globalization
 

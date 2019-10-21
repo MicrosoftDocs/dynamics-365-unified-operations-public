@@ -42,6 +42,8 @@
         items:
         - name: Deployment options
           href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/retail/toc.json
+        - name:  Comparison of cloud and on-premises features
+          href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
         - name: System requirements for cloud deployments
@@ -64,7 +66,7 @@
           href: get-started/whats-new-10-0-6.md
         - name: Retail 10.0.5
           href: get-started/whats-new-10-0-5.md
-        - name: What's new or changed in Finance and Operations
+        - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
@@ -928,10 +930,16 @@
         href: retail-statements.md
       - name: Retail transaction consistency checker
         href: valid-checker.md
+      - name: Disable rules in retail transaction consistency checker
+        href: disable-consistency-check-rule.md
+      - name: Edit and audit retail store transactions
+        href: edit-audit-retail-transactions.md
       - name: Create, calculate, and post statements for a retail store
         href: tasks/create-calculate-post-statement-retail-store.md
       - name: Improvements to statement posting functionality
         href: statement-posting-EOD.md
+      - name: Trickle feed-based order creation for retail store transactions
+        href: trickle-feed.md
       - name: Improved handling of batch tracked items
         href: batch.md
       - name: Configure Retail parameters that affect retail statements
@@ -1116,6 +1124,8 @@
         items:
         - name: Fiscal printer integration sample for Italy
           href: localizations/emea-ita-fpi-sample.md
+        - name: Customer information management for Italy
+          href: localizations/emea-ita-customer-information.md 
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
@@ -1333,8 +1343,6 @@
           href: dev-itpro/configure-online-store.md
         - name: Configure authentication providers
           href: dev-itpro/configure-authentication-providers.md
-        - name: e-Commerce platform
-          href: dev-itpro/ecommerce-platform.md
         - name: e-Commerce platform SDK
           href: dev-itpro/ecommerce-platform-sdk.md
       - name: Payment connector extensibility

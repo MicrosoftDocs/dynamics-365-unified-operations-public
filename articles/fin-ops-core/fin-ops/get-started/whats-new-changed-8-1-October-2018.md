@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1. This version was released in October 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/06/2018
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -47,7 +47,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 You can use shared number sequences to assign customer IDs or vendor IDs. Shared number sequences also let you copy customers or vendors from one legal entity to another legal entity but use the same IDs in both legal entities.
 
-For additional details, see [Copy customers by using shared number sequences](../../financials/accounts-receivable/copy-customer.md) and [Copy vendors by using shared number sequences](../../financials/accounts-payable/vendor-copy.md).
+For additional details, see [Copy customers by using shared number sequences](../../../finance/accounts-receivable/copy-customer.md) and [Copy vendors by using shared number sequences](../../../finance/accounts-payable/vendor-copy.md).
 
 ## Customer transactions list page
 
@@ -59,7 +59,7 @@ The filter for showing open transactions has been replaced with a new filter tha
 
 You can also update due dates and discount dates for open customer transactions, and you can add due dates to the **Customer transactions** list page.
 
-For more information, see [Customer transaction list page](../../financials/accounts-receivable/customer-transactions-list-page.md).
+For more information, see [Customer transaction list page](../../../finance/accounts-receivable/customer-transactions-list-page.md).
 
 ## Vendor transaction list page
 
@@ -71,7 +71,7 @@ The filter for showing open transactions has been replaced with a new filter tha
 
 You can also update due dates and discount dates for open customer transactions. In release 8.1, the experience has been improved so that you can add due dates to the **Vendor transaction** list page.
 
-For more information, see [Vendor transaction list page](../../financials/accounts-payable/vendor-transaction-list-page.md).
+For more information, see [Vendor transaction list page](../../../finance/accounts-payable/vendor-transaction-list-page.md).
 
 ## Financial dimensions
 
@@ -81,13 +81,13 @@ You can configure a dimension so that information for other dimensions is automa
 
 You can set up the derived dimensions segments and values by using entities.
 
-For more information, see [Financial dimensions](../../financials/general-ledger/financial-dimensions.md).
+For more information, see [Financial dimensions](../../../finance/general-ledger/financial-dimensions.md).
 
 ## Dual currency
 
 Reporting currency can now be repurposed and used as a second accounting currency. This functionality is referred to as dual currency. The changes for dual currency can't be turned off through a configuration key or parameter. Because the reporting currency is used as a second accounting currency, the way that the reporting currency is calculated in the posting logic has changed.
 
-For more information, see [Dual currency](../../financials/general-ledger/dual-currency.md).
+For more information, see [Dual currency](../../../finance/general-ledger/dual-currency.md).
 
 ## Extensibility enhancements
 
@@ -97,13 +97,13 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 
 The Phantom line type can be used for the lines of a bill of materials (BOM) and multilevel BOM structures. Phantom BOMs can also be used for a BOM that has a route network.
 
-For more information, see [Phantom items](../../supply-chain/production-control/phantom-items.md).
+For more information, see [Phantom items](../../../supply-chain/production-control/phantom-items.md).
 
 ## Russian localization
 
 Dynamics 365 for Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP.
 
-For more information, see [Russia](../../financials/localizations/russia.md).
+For more information, see [Russia](../../../finance/localizations/russia.md).
 
 ## VAT reporting for the United Arab Emirates
 

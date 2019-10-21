@@ -5,7 +5,7 @@ title: Upgrade from AX 2012 - Go live (Cutover)
 description: This topic explains the final cutover process that starts after you turn off Dynamics AX 2012 and completes with Finance and Operations running an upgraded version of your code and database.
 author: robadawy
 manager: AnnBe
-ms.date: 06/06/2018
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -66,6 +66,6 @@ Before you can perform an upgrade in the production environment the following pr
 -	To schedule an upgrade, request a timeslot with the DSE team by submitting “Other” type service requests from LCS as described in the [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md). This is to ensure that the preferred timeslots will be available for you. Be aware that there is significantly higher demand for slots during the weekend, so requesting these as far in advance as possible will help attain your preferred schedule.
 
 ## Related articles
-- [Onboarding](../../fin-and-ops/imp-lifecycle/onboard.md)
+- [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
 - [Submit a service request](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
 - [Upgrade from AX 2012 - Cutover testing](./upgrade-cutover-testing.md)

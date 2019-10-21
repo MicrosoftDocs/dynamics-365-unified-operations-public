@@ -44,6 +44,8 @@
         items:
         - name: Deployment options
           href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/commerce/toc.json
+        - name:  Comparison of cloud and on-premises features
+          href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/finance/toc.json
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/commerce/toc.json
         - name: System requirements for cloud deployments
@@ -66,7 +68,7 @@
           href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
         - name: Retail 10.0.5
           href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/commerce/toc.json
-        - name: What's new or changed in Finance and Operations
+        - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
@@ -250,6 +252,10 @@
             href: enable-store-detection.md
           - name: Set up custom pages for user sign-ins
             href: custom-pages-user-logins.md
+        - name: Authoring tools
+          items:
+          - name: Authoring home page overview
+            href: authoring-home-overview.md
         - name: Manage your site
           items:
           - name: Manage users and roles
@@ -258,6 +264,8 @@
             href: add-telemetry.md
           - name: Search engine optimization (SEO) considerations for your site
             href: search-engine-optimization-considerations.md
+          - name: Manage Content Security Policy (CSP)
+            href: manage-csp.md
         - name: Add and manage content on your site
           items:
           - name: Ways to add content
@@ -294,7 +302,7 @@
             href: save-preview-publish-page.md
           - name: Enrich a product page
             href: enrich-product-page.md
-          - name: Enrich a cateogry landing page
+          - name: Enrich a category landing page
             href: enrich-category-page.md
         - name: Modules
           items:
@@ -528,6 +536,16 @@
           href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
         - name: Retail transaction consistency checker
           href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
+        - name: Disable rules in retail transaction consistency checker
+          href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
+        - name: Edit and audit retail store transactions
+          href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
+        - name: Create, calculate, and post statements for a retail store
+          href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
+        - name: Improvements to statement posting functionality
+          href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
+        - name: Trickle feed-based order creation for retail store transactions
+          href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
         - name: Create, calculate, and post statements for a retail store
           href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
         - name: Improvements to statement posting functionality
@@ -1431,6 +1449,8 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
+          - name: Call Retail Server APIs
+            href: e-commerce-extensibility/call-retail-server-apis.md
         - name: Advanced data action topics
           items:
           - name: Chain data actions
