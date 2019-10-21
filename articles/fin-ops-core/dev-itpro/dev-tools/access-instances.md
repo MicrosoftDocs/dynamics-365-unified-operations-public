@@ -107,7 +107,7 @@ After you sign in to the environment through Remote Desktop, if you want to acce
 ## VM that is running on-premises
 A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
-1. Go to the LCS main page and select **Shared asset library** or click [here (Shared Asset Library)](https://lcs.dynamics.com/V2/SharedAssetLibrary)
+1. Go to the LCS main page and select **Shared asset library** or click [here (Shared Asset Library)](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 2. Select the asset type **Downloadable VHD**.
 3. Find the VHD you are looking for based on the desired Finance and Operation version. The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
 4. Download all files (parts) associated with the desired VHD to a local folder.
