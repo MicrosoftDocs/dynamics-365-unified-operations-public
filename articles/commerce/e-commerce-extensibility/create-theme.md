@@ -111,3 +111,8 @@ For a theme to appear in the theme selector in the authoring tools, the \\src\\s
     }
 }
 ```
+## Additional resources
+
+[Theming overview](theming.md)
+
+[Configure theme settings](configure-theme-settings.md)
