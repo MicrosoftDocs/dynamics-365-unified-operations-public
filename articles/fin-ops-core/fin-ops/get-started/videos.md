@@ -5,7 +5,7 @@ title: Videos
 description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
 author: josaw1
 manager: AnnBe
-ms.date: 09/13/2019
+ms.date: 10/20/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -123,6 +123,9 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ### Help system
 
 - [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg)
+
+### Master planning
+- [Master planning setup wizard](https://youtu.be/c-e6n-8rZb4)
 
 ### Office integration
 
