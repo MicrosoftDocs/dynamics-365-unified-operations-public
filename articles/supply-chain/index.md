@@ -114,7 +114,7 @@ These tech conference recordings discuss product functionality in the previous v
 -  [Transportation management (TMS) in the new Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## Blogs
-There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
+There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version. 
 
 ## White papers
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a> 
