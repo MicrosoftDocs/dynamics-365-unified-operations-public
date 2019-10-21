@@ -1343,8 +1343,6 @@
           href: dev-itpro/configure-online-store.md
         - name: Configure authentication providers
           href: dev-itpro/configure-authentication-providers.md
-        - name: e-Commerce platform
-          href: dev-itpro/ecommerce-platform.md
         - name: e-Commerce platform SDK
           href: dev-itpro/ecommerce-platform-sdk.md
       - name: Payment connector extensibility
