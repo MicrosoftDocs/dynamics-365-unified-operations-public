@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module definition files
-description: This topic covers module definition files in Microsoft Dynamics 365 Commerce.
+description: This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers module definition files in Microsoft Dynamics 365 Commerce.
+This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
