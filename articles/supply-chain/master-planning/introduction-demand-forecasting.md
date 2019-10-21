@@ -68,7 +68,7 @@ Demand forecast generation starts in Supply Chain Management. Historical transac
 
 If you use the Demand forecasting Machine Learning experiments, they look for a best fit among five time series forecasting methods to calculate a baseline forecast. The parameters for these forecasting methods are managed in Supply Chain Management. 
 
-The forecasts, historical data, and any changes that were made to the demand forecasts in previous iterations are then available in Finance and Operations. 
+The forecasts, historical data, and any changes that were made to the demand forecasts in previous iterations are then available in Supply Chain Management. 
 
 You can use Supply Chain Management to visualize and modify the baseline forecasts. Manual adjustments must be authorized before the forecasts can be used for planning.
 
