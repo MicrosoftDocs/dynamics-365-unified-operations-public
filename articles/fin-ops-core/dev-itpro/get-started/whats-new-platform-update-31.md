@@ -77,7 +77,7 @@ The Excel Add-in has several authentication and authorization enhancements to im
 - **Authorization failure information now provided** - Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server, then the Excel Add-in would present a "Load applets" link, because the loading of the applets would fail. This was an implicit authorization permissions failure. Now the authorization permissions failure will be detailed explicitly for the user so they understand what has happened and verify that they are signing in as the correct user to the correct server.
 
 ## skipAutoOrderBy API
-When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](../dev-ref/q-classes).
+When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](../dev-ref/q-classes.md).
 
 
 ## Additional resources
