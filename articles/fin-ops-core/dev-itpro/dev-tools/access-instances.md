@@ -36,11 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to access development instances, configure on-premises development VMs, and find important configurations settings for developers and administrators.
 
-Definitions
------------
+## Definitions
 
-| Term      | Definition                                                                                                                                                                                                                                       |
-|-----------|------------------------------------------|
+| Term      | Definition                             |
+|-----------|----------------------------------------|
 | End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
 | Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM.      |
 
@@ -52,35 +51,21 @@ The process of deploying cloud hosted environments differs for LCS trial or part
 For a **Trial** or **Partner** project:
 
 1. Create a connection between a LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
-
 2. Select **+** under **Environments** to deploy.
-
     ![LCS Onboard methodology](media/access-instances-5.jpeg)
-
 3. Select an application and platform version.
-
 4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for a preview subscription](sign-up-preview-subscription.md).
-
     ![Select environment topology](media/access-instances-2.jpeg)
-
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
-
     ![Deploy environment](media/access-instances-3.jpeg)
-
 6. if you did not choose a cloud-hosted environment, select a VHD to download.
 
 For a **Customer Implementation** project:
-
 1. Log on to your LCS Implementation project.
-
 2. Select **Configure** to deploy.
-
     ![Develop, test, and configure](media/access-instances-6.jpeg)
-
 3. Select an application and platform version.
-
 4. Specify the settings and select **Save**.
-
     ![Deployment settings](media/access-instances-7.jpeg)
 
 Customers are provided with one free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are two types of environments, **Develop** and **Build and Test**. For development and customization activities, configure a **Develop** environment. **Build and Test** environments are not supported for standard development activities. Instead, they are used for daily build and test automation. For more information, see [Build and test automation](../perf-test/continuous-build-test-automation.md).  
@@ -90,20 +75,20 @@ Additional develop and build environments can either be purchased or hosted in y
 ![Cloud-hosted instances](media/CloudHostedPicture.JPG)
 
 ## Cloud environment that is provisioned through LCS
-When a cloud environment is provisioned through LCS:
 
--   The user who requests the cloud environment is provisioned as the administrator in that environment.
--   User accounts are provisioned on the development VM to allow access to the environment vis Remote Desktop, these credentials are accessible on the environment page in LCS.
+When a cloud environment is provisioned through LCS:
++ The user who requests the cloud environment is provisioned as the administrator in that environment.
++ User accounts are provisioned on the development VM to allow access to the environment vis Remote Desktop, these credentials are accessible on the environment page in LCS.
 
 ### Accessing an instance through a URL
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. Note that these additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
 
-1.  Go to your LCS project page.
-2.  In the **Environments** section, click the deployed environment.
-3.  When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
-4.  Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
-5.  In your browser, make a note of the base URL after you sign in. For example, the base URL might be **https://dynamicsAx7aosContoso.cloud.dynamics.com**.
+1. Go to your LCS project page.
+2. In the **Environments** section, click the deployed environment.
+3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
+4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
+5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be **https://dynamicsAx7aosContoso.cloud.dynamics.com**.
 
 ### Accessing the cloud instance through Remote Desktop
 
@@ -119,19 +104,15 @@ For any environments deployed **on or after Platform Update 12** , there are dis
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
-
 ## VM that is running on-premises
-An virtual hard disk (VHD) is made available for download from LCS, so that it can be set up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
+A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
 1. Go to the LCS main page and select **Shared asset library** or click [here](https://lcs.dynamics.com/V2/SharedAssetLibrary)
-2. Select the asset type **Downloadable VHD**
-3. Find the VHD you are looking for based on the desired Finance and Operation version.
-
-The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
-
+2. Select the asset type **Downloadable VHD**.
+3. Find the VHD you are looking for based on the desired Finance and Operation version. The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
 4. Download all files (parts) associated with the desired VHD to a local folder.
-5. When you complete the download, run the executuable file that you downloded, accept the software license agreement, and choose a file path to extract the VHD to.
-6. This will create a local VHD file that can be used to run a local Virtual Machine (VM).
+5. After the download is complete, run the executuable file that you downloded, accept the software license agreement, and choose a file path to extract the VHD to.
+6. This creates a local VHD file that you can use to run a local Virtual Machine (VM).
 
 ### Retail configuration
 
