@@ -114,3 +114,9 @@ For every module, a class name is defined that matches the module name. In this 
 1. Create a new theme directory in your SDK **/src/themes/** folder, such as **/src/themes/spring/**.
 1. In the new directory, create a new SCSS entry point file for the theme. For the file name, use the pattern **THEME\_NAME.theme.scs**. Then, when the theme is registered and appears in the authoring tools, the theme name will be provided in the file name (for example, **/src/themes/spring/spring.theme.scss**).
 1. After the theme is completed, the configurations can be packaged and uploaded to your site. The new theme then automatically appears in the authoring tools.
+
+## Additional resources
+
+[Create a new theme](create-theme.md)
+
+[Configure theme settings](configure-theme-settings.md)
