@@ -45,7 +45,9 @@ This subpattern is used to show information efficiently in a tabular format. The
 -   Group control
 
 ## Wireframes
-### [![Wireframe for Tabular Fields](./media/tabularfields1.png)](./media/tabularfields1.png)Structural wireframe
+### [![Wireframe for Tabular Fields](./media/tabularfields1.png)](./media/tabularfields1.png)
+
+Structural wireframe
 
 [![Wireframe for Tabular Fields](./media/tabularfields2.png)](./media/tabularfields2.png)
 
