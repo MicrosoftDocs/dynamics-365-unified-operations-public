@@ -34,47 +34,47 @@ ms.dyn365.ops.version: Platform update 31
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457. While the general availability date is in January, the new features are available for early release in October. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
+This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457. While the general availability date is January 2020, the new features are available for early release in October 2019. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
 Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace. To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
-## Updates to saved views (Preview)
-The saved views feature continues to evolve with Platform update 31! Notably included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities. For more information about Saved views, see [Saved views](../../fin-ops/get-started/saved-views.md).  
+## Updates to saved views
+The saved views feature continues to evolve with Platform update 31. Included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities. For more information about Saved views, see [Saved views](../../fin-ops/get-started/saved-views.md).  
 
-## Two new controls available for developers
-The Website Host control has been added to allow developers to embed third-party apps directly into Finance and Operations inside iframes. This is the first step towards allowing privileged users to embed apps via personalization, similar to the existing story for embedding PowerApps.  
+## New controls available for developers
+The Website Host control has been added to allow developers to embed third-party apps directly into Finance and Operations inside iFrames. This is the first step toward allowing users with certain privileges to embed apps via personalization, similar to the existing scenario for embedding PowerApps.
 
-A new star rating control is also available for developers to use in Finance and Operations. This controls shows a rating on a scale of 1 to 5 stars in quarter-star increments.
+A new star rating control is also available for developers to use. This control shows a rating on a scale of 1 to 5 stars in quarter-star increments.
 
-## Updated Finance and Operations product icon
-The new Finance and Operations product icon, which aligns with the latest icon stylings across Dynamics 365, is now visible in the web client.
+## Updated icon for Finance and Operations apps
+The new icon for Finance and Operations apps, which aligns with the latest icon stylings across Dynamics 365, is now visible in the web client.
 
-## Data management export file size limitation of 256MB has been removed
-Exporting files using data management had a limitation of maximum flie size of 256MB. This limitation has been removed. This change is guarded by a flight DMFBlobSize256 which can be enabled to revert back to old behavior if any issues are encountered due to this change.
+## Data management export file size limitation of 256 MB has been removed
+Exporting files using data management had a limitation of maximum file size of 256 MB. This limitation has been removed. This change is guarded by a flight DMFBlobSize256, which can be enabled to revert back to previous behavior if any issues are encountered due to this change.
 
-## Optimization of Data management workspace load
-Loading of data management workspace has been slow under certain conditions. There are new optimizations put in place to reduce the time it takes to load the workspace. This change can be enabled via flight DMFWorkspaceLoadPerformance.
+## Optimization of loading the Data management workspace
+Loading of the Data management workspace has been slow under certain conditions. There are new optimizations put in place to reduce the time it takes to load the workspace. This change can be enabled via flight DMFWorkspaceLoadPerformance.
 
 ## Inefficient memory usage by Data management export/import jobs
-There have been several issues reported where the memory consumed by data management export/import jobs have been high enough to result in performance issues for users. The SSIS package execution logic has been optimized to address this issue. This change is OFF be default as its guarded by a flight DMFExecuteSSISOutOfProc. After getting validations through PEAP and CAAP release process, the change will be enabled as default in a later platform update.
+There have been several issues reported where the memory consumed by data management export/import jobs has been high enough to result in performance issues. The SSIS package execution logic has been optimized to address this issue. This change is turned Off by default, as it is guarded by a flight DMFExecuteSSISOutOfProc. This change will be enabled by default in a later Platform update.
 
 ## Extensibility enhancements
 The following enhanced extensibility capabilities have been added in Platform update 31:
 
-- Adjust method WorkflowDocumentField.substitutePlaceholderAsUser separator from semi-colon to bar to elimintate conflicts with exported data (Ref# 299129).
+- Adjust method WorkflowDocumentField.substitutePlaceholderAsUser separator from semicolon to bar to eliminate conflicts with exported data (Ref# 299129).
 - Refactor method SysWorkflowParticipantProvider.SysWorkflowParticipantProvider to provide access to the list of resolved users (Ref# 310122).
-- Allow table display methods added via extension to be cached though cacheCalculateMethod API (Ref# 341431).
+- Allow table display methods added via extension to be cached through cacheCalculateMethod API (Ref# 341431).
 - Improve locking approach of SysExtensionAppClassFactory.getClassFromSysExtAttribute to reduce blocking issues (Ref# 338254).
 - Enable clearing of Grid.DataGroup property via extension so a group can be added that has a different field group set on it (Ref# 303030).
 - Allow extension of DataEntity.PrimaryCompanyContext (Ref# 292575).
 
 ## Excel Add-in authentication and authorization enhancements
-The Excel Add-in has had a number of authentication and authorization enhancements to improve the handling of certain cases:
-- **Authentication token expiration now silent** - The sign-in process validates any existing authentication tokens to see if the user can continue using an existing authentication context or if they need to sign in again. Previously, if the authentication token had expired the Excel Add-in would tell the user about that. Now, the user will simply be presented with the standard sign in screen and a background informational message will report the authentication token expiration for debugging purposes.
-- **Authentication timeout handled better** - There were some cases where the authentication process didn't complete in time, so the user was almost always seeing an error dialog with a "sign out" button. Ignoring the error and clicking "sign in" again resulted in a successful authentication, but the users that clicked "sign out" could get stuck in an endless loop.
-- **Support for ADFS sign out improved** - The sign-out mechanism has been put inside a dialog to improve support for customers that are using ADFS, since communication from the Excel Add-in to ADFS servers is not allowed except for in a separate dialog.
-- **Authorization failure information now provided** - Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server then the Excel Add-in would just present a "Load applets" link, since the loading of the applets would fail. This was an implicit authorization permissions failure. Now, that authorization permissions failure will be detailed explicitly for the user so they understand better what has happened and can double check that they are signing in as the correct user to the correct server.
+The Excel Add-in has several authentication and authorization enhancements to improve the handling of certain cases:
+- **Authentication token expiration now silent** - The sign-in process validates any existing authentication tokens to determine if the user can continue using an existing authentication context or if they need to sign in again. Previously, if the authentication token had expired the Excel Add-in would notify the user. Now, the user will simply be presented with the standard sign-in screen and an informational message will report the authentication token expiration for debugging purposes.
+- **Authentication timeout** - There were some cases where the authentication process didn't complete in time, so the user was receiving an error message with a **Sign out** button. Ignoring the error and selecting **Sign in** again resulted in a successful authentication, but if users selected **Sign out** there was a possibility of getting into an endless loop.
+- **Support for ADFS sign out improved** - he sign-out mechanism is now inside a dialog box. This improve support for customers that are using Active Directory Federation Services (ADFS), because communication from the Excel Add-in to ADFS servers is only allowed in a separate dialog box.
+- **Authorization failure information now provided** - Previously, if the user authenticated successfully but didn't have authorization permissions to communicate with the server, then the Excel Add-in would present a "Load applets" link, because the loading of the applets would fail. This was an implicit authorization permissions failure. Now the authorization permissions failure will be detailed explicitly for the user so they understand what has happened and verify that they are signing in as the correct user to the correct server.
 
 ## skipAutoOrderBy API
 When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](../dev-itpro/dev-ref/q-classes.md).
