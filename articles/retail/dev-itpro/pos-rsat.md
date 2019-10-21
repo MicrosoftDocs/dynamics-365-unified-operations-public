@@ -211,7 +211,8 @@ When you use validation mode during a recording session, users can then validate
 
 After you end a recording session, you can download the recording by selecting **Save to this PC**.
 
-![Save test recorder output file](media/Save.png)
+> [!div class="mx-imgBorder"]
+> ![Save test recorder output file](media/Save.png)
 
 The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
 
