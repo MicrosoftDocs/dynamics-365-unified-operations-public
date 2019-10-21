@@ -33,7 +33,6 @@ ms.dyn365.ops.version: 10.0.7
 
 ## Introduction
 
-
 This topic provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
   - Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one retail receipt.
   - A Sweden-specific channel report.
@@ -59,6 +58,9 @@ Additionally, the following POS features that were implemented for Sweden have b
 An **Electronic journal (Sweden)** channel report that lists continuous use events in the POS, such as sales, returns, receipt copies, drawer openings, and price overrides. 
 
 This report is a country-specific, so it's avaialbale only when the **ISO code** parameter in the POS functionality profile is set to **SE**.
+
+> [!NOTE]
+> Export and printing of this report is not supported in the current design.  
 
 
 ### Integration with control units
@@ -86,22 +88,21 @@ The following default data mapping is included in the fiscal document provider c
 
 - **Value-added tax (VAT) code mapping** sets rescpective device-specific VAT codes to sales tax codes. VAT code mapping should have the following format:
 
-1 : code1 ; 2 : code2
+*1 : code1 ; 2 : code2*
 
 Where 
-1, 2, etc. - device-specific VAT codes,
-";" - separator,
-code1, code2 - sales tax codes, that were set up in the system.
+  1, 2, etc. - device-specific VAT codes,
+  ";" - separator,
+  code1, code2 - sales tax codes, that were set up in the system.
 
 Control units support up to 4 different VAT code, so VAT code mapping may be set up as shown below:
 
-1 : code1 ; 2 : code2 ; 2 code3 ; 3 : code4 ; 4 : code5   
+*1 : code1 ; 2 : code2 ; 2 code3 ; 3 : code4 ; 4 : code5*
 
 
 #### Limitations of the sample
 
-  - Customer order scenarios are not supported in the Control unit integration sample for Sweden for now. 
-  - Export and printing of **Electronic journal (Sweden)** channel report is not supported in the current design.  
+  - Customer order scenarios are not supported in the Control unit integration sample for Sweden for now.
 
 
 ## Set up Retail for Sweden
