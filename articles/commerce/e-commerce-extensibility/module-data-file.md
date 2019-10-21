@@ -61,7 +61,7 @@ export interface IProductFeatureData {
 ```
 ## Additional resources
 
-[Module definition files](module-definition-file.md)
+[Module definition file](module-definition-file.md)
 
 [Module view file](module-view-file.md)
 
