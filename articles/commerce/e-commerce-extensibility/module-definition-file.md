@@ -286,3 +286,12 @@ The following example shows how the various supported data types are used.
     }
 }
 ```
+## Additional resources
+
+[Module view file](module-view-file.md)
+
+[Module data file](module-data-file.md)
+
+[Module mock file](module-mock-file.md)
+
+[Module test file](module-test-file.md)
