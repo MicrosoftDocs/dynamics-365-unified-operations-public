@@ -73,3 +73,11 @@ The **$ref** command can also include a relative path to another module in your 
 ```
 
 After deployment, both the base module and the extended module appear in Microsoft Dynamics 365 Commerce.
+
+## Additional resources
+
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
+
+[Cookie API overview](cookie-api-overview.md)
