@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
+This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration, or an instance of .NET's System.Exception class or a derived class. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
 
 ## throw statements
 
@@ -53,6 +53,23 @@ The **Global::error** method can automatically convert a label into the correspo
 The static methods on the **Global** class can be called without the **Global::** prefix. For example, the **Global::error** method can be called like this.
 
     error("My message.");
+
+In PU31 or later versions, the **throw** keyword can be used to throw .NET exceptions.
+
+    throw new InvalidOperationException("This function is not allowed");
+
+Also in PU31 or later, the **throw** keyword can be used by itself inside a catch block. In such a case, **throw** will behave like the **rethrow** statement in C\#. The original exception, exception message and its context such as call stack will be rethrown and be available to any catch statements in calling code.
+
+    try
+    {
+        throw Exception::error;
+    }
+    catch
+    {
+        // locally handle exception
+        // then rethrow for caller
+        throw;
+    }
 
 ## try, catch, finally, and retry statements
 
@@ -89,7 +106,29 @@ If no **catch** statement handles the exception, it's handled by the system exce
 
 ### Exceptions and CLR interop
 
-You can call Microsoft .NET Framework classes and methods that reside in assemblies that are managed by the common language runtime (CLR). When a .NET Framework **System.Exception** instance is thrown, your code can catch it by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method.
+You can call Microsoft .NET Framework classes and methods that reside in assemblies that are managed by the common language runtime (CLR). When a .NET Framework **System.Exception** instance is thrown, your code can catch it by declaring a variable of type **System.Exception** to catch any .NET exception, or one of its derived classes to catch a specific .NET exception type as shown in the following example.
+
+    System.ArgumentException ex;
+    try
+    {
+        throw new System.ArgumentException("Invalid argument specified");
+    }
+    catch(ex)
+    {
+        error(ex.Message);
+    }
+
+In releases prior to PU31, .NET exceptions can be caught by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method.
+
+    try
+    {
+        // call to .NET code which throws exception
+    }
+    catch(Exception::CLRError)
+    {
+        System.Exception ex = CLRInterop::getLastException();
+        error(ex.Message);
+    }
 
 ### Ensuring that exceptions are shown
 
