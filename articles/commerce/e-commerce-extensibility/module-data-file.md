@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Module data files
-description: This topic provides information about module data files. A module data file contains the typings for data actions that the module uses to fetch data. 
+title: Module data file
+description: This topic covers the module data file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 10/01/2019
@@ -27,10 +27,14 @@ ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
-# Module data files
+# Module data file
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
+
+This topic covers the module data file in Microsoft Dynamics 365 Commerce.
+
+## Overview
 
 A module data file contains the typings for data actions that the module uses to fetch data. The naming convention for module data files is *MODULE\_NAME.data.ts*.
 
@@ -55,3 +59,12 @@ export interface IProductFeatureData {
     productReviews: AsyncResult<IGetProductReviewsData>;
 }
 ```
+## Additional resources
+
+[Module definition files](module-definition-file.md)
+
+[Module view file](module-view-file.md)
+
+[Module mock file](module-mock-file.md)
+
+[Module test file](module-test-file.md)
