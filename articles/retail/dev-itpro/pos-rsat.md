@@ -213,7 +213,12 @@ After you end a recording session, you can download the recording by selecting *
 
 [![Save test recorder output file](./media/Save.png)](./media/Save.png)
 
-The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. To upload to Azure Dev Ops directly, change .axtr file extension to .zip and then open the .zip package, inside the package there will be file with name Recording.xml, upload the Recording.xml to the test case in Azure DevOps, don’t upload the entire .zip or .axtr package.
+The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
+
+To upload to Azure Dev Ops directly:
+1. Change the .axtr file extension to .zip.
+2. Open the .zip package. 
+3. Inside the package there will be file with name Recording.xml. Upload the Recording.xml to the test case in Azure DevOps. Don’t upload the entire .zip or .axtr package.
 
 ## Install RSAT
 
@@ -242,16 +247,12 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
     + **Retail server URL** – Enter the Retail Server URL that should be used for device activation, if the device hasn't already been activated.
 
 > [!NOTE]
-> Cloud POS and Retail server URL can be obtained from Dynamics 365 Finance and Operation and environment. Navigate to Retail > Channel setup > Channel profiles. Or the URLs can be obtained from the LCS environment page.
+> The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
-   
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
-   
    + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
-   
    + **Device** – Enter the ID of the device where the test should be run.
-   
    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
  [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
@@ -364,16 +365,16 @@ You must manually delete these files and secure them as you require. All these f
 
 ## Troubleshooting guides
 
-**Chrome driver**
+### Chrome driver
 
 If playback fails by flickering (opens and closes browser multiple times without starting playback), this could be related to the Chrome driver version. Check the error log in the RSAT tool. If the error states that the Chrome driver version is not supported, then download the supported chromedriver.exe version mentioned in the error message and paste it in the …\Regression Suite Automation Tool\Common\External\Selenium folder.  You can download the Chrome driver from [ChromeDriver](https://chromedriver.chromium.org/downloads).
 
-**.NET standard error**
+### .NET standard error
 
 If you get the following 'netstandard’ error, install .NET Framework 4.8 runtime. You can download the .NET Runtime from [Download SDKs](https://dotnet.microsoft.com/download/visual-studio-sdks).
 
 Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified at Microsoft.Dynamics.Commerce.PosPlayback.RecordingsRunner.Program.Main(String[] args).Multifactor authentication:
 
-**Multifactor authentication:**
+### Multifactor authentication
 
-If multi factor authentication enabled for the device activation user then the playback may fail, so if possible disable the multi factor authentication for the activation user temporarily, once the activation is completed enable the multifactor authentication. Activation will be required only for the first-time playback, please discuss with your security experts before doing this change.
+If multifactor authentication is enabled for the device activation user, then playback may fail. If possible, disable the multifactor authentication for the activation user temporarily. After the activation is completed, then re-enable the multifactor authentication. Activation will be required only for the first-time playback. We recommend that you discuss this approach with your security experts before making this change.
