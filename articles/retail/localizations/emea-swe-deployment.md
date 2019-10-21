@@ -353,30 +353,32 @@ Disable extensions released previously.
 
 3. Modify the **HardwareStation.Extension.config** Hardware station configuration file.
 
-        # [Retail 7.3 and earlier](#tab/retail-7-3)
 
-        Remove the following section from the **HardwareStation.Shared.config** and **HardwareStation.Dedicated.config** configuration files.
+    # [Retail 7.3 and earlier](#tab/retail-7-3)
 
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-        ```
+    Remove the following section from the **HardwareStation.Shared.config** and **HardwareStation.Dedicated.config** configuration files.
 
-        # [Retail 7.3.1 and later](#tab/retail-7-3-1)
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+    ```
 
-        Remove the following section from the **HardwareStation.Extension.config** configuration file:
 
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
-        ```
-        
-        # [Retail 10.0 and later](#tab/retail-10-0)
+    # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
-        Remove the following section from the **HardwareStation.Extension.config** configuration file:
+    Remove the following section from the **HardwareStation.Extension.config** configuration file:
 
-        ``` xml
-        <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
-        ```
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
+    ```
 
-        ---
+    # [Retail 10.0 and later](#tab/retail-10-0)
+
+    Remove the following section from the **HardwareStation.Extension.config** configuration file:
+    
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
+    ```
+
+    ---
 
 Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
