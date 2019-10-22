@@ -1232,6 +1232,8 @@
           href: localizations/latam-bra-sped-ecd.md
         - name: SPED-Reinf tax statement
           href: localizations/latam-bra-sped-reinf.md
+        - name: SPED fiscal resolution 13/2019 RJ
+          href: localizations/latam-bra-resolution-13-2019-RJ.md
         - name: Parameters for legal entities
           href: localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
