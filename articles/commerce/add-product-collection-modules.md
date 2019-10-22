@@ -67,10 +67,16 @@ The following table shows the list types that are available for selection in the
 
 ## Additional resources
 
-- [Starter kit overview](starter-kit-overview.md)
-- [Product collection module overview](product-collection-module-overview.md)
-- [Add a carousel module to a page](add-carousel.md)
-- [Add a content rich block module to a page](add-content-rich-block.md)
-- [Add content placement modules to a page](add-content-placement-modules.md)
-- [Add a container module to a page](add-container-module.md)
-- [Add a buy box to a page](add-buy-box.md)
+[Starter kit overview](starter-kit-overview.md)
+
+[Product collection module overview](product-collection-module-overview.md)
+
+[Add a carousel module to a page](add-carousel.md)
+
+[Add a content rich block module to a page](add-content-rich-block.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
