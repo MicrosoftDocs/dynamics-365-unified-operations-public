@@ -258,7 +258,7 @@ The following steps show the CRT code changes:
 The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK.
 
 > [!NOTE]
-> You should call the printing of the custom receipt type from the client. For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY).
+> You should call the printing of the custom receipt type from the client. For more information, see [Printing custom receipt from POS](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/pos-trigger-printing).
 
 ### Best practice
 
