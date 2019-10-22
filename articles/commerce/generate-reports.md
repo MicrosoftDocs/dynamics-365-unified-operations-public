@@ -141,4 +141,4 @@ To generate an **Organization sales** report, follow these steps.
 
 ## Additional resources
 
-- [Help resources for Dynamics 365 Retail](https://docs.microsoft.com/en-us/dynamics365/retail/index)
+- [Help resources for Dynamics 365 Retail](../retail/index.md)
