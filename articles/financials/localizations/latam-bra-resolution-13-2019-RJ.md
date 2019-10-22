@@ -5,7 +5,7 @@ title: SPED fiscal resolution 13/2019 RJ
 description: This topic explains how to set up and generate SPED ECD text files.
 author: v-oloski
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 10/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -250,10 +250,10 @@ These settings are used to automatically generate ICMS adjustment records for a 
 
 ## Tax fiscal document
 
-If the **Document adjustment** option is set to **Yes** on the **Fiscal books parameters per state** page, users can select only a sales tax code that has a Fiscal value of 3 (the taxation code, as it's related to the sales tax code, has a Fiscal value of 3, without credit/debit) on the tax fiscal document line (**General ledger** \> **Journal entries** \> **All tax fiscal documents**).
+If the **Document adjustment** option is set to **Yes** on the **Fiscal books parameters per state** page, users can select only a sales tax code that has a fiscal value of 3  on the tax fiscal document line. The taxation code, as it's related to the sales tax code, has a fiscal value of 3, without credit/debit. 
 
 > [!NOTE]
-> For correct posting, the tax fiscal document the selected sales tax code should have the following calculation settings:
+> For correct posting, the tax fiscal document and the selected sales tax code should have the following calculation settings:
 >
 > - **Origin:** Percentage of net amount
 > - **Marginal base:** Net amount per line
@@ -264,7 +264,7 @@ When you post a tax fiscal document where a sales tax code is attached to the li
 The system fills in data on the journal lines from the posting profile of adjustment code 5.3. It fills in the amount from the tax fiscal document.
 
 > [!NOTE]
-> Before you use this functionality, set up the benefit code per item/state for ICMS transfer by going to **General ledger** \> **Setup** \> **Sales tax** \> **Benefit code per Item/ state**. According to the resolution, the following adjustment codes should be set up for ICMS transfer:
+> Before you use this functionality, set up the benefit code per item/state for ICMS transfer by going to **Tax** \> **Setup** \> **Sales tax** \> **Benefit code per Item/ state**. According to the resolution, the following adjustment codes should be set up for ICMS transfer:
 >
 > - **For the sender:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
 > - **For the recipient:** Adjustment code from table 5.2 = RJ821231, and adjustment code from table 5.3 = RJ10080002
