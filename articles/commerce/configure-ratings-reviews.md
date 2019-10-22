@@ -149,7 +149,10 @@ The following illustration shows what this configuration looks like in Dynamics 
 
 ## Additional resources
 
-- [Ratings and reviews overview](ratings-reviews-overview.md)
-- [Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
-- [Manage ratings and reviews](manage-reviews.md)
-- [Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
+[Ratings and reviews overview](ratings-reviews-overview.md)
+
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
+[Manage ratings and reviews](manage-reviews.md)
+
+[Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)
