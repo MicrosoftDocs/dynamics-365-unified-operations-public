@@ -94,6 +94,8 @@ For more information about account management modules and how to author them, se
 
 ## Additional resources
 
-- [Quick tour of the home page](quick-tour-home-page.md)
-- [Quick tour of product details pages](quick-tour-pdp.md)
-- [Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+[Quick tour of the home page](quick-tour-home-page.md)
+
+[Quick tour of product details pages](quick-tour-pdp.md)
+
+[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
