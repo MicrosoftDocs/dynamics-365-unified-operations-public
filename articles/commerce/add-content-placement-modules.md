@@ -82,10 +82,16 @@ To add a content placement module that contains a content placement item module 
 
 ## Additional resources
 
-- [Starter kit overview](starter-kit-overview.md)
-- [Account management pages](account-management.md)
-- [Add a container module to a page](add-container-module.md)
-- [Add a buy box to a page](add-buy-box.md)
-- [Add a cart module to a page](add-cart-module.md)
-- [Add a checkout module to a page](add-checkout-module.md)
-- [Create an order confirmation module](order-confirmation-module.md)
+[Starter kit overview](starter-kit-overview.md)
+
+[Account management pages](account-management.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create an order confirmation module](order-confirmation-module.md)
