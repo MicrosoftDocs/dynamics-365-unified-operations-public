@@ -127,6 +127,8 @@ To prevent CSP from applying policies to your site, you can turn it off for that
 
 ## Additional resources
 
-- [Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
-- [Add script code to site pages to support telemetry](add-telemetry.md)
-- [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
