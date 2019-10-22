@@ -114,8 +114,10 @@
           href: whats-new-talent-august2018.md
         - name: July 2018
           href: whats-new-talent-july2018.md
-    - name: System requirements and update policy
+    - name: System requirements
       href: talent-versions-update-policy.md
+    - name: Talent updates
+      href: talent-updates.md
     - name: Provision Talent
       href: provisioning-talent.md
     - name: Remove Talent environments

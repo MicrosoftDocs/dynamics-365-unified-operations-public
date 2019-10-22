@@ -37,6 +37,12 @@ Microsoft Dynamics 365 Talent provides continuous, touchless service updates. Th
 
 With service updates for Talent, you're in control and can manage how your organization receives them. For example, you can sign up for the First Release program so your organization receives updates first. You can also choose to apply the updates to any of your environments manually or to remain on the default release schedule and receive auto-updates when you schedule them using Lifecycle Services (LCS).
 
+## Update policy
+
+Talent is serviced as a cloud offering. Talent updates are continuous and applied automatically by Microsoft.
+
+Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.
+
 ## Release process
 
 The Talent team extensively tests and validates each new release on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.
