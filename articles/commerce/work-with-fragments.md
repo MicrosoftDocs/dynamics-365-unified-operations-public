@@ -125,6 +125,8 @@ You can also edit a fragment by selecting it on a page, in a template, or in a p
 
 ## Additional resources
 
-- [Templates and layouts overview](templates-layouts-overview.md)
-- [Work with templates](work-with-templates.md)
-- [Work with preset layouts](work-with-layouts.md)
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
