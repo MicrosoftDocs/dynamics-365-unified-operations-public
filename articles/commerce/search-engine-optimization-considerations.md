@@ -56,6 +56,8 @@ Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) 
 
 ## Additional resources
 
-- [Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
-- [Add script code to site pages to support telemetry](add-telemetry.md)
-- [Manage Content Security Policy (CSP)](manage-csp.md)
+[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)
