@@ -119,12 +119,20 @@ To add a container player module to a new page and set the required properties, 
 
 ## Additional resources
 
-- [Starter kit overview](starter-kit-overview.md)
-- [Add a carousel module to a page](add-carousel.md)
-- [Add a content rich block module to a page](add-content-rich-block.md)
-- [Add content placement modules to a page](add-content-placement-modules.md)
-- [Add a buy box to a page](add-buy-box.md)
-- [Add a cart module to a page](add-cart-module.md)
-- [Add a checkout module to a page](add-checkout-module.md)
-- [Create a header module](author-header-module.md)
-- [Create a footer module](author-footer-module.md)
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a carousel module to a page](add-carousel.md)
+
+[Add a content rich block module to a page](add-content-rich-block.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)
