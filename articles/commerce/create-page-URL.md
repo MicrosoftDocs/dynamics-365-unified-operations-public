@@ -104,7 +104,10 @@ To redirect a URL to a different URL, follow these steps.
 
 ## Additional resources
 
-- [Customize site navigation](customize-site-navigation.md)
-- [Add a new site page](add-new-page.md)
-- [Configure your domain name](configure-your-domain-name.md)
-- [Add languages to your site](add-languages-to-site.md)
+[Customize site navigation](customize-site-navigation.md)
+
+[Add a new site page](add-new-page.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Add languages to your site](add-languages-to-site.md)
