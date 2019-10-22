@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.
+This topic describes how purchasing agents can use the Vendor portal to collaborate with external vendors during the purchase order confirmation process. This information applies only to the February 2016 and May 2016 versions of Dynamics AX.
 
-The information in this topic applies only to the February 2016 and May 2016 versions of Dynamics AX. The Vendor portal functionality has been replaced by extended vendor collaboration functionality in Dynamics 365 for Operations version 1611. For more information about the new vendor collaboration functionality, see [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md).  
+The information in this topic applies only to the February 2016 and May 2016 versions of Dynamics AX. For more information about the new vendor collaboration functionality, see [Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md).  
 
 The Vendor portal is targeted at vendors that don't have electronic data interchange (EDI) integration with Microsoft Dynamics AX for exchanging purchase order (PO) information. The portal lets purchasing agents send a PO to the vendor, and then receive a Confirmed or Rejected response directly in Dynamics AX.  
 

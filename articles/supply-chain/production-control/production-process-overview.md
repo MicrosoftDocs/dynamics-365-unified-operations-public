@@ -5,7 +5,7 @@ title: Production process overview
 description: This topic gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period. 
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,12 +40,12 @@ The production of products, a process that is also known as the production life 
 
 The **Production control** module is linked to other modules, such as **Product information management**, **Inventory management**, **General ledger**, **Warehouse management**, **Project accounting**, and **Organization administration**. This integration supports the information flow that is required to complete the manufacturing of a finished item.  
 
-The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Finance and Operations supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.  
+The production process is typically influenced by the cost accounting and inventory valuation methods that are chosen for a specific production process. Supply Chain Management supports both actual cost (first in, first out \[FIFO\]; last in, first out \[LIFO\]; moving average; and periodic weighted average) and standard cost methods. Lean manufacturing is implemented based on the backflush costing principle.  
 
 The choice of the cost measurement methods also defines the requirements for reporting about material and resource consumption during the production process. Typically, actual cost methods require accurate reporting on the job level, whereas periodic costing methods allow for less granular reporting of material and resource consumption.
 
 ## Mixed mode manufacturing
-Different products and production topologies require the application of different order types. Finance and Operations can apply the various order types in a mixed mode. In other words, all order types can occur during the end-to-end process of producing one finished product.
+Different products and production topologies require the application of different order types. Supply Chain Management can apply the various order types in a mixed mode. In other words, all order types can occur during the end-to-end process of producing one finished product.
 
 -   **Production order** – This is the classic order type to produce a specific product or product variant in a given quantity on a specific date. Production orders are based on bills of materials (BOMs) and routes.
 -   **Batch order** – This order type is used for process industries and discrete processes where the manufacturing conversion is based on a formula, or where co-products and by-products can be end products, either in addition to or instead of the main product. Batch orders use **Formula** type BOMs and routes.
@@ -64,7 +64,7 @@ To select the manufacturing principle that best applies to a particular product 
 The following steps in the production life cycle can occur for all order types of mixed mode manufacturing. However, not all of them are represented as an explicit order status.
 
 1.  **Created** – You can create a production order, batch order, or kanban manually, or you can configure the system to generate them based on various demand signals. Master planning creates production orders, batch orders, or kanbans by firming planned orders. Other demand signals are sales orders or pegged supply signals from other production orders or kanbans. For fixed-quantity kanbans, demand signals are generated when kanbans are registered as empty.
-2.  **Estimated** – You can calculate estimates for material and resource consumption. The estimation generates inventory transactions for raw materials that have a status of **On order**. The receipts for main products, co-products, and by-products are generate when production orders or batch orders are estimated. If the BOM contains lines of the **Pegged supply** type, purchase orders for materials or subcontracted operation services are generated and pegged to the production order or batch order. Items or orders are reserved according to the reservation strategy of the production order, and the price of the finished goods is calculated based on parameter settings.
+2.  **Estimated** – You can calculate estimates for material and resource consumption. The estimation generates inventory transactions for raw materials that have a status of **On order**. The receipts for main products, co-products, and by-products are generated when production orders or batch orders are estimated. If the BOM contains lines of the **Pegged supply** type, purchase orders for materials or subcontracted operation services are generated and pegged to the production order or batch order. Items or orders are reserved according to the reservation strategy of the production order, and the price of the finished goods is calculated based on parameter settings.
 3.  **Scheduled** – You can schedule production based on operations, individual jobs, or both.
     -   **Operations scheduling** – This scheduling method provides a rough, long-term plan. By using this method, you can assign start and end dates to production orders. If the production orders are attached to route operations, you can assign them to cost center groups.
     -   **Job scheduling** – This scheduling method provides a detailed plan. Each operation is broken down into individual jobs that have specific dates, times, and assigned operations resources. If finite capacity is used, jobs are assigned to operations resources based on availability. You can view and change the schedule in a Gantt chart.

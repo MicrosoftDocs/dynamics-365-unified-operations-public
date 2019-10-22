@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit limits for customers
-description: This article provides an overview of how credit limits work in Microsoft Dynamics 365 for Finance and Operations.
+description: This article provides an overview of how credit limits work in Dynamics 365 Supply Chain Management.
 author: omulvad
 manager: AnnBe
 ms.date: 09/15/2017

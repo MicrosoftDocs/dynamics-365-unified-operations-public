@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 
 ## Vendor catalogs import
 
-In Microsoft Dynamics 365 for Finance and Operations, purchasing professionals can create and maintain
+In Dynamics 365 Supply Chain Management, purchasing professionals can create and maintain
 catalogs for company employees to use when they order items and services for
 internal use. To create a procurement catalog, you can add the items and
 services that you want to make available to employees, either by importing the product
@@ -67,7 +67,7 @@ To import vendor catalog data, you must complete the following tasks:
 6.  Upload the CMR file.
 
 7.  Review, approve, or reject the products in the vendor catalog. The products are automatically mapped
-    to the procurement categories in Dynamics 365 for Finance and Operations. 
+    to the procurement categories. 
     
 Approved products are added to the product master and are released to the selected legal entities. Only approved products can be added to the procurement catalog.
 

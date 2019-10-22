@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create and process a conformance
-description: Use this procedure to perform nonconformance management, based on an existing quality order.
+description: This topic explains how to perform nonconformance management, based on an existing quality order.
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod:  
 ms.service: dynamics-ax-applications
@@ -30,54 +30,43 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Use this procedure to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, run the “Inspect the quality of goods” task recording. To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.
+This topic explains how to perform nonconformance management, based on an existing quality order. You can run this recording in the USMF demo company and can use the suggested values. Typically, this procedure is performed by a quality clerk.  As a prerequisite, complete the instructions in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md). To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page. To use the document notes, the user must also have Document handling activated in the user options.
 
 
 ## Select a quality order
-1. Go to Quality orders.
-2. In the list, mark the selected row.
-    * Select the quality order that was created from the "Inspect the quality of goods" task recording.  
+1. In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.
+2. In the list, select the quality order that was created in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md).  
 
 ## Create a nonconformance
-1. Click Inquiries.
-2. Click Non conformances.
-3. Click New.
-4. In the Problem type field, click the drop-down button to open the lookup.
-    * Select the problem that was found during the inspection process.  
-5. In the Problem type field, click the drop-down button to open the lookup.
-6. In the list, find and select the desired record.
-7. In the list, click the link in the selected row.
-8. Click OK.
+1. In the action pane, select **Inquiries**.
+2. Select **Non conformances**.
+3. Select **New**.
+4. In the drop-down menu of the **Problem type** field, select the problem that was found during the inspection process.  
+5. Select **OK**.
 
 ## Approve/reject a nonconformance
-1. Click Functions.
-2. Click Approve non conformance.
-    * For this example, approve the nonconformance. Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this task recording, the processing of correction handling.  
-3. Click Yes.
+1. Select **Functions**.
+2. Select **Approve non conformance**. For this example, approve the nonconformance. Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this topic, the processing of correction handling.  
+3. Select **Yes**.
 
 ## Create a correction action
-1. Click Corrections.
-2. Click New.
-3. In the list, mark the selected row.
-4. In the Personnel number field, click the drop-down button to open the lookup.
-5. In the list, click the link in the selected row.
-6. Click Select.
-7. Click Attach.
-    * Create a note about the correction. For this example, the action is to contact the vendor to discuss the nonconformance case.  
-8. Click New.
-9. Click Note.
-    * Note that, depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.  
-10. In the Description field, type a value.
-11. Close the page.
+1. Select **Corrections**.
+2. Select **New**.
+3. In the **Personnel number** field of the new row, select the desired record from the drop down menu.
+4. Click **Select**.
+5. Select **Attach**. Create a note about the correction. For this example, the action is to contact the vendor to discuss the nonconformance case.  
+6. Select **New**.
+7. Select **Note**. Depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.  
+8. In the **Description** field, type a value.
+9. Close the page.
 
 ## Maintain a correction
-1. Click Mark complete.
-2. Click OK.
+1. Select **Mark complete**.
+2. Select **OK**.
 3. Close the page.
 
 ## Close a nonconformance
-1. Click Functions.
-2. Click Close non conformance.
-3. Click Yes.
-4. Close the page.
-5. Close the page.
+1. Select **Functions**.
+2. Select **Close non conformance**.
+3. Select **Yes**.
+4. Close the pages.

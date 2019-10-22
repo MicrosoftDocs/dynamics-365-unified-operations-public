@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment methods in call centers
-description: This topic describes the various payment methods that you can use in a call center in Microsoft Dynamics 365 for Retail.
+description: This topic describes the various payment methods that you can use in a call center in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Retail, the configuration of the call center channel includes a setting that is named **Enable order completion**. This setting helps guarantee that all orders that users of the channel create are released to order processing only if they have a prepaid or pre-authorized payment that is within approved tolerances. If the **Enable order completion** setting is turned on, call center users can enter payments against sales orders for customers by using the payment processing features of Call center. If the setting is turned off, call center users can't use the Call center payment processing features, but they can still apply prepayments to sales orders by using standard Accounts receivable functionality.
+In Dynamics 365 Retail, the configuration of the call center channel includes a setting that is named **Enable order completion**. This setting helps guarantee that all orders that users of the channel create are released to order processing only if they have a prepaid or pre-authorized payment that is within approved tolerances. If the **Enable order completion** setting is turned on, call center users can enter payments against sales orders for customers by using the payment processing features of Call center. If the setting is turned off, call center users can't use the Call center payment processing features, but they can still apply prepayments to sales orders by using standard Accounts receivable functionality.
 
 As part of the channel configuration, a company can define the methods of payment that are allowed for a call center channel. The call center channel uses the same payment methods that are defined for the retail store channels.
 

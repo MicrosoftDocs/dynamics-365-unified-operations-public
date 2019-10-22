@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 04/26/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -38,7 +38,6 @@ You can use triggers to capture events that occur before or after Retail Modern 
 - Continue or cancel an operation. For example, if your validation fails or returns an error, then you can cancel the operation in pre-trigger. Post-triggers are not cancelable.
 - Use the post-trigger for scenarios where you want to show custom messages or insert custom fields after the standard logic is performed. 
 
-This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail with Platform update 8 and Retail Application update 4 hotfix. 
 
 The following table lists the available triggers and denotes whether they can be cancelled.
 
@@ -74,14 +73,22 @@ The following table lists the available triggers and denotes whether they can be
 
 | Trigger                   | Type                    | Description                                                        |
 |---------------------------|-------------------------|--------------------------------------------------------------------|
-| PreCustomerAddTrigger     | Cancelable              | Executed before creating a new customer.             |
-| PostCustomerAddTrigger    | Non-cancelable          | Executed after creating a new customer.              |
-| PreCustomerClearTrigger   | PreCustomerClearTrigger | Executed before the customer cleared from the cart. |
+| PreCustomerAddTrigger     | Cancelable              | Executed before adding a customer to the transaction.             |
+| PostCustomerAddTrigger    | Non-cancelable          | Executed after adding a customer to the transaction.              |
+| PreCustomerClearTrigger   | Cancelable              | Executed before the customer cleared from the cart. |
 | PostCustomerClearTrigger  | Non-cancelable          | Executed after the customer cleared from the cart. |
 | PreCustomerSetTrigger     | Cancelable              | Executed before the customer is added to the cart.            |
 | PreCustomerSearchTrigger  | Cancelable              | Executed before customer search is performed.      |
 | PostCustomerSearchTrigger | Non-cancelable          | Executed after customer search is performed.       |
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
+| PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |
+| PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |
+| PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |
+| PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |
+| PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |
+| PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |
+
+
 
 ## Discount triggers
 
@@ -150,10 +157,14 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallCustomerOrderTrigger 	| Cancelable     | Executed before the customer order is recalled. |
 | PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
 | PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
-| PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during customer order.|
-| PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by clicking the ship button.|
-| PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by clicking the Pack button.|
-| PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option triggered is from the order fulfillment view by clicking the Pack button.|
+| PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during a customer order.|
+| PreGetFulfillmentLinesTrigger 	| Cancelable 	 | Executed before the Order fulfillment lines are loaded in the Order fulfillment view.|
+| PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by selecting the **Ship** button.|
+| PostShipFulfillmentLinesTrigger	| Non-Cancelable 	 | Executed after the shipping is done from the Order fulfillment view by selecting the **Ship** button.|
+| PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PostMarkFulfillmentLinesAsPackedTrigger	| Non-Cancelable 	 | Executed after the mark as packed option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
 
 
 ## Shift triggers
@@ -189,6 +200,12 @@ The following table lists the available triggers and denotes whether they can be
 | PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.     |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
+
+## Reason code triggers
+| Trigger              | Type           | Description                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
+
 
 ## Business scenario
 In this example, a custom receipt is printed when the user suspends a transaction. This example implements the **PostSuspendTransactionTrigger** trigger and prints the custom receipt using the existing print peripheral API.
@@ -389,7 +406,9 @@ To implement this scenario, you must complete these steps.
 
 ## Override the CRT receipt request to generate the receipt data
 
-This section explains how to override the existing CRT request to print a receipt for suspended transactions. This section is applicable to Microsoft Dynamics 365 for Finance and Operations or Microsoft Dynamics 365 for Retail with platform update 8.
+
+This section explains how to override the existing CRT request to print a receipt for suspended transactions. 
+
 
 1. Start Visual Studio 2015.
 2. On the **File** menu, select **Open \> Project/Solution**. Find the template project (**SampleCRTExtension.csproj**).
@@ -650,7 +669,7 @@ This section explains how to override the existing CRT request to print a receip
 
 ## Add the custom receipt layout
 
-1. Open Dynamics 365 for Finance and Operations, Enterpise edition.
+1. Open Dynamics 365 Retail.
 2. Go to **Retail** > **Channel setup** > **POS setup** > **POS** > **Receipts formats**.
 3. Click **New** in **Receipts formats**.
 4. In the **Receipt format filed** field, enter the format name **Suspend**. In the **Receipt type** field, select **CustomReceiptType7**.

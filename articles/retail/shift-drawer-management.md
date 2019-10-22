@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how to set up and use shifts in retail point of sale (POS).
 
-In Microsoft Dynamics 365 for Retail, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
+In Dynamics 365 Retail, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
 
 Typically, shifts are opened at the start of the business day. At that point, a user declares the starting amount that the cash drawer contains. Sales transactions are then performed throughout the day. Finally, at the end of the day, the drawer is counted, and the closing amounts are declared. The shift is closed, and a Z report is generated. The Z report indicates whether there is an overage or shortage.
 
@@ -75,7 +75,7 @@ For shared shifts to be used in a store, the cash drawer must be configured as a
 
 ## Shift and drawer operations
 
-Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Microsoft Dynamics 365 for Retail Modern POS and Cloud POS.
+Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Retail Modern POS and Cloud POS.
 
 ### Open shift
 

@@ -1,11 +1,11 @@
 --- 
 # required metadata 
  
-title: Parameter configurations for Retail statements
-description: This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. 
+title: Configure Retail parameters that affect retail statements
+description: This topic demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. 
 author: josaw1
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -26,22 +26,22 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Parameter configurations for Retail statements
+# Configure Retail parameters that affect retail statements
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. This procedure uses the USRT demo company.
+This topic demonstrates configurations for Retail parameters that affect how Retail statements get created and posted. This procedure uses the USRT demo company.
 
-1. Go to Retail and commerce > Headquarters setup  > Parameters > Retail parameters.
-2. Click the Posting tab.
-    * Select "Yes" if you want to post the periodic discount amounts specifically.  
-    * Select "Standard" to use default accounts, or select "Periodic" if you want to define which account to use for each periodic discount.  
-    * Select "Summary" if inventory lines should get aggregated whenever possible.  
-    * Select "Yes" if Invoices and Payments should get automatically settled as part of the Statement posting process.  
-    * Select "Yes" if Safe drop transactions should get aggregated.  
-    * Select "Yes" if Bank drop transactions should get aggregated.  
-    * Select "Yes" to turn aggregation on for Statement posting.  
-    * Select "Yes" to create and process orders in parallel when statements are posted.  
-    * Enter the maximum orders to be processed in each batch job task.  
-3. Click Save.
+1. In the navigation pane, go to **Modules > Retail and commerce > Headquarters setup  > Parameters > Retail parameters**.
+2. Select the **Posting** tab.
+    - Select **Yes** if you want to post the periodic discount amounts specifically.  
+    - Select **Standard** to use default accounts, or select **Periodic** if you want to define which account to use for each periodic discount.  
+      - Select **Summary** if inventory lines should get aggregated whenever possible.  
+      - Select **Yes** if Invoices and Payments should get automatically settled as part of the Statement posting process.  
+      - Select **Yes** if Safe drop transactions should get aggregated.  
+      - Select **Yes** if Bank drop transactions should get aggregated.  
+      - Select **Yes** to turn aggregation on for Statement posting.  
+      - Select **Yes** to create and process orders in parallel when statements are posted.  
+      - Enter the maximum orders to be processed in each batch job task.  
+3. Select **Save**.
 

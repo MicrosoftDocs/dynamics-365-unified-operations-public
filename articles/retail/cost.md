@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost configuration for distributed order management (DOM)
-description: This topic describes cost configuration for the distributed order management (DOM) functionality in Microsoft Dynamics 365 for Retail.
+description: This topic describes cost configuration for the distributed order management (DOM) functionality in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 
 Organizations consider multiple cost components to determine the optimal location to fulfill an order from. Some of these cost components are shipping cost, handling cost, and packaging cost. A combination of these costs is calculated to determine the fulfillment location.
 
-When the first iteration of distributed order management (DOM) in Microsoft Dynamics 365 for Retail optimized the assignment of orders to fulfillment locations, it factored in distance only. Although distance can be correlated with cost, it isn't the same as cost. For example, an overnight shipping method costs more than three-day shipping or seven-day shipping over the same distance.
+When the first iteration of distributed order management (DOM) in Dynamics 365 Retail optimized the assignment of orders to fulfillment locations, it factored in distance only. Although distance can be correlated with cost, it isn't the same as cost. For example, an overnight shipping method costs more than three-day shipping or seven-day shipping over the same distance.
 
 The cost configuration feature lets retailers define and configure additional cost components that will be calculated and factored in to determine the optimal location to fulfill order lines from.
 

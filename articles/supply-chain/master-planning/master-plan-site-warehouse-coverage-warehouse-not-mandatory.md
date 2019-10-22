@@ -51,9 +51,6 @@ The following graphic illustrates how master planning proceeds. The parameters t
 ![Demand for site and warehouse, warehouse not](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
 
--
-
-
 
 Additional resources
 --------

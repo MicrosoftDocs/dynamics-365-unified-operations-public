@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management, you can generate two reports that are related to maintenance requests. One report shows details, and the other report provides a list that can be used for planning and follow-up.
 
@@ -49,7 +49,7 @@ The **Maintenance request details** report shows various information that is rel
 
 The following illustration shows an example of the **Maintenance request details** report.
 
-![Figure 1](media/09-manage-maintenance-requests.png)
+![Maintenance request details report](media/09-manage-maintenance-requests.png)
 
 ## Create a Maintenance request list report
 
@@ -62,4 +62,4 @@ The **Maintenance request list** report shows a list of all maintenance requests
 
 The following illustration shows an example of the **Maintenance request list** report for all active maintenance requests.
 
-![Figure 2](media/10-manage-maintenance-requests.png)
+![Maintenance request list report](media/10-manage-maintenance-requests.png)

@@ -34,25 +34,20 @@ This procedure shows you how to enable warehouse workers to quickly find alterna
 
 
 ## Set up work exceptions
-1. Go to Warehouse management > Setup > Work > Work exceptions.
-2. Click New.
-    * It’s possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.  
-3. In the Work exception code field, type a value.
-    * Give the work exception a title to indicate what it’s used for. For example, Short picking manual.  
-4. In the Description field, type a value.
-5. In the Exception type field, select 'Short pick'.
-6. Select the Adjust inventory check box.
-    * This option means that inventory will automatically be adjusted to 0 at the short picked location.  
-7. In the Default adjustment type code field, enter or select a value.
-    * For example, in USMF you can select 'Remove Res Adj Out'.  
-8. In the Item reallocation field, select 'Manual'.
-    * If you select Manual, or Automatic and Manual, the warehouse worker needs to be enabled to use manual reallocation.  
+1. In the **Navigation pane**, go to **Warehouse management > Setup > Work > Work exceptions**.
+2. Click **New**. It’s possible to define several work exceptions with different item reallocation policies to enable the warehouse worker to choose one based on the needs of the shipment that they are processing.  
+3. In the **Work exception code** field, type a value. Give the work exception a title to indicate what it’s used for. For example, Short picking manual.  
+4. In the **Description** field, type a value.
+5. In the **Exception** type field, select 'Short pick'.
+6. Select the **Adjust inventory** check box. This option means that inventory will automatically be adjusted to 0 at the short picked location.  
+7. In the **Default adjustment type code** field, enter or select a value. For example, in USMF you can select 'Remove Res Adj Out'.  
+8. In the **Item reallocation** field, select 'Manual'. If you select Manual, or Automatic and Manual, the warehouse worker needs to be enabled to use manual reallocation.  
 
 ## Set up a worker to use manual item reallocation
 1. Close the page.
-2. Go to Warehouse management > Setup > Worker.
-3. Click Edit.
+2. In the **Navigation pane**, go to **Warehouse management > Setup > Worker**.
+3. Click **Edit**.
 4. In the list, select worker 24.
-5. Expand the Work section.
-6. Select Yes in the Allow manual item reallocation field.
+5. Expand the **Work** fastTab.
+6. Select 'Yes' in the **Allow manual item reallocation** field.
 

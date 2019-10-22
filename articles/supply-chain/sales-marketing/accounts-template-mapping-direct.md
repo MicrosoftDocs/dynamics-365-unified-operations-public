@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Synchronize accounts directly from Sales to customers in Finance and Operations 
-description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations. 
+title: Synchronize accounts directly from Sales to customers in Supply Chain Management 
+description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -31,18 +31,18 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize accounts directly from Sales to customers in Finance and Operations
+# Synchronize accounts directly from Sales to customers in Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Microsoft Dynamics 365 for Sales to Microsoft Dynamics 365 for Finance and Operations.
+This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
 
 ## Data flow in Prospect to cash
 
-The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Finance and Operations and Sales.  The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. The following illustration shows how the data is synchronized between Finance and Operations and Sales.
+The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales.  The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
 [![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -50,7 +50,7 @@ The Prospect to cash solution uses the Data integration feature to synchronize d
 
 To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying task are used to synchronize accounts from Sales to Finance and Operations:
+The following template and underlying task are used to synchronize accounts from Sales to Supply Chain Management:
 
 - **Name of the template in Data integration:** Accounts (Sales to Fin and Ops) - Direct
 - **Name of the task in the project:** Accounts - Customers
@@ -59,13 +59,13 @@ No synchronization tasks are required before Account/Customer synchronization ca
 
 ## Entity set
 
-| Sales    | Finance and Operations |
+| Sales    | Supply Chain Management |
 |----------|------------------------|
 | Accounts | Customers V2           |
 
 ## Entity flow
 
-Accounts are managed in Sales and synchronized to Finance and Operations as customers. The **Is Externally Maintained** property on these customers is set to **Yes** to track customers that originate from Sales. During invoicing, this information is used to filter invoices that are synchronized to Sales.
+Accounts are managed in Sales and synchronized to Supply Chain Management as customers. The **Is Externally Maintained** property on these customers is set to **Yes** to track customers that originate from Sales. During invoicing, this information is used to filter invoices that are synchronized to Sales.
 
 ## Prospect to cash solution for Sales
 
@@ -77,21 +77,21 @@ When the integration solution for Sales is applied, an upgrade script sets the *
 
 ## Preconditions and mapping setup
 
-- The **CustomerGroupId** mapping must be updated to a valid value in Finance and Operations. You can specify a default value, or you can set the value by using a value map.
+- The **CustomerGroupId** mapping must be updated to a valid value in Supply Chain Management. You can specify a default value, or you can set the value by using a value map.
 
     The default template value is **10**.
 
-- By adding the following mappings, you can help reduce the number of manual updates that are required in Finance and Operations. You can use a default value or a value map from, for example, **Country/Region** or **City**.
+- By adding the following mappings, you can help reduce the number of manual updates that are required in Supply Chain Management. You can use a default value or a value map from, for example, **Country/Region** or **City**.
 
-    - **SiteId** – A site is required in order to generate quotations and sales order lines in Finance and Operations. A default site can be taken either from the product, or from the customer from the order header.
+    - **SiteId** – A site is required in order to generate quotations and sales order lines in Supply Chain Management. A default site can be taken either from the product, or from the customer from the order header.
 
         The default template value is **1**.
 
-    - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Finance and Operations. A default warehouse can be taken either from the product, or from the customer from the order header in Finance and Operations.
+    - **WarehouseId** – A warehouse is required in order to process quotations and sales order lines in Supply Chain Management. A default warehouse can be taken either from the product, or from the customer from the order header in Supply Chain Management.
 
         The default template value is **13**.
 
-    - **LanguageId** – A language is required in order to generate quotations and sales orders in Finance and Operations. By default, the language from the order header from the customer is used.
+    - **LanguageId** – A language is required in order to generate quotations and sales orders in Supply Chain Management. By default, the language from the order header from the customer is used.
 
         The default template value is **en-us**.
 
@@ -103,7 +103,7 @@ When the integration solution for Sales is applied, an upgrade script sets the *
 The following illustrations show an example of a template mapping in Data integration. 
 
 > [!NOTE]
-> The mapping shows which field information will be synchronized from Sales to Finance and Operations.
+> The mapping shows which field information will be synchronized from Sales to Supply Chain Management.
 
 ![Template mapping in Data integration](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
@@ -112,11 +112,11 @@ The following illustrations show an example of a template mapping in Data integr
 
 [Prospect to cash](prospect-to-cash.md)
 
-[Synchronize accounts directly from Sales to customers in Finance and Operations](accounts-template-mapping-direct.md)
+[Synchronize accounts directly from Sales to customers in Supply Chain Management](accounts-template-mapping-direct.md)
 
-[Synchronize contacts directly from Sales to contacts or customers in Finance and Operations](contacts-template-mapping-direct.md)
+[Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
 
-[Synchronize sales order headers and lines directly from Finance and Operations to Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synchronize sales order headers and lines directly from Supply Chain Management to Sales](sales-order-template-mapping-direct-two-ways.md)
 
-[Synchronize sales invoice headers and lines directly from Finance and Operations to Sales](sales-invoice-template-mapping-direct.md)
+[Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
 

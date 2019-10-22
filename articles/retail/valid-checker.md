@@ -2,10 +2,10 @@
 # required metadata
 
 title: Retail transaction consistency checker
-description: This topic describes the retail transaction consistency checker functionality in Microsoft Dynamics 365 for Retail.
+description: This topic describes the retail transaction consistency checker functionality in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -35,9 +35,9 @@ ms.dyn365.ops.version: 10.0
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-This topic describes the retail transaction consistency checker functionality introduced in Microsoft Dynamics 365 for Finance and Operations version 8.1.3. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
+This topic describes the retail transaction consistency checker functionality. The consistency checker identifies and isolates inconsistent transactions before they are picked up by the statement posting process.
 
-When a statement is posted in Microsoft Dynamics 365 for Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
+When a statement is posted in Retail, posting can fail due to inconsistent data in the retail transaction tables. The data issue may be caused by unforeseen issues in the point of sale (POS) application, or if transactions were incorrectly imported from third-party POS systems. Examples of how these inconsistencies may appear include: 
 
 - The transaction total on the header table does not match the transaction total on the lines.
 - The line count on the header table does not match with the number of lines in the transaction table.
@@ -63,7 +63,10 @@ The **Validate store transactions** batch process checks the consistency of the 
 - **Gift card item** – Retail doesn't support the return of gift card items. However, the balance on a gift card can be cashed out. Any gift card item that is processed as a return line instead of a cash-out line fails the statement posting process. The validation process for gift card items helps guarantee that the only return gift card line items on the retail transaction tables are gift card cash-out lines.
 - **Negative price** – Validates that there are no negative price transaction lines.
 - **Item & Variant** – Validates that items and variants on the transaction lines exist in the item and variant master file.
-- **Tax amount** - Validate tax records match the tax amounts on the lines. 
+- **Tax amount** - Validates that tax records match the tax amounts on the lines.
+- **Serial number** - Validates that the serial number is present in the transaction lines for items that are controlled by serial number.
+- **Sign** - Validates that the sign on the quantity and the net amount are the same in all the transaction lines.
+- **Business date** - Validates that the financial periods for all the business dates for the retail transactions are open.
 
 ## Set up the consistency checker
 

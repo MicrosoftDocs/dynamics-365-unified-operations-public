@@ -36,7 +36,7 @@ ms.search.validFrom: 2016-11-30
 
 This topic provides information about the **Inventory on-hand** mobile workspace. This workspace helps you gain insights into reserved and available inventory anytime and anywhere.
 
-This mobile workspace is intended to be used with the Microsoft Dynamics 365 for Unified Operations mobile app.
+This mobile workspace is intended to be used with the Finance and Operations mobile app.
 
 ## Overview
 Typically, companies have multiple shipments and multiple receipts of inventory every day. These movements constantly change the on-hand inventory status. The **Inventory on-hand** mobile workspace lets you see the cross-company on-hand inventory status, so that you can gain the latest insights into inventory data on the mobile device of your choice. Regardless of whether you work in the warehouse, purchasing, sales, manufacturing, or management, or have other roles, you can access on-hand inventory data anytime and anywhere. 
@@ -61,13 +61,13 @@ Specifically, the mobile workspace provides these features:
     -   By available physical (This view represents available amount that has no reservations.)
 
 ## Prerequisites
-The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
+The prerequisites differ, based on the version of Supply Chain Management that has been deployed for your organization.
 
-### Prerequisites if you use Microsoft Dynamics 365 for Finance and Operations 
-If Microsoft Dynamics 365 for Finance and Operations has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Supply Chain Management
+If Supply Chain Management has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### Prerequisites if you use Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later
-If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
+### Prerequisites if you use Platform update 3 or later 
+If Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 
 
 <table>
 <thead>
@@ -101,7 +101,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with platform update 3 or 
 
 ## Download and install the mobile app
 
-Download and install the Dynamics 365 for Unified Operations mobile app:
+Download and install the Finance and Operations mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

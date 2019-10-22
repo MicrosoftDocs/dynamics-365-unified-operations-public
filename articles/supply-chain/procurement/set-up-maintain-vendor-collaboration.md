@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up and maintain vendor collaboration
-description: This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+description: This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
 author: mkirknel
 manager: AnnBe
 ms.date: 12/03/2018
@@ -36,28 +36,28 @@ ms.dyn365.ops.version: Version 1611
 
 The vendor collaboration interface exposes a limited set of information about purchase orders, invoices, and consignment stock to external vendor users. From this interface, a vendor can also reply to requests for quotation (RFQs), and view and edit basic company information.
 
-This topic explains how to set up vendor collaboration in Microsoft Dynamics 365 for Finance and Operations. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
+This topic explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
 > [!NOTE]
 > The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
 
 ## Set up vendor collaboration security roles
 
-A procurement professional or a vendor that has enough permissions can request that a contact person be provisioned as a user by enabling **Provision vendor user** on the contact person record. During the provisioning process, user permissions are selected for the new external user, and the new vendor user request is submitted. It's important that you correctly set up the user permissions that are available for selection in the vendor user request. Otherwise, vendors might be granted access to information that they should not have access to in Finance and Operations.
+A procurement professional or a vendor that has enough permissions can request that a contact person be provisioned as a user by enabling **Provision vendor user** on the contact person record. During the provisioning process, user permissions are selected for the new external user, and the new vendor user request is submitted. It's important that you correctly set up the user permissions that are available for selection in the vendor user request. Otherwise, vendors might be granted access to information that they should not have access to in Supply Chain Management.
 
 ### Set up the security roles that are available for selection when a new user request is used for a contact person
 
 1. Select **System administration** &gt; **Security** &gt; **External roles**.
 2. Select **New**, and then select a security role and the **Vendor** party role.
 
-You might want to add the **Vendor admin (external)** and **Vendor (external)** roles that are provided in Finance and Operations. Alternatively, you can use security roles that your company has created.
+You might want to add the **Vendor admin (external)** and **Vendor (external)** roles that are provided in Supply Chain Management. Alternatively, you can use security roles that your company has created.
 
 You should make the **Vendor admin (external)** role available only if vendors should be able to create new contacts, submit vendor collaboration user requests for new users and changes to user information, and handle those requests via a workflow.
 
 If you plan to manually set up vendor contacts and users, you can make just the **Vendor (external) role** available. This role will then be the only role that can be requested through a vendor user request.
 
 > [!NOTE]
-> The **SystemUser** role is automatically granted when you manually create a new user account in Finance and Operations. Therefore, you must remove that role and assign the **SystemExternalUser** role. If new user accounts are created via the workflow that is initiated by a vendor user request to provision a new user, one or more of the roles that you've set up for vendor collaboration and the **SystemExternalUser** role will be assigned.
+> The **SystemUser** role is automatically granted when you manually create a new user account. Therefore, you must remove that role and assign the **SystemExternalUser** role. If new user accounts are created via the workflow that is initiated by a vendor user request to provision a new user, one or more of the roles that you've set up for vendor collaboration and the **SystemExternalUser** role will be assigned.
 
 #### Vendor admin (external) security role
 
@@ -85,7 +85,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 ## Set up security roles that are used when prospective vendors are onboarded
 
-To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This rolle will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
+To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
 
 For information about how to onboard prospective vendors, see [Vendor onboarding](vendor-onboarding.md).
 
@@ -94,7 +94,7 @@ For information about how to onboard prospective vendors, see [Vendor onboarding
 1. Select **System administration** > **Security** > **External roles**.
 2. Select **New**, and then select a security role and the **Prospective vendor** party role.
 
-You should add the **Vendor prospect (external)** role that is provided in Finance and Operations.
+You should add the **Vendor prospect (external)** role that is provided in Supply Chain Management.
 
 The security role will grant access only to the new vendor registration wizard.
 
@@ -123,10 +123,10 @@ To set up this branching, create a new workflow of the **User Request Workflow (
 #### Branch to provision new users
 
 1. Assign an approval task to the person who is responsible for approving that new users should be granted access to vendor collaboration information.
-2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, and later versions, B2B users can be automatically exported to Azure AD. Use the predefined **Provision Azure AD B2B user**. For more information, see [Export B2B users to Azure AD](../../dev-itpro/sysadmin/implement-b2b.md).
+2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. B2B users can be automatically exported to Azure AD. Use the predefined **Provision Azure AD B2B user**. For more information, see [Export B2B users to Azure AD](../../dev-itpro/sysadmin/implement-b2b.md).
 3. Assign an approval task to the person who uploads to Azure. If an account isn't successfully created, this person rejects the task and ends the workflow. This approval task can be skipped if you've included the step that automatically exports new user accounts to Azure via the B2B application programming interface (API).
-4. Add an automated task that provisions a new user in Finance and Operations. Use the predefined **Automated provision user** task for this step.
-5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Finance and Operations. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portal URL%** tag. When the welcome email is generated, this tag which will be replaced by the URL of the Finance and Operations tenant.
+4. Add an automated task that provisions a new user. Use the predefined **Automated provision user** task for this step.
+5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Supply Chain Management. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portal URL%** tag. When the welcome email is generated, this tag which will be replaced by the URL of the Supply Chain Management tenant.
 
     > [!NOTE]
     > This workflow can be used in multiple scenarios that involve user onboarding. For example, it can be used when prospective vendors or contact persons require a vendor collaboration account. Therefore, you should phrase the email as a general statement that can be used for multiple purposes.

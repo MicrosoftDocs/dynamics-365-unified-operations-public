@@ -132,8 +132,7 @@ LCS Log Search lets you view data from all the components from a single portal. 
 
 -   Retail Modern POS
 -   Retail Cloud POS
--   Retail Hardware Station
--   Retail Server
+-   Retail Server (running on Retail Cloud Scale Unit)
 
 LCS Log Search does **not** include logs from the following Retail components:
 
@@ -141,6 +140,8 @@ LCS Log Search does **not** include logs from the following Retail components:
 -   Retail receipt designer
 -   Self-service installer for Retail Modern POS
 -   Self-service installer for Retail Hardware Station
+-   Retail Server (running on Retail Store Scale Unit)
+-   Retail Hardware Station
 
 ### Access LCS Log Search
 
@@ -153,7 +154,7 @@ To access LCS Log Search, follow these steps.
 5.  On the **Environment details** page, click **Environment Monitoring**.
 6.  On the **Environment monitoring** page, click **View raw logs**.
 7.  On the **Log Search** page, select one of the following queries:
-    -   **Retail client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Hardware Station
+    -   **Retail client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Server (running on Retail Cloud Scale Unit)
     -   **All logs** query, which includes data from Retail Server, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
 
 You can filter by the following criteria to refine your query:

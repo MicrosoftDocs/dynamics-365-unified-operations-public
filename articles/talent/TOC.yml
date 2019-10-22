@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.md
+  href: talent-welcome.md
   items:
   - name: Get started
     items:
@@ -8,6 +8,22 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: October 8, 2019
+        href: whats-new-talent-october-8-2019.md
+      - name: October 1, 2019
+        href: whats-new-talent-october-1-2019.md
+      - name: September 17, 2019
+        href: whats-new-talent-september-17-2019.md
+      - name: September 10, 2019
+        href: whats-new-talent-september-12-2019.md
+      - name: August 27, 2019
+        href: whats-new-talent-august-28-2019.md
+      - name: August 22, 2019
+        href: whats-new-talent-august-21-2019.md
+      - name: August 13, 2019
+        href: whats-new-talent-august-15-2019.md
+      - name: August 6, 2019
+        href: whats-new-talent-august-7-2019.md
       - name: July 30, 2019
         href: whats-new-talent-july-31-2019.md
       - name: July 23, 2019
@@ -18,24 +34,24 @@
         href: whats-new-talent-july-9-2019.md
       - name: July 2, 2019
         href: whats-new-talent-july-2-2019.md
-      - name: June 25, 2019
-        href: whats-new-talent-june-25-2019.md
-      - name: June 18, 2019
-        href: whats-new-talent-june-18-2019.md
-      - name: June 11, 2019
-        href: whats-new-talent-june-11-2019.md
-      - name: June 4, 2019
-        href: whats-new-talent-june-4-2019.md
-      - name: May 28, 2019
-        href: whats-new-talent-may-28-2019.md
-      - name: May 21, 2019
-        href: whats-new-talent-may-21-2019.md
-      - name: May 13, 2019
-        href: whats-new-talent-may-13-2019.md
-      - name: May 6, 2019
-        href: whats-new-talent-may-6-2019.md
       - name: What's new archives 2019
         items: 
+        - name: June 25, 2019
+          href: whats-new-talent-june-25-2019.md
+        - name: June 18, 2019
+          href: whats-new-talent-june-18-2019.md
+        - name: June 11, 2019
+          href: whats-new-talent-june-11-2019.md
+        - name: June 4, 2019
+          href: whats-new-talent-june-4-2019.md
+        - name: May 28, 2019
+          href: whats-new-talent-may-28-2019.md
+        - name: May 21, 2019
+          href: whats-new-talent-may-21-2019.md
+        - name: May 13, 2019
+          href: whats-new-talent-may-13-2019.md
+        - name: May 6, 2019
+          href: whats-new-talent-may-6-2019.md
         - name: April 30, 2019
           href: whats-new-talent-april-30-2019.md
         - name: April 25, 2019
@@ -206,6 +222,8 @@
         href: departments-jobs-positions.md
       - name: Set up the components of a job
         href: create-job.md
+      - name: Streamlined employee entry and navigation
+        href: streamlined-employee-entry.md
       - name: Create departments and include them in the department hierarchy
         href: create-department-add-department-hierarchy.md
       - name: Set up HR parameters across legal entities
@@ -375,12 +393,14 @@
         href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
   - name: Integration
     items:
+    - name: Data integration guidance for Dynamics 365 for Talent
+      href: data-integration.md
+    - name: Configure Common Data Service integration
+      href: hr-common-data-service-integration.md
     - name: Integrate with Dynamics 365 for Finance and Operations
       href: talent-financeandoperations-integration.md
     - name: Configure the payroll integration between Talent and Dayforce
       href: configure-payroll-integration.md
-    - name: Data integration guidance for Dynamics 365 for Talent
-      href: data-integration.md
     - name: Integration FAQ
       href: talent-fo-integration.md
     - name: Recurring data export using Azure Logic apps
@@ -419,6 +439,8 @@
       href: corehr-custom-fields.md  
   - name: Troubleshoot Talent
     items:
+    - name: Optimize performance with auto cleanup tasks
+      href: talent-batch-history-cleanup.md
     - name: Troubleshoot posting jobs to LinkedIn
       href: attract-troubleshoot-linkedin.md
     - name: Analytic reports aren't updated
