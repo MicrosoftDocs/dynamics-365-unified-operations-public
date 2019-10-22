@@ -65,10 +65,15 @@ To enrich a product page, follow these steps.
 
 ## Additional resources
 
-- [Modify an existing site page](modify-existing-page.md)
-- [Add a new site page](add-new-page.md)
-- [Select page layouts](select-page-layouts.md)
-- [Manage SEO metadata](manage-seo-metadata.md)
-- [Save, preview, and publish a page](save-preview-publish-page.md)
-- [Enrich a category landing page](enrich-category-page.md)
+[Modify an existing site page](modify-existing-page.md)
+
+[Add a new site page](add-new-page.md)
+
+[Select page layouts](select-page-layouts.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
+
+[Save, preview, and publish a page](save-preview-publish-page.md)
+
+[Enrich a category landing page](enrich-category-page.md)
 
