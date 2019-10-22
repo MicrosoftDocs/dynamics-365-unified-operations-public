@@ -38,11 +38,12 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 ## Budget register entry enhancements
 
-The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to determine a price per quantity.
-https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration
+The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to display a calculation of an amount devided by this quantity. See [budgeting overview](.../https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration.md) for details. 
 
-The **Budget register entries defaulting of amount type** feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line.
-https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration## Ability to export records from the Accounts payable invoice pool form
+The **Budget register entries defaulting of amount type** feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line. See [budgeting overview](.../https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration.md) for details. 
+
+
+## Ability to export records from the Accounts payable invoice pool form
 This feature lets you export records from the **Accounts payable invoice pool** form to Excel. This capability provides a productive environment to review and analyze the grid data in Excel. 
 
 ## Ledger settlement by user
