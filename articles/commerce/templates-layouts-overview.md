@@ -111,5 +111,6 @@ To start to use preset layouts, see [Work with preset layouts](work-with-layouts
 
 ## Additional resources
 
-- [Work with templates](work-with-templates.md)
-- [Work with preset layouts](work-with-layouts.md)
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
