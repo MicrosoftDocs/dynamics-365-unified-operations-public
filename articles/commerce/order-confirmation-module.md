@@ -70,10 +70,16 @@ When an order is placed during checkout, the order confirmation number and custo
 
 ## Additional resources
 
-- [Starter kit overview](starter-kit-overview.md)
-- [Add a container module to a page](add-container-module.md)
-- [Add a buy box to a page](add-buy-box.md)
-- [Add a cart module to a page](add-cart-module.md)
-- [Add a checkout module to a page](add-checkout-module.md)
-- [Create a header module](author-header-module.md)
-- [Create a footer module](author-footer-module.md)
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)
