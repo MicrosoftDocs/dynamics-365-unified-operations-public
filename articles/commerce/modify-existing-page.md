@@ -79,9 +79,14 @@ The following example shows how to modify the home page by changing the video th
 
 ## Additional resources
 
-- [Add a new site page](add-new-page.md)
-- [Select page layouts](select-page-layouts.md)
-- [Manage SEO metadata](manage-seo-metadata.md)
-- [Save, preview, and publish a page](save-preview-publish-page.md)
-- [Enrich a product page](enrich-product-page.md)
-- [Enrich a category landing page](enrich-category-page.md)
+[Add a new site page](add-new-page.md)
+
+[Select page layouts](select-page-layouts.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
+
+[Save, preview, and publish a page](save-preview-publish-page.md)
+
+[Enrich a product page](enrich-product-page.md)
+
+[Enrich a category landing page](enrich-category-page.md)
