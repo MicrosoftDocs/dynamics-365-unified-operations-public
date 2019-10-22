@@ -101,10 +101,16 @@ To add a buy box module to a new page and set the required properties, follow th
 
 ## Additional resources
 
-- [Starter kit overview](starter-kit-overview.md)
-- [Add a container module to a page](add-container-module.md)
-- [Add a cart module to a page](add-cart-module.md)
-- [Add a checkout module to a page](add-checkout-module.md)
-- [Create an order confirmation module](order-confirmation-module.md)
-- [Create a header module](author-header-module.md)
-- [Create a footer module](author-footer-module.md)
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create an order confirmation module](order-confirmation-module.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)
