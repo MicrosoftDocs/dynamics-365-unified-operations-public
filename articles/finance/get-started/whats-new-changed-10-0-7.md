@@ -36,6 +36,8 @@ ms.dyn365.ops.version: 10.0.7
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of XX.X.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-and-ops/get-started/whats-new-changed-10-0-7.md#additional-resources).
 
+## Budget register entry enhancements
+
 The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to determine a price per quantity.
 https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration
 
@@ -43,9 +45,10 @@ The **Budget register entries defaulting of amount type** feature enables the de
 https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration## Ability to export records from the Accounts payable invoice pool form
 This feature lets you export records from the **Accounts payable invoice pool** form to Excel. This capability provides a productive environment to review and analyze the grid data in Excel. 
 
-## Financial reporting retention feature
+## Ledger settlement by user
 
-The **Ledger settlement by user** feature allows processing ledger settlement by user ID.  When enabled, a user will only see records in Advanced ledger settlement that have no user ID (not marked for settlement) or have their user ID (records they marked for settlement). Only the records marked by that user will be processed when choosing Settle marked transactions. A new button, Unmark for selected users, was also added to unmark records marked for settlement but not processed.  This could be used after a user leaves an organization. 
+Ledger settlement will now settle marked transactions by user.  When opening the page, only transactions marked by the user for settlement or transactions not marked by anyone will display. Also, a new button has been introduced to unmark transaction by user ID.  This will allow an accounting manager to unmark transactions for a user that left on vacation before finishing the settlement or for a user who has left the organization.  The action will free up those transactions for another user to mark them for settlement. 
+
 
 ## Forecast position reports (Public Sector)
 
