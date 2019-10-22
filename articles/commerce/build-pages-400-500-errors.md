@@ -81,6 +81,8 @@ To set up a redirect for the status code error response page, follow these steps
 
 ## Additional resources
 
-- [Work with templates](work-with-templates.md)
-- [Add a new site page](add-new-page.md)
-- [Create a page URL](create-page-url.md)
+[Work with templates](work-with-templates.md)
+
+[Add a new site page](add-new-page.md)
+
+[Create a page URL](create-page-url.md)
