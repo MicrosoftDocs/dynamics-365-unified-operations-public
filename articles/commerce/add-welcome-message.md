@@ -61,9 +61,13 @@ The welcome message will now appear at the top of every site page that uses the 
 
 ## Additional resources
 
-- [Add a logo](add-logo.md)
-- [Select a site theme](select-site-theme.md)
-- [Add a favicon](add-favicon.md)
-- [Add a copyright notice](add-copyright-notice.md)
-- [Add languages to your site](add-languages-to-site.md)
+[Add a logo](add-logo.md)
+
+[Select a site theme](select-site-theme.md)
+
+[Add a favicon](add-favicon.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
 
