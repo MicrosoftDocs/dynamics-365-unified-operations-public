@@ -79,5 +79,6 @@ Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and brows
 
 ## Additional resources
 
-- [Default category landing page and search results page](category-search-page-overview.md)
-- [Manage SEO metadata](manage-seo-metadata.md)
+[Default category landing page and search results page](category-search-page-overview.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
