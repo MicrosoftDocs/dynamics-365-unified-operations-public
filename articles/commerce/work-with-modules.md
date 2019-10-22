@@ -121,10 +121,15 @@ To configure a container module on a page, follow these steps.
 
 ## Additional resources
 
-- [Templates and layouts overview](templates-layouts-overview.md)
-- [Work with templates](work-with-templates.md)
-- [Work with preset layouts](work-with-layouts.md)
-- [Work with fragments](work-with-fragments.md)
-- [Add a container module to a page](add-container-module.md)
-- [Add content placement modules to a page](add-content-placement-modules.md)
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
 
