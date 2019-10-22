@@ -110,5 +110,6 @@ After you've previewed the changes to your preset layout, follow one of these st
 
 ## Additional resources
 
-- [Templates and layouts overview](templates-layouts-overview.md)
-- [Work with templates](work-with-templates.md)
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
