@@ -64,6 +64,8 @@ After you create a fragment for your script code, it can be reused across all pa
 
 ## Additional resources
 
-- [Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
-- [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
-- [Manage Content Security Policy (CSP)](manage-csp.md)
+[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)
