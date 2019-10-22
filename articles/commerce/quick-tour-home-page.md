@@ -73,6 +73,8 @@ The main section of the home page can highlight products, categories, or promoti
 
 ## Additional resources
 
-- [Quick tour of product details pages](quick-tour-pdp.md)
-- [Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
-- [Quick tour of account management](quick-tour-account-management.md)
+[Quick tour of product details pages](quick-tour-pdp.md)
+
+[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+
+[Quick tour of account management](quick-tour-account-management.md)
