@@ -106,6 +106,8 @@ For more information about how to author a checkout page, see [Add a checkout mo
 
 ## Additional resources
 
-- [Quick tour of the home page](quick-tour-home-page.md)
-- [Quick tour of product details pages](quick-tour-pdp.md)
-- [Quick tour of account management](quick-tour-account-management.md)
+[Quick tour of the home page](quick-tour-home-page.md)
+
+[Quick tour of product details pages](quick-tour-pdp.md)
+
+[Quick tour of account management](quick-tour-account-management.md)
