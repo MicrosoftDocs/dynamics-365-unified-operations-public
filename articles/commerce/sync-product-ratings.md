@@ -133,7 +133,10 @@ The following illustration shows an example of product ratings in call center ch
 
 ## Additional resources
 
-- [Ratings and reviews overview](ratings-reviews-overview.md)
-- [Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
-- [Manage ratings and reviews](manage-reviews.md)
-- [Configure ratings and reviews](configure-ratings-reviews.md)
+[Ratings and reviews overview](ratings-reviews-overview.md)
+
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
+[Manage ratings and reviews](manage-reviews.md)
+
+[Configure ratings and reviews](configure-ratings-reviews.md)
