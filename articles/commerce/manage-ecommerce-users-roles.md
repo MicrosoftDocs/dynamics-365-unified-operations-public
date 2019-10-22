@@ -70,6 +70,8 @@ After your site is created, only users who are in the security groups that are a
 
 ## Additional resources
 
-- [Add script code to site pages to support telemetry](add-telemetry.md)
-- [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
-- [Manage Content Security Policy (CSP)](manage-csp.md)
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)
