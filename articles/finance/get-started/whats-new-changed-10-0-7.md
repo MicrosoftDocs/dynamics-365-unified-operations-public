@@ -34,13 +34,13 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of XX.X.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-and-ops/get-started/whats-new-changed-10-0-7.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of XX.X.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md#additional-resources).
 
 ## Budget register entry enhancements
 
-The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to display a calculation of an amount devided by this quantity. See [budgeting overview](.../https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration.md) for details. 
+The **Budget register entries for quantity only** feature enables the ability to post a budget register entry with quantity-only amounts. For example, you could post a budget entry of 32 quantity with a price of zero, resulting in an amount of zero. You may then use this quantity within the context of a financial reporting report to display a calculation of an amount devided by this quantity. See [budgeting overview](../budgeting/basic-budgeting-overview-configuration.md) for details. 
 
-The **Budget register entries defaulting of amount type** feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line. See [budgeting overview](.../https://docs.microsoft.com/en-us/dynamics365/finance/budgeting/basic-budgeting-overview-configuration.md) for details. 
+The **Budget register entries defaulting of amount type** feature enables the defaulting of amount type to revenue or expense based on the main account of the budget line. See [budgeting overview](../budgeting/basic-budgeting-overview-configuration.md) for details. 
 
 
 ## Ability to export records from the Accounts payable invoice pool form
