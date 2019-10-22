@@ -100,9 +100,14 @@ To add custom navigation options to your navigation menu, follow these steps.
 
 ## Additional resources
 
-- [Templates and layouts overview](templates-layouts-overview.md)
-- [Work with templates](work-with-templates.md)
-- [Work with preset layouts](work-with-layouts.md)
-- [Work with fragments](work-with-fragments.md)
-- [Work with modules](work-with-modules.md)
-- [Create a page URL](create-page-url.md)
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Work with modules](work-with-modules.md)
+
+[Create a page URL](create-page-url.md)
