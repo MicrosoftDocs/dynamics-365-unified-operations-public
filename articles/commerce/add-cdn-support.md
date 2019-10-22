@@ -145,10 +145,16 @@ Your CDN should now be correctly configured so that it can be used with your Com
 
 ## Additional resources
 
-- [Online store overview](online-store-overview.md)
-- [Create an e-Commerce site](create-ecommerce-site.md)
-- [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-- [Associate an online site with a channel](associate-site-online-store.md)
-- [Configure your domain name](configure-your-domain-name.md)
-- [Enable location-based store detection](enable-store-detection.md)
-- [Set up custom pages for user logins](custom-pages-user-logins.md)
+[Online store overview](online-store-overview.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Enable location-based store detection](enable-store-detection.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
