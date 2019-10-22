@@ -126,3 +126,7 @@ If you open the base definition file for the script injector module, you can see
 You can now change the myAnalytics.tsx file as you require. For example, you can add more configuration fields.
 
 After the custom script injector module is deployed to a Dynamics 365 Commerce environment, it appears in the authoring tools.
+
+## Additional resources
+
+[Online channel extensibility overview](overview.md)
