@@ -174,13 +174,13 @@ Take note that the minimum system requirements listed below are the bare minimum
 > The following are the minimum system requirements for Retail Store Scale Unit.  Both these and the recommended requirements are the minimum possible for testing and basic functionality.  It is crucial to perform performance testing and validate that the hardware used for Retail Store Scale Unit meets expectations.
 
 - 4 GB of RAM
-- 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
+- 1.6 GHz i5 (or equivalent) minimum CPU speed per core (Two cores are the minimum.)
 - At least 15 GB of free space (The channel database can require a large amount of space.)
 
 ### Recommended system requirements
 
 - 6 GB of RAM
-- 2.4 GHz i7 (or equivalent) peak CPU speed per core (Four cores are recommended.)
+- 2.4 GHz i7 (or equivalent) minimum CPU speed per core (Four cores are recommended.)
 - At least 20 GB of free space (The channel database can require a large amount of space.)
 
 It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
