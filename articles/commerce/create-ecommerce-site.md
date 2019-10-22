@@ -63,10 +63,16 @@ After your site is created, you can verify that it is associated with your onlin
 
 ## Additional resources
 
-- [Online store overview](online-store-overview.md)
-- [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
-- [Associate an online site with a channel](associate-site-online-store.md)
-- [Configure your domain name](configure-your-domain-name.md)
-- [Add support for a content delivery network (CDN)](add-cdn-support.md)
-- [Enable location-based store detection](enable-store-detection.md)
-- [Set up custom pages for user logins](custom-pages-user-logins.md)
+[Online store overview](online-store-overview.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
