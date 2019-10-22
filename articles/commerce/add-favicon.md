@@ -65,9 +65,13 @@ To add a favicon to your site, use the same procedure that is used to add any ty
 
 ## Additional resources
 
-- [Add a logo](add-logo.md)
-- [Select a site theme](select-site-theme.md)
-- [Add a welcome message](add-welcome-message.md)
-- [Add a copyright notice](add-copyright-notice.md)
-- [Add languages to your site](add-languages-to-site.md)
+[Add a logo](add-logo.md)
+
+[Select a site theme](select-site-theme.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
 
