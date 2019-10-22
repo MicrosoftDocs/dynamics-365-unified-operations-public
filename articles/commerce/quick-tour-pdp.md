@@ -79,6 +79,8 @@ If marketing content is unique to a specific product, any marketing module can b
 
 ## Additional resources
 
-- [Quick tour of the home page](quick-tour-home-page.md)
-- [Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
-- [Quick tour of account management](quick-tour-account-management.md)
+[Quick tour of the home page](quick-tour-home-page.md)
+
+[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+
+[Quick tour of account management](quick-tour-account-management.md)
