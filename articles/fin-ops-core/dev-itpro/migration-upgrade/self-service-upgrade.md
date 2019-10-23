@@ -188,7 +188,7 @@ There are three possible outcomes when the timer reaches 0 (zero):
 - If you've run the **Data Upgrade** step but haven't yet committed the upgrade, no actions are performed, and no environments are deleted. You can remain in this state until you commit or do a rollback. If you decide to do a rollback, and the timer is at 0 (zero), the new environment will be deleted.  
 
 > [!IMPORTANT] 
-> - **Rollback however is only available, at maximum, for 30 calendar days.  This is due to the nature of point-in-time restore.**  If you try to perform a rollback after 30 days have passed, you will be forced to commit the upgrade, delete the environment, and redeploy on the prior version.
+> **Rollback however is only available, at maximum, for 30 calendar days.  This is due to the nature of point-in-time restore.**  If you try to perform a rollback after 30 days have passed, you will be forced to commit the upgrade, delete the environment, and redeploy on the prior version.
 
 The original environment is queued for deletion only after you commit the upgrade as a success.
 
