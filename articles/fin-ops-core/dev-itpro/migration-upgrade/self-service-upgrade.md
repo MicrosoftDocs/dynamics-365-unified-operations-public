@@ -104,7 +104,7 @@ When you've completed the code upgrade and have been able to do an end-to-end da
 Before you begin your upgrade, we highly recommend that you make sure that your sandbox environment has the latest production data. If the data set is up to date, you can have more confidence that the upgrade will work in the production environment. To complete this step, use the [Refresh for training purposes](../database/dbmovement-scenario-general-refresh.md) tutorial.
 
 > [!IMPORTANT]
-> - Changing Integrated Software Vendor (ISV) solutions, including changing the ISV License Code / Metadata, during upgrade is strictly not supported.  If you are installing a new ISV solution, or removing an existing ISV solution, you should do this before or after your upgrade.  It cannot be performed during self-service upgrade.  
+> Changing Integrated Software Vendor (ISV) solutions, including changing the ISV license code/metadata, during upgrade is strictly not supported.  If you are installing a new ISV solution, or removing an existing ISV solution, you should do this before or after your upgrade.  It cannot be performed during self-service upgrade.  
 
 ### Begin the upgrade
 
