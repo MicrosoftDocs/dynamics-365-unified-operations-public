@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,9 +34,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. Read [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for more information. 
 
-Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the following resources:
-- [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [What's new for Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
+Regulatory updates are features that are implemented to support new or changed country-specific legislation. For additional information about planned and released country-specific features, refer to the [Dynamics 365 and Power Platform release plans](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
@@ -78,7 +76,7 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brazil     |   SPED ECD Layout 7    |
 |      April 2019          |   10.0.3      | Brazil      |   SPED ECF - Layout 5 for 2019    |
 |      April 2019          |   10.0.3      | India      |   Adjustment of tax in customs currency in BOE instead of doing in transaction currency    |
-|      April 2019          |   10.0.3      | India      |   Calculation of tax  in customs currency in BOE instead of doing in transaction currency)    |
+|      April 2019          |   10.0.3      | India      |   Calculation of tax  in customs currency in BOE instead of doing in transaction currency   |
 |      April 2019          |   10.0.3, 10.02HF, 10.0.1HF      | India      |   IEC number format change    |
 |      April 2019          |   10.0.3      | Lithuania      |   Lithuania i.SAF report let's user define system Sales tax codes in association with legal tax codes)    |
 |      April 2019          |   10.0.3      | Poland      |   SAF invoices (JPK_FA) v.2 from 1st of July 2019    |
