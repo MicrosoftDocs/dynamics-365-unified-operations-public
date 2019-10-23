@@ -5,7 +5,7 @@ title: What's new or changed in Platform update 30 for Finance and Operations ap
 description: This topic describes features that are new or changed in Platform update 30 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -62,7 +62,7 @@ New license types are being made available to new customers. For customers on th
 ## Additional resources
 
 ### Platform update 30 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
+For information about the bug fixes included in each of the updates that are part of Platform update 30, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details/1092654?kb=4520346&bugId=369591&dbType=3&qc=a1f7377056b8d98314a62c745da88565f03531d15de24c4a538132d68118059c).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
