@@ -69,3 +69,22 @@ The following example shows a module mock data file that is used to mock the **c
     "typeName": "productFeature"
 }
 ```
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)

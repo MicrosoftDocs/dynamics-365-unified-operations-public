@@ -52,5 +52,6 @@ The following table provides a summary of terms that you should be familiar with
 
 ## Additional resources
 
-- [Add and manage content](add-manage-content.md)
-- [Document states overview](document-states-overview.md)
+[Add and manage content](add-manage-content.md)
+
+[Document states and lifecycle](document-states-overview.md)

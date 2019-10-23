@@ -62,3 +62,9 @@ Themes contain sitewide Cascading Style Sheets (CSS) style definitions. They als
 ## Script injectors
 
 The online platform provides a built-in script injector module that makes it easy to inject scripts into the head, bodybegin, and so on, from the admin tool. Script injectors make it easy to add scripts such as third-party analytics. You might have advanced requirements to use custom script injector modules to inject custom HTML into your online site.
+
+## Additional resources
+
+[Architectural overview](architectural-overview.md)
+
+[CLI command reference](cli-command-reference.md)

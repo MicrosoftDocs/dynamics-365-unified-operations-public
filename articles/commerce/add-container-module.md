@@ -116,3 +116,23 @@ To add a container player module to a new page and set the required properties, 
 1. Add two more feature modules to the container module.
 1. Save and preview the page. You should now see three feature modules that appear side by side.
 1. After you've achieved the layout that you want, check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a carousel module to a page](add-carousel.md)
+
+[Add a content rich block module to a page](add-content-rich-block.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)

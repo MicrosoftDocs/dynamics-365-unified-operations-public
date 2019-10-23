@@ -211,3 +211,23 @@ To preview the page in a local web browser, follow these steps.
     ```
 
 2. In a web browser, open the following URL to view the module: `https://localhost:4000/page?mock=campaignContainerMock`. Notice the name of the page mock in the **mock=** query string parameter.
+
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a page container module](create-page-containers.md)

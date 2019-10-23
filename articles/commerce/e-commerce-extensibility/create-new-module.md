@@ -68,3 +68,23 @@ To preview the new module in a local web browser, follow these steps.
 ## Module naming conventions
 
 You should use camel case (camelCase) for module names. You should also use whole words whenever you can.
+
+## Additional resources
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)

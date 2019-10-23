@@ -49,7 +49,7 @@ After you create a fragment for your script code, it can be reused across all pa
 1. Go to **Fragments \> New page fragment**.
 2. Select **External Script**, enter a name for the fragment, and then select **OK**.
 3. In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.
-4. In the property pane on the right, add your client-side script, and set other configuration options as you require. For information about how to configure the module, see [External Script module](http://).
+4. In the property pane on the right, add your client-side script, and set other configuration options as you require.
 
 ## Add the fragment to templates
 
@@ -62,4 +62,10 @@ After you create a fragment for your script code, it can be reused across all pa
 > [!NOTE]
 > After you've finished, you must publish the fragment and the master template. 
 
-For more information about how to add script code to master templates, see [Add script to master templates](http://).
+## Additional resources
+
+[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)
