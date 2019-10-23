@@ -78,6 +78,20 @@ This tool is useful if you want to view the impact of having **Action messages**
 
 By selecting a master planning job in the drop-down menu, you can view an additional master planning run in the Gantt chart and compare the two jobs.
 
+**BOM level displayed**
+
+Note that due to the internal usage Bom levels are shown differently for Coverage planning, Delays and Firming.
+
+- Coverage planning: BOM levels are shown normally, as they are calculated top down. E.g. BOM level 0, 1, 2
+- Delays: Bom levels are shown as Coverage planning BOM level times -1 (negative). E.g. Bom level  -2, -1, 0
+- Firming: Bom level are shown as 999 minus Coverage planning BOM level. E.g. Bom level 999, 998, 997
+
+| Bom level example | End item | Sub component | Raw material |
+| --- | --- | --- | --- |
+| Coverage planning BOM level shown | 0 | 1 | 2 |
+| Delays BOM level shown | 0 | -1 | -2 |
+| Firming BOM level shown | 999 | 998 | 997 |
+
 ### Visualize progress
 
 If you view a master planning job that is currently running, the progress is shown with colors in the Gantt. The following colors apply to the blue theme, they will be different for other color themes.
