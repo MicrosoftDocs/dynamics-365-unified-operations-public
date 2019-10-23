@@ -69,7 +69,11 @@ If you choose to upgrade your sandbox environment to version 8.1.3 with PU 23 an
 | 7.3 with PU 24 – PU 26<br>10.0.0 with PU 24 – 10.0.2 with PU 26 | Week of May 13, 2019 | Week of May 27, 2019 |
 | 7.3 with PU 25 – PU 27<br>10.0.1 with PU 25 – 10.0.3 with PU 27 | Week of June 10, 2019 | Week of June 24, 2019 |
 | 7.3 with PU 26 – PU 28<br>10.0.2 with PU 26 – 10.0.4 with PU 28 | Week of July 8, 2019 | Week of July 29, 2019 |
-| 7.3 with PU 27 – PU 29<br>10.0.3 with PU 27 – 10.0.5 with PU 29 | Week of October 7, 2019 | Week of October 21, 2019 |
+| 7.3 with PU 27 – PU 29<br>10.0.3 with PU 27 – 10.0.5 with PU 29 | Week of September 17, 2019 | Week of September 30, 2019 |
+| 7.3 with PU 28 – PU 30<br>10.0.4 with PU 28 – 10.0.6 with PU 30 | Week of October 11, 2019 | Week of October 28, 2019 |
+| 7.3 with PU 29 – PU 31<br>10.0.5 with PU 29 – 10.0.7 with PU 31 | Week of November 29, 2019 | Week of December 30, 2019 |
+| 7.3 with PU 30 – PU 32<br>10.0.6 with PU 30 – 10.0.8 with PU 32 | Week of January 17, 2020 | Week of January 27, 2020 |
+| 7.3 with PU 31 – PU 33<br>10.0.7 with PU 31 – 10.0.9 with PU 33 | Week of March 13, 2020 | Week of March 30, 2020 |
 
 ## Refactor your customizations as extensions
 
@@ -98,6 +102,9 @@ When you've completed the code upgrade and have been able to do an end-to-end da
 ### Prerequisite
 
 Before you begin your upgrade, we highly recommend that you make sure that your sandbox environment has the latest production data. If the data set is up to date, you can have more confidence that the upgrade will work in the production environment. To complete this step, use the [Refresh for training purposes](../database/dbmovement-scenario-general-refresh.md) tutorial.
+
+> [!IMPORTANT]
+> - Changing Integrated Software Vendor (ISV) solutions, including changing the ISV License Code / Metadata, during upgrade is strictly not supported.  If you are installing a new ISV solution, or removing an existing ISV solution, you should do this before or after your upgrade.  It cannot be performed during self-service upgrade.  
 
 ### Begin the upgrade
 
@@ -178,7 +185,10 @@ There are three possible outcomes when the timer reaches 0 (zero):
 
 - If you haven't yet started the **Data Upgrade** step, the new environment is queued for deletion. In this scenario, the upgrade-in-progress environment was provisioned, and customizations and packages were optionally applied. However, no data was upgraded, and the original environment never incurred downtime.
 - If you ran the **Data Upgrade** step but then later performed a rollback, the new environment is queued for deletion. In this scenario, the old environment is the primary environment, because the data upgrade was rolled back.
-- If you've run the **Data Upgrade** step but haven't yet committed the upgrade, no actions are performed, and no environments are deleted. You can remain in this state until you commit or do a rollback. If you decide to do a rollback, and the timer is at 0 (zero), the new environment will be deleted.
+- If you've run the **Data Upgrade** step but haven't yet committed the upgrade, no actions are performed, and no environments are deleted. You can remain in this state until you commit or do a rollback. If you decide to do a rollback, and the timer is at 0 (zero), the new environment will be deleted.  
+
+> [!IMPORTANT] 
+> - **Rollback however is only available, at maximum, for 30 calendar days.  This is due to the nature of point-in-time restore.**  If you try to perform a rollback after 30 days have passed, you will be forced to commit the upgrade, delete the environment, and redeploy on the prior version.
 
 The original environment is queued for deletion only after you commit the upgrade as a success.
 
@@ -188,7 +198,7 @@ After the data upgrade package is applied, you can review the environment, and y
 
 <img src="media/UpgradeAutomation/10_CommitRollback.png" width="700px" alt="Commit option on the Upgrade menu" />
 
-If the business validation fails, you can select **Rollback** on the **Upgrade** menu. This option will do a point-in-time restore of the database, swap the database connection back to your original sandbox environment, and bring your original sandbox environment back online. The sandbox environment will then be back in its previous state.
+If the business validation fails, you can select **Rollback** on the **Upgrade** menu. This option will do a point-in-time restore of the database, swap the database connection back to your original sandbox environment, and bring your original sandbox environment back online. The sandbox environment will then be back in its previous state.  Be aware, as stated above, that rollback is only possible for up to 30 calendar days.
 
 ### Post-upgrade actions
 
