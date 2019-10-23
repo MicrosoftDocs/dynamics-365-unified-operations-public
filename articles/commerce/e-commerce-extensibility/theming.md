@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 
-# Overview
+## Overview
 
 Dynamics 365 Commerce lets you apply a Sassy Cascading Style Sheets (SCSS) theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and also a campaign theme that is applied only to a subset of pages on the site.
 
