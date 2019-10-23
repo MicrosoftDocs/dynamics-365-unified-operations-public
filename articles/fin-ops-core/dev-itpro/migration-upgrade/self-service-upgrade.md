@@ -104,7 +104,7 @@ When you've completed the code upgrade and have been able to do an end-to-end da
 Before you begin your upgrade, we highly recommend that you make sure that your sandbox environment has the latest production data. If the data set is up to date, you can have more confidence that the upgrade will work in the production environment. To complete this step, use the [Refresh for training purposes](../database/dbmovement-scenario-general-refresh.md) tutorial.
 
 > [!IMPORTANT]
-> Changing Integrated Software Vendor (ISV) solutions, including changing the ISV license code/metadata, during upgrade is strictly not supported.  If you are installing a new ISV solution, or removing an existing ISV solution, you should do this before or after your upgrade.  It cannot be performed during self-service upgrade.  
+> Changing Integrated Software Vendor (ISV) solutions, including changing the ISV license code/metadata, during upgrade is strictly not supported. If you are installing a new ISV solution or removing an existing ISV solution, you should do this before or after your upgrade. It cannot be performed during self-service upgrade.  
 
 ### Begin the upgrade
 
@@ -136,7 +136,7 @@ During this time, your original sandbox environment is left untouched. There is 
 
 After staging deployment is completed, go back to the environment details page, and switch to the **Upgrade in progress** view. In this view, you will now see an **Upgrade** menu.
 
-The **Upgrade** menu includes an **Apply updates** option. You can select this option to apply your software deployable packages to the new environment. These packages include any binary packages, whether whether they are from an independent software vendor (ISV) solution, your own customization packages, or platform binary update packages.
+The **Upgrade** menu includes an **Apply updates** option. You can select this option to apply your software deployable packages to the new environment. These packages include any binary packages, whether they are from an independent software vendor (ISV) solution, your own customization packages, or platform binary update packages.
 
 **We highly recommend** that you apply the latest platform update as your first step. If you're upgrading to version 8.1, we recommend that you get the latest binary update package, such as 8.1.3. This package will also include the latest platform update. In this way, you help guarantee that you have the latest hotfixes that are available and help reduce errors later in the process.
 
@@ -188,7 +188,7 @@ There are three possible outcomes when the timer reaches 0 (zero):
 - If you've run the **Data Upgrade** step but haven't yet committed the upgrade, no actions are performed, and no environments are deleted. You can remain in this state until you commit or do a rollback. If you decide to do a rollback, and the timer is at 0 (zero), the new environment will be deleted.  
 
 > [!IMPORTANT] 
-> **Rollback however is only available, at maximum, for 30 calendar days.  This is due to the nature of point-in-time restore.**  If you try to perform a rollback after 30 days have passed, you will be forced to commit the upgrade, delete the environment, and redeploy on the prior version.
+> **Rollback is only available, at maximum, for 30 calendar days. This is due to the nature of point-in-time restore.**  If you try to perform a rollback after 30 days have passed, you will be forced to commit the upgrade, delete the environment, and redeploy on the previous version.
 
 The original environment is queued for deletion only after you commit the upgrade as a success.
 
