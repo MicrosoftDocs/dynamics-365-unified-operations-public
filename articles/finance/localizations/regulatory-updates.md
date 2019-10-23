@@ -50,13 +50,19 @@ For the latest regulatory update plans, refer to the following table.
 
 |Planned release date|Release version|Country|Regulatory update|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
-|      August 2019          |   10.0.6(PEAP)      | Brazil      |   DRCST declaration SC   |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
-|      August 2019          |   10.0.6(PEAP)      | Brazil      |   Tax statement CAT 42/18    |
-|      August 2019          |   10.0.6(PEAP)      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
+|      November 2019          |   10.0.7(PEAP)      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2019: Quarterly VAT communication  ("Lipe 2018")    |
+|      November 2019          |   10.0.7(PEAP)      | Italy      |   Retail - Managing customer information in POS |
+|      November 2019          |   10.0.7(PEAP)      | Italy      |   Retail - Printing customer information in fiscal receipt | 
+|      November 2019          |   10.0.7(PEAP)      | Japan      |   Consumption rate change and reduced tax rate is introduced (invoice layouts) | 
+|      November 2019          |   10.0.7(PEAP)      | Mexico      |   Updating Rule 2.7.2.9 - Using the time zone of ZIP code of the establishment that is issuing the CFDI document | 
+|      November 2019          |   10.0.7(PEAP)      | United Kingdom     |   Making Tax Digital - VAT return report creation for companies reporting as VAT group within the same system database v.10 | 
+|      November - August 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.20    |
+|      November - August 2019          |   10.0.7(PEAP), 10.0.6      | Brazil      |   DRCST declaration SC   |
+|      November - August 2019          |   10.0.7(PEAP), 10.0.6      | Italy      |   Changes in VAT management by D.L. 119 of 23 Oct 2018 - Dynamics 365 for Finance and Operations  |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.10    |
+|      August 2019          |   10.0.6, 10.0.5HF      | Brazil     |   New legislation is implemented by RJ state relating  to the EFD-ICMS/IPI. The Resolution 13/19 of Rio de Janeiro (RJ) implementation is  for “Special procedures to be applied on Exoneration     |
+|      August 2019          |   10.0.6      | Brazil      |   Tax statement CAT 42/18    |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Consumption tax rate change and reduced tax rate is introduced    |
 |      August - July 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Spain      |   Spain: SII: Validation rules change from October 1, 2019    |
 |      July 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brazil      |   A new version of technical notes for NF-e: NT 2019.001 Version 1.00  |
 |      July 2019          |   10.0.5      | Brazil      |   Sped contributions practical guide 1.31. new guidance    |
