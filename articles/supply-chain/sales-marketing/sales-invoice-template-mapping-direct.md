@@ -46,7 +46,7 @@ The Prospect to cash solution uses the Data integration feature to synchronize d
 
 To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize sales invoice headers and lines from Finance and Operations to Sales:
+The following template and underlying tasks are used to synchronize sales invoice headers and lines from Supply Chain Management to Sales:
 
 - **Name of the template in Data integration:** Sales Invoices (Fin and Ops to Sales) - Direct
 - **Names of the tasks in the Data integration project:**
