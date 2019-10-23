@@ -36,7 +36,7 @@ This topic provides a walkthrough of the features that are related to Goods and 
 
 ## Prerequisites
 
-- Set up GST for India in Finance and Operations. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
 - Configure Retail channel components. To enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
 ## India tax entities for Retail
