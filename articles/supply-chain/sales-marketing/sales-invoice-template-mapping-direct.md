@@ -38,7 +38,7 @@ This topic discusses the templates and underlying tasks that are used to synchro
 
 ## Data flow in Prospect to cash
 
-The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Finance and Operations and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
+The Prospect to cash solution uses the Data integration feature to synchronize data across instances of Supply Chain Management and Sales. The Prospect to cash templates that are available with the Data integration feature enable the flow of data about accounts, contacts, products, sales quotations, sales orders, and sales invoices between Supply Chain Management and Sales. The following illustration shows how the data is synchronized between Supply Chain Management and Sales.
 
 [![Data flow in Prospect to cash](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -46,7 +46,7 @@ The Prospect to cash solution uses the Data integration feature to synchronize d
 
 To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
-The following template and underlying tasks are used to synchronize sales invoice headers and lines from Finance and Operations to Sales:
+The following template and underlying tasks are used to synchronize sales invoice headers and lines from Supply Chain Management to Sales:
 
 - **Name of the template in Data integration:** Sales Invoices (Fin and Ops to Sales) - Direct
 - **Names of the tasks in the Data integration project:**
