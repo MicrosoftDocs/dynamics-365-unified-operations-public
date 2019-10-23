@@ -166,7 +166,7 @@ After you've provisioned e-Commerce by using the Microsoft Dynamics Lifecycle Se
 
 
 
-To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment. Then, on the page for the site authoring environment, select **New site**. In the **New site** dialog box, you must provide some basic information about your site. For a complete explanation of the information that you must provide, see [Create a new e-Commerce site](create-ecommerce-site.md).
+To establish a new site and associate an online store with it, in LCS, select the link for the site authoring environment. Then, on the page for the site authoring environment, select **New site**. In the **New site** dialog box, you must provide some basic information about your site. For a complete explanation of the information that you must provide, see [Create an e-Commerce site](create-ecommerce-site.md).
 
 
 
