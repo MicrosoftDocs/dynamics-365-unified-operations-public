@@ -130,21 +130,21 @@
                 href: data-entities/dual-write-company.md
               - name: Bootstrap with company data
                 href: data-entities/dual-write-bootstrap.md
-            - name: Integrated Customer Master
+            - name: Integrated customer master
               href: data-entities/dual-write-customer.md
-            - name: Integrated Ledger
+            - name: Integrated ledger
               href: data-entities/dual-write-ledger.md            
             - name: Unified product experience
               href: data-entities/dual-write-product.md
             - name: Vendor integration
               items:
-              - name: Integrated Vendor Master
+              - name: Integrated vendor master
                 href: data-entities/dual-write-vendor.md
               - name: Switch between vendor designs
                 href: data-entities/dual-write-vendor-switch.md
             - name: Integrated sites and warehouses
               href: data-entities/dual-write-sites-and-warehouses.md
-            - name: Integrated Tax Master
+            - name: Integrated tax master
               href: data-entities/dual-write-tax.md
             - name: Initial synchronization
               href: data-entities/dual-write-initial.md
