@@ -73,9 +73,7 @@ If you open the base definition file for the script injector module, you can see
     "friendlyName": "External Script",
     "name": "script-injector",
     "description": "External script tag to be rendered on the page",
-    "categories": [
-        "script-injector"
-    ],
+    "categories": ["script-injector"],
     "tags": [
         "script",
         "sdk-modules"
@@ -85,9 +83,6 @@ If you open the base definition file for the script injector module, you can see
         "allowInBodyBegin": true,
         "allowInBodyEnd": true,
         "allowInHead": true
-    },
-    "module": {
-        "view": "./script-injector"
     },
     "config": {
         "scriptSource": {
