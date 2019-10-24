@@ -88,3 +88,5 @@ You should use camel case (camelCase) for module names. You should also use whol
 [Create a layout container module](create-layout-container.md)
 
 [Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

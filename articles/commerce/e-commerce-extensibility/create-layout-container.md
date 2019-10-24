@@ -231,3 +231,5 @@ To preview the page in a local web browser, follow these steps.
 [Container modules](container-modules.md)
 
 [Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

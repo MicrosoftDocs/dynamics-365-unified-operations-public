@@ -81,3 +81,5 @@ After deployment, both the base module and the extended module appear in Microso
 [App settings](app-settings.md)
 
 [Cookie API overview](cookie-api-overview.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

@@ -88,3 +88,5 @@ The following example shows a module mock data file that is used to mock the **c
 [Create a layout container module](create-layout-container.md)
 
 [Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)
