@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of XX.X.XXX. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.7. This version has a build number of 10.0.283.14. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md#additional-resources).
 
 ## Budget register entry enhancements
 
@@ -90,8 +90,20 @@ This feature allows you to select accounts groups when setting up voucher types 
 - In the **Group number** field, select customer group, vendor group, project group, fixed asset group, or bank group respectively to the value in **Account type**, if you selected **Group** in the field **Account code**.
 - In the **Account number** field, select ledger account, customer account, vendor account, project ID, fixed asset number, or bank account respectively value in **Account type**, if you selected **Table** in the field **Account code**
 
-Find more details about how to set up Chinese voucher types in the topic [Set up Chinese vouchers](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/tasks/set-up-chinese-vouchers)
+Find more details about how to set up Chinese voucher types in the topic [Set up Chinese vouchers](../localizations/tasks/set-up-chinese-vouchers)
 
 ## Sort by resource in the project invoice proposal
 
 The **Enable sorting by resource during project invoice proposal creation** feature enables the ability for the project accountant to sort the project transactions available for billing to be sorted by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have a separate field for Resource ID and Resource, allowing the user to filter and sort on the resource name. This feature is disabled by default and can be enabled in **Workspaces > Feature management**.
+
+## Run Settle and post sales tax in batch mode 
+
+Users can now run **Settle and post sales tax** in batch mode in Italy, Belgium and Australia, please refer to [Set up sales tax settlement periods](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md) for the setup. 
+
+## Tax engine 
+
+The tax engine (GTE) is currently only available for India. 
+
+### Create tax component with pre-defined rules
+
+Instead of creating a new tax component from scratch, users can now create it with predefined tax rules which support the most commonly used taxation rules like reverse charge, non-deductible, etc., please refer to [Create tax component](../localizations/tax-engine-create-tax-component.md) for details.
