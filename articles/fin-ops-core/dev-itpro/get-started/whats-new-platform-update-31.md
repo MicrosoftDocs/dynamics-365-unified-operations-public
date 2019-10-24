@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Platform update 31 for Finance and Operations apps (January 2020)
+title: Preview features in Platform update 31 for Finance and Operations apps (December 2018)
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/18/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,7 +29,7 @@ ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Platform update 31
 
 ---
-# Preview features in Platform update 31 for Finance and Operations apps (January 2020)
+# Preview features in Platform update 31 for Finance and Operations apps (December 2019)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
