@@ -60,9 +60,6 @@ The following example shows the addition of a **slots** section that contains tw
     "description": "Sample container module",
     "categories": ["container"],
     "tags": [""],
-    "module": {
-        "view": "./campaignContainer"
-    },
     "config": {
     },
     "slots": {
