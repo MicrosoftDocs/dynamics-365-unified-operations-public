@@ -109,7 +109,7 @@ This option only appears while playback is in progress. This option allows you t
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/trquick06.png"><img src="./media/trquick06.png" alt="TRQuick06" class="alignnone size-full wp-image-290341" width="225" height="98" /></a><a href="./media/trquick07.png"><img src="./media/trquick07.png" alt="TRQuick07" class="alignnone size-full wp-image-290351" width="223" height="99" /></a></td>
+<td><a href="./media/Steps-menu-Delete-step.png"><img src="./media/Steps-menu-Delete-step.png" alt="Delete step" class="alignnone size-full wp-image-290341" width="225" height="98" /></a><a href="./media/Steps-menu-Restore-step.png"><img src="./media/Steps-menu-Restore-step.png" alt="Restore step" class="alignnone size-full wp-image-290351" width="223" height="99" /></a></td>
 <td><h3 id="start-sub-taskend-sub-task">Start sub-task/End sub-task</h3>
 These options allow you to add special steps to the recording. These special steps are task steps, and you can use them to indicate when a sub-task begins and when it ends. These options are disabled while playback is in progress.
 <h3 id="delete-steprestore-step">Delete step/Restore step</h3>
@@ -120,65 +120,65 @@ These options allow you to remove steps from the recording. If you delete a pend
 
 ## Steps list
 
-![example step list](media/example-step-list.png)
+![Example step list](media/example-step-list.png)
 
 ### Step counter
-<img src="media/step-counter.png" alt="step counter"/>
+<img src="media/step-counter.png" alt="Step counter"/>
 
 This keeps track of how many steps have been recorded. This includes steps played by using the Playback controls, as well as steps recorded by actions that you take in the client.
 
 ### Pending step
-<img src="media/pending-step.png" alt="pending-step"/>
+<img src="media/pending-step.png" alt="Pending-step"/>
 
 This symbol represents a step that is pending and has not been recorded yet. Pending steps can be played using the Playback controls. When a pending step is played successfully, it is recorded and the symbol will update appropriately. <em>Pending steps are not included in the recording when you save the recording.</em> You must first play the pending steps so that they are recorded. If the steps are played and recorded successfully, then they will be included when you save the recording.
 
 ### Next pending step</td>
-<img src="media/next-pending-step.png" alt="next pending step"/>
+<img src="media/next-pending-step.png" alt="Next pending step"/>
 
 This symbol represents the next pending step. If you start playback, this is the first step that will be played.
 
 ### Queued pending step
-<img src="media/queued-pending-step.png" alt=""/>
+<img src="media/queued-pending-step.png" alt="Queued pending step"/>
 
 This symbol represents pending steps that are queued for playback. This symbol is updated either when playback pauses, or when the queued pending step is played.
 
 ### Recorded action step
-<img src="media/recorded-action-step.png" alt=""/>
+<img src="media/recorded-action-step.png" alt="Recorded action step"/>
 
 This symbol represents steps that were recorded successfully, either from being played back, or manually recorded by you.
 
 ### Recorded info step
-<img src="media/recorded-info-step.png" alt=""/>
+<img src="media/recorded-info-step.png" alt="Recorded info step"/>
 
 This symbol represents an info step that was played and recorded. Info steps do not result in any action being executed on the application.
 
 ### Recorded begin sub-task step
-<img src="media/recorded-begin-sub-task-step.png" alt=""/>
+<img src="media/recorded-begin-sub-task-step.png" alt="Recorded begin sub-task step"/>
 
 This symbol indicates the beginning of a sub-task. Sub-task steps do not result in any action being executed on the application.
 
 ### Recorded end sub-task step
-<img src="media/recorded-end-sub-task-step.png" alt=""/>
+<img src="media/recorded-end-sub-task-step.png" alt="Recorded end sub-task step"/>
 
 This symbol indicates the end of a sub-task. Sub-task steps do not result in any action being executed on the application.
 
 ### Deleted recorded step
-<img src="media/deleted-recorded-step.png" alt=""/>
+<img src="media/deleted-recorded-step.png" alt="Deleted recorded step"/>
 
 This symbol represents a successfully recorded step that you have marked for deletion. Recorded steps that are marked for deletion will not be included when you save the recording. If a step has been successfully recorded when you decide to delete it, then you have the option to restore the deleted step before you save the recording.
 
 ### Deleted pending step
-<img src="media/deleted-pending-step.png" alt=""/>
+<img src="media/deleted-pending-step.png" alt="Deleted pending step"/>
 
 If you delete a pending step, it will retain its pending symbol until it is played. When it is played, it will be skipped. You can restore a pending step as long as it has not been played and skipped.
 
 ### Skipped step
-<img src="media/skipped-step.png" alt=""/>
+<img src="media/skipped-step.png" alt="Skipped step"/>
 
 This symbol represents a step that was deleted while it was pending, and was skipped during playback. Skipped steps are not played and are not recorded. Because skipped steps are not recorded, they are not included when you save the recording. You cannot restore a skipped step.
 
 ### Error step
-<img src="media/error-step.png" alt=""/>
+<img src="media/error-step.png" alt="Error step"/>
 
 This symbol represents a step that was attempted by the playback system, but was not successful in being played. Error steps are not recorded, and are not included when you save the recording. You cannot restore an error step. Playback will automatically pause when an Error step is encountered. This gives you the opportunity to record replacement steps before continuing playback. An error step may occur for the following reasons:
 <ul>
