@@ -59,9 +59,6 @@ In the following example of a module definition file, an **imageAlignment** conf
     "description": "Feature module used to highlight a product.",
     "categories": ["marketing"],
     "tags": ["feature"],
-    "module": {
-        "view": "./productFeature"
-    },
     "config": {
         "imageAlignment": {
             "friendlyName": "Image Alignment",
