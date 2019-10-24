@@ -51,7 +51,7 @@ Main menu
 Choose this option to begin creating a new recording.
 <h3 id="play-recording-as-guide">Play recording as guide</h3>
 Choose this option to see what your recording looks like when viewed as a Help topic or played as a Task guide.
-<h3 id="change-recording-text">Change recording text</h3>
+<h3 id="change-recording-text">Edit recording</h3>
 Choose this option if you need to change the recording’s name, description, or the text that is displayed in the steps.
 <h3 id="update-recording-steps">Update recording steps</h3>
 Choose this option if you need to add or remove steps. You can also use this mode to automatically play a recording</td>
@@ -74,8 +74,12 @@ These options allow you to open a recording that is saved on your computer, or s
 This option allows you to open a recording that has been saved to an LCS library, or save a recording to an LCS library.
 <h3 id="open-from-recents">Open from recents</h3>
 This option allows you to pick from a list of Task recordings that you have recently created.
-<h3 id="export-as-work-document">Export as Work document</h3>
-This option allows you to download a Word document that contains the list of steps in the recording.</td>
+<h3 id="export-as-work-document">Export as Word document</h3>
+This option allows you to download a Word document that contains the list of steps in the recording.
+<h3 id="publish-for-mobile-application">Publish for Mobile Application</h3>
+This option allows you to publish the task recording for a mobile application.
+<h3 id="save-as-developer-recording">Save as developer recording</h3>
+This option allows you to save the task recording as a developer recording.</td>
 </tr>
 </tbody>
 </table>
