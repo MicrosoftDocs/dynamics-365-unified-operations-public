@@ -63,9 +63,6 @@ In the following example, notice that the **slots** section contains the various
     "description": "This is a test page container.",
     "categories": ["page-container"],
     "tags": [""],
-    "module": {
-        "view": "./campaignPageContainer"
-    },
     "config": {
         "skipToMainText": {
             "friendlyName": "Skip to main text",
