@@ -46,7 +46,7 @@ Main menu
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/Task-recorder-menu-create-play-edit-playback.png"><img src="./media/Task-recorder-menu-create-play-edit-playback.png" alt="TRQuick01" class="alignnone size-full wp-image-290291" width="206" height="199" /></a></td>
+<td><a href="./media/Task-recorder-menu-create-play-edit-playback.png"><img src="./media/Task-recorder-menu-create-play-edit-playback.png" alt="Task recorder menu" class="alignnone size-full wp-image-290291" width="206" height="199" /></a><a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Task recorder menu" class="alignnone size-full wp-image-290291" width="206" height="199" /></a></td>
 <td><h3 id="create-recording">Create recording</h3>
 Choose this option to begin creating a new recording.
 <h3 id="play-recording-as-guide">Play recording as guide</h3>
