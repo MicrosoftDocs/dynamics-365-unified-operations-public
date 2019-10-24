@@ -123,7 +123,7 @@ If the attribute type is <strong>Boolean</strong>, <strong>Integer</strong> with
 </tr>
 </tbody>
 </table>
-A system-defined table constraint represents a mapping between an attribute type and a field in a Finance and Operations table. A system-defined table constraint dynamically links the attribute type to the field. The link enables the attribute in a product configuration model to reflect the data of the field in the Supply Chain Management table.</td>
+A system-defined table constraint represents a mapping between an attribute type and a field in a Supply Chain Management table. A system-defined table constraint dynamically links the attribute type to the field. The link enables the attribute in a product configuration model to reflect the data of the field in the Supply Chain Management table.</td>
 </tr>
 <tr class="odd">
 <td>Calculations</td>

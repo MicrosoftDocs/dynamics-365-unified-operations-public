@@ -100,7 +100,7 @@ You can use custom fields to print the following application attributes on recei
 - **Build number** – The software version of the POS application. By default, the value should equal the POS build number that Microsoft assigned to the POS application.
 - **Certificate category** and **Certificate number** – The category and number of the certificate of compliance that an accredited body issues for the application. By default, the values equal the category and the number of the certificate that is granted to Microsoft:
 
-    - Microsoft Dynamics 365 for Finance and Operations:
+    - Microsoft Dynamics 365 for Retail:
 
         - **Certificate category:** C
         - **Certificate number:** 18/0202
@@ -111,7 +111,7 @@ You can use custom fields to print the following application attributes on recei
         - **Certificate number:** 18/0203
 
     > [!NOTE]
-    > By default, the certificate category and number that are assigned to Finance and Operations are printed. If you're implementing Retail, you must override the certificate category and number.
+    > By default, the certificate category and number that are assigned to Retail are printed. If you're implementing Retail, you must override the certificate category and number.
 
 If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the build number, and the certificate category and number. Otherwise, the default values for the certificate category and number will be printed, but you must still specify the POS build number that Microsoft assigned to the POS application.
 

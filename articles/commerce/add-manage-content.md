@@ -47,5 +47,6 @@ The following topics provide detailed information about how to add and manage si
 
 ## Additional resources
 
-- [Page elements overview](page-elements-overview.md)
-- [Document states overview](document-states-overview.md)
+[Page elements overview](page-elements-overview.md)
+
+[Document states and lifecycle](document-states-overview.md)

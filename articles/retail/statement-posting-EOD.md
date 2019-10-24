@@ -41,7 +41,7 @@ By default, during deployment of Finance and Operations 7.3.2, the program is se
 
 When the new **Retail statements** configuration key is turned on, a new menu item that is named **Retail statements** is available. This menu item lets you manually create, calculate, and post statements. Any statement that causes an error when the batch posting process is used will also be available through this menu item. (When the **Retail statements (legacy)** configuration key is turned on, the menu item is named **Open statements**.)
 
-Finance and Operations includes the following validations that are related to these configuration keys:
+Retail includes the following validations that are related to these configuration keys:
 
 - Both configuration keys can't be turned on at the same time.
 - The same configuration keys must be used for all the operations that are performed on a given statement during its lifecycle (Create, Calculate, Clear, Post, and so on). For example, you can't create and calculate a statement while the **Retail statement (legacy)** configuration key is turned on, and then try to post the same statement while the **Retail statement** configuration key is turned on.

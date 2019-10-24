@@ -79,3 +79,19 @@ To add a content placement module that contains a content placement item module 
 1. Repeat steps 7 and 8 to add another content placement item module that has the same tile size.
 1. Save and preview the page. You should see two content placement items that appear side by side. You can adjust the **Tile size** property of each content placement item module or add more modules to achieve the desired layout.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Account management pages](account-management.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create an order confirmation module](order-confirmation-module.md)

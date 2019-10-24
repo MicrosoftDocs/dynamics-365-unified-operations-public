@@ -148,3 +148,16 @@ export interface IProductFeatureData {
 ```
 
 Notice that this example calls a core data action that is named **get-simple-products**. This data action returns an array of **SimpleProduct** results. The interface for the **SimpleProduct** return type is defined in the \\node\_modules\\@msdyn365-commerce\\commerce-entities\\dist\\types\\commerce-entities directory that is imported at the top of the example.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Core data actions](core-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)
+

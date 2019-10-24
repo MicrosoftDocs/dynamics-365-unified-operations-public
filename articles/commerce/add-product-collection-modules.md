@@ -64,3 +64,19 @@ The following table shows the list types that are available for selection in the
 | Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category | Category determined by author |
 | Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Product pages, and checkout and cart pages | Product, Cart | Include cart |
 | People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Product pages, and checkout and cart pages | Product, Cart | Not applicable |
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Product collection module overview](product-collection-module-overview.md)
+
+[Add a carousel module to a page](add-carousel.md)
+
+[Add a content rich block module to a page](add-content-rich-block.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
