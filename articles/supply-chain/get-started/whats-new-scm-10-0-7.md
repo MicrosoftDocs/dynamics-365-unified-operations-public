@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Supply Chain Management 10.0.7 (December 2019)
+title: Preview features in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.7. 
 author: josaw1
 manager: AnnBe
-ms.date: 10/18/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,12 +29,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
 
 ---
-# Preview features in Dynamics 365 Supply Chain Management 10.0.7 (December 2019)
+# Preview features in Dynamics 365 Supply Chain Management 10.0.7 (January 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.7. This version has a build number of 10.0.283. While the general availability date is in December, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-scm-10-0-7.md#additional-resources).
+This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.7. This version has a build number of 10.0.283. While the general availability date is in January 2020, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-scm-10-0-7.md#additional-resources).
 
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
@@ -43,7 +43,7 @@ Feature management now allows you to enable all new features by default, require
 
 ## Additional resources
 
-### Bug fixes --- FIX
+### Bug fixes 
 For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).
 
 ### Platform update 31
