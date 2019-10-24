@@ -49,6 +49,11 @@ As companies increase in size, massive deployment and installation of components
 
 ## Additional resources
 
+### Platform update 31
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [Preview features in Platform update 31](../../fin-ops-core/fin-ops/get-started/whats-new-platform-update-31.md).
+
+
 ### Dynamics 365: 2019 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
