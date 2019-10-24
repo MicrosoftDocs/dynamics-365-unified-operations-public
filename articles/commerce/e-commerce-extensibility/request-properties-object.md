@@ -159,3 +159,5 @@ interface IRequestContext {
 [Extend a module definition file](extend-module-definition.md)
 
 [Cookie API overview](cookie-api-overview.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)
