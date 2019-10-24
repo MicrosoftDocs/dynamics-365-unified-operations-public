@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Talent October 2019 update
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 Talent provides continuous, touchless service updates. They contain both application and platform changes that often provide critical improvements to the service, including regulatory updates. These continuous updates eliminate the need for expensive upgrades every few years. Service updates maintain backward compatibility. We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
+Microsoft Dynamics 365 Talent provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates. These continuous updates eliminate the need for expensive upgrades every few years. Service updates maintain backward compatibility. We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
 
 ## Update policy
 
