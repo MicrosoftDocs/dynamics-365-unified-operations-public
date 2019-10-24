@@ -806,6 +806,8 @@
           href: general-ledger/general-journal-processing.md
         - name: Post periodic journals
           href: general-ledger/tasks/post-periodic-journals.md
+        - name: Reverse journal posting
+          href: general-ledger/reverse-journal-posting.md         
         - name: Process ledger allocation journal
           href: general-ledger/tasks/process-ledger-allocation-journal.md
         - name: Intercompany accounting setup
