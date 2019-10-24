@@ -158,13 +158,10 @@ The following example shows a sample module definition that registers the sample
     "description": "Module for testing observable data actions",
     "categories": ["test-module"],
     "tags": ["samples"],
-    "module": {
-        "view": "./test-module",
-        "dataActions": {
-            "testResult":{
-                "path": "./actions/test-action",
-                "runOn": "client"
-            }
+    "dataActions": {
+        "testResult":{
+            "path": "./actions/test-action",
+            "runOn": "client"
         }
     }
 }
