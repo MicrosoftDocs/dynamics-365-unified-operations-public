@@ -140,13 +140,10 @@ The following example shows how the **getCategoryList** data action can be regis
     "description": "Feature module used to highlight a product.",
     "categories": ["storytelling"],
     "tags": [""],
-    "module": {
-        "view": "./productFeature",
-        "dataActions": {
-            "categories":{
-                "path": "../../actions/getCategoryList",
-                "runOn": "server"
-            }
+    "dataActions": {
+        "categories":{
+            "path": "../../actions/getCategoryList",
+            "runOn": "server"
         }
     },
     "config": {
