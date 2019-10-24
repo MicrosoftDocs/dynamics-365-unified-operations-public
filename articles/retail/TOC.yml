@@ -1008,6 +1008,8 @@
         href: dev-itpro/gift-card-cash-out.md
       - name: Ship orders from another store
         href: charge-send.md
+      - name: Hide non-carrier delivery modes from POS shipment dialog
+        href: hide-non-carrier-modes.md 
       - name: Task recorder and Help for MPOS and Cloud POS
         href: task-recorder-retail-pos.md
       - name: Hardware peripherals
