@@ -67,7 +67,7 @@ Choose this option if you need to add or remove steps. You can also use this mod
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/trquick02.png"><img src="./media/trquick02.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="TRQuick03" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/trquick02.png"><img src="./media/trquick02.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">Open/Save from/to this PC</h3>
 These options allow you to open a recording that is saved on your computer, or save a recording to your computer.
 <h3 id="opensave-fromto-lcs">Open/Save from/to LCS</h3>
@@ -88,7 +88,7 @@ This option allows you to download a Word document that contains the list of ste
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/trquick04.png"><img src="./media/trquick04.png" alt="TRQuick04" class="alignnone size-full wp-image-290321" width="177" height="116" /></a><a href="./media/trquick05.png"><img src="./media/trquick05.png" alt="TRQuick05" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
+<td><a href="./media/playback-controls-menu-Playnext-Playall.png"><img src="./media/playback-controls-menu-Playnext-Playall.png" alt="Play next and Play all" class="alignnone size-full wp-image-290321" width="177" height="116" /></a><a href="./media/Playback-controls-menu-Pause.png"><img src="./media/Playback-controls-menu-Pause.png" alt="Pause" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
 <td><h3 id="play-next-pending-step">Play next pending step</h3>
 This option will cause Task recorder to execute and record the next pending step, which is indicated by the arrow in the Steps list.
 <h3 id="play-to-selected-step">Play to selected step</h3>
