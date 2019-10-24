@@ -58,10 +58,7 @@ The **$ref** command can also include a relative path to another module in your 
 {
     "$ref": "../productFeature/productFeature.definition.json",
     "friendlyName": "Extended Product Feature Module",
-    "name": "extendedProductFeature"
-    "module": {
-        "view": "./extendedProductFeature"
-    },
+    "name": "extendedProductFeature",
     "config": {
         "extendedProductData": {
             "friendlyName": "Extended Product Data",
