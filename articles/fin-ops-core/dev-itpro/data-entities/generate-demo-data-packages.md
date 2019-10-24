@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
+In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -77,7 +77,7 @@ At least two financial companies are required for cross-company tasks such as ce
 The Financials data packages also have five inventory products to support the creation of invoices that can move through the accounts receivable and accounts payable processes. These items use a minimum of inventory and product functionality to support those processes. However, you no longer have to set up products when you want to demonstrate only Financials functionality. More complete products will be added when you import the Supply chain data packages.
 
 ### Expense management
-The expense management data packages contain data for expense management and aren't specific to project management. The names of these data packages consist of **225-Expense** followed by the legal entity that the packages are intended for. For example, the Expense management data package for the HQUS legal entity is named 225 Expense management HQUS.zip.
+The expense management data packages contains data for expense management and aren't specific to project management. The names of these data packages consist of **225-Expense** followed by the legal entity that the packages are intended for. For example, the Expense management data package for the HQUS legal entity is named 225 Expense management HQUS.zip.
 
 ### Project management and accounting
 
@@ -103,6 +103,7 @@ Before you load the data packages, you must manually follow these steps.
 2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
 3. If you aren't using the en-us locale, you may need to alter the source data format to match the format the packages were built on. 
 Once you've loaded a data entity, click into the source data format column which should be specified as value = Excel. From the next page, again select Excel. From within the source data formats page, the bottom fast-tab will be regional settings. Change the language locale to en-us if it isn't specified as en-us. After loading packages, you can change it back to its original non en-us value. 
+
 ## Load the packages
 
 The data packages must be loaded into a specific legal entity in a specific order. The number before the name of the package gives you guidance about the order that the data must be loaded in. For example, you must import **100-System and Shared.zip** before you can load the Financials package for the HQUS legal entity, **200-Financials-HQUS.zip**. Then, to add Supply chain data to the HQUS legal entity, you can load **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
@@ -134,7 +135,7 @@ Commercial Data
 | 200 - Financials - PICH | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PIFB | You can load this package alone or together with another Financials package. |
 | 225 - Expense Management - HQUS | Follow the prerequisite step before starting the import. Load this package after the HQUS Financials package. |
-| 250 - Project management - HQUS | Load this package after the HQUS Financials package. If you want to also use Supply chain, you must import this package first. |
+| 250 - Project management - HQUS | Load this package after the HQUS Financials or Expense package. If you want to also use Supply chain, you must import this package first. |
 | 300 - Supply chain 1 of 2 (base) - HQUS | Load this package after the HQUS Financials package. If you want to also use Project management, you must import the Project management package first before you import this package. |
 | 310 - Supply chain 2 of 2 (Discrete) - HQUS | Load this package after the HQUS Supply chain base package. |
 | 300 - Supply chain - PIFB | Load this package after the PICH Supply chain package. |
