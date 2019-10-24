@@ -84,13 +84,15 @@ Note that due to the internal usage Bom levels are shown differently for Coverag
 
 - Coverage planning: BOM levels are shown normally, as they are calculated top down. E.g. BOM level 0, 1, 2
 - Delays: Bom levels are shown as Coverage planning BOM level times -1 (negative). E.g. Bom level  -2, -1, 0
-- Firming: Bom level are shown as 999 minus Coverage planning BOM level. E.g. Bom level 999, 998, 997
+- Action message: BOM levels are shown normally, as they are calculated top down. E.g. BOM level 0, 1, 2
+- Auto-firming: Bom level are shown as 999 minus Coverage planning BOM level. E.g. Bom level 999, 998, 997
 
 | Bom level example | End item | Sub component | Raw material |
 | --- | --- | --- | --- |
 | Coverage planning BOM level shown | 0 | 1 | 2 |
 | Delays BOM level shown | 0 | -1 | -2 |
-| Firming BOM level shown | 999 | 998 | 997 |
+| Action message BOM level shown | 0 | 1 | 2 |
+| Auto-firming BOM level shown | 999 | 998 | 997 |
 
 ### Visualize progress
 
