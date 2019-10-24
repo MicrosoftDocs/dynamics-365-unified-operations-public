@@ -1423,20 +1423,20 @@
             href: e-commerce-extensibility/create-layout-container.md
           - name: Create a page container module
             href: e-commerce-extensibility/create-page-containers.md
+          - name: Localize a module
+            href: e-commerce-extensibility/localize-module.md
         - name: Advanced module topics
           items:
-          - name: Module globalization
-            href: e-commerce-extensibility/globalize-modules.md
           - name: Request properties object
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
           - name: Extend a module definition
             href: e-commerce-extensibility/extend-module-definition.md
-          - name: Working with cookies
-            href: e-commerce-extensibility/cookie-api-overview.md 
-          - name: Localize a module
-            href: e-commerce-extensibility/localize-module.md
+          - name: Cookie API overview
+            href: e-commerce-extensibility/cookie-api-overview.md
+          - name: Globalize modules by using the CultureInfoFormatter class
+            href: e-commerce-extensibility/globalize-modules.md
         - name: Develop data actions
           items:
           - name: Data actions overview
