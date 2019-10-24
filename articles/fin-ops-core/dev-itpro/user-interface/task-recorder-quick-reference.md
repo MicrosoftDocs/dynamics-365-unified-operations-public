@@ -70,8 +70,8 @@ Choose this option if you need to add or remove steps. You can also use this mod
 <td> <a href="./media/Update-recording-steps-menu"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="197" height="136" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">Open/Save from/to this PC</h3>
 These options allow you to open a recording that is saved on your computer, or save a recording to your computer.
-<h3 id="opensave-fromto-lcs">Open/Save from/to LCS</h3>
-This option allows you to open a recording that has been saved to an LCS library, or save a recording to an LCS library.
+<h3 id="opensave-fromto-lcs">Open/Save from/to Lifecycle Services</h3>
+This option allows you to open a recording that has been saved to a Lifecycle Services library, or save a recording to a Lifecycle Services library.
 <h3 id="open-from-recents">Open from recents</h3>
 This option allows you to pick from a list of Task recordings that you have recently created.
 <h3 id="export-as-work-document">Export as Word document</h3>
