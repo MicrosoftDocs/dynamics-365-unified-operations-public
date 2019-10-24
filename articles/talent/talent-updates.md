@@ -54,14 +54,14 @@ Sandbox auto-updates occur seven days prior to production updates. End of servic
 
 The Talent team releases updates on the following schedule:
 
-- **Semiannually**   Major updates with a two-month preview window, as follows:
+- **Semiannually**: Major updates with a two-month preview window, as follows:
 
   | Preview availability (PEAP) | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
   | --- | --- | --- |
   | February 1 | April 1 | Starts June 1 | |
   | August 1 | October 1 | Starts November 1 | |
   
-- **Monthly**   Minor enhancements with a two-week preview window. The target dates are as follows, and are subject to change:
+- **Monthly**: Minor enhancements with a two-week preview window. The target dates are as follows, and are subject to change:
 
   | Preview availability (PEAP) | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
   | --- | --- | --- | --- |
@@ -69,7 +69,7 @@ The Talent team releases updates on the following schedule:
   | November 29, 2019 | January 17, 2020 | Production starts February 1, 2020 | April 13, 2020 |
   | February 1, 2020 | March 13, 2020 | Production starts April 1, 2020 | TBD |
 
-- **Weekly**   Small bug fixes
+- **Weekly**: Small bug fixes
 
 > [!NOTE]
 > The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
