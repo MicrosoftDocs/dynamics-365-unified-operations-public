@@ -58,27 +58,16 @@ The Talent team releases updates on the following schedule:
 
   | Preview availability | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
   | --- | --- | --- |
-  | February | April | Starts in June | |
-  | August | October | Starts in November | |
+  | February 1 | April 1 | Starts June 1 | |
+  | August 1 | October 1 | Starts November 1 | |
   
 - **Monthly**   Minor enhancements with a two-week preview window. The target dates are as follows, and are subject to change:
 
   | Preview availability | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
   | --- | --- | --- | --- |
-  | November 18, 2019 | December 2, 2020 | Starts December 16, 2020 | |
-  | December 23, 2019 | January 6, 2020 | Starts January 20, 2020 | |
-  | January 20, 2020 | February 3, 2020 | Starts February 17, 2020 | |
-  | February 17, 2020 | March 2, 2020 | March 16, 2020 | |
-  | March 23, 2020 | April 6, 2020 | Starts April 20, 2020 | |
-  | April 20, 2020 | May 4, 2020 | Starts May 18, 2020 | |
-  | May 18, 2020 | June 1, 2020 | Starts June 15, 2020 | |
-  | June 22, 2020 | July 6, 2020 | Starts July 20, 2020 | |
-  | July 20, 2020 | August 3, 2020 | Starts August 17, 2020 | |
-  | August 24, 2020 | September 7, 2020 | Starts September 21, 2020 | |
-  | September 21, 2020 | October 5, 2020 | Starts October 19, 2020 | |
-  | October 19, 2020 | November 2, 2020 | Starts November 16, 2020 | |
-  | November 23, 2020 | December 7, 2020 | Starts December 21, 2020 | |
-  | December 21, 2020 | January 4, 2021 | Starts January 18, 2021 | |
+  | October 25, 2019 | November 29, 2019 | Production starts January 1, 2020 | March 9, 2020 |
+  | November 29, 2019 | January 17, 2020 | Production starts February 1, 2020 | April 13, 2020 |
+  | February 1, 2020 | March 13, 2020 | Production starts April 1, 2020 | TBD |
 
 - **Weekly**   Small bug fixes
 
