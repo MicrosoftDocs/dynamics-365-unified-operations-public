@@ -142,3 +142,5 @@ The **modules** section lists the modules that are included inside the page arra
 [Create a layout container module](create-layout-container.md)
 
 [Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)
