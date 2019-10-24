@@ -98,9 +98,6 @@ To use a resource string in a module, you must reference the resource string key
     "description": "Feature module used to highlight a product.",
     "categories": ["storytelling"],
     "tags": [""],
-    "module": {
-        "view": "./productFeature"
-    },
     "config": {
         "imageAlignment": {
             "friendlyName": "Image Alignment",
