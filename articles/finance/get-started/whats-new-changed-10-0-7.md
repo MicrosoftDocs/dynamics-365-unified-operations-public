@@ -70,9 +70,6 @@ This feature lets you reverse an entire posted journal or reverse one or more vo
 ## Prohibit submission to workflow when there are unallocated charges on a vendor invoice
 This feature lets you prevent a vendor invoice from being submitted to the workflow process when it contains unallocated charges. Instead, the person who submitted the invoice receives an alert that it has unallocated charges and lets them correct it before submitting it to workflow.
 
-## Financial reporting retention feature
-
-The **Ledger settlement by user** feature allows processing ledger settlement by user ID.  When enabled, a user will only see records in Advanced ledger settlement that have no user ID (not marked for settlement) or have their user ID (records they marked for settlement). Only the records marked by that user will be processed when choosing Settle marked transactions. A new button, Unmark for selected users, was also added to unmark records marked for settlement but not processed.  This could be used after a user leaves an organization. 
 
 ## Account groups selection for Chinese voucher types
 
@@ -98,18 +95,3 @@ Find more details about how to set up Chinese voucher types in the topic [Set up
 ## Sort by resource in the project invoice proposal
 
 The **Enable sorting by resource during project invoice proposal creation** feature enables the ability for the project accountant to sort the project transactions available for billing to be sorted by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have a separate field for Resource ID and Resource, allowing the user to filter and sort on the resource name. This feature is disabled by default and can be enabled in **Workspaces > Feature management**.
-## Mark a Purchase agreement as "Closed"
-
-Users can now mark a Purchase agreement as "Closed" to signal the agreement is no longer actively used, making it so users will not be able to create release orders from the purchase agreement.
-
-## Run Settle and post sales tax in batch mode 
-
-Users can now run **Settle and post sales tax** in batch mode in Italy, Belgium and Australia, please refer to [Set up sales tax settlement periods](../../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md) for the setup. 
-
-## Tax engine 
-
-The tax engine (GTE) is currently only available for India. 
-
-### Create tax component with pre-defined rules
-
-Instead of creating a new tax component from scratch, users can now create it with predefined tax rules which support the most commonly used taxation rules like reverse charge, non-deductible, etc., please refer to [Create tax component](../../financials/localizations/tax-engine-create-tax-component.md) for details.
