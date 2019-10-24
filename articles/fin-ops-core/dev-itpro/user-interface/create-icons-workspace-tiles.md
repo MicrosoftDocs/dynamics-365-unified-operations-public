@@ -70,7 +70,7 @@ Following these recommendations ensures that your workspace icon matches the sty
 ## Example 
 Consider the following image/icon that is to be used for a new workspace. 
 
-[![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) 
+[![Icon to be used for a new workspace](./media/newlogo3.png)](./media/newlogo3.png) 
 
 ### Platform update 29 or later 
 
@@ -80,11 +80,11 @@ This icon would be converted to an image with a **white background and transpare
 
 To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the new sizing recommendations.   
 
-![newIcon\_guides](./media/baseIcon_Guides_PU29.png) 
+![Workspace icon with new sizing recommendations](./media/baseIcon_Guides_PU29.png) 
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![newWorkspaceIcon](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+[![Result on the dashboard when image used on workspace tile](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 ### Platform update 28 or earlier
@@ -94,11 +94,11 @@ For older versions of the product, the icon would be converted to an image with 
 
 To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the previous sizing recommendations.   
 
-![newIcon\_guides](./media/newicon_guides.png) 
+![Workspace icon with previous sizing recommendations](./media/newicon_guides.png) 
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+[![Result on the dashboard when image used on workspace tile](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
 
 
 
