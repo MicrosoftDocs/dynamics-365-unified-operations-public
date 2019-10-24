@@ -100,7 +100,7 @@ The page author can configure the settings of a module on a specific page withou
 
 ## Module definition schema
 
-* **"$type"** – The type of the module. A module can be either a container module (**containerModule**), a page module (**PageModule**), or a content module (**contentModule**). Container and page modules also define "slots" that are used for layout regions.
+* **"$type"** – The type of the module. A module can be either a container module (**containerModule**), a page module (**PageModule**), a content module (**contentModule**) or a script injector module (**scriptModule**). Container and page modules also define "slots" that are used for layout regions.  Script injector modules also define an "attributes" section that is used for specifying where script can be injected.
 * **"friendlyName"** – The friendly name of the module. This name is shown to page authors. The minimum length is three characters.
 * **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the authoring tools. It should not be changed.
 * **"description"** – The description of the module. The description provides a friendly string that is shown in the authoring tools when modules are added to pages.
@@ -108,6 +108,7 @@ The page author can configure the settings of a module on a specific page withou
 * **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
 * **"dataActions"** – The data actions node is used to register the data actions that should be run for the module.
 * **"slots"** – Slots are defined only in container modules. They are exposed in the authoring tools. Allow and deny lists can be defined for a slot to allow or disallow specific modules from being accepted in that slot.
+* **"attributes"** – Attributes are used to control script injectors properties.  For more details see the (script injectors)[script-injector.md] documentation.
 
 ## Register data actions to a module
 
