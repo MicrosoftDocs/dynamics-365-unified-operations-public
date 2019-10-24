@@ -53,8 +53,8 @@ Choose this option to begin creating a new recording.
 Choose this option to see what your recording looks like when viewed as a Help topic or played as a Task guide.
 <h3 id="change-recording-text">Edit recording</h3>
 Choose this option if you need to change the recording’s name, description, or the text that is displayed in the steps.
-<h3 id="update-recording-steps">Update recording steps</h3>
-Choose this option if you need to add or remove steps. You can also use this mode to automatically play a recording</td>
+<h3 id="playback-recording">Playback recording</h3>
+Choose this option if you need to add or remove steps. You can also use this mode to automatically play a recording.</td>
 </tr>
 </tbody>
 </table>
