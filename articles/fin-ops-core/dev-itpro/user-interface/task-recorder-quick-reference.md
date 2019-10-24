@@ -46,7 +46,7 @@ Main menu
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/Task-recorder-menu-create-play-edit-playback.png"><img src="./media/Task-recorder-menu-create-play-edit-playback.png" alt="Task recorder menu" class="alignnone size-full wp-image-290291" width="206" height="199" /></a><a href="./media/Update-recording-steps-menu.png"><img src="./media/Update-recording-steps-menu.png" alt="Task recorder menu" class="alignnone size-full wp-image-290291" width="206" height="199" /></a></td>
+<td><a href="./media/Task-recorder-menu-create-play-edit-playback.png"><img src="./media/Task-recorder-menu-create-play-edit-playback.png" alt="Task recorder menu" class="alignnone size-full wp-image-290291" width="206" height="199" /></a></td>
 <td><h3 id="create-recording">Create recording</h3>
 Choose this option to begin creating a new recording.
 <h3 id="play-recording-as-guide">Play recording as guide</h3>
@@ -67,7 +67,7 @@ Choose this option if you need to add or remove steps. You can also use this mod
 </colgroup>
 <tbody>
 <tr class="odd">
-<td> <a href="./media/trquick02.png"><img src="./media/trquick02.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
+<td> <a href="./media/Update-recording-steps-menu"><img src="./media/Update-recording-steps-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290301" width="157" height="120" /></a><a href="./media/Save-menu.png"><img src="./media/Save-menu.png" alt="Open and save options" class="alignnone size-full wp-image-290311" width="197" height="136" /></a></td>
 <td><h3 id="opensave-fromto-this-pc">Open/Save from/to this PC</h3>
 These options allow you to open a recording that is saved on your computer, or save a recording to your computer.
 <h3 id="opensave-fromto-lcs">Open/Save from/to LCS</h3>
