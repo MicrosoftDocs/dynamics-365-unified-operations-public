@@ -56,14 +56,14 @@ The Talent team releases updates on the following schedule:
 
 - **Semiannually**   Major updates with a two-month preview window, as follows:
 
-  | Preview availability | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
+  | Preview availability (PEAP) | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
   | --- | --- | --- |
   | February 1 | April 1 | Starts June 1 | |
   | August 1 | October 1 | Starts November 1 | |
   
 - **Monthly**   Minor enhancements with a two-week preview window. The target dates are as follows, and are subject to change:
 
-  | Preview availability | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
+  | Preview availability (PEAP) | Generally available (self-update) | Auto-update (via LCS settings) | End of service |
   | --- | --- | --- | --- |
   | October 25, 2019 | November 29, 2019 | Production starts January 1, 2020 | March 9, 2020 |
   | November 29, 2019 | January 17, 2020 | Production starts February 1, 2020 | April 13, 2020 |
