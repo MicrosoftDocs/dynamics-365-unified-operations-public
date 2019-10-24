@@ -94,15 +94,13 @@ The following example shows a module that uses the data action earlier in this t
     "name": "product-module",
     "friendlyName": "Product module",
     "description": "Product module",
-    "module": {
-        "view": "./product-module",
-        "dataActions": {
-            "product": {
-                "path": "../../actions/get-product"
-            }
+    "categories": ["Product"],
+    "dataActions": {
+        "product": {
+            "path": "../../actions/get-product",
+            "runOn": "server"
         }
     },
-    "categories": ["Product"],
     "config": {
         "productId": {
             "friendlyName": "Id of Product to show",
