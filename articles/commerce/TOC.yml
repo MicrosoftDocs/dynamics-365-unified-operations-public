@@ -442,6 +442,8 @@
           href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/commerce/toc.json
         - name: Options for preventing discounts for retail products
           href: ../retail/prevent-discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Tender-based discounts
+          href: ../retail/tender_based_discounts.md?toc=/dynamics365/commerce/toc.json
         - name: Shipping discount overview
           href: ../retail/retail-shipping-discount.md?toc=/dynamics365/commerce/toc.json
         - name: Set up coupons for retail sales
