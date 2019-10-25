@@ -5,7 +5,7 @@ title: Create a page container module
 description: This topic describes how to create a page container module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
