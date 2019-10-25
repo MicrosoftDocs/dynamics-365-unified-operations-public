@@ -47,11 +47,13 @@
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
         - name: System requirements for cloud deployments
-          href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/retail/toc.json
+          href: get-started/system-requirements.md
         - name: On-premises deployment
           href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
         - name: System requirements for on-premises deployments
           href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/retail/toc.json
+        - name: Installation steps for Retail channel components in an on-premises environment
+          href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/retail/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/retail/toc.json
         - name: Finance and Operations apps operated by 21Vianet in China
@@ -1150,12 +1152,6 @@
         href: tasks/category-pricing-rules-trade-agreements.md
       - name: Configure functionality profiles for sales representatives
         href: tasks/configure-functionality-profile-sales-representative.md
-      - name: Create devices and associate them with registers
-        href: tasks/create-associate-device.md
-      - name: Create hardware stations
-        href: tasks/create-associate-hardware-station.md
-      - name: Create POS registers
-        href: tasks/create-associate-registers.md
       - name: Create call center orders
         href: tasks/create-call-center-orders.md
       - name: Create financial dimensions for POS registers and configure dimension values on registers
@@ -1184,8 +1180,6 @@
         href: tasks/design-relationships-between-organizational-units.md
       - name: Manage assortments
         href: tasks/manage-assortments-2016-11.md
-      - name: Download hardware stations by using self-service
-        href: tasks/perform-self-service-download-hardware-station.md
       - name: Post online sales and payments
         href: tasks/posting-online-sales-payments.md
       - name: Process adjustments of loyalty reward points
