@@ -47,7 +47,7 @@
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
         - name: System requirements for cloud deployments
-          href: ../fin-ops-core/retail/get-started/system-requirements.md?toc=/dynamics365/retail/toc.json
+          href: get-started/system-requirements.md
         - name: On-premises deployment
           href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
         - name: System requirements for on-premises deployments
