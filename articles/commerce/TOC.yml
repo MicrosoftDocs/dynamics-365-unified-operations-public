@@ -208,8 +208,6 @@
         items:
         - name: Initialize seed data in new Retail environments
           href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and install Retail hardware station
-          href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
         - name: Info codes and info code groups
           href: ../retail/info-codes-retail.md     
       - name: Store channel management 
@@ -780,12 +778,6 @@
         href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
       - name: Configure functionality profiles for sales representatives
         href: ../retail/tasks/configure-functionality-profile-sales-representative.md?toc=/dynamics365/commerce/toc.json
-      - name: Create devices and associate them with registers
-        href: ../retail/tasks/create-associate-device.md?toc=/dynamics365/commerce/toc.json
-      - name: Create hardware stations
-        href: ../retail/tasks/create-associate-hardware-station.md?toc=/dynamics365/commerce/toc.json
-      - name: Create POS registers
-        href: ../retail/tasks/create-associate-registers.md?toc=/dynamics365/commerce/toc.json
       - name: Create call center orders
         href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
       - name: Create financial dimensions for POS registers and configure dimension values on registers
@@ -814,8 +806,6 @@
         href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
       - name: Manage assortments
         href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
-      - name: Download hardware stations by using self-service
-        href: ../retail/tasks/perform-self-service-download-hardware-station.md?toc=/dynamics365/commerce/toc.json
       - name: Post online sales and payments
         href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
       - name: Process adjustments of loyalty reward points
