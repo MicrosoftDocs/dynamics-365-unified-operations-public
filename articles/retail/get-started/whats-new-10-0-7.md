@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Retail version 10.0.7
 description: This topic describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -52,6 +52,10 @@ As companies increase in size, massive deployment and installation of components
 ### Platform update 31
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [Preview features in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
+
+
+### Bug fixes 
+For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
 
 
 ### Dynamics 365: 2019 release wave 2 plan
