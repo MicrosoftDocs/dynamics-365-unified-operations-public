@@ -61,7 +61,7 @@ When the user selects **Complete** during a call center order, the **Totals** sc
 > Card validation is not performed for call center orders. For example, if the call center user selected Visa card, but Master card is used, the system will still apply the discount.
 
 ## Exclude items from discounts 
-The **Prevent all discounts** configuration setting for products will, when turned on, exclude the item from all types of discounts. This setting is generally used for new or in-demand items to maximize profits. However, tender-based discounts are still applied on the items. If the retailer wants to prevent all product-specific discounts, for example, if the retailer wants to prevent periodic and manual discounts but still tender-based discounts enabled, they need to turn off the **Prevent all discounts** and **Prevent tender-based discounts** configurations, and turn on **Prevent retail discounts** and **Prevent manual discounts** configurations. 
+There are certain products e.g. new or in-demand products for which the retailers do not run any discounts. However, this rule is generally not applied on the tender based discounts. In other words, there will be no item based discount or manual discount, but if the user pays with the preferred tender, then the tender based discount would apply. To do so, the retailers can turn off the **Prevent all discounts** and **Prevent tender-based discounts** configurations, and turn on **Prevent retail discounts** and **Prevent manual discounts** configurations. 
 
 > [!NOTE]
 > When **Prevent all discounts** is turned on, no discounts, including tender-based discounts, will be applied to the product. 
