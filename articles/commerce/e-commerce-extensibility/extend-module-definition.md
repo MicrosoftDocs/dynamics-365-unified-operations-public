@@ -5,7 +5,7 @@ title: Extend a module definition file
 description: This topic describes how to extend a module definition file.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
