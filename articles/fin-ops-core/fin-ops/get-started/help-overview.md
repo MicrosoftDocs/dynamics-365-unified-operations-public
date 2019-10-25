@@ -3,9 +3,9 @@
 
 title: Help system
 description: This topic provides an overview of the Help system.
-author: margoc
+author: edupont04
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,14 +34,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the components of the Help system. The Help system is shared by the following products:
+Users of the following products can get access to context-sensitive Help and other content based on the same Help system:
 
-- Dynamics 365 Finance 
+- Dynamics 365 Finance
 - Dynamics 365 Retail
 - Dynamics 365 Supply Chain Management
 - Dynamics 365 Talent
 
-You can access help from the Help pane in whichever product you are using. 
+You can access product-specific help from the Help pane in whichever product you are using.  
 
 ![Help pane](./media/help-pane-ops-task-guides.png)
 
@@ -52,7 +52,7 @@ The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.micr
 - **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 - **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
 
-You can also find our content with any search engine. We recommend that for best results, you use a site search, such as site:docs.microsoft.com dynamics 365 "search term".
+You can also find our content with any search engine. We recommend that for best results, you use a site search, such as ```site:docs.microsoft.com dynamics 365 "search term"```.
 
 ### Use an RSS feed
 
@@ -69,6 +69,9 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 2. Start typing your comments, and then click **Submit feedback**.
 
     ![Post comment](./media/feedback.png)
+
+> [!NOTE]
+> If you want to submit documentation feedback, you have to sign in with a GitHub account. For more information, see [Setting up and managing your GitHub profile](https://help.github.com/github/setting-up-and-managing-your-github-profile).
 
 ### Contribute to the documentation
 
@@ -102,7 +105,7 @@ You can use Task recorder to create your own custom Task guides. For more inform
 
 ## In-product Help
 
-To access Help content, either click the **Help** (**?**) icon and then choose Help or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or Task guides.
+To access Help content, either click the **Help** (**?**) icon and then choose Help, or press Ctrl+Shift+?. In both cases, the Help pane opens. From the Help pane, you can access articles or Task guides that are relevant to the product area that you are accessing Help from.
 
 ![Help pane](./media/help-pane-wiki.png)
 
@@ -116,7 +119,7 @@ From the Help pane, you can access articles that apply to the client. When you f
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Managment, and Retail and configure some settings.
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Management, and Retail and configure some settings.
 
 > [!NOTE]
 > - In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
@@ -165,7 +168,7 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Microsoft's free eLearning site. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Provides a cloud-based collaborative workspace that customers and partners can use to manage projects from pre-sales to implementation and operations. This site is useful in all phases of an implementation. |
 | [Support blog](https://aka.ms/AXSupportBlog)                                                    | Provides tips and tricks that are posted by the Support team. |
-| [Docs.microsoft.com/previous versions](https://docs.microsoft.com/previous-versions/dynamics/) | Hosts content from previous releases. |
+| [Docs.microsoft.com/previous versions](/previous-versions/dynamics/) | Hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/)                                          | Hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Provides evaluation and sales information. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Hosts training resources, downloadable reports and white papers, and is the primary support site for service plan holders. May require a service plan to access some resources on the site. |
