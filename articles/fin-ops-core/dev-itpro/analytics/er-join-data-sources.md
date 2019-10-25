@@ -76,9 +76,9 @@ In advance, you must also download from [Microsoft Download Center](https://go.m
 
 | **Content description**  | **File name**   |
 |--------------------------|-----------------|
-| Sample **ER data model** configuration file, which is used as the data source for the examples.| Model to learn JOIN data sources.version.1.1.xml |
-| Sample **ER model mapping** configuration file, which implements the ER data model for the examples. | Mapping to learn JOIN data sources.version.1.1.xml |
-| Sample **ER format** configuration file. This file describes the data to populate the ER format component for the examples. | Format to learn JOIN data sources.version.1.1.xml |
+| Sample **ER data model** configuration file, which is used as the data source for the examples.| [Model to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Sample **ER model mapping** configuration file, which implements the ER data model for the examples. | [Mapping to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Sample **ER format** configuration file. This file describes the data to populate the ER format component for the examples. | [Format to learn JOIN data sources.version.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ### Activate a configurations provider
 
