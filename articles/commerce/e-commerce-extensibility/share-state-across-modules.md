@@ -5,7 +5,7 @@ title: Share state across modules
 description: This topic describes how to share state across multiple modules by using data actions in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
