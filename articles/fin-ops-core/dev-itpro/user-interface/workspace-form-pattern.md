@@ -50,11 +50,11 @@ The rest of this topic will focus on the Operational workspace pattern and the T
 
 ### Operational workspace
 
-[![Workspace(1)](./media/workspace1.png)](./media/workspace1.png)
+[![Wireframe for operational workspace](./media/workspace1.png)](./media/workspace1.png)
 
 ### Tabbed workspace
 
-[![Workspace(2)](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
+[![Wireframe for tabbed workspace](./media/tabbedWorkspaceWireframe.png)](./media/tabbedWorkspaceWireframe.png)
 
 ## Pattern changes for Finance and Operations
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
@@ -134,7 +134,7 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **FMClerkWorkspace** 
 
-[![Workspace(3)](./media/workspace3.png)](./media/workspace3.png)
+[![Operational workspace example](./media/workspace3.png)](./media/workspace3.png)
 
 ## Frequently asked questions
 
@@ -153,4 +153,4 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 example
 
-[![Workspace(5)](./media/workspace5.png)](./media/workspace5.png)
+[![Previous version workspace example](./media/workspace5.png)](./media/workspace5.png)

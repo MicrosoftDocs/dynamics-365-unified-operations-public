@@ -62,18 +62,16 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
       - name: What's new or changed
         items:
-        - name: What's new or changed in Retail home page
-          href: ../retail/get-started/whats-new.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail 10.0.6
+        - name: Preview features in Retail version 10.0.7
+          href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail version 10.0.6
           href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail 10.0.5
+        - name: Retail version 10.0.5
           href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/commerce/toc.json
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-          - name: Finance and Operations apps 10.0.6 (November 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/commerce/toc.json
           - name: Finance and Operations apps 10.0.5 (October 2019)
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/commerce/toc.json
           - name: Finance and Operations 10.0.4 (July 2019)
@@ -616,6 +614,8 @@
         href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
       - name: Ship orders from another store
         href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+      - name: Hide non-carrier delivery modes from POS shipment dialog
+        href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
       - name: Task recorder and Help for MPOS and Cloud POS
         href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
       - name: Hardware peripherals
@@ -1423,20 +1423,20 @@
             href: e-commerce-extensibility/create-layout-container.md
           - name: Create a page container module
             href: e-commerce-extensibility/create-page-containers.md
+          - name: Localize a module
+            href: e-commerce-extensibility/localize-module.md
         - name: Advanced module topics
           items:
-          - name: Module globalization
-            href: e-commerce-extensibility/globalize-modules.md
           - name: Request properties object
             href: e-commerce-extensibility/request-properties-object.md
           - name: App settings
             href: e-commerce-extensibility/app-settings.md
           - name: Extend a module definition
             href: e-commerce-extensibility/extend-module-definition.md
-          - name: Working with cookies
-            href: e-commerce-extensibility/cookie-api-overview.md 
-          - name: Localize a module
-            href: e-commerce-extensibility/localize-module.md
+          - name: Cookie API overview
+            href: e-commerce-extensibility/cookie-api-overview.md
+          - name: Globalize modules by using the CultureInfoFormatter class
+            href: e-commerce-extensibility/globalize-modules.md
         - name: Develop data actions
           items:
           - name: Data actions overview
@@ -1703,4 +1703,7 @@
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Retail
     href: ../retail/index.md
- 
+  - name: Dynamics 365 Finance
+    href: ../finance/index.md
+  - name: Dynamics 365 Supply Chain Management 
+    href: ../supply-chain/index.md

@@ -66,3 +66,5 @@ During the development of modules, you can take advantage of the standard debugg
 [Create a layout container module](create-layout-container.md)
 
 [Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

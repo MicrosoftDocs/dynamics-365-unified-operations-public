@@ -212,9 +212,6 @@ A system administrator can modify tile cache parameters at run time by using the
 
 1. Click in the navigation search field on the navigation bar.
 2. Type **Tile data**, and then click **Tile data cache configuration** in the search results. 
-
-   [![Tile cache search](./media/tilecachesearch.png)](./media/tilecachesearch.png)
-
 3. Find the **FMTCurrentRentalsTile** record. 
 
    [![Tile cache parameters](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)

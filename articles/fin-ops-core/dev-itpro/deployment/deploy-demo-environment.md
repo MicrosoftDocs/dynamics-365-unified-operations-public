@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 2
 This topic explains how to deploy a demo environment on Microsoft Azure using Microsoft Dynamics Lifecycle Services (LCS). This topic applies to deploying a demo environment for:
 
 - Dynamics 365 Finance
-- Dynamice 365 Supply Chain Management
+- Dynamics 365 Supply Chain Management
 - Dynamics 365 Retail
 
 ## Prerequisites

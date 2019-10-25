@@ -429,7 +429,6 @@ The high availability environment includes an availability set for each tier of 
 
 For high availability, the Data Import/Export Framework and the RapidStart Connector should be installed on all virtual machines that are AOS servers. You might have to install these components. For instructions, see [Install the Data import/export framework (DIXF, DMF)](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/install-the-data-import-export-framework-dixf-dmf) and [Install the RapidStart Connector](https://technet.microsoft.com/library/hh771574.aspx).
 
-
 ### Configure Microsoft SQL Server Reporting Services for load balancing
 
 The BI servers in the environment host Microsoft SQL Server Reporting Services. To configure Reporting Services for load balancing, see the [Configure SSRS for load balancing in your Azure deployment](https://blogs.msdn.com/b/axsupport/archive/2015/06/25/configure-ssrs-for-load-balancing-in-your-azure-deployment.aspx) blog post.

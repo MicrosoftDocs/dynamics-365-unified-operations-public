@@ -5,7 +5,7 @@ title: Action messages
 description: An action message is a system-generated suggestion to change an existing planned or firmed order.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
