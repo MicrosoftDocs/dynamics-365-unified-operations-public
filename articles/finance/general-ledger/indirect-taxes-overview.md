@@ -99,5 +99,9 @@ You typically would have to settle and pay 2,500 to the tax authority when the i
 
 However, if you are using a conditional sales tax, you settle with the tax authority when you receive the payment from the customer on July 30.
 
+### Postdated check
+
+If you use postdated check as the payment method, when the payment is created, the bank account isn't cleared. In some countries, the VAT becomes 'realized' liability when the payment really clear the bank, which means the postdated check is settled. You can enable it by turn on **Realize the conditional tax when postdated checks are drawn* in **Cash and bank management > Setup > Cash and bank management parameters > Postdated checks**.
+
 
 For more information, see [Set up withholding tax](tasks/set-up-withholding-tax.md).
