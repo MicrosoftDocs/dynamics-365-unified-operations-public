@@ -71,8 +71,6 @@ To add header information, select the top row in the Excel file and insert empty
 
 In the **Design** tab, click **Add** fields, and then select **BudgetPlanHeader** as the entity data source.
 
-[![Click Add fields](./media/bpt6-1024x615.png)](./media/bpt6.png)
-
 Point the cursor to the desired location in the Excel file. Click **Add label** to add the field label to the selected location. Select **Add Value** to add the value field to the selected place. Click **Done** to close the designer.
 
 ## [![Select Add Value](./media/bpt7.png)](./media/bpt7.png)
