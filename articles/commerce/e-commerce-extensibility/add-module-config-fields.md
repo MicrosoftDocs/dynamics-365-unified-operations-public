@@ -5,7 +5,7 @@ title: Add module configuration fields
 description: This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
