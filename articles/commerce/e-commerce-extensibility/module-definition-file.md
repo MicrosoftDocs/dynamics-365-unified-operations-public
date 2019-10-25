@@ -94,7 +94,7 @@ Here is an example of a module definition file.
 }
 ```
 
-A module definition file also exposes configuration fields, so that a page author can configure module settings and contains resource definitions. In the above example there is a configuration field for a image alignment setting (where the available values are **left**, **right**).  Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, and Microsoft Dynamics 365 Retail product data.
+A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for a image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Microsoft Dynamics 365 Retail product data.
 
 The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. 
 
@@ -108,7 +108,7 @@ The page author can configure the settings of a module on a specific page withou
 * **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
 * **"dataActions"** – The data actions node is used to register the data actions that should be run for the module.
 * **"slots"** – Slots are defined only in container modules. They are exposed in the authoring tools. Allow and deny lists can be defined for a slot to allow or disallow specific modules from being accepted in that slot.
-* **"attributes"** – Attributes are used to control script injectors properties.  For more details see the (script injectors)[script-injector.md] documentation.
+* **"attributes"** – Attributes are used to control script injectors properties.  For more details, see [Script injectors](script-injector.md).
 
 ## Register data actions to a module
 
@@ -159,7 +159,7 @@ export interface IAsyncTestModuleData {
 You can then access the results of the data action in your module.
 
 
-To get more details on the config section see the [add module configuration fields](add-module-config-fields.md) documentation.
+To get more details on the config section, see [Add module configuration fields](add-module-config-fields.md).
 
 ## Additional resources
 
