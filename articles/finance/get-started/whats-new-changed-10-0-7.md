@@ -121,6 +121,10 @@ Instead of creating a new tax component from scratch, users can now create it wi
 Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [Preview features in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
 
 
+### Bug fixes 
+For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
+
+
 ### Dynamics 365: 2019 release wave 2 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
