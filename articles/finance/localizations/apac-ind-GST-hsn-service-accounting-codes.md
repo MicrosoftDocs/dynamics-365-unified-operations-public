@@ -56,7 +56,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 9. In the **Description** field, enter a value.
 10. Select **Close**.
 
-![HSN codes](media/HSN-codes.PNG)
+
 
 ## Define SACs
 
@@ -66,7 +66,7 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 4. In the **Description** field, enter a value.
 5. Save the record, and then select **Close**.
 
-![SACs](media/SAC-codes.PNG)
+
 
 ## Assign HSN codes and SACs to products
 
@@ -93,7 +93,7 @@ The following setup is required for the calculation of GST:
 
     When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
 
-    ![Accounts payable charges code](media/ap-charge-code.png)
+    
 
 7. Go to **Accounts receivable** \> **Charges setup** \> **Charges code**.
 8. Select a charges code.
@@ -103,4 +103,4 @@ The following setup is required for the calculation of GST:
 
     When this charge code is selected for a transaction, the defined tax information is automatically entered, and GST is calculated accordingly.
 
-    ![Accounts receivable charges code](media/ar-charge-code.png)
+    
