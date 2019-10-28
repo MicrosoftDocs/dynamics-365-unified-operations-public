@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/24/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -83,7 +83,7 @@ When using the AX Query object by explicitly specifying not to include an ORDER 
 ## Additional resources
 
 ### Platform update 31 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 31, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/).
+For information about the bug fixes included in each of the updates that are part of Platform update 31, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=386525&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
