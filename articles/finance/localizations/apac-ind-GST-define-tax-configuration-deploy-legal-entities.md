@@ -42,12 +42,12 @@ ms.dyn365.ops.version: 10.0.4
 
     The new tax configuration is listed in the **Available configurations** grid.
 
-    ![Selecting a configuration version](media/configuration-version.PNG)
+    ![Selecting a configuration version](media/configuration-version_upd.png)
 
 8. Select **Save**, and then select **Synchronize**.
 9. Select **Activate**.
 
-    ![Active configuration](media/active.PNG)
+    ![Active configuration](media/active_upd.png)
 
     The configuration that you activated is updated as the current configuration.
 
@@ -67,7 +67,7 @@ ms.dyn365.ops.version: 10.0.4
 16. Save the record.
 17. Select **Activate** to activate the configuration for the company.
 
-![GST company](media/gst-company.PNG)
+    ![GST company](media/gst-company_upd.PNG)
 
 ## Update the configuration version
 
@@ -86,6 +86,6 @@ ms.dyn365.ops.version: 10.0.4
 
     The configuration that you activated is updated as the current configuration.
 
-8. Select **Save**, and then select **Close**
+8. Select **Save**, and then select **Close**.
 
-![New active configuration](media/update-configuration-2.png)
+    ![New active configuration](media/update-configuration-2.png)
