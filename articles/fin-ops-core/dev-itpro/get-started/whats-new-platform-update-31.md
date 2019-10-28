@@ -37,7 +37,22 @@ ms.dyn365.ops.version: Platform update 31
 This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457. While the general availability date is January 2020, the new features are available for early release in October 2019. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace. To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+
+To enable the new grid while the feature is in preview, follow the steps below:
+
+1.   **Enable the flight**: Execute the following SQL statement:
+
+      INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
+
+2.    **Reset IIS** to flush the static flighting cache.
+
+3.    **Find the feature**: Go to the Feature management workspace. If "New grid control" does not appear in the list, select Check for updates.
+
+4.    **Enable the feature**: Find the "New grid control" feature in the list of features, and select Enable now on the details pane.
+
+All subsequent user sessions will start with the new grid enabled.
+
 
 ## Updates to saved views
 The saved views feature continues to evolve with Platform update 31. Included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities. For more information about Saved views, see [Saved views](../../fin-ops/get-started/saved-views.md).  
