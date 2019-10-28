@@ -55,7 +55,7 @@ Complete the procedures in this topic to import goods that have Goods and Servic
 10. Select the **Assessable value** check box.
 11. In the **Charges value** field, enter a value.
 
-    ![Maintain charges page](media/Capture2019052105upd.png)
+    ![Maintain charges page](media/Capture2019052105_upd.png)
 
 12. Save the record, and then select **Close**.
 
