@@ -48,16 +48,14 @@ Allocate charges according to weight and volume of goods during facture creation
         allocated, and then select **Financials \> Maintain charges** to
         maintain miscellaneous charges on the line.
 
-![](media/b4677d0384278dd5590fba3fcd26f314.png)
+![](media/1%20Update%20facture.png)
 
->   A screenshot of a computer screen Description automatically generated
-
-1.  On the Action Pane, select the **Financials** tab **\> Maintain charges \>
+4.  On the Action Pane, select the **Financials** tab **\> Maintain charges \>
     Allocate charges** to allocate charges.
 
-2.  On the **Allocate charges** page, in the **Charges allocation** field,
+5.  On the **Allocate charges** page, in the **Charges allocation** field,
     select one of the new allocation methods: **Gross weight** or **Volume**.
 
-![](media/87c90f0d6ed6f0237c06cb4b16a0e537.png)
+![](media/2%20Allocate%20charges.png)
 
-1.  Specify other details and post the facture as usual.
+6.  Specify other details and post the facture as usual.
