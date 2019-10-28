@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ERSolutionTable, EROperationDesigner
+ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
@@ -299,8 +299,8 @@ Next, you will modify the existing calculated field so that it uses the configur
 2.	On the **Versions** fast tab, select the record that has a status of **Completed**.
 3.	Select **Exchange**.
 4.	Select **Export as XML file**.
-5.	Select **O**.
-6.	The web browser downloads a **Format to learn how to lookup LE data.xml file**. Store this file locally.
+5.	Select **OK**.
+6.	The web browser downloads a **Format to learn how to lookup LE data.xml** file. Store this file locally.
 
 Repeat steps in this section for parent items of the **Format to learn how to lookup LE data** format, and store the following files locally:
 
