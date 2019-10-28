@@ -52,13 +52,13 @@ To learn more about this feature, complete the example in this topic.
 
 ## Example: Use JOIN data sources in ER model mappings
 
-The following steps explain how the System administrator or Electronic reporting developer can configure an Electronic reporting (ER) model mapping to get data from multiple application tables at once by using data sources of the **Join** type to improve data access performance. These steps can be performed for any company of Microsoft Dynamics 365 for Finance and Operations (Finance and Operations) or Regulatory Configuration Services (RCS).
+The following steps explain how the System administrator or Electronic reporting developer can configure an Electronic reporting (ER) model mapping to get data from multiple application tables at once by using data sources of the **Join** type to improve data access performance. These steps can be performed for any company of Dynamics 365 Finance or Regulatory Configuration Services (RCS).
 
 ### Prerequisites
 
 To complete the examples in this topic, you must have access to one of the following depending on what service is used to compete these steps:
 
-**Access to Finance and Operations for one of the following roles:**
+**Access to Finance for one of the following roles:**
 
 - Electronic reporting developer
 - Electronic reporting functional consultant
@@ -82,7 +82,7 @@ In advance, you must also download from [Microsoft Download Center](https://go.m
 
 ### Activate a configurations provider
 
-1. Access either Finance and Operations or RCS in the first session of your web browser.
+1. Access either Finance or RCS in the first session of your web browser.
 2. Go to **Organization administration \> Workspaces \> Electronic reporting**.
 3. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the configuration provider for the Litware, Inc. (http://www.litware.com) sample company is listed, and that it's marked as **Active**. If you don't see this configuration provider, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure.
 
@@ -192,7 +192,7 @@ Review settings of the ER model mapping component. The component is configured t
 
 ### Execute ER format
 
-1.	Access Finance and Operations or RCS in the second session of your web browser using same credentials and company as in the first session.
+1.	Access Finance or RCS in the second session of your web browser using same credentials and company as in the first session.
 2.	Go to **Organization administration \> Electronic reporting \> Configurations**.
 3.	Expand **Model to learn JOIN data sources** configuration.
 4.	Select **Format to learn JOIN data sources** configuration.
@@ -221,7 +221,7 @@ Review settings of the ER model mapping component. The component is configured t
 
 #### Analyze ER format execution trace
 
-1.	In the first session of Finance and Operations or RCS, select **Designer**.
+1.	In the first session of Finance or RCS, select **Designer**.
 2.	Select **Performance trac**e.
 3.	In the **Performance trace** grid, select the top-most record of the latest execution trace of an ER format that used the current model mapping component.
 4.	Select **OK**.
@@ -237,7 +237,7 @@ Review settings of the ER model mapping component. The component is configured t
 
 ### Execute ER format
 
-1.	Switch to your web browser tab with the second session of Finance and Operations or RCS.
+1.	Switch to your web browser tab with the second session of Finance or RCS.
 2.	Select **Run**.
 3.	On the dialog page, select **Yes** in the **Use JOIN data source** field.
 4.	Select **OK**.
@@ -247,7 +247,7 @@ Review settings of the ER model mapping component. The component is configured t
 
 #### Analyze ER format execution trace
 
-1.	In the first session of Finance and Operations or RCS, select **Designer**.
+1.	In the first session of Finance or RCS, select **Designer**.
 2.	Select **Performance trace**.
 3.	In the **Performance trace** grid, select top-most record representing the latest execution trace of an ER format that used the current model mapping component.
 4.	Select **OK**.
