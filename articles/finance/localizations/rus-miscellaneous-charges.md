@@ -1,3 +1,5 @@
+# Allocation of miscellaneous charges in proportion to weight and volume
+
 Miscellaneous charges can be allocated to the cost of goods, either works or
 services, that are purchased or sold. Russian localization has two additional
 methods to allocate charges:
@@ -12,8 +14,7 @@ methods to allocate charges:
     quantity in the inventory transaction multiplied by the **Volume** field
     from the inventory item card.
 
-Allocate charges according to weight or volume of goods
-=======================================================
+## Allocate charges according to weight or volume of goods
 
 1.  Select **Accounts payable \> Purchase orders \> All purchase orders** or
     **Accounts receivable \> Orders \> All sales orders.**
@@ -29,8 +30,7 @@ Allocate charges according to weight or volume of goods
 
 4.  Specify other details and post the sales order as usual.
 
-Allocate charges according to weight and volume of goods during facture creation
-================================================================================
+## Allocate charges according to weight and volume of goods during facture creation
 
 1.  Select **Accounts payable \> Purchase orders \> All purchase orders** or
     **Accounts receivable \> Orders \> All sales orders**.
