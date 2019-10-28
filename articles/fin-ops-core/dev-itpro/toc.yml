@@ -1651,7 +1651,7 @@
       - name: Language and locale descriptors in across product and Help
         href: help/language-locale.md
       - name: Running the Custom Help Toolkit
-        href: help/migrate-dynamicsax2012.md
+        href: help/custom-help-toolkit.md
       - name: Convert Dynamics AX custom Help for use in Dynamics 365
         href: help/migrate-dynamicsax2012.md
   - name: Dynamics 365 Supply Chain Management 

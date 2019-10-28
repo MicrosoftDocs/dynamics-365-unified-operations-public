@@ -184,10 +184,10 @@ In the previous sections, you created a search service. You must now set it up b
 
     ```
     Replace the following parameters with appropriate values:
-        - *Datasourcename*: Specify a name for the data source, such as *customhelpdatasource*.
-        - [*StorageAccountName*]: Specify the storage account name, such as *customhelpstorage*.
-        - [*key*]: Specify the access key for your storage account, such as */Equl2ErBeArcbW8mxQdFDRP9fxPcnNOaUayMqfgxiZ6h/LhKSUchTf0m6Z8HgBOTBzUdaPvQu4bpdflej p6w==*.
-        - [*JSONStorageContainerName*]: Specify the name of your BLOB container, such as *customhelpcontainer*.
+        - *Datasourcename*: Specify a name for the data source, such as *customhelpdatasource*.  
+        - [*StorageAccountName*]: Specify the storage account name, such as *customhelpstorage*.  
+        - [*key*]: Specify the access key for your storage account, such as */Equl2ErBeArcbW8mxQdFDRP9fxPcnNOaUayMqfgxiZ6h/LhKSUchTf0m6Z8HgBOTBzUdaPvQu4bpdflej p6w==*.  
+        - [*JSONStorageContainerName*]: Specify the name of your BLOB container, such as *customhelpcontainer*.  
 3. Choose **Send**, and make sure that the value in the **Status** field is **201 Created**.  
 
 Next, you configure the search service to have an index of your content.
