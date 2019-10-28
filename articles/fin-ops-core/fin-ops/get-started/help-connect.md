@@ -2,10 +2,10 @@
 # required metadata
 
 title: Connect the Help system
-description: This topic describes the components of the Help system for Finance and Operations apps, and provides an overview of how to connect them and a summary of how to create custom help. 
+description: This topic describes the components of the Help system for certain Dynamics 365 apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the components of the Help system for Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. It provides an overview of how to connect these components and a summary of how to create custom help.
+This topic describes the components of the Help system for Dynamics 365 Finance, Supply Chain Management, Retail, and Talent. It provides an overview of how to connect these components and a summary of how to create custom help.
 
 ## Help architecture
 
@@ -48,7 +48,7 @@ The following illustration shows the parts of the Help system. The in-product He
 ## Connecting the Help system
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both Retail and Talent.
+> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both [Retail](/dynamics365/retail/) and [Talent](/dynamics365/talent/).
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
 
@@ -69,10 +69,10 @@ After you complete these steps, you can open the **Help** pane and click the **T
 
 ### Showing translated task guides
 
-Translated task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In Finance and Operations apps, to see localized task guide help, make sure that you are connected to the May library. The language that a task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
+Translated Task guides were first shipped in the May 2016 APQC Unified Library, and the Getting Started library. In the relevant Dynamics 365 app, to see localized Task guide help, make sure that you are connected to the May library. The language that a Task guide appears in is controlled for each user by the Language settings under **Options** &gt; **Preferences**.
 
 > [!NOTE]
-> Even though many task guides have been translated, right now the client is not showing the translated task guide names. Also, only the task guides that were released in February 2016 are available in translation in the May library. We will release an updated library with additional translations.
+> Even though many Task guides have been translated, right now the client is not showing the translated Task guide names. Also, only the task guides that were released in February 2016 are available in translation in the May library. We will release an updated library with additional translations.
 >
 > - If a task guide has been translated, when you open that task guide all the text of the task guide will appear in your selected language.
 > - If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
@@ -89,15 +89,11 @@ For partners, if you promote a library to be a corporate library, and include it
 
 ### Connect a custom site
 
-Microsoft has provided a white paper and sample code that describe how to create and connect a custom help site to the Help pane. For more information, see:
+Microsoft has provided a white paper and sample code that describe how to create and connect a custom help site to the Help pane. For more information, see [Connect a custom help site](help-custom.md).  
 
-- [Create Custom Help for Finance and Operations apps (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
-- [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
+## See also
 
-## Additional resources
-
-[Help overview](help-overview.md)
-
-[Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)
-
-[How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Help overview](help-overview.md)  
+[Connect a custom help site](help-custom.md)  
+[Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)  
+[How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
