@@ -108,7 +108,7 @@ The Talent team extensively tests and validates each new release on various test
 
 ## Preview features in a sandbox environment
 
-Service updates are generally available though the action center in LCS. You can manually apply the update to all environments, including production. If you don't apply the update to the designated sandbox or production environment, Microsoft will auto-apply the update based on the update settings for the LCS project. For more information about changing your update settings, see [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates).
+Service updates are generally available through the action center in LCS. You can manually apply the update to all environments, including production. If you don't apply the update to the designated sandbox or production environment, Microsoft will auto-apply the update based on the update settings for the LCS project. For more information about changing your update settings, see [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates).
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
