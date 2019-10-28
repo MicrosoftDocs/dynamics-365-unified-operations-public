@@ -116,7 +116,7 @@ For more information about provisioning a sandbox environment, see [Provision a 
 
 ## Report bugs during early access
 
-Please report any bugs through [Microsoft Dynamcs 365 support](https://dynamics.microsoft.com/support/).
+Please report any bugs through [Microsoft Dynamics 365 support](https://dynamics.microsoft.com/support/).
 
 ## See also
 
