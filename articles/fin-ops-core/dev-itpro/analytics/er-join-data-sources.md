@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.1
 
 [!include[banner](../includes/banner.md)]
 
-While configuring Electronic reporting (ER) model mappings or formats, you can add required data sources of the **Join** type. At design time, a **Join** data source is configured as a set of several data sources each of which returns a list of records. For every data source except the first one, you need to define necessary conditions to join records of the current and previous data sources. At runtime, a configured data source of **Join** type returns a single joined list of records containing fields from the records of nested data sources.
+While configuring Electronic reporting (ER) model mappings or formats, you can [add](#review) required data sources of the **Join** type. At design time, a **Join** data source is configured as a set of several data sources each of which returns a list of records. For every data source except the first one, you need to define necessary conditions to join records of the current and previous data sources. At runtime, a configured data source of **Join** type [returns](#executeERformat) a single joined list of records containing fields from the records of nested data sources.
 
 The following type of joins are currently supported:
 
@@ -43,7 +43,7 @@ The following type of joins are currently supported:
 - Inner (right) join:
     - Join only records of the first (left-most) data source and only records of the second (right-most) data source matching to each other in accordance to configured conditions.
 
-In the configured **Join** data source, when all data sources are the **Table records** type, execution of the Join data source can be performed at the database level using a single SQL statement. This reduces the number of database calls, which improves model mapping performance. Otherwise, execution of **Join data** source is performed in memory.
+In the configured **Join** data source, when all data sources are the **Table records** type, execution of the Join data source can be [performed at the database level](#analyze) using a single SQL statement. This reduces the number of database calls, which improves model mapping performance. Otherwise, execution of **Join data** source is performed in memory.
 
 > [!NOTE]
 > Using the **VALUEIN** function in ER expressions that specify conditions for joining records in data sources of Join type is not supported yet. Visit the [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md) page for more details about this function.
@@ -145,7 +145,7 @@ Review settings of the ER model mapping component. The component is configured t
 
 7.	Close the page.
 
-### Review ER model mapping (part 2)
+### <a name="review"></a> Review ER model mapping (part 2)
 
 Review settings of the ER model mapping component. The component is configured to access information about versions of ER configurations, details of configurations and configuration providers with using a data source of the **Join** type.
 
@@ -190,7 +190,7 @@ Review settings of the ER model mapping component. The component is configured t
 9.	Close the page.
 10.	Select **Cancel**.
 
-### Execute ER format
+### <a name="executeERformat"></a> Execute ER format
 
 1.	Access Finance or RCS in the second session of your web browser using same credentials and company as in the first session.
 2.	Go to **Organization administration \> Electronic reporting \> Configurations**.
@@ -245,7 +245,7 @@ Review settings of the ER model mapping component. The component is configured t
 
     ![ER user dialog page](./media/GER-JoinDS-Set2Run.PNG)
 
-#### Analyze ER format execution trace
+#### <a name="analyze"></a> Analyze ER format execution trace
 
 1.	In the first session of Finance or RCS, select **Designer**.
 2.	Select **Performance trace**.
