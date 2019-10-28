@@ -146,7 +146,7 @@ Note the following items:
 If approval is required for invoices to be posted with invoice matching discrepancies, the Approve posting with matching discrepancies toggle on the Invoice matching details page must be selected before the invoice can be posted with price matching errors and quantity matching errors. If approval is not required, invoice processing can continue if there are no other posting errors.
 
 
-For more information, see [Accounts payable invoice matching](accounts-payable-invoice-matching.md).
+For more information, see [Accounts payable invoice matching overview](accounts-payable-invoice-matching.md).
 
 
 
