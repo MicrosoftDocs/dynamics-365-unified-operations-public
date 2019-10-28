@@ -36,9 +36,6 @@ ms.dyn365.ops.version: 10.0.4
 2. Select **New**.
 3. In the **Tax Setup** field, enter a value.
 4. In the **Description** field, enter a value, and then select **Save**.
-
-    ![Tax setup](media/tax-setup.PNG)
-
 5. Select **Configurations**.
 6. On the **Tax configuration** tab, in the **Available configurations** section, select **New**.
 7. In the **Configuration version** field, select a value.
@@ -48,9 +45,6 @@ ms.dyn365.ops.version: 10.0.4
     ![Selecting a configuration version](media/configuration-version.PNG)
 
 8. Select **Save**, and then select **Synchronize**.
-
-    ![Synchronization progress indicator](media/synchronize.png)
-
 9. Select **Activate**.
 
     ![Active configuration](media/active.PNG)
@@ -64,9 +58,6 @@ ms.dyn365.ops.version: 10.0.4
 11. Select the **Select** check box.
 12. In the **Report controller** field, select a value.
 13. Select **Save**, and then select **Close**.
-
-    ![GST reports](media/GST-reports.png)
-
 14. On the **Companies** FastTab, create a record.
 15. In the **Companies** field, select a value.
 
