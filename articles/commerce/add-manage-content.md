@@ -42,10 +42,10 @@ The following topics provide detailed information about how to add and manage si
 
 - To change the text, images, or video on an existing site page, see [Work with modules](work-with-modules.md).
 - To help guarantee a foolproof, on-brand authoring experience for web content authors, see [Work with templates](work-with-templates.md).
-- To rearrange sections on a site page, see [Work with layouts](work-with-layouts.md).
+- To rearrange sections on a site page, see [Work with preset layouts](work-with-layouts.md).
 - To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md).
 
 ## Additional resources
 
-- [Page elements overview](page-elements-overview.md)
-- [Document states overview](document-states-overview.md)
+- [Page elements](page-elements-overview.md)
+- [Document states and lifecycle](document-states-overview.md)
