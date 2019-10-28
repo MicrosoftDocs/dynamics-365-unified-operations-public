@@ -90,7 +90,7 @@ Users who generate a report can delete their own reports. Users with the **Maint
 
 Starting with the 10.0.7 release the concept of expiration dates has been introduced. A new mandatory feature will be enabled in the feature mangement workspace. This feature contains the following changes:
 * Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated
-* Any existing reports from before the feature was installed will be given a 90 day expiration period
+* Any existing reports from before the feature was installed will be given a 90 day expiration period. The date may show as blank for a short period of time until the financial reporting service is running and performs the update. 
 * Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will additionally have the ability to modify the expiration period. Initially a period of 90 days is available, as well as marking the report to never expire. When an expiration such as 90 days is selected, it grants 90 days from today, which is different behavior than the 90 days from the original generation date granted on report generation. 
 
 ## Default reports
