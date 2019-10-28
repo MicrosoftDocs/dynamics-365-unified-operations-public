@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
-ms.search.validFrom: 
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
 
 ---
