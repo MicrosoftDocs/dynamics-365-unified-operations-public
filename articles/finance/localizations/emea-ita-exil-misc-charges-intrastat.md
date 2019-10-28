@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Miscellaneous charges per Kg in Intrastat declaration
-description: Miscellaneous charges per Kg in Intrastat declaration.
+title: Miscellaneous charges per kilogram in an Intrastat declaration
+description: This topic explains how to enable, set up, and use miscellaneous charges per kilogram for Intrastat declaration.
 author: ilkond
 manager: AnnBe
-ms.date: 27/08/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,19 +24,20 @@ ms.search.region: Italy
 # ms.search.industry: 
 ms.author: ilyako
 ms.search.validFrom: 2019-11-29
-ms.dyn365.ops.version: 10.0.7
+ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# Miscellaneous charges per kilogram in Intrastat declaration
+# Miscellaneous charges per kilogram in an Intrastat declaration
 
 [!include [banner](../includes/banner.md)]
 
-Intrastat is the system for collecting information and generating statistics about the trade of goods among countries/regions of the European Union (EU). For more information, see [Intrastat overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/emea-intrastat).
+[!include [banner](../includes/preview-banner.md)]
+
+Intrastat is the system for collecting information and generating statistics about the trade of goods among countries/regions of the European Union (EU). For more information, see [Intrastat overview](emea-intrastat.md).
 
 Among other reporting elements Intrastat declaration contains information about miscellaneous charges that are usually calculated as a percentage on the invoice amount. In Italy miscellaneous charges are often calculated as the multiplication of the cost for each kilogram and goods weight in kilograms.
 
-This topic explains how to enable, set up and use miscellaneous charges per kilogram for Intrastat declaration.
 
 ## Prerequisites
 
@@ -45,21 +46,23 @@ This topic explains how to enable, set up and use miscellaneous charges per kilo
 
 ## Set up miscellaneous charges per kilogram
 
-In released products Master Data in **Foreign trade** FastTab, **Intrastat** section, in the field **Cost charges per kg** define charge amount per kilorgam.
+On the **Released products master data** page, on the **Foreign trade** FastTab, in the **Intrastat** section, define the charge amount per kilogram in the **Cost charges per kg** field.
 
 ![Cost charges per kg](media/emea-ita-exil-misc-charge-kg-pic1.jpg)
 
 > [!NOTE]
-> Make sure that products weight is defined in kilograms.
+> Verify that the products weight is defined in kilograms.
 
 ## Miscellaneous charges calculation
 
-When transferring transactions to Intrastat declaration (for more information, see [Transfer transactions to the Intrastat](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/localizations/tasks/transfer-transactions-intrastat)), **Statistical charges amount** will be calculated using the formula:
+When transferring transactions to an Intrastat declaration, **Statistical charges amount** will be calculated using the formula:
 
->*Statistical charges amount = Cost of each kilogram * Net weight (in kilograms)*
+    *Statistical charges amount = Cost of each kilogram * Net weight (in kilograms)*
 
 If **Chagres percentage** is also defined then both types of miscellaneous charges will be used in the calculation:
 
->*Statistical charges amount = (Invoice amount * Charges percentage) + (Cost of each kilogram * Net weight)*
+    *Statistical charges amount = (Invoice amount * Charges percentage) + (Cost of each kilogram * Net weight)*
 
 ![Charges amount](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
+
+For more information, see [Transfer transactions to the Intrastat](tasks/transfer-transactions-intrastat.md)
