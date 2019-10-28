@@ -2,10 +2,10 @@
 # required metadata
 
 title: India Goods and Services Tax (GST) overview
-description: This article provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance. 
+description: This topic provides detailed information about India Goods and Services Tax (GST) for Microsoft Dynamics 365 Finance. 
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,6 +36,11 @@ ms.search.validFrom: 2017-12-31
 This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following video.
 
 - [Tax engine overview (YouTube video)](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
+- [GST overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-1---overview-of-features-roadmap-july-8-2019)
+- [GTE overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-2---global-tax-engine-july-10-2019)
+- [How to extend GTE (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-3---extending-gte-july-12-2019)
+- [GSTR report overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-4---gstr-reporting-capabilities-july-16-2019)
+- [How to extend GER (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-5)
 
 ## Prerequisites
 
