@@ -36,8 +36,8 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to create Microsoft Excel templates that can be used with budget plans.
 
-This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview.](budget-planning-overview-configuration.md) 
-You can also follow the [Budget planning 101](budget-plan.md) tutorial to learn basic module configuration and usage principles.
+This topic shows how to create Excel templates that will be used with budget plans using the standard demo data set and the Admin user login. For more information about budget planning, see [Budget planning overview](budget-planning-overview-configuration.md). 
+You can also follow the [Budget planning](budget-plan.md) tutorial to learn basic module configuration and usage principles.
 
 ## Generate a worksheet using budget plan document layout
 
