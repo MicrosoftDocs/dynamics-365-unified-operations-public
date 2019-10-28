@@ -5,7 +5,7 @@ title: Validations, default values, and unmapped fields
 description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields).
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -139,7 +139,7 @@ To skip entity-level **initValue** for all back-end tables for a data entity, a 
 
 ### DefaultRow
 
-**DataEntity.DefaultRow: DataEntity.DefaultRow** is used in conjunction with **defaultField** and **getDefaultDependencies** to provide defaults. It isn't called automatically by X++ or the form engine. **Table.DefaultRow: Table.DefaultRow** is called automatically for each data source after mapping is completed, and before the insert and validation on the data source.
+**DataEntity.DefaultRow: DataEntity.DefaultRow** is used in conjunction with **defaultField** and **getDefaultingDependencies** to provide defaults. It isn't called automatically by X++ or the form engine. **Table.DefaultRow: Table.DefaultRow** is called automatically for each data source after mapping is completed, and before the insert and validation on the data source.
 
 [![Captureb](./media/captureb.png)](./media/captureb.png)
 
