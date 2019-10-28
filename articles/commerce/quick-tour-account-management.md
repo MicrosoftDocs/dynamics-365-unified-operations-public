@@ -90,4 +90,4 @@ The following illustration shows an example of a **Wishlist** page.
 
 ![Example of a Wishlist page](./media/Account-Management-Wishlist.PNG)
 
-For more information about account management modules and how to author them, see [Account Management](account-management.md).
+For more information about account management modules and how to author them, see [Account management pages](account-management.md).
