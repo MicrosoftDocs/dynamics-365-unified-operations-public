@@ -77,7 +77,7 @@ At least two financial companies are required for cross-company tasks such as ce
 The Financials data packages also have five inventory products to support the creation of invoices that can move through the accounts receivable and accounts payable processes. These items use a minimum of inventory and product functionality to support those processes. However, you no longer have to set up products when you want to demonstrate only Financials functionality. More complete products will be added when you import the Supply chain data packages.
 
 ### Expense management
-The expense management data packages contain data for expense management and aren't specific to project management. The names of these data packages consist of **225-Expense** followed by the legal entity that the packages are intended for. For example, the Expense management data package for the HQUS legal entity is named 225 Expense management HQUS.zip.
+The expense management data packages contain data for expense management and aren't specific to project management. The names of these data packages consist of **225-Expense** followed by the legal entity that the packages are intended for. For example, the Expense management data package for the HQUS legal entity is named **225-Expense management HQUS.zip**.
 
 ### Project management and accounting
 
