@@ -139,7 +139,7 @@ To skip entity-level **initValue** for all back-end tables for a data entity, a 
 
 ### DefaultRow
 
-**DataEntity.DefaultRow: DataEntity.DefaultRow** is used in conjunction with **defaultField** and **getDefaultDependencies** to provide defaults. It isn't called automatically by X++ or the form engine. **Table.DefaultRow: Table.DefaultRow** is called automatically for each data source after mapping is completed, and before the insert and validation on the data source.
+**DataEntity.DefaultRow: DataEntity.DefaultRow** is used in conjunction with **defaultField** and **getDefaultingDependencies** to provide defaults. It isn't called automatically by X++ or the form engine. **Table.DefaultRow: Table.DefaultRow** is called automatically for each data source after mapping is completed, and before the insert and validation on the data source.
 
 [![Captureb](./media/captureb.png)](./media/captureb.png)
 
