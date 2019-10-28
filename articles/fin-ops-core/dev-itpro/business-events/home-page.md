@@ -81,7 +81,7 @@ Endpoints let you manage the destinations for sending business events to. The fo
 - Azure Event Grid
 - Azure Event Hub
 - HTTPS
-- Microsoft Flow
+- Microsoft Power Automate
 
 Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
 
