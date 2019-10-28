@@ -37,11 +37,11 @@ ms.dyn365.ops.version: Platform update 31
 This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457. While the general availability date is January 2020, the new features are available for early release in October 2019. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
 
-To enable the new grid while the feature is in preview, follow the steps below:
+To enable the new grid while this feature is in preview, follow these steps:
 
-1.   Enable the flight by executing the following SQL statement:
+1.   Enable the flight by using the following SQL statement:
 
       INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
 
@@ -49,9 +49,9 @@ To enable the new grid while the feature is in preview, follow the steps below:
 
 3.    Go to the **Feature management** workspace in your Finance and Operations app. 
 
-4.    Select the **New grid control** feature in the list of features, and select **Enable now** in the details pane.
+4.    Select the **New grid control** feature in the list of features, and then select **Enable now** in the details pane.
 
-      If **New grid control** does not appear in the list of featues, select **Check for updates**.
+      If **New grid control** does not appear in the list of features, select **Check for updates**.
 
 All subsequent user sessions will start with the new grid enabled.
 
