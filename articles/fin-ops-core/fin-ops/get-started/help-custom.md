@@ -5,7 +5,7 @@ title: Connect a custom help site
 description: Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane.  
 author: edupont04
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,6 +45,6 @@ The process for setting up a custom Help solution consists of publishing content
 
 ## See also
 
-[Deploying custom Help](help-deploy.md)  
+[Deploying custom Help](../../dev-itpro/help/deploy.md)  
 [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Connect the Help system](help-connect.md)  

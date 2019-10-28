@@ -60,4 +60,4 @@ You can deploy your content to an existing website, or you can set up a dedicate
 
 ### Reuse Dynamics AX 2012 content
 
-You can reuse content from Dynamics AX 2012. For more information, see [Convert Dynamics AX custom Help for use in Dynamics 365](help-migrate-dynamicsax2012.md).  
+You can reuse content from Dynamics AX 2012. For more information, see [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md).  
