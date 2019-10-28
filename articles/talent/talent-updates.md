@@ -72,9 +72,9 @@ The Talent team releases updates on the following schedule:
 - **Weekly**: Small bug fixes
 
 > [!NOTE]
-> The [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md) applies to customers enrolled in First Release and when the service update is made generally available.
+> The [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy) applies to customers enrolled in First Release and when the service update is made generally available.
 
-Public previews are made available as a deployable package via the shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md).
+Public previews are made available as a deployable package via the shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version).
 
 ## Get early visibility into Talent releases
 
@@ -84,9 +84,9 @@ You can find out what's in the works for Talent and what we've released in the f
 
 - [Dynamics 365 Release Plans](https://docs.microsoft.com/dynamics365/release-plans/)
 
-- [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/en-us/dynamics365/talent/whats-new)
+- [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
 
-- [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs)
+- [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs)
 
 ## Get early access to mandatory end-user impacting features
 
@@ -122,6 +122,6 @@ Please report any bugs through [Microsoft Dynamics 365 support](https://dynamics
 
 - [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)
 - [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
-- [Software lifecycle policy](../../dev-itpro/migration-upgrade/versions-update-policy.md)
+- [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 - [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates)
 
