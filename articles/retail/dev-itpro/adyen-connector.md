@@ -42,7 +42,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 |---|---|
 | Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
-| Card not present | Refers to payment transactions where a physical card is not present, such as E-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manyally either on an E-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
+| Card not present | Refers to payment transactions where a physical card is not present, such as e-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
 ## Overview
 
@@ -128,7 +128,7 @@ The Dynamics 365 Payment Connector for Adyen takes advantage of the device-agnos
 
 #### Supported debit and credit cards
 
-| Brand | Variant | Card present | E-Commerce | Call Center |
+| Brand | Variant | Card present | e-Commerce | Call Center |
 |---|---|:-:|:-:|:-:|
 | MasterCard | Credit | ✔ | ✔ | ✔ |
 | MasterCard | Debit | ✔ | ✔ | ✔ |
@@ -232,7 +232,7 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Brazil | Future release |
 
 #### Supported card not present countries
-For card not present scenarios, such as E-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
+For card not present scenarios, such as e-Commerce or Call Center, special cross-country, cross-currency, and cross-market considerations apply. Please contact <MicrosoftDynamics@adyen.com> for additional details.
 
 #### Supported Dynamics 365 payment features
 The following table shows the set of Dynamics 365 payment features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some Retail components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
@@ -403,7 +403,7 @@ If you're packaging your own version of Modern POS by using the Retail SDK, you 
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this topic.
 
-### E-Commerce
+### e-Commerce
 
 1. Sign in to Retail headquarters, and go to **Retail \> Channels \> Online stores**.
 2. Select the online store to add the Dynamics 365 Payment Connector for Adyen for.
