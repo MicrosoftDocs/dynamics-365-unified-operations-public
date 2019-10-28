@@ -99,6 +99,6 @@ Follow these steps to manually add or remove results for a seed product:
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable omni-channel product recommendations](enable-product-recommendations.md)
+[Enable product recommendations](enable-product-recommendations.md)
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
