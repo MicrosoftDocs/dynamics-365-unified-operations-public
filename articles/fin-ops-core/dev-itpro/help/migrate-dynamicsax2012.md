@@ -5,7 +5,7 @@ title: Convert Dynamics AX 2012 content for Dynamics 365
 description: This topic describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-## Converting Dynamics AX 2012 content
+If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Retail. However, you must transform the HTML files so that they can be used in the custom Help environment.  
 
-If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365. However, you must transform the HTML files so that they can be used in the custom Help environment.  
+## Converting Dynamics AX 2012 content
 
 The Dynamics 365 custom Help Toolkit includes a Windows PowerShell script, ```run_ax2012.ps1```, that can transform Dynamics AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the Dynamics AX 2012 HTML files:  
 
@@ -87,16 +87,33 @@ Here is a description of the metadata values:
 
 The following values are used in the Dynamics 365 client and will be added to the custom implementation of the Help pane:  
 
-|Property  |Description  |
-|----------|-------------|
-|ms.search.scope| The value determines which client a Help topic is shown in. One or more values are supported.</br>
-Values have the following meanings:</br>
-- Core – If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. This value is useful for Microsoft since our GitHub repo serves multiple products and also includes us, because we publish many developer and IT Pro-specific topics that are not relevant for endusers.</br>
-- Operations – Finance and or Operations Supply Chain Management topic.</br>  
-- Retail – Retail topic.</br>  
-- Talent – Talent topic.</br>
-The following values are reserved for future use:  </br>
-- ms.search.region: In the future, this value will be used to limit the content that is shown to content that is tagged either as global or for the region of the implementation.  </br>
-- ms.search.validFrom: In the future, this value will be used to limit the content that is shown to content for a product that was released on a given date or earlier.  </br>
-- ms.dyn365.ops.version: In the future, this value will be used to limit the content that is shown to content for a specific version of a product or earlier.  </br>
-- ms.search.industry: In the future, this value will be used to limit the content that is shown to content for a specific industry.  |
+- ms.search.scope
+
+    The value determines which client a Help topic is shown in. One or more values are supported.
+    Values have the following meanings:
+
+    - Core – If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. This value is useful for Microsoft since our GitHub repo serves multiple products and also includes us, because we publish many developer and IT Pro-specific topics that are not relevant for endusers.
+    - Operations – Finance and or Operations Supply Chain Management topic.
+    - Retail – Retail topic
+    - Talent – Talent topic
+
+The following values are reserved for future use:
+
+- ms.search.region
+
+    In the future, this value will be used to limit the content that is shown to content that is tagged either as global or for the region of the implementation.
+- ms.search.validFrom
+
+    In the future, this value will be used to limit the content that is shown to content for a product that was released on a given date or earlier.
+- ms.dyn365.ops.version
+
+    In the future, this value will be used to limit the content that is shown to content for a specific version of a product or earlier.
+
+- ms.search.industry
+
+    In the future, this value will be used to limit the content that is shown to content for a specific industry.
+
+## See also
+
+[Deploying custom Help](deploy.md)  
+[Connect a custom help site](../../fin-ops/get-started/help-custom.md)  

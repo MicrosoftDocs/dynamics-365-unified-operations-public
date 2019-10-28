@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in certain Dynamics 365 apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -61,3 +61,17 @@ You can deploy your content to an existing website, or you can set up a dedicate
 ### Reuse Dynamics AX 2012 content
 
 You can reuse content from Dynamics AX 2012. For more information, see [Convert Dynamics AX custom Help for use in Dynamics 365](migrate-dynamicsax2012.md).  
+
+### Getting updated content from Microsoft
+
+If your Help solution is based on Microsoft's content, then you can fork our repo and then use standard Git tools to keep your fork updated with our content updates. However, because we make frequent updates, it may be easiest to get a completely new clone of the content of our repo and regenerate the Help from the clone on a regular basis.  
+
+> [!TIP]
+> The Custom Help Toolkit includes a console app that can help integrate the latest Microsoft content with yours. For more information, see [Running the Custom Help Toolkit](custom-help-toolkit.md).
+
+
+
+## See also
+
+[Running the Custom Help Toolkit](custom-help-toolkit.md)  
+[Language and locale descriptors in across product and Help](language-locale.md)  
