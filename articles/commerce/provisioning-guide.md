@@ -302,7 +302,7 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 * [RCSU (Retail Cloud Scale Unit)](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 * [Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal)
 * [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
-* [Dynamics 365 Retail](../retail/index.md)
+* [Help resources for Dynamics 365 Retail](../retail/index.md)
 ### Microsoft Dynamics 365 Commerce Preview support
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
