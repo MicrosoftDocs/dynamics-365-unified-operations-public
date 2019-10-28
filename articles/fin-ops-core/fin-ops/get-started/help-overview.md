@@ -81,7 +81,7 @@ You can contribute and make edits to the documentation. To get started, click th
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, refer to our [contributor's guide](https://docs.microsoft.com/en-us/contribute).
+For more information, see the [Docs Contributor Guide](https://docs.microsoft.com/contribute), which is published by the team that built the Docs.microsoft.com site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
