@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,15 +41,17 @@ Previously the new grid control was available by adding "&debug=reactGrid" to th
 
 To enable the new grid while the feature is in preview, follow the steps below:
 
-1.   **Enable the flight**: Execute the following SQL statement:
+1.   Enable the flight by executing the following SQL statement:
 
       INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
 
-2.    **Reset IIS** to flush the static flighting cache.
+2.    Reset IIS to flush the static flighting cache.
 
-3.    **Find the feature**: Go to the Feature management workspace. If "New grid control" does not appear in the list, select Check for updates.
+3.    Go to the **Feature management** workspace in your Finance and Operations app. 
 
-4.    **Enable the feature**: Find the "New grid control" feature in the list of features, and select Enable now on the details pane.
+4.    Select the **New grid control** feature in the list of features, and select **Enable now** in the details pane.
+
+      If **New grid control** does not appear in the list of featues, select **Check for updates**.
 
 All subsequent user sessions will start with the new grid enabled.
 
