@@ -222,34 +222,38 @@
           href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
       - name: Online channel management 
         items:
-        - name: Set up online stores
-          href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json
-        - name: Quick tour of home page
-          href: quick-tour-home-page.md
-        - name: Quick tour of product details page
-          href: quick-tour-pdp.md 
-        - name: Quick tour of cart and checkout 
-          href: quick-tour-cart-checkout.md
-        - name: Quick tour of account management 
-          href: quick-tour-account-management.md 
+        - name: Online store overview
+          href: online-store-overview.md
         - name: Create an e-Commerce site
           items:
-          - name: Online store overview
-            href: online-store-overview.md
-          - name: Create an e-Commerce site
-            href: create-ecommerce-site.md
-          - name: Deploy a new e-Commerce site
-            href: deploy-ecommerce-site.md
-          - name: Associate an online site with a channel
-            href: associate-site-online-store.md
           - name: Configure your domain name
             href: configure-your-domain-name.md
+          - name: Deploy a new e-Commerce tenant
+            href: deploy-ecommerce-site.md
+          - name: Set up an online store channel
+            href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json            
+          - name: Create an e-Commerce site
+            href: create-ecommerce-site.md
+          - name: Associate an e-Commerce site with an online channel
+            href: associate-site-online-store.md
+          - name: Set up custom pages for user sign-ins
+            href: custom-pages-user-logins.md
           - name: Add support for a content delivery network (CDN)
             href: add-cdn-support.md
           - name: Enable location-based store detection
             href: enable-store-detection.md
-          - name: Set up custom pages for user sign-ins
-            href: custom-pages-user-logins.md
+        - name: Sample site overview
+          items:
+          - name: Overview of the home page
+            href: quick-tour-home-page.md
+          - name: Overview of default category landing page and search results page
+            href: category-search-page-overview.md 
+          - name: Overview of product details pages
+            href: quick-tour-pdp.md
+          - name: Overview of cart and checkout pages
+            href: quick-tour-cart-checkout.md
+          - name: Overview of of account management pages
+            href: quick-tour-account-management.md 
         - name: Authoring tools
           items:
           - name: Authoring home page overview
@@ -266,7 +270,7 @@
             href: manage-csp.md
         - name: Add and manage content on your site
           items:
-          - name: Ways to add content
+          - name: Add and manage content
             href: add-manage-content.md
           - name: Page elements
             href: page-elements-overview.md
