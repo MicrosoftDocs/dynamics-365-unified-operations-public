@@ -46,6 +46,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Finance 10.0.7 with Platform update 31
+
+### Chinese voucher types without Account groups selection
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Changed to the feature with account groups selection. |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about new feature design in What's new in 10.0.7 |
+
 ## Finance and Operations 10.0.6 with Platform update 30
 
 

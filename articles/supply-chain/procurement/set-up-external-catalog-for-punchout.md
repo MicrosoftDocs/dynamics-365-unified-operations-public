@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-By using the external catalog, you can ensure that the product and price information that you subsequently process in Dynamics 365 for Finance and Operations July 2017 is accurate and up to date. 
+By using the external catalog, you can ensure that the product and price information that you subsequently process in Supply Chain Management is accurate and up to date. 
 The requisition can then be approved and converted to a purchase order and an order can be placed at the vendor.
 
 When the external catalog is set up and an employee is preparing a requisition, there will be an option to redirect to an external site, the external catalog, and return the shopping basket that was created at the external site. 

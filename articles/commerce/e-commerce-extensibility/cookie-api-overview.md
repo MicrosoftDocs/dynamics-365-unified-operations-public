@@ -77,3 +77,12 @@ The following example shows how to get the value of a cookie.
 ```
 const favColor = this.props.context.request.cookies.get<string>('favoriteColor');
 ```
+## Additional resources
+
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
+
+[Extend a module definition file](extend-module-definition.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

@@ -51,6 +51,6 @@ The following table provides a summary of terms that you should be familiar with
 | Asset | <p>**Definition:** Assets are file binaries that have an extension such as .jpg, .docx, .pdf, or .mpg.</p><p>**Where it's selected:** Assets are selected as module properties for modules that require them.</p><p>**Where it's edited:** Assets are uploaded, and associated metadata is edited in the asset manager.</p> |
 
 ## Additional resources
-
 - [Add and manage content](add-manage-content.md)
-- [Document states](document-states-overview.md)
+- [Document states and lifecycle](document-states-overview.md)
+

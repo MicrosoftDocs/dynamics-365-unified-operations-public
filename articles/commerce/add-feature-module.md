@@ -80,3 +80,21 @@ To add a feature module to a new page and set the required properties, follow th
 1. In the **Action Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
 1. Save the page, and preview your changes.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a carousel module to a page](add-carousel.md)
+
+[Add a content rich block module to a page](add-content-rich-block.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)

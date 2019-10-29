@@ -47,7 +47,7 @@ This subpattern is used when actions must be defined for an individual field on 
 -   1–3 buttons
 
 ## Wireframe
-[![HorizontalFieldsButtons(1)](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
+[![Wireframe for Horizontal Fields and Buttons Group form subpattern](./media/horizontalfieldsbuttons1.png)](./media/horizontalfieldsbuttons1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -87,7 +87,9 @@ The verification checklist shows the steps for manually verifying that the form 
     -   There should be a maximum of three buttons. The last button can be a menu button.
 
 ## Examples
-Form: **SalesTable (GroupHeaderAddressHeaderOverview)** [![HorizontalFieldsButtons(2)](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
+Form: **SalesTable (GroupHeaderAddressHeaderOverview)** 
+
+[![Example of form](./media/horizontalfieldsbuttons2.png)](./media/horizontalfieldsbuttons2.png)
 
 ## Resources
 ### Typically used by patterns
@@ -107,5 +109,6 @@ This section will have answers to frequently asked questions that are related to
 -   None
 
 ### Dynamics AX 2012 content
+**SalesTable** 
 
-**SalesTable** [![HorizontalFieldsButtons(3)](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)
+[![Example of form](./media/horizontalfieldsbuttons3.png)](./media/horizontalfieldsbuttons3.png)

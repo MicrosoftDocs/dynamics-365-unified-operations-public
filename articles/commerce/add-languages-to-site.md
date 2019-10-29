@@ -163,3 +163,15 @@ The language that you added will now be available so that you can configure your
 - zh-hk
 - zh-sg
 - zu
+
+## Additional resources
+
+[Add a logo](add-logo.md)
+
+[Select a site theme](select-site-theme.md)
+
+[Add a favicon](add-favicon.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)

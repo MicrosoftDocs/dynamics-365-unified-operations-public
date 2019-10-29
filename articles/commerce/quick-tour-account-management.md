@@ -91,3 +91,12 @@ The following illustration shows an example of a **Wishlist** page.
 ![Example of a Wishlist page](./media/Account-Management-Wishlist.PNG)
 
 For more information about account management modules and how to author them, see [Account management pages](account-management.md).
+
+## Additional resources
+
+[Quick tour of the home page](quick-tour-home-page.md)
+
+[Quick tour of product details pages](quick-tour-pdp.md)
+
+[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+
