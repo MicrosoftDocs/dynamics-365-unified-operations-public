@@ -95,9 +95,9 @@ Migrating customizations from one release to the next has been simplified by mov
 
 Customers can submit a request to Microsoft for extension support to be added to the product for a needed scenario. In this release, this feature is moved to Lifecycle Services (LCS).
 
-### Embedding PowerApps in workspaces and forms
+### Embedding Microsoft Power Apps in workspaces and forms
 
-Use PowerApps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
+Use Microsoft Power Apps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed Power Apps](embed-power-apps.md).
 
 ### Custom fields
 
