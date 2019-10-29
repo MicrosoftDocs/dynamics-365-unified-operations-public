@@ -53,4 +53,4 @@ As businesses evolve and circumstances change, the credit risks for any given cu
 
 You can run the **Update customer balance statistics** process to update the balance statistics calculation that is viewed on the **Balance statistics inquiry** page. This information is used to calculate risk scores and the values shown on the credit statistics fact boxes found on the **Customer** page.
 
-You can run this process and set up a periodic batch job using the **Calculate balance statistics** page (**Credit management > Periodic tasks > Calculate balance statistics**).
+You can run the process to update customer balance statistics for a single customer, and set up a batch process to run it for multiple customers using the **Calculate balance statistics** page (**Credit management > Periodic tasks > Calculate balance statistics**).
