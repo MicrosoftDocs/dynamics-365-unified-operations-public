@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sorting sales invoice lines by packing slip
-description: This topic provides information about how to set up and print accompanying invoices that contain required packing slips details.
+title: Sort sales invoice lines by packing slip
+description: This topic explains how to set up and print accompanying invoices that include required packing slips details.
 author: ilkond
 manager: AnnBe
 ms.date: 10/28/2019
@@ -28,31 +28,32 @@ ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# Sorting sales invoice lines by packing slip
+# Sort sales invoice lines by packing slip
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-In Italy, companies often need to issue what is called, "accompanying invoices" which are a combination of an ordinary invoice and a DDT (transposrt document or packing slip).
+In Italy, companies must often issue *accompanying invoices*. Accompanying invoices are combinations of an ordinary invoice and a transport document or packing slip (documento di trasporto, or DDT).
 
 ## Prerequisites
 
-- The primary address of the legal entity must be in **Italy**.
-- In **Feature management**, verify that the feature **Sales invoice lines sorting by packing slips** is enabled. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
-- On the **Print management setup** page (**Accounts receivable** /> **Setup** /> **Forms** /> **Form setup** /> **General** FastTab /> **Print management**), set the reference to **SalesInvoice.Report_IT** layout for Customer invoice (Original).
+- The primary address of the legal entity must be in Italy.
+- In the **Feature management** workspace, verify that the **Sales invoice lines sorting by packing slips** feature is turned on. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- Customer invoices must use the new **SalesInvoice.Report\_IT** layout. Go to **Accounts receivable** /> **Setup** /> **Forms** /> **Form setup**, and then, on the **General** tab, select **Print management**. On the **Print management setup** page, under **Module - accounts receivable \> Customer invoice**, select **Original \<Default\>**. Then, in the **Report format** field, select **SalesInvoice.Report\_IT**.
 
-![Invoicing of packing slips setup](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
-
-> [!NOTE]
-> With the feature **Sales invoice lines sorting by packing slips** enabled, the parameter, **Print packing slip specifications** will be ignored as it is considered to be not enabled. To view this, go to **Accounts receivable > Setup > Forms > Form setup > Invoice** (FastTab).
-> ![Print packing slip specifications](media/emea-ita-exil-invoice-packing-slip-pic3.jpg)
-
-## Accompanying invoices printing
-After you have enabled and set up the feature, the invoice report printout will contain invoice lines that are grouped and sorted by packing slip.
-
-![Invoicing of packing slips](media/emea-ita-exil-invoice-packing-slip-pic.jpg)
+    ![New layout selected for customer invoices](media/emea-ita-exil-invoice-packing-slip-pic2.jpg)
 
 > [!NOTE]
-> The new layout is applicable only to invoices that are based on sales orders. The functionality does not apply to free-text invoices, because they don't use packing slips.
+> When the **Sales invoice lines sorting by packing slips** feature is turned on, the system ignores the setting of the **Print packing slip specifications** check box on the **Invoice** tab of the **Form setup** page (**Accounts receivable \> Setup \> Forms \> Form setup**). Even if this check box is selected, it's treated as if it's cleared.
+>
+> ![Print packing slip specifications check box](media/emea-ita-exil-invoice-packing-slip-pic3.jpg)
 
+## Printing accompanying invoices
+
+After you've turned on and set up the feature, the printed invoice report will contain invoice lines that are grouped and sorted by packing slip.
+
+![Example of an invoice where invoice lines are grouped and sorted by packing slip](media/emea-ita-exil-invoice-packing-slip-pic.jpg)
+
+> [!NOTE]
+> The new layout is applicable only to invoices that are based on sales orders. It isn't applicable to free-text invoices, because they don't use packing slips.
