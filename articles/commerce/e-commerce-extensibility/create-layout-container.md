@@ -5,7 +5,7 @@ title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -60,9 +60,6 @@ The following example shows the addition of a **slots** section that contains tw
     "description": "Sample container module",
     "categories": ["container"],
     "tags": [""],
-    "module": {
-        "view": "./campaignContainer"
-    },
     "config": {
     },
     "slots": {

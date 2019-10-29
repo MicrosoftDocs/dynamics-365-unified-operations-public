@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data is delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
+In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -76,6 +76,9 @@ At least two financial companies are required for cross-company tasks such as ce
 
 The Financials data packages also have five inventory products to support the creation of invoices that can move through the accounts receivable and accounts payable processes. These items use a minimum of inventory and product functionality to support those processes. However, you no longer have to set up products when you want to demonstrate only Financials functionality. More complete products will be added when you import the Supply chain data packages.
 
+### Expense management
+The expense management data packages contain data for expense management and aren't specific to project management. The names of these data packages consist of **225-Expense** followed by the legal entity that the packages are intended for. For example, the Expense management data package for the HQUS legal entity is named **225-Expense management HQUS.zip**.
+
 ### Project management and accounting
 
 The Project management and accounting data packages contain data for project accounting and expense management. The names of these data packages consist of **250-Project management and accounting** followed by the legal entity that the packages are intended for. For example, the Project management and accounting data package for the HQUS legal entity is named **250-Project management and accounting-HQUS.zip**.
@@ -100,6 +103,7 @@ Before you load the data packages, you must manually follow these steps.
 2. Start the **Ready to post** batch scheduler. This batch job automatically posts transactions. You must start the scheduler in every legal entity where data should be processed. Follow the steps in the "The Ready to post process" section later in this topic.
 3. If you aren't using the en-us locale, you may need to alter the source data format to match the format the packages were built on. 
 Once you've loaded a data entity, click into the source data format column which should be specified as value = Excel. From the next page, again select Excel. From within the source data formats page, the bottom fast-tab will be regional settings. Change the language locale to en-us if it isn't specified as en-us. After loading packages, you can change it back to its original non en-us value. 
+
 ## Load the packages
 
 The data packages must be loaded into a specific legal entity in a specific order. The number before the name of the package gives you guidance about the order that the data must be loaded in. For example, you must import **100-System and Shared.zip** before you can load the Financials package for the HQUS legal entity, **200-Financials-HQUS.zip**. Then, to add Supply chain data to the HQUS legal entity, you can load **300-Supply chain 1 of 2-HQUS.zip** and **300-Supply chain 2 of 2-HQUS.zip**.
@@ -130,9 +134,10 @@ Commercial Data
 | 200 - Financials - CONS | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PICH | You can load this package alone or together with another Financials package. |
 | 200 - Financials - PIFB | You can load this package alone or together with another Financials package. |
-| 250 - Project management - HQUS | Load this package after the HQUS Financials package and before any of the other Financials packages. If you want to also use Supply chain, you must import this package first. |
-| 300 - Supply chain 1 of 2 - HQUS | Load this package after the HQUS Financials package. If you want to also use Project management, you must import the Project management package first before you import this package. |
-| 310 - Supply chain 2 of 2 - HQUS | Load this package after the HQUS Supply chain 1 of 2 package. |
+| 225 - Expense Management - HQUS | Follow the prerequisite step before starting the import. Load this package after the HQUS Financials package. |
+| 250 - Project management - HQUS | Load this package after the HQUS Financials or Expense package. If you want to also use Supply chain, you must import this package first. |
+| 300 - Supply chain 1 of 2 (base) - HQUS | Load this package after the HQUS Financials package. If you want to also use Project management, you must import the Project management package first before you import this package. |
+| 310 - Supply chain 2 of 2 (Discrete) - HQUS | Load this package after the HQUS Supply chain base package. |
 | 300 - Supply chain - PIFB | Load this package after the PICH Supply chain package. |
 | 300 - Supply chain - PICH | Load this package after the PIFB Supply chain package. |
 | 900 - Financial transactions - HQUS | Load this package after the HQUS Financials package. |
@@ -148,6 +153,7 @@ Public Sector data
 
 To load the data correctly, you need to load one package at a time, import it, and then load the next one once the import is complete. We are considering additional methods for loading the demo data to improve the process.
 
+### Troubleshooting and known issues
 > [!NOTE]
 > We discovered an issue with the Number sequence references entity that causes a random failure during import although the data in the packages is correct. If you see an error during the import of number sequence references, follow these steps to process the failed records.
 >
@@ -156,8 +162,9 @@ To load the data correctly, you need to load one package at a time, import it, a
 > 3. Change the **Run for** value to **Criteria** and **Change Rows with previous errors** to **Yes**.
 > 4. Click **Ok** and then click **Run** on the form that appears.
 > 5. Repeat these steps until all records import without error.
->
-> We are working on the issue and will release a fix for it as soon as possible.
+
+> [!NOTE]
+> There is currently an issue that some data entities have the same name, which can cause an import failure for **document types** and **date intervals** in the **200 - Financials** packages. If you see an error during the import of these entities extract them from the .zip file provided and manually import, making sure to use the **document types** pointing to **DocuTypeEntity** and **date intervals** pointing to **LedgerDateIntervalEntity**. Once these are imported you can retry the failed records from the **200 - Financials** packages. 
 
 ### After you load the packages
 
@@ -169,8 +176,9 @@ After you load the data packages, you must also manually follow these steps.
 
 1. Start the workflow jobs. Select **System administration** &gt; **Workflow infrastructure configuration**, and then select **OK**.
 2. Set up policy precedence rules. Select **Procurement and sourcing** &gt; **Setup** &gt; **Policies** &gt; **Purchasing policies**, and then select **Parameters**. Then select **Companies**, and move it to the right column.
-3. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
-4. Add Print management settings for each module.
+3. Setup policy precedence prior to importing Expense packages. Select **Expense management** &gt; **Setup** &gt; **Policies** &gt; **Expense report**, and then select **Parameters**. then select **Companies**, and move it to the right column.
+4. After you load the Project management and accounting packages, you must run the **Resource capacity roll-up** batch job. You can run this job from the **Synchronize resource capacity roll-ups** page (**Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resource capacity roll-ups**). Specify an end date that lets you schedule resources a long time in the future. After the batch job is run, automatic generation of team functionality will be enabled in the project's work breakdown structure (WBS).
+5. Add Print management settings for each module.
 
 ### Scenario scripts
 

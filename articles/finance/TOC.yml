@@ -2307,6 +2307,8 @@
             href: ../supply-chain/localizations/rus-goods-transit-postponed.md
           - name: Cash flow management
             href: localizations/rus-cash-flow.md
+          - name: Allocation of miscellaneous charges in proportion to weight and volume
+            href: localizations/rus-miscellaneous-charges.md
         - name: Reporting
           items:
           - name: Financial reporting
