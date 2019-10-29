@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Account management overview
+title: Overview of account management pages
 description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Account management overview
+# Overview of account management pages
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -94,8 +94,8 @@ For more information about account management modules and how to author them, se
 
 ## Additional resources
 
-[Quick tour of the home page](quick-tour-home-page.md)
+[Overview of the home page](quick-tour-home-page.md)
 
-[Quick tour of product details pages](quick-tour-pdp.md)
+[Overview of product details pages](quick-tour-pdp.md)
 
-[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
