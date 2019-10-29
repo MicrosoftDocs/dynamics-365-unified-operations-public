@@ -86,10 +86,9 @@ You can use the ER framework to set up application-specific parameters for an ER
     ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.	Select the **VAT19** tax code.
-8.	In the **Lookup result** field of the new record, select the drop-down arrow to open the lookup.
+8.	In the **Lookup result** field of the new record, select the drop-down arrow to open the lookup. The lookup presents the list of values for the TaxationLevel format enumeration for selection.
 
-    The lookup presents the list of values for the TaxationLevel format enumeration for selection.
-Note that, if German is selected as the preferred language of the user that you're signed in as, the labels of the values in the lookup will be in German, provided that they have been translated in the base ER format. Additionally, if the label of a lookup data source has been translated, that label will appear in the user's preferred language on the **Lookups** tab.
+    Note that, if German is selected as the preferred language of the user that you're signed in as, the labels of the values in the lookup will be in German, provided that they have been translated in the base ER format. Additionally, if the label of a lookup data source has been translated, that label will appear in the user's preferred language on the **Lookups** tab.
 
     ![ER application specific parameters page](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
