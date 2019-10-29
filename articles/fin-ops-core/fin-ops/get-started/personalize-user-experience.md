@@ -121,7 +121,7 @@ The following tools are available on the **Personalization** toolbar:
 - Use the **Insert** button to see a list of elements that can be inserted on a page.
 
     - Select the **Field** tool under **Insert** to add a field to your page. When you use the **Field** tool, you can add only fields that are part of the page definition but that aren't currently shown on the page. For information about how to create new fields that aren't part of the current page definition, see [Custom fields](user-defined-fields.md). After you select the **Field** tool, you must first select the group or area where you want to add a field. A dialog box shows the list of fields that are related to the selected group or area. In the dialog box, select one or more fields to add, and then select **Insert**. To remove a field that you previously added, repeat the process, but clear the selection of the field in the dialog box.
-    - Select the **PowerApp** tool under **Insert** to embed an app that was created by using Microsoft PowerApps into the page. For detailed information about how to embed a PowerApps app into a page, see [Embed PowerApps](embed-power-apps.md).
+    - Select the **PowerApp** tool under **Insert** to embed an app that was created by using Microsoft Power Apps into the page. For detailed information about how to embed a Power Apps app into a page, see [Embed Power Apps](embed-power-apps.md).
 
 - Select the **Manage** button to view a list of management options that are related to all personalizations for the current page.
 
