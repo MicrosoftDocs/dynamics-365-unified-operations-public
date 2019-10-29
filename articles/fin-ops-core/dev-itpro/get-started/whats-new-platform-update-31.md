@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/28/2019
+ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
