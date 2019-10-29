@@ -108,6 +108,8 @@ For more information about how to author a checkout page, see [Add a checkout mo
 
 [Overview of the home page](quick-tour-home-page.md)
 
+[Overview of default category landing page and search results page](category-search-page-overview.md)
+
 [Overview of product details pages](quick-tour-pdp.md)
 
 [Overview of account management pages](quick-tour-account-management.md)
