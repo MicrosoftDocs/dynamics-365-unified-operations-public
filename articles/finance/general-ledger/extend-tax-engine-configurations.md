@@ -50,7 +50,7 @@ The following tax terms are mentioned in this topic.
 |BCD| Basic Customs Duty|
 
 ## Prerequisites
-Before you can complete the example scenarios, complete the following tasks, [Import GTE configuation from LCS](tax-engine-import-configuration.md).
+Before you can complete the example scenarios, complete the following tasks, [Tax engine import configuration](tax-engine-import-configuration.md).
 
 ### Add a configuration provider and make it the active provider
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
