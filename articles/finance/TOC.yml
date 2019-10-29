@@ -985,8 +985,8 @@
         - name: Set up purchase agreement classifications in the public sector
           href: public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
         - name: Forecast position distribution
-          href: public-sector/forecase-positions.md
-        - name: Forecase position reports in the public sector
+          href: public-sector/forecast-positions.md
+        - name: Forecast position reports in the public sector
           href: public-sector/forecast-position-reports.md
       - name: Accounts receivable in the public sector
         items:
