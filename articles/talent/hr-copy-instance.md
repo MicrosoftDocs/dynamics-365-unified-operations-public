@@ -5,7 +5,7 @@ title: Copy a Core HR instance
 description: This topic explains how to copy the database for Microsoft Dynamics 365 Talent - Core HR to a sandbox environment.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/03/2019
+ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ---
 # Copy a Core HR instance
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
@@ -43,11 +43,14 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dyna
 The following events occur when you copy a Core HR database:
 
 - The copy process erases the existing database in the target environment. After the copy process is completed, you can't recover the existing database.
+
 - The target environment will be unavailable until the copy process is completed.
+
 - Documents in Microsoft Azure Blob storage aren't copied from one environment to another. Therefore, any document handling documents and templates that are attached won't be changed but will remain in their current state.
+
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before other users are allowed back into the system.
+
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
-- All data management frameworks that have recurring import and export jobs must be fully processed and stopped in the target system before the copy process is started. In addition, we recommend that you select the database from the source system after all recurring import and export jobs have been fully processed. In this way, you help guarantee that there are no orphaned files in Azure Storage from either system. This step is important because orphaned files can't be processed after the database is restored in the target environment. After the restore process, the integration jobs can resume.
 
 ## Copy the Core HR database
 
@@ -57,35 +60,49 @@ To complete this task, you first copy an instance. You then sign in to the Micro
 > When you copy an instance, the database is erased in the target instance. The target instance is unavailable during this process.
 
 1. Sign in to LCS, and select the LCS project that contains the instance that you want to copy.
+
 2. In your LCS project, select the **Talent App Management** tile.
+
 3. Select the instance to copy, and then select **Copy**.
+
 4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the value of the **Copy status** field to be updated to **Completed**.
+
 5. Select **Power Platform**, and sign in to the Microsoft Power Platform Admin Center.
+
 6. Select the PowerApps environment to copy, and then select **Copy**.
+
 7. When the copy process is completed, sign in to the target instance, and enable Common Data Service integration. For more information and instructions, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
 
 ## Data elements and statuses
 
 The following data elements aren't copied when you copy a Core HR instance:
 
-- Email addresses in the **LogisticsElectronicAddress** table.
-- The batch job history in the **BatchJobHistory**, **BatchHistory**, and **BatchConstraintHistory** tables.
-- The Simple Mail Transfer Protocol (SMTP) password in the **SysEmailSMTPPassword** table.
-- The SMTP Relay server in the **SysEmailParameters** table.
-- Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables.
-- Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables.
-- Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment.
-- The connection string in the **PersonnellIntegrationConfiguration** table.
+- Email addresses in the **LogisticsElectronicAddress** table
 
-Some of these elements aren't copied because they are environment-specific. Examples include **BatchServerConfig** and **SysCorpNetPrinters** records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still enabled in the user acceptance testing (UAT) environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup actions.
+- The batch job history in the **BatchJobHistory**, **BatchHistory**, and **BatchConstraintHistory** tables
+
+- The Simple Mail Transfer Protocol (SMTP) password in the **SysEmailSMTPPassword** table
+
+- The SMTP Relay server in the **SysEmailParameters** table
+
+- Print Management settings in the **PrintMgmtSettings** and **PrintMgmtDocInstance** tables
+
+- Environment-specific records in the **SysServerConfig**, **SysServerSessions**, **SysCorpNetPrinters**, **SysClientSessions**, **BatchServerConfig**, and **BatchServerGroup** tables
+
+- Document attachments in the DocuValue table. These attachments include any Microsoft Office templates that were overwritten in the source environment
+
+- The connection string in the **PersonnelIntegrationConfiguration** table
+
+Some of these elements aren't copied because they are environment-specific. Examples include **BatchServerConfig** and **SysCorpNetPrinters** records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still enabled in the user acceptance testing (sandbox) environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup actions.
 
 In addition, the following statuses change when you copy an instance:
 
 - All users except Admin are set to **Disabled**.
-- All batch jobs are set to **Withhold**.
+
+- All batch jobs, except for some system jobs, are set to **Withhold**.
 
 ## Environment admin
 
-The system admin account (the **Admin** user ID) in the target environment is reset to the value that is found in the web.config file in that environment. This value should match the admin account from LCS. To see what this account is, open the **Environment Details** page of your target sandbox environment in LCS. The value that was selected in the **Environment Administrator** field when the environment was first deployed is updated to the system admin in the transactional database. Therefore, the tenant of the environment will also be the tenant of the environment admin.
+All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be that you're an Administrator in the target environment. If you aren't, you won't be able to sign in to the target sandbox environment after the copy has completed.
 
-If you used the admin user provisioning tool in your environment to change the value in the web.config file, it might not match the value in LCS. If you have to use a different account, you must deallocate and delete the target sandbox environment and then redeploy it by using another account. You can then refresh the database to restore the data. For information about how to refresh the database, see [Refresh database](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/database/database-refresh).
+All non-Administrator users in the target sandbox environment are disabled to prevent unwanted sign-ins in the sandbox environment. Administrators can reenable users if needed.
