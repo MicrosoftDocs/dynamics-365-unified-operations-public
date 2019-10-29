@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Tender based discounts
-description: This topic provides an overview of functionality that enables retailers to configure discounts for certain tender types.
+title: Tender-based discounts
+description: This topic provides an overview of functionality that lets retailers configure discounts for specific tender types.
 author: bebeale
 manager: AnnBe
 ms.date: 10/25/19
@@ -30,39 +30,47 @@ ms.dyn365.ops.version: Version 10.0.7
 
 ---
 
-# Tender based discounts
+# Tender-based discounts
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-It is common practice for retailers to release private branded credit cards. Retailers benefit from getting preferred rates from the banks, and the credits cards can result in an increase in the frequency that customers visit the store, thus directly improving the bottom line of the retailer. Because of these benefits, retailers are motivated to increase the usage frequency of their branded credit cards. To achieve this goal, retailers often provide additional discounts for using the cards. 
+It's a common practice among retailers to release private, branded credit cards. The retailers benefit because they get preferred rates from the banks. Additionally, because these credits cards can encourage customers to visit the store more often, they help improve the retailer's bottom line. Therefore, retailers have an incentive to increase customer use of their branded credit cards. To achieve this goal, they often provide additional discounts to customers who use these credit cards.
 
-Alternatively, retailers who don't provide branded cards may want to motivate customers to pay by alternate means such as cash, gift card, or loyalty, thereby reducing the expense in credit card processing fees. Those retailers provide discounts for these alternate tender types.
+Alternatively, retailers who don't provide branded credit cards might want to encourage customers to pay by using other tender types, such as cash, gift cards, or loyalty points. In this way, they can help reduce the expense of credit card processing fees. Therefore, retailers might provide discounts to customers who use these alternative tender types.
 
-With Dynamics 365 Retail, retailers can configure a discount percentage to be applied on qualified lines if the user pays using the preferred tender. The customer can choose to do partial payment or a full payment, and Retail determines the appropriate discount amount. It's important to note that the discount is given on the pre-tax amount of the qualified items. These discounts do not compete with item-based discounts such as periodic/manual discounts and they are always compounded over the item discounts. This means that even if an exclusive periodic discount is applied on the item, the tender-based discount will still be applied on top of the exclusive discount. Similarly, if a threshold discount is applied on the transaction and the tender-based discount reduces the total below the threshold, the threshold discount will remain on the transaction. Even though tender discounts reduce the subtotal of the transaction, the auto-charges applied on the transaction are not affected. For example, if the the delivery charges are calculated to be $5 because the subtotal was above $100, and tender-based discounts reduce the amount to below $100, the delivery charge amount will still be $5 for the order.
+In Microsoft Dynamics 365 Retail, retailers can configure a discount percentage that is applied to qualified lines if the customer pays by using the preferred tender type. The customer can decide whether to do a partial payment or a full payment, and Retail determines the appropriate discount amount. Note that the discount is always given on the pre-tax amount of the qualified items.
+
+Tender-based discounts don't compete with item-based discounts, such as periodic or manual discounts. They are always compounded over the item discounts. Therefore, even if an exclusive periodic discount is applied to an item, the tender-based discount is still applied on top of the exclusive periodic discount. Likewise, if a threshold discount is applied to the transaction, and the tender-based discount reduces the total below the threshold, the threshold discount is still applied to the transaction.
+
+Even though tender-based discounts reduce the subtotal of the transaction, automatic charges that are applied to the transaction aren't affected. For example, if the delivery charges are calculated as $5 because the subtotal was more than $100, and the tender-based discount reduces the amount so that it's less than $100, the delivery charges are still $5 for the order.
 
 > [!NOTE]
-> The tender-based discount is proportionally distributed on the qualified sales lines and reduces the pre-tax amount of the individual lines. In case multiple tender-based discounts are configured for a tender type (for exampple, cash), then the best tender-based discount will apply.
+> Tender-based discounts are proportionally distributed to the qualified sales lines and reduce the pre-tax amount of the individual lines. If multiple tender-based discounts are configured for a tender type (for example, cash), only the best tender-based discount is applied.
 
-The tender-based discount can only be applied to sales lines for which the prices are not locked. If an order is modified and new sales lines are added to the order, the tender-based discount will only be applicable to the new sales lines during payment. While placing a customer order for pickup or shipping, the discount will only be applied to the deposit amount, because once the order is placed, during fulfillment, the prices of the sales lines are locked and any balance paid during pickup or authorized during shipping won't result in a tender-based discount. To provide the tender-based discount on the entire amount of customer orders, the retailer must collect the entire amount as a deposit up front.
+Tender-based discounts can be applied only to sales lines where the prices aren't locked. If new sales lines are added to an order, the tender-based discount is applied to the new sales lines only during payment. While a customer order for pickup or shipment is being placed, the tender-based discount is applied only to the deposit amount. After the order is placed, during fulfillment, the prices of the sales lines are locked. Therefore, no tender-based discount is applied to any balance that is paid during pickup or authorized during shipment. The tender-based discount can be applied to the whole amount of a customer order only if the retailer collects the whole amount as a deposit while the order is being placed.
 
-> [!NOTE]
-> Currently in Retail, these discounts are restricted to two payment types; credit cards and cash. 
+> [!IMPORTANT]
+> In Retail, tender-based discounts are currently limited to two payment types: credit cards and cash.
 
-## Point of sale (POS) user experience
-If the tender-based discount is set up for cash and the cashier hits a button that is mapped to the pay cash operation, the tender-based discount will automatically get applied to the transaction and the reduced amount will be shown as the balance. However, if the cashier hits the back button on the payment screen, the discount will be removed and the cashier will see the original amount on the transaction screen. The tender-based discount gets removed if the payment line is voided.
+## POS user experience
 
-For cards payments, the retailer may set the discount on one or more types of credit cards but unlike cash payments, the system can't verify the type of card used unless the card is authorized. If the discount gets applied after authorization, the payment authorization wwill be for a higher amount, but the payment capture will be for a lower amount. To avoid this situation, if a customer chooses to pay with a card, a dialog is displayed to the user listing the cards which will result in additional savings. The cashier could then ask the customer if he wants to use one of the preferred cards to get additional discount. If the cashier chooses the preferred card, then the tender-based discount will be applied on the transaction and the reduced amount will be shown on the payment screen and the authorization will be also be for the reduced amount. If the user inserts a different card than the one selected by the cashier, then the system will throw an error message and the authorization will be voided.
+If the tender-based discount is set up for cash, and the cashier at the point of sale (POS) selects a button that is mapped to the Pay cash operation, the tender-based discount is automatically applied to the transaction. The reduced amount is then shown as the balance. However, if the cashier selects the **Back** button on the payment screen, the discount is removed, and the original amount is shown on the transaction screen. The tender-based discount is removed if the payment line is voided.
+
+For cards payments, retailers can set the tender-based discount on one or more types of credit cards. However, the system can't verify the type of credit card that is used unless the card is authorized. If the discount is applied after authorization, the payment authorization will be for a larger amount, but the payment capture will be for a smaller amount.
+
+To help prevent this situation, if a customer pays with a credit card, the cashier sees a dialog box that lists credit cards that will bring the customer additional savings. The cashier can then ask whether the customer wants to use one of the preferred cards to get an additional discount. If the cashier uses a preferred card, the tender-based discount is applied to the transaction, and the reduced amount is shown on the payment screen. The authorization will be for the reduced amount. If the customer inserts a card that differs from the card that the cashier selected, an error message is shown, and the authorization is voided.
 
 ## Call center user experience
-When the user selects **Complete** during a call center order, the **Totals** screen is displayed. The totals on this screen initially don't include any tender-based discounts because the payment method has not been selected. On the **Add payment** screen, if the user chooses the payment method for which the tender-based discount is configured, the payment amount is adjusted automatically to show the discounted amount. As on POS, the user can choose to pay the full payment or partial payment. Based on the paid amount, the tender-based discount will be applied to the sales order.
+
+When the user selects **Complete** during a call center order, the **Totals** screen is shown. At first, the totals on this screen don't include tender-based discounts, because the payment method hasn't yet been selected. On the **Add payment** screen, if the user selects the payment method that the tender-based discount is configured for, the payment amount is automatically adjusted so that it reflects the discounted amount. Like the customer at the POS, the call center customer can decide whether to pay the full payment or a partial payment. Based on the amount that is paid, the tender-based discount is applied to the sales order.
 
 > [!NOTE]
-> Card validation is not performed for call center orders. For example, if the call center user selected Visa card, but Master card is used, the system will still apply the discount.
+> Card validation isn't done for call center orders. For example, if the call center user selects Visa as the credit card, but the customer uses Mastercard, the system still applies the discount.
 
-## Exclude items from discounts 
-There are certain products, such as new or in-demand items, that retailers choose to exclude from discounts. However, they still may want to allow tender-based discounts. For example, a retailer may configure Retail to not allow item-based discounts or manual discounts, but if the user pays with the preferred tender, the tender-based discount would apply. To do so, the retailers must turn off the **Prevent all discounts** and **Prevent tender-based discounts** configurations, and turn on the **Prevent retail discounts** and **Prevent manual discounts** configurations. 
+## Exclude items from discounts
+
+Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Retail so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Retail still applies the tender-based discount. To set up Retail in this manner, retailers must turn off the **Prevent all discounts** and **Prevent tender-based discounts** configurations, and turn on the **Prevent retail discounts** and **Prevent manual discounts** configurations.
 
 > [!NOTE]
-> When **Prevent all discounts** is turned on, no discounts, including tender-based discounts, will be applied to the product.  
-
+> When the **Prevent all discounts** configuration is turned on, no discounts will be applied to the product. Not even tender-based discounts will be applied.
