@@ -988,8 +988,8 @@
           href: public-sector/tasks/control-access-purchase-agreements-public-sector.md
         - name: Set up purchase agreement classifications in the public sector
           href: public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
-     - name: Accounts receivable in the public sector
-       items:
+    - name: Accounts receivable in the public sector
+      items:
         - name: Accounts receivable in the public sector overview
           href: public-sector/accounts-receivable-public-sector.md
         - name: Billing classifications and billing codes in the public sector
