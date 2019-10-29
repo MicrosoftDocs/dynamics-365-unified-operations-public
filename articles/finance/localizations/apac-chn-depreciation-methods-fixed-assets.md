@@ -44,6 +44,6 @@ To create a depreciation profile:
 2. Create a new depreciation profile. Use the method of either **Sum year digits** or **Double reducing balance**.
 3. Create a book for the depreciation method, use either **Sum year digits** or **Double reducing balance**.
 
-For more information, see [Set up fixed asset depreciation allocation](./tasks/fixed-asset-depreciation-allocation.md).
+For more information, see [Setup fixed asset depreciation allocation](./tasks/fixed-asset-depreciation-allocation.md).
 
 
