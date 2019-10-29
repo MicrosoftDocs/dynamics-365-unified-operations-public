@@ -70,7 +70,7 @@ When the user selects **Complete** during a call center order, the **Totals** sc
 
 ## Exclude items from discounts
 
-Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Retail so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Retail still applies the tender-based discount. To set up Retail in this manner, retailers must turn off the **Prevent all discounts** and **Prevent tender-based discounts** configurations, and turn on the **Prevent retail discounts** and **Prevent manual discounts** configurations.
+Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Retail so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Retail still applies the tender-based discount. To set up Retail in this manner, retailers must turn off the **Prevent all discounts** and **Prevent tender-based discounts** options, and turn on the **Prevent retail discounts** and **Prevent manual discounts** options. The options are on the **Released products** page, on the **Retail** tab.
 
 > [!NOTE]
 > When the **Prevent all discounts** configuration is turned on, no discounts will be applied to the product. Not even tender-based discounts will be applied.
