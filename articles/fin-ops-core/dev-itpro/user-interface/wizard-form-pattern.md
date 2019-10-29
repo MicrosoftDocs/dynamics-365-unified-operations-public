@@ -43,7 +43,7 @@ A wizard is a special form of user assistance that takes the user through a task
 
 ## Wireframe
 
-[![Wireframe](./media/wizard1-1024x574.png)](./media/wizard1.png)
+[![Wireframe for Wizard form](./media/wizard1-1024x574.png)](./media/wizard1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -101,7 +101,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **WrkCtrBulkResReqEditWizard** 
 
-[![wizardExample](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
+[![Wizard example](./media/wizardexample.png)](./media/wizardexample.png)[](./media/wizard2.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -121,4 +121,4 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 example
 
-[![AX 2012 example](./media/wizard3.png)](./media/wizard3.png)
+[![Previous version example](./media/wizard3.png)](./media/wizard3.png)

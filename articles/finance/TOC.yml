@@ -62,13 +62,15 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed
         items:
-        - name: Finance 10.0.6 (November 2019)
+        - name: Preview features in Finance version 10.0.7 (January 2020)
+          href: get-started/whats-new-changed-10-0-7.md
+        - name: Finance version 10.0.6 (November 2019)
           href: get-started/whats-new-finance-10-0-6.md
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-          - name: Finance and Operations 10.0.5 (October 2019)
+          - name: Finance and Operations apps 10.0.5 (October 2019)
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
           - name: Finance and Operations 10.0.4 (July 2019)
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
@@ -806,6 +808,8 @@
           href: general-ledger/general-journal-processing.md
         - name: Post periodic journals
           href: general-ledger/tasks/post-periodic-journals.md
+        - name: Reverse journal posting
+          href: general-ledger/reverse-journal-posting.md         
         - name: Process ledger allocation journal
           href: general-ledger/tasks/process-ledger-allocation-journal.md
         - name: Intercompany accounting setup
@@ -956,6 +960,10 @@
         href: public-sector/plan-public-sector-functionality.md
       - name: Create cover and signature pages for a payments report for the public sector
         href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+      - name: Forecast position distribution
+        href: public-sector/forecast-positions.md
+      - name: Forecast position reports in the public sector
+        href: public-sector/forecast-position-reports.md
       - name: Accounts payable in the public sector
         items:
         - name: Accounts payable in the public sector overview
@@ -1232,6 +1240,8 @@
           href: localizations/latam-bra-sped-ecd.md
         - name: SPED-Reinf tax statement
           href: localizations/latam-bra-sped-reinf.md
+        - name: SPED fiscal resolution 13/2019 RJ
+          href: localizations/latam-bra-resolution-13-2019-RJ.md
         - name: Parameters for legal entities
           href: localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
@@ -2301,6 +2311,8 @@
             href: ../supply-chain/localizations/rus-goods-transit-postponed.md
           - name: Cash flow management
             href: localizations/rus-cash-flow.md
+          - name: Allocation of miscellaneous charges in proportion to weight and volume
+            href: localizations/rus-miscellaneous-charges.md
         - name: Reporting
           items:
           - name: Financial reporting

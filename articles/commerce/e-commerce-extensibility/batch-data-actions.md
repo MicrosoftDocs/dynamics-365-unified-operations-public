@@ -93,3 +93,11 @@ Because this action now supports batching, if the action is called in multiple p
 
 > [!NOTE]
 > Some APIs might not support batching on their side. Therefore, when you create a batch data action, you should confirm that the service that you're using can support the action.
+
+## Additional resources
+
+[Chain data actions](chain-data-actions.md)
+
+[Create an observable data action](create-observable-data-action.md)
+
+[Share state across modules](share-state-across-modules.md)

@@ -68,3 +68,15 @@ export interface IProductFeatureProps<T> extends Msdyn365.IModule<T> {
     config: IProductFeatureConfig;
 }
 ```
+
+## Additional resources
+
+[Module definition file](module-definition-file.md)
+
+[Module view file](module-view-file.md)
+
+[Module data file](module-data-file.md)
+
+[Module mock file](module-mock-file.md)
+
+[Module test file](module-test-file.md)

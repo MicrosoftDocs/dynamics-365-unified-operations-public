@@ -83,3 +83,19 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Check the fragment in, and publish it.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Create an order confirmation module](order-confirmation-module.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)

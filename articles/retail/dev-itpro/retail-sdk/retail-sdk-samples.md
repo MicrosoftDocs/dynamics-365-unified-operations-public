@@ -5,7 +5,7 @@ title: Retail software development kit (SDK) samples
 description: This topic describes three new samples that were released together with the Retail SDK in December 2016.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/26/2019
+ms.date: 10/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -258,7 +258,7 @@ The following steps show the CRT code changes:
 The full sample code is in the RetailSDK\\SampleExtensions\\CommerceRuntime\\Extensions.ReceiptsSamplefolder folder of the SDK.
 
 > [!NOTE]
-> You should call the printing of the custom receipt type from the client. For more information, see [Extensibility patterns and best practices](https://youtu.be/qQkHFubENIY).
+> You should call the printing of the custom receipt type from the client. For more information, see [Printing custom receipt from POS](https://docs.microsoft.com/dynamics365/retail/dev-itpro/pos-trigger-printing).
 
 ### Best practice
 
