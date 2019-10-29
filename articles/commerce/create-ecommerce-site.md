@@ -5,7 +5,7 @@ title: Create an e-Commerce site
 description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
