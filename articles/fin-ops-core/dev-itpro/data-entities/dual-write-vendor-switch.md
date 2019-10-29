@@ -49,7 +49,7 @@ If you use other Dynamics 365 apps for vendor mastering and you want to continue
  
 Follow the below steps to use the extended vendor design: 
  
-1. The **SuplyChainCommon** solution package contains the workflow process templates as shown in the following image.
+1. The **SupplyChainCommon** solution package contains the workflow process templates as shown in the following image.
     ![Workflow process templates](media/dual-write-switch-3.png)
 2. Create new workflow processes using the workflow process templates: 
     1. Create a new workflow process for the **Vendor** entity using the **Create Vendors in Account Entity** workflow process template and click **OK**. This workflow handles the vendor creation scenario for the **Account** entity.
