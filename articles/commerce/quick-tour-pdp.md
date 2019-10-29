@@ -81,6 +81,8 @@ If marketing content is unique to a specific product, any marketing module can b
 
 [Overview of the home page](quick-tour-home-page.md)
 
+[Overview of default category landing page and search results page](category-search-page-overview.md)
+
 [Overview of cart and checkout pages](quick-tour-cart-checkout.md)
 
 [Overview of account management pages](quick-tour-account-management.md)
