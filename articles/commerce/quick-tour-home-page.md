@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Overview of home page
+title: Overview of the home page
 description: This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Overview of home page
+# Overview of the home page
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
