@@ -964,8 +964,8 @@
         href: public-sector/forecast-positions.md
       - name: Forecast position reports in the public sector
         href: public-sector/forecast-position-reports.md
-     - name: Accounts payable in the public sector
-       items:
+      - name: Accounts payable in the public sector
+        items:
         - name: Accounts payable in the public sector overview
           href: public-sector/accounts-payable-public-sector.md
         - name: Purchase order codes in the public sector
@@ -988,8 +988,8 @@
           href: public-sector/tasks/control-access-purchase-agreements-public-sector.md
         - name: Set up purchase agreement classifications in the public sector
           href: public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
-     - name: Accounts receivable in the public sector
-       items:
+      - name: Accounts receivable in the public sector
+        items:
         - name: Accounts receivable in the public sector overview
           href: public-sector/accounts-receivable-public-sector.md
         - name: Billing classifications and billing codes in the public sector
