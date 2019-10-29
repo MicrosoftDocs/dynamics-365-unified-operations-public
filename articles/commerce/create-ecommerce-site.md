@@ -15,7 +15,7 @@ ms.technology:
 
 ms.search.form: 
 # ROBOTS: 
-audience: Enduser
+audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
@@ -76,3 +76,7 @@ After your site is created, you can verify that it is associated with your onlin
 [Enable location-based store detection](enable-store-detection.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Authoring home page overview](authoring-home-overview.md)
+
+[Add a new site page](add-new-page.md)
