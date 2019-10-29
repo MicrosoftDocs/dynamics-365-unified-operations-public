@@ -260,3 +260,9 @@ In the preceding example, you have accessed application-specific parameters of a
                     .run(args);
             }
         ```
+
+## Additional resources
+
+[Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
+
+[Configure ER formats to use parameters that are specified per legal entity](er-app-specific-parameters-configure-format.md)
