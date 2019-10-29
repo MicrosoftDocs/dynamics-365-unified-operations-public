@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Quick tour of account management
-description: This topic provides a quick tour of account management pages in Microsoft Dynamics 365 Commerce.
+title: Account management overview
+description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -27,12 +27,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of account management
+# Account management overview
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides a quick tour of account management pages in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
