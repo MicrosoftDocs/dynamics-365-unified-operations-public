@@ -75,3 +75,16 @@ search-org-unit-locations | Return a list of retail store locations.
 update-address | Update an existing customer address.
 update-line-delivery-specifications | Update delivery information for line items in the cart.
 update-primary-address | Update a customer's primary address.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Page load data actions](page-load-data-action.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)
+

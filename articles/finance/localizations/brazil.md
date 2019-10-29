@@ -58,6 +58,7 @@ This topic includes information and links to resources that can help you set up 
 - [Parameters for legal entities](latam-bra-legal-entity-parameters.md)
 - [Acquire and dispose a CIAP fixed asset](latam-bra-ciap-fixed-asset.md)
 - [SPED ECD](latam-bra-sped-ecd.md)
+- [SPED fiscal resolution 13/2019 RJ](latam-bra-resolution-13-2019-RJ.md)
 - [Taxes](latam-bra-calculate-taxes.md)
   - [Calculate tax on purchase quotations](tasks/br-00031-tax-calculation-purchase-quotation.md)
   - [Create a tax assessment - ICMS](tasks/br-10001-4-create-tax-assessment-icms.md)

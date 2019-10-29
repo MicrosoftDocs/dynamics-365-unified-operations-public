@@ -94,6 +94,7 @@ This topic provides information about functionality that supports Russian regula
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
+- [Allocation of miscellaneous charges in proportion to weight and volume](rus-miscellaneous-charges.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)

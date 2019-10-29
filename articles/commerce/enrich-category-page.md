@@ -55,3 +55,17 @@ To enrich a category page, do the following.
 > Modules that use category specification data use the data from your selected category.
 >
 > The settings of the template that you select determine the changes that you can make.
+
+## Additional resources
+
+[Modify an existing site page](modify-existing-page.md)
+
+[Add a new site page](add-new-page.md)
+
+[Select page layouts](select-page-layouts.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
+
+[Save, preview, and publish a page](save-preview-publish-page.md)
+
+[Enrich a product page](enrich-product-page.md)

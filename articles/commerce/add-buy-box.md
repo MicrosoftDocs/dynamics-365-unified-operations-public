@@ -98,3 +98,19 @@ To add a buy box module to a new page and set the required properties, follow th
 1. In the **Main** slot of the new page, add a buy box fragment.
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
 1. Check in the page, and publish it. A buy box should appear on the product details page.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a cart module to a page](add-cart-module.md)
+
+[Add a checkout module to a page](add-checkout-module.md)
+
+[Create an order confirmation module](order-confirmation-module.md)
+
+[Create a header module](author-header-module.md)
+
+[Create a footer module](author-footer-module.md)

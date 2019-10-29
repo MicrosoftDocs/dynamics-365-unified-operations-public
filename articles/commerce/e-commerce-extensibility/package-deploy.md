@@ -127,3 +127,9 @@ You can now track the deployment status in the **Details** section.
 !["Details" section of "E-Commerce (Preview)" tab in LCS project dashboard](media/lcs-deploy-16.png)
 
 After the deployment is completed, you should see your changes in the authoring tools or on pages that are rendered. For example, new modules or themes will be available to page authors, or changes are rendered and will appear in the online environment.
+
+## Additional resources
+
+[SDK and core library updates](sdk-updates.md)
+
+[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/)

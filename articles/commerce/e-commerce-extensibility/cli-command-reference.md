@@ -162,3 +162,8 @@ The path is the full path of the package folder that contains the package.json f
 ```bash
 yarn msdyn365 validate ./
 ```
+## Additional resources
+
+[Architectural overview](architectural-overview.md)
+
+[e-Commerce components](ecommerce-components.md)

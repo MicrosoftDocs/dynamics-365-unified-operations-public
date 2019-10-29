@@ -71,3 +71,20 @@ The following table describes various types of product collection modules in Dyn
 | People also like           | Artificial intelligence/Machine learning | This type of product collection module uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. |
 
 For information about how to use product collection modules, see [Add a product collection module to a category page](add-product-collection-modules.md).
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Add a product collection module to a category page](add-product-collection-modules.md)
+
+[Add a carousel module to a page](add-carousel.md)
+
+[Add a content rich block module to a page](add-content-rich-block.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add a buy box to a page](add-buy-box.md)
+

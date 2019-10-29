@@ -63,7 +63,7 @@ The following synchronization tasks are required before synchronization of sales
 
 ## Entity set
 
-| Sales        | Finance and Operations     |
+| Sales        | Supply Chain Management     |
 |--------------|----------------------------|
 | Quotes       | CDS sales quotation header |
 | QuoteDetails | CDS sales quotation lines  |

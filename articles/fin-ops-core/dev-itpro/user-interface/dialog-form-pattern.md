@@ -59,19 +59,19 @@ The following sections show the wireframes for the four dialog types that are in
 
 ### Dialog
 
-[![DialogForm(1)](./media/dialogform1.png)](./media/dialogform1.png)
+[![Wireframe for dialog](./media/dialogform1.png)](./media/dialogform1.png)
 
 ### Dialog w/tabs and Dialog w/FastTabs
 
-[![DialogForm(2)](./media/dialogform2.png)](./media/dialogform2.png)
+[![Wireframe for dialog with tabs and FastTabs](./media/dialogform2.png)](./media/dialogform2.png)
 
 ### Dialog w/double tabs
 
-[![DialogForm(3)](./media/dialogform3.png)](./media/dialogform3.png)
+[![Wireframe for dialog with double tabs](./media/dialogform3.png)](./media/dialogform3.png)
 
 ### Dialog (read only)
 
-[![DialogForm(4)](./media/dialogform4.png)](./media/dialogform4.png)
+[![Wireframe for dialog (read only)](./media/dialogform4.png)](./media/dialogform4.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -209,31 +209,31 @@ A dialog should **not** have these elements:
 
 Form: **ProjTableCreate** (Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and then click **New**.) 
 
-[![DialogForm(5)](./media/dialogform5.png)](./media/dialogform5.png)
+[![Example of basic dialog](./media/dialogform5.png)](./media/dialogform5.png)
 
 ### Dialog w/tabs
 
 Form: **CaseDetailCreate** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then click **New**.) 
 
-[![DialogForm(6)](./media/dialogform6.png)](./media/dialogform6.png)
+[![Example of dialog with tabs](./media/dialogform6.png)](./media/dialogform6.png)
 
 ### Dialog w/FastTabs
 
 This example shows a modified version of the **CaseDetailCreate** form, because the product currently includes no examples of forms that use this pattern. 
 
-[![DialogForm(7)](./media/dialogform7.png)](./media/dialogform7.png)
+[![Example of dialog with FastTabs](./media/dialogform7.png)](./media/dialogform7.png)
 
 ### Dialog w/double tabs
 
 Form: **PurchTableReferences** (Click **Accounts payable** &gt; **Common** &gt; **Purchase orders** &gt; **All purchase orders**, and then click **General** &gt; **Related information** &gt; **Related orders**.) 
 
-[![DialogForm(8)](./media/dialogform8.png)](./media/dialogform8.png)
+[![Example of dialog with double tabs](./media/dialogform8.png)](./media/dialogform8.png)
 
 ### Dialog (read only)
 
 Form: **SalesTablePostings** (Click **Accounts receivable** &gt; **Common** &gt; **Sales orders** &gt; **All sales orders**, and then click **General** &gt; **Related information** &gt; **Postings**.) 
 
-[![DialogForm(9)](./media/dialogform9.png)](./media/dialogform9.png)
+[![Example of dialog (read only)](./media/dialogform9.png)](./media/dialogform9.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -266,4 +266,4 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![DialogForm(10)](./media/dialogform10.png)](./media/dialogform10.png)
+[![Previous version content](./media/dialogform10.png)](./media/dialogform10.png)

@@ -99,7 +99,7 @@ The background color of the container.
 Consider modifying the color attribute in the same container so that fonts overlaying the background color will appear appropriately.
 Note: if background is set to "theme", the theme color of the app will be used.
 The following colors are available: <br>
-![sample image](../../../media/colors.PNG)
+![Image showing available colors](../../../media/colors.PNG)
 
 
 ### bindings
@@ -129,7 +129,7 @@ This will modify the color of all headers, items, labels, and icons within the c
 Consider setting the background color at the same time as necessary when setting this attribute.<br>
 Note: if color is set to "theme", the theme color of the app will be used.<br>
 The following colors are available: <br>
-![sample image](../../../media/colors.PNG)
+![Image showing available colors](../../../media/colors.PNG)
 
 > Inherited from [Design](view-model-ipage-idesign.md).[color](view-model-ipage-idesign.md#color)
 

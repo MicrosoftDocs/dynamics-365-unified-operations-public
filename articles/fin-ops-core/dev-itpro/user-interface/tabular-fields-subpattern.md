@@ -45,9 +45,11 @@ This subpattern is used to show information efficiently in a tabular format. The
 -   Group control
 
 ## Wireframes
-### [![TabularFields(1)](./media/tabularfields1.png)](./media/tabularfields1.png)Structural wireframe
+### [![Wireframe for Tabular Fields](./media/tabularfields1.png)](./media/tabularfields1.png)
 
-[![TabularFields(2)](./media/tabularfields2.png)](./media/tabularfields2.png)
+Structural wireframe
+
+[![Wireframe for Tabular Fields](./media/tabularfields2.png)](./media/tabularfields2.png)
 
 ## Pattern changes
 In previous releases of Microsoft Dynamics AX, there was no formally accepted way to model this pattern. Therefore, this pattern was modeled in many inconsistent ways that must be modified to match the current pattern. The most common way to model this pattern was to use groups for columns. However, groups are now used for the rows. The primary reason for this change was to better match the HTML/CSS constructs, and it also helps keep the tab sequence and semantics of a table.
@@ -88,7 +90,7 @@ No manual verification is required.
 ## Examples
 Form: **LedgerJournalTransVendPaym** **(Balances)** (**Accounts payable** &gt; **Journals** &gt; **Payment journal** &gt; **Lines**) 
 
-[![TabularFields(3)](./media/tabularfields3.png)](./media/tabularfields3.png)
+[![Example of Tabular Fields](./media/tabularfields3.png)](./media/tabularfields3.png)
 
 ## Resources
 ### Typically used by patterns
