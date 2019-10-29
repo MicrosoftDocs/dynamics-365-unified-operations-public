@@ -5,7 +5,7 @@ title: Overview of cart and checkout pages
 description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
