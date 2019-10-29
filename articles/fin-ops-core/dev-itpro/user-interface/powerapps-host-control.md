@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: PowerApps Host control
-description: By using the PowerApps Host control, you can embed a PowerApps app that you’ve created or a shared PowerApps app.
+title: Power Apps Host control
+description: By using the Power Apps Host control, you can embed a PowerApps app that you’ve created or a shared Power Apps app.
 author: TLeforMicrosoft
 manager: AnnBe
 ms.date: 04/25/2017
