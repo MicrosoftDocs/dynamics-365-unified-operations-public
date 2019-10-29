@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Quick tour of cart and checkout pages
-description: This topic provides a quick tour of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
+title: Overview of cart and checkout pages
+description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -27,12 +27,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of cart and checkout pages
+# Overview of cart and checkout pages
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides a quick tour of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -106,8 +106,8 @@ For more information about how to author a checkout page, see [Add a checkout mo
 
 ## Additional resources
 
-[Quick tour of the home page](quick-tour-home-page.md)
+[Overview of the home page](quick-tour-home-page.md)
 
-[Quick tour of product details pages](quick-tour-pdp.md)
+[Overview of product details pages](quick-tour-pdp.md)
 
-[Quick tour of account management](quick-tour-account-management.md)
+[Overview of account management pages](quick-tour-account-management.md)
