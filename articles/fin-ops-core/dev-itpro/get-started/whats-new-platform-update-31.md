@@ -67,9 +67,6 @@ A new star rating control is also available for developers to use. This control 
 ## Updated icon for Finance and Operations apps
 The new icon for Finance and Operations apps, which aligns with the latest icon stylings across Dynamics 365, is now visible in the web client.
 
-## Data management export file size limitation of 256 MB has been removed
-Exporting files using data management had a limitation of maximum file size of 256 MB. This limitation has been removed. This change is guarded by a flight DMFBlobSize256, which can be enabled to revert back to previous behavior if any issues are encountered due to this change.
-
 ## Optimization of loading the Data management workspace
 Loading of the Data management workspace has been slow under certain conditions. There are new optimizations put in place to reduce the time it takes to load the workspace. This change can be enabled via flight DMFWorkspaceLoadPerformance.
 
