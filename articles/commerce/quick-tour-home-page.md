@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Quick tour of the home page
-description: This topic provides a quick tour of the home page in Microsoft Dynamics 365 Commerce.
+title: Overview of home page
+description: This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 10/01/2019
@@ -28,12 +28,12 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Quick tour of the home page
+# Overview of home page
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides a quick tour of the home page in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -73,8 +73,8 @@ The main section of the home page can highlight products, categories, or promoti
 
 ## Additional resources
 
-[Quick tour of product details pages](quick-tour-pdp.md)
+[Overview of product details pages](quick-tour-pdp.md)
 
-[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
 
-[Quick tour of account management](quick-tour-account-management.md)
+[Overview of account management pages](quick-tour-account-management.md)
