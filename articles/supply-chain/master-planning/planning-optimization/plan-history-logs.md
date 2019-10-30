@@ -2,7 +2,7 @@
 # required metadata
 
 title: View plan history and planning logs
-description: This topic explains how to view the history of planning jobs triggered with Planning Optimzation.
+description: This topic explains how to view the history of planning jobs triggered with Planning Optimization.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/30/2019
