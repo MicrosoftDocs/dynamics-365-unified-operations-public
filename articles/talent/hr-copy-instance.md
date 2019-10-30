@@ -46,7 +46,7 @@ The following events occur when you copy a Core HR database:
 
 - The target environment will be unavailable until the copy process is completed.
 
-- Documents in Microsoft Azure Blob storage aren't copied from one environment to another. Therefore, any document handling documents and templates that are attached won't be changed but will remain in their current state.
+- Documents in Microsoft Azure Blob storage aren't copied from one environment to another. Therefore, any documents and templates that are attached won't be copied and will remain in the source environment.
 
 - All users except the Admin user and other internal service user accounts will be unavailable. Therefore, the Admin user can delete or obfuscate data before other users are allowed back into the system.
 
