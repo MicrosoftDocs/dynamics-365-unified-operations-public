@@ -75,3 +75,5 @@ To add a favicon to your site, use the same procedure that is used to add any ty
 
 [Add languages to your site](add-languages-to-site.md)
 
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
