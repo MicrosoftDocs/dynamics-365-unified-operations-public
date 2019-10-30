@@ -363,14 +363,14 @@
           href: accounts-receivable/cm-setup-information.md
         - name: Customer credit groups
           href: accounts-receivable/cm-customer-credit-groups.md
-        - name: Periodic credit management tasks
-          href: accounts-receivable/cm-periodic-tasks.md
-        - name: Credit holds for sales orders
-          href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Credit limit adjustments
           href: accounts-receivable/cm-credit-limit-adjustments.md
+        - name: Credit holds for sales orders
+          href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Add credit management information for a customer
           href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
+        - name: Periodic credit management tasks
+          href: accounts-receivable/cm-periodic-tasks.md
         href: accounts-receivable/tasks/process-collection-letters.md
       - name: Create a direct debit mandate for a customer
         href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
