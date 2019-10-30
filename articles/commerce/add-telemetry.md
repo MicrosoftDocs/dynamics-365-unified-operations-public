@@ -64,8 +64,15 @@ After you create a fragment for your script code, it can be reused across all pa
 
 ## Additional resources
 
-[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+[Add a logo](add-logo.md)
 
-[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+[Select a site theme](select-site-theme.md)
 
-[Manage Content Security Policy (CSP)](manage-csp.md)
+[Add a favicon](add-favicon.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
+
