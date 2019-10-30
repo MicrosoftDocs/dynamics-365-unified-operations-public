@@ -5,7 +5,7 @@ title: Tender-based discounts
 description: This topic provides an overview of functionality that lets retailers configure discounts for specific tender types.
 author: bebeale
 manager: AnnBe
-ms.date: 10/25/19
+ms.date: 10/30/19
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -45,6 +45,7 @@ Tender-based discounts don't compete with item-based discounts, such as periodic
 
 Even though tender-based discounts reduce the subtotal of the transaction, automatic charges that are applied to the transaction aren't affected. For example, if the delivery charges are calculated as $5 because the subtotal was more than $100, and the tender-based discount reduces the amount so that it's less than $100, the delivery charges are still $5 for the order.
 
+
 > [!NOTE]
 > Tender-based discounts are proportionally distributed to the qualified sales lines and reduce the pre-tax amount of the individual lines. If multiple tender-based discounts are configured for a tender type (for example, cash), only the best tender-based discount is applied.
 
@@ -61,6 +62,7 @@ For cards payments, retailers can set the tender-based discount on one or more t
 
 To help prevent this situation, if a customer pays with a credit card, the cashier sees a dialog box that lists credit cards that will bring the customer additional savings. The cashier can then ask whether the customer wants to use one of the preferred cards to get an additional discount. If the cashier uses a preferred card, the tender-based discount is applied to the transaction, and the reduced amount is shown on the payment screen. The authorization will be for the reduced amount. If the customer inserts a card that differs from the card that the cashier selected, an error message is shown, and the authorization is voided.
 
+
 ## Call center user experience
 
 When the user selects **Complete** during a call center order, the **Totals** screen is shown. At first, the totals on this screen don't include tender-based discounts, because the payment method hasn't yet been selected. On the **Add payment** screen, if the user selects the payment method that the tender-based discount is configured for, the payment amount is automatically adjusted so that it reflects the discounted amount. Like the customer at the POS, the call center customer can decide whether to pay the full payment or a partial payment. Based on the amount that is paid, the tender-based discount is applied to the sales order.
@@ -70,7 +72,7 @@ When the user selects **Complete** during a call center order, the **Totals** sc
 
 ## Exclude items from discounts
 
-Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Retail so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Retail still applies the tender-based discount. To set up Retail in this manner, retailers must turn off the **Prevent all discounts** and **Prevent tender-based discounts** options, and turn on the **Prevent retail discounts** and **Prevent manual discounts** options. The options are on the **Released products** page, on the **Retail** tab.
+Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Retail so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Retail still applies the tender-based discount. To set up Retail in this manner, retailers must go to **Product information management > Products > Released products**, select the item, and then, on the **Retail** FastTab, set the **Prevent all discounts** and **Prevent tender based discounts** options to **No**, and the **Prevent retail discounts** and **Prevent manual discounts** options to **Yes**.
 
 > [!NOTE]
-> When the **Prevent all discounts** configuration is turned on, no discounts will be applied to the product. Not even tender-based discounts will be applied.
+> When the **Prevent all discounts** configuration is set to **Yes**, no discounts will be applied to the product. Not even tender-based discounts will be applied.
