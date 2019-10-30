@@ -37,14 +37,17 @@ Microsoft Dynamics 365 Talent is a true software as a service (SaaS) that provid
 
 ## Update policy
 
-Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.
+Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for product support availability.
 
 ## Release cadence
 
+Talent updates are applied to all environments automatically. Talent provides two types of releases:
 
+- **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new).
 
+- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. They're available on all data centers once they're released, so you can manually apply these updates on any environment in any data center if you don't want to wait for the updates to replicate automatically.
 
-## Get early visibility into Talent releases
+## Communications
 
 You can find out what's in the works for Talent and what we've released in the following locations:
 
@@ -56,24 +59,24 @@ You can find out what's in the works for Talent and what we've released in the f
 
 - [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs)
 
-## Get early access to mandatory end-user impacting features
+- [Talent blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
-You can validate features and capabilities in advance before they're enabled automatically. This gives you the opportunity to validate the update in your sandbox environment before it's applied to your production environment. It also lets you try out the new features in advance so you can confidently roll them out to your users.
+- [Talent Yammer community](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
 
 ## Preview features in a sandbox environment
+
+You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
 For more information about provisioning a sandbox environment, see [Provision a Talent project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](remove-talent-environment.md#removing-a-test-drive-environment). 
 
-## Report bugs during early access
+## Report bugs
 
-Please report any bugs through [Microsoft Dynamics 365 support](https://dynamics.microsoft.com/support/).
+While testing preview features or trying new capabilities, you might find items that don't work as expected. Please report any bugs through [Microsoft Dynamics 365 support](https://dynamics.microsoft.com/support/).
 
 ## See also
 
 - [Dynamics 365 and Power Platform Release Plans](https://docs.microsoft.com/dynamics365/release-plans)
 - [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
 - [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
-- [Configure service updates through Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/configure-service-updates)
-
