@@ -71,3 +71,5 @@ The welcome message will now appear at the top of every site page that uses the 
 
 [Add languages to your site](add-languages-to-site.md)
 
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
