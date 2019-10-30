@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Cancel planning job
-description: Cancel an active planning job that uses Planning Optimization
+title: Cancel a planning job
+description: This topic explains how to cancel an active planning job that uses Planning Optimization.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 2019-09-06
+ms.date: 10/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,25 +25,28 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2019-09-06
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
-# Cancel planning job
+# Cancel a planning job
 
-It is possible to cancel an active planning job that uses Planning Optimization.
+In Dynamics 365 Supply Chain, it's possible to cancel an active planning job that uses Planning Optimization. To cancel the active planning job, follow the steps below.
 
-How to cancel a planning run:
+> [!NOTE]
+> Only active jobs can be canceled.
 
-1. Go to **Master planning \&gt; Setup \&gt; Plans**
-2. Select the relevant plan for the planning run
-3. Click **History**
-4. Select the planning job that you want to cancel
-5. Click **Cancel -** Note that only active jobs can be canceled
-6. The **Status** of the job will show **Canceling,** until Planning Optimization service confirms that the job is canceled
-7. When the job is canceled **Status** change to **Cancelled**
+1. Go to **Master planning > Setup > Plans**.
+2. Select the appropriate plan for the planning run.
+3. Click **History**.
+4. Select the planning job that you want to cancel.
+5. Click **Cancel**. 
+6. The job status will be "Canceling" until the Planning Optimization service confirms that the job is canceled.
+7. When the job is canceled, the status changes to "Canceled".
 
-**Note:** You need to refresh the page information (Finance and Operations refresh icon) for status changes to be displayed.
+> [!NOTE]
+> You need to refresh the page using the refresh icon to see changes to the status.
