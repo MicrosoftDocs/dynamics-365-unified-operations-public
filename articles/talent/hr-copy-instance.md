@@ -73,6 +73,8 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 5. Select **Power Platform**, and sign in to the Microsoft Power Platform Admin Center.
 
+   ![[Select Power Platform](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+
 6. Select the PowerApps environment to copy, and then select **Copy**.
 
 7. When the copy process is completed, sign in to the target instance, and enable Common Data Service integration. For more information and instructions, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
