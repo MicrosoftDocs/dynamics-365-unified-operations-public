@@ -50,7 +50,14 @@ The following table shows the possible document states of page elements in Comme
 
 ## Additional resources
 
-[Add and manage content](add-manage-content.md)
+[Ways to add content](add-manage-content.md)
 
-[Page elements overview](page-elements-overview.md)
+[Page model glossary](page-elements-overview.md)
 
+[Work with modules](work-with-modules.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Customize site navigation](customize-site-navigation.md)
