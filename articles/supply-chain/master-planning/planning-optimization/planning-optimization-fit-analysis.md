@@ -30,7 +30,8 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 # Planning optimization fit analysis
 
