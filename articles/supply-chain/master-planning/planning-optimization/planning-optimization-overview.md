@@ -30,8 +30,8 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-[!include [banner](../../supply-chain/includes/preview-banner.md)]
-[!include [banner](../../supply-chain/includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 # Planning Optimization overview
 
