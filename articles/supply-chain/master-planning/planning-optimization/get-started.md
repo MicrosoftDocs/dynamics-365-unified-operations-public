@@ -89,4 +89,4 @@ This option is used to control the planning engine used for master planning.
 If the Planning Optimization preview is enabled, master planning is done using the Planning Optimization Add-in for Supply Chain Management, which in turn impacts master planning results and features.
 
 ## Related resources
-[Terms and conditions for the preview](http://go.microsoft.com/fwlink/?linkid=2015274)
+[Terms and conditions for the preview](https://go.microsoft.com/fwlink/?linkid=2015274)
