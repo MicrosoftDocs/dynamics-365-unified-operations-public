@@ -33,35 +33,37 @@ ms.dyn365.ops.version:
 # Credit holds for sales orders
 [!include [banner](../includes/banner.md)]
 
-Credit management blocking rules are used to define scenarios when a sales order for a customer or group of customers should be put on credit management hold. Blocking rules define responses to the following circumstances:
-1. Days overdue
+This topic describes the setup of rules used to place a sales order on credit hold. The credit management blocking rules can apply to an individual customer, or a group of customers.  Blocking rules define responses to the following circumstances:
+
+1. Number of days overdue
 2. Accounts status
 3. Terms of payment
 4. Credit limit expired
 5. Overdue amount
 6. Sales order amount
-7. Credit limit used
+7. Portion of available credit used
 
 In addition, there are two parameters that control additional scenarios that will block a sales order
+
 1. Change in payment terms
 2. Change in settlement discounts
 
 ## Set up blocking rules and exclusion rules
 
-Sales order information is compared to blocking rules to determine if a sales order should be blocked. You can also define exclusions that will override the blocking rules and allow the sales orders to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
+When a customer initiates a sales transaction, the information on the sales order is reviewed against a set of blocking rules that guide the decision of whether or not to extend credit to the customer and allow the sale to move forward. You can also define exclusions that will override the blocking rules and allow a sales order to be processed. You can set up blocking rules and exclusion rules on the **Credit management > Setup > Credit management setup > Blocking rules** page.
 
 ### Days overdue
 
-Select the **Days overdue** tab if the blocking rule applies to customer with overdue invoices for a certain number of days.
+Select the **Days overdue** tab if the blocking rule applies to customer with one or more invoices that have been past due for a certain number of days.
 1. Select the range of customer that this rule is **Valid for**.
    - Select **Table** if the rule applies to a specific customer.
    - Select **Group** if the rule is applied at the customer group level. 
    - Select **All** if the rule applies to all customers.
-2. Once you have specified the range, you must specify the **Account/group** used in the range.
+2. When you have specified the range, you must specify the **Account/group** that will be used in the range.
    - For the **Table** range, the lookup will provide a list of customers to select. 
    - Select a **Group** if the rule applies to a customer credit group.
    - Select **All** if the rule applies to all customers. 
-3. Select a **Risk group** if you want to further limit the list of customers that go on credit management hold. 
+3. Select a **Risk group** to further limit the list of customers that go on credit management hold. 
 4. Select the type of rule that you are setting up. The **Blocking** option will create a rule that blocks an order. The **Exclusion** option will create a rule that will exclude another rule from blocking an order. 
 5. Select a **Value type**. The default entry is a fixed number of days. If you are creating an exclusion, you can specify a fixed number of days or an amount instead. 
 6. Enter the number of days **Overdue** that will be allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of  days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount due to an exclusion, then enter an amnount and a currency for that amount.
