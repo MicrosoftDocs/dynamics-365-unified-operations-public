@@ -1428,10 +1428,8 @@
       items: 
       - name: Commerce development and extensibility
         href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
-      - name: Localize Retail extension resources and label files
-        href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
-      - name: Device management implementation guidance
-        href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
+      - name: Online channel
+        href: e-commerce-extensibility/overview.md
       - name: Online channel extensibility
         href: e-commerce-extensibility/overview.md
         items:
@@ -1617,6 +1615,8 @@
           href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
         - name: Run the Retail POS samples
           href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+        - name: Device management implementation guidance
+          href: ../retail/implementation-considerations-devices.md?toc=/dynamics365/commerce/toc.json
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
@@ -1673,16 +1673,6 @@
           href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
         - name: CRT SDK samples
           href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
-      - name: e-Commerce extensibility
-        items:
-        - name: Configure online stores
-          href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure authentication providers
-          href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
-        - name: e-Commerce platform
-          href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
-        - name: e-Commerce platform SDK
-          href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal
@@ -1699,6 +1689,18 @@
           href: ../retail/payment-connector-data-fields.md?toc=/dynamics365/commerce/toc.json
         - name: Enable duplicate payment protection for payment connector
           href: ../retail/dev-itpro/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+      - name: Third-party e-Commerce extensibility
+        items:
+        - name: Configure online stores
+          href: ../retail/dev-itpro/configure-online-store.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure authentication providers
+          href: ../retail/dev-itpro/configure-authentication-providers.md?toc=/dynamics365/commerce/toc.json
+        - name: e-Commerce platform
+          href: ../retail/dev-itpro/ecommerce-platform.md?toc=/dynamics365/commerce/toc.json
+        - name: e-Commerce platform SDK
+          href: ../retail/dev-itpro/ecommerce-platform-sdk.md?toc=/dynamics365/commerce/toc.json
+      - name: Localize Retail extension resources and label files
+        href: ../retail/dev-itpro/extension-resource-localization.md?toc=/dynamics365/commerce/toc.json
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Retail
