@@ -77,3 +77,5 @@ After you publish the updated header fragment, all site pages that use the templ
 
 [Add languages to your site](add-languages-to-site.md)
 
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
