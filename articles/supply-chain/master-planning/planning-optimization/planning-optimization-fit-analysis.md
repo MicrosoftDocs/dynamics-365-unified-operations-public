@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 # Planning optimization fit analysis
 
-On the **Master planning** > **Setup** > **Planning Optimization fit analysis** page, you can check your current setup and data against the capabilities of Planning Optimization. Click **Run analysis** to view inconsistencies if there are any (it can take a few minutes to run). 
+You can check your current setup and data to see how compatible it is with Planning Optimization. To do so, go to **Master planning** > **Setup** > **Planning Optimization fit analysis**,  and click **Run analysis**. If the analysis finds any inconsistencies, they will be listed on the same page (it can take a few minutes to run). 
 
 > [!NOTE]
 > Issues that are found will not prevent you from using Planning Optimization. Rather, they define where the planning service will not honor your current setup, in other words, where some processes might be ignored or not supported.
