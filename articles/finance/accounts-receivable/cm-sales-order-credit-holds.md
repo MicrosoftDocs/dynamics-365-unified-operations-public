@@ -32,6 +32,8 @@ ms.dyn365.ops.version:
 
 # Credit holds for sales orders
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic describes the setup of rules used to place a sales order on credit hold. The credit management blocking rules can apply to an individual customer, or a group of customers.  Blocking rules define responses to the following circumstances:
 
@@ -54,7 +56,7 @@ When a customer initiates a sales transaction, the information on the sales orde
 
 ### Days overdue
 
-Select the **Days overdue** tab if the blocking rule applies to customer with one or more invoices that have been past due for a certain number of days.
+Open the **Days overdue** tab if the blocking rule applies to customer with one or more invoices that have been past due for a certain number of days.
 1. Select the range of customer that this rule is **Valid for**.
    - Select **Table** if the rule applies to a specific customer.
    - Select **Group** if the rule is applied at the customer group level. 
@@ -63,7 +65,7 @@ Select the **Days overdue** tab if the blocking rule applies to customer with on
    - For the **Table** range, the lookup will provide a list of customers to select. 
    - Select a **Group** if the rule applies to a customer credit group.
    - Select **All** if the rule applies to all customers. 
-3. Select a **Risk group** to further limit the list of customers that go on credit management hold. 
+3. Select **Risk group** to use criteria for applying a credit management hold on customers that are grouped by a commont set of factors, such as their Dun and Bradstreet rating, the number of years that they've been in business, the amount of time they've been your customer, and so on.  
 4. Select the type of rule that you are setting up. The **Blocking** option will create a rule that blocks an order. The **Exclusion** option will create a rule that will exclude another rule from blocking an order. 
 5. Select a **Value type**. The default entry is a fixed number of days. If you are creating an exclusion, you can specify a fixed number of days or an amount instead. 
 6. Enter the number of days **Overdue** that will be allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of  days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount due to an exclusion, then enter an amnount and a currency for that amount.
@@ -99,7 +101,7 @@ Open the **Credit limit expired** tab if the blocking rule applies to customers 
 
 ### Overdue amount
 
-Select **Overdue Amount** if the blocking rule applies to customers with overdue amounts.
+Open the **Overdue Amount** tab if the blocking rule applies to customers with overdue amounts.
 1. Select the range of customer that this rule is **Valid for**.
    - Select **Table** if the rule applies to a specific customer.
    - Select **Group** if the rule is applied at the Customer group level. 
@@ -160,12 +162,12 @@ You can force the credit control rules to be executed when payment terms are cha
 
 You can set up the payment terms rankings on the **Credit management > Setup > Credit management setup > Rank payment terms** page.
 
-1. Select the **Terms of payment** to rank. The **Description** of the terms of payment will be displayed.
-2. Select the **Rank** value. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the terms of payment so that only one or two terms of payment will trigger the credit check.
+1. Select payment terms the **Terms of payment** field to rank; when you select a term, the description will be displayed in the **Description** field.
+2. Select the term's rank in the **Rank** field. The values are all relative to each other so you can use 1,2,3 or 10,20,30. You can also use the same value for most of the terms of payment so that only one or two terms of payment will trigger the credit check.
 
 ### Rank settlement discounts	
 
-You can force the credit control rules to be executed when settlement discounts are changed. You must rank the settlement discounts and assign them a ranking value. If you change the settlement discounts on the order to settlement discounts that are ranked higher than the old settlement discounts, then the order will be sent to credit management and require    approval.
+You can force the credit control rules to be executed when settlement discounts are changed. You must rank the settlement discounts and assign them a ranking value. If you change the settlement discounts on the order to settlement discounts that are ranked higher than the old settlement discounts, then the order will be sent to credit management and require approval.
 
 You can set up the payment terms rankings on the **Credit management > Setup > Credit management setup > Rank settlement discounts** page.
 
@@ -176,15 +178,15 @@ You can set up the payment terms rankings on the **Credit management > Setup > C
 
 Rules are executed in a specific order and you change the order that they're executed in. 
 
-1. The Sales order rule let you override all rules if an exclusion rule is true. If you mark an exclusion rule so that the **Release Sales order** option is selected, the order will not be put on hold if that rule is true, and no other rules will be checked.
-2. Blocking rules are executed for every rule. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
-3. Exclusion rules are executed last. If an exclusion rule is true on one rule, it will not override the blocking rule for the same rule. Exclusions will only affect the rule on which they are defined. 
-4. Blocking and exclusion rules are executed in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be executed because an exclusion rule at the Table or Group level is executed.
+- The Sales order rules let you override all rules that might block a sales order if an exclusion rule is true. If you mark an exclusion rule so that the **Release Sales order** option is selected, the order will not be put on hold if that rule is true, and no other rules will be checked.
+- Blocking rules are executed for every rule. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
+- Exclusion rules are executed last. If an exclusion rule is true on one rule, it will not override the blocking rule for the same rule. Exclusions will only affect the rule on which they are defined. 
+- Blocking and exclusion rules are executed in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be executed because an exclusion rule at the Table or Group level is executed.
 
 The behavior of the **Credit limit used** rule will change based on the settings for the **Check credit limit for sales order** parameter found in the Credit and Collections parameter form.
-1. If the parameter is set to No, then the Credit limit used rule will not be executed
-2. If the parameter is set to Yes and the **Message when exceeding credit limit** is set to warning, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be executed to see if you have rules that you want executed. However, for this scenario, you would normally not add any rules.
-3. If the parameter is set to Yes and the **Message when exceeding credit limit** is set to error, then the credit limit will be checked and the order will be put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be executed to see if you have additional rules that you want executed. An error message will not be shown but the "Exceeded credit limit** blocking reason will be shown. 
+- If the parameter is set to No, then the Credit limit used rule will not be executed
+- If the parameter is set to Yes and the **Message when exceeding credit limit** is set to warning, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be executed to see if you have rules that you want executed. However, for this scenario, you would normally not add any rules.
+- If the parameter is set to Yes and the **Message when exceeding credit limit** is set to error, then the credit limit will be checked and the order will be put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be run to see if there are additional rules that should be executed. An error message won't display, but the **Exceeded credit limit** blocking reason will be shown. 
 
 ## Processing orders on hold using the credit management hold list
 
