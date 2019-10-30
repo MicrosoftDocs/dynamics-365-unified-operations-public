@@ -51,6 +51,9 @@ It can take a long time to cancel a batch job if the job has tasks that are curr
 ## Extensibility enhancements
 The [fourth wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) included in Platform update 27 is documented in the April 2019 release notes. There are two enhancements detailed, with the highlight being that View extensions can now change label and help text values.
 
+## Export data from all companies to BYOD can be enabled via parameters
+The functionality to enable export from all companies to BYOD can now be enabled in framework parameters in data management. Until now, this required a flight to be enabled which is no longer needed.
+
 ## Additional resources
 
 ### Platform update 27 bug fixes
