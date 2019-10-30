@@ -35,6 +35,8 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
+You can only copy environments within the same region. You can't copy across regions.
+
 > [!IMPORTANT]
 > When you copy the Core HR database, you don't copy the elements (apps or data) that are contained in a Microsoft PowerApps environment. For information about how to copy elements in a PowerApps environment, see [Copy an environment](https://docs.microsoft.com/power-platform/admin/copy-environment).
 
