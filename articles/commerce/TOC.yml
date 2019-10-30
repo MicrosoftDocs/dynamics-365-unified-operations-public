@@ -1431,8 +1431,9 @@
       - name: Online channel
         href: e-commerce-extensibility/overview.md
       - name: Online channel extensibility
-        href: e-commerce-extensibility/overview.md
         items:
+        - name: Online channel extensibility overview
+          href: -commerce-extensibility/overview.md
         - name: Get started
           items:
           - name: System requirements
@@ -1559,8 +1560,6 @@
           href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
         - name: Development in cloud-hosted dev environments without admin access
           href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
-      - name: 3rd Party e-Commerce extensibility
-        items:
       - name: Point of sale extensibility
         items:
         - name: Retail POS screen layouts
