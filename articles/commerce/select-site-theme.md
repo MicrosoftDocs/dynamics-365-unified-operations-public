@@ -64,3 +64,5 @@ To select the theme that is applied to your site, follow these steps.
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
