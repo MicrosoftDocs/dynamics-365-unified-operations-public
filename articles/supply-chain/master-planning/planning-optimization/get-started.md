@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Get started
-description: Get started with Planning Optimization. 
+title: Get started with Planning Optimization
+description: This topic explains how to get started with Planning Optimization. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 2019-09-06
+ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,67 +25,68 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2019-09-06
+ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-[Terms and conditions for the preview](http://go.microsoft.com/fwlink/?linkid=2015274)
 
-# Get started
+# Get started with Planning Optimization
 
-In order to use Planning Optimization you have to install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management from your LCS project and enable the use of Planning Optimization from the Supply Chain Management UI.
+Planning Optimization does not currently support all of the features that are available in the built-in Supply Chain Management planning engine. Therefore, it is important to evaluate if the currently available feature set in Planning Optimization covers your requirements. Planning Optimization is not enabled in LCS by default so that you have the opportunity to do your evaluation first.
 
-As of now Planning Optimization does not support all features that are available in the built-in Supply Chain Management planning engine. Due to this it is important to evaluate if the available feature set in Planning Optimization covers the requirements. To ensure that this evaluations happens, Planning Optimization is not enabled in LCS by default.
+Long term, Planning Optimization will replace the existing built-in Supply Chain Management planning engine.
 
-Long term, Planning Optimization is expected to replace the existing built-in Supply Chain Management planning engine.
+We strongly recommend that you evaluate results from the Planning Optimization fit analysis before enabling Planning Optimization. Read the [Planning Optimization fit analysis](planning-optimization-fit-analysis.md) topic to learn more.
 
-It is strongly recommended to evaluate results from the Planning Optimization fit analysis before enabling Planning Optimization. Read more about Planning Optimization fit analysis [link] .
+### Licensing
 
-### What is the license impact
+If you can run master planning with your current license, you don't need an additional license to start using Planning Optimization.
 
-If your license allow you to run master planning there is no additional license needed to start using Planning Optimization.
+### Install the add-in
 
-### LCS
+To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. Access the add-in from your Dynamics Lifecycle Services (LCS) project and enable the use of Planning Optimization from the Supply Chain Management user interface (UI).
 
-In order to use Planning Optimization you have to install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management from your LCS project.
-
-- From Lifecycle Services open the LCS project
-- Expand the **Environment add-ins** tab and click **Install a new add-in**
-- Select **Planning Optimization**
-- Follow the installation guide and agree to terms and conditions
-- Click **Install**
+1. Log in to LCS and select a project.
+1. Click the **Environment add-ins** tab and then click **Install a new add-in**.
+1. Click **Planning Optimization**.
+1. Follow the installation guide and agree to the terms and conditions.
+1. Click **Install**.
 
 ### Planning Optimization integration
 
-From the **Master Planning** > **Setup** > **Planning Optimization integration** > **Integration parameters** you control if Planning Optimization Add-in for Dynamics 365 Supply Chain Management should be used for master planning.
+To configure whether the Planning Optimization Add-in for Dynamics 365 Supply Chain Management will be used for master planning, go to **Master Planning** > **Setup** > **Planning Optimization integration** > **Integration parameters**.
 
-**Note:** The use of Planning Optimization impacts the master planning result and features depending on master planning.
 
-**Connection status**
+#### Connection status
 
-Connection status show the current status of the connection to the Planning Optimization service. The following table show the possible status values.
+The connection status indicates the current status of the connection between Supply Chain Management and the Planning Optimization service. The table below shows the possible values.
 
-| Connection status | Description | Possible to enable Use Planning Optimization |
+| Connection status | Description | Can Planning Optimization be used |
 | --- | --- | --- |
 | **Connected** | Connection is established between the Planning Optimization service and Supply Chain Management. | Yes |
 | **Enabling connection** | A request to enable the connection to the Planning Optimization service is currently in progress. | No |
-| **Disconnected** | There is no connection to the Planning Optimization service. Connection can be enabled from LCS as described earlier on this page. | No |
+| **Disconnected** | There is no connection to the Planning Optimization service. Connection can be enabled from LCS as described above. | No |
 | **Disabling connection** | A request to disable the connection to the Planning Optimization service is currently in progress. | No |
-| **Getting status** | System is waiting for status from the Planning Optimization service. | No |
+| **Getting status** | The system is waiting for the status from the Planning Optimization service. | No |
 
-**Use Planning Optimization**
+#### Use Planning Optimization option
 
-This option is used to control the planning engine used for master planning
+This option is used to control the planning engine used for master planning.
 
-**Yes** - Planning Optimization is used for master planning.
+- **Yes**: Planning Optimization is used for master planning.
 
-**No** - The build-in Supply Chain Management planning engine is used for master planning.
+- **No**: The built-in Supply Chain Management planning engine is used for master planning.
 
-**Note:** If existing planning batch jobs created for the built-nn Supply Chain Management planning engine are triggered when **Use Planning Optimization** is set to **Yes** these will fail, as the build-in Finance and Operations planning engine is disabled.
+> [!NOTE]
+> If existing planning batch jobs created for the built-in Supply Chain Management planning engine are triggered when **Use Planning Optimization** is set to **Yes**, those jobs will fail.
 
-#### Setup integration with the Planning Optimization
+### Integration with setup
 
-With Planning Optimization preview enabled master planning is done using the Planning Optimization Add-in for Finance and Operations. This impacts the master planning result and features depending on master planning.
+If the Planning Optimization preview is enabled, master planning is done using the Planning Optimization Add-in for Supply Chain Management, which in turn impacts master planning results and features.
+
+## Related resources
+[Terms and conditions for the preview](http://go.microsoft.com/fwlink/?linkid=2015274)
