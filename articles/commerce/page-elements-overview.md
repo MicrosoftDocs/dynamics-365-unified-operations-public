@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Page elements
+title: Page model glossary
 description: This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 manager: annbe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Page elements
+# Page model glossary
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -52,6 +52,14 @@ The following table provides a summary of terms that you should be familiar with
 
 ## Additional resources
 
-[Add and manage content](add-manage-content.md)
+[Ways to add content](add-manage-content.md)
 
 [Document states and lifecycle](document-states-overview.md)
+
+[Work with modules](work-with-modules.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Customize site navigation](customize-site-navigation.md)
