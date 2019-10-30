@@ -1555,28 +1555,10 @@
           href: ../retail/dev-itpro/UpcomingSDKChanges.md?toc=/dynamics365/commerce/toc.json
         - name: Merge the build systems for Retail and Finance and Operations
           href: ../retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md?toc=/dynamics365/commerce/toc.json
-        - name: Samples
-          items:
-          - name: Retail SDK extensibility samples
-            href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
-          - name: Retail SDK samples
-            href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
-          - name: Run the Retail POS samples
-            href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail SDK extensibility samples
+          href: ../retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md?toc=/dynamics365/commerce/toc.json
         - name: Create retail deployable packages
           href: ../retail/dev-itpro/retail-sdk/retail-sdk-packaging.md?toc=/dynamics365/commerce/toc.json
-        - name: Extension points for packing slips
-          href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
-        - name: Channel database extensions
-          href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
-        - name: Enable custom CDX synchronization via extension
-          href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
-        - name: Define and set order attributes
-          href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
-        - name: Customer attributes
-          href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Typescript and C# proxies
-          href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
         - name: Development in cloud-hosted dev environments without admin access
           href: ../retail/dev-itpro/cloud-dev-box.md?toc=/dynamics365/commerce/toc.json
       - name: 3rd Party e-Commerce extensibility
@@ -1633,6 +1615,8 @@
           href: ../retail/dev-itpro/pos-trigger-printing.md?toc=/dynamics365/commerce/toc.json
         - name: Add custom controls to non-screen designer-based POS views
           href: ../retail/dev-itpro/pos-control-non-screen.md?toc=/dynamics365/commerce/toc.json
+        - name: Run the Retail POS samples
+          href: ../retail/dev-itpro/pos-run-samples.md?toc=/dynamics365/commerce/toc.json
       - name: Hardware Station extensibility
         items:
         - name: Hardware Station and extensibility
@@ -1653,6 +1637,8 @@
           href: ../retail/dev-itpro/call-crt-service-offline.md?toc=/dynamics365/commerce/toc.json
         - name: Create new Retail Server extension
           href: ../retail/dev-itpro/retail-server-extension.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail Typescript and C# proxies
+          href: ../retail/dev-itpro/typescript-proxy-retail-pos.md?toc=/dynamics365/commerce/toc.json
       - name: Commerce Runtime (CRT) extensibility
         items:
         - name: CRT architecture and configuration
@@ -1675,6 +1661,18 @@
           href: ../retail/dev-itpro/trigger-example-return-policy.md?toc=/dynamics365/commerce/toc.json
         - name: Loyalty extension
           href: ../retail/dev-itpro/retail-sdk/loyalty-extension-sample.md?toc=/dynamics365/commerce/toc.json
+        - name: Extension points for packing slips
+          href: ../retail/dev-itpro/extensions-shipping-carrier-integration.md?toc=/dynamics365/commerce/toc.json
+        - name: Channel database extensions
+          href: ../retail/dev-itpro/channel-db-extensions.md?toc=/dynamics365/commerce/toc.json
+        - name: Enable custom CDX synchronization via extension
+          href: ../retail/dev-itpro/cdx-extensibility.md?toc=/dynamics365/commerce/toc.json
+        - name: Define and set order attributes
+          href: ../retail/dev-itpro/order-attributes.md?toc=/dynamics365/commerce/toc.json
+        - name: Customer attributes
+          href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
+        - name: CRT SDK samples
+          href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
       - name: e-Commerce extensibility
         items:
         - name: Configure online stores
