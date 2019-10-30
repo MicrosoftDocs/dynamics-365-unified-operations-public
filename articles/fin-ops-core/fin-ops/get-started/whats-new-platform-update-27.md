@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 27 (June 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
