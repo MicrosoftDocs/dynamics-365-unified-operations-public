@@ -62,6 +62,14 @@
           href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
+      - name: Upgrade and N-1 support
+        items:
+        - name: Upgrade and N-1 support for Retail
+          href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
+        - name: Phased Rollout (N-1) installation, configuration, and cutover
+          href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
+        - name: Upgrade the Retail channel extension to the latest Retail SDK
+          href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
       - name: What's new or changed
         items:
         - name: Preview features in Retail version 10.0.7
@@ -168,6 +176,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
         - name: Understand Lifecycle Services
           href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/commerce/toc.json
+    - name: Architectural overview
+      items:
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
@@ -1527,14 +1537,6 @@
             href: ../retail/dev-itpro/retail-component-events-diagnostics-troubleshooting.md?toc=/dynamics365/commerce/toc.json
           - name: Apply a deployable package
             href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
-        - name: Upgrade and N-1 support
-          items:
-          - name: Upgrade and N-1 support for Retail
-            href: ../retail/dev-itpro/overview-upgrade-n-minus1.md?toc=/dynamics365/commerce/toc.json
-          - name: Phased Rollout (N-1) installation, configuration, and cutover
-            href: ../retail/dev-itpro/n-1-installation-configuration.md?toc=/dynamics365/commerce/toc.json
-          - name: Upgrade the Retail channel extension to the latest Retail SDK
-            href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
         - name: Implementation guidance
           items:
           - name: Device management implementation guidance
