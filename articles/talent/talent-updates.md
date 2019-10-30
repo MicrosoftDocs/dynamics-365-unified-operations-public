@@ -43,7 +43,7 @@ Updates are released on a regular cadence to all environments. Talent is support
 
 Talent updates are applied to all environments automatically. Talent provides two types of releases:
 
-- **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new).
+- **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new).
 
 - **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. They're available on all data centers once they're released, so you can manually apply these updates on any environment in any data center if you don't want to wait for the updates to replicate automatically.
 
@@ -65,7 +65,7 @@ You can find out what's in the works for Talent and what we've released in the f
 
 ## Preview features in a sandbox environment
 
-You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
