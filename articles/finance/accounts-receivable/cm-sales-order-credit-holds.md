@@ -176,17 +176,17 @@ You can set up the payment terms rankings on the **Credit management > Setup > C
 
 ## Sequence the application of rules
 
-Rules are executed in a specific order and you change the order that they're executed in. 
+Rules are run in a specific order that you change to suit the needs of your organization. 
 
 - The Sales order rules let you override all rules that might block a sales order if an exclusion rule is true. If you mark an exclusion rule so that the **Release Sales order** option is selected, the order will not be put on hold if that rule is true, and no other rules will be checked.
-- Blocking rules are executed for every rule. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
-- Exclusion rules are executed last. If an exclusion rule is true on one rule, it will not override the blocking rule for the same rule. Exclusions will only affect the rule on which they are defined. 
-- Blocking and exclusion rules are executed in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be executed because an exclusion rule at the Table or Group level is executed.
+- Blocking rules are rules for every *criteria*. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
+- Exclusion rules are run last. If an exclusion rule is true on one *rule*, it will not override the blocking rule for the same rule. Exclusions will only affect the rule on which they are defined. 
+- Blocking and exclusion rules are run in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be run because an exclusion rule at the Table or Group level is run.
 
 The behavior of the **Credit limit used** rule will change based on the settings for the **Check credit limit for sales order** parameter found in the Credit and Collections parameter form.
-- If the parameter is set to No, then the Credit limit used rule will not be executed
-- If the parameter is set to Yes and the **Message when exceeding credit limit** is set to warning, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be executed to see if you have rules that you want executed. However, for this scenario, you would normally not add any rules.
-- If the parameter is set to Yes and the **Message when exceeding credit limit** is set to error, then the credit limit will be checked and the order will be put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be run to see if there are additional rules that should be executed. An error message won't display, but the **Exceeded credit limit** blocking reason will be shown. 
+- If the parameter is set to No, then the Credit limit used rule will not be run.
+- If the parameter is set to Yes and the **Message when exceeding credit limit** is set to warning, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be run to see if you have rules that you want to be run. However, for this scenario, you would normally not add any rules.
+- If the parameter is set to Yes and the **Message when exceeding credit limit** is set to error, then the credit limit will be checked and the order will be put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be run to see if there are additional rules that should be run. An error message won't display, but the **Exceeded credit limit** blocking reason will be shown. 
 
 ## Processing orders on hold using the credit management hold list
 
