@@ -5,7 +5,7 @@ title: Document states and lifecycle
 description: This topic covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
