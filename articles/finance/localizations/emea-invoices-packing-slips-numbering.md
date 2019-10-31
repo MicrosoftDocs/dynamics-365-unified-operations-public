@@ -103,7 +103,7 @@ You can assign specific number sequences to invoices and packing slips that are 
 | Type           | Select the type of document to number: **Invoice** or **Packing slip**.                                                                         |
 | Auto numbering | Select this option to automatically assign a number to a document. You can manually select or clear this option for individual documents.       |
 
-For information about how to manually number invoices and packing slips, see [Edit invoice ID on Sales orders](emea-edit-invoice-id-sales-orders.md).
+For information about how to manually number invoices and packing slips, see [Edit invoice IDs on sales orders for Eastern Europe](emea-edit-invoice-id-sales-orders.md).
 
 ## Affected processes
 The headers of the following documents are updated with invoice and packing slip numbering:
