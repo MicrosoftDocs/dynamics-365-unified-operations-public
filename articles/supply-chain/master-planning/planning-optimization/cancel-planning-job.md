@@ -52,8 +52,13 @@ In Dynamics 365 Supply Chain, it's possible to cancel an active planning job tha
 > You need to refresh the page using the refresh icon to see changes to the status.
 
 ## Related resources
+
 [Planning Optimization overview](planning-optimization-overview.md)
+
 [Get started with Planning Optimization](get-started.md)
+
 [Planning optimization fit analysis](planning-optimization-fit-analysis.md)
+
 [View plan history and planning logs](plan-history-logs.md)
+
 [Apply filters to a plan](plan-filters.md)
