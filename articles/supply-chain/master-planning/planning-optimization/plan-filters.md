@@ -53,3 +53,15 @@ A **Plan filter** is setup to include item A, B, and C. Master planning runs are
 
 > [!NOTE]
 > You should avoid setting a **Plan filter** on the plan selected as **Current dynamic master plan** in the **Master planning parameters**, as it will limit the dynamic master plan functionality to the filtered items. For example, updating **Net requirements** for an item that is not part of the **Plan filter** will not generate any result.
+
+## Related resources
+
+[Planning Optimization overview](planning-optimization-overview.md)
+
+[Get started with Planning Optimization](get-started.md)
+
+[Planning optimization fit analysis](planning-optimization-fit-analysis.md)
+
+[View plan history and planning logs](plan-history-logs.md)
+
+[Cancel a planning job](cancel-planning-job.md)
