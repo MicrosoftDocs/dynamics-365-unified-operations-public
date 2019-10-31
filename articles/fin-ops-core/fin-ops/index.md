@@ -73,7 +73,7 @@ Much of this content also applies to the related products: Dynamics 365 Retail a
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrations</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Business events</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Data entities</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Flow</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Financial management</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Accounts payable</a></p>
