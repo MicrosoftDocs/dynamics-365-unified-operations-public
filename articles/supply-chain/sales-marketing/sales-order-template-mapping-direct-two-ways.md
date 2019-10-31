@@ -44,7 +44,7 @@ The Prospect to cash solution uses the Data integration feature to synchronize d
 
 ## Templates and tasks
 
-To access the available templates, open [PowerApps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
+To access the available templates, open [Power Apps Admin Center](https://preview.admin.powerapps.com/dataintegration). Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
 The following templates and underlying tasks are used to run synchronization of sales orders directly between Sales and Supply Chain Management.
 
