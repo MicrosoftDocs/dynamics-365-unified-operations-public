@@ -5,7 +5,7 @@ title: Ways to add content
 description: This topic provides information about how to add and manage content on your Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
