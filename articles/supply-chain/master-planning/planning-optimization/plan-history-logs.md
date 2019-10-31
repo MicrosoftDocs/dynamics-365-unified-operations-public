@@ -2,7 +2,7 @@
 # required metadata
 
 title: View plan history and planning logs
-description: This topic explains how to view the history of planning jobs triggered with Planning Optimization.
+description: This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/30/2019
@@ -35,11 +35,11 @@ ms.dyn365.ops.version: AX 10.0.5
 
 # View plan history and planning logs
 
-This topic explains how to view the history of planning jobs triggered with Planning Optimzation with Dynamics 365 Supply Chain Management. 
+This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.
 
-To view the history, open the plan you want to view by navigating to **Master planning** > **Setup** > **Plans** > **Master plans**, and click **History**. The history lists all the jobs for the selected plan, including completed and active jobs.
+To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**. The history lists all the jobs for the selected plan. The list includes completed and active jobs.
 
-In addition to the job start time and status, you can also see the log for a specific job. The log includes additional information and warnings. Note that not all jobs have logs. To see the log for a job, click **Log**.
+In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**.
 
 ## Related resources
 
@@ -47,7 +47,7 @@ In addition to the job start time and status, you can also see the log for a spe
 
 [Get started with Planning Optimization](get-started.md)
 
-[Planning optimization fit analysis](planning-optimization-fit-analysis.md)
+[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 
 [Apply filters to a plan](plan-filters.md)
 
