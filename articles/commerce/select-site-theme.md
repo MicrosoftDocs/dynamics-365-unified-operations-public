@@ -5,7 +5,7 @@ title: Select a site theme
 description: This topic describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -64,3 +64,5 @@ To select the theme that is applied to your site, follow these steps.
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
