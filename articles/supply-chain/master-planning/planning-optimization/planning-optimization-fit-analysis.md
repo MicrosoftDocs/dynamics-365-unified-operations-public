@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planning Optimization fit analysis
-description: This topic explains how to check your current setup and data against the capabilities of Planning Optimization. 
+description: This topic explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
 author: ChristianRytt
 manager: AnnBe
 ms.date: 1030/2019
@@ -33,28 +33,24 @@ ms.dyn365.ops.version: AX 10.0.5
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
-# Planning optimization fit analysis
+# Planning Optimization fit analysis
 
-You can check your current setup and data to see how compatible it is with Planning Optimization. To do so, go to **Master planning** > **Setup** > **Planning Optimization fit analysis**,  and click **Run analysis**. If the analysis finds any inconsistencies, they will be listed on the same page (it can take a few minutes to run). 
+To see how compatible your current setup and data are with the Planning Optimization functionality, go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**, and then select **Run analysis**. If the analysis finds any inconsistencies, they are listed on the same page. (The analysis can take a few minutes to run.)
 
 > [!NOTE]
-> Issues that are found will not prevent you from using Planning Optimization. Rather, they define where the planning service will not honor your current setup, in other words, where some processes might be ignored or not supported.
+> If inconsistencies are found, you can still use Planning Optimization. The results of the fit analysis just show places where the planning service won't honor your current setup. In other words, they show places where some processes might be ignored or might not be supported.
 
-## Analysis results: example 1
+## Analysis results: Example 1
 
-- **Feature**: Production
+- **Feature:** Production
+- **Issue:** Items with BOM level greater than zero: 56
+- **Explanation:** The fit analysis found 56 items that have a bill of materials (BOM) setup for production. Because the current version of Planning Optimization doesn't support production, Planning Optimization will generate planned purchase orders instead of planned production orders. It will also show a warning that lists the affected items.
 
-- **Issue**: Items with BOM level greater than zero: 56
+### Analysis results: Example 2
 
-- **Explanation**: Because production is not supported in the current version of Planning Optimization, the issue shows that the fit analysis found 56 items with a BOM setup for production. The consequence of this inconsistency is that Planning Optimization will generate planned purchase orders and not planned production orders, and give a warning that lists the impacted items.
-
-### Analysis results: example 2
-
-- **Feature** : Actions
-
-- **Issue** : Coverage groups with actions calculation enabled: 6
-
-- **Explanation**: The analysis found 6 coverage groups where actions calculation is enabled. As actions currently are not supported by Planning Optimization, actions will not be generated during master planning.
+- **Feature:** Actions
+- **Issue:** Coverage groups with actions calculation enabled: 6
+- **Explanation:** The fit analysis found six coverage groups where action calculation is turned on. Because the current version of Planning Optimization doesn't support actions, no actions will be generated during master planning.
 
 ## Related resources
 
