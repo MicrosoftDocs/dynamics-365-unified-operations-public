@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 # Get started with Planning Optimization
 
-Planning Optimization does not currently support all of the features that are available in the built-in Supply Chain Management planning engine. Therefore, it is important to evaluate if the currently available feature set in Planning Optimization covers your requirements. Planning Optimization is not enabled in LCS by default so that you have the opportunity to do your evaluation first.
+Planning Optimization does not currently support all of the features that are available in the built-in Supply Chain Management planning engine. Therefore, it is important to evaluate if the currently available feature set in Planning Optimization covers your requirements. Planning Optimization is not enabled in Dynamics Lifecycle Services (LCS) by default so that you have the opportunity to do your evaluation first.
 
 Long term, Planning Optimization will replace the existing built-in Supply Chain Management planning engine.
 
@@ -48,7 +48,7 @@ If you can run master planning with your current license, you don't need an addi
 
 ### Install the add-in
 
-To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. Access the add-in from your Dynamics Lifecycle Services (LCS) project and enable the use of Planning Optimization from the Supply Chain Management user interface (UI).
+To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. Access the add-in from your LCS project and enable the use of Planning Optimization from the Supply Chain Management user interface (UI).
 
 1. Log in to LCS and navigate to the desired environment.
 1. Go to **Full details**.
