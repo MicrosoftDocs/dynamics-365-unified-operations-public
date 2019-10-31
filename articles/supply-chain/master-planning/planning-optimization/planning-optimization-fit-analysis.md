@@ -55,3 +55,15 @@ You can check your current setup and data to see how compatible it is with Plann
 - **Issue** : Coverage groups with actions calculation enabled: 6
 
 - **Explanation**: The analysis found 6 coverage groups where actions calculation is enabled. As actions currently are not supported by Planning Optimization, actions will not be generated during master planning.
+
+## Related resources
+
+[Planning Optimization overview](planning-optimization-overview.md)
+
+[Get started with Planning Optimization](get-started.md)
+
+[View plan history and planning logs](plan-history-logs.md)
+
+[Apply filters to a plan](plan-filters.md)
+
+[Cancel a planning job](cancel-planning-job.md)
