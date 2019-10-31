@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add a product collection module to a category page
+title: Product collection module
 description: This topic describes how to add a product collection module to a category page in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Add a product collection module to a category page  
+# Product collection module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -71,12 +71,12 @@ The following table shows the list types that are available for selection in the
 
 [Product collection module overview](product-collection-module-overview.md)
 
-[Add a carousel module to a page](add-carousel.md)
+[Carousel module](add-carousel.md)
 
-[Add a content rich block module to a page](add-content-rich-block.md)
+[Content rich block module](add-content-rich-block.md)
 
-[Add content placement modules to a page](add-content-placement-modules.md)
+[Content placement module](add-content-placement-modules.md)
 
-[Add a container module to a page](add-container-module.md)
+[Container module](add-container-module.md)
 
-[Add a buy box to a page](add-buy-box.md)
+[Buy box module](add-buy-box.md)
