@@ -280,6 +280,86 @@
           href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
         - name: Configure and install Retail hardware station
           href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+        - name: Modern Point of Sale (MPOS) and Cloud POS
+          items:
+          - name: Choose between MPOS and Cloud POS
+            href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
+          - name: Online and offline POS operations
+            href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
+          - name: Device activation of a customized Retail MPOS
+            href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
+          - name: Demo data screen layouts in MPOS and Cloud POS
+            href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+          - name: Product and customer search in the POS
+            href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
+          - name: Search for products and product variants during order entry
+            href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
+          - name: Cash management improvements
+            href: ../retail/cash-mgmt.md 
+          - name: Inventory lookup in the POS
+            href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
+          - name: Suspend and resume transactions in the POS
+            href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
+          - name: Offline POS functionality
+            href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
+          - name: Shift and cash drawer management
+            href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
+          - name: Cash out gift card balance
+            href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
+          - name: Ship orders from another store
+            href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
+          - name: Hide non-carrier delivery modes from POS shipment dialog
+            href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
+          - name: Task recorder and Help for MPOS and Cloud POS
+            href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
+          - name: Hardware peripherals
+            items:
+            - name: Retail peripherals
+              href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
+            - name: Retail peripheral simulator
+              href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
+            - name: Connect peripherals to the POS
+              href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
+          - name: Screen layouts
+            items:
+            - name: Demo data screen layouts in MPOS/CPOS
+              href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
+            - name: Screen layouts for the POS
+              href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+            - name: Install the Retail POS layout designer
+              href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
+            - name: Choose notification settings
+              href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
+            - name: POS application and user language settings
+              href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
+            - name: Set up and manage images for MPOS
+              href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
+            - name: Client images in POS
+              href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
+          - name: Customer orders
+            items:
+            - name: Customer orders in MPOS
+              href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
+            - name: Hybrid customer orders
+              href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
+          - name: Sales associates
+            items:
+            - name: Track commissions in the POS using sales groups
+              href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
+          - name: Device activation
+            items:
+            - name: Configure, install and activate MPOS
+              href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
+            - name: Set up extended logon functionality for MPOS and Cloud POS
+              href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
+            - name: Manage Retail activation accounts and validate devices
+              href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
+          - name: Receipts
+            items:
+            - name: Set up and design receipt formats
+              href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
+            - name: Send email receipts from MPOS
+              href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
       - name: Online channel management 
         items:
         - name: Online store overview
@@ -652,86 +732,6 @@
           href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
         - name: Return items across multiple customer orders and invoices
           href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-    - name: Modern Point of Sale (MPOS) and Cloud POS
-      items:
-      - name: Choose between MPOS and Cloud POS
-        href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
-      - name: Online and offline POS operations
-        href: ../retail/pos-operations.md?toc=/dynamics365/commerce/toc.json
-      - name: Device activation of a customized Retail MPOS
-        href: ../retail/dev-itpro/retail-POS-activation-changes.md?toc=/dynamics365/commerce/toc.json
-      - name: Demo data screen layouts in MPOS and Cloud POS
-        href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
-      - name: Product and customer search in the POS
-        href: ../retail/POS-search-improvements.md?toc=/dynamics365/commerce/toc.json
-      - name: Search for products and product variants during order entry
-        href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
-      - name: Cash management improvements
-        href: ../retail/cash-mgmt.md 
-      - name: Inventory lookup in the POS
-        href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
-      - name: Suspend and resume transactions in the POS
-        href: ../retail/pos-suspend-recall-transactions.md?toc=/dynamics365/commerce/toc.json
-      - name: Offline POS functionality
-        href: ../retail/pos-offline-functionality.md?toc=/dynamics365/commerce/toc.json
-      - name: Shift and cash drawer management
-        href: ../retail/shift-drawer-management.md?toc=/dynamics365/commerce/toc.json
-      - name: Cash out gift card balance
-        href: ../retail/dev-itpro/gift-card-cash-out.md?toc=/dynamics365/commerce/toc.json
-      - name: Ship orders from another store
-        href: ../retail/charge-send.md?toc=/dynamics365/commerce/toc.json
-      - name: Hide non-carrier delivery modes from POS shipment dialog
-        href: ../retail/hide-non-carrier-modes.md?toc=/dynamics365/commerce/toc.json
-      - name: Task recorder and Help for MPOS and Cloud POS
-        href: ../retail/task-recorder-retail-pos.md?toc=/dynamics365/commerce/toc.json
-      - name: Hardware peripherals
-        items:
-        - name: Retail peripherals
-          href: ../retail/retail-peripherals-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail peripheral simulator
-          href: ../retail/dev-itpro/retail-peripheral-simulator.md?toc=/dynamics365/commerce/toc.json
-        - name: Connect peripherals to the POS
-          href: ../retail/define-maintain-channel-clients-registers-hw-stations.md?toc=/dynamics365/commerce/toc.json
-      - name: Screen layouts
-        items:
-        - name: Demo data screen layouts in MPOS/CPOS
-          href: ../retail/demo-data.md?toc=/dynamics365/commerce/toc.json
-        - name: Screen layouts for the POS
-          href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
-        - name: Install the Retail POS layout designer
-          href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-        - name: Choose notification settings
-          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
-        - name: POS application and user language settings
-          href: ../retail/pos-application-user-language-settings.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up and manage images for MPOS
-          href: ../retail/set-up-manage-images-retail-mpos.md?toc=/dynamics365/commerce/toc.json
-        - name: Client images in POS
-          href: ../retail/pos-image.md?toc=/dynamics365/commerce/toc.json
-      - name: Customer orders
-        items:
-        - name: Customer orders in MPOS
-          href: ../retail/customer-orders-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Hybrid customer orders
-          href: ../retail/hybrid-customer-orders.md?toc=/dynamics365/commerce/toc.json
-      - name: Sales associates
-        items:
-        - name: Track commissions in the POS using sales groups
-          href: ../retail/pos-sales-groups-track-commissions.md?toc=/dynamics365/commerce/toc.json
-      - name: Device activation
-        items:
-        - name: Configure, install and activate MPOS
-          href: ../retail/retail-modern-pos-device-activation.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up extended logon functionality for MPOS and Cloud POS
-          href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage Retail activation accounts and validate devices
-          href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-      - name: Receipts
-        items:
-        - name: Set up and design receipt formats
-          href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-        - name: Send email receipts from MPOS
-          href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
     - name: Ratings and reviews
       items:
       - name: Ratings and reviews overview
@@ -1428,8 +1428,6 @@
       items: 
       - name: Commerce development and extensibility
         href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
-      - name: Online channel
-        href: e-commerce-extensibility/overview.md
       - name: Online channel extensibility
         items:
         - name: Online channel extensibility overview
