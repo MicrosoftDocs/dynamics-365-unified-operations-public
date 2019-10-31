@@ -126,5 +126,5 @@ You can save an onboarding guide as a template. In this way, you can save time w
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support](./talent-support.md)
