@@ -59,7 +59,7 @@ Product information contains all the information related to the product and its 
 Finance and Operations | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
 Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
-CDS released distinct products | Product | The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
+Common Data Service released distinct products | Product | The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
 Product number identified barcode | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
 Default order settings | msdyn\_productdefaultordersettings
 Product specific default order settings | msdyn_productdefaultordersettings
@@ -79,7 +79,7 @@ Unit | uoms
 Unit conversions | msdyn_ unitofmeasureconversions
 Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
 Product categories | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category entity. 
-Product category hierachies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products.The category hierarchies are available in CDS using the Prodcut category hierarchy entity. 
+Product category hierachies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products.The category hierarchies are available in Common Data Service using the Prodcut category hierarchy entity. 
 Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
 Product category assignments | msdyn_productcategoryassignments | To assign a product to a category the product category assignments entity can be used.
 
@@ -97,7 +97,7 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 With the dual-write functionality enabled, the apps from Finance and Operations will be syncronized in other Dynamics 365 apps in **Draft** state. They are added to the first pricelist with the same currency. In other words, they are added to the first pricelist in a Dynamics 365 app that matches the currency of your legal entity where the product is released in a Finance and Operations app. 
 
-By default products from Finance and Operations apps are synchronized to Customer Engagement in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
+By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**. 
 
 Note that the synchronization of products happens from Finance and Operations apps to Common Data Service. This means that the values of the product entity fields can be changed in Common Data Service, but when the synchronization is triggered (when a product field is modified in a Finance and Operations app), this will overwrite the values in Common Data Service. 
 
@@ -165,7 +165,7 @@ The unit of measure concept is integrated between Finance and Operations apps an
 
 When dual write is enabled, units from Finance and Operations apps are synchronized to other Dynamics 365 apps. The unit groups synchronized from Finance and Operations apps in Common Data Service have a flag set that indicates they are “Externally maintained”.
 
-### Matching units and unit classes/groups data from Finance and Operations and Customer Engagement
+### Matching units and unit classes/groups data from Finance and Operations and other Dynamics 365 apps
 
 First, it is important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Common Data Service or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair “Unit group ID” and “Name” that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Common Data Service.
 
@@ -178,7 +178,7 @@ For units and unit classes in Finance and Operations not existing in other Dynam
 
 As part of dual-write the unit groups from Finance and Operations apps and its corresponding units are created and synchronized in other Dynamics 365 apps and Common Data Service and the unit group will be set as “Externally maintained”. No extra bootstrapping effort is required.
 
-For units in other Dynamics 365 apps not existing in Finance and Operations apps:
+For units in other Dynamics 365 apps that do not exist in Finance and Operations apps:
 
 The field msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations apps in the corresponding unit class (if it exists). If the unit class does not exist, first the unit class must be created (note that you cannot create a unit class in Finance and Operations apps except through extension if you are extending the enum) matching the other Dynamics 365 apps unit group. Then you can create the unit. Note that the unit symbol in Finance and Operations apps must be the msdyn_symbol previously specified in other Dynamics 365 apps for the unit.
 
@@ -208,24 +208,24 @@ The product policies are sets of policies used for defining products and its cha
 To uniquely identify products between Dynamics 365 for Finance and Operations and products in Common Data Service the integration keys are used. 
 For products, the **(productnumber)** is the unique key that identifies a product in Common Data Service. It is composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in Finance and Operations and **msdyn_productnumber** indicates the product number for the specific product in Finance and Operations. 
 
-For a Customer Engagement user, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the field is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) field, the unique key for a product, is not shown. 
+For a other Dynamics 365 apps user, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the field is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) field, the unique key for a product, is not shown. 
 
 Note that if apps are built on top of Common Data Service, special attention should be paid to using the (productnumber), that is the unique product ID, as the integration key, and not the msdyn_productnumber, due to the fact that the last is not unique. 
 
-## Initial synchronization of products and migration of data from CDS to Finance and Operations
+## Initial synchronization of products and migration of data from Common Data Service to Finance and Operations
 
 ### Initial synchronization of products 
 
-When dual write is enabled, products from Dynamics 365 Finance and Operations are synchronized to CDS/Customer Engagement. Note that products created in CDS/Customer Engagement prior to dual write, will not be updated or matched with product data from Finance and Operations.
+When dual write is enabled, products from Dynamics 365 Finance and Operations are synchronized to Common Data Service and other Dynamics 365 apps. Note that products created in Common Data Service and other Dynamics 365 apps prior to dual write, will not be updated or matched with product data from Finance and Operations.
 
-### Matching product data from Finance and Operations and Customer Engagement
+### Matching product data from Finance and Operations and other Dynamics 365 apps
 
-If the same products are kept (overlapping/matching) in Finance and Operations and in CDS/Customer Engagement, when enabling dual-write the synchronization of products from Finance and Operations will take place, and duplicate records will appear in CDS for the same product.
-To avoid the previous situation, if Customer Engagement has products that are overlapping/matching with Finance and Operations, then the administrator enabling dual write must bootstrap the fields **Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") before the synchronization of products takes place. In other words, these two fields in the product in CDS must be filled in with the respective company in Finance and Operations to which the product needs to be matched with and with its product number. 
+If the same products are kept (overlapping/matching) in Finance and Operations and in Common Data Service and other Dynamics 365 apps, when enabling dual-write the synchronization of products from Finance and Operations will take place, and duplicate records will appear in Common Data Service for the same product.
+To avoid the previous situation, if other Dynamics 365 apps have products that are overlapping/matching with Finance and Operations, then the administrator enabling dual write must bootstrap the fields **Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") before the synchronization of products takes place. In other words, these two fields in the product in Common Data Service must be filled in with the respective company in Finance and Operations to which the product needs to be matched with and with its product number. 
 
-Then, when the synchronization is enabled and takes place, the products from Finance and Operations will be synchronized with the matched products in Customer Engagement/CDS. This is applicable for both distinct products and product variants. 
+Then, when the synchronization is enabled and takes place, the products from Finance and Operations will be synchronized with the matched products in Common Data Service and other Dynamics 365 apps. This is applicable for both distinct products and product variants. 
 
 
-### Migration of product data from Customer Engagement to Finance and Operations
+### Migration of product data from other Dynamics 365 apps to Finance and Operations
 
-If Customer Engagement has products that are not present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and Customer Engagement as described above. 
+If other Dynamics 365 apps has products that are not present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above. 
