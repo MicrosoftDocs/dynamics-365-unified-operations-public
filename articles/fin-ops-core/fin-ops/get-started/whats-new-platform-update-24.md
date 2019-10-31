@@ -85,7 +85,7 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
 
 > [!Note]
-> This feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
+> This feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release plans](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 This will allow, for example, a purchase order approval to quickly trigger a fulfillment in the vendor organization sooner than later; a receipt of a damaged part to trigger the vendor claim process in real time; and so on. Because these events happen in the context of business processes they are called *business events*, which enable *business process integration*.
 
