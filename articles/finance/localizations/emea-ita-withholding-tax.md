@@ -66,7 +66,7 @@ On the Action Pane, click **Limits**, and set up limits for the withholding tax 
 | Minimum withholding tax | Enter the minimum withholding tax amount that can be posted for any transaction for the selected withholding tax code. |
 | Maximum withholding tax | Enter the maximum withholding tax amount that can be posted for any transaction for the selected withholding tax code. |
 
-Set up withholding tax groups at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax groups**. Define the code and name for a withholding tax group, and assign a withholding tax code to the group. Find more information, see [Set up withholding tax (Task guide)](../general-ledger/tasks/set-up-withholding-tax.md). Set up a vendor account for the calculation of withholding tax at **Accounts payable** &gt; **Vendors** &gt; **All vendors**. Define the following settings.
+Set up withholding tax groups at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax groups**. Define the code and name for a withholding tax group, and assign a withholding tax code to the group. Find more information, see [Set up withholding tax](../general-ledger/tasks/set-up-withholding-tax.md). Set up a vendor account for the calculation of withholding tax at **Accounts payable** &gt; **Vendors** &gt; **All vendors**. Define the following settings.
 
 
 |         FastTab         |              Field               |                                Description                                |
