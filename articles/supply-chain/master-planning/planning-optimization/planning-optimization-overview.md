@@ -35,44 +35,48 @@ ms.dyn365.ops.version: AX 10.0.5
 
 # Planning Optimization overview
 
-The Planning Optimization Add-in for Dynamics 365 for Finance and Operations enables master planning calculation to happen outside of Dynamics 365 Supply Chain Management and the related SQL database. The benefits associated with using Planning Optimization include improved performance and minimal impact on SQL during master planning runs. Quick planning runs, even during office hours, allows planners to react immediately on demand or parameter changes.
+The Planning Optimization Add-in for Microsoft Dynamics 365 for Finance and Operations enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
 
-To use Planning Optimization, you have to install the Planning Optimization Add-in for Finance and Operations from your Lifecycle Services (LCS) project and enable the use of Planning Optimization from Supply Chain Management. For more information, read the (Get started with Planning Optimization)[get-started.md] topic.
+To use Planning Optimization, you must install the Planning Optimization Add-in from your project in Microsoft Dynamics Lifecycle Services (LCS) and turn on the Planning Optimization functionality in Supply Chain Management. For more information, see [Get started with Planning Optimization](get-started.md).
 
-The image below demonstrates the advantage of running Planning Optimization during office hours. 
+The following illustration shows the advantage of running Planning Optimization during office hours.
 
-![Data model for products](media/PlanningOptimization1.png)
+![Advantage of running Planning Optimization during office hours](media/PlanningOptimization1.png)
 
 ## Improved performance
 
-Planning Optimization can be used in scenarios involving long-running master plans. Planning Optimization is specifically designed for very fast calculations with massive data volume. It’s built as a hyper-scalable multitenant service, so multiple instances can cooperate simultaneously to calculate the plan. The planning service will also remove the load of master planning from your system and work with a data stream that minimizes the server load. 
+Planning Optimization can be used in scenarios that involve long-running master plans. It's specifically designed for very fast calculations that involve very large volumes of data. Because it's built as a hyper-scalable multitenant service, multiple instances can work together simultaneously to calculate the plan. Additionally, the planning service removes the load of master planning from your system and works with a data stream that minimizes the server load.
 
-With Planning Optimization, you can achieve:
-- Improved planning performance with a shorter run time.
-- Reduced impact on other processes during the master planning run. 
-- More frequent planning runs (not limited to daily runs).
-- Knowledge that future business growth will not overload the planning system.
+Planning Optimization can help you achieve the following goals:
+
+- Improve planning performance through a shorter runtime.
+- Reduce the impact on other processes during the master planning run.
+- Do more frequent planning runs. (You aren't limited to daily runs.)
+- Be confident that future business growth won't overload the planning system.
 
 ## Architecture and data flow
-When the Planning Optimization add-in is installed via LCS, a secure connection is created to the Planning Optimization service. The service is located in the same data center geo as the related Supply Chain Management instance. During master planning with the Planning Optimization set up, master and transactional data will be sent from Supply Chain Management to the Planning Optimization service. If the Planning Optimization add-in is uninstalled, all related data in the Planning Optimization service will be removed.
 
-### High level data flow for regeneration run
+When the Planning Optimization Add-in is installed from LCS, a secure connection to the Planning Optimization service is established. The service is located in the same data center country or region as the related Supply Chain Management instance. After Planning Optimization is set up, when master planning is run, master data and transactional data are sent from Supply Chain Management to the Planning Optimization service.
+
+If the Planning Optimization Add-in is uninstalled, all related data in the Planning Optimization service is removed.
+
+### High-level data flow for regeneration runs
+
 1. The Supply Chain Management client sends a signal to request a planning run from Planning Optimization.
-2. Planning Optimization requests needed data via the connector that is integrated in Planning Optimization.
-3. The SQL database supplies Planning Optimization with the requested information about setup, master, and transactional data. The information is sent via the connector that translates information between Supply Chain Management and the Planning Optimization service.
-4. The Planning Optimization service holds planning related data in memory and performs the needed calculations.
-5. The planning result is sent to the Supply Chain Management database via the connector. The results include information like planned orders and pegging information. Planning Optimization sends a signal to Supply Chain Management that the planning run is completed along with relevant messages and warnings.
+2. Planning Optimization requests the required data via the integrated connector.
+3. The SQL database sends the requested information about setup, master, and transactional data to Planning Optimization via the connector. The connector translates information between Supply Chain Management and the Planning Optimization service.
+4. The Planning Optimization service holds planning-related data in memory and does the required calculations.
+5. The planning result is sent to the Supply Chain Management database via the connector. The results include information such as planned orders and pegging information. Planning Optimization sends a signal to Supply Chain Management to indicate that the planning run has been completed. It also sends any relevant messages and warnings.
 
-Below is a diagram visualizing the flow.
+The following illustration shows the data flow.
 
-![Data model for products](media/PlanningOptimization2.png)
-
+![Data flow for regeneration runs](media/PlanningOptimization2.png)
 
 ## Related resources
 
 [Get started with Planning Optimization](get-started.md)
 
-[Planning optimization fit analysis](planning-optimization-fit-analysis.md)
+[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 
 [View plan history and planning logs](plan-history-logs.md)
 
