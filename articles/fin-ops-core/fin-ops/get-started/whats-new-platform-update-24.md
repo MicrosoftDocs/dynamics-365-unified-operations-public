@@ -104,7 +104,7 @@ Some capabilities that will be included are:
 -   Out-of-the-box integration with Azure Event Grid and Azure Service Bus for
     advanced integration scenarios.
 
--   Exposing business events as 'triggers' in Microsoft Flow.
+-   Exposing business events as 'triggers' in Microsoft Power Automate.
 
 For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
 
