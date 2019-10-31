@@ -64,7 +64,7 @@ For information on provisioning environments, see [Create and manage environment
 
 ## Features not available
 
-Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158).
+Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
 -   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
 
