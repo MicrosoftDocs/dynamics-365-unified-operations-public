@@ -393,122 +393,116 @@
           - name: Overview of cart and checkout pages
             href: quick-tour-cart-checkout.md
           - name: Overview of of account management pages
-            href: quick-tour-account-management.md 
-        - name: Authoring tools
+            href: quick-tour-account-management.md
+        - name: Manage your site settings
           items:
-          - name: Authoring home page overview
+          - name: Authoring page overview
             href: authoring-home-overview.md
-        - name: Manage your site
-          items:
           - name: Manage users and roles
             href: manage-ecommerce-users-roles.md
-          - name: Add script code to site pages to support telemetry
-            href: add-telemetry.md
           - name: Search engine optimization (SEO) considerations for your site
             href: search-engine-optimization-considerations.md
           - name: Manage Content Security Policy (CSP)
             href: manage-csp.md
-        - name: Add and manage content on your site
+        - name: Manage your site content 
           items:
-          - name: Add and manage content
+          - name: Ways to add content
             href: add-manage-content.md
-          - name: Page elements
+          - name: Page model glossary
             href: page-elements-overview.md
           - name: Document states and lifecycle
             href: document-states-overview.md 
-        - name: Brand your site and add store details
-          items:
-          - name: Add a logo
-            href: add-logo.md 
-          - name: Select a site theme
-            href: select-site-theme.md
-          - name: Add a favicon
-            href: add-favicon.md
-          - name: Add a welcome message
-            href: add-welcome-message.md 
-          - name: Add a copyright notice
-            href: add-copyright-notice.md
-          - name: Add languages
-            href: add-languages-to-site.md
-        - name: Pages
-          items:
-          - name: Modify an existing site page
-            href: modify-existing-page.md
-          - name: Add a new site page
-            href: add-new-page.md
-          - name: Select page layouts
-            href: select-page-layouts.md
-          - name: Manage SEO metadata
-            href: manage-seo-metadata.md
-          - name: Save, preview, and publish a page
-            href: save-preview-publish-page.md
-          - name: Enrich a product page
-            href: enrich-product-page.md
-          - name: Enrich a category landing page
-            href: enrich-category-page.md
-        - name: Modules
-          items:
-          - name: Work with modules
-            href: work-with-modules.md
-        - name: Fragments
-          items:
-          - name: Work with fragments
-            href: work-with-fragments.md
-        - name: Templates and layouts
-          items:
-          - name: Templates and layouts overview
-            href: templates-layouts-overview.md
+          - name: Brand your site and add store details
+            items:
+            - name: Add a logo
+              href: add-logo.md 
+            - name: Select a site theme
+              href: select-site-theme.md
+            - name: Add a favicon
+              href: add-favicon.md
+            - name: Add a welcome message
+              href: add-welcome-message.md 
+            - name: Add a copyright notice
+              href: add-copyright-notice.md
+            - name: Add languages
+              href: add-languages-to-site.md
+            - name: Add script code to site pages to support telemetry
+              href: add-telemetry.md
+          - name: Modules
+            items:
+            - name: Work with modules
+              href: work-with-modules.md
+          - name: Fragments
+            items:
+            - name: Work with fragments
+              href: work-with-fragments.md
           - name: Templates
             items:
+            - name: Templates and layouts overview
+              href: templates-layouts-overview.md
             - name: Work with templates
               href: work-with-templates.md
-          - name: Layouts
-            items:
             - name: Work with preset layouts
               href: work-with-layouts.md
-        - name: Site navigation
-          items:
-          - name: Customize site navigation
-            href: customize-site-navigation.md
-          - name: Create a page URL
-            href: create-page-URL.md
+          - name: Pages
+            items:
+            - name: Modify an existing site page
+              href: modify-existing-page.md
+            - name: Add a new site page
+              href: add-new-page.md
+            - name: Select page layouts
+              href: select-page-layouts.md
+            - name: Manage SEO metadata
+              href: manage-seo-metadata.md
+            - name: Save, preview, and publish a page
+              href: save-preview-publish-page.md
+            - name: Enrich a product page
+              href: enrich-product-page.md
+            - name: Enrich a category landing page
+              href: enrich-category-page.md
+          - name: Site navigation
+            items:
+            - name: Customize site navigation
+              href: customize-site-navigation.md
+            - name: Create a page URL
+              href: create-page-URL.md
         - name: Starter kit
           items: 
           - name: Starter kit overview
             href: starter-kit-overview.md
           - name: Account management page
             href: account-management.md
-          - name: Add an alert module 
+          - name: Alert module 
             href: add-alert.md
-          - name: Add a buy box
+          - name: Buy box module
             href: add-buy-box.md
-          - name: Add a carousel module
+          - name: Carousel module
             href: add-carousel.md
-          - name: Add a cart module
+          - name: Cart module
             href: add-cart-module.md
-          - name: Add a checkout module
+          - name: Checkout module
             href: add-checkout-module.md
-          - name: Add a container module
+          - name: Container module
             href: add-container-module.md
-          - name: Add a content placement module
+          - name: Content placement module
             href: add-content-placement-modules.md
-          - name: Add a content rich block module
+          - name: Content rich block module
             href: add-content-rich-block.md
-          - name: Add a feature module
+          - name: Feature module
             href: add-feature-module.md
-          - name: Create a footer module
+          - name: Footer module
             href: author-footer-module.md
-          - name: Create a header module
+          - name: Header module
             href: author-header-module.md
-          - name: Add a hero module
+          - name: Hero module
             href: add-hero-module.md 
-          - name: Create an order confirmation module
+          - name: Order confirmation module
             href: order-confirmation-module.md 
           - name: Product collection module overview
             href: product-collection-module-overview.md 
-          - name: Add a product collection module
+          - name: Product collection module
             href: add-product-collection-modules.md
-          - name: Add a video player module
+          - name: Video player module
             href: add-video-player.md
         - name: Search
           items:
@@ -652,28 +646,8 @@
         items:
         - name: Store inventory management
           href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-        - name: Register serial numbers in the sales process
+        - name: Working with serialized items
           href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-        - name: Inventory journals
-          href: ../supply-chain/inventory/inventory-journals.md?toc=/dynamics365/commerce/toc.json
-        - name: Inventory tag counting
-          href: ../supply-chain/inventory/inventory-tag-counting.md?toc=/dynamics365/commerce/toc.json
-        - name: FIFO with physical value and marking
-          href: ../supply-chain/cost-management/fifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-        - name: LIFO Date with physical value and marking
-          href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-        - name: LIFO with physical value and marking
-          href: ../supply-chain/cost-management/lifo-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-        - name: Weighted average date
-          href: ../supply-chain/cost-management/weighted-average-date.md?toc=/dynamics365/commerce/toc.json
-        - name: Weighted average with physical value and marking
-          href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md?toc=/dynamics365/commerce/toc.json
-        - name: Quarantine orders
-          href: ../supply-chain/inventory/quarantine-orders.md?toc=/dynamics365/commerce/toc.json
-        - name: Running average cost price
-          href: ../supply-chain/cost-management/running-average-cost-price.md?toc=/dynamics365/commerce/toc.json
-        - name: Track running average cost per inventory dimension
-          href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md?toc=/dynamics365/commerce/toc.json
       - name: Statements
         items:
         - name: Retail statements
