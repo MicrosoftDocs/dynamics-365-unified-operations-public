@@ -40,3 +40,15 @@ This topic explains how to view the history of planning jobs triggered with Plan
 To view the history, open the plan you want to view by navigating to **Master planning** > **Setup** > **Plans** > **Master plans**, and click **History**. The history lists all the jobs for the selected plan, including completed and active jobs.
 
 In addition to the job start time and status, you can also see the log for a specific job. The log includes additional information and warnings. Note that not all jobs have logs. To see the log for a job, click **Log**.
+
+## Related resources
+
+[Planning Optimization overview](planning-optimization-overview.md)
+
+[Get started with Planning Optimization](get-started.md)
+
+[Planning optimization fit analysis](planning-optimization-fit-analysis.md)
+
+[Apply filters to a plan](plan-filters.md)
+
+[Cancel a planning job](cancel-planning-job.md)
