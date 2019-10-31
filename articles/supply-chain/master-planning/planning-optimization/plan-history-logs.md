@@ -37,6 +37,12 @@ ms.dyn365.ops.version: AX 10.0.5
 
 This topic explains how to view the history of planning jobs triggered with Planning Optimzation with Dynamics 365 Supply Chain Management. 
 
-To view the history, open the plan you want to view. The history lists all the jobs for the selected plan, including completed and active jobs. 
+To view the history: 
+Open the plan you want to view. 
+- Navigate to **Master planning** > **Setup** > **Plans** > **Master plans**
 
-In addition to the job start time and status, you can also see the log for a specific job. The log include additional information and warnings. 
+The history lists all the jobs for the selected plan, including completed and active jobs.
+- Click **History**
+
+In addition to the job start time and status, you can also see the **Log** for a specific job. The log include additional information and warnings. Note that not all jobs has logs.
+- Click **Log**
