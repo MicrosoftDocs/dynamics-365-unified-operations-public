@@ -52,4 +52,4 @@ A **Plan filter** is setup to include item A, B, and C. Master planning runs are
 - Runtime filter includes all items (blank filter): Item A, B, and C are included in the planning run, and previous planning output for item A and B will be overwritten.
 
 > [!NOTE]
-> You should avoid to set **Plan filter** on the plan selected as **Current dynamic master plan** in the **Master planning parameters**, as it would limit the dynamic master plan functionality to the filtered items. E.g. updating **Net requirements** for an item that is not part of the **Plan filter** will not generate any result.
+> You should avoid setting a **Plan filter** on the plan selected as **Current dynamic master plan** in the **Master planning parameters**, as it will limit the dynamic master plan functionality to the filtered items. For example, updating **Net requirements** for an item that is not part of the **Plan filter** will not generate any result.
