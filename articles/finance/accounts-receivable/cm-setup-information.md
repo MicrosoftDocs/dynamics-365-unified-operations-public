@@ -72,7 +72,7 @@ You can set up Reasons on the **Credit management > Setup > Credit management> C
 
 Credit management groups are used to identify a customer or group of customers that have the same credit management properties. For example, the credit management group can be used to determine the blocking and exclusion credit management rules for the customer.
 
-You can create the groups on the **Credit management > Setup> Groups setup> Credit management groups** page.
+You can create the groups on the **Credit management > Setup> Groups setup > Credit management groups** page.
 
 1.	Click **New** to create a new line.
 2.	Enter a group ID, using up to 10 characters, and enter a group name using up to 60 characters in the description field.
@@ -83,7 +83,7 @@ The credit management group is assigned to a customer on the **Account receivabl
 
 You can create an account status to identify the credit standing of a customer account. You can define the status and its effect on the invoicing and delivery on-hold processes. Account statuses can also be used to determine blocking rules for a customer.
 
-You can create Account statuses from the **Credit management > Setup> Groups setup> Account statuses** page.
+You can create Account statuses from the **Credit management > Setup> Groups setup > Account statuses** page.
 
 1. Add an account status and a description for the status that represents the credit standing for a customer. For example, use **Normal** to indicate that a customer is in good standing and open orders are subject to standard credit management processing.
 
@@ -149,7 +149,7 @@ You can create automatic credit limits criteria on the **Automatic credit limits
 
 2. Select the currency for the automatic credit limit. You can create multiple automatic credit limits for the same risk group for credit limits in different currencies.
 
-3. Enter the revenue amount that represents the maximum company revenue that can be used for this automatic credit limit. When credit limits are created, the revenue amount is compared to a revenue value found on the **Financials** page (**Accounts Receivable > All customers> Select a customer > General > Statistics > Financial**). The system uses the latest value in the **Overview** section.
+3. Enter the revenue amount that represents the maximum company revenue that can be used for this automatic credit limit. When credit limits are created, the revenue amount is compared to a revenue value found on the **Financials** page (**Accounts Receivable > All customers > Select a customer > General > Statistics > Financial**). The system uses the latest value in the **Overview** section.
 
 Complete the following steps to add lines that represent the credit limit that will be generated based on criteria selected.
 
