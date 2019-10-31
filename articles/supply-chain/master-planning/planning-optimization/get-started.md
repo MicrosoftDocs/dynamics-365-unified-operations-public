@@ -50,8 +50,10 @@ If you can run master planning with your current license, you don't need an addi
 
 To use Planning Optimization, install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. Access the add-in from your Dynamics Lifecycle Services (LCS) project and enable the use of Planning Optimization from the Supply Chain Management user interface (UI).
 
-1. Log in to LCS and select a project.
-1. Click the **Environment add-ins** tab and then click **Install a new add-in**.
+1. Log in to LCS and navigate to the desired environment.
+1. Go to **Full details**.
+1. Click **Maintain** or scroll down to the **Environment add-ins** tab. 
+1. Click **Install a new add-in**.
 1. Click **Planning Optimization**.
 1. Follow the installation guide and agree to the terms and conditions.
 1. Click **Install**.
