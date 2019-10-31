@@ -50,7 +50,7 @@ These two product data models have been integrated in Common Data Service as sho
 
 ![Data model for products in Dynamics 365 apps](media/dual-write-products-6.jpg)
 
-The dual-write entity maps for products have been designed to flow data one-way onl, in near-real time from Finance and Operations apps to Common Data Service. However, the product infrastructure has been made open to make it bi-directional if required. Although you can customize it, it's at your own risk, as Microsoft does not recommend this approach.
+The dual-write entity maps for products have been designed to flow data one-way only, in near-real time from Finance and Operations apps to Common Data Service. However, the product infrastructure has been made open to make it bi-directional if required. Although you can customize it, it's at your own risk, as Microsoft does not recommend this approach.
 
 ## Templates
 
