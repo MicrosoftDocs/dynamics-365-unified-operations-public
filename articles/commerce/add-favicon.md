@@ -5,7 +5,7 @@ title: Add a favicon
 description: This topic explains how to add a favicon to your site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
