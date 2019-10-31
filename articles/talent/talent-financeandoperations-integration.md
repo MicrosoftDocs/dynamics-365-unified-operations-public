@@ -50,7 +50,7 @@ The integration solution requires the following versions of Talent and Finance:
 ## Template and tasks
 
 To access the template, do the following.
-1. Open [PowerApps Admin Center](https://admin.powerapps.com/). 
+1. Open [Power Apps Admin Center](https://admin.powerapps.com/). 
 1. Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates. A new project will need to be created for each legal entity that you want to integrate into in Finance.
 
 The following template is used to synchronize records from Talent to Finance.
