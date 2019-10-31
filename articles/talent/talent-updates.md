@@ -57,7 +57,7 @@ You can find out what's in the works for Talent and what we've released in the f
 
 - [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new)
 
-- [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs)
+- [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (for Platform-related bugs only)
 
 - [Talent blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
