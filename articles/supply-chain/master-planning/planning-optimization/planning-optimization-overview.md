@@ -63,4 +63,19 @@ When the Planning Optimization add-in is installed via LCS, a secure connection 
 4. The Planning Optimization service holds planning related data in memory and performs the needed calculations.
 5. The planning result is sent to the Supply Chain Management database via the connector. The results include information like planned orders and pegging information. Planning Optimization sends a signal to Supply Chain Management that the planning run is completed along with relevant messages and warnings.
 
+Below is a diagram visualizing the flow.
+
 ![Data model for products](media/PlanningOptimization2.png)
+
+
+## Related resources
+
+[Get started with Planning Optimization](get-started.md)
+
+[Planning optimization fit analysis](planning-optimization-fit-analysis.md)
+
+[View plan history and planning logs](plan-history-logs.md)
+
+[Apply filters to a plan](plan-filters.md)
+
+[Cancel a planning job](cancel-planning-job.md)
