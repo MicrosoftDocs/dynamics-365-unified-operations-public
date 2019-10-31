@@ -5,7 +5,7 @@ title: Troubleshoot business events
 description: This topic provides information about troubleshooting business events.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,3 +46,4 @@ This topic provides tips for troubleshooting issues that involve business events
 |- 0 is an invalid bundle size<br>- Business events are not getting triggered<br>- Microsoft Flow is not getting triggered by business events<br>- Unable to configure business event because it has reached the limit of 0 configured endpoints |One of the reasons why this issue can occur is if certain parameters are not set as expected in the **BusinessEventsParameters** table. This is due to an update in which some of the business events parameters not being set correctly.<br><br>In a non-production environment, you must update the **BusinessEventsParameters** table so that Enabled =1; ProcessorThreads = 1; EndPointRetryCount = 3; BundleSize = 50; EndPointsPerEvent = 10. After this update, restart the batch service and run IISReset to pick up the latest values.<br><br>For production environments, log a support request with Microsoft to get these updated.
 |Platform update 30 compiler warning when creating custom payload context fields by augmenting via Chain of Command (CoC) the addProperties method in the adapter class. **Class 'BusinessEventsServiceBusAdapter' is internal in model 'ApplicationFoundation' and cannot be extended**.  |This is a change in the compiler that prevents an internal API from being extended. This is being tracked as a bug to provide alternate ways to add custom properties.
 |**Error:** Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information|This error message on the error tab of active business events can typically be resolved by rebuilding the catalog.
+|Alert business events don't trigger|One of the reasons why an event is not triggerring could be a potential issue with alerts email functionality. Try turning off the send email option in the alert to see if that resolves the issue.
