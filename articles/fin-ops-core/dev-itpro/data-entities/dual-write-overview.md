@@ -34,8 +34,6 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
 In the current digital world, business ecosystems use Microsoft Dynamics 365 applications as a whole. Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops. To achieve this experience, integration between Finance and Operations apps and other Dynamics 365 applications is essential. Some applications are built on top of Common Data Service. Integration between Finance and Operations apps data with Common Data Service lets other applications communicate coherently and fluently with Finance and Operations.
 
 Finance and Operations apps and Common Data Service provide near-real-time data synchronization between Finance and Operations apps and other Dynamics 365 applications via a dual-write framework. The coverage is broad and spans 28 surface areas of the application. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect business processes across applications.
