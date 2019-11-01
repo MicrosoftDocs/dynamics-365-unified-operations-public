@@ -55,8 +55,6 @@ Tax Ledger Account Group | msdyn\_taxpostinggroups
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
-[!include [Tax codes](dual-write/TaxCodes-msdyn-taxcodes.md)]
-
 [!include [Tax groups](dual-write/TaxGroupEntity-msdyn-taxgroups.md)]
 
 [!include [Tax item groups](dual-write/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
