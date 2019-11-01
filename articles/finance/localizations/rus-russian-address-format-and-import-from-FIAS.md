@@ -42,7 +42,7 @@ to set up and use the FIAS import mechanisms.
 
 5.  In the **ZIP/postal code** field, select the postal code.
 
-![](media/1%20Address%20setup.jpg)
+    ![](media/1%20Address%20setup.jpg)
 
 6.  Select **Save**.
 
