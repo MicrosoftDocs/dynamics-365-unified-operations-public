@@ -68,6 +68,22 @@ Payment day lines CDS   | Msdyn\_paymentdaylines
 Terms of Payment        | Msdyn\_paymentterms
 Name Affixes            | Msdyn\_nameaffixes
 
+Finance and Operations apps | Other Dynamics 365 apps         | Description
+----------------------------|---------------------------------|------------
+Vendors V2 | msdyn_vendors
+Vendor groups | msdyn_vendorgroups
+
+
+CDS Contacts V2 | contacts
+CDS Contacts V2 | contacts
+Vendor payment method | msdyn_vendorpaymentmethods
+Payment schedule | msdyn_paymentschedules
+Payment schedule lines | msdyn_paymentschedulelines
+Payment days CDS | msdyn_paymentdays
+Payment day lines CDS V2 | msdyn_paymentdaylines
+Terms of payment | msdyn_paymentterms
+Name affixes | msdyn_nameaffixes
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
 ### Vendor V2 and Account 
@@ -77,12 +93,6 @@ Businesses that use the Account entity to store vendor information can continue 
 ### Vendor V2 and Msdyn\_vendors
 
 Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations apps integration. 
-
-<!-- ![vendor mappings](media/dual-write-vendors-1.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-2.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-3.png) -->
 
 Source field | Map type | Destination field
 ---|---|---
@@ -177,6 +187,8 @@ AREPRICESINCLUDINGSALESTAX | \>\< | msdyn\_priceincludessalestax
 SALESTAXGROUPCODE | = | msdyn\_taxgroup.msdyn\_name
 VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
 
+[!include [Vendors](dual-write/VendorsV2-msdyn-vendors.md)]
+
 ### Contacts
 
 This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations apps and other Dynamics 365 apps. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
@@ -193,6 +205,8 @@ DEFAULTPAYMENTTERMNAME | = | msdyn\_paymentterms.msdyn\_name
 DESCRIPTION | = | msdyn\_description
 VENDORGROUPID | = | msdyn\_vendorgroup
 CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_name
+
+[!include [](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
 
 ### Vendor Payment Method
 
@@ -217,3 +231,10 @@ ENABLEPOSTDATEDCHECKCLEARINGPOSTING | \>\< | msdyn\_postdatedcheckclearingpostin
 PROMISSORYNOTEDRAFTTYPE | \>\< | msdyn\_promissorynotedrafttype
 DIRECTDEBIT | \>\< | msdyn\_directdebit
 
+[!include [](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
+
+
+
+
+
+[!include [](dual-write/.md)]
