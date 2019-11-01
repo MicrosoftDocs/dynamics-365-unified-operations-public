@@ -52,10 +52,10 @@ Retailers who do not want to manage customers at the sales associate level and w
 Each store associate can have one client book per legal entity, and they can add one or more customers to their client book. Currently in Retail, a customer can only be added to one client book, but we plan on adding functionality to support adding a customer to multiple client books. 
 
 > [!NOTE]
-> Unlike customer search, the client book does not filter customers based on store’s address books. 
+> Unlike customer search, the client book does not filter customers based on the store’s address books. 
 
 ## Activities and notes
-Using online channels, retailers can understand customer preferences without customers explicitly providing this information. But when customers interact with the sales associates in the store, they provide their preference information explicitly, but the information can get lost after the sale is over. This information, if recorded, can help the retailers better understand the customer, and then provide better recommendations and a better overall shopping experience. 
+Using online channels, retailers can understand customer preferences without customers explicitly providing this information. But when customers interact with sales associates in the store, they provide their preference information explicitly. That information can get lost after the sale is over, however. If recorded, it could help retailers better understand the customer, and help them provide better recommendations and a better overall shopping experience. 
 
 To capture the critical information shared directly by customers, sales associates can not only use the client book attributes, but also use the activities and notes functionality. Retailers can configure the activity types such as information about the store visit, email address, phone number, and appointments. Activities created by the sales associates can be viewed in a timeline format on the point of sale (POS) and by navigating to the **Activities** tab on the **All customers > General** page in headquarters. 
 
