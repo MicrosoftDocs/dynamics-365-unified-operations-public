@@ -51,6 +51,6 @@ To learn more about this feature, play the **ER Split XML files based on the fil
 - [ER format configuration - XmlFilesSplittingFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 
 ## Additional resources
-[Electronic reporting destinations](electronic-reporting-destinations.md)
+[Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
-[Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
+[Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
