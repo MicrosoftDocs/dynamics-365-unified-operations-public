@@ -93,17 +93,6 @@ PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
 
 Internal organization information in Common Data Service comes from two entities, **operating unit** and **legal entities**.
 
-
-### Operating unit
-
-Source field | Map type | Destination field
----|---|---
-LANGUAGEID | \> | msdyn\_languageid
-NAMEALIAS | \> | msdyn\_namealias
-NAME | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-OPERATINGUNITTYPE | \>\> | msdyn\_type
-
 [!include [products](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
 [!include [products](dual-write/LegalEntities-msdyn-internalorganizations.md)]
