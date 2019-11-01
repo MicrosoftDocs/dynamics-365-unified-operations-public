@@ -62,6 +62,6 @@ If a **Charges percentage** value is also entered, both types of miscellaneous c
 
 *Statistical charges amount* = (*Invoice amount* × *Charges percentage*) + (*Cost of each kilogram* × *Net weight \[in kilograms\]*)
 
-![Charge amounts](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
+![Charges calculation](media/emea-ita-exil-misc-charge-kg-pic2.jpg)
 
 For more information, see [Transfer transactions to the Intrastat](tasks/transfer-transactions-intrastat.md)
