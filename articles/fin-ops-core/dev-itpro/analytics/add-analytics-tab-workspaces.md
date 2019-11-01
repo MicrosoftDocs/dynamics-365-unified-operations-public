@@ -108,7 +108,7 @@ Now that you've added the form controls that will be used to embed the workspace
 > [!NOTE]
 > For embedded workspaces, we recommend that you use extensions to hide both the **Filters Pane** and **Tab** pages, for consistency.
 
-You've now completed the task of extending the application form definition. For more information about how to use extensions to do customizations, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+You've now completed the task of extending the application form definition. For more information about how to use extensions to do customizations, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 
 ## Add X++ business logic to embed a viewer control
 Follow these steps to add business logic that initializes the report viewer control that is embedded in the **Reservation management** workspace.
