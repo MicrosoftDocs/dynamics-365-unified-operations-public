@@ -74,8 +74,6 @@ Legal entities | cdm_companies | Provides bidirectional synchronization of legal
 
 This template provides one-way synchronization of the Organization Hierarchy Published entity from Finance and Operations to other Dynamics 365 apps.
 
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
 Source field | Map type | Destination field
 ---|---|---
 VALIDTO | \> | msdyn\_validto
@@ -86,6 +84,8 @@ CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
 HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
 CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
 PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+
+[!include [products](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 [!include [products](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
