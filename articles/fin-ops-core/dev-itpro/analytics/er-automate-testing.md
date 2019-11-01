@@ -383,8 +383,8 @@ Therefore, as you've seen, the functioning of any ER format can be evaluated aut
 
 - [Task recorder resources](../user-interface/task-recorder.md)
 - [Regression suite automation tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Create user acceptance test libraries by using task recordings and BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [Deploy topologies that support continuous build and test automation](../perf-test/continuous-build-test-automation.md)
-- [Trace generated report results and compare them with ER baseline values](er-trace-reports-compare-baseline.md)
-- [Upgrade your ER format by adopting a new, base version of that format](tasks/er-upgrade-format.md)
-- [Import ER configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+- [Create and automate user acceptance tests](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md)
+- [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md)
+- [ER Import a configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
