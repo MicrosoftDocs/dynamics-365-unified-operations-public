@@ -58,7 +58,7 @@ Finance and Operations | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
 Organization hierarchy purposes | msdyn_internalorganizationhierarchypurposes | This template provides one-way synchronization of the Organization Hierarchy Purpose entity.
 Organization hierarchy type | msdyn_internalorganizationhierarchytypes | This template provides one-way synchronization of the Organization Hierarchy Type entity.
-Organization hierarchy - published | msdyn_internalorganizationhierarchies | 
+Organization hierarchy - published | msdyn_internalorganizationhierarchies | This template provides one-way synchronization of the Organization Hierarchy Published entity.
 Operating unit | msdyn_internalorganizations | 
 Legal entities | msdyn_internalorganizations | 
 Legal entities | cdm_companies | Provides bidirectional synchronization of legal entity (company) information.
@@ -66,25 +66,19 @@ Legal entities | cdm_companies | Provides bidirectional synchronization of legal
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
-[!include [products](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-[!include [products](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-## Internal Organization Hierarchy
-
-This template provides one-way synchronization of the Organization Hierarchy Published entity.
-
-[!include [products](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
-
-[!include [products](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## Internal Organization
 
 Internal organization information in Common Data Service comes from two entities, **operating unit** and **legal entities**.
 
-[!include [products](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-[!include [products](dual-write/LegalEntities-msdyn-internalorganizations.md)]
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-[!include [products](dual-write/LegalEntities-Companies.md)]
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
