@@ -68,7 +68,7 @@ Open the **Days overdue** tab if the blocking rule applies to customer with one 
 3. Select **Risk group** to use criteria for applying a credit management hold on customers that are grouped by a commont set of factors, such as their Dun and Bradstreet rating, the number of years that they've been in business, the amount of time they've been your customer, and so on.  
 4. Select the type of rule that you are setting up. The **Blocking** option will create a rule that blocks an order. The **Exclusion** option will create a rule that will exclude another rule from blocking an order. 
 5. Select a **Value type**. The default entry is a fixed number of days. If you are creating an exclusion, you can specify a fixed number of days or an amount instead. 
-6. Enter the number of days **Overdue** that will be allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of  days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount due to an exclusion, then enter an amnount and a currency for that amount.
+6. Enter the number of days **Overdue** that will be allowed for the selected blocking rule before an order is placed on credit management hold for review. The number of days overdue represents an additional number of grace days that are added to the number of  days beyond the payment due date that the invoice can have before it is considered overdue. If you specified the **Value type** as an amount for an exclusion, then enter an amnount and a currency for that amount.
 
 ### Accounts status
 
@@ -118,6 +118,7 @@ Open the **Overdue Amount** tab if the blocking rule applies to customers with o
 6. Select the **Value type** that defines the type of value that will be used to also test how much of the credit limit has been used. Blocking rules require a percentage but an exclusion can have a fixed amount or percentage.
 shold. The Threshold relates to the Credit limit.
 7. Enter the **Credit limit threshold** value for the selected rule before a customer goes on credit management hold. This can be an amount or a percentage based on the value type select in the value type.
+8. The rule checks that the **Overdue amount** is exceeded and the **Credit limit threshold** is exceeded. 
 
 ### Sales order 
 
@@ -178,9 +179,9 @@ You can set up the payment terms rankings on the **Credit management > Setup > C
 
 Rules are run in a specific order that you change to suit the needs of your organization. 
 
-- The Sales order rules let you override all rules that might block a sales order if an exclusion rule is true. If you mark an exclusion rule so that the **Release Sales order** option is selected, the order will not be put on hold if that rule is true, and no other rules will be checked.
+- The Sales order exclusion rules let you override all rules that might block a sales order if an exclusion rule is true and iff you mark an exclusion rule so that the **Release Sales order** option is selected. The order will not be put on hold if that rule is true, and no other rules will be checked.
 - Blocking rules are rules for every *criteria*. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
-- Exclusion rules are run last. If an exclusion rule is true on one *rule*, it will not override the blocking rule for the same rule. Exclusions will only affect the rule on which they are defined. 
+- Exclusion rules are run last. If an exclusion rule is true on one *rule*, it will not override the blocking rule for any other rule. Exclusions will only affect the rule on which they are defined. 
 - Blocking and exclusion rules are run in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be run because an exclusion rule at the Table or Group level is run.
 
 The behavior of the **Credit limit used** rule will change based on the settings for the **Check credit limit for sales order** parameter found in the Credit and Collections parameter form.
@@ -204,7 +205,7 @@ A sales order can be placed in the hold list for the following reasons:
 8. The payment terms differ from the default payment terms for the customer.
 9. The settlement discounts differ from the default settlement discount for the customer.
 
-The blocking reason is displayed for each sales order in the hold list. If there are more than one reason for the hold, the reason will show as **Multiple**. You can use the **Blocking reasons** menu on the Action Pane to view all of the reasons why the sales order was placed on hold.
+The blocking reason is displayed for each sales order in the hold list. If there are more than one reason for the hold, the reason will show as **Multiple**. You can use the **Blocking reasons** menu on the Action Pane to view all of the reasons why the sales order was placed on hold. You can also view the **Blocking reasons** in a factbox.
 
 ### Releasing orders from the hold list for processing
 
@@ -216,10 +217,12 @@ When you have researched the reasons for the hold and you have mitigated them, y
 4) Select the **Release** menu on the action pane to release an order. This menu will only be available after transactions have been selected. The user is presented with two options:
  - Select **With posting** to remove the hold and post the document using the same posting process that was used when it was placed on hold. For example, if the sales order confirmation was placed on hold, the sales order confirmation would be completed after the release. The sales order posting form will be displayed allowing the user to post the confirmation.
  - Select **Without posting** to remove the hold without doing any further processing. The sales order can be manually posted.
+
 ### Rejecting orders in the hold list
 You can use the **Reject** menu on the action pane to reject a sales order
 1. Select a line in the hold list. You can release multiple orders by selecting more than one line.
 2. The order will be removed from the hold list and the sales order header will be updated to show that the order was rejected.
+
 ### Automatically releasing credit management holds
 Sales orders are placed in the hold list based on the blocking rules. However, some reasons for the holds may changes over time if the sales order remains in the hold list for a period of time. For example, a customer may pay their bill, freeing up their credit limit. 
 You can use the **Evaluate for release** menu to review the sales orders in the hold list and automatically release them if the reason for the hold has been mitigated.
