@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 # Planning Optimization overview
 
-The Planning Optimization Add-in for Microsoft Dynamics 365 for Finance and Operations enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
+The Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits that are associated with the Planning Optimization functionality include improved performance and minimal impact on SQL database during master planning runs. Quick planning runs can be done even during office hours, so that planners can immediately react to demand or parameter changes.
 
 To use Planning Optimization, you must install the Planning Optimization Add-in from your project in Microsoft Dynamics Lifecycle Services (LCS) and turn on the Planning Optimization functionality in Supply Chain Management. For more information, see [Get started with Planning Optimization](get-started.md).
 
