@@ -247,7 +247,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 8. Save the configuration, and close the designer.
 9. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![Chang configuration status](media/gte-change-configuration-status.png)
+	![Change configuration status](media/gte-change-configuration-status.png)
 
 10. Enter a description such as **UTGST**, and then click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.

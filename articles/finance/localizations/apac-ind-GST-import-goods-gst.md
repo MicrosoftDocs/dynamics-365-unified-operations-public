@@ -55,12 +55,11 @@ Complete the procedures in this topic to import goods that have Goods and Servic
 10. Select the **Assessable value** check box.
 11. In the **Charges value** field, enter a value.
 
-    ![Maintain charges page](media/Capture2019052105.PNG)
+    ![Maintain charges page](media/Capture2019052105_upd.png)
 
 12. Save the record, and then select **Close**.
 
-    ![Assessable value page](media/Capture2019052106.PNG)
-
+    
 > [!NOTE]
 > The assessable value is calculated as Net amount + Miscellaneous charges + 1 percent of the landing charges that are defined in Accounts payable parameters.
 

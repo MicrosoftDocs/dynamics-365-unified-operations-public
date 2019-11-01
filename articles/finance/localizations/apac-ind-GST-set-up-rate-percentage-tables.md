@@ -51,4 +51,4 @@ ms.dyn365.ops.version: 10.0.4
 8. On the **Companies** FastTab, select **Parameters**.
 9. Enter the parameter values, and then select **OK**.
 
-    ![Tax setup parameters dialog box](media/tax-parameter.PNG)
+    ![Tax setup parameters dialog box](media/tax-parameter_upd.png)
