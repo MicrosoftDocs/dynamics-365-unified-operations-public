@@ -171,7 +171,7 @@ Create an address for a customer
 10.  In the **Group of flats** field, select the group of flats code. The
     corresponding flat numbers are shown.
 
-    ![](media/7%20Manage%20addresses.jpg)
+   ![](media/7%20Manage%20addresses.jpg)
 
 11.  Select **Save**.
 
@@ -211,7 +211,8 @@ Import from FIAS
 
 -   FiasStructureStatusEntity
 
-![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)   After you select each file, select **Upload and add**.
+![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)   
+    After you select each file, select **Upload and add**.
 
 7.  Select **Save**.
 
