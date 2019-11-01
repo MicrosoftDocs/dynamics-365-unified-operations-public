@@ -50,6 +50,19 @@ A business ecosystem that consists of Finance and Operations apps and Common Dat
 
 Organization hierarchy entity maps are available for one-way synchronization of data from Finance and Operations apps to Common Data Service.
 
+## Templates
+
+Product information contains all the information related to the product and its definition, such as the product dimensions or the tracking and storage dimensions. As the following table shows, a collection of entity maps is created to sync products and related information.
+
+Finance and Operations | Other Dynamics 365 apps | Description
+-----------------------|--------------------------------|---
+Organization hierarchy purposes | msdyn_internalorganizationhierarchypurposes | 
+Organization hierarchy type | msdyn_internalorganizationhierarchytypes | 
+Organization hierarchy - published | msdyn_internalorganizationhierarchies | 
+Operating unit | msdyn_internalorganizations | 
+Legal entities | msdyn_internalorganizations | 
+Legal entities | cdm_companies | 
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
 ## Internal Organization Hierarchy Purpose
@@ -66,6 +79,8 @@ HIERARCHYPURPOSE | \>\> | msdyn\_hierarchypurpose
 IMMUTABLE | \>\> | msdyn\_immutable
 SETASDEFAULT | \>\> | msdyn\_setasdefault
 
+[!include [products](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
+
 ## Internal Organization Hierarchy Type
 
 Tihs template provides one-way synchronization of the Organization Hierarchy Type entity from Finance and Operations to other Dynamics 365 apps.
@@ -75,6 +90,8 @@ Tihs template provides one-way synchronization of the Organization Hierarchy Typ
 Source field | Map type | Destination field
 ---|---|---
 NAME | \> | msdyn\_name
+
+[!include [products](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
 ## Internal Organization Hierarchy
 
@@ -92,6 +109,8 @@ CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
 HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
 CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
 PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+
+[!include [products](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
 ## Internal Organization
 
@@ -111,6 +130,8 @@ NAME | \> | msdyn\_name
 PARTYNUMBER | \> | msdyn\_partynumber
 OPERATINGUNITTYPE | \>\> | msdyn\_type
 
+[!include [products](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
+
 ### Legal entity
 
 Source field | Map type | Destination field
@@ -122,6 +143,8 @@ PARTYNUMBER | \> | msdyn\_partynumber
 none | \>\> | msdyn\_type
 LEGALENTITYID | \> | msdyn\_companycode
 
+[!include [products](dual-write/LegalEntities-msdyn-internalorganizations.md)]
+
 ## Company
 
 Provides bidirectional synchronization of legal entity (company) information between Finance and Operations and other Dynamics 365 apps.
@@ -132,3 +155,6 @@ Source field | Map type | Destination field
 ---|---|---
 NAME | = | cdm\_name
 LEGALENTITYID | = | cdm\_companycode
+
+[!include [products](dual-write/LegalEntities-Companies.md)]
+
