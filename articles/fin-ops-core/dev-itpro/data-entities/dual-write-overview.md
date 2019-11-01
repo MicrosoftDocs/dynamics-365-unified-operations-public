@@ -40,13 +40,16 @@ Finance and Operations apps and Common Data Service provide near-real-time data 
 
 ![Architecture overview diagram](media/dual-write-overview.jpg)
 
-The following value propositions are available for customers:
+The following value propositions are available:
 
 + [Organization hierarchy in Common Data Service](dual-write-organization.md)
 + [Company concept in Common Data Service](dual-write-company.md)
 + [Integrated customer master](dual-write-customer.md)
++ [Integrated ledger](dual-write-ledger.md)
++ [Unified product experience](dual-write-product.md)
 + [Integrated vendor master](dual-write-vendor.md)
-+ Unified product master
++ [Integrated sites and warehouses](dual-write-sites-and-warehouses.md)
++ [Integrated tax master](dual-write-tax.md)
 
 ## System requirements
 
