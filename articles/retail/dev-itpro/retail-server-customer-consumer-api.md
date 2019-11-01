@@ -65,6 +65,8 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | API | Parameter | Return value | Supported Commerce Roles | Description                |
 |-----|-----------|--------------|--------------------------|----------------------------|
 | GetOrderShipmentsHistory    | string accountNumber, QueryResultSettings queryResultSettings | PageResult\<OrderShipments\>       | Employee, Customer, Application | Gets order shipments history for the customers  |
+| CreateEntity | Customer | Customer |Employee, Anonymous,  Application | Creates customer.|
+| UpdateEntity | string key, Customer update | Customer |Employee, Customer,  Application | Updates customer.|
 | GetOrderHistory             | string accountNumber, QueryResultSettings queryResultSettings           | PageResult\<SalesOrder\>           | Employee, Customer, Application | Returns the collection of sales orders.                           |
 | Search                      | CustomerSearchCriteria customerSearchCriteria, QueryResultSettings queryResultSettings    | PageResult\<GlobalCustomer\>       | Employee, Application         | Searches for the customers                                        |
 | GetPurchaseHistory          | string accountNumber, QueryResultSettings queryResultSettings      | PageResult\<PurchaseHistory\>      | Employee, Customer, Application | Gets purchase history for the customers                           |
