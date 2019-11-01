@@ -45,8 +45,8 @@ You should use bootstrapping before enabling dual-write entity maps (during step
     > [!div class="mx-imgBorder"]
     > ![Create dual-write connection](media/dual-write-boot-1.png)
 4. Enable the **Cdm_companies** entity map. This synchronizes companies from the Finance and Operations app to Common Data Service.  
-        > [!div class="mx-imgBorder"]
-        > ![Enable the entity map](media/dual-write-boot-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Enable the entity map](media/dual-write-boot-2.png)
 5. Run the sample bootstrapping code on the Common Data Service or other Dynamics 365 app instance.  
 6. When the bootstrapping is done and the system is ready for the live sync, enable the entity maps.  
 
