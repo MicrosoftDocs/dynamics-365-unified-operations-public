@@ -107,19 +107,31 @@ After you've completed the process above, sales associates can navigate to the c
 ![Client book](./media/client_book.png "View clientbook")
 
 
-## Set up for enabling integration of Dynamics 365 Customer Insights with Dynamics 365 Retail
-To enable the integration with Dynamics 365 Customer Insights you must ensure you have an active instance of Dynamics 365 Customer Insights in the tenant where the Dynamics 365 Retail is provisioned and you need to have an AAD user account which has an Azure subscription.
-Follow the below steps to complete the setup: 
-1.	Register an app in Azure portal – This is the Application that will be used to authenticate with the Dynamics 365 Customer Insights. Refer the App registration documentation here: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app. You also need to generate a secret for this application and note it for later use. You will also need to select expiration duration for the secret. Please take the necessary steps to remember to change the secret before expiration to avoid the integration to stop unexpectedly.
-2.	Create an Azure key vault and save the App secret– Refer the Azure Key Vault documentation here: https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal
-3.	Enable access to Key Vault from Dynamics 365 Retail – To enable Dynamics 365 Retail to access the secret from the Azure key vault you need an application ID and secret. This application can be the same application that was created in step 1 or it could be a new application. In other words, you can either use the application created in step 1 for both Azure Key Vault access and Customer Insights service access, or create unique applications for Customer Insights service access and accessing Azure Key Vault. To enable an application to access Azure Key Vault refer the documentation here: https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal
-4.	Navigate to the Key Vault parameters form in HQ under System Administration > Setup and provide the required information of the created Key Vault and set the application ID used in step 3 as the Key Vault Client so that the Dynamics 365 Retail can access the secrets in the Key Vault; 
-5.	To whitelist the application created in step 1 navigate to the Dynamics 365 Customer Insights application and provide “View” access to the App – Refer the documentation here: https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-permissions
-6.	Navigate to the Retail parameters > Clienteling tab and the next steps will be done on this screen:
-a.	Set the application ID used in step 1 as the Application ID and choose the name of the Key Vault secret created in step 4 as the Secret name
-b.	Set the configuration “Enable Customer Insights” to Yes. If the setup fails for any reason, then an error message will be displayed, and the Enable Customer Insights configuration will be set to No.
-c.	You might have multiple environments in Dynamics 365 for Customer Insights e.g. Test, Prod etc. Select the right environment as the “Environment instance ID”
-d.	In the Alternate customer ID field you need to select the property of the Dynamics 365 Customer Insights which is mapped to the Customer Account number i.e. customer ID of Dynamics 365 Retail
-e.	The remaining three properties are the measures which will be displayed on the Customer card of the client book. You can choose zero or more measures to show on the customer card. As mentioned in the document above, the system first shows these values followed by the attributes of the client book attribute group.
+## Enable integration of Customer Insights with Retail
+
+To enable the integration of Dynamics 365 Customer Insights with Dynamics 365 Retail, you must ensure you have an active instance of Customer Insights in the tenant where Retail is provisioned. You must also have an AAD user account which has an Azure subscription.
+
+Follow the steps below to set up the integration.
+
+1.	Register an application in Azure portal. This is the application that will be used to authenticate with Customer Insights. Follow the instructions in the [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) topic. 
+
+2. You need to generate a secret for the application. Note the secret someplace safe for later use. Also select the expiration duration for the secret. Take the necessary steps to remember to change the secret before the expiration to prevent having the integration stop unexpectedly.
+
+3.	Create an Azure Key Vault and save the application secret. Follow the instructions in the [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal) topic.
+
+4.	Enable access to Key Vault from Dynamics 365 Retail. Do do so, you need an app ID and secret. The application can be the same one that was created in step 1 or it can be a new application. (In other words, you can use the application created in step 1 for both Azure Key Vault access and Customer Insights service access, or you can create unique application for each.) Follow the instructions in the [Store service principal credentials in Azure Stack Key Vault](https://docs.microsoft.com/en-us/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal) topic.
+
+5.	Go to **System Administration > Setup > Key Vault parameters** in headquarters and enter the required information for the Key Vault. Then set the application ID used in step 4 as the Key Vault Client so that Retail can access the secrets in the Key Vault.
+
+6.	To whitelist the application created in step 1, go to Customer Insights and provide “View” access to the app. Follow the instructions in the [Permissions](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-permissions) topic.
+
+6.	In Retail, go to the **Retail parameters** page. On the **Clienteling** tab, expand the **Dynamics 365 Customer Insights** section and do the following.
+
+     1. In the **Application ID** field, enter the application ID used in step 1. 
+     1. In the **Secret name** field, enter the name of the Key Vault secret created in step 5.
+     1. Set **Enable Customer Insights** to **Yes**. If the setup fails for any reason, an error message will be displayed and **Enable Customer Insights** configuration will be set to **No**.
+     1.	You may have multiple environments in Customer Insights, for example test, prod, etc. Enter the appropriate environment in the **Environment instance ID** field.
+     1. In the **Alternate customer ID** field, enter the property of Customer Insights that is mapped to the customer account number (customer ID of Dynamics 365 Retail).
+     1. The remaining three properties are the measures that will be displayed on the customer card of the client book. You can choose zero to three measures to show on the customer card. As mentioned above, the system first shows these values followed by the values of the client book attribute group.
 
 
