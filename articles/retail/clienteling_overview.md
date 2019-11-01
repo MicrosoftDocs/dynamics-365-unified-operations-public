@@ -52,7 +52,7 @@ Retailers who do not want to manage customers at the sales associate level and w
 Each store associate can have one client book per legal entity, and they can add one or more customers to their client book. Currently in Retail, a customer can only be added to one client book, but we plan on adding functionality to support adding a customer to multiple client books. 
 
 > [!NOTE]
-> Unlike customer search, the client book does not filter customers based on the store’s address books. 
+> Unlike customer search, the client book does not filter customer records based on the store’s address books. 
 
 ## Activities and notes
 Using online channels, retailers can understand customer preferences without customers explicitly providing this information. But when customers interact with sales associates in the store, they provide their preference information explicitly. That information can get lost after the sale is over, however. If recorded, it could help retailers better understand the customer, and help them provide better recommendations and a better overall shopping experience. 
