@@ -5,10 +5,10 @@ title: Add a copyright notice
 description: This topic describes how to add a copyright notice to your e-Commerce website.
 author: psimolin
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -77,4 +77,6 @@ The footer that contains the copyright notice automatically appears at the botto
 [Add a welcome message](add-welcome-message.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
 
