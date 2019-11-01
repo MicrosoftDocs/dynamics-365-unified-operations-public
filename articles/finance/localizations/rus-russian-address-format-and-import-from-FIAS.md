@@ -299,12 +299,12 @@ To update existing address data, you should create a job to import FIAS delta.
 
 9.  Select **OK**.
 
-![A screenshot of a cell phone Description automatically generated](media/13%20Import.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/13%20Import.jpg)
 
-10.  For each entity, select the button in the **View map** column to open the
+10. For each entity, select the button in the **View map** column to open the
     **Map source to staging** page.
 
-![A screenshot of a cell phone Description automatically generated](media/14%20Map%20source%20to%20staging.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/14%20Map%20source%20to%20staging.jpg)
 
 11.  On the **Transformations** tab, select **New**, and then select **Upload
     file** to open the **Select a file** dialog box.
@@ -361,8 +361,9 @@ the FIAS database on December 1, 2018.
 
 9.  Select **OK** to start the import.
 
-10.  Select the **Refresh** button in the upper right of the page to view the
+10. Select the **Refresh** button in the upper right of the page to view the
     line together with the results of the full import.
+    
     ![](media/16%20Import%20from%20FIAS.jpg)
 
 ### Update addresses from FIAS
@@ -382,15 +383,15 @@ up the import process.
 
 -   Try the following procedure:
 
-    1.  Go to **System administration \> Workspaces \> Data management**.
+    1. Go to **System administration \> Workspaces \> Data management**.
 
-    2.  In the **Import / Export** section, select the **Framework parameters** tile
+    2. In the **Import / Export** section, select the **Framework parameters** tile
     to open the **Data import/export framework parameters** page.
 
-    3.  On the **Entity settings** tab, select **Configure entity execution
+    3. On the **Entity settings** tab, select **Configure entity execution
     parameters** to open the **Entity import execution parameters** page.
 
-    4.  Set the following fields to configure multithreading for FIAS entities that
+    4. Set the following fields to configure multithreading for FIAS entities that
     are used in import jobs:
 
         -   In the **Entity** field, select the FIAS entity.
