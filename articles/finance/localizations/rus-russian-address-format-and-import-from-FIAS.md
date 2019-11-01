@@ -1,9 +1,8 @@
----
-title: Russian address
----
 
-Introduction
-------------
+# Russian address
+
+
+## Introduction
 
 Address formats determine how address data will appear when it's printed. In the
 system, you can set up address formats for every country or region where
@@ -17,8 +16,7 @@ required for businesses in the Russian Federation. You can use specialized tools
 to import FIAS into your system and keep it up to date. This topic explains how
 to set up and use the FIAS import mechanisms.
 
-Set up Russian address formats
-------------------------------
+## Set up Russian address formats
 
 ### Set up the address format, country or region, state or province, county, city and postal code
 
@@ -46,9 +44,7 @@ Set up Russian address formats
 
 ![](media/5f30fdd4a3e33e1250147ce8f9851074.png)
 
->   A screenshot of a computer Description automatically generated
-
-1.  Select **Save**.
+6.  Select **Save**.
 
 ### Set up a street code
 
@@ -68,9 +64,7 @@ Set up Russian address formats
 
 ![](media/278fffff5e9f1154dfbc02ca8fbdaca4.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Select **Save**.
+7.  Select **Save**.
 
 ### Set up a group of houses
 
@@ -93,9 +87,7 @@ Set up Russian address formats
 
 ![](media/402bbf153fd04e9ae14ce9bf2d2a9bb0.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Select **Save**.
+7.  Select **Save**.
 
 ### Set up a group of flats
 
@@ -119,9 +111,7 @@ Set up Russian address formats
 
 ![](media/5d685d220004bcfaa59336e85755ede6.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Select **Save**.
+7.  Select **Save**.
 
 ### Set up land plots
 
@@ -143,9 +133,7 @@ Set up Russian address formats
 
 ![](media/d0de9fd0896f0d20b52962fe583119b2.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-1.  Select **Save**.
+7.  Select **Save**.
 
 Create an address for a customer
 --------------------------------
@@ -157,39 +145,35 @@ Create an address for a customer
 
 ![](media/0597084166eb870638a0db78d590a11f.png)
 
->   A screenshot of a computer screen Description automatically generated
+3.  On the **Address** FastTab, in the **Country/region** field, select **RUS**.
 
-1.  On the **Address** FastTab, in the **Country/region** field, select **RUS**.
-
-2.  In the **ZIP/postal code** field, select the postal code.
+4.  In the **ZIP/postal code** field, select the postal code.
 
 -   After you select a postal code, the **District** field shows the district
     code and name.
 
-1.  In the **Street code** field, select the street code. The street name is
+5.  In the **Street code** field, select the street code. The street name is
     shown on the right side of the **Street code** field and is also entered in
     the **Street** field.
 
-2.  In the **Building complement** field, enter the name of the building. The
+6.  In the **Building complement** field, enter the name of the building. The
     building name is also entered in the **Street** field.
 
-3.  In the **Building** field, enter the building number. The building number is
+7.  In the **Building** field, enter the building number. The building number is
     also entered in the **Street** field.
 
-4.  In the **Apartment** field, enter the apartment number. The apartment number
+8.  In the **Apartment** field, enter the apartment number. The apartment number
     is also entered in the **Street** field.
 
-5.  In the **Group of houses** field, select the group of houses code. The
+9.  In the **Group of houses** field, select the group of houses code. The
     corresponding building numbers are shown.
 
-6.  In the **Group of flats** field, select the group of flats code. The
+10.  In the **Group of flats** field, select the group of flats code. The
     corresponding flat numbers are shown.
 
 ![](media/f10cc61de15d4460d36d9d61d2e91b07.jpg)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  Select **Save**.
+11.  Select **Save**.
 
 Import from FIAS
 ----------------
@@ -203,22 +187,18 @@ Import from FIAS
 
 ![](media/a844d323405e286961a931752a875ba6.jpg)
 
->   A screenshot of a cell phone Description automatically generated
+2.  Go to **System administration \> Workspaces \> Data management**.
 
-1.  Go to **System administration \> Workspaces \> Data management**.
-
-2.  In the **Import / Export** section, select the **Import** tile to create a
+3.  In the **Import / Export** section, select the **Import** tile to create a
     new import job.
 
 ![](media/4eda7079be1838894a52f86da00c9cc6.jpg)
 
->   A screenshot of a cell phone Description automatically generated
+4.  In the **Group name** field, enter **ImportFiasMetadata**.
 
-1.  In the **Group name** field, enter **ImportFiasMetadata**.
+5.  In the **Description** field, enter a description.
 
-2.  In the **Description** field, enter a description.
-
-3.  On the **Selected entities** FastTab, select **Add file** to add the
+6.  On the **Selected entities** FastTab, select **Add file** to add the
     following files from the package file that you downloaded earlier:
 
 -   Abridgements of addresses
@@ -233,11 +213,9 @@ Import from FIAS
 
 >   After you select each file, select **Upload and add**.
 
-1.  Select **Save**.
+7.  Select **Save**.
 
 ![A screenshot of a social media post Description automatically generated](media/90c779e3d50ba606639e7b9c0bac33a8.jpg)
-
-A screenshot of a social media post Description automatically generated
 
 ### Set up a template to import FIAS data
 
@@ -269,11 +247,9 @@ A screenshot of a social media post Description automatically generated
 >   After you select each entity in the **Entity name** field, select **Add
 >   entity**.
 
-1.  Select **Save**.
+8.  Select **Save**.
 
 ![A screenshot of a social media post Description automatically generated](media/6c31b3dd4004cedd554e6602dbf9748a.jpg)
-
-A screenshot of a social media post Description automatically generated
 
 ### Set up a job for a full FIAS import
 
@@ -300,8 +276,6 @@ job for a full FIAS import.
 8.  Select **OK**, and then select **Save**.
 
 ![A screenshot of a social media post Description automatically generated](media/f4c92c810ccb840bd97c7337755ff762.jpg)
-
-A screenshot of a social media post Description automatically generated
 
 ### Set up a job to import FIAS delta
 
@@ -330,19 +304,15 @@ To update existing address data, you should create a job to import FIAS delta.
 
 ![](media/3e52b078a17053cc192334e9ebbfbc2e.jpg)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  For each entity, select the button in the **View map** column to open the
+10.  For each entity, select the button in the **View map** column to open the
     **Map source to staging** page.
 
 ![A screenshot of a cell phone Description automatically generated](media/2eeb3241425ce4d6e8f9a1e738e07cb7.jpg)
 
-    A screenshot of a cell phone Description automatically generated
-
-1.  On the **Transformations** tab, select **New**, and then select **Upload
+11.  On the **Transformations** tab, select **New**, and then select **Upload
     file** to open the **Select a file** dialog box.
 
-2.  Select **Browse**, and select the following transformations:
+12.  Select **Browse**, and select the following transformations:
 
 -   For the **FiasAddressObjectEntity** entity, select the **fiasAddrObjTrans**
     transformation.
@@ -356,8 +326,7 @@ To update existing address data, you should create a job to import FIAS delta.
 -   For the **FiasRoomEntity** entity, select the **fiasRoomsTrans**
     transformation.
 
-FIAS import
------------
+## FIAS import
 
 ### Do a full FIAS import to an empty database
 
@@ -393,16 +362,12 @@ the FIAS database on December 1, 2018.
 
 ![](media/fb049754cabb82b3f12c34e0e9556fdc.jpg)
 
->   A screenshot of a cell phone Description automatically generated
+9.  Select **OK** to start the import.
 
-1.  Select **OK** to start the import.
-
-2.  Select the **Refresh** button in the upper right of the page to view the
+10.  Select the **Refresh** button in the upper right of the page to view the
     line together with the results of the full import.
 
 ![](media/6ce87833d9aa480e53574ac8fde3f78d.jpg)
-
->   A screenshot of a cell phone Description automatically generated
 
 ### Update addresses from FIAS
 
@@ -421,27 +386,25 @@ up the import process.
 
 -   Try the following procedure:
 
-1.  Go to **System administration \> Workspaces \> Data management**.
+    1.  Go to **System administration \> Workspaces \> Data management**.
 
-2.  In the **Import / Export** section, select the **Framework parameters** tile
+    2.  In the **Import / Export** section, select the **Framework parameters** tile
     to open the **Data import/export framework parameters** page.
 
-3.  On the **Entity settings** tab, select **Configure entity execution
+    3.  On the **Entity settings** tab, select **Configure entity execution
     parameters** to open the **Entity import execution parameters** page.
 
-4.  Set the following fields to configure multithreading for FIAS entities that
+    4.  Set the following fields to configure multithreading for FIAS entities that
     are used in import jobs:
 
-    -   In the **Entity** field, select the FIAS entity.
+        -   In the **Entity** field, select the FIAS entity.
 
-    -   In the **Import threshold record count** field, enter the threshold
+        -   In the **Import threshold record count** field, enter the threshold
         record count for import.
 
-    -   In the **Import task count** field, enter the count of import tasks.
+        -   In the **Import task count** field, enter the count of import tasks.
 
 ![](media/6d893f05e1992578b324232c0cb6ef64.jpg)
-
->   A screenshot of a cell phone Description automatically generated
 
 -   When you run a full import job, provide several regions, but not all
     regions, at the same time.
