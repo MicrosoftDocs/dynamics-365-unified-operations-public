@@ -170,8 +170,7 @@ Create an address for a customer
 
 10.  In the **Group of flats** field, select the group of flats code. The
     corresponding flat numbers are shown.
-
-   ![](media/7%20Manage%20addresses.jpg)
+    ![](media/7%20Manage%20addresses.jpg)
 
 11.  Select **Save**.
 
@@ -185,7 +184,7 @@ Import from FIAS
     Services (LCS). This package file contains the required data for the import
     jobs runtime.
 
-    ![](media/8%20Shared%20asset%20library)
+    ![](media/8%20Shared%20asset%20library.jpg)
 
 2.  Go to **System administration \> Workspaces \> Data management**.
 
@@ -210,13 +209,12 @@ Import from FIAS
 -   FIASOperationStatusesEntity
 
 -   FiasStructureStatusEntity
-
-![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)   
+  
     After you select each file, select **Upload and add**.
 
 7.  Select **Save**.
 
-![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/10%20Import.jpg)
 
 ### Set up a template to import FIAS data
 
@@ -250,7 +248,7 @@ Import from FIAS
 
 8.  Select **Save**.
 
-![A screenshot of a social media post Description automatically generated](media/10%20Import.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/11%20Template.jpg)
 
 ### Set up a job for a full FIAS import
 
@@ -276,7 +274,7 @@ job for a full FIAS import.
 
 8.  Select **OK**, and then select **Save**.
 
-![A screenshot of a social media post Description automatically generated](media/f4c92c810ccb840bd97c7337755ff762.jpg)
+    ![A screenshot of a social media post Description automatically generated](media/12%20Import.jpg)
 
 ### Set up a job to import FIAS delta
 
@@ -303,12 +301,12 @@ To update existing address data, you should create a job to import FIAS delta.
 
 9.  Select **OK**.
 
-![](media/3e52b078a17053cc192334e9ebbfbc2e.jpg)
+![A screenshot of a cell phone Description automatically generated](media/13%20Import.jpg)
 
 10.  For each entity, select the button in the **View map** column to open the
     **Map source to staging** page.
 
-![A screenshot of a cell phone Description automatically generated](media/2eeb3241425ce4d6e8f9a1e738e07cb7.jpg)
+![A screenshot of a cell phone Description automatically generated](media/14%20Map%20source%20to%20staging.jpg)
 
 11.  On the **Transformations** tab, select **New**, and then select **Upload
     file** to open the **Select a file** dialog box.
@@ -361,14 +359,13 @@ the FIAS database on December 1, 2018.
 8.  If you intend to import rooms, set the **Does include rooms** option to
     **Yes**.
 
-![](media/fb049754cabb82b3f12c34e0e9556fdc.jpg)
+    ![](media/15%20Import%20of%20data.jpg)
 
 9.  Select **OK** to start the import.
 
 10.  Select the **Refresh** button in the upper right of the page to view the
     line together with the results of the full import.
-
-![](media/6ce87833d9aa480e53574ac8fde3f78d.jpg)
+    ![](media/16%20Import%20from%20FIAS.jpg)
 
 ### Update addresses from FIAS
 
@@ -405,7 +402,7 @@ up the import process.
 
         -   In the **Import task count** field, enter the count of import tasks.
 
-![](media/6d893f05e1992578b324232c0cb6ef64.jpg)
+       ![](media/17%20Entity%20import%20execution%20parameters.jpg)
 
 -   When you run a full import job, provide several regions, but not all
     regions, at the same time.
