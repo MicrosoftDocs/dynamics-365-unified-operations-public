@@ -235,16 +235,16 @@ Import from FIAS
 7.  On the **Entities** FastTab, select **Add entity** to add the following data
     entities:
 
--   FiasAddressObjectEntity
+    -   FiasAddressObjectEntity
 
--   FiasHouseEntity
+    -   FiasHouseEntity
 
--   FiasSteadEntity
+    -   FiasSteadEntity
 
--   FiasRoomEntity
+    -   FiasRoomEntity
 
->   After you select each entity in the **Entity name** field, select **Add
->   entity**.
+    After you select each entity in the **Entity name** field, select **Add
+    entity**.
 
 8.  Select **Save**.
 
