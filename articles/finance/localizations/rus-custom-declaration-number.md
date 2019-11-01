@@ -1,9 +1,5 @@
----
-title: Customs declaration numbers
----
 
-Customs declaration numbers
-===========================
+# Customs declaration numbers
 
 You can track customs declarations (CDs) from the time when goods arrive at the
 customs terminal through the time when they are shipped to the end customer.
@@ -27,8 +23,7 @@ sold, their CD numbers are automatically determined, based on the item lot. The
 CD number that was used when the goods were purchased is shown on the documents
 that are created when the goods are sold.
 
-Set up CD numbers in tracking dimensions
-----------------------------------------
+## Set up CD numbers in tracking dimensions
 
 1.  Go to **Product information management \> Setup \> Dimension and variant
     groups \> Tracking dimension groups**.
@@ -44,12 +39,9 @@ Set up CD numbers in tracking dimensions
 
 6.  Select **Save**.
 
-![A screenshot of a cell phone Description automatically generated](media/f74eac0b5870ed35e1bcdf45cafe062a.jpg)
+    ![A screenshot of a cell phone Description automatically generated](media/1%20Tracking%20dimension%20groups.jpg)
 
-A screenshot of a cell phone Description automatically generated
-
-Create a CD number
-------------------
+## Create a CD number
 
 Before you can register CD numbers for newly received goods, you must enter them
 in a corresponding database. You must also enter item names, and the country or
@@ -67,14 +59,13 @@ region of origin.
 >   **Note:** The item should have the tracking dimension group that you created
 >   earlier, where the **GTD number** tracking dimension is activated.
 
-1.  In the **Country/region** field, select the country or region.
+5.  In the **Country/region** field, select the country or region.
 
-2.  Select **Save**.
+6.  Select **Save**.
 
-![](media/b30fa5cead3b35f783ecc2d7d07b9c12.jpg)
+    ![](media/2%20State%20custom%20declaration%20numbers.jpg)
 
-Specify the CD number in a purchase order
------------------------------------------
+## Specify the CD number in a purchase order
 
 1.  Create a purchase order, and on the purchase order line, select the item
     number.
@@ -82,23 +73,18 @@ Specify the CD number in a purchase order
 -   **Note:** The item should have the tracking dimension group that you created
     earlier, where the **GTD number** tracking dimension is activated.
 
-1.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
+2.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, in the **GTD number** field, select the CD number that
     you created earlier.
 
-![](media/1fb458bff4ea9ab011c4d9f16c8cd08a.jpg)
+    ![](media/3%20All%20purchase%20orders.jpg)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  Set other purchase order parameters, and create a facture in the usual way.
+3.  Set other purchase order parameters, and create a facture in the usual way.
     Column 11 of the facture shows the information about the CD number.
 
-![](media/52455bb181aa98e5175f8fb87b1eacae.jpg)
+    ![](media/4%20Счет-фактура.jpg)
 
->   A close up of text on a white background Description automatically generated
-
-View the CD number in the purchase book
----------------------------------------
+## View the CD number in the purchase book
 
 1.  After the **Incoming VAT processing** procedure is completed, on the
     **Purchase books journal** page, on the Action Pane, select **Update** to
@@ -108,12 +94,9 @@ View the CD number in the purchase book
     created. On the **General** tab, the **Custom decl. numbers** field shows
     the information about the facture and the CD number.
 
-![](media/fef71bab707d96b35c148a32af7da99b.jpg)
+![](media/5%20Purchase%20book%20lines.jpg)
 
->   A screenshot of a cell phone Description automatically generated
-
-Ship goods that have CD numbers
--------------------------------
+## Ship goods that have CD numbers
 
 1.  Create a sales order, and on the sales order line, select the same item
     number that you used in the previous procedures in this topic.
@@ -126,13 +109,9 @@ Ship goods that have CD numbers
 3.  On the **Product** tab, in the **Tracking dimensions** section, in the **GTD
     number** field, select the CD number that you created earlier.
 
-![](media/9b3fd51ea7866d56344bcd3fb563e90d.jpg)
+![](media/6%20Sales%20order.jpg)
 
->   A screenshot of a social media post Description automatically generated
-
-1.  Set other sales order parameters, and create a facture in the usual way.
+4.  Set other sales order parameters, and create a facture in the usual way.
     Column 11 of the facture shows the information about the CD number.
 
-![](media/f9a4aa90ad6707a5650247d0f4a6d7ee.jpg)
-
->   A close up of text on a white background Description automatically generated
+![](media/7%20Счет-фактура.jpg)
