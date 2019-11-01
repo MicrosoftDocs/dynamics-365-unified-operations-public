@@ -34,9 +34,6 @@ ms.search.validFrom: 2019-09-20
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
-
 ## Vendor data flow 
 
 If you use other Dynamics 365 apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.  
