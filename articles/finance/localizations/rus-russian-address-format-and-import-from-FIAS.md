@@ -135,8 +135,7 @@ to set up and use the FIAS import mechanisms.
 
 7.  Select **Save**.
 
-Create an address for a customer
---------------------------------
+## Create an address for a customer
 
 1.  Go to **Accounts receivable \> Customers \> All customers**.
 
@@ -168,14 +167,14 @@ Create an address for a customer
 9.  In the **Group of houses** field, select the group of houses code. The
     corresponding building numbers are shown.
 
-10.  In the **Group of flats** field, select the group of flats code. The
+10. In the **Group of flats** field, select the group of flats code. The
     corresponding flat numbers are shown.
+
     ![](media/7%20Manage%20addresses.jpg)
 
 11.  Select **Save**.
 
-Import from FIAS
-----------------
+## Import from FIAS
 
 ### Import an FIAS metadata package
 
@@ -200,15 +199,15 @@ Import from FIAS
 6.  On the **Selected entities** FastTab, select **Add file** to add the
     following files from the package file that you downloaded earlier:
 
--   Abridgements of addresses
+    -   Abridgements of addresses
 
--   FiasEstateStatusEntity
+    -   FiasEstateStatusEntity
 
--   FiasFlatTypeEntity
+    -   FiasFlatTypeEntity
 
--   FIASOperationStatusesEntity
+    -   FIASOperationStatusesEntity
 
--   FiasStructureStatusEntity
+    -   FiasStructureStatusEntity
   
     After you select each file, select **Upload and add**.
 
@@ -243,8 +242,7 @@ Import from FIAS
 
     -   FiasRoomEntity
 
-    After you select each entity in the **Entity name** field, select **Add
-    entity**.
+    After you select each entity in the **Entity name** field, select **Add entity**.
 
 8.  Select **Save**.
 
