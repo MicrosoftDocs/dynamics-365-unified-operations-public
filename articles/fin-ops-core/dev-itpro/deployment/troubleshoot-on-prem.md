@@ -712,64 +712,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
  ```
 
  **Resolution**: 
-   1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
-   2. Add the following code to your Predeployment.ps1 script:
-
-        ```powershell
-            $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
-            Write-Output "AgentShare is set to $agentShare"
-            & $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
-        ```
-   3. Create a TSG_UpdateFRDeployerConfig.ps1 script in the same folder as your Predeployment.ps1 script with the following content:
-
-        ```powershell
-            param (
-                [Parameter(Mandatory=$true)]
-                [string]
-                $agentShare = ''
-            )
-
-            $frConfig = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps\FR\Deployment\FinancialReportingDeployer.exe.Config |
-                Select-Object -First 1 -Expand FullName
-
-            if( -not $frConfig)
-            {
-                Write-Output "Unable to find FinancialReportingDeployer.exe.Config"
-                return
-            }
-            Write-Output "Found config: $frConfig"
-
-            [xml]$xml = get-content $frConfig
-            $nodeList = $xml.GetElementsByTagName("loadFromRemoteSources")
-
-            if($nodeList.Count -eq 0)
-            {
-                # Create the node 
-                $newNode = $xml.CreateNode("element","loadFromRemoteSources","")
-                $newNode.SetAttribute("enabled","true")
-                # Find the parent
-                $nodeList = $xml.GetElementsByTagName("runtime")
-                $runtimeNode = $nodeList[0]
-                $runtimeNode.AppendChild($newNode)
-
-                # Save doc
-                $xml.save($frConfig)
-                Write-Output "Inserted new node: "$newNode.Name
-            }
-            else
-            {
-                $node = $nodeList[0]
-                $attribute = $node.Attributes.GetNamedItem("enabled")
-                if($attribute.Value -eq "true")
-                {
-                    Write-Output "Node already exists: "$node.Name
-                }
-                else
-                {
-                    Write-Output "Node already exists but attribute is incorrect: " $attribute.Name "is" $attribute.Value
-                }
-            }
-        ```
+   1. Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [On-Premises TSG Implementations and Instructions](../onprem-tsg-implmentations.md).
 
 ### Unable to deploy Financial Reporting Service
 
@@ -1466,3 +1409,7 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 > [!NOTE]
 > You must have service pack 2 installed, and no additional cumulative updates or hotfixes must be installed.
+
+## SysClassRunner doesn't execute successfully
+
+

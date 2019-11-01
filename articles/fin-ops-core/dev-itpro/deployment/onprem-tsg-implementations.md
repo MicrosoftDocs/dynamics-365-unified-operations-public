@@ -1,0 +1,195 @@
+# On-Premises TSG Implementations and Instructions
+[!include [banner](../includes/banner.md)]
+
+This page will serve as a central repository from which you can obtain scripts to solve issues in On-Premises environments. These scripts will usually be needed to run as a PreDeployment or PostDeployment script.
+
+## Setting up TSGs
+
+   1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
+   2. Add the following code to your Predeployment.ps1 script:
+
+```powershell
+            # This has to be filled out
+            # $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
+
+            $agentShare = '\\servername\D365FFOAgent'
+            Write-Output "AgentShare is set to $agentShare"
+
+            # The scripts make the assumption that the wp folder only contains one folder for the environment name.
+            # If you have multiple folders in there from older deployments, then please remove those.
+            # It is not recommended to use the same agent share for multiple environments.
+
+            #& $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
+
+            #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
+
+            #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
+```
+
+   3. Copy the code snippets you need to solve your issue to the same folder as your Predeployment.ps1 script and name them the same way as the title of the section.
+   4. Uncomment the lines that invoke the scripts you want to use in the Predeployment.ps1 script.  
+
+
+## TSG_SysClassRunner.ps1
+
+```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]
+    $agentShare = ''
+)
+
+$delete = @("Microsoft.Diagnostics.Tracing.TraceEvent.dll", "Microsoft.AI.Agent.Intercept.dll", "Microsoft.AI.DependencyCollector.dll", "Microsoft.AI.DependencyCollector.xml", "Microsoft.AI.PerfCounterCollector.dll", "Microsoft.AI.ServerTelemetryChannel.dll", "Microsoft.AI.ServerTelemetryChannel.xml", "Microsoft.AI.Web.dll", "Microsoft.AI.Web.xml", "Microsoft.AI.WindowsServer.dll","Microsoft.AI.WindowsServer.xml", "Microsoft.ApplicationInsights.dll", "Microsoft.ApplicationInsights.xml")
+
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps |
+    Select-Object -First 1 -Expand FullName
+
+#Some customers experience an unexpected behavior with the previous command.
+if($basePath -notmatch "\AOS")
+{
+    $basePath = Join-Path $basePath -ChildPath "\AOS" 
+}
+
+$basePath = Join-Path $basePath -ChildPath "AXServiceApp\AXSF\Code" 
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+foreach( $file in $delete)
+{
+    if(Test-Path -Path "$basePath\$file")
+    {
+        Remove-Item -Path "$basePath\$file"
+    }
+}
+
+$axConfig = Join-Path $basePath -ChildPath "AXService.exe.config"
+
+if(!(Test-Path $axConfig))
+{
+    Write-Error "Unable to find AxService.exe.config in path: $axConfig" -Exception InvalidOperation
+}
+
+Write-Output "Found config: $axConfig"
+
+[xml]$xml = get-content $axConfig
+$xml.SelectNodes("//*[@name = 'Microsoft.AI.Agent.Intercept']/..") | ForEach-Object {
+    $_.bindingRedirect.oldVersion = "0.0.0.0-2.4.0.0"
+    $_.bindingRedirect.newVersion = "2.4.0.0"
+}
+
+if($xml.SelectNodes("//*[@name = 'Microsoft.ApplicationInsights']").Count -eq 0)
+{
+    [xml]$newNode = @"
+    <dependentAssembly xmlns="urn:schemas-microsoft-com:asm.v1">
+        <assemblyIdentity name="Microsoft.ApplicationInsights" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.9.0.0" newVersion="2.9.0.0" />
+    </dependentAssembly>
+"@
+    $xml.configuration.runtime.assemblyBinding.AppendChild($xml.ImportNode($newNode.dependentAssembly, $true))
+    
+}
+
+$xml.save($axConfig)
+
+Write-Output "TSG SysClassRunner script succeeded"
+```
+
+## TSG_UpdateFRDeployerConfig.ps1
+
+```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]
+    $agentShare = ''
+)
+
+$frConfig = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps\FR\Deployment\FinancialReportingDeployer.exe.config |
+    Select-Object -First 1 -Expand FullName
+
+if( -not $frConfig)
+{
+    Write-Output "Unable to find FinancialReportingDeployer.exe.Config"
+    return
+}
+
+Write-Output "Found config: $frConfig"
+
+[xml]$xml = get-content $frConfig
+
+$nodeList = $xml.GetElementsByTagName("loadFromRemoteSources")
+
+if($nodeList.Count -eq 0)
+{
+    # Create the node 
+    $newNode = $xml.CreateNode("element","loadFromRemoteSources","")
+    $newNode.SetAttribute("enabled","true")
+    # Find the parent
+    $nodeList = $xml.GetElementsByTagName("runtime")
+    $runtimeNode = $nodeList[0]
+    $runtimeNode.AppendChild($newNode)
+    # Save doc
+    $xml.save($frConfig)
+    Write-Output "Inserted new node: "$newNode.Name
+}
+else
+{
+    $node = $nodeList[0]
+
+    $attribute = $node.Attributes.GetNamedItem("enabled")
+
+    if($attribute.Value -eq "true")
+    {
+        Write-Output "Node already exists: "$node.Name
+    }
+
+    else
+    {
+        Write-Output "Node already exists but attribute is incorrect: " $attribute.Name "is" $attribute.Value
+    }
+}
+```
+
+## TSG_WindowsAzureStorage.ps1
+
+```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]
+    $agentShare = ''
+)
+$ErrorActionPreference = "Stop"
+
+$delete = @("Microsoft.WindowsAzure.Storage.dll", "Microsoft.WindowsAzure.Storage.xml")
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps |
+    Select-Object -First 1 -Expand FullName
+
+#Some customers experience an unexpected behavior with the previous command.
+if($basePath -notmatch "\AOS")
+{
+    $basePath = Join-Path $basePath -ChildPath "\AOS" 
+}
+
+$basePath = Join-Path $basePath -ChildPath "AXServiceApp\AXSF\Code" 
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+foreach( $file in $delete)
+{
+    if(Test-Path -Path "$basePath\$file")
+    {
+        Remove-Item -Path "$basePath\$file"
+    }
+}
+
+Write-Output "TSG WindowsAzureStorage script succeeded"
+```
