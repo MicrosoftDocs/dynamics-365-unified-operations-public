@@ -46,7 +46,6 @@ As businesses evolve and circumstances change, the credit risks for any given cu
 - **In business since** is the number of years that a customer has been in business using the **Business start** value on the **Customers** page. 
 - **Days sales outstanding** is based on the accounts receivables balance, sales revenue, and number of days for the previous 12 month period.
 - **Average balance** is based on the accounts receivables balance for the previous 12 month period.
-- **Average balance** is based on the accounts receivables balance for the previous 12 month period.
 - **Credit management group**, **Account status** and **Country** uses information from the customer. 
 
 ## Update Customer Balance Statistics
