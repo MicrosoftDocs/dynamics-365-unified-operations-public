@@ -51,7 +51,7 @@ To use Planning Optimization, install the Planning Optimization Add-in for Dynam
 
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
-1. Select **Maintain**, or scroll down to the **Environment add-ins** tab.
+1. Select **Maintain**, or scroll down to the **Environment add-ins** FastTab.
 1. Select **Install a new add-in**.
 1. Select **Planning Optimization**.
 1. Follow the installation guide, and agree to the terms and conditions.
