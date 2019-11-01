@@ -62,7 +62,7 @@ to set up and use the FIAS import mechanisms.
 
 6.  In the **ZIP/postal code** field, select the postal code.
 
-![](media/2%20Address%20setup.jpg)
+    ![](media/2%20Address%20setup.jpg)
 
 7.  Select **Save**.
 
@@ -85,7 +85,7 @@ to set up and use the FIAS import mechanisms.
 
 6.  In the **ZIP/postal code** field, select the postal code.
 
-![](media/3%20Address%20setup.jpg)
+    ![](media/3%20Address%20setup.jpg)
 
 7.  Select **Save**.
 
@@ -109,7 +109,7 @@ to set up and use the FIAS import mechanisms.
 
 6.  In the **ZIP/postal code** field, select the postal code.
 
-![](media/4%20Address%20setup.jpg)
+    ![](media/4%20Address%20setup.jpg)
 
 7.  Select **Save**.
 
@@ -131,7 +131,7 @@ to set up and use the FIAS import mechanisms.
 
 6.  In the **ZIP/postal code** field, select the postal code.
 
-![](media/5%20Address%20setup.jpg)
+    ![](media/5%20Address%20setup.jpg)
 
 7.  Select **Save**.
 
@@ -143,13 +143,13 @@ Create an address for a customer
 2.  Open a customer record, and then, on the **Addresses** FastTab, select
     **More options \> Advanced** to open the **Manage addresses** page.
 
-![](media/6%20All%20customers.jpg)
+    ![](media/6%20All%20customers.jpg)
 
 3.  On the **Address** FastTab, in the **Country/region** field, select **RUS**.
 
 4.  In the **ZIP/postal code** field, select the postal code.
 
--   After you select a postal code, the **District** field shows the district
+    After you select a postal code, the **District** field shows the district
     code and name.
 
 5.  In the **Street code** field, select the street code. The street name is
@@ -171,7 +171,7 @@ Create an address for a customer
 10.  In the **Group of flats** field, select the group of flats code. The
     corresponding flat numbers are shown.
 
-![](media/7%20Manage%20addresses.jpg)
+    ![](media/7%20Manage%20addresses.jpg)
 
 11.  Select **Save**.
 
@@ -185,14 +185,14 @@ Import from FIAS
     Services (LCS). This package file contains the required data for the import
     jobs runtime.
 
-![](media/7%20Manage%20addresses.jpg)
+    ![](media/8%20Shared%20asset%20library)
 
 2.  Go to **System administration \> Workspaces \> Data management**.
 
 3.  In the **Import / Export** section, select the **Import** tile to create a
     new import job.
-
-![](media/8%20Shared%20asset%20library)
+    
+    ![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)
 
 4.  In the **Group name** field, enter **ImportFiasMetadata**.
 
@@ -211,7 +211,7 @@ Import from FIAS
 
 -   FiasStructureStatusEntity
 
->   After you select each file, select **Upload and add**.
+![A screenshot of a social media post Description automatically generated](media/9%20Data%20management.jpg)   After you select each file, select **Upload and add**.
 
 7.  Select **Save**.
 
