@@ -356,7 +356,7 @@
       - name: Credit management
         items:
         - name: Customer credit management overview
-          href: accounts-receivable/cm-credit-managment.md
+          href: accounts-receivable/cm-credit-management.md
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
         - name: Credit management setup information
