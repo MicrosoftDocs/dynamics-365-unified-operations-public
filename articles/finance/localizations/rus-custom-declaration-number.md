@@ -70,8 +70,8 @@ region of origin.
 1.  Create a purchase order, and on the purchase order line, select the item
     number.
 
--   **Note:** The item should have the tracking dimension group that you created
-    earlier, where the **GTD number** tracking dimension is activated.
+>   **Note:** The item should have the tracking dimension group that you created
+>   earlier, where the **GTD number** tracking dimension is activated.
 
 2.  On the **Line details** FastTab, on the **Product** tab, in the **Tracking
     dimensions** section, in the **GTD number** field, select the CD number that
@@ -94,7 +94,7 @@ region of origin.
     created. On the **General** tab, the **Custom decl. numbers** field shows
     the information about the facture and the CD number.
 
-![](media/5%20Purchase%20book%20lines.jpg)
+    ![](media/5%20Purchase%20book%20lines.jpg)
 
 ## Ship goods that have CD numbers
 
@@ -109,9 +109,9 @@ region of origin.
 3.  On the **Product** tab, in the **Tracking dimensions** section, in the **GTD
     number** field, select the CD number that you created earlier.
 
-![](media/6%20Sales%20order.jpg)
+    ![](media/6%20Sales%20order.jpg)
 
 4.  Set other sales order parameters, and create a facture in the usual way.
     Column 11 of the facture shows the information about the CD number.
 
-![](media/7%20Счет-фактура.jpg)
+    ![](media/7%20Счет-фактура.jpg)
