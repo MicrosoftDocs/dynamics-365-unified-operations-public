@@ -68,28 +68,46 @@ Sales associates can also use notes to capture generic customer information that
 By using the Dynamics 365 Customer Insights application, retailers can aggregate their data from various systems by which their customers interact with the retailer’s brand, and use this data to generate a single view of the customer and to derive insights. With the integration of Customer Insights with Retail, retailers can choose one or more measures to display on the customer card if the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and define the "next best action". If these values are defined as measures, they can be displayed on the customer card, providing crucial information for the sales associate. You can learn more about Customer Insights by reading the [Dynamics 365 Customer Insights](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/overview) documentation, and learn more about measures specifically by reading the [Measures](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures) topic.
 
 ## Set up clienteling
-To enable these new Clienteling capabilities in your environment follow the below steps:
-- Navigate to the Feature management workspace and filter the features by “Retail and commerce” module (refer the image “Enable_clienteling” below)
+To enable the clienteling functionality in your environment, follow the steps below.
+
+1. Go to the **Feature management** workspace and filter the features by “Retail and commerce” module (refer the image below).
 
 ![Enable clienteling from feature management workspace](./media/Enable_clienteling.png "Enable clienteling from feature management workspace"). 
 
-- Navigate to the Number sequence tab under Retail Parameters and assign a number sequence to the “Client book identifier”. This is used by the system to assign a client book ID.
-- Create a new attribute group containing the attributes that you want to capture for the customers managed within the client book. Mark the required attributes as “Can be refined” so that the sales associates can filter the client book based on these attributes. Additionally, set the display order for these attributes. This display order will be used to determine which attributes should be displayed on the customer card of the client book. The display order 1 is considered higher than display order 2, so the attribute with display order 1 will be displayed prior to the attribute with display order 2. To know more about the attributes and attribute groups refer the article https://docs.microsoft.com/en-us/dynamics365/retail/attribute-attributegroups-lifecycle
+2. Enable **Clienteling**. 
 
-> [!NOTE]
-> The Dynamics 365 Customer Insights can also be enabled from the above form, but it requires creation of an Azure Application ID and Secret for authentication purposes. This is covered at the end of this article. If Dynamics 365 Customer Insights is enabled and you choose one or more measures to display on the customer card, then these measures will be displayed first, followed by the client book attribute groups based on the display order. For e.g. if you choose two measures from the Customer Insights, then one client book attribute with the highest display order will be displayed on the customer card.
+3. Go to the **Retail Parameters** page and select the **Number sequence** tab. 
 
-- Associate the newly created attribute group to the “Client book attribute group” property under “Retail parameters > Clienteling”. Refer the image “Client_book_attributes” below. 
+4. Select the **Client book identifier** line, and in the **Number sequence code** field, click the dropdown and choose a number sequence.  The value will be used by the system to assign a client book ID.
+
+5. Click **Save**.
+
+6. Following the instructions in the [Attributes and attribute groups](https://docs.microsoft.com/en-us/dynamics365/retail/attribute-attributegroups-lifecycle) topic, create a new attribute group containing the attributes that you want to capture for customers that are managed within the client book. 
+    - Define the required attributes as “Can be refined” so that the sales associates can filter the client book based on these attributes. 
+    - Set the display order for these attributes. This display order will be used to determine which attributes should be displayed on the customer card of the client book. Display order 1 is considered higher than display order 2, so the attribute with display order 1 will be displayed prior to the attribute with display order 2. 
+  
+    > [!NOTE]
+    > Dynamics 365 Customer Insights can be enabled from the same page, but it requires the creation of an Azure Application ID and Secret for authentication purposes (the requirements are covered at the end of this topic). If Dynamics 365 Customer Insights is enabled and you choose one or more measures to display on the customer card, these measures you chose will be displayed first, followed by the client book attribute groups based on the display order. For example, if you choose two measures from the Customer Insights, one client book attribute with the highest display order will be displayed on the customer card.
+
+7. On the **Retail parameters** page, on the **Clienteling** tab, click the dropdown in the **Client book attribute group** field and choose the attribute group you just created. (Refer to the image below.) 
+
 ![Select the Client book attribute group](./media/Client%20book%20attributes.png "Select the Client book attribute group"). 
 
-- To capture the activities in POS, you can define the activity types. Navigate to the Retail > Customers > Activity types form. 
-Note: The activity types are pulled by the retail server by making a real time call for the first time and then is cached for a few hours. So, if you make a change to the Activity types, either wait for the cache to invalidate or, for non-production environments, restart the Retail server service 
-- Add two new buttons to the appropriate POS Screen layout to enable sales associate to view their client book and view the client book for the store i.e. clients from all the client books of the associates that share an address book with the store. These operations are named “View customers in client book” and “View customers from store client books” respectively. You will find three more new operations related to client book which govern which sales associates can Add/Remove/Reassign customers from the client book. These operations are named “Add customer to client book”, “Remove customers from client book” & “Reassign customers to a client book” respectively.
-- Run the distribution schedule jobs numbered, 1040, 1150, 1110, and 1090. 
-Now, the sales associates can navigate to the customer details page on POS and add customers to their client book, view and capture activities/notes for the customers, and target customers by filtering the client book based on customer and client book attributes (refer the image “Client_book” below).
+8. To capture activities that happen in POS, define the activity types on the **Retail > Customers > Activity types** page. 
+
+    > [!NOTE]
+    > Activity types are pulled by the Retail Server making a real-time call for the first time. Once the activities are pulled, they are cached for a few hours. If you make a change to the activity types, either wait for the cache to invalidate, or for non-production environments, restart the Retail Server service.
+    
+9. Add two new buttons to the appropriate POS screen layout to enable sales associate to view their client book and view the client book for the store (clients from all the client books of the associates that share an address book with the store). These operations are named **View customers in client book** and **View customers from store client books**, respectively. There are three more operations available related to client book that govern which sales associates can add/remove/reassign customers from the client book. These operations are named **Add customer to client book**, **Remove customers from client book**” and **Reassign customers to a client book**.
+
+10. Run the following distribution schedule jobs: 1040, 1150, 1110, and 1090. 
+
+After you've completed the process above, sales associates can navigate to the customer details page on POS and add customers to their client book, view and capture activities and notes for the customers, and target customers by filtering the client book based on customer and client book attributes. (Refer the image below).
+
 ![Client book](./media/client_book.png "View clientbook")
 
-# Set up for enabling integration of Dynamics 365 Customer Insights with Dynamics 365 Retail
+
+## Set up for enabling integration of Dynamics 365 Customer Insights with Dynamics 365 Retail
 To enable the integration with Dynamics 365 Customer Insights you must ensure you have an active instance of Dynamics 365 Customer Insights in the tenant where the Dynamics 365 Retail is provisioned and you need to have an AAD user account which has an Azure subscription.
 Follow the below steps to complete the setup: 
 1.	Register an app in Azure portal – This is the Application that will be used to authenticate with the Dynamics 365 Customer Insights. Refer the App registration documentation here: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app. You also need to generate a secret for this application and note it for later use. You will also need to select expiration duration for the secret. Please take the necessary steps to remember to change the secret before expiration to avoid the integration to stop unexpectedly.
