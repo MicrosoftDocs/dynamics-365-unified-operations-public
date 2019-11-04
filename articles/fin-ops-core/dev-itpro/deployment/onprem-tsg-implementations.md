@@ -32,6 +32,8 @@ This page will serve as a central repository from which you can obtain scripts t
 
 ## <a name="sysclassrunner"></a>TSG_SysClassRunner.ps1
 
+The following script is used to fix an issue when executing SysClassRunner in some versions of the platform. For more information on this issue checkout the [Troubleshooting Guide](troubleshoot-on-prem.md#SysClassRunner)
+
 ```powershell
 param (
     [Parameter(Mandatory=$true)]
@@ -102,6 +104,8 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG_UpdateFRDeployerConfig.ps1
 
+The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information on this issue checkout the [Troubleshooting Guide](troubleshoot-on-prem.md#EntityFramework)
+
 ```powershell
 param (
     [Parameter(Mandatory=$true)]
@@ -156,6 +160,8 @@ else
 ```
 
 ## <a name="azurestorage"></a>TSG_WindowsAzureStorage.ps1
+
+The following script is used to fix an issue where its not possible to donwload or export files in some versions of the platform.
 
 ```powershell
 param (
