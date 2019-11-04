@@ -78,6 +78,9 @@ Here is an overview of the procedures that you must complete:
 
     <img alt="Service Bus connection string" src="../../media/BEF-Howto-servicebus-06.png" width="70%">
 
+  > [!NOTE]
+    > The shared access policy must be at the name space level and not at the topic level. If the shared access policy from the topic level is used, the trailing string with semi colon EntityPath= must not be included when configuring the endpoint for business events.
+
 ## Create a new key vault
 
 In this procedure, you will create a key vault to store the key that you copied in the previous procedure. A key vault is a secure drive that is used to store keys, secrets, and certificates. Instead of storing the connection string, a more typical and more secure approach is to store it in a key vault. You can then register a new application with Azure Active Directory (Azure AD) and grant it the right to retrieve the secret from the key vault.
