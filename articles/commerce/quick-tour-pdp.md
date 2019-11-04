@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Quick tour of product details pages
-description: This topic provides a quick tour of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
+title: Overview of product details pages
+description: This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -27,12 +27,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of product details pages
+# Overview of product details pages
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides a quick tour of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -79,8 +79,10 @@ If marketing content is unique to a specific product, any marketing module can b
 
 ## Additional resources
 
-[Quick tour of the home page](quick-tour-home-page.md)
+[Overview of the home page](quick-tour-home-page.md)
 
-[Quick tour of cart and checkout pages](quick-tour-cart-checkout.md)
+[Overview of default category landing page and search results page](category-search-page-overview.md)
 
-[Quick tour of account management](quick-tour-account-management.md)
+[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
+
+[Overview of account management pages](quick-tour-account-management.md)

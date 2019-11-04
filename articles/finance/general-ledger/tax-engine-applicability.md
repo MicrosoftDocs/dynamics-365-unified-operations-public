@@ -161,7 +161,7 @@ In India, CESS is applicable for certain goods and services. In Dynamics 365 Fin
 
 Now, let's check how the CGST rate is determined. Select **CGST > Rate**, click **Lookups**.
 
-![CGST>Rate Lookup](media/gte-tax-document-applicability-dynamic-lookups.png)
+![Select CGST, Rate, Lookup](media/gte-tax-document-applicability-dynamic-lookups.png)
 
 Runtime data is required to determine the tax rate, so the system hides the **Source type**, and the **User data** value.
 
@@ -172,6 +172,6 @@ Different goods can share one HSN code, so the lookup cannot satisfy this scenar
 
 Click **Columns**. On the left side, you can find all of the **Available columns**. The structure is the same as the **Data source** in the formula designer, except that there are no reference models.
 
-![CGST>Rate Change Lookup](media/gte-tax-document-applicability-change-lookups.png)
+![Lookup column](media/gte-tax-document-applicability-change-lookups.png)
 
 Select **Item ID** in **Available columns** to uniquely determine the goods. Click the right-arrow icon to add it to the **Selected columns** side. If HSN is not needed, you can select **HSN Code** in **Selected columns**, and click the left-arrow icon to remove it. 

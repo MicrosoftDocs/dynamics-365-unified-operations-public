@@ -1,14 +1,15 @@
+
 ---
 # required metadata
 
-title: Add and manage content
+title: Ways to add content 
 description: This topic provides information about how to add and manage content on your Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -27,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add and manage content
+# Ways to add content
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -42,10 +43,19 @@ The following topics provide detailed information about how to add and manage si
 
 - To change the text, images, or video on an existing site page, see [Work with modules](work-with-modules.md).
 - To help guarantee a foolproof, on-brand authoring experience for web content authors, see [Work with templates](work-with-templates.md).
-- To rearrange sections on a site page, see [Work with preset layouts](work-with-layouts.md).
+- To rearrange sections on a site page, see [Work with layouts](work-with-layouts.md).
 - To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md).
 
 ## Additional resources
 
-- [Page elements](page-elements-overview.md)
-- [Document states and lifecycle](document-states-overview.md)
+[Page model glossary](page-elements-overview.md)
+
+[Document states and lifecycle](document-states-overview.md)
+
+[Work with modules](work-with-modules.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Customize site navigation](customize-site-navigation.md)

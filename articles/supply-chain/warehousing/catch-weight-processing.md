@@ -5,7 +5,7 @@ title: Catch weight product processing with warehouse management
 description: This topic describes how to use work templates and location directives to determine how and where work is done in the warehouse.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -188,7 +188,7 @@ Currently, the functionality for catch weight tags is supported only as part of 
 - When processing a inventory status changed by using the warehouse app.
 - When a warehouse transfer is done by using the warehouse app.
 - When processing adjustment in and out via the warehouse app.
-- When picking work is processed for sales and transfer orders. (Note that catch weight tags can't be recorded for production component picking.)
+- When picking work is processed for sales, transfer, and production lines.
 - When picked quantities are reduced from load lines, regardless of whether containers are used.
 - When products are packed into containers at a packing station.
 - When containers are reopened.

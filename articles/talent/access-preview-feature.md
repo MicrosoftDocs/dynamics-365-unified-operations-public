@@ -123,5 +123,5 @@ Make sure that you don't include personal data (any information that could ident
 
 - [Try or buy Talent apps](https://dynamics.microsoft.com/talent/overview/)
 - [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support for Talent](./talent-support.md)

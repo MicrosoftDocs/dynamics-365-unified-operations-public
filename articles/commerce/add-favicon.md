@@ -5,10 +5,10 @@ title: Add a favicon
 description: This topic explains how to add a favicon to your site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -74,4 +74,6 @@ To add a favicon to your site, use the same procedure that is used to add any ty
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
 

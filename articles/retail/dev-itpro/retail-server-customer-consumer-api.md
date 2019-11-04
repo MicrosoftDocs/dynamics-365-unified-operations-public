@@ -5,7 +5,7 @@ title: Retail Server customer and consumer APIs
 description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 author: mugunthanm
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -65,6 +65,8 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | API | Parameter | Return value | Supported Commerce Roles | Description                |
 |-----|-----------|--------------|--------------------------|----------------------------|
 | GetOrderShipmentsHistory    | string accountNumber, QueryResultSettings queryResultSettings | PageResult\<OrderShipments\>       | Employee, Customer, Application | Gets order shipments history for the customers  |
+| CreateEntity | Customer | Customer |Employee, Anonymous,  Application | Creates customer.|
+| UpdateEntity | string key, Customer update | Customer |Employee, Customer,  Application | Updates customer.|
 | GetOrderHistory             | string accountNumber, QueryResultSettings queryResultSettings           | PageResult\<SalesOrder\>           | Employee, Customer, Application | Returns the collection of sales orders.                           |
 | Search                      | CustomerSearchCriteria customerSearchCriteria, QueryResultSettings queryResultSettings    | PageResult\<GlobalCustomer\>       | Employee, Application         | Searches for the customers                                        |
 | GetPurchaseHistory          | string accountNumber, QueryResultSettings queryResultSettings      | PageResult\<PurchaseHistory\>      | Employee, Customer, Application | Gets purchase history for the customers                           |
@@ -401,6 +403,10 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetUnitsOfMeasure                 | long recordId, QueryResultSettings queryResultSettings                                                                                                                                                                                                                      | PageResult\<UnitOfMeasure\>            | Employee, Customer, Anonymous,  Application               | Gets the unit(s) of measure for the specified product.                                                                                    |
 | GetChannel- ProductAttributes       | QueryResultSettings queryResultSettings                                                                                                                                                                                                                                     | PageResult\<AttributeProduct\>         | Employee, Customer, Anonymous,  Application               | Gets the channel product attributes.                                                                                                      |
 | GetProductRatings                 | IEnumerable\<long\> productIds, QueryResultSettings settings                                                                                                                                                                                                            | PageResult\<ProductRating\>            | Employee, Customer, Anonymous,  Application              | Gets a collection of product ratings based on product identifiers.                                                                        |
+| GetEstimatedAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | ProductWarehouseInventoryInformation  | Employee, Customer, Anonymous, Application               | Get estimated product availability based on search criteria.                                                                                               |
+| GetEstimatedProductWarehouseAvailability                            | InventoryAvailabilitySearchCriteria searchCriteria                                                                                                                                                                                        | IEnumerable\<ProductWarehouse\>                 | Employee, Customer, Anonymous, Application               | Get estimated product availability for specific product warehouse pairs.                                                                                               |
+
+
 
 ## Sales orders fulfillment controller
 
