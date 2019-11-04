@@ -32,6 +32,9 @@ ms.dyn365.ops.version: AX 10.0.8
 
 # Customer payment insights overeview
 
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices and can identify circumstances that justify initiating collection processes earlier than you have done otherwise. 
 
 ## Overview
