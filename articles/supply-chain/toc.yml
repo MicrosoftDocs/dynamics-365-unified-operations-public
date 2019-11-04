@@ -1051,6 +1051,20 @@
       items:
       - name: Master planning home page
         href: master-planning/master-planning-home-page.md
+      - name: Planning Optimization
+        items:
+        - name: Planning Optimization overview
+          href: planning-optimization/planning-optimization-overview.md 
+        - name: Get started with Planning Optimization
+          href: planning-optimization/get-started.md
+        - name: Planning Optimization fit analysis
+          href: planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Apply filters to a plan
+          href: planning-optimization/plan-filters.md
+        - name: View plan history and planning logs
+          href: planning-optimization/plan-history-logs.md
+        - name: Cancel a planning job
+          href: planning-optimization/cancel-planning-job.md
       - name: Master plans
         items:
         - name: Master plans overview
