@@ -711,7 +711,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- **Resolution**: Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [On-Premises TSG Implementations and Instructions](../onprem-tsg-implementations.md#frdeployer).
+ **Resolution**: Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [On-Premises TSG Implementations and Instructions](onprem-tsg-implementations.md#frdeployer).
 
 ### Unable to deploy Financial Reporting Service
 
