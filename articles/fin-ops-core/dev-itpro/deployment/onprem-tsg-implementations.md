@@ -135,7 +135,7 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information about this issue, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#EntityFramework)
+The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information about this issue, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#FREntityFramework)
 
 ```powershell
 param (

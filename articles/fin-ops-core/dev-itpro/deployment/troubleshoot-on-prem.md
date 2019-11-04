@@ -1409,7 +1409,7 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 > [!NOTE]
 > You must have service pack 2 installed, and no additional cumulative updates or hotfixes must be installed.
 
-## SysClassRunner doesn't execute successfully
+## <a name="SysClassRunner"> SysClassRunner doesn't execute successfully
 
 **Issue:** When trying to execute SysClassRunner on Platform Updates 29-31 you get the following exception:
 
