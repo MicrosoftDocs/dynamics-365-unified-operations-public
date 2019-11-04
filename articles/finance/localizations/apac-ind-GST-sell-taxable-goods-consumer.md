@@ -58,7 +58,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 10 percent
     - **SGST:** 10 percent
 
-    ![Tax document page](media/Capture04.PNG)
+    ![Tax document page](media/Capture04_upd.png)
 
 8. Select **Close**.
 
