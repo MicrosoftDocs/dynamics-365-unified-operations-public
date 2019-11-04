@@ -1411,7 +1411,7 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 ## <a name="SysClassRunner"> SysClassRunner doesn't execute successfully
 
-**Issue:** When trying to execute SysClassRunner on Platform updates 29-31 you get the following exception:
+**Issue:** When trying to execute SysClassRunner on Platform updates 29-31, you get the following exception:
 
 ```stacktrace 
 Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
