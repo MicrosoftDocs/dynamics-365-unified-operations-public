@@ -1424,4 +1424,4 @@ The located assembly's manifest definition does not match the assembly reference
 
 **Reason:** There is a dll mismatch between the runtime and the application.
 
-**Resolution:** Use the TSG_SysClassRunner.ps1. For more information, see [On-Premises TSG Implementations and Instructions](../onprem-tsg-implementations.md#sysclassrunner).
+**Resolution:** Use the TSG_SysClassRunner.ps1. For more information, see [On-Premises TSG Implementations and Instructions](onprem-tsg-implementations.md#sysclassrunner).
