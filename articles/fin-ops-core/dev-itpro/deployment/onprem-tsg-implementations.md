@@ -1,3 +1,31 @@
+---
+title: On-Premises TSG Implementations and Instructions
+description: This page will serve as a central repository from which you can obtain scripts to solve issues in On-Premises environments.
+author: faix
+manager: AnnBe
+ms.date: 11/04/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Developer
+# ms.devlang: 
+ms.reviewer: sericks
+ms.search.scope: Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: osfaixat
+ms.search.validFrom: 2019-11-30]
+ms.dyn365.ops.version: Platform update 30
+
+---
+
 # On-Premises TSG Implementations and Instructions
 [!include [banner](../includes/banner.md)]
 
