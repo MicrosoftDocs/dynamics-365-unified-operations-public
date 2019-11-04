@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -711,7 +711,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- **Resolution**: Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [On-Premises TSG Implementations and Instructions](onprem-tsg-implementations.md#frdeployer).
+ **Resolution**: Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [TSG_UpdateFRDeployerConfig.ps1](onprem-tsg-implementations.md#frdeployer).
 
 ### Unable to deploy Financial Reporting Service
 
