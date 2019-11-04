@@ -66,12 +66,12 @@ Our processes for each type of release are described below. Talent uses two depl
 ### Minor (weekly) releases
 
 Product, component, and leadership teams perform the following for minor (weekly) releases before rolling out to production:
- 
-1. On Mondays, roll out the candidate build to the internal environment.
 
-2. Validate functionality through ad hoc testing and validating bugs.
+1. Make the release candidate available for the internal environment.
 
-3. Complete the validation and sign off on the build by Friday afternoon.
+2. Validate functionality through structured and ad hoc testing, along with complete bug validation.
+
+3. Finalize validation and sign off on changes.
 
 4. Verify all validation is complete, review configuration changes, and approve the build for rolling out to production.
 
@@ -85,7 +85,7 @@ Revision (hotfix) releases are initiated by the product teams, and are based on 
 
 2. Roll out the changes to the internal environment.
 
-3. Review and sign off on the changes.
+3. Complete testing, review, and sign off on all changes.
 
 4. Verify that all validation is complete and approve the build for rolling out to production.
 
