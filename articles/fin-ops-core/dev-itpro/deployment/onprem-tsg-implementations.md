@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 30
 
 This topic will serve as a central repository from which you can obtain scripts to resolve issues in on-premises environments. These scripts will usually be needed to run as a pre-deployment or post-deployment script. 
 
+For more information about resolving issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
+
 ## Prepare your environment for script execution
 
    1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
