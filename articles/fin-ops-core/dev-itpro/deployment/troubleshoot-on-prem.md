@@ -1411,7 +1411,7 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 ## <a name="SysClassRunner"> SysClassRunner doesn't execute successfully
 
-**Issue:** When trying to execute SysClassRunner on Platform Updates 29-31 you get the following exception:
+**Issue:** When trying to execute SysClassRunner on Platform updates 29-31 you get the following exception:
 
 ```stacktrace 
 Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
@@ -1422,6 +1422,6 @@ The located assembly's manifest definition does not match the assembly reference
 --- End of inner exception stack trace ---
 ```
 
-**Reason:** There is a dll mismatch between the runtime and the application.
+**Reason:** There is a .dll mismatch between the runtime and the application.
 
-**Resolution:** Use the TSG_SysClassRunner.ps1. For more information, see [On-Premises TSG Implementations and Instructions](onprem-tsg-implementations.md#sysclassrunner).
+**Resolution:** Use the TSG_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1(onprem-tsg-implementations.md#sysclassrunner).
