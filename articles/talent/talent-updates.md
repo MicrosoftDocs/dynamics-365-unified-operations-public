@@ -47,15 +47,15 @@ Talent updates are applied to all environments automatically. Talent provides tw
 
 - **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. They're available on all data centers once they're released, so you can manually apply these updates on any environment in any data center if you don't want to wait for the updates to replicate automatically.
 
-## Testing and Validation
+## Testing and validation
  
-The Talent team performs different testing depending on whether the release is one of the following:
+The testing process varies, depending on whether the release is one of the following:
  
-- Minor: regular, weekly releases
+- **Minor**: regular, weekly releases
 
-- Revision (hotfix): bug fixes that can occur either with or apart from a minor release
+- **Revision (hotfix)**: bug fixes that can occur either with or apart from a minor release
 
-- Emergency fix: proactive and reactive hotfixes that are standalone in nature, and can include configuration-only or code changes to resolve live site issues
+- **Emergency fix**: proactive and reactive hotfixes that are standalone in nature, and can include configuration-only or code changes to resolve live site issues
 
 Our processes for each type of release are described below. Talent uses two deployment environments during the release process:
  
