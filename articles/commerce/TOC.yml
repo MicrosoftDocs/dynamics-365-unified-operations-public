@@ -470,7 +470,7 @@
           items: 
           - name: Starter kit overview
             href: starter-kit-overview.md
-          - name: Account management page
+          - name: Account management pages
             href: account-management.md
           - name: Alert module 
             href: add-alert.md
@@ -498,10 +498,8 @@
             href: add-hero-module.md 
           - name: Order confirmation module
             href: order-confirmation-module.md 
-          - name: Product collection module overview
-            href: product-collection-module-overview.md 
           - name: Product collection module
-            href: add-product-collection-modules.md
+            href: product-collection-module-overview.md
           - name: Video player module
             href: add-video-player.md
         - name: Search
