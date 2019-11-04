@@ -63,7 +63,7 @@ For more information about resolving issues in on-premises environments, see [Tr
 
 ## <a name="sysclassrunner"></a>TSG_SysClassRunner.ps1
 
-The following script is used to fix an issue when executing SysClassRunner in some versions of the platform. For more information about this issue, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#SysClassRunner)
+The following script is used to fix an issue when executing SysClassRunner in some versions of the platform. For more information about this issue, see [SysClassRunner doesn't execute successfully](troubleshoot-on-prem.md#SysClassRunner)
 
 ```powershell
 param (
@@ -135,7 +135,7 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information about this issue, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#FREntityFramework)
+The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information about this issue, see [Could not load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework)
 
 ```powershell
 param (
