@@ -2,6 +2,8 @@
   items:
   - name: Development and administration for Finance and Operations apps
     items:
+    - name: Finance and Operations application documentation
+      href: ../fin-ops/index.md
     - name: Development and administration for Finance and Operations apps
       href: index.md
     - name: What's new or changed
