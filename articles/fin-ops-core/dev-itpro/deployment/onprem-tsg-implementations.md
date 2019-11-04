@@ -1,6 +1,7 @@
 ---
-title: On-Premises TSG Implementations and Instructions
-description: This page will serve as a central repository from which you can obtain scripts to solve issues in On-Premises environments.
+
+title: Scripts for resolving issues in on-premises environments
+description: This topic will serve as a central repository from which you can obtain scripts to resolve issues in on-premises environments.
 author: faix
 manager: AnnBe
 ms.date: 11/04/2019
@@ -26,12 +27,12 @@ ms.dyn365.ops.version: Platform update 30
 
 ---
 
-# On-Premises TSG Implementations and Instructions
+# Scripts for resolving issues in on-premises environments
 [!include [banner](../includes/banner.md)]
 
-This page will serve as a central repository from which you can obtain scripts to solve issues in On-Premises environments. These scripts will usually be needed to run as a PreDeployment or PostDeployment script.
+This topic will serve as a central repository from which you can obtain scripts to resolve issues in on-premises environments. These scripts will usually be needed to run as a pre-deployment or post-deployment script. 
 
-## Setting up TSGs
+## Prepare your environment for script execution
 
    1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
    2. Add the following code to your Predeployment.ps1 script:
@@ -60,7 +61,7 @@ This page will serve as a central repository from which you can obtain scripts t
 
 ## <a name="sysclassrunner"></a>TSG_SysClassRunner.ps1
 
-The following script is used to fix an issue when executing SysClassRunner in some versions of the platform. For more information on this issue checkout the [Troubleshooting Guide](troubleshoot-on-prem.md#SysClassRunner)
+The following script is used to fix an issue when executing SysClassRunner in some versions of the platform. For more information about this issue, see [Troubleshooting Guide](troubleshoot-on-prem.md#SysClassRunner)
 
 ```powershell
 param (
@@ -132,7 +133,7 @@ Write-Output "TSG SysClassRunner script succeeded"
 
 ## <a name="frdeployer"></a>TSG_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information on this issue checkout the [Troubleshooting Guide](troubleshoot-on-prem.md#EntityFramework)
+The following script is used to fix an issue deploying FinancialReporting in some versions of the platform. For more information about this issue, see [Troubleshooting Guide](troubleshoot-on-prem.md#EntityFramework)
 
 ```powershell
 param (
@@ -189,7 +190,7 @@ else
 
 ## <a name="azurestorage"></a>TSG_WindowsAzureStorage.ps1
 
-The following script is used to fix an issue where its not possible to donwload or export files in some versions of the platform.
+The following script is used to fix an issue where it's not possible to donwload or export files in some versions of the platform.
 
 ```powershell
 param (
