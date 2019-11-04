@@ -30,7 +30,7 @@ This page will serve as a central repository from which you can obtain scripts t
    4. Uncomment the lines that invoke the scripts you want to use in the Predeployment.ps1 script.  
 
 
-## TSG_SysClassRunner.ps1
+## <a name="sysclassrunner"></a>TSG_SysClassRunner.ps1
 
 ```powershell
 param (
@@ -100,7 +100,7 @@ $xml.save($axConfig)
 Write-Output "TSG SysClassRunner script succeeded"
 ```
 
-## TSG_UpdateFRDeployerConfig.ps1
+## <a name="frdeployer"></a>TSG_UpdateFRDeployerConfig.ps1
 
 ```powershell
 param (
@@ -155,7 +155,7 @@ else
 }
 ```
 
-## TSG_WindowsAzureStorage.ps1
+## <a name="azurestorage"></a>TSG_WindowsAzureStorage.ps1
 
 ```powershell
 param (

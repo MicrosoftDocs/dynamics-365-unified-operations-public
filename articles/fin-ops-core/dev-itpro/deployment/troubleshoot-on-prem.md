@@ -711,8 +711,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- **Resolution**: 
-   1. Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [On-Premises TSG Implementations and Instructions](../onprem-tsg-implmentations.md).
+ **Resolution**: Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [On-Premises TSG Implementations and Instructions](../onprem-tsg-implementations.md#frdeployer).
 
 ### Unable to deploy Financial Reporting Service
 
@@ -1412,4 +1411,17 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 ## SysClassRunner doesn't execute successfully
 
+**Issue:** When trying to execute SysClassRunner on Platform Updates 29-31 you get the following exception:
 
+```stacktrace 
+Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
+System.TypeInitializationException: The type inititlaizer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
+System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
+System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
+The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
+--- End of inner exception stack trace ---
+```
+
+**Reason:** There is a dll mismatch between the runtime and the application.
+
+**Resolution:** Use the TSG_SysClassRunner.ps1. For more information, see [On-Premises TSG Implementations and Instructions](../onprem-tsg-implementations.md#sysclassrunner).
