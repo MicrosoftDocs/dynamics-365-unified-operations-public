@@ -47,6 +47,54 @@ Talent updates are applied to all environments automatically. Talent provides tw
 
 - **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. They're available on all data centers once they're released, so you can manually apply these updates on any environment in any data center if you don't want to wait for the updates to replicate automatically.
 
+## Testing and Validation
+ 
+The Talent team performs different testing depending on whether the release is one of the following:
+ 
+- Minor: regular, weekly releases
+
+- Revision (hotfix): bug fixes that can occur either with or apart from a minor release
+
+- Emergency fix: proactive and reactive hotfixes that are standalone in nature, and can include configuration-only or code changes to resolve live site issues
+
+Our processes for each type of release are described below. Talent uses two deployment environments during the release process:
+ 
+- An internal environment for internal testing
+
+- A production environment used by customers
+
+### Minor (weekly) releases
+
+Product, component, and leadership teams perform the following for minor (weekly) releases before rolling out to production:
+ 
+1. On Mondays, roll out the candidate build to the internal environment.
+
+2. Validate functionality through ad hoc testing and validating bugs.
+
+3. Complete the validation and sign off on the build by Friday afternoon.
+
+4. Verify all validation is complete, review configuration changes, and approve the build for rolling out to production.
+
+5. Verify readiness to begin the rollout to production.
+
+### Revisions (hotfixes)
+
+Revision (hotfix) releases are initiated by the product teams, and are based on the build that is currently released to production. Product, component, and leadership teams perform the following for revision releases before rolling out to production:
+ 
+1. Review and approve the changes.
+
+2. Roll out the changes to the internal environment.
+
+3. Review and sign off on the changes.
+
+4. Verify that all validation is complete and approve the build for rolling out to production.
+
+### Emergency fixes
+
+Emergency fixes are initiated by the product team in response to a live site issue. These fixes might be configuration-only changes that can be completed by the product team, or they can include code changes if that’s the proper mitigation for the incident.
+ 
+The product team can initiate changes in response to live site events without pre-approval for rolling out to the production environment. In these cases, the changes are reviewed during the post-incident review with the leadership team within one business day of the incident. 
+
 ## Communications
 
 You can find out what's in the works for Talent and what we've released in the following locations:
