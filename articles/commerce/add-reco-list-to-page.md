@@ -49,8 +49,8 @@ To learn more about the types of lists that you can add to a page, see [Product 
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable omni-channel product recommendations](enable-product-recommendations.md)
+[Enable product recommendations](enable-product-recommendations.md)
 
-[Create editorial-based product recommendation lists](create-editorial-recommendation-lists.md)
+[Create curated product recommendation lists](create-editorial-recommendation-lists.md)
 
-[Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md)
+[Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md)

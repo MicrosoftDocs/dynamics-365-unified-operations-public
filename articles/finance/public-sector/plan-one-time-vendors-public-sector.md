@@ -101,14 +101,14 @@ The following table show the fields that the import file must contain. Each fiel
 
 
 ## What do I do next?
-After you’ve set up the prerequisites that you require, see [One time vendors in the public sector](one-time-vendors-public-sector.md).
+After you’ve set up the prerequisites that you require, see [One-time vendors in the public sector](one-time-vendors-public-sector.md).
 
 Additional resources
 --------
 
 [One-time vendors in the public sector](one-time-vendors-public-sector.md)
 
-[Accounts payable in the public sector](accounts-payable-public-sector.md)
+[Accounts payable in the public sector overview](accounts-payable-public-sector.md)
 
 
 

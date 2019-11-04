@@ -61,6 +61,6 @@ To create a curated product recommendation list, follow these steps.
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable omni-channel product recommendations](enable-product-recommendations.md)
+[Enable product recommendations](enable-product-recommendations.md)
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)

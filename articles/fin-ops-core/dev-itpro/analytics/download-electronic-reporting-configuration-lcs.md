@@ -78,4 +78,4 @@ This tutorial guides you through the process of downloading the newest version o
 
 ## Additional resources
 
-[Electronic reporting overview](general-electronic-reporting.md)
+[Electronic reporting (ER) overview](general-electronic-reporting.md)

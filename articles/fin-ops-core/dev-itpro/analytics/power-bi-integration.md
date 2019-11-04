@@ -81,9 +81,9 @@ Entity store is an operational data store that is built specifically for Power B
 
 Reports that are created by using Entity store take advantage of DirectQuery technology. This technology enables reports to be created over large volumes of data. Reports that are created by using DirectQuery technology don't cache data in the PowerBI.com service. Instead, data is always stored in application.
 
-For an overview of Power BI integration with Entity store, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
+For an overview of Power BI integration with Entity store, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store](../migration-upgrade/migrate-upgraded-cube-entity-store.md).
+If you're upgrading from Microsoft Dynamics AX 2012, you can upgrade cubes to aggregate measurements that use Entity store. You can then create Power BI reports by using Entity store. For more information, see [Migrate upgraded AX 2012 R3 sales cubes to the entity store](../migration-upgrade/migrate-upgraded-cube-entity-store.md).
 
 ### Creating Power BI reports by using Excel
 In addition to using the Power BI desktop authoring tool, you can use "Power tools" that are incorporated into Excel to create visualizations. Your organization might have many users who already use Excel every day. For a quick "one-off" report, Excel might be the best option for these users.

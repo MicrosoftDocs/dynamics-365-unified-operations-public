@@ -52,9 +52,9 @@ You can open the element designer that corresponds to the current X++ source cod
 
 ## Additional resources
 
-[Developer home page](developer-home-page.md)
+[Develop and customize home page](developer-home-page.md)
 
-[Development tools overview](development-tools-overview.md)
+[Development tools in Visual Studio](development-tools-overview.md)
 
 
 

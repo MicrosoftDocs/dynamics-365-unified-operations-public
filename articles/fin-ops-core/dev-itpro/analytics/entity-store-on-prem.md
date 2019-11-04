@@ -47,7 +47,7 @@ This topic outlines the analytical capabilities that are available in on-premise
 
 ## Enable Entity Store on-premises
 
-This topic supplements the [Set up and deploy on-premises environments](../deployment/setup-deploy-on-premises-pu12.md) topic. The section numbers that follow correspond to the section numbers in that topic.
+This topic supplements the [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md) topic. The section numbers that follow correspond to the section numbers in that topic.
 
 ### [3. Plan your users and service accounts](../deployment/setup-deploy-on-premises-pu12.md#plansvcacct)
 

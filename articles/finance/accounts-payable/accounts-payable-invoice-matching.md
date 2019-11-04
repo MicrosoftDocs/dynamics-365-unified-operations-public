@@ -194,7 +194,7 @@ Vendor invoices are often based on product receipts that represent actual shipme
 -   Enter invoice amounts that were not included on the original purchase order, so that the invoice information matches the invoice that you received from the vendor. You can compare the charges for purchase orders with the charges for invoices. If necessary, you can add charges to invoices and allocate them to invoice lines.
 -   View and approve price match discrepancies between the invoice net unit price and the purchase order net unit price. You can set up price tolerance percentages for legal entities, vendors, and items. If the vendor invoice line price is not in the acceptable price tolerance, you can save the invoice until it is approved for posting, or until you receive a correction from the vendor.
 
-For more information, see [Three-way matching policies](three-way-matching-policies.md) and [Set up accounts payable invoice matching validation](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
+For more information, see [Three-way matching policies](three-way-matching-policies.md) and [Set up Accounts payable invoice matching validation](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

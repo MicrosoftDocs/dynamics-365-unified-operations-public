@@ -46,15 +46,15 @@ Use the Public sector functionality to meet the rules, regulations, and reportin
 
   For more information, see the following topics:
 
-- [Planning for Public sector functionality](plan-public-sector-functionality.md)
-- [Accounts payable in the Public sector](accounts-payable-public-sector.md)
-- [Accounts receivable in the Public sector](accounts-receivable-public-sector.md)
-- [Budgeting in the Public sector](budgeting-public-sector.md)
-- [Fixed assets in the Public sector](fixed-asset-public-sector.md)
-- [French regulatory features](../localizations/emea-fra-public-sector-accounting.md)
-- [General ledger in the Public sector](general-ledger-public-sector.md)
-- [Procurement and sourcing in the Public sector](procurement-sourcing-public-sector.md)
-- [Security roles in the Public sector](security-roles-public-sector.md)
+- [Plan for public sector functionality](plan-public-sector-functionality.md)
+- [Accounts payable in the public sector overview](accounts-payable-public-sector.md)
+- [Accounts receivable in the public sector overview](accounts-receivable-public-sector.md)
+- [Budgeting in the public sector overview](budgeting-public-sector.md)
+- [Fixed assets in the public sector](fixed-asset-public-sector.md)
+- [Public sector accounting in France](../localizations/emea-fra-public-sector-accounting.md)
+- [General ledger in the public sector overview](general-ledger-public-sector.md)
+- [Procurement and sourcing in the public sector](procurement-sourcing-public-sector.md)
+- [Security roles in the public sector](security-roles-public-sector.md)
 
 \* Applicable only if your organization is in France.
 
@@ -74,7 +74,7 @@ The following table provides information about how this configuration key relate
 Additional resources
 --------
 
-[Planning for public sector functionality](plan-public-sector-functionality.md)
+[Plan for public sector functionality](plan-public-sector-functionality.md)
 
 
 

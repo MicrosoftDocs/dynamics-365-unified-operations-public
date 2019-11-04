@@ -103,7 +103,7 @@ You can assign specific number sequences to invoices and packing slips that are 
 | Type           | Select the type of document to number: **Invoice** or **Packing slip**.                                                                         |
 | Auto numbering | Select this option to automatically assign a number to a document. You can manually select or clear this option for individual documents.       |
 
-For information about how to manually number invoices and packing slips, see [Edit invoice ID on Sales orders](emea-edit-invoice-id-sales-orders.md).
+For information about how to manually number invoices and packing slips, see [Edit invoice IDs on sales orders for Eastern Europe](emea-edit-invoice-id-sales-orders.md).
 
 ## Affected processes
 The headers of the following documents are updated with invoice and packing slip numbering:
@@ -129,7 +129,7 @@ Additionally, forms below are supplemented by the **Documents to update** field:
 -   Sales Posting invoice form,
 -   Purchasing Posting product receipt form.
 
-The “**Documents to update**” field influences on the “**Document status**” field in “**Packing slip journal**” and "**Invoice Journal**". On **Packing slip** creation, the “**Document status**” field value is equal to “**None**”. If any **Packing slip** was chosen in field “**Documents to update**” then its “**Document status**” would be “**Broken**” and the “**Document status**” of **Packing slip** where it was done will be “**Canceled**”.
+The **Documents to update** field influences on the **Document status** field in **Packing slip journal** and **Invoice Journal**. On **Packing slip** creation, the **Document status** field value is equal to **None**. If any **Packing slip** was chosen in field **Documents to update** then its **Document status** would be **Broken** and the **Document status** of **Packing slip** where it was done will be **Canceled**.
 
 
 

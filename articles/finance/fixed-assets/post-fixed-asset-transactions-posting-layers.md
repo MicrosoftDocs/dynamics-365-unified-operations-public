@@ -47,7 +47,7 @@ You can designate ledger accounts for fixed asset transactions on the Fixed asse
 > [!NOTE] 
 > By using derived books, you can post transactions to different posting layers at the same time. You create the transactions of the primary book in a journal where the posting layer corresponds to the book posting layer. During posting, the derived book transactions are posted to the appropriate posting layers.
 
-For more information see, [Derived books](derived-books.md) and [Posting with derived books](post-derived-value-models.md).
+For more information see, [Derived books](derived-books.md) and [Post with derived books](post-derived-value-models.md).
 
 
 

@@ -59,7 +59,7 @@ In the non-linear depreciation method, the accrued monthly depreciation for the 
 In addition, when an asset's net book value (remaider) reaches 20 percent of its original value, the residual value (net book value) is used as the base value for additional depreciation calculations for the fixed asset. The monthly depreciation amount is calculated by dividing the fixed asset's net book value by the number of months that remain until the end of its service life.
 
 > [!NOTE] 
-> **Non-lilear method** may be used for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methos](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**) in the tax accounting.
+> **Non-lilear method** may be used for a individual fixed asset or for a fixed asset group (**[Non-linear tax accounting depreciation methods](rus-depreciation-methods.md#non-linear-tax-accounting-group-depreciation-method)**) in the tax accounting.
 
 For additional information about the depreciation methods implemented in application, see the following section.  
 
@@ -115,7 +115,7 @@ Depreciation is charged not for each object of fixed assets, but for the depreci
 
 ### Set up the depreciation method
 
-You can create a tax non-linear group depreciation method on the **Depreciation methods** page. For more information, see [Depreciation setup (Russia)](rus-depreciation-setup.md).
+You can create a tax non-linear group depreciation method on the **Depreciation methods** page. For more information, see [Set up depreciation (Russia)](rus-depreciation-setup.md).
 
 1. Select **Fixed assets (Russia)** \> **Setup** \> **Depreciation groups**.
 2. In the **Value model** field, select the value model that the depreciation group is defined for.
@@ -123,7 +123,7 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
     > [!NOTE]
     > You must specify **Tax** as the posting layer for the selected value model on the **Value models** page.
 
-3. Create a depreciation group. For more information, see [Set up a depreciation group](rus-depreciation-setup.md#set-up-depreciation-groups).
+3. Create a depreciation group. For more information, see [Set up depreciation groups](rus-depreciation-setup.md#set-up-depreciation-groups).
 4. In the **Depreciation group** and **Name** fields, enter the depreciation group and name.
 5. In the **Depreciation method** field, select **Tax nonlinear**.
 6. In the **Lifetime** field, enter the maximum service life during which depreciation is accrued for the fixed assets in the depreciation group. The value is expressed in months.
@@ -143,5 +143,5 @@ You can create a tax non-linear group depreciation method on the **Depreciation 
 
 ## Additional resources
 
-- [Depreciation setup (Russia)](rus-depreciation-setup.md)
-- [Depreciation methods (Russia)](rus-depreciation-calculation.md)
+- [Set up depreciation (Russia)](rus-depreciation-setup.md)
+- [Calculate depreciation for Russia](rus-depreciation-calculation.md)

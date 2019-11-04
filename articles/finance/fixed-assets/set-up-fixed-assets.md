@@ -48,7 +48,7 @@ Fixed assets are assigned to a group when they are created. By default, the book
 
 ## Depreciation profiles
 
-You should first set up depreciation profiles. In the depreciation profile, you configure how the value of an asset is depreciated over time. You must define the method of depreciation, the depreciation year (calendar year or fiscal year), and the frequency of depreciation. For more information, see [Set up and create depreciate profiles](tasks/set-up-depreciation-profiles.md).
+You should first set up depreciation profiles. In the depreciation profile, you configure how the value of an asset is depreciated over time. You must define the method of depreciation, the depreciation year (calendar year or fiscal year), and the frequency of depreciation. For more information, see [Set up and create depreciation profiles](tasks/set-up-depreciation-profiles.md).
 
 ## Books
 
@@ -56,7 +56,7 @@ After you set up depreciation profiles, you must create the required books for y
 
 A primary depreciation profile is assigned to every book. Books also have an alternative or switchover depreciation profile, if this type of profile is applicable. To automatically include the fixed asset book in depreciation runs, you must enable the **Calculate depreciation** option. If this option isn't enabled for an asset, the depreciation proposal skips the asset.
 
-You can also set up derived books. The specified derived transactions are posted against the derived books as an exact copy of the primary transaction. Therefore, derived transactions are typically set up for acquisitions and disposals, not for depreciation transactions. For more information, see [Set up books](tasks/set-up-value-models.md).
+You can also set up derived books. The specified derived transactions are posted against the derived books as an exact copy of the primary transaction. Therefore, derived transactions are typically set up for acquisitions and disposals, not for depreciation transactions. For more information, see [Set up value models](tasks/set-up-value-models.md).
 
 ## Fixed asset posting profiles
 

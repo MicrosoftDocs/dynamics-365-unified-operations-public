@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform Update 8
 [!include [banner](../includes/banner.md)]
  
 Working with Microsoft to deploy Finance and Operations apps in the cloud requires that you understand the environment and subscription that you are deploying to, who can perform which tasks, and the data and customizations that you need to manage. 
-We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack for Dynamics 365 overview](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementation project. 
+We recommend that you sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation - it's a program that provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](../../fin-ops/get-started/fasttrack-dynamics-365-overview.md). If you choose to use the Essentials FastTrack program instead, you will be using the Implementation Project Methodology in Lifecycle Services (LCS) to help you manage your implementation project. 
 
 ## Customer lifecycle, subscriptions, and deployment topologies
 Microsoft assumes that all customers will follow a lifecycle similar to the following for all cloud deployments, and therefore need different environment topologies at each phase. 
@@ -111,7 +111,7 @@ Windows Remoting (WinRM) is disabled on all environments. Although you can enabl
 > Exceptions to enable WinRM will not be granted for any Microsoft-managed environments. 
 
 ## Availability
-The guaranteed uptime for Finance and Operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Support options](../lifecycle-services/lcs-support.md).
+The guaranteed uptime for Finance and Operations apps is 99.9%. Planned downtime occurs once a month and lasts no longer than eight hours. Because the work completed during the downtime doesn’t always take eight hours, we will always communicate the estimated amount of time that your environments will be down. For more information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../lifecycle-services/lcs-support.md).
 
 ### High-availability features
 To ensure service availability, all production environments are protected by using default Azure high availability (HA) features. HA functionality provides ways to avoid downtime caused by the failure of a single node within a datacenter, and DR features protect against outages broadly impacting an entire datacenter. Azure availability sets are used to prevent single-point-of-failure events. For more information about Azure availability sets, see [Azure availability sets guidelines for Windows VMs](/azure/virtual-machines/windows/infrastructure-availability-sets-guidelines).
@@ -136,13 +136,13 @@ For more information, see [Where your Finance and Operations data is stored](htt
 
 ### How do I access a development instance?
 
-See [Access instances](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
+See [Deploy and access development environments](../dev-tools/access-instances.md) for information about how to access development instances, configure on-premises development VMs, and find configurations settings for developers and administrators.
 
 ### How do I deploy a demo environment
 A demo environment includes only Microsoft demo data. You can use a demo environment to explore default features and functionality. For more information, see [Deploy a demo environment](deploy-demo-environment.md).
 
 ### How do I move my customizations between environments?
-To move customizations from a development to a sandbox or production environment, see [Create a deployable package of your models in order to apply it to a runtime environment](../deployment/create-apply-deployable-package.md)
+To move customizations from a development to a sandbox or production environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
 
 ### Can I request a copy of my production database?
 A customer can request a copy of their production database to be installed on their tier-2 sandbox environment. This request is completed by DSE.

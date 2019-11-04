@@ -106,7 +106,7 @@ You can use the **Workflow history** page to reset the workflow status to **Draf
 ## Additional resources
 
 - [Set up vendor invoice policies](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Key invoice data into accounts payable using a vendor invoice](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Key invoice data in AP system using vendor invoice](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Key invoice data into accounts payable using an approval journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Key invoice data into the AP system using invoice pool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Record a vendor invoice in the invoice journal](tasks/record-vendor-invoice-invoice-journal.md)

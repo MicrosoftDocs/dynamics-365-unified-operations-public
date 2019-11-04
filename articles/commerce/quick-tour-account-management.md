@@ -1,3 +1,4 @@
+
 ---
 # required metadata
 
@@ -101,3 +102,4 @@ For more information about account management modules and how to author them, se
 [Overview of product details pages](quick-tour-pdp.md)
 
 [Overview of cart and checkout pages](quick-tour-cart-checkout.md)
+

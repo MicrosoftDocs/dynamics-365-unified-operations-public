@@ -37,7 +37,7 @@ The [Tax engine](tax-engine.md) (also referred to as GTE) lets you configure tax
 > The Tax engine functionality is only available for legal entities with a primary address in India.
 
 ## Prerequisites                                               
-This document uses India Goods and Services Tax configuration to explain the tax applicability. For more information, see [India Goods and Services Tax](../localizations/apac-ind-gst.md).
+This document uses India Goods and Services Tax configuration to explain the tax applicability. For more information, see [India Goods and Services Tax (GST) overview](../localizations/apac-ind-gst.md).
 
 ## Overview
 Tax applicability is the condition under which tax type, tax component, or tax rate are applicable. For example, for India GST, if you sell goods from one state to another state, you need to charge IGST, and the goods you are selling will determine the tax rate. 
