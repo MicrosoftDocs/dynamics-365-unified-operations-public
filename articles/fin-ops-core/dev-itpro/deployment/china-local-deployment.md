@@ -64,7 +64,7 @@ For information on provisioning environments, see [Create and manage environment
 
 ## Features not available
 
-Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158).
+Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
 -   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
 
@@ -92,7 +92,7 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
 
--   [Embedded PowerApps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft PowerApps and Microsoft Flow will be unavailable.
+-   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
 
 -   [Data integration by using Common Data Service](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
 

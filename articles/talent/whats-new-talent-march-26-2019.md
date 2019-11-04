@@ -79,7 +79,7 @@ In this release, fixed compensation plans now appear when restricting users by c
 With this release, you can now remove job records by using the **Open in Excel** option in Talent.
 
 ### Upgrade to Common Data Service
-Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 

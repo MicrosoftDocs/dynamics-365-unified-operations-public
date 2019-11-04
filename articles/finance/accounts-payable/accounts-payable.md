@@ -130,7 +130,7 @@ The following topics provide information about settlements. Settlement is the pr
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
+Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
 
 #### Blogs
 

@@ -36,7 +36,7 @@ You can view the tracked data in Power BI by using the OData connector. For more
 ## Track changes
 To set up track changes in recruiting data, follow these steps:
 
-1. In [PowerApps](https://web.powerapps.com), select the appropriate environment.
+1. In [Power Apps](https://web.powerapps.com), select the appropriate environment.
 
 2. Select **Settings** (the gear icon), choose **Advanced customizations**, and then select **Resources** under **Developer resources**. 
 
