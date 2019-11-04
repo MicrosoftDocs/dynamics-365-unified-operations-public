@@ -93,6 +93,8 @@ The Excel Add-in has several authentication and authorization enhancements to im
 ## skipAutoOrderBy API
 When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](../dev-ref/q-classes.md).
 
+## Batch framework contention reduction
+Performance enhancements to reduce heavy blocking/contention on batch framework tables. Mainly for customer environments that are currently experiencing contention, while selecting batch tasks and finishing batch jobs. There are no functional changes associated with this feature. The feature can be enabled under Feature management.  
 
 ## Additional resources
 
