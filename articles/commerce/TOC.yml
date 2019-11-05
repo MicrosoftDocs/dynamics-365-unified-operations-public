@@ -590,6 +590,8 @@
         items:
         - name: Loyalty overview
           href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
+        - name: Clienteling overview
+          href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
       - name: Payments
         items:
         - name: Payment methods
