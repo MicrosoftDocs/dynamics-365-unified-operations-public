@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Container module
+title: Container modules
 description: This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Container module
+# Container modules
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
