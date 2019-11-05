@@ -105,16 +105,14 @@ To add a video player module to a new page and set the required properties, foll
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Container module](add-container-module.md)
+[Alert module](add-alert.md)
 
-[Buy box module](add-buy-box.md)
+[Carousel module](add-carousel.md)
 
-[Cart module](add-cart-module.md)
+[Content rich block module](add-content-rich-block.md)
 
-[Checkout module](add-checkout-module.md)
+[Content placement module](add-content-placement-modules.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Feature module](add-feature-module.md)
 
-[Header module](author-header-module.md)
-
-[Footer module](author-footer-module.md)
+[Hero module](add-hero-module.md)
