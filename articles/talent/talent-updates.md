@@ -51,7 +51,7 @@ When needed, Talent also provides the following types of fixes:
 
 - **Revision (hotfix)**: bug fixes that can occur either with or apart from a weekly service update release
 
-- **Emergency fix**: proactive and reactive hotfixes that are standalone in nature, and can include configuration-only or code changes to resolve live site issues
+- **Emergency fix**: proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a weekly service update release
 
 ## Testing and validation
 
