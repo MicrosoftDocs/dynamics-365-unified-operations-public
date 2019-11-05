@@ -586,6 +586,8 @@
           href: ../retail/retail-coupons.md?toc=/dynamics365/commerce/toc.json
         - name: Retail price reports
           href: ../retail/price-report.md?toc=/dynamics365/commerce/toc.json
+      - name: Clienteling overview
+        href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
       - name: Loyalty
         items:
         - name: Loyalty overview
