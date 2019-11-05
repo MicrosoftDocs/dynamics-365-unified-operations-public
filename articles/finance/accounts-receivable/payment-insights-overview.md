@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Customer payment insights overeview
+title: Customer payment insights (Preview)
 description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices and can identify circumstances that justify initiating collection processes earlier than you have done otherwise.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Customer payment insights overeview
+# Customer payment insights (Preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
