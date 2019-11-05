@@ -10,6 +10,8 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
       - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+      - name: Customer payment insights (preview)
+        href: accounts-receivable/payment-insights-overview.md
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
