@@ -510,7 +510,7 @@
               href: order-confirmation-module.md 
           - name: Account management modules
             items:
-            - name: Account management pages
+            - name: Account management pages and modules
               href: account-management.md
           - name: Product collection modules
             items:
