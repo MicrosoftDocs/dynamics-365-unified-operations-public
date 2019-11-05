@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -94,7 +94,7 @@ The Excel Add-in has several authentication and authorization enhancements to im
 When using the AX Query object by explicitly specifying not to include an ORDER BY clause, the kernel adds the Primary key to the ORDER BY clause. This API will skip the ORDER BY clause and it will not be added to the query. For more information, see [Q classes](../dev-ref/q-classes.md).
 
 ## Batch framework contention reduction
-Performance enhancements to reduce heavy blocking/contention on batch framework tables. Mainly for customer environments that are currently experiencing contention, while selecting batch tasks and finishing batch jobs. There are no functional changes associated with this feature. The feature can be enabled under Feature management.  
+Performance enhancements have been made to reduce heavy blocking/contention on batch framework tables. This fix is for customer environments that are currently experiencing contention when selecting batch tasks and finishing batch jobs. There are no functional changes associated with this feature. The feature can be enabled under Feature management.
 
 ## Additional resources
 
