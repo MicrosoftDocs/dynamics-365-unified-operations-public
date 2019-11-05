@@ -849,7 +849,9 @@
     - name: Loyalty
       items:
       - name: Loyalty overview
-        href: set-up-customer-loyalty-program.md      
+        href: set-up-customer-loyalty-program.md
+      - name: Clienteling overview
+        href: clienteling-overview.md
     - name: Payments
       items:
       - name: Payment methods
