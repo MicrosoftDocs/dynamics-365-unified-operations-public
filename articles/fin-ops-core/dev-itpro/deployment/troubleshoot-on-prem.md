@@ -711,7 +711,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- **Resolution**: Use the TSG_UpdateFRDeployerConfig.ps1. For more information, see [TSG_UpdateFRDeployerConfig.ps1](onprem-tsg-implementations.md#frdeployer).
+**Resolution:** Use TSG\_UpdateFRDeployerConfig.ps1. For more information, see [TSG_UpdateFRDeployerConfig.ps1](onprem-tsg-implementations.md#frdeployer).
 
 ### Unable to deploy Financial Reporting Service
 
@@ -1409,9 +1409,9 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 > [!NOTE]
 > You must have service pack 2 installed, and no additional cumulative updates or hotfixes must be installed.
 
-## <a name="SysClassRunner"> SysClassRunner doesn't execute successfully
+## <a name="SysClassRunner"></a>SysClassRunner doesn't run successfully
 
-**Issue:** When trying to execute SysClassRunner on Platform updates 29-31, you get the following exception:
+**Issue:** When you try to run SysClassRunner on Platform update 29 through Platform update 31, you get the following exception:
 
 ```stacktrace 
 Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
@@ -1424,4 +1424,4 @@ The located assembly's manifest definition does not match the assembly reference
 
 **Reason:** There is a .dll mismatch between the runtime and the application.
 
-**Resolution:** Use the TSG_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1(onprem-tsg-implementations.md#sysclassrunner).
+**Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
