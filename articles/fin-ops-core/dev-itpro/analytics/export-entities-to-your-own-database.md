@@ -217,5 +217,5 @@ You might face this limitation especially when you try to incrementally export r
 
     OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
 
-**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture)
+**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture)
 
