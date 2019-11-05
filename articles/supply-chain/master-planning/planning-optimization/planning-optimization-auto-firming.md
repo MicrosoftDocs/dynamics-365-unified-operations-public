@@ -30,10 +30,11 @@ ms.dyn365.ops.version: AX 10.0.7
 
 ---
 
+# Auto-firming with Planning Optimization
+
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
-# Auto-firming with Planning Optimization
 
 With auto-firming it is possible to firm (release) planned orders as part of the master planning process. When firmed, the planned orders are transformed into actual purchase, transfer, or production orders. With Planning Optimization, planned orders are firmed during a master planning run when the order date (the start date) is within the firming time fence.
 
