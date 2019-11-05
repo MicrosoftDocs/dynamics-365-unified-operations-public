@@ -68,10 +68,10 @@ Payment days CDS            | msdyn_paymentdays               | The [payment day
 Terms of payment            | msdyn_paymentterms              | The [terms of payment](dual-write-customer.md#terms-of-payment-to-msdyn_paymentterms) template synchronizes payment terms reference data, for both customers and vendors.
 Name affixes                | msdyn_nameaffixes               | The [name affixes](dual-write-customer.md#name-affixes-to-msdyn_nameaffixes) template synchronizes name affixes reference data, for both customers and vendors.
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
 [!include [Vendors](dual-write/VendorsV2-msdyn-vendors.md)]
 
-[!include [](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
+[!include [Vendor groups](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
 
-[!include [](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
+[!include [Vendor payment methods](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
