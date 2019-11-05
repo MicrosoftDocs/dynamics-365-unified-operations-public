@@ -89,7 +89,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics 365 for Talent**, and add the **user\_impersonation** permission to your app. The Application ID for Talent is f9be0c49-aa22-4ec6-911a-c5da515226ff. Use this ID to ensure you have chosen the correct application.
 6. Select **Register**.
 
-[![Registering a new app in the Azure portal](../media/new-app-registration-expanded.png)](../media/new-app-registration-expanded.png#lightbox)
+[![Registering a new app in the Azure portal](./media/new-app-registration-expanded.png)](./media/new-app-registration-expanded.png#lightbox)
 
 Azure AD assigns a unique application ID (client ID) to your app, and you're taken to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding, and for certificates and secrets.
 

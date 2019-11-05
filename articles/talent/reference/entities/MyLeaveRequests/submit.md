@@ -42,7 +42,7 @@ The leave request must be saved in the database, and must be retrievable through
 
 ## Permissions
 
-One of the following permissions is required to call this application programming interface (API). For more information about permissions and how to select them, see [Authentication](../dbmovement-api-authentication.md).
+One of the following permissions is required to call this application programming interface (API). For more information about permissions and how to select them, see [Authentication](../odata-api-authentication.md).
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
