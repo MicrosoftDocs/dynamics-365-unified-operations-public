@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,49 +29,52 @@ ms.search.validFrom: 2019-10-29
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 Talent (October 29, 2019)"
+# What's new or changed in Dynamics 365 Talent (October 29, 2019)
 
 [!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2586.
 
-### Delete Parties with no roles should be on by default. - (371233)
+Changes described in this section apply to build number 8.1.2586. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-In Talent, when you provision a new environment the parameter to delete parties if no roles exist will be turned on by default.  When deleting a worker the Party associated with the worker does not get removed unless this setting is on. This change will limit duplicate records in the global address book when importing workers and changes/reimporting of data is needed.
+### Delete parties with no roles should be on by default (371233)
 
-### Draft and cancelled leave requests should be allowed to be deleted in CDS - (376999)
+When you provision a new environment in Talent, **Delete parties if no roles exist** is turned on by default. When you delete a worker, the party associated with the worker is not removed unless this setting is on. This change limits duplicate records in the global address book when you need to import, change, or reimport workers.
 
-With this change, leave requests with a status of draft or cancelled can now be deleted via CDS.
+### Draft and cancelled leave requests should be allowed to be deleted in Common Data Service (376999)
 
-### Adding additional list values to custom fields are not being reflected in CDS after clicking apply on the custom fields form. - (379599)
+With this change, you can now delete leave requests with a status of **Draft** or **Cancelled** in Common Data Service.
 
-With this change, adding new pick list values to an existing custom field already sync'ed with CDS, will now be available in CDS after applying your changes in the custom fields form.
+### Additional list values in custom fields aren't reflected in Common Data Service after clicking Apply on the Custom fields form (379599)
 
-### Applying (onboarding) checklists across legal entities when more than one employment exists - (371270)
+When you add new list values to an existing custom field that has already synchronized with Common Data Service, they're now available in Common Data Serivce after you apply your changes in the **Custom fields** form.
 
-In this week's release, you will now be able to apply checklists to employees with more than one employment. This can be done using the worker form->checklists functionality.
+### Apply onboarding checklists across legal entities when more than one employment exists (371270)
 
-### Benefits open enrollment preview feature has been removed.
+In this week's release, you can apply checklists to employees with more than one employment in **Worker form > Checklists**.
 
-The preview option for benefits open enrollment has been removed. In conjunction with our strategic investment announcement [here](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence/) in core HR we have removed the benefits open enrollment feature in its current state and how it evolves going forward. We will look to launch a new open enrollment experience as part of the recently announced Advanced Benefits functionality.
+### Benefits open enrollment preview feature has been removed
+
+In conjunction with our announcement in the [Strategic investments in core HR drive operational excellence](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence) blog post, Microsoft has removed the benefits open enrollment feature from public preview. New functionality will be released in the future. Production use of the benefits open enrollment feature isn't be supported.
 
 ## Coming soon
 
 ### Print performance reviews
 
-With this new functionality: Employees, managers, and HR will be able to print an employee's performance review. Performance reviews will be available using a "Print review" option that will launch Microsoft Word to view and print the performance review.
+See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
 ### Feature management workspace
 
-Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them
+Features are added and updated in every release. The feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-To learn more about the changes coming with feature management view the article posted [HERE](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+To learn more about the changes coming with feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
