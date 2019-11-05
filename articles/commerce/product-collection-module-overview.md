@@ -100,13 +100,13 @@ The following table shows the list types that are available for selection in the
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Add a carousel module to a page](add-carousel.md)
+[Carousel module](add-carousel.md)
 
-[Add a content rich block module to a page](add-content-rich-block.md)
+[Content rich block module](add-content-rich-block.md)
 
-[Add content placement modules to a page](add-content-placement-modules.md)
+[Content placement module](add-content-placement-modules.md)
 
-[Add a container module to a page](add-container-module.md)
+[Container module](add-container-module.md)
 
-[Add a buy box to a page](add-buy-box.md)
+[Buy box module](add-buy-box.md)
 
