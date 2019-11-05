@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Auto firming
-description: Auto firming with Planning Optimization
+title: Auto-firming with Planning Optimization
+description: This topic explains how to use auto-firming with Planning Optimization.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 11/05/2019
@@ -33,25 +33,25 @@ ms.dyn365.ops.version: AX 10.0.7
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
-# Auto firming with Planning Optimization
+# Auto-firming with Planning Optimization
 
-With auto firming it is possible to firm (or release) planned orders as part of the master planning process. When firmed, the planned orders are transformed into actual purchase, transfer, or production orders. With Planning Optimization, planned orders are firmed during a master planning run when the **Order date** (the start date) is within the firming time fence.
+With auto-firming it is possible to firm (release) planned orders as part of the master planning process. When firmed, the planned orders are transformed into actual purchase, transfer, or production orders. With Planning Optimization, planned orders are firmed during a master planning run when the **Order date** (the start date) is within the firming time fence.
 
-## Enable feature
+## Turn on auto-firming
 
-To use this feature you need to enable the **Auto-firming for Planning Optimization** feature flag.
+To turn on auto-firming, do the following.
 
-- Go to **Feature management**
-- Select **Auto-firming for Planning Optimization** in the list (If not shown under **New** select **Not enabled** or **All** )
-- Click **Enable now**, or use **Schedule** to pick a time to enable the feature
+1. Go to the **Feature management** workspace.
+1. In the list, select **Auto-firming for Planning Optimization**. If the option is not shown under **New**, select **Not enabled** or **All**.
+1. Click **Enable now**, or click **Schedule** and pick a time to enable the feature
 
-## Firming time fence setup
+## Set up time fence for firming
 
-The **Automatic firming time fence (days)** control what planned orders to firm. The firming time fence is calculated forward from the master planning run date and the period is defined with the number of days entered. Firming time fence can be controlled as follows:
+The time fence for firming is calculated forward from the master planning run date. The period is defined by the number of days entered. You can control the firming time fence in the following ways.
 
-- **Coverage group** > **Other** > **Automatic firming time fence (days):** You can define the default firming time fence for a coverage group.
-- **Item coverage** > **General** > **Automatic firming time fence (days):** You can overwrite the firming time fence defined on the **Coverage group** for a specific item **.**
-- **Master plans** > **Time fence in days** > **Firming:** For a specific Master plan you can overwrite the firming time fence defined on the **Coverage group** and **Item coverage** by selecting **Yes** and set the number of days. This will apply to all items included during the planning run.
+- To define the default firming time fence for a coverage group, go to **Coverage group** > **Other** > **Automatic firming time fence (days)**.
+- To overwrite the firming time fence defined on the **Coverage group** for a specific item, go to **Item coverage** > **General** > **Automatic firming time fence (days)** 
+- For a specific master plan, you can overwrite the firming time fence defined on the **Coverage group** and **Item coverage**. Go to **Master plans** > **Time fence in days** > **Firming**, select **Yes**, and set the number of days. This will apply to all items included during the planning run.
 
 For master planning run with Planning Optimization there is an option to **Enable auto-firming**. When checkmarked the auto-firming process is performed according to auto-firming setup. Without checkmark in **Enable auto-firming**, or for planning started from the Net Requirements form, the auto-firming process is skipped.
 
