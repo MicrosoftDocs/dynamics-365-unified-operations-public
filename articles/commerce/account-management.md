@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Account management pages
-description: This topic covers account management pages in Microsoft Dynamics 365 Commerce.
+title: Account management pages and modules
+description: This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
 ms.date: 10/01/2019
@@ -29,12 +29,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Account management pages
+# Account management pages and modules
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers account management pages in Microsoft Dynamics 365 Commerce.
+This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
