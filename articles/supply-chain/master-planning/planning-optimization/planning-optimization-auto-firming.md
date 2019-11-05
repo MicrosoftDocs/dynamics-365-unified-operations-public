@@ -5,7 +5,7 @@ title: Auto firming
 description: Auto firming with Planning Optimization
 author: ChristianRytt
 manager: AnnBe
-ms.date: 2019-09-24
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,16 +25,17 @@ ms.assetid:
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2019-09-24
+ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
 
 ---
 
 [!include [banner](../includes/preview-banner.md)]
+[!include [banner](../includes/banner.md)]
 
-# Auto firming
+# Auto firming with Planning Optimization
 
-With auto firming it is possible to firm (also known as release) planned orders as part of the master planning process. When firmed the planned orders are transformed into actual purchase, transfer, or production orders. Using Planning Optimization planned orders are firmed, during a master planning run, when the **Order date** (start date) is within the firming time fence.
+With auto firming it is possible to firm (or release) planned orders as part of the master planning process. When firmed, the planned orders are transformed into actual purchase, transfer, or production orders. With Planning Optimization, planned orders are firmed during a master planning run when the **Order date** (the start date) is within the firming time fence.
 
 ## Enable feature
 
