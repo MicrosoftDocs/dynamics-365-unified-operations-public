@@ -236,7 +236,7 @@ Because the full FIAS database contains a very large number of records, some per
     ![Import data pane](media/15%20Import%20of%20data.jpg)
 
 9. Select **OK** to start the import.
-10. Select the **Refresh** button in the upper right of the page to view the line together with the results of the full import.
+10. Select **Refresh** in the upper right of the page to view the line together with the results of the full import.
     
     ![Options tab](media/16%20Import%20from%20FIAS.jpg)
 
