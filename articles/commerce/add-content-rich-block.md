@@ -86,16 +86,15 @@ To add a content rich block module to a new page and set the required properties
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Container module](add-container-module.md)
+[Alert module](add-alert.md)
 
-[Buy box module](add-buy-box.md)
+[Carousel module](add-carousel.md)
 
-[Cart module](add-cart-module.md)
+[Content placement module](add-content-placement-modules.md)
 
-[Checkout module](add-checkout-module.md)
+[Feature module](add-feature-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Hero module](add-hero-module.md)
 
-[Header module](author-header-module.md)
+[Video player module](add-video-player.md)
 
-[Footer module](author-footer-module.md)
