@@ -84,11 +84,7 @@ To add a hero module to a new page and set the required properties, follow these
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
-[Feature module](add-feature-module.md)
+[Alert module](add-alert.md)
 
 [Carousel module](add-carousel.md)
 
@@ -96,6 +92,6 @@ To add a hero module to a new page and set the required properties, follow these
 
 [Content placement module](add-content-placement-modules.md)
 
-[Header module](author-header-module.md)
+[Feature module](add-feature-module.md)
 
-[Footer module](author-footer-module.md)
+[Video player module](add-video-player.md)
