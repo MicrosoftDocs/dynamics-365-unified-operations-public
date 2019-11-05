@@ -30,8 +30,8 @@ ms.dyn365.ops.version: AX 10.0.7
 
 ---
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 # Auto firming with Planning Optimization
 
