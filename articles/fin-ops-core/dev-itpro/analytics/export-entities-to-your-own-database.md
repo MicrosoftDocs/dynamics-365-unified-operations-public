@@ -68,6 +68,9 @@ You should also create a SQL user account for sign-in to the database. Write dow
 
 If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider using clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads.
 
+> [!NOTE]
+> Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately.
+
 ## Configuring the entity export option
 
 1. Start the client, and then, in the **Data management** workspace, select the **Configure Entity export to database** tile.
