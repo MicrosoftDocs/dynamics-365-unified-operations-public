@@ -1,7 +1,6 @@
 ---
-
 title: Scripts for resolving issues in on-premises environments
-description: This topic will serve as a central repository from which you can obtain scripts to resolve issues in on-premises environments.
+description: This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
 author: faix
 manager: AnnBe
 ms.date: 11/04/2019
@@ -30,40 +29,39 @@ ms.dyn365.ops.version: Platform update 30
 # Scripts for resolving issues in on-premises environments
 [!include [banner](../includes/banner.md)]
 
-This topic will serve as a central repository from which you can obtain scripts to resolve issues in on-premises environments. These scripts will usually be needed to run as a pre-deployment or post-deployment script. 
+This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments. These scripts must usually be run as pre-deployment or post-deployment scripts.
 
-For more information about resolving issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
+For more information about how to resolve issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
 
 ## Prepare your environment for script execution
 
-   1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
-   2. Add the following code to your Predeployment.ps1 script:
+1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
+2. Add the following code to your Predeployment.ps1 script.
 
-```powershell
-            # This has to be filled out
-            # $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
+    ```powershell
+    # This has to be filled out
+    # $agentShare = '<Agent-share path>' # E.g '\\LBDContosoShare\agent''
 
-            $agentShare = '\\servername\D365FFOAgent'
-            Write-Output "AgentShare is set to $agentShare"
+    $agentShare = '\\servername\D365FFOAgent'
+    Write-Output "AgentShare is set to $agentShare"
 
-            # The scripts make the assumption that the wp folder only contains one folder for the environment name.
-            # If you have multiple folders in there from older deployments, then please remove those.
-            # It is not recommended to use the same agent share for multiple environments.
+    # The scripts make the assumption that the wp folder only contains one folder for the environment name.
+    # If you have multiple folders in there from older deployments, then please remove those.
+    # It is not recommended to use the same agent share for multiple environments.
 
-            #& $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
+    #& $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
 
-            #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
+    #& $agentShare\scripts\TSG_WindowsAzureStorage.ps1 -agentShare $agentShare
 
-            #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
-```
+    #& $agentShare\scripts\TSG_SysClassRunner.ps1 -agentShare $agentShare
+    ```
 
-   3. Copy the code snippets you need to solve your issue to the same folder as your Predeployment.ps1 script and name them the same way as the title of the section.
-   4. Uncomment the lines that invoke the scripts you want to use in the Predeployment.ps1 script.  
+3. From the relevant section of this topic, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
+4. In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.
 
+## <a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1
 
-## <a name="sysclassrunner"></a>TSG_SysClassRunner.ps1
-
-The following script is used to fix an issue when executing SysClassRunner in some versions of the platform. For more information about this issue, see [SysClassRunner doesn't execute successfully](troubleshoot-on-prem.md#SysClassRunner).
+The following script is used to fix an issue that occurs when SysClassRunner is run in some versions of the platform. For more information about this issue, see [SysClassRunner doesn't run successfully](troubleshoot-on-prem.md#SysClassRunner).
 
 ```powershell
 param (
@@ -73,7 +71,6 @@ param (
 )
 
 $delete = @("Microsoft.Diagnostics.Tracing.TraceEvent.dll", "Microsoft.AI.Agent.Intercept.dll", "Microsoft.AI.DependencyCollector.dll", "Microsoft.AI.DependencyCollector.xml", "Microsoft.AI.PerfCounterCollector.dll", "Microsoft.AI.ServerTelemetryChannel.dll", "Microsoft.AI.ServerTelemetryChannel.xml", "Microsoft.AI.Web.dll", "Microsoft.AI.Web.xml", "Microsoft.AI.WindowsServer.dll","Microsoft.AI.WindowsServer.xml", "Microsoft.ApplicationInsights.dll", "Microsoft.ApplicationInsights.xml")
-
 
 $ErrorActionPreference = "Stop"
 
@@ -133,9 +130,9 @@ $xml.save($axConfig)
 Write-Output "TSG SysClassRunner script succeeded"
 ```
 
-## <a name="frdeployer"></a>TSG_UpdateFRDeployerConfig.ps1
+## <a name="frdeployer"></a>TSG\_UpdateFRDeployerConfig.ps1
 
-The following script is used to fix an issue deploying Financial Reporting in some versions of the platform. For more information about this issue, see [Could not load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
+The following script is used to fix an issue that occurs when Financial Reporting is deployed in some versions of the platform. For more information about this issue, see [Could not load file or assembly EntityFramework](troubleshoot-on-prem.md#FREntityFramework).
 
 ```powershell
 param (
@@ -190,9 +187,9 @@ else
 }
 ```
 
-## <a name="azurestorage"></a>TSG_WindowsAzureStorage.ps1
+## <a name="azurestorage"></a>TSG\_WindowsAzureStorage.ps1
 
-The following script is used to fix an issue where it's not possible to donwload or export files in some versions of the platform.
+The following script is used to fix an issue where files can't be downloaded or exported in some versions of the platform.
 
 ```powershell
 param (
