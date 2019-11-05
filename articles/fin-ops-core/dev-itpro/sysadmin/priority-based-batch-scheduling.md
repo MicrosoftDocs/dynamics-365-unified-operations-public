@@ -35,63 +35,70 @@ ms.dyn365.ops.version: Platform Update31
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-With the release of Platform update 31, you can enable **Batch priority-based scheduling**, in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from batch server and instead uses relative scheduling priorities to determine the sequence in which tasks are executed across available batch servers. This feature is currently available for customers on a restricted basis.
+In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server. Instead, relative scheduling priorities are used to determine the order that tasks are run in across available batch servers. This feature is currently available to customers on a restricted basis.
 
-Scheduling priority is defined on batch groups with the option to be overridden on jobs, and is used to declare relative priorities of jobs and business processes. The available values for Scheduling priority are, Low, Normal, High, Critical, and Reserved capacity. The priority classification is used to determine the processing sequence when a job is scheduled to be processed. Reserved capacity represents the highest priority. Additional functionality is planned for future updates.
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. It's used to declare relative priorities of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. The priority classification is used to determine the processing order when a job is scheduled for processing. **Reserved capacity** represents the highest priority.
+
+Additional functionality is planned for future updates.
 
 > [!IMPORTANT]
-> This featue is only available in a restricted preview as part of Platform update 31.
+> This feature is available only in a restricted preview as part of Platform update 31.
 
-Priority-based batch scheduling requires that you enable the **Batch framework contention reduction** feature in **Feature Management**.
+Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
 
-The following procedures describe how to work with batch groups, jobs, and tasks, when **Priority based batch scheduling** is enabled.
+The following procedures explain how to work with batch groups, jobs, and tasks, when the **Priority based batch scheduling** feature is turned on.
 
 ## Batch groups
-Batch groups are now only used to logically group jobs and to set the default scheduling priority. Examples of batch groups include the following:
 
-- Jobs that belong to a specific business process.
-- Jobs that share the same execution recurrence. For example every night, every week, or every month.
-- Jobs that share the same priority.
+Batch groups are now used only to logically group jobs and to set the default scheduling priority. Here are some examples of batch groups:
+
+- Jobs that belong to a specific business process
+- Jobs that have the same execution recurrence (for example every night, every week, or every month)
+- Jobs that have the same priority
 
 ### Create a batch group
 
 1. Go to **System administration** \> **Setup** \> **Batch group**.
-2. Select **New** to create a new batch group, and in the **Group** field, type a unique name for the batch group.
-3. In the **Description** field, type a value.
-4. In the **Scheduling priority** field, select the default scheduling priority for the batch jobs.
-5. Select **Save**.
+2. Select **New** to create a batch group.
+3. In the **Group** field, enter a unique name for the batch group.
+4. In the **Description** field, enter a value.
+5. In the **Scheduling priority** field, select the default scheduling priority for the batch jobs in the batch group.
+6. Select **Save**.
 
 ## Batch jobs
-A batch job is a group of tasks that are submitted for automatic processing. Batch jobs are run by using the security credentials of the user selected as **Run by** user. Use the following procedure to create a batch job.
+
+A batch job is a group of tasks that are submitted for automatic processing. Batch jobs are run by using the security credentials of the user who is selected in **Run by** field. Use the following procedure to create a batch job.
 
 ### Create a batch job
 
 1. Go to **System administration** \> **Inquiries** \> **Batch jobs**.
-2. Select **New**, and in the **Job description** field, type a value.
-3. In the **Scheduled start date/time** field, enter a date and time.
-4. In the **Run by** field, select the users whose credentials will be used when the batch job is run. For more information, see [Batch manager security role](runby.md).
-5. Optional - Select **Monitoring category** to more easily identify the types of jobs during monitoring.
-6. Optional - Set **Critical job** to **Yes**. For more information, see [Import users in bulk](tasks/import-bulk-users.md) or [Configure the Workflow message processing batch job as critical](../../fin-ops/organization-administration/workflow-batch-job-critical.md).
-7. In the **Batch group** field, select the batch group for the job.
-8. Optional- Set **Scheduling priority is overridden** to **Yes**, to enable the **Job scheduling priority** field.
-9. In the **Job scheduling priority** field, select a different default priority than what is used for the batch group.
-10. Optional - In the **Active period** field, select a time range for when the batch job can be run. For more information see [Active batch periods](activeperiod.md).
-11. Select **Save**.
+2. Select **New** to create a batch job.
+3. In the **Job description** field, enter a value.
+4. In the **Scheduled start date/time** field, enter a date and time.
+5. In the **Run by** field, select the users whose security credentials will be used when the batch job is run. For more information, see [Batch manager security role](runby.md).
+6. Optional: In the **Monitoring category** field, select a value to make it easier to identify the types of jobs during monitoring.
+7. Optional: Set the **Critical job** option to **Yes**. For more information, see [Import users in bulk](tasks/import-bulk-users.md) or [Configure the Workflow message processing batch job as critical](../../fin-ops/organization-administration/workflow-batch-job-critical.md).
+8. In the **Batch group** field, select the batch group for the job.
+9. Optional: Set the **Scheduling priority is overridden** option to **Yes**, to make the **Job scheduling priority** field available.
+10. In the **Job scheduling priority** field, select a default priority that differs from the default priority that is defined for the batch group.
+11. Optional: In the **Active period** field, select the time range when the batch job can be run. For more information, see [Active batch periods](activeperiod.md).
+12. Select **Save**.
 
 ### Add a task to a batch job
 
-1. On the **Batch job** form, in the **Batch tasks** section, select **New**.
-2. In the **Task description** field, type a value.
-3. In the **Company accounts** field, select the company in which the task will run.
-4. In the **Class name** field, select the applicable process to be run, and then select **Save**.
-5. Expand the **Batch task detail** section to add additional settings for the batch task or to add constraints.
-6. On the **General** tab, set **Ignore task failure** to **Yes**, if the failure of the task should not cause the job to fail.
-7. In the **Maximum retries** field, specify the number of times that a task should be retried before it is considered to have failed.
-8. Set the **Private** field to **Yes**, if the task should only be run by the user who created the job. This is only applicable for client tasks.
-9. On the **Constraints tab**, select **New** to define a constraint between tasks.
-10. In the **Task ID** field, select the preceding task.
-11. In the **Expected status** field, select the status that the preceding task must reach before the current task can run.
-12. Select **Save**.
+1. On the **Batch job** page, in the **Batch tasks** section, select **New**.
+2. In the **Task description** field, enter a value.
+3. In the **Company accounts** field, select the company that the task will be run in.
+4. In the **Class name** field, select the process to run.
+5. Select **Save**.
+6. Expand the **Batch task detail** section to add more settings for the batch task, or to add constraints.
+7. On the **General** tab, set the **Ignore task failure** option to **Yes** to specify that failure of the task should not cause the job to fail.
+8. In the **Maximum retries** field, specify the number of times that a task should be retried before it's considered to have failed.
+9. Set the **Private** option to **Yes** if the task should be run only by the user who created the job. This option is applicable only to client tasks.
+10. On the **Constraints** tab, select **New** to define a constraint between tasks.
+11. In the **Task ID** field, select the preceding task.
+12. In the **Expected status** field, select the status that the preceding task must reach before the current task can run.
+13. Select **Save**.
 
 > [!NOTE]
-> If you enter more than one condition, and if all conditions must be met before the dependent task can run, select a condition type of **All**. Select a condition type of **Any** if the dependent task can run after any of the conditions have been met.
+> If you enter more than one condition, and if all conditions must be met before the dependent task can run, select **All** as the condition type. If the dependent task can run after any of the conditions has been met, select **Any** as the condition type.
