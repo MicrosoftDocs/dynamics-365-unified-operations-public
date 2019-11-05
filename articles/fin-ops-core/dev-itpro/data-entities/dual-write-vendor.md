@@ -56,7 +56,7 @@ Vendor data includes all information about the vendor, such as the vendor group,
 
 Finance and Operations apps | Other Dynamics 365 apps         | Description
 ----------------------------|---------------------------------|------------
-Vendor V2               | Account | 
+Vendor V2               | Account | Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.
 Vendor V2               | Msdyn\_vendors | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations apps integration. 
 Vendor groups | msdyn_vendorgroups | This template synchronizes vendor group information between Finance and Operations apps and other Dynamics 365 apps.
 Vendor payment method | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information between Finance and Operations and other Dynamics 365 apps.
@@ -70,21 +70,8 @@ Name affixes                | msdyn_nameaffixes               | The [name affixe
 
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## Vendor V2 and Account 
-
-Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.
-
-## Contacts
-
-This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors, between Finance and Operations apps and other Dynamics 365 apps. For the details of the entity map, see [Integrated customer master](dual-write-customer.md#contacts).
-
 [!include [Vendors](dual-write/VendorsV2-msdyn-vendors.md)]
 
 [!include [](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
 
 [!include [](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
-
-
-
-
