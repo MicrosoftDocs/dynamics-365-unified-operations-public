@@ -53,11 +53,9 @@ When needed, Talent also provides the following types of fixes:
 
 - **Emergency fix**: proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a weekly service update release
 
-## Testing and validation
-
 Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they are then deployed to production.
 
-Releases roll out to environments in the following order:
+Releases roll out to production environments in the following order:
 
 | Environment | Service update release interval | Solution update release interval |
 | --- | --- | --- |
