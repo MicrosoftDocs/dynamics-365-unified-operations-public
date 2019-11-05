@@ -1,0 +1,98 @@
+---
+# required metadata
+
+title: MyLeaveRequests submit API - Reference - Submit to workflow
+description: This topic provides a reference for the MyLeaveRequests submit() application programming interface (API).
+author: gboyko
+manager: AnnBe
+ms.date: 11/15/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: gboyko
+ms.search.validFrom: 2019-11-15
+ms.dyn365.ops.version: Talent
+
+---
+
+# Submit leave request to workflow
+
+[!include [banner](../../../includes/preview-banner.md)]
+
+## Overview
+
+Submit a leave request to workflow to be processed by the Dynamics 365 Talent workflow subsystem. This API is exposed as an action on the MyLeaveRequests OData entity.
+
+## Prerequisites
+
+The leave request must be saved in the database, and must be retrievable through the MyLeaveRequests entity.
+
+## Permissions
+
+One of the following permissions is required to call this application programming interface (API). For more information about permissions and how to select them, see [Authentication](../dbmovement-api-authentication.md).
+
+| Permission type                    | Permissions (from least privileged to most privileged) |
+|------------------------------------|--------------------------------------------------------|
+| Delegated (work or school account) | user\_impersonation                                    |
+
+## HTTPS request
+
+<!-- { "blockType": "ignored" } -->
+```https
+POST https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/MyLeaveRequests(RequestId='{requestId}', LeaveType='{leaveType}', LeaveDate={leaveDate}, dataAreaId={dataArea})/Microsoft.Dynamics.DataEntities.submit?cross-company=true
+```
+
+The request conforms to OData standards, and the {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.
+
+## Request headers
+
+| Header         | Value                     |
+|----------------|---------------------------|
+| Authorization  | Bearer {token} (required) |
+| Content-Type   | application/json          |
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+A successful response is always a **204 No Content** response.
+
+Unauthorized callers will receive a **401 Unauthorized** or a **403 Forbidden** response.
+
+If submission is unsuccessful (e.g. due to validation performed by the Talent service), the response will be a **500 Server Error**, and the response body will include a JSON object with further details.
+
+## Example
+
+```http
+POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespaces/b2eb8003-334f-4a84-ab63-edbe23569090/data/MyLeaveRequests(RequestId='USMF-000065', LeaveType='Vacation', LeaveDate=2019-10-04T12:00:00Z, dataAreaId='USMF')/Microsoft.Dynamics.DataEntities.submit
+```
+
+```json
+{
+  "error": {
+    "code": "",
+    "message": "An error has occurred.",
+    "innererror": {
+      "message": "Exception occurred while executing action submit on Entity MyLeaveRequest: The request would put the 'Vacation' balance below the allowed minimum balance on 9/10/2019.",
+      "type": "System.InvalidOperationException",
+      "stacktrace": "   at Microsoft.Dynamics.Platform.Integration.Services.OData.Action.ActionInvokable.Invoke()   at Microsoft.Dynamics.Platform.Integration.Services.OData.Update.UpdateProcessor.ActionInvocation(ChangeOperationContext context, ActionInvokable action)   at Microsoft.Dynamics.Platform.Integration.Services.OData.Update.UpdateManager.<>c__DisplayClass13_0.<ScheduleInvokable>b__0(ChangeOperationContext context)   at Microsoft.Dynamics.Platform.Integration.Services.OData.Update.ChangeInfo.ExecuteActionsInCompanyContext(IEnumerable`1 actionList, ChangeOperationContext operationContext)\r\n   at Microsoft.Dynamics.Platform.Integration.Services.OData.Update.ChangeInfo.ExecuteActions(ChangeOperationContext context)   at Microsoft.Dynamics.Platform.Integration.Services.OData.Update.UpdateManager.SaveChanges()   at Microsoft.Dynamics.Platform.Integration.Services.OData.AxODataDelegatingHandler.<SaveChangesAsync>d__3.MoveNext()"
+    }
+  }
+}
+```
+
