@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: nselin
-ms.search.validFrom: 
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
 
 ---
@@ -78,7 +78,7 @@ Because Business document management is built on top of the ER framework, you mu
 
 ## Import ER solutions
 
-You must import ER configurations that contain business documents templates to the current instance. Download and locally store the following files to complete this procedure.
+Sample ER configurations are used in the example of this procedure. You must import, into your current instance of Dynamics 365 Finance, the ER configurations that contain the business document templates that can be edited by using Business document management. Download, and then locally store the following files to complete this procedure.
 
 **Sample ER customer invoicing solution**
 
@@ -111,7 +111,13 @@ Use the following procedure to import each file. Import the ER *data model* conf
 
 ![ER configurations page](./media/BDM-Overview-ERSolutions.png)
 
-For more information about importing ER configurations, see [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
+
+Alternatively, you can import the officially published ER format configurations from Microsoft Dynamics Lifecycle Service (LCS). For example, to complete this procedure you can import the latest version of the **Free text invoice (Excel)** ER format configuration. The corresponding ER data model and ER model mapping configurations will be imported automatically.
+
+![LCS shared asset library content page](./media/BDM-Overview-SharedAssetLibrary.png)
+
+For more information about importing ER configurations, see [Manage the ER configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## Enable Business document management
 
