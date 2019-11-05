@@ -472,7 +472,7 @@
             href: starter-kit-overview.md
           - name: Container modules
             items:
-            - name: Container modules
+            - name: Container module
               href: add-container-module.md
           - name: Marketing modules
             items:
