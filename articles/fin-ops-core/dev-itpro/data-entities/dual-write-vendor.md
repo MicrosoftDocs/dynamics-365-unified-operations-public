@@ -58,8 +58,8 @@ Finance and Operations apps | Other Dynamics 365 apps         | Description
 ----------------------------|---------------------------------|------------
 Vendor V2               | Account | Businesses that use the Account entity to store vendor information can continue to use it in the same way. They can also take advantage of the explicit vendor functionality that is coming because of Finance and Operations apps integration.
 Vendor V2               | Msdyn\_vendors | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations apps integration. 
-Vendor groups | msdyn_vendorgroups | This template synchronizes vendor group information between Finance and Operations apps and other Dynamics 365 apps.
-Vendor payment method | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information between Finance and Operations and other Dynamics 365 apps.
+Vendor groups | msdyn_vendorgroups | This template synchronizes vendor group information.
+Vendor payment method | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information.
 CDS Contacts V2             | contacts                        | The [contacts](dual-write-customer.md#cds-contacts-v2-to-contacts) template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.
 Payment schedule lines      | msdyn_paymentschedulelines      | The [payment schedule lines](dual-write-customer.md#payment-schedule-lines-to-msdyn_paymentschedulelines) template synchronizes reference data for customers and vendors.
 Payment schedule            | msdyn_paymentschedules          | The [payment schedules](dual-write-customer.md#payment-schedule-to-msdyn_paymentschedules) template synchronizes payment schedule reference data, for both customers and vendors.
