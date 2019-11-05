@@ -5,10 +5,10 @@ title: Call Retail Server APIs
 description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Retail Server from a data action or directly from module code.
 author: samjarawan
 manager: annbe
-ms.date: 10/16/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -140,13 +140,10 @@ The following example shows how the **getCategoryList** data action can be regis
     "description": "Feature module used to highlight a product.",
     "categories": ["storytelling"],
     "tags": [""],
-    "module": {
-        "view": "./productFeature",
-        "dataActions": {
-            "categories":{
-                "path": "../../actions/getCategoryList",
-                "runOn": "server"
-            }
+    "dataActions": {
+        "categories":{
+            "path": "../../actions/getCategoryList",
+            "runOn": "server"
         }
     },
     "config": {

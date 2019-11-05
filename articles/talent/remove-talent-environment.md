@@ -39,7 +39,7 @@ This topic walks you through the process of removing a test drive or production 
 
 Talent test drives are provisioned with a 60-day expiration policy. However, owners of test drive environments have the option to end their trial early by completing the following steps. 
 
-1. Navigate to the [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
+1. Navigate to the [Power Apps Admin center](https://admin.businessplatform.microsoft.com/).
 2. Select **Environments**.
 3. Select the test drive environment, which has a naming pattern similar to this: TestDrive - alias@domain
 4. Select **Delete** and confirm the decision. 
@@ -50,14 +50,14 @@ The existing test drive environment will be removed. When it is removed, you can
 
 This topic assumes that you've purchased Talent through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
 
-Since a single Talent environment is “contained” within a single PowerApps environment, there are two options to consider. The first option involves removing the entire PowerApps environment; the second option involves removing only Talent. The first option is preferred when you have created a PowerApps environment expressly for the purpose of provisioning Talent, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established PowerApps environment populated with rich data that's leveraged in PowerApps and Flows.
+Since a single Talent environment is “contained” within a single Power Apps environment, there are two options to consider. The first option involves removing the entire Power Apps environment; the second option involves removing only Talent. The first option is preferred when you have created a Power Apps environment expressly for the purpose of provisioning Talent, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established Power Apps environment populated with rich data that's leveraged in Power Apps and Power Automate.
 
 > [!Important]
-> Before removing the PowerApps environment, ensure it is not being used for rich data integrations outside the scope of Talent. Also note that the default PowerApps environments cannot be removed. 
+> Before removing the Power Apps environment, ensure it is not being used for rich data integrations outside the scope of Talent. Also note that the default Power Apps environments cannot be removed. 
 
-To remove the entire PowerApps environment, including Talent and the associated Apps and Flows:
+To remove the entire Power Apps environment, including Talent and the associated apps and flows:
 
-1. Navigate to the [PowerApps Admin center](https://admin.businessplatform.microsoft.com/).
+1. Navigate to the [Power Apps Admin center](https://admin.businessplatform.microsoft.com/).
 2. Select **Environments**.
 3. Select the environment to be removed.
 4. Select **Delete** and confirm the decision. 
@@ -68,7 +68,7 @@ To remove the entire PowerApps environment, including Talent and the associated 
 9. Select the instance to remove. 
 10. Select **Remove instance** and confirm your decision.  
 
-To remove a Talent environment from an existing PowerApps environment, complete the following steps. Note that the need to involve support and contact the Talent DevOps team is temporary until this feature is enabled directly in LCS.
+To remove a Talent environment from an existing Power Apps environment, complete the following steps. Note that the need to involve support and contact the Talent DevOps team is temporary until this feature is enabled directly in LCS.
 
 1. Contact Support to initiate a removal request.
 2. The Support team will initiate a removal request with the Talent DevOps team. 

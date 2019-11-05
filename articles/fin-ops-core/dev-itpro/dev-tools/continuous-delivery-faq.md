@@ -41,11 +41,9 @@ Customization
 
 ### Do I customize (overlayer) or use extensions?
 
-Application customization is enabled using a new framework, called *extensions*. Developers can create extension models that compile into separate assemblies and distributable packages. Within an extension model, developers can create new elements, extend elements that belong to other models and customize business logic using event handlers and plugins. Extensions enable faster builds, more efficient application lifecycle management and movement of code, better performance at design time, and minimal cost for application upgrades. You can still create customizations by using *overlayering* of metadata and code, which is a framework similar to what was available in Microsoft Dynamics AX 2012. When you overlayer code, you can freely modify X++ code and metadata, but you will be compiling into the same package (same assembly) of the code that you are customizing. Here are some guidelines:
+Extensibility is the only customization framework in Finance, Supply Chain, and Retail. Overlayering isn't supported.
 
--   Use extensions as your default mode of development and fall back to overlayering only as a last resort.
--   When you need to overlayer code, do not include functional or business logic in the overlayered code. Instead, define and call a delegate method, then implement the logic in your extension model using an event handler. For a detailed example in the context of code migration, see [Delegates.](../migration-upgrade/delegates-migration.md)
--   Report commonly used over-layering patterns to Microsoft and request extension support.
+Dynamics 365 Finance, Supply Chain, and Retail are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
 
 For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and the [Developer home page](developer-home-page.md).
 

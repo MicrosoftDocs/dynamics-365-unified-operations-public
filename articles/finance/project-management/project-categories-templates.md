@@ -70,7 +70,7 @@ The following illustration shows how the data is synchronized between Project Se
 
 ### Template and task
 
-To access the template, in the Microsoft PowerApps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
+To access the template, in the Microsoft Power Apps admin center, select **Projects**, and then, in the upper-right corner, select **New project** to select public templates.
 
 The following template and underlying task are used to synchronize project expense categories from Finance to Project Service Automation:
 

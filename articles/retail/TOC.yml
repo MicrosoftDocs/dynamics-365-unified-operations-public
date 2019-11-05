@@ -836,6 +836,8 @@
         href: optimal-combination-overlapping-discounts.md
       - name: Define channel-specific discounts
         href: define-channel-specific-discounts.md
+      - name: Tender-based discounts
+        href: tender_based_discounts.md
       - name: Options for preventing discounts for retail products
         href: prevent-discounts.md
       - name: Shipping discount overview
@@ -847,7 +849,9 @@
     - name: Loyalty
       items:
       - name: Loyalty overview
-        href: set-up-customer-loyalty-program.md      
+        href: set-up-customer-loyalty-program.md
+      - name: Clienteling overview
+        href: clienteling-overview.md
     - name: Payments
       items:
       - name: Payment methods

@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -56,9 +56,9 @@ Go to the [Dynamics 365 Commerce (Preview)](https://dynamics.microsoft.com/en-us
 
 Select a feature area to learn more about it.
 - [Configure an e-Commerce evaluation environment](provisioning-guide.md)
-- [Store starter kit](starter-kit-overview.md)
-- [Product recommendations](product-recommendations.md)
-- [Ratings and reviews](ratings-reviews-overview.md)
-- [Templates and layouts](templates-layouts-overview.md)
+- [Store starter kit overview](starter-kit-overview.md)
+- [Product recommendations overview](product-recommendations.md)
+- [Ratings and reviews overview](ratings-reviews-overview.md)
+- [Templates and layouts overview](templates-layouts-overview.md)
 - [Add and manage content](add-manage-content.md)
-- [Extensibility](e-commerce-extensibility/overview.md)
+- [Online channel extensibility](e-commerce-extensibility/overview.md)

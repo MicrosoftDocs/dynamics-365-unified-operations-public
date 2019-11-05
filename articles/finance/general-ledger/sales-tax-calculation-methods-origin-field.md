@@ -131,7 +131,7 @@ Document / journal is set to Amounts include sales tax = No Transaction line amo
 Additional resources
 --------
 
-[Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md)
+[Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md)
 
 [Whole amount and Interval calculation options for sales tax codes](whole-amount-interval-options-sales-tax-codes.md)
 

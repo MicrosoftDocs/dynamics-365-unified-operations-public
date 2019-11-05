@@ -5,10 +5,10 @@ title: Script injectors
 description: This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -73,9 +73,7 @@ If you open the base definition file for the script injector module, you can see
     "friendlyName": "External Script",
     "name": "script-injector",
     "description": "External script tag to be rendered on the page",
-    "categories": [
-        "script-injector"
-    ],
+    "categories": ["script-injector"],
     "tags": [
         "script",
         "sdk-modules"
@@ -85,9 +83,6 @@ If you open the base definition file for the script injector module, you can see
         "allowInBodyBegin": true,
         "allowInBodyEnd": true,
         "allowInHead": true
-    },
-    "module": {
-        "view": "./script-injector"
     },
     "config": {
         "scriptSource": {

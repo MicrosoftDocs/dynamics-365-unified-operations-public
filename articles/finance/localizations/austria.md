@@ -36,11 +36,11 @@ This topic includes information and links to resources that can help you set up 
 
 ## Depreciation
 
-For companies in Austria, depreciation for additional acquisitions and acquisition adjustments is calculated according to specific rules. For more information, see [Half-year depreciation on additional acquisitions](emea-aut-half-year-depreciation.md).
+For companies in Austria, depreciation for additional acquisitions and acquisition adjustments is calculated according to specific rules. For more information, see [Half-year depreciation on additional acquisitions for Austria](emea-aut-half-year-depreciation.md).
 
 ## Packing material fees
 
-In Austria, packing materials are divided into various categories, for example, household and commercial. The government provides tax rates for packing materials in each category. The category that packing material belongs to depends on size and the products that the packaging was used for. Packing material fees are calculated and reported, however the fees aren't considered taxes that must be paid to an authority, which means that ledger transactions are not posted automatically. For more information, see [Packing material fees](emea-aut-packing-material-fee-calculation.md).
+In Austria, packing materials are divided into various categories, for example, household and commercial. The government provides tax rates for packing materials in each category. The category that packing material belongs to depends on size and the products that the packaging was used for. Packing material fees are calculated and reported, however the fees aren't considered taxes that must be paid to an authority, which means that ledger transactions are not posted automatically. For more information, see [Packing material fee calculation for Austria](emea-aut-packing-material-fee-calculation.md).
 
 ## Purchase duties
 
@@ -55,9 +55,9 @@ To specify the value of the purchase duty, click **Purchase duty value** to open
 Purchase duties are generated when you settle and post sales taxes. You can generate the **Purchase duty** report from the **Purchase duty reporting** menu.
 
 ## VAT
-For information about setting up the value-added tax (VAT) statement for legal entities in Austria, see [VAT statement for Austria](emea-aut-vat-statement-details.md). 
+For information about setting up the value-added tax (VAT) statement for legal entities in Austria, see [VAT statement details for Austria](emea-aut-vat-statement-details.md). 
 
-For general information about the setup of VAT statements, see [VAT reporting](emea-vat-reporting.md).
+For general information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Reports for Austria
 

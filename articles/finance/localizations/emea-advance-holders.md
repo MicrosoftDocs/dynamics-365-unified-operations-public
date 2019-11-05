@@ -40,13 +40,12 @@ An *advance holder* is an employee of a company who is accountable for an expens
 ## Set up an advance holder
 This section walks you through setting up an advance holder. Be sure to complete the tasks in this section in the following order.
 
-> [!div class="checklist"]
-> * 1. Create advance holder groups
-> * 2. Set up an employee posting profile
-> * 3. Set up account payable parameters
-> * 4. Create a specific terms of payment for the advance holder
-> * 5. Create a specific terms of payment for the advance holder
-> * 6. Create an advance holder
+1. Create advance holder groups
+2. Set up an employee posting profile
+3. Set up account payable parameters
+4. Create a specific terms of payment for the advance holder
+5. Create a specific terms of payment for the advance holder
+6. Create an advance holder
 
 
 ### Advance holder groups
@@ -58,15 +57,11 @@ Use the **Employee posting profiles** page to create a profile for advance holde
 
 |      Field      |                                            Description                                            |
 |-----------------|---------------------------------------------------------------------------------------------------|
-| Posting profile |               Enter the posting profile identification code for the advance holder.               |
-|   Description   |                         Enter a brief description of the posting profile.                         |
-|    Valid for    | Select one of the following options for the level of grouping for setting up the posting profile: |
-
-**Table** – This option is used to set up the posting profile for one advance holder. You must indicate the advance holder code in the Reference field.
-**Group** – This option is used to set up the posting profile for a group of advance holders. You must indicate the group code in the Reference field.
-**All** – This option is used to set up the posting profile for all advance holders.|
-|Reference|Select the advance holder code if Table is selected in the Valid for field, or select the advance holder group if Group is selected in the Valid for field.|
-|Summary account|Select the summary account for posting the transactions.|
+| **Posting profile** |  Enter the posting profile identification code for the advance holder.               |
+|   **Description**   |  Enter a brief description of the posting profile.                         |
+|    **Valid for**    |  Select one of the following options for the level of grouping for setting up the posting profile: <ul> <li>**Table** – This option is used to set up the posting profile for one advance holder. You must indicate the advance holder code in the **Reference** field.</li> <li>**Group** – This option is used to set up the posting profile for a group of advance holders. You must indicate the group code in the **Reference** field.</li> <li>**All** – This option is used to set up the posting profile for all advance holders.</li></ul> |
+| **Reference** | Select the advance holder code if **Table** is selected in the **Valid for** field, or select the advance holder group if **Group** is selected in the **Valid for** field. |
+| **Summary account** | Select the summary account for posting the transactions. |
 
 
 
@@ -74,9 +69,8 @@ Use the **Employee posting profiles** page to create a profile for advance holde
 
 To reflect advance holder’s transactions you must set up the following on the **Account payable parameters** page in the **Advance holders** section.
 
-|                                                |                   |
+|  Field                                         | Description       |
 |------------------------------------------------|-------------------|
-|  **Field**                                     | **Description**                                                                                                                                                                  |
 | **Posting profile**                            | Select the default profile to complete transactions for advance holders.                                                                                                         |
 | **Advance holder sorting**                     | If selected, advance holders will be displayed at the beginning of the list in the **Advance holders** page.                                                                     |
 | **Issue when balance is open**                 | If selected, issue of a cash advance to an advance holder who has an open positive balance will be allowed.                                                                      |
@@ -92,7 +86,7 @@ To correctly register and post a purchase order through an advance holder, you m
 
 ### Create an advance holder
 
-Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide).](../../fin-and-ops/hr/tasks/enter-worker-information.md) 
+Before you can create an advance holder, you must have already set up workers. For more information, see [Enter worker information (Task guide)](../../fin-and-ops/hr/tasks/enter-worker-information.md). 
 
 1. Select **Accounts payable** \> **Advance holders** \> **Advance holders**.
 
@@ -103,10 +97,10 @@ Before you can create an advance holder, you must have already set up workers. F
 3. On the **General** FastTab, set the **Advance holder** option to **Yes** to indicate that the employee is an advance holder.
 4. In the **Group** field, select the advance holder group that the employee belongs to.
 5. Under **Identity document**, provide the details of an identification document.
-    - **Series** -- Enter the series of the document that is used to verify the identity of the advance holder.
-    - **Number** -- Enter the number of the document that is used to verify the identity of the advance holder.
-    - **Issue date** -- Select or enter the document issue date.
-    - **Issued by** -- Enter the details of the authority or person who issued the document.
+    - **Series** - Enter the series of the document that is used to verify the identity of the advance holder.
+    - **Number** - Enter the number of the document that is used to verify the identity of the advance holder.
+    - **Issue date** - Select or enter the document issue date.
+    - **Issued by** - Enter the details of the authority or person who issued the document.
 6. Select **Save**, or close the page.
 
 > [!NOTE]
@@ -117,7 +111,7 @@ Before you can create an advance holder, you must have already set up workers. F
 
 ### Advance holder transactions inquiry
 
-For a list of transactions for an advance holder, click the **Transactions** button on the **Advance holders** page. To see transactions for all advance holders or to create a specific inquiry based on advance holders’ transactions, click **Accounts payable** &gt; **Inquiries and reports** &gt; **Advance holders inquiries and reports** &gt; Transactions. Click **Voucher** to open the **Voucher transactions** page.
+For a list of transactions for an advance holder, click the **Transactions** button on the **Advance holders** page. To see transactions for all advance holders or to create a specific inquiry based on advance holders’ transactions, click **Accounts payable** &gt; **Inquiries and reports** &gt; **Advance holders inquiries and reports** &gt; **Transactions**. Click **Voucher** to open the **Voucher transactions** page.
 ### Advance holder balance inquiry
 
 To see balance for an Advance holder use the **Advance holders** page. To see balance for all advance holders or to create a specific inquiry based on advance holders’ accounts, click **Accounts payable** &gt; **Inquiries and reports** &gt; **Advance holders inquiries and reports** &gt; **Balance.**
@@ -137,13 +131,13 @@ Transactions for these workers who are advance holders can be posted by using ad
 ### Create and post a purchase order with advance holder details
 For more general information about purchase orders, see [Purchase order overview](../../supply-chain/procurement/purchase-order-overview.md). If a vendor invoice is created and posted with advance holder details, the advance holder’s balances will be posted to the employee balance account instead of the vendor balance account. To add advance holder details to a purchase order, do the following:
 
--   In the **Terms of payment** field in the **Price and discount** section, select the payment term. <!---For more information about **Terms of payment**, see [Define vendor payment terms](../accounts-payable/tasks/define-vendor-payment-terms.md).--> Select a payment term that has the **From advance holder** option selected on the **Terms of payment** page. For more information about setting up terms of payment for advance holders, see [Advance holders](emea-advance-holders.md).
+-   In the **Terms of payment** field in the **Price and discount** section, select the payment term. <!---For more information about **Terms of payment**, see [Define vendor payment terms](../accounts-payable/tasks/define-vendor-payment-terms.md).--> Select a payment term that has the **From advance holder** option selected on the **Terms of payment** page. 
 -   In the **Advance holder** field on the **Price and discount** FastTab, select the advance holder for the purchase order.
 
 The purchase order posting process creates two vendor transactions with opposite amounts and one advance holder transaction. Without advance holder details, only one vendor transaction is created.
 
 ### Settle advance holder balances via a bank
-When you settle advance holder balances via a bank, journal entries for closing the advance holder balances are created in the general journal. You can set up the code for the journal and the bank in the **Advance holders** section on the **Accounts payable parameters** page. For more information, see [Advance holders](emea-advance-holders.md). To close an advance holder’s balance via a bank, open **Accounts payable** &gt; **Advance holders** &gt; **Advance holders**. Click the **Balance** button on the Action Pane, and then click **Close via bank**. Enter the following information on the **Close via bank** page.
+When you settle advance holder balances via a bank, journal entries for closing the advance holder balances are created in the general journal. You can set up the code for the journal and the bank in the **Advance holders** section on the **Accounts payable parameters** page. To close an advance holder’s balance via a bank, open **Accounts payable** &gt; **Advance holders** &gt; **Advance holders**. Click the **Balance** button on the Action Pane, and then click **Close via bank**. Enter the following information on the **Close via bank** page.
 
 | Field                    | Description |
 |------------------------------|-------------------|
@@ -152,7 +146,7 @@ When you settle advance holder balances via a bank, journal entries for closing 
 | **Automatic**                | Select the **Automatic** check box to create and post a journal that is preset on the **Accounts payable parameters** page.|
 
 ### Settle advance holder balances via cash
-When you settle advance holder balances via cash, journal entries for closing the advance holder balances are created in a slip journal. You can set up the code for the journal and the cash in the **Advance holders** tab on the **Accounts payable parameters** page. For more information, see [Advance holders](emea-advance-holders.md). To close an advance holder’s balance via cash, open **Accounts payable** &gt; **Advance holders** &gt; **Advance holders**. Click the **Balance** button on the Action Pane, and then click **Close via cash**. Enter the following information on the **Close via cash** page.
+When you settle advance holder balances via cash, journal entries for closing the advance holder balances are created in a slip journal. You can set up the code for the journal and the cash in the **Advance holders** tab on the **Accounts payable parameters** page. To close an advance holder’s balance via cash, open **Accounts payable** &gt; **Advance holders** &gt; **Advance holders**. Click the **Balance** button on the Action Pane, and then click **Close via cash**. Enter the following information on the **Close via cash** page.
 
 | Field                    | Description
 |------------------------------|-----------------|
@@ -165,7 +159,7 @@ After the slip journal is processed, if the amount in the **Amount to be transfe
 ## Additional resources
 
 - [Advance payment to an employee (Eastern Europe)](tasks/advance-payment-employee.md)
-- [Advance holders for Russia](rus-advance-holders.md)
+- [Advance holders for Russia overview](rus-advance-holders.md)
 
 
 

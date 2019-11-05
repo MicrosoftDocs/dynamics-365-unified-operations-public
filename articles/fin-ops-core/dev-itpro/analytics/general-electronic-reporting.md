@@ -76,7 +76,7 @@ A model mapping that supports outgoing electronic documents has the following ca
 
 - It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
+- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
 
 
 A model mapping that supports incoming electronic documents has the following capabilities:
@@ -367,5 +367,5 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 ## Additional resources
 
-- [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
-- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
+- [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)

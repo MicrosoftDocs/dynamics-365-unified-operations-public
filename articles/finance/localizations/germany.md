@@ -35,10 +35,10 @@ ms.dyn365.ops.version: AX 7.0.1
 This topic includes information and links to resources that should be considered for legal entities with a primary address in Germany.
 
 ## Audit file
-- [German audit file (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md)
-- [Customize audit file configuration](tasks/customize-german-audit-file-configuration.md)
-- [Generate the audit file](tasks/german-audit-file.md)
-- [Import audit file configuration](tasks/import-german-audit-file-configuration.md)
+- [German audit file (GDPdU/GoBD) overview](emea-deu-gdpdu-audit-data-export.md)
+- [Customize German audit file configuration](tasks/customize-german-audit-file-configuration.md)
+- [Generate German audit file](tasks/german-audit-file.md)
+- [Import German audit file configuration](tasks/import-german-audit-file-configuration.md)
 
 ## Depreciation
 -   [Additional acquisition depreciation](emea-deu-additional-acquisition-depreciation.md)

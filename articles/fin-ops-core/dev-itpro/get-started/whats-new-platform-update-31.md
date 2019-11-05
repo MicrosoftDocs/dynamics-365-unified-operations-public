@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 10/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,24 @@ ms.dyn365.ops.version: Platform update 31
 This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457. While the general availability date is January 2020, the new features are available for early release in October 2019. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
-Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments via the Feature management workspace. To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
+
+To enable the new grid while this feature is in preview, follow these steps:
+
+1.   Enable the flight by using the following SQL statement:
+
+      INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
+
+2.    Reset IIS to flush the static flighting cache.
+
+3.    Go to the **Feature management** workspace in your Finance and Operations app. 
+
+4.    Select the **New grid control** feature in the list of features, and then select **Enable now** in the details pane.
+
+      If **New grid control** does not appear in the list of features, select **Check for updates**.
+
+All subsequent user sessions will start with the new grid enabled.
+
 
 ## Updates to saved views
 The saved views feature continues to evolve with Platform update 31. Included in this release are an overhaul to the administrator's Personalization page for managing views and personalizations, the ability to bulk import/export views, and the ability to publish views to users in specific legal entities. For more information about Saved views, see [Saved views](../../fin-ops/get-started/saved-views.md).  
@@ -49,9 +66,6 @@ A new star rating control is also available for developers to use. This control 
 
 ## Updated icon for Finance and Operations apps
 The new icon for Finance and Operations apps, which aligns with the latest icon stylings across Dynamics 365, is now visible in the web client.
-
-## Data management export file size limitation of 256 MB has been removed
-Exporting files using data management had a limitation of maximum file size of 256 MB. This limitation has been removed. This change is guarded by a flight DMFBlobSize256, which can be enabled to revert back to previous behavior if any issues are encountered due to this change.
 
 ## Optimization of loading the Data management workspace
 Loading of the Data management workspace has been slow under certain conditions. There are new optimizations put in place to reduce the time it takes to load the workspace. This change can be enabled via flight DMFWorkspaceLoadPerformance.

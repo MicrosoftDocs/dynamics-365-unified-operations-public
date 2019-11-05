@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 1
 The application ships with many default data entities. Data entities are frequently updated, so for documentation, we rely on the data entity templates to indicate which order data entities should be imported in, and on reports for a list of data entities that ship with each release.
 
 ## Configuration data packages
-Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) contain configuration entity spreadsheets. Configuration entity spreadsheets contain best practice data that you can use to create an initial golden build of an implementation. The data entities in the data packages are also sequenced appropriately using an XML file to help guarantee a successful single-click import of the data. We recommend that you download and review the configuration data packages to understand how we recommend that you order your data imports. For more information, see [Configuration data templates](configuration-data-templates.md) and [Copy configuration data from one company or legal entity to another](copy-configuration.md).
+Configuration data packages on Microsoft Dynamics Lifecycle Services (LCS) contain configuration entity spreadsheets. Configuration entity spreadsheets contain best practice data that you can use to create an initial golden build of an implementation. The data entities in the data packages are also sequenced appropriately using an XML file to help guarantee a successful single-click import of the data. We recommend that you download and review the configuration data packages to understand how we recommend that you order your data imports. For more information, see [Configuration data templates](configuration-data-templates.md) and [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 
 ## Data entity reports
 Microsoft provides the following reports for data entities, which can be downloaded from [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep):
@@ -49,4 +49,4 @@ Microsoft provides the following reports for data entities, which can be downloa
 You may also find the Tables report of interest--it lists each table, and its table group.
 
 ## Additional resources
-[Data entities home page](data-entities.md)
+[Data entities overview](data-entities.md)

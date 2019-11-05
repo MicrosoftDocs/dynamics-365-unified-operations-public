@@ -65,12 +65,12 @@ Information about intra-community VAT can be calculated and posted automatically
 When a purchase invoice is posted, the receivable VAT and payable VAT are posted at the same time. For the positive sales tax transaction, the VAT register date is set to the VAT register date from the invoice posting page, and the sales tax direction is **Sales tax receivable**. For the negative sales tax transaction, the VAT register date is set to the document date, and the sales tax direction is **Sales tax payable**.
 
 ## Credit note on cash discount
-For information about creating, posting, and printing credit notes for cash discounts that are given to customers, see [Cash discount on credit note](emea-cze-credit-note-cash-discount.md).
+For information about creating, posting, and printing credit notes for cash discounts that are given to customers, see [Credit note on cash discount](emea-cze-credit-note-cash-discount.md).
 
 ## Split periods in periodic journals
 For legal entities in Estonia, Latvia, Lithuania, Poland, Hungary, Russia, and the Czech Republic, the **Periodic journals** page is extended by the split for periods functionality. For more information, refer to one of the following topics:
 - [Split periods in periodic journals](emea-create-post-periodic-journals.md)
-- [Post a periodic journal](../general-ledger/tasks/post-periodic-journals.md)
+- [Post periodic journals](../general-ledger/tasks/post-periodic-journals.md)
 
 ## Signers for print forms
 For legal entities in Estonia, Latvia, Lithuania, Poland, Hungary, Russia, and the Czech Republic, you can set up signers and titles for customers and vendors that print documents such as invoices and cash orders. For more information, see [Set up signers for print forms](emea-set-up-signers-for-printing-forms.md).

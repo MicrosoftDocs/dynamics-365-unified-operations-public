@@ -5,7 +5,7 @@ title: Include physical value
 description: You use the Include physical value check box on the Inventory model FastTab of the Item model groups page to specify whether physically updated transactions are considered when the running average cost price is calculated for an item.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,10 +51,16 @@ The check box has slightly different effects, depending on the inventory model t
 
 **Example 1** You've selected the **Include physical value** check box and receive the following purchase orders:
 
--   A purchase order for a quantity of 2 and a cost price of USD 10.00 that has been packing slip–updated
--   A purchase order for a quantity of 3 and a cost price of USD 12.00 that has been invoice-updated
+-   A purchase order for a quantity of 2 and a cost price of USD 10.00 that has been packing slip–updated.
+-   A purchase order for a quantity of 3 and a cost price of USD 12.00 that has been invoice-updated.
 
-In this case, the running average cost price will be USD 11.20, because both physically updated transactions and financially updated transactions are used to calculate the cost price. **Example 2** You haven't selected the **Include physical value** check box, and the cost price on the item setup is USD 10.00. You receive a purchase order for a quantity of 20 and a cost price of USD 12.00 that has been packing slip–updated. When a sales order is posted, the posted cost amount is USD 10.00, because the running average cost price won't include physically posted transactions. **Note:** For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.
+In this case, the running average cost price will be USD 11.20 = (2x10+3x12)/(2+3), because both physically updated transactions and financially updated transactions are used to calculate the cost price. 
 
+**Example 2** You haven't selected the **Include physical value** check box, and the cost price on the item setup is USD 10.00. 
 
+-   You receive a purchase order for a quantity of 20 and a cost price of USD 12.00 that has been packing slip–updated.
 
+When a sales order is posted, the posted cost amount is USD 10.00, because the running average cost price won't include physically posted transactions. 
+
+> [!NOTE]
+> For comparison, if you select the **Include physical value** check box for this item, when a sales order is posted, the posted cost amount will be USD 12.00.

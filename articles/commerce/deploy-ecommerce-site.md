@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Deploy a new e-Commerce site
-description: This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
+title: Deploy a new e-Commerce tenant
+description: This topic describes how to deploy a new e-Commerce tenant by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/15/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +29,12 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Deploy a new e-Commerce site
+# Deploy a new e-Commerce tenant
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
+This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Overview
 	

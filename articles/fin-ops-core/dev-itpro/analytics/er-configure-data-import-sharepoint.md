@@ -48,7 +48,7 @@ To complete the examples in this topic, you must have the following access:
 - ER format and model configurations for 1099 payments.
 
 ### Create required ER configurations
-Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Microsoft Excel](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following set up.
+Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Excel format](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following set up.
 
 #### ER configurations
 

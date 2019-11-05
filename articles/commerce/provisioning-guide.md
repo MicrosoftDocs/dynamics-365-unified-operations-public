@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -302,7 +302,7 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 * [RCSU (Retail Cloud Scale Unit)](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 * [Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal)
 * [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
-* [Dynamics 365 Retail](../retail/index.md)
+* [Help resources for Dynamics 365 Retail](../retail/index.md)
 ### Microsoft Dynamics 365 Commerce Preview support
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
@@ -340,7 +340,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 ### Configure email server (optional)
 Please note that the SMTP server or email service you enter here must be accessible from within the Azure subscription you are using for the environment.
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Modules > System administration > Setup > Email > Email parameters**.
+1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Parameters > Email parameters**.
 1. Click the **SMTP settings** tab.
 1. In the **Outgoing mail server field**, type the FQDN or IP address of your SMTP server or email service.
 1. In the **SMTP port number** field, enter the port number (default is the 25 when not using SSL).
@@ -370,7 +370,7 @@ You might want to customize the email templates to use different images or updat
 	1. Pick order template
 1. Customize the templates using a text or HTML editor. Please see a list of supported tokens below.
 1. Log in to the environment (HQ).
-1. Using the menu on the left, go to **Modules > Organization administration > Setup > Organization email templates**.
+1. Using the menu on the left, go to **Modules > Retail > Headquarters setup > Parameters > Organization email templates**.
 1. Expand the list on the left to see all the templates.
 1. For each of the templates you wish to customize, perform the following steps:
 	1. Select the template from the list.

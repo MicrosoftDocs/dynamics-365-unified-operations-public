@@ -63,7 +63,7 @@ ms.dyn365.ops.version: 10.0.4
     - **CGST:** 10 percent
     - **SGST:** 10 percent
 
-    ![Tax document page](media/Capture09.PNG)
+    ![Tax document page](media/Capture09_upd.png)
 
 10. Select **Close**.
 11. On the Action Pane, on the **Quotation** tab, in the **Generate** group, select **Send quotation**.
@@ -90,7 +90,7 @@ ms.dyn365.ops.version: 10.0.4
 6. Select **OK**.
 7. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document** to review the calculated taxes.
 
-    ![Tax document page](media/Capture09.PNG)
+    ![Tax document page](media/Capture09_upd.png)
 
 8. Select **Close**.
 

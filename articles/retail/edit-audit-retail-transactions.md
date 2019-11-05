@@ -100,7 +100,6 @@ In Retail version 10.0.6 and higher, the option to bulk edit retail transactions
        - **Safe tender transactions**: This worksheet has all the safe drop transaction details.
        - **Tender declaration**: This worksheet has all the tender declaration transaction details.
        - **Income-expense transaction**: This worksheet has all the income-expense transaction line details.
-       - **Payment transactions**: This worksheet has all the payment-related information for the **Pay invoice** operation as well 
-             as the income-expense transaction.
+       - **Payment transactions**: This worksheet has all the payment-related information for the **Pay invoice** operation as well as the income-expense transaction.
 
 3.	Validations are not performed when you publish bulk edited transactions. You must ensure that all your edits are accurate and the fidelity of data across the worksheets is maintained. For example, if you want to change the transaction date to manage the scenarios where the fiscal or inventory period for the open retail transactions is closed, you need to change the date on all the Excel worksheets that have the **Business date** column. To validate transactions after they have been edited, you can use **Revalidate transactions** on the **Retail statements** page.

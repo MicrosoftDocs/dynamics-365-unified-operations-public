@@ -5,7 +5,7 @@ title: X++ exception handling
 description: This topic describes exception handling in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,11 +120,11 @@ The **Global::info** method is often used to show text in the Infolog. In progra
 
 ### Global::exceptionTextFallThrough method
 
-Occasionally, you want to do nothing inside your **catch** block. However, the X++ compiler generates a warning if you have an empty **catch** block. To avoid this warning, call the **Global::exceptionTextFallThrough** method in the **catch** block. The method does nothing, but it satisfies the compiler.
+Occasionally, you want to do nothing inside your **catch** block. However, the X++ compiler generates a warning if you have an empty **catch** block. To avoid this warning, call the **Global::exceptionTextFallThrough** method in the **catch** block. The method does nothing, but it satisfies the compiler and explicitly states the intention.
 
 ## Exceptions inside transactions
 
-If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception. Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
+If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception, (unless it is a **UpdateConflict** or a **DuplicateKeyException**). Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
 
 ## Examples of exception handling
 
@@ -410,4 +410,4 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
-| [TransientSqlConnectionError](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
+| [SQL connection error X++ exception](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |

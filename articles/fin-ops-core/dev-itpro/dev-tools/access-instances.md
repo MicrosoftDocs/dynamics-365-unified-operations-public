@@ -54,7 +54,7 @@ For a **Trial** or **Partner** project:
 2. Select **+** under **Environments** to deploy.
     ![LCS Onboard methodology](media/access-instances-5.jpeg)
 3. Select an application and platform version.
-4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for a preview subscription](sign-up-preview-subscription.md).
+4. Select an environment topology. You can choose to either use a cloud hosted environment or download a VHD. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
     ![Select environment topology](media/access-instances-2.jpeg)
 5. If you chose a cloud-hosted environment, select which Azure connector you want to use. Then select **Deploy**.
     ![Deploy environment](media/access-instances-3.jpeg)
@@ -68,7 +68,7 @@ For a **Customer Implementation** project:
 4. Specify the settings and select **Save**.
     ![Deployment settings](media/access-instances-7.jpeg)
 
-Customers are provided with one free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are two types of environments, **Develop** and **Build and Test**. For development and customization activities, configure a **Develop** environment. **Build and Test** environments are not supported for standard development activities. Instead, they are used for daily build and test automation. For more information, see [Build and test automation](../perf-test/continuous-build-test-automation.md).  
+Customers are provided with one free "develop and test" environment hosted in Microsoft's Azure subscription. Under "Develop and test", there are two types of environments, **Develop** and **Build and Test**. For development and customization activities, configure a **Develop** environment. **Build and Test** environments are not supported for standard development activities. Instead, they are used for daily build and test automation. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).  
 
 Additional develop and build environments can either be purchased or hosted in your own Azure subscription. To deploy an environment in your own subscription, go to the **Cloud-hosted environment** page.
 
@@ -100,7 +100,7 @@ For environments deployed **before Platform Update 12**:
 1.  Click the VM name.
 2.  Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by clicking the eye icon.
 
-For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. For more information, see [Development and build VMs that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md). 
+For any environments deployed **on or after Platform Update 12** , there are distinct accounts, a developer account and an admin account. Customers will not have access to virtual machine (VM) admin accounts on development or build environments that are running in Microsoft subscriptions. Thus, the admin account will be hidden unless the environment is running in their Azure subscription. For more information, see [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md). 
 
 After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
 
@@ -219,7 +219,7 @@ Follow the steps in this section if you are also configuring for Retail.
 
 ### Base URL of the local application
 
-After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Azure DevOps project, rename your local VM. For instructions, see [Rename a local development VM to enable access to Azure DevOps](../migration-upgrade/vso-machine-renaming.md).
+After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Azure DevOps project, rename your local VM. For instructions, see [Rename a local development (VHD) environment](../migration-upgrade/vso-machine-renaming.md).
 
 #### Retail configuration
 
@@ -244,8 +244,8 @@ On a VM, you can find most of the application configuration by opening the web.c
 ### Retail configuration
 
 The Retail software development kit (SDK) is available at C:\RetailSDK. For more information about how to use and customize retail applications, see the following topics:
--   [Retail SDK overview](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
--   [Retail POS device activation](../../../retail/dev-itpro/retail-device-activation.md)
+-   [Retail software development kit (SDK) architecture](../../../retail/dev-itpro/retail-sdk/retail-sdk-overview.md)
+-   [Retail point of sale (POS) device activation](../../../retail/dev-itpro/retail-device-activation.md)
 
 ## Redeploying or restarting the runtime on the VM
 To restart the local runtime and redeploy all the packages, follow these steps.
