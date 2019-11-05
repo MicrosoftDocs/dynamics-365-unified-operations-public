@@ -40,16 +40,16 @@ This topic describes the integration of site and warehouse data between Finance 
 
 With the integration with Common Data Service, these concepts and all their related information are available in Common Data Service using the sites and warehouses data entities in the following table.
 
-Finance and Operations apps | Other Dynamics 365 apps
---------------------------|---------------------------------
-Sites                     | msdyn_operationalsites
-Warehouses                | warehouses
+Finance and Operations apps | Other Dynamics 365 apps | Description
+--------------------------|---------------------------|---
+Sites | msdyn_operationalsites | 
+Warehouses | msdyn_warehouses | 
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
 ## Operational sites
 
-The operational sites are available in Common Data Service using the following mappings.
+
 
 Source field | Map type | Destination field
 ---|---|---
@@ -82,10 +82,11 @@ WILLMASTERPLANNEDINTRASITEMOVEMENTSUSETRANSFERJOURNALS | >< | msdyn_masterplanne
 PRIMARYADDRESSPOSTBOX | >< | msdyn_primaryaddresspostbox
 PRIMARYADDRESSSTREETNUMBER | >< | msdyn_primaryaddressstreetnumber
 
+[!include [operational sites](dual-write/InventOperationalSiteEntity-msdyn-operationalsite.md)]
 
 ## Warehouses
 
-The warehouses are available using the following mappings.
+
 
 Source field | Map type | Destination field
 ---|---|---
@@ -156,3 +157,6 @@ WILLSHIPPINGCANCELLATIONDECREMENTLOADQUANITY | >> | msdyn_shippingcanceldecremen
 WILLWAREHOUSELOCATIONIDINCLUDEBINIDBYDEFAULT | >> | msdyn_warehouselocationidincludeblindid
 WILLWAREHOUSELOCATIONIDINCLUDERACKIDBYDEFAULT | >> | msdyn_warehouselocationincluderackidbydefault
 WILLWAREHOUSELOCATIONIDINCLUDESHELFIDBYDEFAULT | >> | msdyn_warehouselocationidincludeshelfid
+
+[!include [warehouses](dual-write/InventWarehouseEntity-msdyn-warehouse.md)]
+
