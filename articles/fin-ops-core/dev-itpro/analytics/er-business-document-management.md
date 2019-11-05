@@ -78,7 +78,7 @@ Because Business document management is built on top of the ER framework, you mu
 
 ## Import ER solutions
 
-The mentioned in the table below sample ER configurations are used in the current example of this procedure. You must import to the current Finance and Operations instance these ER configurations containing business documents templates that are enabled for editing by using Business document management. Download and locally store the following files to complete this procedure.
+Sample ER configurations are used in the example of this procedure. You must import, into your current instance of Dynamics 365 Finance, the ER configurations that contain the business document templates that can be edited by using Business document management. Download, and then locally store the following files to complete this procedure.
 
 **Sample ER customer invoicing solution**
 
@@ -111,7 +111,7 @@ Use the following procedure to import each file. Import the ER *data model* conf
 
 ![ER configurations page](./media/BDM-Overview-ERSolutions.png)
 
-Alternatively, you can import the officially published ER format configurations from the Microsoft Dynamics Lifecycle Service (LCS). For example, to complete this procedure you can import from LCS the latest version of the **Free text invoice (Excel)** ER format configuration. Corresponding ER data model and ER model mapping configurations will be imported automatically.
+Alternatively, you can import the officially published ER format configurations from Microsoft Dynamics Lifecycle Service (LCS). For example, to complete this procedure you can import the latest version of the **Free text invoice (Excel)** ER format configuration. The corresponding ER data model and ER model mapping configurations will be imported automatically.
 
 ![LCS shared asset library content page](./media/BDM-Overview-SharedAssetLibrary.png)
 
