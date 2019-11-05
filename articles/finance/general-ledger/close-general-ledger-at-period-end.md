@@ -54,7 +54,7 @@ The Financial period close workspace can be used to organize and track the tasks
 
 For more information, see the following topics for more information:
 - [Financial period close workspace](financial-period-close-workspace.md) 
-- [Year end close](Year-end-close.md)  
+- [Year-end close](Year-end-close.md)  
 - [Mass financial period close](tasks/mass-financial-period-close.md)
 
 

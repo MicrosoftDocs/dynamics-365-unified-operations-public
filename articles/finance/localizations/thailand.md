@@ -36,7 +36,7 @@ This topic provides links to documentation resources for Thailand.
 
 - [Stock card reports](apac-tha-stock-card-reports.md)
 - [Substitution/adjustment tax invoice](apac-tha-substitution-and-adjustment-invoices.md)
-- [Unrealized VAT](apac-tha-unrealized-vat.md)
+- [Thailand unrealized VAT](apac-tha-unrealized-vat.md)
 - [Withholding tax](apac-tha-withholding-tax.md)
 
 ## Additional resources

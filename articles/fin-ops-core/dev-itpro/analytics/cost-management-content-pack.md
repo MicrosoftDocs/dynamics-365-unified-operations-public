@@ -41,7 +41,7 @@ The **Cost management** Microsoft Power BI content is intended for inventory acc
 > [!NOTE]
 > The **Cost management** Power BI content described in this this topic applies to Dynamics 365 Finance and Operations 8.0.
 > 
-> The **Cost management** Power BI content pack, available on the AppSource site, has been deprecated. For more information about that deprecation, see [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> The **Cost management** Power BI content pack, available on the AppSource site, has been deprecated. For more information about that deprecation, see [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 This Power BI content provides a categorized format that helps you monitor the performance of inventories and visualize how cost flows through them. You can gain managerial insights such as the turnover ratio, number of days that inventory is on hand, accuracy, and "ABC classification" at your preferred aggregated level (company, item, item group, or site). The information that is made available can also be used as a detailed supplement to the financial statement.
 
@@ -176,7 +176,7 @@ The following tables provide an overview of the visualizations in the **Cost man
 
 ## Understanding the data model and entities
 
-Data from the application is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with entity store](power-bi-integration-entity-store.md).
+Data from the application is used to fill the report pages in the **Cost management** Power BI content. This data is represented as aggregate measurements that are staged in the entity store, which is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The key aggregate measurements of the following objects are used as the basis of the Power BI content.
 

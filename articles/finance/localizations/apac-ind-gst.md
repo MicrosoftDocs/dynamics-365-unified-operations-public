@@ -155,8 +155,7 @@ Before you complete this task, be sure to save all the configuration files in a 
 Follow these steps to load the configurations and map them to a legal entity.
 
 ### Tax configurations
-=======
-Follow the process in the topic, [Import tax engine configurations](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
+Follow the process in the topic, [Tax engine import configuration](../general-ledger/tax-engine-import-configuration.md) to import the tax configurations and report configurations.
 
 ### GST configurations
 | Version                                                                                                            | Details                                                                                                                                                                                       |

@@ -200,7 +200,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I determine what's changed in a service update?
 
-The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release notes](https://docs.microsoft.com/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact om the features that you use.
+The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release plans](https://docs.microsoft.com/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact om the features that you use.
 
 ### How will I know if there is a deprecated feature that will impact me if I’m not doing active development/ recompile my code? 
 

@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.1
 This topic includes information and links to resources that should be considered for legal entities with a primary address in Estonia.
 
 -   [VAT statement details for Estonia](emea-est-vat-statement-details.md)
--   [Fixed assets disposal](emea-credit-note-reverse-fixed-asset-sale.md)
+-   [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)
 
 ## Additional resources
 - [Microsoft Dynamics Localization Portal: Estonia report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Estonia.html)

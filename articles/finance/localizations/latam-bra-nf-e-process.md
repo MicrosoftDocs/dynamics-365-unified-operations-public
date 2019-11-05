@@ -67,7 +67,7 @@ After the status of the NF-e is received from SEFAZ, you can perform the followi
 
 ## Additional resources
 
- - [NF-e certification](latam-bra-nfe-certs.md)
+ - [NF-e certificates](latam-bra-nfe-certs.md)
  - [Set up NF-e federal parameters (Brazil)](tasks/br-00053-1-set-up-nf-e-federal-parameters.md)
  - [Set up NF-e parameters for a fiscal establishment (Brazil)](tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md)
  - [Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)](tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md)

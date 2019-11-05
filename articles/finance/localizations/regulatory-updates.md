@@ -88,11 +88,11 @@ For the latest regulatory update plans, refer to the following table.
 |      April 2019          |   10.0.1      | Hungary      |  Hungary: Online invoicing v.1.1 2019  |
 |      April 2019          |   10.0.1      | Japan      |  2019 Japanese Calendar Era Change  |
 |      April 2019          |   10.0.1      |    Russia     |Land tax declaration changes from 2018 |
-|      April 2019          |   10.0.1      |    Russia     |[Property tax declaration changes from 2019](rus-assessed-tax-declaration.md)|
+|      April 2019          |   10.0.1      |    Russia     |[Assessed tax declaration](rus-assessed-tax-declaration.md)|
 |      April 2019          |   10.0.1      |    Russia     |Transport tax declaration changes from 2019  |
-|      April 2019          |   10.0.1      |    Russia     |[VAT declaration format changes from 2019](rus-VAT-declaration.md) |
+|      April 2019          |   10.0.1      |    Russia     |[VAT declaration](rus-VAT-declaration.md) |
 |      April 2019          |   10.0.1      |    Russia     |VAT declaration format changes from 2019 (Sales and Purchase books) |
-|      April 2019          |   10.0.1      |    United Kingdom     |[VAT Statement submission changes (Making Tax Digital)](emea-gbr-mtd-vat-integration.md)    |    
+|      April 2019          |   10.0.1      |    United Kingdom     |[Prepare Finance and Operations for integration with MTD for VAT](emea-gbr-mtd-vat-integration.md)    |    
 |      March 2019          |   10.0.0      |    Austria   |   Changes in Kammerumlage 2019 (Purchase duty)    |
 |      March 2019          |   10.0.0      |    Brazil    |     SPED EFD Contributions - Layout  004 and 005  |
 |      March 2019          |   10.0.0      |    Malaysia     |Malaysia replaces GST with SST sales & service tax        |

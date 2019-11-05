@@ -49,8 +49,8 @@ Select a feature area to learn more about it.
         - [Expense management](expense-management/expense-management.md)
         - [Financial reporting](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
-        - [General ledger](general-ledger/general-ledger.md) 
-        - [Project management](project-management/overview-project-management-accounting.md)
+        - [General ledger and Financial reporting](general-ledger/general-ledger.md) 
+        - [Project management and accounting](project-management/overview-project-management-accounting.md)
         - [Public sector](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::

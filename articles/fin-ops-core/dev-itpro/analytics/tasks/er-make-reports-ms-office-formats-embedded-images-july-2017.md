@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 To complete the steps in this procedure, first complete the procedure, “ER Create a configuration provider and mark it as active.” 
 This procedure explains how to design Electronic reporting (ER) configurations to generate a Microsoft Excel or Word document that contains embedded images. In this procedure, you will create the required ER configurations for the sample company, Litware, Inc. These steps can be completed using the USMF dataset. 
-This procedure is created for users with the assigned role of system administrator or electronic reporting developer. Before you begin, download and save the files listed in the Help topic, [Embed images and shapes in business documents that are generated with the Electronic reporting tool](../electronic-reporting-embed-images-shapes.md). The files are: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png, and Cheque template Word.docx.
+This procedure is created for users with the assigned role of system administrator or electronic reporting developer. Before you begin, download and save the files listed in the Help topic, [Embed images and shapes in documents that you generate by using ER](../electronic-reporting-embed-images-shapes.md). The files are: Model for cheques.xml, Cheques printing format.xml, Company logo.png, Signature image.png, Signature image 2.png, and Cheque template Word.docx.
 
 ## Verify prerequisites  
  1. Go to Organization administration > Workspaces > Electronic reporting.  

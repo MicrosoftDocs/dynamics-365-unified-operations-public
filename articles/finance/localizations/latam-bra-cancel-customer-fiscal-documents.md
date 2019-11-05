@@ -65,4 +65,4 @@ You can cancel an incorrect customer fiscal document by using the **Cancel fisca
 
 ## Additional resources
 
-[Cancel a vendor fiscal document](latam-bra-cancel-vendor-fiscal-documents.md)
+[Cancel vendor fiscal documents](latam-bra-cancel-vendor-fiscal-documents.md)

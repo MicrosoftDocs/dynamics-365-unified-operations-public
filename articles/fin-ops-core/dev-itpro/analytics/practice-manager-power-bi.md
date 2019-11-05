@@ -64,7 +64,7 @@ in Power BI, see [Create and configure a dashboard](https://powerbi.microsoft.co
 
 ## Understanding the data model and entities
 
-The following data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
+The following data is used to fill the report pages in the **Practice manager** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following sections describe the aggregate measurements that are used in each entity.
 

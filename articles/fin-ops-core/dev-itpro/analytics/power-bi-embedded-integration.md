@@ -43,7 +43,7 @@ The integration of the application and [Power BI](https://www.powerbi.com/) enab
 - Report filters that are based on user and session context information, such as company or date range
 - The ability to navigate directly to a specific tab on a Power BI report via menu items
 
-For more information about customizations that use extensions, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+For more information about customizations that use extensions, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 
 ## Advantages of Power BI Embedded
 - **Deliver Power BI workspaces and reports in the application.** If you're a power user or a business analyst, you can tweak ready-made reports or create new reports by using Power BI tools. As a developer, you can use the reports that your users create to provide rich navigation experiences in the product through workspaces. If you're in the partner and ISV community, you can build rich workspaces that include Power BI experiences, and then release those workspaces as part of your solution.
@@ -63,7 +63,7 @@ For more information about the Power BI Embedded service, see the [Power BI FAQ]
 ## Frequently asked questions
 
 ### Can I customize the Power BI embedded reports?
-Yes. To customize the Power BI embedded reports, just install Power BI Desktop in a one-box environment, and follow the steps in [Author and distribute Power BI reports with Entity store](author-distribute-power-bi-reports.md).
+Yes. To customize the Power BI embedded reports, just install Power BI Desktop in a one-box environment, and follow the steps in [Create analytical reports by using Power BI Desktop](author-distribute-power-bi-reports.md).
  
 ### Do customers have to purchase a separate Power BI license to use the new embedded analytics?
 No, customers don't have to purchase a separate Power BI license to use the new embedded analytics. However, a Power BI Pro license is required in order to connect to Entity Store from PowerBI.com by using DirectQuery.

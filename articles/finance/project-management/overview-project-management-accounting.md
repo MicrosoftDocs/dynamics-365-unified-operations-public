@@ -77,7 +77,7 @@ For more information about project contracts, see [Project contracts](project-co
 
 The degree of detail in a WBS depends on the level of accuracy that is required in estimates and the level of tracking that is required against those estimates. Projects that have very low tolerance for slippages in schedule or cost usually require a more detailed WBS, and also require diligent tracking of work progress and cost against the WBS. 
 
-For more information, see [Work breakdown structures](work-breakdown-structures.md).
+For more information, see [Work breakdown structures overview](work-breakdown-structures.md).
 
 ### Create project forecasts and budgets
 
@@ -139,7 +139,7 @@ During project execution, team members or managers record work and the expense
 
 A WBS is a description of the work that will be completed for a project. A WBS is a hierarchy of tasks. It represents not only the work for each task, but also the size, cost, and duration of the task. 
 
-For more information, see [Work breakdown structures](work-breakdown-structures.md).
+For more information, see [Work breakdown structures overview](work-breakdown-structures.md).
 
 ### Manage project forecasts and budgets
 

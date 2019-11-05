@@ -41,7 +41,7 @@ Reports can be defined simply as any visualization of a structured data set. Thi
 - Parameterized views with drill-through navigation to application pages and other reports.
 - Used to produce precision documents for compliance with local regulatory business practices.
 
-For more information, see [Create next-generation reporting solutions](create-nextgen-reporting-solutions.md).
+For more information, see [Create reporting solutions](create-nextgen-reporting-solutions.md).
 
 ## To view the report
 The [SQL Server Reporting Services Reports report](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep) lists each report that is available. The report indicates the data set used for each report, as well as the filters and fields available on each report.

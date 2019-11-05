@@ -67,8 +67,8 @@ The following resources provide information about planned and new localization f
 -   [Regulatory watch and regulatory update communication](regulatory-watch-communication.md)
 -   [Inform Microsoft about country/region regulation alerts and track the status of regulatory features](submit-localization-alerts.md)
 
-#### Dynamics 365 release notes
-The [Dynamics 365 release notes](https://docs.microsoft.com/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms. 
+#### Dynamics 365 release plans
+The [Dynamics 365 release plans](https://docs.microsoft.com/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms. 
 
 #### Finance and Operations apps what's new
 The [What's new content](../../fin-ops/get-started/whats-new-changed.md) lists the features that are included in specific releases of the Finance and Operations apps.

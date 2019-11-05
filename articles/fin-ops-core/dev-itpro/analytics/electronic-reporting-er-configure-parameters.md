@@ -83,5 +83,5 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 ## Additional resources
 
-- [Electronic reporting overview](general-electronic-reporting.md)
-- [Electronic reporting destinations](electronic-reporting-destinations.md)
+- [Electronic reporting (ER) overview](general-electronic-reporting.md)
+- [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)

@@ -131,7 +131,7 @@ round(1.0149, 0.00) = 1.0149
 For more information, see the following topics:
 - [Sales tax overview](indirect-taxes-overview.md)
 - [Create a sales tax payment](tasks/create-sales-tax-payment.md)
-- [Create sales transactions on documents](tasks/create-sales-tax-transactions-documents.md)
+- [Create sales tax transactions on documents](tasks/create-sales-tax-transactions-documents.md)
 - [View posted sales tax transactions](tasks/view-posted-sales-tax-transactions.md)
 - [round Function](https://msdn.microsoft.com/library/aa850656.aspx)
 
