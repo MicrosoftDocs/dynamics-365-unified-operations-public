@@ -470,9 +470,9 @@
           items: 
           - name: Starter kit overview
             href: starter-kit-overview.md
-          - name: Container module
+          - name: Container modules
             items:
-            - name: Container module
+            - name: Container modules
               href: add-container-module.md
           - name: Marketing modules
             items:
@@ -514,7 +514,7 @@
               href: account-management.md
           - name: Product collection modules
             items:
-            - name: Product collection module
+            - name: Product collection modules
               href: product-collection-module-overview.md
         - name: Search
           items:
