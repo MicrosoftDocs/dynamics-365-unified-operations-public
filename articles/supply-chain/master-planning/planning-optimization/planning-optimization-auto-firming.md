@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.7
 
 # Auto-firming with Planning Optimization
 
-With auto-firming it is possible to firm (release) planned orders as part of the master planning process. When firmed, the planned orders are transformed into actual purchase, transfer, or production orders. With Planning Optimization, planned orders are firmed during a master planning run when the **Order date** (the start date) is within the firming time fence.
+With auto-firming it is possible to firm (release) planned orders as part of the master planning process. When firmed, the planned orders are transformed into actual purchase, transfer, or production orders. With Planning Optimization, planned orders are firmed during a master planning run when the order date (the start date) is within the firming time fence.
 
 ## Turn on auto-firming
 
@@ -43,15 +43,15 @@ To turn on auto-firming, do the following.
 
 1. Go to the **Feature management** workspace.
 1. In the list, select **Auto-firming for Planning Optimization**. If the option is not shown under **New**, select **Not enabled** or **All**.
-1. Click **Enable now**, or click **Schedule** and pick a time to enable the feature
+1. Click **Enable now**, or click **Schedule** and pick a time to enable the feature.
 
 ## Set up time fence for firming
 
 The time fence for firming is calculated forward from the master planning run date. The period is defined by the number of days entered. You can control the firming time fence in the following ways.
 
 - To define the default firming time fence for a coverage group, go to **Coverage group** > **Other** > **Automatic firming time fence (days)**.
-- To overwrite the firming time fence defined on the **Coverage group** for a specific item, go to **Item coverage** > **General** > **Automatic firming time fence (days)**.
-- To overwrite the firming time fence defined on the **Coverage group** and **Item coverage** for a specific master plan, go to **Master plans** > **Time fence in days** > **Firming**, select **Yes**, and set the number of days. This will apply to all items included during the planning run.
+- To overwrite the firming time fence defined on the coverage group for a specific item, go to **Item coverage** > **General** > **Automatic firming time fence (days)**.
+- To overwrite the firming time fence defined on the coverage group and item coverage for a specific master plan, go to **Master plans** > **Time fence in days** > **Firming**, select **Yes**, and set the number of days. This will apply to all items included during the planning run.
 
 If auto-firming is enabled on a master planning run with Planning Optimization, the auto-firming process is performed according to the auto-firming setup. If it is not enabled, or in cases where planning is started from the **Net Requirements** page, the auto-firming process is skipped.
 
