@@ -50,23 +50,25 @@ To turn on auto-firming, do the following.
 The time fence for firming is calculated forward from the master planning run date. The period is defined by the number of days entered. You can control the firming time fence in the following ways.
 
 - To define the default firming time fence for a coverage group, go to **Coverage group** > **Other** > **Automatic firming time fence (days)**.
-- To overwrite the firming time fence defined on the **Coverage group** for a specific item, go to **Item coverage** > **General** > **Automatic firming time fence (days)** 
-- For a specific master plan, you can overwrite the firming time fence defined on the **Coverage group** and **Item coverage**. Go to **Master plans** > **Time fence in days** > **Firming**, select **Yes**, and set the number of days. This will apply to all items included during the planning run.
+- To overwrite the firming time fence defined on the **Coverage group** for a specific item, go to **Item coverage** > **General** > **Automatic firming time fence (days)**.
+- To overwrite the firming time fence defined on the **Coverage group** and **Item coverage** for a specific master plan, go to **Master plans** > **Time fence in days** > **Firming**, select **Yes**, and set the number of days. This will apply to all items included during the planning run.
 
-For master planning run with Planning Optimization there is an option to **Enable auto-firming**. When checkmarked the auto-firming process is performed according to auto-firming setup. Without checkmark in **Enable auto-firming**, or for planning started from the Net Requirements form, the auto-firming process is skipped.
+If auto-firming is enabled on a master planning run with Planning Optimization, the auto-firming process is performed according to the auto-firming setup. If it is not enabled, or in cases where planning is started from the **Net Requirements** page, the auto-firming process is skipped.
 
-Note that the date used to determine what planned orders to firm differs between the built-in Supply Chain Management planning engine and Planning Optimization. The built-in Supply Chain Management planning engine use **Requirement date** (end date) from planned orders to determine what planned orders to firm. Planning Optimization use the **Order date** (start date).
+> [!NOTE]
+> The date used to determine which planned orders to firm differs between the built-in Supply Chain Management planning engine and Planning Optimization. The built-in Supply Chain Management planning engine uses **Requirement date** (end date) from planned orders to determine what planned orders to firm. Planning Optimization use the **Order date** (start date). See below for more details.
 
-**Built-in Supply Chain Management planning engine**
+   - **Built-in Supply Chain Management planning engine**
 
-- Auto firming based is on **Requirements date** (end date).
-- You need the firming time fence to be longer than your lead time to ensure that orders are firmed (released) in due time.
-- If you want to firm all orders that needs to start this week, you need to have a firming time fence of: lead time + one week.
+      - Auto-firming is based on the **Requirements date** (end date).
+      - The firming time fence must be longer than the lead time to ensure that orders are firmed in due time.
+      - If you want to firm all orders that need to start this week, you must have a firming time fence of lead time plus one week.
 
-**Planning Optimization**
+   - **Planning Optimization**
 
-- Auto firming is based on **Order date** (start date).
-- With **Order date** (start date) triggering the firming, you don't have to consider lead time as part of the firming time fence.
-- If you want to firm all orders that needs to start this week, you need to have a firming time fence of one week.
+      - Auto-firming is based on order date (start date).
+      - With order date (start date) triggering the firming, you don't have to consider lead time as part of the firming time fence.
+      - If you want to firm all orders that need to start this week, you need to have a firming time fence of one week.
 
-**Note:** Automatic firming of a planned purchase order can occur only if the item is associated with a vendor.
+> [!NOTE]
+> Automatic firming of a planned purchase order can occur only if the item is associated with a vendor.
