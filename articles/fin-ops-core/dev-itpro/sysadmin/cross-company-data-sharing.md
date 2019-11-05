@@ -5,7 +5,7 @@ title: Cross-company data sharing
 description: This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment.
 author: aprilolson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -90,7 +90,7 @@ Cross-company data sharing isn't supported for the following scenarios:
 -   Master data management
 
 ## Customer and vendor master data sharing
-Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. This feature is available for customers on version 8.0 and later on an application basis. If you would like to be conisidered for this feature, complete the following survey and contact product support, [Data sharing application](https://aka.ms/MSDYN365FODataSharing).
+Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. This feature is available for customers on version 8.0 and later. If you would like to be considered for this feature, complete the following survey and contact Support, [Data sharing application](https://aka.ms/MSDYN365FODataSharing).
 
 > [!NOTE]
 > Default dimensions set up against a customer or vendor cannot be shared across companies. When configuring the customer or vendor record for cross-company data sharing, the **DefaultDimension** field is disabled, and cannot be included in the data sharing policy.
