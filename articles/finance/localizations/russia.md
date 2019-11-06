@@ -114,6 +114,7 @@ This topic provides information about functionality that supports Russian regula
 - [Registration IDs(emea-registration-ids.md)
 - [Set up officials](rus-officials.md)
 - [Company divisions](rus-company-divisions.md)
+- [Russian address formats and import from FIAS](rus-russian-address-format-and-import-from-FIAS.md)
 
 ## Deferrals
 

@@ -2343,6 +2343,8 @@
             href: localizations/rus-officials.md 
           - name: Company divisions
             href: localizations/rus-company-divisions.md
+          - name: Russian address formats and import from FIAS
+            href: localizations/rus-russian-address-format-and-import-from-FIAS.md
         - name: Deferrals
           items:
           - name: Set up deferrals
