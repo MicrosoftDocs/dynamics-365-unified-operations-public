@@ -1,0 +1,64 @@
+---
+# required metadata
+
+title: MyLeaveRequests Entity
+description: This topic provides a reference for the MyLeaveRequests entity 
+author: gboyko
+manager: AnnBe
+ms.date: 11/15/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-talent
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form: 
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: 
+ms.search.scope: Talent, Core
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: gboyko
+ms.search.validFrom: 2019-11-15
+ms.dyn365.ops.version: Talent
+
+---
+
+# MyLeaveRequests Entity
+
+The MyLeaveRequests entity provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.
+
+## Key
+
+  | Property Name | Data Type |
+  |---------------|-----------|
+  | dataAreaId    | String    |
+  | RequestId     | String    |
+  | LeaveType     | String    |
+  | LeaveDate     | Date      |
+  
+## Properties
+
+  | Property Name     | Data Type | Required |
+  |-------------------|-----------|----------|
+  | dataAreaId        | String    | [x]      |
+  | RequestId         | String    | [x]      |
+  | LeaveType         | String    | [x]      |
+  | LeaveDate         | Date      | [x]      |
+  | ReasonCodeId      | String    | [ ]      |
+  | PersonnelNumber   | String    | [x]      |
+  | RequestDate       | Date      | [x]      |
+  | Comment           | String    | [ ]      |
+  | Status            | Enum      | [x]      |
+  | Amount            | Real      | [ ]      |
+  | HalfDayDefinition | Enum      | [ ]      |
+
+## Actions
+
+ | Action Name           | Description                                     |
+ |-----------------------|-------------------------------------------------|
+ | [submit](submit.md)   | Submit the request to be processed by workflow. |

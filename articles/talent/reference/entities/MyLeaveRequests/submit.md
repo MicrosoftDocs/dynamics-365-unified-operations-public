@@ -51,24 +51,24 @@ One of the following permissions is required to call this application programmin
 ## HTTPS request
 
 <!-- { "blockType": "ignored" } -->
-```https
+```HTTP
 POST https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/MyLeaveRequests(RequestId='{requestId}', LeaveType='{leaveType}', LeaveDate={leaveDate}, dataAreaId={dataArea})/Microsoft.Dynamics.DataEntities.submit?cross-company=true
 ```
 
 The request conforms to OData standards, and the {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.
 
-## Request headers
+### Request headers
 
 | Header         | Value                     |
 |----------------|---------------------------|
 | Authorization  | Bearer {token} (required) |
 | Content-Type   | application/json          |
 
-## Request body
+### Request body
 
 Don't supply a request body for this method.
 
-## Response
+### Response
 
 A successful response is always a **204 No Content** response.
 
