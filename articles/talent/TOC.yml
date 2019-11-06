@@ -442,7 +442,7 @@
   - name: Entity API Reference
     items:
       - name: Authentication
-        href: ../odata-api-authentication.md
+        href: reference/entities/odata-api-authentication.md
       - name: MyLeaveRequests
         items:
         - name: Overview
