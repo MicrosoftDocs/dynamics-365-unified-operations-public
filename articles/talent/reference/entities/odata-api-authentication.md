@@ -147,7 +147,7 @@ namespace TalentODataPoC
             Console.WriteLine(talentNamespaceUri);
             Console.WriteLine();
 
-            // call the OData service to get Title data from Talent
+            // call the OData service to get JobType data from Talent
             var resultOdata = await client.GetAsync(talentNamespaceUri + "data/JobTypes");
             s = await resultOdata.Content.ReadAsStringAsync();
             Console.WriteLine(s);
