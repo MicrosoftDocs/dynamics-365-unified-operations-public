@@ -444,9 +444,9 @@
       - name: MyLeaveRequests
         items:
         - name: Overview
-        href: reference/entities/MyLeaveRequests/MyLeaveRequests-overview.md
+          href: reference/entities/MyLeaveRequests/MyLeaveRequests-overview.md
         - name: Submit to workflow
-        href: reference/entities/MyLeaveRequests/submit.md
+          href: reference/entities/MyLeaveRequests/submit.md
   - name: Troubleshoot Talent
     items:
     - name: Optimize performance with auto cleanup tasks
