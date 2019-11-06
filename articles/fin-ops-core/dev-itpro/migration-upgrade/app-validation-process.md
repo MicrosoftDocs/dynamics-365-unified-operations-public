@@ -40,7 +40,8 @@ This topic describes the tasks that you might have to perform in Finance and Ope
 
 ## Document management
 
-If you use Document management, existing documents or attachments that are stored in the database must be migrated to Microsoft Azure Blob storage. To complete this migration, use the **Migrate files** button on the **Migrate files** tab on the **Document management parameters** page.
+If you use Document management, existing documents or attachments that are stored in the database should be migrated to Microsoft Azure Blob storage. To complete this migration, use the **Migrate files** button on the **Migrate files** tab on the **Document management parameters** page. This operation is not critical as document management can still access file stored in the database, but the files can take up considerable database storage size and the retrieval is less efficient. The file migration process will migrate all possible database files to Microsoft Azure Blob storage, reporting on any failures and continuing. If any errors are reported, attempt running the file migration process again.
+If the file migration process isn’t able to complete with no failures, then it’s likely due to corruption of the file stored in the database, which Microsoft is unable to repair. If this is the case, you can request a non-business critical support case be opened to enable conversion of the attachments into note records which will retain any previous notes as well as the names of the files that were stored in the database. Note that the files themselves cannot be recovered.
 
 ## Print management
 
