@@ -151,8 +151,9 @@ The VAT restoration process has two steps:
 Use the **VAT restoring journal** page to create, approve, and cancel VAT
 restoration amounts.
 
-    >   **Note:** When you restore VAT amounts for fixed assets, the fixed asset
-    >   depreciation for the period must be calculated and posted.
+> [!NOTE]
+> When you restore VAT amounts for fixed assets, the fixed asset
+depreciation for the period must be calculated and posted.
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> VAT restoring
     journal**.
