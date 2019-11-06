@@ -91,6 +91,17 @@ restoration.
 
 2.  On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT
     restoration** section, set the following fields
+    
+| Field                             | Description                                                                                                                    |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Revenue calculation method        | Select the method that is used for revenue calculation: 
+                                      -   **All** – All customer invoices are included in     
+                                      the revenue calculation.                            
+                                      -   **Indirect** – Only customer invoices that don't    
+                                      have a direct relation to the purchase invoice are  
+                                      included in the revenue calculation.                                                                                            |
+
+
 
 | Field                      | Description                                             |
 |----------------------------|---------------------------------------------------------|
