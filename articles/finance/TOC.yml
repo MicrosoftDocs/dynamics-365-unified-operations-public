@@ -2869,8 +2869,10 @@
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
-       - name: Tutorials
-         items: 
+        - name: Tutorials
+          items: 
+          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
        - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
