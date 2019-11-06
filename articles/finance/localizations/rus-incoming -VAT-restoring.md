@@ -78,9 +78,10 @@ fixed asset × Residual value of the fixed asset, excluding revaluation from the
 accounting value model ÷ Acquisition cost of the fixed asset from the accounting
 value model.
 
-       **Note:** If a fixed asset was used for export or non-taxable activities during
-       the period, and it was written off, the VAT amount that must be restored is
-       calculated based on the write-off.
+> [!NOTE]
+> If a fixed asset was used for export or non-taxable activities during
+the period, and it was written off, the VAT amount that must be restored is
+calculated based on the write-off.
 
 Setup
 -----
