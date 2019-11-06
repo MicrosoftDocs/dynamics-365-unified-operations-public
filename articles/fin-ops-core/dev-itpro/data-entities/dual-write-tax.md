@@ -34,8 +34,6 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
 Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax. It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.
 
 ## Templates
@@ -54,8 +52,6 @@ Withholding tax groups	 | msdyn\_withholdingtaxgroups.md
 Tax Ledger Account Group | msdyn\_taxpostinggroups	
 
 [!include [banner](../includes/dual-write-symbols.md)]
-
-[!include [Tax codes](dual-write/TaxCodes-msdyn-taxcodes.md)]
 
 [!include [Tax groups](dual-write/TaxGroupEntity-msdyn-taxgroups.md)]
 
