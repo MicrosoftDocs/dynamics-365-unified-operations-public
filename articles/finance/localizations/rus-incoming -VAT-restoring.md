@@ -99,12 +99,15 @@ restoration.
 | Field                      | Description                                             |
 |----------------------------|---------------------------------------------------------|
 | Revenue calculation method | Select the method that is used for revenue calculation: |
+|                            | -   **All** – All customer invoices are included in     |
+|                            |     the revenue calculation.                            |
+|                            | -   **Indirect** – Only customer invoices that don't    |
+|                            |     have a direct relation to the purchase invoice are  |
+|                            |     included in the revenue calculation.                |
+|----------------------------|---------------------------------------------------------|
 | VAT restoring method       | Select the method that is used for VAT restoration:     |
 
--   **All** – All customer invoices are included in the revenue calculation.
 
--   **Indirect** – Only customer invoices that don't have a direct relation to
-    the purchase invoice are included in the revenue calculation.
 
 -   **Mixed** – The VAT restoration amount is calculated differently, depending
     on whether a direct connection with outgoing invoices is determined for
