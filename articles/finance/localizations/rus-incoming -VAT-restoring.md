@@ -38,15 +38,15 @@ Restoring VAT when fixed assets are used in VAT-free or export sales activities
     or non-taxable sales occurred. The VAT amount that must be restored is
     calculated by using the following formula:
 
-    >   VAT amount to restore = VAT amount that was deducted from the purchase
-    >   of the fixed asset × Export (non-taxable) ratio
+    VAT amount to restore = VAT amount that was deducted from the purchase
+    of the fixed asset × Export (non-taxable) ratio
 
-    >   In this calculation, the export (non-taxable) ratio depends on the
-    >   depreciation method that is used for the fixed asset:
+    In this calculation, the export (non-taxable) ratio depends on the
+    depreciation method that is used for the fixed asset:
 
--   For fixed assets that use the **Product output/mileage** depreciation
-    method, the export (non-taxable) ratio is calculated by using the following
-    formula:
+    -   For fixed assets that use the **Product output/mileage** depreciation
+        method, the export (non-taxable) ratio is calculated by using the following
+        formula:
 
     >   Export (non-taxable) ratio = **Output/run export** (or **Output/run
     >   nontaxable**) value of the current period ÷ Difference between the
