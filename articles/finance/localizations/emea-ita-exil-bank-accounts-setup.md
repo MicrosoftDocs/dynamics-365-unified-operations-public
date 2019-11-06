@@ -45,7 +45,7 @@ This article explains how to save time avoiding manual entering and simplify the
 Import the list of banks via **Bank groups** entity using **Data management** framework.
 For more information, see [Data import and export jobs overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
 
-The source data for import can be presented as **Excel** file with the following structure:
+The source data for banks import can be presented as **Excel** file with the following structure (columns):
 
 | Column names        |
 |---------------------|
