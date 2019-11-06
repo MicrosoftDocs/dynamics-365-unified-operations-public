@@ -162,7 +162,7 @@ depreciation for the period must be calculated and posted.
     invoice-factures that VAT amounts must be restored for in the current
     period.
 
-![](media/1.%20VAT%20restoring%20journal.jpg)
+    ![](media/1.%20VAT%20restoring%20journal.jpg)
 
 2.  In the **Date in the period** field, select the date in the reporting period
     to show the VAT details for.
@@ -270,8 +270,9 @@ depreciation for the period must be calculated and posted.
                      is calculated by using the following formula:
 
                      Nontaxable, % = Tax-exempt revenue ÷ Total revenue
-
-                >   **Note:** When revenue amounts are calculated, VAT amounts are excluded.
+                
+                 > [!NOTE]
+                 > When revenue amounts are calculated, VAT amounts are excluded.
 
              -   **VAT** – The fields in this section show the total VAT amounts that must be
                  restored on export or non-taxable operations, and on fixed assets that
@@ -282,16 +283,17 @@ depreciation for the period must be calculated and posted.
                  including amounts for fixed assets that are used in export or non-taxable
                  operations.
 
-![](media/2%20VAT%20restoring%20journal%20totals.jpg) 
+            ![](media/2%20VAT%20restoring%20journal%20totals.jpg) 
 
        -   Select **Revenue calculation** to open the **Revenue calculation** dialog
            box, where you can view the list of customer invoices in the current period.
            The list is generated based on the value of the **Revenue calculation
            method** field on the **General ledger parameters** page.
 
-![](media/3%20Revenue%20calculation.jpg)
-          For each invoice in the **Revenue calculation** dialog box, you can perform
-          the following actions:
+           ![](media/3%20Revenue%20calculation.jpg)
+           
+           For each invoice in the **Revenue calculation** dialog box, you can perform
+           the following actions:
           -   Review revenue amounts in the **Total revenue**, **Export**, **Domestic
               market**, and **Not liable to VAT** fields.
 
