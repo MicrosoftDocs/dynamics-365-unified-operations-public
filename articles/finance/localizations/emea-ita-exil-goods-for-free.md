@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Separate tax invoices for goods delivered for free
-description: Separate tax invoices for goods delivered for free.
+title: Tax invoice for goods delivered for free
+description: Tax invoice for goods delivered for free
 author: ilkond
 manager: AnnBe
 ms.date: 10/29/2019
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# Separate tax invoices for goods delivered for free
+# Tax invoice for goods delivered for free
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,7 +37,7 @@ In Italy, ...
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Separate tax invoices for goods delivered for free** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Tax invoice for goods delivered for free** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Set up...
 
