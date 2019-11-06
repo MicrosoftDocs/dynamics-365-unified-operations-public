@@ -95,11 +95,8 @@ restoration.
 | Field                             | Description                                                                                                                    |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Revenue calculation method        | Select the method that is used for revenue calculation: 
-                                      -   **All** – All customer invoices are included in     
-                                      the revenue calculation.                            
-                                      -   **Indirect** – Only customer invoices that don't    
-                                      have a direct relation to the purchase invoice are  
-                                      included in the revenue calculation.                                                                                            |
+-   **All** – All customer invoices are included in the revenue calculation.                            
+-   **Indirect** – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation.                        |
 
 
 
