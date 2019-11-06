@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Platform Update31
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server. Instead, relative scheduling priorities are used to determine the order that tasks are run in across available batch servers. This feature is currently available to customers on a restricted basis.
-
-A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. It's used to declare relative priorities of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. The priority classification is used to determine the processing order when a job is scheduled for processing. **Reserved capacity** represents the highest priority.
-
-Additional functionality is planned for future updates.
+In Platform update 31, you can turn on the **Batch priority-based scheduling** feature in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md). Priority-based scheduling decouples batch groups from the batch server. Instead, relative scheduling priorities are used to determine the order that tasks are run in across available batch servers.
 
 > [!IMPORTANT]
 > This feature is available only in a restricted preview as part of Platform update 31.
+
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. IThe scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Reserved capacity** represents the highest priority.
+
+Additional functionality is planned for future updates.
 
 Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
 
@@ -80,7 +80,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 7. Optional: Set the **Critical job** option to **Yes**. For more information, see [Import users in bulk](tasks/import-bulk-users.md) or [Configure the Workflow message processing batch job as critical](../../fin-ops/organization-administration/workflow-batch-job-critical.md).
 8. In the **Batch group** field, select the batch group for the job.
 9. Optional: Set the **Scheduling priority is overridden** option to **Yes**, to make the **Job scheduling priority** field available.
-10. In the **Job scheduling priority** field, select a default priority that differs from the default priority that is defined for the batch group.
+10. Optional: In the **Job scheduling priority** field, select a default priority that differs from the default priority that is defined for the batch group.
 11. Optional: In the **Active period** field, select the time range when the batch job can be run. For more information, see [Active batch periods](activeperiod.md).
 12. Select **Save**.
 
