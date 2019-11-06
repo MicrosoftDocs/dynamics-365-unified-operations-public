@@ -2315,6 +2315,12 @@
             href: localizations/rus-cash-flow.md
           - name: Allocation of miscellaneous charges in proportion to weight and volume
             href: localizations/rus-miscellaneous-charges.md
+        - name: Inventory
+          items:
+          - name: Goods in transit from vendor
+            href: localizations/rus-goods-transit-vendor.md
+          - name: Customs declaration numbers
+            href: localizations/rus-custom-declaration-number.md
         - name: Reporting
           items:
           - name: Financial reporting
