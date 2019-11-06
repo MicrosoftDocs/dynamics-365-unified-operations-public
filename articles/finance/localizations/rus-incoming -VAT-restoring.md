@@ -321,7 +321,7 @@ depreciation for the period must be calculated and posted.
               when export is confirmed, or when the deadline for confirmation will expire
               but export isn't confirmed. This information is also used in the VAT
               declaration. For more information, see [VAT declaration
-              (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-     declaration).
+              (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 
 ### Approve the VAT restoring journal
 
