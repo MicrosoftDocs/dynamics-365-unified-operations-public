@@ -2,10 +2,10 @@
 # required metadata
 
 title: Connect a custom help site
-description: Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane.  
-author: margoc
+description: Microsoft has provided a toolkit with sample code that describe how you can create and connect custom help to the Help pane.  
+author: edupont04
 manager: AnnBe
-ms.date: 09/11/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: edupont
 ms.search.validFrom: 2018-11-16
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -34,15 +34,19 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has provided a white paper and sample code that describe how to create and connect custom help to the Help pane.
+Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience, including adding custom Help to the in-product Help pane.  
 
-The process for setting up a custom Help solution consists of publishing content as HTML, deploying a site and extending the help pane to connect to the site.
+Microsoft has provided a toolkit with sample code to help you deploy and connect custom Help to the Help pane. In [Deploying custom Help](../../dev-itpro/help/deploy.md), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, make the content searchable, and extending the Help pane to connect to the website.  
 
 ## Resources
 
-- [Create Custom Help for Finance and Operations apps (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
-- [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)
+<!--- [Create Custom Help for Finance and Operations apps (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)-->
+- [Deploying custom Help](../../dev-itpro/help/deploy.md)  
+- [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
 
 ## See also
 
-[Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Deploying custom Help](../../dev-itpro/help/deploy.md)  
+[Example of Deploying Custom Help on Azure](../../dev-itpro/help/walkthrough-help-azure.md)  
+[Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
+[Connect the Help system](help-connect.md)  
