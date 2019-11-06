@@ -45,17 +45,17 @@ The MyLeaveRequests entity provides the list of Leave Requests in the system, sc
 
   | Property Name     | Data Type | Required |
   |-------------------|-----------|----------|
-  | dataAreaId        | String    | - [x]    |
-  | RequestId         | String    | - [x]    |
-  | LeaveType         | String    | - [x]    |
-  | LeaveDate         | Date      | - [x]    |
-  | ReasonCodeId      | String    | - [ ]    |
-  | PersonnelNumber   | String    | - [x]    |
-  | RequestDate       | Date      | - [x]    |
-  | Comment           | String    | - [ ]    |
-  | Status            | Enum      | - [x]    |
-  | Amount            | Real      | - [ ]    |
-  | HalfDayDefinition | Enum      | - [ ]    |
+  | dataAreaId        | String    | X        |
+  | RequestId         | String    | X        |
+  | LeaveType         | String    | X        |
+  | LeaveDate         | Date      | X        |
+  | ReasonCodeId      | String    |          |
+  | PersonnelNumber   | String    | X        |
+  | RequestDate       | Date      | X        |
+  | Comment           | String    |          |
+  | Status            | Enum      | X        |
+  | Amount            | Real      |          |
+  | HalfDayDefinition | Enum      |          |
 
 ## Actions
 
