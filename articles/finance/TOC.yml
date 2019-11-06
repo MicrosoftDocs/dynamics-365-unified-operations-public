@@ -2315,6 +2315,12 @@
             href: localizations/rus-cash-flow.md
           - name: Allocation of miscellaneous charges in proportion to weight and volume
             href: localizations/rus-miscellaneous-charges.md
+        - name: Inventory
+          items:
+          - name: Goods in transit from vendor
+            href: localizations/rus-goods-transit-vendor.md
+          - name: Customs declaration numbers
+            href: localizations/rus-custom-declaration-number.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -2337,6 +2343,8 @@
             href: localizations/rus-officials.md 
           - name: Company divisions
             href: localizations/rus-company-divisions.md
+          - name: Russian address formats and import from FIAS
+            href: localizations/rus-russian-address-format-and-import-from-FIAS.md
         - name: Deferrals
           items:
           - name: Set up deferrals
@@ -2871,6 +2879,10 @@
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Tutorials
+          items: 
+          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
