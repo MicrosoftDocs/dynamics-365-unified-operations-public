@@ -91,14 +91,14 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 3. In the **Company accounts** field, select the company that the task will be run in.
 4. In the **Class name** field, select the process to run.
 5. Select **Save**.
-6. Expand the **Batch task detail** section to add more settings for the batch task, or to add constraints.
+6. Expand the **Batch task detail** FastTab to add more settings for the batch task, or to add constraints.
 7. On the **General** tab, set the **Ignore task failure** option to **Yes** to specify that failure of the task should not cause the job to fail.
 8. In the **Maximum retries** field, specify the number of times that a task should be retried before it's considered to have failed.
 9. Set the **Private** option to **Yes** if the task should be run only by the user who created the job. This option is applicable only to client tasks.
-10. On the **Constraints** tab, select **New** to define a constraint between tasks.
+10. On the **Constraints** tab, select **New** if the execution of the selected task should be dependent on the status of a preceding task for the job.
 11. In the **Task ID** field, select the preceding task.
 12. In the **Expected status** field, select the status that the preceding task must reach before the current task can run.
 13. Select **Save**.
 
 > [!NOTE]
-> If you enter more than one condition, and if all conditions must be met before the dependent task can run, select **All** as the condition type. If the dependent task can run after any of the conditions has been met, select **Any** as the condition type.
+> If you enter more than one condition/constraint, and if all conditions must be met before the dependent task can run, select **All** as the condition type. If the dependent task can run after any of the conditions has been met, select **Any** as the condition type.
