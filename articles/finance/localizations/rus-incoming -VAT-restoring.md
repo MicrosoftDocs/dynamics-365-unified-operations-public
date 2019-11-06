@@ -294,37 +294,38 @@ depreciation for the period must be calculated and posted.
            
            For each invoice in the **Revenue calculation** dialog box, you can perform
            the following actions:
-          -   Review revenue amounts in the **Total revenue**, **Export**, **Domestic
-              market**, and **Not liable to VAT** fields.
-
-          >   **Note:** For a domestic invoice, the **Sales tax code** field uses the
-          >   **Standard VAT** or **Reduced VAT** sales tax type. For an export
-          >   invoice, the **Sales tax code** field uses the **VAT 0%** sales tax
-          >   type. For a non-taxable invoice, the **Sales tax code** field is blank.
-          
-  
-          -   Select or clear the **Include** check box to include or exclude an invoice
-              from the calculation of revenue for the period.
+           
+             -   Review revenue amounts in the **Total revenue**, **Export**, **Domestic
+                 market**, and **Not liable to VAT** fields.
+                 > [!NOTE]
+                 > For a domestic invoice, the **Sales tax code** field uses the
+                 **Standard VAT** or **Reduced VAT** sales tax type. For an export
+                 invoice, the **Sales tax code** field uses the **VAT 0%** sales tax
+                 type. For a non-taxable invoice, the **Sales tax code** field is blank.
+           
+             -   Select or clear the **Include** check box to include or exclude an invoice
+                 from the calculation of revenue for the period.
               
-          -   When you've finished, select **OK**. Then, on the **VAT restoring journal**
-              page, select **Apply changes** to recalculate revenue amounts.
+             -   When you've finished, select **OK**. Then, on the **VAT restoring journal**
+                 page, select **Apply changes** to recalculate revenue amounts.
 
-      -   Select **VAT distribution** to open the **VAT distribution** dialog box,
-          where you can view a list of export sales invoices. For each invoice, the
-          system calculates the following information:
+       -   Select **VAT distribution** to open the **VAT distribution** dialog box,
+           where you can view a list of export sales invoices. For each invoice, the
+           system calculates the following information:
 
-        -   The amounts of VAT that were restored in the current period and
-            distributed to each export invoice
+            -   The amounts of VAT that were restored in the current period and
+                distributed to each export invoice
 
-        -   The share of export invoice revenue in the total export revenue amount
-            for the period
+            -   The share of export invoice revenue in the total export revenue amount
+                for the period
 
-![](media/4%20VAT%20distribution.jpg)
-            This information is required to define the VAT amount that must be deducted
-            when export is confirmed, or when the deadline for confirmation will expire
-            but export isn't confirmed. This information is also used in the VAT
-            declaration. For more information, see [VAT declaration
-            (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
+              ![](media/4%20VAT%20distribution.jpg)
+              
+              This information is required to define the VAT amount that must be deducted
+              when export is confirmed, or when the deadline for confirmation will expire
+              but export isn't confirmed. This information is also used in the VAT
+              declaration. For more information, see [VAT declaration
+              (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-     declaration).
 
 ### Approve the VAT restoring journal
 
@@ -339,11 +340,11 @@ Note the following information:
 -   After the VAT restoring journal is approved in the period, you can no longer
     perform the following actions:
 
-    -   Post customer invoices.
+      -   Post customer invoices.
 
-    -   Run the **Incoming VAT processing** periodic task.
+      -   Run the **Incoming VAT processing** periodic task.
 
-    -   Run the **Canceling processed VAT** periodic task.
+      -   Run the **Canceling processed VAT** periodic task.
 
 -   If the VAT restoring journal isn't created for the period, a warning message
     appears during sales book closing.
@@ -405,10 +406,11 @@ restoring journal** page.
 
     Processed factures are reflected in the sales book after it's updated.
 
-        >   **Note:** If there is processed outgoing VAT in the period, the system
-        >   doesn't allow you to cancel approvals by selecting **Restore VAT procedure
-        >   \> Cancel approval of the journal** on the **VAT restoring journal** page.
-        >   You must cancel outgoing VAT processing on the **Sales book (Canceling
-        >   processed VAT)** page (**Accounts receivable \> Periodic tasks \> Sales book
-        >   \> Canceling processed VAT**) and then cancel the approval of the VAT
-        >   restoring journal.
+    > [!NOTE]
+    > If there is processed outgoing VAT in the period, the system
+    doesn't allow you to cancel approvals by selecting **Restore VAT procedure
+    \> Cancel approval of the journal** on the **VAT restoring journal** page.
+    You must cancel outgoing VAT processing on the **Sales book (Canceling
+    processed VAT)** page (**Accounts receivable \> Periodic tasks \> Sales book
+    \> Canceling processed VAT**) and then cancel the approval of the VAT
+    restoring journal.
