@@ -162,9 +162,7 @@ depreciation for the period must be calculated and posted.
     invoice-factures that VAT amounts must be restored for in the current
     period.
 
-![](media/dd9b52e6bd814c33c633f79c917faa3f.jpg)
-
->   A screenshot of a social media post Description automatically generated
+![](media/1.%20VAT%20restoring%20journal.jpg)
 
 2.  In the **Date in the period** field, select the date in the reporting period
     to show the VAT details for.
@@ -284,14 +282,14 @@ depreciation for the period must be calculated and posted.
                  including amounts for fixed assets that are used in export or non-taxable
                  operations.
 
-![](media/59c2212894fc0a9f833cdbbea1f1c9fe.jpg) 
+![](media/2%20VAT%20restoring%20journal%20totals.jpg) 
 
        -   Select **Revenue calculation** to open the **Revenue calculation** dialog
            box, where you can view the list of customer invoices in the current period.
            The list is generated based on the value of the **Revenue calculation
            method** field on the **General ledger parameters** page.
 
-![](media/f9a2e0104f180c671aef9a5dcedeb7f1.jpg)
+![](media/3%20Revenue%20calculation.jpg)
           For each invoice in the **Revenue calculation** dialog box, you can perform
           the following actions:
           -   Review revenue amounts in the **Total revenue**, **Export**, **Domestic
@@ -319,9 +317,7 @@ depreciation for the period must be calculated and posted.
         -   The share of export invoice revenue in the total export revenue amount
             for the period
 
-![](media/151ad07686986eadec60ccdb46d2f565.jpg)
-
->   A screenshot of a cell phone Description automatically generated
+![](media/4%20VAT%20distribution.jpg)
             This information is required to define the VAT amount that must be deducted
             when export is confirmed, or when the deadline for confirmation will expire
             but export isn't confirmed. This information is also used in the VAT
