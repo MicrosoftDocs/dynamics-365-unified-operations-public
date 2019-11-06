@@ -224,7 +224,7 @@ depreciation for the period must be calculated and posted.
             VAT amount to restore (indirect) = VAT amount that is deducted in the
             current period × Export ratio (for the current period)
 
-       Note the following information:
+         Note the following information:
        
        -   The preceding formulas are valid for the **Mixed** VAT restoration method.
            For the **By factor** VAT restoration method, the calculation formula for
