@@ -1,7 +1,3 @@
----
-title: Restore incoming VAT - Deduct previously restored VAT
----
-
 Restore incoming VAT: Deduct previously restored VAT
 ====================================================
 
