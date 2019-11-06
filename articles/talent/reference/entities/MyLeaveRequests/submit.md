@@ -96,3 +96,14 @@ POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespac
 }
 ```
 
+## Validations and Error Messages
+
+As part of the call to the submit API, the service performs business logic validation prior to submission to ensure the leave request is in a valid state for submission. The possible error messages you may receive in the response if validations fail are:
+
+ - The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.
+ - Time off request in Completed state cannot be submitted.
+ - Unable to submit or save request as no changes have been made. Add or update the amount or the leave type and try again.
+ - The time off request entered contains one or more days with the same date and leave type as an existing pending request. Please recall the existing request to make changes.
+ - Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.
+ - Leave type '{LeaveTypeId}' requires a reason code. Select the appropriate type and reason code.
+ - The time off was not submitted successfully. The time off has been saved as a draft request.
