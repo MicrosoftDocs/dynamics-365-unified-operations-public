@@ -76,11 +76,11 @@ formula:
 VAT amount to restore = VAT amount that was deducted from the purchase of the
 fixed asset × Residual value of the fixed asset, excluding revaluation from the
 accounting value model ÷ Acquisition cost of the fixed asset from the accounting
-value model
+value model.
 
-**Note:** If a fixed asset was used for export or non-taxable activities during
-the period, and it was written off, the VAT amount that must be restored is
-calculated based on the write-off.
+    >   **Note:** If a fixed asset was used for export or non-taxable activities during
+    >   the period, and it was written off, the VAT amount that must be restored is
+    >   calculated based on the write-off.
 
 Setup
 -----
@@ -147,8 +147,8 @@ The VAT restoration process has two steps:
 Use the **VAT restoring journal** page to create, approve, and cancel VAT
 restoration amounts.
 
-**Note:** When you restore VAT amounts for fixed assets, the fixed asset
-depreciation for the period must be calculated and posted.
+    >   **Note:** When you restore VAT amounts for fixed assets, the fixed asset
+    >   depreciation for the period must be calculated and posted.
 
 1.  Go to **Accounts receivable \> Periodic tasks \> Sales book \> VAT restoring
     journal**.
@@ -191,7 +191,6 @@ depreciation for the period must be calculated and posted.
         incoming invoice, the **Direct VAT 18%**, **Direct VAT 10%**, **Indirect
         VAT 18%**, and **Indirect VAT 10%** fields show the VAT amounts that
         must be restored for goods. The **FA VAT 18%** and **FA VAT 10%** fields
-       - 
         show the VAT amounts that must be restored for fixed assets.
 
     -   The lower part of the **VAT restoring journal** page shows the lines of
@@ -269,18 +268,19 @@ depreciation for the period must be calculated and posted.
 
                      Nontaxable, % = Tax-exempt revenue ÷ Total revenue
 
-             >   **Note:** When revenue amounts are calculated, VAT amounts are excluded.
+                >   **Note:** When revenue amounts are calculated, VAT amounts are excluded.
 
-            -   **VAT** – The fields in this section show the total VAT amounts that must be
-                restored on export or non-taxable operations, and on fixed assets that
-                aren't fully depreciated and are written off.
+             -   **VAT** – The fields in this section show the total VAT amounts that must be
+                 restored on export or non-taxable operations, and on fixed assets that
+                 aren't fully depreciated and are written off.
 
-            -   **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The
-                fields in these sections show the totals for direct and indirect VAT,
-                including amounts for fixed assets that are used in export or non-taxable
-                operations.
+             -   **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The
+                 fields in these sections show the totals for direct and indirect VAT,
+                 including amounts for fixed assets that are used in export or non-taxable
+                 operations.
 
-![](media/59c2212894fc0a9f833cdbbea1f1c9fe.jpg)
+![](media/59c2212894fc0a9f833cdbbea1f1c9fe.jpg) 
+
        -   Select **Revenue calculation** to open the **Revenue calculation** dialog
            box, where you can view the list of customer invoices in the current period.
            The list is generated based on the value of the **Revenue calculation
@@ -296,32 +296,32 @@ depreciation for the period must be calculated and posted.
           >   **Standard VAT** or **Reduced VAT** sales tax type. For an export
           >   invoice, the **Sales tax code** field uses the **VAT 0%** sales tax
           >   type. For a non-taxable invoice, the **Sales tax code** field is blank.
+          
+  
+          -   Select or clear the **Include** check box to include or exclude an invoice
+              from the calculation of revenue for the period.
+              
+          -   When you've finished, select **OK**. Then, on the **VAT restoring journal**
+              page, select **Apply changes** to recalculate revenue amounts.
 
--   Select or clear the **Include** check box to include or exclude an invoice
-    from the calculation of revenue for the period.
+      -   Select **VAT distribution** to open the **VAT distribution** dialog box,
+          where you can view a list of export sales invoices. For each invoice, the
+          system calculates the following information:
 
--   When you've finished, select **OK**. Then, on the **VAT restoring journal**
-    page, select **Apply changes** to recalculate revenue amounts.
+        -   The amounts of VAT that were restored in the current period and
+            distributed to each export invoice
 
--   Select **VAT distribution** to open the **VAT distribution** dialog box,
-    where you can view a list of export sales invoices. For each invoice, the
-    system calculates the following information:
-
-    -   The amounts of VAT that were restored in the current period and
-        distributed to each export invoice
-
-    -   The share of export invoice revenue in the total export revenue amount
-        for the period
+        -   The share of export invoice revenue in the total export revenue amount
+            for the period
 
 ![](media/151ad07686986eadec60ccdb46d2f565.jpg)
 
 >   A screenshot of a cell phone Description automatically generated
-
->   This information is required to define the VAT amount that must be deducted
->   when export is confirmed, or when the deadline for confirmation will expire
->   but export isn't confirmed. This information is also used in the VAT
->   declaration. For more information, see [VAT declaration
->   (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
+            This information is required to define the VAT amount that must be deducted
+            when export is confirmed, or when the deadline for confirmation will expire
+            but export isn't confirmed. This information is also used in the VAT
+            declaration. For more information, see [VAT declaration
+            (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 
 ### Approve the VAT restoring journal
 
@@ -395,17 +395,17 @@ restoring journal** page.
 8.  To process outgoing VAT, go to **Accounts receivable \> Periodic tasks \>
     Sales book \> Outgoing VAT processing**.
 
-    >   When you post the outgoing VAT processing, the system generates tax and
-    >   ledger transactions, and adds them to the **VAT processing log** page
-    >   (**Accounts receivable \> Periodic tasks \> Sales book \> VAT processing
-    >   log**).
+    When you post the outgoing VAT processing, the system generates tax and
+    ledger transactions, and adds them to the **VAT processing log** page
+    (**Accounts receivable \> Periodic tasks \> Sales book \> VAT processing
+    log**).
 
->   Processed factures are reflected in the sales book after it's updated.
+    Processed factures are reflected in the sales book after it's updated.
 
->   **Note:** If there is processed outgoing VAT in the period, the system
->   doesn't allow you to cancel approvals by selecting **Restore VAT procedure
->   \> Cancel approval of the journal** on the **VAT restoring journal** page.
->   You must cancel outgoing VAT processing on the **Sales book (Canceling
->   processed VAT)** page (**Accounts receivable \> Periodic tasks \> Sales book
->   \> Canceling processed VAT**) and then cancel the approval of the VAT
->   restoring journal.
+        >   **Note:** If there is processed outgoing VAT in the period, the system
+        >   doesn't allow you to cancel approvals by selecting **Restore VAT procedure
+        >   \> Cancel approval of the journal** on the **VAT restoring journal** page.
+        >   You must cancel outgoing VAT processing on the **Sales book (Canceling
+        >   processed VAT)** page (**Accounts receivable \> Periodic tasks \> Sales book
+        >   \> Canceling processed VAT**) and then cancel the approval of the VAT
+        >   restoring journal.
