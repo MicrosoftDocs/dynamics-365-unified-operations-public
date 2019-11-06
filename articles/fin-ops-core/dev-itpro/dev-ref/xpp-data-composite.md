@@ -44,7 +44,9 @@ An *array* is a variable that contains a list of items that have the same data t
 - **Fixed-length arrays** – These arrays can hold the number of items that is specified in the declaration. Fixed-length arrays are declared like dynamic arrays, but a length option is included in the brackets.
 - **Partly on disk arrays** – These arrays are declared as either dynamic arrays or fixed-length arrays that have an extra option that declares how many items should be held in memory. The other items are stored on disk and are automatically loaded when they are referenced.
 
-X++ supports only one-dimensional arrays. However, you can mimic the behavior of multiple array indexes. (For more information, see the [Multiple array indexes](#multiple-array-indexes) section). Variables in objects and tables can be declared as arrays. For example, this functionality is used in address lines in the standard application. An array collection class lets you store objects in an array. Array indexes begin at 1. The first item in the array is referenced as \[1\], the second item is referenced as \[2\], and so on. The following syntax is used to access an array element: **ArrayItemReference = ArrayVariable \[ Index \]**. In this syntax, **ArrayVariable** is the identifier of the array, and **Index** is the number of the array element. **Index** can be an integer expression. Item zero \[0\] is used to clear the array. If a value is assigned to index 0 in an array, all elements in the array are reset to their default value.
+X++ supports only one-dimensional arrays. However, you can mimic the behavior of multiple array indexes. (For more information, see the [Multiple array indexes](#multiple-array-indexes) section). Variables in objects and tables can be declared as arrays. For example, this functionality is used in address lines in the standard application. An array collection class lets you store objects in an array. 
+
+Array indexes begin at 1. The first item in the array is referenced as \[1\], the second item is referenced as \[2\], and so on. The following syntax is used to access an array element: **ArrayItemReference = ArrayVariable \[ Index \]**. In this syntax, **ArrayVariable** is the identifier of the array, and **Index** is the number of the array element. **Index** can be an integer expression. Item zero \[0\] is used to clear the array. If a value is assigned to index 0 in an array, all elements in the array are reset to their default value.
 
 ### Array examples
 
@@ -258,7 +260,9 @@ Previously, all member variables that were defined in a class were protected. Yo
 -   **protected** – The member variable can be used in the class where it’s defined and all subclasses of that class.
 -   **public** – The member variable can be used anywhere. It’s visible outside the confines of the class hierarchy where it’s defined.
 
-By default, member variables that aren’t adorned with an explicit modifier are still protected. However, as a best practice, you should explicitly specify the visibility. As we described earlier, when a member variable is defined as **public**, it can be accessed outside the class where it’s defined. In this case, you must specify a qualifier that designates the object that is hosting the variable. To specify the qualifier, use the dot notation, as you do for method calls. In the following example, **field1** is accessed by using the explicit **this** qualifier. In this case, it might not be a good idea to make a member variable public, because that approach exposes the internal workings of the class to its consumers, and therefore creates a strong dependency between the class implementation and its consumers. You should always try to depend only on a contract, not an implementation.
+By default, member variables that aren’t adorned with an explicit modifier are still protected. However, as a best practice, you should explicitly specify the visibility. As we described earlier, when a member variable is defined as **public**, it can be accessed outside the class where it’s defined. In this case, you must specify a qualifier that designates the object that is hosting the variable. To specify the qualifier, use the dot notation, as you do for method calls. 
+
+In the following example, **field1** is accessed by using the explicit **this** qualifier. In this case, it might not be a good idea to make a member variable public, because that approach exposes the internal workings of the class to its consumers, and therefore creates a strong dependency between the class implementation and its consumers. You should always try to depend only on a contract, not an implementation.
 
     public class AnotherClass3
     {
@@ -303,7 +307,9 @@ By default, member variables that aren’t adorned with an explicit modifier are
 
 ### Class elements in Application Explorer
 
-Under most class nodes in Application Explorer, there are two special nodes: a **classDeclaration** node and a **new** node. A **classDeclaration** always contains the X++ **class** keyword. Additional keywords, such as **extends**, can be included to modify the class. This node can also contain declarations of member variables. The member variables can't be initialized to a value in **classDeclaration**, and they can't be static. In the following example, the variables **m\_priority** and **m\_rectangle** are members of the class.
+Under most class nodes in Application Explorer, there are two special nodes: a **classDeclaration** node and a **new** node. A **classDeclaration** always contains the X++ **class** keyword. Additional keywords, such as **extends**, can be included to modify the class. This node can also contain declarations of member variables. The member variables can't be initialized to a value in **classDeclaration**, and they can't be static. 
+
+In the following example, the variables **m\_priority** and **m\_rectangle** are members of the class.
 
     // An example of a classDeclaration.
     public class YourDerivedClass extends YourBaseClass
@@ -316,7 +322,9 @@ Under most class nodes in Application Explorer, there are two special nodes: a *
         }
     }
 
-A **new** operator contains logic that is run when the **new** operator is used to create an instance of the class. The logic in the **new** method might construct an object and assign that object to a variable that is declared in the **classDeclaration**. Each class can have only one **new** method. However, in the **new** method, you often should call the **new** method of the base class. To call the **new** method of the base class, call **super()**. The following example shows the **new** method for the **YourDerivedClass** class in the previous **classDeclaration** example. In this **new** method, the code constructs an instance of the **Rectangle** class. The instance is assigned to the **m\_rectangle** variable. The **this** keyword that is used in the example is optional, however, if you include it, IntelliSense might be more helpful.
+A **new** operator contains logic that is run when the **new** operator is used to create an instance of the class. The logic in the **new** method might construct an object and assign that object to a variable that is declared in the **classDeclaration**. Each class can have only one **new** method. However, in the **new** method, you often should call the **new** method of the base class. To call the **new** method of the base class, call **super()**. 
+
+The following example shows the **new** method for the **YourDerivedClass** class in the previous **classDeclaration** example. In this **new** method, the code constructs an instance of the **Rectangle** class. The instance is assigned to the **m\_rectangle** variable. The **this** keyword that is used in the example is optional, however, if you include it, IntelliSense might be more helpful.
 
     // An example of the new method from the previous classDeclaration example.
     void new(int _length, int _width)
@@ -342,7 +350,9 @@ The extension method feature lets you add extension methods to a target class by
 -   The first parameter in every extension method is the type that the extension method extends. However, when the extension method is called, the caller must not pass in anything for the first parameter. Instead, the system automatically passes in the required object for the first parameter.
 -   The target of an extension method must be a class, table, view, or map application object type.
 
-An extension class can contain private or protected static methods. These methods are typically used for implementation details and aren't exposed as extensions. The extension method technique doesn’t affect the source code of the class that it extends. Therefore, the addition to the class doesn't require over-layering. Upgrades to the target class are never affected by any existing extension methods. However, if an upgrade to the target class adds a method that has the same name as your extension method, your extension method can no longer be reached through objects of the target class. The extension method technique uses the same dot-delimited syntax that you often use to call regular instance methods. Extension methods can access all public artifacts of the target class, but they can’t access anything that is protected or private. Therefore, extension methods can be considered a type of syntactic sugar. Regardless of the target type, an extension class is used to add extension methods to the type. For example, an extension table isn't used to add methods to a table, and there’s no such thing as an extension table.
+An extension class can contain private or protected static methods. These methods are typically used for implementation details and aren't exposed as extensions. The extension method technique doesn’t affect the source code of the class that it extends, therefore, the addition to the class doesn't require over-layering. 
+
+Upgrades to the target class are never affected by any existing extension methods. If an upgrade to the target class adds a method that has the same name as your extension method, your extension method can no longer be reached through objects of the target class. The extension method technique uses the same dot-delimited syntax that you often use to call regular instance methods. Extension methods can access all public artifacts of the target class, but they can’t access anything that is protected or private. Therefore, extension methods can be considered a type of syntactic sugar. Regardless of the target type, an extension class is used to add extension methods to the type. For example, an extension table isn't used to add methods to a table, and there’s no such thing as an extension table.
 
     // An example of an extension class holding a few extension methods.
     public static class AtlInventLocation_Extension
@@ -402,7 +412,9 @@ In most respects, table variables can be considered objects, however, unlike obj
 
 ### Table examples
 
-The syntax enables various possibilities for referencing fields in records. For example, you can use the **TableName.(FieldId)** syntax. The following example prints the contents of the fields in the current record in the Customer table.
+The syntax enables various possibilities for referencing fields in records. For example, you can use the **TableName.(FieldId)** syntax. 
+
+The following example prints the contents of the fields in the current record in the Customer table.
 
     // Declares and allocates space for one CustTable record.
     public void myMethod()
