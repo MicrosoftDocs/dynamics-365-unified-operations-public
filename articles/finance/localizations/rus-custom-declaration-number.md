@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Customs declaration numbers
-description: This topic provides information about Russian address formats and importing from the FIAS.
+description: This topic provides information about how to set up and track customs declaration numbers.
 author: v-nadyuz
 manager: AnnBe
 ms.date: 11/05/2019
