@@ -5,7 +5,7 @@ title: Convert Dynamics AX 2012 content for Dynamics 365
 description: This topic describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,11 +40,11 @@ If you have existing content from Dynamics AX 2012, then you can reuse that for 
 
 Microsoft has published a [Custom Help Toolkit](custom-help-toolkit.md) that includes a Windows PowerShell script, ```run_ax2012.ps1```, that can transform Dynamics AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the Dynamics AX 2012 HTML files:  
 
-- Replaces the Microsoft.Help.F1 metadata name with ms.search.form  
+- Replaces the **Microsoft.Help.F1** metadata name with **ms.search.form**  
 
-- Replaces the Title metadata name with title  
+- Replaces the **Title** metadata name with **title**  
 
-- Changes the file name extension from .htm to .html  
+- Changes the file name extension from **.htm** to **.html**  
 
 - Adds the following metadata:  
 
@@ -85,7 +85,7 @@ Here is a description of the metadata values:
 |ms.search.form | The value contains the Application Object Tree (AOT) name of a form. If a value is present, it’s used for context-sensitive search from the Help pane. |
 |ms.locale |This value indicates the language of the topic. It isn't currently used in the Dynamics 365 Help pane, but it might be used in the future.   |
 
-The following values are used in the Dynamics 365 client and will be added to the custom implementation of the Help pane:  
+The following values are used in the Finance and Operations client and will be added to the custom implementation of the Help pane:  
 
 - ms.search.scope
 

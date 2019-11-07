@@ -5,7 +5,7 @@ title: Custom Help Toolkit
 description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,9 +34,23 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft has published a GitHub repository (repo) with scripts, and tools that can help you prepare content so that it can be accessed from the Help pane in the Finance and Operations client. This way, users of custom solutions that are based on Dynamics 365 Finance, Supply Chain Management, Retail, or Talent can have access to context-sensitive Help.  
+Microsoft has published a GitHub repository with scripts and tools that can help you prepare content so that it can be accessed from the Help pane in the Finance and Operations client. This way, users of custom solutions that are based on Dynamics 365 Finance, Supply Chain Management, Retail, or Talent can have access to context-sensitive Help.  
 
-The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/).
+The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/) and provides the following tools as well as the source code for the tools:
+
+- ConsoleApp.exe
+
+- run_ax2012.ps1 PowerShell script
+
+- Convert HTML to JSON tool
+
+- AzureSearchCustomHelp solution for Visual Studio
+
+- HelppaneOption project for Visual Studio
+
+- REST API index creation scripts
+
+Each tool is described in the following sections.
 
 ## <a name="consoleapp"></a>Use the ConsoleApp to get MarkDown files and generate HTML files
 
@@ -123,6 +137,8 @@ ConsoleApp.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --ext
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
 
 [The ConvertHtmlToJson tool](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/Help%20Pane%20extension) transforms HTML files into JSON files that you can then add to the Azure Search service that will generate context-sensitive links to your Help content.  
+
+The JSON files include metadata that is used by the indexer to identify which form and which language the target Help page is intended for.  
 
 When you run the ConvertHtmlToJson tool, you must specify the location of the HTML files with your Help content, and you must specify the destination path.  
 
