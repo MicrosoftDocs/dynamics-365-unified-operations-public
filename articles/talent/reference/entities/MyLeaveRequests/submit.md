@@ -38,7 +38,7 @@ Submit a leave request to workflow to be processed by the Dynamics 365 Talent wo
 
 ## Prerequisites
 
-The leave request must be saved in the database, and must be retrievable through the MyLeaveRequests entity.
+The leave request must be saved in the database and must be retrievable through the MyLeaveRequests entity.
 
 ## Permissions
 
@@ -56,6 +56,9 @@ POST https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/M
 ```
 
 The request conforms to OData standards, and the {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.
+
+> [!NOTE]
+> While the the fields for the MyLeaveRequests entity refer to an individual line in the leave request, calling the submit API will submit the entire leave request (all lines) to workflow.
 
 ### Request headers
 
