@@ -88,7 +88,7 @@ Verify connection of your Azure subscription to your LCS project
 
 To provision the environment, the project needs to be created with a specific product name and type
 
-Provisioning and configuring - what is the difference?
+- Provisioning and configuring - what is the difference?
 
 
 - Post-provisioning steps?
@@ -97,6 +97,7 @@ Provisioning and configuring - what is the difference?
 ## Prerequisites
 
 - What is needed (general description) for an evaluation environment?
+
 
 ## Best practices
 
