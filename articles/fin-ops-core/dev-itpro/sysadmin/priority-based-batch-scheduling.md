@@ -5,7 +5,7 @@ title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
 author: peakerbl
 manager: AnnBe
-ms.date: 11/05/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
