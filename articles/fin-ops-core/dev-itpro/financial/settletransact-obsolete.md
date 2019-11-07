@@ -140,6 +140,6 @@ CustTrans::settleTransaction(
 
 ### Testing
 
-This functionality uses flights. To test it, you must turn on the flight in a non-production environment. For information about how to turn on a flight in a non-production environment, see [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
+This functionality uses flights. To test it, you must turn on the flight in a non-production environment. For information about how to turn on a flight in a non-production environment, see [Data management overview](../data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features).
 
 The name of the flight is **EnableCustTransSettleTransaction**.
