@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
-The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry</em>* control instance<em>. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController</em>* and <strong>DimensionDynamicAccountController</strong>). Any property that was previously manipulated or called on the controller must now be called on the control. 
+The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**)</em>. Any property that was previously manipulated or called on the controller must now be called on the control. 
 
 **Notes:**
 
@@ -52,7 +52,7 @@ The goal of the new design is to encapsulate the control implementation and not 
     -   **Before:** controller.parmDate(systemDateGet())
     -   **After:** LedgerAccount.parmControlDate(systemDateGet());
 
-    In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance
+    In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance.
 -   In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller. 
 
 -   **Example**
@@ -120,7 +120,8 @@ If **SegmentedEntry** appears as the type next to any control, change it to **Se
 
 An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control. 
 
-**Note:** To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. 
+> [!NOTE] 
+> To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. 
 
 [![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
 
@@ -626,7 +627,10 @@ For **DimensionDynamicAccountController**, the account type is specified through
 
 There are two methods for implementing this functionality. These methods are mutually exclusive, so use only one of them, depending on the situation:
 
--   For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method. **Note:** If the **super()** call has been removed from the **modified()** method for the field that is bound to the **Account Type Field** property, this method won't work. We have seen this issue in some journal forms, such as **LedgerJournalTransDaily**. In such cases, either add the **super()** call back to the **modified()** method, or use the second method.
+-   For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method. 
+
+    > [!NOTE]
+    > If the **super()** call has been removed from the **modified()** method for the field that is bound to the **Account Type Field** property, this method won't work. We have seen this issue in some journal forms, such as **LedgerJournalTransDaily**. In such cases, either add the **super()** call back to the **modified()** method, or use the second method.
 -   Set the account type manually by calling the **parmAccountTypeEnumValue()** method on the control. Here's an example.
 
         LedgerJournalTrans_AccountNum.parmAccountTypeEnumValue(enum2int(ledgerJournalTrans.AccountType));
@@ -656,7 +660,7 @@ Remove this, because the controller is no longer required.
 
 #### Dynamics AX
 
-Remove this line of code, because it's no longer required in most cases. Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the **LedgerCOA** value will be derived from that information. If the data area ID is not passed in, replace **parmCurrentLedgerCOA(â€¦)** with **parmDataAreaId(â€¦)**, and pass the appropriate **SelectableDataArea** value, which is usually **curext()** or another table field that controls the scope of the company for the account control. If the form has no data area context but only a current **LedgerCOA** value, it should be working only with the default account controller. There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, **MainAccount** and **Allocations**). In these cases, **parmCurrentLedgerCOA** should be called on the **Segmented Entry** control instance that has a default account controller type set.
+Remove this line of code, because it's no longer required in most cases. Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the **LedgerCOA** value will be derived from that information. If the data area ID is not passed in, replace **parmCurrentLedgerCOA()** with **parmDataAreaId()**, and pass the appropriate **SelectableDataArea** value, which is usually **curext()** or another table field that controls the scope of the company for the account control. If the form has no data area context but only a current **LedgerCOA** value, it should be working only with the default account controller. There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, **MainAccount** and **Allocations**). In these cases, **parmCurrentLedgerCOA** should be called on the **Segmented Entry** control instance that has a default account controller type set.
 
 ### Step 25
 
@@ -668,7 +672,10 @@ Remove this line of code, because it's no longer required in most cases. Before 
 
 #### Dynamics AX
 
-This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. **Note:** Because of a framework bug, if you don't set this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
+This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. 
+
+> [!NOTE]
+> Because of a framework bug, if you don't set this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
 
 ### Step 26
 
