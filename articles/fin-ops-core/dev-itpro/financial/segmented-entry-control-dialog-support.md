@@ -71,13 +71,13 @@ This is a simple dialog scenario around Segmented Entry. More advanced scenarios
 Additional resources
 --------
 
-[Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
+[Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
+[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration](segmented-entry-control-conversion.md)
+[Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
-[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+[Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
 
 
 
