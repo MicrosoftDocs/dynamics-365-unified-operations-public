@@ -56,7 +56,7 @@ Customers contact the Fleet Clerk to make vehicle reservations, choose vehicle a
 
 ### Vehicles
 
-Vehicles vary primarily in their price, which is proportional to the vehicle *class*. The names of tables that store information about vehicles begin with "FMVehicle".**
+Vehicles vary primarily in their price, which is proportional to the vehicle *class*. The names of tables that store information about vehicles begin with **FMVehicle**.
 
 ### Reservations and rentals
 
@@ -94,7 +94,10 @@ If you've already installed the demo data, you can skip to the next section.
 
 1.  In the VM, open Internet Explorer and navigate to the application's base URL.
 2.  Sign in.
-3.  On the dashboard, open the navigation pane and navigate to **Fleet Management &gt; Setup &gt; Fleet Setup**. [![Fleet setup > Customize model](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)
+3.  On the dashboard, open the navigation pane and navigate to **Fleet Management &gt; Setup &gt; Fleet Setup**. 
+
+    [![Fleet setup > Customize model](./media/fleetsetup_customizemodel.png)](./media/fleetsetup_customizemodel.png)
+
 4.  Click **Setup Demo Data**. 
 
     [![Configuration > Customize Model](./media/configuration_customizemodel.png)](./media/configuration_customizemodel.png)
@@ -106,7 +109,7 @@ If you've already installed the demo data, you can skip to the next section.
 9.  Wait until the processing completes. The ongoing processing is indicated at the top of the page by a series of moving dots. The processing is completed when the indicator disappears and the **Time Last Processed** field is updated.
 
 ## Open the FMRental form on the one-box environment
-1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Access Microsoft Dynamics AX Instances](../dev-tools/access-instances.md).
+1.  In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
 2.  Sign in, if prompted.
 3.  Find the **Reservation Management** tile and click to open the Reservation Management workspace. 
 
@@ -196,7 +199,10 @@ In **Solution Explorer**, in the FleetManagement Discounts project, double-click
 
 [![FMRentalChargeCode](./media/fmrentalchargecode_customizemodel.png)](./media/fmrentalchargecode_customizemodel.png) 
 
-This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. **Note:** Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of the [X++ debugger features](../dev-tools/new-x-debugger-features.md) article.
+This class contains event handler implementations that subscribe to the **Updating** and **Inserting** events of the **FMRentalCharge** table. Microsoft Dynamics AX introduces data events that can occur on tables and other types. You can subscribe to data events of a table, enabling your application to extend business logic without overlayering base X++ code. Later in this tutorial, you'll see how easy it is to subscribe to table events. 
+
+> [!NOTE]
+> Notice that this class is an extension class (indicated by the \_Extension suffix). You can author event handlers in any class, this class does not need to be an extension class. Extension classes are needed in order to create extension methods. For more details on extension methods, refer to the "Extension methods" section of the [X++ debugger features](../dev-tools/new-x-debugger-features.md) article.
 
 ### View the plug-in classes
 
@@ -255,7 +261,8 @@ This section shows how you can use the Visual Studio tools to create and interac
 
     [![Events node](./media/eventsnode_customizemodel.png)](./media/eventsnode_customizemodel.png)
 
-    **Note**: Different framework events are exposed on the designers of many types of element and sub-elements, like table events, form events, form data source events, and form control events.
+    > [!NOTE]
+    > Different framework events are exposed on the designers of many types of element and sub-elements, like table events, form events, form data source events, and form control events.
 12. Right-click onValidatedWrite, and then select **Copy event handler method**. 
 
     [![onValidateWrite](./media/onvalidatewrite_customizemodel.png)](./media/onvalidatewrite_customizemodel.png) 
@@ -296,7 +303,10 @@ This section shows how you can use the Visual Studio tools to create and interac
                 }
             }
 
-17. Save FMVehicleEventHandlers class **Tip**: You can paste and define your event handlers in any class of your model. The class FMVehicleEventHandlers is used only as an example.
+17. Save FMVehicleEventHandlers class 
+
+    >[!TIP]
+    > You can paste and define your event handlers in any class of your model. The class FMVehicleEventHandlers is used only as an example.
 
 ### Extend the FMVehicle Form
 
