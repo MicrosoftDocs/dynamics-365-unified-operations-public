@@ -35,10 +35,15 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
-You can only copy environments within the same region. You can't copy across regions.
+To copy an instance, you need to ensure the following:
 
-> [!IMPORTANT]
-> When you copy the Core HR database, you don't copy the elements (apps or data) that are contained in a Microsoft PowerApps environment. For information about how to copy elements in a PowerApps environment, see [Copy an environment](https://docs.microsoft.com/power-platform/admin/copy-environment).
+- The Core HR instance you want to overwrite must be a sandbox environment. If it isn't, you need to contact Support to switch it. For information about contacting Support, see [Get support for Microsoft Dynamics 365 Talent](talent-support.md).
+
+- The environments you are copying from and to must be in the same region. You can't copy across regions.
+
+- You must be an Administrator in the target environment so you can sign into it after copying the instance.
+
+- When you copy the Core HR database, you don't copy the elements (apps or data) that are contained in a Microsoft PowerApps environment. For information about how to copy elements in a PowerApps environment, see [Copy an environment](https://docs.microsoft.com/power-platform/admin/copy-environment). The PowerApps environment you want to overwrite must be a sandbox environment. You must be a global tenant admin to change a PowerApps production environment to a sandbox environment. For more information about changing a PowerApps environment, see [Switch an instance](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
 ## Effects of copying a Core HR database
 
