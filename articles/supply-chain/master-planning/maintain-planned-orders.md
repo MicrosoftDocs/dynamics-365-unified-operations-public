@@ -43,7 +43,7 @@ You can use the **Status** field to help track your progress. The following valu
 
 -   When master planning generates planned orders, the planned orders have a status of **Unprocessed**.
 -   If you decide not to firm a planned order, you can give it a status of **Completed**.
--   If you want to firm a planned order, you can change the status to **Approved**. Planned orders with **Approved** status are respected by master planning, so they are not modified or deleted. 
+-   If you want to firm a planned order, you can change the status to **Approved**. Planned orders with **Approved** status are respected by master planning, so they are not modified or deleted during a later master planning run. 
 
 ## Firming planned orders 
 By firming planned orders, real orders are created. These are also know as *released* or *open orders*. When a planned order is firmed, it's moved to the orders section of the relevant module.
