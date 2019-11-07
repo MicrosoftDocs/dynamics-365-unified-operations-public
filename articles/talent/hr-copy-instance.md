@@ -84,7 +84,7 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 6. Select the PowerApps environment to copy, and then select **Copy**.
 
-7. When the copy process is completed, sign in to the target instance, and enable Common Data Service integration. For more information and instructions, see [Integrate data into Common Data Service](https://docs.microsoft.com/power-platform/admin/data-integrator).
+7. When the copy process is completed, sign in to the target instance, and enable Common Data Service integration. For more information and instructions, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
 
 ## Data elements and statuses
 
