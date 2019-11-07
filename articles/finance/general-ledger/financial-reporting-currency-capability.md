@@ -13,7 +13,7 @@ Financial reporting has a wide variety of features in order to support complex c
 ## Reporting on currency
 By default, any amount appearing in a report will appear as the accounting currency amount. Any of the following actions will cause some level of translation to take place:
 * Use of a reporting tree to summarize multiple legal entites with different accounting currencies
-* Modifying the (?) currency field in the column definition
+* Modifying the currency display field in the column definition from blank or to something other than accounting currency
 * Modifying the (?) currency in the row definition
 * Using the (?) currency in the web viewer or the options pane of the web viewer
 
@@ -26,18 +26,26 @@ For amounts being translated, the following types of translation are available f
 |  Average | This is a simpler average rate for the period. Typically used for P&L accounts  | (Sum of rates)/(number of rates)  |   
 | Transaction date (Historical)  | Uses the rate in effect on the posting date of the transaction. If no rate is available will use the closest previously entered rate.  Typically used for Retained Earnings, Equity accounts and longer term fixed assets (e.g. Land)  | (Rate)  |   
 
-### Setup for Main Accounts
-Two fields have been added to the Main Accounts and Main Account Templates in the Financial Reporter fast tab:
-* Exchange rate type – choose the exchange rate type that contains the currencies and exchange rates you want to apply to this account. This table of currencies and exchange rates will be applied to actual data in Management Reporter.
-* Currency translation type – select the method for how the exchange rate is calculated for this account. This currency method is used for both actual and budget data in Management Reporter.
 
-If no field is defined at the account level, the calculation will instead check for the default rate type on the ledger form
+### Setup for Exchange rate type
+The exchange rate type defines the table of exchange rates and currencies to be used. Exchange rate type can be configured in multiple locations. 
+
+* Within the Main accounts form within General Ledger there is an option for Exchange rate type on the Financial reporting fast tab. 
+* You can also specify an override of an exchange rate type for a legal entity which will override the default behavior. 
+* If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.
+
+## Setup for Currency translation type
+The Currency translation type will determine how each main account is translated. Exchange rate type can also be configured in multiple locations. 
+* Within the main accounts form within General ledger there is an option for Currency translation type on the Financial reporting fast tab. 
+* You can also specify an override of an exchange rate type for a legal entity which will overide the default behavior. 
+
 
 ### Setup for Retained Earnings
 Retained earnings is special in that it is expecting a specific account category
 
 ### Setup to determine what translation currencies are available
 
+### Setup for Budget
 
 ### Example - Balance Sheet
 
