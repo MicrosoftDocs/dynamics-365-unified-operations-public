@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 ## Use a Gantt chart to visualize master planning progress
 
-From **View master planning progress**, you can view details of historical master planning runs as a Gantt chart. This functionality can help you understand the time that is spent on the various phases of master planning. For a current active planning job, **View master planning progress** can be used to track progress and view the estimated remaining time.
+From the **View master planning progress** page, you can view details of historical master planning runs as a Gantt chart. This functionality can help you understand the time that is spent on the various phases of master planning. For a current active planning job, the **View master planning progress** page can be used to track progress and view the estimated remaining time.
 
 ### Turn on and use the Master plan progress visualization feature
 
@@ -43,12 +43,18 @@ To use this functionality, follow these steps.
 1. In the **Feature management** workspace, on the **New** tab, select **Master planning progress visualization** in the list. If the feature doesn't appear on the **New** tab, look on the **Not enabled** and **All** tabs.
 1. Select **Enable now**. Alternatively, select **Schedule**, and then select the time when you want the feature to be turned on.
 
-To view historical planning jobs, follow these steps.
+The **View master planning progress** page can display both historical planning jobs and active planning jobs. 
 
-- To view master plans, go to **Master planning \> Setup \> Plans \> Master plans \> History \> Inquiries \> View progress**.
-- To view the **Master planning** workspace, go to **Master planning \> Workspaces \> Master planning tile: History \> Inquiries \> View progress**.
+To view historical planning jobs, there are two options. 
 
-To view active planning jobs, go to **Master planning \> Workspaces \> Unfinished planning process \> Inquiries \> View progress**, or **Master planning \> Workspaces \> Master planning tile: View progress \> Inquiries \> View progress**. You can view active jobs only when a planning job is processing.
+1. Go to **Master planning \> Setup \> Plans \> Master plans**, and then, on the Action Pane, select **History**. With the desired job selected, select **Inquiries**,  and then select **View progress**
+1. Go to **Master planning \> Workspaces \> Master planning**, on the Master planning tile click **History**. With the desired job selected, select **Inquiries**,  and then select **View progress**
+
+To view active planning jobs, there are two options. 
+1. Go to **Master planning \> Workspaces \> Master planning**, on the Action Pane, select **Unfinished planning process**. With the desired job selected, select **Inquiries**,  and then select **View progress**.
+1. Go to **Master planning \> Workspaces \> Master planning**, on the Master planning tile click **View progress**. With the desired job selected, select **Inquiries**,  and then select **View progress**
+
+Note you can view active jobs only when a planning job is processing.
 
 ### Analyze a master planning job
 
@@ -70,15 +76,15 @@ The Gantt chart is a useful tool if you want to view the impact of using action 
 - To collapse the selected group, select the minus sign (**–**) in the tree view.
 - You can use your keyboard for navigation. Use the **Up arrow** and **Down arrow** keys to move between rows. Use the **Right arrow** and **Left arrow** keys to expand and collapse groups.
 - To open or close all levels in the Gantt chart, select **Expand all** or **Collapse all**.
-- To view the related process time, hover over a task. (Tasks are the lowest level in the Gantt chart.)
+- To view the related processing time, hover over a task. (Tasks are the lowest level in the Gantt chart.)
 
 #### View an additional master planning run to compare jobs
 
-By selecting a master planning job on the drop-down menu, you can view an additional master planning run in the Gantt chart and compare the two jobs.
+By selecting a master planning job on field **Show additional master planning run**, you can view an additional master planning run in the Gantt chart and compare the two jobs.
 
 #### BOM-level display
 
-Bill of materials (BOM) levels are shown differently for coverage planning, delays, and firming.
+Bill of materials (BOM) levels are shown differently for coverage planning, delays, actions, and firming.
 
 - **Coverage planning** – BOM levels are shown as expected. They are calculated from the top down.
 
