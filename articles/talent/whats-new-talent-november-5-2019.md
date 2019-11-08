@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Talent (November 5, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 11/5/2019
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -45,44 +45,48 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
-Changes described in this section apply to build number 8.1.2598.
+Changes described in this section apply to build number 8.1.2598. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Copy a Core HR instance
 
-In this week's release, you can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment. #
+In this week's release, you can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment. For more information, see:
 
-### CDS Integration batch jobs are not created when CDS integration is enabled.
+- [Broader environment management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-talent/broader-environment-management) in the Dynamics 365: 2019 release wave 2 plan
 
-This change will create batch jobs for when CDS integration is enabled.
+- [Copy a Core HR instance](hr-copy-instance.md) in Talent documentation
 
-### HcmPersonImageEntity do not resize the person image when uploaded - (369469)
+### Common Data Service integration batch jobs aren't created when Common Data Service integration is enabled (388030)
 
-This week's release, changes how Images, when imported through data management are resized for better performance.
+This change will create batch jobs for Common Data Service integration when it's enabled.
 
-### Positions available for assignment date can be earlier than its activation date - (340103)
+### The HcmPersonImageEntity doesn't resize the person image when uploaded (369469)
 
-With this change a warning will be presented if you select an available for assignment date that precedes the the positions activation date.
+This week's release changes how images are resized for better performance when imported through data management.
 
-### Can't create a compensation change request in ESS for Step Based plans - (376872)
+### A position's Available for assignment date can be earlier than the Activation date (340103)
 
-This release corrects and issue when requesting compensation changes through Employee Self-Service for step based plans. 
+With this change, a warning will appear if you select an **Available for assignment date** that's earlier than the position's **Activation date**.
 
-### Reason Code does not sync to CDS if description is longer than 30 characters, CoreHR allows 60 - (352682)
+### Can't create a compensation change request in employee self-service for step-based plans (376872)
 
-with this change, reason codes with more than 30 characters will be updated in CDS. Changes made in CDS will also be reflected back in Talent.
+This release corrects an issue when requesting compensation changes through employee self-service for step-based plans. 
 
-### Address Integration from Talent to F&O - (351961)
+### Reason code doesn't sync to Common Data Service if the description is longer than 30 characters, Core HR allows 60 (352682)
 
-This release fixes an issue where addresses updated in Talent were not updating in Finance and Operations. Changes to address blocks will now update.
+with this change, reason codes with more than 30 characters will be updated in Common Data Service. Changes made in Common Data Service will also be reflected back in Talent.
+
+### Address integration from Talent to Finance and Operations (351961)
+
+This release fixes an issue where addresses updated in Talent weren't updating in Finance and Operations. Changes to address blocks will now update.
 
 ## Coming soon
 
 ### Print performance reviews
 
-With this new functionality: Employees, managers, and HR will be able to print an employee's performance review. Performance reviews will be available using a "Print review" option that will launch Microsoft Word to view and print the performance review.
+See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
 ### Feature management workspace
 
-Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them
+Features are added and updated in every release. The feature management experience provides a workspace where you can view a list of features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them.
 
-To learn more about the changes coming with feature management view the article posted [HERE](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+To learn more about the changes coming with feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
