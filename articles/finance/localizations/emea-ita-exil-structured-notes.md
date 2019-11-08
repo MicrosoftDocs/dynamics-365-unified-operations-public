@@ -73,7 +73,7 @@ In **Organization administration** > **Document management** > **Document types*
 ### Forms setup
 In **Accounts receivable** > **Setup** > **Forms** > **Forms setup** set up the references to **Document types** for the related documents.
 Additionally, define whether the notes are applicable to documents **Header**, **Lines** or both.
-![Document types setup](media/emea-ita-exil-notes-document-type.jpg)
+![Forms setup](media/emea-ita-exil-notes-setup-forms.jpg)
 
 ## Advanced notes processing
 
