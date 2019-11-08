@@ -105,4 +105,4 @@ If you have a curated solution that is published on AppSource, you must keep the
 Additional resources
 --------
 
-[Publishing an App in AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)
