@@ -67,7 +67,7 @@ Symmetrically, set up advanced notes for Vendors in **Accounts payable** > **Set
 
 ### Document types setup
 
-In **Organization administration** > **Document management** > **Document types** define document types that will be used during related documents attachements creation.
+In **Organization administration** > **Document management** > **Document types** define document types that will be used during related documents attachements creation. Select **Simple note** value in **Class** field.
 ![Document types setup](media/emea-ita-exil-notes-document-type.jpg)
 
 ### Forms setup
