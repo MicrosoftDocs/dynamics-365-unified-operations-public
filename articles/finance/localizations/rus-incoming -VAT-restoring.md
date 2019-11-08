@@ -106,10 +106,8 @@ restoration.
 <td> Revenue calculation method
 </td>
 <td> Select the method that is used for revenue calculation:
-<ul>
-<li> **All** – All customer invoices are included in the revenue calculation. </li>
-<li> **Indirect** – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation.</li>
-</ul>
+-   **All** – All customer invoices are included in the revenue calculation.                            
+-   **Indirect** – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation.  
 </td>
 
 </tr>
