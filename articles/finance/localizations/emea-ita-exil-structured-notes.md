@@ -61,13 +61,20 @@ On documents **Header** level you can define notes for all customers, individual
 On documents **Line** level you can additionally define notes for all or individual items.
 ![Customers notes lines setup](media/emea-ita-exil-notes-setup-item.jpg)
 
-Symmetrically, set up advanced notes for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes setup** 
+Symmetrically, set up advanced notes for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes setup**
+> [!NOTE]
+> In **Accounts payable** only **Purchase order** is available among the supported documents.
 
 ### Document types setup
 
+In **Organization administration** > **Document management** > **Document types** define document types that will be used during related documents attachements creation.
+![Document types setup](media/emea-ita-exil-notes-document-type.jpg)
+
 ### Forms setup
+In **Accounts receivable** > **Setup** > **Forms** > **Forms setup** set up the references to **Document types** for the related documents.
+Additionally, define whether the notes are applicable to documents **Header**, **Lines** or both.
+![Document types setup](media/emea-ita-exil-notes-document-type.jpg)
 
 ## Advanced notes processing
 
-> [!NOTE]
-> text.
+
