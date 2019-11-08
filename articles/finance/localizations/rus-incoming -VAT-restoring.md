@@ -129,7 +129,7 @@ incoming invoices.
     </ul>
 </li>
 <li><strong>By factor</strong> – The VAT restoration amount is calculated based on the export
-(non-taxable) ratio that is calculated for the current period</li>
+(non-taxable) ratio that is calculated for the current period.</li>
 </ul>
 </td>
 </tr>
