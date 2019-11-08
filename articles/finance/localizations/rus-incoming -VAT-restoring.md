@@ -340,10 +340,10 @@ depreciation for the period must be calculated and posted.
 -   On the **VAT restoring journal** page, select **Restore VAT procedure \> 3.
     Approve the journal** to approve the journal.
 
-After the journal is approved, no changes are allowed on this page, and you can
-go to the next procedure.
+    After the journal is approved, no changes are allowed on this page, and you can
+    go to the next procedure.
 
-Note the following information:
+    Note the following information:
 
 -   After the VAT restoring journal is approved in the period, you can no longer
     perform the following actions:
