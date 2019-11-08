@@ -1,4 +1,4 @@
-Restore incoming VAT: Deduct previously restored VAT
+Incoming VAT restoring
 ====================================================
 
 You can restore previously deducted value-added tax (VAT) amounts in the
