@@ -120,14 +120,14 @@ restoration.
 <ul>
 <li> <strong>Mixed</strong> – The VAT restoration amount is calculated differently, depending
 on whether a direct connection with outgoing invoices is determined for
-incoming invoices. </li>
+incoming invoices. 
     -   For incoming invoices where a direct connection with outgoing invoices is
     determined, the VAT restoration amount is calculated based on the proportion
     of the cost of goods that were sold to the cost of goods that VAT was
     deducted for.
     -   For incoming invoices where a direct connection with the outgoing invoices
     isn't determined, the VAT restoration amount is calculated based on the
-    export (non-taxable) ratio that is calculated for the current period.
+    export (non-taxable) ratio that is calculated for the current period. </li>
 <li><strong>By factor</strong> – The VAT restoration amount is calculated based on the export
 (non-taxable) ratio that is calculated for the current period</li>
 </ul>
@@ -136,8 +136,6 @@ incoming invoices. </li>
 
 </tbody>
 </table>
-
-
 
 ### Use fixed assets for export or VAT-free activities
 
