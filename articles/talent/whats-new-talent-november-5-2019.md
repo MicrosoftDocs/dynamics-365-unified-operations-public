@@ -51,7 +51,7 @@ Changes described in this section apply to build number 8.1.2598. The numbers in
 
 In this week's release, you can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment. For more information, see:
 
-- [Broader environment management](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-talent/broader-environment-management) in the Dynamics 365: 2019 release wave 2 plan
+- [Broader environment management](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/broader-environment-management) in the Dynamics 365: 2019 release wave 2 plan
 
 - [Copy a Core HR instance](hr-copy-instance.md) in Talent documentation
 
