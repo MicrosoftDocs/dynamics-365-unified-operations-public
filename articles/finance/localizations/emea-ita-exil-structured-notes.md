@@ -46,7 +46,7 @@ Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customer advanc
 ![Customers groups setup](media/emea-ita-exil-notes-groups.jpg)
 
 Once completed, assign the references to the created groups for the required customers in **Accounts receivable** > **Customers** > **All customers** > **Sales orders defaults** (FastTab) > **ADVANCED NOTES** (Section).
-![Customers groups assignment](emea-ita-exil-notes-cust-groups.jpg)
+![Customers groups assignment](media/emea-ita-exil-notes-cust-groups.jpg)
 
 The same can be done for Vendors...
 ### Advanced notes applicability setup
