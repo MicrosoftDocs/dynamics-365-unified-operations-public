@@ -5,7 +5,7 @@ title: Priority-based batch scheduling
 description: This topic provides information about the functionality for priority-based batch scheduling.
 author: peakerbl
 manager: AnnBe
-ms.date: 11/05/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,7 +40,7 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 > [!IMPORTANT]
 > This feature is available only in a restricted preview as part of Platform update 31.
 
-A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. IThe scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Reserved capacity** represents the highest priority.
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Reserved capacity** represents the highest priority.
 
 Additional functionality is planned for future updates.
 
