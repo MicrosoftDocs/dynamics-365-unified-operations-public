@@ -111,7 +111,6 @@ restoration.
 <li> <strong>Indirect</strong> – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation. </li>
 </ul>
 </td>
-
 </tr>
 <tr>
 <td> VAT restoring method 
@@ -132,6 +131,7 @@ incoming invoices.
 (non-taxable) ratio that is calculated for the current period</li>
 </ul>
 </td>
+</tr>
 </tbody>
 </table>
 
