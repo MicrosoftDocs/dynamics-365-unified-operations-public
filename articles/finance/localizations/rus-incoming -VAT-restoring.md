@@ -132,8 +132,6 @@ incoming invoices.
 (non-taxable) ratio that is calculated for the current period</li>
 </ul>
 </td>
-
-
 </tbody>
 </table>
 
