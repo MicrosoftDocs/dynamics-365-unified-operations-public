@@ -61,12 +61,13 @@ On documents **Header** level you can define notes for all customers, individual
 On documents **Line** level you can additionally define notes for all or individual items.
 ![Customers notes lines setup](media/emea-ita-exil-notes-setup-item.jpg)
 
-In **Restriction** field select whether the note is of *Internal* or *External* type.
+Symmetrically, set up advanced notes for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes setup** 
 
-#### Languages...
-aaa
-Symmetrically, 
+### Document types setup
 
+### Forms setup
+
+## Advanced notes processing
 
 > [!NOTE]
 > text.
