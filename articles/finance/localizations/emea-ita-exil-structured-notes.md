@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Structured notes
-description: Structured notes.
+title: Advanced notes management
+description: Advanced notes management.
 author: ilkond
 manager: AnnBe
 ms.date: 18/10/2019
@@ -28,19 +28,21 @@ ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# Structured notes
+# Advanced notes management
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and...
+This functionality allows users to set up predefined notes applicable for all or specific customers, vendors and products and print these notes in specific business documents.
  
 ## Prerequisites
 
 - The primary address of the legal entity must be in **Italy**.
-- In **Feature management**, enable the feature **Structured notes**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
+- In **Feature management**, enable the feature **Advanced notes management**. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)
 
-## Add
-Once enabled...
+## Advanced notes setup
+### Custoners and Vendors groups setup
+. 
+
 
 ![Example](media/emea-ita-exil-invoice-packing-slip-pic.jpg)
 
