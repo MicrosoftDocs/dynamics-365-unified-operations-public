@@ -92,6 +92,56 @@ restoration.
 2.  On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT
     restoration** section, set the following fields
     
+    
+    <table>
+<thead>
+<tr>
+<th>Business scenario</th>
+<th>Payment cause</th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast by creating payment schedule journal of type "payment plan".
+</td>
+<td>
+<ul>
+<li>Purchase order</li>
+<li>Sales order</li>
+<li>Free text invoice</li>
+</ul>
+</td>
+
+</tr>
+<tr>
+<td>The company receives the payment request (prepayment request, invoice, and so on) from a seller. The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast.
+<blockquote>[!IMPORTANT] The Payment request and the associated functionality are available only if the <strong>Payment request</strong> license configuration key is turned on.</blockquote>
+</td>
+<td>
+<ul>
+<li>Vendor invoice</li>
+<li>Prepayment invoice</li>
+<li>Planned payment for confirmed purchase order</li>
+<li>Customer return invoice</li>
+</ul>
+</td>
+
+</tr>
+<tr>
+<td>A treasurer generates and confirms the payment schedule journal (payment register). In this way, the company defines the list of payments that should be made by the bank/cash account.</td>
+<td>Payment schedule journal (of the <strong>Payment register</strong> type)</td>
+
+</tr>
+<tr>
+<td>The company receives the statement from a bank. This statement includes the authorized transactions (completed payments).</td>
+<td>Bank statement</td>
+
+</tr>
+</tbody>
+</table>
+
+    
 | Field                             | Description                                                                                                                    |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Revenue calculation method        | Select the method that is used for revenue calculation: 
