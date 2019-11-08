@@ -96,16 +96,16 @@ restoration.
     <table>
 <thead>
 <tr>
-<th>Business scenario</th>
-<th>Payment cause</th>
+<th>Field</th>
+<th>Description</th>
 
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>The company requests and confirms delivery of goods (that is, a purchase order that has a delivery schedule that is confirmed). A treasurer includes information about the expected payments (inflow or outflow) in the cash flow forecast by creating payment schedule journal of type "payment plan".
+<td> Revenue calculation method
 </td>
-<td>
+<td> Select the method that is used for revenue calculation:
 <ul>
 <li>Purchase order</li>
 <li>Sales order</li>
