@@ -91,14 +91,12 @@ restoration.
 
 2.  On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT
     restoration** section, set the following fields
-    
-    
-    <table>
+  
+<table>
 <thead>
 <tr>
 <th>Field</th>
 <th>Description</th>
-
 </tr>
 </thead>
 <tbody>
@@ -134,7 +132,6 @@ incoming invoices.
 </tr>
 </tbody>
 </table>
-
 ### Use fixed assets for export or VAT-free activities
 
 1.  On the **Fixed assets** page, select **FA usage**.
