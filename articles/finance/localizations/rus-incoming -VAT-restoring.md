@@ -132,6 +132,7 @@ incoming invoices.
 </tr>
 </tbody>
 </table>
+
 ### Use fixed assets for export or VAT-free activities
 
 1.  On the **Fixed assets** page, select **FA usage**.
