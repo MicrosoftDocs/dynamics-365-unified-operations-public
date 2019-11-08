@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic gives an overview of evaluation environments in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-- What is a Commerce evaluation environment (AKA evaluation environment)?
+- What is a Commerce evaluation environment (AKA evaluation environment AKA Commerce preview environment AKA preview environment)?
 
 
 
@@ -71,7 +71,7 @@ The preview subscription that you create gives you a Microsoft Online Services t
 
 ## Deploy demo environment
 
-- What is a demo environment? Is it different from an evaluation environment?
+- What is a demo environment? Is it different from an evaluation environment? If so, how?
 
 
 - If different, is a demo environment required to do a Commerce evaluation?
