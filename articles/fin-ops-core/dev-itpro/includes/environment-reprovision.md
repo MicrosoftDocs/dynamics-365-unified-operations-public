@@ -8,7 +8,7 @@ Follow these steps to run the Environment reprovisioning tool.
 4. Select the **Environment Reprovisioning** tool that you uploaded earlier, and then select **Apply** to apply the package.
 5. Monitor the progress of the package deployment.
 
-For more information about how to apply a deployable package, see [Apply a deployable package](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).
+For more information about how to apply a deployable package, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md). For more information about how to manually apply a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 > [!IMPORTANT]
 > Some environment specific records cannot be moved along with the database from the source to the target environment. The following records are not moved to the target environment:
@@ -19,7 +19,7 @@ For more information about how to apply a deployable package, see [Apply a deplo
 
 As part of database refresh, scale unit channel database records (in the Channel Database form) cannot be moved across environments since they represent environment specific configuration.
 
-For **Retail Cloud Scale Units**, you can regenerate the channel database record by issuing a re-deployment of your scale units in LCS. For more information, see [Database refresh](../database/database-refresh.md) and [Initialize Retail Cloud Scale Unit](../deployment/Initialize-Retail-Channels.md).
+For **Retail Cloud Scale Units**, you can regenerate the channel database record by issuing a re-deployment of your scale units in LCS. For more information, see [Refresh database](../database/database-refresh.md) and [Initialize Retail Cloud Scale Unit](../deployment/Initialize-Retail-Channels.md).
 
 ### Database refresh and Retail Self-Service installers
 
