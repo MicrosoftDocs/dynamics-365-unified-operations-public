@@ -42,17 +42,24 @@ This functionality allows users to set up predefined notes applicable for all or
 ## Advanced notes setup
 ### Customers and Vendors groups for advanced notes
 In order to group customers to have similar notes printed in documents, you can define new groups specifically for advanced notes. 
-Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customer advanced notes groups** to define groups codes and descriptions.
+Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customers advanced notes groups** to define groups codes and descriptions.
 ![Customers groups setup](media/emea-ita-exil-notes-groups.jpg)
 
 Once completed, assign the references to the created groups for the required customers in **Accounts receivable** > **Customers** > **All customers** > **Sales orders defaults** (FastTab) > **ADVANCED NOTES** (Section).
 ![Customers groups assignment](media/emea-ita-exil-notes-cust-groups.jpg)
 
-The same can be done for Vendors...
-### Advanced notes applicability setup
-aaa
+Symmetrically, advanced notes groups can be setup for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes groups** 
+
+### Advanced notes creation for Customers
+Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customers advanced notes setup** form to enter notes texts and control notes applicability.
+![Customers notes setup](media/emea-ita-exil-notes-setup.jpg)
+
+ssss
+![Customers notes lines setup](media/emea-ita-exil-notes-setup-item.jpg)
+
 #### Languages...
 aaa
+Symmetrically, 
 
 
 > [!NOTE]
