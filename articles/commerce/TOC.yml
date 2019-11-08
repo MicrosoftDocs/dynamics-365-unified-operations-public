@@ -1542,8 +1542,6 @@
           href: ../retail/Open-URL-in-POS.md?toc=/dynamics365/commerce/toc.json
         - name: Install the POS Layout designer
           href: ../retail/install-pos-layout-designer.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Modern POS in offline mode
-          href: ../retail/dev-itpro/retail-modern-pos-offline.md?toc=/dynamics365/commerce/toc.json
         - name: Extend the POS Dual display view
           href: ../retail/dev-itpro/pos-dual-display-extension.md?toc=/dynamics365/commerce/toc.json
         - name: Retail Modern POS and Cloud POS trigger extensibility
