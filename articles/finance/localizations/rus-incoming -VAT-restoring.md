@@ -114,69 +114,30 @@ restoration.
 
 </tr>
 <tr>
-<td>The company receives the payment request (prepayment request, invoice, and so on) from a seller. The manager creates a payment request, which should be approved by the manager lead and a treasurer. The treasurer includes information about the expected and approved payments (inflow or outflow) in the cash flow forecast.
-<blockquote>[!IMPORTANT] The Payment request and the associated functionality are available only if the <strong>Payment request</strong> license configuration key is turned on.</blockquote>
+<td> VAT restoring method 
 </td>
-<td>
+<td> Select the method that is used for VAT restoration: 
 <ul>
-<li>Vendor invoice</li>
-<li>Prepayment invoice</li>
-<li>Planned payment for confirmed purchase order</li>
-<li>Customer return invoice</li>
+<li> <strong>Mixed</strong> – The VAT restoration amount is calculated differently, depending
+on whether a direct connection with outgoing invoices is determined for
+incoming invoices. </li>
+<li>For incoming invoices where a direct connection with outgoing invoices is
+determined, the VAT restoration amount is calculated based on the proportion
+of the cost of goods that were sold to the cost of goods that VAT was
+deducted for.</li>
+<li>For incoming invoices where a direct connection with the outgoing invoices
+isn't determined, the VAT restoration amount is calculated based on the
+export (non-taxable) ratio that is calculated for the current period.</li>
+<li><strong>By factor</strong> – The VAT restoration amount is calculated based on the export
+(non-taxable) ratio that is calculated for the current period</li>
 </ul>
 </td>
 
-</tr>
-<tr>
-<td>A treasurer generates and confirms the payment schedule journal (payment register). In this way, the company defines the list of payments that should be made by the bank/cash account.</td>
-<td>Payment schedule journal (of the <strong>Payment register</strong> type)</td>
 
-</tr>
-<tr>
-<td>The company receives the statement from a bank. This statement includes the authorized transactions (completed payments).</td>
-<td>Bank statement</td>
-
-</tr>
 </tbody>
 </table>
 
-    
-| Field                             | Description                                                                                                                    |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Revenue calculation method        | Select the method that is used for revenue calculation: 
--   **All** – All customer invoices are included in the revenue calculation.                            
--   **Indirect** – Only customer invoices that don't have a direct relation to the purchase invoice are included in the revenue calculation.                        |
 
-
-
-| Field                      | Description                                             |
-|----------------------------|---------------------------------------------------------|
-| Revenue calculation method | Select the method that is used for revenue calculation: |
-                               -   **All** – All customer invoices are included in     
-                                   the revenue calculation.                            
-                               -   **Indirect** – Only customer invoices that don't    
-                                   have a direct relation to the purchase invoice are  
-                                   included in the revenue calculation.                
-|----------------------------|---------------------------------------------------------|
-| VAT restoring method       | Select the method that is used for VAT restoration:     |
-
-
-
--   **Mixed** – The VAT restoration amount is calculated differently, depending
-    on whether a direct connection with outgoing invoices is determined for
-    incoming invoices.
-
--   For incoming invoices where a direct connection with outgoing invoices is
-    determined, the VAT restoration amount is calculated based on the proportion
-    of the cost of goods that were sold to the cost of goods that VAT was
-    deducted for.
-
--   For incoming invoices where a direct connection with the outgoing invoices
-    isn't determined, the VAT restoration amount is calculated based on the
-    export (non-taxable) ratio that is calculated for the current period.
-
--   **By factor** – The VAT restoration amount is calculated based on the export
-    (non-taxable) ratio that is calculated for the current period.
 
 ### Use fixed assets for export or VAT-free activities
 
