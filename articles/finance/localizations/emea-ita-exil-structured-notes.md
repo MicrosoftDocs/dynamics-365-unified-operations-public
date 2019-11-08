@@ -50,12 +50,18 @@ Once completed, assign the references to the created groups for the required cus
 
 Symmetrically, advanced notes groups can be setup for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes groups** 
 
-### Advanced notes creation for Customers
+### Advanced notes setup for Customers
 Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customers advanced notes setup** form to enter notes texts and control notes applicability.
 ![Customers notes setup](media/emea-ita-exil-notes-setup.jpg)
 
-ssss
+In the bottom part of the form you can enter the note's text in User's default language. To enter the note's texts in other languages please use **Translations** button.
+
+In the top part of the form set up notes applicability. Mark related check-boxes to enable notes for the available documents.
+On documents **Header** level you can define notes for all customers, individual customers or customers groups.
+On documents **Line** level you can additionally define notes for all or individual items.
 ![Customers notes lines setup](media/emea-ita-exil-notes-setup-item.jpg)
+
+In **Restriction** field select whether the note is of *Internal* or *External* type.
 
 #### Languages...
 aaa
