@@ -39,9 +39,9 @@ Dynamics 365 Finance and Operations apps provides many self-service support opti
 ## Self-help resources
 
 
-- [Dynamics 365 Finance](../../fin-ops/index.md)
-- [Dynamics 365 Supply Chain Management](../../../supply-chain/index.md)
-- [Dynamics 365 Finance and Operations apps operated by 21Vianet](../deployment/china-local-deployment.md)
+- [Finance and Operations application documentation](../../fin-ops/index.md)
+- [Help resources for Supply Chain Management](../../../supply-chain/index.md)
+- [Finance and Operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
 - [Dynamics community](https://community.dynamics.com/)
 - [Microsoft Learn](https://docs.microsoft.com/learn/)
 
@@ -92,7 +92,7 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 
 ## Additional resources
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Dynamics 365 Finance and Operations apps operated by 21Vianet in China](../deployment/china-local-deployment.md)
+- [Finance and Operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
 - [Dynamics 365 Customer Engagement operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/21vianet-support)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
