@@ -450,12 +450,6 @@ This environment includes several virtual machines, by default. These virtual ma
 > Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -660,12 +654,6 @@ Deploy this environment to develop or test features for Retail essentials. This 
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -726,12 +714,6 @@ Deploy this environment to create and test an online sales channel that is fully
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -769,12 +751,6 @@ Deploy this environment to enable your sales staff to process sales transactions
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -816,12 +792,6 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 > Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
