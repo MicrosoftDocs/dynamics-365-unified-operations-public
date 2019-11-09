@@ -44,7 +44,9 @@ In Microsoft Dynamics Lifecycle Services, System diagnostics helps administrator
 Data is collected by using jobs that run on predefined schedules. The following diagram describes how System diagnostics and the locally-installed components interact.
 System diagnostic service
 
-![System diagnostic service (Lifecycle Services)](./media/systemdiagnosticservicelifecycleservices.png) System diagnostics supports the following versions of Microsoft Dynamics AX:
+![System diagnostic service (Lifecycle Services)](./media/systemdiagnosticservicelifecycleservices.png) 
+
+System diagnostics supports the following versions of Microsoft Dynamics AX:
 -   Microsoft Dynamics AX 2012 R2
 -   Microsoft Dynamics AX 2012 Feature Pack
 -   Microsoft Dynamics AX 2012
@@ -58,10 +60,7 @@ Before you can use the System diagnostics, you must complete the following tasks
 
 ## Getting started
 The following topics explain how to install and use System diagnostics.
--   [Install and run System diagnostics (Lifecycle Services)](install-run-system-diagnostics-lcs.md)
--   [Use System diagnostics (Lifecycle Services)](system-diagnostics-lcs.md)
-
-
-
+-   [Install and run System diagnostics](install-run-system-diagnostics-lcs.md)
+-   [System diagnostics in Lifecycle Services (LCS)](system-diagnostics-lcs.md)
 
 
