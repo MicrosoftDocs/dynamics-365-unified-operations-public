@@ -1271,8 +1271,6 @@
           href: Open-URL-in-POS.md
         - name: Install the POS Layout designer
           href: install-pos-layout-designer.md
-        - name: Retail Modern POS in offline mode
-          href: dev-itpro/retail-modern-pos-offline.md
         - name: Extend the POS Dual display view
           href: dev-itpro/pos-dual-display-extension.md
         - name: Retail Modern POS and Cloud POS trigger extensibility

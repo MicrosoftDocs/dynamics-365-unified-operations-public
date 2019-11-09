@@ -63,7 +63,6 @@ This page lists the resources that are available for IT pros and developers who 
 ## Customize POS
 - [Retail POS screen layouts](../pos-screen-layouts.md)
 - [Install the POS Layout designer](../install-pos-layout-designer.md)
-- [Use Retail Modern POS in offline mode](retail-modern-pos-offline.md)
 - [Call a new or customized CRT service in offline mode](call-crt-service-offline.md)
 - [Modern POS and Cloud POS trigger extensibility](modern-pos-trigger-extensibility.md)
 - [Add a new custom control to an MPOS screen layout](add-new-custom-control-mpos-screen-layout.md)
