@@ -34,12 +34,10 @@ ms.dyn365.ops.version: 2012
 
 [!include [banner](../includes/banner.md)]
 
-Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager (Lifecycle Services, LCS)](set-up-configuration-manager-lcs.md).
+Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager](set-up-configuration-manager-lcs.md).
 
-
-| **Important**                                                                                                                                                                                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments. |
+> [!IMPORTANT]
+> This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments.
 
 
 ## Export a configuration
@@ -60,8 +58,5 @@ You can create a stored configuration by exporting it from a specified legal ent
 4.  Review the companies that are available in the partitions in your environment. Select the companies to work with by selecting the location of the company that you are importing from (for example, initialDAT), and then click **Continue**.
 5.  Select the entities to copy to a stored configuration.
 6.  Click **Continue** to import your stored configuration. After a configuration has been created, you can review what it contains.
-
-
-
 
 
