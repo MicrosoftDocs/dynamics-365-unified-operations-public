@@ -76,5 +76,9 @@ Additionally, define whether the notes are applicable to documents **Header**, *
 ![Forms setup](media/emea-ita-exil-notes-setup-forms.jpg)
 
 ## Advanced notes processing
+### Advanced notes generation
+In Accounts receivable .
+![Sales order notes](media/emea-ita-exil-notes-order.jpg)
 
-
+### Advanced notes printing
+External. Standard way.
