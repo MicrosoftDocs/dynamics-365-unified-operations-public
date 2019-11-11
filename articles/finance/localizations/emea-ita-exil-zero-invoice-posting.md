@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Zero invoices posting in general ledger
-description: Zero invoices posting in general ledger.
+title: Posting invoices with zero amount
+description: Posting invoices with zero amount.
 author: ilkond
 manager: AnnBe
 ms.date: 27/08/2019
@@ -28,8 +28,26 @@ ms.dyn365.ops.version: 10.0.7
 
 ---
 
-# Zero invoices posting in general ledger
+# Posting invoices with zero amount
 
-This topic explains how to set up and use posting of Zero-amount invoices into general ledger.
+[!include [banner](../includes/banner.md)]
 
-Zero invoices posting in general ledger. Italy.
+In Italy, ...
+
+## Prerequisites
+
+- The primary address of the legal entity must be in Italy.
+- In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+
+## Set up...
+
+Define...
+
+## Use...
+
+### Post
+
+When you post...
+
+> [!NOTE]
+> Warning...
