@@ -483,3 +483,24 @@ Note that the list of country/region codes is specified for each version of an E
 3.	Select **OK**.
 
 Notice that the configuration that is created is saved as completed version 1.
+
+## Appendix 4
+
+### Additional resources
+
+[Electronic reporting (ER) overview](general-electronic-reporting.md)
+
+[Manage ER model mapping in separate ER configurations](./tasks/er-manage-model-mapping-configurations-july-2017.md)
+
+[Apply country/region context](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lcs-solutions/apply-country-context)
+
+## Frequently asked questions
+
+#### I configured two shared ER model mapping configurations in RCS and marked one of them as the default model mapping configuration. I successfully ran an ER format that was created for the same base ER data model configuration, to test model mappings. I then imported the whole ER solution (ER data model, two ER model mapping configurations, and ER format configuration) into Finance. Why do I receive an error message when I try to run the same ER format in Finance?
+The default model mapping setting is environment-specific. It's configured in RCS but isn't exported to Finance. To successfully run this ER format, you must mark one of ER model mapping configurations as the default model mapping configuration in Finance too.
+
+#### I configured one model mapping as a shared model mapping and completed the draft version of it. I then added a new model mapping configuration for same data model and configured it as French-specific. Why is the shared model mapping selected when I run an ER format, even though this ER format uses the correct root definition and execution is done under the control of the company that has French country/region context?
+Make sure that the shared model mapping configuration isn't marked as the default model mapping configuration. Otherwise, it will have higher priority during mapping selection. Also make sure that the French-specific model mapping configuration is considered when a mapping is selected during ER format execution. An ER model mapping configuration is available for selection only if at least one of the following conditions is met:
+- At least one version of the ER model mapping configuration has either **Completed** or **Shared** status. In this case, the version that has the highest version number will be used for ER format execution.
+- The **Run draft** option for the ER model mapping configuration is turned on. In this case, the version that has **Draft** status will be used for ER format execution.
+> The **Run draft** option becomes available on the **Configurations** page for each ER model mapping configuration when the **Run setting** ER user parameter is turned on.
