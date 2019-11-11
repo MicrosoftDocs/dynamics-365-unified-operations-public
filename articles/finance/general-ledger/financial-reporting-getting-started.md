@@ -90,8 +90,12 @@ Users who generate a report can delete their own reports. Users with the **Maint
 
 Starting with the 10.0.7 release the concept of expiration dates has been introduced. A new mandatory feature will be enabled in the feature mangement workspace. This feature contains the following changes:
 * Newly generated reports will automatically be marked as having an expiration date of 90 days from when they are generated
-* Any existing reports from before the feature was installed will be given a 90 day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service and performs the update to existing reports listed as blank. 
-* Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will additionally have the ability to modify the expiration period. Initially a period of 90 days is available, as well as marking the report to never expire. When an expiration such as 90 days is selected, it grants 90 days from today, which is different behavior than the 90 days from the original generation date granted on report generation. 
+* Any existing reports from before the feature was installed will be given a 90 day expiration period. The date may show as blank for a short period of time until the financial reporting service is running, a report is generated, and the service performs the update to existing reports with a blank expiration date. 
+* Users with the **Maintain financial reporting security** have access to this functionality. Any user in the **Maintain financial report** duty granted the **Maintain financial report expiration** privilege will also have the ability to modify the expiration period. Currently there are two retention options available - 
+  * An expiration of 90 days
+  * An option to set the report to never expire
+
+When an expiration such as 90 days is selected, it grants 90 days from today, which is different behavior than the 90 days from the original generation date set during report generation. 
 
 ## Default reports
 Financial reporting provides 22 default financial reports. Every report uses the default main account categories. You can use these reports as is or as a starting point for your financial reporting needs. In addition to the traditional financial statements, such as Income statement and Balance sheet, these default reports include reports that show the different types of financial reports that you can create. 
