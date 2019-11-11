@@ -49,6 +49,63 @@ This sample consists of extensions for the Hardware station, commerce runtime (C
 > [!NOTE]
 > Some steps in the procedures in this topic differ, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
+## Integration of Retail POS with control units
+
+Retail includes a sample for integration of POS with Sweden-specific fiscal devices that are known as control units. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK). The sample includes the following capabilities:
+
+- Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.
+- The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Retail store transactions** page.
+- Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt format, so that you can print the fiscal data for the transaction on a receipt.
+- The fiscal data for a transaction is printed on the **Electronic journal (Sweden)** channel report.
+- If a failure occurs during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, a new transaction can't be started, and the current shift can't be closed. The operator will be asked to try to register the unregistered transaction again in the control unit. If the second attempt fails, the operator can skip the registration, provided that he or she has a special permission. If the operator skips the registration of a transaction in the control unit, information about this event is saved in the transaction instead of the fiscal data.
+
+> [!NOTE]
+> Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
+
+## Control unit–specific settings
+
+You must specify the following settings to enable the [integration sample](./retail-sdk-control-unit-sample.md), so that Retail POS is integrated with control units for Sweden.
+
+1. Create fiscal register configurations, and assign them to hardware profiles:
+
+    1. On the **Fiscal register configurations** page, create a new fiscal register configuration record. Set the name and the description of the configuration.
+    2. Fill in the configuration content. For this sample, a configuration is an XML file that establishes the mapping between sales tax codes and a control unit's VAT groups. You can map up to four sales tax codes. In the following example of a configuration, **VAT10** and **VAT20** represent sales tax codes that must be mapped.
+
+        ``` xml
+        <UnitConfiguration>
+            <TaxMapping>
+                <Tax taxCode="VAT10" controlUnitTaxId="1"/>
+                <Tax taxCode="VAT20" controlUnitTaxId="2"/>
+            </TaxMapping>
+        </UnitConfiguration>
+        ```
+
+        You can also export a sample configuration by clicking **Export sample configuration** on the Action Pane.
+
+    3. On the **Hardware profiles** page, select the hardware profile of the Hardware station that the POS is paired with and the control unit is connected to. On the **Fiscal register** FastTab, set the following fields:
+
+        - In the **Fiscal register** field, select **Third-party driver**.
+        - In the **Configuration** field, select the name of the fiscal register configuration that you just created.
+
+2. Set up custom fields for receipt layouts, so that the control code and the manufacturing number of the control unit are printed on receipts:
+
+    1. On the **Language text** page, add two records for the captions of the custom receipt layout fields. In the appropriate fields, specify the language ID for the captions (for example, **sv-se**), the text ID (for example, **900001** and **900002**), and the caption text (for example, **Control code** and **Control unit ID**).
+    2. On the **Custom fields** page, add two records for the custom receipt layout fields. In the **Type** field, select **Receipt**. Specify names and captions for the custom receipt layout fields:
+
+        - Control code:
+
+            - **Name:** **FiscalRegisterControlCode**
+            - **Caption text ID:** The text ID that you specified for the control code field (**900001** in the preceding example)
+
+        - Manufacturing number of the control unit:
+
+            - **Name:** **FiscalRegisterId**
+            - **Caption text ID:** The text ID that you specified for the control unit ID field (**900002** in the preceding example)
+
+    3. For sales receipt formats, in the Receipt format designer, in the **Footer** section of the receipt layout, add the fields for the specified captions (**Control code** and **Control unit ID** in the preceding example).
+
+3. Update POS permissions groups and individual permission settings for store workers. To allow workers who are assigned to the permission group to skip the fiscal registration, select the **Allow skip fiscal registration** check box.
+
 ## Development environment
 
 Follow these steps to set up a development environment so that you can test and extend the sample.
