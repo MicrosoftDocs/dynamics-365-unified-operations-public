@@ -77,9 +77,14 @@ Additionally, define whether the notes are applicable to documents **Header**, *
 
 ## Advanced notes processing
 ### Advanced notes generation
-In Accounts receivable, the notes enabled for **Confirmation**, **Picking list**, **Packing slip** and **Invoice** will be automatically generated in **Sales orders** for applicable Customers and Products.
+In **Accounts receivable**, the notes enabled for **Confirmation**, **Picking list**, **Packing slip** and **Invoice** will be automatically generated as attachements in new **Sales orders** for applicable Customers and Products.
 ![Sales order notes](media/emea-ita-exil-notes-order.jpg)
-The notes enabled for **Quatation** and **Free text invoice** will be automatically generated in respective documents - quotations and free text invoices.
+The notes enabled for **Quatation** and **Free text invoice** will be automatically generated in respective documents - new quotations and free text invoices.
+
+In **Accounts payable**, the notes will be automatically generated generated as attachements in new **Purchase orders** for applicable Vendors and Products.
+
+> [!NOTE]
+> In As many times as...
 
 ### Advanced notes printing
 External. Standard way.
