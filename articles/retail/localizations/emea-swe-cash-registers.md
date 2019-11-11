@@ -81,6 +81,8 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
   For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
 
 
+    ---
+
 ## Setting up Retail for Sweden
 
 This section describes the settings that are specific to and recommended for Sweden. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
@@ -156,4 +158,8 @@ You must specify the following general settings for Sweden.
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
   For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
+  
+
+    ---
+    
 
