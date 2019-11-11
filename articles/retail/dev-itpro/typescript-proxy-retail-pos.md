@@ -55,40 +55,26 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 > [!IMPORTANT]
 > The following procedure applies only to Microsoft Dynamics 365 Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
 
-You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folder to generate the Typescript proxy for the POS.
+Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\CommerceProxyGenerator.x.x.x.x folder to generate the Typescript proxy for the POS.
 
-[!NOTE] 
-> In the latest version of the Retail there is a folder named CommerceProxyGenerator.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version). This folder is under RetailSDK\Code\References\, with CommerceProxyGenerator.exe and all the libraries mentioned in step 1 pre-copied, so you don’t have to perform step 1 described below. You need to use CommerceProxyGenerator.exe from this folder to generate the proxy.
+1. Before you generate the proxy, copy the customized Retail Server, CRT and other dependent libraries to the **Retail SDK\\Reference** folder.
+2. Open a Command Prompt window as an administrator, and navigate to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
 
-1. Before you generate the proxy, copy the following libraries from **Retail SDK\\Reference\\...** to the **Retail SDK\\Reference** folder:
-
-    - Microsoft.OData.Core.dll@ 6.11.0.0
-    - Microsoft.OData.Edm.dll@ 6.11.0.0
-    - Microsoft.Spatial.dll@ 6.11.0.0
-    - System.Web.Http.dll@ 5.2.2.0
-    - System.Web.OData.dll@ 5.5.1.0
-
-2. Copy the customized Retail Server and CRT libraries to the **Retail SDK\\Reference** folder.
-3. Open a Command Prompt window as an administrator, and navigate to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
-
-    ```
+```
     CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-    
+```
+
 > [!NOTE]
-> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from RetailSDK\Code\References\Microsoft.Dynamics.Retail.RetailServerLibrary.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version).
+> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from RetailSDK\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.x.x.x.x\build\ (x.x.x.x is the version number, which varies based on your SDK version).
 
-Here is an example.
+``` 
+Ex:
+CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19299.3\\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
+```
+In the above command replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
 
-    ``` 
-    CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
-    ```
-
-
-
-    In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
-
-    > [!NOTE]
-    > You must generate the proxy for all Retail Server extensions.
+> [!NOTE]
+> You must generate the proxy for all Retail Server extensions.
 
 ## Generate the C# proxy (7.1 and 7.2)
 
