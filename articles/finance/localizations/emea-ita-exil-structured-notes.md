@@ -83,8 +83,6 @@ The notes enabled for **Quatation** and **Free text invoice** will be automatica
 
 In **Accounts payable**, the notes will be automatically generated generated as attachements in new **Purchase orders** for applicable Vendors and Products.
 
-> [!NOTE]
-> In As many times as...
-
 ### Advanced notes printing
-External. Standard way.
+**External** notes will be printed in related business documents according to Forms setup - in **Headers**, in **Lines** or in both sections.
+![Notes printing](media/emea-ita-exil-notes-printing.jpg)
