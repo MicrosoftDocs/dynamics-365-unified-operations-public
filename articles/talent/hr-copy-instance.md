@@ -37,7 +37,7 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dyna
 
 To copy an instance, you need to ensure the following:
 
-- The Core HR instance you want to overwrite must be a sandbox environment. If it isn't, you need to contact Support to switch it. For information about contacting Support, see [Get support for Microsoft Dynamics 365 Talent](talent-support.md).
+- The Core HR instance you want to overwrite must be a sandbox environment.
 
 - The environments you are copying from and to must be in the same region. You can't copy across regions.
 
