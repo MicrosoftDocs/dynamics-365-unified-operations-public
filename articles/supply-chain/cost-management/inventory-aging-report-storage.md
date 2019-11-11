@@ -2,10 +2,10 @@
 # required metadata
 
 title: Inventory aging report
-description: 
+description: This topic describes the functionality providing the ability to execute the "Inventory aging report" and make the output accessible in a form and chart.
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/10/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-applications
@@ -30,23 +30,25 @@ ms.dyn365.ops.version:
 
 ---
 
-# Inventory aging report storage
+# Inventory aging report
 
-This feature provides you the ability to execute the Inventory aging report and make the output accessible in a form and chart in Dynamics 365 Finance and Operations. The form dynamically adjust columns and aggregate balances depending on the Inventory aging report layout configured. The chart provides a visual overview and support filtering and drill back to details. Additionally a new data entity Inventory aging report has been provided which enables export of a specific inventory aging report execution to a format like Excel or PDF. 
+In Dynamics 365 Supply Chain Management, you can run an "Inventory aging" report and make the output accessible as a form and chart. The form dynamically adjust columns and aggregate balances depending on the configured layout. The chart provides a visual overview and supports filtering and the ability to drill into details. Additionally, a data entity inventory aging report enables export of the results of an inventory aging report run to a format like Excel or PDF. 
 
-Note: This new way of executing the inventory aging report is beneficial in cases where the output contains a large number of lines. 
-Example Requesting Inventory aging by Item, Site and Warehouse in case you have 50.000 items and 300 Stores created as Warehouses. 
+This method of executing the inventory aging report is helpful in cases where the output contains a large number of lines. For example, a large number of lines would be created if you requested inventory aging by item, site, and warehouse in a scenario where you have 50,000 items and 300 stores created as warehouses. 
 
--	A new menu item **Cost management – Inquiries and reports – Inventory aging report storage** has been introduced. 
--	Click **New** to initiate a report execution. A new field **Process Identifier – Name** is visible, enter a unique name for your report. 
--	Select the report **Identification – ID** and filters as required. The report execution is enforced to run in batch. 
--	Once the batch job completes the output of report execution is inserted in the form **Inventory aging report storage**. 
--	Click **View details** to see the output as specified in the layout in a traditional grid
--	Click **View chart** to see the output as specified in an aggregated chart 
+## Run an inventory aging report
 
-Note: The form will not include subtotals defined in the report layout.  
+1. Go to **Cost management > Inquiries and reports > Inventory aging report storage**. 
+1. Click **New** to initiate a report execution. In the **Process Identifier – Name** field, enter a unique name for your report. 
+1.	Select the **Identification – ID** report and filter as needed. The report execution is enforced to run in batch. 
+1. Once the batch job completes, the output is inserted on the **Inventory aging report storage** page. 
+1. Click **View details** to see the output in a traditional grid layout.
+1.Click **View chart** to see the output in an aggregated chart 
 
-A new data entity **Inventory aging report** is introduced. Provides you the ability to export the Inventory aging report output of a specific report by applying a filter on **Process Identifier – Name** to any format supported by Data management.
+> [!NOTE]
+> The form will not include subtotals defined in the report layout.  
+
+The data entity **Inventory aging report** provides you the ability to export the inventory aging report output by applying a filter on **Process Identifier – Name** to any format supported by Data management.
 
 
 
