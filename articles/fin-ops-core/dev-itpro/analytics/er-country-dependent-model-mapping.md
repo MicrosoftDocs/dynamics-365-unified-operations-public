@@ -87,7 +87,7 @@ Follow these steps to define the **Mapping (General) custom** model mapping conf
 
 1.	On the **Configurations** page, in the configurations tree, select **Mapping (General) custom**.
 2.	As required, select **Edit** to make the current page ready for editing.
-3.	Set the **Default for model mapping** option to Yes.
+3.	Set the **Default for model mapping** option to **Yes**.
 4.	Select **Save**.
 
 ![ER configurations page](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
