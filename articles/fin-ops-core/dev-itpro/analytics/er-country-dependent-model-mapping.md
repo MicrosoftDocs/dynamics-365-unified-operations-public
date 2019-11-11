@@ -489,7 +489,7 @@ Notice that the configuration that is created is saved as completed version 1.
 
 [Manage ER model mapping in separate ER configurations](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 
-[Apply country/region context](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lcs-solutions/apply-country-context)
+[Apply country/region context](../lcs-solutions/apply-country-context.md)
 
 ## Frequently asked questions
 
