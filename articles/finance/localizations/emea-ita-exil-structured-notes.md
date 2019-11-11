@@ -48,7 +48,7 @@ Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customers advan
 Once completed, assign the references to the created groups for the required customers in **Accounts receivable** > **Customers** > **All customers** > **Sales orders defaults** (FastTab) > **ADVANCED NOTES** (Section).
 ![Customers groups assignment](media/emea-ita-exil-notes-cust-groups.jpg)
 
-Symmetrically, advanced notes groups can be setup for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes groups** 
+Symmetrically, advanced notes groups can be setup for Vendors in **Accounts payable** > **Setup** > **Avdanced notes** > **Vendors advanced notes groups**.
 
 ### Advanced notes setup for Customers
 Use **Accounts receivable** > **Setup** > **Avdanced notes** > **Customers advanced notes setup** form to enter notes texts and control notes applicability.
@@ -77,8 +77,9 @@ Additionally, define whether the notes are applicable to documents **Header**, *
 
 ## Advanced notes processing
 ### Advanced notes generation
-In Accounts receivable .
+In Accounts receivable, the notes enabled for **Confirmation**, **Picking list**, **Packing slip** and **Invoice** will be automatically generated in **Sales orders** for applicable Customers and Products.
 ![Sales order notes](media/emea-ita-exil-notes-order.jpg)
+The notes enabled for **Quatation** and **Free text invoice** will be automatically generated in respective documents - quotations and free text invoices.
 
 ### Advanced notes printing
 External. Standard way.
