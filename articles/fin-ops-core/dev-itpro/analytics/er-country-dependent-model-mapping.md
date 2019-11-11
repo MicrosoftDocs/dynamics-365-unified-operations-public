@@ -484,9 +484,7 @@ Note that the list of country/region codes is specified for each version of an E
 
 Notice that the configuration that is created is saved as completed version 1.
 
-## Appendix 4
-
-### Additional resources
+## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
 
