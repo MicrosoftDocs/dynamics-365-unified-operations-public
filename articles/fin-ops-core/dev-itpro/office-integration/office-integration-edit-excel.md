@@ -232,6 +232,7 @@ An example of this code can be found on the **LedgerJournalTable** form (**Gener
         }
 
 The following image shows the **General ledger** &gt; **Journals** &gt; **General journal** form with the **Open lines in Excel** button highlighted. 
+
 [![Highlighted Open lines in Excel button](./media/off101i.png)](./media/off101i.png)
 
 To programmatically add generated and template Open in Excel options, Open in Excel options can be added by implementing the ExportToExcelIGeneratedCustomExport and ExportToExcelITemplateCustomExport interfaces. This allows the addition of options to forms where the entity or template doesn’t have the same table as the root datasource. An example of when you would use this capability is on forms without a datasource, potentially containing only a collection of form parts. The following example adds generated and template Open in Excel options programmatically to the **FMRental** form.
@@ -382,7 +383,7 @@ If you are not seeing an expected lookup, validate relationship metadata by chec
   - The authenticated user does not have permission to access the entity targeted by the lookup.
 
 ## How do dimensions work?
-The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Dimensions Overview](../financial/dimensions-overview.md). Lookups, are only generated automatically for non-ledger dimensions. Custom dimensions are not supported curently. If you want to enable lookups for ledger dimensions (MainAccount, Department, CostCenter, etc.), see [Dimensions Overview](../financial/dimensions-overview.md) for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields. When those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or editing each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately. If both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
+The easiest way to set up dimension metadata on data entities is to use the data entity creation wizard, which will automatically create the private relationships and public display value fields exactly as the dimensions framework needs them. If you want to customize your dimensions setup, see [Add dimensions to Excel templates](../financial/dimensions-overview.md). Lookups, are only generated automatically for non-ledger dimensions. Custom dimensions are not supported curently. If you want to enable lookups for ledger dimensions (MainAccount, Department, CostCenter, etc.), see [Add dimensions to Excel templates](../financial/dimensions-overview.md) for guidance on creating relationships on DimensionCombationEntity and DimensionSetEntity fields. When those relationships are present, relationship lookups will be displayed in the Excel Data Connector. The Excel Data Connector supports two types of dimension data entry: editing the display value directly or editing each attribute of the display value in a separate column. If both the display value column and the individual attribute columns are bound, they can both be edited and published separately. If both the display value and an individual attribute are edited in the same row, the individual attribute change overrides the display value change.
 
 ## How do I create formula table columns?
 If a formula is needed in a table, then add a formula column. When in the field selection page for a table binding, click the **Formula** button above the Selected fields list to add a new formula column. The label and value for the formula are entered in the fields immediately below the Selected fields list. After adding a new formula column, leave the value empty and click **Update**. After the field has been added to the table, use standard Excel capabilities to create a formula, then copy the formula and paste it into the formula column value field. When defining a formula, make sure there is more than one row in the table, otherwise the formula that Excel provides may be for ALL rows instead of THAT row. To specify just the current row, the at sign (@) is needed. For example, sum of four columns for all rows "=SUM(Table1\[\[ColumnA\]:\[ColumnD\]\])" versus sum of four columns for the current row "=SUM(Table1\[@\[ColumnA\]:\[ColumnD\]\])".
@@ -401,11 +402,15 @@ To resolve this, change the binding information in the affected template so that
 1.  For the DataEntity.Name that needs to be replaced, determine the DataEntity.PublicEntityName, for example replace FMCustomerEntity with FleetCustomer.
 2.  Find the affected template.
 3.  Change the file extension on the template from .xlsx to .zip.
+
     [![Rename dialog box](./media/off101m.png)](./media/off101m.png)
+    
 4.  The file to be changed will be one of the webextension\*.xml files in the xlwebextensions directory, such as 2015-05-25-FleetCustomersWithLocations.zipxlwebextensionswebextension2.xml.
 5.  Open the file to ensure that you have the correct location.
 6.  Find the DataEntity.Name,  such as FMCustomerEntity.
+
     [![Find DataEntity.Name](./media/off101n.png)](./media/off101n.png)
+    
 7.  Extract the zip file.
 8.  Open the webextension xml file.
 9.  Replace the DataEntity.Name with the corresponding DataEntity.PublicEntityName.
