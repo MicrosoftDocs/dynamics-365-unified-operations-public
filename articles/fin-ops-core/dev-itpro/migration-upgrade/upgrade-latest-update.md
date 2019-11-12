@@ -36,12 +36,12 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic explains the process of updating or upgrading to the latest release of Finance and Operations. It describes the overall process and supported scenarios, but it doesn't provide detailed instructions for every step of the process.
 
-For information about the contents of each release of Finance and Operations, see [What's new or changed](../../fin-ops/get-started/whats-new-changed.md).
+For information about the contents of each release of Finance and Operations, see [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).
 
 For information about One Version service updates, see the [One Version service updates overview](../lifecycle-services/oneversion-overview.md).
 
 > [!Note]
-> For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX2012 to Finance and Operations](upgrade-overview-2012.md).
+> For those looking to upgrade to Finance and Operations from Microsoft Dynamics AX 2012, please see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md).
 
 ## Definitions
 
@@ -57,19 +57,19 @@ There are three primary paths to get to the latest version of Finance and Operat
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
 
-[Perform self-service upgrade](../migration-upgrade/self-service-upgrade.md).
+[Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).
 
 ### Rebuild and update
 *Applicable starting version: Microsoft Dynamics 365 for Finance and Operations 8.0*<br/>
 *Scope: Moderate*<br/>
 This path involves removing Microsoft X++ hotfixes, and creating a merged update package.
 
-[Rebuild and update](../migration-upgrade/appupdate-80-81.md).
+[Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).
 
 ### Automatic update
 *Applicable starting version: Finance and Operations 8.1.0+*<br/>
 *Scope: Simple*<br/>
 This path involves configuring your project for continuous updates.
 
-[Configure service updates](../lifecycle-services/configure-service-updates.md).
+[Configure service updates through Lifecycle Services (LCS)](../lifecycle-services/configure-service-updates.md).
 
