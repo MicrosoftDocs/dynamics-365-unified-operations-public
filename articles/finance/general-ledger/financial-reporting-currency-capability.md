@@ -6,18 +6,24 @@ Financial reporting has a wide variety of features in order to support complex c
 * Translate to any currency setup within Dynamics 365 for Finance
 
 ## Filtering by currency
+By default all report amounts are summarized and presented in the accounting currency of that company. If you need to do additional analysis by the transactions and related currencies, you can do by setting filters on the report. 
 
+* In the column definition, you can use the <b> Currency filter </b> for any amount column and specify the ISO code of the currency you want to restric the column to. By setting the column to a specific currency, only transactions entered for that currency will be displayed. 
 
+* In the row definition, you can specify a <b> Row modifier </b> with the attribute set to <b> Transaction currency </b> with a currency code listed as the restriction. By setting the row to a specific currency, likewise only transactions entered for the matching currency will be displayed. 
 
 
 ## Reporting on currency
 By default, any amount appearing in a report will appear as the accounting currency amount. Any of the following actions will cause some level of translation to take place:
-* Use of a reporting tree to summarize multiple legal entites with different accounting currencies
-* Modifying the currency display field in the column definition from blank or to something other than accounting currency
-* Modifying the (?) currency in the row definition
-* Using the (?) currency in the web viewer or the options pane of the web viewer
+* Modifying the <b>Currency display</b> field in the column definition to <b>Reporting currency from Ledger</b>, which will bring back translated amounts as calculated in Dynamics in the Reporting currency
+* Modifying the <b> Currency display </b> field in the column definition to <b> Transaction currency </b>, which will force the report to total different currencies together and display the entered amount in the column, regardless of currency
+* Modifying the <b> Currency display </b> field in the column definition to any of the <b> Translate to ... </b> options, which will perform the currency translation within Financial reporting
 
-For amounts being translated, the following types of translation are available for use, as defined on each MainAccount. 
+Additionally, the following actions will also cause translation:
+* Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity defined in the Reporting Tree or logged current logged in company if the @ANY company is used. 
+* Using the <b>Currency</b> button in the web report viewer or the <b>Include all reporting currencies</b> button in Report Designer will cause additional versions of the report using translated data to be generated for each currency selected. 
+
+For amounts being translated within Financial reporting, the following types of translation are available for use, as defined on each MainAccount. 
 
 | Translation type  |  Description |  Example rate calculation |   
 |---|---|---|
@@ -47,10 +53,6 @@ Retained earnings is special in that it is expecting a specific account category
 
 ### Setup for Budget
 
-### Example - Balance Sheet
-
-
-### Example - Income Statement
 
 
 Financial reporting attributes related to currency
