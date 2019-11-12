@@ -153,7 +153,7 @@ You must specify the following general settings for Sweden.
 
    # [Retail 10.0.6 and earlier](#tab/retail-10-0-6)
 
-  For more details about on setting up integration with control units in previous versions see a respective section in the [integration sample](./retail-sdk-control-unit-sample.md#control-unit–specific-settings). 
+  For more details about on setting up integration with control units in previous versions see a respective section in the [integration sample](./retail-sdk-control-unit-sample.md#control-unitspecific-settings). 
 
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
