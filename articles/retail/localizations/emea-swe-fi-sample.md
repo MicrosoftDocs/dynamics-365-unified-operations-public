@@ -74,7 +74,7 @@ Where
 
 Control units support up to 4 different VAT code, so VAT code mapping may be set up as shown below:
 
-*1 : code1 ; 2 : code2 ; 2 code3 ; 3 : code4 ; 4 : code5*
+*1 : code1 ; 2 : code2 ; 2 : code3 ; 3 : code4 ; 4 : code5*
 
 
 ### Limitations of the sample
