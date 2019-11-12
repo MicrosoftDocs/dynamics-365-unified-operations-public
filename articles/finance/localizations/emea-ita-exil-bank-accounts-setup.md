@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improvement of bank accounts setup
-description: This topic provides information about how to save time and simplify bank data registration for customers and vendors.
+description: This topic explains how you can help save time and simplify bank data registration for customers and vendors.
 author: ilkond
 manager: AnnBe
 ms.date: 11/12/2019
@@ -32,54 +32,52 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-Companies often need to enter and maintain a large amount of banking information. The cost of entering incorrect bank information can be very high. This topic explains how to save time and simplify bank data registration by importing Italian bank information from reliable sources, and how reduce the risk of making mistakes using bank data for customers and vendors.
+Companies often have to enter and maintain a large amount of banking information. The cost of entering incorrect bank information can be very high. To help save time and simplify bank data registration, you can import Italian bank information from reliable sources. In this way, you help reduce the risk of errors when bank data for customers and vendors is used.
 
 ## Prerequisites
+
 Before you begin, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- The feature, **Bank account setup enhancement** must be enabled in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The **Bank account setup enhancement** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Import bank groups
 
-Import the list of banks using the **Bank groups** entity and the **Data management** framework.
-For more information, see [Data import and export jobs overview](../dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
+You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
 
-The source data for bank import can be presented as a Microsoft Excel file with the following column structure:
+The source data that is used to import bank groups can be presented as a Microsoft Excel file that has the following column names:
 
-| Column names        |
-|---------------------|
-| BANKGROUPID         |
-| ADDRESSCITY         |
-| ADDRESSCOUNTRY      |
-| ADDRESSCOUNTY       |
-| ADDRESSDESCRIPTION  |
-| ADDRESSDISTRICTNAME |
-| ADDRESSLATITUDE     |
-| ADDRESSLOCATIONID   |
-| ADDRESSLONGITUDE    |
-| ADDRESSSTATE        |
-| ADDRESSSTREET       |
-| ADDRESSTIMEZONE     |
-| ADDRESSVALIDFROM    |
-| ADDRESSVALIDTO      |
-| ADDRESSZIPCODE      |
-| NAME                |
-| ROUTINGNUMBER       |
-| ROUTINGNUMBERTYPE   |
-| STATEMENTFORMATID   |
-| SUFFIX              |
-| BRANCHNAME_IT       |
+- BANKGROUPID
+- ADDRESSCITY
+- ADDRESSCOUNTRY
+- ADDRESSCOUNTY
+- ADDRESSDESCRIPTION
+- ADDRESSDISTRICTNAME
+- ADDRESSLATITUDE
+- ADDRESSLOCATIONID
+- ADDRESSLONGITUDE
+- ADDRESSSTATE
+- ADDRESSSTREET
+- ADDRESSTIMEZONE
+- ADDRESSVALIDFROM
+- ADDRESSVALIDTO
+- ADDRESSZIPCODE
+- NAME
+- ROUTINGNUMBER
+- ROUTINGNUMBERTYPE
+- STATEMENTFORMATID
+- SUFFIX
+- BRANCHNAME\_IT
 
 > [!NOTE]
-> The **BANKGROUPID** must have the same value as the **ROUTINGNUMBER**.
+> The **BANKGROUPID** value must match the **ROUTINGNUMBER** value.
 
 ## Use the enhanced list of bank groups
 
-When the **Bank account setup enhancement** feature is enabled, additional descriptive fields  **Bank branch name** and **City** are available for bank groups.
+When the Bank account setup enhancement feature is turned on, two additional descriptive fields, **Branch name** and **City**, become available for bank groups.
 
-![Clearing the main account](media/emea-ita-exil-bank-pic.jpg)
+![Branch name and City fields](media/emea-ita-exil-bank-pic.jpg)
 
-During the bank account set up, the list of bank groups additional descriptive fields are available for more precise banks selection.
+During the setup of a bank account, the additional descriptive fields for bank groups are available and allow for more precise selection of a bank.
 
-![Clearing the main account](media/emea-ita-exil-bank-pic2.jpg)
+![Additional descriptive fields in a bank account setup](media/emea-ita-exil-bank-pic2.jpg)
