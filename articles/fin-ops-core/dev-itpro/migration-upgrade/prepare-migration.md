@@ -50,13 +50,15 @@ You will need access to a Finance and Operations development environment using R
 ## Overview of the code migration process
 ### Model split
 
-The Finance and Operations application is split into several packages, or assemblies: Platform Packages
+The Finance and Operations application is split into several packages, or assemblies: 
+
+**Platform Packages**
 
 -   Application Platform
 -   Application Foundation
 -   Test Essentials
 
-Application Packages
+**Application Packages**
 
 -   Application Suite
 -   Other application packages.
