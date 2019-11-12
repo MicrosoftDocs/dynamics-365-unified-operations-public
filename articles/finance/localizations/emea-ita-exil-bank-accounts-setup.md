@@ -43,7 +43,7 @@ Before you begin, the following prerequisites must be met:
 ## Import bank groups
 
 Import the list of banks using the **Bank groups** entity and the **Data management** framework.
-For more information, see [Data import and export jobs overview](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
+For more information, see [Data import and export jobs overview](../dev-itpro/data-entities/data-import-export-job?toc=/fin-and-ops/toc.json).
 
 The source data for bank import can be presented as a Microsoft Excel file with the following column structure:
 
