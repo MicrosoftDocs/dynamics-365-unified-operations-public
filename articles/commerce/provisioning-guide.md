@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -63,7 +63,8 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce P
 ### Before starting
 ##### Grant access to e-Commerce applications
 
-*Note: **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.*
+> [!NOTE]
+> **The person logging in needs to be AAD tenant administrator**. Without successfully completing this step, the rest of the provisioning steps will fail.
 
 1. For this step, you need your **AAD Tenant Id**. You need to authorize e-Commerce applications to access your Azure subscription. The easiest way to accomplish this is to assemble a URL like this:
 
@@ -139,7 +140,8 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 ![Project creation - versions](./media/import.png)
 ### Deploy environment
 
-*Note: It is possible that steps 6, 7, and/or 8 will not be shown, as the screens with single option are skipped. When you are in the **Environment parameters** view, please confirm that you have the text "Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)" directly above the **Environment name** field. See the screenshot below.*
+> [!NOTE]
+> It is possible that steps 6, 7, and/or 8 will not be shown, as the screens with single option are skipped. When you are in the **Environment parameters** view, please confirm that you have the text "Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)" directly above the **Environment name** field. See the screenshot below.*
 
 1. From the top menu, select **Cloud-hosted environments**.
 1. Click **+ Add** to add an environment.
@@ -402,7 +404,8 @@ These tokens will be replaced at email rendering time with the actual values tha
 
 **Sales line** - The following tokens are populated for each product in the order.
 
-*Note: Place the **Product list - start** and **Product list - end** tokens at the beginning and end of the HTML block that repeats for every product.*
+> [!NOTE]
+> Place the **Product list - start** and **Product list - end** tokens at the beginning and end of the HTML block that repeats for every product.*
 
 |Name of the token|Token|
 |---|---|
