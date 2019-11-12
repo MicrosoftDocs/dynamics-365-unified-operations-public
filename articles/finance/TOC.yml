@@ -2255,6 +2255,8 @@
             href: localizations/rus-sales-books-purchase-books.md
           - name: Prepayments management
             href: localizations/rus-prepayments-management.md
+          - name: Incoming VAT restoring
+            href: localizations/rus-incoming-VAT-restoring.md.md
         - name: Fixed assets
           items: 
           - name: Managing fixed assets
