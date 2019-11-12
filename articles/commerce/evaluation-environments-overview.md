@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce preview environment overview
-description: This topic gives an overview of the Commerce preview environment for Microsoft Dynamics 365 Commerce.
+description: This topic gives an overview of the Microsoft Dynamics 36 Commerce preview environment.
 author: v-chgri
 manager: annbe
 ms.date: 11/15/2019
@@ -33,17 +33,17 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic gives an overview of the Commerce preview environment for Microsoft Dynamics 365 Commerce.
+This topic gives an overview of the Microsoft Dynamics 36 Commerce preview environment.
 
 ## Overview
 
-The Microsoft Dynamics 365 Commerce preview environment is an optional end-to-end preview environment of Dynamics 365 Commerce that allows potential customers to try out the Commerce product before its general release. 
+The Microsoft Dynamics 365 Commerce preview environment is an optional end-to-end preview environment of Dynamics 365 Commerce that allows potential customers to try out the Commerce product before its general release to the public. 
 
 The Commerce preview environment provides the complete Commerce experience with some minor restrictions that don't impact features or functionality, and can be used by customers and implementation partners to evaluate the product, provide feedback, and do fit/gap analysis.
 
 ## Commerce preview environment limitations
 
-Although the Commerce preview environment provides the full features and functionality of Dynamics 365 Commerce, there are some minor limitations:
+Although the Commerce preview environment provides the full features and functionality of Dynamics 365 Commerce, there are some minor limitations as follows:
 
 - The Commerce preview environment is only available for use in the United States.
 - Use of the Commerce preview environment is time-limited to 30 days from acceptance into the Dynamics 365 Commerce Preview program.
