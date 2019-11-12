@@ -2,7 +2,7 @@
 # required metadata
 
 title: Talent updates
-description: This topic provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
+description: This article provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/31/2019
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 Talent is a true software as a service (SaaS) that provid
 
 ## Update policy
 
-Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for product support availability.
+Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which gives you consistent and predictable guidelines for the availability of support.
 
 ## Release cadence
 
@@ -45,7 +45,7 @@ Talent updates are applied to all environments automatically. Talent provides tw
 
 - **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new).
 
-- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. They're available on all data centers once they're released, so you can manually apply these updates on any environment in any data center if you don't want to wait for the updates to replicate automatically.
+- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. These updates are available on all data centers once they're released. If you don't want to wait for the updates to replicate automatically, you can manually apply these updates on any environment in any data center.
 
 When needed, Talent also provides the following types of fixes:
 
@@ -53,7 +53,7 @@ When needed, Talent also provides the following types of fixes:
 
 - **Emergency fix**: proactive and reactive hotfixes that are standalone in nature, can include configuration-only or code changes to resolve live site issues, and can occur apart from a weekly service update release
 
-Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they are then deployed to production.
+Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they're then deployed to production.
 
 Releases roll out to production environments in the following order:
 
