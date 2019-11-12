@@ -84,14 +84,14 @@ To add a content placement module that contains a content placement item module 
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Account management pages](account-management.md)
+[Alert module](add-alert.md)
 
-[Container module](add-container-module.md)
+[Carousel module](add-carousel.md)
 
-[Buy box module](add-buy-box.md)
+[Content rich block module](add-content-rich-block.md)
 
-[Cart module](add-cart-module.md)
+[Feature module](add-feature-module.md)
 
-[Checkout module](add-checkout-module.md)
+[Hero module](add-hero-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Video player module](add-video-player.md)

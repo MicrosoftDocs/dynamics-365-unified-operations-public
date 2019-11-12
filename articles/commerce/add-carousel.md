@@ -81,16 +81,14 @@ To add a carousel module to a new page and set the required properties, follow t
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Container module](add-container-module.md)
+[Alert module](add-alert.md)
 
-[Buy box module](add-buy-box.md)
+[Content rich block module](add-content-rich-block.md)
 
-[Cart module](add-cart-module.md)
+[Content placement module](add-content-placement-modules.md)
 
-[Checkout module](add-checkout-module.md)
+[Feature module](add-feature-module.md)
 
-[Order confirmation module](order-confirmation-module.md)
+[Hero module](add-hero-module.md)
 
-[Header module](author-header-module.md)
-
-[Footer module](author-footer-module.md)
+[Video player module](add-video-player.md)

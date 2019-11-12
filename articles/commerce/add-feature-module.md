@@ -85,9 +85,7 @@ To add a feature module to a new page and set the required properties, follow th
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
+[Alert module](add-alert.md)
 
 [Carousel module](add-carousel.md)
 
@@ -95,6 +93,6 @@ To add a feature module to a new page and set the required properties, follow th
 
 [Content placement module](add-content-placement-modules.md)
 
-[Header module](author-header-module.md)
+[Hero module](add-hero-module.md)
 
-[Footer module](author-footer-module.md)
+[Video player module](add-video-player.md)
