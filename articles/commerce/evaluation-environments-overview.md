@@ -43,13 +43,16 @@ The Commerce preview environment provides the complete Commerce experience with 
 
 ## Commerce preview environment limitations
 
-Although the Commerce preview environment provides the features and functionality of the full Commerce product, there are some minor restrictions as follows.
+Although the Commerce preview environment provides the features and functionality of the full Commerce product, there are some minor limitations:
 
-- The Commerce preview environment is limited for use in the United States only.
+- The Commerce preview environment is only available for use in the United States.
 - Use of the Commerce preview environment is time-limited to 30 days from acceptance into the Dynamics 365 Commerce Preview program.
-- The Commerce preview environment can only be successfully deployed and initialized on an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM). The main limitation of this is the number of current users the preview environment can support.
+- The Commerce preview environment can only be successfully deployed and initialized on an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM). The main limitation of this is the number of current users that the preview environment can support.
 - The Commerce preview environment can only be used until the general availability (GA) of the Dynamics 365 Commerce product. New demo environments will be available after GA.
 
+## Get started
+
+To get started using the Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
 
 ## Additional resources
 
