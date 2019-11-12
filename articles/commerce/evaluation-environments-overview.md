@@ -54,5 +54,6 @@ Although the Commerce preview environment provides the features and functionalit
 ## Additional resources
 
 [Provision a Commerce preview environment](provisioning-guide.md)
-[E-Commerce evaluation FAQ](TBD)
+
+[Commerce preview environment FAQ](TBD)
 
