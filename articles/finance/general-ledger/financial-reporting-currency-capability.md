@@ -1,4 +1,4 @@
-## Overview
+# Overview
 Financial reporting has a wide variety of features in order to support complex currency reporting requirements. Financial reporting can report on any of the following currency amounts:
 * Accounting currency amount 
 * Reporting currency amount 
@@ -49,13 +49,7 @@ The Currency translation type will determine how each main account is translated
 ### Setup for Retained Earnings
 Retained earnings is special in that it is expecting a specific account category
 
-## Currency Translation Adjustment
-Currency Translation adjustment is an import concept that users will likely want to incorporate into their reporting. 
-More details TBD
 
-### Setup to determine what translation currencies are available
-
-### Setup for Budget
 
 ## Report design elements related to currency
 The following are additional report design elements that can be used when doing reporting on currencies
@@ -78,6 +72,17 @@ The places where currency symbols are used are:
 * Currency code
 * Transaction currency
 * Acquisition date
+
+### Currency Translation Adjustment
+The currency translation adjustment (CTA) is the difference between the rates used to calculate the balance sheet accounts and the rate used for the income statement accounts. This difference in rates will cause the balance sheet to be out of balance. 
+
+You can use Financial reporting to calculate the CTA in two ways: 
+
+1. Use the Rounding Adjustments form in the row definition
+
+When you enter the row in which you want to display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting ill calculate this difference and put it in the desired row. A line named Rounding Adjustment will be created and shown upon drill-down, as shown in Figure 24. 
+ 
+2. Put all of the accounts in a range, from assets to expenses. This difference will be the same amount as the rounding adjustment (CTA) and can be used as a check total to make sure the rounding adjustment form is not including any missed account balance
 
 Resources for more information
 * https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2014/01/23/acquisition-date-attribute-for-dynamics-ax-2012-cu7-feature/
