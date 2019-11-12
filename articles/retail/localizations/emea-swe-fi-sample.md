@@ -456,7 +456,7 @@ Disable extensions released previously.
 
 ### Production environment
 
-1. Complete the steps in the [Modern POS extensions uptake](#Modern-POS-extensions-uptake) and [Cloud POS extensions uptake](#Cloud-POS-extensions-uptake) sections earlier in this topic.
+1. Complete the steps in the [Modern POS extensions uptake](#modern-pos-extensions-uptake) and [Cloud POS extensions uptake](#cloud-pos-extensions-uptake) sections earlier in this topic.
 
 2. Remove the old the CRT sample registration in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
