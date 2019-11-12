@@ -128,8 +128,8 @@ Open the Document Parameters form and ensure that the SharePoint server has been
 
 ## Additional resources
 
-[Office Integration lab and walkthroughs](office-integration-tutorial.md)
+[Office integration tutorial](office-integration-tutorial.md)
 
-[Office Integration Troubleshooting](office-integration-troubleshooting.md)
+[Troubleshoot the Office integration](office-integration-troubleshooting.md)
 
 [Application stack and server architecture](../dev-tools/application-stack-server-architecture.md)
