@@ -68,6 +68,7 @@ This topic provides information about functionality that supports Russian regula
 - [VAT declaration](rus-VAT-declaration.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
 - [Prepayments management](rus-prepayments-management.md)
+- [Incoming VAT restoring](rus-incoming-VAT-restoring.md)
 
 ## Fixed assets (Russia)
 - [Fixed assets (Russia)](rus-fixed-assets.md)
