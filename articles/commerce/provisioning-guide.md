@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Configure an e-Commerce evaluation environment
-description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment.
+title: Provision a Commerce preview environment
+description: This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 10/15/2019
+ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -29,14 +29,15 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Configure an e-Commerce evaluation environment
+# Provision a Commerce preview environment
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce Preview environment. Before you begin, we recommend that you at least skim through the documentation to get an idea of what the process entails and what the guide contains.
+This guide provides step-by-step instructions for provisioning and configuring your Microsoft Dynamics 365 Commerce preview environment. Before you begin, we recommend that you at least skim through the documentation to get an idea of what the process entails and what the guide contains.
 
-*Note: If you have not been granted access to the Microsoft Dynamics 365 Commerce Preview yet, you can request preview access from the [Commerce website](https://aka.ms/Dynamics365CommerceWebsite).*
+> [!NOTE]
+> If you have not been granted access to the Microsoft Dynamics 365 Commerce Preview yet, you can request preview access from the [Commerce website](https://aka.ms/Dynamics365CommerceWebsite).
 
 ## Summary
 To provision the environment successfully, the project needs to be created with a specific product name and type. The environment and Retail Cloud Scale Unit also have some specific parameters you need to use to start the e-Commerce provisioning later. The instructions in this guide contain all the required steps you need to take and parameters you need to use.
