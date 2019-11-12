@@ -184,23 +184,23 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
        - Select **Inventory \> Cost explorer** to review the relation between sold items and bought items for lines where the **Expense type** field is set to **Direct**.
        - Select **Totals** to open the **VAT restoring journal total amounts** dialog box, where you can view the totals of all amounts that are calculated in the journal:
 
-             - **Total revenue amounts** – The fields in this section show the amounts that are calculated on all invoices for the period. The **Export** field shows the amount that is calculated on export invoices for the period.
+            - **Total revenue amounts** – The fields in this section show the amounts that are calculated on all invoices for the period. The **Export** field shows the amount that is calculated on export invoices for the period.
 
-             - **Factors** – This section has two fields:
+            - **Factors** – This section has two fields:
 
-                 - **Export, %** – The revenue share on export operations. This value is calculated by using the following formula:
+                - **Export, %** – The revenue share on export operations. This value is calculated by using the following formula:
 
-                     Export, % = Export revenue ÷ Total revenue
+                    Export, % = Export revenue ÷ Total revenue
 
-                 - **Nontaxable, %** – The revenue share on tax-exempt operations. This value is calculated by using the following formula:
+                - **Nontaxable, %** – The revenue share on tax-exempt operations. This value is calculated by using the following formula:
 
-                     Nontaxable, % = Tax-exempt revenue ÷ Total revenue
+                    Nontaxable, % = Tax-exempt revenue ÷ Total revenue
                 
                  > [!NOTE]
                  > When revenue amounts are calculated, VAT amounts are excluded.
 
-             - **VAT** – The fields in this section show the total VAT amounts that must be restored on export or non-taxable operations, and on fixed assets that aren't fully depreciated and are written off.
-             - **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The fields in these sections show the totals for direct and indirect VAT, including amounts for fixed assets that are used in export or non-taxable operations.
+            - **VAT** – The fields in this section show the total VAT amounts that must be restored on export or non-taxable operations, and on fixed assets that aren't fully depreciated and are written off.
+            - **Indirect costs**, **Direct costs**, and **Included fixed assets:** – The fields in these sections show the totals for direct and indirect VAT, including amounts for fixed assets that are used in export or non-taxable operations.
 
             ![](media/2%20VAT%20restoring%20journal%20totals.jpg) 
 
@@ -210,12 +210,12 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
            
            For each invoice in the **Revenue calculation** dialog box, you can perform the following actions:
            
-             - Review revenue amounts in the **Total revenue**, **Export**, **Domestic market**, and **Not liable to VAT** fields.
-                 > [!NOTE]
-                 > For a domestic invoice, the **Sales tax code** field uses the **Standard VAT** or **Reduced VAT** sales tax type. For an export invoice, the **Sales tax code** field uses the **VAT 0%** sales tax type. For a non-taxable invoice, the **Sales tax code** field is blank.
+            - Review revenue amounts in the **Total revenue**, **Export**, **Domestic market**, and **Not liable to VAT** fields.
+                > [!NOTE]
+                > For a domestic invoice, the **Sales tax code** field uses the **Standard VAT** or **Reduced VAT** sales tax type. For an export invoice, the **Sales tax code** field uses the **VAT 0%** sales tax type. For a non-taxable invoice, the **Sales tax code** field is blank.
            
-             - Select or clear the **Include** check box to include or exclude an invoice from the calculation of revenue for the period.  
-             - When you've finished, select **OK**. Then, on the **VAT restoring journal** page, select **Apply changes** to recalculate revenue amounts.
+            - Select or clear the **Include** check box to include or exclude an invoice from the calculation of revenue for the period. 
+            - When you've finished, select **OK**. Then, on the **VAT restoring journal** page, select **Apply changes** to recalculate revenue amounts.
 
        - Select **VAT distribution** to open the **VAT distribution** dialog box, where you can view a list of export sales invoices. For each invoice, the system calculates the following information:
 
