@@ -1063,6 +1063,8 @@
           href: master-planning/planning-optimization/plan-filters.md
         - name: View plan history and planning logs
           href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Auto-firming with Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-auto-firming.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
       - name: Master plans
