@@ -48,18 +48,20 @@ If you have any questions about the provisioning steps or you encounter any issu
 
 ## Prerequisites
 The following are prerequisites for provisioning your Dynamics 365 Preview environment:
-* You have access to the **Lifecycle Services portal (LCS)**
-* You have been **accepted into the Dynamics 365 Commerce Preview program**
-* You have the required permissions to create a project for **Prospective presales** or **Migrate, create solutions, and learn**
-* You are a member of the **Environment manager** or **Project Owner** role in the project where you will be provisioning the environment
-* You have admin access to your Azure subscription, or contact with a subscription admin who can perform the two steps that require admin permissions on your behalf
-* You have your **AAD Tenant Id** available
-* You have created a **AAD security group** to be used as **e-Commerce system admins group** and you have its ID available
-* You have created a **AAD security group** to be used as **Ratings and Reviews moderator group** and you have its ID available (can be the same SG as the system admin group above)
+* You have access to the **Lifecycle Services portal (LCS)**.
+* You have been **accepted into the Dynamics 365 Commerce Preview program**.
+* You have the required permissions to create a project for **Prospective presales** or **Migrate, create solutions, and learn**.
+* You are a member of the **Environment manager** or **Project Owner** role in the project where you will be provisioning the environment.
+* You have admin access to your Azure subscription, or contact with a subscription admin who can perform the two steps that require admin permissions on your behalf.
+* You have your **AAD Tenant Id** available.
+* You have created a **AAD security group** to be used as **e-Commerce system admins group** and you have its ID available.
+* You have created a **AAD security group** to be used as **Ratings and Reviews moderator group** and you have its ID available (can be the same SG as the system admin group above).
 ## Provisioning preview environment
 These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce Preview environment. After successfully completing these steps, you will have a Preview environment that is ready to be configured. All the activities described here take place in the LCS portal.
 
-*Please note that the preview access is tied to the LCS account and organization you specified in your preview application. You need to use that same account for provisioning. If you have to use different LCS account or tenant for the Preview environment, you need to provide us with those details. For contact information, please see "Additional resources" below.*
+> [!NOTE]
+> Preview access is tied to the LCS account and organization you specified in your preview application. You need to use that same account for provisioning. If you have to use different LCS account or tenant for the Preview environment, you need to provide us with those details. For contact information, please see "Additional resources" below.
+
 ### Before starting
 ##### Grant access to e-Commerce applications
 
