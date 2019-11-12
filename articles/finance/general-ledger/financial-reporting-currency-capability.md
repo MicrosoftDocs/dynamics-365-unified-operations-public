@@ -40,7 +40,7 @@ The exchange rate type defines the table of exchange rates and currencies to be 
 * You can also specify an override of an exchange rate type for a legal entity which will override the default behavior. 
 * If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.
 
-## Setup for Currency translation type
+### Setup for Currency translation type
 The Currency translation type will determine how each main account is translated. Exchange rate type can also be configured in multiple locations. 
 * Within the main accounts form within General ledger there is an option for Currency translation type on the Financial reporting fast tab. 
 * You can also specify an override of an exchange rate type for a legal entity which will overide the default behavior. 
@@ -49,13 +49,34 @@ The Currency translation type will determine how each main account is translated
 ### Setup for Retained Earnings
 Retained earnings is special in that it is expecting a specific account category
 
+## Currency Translation Adjustment
+Currency Translation adjustment is an import concept that users will likely want to incorporate into their reporting. 
+More details TBD
+
 ### Setup to determine what translation currencies are available
 
 ### Setup for Budget
 
+## Report design elements related to currency
+The following are additional report design elements that can be used when doing reporting on currencies
+
+### Auto text codes
+Users can dynamically see the currency symbol, code, and description they have defined in Dynamics when the currency is changed. Three auto text options have been added to Financial reporting to enable this functionality:
+* Currency symbol (@CurrencySymbol)
+* Currency code (@CurrencyCode)
+* Currency description (@CurrencyDescription)
+You can add the auto text both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. 
+
+The places where currency symbols are used are:
+* Display currency symbol on first row which is defined in the Report Definition
+* Use currency format in this row (CS), defined in the Row Definition
+* Format Overrides defined in the Row and Column Definition
 
 
-Financial reporting attributes related to currency
+### Financial reporting attributes related to currency
+* Account Currency
+* Currency code
+* Transaction currency
 * Acquisition date
 
 Resources for more information
