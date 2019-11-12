@@ -88,7 +88,7 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 ### Customize the app
 - [Add custom fields](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
-- [Embed PowerApps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+- [Embed Power Apps](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
 ### Expenses
 - [Expense experience](https://youtu.be/Ocy-MsTvEE0)

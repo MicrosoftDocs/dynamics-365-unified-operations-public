@@ -190,7 +190,7 @@ Click the **Settings** button for the new destination record. Then, in the **Des
     [![Updated map](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## Access Power BI report in Finance
-Set up the integration with Power BI. For more information, see [Configuring Power BI integration for workspaces](configure-power-bi-integration.md).
+Set up the integration with Power BI. For more information, see [Configure Power BI integration for workspaces](configure-power-bi-integration.md).
 
 1. On the **Electronic reporting** workspace page that supports Power BI integration (**Organization administration** &gt; **Workspaces** &gt; **Electronic reporting workspace**), click **Options** &gt; **Open report catalog**.
 2. Select the **Import and export details** Power BI report that you created, to show that report as an action item on the selected page.
@@ -200,6 +200,6 @@ Set up the integration with Power BI. For more information, see [Configuring Pow
 
 ## Additional resources
 
-[Electronic reporting destinations](electronic-reporting-destinations.md)
+[Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 
-[Electronic reporting overview](general-electronic-reporting.md)
+[Electronic reporting (ER) overview](general-electronic-reporting.md)

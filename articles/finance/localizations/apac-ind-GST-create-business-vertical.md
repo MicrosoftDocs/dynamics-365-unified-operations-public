@@ -50,4 +50,3 @@ Follow these steps to create a business vertical.
 3. Enter a name, description, and entity code for the new business vertical.
 4. Select **Close**.
 
-![Business verticals](media/IND-GST-BusinessVertical.png)

@@ -66,7 +66,7 @@ The following table provides an overview of the visualizations that are included
 
 ## Understanding the data model and entities
 
-The following data is used for the report pages in the **Production performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. To learn more about the entity store, see [Power BI integration with Entity Store](power-bi-integration-entity-store.md).
+The following data is used for the report pages in the **Production performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. To learn more about the entity store, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following table shows the key aggregate measurements that are used as the basis of the Power BI content.
 

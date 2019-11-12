@@ -79,7 +79,7 @@ Use the **Posting invoice for payment** page to post an invoice for payment.
 
 1.  Click **Accounts receivable** \> **Common** \> **Invoices** \> **All free text invoices**.
 
-2.  Create a new free text invoice, and enter the required details. For more information, see [Create a free text invoice](../accounts-receivable/create-free-text-invoice-new.md).
+2.  Create a new free text invoice, and enter the required details. For more information, see [Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md).
 
 3.  On the action pane, click **Post** \> **Invoice for payment** to open the **Posting invoice for payment** page.
     

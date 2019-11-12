@@ -50,7 +50,7 @@ Yes, the year-end process can be run multiple times for the same set of data. Ty
 Year-end processing of general ledger balances is controlled by fund configuration settings in two places:
 
 -   The year-end process of closing ledger balances in the old year and establishing opening balances in the new year is done by using the **Opening transactions** page. A single fund or range of funds is required for processing.
--   The year-end processing option for purchase order encumbrances is set on the **Purchase order year-end process** page. You can override the option on a specific fund, provided that the general ledger parameters have been set to allow for overrides. To learn more about the parameter settings, see [General ledger in the public sector](general-ledger-public-sector.md).
+-   The year-end processing option for purchase order encumbrances is set on the **Purchase order year-end process** page. You can override the option on a specific fund, provided that the general ledger parameters have been set to allow for overrides. To learn more about the parameter settings, see [General ledger in the public sector overview](general-ledger-public-sector.md).
 
 ## How do I set up main accounts for year-end processing?
 You must select a close type for every account in your chart of accounts. The close type determines how the year-end process handles that main account. There are four close types:

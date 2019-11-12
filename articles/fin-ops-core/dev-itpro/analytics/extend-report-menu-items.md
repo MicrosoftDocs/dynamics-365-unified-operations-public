@@ -52,7 +52,7 @@ The following walkthrough shows how to use menu item extensions to redirect user
 
 [![fleet-workspace-customer-list](./media/fleet-workspace-customer-list.png)](./media/fleet-workspace-customer-list.png)
 
-1. **Create a new model for your application customizations.** For more information about extension models, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+1. **Create a new model for your application customizations.** For more information about extension models, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 2. **Create a new project in Microsoft Visual Studio,** **and add your custom report.** Additionally, add all the solution artifacts. These artifacts include the RDP class or source query, the controller class, and UI builders, if they are present.
 3. **Create an extension of the menu item that is used to access the report.** In this example, the output menu item is named **FMCustomerListReport**. Use the menu item structure to find the menu item name that is exposed in the application. The following illustration shows the action in Application Explorer.
 

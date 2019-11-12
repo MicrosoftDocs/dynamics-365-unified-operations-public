@@ -562,4 +562,4 @@ By querying these tables to obtain the JSON string, you can easily check the res
 ## Additional resources
 
 - [Tax engine overview](tax-engine.md)
-- [Extending the Tax engine](extend-tax-engine-configurations.md)
+- [Extend tax engine configurations](extend-tax-engine-configurations.md)

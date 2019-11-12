@@ -251,7 +251,7 @@ OData enables an SQL-like language that lets you create rich queries against the
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx).
 
 ## Authentication
-OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints](services-home-page.md).
+OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints overview](services-home-page.md).
 
 ## Tips and tricks
 

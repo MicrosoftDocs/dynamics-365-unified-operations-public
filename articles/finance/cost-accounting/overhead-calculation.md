@@ -1415,7 +1415,7 @@ In Financial accounting, a cost of 10,000.00 for Electricity is posted to a dumm
 </table>
 
 > [!NOTE]
-> This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost roll-up](cost-rollup.md).
+> This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost rollup policy and overhead calculation](cost-rollup.md).
 
 
 

@@ -132,7 +132,7 @@ Locking the platform paves the way for seamless servicing and continuous update 
 
 ## Lifecycle Services
 
-Lifecycle Services (LCS) releases new features every month. For information about what's new, visit the [LCS blog](https://blogs.msdn.microsoft.com/lcs/). Use the search term, "release notes" to search for and view the monthly release and new feature information.
+Lifecycle Services (LCS) releases new features every month. For information about what's new, visit the [LCS blog](https://blogs.msdn.microsoft.com/lcs/). Use the search term, "release plans" to search for and view the monthly release and new feature information.
 
 ## Client
 

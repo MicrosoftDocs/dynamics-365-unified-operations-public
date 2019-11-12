@@ -2,6 +2,8 @@
   items:
   - name: Development and administration for Finance and Operations apps
     items:
+    - name: Finance and Operations application documentation
+      href: ../fin-ops/index.md
     - name: Development and administration for Finance and Operations apps
       href: index.md
     - name: What's new or changed
@@ -128,16 +130,28 @@
               href: data-entities/dual-write-overview.md
             - name: Organization hierarchy on Common Data Service
               href: data-entities/dual-write-organization.md
-            - name: Company concept in Common Data Services
-              href: data-entities/dual-write-company.md
-            - name: Integrated Customer Master
+            - name: Company integration
+              items:
+              - name: Company concept in Common Data Services
+                href: data-entities/dual-write-company.md
+              - name: Bootstrap with company data
+                href: data-entities/dual-write-bootstrap.md
+            - name: Integrated customer master
               href: data-entities/dual-write-customer.md
+            - name: Integrated ledger
+              href: data-entities/dual-write-ledger.md            
             - name: Unified product experience
               href: data-entities/dual-write-product.md
-            - name: Integrated Vendor Master
-              href: data-entities/dual-write-vendor.md
+            - name: Vendor integration
+              items:
+              - name: Integrated vendor master
+                href: data-entities/dual-write-vendor.md
+              - name: Switch between vendor designs
+                href: data-entities/dual-write-vendor-switch.md
             - name: Integrated sites and warehouses
               href: data-entities/dual-write-sites-and-warehouses.md
+            - name: Integrated tax master
+              href: data-entities/dual-write-tax.md
             - name: Initial synchronization
               href: data-entities/dual-write-initial.md
             - name: Troubleshooting data integration
@@ -418,6 +432,8 @@
           href: user-interface/client-disconnected.md
         - name: Troubleshoot on-premises deployments
           href: deployment/troubleshoot-on-prem.md
+        - name: Scripts for resolving issues in on-premises environments
+          href: deployment/onprem-tsg-implementations.md
         - name: Certificate rotation
           href: deployment/certificate-rotation-on-prem.md
       - name: Deploy custom code
@@ -1644,16 +1660,19 @@
           href: user-interface/task-recorder-quick-reference.md
         - name: Create documentation or training by task recordings
           href: user-interface/task-recorder-training-docs.md
-    - name: Help system
-      items:
-      - name: Deploying custom Help
-        href: help/deploy.md
-      - name: Language and locale descriptors in across product and Help
-        href: help/language-locale.md
-      - name: Running the Custom Help Toolkit
-        href: help/custom-help-toolkit.md
-      - name: Convert Dynamics AX custom Help for use in Dynamics 365
-        href: help/migrate-dynamicsax2012.md
+      - name: Help system
+        items:
+        - name: Deploying custom Help
+          href: help/deploy.md
+        - name: Language and locale descriptors in across product and Help
+          href: help/language-locale.md
+        - name: Custom Help Toolkit
+          href: help/custom-help-toolkit.md
+        - name: Example of deploying custom Help on Azure
+          href: help/walkthrough-help-azure.md
+        - name: Convert Dynamics AX custom Help for use in Dynamics 365
+          href: help/migrate-dynamicsax2012.md
+
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/index.md
   - name: Dynamics 365 Finance 

@@ -34,12 +34,12 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic provides links to documentation resources for Malaysia. 
 
-- [Generate customer credit for project sales](tasks/my-00011-03-customer-credit-note-project-sales.md)
-- [Generate customer debit for project sales](tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md)
-- [Goods and Services Tax (GST)](apac-mys-gst.md)
+- [Generate Customer Credit note for Project sales](tasks/my-00011-03-customer-credit-note-project-sales.md)
+- [Generate Customer Debit Note for Project sales (November 2016)](tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md)
+- [Malaysia Goods and Services Tax](apac-mys-gst.md)
 - [GST - Generate GAF files in the required format](tasks/my-00010-gst-gaf-files-required-format.md)
-- [Manage customer debit and credit for GST](tasks/my-00003-manage-customer-debit-note-credit-note-gst.md)
-- [Manage vendor debit and credit for GST](tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md)
+- [Manage customer Debit note and Credit note for GST](tasks/my-00003-manage-customer-debit-note-credit-note-gst.md)
+- [Manage vendor Debit note and Credit note for GST](tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md)
 - [Print GST customer invoices with a relief clause](tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md)
 - [Print GST tax invoices](tasks/my-00005-print-gst-tax-invoices.md)
 - [Self-billed invoices](tasks/my-00007-self-billed-invoices.md)

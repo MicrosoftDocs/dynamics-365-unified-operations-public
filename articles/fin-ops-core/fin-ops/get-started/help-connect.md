@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for certain Dynamics 365 apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -89,11 +89,12 @@ For partners, if you promote a library to be a corporate library, and include it
 
 ### Connect a custom site
 
-Microsoft has provided a white paper and sample code that describe how to create and connect a custom help site to the Help pane. For more information, see [Connect a custom help site](help-custom.md).  
+Microsoft has provided a toolkit with sample code that can help you create and connect a custom help site to the Help pane. For more information, see [Connect a custom help site](help-custom.md) and [Deploying custom Help](../../dev-itpro/help/deploy.md).  
 
 ## See also
 
 [Help overview](help-overview.md)  
 [Connect a custom help site](help-custom.md)  
+[Deploying custom Help](../../dev-itpro/help/deploy.md)  
 [Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)  
 [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)  

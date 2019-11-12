@@ -10,6 +10,8 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
       - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+      - name: Customer payment insights (preview)
+        href: accounts-receivable/payment-insights-overview.md
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
@@ -960,6 +962,10 @@
         href: public-sector/plan-public-sector-functionality.md
       - name: Create cover and signature pages for a payments report for the public sector
         href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+      - name: Forecast position distribution
+        href: public-sector/forecast-positions.md
+      - name: Forecast position reports in the public sector
+        href: public-sector/forecast-position-reports.md
       - name: Accounts payable in the public sector
         items:
         - name: Accounts payable in the public sector overview
@@ -2307,6 +2313,14 @@
             href: ../supply-chain/localizations/rus-goods-transit-postponed.md
           - name: Cash flow management
             href: localizations/rus-cash-flow.md
+          - name: Allocation of miscellaneous charges in proportion to weight and volume
+            href: localizations/rus-miscellaneous-charges.md
+        - name: Inventory
+          items:
+          - name: Goods in transit from vendor
+            href: localizations/rus-goods-transit-vendor.md
+          - name: Customs declaration numbers
+            href: localizations/rus-custom-declaration-number.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -2329,6 +2343,8 @@
             href: localizations/rus-officials.md 
           - name: Company divisions
             href: localizations/rus-company-divisions.md
+          - name: Russian address formats and import from FIAS
+            href: localizations/rus-russian-address-format-and-import-from-FIAS.md
         - name: Deferrals
           items:
           - name: Set up deferrals
@@ -2863,6 +2879,10 @@
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Tutorials
+          items: 
+          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework

@@ -5,11 +5,7 @@ title: Language and locale descriptors
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in certain Dynamics 365 apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 10/28/2019
-ms.topic: article
-ms.prod: 
 ms.service: dynamics-ax-platform
-ms.technology: 
 
 # optional metadata
 
@@ -32,7 +28,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Language and locale descriptors in across product and Help
 
-If you have content for one of the following language-region combinations, put it in a folder that has the name of the language in your solution. Use the following table for reference. Additionally, replace all ms.locale values in your HTML files with the appropriate value to enable localized search to work.  
+The Finance and Operations client supports many languages and locales. To add custom Help content for one or more locales to the in-product Help pane, the following must be true:
+
+1. The value of the ```ms.locale``` property in each HTML file must match the locale of the content.  
+2. The content must be uploaded to a folder with the same name as the locale on the website that hosts the content.  
+
+For more information, see [Deploying custom Help](deploy.md) and [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md).  
 
 ## Languages and descriptors
 

@@ -86,7 +86,7 @@ passing it into the destination.
 
 Fields can be added or removed from the integration task. Not all data fields
 that exist on the Common Data Service entity will be populated from Core HR.
-Additional data can be populated via PowerApps.
+Additional data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -165,7 +165,7 @@ the execution time in Step 2.
 
 The integration to Finance is a two-step process. First, verify
 that the Talent data is updated and available in Common Data Service. This is a near real-time
-sync and can be verified in PowerApps by looking at the data within the data
+sync and can be verified in Power Apps by looking at the data within the data
 entities.
 
 ![Data in Common Data Service](media/DataInCDS.png)
@@ -217,7 +217,7 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
   - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 

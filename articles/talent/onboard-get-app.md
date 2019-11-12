@@ -96,5 +96,5 @@ If you accepted the default domain name when you signed up with Onboard, you can
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
 - [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Get support](./talent-support.md)

@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: ERModelMappingDesigner, ERFormatMappingLegalEntityFilterTable
+ms.search.form: ERModelMappingDesigner, ERFormatMappingLegalEntityFilterTable
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 

@@ -75,7 +75,7 @@ With this change, when requesting changes to existing positions, the payroll fie
 Other minor bug fixes are included with this release.
 
 ### Upgrade to Common Data Service
-Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to the Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## Coming soon
 

@@ -46,6 +46,6 @@ After you identify a discrepancy, you might have to contact the vendor if you th
 -   Revise the invoice amount to the expected amount, and post the invoice.
 -   Request a full credit and a new, corrected invoice from the vendor.
 
-For more information, see [Research or resolve exceptions](tasks/research-resolve-exceptions.md).
+For more information, see [Research/Resolve exceptions](tasks/research-resolve-exceptions.md).
 
 

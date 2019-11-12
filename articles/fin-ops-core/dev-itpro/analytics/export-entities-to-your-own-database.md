@@ -5,7 +5,7 @@ title: Bring your own database (BYOD)
 description: This topic explains how to export entities to your own Azure SQL database.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -67,6 +67,9 @@ For one-box development environments, you can create a database in the local Mic
 You should also create a SQL user account for sign-in to the database. Write down the server name, database name, and the SQL user ID and password. You will use this information when you configure the entity export option in the next section.
 
 If you're using the BYOD feature for integration with a business intelligence (BI) tool, you should consider using clustered columnstore indexes (CCIs). CCIs are in-memory indexes that improve the performance of read queries that are typical in analytical and reporting workloads.
+
+> [!NOTE]
+> Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable access to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately.
 
 ## Configuring the entity export option
 
@@ -132,7 +135,7 @@ The following table describes the change tracking options that are available.
 |----------------------|-------------|
 | Enable primary table | An entity consists of several tables. Select this option to track all changes that are made to the primary table of the entity. When changes are made to the primary table, the corresponding record is inserted into or updated in the destination database. Although data from the whole entity is written to the destination table, the system triggers the insert or update option only when the primary table is modified. |
 | Enable entire entity | Select this option to track all changes to the entity. (These changes include changes to all the tables that make up the entity.) When changes are made to the entity, corresponding updates are made to the destination. |
-| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that will be exported were built by using a hierarchy of nested views. For more information, see [Enable change tracking for an entity by using a custom query](../data-entities/entity-change-track.md). |
+| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the entities that will be exported were built by using a hierarchy of nested views. For more information, see [Enable change tracking for entities](../data-entities/entity-change-track.md). |
 
 To use change tracking, you must enable the **Change tracking** option as shown above in data management. This action is available on the **Data entities** list page, by going to **Data management > Data entities**. You need to select an entity and select from one of the options listed above to enable change tracking on the data entity.
 
@@ -155,9 +158,11 @@ You can use the **Export** page to export data into many target data formats, su
 
 You can create a data project that has multiple entities. You can schedule this data project to run by using the batch framework. You also schedule the data export job to run on a periodic basis by selecting the **Export in batch** option.
 
-The same job can also be used to export data from all companies. In prior to Platform update 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Features flighted in data management and enabling flighted features](../data-entities/data-entities-data-packages.md). Starting in Platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. 
+The same job can also be used to export data from all companies. In prior to Platform update 27, this feature can be enabled by enabling the flight DMFEnableAllCompanyExport as explained in [Data management overview](../data-entities/data-entities-data-packages.md). Starting in Platform update 27, this feature can be enabled in data management framework parameters. After the feature is enabled, a new option will appear when adding an entity to a data project. This option can be enabled to export data from all companies for the specific entity. 
 
 > [!NOTE]
+> Adding multiple entities to an export project for BYOD must be done carefully to ensure the overall reliability of the BYOD export is not compromised. Different parameters must be taken into consideration when deciding the number of entities that are added to the same project. Some of these parameters should be the degree of complexity of the entities, data volume per entity that is expected, and the overall time for export to complete at the job level. Adding hundreds of entities must be avoided, therefore creating multiple jobs with smaller number of entities is recommended.
+
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is discouraged. You must use the **Export in batch** option.
 
 ### Incremental export
@@ -212,5 +217,5 @@ You might face this limitation especially when you try to incrementally export r
 
     OLE DB Destination failed the pre-execute phase and returned error code 0xC0202040.
 
-**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-connectivity-architecture)
+**Solution** - This can occur if the connection policy on the Azure SQL BYOD server is set to Proxy. This must be changed to 'Redirect' as explained in [SQL DB Connectivity Architecture](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture)
 

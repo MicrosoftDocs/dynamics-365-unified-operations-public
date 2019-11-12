@@ -5,7 +5,7 @@ title: Help system
 description: This topic provides an overview of the Help system.
 author: edupont04
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,7 +17,7 @@ ms.search.form: SystemParameters
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: edupont
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 16381
@@ -152,8 +152,8 @@ Translated Task guides are released in libraries with "All languages" in the tit
 
 You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
-- [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
-- [Create Custom Help (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
+- [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).  
+- [Connect a custom help site](help-custom.md)  
 
 ## Additional resources
 

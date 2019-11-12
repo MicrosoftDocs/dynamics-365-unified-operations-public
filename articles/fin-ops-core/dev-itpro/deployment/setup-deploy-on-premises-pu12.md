@@ -75,7 +75,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -111,11 +111,11 @@ The hardware configuration includes the following components:
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](../../fin-ops/get-started/system-requirements-on-prem.md).
+For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md).
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing requirements for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup. You will need to replace the machine names and IP addresses given in the following instructions with the names and IP addresses for the machines in your environment.
 
@@ -843,7 +843,7 @@ For more information, see [Install integration services](https://docs.microsoft.
 ### <a name="setupssrs"></a> 17. Set up SSRS
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
-2. Follow the steps in [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
+2. Follow the steps in [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
     > [!IMPORTANT]
     > You must install then database engine when you install SSRS.
 
@@ -915,6 +915,7 @@ You've now completed the setup of the infrastructure. The following sections des
 5. On the **Setup host infrastructure** tab, download the agent installer.
 
     ![Download agent installer button on the Setup host infrastructure tab](./media/OPSetup_07_DownloadAgentInstaller.png)
+    
 6. Verify that the zip file is unblocked. Right-click the file, and then select **Properties**. In the dialog box, select **Unblock**.
 7. Unzip the agent installer on one of the Service Fabric nodes of the **OrchestratorType** type.
 8. On the **Configure agent** tab, enter the configuration settings. Execute the following script on any machine with access to it and the configuration file, to get the needed values.
@@ -965,9 +966,9 @@ If the previous remoting PowerShell window was accidentally closed and CredSSP w
 ![Deploy](./media/Deploy.png)
 
 3. If you have an existing Platform update 8 or Platform update 11 deployment: 
-    - Update the local agent. See [Update your local agent](../lifecycle-services/update-local-agent.md) for more details.
+    - Update the local agent. See [Update the local agent](../lifecycle-services/update-local-agent.md) for more details.
     - Validate the local agent from LCS.
-    - Deploy Platform update 12 while going through the steps in [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md).
+    - Deploy Platform update 12 while going through the steps in [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md).
 4. LCS will assemble the Service Fabric application packages for your environment during the preparation phase. It then sends a message to the local agent to start deployment. You will notice the **Preparing** status as below.
 
 ![Preparing](./media/Preparing.png)
@@ -986,20 +987,20 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 
 ![Failed](./media/Failed.png)
 
-See the [Reconfigure your environment](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
+See the [Reconfigure environments to take a new platform or topology](../lifecycle-services/reconfigure-environment.md) topic for details about how to reconfigure. The following graphic shows a successful deployment.
 ![Deployed](./media/Deployed.png)
 
 ### <a name="connect"></a> 22. Connect to your Finance + Operations environment
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this topic.
 
 ## Additional resources
-- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](redeploy-on-prem.md)
+- [Apply updates to on-premises deployments](apply-updates-on-premises.md)
+- [Redeploy on-premises environments](redeploy-on-prem.md)
 - [Configure document management](../../fin-ops/organization-administration/configure-document-management.md)
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
-- [Configure reverse proxies for on-premises environments](onprem-reverseproxy.md)
-- [Set up technical support](../lifecycle-services/support-experience.md)
+- [Configure proxies for on-premises environments](onprem-reverseproxy.md)
+- [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md)
 - [Client internet connectivity](../user-interface/client-disconnected.md)
 
 ## Known issues

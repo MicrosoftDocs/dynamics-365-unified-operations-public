@@ -54,7 +54,7 @@ We recommend that you follow this process when you start to use configuration da
 
 The rest of this topic describes the **Data management** workspace and explains how to set up your system for data configuration projects.
 
-If you're ready to set up a configuration template, see [Configuration data templates](configuration-data-templates.md). If you're ready to create and run a configuration data project, see [Copy configuration data from one company to another](copy-configuration.md).
+If you're ready to set up a configuration template, see [Configuration data templates](configuration-data-templates.md). If you're ready to create and run a configuration data project, see [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 
 ## Data management workspace overview
 The **Data management** workspace provides access to important tasks for data management. It also provides information about projects and project execution tasks.

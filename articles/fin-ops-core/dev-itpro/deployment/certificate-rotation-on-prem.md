@@ -187,7 +187,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 ### Service Fabric with or without expired certificates (cluster not accessible)
 
-Continue this process following [Clean up an existing environment and redeploy](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
+Continue this process following [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
 ## LocalAgent certificate update (if needed)
 

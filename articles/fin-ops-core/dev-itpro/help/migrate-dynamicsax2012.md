@@ -5,7 +5,7 @@ title: Convert Dynamics AX 2012 content for Dynamics 365
 description: This topic describes how you can reuse content from Dynamics AX for your Dynamics 365 solution. 
 author: edupont04
 manager: AnnBe
-ms.date: 10/28/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,17 +34,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Retail. However, you must transform the HTML files so that they can be used in the custom Help environment.  
+If you have existing content from Dynamics AX 2012, then you can reuse that for Dynamics 365 Finance, Supply Chain Management, and Retail. However, you must transform the HTML files so that they can be used in the custom Help environment.  
 
 ## Converting Dynamics AX 2012 content
 
-The Dynamics 365 custom Help Toolkit includes a Windows PowerShell script, ```run_ax2012.ps1```, that can transform Dynamics AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the Dynamics AX 2012 HTML files:  
+Microsoft has published a [Custom Help Toolkit](custom-help-toolkit.md) that includes a Windows PowerShell script, ```run_ax2012.ps1```, that can transform Dynamics AX 2012 HTML files so that they can be used in the custom Help environment. The script makes the following changes to the Dynamics AX 2012 HTML files:  
 
-- Replaces the Microsoft.Help.F1 metadata name with ms.search.form  
+- Replaces the **Microsoft.Help.F1** metadata name with **ms.search.form**  
 
-- Replaces the Title metadata name with title  
+- Replaces the **Title** metadata name with **title**  
 
-- Changes the file name extension from .htm to .html  
+- Changes the file name extension from **.htm** to **.html**  
 
 - Adds the following metadata:  
 
@@ -85,15 +85,15 @@ Here is a description of the metadata values:
 |ms.search.form | The value contains the Application Object Tree (AOT) name of a form. If a value is present, it’s used for context-sensitive search from the Help pane. |
 |ms.locale |This value indicates the language of the topic. It isn't currently used in the Dynamics 365 Help pane, but it might be used in the future.   |
 
-The following values are used in the Dynamics 365 client and will be added to the custom implementation of the Help pane:  
+The following values are used in the Finance and Operations client and will be added to the custom implementation of the Help pane:  
 
 - ms.search.scope
 
     The value determines which client a Help topic is shown in. One or more values are supported.
     Values have the following meanings:
 
-    - Core – If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. This value is useful for Microsoft since our GitHub repo serves multiple products and also includes us, because we publish many developer and IT Pro-specific topics that are not relevant for endusers.
-    - Operations – Finance and or Operations Supply Chain Management topic.
+    - Core – If this value is present, the topic appears in the Help pane. Otherwise, the topic doesn’t appear in the Help pane. This is set for the part of the Microsoft content that must always be available in the Help pane for users.
+    - Operations – Finance or Supply Chain Management topic.
     - Retail – Retail topic
     - Talent – Talent topic
 
@@ -116,4 +116,5 @@ The following values are reserved for future use:
 ## See also
 
 [Deploying custom Help](deploy.md)  
+[Custom Help Toolkit](custom-help-toolkit.md)  
 [Connect a custom help site](../../fin-ops/get-started/help-custom.md)  

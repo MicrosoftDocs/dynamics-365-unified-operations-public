@@ -56,8 +56,6 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 8. Save the record, and then select **Close**.
 9. Repeat steps 3 through 8 for all the other required addresses for the legal entity.
 
-![GSTIN for a legal entity](media/Define-GSTIN-for-legal-entity.PNG)
-
 ## Define GSTINs and number sequences for warehouses
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory breakdown** \> **Warehouses**.
@@ -68,7 +66,6 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 5. Set the **Primary** option to **Yes**, and then select **Yes** to acknowledge the message that you receive.
 6. Save the record, and then select **Close**.
 
-![GSTIN for a warehouse](media/Define-GSTIN-for-warehouse.PNG)
 
 ## Define GSTINs for vendors
 
@@ -79,12 +76,9 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 5. On the **GST** FastTab, in the **GSTIN/GDI/UID** field, select a value.
 6. Set the **Primary** option to **Yes**, and then select **Yes** to acknowledge the message that you receive.
 7. Save the record, and then select **Close**.
-
-    ![GSTIN for a vendor](media/Define-GSTIN-for-vendor.PNG)
-
 8. On the **Tax information** FastTab, set the **GST composition scheme** option to **Yes** if a composition scheme is used to purchase from the dealer.
 
-    ![Composite dealer](media/Composite-Dealer.PNG)
+    ![Composite dealer](media/Composite-Dealer_upd.png)
 
 ## Define GSTINs for customers
 
@@ -95,11 +89,8 @@ To make the India localization solution for Goods and Services Tax (GST) in Micr
 5. On the **GST** FastTab, in the **GSTIN/GDI/UID** field, select a value.
 6. Set the **Primary** option to **Yes**, and then select **Yes** to acknowledge the message that you receive.
 7. Save the record, and then select **Close**.
-
-    ![GSTIN for a customer](media/Define-GSTIN-for-customer.PNG)
-
 8. On the **Tax information** FastTab, set the **Consumer** option to **Yes** to identify the customer as a consumer.
 9. For customer sales through an e-Commerce operator, enter a value in the **Merchant ID** field, and select a value in the **Default E-Commerce operator** field.
 10. For sales with government companies or other agencies, in the **Customer type** field, select **Govt company or other agencies**.
 
-    ![Tax information FastTab](media/E-commerce-operator.PNG)
+    ![Tax information FastTab](media/E-commerce-operator_upd.png)

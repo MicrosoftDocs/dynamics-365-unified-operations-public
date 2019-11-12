@@ -50,7 +50,7 @@ The following tax terms are mentioned in this topic.
 |BCD| Basic Customs Duty|
 
 ## Prerequisites
-Before you can complete the example scenarios, complete the following tasks, [Import GTE configuation from LCS](tax-engine-import-configuration.md).
+Before you can complete the example scenarios, complete the following tasks, [Tax engine import configuration](tax-engine-import-configuration.md).
 
 ### Add a configuration provider and make it the active provider
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
@@ -247,7 +247,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 8. Save the configuration, and close the designer.
 9. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![Chang configuration status](media/gte-change-configuration-status.png)
+	![Change configuration status](media/gte-change-configuration-status.png)
 
 10. Enter a description such as **UTGST**, and then click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.
