@@ -1,1 +1,35 @@
-tbd
+---
+# required metadata
+
+title: Flexible warehouse-level dimension reservation 
+description: This topic describes an enhancement to the inventory reservation policy that allows businesses, who sell batch-tracked products and run their logistics as WMS-enabled operations, to reserve specific batches for their customers’ sales orders even though the reservation hierarchy associated with such products disallows this (by being of a type that is commonly referred to as “Batch-below[location]”.)
+author: omulvad
+manager: AnnBe
+ms.date: 11/15/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: WHSReservationHierarchy 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+# ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: omulvad
+ms.search.validFrom: 2020-01-15
+ms.dyn365.ops.version: 10.0.9
+
+---
+
+# Flexible warehouse-level dimension reservation
+
+[!include [banner](../includes/banner.md)]
