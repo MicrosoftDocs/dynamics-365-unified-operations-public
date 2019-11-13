@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: MyLeaveRequests submit API - Reference - Submit to workflow
-description: This topic provides a reference for the MyLeaveRequests submit() application programming interface (API).
+title: Submit a leave request to a workflow
+description: This article provides a reference for the MyLeaveRequests submit() application programming interface (API).
 author: gboyko
 manager: AnnBe
 ms.date: 11/15/2019
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Submit leave request to workflow
+# Submit a leave request to a workflow
 
 [!include [banner](../../../includes/preview-banner.md)]
 
 ## Overview
 
-Submit a leave request to workflow to be processed by the Dynamics 365 Talent workflow subsystem. This API is exposed as an action on the MyLeaveRequests OData entity.
+In Microsoft Dynamics 365 Talent, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to a workflow. This API is exposed as an action on the MyLeaveRequests OData entity.
 
 ## Prerequisites
 
@@ -42,7 +42,7 @@ The leave request must be saved in the database and must be retrievable through 
 
 ## Permissions
 
-One of the following permissions is required to call this application programming interface (API). For more information about permissions and how to select them, see [Authentication](../odata-api-authentication.md).
+One of the following permissions is required to call this API. For more information about permissions and how to select them, see [Authentication with the Talent data API](api-odata-authentication.md).
 
 | Permission type                    | Permissions (from least privileged to most privileged) |
 |------------------------------------|--------------------------------------------------------|
@@ -55,10 +55,10 @@ One of the following permissions is required to call this application programmin
 POST https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/MyLeaveRequests(RequestId='{requestId}', LeaveType='{leaveType}', LeaveDate={leaveDate}, dataAreaId={dataArea})/Microsoft.Dynamics.DataEntities.submit?cross-company=true
 ```
 
-The request conforms to OData standards, and the {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.
+The request conforms to OData standards. The {requestId}, {leaveType}, {leaveDate}, and {dataArea} parameters refer to the fields that make up the composite natural key for the MyLeaveRequests entity.
 
 > [!NOTE]
-> While the the fields for the MyLeaveRequests entity refer to an individual line in the leave request, calling the submit API will submit the entire leave request (all lines) to workflow.
+> While the fields for the MyLeaveRequests entity refer to an individual line in the leave request, calling the submit API will submit the entire leave request (all lines) to workflow.
 
 ### Request headers
 
@@ -77,7 +77,7 @@ A successful response is always a **204 No Content** response.
 
 Unauthorized callers will receive a **401 Unauthorized** or a **403 Forbidden** response.
 
-If submission is unsuccessful (e.g. due to validation performed by the Talent service), the response will be a **500 Server Error**, and the response body will include a JSON object with further details.
+If submission is unsuccessful (because of validation, for example), the response will be a **500 Server Error**, and the response body will include a JSON object with further details.
 
 ## Example
 
@@ -99,9 +99,9 @@ POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespac
 }
 ```
 
-## Validations and Error Messages
+## Validation and error messages
 
-As part of the call to the submit API, the service performs business logic validation prior to submission to ensure the leave request is in a valid state for submission. The possible error messages you may receive in the response if validations fail are:
+As part of the call to the submit API, Talent performs business logic validation before submission, which ensures the leave request is in a valid state for submission. The possible error messages you may receive in the response if validations fail are:
 
  - The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.
  - Time off request in Completed state cannot be submitted.

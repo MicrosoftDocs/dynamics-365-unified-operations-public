@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Talent data API - Authentication
-description: This topic provides overview information about how to authenticate with the Talent data application programming interface (API).
+title: Authentication with the Talent data API
+description: This article provides overview information about how to authenticate with the Talent data application programming interface (API).
 author: gboyko
 manager: AnnBe
 ms.date: 11/15/2019
@@ -28,15 +28,15 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Authentication
+# Authentication with the Talent data API
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides overview information about how to authenticate with Talent's data application programming interface (API).
+This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Talent data application programming interface (API).
 
 ## Overview
 
-Talent's data API is an OData implementation by the underlying platform shared by Talent CoreHR and Finance. See [Open Data Protocol (OData)](../../../fin-ops-core/dev-itpro/data-entities/odata.md) for more information.
+Talent's data API is an OData implementation. For more information, see [Open Data Protocol (OData)](../fin-ops-core/dev-itpro/data-entities/odata.md).
 
 Your application must authenticate as an authorized caller before the API will service requests from your application.
 
@@ -46,7 +46,7 @@ To call the data API, your application must acquire an access token from the Mic
 
 ### Access token
 
-Access tokens that are issued by the Microsoft identity platform are base64–encoded JavaScript Object Notation (JSON) Web Tokens (JWTs). They contain information (claims) that the data API (and other web APIs that are secured by the Microsoft identity platform) use to validate the caller and make sure that the caller has the correct permissions to perform the operation that they are requesting. During calls, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as Transport Layer Security (TLS) and Hypertext Transfer Protocol Secure (HTTPS).
+Access tokens issued by the Microsoft identity platform are base64–encoded JavaScript Object Notation (JSON) Web Tokens (JWTs). They contain information (claims) that the data API (and other web APIs that are secured by the Microsoft identity platform) use to validate the caller and make sure that the caller has the correct permissions to perform the operation they're requesting. During calls, you can treat access tokens as opaque. You should always transmit access tokens over a secure channel, such as Transport Layer Security (TLS) and Hypertext Transfer Protocol Secure (HTTPS).
 
 Here is an example of an access token that is issued by the Microsoft identity platform.
 
@@ -65,13 +65,16 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 ## Register a new application by using the Azure portal
 
-1. Sign in to the [Microsoft Azure portal](https://portal.azure.com) by using a work or school account, or a personal Microsoft account.
+1. Sign in to the [Microsoft Azure portal](https://portal.azure.com) with a work or school account, or a personal Microsoft account.
+
 2. If your account gives you access to more than one tenant, select your account in the upper-right corner, and set your portal session to the Azure Active Directory (Azure AD) tenant that you want.
+
 3. In the left pane, select the **Azure Active Directory** service, and then select **App registrations \> New registration**.
+
 4. When the **Register an application** page appears, enter your application's registration information:
 
-    - **Name** – Enter a meaningful application name that will be shown to users of the app.
-    - **Supported account types** – Select the types of accounts that your app should support.
+    - **Name**: Enter a meaningful application name that will be shown to users of the app.
+    - **Supported account types**: Select the types of accounts that your app should support.
 
         | Supported account types | Description |
         |-------------------------|-------------|
@@ -81,17 +84,18 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
     - **Redirect URI (optional)** – Select the type of app that you're building: **Web** or **Public client (mobile & desktop)**. Then enter the redirect URI (or reply URL) for the app.
 
-        - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that rus on your local machine. Users then use this URL to sign in to a web client app.
+        - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that runs on your local machine. Users then use this URL to sign in to a web client app.
         - For public client apps, provide the URI that Azure AD uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
 
-        To see specific examples for web apps or native apps, see the [quick start guides from Azure AD](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        To see specific examples for web apps or native apps, see the quickstarts in [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
 5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics 365 for Talent**, and add the **user\_impersonation** permission to your app. The Application ID for Talent is f9be0c49-aa22-4ec6-911a-c5da515226ff. Use this ID to ensure you have chosen the correct application.
+
 6. Select **Register**.
 
-[![Registering a new app in the Azure portal](./media/new-app-registration-expanded.png)](./media/new-app-registration-expanded.png#lightbox)
+   [![Registering a new app in the Azure portal](./media/new-app-registration-expanded.png)](./media/new-app-registration-expanded.png#lightbox)
 
-Azure AD assigns a unique application ID (client ID) to your app, and you're taken to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding, and for certificates and secrets.
+Azure AD assigns a unique application ID (client ID) to your app, and takes you to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding and for certificates and secrets.
 
 ## Retrieving an access token
 
@@ -185,4 +189,4 @@ namespace TalentODataPoC
 }
 ```
 
-Once you've retrieved an access token, you will pass the token in the Authorization header as a Bearer token with each request you send to the data API, as described above.
+Once you've retrieved an access token, you'll pass the token in the Authorization header as a bearer token with each request you send to the data API, as described above.

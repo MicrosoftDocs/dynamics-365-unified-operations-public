@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: MyLeaveRequests Entity
-description: This topic provides a reference for the MyLeaveRequests entity 
+title: MyLeaveRequests entity
+description: This article provides a reference for the MyLeaveRequests entity.
 author: gboyko
 manager: AnnBe
 ms.date: 11/15/2019
@@ -16,7 +16,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# MyLeaveRequests Entity
+# MyLeaveRequests
 
-The MyLeaveRequests entity provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.
+The MyLeaveRequests entity in Microsoft Dynamics 365 Talent provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.
 
 ## Key
 
@@ -59,6 +59,6 @@ The MyLeaveRequests entity provides the list of Leave Requests in the system, sc
 
 ## Actions
 
- | Action Name           | Description                                     |
- |-----------------------|-------------------------------------------------|
- | [submit](submit.md)   | Submit the request to be processed by workflow. |
+ | Action Name                               | Description                                     |
+ |-------------------------------------------|-------------------------------------------------|
+ | [submit](api-myleaverequests-submit.md)   | Submit the request to be processed by workflow. |

@@ -439,18 +439,18 @@
       href: extensibility-attract.md
     - name: Custom fields in Core HR
       href: corehr-custom-fields.md
-    - name: Entity API Reference
+    - name: Entity API reference
       items:
       - name: Authentication
-        href: reference/entities/odata-api-authentication.md
+        href: api-odata-authentication.md
       - name: Entities
         items:
           - name: MyLeaveRequests
             items:
             - name: Overview
-              href: reference/entities/MyLeaveRequests/MyLeaveRequests-overview.md
+              href: api-myleaverequests-overview.md
             - name: Submit to workflow
-              href: reference/entities/MyLeaveRequests/submit.md
+              href: api-myleaverequests-submit.md
   - name: Troubleshoot Talent
     items:
     - name: Optimize performance with auto cleanup tasks
