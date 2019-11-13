@@ -5,7 +5,7 @@ title: Preview features in Platform update 31 for Finance and Operations apps (J
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 11/05/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,13 @@ ms.dyn365.ops.version: Platform update 31
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457. While the general availability date is January 2020, the new features are available for early release in October 2019. For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
+This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457 and is available as follows:
+
+- Preview release is in October 2019.
+- General availability (self-update) is in November 2019.
+- Auto-update is in January 2020.
+
+For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
 
 ## Turn on the new (preview) grid control through Feature management
 Previously the new grid control was available by adding "&debug=reactGrid" to the environment URL. Now in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). To learn more about the new grid control, see [User productivity - New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations/user-productivity-new-grid).
