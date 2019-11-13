@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Submit a leave request to a workflow
+title: Submit a leave request to workflow
 description: This article provides a reference for the MyLeaveRequests submit() application programming interface (API).
 author: gboyko
 manager: AnnBe
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Submit a leave request to a workflow
+# Submit a leave request to workflow
 
 [!include [banner](includes/preview-banner.md)]
 
 ## Overview
 
-In Microsoft Dynamics 365 Talent, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to a workflow. This API is exposed as an action on the MyLeaveRequests OData entity.
+In Microsoft Dynamics 365 Talent, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow. This API is exposed as an action on the MyLeaveRequests OData entity.
 
 ## Prerequisites
 
@@ -110,3 +110,7 @@ As part of the call to the submit API, Talent performs business logic validation
  - Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.
  - Leave type '{LeaveTypeId}' requires a reason code. Select the appropriate type and reason code.
  - The time off was not submitted successfully. The time off has been saved as a draft request.
+
+## See also
+
+[MyLeaveRequests](api-myleaverequests-overview.md)

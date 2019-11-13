@@ -447,9 +447,9 @@
         items:
           - name: MyLeaveRequests
             items:
-            - name: Overview
+            - name: MyLeaveRequests overview
               href: api-myleaverequests-overview.md
-            - name: Submit to workflow
+            - name: Submit a leave request to workflow
               href: api-myleaverequests-submit.md
   - name: Troubleshoot Talent
     items:
