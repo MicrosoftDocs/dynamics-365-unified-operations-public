@@ -165,7 +165,7 @@ Enter sales order details:
 
 Review and process warehouse work with order-committed batch number:
 
-9. From the sales order lines action bar, click **Warehouse** \> **Work details**.
+1. From the sales order lines action bar, click **Warehouse** \> **Work details**.
 
     The work that handles pick operation of batch quantities committed to sales order line has the following 3 characteristics:
     1. To create work, the system uses work templates but not location directives. This means that all the standard settings that are defined for work template, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when a new work should be created. However, the rules that are associated with location directives for identifying pick and put locations are not considered. This is because the order-committed reservation already specifies all the inventory dimensions, including those at the warehouse storage level, so that the work inherits them without consulting location directives.
@@ -179,7 +179,7 @@ Review and process warehouse work with order-committed batch number:
     - the **Change location** action on the **Work list details** page
     to direct picking of the specific batch from a more convenient location.
 
-10. From the mobile device, complete picking and putting the work.
+2. From the mobile device, complete picking and putting the work.
 
     The quantity 10 of batch number *B11* has now been picked for the sales order line and is placed in the *Baydoor* location, ready to be loaded onto the trick and dispatched to the customer's address.
     
@@ -189,7 +189,7 @@ Warehouse work for picking order-committed batch number is subject to the same s
 
 For example, let's review the scenario where the previously completed work is being unpicked by means of using the Reduce pick quantity function.
 
-1. \[Continue from the previous example]\ Go to **Warehouse management** \> **Loads** \> **Active loads**
+1. \[Continue from the previous example] Go to **Warehouse management** \> **Loads** \> **Active loads**
 2. Select the load that was created in connection with shipping your sales order.
 3. From the Load order lines action bar, click **Reduce picked quantity**.
 4. On the **Reduce picked quantity** page, in the **Move to location** field select *FL-001*, in the **Move to license plate** field select *LP33*.
@@ -213,6 +213,4 @@ The following table provides an overview of how order-committed batch reservatio
 
 ## Other limitations
 
-Container consolidation **Pack by directive unit**
-
-  : Container build templates, where &quot;Pack by directive unit&quot; is set, are not recommended for use together with order-committed reservations. This is due to the current design where location directives are not utilized in warehouse work creation, and so only the lowest unit in unit sequence group (inventory unit) is applied during containerization wave step.
+Container consolidation **Pack by directive unit**: Container build templates, where "Pack by directive unit" is set, are not recommended for use together with order-committed reservations. This is due to the current design where location directives are not utilized in warehouse work creation, and so only the lowest unit in unit sequence group (inventory unit) is applied during containerization wave step.
