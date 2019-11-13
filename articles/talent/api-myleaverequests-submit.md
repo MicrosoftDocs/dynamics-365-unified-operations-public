@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 # Submit a leave request to a workflow
 
-[!include [banner](../../../includes/preview-banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 ## Overview
 

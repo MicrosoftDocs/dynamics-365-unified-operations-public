@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 # Authentication with the Talent data API
 
-[!include [banner](../../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Talent data application programming interface (API).
 
@@ -93,13 +93,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 6. Select **Register**.
 
-   [![Registering a new app in the Azure portal](./media/new-app-registration-expanded.png)](./media/new-app-registration-expanded.png#lightbox)
+   [![Registering a new app in the Azure portal](media/new-app-registration-expanded.png)](media/new-app-registration-expanded.png#lightbox)
 
 Azure AD assigns a unique application ID (client ID) to your app, and takes you to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding and for certificates and secrets.
 
 ## Retrieving an access token
 
-The specifics of how you retrieve an access token for calling the Talent data API will depend on what technologies you're using to develop your client application. For example, you might be [testing with a third party utility](../../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md) (such as Postman), developing a C# console application or web service, or building a javascript/TypeScript client.
+The specifics of how you retrieve an access token for calling the Talent data API will depend on what technologies you're using to develop your client application. For example, you might be [testing with a third party utility](../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md) (such as Postman), developing a C# console application or web service, or building a javascript/TypeScript client.
 
 Example C# client application:
 ```C#
