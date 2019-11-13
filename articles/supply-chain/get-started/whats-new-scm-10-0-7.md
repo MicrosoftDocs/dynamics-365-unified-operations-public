@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Supply Chain Management 10.0.7 (January 
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.7. 
 author: josaw1
 manager: AnnBe
-ms.date: 1/13/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
