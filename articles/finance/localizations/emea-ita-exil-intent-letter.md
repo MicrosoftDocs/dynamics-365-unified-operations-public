@@ -3,7 +3,7 @@
 
 title: Intent letters - invoicing of usual exporters
 description: Intent letters - invoicing of usual exporters.
-author: v-elgolu
+author: ilkond
 manager: AnnBe
 ms.date: 11/11/2019
 ms.topic: article
