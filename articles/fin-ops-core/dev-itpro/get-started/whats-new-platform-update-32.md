@@ -46,7 +46,7 @@ For more information about Platform update 32, see [Additional resources](whats-
 ## Additional resources
 
 ### Platform update 32 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 32, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=386525&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
+For information about the bug fixes included in each of the updates that are part of Platform update 32, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/).
 
 ### Dynamics 365: 2019 release wave 2 plan
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
