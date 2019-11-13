@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preview features in Platform update 32 for Finance and Operations apps (February 2020)
-description: This topic describes features that are in preview in Platform update 32 for Finance and Operations apps. 
+description: This topic lists features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
 ms.date: 11/13/2019
@@ -34,13 +34,17 @@ ms.dyn365.ops.version: Platform update 32
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available as follows:
+This topic lists preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available as follows:
 
 - Preview release is in November 2019.
 - General availability (self-update) is in January 2020.
 - Auto-update is in February 2020.
 
 For more information about Platform update 32, see [Additional resources](whats-new-platform-update-32.md#additional-resources).
+
+## Features included in this release
+
+- [File size limitation for Data management exports has been removed](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/FILE-NAME-NEEDED)
 
 
 ## Additional resources
