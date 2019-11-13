@@ -122,7 +122,7 @@ Create a new released product and:
 
     | Warehouse | Batch number | Location | License plate | Quantity |
     | --- | --- | --- | --- | --- |
-    | 24 | B11 | BULK-001 |   | 100 |
+    | 24 | B11 | BULK-001 |   | 10 |
     | 24 | B11 | FL-001 | LP11 | 10 |
     | 24 | B22 | FL-002 | LP22 | 10 |
 
@@ -131,7 +131,7 @@ Enter sales order details:
 2. Click **New**.
 3. For the sales order header, select customer account **US-003**.
 4. Add a line for your new item and enter quantity `10`. Make sure the **Warehouse** field is set to *24*.
-5. From the Sales order lines action bar, click **Inventory** \> **[Maintain] Batch reservation**. The **Batch reservation** page displays a list of batches available for order line quantity reservation, in our case quantity 110 of batch *B11* and quantity 10 of batch *B22*.
+5. From the Sales order lines action bar, click **Inventory** \> **[Maintain] Batch reservation**. The **Batch reservation** page displays a list of batches available for order line quantity reservation, in our case quantity 20 of batch *B11* and quantity 10 of batch *B22*.
 
     Note that in contrast to the regular behaviour where **Batch reservation** page is inaccessible from the line with an item whose associated reservation hierarchy is not enabled for batch-specific reservation, the user is able to open the page.
 
@@ -156,7 +156,9 @@ Enter sales order details:
 
     > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, while 80 units are reserved at the site and warehouse level for any available batch. In this case, the warehouse management system will handle picking operations by two separate work lines.
 
-7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory** Action Pane \> **View** \> **Transactions**.
+7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory** Action Pane \> **View** \> **Transactions**:
+
+    ![Order-committed reservation as an inventory transaction type](media/Inventory-transactions-for-order-committed-reservation.png)
 
     Review the item's inventory transactions related to the sales order line reservation:
 
