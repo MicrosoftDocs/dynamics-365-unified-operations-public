@@ -103,3 +103,45 @@ Enable an inventory reservation hierarchy to allow batch-specific reservation:
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory \> Reservation hierarchy**
 2. Click **New**
+3. In the **Name** field, type a name, for example `BatchFlex`.
+4. In the **Description** field, type a name, for example `Batch below flexible`
+5. Use the right arrow button to move **Owner** and **Serial number** dimensions from the Selected section to the Available.
+6. Click Ok.
+7. For the Batch number level, set checkmark in the **Allow reservation on demand order** column. Note that both License plate and Location dimension levels are checkmarked automatically and you cannot uncheck them.
+8. Click **Save**.
+
+Create a new released product and:
+1. set the following product's three master data parameters to the below values:
+    - Storage dimension group=*Ware*
+    - Tracking dimension group=*Batch-Phy*
+    - Reservation hierarchy=*BatchFlex*
+2. create two batch numbers, for example `B11` and `B22`
+3. add item quantity to on-hand stock as per below:
+
+    | Warehouse | Batch number | Location | License plate | Quantity |
+    | --- | --- | --- | --- | --- |
+    | 24 | B11 | BULK-001 |   | 100 |
+    | 24 | B11 | FL-001 | LP11 | 10 |
+    | 24 | B22 | FL-002 | LP22 | 10 |
+
+Enter sales order details:
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**
+2. Click **New**.
+3. For the sales order header, select customer account **US-003**.
+4. Add a line for your new item and enter quantity `10`.
+5. From the Sales order lines action bar, click **Inventory** \> **[Maintain] Batch reservation**. The **Batch reservation** page displays a list of batches available for order line quantity reservation, in our case quantity 110 of batch *B1* and quantity 10 of batch *B2*.
+
+    Note that in contrast to the regular behaviour where **Batch reservation** page is inaccessible from the line with an item whose associated reservation hierarchy is not enabled for batch-specific reservation, the user is able to open the page.
+
+    > [!NOTE]
+    > If you want to reserve a specific batch for the sales order you must use the **Batch reservation** page.
+
+    > If you enter the batch number directly on the sales order line, the system will regard this as if you entered a specific batch value for an item that is subject to the &quot;Batch-below[location]&quot; reservation policy. If on the warning message that appears upon line saving you confirm your decision to have the batch number specified directly on the order line, the line in question will not be handled by the regular warehouse management logic.
+
+    > If you open the **Reservation** page and reserve the quantity from there, no specific batch will be reserved and the execution of the warehouse operations for this line will follow the rules applicable under the &quot;Batch-below[location]&quot; reservation policy.
+
+    The general working of and interactions with this page are the same as for items whose associated reservation hierarchy is of type "Batch-above[location]", except:
+
+    -  a new **Batch numbers committed to source line** tab displays the batch numbers that are reserved for the order line. The batch values in the tab's grid will be shown throughout the entire fulfilment cycle of the order line, including the warehouse processing stages. This is in contrast to the existing behaviour of the records displayed in the **Overview** tab, where a regular order line reservation, as done for the dimensions above location level, is shown in the grid up to a point when warehouse work is created, after which the line reservation is taken over by the work entity and is no longer displayed on this page. The introduction of the new tab ensures that the sales order processor can view the batch number(s) that were committed to the customer's order at any point in its lifecycle, up to invoicing.
+    -  The user can decide whether, in addition to reserving a specific batch, they also want to manually select that very batch's specific location and license plate, instead of letting the system make the selection automatically. Relevance of such a decision is related to the design of the order-committed batch reservation mechanism. As was pointed out earlier, when reserving a batch number for item under &quot;Batch-below[location]&quot; reservation policy, the system must reserve all dimensions up to and including location. As a result, warehouse work will carry the same storage dimensions as were reserved by the users working with the orders, and may not always represent the item storage placement that is convenient, or even possible, for picking operations. In cases where order processors are aware of the warehouse constraints, they may be interested in making manual selections of the specific locations and license plates when reserving a batch. To do so, the user must make use of the standard &quot;Display dimensions&quot; facility on the page header and add the Location and License plate to the **Overview** tab's grid.
+
