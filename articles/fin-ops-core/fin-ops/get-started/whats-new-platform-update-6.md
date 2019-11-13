@@ -54,11 +54,11 @@ A new option in the build definition instructs the automated build to include an
 
 ## Document management – Attachment storage cleanup
 
-When Dynamics AX 7.0 was released, the database storage for attachments was deprecated; however, some platform functionality remained that needed to be migrated. In Dynamics 365 for Operations platform update 6, the last remaining platform usage was removed and a migration button was added to the **Document Management Parameters** form. The migration button can be used to clean up any files that might remain in the database after an upgrade. The migration will migrate any attachments stored in the database to Blob storage. For more information, see [Upgrade to the latest platform update](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md).
+When Dynamics AX 7.0 was released, the database storage for attachments was deprecated; however, some platform functionality remained that needed to be migrated. In Dynamics 365 for Operations platform update 6, the last remaining platform usage was removed and a migration button was added to the **Document Management Parameters** form. The migration button can be used to clean up any files that might remain in the database after an upgrade. The migration will migrate any attachments stored in the database to Blob storage. For more information, see [Apply the latest platform update to environments](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md).
 
 ## Number sequence scope extensibility
 
-You can now extend the number sequence scope through extensions. The scope of a number sequence defines which organization uses the number sequence. The scope can be combined with fiscal calendar periods to create even more specific number sequences. For more information, see [Extend the number sequence scope](../../dev-itpro/extensibility/extend-number-sequence-scope.md).
+You can now extend the number sequence scope through extensions. The scope of a number sequence defines which organization uses the number sequence. The scope can be combined with fiscal calendar periods to create even more specific number sequences. For more information, see [Extend the scope of number sequences](../../dev-itpro/extensibility/extend-number-sequence-scope.md).
 
 ## Mobile
 
