@@ -160,14 +160,14 @@ Enter sales order details:
     - transaction with **Reference** *Order-committed reservation* and **Issue** type *Reserved physical* represents the order line reservation for the specific batch and all other inventory dimensions above it. In our example, those dimensions are Batch number and Location. The latter happened to be *Bulk-001*.
 
 8. On the sales order header, click **Warehouse** Action Pane \> **Actions** \> **Release to warehouse**.
-
+    
     The order line has been waved, and load and work have been created.
+
 Review and process warehouse work with order-committed batch number:
 
 9. From the sales order lines action bar, click **Warehouse** \> **Work details**.
 
     The work that handles pick operation of batch quantities committed to sales order line has the following 3 characteristics:
-
     1. To create work, the system uses work templates but not location directives. This means that all the standard settings that are defined for work template, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when a new work should be created. However, the rules that are associated with location directives for identifying pick and put locations are not considered. This is because the order-committed reservation already specifies all the inventory dimensions, including those at the warehouse storage level, so that the work inherits them without consulting location directives.
     2. The batch number is not displayed on the pick line (as is the case for the work line created for an item with "Batch-above[location]" hierarchy). Instead, specifications of the "from" batch number as well as all other storage dimensions are shown on the work line's Work inventory transaction, that are referenced from the associated inventory transactions.
     3. Once work is created, the item's inventory transaction of Reference type *Order-committed reservation* is removed, with the inventory transaction of Reference type *Work* now holding the physical reservation on all the quantity's inventory dimensions.
@@ -198,9 +198,9 @@ For example, let's review the scenario where the previously completed work is be
 
 Review the results of the unpicking action:
 
-1. the previously closed work has been set to status *Cancelled*
-2. a new work of type *Inventory movement* for the unpicked quantity of 10 for batch number *B11* has been created to represent movement from location *Baydoor* to location *FL-001*, license plate *LP33* and set to status *Closed*.
-3. on the **Batch reservation** page, batch *B11* is shown as physically reserved in the **Batch numbers committed to source line** tab, and the **Reservation** field contains quantity 10 for batch number *B11*. The **Location** and **License plate** fields (add it to the grid, if not displayed) contains *FL-001* and *LP11* respectively. This is a result of the system re-reserving the originally ordered batch number and assigning the location and license plate IDs where the said batch is available for reservation (which is equivalent to the user running the Reserve lot function for the order line for a given batch number).
+- the previously closed work has been set to status *Cancelled*
+- a new work of type *Inventory movement* for the unpicked quantity of 10 for batch number *B11* has been created to represent movement from location *Baydoor* to location *FL-001*, license plate *LP33* and set to status *Closed*.
+- on the **Batch reservation** page, batch *B11* is shown as physically reserved in the **Batch numbers committed to source line** tab, and the **Reservation** field contains quantity 10 for batch number *B11*. The **Location** and **License plate** fields (add it to the grid, if not displayed) contains *FL-001* and *LP11* respectively. This is a result of the system re-reserving the originally ordered batch number and assigning the location and license plate IDs where the said batch is available for reservation (which is equivalent to the user running the Reserve lot function for the order line for a given batch number).
 
 The following table provides an overview of how order-committed batch reservation is treated by the system depending on the user action under a certain flow:
 
@@ -213,4 +213,6 @@ The following table provides an overview of how order-committed batch reservatio
 
 ## Other limitations
 
-Container consolidation "Pack by directive unit". Container build templates, where &quot;Pack by directive unit&quot; is set, are not recommended for use together with order-committed reservations. This is due to the current design where location directives are not utilized in warehouse work creation, and so only the lowest unit in unit sequence group (inventory unit) is applied during containerization wave step.
+Container consolidation **Pack by directive unit**
+
+  : Container build templates, where &quot;Pack by directive unit&quot; is set, are not recommended for use together with order-committed reservations. This is due to the current design where location directives are not utilized in warehouse work creation, and so only the lowest unit in unit sequence group (inventory unit) is applied during containerization wave step.
