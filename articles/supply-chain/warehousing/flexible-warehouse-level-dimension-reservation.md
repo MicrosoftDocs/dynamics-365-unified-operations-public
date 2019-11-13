@@ -211,7 +211,7 @@ Review the results of the unpicking action:
 - a new work of type *Inventory movement* for the unpicked quantity of 10 for batch number *B11* has been created to represent movement from location *Baydoor* to location *FL-001*, license plate *LP33* and set to status *Closed*.
 - on the **Batch reservation** page, batch *B11* is shown as physically reserved in the **Batch numbers committed to source line** tab, and the **Reservation** field contains quantity 10 for batch number *B11*. The **Location** and **License plate** fields (add it to the grid, if not displayed) contains *FL-001* and *LP11* respectively. This is a result of the system re-reserving the originally ordered batch number and assigning the location and license plate IDs where the said batch is available for reservation (which is equivalent to the user running the **Reserve line** function for the order line for a given batch number).
 
-The following table provides an overview of how order-committed batch reservation is treated by the system depending on the user action under a certain flow:
+An overview of how order-committed batch reservation is treated by the system depending on the user action under a certain flow is presented here (insert link).
 
 ## Functionality not supported together with Flexible warehouse-level dimension reservation feature:
 
@@ -222,4 +222,4 @@ The following table provides an overview of how order-committed batch reservatio
 
 ## Other limitations
 
-**Container consolidation rule of packing by directive unit**. Container build templates, where **Pack by directive unit** filed is set, are not recommended for use together with order-committed reservations. This is due to the current design where location directives are not utilized in warehouse work creation, and so only the lowest unit in unit sequence group (inventory unit) is applied during containerization wave step.
+**Container consolidation rule of packing by directive unit**. Container build templates, where **Pack by directive unit** field is set, are not recommended for use together with order-committed reservations. This is due to the current design where location directives are not utilized in warehouse work creation, and so only the lowest unit in unit sequence group (inventory unit) is applied during containerization wave step.
