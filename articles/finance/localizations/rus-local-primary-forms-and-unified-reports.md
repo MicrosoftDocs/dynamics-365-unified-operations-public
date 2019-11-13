@@ -110,11 +110,15 @@ Before you generate the cash counting act, calculate the exchange rate adjustmen
 1. Go to **Cash and bank management \> Inquiries and reports \> Cash reports \> Cash counting statement report**.
 2. In the upper part of the **Cash counting statement (INV – 15)** page, follow these steps:
     
-       a. In the **Cash** field, select the cash account to count.  
-       b. In the **Document number** field, specify the number of the document that the inventory that is done should be based on.
-       c. In the **Counting date** field, specify the date of counting.
-       d. Set the **Print cash account name** option to **Yes**.
-       e. Set the **Supplement** option to **Yes** to create the supplement to the counting act.
+      a. In the **Cash** field, select the cash account to count.  
+     
+      b. In the **Document number** field, specify the number of the document that the inventory that is done should be based on.
+      
+      c. In the **Counting date** field, specify the date of counting.
+      
+      d. Set the **Print cash account name** option to **Yes**.
+      
+      e. Set the **Supplement** option to **Yes** to create the supplement to the counting act.
             
 If the cash account allows for accounting in different currencies, the **More currencies** option is set to **Yes**.
 
