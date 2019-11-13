@@ -36,9 +36,6 @@ This topic provides an overview of the cash register functionality that is avail
 - Sweden-specific features, such as additional counters in daily POS reports
 - A sample for integration of Retail POS with Sweden-specific fiscal devices that are known as control units.
 
-  > [!NOTE]
-  > For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
-
 ## Overview of cash register functionality for Sweden
 
 ### Common POS features
@@ -74,14 +71,13 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 
    # [Retail 10.0.6 and earlier](#tab/retail-10-0-6)
 
-  For more details about integration with control units in previous versions see a respective section in the [integration sample](./retail-sdk-control-unit-sample.md#integration-of-retail-pos-with-control-units). 
+  For more information about the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see the [Sample for Retail POS integration with control units for Sweden (legacy)](./retail-sdk-control-unit-sample.md#integration-of-retail-pos-with-control-units). 
 
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
   For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
 
 ---
-
 
 ## Setting up Retail for Sweden
 
@@ -153,11 +149,11 @@ You must specify the following general settings for Sweden.
 
    # [Retail 10.0.6 and earlier](#tab/retail-10-0-6)
 
-  For more details about on setting up integration with control units in previous versions see a respective section in the [integration sample](./retail-sdk-control-unit-sample.md#control-unitspecific-settings). 
+  For more information about setting up and configuring the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see [Sample for Retail POS integration with control units for Sweden (legacy)](./retail-sdk-control-unit-sample.md#control-unitspecific-settings). 
 
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
-  For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
+  For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
 
 ---
 
