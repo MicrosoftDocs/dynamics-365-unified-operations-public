@@ -679,8 +679,8 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 5.  Set **End Mileage** to **100**, and then click **OK**. Notice that the rental that you just returned no longer appears in the list.
 
 ## Related tutorials
--   [Building the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
--   [Building navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
+-   [Build the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
+-   [Build navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
 
 
 
