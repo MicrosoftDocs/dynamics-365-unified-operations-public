@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Release 10.0.7
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283. and is available as follows:
+This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283, and is available as follows:
 
 - Preview release is in October 2019.
 - General availability (self-update) is in November 2019.
