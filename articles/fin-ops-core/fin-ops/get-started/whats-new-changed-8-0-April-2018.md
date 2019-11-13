@@ -97,11 +97,11 @@ Customers can submit a request to Microsoft for extension support to be added to
 
 ### Embedding Microsoft Power Apps in workspaces and forms
 
-Use Microsoft Power Apps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed Power Apps](embed-power-apps.md).
+Use Microsoft Power Apps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
 
 ### Custom fields
 
-Organizations can add custom fields to tailor their application to their business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Custom fields](user-defined-fields.md).
+Organizations can add custom fields to tailor their application to their business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Create and work with custom fields](user-defined-fields.md).
 
 ## Integration 
 
