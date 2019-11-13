@@ -44,12 +44,12 @@ In some cases, a worker payment is made and taxes are withheld outside the Payro
 
 To record payments that were made outside Payroll, follow these steps.
 
-1. Enter the earnings for payments that were made outside Payroll. For instructions, see the "Manually enter worker earnings" section of the [Generate earnings](noam-usa-generate-earnings.md) topic. On the **Line details** FastTab, select the **Manual** check box.
+1. Enter the earnings for payments that were made outside Payroll. For instructions, see the "Manually enter worker earnings" section of the [Generate earnings for workers](noam-usa-generate-earnings.md) topic. On the **Line details** FastTab, select the **Manual** check box.
 
     > [!NOTE]
     > The earning code for these earnings can't be set up for a fringe benefit or a gross-up payment run type. The rate basis must be a flat amount.
 
-2. Release earnings. For instructions, see the "Release earnings for payment processing" section of the [Work with existing earnings](noam-usa-existing-earnings.md) topic.
+2. Release earnings. For instructions, see the "Release earnings for payment processing" section of the [Process existing earnings](noam-usa-existing-earnings.md) topic.
 3. Generate the pay statement. For instructions, see the "Generate pay statements" section of the Work with existing earnings topic. The payment run type must be **Manual**. If you don't want to record accounting-related information or post the pay statement to the general ledger, select **Disable accounting**.
 4. Add tax lines and benefit lines to the statement. For instructions, see the "Modify pay statements" section of the Work with existing earnings topic. You can add, remove, or change all tax lines and benefit lines on the pay statement, even lines that are usually locked. These lines include Federal Insurance Contributions Act (FICA) lines. When the pay statement is correct, click **Finalize** in the message bar.
 
@@ -70,7 +70,7 @@ Likewise, if a benefit line or amount unexpectedly appears on the pay statement,
 
 ## Can I change the distributions for a pay statement line?
 
-No. However, you can change distributions for earnings from the earnings statement line. For more information, see [Earnings and the earnings generation process FAQ](noam-usa-earnings-generation-process.md).
+No. However, you can change distributions for earnings from the earnings statement line. For more information, see [Earnings and earnings generation FAQ](noam-usa-earnings-generation-process.md).
 
 ## Can I create a pay statement that has zero earnings?
 
