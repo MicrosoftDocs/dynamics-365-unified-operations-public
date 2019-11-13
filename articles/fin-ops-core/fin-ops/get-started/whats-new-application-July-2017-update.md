@@ -62,7 +62,7 @@ The Actual vs budget Power BI content provides visibility into your budget varia
 - Main account description
 - Fiscal period
 
-For more information, see [Ledger Budget Power BI](../../dev-itpro/analytics/ledger-budgets-power-bi.md).
+For more information, see [Actual vs budget Power BI content](../../dev-itpro/analytics/ledger-budgets-power-bi.md).
 
 ### CFO Overview workspace
 
@@ -74,7 +74,7 @@ For more information, see [CFO overview Power BI content](../../dev-itpro/analyt
 
 The **Data validation checklist** workspace lets you track data validation processes across companies, areas, and people. The checklist can be used during a new implementation, after an upgrade, or after a migration. Depending on your view of the **Data validation checklist** workspace, you'll see either all tasks and statuses for a data validation project.
 
-For more information, see [Data validation workspace](../../dev-itpro/user-interface/data-validation-workspace.md).
+For more information, see [Data validation checklist workspace](../../dev-itpro/user-interface/data-validation-workspace.md).
 
 ### Delete a main account and dimension value
 
@@ -195,7 +195,7 @@ You can select what financial dimensions are relevant for a report in the Financ
 
 ### Financial dimensions in Power BI
 
-The financial dimensions in the Financial performance content pack are now available for analyzing financial data. For more information, see [Financial performance power BI](../../dev-itpro/analytics/financial-performance-power-bi-content-pack.md).
+The financial dimensions in the Financial performance content pack are now available for analyzing financial data. For more information, see [Financial performance PowerBI.com solution](../../dev-itpro/analytics/financial-performance-power-bi-content-pack.md).
 
 ### Financial report generation
 
@@ -473,7 +473,7 @@ Analytics and insights provide the following data and visualizations:
 - Recruiting costs
 - Applicant status
 
-For more information, see [Power BI content](../../dev-itpro/analytics/power-bi-home-page.md).
+For more information, see [Power BI content home page](../../dev-itpro/analytics/power-bi-home-page.md).
 
 ## Cash flow forecasting Power BI
 
@@ -550,7 +550,7 @@ The Purchase spend analysis content pack for Microsoft Power BI was created for 
 
 The Purchase spend analysis Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 for Finance and Operations.
 
-For more information, see [Purchase content pack for Power BI](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md).
+For more information, see [Purchase spend analysis Power BI content](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md).
 
 ### Purchasing analysis Power BI content
 
@@ -581,7 +581,7 @@ Profitability can be analyzed by:
 
 The Sales and profitability performance Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 for Finance and Operations.
 
-For more information, see [Sales and profitability performance Power BI content pack](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md).
+For more information, see [Sales and profitability performance Power BI content](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md).
 
 ### Vendor payment analysis Power BI
 
@@ -699,17 +699,17 @@ In Finance and Operations there are no expensive upgrades needed to stay current
 
 For more information, see the following topics:
 
-- [Upgrade from AX 2012 to Dynamics 365 for Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
-- [Analysis: Use the upgrade analyzer to plan migration work](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
-- [Analysis: Estimate the effort to upgrade code](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
-- [Analysis: Deploy a sandbox environment](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
-- [Upgrade: Data upgrade in a development environment](../../dev-itpro/migration-upgrade/prepare-data-upgrade.md)
-- [Upgrade: AX 2012 data upgrade tasks](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
-- [Upgrade: Data upgrade in a sandbox environment](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
-- [Validate: Tasks to complete after upgrade process](../../dev-itpro/migration-upgrade/app-validation-process.md)
-- [Validate: Cutover testing](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)
-- [Validate: Functional testing](../../dev-itpro/migration-upgrade/upgrade-functional-validation.md)
-- [Validate: Prepare for go live](../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md)
+- [Upgrade from AX 2012 to Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
+- [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
+- [Upgrade from AX 2012 - Estimate effort by using the Code upgrade service](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
+- [Upgrade from AX 2012 - Deploy a demo environment for analysis](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
+- [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](../../dev-itpro/migration-upgrade/prepare-data-upgrade.md)
+- [Upgrade from AX 2012 - Data upgrade in development environments](../../dev-itpro/migration-upgrade/data-upgrade-2012.md)
+- [Upgrade from AX 2012 - Data upgrade in sandbox environments](../../dev-itpro/migration-upgrade/upgrade-data-sandbox.md)
+- [Upgrade from AX 2012 - Post-upgrade tasks](../../dev-itpro/migration-upgrade/app-validation-process.md)
+- [Upgrade from AX 2012 - Cutover testing (Mock cutover)](../../dev-itpro/migration-upgrade/upgrade-cutover-testing.md)
+- [Upgrade from AX 2012 - Functional test passes](../../dev-itpro/migration-upgrade/upgrade-functional-validation.md)
+- [Upgrade from AX 2012 - Prepare for go-live](../../dev-itpro/migration-upgrade/upgrade-go-live-prep.md)
 
 ## Project management \| Accounting
 
