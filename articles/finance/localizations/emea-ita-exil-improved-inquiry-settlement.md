@@ -39,7 +39,7 @@ This topic provides description how to overview information on settlements of in
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Use Invoice/ Payment page lists
+## Use Invoice/ Payment list pages
 To open **Invoice/ Payments** page list go to **Account receivable /> Customers /> All customers, Inoice tab /> Related information /> Invoice/ Payments**
 OR
 **Account payable /> Vendors /> All vendors, Inoice tab /> Related information /> Invoice/ Payments**
