@@ -45,7 +45,9 @@ OR
 **Account payable /> Vendors /> All vendors, Inoice tab /> Related information /> Invoice/ Payments**
 Top list page displays Customer/ Vendor invoices sorted by invoice number and date. 
 Bottom list page displays Customer/ Vendor Debit/ Credit transactions (invoices, payment, foreign currency revaluation transactions and etc.).
-Below exaple of the list page for the vendor.  
+
+Below the list page example for the vendor.  
+
 In parameters a user may set filter for displaying data in the list page.
 
 
