@@ -56,7 +56,7 @@ A retail deployable package is one combined package that contains all your custo
 >
 > If your customizations were built and packaged as individual Retail component packages by using a version of the Retail software development kit (SDK) that is older than application version 7.1.1541.3036, the packages are no longer supported for deployment in LCS. You must uptake the hotfix in [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download), and then rebuild and repackage your customizations.
 
-For detailed information about the Retail SDK, see [Retail SDK overview](retail-sdk-overview.md).
+For detailed information about the Retail SDK, see [Retail software development kit (SDK) architecture](retail-sdk-overview.md).
 
 ### Steps to create a retail deployable package
 
