@@ -5,7 +5,7 @@ title: Talent updates
 description: This article provides information about the release process and cadence for Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: 2019-11-15
 ms.dyn365.ops.version: Talent October 2019 update
 ---
 
@@ -85,6 +85,12 @@ You can find out what's in the works for Talent and what we've released in the f
 ## Preview features in a sandbox environment
 
 You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the Feature management workspace, you can turn them on. Some features may be on by default.
+
+At times, an integral feature will be on by default and can't be turned off (for example, the Feature management workspace).
+
+Once a feature is generally available, it may be turned on or off in production environments. The Feature management workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
