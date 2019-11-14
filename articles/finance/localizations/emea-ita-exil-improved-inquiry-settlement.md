@@ -32,22 +32,20 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, ...
+This topic provides description how to overview information on settlements of invoices and payments in convenient and simple form.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up...
+## Use Invoice/ Payment page lists
+To open **Invoice/ Payments** page list go to **Account receivable /> Customers /> All customers, Inoice tab /> Related information /> Invoice/ Payments**
+OR
+**Account payable /> Vendors /> All vendors, Inoice tab /> Related information /> Invoice/ Payments**
+Top list page displays Customer/ Vendor invoices sorted by invoice number and date. 
+Bottom list page displays Customer/ Vendor Debit/ Credit transactions (invoices, payment, foreign currency revaluation transactions and etc.).
+Below exaple of the list page for the vendor.  
+In parameters a user may set filter for displaying data in the list page.
 
-Define...
 
-## Use...
-
-### Post
-
-When you post...
-
-> [!NOTE]
-> Warning...
