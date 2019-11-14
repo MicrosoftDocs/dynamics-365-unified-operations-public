@@ -40,7 +40,7 @@ This topic describes preview features that are new or changed for Platform updat
 - General availability (self-update) is in November 2019.
 - Auto-update is in January 2020.
 
-For more information about Platform update 31, see [Additional resources](whats-new-platform-update-31.md#additional-resources).
+For more information about Platform update 31, see [Additional resources](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md#additional-resources).
 
 ## Budget register entry enhancements
 
