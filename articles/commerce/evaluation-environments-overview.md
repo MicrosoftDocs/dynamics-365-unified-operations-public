@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce preview environment overview
-description: This topic gives an overview of the Microsoft Dynamics 36 Commerce preview environment.
+description: This topic gives an overview of the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
 ms.date: 11/15/2019
