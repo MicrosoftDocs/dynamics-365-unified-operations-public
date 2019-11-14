@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This topic covers how to connect peripherals to your Retail POS.
 
 > [!NOTE]
-> For specific installation instructions, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md) and [Retail Modern POS self-service download/installation, and device activation of Modern POS and Cloud POS](retail-modern-pos-device-activation.md).
+> For specific installation instructions, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) and [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ## Key components
 
@@ -144,7 +144,7 @@ The functionality profile is set at the store level. It's used to specify store-
 
 - **Info codes** FastTab:
 
-    - All aspects of how info codes are managed at the POS. For details, see [Info codes](info-codes-retail.md).
+    - All aspects of how info codes are managed at the POS. For details, see [Info codes and info code groups](info-codes-retail.md).
 
 - **Receipt numbering** FastTab:
 
