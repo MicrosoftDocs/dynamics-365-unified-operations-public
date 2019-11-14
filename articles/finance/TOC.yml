@@ -2241,6 +2241,8 @@
             href: localizations/rus-currency-sale-purchase.md 
           - name: Petty cash
             href: localizations/emea-petty-cash.md
+          - name: Cash - Local primary forms and unified reports
+            href: localizations/rus-local-primary-forms-and-unified-reports.md
         - name: VAT
           items:
           - name: Local specific posting of sales VAT

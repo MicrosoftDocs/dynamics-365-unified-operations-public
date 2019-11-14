@@ -58,6 +58,7 @@ This topic provides information about functionality that supports Russian regula
 - [Exchange adjustment](rus-exchange-adjustment.md)
 - [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
+- [Cash - Local primary forms and unified reports](rus-local-primary-forms-and-unified-reports.md)
 
 ## VAT
 

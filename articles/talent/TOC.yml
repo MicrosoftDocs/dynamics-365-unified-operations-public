@@ -8,6 +8,8 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: November 12, 2019
+        href: whats-new-talent-november-12-2019.md
       - name: November 5, 2019
         href: whats-new-talent-november-5-2019.md
       - name: October 29, 2019
@@ -444,8 +446,20 @@
     - name: Extensibility in Attract
       href: extensibility-attract.md
     - name: Custom fields in Core HR
-      href: corehr-custom-fields.md  
-  - name: Troubleshoot Talent
+      href: corehr-custom-fields.md
+    - name: Entity API reference
+      items:
+      - name: Authentication
+        href: api-odata-authentication.md
+      - name: Entities
+        items:
+          - name: MyLeaveRequests
+            items:
+            - name: MyLeaveRequests overview
+              href: api-myleaverequests-overview.md
+            - name: Submit a leave request to workflow
+              href: api-myleaverequests-submit.md
+  - name: Troubleshoot Talent 
     items:
     - name: Optimize performance with auto cleanup tasks
       href: talent-batch-history-cleanup.md
