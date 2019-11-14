@@ -32,22 +32,13 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, ...
+In Italy it is mandatory to post invoices even if the total amount is zero.
 
 ## Prerequisites
 
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up...
+### Post invoices with zero amount
+When posting invoices with zero amount the system creates **Customer/ Vendor transactions** and **Voucher transactions**. 
 
-Define...
-
-## Use...
-
-### Post
-
-When you post...
-
-> [!NOTE]
-> Warning...
