@@ -88,6 +88,9 @@ Based on conversations with customers, Microsoft has compiled the following list
 
 The following scenarios can be accomplished only by using the One voucher functionality. If your organization has any of these scenarios, you must enable multiple transactions to be entered in a voucher by changing the setting of the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page. These functional gaps will be filled through other features in later releases.
 
+> [!Note]
+> [For each of the following scenarios the **Allow multiple transactions within one voucher** field must be set to Yes in the **General** FastTab on the **General ledger parameters** page.]
+
 ### Post vendor or customer payments in summary form to a bank account
 
 **Scenario** An organization communicates a list of vendors and amounts to its bank, and the bank uses this list to pay the vendors on the organization's behalf. The bank posts the sum of the payments as a single withdrawal on the bank account.
