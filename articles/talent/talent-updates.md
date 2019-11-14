@@ -37,7 +37,7 @@ Microsoft Dynamics 365 Talent is a true software as a service (SaaS) that provid
 
 ## Update policy
 
-Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which gives you consistent and predictable guidelines for the availability of support.
+Updates are released on a regular cadence to all environments. Talent is supported according to the [Microsoft Lifecycle policy](https://support.microsoft.com/en-us/hub/4095338/microsoft-lifecycle-policy), which provides consistent and predictable guidelines for the availability of support.
 
 ## Release cadence
 
