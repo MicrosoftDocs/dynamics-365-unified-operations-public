@@ -153,7 +153,6 @@ Enter sales order details:
 
     > [!NOTE]
     > Reservation of the sales order line quantity can be done across multiple batches. Likewise, reservation of the same batch can be done against multiple locations and license plates, if enabled for location.
-
     > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, while 80 units are reserved at the site and warehouse level for any available batch. In this case, the warehouse management system will handle picking operations by two separate work lines.
 
 7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory** Action Pane \> **View** \> **Transactions**:
