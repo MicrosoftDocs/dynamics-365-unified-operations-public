@@ -53,13 +53,13 @@ The **Feature management** workspace provides a list of features delivered in ea
 
 All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features may be on by default.
  
-At times, an integral feature will be on by default without the ability to be turned off. For example, the **Feature management** feature is on by default and can't be turned off.
+At times, an integral feature will be on by default and can't be turned off (for example, the **Feature management** workspace).
  
-Once a feature is generally available, it may be turned on or off in production environments. Mandatory features reach a point where you can no longer turn them off. The **Feature management** workspace indicates when a preview feature will be made mandatory and can no longer be turned off. This is usually on October 1 or April 1 to align with the semiannual release plans. Until this time, you can turn the feature on and off in all environments.
+Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
 
 ### Office location is not updated via Excel workbook (369727)
 
-With this change, the office location can now be updated using the Office workbook designer.
+With this change, you can now update the office location by using the Office workbook designer.
 
 ## In preview
 
