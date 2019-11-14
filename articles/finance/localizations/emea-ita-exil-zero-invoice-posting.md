@@ -40,6 +40,8 @@ In Italy it is legally required to post financial transactions for invoices with
 - In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Post invoices with zero amount
-This feature impacts on invoices created in the **Account receivable** and **Account payable** modules. 
-When posting invoices with zero amount the system creates **Customer/ Vendor transactions** and **Voucher transactions**. 
+This feature is applicable to invoices created in the **Account receivable** and **Account payable** modules.
+When posting invoices with zero amount the system creates **Customer/ Vendor transactions** and **Voucher transactions**.
+
+ 
 
