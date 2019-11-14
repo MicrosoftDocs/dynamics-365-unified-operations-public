@@ -59,4 +59,4 @@ Follow these steps to add and configure the branches of this parallel activity.
     > [!NOTE]
     > The order of the branches is not important because all the branches of a parallel activity run at the same time.
 
-3. To configure each branch, see [Configure a parallel branch](configure-parallel-branch-workflow.md).
+3. To configure each branch, see [Configure parallel branches in a workflow](configure-parallel-branch-workflow.md).
