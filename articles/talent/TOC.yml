@@ -451,7 +451,7 @@
               href: api-myleaverequests-overview.md
             - name: Submit a leave request to workflow
               href: api-myleaverequests-submit.md
-  - name: Troubleshoot Talent
+  - name: Troubleshoot Talent 
     items:
     - name: Optimize performance with auto cleanup tasks
       href: talent-batch-history-cleanup.md
