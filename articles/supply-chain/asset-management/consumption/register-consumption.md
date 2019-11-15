@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.5
 
 When a maintenance job has been completed on a work order, the next step is to make consumption registrations and post the journals. You can make registrations on the following consumption types: Hours, items, and expenses. The different consumption types are registered and posted on the **Work order journals** page. The journal setup in **Asset Management** is used for creating and posting separate journals for hours, items, and expenses in the **Project management and accounting** module.
 
-In some cases, you may be able to add or delete forecast lines on a work order. The setup of a work order lifecycle state, the related project type, and the stage rules related to the project type determine if you are able to add or edit journal lines. Read more about work order lifecycle states and related project stages in [Integration to project management and accounting](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+In some cases, you may be able to add or delete forecast lines on a work order. The setup of a work order lifecycle state, the related project type, and the stage rules related to the project type determine if you are able to add or edit journal lines. Read more about work order lifecycle states and related project stages in [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >It is possible to set up automatic posting of journals on a work order lifecycle state. Refer to [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md) for more information.
