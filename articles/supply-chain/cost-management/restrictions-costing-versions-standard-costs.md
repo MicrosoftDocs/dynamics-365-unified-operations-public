@@ -50,7 +50,7 @@ The item cost data for standard costs can be copied to another costing version t
 Related topics
 --------
 
-[Costing versions](costing-versions.md)
+[Costing versions overview](costing-versions.md)
 
 [Update standard costs in a non-manufacturing environment](update-standard-costs-non-manufacturing-environment.md)
 
