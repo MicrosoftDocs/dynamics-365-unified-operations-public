@@ -48,7 +48,7 @@ You can view details about futures and actions for a selected order. On the **Ex
 Additional resources
 --------
 
-[Master plans](master-plans.md)
+[Master plans overview](master-plans.md)
 
 
 
