@@ -44,15 +44,15 @@ When the warehouse is not set to mandatory, it may not be known from the initial
 
 The following topics describe how the planning engine works, when different settings are defined, to determine the warehouse to use.
 
-[Master planning - site and warehouse coverage, warehouse mandatory](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Master planning for site and warehouse coverage, warehouse mandatory](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Master planning - site coverage, warehouse mandatory](master-plan-site-coverage-warehouse-mandatory.md)
+[Master planning for site coverage, mandatory warehouse](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Master planning - site and warehouse coverage, warehouse not mandatory](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Master planning for site and warehouse coverage, warehouse not mandatory](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Master planning - site coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
+[Master planning for site coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
 
-[Master planning - How the BOM version is determined](master-plan-bom-version-determined.md)
+[Determine the BOM version](master-plan-bom-version-determined.md)
 
 
 
