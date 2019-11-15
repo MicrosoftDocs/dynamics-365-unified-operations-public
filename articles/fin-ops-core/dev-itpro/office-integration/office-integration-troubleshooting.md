@@ -132,6 +132,10 @@ If you encounter issues with Centralized Deployment for some users, it could be 
 
 The default Excel Add-in cell limit is about half the limit of what the Excel Add-in can handle on a reasonably fast machine. The speed of the machine is the limitation. If problems are encountered, then the cell limit should be reduced and/or the filter should be adjusted to reduce the data set. A common workaround is to use a filter to manage the data in smaller pieces instead of all at once.
 
+### How do I make an entity available in the Excel Add-in and/or as an Open in Excel option?
+
+If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName and PublicCollectionName values, then it will be available via the OData service. Check that there aren’t any existing entities with the same PublicEntityName and PublicCollectionName values by looking at the $metadata feed for the environment (ideally in Chrome): https://*SomeFullEnvironmentURL*.dynamics.com/data/$metadata
+
 ## Troubleshooting issues
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
