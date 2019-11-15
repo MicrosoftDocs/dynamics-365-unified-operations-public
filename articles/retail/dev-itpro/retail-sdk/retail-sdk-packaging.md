@@ -211,6 +211,24 @@ The following illustration shows an example of a Retail Server web.config file.
 
 [![Retail Server web.config file](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
+### Shared Hardware station web.config
+
+If you are not using the legacy payment connector then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
+
+**Ex:** To disable the legacy connector, open the web.config from \RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin and comment the legacy connector and enable the non-legacy connector under the composition section like below:
+
+> [!NOTE]
+> x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number, it wall vary based on your Retail SDK version number.
+
+```C#
+    <composition>
+      <!-- Defaulting to legacy payment devices.
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
+      -->
+      <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
+    </composition>
+```
+
 > [!NOTE]
 > You should not add or change any custom settings in the above mentioned example or in any of the channel config files. The only supported modification is adding custom assemblies details in the composition section.
 >
