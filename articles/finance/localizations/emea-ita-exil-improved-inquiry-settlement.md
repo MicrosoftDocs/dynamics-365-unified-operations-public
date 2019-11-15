@@ -40,13 +40,15 @@ This topic provides description how to overview information on settlements of in
 - In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Use Invoice/ Payment list pages
-To open **Invoice/ Payments** page list go to **Account receivable /> Customers /> All customers, Inoice tab /> Related information /> Invoice/ Payments**
+To open the **Invoice/ Payments** list page go to **Account receivable /> Customers /> All customers, Inoice tab /> Related information /> Invoice/ Payments**
 OR
 **Account payable /> Vendors /> All vendors, Inoice tab /> Related information /> Invoice/ Payments**
 Top list page displays Customer/ Vendor invoices sorted by invoice number and date. 
 Bottom list page displays Customer/ Vendor Debit/ Credit transactions (invoices, payment, foreign currency revaluation transactions and etc.).
 
-Below the list page example for the vendor.  
+Below the list page example for the vendor invoices. 
+
+![Invoice/ Payments](media/emea-ita-exil-DC-inquiry-vendor-invoice-payment.png)
 
 In parameters a user may set filter for displaying data in the list page.
 
