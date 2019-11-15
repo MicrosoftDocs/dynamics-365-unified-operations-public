@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -213,12 +213,12 @@ The following illustration shows an example of a Retail Server web.config file.
 
 ### Shared Hardware station web.config
 
-If you are not using the legacy payment connector then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
+If you are not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
 
-**Ex:** To disable the legacy connector, open the web.config from \RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin and comment the legacy connector and enable the non-legacy connector under the composition section like below:
+**Example** To disable the legacy connector, open the web.config file from \RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin and comment the legacy connector. Enable the non-legacy connector under the composition section, as shown in the following sample code.
 
 > [!NOTE]
-> x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number, it wall vary based on your Retail SDK version number.
+> x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number. This will vary based on your Retail SDK version number.
 
 ```C#
     <composition>
@@ -230,9 +230,9 @@ If you are not using the legacy payment connector then comment the legacy paymen
 ```
 
 > [!NOTE]
-> You should not add or change any custom settings in the above mentioned example or in any of the channel config files. The only supported modification is adding custom assemblies details in the composition section.
+> Do not add or change any custom settings in the above mentioned example or in any of the channel config files. The only supported modification is to add custom assemblies details in the composition section.
 >
-> Also, as part of your extension or package, do not edit any of the following config files. These config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
+> As part of your extension or package, do not edit any of the following config files. These config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
 >
 > - CommerceRuntime.config
 > - dllhost.exe.config
