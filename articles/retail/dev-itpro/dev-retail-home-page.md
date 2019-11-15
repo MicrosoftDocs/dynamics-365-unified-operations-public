@@ -5,7 +5,7 @@ title: Retail for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Retail.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/22/2019
+ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -136,7 +136,7 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Payment connectors
 - [Payment integration with a payment terminal](end-to-end-payment-extension.md)
-- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf)
+- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 -   [Create a Windows installer for a payment connector](create-windows-installer-payment-connector.md)
 -   [Deploy a payment connector](deploy-payment-connector.md)
 
