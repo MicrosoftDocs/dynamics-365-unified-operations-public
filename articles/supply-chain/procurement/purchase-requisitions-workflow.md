@@ -113,7 +113,7 @@ To use one of the expenditure reviewers that you set up in a workflow, you must 
 Additional resources
 --------
 
-[Create a requisition for consumption (Task guide)](tasks/create-requisition-consumption.md)
+[Create a requisition for consumption](tasks/create-requisition-consumption.md)
 
 [Defining business process workflows for purchase requisitions](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
