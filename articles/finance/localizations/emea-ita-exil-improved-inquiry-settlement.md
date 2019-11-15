@@ -46,7 +46,7 @@ OR
 Top list page displays Customer/ Vendor invoices sorted by invoice number and date. 
 Bottom list page displays Customer/ Vendor Debit/ Credit transactions (invoices, payment, foreign currency revaluation transactions and etc.).
 
-Below the list page example for the vendor invoices. 
+Below the list page example for the vendor invoices. Non-zero balance in invoices is highlighted in red.
 
 ![Invoice/ Payments](media/emea-ita-exil-DC-inquiry-vendor-invoice-payment.png)
 
