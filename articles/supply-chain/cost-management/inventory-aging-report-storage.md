@@ -32,6 +32,10 @@ ms.dyn365.ops.version:
 
 # Inventory aging report
 
+
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
 In Microsoft Dynamics 365 Supply Chain Management, you can run an **Inventory aging** report and make the output available as a form and a chart. In the form, columns and aggregate balances are dynamically adjusted, depending on the layout that is configured. The chart provides a visual overview that supports filtering and lets you drill down into details. Additionally, a data entity that is named **Inventory aging report** lets you export the results of an **Inventory aging** report run to a format such as a Microsoft Excel file or a PDF file.
 
 This method of running an **Inventory aging** report is helpful in cases where the output contains many lines. For example, the output will contain many lines if you have 50,000 items and 300 stores that are created as warehouses, and you request inventory aging by item, site, and warehouse.
