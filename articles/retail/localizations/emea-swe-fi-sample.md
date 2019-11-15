@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.7
 
 ## Introduction
 
-This topic provides an overview of the sample of integration with Sweden-specific fiscal devices called control units. 
+The Retail functionality for Sweden includes a sample integration of the point of sale (POS) with Sweden-specific fiscal devices called control units. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. As an example, this sample uses the application programming interface (API) of the [CleanCash® Type A](https://www.retailinnovation.se/produkter) control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. 
 
-To meet local fiscal requirements for cash registers in Sweden, the Dynamics 365 Retail functionality includes a sample integration of the point of sale (POS) with Sweden-specific fiscal devices called control units. As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. For the integration package that includes the API and documentation, contact the manufacturer of the device.
+The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
-This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md). The sample is provided in the form of source code and extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). 
+Microsoft doesn't release any hardware, software, or documentation from Retail Innovation HTT AB. For information about how to get the control unit and operate it, contact [Retail Innovation HTT AB](https://www.retailinnovation.se/).
 
 ## Scenarios
 
@@ -82,7 +82,7 @@ Control units support up to 4 different VAT code, so VAT code mapping may be set
   - Customer order scenarios are not supported in the Control unit integration sample for Sweden for now.
 
 
-## Set up Retail for Sweden
+## Setting up integration with control units
 
 For more details about general setting for Sweden see [Setting up Retail for Sweden](./emea-swe-cash-registers.md#setting-up-retail-for-sweden).
 
