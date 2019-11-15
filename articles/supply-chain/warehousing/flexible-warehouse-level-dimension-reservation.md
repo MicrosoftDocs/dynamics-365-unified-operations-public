@@ -210,7 +210,7 @@ Review the results of the unpicking action:
 - a new work of type **Inventory movement** for the unpicked quantity of 10 for batch number "B11" has been created to represent movement from location "Baydoor" to location "FL-001", license plate "LP33", and is set to status **Closed**.
 - on the **Batch reservation** page, batch "B11" is shown as physically reserved in the **Batch numbers committed to source line** tab, and the **Reservation** field contains quantity 10 for batch number "B11". The **Location** and **License plate** fields (add it to the grid, if not displayed) contains "FL-001" and "LP11" respectively. This is a result of the system re-reserving the originally ordered batch number and assigning the location and license plate IDs where the said batch is available for reservation (which is equivalent to the user running the **Reserve line** function for the order line for a given batch number).
 
-An overview of how order-committed batch reservation is treated by the system depending on the user action under a certain flow is presented here (insert link).
+An overview of how order-committed batch reservation is handled by the system with regards to a given warehouse flow is provided here (insert link).
 
 ## Functionality not supported together with Flexible warehouse-level dimension reservation feature:
 
