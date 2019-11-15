@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
+> [!NOTE]
+> This sample fiscal integration functionality replaces the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The legacy sample does not take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. To learn how to migrate from the legacy sample to this sample, see the [Migrating from legacy integration sample](#migrating-from-legacy-integration-sample) section.
+
 ## Introduction
 
 The Retail functionality for Sweden includes a sample integration of the point of sale (POS) with Sweden-specific fiscal devices called control units. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. As an example, this sample uses the application programming interface (API) of the [CleanCash® Type A](https://www.retailinnovation.se/produkter) control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. 
@@ -66,9 +69,9 @@ The following default data mapping is included in the fiscal document provider c
     ";" - separator,
     code1, code2 - sales tax codes, that were set up in the system.
 
-Control units support up to 4 different VAT code, so VAT code mapping may be set up as shown below:
+Control units support up to 4 different VAT code, so the VAT code mapping may be set up as shown below:
 
-    *1 : code1 ; 2 : code2 ; 2 : code3 ; 3 : code4 ; 4 : code5*
+*1 : code1 ; 2 : code2 ; 3 : code3 ; 4 : code4*
 
 
 ### Limitations of the sample
@@ -352,21 +355,15 @@ The configuration file is located in the **Configuration** folder of the extensi
 - **Connections string** – The control unit connection settings.
 - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.
 
+## Migrating from legacy integration sample
 
-
-## Migrate your code
-
-As a part of the work to simplify the servicing process and enhance partner and customer development experience an important change in localization strategy for Dynamics 365 for Retail is planned. Localization features are going to be gradually moved from "Retail SDK samples" to "Sealed extensions" model of delivery.
-
-In order to uptake to the change and get the timely updates for localization features in the future you may need to upgrade, recompile, or do some minor code and configuration changes in the extensions that you've built. No major changes will be required in the extension logic that you've created. Currently exsiting extensions and localization samples will continue working in case no changes are made from your side. This is done so that you can plan and prepare the uptake for your environment. 
+If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future you may need to upgrade, recompile, and make minor code and configuration adjustments in the extensions that you've built. No major changes are required in the extension logic that you've created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for and execute the uptake for your environment.
 
 In case you are planning to uptake fiscal integrastion for Sweden it's required to disable previously released sample extensions for Retail POS integration with control units for Sweden.
-
 
 ### Delopment environment
 
 Disable extensions released previously.
-
 
 #### Harware station extensions uptake
 
@@ -416,7 +413,6 @@ Disable extensions released previously.
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
     ```
 
-
 #### Modern POS extensions uptake
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**
@@ -439,7 +435,6 @@ Disable extensions released previously.
     }
     ```
 
-
 ### Production environment
 
 1. Complete the steps in the [Modern POS extensions uptake](#modern-pos-extensions-uptake) and [Cloud POS extensions uptake](#cloud-pos-extensions-uptake) sections earlier in this topic.
@@ -452,7 +447,6 @@ Disable extensions released previously.
 
 3. Modify the **HardwareStation.Extension.config** Hardware station configuration file.
 
-
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
     Remove the following section from the **HardwareStation.Shared.config** and **HardwareStation.Dedicated.config** configuration files.
@@ -460,7 +454,6 @@ Disable extensions released previously.
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample" />
     ```
-
 
     # [Retail 7.3.1 and later](#tab/retail-7-3-1)
 
