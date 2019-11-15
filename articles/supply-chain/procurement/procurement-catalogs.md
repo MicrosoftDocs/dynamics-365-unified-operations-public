@@ -77,7 +77,7 @@ Updates are published either automatically or manually, depending on the option 
 Additional resources
 --------
 
-[Set up a procurement category hierarchy (Task guide)](tasks/set-up-procurement-category-hierarchy.md)
+[Set up a procurement category hierarchy](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
