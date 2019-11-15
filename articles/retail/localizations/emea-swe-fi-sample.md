@@ -296,7 +296,6 @@ The previous procedure enables the extensions that are components of the fiscal 
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 5. Complete all the required setup tasks that are described in the [Set up Retail for Sweden](#set-up-retail-for-sweden) section.
 
-
 ## Design of extensions
 
 ### Commerce runtime extension design
@@ -306,7 +305,6 @@ The purpose of the extension that is a fiscal document provider is to generate s
 The CRT extension is **Runtime.Extensions.DocumentProvider.CleanCashSample**.
 
 For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
-
 
 #### Request handler
 	
@@ -319,7 +317,6 @@ The connector supports the following requests.
 - **GetFiscalDocumentDocumentProviderRequest** – This request contains information about what document should be generated. It returns a service-specific document that should be registered in the fiscal registration service.
 - **GetSupportedRegistrableEventsDocumentProviderRequest** – This request returns the list of events to subscribe to. Currently, the following events are supported: sales and audit events.
 
-
 #### Configuration
 
 The **DocumentProviderFiscalCleanCashSample** configuration file is located in the **Configuration** folder of the extension project.
@@ -327,13 +324,11 @@ The purpose of this file is to enable settings for the document provider to be c
 
 - VAT codes mapping
 
-
 ### Hardware station extension design
 
 The purpose of the extension that is a fiscal connector is to communicate with the fiscal registration service.
 
 The Hardware station extension is **HardwareStation.Extension.CleanCashSample**. The Hardware station extension uses the HTTP protocol to submit documents that the CRT extension generates to the fiscal registration service. It also handles the responses that are received from the fiscal registration service.
-
 
 #### Request handler
 
@@ -347,7 +342,6 @@ The connector supports the following requests.
 - **IsReadyFiscalDeviceRequest** – This request is used for a health check of the fiscal registration service.
 - **InitializeFiscalDeviceRequest** – This request is used to initialize the fiscal registration service.
 
-
 #### Configuration
 
 The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added.
@@ -357,9 +351,9 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 ## Migrating from legacy integration sample
 
-If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future you may need to upgrade, recompile, and make minor code and configuration adjustments in the extensions that you've built. No major changes are required in the extension logic that you've created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for and execute the uptake for your environment.
+If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future, you may need to upgrade, make minor code and configuration adjustments in the extensions that you've built, and rebuild your solutions. No major changes are required in the extension logic that you've created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for and execute the uptake for your environment.
 
-In case you are planning to uptake fiscal integrastion for Sweden it's required to disable previously released sample extensions for Retail POS integration with control units for Sweden.
+In case you are planning to uptake the fiscal integration for Sweden it's required to disable previously released sample extensions for Retail POS integration with control units for Sweden.
 
 ### Delopment environment
 
