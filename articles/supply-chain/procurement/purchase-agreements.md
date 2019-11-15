@@ -102,9 +102,9 @@ You can copy financial dimensions to document headers or to individual lines of 
 Additional resources
 --------
 
-[Create a purchase agreement (Task guide)](tasks/create-purchase-agreement.md)
+[Create a purchase agreement](tasks/create-purchase-agreement.md)
 
-[Create a purchase release order from a purchase agreement (Task guide)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
