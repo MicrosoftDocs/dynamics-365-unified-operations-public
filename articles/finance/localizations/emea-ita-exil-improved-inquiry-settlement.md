@@ -52,4 +52,4 @@ Below the list page example for the vendor invoices.
 
 In parameters a user may set filter for displaying data in the list page.
 
-
+![Parameters](media/emea-ita-exil-DC-inquiry-parameters.png)
