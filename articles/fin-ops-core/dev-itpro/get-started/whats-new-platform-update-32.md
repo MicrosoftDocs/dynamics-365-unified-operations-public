@@ -44,7 +44,7 @@ For more information about Platform update 32, see [Additional resources](whats-
 
 ## Features included in this release
 
-- [File size limitation for Data management exports has been removed](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/FILE-NAME-NEEDED)
+- [Data management export file size limit removed](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/FILE-NAME-NEEDED)
 
 
 ## Additional resources
