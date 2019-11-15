@@ -41,23 +41,17 @@ Microsoft doesn't release any hardware, software, or documentation from Retail I
 
 ## Scenarios
 
-### Integration with control units
+The control unit integration sample for Sweden includes the following capabilities:
 
-Control unit is a Sweden-specific fiscal device. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. The Control unit integration sample for Sweden includes the following capabilities:
-
-  - Support of Sweden-specific requirements for transactions registered on POS:
-    - Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.
-    - The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Retail store transactions** page.
-    - Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt format, so that you can print the fiscal data for the transaction on a receipt.
-    - The fiscal data for a transaction is displayed in the **Electronic journal (Sweden)** channel report. 
-
-  - Support of Sweden-specific additional counters in daily reports (X and Z):
-    - Receipt copy count and total amount,
-    - Value added tax amounts per tax rate,
-    - Total quantities of items and services sold,
-    - Total sales excluding and including VAT,
-    - Grand total sales, returns, and net grand total.
-
+- Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.
+- The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. This data is also referred to as *fiscal response*. The fiscal response can be viewed on the **Retail store transactions** page.
+- Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt layout, so that you can print the fiscal response for a transaction on a receipt.
+- The fiscal response for a transaction is displayed in the **Electronic journal (Sweden)** channel report. 
+- Error handling, such as the following options:
+  - Retry fiscal registration if a retry is possible, such as if the control unit isn't connected, isn't ready or isn't responding.
+  - Postpone fiscal registration.
+  - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
+  - Check the availability of the control unit before a new sales transaction is opened or a sales transaction is finalized.
 
 ### Default data mapping
 
@@ -137,7 +131,7 @@ To enable the registration process, follow these steps to set up Retail Headquar
 6. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create a new fiscal connector group, for the connector functional profile that you created earlier.
 7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, a fiscal registration process step, and select the fiscal connector group that you created earlier.
 8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier.
-9. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+9. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the control unit will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
 10. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 
