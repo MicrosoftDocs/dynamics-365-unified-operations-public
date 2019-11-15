@@ -40,10 +40,14 @@ This topic provides description how to overview information on settlements of in
 - In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Use Invoice/ Payment list pages
-To open the **Invoice/ Payments** list page go to **Account receivable > Customers > All customers, Inoice tab > Related information > Invoice/ Payments**
+To open the **Invoice/ Payments** list page go to **Account receivable > Customers > All customers, Inoice** tab > **Related information > Invoice/ Payments**
+
 OR
-**Account payable > Vendors > All vendors, Inoice tab > Related information > Invoice/ Payments**
+
+**Account payable > Vendors > All vendors, Inoice** tab > **Related information > Invoice/ Payments**
+
 Top list page displays Customer/ Vendor invoices sorted by invoice number and date. 
+
 Bottom list page displays Customer/ Vendor Debit/ Credit transactions (invoices, payment, foreign currency revaluation transactions and etc.).
 
 Below the list page example for the vendor invoices. Non-zero balance in invoices is highlighted in red.
