@@ -163,7 +163,7 @@ Enter sales order details:
     Review the item's inventory transactions related to the sales order line reservation:
 
     - transaction with **Reference** type **Sales order** and **Issue** type **Reserved physical** represents the order line reservation for the inventory dimensions above location, which according to the item's reservation hierarchy are "Site", "Warehouse" and "Inventory status".
-    - transaction with **Reference** type **Order-committed reservation* and **Issue** type **Reserved physical** represents the order line reservation for the specific batch and all other inventory dimensions above it. In our example, those dimensions are "Batch number" and "Location". The latter happened to be "Bulk-001".
+    - transaction with **Reference** type **Order-committed reservation** and **Issue** type **Reserved physical** represents the order line reservation for the specific batch and all other inventory dimensions above it. In our example, those dimensions are "Batch number" and "Location". The latter happened to be "Bulk-001".
 
 8. On the sales order header, click **Warehouse** Action Pane \> **Actions** \> **Release to warehouse**. The order line has now been waved, and load and work have been created.
 
@@ -197,7 +197,7 @@ Warehouse work for picking order-committed batch number is subject to the same s
 
 For example, let's review the scenario where the previously completed work is being unpicked by means of using the Reduce pick quantity function.
 
-1. \[Continue from the previous example] Go to **Warehouse management** \> **Loads** \> **Active loads**
+1. \[Continue from the previous example] Go to **Warehouse management** \> **Loads** \> **Active loads**.
 2. Select the load that was created in connection with shipping your sales order.
 3. From the Load order lines action bar, click **Reduce picked quantity**.
 4. On the **Reduce picked quantity** page, in the **Move to location** field select **FL-001**, in the **Move to license plate** field select **LP33**.
@@ -206,7 +206,7 @@ For example, let's review the scenario where the previously completed work is be
 
 Review the results of the unpicking action:
 
-- the previously closed work has been set to status **Cancelled**
+- the previously closed work has been set to status **Cancelled**.
 - a new work of type **Inventory movement** for the unpicked quantity of 10 for batch number "B11" has been created to represent movement from location "Baydoor" to location "FL-001", license plate "LP33", and is set to status **Closed**.
 - on the **Batch reservation** page, batch "B11" is shown as physically reserved in the **Batch numbers committed to source line** tab, and the **Reservation** field contains quantity 10 for batch number "B11". The **Location** and **License plate** fields (add it to the grid, if not displayed) contains "FL-001" and "LP11" respectively. This is a result of the system re-reserving the originally ordered batch number and assigning the location and license plate IDs where the said batch is available for reservation (which is equivalent to the user running the **Reserve line** function for the order line for a given batch number).
 
