@@ -41,6 +41,7 @@ This topic provides description how to overview information on settlements of in
 
 ## Use Invoice/ Payment list pages
 To open the **Invoice/ Payments** list page go to: 
+
 **Account receivable > Customers > All customers, Inoice** tab > **Related information > Invoice/ Payments**
 
 OR
