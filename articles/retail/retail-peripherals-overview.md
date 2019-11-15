@@ -39,11 +39,17 @@ This topic explains the concepts that are related to retail peripherals. It desc
 
 ### POS registers
 
-Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.
+Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. 
+
+The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.
 
 ### Devices
 
-Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.
+Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. 
+
+A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
+
+Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.
 
 ### Retail Modern POS
 
@@ -67,11 +73,15 @@ POS peripherals are devices that are explicitly supported for POS functions. The
 
 ### Hardware station
 
-Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**. Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS program for Windows. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it can be accessed via a network.
+Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**. 
+
+Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS program for Windows. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it can be accessed via a network.
 
 ### Hardware profile
 
-Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. The hardware profile is a list of devices that are configured for a POS register or a hardware station. The hardware profile can be mapped directly to a POS register or a hardware station.
+Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. 
+
+The hardware profile is a list of devices that are configured for a POS register or a hardware station. The hardware profile can be mapped directly to a POS register or a hardware station.
 
 ## Devices classes
 POS peripherals are typically divided into classes. This section describes and gives an overview of the devices that Modern POS supports.
@@ -206,11 +216,11 @@ The logic that drives physically connected and network-addressable peripherals i
 
 ### Hardware station installation
 
-For information, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).
+For information, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
 
 ### Modern POS for Windows setup and configuration
 
-For information, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).
+For information, see [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### OPOS device setup and configuration
 
@@ -527,7 +537,7 @@ Network peripherals can be supported directly through the hardware station that 
 
 ## Configuration for supported scenarios
 
-For more information about how to create hardware profiles, see [Define and maintain channel clients, including registers and hardware stations](define-maintain-channel-clients-registers-hw-stations.md).
+For more information about how to create hardware profiles, see [Connect peripherals to the point of sale (POS)](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
 > For Retail version 1611, the hardware station profile is no longer used. Attributes that you previously set up in the hardware station profile are now part of the hardware station itself.
@@ -570,8 +580,8 @@ This configuration can be used for all Modern POS clients that have a hardware s
 4. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 5. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
 6. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
-7. Install the hardware station. For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).
-8. Install and activate Modern POS. For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).
+7. Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
+8. Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Sign in to Modern POS, and select **Perform non-drawer operations**.
 10. Start the **Manage hardware stations** operation.
 11. Click **Manage**.
@@ -599,8 +609,8 @@ This configuration can be used for all Modern POS clients that share hardware st
 5. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
 6. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
 7. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
-8. Install the hardware station on each host computer that you set up in steps 2 and 3. For more information about how to install the hardware station, see [Retail hardware station configuration and installation](retail-hardware-station-configuration-installation.md).
-9. Install and activate Modern POS. For more information about how to install Modern POS, see [Retail Modern POS configuration and installation](retail-modern-pos-device-activation.md).
+8. Install the hardware station on each host computer that you set up in steps 2 and 3. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
+9. Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Sign in to Modern POS, and select **Perform non-drawer operations**.
 11. Start the **Manage hardware stations** operation.
 12. Click **Manage**.
@@ -659,7 +669,7 @@ According to current security standards, the following settings should be used i
 
 ## Peripheral simulator
 
-For information, see [Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md).
+For information, see [Peripheral simulator for Retail](dev-itpro/retail-peripheral-simulator.md).
 
 ## Microsoft-tested peripheral devices
 
@@ -900,4 +910,4 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 ## Additional resources
 
-[Retail peripheral simulator](dev-itpro/retail-peripheral-simulator.md)
+[Peripheral simulator for Retail](dev-itpro/retail-peripheral-simulator.md)
