@@ -40,7 +40,7 @@ ms.dyn365.ops.version: 7.3.2
 
 **NO TECHNICAL SUPPORT IS PROVIDED.  YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.**
 
-This sample shows how to create Dynamics 365 Retail extensions to integrate Retail Modern POS or Cloud POS with a fiscal register. Specifically, this sample includes the code for integrating Retail POS with control units for Sweden. As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. For the integration package that includes the API and documentation, contact the manufacturer of the device.
+This sample shows how to create Dynamics 365 Retail extensions to integrate Retail Modern POS or Cloud POS with a fiscal register. Specifically, this sample includes the code for integrating Retail POS with control units for Sweden. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. As an example, this sample uses the application programming interface (API) of the CleanCash® Type A control unit by Retail Innovation HTT AB. Version 1.1.4 of the CleanCash® API is used. For the integration package that includes the API and documentation, contact the manufacturer of the device.
 
 This sample is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
@@ -49,9 +49,9 @@ This sample consists of extensions for the Hardware station, commerce runtime (C
 > [!NOTE]
 > Some steps in the procedures in this topic differ, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 
-## Integration of Retail POS with control units
+## Overview of integration with control units
 
-Retail includes a sample for integration of POS with Sweden-specific fiscal devices that are known as control units. It's assumed that a control unit is physically connected to a Hardware station that POS is paired with. The sample is implemented as source code of POS, Hardware station, and Commerce runtime extensions, and is available in the Retail software development kit (SDK). The sample includes the following capabilities:
+The sample includes the following capabilities:
 
 - Sales, returns, and receipt copies are automatically registered in a control unit that is connected to the Hardware station that is paired with the POS.
 - The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Retail store transactions** page.
@@ -62,9 +62,9 @@ Retail includes a sample for integration of POS with Sweden-specific fiscal devi
 > [!NOTE]
 > Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
 
-## Control unit–specific settings
+## Setting up integration with control units
 
-You must specify the following settings to enable the [integration sample](./retail-sdk-control-unit-sample.md), so that Retail POS is integrated with control units for Sweden.
+You must specify the following settings, so that Retail POS is integrated with control units for Sweden.
 
 1. Create fiscal register configurations, and assign them to hardware profiles:
 
