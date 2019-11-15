@@ -1,12 +1,22 @@
 ---
 # required metadata
 
-title: [Topic name]
-description: [Full description that appears in the search results. Often the first paragraph of your topic.]
-author: [author's GitHub alias]
+title: [Configure wave label printing]
+description: [Wave label printing functionality is included in D365 since version 10.0.0. This functionality has been enhanced with the following functionalities: 
+•	Allow for labels to be printed according to a number of cartons on a single work line – without using containerization feature (“carton” meaning designated unit from Unit sequence group lines); use of multiple different label sequences (for example, carton and pallet labels) is covered by “repeatable” check box.
+•	Include an enumeration of the labels (1/124, 2/124…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.) 
+•	Allow for BOL (Bill of lading) ID to be created and printed on label 
+•	Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label 
+•	Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers 
+•	Allow for HAZMAT code to be include if relevant on label 
+•	Support for reprint of labels (from handhelds and from rich client) 
+•	Support for voiding of labels (a.o. for short pick scenarios) and reprint 
+•	Support for clean-up of wave label history 
+These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.]
+author: [GarmMSFT]
 manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
+ms.date: 12/31/2019
+ms.topic: configure-wave-label-printing
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
