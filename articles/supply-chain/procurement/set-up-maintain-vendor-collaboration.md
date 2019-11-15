@@ -87,7 +87,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this topic.
 
-For information about how to onboard prospective vendors, see [Vendor onboarding](vendor-onboarding.md).
+For information about how to onboard prospective vendors, see [Onboard vendors](vendor-onboarding.md).
 
 ### Set up a security role that is used when a new prospective vendor user request is submitted
 
@@ -164,6 +164,6 @@ For more information about the process that is used in the **Send Azure B2B user
 
 ## Additional resources
 
-[Using vendor collaboration to work with external vendors](vendor-collaboration-work-external-vendors.md)
+[Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md)
 
 Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
