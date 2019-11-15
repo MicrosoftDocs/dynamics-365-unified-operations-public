@@ -104,12 +104,12 @@ If candidates agree to share their LinkedIn profiles with any user in your organ
 
 ## See also
 
-[LinkedIn FAQ](./attract-linkedin-faq.md)
+[Attract integration with LinkedIn FAQ](./attract-linkedin-faq.md)
 
-[Set up integration with LinkedIn](./attract-admin-linkedin.md)
+[Set up integration with LinkedIn for Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Create jobs](./creating-jobs-attract.md)
+[Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
-[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)
+[Post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
+[Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
