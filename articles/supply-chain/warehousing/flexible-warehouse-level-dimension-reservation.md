@@ -105,8 +105,8 @@ Enable an inventory reservation hierarchy to allow batch-specific reservation:
 
 1. Go to **Warehouse management** \> **Setup** \> **Inventory \> Reservation hierarchy**
 2. Click **New**
-3. In the **Name** field, type a name, for example `BatchFlex`.
-4. In the **Description** field, type a name, for example `Batch below flexible`
+3. In the **Name** field, type a name, for example "BatchFlex".
+4. In the **Description** field, type a name, for example "Batch below flexible".
 5. Use the right arrow button to move **Owner** and **Serial number** dimensions from the Selected section to the Available.
 6. Click Ok.
 7. For the Batch number level, set checkmark in the **Allow reservation on demand order** column. Note that both License plate and Location dimension levels are checkmarked automatically and you cannot uncheck them.
@@ -114,10 +114,10 @@ Enable an inventory reservation hierarchy to allow batch-specific reservation:
 
 Create a new released product and:
 1. set the following product's three master data parameters to the below values:
-    - Storage dimension group=*Ware*
-    - Tracking dimension group=*Batch-Phy*
-    - Reservation hierarchy=*BatchFlex*
-2. create two batch numbers, for example `B11` and `B22`
+  - Storage dimension group=*Ware*
+  - Tracking dimension group=*Batch-Phy*
+  - Reservation hierarchy=*BatchFlex*
+2. create two batch numbers, for example "B11" and "B22"
 3. add item quantity to on-hand stock as per below:
 
     | Warehouse | Batch number | Location | License plate | Quantity |
