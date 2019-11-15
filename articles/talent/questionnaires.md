@@ -57,9 +57,9 @@ The following table provides links to information about the core questionnaire t
 Additional resources
 --------
 
-[Designing questionnaires](design-questionnaires.md)
+[Design questionnaires](design-questionnaires.md)
 
-[Distributing and completing questionnaires](distribute-questionnaires.md)
+[Distribute and schedule questionnaires](distribute-questionnaires.md)
 
-[Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
+[View and evaluate the results of questionnaires](evaluate-questionnaire-results.md)
 
