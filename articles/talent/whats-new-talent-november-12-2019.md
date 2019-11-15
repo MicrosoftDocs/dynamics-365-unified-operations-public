@@ -61,7 +61,7 @@ Once a feature is generally available, it may be turned on or off in production 
 
 With this change, you can now update the office location by using the Office workbook designer.
 
-## In preview
+## Coming soon
 
 ### Print performance reviews
 
