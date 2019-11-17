@@ -50,33 +50,33 @@ Note: The RetailLogger class is not supported anymore, existing extension using 
 
 2.  Click on “Create a resource” .
 
-    <img src="media/image1.png" alt="A screenshot of a computer Description automatically generated" width="518" height="340" />
-
+    ![Create a resource](media/NewResource.png)
+    
 3.  Search for “Application Insights.”
 
-    <img src="media/image2.png" alt="A screenshot of a cell phone Description automatically generated" width="491" height="284" />
-
+    ![Search](media/Search.png)
+    
 4.  Click the “Create” button and fill out the form (Subscription, Resource group, Name, Region).
 
-> <img src="media/image3.png" alt="A screenshot of a cell phone Description automatically generated" width="472" height="382" />
->
-> <img src="media/image4.png" alt="A screenshot of a social media post Description automatically generated" width="516" height="286" />
+    ![Create](media/Create.png)
+
+    ![Details](media/CreateNew.png)
 
 1.  Click the “Review + create” button and then click the “Create” button and wait for the deployment to complete.
 
-> <img src="media/image5.png" alt="A screenshot of a cell phone Description automatically generated" width="347" height="449" />
->
-> <img src="media/image6.png" alt="A screenshot of a cell phone Description automatically generated" width="578" height="182" />
+    ![Confirmation](media/CreateConf.png)
+
+    ![Resource created](media/Completed.png)
 
 1.  Go to the resource and copy the Instrumentation Key.  This value will be used in the CRT code or CRT ext configuration file.
 
-> <img src="media/image7.png" alt="A screenshot of a social media post Description automatically generated" width="586" height="229" />
+    ![Instrumentation key](media/Resource.png)
 
 **Extend Commerce Runtime extension project to log events to the Application Insights:**
 
 1.  Create a new C\# class library project and name is as Contoso.Diagnostic.
 
-    <img src="media/image8.png" width="545" height="280" />
+    ![Project type](media/VSProject.png)
 
 2.  Add reference to the below libraries:
 
@@ -90,67 +90,52 @@ Note: The RetailLogger class is not supported anymore, existing extension using 
 
 1.  Add a new class file and name it as ContosoLogger. Inside the file copy paste the below code:
 
-> using Microsoft.ApplicationInsights;
->
-> using Microsoft.ApplicationInsights.Extensibility;
->
-> using Microsoft.Dynamics.Commerce.Runtime;
->
-> using Microsoft.Dynamics.Commerce.Runtime.Extensions;
->
-> namespace Contoso.Diagnostic
->
-> {
->
-> public static class ContosoLogger
->
-> {
->
-> private static readonly object lockObject = new object();
->
-> private static TelemetryClient client = null;
->
-> public static TelemetryClient GetLogger(RequestContext context)
->
-> {
->
-> if (client == null)
->
-> {
->
-> lock (lockObject)
->
-> {
->
-> if (client == null)
->
-> {
->
-> string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey");
->
-> client = new TelemetryClient(new TelemetryConfiguration(key));
->
-> }
->
-> }
->
-> }
->
-> return client;
->
-> }
->
-> }
+```C#
 
+ using Microsoft.ApplicationInsights;
+ using Microsoft.ApplicationInsights.Extensibility;
+ using Microsoft.Dynamics.Commerce.Runtime;
+ using Microsoft.Dynamics.Commerce.Runtime.Extensions;
+
+namespace Contoso.Diagnostic
+{
+
+ public static class ContosoLogger
+ {
+
+ private static readonly object lockObject = new object();
+ private static TelemetryClient client = null;
+ public static TelemetryClient GetLogger(RequestContext context)
+ {
+     if (client == null)
+ {
+     lock (lockObject)
+ {
+
+ if (client == null)
+
+ {
+
+ string key = context.Runtime.Configuration.GetSettingValue("ext.AppInsightsKey");
+ client = new TelemetryClient(new TelemetryConfiguration(key));
+
+ }
+ }
+ }
+ return client;
+ }
+ }
 }
 
+```
 1.  Build this project and copy the output library and Microsoft.ApplicationInsights.dll and paste it in ..\\RetailServer\\webroot\\bin\\Ext for manual deployment and testing.
 
 2.  Open the the CommerceRuntime.Ext.config file form ..\\RetailServer\\webroot\\bin\\Ext and update the &lt;settings&gt; section with the Applications Insights instrumentation key generated earlier:
 
-> Ex:
->
-> &lt;add name="ext.AppInsightsKey" value="b32fa526-7155-4e42-ac48"/&gt;
+Ex:
+```
+ <add name="ext.AppInsightsKey" value="b32fa526-7155-4e42-ac48"/>;
+```
 
 1.  Restart your Retail Server.
 
@@ -162,17 +147,17 @@ Note: The RetailLogger class is not supported anymore, existing extension using 
 
     Ex:
 
-using Contoso.Diagnostic;
+```C#
 
+using Contoso.Diagnostic;
 using Microsoft.ApplicationInsights.DataContracts;
 
-> var trace = new TraceTelemetry("CRT executing request", SeverityLevel.Information);
->
-> trace.Properties.Add("CustomDimensionColumn1", request.RequestContext.GetTerminalId().ToString());
->
-> trace.Properties.Add("CustomDimensionColumn2", "CRT demo - Save Cart request");
->
-> ContosoLogger.GetLogger(request.RequestContext).TrackTrace(trace);
+var trace = new TraceTelemetry("CRT executing request", SeverityLevel.Information);
+trace.Properties.Add("CustomDimensionColumn1", request.RequestContext.GetTerminalId().ToString());
+trace.Properties.Add("CustomDimensionColumn2", "CRT demo - Save Cart request");
+ContosoLogger.GetLogger(request.RequestContext).TrackTrace(trace);
+
+```
 
 **Note:** Trace properties are custom dimension, that can be added to query the traces easily.
 
@@ -182,15 +167,15 @@ using Microsoft.ApplicationInsights.DataContracts;
 
 2.  Navigate to the Application Insights instance and select Logs (Analytics) under Monitoring which will open a new query editor.
 
-> <img src="media/image9.png" alt="cid:image023.png@01D58A8E.EFE6D810" width="559" height="367" />
+    ![Log Analytics](media/AppInsightQuery.png)
 
 1.  Under the Schema menu, double-click on “traces.”  This will add it to the query editor.  Note that the default Time range is “Last 24 hours.”
 
-> <img src="media/image10.png" alt="cid:image024.png@01D58A8E.EFE6D810" width="486" height="309" />
+   ![Trace](media/Trace.png)
 
 1.  Click on the Run button to execute the query, the logged event will show up in the results.
 
-> <img src="media/image11.png" alt="cid:image025.png@01D58A8E.EFE6D810" width="491" height="109" />
+   ![Log details](media/TraceDetails.png)
 
 **Build the deployable package:**
 
