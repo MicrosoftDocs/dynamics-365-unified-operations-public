@@ -571,6 +571,8 @@
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
           href: cost-management/adjust-hand-inventory-cost-values.md
+        - name: Inventory aging report
+          href: cost-management/inventory-aging-report-storage.md
       - name: Manufacturing accounting
         items:
         - name: BOM calculations
@@ -868,7 +870,13 @@
             - name: Download configurations from the ER repository of the RCS type
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
             - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Tutorials
+            items: 
+            - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+              href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Configure country context dependent ER model mappings
+              href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -903,6 +911,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
           - name: Business document management overview
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Add new fields to a business document template in Microsoft Excel
+            href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
         - name: ER framework API
           items: 
           - name: Extend the list of Electronic reporting functions
