@@ -36,41 +36,49 @@ ms.dyn365.ops.version: AX 10.0.7
 
 This document helps to understand how to log events to Customer Application Insights from Commerce runtime (CRT) extensions. More details on Application Insights can be found [here](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview).
 
-**Follow the below steps on how to log event to Customer Application Insights.**
+## Log an event to Customer Application Insights
 
 1.  Setup the Application Insights in Azure portal and generate the instrumentation key.
-
 2.  Extend CRT to log events to the Application Insights using the instrumentation key generated during Application Insights creation.
 
-Note: The RetailLogger class is not supported anymore, existing extension using this class must migrate to this new model.
+> [!NOTE]
+> The RetailLogger class is not supported anymore, existing extension using this class must migrate to this new model.
 
-**Setup and Configure Application Insights in Azure:**
+## Setup and configure Application Insights in Azure
 
 1.  Go to <https://portal.azure.com> and log in using your Azure subscription credentials.
 2.  Click on “Create a resource” .
-    ![Create a resource](media/NewResource.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a resource](media/NewResource.png)
 3.  Search for “Application Insights.”
     > [!div class="mx-imgBorder"]
     > ![Search](media/Search.png)
 4.  Click the “Create” button and fill out the form (Subscription, Resource group, Name, Region).
-    ![Create](media/Create.png)
-    ![Details](media/CreateNew.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create](media/Create.png)
+    > [!div class="mx-imgBorder"]
+    > ![Details](media/CreateNew.png)
 5.  Click the “Review + create” button and then click the “Create” button and wait for the deployment to complete.
-    ![Confirmation](media/CreateConf.png)
+    > [!div class="mx-imgBorder"]
+    > ![Confirmation](media/CreateConf.png)
+> [!div class="mx-imgBorder"]
     ![Resource created](media/Completed.png)
 6.  Go to the resource and copy the Instrumentation Key.  This value will be used in the CRT code or CRT ext configuration file.
-    ![Instrumentation key](media/Resource.png)
+    > [!div class="mx-imgBorder"]
+    > ![Instrumentation key](media/Resource.png)
 
-**Extend Commerce Runtime extension project to log events to the Application Insights:**
+## Extend Commerce Runtime extension project to log events to the Application Insights
 
 1.  Create a new C\# class library project and name is as Contoso.Diagnostic.
-    ![Project type](media/VSProject.png)
+    > [!div class="mx-imgBorder"]
+    > ![Project type](media/VSProject.png)
 2.  Add reference to the below libraries:
--   Microsoft.ApplicationInsights
--   Netstandard
--   Microsoft.Dynamics.Commerce.Runtime.Framework
+    + Microsoft.ApplicationInsights
+    + Netstandard
+    + Microsoft.Dynamics.Commerce.Runtime.Framework
 
-> **Note:** Please install the [Application Insights SDK for ASP.NET Core](https://nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore) to get the Microsoft.ApplicationInsights assembly reference. Reference to Microsoft.Dynamics.Commerce.Runtime.Framework can be added from ..\\RetailSDK\\Reference folder.
+    > [!NOTE]
+    > Install the [Application Insights SDK for ASP.NET Core](https://nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore) to get the Microsoft.ApplicationInsights assembly reference. Reference to Microsoft.Dynamics.Commerce.Runtime.Framework can be added from ..\\RetailSDK\\Reference folder.
 
 3.  Add a new class file and name it as ContosoLogger. Inside the file copy paste the below code:
 
@@ -112,33 +120,37 @@ namespace Contoso.Diagnostic
 
 6.  Restart your Retail Server.
 
-**Consume the ContosoLogger in CRT extension:**
+## Consume the logger in CRT extension
 
 1.  To consume the ContosoLogger in the extension, add the ContosoDiagnostic and Microsoft.ApplicationInsights assembly reference to the extension project.
 2.  To log events, use the TraceTelemetry class and create the traces. For example:
-```C#
-using Contoso.Diagnostic;
-using Microsoft.ApplicationInsights.DataContracts;
+    ```C#
+    using Contoso.Diagnostic;
+    using Microsoft.ApplicationInsights.DataContracts;
 
-var trace = new TraceTelemetry("CRT executing request", SeverityLevel.Information);
-trace.Properties.Add("CustomDimensionColumn1", request.RequestContext.GetTerminalId().ToString());
-trace.Properties.Add("CustomDimensionColumn2", "CRT demo - Save Cart request");
-ContosoLogger.GetLogger(request.RequestContext).TrackTrace(trace);
-```
+    var trace = new TraceTelemetry("CRT executing request", SeverityLevel.Information);
+    trace.Properties.Add("CustomDimensionColumn1", request.RequestContext.GetTerminalId().ToString());
+    trace.Properties.Add("CustomDimensionColumn2", "CRT demo - Save Cart request");
+    ContosoLogger.GetLogger(request.RequestContext).TrackTrace(trace);
+    ```
 
-**Note:** Trace properties are custom dimension, that can be added to query the traces easily.
+    > [!NOTE]
+    > Trace properties are custom dimension, that can be added to query the traces easily.
 
-**Validate the trace events:**
+## Validate the trace events
 
 1.  Go to <https://portal.azure.com> and log in using your Azure subscription credentials
 2.  Navigate to the Application Insights instance and select Logs (Analytics) under Monitoring which will open a new query editor.
-    ![Log Analytics](media/AppInsightQuery.png)
+    > [!div class="mx-imgBorder"]
+    > ![Log Analytics](media/AppInsightQuery.png)
 3.  Under the Schema menu, double-click on “traces.”  This will add it to the query editor.  Note that the default Time range is “Last 24 hours.”
-   ![Trace](media/Trace.png)
+    > [!div class="mx-imgBorder"]
+    > ![Trace](media/Trace.png)
 4.  Click on the Run button to execute the query, the logged event will show up in the results.
-   ![Log details](media/TraceDetails.png)
+    > [!div class="mx-imgBorder"]
+    > ![Log details](media/TraceDetails.png)
 
-**Build the deployable package:**
+## Build the deployable package
 
 Detailed information on building deployable can be found in the below link:
 
