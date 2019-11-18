@@ -59,7 +59,7 @@ At any time, you can pull-to-refresh in the mobile app to make the mobile app up
 ## Using the mobile app designer
 The mobile app designer lets you select the specific data fields from forms that should appear in the mobile app. 
 
-**A mobile workspace can be created through designer, using X++ attribute APIs or a combination of both. See [Workspace class overview](scenarios/mobile-workspace-configuration.md) for more details on using X++ APIs for building a mobile workspace.**
+**A mobile workspace can be created through designer, using X++ attribute APIs or a combination of both. See [Configure workspaces by using the SysAppWorkspace class](scenarios/mobile-workspace-configuration.md) for more details on using X++ APIs for building a mobile workspace.**
 
 ![Mobile app designer](media/mobileappdesigner.png)
 

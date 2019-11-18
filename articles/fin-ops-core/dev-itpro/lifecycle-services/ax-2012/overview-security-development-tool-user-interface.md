@@ -36,7 +36,8 @@ ms.dyn365.ops.version: 2012
 
 This topic describes the user interface of the Security Development Tool.
 
-**Note:** This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein.
+> [!NOTE]
+> This is pre-release documentation of a preliminary nature and is subject to change at any time without notice. Microsoft cannot guarantee the accuracy of any information provided herein.
 
 ## Overview of the main form
 This section describes the controls in the main form.
@@ -54,14 +55,18 @@ When you select a menu item, web menu item, or service operation, the entry poin
 
 ### Menu access aggregation in tree view
 
-![Security Development Tool Menu Access Aggregation](./media/sdt_menuaggregatedaccesslevel.png) When the level of access to a node in the tree view changes, the node is displayed in bold type. If the level of access to a menu item remains the same, but the level of access to a submenu item changes, the parent menu item is marked with an asterisk (\*). In the following figure, the level of access to **Accounts payable/Setup/Charges/Item charges groups** has been updated from **NoAccess** to **Edit**.
+![Security Development Tool Menu Access Aggregation](./media/sdt_menuaggregatedaccesslevel.png) 
+
+When the level of access to a node in the tree view changes, the node is displayed in bold type. If the level of access to a menu item remains the same, but the level of access to a submenu item changes, the parent menu item is marked with an asterisk (\*). In the following figure, the level of access to **Accounts payable/Setup/Charges/Item charges groups** has been updated from **NoAccess** to **Edit**.
 
 ### Changed items
 
 ![Security Development Tool Access Level Change](./media/sdtl_treeviewaccesslevelchange.png)
 
 ## Shortcut menu options
-Use the shortcut menu to interact with entry points in the tree view. ![SecurityDevelopmentTool\_TreeContextMenu](./media/sdt_treecontextmenu.png)
+Use the shortcut menu to interact with entry points in the tree view. 
+
+![SecurityDevelopmentTool\_TreeContextMenu](./media/sdt_treecontextmenu.png)
 
 -   **Expand all children** – Expand all subtree items.
 -   **Open in current workspace** – Open the linked menu item in the current workspace.
@@ -77,15 +82,15 @@ Use the shortcut menu to interact with entry points in the tree view. ![Security
 
 ## List view
 This section describes the controls on the ribbon of the list view. The list view provides a list of all entry points for your Microsoft Dynamics AX environment. To bulk update the level of access to entry points, you can select multiple rows in the list view.
+
 ![Security Development Tool List View](./media/sdt_listcontextmenu.png)
 
-| **Note**                                                                                                                                                                                                                                                |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| When you select an entry point in the list, the entry point is not selected automatically in the tree view. Use the shortcut menu to interact with entry points in the list view. The options resemble the options that are available in the tree view. |
+> [!NOTE]
+> When you select an entry point in the list, the entry point is not selected automatically in the tree view. Use the shortcut menu to interact with entry points in the list view. The options resemble the options that are available in the tree view.
 
 -   **Open the security test workspace** – Open a security test workspace by using the permissions for the selected security object.
 -   **Start recording** – When you start the recorder, you can execute business process flows in the current workspace. When a business process flow is completed, you can stop recording and view all entry points that were recorded. This function records only menu items in the rich client.
--   **Load trace file** – Load the entry points that have been traced in Enterprise Portal. For more information, see [Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md).
+-   **Load trace file** – Load the entry points that have been traced in Enterprise Portal. For more information, see [Record entry points in Enterprise Portal](record-entry-points-enterprise-portal.md).
 -   **Save recording** – Save the list of entry points that you just recorded to an .xml file.
 -   **Load recording** – Load a list of recorded entry points from an .xml file.
 -   **Load additional metadata** – Load additional metadata for all entry points. This data includes the label, layer, and model, and also license information.
@@ -102,7 +107,7 @@ Additional resources
 
 [Define or edit entry point permissions](define-edit-entry-point-permissions.md)
 
-[Record entry points in Microsoft Dynamics AX Enterprise Portal](record-entry-points-enterprise-portal.md)
+[Record entry points in Enterprise Portal](record-entry-points-enterprise-portal.md)
 
 
 
