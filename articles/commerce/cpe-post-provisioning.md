@@ -3,9 +3,9 @@
 
 title: Configure a Commerce preview environment
 description: This topic describes how to configure a Microsoft Dynamics 365 Commerce preview environment after provisioning.
-author: v-chgri
+author: psimolin
 manager: annbe
-ms.date: 11/22/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -23,7 +23,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: v-chgri
+ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
@@ -143,3 +143,12 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
 If you are having issues accessing the Yammer group, you can also reach us via email at **Dynamics365Commerce@microsoft.com**. This email address is not actively monitored so expect a delay in response.
+
+## Next steps
+
+## Additional resources
+
+[Commerce preview environment overview] (cpe-overview.md)
+[Provision a Commerce preview environment](provisioning-guide.md)
+[Configure Commerce preview environment optional features](cpe-optional-features.md)
+[Commerce preview environment FAQ](cpe-faq.md)
