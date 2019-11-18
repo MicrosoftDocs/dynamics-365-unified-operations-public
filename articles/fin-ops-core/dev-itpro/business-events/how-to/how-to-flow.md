@@ -5,7 +5,7 @@ title: Business events and Microsoft Power Automate
 description: This topics provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
