@@ -163,6 +163,8 @@ To import the **Commerce Preview Demo Base Extension** to your project, follow t
 1. Click **Pick**.
 1. You will be returned to the Asset library and you should see the extension in the list.
 
+The following image highlights the actions to be taken on the LCS Asset library page. 
+
 ![Project creation - versions](./media/import.png)
 
 ### Deploy the environment
@@ -207,11 +209,7 @@ To initialize RCSU, follow these steps.
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
 1. From **Retail** tab, click **Initialize**. The RCSU initialization parameters view will display.
 1. For **REGION**, select **East US**, **East US 2**, **West US** or **West US 2**.
-1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below. 
-
-> [!NOTE]
-> Please make sure to **specify the exact version** listed here to avoid having to update RCSU later to the correct version.
-
+1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below. Make sure to specify the exact version listed here to avoid having to update RCSU later to the correct version.
 1. Enable **Apply extension**.
 1. From the list of extensions, choose **Commerce Preview Demo Base Extension**.
 1. Click **Initialize**.
@@ -243,7 +241,7 @@ To initialize e-Commerce, follow these steps.
 	
 ## Next steps
 
-To continue the process and start configuring your Commerce preview environment, proceed to [Configure a Commerce preview environment](cpe-post-provisioning.md).
+To continue the process of provisioning and configuring your Commerce preview environment, proceed to [Configure a Commerce preview environment](cpe-post-provisioning.md).
 
 ## Additional resources
 
