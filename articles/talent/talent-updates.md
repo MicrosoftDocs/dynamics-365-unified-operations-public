@@ -45,7 +45,25 @@ Talent updates are applied to all environments automatically. Talent provides tw
 
 - **Service updates**: Weekly updates that include bug fixes and new features. Service updates also include applicable Platform updates when they release. To get an idea of when Platform updates are released, see [Table 3: Platform releases](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). Weekly updates usually release on Wednesdays. For more information about weekly updates, see [What's new or changed in Dynamics 365 Talent](https://docs.microsoft.com/dynamics365/talent/whats-new).
 
-- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates take about six weeks to replicate through all data centers. These updates are available on all data centers once they're released. If you don't want to wait for the updates to replicate automatically, you can manually apply these updates on any environment in any data center.
+    All supported data centers update weekly, unless otherwise noted. Weekly updates typically begin on Wednesday and complete by Sunday. US, Australia, Europe, UK, Asia, and Canada regions are included in weekly updates. 
+
+- **Common Data Service solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Common Data Service. These updates release to the same regions as the weekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with weekly service updates.
+
+The following table shows a sample schedule:
+
+| Week | Update type |
+| --- | --- |
+| 1 | Service update (all regions) |
+| 2 | Service update (all regions) + Solution update (Week 1 regions) |
+| 3 | Service update (all regions) + Solution update (Week 2 regions) |
+| 4 | Service update (all regions) + Solution update (Week 3 regions) |
+| 5 | Service update (all regions) + Solution update (Week 4 regions) |
+| 6 | Service update (all regions) + Solution update (Week 5 regions) |
+| 7 | Service update (all regions) + Solution update (Week 6 regions) |
+| 8 | Service update (all regions) |
+
+> [!NOTE]
+> Solution updates are available on all data centers once they're released. If you don't want to wait for the updates to replicate automatically, you can manually apply these updates on any environment in any data center.
 
 When needed, Talent also provides the following types of fixes:
 
@@ -55,16 +73,16 @@ When needed, Talent also provides the following types of fixes:
 
 Releases are reviewed, tested, and validated on an internal environment. After builds are signed off, they're then deployed to production.
 
-Releases roll out to production environments in the following order:
+## Exceptions in 2019
 
-| Environment | Service update release interval | Solution update release interval |
-| --- | --- | --- |
-|   |    | Week 1 |
-|   |    | Week 2 |  
-|   |    | Week 3 |
-|   |    | Week 4 |
-|   |    | Week 5 |
-|   |    | Week 6 |
+The following dates are exceptions to the regular release schedule:
+
+| Date | Description |
+| --- | --- |
+| Week of November 25 | No updates |
+| Week of December 16 | Minor updates only |
+| Week of December 23 | No updates |
+| Week of December 30 | No updates |
 
 ## Communications
 
