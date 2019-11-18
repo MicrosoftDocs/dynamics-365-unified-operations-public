@@ -49,9 +49,9 @@ You can exclude outliers to improve forecast accuracy. This is an optional task.
 Additional resources
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Demand forecasting overview](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitor forecast accuracy](monitor-forecast-accuracy.md)
 
 
 

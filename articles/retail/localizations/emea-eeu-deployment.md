@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1.1
 
 This topic shows how to enable the Dynamics 365 Retail localization for Czech Republic, Hungary, and Poland. The localization consists of several extensions of Retail components. These extensions let you print the **Advance Invoice** report from Point of Sale (POS). For more information about the Retail localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 
-The localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 The localization consists of extensions for the Commerce runtime (CRT) and POS. To enable this localization, you must modify the CRT configuration file and modify and build POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Team Services, where no files have been changed yet.
 
@@ -114,4 +114,4 @@ Follow these steps to create deployable packages that contain Retail components,
     ```
 
 3. Run **msbuild** for the Retail SDK to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).

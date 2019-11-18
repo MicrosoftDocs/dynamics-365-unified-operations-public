@@ -93,7 +93,7 @@ When you create custom fields, the value of the **Caption text ID** field must m
 
 ## Create the receipt format
 
-You can use Receipt format designer to add custom fields to the appropriate receipt sections. For more information, see [Receipt templates and printing](../receipt-templates-printing.md).
+You can use Receipt format designer to add custom fields to the appropriate receipt sections. For more information, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 1. Go to **Retail** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Receipt formats**.
 2. Select a receipt format for the **Receipt** receipt type, and make the required changes.

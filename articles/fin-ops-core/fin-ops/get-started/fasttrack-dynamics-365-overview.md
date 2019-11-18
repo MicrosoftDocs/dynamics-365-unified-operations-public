@@ -59,7 +59,7 @@ After your **Implementation project** workspace is provisioned in Microsoft Dyna
 - [Workshops](#workshops)
 
 > [!NOTE]
-> The FastTrack team is always increasing the documentation of its processes and guidance. For more information, see [Understand the implementation lifecycle](../imp-lifecycle/implementation-lifecycle.md).
+> The FastTrack team is always increasing the documentation of its processes and guidance. For more information, see [Implementation lifecycle management home page](../imp-lifecycle/implementation-lifecycle.md).
 
 ## TechTalks
 
@@ -76,7 +76,7 @@ Workshops are interactive outcome-based remote sessions. Customers and partners 
 
 ### Onboarding workshop
 
-The Onboarding workshop is designed to introduce FastTrack services and provide introductory guidance about a set of implementation topics that will help guarantee maximum success. For more information, see [Onboard a Project](../imp-lifecycle/onboard.md). Here are some of the topics that the workshop is likely to cover:
+The Onboarding workshop is designed to introduce FastTrack services and provide introductory guidance about a set of implementation topics that will help guarantee maximum success. For more information, see [Onboard an implementation project](../imp-lifecycle/onboard.md). Here are some of the topics that the workshop is likely to cover:
 
 - Team introductions
 - Overview of FastTrack 

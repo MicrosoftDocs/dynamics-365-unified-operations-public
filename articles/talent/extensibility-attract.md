@@ -83,14 +83,14 @@ You can add custom activities, such as the Power Apps apps and Web content (ifra
 
 #### Power Apps activity 
 
-The Power Apps activity lets the creator of a job or job process template embed a Power Apps app in the hiring flow. After you create and publish the app, you can enter its app ID in the activity configurations. By using a Power Apps app, you can read and write data into Common Data Service. You can even link the app to a flow. For example, you have an app that recruiters use to fill in a form while they conduct phone interviews. In this case, you can link the app to a flow that evaluates whether an applicant can be advanced further in the job application process. This type of activity can be viewed only by members of the hiring team. For more information about how to configure the Power Apps activity, see [Activities in Attract](./activities-attract.md).
+The Power Apps activity lets the creator of a job or job process template embed a Power Apps app in the hiring flow. After you create and publish the app, you can enter its app ID in the activity configurations. By using a Power Apps app, you can read and write data into Common Data Service. You can even link the app to a flow. For example, you have an app that recruiters use to fill in a form while they conduct phone interviews. In this case, you can link the app to a flow that evaluates whether an applicant can be advanced further in the job application process. This type of activity can be viewed only by members of the hiring team. For more information about how to configure the Power Apps activity, see [Activities in hiring processes](./activities-attract.md).
 
 > [!NOTE]
 > The Power Apps activity is available only with the Comprehensive hiring add-on.
 
 #### Web content (iframe) activity
 
-The Web content (iframe) activity lets you embed a custom web solution that you've built in the hiring process or the Candidate portal. You can read and write data directly from Common Data Service. You can also customize the solution so that it triggers flows or takes advantage of Microsoft Azure functions. For more information about how to configure the Web content activity, see [Activities in Attract](./activities-attract.md).
+The Web content (iframe) activity lets you embed a custom web solution that you've built in the hiring process or the Candidate portal. You can read and write data directly from Common Data Service. You can also customize the solution so that it triggers flows or takes advantage of Microsoft Azure functions. For more information about how to configure the Web content activity, see [Activities in hiring processes](./activities-attract.md).
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.

@@ -192,6 +192,6 @@ To edit a contact, select the **Edit** button (the pencil symbol) to the right o
 ### See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
 - [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

@@ -70,4 +70,4 @@ Additional resources
 
 [Quality management processes](quality-management-processes.md)
 
-[Inspect the quality of goods (Task guide)](tasks/inspect-quality-goods.md)
+[Inspect the quality of goods](tasks/inspect-quality-goods.md)

@@ -44,13 +44,13 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
 1. On the **Product details** page:
 
-    - •	If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together.
+    - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together.
 
     [![Recommendations on the Product details page](./media/proddetails.png)](./media/proddetails.png)
 
 2. On the **Transaction** page:
 
-    - •	The recommendation engine suggests items based on the entire list of items in the basket that are frequently bought together.
+    - The recommendation engine suggests items based on the entire list of items in the basket that are frequently bought together.
 
     > [!NOTE]
     > To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 for Retail. The **Recommendations** control must be dropped onto the **Transaction** page.
@@ -73,10 +73,12 @@ To set up product recommendations, follow these steps:
 
 - Navigate to **Retail Parameters** \> **Recommendation lists** \> **Disable product recommendations** and run **Global configuration job \[9999\]**. 
 - If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.
-- If you have additional questions, check out the [Recommendations FAQ](../commerce/faq-recommendations.md) for more information.
+- If you have additional questions, check out the [Product recommendations FAQ](../commerce/faq-recommendations.md) for more information.
 
 ## Additional resources
 
-[Add a recommendations control to the transaction page on a POS device](add-recommendations-control-pos-screen.md)
+[Add a recommendations control to the transaction screen on POS devices](add-recommendations-control-pos-screen.md)
+
 [Product recommendations overview](../commerce/product-recommendations.md)
+
 [Enable product recommendations](../commerce/enable-product-recommendations.md) 

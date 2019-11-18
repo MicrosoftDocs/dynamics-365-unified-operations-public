@@ -100,7 +100,7 @@ The production environment can be deployed when the project is ready for the ini
 
 Production system readiness includes, but isn't limited to, the following conditions:
 
-- An up-to-date subscription estimate is activated, as described in [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- An up-to-date subscription estimate is activated, as described in [Subscription estimator in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Code, configuration, and data are ready for cutover.
 - An engineering process is in place to manage critical fixes.
 - The customer has signed off on the solution and UAT.

@@ -38,7 +38,7 @@ Machine learning can help recruiters and hiring managers quickly identify top ca
 
 > [!NOTE] 
 > - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin center** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more information, see [Access preview features in Talent](./access-preview-feature.md). 
+> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin center** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more information, see [Access preview features in Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## Candidate recommendations

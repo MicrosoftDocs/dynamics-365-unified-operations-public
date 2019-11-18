@@ -80,13 +80,13 @@ Additional resources
 
 [Demand forecasting setup](demand-forecasting-setup.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
-[Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+[Authorize an adjusted forecast](authorize-adjusted-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitor forecast accuracy](monitor-forecast-accuracy.md)
 
 [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
 

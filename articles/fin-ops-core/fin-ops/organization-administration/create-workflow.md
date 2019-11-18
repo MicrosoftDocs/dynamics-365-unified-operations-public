@@ -59,21 +59,21 @@ Follow these steps to configure the properties of the workflow.
 
 1. Click the canvas to make sure that no workflow element is selected.
 2. Click **Properties** to open the **Properties** page for the workflow.
-3. Follow the procedures in the [Configure the properties of a workflow](configure-workflow-properties.md) topic.
+3. Follow the procedures in the [Configure workflow properties](configure-workflow-properties.md) topic.
 
 ## Configure the elements of the workflow
 
 Configure each element that you dragged onto the canvas. For information about how to configure each workflow element, see the following topics:
 
-- [Configure a manual task](configure-manual-task-workflow.md)
-- [Configure an automated task](configure-automated-task-workflow.md)
-- [Configure an approval process](configure-approval-process-workflow.md)
-- [Configure an approval step](configure-approval-step-workflow.md)
-- [Configure a manual decision](configure-manual-decision-workflow.md)
-- [Configure a conditional decision](configure-conditional-decision-workflow.md)
-- [Configure a parallel activity](configure-parallel-activity-workflow.md)
+- [Configure manual tasks in a workflow](configure-manual-task-workflow.md)
+- [Configure automated tasks in a workflow](configure-automated-task-workflow.md)
+- [Configure approval processes in a workflow](configure-approval-process-workflow.md)
+- [Configure approval steps in a workflow](configure-approval-step-workflow.md)
+- [Configure manual decisions in a workflow](configure-manual-decision-workflow.md)
+- [Configure conditional decisions in a workflow](configure-conditional-decision-workflow.md)
+- [Configure parallel branches in a workflow](configure-parallel-activity-workflow.md)
 - [Configure a parallel branch](configure-parallel-branch-workflow.md)
-- [Configure a line-item workflow](configure-line-item-workflow.md)
+- [Configure line-item workflows](configure-line-item-workflow.md)
 
 ## Resolve any errors or warnings
 
