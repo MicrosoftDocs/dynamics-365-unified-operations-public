@@ -134,7 +134,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
 5. In the **..\\RetailServer\\webroot\\bin\\Ext** folder, open the **CommerceRuntime.Ext.config** file, and update the **\<settings\>** section with the Applications Insights instrumentation key that you generated earlier. Here is an example.
 
     ```xml
-    <add name="ext.AppInsightsKey" value="b32fa526-7155-4e42-ac48"/>;
+    <add name="ext.AppInsightsKey" value="xxxxxxx"/>;
     ```
 
 6. Restart your Retail Server.
@@ -176,7 +176,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
 
 ## Build the deployable package
 
-For detailed information about how to build deployable packages, see [Create retail deployable packages](../retail-sdk-packaging).
+For detailed information about how to build deployable packages, see [Create retail deployable packages](../retail-sdk-packaging.md).
 
 1. Copy the **Contoso.Diagnostic** and **Microsoft.ApplicationInsights** assemblies to the **\\RetailSDK\\References** folder.
 2. Update the **BuildTools\\Customization.settings** file, and add the following entries in the **\<ItemGroup\>** section.
