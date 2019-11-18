@@ -92,15 +92,18 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce p
 To confirm that preview features are available and enabled in LCS, follow these steps.
 
 1. Sign in to the [LCS portal](https://lcs.dynamics.com) with the same LCS account you used to request access to the preview.
-1. On the LCS front page, scroll all the way to the right and click the **Preview feature management** tile.
-1. Scroll down to **PRIVATE PREVIEW FEATURES** and confirm that the following features are available and enabled:
+1. On the LCS front page, scroll all the way to the right and click the **Preview feature management** tile, as shown in the following image.
+
+    ![Preview management tile](./media/preview1.png)
+
+1. Scroll down to **PRIVATE PREVIEW FEATURES** and confirm that the following features are available and enabled, as shown in the following image:
 	- **e-Commerce Evaluation**
 	- **Commerce Preview Program Environments**
+	
+	
+    ![Preview features](./media/preview2.png)
+	
 1. If you are unable to see these features in the list, please reach out to us with your work email, LCS account, and tenant details. ///Please see **Additional resources** below for information on how to contact us.///
-
-![Preview management tile](./media/preview1.png)
-
-![Preview features](./media/preview2.png)
 
 ### Create a new project
 
@@ -231,6 +234,9 @@ To continue the process and start configuring your Commerce preview environment,
 ## Additional resources
 
 [Commerce preview environment overview](cpe-overview.md)
+
 [Configure a Commerce preview environment](cpe-post-provisioning.md)
+
 [Configure Commerce preview environment optional features](cpe-optional-features.md)
+
 [Commerce preview environment FAQ](cpe-faq.md)
