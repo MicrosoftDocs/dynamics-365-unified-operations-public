@@ -38,7 +38,7 @@ This document describes how to log events to [Customer Application Insights](htt
 
 ## Log an event to Customer Application Insights
 
-1. Set up the Application Insights in Azure portal and generate the instrumentation key.
+1. Set up the Application Insights in the Microsoft Azure portal and generate the instrumentation key.
 2. Extend CRT to log events to the Application Insights using the instrumentation key generated during Application Insights creation.
     > [!NOTE]
     > The RetailLogger class is no longer supported. Existing extensions using this class must migrate to this new model.
@@ -78,7 +78,7 @@ This document describes how to log events to [Customer Application Insights](htt
     + Microsoft.Dynamics.Commerce.Runtime.Framework
 
     > [!NOTE]
-    > Install the [Application Insights SDK for ASP.NET Core](https://nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore) to install the **Microsoft.ApplicationInsights** assembly reference. The reference to **Microsoft.Dynamics.Commerce.Runtime.Framework** can be added from **..\\RetailSDK\\Reference** folder.
+    > Install the [Application Insights SDK for ASP.NET Core](https://nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore) to install the **Microsoft.ApplicationInsights** assembly reference. The reference to **Microsoft.Dynamics.Commerce.Runtime.Framework** can be added from the **..\\RetailSDK\\Reference** folder.
 3. Add a new class file and name it **ContosoLogger**. Copy the following code into the file.
     ```C#
     using Microsoft.ApplicationInsights;
@@ -132,7 +132,7 @@ This document describes how to log events to [Customer Application Insights](htt
     ```
 
     > [!NOTE]
-    > Trace properties are custom dimension, that can be added to query the traces easily.
+    > Trace properties are custom dimensions that that you can easily add to query the traces.
 
 ## Validate the trace events
 
