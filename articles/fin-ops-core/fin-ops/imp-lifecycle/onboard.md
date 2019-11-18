@@ -49,7 +49,7 @@ After your organization has purchased a subscription to Finance and Operations, 
    > [!NOTE]
    > If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
 
-   For an overview of LCS user management, including the security roles that can be assigned to users, see [Configuring project security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
+   For an overview of LCS user management, including the security roles that can be assigned to users, see [Configure Lifecycle Services (LCS) security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 
 ## LCS implementation project workspace
 
@@ -57,11 +57,11 @@ After the Tenant Administrator has completed the Finance and Operations subscrip
 
 The first step to be completed in LCS is **Project onboarding**. This step is required for all LCS implementation projects that are created **on or after August 22, 2019, PST**, prior to deploying any of the Microsoft-managed environments. You can access the **Project onboarding** feature using the action center notification or the LCS Implementation project menu. You must be assigned to the Project owner security role to access **Project onboarding** in LCS.
 
-To get started with LCS, see [Lifecycle Services for Finance and Operations customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). 
+To get started with LCS, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md). 
 
 ## FastTrack onboarding services
 
-After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will monitor your onboarding progress. For more information about the FastTrack program and the services provided, see [Microsoft FastTrack for Dynamics 365](../get-started/fasttrack-dynamics-365-overview.md).
+After the LCS **Implementation project** workspace is provisioned, the Microsoft FastTrack team will monitor your onboarding progress. For more information about the FastTrack program and the services provided, see [Microsoft FastTrack](../get-started/fasttrack-dynamics-365-overview.md).
 
 All LCS **Implementation projects** will receive an email from the FastTrack team welcoming them to the service after they successfully complete the project onboarding. If project onboarding is not completed within a few weeks after creating an LCS **Implementation project** creation, a reminder will be sent to the project team.
 

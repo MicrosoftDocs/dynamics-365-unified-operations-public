@@ -77,7 +77,7 @@ The following table shows the prerequisites that must be in place before you sta
 After you review pay statement for a specific pay period, you post the pay statements to the general ledger and generate vendor invoices for that pay period.
 
 > [!TIP]
-> The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see "Modify pay statements" in [Work with pay statements](noam-usa-pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps.
+> The posting process ignores any pay statements that must be recalculated. Therefore, before you complete this process, we recommend that you view the **Pay statements to recalculate** list page to verify that no pay statements must be recalculated. For more information, see "Modify pay statements" in [Generate and work with pay statements](noam-usa-pay-statements.md). To post pay statements and generate vendor invoices for a pay period, follow these steps.
 
 **Post the pay statements**
 

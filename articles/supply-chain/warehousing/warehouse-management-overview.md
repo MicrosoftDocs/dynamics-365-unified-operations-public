@@ -39,7 +39,7 @@ To start working with Warehouse management, you need to complete the setup of th
 
 You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
 
-- [Warehouse configuration](warehouse-configuration.md)
+- [Warehouse configuration overview](warehouse-configuration.md)
 - [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
 - [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
 - [Set up a location directive for purchase order put-away](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)

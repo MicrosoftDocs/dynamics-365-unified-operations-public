@@ -46,7 +46,7 @@ Before you can complete the steps in this topic, verify that the following prere
 - You have a development environment that has platform update 21 or later in own your Microsoft Azure subscription
 - You have Microsoft Visual Studio 2015 Enterprise edition in a development environment.
 - You have a tier-2 or above sandbox that has the same release (application version and platform update) as your development environment.
-- You've completed all the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md) and all the steps except "Run multi-user testing with local test controller" in [Multi-user testing with Performance SDK and local test controller](multi-user-testing-local-test-controller.md).
+- You've completed all the steps in [Single-user testing with Task recorder and the Performance SDK](single-user-test-perf-sdk.md) and all the steps except "Run multi-user testing with local test controller" in [Multi-user testing with the Performance SDK and a local test controller](multi-user-testing-local-test-controller.md).
 
 ## Prepare the PerfSDKSample solution for multi-user testing
 
@@ -64,7 +64,7 @@ Before you can complete the steps in this topic, verify that the following prere
 3. After Visual Studio is opened, verify that you're running it as an admin. If you aren't, close it, and then reopen it as an admin.
 4. Go to K:\PerfSDK\PerfSDKLocalDirectory\SampleProject, and change the file, **vsonline.testsettings**.
 5. In the **Test Settings** dialog box, on the **General** tab, select the **Run tests using Visual Studio Team Services** option.
-6. On the **Deployment** tab, leave all the fields set as they were set in [Multi-user testing with Performance SDK and local test controller](multi-user-testing-local-test-controller.md).
+6. On the **Deployment** tab, leave all the fields set as they were set in [Multi-user testing with the Performance SDK and a local test controller](multi-user-testing-local-test-controller.md).
 
     [![Deployment tab](./media/perfsdk-azuredevops-04.png)](./media/perfsdk-azuredevops-04.png)
 
@@ -72,7 +72,7 @@ Before you can complete the steps in this topic, verify that the following prere
 
     [![Setup and Cleanup Scripts tab](./media/perfsdk-azuredevops-05.png)](./media/perfsdk-azuredevops-05.png)
 
-8. On the **Additional Settings** tab, leave all the fields set as they were set in [Multi-user testing with Performance SDK and local test controller](multi-user-testing-local-test-controller.md).
+8. On the **Additional Settings** tab, leave all the fields set as they were set in [Multi-user testing with the Performance SDK and a local test controller](multi-user-testing-local-test-controller.md).
 
     [![Additional settings tab](./media/perfsdk-azuredevops-06.png)](./media/perfsdk-azuredevops-06.png)
 
@@ -105,4 +105,4 @@ To switch multi-user testing between the local test controller and Azure DevOps,
 
 ## Troubleshooting
 
-For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide](troubleshoot-perf-sdk-user-testing.md).
+For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).

@@ -85,7 +85,7 @@ You can use task guides to create custom help, or connect a website to the Help 
 
 You can create custom help for Finance, Supply Chain Management, and Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent.
 
-For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 
 ### Connect a custom site
 
@@ -96,8 +96,8 @@ Microsoft has provided a white paper and sample code that describe how to create
 
 ## Additional resources
 
-[Help overview](help-overview.md)
+[Help system](help-overview.md)
 
-[Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)
+[Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)
 
-[How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md)

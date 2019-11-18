@@ -1573,13 +1573,13 @@ Because this method only calls the **validate()** method on the control and does
 Additional resources
 --------
 
-[Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)
+[Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
-[Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
+[Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
+[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+[Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
 
 
 

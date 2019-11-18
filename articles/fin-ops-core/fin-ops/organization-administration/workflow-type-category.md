@@ -66,6 +66,6 @@ After you create a workflow category, a workflow type can be bound to it. Typica
 
 ## See also
 
-[Creating a workflow type](workflow-type-create.md)
+[Create a workflow type](workflow-type-create.md)
 
 [Create a new workflow type](workflow-type-create-new.md)

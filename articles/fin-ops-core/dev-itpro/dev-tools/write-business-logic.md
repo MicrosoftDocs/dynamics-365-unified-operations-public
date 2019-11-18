@@ -52,16 +52,24 @@ Too many cars have been rented to drivers who have a history of unsafe driving h
 You can create a reference from a project to the C\# class library, or to any other type of C\# project that generates an assembly. Such references affect the build order. The C\# project is built before the project that references and depends on it. The infrastructure understands the references, and will make sure that the C\# assemblies are deployed correctly to the cloud before execution. Follow these steps to create a C\# class library in the Fleet Management solution:
 
 1.  In Visual Studio, click **File** &gt; **Open project/solution**.
-2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter** - *C:\\users\\public\\desktop\\FleetManagement*.
-3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).[![OpenProject\_LinqC](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
+2.  In the **Open Project** dialog box, in the **File name** text box, type the following path, and then press **Enter**: *C:\\users\\public\\desktop\\FleetManagement*.
+3.  Select the file named FleetManagement.sln, and then click **Open**. If the solution file is not on your computer, the steps to create it are listed in [Tutorial: Create a Fleet Management solution file out of the Fleet Management models in the AOT](https://community.dynamics.com/ax/b/newdynamicsax/archive/2016/05/19/tutorial-create-a-fleet-management-solution-file-out-of-the-fleet-management-models-in-the-aot).
+
+    [![OpenProject\_LinqC](./media/openproject_linqc2.png)](./media/openproject_linqc2.png)
+
 4.  Right-click the **FleetManagement** solution, and then click **Add** &gt; **New Project**. The **Add New Project** dialog is displayed.
 5.  In the left pane, click **Visual C\#**, and then in the middle pane, click **Class Library**.
 6.  At the bottom in the **Name** text box, type the name **DriversLicenseEvaluator**.
 7.  In the **Location** text box, type the following directory path: *C:\\users\\public\\desktop\\FleetManagement*.
 8.  Verify that your project is set to “.NET Framework 4.5” in the drop-down list at the top.
-9.  Click **OK** to create the project. [![AddNewProject\_LinqC](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)
+9.  Click **OK** to create the project. 
+
+    [![AddNewProject\_LinqC](./media/addnewproject_linqc2.png)](./media/addnewproject_linqc2.png)
+
 10. In **Solution Explorer**, under the DriversLicenseEvaluator project, right-click the file name Class1.cs and rename it DriversLicenseChecker.cs.
-11. Click **Yes**, when prompted to rename all references to the class. [![RenameClass\_LinqC](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
+11. Click **Yes**, when prompted to rename all references to the class. 
+
+    [![RenameClass\_LinqC](./media/renameclass_linqc1.png)](./media/renameclass_linqc1.png)
 
 ## Write a C\# method named CheckDriversLicense
 In this section, you add C\# code for a method named CheckDriversLicense. The method must validate the driver’s license. To do this, the method must retrieve the driver’s license number, which is stored in the customer table. The method is given the RecId value for the customer record that contains the information required by the method. Your C\# code uses the LINQ provider to read from the customer table. For LINQ to work, you must first add references pointing to the LINQ assemblies. You add these references to the C\# project named DriversLicenseEvaluator.
@@ -76,6 +84,7 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
     -   Microsoft.Dynamics.AX.Framework.Linq.Data.Msil.dll
 
     [![SelectReferences\_LinqC](./media/selectreferences_linqc1.png)](./media/selectreferences_linqc1.png)
+    
 4.  You must also add the support assemblies that contain the Common type that you'll use in the code below. Click **Browse** again, and then type the following file name into the field:
     -   Microsoft.Dynamics.AX.Xpp.Support.dll
     -   Microsoft.Dynamics.AX.Data.Core.dll
@@ -105,7 +114,10 @@ In this section, you add C\# code for a method named CheckDriversLicense. The me
           }
         }
 
-10. Replace the class CheckDriversLicense with the following code. **Tip**: If you prefer, you can paste in the code from the DriversLicenseChecker.cs file in the C:\\FMLab directory.
+10. Replace the class CheckDriversLicense with the following code. 
+
+> [!TIP] 
+> If you prefer, you can paste in the code from the DriversLicenseChecker.cs file in the C:\\FMLab directory.
 
           public class DriversLicenseChecker
           {
@@ -243,16 +255,27 @@ In this section, you set breakpoints and run the Fleet application under the Vis
 
 ### Run the test
 
-For this test, we'll be debugging the C\# code that we've written. To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C\# code. Go to **Dynamics 365 &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** check box is not selected. [![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) **Tip**: If you're unable to get to the breakpoint in the C\# code, you may want to open the **Modules** window (**Debug &gt; Windows &gt; Modules**), find the C\# module and load it explicitly.
+For this test, we'll be debugging the C\# code that we've written. To do this, we need to inform Visual Studio to load the symbols for the assembly that contains the C\# code. Go to **Dynamics 365 &gt; Options &gt; Debugging** and verify that the **Load symbols only for items in the solution** check box is not selected. 
+
+[![Options\_LinqC](./media/options_linqc2.png)](./media/options_linqc2.png) 
+
+> [!TIP] 
+> If you're unable to get to the breakpoint in the C\# code, you may want to open the **Modules** window (**Debug &gt; Windows &gt; Modules**), find the C\# module and load it explicitly.
 
 1.  Click **Debug &gt; Start Debugging**. This starts the Fleet application, and a browser window with the **FMRental** form is displayed.
 2.  Click on any **Vehicle rental ID** to view details.
 3.  Click the **Edit** icon near the top left of the form. The icon looks like a pencil.
-4.  In the **To** field of the **Rental** section, increase the date by one day.[![FMRentalDetails](./media/fmrental.jpg)](./media/fmrental.jpg)
+4.  In the **To** field of the **Rental** section, increase the date by one day.
+
+    [![FMRentalDetails](./media/fmrental.jpg)](./media/fmrental.jpg)
+
 5.  Click the **Save** button. This causes the focus to shift to Visual Studio at your highlighted breakpoint. This line shows that the OnValidatedWrite event was raised, and that your handler method was called.
 6.  Press **F5** to continue the run. Instantly, your other breakpoint becomes highlighted.
 7.  Find the variable customer a few lines above your breakpoint.
-8.  Right-click the customer variable, and then click **QuickWatch**. Any long integer value proves that your LINQ query worked. [![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)
+8.  Right-click the customer variable, and then click **QuickWatch**. Any long integer value proves that your LINQ query worked. 
+
+    [![QuickWatch\_LinqC](./media/quickwatch_linqc2.png)](./media/quickwatch_linqc2.png)
+
 9.  Press **F5** to complete the **Save** operation.
 
 

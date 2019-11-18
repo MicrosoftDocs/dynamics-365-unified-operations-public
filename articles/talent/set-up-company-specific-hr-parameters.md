@@ -64,7 +64,7 @@ The settings on the **FMLA** tab define how many hours an employee must work in 
 Additional resources
 --------
 
-[Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
+[Set up Human resources (HR) parameters across legal entities](set-up-hr-parameters-across-legal-entities.md)
 
 
 

@@ -40,7 +40,7 @@ BPM is compatible with the following programs:
 - **Microsoft Visio** – You can export business process maps to Visio files.
 
 > [!NOTE]
-> The information in this topic is specific only to Finance and Operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler](ax-2012/business-process-modeler-lcs.md). 
+> The information in this topic is specific only to Finance and Operations apps. For information about Business process modeler and Microsoft Dynamics AX 2012, see [Business process modeler (BPM) in Lifecycle Services (LCS)](ax-2012/business-process-modeler-lcs.md). 
 
 ## Prerequisites
 
@@ -64,11 +64,11 @@ Follow these steps to access BPM.
 
 The following topics provide more information about how to work with BPM libraries:
 
-- [Create, edit, or browse a BPM library](creating-editing-browsing.md)
-- [Synchronize a BPM library with Azure DevOps](synchronize-bpm-vsts.md)
-- [Complete tasks in BPM](complete-tasks-bpm.md)
-- [Use activity diagrams with BPM](using-activity-diagrams.md)
-- [Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
-- [Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
+- [Create, edit, and browse Business process modeler (BPM) libraries](creating-editing-browsing.md)
+- [Synchronize BPM libraries with Azure DevOps](synchronize-bpm-vsts.md)
+- [Complete tasks in Business process modeler (BPM)](complete-tasks-bpm.md)
+- [Work with activity diagrams in Business process modeler libraries](using-activity-diagrams.md)
+- [Business process libraries in Business process modeler (BPM)](business-process-libraries-business-process-modeler.md)
+- [Flowcharts in Business process modeler (BPM)](flowcharts-business-process-modeler.md)
 
 

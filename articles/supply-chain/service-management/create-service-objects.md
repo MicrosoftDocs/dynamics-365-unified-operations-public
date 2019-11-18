@@ -44,7 +44,7 @@ Service objects are a customer’s assets and products for which you can perform
 
 ## Related topics
 
-[Service objects](service-objects.md)
+[Service objects overview](service-objects.md)
 
 
 

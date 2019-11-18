@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and their partners can use to manage projects from pre-sales to implementation and operations. Based on the phase of your project and the industry that you are working in, the site provides checklists and tools that help you manage the project. The site also provides a dashboard, so that you have a single location from which you can obtain up-to-date project information. 
 
-Use this link to go to the [Lifecycle Services site](https://lcs.dynamics.com/). For more information, see [Lifecycle Services for Microsoft Dynamics User Guide](lcs-user-guide.md).
+Use this link to go to the [Lifecycle Services site](https://lcs.dynamics.com/). For more information, see [Lifecycle Services (LCS) user guide](lcs-user-guide.md).
 
 The following list provides links to each LCS release notes blog post that was published in the previous two years.
 

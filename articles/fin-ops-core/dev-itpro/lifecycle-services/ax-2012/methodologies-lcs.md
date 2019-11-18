@@ -68,7 +68,7 @@ Methodologies can have phases that are associated with Visual Studio Team Founda
 Additional resources
 --------
 
-[Configure Lifecycle Services security](../configure-lcs-security.md)
+[Configure Lifecycle Services (LCS) security](../configure-lcs-security.md)
 
 
 

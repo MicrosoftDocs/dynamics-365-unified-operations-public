@@ -39,7 +39,7 @@ This topic describes how to create new application controls that have a property
 Prerequisites
 -------------
 
-For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Access development instances](../dev-tools/access-instances.md).
+For this tutorial, you must access the environment by using Remote Desktop, and you must be provisioned as an administrator on the instance. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ## Overview
 The Control Extensibility Framework lets you create new application controls. You can use the same tools that Microsoft uses to build controls that are already present in the program, such as the chart control. Three important artifacts are involved in the process of developing an extensible control:
@@ -135,7 +135,7 @@ To see an example of a build class, in Solution Explorer, expand **Classes**, ri
 2.  Add a child design component to the FMTBuildContactControl class. A child design component lets a developer who places the control in a form to specify the image that appears on the control. In this step, you will add the **FormDesignComponentAttribute** attribute to create a new entry in the property sheet. You will then add the **FormDesignPropertyDataFieldAttribute** attribute, which indicates that the new designer property enables the selection of a data field.
     1.  Add the highlighted code that follows to the declarations for the class. This code adds the **FormBindingDataField** field to the X++ that the **FMTBuildContactControl** class is using. 
 
-    [![Example of code that adds the FormBindingDataField field](./media/x4.png)](./media/x4.png)
+        [![Example of code that adds the FormBindingDataField field](./media/x4.png)](./media/x4.png)
 
     2.  Add the following code to the **FMTBuildContactControl** class. Add this method after the designer property for the data source. 
 

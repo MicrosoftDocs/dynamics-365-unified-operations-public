@@ -52,8 +52,8 @@ Follow these steps to enter a name for a parallel branch.
 Follow these steps to design and configure the elements of a parallel branch.
 
 1. Double-click the parallel branch.
-2. Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow. For more information, see [Create a workflow](create-workflow.md).
+2. Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow. For more information, see [Create workflows overview](create-workflow.md).
 
 ## Additional resources
 
-[Create a workflow](create-workflow.md)
+[Create workflows overview](create-workflow.md)

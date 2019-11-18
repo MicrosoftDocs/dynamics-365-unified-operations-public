@@ -45,4 +45,4 @@ The process for setting up a custom Help solution consists of publishing content
 
 ## See also
 
-[Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md)

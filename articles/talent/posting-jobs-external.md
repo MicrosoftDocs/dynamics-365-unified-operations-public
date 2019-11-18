@@ -37,7 +37,7 @@ Microsoft Dynamics 365 Talent: Attract helps you get the talent you need by lett
 
 Posting jobs to Broadbean requires an appropriate Broadbean license. Broadbean offers various products and plans. For more information about Broadbean licensing and pricing, [contact Broadbean](https://www.broadbean.com/contact-us/).
 
-If you're an admin who needs more information about how to configure Broadbean integration with Attract, see [Enter settings for external job boards](./attract-admin-job-board-settings.md).
+If you're an admin who needs more information about how to configure Broadbean integration with Attract, see [Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md).
 
 ## Post jobs to Broadbean
 
@@ -79,7 +79,7 @@ You can update a Broadbean job posting in two ways.
 2. In the **Postings** section, select the **Update Post** button that corresponds to Broadbean.
 3. Edit the posting in the Broadbean window.
 
-–or–
+    –or–
 
 1. In Attract, open the job that you want to view on Broadbean.
 2. In the **Postings** section, select the ellipsis button (**...**) that corresponds to Broadbean, and then select **View**.
@@ -104,6 +104,6 @@ If you're having trouble posting a job to Broadbean, try these steps.
 
 ## See also
 
-[Create jobs](./creating-jobs-attract.md)
+[Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
-[Enter settings for external job boards](./attract-admin-job-board-settings.md)
+[Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)

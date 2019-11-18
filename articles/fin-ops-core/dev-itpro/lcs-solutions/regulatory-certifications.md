@@ -50,12 +50,14 @@ The following table explains the components of the naming convention.
 | Feature type        | REG     | The type of feature                                                                                                           | REG                               |
 | Certification name  | Text    | A short title that describes the certification and its application                                                            | Certification for Fiscal printers |
 
-In the BPM business process library, certifications should be located under **APQC level 8.0 Manage Financial Resources (10009)**. **Example**
+In the BPM business process library, certifications should be located under **APQC level 8.0 Manage Financial Resources (10009)**. 
+
+**Example**
 
 -   APQC level 8.0 Manage Financial Resources (10009)
     -   PT-REG-Certification for Fiscal printers
 
-For more information about BPM, see [BPM flowcharts](../lifecycle-services/flowcharts-business-process-modeler.md).
+For more information about BPM, see [Flowcharts in Business process modeler (BPM)](../lifecycle-services/flowcharts-business-process-modeler.md).
 
 
 

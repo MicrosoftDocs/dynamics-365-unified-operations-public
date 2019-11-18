@@ -38,8 +38,8 @@ Some organizations require that purchase requisitions and purchase orders are ap
 
 A workflow represents a business process. It defines how a document flows through the system and indicates who must complete a task or approve a document. There are several benefits of using the workflow system in your organization:
 -   **Consistent processes**— You can define the approval process for specific documents, such as purchase requisitions and expense reports. Using the workflow system helps to ensure that documents are processed and approved in a consistent and efficient manner.
--   **Process visibility**— You can track the status, history, and performance metrics of a specific workflow instance. This helps you determine whether changes should be made to the workflow to improve efficiency.
--   **Centralized work list**— Users can view a centralized work list to view the workflow tasks and approvals assigned to them across all workflows they participate in. This is available in the Work items page.
+-   **Process visibility** — You can track the status, history, and performance metrics of a specific workflow instance. This helps you determine whether changes should be made to the workflow to improve efficiency.
+-   **Centralized work list** — Users can view a centralized work list to view the workflow tasks and approvals assigned to them across all workflows they participate in. This is available in the Work items page.
 
 ## The types of workflows that you can create
 The following workflow types are available for Procurement and sourcing.
@@ -79,5 +79,5 @@ You can assign an approval step to the following groups of participants.
 
 - [Purchase requisition workflow](purchase-requisitions-workflow.md)
 
-- [Onboarding vendors](vendor-onboarding.md)
+- [Onboard vendors](vendor-onboarding.md)
 

@@ -72,7 +72,7 @@ The one-time set up and configuration means that you'll need to:
 - Set up a B2B invitation service application in Azure AD.
 - Configure the B2B invitation service settings in Finance and Operations.
 
-For more information, see [Export B2B users to Azure AD](../../dev-itpro/sysadmin/implement-b2b.md).
+For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md).
 
 ## Personalizations can easily be shared with one or more roles in your organization
 
@@ -87,7 +87,7 @@ Additionally, this feature gives the administrator more control over how to appl
 The Document Routing Agent has been enhanced to offer support for more network printer devices. With the ability to support up to 50 network printers, clients are better prepared to handle common printing workloads. Simply upgrade the Document Routing Agent after deploying the latest platform update to take advantage of the intelligent document queue management.
 
 > [!NOTE]
-> Refer to the following installation instructions to deploy the latest version of the Document Routing Agent onto local print servers hosted on the corporate domain, [Install the Document Routing Agent to enable network printer devices](../../dev-itpro/analytics/install-document-routing-agent.md).
+> Refer to the following installation instructions to deploy the latest version of the Document Routing Agent onto local print servers hosted on the corporate domain, [Install the Document Routing Agent to enable network printing](../../dev-itpro/analytics/install-document-routing-agent.md).
 
 ## Table extension – PreviewPartRef property
 

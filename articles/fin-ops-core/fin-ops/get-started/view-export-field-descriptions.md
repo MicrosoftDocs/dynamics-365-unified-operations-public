@@ -40,7 +40,7 @@ Some of the more complex fields have field descriptions. These descriptions appe
 
 Not all pages have field descriptions. We want to provide descriptions only for the more complex fields, not where the use of the field is obvious. Therefore, some pages don't have any field descriptions, some pages have a few descriptions, and some of the more complex pages, such as many of the parameters pages, have many descriptions.
 
-If you have access to the development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field help](../../dev-itpro/user-interface/customize-field-help.md).
+If you have access to the development environment, you can add new field descriptions and customize existing descriptions. For example, you can add company-specific information to a field description. For more information, see [Customize field descriptions](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## See field descriptions in the user interface
 
@@ -112,4 +112,4 @@ For information about the various way to find pages, see the "Searching for page
 
 ## Additional resources
 
-[Customize field help](../../dev-itpro/user-interface/customize-field-help.md)
+[Customize field descriptions](../../dev-itpro/user-interface/customize-field-help.md)

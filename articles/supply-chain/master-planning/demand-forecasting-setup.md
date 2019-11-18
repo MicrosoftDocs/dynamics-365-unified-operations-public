@@ -74,7 +74,8 @@ To generate the forecast, Supply Chain Management uses a Machine Learning web se
 -   Azure storage account name
 -   Azure storage account key
 
-**Note:** The Azure storage account name and key are required only if you use a custom storage account. If you deploy the on-premises version, you must have a custom storage account on Azure, so that the Machine Learning service can access the historical data. 
+> [!NOTE]
+> The Azure storage account name and key are required only if you use a custom storage account. If you deploy the on-premises version, you must have a custom storage account on Azure, so that the Machine Learning service can access the historical data. 
 
 To create demand predictions, you can deploy your own service by using Machine Learning Studio or the Supply Chain Management demand forecasting experiments. Instructions for deploying the demand forecasting experiments as a web service are available in Supply Chain Management. On the **Demand forecasting parameters** page, click the **Azure Machine Learning** tab.
 
@@ -97,11 +98,11 @@ On the **Allocation keys** tab you can set the **Forecast algorithm parameters**
 Additional resources
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Demand forecasting overview](introduction-demand-forecasting.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 
 
