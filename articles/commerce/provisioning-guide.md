@@ -3,7 +3,7 @@
 
 title: Provision a Commerce preview environment
 description: This topic provides step-by-step instructions for provisioning your Microsoft Dynamics 365 Commerce preview environment.
-author: v-chgri
+author: psimolin
 manager: annbe
 ms.date: 12/02/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: anupamar
+ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
@@ -220,3 +220,5 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 1. Under **LINKS** on the bottom right.
 	* Make note of the link **e-Commerce site**. This is the link to the root of your C2 site.
 	* Make note of the link **e-Commerce site management tool**. This is the link to the site management tool (C1 authoring tool).
+	
+## Next steps
