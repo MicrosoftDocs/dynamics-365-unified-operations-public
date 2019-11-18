@@ -222,3 +222,12 @@ https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd
 	* Make note of the link **e-Commerce site management tool**. This is the link to the site management tool (C1 authoring tool).
 	
 ## Next steps
+
+To continue the process and start configuring your Commerce preview environment, see [Configure a Commerce preview environment](cpe-post-provisioning.md).
+
+## Additional resources
+
+[Commerce preview environment overview](cpe-overview.md)
+[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure Commerce preview environment optional features](cpe-optional-features.md)
+[Commerce preview environment FAQ](cpe-faq.md)
