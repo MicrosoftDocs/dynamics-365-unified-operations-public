@@ -47,7 +47,7 @@ On the **Email parameters** page, note the following settings on the **Configura
 | Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
 
-In platform update 32, an **Email history** page was added to allow administrators to review all of the emails sent out and any errors that might have stopped them sending out. By default, the last 30 days of email history is retained and that can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
+In Platform update 32, an **Email history** page was added to allow administrators to review all of the emails sent out and any errors that might have stopped them sending out. By default, the last 30 days of email history is retained and that can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
 
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
