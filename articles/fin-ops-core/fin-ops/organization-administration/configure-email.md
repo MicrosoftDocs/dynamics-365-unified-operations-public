@@ -47,7 +47,7 @@ On the **Email parameters** page, note the following settings on the **Configura
 | Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
 
-In Platform update 32, an **Email history** page was added to allow administrators to review all of the emails sent out and any errors that might have stopped them sending out. By default, the last 30 days of email history is retained and that can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
+In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. By default, the last 30 days of email history is retained. This can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
 
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
@@ -264,13 +264,14 @@ There are a few standard steps that can help you troubleshoot the configuration 
     2. Verify that emails are being sent from the correct account. If the account is incorrect, you need to adjust settings such as user options, system templates,  or organization templates, as needed.
     3. Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see step 4 for details).
     
-4. In Platform update 32, an **Email history** page was added to allow administrators to review all of the emails sent out and any errors that might have stopped them sending out. The **Email history** page will show interactive as well as non-interactive/batch emails. For any emails that have an **Email status** of **Failed**, review the error message in the **Failure details** tab and determine if corrective actions can be taken.
+4. In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. For any emails that have an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken.
 
 5. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
-6. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
+6. Sign in to all user mailboxes to verify that they are valid and can be accessed using sign in.
 7. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
 8. If the SMTP settings were migrated from another environment, clear the password field and re-enter the password to ensure that the field encryption hasn't negatively affected the stored value.
 9. If you continue to experience issues when email is sent via SMTP, enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+
 
 ## Troubleshoot the Exchange mail provider
 
