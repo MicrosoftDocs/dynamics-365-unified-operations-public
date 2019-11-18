@@ -71,8 +71,11 @@ This topic provides answers to frequently asked questions about the Microsoft Dy
  ## Additional resources
 
 [Commerce preview environment overview](cpe-overview.md)
+
 [Provision a Commerce preview environment](provisioning-guide.md)
+
 [Configure a Commerce preview environment](cpe-post-provisioning.md)
+
 [Configure Commerce preview environment optional features](cpe-optional-features.md)
 
 
