@@ -113,9 +113,9 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 Additional resources
 --------
 
-[Dynamics AX LINQ Provider for use in C#](linq-provider-c.md)
+[Language Integrated Query (LINQ) provider for C#](linq-provider-c.md)
 
-[Technical Concepts Guide](developer-home-page.md)
+[Develop and customize home page](developer-home-page.md)
 
 
 

@@ -118,7 +118,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 
 If you are installing Retail Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
-ModernPosSetupOffline.exe -UseAdfsAuthentication
+    ModernPosSetupOffline.exe -UseAdfsAuthentication
 
 The Retail Modern POS installer first extracts the associated files and then starts the installation.
 
@@ -204,7 +204,7 @@ You must complete this procedure before you activate Retail Modern POS for a new
     > [!NOTE]
     > The **External identifier** field will remain empty. This behavior is expected. Therefore, you can ignore it.
 
-This procedure should be completed before you activate Retail Cloud POS or Retail Modern POS. For more information, see [Manage Retail accounts and devices from headquarters](set-up-activation-accounts-validate-devices-hq.md).
+This procedure should be completed before you activate Retail Cloud POS or Retail Modern POS. For more information, see [Manage Retail activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md).
 
 ### Run the Validate Devices for Activation check
 
@@ -325,4 +325,4 @@ On a single-computer system, such as a developer topology or a demo environment,
 
 ## Additional resources
 
-[Install the POS Layout designer](install-pos-layout-designer.md)
+[Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)

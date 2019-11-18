@@ -68,9 +68,9 @@ Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Create purchase orders](purchase-order-creation.md)
 
-[Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+[Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
 [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
 

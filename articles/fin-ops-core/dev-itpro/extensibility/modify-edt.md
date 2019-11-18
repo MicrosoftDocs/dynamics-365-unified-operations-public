@@ -42,7 +42,7 @@ There are several properties that can be customized on existing extended data ty
     + You can only modify the value if the EDT does not extend from another EDT.
     + You can only set the new String size to a value equal to or larger than the base EDT value.
 - Decimals (NoOfDecimals property)
-    + For more information, see [Extending decimal point precision for extended data types](decimal-point-precision.md).
+    + For more information, see [Extending decimal point precision for selected data types](decimal-point-precision.md).
 
 You modify the properties as you would for newly added elements, using the property sheet.
 

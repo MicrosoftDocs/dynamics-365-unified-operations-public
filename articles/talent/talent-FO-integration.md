@@ -60,7 +60,7 @@ part of the default template. This entity is planned, but currently no release t
 
 For data that resides in Finance but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
-information about how to configure links between Talent and Finance, see [What's new or changed in Dynamics 365 Talent: Core HR (October 31, 2018)](whats-new-talent-october-31.md).
+information about how to configure links between Talent and Finance, see [What's new or changed in Dynamics 365 Talent - Core HR (October 31, 2018))](whats-new-talent-october-31.md).
 
 ![Map financial dimensions](media/MapFinancialDimensions.png)
 

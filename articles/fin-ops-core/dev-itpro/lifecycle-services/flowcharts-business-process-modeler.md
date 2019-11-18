@@ -42,7 +42,9 @@ You can start with default connected flowcharts from Dynamics 365 Finance and Op
 -   Unconnected flowcharts are uploaded directly from Visio.
 
 ## Connected flowcharts
-This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler from Task recorder](upload-business-processes-bpm-task-recorder.md). Activities that can appear in flowcharts are described in the following table.
+This section explains how to view a connected flowchart, how to modify it, how to export the flowchart to Visio, how to generate a gap analysis, and how to export the gap analysis to a comma-separated file that you can manually import into Microsoft Visual Studio Team Foundation Server as work items. For information about how to upload recordings of custom business processes, see [Upload custom business processes to Business process modeler (BPM)](upload-business-processes-bpm-task-recorder.md). 
+
+Activities that can appear in flowcharts are described in the following table.
 
 | Activity                  | Description                                                                                                                                                      |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,10 +66,15 @@ This section explains how to view a connected flowchart, how to modify it, how t
 
 ### View a connected flowchart
 
-Default connected flowcharts are available for many nodes in the industry-standard libraries. You can view a connected flowchart to determine whether it meets your needs. To view a connected flowchart, follow these steps:
+Default connected flowcharts are available for many nodes in the industry-standard libraries. You can view a connected flowchart to determine whether it meets your needs. 
+
+To view a connected flowchart, follow these steps:
+
 1.  Sign in to Microsoft Dynamics Lifecycle Services, open a project, and then click **Business process modeler**.
-2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (Lifecycle Services, LCS)](./ax-2012/business-process-modeler-lcs.md).
-3.  Expand the business process library and then click a library node that has a flowchart icon associated with it. [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Related information is displayed in the right pane, depending on what is selected in the diagram:
+2.  In the **My libraries** section, select a library to display it. For information about how to copy a standard business process library to a project, see [Business process modeler (BPM) in Lifecycle Services (LCS)](./ax-2012/business-process-modeler-lcs.md).
+3.  Expand the business process library and then click a library node that has a flowchart icon associated with it: [![Flowchart BPM topic1](./media/flowchart-bpm-topic1.jpg)](./media/flowchart-bpm-topic1.jpg)
+
+    The flowchart is displayed. Each activity in the process is represented by a shape in the diagram. Related information is displayed in the right pane, depending on what is selected in the diagram:
     -   If nothing is selected on the flowchart, the right pane displays a detailed list of steps for the process, usage characteristics (setup, master, or transactions), and a video. You can double-click the video to view it in full-screen mode. Usage characteristics are used in the Usage profiler to help determine the load required for a process. Identify processes as Setup when they are configuration tasks, as Master when they are Master data processes, and as Transaction when they are transactional processes. Setup and master processes are assumed to require less processing than transaction processes.
     -   If the title of a swimlane is selected, the right pane displays a list of the security roles that have access to the activities that are in the swimlane, and their corresponding duties.
     -   If a flowchart activity shape is selected, the right pane displays information about the selected activity. This information comes from standard metadata in the application. For example, if a shape represents a form, the metadata includes properties such as the Application Object Tree (AOT) name, the label for the form title, and the data sources for the form.
@@ -78,9 +85,8 @@ Default connected flowcharts are available for many nodes in the industry-standa
 
 You can modify an existing connected flowchart to match your company's business process.
 
-| **Note**                                                         |
-|------------------------------------------------------------------|
-| Any time you modify a flowchart, a gap is automatically created. |
+> [!NOTE]
+> Any time you modify a flowchart, a gap is automatically created.
 
 To modify a connected flowchart, follow these steps:
 1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
@@ -108,15 +114,21 @@ You can export a business process model flowchart to a Visio file.
 5.  The file will be treated as a download that you can open or save.
 
 ### Mark a change to not be a gap
-Please note that gap functionality has been deprecated in LCS. To learn more about how to use Azure DevOps Synchronization, see [Synchronize a BPM library with Azure DevOps](synchronize-bpm-vsts.md).
+Please note that gap functionality has been deprecated in LCS. To learn more about how to use Azure DevOps Synchronization, see [Synchronize BPM libraries with Azure DevOps](synchronize-bpm-vsts.md).
 
-Any time you modify a flowchart, a gap is automatically created. You can modify any change to no longer be considered a gap. To modify a change, follow these steps:
+Any time you modify a flowchart, a gap is automatically created. You can modify any change to no longer be considered a gap. 
+
+To modify a change, follow these steps:
+
 1.  Select the object that you added, and then right-click it.
 2.  On the app bar, click **Not a gap**.
 
 ### Generate a gap analysis and export it to use with Azure DevOps
 
-You can generate a gap analysis list for the project that you are working with. You can export the gap analysis list to a comma-separated file. You can then import that file to Visual Studio Team Foundation Server to create work items. To generate a gap analysis and export it, follow these steps:
+You can generate a gap analysis list for the project that you are working with. You can export the gap analysis list to a comma-separated file. You can then import that file to Visual Studio Team Foundation Server to create work items. 
+
+To generate a gap analysis and export it, follow these steps:
+
 1.  Sign in to Lifecycle Services, open a project, and then click **Business process modeler**.
 2.  In the **My libraries** section, select a library to display it.
 3.  Expand the library and then click any library node that has a flowchart icon associated with it. The flowchart is displayed.
@@ -134,7 +146,7 @@ Unconnected flowcharts can be very helpful for describing high-level business pr
 
 ### View an unconnected flowchart
 
-A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar. [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
+A business process with an unconnected Visio flowchart associated with it will have a document icon on its title bar: [![Flowchart BPM topic2](./media/flowchart-bpm-topic2.jpg)](./media/flowchart-bpm-topic2.jpg)
 -   Click the document icon to view the flowchart.
 -   Click **Download** on the Visio page to download the flowchart.
 

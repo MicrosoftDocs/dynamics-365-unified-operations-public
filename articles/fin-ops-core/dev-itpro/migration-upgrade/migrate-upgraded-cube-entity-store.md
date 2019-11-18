@@ -58,7 +58,7 @@ As part of the code upgrade process, analysis services projects from the Applica
 1.  Launch Visual Studio and create a new project in Application Suite.
 
     > [!NOTE]
-    > You can create a model and include the customized aggregate measurement within that model. For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+    > You can create a model and include the customized aggregate measurement within that model. For more information, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 
 2.  Open Application Explorer. Go to **Analytics** &gt; **Perspectives** &gt; **Aggregate measurements**. You will notice a set of aggregate measurements that were upgraded from Dynamics AX 2012 R3, as well as the measurements that ship in the current version.
 3.  Select **SalesCube**. Right-click and select **Duplicate in project**.
@@ -114,26 +114,26 @@ This step requires that you the install Power BI desktop tool that can be downlo
 1.  Select the ellipsis (…) icon next to the **SalesCubeV2\_CustomerInvoices** entity. Right-click and select **New Column**.
 2.  Enter the following expression in the **Formula editor** window.
 
-```
-FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
-```
+    ```
+    FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_CustomerInvoices[DATAAREAID], "-"), SalesCubeV2_CustomerInvoices[ORDERACCOUNT])
+    ```
 
-> [!NOTE]
-> When you enter the first few letters of the field name or function, the editor will display a list of candidate fields. This is called a type-ahead feature. You can either copy and paste this expression or use the type-ahead feature.
+    > [!NOTE]
+    > When you enter the first few letters of the field name or function, the editor will display a list of candidate fields. This is called a type-ahead feature. You can either copy and paste this expression or use the type-ahead feature.
 
-1.  When completed, your formula should look similar to the following.
+3.  When completed, your formula should look similar to the following.
 
-[![Power BI Formula](./media/powerbiformula.png)](./media/powerbiformula.png)
+    [![Power BI Formula](./media/powerbiformula.png)](./media/powerbiformula.png)
 
-1.  Notice that a new field, **FKCustomer**, is shown in the list of fields for the **SalesCubeV2\_CustomerInvoices** table. Because this field is used to relate two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.
-2.  Next, create a similar field in the **SalesCubeV2\_Customer** table. Select the ellipsis (…) icon next to **SalesCubeV2\_Customer** entity. Right-click and select **New Column**.
-3.  Enter the following expression in the **Formula editor** window.
+4.  Notice that a new field, **FKCustomer**, is shown in the list of fields for the **SalesCubeV2\_CustomerInvoices** table. Because this field is used to relate two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.
+5.  Next, create a similar field in the **SalesCubeV2\_Customer** table. Select the ellipsis (…) icon next to **SalesCubeV2\_Customer** entity. Right-click and select **New Column**.
+6.  Enter the following expression in the **Formula editor** window.
 
-```
-FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
-```
+    ```
+    FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), SalesCubeV2_Customer[CUSTOMER])
+    ```
 
-1.  Notice that the field **FKCustomer** is shown in the list of fields for the **SalesCubeV2\_Customer** table. Because this field is used for relating two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.
+7.  Notice that the field **FKCustomer** is shown in the list of fields for the **SalesCubeV2\_Customer** table. Because this field is used for relating two tables, you can hide it from end users by right-clicking the field and selecting the **Hide** option.
 
 ### Relate invoices and customers
 
@@ -151,12 +151,12 @@ FKCustomer = CONCATENATE(CONCATENATE(SalesCubeV2_Customer[DATAAREAID], "-"), Sal
 1.  To create a report that shows sales by customer group, drag the **CustomerInvoiceAmountAccountingCurrency** field from the **SalesCubeV2\_CustomerIncoices** table and drop it on the Power BI desktop canvas. Next, drag the **CustomerGroupName** field in the **SalesCubeV2\_Customer** table to the same grid.
 2.  Change the chart type to a doughnut chart. You should see a report similar to the following.
 
-[![Power BI Doughnut Chart](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
+    [![Power BI Doughnut Chart](./media/doughnut-chart-1024x733.png)](./media/doughnut-chart.png)
 
-1.  You can create additional visuals using the Power BI desktop. When you save, you will notice that the file has a **PBIX** extension.
-2.  Save the report to your desktop.
-3.  At this point the report is fully functional (with data from your environment) and you can continue to use the Power BI desktop or upload this report to PowerBI.com and continue with data exploration.
-4.  Next, you will migrate this report to a production environment using LCS so that you can see this report with production data and share it with other users.
+3.  You can create additional visuals using the Power BI desktop. When you save, you will notice that the file has a **PBIX** extension.
+4.  Save the report to your desktop.
+5.  At this point the report is fully functional (with data from your environment) and you can continue to use the Power BI desktop or upload this report to PowerBI.com and continue with data exploration.
+6.  Next, you will migrate this report to a production environment using LCS so that you can see this report with production data and share it with other users.
 
 ## Publish the report and the model
 Publishing a report and model requires uploading the report to Lifecycle Services, migrating the aggregate measurement to your production environment, configuring the client to point to the correct LCS library, and publishing your reports in your production environment.
@@ -213,7 +213,7 @@ As an administrator or a power user, you have successfully authored and publishe
 Additional resources
 --------
 
-[Modeling and using aggregate data](../analytics/model-aggregate-data.md)
+[Model aggregate data](../analytics/model-aggregate-data.md)
 
 
 

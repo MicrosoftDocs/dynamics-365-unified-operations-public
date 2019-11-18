@@ -48,8 +48,10 @@ This topic explains how to add a new custom column to a POS transaction page usi
 7. After installing, enter your AAD credentials to launch the designer.
 8. In the designer, right-click the transaction grid (receipt grid) and select **Customize**.
 9. In the **Customization – Receipt** window, select the **lines** in the pivot panel drop-down menu.
+
    > [!NOTE]
    > Similarly, you can add a custom column to the **Payment and Delivery** tab.
+   
 10. In the **Available columns** window, select **Custom column 1**, and then click the **> (arrow)** button to move the column to the **Selected** columns.
 11. Click **OK** to save and close the window.
 12. Adjust the column width in the transaction grid using the **Screen layout** designer. Make sure the column is visible.
@@ -211,7 +213,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 17. Compile and rebuild the project.
 
 > [!NOTE]
->  You can find the sample for the custom column in the [Retail SDK](./retail-sdk/retail-sdk-overview.md).
+>  You can find the sample for the custom column in the [Retail software development kit (SDK) architecture](./retail-sdk/retail-sdk-overview.md).
 
 ## Validate the customization
 

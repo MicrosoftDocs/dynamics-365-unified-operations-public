@@ -44,7 +44,7 @@ To get started, you must follow all the steps to get a full continuous build sys
 
 ### Getting the Retail SDK
 
-If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
+If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail software development kit (SDK) architecture](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
 
 ## Install NuGet.exe 
 

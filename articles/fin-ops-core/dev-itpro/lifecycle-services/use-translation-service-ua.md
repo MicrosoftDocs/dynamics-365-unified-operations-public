@@ -126,4 +126,4 @@ When you've finished reviewing and editing a .docx review file, you must regener
 
 You can repeat the regeneration process as many times as you require.
 
-For more information about the Microsoft Dynamics 365 Translation Service (DTS), see [Microsoft Dynamics 365 - Translation Service Overview](./translation-service-overview.md). For information about how to translate a user interface (UI) file, see [Microsoft Dynamics 365 Translation Service - User interface file translation](./use-translation-service.md).
+For more information about the Microsoft Dynamics 365 Translation Service (DTS), see [Dynamics 365 Translation Service overview](./translation-service-overview.md). For information about how to translate a user interface (UI) file, see [Translate user interface files](./use-translation-service.md).

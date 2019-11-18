@@ -83,12 +83,12 @@ The dimension-based configuration technology is best used for products with limi
 
 The following eight task guides are listed in the order in which you should complete them. 
 
-1.  [Create a dimension-based product master (Task guide)](tasks/create-dimension-based-product-master.md)
-2.  [Release a dimension-based product master (Task guide)](tasks/release-dimension-based-product-master.md)
-3.  [Complete basic setup of a released product master (Task guide)](tasks/complete-basic-setup-released-product-master.md)
-4.  [Define configuration groups (Task guide)](tasks/define-configuration-groups.md)
-5.  [Create a bill of materials for a dimension-based product master (Task guide)](tasks/create-bill-materials-dimension-based-product-master.md)
-6.  [Define configuration routes (Task guide)](tasks/define-configuration-route.md)
-7.  [Create configuration rules (Task guide)](tasks/create-configuration-rules.md)
-8.  [Create dimension-based configurations (Task guide)](tasks/create-dimension-based-configurations.md)
+1.  [Create a dimension-based product master](tasks/create-dimension-based-product-master.md)
+2.  [Release a dimension-based product master](tasks/release-dimension-based-product-master.md)
+3.  [Complete basic setup of a released product master](tasks/complete-basic-setup-released-product-master.md)
+4.  [Define configuration groups](tasks/define-configuration-groups.md)
+5.  [Create a bill of materials for a dimension-based product master](tasks/create-bill-materials-dimension-based-product-master.md)
+6.  [Define configuration routes](tasks/define-configuration-route.md)
+7.  [Create configuration rules](tasks/create-configuration-rules.md)
+8.  [Create dimension-based configurations](tasks/create-dimension-based-configurations.md)
 

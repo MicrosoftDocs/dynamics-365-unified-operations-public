@@ -85,7 +85,7 @@ To get the latest data upgrade deployable package for a target environment that 
 3. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
 4. In the list of deployable package files, find the data upgrade package that corresponds to your upgrade. For example, if you're upgrading from AX 2012, the package name starts with AX2012DataUpgrade. Select the package that corresponds to the release you are upgrading to. For example: AX2012DataUpgrade-July2017.
 
-For more information, see [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). 
+For more information, see [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md). 
 
 ## Troubleshooting data upgrade script errors
 

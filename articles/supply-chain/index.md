@@ -58,7 +58,7 @@ Select a feature area to learn more about it.
 
 ## Dynamics 365 Finance
 
-For information on Dynamics 365 Finance, go to the [Dynamics 365 Finance help resources](../finance/index.md) page.
+For information on Dynamics 365 Finance, go to the [Financial management home page](../finance/index.md) page.
 
 ## Videos
 

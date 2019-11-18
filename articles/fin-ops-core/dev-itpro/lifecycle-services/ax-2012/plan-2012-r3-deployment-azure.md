@@ -44,7 +44,7 @@ Deployments of AX 2012 R3 on Azure are supported by Microsoft in the following s
    - SQL is deployed in a High Availability topology (using SQL Clustering/Always On).
    - SQL best practices have been followed for deployment in Azure, using the [Performance best practices for SQL Server in Azure Virtual Machines](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance). 
    - Best practices for SQL Server configuration for AX 2012 have been followed, as specified in [Configure SQL Server and storage settings (TechNet)](https://technet.microsoft.com/library/dd309734.aspx). 
-   - The System diagnostic tool is installed and best practices are followed, as specified in [System diagnostics](system-diagnostics-lcs.md) 
+   - The System diagnostic tool is installed and best practices are followed, as specified in [System diagnostics in Lifecycle Services (LCS)](system-diagnostics-lcs.md) 
 
 > [!NOTE]
 > If you have an issue in an unsupported AX 2012 R3 on Azure environment, and can reproduce the same issue in an AX 2012 R3 environment that was either deployed to Azure through LCS, or deployed locally, Microsoft can provide support.
@@ -109,7 +109,7 @@ The Azure management portal provides developers and IT professionals the ability
 -   Connect to virtual machines.
 -   Monitor the health and status of your AX 2012 R3 environment.
 
-After you purchase an Azure subscription, you can access the management portal by clicking [here.](https://manage.windowsazure.com/?whr=live.com) The following image shows the management portal. [![PlanYouAXR3DeploymentonAzure1](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
+After you purchase an Azure subscription, you can access the management portal by clicking [here](https://manage.windowsazure.com/?whr=live.com). The following image shows the management portal. [![PlanYouAXR3DeploymentonAzure1](./media/planyouaxr3deploymentonazure1.jpg)](./media/planyouaxr3deploymentonazure1.jpg)  
 
 ## Become familiar with the Azure VM agent
 The Azure VM Agent is now automatically deployed with every VM deployed via Lifecycle Services. The Azure VM Agent is used to install, configure, manage and run Azure Virtual Machine Extensions (VM Extensions). VM extensions can help you monitor and manage your VMs.
@@ -127,7 +127,9 @@ When a topology is deployed, the deployment system will inspect the virtual mach
 | DS      | Standard DS’s \[all DS series\] |
 | G       | Standard G’s \[all G series\]   |
 
-A Cloud Service will be created with the following naming scheme: Version-Topology-EnvironmentName-SKU-GUID Please consider the Cloud Services resource requirements for your deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.
+A Cloud Service will be created with the following naming scheme: Version-Topology-EnvironmentName-SKU-GUID 
+
+Please consider the Cloud Services resource requirements for your deployments and request additional Cloud Services capacity in your Azure Subscription from Azure Support if necessary.
 
 ## Plan for storage accounts
 For each project created in Lifecycle Services, one or more distinct storage accounts will be created in the Azure subscription. A storage account is created when you connect your project to your Azure subscription. This storage account is a Locally Redundant Storage (LRS) account, and is used to house scripts and VHDs which are required for deployments. An additional Premium storage account is created for each project when the first Premium storage-enabled topology is deployed from the project. Storage accounts are not shared across Lifecycle Services projects, even if the deployments are to the same Azure subscription. When a Premium storage account is created, it too is created as LRS. For more information about storage, click [here](http://azure.microsoft.com/pricing/details/storage). Consider which topologies and the number of environments that will be deployed into the same Lifecycle Services (LCS) project and Azure Connector. Premium storage account aside, by default there is 1 storage account for each LCS project and Azure Connector. Be aware that Azure storage has [limits](https://azure.microsoft.com/documentation/articles/azure-subscription-service-limits/#storage-limits), specifically 20,000 IOPS (input/output operations per second) per standard storage account. Combined with 500 IOPS per VHD, that leaves roughly 40 ***highly utilized*** VHDs before throttling occurs. To mitigate this, we recommend that you leverage multiple Azure Connectors and/or multiple LCS projects. For example, consider having production environments in one LCS project, and Dev/Test environments in another. 
@@ -180,14 +182,17 @@ SQL Server best practices implemented by the deployment service include those re
 -   Enabled trace flags  -T1204, -T1222.
 
 ## Estimate costs and understand the Azure billing process
-To help estimate the cost of your AX 2012 R3 deployment on Azure, use the [Azure pricing calculator](http://azure.microsoft.com/pricing/calculator/). It’s also important to understand the Azure billing process before you deploy AX 2012 R3 on Azure. For an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period, see [Understand your bill](http://azure.microsoft.com/support/understand-your-bill/). **Note: **Keep in mind, you can shut down an AX 2012 R3 environment that has been deployed on Azure when it’s not in use. For example, you may want to shut down an environment on the weekends to reduce costs. When you shut down an environment, the environment still exists; however, the virtual machines in the environment are shut down. You won’t be charged for the virtual machines when they’re not running. For more information, see “How do I shut down an environment?” in the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+To help estimate the cost of your AX 2012 R3 deployment on Azure, use the [Azure pricing calculator](http://azure.microsoft.com/pricing/calculator/). It’s also important to understand the Azure billing process before you deploy AX 2012 R3 on Azure. For an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period, see [Understand your bill](http://azure.microsoft.com/support/understand-your-bill/). 
+
+> [!NOTE]
+> Keep in mind, you can shut down an AX 2012 R3 environment that has been deployed on Azure when it’s not in use. For example, you may want to shut down an environment on the weekends to reduce costs. When you shut down an environment, the environment still exists; however, the virtual machines in the environment are shut down. You won’t be charged for the virtual machines when they’re not running. For more information, see “How do I shut down an environment?” in the [Manage AX 2012 R3 deployments on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ## Consider legal and regulatory requirements
 Microsoft runs Azure services with common operational practices and features across multiple geographies and jurisdictions. However, it is ultimately up to you to determine if Microsoft services satisfy your regulatory needs. To help provide you with up-to-date information, the [Azure trust center](http://azure.microsoft.com/support/trust-center/) provides the following information about security, privacy, and compliance.
 
--   **Security** The [Azure security page](http://www.windowsazure.com/support/trust-center/security/) provides an overview of the provisions Microsoft is taking to provide a secure environment within geographically dispersed datacenters. Among the extensive list of security-related resources, the [Standard Response to Request for Information: Security and Privacy](https://www.microsoft.com/download/details.aspx?id=26647) white paper outlines how Azure meets the suggested principals and mapped them to the International Standards Organization (ISO) 27001:2005 and ISO 27002.
--   **Privacy** The [Azure privacy page](http://www.windowsazure.com/support/trust-center/privacy/) includes links to multiple resources that describe privacy practices of the Azure environment. It includes a link to the [Azure privacy statement](http://www.windowsazure.com/support/legal/privacy-statement/).
--   **Compliance** The [Azure compliance page](http://www.windowsazure.com/support/trust-center/compliance/) provides resources to help you comply with the specific laws and regulations applicable to your unique industry and use scenario.
+-   **Security:** The [Azure security page](http://www.windowsazure.com/support/trust-center/security/) provides an overview of the provisions Microsoft is taking to provide a secure environment within geographically dispersed datacenters. Among the extensive list of security-related resources, the [Standard Response to Request for Information: Security and Privacy](https://www.microsoft.com/download/details.aspx?id=26647) white paper outlines how Azure meets the suggested principals and mapped them to the International Standards Organization (ISO) 27001:2005 and ISO 27002.
+-   **Privacy:** The [Azure privacy page](http://www.windowsazure.com/support/trust-center/privacy/) includes links to multiple resources that describe privacy practices of the Azure environment. It includes a link to the [Azure privacy statement](http://www.windowsazure.com/support/legal/privacy-statement/).
+-   **Compliance:** The [Azure compliance page](http://www.windowsazure.com/support/trust-center/compliance/) provides resources to help you comply with the specific laws and regulations applicable to your unique industry and use scenario.
 
 ## Consider licensing requirements
 Licensing the various components of the AX 2012 R3 virtual machine environment is an important consideration. For deployments on Azure, you will want to evaluate the special licensing terms specific to Azure and the impact that these terms have on the overall suitability of the solution. Licensing requirements vary based on the type of AX 2012 R3 virtual machine environment that you deploy on Azure. The following table provides more information.
@@ -221,9 +226,10 @@ Licensing the various components of the AX 2012 R3 virtual machine environment i
 <li><a href="http://go.microsoft.com/fwlink/?LinkID=507496&amp;amp;clcid=0x409">Software License Terms for the Retail essentials dev/test environment</a></li>
 <li><a href="http://go.microsoft.com/fwlink/?LinkID=507494">Software License Terms for the Retail e-commerce dev/test environment</a></li>
 <li><a href="http://go.microsoft.com/fwlink/?LinkID=507496">Software License Terms for the Retail mobility dev/test environment</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">Software License Terms for the high availability environment</a> When reviewing the licensing terms and requirements, you need to pay special attention to any terms that apply specifically to deploying on Azure, as well as terms that apply to your intended use. For example, Microsoft Office has terms that are specific to Azure; but those terms vary depending on whether you deploy Office for development or test purposes, or whether you deploy Office for production purposes.</li>
+<li><a href="http://go.microsoft.com/fwlink/?LinkId=397363">Software License Terms for the high availability environment</a> </li>
 </ul>
-Some resources to help you get started are linked to below. Most of the resources that are linked to below contain links to in-depth information for several products and scenarios; however, you may need to review additional information, as well. This information is provided to help guide your authorized use of products you license; it is not your agreement. Your use of products licensed under your volume license agreement is governed by the terms and conditions of that agreement. In the case of any conflict between information linked here and your agreement, the terms and conditions of your agreement control.
+<p>When reviewing the licensing terms and requirements, you need to pay special attention to any terms that apply specifically to deploying on Azure, as well as terms that apply to your intended use. For example, Microsoft Office has terms that are specific to Azure; but those terms vary depending on whether you deploy Office for development or test purposes, or whether you deploy Office for production purposes.</p>
+<p>Some resources to help you get started are linked to below. Most of the resources that are linked to below contain links to in-depth information for several products and scenarios; however, you may need to review additional information, as well. This information is provided to help guide your authorized use of products you license; it is not your agreement. Your use of products licensed under your volume license agreement is governed by the terms and conditions of that agreement. In the case of any conflict between information linked here and your agreement, the terms and conditions of your agreement control.</p>
 <ul>
 <li><strong>Virtual machines licensing FAQ</strong> Common questions regarding licensing on Azure virtual machines are answered on <a href="http://www.windowsazure.com/pricing/licensing-faq/">this page</a>.</li>
 <li><strong>Microsoft Product Use Rights and Product List</strong> Learn more about Microsoft Volume Licensing product licensing models, programs, scenarios, and terms and conditions to help you make effective business decisions and maximize the value of your IT purchases on <a href="http://go.microsoft.com/fwlink/?LinkId=397363">this page</a>.</li>
@@ -259,12 +265,6 @@ There are two AX 2012 R3 demo environments: one environment includes Cumulative 
 > The virtual machine included in each environment is a single-instance virtual machine. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -275,7 +275,7 @@ There are two AX 2012 R3 demo environments: one environment includes Cumulative 
 <tr class="even">
 <td>1</td>
 <td>Demo machine</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> DEMO-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> DEMO-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -378,12 +378,6 @@ Deploy this environment to demo Retail essentials. Retail essentials is a retail
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -394,7 +388,7 @@ Deploy this environment to demo Retail essentials. Retail essentials is a retail
 <tr class="even">
 <td>1</td>
 <td>Retail essentials demo machine</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> DEMO-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> DEMO-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 components:
@@ -456,12 +450,6 @@ This environment includes several virtual machines, by default. These virtual ma
 > Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -472,7 +460,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <tr class="even">
 <td>1</td>
 <td>Domain controller</td>
-<td><strong>Size:</strong> D1: Basic compute tier (1 core, 3.5 GB memory)<strong>Default name:</strong> AD-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D1: Basic compute tier (1 core, 3.5 GB memory)</br><strong>Default name:</strong> AD-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -484,7 +472,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <tr class="odd">
 <td>1</td>
 <td>AOS server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> AOS-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> AOS-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -532,7 +520,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <tr class="even">
 <td>1</td>
 <td>Database server/BI server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> SQL-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> SQL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 components:
@@ -559,7 +547,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <tr class="odd">
 <td>0</td>
 <td>Enterprise Portal server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> EP-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> EP-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -605,7 +593,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <tr class="even">
 <td>1</td>
 <td>Client computer</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> CLI-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> CLI-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft Visual Studio 2013</li>
@@ -644,7 +632,7 @@ This environment includes several virtual machines, by default. These virtual ma
 <tr class="odd">
 <td>0</td>
 <td>Remote Desktop Services server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> RDS-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> RDS-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -666,12 +654,6 @@ Deploy this environment to develop or test features for Retail essentials. This 
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -682,7 +664,7 @@ Deploy this environment to develop or test features for Retail essentials. This 
 <tr class="even">
 <td>1</td>
 <td>Retail essentials server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> ESSEN-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> ESSEN-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 components:
@@ -732,12 +714,6 @@ Deploy this environment to create and test an online sales channel that is fully
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -748,7 +724,7 @@ Deploy this environment to create and test an online sales channel that is fully
 <tr class="even">
 <td>1</td>
 <td>Retail e-commerce server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> E-COM-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> E-COM-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SharePoint Server 2013</li>
@@ -775,12 +751,6 @@ Deploy this environment to enable your sales staff to process sales transactions
 > The virtual machines in this environment are single-instance virtual machines. Single-instance virtual machines are not covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/).
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -791,7 +761,7 @@ Deploy this environment to enable your sales staff to process sales transactions
 <tr class="even">
 <td>1</td>
 <td>Retail server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> MOBIL-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> MOBIL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>AX 2012 R3 components:
@@ -817,17 +787,11 @@ Deploy this environment to enable your sales staff to process sales transactions
 Deploy this environment to use AX 2012 R3 in an environment that can be configured for high availability. This environment includes several virtual machines. These virtual machines have Windows Server—and the software that you’ll need to use AX 2012 R3—already installed on them. The following table lists details about the default high availability environment. When you deploy the environment, you can add additional virtual machines to the environment, or change the size of the virtual machines. 
 
 > [!NOTE]
-> Azure Premium Storage is required for high availability environments. For more information, see [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md). 
+> Azure Premium Storage is required for high availability environments. For more information, see [Deploy high-availability environments on Azure](deploy-high-availability-environment-azure.md). 
 > The virtual machines in this environment are covered by an Azure [Service Level Agreement](http://azure.microsoft.com/support/legal/sla/). 
 > Data Import/Export Framework (DIXF) components are not installed by default. If you want to use DIXF, you must use your own SQL Server installation media to install SQL Server Integration Services (SSIS) on the SQL Server machine. After you install SSIS, you can use the Dynamics AX CD (available on a connected drive within the VMs) to install the DIXF components on the AOS and then client machines.
 
 <table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><strong>Number of virtual machines deployed by default</strong></td>
@@ -838,7 +802,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="even">
 <td>3<strong>Note: </strong>Three domain controllers are deployed in this environment. If one domain controller fails, you must be left with two, online domain controllers in order to meet Azure’s <a href="http://azure.microsoft.com/support/legal/sla/">Service Level Agreement</a>.</td>
 <td>Domain controller</td>
-<td><strong>Size:</strong> D1: Basic compute tier (1 core, 3.5 GB memory)<strong>Default name:</strong> AD-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D1: Basic compute tier (1 core, 3.5 GB memory)</br><strong>Default name:</strong> AD-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -850,7 +814,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="odd">
 <td>2</td>
 <td>AOS server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> AOS-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> AOS-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -898,7 +862,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="even">
 <td>2</td>
 <td>Database server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> SQL-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> SQL-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 components:
@@ -933,7 +897,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="odd">
 <td>2</td>
 <td>Business intelligence (BI) server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> BI-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> BI-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft SQL Server 2014 components:
@@ -968,7 +932,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="even">
 <td>0</td>
 <td>Enterprise Portal server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> EP-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> EP-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -1014,7 +978,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="odd">
 <td>2</td>
 <td>Client computer</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> CLI-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> CLI-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2</li>
 <li>Microsoft Visual Studio 2013</li>
@@ -1053,7 +1017,7 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 <tr class="even">
 <td>2</td>
 <td>Remote Desktop Services server</td>
-<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)<strong>Default name:</strong> RDS-&lt;GUID&gt;</td>
+<td><strong>Size:</strong> D3: Standard compute tier (4 cores, 14 GB memory)</br><strong>Default name:</strong> RDS-&lt;GUID&gt;</td>
 <td><ul>
 <li>Windows Server 2012 R2, including:
 <ul>
@@ -1069,11 +1033,11 @@ Deploy this environment to use AX 2012 R3 in an environment that can be configur
 
 
 ## Next steps
-- [Deploy an AX 2012 R3 or AX 2012 R3 CU8 demo environment on Azure](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
+- [Deploy AX 2012 R3 or AX 2012 R3 CU8 demo environments on Azure](deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md) 
 - [Deploy a Retail essentials demo environment on Azure](deploy-retail-essentials-demo-environment-azure.md) 
-- [Deploy a development environment on Azure](deploy-development-environment-azure.md) 
-- [Deploy a test environment on Azure](deploy-test-environment-azure.md) 
-- [Deploy a Retail essentials dev/test environment on Azure](deploy-retail-essentials-devtest-environment-azure.md) 
-- [Deploy a Retail e-commerce dev/test environment on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
-- [Deploy a Retail mobility dev/test environment on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
-- [Deploy a high availability environment on Azure](deploy-high-availability-environment-azure.md)
+- [Deploy development environments on Azure](deploy-development-environment-azure.md) 
+- [Deploy test environments on Azure](deploy-test-environment-azure.md) 
+- [Deploy Retail essentials dev/test environments on Azure](deploy-retail-essentials-devtest-environment-azure.md) 
+- [Deploy Retail e-Commerce dev/test environments on Azure](deploy-retail-ecommerce-devtest-environment-azure.md) 
+- [Deploy Retail mobility dev/test environments on Azure](deploy-retail-mobility-devtest-environment-azure.md) 
+- [Deploy high-availability environments on Azure](deploy-high-availability-environment-azure.md)

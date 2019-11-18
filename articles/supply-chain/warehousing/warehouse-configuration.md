@@ -36,7 +36,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 
-**Note:** This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
+> [!NOTE]
+> This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
 
 ## Warehouse layout
 The Warehouse management system in Supply Chain Management gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
@@ -119,7 +120,7 @@ To make it easier and quicker to define the actions that are associated with eac
 Additional resources
 --------
 
-[Configure locations in a WMS-enabled warehouse (Task guide)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

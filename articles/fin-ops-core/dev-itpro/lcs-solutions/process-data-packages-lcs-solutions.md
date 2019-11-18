@@ -44,18 +44,20 @@ Before you create your data package, plan out what it should include. In this wa
 5.  In the **Select fields** field, select a field setting, and then click **Add entity** to add the entity to the project.
 6.  Repeat steps 4 and 5 to add more entities to the project. **Note:** As you add each entity to the project, a tile appears that contains the entity's name and two buttons: **View map** and **Filter**. To automatically create a data package when you export the data project, set the **Generate data package** option to **Yes**. If you don't set this option, you can create a data package at the time of export.
 7.  On the Action Pane, click **Export**.
-8.  Click **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, the customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set within the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project. [![Customers data project containing Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
+8.  Click **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, the customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set within the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project. 
+
+    [![Customers data project containing Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
 
     To automatically create a data package when you export the data project, set the **Generate data package** option to **Yes**. If you don't set this option, you can create a data package at the time of export.
 
 9.  On the Action Pane, select **Export**.
 10.  Select **Download**. The package is saved to the **Downloads** folder of the computer where the browser session is running. When you work with data packages, you must plan for and consider any prerequisites for the entities that will be included in the packages. For example, customer groups are required in order to create customers. Therefore, you should either import the customer groups into a package before you import customers, or sequence customer groups within a data package that will be completed before customers are imported. For example, in the following illustration, sequencing is set in the data package. As you can see, the Customer groups entity and Customers entity are part of the Customers data project.
 
-    [![Customers data project that contains Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
+   [![Customers data project that contains Customer groups and Customers entities](./media/pdp_03.png)](./media/pdp_03.png)
 
 11.  On the Action Pane, select **Entity sequence** to open the **Definition group entity sequence** page. Based on the current setup, the Customer groups entity and Customers entity are run at the same level. However, this sequence might not be ideal.
 
-    [![Customer groups and Customers entities at the same execution level](./media/pdp_04.png)](./media/pdp_04.png)
+   [![Customer groups and Customers entities at the same execution level](./media/pdp_04.png)](./media/pdp_04.png)
 
 12. To create a better sequence, select the **Customers** entity, and then update the value of the **Execution unit** field from **1** to **2**. This change helps guarantee that customer groups are imported before the Customers entity is run. 
 
@@ -164,4 +166,4 @@ Follow these steps to consume the PDP.
 
 ### Additional resources
 
-[Publishing an App AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)

@@ -54,7 +54,7 @@ Admins, recruiters, and hiring managers can create process templates. A process 
 > [!NOTE]
 > Stage names are visible to candidates on the **Application status** page. You should consider this fact when you choose names for stages.
 
-To learn more about activities, see [Hiring process activities in Attract](./activities-attract.md).
+To learn more about activities, see [Activities in hiring processes](./activities-attract.md).
 
 Follow these steps to create a hiring process template.
 

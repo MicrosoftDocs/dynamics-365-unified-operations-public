@@ -67,7 +67,7 @@ Before a table constraint can take effect on a product configuration model, the 
 Additional resources
 --------
 
-[Key concepts in product configuration models](product-configuration-models.md)
+[Product configuration models overview](product-configuration-models.md)
 
 
 

@@ -52,7 +52,7 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 -	You can leverage the browser-based client and design patterns for forms to provide an improved end-user experience.
 -	The Application Lifecycle Management (ALM) system supports build automation, test automation, and deployment of models to the cloud.
 
-For more information, see [Developer home page](dev-tools/developer-home-page.md).
+For more information, see [Develop and customize home page](dev-tools/developer-home-page.md).
 
 ## Administrator experience and Lifecycle Services
 Finance, Supply Chain Management, and Retail are cloud-hosted. As an IT professional, you can use Dynamics Lifecycle Services (LCS) to monitor and tune your environments, deploy features, and stay up to date with recent hotfixes. Within your deployment, you can configure security, and manage when processes run. You can also use LCS when you are called on to support business intelligence and reporting, mobile apps, Office, and other integrations. 
@@ -73,7 +73,7 @@ The Finance and Operations mobile app empowers your organization to mobilize its
 + IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework. Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don’t have constant network connectivity. 
 
 ## Data management and data entities
-Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities](data-entities/data-entities.md).
+Data from Finance and Operations can easily be integrated with Microsoft and non-Microsoft data sources using the common data service, Power Apps, and Power BI. For more information, see [Data entities overview](data-entities/data-entities.md).
 
 ## Office integration
-The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration](office-integration/office-integration.md).
+The Microsoft Office integration capabilities provide users with a productive environment that helps them get the job done by using Office products. For more information, see [Office integration overview](office-integration/office-integration.md).

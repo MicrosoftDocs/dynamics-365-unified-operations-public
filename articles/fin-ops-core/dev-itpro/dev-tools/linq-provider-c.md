@@ -171,9 +171,9 @@ LINQ queries can be applied for CRUD operations. But the model for updating, del
 Additional resources
 --------
 
-[Programming language support](programming-language-support.md)
+[Changes in X++ and the X++ compiler](programming-language-support.md)
 
-[Technical Concepts Guide](developer-home-page.md)
+[Develop and customize home page](developer-home-page.md)
 
 
 
