@@ -228,10 +228,12 @@ Sales orders are placed in the hold list based on the blocking rules. However, s
 You can use the **Evaluate for release** menu to review the sales orders in the hold list and automatically release them if the reason for the hold has been mitigated.
 1.	Select the **Evaluate for release** menu
 2.	Select **Process blocking rules** to review all of the sales orders
-3.	If a blocking reason no longer is applicable, the reason will be marked as mitigated and you will no longer see a check mark next to the reason when you view the blocking reasons
-4.	If all of the blocking reasons are cleared, then a new reasons, **Ready to release**, is added to the list of blocking reasons. The sales order can be automatically released.
-5.	If the **Automatically release** parameter in **Credit and collections > Setup > Credit and collections parameters > Credit > Auto release** tab is set to **With posting**, then you will be prompted to post using the posting form for the document that was blocked.
-6.	If the **Automatically release** parameter in **Credit and collections > Setup > Credit and collections parameters > Credit > Auto release** tab is set to **Without posting**, then you must post the order manually.
+3. A slider will appear so that you can select a single customer or leave the customer drop down blank for all customers. 
+4. When you click ok, the process is run in the background and you can continue working on other tasks. If you select batch processing before you click on Ok, the process will run in batch when you click Ok. It may take some time to process the orders on hold in the list so use Refresh to update the status of the orders. 
+5.	If a blocking reason no longer is applicable for an order, the blocking reason will be considered no longer valid and you will no longer see a check mark next to the reason when you view the blocking reasons.
+6.	If all of the blocking reasons are cleared, then a new reason, **Ready to release**, is added to the list of blocking reasons. The sales order can be automatically released.
+7.	If the **Automatically release** parameter in **Credit and collections > Setup > Credit and collections parameters > Credit > Auto release** tab is set to **With posting**, then you will be prompted to post using the posting form for the document that was blocked.
+8.	If the **Automatically release** parameter in **Credit and collections > Setup > Credit and collections parameters > Credit > Auto release** tab is set to **Without posting**, then you must post the order manually.
 
 ### Credit management approval workflow
 
