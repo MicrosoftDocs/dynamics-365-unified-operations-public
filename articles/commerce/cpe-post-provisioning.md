@@ -148,7 +148,7 @@ If you are having issues accessing the Yammer group, you can also reach us via e
 
 ## Additional resources
 
-[Commerce preview environment overview] (cpe-overview.md)
+[Commerce preview environment overview](cpe-overview.md)
 [Provision a Commerce preview environment](provisioning-guide.md)
 [Configure Commerce preview environment optional features](cpe-optional-features.md)
 [Commerce preview environment FAQ](cpe-faq.md)
