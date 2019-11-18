@@ -283,7 +283,7 @@ The system communicates with Exchange or an SMTP server like a typical email cli
 
 ## Additional resources
 
-[Office integration troubleshooting](../../dev-itpro/office-integration/office-integration-troubleshooting.md)
+[Troubleshoot the Office integration](../../dev-itpro/office-integration/office-integration-troubleshooting.md)
 
 [Office integration tutorial](../../dev-itpro/office-integration/office-integration-tutorial.md)
 
