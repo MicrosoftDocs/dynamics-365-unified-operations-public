@@ -210,6 +210,9 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | CreateNonSalesTransactionServiceRequest |
 | ReturnTransactionOperationRequest |
 | AddLoyaltyCardToCartOperationRequest |
+| ReturnCartLineOperationRequest |
+| ReturnItemOperationRequest |
+
 
 ### Payments
 
