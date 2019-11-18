@@ -63,6 +63,8 @@ The ambient video player module supports short informational videos. It should b
 
 The video player module can be used to showcase videos on an e-Commerce site. It supports all playback capabilities, such as play, pause, full-size mode, and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
 
+It also supports secondary audio tracks. When a video is uploaded in the Site builder, a secondary track can be provided. The Video player can play this secondary track if the user chooses to.
+
 ### Examples of video player modules in e-Commerce
 
 - Instructional videos on product details pages or marketing pages
