@@ -106,6 +106,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Add customer preference data to channel databases](add-customer-preference-channel.md)
 -   [Add properties to sales orders](add-properties-sales-order.md)
 -   [Manage secrets for retail channels](manage-secrets.md)
+-   [Log extension events to Application Insights](commerce-application-insights.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)

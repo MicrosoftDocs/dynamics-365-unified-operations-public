@@ -1333,6 +1333,8 @@
           href: dev-itpro/trigger-example-blocking-transaction.md
         - name: Implement a return policy using triggers
           href: dev-itpro/trigger-example-return-policy.md
+        - name: Log extension events to Application Insights
+          href: dev-itpro/commerce-application-insights.md
       - name: e-Commerce extensibility
         items:
         - name: Configure online stores
