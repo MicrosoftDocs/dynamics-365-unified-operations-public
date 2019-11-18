@@ -165,7 +165,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 3. On the **Charges allocation** page, select **Edit**.
 
-[![Edit the Charges allocation page](./media/9-charges-allocation-jpg)](./media/9-charges-allocation.jpg)
+[![Edit the Charges allocation page](./media/9-charges-allocation.jpg)](./media/9-charges-allocation.jpg)
 
 4. In the **Charges allocation** field, select one of the following methods for allocating miscellaneous charges:
 
@@ -293,7 +293,7 @@ Because of posting, one of the following events occur, depending on whether the 
 10. On the **Invoice journal** page, select **Charges** > **Allocation**.
 11. On the **Charges allocation** page, in the **Posting date** field, specify **10/18/2019**.
 
-[![Charges allocation page](./media/15-charges-allocation-png)](./media/15-charges-allocation.png)
+[![Charges allocation page](./media/15-charges-allocation.png)](./media/15-charges-allocation.png)
 
 12. In the **Allocation mode** field, select **Redraw debt**.
 13. In the **Allocation base** section, manually create the following line.
@@ -307,17 +307,19 @@ Because of posting, one of the following events occur, depending on whether the 
 16. Select **Post**.
 17. In the **Posting** dialog box, follow these steps:
 
-  a. Set the **Credit correction** option to **No**.
-  b. Set the **Create invoice for payment** option to **Yes**.
-  c. Select **OK**.
+	  a. Set the **Credit correction** option to **No**.
+	  
+	  b. Set the **Create invoice for payment** option to **Yes**.
+	  
+	  c. Select **OK**.
   
-  After the allocation is posted, you receive a message that contains information about the sales order that was created for the customer. You can then open the sales order to view the invoice transactions that were generated and the following voucher.
-  
-  | Date       | Ledger account | Corr. Account | Currency | Amount in transaction currency | Amount   |
-|------------|----------------|---------------|----------|--------------------------------|----------|
-| 10/18/2019 | 62.11          | 76.511        | RUB      | 1,000.00                       | 1,000.00 |  
+	  After the allocation is posted, you receive a message that contains information about the sales order that was created for the customer. You can then open the sales order to view the invoice transactions that were generated and the following voucher.
 
-  Because of posting, the corrective invoice for the amount of redrawn debt was created. This invoice isn't included in the sales book.
+	  | Date       | Ledger account | Corr. Account | Currency | Amount in transaction currency | Amount   |
+	|------------|----------------|---------------|----------|--------------------------------|----------|
+	| 10/18/2019 | 62.11          | 76.511        | RUB      | 1,000.00                       | 1,000.00 |  
+
+	  Because of posting, the corrective invoice for the amount of redrawn debt was created. This invoice isn't included in the sales book.
   
 18. To view the information about the allocation of debt, on the Invoice journal page, select Charges > Misc. charges allocation history. Then, in the Allocation mode field, select Redraw debt.
 
