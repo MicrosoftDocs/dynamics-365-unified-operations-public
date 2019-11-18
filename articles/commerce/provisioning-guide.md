@@ -78,7 +78,7 @@ These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce p
 > [!NOTE]
 > **The person logging in needs to be an AAD tenant administrator in possession of the AAD tenant ID**. Without successfully completing this step, the rest of the provisioning steps will fail.
 
-**To authorize e-Commerce applications to access your Azure subscription, follow these steps.**
+To authorize e-Commerce applications to access your Azure subscription, follow these steps.
 
 1. To authorize e-Commerce applications to access your Azure subscription, first assemble a URL in the following format:
 
@@ -107,10 +107,12 @@ To confirm that preview features are available and enabled in LCS, follow these 
 
 ### Create a new project
 
-1. Click **+** to create a new project.
-1. If you are a partner, choose **Migrate, create solutions, and learn**.
-1. If you are a customer, choose **Prospective presales**.
-1. Enter a name, description and industry as you see fit.
+To create a new project in LCS, follow these steps.
+
+1. On the LCS front page, click **+** to create a new project.
+1. If you are a partner, select **Migrate, create solutions, and learn** from the pane on the right.
+1. If you are a customer, select **Prospective presales** from the pane on the right.
+1. Enter a name, description, and industry.
 1. For **Product name**, select **Dynamics 365 Retail**.
 1. For **Product version**, select **Dynamics 365 Retail**.
 1. For **Methodology**, select **Dynamics Retail implementation methodology**.
@@ -120,6 +122,8 @@ To confirm that preview features are available and enabled in LCS, follow these 
 
 ### Add Azure Connector
 
+To add the Azure Connector to your LCS project, follow these steps.
+
 1. If you are a partner, click **Project settings** from the tools tiles to the far right.
 1. If you are a customer, choose **Project settings** from the top menu.
 1. Select **Azure connectors**.
@@ -127,14 +131,13 @@ To confirm that preview features are available and enabled in LCS, follow these 
 1. Enter a name.
 1. Enter your **Azure Subscription ID**.
 1. Enable **Configure to use Azure Resource Manager (ARM)**.
-1. Verify that **Azure subscription AAD Tenant Domain (or ID)** is correct. Consult your Azure subscription admin, if necessary.
+1. Verify that **Azure subscription AAD Tenant Domain (or ID)** is correct. Consult your Azure subscription administrator, if necessary.
 1. Click **Next**.
-1. Follow the instructions on the screen to grant the required application(s) access to your subscription. Consult your Azure subscription admin, if necessary:
-	1. Log in to the Azure portal: https://portal.azure.com/
-	1. Make sure that you have the correct directory selected.
-	1. Click **Subscriptions** from the menu on the left.
+1. Follow the instructions on the screen to grant the required application(s) access to your subscription. Consult your Azure subscription administrator, if necessary:
+	1. Sign in to the [Azure portal](https://portal.azure.com/).
+	1. After confirming that you have the correct directory selected, click **Subscriptions** from the menu on the left.
 	1. Locate the correct subscription from the list and select it. Use search if required.
-	1. Choose **Access control (IAM)** from the menu.
+	1. Select **Access control (IAM)** from the menu.
 	1. Click **Add** under **Add a role assignment** on the right side. The **Add role assignment** pane opens.
 	1. For **Role**, select **Contributor**.
 	1. For **Assign access to**, leave as **Azure AD user, group, or service principal**.
@@ -142,17 +145,18 @@ To confirm that preview features are available and enabled in LCS, follow these 
 	1. Select **Dynamics Deployment Services [wsfed-enabled]** from the list.
 	1. Click **Save**.
 1. Click **Next**.
-1. Follow the instructions on the screen to grant required application(s) access to your subscription. Consult your Azure subscription admin, if necessary.
+1. Follow the instructions on the screen to grant the required application(s) access to your subscription. Consult your Azure subscription administrator, if necessary.
 1. Click **Next**.
 1. For **Azure region**, choose either **East US**, **East US 2**, **West US** or **West US 2**.
-1. Click **Connect**.
-1. Your Azure Connector should appear in the list.
+1. Click **Connect**. Your Azure Connector should appear in the list.
 
 ### Import Commerce Preview Demo Base Extension
 
-1. Navigate back to your project front page by clicking the project name on the top.
-1. If you are a partner, click **Asset library** from the tools tiles to the far right.
-1. If you are a customer, choose **Asset library** from the top menu.
+To import the **Commerce Preview Demo Base Extension** to your project, follow these steps.
+
+1. Navigate to your project front page by clicking the project name on the top.
+1. If you are a partner, click **Asset library** from the tools tiles on the far right.
+1. If you are a customer, select **Asset library** from the top menu.
 1. Select **Software deployable package** from the list on the left.
 1. Click **IMPORT** from the action pane.
 1. Select **Commerce Preview Demo Base Extension** from the list of assets under **SHARED ASSET LIBRARY**.
@@ -162,6 +166,8 @@ To confirm that preview features are available and enabled in LCS, follow these 
 ![Project creation - versions](./media/import.png)
 
 ### Deploy environment
+
+To deploy the environment, follow these steps.
 
 > [!NOTE]
 > It is possible that steps 6, 7, and/or 8 will not be shown, as the screens with single option are skipped. When you are in the **Environment parameters** view, please confirm that you have the text "Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)" directly above the **Environment name** field. See the screenshot below.*
@@ -194,6 +200,8 @@ To confirm that preview features are available and enabled in LCS, follow these 
 
 ### Initialize RCSU
 
+To initialize RCSU, follow these steps.
+
 1. While in the **Cloud-hosted environments** view, select your environment from the list.
 1. From the environment view on the right side of the screen, click **Full details**. The environment details view will display.
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
@@ -208,6 +216,8 @@ To confirm that preview features are available and enabled in LCS, follow these 
 1. Wait until your RCSU status is **SUCCESS** before proceeding (will take approximately 2 - 5 hours).
 
 ### Initialize e-Commerce
+
+To initialize e-Commerce, follow m these steps.
 
 1. Switch to the **e-Commerce (Preview)** tab.
 1. After reviewing the Preview consent, click **Setup**.
