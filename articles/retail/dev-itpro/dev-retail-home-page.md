@@ -102,11 +102,12 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Retail Store Scale Unit configuration and installation](retail-store-scale-unit-configuration-installation.md)
 
 ## Commerce Runtime
--   [Commerce Runtime overview](commerce-runtime-overview.md)
--   [Commerce Runtime Extensibility - Trigger](commerce-runtime-extensibility-trigger.md)
--   [Add customer preference data to a channel database](add-customer-preference-channel.md)
--   [Add properties to a sales order](add-properties-sales-order.md)
--   [Manage secrets for retail channels](manage-secrets.md)
+- [Commerce Runtime overview](commerce-runtime-overview.md)
+- [Commerce Runtime Extensibility - Trigger](commerce-runtime-extensibility-trigger.md)
+- [Add customer preference data to a channel database](add-customer-preference-channel.md)
+- [Add properties to a sales order](add-properties-sales-order.md)
+- [Manage secrets for retail channels](manage-secrets.md)
+- [Log extension events to Application Insights](commerce-application-insights.md)
 
 ## Retail SDK
 - [Retail SDK Overview](retail-sdk/retail-sdk-overview.md)
