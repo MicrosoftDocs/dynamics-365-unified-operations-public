@@ -5,7 +5,7 @@ title: Commerce preview environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 11/22/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -67,4 +67,12 @@ This topic provides answers to frequently asked questions about the Microsoft Dy
  
 ###  What is the reasoning that D365 Commerce is only available for 30 days? Can we make multiple request for a preview? 
  If 30 days is not enough for evaluation, you should reach out to us. What would be the reason for multiple requests for a preview? We grant quota of single preview environment per accepted request. Should you need more than that, please reach out to us.
+ 
+ ## Additional resources
+
+[Commerce preview environment overview] (cpe-overview.md)
+[Provision a Commerce preview environment](provisioning-guide.md)
+[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure Commerce preview environment optional features](cpe-optional-features.md)
+
 
