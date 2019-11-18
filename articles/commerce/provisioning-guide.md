@@ -165,12 +165,12 @@ To import the **Commerce Preview Demo Base Extension** to your project, follow t
 
 ![Project creation - versions](./media/import.png)
 
-### Deploy environment
+### Deploy the environment
 
 To deploy the environment, follow these steps.
 
 > [!NOTE]
-> It is possible that steps 6, 7, and/or 8 will not be shown, as the screens with single option are skipped. When you are in the **Environment parameters** view, please confirm that you have the text "Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)" directly above the **Environment name** field. See the screenshot below.*
+> It is possible that steps 6, 7, and/or 8 below will not be shown, as the screens with a single option are skipped. When you are in the **Environment parameters** view, please confirm that you have the text "Dynamics 365 Commerce (Preview) - Demo (10.0.6 with Platform update 30)" directly above the **Environment name** field. See the screenshot below.*
 
 1. From the top menu, select **Cloud-hosted environments**.
 1. Click **+ Add** to add an environment.
@@ -207,7 +207,11 @@ To initialize RCSU, follow these steps.
 1. Under **ENVIRONMENT FEATURES**, click **Manage**.
 1. From **Retail** tab, click **Initialize**. The RCSU initialization parameters view will display.
 1. For **REGION**, select **East US**, **East US 2**, **West US** or **West US 2**.
-1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below. *Note: Please make sure to **specify the exact version** listed here to avoid having to update RCSU later to correct version.*
+1. For **VERSION**, first select **Specify a version** from the drop down list, then specify **9.16.19262.5** in the text field that appears below. 
+
+> [!NOTE]
+> Please make sure to **specify the exact version** listed here to avoid having to update RCSU later to the correct version.
+
 1. Enable **Apply extension**.
 1. From the list of extensions, choose **Commerce Preview Demo Base Extension**.
 1. Click **Initialize**.
@@ -217,29 +221,29 @@ To initialize RCSU, follow these steps.
 
 ### Initialize e-Commerce
 
-To initialize e-Commerce, follow m these steps.
+To initialize e-Commerce, follow these steps.
 
 1. Switch to the **e-Commerce (Preview)** tab.
-1. After reviewing the Preview consent, click **Setup**.
+1. After reviewing the preview consent, click **Setup**.
 1. Enter a name for **e-Commerce tenant name**. However, note that this will be visible in some of the URLs pointing to your e-Commerce instance.
 1. For **Retail cloud scale unit name**, select your RCSU from the list (list should only have one option).
 1. **e-Commerce geography** is automatically populated and cannot be changed.
 1. Click **Next** to continue.
 1. For **Supported host names**, enter any valid domain (e.g. www.fabrikam.com).
-1. For **AAD security group for system admin**, enter the AAD SG ID that you wish to use as e-Commerce system admin group.
-1. For **AAD security group for ratings and review moderator**, enter the AAD SG ID that you wish to use as Ratings and Reviews moderator group.
-1. Leave the **B2C** values empty (7 fields that start with B2C).
+1. For **AAD security group for system admin**, enter the AAD security group ID that you wish to use as e-Commerce system administrator group.
+1. For **AAD security group for ratings and review moderator**, enter the AAD security group ID that you wish to use for the Ratings and Reviews moderator group.
+1. Leave the **B2C** values empty for the 7 fields that start with "B2C".
 1. Leave **Enable ratings and review service** enabled.
 1. Click **Initialize**.
 1. You are returned to the **Retail management** view with the **e-Commerce (Preview)** tab activated. Your e-Commerce initialization has started.
 1. Before proceeding, wait until your e-Commerce initialization status is **INITIALIZATION SUCCESSFUL**.
 1. Under **LINKS** on the bottom right.
-	* Make note of the link **e-Commerce site**. This is the link to the root of your C2 site.
-	* Make note of the link **e-Commerce site management tool**. This is the link to the site management tool (C1 authoring tool).
+	* Make note of the link **e-Commerce site**. This is the link to the root of your e-commerce site.
+	* Make note of the link **e-Commerce site management tool**. This is the link to the site management tool.
 	
 ## Next steps
 
-To continue the process and start configuring your Commerce preview environment, see [Configure a Commerce preview environment](cpe-post-provisioning.md).
+To continue the process and start configuring your Commerce preview environment, proceed to [Configure a Commerce preview environment](cpe-post-provisioning.md).
 
 ## Additional resources
 
