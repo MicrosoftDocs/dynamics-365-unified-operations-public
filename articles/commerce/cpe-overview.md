@@ -52,11 +52,12 @@ Although the Commerce preview environment provides the full features and functio
 
 ## Get started
 
-To get started using the Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
+To get started provisioning the Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
 
 ## Additional resources
 
 [Provision a Commerce preview environment](provisioning-guide.md)
-
-[Commerce preview environment FAQ](TBD)
+[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure Commerce preview environment optional features](cpe-optional-features.md)
+[Commerce preview environment FAQ](cpe-faq.md)
 
