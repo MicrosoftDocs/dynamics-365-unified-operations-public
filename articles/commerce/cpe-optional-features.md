@@ -146,6 +146,9 @@ These tokens will be replaced at email rendering time with the actual values tha
 ## Additional resources
 
 [Commerce preview environment overview](cpe-overview.md)
+
 [Provision a Commerce preview environment](provisioning-guide.md)
+
 [Configure a Commerce preview environment](cpe-post-provisioning.md)
+
 [Commerce preview environment FAQ](cpe-faq.md)
