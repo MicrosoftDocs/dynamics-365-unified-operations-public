@@ -267,4 +267,4 @@ If you are having issues accessing the Yammer group, you can also reach us via e
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Dynamics 365 Retail](../retail/index.md)
+[Help resources for Dynamics 365 Retail](../retail/index.md)
