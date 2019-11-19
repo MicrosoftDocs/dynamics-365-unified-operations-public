@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Improvement of bank accounts setup
+title: Bank data usability enhancement
 description: This topic explains how you can help save time and simplify bank data registration for customers and vendors.
 author: ilkond
 manager: AnnBe
