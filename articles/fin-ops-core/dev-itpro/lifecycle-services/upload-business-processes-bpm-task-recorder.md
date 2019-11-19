@@ -55,11 +55,11 @@ You can upload business process artifacts (\*.axbpm files) to the business proce
 Additional resources
 --------
 
-[Business process modeler (Lifecycle Services, LCS)](./ax-2012/business-process-modeler-lcs.md)
+[Business process modeler (BPM) in Lifecycle Services (LCS)](./ax-2012/business-process-modeler-lcs.md)
 
-[Business process libraries in Business process modeler](business-process-libraries-business-process-modeler.md)
+[Business process libraries in Business process modeler (BPM)](business-process-libraries-business-process-modeler.md)
 
-[Flowcharts in Business process modeler](flowcharts-business-process-modeler.md)
+[Flowcharts in Business process modeler (BPM)](flowcharts-business-process-modeler.md)
 
 
 

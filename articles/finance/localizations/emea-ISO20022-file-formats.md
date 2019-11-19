@@ -54,7 +54,7 @@ You must complete the following prerequisites to import bank notification messag
 
 	- In the **Customer payments, account lengths** field, enter the length of the customer code that is used in ISR references or for automatic identification of the customer.
 	- Make sure that the customer number and invoice number (number sequences) contain only digits. They must contain no other characters. The invoice number must not have leading zeros.
-	- Enter the ESR, BESR, and routing number for the legal entity bank account. For more information, see [legacy ESR feature](emea-che-esr-customer-payments-import.md), because similar settings are required.
+	- Enter the ESR, BESR, and routing number for the legal entity bank account. For more information, see [ESR customer payments import](emea-che-esr-customer-payments-import.md), because similar settings are required.
 	
 ## Import the camt.054 credit advice file into the Customer payment journal
 1. On the **Customer payment journal lines** page, click **Functions** > **Import payments**.
@@ -134,5 +134,5 @@ For more information about Electronic reporting, refer to [Electronic reporting 
 - [Set up company bank accounts for ISO20022 direct debits](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
 - [Set up customers and customer bank accounts for ISO20022 direct debits](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
 - [Set up method of payment for ISO20022 credit transfer](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
-- [Set up method of payment for ISO20022 direct debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Setup method of payment for ISO20022 direct debit](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Set up vendors and vendor bank accounts for ISO20022 credit transfers](./tasks/set-up-vendor-iso20022-credit-transfers.md)

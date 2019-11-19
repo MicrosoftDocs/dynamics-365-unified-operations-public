@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 8.0
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
-To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release notes](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview). The Release Notes provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
+To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
 
 ### Introducing Dynamics 365 for Finance and Operations
 
@@ -95,13 +95,13 @@ Migrating customizations from one release to the next has been simplified by mov
 
 Customers can submit a request to Microsoft for extension support to be added to the product for a needed scenario. In this release, this feature is moved to Lifecycle Services (LCS).
 
-### Embedding PowerApps in workspaces and forms
+### Embedding Microsoft Power Apps in workspaces and forms
 
-Use PowerApps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
+Use Microsoft Power Apps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
 
 ### Custom fields
 
-Organizations can add custom fields to tailor their application to their business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Custom fields](user-defined-fields.md).
+Organizations can add custom fields to tailor their application to their business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Create and work with custom fields](user-defined-fields.md).
 
 ## Integration 
 

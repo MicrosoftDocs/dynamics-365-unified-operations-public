@@ -836,6 +836,8 @@
         href: optimal-combination-overlapping-discounts.md
       - name: Define channel-specific discounts
         href: define-channel-specific-discounts.md
+      - name: Tender-based discounts
+        href: tender_based_discounts.md
       - name: Options for preventing discounts for retail products
         href: prevent-discounts.md
       - name: Shipping discount overview
@@ -847,7 +849,9 @@
     - name: Loyalty
       items:
       - name: Loyalty overview
-        href: set-up-customer-loyalty-program.md      
+        href: set-up-customer-loyalty-program.md
+      - name: Clienteling overview
+        href: clienteling-overview.md
     - name: Payments
       items:
       - name: Payment methods
@@ -1267,8 +1271,6 @@
           href: Open-URL-in-POS.md
         - name: Install the POS Layout designer
           href: install-pos-layout-designer.md
-        - name: Retail Modern POS in offline mode
-          href: dev-itpro/retail-modern-pos-offline.md
         - name: Extend the POS Dual display view
           href: dev-itpro/pos-dual-display-extension.md
         - name: Retail Modern POS and Cloud POS trigger extensibility
@@ -1331,6 +1333,8 @@
           href: dev-itpro/trigger-example-blocking-transaction.md
         - name: Implement a return policy using triggers
           href: dev-itpro/trigger-example-return-policy.md
+        - name: Log extension events to Application Insights
+          href: dev-itpro/commerce-application-insights.md
       - name: e-Commerce extensibility
         items:
         - name: Configure online stores

@@ -50,10 +50,10 @@ To learn more about this feature, play the **ER Generate reports and compare res
 
 This procedure explains how to configure the ER framework to collect information about ER format executions and then evaluate the results of those executions. As part of that evaluation, generated documents are compared with their baseline files. In this example, you will create the required ER configurations for the Litware, Inc. sample company. This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them. These steps can be completed by using any data set.
 
-To complete the steps in this example, you must first complete the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+To complete the steps in this example, you must first complete the steps in [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, verify that the configuration provider for the Litware, Inc. sample company is listed, and that it's marked as **Active**. If you don't see this configuration provider, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. On the **Localization configurations** page, in the **Configuration providers** section, verify that the configuration provider for the Litware, Inc. sample company is listed, and that it's marked as **Active**. If you don't see this configuration provider, follow the steps in [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ### Configure document management parameters
 
@@ -249,4 +249,4 @@ The baseline is added for the **Format to learn ER baselines** format.
 
 ## Additional resources
 
-- [Configure ER framework](electronic-reporting-er-configure-parameters.md)
+- [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)

@@ -39,13 +39,12 @@ You can use the Configuration manager to copy from and to Dynamics AX 2012 R3 en
 -   Running System diagnostics
 -   Running the Data Import/Export Framework
 
-| **Important**                                                                                                                                                                                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments. |
+> [!IMPORTANT]
+> This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments.
 
 For more information, see:
--   [Set up Configuration manager (Lifecycle Services, LCS)](set-up-configuration-manager-lcs.md)
--   [Copy a configuration (Lifecycle Services, LCS)](copy-configuration-lcs.md)
+-   [Set up Configuration manager](set-up-configuration-manager-lcs.md)
+-   [Copy configurations by using Configuration manager](copy-configuration-lcs.md)
 
 
 

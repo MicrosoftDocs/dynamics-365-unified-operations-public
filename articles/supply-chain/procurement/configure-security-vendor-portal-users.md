@@ -51,7 +51,7 @@ If the same person requires access to the Vendor portal for multiple vendor acco
 Additional resources
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)
 
 
 

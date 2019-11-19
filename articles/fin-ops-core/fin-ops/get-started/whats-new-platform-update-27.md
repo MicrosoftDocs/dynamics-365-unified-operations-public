@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 27 (June 2019). 
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -43,13 +43,16 @@ For more information about Feature management, see [Feature management overview]
 ## Dedicated capacity to process business events 
 It will be no longer required to schedule the business event processing batch job to process business events. Dedicated threads are allocated to process business events by the system, which ensures faster processing of business events. The existing batch job is still available (but is not needed to run unless there are issues with dedicated capacity). If the batch job was already scheduled prior to this platform update, the batch will become ineffective and dedicated threads will take over after the update.
 
-For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
+For more information, see [Business events overview](../../dev-itpro/business-events/home-page.md).
 
 ## Cancel a running batch job
 It can take a long time to cancel a batch job if the job has tasks that are currently executing. The abort option provides a system administrator or batch job manager with the ability to cancel already executing tasks for jobs if the jobs are canceled. This provides a much faster mechanism to cancel a long running job that might impact system usage in other places. For more information, see [Abort an executing batch job](../../dev-itpro/sysadmin/batch-abort.md)
 
 ## Extensibility enhancements
 The [fourth wave of platform extensibility enhancements](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/platform-extensibility4) included in Platform update 27 is documented in the April 2019 release notes. There are two enhancements detailed, with the highlight being that View extensions can now change label and help text values.
+
+## Export data from all companies to BYOD can be enabled via parameters
+The functionality to enable export from all companies to BYOD can now be enabled in framework parameters in data management. Until now, this required a flight to be enabled which is no longer needed.
 
 ## Additional resources
 
@@ -62,11 +65,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.

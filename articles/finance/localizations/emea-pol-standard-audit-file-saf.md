@@ -96,11 +96,11 @@ Before you can generate a SAF value-added tax (VAT) sales and purchase register,
 -   Set up sales tax codes.
 -   Configure the ER model, and format for the report.
 
-For more information about the setup of VAT statements, see [(EU) VAT reporting](emea-vat-reporting.md).
+For more information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ### Set up sales tax authorities
 
-For general information about how to set up a sales tax authority, see [Set up sales tax authorities (Task guide)](../general-ledger/tasks/set-up-sales-tax-authorities.md). To generate a SAF VAT sales and purchase register in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
+For general information about how to set up a sales tax authority, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md). To generate a SAF VAT sales and purchase register in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page (**Tax > Indirect taxes > Sales tax > Sales tax authorities**), set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.
 
 ### Set up sales tax codes and sales tax reporting codes
 

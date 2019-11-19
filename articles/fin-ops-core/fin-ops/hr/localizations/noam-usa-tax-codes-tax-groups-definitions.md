@@ -44,7 +44,7 @@ Yes, you can update all the tax codes in a tax group at the same time. The finan
 
 ## Can I mass-create tax groups?
 
-Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md).
+Yes. When you set up Payroll, you automatically create a set of system-defined tax groups the first time that you click the **Update tax data** link on the **Payroll** area page. Each system-defined tax group contains tax codes of a particular type. For example, all tax codes for school districts are included in the SCHL tax group, and all tax codes for state income tax are included in the SIT tax group. These tax groups are updated every time that you run the **Update tax data** process. You can manually create additional tax groups. For more information, see [Set up taxes, tax regions, tax codes, and tax groups](noam-usa-tax-information-tasks.md).
 
 ## Why are some tax codes not posted according to the posting definition that is associated with their tax group?
 

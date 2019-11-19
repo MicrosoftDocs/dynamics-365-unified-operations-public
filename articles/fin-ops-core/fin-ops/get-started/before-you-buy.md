@@ -47,8 +47,8 @@ The following considerations must be taken when you choose on-premises as a depl
 
 - Regulatory and compliance needs that are not available in the cloud certifications
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management
-- [Features currently not implemented in on-premises deployments](features-not-implemented-on-prem.md)
-- [Minimum infrastructure requirements](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md)
+- [System requirements for on-premises deployments](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
@@ -84,7 +84,7 @@ A Microsoft Cloud Solution Provider can work closely with you to understand the 
 
 ### Buy through a Dynamics partner (on-premises)
 
-You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Purchase Dynamics 365 for Finance and Operations (on-premises)](purchase-on-premises.md)
+You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md)
 
 ### Choose your support option
 
@@ -97,7 +97,7 @@ More information:
 
 ## Step four: Learn about FastTrack and plan your deployment
 
-Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. More information: [Microsoft FastTrack for Dynamics 365 overview](fasttrack-dynamics-365-overview.md)
+Microsoft FastTrack for Dynamics 365 is our customer success service designed to help you move to Dynamics 365 smoothly and confidently, so you can realize business value faster. When you participate in the FastTrack program, you will receive guidance on best practices and how to plan for successful rollouts. You will also learn ways to enable new users and expand capabilities – all at your own pace. Additionally, you will have access to Microsoft engineering resources committed to make your experience with Dynamics 365 a success. More information: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## If you are upgrading from Dynamics AX 2012 or migrating from AX 2009
 

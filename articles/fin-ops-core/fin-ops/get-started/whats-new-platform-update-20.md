@@ -78,7 +78,7 @@ The Finance and Operations web client has started its journey of aligning to Mic
 
     The following image shows how the Action pane appears in Platform update 20 and later:
 
-    ![Newd details page](media/postPU20-customers-actionpane.png  "New details page")
+    ![New details page](media/postPU20-customers-actionpane.png  "New details page")
 
 -  **Filter pane** - The Filter pane has been completely restyled with a lighter background color, a pill-like appearance to filter fields, and repositioning of the "Add a filter field" button to the top of the pane.
 
@@ -126,7 +126,7 @@ Currently when users click on some hyperlinks, it results in an attempted naviga
 
 ## Chain of Command on nested types
 
-In this release, we've enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Nested class methods in forms can be wrapped in Platform update 16 or later](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later). Methods on types nested within forms can be wrapped in Platform update 16 or later
+In this release, we've enabled Chain of Command on nested types within forms including data sources and controls. This allows Chain of Command to be used for a much wider range of extension scenarios involving forms. For more information, see [Class extension - Method wrapping and Chain of Command](../../dev-itpro/extensibility/method-wrapping-coc.md#methods-on-types-nested-within-forms-can-be-wrapped-in-platform-update-16-and-later). Methods on types nested within forms can be wrapped in Platform update 16 or later
 
 ## Change form patterns to custom using form extensions
 
@@ -202,7 +202,7 @@ For more information about personalization, see [Personalize the user experience
 
 Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Platform update 20 there is a more targeted role, Batch manager. With this security role, a user now has permission to copy batch jobs, change who will execute jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege is part of the Batch manager security role, this allows a user to create an ad hoc batch job and grant privileges to other users.
 
-For more information, see [Batch manager role](../../dev-itpro/sysadmin/runby.md).
+For more information, see [Batch manager security role](../../dev-itpro/sysadmin/runby.md).
 
 ## Copy batch job
 
@@ -210,4 +210,4 @@ You can now create a copy of the same batch jobs for different legal entities, a
 
 You can simultaneously set the description, company, schedule start date and time, recurrence, and the run by account. When you copy the batch job, any alerts and dependencies from the source job will also be copied.
 
-For more information, see [Copy batch job](../../dev-itpro/sysadmin/copy-batch-job.md).
+For more information, see [Copy a batch job](../../dev-itpro/sysadmin/copy-batch-job.md).

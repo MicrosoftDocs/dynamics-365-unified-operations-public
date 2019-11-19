@@ -5,10 +5,10 @@ title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -158,13 +158,10 @@ The following example shows a sample module definition that registers the sample
     "description": "Module for testing observable data actions",
     "categories": ["test-module"],
     "tags": ["samples"],
-    "module": {
-        "view": "./test-module",
-        "dataActions": {
-            "testResult":{
-                "path": "./actions/test-action",
-                "runOn": "client"
-            }
+    "dataActions": {
+        "testResult":{
+            "path": "./actions/test-action",
+            "runOn": "client"
         }
     }
 }

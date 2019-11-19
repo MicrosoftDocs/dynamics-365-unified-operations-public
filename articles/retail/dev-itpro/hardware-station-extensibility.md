@@ -49,7 +49,7 @@ Retail Hardware Station is used by Retail Modern POS and Cloud POS to connect to
 [![HWS-Shared](./media/hws-shared-300x224.png)](./media/hws-shared.png)
 
 ## Retail Hardware Station setup
-Before you start, use the information in [Retail hardware station configuration and installation](../retail-hardware-station-configuration-installation.md) to install Hardware Station, and to get a feel of what hardware is and how it's installed.
+Before you start, use the information in [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) to install Hardware Station, and to get a feel of what hardware is and how it's installed.
 
 ## Retail Hardware Station architecture
 Hardware Station exposes Web API for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).

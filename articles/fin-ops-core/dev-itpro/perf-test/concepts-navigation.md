@@ -36,7 +36,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/preview-banner.md)]
 
-To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced. For more information about the generation methods, see [Test data generation methods](test-data-methods.md).
+To simplify the discoverability of generation methods for test data, a set of navigation objects is introduced. For more information about the generation methods, see [Test data methods](test-data-methods.md).
 
 Navigation should start from the root object, the module must be specified, and then the entity must be specified together with the test data methods.
 

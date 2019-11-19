@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Finance and Operations Operations mobile app and provides links to resources that can help you implement it in your organization.
+This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
 
 Overview
 --------

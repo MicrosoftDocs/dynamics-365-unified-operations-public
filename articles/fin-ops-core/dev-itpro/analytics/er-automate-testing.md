@@ -51,8 +51,8 @@ For more information about how to create a custom version of a format that is ba
 Functional power users can author user acceptance and integration testing without having to write source code.
 
 - Use the ER baseline feature to compare generated documents to master copies. For more information, see [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md).
-- Use Task recorder to record test cases, and include baseline assessment. For more information, see [Task recorder](../user-interface/task-recorder.md).
-- Group test cases for required test scenarios. For more information, see [Create user acceptance test libraries by using task recordings and BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+- Use Task recorder to record test cases, and include baseline assessment. For more information, see [Task recorder resources](../user-interface/task-recorder.md).
+- Group test cases for required test scenarios. For more information, see [Create and automate user acceptance tests](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Use Business process modeler (BPM) in LCS to make libraries for user acceptance tests.
     - Use BPM test libraries to create a test plan and test suites in Microsoft Azure DevOps Services (Azure DevOps).
@@ -66,7 +66,7 @@ Functional power users can run user acceptance and integration tests.
 
 Before you can complete the tasks in this topic, you must complete the following prerequisites:
 
-- Deploy a topology that supports test automation. You must have access to the instance of this topology for the **System administrator** role. This topology must contain the demo data that will be used in this example. For more information, see [Deploy topologies that support continuous build and test automation](../perf-test/continuous-build-test-automation.md).
+- Deploy a topology that supports test automation. You must have access to the instance of this topology for the **System administrator** role. This topology must contain the demo data that will be used in this example. For more information, see [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md).
 - To run user acceptance and integration tests automatically, you must install RSAT in the topology that you're using and configure it in the appropriate manner. For information about how to install and configure RSAT and configure it to work with Finance and Operations apps and Azure DevOps, see [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Pay attention to the prerequisites for using the tool. The following illustration shows an example of the RSAT settings. The blue rectangle encloses the parameters that specify access to Azure DevOps. The green rectangle encloses the parameters that specify access to the instance.
 
     ![RSAT settings](media/GER-Configure.png "Screenshot of the RSAT Settings dialog box")
@@ -381,10 +381,10 @@ Therefore, as you've seen, the functioning of any ER format can be evaluated aut
 
 ## Additional resources
 
-- [Task recorder](../user-interface/task-recorder.md)
+- [Task recorder resources](../user-interface/task-recorder.md)
 - [Regression suite automation tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Create user acceptance test libraries by using task recordings and BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [Deploy topologies that support continuous build and test automation](../perf-test/continuous-build-test-automation.md)
-- [Trace generated report results and compare them with ER baseline values](er-trace-reports-compare-baseline.md)
-- [Upgrade your ER format by adopting a new, base version of that format](tasks/er-upgrade-format.md)
-- [Import ER configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+- [Create and automate user acceptance tests](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md)
+- [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md)
+- [ER Upgrade your format by adopting a new, base version of that format](tasks/er-upgrade-format.md)
+- [ER Import a configuration from Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)

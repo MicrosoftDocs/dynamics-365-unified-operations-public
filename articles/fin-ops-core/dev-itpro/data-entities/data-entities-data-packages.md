@@ -314,4 +314,4 @@ VALUES ('name', 1, 12719367, PARTITION, RECID, 1)
  - RecVersion = 1
 
 ## Additional resources
-- [Data entities](data-entities.md)
+- [Data entities overview](data-entities.md)

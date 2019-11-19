@@ -51,6 +51,6 @@ If the status of a BOE is **Endorsed**, a user can reserve its endorsement.
 ## Additional resources
 - [Pay a vendor transaction by endorsing a customer bill of exchange](./tasks/pay-vendor-transaction.md)
 - [Reverse an endorsed bill of exchange](./tasks/reverse-endorsed-bill-exchange.md)
-- [Set up Japan payment by endorsing a customer bill of exchange](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
+- [Setup Japan payment by endorsing a customer bill of exchange](./tasks/setup-japan-payment-endorsing-customer-bill-exchange.md)
 - [Settle an endorsed bill of exchange](./tasks/settle-endorsed-bill-exchange.md)
 

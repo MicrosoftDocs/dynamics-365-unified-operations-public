@@ -34,8 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides links to documentation resources for Latvia. 
 
-        - [Fixed assets accounting](emea-lva-fixed-assets-accounting.md)
-        - [Fixed assets location change tracking](emea-lva-fixed-assets-location-fields-change.md)
-        - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
-        - [Tax on natural resources report](emea-lva-tax-natural-resources.md)
-        - [VAT statement details](emea-lva-vat-statement-details.md)
+- [Fixed assets accounting for tax purposes](emea-lva-fixed-assets-accounting.md)
+- [Fixed assets location change tracking](emea-lva-fixed-assets-location-fields-change.md)
+- [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
+- [Tax on natural resources report](emea-lva-tax-natural-resources.md)
+- [VAT statement details](emea-lva-vat-statement-details.md)

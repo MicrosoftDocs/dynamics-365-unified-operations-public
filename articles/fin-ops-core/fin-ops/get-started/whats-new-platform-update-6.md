@@ -36,9 +36,9 @@ ms.dyn365.ops.version: Platform update 6
 
 This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
 
-## Browser framework – PowerApps Host control
+## Browser framework – Power Apps Host control
 
-Dynamics 365 for Operations introduces a new control for developers, the PowerApps Host control. This control allows a developer to host or embed a PowerApp within a Dynamics 365 for Operations form. For more details, see [PowerApps Host control](../../dev-itpro/user-interface/powerapps-host-control.md).
+Dynamics 365 for Operations introduces a new control for developers, the Microsoft Power Apps Host control. This control allows a developer to host or embed a Power App within a Dynamics 365 for Operations form. For more details, see [Power Apps Host control](../../dev-itpro/user-interface/powerapps-host-control.md).
 
 ## Browser client – Ability to model toolbar actions in the overflow menu
 
@@ -54,11 +54,11 @@ A new option in the build definition instructs the automated build to include an
 
 ## Document management – Attachment storage cleanup
 
-When Dynamics AX 7.0 was released, the database storage for attachments was deprecated; however, some platform functionality remained that needed to be migrated. In Dynamics 365 for Operations platform update 6, the last remaining platform usage was removed and a migration button was added to the **Document Management Parameters** form. The migration button can be used to clean up any files that might remain in the database after an upgrade. The migration will migrate any attachments stored in the database to Blob storage. For more information, see [Upgrade to the latest platform update](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md).
+When Dynamics AX 7.0 was released, the database storage for attachments was deprecated; however, some platform functionality remained that needed to be migrated. In Dynamics 365 for Operations platform update 6, the last remaining platform usage was removed and a migration button was added to the **Document Management Parameters** form. The migration button can be used to clean up any files that might remain in the database after an upgrade. The migration will migrate any attachments stored in the database to Blob storage. For more information, see [Apply the latest platform update to environments](../../dev-itpro/migration-upgrade/upgrade-latest-platform-update.md).
 
 ## Number sequence scope extensibility
 
-You can now extend the number sequence scope through extensions. The scope of a number sequence defines which organization uses the number sequence. The scope can be combined with fiscal calendar periods to create even more specific number sequences. For more information, see [Extend the number sequence scope](../../dev-itpro/extensibility/extend-number-sequence-scope.md).
+You can now extend the number sequence scope through extensions. The scope of a number sequence defines which organization uses the number sequence. The scope can be combined with fiscal calendar periods to create even more specific number sequences. For more information, see [Extend the scope of number sequences](../../dev-itpro/extensibility/extend-number-sequence-scope.md).
 
 ## Mobile
 

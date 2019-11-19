@@ -99,7 +99,7 @@ The following best practices can help you create extensible solutions in X++, so
 + [Extensible enums](extensible-enums.md)
 + [Delegates](extensible-code-delegates.md)
 + [Tables](extensible-tables.md)
-+ [Extensibility attributes for methods](extensibility-attributes.md)
++ [Attributes that make methods extensible](extensibility-attributes.md)
 
 ## Breaking changes
 When you make your solution extensible, you also help guarantee that you won't break extension points later. For more information, see [Breaking changes](breaking-changes.md).

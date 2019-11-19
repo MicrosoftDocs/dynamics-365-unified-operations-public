@@ -98,7 +98,7 @@ During development it can be useful to attach a debugger to get more detailed in
 - Azure-hosted development machine (so the mobile device can point to it)
 
 #### Steps to debug the client side
-1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Finance and Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
+1. On the web client that is exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Finance and Operations app. For information about publishing a mobile workspace, see [Publish mobile workspaces](../publish-mobile-workspace.md).
 
 2. Install the Android debug apk for the Finance and Operations app on an Android device:
     - One time only, allow the installation of apk files -  Go to **Menu** > **Settings** > **Security** and then check **Unknown Sources** to allow the phone to install apps from sources other than the Google Play Store.
@@ -135,7 +135,7 @@ During development it can be useful to attach a debugger to get more detailed in
 - Azure-hosted development machine (so the mobile device can point to it)
 
 #### Steps to debug the server side
-1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Finance and Operations app. For information about publishing a mobile workspace, see [Publish a mobile workspace](../publish-mobile-workspace.md).
+1. On the web client exposed by the Azure-hosted development machine, ensure that there are mobile workspaces published for the Finance and Operations app. For information about publishing a mobile workspace, see [Publish mobile workspaces](../publish-mobile-workspace.md).
 
 2. Open the app on your device, point to the Azure-hosted development machine, and sign in.
 

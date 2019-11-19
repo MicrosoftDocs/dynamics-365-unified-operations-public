@@ -44,17 +44,17 @@ The following learning map shows the major concepts and tasks that make up the f
 
 |      |   |
 |------|---|
-|  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Create dimensions](cost-elements.md)  |
-|  [Create dimension hierarchy](dimension-hierarchy.md)  |[Create basic setup](./tasks/define-cost-control-units.md)| 
-| [Define allocation base](allocation-bases.md)|[Define policies](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Data source and data provider](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Data source and data provider](./tasks/process-trace-source-data.md)     | 
-|[Overhead calculation](overhead-calculation.md)  | [Analysis and reporting](cost-control-workspace.md)   |
+|  [Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)  |[Cost element dimensions](cost-elements.md)  |
+|  [Dimension hierarchy](dimension-hierarchy.md)  |[Define cost control units](./tasks/define-cost-control-units.md)| 
+| [Allocation bases](allocation-bases.md)|[Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Process and trace source data](./tasks/process-trace-source-data.md)     | 
+|[Overhead calculation](overhead-calculation.md)  | [Cost control workspace](cost-control-workspace.md)   |
 
 ## Get started videos<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

@@ -5,10 +5,10 @@ title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -98,9 +98,6 @@ To use a resource string in a module, you must reference the resource string key
     "description": "Feature module used to highlight a product.",
     "categories": ["storytelling"],
     "tags": [""],
-    "module": {
-        "view": "./productFeature"
-    },
     "config": {
         "imageAlignment": {
             "friendlyName": "Image Alignment",

@@ -5,7 +5,7 @@ title: X++ exception handling
 description: This topic describes exception handling in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
+This topic describes exception handling in X++. You handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions. 
+
+An *exception* is a regulated jump away from the sequence of program execution. The instruction where program execution resumes is determined by **try**...**catch** blocks and the type of exception that is thrown. An exception is represented by a value of the **Exception** enumeration. One exception that is often thrown is the **Exception::error** enum value. A common practice is to write diagnostic information to the Infolog before the exception is thrown. 
+
+The **Global::error** method is often the best way to write diagnostic information to the Infolog. For example, your method might receive an input parameter value that isn't valid. In this case, the method can throw an exception to immediately transfer control to a **catch** code block that contains logic for handling this error situation. You don't necessarily have to know the location of the **catch** block that will receive control when the exception is thrown.
 
 ## throw statements
 
@@ -56,7 +60,16 @@ The static methods on the **Global** class can be called without the **Global::*
 
 ## try, catch, finally, and retry statements
 
-When an exception is thrown, it's first processed through the <strong>catch</strong> list of the innermost <strong>try</strong> block. If a <strong>catch</strong> block is found that handles the kind of exception that is being thrown, program control jumps to that <strong>catch</strong> block. If the <strong>catch</strong> list has no block that specifies the exception, the system passes the exception to the <strong>catch</strong> list of the next-innermost <strong>try</strong> block. The <strong>catch</strong> statements are processed in the same sequence as they appear in the code. It's a common practice to have the first <strong>catch</strong> statement handle the <strong>Exception::Error</strong> enum value. One strategy is to have the last <strong>catch</strong> statement leave the exception type unspecified. In this case, the last <strong>catch</strong> statement handles all exceptions that aren't handled by any earlier <strong>catch</strong> statement. This strategy is appropriate for the outermost <strong>try</strong>...<strong>catch</strong> blocks. An optional *<strong><em>finally</em></strong>* clause can be included in <strong>try</strong>...<strong>catch</strong> statements. The semantics of a <strong>finally</strong> clause are the same as they are in C\#. The statements in the <strong>finally</strong> clause are executed when control leaves the <strong>try</strong> block, either normally or through an exception. The <strong>retry</strong> statement can be written only in a <strong>catch</strong> block. The <strong>retry</strong> statement causes control to jump up to the first line of code in the associated <strong>try</strong> block. The <strong>retry</strong> statement is used when the cause of the exception can be fixed by the code in the <strong>catch</strong> block. The <strong>retry</strong> statement gives the code in the <strong>try</strong> block another opportunity to succeed. The <strong>retry</strong> statement erases all messages that have been written to the Infolog since program control entered the <strong>try</strong> block. <strong>Note:</strong> You must make sure that your <strong>retry</strong> statements don't cause an infinite loop. As a best practice, the <strong>try</strong> block should include a variable that you can test to find out whether you're in a loop.
+When an exception is thrown, it's first processed through the <strong>catch</strong> list of the innermost <strong>try</strong> block. If a <strong>catch</strong> block is found that handles the kind of exception that is being thrown, program control jumps to that <strong>catch</strong> block. If the <strong>catch</strong> list has no block that specifies the exception, the system passes the exception to the <strong>catch</strong> list of the next-innermost <strong>try</strong> block. The <strong>catch</strong> statements are processed in the same sequence as they appear in the code. 
+
+It's a common practice to have the first <strong>catch</strong> statement handle the <strong>Exception::Error</strong> enum value. One strategy is to have the last <strong>catch</strong> statement leave the exception type unspecified. In this case, the last <strong>catch</strong> statement handles all exceptions that aren't handled by any earlier <strong>catch</strong> statement. This strategy is appropriate for the outermost <strong>try</strong>...<strong>catch</strong> blocks. 
+
+An optional *<strong><em>finally</em></strong>* clause can be included in <strong>try</strong>...<strong>catch</strong> statements. The semantics of a <strong>finally</strong> clause are the same as they are in C\#. The statements in the <strong>finally</strong> clause are executed when control leaves the <strong>try</strong> block, either normally or through an exception. 
+
+The <strong>retry</strong> statement can be written only in a <strong>catch</strong> block. The <strong>retry</strong> statement causes control to jump up to the first line of code in the associated <strong>try</strong> block. The <strong>retry</strong> statement is used when the cause of the exception can be fixed by the code in the <strong>catch</strong> block. The <strong>retry</strong> statement gives the code in the <strong>try</strong> block another opportunity to succeed. The <strong>retry</strong> statement erases all messages that have been written to the Infolog since program control entered the <strong>try</strong> block. 
+
+> [!NOTE] 
+> You must make sure that your **retry** statements don't cause an infinite loop. As a best practice, the **try** block should include a variable that you can test to find out whether you're in a loop.
 
     try 
     { 
@@ -112,7 +125,7 @@ The return type is the **Exception::Error** enum value. The **error** method doe
 
 - <strong>SysInfoLogStr</strong> txt is a <strong>str</strong> of the message text. It can also be a label reference, such as <strong>strFmt("@SYS12345", strThingName)</strong>.
 - The **URL** helpUrl is a reference to the location of a Help topic in Application Explorer, such as **"KernDoc:\\\\\\\\Functions\\\\substr"**. The parameter value is ignored if \_sysInfoAction is supplied.
-- The **SysInfoAction** \_sysInfoAction is an instance of a class that extends the **SysInfoAction** class. The method overrides that we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
+- The **SysInfoAction** is an instance of a class that extends the **SysInfoAction** class. The method overrides that we recommend for the child class are the **description** method, the **run** method, the **pack** method, and the **unpack** method.
 
 ### Global::info method
 
@@ -120,11 +133,11 @@ The **Global::info** method is often used to show text in the Infolog. In progra
 
 ### Global::exceptionTextFallThrough method
 
-Occasionally, you want to do nothing inside your **catch** block. However, the X++ compiler generates a warning if you have an empty **catch** block. To avoid this warning, call the **Global::exceptionTextFallThrough** method in the **catch** block. The method does nothing, but it satisfies the compiler.
+Occasionally, you want to do nothing inside your **catch** block. However, the X++ compiler generates a warning if you have an empty **catch** block. To avoid this warning, call the **Global::exceptionTextFallThrough** method in the **catch** block. The method does nothing, but it satisfies the compiler and explicitly states the intention.
 
 ## Exceptions inside transactions
 
-If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception. Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
+If an exception is thrown inside a transaction, the transaction is automatically canceled (that is, a **ttsAbort** operation occurs). This behavior applies for both exceptions that are thrown manually and exceptions that the system throws. When an exception is thrown inside a **ttsBegin**-**ttsCommit** transaction block, no **catch** statement inside that transaction block can process the exception, (unless it is a **UpdateConflict** or a **DuplicateKeyException**). Instead, the innermost **catch** statements that are outside the transaction block are the first **catch** statements that are tested.
 
 ## Examples of exception handling
 
@@ -338,7 +351,16 @@ The following code example throws an exception in a transaction block.
 
 ### Using Global::error with a SysInfoAction parameter
 
-When your code throws an exception, it can write messages to the Infolog. You can make those Infolog messages more helpful by using the **SysInfoAction** class. In the following example, a **SysInfoAction** parameter is passed in to the **Global::error** method. The **error** method writes the message to the Infolog. When the user double-clicks the Infolog message, the **SysInfoAction.run** method is run. In the **run** method, you can write code that helps diagnose or fix the issue that caused the exception. The object that is passed in to the **Global::error** method is constructed from a class that you write that extends **SysInfoAction**. The following code sample is shown in two parts. The first part shows a job that calls the **Global::error** method and then throws the returned value. An instance of the **SysInfoAction\_PrintWindow\_Demo** class is passed in to the **error** method. The second part shows the **SysInfoAction\_PrintWindow\_Demo** class.
+When your code throws an exception, it can write messages to the Infolog. You can make those Infolog messages more helpful by using the **SysInfoAction** class. 
+
+In the following example, a **SysInfoAction** parameter is passed in to the **Global::error** method. The **error** method writes the message to the Infolog. When the user double-clicks the Infolog message, the **SysInfoAction.run** method is run. 
+
+In the **run** method, you can write code that helps diagnose or fix the issue that caused the exception. The object that is passed in to the **Global::error** method is constructed from a class that you write that extends **SysInfoAction**. 
+
+The following code sample is shown in two parts. 
+
+- The first part shows a job that calls the **Global::error** method and then throws the returned value. An instance of the **SysInfoAction\_PrintWindow\_Demo** class is passed in to the **error** method. 
+- The second part shows the **SysInfoAction\_PrintWindow\_Demo** class.
 
 #### Part 1: Calling Global::error
 
@@ -410,4 +432,4 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflict                    | An error occurred in a transaction that is using Optimistic Concurrency Control. The transaction can be retried (use a **retry** statement in the **catch** block). |
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception.                         |
-| [TransientSqlConnectionError](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
+| [SQL connection error X++ exception](sql-connection-error.md)       | An error occured when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |

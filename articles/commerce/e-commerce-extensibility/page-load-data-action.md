@@ -5,10 +5,10 @@ title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -94,15 +94,13 @@ The following example shows a module that uses the data action earlier in this t
     "name": "product-module",
     "friendlyName": "Product module",
     "description": "Product module",
-    "module": {
-        "view": "./product-module",
-        "dataActions": {
-            "product": {
-                "path": "../../actions/get-product"
-            }
+    "categories": ["Product"],
+    "dataActions": {
+        "product": {
+            "path": "../../actions/get-product",
+            "runOn": "server"
         }
     },
-    "categories": ["Product"],
     "config": {
         "productId": {
             "friendlyName": "Id of Product to show",

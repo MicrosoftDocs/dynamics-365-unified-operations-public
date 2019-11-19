@@ -38,7 +38,7 @@ This topic provides answers to frequently asked questions (FAQ) about virtual ma
 ## How can I install a deployable package?
 Whenever possible, use Microsoft Dynamics Lifecyle Services (LCS) to install a deployable package. You can install a deployable package by using the **-devinstall** option. Remember that this option requires manual database synchronization.
 
-For more information about how to install a deployable package, see [Install a deployable package](../deployment/install-deployable-package.md).
+For more information about how to install a deployable package, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 ## Is the Finance and Operations website accessible when Visual Studio isn't running?
 Yes, you can access the Finance and Operations website when Microsoft Visual Studio isn't running. Microsoft Internet Information Services (IIS) Express is an .exe file that runs as the user. However, when you close Visual Studio, the XPPC agent starts regular IIS (not IIS Express) before it closes. This behavior helps to ensure that you can remotely access the Application Object Server (AOS) instance and the website, even when you sign out or the machine is restarted. We recognize that many people use these developer machines as test machines, and that they expect the AOS instance always to be running. However, IIS Express doesn't support this behavior.
@@ -112,7 +112,7 @@ Entering a product key directly in Visual Studio is not supported. Instead, use 
 ## Can I upgrade my database to a new application release?
 As of the February 2018 release of Lifecyle Services (LCS), you can execute the data upgrade package from the LCS environment page of a development environment. Executing the data upgrade package from LCS does not require you to be an administrator on the VM.
 
-The process described in [Upgrade data in development, demo, or sandbox environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
+The process described in [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md) runs the data upgrade package from the command line. This requires you to be an administrator on the VM.
 
 ## What do I need to know if I am developing for Retail?
-If you are developing for Dynamics 365 Retail, configuration steps and other important information is described in [Configuration steps for Retail developers working on cloud-hosted development environments with no administrator access](../../../retail/dev-itpro/cloud-dev-box.md).
+If you are developing for Dynamics 365 Retail, configuration steps and other important information is described in [Development in cloud-hosted development environments without admin access](../../../retail/dev-itpro/cloud-dev-box.md).

@@ -61,8 +61,8 @@ In addition to the financial reports, you can use the following ledger reports t
 ## Additional resources
 - [General ledger account balances](general-ledger-account-balances.md) 
 - [Accounting source explorer](../accounts-payable/accounting-source-explorer.md)
-- [Financial reporting](financial-reporting-getting-started.md)
-- [View journal entries](tasks/view-journal-entries-or-transactions.md)
+- [Financial reporting overview](financial-reporting-getting-started.md)
+- [View journal entries or transactions](tasks/view-journal-entries-or-transactions.md)
 
 
 

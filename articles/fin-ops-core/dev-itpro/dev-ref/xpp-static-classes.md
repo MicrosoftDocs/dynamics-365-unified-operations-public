@@ -42,7 +42,9 @@ You declare static class members by using the **static** keyword. The **static**
 
 ### Static methods
 
-This section describes a scenario where a software key type is used to help prevent piracy. Each instance of a software key can have its own unique value. However, because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys. Therefore, the method that contains the conformance validation logic should be static. Here is an example of a method that is declared by using the **static** keyword.
+This section describes a scenario where a software key type is used to help prevent piracy. Each instance of a software key can have its own unique value. Because all software keys must conform to the rules of software key design, the logic that tests for software key conformance is the same for all software keys. Therefore, the method that contains the conformance validation logic should be static. 
+
+Here is an example of a method that is declared by using the **static** keyword.
 
 ```X++
 public class SoftwareKey
@@ -67,7 +69,7 @@ Static fields are variables that are declared by using the **static** keyword. C
 
 ## Static constructors
 
-A static constructors is guaranteed to run before any static or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. The static constructor has the following syntax.
+A static constructor is guaranteed to run before any static or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. The static constructor has the following syntax.
 
 ```X++
 static void TypeNew()

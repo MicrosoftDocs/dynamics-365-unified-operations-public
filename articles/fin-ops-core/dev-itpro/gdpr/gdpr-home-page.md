@@ -40,17 +40,17 @@ Your first step in responding to a request for data will usually be to use the P
 ## Overview
 
 - [General Data Protection Regulation overview](gdpr-guide.md)
-- [Use the Person search report](gdpr-person-search-report.md)
+- [Person search report](gdpr-person-search-report.md)
 - [Extend the Person search report](gdpr-extend-person-search-report.md)
-- [Review roles in your organization with access to sensitive data](gdpr-auditing-sensitive-data.md)
+- [Manage access to sensitive data](gdpr-auditing-sensitive-data.md)
 
 
 ## Product-specific considerations
 
-- [Respond to a DSR request for data from Microsoft Dynamics AX 2012](gdpr-ax2012.md)
-- [Respond to a DSR request for data from Microsoft Dynamics 365 Talent](respond-dsr-request-talent.md)
+- [Respond to requests for personal data in AX 2012](gdpr-ax2012.md)
+- [Respond to requests for personal data in Talent](respond-dsr-request-talent.md)
 - [General Data Protection Regulation overview](gdpr-guide.md)
-- [GDPR data requests for Lifecycle Services](gdpr-lcs.md)
+- [GDPR data requests for Lifecycle Services (LCS)](gdpr-lcs.md)
 
 ## Compliance Manager
 Compliance Manager is a cross–Microsoft Cloud services solution designed to help organizations meet complex compliance obligations like the GDPR. It performs a real-time risk assessment that reflects your compliance posture against data protection regulations when using Microsoft Cloud services, along with recommended actions and step-by-step guidance.
@@ -61,17 +61,17 @@ You can try Compliance Manager yourself by visiting [https://aka.ms/compliancema
 ### Resources
 There are a number of resources to help you learn more about Compliance Manager and what it can do you help you meet complex compliance obligations.
 
-> [Microsoft 365 - Compliance Manager preview](https://blogs.office.com/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office, November 2017)
-> 
-> [Compliance Manager preview is now available](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community, November 2017)
-> 
-> [Get to know the new Service Trust Portal](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet, November 2017) 
-> 
-> [Announcing Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community, September 2017)
-> 
-> [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office, September 2017)
-> 
-> [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsft Secure, September 2017)
+- [Microsoft 365 - Compliance Manager preview](https://blogs.office.com/2017/11/16/microsoft-365-helps-businesses-increase-trust-and-innovation-through-compliance-with-compliance-manager-preview/) (Office, November 2017)
+
+- [Compliance Manager preview is now available](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Compliance-Manager-Preview-is-now-available/ba-p/124662) (Tech Community, November 2017)
+
+- [Get to know the new Service Trust Portal](https://blogs.technet.microsoft.com/scottschnoll/2017/11/21/get-to-know-the-new-service-trust-portal/) (TechNet, November 2017) 
+
+- [Announcing Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Manage-Your-Compliance-from-One-Place-Announcing-Compliance/ba-p/106493) (Tech Community, September 2017)
+
+- [Advancing intelligence, management, and security to empower the modern workplace](https://blogs.office.com/2017/09/25/advancing-intelligence-management-and-security-to-empower-the-modern-workplace/) (Office, September 2017)
+
+- [New Microsoft 365 features to accelerate GDPR compliance](https://blogs.microsoft.com/microsoftsecure/2017/09/25/new-microsoft-365-features-to-accelerate-gdpr-compliance/) (Microsft Secure, September 2017)
 
 
 ## Additional resources

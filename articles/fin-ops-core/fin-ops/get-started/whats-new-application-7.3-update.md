@@ -53,7 +53,7 @@ The data packages are similar but not identical to existing demo companies and m
 
 The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations is now available in private preview.
 
-The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the PowerApps documentation.
+The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the Power Apps documentation.
 
 This solution provides direct synchronization in the following areas:
 
@@ -280,7 +280,7 @@ The Tax Engine (GTE) is an essential part of the configurable business applicati
 
 - [Tax engine overview](../../../finance/general-ledger/tax-engine.md)
 - [Tax engine integration](../../../finance/general-ledger/tax-engine-integration.md)
-- [Extending the Tax engine](../../../finance/general-ledger/extend-tax-engine-configurations.md)
+- [Extend tax engine configurations](../../../finance/general-ledger/extend-tax-engine-configurations.md)
 
 ## Vendor collaboration
 

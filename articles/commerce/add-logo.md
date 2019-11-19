@@ -5,10 +5,10 @@ title: Add a logo
 description: This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -76,4 +76,6 @@ After you publish the updated header fragment, all site pages that use the templ
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
 

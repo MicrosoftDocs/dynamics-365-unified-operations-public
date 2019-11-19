@@ -46,7 +46,7 @@ New APIs have been added to help data integration retrieve errors that occurred 
 For more information, see [Data management package REST API](../../dev-itpro/data-entities/data-management-api.md).
 
 ## Clear identification of preview builds
-Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Standard and First release service updates](public-preview-releases.md) topic for more information about the Finance and Operations release process.
+Some partners, ISVs, and customers have access to preproduction builds of Finance and Operations by being part of the Preview Early Access Program (PEAP) or by using public previews of the service. This preview phase is intended as a mechanism for feedback on the latest features and for validation of customizations. These early releases, however, are not authorized to be used in production. See the [Service update availability](public-preview-releases.md) topic for more information about the Finance and Operations release process.
 
 To make the **preview** status clear to users, each preproduction build will be tagged in two different ways: 
 
@@ -85,7 +85,7 @@ Supported scenarios include using intuitive controls to create Alerts rules that
 This new capability will provide a framework that will allow business processes in Finance and Operations to capture business events as business processes are executed, and send the events to an external system or application.
 
 > [!Note]
-> This feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
+> This feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release plans](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 This will allow, for example, a purchase order approval to quickly trigger a fulfillment in the vendor organization sooner than later; a receipt of a damaged part to trigger the vendor claim process in real time; and so on. Because these events happen in the context of business processes they are called *business events*, which enable *business process integration*.
 
@@ -104,9 +104,9 @@ Some capabilities that will be included are:
 -   Out-of-the-box integration with Azure Event Grid and Azure Service Bus for
     advanced integration scenarios.
 
--   Exposing business events as 'triggers' in Microsoft Flow.
+-   Exposing business events as 'triggers' in Microsoft Power Automate.
 
-For more information, see [Business events](../../dev-itpro/business-events/home-page.md).
+For more information, see [Business events overview](../../dev-itpro/business-events/home-page.md).
 
 ## Additional resources
 ### Platform update 24 bug fixes
@@ -120,12 +120,12 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 

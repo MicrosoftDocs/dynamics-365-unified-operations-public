@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
 author: mugunthanm
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 11/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -56,7 +56,7 @@ A retail deployable package is one combined package that contains all your custo
 >
 > If your customizations were built and packaged as individual Retail component packages by using a version of the Retail software development kit (SDK) that is older than application version 7.1.1541.3036, the packages are no longer supported for deployment in LCS. You must uptake the hotfix in [KB 4015062](https://fix.lcs.dynamics.com/Home/Index/0/kb/4015062?permission=Download), and then rebuild and repackage your customizations.
 
-For detailed information about the Retail SDK, see [Retail SDK overview](retail-sdk-overview.md).
+For detailed information about the Retail SDK, see [Retail software development kit (SDK) architecture](retail-sdk-overview.md).
 
 ### Steps to create a retail deployable package
 
@@ -211,10 +211,28 @@ The following illustration shows an example of a Retail Server web.config file.
 
 [![Retail Server web.config file](./media/retail-server-web-config.png)](./media/retail-server-web-config.png)
 
+### Shared Hardware station web.config
+
+If you are not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
+
+**Example** To disable the legacy connector, open the web.config file from \RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin and comment the legacy connector. Enable the non-legacy connector under the composition section, as shown in the following sample code.
+
 > [!NOTE]
-> You should not add or change any custom settings in the above mentioned example or in any of the channel config files. The only supported modification is adding custom assemblies details in the composition section.
+> x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number. This will vary based on your Retail SDK version number.
+
+```C#
+    <composition>
+      <!-- Defaulting to legacy payment devices.
+ <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
+      -->
+      <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
+    </composition>
+```
+
+> [!NOTE]
+> Do not add or change any custom settings in the above mentioned example or in any of the channel config files. The only supported modification is to add custom assemblies details in the composition section.
 >
-> Also, as part of your extension or package, do not edit any of the following config files. These config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
+> As part of your extension or package, do not edit any of the following config files. These config files will be updated with the latest file from core Microsoft package during deployment and your changes will be lost.
 >
 > - CommerceRuntime.config
 > - dllhost.exe.config

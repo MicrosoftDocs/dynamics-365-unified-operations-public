@@ -87,7 +87,7 @@ For more information, refer to our [contributor's guide](https://docs.microsoft.
 
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are available.
 
-Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
+Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Help system](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
@@ -98,7 +98,7 @@ To begin the guided, interactive experience, click **Start task guide** at the b
 > [!IMPORTANT]
 > The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you're currently using.
 
-You can use Task recorder to create your own custom Task guides. For more information, see [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+You can use Task recorder to create your own custom Task guides. For more information, see [Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## In-product Help
 
@@ -149,13 +149,12 @@ Translated Task guides are released in libraries with "All languages" in the tit
 
 You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
-- [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+- [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 - [Create Custom Help (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## Additional resources
 
-- [Task recorder](../../dev-itpro/user-interface/task-recorder.md)
-- [Create documentation or training using task recordings](../../dev-itpro/user-interface/task-recorder.md)
+- [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)
 
 The following table lists our websites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 

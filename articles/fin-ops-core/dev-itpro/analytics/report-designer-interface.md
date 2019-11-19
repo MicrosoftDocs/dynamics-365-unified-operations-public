@@ -232,4 +232,4 @@ The report designer toolbar provides quick access to commands for navigating wit
 
 [Financial reporting](financial-reporting-intro.md)
 
-[Generate a financial report](generate-financial-report.md)
+[Generate financial reports](generate-financial-report.md)

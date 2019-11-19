@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Finance version 10.0.7 (January 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.7.
 author: roschlom
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,13 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance version 10.0.7. This version has a build number of 10.0.283. While the general availability date is in January 2020, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md#additional-resources).
+This topic describes preview features that are new or changed for Platform update 31 for Microsoft Dynamics 365 Finance, version 10.0.7. This version has a build number of 7.0.5457 and is available as follows:
+
+- Preview release is in October 2019.
+- General availability (self-update) is in November 2019.
+- Auto-update is in January 2020.
+
+For more information about Platform update 31, see [Additional resources](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md#additional-resources).
 
 ## Budget register entry enhancements
 
@@ -122,7 +128,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 3
 
 
 ### Bug fixes 
-For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
+For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
 
 
 ### Dynamics 365: 2019 release wave 2 plan
