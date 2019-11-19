@@ -49,13 +49,12 @@ The sources for product collections can be lists of three types:
 - Personalization lists support personalized results for a customer. A customer should be signed-in to the e-Commerce site to see personalized results. Guest users do not see personalized results. A customer can opt-out from personalization from the Account Management page [link].
 
 
-
 The following illustration shows the different types of product collections being used on an e-Commerce site.
 
 ![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Always use product collection modules to show a group of products of a similar type or theme.
+> Always use product collection modules to show a group of products of a similar type.
 
 ## Product collection modules and types
 
