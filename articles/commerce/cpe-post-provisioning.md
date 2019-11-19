@@ -37,7 +37,7 @@ This topic describes how to configure a Microsoft Dynamics 365 Commerce preview 
 
 ## Overview
 
-Only proceed with the following instructions after your Commerce preview enironment has been provisioned. To provision your Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
+Only proceed with the following instructions after your Commerce preview environment has been provisioned. To provision your Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
 
 Once your Commerce preview environment has been provisioned end-to-end, there are additional post-provisioning configuration steps that must be completed before you can start evaluating the environment. These steps will need to be done using Microsoft Lifecycle Services (LCS), Microsoft Dynamics 365 Commerce, and Microsoft Dynamics 365 Retail.
 
@@ -128,19 +128,19 @@ To run full data sync in Retail, follow these steps.
 ### After these steps you are ready to start evaluating your preview environment!
 Use the **e-Commerce site management tool** URL to navigate to the C1 authoring experience and the **e-Commerce site** URL to navigate to the C2 site experience.
 
-### How to find your AAD Tenant Id
+### How to find your AAD Tenant ID
 
-AAD Tenant Id is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**
+Your AAD Tenant ID is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
 
-##### From Azure Portal
+##### Find your AAD Tenant ID using the Azure Portal
 
-1. Log in to the Azure portal: https://portal.azure.com/
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. Make sure that you have the correct directory selected.
-1. Click **Azure Active Directory** from the menu on the left.
-1. Choose **Properties** under **Manage**.
-1. AAD Tenant Id is shown under **Directory ID**.
+1. In the menu on the left, click **Azure Active Directory**.
+1. Select **Properties** under **Manage**.
+1. Your AAD Tenant ID is shown under **Directory ID**.
 
-##### From OpenID Connect metadata
+##### Find your AAD Tenant ID using OpenID Connect metadata
 
 Create **OpenID URL** by replacing **\{YOUR_DOMAIN\}** with your domain, e.g. microsoft.com: https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration would become https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration
 
@@ -161,6 +161,7 @@ This step assumes that the user is a member of the group they are attempting to 
 1. Security group ID is noted under property **id**.
 
 ### Test credit card information to perform test purchases
+
 In order to perform test transactions on the site, you can use this test credit card information:
 
 Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
@@ -190,4 +191,4 @@ To continue configuring your Commerce preview environment with optional features
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Dynamics 365 Retail](../retail/index.md)
+[Help resources for Dynamics 365 Retail](../retail/index.md)
