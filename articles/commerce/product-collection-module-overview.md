@@ -48,7 +48,7 @@ The sources for product collections can be lists of three types:
 - Recommendation lists that are based on machine learning
 - Personalization lists support personalized results for a customer. A customer should be signed-in to the e-Commerce site to see personalized results. Guest users do not see personalized results. A customer can opt-out from personalization from the Account Management page [link].
 
-In addition, some lists supported 
+
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
 
@@ -63,8 +63,7 @@ The following table describes various types of product collection modules in Dyn
 
 | Product collection module  | Type | Description |
 |----------------------------|------|-------------|
-| Category browse            | Editorial | This list uses the navigation category hierarchy that the retailer created for a retail channel to show a browsing flow for products that are offered in a specific site category. |
-| Search results             | Search query | This list shows a list of products that best match the search query that the customer entered. |
+| Category             | Category | This list shows the products in a category as defined by the navigation category hierarchy that the retailer created for a retail channel . |
 | Related products           | Editorial | This list shows a list of products that a merchandising manager has configured as related products in Retail, for the relation type that the author selected. |
 | Curated product lists      | Editorial | This list shows custom lists that merchandisers and editors have created in Retail. |
 | New                        | Algorithmic | This list shows a list of the newest products that have been assorted to channels and catalogs. This list can show personalized results for a signed-in user if the site author chooses that option. |
