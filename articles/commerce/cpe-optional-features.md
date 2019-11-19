@@ -152,3 +152,13 @@ These tokens will be replaced at email rendering time with the actual values tha
 [Configure a Commerce preview environment](cpe-post-provisioning.md)
 
 [Commerce preview environment FAQ](cpe-faq.md)
+
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+
+[Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal)
+
+[Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Help resources for Dynamics 365 Retail](../retail/index.md)
