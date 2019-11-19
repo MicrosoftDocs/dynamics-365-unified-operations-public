@@ -43,11 +43,11 @@ Before you begin, we recommend that you at least skim through the documentation 
 
 ## Overview
 
-To provision your Commerce preview environment successfully, the project needs to be created with a specific product name and type. The environment and Retail Cloud Scale Unit (RCSU) also have some specific parameters you need to use to start the e-Commerce provisioning later. The instructions in this guide contain all the required steps you need to take and parameters you need to use.
+To provision your Commerce preview environment successfully, the project needs to be created with a specific product name and type. The environment and Retail Cloud Scale Unit (RCSU) also have some specific parameters you need to use to start the e-Commerce provisioning later. The instructions in this guide contain all the required steps you need to take and the parameters you need to use.
 
 After successful provisioning, there are a few post-provisioning steps you will need to take to prepare your Commerce preview environment. Some steps are optional, depending on which aspects of the system you wish to evaluate. Should you later change your mind, you can always run the optional steps at that time.
 
-For information on configuring your Commerce preview environment, see [Configure a Commerce preview environment](cpe-post-provisioning.md).
+For information on configuring your Commerce preview environment after provisioning, see [Configure a Commerce preview environment](cpe-post-provisioning.md).
 
 For information on configuring optional features of your Commerce preview environment, see [Configure Commerce preview environment optional features](cpe-optional-features.md).
 
@@ -57,26 +57,26 @@ If you have any questions about the provisioning steps or encounter any issues, 
 
 The following are prerequisites for provisioning your Dynamics 365 Preview environment.
 
-- You have access to the **Lifecycle Services portal (LCS)**.
-- You have been **accepted into the Dynamics 365 Commerce Preview program**.
+- You have access to the **Microsoft Lifecycle Services (LCS)** portal.
+- You have been accepted into the Dynamics 365 Commerce Preview program.
 - You have the required permissions to create a project for **Prospective presales** or **Migrate, create solutions, and learn**.
 - You are a member of the **Environment manager** or **Project owner** role in the project where you will be provisioning the environment.
 - You have administrator access to your Azure subscription, or contact with a subscription administrator who can perform the two steps that require administrator permissions on your behalf.
-- You have your **AAD Tenant Id** available.
-- You have created a **AAD security group** to be used as **e-Commerce system admins group** and you have its ID available.
-- You have created a **AAD security group** to be used as **Ratings and Reviews moderator group** and you have its ID available (can be the same security group as the system administrator group above).
+- You have your **Azure Active Directory (AAD) tenant ID** available.
+- You have created an **AAD security group** to be used as a **e-Commerce system admins group** and you have its ID available.
+- You have created an **AAD security group** to be used as a **Ratings and Reviews moderator group** and you have its ID available (this can be the same security group as the system administrator group above).
 
 ## Provision your Commerce preview environment
 
 These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce preview environment. After successfully completing these steps, you will have a preview environment that is ready to be configured. All the activities described here take place in the Microsoft Lifecycle Services (LCS) portal.
 
-> [!NOTE]
-> Preview access is tied to the LCS account and organization you specified in your preview application. You must use that same account for provisioning. If you have to use a different LCS account or tenant for the preview environment, you will need to provide us with those details. Please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. If you are having issues accessing the Yammer group, you can also reach us via email at **Dynamics365Commerce@microsoft.com**. This email address is not actively monitored so expect a delay in response.
+> [!IMPORTANT]
+> Preview access is tied to the LCS account and organization you specified in your preview application. You must use that same account for provisioning. If you have to use a different LCS account or tenant for the preview environment, you will need to provide us with those details. See [Commerce preview environment support](#commerce-preview-environment-support) for contact information.
 
 ### Grant access to e-Commerce applications
 
-> [!NOTE]
-> **The person logging in needs to be an AAD tenant administrator in possession of the AAD tenant ID**. Without successfully completing this step, the rest of the provisioning steps will fail.
+> [!IMPORTANT]
+> The person logging in needs to be an AAD tenant administrator in possession of the AAD tenant ID. Without successfully completing this step, the rest of the provisioning steps will fail.
 
 To authorize e-Commerce applications to access your Azure subscription, follow these steps.
 
@@ -103,7 +103,7 @@ To confirm that preview features are available and enabled in LCS, follow these 
 	
     ![Preview features](./media/preview2.png)
 	
-1. If you are unable to see these features in the list, please reach out to us with your work email, LCS account, and tenant details. ///Please see **Additional resources** below for information on how to contact us.///
+1. If you are unable to see these features in the list, please reach out to us with your work email, LCS account, and tenant details. See [Commerce preview environment support](#commerce-preview-environment-support) for contact information.
 
 ### Create a new project
 
@@ -186,19 +186,17 @@ To deploy the environment, follow these steps.
 
     ![Project creation - topology 1](./media/project2.png)
     
-1. For environment topology, choose **Dynamics 365 Commerce (Preview) - Demo**.
+1. For environment topology, choose **Dynamics 365 Commerce (Preview) - Demo**. If you configured a single Azure Connector earlier, that will be used for this environment. If you configured multiple Azure Connectors, you have the option to select which connector you would like to use: **East US**, **East US 2**, **West US** or **West US 2** (recommended for best end-to-end performance).
 
     ![Project creation - topology 2](./media/project3.png)
     
-1. If you configured a single Azure Connector earlier, that will be used for this environment. If you configured multiple Azure Connectors, you have the option to select which connector you would like to use: **East US**, **East US 2**, **West US** or **West US 2** (recommended for best end-to-end performance)
-1. Enter an **Environment name**.
-1. Adjust the VM size as you see fit. (We recommend VM SKU **D13 v2**.)
-1. Leave **Advanced settings** as they are.
-1. After reviewing the pricing and licensing terms on the screen, check the box to indicate agreement.
-1. Click **Next**.
+1. The **Deploy Environment** dialog box appears, as in the following image. Enter an **Environment name**. Leave **Advanced settings** as they are.
 
     ![Project creation - environment parameters](./media/project4.png)
     
+1. Adjust the VM size as you see fit. (We recommend VM SKU **D13 v2**.)
+1. After reviewing the pricing and licensing terms on the screen, check the box to indicate agreement.
+1. Click **Next**.
 1. On the deployment confirmation screen, after verifying that the details are correct, click **Deploy**.
 1. You will return to the **Cloud-hosted environments** view and your environment should appear in the list.
 1. Your requested environment will show as queued and then deploying. It will take some time for all of the environment workflows to complete, so please check back after a few hours (approximately 6 – 9 hours).
@@ -243,7 +241,7 @@ To initialize e-Commerce, follow these steps.
 	* Make note of the link **e-Commerce site**. This is the link to the root of your e-commerce site.
 	* Make note of the link **e-Commerce site management tool**. This is the link to the site management tool.
 	
-## Microsoft Dynamics 365 Commerce preview environment support
+## Commerce preview environment support
 
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
