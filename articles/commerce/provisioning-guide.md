@@ -243,6 +243,12 @@ To initialize e-Commerce, follow these steps.
 
 To continue the process of provisioning and configuring your Commerce preview environment, proceed to [Configure a Commerce preview environment](cpe-post-provisioning.md).
 
+## Microsoft Dynamics 365 Commerce preview environment support
+
+If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
+
+If you are having issues accessing the Yammer group, you can also reach us via email at **Dynamics365Commerce@microsoft.com**. This email address is not actively monitored so expect a delay in response.
+
 ## Additional resources
 
 [Commerce preview environment overview](cpe-overview.md)
@@ -252,3 +258,13 @@ To continue the process of provisioning and configuring your Commerce preview en
 [Configure Commerce preview environment optional features](cpe-optional-features.md)
 
 [Commerce preview environment FAQ](cpe-faq.md)
+
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/en-us/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+
+[Microsoft Azure portal](https://azure.microsoft.com/en-us/features/azure-portal)
+
+[Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Dynamics 365 Retail](../retail/index.md)
