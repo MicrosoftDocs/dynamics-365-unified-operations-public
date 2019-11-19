@@ -66,7 +66,7 @@ To accommodate the desired flexibility in the batch reservation behaviour for it
 
 ![Making inventory reservation hierarchy flexible](media/Flexible-inventory-reservation-hierarchy.png)
 
-Be aware that when **Batch number** level in the hierarchy is selected, all other dimensions that are above and up to the location will be selected automatically. This behaviour is meant to convey the logic according to which, once you reserve a specific batch number on the order line, all dimensions in the range between the batch number and location are also automatically reserved (see more details in the sections below).
+Be aware that when **Batch number** level in the hierarchy is selected, all other dimensions that are above and up to the location will be selected automatically (all dimensions placed above the **Location** level are pre-selected by default.) This behaviour is meant to convey the logic according to which, once you reserve a specific batch number on the order line, all dimensions in the range between the batch number and location are also automatically reserved (see more details in the sections below).
 
  > [!NOTE]
  > The **Allow reservation on demand order** option only applies to reservation hierarchy levels that are below the warehouse location dimension.
