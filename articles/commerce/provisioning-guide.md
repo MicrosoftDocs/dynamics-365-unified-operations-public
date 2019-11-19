@@ -66,6 +66,40 @@ The following are prerequisites for provisioning your Dynamics 365 Preview envir
 - You have created an **AAD security group** to be used as a **e-Commerce system admins group** and you have its ID available.
 - You have created an **AAD security group** to be used as a **Ratings and Reviews moderator group** and you have its ID available (this can be the same security group as the system administrator group above).
 
+
+### How to find your AAD tenant ID
+
+Your AAD Tenant ID is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
+
+#### Find your AAD tenant ID using the Azure Portal
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. Make sure that you have the correct directory selected.
+1. In the menu on the left, click **Azure Active Directory**.
+1. Select **Properties** under **Manage**.
+1. Your AAD Tenant ID is shown under **Directory ID**.
+
+#### Find your AAD tenant ID using OpenID Connect metadata
+
+Create **OpenID URL** by replacing **\{YOUR_DOMAIN\}** with your domain, e.g. microsoft.com: https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration would become https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration
+
+1. Navigate to the **OpenID URL** with your domain in it.
+1. AAD Tenant Id can be seen in multiple property values.
+1. Locate **authorization_endpoint** and extract the GUID right after **login.microsoftonline.com/**.
+
+### How to find the ID of your AAD security group
+AAD security group ID is a GUID and looks like this example: **436ea7f5-ee6c-40c1-9f08-825c5811066a**
+
+This step assumes that the user is a member of the group they are attempting to locate ID for.
+1. Navigate to the Graph Explorer: https://developer.microsoft.com/en-us/graph/graph-explorer#
+1. Click **Sign In with Microsoft** and sign in using your credentials.
+1. After signing in, click **show more samples** from the left.
+1. Enable **Groups** from the right pane.
+1. Close the right pane.
+1. Click **all groups I belong to**.
+1. Locate your group from the **Response Preview** text box.
+1. Security group ID is noted under property **id**.
+
 ## Provision your Commerce preview environment
 
 These instructions cover the provisioning of a Microsoft Dynamics 365 Commerce preview environment. After successfully completing these steps, you will have a preview environment that is ready to be configured. All the activities described here take place in the Microsoft Lifecycle Services (LCS) portal.
