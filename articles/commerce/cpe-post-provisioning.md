@@ -134,9 +134,9 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 > [!NOTE]
 > You should not attempt to use actual credit card information on the test site under any circumstances!
 
-After these steps are completed, you are ready to start evaluating your preview environment! Use the Commerce site management tool URL to navigate to the authoring experience and the Commerce site URL to navigate to the retail customer site experience.
-
 ## Next steps
+
+After the previous provisioning and configuration steps are completed, you are ready to start evaluating your preview environment. Use the Commerce site management tool URL to navigate to the authoring experience and the Commerce site URL to navigate to the retail customer site experience.
 
 To continue configuring your Commerce preview environment with optional features, proceed to [Configure Commerce preview environment optional features](cpe-optional-features.md).
 
