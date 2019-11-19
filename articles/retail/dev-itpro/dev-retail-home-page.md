@@ -36,6 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
+## Online channel
+- [Online channel extensibility](../../commerce/e-commerce-extensibility/overview.md)
+
 ## Retail components and architecture
 -   [Retail components](../retail-components.md)
 -   [Retail Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
