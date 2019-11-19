@@ -178,27 +178,31 @@ To deploy the environment, follow these steps.
 1. Click **+ Add** to add an environment.
 1. For **Application version**, select **10.0.6**.
 1. For **Platform version**, select **Platform Update 30**.
+
+    ![Project creation - versions](./media/project1.png)
+    
 1. Click **Next**.
 1. For environment topology, choose **DEMO**.
+
+    ![Project creation - topology 1](./media/project2.png)
+    
 1. For environment topology, choose **Dynamics 365 Commerce (Preview) - Demo**.
+
+    ![Project creation - topology 2](./media/project3.png)
+    
 1. If you configured a single Azure Connector earlier, that will be used for this environment. If you configured multiple Azure Connectors, you have the option to select which connector you would like to use: **East US**, **East US 2**, **West US** or **West US 2** (recommended for best end-to-end performance)
 1. Enter an **Environment name**.
 1. Adjust the VM size as you see fit. (We recommend VM SKU **D13 v2**.)
 1. Leave **Advanced settings** as they are.
 1. After reviewing the pricing and licensing terms on the screen, check the box to indicate agreement.
 1. Click **Next**.
+
+    ![Project creation - environment parameters](./media/project4.png)
+    
 1. On the deployment confirmation screen, after verifying that the details are correct, click **Deploy**.
 1. You will return to the **Cloud-hosted environments** view and your environment should appear in the list.
 1. Your requested environment will show as queued and then deploying. It will take some time for all of the environment workflows to complete, so please check back after a few hours (approximately 6 – 9 hours).
 1. Before proceeding, make sure that your environment status is **Deployed**.
-
-![Project creation - versions](./media/project1.png)
-
-![Project creation - topology 1](./media/project2.png)
-
-![Project creation - topology 2](./media/project3.png)
-
-![Project creation - environment parameters](./media/project4.png)
 
 ### Initialize RCSU
 
@@ -235,19 +239,19 @@ To initialize e-Commerce, follow these steps.
 1. Click **Initialize**.
 1. You are returned to the **Retail management** view with the **e-Commerce (Preview)** tab activated. Your e-Commerce initialization has started.
 1. Before proceeding, wait until your e-Commerce initialization status is **INITIALIZATION SUCCESSFUL**.
-1. Under **LINKS** on the bottom right.
+1. Under **LINKS** on the bottom right:
 	* Make note of the link **e-Commerce site**. This is the link to the root of your e-commerce site.
 	* Make note of the link **e-Commerce site management tool**. This is the link to the site management tool.
 	
-## Next steps
-
-To continue the process of provisioning and configuring your Commerce preview environment, proceed to [Configure a Commerce preview environment](cpe-post-provisioning.md).
-
 ## Microsoft Dynamics 365 Commerce preview environment support
 
 If you experience issues while performing the provisioning steps, please visit the [Microsoft Dynamics 365 Commerce Preview Yammer group](https://aka.ms/Dynamics365CommercePreviewYammer) for assistance. 
 
 If you are having issues accessing the Yammer group, you can also reach us via email at **Dynamics365Commerce@microsoft.com**. This email address is not actively monitored so expect a delay in response.
+
+## Next steps
+
+To continue the process of provisioning and configuring your Commerce preview environment, proceed to [Configure a Commerce preview environment](cpe-post-provisioning.md).
 
 ## Additional resources
 
