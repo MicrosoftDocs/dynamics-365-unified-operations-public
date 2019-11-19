@@ -58,7 +58,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 	- Example URL after replacement: `https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/search?fileName=`
 	- This is your **media base URL**, make note of it.
 	
-##### Update the media base URL
+### Update the media base URL
 
 1. Sign in to Microsoft Dynamics 365 Retail.
 1. Using the menu on the left, go to **Modules > Retail > Channel setup > Channel profiles**.
@@ -69,7 +69,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 1. For the property that was added, select **Media Server Base URL** as the property key and enter the media base URL you created earlierfor property value, .
 1. Click **Save**.
 
-### Configure email server (optional)
+## Configure email server (optional)
 
 Please note that the SMTP server or email service you enter here must be accessible from within the Azure subscription you are using for the environment.
 
@@ -87,7 +87,7 @@ Please note that the SMTP server or email service you enter here must be accessi
 1. In the **Send to** field, enter the email address where you want the test email to be delivered.
 1. Click **Send test email**.
 
-### Configure email templates (optional)
+## Configure email templates (optional)
 
 The email template for each transactional event that you wish to send emails for needs to be updated with a valid sender email address.
 
@@ -99,10 +99,11 @@ The email template for each transactional event that you wish to send emails for
 	1. (Optional) In the **Sender name** field, type a name that will be used as sender for this email template.
 1. Click **Save**.
 
-### Customizing email templates (optional)
+## Customize email templates (optional)
 
 You might want to customize the email templates to use different images or update the links in the template to link back to your Preview environment. The steps below explain how to download the default templates, customize them and update the templates in the system.
-1. Using a browser, download [the Microsoft Dynamics 365 Commerce Preview default email templates .zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) containing the following HTML documents to your local computer.
+
+1. Using a browser, download the [Microsoft Dynamics 365 Commerce Preview default email templates .zip file](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) containing the following HTML documents to your local computer.
 	1. Order confirmation template
 	1. Issue gift card template
 	1. New order template
@@ -122,11 +123,13 @@ You might want to customize the email templates to use different images or updat
 	1. (Optional) Customize the **Subject** property of the template.
 	1. Click **Save**.
 
-#### Supported tokens in the email template
+### Supported tokens in the email template
 
 These tokens will be replaced at email rendering time with the actual values that apply to the customer and their order.
 
-**Sales order** - The following tokens apply to the overall sales order.
+#### Sales order
+
+The following tokens apply to the overall sales order.
 
 |Name of the token|Token|
 |---|---|
@@ -140,7 +143,9 @@ These tokens will be replaced at email rendering time with the actual values tha
 |Sales tax|%tax%|
 |Order total|%total%|
 
-**Sales line** - The following tokens are populated for each product in the order.
+#### Sales line
+
+The following tokens are populated for each product in the order.
 
 > [!NOTE]
 > Place the **Product list - start** and **Product list - end** tokens at the beginning and end of the HTML block that repeats for every product.
