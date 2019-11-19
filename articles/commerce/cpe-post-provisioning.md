@@ -125,41 +125,6 @@ To run full data sync in Retail, follow these steps.
 1. Click **OK**.
 1. Click **OK**.
 
-### After these steps you are ready to start evaluating your preview environment!
-Use the **e-Commerce site management tool** URL to navigate to the C1 authoring experience and the **e-Commerce site** URL to navigate to the C2 site experience.
-
-### How to find your AAD Tenant ID
-
-Your AAD Tenant ID is a GUID and looks like this example: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-##### Find your AAD Tenant ID using the Azure Portal
-
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Make sure that you have the correct directory selected.
-1. In the menu on the left, click **Azure Active Directory**.
-1. Select **Properties** under **Manage**.
-1. Your AAD Tenant ID is shown under **Directory ID**.
-
-##### Find your AAD Tenant ID using OpenID Connect metadata
-
-Create **OpenID URL** by replacing **\{YOUR_DOMAIN\}** with your domain, e.g. microsoft.com: https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration would become https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration
-
-1. Navigate to the **OpenID URL** with your domain in it.
-1. AAD Tenant Id can be seen in multiple property values.
-1. Locate **authorization_endpoint** and extract the GUID right after **login.microsoftonline.com/**.
-### How to find the ID of your AAD security group
-AAD security group ID is a GUID and looks like this example: **436ea7f5-ee6c-40c1-9f08-825c5811066a**
-
-This step assumes that the user is a member of the group they are attempting to locate ID for.
-1. Navigate to the Graph Explorer: https://developer.microsoft.com/en-us/graph/graph-explorer#
-1. Click **Sign In with Microsoft** and sign in using your credentials.
-1. After signing in, click **show more samples** from the left.
-1. Enable **Groups** from the right pane.
-1. Close the right pane.
-1. Click **all groups I belong to**.
-1. Locate your group from the **Response Preview** text box.
-1. Security group ID is noted under property **id**.
-
 ### Test credit card information to perform test purchases
 
 In order to perform test transactions on the site, you can use this test credit card information:
@@ -168,6 +133,8 @@ Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
 
 > [!NOTE]
 > You should not attempt to use actual credit card information on the test site under any circumstances!
+
+After these steps are completed, you are ready to start evaluating your preview environment! Use the Commerce site management tool URL to navigate to the authoring experience and the Commerce site URL to navigate to the retail customer site experience.
 
 ## Next steps
 
