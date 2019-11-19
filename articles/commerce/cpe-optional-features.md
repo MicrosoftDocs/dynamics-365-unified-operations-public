@@ -38,10 +38,9 @@ If you want to evaluate the transactional email features, the following prerequi
 - You have an email server available (SMTP server), which can be used from the Azure subscription where you provision the preview environment.
 - You have the server's FQDN/IP, SMTP port number, and authentication details available.
 
-If you want to evaluate Digital Asset Management features, specifically ingest new omni-channel images, the following pre-requisites must be met:
-- You need to have your **CMS tenant name** available. Instructions for finding this name are below.
+If you want to evaluate Digital Asset Management features by ingesting new omni-channel images, you will need to have your **CMS tenant name** available. Instructions for finding this name are below. >>>(Q: where are the instructions?)
 
-## Configure image backend (optional)
+## Configure image backend
 
 ### Find your media base URL
 
@@ -69,7 +68,7 @@ If you want to evaluate Digital Asset Management features, specifically ingest n
 1. For the property that was added, select **Media Server Base URL** as the property key and enter the media base URL you created earlierfor property value, .
 1. Click **Save**.
 
-## Configure email server (optional)
+## Configure email server
 
 Please note that the SMTP server or email service you enter here must be accessible from within the Azure subscription you are using for the environment.
 
@@ -87,7 +86,7 @@ Please note that the SMTP server or email service you enter here must be accessi
 1. In the **Send to** field, enter the email address where you want the test email to be delivered.
 1. Click **Send test email**.
 
-## Configure email templates (optional)
+## Configure email templates
 
 The email template for each transactional event that you wish to send emails for needs to be updated with a valid sender email address.
 
@@ -99,7 +98,7 @@ The email template for each transactional event that you wish to send emails for
 	1. (Optional) In the **Sender name** field, type a name that will be used as sender for this email template.
 1. Click **Save**.
 
-## Customize email templates (optional)
+## Customize email templates
 
 You might want to customize the email templates to use different images or update the links in the template to link back to your Preview environment. The steps below explain how to download the default templates, customize them and update the templates in the system.
 
@@ -109,8 +108,8 @@ You might want to customize the email templates to use different images or updat
 	1. New order template
 	1. Pack order template
 	1. Pick order template
-1. Customize the templates using a text or HTML editor. Please see a list of supported tokens below.
-1. Log in to the environment (HQ).
+1. Customize the templates using a text or HTML editor. Please see the list of [supported tokens](#supported-tokens-in-the-email-template) below.
+1. Sign in to Dynamics 365 Retail.
 1. Using the menu on the left, go to **Modules > Organization administration > Setup > Organization email templates**.
 1. Expand the list on the left to see all the templates.
 1. For each of the templates you wish to customize, perform the following steps:
