@@ -290,23 +290,23 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 9. Post the invoice for the service (miscellaneous charges) purchase, where the total amount is 3,360 Russian rubles (RUB). This amount includes a VAT amount of 360 RUB. The following transactions are generated on the invoice.
 	
-| Ledger account | Corr. Account | Currency | Amount in transaction currency | Amount | Date       |
-|----------------|---------------|----------|--------------------------------|--------|------------|
-| 76.511         | 60.11         | RUB      | 1,000                          | 1,000  | 10/18/2019 |
-| 26.1           | 60.11         | RUB      | 2,000                          | 2,000  | 10/18/2019 |
-| 19.3           | 60.11         | RUB      | 360                            | 360    | 10/18/2019 |
+	| Ledger account | Corr. Account | Currency | Amount in transaction currency | Amount | Date       |
+	|----------------|---------------|----------|--------------------------------|--------|------------|
+	| 76.511         | 60.11         | RUB      | 1,000                          | 1,000  | 10/18/2019 |
+	| 26.1           | 60.11         | RUB      | 2,000                          | 2,000  | 10/18/2019 |
+	| 19.3           | 60.11         | RUB      | 360                            | 360    | 10/18/2019 |
 
 10. On the **Invoice journal** page, select **Charges** > **Allocation**.
 11. On the **Charges allocation** page, in the **Posting date** field, specify **10/18/2019**.
 
-[![Charges allocation page](./media/15-charges-allocation.png)](./media/15-charges-allocation.png)
+	[![Charges allocation page](./media/15-charges-allocation.png)](./media/15-charges-allocation.png)
 
 12. In the **Allocation mode** field, select **Redraw debt**.
 13. In the **Allocation base** section, manually create the following line.
 
-| Counteragent type | Account number | Name        | Posting profile |
-|-------------------|----------------|-------------|-----------------|
-| Customer          | RUF-000002     | Звукоряд ТД | Общий           |
+	| Counteragent type | Account number | Name        | Posting profile |
+	|-------------------|----------------|-------------|-----------------|
+	| Customer          | RUF-000002     | Звукоряд ТД | Общий           |
 
 14. Select the source line that has the Loading reference in the **Item** field, select the base line for the allocation, and then select **Allocation**.
 15. In the lower-right part of the page, in the **Amount** field, enter 1000 for allocation for charges code Loading.
@@ -322,8 +322,8 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 	  After the allocation is posted, you receive a message that contains information about the sales order that was created for the customer. You can then open the sales order to view the invoice transactions that were generated and the following voucher.
 
 	  | Date       | Ledger account | Corr. Account | Currency | Amount in transaction currency | Amount   |
-	|------------|----------------|---------------|----------|--------------------------------|----------|
-	| 10/18/2019 | 62.11          | 76.511        | RUB      | 1,000.00                       | 1,000.00 |  
+	  |------------|----------------|---------------|----------|--------------------------------|----------|
+	  | 10/18/2019 | 62.11          | 76.511        | RUB      | 1,000.00                       | 1,000.00 |  
 
 	  Because of posting, the corrective invoice for the amount of redrawn debt was created. This invoice isn't included in the sales book.
   
@@ -333,7 +333,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** > **Allocation**.
 
-[![Charges allocation page](./media/16-charges-allocation.jpg)](./media/16-charges-allocation.jpg)
+	[![Charges allocation page](./media/16-charges-allocation.jpg)](./media/16-charges-allocation.jpg)
 
 2. In the **Charges allocation** field, select a method for allocating miscellaneous charges.
 3. In the **Posting date** field, select the posting date.
