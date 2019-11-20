@@ -104,7 +104,7 @@ The transit general ledger account is the account that will be credited when tra
 
 1. Go to **Accounts payable** > **Setup** > **Accounts payable parameters**.
 2. On the **General** tab, in the **Transit account** field, select the transit general ledger account to use during the redraw debt transaction.
-3. On the **Number sequence** tab, in the **Number sequence code** field, select a number sequence code for the **Charges voucher**, **Allocation transaction**, **External vendor invoice**, and **Invoice for payment references**.
+3. On the **Number sequence** tab, in the **Number sequence code** field, select a number sequence code for the **Charges voucher**, **Allocation transaction**, **External vendor invoice**, and **Invoice for payment** references.
 
 ## Purchase services (charges) for allocation
 You can purchase services for allocation either from the invoice journal or through a purchase order.
