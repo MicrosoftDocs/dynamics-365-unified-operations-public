@@ -32,3 +32,14 @@ ms.dyn365.ops.version: 10.0.3
 [!include[banner](../includes/banner.md)]
 
 Expense entry has been enhanced through the introduction of **Receipt OCR** processing, designed to improve the end user experience when creating expense reports.
+
+## Key features include:
+
+- Extracts Merchant name, Date, and Total amount from the receipt
+- Attempts to match unattached receipts to an unattached expense transaction
+- Allows the user to create a manually entered expense transactions from the receipt
+
+## Usage examples
+
+1. **Auto attaching receipts with credit card transactions during the creation of an expense report**
+   - Open the **Expense management** workspace
