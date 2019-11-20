@@ -43,9 +43,9 @@ A VAT customer invoice is generated when you post a customer transaction that us
 
 Yes. You can create one tax integration profile for multiple types of documents.
 
-## Can I create an invoice with different sales tax codes and sales tax rates in lines?
+## Can I create an invoice that has different sales tax codes and sales tax rates on lines?
 
-Yes. If you include **Allow multiple tax codes in VAT customer invoices lines for Chinese Golden tax integration**, and there is a tax integration profile with empty value in the **Sales tax code** field (**Accounts receivable > Setup > Tax integration**). When both of these conditions are met, you can create and post invoices with different sales tax codes and rates and you can export these invoices to the file.   
+Yes. If you include **Allow multiple tax codes in VAT customer invoices lines for Chinese Golden tax integration**, and if there is a tax integration profile where the **Sales tax code** field is blank (**Accounts receivable \> Setup \> Tax integration**), you can create and post invoices that have different sales tax codes and sales tax rates. You can also export the invoices as text files.   
 
 ## When should I split a VAT customer invoice?
 You should split a VAT customer invoice if the **Over amount limit** check box is selected on the **VAT invoice integration** page. The **Over amount limit** option is selected for the invoices that have a total invoice amount that exceeds the amount limit that you specify in the **Maximum invoice amount** field on the **Tax integration profiles** page.
