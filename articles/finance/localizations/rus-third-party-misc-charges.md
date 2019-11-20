@@ -218,7 +218,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
   	> [!NOTE]
   	> Allocation base lines are grouped by the **Counteragent type**, **Agreement ID**, and **Posting profile** fields. If there are invoices for one counteragent, but the values of these parameters differ, there will be several lines for that counteragent in the allocation base.
   
-  	b. **Manual**: To manually create allocation base lines, select **New**. In the **Counteragent type**field, select **Customer** or **Vendor**. In the **Account number** field, select the number of counteragent account. You can also select values in the **Agreement ID** and **Posting profile** fields.
+  	b. **Manual**: To manually create allocation base lines, select **New**. In the **Counteragent type** field, select **Customer** or **Vendor**. In the **Account number** field, select the number of counteragent account. You can also select values in the **Agreement ID** and **Posting profile** fields.
   
 6. Select the source and base lines for the allocation, and then edit the **Available for allocation** field as you require.
 7. Select **Allocation** to allocate the miscellaneous charges. The amounts on the selected source lines are allocated to all the selected base lines. You can view the result of the allocation in the lower-right part of the page. For every line from the allocation base, the allocation amount and the miscellaneous charges code are shown.
@@ -279,7 +279,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 	| Loading      | 76.511  |
 	| Unloading    | 26.1    |
 
-7. Create two released products that have the same names as the charges codes that you created in the previous step. For each released product, in the Charges code field, specify the charges code that has the same name.
+7. Create two released products that have the same names as the charges codes that you created in the previous step. For each released product, in the **Charges code** field, specify the charges code that has the same name.
 8. Create a purchase order for services (miscellaneous charges) that has the following two lines.
 
 	| Item number | Quantity | Unit price | Sales tax group | Item sales tax group |
@@ -326,7 +326,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 	  Because of posting, the corrective invoice for the amount of redrawn debt was created. This invoice isn't included in the sales book.
   
-18. To view the information about the allocation of debt, on the Invoice journal page, select Charges > Misc. charges allocation history. Then, in the Allocation mode field, select Redraw debt.
+18. To view the information about the allocation of debt, on the **Invoice journal** page, select **Charges > Misc. charges allocation history**. Then, in the **Allocation mode** field, select **Redraw debt**.
 
 ### Allocate miscellaneous charges to the ledger account
 
