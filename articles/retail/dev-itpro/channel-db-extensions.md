@@ -119,7 +119,9 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 ```
 
 ## Adding extensions
-1. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
+
+1. All extension table column must have NOT NULL constraint enforced because during upgrade if the column value is blank then it will be updated with NULL values and it may cause runtime exception in CRT if the null value is not handled properly.
+2. All the extension tables should have grant permission on **UserRole** and **DeployExtensibilityRole**.
 
     ```sql
     GRANT EXECUTE ON [ext].[EXTTABLENAME] TO [DeployExtensibilityRole];
@@ -128,15 +130,15 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
         GO
     ```
 
-2. Grant **DataSyncUsersRole** permission if your table is going to send receive data from HQ.
+3. Grant **DataSyncUsersRole** permission if your table is going to send receive data from HQ.
 
     ```sql
     GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
-3. If you are creating extended table and want to sync the data back to HQ, then have the primary column of the parent table in the extended table.
-4. Always prefix your table, for example, **ContosoRetailTransactionTable**, so that you can avoid conflicts with other partner/ISV customizations.
+4. If you are creating extended table and want to sync the data back to HQ, then have the primary column of the parent table in the extended table.
+5. Always prefix your table, for example, **ContosoRetailTransactionTable**, so that you can avoid conflicts with other partner/ISV customizations.
 
 ## Attributes
 
