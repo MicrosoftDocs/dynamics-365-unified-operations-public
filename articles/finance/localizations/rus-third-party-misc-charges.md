@@ -120,7 +120,7 @@ You can purchase services for allocation either from the invoice journal or thro
 	> [!NOTE]
   	> If you redraw debt to third parties, you might want to select the sales tax group that has exempt tax codes.
 
-  	b. In the **Charges** section, in the **Charges code** field, select the charges code that you created in the earlier section, Set up a charges code section.
+  	b. In the **Charges** section, in the **Charges code** field, select the charges code that you created in the [Set up a charges code](#set-up-a-charges-code) section.
   
   [![Vendor invoice journal page](./media/5-vendor-invoice-journal.jpg)](./media/5-vendor-invoice-journal.jpg)
  
