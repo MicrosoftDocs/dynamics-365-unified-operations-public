@@ -66,6 +66,9 @@ Upgrade can be completed for one of the following scenarios:
 
 The process for SDK upgrade varies between versions. With version 7.3 and higher, we sealed all of the Retail components and customizations must be completed only by using the extension points. This should result in an easier code upgrade experience. However, if you are upgrading from 7.0, 7.1, or 7.2 and if you have made inline changes, you must move the inline changes to extensions. This will require additional work.
 
+> [!NOTE] 
+> When upgrading to newer version, please don’t remove any of the existing Retail server, Commerce Runtime, Proxy, Hardware station, CDX or Database extension code/APIs because your POS client may depend on this code and removing it will cause runtime exception.  If you want to remove it then during code  upgrade, make sure the client code is also updated to support this change or else it will cause runtime failure. As a best practice extension code must be written in way such that is always backward compatible.
+
 The following tables provide some high-level information about which version the code is sealed. If you are upgrading from an unsealed version to a sealed version, you should identify all of your customizations and move any inline customizations to extensions. To move the inline customizations, verify that you have all of the necessary extension points to do this. If you don't, submit an extensibility request. 
 
 > [!NOTE]
