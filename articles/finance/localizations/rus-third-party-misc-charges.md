@@ -357,18 +357,18 @@ The cost price of an item can be adjusted many times by using the functionality 
 3. Select the transaction on the receipt item that you want to explore the cost structure for.
 4. To view inventory cost adjustment transactions, on the Action Pane, on the **Inventory** tab, in the **Costing** group, select **Settlements**. The **Settlements** page includes the following fields:
 
-  - **Charges code** – The miscellaneous charges code that has been allocated to the item receipt transaction.
-  - **Vendor account** – The account of the vendor that the miscellaneous charges were purchased from.
-  - **Invoice** – The invoice number of the miscellaneous charges purchase.
+  	- **Charges code** – The miscellaneous charges code that has been allocated to the item receipt transaction.
+  	- **Vendor account** – The account of the vendor that the miscellaneous charges were purchased from.
+  	- **Invoice** – The invoice number of the miscellaneous charges purchase.
   
-  [![Settlements page](./media/17-settlements.jpg)](./media/17-settlements.jpg)
+  	[![Settlements page](./media/17-settlements.jpg)](./media/17-settlements.jpg)
   
   > [!NOTE]
   > If the Vendor account and Invoice fields aren't filled in, the cost adjustment operation was done by the standard method for miscellaneous charges allocation.
   
 5. To view more information about the list and the amounts of miscellaneous charges that have been included in the cost price of the posted item, on the **Inventory transactions** page, on the Action Pane, on the **Inventory** tab, in the **Costing** group, select **Cost explorer**.
 
-[![Cost explorer page](./media/18-cost-explorer.jpg)](./media/18-cost-explorer.jpg)
+	[![Cost explorer page](./media/18-cost-explorer.jpg)](./media/18-cost-explorer.jpg)
  
 ## View the allocation history for miscellaneous charges
 ### View the allocation history from the invoice journal
@@ -377,7 +377,7 @@ The cost price of an item can be adjusted many times by using the functionality 
 2. Select **Charges** > **Misc. charges allocation history** to open the **Charges allocation** page.
 The **Allocation base** section shows the allocation base and allocation result, depending on the value in the **Allocation mode** field. To change the allocation mode, select **Edit**, and then, in the **Allocation mode** field, select a new value.
 
-[![Charges allocation page](./media/19-charges-allocation.jpg)](./media/19-charges-allocation.jpg)
+	[![Charges allocation page](./media/19-charges-allocation.jpg)](./media/19-charges-allocation.jpg)
 
 3. On the header of the **Charges allocation** page, set the **Show cancelled operations** option to **Yes** to show the miscellaneous charges allocation transactions that have been canceled and the transactions that adjust them.
 4. Select **Inquiries** > **Voucher** to view the transactions that were created because of allocation.
@@ -388,9 +388,9 @@ The allocation history can be shown either for a specific invoice or for all inv
 1. Go to **Accounts payable** > **Inquiries and reports** > **Misc. charges allocation history**.
 2. Select **Edit**, and then, in the **Start date** and **End date** fields, specify a period to filter the invoices for the purchase of miscellaneous charges.
 
-The **Allocation source** section shows the source lines for all invoices from the period. The **Allocation base** section shows the allocation base and allocation result.
+	The **Allocation source** section shows the source lines for all invoices from the period. The **Allocation base** section shows 	the allocation base and allocation result.
 
-[![Charges allocation page, Allocation source section](./media/20-charges-allocation.jpg)](./media/20-charges-allocation.jpg)
+	[![Charges allocation page, Allocation source section](./media/20-charges-allocation.jpg)](./media/20-charges-allocation.jpg)
  
 ## Cancel miscellaneous charges allocation
 1. Go to **Accounts payable** > **Inquiries and reports** > **Misc. charges allocation history**. Alternatively, on the **Invoice journal** page, select **Charges** > **Misc. charges allocation history**.
@@ -402,7 +402,7 @@ The **Allocation source** section shows the source lines for all invoices from t
 
 4. In the **Date of cancellation** field, enter the date of cancellation.
 
-[![Charges allocation page](./media/21-charges-allocation.jpg)](./media/21-charges-allocation.jpg)
+	[![Charges allocation page](./media/21-charges-allocation.jpg)](./media/21-charges-allocation.jpg)
 
 5. Select **Cancel**.
 
