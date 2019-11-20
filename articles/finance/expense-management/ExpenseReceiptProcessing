@@ -83,4 +83,14 @@ Expense entry has been enhanced through the introduction of **Receipt OCR** proc
  
  For more informaton on the Expense reports re-imagined, see [Expense reports reimagined](ExpenseWorkspaceNew.md)
 
-## Frequently 
+## Frequently Asked Questions
+
+**Does Microsoft use my data for their models?**
+- No, we have built a general machine learning model for our receipt processing service that is not based on the receipts you upload.
+
+**Where is this feature available and processed?**
+- Currently we support the United States.
+
+**Where do my receipts go?**
+- Microsoft Dynamics 365 Finance will reach out to our Cognitive Services in order to extract the field data. The cognitive services will retain a copy of your receipt for up to 24 hours while procesing completes. Once completed, Cognitive Services will remove the receipt. Receipts are still stored within Microsoft Dynamics 365 Finance.
+- For more information, reference [Enable receipt understanding with Form Recognizer's new capability](https://azure.microsoft.com/en-us/blog/enable-receipt-understanding-with-form-recognizer-s-new-capability/).
