@@ -28,7 +28,6 @@ ms.dyn365.ops.version: 8.1
 ---
 
 # Third party miscellaneous charges
-[!include [banner](../includes/banner.md)]
 
 This topic explains how to handle services that are purchased though a separate invoice as miscellaneous charges. The cost of these services can be included in the cost price of the purchased goods or written off as a cost, like the miscellaneous charges that are defined in the invoice for the purchase of goods. Additionally, the debt on these services can be redrawn to third parties, such as customers or vendors. In this case, a facture is created that won't be included in the sales book or purchase book.
 
