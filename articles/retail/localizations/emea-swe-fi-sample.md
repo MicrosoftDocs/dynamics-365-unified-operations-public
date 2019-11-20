@@ -351,7 +351,7 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 ## Migrating from legacy integration sample
 
-If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future, you may need to upgrade, make minor code and configuration adjustments in the extensions that you've built, and rebuild your solutions. No major changes are required in the extension logic that you've created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for and execute the uptake for your environment.
+If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you may need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future, you may need to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for, and execute the uptake for your environment.
 
 In case you are planning to uptake the fiscal integration for Sweden it's required to disable previously released sample extensions for Retail POS integration with control units for Sweden.
 
