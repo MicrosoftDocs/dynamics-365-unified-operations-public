@@ -1,0 +1,34 @@
+---
+# required metadata
+
+title: Expense receipt processing
+description: This topic provides information about receipt OCR processing, designed to improve the end user experience when creating a new expense report in Microsoft Dynamics 365 Finance.
+author: stevensporen
+manager: AnnBe
+ms.date: 11/20/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application Usr
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Operations, Core 
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global 
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: stsporen
+ms.search.validFrom: 2019-6-30 
+ms.dyn365.ops.version: 10.0.3 
+---
+
+# Expense receipt processing
+
+[!include[banner](../includes/banner.md)]
+
+Expense entry has been enhanced through the introduction of **Receipt OCR**
