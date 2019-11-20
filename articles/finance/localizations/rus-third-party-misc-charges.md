@@ -50,8 +50,8 @@ There are three modes of miscellaneous charges allocation:
 5. Optional: In the **Item sales tax group** field, select an item sales tax group.
 6. In the **Maximum amount** field, enter the maximum amount that is allowed for this charges code. This field is used to validate charges for vendor invoices.
 
-> [!NOTE]
-> To turn on the functionality for validating charges, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Enable invoice matching validation** option to **Yes**.
+	> [!NOTE]
+	> To turn on the functionality for validating charges, on the **Accounts payable parameters** page, on the **Invoice 		validation** tab, set the **Enable invoice matching validation** option to **Yes**.
 
 7. On the **Posting** FastTab, in the **Debit** section, follow these steps:
 
@@ -195,10 +195,10 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 11. In the **Allocation base** section, select the **Select** check box for the invoice lines that the miscellaneous charges should be allocated to.
 12. Select **Allocation** to allocate the miscellaneous charges. The amounts on the selected source lines are allocated to all the selected base lines. You can view the result of the allocation in the lower-right part of the page. For every line from the allocation base, the allocation amount and the miscellaneous charges code are shown.
 
-> [!NOTE]
->
-> - You can change the method of allocation in the **Allocation method** field as you require. You will then receive a message that prompts you to recalculate the lines of the allocation result. Select **Yes** to recalculate the result.
-> - You can manually adjust the allocation result in the **Amount** field in the lower-right part of the page. If the value that you enter exceeds the total amount that is available for allocation, you receive an informational message.
+	> [!NOTE]
+	>
+	> - You can change the method of allocation in the **Allocation method** field as you require. You will then receive a message that prompts you to recalculate the lines of the allocation result. Select **Yes** to recalculate the result.
+	> - You can manually adjust the allocation result in the **Amount** field in the lower-right part of the page. If the value that you enter exceeds the total amount that is available for allocation, you receive an informational message.
 
 13. Select **Post** to post the allocation transaction.
 14. Select **Inquiries** > **Voucher** to view the transactions that are created because of allocation.
@@ -224,10 +224,10 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 6. Select the source and base lines for the allocation, and then edit the **Available for allocation** field as you require.
 7. Select **Allocation** to allocate the miscellaneous charges. The amounts on the selected source lines are allocated to all the selected base lines. You can view the result of the allocation in the lower-right part of the page. For every line from the allocation base, the allocation amount and the miscellaneous charges code are shown.
 
-> [!NOTE]
->
-> - For manually created allocation base lines, the result of the allocation is 0 (zero). In this case, you must manually enter the miscellaneous charges amounts in the **Amount** field in the lower-right part of the page. You can also change the amounts for automatically created allocation base lines. If the value that you enter exceeds the total amount that is available for allocation, you will receive an informational message.
-> - You can change the method of allocation in the **Charges allocation** field. For automatically created allocation base lines, the amounts will be recalculated. For manually created allocation base lines, the amounts that you entered will be set to 0 (zero).
+	> [!NOTE]
+	>
+	> - For manually created allocation base lines, the result of the allocation is 0 (zero). In this case, you must manually enter the miscellaneous charges amounts in the **Amount** field in the lower-right part of the page. You can also change the amounts for automatically created allocation base lines. If the value that you enter exceeds the total amount that is available for allocation, you will receive an informational message.
+	> - You can change the method of allocation in the **Charges allocation** field. For automatically created allocation base lines, the amounts will be recalculated. For manually created allocation base lines, the amounts that you entered will be set to 0 (zero).
 
 8. Select **Post** to post the allocation transaction.
 9. In the **Posting** dialog box, follow these steps:
