@@ -258,35 +258,35 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 1. Create a sales tax group that is named **VAT18-1** and that has sales tax code **VAT18**.
 
-[![Sales tax groups page](./media/11-sales-tax-groups.png)](./media/11-sales-tax-groups.png)
+	[![Sales tax groups page](./media/11-sales-tax-groups.png)](./media/11-sales-tax-groups.png)
 
 2. Create an exempt sales tax group that has standard sales tax code **VAT18**, and select the **Exempt** check box.
 
-[![Exempts check box selected](./media/12-sales-tax-groups.png)](./media/12-sales-tax-groups.png)
+	[![Exempts check box selected](./media/12-sales-tax-groups.png)](./media/12-sales-tax-groups.png)
 
 3. For the sales tax group, in the **Transit tax group** field, specify the exempt sales tax group.
 
-[![Sales tax groups page](./media/13-sales-tax-groups.png)](./media/13-sales-tax-groups.png)
+	[![Sales tax groups page](./media/13-sales-tax-groups.png)](./media/13-sales-tax-groups.png)
 
 4. Create an item sales tax group that has sales tax code **VAT18**.
 
-[![Item sales tax group](./media/14-item-sales-tax-groups.png)](./media/14-item-sales-tax-groups.png)
+	[![Item sales tax group](./media/14-item-sales-tax-groups.png)](./media/14-item-sales-tax-groups.png)
 
 5. Set up transit account **76.511**. For instructions, see the Set up a transit account section.
 6. Set up the following two charges codes. For instructions, see the Set up a charges code section.
 
-| Charges code | Account |
-|--------------|---------|
-| Loading      | 76.511  |
-| Unloading    | 26.1    |
+	| Charges code | Account |
+	|--------------|---------|
+	| Loading      | 76.511  |
+	| Unloading    | 26.1    |
 
 7. Create two released products that have the same names as the charges codes that you created in the previous step. For each released product, in the Charges code field, specify the charges code that has the same name.
 8. Create a purchase order for services (miscellaneous charges) that has the following two lines.
 
-| Item number | Quantity | Unit price | Sales tax group | Item sales tax group |
-|-------------|----------|------------|-----------------|----------------------|
-| Loading     | 1        | 1,000      |                 |                      |
-| Unloading   | 1        | 2,000      | VAT18-1         | VAT18                |
+	| Item number | Quantity | Unit price | Sales tax group | Item sales tax group |
+	|-------------|----------|------------|-----------------|----------------------|
+	| Loading     | 1        | 1,000      |                 |                      |
+	| Unloading   | 1        | 2,000      | VAT18-1         | VAT18                |
 
 9. Post the invoice for the service (miscellaneous charges) purchase, where the total amount is 3,360 Russian rubles (RUB). This amount includes a VAT amount of 360 RUB. The following transactions are generated on the invoice.
 	
