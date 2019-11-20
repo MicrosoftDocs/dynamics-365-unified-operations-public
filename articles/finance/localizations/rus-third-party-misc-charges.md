@@ -162,25 +162,25 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 1. Go to **Accounts payable** > **Inquiries and reports** > **Invoice** > **Invoice journal**.
 2. Select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** > **Allocation**.
 
-[![Invoice journal page, Charges drop-down](./media/8-invoice-journal.jpg)](./media/8-invoice-journal.jpg)
+	[![Invoice journal page, Charges drop-down](./media/8-invoice-journal.jpg)](./media/8-invoice-journal.jpg)
 
 3. On the **Charges allocation** page, select **Edit**.
 
-[![Edit the Charges allocation page](./media/9-charges-allocation.jpg)](./media/9-charges-allocation.jpg)
+	[![Edit the Charges allocation page](./media/9-charges-allocation.jpg)](./media/9-charges-allocation.jpg)
 
 4. In the **Charges allocation** field, select one of the following methods for allocating miscellaneous charges:
 
-  - **Net amount** – Charges are allocated according to each line amount, relative to the total net amount of the service invoice.
-  - **Quantity** – Charges are allocated according to the number of units for each line, relative to the total number of units for the service invoice.
-  - **Gross weight** – Charges are allocated equally, according to the gross weight of the items that are received.
-  - **Volume** – Charges are allocated equally, according to the volume of the items that are received.
+  	- **Net amount** – Charges are allocated according to each line amount, relative to the total net amount of the service invoice.
+  	- **Quantity** – Charges are allocated according to the number of units for each line, relative to the total number of units for 	the service invoice.
+  	- **Gross weight** – Charges are allocated equally, according to the gross weight of the items that are received.
+  	- **Volume** – Charges are allocated equally, according to the volume of the items that are received.
 
 5. In the **Posting date** field, select the posting date.
 6. In the **Allocation mode** field, select one of the three modes of miscellaneous charges allocation:
 
-  - Include to the cost price
-  - Redraw debt
-  - Write-off to cost
+  	- Include to the cost price
+  	- Redraw debt
+  	- Write-off to cost
 
 	To allocate charges to the cost price of the products, select **Include to the cost price**.
 
