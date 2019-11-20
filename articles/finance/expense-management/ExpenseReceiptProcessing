@@ -31,4 +31,4 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include[banner](../includes/banner.md)]
 
-Expense entry has been enhanced through the introduction of **Receipt OCR**
+Expense entry has been enhanced through the introduction of **Receipt OCR** processing, designed to improve the end user experience when creating expense reports.
