@@ -187,8 +187,8 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 7. In the **Allocation base** section, select **Choose** to specify the selection criteria that are used to transfer the invoice lines to the allocation base.
 8. In the **Choose** dialog box, select **Add** to add a line, and enter the following line details:
 
-  - In the **Table** field, select a value.
-  - In the **Field** field, select the field that you're specifying the criteria for. In the **Criteria** field, enter the criteria.
+  	- In the **Table** field, select a value.
+  	- In the **Field** field, select the field that you're specifying the criteria for. In the **Criteria** field, enter the 		criteria.
 
 9. Select **OK**. The allocation base lines are created.
 10. In the **Allocation source** section, select the **Select** check box for a posted miscellaneous charges invoice. In the **Available for allocation** field, you can change the amount that is available for allocation.
@@ -207,7 +207,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 
 1. On the **Invoice journal** page, select the invoice for the purchase order that you created earlier that includes the service. Then select **Charges** > **Allocation**.
 
-[![Charges allocation page](./media/10-charges-allocation.jpg)](./media/10-charges-allocation.jpg)
+	[![Charges allocation page](./media/10-charges-allocation.jpg)](./media/10-charges-allocation.jpg)
  
 2. In the **Charges allocation** field, select a method for allocating miscellaneous charges.
 3. In the **Posting date** field, select the posting date.
@@ -219,7 +219,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
   	> [!NOTE]
   	> Allocation base lines are grouped by the **Counteragent type**, **Agreement ID**, and **Posting profile** fields. If there are invoices for one counteragent, but the values of these parameters differ, there will be several lines for that counteragent in the allocation base.
   
-  	b. Manual: To manually create allocation base lines, select **New**. In the **Counteragent type**field, select **Customer** or **Vendor**. In the **Account number** field, select the number of counteragent account. You can also select values in the **Agreement ID** and **Posting profile** fields.
+  	b. **Manual**: To manually create allocation base lines, select **New**. In the **Counteragent type**field, select **Customer** or **Vendor**. In the **Account number** field, select the number of counteragent account. You can also select values in the **Agreement ID** and **Posting profile** fields.
   
 6. Select the source and base lines for the allocation, and then edit the **Available for allocation** field as you require.
 7. Select **Allocation** to allocate the miscellaneous charges. The amounts on the selected source lines are allocated to all the selected base lines. You can view the result of the allocation in the lower-right part of the page. For every line from the allocation base, the allocation amount and the miscellaneous charges code are shown.
