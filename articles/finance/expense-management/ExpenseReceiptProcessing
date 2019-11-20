@@ -49,3 +49,38 @@ Expense entry has been enhanced through the introduction of **Receipt OCR** proc
    - Adding both receipts and expenses will trigger the automatically matching of the receipts against the expenses.
    
 2. **Create an expense or match an expense from a receipt**
+   - Within an expense report, attach a receipt through **Add receipts** under the **Receipts** tab.
+   - Under the displayed uploaded image of the receipt, note the ability to **Create** or **Match**.
+   - **Create** will create a new manually entered expense transaction, populating the extracted values from the receipt.
+   - **Match** will attempt to match an existing expense to the receipt.
+   
+ ## Installation
+ 
+ This feature works in combination with the **Expense reports re-imagined** feature to drive towards our view of a cleaner and simple expense experience.
+ 
+ To use these advanced expense capabilities, install the **Expense Management Service** Add-in for Dynamics 365 and enable the features in your instance. YOu can access the add-in from our LCS project.
+ 
+ - Sign in to LCS and open the desired environment.
+ - Go to **Full details**.
+ - Select **Maintain**, or scroll down to the **Environment add-ins** FastTab.
+ - Select **Install a new add-in**.
+ - Select **Expense Management Service**.
+ - Follow the installation guide and agree to the terms and conditions.
+ - Select **Install**.
+ 
+ Turn on the following features through the **Feature management** workspace:
+ - **Expense reports re-imagined**
+ - **Auto-match and create expense from receipt**
+ 
+ When you turn on these features, the following actions occur:
+ - The existing expense workspace is replaced with the new workspace.
+ - A new menu item for expense field visiblity is added.
+ - No existing menu items for expense reports (the existing page) or expense report fields are removed.
+ - Workflows and any approvals still take you to the existing expense reports page.
+ - Receipts will be processes through Microsoft's cognitive services with metadata extracted and added.
+ - Additional option for creating an expense report to include matched unattached receipts.
+ - Additional option within an **Expense report** to create an **Expense line** from a receipt, or match to an existing **Expense line**.
+ 
+ For more informaton on the Expense reports re-imagined, see [Expense reports reimagined](ExpenseWorkspaceNew.md)
+
+## Frequently 
