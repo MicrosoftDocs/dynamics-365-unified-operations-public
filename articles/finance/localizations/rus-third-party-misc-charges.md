@@ -344,8 +344,8 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 8. Select the source and base lines for the allocation, and then edit the **Available for allocation** field as you require.
 9. Select **Allocation** to allocate the miscellaneous charges. The system creates lines where the amount is 0 (zero). For each selected allocation base line, in the **Amount** field in the lower-right part of the page, enter the amount of the miscellaneous charges.
 
-> [!NOTE]
-> If the value that you enter exceeds the total amount that is available for allocation, you will receive an informational message.
+	> [!NOTE]
+	> If the value that you enter exceeds the total amount that is available for allocation, you will receive an informational message.
 
 10.	Select **Post** to post the allocation transaction. The operation for writing off miscellaneous charges to the ledger account is performed. Transactions are created for all selected lines in the allocation result.
 11.	Select **Inquiries** > **Voucher** to view the transactions that are created because of allocation.
@@ -363,8 +363,8 @@ The cost price of an item can be adjusted many times by using the functionality 
   
   	[![Settlements page](./media/17-settlements.jpg)](./media/17-settlements.jpg)
   
-  > [!NOTE]
-  > If the Vendor account and Invoice fields aren't filled in, the cost adjustment operation was done by the standard method for miscellaneous charges allocation.
+  	> [!NOTE]
+  	> If the Vendor account and Invoice fields aren't filled in, the cost adjustment operation was done by the standard method for miscellaneous charges allocation.
   
 5. To view more information about the list and the amounts of miscellaneous charges that have been included in the cost price of the posted item, on the **Inventory transactions** page, on the Action Pane, on the **Inventory** tab, in the **Costing** group, select **Cost explorer**.
 
@@ -397,8 +397,8 @@ The allocation history can be shown either for a specific invoice or for all inv
 2. In the **Allocation mode** field, select the allocation mode to cancel the allocation for.
 3. Select the lines to cancel.
 
-> [!NOTE]
-> Lines that were created by one allocation operation can't be partially canceled. If you select one line from an allocation operation, all lines from that operation are automatically selected.
+	> [!NOTE]
+	> Lines that were created by one allocation operation can't be partially canceled. If you select one line from an allocation operation, all lines from that operation are automatically selected.
 
 4. In the **Date of cancellation** field, enter the date of cancellation.
 
@@ -406,9 +406,9 @@ The allocation history can be shown either for a specific invoice or for all inv
 
 5. Select **Cancel**.
 
-> [!NOTE]
-> 
-> - If the date of cancellation is before the date of at least one transaction that is marked for cancellation, the operation won't be performed, and you will receive an error message.
-> - If the redrawing of debt is being canceled, you will receive an informational message that contains links to the documents that were created for customers or vendors.
+	> [!NOTE]
+	> 
+	> - If the date of cancellation is before the date of at least one transaction that is marked for cancellation, the operation won't be performed, and you will receive an error message.
+	> - If the redrawing of debt is being canceled, you will receive an informational message that contains links to the documents that were created for customers or vendors.
 
 6.	Select **Inquiries** > **Voucher** to view the transactions that were created because of allocation cancellation.
