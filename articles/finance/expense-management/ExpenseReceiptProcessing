@@ -23,8 +23,8 @@ ms.search.scope: Operations, Core
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: stsporen
-ms.search.validFrom: 2019-6-30 
-ms.dyn365.ops.version: 10.0.3 
+ms.search.validFrom: 2019-11-20 
+ms.dyn365.ops.version: 10.0.8 
 ---
 
 # Expense receipt processing
