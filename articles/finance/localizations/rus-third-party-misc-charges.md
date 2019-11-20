@@ -232,9 +232,9 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 8. Select **Post** to post the allocation transaction.
 9. In the **Posting** dialog box, follow these steps:
 
-  a. Set the **Credit correction** option to **Yes** to post the allocation as a storno transaction. Otherwise, the allocation will be created as a reverse transaction.
-  b. Set the **Create invoice for payment option** to **Yes** to create an invoice for payment when the allocation is posted.
-  c. Select **OK**. The operation for reissuing debt to counteragents is performed. Transactions will be created for all selected lines in the allocation result.
+  	a. Set the **Credit correction** option to **Yes** to post the allocation as a storno transaction. Otherwise, the allocation 		will be created as a reverse transaction.
+  	b. Set the **Create invoice for payment option** to **Yes** to create an invoice for payment when the allocation is posted.
+  	c. Select **OK**. The operation for reissuing debt to counteragents is performed. Transactions will be created for all selected 	lines in the allocation result.
 
 Because of posting, one of the following events occur, depending on whether the invoice that includes the service for allocation was created from the vendor invoice journal or through a purchase order:
 
