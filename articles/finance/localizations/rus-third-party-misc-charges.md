@@ -97,7 +97,7 @@ The transit tax group is used in the invoice that is created during the redraw d
 5. Select **Save**.
 
 [![Sales tax groups with transit tax](./media/4-sales-tax-groups.jpg)](./media/4-sales-tax-groups.jpg)
- 
+  
 ### Set up a transit account
 The transit general ledger account is the account that will be credited when transactions are redrawn to the third party. You must set up the ledger account to redraw charges to third parties.
 
