@@ -273,7 +273,7 @@ You can allocate miscellaneous charges on the **Charges allocation** page. This 
 	[![Item sales tax group](./media/14-item-sales-tax-groups.png)](./media/14-item-sales-tax-groups.png)
 
 5. Set up transit account **76.511**. For instructions, see the [Set up a transit account](#set-up-a-transit-account) section.
-6. Set up the following two charges codes. For instructions, see the Set up a charges code section.
+6. Set up the following two charges codes. For instructions, see the [Set up a charges code](#set-up-a-charges-code) section.
 
 	| Charges code | Account |
 	|--------------|---------|
