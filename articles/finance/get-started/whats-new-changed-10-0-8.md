@@ -46,7 +46,23 @@ For more information about Platform update 32, see [Additional resources](../../
 
 Description 
 
+## Expense receipt processing
 
+[!NOTE]
+> - This feature currently only supports the English language receipts.
+> - This feature is currently only supported in the United States.
+> - This feature does not use your data to build the learning. We have built a general machine learning model for receipt processing that is not based on the receipts you upload.
+> - Dynamics 365 Finance will reach out to our Cognitive Services in order to extract the field data, the cognitive services will retain a copy of your receipt for up to 24 hours while processing completes. Once completed Cognitive Services will remove the receipt. Receipts are stored within Dynamics 365 Finance. Reference [Enable receipt understanding with Form Recognizer's new capability](https://azure.microsoft.com/en-us/blog/enable-receipt-understanding-with-form-recognizer-s-new-capability/)
+
+Expense entry has been enhanced through the introduction of Receipt OCR processing, designed to improve the end user experience when creating expense reports.
+
+Key features:
+- Extracts Merchant name, Date and Total amount from a receipt
+- Attempts to match the receipt to an expense transaction
+
+This feature is supported using the **Expense reports re-imagined** feature. To turn on this feature, use the **Feature management** workspace and enable **Expense reports re-imagined** and **Auto-match and create expense from receipt** features.
+
+For more information, see [Expense reports reimagined](ExpenseWorkspaceNew.md).
 
 
 
