@@ -255,7 +255,7 @@
         - name: Update code and environments for Retail projects
           href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
         - name: Testing and performance issues
-          href: ../retail/dev-itpro/retail-implementation-testing-performance.md   
+          href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json   
     - name: System administration
       items:
       - name: Environment configuration
@@ -271,7 +271,7 @@
         - name: Initialize seed data in new Retail environments
           href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
         - name: Info codes and info code groups
-          href: ../retail/info-codes-retail.md     
+          href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json     
       - name: Store channel management 
         items:
         - name: Set up retail channels
