@@ -64,11 +64,7 @@ The following reports, with Excel-based templates, will available with the relea
 
 More reports will become available. Special notifications about additional reports will be sent separately. 
 
-A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# Example: Enable, configure, and use Business document management
-
-To learn more about this feature, complete the example in this topic.
+A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). To learn more about this feature, complete the example in this topic.
 
 ## Configure ER parameters
 
@@ -130,9 +126,12 @@ Use the following procedure to enable Business document management functionality
 3. Select **Enable now** to turn on the selected feature.
 4. Refresh the page to access the new feature.
 
+>[!NOTE]
+> Also you need to enable **Office-like UI experience for Business document management** for using new business document management interface
+
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
-For more information about activating new features, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+For more information about activating new features, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure parameters
 
@@ -149,7 +148,7 @@ For this document type, the following attribute values must be selected.
 | Group               | File                  |
 | Location            | SharePoint            |
 
-For information about how to set up the required document management parameters and document types, see [Configure document management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
@@ -264,21 +263,31 @@ The **Edit template** option is available for the selected template. This option
 
 ### Initiate editing templates owned by other providers
 
-1. In the Business document management workspace, select the **Customer FTI report (GER)** template in the list.
-2. Select the **Details** tab.
+1. In the Business document management workspace, select the **New document**.
 
-![Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
+![Business document management workspace page](./media/BDM_overview_new_template1.png)
 
-The **New document** option is available for the selected template. This option is always available for a template in an ER format configuration provided by another provider (**Microsoft** in this example). When **New document** is selected, a new template will be available to edit. The edited template will then be stored in a new ER format configuration that is automatically generated.
+2. Select the document that you want to use as a template.
+
+![Business document management workspace page](./media/BDM_overview_new_template2.png)
+
+3. Click **Create document**
+4. In the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
+5. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
+6. In the **Comment** field, change the remark for the automatically created revision of the editable template.
+7. Select **OK** to confirm the start of the editing process
+
+![Business document management workspace page](./media/BDM_overview_new_template3.png)
+
+The **New document** option is always available for a template in an ER format configuration provided by another provider (Microsoft in this example). When you click **New document**  you see all templates owned by current and other providers. After you choose the template it will be opened for editing. The edited template will then be stored in a new ER format configuration that is automatically generated.
 
 ### Start editing a template
 
-1. From the selected template, select **New document**.
-2. In the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
-3. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
-4. In the **Comment** field, change the remark for the automatically created revision of the editable template.
+1. From the selected template, select **Edit document**.
+2. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
+3. In the **Comment** field, change the remark for the automatically created revision of the editable template.
 
-    ![Business document management workspace page](./media/BDM-Overview-EditingTemplate4.png)
+    ![Business document management workspace page](./media/BDM_overview_new_template4.png)
 
 5. Select **OK** to confirm the start of the editing process.
 
@@ -382,7 +391,7 @@ When you edit the template from an ER format that is owned by the current active
 
 ## Frequently asked questions
 
-#### I selected **New document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
+#### I selected **Edit document**, but instead of opening the **BDM template editor** page in Finance and Operations, I have been sent to the Office 365 web page.
 This is a known issue with the Office 365 redirection. This happens when you sign to Office 365 the first time. To work around this issue, select the **Back** button of your browser to navigate back.
 
 #### I understand how to edit a template by using Office 365 in the first application session and how to use the template in the second application session adjusting the template to see how my changes affect the generated business document. Can I do this using the Office desktop application?
