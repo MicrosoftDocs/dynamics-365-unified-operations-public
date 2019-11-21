@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 10/07/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
