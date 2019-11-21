@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Talent (November 12, 2019)
+title: What's new or changed in Dynamics 365 Talent (November 19, 2019)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 11/12/2019
+ms.date: 11/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -25,11 +25,11 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: dkrame
-ms.search.validFrom: 2019-11-12
+ms.search.validFrom: 2019-11-19
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 Talent (November 12, 2019)
+# What's new or changed in Dynamics 365 Talent (November 19, 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -45,17 +45,11 @@ This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
 
-Changes described in this section apply to build number 8.1.2604. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
+Changes described in this section apply to build number 8.1.2621. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-### Office location isn't updated via Excel workbook (369727)
+### Platform update 31 for Finance and Operations apps
 
-With this change, you can now update the office location by using the Office workbook designer.
-
-## Coming soon
-
-### Print performance reviews
-
-See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+For more information, see [Preview features in Platform update 31 for Finance and Operations apps (January 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31).
 
 ### Feature management workspace (383856)
 
@@ -66,3 +60,33 @@ All new features remain in preview for at least 30 days, and typically 30-60 day
 At times, an integral feature will be on by default and can't be turned off (for example, the **Feature management** workspace).
  
 Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
+
+### Message appears when canceled action exists for a position (382887)
+
+The following message no longer appears when you select a specific position and a canceled action is all that's available for the position: **An incomplete action is in progress for position xxxxxx**.
+
+### In learning analytics, the Course type and Status display incorrect data (381151)
+
+This week's release updated learning analytics to correctly display **Course type** and **Status**.
+
+### Personnel number should display in the New worker form banner (383832)
+
+In the **New worker** form, **Personnel number** now displays in the banner for quick reference.
+
+### Position start date determines the Job record to use when retrieving a compensation level during hire (350361)
+
+In this release, **Compensation start date** determines the level assigned to the new job.
+
+### Custom pick list fields in the Position table aren't synchronized to Common Data Service (387503)
+
+With this release, pick list items are now synchronized with Common Data Service.
+
+### Worker address entity doesn't synchronize with Common Data Service while importing new data (349673)
+
+In this week's release, address data now synchronizes with Common Data Service while importing new data.
+
+## In preview
+
+### Print performance reviews
+
+See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
