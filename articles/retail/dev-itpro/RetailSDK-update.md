@@ -5,7 +5,7 @@ title: Upgrade the Retail channel extension to the latest Retail SDK
 description: This topic explains how to upgrade the retail channel extension from earlier releases to the latest update of the Retail SDK. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/29/2018
+ms.date: 11/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -65,6 +65,9 @@ Upgrade can be completed for one of the following scenarios:
   - Upgrade to the latest application release.
 
 The process for SDK upgrade varies between versions. With version 7.3 and higher, we sealed all of the Retail components and customizations must be completed only by using the extension points. This should result in an easier code upgrade experience. However, if you are upgrading from 7.0, 7.1, or 7.2 and if you have made inline changes, you must move the inline changes to extensions. This will require additional work.
+
+> [!NOTE] 
+> When upgrading to newer version, do not remove any of the existing Retail server, Commerce Runtime, Proxy, Hardware station, CDX, or Database extension code/APIs. Your POS client may depend on this code and removing it will cause runtime exception errors. If you want to remove it then during code upgrade, make sure that the client code is also updated to support this change, otherwise runtime failure will occur. As a best practice, extension code must be written in such a way that it is always backward compatible.
 
 The following tables provide some high-level information about which version the code is sealed. If you are upgrading from an unsealed version to a sealed version, you should identify all of your customizations and move any inline customizations to extensions. To move the inline customizations, verify that you have all of the necessary extension points to do this. If you don't, submit an extensibility request. 
 
