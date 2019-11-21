@@ -45,7 +45,11 @@ For more information about Platform update 32, see [Additional resources](whats-
 ## Features included in this release
 
 - [Data management export file size limit removed](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/FILE-NAME-NEEDED)
-- [Finance and Operations AOS (kernel) Improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/FILE-NAME-NEEDED)
+- [Finance and Operations AOS (kernel) improvements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/FILE-NAME-NEEDED)
+- [Continued stabilization of saved views](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views)
+- [Improved responsiveness of Action Panes on smaller viewports](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1)
+- [Ability to filter on blank values with the Filter Pane and grid column filters](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements)
+
 
 
 ## Additional resources
