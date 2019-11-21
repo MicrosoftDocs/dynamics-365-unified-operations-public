@@ -5,7 +5,7 @@ title: Golden configuration promotion
 description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 11/12/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
