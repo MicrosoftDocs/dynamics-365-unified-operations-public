@@ -292,9 +292,23 @@ The previous procedure enables the extensions that are components of the fiscal 
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
         ```
 
-3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in the [Set up Retail for Sweden](#set-up-retail-for-sweden) section.
+3. Enable the POS extension:
+
+    - Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
+
+      ``` json
+      {
+        "extensionPackages": [
+          {
+            "baseUrl": "Microsoft/AuditEvent.SE"
+          }
+        ]
+      }
+      ```
+
+4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+6. Complete all the required setup tasks that are described in the [Set up Retail for Sweden](#set-up-retail-for-sweden) section.
 
 ## Design of extensions
 
