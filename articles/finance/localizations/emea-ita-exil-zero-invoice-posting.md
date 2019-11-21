@@ -2,10 +2,10 @@
 # required metadata
 
 title: Posting invoices with zero amount
-description: Posting invoices with zero amount.
+description: This topic provides information about how to post financial transactions for invoices with an amount of zero.
 author: ilkond
 manager: AnnBe
-ms.date: 27/08/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.search.region: Italy
 # ms.search.industry: 
 ms.author: ilyako
 ms.search.validFrom: 2019-11-29
-ms.dyn365.ops.version: 10.0.7
+ms.dyn365.ops.version: 10.0.8
 
 ---
 
@@ -32,16 +32,17 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-In Italy it is legally required to post financial transactions for invoices with the zero total amount.
+In Italy, it is required to post financial transactions for invoices with a total amount of zero.
 
 ## Prerequisites
+Before you can post financial transactions for invoices with a total amount of zero, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, enable the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Post invoices with zero amount
-This feature is applicable to invoices created in the **Account receivable** and **Account payable** modules.
-When posting invoices with zero amount the system creates **Customer/ Vendor transactions** and **Voucher transactions**.
+This feature is applicable to invoices that are created in the **Accounts receivable** and **Accounts payable** modules.
+When posting invoices with an amount of zero, the system creates **Customer/ Vendor transactions** and **Voucher transactions**.
 
  
 
