@@ -64,11 +64,7 @@ The following reports, with Excel-based templates, will available with the relea
 
 More reports will become available. Special notifications about additional reports will be sent separately. 
 
-A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# Example: Enable, configure, and use Business document management
-
-To learn more about this feature, complete the example in this topic.
+A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). To learn more about this feature, complete the example in this topic.
 
 ## Configure ER parameters
 
@@ -135,7 +131,7 @@ Use the following procedure to enable Business document management functionality
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
-For more information about activating new features, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+For more information about activating new features, see [Feature management overview](../../fin-ops/get-started/feature-management/feature-management-overview).
 
 ## Configure parameters
 
@@ -152,7 +148,7 @@ For this document type, the following attribute values must be selected.
 | Group               | File                  |
 | Location            | SharePoint            |
 
-For information about how to set up the required document management parameters and document types, see [Configure document management](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+For information about how to set up the required document management parameters and document types, see [Configure document management](../../fin-ops/organization-administration/configure-document-management).
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
