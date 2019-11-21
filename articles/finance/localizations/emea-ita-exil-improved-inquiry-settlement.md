@@ -2,10 +2,10 @@
 # required metadata
 
 title: Improved inquiry on debit/credit settlement
-description: Improved inquiry on debit/credit settlement.
+description: This topic provides information about how to view information on invoice and payment settlements in a convenient and simple form.
 author: ilkond
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,33 +30,31 @@ ms.dyn365.ops.version: 10.0.8
 
 # Improved inquiry on debit/credit settlement
 
+This topic provides information about how to view invoice and payment settlement information in a convenient and simple format.
+
 [!include [banner](../includes/banner.md)]
 
-This topic provides description how to overview information on settlements of invoices and payments in convenient and simple form.
-
 ## Prerequisites
+Before you can use this functionality, the following prerequisites must be met. 
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, enable the **Improved inquiry on debit/credit settlement** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Use Invoice/ Payment list pages
+## Use Invoice/Payment list pages
 To open the **Invoice/ Payments** list page go to: 
 
-**Account receivable > Customers > All customers, Inoice** tab > **Related information > Invoice/ Payments**
+- **Account receivable > Customers > All customers, Inoice** tab > **Related information > Invoice/Payments**
 
-OR
+    -OR-
 
-**Account payable > Vendors > All vendors, Inoice** tab > **Related information > Invoice/ Payments**
+- **Account payable > Vendors > All vendors, Inoice** tab > **Related information > Invoice/ Payments**
 
-Top list page displays Customer/ Vendor invoices sorted by invoice number and date. 
+On the page, the top list  displays the customer and vendor invoices which are sorted by invoice number and date. 
 
-Bottom list page displays  Debit/ Credit transactions (invoices, payment, foreign currency revaluation transactions and etc.) of the selected Customer/ Vendor.
-
-
-Below the list page example for the vendor invoices. Non-zero balance in invoices is highlighted in red.
+The bottom list displays the debit and credit transactions of the selected customer or vendor. These transaction types include invoices, payment, and foreign currency revaluation transactions. Any non-zero balance in invoices is highlighted in red.
 
 ![Invoice/ Payments](media/emea-ita-exil-DC-inquiry-vendor-invoice-payment.png)
 
-In parameters a user may set filter for displaying data in the **Invoice/ Payments** list page.
+Select **Parameters** to set a filter to display specific data on the **Invoice/ Payments** list page.
 
 ![Parameters](media/emea-ita-exil-DC-inquiry-parameters.png)
