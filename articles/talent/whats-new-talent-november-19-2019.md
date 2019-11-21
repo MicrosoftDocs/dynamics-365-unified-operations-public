@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (November 19, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 11/19/2019
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,25 +29,27 @@ ms.search.validFrom: 2019-11-19
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 Talent (November 19, 2019)"
+# What's new or changed in Dynamics 365 Talent (November 19, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 Talent.
+This article describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2621.
 
+Changes described in this section apply to build number 8.1.2621. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-### Platform 31 Update
+### Platform update 31 for Finance and Operations apps
 
-See more information about the platform 31 update [HERE](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31).
+For more information, see [Preview features in Platform update 31 for Finance and Operations apps (January 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31).
 
 ### Feature management workspace (383856)
 
@@ -59,29 +61,29 @@ At times, an integral feature will be on by default and can't be turned off (for
  
 Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
 
-### Message appears when cancelled action exists for a position - (382887)
+### Message appears when canceled action exists for a position (382887)
 
-With this change, When selecting a specific position warning 'An incomplete action is in progress for position xxxxxx' - will no longer appear when a cancelled action is the only action for the position.
+The following message no longer appears when you select a specific position and a canceled action is all that's available for the position: **An incomplete action is in progress for position xxxxxx**.
 
-### Learning Analytics, Course Type and Status are not displaying correct data  - (381151)
+### In learning analytics, the Course type and Status display incorrect data (381151)
 
-With this weeks release, the learning analytics has been updated to correct the display issues for Course type and Status.
+This week's release updated learning analytics to correctly display **Course type** and **Status**.
 
-### Personnel number should be included in the "banner" of the new worker form - (383832)
+### Personnel number should display in the New worker form banner (383832)
 
-In the new worker form, Personnel number has been added into the Banner area for quick reference.
+In the **New worker** form, **Personnel number** now displays in the banner for quick reference.
 
-### Position start date is used to determine the Job record to use when retrieving a compensation level during hire - (350361)
+### Position start date determines the Job record to use when retrieving a compensation level during hire (350361)
 
-In this release, the compensation start date is now used when accessing the level that is assigned to the new job.
+In this release, **Compensation start date** determines the level assigned to the new job.
 
-### Custom pick list fields in position table are been Synchronize to CDS - (387503)
+### Custom pick list fields in the Position table aren't synchronized to Common Data Service (387503)
 
-With this release, pick list items are now synchronized with CDS.
+With this release, pick list items are now synchronized with Common Data Service.
 
-### Worker address entity is not syncing with CDS while importing new data - (349673)
+### Worker address entity doesn't synchronize with Common Data Service while importing new data (349673)
 
-In this weeks release, address data will now sync to CDS while importing new data.
+In this week's release, address data now synchronizes with Common Data Service while importing new data.
 
 ## In preview
 
