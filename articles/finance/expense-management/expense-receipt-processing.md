@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include[banner](../includes/banner.md)]
 
-Expense entry has been enhanced through the introduction of **Receipt OCR** processing, designed to improve the end user experience when creating expense reports.
+Expense entry has been enhanced through the introduction of **Receipt OCR** processing, designed to improve the end-user experience when creating expense reports.
 
 ## Key features include:
 
@@ -42,10 +42,10 @@ Expense entry has been enhanced through the introduction of **Receipt OCR** proc
 ## Usage examples
 
 1. **Auto attaching receipts with credit card transactions during the creation of an expense report**
-   - Open the **Expense management** workspace
+   - Open the **Expense management** workspace.
    - Verify that unattached receipts exist by selecting the **Receipts** tab. Receipts can also be uploaded from the **Receipts** tab.
    - Verify that unattached expenses exist by selecting the **Expenses** tab. Typically these are imported in from our credit card provider by the Expense administrator.
-   - Select **New expense report**, note th new capability of adding *Expenses* and *Receipts* during the new expense creation form.
+   - Select **New expense report**, note the new capability of adding *Expenses* and *Receipts* during the new expense creation form.
    - Adding both receipts and expenses will trigger the automatically matching of the receipts against the expenses.
    
 2. **Create an expense or match an expense from a receipt**
