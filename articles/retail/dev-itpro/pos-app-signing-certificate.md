@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/26/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -49,9 +49,8 @@ Using a Secure File task is the recommended approach for Universal Windows Platf
 
 ![MPOS app signing flow](media/POSSigningFlow.png)
 
-
 > [!NOTE] 
-> Currently the OOB packaging support signing only the appx file, the different self-service installers like MPOIS, RSSU and HWS are not signed by this process. Please manually sign it using SignTool or other signing tools.
+> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools.
 
 ## Steps to configure the certificate for signing
 
