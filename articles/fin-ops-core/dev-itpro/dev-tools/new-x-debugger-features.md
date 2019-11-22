@@ -362,21 +362,22 @@ In legacy X++, it was possible to prescribe in metadata that certain methods wer
 
 This example shows a publishing method called Publisher. Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor. The code shows how to access the variables, and the return values. 
 
-> [!NOTE]
-> This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events. Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances. Attributes are also used for binding event handlers to delegates:
+This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events. Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances. Attributes are also used for binding event handlers to delegates:
 
-      [SubscribesTo(
-        classstr(FMRentalCheckoutProcessor),  
-        delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
-      public static void RentalFinalizedEventHandler(
-        FMRental rentalrecord, Struct rentalConfirmation)
-      {
-      }
+```xpp
+[SubscribesTo(
+    classstr(FMRentalCheckoutProcessor),  
+    delegatestr(FMRentalCheckoutProcessor, RentalTransactionAboutTobeFinalizedEvent))]
+public static void RentalFinalizedEventHandler(
+    FMRental rentalrecord, Struct rentalConfirmation)
+{
+}
 
-      delegate void RentalTransactionAboutTobeFinalizedEvent(
+    delegate void RentalTransactionAboutTobeFinalizedEvent(
         FMRental fmrentalrecord, struct RentalConfirmation)
-      {
-      }
+{
+}
+```
 
 In this case, the SubscribesTo attribute specifies that the method RentalFinalizedEventHandler should be called when the FmRentalCheckoutProcessor.RentalTransactionAboutToBeFinalizedEvent delegate is called. Since the binding between the publisher and subscribers is done through attributes, there's no way of specifying the sequence in which subscribers are called.
 
