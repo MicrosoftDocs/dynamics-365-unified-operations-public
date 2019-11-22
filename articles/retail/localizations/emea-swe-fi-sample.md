@@ -244,7 +244,7 @@ The Hardware station extension components are included in the Hardware station s
 3. Rebuild the solution.
 4. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 
-#### Set up the registration process
+### Set up the registration process
 
 To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
@@ -369,21 +369,51 @@ If you are using the legacy [Sample for Retail POS integration with control unit
 
 In case you are planning to uptake the fiscal integration for Sweden it's required to disable previously released sample extensions for Retail POS integration with control units for Sweden.
 
-### Delopment environment
+### Migration process
 
-Disable extensions released previously.
+Migration from legacy integration sample to the control unit integration sample should be performed based on the concept of gradual update. This means that all AOS and Retail Server compmonents are already updated before you begin to update POS and Hardware station components.
+
+To avoid a situation when an event or transaction was signed twice (both with a legacy extension and with an extension from the current sample) or could not be signed because of the missing setup, it is recommended to switch off all devices using the the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md) and update both POS and and Hardware station components simultaneously.
+
+Basically, the migration process supposes the sequence of steps as follows:
+
+1. Update all AOS and Retail Server compmonents.
+2. Switch off all devices using components of the the legacy sample.
+3. Complete all required setup tasks that are described in the [Setting up integration with control units](#setting-up-integration-with-control-units) section.
+4. Update POS and Hardware station components.
+5. Enable extesntions of the current sample and disable extensions, that are a part of the legacy sample.
+
+    > [!NOTE]
+    > Depending on the type of environment, please see more technical details of the migration process in an appropriate section: [Migration in development environment](#migration-in-development-environment) or [Migration in production environment](#migration-in-production-environment).
+
+### Migration in development environment
 
 #### Harware station extensions uptake
 
-1. Find the **HardwareStation.Extension.config** extensions configuration file for CRT.
+1. Find the **HardwareStation.Extension.CleanCashSample** project, and build it.
+2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find following files:
 
-   - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
-   - **Local Hardware station on Modern POS:** The file is located under the Modern POS client broker location.
+    - The **Contoso.Commerce.HardwareStation.CleanCashSample.dll** assembly
+
+3. Copy the assembly files to the Hardware station extensions folder:
+
+    - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
+
+4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
+
+    - **Shared hardware station:** The file is located under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** The file is located under the Modern POS client broker location.
+
+5. Find the **HardwareStation.Extension.config** extensions configuration file for CRT.
+
+    - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
+    - **Local Hardware station on Modern POS:** The file is located under the Modern POS client broker location.
 
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-2. Find and remove the Harware station sample registration in extensions configuration file:
+6. Find and remove the Harware station sample registration in extensions configuration file:
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -402,40 +432,69 @@ Disable extensions released previously.
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
-
     ---
+
+7. Add the following line to the **composition** section of the configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+    ```
 
 #### CRT extensions uptake
 
-1. Find the extensions configuration file for CRT:
+1. Find the **Runtime.Extensions.DocumentProvider.CleanCashSample** project, and build it.
+2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
 
-   - **Retail Server:** The file is named **CommerceRuntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
-   - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the bin\ext folder under the local CRT client broker location
+    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+
+4. Find the extensions configuration file for CRT:
+
+    - **Retail Server:** The file is named **CommerceRuntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the bin\ext folder under the local CRT client broker location
 
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-2. Find and remove the CRT sample registration in extensions configuration file:
+5. Find and remove the CRT sample registration in extensions configuration file:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
     ```
 
+6. Register the CRT change in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
+    ```
+
 #### Modern POS extensions uptake
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**
-
 2. Disable the sample extension from loading by removing the lines from **extensions.json**:
     ``` json
     {
         "baseUrl": "FiscalRegisterSample"
+    }
+    ```
+
+2. Enable the extensions to be loaded by adding the following lines in **extensions.json**.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.SE"
+            }
+        ]
     }
     ```
 
 #### Cloud POS extensions uptake
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**
-
 2. Disable the sample extension from loading by removing the lines from **extensions.json**:
     ``` json
     {
@@ -443,17 +502,38 @@ Disable extensions released previously.
     }
     ```
 
-### Production environment
+2. Enable the extensions to be loaded by adding the following lines in **extensions.json**.
 
-1. Complete the steps in the [Modern POS extensions uptake](#modern-pos-extensions-uptake) and [Cloud POS extensions uptake](#cloud-pos-extensions-uptake) sections earlier in this topic.
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.SE"
+            }
+        ]
+    }
+    ```
 
-2. Remove the old the CRT sample registration in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
+### Migration in production environment
+
+### The CRT extensions uptake
+
+1. Remove the old the CRT sample registration in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
     ``` xml
     <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
     ```
 
-3. Modify the **HardwareStation.Extension.config** Hardware station configuration file.
+2. Enable new CRT packages. Make the following changes in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
+
+    ``` xml	
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
+    ```
+
+### The Hardware station extensions uptake
+
+1. Remove the old the Hardware station sample registration. Modify the **HardwareStation.Extension.config** Hardware station configuration file.
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -474,12 +554,67 @@ Disable extensions released previously.
     # [Retail 10.0 and later](#tab/retail-10-0)
 
     Remove the following section from the **HardwareStation.Extension.config** configuration file:
-    
+
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.FiscalRegisterSample" />
     ```
-
     ---
 
-Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+2. Enable new Hardware station registration sample.
+
+     - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
+        ```
+
+### The Modern POS extensions uptake
+
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**
+2.  Disable the extension to be compiled in tsconfig.json by adding the FiscalRegisterSample folder from the exclude list.
+3. Disable the sample extension from loading.
+    - Open RetailSDK\POS\Extensions\extensions.json and remove the following lines:
+    ``` json
+    {
+        "baseUrl": "FiscalRegisterSample"
+    }
+    ```
+
+4. Enable the new POS audit event extension:
+    - Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
+        ``` json
+        {
+            "extensionPackages": [
+                {
+                    "baseUrl": "Microsoft/AuditEvent.SE"
+                }
+            ]
+        }
+        ```
+
+### The Cloud POS extensions uptake
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**
+2. Disable the extension to be compiled in tsconfig.json by adding the FiscalRegisterSample folder from the exclude list.
+3. Disable the sample extension from loading.
+    - Open RetailSDK\POS\Extensions\extensions.json and remove the following lines:
+    ``` json
+    {
+        "baseUrl": "FiscalRegisterSample"
+    }
+    ```
+
+4. Enable the new POS audit event extension:
+    - Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
+        ``` json
+        {
+            "extensionPackages": [
+                {
+                    "baseUrl": "Microsoft/AuditEvent.SE"
+                }
+            ]
+        }
+        ```
+
+Run msbuild for the whole Retail SDK to create deployable packages. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
