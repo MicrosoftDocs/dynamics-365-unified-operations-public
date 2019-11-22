@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and report Value Added Tax (VAT)
-description: 
+title: Set up and report value-added tax (VAT)
+description: This topic explains how to set up and report value-added tax (VAT).
 author: kfend
 manager: AnnBe
 ms.date: 11/22/2019
@@ -29,256 +29,246 @@ ms.search.validFrom: 2019-05-29
 
 ---
 
-# Set up and report Value Added Tax (VAT)
+Set up and report value-added tax (VAT)
 
 [!include [banner](../includes/banner.md)]
 
-Value Added Tax (VAT) was introduced in the United Arab Emirates on 1 January 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.
+Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on January 1, 2018. Businesses in the UAE are responsible for carefully documenting their business income, costs, and associated VAT charges.
 
-Registered businesses and traders will charge VAT to all their customers at the current rate, and will incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. The issued Federal Decree Law No. (8) of 2017 on Value Added Tax, outlines the tax scope, rate, responsibility for tax, supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/en/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
+Registered businesses and traders will charge VAT to all their customers at the current rate, and they will incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
 
-Microsoft Dynamics 365 for Finance and Operations is accredited and certified with the UAE Federal Tax Authorities as a tax accounting software provider. 
+Microsoft Dynamics 365 for Finance and Operations is accredited and certified with the UAE Federal Tax Authorities (FTA) as a tax accounting software provider.
 
 ## Overview
 
-Standard sales tax functionality in Dynamics 365 for Finance and Operations fulfills the majority of the legislation requirements of the United Arab Emirates VAT law. Following country-specific enhancements has been added for UAE VAT localization to align with UAE requirements for VAT reporting. These enhancements include:
+Standard sales tax functionality in Finance and Operations meets a majority of the legislative requirements of the UAE VAT law. To align the UAE VAT localization with UAE requirements for VAT reporting, the following country-specific enhancements have been added to the localization:
 
-- Legal entity configuration has been extended with additional fields that are required in VAT reporting.
-- VAT reverse charge functionality has been enabled for UAE (ARE country context) to properly record taxable domestic operations within GCC territory.
-- UAE country-specific sales invoice and credit notes printout layouts have been added with additional columns and VAT summary information.
-- Sales invoice and credit notes for UAE can be printed in two languages including the new ar-AE Arabic language for user interface.
-- The VAT return declaration report can be printed to an electronic file format that can be uploaded to the e-TAX FTA portal.
-- Standard audit file functionality has been shared with UAE local functionality. Required by Federal Tax Authorities, the FTA VAT audit file (FAF) can be exported accordingly to the required comma separated file format.
+- The legal entity configuration has been extended so that it includes additional fields that are required for VAT reporting.
+- VAT reverse charge functionality has been made available for the UAE (**ARE** country/region context) to correctly record taxable domestic operations in Gulf Cooperation Council (GCC) territory.
+- Country-specific printout layouts for sales invoices and credit notes for the UAE have been added. These layouts include additional columns and VAT summary information.
+- Sales invoices and credit notes for the UAE can be printed in two languages. These languages include the new **ar-AE** Arabic language for the user interface (UI).
+- The VAT return declaration report can be printed to an electronic file format that can be uploaded to the FTA e-Tax portal.
+- Standard audit file functionality has been shared with the UAE local functionality. Therefore, the FTA VAT audit file (FAF) that is required by FTA can be exported to the required comma-separated values (CSV) file format.
 
 For more detailed information about standard sales tax functionality, see the following topics:
 
 - [Setting up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md)
 - [Set up a sales tax settlement period](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
 - [Ledger posting groups](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.,d)
-- [Sales tax exempt codes](https://technet.microsoft.com/en-us/library/aa634356.aspx)
+- [Sales tax exempt codes](https://technet.microsoft.com/library/aa634356.aspx)
 - [Sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)
 - [Setting up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)
 - [Setting up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md)
-- [Set up conditional sales taxes](https://technet.microsoft.com/EN-US/library/aa496600.aspx) - (used for cash accounting)
+- [Set up conditional sales taxes](https://technet.microsoft.com/library/aa496600.aspx) (used for cash accounting)
 - [Set up a tax registration type](emea-registration-ids.md)
 
-## Activate United Arab Emirates functionality
+## Activate the UAE functionality
 
-UAE country-specific functionality is activated by using the **Localized functionality region** configuration for legal entities. If **Localized functionality region** is detected by using the company address, make sure that the country code of the legal entity's primary address is set to ARE.
+Country-specific functionality for the UAE is activated by using the **Localized functionality region** configuration for legal entities. If the company address is used to detect the **Localized functionality region** configuration, make sure that the country/region code of the legal entity's primary address is set to **ARE** on the **Legal entities** page.
 
 [![Legal entities page](./media/uae_vat_01.jpg)](./media/uae_vat_01.jpg)
 
- 
-To learn more about the patterns used in localized solutions, see the [Localization and regulatory features website](../../dev-itpro/lcs-solutions/country-region.md).
+For more information about the patterns that are used in localized solutions, see the [Localization and regulatory features website](../../dev-itpro/lcs-solutions/country-region.md).
 
 ## Configure VAT for a legal entity
 
-VAT declaration and the FAF audit file require additional information must be to be set up in the configuration of a legal entity. In Finance and operations, go to **Organization administration** \> **Organizations** \> **Legal entities**, and in the **Value added tax** section, select following information:
+The VAT declaration and the FAF require that additional information be set up in the configuration of a legal entity. In Finance and Operations, go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, on the **Value added tax** FastTab, set the following fields:
 
-- **Taxable person name**: Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be populated in reports. If the legal entity UI language is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.
-- **Tax agency name** and **Tax agent name**: The Tax Agency Name, Tax Agency Number, Tax Agent Name, and Tax Agent Approval Number are required in electronic reporting for when VAT reports are prepared by a contracted tax agent or vendor.
-- **Declarant name**: Information about the person preparing a VAT declaration will be included in the electronic report.
-- **VAT refund required**: Select this option if a VAT refund is due and the company hasrequested to receive the VAT refund.
-- **Profit margin scheme**: Select this option if the company operates in a special business scheme using Profit Margin scheme.
-- **VAT on behalf of another person**: Select this option if your company operates as an agent who pays import VAT on behalf of another taxable person.
+- **Taxable person name** – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the UI language of the legal entity is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.
+- **Tax agency name** and **Tax agent name** – The tax agency name, tax agency number, tax agent name, and tax agent approval number are required when electronic VAT reports are prepared by a contracted tax agent or vendor.
+- **Declarant name** – The electronic VAT report will include information about the person who is preparing a VAT declaration.
+- **VAT refund required (if any)** – Set this option to **Yes** if a VAT refund is due, and the company has requested to receive it.
+- **Profit margin scheme** – Set this option to **Yes** if the company operates in a special business scheme by using the Profit Margin scheme.
+- **VAT on behalf of customer** – Set this option to **Yes** if the company operates as an agent that pays import VAT on behalf of another taxable person.
 
-[![Value added tax section](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg) 
+[![Value added tax FastTab on the Legal entities page](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
 
-Learn more about VAT reporting requirements from the instructions at UAE Federal Tax Authorities website the in section dedicated to [Requirements Document for Tax Accounting Software](https://www.tax.gov.ae/pdf/requirement-document-for-tax-accounting-software.pdf).
+For more information about VAT reporting requirements, see the instructions in the [Requirements Document for Tax Accounting Software](https://www.tax.gov.ae/pdf/requirement-document-for-tax-accounting-software.pdf) section of the UAE FTA website.
 
-## Configure tax authority
+## Configure the tax authority
 
-Federal tax authority must be set up as a sales tax authority. After the vendor account is associated with tax authority, the system creates automatic payments to vendor payables during the settlement process. 
-Navigate to **Tax** \> **Sales tax** \> **Sales tax authorities** and set up the address information of your FTA office. Make sure to select the UAE specific report layout which corresponds with electronic VAT declaration. 
+The federal tax authority must be set up as a sales tax authority. After the vendor account is associated with the tax authority, the system creates automatic payments to vendor payables during the settlement process.
+
+Go to **Tax** \> **Sales tax** \> **Sales tax authorities**, and set up the address information of your FTA office. Be sure to select the UAE-specific report layout that corresponds to the electronic VAT declaration.
 
 [![Sales tax authorities page](./media/uae_vat_03.jpg)](./media/uae_vat_03.jpg)
 
-With Configured Tax Authority, you may proceed to associate Sales tax settlement periods with the tax authority you have just configured and Sales tax codes.
+When you've finished, you can associate sales tax settlement periods with the tax authority that you just configured and with sales tax codes.
 
 ## Configure sales tax codes
 
-The VAT declaration electronic report is based on the configuration of a specific sales tax UAE report layout which should be selected as default in the tax authority setup.
-Follow the procedure for setting up Sales tax codes that aligns to the profile of your company business in Sales Tax section of the Help documentation.
-To run the UAE report layout with electronic VAT declaration, you must first set up the appropriate number of reporting codes associated with each VAT declaration reporting amount.
+The electronic VAT declaration report is based on the configuration of a specific sales tax UAE report layout. This layout should be selected as the default layout in the setup of the tax authority.
 
-Navigate to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting codes** to create or update sales tax reporting codes according to the information in the following table:
+Set up sales tax codes by following the appropriate procedure for the profile of your company's business in Sales Tax section of the Help documentation.
 
-| Sales Tax Code | VAT Reporting Code | Report Setup                 | Description                                                                             | VAT rate |
-|----------------|--------------------|------------------------------|-----------------------------------------------------------------------------------------|----------|
-| SRSAD          | 10                 | Sale>Taxable sales           | Standard rated supplies in Abu Dhabi                                                    | 5        |
-|                | 11                 | Sale>Tax Payable             | Standard rated supplies in Abu Dhabi                                                                                         |   5       |
-| SRSAD-A        | 15                 | Sale>Tax Payable             | Standard rated supplies in Abu Dhabi – Adjustment                                       |    5      |
-| SRSD           | 20                 | Sale>Taxable sales           | Standard rated supplies in Dubai                                                        | 5        |
-|                | 21                 | Sale>Tax Payable             | Standardrated supplies in Dubai                                                                                        |    5      |
-| SRSD-A         | 25                 | Sale>Tax Payable             | Standard rated supplies in Dubai – Adjustment                                           |    5      |
-| SRSS           | 30                 | Sale>Taxable sales           | Standard rated supplies in Sharjah                                                      | 5        |
-|                | 31                 | Sale>Tax Payable             | Standard rated supplie in Sharjah                                                                                        |    5      |
-| SRSS-A         | 35                 | Sale>Tax Payable             | Standard rated supplies in Sharjah – Adjustment                                         |    5      |
-| SRSA           | 40                 | Sale>Taxable sales           | Standard rated supplies in Ajman                                                        | 5        |
-|                | 41                 | Sale> Tax Payable            |  Standard rated supplies in Ajman                                                                                       |    5      |
-| SRSA-A         | 45                 | Sale> Tax Payable            | Standard rated supplies in Ajman – Adjustment                                           |    5      |
-| SRSRQ          | 50                 | Sale>Taxable sales           | Standard rated supplies in Umm Al Quwain                                                | 5        |
-|                | 51                 | Sale>Tax payable             |  Standard rated supplies in Umm Al Quwain                                                                                      |    5      |
-| SRSRQ-A        | 55                 | Sale>Tax payable             | Standard rated supplies in Umm Al Quwain – Adjustment                                   |          |
-| SRSRK          | 60                 | Sale>Taxable sales           | Standard rated supplies in Ras Al Khaimah                                               | 5        |
-|                | 61                 | Sale>Tax payable             |  Standard rated supplies in Ras Al Khaimah                                                                                       |    5      |
-| SRSRK-A        | 65                 | Sale>Tax payable             | Standard rated supplies in Ras Al Khaimah – Adjustment                                  |    5      |
-| SRSF           | 70                 | Sale>Taxable sales           | Standard rated supplies in Fujairah                                                     | 5        |
-|                | 71                 | Sale> Tax Payable            | Standard rated supplies in Fujairah                                                                                        |    5      |
-| SRSF-A         | 75                 | Sale>Tax payable             | Standard rated supplies in Fujairah – Adjustment                                        |    5      |
-| TRPTS          | 80                 | Sale>Taxable sales           | Tax Refunds provided to Tourists                                                        | 5        |
-|                | 81                 | Sale> Tax Payable            | Tax REfunds provided to Tourists                                                                                        |    5      |
-| TRPTS-A        | 85                 | Sale>Tax payable             | Tax Refunds provided to Tourists – Adjustment                                           |    5      |
-| SSRCP-R        | 90                 | Purchases>Taxable Purchases  | Supplies subject to the reverse charge provisions-Sales                                 | 5        |
-|                | 91                 | Purchases>Taxable Receivable | Supplies sugject to the reverse charge provisions-Sales                                                                                        |   5       |
-| SSRCP-R-A      | 95                 | Purchases>Taxable Receivable | Supplies subject to the reverse charge provisions-Sales – Adjustment                    |   5       |
-| ZRS            | 100                | Sale> Taxable sales          | Zero rated supplies                                                                     | 0        |
-| SOGSRC         | 110                | Sale> Taxable sales          | Supplies of goods and services to registered customers in other GCC implementing states | 5        |
-| ES             | 120                | Sale> Taxable sales          | Exempt supplies                                                                         | 0        |
-| GITUAE         | 170                | Purchases>Taxable Purchases  | Goods imported into the UAE                                                             | 5        |
-|                | 171                | Purchases>Sales tax payable  | Goods imported into the UAE                                                                                         |   5       |
-| GITUAE-R       | 130                | Sale>Taxable sales           | Goods imported into the UAE reverse charge                                              | -5       |
-|                | 131                | Sale>Tax Payable             | Goods imported into the UAE reverse charge                                                                                      | -5        |
-| SSRCP-R        | 90                 | Sale>Taxable sales           | Supplies subject to the reverse charge provisions                                       | -5       |
-|                | 91                 | Sale>Tax Payable             | Supplies subject to the reverse charge provisions                                                                                         | -5         |
-| SSRCP          | 170                | Sale>Taxable sales           | Supplies subject to the reverse charge provisions                                       | 5        |
-|                | 171                | Sale>Tax Payable             | Supplies subject to the reverse charge provisions                                                                                        | 5         |
-| SRE-A          | 160                | Purchases>Taxable Receivable | Standard rated expenses – Adjustment                                                    | 5        |
-| SSRCP          | 170                | Sale>Taxable sales           | Supplies subject to the reverse charge provisions                                       |          |
-|                | 171                | Sale>Tax Payable             | Supplies subject ot the reverse charge provisions                                                                                        | -5       |
-| SSRCP-A        | 175                | Sale>Tax Payable             | Supplies subject to the reverse charge provisions – Adjustment                          |          |
-| GTTKOB         | 180                | Sale>Taxable sales           | Goods transferred to the Kingdom of Bahrain                                             |          |
-|                | 181                | Sale>Tax Payable             | Goods transferred to the Kingdom of Bahrain                                                                                         | 5        |
-| GTTKOB-A       | 185                | Sale>Tax Payable             | Goods transferred to the Kingdom of Bahrain – Adjustment                                |          |
-| GTTSOK         | 190                | Sale>Taxable sales           | Goods transferred to the State of Kuwait                                                |          |
-|                | 191                | Sale>Tax Payable             | Goods transferred to the State of Kuwait                                                                                         | 5        |
-| GTTSOK-A       | 195                | Sale>Tax Payable             | Goods transferred to the State of Kuwait – Adjustment                                   |          |
-| GTTSOO         | 200                | Sale>Taxable sales           | Goods transferred to the Sultanate of Oman                                              |          |
-|                | 201                | Sale>Tax Payable             | Goods transferred to the Sultanate of Oman                                                                                         | 5        |
-| GTTSOO-A       | 205                | Sale>Tax Payable             | Goods transferred to the Sultanate of Oman – Adjustment                                 |          |
-| GTTSOQ         | 210                | Sale>Taxable sales           | Goods transferred to the State of Qatar                                                 | 5        |
-|                | 211                | Sale>Tax Payable             | Goods transferred to the State of Qatar                                                                                        |    5      |
-| GTTSOQ-A       | 215                | Sale>Tax Payable             | Goods transferred to the State of Qatar – Adjustment                                    |   5       |
-| GTTKOSA        | 220                | Sale>Taxable sales           | Goods transferred to the Kingdom of Saudi Arabia                                        |          |
-|                | 221                | Sale>Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia                                                                                         |          |
-| GTTKOSA-A      | 225                | Sale>Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia – Adjustment                           | 5        |
-| RVPKOB         | 230                | Purchases>Taxable Purchases  | Recoverable VAT paid in the Kingdom of Bahrain                                          |          |
-|                | 231                | Purchases>Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain                                                                                        |          |
-| RVPKOB-A       | 235                | Purchases>Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain – Adjustment                             | 5        |
-| RVPSOK         | 240                | Purchases>Taxable Purchases  | Recoverable VAT paid in the State of Kuwait                                             |          |
-|                | 241                | Purchases>Taxable Receivable | Recoverable VAT paid in the State of Kuwait                                                                                        |          |
-| RVPSOK-A       | 245                | Purchases>Taxable Receivable | Recoverable VAT paid in the State of Kuwait – Adjustment                                | 5        |
-| RVPSOO         | 250                | Purchases>Taxable Purchases  | Recoverable VAT paid in the Sultanate of Oman                                           |          |
-|                | 251                | Purchases>Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman                                                                                         |          |
-| RVPSOO-A       | 255                | Purchases>Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman – Adjustment                              | 5        |
-| RVPSOQ         | 260                | Purchases>Taxable Purchases  | Recoverable VAT paid in the State of Qatar                                              |          |
-|                | 261                | Purchases>Taxable Receivable | Recoverable VAT paid in the State of Qatar                                                                                        |          |
-| RVPSOQ-A       | 265                | Purchases>Taxable Receivable | Recoverable VAT paid in the State of Qatar – Adjustment                                 | 5        |
-| RVPKOSA        | 270                | Purchases>Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |          |
-|                | 271                | Purchases>Taxable Receivable | Recoverable VAT paid in the Kingdom of Saudi Arabia                                                                                        |          |
-| RVPKOSA-A      | 275                | Purchases>Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia – in Adjustment                     | 5        |
+To run the UAE report layout with the electronic VAT declaration, you must first set up the appropriate number of reporting codes that are associated with each VAT declaration reporting amount.
 
- 
-The sales tax reporting codes configuration will display as a list in the **Sales tax reporting codes** page.
- 
-[![Sales tax reporting codes list](./media/uae_vat_04.jpg)](./media/uae_vat_04.jpg)
- 
-Using the instructions from the **Report setup** column in the table above, configure sales tax codes and associate them with sales tax reporting codes in the report setup section of each report that is relevant to your company business.
- 
-[![Report setup section](./media/uae_vat_05.jpg)](./media/uae_vat_05.jpg)
+Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting codes**, and create or update sales tax reporting codes according to the information in the following table.
 
-## Set up VAT reverse charge
+| Sales tax code | VAT reporting code | Report setup                    | Description                                                                             | VAT rate |
+|----------------|--------------------|---------------------------------|-----------------------------------------------------------------------------------------|----------|
+| SRSAD          | 10                 | Sale \> Taxable sales           | Standard rated supplies in Abu Dhabi                                                    | 5        |
+|                | 11                 | Sale \> Tax Payable             | Standard rated supplies in Abu Dhabi                                                    | 5        |
+| SRSAD-A        | 15                 | Sale \> Tax Payable             | Standard rated supplies in Abu Dhabi – Adjustment                                       | 5        |
+| SRSD           | 20                 | Sale \> Taxable sales           | Standard rated supplies in Dubai                                                        | 5        |
+|                | 21                 | Sale \> Tax Payable             | Standard rated supplies in Dubai                                                        | 5        |
+| SRSD-A         | 25                 | Sale \> Tax Payable             | Standard rated supplies in Dubai – Adjustment                                           | 5        |
+| SRSS           | 30                 | Sale \> Taxable sales           | Standard rated supplies in Sharjah                                                      | 5        |
+|                | 31                 | Sale \> Tax Payable             | Standard rated supplies in Sharjah                                                      | 5        |
+| SRSS-A         | 35                 | Sale \> Tax Payable             | Standard rated supplies in Sharjah – Adjustment                                         | 5        |
+| SRSA           | 40                 | Sale \> Taxable sales           | Standard rated supplies in Ajman                                                        | 5        |
+|                | 41                 | Sale \> Tax Payable             | Standard rated supplies in Ajman                                                        | 5        |
+| SRSA-A         | 45                 | Sale \> Tax Payable             | Standard rated supplies in Ajman – Adjustment                                           | 5        |
+| SRSRQ          | 50                 | Sale \> Taxable sales           | Standard rated supplies in Umm Al Quwain                                                | 5        |
+|                | 51                 | Sale \> Tax payable             | Standard rated supplies in Umm Al Quwain                                                | 5        |
+| SRSRQ-A        | 55                 | Sale \> Tax payable             | Standard rated supplies in Umm Al Quwain – Adjustment                                   |          |
+| SRSRK          | 60                 | Sale \> Taxable sales           | Standard rated supplies in Ras Al Khaimah                                               | 5        |
+|                | 61                 | Sale \> Tax payable             | Standard rated supplies in Ras Al Khaimah                                               | 5        |
+| SRSRK-A        | 65                 | Sale \> Tax payable             | Standard rated supplies in Ras Al Khaimah – Adjustment                                  | 5        |
+| SRSF           | 70                 | Sale \> Taxable sales           | Standard rated supplies in Fujairah                                                     | 5        |
+|                | 71                 | Sale \> Tax Payable             | Standard rated supplies in Fujairah                                                     | 5        |
+| SRSF-A         | 75                 | Sale \> Tax payable             | Standard rated supplies in Fujairah – Adjustment                                        | 5        |
+| TRPTS          | 80                 | Sale \> Taxable sales           | Tax Refunds provided to Tourists                                                        | 5        |
+|                | 81                 | Sale \> Tax Payable             | Tax Refunds provided to Tourists                                                        | 5        |
+| TRPTS-A        | 85                 | Sale \> Tax payable             | Tax Refunds provided to Tourists – Adjustment                                           | 5        |
+| SSRCP-R        | 90                 | Purchases \> Taxable Purchases  | Supplies subject to the reverse charge provisions-Sales                                 | 5        |
+|                | 91                 | Purchases \> Taxable Receivable | Supplies subject to the reverse charge provisions-Sales                                 | 5        |
+| SSRCP-R-A      | 95                 | Purchases \> Taxable Receivable | Supplies subject to the reverse charge provisions-Sales – Adjustment                    | 5        |
+| ZRS            | 100                | Sale \> Taxable sales           | Zero rated supplies                                                                     | 0        |
+| SOGSRC         | 110                | Sale \> Taxable sales           | Supplies of goods and services to registered customers in other GCC implementing states | 5        |
+| ES             | 120                | Sale \> Taxable sales           | Exempt supplies                                                                         | 0        |
+| GITUAE         | 170                | Purchases \> Taxable Purchases  | Goods imported into the UAE                                                             | 5        |
+|                | 171                | Purchases \> Sales tax payable  | Goods imported into the UAE                                                             | 5        |
+| GITUAE-R       | 130                | Sale \> Taxable sales           | Goods imported into the UAE reverse charge                                              | -5       |
+|                | 131                | Sale \> Tax Payable             | Goods imported into the UAE reverse charge                                              | -5       |
+| SSRCP-R        | 90                 | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       | -5       |
+|                | 91                 | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | -5       |
+| SSRCP          | 170                | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       | 5        |
+|                | 171                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | 5        |
+| SRE-A          | 160                | Purchases \> Taxable Receivable | Standard rated expenses – Adjustment                                                    | 5        |
+| SSRCP          | 170                | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       |          |
+|                | 171                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | -5       |
+| SSRCP-A        | 175                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions – Adjustment                          |          |
+| GTTKOB         | 180                | Sale \> Taxable sales           | Goods transferred to the Kingdom of Bahrain                                             |          |
+|                | 181                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Bahrain                                             | 5        |
+| GTTKOB-A       | 185                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Bahrain – Adjustment                                |          |
+| GTTSOK         | 190                | Sale \> Taxable sales           | Goods transferred to the State of Kuwait                                                |          |
+|                | 191                | Sale \> Tax Payable             | Goods transferred to the State of Kuwait                                                | 5        |
+| GTTSOK-A       | 195                | Sale \> Tax Payable             | Goods transferred to the State of Kuwait – Adjustment                                   |          |
+| GTTSOO         | 200                | Sale \> Taxable sales           | Goods transferred to the Sultanate of Oman                                              |          |
+|                | 201                | Sale \> Tax Payable             | Goods transferred to the Sultanate of Oman                                              | 5        |
+| GTTSOO-A       | 205                | Sale \> Tax Payable             | Goods transferred to the Sultanate of Oman – Adjustment                                 |          |
+| GTTSOQ         | 210                | Sale \> Taxable sales           | Goods transferred to the State of Qatar                                                 | 5        |
+|                | 211                | Sale \> Tax Payable             | Goods transferred to the State of Qatar                                                 | 5        |
+| GTTSOQ-A       | 215                | Sale \> Tax Payable             | Goods transferred to the State of Qatar – Adjustment                                    | 5        |
+| GTTKOSA        | 220                | Sale \> Taxable sales           | Goods transferred to the Kingdom of Saudi Arabia                                        |          |
+|                | 221                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia                                        |          |
+| GTTKOSA-A      | 225                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia – Adjustment                           | 5        |
+| RVPKOB         | 230                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Bahrain                                          |          |
+|                | 231                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain                                          |          |
+| RVPKOB-A       | 235                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain – Adjustment                             | 5        |
+| RVPSOK         | 240                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the State of Kuwait                                             |          |
+|                | 241                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Kuwait                                             |          |
+| RVPSOK-A       | 245                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Kuwait – Adjustment                                | 5        |
+| RVPSOO         | 250                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Sultanate of Oman                                           |          |
+|                | 251                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman                                           |          |
+| RVPSOO-A       | 255                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman – Adjustment                              | 5        |
+| RVPSOQ         | 260                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the State of Qatar                                              |          |
+|                | 261                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Qatar                                              |          |
+| RVPSOQ-A       | 265                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Qatar – Adjustment                                 | 5        |
+| RVPKOSA        | 270                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |          |
+|                | 271                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |          |
+| RVPKOSA-A      | 275                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia – in Adjustment                     | 5        |
 
-When a taxable customer must pay tax on a supply received from a non-resident supplier, VAT should be calculated and paid to tax the authorities on a VAT reverse charge basis. The customer must calculate and report the output tax on the supply and relevant input tax.
+The configuration of sales tax reporting codes will appear as a grid on the **Sales tax reporting codes** page.
 
-In order to use reverse charge functionality, you must select the **Reverse charge** option on the **General ledger parameters** page.
+[![Sales tax reporting codes page](./media/uae_vat_04.jpg)](./media/uae_vat_04.jpg)
 
+Use the information in the "Report setup" column of the previous table to configure sales tax codes and associate them with sales tax reporting codes on the **Report setup** FastTab of each report that is relevant to your company's business.
 
-[![Reverse charge tab on General ledger parameters page](./media/uae_vat_06.jpg)](./media/uae_vat_06.jpg)
+[![Report setup FastTab](./media/uae_vat_05.jpg)](./media/uae_vat_05.jpg)
 
-Before setting the sales tax group for reverse charge, you should set up two sales tax codes: one for input sales tax and other for output sales tax. Output sales tax code should be set up with a negative value. For more information, see [Setting up sales tax codes](https://technet.microsoft.com/en-us/library/gg230668.aspx). 
+## Set up a VAT reverse charge
 
-You must select the **Reverse charge** check box on the line with the negative sales tax rate in the **Reverse charge** sales tax group. 
+When a taxable customer must pay tax on a supply that is received from a non-resident supplier, VAT should be calculated and paid to tax the authorities, based on a VAT reverse charge. The customer must calculate and report the output tax on the supply and the relevant input tax.
 
- 
+To use the reverse charge functionality, you must set the **Enable reverse charge** option to **Yes** on the **Reverse charge** tab of the **General ledger parameters** page.
+
+[![Reverse charge tab on the General ledger parameters page](./media/uae_vat_06.jpg)](./media/uae_vat_06.jpg)
+
+Before you set the sales tax group for the reverse charge, you should set up two sales tax codes: one for input sales tax and one for output sales tax. The output sales tax code should be set up so that it has a negative value. For more information, see [Setting up sales tax codes](https://technet.microsoft.com/library/gg230668.aspx).
+
+In the **Reverse charge** sales tax group, you must select the **Reverse charge** check box on the line that has the negative sales tax rate.
+
 [![Sales tax groups page](./media/uae_vat_07.jpg)](./media/uae_vat_07.jpg)
 
-When the invoice line is posted with the **Reverse charge** sales tax group, the system will create two sales tax transactions: one with a sales tax receivable tax direction and other with a sales tax payable tax direction. 
-
+When the invoice line is posted with the **Reverse charge** sales tax group, the system will create two sales tax transactions: one that has a sales tax receivable tax direction and one that has a sales tax payable tax direction.
 
 [![Posted sales tax page](./media/uae_vat_08.jpg)](./media/uae_vat_08.jpg)
 
+## Download and set up Electronic reporting configurations
 
-## Download and set up Electronic reports configurations
+The implementation of VAT reporting for the UAE is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md).
 
-Implementing VAT reporting for United Arab Emirates is based on Electronic Reporting configurations. 
-For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md).
+For production and user acceptance testing (UAT) environments, follow the instructions in [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) to download ER configurations.
 
-For PROD and UAT environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md) to download electronic reporting configurations.
+To use the VAT declaration and FAF functionality in UAE localizations, you must install the following configurations. Always use the highest available version number of a configuration file.
 
-The following configurations must be installed to use VAT declaration and FTA VAT audit file functionality in UAE localizations. Always use the highest available version number of a configuration file.
+| Configuration file name                           | Configuration type                         |
+|---------------------------------------------------|--------------------------------------------|
+| VAT declaration model.version.4.xml               | Data model                                 |
+| VAT declaration model mapping.version.4.4.xml     | Model mapping                              |
+| VAT declaration Excel (AE).version.4.1.xml        | UAE-specific Microsoft Excel output format |
+| Standard Audit File model mapping.version.6.7.xml | Data model                                 |
+| Standard Audit File (SAF-T).version.6.xml         | Model Mapping                              |
+| FTA VAT Audit file (AE).version.6.5.xml           | UAE FAF CSV output format                  |
 
-| Configuration file name                           | Configuration type                   |
-|---------------------------------------------------|--------------------------------------|
-| VAT declaration model.version.4.xml               | Data model                           |
-| VAT declaration model mapping.version.4.4.xml     | Model mapping                        |
-| VAT declaration Excel (AE).version.4.1.xml        | UAE specific Microsoft Excel output format  |
-| Standard Audit File model mapping.version.6.7.xml | Data model                           |
-| Standard Audit File (SAF-T).version.6.xml         | Model Mapping                        |
-| FTA VAT Audit file (AE).version.6.5.xml           | UAE FTA audit file CSV output format |
- 
-In a Dev or Test environment, if direct access to a deployment virtual machine is available, you can download configurations from http://lcs.dynamics.com.  After you log in in to the LCS portal, select **Shared asset library**.
+For development and test environments, if direct access to a deployment virtual machine (VM) is available, you can download configurations from [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com). After you sign in to LCS, select the **Shared asset library** tile.
 
 [![Shared asset library tile in LCS](./media/uae_vat_09.jpg)](./media/uae_vat_09.jpg) 
 
-In the **Shared asset** library, select **GER configurations**, choose the required configurations as listed in the previous table, and download to a local disc.
+In the Shared asset library, select **GER Configuration**, select the required configurations (see the previous table), and download them to a local disk.
 
-In Finance and operations, navigate to the Electronic reporting workspace and select **Reporting configurations** \> **Exchange** \> **Load from XML file**, and upload all of the files in order listed in the previous table.
+In Finance and Operations, in the **Electronic reporting** workspace, select the **Reporting configurations** tile. Then, on the **Configurations** page, on the Action Pane, select **Exchange** \> **Load from XML file**, and upload all the files in the order in which they are listed in the previous table.
 
- [![Configurations page(./media/uae_vat_10.jpg)](./media/uae_vat_10.jpg)
+[![Configurations page](./media/uae_vat_10.jpg)](./media/uae_vat_10.jpg)
 
-With all configurations uploaded, the configuration tress should be present in Finance and operations.
+After all the configurations are uploaded, the configuration tree should be present in Finance and Operations.
 
- [![Configuration tree](./media/uae_vat_11.jpg)](./media/uae_vat_11.jpg)
+[![Configuration tree](./media/uae_vat_11.jpg)](./media/uae_vat_11.jpg)
 
- 
 ## VAT declaration electronic reporting file
 
-To generate the VAT declaration report in Excel, use the standard procedure for reporting sales tax for a settlement reporting period and print VAT declaration report.
+To generate the VAT declaration report in Excel, use the standard procedure for reporting sales tax for a settlement reporting period, and print the VAT declaration report.
 
-To generate VAT Declaration after a settlement is complete, navigate to **Tax** \> **Sales Tax Inquires** \> **Sales Tax Payments**. Select required sales tax payment, and on the Action Pane, select **Print report** .
+To generate the VAT declaration after a settlement is completed, go to **Tax** \> **Sales tax inquiries** \> **Sales tax payments**, and select the required sales tax payment. Then, on the Action Pane, select **Print report**.
 
 [![Sales tax parameters line item](./media/uae_vat_12.jpg)](./media/uae_vat_12.jpg)
 
- 
-Follow VAT declaration report dialog and fill in required information.
+In the **Export VAT file** dialog box, specify the required information.
 
-[![Export VAT file parameters section](./media/uae_vat_13.jpg)](./media/uae_vat_13.jpg)
+[![Export VAT file dialog box](./media/uae_vat_13.jpg)](./media/uae_vat_13.jpg)
 
- 
-A browser-specific dialog will open with a recommendation to save the downloaded VAT declaration excel file to your local machine. Save and verify the content of reported data.
+You're prompted to save the downloaded Excel file for the VAT declaration to your local computer. Save the file, and verify the content of the reported data.
 
-According to FTA accounting systems requirements, an electronic reporting file can't be edited it is after generation from system. When a correction is needed, it has to happen in the system. After the corrections are made, generate a new reporting file. 
+According to the requirements of the FTA accounting systems, an electronic reporting file can't be edited after it's generated from the system. Any corrections that are required must be made in the system. After you've finished making corrections, generate a new reporting file.
 
-After sucessfully validating the repoting file, upload the file to the FTA e-Tax portal using procedures specific to your company registration with FTA.
+After the reporting file is validated, upload it to the FTA e-Tax portal by using procedures that are specific to your company registration with FTA.
 
 ## FTA VAT audit file
 
-If an FTA VAT audit file is requested, after you generate the file (**Tax** \> **Declarations** \> **FAF Declaration**), complete the dialog questions. 
+After you generate the file (**Tax** \> **Declarations** \> **FAF declaration**), if an FAF is requested, specify the required information in the **Electronic report parameters** dialog box. 
 
-[![Electronic report parameters page](./media/uae_vat_14.jpg)](./media/uae_vat_14.jpg)
+[![Electronic report parameters dialog box](./media/uae_vat_14.jpg)](./media/uae_vat_14.jpg)
 
- 
-If you expected a large volume of transactions in the scope of the auditing period, you can deliver multiple FTA audit files. Consider running the FTA file generation in the background with batch processing and dividing the audited periods into smaller intervals of months, weeks, or days.
- 
+If you expect a large volume of transactions in the scope of the auditing period, you can deliver multiple FAFs. Consider using batch processing to run the job that generates FAFs in the background. Also consider dividing the audited periods into smaller intervals of months, weeks, or days.
+
 ## Print a sales invoice in the UAE layout
 
-With the UAE localization package, sales invoice and credit note printouts are included in the layout that is specified in FTA requirements for accounting systems. The following is an example of a free text invoice printout.
- 
-[![Free text invoice printout](./media/uae_vat_15.jpg)](./media/uae_vat_15.jpg)
+In the UAE localization package, printouts for sales invoices and credit notes are included in the layout that is specified in the FTA requirements for accounting systems. The following illustration shows an example of the printout for a free text invoice.
 
+[![Example of a free text invoice printout](./media/uae_vat_15.jpg)](./media/uae_vat_15.jpg)
 
-Printing in two languages was accommodated in the new printouts. System will print two Invoice printouts, first in language of user interface and simultaneously second printout will be generated in language of a customer in case those two languages are different.
+The new printouts can be printed in two languages. The system will print one invoice in the language of UI. At the time, a second printout will be generated in the language of the customer, if the two languages differ.
 
-To achieve consistent printout results other data in the system should be setup using translations like Name, Description of items in different languages in the Released product form. Additionally, Sales tax descriptions and Exempt code should also be considered for setup with translations.
-
+To achieve consistent printout results, other data in the system should be set up so that it has translations. For example, on the **Released product** page, set up the names and descriptions of items in different languages. You should also consider setting up sales tax descriptions and exempt codes so that they have translations.
