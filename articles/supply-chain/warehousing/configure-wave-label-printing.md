@@ -14,7 +14,7 @@ description: [Wave label printing functionality is included in D365 since versio
 •	Support for clean-up of wave label history 
 These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.]
 author: [GarmMSFT]
-manager: AnnBe
+manager: PJacobse
 ms.date: 12/31/2019
 ms.topic: configure-wave-label-printing
 ms.prod: 
@@ -24,9 +24,9 @@ ms.technology:
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: [Pick one: Application User/Developer/IT Pro]
+audience: Application User
 # ms.devlang: 
-ms.reviewer: [Content Strategist microsoft alias]
+ms.reviewer: [pjacobse]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
@@ -36,243 +36,172 @@ ms.author: [author's Microsoft alias]
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
+# Configure wave label printing
+
+# Released in version 10.0.0, upgraded in version 10.0.2
+
+# About
+
+This functionality offers alternative approach to label printing in Microsoft Dynamics D365 by introducing new wave step method. The new method enables creating and printing of the labels directly from the wave template during wave execution process. Therefore, the labels will be available before the work order is executed on the mobile device. This handles scenarios where different approach to label handling is desirable, enabling the worker to use and attach the required labels during picking and not only after picking.
+
+The feature introduces new Label layout form where ZPL label layouts are created to be used for every label that is printed via the new functionality. The new label layout is broken into three sections, header, body, and footer, to allow labels with repeating structure to be printed. Label templates, which tell the system what label layout to use, is the second form introduced. Here, the user can also specify which printer to print the label at, or if needed, to print labels at multiple printers at once. To further extend the overview of printed labels, Label history form is introduced where records of all labels created via this setup are shown.
+
+With this setup you can print and collate labels based on work headers, print break labels per work header, container content labels, case labels, and other similar labels.
+
+NOTE: This functionality does not replace existing label printing functionality via Document routing.
+
+This functionality has been enhanced in 10.0.2 release with the following functionalities: 
+- Allow for labels to be printed according to a number of cartons on a single work line – without using containerization feature (“carton” meaning designated unit from Unit sequence group lines); use of multiple different label sequences (for example, carton and pallet labels) is covered by “repeatable” check box.
+- Include an enumeration of the labels (1/124, 2/124…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.) 
+- Allow for BOL (Bill of lading) ID to be created and printed on label 
+- Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label 
+- Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers 
+- Allow for HAZMAT code to be include if relevant on label 
+- Support for reprint of labels (from handhelds and from rich client) 
+- Support for voiding of labels (a.o. for short pick scenarios) and reprint 
+- Support for clean-up of wave label history
+
+These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton. 
+
+# Setup
 
-# Metadata and Markdown template
+## Wave process methods
 
-[!include[banner](../includes/banner.md)]
+You may need to regenerate the wave process methods for the wave label printing method to become available. Navigate to _Warehouse management - Setup - Waves -  Wave process methods_ and check if waveLabelPrinting is present in the list. If it isn&#39;t, click on &#39;Regenerate methods&#39; in the action bar to add it.
 
+## Wave templates
 
-This Finance and Operations template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D) and the [rendered view](https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+Navigate to _Warehouse management - Setup -  Waves - Wave templates._ Select the template &#39;62 Shipping Default&#39;. In the Methods FastTab, add the Wave label printing method to the Selected Methods. Assign the &#39;Printlabel&#39; wave step code to the method.
 
-When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
+## Wave label layout
 
+The label layout control what information is printed on the label, and how it is laid out. Here is where you write the ZPL code that is sent to the printer. 
 
-## Metadata 
+Navigate to _Warehouse Management - Setup - Document routing - Wave Label Layout_. Create a new record.
 
-The full metadata block is above (in the [raw Markdown](https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md?token=AUBjQ-wxx8wHU3pnuQiYvPdvbodbxP2uks5Ypg9_wA%3D%3D)), divided into required fields and optional fields. **DO NOT** use a colon (:) in any of the metadata elements. 
+- Label Layout ID: Carton
+- Description: Carton (SSCC)
 
-Here are some key things to note about metadata.
+Save the Carton record and click on ‘Row Settings’ in the Ribbon. Click on ‘Row Settings’ in the Ribbon. Row settings allow you to configure the dynamic part of the label. Create a new row:
 
-- **Required metadata**
-    - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
-    - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
-    - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
-    - **manager** - Use "annbe" in this field.
-    - **ms.date** - This should be the first proposed publication date.
-    - **ms.topic** - Enter "article" here.
-    - **ms.prod** 
-    - **ms.service** - Always use "Dynamics365Operations".
-    - **ms.technology** 
+- Row Id: WaveLabel
+- Row Table: WHSWaveLabel
+- Row start position – Where the row will begin on the label (vertically): 0
+- Row Height – The height of each row: 0. The row height is positive if the label is horizontal, negative if vertical
+- Rows Per Page – How many rows can be printed on one label: 1
 
-- **Optional metadata**
-    - **audience** - Use of these values: Application User, Developer, or IT Pro.
-    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-    - **ms.custom** 
-    - **ms.assetid** - This is the GUID of the article that is used for internal tracking purposes. When creating a new Markdown file, get a GUID from [https://www.guidgenerator.com](https://www.guidgenerator.com).
-    - **ms.search.region** - Use "global" or enter a country-region value.
-    - **ms.author** - Use your Microsoft alias.  
+The above setup results in 1 separate ZPL label to be printed per record in Wave labels table.
 
-## Basic Markdown, GFM, and special characters
+Click on Edit Query in the ribbon, and in the range section, add a record for Work lines – Work type = Pick. This is so that only the Pick-type work lines are printed on the label, and not the put. 
 
-All basic and GitHub Flavored Markdown (GFM) is supported. For more information, see:
+You need to add the Shipments table to the query to be able to print out Bill of lading ID. Join it to the table Work lines.
 
-- [Baseline Markdown syntax](https://daringfireball.net/projects/markdown/syntax)
-- [GFM documentation](https://guides.github.com/features/mastering-markdown)
+In the ZPL Layout FastTab there are three sections in which you can write ZPL: Header, Body, and Footer. 
 
-Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
+Put the following text in the header:
 
-- Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+CT~~CD,~CC^~CT~
+^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
+^XA
+^MMT
+^PW812
+^LL1218
+^LS0
+^FT85,505^A0N,28,28^FH\^FD$WHSShipmentTable.CustomerReq$^FS
+^FO1,173^GB809,0,1^FS
+^FO0,391^GB809,0,1^FS
+^FO3,599^GB809,0,2^FS
+^FO420,176^GB0,216,1^FS
+^FO313,3^GB0,169,1^FS
+^FO0,807^GB809,0,1^FS
+^FT529,370^A0N,28,26^FH\^FD$WHSShipmentTable.BillOfLadingId$^FS
+^BY2,3,132^FT25,344^BCN,,N,N
+^FD>:(420)>53153>63^FS
+^FT526,315^A0N,28,28^FH\^FD ^FS
+^FT437,248^A0N,28,28^FH\^FDCARR: $WHSShipmentTable.SCAC$^FS
+^FT425,201^A0N,23,24^FH\^FDCARRIER:^FS
+^FT17,68^A0N,20,19^FH\^FDCRC INDUSTRIES, INC.^FS
+^FT15,99^A0N,20,19^FH\^FD83 RAILROAD DRIVE^FS
+^FT16,158^A0N,20,19^FH\^FD ^FS
+^FT438,368^A0N,28,28^FH\^FDB/L#^FS
+^FT15,128^A0N,20,19^FH\^FDIVYLAND PA 18974^FS
+^FT19,203^A0N,23,24^FH\^FD(420) SHIP TO POSTAL CODE^FS
+^FT331,39^A0N,28,28^FH\^FDShip To:^FS
+^FT14,39^A0N,28,28^FH\^FDShip From:^FS
+^FT331,67^A0N,23,24^FH\^FDWAL-MART DC 6010A-ASM DIS^FS
+^FT330,98^A0N,23,24^FH\^FDDEPT 10^FS
+^FT329,166^A0N,23,24^FH\^FDDOUGLAS GA 31533^FS
+^FT330,134^A0N,23,24^FH\^FD690 HWY 206^FS
+^FT19,504^A0N,28,28^FH\^FDPO#:^FS
+^FT437,316^A0N,28,28^FH\^FDPRO#^FS
+^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)31533^FS
+In the body, put:
+<Row name="WaveLabel">
+^FT127,439^A0N,28,28^FH\^FD$WHSWaveLabel.SeqNum$^FS
+^FT256,439^A0N,28,28^FH\^FD$WHSWaveLabel.NumberOfLabels$^FS
+^FT17,439^A0N,28,28^FH\^FDCARTON^FS
+^FT522,422^A0N,23,24^FH\^FDVPN:^FS
+^FT74,1156^A0N,28,28^FH\^FDSSCC-18^FS
+^FT21,579^A0N,28,28^FH\^FDItem name:^FS
+^FT107,580^A0N,28,28^FH\^FD$WHSWaveLabel.LabelItemName$^FS
+^FT576,423^A0N,23,21^FH\^FD$WHSWaveLabel.LabelItemId$^FS
+^FT252,1155^A0N,32,31^FH\^FD(00)$WHSWaveLabel.WaveLabelId$^FS
+^BY4,3,283^FT66,1115^BCN,,N,N
+^FD>;>800$WHSWaveLabel.WaveLabelId$^FS
+^FT194,439^A0N,28,28^FH\^FDof^FS
+</Row>
 
-## File name
+In the footer put
 
-File names use the following rules:
+^PQ1^XZ
 
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names short. They are part of the URL for your articles.  
+This ends the label. 
 
-## Headings
+## Wave label types
 
-Use sentence-style capitalization. Do not overcapitalize. 
+Navigate to _Warehouse Management - Setup - Document Routing - Wave Label Types_ and create a new record.
 
-Headings should use atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above. 
+- Label type: Carton
+– Description: Carton
 
-There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
+## Unit sequence groups
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Define a data method in C# #`.     
+Navigate to _Warehouse Management - Setup - Warehouse - Unit Sequence Groups_.
 
-Second-level headings will generate the on-page TOC that appears in the "In this article" section under the on-page title.
+Select or create ‘Ea Box PL’ group. Set the ‘Carton’ wave label type to Box line.
 
-### Third-level heading
-#### Fourth-level heading
-##### Fifth level heading
-###### Sixth-level heading
- 
-## Text styling
+## Wave label templates
 
-*Italics*
- Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
+Navigate to _Warehouse Management - Setup - Document Routing - Wave Label Templates_ and create a new record.
 
-**Bold**
-Use for UI elements.
+- Label Template Name: Carton labels
+- Description: Carton labels
+- Wave step code: PrintLabel
+- Warehouse: 62
 
-## Links
+In the Label Template General FastTab, select a Wave label type:
 
-### Internal links
+- Wave label type: Carton
 
-To link to a header in the same Markdown file (also known as anchor links), you'll need to find the ID of the header that you're trying to link to. To confirm the ID, view the source of the rendered article, find the ID of the header (for example, `id="blockquote"`), and link using # + id (for example, `#blockquote`).
+In the Label Template Details FastTab, add a new record:
 
-**Note:** You need to follow the casing of the header ID. In the following examples, the README.md file is all caps, so that's how this needs to be written in Markdown. Most IDs are lowercase. 
+- Label Layout Id: Carton
+- Printer name: Whatever ZPL printer you have setup.
+- Run query: Yes (optional)
+- Click on Edit query and add a filter on Shipment -> Account number (optional)
 
-The ID is auto-generated based on the header text. So, for example, given a unique section named `## Step 2`, the ID would look like this `id="step-2"`.
+As we are setting up a customer-specific label design, it should be necessary to create a query for that account specifically.
 
-- Example: [Chapter 1](#chapter-1)
+Click on Edit Query in the Ribbon, and in the sorting tab, add sorting on Load line ref rec ID (Reference load line id (Record-ID). Click OK and Yes on Grouping reset suggestion.
 
-To link to a Markdown file in the same repo, use [relative links](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2), including the ".md" at the end of the filename.
+Click on Wave Label Template Grouping, and check the box to Label build by Load line ref rec ID. This will create one label sequence (“Carton 1 of X” on a label layout) per Load line that is created through the wave. 
 
-- Example: [Readme](README.md)
+# Process
 
-To link to a header in a Markdown file in the same repo, use relative linking + hashtag linking.
+Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-007 and warehouse 62.
 
-- Example: [Links](#links)
+Add a line and specify item A0001, quantity 1. Click on Inventory – Reservation and reserve inventory to the line. Click on Release to warehouse in the Warehouse _-_ Actions section of the ribbon. A shipment will be created, and added to a new load, as there is no existing load containing load lines with this order number.
 
-### External links
+Create another line on the same sales order, for item A0002. Reserve the line and release the order to the warehouse again. The system will create a new shipment for the new line, but because of load building it will add that shipment and load line to the existing wave. Without load building enabled, a new load would have been created for the shipment as well.
 
-To link to an external file, use the full URL as the link.
-
-- Example: [GitHub](http://www.github.com)
-
-If a URL appears in a Markdown file, it will be transformed into a clickable link.
-
-- Example: http://www.github.com
-
-## Lists
-
-### Ordered lists
-
-1. This 
-1. Is
-1. An
-1. Ordered
-1. List  
-
-
-#### Ordered list with an embedded list
-
-1. Here
-1. comes
-1. an
-1. embedded
-    1. Miss Scarlett
-    1. Professor Plum
-1. ordered
-1. list
-
-
-### Unordered Lists
-
-- This
-- is
-- a
-- bulleted
-- list
-
-
-##### Unordered list with an embedded list
-
-- This 
-- bulleted 
-- list
-    - Mrs. Peacock
-    - Mr. Green
-- contains  
-- other
-    1. Colonel Mustard
-    1. Mrs. White
-- lists
-
-
-## Horizontal rule
-
----
-
-## Tables
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| col 1 is default | left-aligned     |    $1 |
-
-You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily. 
-
-## Code
-
-Use three backticks (&#96;&#96;&#96;) to begin and end a code example block . You an also indent a line to have it rendered as a code example.
-
-```
-function fancyAlert(arg) {
-    if(arg) {
-        $.docs({div:'#foo'})
-    }
-}
-```
-
-Use backticks (&#96;) for `inline code`. Use inline code for command-line commands, database table and column names, and language keywords.
-
-## Blockquotes
-
-> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
-
-## Images
-
-### Static image or animated gif
-
-![this is the alt text](../images/Logo_DotNet.png)
-
-### Linked image
-
-[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net) 
-
-## Videos
-
-### YouTube
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/g2a4W6Q7aRw" frameborder="0" allowfullscreen></iframe>
-
-## docs.microsoft extensions
-
-docs.microsoft provides a few additional extensions to GitHub Flavored Markdown. 
-
-### Alerts
-
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.     
-
-#### Note
-
-> [!NOTE]
-> This is a NOTE
-
-#### Warning
-
-> [!WARNING]
-> This is a WARNING
-
-#### Tip
-
-> [!TIP]
-> This is a TIP
-
-#### Important
-
-> [!IMPORTANT]
-> This is IMPORTANT
-
-And they'll render like this:
-![Alert styles](../images/alerts.png)
-
-
+Create a third line of the same sales order, for item M9200. Reserve the line and release the order to the warehouse. A new shipment will be created, and added to a new load, because the item failed the load mix group constraints. If a load mix group hadn&#39;t been specified on the load build template, then this shipment would have been added to the first load as well.
