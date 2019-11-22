@@ -58,7 +58,7 @@ Expense entry has been enhanced through the introduction of **Receipt OCR** proc
  
  This feature works in combination with the **Expense reports re-imagined** feature to drive towards our view of a cleaner and simple expense experience.
  
- To use these advanced expense capabilities, install the **Expense Management Service** Add-in for Dynamics 365 and enable the features in your instance. YOu can access the add-in from our LCS project.
+ To use these advanced expense capabilities, install the **Expense Management Service** add-in for Dynamics 365 Finance and enable the features in your instance. You can access the add-in from our Lifecycle Services (LCS) project.
  
  - Sign in to LCS and open the desired environment.
  - Go to **Full details**.
