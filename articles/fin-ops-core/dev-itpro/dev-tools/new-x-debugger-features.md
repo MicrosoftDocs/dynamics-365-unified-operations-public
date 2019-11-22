@@ -100,7 +100,6 @@ As a rule, when you use an IDisposable object, you should declare and instantiat
 The following sample shows some of the features described above.
 
 ```xpp
-
 // loop variable declared within the loop: It will
 // not be misused outside the loop
 for(int i = 1; i < 10; i++)
@@ -115,7 +114,6 @@ for(int i = 1; i < 10; i++)
 To avoid confusion, the X++ compiler will issue an error if you attempt to introduce a variable that would hide another variable in an enclosing scope or even in the same scope. For instance, the following code will cause the compiler to issue the following diagnostic message: A local variable named 'i' cannot be declared in this scope because it would give a different meaning to 'i', which is already used in a parent or current scope to denote something else.
 
 ```xpp
-
 {
     int i;
     {
