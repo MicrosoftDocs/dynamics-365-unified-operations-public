@@ -43,7 +43,7 @@ A VAT customer invoice is generated when you post a customer transaction that us
 
 Yes. You can create one tax integration profile for multiple types of documents.
 
-## Can I create an invoice that has different sales tax codes and sales tax rates on lines?
+## Can I create an invoice that has different sales tax codes and sales tax rates in lines?
 
 Yes. If you turn on the **Allow multiple tax codes in VAT customer invoices lines for Chinese Golden tax integration** feature (see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md)), and if there is a tax integration profile where the **Sales tax code** field is blank on **Tax integration profile** page (**Accounts receivable \> Setup \> Tax integration**), you can create and post invoices that have different sales tax codes and sales tax rates. You can also export the invoices to the file.   
 
