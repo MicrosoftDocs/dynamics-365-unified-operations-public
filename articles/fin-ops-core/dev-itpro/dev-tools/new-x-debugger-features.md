@@ -233,8 +233,7 @@ You can also define consts solely as variables. The compiler will maintain the i
 
 Read-only fields can only be assigned a value once, and that value never changes; the field can be assigned its value either inline, at the place where the field is declared, or in the constructor. Currently, that's the only difference between const and read-only.
 
-Var
----
+## Var
 
 You can now declare a variable without explicitly providing the type of the variable, if the compiler can determine the type from the initialization expression. Note that the variable is still strongly-typed into one, unambiguous type. It's only possible to use var on declarations where initialization expressions are provided (from which the compiler will infer the type). There are situations where this can make code easier to read, but this feature shouldn't be misused. You should consider the following rules:
 
@@ -279,7 +278,10 @@ The default for member variables that aren't adorned with an explicit modifier i
       }
     }
 
-In this case, field1 is accessed using the explicit 'this.' qualifier. **Note**: Making a member variable public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers. You should always strive to only depend on a contract, not an implementation.
+In this case, field1 is accessed using the explicit 'this.' qualifier. 
+
+> [!NOTE]
+> Making a member variable public may not be a good idea since it exposes the internal workings of the class to its consumers, creating a strong dependency between the class implementation and its consumers. You should always strive to only depend on a contract, not an implementation.
 
 ## Finally in try/catch statements
 Try/catch statements can now include an optional finally clause. The semantics are the same as they are in C\# and other managed languages. The statements in the finally clause are executed when control leaves the try block, either normally or through an exception.
@@ -321,7 +323,10 @@ In legacy X++, it was possible to prescribe in metadata that certain methods wer
         return 1;
       }
 
-This example shows a publishing method called Publisher. Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor. The code shows how to access the variables, and the return values. **Note**: This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events. Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances. Attributes are also used for binding event handlers to delegates:
+This example shows a publishing method called Publisher. Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor. The code shows how to access the variables, and the return values. 
+
+> [!NOTE]
+> This feature is provided for backward compatibility and, because the application code doesn't have many delegates, to publish important application events. Pre and Post handlers can easily break as the result of added or removed parameters, changed parameter types, or because methods are no longer called, or called under different circumstances. Attributes are also used for binding event handlers to delegates:
 
       [SubscribesTo(
         classstr(FMRentalCheckoutProcessor),  
@@ -439,7 +444,11 @@ No number of decimals will suffice to represent the value of 1/3 accurately. The
 A decimal number is a floating-point value that consists of a sign, a numeric value where each digit in the value ranges from 0 to 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a real value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor used to divide the 96-bit integer and specify what portion of it is a decimal fraction. The scaling factor is implicitly the number 10, raised to an exponent ranging from 0 to 28. Therefore, the binary representation of a decimal value represents ((-2⁹⁶ to 2⁹⁶)/10(0\\ to\\ 28)), where -(2⁹⁶-1) is equal to the minimum value and 2⁹⁶-1 is equal to the maximum value that can be expressed.
 
 ## String truncation
-String truncation is not a new feature. However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters. [![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)](./media/stringtruncationsolutionexplorer_debugfeatures.png) It's also possible to specify length constraints directly in the X++ syntax:
+String truncation is not a new feature. However, when code is executed in IL in previous versions, the automatic string truncation described here doesn’t take place. String values can be declared in X++ to contain a maximum number of characters. Typically, this is achieved by encoding this information in an extended data type, as shown below: Credit card numbers cannot exceed 20 characters. 
+
+![StringTruncationSolutionExplorer\_DebugFeatures](./media/stringtruncationsolutionexplorer_debugfeatures.png)
+
+It's also possible to specify length constraints directly in the X++ syntax:
 
     str 20 creditCardNumber;
 
@@ -452,7 +461,11 @@ Run the following code in the debugger by including it in a static main method:
     creditCardNumber = "12345678901234567890Excess string";
 
 ## Casting
-The previous version of X++ was very permissive in its treatment of type casting. Both up-casting and down-casting were allowed without intervention from the programmer. Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment. In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain. A cast is either a down-cast or an up-cast. To set the stage for this discussion, we introduce a few self-explanatory class hierarchies: [![Casting\_DebugFeatures](./media/casting_debugfeatures.png)](./media/casting_debugfeatures.png) As you can see, the MotorVehicle class isn't related to the Animal class. An **up-cast** happens when assigning an expression of a derived type to a base type:
+The previous version of X++ was very permissive in its treatment of type casting. Both up-casting and down-casting were allowed without intervention from the programmer. Some of the casting permitted in legacy X++ can’t be implemented in the confines of the .NET runtime environment. In object oriented programming languages, including X++, casting refers to assignments between variables whose declared types are both in the same inheritance chain. A cast is either a down-cast or an up-cast. To set the stage for this discussion, we introduce a few self-explanatory class hierarchies: 
+
+![Casting\_DebugFeatures](./media/casting_debugfeatures.png) 
+
+As you can see, the MotorVehicle class isn't related to the Animal class. An **up-cast** happens when assigning an expression of a derived type to a base type:
 
       Animal a = new Horse();
 
@@ -550,7 +563,11 @@ The X++ pause statement is no longer supported because the pop-up **Print Window
 
 ### Print statement
 
-The X++ print statement is another statement that existed only for debugging purposes. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent. [![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)](./media/debuggingadmin_debugfeatures.png) You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
+The X++ print statement is another statement that existed only for debugging purposes. It still exists, and its basic idea is unchanged. But print now outputs through System.Diagnostics.WriteLine. The product configuration determines the detail of the written information is sent. 
+
+![DebuggingAdmin\_DebugFeatures](./media/debuggingadmin_debugfeatures.png)
+
+You may find that using the Infolog is more compelling, since its output appears in the debugger and the running form.
 
 ## The Ignore list
 Since the legacy environment was all interpreted, it was possible to have some parts not compile, and use the rest. As long as you only called methods that compiled correctly, you were fine; however, you would run into trouble if you tried to call methods that weren't successfully compiled. This way of working doesn't work in CIL. Assemblies are generated from successful compilations and the runtime system can't load incomplete assemblies. However, there are legitimate scenarios when porting legacy applications into the new environment where it's beneficial to get things running in a staged fashion and where parts of the application need to be tested before everything is ported. While this is useful for this very limited scenario, it shouldn't be used once the application is ready for production, since you would be hiding problems that will occur at runtime, after the system has been deployed. This is how it currently works: You can specify a method in an XML by selecting, "Edit Best Practice Suppressions," from the context menu on the project. This will open an XML document where the exclusions are maintained.
@@ -560,7 +577,10 @@ This section provides information about the new features that we've added to the
 
 ### Adding ToString methods to your classes
 
-It's often a benefit to add ToString() methods to your classes. The effort spent doing this comes back many times and it's easy to do. This advice also holds true for legacy X++. **Note**: Since ToString methods can be called at unpredictable times, it isn't a good idea to change the state of the object here.
+It's often a benefit to add ToString() methods to your classes. The effort spent doing this comes back many times and it's easy to do. This advice also holds true for legacy X++. 
+
+> [!NOTE]
+> Since ToString methods can be called at unpredictable times, it isn't a good idea to change the state of the object here.
 
 ### Identifying unselected fields
 
@@ -582,11 +602,24 @@ Consider the following code:
       }
     }
 
-Set a breakpoint on the assignment statement. Make your class the startup object in your project, and start by pressing F5. When the breakpoint is encountered, view the rental variable by expanding it in the locals window. You'll see something similar to the following graphic. [![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)](./media/debuggingadmin2_debugfeatures.png) You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null. This signifies their value wasn't fetched from the database. Obviously, this is a debugging artifact. The values of the unselected fields will be the default value for the type of the field. Step over this and notice how the debugger changes the rendering to the actual value. **Note**: If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.
+Set a breakpoint on the assignment statement. Make your class the startup object in your project, and start by pressing F5. When the breakpoint is encountered, view the rental variable by expanding it in the locals window. You'll see something similar to the following graphic. 
+
+![DebuggingAdmin2\_DebugFeatures](./media/debuggingadmin2_debugfeatures.png)
+
+You can see that the fields that have been selected (EndMileage and RentalId) appear with their selected values, while the unselected fields appear as null. This signifies their value wasn't fetched from the database. Obviously, this is a debugging artifact. The values of the unselected fields will be the default value for the type of the field. Step over this and notice how the debugger changes the rendering to the actual value. 
+
+> [!NOTE]
+> If the table is set to Cache, the system will always fetch all fields from the entire table, irrespective of the field list provided in the code.
 
 ### The Auto and Infolog Windows
 
-The debugger will allow you to easily access certain parts of the state of the application. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed. [![Autos\_DebugFeatures](./media/autos_debugfeatures.png)](./media/autos_debugfeatures.png) There is also a window showing the data that is written to the Infolog. [![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)](./media/infolog_debugfeatures.png)
+The debugger will allow you to easily access certain parts of the state of the application. This information is available in the autos window, where the current company, the partition, the transaction level, and the current user ID are listed. 
+
+![Autos\_DebugFeatures](./media/autos_debugfeatures.png)
+
+There is also a window showing the data that is written to the Infolog. 
+
+![Infolog\_DebugFeatures](./media/infolog_debugfeatures.png)
 
 ### New breakpoint features
 
@@ -612,7 +645,10 @@ Consider the following code:
       }
     }
 
-Put a breakpoint on the print statements by pressing F9 while that statement is selected. This will create a normal, unconditional breakpoint. Now, use the mouse to open the context menu for the breakpoint and select **Condition**. Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5. Set the class as a startup project, and the class containing the code as the startup item in the project. Run the code. Feel free to modify the value of 'i' using the debugger. Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing. **Note**: A breakpoint can have several conditions. It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear. Trace points are often useful tot race execution. Insert a trace point on the line in question and log the value of the variable. The trace output will appear in the output window in the debugger.
+Put a breakpoint on the print statements by pressing F9 while that statement is selected. This will create a normal, unconditional breakpoint. Now, use the mouse to open the context menu for the breakpoint and select **Condition**. Put in a condition that indicates that the breakpoint should happen when the value of the 'i' variable exceeds 5. Set the class as a startup project, and the class containing the code as the startup item in the project. Run the code. Feel free to modify the value of 'i' using the debugger. Now, remove this breakpoint, and use the Hit count feature to accomplish the same thing. 
+
+> [!NOTE]
+> A breakpoint can have several conditions. It's often helpful to hover the cursor over the breakpoint, causing an informative tooltip to appear. Trace points are often useful tot race execution. Insert a trace point on the line in question and log the value of the variable. The trace output will appear in the output window in the debugger.
 
 ### The immediate window
 
