@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -94,7 +94,7 @@ The following configuration settings are available in the Customization.settings
     - **ISV\_CommerceRuntime\_CustomizableFile** – Specify the details of all the customized CRT and dependent assemblies. You can have multiple entries, one for each assembly.
     
 > [!NOTE]
-> If the extension depend on Newtonsoft.Json.Portable, then explicitly include this, please don’t assume these assemblies will be included by default because if the OOB product doesn’t use it then it may be removed. If your extension needs, then explicitly include this so that its packaged and placed in the right folder. 
+> If the extension depends on Newtonsoft.Json.Portable, then explicitly include this. Do not assume that these assemblies will be included by default because if the out-of-band (OOB) product doesn’t use it this might be removed. If your extension needs, then explicitly include this so that it is packaged and placed in the right folder. 
 
 **Example**
 
@@ -150,10 +150,10 @@ If you have any new extensions in CRT, Retail Server, Hardware station, or proxy
 
 Before you do the package, you must update the following configuration files if you have any customization in that area:
 
-- **CommerceRuntime.Ext.config** – Register all your CRT extension and the dependent assemblies. Also include the Retail server extension dependent assemblies here.
+- **CommerceRuntime.Ext.config** – Register all your CRT extensions and dependent assemblies. Also this is where you need to include the Retail Server extension dependent assemblies.
 
 > [!NOTE]
-> If the extension depend on Newtonsoft.Json.Portable, then explicitly include this, please don’t assume these assemblies will be included by default because if the OOB product doesn’t use it then it may be removed. If your extension needs, then explicitly include this so that its packaged and placed in the right folder. 
+> If the extension depends on Newtonsoft.Json.Portable, then explicitly include this. Do not assume that these assemblies will be included by default because if the out-of-band (OOB) product doesn’t use it this might be removed. If your extension needs, then explicitly include this so that it is packaged and placed in the right folder. 
 
 **Example**
 
@@ -167,7 +167,7 @@ Before you do the package, you must update the following configuration files if 
     </commerceRuntimeExtensions>
 ```
 
-- **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extension and the dependent assemblies.
+- **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions and dependent assemblies.
 
 **Example**
 
