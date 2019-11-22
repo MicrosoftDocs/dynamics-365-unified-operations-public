@@ -127,12 +127,14 @@ To run full data sync in Retail, follow these steps.
 
 ### Test credit card information to perform test purchases
 
-In order to perform test transactions on the site, you can use this test credit card information:
+To perform test transactions on the site, you can use the following test credit card information:
 
-Card number: 4111-1111-1111-1111, Expiration: 10/20, CVV: 737
+- Card number: 4111-1111-1111-1111
+- Expiration date: 10/20 
+- Card verification value (CVV) code: 737
 
 > [!NOTE]
-> You should not attempt to use actual credit card information on the test site under any circumstances!
+> You should never under any circumstances attempt to use actual credit card information on the test site.
 
 ## Next steps
 
