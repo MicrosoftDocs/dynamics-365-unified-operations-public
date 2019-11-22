@@ -179,10 +179,11 @@ You can set up the payment terms rankings on the **Credit management > Setup > C
 
 Rules are run in a specific order that you change to suit the needs of your organization. 
 
-- The Sales order exclusion rules let you override all rules that might block a sales order if an exclusion rule is true and iff you mark an exclusion rule so that the **Release Sales order** option is selected. The order will not be put on hold if that rule is true, and no other rules will be checked.
-- Blocking rules are rules for every *criteria*. Any rule can place the order on hold and all of the rules that block the order will be shown in the Blocking rules list on the **Credit management hold** page.
-- Exclusion rules are run last. If an exclusion rule is true on one *rule*, it will not override the blocking rule for any other rule. Exclusions will only affect the rule on which they are defined. 
+- One instance of the Sales order exclusion rules lets you override all rules that might block a sales order. Create a sales order exclusion rule and mark the **Release Sales order** option. The order will not be put on hold if that exclusion rule is true, and no other rules will be checked.
+- Blocking rules can place the order on hold.
+- Exclusion rules are run after blocking rules. Exclusion rules will only affect the rule on which they are defined. 
 - Blocking and exclusion rules are run in Table, then Group, then All order. Because of this order of processing, it is possible to have a blocking rule at the All level that will not be run because an exclusion rule at the Table or Group level is run.
+- Exclusions do not override the blocking rule if they are at the same level. For example, an exclusion rule at the group level will not override the blocking rule at the group level. You will not need to set up exclusions at the All level except as noted above with the one instance of the sales order exclusion rule. 
 
 The behavior of the **Credit limit used** rule will change based on the settings for the **Check credit limit for sales order** parameter found in the Credit and Collections parameter form.
 - If the parameter is set to No, then the Credit limit used rule will not be run.
@@ -225,6 +226,7 @@ You can use the **Reject** menu on the action pane to reject a sales order
 
 ### Automatically releasing credit management holds
 Sales orders are placed in the hold list based on the blocking rules. However, some reasons for the holds may changes over time if the sales order remains in the hold list for a period of time. For example, a customer may pay their bill, freeing up their credit limit. 
+
 You can use the **Evaluate for release** menu to review the sales orders in the hold list and automatically release them if the reason for the hold has been mitigated.
 1.	Select the **Evaluate for release** menu
 2.	Select **Process blocking rules** to review all of the sales orders
