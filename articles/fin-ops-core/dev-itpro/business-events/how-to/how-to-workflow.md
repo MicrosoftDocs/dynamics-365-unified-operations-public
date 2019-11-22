@@ -5,7 +5,7 @@ title: Business events and workflow approvals
 description: This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/13/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,8 +83,8 @@ The following illustration shows the high-level process that you must configure 
 
 14. The condition control automatically creates two branches for **Yes**/**No** results. If the result of the validate step is **No**, an email must be sent to the user. This email notifies the user that a new task requires his or her attention, and that he or she must sign in to the client. In order to complet this step create a new send email action within the **No** container and fillin the parameter with the email of the Approver from the previous step **workflowuseremail** and a subject and body of your choice.
 
-  > [!NOTE]
-  > The email address that the workflow business event returns is the email address of the workflow approver. If the workflow approver user hasn't been configured in yourdemo environment, you can use your own email address for demo purposes.
+    > [!NOTE]
+    > The email address that the workflow business event returns is the email address of the workflow approver. If the workflow approver user hasn't been configured in yourdemo environment, you can use your own email address for demo purposes.
 
     <img alt="approver email" src="../../media/BEF-Howto-workflow-11.png" width="70%">
 
@@ -95,7 +95,7 @@ Assigned to: **workflowuseremail** output
 Then you can fill in the details section with as much information as needed from previous step such as **workflowdocument** or **workflowstepinstruction**. 
 Again, you can use your own email address in the **Assigned to** field for demo purposes especially if the workflow approver user hasn't been configured in your demo environment.
 
-   <img alt="Microsoft Power Automate approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
+    <img alt="Microsoft Power Automate approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
 16. Next, you must complete the workflow approval by using the outcome of the approval step. Still in the **Yes** container, add a new **Finance and Operations Execute Action** step, and choose the **WorkflowWorkitem-complete** action and the **WorkflowWorkitemInstanceID** parameter. Then fill in the rest of the parameters from the approval outputs. As a minimum the outcome section with Approval outcome and the comment section with the approver's responses. Because the approval step can support multiple approvers, the response output is an array. Therefore, as soon as you select the output **Reponses** as an input for the comment section, Power Automate automatically embeds your action in an **Apply to each** container as shown below.
 
