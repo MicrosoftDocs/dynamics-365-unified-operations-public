@@ -94,7 +94,7 @@ The following configuration settings are available in the Customization.settings
     - **ISV\_CommerceRuntime\_CustomizableFile** – Specify the details of all the customized CRT and dependent assemblies. You can have multiple entries, one for each assembly.
     
 > [!NOTE]
-> If the extension depends on Newtonsoft.Json.Portable, then explicitly include this. Do not assume that these assemblies will be included by default because if the out-of-band (OOB) product doesn’t use it this might be removed. If your extension needs, then explicitly include this so that it is packaged and placed in the right folder. 
+> If the extension depends on Newtonsoft.Json.Portable, then explicitly include this. Do not assume that these assemblies will be included by default because if the out-of-band (OOB) product doesn’t use it this might be removed. If your extension needs, then explicitly include this so that it is packaged and placed in the correct folder. 
 
 **Example**
 
@@ -153,7 +153,7 @@ Before you do the package, you must update the following configuration files if 
 - **CommerceRuntime.Ext.config** – Register all your CRT extensions and dependent assemblies. Also this is where you need to include the Retail Server extension dependent assemblies.
 
 > [!NOTE]
-> If the extension depends on Newtonsoft.Json.Portable, then explicitly include this. Do not assume that these assemblies will be included by default because if the out-of-band (OOB) product doesn’t use it this might be removed. If your extension needs, then explicitly include this so that it is packaged and placed in the right folder. 
+> If the extension depends on Newtonsoft.Json.Portable, then explicitly include this. Do not assume that these assemblies will be included by default because if the out-of-band (OOB) product doesn’t use it this might be removed. If your extension needs, then explicitly include this so that it is packaged and placed in the correct folder. 
 
 **Example**
 
