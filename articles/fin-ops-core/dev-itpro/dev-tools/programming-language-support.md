@@ -64,16 +64,18 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
 -   The `finally` keyword is now available to follow the `try` and `catch` keywords. The semantics are identical to the semantics in C\#. The statements provided in the finally clause are executed irrespective of whether the try block threw any exceptions.
 -   The `using` keyword has been added as shorthand for referencing .NET namespaces. The following code example illustrates two ways of utilizing the using keyword to reference namespaces:
 
-        using SysColl = System.Collections;  // SysColl is an alias for the whole namespace.
-        using           System.CodeDom;      // Contains the class named CodeComment.
+    ```xpp
+    using SysColl = System.Collections;  // SysColl is an alias for the whole namespace.
+    using           System.CodeDom;      // Contains the class named CodeComment.
 
-        public class MyClass2
-        {
-            static SysColl.ArrayList arrayList = new SysColl.ArrayList(); // Initialized on declaration.
-            CodeComment codeComment          = new CodeComment("I am a comment.");
+    public class MyClass2
+    {
+        static SysColl.ArrayList arrayList = new SysColl.ArrayList(); // Initialized on declaration.
+        CodeComment codeComment          = new CodeComment("I am a comment.");
 
-            // More X++ code here.
-        }
+        // More X++ code here.
+    }
+    ```
 
 -   You can now initialize a class's field in the field's declaration statement. This is illustrated twice in the previous code example.
 -   You can declare variables in smaller scopes, not just at the start of methods.
@@ -81,14 +83,16 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
 -   A class's fields can now be static. In previous versions, only instance fields were allowed.
 -   A class can now have one static constructor. In previous versions, only instance constructors were available. The following X++ code example shows the syntax for a static constructor, through the new keyword typenew.
 
-        .    public class MyClass4
+    ```xpp
+    .    public class MyClass4
+        {
+            static utcdatetime utcInitialized3;  // Static variable member.
+            static void typenew()                // Static constructor member. 'typenew' is a new keyword.
             {
-                static utcdatetime utcInitialized3;  // Static variable member.
-                static void typenew()                // Static constructor member. 'typenew' is a new keyword.
-                {
-                utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
-                }
+            utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
             }
+        }
+    ```
 
 -   An attribute decoration, such as on a class or a method, can now omit the suffix of the attribute name if the suffix is `Attribute`. So the X++ joins the C\# in allowing `[MyFavorite]` instead of requiring `[MyFavoriteAttribute]`.
 -   A delegate can now be defined in a table, form, or query, and not just in a class.
