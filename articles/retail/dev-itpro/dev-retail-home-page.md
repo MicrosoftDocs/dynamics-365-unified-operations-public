@@ -136,6 +136,6 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Payment connectors
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
-- [Implementing a payment connector and payment device (white paper)](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public/edit/live/articles/retail/dev-itpro/dev-retail-home-page.md)
+- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)
