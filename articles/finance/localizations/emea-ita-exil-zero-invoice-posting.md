@@ -2,7 +2,7 @@
 # required metadata
 
 title: Posting invoices with zero amount
-description: This topic provides information about how to post financial transactions for invoices with an amount of zero.
+description: This topic explains how you can post financial transactions for invoices that have an amount of 0 (zero).
 author: ilkond
 manager: AnnBe
 ms.date: 11/21/2019
@@ -32,17 +32,17 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, it is required to post financial transactions for invoices with a total amount of zero.
+In Italy, financial transactions for invoices that have a total amount of 0 (zero) must be posted.
 
 ## Prerequisites
-Before you can post financial transactions for invoices with a total amount of zero, the following prerequisites must be met:
+
+Before you can post financial transactions for invoices that have a total amount of 0 (zero), the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, enable the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- In the **Feature management** workspace, turn on the **Posting invoices with zero amount** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-### Post invoices with zero amount
-This feature is applicable to invoices that are created in the **Accounts receivable** and **Accounts payable** modules.
-When posting invoices with an amount of zero, the system creates **Customer/ Vendor transactions** and **Voucher transactions**.
+## Posting invoices that have an amount of 0 (zero)
 
- 
+The Posting invoices with zero amount feature applies to invoices that are created in the **Accounts receivable** and **Accounts payable** modules.
 
+When invoices that have an amount of 0 (zero) are posted, the system creates customer/vendor transactions and voucher transactions.
