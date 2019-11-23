@@ -287,9 +287,6 @@ For this test, we'll be debugging the C\# code that we've written. To do this, w
 2.  Click on any **Vehicle rental ID** to view details.
 3.  Click the **Edit** icon near the top left of the form. The icon looks like a pencil.
 4.  In the **To** field of the **Rental** section, increase the date by one day.
-
-    ![FMRentalDetails](./media/fmrental.jpg)
-
 5.  Click the **Save** button. This causes the focus to shift to Visual Studio at your highlighted breakpoint. This line shows that the OnValidatedWrite event was raised, and that your handler method was called.
 6.  Press **F5** to continue the run. Instantly, your other breakpoint becomes highlighted.
 7.  Find the variable customer a few lines above your breakpoint.
