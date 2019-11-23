@@ -84,14 +84,14 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
 -   A class can now have one static constructor. In previous versions, only instance constructors were available. The following X++ code example shows the syntax for a static constructor, through the new keyword typenew.
 
     ```xpp
-    .    public class MyClass4
+    public class MyClass4
+    {
+        static utcdatetime utcInitialized3;  // Static variable member.
+        static void typenew()                // Static constructor member. 'typenew' is a new keyword.
         {
-            static utcdatetime utcInitialized3;  // Static variable member.
-            static void typenew()                // Static constructor member. 'typenew' is a new keyword.
-            {
-            utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
-            }
+        utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
         }
+    }
     ```
 
 -   An attribute decoration, such as on a class or a method, can now omit the suffix of the attribute name if the suffix is `Attribute`. So the X++ joins the C\# in allowing `[MyFavorite]` instead of requiring `[MyFavoriteAttribute]`.
