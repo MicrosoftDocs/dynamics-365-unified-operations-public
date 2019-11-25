@@ -48,10 +48,10 @@ The LINQ provider allows the user to access business data by using .NET managed 
 ## Two syntactical mechanisms for accessing LINQ
 There are two syntactical approaches for using LINQ, as described in the following table.
 
-|                                                                    | X++                                                                                  | C\# and Visual Basic           |
-|-----------------|-----------------------|------------------------------------|
-| **LINQ by standard method call syntax.**                           | Impractical. Language support for generics is vital for LINQ and is not supported in X++. | Available, requires lambda syntax. |
-| **LINQ by specialized syntax that is understood by the compiler.** | Not available.                                                                            | Available, easier to use.          |
+|                                                                | X++              | C\# and Visual Basic      |
+|----------------------------------------------------------------|------------------|---------------------------|
+| LINQ by standard method call syntax.                           | Impractical. Language support for generics is vital for LINQ and is not supported in X++. | Available, requires lambda syntax. |
+| LINQ by specialized syntax that is understood by the compiler. | Not available.   | Available, easier to use. |
 
 There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in Visual Basic):
 
@@ -61,7 +61,9 @@ There are two syntactic mechanisms for accessing the LINQ provider in C\# (or in
 This topic is going to review each syntactic mechanism for LINQ, starting with the easier specialized syntax.
 
 ## LINQ by specialized syntax in C\#
-Some .NET languages understand specialized syntax for LINQ as an alternative that is easier for us to write. C\# is one such language. ***Note about var:*** To use LINQ in C\#, you must understand the C\# keyword **var**, which is used to declare variables. The var keyword tells the compiler to figure out the data type of the variable by what is assigned to the variable. This feature is now also available in X++. The type is implicit in the source code, and the type is settled and unvarying after the compilation completes.
+Some .NET languages understand specialized syntax for LINQ as an alternative that is easier for us to write. C\# is one such language. 
+
+To use LINQ in C\#, you must understand the C\# keyword **var**, which is used to declare variables. The var keyword tells the compiler to figure out the data type of the variable by what is assigned to the variable. This feature is now also available in X++. The type is implicit in the source code, and the type is settled and unvarying after the compilation completes.
 
 ### Comparing X++ to C\# LINQ
 
@@ -83,8 +85,9 @@ while select * from ct
 
 Next is an equivalent query in C\# with the specialized LINQ syntax.
 
-```xpp
-// Get access to the data provider:       // C#, with specialized LINQ syntax.
+```csharp
+// C#, with specialized LINQ syntax.
+// Get access to the data provider:       
 var provider = new QueryProvider(null);
 
 var customers = new QueryCollection(provider);
@@ -103,10 +106,10 @@ foreach (var ct in query)
 }
 ```
 
-## LINQ query in C\# by method syntax, using the lambda operator =&gt;
-Next is another use of LINQ in C\#, except this time the more standard syntax is used to call the LINQ API. The approach also involves use of the lambda operator **=&gt;**. The following C\# query is functionally equivalent to the preceding C\# query.
+## LINQ query in C\# by method syntax, using the lambda operator >
+Next is another use of LINQ in C\#, except this time the more standard syntax is used to call the LINQ API. The approach also involves use of the lambda operator `>`. The following C\# query is functionally equivalent to the preceding C\# query.
 
-```xpp
+```csharp
 var query = customers
     .Where(c => string.Compare(c.AccountNum, "4000") >= 0)
     .Join(customers, 
@@ -123,13 +126,14 @@ There's a good match between the `while select` syntax used in X++ and the speci
 
 A limitation of the specialized LINQ syntax is that it can't be augmented with extensions to the LINQ provider. In contrast, standard syntax of method calls plus the lambda operator can be extended as needed. For instance, the LINQ framework provides a method for cross-company hints that can't be expressed in the special syntax for LINQ in C\#. Fortunately, due to the ability to compose queries, this limitation need not be a major problem. Calls to esoteric LINQ methods can be appended to the specialized LINQ syntax. The following C\# code shows this being done for the **crosscompany** method.
 
-```xpp
+```csharp
+// C#, mixing LINQ syntax mechanisms.
 var query = (from ct in customers
             from trans in customerTransactions
             where ct.AccountNum >= “4000”
             where trans.AccountNum == ct.AccountNum
             orderby ct.AccountNum descending
-            select ct).crosscompany();      // C#, mixing LINQ syntax mechanisms.
+            select ct).crosscompany();      
 ```
 
 ## LINQ query execution
@@ -139,8 +143,8 @@ The code generated for a LINQ query builds a tree at run time. When the results 
 
 The C\# compiler is largely unable to foresee and diagnose errors that will occur at run time due to the inability of the backend to process an incompatible LINQ query. For instance, in the following C\# code block, the specialized LINQ syntax is valid according to the C\# compiler. Yet at run time, an error would occur.
 
-```xpp
-var customerQuery = from c in db.Customers    // C#
+```csharp
+var customerQuery = from c in db.Customers    
                     where (from o in db.Orders
                     where o.ShipCountry == “Germany”
                     select o.CustomerID).Contains(c.CustomerID);
@@ -156,8 +160,8 @@ There is an overhead penalty paid at run time, when analysis of the tree occurs,
 
 The model that's provided by LINQ allows queries to be composed of subqueries. The X++ language can't cleanly provide this feature. To understand this, consider the following C\# LINQ code. A flag is passed to a method to control the ordering of data results.
 
-```xpp
-private IEnumerable RichCustomers(bool orderByName)    // C#
+```csharp
+private IEnumerable RichCustomers(bool orderByName) 
 {
     // Create a query for the rich customers. Note carefully
     // that no data is fetched when this is executed.
@@ -180,8 +184,7 @@ private IEnumerable RichCustomers(bool orderByName)    // C#
 
 LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
 
-Additional resources
---------
+## Additional resources
 
 [Changes in X++ and the X++ compiler](programming-language-support.md)
 
