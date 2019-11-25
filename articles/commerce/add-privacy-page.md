@@ -105,3 +105,13 @@ To add a link to a footer fragment, follow these steps.
 1. Preview the fragment, and test the link to the privacy policy page.
 
 The fragment can now be referenced in the template for other site pages. When this fragment is referenced in the **Footer** module of a template, the link reference will appear on any pages that are built by using that template.
+
+## Additional resources
+
+[Accessibility features and capabilities](accessibility.md)
+
+[Compliance overview](compliance-overview.md)
+
+[Cookie compliance](cookie-compliance.md)
+
+[Delete personal information](delete-personal-information.md)
