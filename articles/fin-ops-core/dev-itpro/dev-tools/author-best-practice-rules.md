@@ -324,7 +324,7 @@ The diagnostic message is ready for consumption. There is just one piece of book
     AuthorNotCurrentDiagnosticItem.DiagnosticMoniker + "Description",
     BestPracticeCheckerTargets.Class)]
 public class AuthorListRule : BestPracticeAstChecker<BestPracticeCheckerPayload>
-{ ... }
+{ // ... }
 ```
 
 As you can see, there are four parameters specified for the **BestPracticeRule** attribute:
