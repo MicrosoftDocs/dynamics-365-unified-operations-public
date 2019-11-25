@@ -134,9 +134,9 @@
       href: hr-copy-instance.md
     - name: Remove Talent environments
       href: remove-talent-environment.md
-    - name: Provisioning for the Onboard app
+    - name: Provision Onboard
       href: modular-app-tech-faq.md
-    - name: Embed PowerApps apps
+    - name: Embed Power Apps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR and Common Data Service
       href: CoreHREntities.md
