@@ -55,3 +55,13 @@ By default, Dynamics 365 Commerce doesn't collect any customer cookies that aren
 However, if any customization or extension that is done to your site adds cookies or tracking technologies, you must consider GDPR and cookie compliance, as required.
 
 For more information about GDPR privacy standards, see [Complete guide to GDPR compliance](https://gdpr.eu/).
+
+## Additional resources
+
+[Accessibility features and capabilities](accessibility.md)
+
+[Compliance overview](compliance-overview.md)
+
+[Delete personal information](delete-personal-information.md)
+
+[Add a privacy policy page](add-privacy-page.md)
