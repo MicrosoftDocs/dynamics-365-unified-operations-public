@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Security and role management in Attract
+title: Set user permissions in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Security and role management in Attract
+# Set user permissions in Attract
 
 [!include[banner](../includes/banner.md)]
 
