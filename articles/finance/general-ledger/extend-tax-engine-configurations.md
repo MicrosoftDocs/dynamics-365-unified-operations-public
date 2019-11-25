@@ -177,13 +177,13 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 				partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
 				taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
 				if (partyAddress && taxAddress
-					&& partyAddress.CountryRegionId == taxAddress.CountryRegionId
-					&& partyAddress.State != ''
-					&& taxAddress.State != ''
-					&& partyAddress.State == taxAddress.State)
+				    && partyAddress.CountryRegionId == taxAddress.CountryRegionId
+				    && partyAddress.State != ''
+				    && taxAddress.State != ''
+				    && partyAddress.State == taxAddress.State)
 				{
-					partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
-					isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+				    partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+			      	    isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
 				}
 				return isIntraStateWithUnionTerritory;
 			   }
