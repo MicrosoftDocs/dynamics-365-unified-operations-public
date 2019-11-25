@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Set up LinkedIn integration with Attract
 
-[!include[banner](/includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Help your recruiters and hiring managers attract top talent by configuring LinkedIn integration with Microsoft Dynamics 365 Talent: Attract. Attract lets you post jobs directly to LinkedIn, the largest professional online network.
 

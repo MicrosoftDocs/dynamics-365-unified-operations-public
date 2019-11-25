@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Source candidates with talent pools in Attract
 
-[!include[banner](includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Recruiters and hiring managers can organize their candidates using the Talent pools functionality in Attract. Talent pools can help you keep track of and engage with all the candidates that apply for jobs at your company.
 

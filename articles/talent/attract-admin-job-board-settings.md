@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Enable Broadbean integration in Attract
 
-[!include[banner](/includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 You want to get your open positions in front of as many qualified candidates as possible. Recruiting sites such as Broadbean help you accomplish this goal. Microsoft Dynamics 365 Talent: Attract now lets you post jobs to Broadbean, and Microsoft is constantly providing new offerings in this area.
 
