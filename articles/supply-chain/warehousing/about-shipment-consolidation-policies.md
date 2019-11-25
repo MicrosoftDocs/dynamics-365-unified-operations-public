@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: [Shipment consolidation policies]
+title: [About shipment consolidation policies]
 description: [The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Prior the introduction of this functionality the consolidation functionality allowed automated consolidation with hardcoded fields and based on the “Consolidate shipment at release to warehouse” filed at warehouse level.]
 author: [GarmMSFT]
 manager: PJacobse
@@ -26,7 +26,7 @@ ms.author: [author's Microsoft alias]
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
 ---
-# Configure shipment consolidation policies
+# About shipment consolidation policies
 
 # Released in version 10.0.3
 
