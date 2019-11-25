@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Microsoft Dynamics 365 Talent - Attract features and capabilities
+title: Attract features and capabilities
 description: This topic describes the features that Microsoft Dynamics 365 Talent - Attract provides for managing the process of hiring new talent.
 author: andreabichsel
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Microsoft Dynamics 365 Talent - Attract features and capabilities
+# Attract features and capabilities
 
 [!include [banner](includes/banner.md)]
 

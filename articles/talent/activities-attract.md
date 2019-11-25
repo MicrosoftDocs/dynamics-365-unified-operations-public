@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Activities in hiring processes 
-description: This topic provides information about the various types of activities that can be used in the hiring process in Microsoft Dynamics 365 Talent - Attract.
+title: Add activities to a hiring process 
+description: This topic provides information about the various types of activities you can add to a hiring process in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Activities in hiring processes
+# Add activities to a hiring process
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Activities can be added as a part of the hiring process in Microsoft Dynamics 365 Talent: Attract. Activities can be added to a process template, or they can be added directly to the hiring process in the job. When a job is defined, a process template is selected, and the activities that are included in the template are applied to the job. If a template isn't selected, the default template is used. The hiring process can also be modified on the job after the template is applied.
 

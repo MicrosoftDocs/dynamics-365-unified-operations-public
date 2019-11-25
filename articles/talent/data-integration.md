@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Talent January 2019 update
 
 # Data integration guidance for Dynamics 365 Talent
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 ## Overview
 Dynamics 365 Talent manages business data that is useful in a variety of

@@ -31,6 +31,7 @@ ms.dyn365.ops.version: Talent
 ---
 
 # User not found in People Picker in Attract or Onboard
+
 [!include [banner](includes/banner.md)]
 
 ## Issue
