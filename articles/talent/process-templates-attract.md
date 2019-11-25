@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a process template in Attract
-description: This topic provides information about how to create a process template in Attract.
+title: Create a hiring process template in Attract
+description: This topic provides information about how to create a hiring process template in Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.1
 
 ---
 
-# Create a process template in Attract
+# Create a hiring process template in Attract
 
 [!include [banner](includes/banner.md)]
 

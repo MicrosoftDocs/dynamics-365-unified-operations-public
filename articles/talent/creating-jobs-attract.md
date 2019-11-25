@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create, approve, and post jobs in Attract
+title: Create a job in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: hasrivas
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Create, approve, and post jobs in Attract
+# Create a job in Attract
 
 [!include [banner](includes/banner.md)]
 

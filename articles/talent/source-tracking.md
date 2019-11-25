@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Track sources for candidate profiles and applications
+title: Track candidate sources in Attract
 description: This topic provides information about tracking the source for candidate profiles and applications. 
 author: hachandr
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Track sources for candidate profiles and applications
+# Track candidate sources in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 > [!NOTE] 
 > Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin settings** in Attract. A future release will provide source tracking reports. For more information, see [Access preview features in Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).

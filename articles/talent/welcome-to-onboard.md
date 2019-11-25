@@ -32,4 +32,4 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Welcome to Dynamics 365 Talent - Onboard
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]

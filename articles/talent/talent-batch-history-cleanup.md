@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance with auto cleanup tasks
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 **Issue**
 
