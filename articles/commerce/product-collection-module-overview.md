@@ -46,7 +46,7 @@ The sources for product collections can be lists of the following four types:
 - Editorial lists of products that are manually defined in Dynamics 365 Retail as related products for a product, or product lists
 - Algorithmic lists, such as lists of new, best-selling, or trending products
 - Recommendation lists that are based on machine learning
-- Personalization lists that support personalized results for a customer. A customer should be signed-in to the e-Commerce site to see personalized results. Guest users do not see personalized results. A customer can opt-out from personalization from the [account management page](account-management.md).
+- Personalization lists that support personalized results for a customer. A customer should be signed in to the e-Commerce site to see personalized results. Guest users do not see personalized results. A customer can opt-out from personalization from the [account management page](account-management.md).
 
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
@@ -96,7 +96,7 @@ The following table shows the list types that are available for selection in the
 | Curated                    | A custom list that merchandisers and editors have created in Retail. | Enrich category page, home page, checkout and cart pages, and product pages | Not applicable | Not applicable |Not applicable|
 | Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category from the page context E.g. Category page | Category determined by site author | Supported |
 | Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Only applicable on cart page | Cart | Not applicable | Supported |
-| People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Used on PDPs to show products that other customers have purchased | Product context from page | Product provided by site author | Supported |
+| People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Used on PDPs to display products that other customers have purchased | Product context from page | Product provided by site author | Supported |
 | Picks for you|  A list that uses machine learning to determine customer preferences| Can be used on any page |  Not applicable| Not applicable| Supported | 
 
 ## Additional resources
