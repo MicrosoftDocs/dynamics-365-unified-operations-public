@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 
 # Set up your career site in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include[banner](/includes/banner.md)]
 
 This topic provides an overview of the candidate-facing career site
 functionality in Microsoft Dynamics 365 Talent: Attract. It also explains
