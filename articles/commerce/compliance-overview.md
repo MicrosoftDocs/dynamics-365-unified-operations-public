@@ -46,3 +46,13 @@ Compliance is an important factor for all businesses, because it helps your user
 | [GDPR and handling data subject requests (DSRs)](delete-personal-information.md) | This topic covers the General Data Protection Regulation (GDPR) in the European Union (EU). It also describes how companies must handle data that they use on behalf of the people who own that data. |
 
 Every company is responsible for reviewing compliance-based content and functionality and applying them to its site. Use these topics to learn about the various compliance areas, and implement the areas that best fit your company and the content needs of your business.
+
+## Additional resources
+
+[Accessibility features and capabilities](accessibility.md)
+
+[Cookie compliance](cookie-compliance.md)
+
+[Delete personal information](delete-personal-information.md)
+
+[Add a privacy policy page](add-privacy-page.md)
