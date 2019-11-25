@@ -93,7 +93,19 @@ The new grid also provides the ability to build more complex features into the n
 - **Totals**: Business users can see totals for numeric columns in tabular grids. For example, financial users will be able to view totals for a filtered set of transactions for a specific customer. This feature is first available as part of the new grid control feature starting in Platform update 29, and will continue to evolve in subsequent platform versions. 
 - **Fast data entry**: This feature allows users to enter data in a grid ahead of the server, minimizing the need for users to wait for the server to validate a row before moving to another row in the grid. This feature is first available as part of the new grid control feature in Platform update 31, and will continue to evolve in subsequent platform versions. 
 
-To use the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.
+Starting in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). For older updates, the new grid control is available by adding "&debug=reactGrid" to the environment URL.  
+
+To enable the new grid while this feature is in preview, follow these steps:
+1.  **Enable the flight** by using the following SQL statement:
+    
+    INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
+    
+2.  **Reset IIS** to flush the static flighting cache.
+3.  Go to the **Feature management** workspace in your Finance and Operations app.
+4.  Select the **New grid control** feature in the list of features, and then select Enable now in the details pane.
+If New grid control does not appear in the list of features, select Check for updates.
+
+All subsequent user sessions will start with the new grid enabled.
 
 ## Additional resources
 
