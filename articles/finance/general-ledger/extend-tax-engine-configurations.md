@@ -147,7 +147,7 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 
 2. Add a tax engine model field for intrastate transactions in a union territory.
 
-   1. Create a new project of model Application Suite, add a new class TaxableDocRowDPExtLineSubscriberSample. Implement logic to determine if a transaction is an intrastate transaction in a union territory and pass the flag to GTE.
+   1. Create a new project of model Application Suite, and add the new class, TaxableDocRowDPExtLineSubscriberSample. Implement the following logic to determine if a transaction is an intrastate transaction in a union territory and pass the flag to GTE.
    
    			public class TaxableDocRowDPExtLineSubscriberSample
 			{
