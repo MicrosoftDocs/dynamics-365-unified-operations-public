@@ -153,7 +153,7 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 			{
 			    public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 
-			    [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
+			    [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), 			  delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
 			    public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
 			    {
 				_validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
@@ -171,23 +171,22 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 				LogisticsPostalAddress      partyAddress;
 				LogisticsPostalAddress      taxAddress;
 				LogisticsAddressState       partyState;
-				SalesPurchJournalLine       documentLineMap;
-				TaxModelTaxable_IN          taxModelTaxable;
+				SalesPurchJournalLine       documentLineMap;					TaxModelTaxable_IN          taxModelTaxable;
 				documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
 				taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
 				partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
 				taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
 				if (partyAddress && taxAddress
-				    && partyAddress.CountryRegionId == taxAddress.CountryRegionId
-				    && partyAddress.State != ''
-				    && taxAddress.State != ''
-				    && partyAddress.State == taxAddress.State)
+					&& partyAddress.CountryRegionId == taxAddress.CountryRegionId
+					&& partyAddress.State != ''
+					&& taxAddress.State != ''
+					&& partyAddress.State == taxAddress.State)
 				{
-				    partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
-				    isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+					partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+					isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
 				}
 				return isIntraStateWithUnionTerritory;
-			    }
+			   }
 
 			}
 
