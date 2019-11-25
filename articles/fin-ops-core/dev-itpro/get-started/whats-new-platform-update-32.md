@@ -36,9 +36,9 @@ ms.dyn365.ops.version: Platform update 32
 
 This topic lists preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available as follows:
 
-- Preview release is in November 2019.
-- General availability (self-update) is in January 2020.
-- Auto-update is in February 2020.
+- Preview release is November 2019.
+- General availability (self-update) is January 2020.
+- Auto-update is February 2020.
 
 For more information about Platform update 32, see [Additional resources](whats-new-platform-update-32.md#additional-resources).
 
@@ -48,15 +48,15 @@ For more information about Platform update 32, see [Additional resources](whats-
 When exporting files using Data management, there was a maximum file size of 256 MB. You can remove this limitation in Platform update 32 by implementing flight **DMFBlobSize256**. If needed, you can revert to the previous behavior if you encounter issues due to enabling this feature.
 
 ### Finance and Operations AOS (kernel) improvements
-As we focus on continuous improvements to provide more reliable and stable experience for our customers, this is a required milestone on this journey.
+As we focus on continuous improvements to provide a more reliable and stable experience for our customers, this is a required milestone on this journey.
 
-Starting with Platform update 32, AOS (kernel) will uptake Visual C++ 17 runtime libraries to take advantage of compiler performance optimizations. Platform engineers will benefit from the new upgrade while using their development environments to provide more robust and reliable experience for our customers.
+Starting with Platform update 32, AOS (kernel) will uptake Visual C++ 17 runtime libraries to take advantage of compiler performance optimizations. Platform engineers will benefit from the new upgrade while using their development environments to provide a more robust and reliable experience for our customers.
 
 This will require that existing environments be updated to use the VC++ 17 redistributables.
 
 - For Microsoft-managed Standard Acceptance Test Sandbox and higher (Tier 2 and higher) and Production environments, VC++ 17 redistributables are already installed and no action is needed.
-- For Microsoft-managed DEV environment (Tier 1) customers, partners, and ISV’s will need to reboot their virtual machines before applying Platform update 32.
-- For non-managed Dev, Build, Test, Demo (Tier 1) and on-premises environments, customers, partners, and ISV’s will need to download and install VC++ 17 redistributable from the shared asset library in Lifecycle Services and reboot their machines.
+- For Microsoft-managed Dev environment (Tier 1) customers, partners, and ISV’s will need to reboot their virtual machines before applying Platform update 32.
+- For non-managed Dev, Build, Test, Demo (Tier 1), and on-premises environments, customers, partners, and ISV’s will need to download and install VC++ 17 redistributables from the shared asset library in Lifecycle Services and reboot their machines.
 
 If you have the latest redistributables already installed, then no action is needed.
 
@@ -87,17 +87,17 @@ In Platform update 32, users can now filter for blank values via the Filter Pane
 The new grid provides a number of benefits: 
 
 - **Performance**: The new grid provides improved rendering speed and a faster scrolling experience.
-- **Positionally scroll**: Users are able to now positionally scroll within the data that has been loaded in the browser. For example, if you're scrolled in 10,000 rows in a grid, you click the middle of the scrollbar to immediately position to the 5,000th record without having to retrieve data from the server.  
-- **General improvements**: The new grid eliminates issues from the existing grid around misalignment of grid headers and data, as well as the grid jumping while scrolling or creating new records. 
+- **Positionally scroll**: Users are now able to positionally scroll in the data that has been loaded in the browser. For example, if you want to scroll through 10,000 rows in a grid, click the middle of the scrollbar to immediately position to record 5,000 without having to retrieve data from the server.  
+- **General improvements**: The new grid eliminates issues from the existing grid with misalignment of grid headers and data, as well as the grid jumping while scrolling or creating new records. 
 - **Reorder columns**: Users are now able to reorder columns by dragging and dropping. Simply hover the mouse over the column header, and a gripper for drag-and-drop will appear on the left side of the column.  
-- **Mathematical formulas**: Users can now enter mathematical formulas into numeric cells in a grid, for example a user could enter "=15*4. For the system to recognize the value as an expression, you simply need to start with an "=". 
+- **Mathematical formulas**: Users can now enter mathematical formulas into numeric cells in a grid. For example, a user could enter "=15*4. For the system to recognize the value as an expression, you simply need to start with an "=". 
 
-The new grid also provides the ability to build more complex features into the new grid, and these additions to the grid are planned to be introduced and enhanced in subsequent monthly updates:
+The new grid also provides the ability to build more complex features into the new grid. These additions to the grid will be introduced and enhanced in subsequent monthly updates:
 
 - **Totals**: Business users can see totals for numeric columns in tabular grids. For example, financial users will be able to view totals for a filtered set of transactions for a specific customer. This feature is first available as part of the new grid control feature starting in Platform update 29, and will continue to evolve in subsequent platform versions. 
 - **Fast data entry**: This feature allows users to enter data in a grid ahead of the server, minimizing the need for users to wait for the server to validate a row before moving to another row in the grid. This feature is first available as part of the new grid control feature in Platform update 31, and will continue to evolve in subsequent platform versions. 
 
-To try out the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.
+To use the new grid control, simply add &debug=reactGrid into the URL of your developer environment. Note that flighting will prevent the feature from being operational in other environments.
 
 ## Additional resources
 
