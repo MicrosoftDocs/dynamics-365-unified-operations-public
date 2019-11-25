@@ -134,6 +134,8 @@
       href: hr-copy-instance.md
     - name: Remove Talent environments
       href: remove-talent-environment.md
+    - name: Manage features
+      href: access-preview-feature.md
     - name: Provision Onboard
       href: modular-app-tech-faq.md
     - name: Embed Power Apps apps
@@ -148,18 +150,12 @@
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
-    - name: Frequently asked questions
-      items:
-      - name: LinkedIn integration FAQ
-        href: attract-linkedin-faq.md
     - name: Configure system settings
       items:
       - name: Configure company information
         href: admin-settings-attract.md
       - name: Set user permissions
         href: security-attract.md
-      - name: Manage features
-        href: access-preview-feature.md
       - name: Set up your career site
         href: career-site.md
       - name: Enable Broadbean integration
@@ -168,6 +164,8 @@
         href: attract-configure-email-settings.md
       - name: Set up LinkedIn integration
         href: attract-admin-linkedin.md
+      - name: LinkedIn integration FAQ
+        href: attract-linkedin-faq.md
     - name: Create a hiring process
       items:
       - name: Create a process template
