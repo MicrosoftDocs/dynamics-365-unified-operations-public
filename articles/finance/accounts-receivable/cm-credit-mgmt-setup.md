@@ -42,7 +42,7 @@ There are four FastTabs where you can change the parameters that control credit 
 
 ### Credit holds
 
--	Select **Yes** for **Allow edit of sales orders after order hold is released** to require the sales order to check the rules again if it has been edited after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
+-	Select **Yes** for **Allow edit of sales orders value after order hold is released** to require the sales order to check the rules again if the sales order value has been edited after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
 
 -	Select the default release reason for the **Reasons for canceled orders** field. This will be the default reason used when a sales order that was on credit management hold is cancelled.
 
