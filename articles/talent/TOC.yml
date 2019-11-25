@@ -138,13 +138,13 @@
       href: modular-app-tech-faq.md
     - name: Embed Power Apps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Core HR and Common Data Service
+    - name: Core HR entities in Common Data Service
       href: CoreHREntities.md
     - name: Get support for Talent
       href: talent-support.md
   - name: Staff your organization with Attract
     items:
-    - name: Which version of Attract?
+    - name: Choose a version of Attract
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
