@@ -5,7 +5,7 @@ title: X++ and debugger features
 description: This tutorial is for developers to use advanced constructs of the X++ language and take advantage of productive debugger features. This is a walkthrough of the new features with exercises included to practice using these features. 
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -21,7 +21,6 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26801
-ms.assetid: 27c65e79-df74-4249-b684-97e1d40da753
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
@@ -79,7 +78,7 @@ The compiler will issue an error message in the info call: 'i' is not declared.
 
 ### Example
 
-There's another place where scopes can be established: the using statement, which is another newcomer to the X++ language.
+There's another place where scopes can be established: the `using` statement, which is another newcomer to the X++ language.
 
 ```xpp
 static void AnotherMethod()
@@ -93,7 +92,7 @@ static void AnotherMethod()
 }
 ```
 
-As a rule, when you use an IDisposable object, you should declare and instantiate it in a using statement. The using statement calls the Dispose method on the object in the correct way, even if an exception occurs while you are calling methods on the object. You can achieve the same result by putting the object inside a try block, and then explicitly calling Dispose in a finally block; in fact, this is how the using statement is translated by the compiler. Declarations can now be provided anywhere statements can be provided-- a declaration is syntactically a statement, a declaration statement. You can, therefore, provide declarations immediately prior to the usage. You don’t have to declare the variables all in one place.
+As a rule, when you use an **IDisposable** object, you should declare and instantiate it in a using statement. The using statement calls the **Dispose** method on the object in the correct way, even if an exception occurs while you are calling methods on the object. You can achieve the same result by putting the object inside a try block, and then explicitly calling Dispose in a finally block; in fact, this is how the using statement is translated by the compiler. Declarations can now be provided anywhere statements can be provided-- a declaration is syntactically a statement, a declaration statement. You can, therefore, provide declarations immediately prior to the usage. You don’t have to declare the variables all in one place.
 
 ### Example
 
@@ -104,8 +103,8 @@ The following sample shows some of the features described above.
 // not be misused outside the loop
 for(int i = 1; i < 10; i++)
 {
-// Because this value is not used from outside the loop,
-// its declaration belongs in this smaller scope.
+    // Because this value is not used from outside the loop,
+    // its declaration belongs in this smaller scope.
     str s = int2str(i);
     info(s);
 }
@@ -126,7 +125,7 @@ This aligns well with the rules that are known from C\#, but is different from t
 
 ### Exercise
 
-Adapt the code in FMVehicleInventoryServiceClass to use smaller scopes.
+Adapt the code in **FMVehicleInventoryServiceClass** to use smaller scopes.
 
 ## Static constructors and static fields
 Static constructors and static fields are new features in the X++ language. Static constructors are guaranteed to run before any static or instance calls are made to the class. In C\#, the concept of static relates to the whole executing application domain. The execution of the static constructor is relative to the user’s session. The static constructor has the following profile.
@@ -166,7 +165,7 @@ The singleton will guarantee that only one instance of the class will ever be ca
 
 ```xpp
 {
-    …
+    // Your code here.
     Singleton i = Singleton::instance();
 }
 ```
@@ -182,7 +181,7 @@ public class MyClass2
 
     void new()
     {
-        // …
+        // Your code here.
     }
 }
 ```
@@ -199,7 +198,7 @@ public class MyClass2
     {
         this.field1 = 1;
         this.field2 = "Banana";
-        // …
+        // Your code here.
     }
 }
 ```
@@ -232,7 +231,7 @@ If you're in the scope of the class where the const is defined, you can omit the
 
 ### Exercise
 
-The fleet application contains the FMDataHelper class that contains the following macro definitions.
+The fleet application contains the **FMDataHelper** class that contains the following macro definitions.
 
 ```xpp
 public class FMDataHelper
@@ -243,7 +242,6 @@ public class FMDataHelper
     #define.FMSvcTechUserGrpId('FMSvcTech')
     #define.FMClerkUserGrpId('FMClerk')
     #define.FMManagerUserGrpId('FMManager')
-…
 }
 ```
 
@@ -280,7 +278,7 @@ You can now declare a variable without explicitly providing the type of the vari
     ```xpp
     // When the type of a variable is not clear from the context, use an 
     // explicit type. 
-        int var4 = myObject.ResultSoFar();
+    int var4 = myObject.ResultSoFar();
     ```
     
 -   Use var for the declarations of for loop counters.
@@ -340,22 +338,22 @@ In legacy X++, it was possible to prescribe in metadata that certain methods wer
 
 ```xpp
 [PreHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
-    public static void PreHandler(XppPrePostArgs arguments)
-    {
-        int arg = arguments.getArg("i");
-    }
+public static void PreHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+}
 
-    [PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
-    public static void PostHandler(XppPrePostArgs arguments)
-    {
-        int arg = arguments.getArg("i");
-        int retvalFromMethod = arguments.getReturnValue();
-    }
+[PostHandlerFor(classStr(MyClass2), methodstr(MyClass2, publisher))]
+public static void PostHandler(XppPrePostArgs arguments)
+{
+    int arg = arguments.getArg("i");
+    int retvalFromMethod = arguments.getReturnValue();
+}
 
-    public int Publisher(int i)
-    {
-        return 1;
-    }
+public int Publisher(int i)
+{
+    return 1;
+}
 ```
 
 This example shows a publishing method called Publisher. Two subscribers are enlisted with the PreHandlerFor and PostHandlerFor. The code shows how to access the variables, and the return values. 
@@ -473,7 +471,6 @@ public class MyClass2
 
         valueAsDecimal = value;
         info(valueAsDecimal.ToString("G28"));
-
     }
 }
 ```
