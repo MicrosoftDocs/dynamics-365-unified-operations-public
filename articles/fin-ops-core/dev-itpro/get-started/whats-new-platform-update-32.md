@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preview features in Platform update 32 for Finance and Operations apps (February 2020)
-description: This topic lists features that are in preview in Platform update 32 for Finance and Operations apps. 
+description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
 ms.date: 11/25/2019
@@ -34,95 +34,110 @@ ms.dyn365.ops.version: Platform update 32
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available as follows:
+This topic lists the preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
-- Preview release is November 2019.
-- General availability (self-update) is January 2020.
-- Auto-update is February 2020.
+- **Preview release:** November 2019
+- **General availability (self-update):** January 2020
+- **Auto-update:** February 2020
 
 For more information about Platform update 32, see [Additional resources](whats-new-platform-update-32.md#additional-resources).
 
 ## Features included in this release
 
-### Data management export file size limit removed
-When exporting files using Data management, there was a maximum file size of 256 MB. You can remove this limitation in Platform update 32 by implementing flight **DMFBlobSize256**. If needed, you can revert to the previous behavior if you encounter issues due to enabling this feature.
+### File size limit for data management export has been removed
+
+Wen Data management is used to export files, there is a maximum file size of 256 megabytes (MB). In Platform update 32, you can remove this limit by implementing flight **DMFBlobSize256**. If this feature causes issues after you turn it on, you can revert to the previous behavior.
 
 ### Finance and Operations AOS (kernel) improvements
-As we focus on continuous improvements to provide a more reliable and stable experience for our customers, this is a required milestone on this journey.
 
-Starting with Platform update 32, AOS (kernel) will uptake Visual C++ 17 runtime libraries to take advantage of compiler performance optimizations. Platform engineers will benefit from the new upgrade while using their development environments to provide a more robust and reliable experience for our customers.
+As Microsoft focuses on continuous improvements to provide a more reliable and stable experience for its customers, these improvements are a required milestone.
 
-This will require that existing environments be updated to use the VC++ 17 redistributables.
+Starting in Platform update 32, AOS (kernel) will uptake Visual C++ 17 runtime libraries to take advantage of compiler performance optimizations. Platform engineers will benefit from the new upgrade while they use their development environments to provide a more robust and reliable experience for our customers.
 
-- For Microsoft-managed Standard Acceptance Test Sandbox and higher (Tier 2 and higher) and Production environments, VC++ 17 redistributables are already installed and no action is needed.
-- For Microsoft-managed Dev environment (Tier 1) customers, partners, and ISV’s will need to reboot their virtual machines before applying Platform update 32.
-- For non-managed Dev, Build, Test, Demo (Tier 1), and on-premises environments, customers, partners, and ISV’s will need to download and install VC++ 17 redistributables from the shared asset library in Lifecycle Services and reboot their machines.
+This change requires that existing environments be updated so that they use the Visual C++ 17 redistributables.
 
-If you have the latest redistributables already installed, then no action is needed.
+- For Microsoft-managed Standard Acceptance Test sandbox and higher (Tier 2 and higher) environments, and production environments, the Visual C++ 17 redistributables are already installed. No action is required.
+- For Microsoft-managed dev (Tier 1) environments, customers, partners, and independent software vendors (ISVs) must restart their virtual machines (VMs) before they apply Platform update 32.
+- For non-managed dev, build, test, demo (Tier 1), and on-premises environments, customers, partners, and ISVs must download and install the Visual C++ 17 redistributables from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) and restart their machines.
 
-If you apply Platform update 32 and redistributables are missing, you might get an error when starting your services. If needed, refer to the following instructions to resolve this issue.
+If the latest redistributables are already installed, no action is required.
 
-To install the redistributables:
-1. Go to Lifecycle Services.
-2. Select **Shared asset library**.
-3. Select **Model** from the asset type list.
-4. Select **VC++ 17 Redistributables**.
-5. The download will automatically start.
-6. Apply on your machine and reboot.
+If you apply Platform update 32, and the redistributables are missing, you might receive an error message when you start your services. In this case, the following procedure can help resolve the issue.
+
+To install the redistributables, follow these steps.
+
+1. In LCS, select the **Shared asset library** tile.
+2. In the list of asset types, select **Model**.
+3. Select **VC++ 17 Redistributables**.
+
+    The download starts automatically.
+
+4. Apply the redistributables on your machine, and restart it.
 
 ### Continued stabilization of saved views
+
 For more information about saved views, see [User productivity – Saved views](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
 
 ### Improved responsiveness of Action Panes on smaller viewports
-Pages with an Action Pane show the Action Pane collapsed when opened on a smaller screen, with no ability to pin open the Action pane in those situations.  
 
-### Ability to filter on blank values with the Filter Pane and grid column filters
-Users can now filter for blank values via the Filter Pane and grid column header filters. The syntax for looking for a blank value in a column is simply **""**.  
+When pages that have an Action Pane are opened on a smaller screen, the Action Pane is collapsed and can't be pinned open.
+
+### Ability to filter on blank values by using the filter pane and filters in grid column headers
+
+Users can now filter for blank values via the filter pane and filters in grid column headers. The syntax that is used to look for a blank value in a column is **""**.
 
 ### Continued evolution of the new grid
-The new grid provides a number of benefits: 
 
-- **Performance**: The new grid provides improved rendering speed and a faster scrolling experience.
-- **Positionally scroll**: Users are now able to positionally scroll in the data that has been loaded in the browser. For example, if you want to scroll through 10,000 rows in a grid, click the middle of the scrollbar to immediately position to record 5,000 without having to retrieve data from the server.  
-- **General improvements**: The new grid eliminates issues from the existing grid with misalignment of grid headers and data, as well as the grid jumping while scrolling or creating new records. 
-- **Reorder columns**: Users are now able to reorder columns by dragging and dropping. Simply hover the mouse over the column header, and a gripper for drag-and-drop will appear on the left side of the column.  
-- **Mathematical formulas**: Users can now enter mathematical formulas into numeric cells in a grid. For example, a user could enter "=15*4. For the system to recognize the value as an expression, you simply need to start with an "=". 
+The new grid provides several benefits:
 
-The new grid also provides the ability to build more complex features into the new grid. These additions to the grid will be introduced and enhanced in subsequent monthly updates:
+- **Performance:** The new grid provides improved rendering speed and a faster scrolling experience.
+- **Positionally scroll:** Users can now positionally scroll in the data that has been loaded in the web browser. For example, to scroll through 10,000 rows in a grid, select the middle of the scrollbar to immediately go to record 5,000 without having to retrieve data from the server.
+- **General improvements:** In the existing grid, grid headers and data are misaligned, and the grid jumps while you scroll or create new records. The new grid eliminates these issues.
+- **Reorder columns:** Users can now reorder columns by dragging them. Hover the mouse pointer over the column header, and then drag the gripper control that appears on the left side of the column.
+- **Mathematical formulas** – Users can now enter mathematical formulas into numeric cells in a grid. For example, you can enter **=15\*4**. To make the system recognize a value as an expression, start the value with an equal sign (**=**).
 
-- **Totals**: Business users can see totals for numeric columns in tabular grids. For example, financial users will be able to view totals for a filtered set of transactions for a specific customer. This feature is first available as part of the new grid control feature starting in Platform update 29, and will continue to evolve in subsequent platform versions. 
-- **Fast data entry**: This feature allows users to enter data in a grid ahead of the server, minimizing the need for users to wait for the server to validate a row before moving to another row in the grid. This feature is first available as part of the new grid control feature in Platform update 31, and will continue to evolve in subsequent platform versions. 
+The new grid also enables more complex features to be built into it. These additions to the grid will be introduced and enhanced in subsequent monthly updates:
 
-Starting in Platform update 31, the new grid control can be turned on for qualified environments using the Feature management workspace (see the steps below for instructions on how to enable the flight). For older updates, the new grid control is available by adding "&debug=reactGrid" to the environment URL.  
+- **Totals:** Business users can see totals for numeric columns in tabular grids. For example, financial users can view totals for a filtered set of transactions for a specific customer. This feature first became available as part of the new grid control feature in Platform update 29, and it will continue to evolve in subsequent platform versions.
+- **Fast data entry:** This feature lets users enter data in a grid ahead of the server. Therefore, it minimizes the need for users to wait for the server to validate one row in the grid before they move to another row. This feature first became available as part of the new grid control feature in Platform update 31, and it will continue to evolve in subsequent platform versions.
 
-To enable the new grid while this feature is in preview, follow these steps:
-1.  **Enable the flight** by using the following SQL statement:
-    
+Starting in Platform update 31, the new grid control can be turned on for qualified environments by using the **Feature management** workspace. (For information about how to turn on the flight, see the following procedure.) For older updates, you can make the new grid control available by adding **&debug=reactGrid** to the environment URL.
+
+To make the new grid available while this feature is in preview, follow these steps.
+
+1. Turn on the flight by using the following SQL statement.
+
+    ```
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
-    
-2.  **Reset IIS** to flush the static flighting cache.
-3.  Go to the **Feature management** workspace in your Finance and Operations app.
-4.  Select the **New grid control** feature in the list of features, and then select Enable now in the details pane.
-If New grid control does not appear in the list of features, select Check for updates.
+    ```
 
-All subsequent user sessions will start with the new grid enabled.
+2. Reset Microsoft Internet Information Services (IIS) to flush the static flighting cache.
+3. In your Finance and Operations app, open the **Feature management** workspace.
+4. Select the **New grid control** feature in the list of features, and then, in the details pane, select **Enable now**.
+
+    If **New grid control** doesn't appear in the list of features, select **Check for updates**.
+
+The new grid will be available in all subsequent user sessions that are started.
 
 ## Additional resources
 
 ### Platform update 32 bug fixes
-For information about the bug fixes included in each of the updates that are part of Platform update 32, sign in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/).
+
+For information about the bug fixes that are included in each update that is part of Platform update 32, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/).
 
 ### Dynamics 365: 2019 release wave 2 plan
+
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
+
 The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+A deprecation notice will be added in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months before the removal of any feature from the product.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
