@@ -196,12 +196,73 @@ Click on Edit Query in the Ribbon, and in the sorting tab, add sorting on Load l
 
 Click on Wave Label Template Grouping, and check the box to Label build by Load line ref rec ID. This will create one label sequence (“Carton 1 of X” on a label layout) per Load line that is created through the wave. 
 
+## Number sequence extensions
+
+Number sequence extension controls GS1 compliance of specific number sequences: 
+
+- A new column was added to the “Number sequences” Tab in Warehouse management parameters where you can select the extension. Out of the box it is available only for the following references: 
+- License plate ID
+- Wave label ID
+- Container ID
+- Bill of lading ID
+- GS1 prefix is not a constant but always comes from the Parameters. So, updating this setup will impact all number sequences using extensions with it included
+- License plate ID rules will remain As Is if no extension is configured, and overridden with new rules if some extension is configured there
+- Extension segments description:
+- GS1 prefix: GS1 prefix in Warehouse management parameters
+- Application identifier: 00 for SSCC, for example, 420 for BOL, numeric value
+- New number for the Number sequence specified
+- Packing type: field from Unit sequence group lines or 0 as default (current LP logic)
+- Check digit: Modulo 10 calculation
+
+Navigate to _Warehouse Management - Setup - Warehouse Management Parameters_ and enter a value in GS1 company prefix (your company’s GS1-prefix).
+
+Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Reports_ and activate checkbox “Generate Bill of lading number when printing wave labels”.
+
+Navigate to _Warehouse Management - Setup - Number Sequence Extensions_ and click “Create default setup”. It covers 3 variants of SSCC number generation and 1 variant of GS1-compliant BOL number sequence. You can also create the following setups manually:
+
+Create a new record. 
+
+- Number sequence extension: SSCC-18
+- Description: SSCC without application identifier
+
+In the Segments FastTab, add new segments:
+
+-	Packing type
+- GS1 prefix
+- Number sequence (make sure the length is 16 minus GS1 prefix length) 
+- Check digit 
+
+Create a new record: 
+
+- Number sequence extension: BOL
+- Description: Bill of lading ID
+
+In the Segments FastTab, add new segments:
+
+-	GS1 prefix
+-	Number sequence (make sure the length is 16 minus GS1 prefix length) 
+-	Check digit 
+
+Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Number Sequences_ and select extension ID on Wave label ID (SSCC-18) and Bill of lading ID (BOL).
+
 # Process
 
-Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-007 and warehouse 62.
+Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-001 and warehouse 62.
 
-Add a line and specify item A0001, quantity 1. Click on Inventory – Reservation and reserve inventory to the line. Click on Release to warehouse in the Warehouse _-_ Actions section of the ribbon. A shipment will be created, and added to a new load, as there is no existing load containing load lines with this order number.
+Add two lines to the sales order, one for item A0001, quantity 9024, and one for item A0002, quantity 9016 (items are given as example, they must have the Unit sequence group defined above, have unit conversions from ea to Box to PL, and have stock in Warehouse 62).
 
-Create another line on the same sales order, for item A0002. Reserve the line and release the order to the warehouse again. The system will create a new shipment for the new line, but because of load building it will add that shipment and load line to the existing wave. Without load building enabled, a new load would have been created for the shipment as well.
+Reserve the order and release it to the warehouse. 
 
-Create a third line of the same sales order, for item M9200. Reserve the line and release the order to the warehouse. A new shipment will be created, and added to a new load, because the item failed the load mix group constraints. If a load mix group hadn&#39;t been specified on the load build template, then this shipment would have been added to the first load as well.
+The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template. 
+
+Wave labels will be generated and printed in the amount equal to the number of cartons.
+
+The new Bill of lading ID will be generated for the shipments, and the wave label IDs will be following SSCC-18 number format from GS-1.
+
+Labels can be viewed and re-printed from the following forms (Related information section):
+
+-	All shipments/shipment details
+-	All loads/load details
+-	All waves
+-	Wave labels
+-	Wave label history
