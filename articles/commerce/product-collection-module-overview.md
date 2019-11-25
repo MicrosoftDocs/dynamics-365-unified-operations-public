@@ -41,12 +41,12 @@ Product discovery is a primary tool that retailers use to engage with their cust
 
 Product collection modules represent physical products and services on the website. A product collection module is typically linked to a details page where customers can purchase a product or service, or learn more about it. 
 
-The sources for product collections can be lists of three types:
+The sources for product collections can be lists of the following four types:
 
 - Editorial lists of products that are manually defined in Dynamics 365 Retail as related products for a product, or product lists
 - Algorithmic lists, such as lists of new, best-selling, or trending products
 - Recommendation lists that are based on machine learning
-- Personalization lists support personalized results for a customer. A customer should be signed-in to the e-Commerce site to see personalized results. Guest users do not see personalized results. A customer can opt-out from personalization from the Account Management page [link].
+- Personalization lists that support personalized results for a customer. A customer should be signed-in to the e-Commerce site to see personalized results. Guest users do not see personalized results. A customer can opt-out from personalization from the [account management page](account-management.md).
 
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
@@ -62,15 +62,15 @@ The following table describes various types of product collection modules in Dyn
 
 | Product collection module  | Type | Description |
 |----------------------------|------|-------------|
-| Category             | Category | This list shows the products in a category as defined by the navigation category hierarchy that the retailer created for a retail channel . |
-| Related products           | Editorial | This list shows a list of products that a merchandising manager has configured as related products in Retail, for the relation type that the author selected. |
-| Curated product lists      | Editorial | This list shows custom lists that merchandisers and editors have created in Retail. |
-| New                        | Algorithmic | This list shows a list of the newest products that have been assorted to channels and catalogs. This list can show personalized results for a signed-in user if the site author chooses that option. |
-| Best selling               | Algorithmic | This list shows a list of products that are ranked by the highest number of sales.This list can show Personalized results for a signed-in user if the site author chooses that option. |
-| Trending                   | Algorithmic | This list shows a list of the highest-performing products for a given period. This list can show Personalized results for a signed-in user if the site author chooses that option. |
-| Frequently bought together | Artificial intelligence/Machine learning | This list uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. This list can show Personalized results for a signed-in user if the site author chooses that option. |
-| People also like           | Artificial intelligence/Machine learning | This list uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. This list can show Personalized results for a signed-in user if the site author chooses that option. |
-| Picks for you           | Artificial intelligence/Machine learning | This list uses machine learning to analyze the purchase patterns of the signed-in user and provide personalized recommendations based on that. For a guest user this list will be collapsed |
+| Category             | Category | This module displays a list of products in a category as defined by the navigation category hierarchy that the retailer created for a retail channel. |
+| Related products           | Editorial | This module displays a list of products that a merchandising manager has configured as related products in Retail, for the relation type that the author has selected. |
+| Curated product lists      | Editorial | This module displays custom lists that merchandisers and editors have created in Retail. |
+| New                        | Algorithmic | This module displays a list of the newest products that have been assorted to channels and catalogs. This list can show personalized results for a signed-in user if the site author chooses that option. |
+| Best selling               | Algorithmic | This module displays a list of products that are ranked by the highest number of sales. This list can show personalized results for a signed-in user if the site author chooses that option. |
+| Trending                   | Algorithmic | This module displays a list of the highest-performing products for a given period. This list can show personalized results for a signed-in user if the site author chooses that option. |
+| Frequently bought together | Artificial intelligence/Machine learning | This module uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. This list can show personalized results for a signed-in user if the site author chooses that option. |
+| People also like           | Artificial intelligence/Machine learning | This module uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. This list can show personalized results for a signed-in user if the site author chooses that option. |
+| Picks for you           | Artificial intelligence/Machine learning | This module uses machine learning to analyze the purchase patterns of the signed-in user and provide personalized recommendations based on that. For a guest user this list will be collapsed. |
 
 ## Add a product collection module to a category page
 
@@ -89,14 +89,14 @@ To add a product collection module to a category page, follow these steps.
 
 The following table shows the list types that are available for selection in the **Select product list configuration** dialog box.
    
-| Type                       | Description | Usage | Page Context | Specific Context |Personalization
+| Type                       | Description | Usage | Page context | Specific context |Personalization
 |----------------------------|-------------|------------------|-------------------------------------|-----------------------------------------------|--------------------------|
-| Products by category       | A list of products that belong to a given category. This category is determined from either the page context or the context that the author provides. | Can be used on any page to promote a specific category of products - Home page, category page, marketing page, PDP etc.  | Category from page context where available E.g. Category page  | Author can provide a specific category as context for the the list| Not applicable|
-| Related products           | A list of products that a merchandising manager has configured as related products in Retail for the relation type. | Primarily on PDP but can be used on any page if parent product is provided | Product from page, Relation type (Mandatory)  | Product can be chosed in the picker, Relation type |Not applicable|
+| Products by category       | A list of products that belong to a given category. This category is determined from either the page context or the context that the author provides. | Can be used on any page (home page, category page, marketing page, PDP, etc.) to promote a specific category of products   | Category from page context where available E.g. Category page  | Author can provide a specific category as context for the list| Not applicable|
+| Related products           | A list of products that a merchandising manager has configured as related products in Retail for the relation type. | Primarily used on PDPs but can be used on any page if parent product is provided | Product from page, Relation type (mandatory)  | Product can be chosen in the picker, Relation type |Not applicable|
 | Curated                    | A custom list that merchandisers and editors have created in Retail. | Enrich category page, home page, checkout and cart pages, and product pages | Not applicable | Not applicable |Not applicable|
 | Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category from the page context E.g. Category page | Category determined by site author | Supported |
-| Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Only applicable in Cart page | Cart | Not applicable | Supported |
-| People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | PDP to show products that other customers have purchased | Product context from page | Product provided by site author | Supported |
+| Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Only applicable on cart page | Cart | Not applicable | Supported |
+| People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Used on PDPs to show products that other customers have purchased | Product context from page | Product provided by site author | Supported |
 | Picks for you|  A list that uses machine learning to determine customer preferences| Can be used on any page |  Not applicable| Not applicable| Supported | 
 
 ## Additional resources
