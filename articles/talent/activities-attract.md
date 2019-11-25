@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Activities in hiring processes 
+title: Add activities to a hiring process 
 description: This topic provides information about the various types of activities that can be used in the hiring process in Microsoft Dynamics 365 Talent - Attract.
 author: hasrivas
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Activities in hiring processes
+# Add activities to a hiring process
 
 [!include[banner](../includes/banner.md)]
 
