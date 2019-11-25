@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expense receipt processing
-description: This topic provides information about receipt OCR processing, designed to improve the end user experience when creating a new expense report in Microsoft Dynamics 365 Finance.
+description: This topic provides information about optical character recognition (OCR) processing for receipts. This feature is designed to improve the user experience when expense reports are created in Microsoft Dynamics 365 Finance.
 author: stevensporen
 manager: AnnBe
 ms.date: 11/20/2019
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this topic to]
 audience: Application Usr
 # ms.devlang: 
 ms.reviewer: roschlom
@@ -31,66 +31,74 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include[banner](../includes/banner.md)]
 
-Expense entry has been enhanced through the introduction of **Receipt OCR** processing, designed to improve the end-user experience when creating expense reports.
+Expense entry has been enhanced through the introduction of optical character recognition (OCR) processing for receipts. This feature is designed to improve the user experience when expense reports are created.
 
-## Key features include:
+## Key features
 
-- Extracts Merchant name, Date, and Total amount from the receipt
-- Attempts to match unattached receipts to an unattached expense transaction
-- Allows the user to create a manually entered expense transactions from the receipt
+- The merchant name, date, and total amount are extracted from receipts.
+- The feature tries to match unattached receipts to unattached expense transactions.
+- Users can create manually entered expense transactions from receipts.
 
 ## Usage examples
 
-1. **Auto attaching receipts with credit card transactions during the creation of an expense report**
-   - Open the **Expense management** workspace.
-   - Verify that unattached receipts exist by selecting the **Receipts** tab. Receipts can also be uploaded from the **Receipts** tab.
-   - Verify that unattached expenses exist by selecting the **Expenses** tab. Typically these are imported in from our credit card provider by the Expense administrator.
-   - Select **New expense report**, note the new capability of adding *Expenses* and *Receipts* during the new expense creation form.
-   - Adding both receipts and expenses will trigger the automatically matching of the receipts against the expenses.
-   
-2. **Create an expense or match an expense from a receipt**
-   - Within an expense report, attach a receipt through **Add receipts** under the **Receipts** tab.
-   - Under the displayed uploaded image of the receipt, note the ability to **Create** or **Match**.
-   - **Create** will create a new manually entered expense transaction, populating the extracted values from the receipt.
-   - **Match** will attempt to match an existing expense to the receipt.
-   
- ## Installation
- 
- This feature works in combination with the **Expense reports re-imagined** feature to drive towards our view of a cleaner and simple expense experience.
- 
- To use these advanced expense capabilities, install the **Expense Management Service** add-in for Dynamics 365 Finance and enable the features in your instance. You can access the add-in from our Lifecycle Services (LCS) project.
- 
- - Sign in to LCS and open the desired environment.
- - Go to **Full details**.
- - Select **Maintain**, or scroll down to the **Environment add-ins** FastTab.
- - Select **Install a new add-in**.
- - Select **Expense Management Service**.
- - Follow the installation guide and agree to the terms and conditions.
- - Select **Install**.
- 
- Turn on the following features through the **Feature management** workspace:
- - **Expense reports re-imagined**
- - **Auto-match and create expense from receipt**
- 
- When you turn on these features, the following actions occur:
- - The existing expense workspace is replaced with the new workspace.
- - A new menu item for expense field visiblity is added.
- - No existing menu items for expense reports (the existing page) or expense report fields are removed.
- - Workflows and any approvals still take you to the existing expense reports page.
- - Receipts will be processes through Microsoft's cognitive services with metadata extracted and added.
- - Additional option for creating an expense report to include matched unattached receipts.
- - Additional option within an **Expense report** to create an **Expense line** from a receipt, or match to an existing **Expense line**.
- 
- For more informaton on the Expense reports re-imagined, see [Expense reports reimagined](ExpenseWorkspaceNew.md)
+- **Automatically attach receipts that include credit card transactions when an expense report is created.**
 
-## Frequently Asked Questions
+    1. Open the **Expense management** workspace.
+    2. On the **Receipts** tab, verify that unattached receipts exist. You can also upload receipts on the **Receipts** tab.
+    3. On the **Expenses** tab, verify that unattached expenses exist. Typically, the expense administrator imports these expenses from the credit card provider.
+    4. Select **New expense report**. Notice that you can now add expenses and receipts when you create an expense. If you add both expenses and receipts, automatic matching of the receipts against the expenses is triggered.
 
-**Does Microsoft use my data for their models?**
-- No, we have built a general machine learning model for our receipt processing service that is not based on the receipts you upload.
+- **Create an expense, or match an expense from a receipt.**
+
+    1. On an expense report, on the **Receipts** tab, attach a receipt by selecting **Add receipts**.
+    2. Under the uploaded image of the receipt, notice the **Create** and **Match** options.
+
+        - Select **Create** to create a manually entered expense transaction and fill in the values that are extracted from the receipt.
+        - If you select **Match**, the system tries to match an existing expense to the receipt.
+
+## Installation
+
+This feature works in combination with the **Expense reports re-imagined** feature to help simplify the expense experience.
+
+To use these advanced expense capabilities, install the Expense Management Service add-in for Microsoft Dynamics 365 Finance, and turn on the features in your instance. You can access the add-in from your project in Microsoft Dynamics Lifecycle Services (LCS).
+
+1. Sign in to LCS, and open the desired environment.
+2. Go to **Full details**.
+3. Select **Maintain**, or scroll down to the **Environment add-ins** FastTab.
+4. Select **Install a new add-in**.
+5. Select **Expense Management Service**.
+6. Follow the installation guide, and agree to the terms and conditions.
+7. Select **Install**.
+
+In the **Feature management** workspace, turn on the following features:
+
+- Expense reports re-imagined
+- Auto-match and create expense from receipt
+
+When you turn on these features, the following actions occur:
+
+- The existing expense workspace is replaced with the new workspace.
+- A new menu item for expense field visibility is added.
+- No existing menu items for expense reports (the existing page) or expense report fields are removed.
+- Workflows and any approvals still take you to the existing expense reports page.
+- Receipts will be processed through Microsoft Azure Cognitive Services, and metadata will be extracted and added.
+- An option is added that lets you create an expense report that includes matched unattached receipts.
+- An option that is added to expense reports lets you create an expense line from a receipt or match to an existing expense line.
+
+For more information about the Expense reports re-imagined feature, see [Expense reports reimagined](ExpenseWorkspaceNew.md).
+
+## Frequently asked questions
+
+**Does Microsoft use my data for its models?**
+
+No, Microsoft has built a general machine learning model for its receipt processing service. This model isn't based on the receipts that you upload.
 
 **Where is this feature available and processed?**
-- Currently we support the United States.
+
+Currently, the United States is supported.
 
 **Where do my receipts go?**
-- Microsoft Dynamics 365 Finance will reach out to our Cognitive Services in order to extract the field data. The cognitive services will retain a copy of your receipt for up to 24 hours while procesing completes. Once completed, Cognitive Services will remove the receipt. Receipts are still stored within Microsoft Dynamics 365 Finance.
-- For more information, reference [Enable receipt understanding with Form Recognizer's new capability](https://azure.microsoft.com/en-us/blog/enable-receipt-understanding-with-form-recognizer-s-new-capability/).
+
+Finance will contact Cognitive Services to extract the field data. Cognitive Services will retain a copy of your receipt for up to 24 hours while processing occurs. After processing is completed, Cognitive Services will remove the receipt. Receipts are still stored in Finance.
+
+For more information, see [Enable receipt understanding with Form Recognizer's new capability](https://azure.microsoft.com/blog/enable-receipt-understanding-with-form-recognizer-s-new-capability/).
