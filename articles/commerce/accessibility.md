@@ -106,6 +106,16 @@ To set the **Minimum Age** attribute for a video asset, follow these steps.
 
 ## Additional resources
 
-- [Accessibility in forms, products, and controls](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
-- [Microsoft accessibility](https://www.microsoft.com/accessibility)
-- [Microsoft Accessibility Center](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+[Accessibility in forms, products, and controls](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility)
+
+[Microsoft accessibility](https://www.microsoft.com/accessibility)
+
+[Microsoft Accessibility Center](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
+
+[Compliance overview](compliance-overview.md)
+
+[Cookie compliance](cookie-compliance.md)
+
+[Delete personal information](delete-personal-information.md)
+
+[Add a privacy policy page](add-privacy-page.md)
