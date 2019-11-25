@@ -5,7 +5,7 @@ title: Preview features in Platform update 32 for Finance and Operations apps (F
 description: This topic lists features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 11/13/2019
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -83,7 +83,7 @@ Filtering is one of the most common and important foundational features of the u
 
 In Platform update 32, users can now filter for blank values via the Filter Pane and grid column header filters. The syntax for looking for a blank value in a column is simply **""**.  
 
-- [Continued evolution of the new grid]
+### Continued evolution of the new grid
 The new grid provides a number of benefits: 
 
 - **Performance**: The new grid provides improved rendering speed and a faster scrolling experience.
