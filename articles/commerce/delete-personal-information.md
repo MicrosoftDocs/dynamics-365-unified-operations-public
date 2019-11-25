@@ -61,3 +61,13 @@ To pull a list of all references to the DSR user's user name in Dynamics 365 Com
 1. Select **Run Tool**.
 
 After the operation is completed, you can save the list of all references that were found.
+
+## Additional resources
+
+[Accessibility features and capabilities](accessibility.md)
+
+[Compliance overview](compliance-overview.md)
+
+[Cookie compliance](cookie-compliance.md)
+
+[Add a privacy policy page](add-privacy-page.md)
