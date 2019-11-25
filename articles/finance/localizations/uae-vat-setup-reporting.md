@@ -5,7 +5,7 @@ title: Set up and report value-added tax (VAT)
 description: This topic explains how to set up and report value-added tax (VAT).
 author: kfend
 manager: AnnBe
-ms.date: 11/22/2019
+ms.date: 11/25/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -37,7 +37,7 @@ Value-added tax (VAT) was introduced in the United Arab Emirates (UAE) on Januar
 
 Registered businesses and traders will charge VAT to all their customers at the current rate, and they will incur VAT on goods and services that they buy from suppliers. The difference between these sums is reclaimed or paid to the government. Federal Decree Law No. (8) of 2017 on Value Added Tax outlines the tax scope, rate, responsibility for tax, and supply of goods and services in all cases, including supply in special cases, supply of more than one component, supply via agent, supply by government entities, and cases of deemed supply. For more detailed information about VAT regulations, see the [Federal Tax Authorities of United Arab Emirates website](https://government.ae/information-and-services/finance-and-investment/taxation/valueaddedtaxvat).
 
-Microsoft Dynamics 365 for Finance and Operations is accredited and certified with the UAE Federal Tax Authorities (FTA) as a tax accounting software provider.
+Dynamics 365 Finance is accredited and certified with the UAE Federal Tax Authorities (FTA) as a tax accounting software provider.
 
 ## Overview
 
@@ -83,11 +83,11 @@ The VAT declaration and the FAF require that additional information be set up in
 
 [![Value added tax FastTab on the Legal entities page](./media/uae_vat_02.jpg)](./media/uae_vat_02.jpg)
 
-For more information about VAT reporting requirements, see the instructions in the [Requirements Document for Tax Accounting Software](https://www.tax.gov.ae/pdf/requirement-document-for-tax-accounting-software.pdf) section of the UAE FTA website.
+For more information about VAT reporting requirements, see the instructions in the [Requirements Document for Tax Accounting Software](https://www.tax.gov.ae/-/media/Files/FTA/Tax-Support/tax-accounting-software-vendors/requirement-document-for-tax-accounting-software.pdf) section of the UAE FTA website.
 
 ## Configure the tax authority
 
-The federal tax authority must be set up as a sales tax authority. After the vendor account is associated with the tax authority, the system creates automatic payments to vendor payables during the settlement process.
+The federal tax authority (FTA) must be set up as a sales tax authority. After the vendor account is associated with the tax authority, the system creates automatic payments to vendor payables during the settlement process.
 
 Go to **Tax** \> **Sales tax** \> **Sales tax authorities**, and set up the address information of your FTA office. Be sure to select the UAE-specific report layout that corresponds to the electronic VAT declaration.
 
@@ -97,11 +97,11 @@ When you've finished, you can associate sales tax settlement periods with the ta
 
 ## Configure sales tax codes
 
-The electronic VAT declaration report is based on the configuration of a specific sales tax UAE report layout. This layout should be selected as the default layout in the setup of the tax authority.
+The electronic VAT declaration report is based on the configuration of a specific UAE report layout for sales tax. This layout should be selected as the default layout in the setup of the tax authority.
 
-Set up sales tax codes by following the appropriate procedure for the profile of your company's business in Sales Tax section of the Help documentation.
+Set up sales tax codes by following the appropriate procedure for the profile of your company's business in [Sales Tax section](../general-ledger/indirect-taxes-overview.md) of the Help documentation.
 
-To run the UAE report layout with the electronic VAT declaration, you must first set up the appropriate number of reporting codes that are associated with each VAT declaration reporting amount.
+To run the UAE report layout that includes the electronic VAT declaration, you must first set up the appropriate number of reporting codes that are associated with the amount that is reporting in each VAT declaration.
 
 Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting codes**, and create or update sales tax reporting codes according to the information in the following table.
 
