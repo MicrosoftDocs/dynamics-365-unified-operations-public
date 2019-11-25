@@ -431,7 +431,7 @@
     items:
     - name: Embedded Power BI in workspaces
       href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+    - name: Extend Talent with Power Apps and Power Automate
       href: extensibility-examples.md
     - name: Mobile app
       items:
