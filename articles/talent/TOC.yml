@@ -195,7 +195,7 @@
       - name: Track candidate sources
         href: source-tracking.md    
       - name: Intelligent recommendations
-        href: Intelligent-Recommendations.md
+        href: intelligent-recommendations.md
     - name: Set up interviews
       items: 
       - name: Interview scheduling and feedback
