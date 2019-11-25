@@ -27,7 +27,7 @@ ms.author: shielas
 
 # Schedule interviews in Attract
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## Scheduler activity
 

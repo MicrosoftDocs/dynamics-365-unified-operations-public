@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Intelligent recommendations in Attract
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Machine learning can help recruiters and hiring managers quickly identify top candidates for a position. It can also help prospects find the position that best suits their profile and interests. As these features are used, and feedback is provided, recommendations will improve.
 

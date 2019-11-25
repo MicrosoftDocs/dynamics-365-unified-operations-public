@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Create, approve, and sign offers in Attract
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In many cases, preparing an offer package for a candidate needs to be a very quick process.
 Using the templates set up by the Attract administrator will cut down the time and
