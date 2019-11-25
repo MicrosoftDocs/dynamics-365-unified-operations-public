@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract
+title: Enable Broadbean integration in Attract
 description: This topic explains how to configure Microsoft Dynamics 365 Talent - Attract to post jobs to external job boards such as Broadbean.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Enable Broadbean integration in Microsoft Dynamics 365 Talent - Attract
+# Enable Broadbean integration in Attract
 
 [!include[banner](../includes/banner.md)]
 
