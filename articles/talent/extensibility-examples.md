@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend Talent by using Power Apps and Microsoft Power Automate - Example scenarios
+title: Extend Talent with Power Apps and Power Automate
 description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft Power Apps and Microsoft Power Automate.
 author: negudava
 manager: Annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Extend Talent by using Power Apps and Microsoft Power Automate - Example scenarios
+# Extend Talent with Power Apps and Power Automate
 
 This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
