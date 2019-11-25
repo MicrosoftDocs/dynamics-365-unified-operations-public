@@ -74,14 +74,10 @@ To install the redistributables:
 For more information about saved views, see [User productivity – Saved views](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
 
 ### Improved responsiveness of Action Panes on smaller viewports
-The web client and its form patterns will be responsive on mobile devices, enabling a majority of the application user interfaces to be usable on smaller screens. This will significantly improve the usability of the application on mobile devices, minimizing the need to build separate user interfaces for smaller screens. This set of improvements will stretch over multiple release waves.
-
-In Platform update 32, pages with an Action Pane show the Action Pane collapsed when opened on a smaller screen.
+Pages with an Action Pane show the Action Pane collapsed when opened on a smaller screen, with no ability to pin open the Action pane in those situations.  
 
 ### Ability to filter on blank values with the Filter Pane and grid column filters
-Filtering is one of the most common and important foundational features of the user interface and affects most users and business scenarios. Being able to find data easily is critical to user success and satisfaction. 
-
-In Platform update 32, users can now filter for blank values via the Filter Pane and grid column header filters. The syntax for looking for a blank value in a column is simply **""**.  
+Users can now filter for blank values via the Filter Pane and grid column header filters. The syntax for looking for a blank value in a column is simply **""**.  
 
 ### Continued evolution of the new grid
 The new grid provides a number of benefits: 
