@@ -40,7 +40,9 @@ This topic provides information about the accessibility features and capabilitie
 
 Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals. This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.
 
-Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality. You should consider the following areas of accessibility functionality referenced on the [Microsoft Accessibility Center](https://www.microsoft.com/en-us/accessibility) when you design your site. Here are some additional areas to consider when using Dynamics 365 Commerce. 
+Various features in Dynamics 365 Commerce enable you to build your site to include assistive functionality. You should consider the areas of accessibility functionality referenced on the [Microsoft Accessibility Center](https://www.microsoft.com/en-us/accessibility) when you design your site. 
+
+Following are some additional areas of accessibility functionality to consider when using Dynamics 365 Commerce. 
 
 ## Image alt text
 
@@ -53,10 +55,10 @@ The Dynamics 365 Commerce digital asset management system supports several acces
 | Video Feature | Description |
 |-----------------------------|-------------|
 | Closed captioning (CC)      | Text that can be shown for the audio and audio descriptive elements of a video, to help users who are hearing impaired. |
-| Subtitles                   | Caption files that show the text of context clues or dialog on-screen. |
-| Audio transcripts           | A textual transcript of spoken words that is generated from the audio of a video asset. |
-| Descriptive audio           | A non-primary audio channel that describes the content or context that is occurring on-screen. |
-| Minimum age gate            | An attribute available to store the minimum age that a viewer must be to view a video. (Metadata only) |
+| Subtitles                   | Caption files that show the text of context clues or dialog on-screen |
+| Audio transcripts           | A textual transcript of spoken words that is generated from the audio of a video asset |
+| Descriptive audio           | A non-primary audio channel that describes the content or context that is occurring on-screen |
+| Minimum age gate            | An attribute available to store the minimum age that a viewer must be to view a video (metadata only)  |
 
 ### Configure video accessibility elements
 
