@@ -5,7 +5,7 @@ title: Example of Deploying Help on Azure
 description: This topic walks you through an example of how you can deploy Dynamics 365 Help content to an Azure web app. 
 author: edupont04
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -155,7 +155,7 @@ In the previous section, you created a search service. You must now configure it
 
     - URL: https://AzureSearchServicename.search.windows.net/datasources?api-version=2017-11-11 
 
-        Replace *AzureSearchServicename* with the name of your search servive.
+        Replace *AzureSearchServicename* with the name of your search service.
     - Type (on the Authorization tab): No Auth
     - Content-Type (on the Headers tab): application/json
     - api-key (on the Headers tab): The admin key found in your Azure Search service
@@ -165,7 +165,7 @@ In the previous section, you created a search service. You must now configure it
     {
         "name" : "datasourcename",
         "type" : "azureblob",
-        "credentials" : { "connectionString" : "DefaultEndpointsProtocol=https;AccountName=[StorageAccountName];AccountKey=[key];EndpointSuffix=core .windows.net" },
+        "credentials" : { "connectionString" : "DefaultEndpointsProtocol=https;AccountName=[StorageAccountName];AccountKey=[key];EndpointSuffix=core.windows.net" },
         "container" : { "name" : "[JSONStorageContainerName]" }
     }
 
@@ -202,9 +202,9 @@ Next, you configure the search service to have an index of your content.
             { "name": "ms_search_region", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, "facetable": true },
             { "name": "ms_locale", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, "facetable": true },
             { "name": "metadata_storage_path", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, "facetable": true },
-            { "name": "metadata_storage_name", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, facetable": true },
+            { "name": "metadata_storage_name", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, "facetable": true },
             { "name": "metadata_storage_content_type", "type": "Edm.String", "searchable": true, "filterable": false, "sortable": false, "facetable": false },
-            { "name": "description", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, "facetable": true, "analyzer":" AnalyzerName" }
+            { "name": "description", "type": "Edm.String", "searchable": true, "filterable": true, "sortable": true, "facetable": true, "analyzer":"AnalyzerName" }
         ]
     }
     ```
@@ -226,7 +226,9 @@ Next, you configure the search service to have an index of your content.
     - URL: https://[AzureSearchServicename].search.windows.net/indexers?api-version=2017-11-11
     - Type (on the Authorization tab): No Auth
     - Content-Type (on the Headers tab): application/json
-    - api-key (on the Headers tab): The admin key found in your Azure Search service 2 On the Body tab, paste the following text.
+    - api-key (on the Headers tab): The admin key found in your Azure Search service  
+
+2. On the Body tab, paste the following text.
 
     ```
     {
@@ -245,15 +247,15 @@ Next, you configure the search service to have an index of your content.
     }
     ```
 
-2. Replace the following parameters with the relevant values:
+3. Replace the following parameters with the relevant values:
 
     - IndexerName: Specify the name of the indexer that should be created, such as *indexerenus*.
     - DatasourceName: Specify the name of the data source, such as *customhelpdatasource*.
     - IndexName: Specify the name of the index, such as *indexenus*.
 
-3. Click Send, and make sure that the value in the **Status** field is *201 Created*.
-4. You may want to manually run the indexer from Azure Search Service for the first time.
-5. If you prepared custom Help content for multiple languages, repeat these steps to create a unique indexer for each index.
+4. Click Send, and make sure that the value in the **Status** field is *201 Created*.
+5. You may want to manually run the indexer from Azure Search Service for the first time.
+6. If you prepared custom Help content for multiple languages, repeat these steps to create a unique indexer for each index.
 
 > [!NOTE]
 > If you update your content, remember to regenerate the JSON files and upload them to the storage service. Remember that the indexers run at user-specified intervals, so your updated content will not be available in search results until after the indexer’s next run. You can run each indexer manually if you want the search results to appear sooner.
