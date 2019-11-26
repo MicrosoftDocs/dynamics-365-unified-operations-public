@@ -5,7 +5,7 @@ title: Preview features in Platform update 32 for Finance and Operations apps (F
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -118,6 +118,14 @@ To make the new grid available while this feature is in preview, follow these st
     If **New grid control** doesn't appear in the list of features, select **Check for updates**.
 
 The new grid will be available in all subsequent user sessions that are started.
+
+### Priority-based scheduling for batch jobs
+Two new system batch jobs are introduced to prepare existing batch job and tasks for the [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature:
+
+- **System job to seed batch group associations to batch jobs** with Class name **SysMigrateBatchGroupsForPriorityBasedScheduling** associates batch jobs with batch groups.
+- **System job to clean up expired batch heartbeat records** with Class name **SysCleanupBatchHeartbeatTable** cleans up the new internal monitoring **BatchHeartbeatTable** table.
+
+The feature is currently in restricted preview. The batch jobs are designed to be non-disruptive and there is no impact on current batch job functionality or procesing, if the feature is not enabled.
 
 ## Additional resources
 
