@@ -3,9 +3,9 @@
 
 title: CSS override file uploads
 description: This topic describes why, when, and how to use CSS override file uploads within the e-commerce authoring toolset.
-author: Nick Holman
-manager: Brendan Sullivan
-ms.date: 11/20/2019
+author: phinneyridge
+manager: annbe
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -16,18 +16,23 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: phinneyridge
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.industry: 
+ms.author: niholman
+ms.search.validFrom: 2019-12-02
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # CSS override file uploads
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+This topic describes why, when, and how to use CSS override file uploads within the e-commerce authoring toolset.
 
 ## Overview
 
