@@ -157,4 +157,4 @@ The following table includes links to resources that can help you implement both
 </table>
 
 ## Troubleshooting
-[Mobile platform resources](platform/mobile-platform-home-page.md#Troubleshooting-the-app)
+[Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)
