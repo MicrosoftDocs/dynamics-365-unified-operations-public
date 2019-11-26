@@ -5,7 +5,7 @@ title: Log extension events to Application Insights
 description: This topic explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -176,7 +176,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
 
 ## Build the deployable package
 
-For detailed information about how to build deployable packages, see [Create retail deployable packages](../retail-sdk-packaging.md).
+For detailed information about how to build deployable packages, see [Create retail deployable packages](../retail-sdk/retail-sdk-packaging.md).
 
 1. Copy the **Contoso.Diagnostic** and **Microsoft.ApplicationInsights** assemblies to the **\\RetailSDK\\References** folder.
 2. Update the **BuildTools\\Customization.settings** file, and add the following entries in the **\<ItemGroup\>** section.
