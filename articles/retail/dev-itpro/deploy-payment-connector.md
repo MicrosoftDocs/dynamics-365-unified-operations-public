@@ -136,6 +136,6 @@ E-commerce sites aren't deployed in LCS-managed environments. You should work wi
 Additional resources
 --------
 
-[Guide to implementing a payment connector and a payment device](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+[Guide to implementing a payment connector and a payment device](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 
 [Create retail deployable packages](retail-sdk/retail-sdk-packaging.md)
