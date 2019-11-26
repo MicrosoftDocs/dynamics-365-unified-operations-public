@@ -5,7 +5,7 @@ title: Omni-channel payments overview
 description: This topic provides an overview of omni-channel payments in Dynamics 365 Retail.
 author: rubendel
 manager: AnnBe
-ms.date: 05/12/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -63,7 +63,7 @@ The omni-channel payment capabilities that are described in this topic were rele
 
 #### "Card present" and "card not present" connectors
 
-The Payments SDK relies on two sets of application programming interfaces (APIs) for payments. The first set of APIs is named **iPaymentProcessor**. It's used to implement "card not present" payment connectors that can be used in call centers and with the Microsoft Dynamics e-Commerce platform. For more information about the **iPaymentProcessor** interface, see the [Implement a payment connector and a payment device](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) white paper, which covers payments. 
+The Payments SDK relies on two sets of application programming interfaces (APIs) for payments. The first set of APIs is named **iPaymentProcessor**. It's used to implement "card not present" payment connectors that can be used in call centers and with the Microsoft Dynamics e-Commerce platform. For more information about the **iPaymentProcessor** interface, see the [Implement a payment connector and a payment device](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf) white paper, which covers payments. 
 
 The second set of APIs is named **iNamedRequestHandler**. It supports the implementation of "card present" payment integrations that use a payment terminal. For more information about the **iNamedRequestHandler** interface, see [Create a payment integration for a payment terminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 
