@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up offer management
+title: Set up offer management in Attract
 description: This topic describes how to set up offers in Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
@@ -29,7 +29,8 @@ ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
 
 ---
-# Set up offer management 
+
+# Set up offer management in Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -226,4 +227,4 @@ offers.
     - ESign - This is the default option, provided out of the box, where the user can sign an offer by typing their name and initials.
 
 
-To learn more about the offer creation process, see [Creating, approving, and signing offers](./creating-offers.md).
+To learn more about the offer creation process, see [Create, approve, and sign offers](./creating-offers.md).

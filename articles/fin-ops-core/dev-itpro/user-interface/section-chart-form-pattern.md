@@ -61,7 +61,7 @@ Apply the Section Chart pattern to the appropriate form/container.
 
 ### Related container patterns
 
--   [Operational workspace](workspace-form-pattern.md)
+-   [Workspace](workspace-form-pattern.md)
 -   [Section stacked chart](section-stacked-chart-subpattern.md)
 
 ## UX guidelines

@@ -51,7 +51,7 @@ Integration between Talent and Ceridian Dayforce is now available for the US, Ca
 - Payroll data, such as pay cycles, pay periods, and earning codes
 - Worker data
 
-For more information, see [Configure your payroll integration](configure-payroll-integration.md).
+For more information, see [Configure the payroll integration between Talent and Dayforce](configure-payroll-integration.md).
 
 ## Worker tax regions have been expanded beyond the US
 

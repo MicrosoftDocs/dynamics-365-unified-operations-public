@@ -230,4 +230,4 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 ## Additional resources
 
-[Master plans](master-plans.md)
+[Master plans overview](master-plans.md)

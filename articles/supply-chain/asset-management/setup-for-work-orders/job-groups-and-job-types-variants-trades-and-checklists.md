@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0.5
 
 An asset type is attached to every asset. Asset types define the maintenance job types (and therefore, the maintenance jobs) that can be performed on assets. When you create a work order, you must select a maintenance job type. You can select only the maintenance job types that are related to the setup of the asset type that is used for the asset.
 
-For a graphical overview of assets and maintenance job types, and their connection to work orders, see [Assets and work orders](../overview/functional-locations-and-objects.md).
+For a graphical overview of assets and maintenance job types, and their connection to work orders, see [Functional locations and assets](../overview/functional-locations-and-objects.md).
 
 Maintenance job type variants can be set up on a maintenance job type. Maintenance job type variants define variations of a job type, such as sizes (small, medium, or large), periods (weekly, biweekly, one month, or three months), and configurations (low standard, flexible, or high performance).
 

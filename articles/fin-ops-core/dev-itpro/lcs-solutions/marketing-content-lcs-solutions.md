@@ -52,4 +52,4 @@ To access the instructions to create and publish your new offer from the Cloud P
 Additional resources
 --------
 
-[Publishing an App in AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)

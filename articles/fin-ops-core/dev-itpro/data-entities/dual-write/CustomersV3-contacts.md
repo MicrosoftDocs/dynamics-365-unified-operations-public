@@ -4,7 +4,7 @@ This template synchronizes data between Finance and Operations apps and Common D
 
 Source filter: ((PartyType == "Person"))
 
-Reversed source filter: msdyn_sellable eq true
+Reversed source filter: msdyn_sellable eq true  and msdyn_contactpersonid ne ''
 
 Finance and Operations field | Map type | Other Dynamics 365 field | Default value
 ---|---|---|---
@@ -39,7 +39,6 @@ INVOICEADDRESSLONGITUDE | > | address2_longitude |
 INVOICEADDRESSSTATE | = | address2_stateorprovince | 
 INVOICEADDRESSSTREET | = | address2_line1 | 
 INVOICEADDRESSZIPCODE | = | address2_postalcode | 
-none | >> | address2_addresstypecode | 1
 DELIVERYADDRESSCITY | = | address3_city | 
 DELIVERYADDRESSCOUNTRYREGIONISOCODE | = | address3_country | 
 DELIVERYADDRESSCOUNTY | = | address3_county | 
@@ -48,7 +47,6 @@ DELIVERYADDRESSLONGITUDE | >> | address3_longitude |
 DELIVERYADDRESSSTATE | = | address3_stateorprovince | 
 DELIVERYADDRESSSTREET | = | address3_line1 | 
 DELIVERYADDRESSZIPCODE | = | address3_postalcode | 
-none | >> | address3_addresstypecode | 2
 PRIMARYCONTACTEMAIL | = | emailaddress1 | 
 PRIMARYCONTACTEMAILDESCRIPTION | = | msdyn_emailaddress1description | 
 PRIMARYCONTACTFAX | = | fax | 

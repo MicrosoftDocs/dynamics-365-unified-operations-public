@@ -83,7 +83,7 @@ Deadlines to upgrade to Common Data Service are quickly approaching. Sign in to 
 
 ## In preview
 
-For information about enabling preview features, see [Access preview features in Talent](./access-preview-feature.md).
+For information about enabling preview features, see [Access preview features in Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 ### Allow reason codes to be specified on leave types
 Organizations might need additional information related to time off requests. To get this information, employees need to include a reason code on their time off requests. With this release, you can now specify the reason codes associated with a given leave type and enable employees to select a reason code on their time off requests.

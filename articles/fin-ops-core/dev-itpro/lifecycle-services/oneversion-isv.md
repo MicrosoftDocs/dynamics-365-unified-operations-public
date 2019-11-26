@@ -132,13 +132,13 @@ What is essential is the quality of every update that is released. Although test
 
 To design your solution for extensibility, you must consider now only how you will customize by extending the standard application, but also how you will enable customization of your ISV solutions by your customers and partners.
 
-Make sure that customizations are additive instead of intrusive, and follow the guidance on the [extensibility home page](../extensibility/extensibility-home-page.md).
+Make sure that customizations are additive instead of intrusive, and follow the guidance on the [Extensibility home page](../extensibility/extensibility-home-page.md).
 
 Don't be too creative about the way that you build your customization. Otherwise, you might extend an API that is questionable and increase the risk that later updates will break your solution. Instead, log an [extensibility request](../extensibility/extensibility-requests.md), and ask that Microsoft create a more explicit API that is more resilient to breakage.
 
 Design solutions that are extensible. For inspiration, see [Write extensible code](../extensibility/writing-extensible-code.md).
 
-Design for backward compatibility to avoid breaking customer implementations. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. The way that you decorate your methods gives you lots of control over which methods you enable extensions for. For more information, see [Attributes that make method extensible](../extensibility/extensibility-attributes.md).
+Design for backward compatibility to avoid breaking customer implementations. A good strategy is to be explicit about what you offer for hooking and wrapping extension code. The way that you decorate your methods gives you lots of control over which methods you enable extensions for. For more information, see [Attributes that make methods extensible](../extensibility/extensibility-attributes.md).
 
 ### Data upgrade
 
@@ -186,7 +186,7 @@ Microsoft has an extensive suite of tests that support our validation. The expec
 
 In addition to the SysTest automation framework that is aimed at developers, the [Regression Suite Automation Tool (RSAT)](using-task-guides-and-bpm-to-create-user-acceptance-tests.md) enables automation of business processes without requiring that code be written. Functional users can use the RSAT to record their critical tests and automate part of their UAT. You can also use the RSAT as you start to build your test automation.
 
-Recently, Microsoft released the [Acceptance test library (ATL) automation framework](../perf-test/acceptance-test-library.md) and accompanying libraries. This framework is aimed at developers and lets them build tests that are more comprehensive than unit tests. The libraries that accompany the framework help make it a seamless way to build suites of tests.
+Recently, Microsoft released the [Acceptance test library resources](../perf-test/acceptance-test-library.md) and accompanying libraries. This framework is aimed at developers and lets them build tests that are more comprehensive than unit tests. The libraries that accompany the framework help make it a seamless way to build suites of tests.
 
 ### Currently released products – Testing binary and functional compatibility
 

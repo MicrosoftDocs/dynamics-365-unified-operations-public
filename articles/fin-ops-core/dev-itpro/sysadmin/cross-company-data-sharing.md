@@ -60,7 +60,8 @@ Data sharing is managed by defined policies that are saved in data packages. Tem
 -   The fields that are replicated
 -   The entities that participate in the replication
 
-**Important:** Although customers can modify the Microsoft data templates that are available from LCS, this scenario isn't supported.
+> [!IMPORTANT]
+> Although customers can modify the Microsoft data templates that are available from LCS, this scenario isn't supported.
 
 ### Conflict resolution
 
@@ -103,7 +104,7 @@ Customer and vendor master data sharing allows you to share customer and vendor 
 3.  In the **Asset type** list, click **Data package**.
 4.  Click any of the available data package files to download them.
 
-For details about how to use a template, see [Configure financial cross-company data sharing (Task guide)](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
+For details about how to use a template, see [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
 ## Currently supported cross-company data sharing templates
 <table>

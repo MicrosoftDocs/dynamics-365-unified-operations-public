@@ -280,7 +280,7 @@ The Tax Engine (GTE) is an essential part of the configurable business applicati
 
 - [Tax engine overview](../../../finance/general-ledger/tax-engine.md)
 - [Tax engine integration](../../../finance/general-ledger/tax-engine-integration.md)
-- [Extending the Tax engine](../../../finance/general-ledger/extend-tax-engine-configurations.md)
+- [Extend tax engine configurations](../../../finance/general-ledger/extend-tax-engine-configurations.md)
 
 ## Vendor collaboration
 

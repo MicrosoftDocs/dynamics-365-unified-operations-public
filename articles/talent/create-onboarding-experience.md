@@ -41,17 +41,17 @@ Onboard lets you quickly create an onboarding guide that will welcome your new h
 
 To learn how to get and use the Onboard app, see the following topics:
 
-- [Get the Onboard app](./onboard-get-app.md)
-- [Create an onboarding guide](./onboard-create-guide.md)
-- [Create an onboarding template](./onboard-create-template.md)
-- [Edit onboarding guides and templates](./onboard-edit-guides-templates.md)
-- [Share content with other contributors](./onboard-share-template.md)
-- [View the status of tasks and onboarding employees](./onboard-view-status.md)
-- [Create hiring teams in Onboard](./onboard-create-team.md)
+- [Get the Dynamics 365 Talent - Onboard app](./onboard-get-app.md)
+- [Create and send an onboarding guide by using Dynamics 365 Talent - Onboard](./onboard-create-guide.md)
+- [Create an onboarding template by using Dynamics 365 Talent - Onboard](./onboard-create-template.md)
+- [Edit onboarding guides and templates in Dynamics 365 Talent - Onboard](./onboard-edit-guides-templates.md)
+- [Share content with other contributors in Dynamics 365 Talent - Onboard](./onboard-share-template.md)
+- [View the status of onboarding employees and your taskss](./onboard-view-status.md)
+- [Create a hiring team by using Dynamics 365 Talent - Onboard](./onboard-create-team.md)
 
 ## See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
 - [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

@@ -43,12 +43,12 @@ Before you complete the procedures in this article, make sure that the following
 
 | Category   | Prerequisite                                                                                                                                                |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
+| Required tasks | [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) |
 
 
 
 ## 1. Use Azure premium storage
-Azure Premium Storage delivers high-performance, low-latency disk support for I/O intensive workloads running on Azure virtual machines (VMs). With Premium Storage, your applications can have up to 32 TB of storage per VM, achieve 50,000 IOPS (input/output operations per second) per VM, and have extremely low latencies for read operations. Premium Storage is recommended for running AX 2012 R3 in Azure to ensure predictable performance. For more information about using Premium Storage, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
+Azure Premium Storage delivers high-performance, low-latency disk support for I/O intensive workloads running on Azure virtual machines (VMs). With Premium Storage, your applications can have up to 32 TB of storage per VM, achieve 50,000 IOPS (input/output operations per second) per VM, and have extremely low latencies for read operations. Premium Storage is recommended for running AX 2012 R3 in Azure to ensure predictable performance. For more information about using Premium Storage, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
 
 ## 2. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You'll use this website to deploy AX 2012 R3 on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/en/)
@@ -193,7 +193,7 @@ Complete the following procedure to deploy a high availability environment on Az
 2. In the **Select environment topology** panel, select **High availability**.
 3. Click **High availability**.
 4. In the **Environment name** field, enter a name for the environment that will be deployed.
-5. If you've created an estimate for a production environment using the Infrastructure estimator tool in Lifecycle Services, you'll see the **Estimation** list. Select the estimate from this list. The number and size of virtual machines to be deployed will change based on the selected estimate. For more information about how to create an estimate, see [Infrastructure estimator (Lifecycle Services, LCS)](infrastructure-estimator-lcs.md).
+5. If you've created an estimate for a production environment using the Infrastructure estimator tool in Lifecycle Services, you'll see the **Estimation** list. Select the estimate from this list. The number and size of virtual machines to be deployed will change based on the selected estimate. For more information about how to create an estimate, see [Infrastructure estimator in Lifecycle Services (LCS)](infrastructure-estimator-lcs.md).
 6. Click **Advanced settings**.
 7. To customize domain settings, click **Customize domain settings**. Then use the following table to enter information.
 
@@ -229,7 +229,7 @@ Complete the following procedure to deploy a high availability environment on Az
 
 9. To select the version of AX 2012 R3 that you want use, click **Supported version**. By default, the AX 2012 R3 CU8 version of this environment will be deployed. If you don't want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.
 10. To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99 When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
-11. To enter SQL Server configuration options, click **Customize SQL Server configuration**. Select the SQL Server image you want to use, as well as the number and size of disks that will be attached to the SQL Server virtual machines. For more information, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
+11. To enter SQL Server configuration options, click **Customize SQL Server configuration**. Select the SQL Server image you want to use, as well as the number and size of disks that will be attached to the SQL Server virtual machines. For more information, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
 12. If you have selected to deploy a Remote Desktop Services virtual machine, click **Customize remote desktop services** to specify how your users will access AX 2012 R3 via the web. Select one of the following options:
 
     -   **Remote Desktop:** This option enables users to login to a full remote desktop.
@@ -311,7 +311,7 @@ Complete the following procedure to deploy a high availability environment on Az
 14. Click **Done**. The **Deploy environment** panel is redisplayed.
 15. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
  
-    -   For information about the software installed on each virtual machine in this environment, see the High availability environment section in the article, [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
+    -   For information about the software installed on each virtual machine in this environment, see the High availability environment section in the article, [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](https://azure.microsoft.com/pricing/details/virtual-machines/).
 
 16. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
@@ -323,7 +323,7 @@ Now that the environment has been deployed on Azure, you must set up and configu
 
 ### Log on to an AOS virtual machine
 
-Log on to an AOS- virtual machine using the DynamicsInstallUser account. For instructions, see the "How do I log on to a virtual machine?" section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+Log on to an AOS- virtual machine using the DynamicsInstallUser account. For instructions, see the "How do I log on to a virtual machine?" section of the [Manage AX 2012 R3 deployments on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile AX 2012 R3
 
@@ -337,9 +337,9 @@ Open the AX 2012 R3 client and complete the initialization checklists. For instr
 
 If you want sample data installed in your environment, complete the following steps.
 
-1.  Log on to a SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the "How do I log on to a virtual machine?" section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+1.  Log on to a SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the "How do I log on to a virtual machine?" section of the [Manage AX 2012 R3 deployments on Azure](manage-2012-r3-deployment-azure.md) article.
 2.  Go to the following location on the virtual machine: F:TestTransferTool
-3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
+3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta)](install-test-data-transfer-tool-beta.md).
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
 5.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 
@@ -435,7 +435,7 @@ The BI servers in the environment host Microsoft SQL Server Reporting Services. 
 
 ### Join Enterprise Portal servers in a single server farm
 
-When Lifecycle Services deploys Enterprise Portal servers, each server is deployed into its own server farm. To join all Enterprise Portal servers in a single server farm, see [Join Enterprise Portal servers in a single server farm](join-enterprise-portal-servers-single-server-farm.md).
+When Lifecycle Services deploys Enterprise Portal servers, each server is deployed into its own server farm. To join all Enterprise Portal servers in a single server farm, see [Join Enterprise Portal servers into a single server farm](join-enterprise-portal-servers-single-server-farm.md).
 
 ### Configure the environment for optimal performance
 

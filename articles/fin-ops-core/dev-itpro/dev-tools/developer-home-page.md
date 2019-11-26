@@ -50,62 +50,62 @@ The Finance and Operations applications represent the next-generation enterprise
 -   [Application stack and server architecture](application-stack-server-architecture.md)
 
 ## Getting started
--   [Get an evaluation copy](get-evaluation-copy.md)
--   [LCS101 – Sign up for a subscription](sign-up-preview-subscription.md)
--   [Access development instances](../dev-tools/access-instances.md)
+-   [Get evaluation copies](get-evaluation-copy.md)
+-   [Sign up for preview subscriptions](sign-up-preview-subscription.md)
+-   [Deploy and access development environments](../dev-tools/access-instances.md)
 -   [Development system requirements](development-system-requirements.md)
--   [Deprecated features](../migration-upgrade/deprecated-features.md)
--   [Deprecated API’s](../migration-upgrade/deprecated-apis.md)
--   [Rename and reboot machines for Azure DevOps](../migration-upgrade/vso-machine-renaming.md)
+-   [Removed or deprecated features](../migration-upgrade/deprecated-features.md)
+-   [Deprecated APIs](../migration-upgrade/deprecated-apis.md)
+-   [Rename a local development (VHD) environment](../migration-upgrade/vso-machine-renaming.md)
 -   [Introduction to Azure DevOps (Video)](https://channel9.msdn.com/Events/Build/2014/2-575)
 <!-- [Learn about packages, models and Visual Studio (Office Mix)](https://mix.office.com/watch/ies6lyit6773)-->
 <!-- [Development tools performance tips (Office Mix)](https://mix.office.com/watch/rnp6ng9wu8kx)-->
 <!-- [Feedback and support (Office Mix)](https://mix.office.com/watch/92azzna59jj6)-->
 
 ## Fleet Management
--   [Fleet Management sample](introduction-fleet-management-sample.md)
--   [INT101: Introduction to Fleet Management](fleet-management-sample.md)
+-   [Fleet Management sample application](introduction-fleet-management-sample.md)
+-   [End-to-end scenario for the Fleet Management sample application](fleet-management-sample.md)
 
 ## Development tools
 ### Tutorials
 
--   [Introduction to Visual Studio development](introduction-visual-studio.md)
--   [Create a simple data model](create-data-model-elements.md)
--   [Building and debugging a project](build-debug-project.md)
--   [Version control, metadata search, navigation, and other features](version-control-metadata-navigation.md)
+-   [Development tools tutorial](introduction-visual-studio.md)
+-   [Create models and data model elements overview](create-data-model-elements.md)
+-   [Build and debug projects](build-debug-project.md)
+-   [Version control, metadata search, and navigation](version-control-metadata-navigation.md)
 
 ### Tools, models, and VMs
 
--   [Development tools](development-tools-overview.md)
+-   [Development tools in Visual Studio](development-tools-overview.md)
 <!-- [Introduction to the development environment (Office Mix)](https://mix.office.com/watch/1tz7194y62m3s)-->
 -   [Application Explorer](application-explorer.md)
--   [Projects](projects.md)
+-   [Finance and Operations project type in Visual Studio](projects.md)
 -   [Element designers](element-designers.md)
--   [Element usage](element-usage.md)
--   [Models](models.md)
+-   [Commands for determining how elements are used](element-usage.md)
+-   [Models and packages](models.md)
 -   [Build operations](build-operations.md)
--   [Visual Studio code editor](code-editor.md)
--   [Developer tools add-ins](developer-tools-add-ins.md)
--   [Distribution of models: How to export and import a model](models-export-import.md)
+-   [Code editor features](code-editor.md)
+-   [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
+-   [Export and import models](models-export-import.md)
 -   [Metadata search in Visual Studio](metadata-search-visual-studio.md)
--   [Enable a new user account to develop on a development VM](enable-development-machine.md)
--   [Updating the Visual Studio development tools](update-development-tools.md)
--   [Virtual machines that don't allow administrator access FAQ](../sysadmin/VMs-no-admin-access.md)
+-   [Create new users on development machines](enable-development-machine.md)
+-   [Update the Visual Studio development tools](update-development-tools.md)
+-   [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md)
 <!--  [Configure version control with Azure DevOps (Office Mix)](https://mix.office.com/watch/1ftubtqzp3xxl)-->
 
 ## X++ programming language
 ### Tutorials
 
--   [New X++ and debugger features](new-x-debugger-features.md)
--   [C\# and X++ interoperability and LINQ](write-business-logic.md)
+-   [X++ and debugger features](new-x-debugger-features.md)
+-   [Write business logic by using C\# and X++ source code](write-business-logic.md)
 
 ### Language support
 
--   [Programming language support](programming-language-support.md)
+-   [Changes in X++ and the X++ compiler](programming-language-support.md)
 -   [EventHandlerResult classes in request or response scenarios](event-handler-result-class.md)
--   [Debugging X++ code](debug-xpp.md)
--   [LINQ provider for use in C\#](linq-provider-c.md)
--   [Authoring best practice rules](author-best-practice-rules.md)
+-   [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
+-   [Language Integrated Query (LINQ) provider for C\#(linq-provider-c.md)
+-   [Write best practice rules](author-best-practice-rules.md)
 
 ### Reference
 
@@ -113,18 +113,18 @@ The Finance and Operations applications represent the next-generation enterprise
 
 ## Customize with extensions and overlayering
 - [Extensibility home page](../extensibility/extensibility-home-page.md)
-- [Customize App Suite reports using extensions](../analytics/customize-app-suite-reports-with-extensions.md)
+- [Customize App Suite reports by using extensions](../analytics/customize-app-suite-reports-with-extensions.md)
 
 ## Code migration
 - [How to resolve conflicts in Visual Studio (video)](https://youtu.be/4rxO0zUN2zU)
 - [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments
-- [Create and apply a deployable package](../deployment/create-apply-deployable-package.md)
+- [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
 
 ## Performance
-- [Take a trace with the Trace Parser and analyze it](../perf-test/trace-trace-tutorial.md)
-- [Using the desktop version of trace parser to diagnose problems and analyze performance issues](../perf-test/trace-parser.md)
+- [Take traces by using Trace parser](../perf-test/trace-trace-tutorial.md)
+- [Diagnose issues and analyze performance by using Trace parser](../perf-test/trace-parser.md)
 - [Performance timer](../perf-test/performance-timer.md)
 <!-- [Expanding data with the Data Expansion tool (Office Mix)](https://mix.office.com/watch/11cet1u4nmn64)
 - [Analyzing performance Issues with Trace Parser (Office Mix)](https://mix.office.com/watch/17d76cll0npyw)
@@ -137,41 +137,41 @@ The Finance and Operations applications represent the next-generation enterprise
 The client is an HTML web client that runs in all major browsers. For information about developing and customizing the user interface, see the [User interface development home page](../user-interface/user-interface-development-home-page.md).
 
 ## Analytics
-- [Analytics](../analytics/analytics.md)
+- [Analytics, aggregate measurements, and KPI modeling](../analytics/analytics.md)
 
 ## Reporting services
-- [Electronic reporting overview](../analytics/general-electronic-reporting.md)
+- [Electronic reporting (ER) overview](../analytics/general-electronic-reporting.md)
 <!-- [Introduction to Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/wdl1dquy2tve)
 - [Demo of Advanced Reporting Solutions (Office Mix)](https://mix.office.com/watch/1hkvtnc8sc7l6)-->
 
 ## Data entities and OData
-- [Data entities home page](../data-entities/data-entities.md)
-- [OData](../data-entities/odata.md)
+- [Data entities overview](../data-entities/data-entities.md)
+- [Open Data Protocol (OData)](../data-entities/odata.md)
 
 ## Testing support in Visual Studio
-- [Testing and validation](../perf-test/testing-validation.md)
-- [Support for testing in Visual Studio](../perf-test/testing-support.md)
+- [Testing and validations](../perf-test/testing-validation.md)
+- [Test projects in Visual Studio](../perf-test/testing-support.md)
 - [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md)
-- [Task Recorder](../user-interface/task-recorder.md)
+- [Task recorder resources](../user-interface/task-recorder.md)
 
 ## Office integration
-- [Office integration](../office-integration/office-integration.md)
+- [Office integration overview](../office-integration/office-integration.md)
 
 ## Intelligence
-- [Intelligence](../analytics/bi-reporting-home-page.md)
+- [Business intelligence (BI) and reporting home page](../analytics/bi-reporting-home-page.md)
 <!-- [Overview of aggregate data (Office Mix)](https://mix.office.com/watch/16yvvnw45kzhf)-->
 
 ## Mobile platform
-- [Mobile platform home page](../mobile-apps/platform/mobile-platform-home-page.md)
+- [Mobile platform resources](../mobile-apps/platform/mobile-platform-home-page.md)
 
 ## Global finance management
 - [Financials development home page](../financial/financial-dev-home-page.md)
 
 ## Licensing
-- [ISV licensing](isv-licensing.md)
+- [Independent software vendor (ISV) licensing](isv-licensing.md)
 
 ## Supply Chain Management
-- [Gantt development guide](../user-interface/gantt-development-guide.md)
+- [Gantt control development guide](../user-interface/gantt-development-guide.md)
 - [Create a new transportation management engine](../../../supply-chain/transportation/create-new-transportation-management-engine.md)
 
 ## Additional resources

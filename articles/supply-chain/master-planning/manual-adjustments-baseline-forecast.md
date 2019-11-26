@@ -70,7 +70,7 @@ The **Demand forecast details** page shows the following information in graphica
 -   The new demand forecast values and the amounts they have been manually adjusted by.
 -   The confidence interval for the forecasted values.
 -   The forecast model that was used to generate the forecast. If you're viewing aggregated data, you will see the list of all the methods that were used for all the aggregated time series.
--   The internal model accuracy (MAPE). For more information about forecast accuracy, see [Monitoring forecast accuracy](monitor-forecast-accuracy.md).
+-   The internal model accuracy (MAPE). For more information about forecast accuracy, see [Monitor forecast accuracy](monitor-forecast-accuracy.md).
 
 **Notes:**
 
@@ -82,9 +82,9 @@ You can also make manual adjustments to the forecast on the **Demand forecast de
 Additional resources
 --------
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitor forecast accuracy](monitor-forecast-accuracy.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
 
 

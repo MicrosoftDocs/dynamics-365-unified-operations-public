@@ -5,7 +5,7 @@ title: Business events and Microsoft Power Automate
 description: This topics provides information about the business events that are available for consumption in Microsoft Power Automate using the connector.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,10 +35,10 @@ This topic provides steps detailing how to configure and consume a business even
 
 This topic shows how to perform the following tasks:
 
--   Create a new Power Automate.
+-   Create a new flow in Power Automate.
 -   Trigger a business event.
 
-## Create a new Power Automate
+## Create a new flow in Power Automate
 
 1.  Sign in to Power Automate portal.
 
@@ -82,13 +82,13 @@ This topic shows how to perform the following tasks:
 
 14.  Fill in the message with the required fields.
 
-   <img alt="Microsoft Power Automate send email action " src="../../media/BEF-Howto-Flow-12.png" width="70%">
+    <img alt="Microsoft Power Automate send email action " src="../../media/BEF-Howto-Flow-12.png" width="70%">
 
-15. Save Power Automate.
+15. Save the flow.
 
 ## Trigger a Business Event
 
-Power Automate can configure the application automatically for you. After you save your Power Automate it creates an endpoint, then it activates the business event for you. There is no remaining configuration step apart from verifying that the endpoint has been correctly configured before triggering an event.
+Power Automate can configure the application automatically for you. After you save your flow, it creates an endpoint, then it activates the business event for you. There is no remaining configuration step apart from verifying that the endpoint has been correctly configured before triggering an event.
 
 1. Sign in to the client.
 
@@ -104,10 +104,10 @@ Power Automate can configure the application automatically for you. After you sa
 
     <img alt="Active business events " src="../../media/BEF-Howto-Flow-14.png" width="100%">
 
-6.  The final step is to trigger the business event of a posted customer payment and check whether the Power Automate runs and you receive an email with customer payment details.
+6.  The final step is to trigger the business event of a posted customer payment and check whether the flow runs and you receive an email with customer payment details.
 
-## Troubleshooting a Power Automate
+## Troubleshooting a flow
 Here are some troubleshooting suggestions:
 - Power Automate provides a full history of runs to help determine what might be wrong with a failing flow.
 - When reviewing a failed run, carefully review the inputs and outputs of trigger and action blocks. 
-- After changes have been made to Power Automate, go to the latest run or a particular run, and **Resubmit** the inputs to run the Power Automate again.
+- After changes have been made to the flow, go to the latest run or a particular run, and **Resubmit** the inputs to run the flow again.

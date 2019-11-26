@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Close a job in Microsoft Dynamics Talent - Attract
+title: Close a job in Attract
 description: This topic explains how to close a job in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Talent 2019 Wave 1 update
 
 ---
 
-# Close a job in Microsoft Dynamics Talent - Attract
+# Close a job in Attract
 
 [!include [banner](includes/banner.md)]
 

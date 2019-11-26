@@ -29,9 +29,10 @@ ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 
 ---
+
 # Formalize business processes
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 The Business process feature lets you create a business process template for business processes that must be completed in your organization. For example, your company completes a Human resources (HR) audit every year. In this case, you can create a template that tracks all the tasks that the audit process consists of. This template can then help guarantee that all the tasks are done every time that the audit is done. Additionally, if the tasks must be completed in a specific order, the template can help guarantee that they are done in the correct order.
 

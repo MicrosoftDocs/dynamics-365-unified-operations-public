@@ -244,5 +244,5 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 ## Additional resources
 
-- [Keyboard shortcuts in Report Designer](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+- [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

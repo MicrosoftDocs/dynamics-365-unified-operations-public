@@ -5,7 +5,7 @@ title: Core HR entities in Common Data Service
 description: Core HR uses the Common Data Service to enable extensibility and integration scenarios.
 author: andreabichsel
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent

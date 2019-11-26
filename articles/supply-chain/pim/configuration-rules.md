@@ -47,7 +47,7 @@ Existing configurations aren't affected by subsequent changes to the configurati
 Additional resources
 --------
 
-[Dimension-based product configuration](dimension-based-product-configuration.md)
+[Dimension-based product configuration overview](dimension-based-product-configuration.md)
 
 
 

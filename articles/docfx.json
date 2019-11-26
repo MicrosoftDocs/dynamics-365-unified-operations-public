@@ -42,7 +42,9 @@
       "feedback_github_repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
       "feedback_product_url": "https://ideas.dynamics.com",
       "contributors_to_exclude": [
-        "OpenLocalizationService"
+        "OpenLocalizationService",
+        "buck1ey",
+        "bishalgoswami"
       ],
       "layout": "Conceptual",
       "searchScope": [

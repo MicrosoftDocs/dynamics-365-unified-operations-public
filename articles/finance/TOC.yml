@@ -2241,6 +2241,8 @@
             href: localizations/rus-currency-sale-purchase.md 
           - name: Petty cash
             href: localizations/emea-petty-cash.md
+          - name: Cash - Local primary forms and unified reports
+            href: localizations/rus-local-primary-forms-and-unified-reports.md
         - name: VAT
           items:
           - name: Local specific posting of sales VAT
@@ -2257,6 +2259,8 @@
             href: localizations/rus-sales-books-purchase-books.md
           - name: Prepayments management
             href: localizations/rus-prepayments-management.md
+          - name: Incoming VAT restoring
+            href: localizations/rus-incoming-VAT-restoring.md
         - name: Fixed assets
           items: 
           - name: Managing fixed assets
@@ -2315,6 +2319,8 @@
             href: localizations/rus-cash-flow.md
           - name: Allocation of miscellaneous charges in proportion to weight and volume
             href: localizations/rus-miscellaneous-charges.md
+          - name: Third party miscellaneous charges
+            href: localizations/rus-third-party-misc-charges.md
         - name: Inventory
           items:
           - name: Goods in transit from vendor
@@ -2883,6 +2889,8 @@
           items: 
           - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+          - name: Configure country context dependent ER model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -2917,6 +2925,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
           - name: Business document management overview
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+          - name: Add new fields to a business document template in Microsoft Excel
+            href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
         - name: ER framework API
           items: 
           - name: Extend the list of Electronic reporting functions

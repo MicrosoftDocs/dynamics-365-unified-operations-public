@@ -50,7 +50,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Platform update 22
 
-Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (November 2018)](whats-new-platform-update-22.md).
+Microsoft Dynamics 365 for Finance and Operations version 8.1.2 includes Platform update 22. To learn more about Platform update 22, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (December 2018)](whats-new-platform-update-22.md).
 
 ## Extensibility enhancements
 
@@ -66,7 +66,7 @@ This release includes enhanced planning engine functionality that helps to ensur
 Resume will only happen once. This means that if the main thread unexpectedly stops again, during the resume, it will mark it as failed in the log and not try to resume. Also, resume is only applied to regeneration and jobs that have reached at least the coverage state of the master planning calculation. If a helper thread stops unexpectedly, planning will continue with the remaining helpers.
 
 ## Intrastat format changes for Belgium
-This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from the LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
+This release includes changes to the XML Intrastat format for Belgium that applies to reporting for 2019. To apply the new format, you need to import the following version (or a later version) of the ER configuration from the LCS shared asset library: Intrastat (BE).version.2.6.xml. For more information about how to import configurations, see [ER Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
 ## India-specific features
 In this release, if [GTE](../../../finance/general-ledger/tax-engine.md) is enabled for a legal entity, some global fields and buttons will be hidden from the user interface. This simplifies the user interface for users by hiding fields and buttons on taxable documents like Purchase orders and Sales order that don't apply when GTE is used. The following fields or buttons will be hidden if GTE is enabled.
@@ -130,7 +130,7 @@ To apply the new formats, you need to import the following or higher versions of
  - Sales book additional sheet format.version.46.13
  - Factures journal format.version.46.4
  
-For more information, see [Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
+For more information, see [ER Import a configuration from Lifecycle Services](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md). 
 
 These configuration versions are released as public preview and will be updated based on feedback received. Use them to learn how electronic formats of sales, purchase books, additional sheets, and factures journals are configured with Electronic reporting. Do not use these configurations as base configurations for derived customized configurations in a live environment.
 

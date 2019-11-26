@@ -49,9 +49,9 @@ It's very important that you understand how the **Save the manual adjustments ma
 Additional resources
 --------
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Monitor forecast accuracy](monitor-forecast-accuracy.md)
 
 
 

@@ -69,4 +69,4 @@ To debug X++ code, follow these steps.
 Additional resources
 --------
 
-[Developer home page](developer-home-page.md)
+[Develop and customize home page](developer-home-page.md)

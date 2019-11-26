@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Interview scheduling and feedback
+title: Schedule interviews in Attract
 description: This topic provides information about interview scheduling and feedback activities in Attract.
 author: hasrivas
 manager: AnnBe
@@ -25,9 +25,9 @@ ms.author: shielas
 
 ---
 
-# Interview scheduling and feedback
+# Schedule interviews in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## Scheduler activity
 
