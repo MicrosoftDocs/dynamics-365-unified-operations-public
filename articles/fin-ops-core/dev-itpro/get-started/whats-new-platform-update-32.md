@@ -122,10 +122,10 @@ The new grid will be available in all subsequent user sessions that are started.
 ### Priority-based scheduling for batch jobs
 Two new system batch jobs are introduced to prepare existing batch job and tasks for the [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature:
 
-- **System job to seed batch group associations to batch jobs** with Class name **SysMigrateBatchGroupsForPriorityBasedScheduling** associates batch jobs with batch groups.
-- **System job to clean up expired batch heartbeat records** with Class name **SysCleanupBatchHeartbeatTable** cleans up the new internal monitoring **BatchHeartbeatTable** table.
+- **System job to seed batch group associations to batch jobs** with class name **SysMigrateBatchGroupsForPriorityBasedScheduling** associates batch jobs with batch groups.
+- **System job to clean up expired batch heartbeat records** with class name **SysCleanupBatchHeartbeatTable** cleans up the new internal monitoring **BatchHeartbeatTable** table.
 
-The feature is currently in restricted preview. The batch jobs are designed to be non-disruptive and there is no impact on current batch job functionality or procesing, if the feature is not enabled.
+This feature is currently in restricted preview. The batch jobs are designed to be non-disruptive and there is no impact on current batch job functionality or processing, if the feature is not enabled.
 
 ## Additional resources
 
