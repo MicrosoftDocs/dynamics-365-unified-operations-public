@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China
-description: Dynamics 365 Finance and Operations apps provides many self-service support options and support through 21Vianet. 
+title: Support for Finance and Operations operated by 21Vianet in China
+description: Finance and Operations apps provides many self-service support options and support through 21Vianet. 
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/02/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version:
 
 ---
 
-# Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China
+# Support for Finance and Operations operated by 21Vianet in China
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Finance and Operations apps provides many self-service support options and support through 21Vianet.
+Finance and Operations apps provides many self-service support options and support through 21Vianet.
 
 ## Self-help resources
 
@@ -93,7 +93,7 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 ## Additional resources
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Finance and Operations apps - operated by 21Vianet in China](../deployment/china-local-deployment.md)
-- [Dynamics 365 Customer Engagement operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/21vianet-support)
+- [Model-driven apps in Dynamics 365 - operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/21vianet-support)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
 - [Dynamics 365  Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)
