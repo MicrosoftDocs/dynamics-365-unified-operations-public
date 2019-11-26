@@ -63,7 +63,7 @@ Synchronous, bidirectional, near-real-time data flows require the following vers
 Follow these steps to set up integration between Finance and Operations apps and Common Data Service.
 	
 1. For the setup of the dual-write system, see the [step-by-step guide](https://aka.ms/dualwrite-docs) on Announcing Dual Write Preview.
-2. Download and install the solution from the [Finance and Operations, Common Data Service, and Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains five solutions:
+2. Download and install the solution from the [Fin Ops and CDS/CE Integration via Dual-Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains five solutions:
 
     + Dynamics365Company
     + CurrencyExchangeRates

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integrated ledger
-description: This topic describes the integration of ledger data between Finance and Operations and Customer Engagement using the Common Data Service.
+description: This topic describes the integration of ledger data between Finance and Operations and other Dynamics 365 applications using the Common Data Service.
 author:  robinarh
 manager: AnnBe
 ms.date: 09/06/2019
@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Integrated ledger
+# Integrated ledger
 
 [!include [banner](../includes/banner.md)]
 

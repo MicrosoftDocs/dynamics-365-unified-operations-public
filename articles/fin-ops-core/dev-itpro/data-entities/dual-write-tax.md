@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Integrated tax
+# Integrated tax
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) a
 
 Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.
 
-Finance and Operations   | Customer Engagement application
+Finance and Operations   | Other Dynamics 365 apps
 -------------------------|---------------------------------
 Tax codes	               | msdyn\_taxcodes.md
 Tax groups	             | msdyn\_taxgroups.md
