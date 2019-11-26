@@ -5,7 +5,7 @@ title: Workflow FAQ
 description: This topic answers frequently asked questions about the workflow system.
 author: ChrisGarty 
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,4 +60,4 @@ Here are a few key areas to note about adding alerts to workflows to provide not
 In summary, if a user does not get the proper notification from the Action Center when they are assigned a workflow work item, then leverage [Workflow Business Events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) with Microsoft Power Automate to provide additional or different notifications.
 
 ## Workflow editor has trouble starting under ADFS 
-When running under ADFS in an upgraded environment, the workflow editor may have trouble starting. If it does, please ensure that the URL "https://dynamicsaxworkfloweditor/" is added to the property "Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application" in the ADFS settings.
+When running under Active Directory Federation Services (AD FS) in an upgraded environment, the workflow editor may have trouble starting. If it does, make sure that the URL "https://dynamicsaxworkfloweditor/" is added to the property **Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application** in the ADFS settings.
