@@ -64,5 +64,5 @@ Follow the below steps to use the extended vendor design:
     4. You can configure the workflows as real-time or background workflows based on your requirements. 
         > [!div class="mx-imgBorder"]
         > ![Convert to a background workflow](media/dual-write-switch-8.png)
-    5. Activate the workflows that you created on the **Account** and **Vendor** entities to start using the Customer Engagement **Account** entity for storing vendor information. 
+    5. Activate the workflows that you created on the **Account** and **Vendor** entities to start using the **Account** entity for storing vendor information. 
  
