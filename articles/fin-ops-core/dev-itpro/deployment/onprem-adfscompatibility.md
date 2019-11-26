@@ -65,14 +65,15 @@ This topic explains how to use the same instance of Active Directory Federation 
     > If you skip this step, the primary admin user won't be able to sign in.
 
 8. Use Service Fabric Explorer to [restart an Application Object Server (AOS) node](troubleshoot-on-prem.md#restartapplications).
-9. Download the newest version of the infrastructure scripts from the LCS shared asset library.
-10. Copy the Reset-SID.ps1 script from the downloaded infrastructure scripts folder into one of your AOS machines.
-11. Execute the Reset-Sid.ps1 script:
+9. Verify you are able to login to the product with the system administrator user that was specified during deployment. 
+10. Download the newest version of the infrastructure scripts from the LCS shared asset library.
+11. Copy the Reset-SID.ps1 script from the downloaded infrastructure scripts folder into one of your AOS machines.
+12. Execute the Reset-Sid.ps1 script:
     
     ```powershell
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
-    
+
 ## New deployments
 
 1. Follow the instructions for installing the local agent in the "Configure a connector and install an on-premises local agent" section of [Set up and deploy on-premises environments](setup-deploy-on-premises-pu12.md#configureconnector). However, before you actually install the local agent, complete step 2 of this procedure.
