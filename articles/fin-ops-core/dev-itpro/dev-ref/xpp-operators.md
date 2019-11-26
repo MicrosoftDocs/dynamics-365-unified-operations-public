@@ -50,53 +50,53 @@ An assignment changes the value of a variable or field. The following table show
 
 ### Code examples for assignment operators
 
-```
-    // An example of assignment operators and their output. 
-    static void Example1()
-    {
-        int i = 1;
-        // Using the = operator. i is assigned the value of i, plus 1. i = 2.
-        i = i + 1;
-        info(strFmt("Example 1: The result is "), i); // The result is 2.
-    }
+```xpp
+// An example of assignment operators and their output. 
+static void Example1()
+{
+    int i = 1;
+    // Using the = operator. i is assigned the value of i, plus 1. i = 2.
+    i = i + 1;
+    info(strFmt("Example 1: The result is "), i); // The result is 2.
+}
 
-    static void Example2()
-    {
-        int i = 1;
-        // Using the += operator. i is assigned the value of i, plus 1. 
-        // i = 2 (i = i + 1).
-        i += 1;
-        info(strFmt("Example 2: The result is "), i); // The result is 2. 
-    }
+static void Example2()
+{
+    int i = 1;
+    // Using the += operator. i is assigned the value of i, plus 1. 
+    // i = 2 (i = i + 1).
+    i += 1;
+    info(strFmt("Example 2: The result is "), i); // The result is 2. 
+}
 
-    static void Example3()
-    {
-        int i = 1;
-        // Using the ++ operator. i is incremented by 1, and then 
-        // by 1 again in the second statement. The final value of i is 3.
-        i++;
-        ++i;
-        info(strFmt("Example 3: The result is "), i); // The result is 3. 
-    }
+static void Example3()
+{
+    int i = 1;
+    // Using the ++ operator. i is incremented by 1, and then 
+    // by 1 again in the second statement. The final value of i is 3.
+    i++;
+    ++i;
+    info(strFmt("Example 3: The result is "), i); // The result is 3. 
+}
 
-    static void Example4()
-    {
-        int i = 1;
-        // Using the -= operator. i is assigned the value of i minus 1. 
-        // i = 0 (i = i - 1).
-        i -= 1;
-        info(strFmt("Example 4: The result is "), i); // The result is 0. 
-    }
+static void Example4()
+{
+    int i = 1;
+    // Using the -= operator. i is assigned the value of i minus 1. 
+    // i = 0 (i = i - 1).
+    i -= 1;
+    info(strFmt("Example 4: The result is "), i); // The result is 0. 
+}
 
-    static void Example5()
-    {
-        int i = 1;
-        // Using the -- operator. i is decremented by 1, and then by 
-        // 1 again in the second statement. The final value of i is -1.
-        i--;
-        --i;
-        info(strFmt("Example 5: The result is "), i); // The result is -1. 
-    }
+static void Example5()
+{
+    int i = 1;
+    // Using the -- operator. i is decremented by 1, and then by 
+    // 1 again in the second statement. The final value of i is -1.
+    i--;
+    --i;
+    info(strFmt("Example 5: The result is "), i); // The result is -1. 
+}
 ```
 
 ## Arithmetic operators
@@ -120,20 +120,20 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 
 ### Code examples for arithmetic operators
 
-```
-    int a = 1 << 4; // Perform four left shifts on 1 (1*2*2*2*2). a=16.
-    int b = 16 >> 4;  // Perform four right shifts on 16 (16/2/2/2/2). b=1.
-    int c = 4 * 5;  // Multiply 4 by 5. c=20.
-    int d = 20 / 5;  // Divide 20 by 5. d=4.
-    int e = 100 div 21;  // Return the integer division of 100 by 21. e=4 (4*21 = 84, remainder 16).
-    int f = 100 mod 21;  // Return the remainder of the integer division of 100 by 21. f=16.
-    int g = ~1;  // Binary negate 1 (all bits are reversed). g=-2.
-    int h = 1 & 3;  // Binary AND. Return the bits that are in common in the two integers. h=1.
-    int i = 1 | 3;  // Binary OR. Return the bits that are set in either 1 or 3. i=3.
-    int j = 1 ^ 3;  // Binary XOR. Return the bits that are set in 1 and NOT set in 3, and vice versa. j=2.
-    int k = 1 + 3;  // Add 1 and 3. k=4.
-    int l = 3 - 1;  // Subtract 1 from 3. l=2.
-    int m = (400 > 4) ? 1 : 5;  // If 400>4, 1 is returned. Otherwise, 5 is returned. Because 400>4, 1 is returned. m=1.
+```xpp
+int a = 1 << 4; // Perform four left shifts on 1 (1*2*2*2*2). a=16.
+int b = 16 >> 4;  // Perform four right shifts on 16 (16/2/2/2/2). b=1.
+int c = 4 * 5;  // Multiply 4 by 5. c=20.
+int d = 20 / 5;  // Divide 20 by 5. d=4.
+int e = 100 div 21;  // Return the integer division of 100 by 21. e=4 (4*21 = 84, remainder 16).
+int f = 100 mod 21;  // Return the remainder of the integer division of 100 by 21. f=16.
+int g = ~1;  // Binary negate 1 (all bits are reversed). g=-2.
+int h = 1 & 3;  // Binary AND. Return the bits that are in common in the two integers. h=1.
+int i = 1 | 3;  // Binary OR. Return the bits that are set in either 1 or 3. i=3.
+int j = 1 ^ 3;  // Binary XOR. Return the bits that are set in 1 and NOT set in 3, and vice versa. j=2.
+int k = 1 + 3;  // Add 1 and 3. k=4.
+int l = 3 - 1;  // Subtract 1 from 3. l=2.
+int m = (400 > 4) ? 1 : 5;  // If 400>4, 1 is returned. Otherwise, 5 is returned. Because 400>4, 1 is returned. m=1.
 ```
 
 ## Expression operators
@@ -151,23 +151,23 @@ Use the **as** keyword for assignments that downcast from a base class variable 
 
 In the following code example, the **DerivedClass** class extends the **BaseClass** class. The code example contains two valid assignments between its **basec** and **derivedc** variables. The upcast assignment to **basec** doesn't require the **as** keyword, but the downcast assignment to **derivedc** does require the **as** keyword. The following code will compile and run without errors.
 
-```
-    static void AsKeywordExample()
-    {
-        // DerivedClass extends BaseClass.
-        BaseClass basec;
-        DerivedClass derivedc;
-        // BottomClass extends DerivedClass.
-        BottomClass bottomc;
-        derivedc = new DerivedClass();
-        // AS is not required for an upcast assignment like this.
-        basec = derivedc;
-        // AS is required for a downcast assignment like this.
-        derivedc = basec as DerivedClass;
-        bottomc = new BottomClass();
-        // AS causes this invalid downcast to assign null.
-        bottomc = basec as DerivedClass;
-    }
+```xpp
+static void AsKeywordExample()
+{
+    // DerivedClass extends BaseClass.
+    BaseClass basec;
+    DerivedClass derivedc;
+    // BottomClass extends DerivedClass.
+    BottomClass bottomc;
+    derivedc = new DerivedClass();
+    // AS is not required for an upcast assignment like this.
+    basec = derivedc;
+    // AS is required for a downcast assignment like this.
+    derivedc = basec as DerivedClass;
+    bottomc = new BottomClass();
+    // AS causes this invalid downcast to assign null.
+    bottomc = basec as DerivedClass;
+}
 ```
 
 ### The is keyword
@@ -178,84 +178,84 @@ The **is** keyword verifies whether an object is a subtype of a specified class.
 
 The following code examples illustrate the conditions that control whether an **is** expression returns **true** or **false**. The code examples depend on the fact that the **Form** class and the **Query** class both extend the **TreeNode** class.
 
-```
-    // The compiler issues an error for the following code. 
-    // The compiler ascertains that the Form class and the Query class are not 
-    // part of the same inheritance hierarchy. Both the Form class and the Query class
-    // extend the TreeNode class, but neither Form nor Query is a subtype of the other.
-    Form myForm = new Form();
-    info(strFmt("%1", (myForm is Query)));
+```xpp
+// The compiler issues an error for the following code. 
+// The compiler ascertains that the Form class and the Query class are not 
+// part of the same inheritance hierarchy. Both the Form class and the Query class
+// extend the TreeNode class, but neither Form nor Query is a subtype of the other.
+Form myForm = new Form();
+info(strFmt("%1", (myForm is Query)));
 
-    // The Infolog displays 0 during run time, where 0 means false. No supertype 
-    // object can be considered to also be of its subtype class.
-    TreeNode myTreeNode = new TreeNode();
-    info(strFmt("%1", (myTreeNode is Form)));
+// The Infolog displays 0 during run time, where 0 means false. No supertype 
+// object can be considered to also be of its subtype class.
+TreeNode myTreeNode = new TreeNode();
+info(strFmt("%1", (myTreeNode is Form)));
 
-    // The Infolog displays 0 during run time, where 0 means false. A null 
-    // reference causes the is expression to return false.
-    Form myForm;
-    info(strFmt("%1", (myForm is Form)));
+// The Infolog displays 0 during run time, where 0 means false. A null 
+// reference causes the is expression to return false.
+Form myForm;
+info(strFmt("%1", (myForm is Form)));
 
-    // The Infolog displays 1 during run time, where 1 means true. 
-    // An object is an instance of its own class type.
-    Form myForm = new Form();
-    info(strFmt("%1", (myForm is Form)));
+// The Infolog displays 1 during run time, where 1 means true. 
+// An object is an instance of its own class type.
+Form myForm = new Form();
+info(strFmt("%1", (myForm is Form)));
 
-    // The Infolog displays 1 during run time, where 1 means true. 
-    // Every subtype is also of its supertype.
-    Form myForm = new Form();
-    info(strFmt("%1", (myForm is TreeNode)));
+// The Infolog displays 1 during run time, where 1 means true. 
+// Every subtype is also of its supertype.
+Form myForm = new Form();
+info(strFmt("%1", (myForm is TreeNode)));
 
-    // The Infolog displays 1 during run time, where 1 means true. 
-    // The type of the underlying object matters in the is expression,
-    // not the type of the variable that references the object.
-    Form myForm = new Form();
-    TreeNode myTreeNode;
-    myTreeNode = myForm; // Upcast.
-    info(strFmt("%1", (myTreeNode is Form)));
+// The Infolog displays 1 during run time, where 1 means true. 
+// The type of the underlying object matters in the is expression,
+// not the type of the variable that references the object.
+Form myForm = new Form();
+TreeNode myTreeNode;
+myTreeNode = myForm; // Upcast.
+info(strFmt("%1", (myTreeNode is Form)));
 ```
 
 #### Code example for the is and as keywords
 
 The following code example contains a typical use of the **is** keyword. The **as** keyword is used after the **is** keyword verifies that the **as** keyword will succeed. In this example, the **is** and **as** keywords are uppercase to make them more visible.
 
-```
-    static void IsKeywordExample() 
+```xpp
+static void IsKeywordExample() 
+{
+    DerivedClass derivedc;
+    BaseClass basec;
+    basec = new DerivedClass();  // An upcast.
+    if (basec IS DerivedClass)
     {
-        DerivedClass derivedc;
-        BaseClass basec;
-        basec = new DerivedClass();  // An upcast.
-        if (basec IS DerivedClass)
-        {
-            info("Test 1: (basec IS DerivedClass) is true. Good.");
-            derivedc = basec AS DerivedClass;
-        }
-        basec = new BaseClass();
-        if (!(basec IS DerivedClass))
-        {
-            info("Test 2: !(basec IS DerivedClass) is true. Good.");
-        }
+        info("Test 1: (basec IS DerivedClass) is true. Good.");
+        derivedc = basec AS DerivedClass;
     }
+    basec = new BaseClass();
+    if (!(basec IS DerivedClass))
+    {
+        info("Test 2: !(basec IS DerivedClass) is true. Good.");
+    }
+}
 
-    //Output to the Infolog
-    Test 1: (basec IS DerivedClass) is true. Good.
-    Test 2: (!(basec IS DerivedClass)) is true. Good.
+//Output to the Infolog
+Test 1: (basec IS DerivedClass) is true. Good.
+Test 2: (!(basec IS DerivedClass)) is true. Good.
 ```
 
 ### Object class as a special case
 
 The **Object** class can appear as a special case in inheritance functionality. The compiler bypasses type checking for assignments to and from variables that are declared to be of type **Object**. Some classes inherit from the **Object** class, some classes inherit from another class, and some classes don't inherit from any class. Although the **Dialog** class doesn't inherit from any class, the assignment and call statements in the following code example work. However, if the assignment is **bank4 = dlog3;**, it will fail at compile time, because the **Bank** and **Dialog** classes have no inheritance relationship to each other. The compiler performs only one small validation on assignments to a variable that is declared to be of the **Object** class. The compiler verifies that the item that is being assigned to the **Object** variable is an instance of a class. The compiler doesn't allow an instance of a table buffer to be assigned to the **Object** variable. Additionally, the compiler doesn't allow primitive data types, such as **int** or **str**, to be assigned to the **Object** variable.
 
-```
-    static void ObjectExample()
-    {
-        Bank bank4;
-        Object obj2;
-        Dialog dlog3 = new Dialog("Test 4.");
-        obj2 = dlog3;  // The assignment does work.
-        obj2.run(false);  // The call causes the dialog to appear.
-        info("Test 4a is finished.");
-    }
+```xpp
+static void ObjectExample()
+{
+    Bank bank4;
+    Object obj2;
+    Dialog dlog3 = new Dialog("Test 4.");
+    obj2 = dlog3;  // The assignment does work.
+    obj2.run(false);  // The call causes the dialog to appear.
+    info("Test 4a is finished.");
+}
 ```
 
 ### Tables
@@ -286,9 +286,9 @@ The following table lists the relational operators that can be used in X++. Most
 
 The <strong>like</strong> operator can use <strong>*</strong> as a wildcard character for zero or more characters, and <strong>?</strong> as a wildcard character for one character. The operand can't be longer than 1,000 characters. The <strong>like</strong> operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
 
-```
-    select * from xRefpaths
-    where xRefPaths.Path like "\\\\Classes\\\\AddressSelectForm"
+```xpp
+select * from xRefpaths
+where xRefPaths.Path like "\\\\Classes\\\\AddressSelectForm"
 ```
 
 ### The equal (==) operator
@@ -297,17 +297,17 @@ When you use the **equal** (**==**) operator to compare objects, the object refe
 
 ### Code examples for relational operators
 
-```
-    "Jones" like "Jo?es"  // Returns true, because the ? is equal to any single character.
-    "Fabrikam, Inc." like "Fa*"  // Returns true, because the * is equal to zero or more characters.
-    (( 42 * 2) == 84)  // Returns true, because 42*2 is equal to 84.
-    today() >= 1\1\1980  // Returns true, because today is later than January 1, 1980.
-    ((11 div 10) >= 1)  // Returns true, because 11 div 10 is 1 (therefore, >= 1 is true).
-    (11<= 12)  // Returns true, because 11 is less than 12.
-    ((11 div 10) > 1)  // Returns false, because 11 div 10 is 1.
-    (11 div 10) < 1)  // Returns false, because 11 div 10 is 1.
-    (11 != 12)  // Returns true, because 11 is not equal to 12.
-    (1 == 1) && (3 > 1)  // Returns true, because both expressions are true.
+```xpp
+"Jones" like "Jo?es"  // Returns true, because the ? is equal to any single character.
+"Fabrikam, Inc." like "Fa*"  // Returns true, because the * is equal to zero or more characters.
+(( 42 * 2) == 84)  // Returns true, because 42*2 is equal to 84.
+today() >= 1\1\1980  // Returns true, because today is later than January 1, 1980.
+((11 div 10) >= 1)  // Returns true, because 11 div 10 is 1 (therefore, >= 1 is true).
+(11<= 12)  // Returns true, because 11 is less than 12.
+((11 div 10) > 1)  // Returns false, because 11 div 10 is 1.
+(11 div 10) < 1)  // Returns false, because 11 div 10 is 1.
+(11 != 12)  // Returns true, because 11 is not equal to 12.
+(1 == 1) && (3 > 1)  // Returns true, because both expressions are true.
 ```
 
 ## Operator precedence
