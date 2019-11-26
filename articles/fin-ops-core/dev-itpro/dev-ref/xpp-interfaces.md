@@ -54,7 +54,7 @@ It is customary to preface the name of an interface with `I`.
 
 In the following code example, the **Automobile** class implements the **IDrivable** interface. The **is** keyword tests whether a class implements an interface.
 
-```X++
+```xpp
 interface IDrivable
 {
     int getSpeed()
