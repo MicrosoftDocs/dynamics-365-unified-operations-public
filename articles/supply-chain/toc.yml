@@ -264,7 +264,7 @@
         - name: Create assets based on purchase orders
           href: asset-management/objects/create-objects-based-on-purchase-orders.md
         - name: Asset BOM
-          href: /asset-management/objects/object-bom.md
+          href: asset-management/objects/object-bom.md
         - name: Asset event history
           href: asset-management/objects/object-timeline.md
         - name: Asset view
