@@ -58,3 +58,6 @@ Here are a few key areas to note about adding alerts to workflows to provide not
     - [Workflows have Business Events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) that the customer could use to trigger Flows have the notifications that they are looking for.   
 
 In summary, if a user does not get the proper notification from the Action Center when they are assigned a workflow work item, then leverage [Workflow Business Events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) with Microsoft Power Automate to provide additional or different notifications.
+
+## Workflow editor has trouble starting under ADFS 
+When running under ADFS in an upgraded environment, the workflow editor may have trouble starting. If it does, please ensure that the URL "https://dynamicsaxworkfloweditor/" is added to the property "Microsoft Dynamics 365 for Operations On-premises - Workflow - Native application" in the ADFS settings.
