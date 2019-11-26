@@ -47,7 +47,8 @@ If an application transaction takes a long time to process, you can use multiple
 
 
 ### Example
-```
+
+```xpp
 public static void LargeTransactionWrapper()
 {
     try
