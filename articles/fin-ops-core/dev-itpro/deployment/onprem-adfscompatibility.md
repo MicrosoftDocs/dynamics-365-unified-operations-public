@@ -5,7 +5,7 @@ title: AD FS Office 365 compatibility
 description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft Office 365.
 author: faix
 manager: AnnBe
-ms.date: 09/03/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 28
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This feature is only fully supported starting with Application update 10.0.8, Platform update 32, and LocalAgent 2.2.0. See [partial support](#partialsupport) for more details. 
+> This feature is only fully supported starting with Application update 10.0.8, Platform update 32, and LocalAgent 2.2.0. For details, see [Partial support](#partialsupport). 
 
 This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft Office 365.
 
@@ -64,11 +64,11 @@ This topic explains how to use the same instance of Active Directory Federation 
     > [!IMPORTANT]
     > If you skip this step, the primary admin user won't be able to sign in.
 
-8. Use Service Fabric Explorer to [restart an Application Object Server (AOS) node](troubleshoot-on-prem.md#restartapplications).
-9. Verify you are able to login to the product with the system administrator user that was specified during deployment. 
+8. Use Service Fabric Explorer to [Restart applications (such as AOS)](troubleshoot-on-prem.md#restartapplications).
+9. Verify that you are able to sign in to the product with the system administrator user that was specified during deployment. 
 10. Download the newest version of the infrastructure scripts from the LCS shared asset library.
 11. Copy the Reset-SID.ps1 script from the downloaded infrastructure scripts folder into one of your AOS machines.
-12. Execute the Reset-Sid.ps1 script:
+12. Execute the Reset-Sid.ps1 script.
     
     ```powershell
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
@@ -82,6 +82,6 @@ This topic explains how to use the same instance of Active Directory Federation 
 
 ## <a name="partialsupport"></a> Partial support
 
-For partial support it is necessary to have Local Agent 2.2.0 or greater installed and to service with Platform update 28 or later.
+For partial support, it is necessary to have Local Agent 2.2.0 or greater installed and to update the service with Platform update 28 or later.
 
 With partial support, authentication against the Financial Reporting service is not supported.  
