@@ -46,7 +46,7 @@ This section describes a scenario where a software key type is used to help prev
 
 Here is an example of a method that is declared by using the **static** keyword.
 
-```X++
+```xpp
 public class SoftwareKey
 {
     static public boolean validateSoftwareKey(str _softwareKeyString)
@@ -59,7 +59,7 @@ public class SoftwareKey
 
 In the following example, you don't have to construct an instance of the **SoftwareKey** class before you call a static method on the class. When you want to call the static **validateSoftwareKey** method, the syntax starts with the name of the class that contains the method. A pair of colons (::) is used to connect the class name to the static method name.
 
-```X++
+```xpp
 boolean yourBool = SoftwareKey::validateSoftwareKey(yourSoftwareKeyString);
 ```
 
@@ -71,7 +71,7 @@ Static fields are variables that are declared by using the **static** keyword. C
 
 A static constructor is guaranteed to run before any static or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. The static constructor has the following syntax.
 
-```X++
+```xpp
 static void TypeNew()
 ```
 
@@ -79,30 +79,30 @@ You never explicitly call the static constructor. The compiler will generate cod
 
 The following code example shows how to create a singleton instance by using a static constructor.
 
-```X++
+```xpp
 public class Singleton
 {
-  private static Singleton instance;
+    private static Singleton instance;
 
-  private void new()
-  {
-  }
+    private void new()
+    {
+    }
 
-  static void TypeNew()
-  {
+    static void TypeNew()
+    {
     instance = new Singleton();
-  }
+    }
 
-  public static Singleton Instance()
-  {
-    return Singleton::instance;
-  }
+    public static Singleton Instance()
+    {
+        return Singleton::instance;
+    }
 }
 ```
 
 The singleton guarantees that only one instance of the class will ever be called. The following example shows how to instantiate the singleton.
 
-```X++
+```xpp
 Singleton i = Singleton::Instance();
 ```
 
@@ -110,7 +110,7 @@ Singleton i = Singleton::Instance();
 
 Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. You use the following syntax to call static methods.
 
-```X++
+```xpp
 ClassName::methodName();
 ```
 
