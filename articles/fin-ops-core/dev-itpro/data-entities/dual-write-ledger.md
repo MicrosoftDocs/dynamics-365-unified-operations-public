@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Integrated ledger
+# Integrated ledger
 
 [!include [banner](../includes/banner.md)]
 
