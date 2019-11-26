@@ -60,7 +60,7 @@ There are a few technical limitations during the provisioning of services that n
 - OSSA = Online Services Standard Agreement
 - CSP = Cloud Solution Provider
 
-For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/en-us/power-platform/admin/create-environment).
+For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
 ## Features not available
 
