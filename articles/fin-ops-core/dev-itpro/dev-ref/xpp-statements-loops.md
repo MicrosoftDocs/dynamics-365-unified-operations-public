@@ -40,9 +40,9 @@ This topic describes statements in X++.
 
 It's a good practice to add comments to your code. Comments make a program easier to read and understand. Comments are ignored when the program is compiled. Your comments can use either the **//** style or the **/\*** style. However, a best practice is to use the **//** style for comments, and even for multiline comments.
 
-```X++
-    // This is an example of a comment.
-    /* Here is another example of a comment. */
+```xpp
+// This is an example of a comment.
+/* Here is another example of a comment. */
 ```
 
 ## print statements
@@ -59,8 +59,7 @@ You use the **print** statement to output text through **System.Diagnostics.Writ
 
 The following code example demonstrates the print statement automatically converting any date type to a string. You do not need to prefix **info** with **Global::** when you call it.
 
-```X++
-
+```xpp
 str hello = "Hello";
 int fortytwo = 42;
 utcDateTime now = DateTimeUtil::utcNow();
@@ -79,7 +78,6 @@ info(int2Str(fortytwo));
 // Output to Infolog window:
 // Hello
 // 42
-
 ```
 
 ## TODO comments
@@ -99,7 +97,7 @@ Here are the rules for using **TODO** in comments:
 
 The following examples show **TODO** comments.
 
-```X++
+```xpp
 // An example of using TODO in the // style of comment.
 public boolean isLate()
 {
@@ -124,7 +122,7 @@ You use **using** clauses so that you don't have to provide the fully qualified 
 
 The following example shows a **using** clause, a namespace alias, and a class alias.
 
-```X++
+```xpp
 using System;
 using IONS=System.IO; // Namespace alias
 using Alist=System.Collections.ArrayList; // Class alias
@@ -148,7 +146,7 @@ The **using** statement helps guarantee that objects that implement **IDisposabl
 
 In this syntax, *statement* can be a block of statements, and *expression* declares and instantiates an object that implements **IDisposable**. The following example creates and uses a **StreamReader** object.
 
-```X++
+```xpp
 static void AnotherMethod()
 {
     str textFromFile;
