@@ -155,3 +155,6 @@ The following table includes links to resources that can help you implement both
 </tr>
 </tbody>
 </table>
+
+## Troubleshooting
+[View app troubleshooting information](platform/mobile-platform-home-page.md#Troubleshooting-the-app)
