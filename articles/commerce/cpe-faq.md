@@ -30,6 +30,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Commerce preview environment FAQ
 
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
 This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 
 ### I have received an invitation to Dynamics 365 Commerce preview environment on my account, but I want to set up the Commerce preview environment in another tenant (due to the fact that I'm not a global administrator for my company tenant). Is it possible to transfer the invitation to the other tenant instead?  
