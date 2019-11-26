@@ -3,9 +3,9 @@
 
 title: Publish groups
 description: This topic describes why, when, and how to use publish groups within the e-commerce authoring toolset.
-author: Nick Holman
-manager: Brendan Sullivan
-ms.date: 11/20/2019
+author: phinneyridge
+manager: annbe
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -16,18 +16,23 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
-ms.search.scope: 
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: phinneyridge
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.industry:
+ms.author: niholman
+ms.search.validFrom: 2019-12-02
+ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Publish groups and scheduled publishes
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+This topic describes why, when, and how to use publish groups within the e-commerce authoring toolset.
 
 ## Overview
 E-commerce websites constantly update content throughout the year, and often publish in batches around holidays, seasons, or their own promotional launch events.  These updates often require groups of website content (pages, images, fragments, templates, etc.) to be staged, validated, and concurrently published in a single action.  Grouping items into logical sets that need to publish together, each set with its own lifecycle, provides many advantages to web producers.  These groupings, referred to as ‘publish groups’, allow authors to track a whole set of updates as its own author-able, testable, and publishable entity.  Authors can preview broad updates within a staged publish group without affecting the live site or other self-contained publish groups.  Authors can then schedule the publish action to simultaneously publish all items contained within the publish group to the live site.  This is incredibly important for many enterprise level companies that generate considerable annual revenue around event-based site update milestones.  Slow or invalidated content rollouts can have big opportunity costs when they don’t go smoothly, and publish groups provide a solution to ensure launches are organized, validated, and publish on-time.  Large or small, publish groups and scheduled publish features provide a valuable tool set for authors to organize and simplify ongoing site update tasks.
