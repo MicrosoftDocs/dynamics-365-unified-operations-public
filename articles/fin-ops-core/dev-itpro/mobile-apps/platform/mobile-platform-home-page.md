@@ -188,7 +188,9 @@ If you experience trouble signing out of the app and signing in with new credent
     - Connect to the server
     - Sign in using the Azure AD sign-in screen.
 
-##Troubleshooting app content
+
+## Troubleshooting app content
+
 ### I can't figure out how to build or change something in my Mobile Client content
 There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
 - Review the documentation provided in the Help system.
