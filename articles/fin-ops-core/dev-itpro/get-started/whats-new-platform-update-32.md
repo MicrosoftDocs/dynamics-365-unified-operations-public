@@ -94,7 +94,7 @@ The new grid provides several benefits:
 - **Positionally scroll:** Users can now positionally scroll in the data that has been loaded in the web browser. For example, to scroll through 10,000 rows in a grid, select the middle of the scrollbar to immediately go to record 5,000 without having to retrieve data from the server.
 - **General improvements:** In the existing grid, grid headers and data are misaligned, and the grid jumps while you scroll or create new records. The new grid eliminates these issues.
 - **Reorder columns:** Users can now reorder columns by dragging them. Hover the mouse pointer over the column header, and then drag the gripper control that appears on the left side of the column.
-- **Mathematical formulas** – Users can now enter mathematical formulas into numeric cells in a grid. For example, you can enter **=15\*4**. To make the system recognize a value as an expression, start the value with an equal sign (**=**).
+- **Mathematical formulas:** Users can now enter mathematical formulas into numeric cells in a grid. For example, you can enter **=15\*4**. To make the system recognize a value as an expression, start the value with an equal sign (**=**).
 
 The new grid also enables more complex features to be built into it. These additions to the grid will be introduced and enhanced in subsequent monthly updates:
 
