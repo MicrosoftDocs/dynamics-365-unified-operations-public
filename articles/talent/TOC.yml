@@ -441,8 +441,6 @@
           href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: My team mobile workspace
           href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Publish mobile workspaces
-        href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Track changes in recruiting data
       href: process-auditing.md
     - name: Extensibility in Attract
