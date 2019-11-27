@@ -71,7 +71,7 @@ In general, Retail is optimized for the internet. The number of round trips from
 
 ## .NET Framework requirements
 
-Retail requires the Microsoft .NET Framework version 4.6.2 for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
+Retail requires the Microsoft .NET Framework version 4.6.2 for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx). Starting August 1, 2019, it is recommended to install .NET Framework version 4.7.1 or later.
 
 ## Supported Microsoft Office applications
 
@@ -89,7 +89,7 @@ The following Microsoft Office applications are supported:
 
 > [!NOTE]
 > - If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available (It is recommended to have no less than 20 GB of disk space available). An offline database for Retail Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
-> - Starting October 1, 2018, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
+> - Starting August 1, 2019, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported Windows operating systems
 
@@ -119,7 +119,7 @@ The following Microsoft Office applications are supported:
 ## Retail hardware station requirements
 
 > [!NOTE]
-> Starting October 1, 2018, Retail hardware station and other client-side components require that the .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
+> Starting August 1, 2019, Retail hardware station and other client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
 > It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
 
 ### Supported operating systems
