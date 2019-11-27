@@ -83,27 +83,29 @@ This section contains two simple code samples. One sample is written in X++, and
 
 This X++ code sample is in the form of a job. There is a node titled Jobs in the Application Object Tree (AOT). This sample can be added under the Jobs node, and then the job can be run.
 
-    static void JobRs001a_HelloWorld(Args _args)
+```xpp
+static void JobRs001a_HelloWorld(Args _args)
+{
+    if (1 == 1) 
     {
-        if (1 == 1) 
-        {
-            // These two info() calls are identical to the X++ compiler.
-            // The second form is the one typically used in X++.
-            Global::info("Hello World, 1.");
-            info('Hello World, 2.');
-        }
-        if (1 != 1)
-        {
-            error("This message will not appear.");
-        }
-        else
-        {
-            // These two methods are also from the Global class.
-            // The + operator concatenates two strings.
-            warning("This is like info," + " but is for warnings, 3.");
-            error("This is like info," + " but is for errors, 4.");
-        }
+        // These two info() calls are identical to the X++ compiler.
+        // The second form is the one typically used in X++.
+        Global::info("Hello World, 1.");
+        info('Hello World, 2.');
     }
+    if (1 != 1)
+    {
+        error("This message will not appear.");
+    }
+    else
+    {
+        // These two methods are also from the Global class.
+        // The + operator concatenates two strings.
+        warning("This is like info," + " but is for warnings, 3.");
+        error("This is like info," + " but is for errors, 4.");
+    }
+}
+```
 
 ##### Output
 
@@ -118,47 +120,49 @@ Here is the output from the Infolog window:
 
 The following C# program is a rewrite of the previous X++ program. The differences between X++ and C# are highlighted by commenting out the X++ lines, and replacing them with the C# syntax.
 
-C#
-
-    using System;
-    class Pgm_CSharp
+```csharp
+using System;
+class Pgm_CSharp
+{
+    static void Main( string[] args )
     {
-        static void Main( string[] args )
+        new Pgm_CSharp().Rs001a_CSharp_HelloWorld();
+    }
+    void Rs001a_CSharp_HelloWorld()
+    {
+        if (1 == 1) 
         {
-            new Pgm_CSharp().Rs001a_CSharp_HelloWorld();
+            Console .Out .WriteLine(
+                "Hello World, Explicit .Out , 1.");
+            Console .WriteLine(
+                "Hello World, Implicit default to .Out , 2.");
         }
-        void Rs001a_CSharp_HelloWorld()
+        if (1 != 1)
         {
-            if (1 == 1) 
-            {
-                Console .Out .WriteLine(
-                    "Hello World, Explicit .Out , 1.");
-                Console .WriteLine(
-                    "Hello World, Implicit default to .Out , 2.");
-            }
-            if (1 != 1)
-            {
-                Console .Error .WriteLine(
-                    "This message will not appear.");
-            }
-            else
-            {
-                Console .Error .WriteLine(".Error is like .Out,"
-                    + " but can be for warnings, 3.");
-                Console .Error .WriteLine(".Error is like .Out,"
-                    + " but is for errors, 4.");
-            }
+            Console .Error .WriteLine(
+                "This message will not appear.");
+        }
+        else
+        {
+            Console .Error .WriteLine(".Error is like .Out,"
+                + " but can be for warnings, 3.");
+            Console .Error .WriteLine(".Error is like .Out,"
+                + " but is for errors, 4.");
         }
     }
+}
+```
 
 ##### Output
 
 Here is the actual output to the C# console:
 
-    Hello World, Explicit .Out, 1. 
-    Hello World, Implicit default to .Out, 2. 
-    .Error is like .Out, but can be for warnings, 3. 
-    .Error is like .Out, but is for errors, 4.
+```csharp
+Hello World, Explicit .Out, 1. 
+Hello World, Implicit default to .Out, 2. 
+.Error is like .Out, but can be for warnings, 3. 
+.Error is like .Out, but is for errors, 4.
+```
 
 ## X++, C# Comparison: Loops
 This section compares the loop features between X++ and C\#.
@@ -196,77 +200,84 @@ The **while** keyword supports looping in both X++ and C#.
 
 #### X++ Sample of while
 
-    static void JobRs002a_LoopsWhile(Args _args)
+```xpp
+static void JobRs002a_LoopsWhile(Args _args)
+{
+    int nLoops = 1;
+    while (nLoops <= 88)
     {
-        int nLoops = 1;
-        while (nLoops <= 88)
+        print nLoops;
+        pause;
+        // The X++ modulo operator is mod.
+        if ((nLoops mod 4) == 0)
         {
-            print nLoops;
-            pause;
-            // The X++ modulo operator is mod.
-            if ((nLoops mod 4) == 0)
-            {
-                break;
-            }
-            ++ nLoops;
+            break;
         }
-        beep(); // Function.
-        pause; // X++ keyword.
+        ++ nLoops;
+    }
+    beep(); // Function.
+    pause; // X++ keyword.
 } 
+```
 
 ##### Output
 
 The output in the X++ Print window is as follows:
 
-    1
-    2
-    3
-    4
+```xpp
+1
+2
+3
+4
+```
 
 #### C# Sample of while
 
 C#
 
-    using System;
-    public class Pgm_CSharp
+```csharp
+using System;
+public class Pgm_CSharp
+{
+    static void Main( string[] args )
     {
-        static void Main( string[] args )
-        {
-            new Pgm_CSharp().Rs002a_CSharp_ControlOFlowWhile();
-        }
-        void Rs002a_CSharp_ControlOFlowWhile()
-        {
-            int nLoops = 1;
-            while (nLoops <= 88)
-            {
-                Console.Out.WriteLine( nLoops.ToString() );
-                Console.Out.WriteLine( "(Press any key to resume.)" );
-                // Paused until user presses a key.
-                Console.In.Read();
-                if ((nLoops % 4) == 0) break;
-                ++ nLoops;
-            }
-            Console.Beep();
-            Console.In.Read();
-        }
+        new Pgm_CSharp().Rs002a_CSharp_ControlOFlowWhile();
     }
-
+    void Rs002a_CSharp_ControlOFlowWhile()
+    {
+        int nLoops = 1;
+        while (nLoops <= 88)
+        {
+            Console.Out.WriteLine( nLoops.ToString() );
+            Console.Out.WriteLine( "(Press any key to resume.)" );
+            // Paused until user presses a key.
+            Console.In.Read();
+            if ((nLoops % 4) == 0) break;
+            ++ nLoops;
+        }
+        Console.Beep();
+        Console.In.Read();
+    }
+}
+```
 
  
 ##### Output
 
 The console output from the C# program is as follows:
 
-    [C:\MyDirectory\]
-    >> Rosetta_CSharp_1.exe
-    1
-    (Press any key to resume.)
-    2
-    (Press any key to resume.)
-    3
-    (Press any key to resume.)
-    4
-    (Press any key to resume.)
+```csharp
+[C:\MyDirectory\]
+>> Rosetta_CSharp_1.exe
+1
+(Press any key to resume.)
+2
+(Press any key to resume.)
+3
+(Press any key to resume.)
+4
+(Press any key to resume.)
+```
 
 ### Example 2: The for Loop
 
@@ -276,81 +287,86 @@ The **for** keyword supports looping in both X++ and C#.
 
 In X++ the counter variable cannot be declared as part of the **for** statement.
 
-    static void JobRs002a_LoopsWhileFor(Args _args)
+```xpp
+static void JobRs002a_LoopsWhileFor(Args _args)
+{
+    int ii; // The counter.
+    for (ii=1; ii < 5; ii++)
     {
-        int ii; // The counter.
-        for (ii=1; ii < 5; ii++)
-        {
-            print ii;
-            pause;
-            // You must click the OK button to proceed
-            // beyond a pause statement.
-            // ii is always less than 99.
-            if (ii < 99)
-            {
-                continue;
-            }
-            print "This message never appears.";
-        }
+        print ii;
         pause;
+        // You must click the OK button to proceed
+        // beyond a pause statement.
+        // ii is always less than 99.
+        if (ii < 99)
+        {
+            continue;
+        }
+        print "This message never appears.";
+    }
+    pause;
 }
-
+```
 
  
 ##### Output
 
 The output in the X++ Print window is as follows:
 
-    1
-    2
-    3
-    4
+```xpp
+1
+2
+3
+4
+```
 
 #### C# Sample of for
 
-C#
-
-    using System;
-    public class Pgm_CSharp
+```csharp
+using System;
+public class Pgm_CSharp
+{
+    static void Main( string[] args )
     {
-        static void Main( string[] args )
+        new Pgm_CSharp().Rs002a_CSharp_ControlOFlowFor();
+    }
+    void Rs002a_CSharp_ControlOFlowFor()
+    {
+        int nLoops = 1,
+            ii;
+        for (ii = 1; ii < 5; ii++)
         {
-            new Pgm_CSharp().Rs002a_CSharp_ControlOFlowFor();
-        }
-        void Rs002a_CSharp_ControlOFlowFor()
-        {
-            int nLoops = 1,
-                ii;
-            for (ii = 1; ii < 5; ii++)
-            {
-                Console.Out.WriteLine(ii.ToString());
-                Console.Out.WriteLine("(Press any key to resume.)");
-                Console.In.Read();
-                if (ii < 99)
-                {
-                    continue;
-                }
-                Console.Out.WriteLine("This message never appears.");
-            }
+            Console.Out.WriteLine(ii.ToString());
             Console.Out.WriteLine("(Press any key to resume.)");
             Console.In.Read();
+            if (ii < 99)
+            {
+                continue;
+            }
+            Console.Out.WriteLine("This message never appears.");
         }
+        Console.Out.WriteLine("(Press any key to resume.)");
+        Console.In.Read();
     }
-
+}
+```
 
  
 ##### Output
 
 The console output from the C# program is as follows:
-    1
-    (Press any key to resume.)
-    2
-    (Press any key to resume.)
-    3
-    (Press any key to resume.)
-    4
-    (Press any key to resume.)
-    (Press any key to resume.)
+
+```csharp
+1
+(Press any key to resume.)
+2
+(Press any key to resume.)
+3
+(Press any key to resume.)
+4
+(Press any key to resume.)
+(Press any key to resume.)
+```
 
 ### X++, C# Comparison: Switch
 
@@ -376,39 +392,40 @@ The X++ switch example shows the following:
 
 X++
 
-    static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
+```xpp
+static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
+{
+    int iEnum = 3;
+    int iTemp = 6;
+    switch (iEnum)
     {
-        int iEnum = 3;
-        int iTemp = 6;
-        switch (iEnum)
-        {
-            case 1:
-            case iTemp:  // 6
-                info(strFmt("iEnum is one of these values: 1,6: %1", iEnum));
-                break;
-            case 2, (93-90), str2Int("5"):  // Equivalent to three 'case' clauses stacked, valid in X++.
-                //case 2:
-                //case (93-90):  // Value after each 'case' can be a constant, variable, or expression; in X++.
-                //case str2Int("5"):
-                info(strFmt("iEnum is one of these values: 2,3,5: %1", iEnum));
-                //break;  // Not required in X++, but usually wanted.
-            case 4:
-                info(strFmt("iEnum is one of these values: 4: %1", iEnum));
-                break;
-            default:
-                info(strFmt("iEnum is an unforeseen value: %1", iEnum));
-                break;
-                // None of these 'break' occurrences in this example are required for X++ compiler.
-        }
-        return;
+        case 1:
+        case iTemp:  // 6
+            info(strFmt("iEnum is one of these values: 1,6: %1", iEnum));
+            break;
+        case 2, (93-90), str2Int("5"):  // Equivalent to three 'case' clauses stacked, valid in X++.
+            //case 2:
+            //case (93-90):  // Value after each 'case' can be a constant, variable, or expression; in X++.
+            //case str2Int("5"):
+            info(strFmt("iEnum is one of these values: 2,3,5: %1", iEnum));
+            //break;  // Not required in X++, but usually wanted.
+        case 4:
+            info(strFmt("iEnum is one of these values: 4: %1", iEnum));
+            break;
+        default:
+            info(strFmt("iEnum is an unforeseen value: %1", iEnum));
+            break;
+            // None of these 'break' occurrences in this example are required for X++ compiler.
     }
+    return;
+}
 
-    /*** Copied from the Infolog:
-    Message (02:32:08 pm)
-    iEnum is one of these values: 2,3,5: 3
-    iEnum is one of these values: 4: 3
-    ***
-
+/*** Copied from the Infolog:
+Message (02:32:08 pm)
+iEnum is one of these values: 2,3,5: 3
+iEnum is one of these values: 4: 3
+***
+```
 
 #### C# switch Example
 
@@ -416,46 +433,45 @@ The C\# switch example shows the following:
 -   case 1: has a comment explaining that only constant expressions can be given on a **case** clause.
 -   `break;` statements occur after the last statement in each **case** block that has statements, as is required by C\#.
 
-C#
-
-    using System;
-    namespace CSharpSwitch2
+```csharp
+using System;
+namespace CSharpSwitch2
+{
+    class Program
     {
-      class Program
-      {
         static void Main(string[] args)  // C#
         {
-          int iEnum = 3;
-          switch (iEnum)
-          {
-            case 1:  // Value after each 'case' must be a constant.
-            case 6:
-              Console.WriteLine("iEnum is one of these values: 1,6: " + iEnum.ToString());
-              break;
-            //case 2,3,5:  // In C# this syntax is invalid, and multiple 'case' clauses are needed.
-            case 2:
-            case 3:
-            case 5:
-              Console.WriteLine("iEnum is one of these values: 2,3,5: " + iEnum.ToString());
-              break;
-            case 4:
-              Console.WriteLine("iEnum is one of these values: 4: " + iEnum.ToString());
-              break;
-            default:
-              Console.WriteLine("iEnum is an unforeseen value: " + iEnum.ToString());
-              break;
-            // All 'break' occurrences in this example are required for C# compiler.
-          }
+            int iEnum = 3;
+            switch (iEnum)
+            {
+                case 1:  // Value after each 'case' must be a constant.
+                case 6:
+                    Console.WriteLine("iEnum is one of these values: 1,6: " + iEnum.ToString());
+                    break;
+                //case 2,3,5:  // In C# this syntax is invalid, and multiple 'case' clauses are needed.
+                case 2:
+                case 3:
+                case 5:
+                    Console.WriteLine("iEnum is one of these values: 2,3,5: " + iEnum.ToString());
+                    break;
+                case 4:
+                    Console.WriteLine("iEnum is one of these values: 4: " + iEnum.ToString());
+                    break;
+                default:
+                    Console.WriteLine("iEnum is an unforeseen value: " + iEnum.ToString());
+                    break;
+                // All 'break' occurrences in this example are required for C# compiler.
+            }
           return;
         }
-      }
     }
-    /*** Output copied from the console:
-    >> CSharpSwitch2.exe
-    iEnum is one of these values: 2,3,5: 3
-    >>
-    ***/
-
+}
+/*** Output copied from the console:
+>> CSharpSwitch2.exe
+iEnum is one of these values: 2,3,5: 3
+>>
+***/
+```
 
  
 ## X++, C# Comparison: String Case and Delimiters
@@ -546,7 +562,7 @@ The following code samples show how arrays of primitive data types are handled. 
 
 #### X++ Sample
 
-<pre>
+```xpp
 static void JobRs005a_ArraySimple(Args _args)
 {
     #define.macroArrayLength(3)
@@ -569,12 +585,13 @@ static void JobRs005a_ArraySimple(Args _args)
         info(int2str(xx) + " , " + int2str(years[xx]));
     }
 }
-</pre>
+```
 
 ##### Output
 
 The output to the Infolog is as follows:
-<pre>
+
+```xpp
 Message (14:16:08)
 -------- SPORTS --------
 1 , []
@@ -591,51 +608,52 @@ Message (14:16:08)
 8 , 0
 9 , 0
 10 , 1930
-</pre>
+```
 
 #### C\# Sample
 
-C#
-
-    using System;
-    public class Pgm_CSharp
+```csharp
+using System;
+public class Pgm_CSharp
+{
+    static public void Main( string[] args )
     {
-        static public void Main( string[] args )
+        new Pgm_CSharp().Rs005a_CSharp_ArraySimple();
+    }
+    private void Rs005a_CSharp_ArraySimple()
+    {
+        const int const_iMacroArrayLength = 3;
+        // In C# the length is set at construction during run.
+        string[] sSports;
+        int[] years;
+        int xx;
+        Console.WriteLine("-------- SPORTS --------");
+        sSports = new string[const_iMacroArrayLength];
+        sSports[const_iMacroArrayLength - 1] = "Baseball";
+        for (xx=0; xx < const_iMacroArrayLength; xx++)
         {
-            new Pgm_CSharp().Rs005a_CSharp_ArraySimple();
+            Console.WriteLine( xx.ToString()
+                + " , [" + sSports[xx] + "]" );
         }
-        private void Rs005a_CSharp_ArraySimple()
+        Console.WriteLine("-------- YEARS --------");
+        // In C# you must construct the array before assigning to it.
+        years = new int[10];
+        years[ 4] = 2008;
+        years[10 - 1] = 1930;
+        for (xx=0; xx < 10; xx++)
         {
-            const int const_iMacroArrayLength = 3;
-            // In C# the length is set at construction during run.
-            string[] sSports;
-            int[] years;
-            int xx;
-            Console.WriteLine("-------- SPORTS --------");
-            sSports = new string[const_iMacroArrayLength];
-            sSports[const_iMacroArrayLength - 1] = "Baseball";
-            for (xx=0; xx < const_iMacroArrayLength; xx++)
-            {
-                Console.WriteLine( xx.ToString()
-                    + " , [" + sSports[xx] + "]" );
-            }
-            Console.WriteLine("-------- YEARS --------");
-            // In C# you must construct the array before assigning to it.
-            years = new int[10];
-            years[ 4] = 2008;
-            years[10 - 1] = 1930;
-            for (xx=0; xx < 10; xx++)
-            {
-                Console.WriteLine( xx.ToString()
-                    + " , [" + years[xx].ToString() + "]" );
-            }
+            Console.WriteLine( xx.ToString()
+                + " , [" + years[xx].ToString() + "]" );
         }
-    } // EOClass
+    }
+} // EOClass
+```
 
 ##### Output
 
 The output from the C# program to the command line console is as follows:
-<pre>
+
+```csharp
 -------- SPORTS --------
 0 , []
 1 , []
@@ -651,7 +669,7 @@ The output from the C# program to the command line console is as follows:
 7 , [0]
 8 , [0]
 9 , [1930]
-</pre>
+```
 
 ## Additional array-like X++ features
 
@@ -745,10 +763,12 @@ Both X++ and C\# have iterator classes that you can use to step through the item
 
 In C\# the **foreach** keyword is often used to simplify the task of iterating through a list. The following code example behaves the same as the previous C\# example. 
 
-    foreach (string currentString in listStrings)
-    { 
-        Console.WriteLine(currentString);
-    }
+```csharp
+foreach (string currentString in listStrings)
+{ 
+    Console.WriteLine(currentString);
+}
+```
 
 ###  Example 5: Delete the Second Item
 
@@ -922,7 +942,7 @@ The following X++ features are demonstrated:
 
 #### X++ Example
 
-<pre>
+```xpp
 // X++
 static void JobRs008a_Exceptions(Args _args)
 {
@@ -958,96 +978,98 @@ static void JobRs008a_Exceptions(Args _args)
     //    //Global::Warning("'finally' is not an X++ keyword, although it is in C#.");
     //}
     info("End of program.");
-}</pre>
+}
+```
 
  
 ##### Output
 
 Here is the output from the Infolog window:
 
-<pre>Message (18:07:24)
+```xpp
+Message (18:07:24)
 Error executing code: Array index 77 is out of bounds.
 Stack trace
 (C)\Jobs\JobRs008a_Exceptions - line 8
 In catch block for -- Exception::Error
 End of program.
-</pre>
+```
 
 #### C# Sample
 
 The following C\# program is a rewrite of the previous X++ program.
 
-    // C#
-    using System;
-    public class Pgm_CSharp
+```csharp
+// C#
+using System;
+public class Pgm_CSharp
+{
+    static void Main( string[] args )
     {
-        static void Main( string[] args )
+        new Pgm_CSharp().Rs008a_CSharp_Exceptions();
+    }
+    void Rs008a_CSharp_Exceptions()
+    {
+        //str sStrings[4];
+        string[] sStrings = new string[4];
+        try
         {
-            new Pgm_CSharp().Rs008a_CSharp_Exceptions();
+            Console.WriteLine
+                ("On purpose, this uses an invalid index"
+                + " for this array: " + sStrings[77]);
+            Console.Error.WriteLine
+                ("This message does not appear in the Infolog,"
+                + " it is unreached code.");
         }
-        void Rs008a_CSharp_Exceptions()
+        catch (NullReferenceException exc)
         {
-            //str sStrings[4];
-            string[] sStrings = new string[4];
-            try
-            {
-                Console.WriteLine
-                    ("On purpose, this uses an invalid index"
-                    + " for this array: " + sStrings[77]);
-                Console.Error.WriteLine
-                    ("This message does not appear in the Infolog,"
-                    + " it is unreached code.");
-            }
-            catch (NullReferenceException exc)
-            {
-                Console.WriteLine("(e1) In catch block for -- "
-                    + exc.GetType().ToString() );
-            }
-            catch (IndexOutOfRangeException exc)
-            {
-                Console.WriteLine("(e2) In catch block for -- "
-                    + exc.GetType().ToString() );
-            }
-            // In C#, System.Exception is the base of all
-            // .NET Framework exception classes.
-            // No as yet uncaught exception can get beyond
-            // this next catch.
-            catch (Exception exc)
-            {
-                Console.WriteLine
-                    ("This last 'catch' is of the abstract"
-                    + " base type Exception: "
-                    + exc.GetType().ToString());
-            }
-            // The preceding catch of System.Exception makes this catch of
-            // an unspecified exception redundant and unnecessary.
-            //catch
-            //{
-            //    Console.WriteLine("This last 'catch' is"
-            //        + " of an unspecified exception.");
-            //}
-            finally
-            {
-                Console.WriteLine
-                    ("'finally' is not an X++ keyword,"
-                    + " although it is in C#.");
-            }
-            Console.WriteLine("End of program.");
+            Console.WriteLine("(e1) In catch block for -- "
+                + exc.GetType().ToString() );
         }
-    } // EOClass
-
+        catch (IndexOutOfRangeException exc)
+        {
+            Console.WriteLine("(e2) In catch block for -- "
+                + exc.GetType().ToString() );
+        }
+        // In C#, System.Exception is the base of all
+        // .NET Framework exception classes.
+        // No as yet uncaught exception can get beyond
+        // this next catch.
+        catch (Exception exc)
+        {
+            Console.WriteLine
+                ("This last 'catch' is of the abstract"
+                + " base type Exception: "
+                + exc.GetType().ToString());
+        }
+        // The preceding catch of System.Exception makes this catch of
+        // an unspecified exception redundant and unnecessary.
+        //catch
+        //{
+        //    Console.WriteLine("This last 'catch' is"
+        //        + " of an unspecified exception.");
+        //}
+        finally
+        {
+            Console.WriteLine
+                ("'finally' is not an X++ keyword,"
+                + " although it is in C#.");
+        }
+        Console.WriteLine("End of program.");
+    }
+} // EOClass
+```
 
  
 ##### Output
 
 Here is the actual output to the C\# console:
 
-<pre>
-
+```csharp
 (e2) In catch block for -- System.IndexOutOfRangeException
 'finally' is not an X++ keyword, although it is in C#.
 End of program.
-</pre>
+```
 
 ## Comparison: Automated Retry After an Exception
 Sometimes you can write code in a catch block that fixes the cause of an exception that occurs during run time. X++ provides a **retry** keyword that can be used only inside a **catch** block. The **retry** keyword enables a program to jump back to the start of the **try** block after the problem has been corrected by code in the **catch** block. C# does not have a **retry** keyword. However, C# code can be written to provide equivalent behavior.
@@ -1056,7 +1078,7 @@ Sometimes you can write code in a catch block that fixes the cause of an excepti
 
 The following X++ sample program causes an Exception::Error to be raised. This occurs when it first tries to read an element from the `sStrings` array by using an invalid index value. When the exception is caught, corrective action is taken during run time inside the **catch** block. The retry statement then jumps back to the first statement in the **try** block. This second iteration works without encountering any exception.
 
-<pre>
+```xpp
 static void JobRs008b_ExceptionsAndRetry(Args _args)
 {
     str sStrings[4];
@@ -1083,91 +1105,92 @@ static void JobRs008b_ExceptionsAndRetry(Args _args)
     print("End of X++ retry program.");
     pause;
 }
-</pre>
+```
 
 #### Output
 
 Here is the output to the Print window:
 
-<pre>
+```xpp
 At top of try block: 0
 In catch of -- Exception::Error (will retry). Entering catch.
 In catch of -- Exception::Error (will retry). Leaving catch.
 At top of try block: 1
 The array element is: First array element.
 End of X++ retry program.
-</pre>
+```
 
 ### C# Sample
 
 The following C\# sample is not a line-by-line translation from the previous X++ sample. Instead the C\# program has a different structure so that it mimics the behavior of the **retry** keyword that the X++ program relies on. The **try** and **catch** blocks are in a called method. The variables that are used in the **try** block are stored in the caller method. The caller method passes the variables as parameters that are decorated with the **ref** keyword, so that their values can be corrected inside the **catch** block of the called method. The called method captures all exceptions, and returns a **boolean** to communicate back to the caller whether a second call is required.
 
-    // C#
-    using System;
-    public class Pgm_CSharp
+```csharp
+// C#
+using System;
+public class Pgm_CSharp
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            new Pgm_CSharp() .Rs008b_CSharp_ExceptionsAndRetry();
-        }
-        void Rs008b_CSharp_ExceptionsAndRetry() // Caller
-        {
-            int iIndex = -1
-                , iNumRetriesAllowed = 3;
-            bool bReturnCode = true; // Means call the callee method.
-            for (int xx=0; xx <= iNumRetriesAllowed; xx++)
-            {
-                if (bReturnCode)
-                {
-                    bReturnCode = this
-     .Rs008b_CSharp_ExceptionsAndRetry_Callee
-    (ref iIndex);
-                }
-                else
-                {
-                    break;
-                }
-            }
-            Console.WriteLine("End of C# caller method.");
-        }
-        private bool Rs008b_CSharp_ExceptionsAndRetry_Callee
-                (ref int iIndex)
-        {
-            bool bReturnCode = true; // Means call this method again.
-            string[] sStrings = new string[4];
-            string sTemp;
-            sStrings[0] = "First array element.";
-            try
-            {
-                Console.WriteLine("At top of try block: "
-                    + iIndex.ToString());
-                sTemp = sStrings[iIndex];
-                Console.WriteLine( "The array element is: " + sTemp );
-                bReturnCode = false; // Means do not call this method again.
-            }
-            catch (Exception)
-            {
-                Console.WriteLine
-                    ("In catch of -- Exception. Entering catch.");
-                ++iIndex; // The 'ref' parameter in C#.
-                Console.WriteLine
-                    ("In catch of -- Exception. Leaving catch.");
-                //retry;
-                // In C# we let the caller method do the work
-                // that the retry keyword does in X++.
-            }
-            Console.WriteLine("End of C# callee method.");
-            return bReturnCode;
-        }
+        new Pgm_CSharp() .Rs008b_CSharp_ExceptionsAndRetry();
     }
-
+    void Rs008b_CSharp_ExceptionsAndRetry() // Caller
+    {
+        int iIndex = -1
+            , iNumRetriesAllowed = 3;
+        bool bReturnCode = true; // Means call the callee method.
+        for (int xx=0; xx <= iNumRetriesAllowed; xx++)
+        {
+            if (bReturnCode)
+            {
+                bReturnCode = this
+.Rs008b_CSharp_ExceptionsAndRetry_Callee
+(ref iIndex);
+            }
+            else
+            {
+                break;
+            }
+        }
+        Console.WriteLine("End of C# caller method.");
+        }
+    private bool Rs008b_CSharp_ExceptionsAndRetry_Callee
+        (ref int iIndex)
+    {
+        bool bReturnCode = true; // Means call this method again.
+        string[] sStrings = new string[4];
+        string sTemp;
+        sStrings[0] = "First array element.";
+        try
+        {
+            Console.WriteLine("At top of try block: "
+                + iIndex.ToString());
+            sTemp = sStrings[iIndex];
+            Console.WriteLine( "The array element is: " + sTemp );
+            bReturnCode = false; // Means do not call this method again.
+        }
+        catch (Exception)
+        {
+            Console.WriteLine
+                ("In catch of -- Exception. Entering catch.");
+            ++iIndex; // The 'ref' parameter in C#.
+            Console.WriteLine
+                ("In catch of -- Exception. Leaving catch.");
+            //retry;
+            // In C# we let the caller method do the work
+            // that the retry keyword does in X++.
+        }
+        Console.WriteLine("End of C# callee method.");
+        return bReturnCode;
+    }
+}
+```
 
  
 #### Output
 
 Here is the output to the console:
 
-<pre>
+```csharp
 At top of try block: -1
 In catch of -- Exception. Entering catch.
 In catch of -- Exception. Leaving catch.
@@ -1176,7 +1199,7 @@ At top of try block: 0
 The array element is: First array element.
 End of C# callee method.
 End of C# caller method.
-</pre>
+```
 
 ## Comparison: Operators
 This section compares the operators between X++ and C\#.
@@ -1263,86 +1286,92 @@ The important things to notice in the X++ example are the following:
 -   The parameter value that passed in to the delegate is received by each event handler method.
 -   The short X++ job at the top of the example starts the test.
 
-<pre>
-    // X++
-    // Simple job to start the delegate event test.
-    static void DelegateEventTestJob()
+```xpp
+// X++
+// Simple job to start the delegate event test.
+static void DelegateEventTestJob()
+{
+    XppClass::runTheTest("The information from the X++ job.");
+}
+// The X++ class that contains the delegate and the event handlers.
+class XppClass
+{
+    delegate void myDelegate(str _information)
     {
-        XppClass::runTheTest("The information from the X++ job.");
     }
-    // The X++ class that contains the delegate and the event handlers.
-    class XppClass
+    public void myEventSubscriberMethod2(str _information)
     {
-        delegate void myDelegate(str _information)
-        {
-        }
-        public void myEventSubscriberMethod2(str _information)
-        {
-            info("X++, hello from instance event handler 2: " + _information);
-        }
-        static public void myEventSubscriberMethod3(str _information)
-        {
-            info("X++, hello from static event handler 3: " + _information);
-        }
-        static public void runTheTest(str _stringFromJob)
-        {
-            XppClass myXppClass = new XppClass();
-            // Subscribe two event handler methods to the delegate.
-            myXppClass.myDelegate += eventHandler
-                    (myXppClass.myEventSubscriberMethod2);
-            myXppClass.myDelegate += eventHandler
-                    (XppClass::myEventSubscriberMethod3);
-            // Raise the event by calling the delegate one time,
-            // which calls all the subscribed event handler methods.
-            myXppClass.myDelegate(_stringFromJob);
-        }
+        info("X++, hello from instance event handler 2: " + _information);
     }
-</pre> 
+    static public void myEventSubscriberMethod3(str _information)
+    {
+        info("X++, hello from static event handler 3: " + _information);
+    }
+    static public void runTheTest(str _stringFromJob)
+    {
+        XppClass myXppClass = new XppClass();
+        // Subscribe two event handler methods to the delegate.
+        myXppClass.myDelegate += eventHandler
+            (myXppClass.myEventSubscriberMethod2);
+        myXppClass.myDelegate += eventHandler
+            (XppClass::myEventSubscriberMethod3);
+        // Raise the event by calling the delegate one time,
+        // which calls all the subscribed event handler methods.
+        myXppClass.myDelegate(_stringFromJob);
+    }
+}
+```
 
 The output from the previous X++ job is as follows:
 
-    X++, hello from static event handler 
-    3: The information from the X++ job. X++, hello from instance event handler 
-    2: The information from the X++ job.
+```xpp
+X++, hello from static event handler 
+3: The information from the X++ job. X++, hello from instance event handler 
+2: The information from the X++ job.
+```
 
 ### C# Sample
 
 This section contains a C\# code sample for the event design pattern of the previous X++ sample.
 
-    // C#
-    using System;
-    // Define the delegate type named MyDelegate.
-    public delegate void MyDelegate(string _information);
-    public class CsClass
+```csharp
+// C#
+using System;
+// Define the delegate type named MyDelegate.
+public delegate void MyDelegate(string _information);
+public class CsClass
+{
+    protected event MyDelegate MyEvent;
+    static public void Main()
     {
-        protected event MyDelegate MyEvent;
-        static public void Main()
-        {
-            CsClass myCsClass = new CsClass();
-            // Subscribe two event handler methods to the delegate.
-            myCsClass.MyEvent += new MyDelegate
-                    (myCsClass.MyEventSubscriberMethod2);
-            myCsClass.MyEvent += new MyDelegate
-                    (CsClass.MyEventSubscriberMethod3);
-            // Raise the event by calling the event one time, which
-            // then calls all the subscribed event handler methods.
-            myCsClass.MyEvent("The information from the C# Main.");
-        }
-        public void MyEventSubscriberMethod2(string _information)
-        {
-            Console.WriteLine("C#, hello from instance event handler 2: " + _information);
-        }
-        static public void MyEventSubscriberMethod3(string _information)
-        {
-            Console.WriteLine("C#, hello from static event handler 3: " + _information);
-        }
+        CsClass myCsClass = new CsClass();
+        // Subscribe two event handler methods to the delegate.
+        myCsClass.MyEvent += new MyDelegate
+            (myCsClass.MyEventSubscriberMethod2);
+        myCsClass.MyEvent += new MyDelegate
+            (CsClass.MyEventSubscriberMethod3);
+        // Raise the event by calling the event one time, which
+        // then calls all the subscribed event handler methods.
+        myCsClass.MyEvent("The information from the C# Main.");
     }
+    public void MyEventSubscriberMethod2(string _information)
+    {
+        Console.WriteLine("C#, hello from instance event handler 2: " + _information);
+    }
+    static public void MyEventSubscriberMethod3(string _information)
+    {
+        Console.WriteLine("C#, hello from static event handler 3: " + _information);
+    }
+}
+```
 
 The output from the previous C\# sample is as follows:
 
-    CsClass.exe C#, hello from instance event handler 
-    2: The information from the C\# Main. C\#, hello from static event handler 
-    3: The information from the C\# Main. |
+```csharp
+CsClass.exe C#, hello from instance event handler 
+2: The information from the C\# Main. C\#, hello from static event handler 
+3: The information from the C\# Main. |
+```
 
 ### Events and the AOT
 
@@ -1487,7 +1516,8 @@ The following table lists differences between the select statements of X++ SQL a
 ### Code Example
 
 The following code example illustrates features in the previous table.
-<pre>
+
+```xpp
 static void OByWhere452Job(Args _args)
 {
     // Declare the table buffer variable.
@@ -1507,7 +1537,7 @@ Message (04:02:29 pm)
 4008 , The Warehouse
 4001 , The Bulb
 ***/
-</pre>
+```
  
 ### X++ SQL Keywords
 
@@ -1535,7 +1565,8 @@ The following table lists differences about the **join** keyword of X++ SQL and 
 ### Code Example
 
 The following code example illustrates the **join** syntax in X++ SQL.
-<pre>
+
+```xpp
 static void OByWhere453Job(Args _args)
 {
     // Declare table buffer variables.
@@ -1558,7 +1589,7 @@ static void OByWhere453Job(Args _args)
         info(tCustTable.AccountNum + " , " + tCustTable.Name);
     }
 }
-</pre>
+```
  
 ### Aggregate Fields
 
@@ -1572,7 +1603,7 @@ The following table lists some differences in how aggregate fields in the **sele
 
 In the following code example, the call to the info method illustrates the way to reference aggregate fields (see `tPurchLine.QtyOrdered`).
 
-<pre>
+```xpp
 static void Null673Job(Args _args)
 {
     PurchLine tPurchLine;
@@ -1599,7 +1630,7 @@ Message (12:23:08 pm)
 QtyOrdered:  261,550.00
 End.
 ***/
-</pre>
+```
 
 ### Other Differences
 
