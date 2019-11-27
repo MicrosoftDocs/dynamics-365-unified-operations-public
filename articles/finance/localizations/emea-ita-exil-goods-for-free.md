@@ -44,7 +44,6 @@ Delivery reason setup determines which case you use.
 - The primary address of the legal entity must be in Italy.
 - In the **Feature management** workspace, turn on the **Tax invoice for goods delivered for free** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Set up 
 ## Set up Summary update parameters
 To do this, delivery reason must be available for both the packing slip and the invoice.
 1.	Go to **Accounts receivable > Setup > Accounts receivable parameters**
@@ -65,13 +64,16 @@ To do this:
 2. Create or select **Charges code**
 2. Enable **Exclude charge in free invoices** parameter
 
-Define...
-
-## Use...
-
-### Post
-
-When you post...
+## Set up Delivery reasons
+1. Go to **Sales and marketing > Setup > Distribution > Reasons for delivery**
+2. Enable **Goods for free** flag
+3. Select the customer account representing your company, in the **Invoice account** field 
+4. Set the cash term of payment in the **Term of payment** field 
 
 > [!NOTE]
-> Warning...
+> The company issues a self-invoice to account required taxes for goods delivered for free. In addition to the invoice posting, the accounting entries for payment must be also generated. To enable that process you must have a customer account that represents your company. In this case, the invoice account on a sales order will be defaulted to the company customer account, and conseqently the issued invoice will be a self-invoice. When you specify cash term of payments the payment occurs, in addition to the self-invoice. Finally the customer transaction is closed and the amount is posted to the cash account specified in the term of payment. This field will be also defaulted in a sales order header. When your customer pays taxes, then it is necessary to leave **Invoice account** and **Term of payment** empty.
+
+## Posting Tax invoice for goods delivered for free
+
+When you create a sales order for goods delivery for free, the specified delivery reason  will determine creation of the self-invoice for your company or your customer. If you use cash payment term, the payment accounting entries will also be created when you post the sales invoice.
+
