@@ -59,7 +59,8 @@ Based on your product and version, you will have different update options from L
 ### Dynamics 365 for Retail 
 - **Application version 8.0 and earlier** - This product version is out of service, no new X++ or platform updates are available. If you're running on this version, you need to upgrade to the latest version stay current with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
 
-[!Note] For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
+> [!Note] 
+        > For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
 
 - **Application version 8.1 and later** - This includes the same update options as version 8.1 and later of the Finance and Operations described in the following section.
 
@@ -89,9 +90,11 @@ Based on your product and version, you will have different update options from L
 
 - **Application version 7.1, 7.2, 8.0 or earlier with Platform 32 or earlier** - This product version is out of service, no new X++ or platform updates are available. If you're running on this version, you need to upgrade to the latest version to stay with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
 
-[!NOTE] If you are on this release, you need to upgrade as soon as possible. 
+> [!NOTE] 
+        > If you are on this release, you need to upgrade as soon as possible. 
 
-[!Note] For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
+> [!Note] 
+        > For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
 
   
 ## Download binary updates
