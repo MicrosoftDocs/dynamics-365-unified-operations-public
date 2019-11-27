@@ -98,6 +98,6 @@ In Accounts payable, notes are automatically generated as attachments to new pur
 
 ### Printing advanced notes
 
-External notes are printed as they relate to business documents according to the **Forms** setup in the **Headers** section, the **Lines** section, or in both sections.
+Advanced notes which are defined as **External** are printed in the related business documents depending on the settings on the **Form setup**
 
 ![Setup for printing advanced notes](media/emea-ita-exil-notes-printing.jpg)
