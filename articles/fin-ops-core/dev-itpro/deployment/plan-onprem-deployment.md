@@ -3,9 +3,9 @@
 
 title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
 
@@ -202,7 +202,7 @@ In most cases, unless used extensively, the recommended minimum requirements usi
 For the current release of Finance + Operations, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS as needed. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, the node would need to be replaced.
 
 ### Environment Orchestrator
-The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-capacity).
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ### Virtualization and oversubscription
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – core, memory, and disk.
