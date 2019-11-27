@@ -57,7 +57,7 @@ To view available updates:
 Based on your product and version, you will have different update options from Lifecycle Services.  
 
 ### Dynamics 365 for Retail 
-- **Application version 8.0 and earlier** - This product version is out of service, no new X++ or platform updates are available. If you're running on this version, you need to upgrade to the latest version stay current with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
+- **Application version 8.0 and earlier** - This product version is out of service.  No new X++ updates are available, also, platform update will not be available starting from **platform update 33**, this means you will not be able to apply the platform only update package if your application version is 8.0 or earlier. If you're running on this version, you need to upgrade to the latest version stay current with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
 
 > [!Note] 
         > For the X++ updates that have been released for these versions, they are available from [Issue Search in Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs).
@@ -88,7 +88,7 @@ Based on your product and version, you will have different update options from L
         
    - **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
-- **Application version 7.1, 7.2, 8.0 or earlier with Platform 32 or earlier** - This product version is out of service, no new X++ or platform updates are available. If you're running on this version, you need to upgrade to the latest version to stay with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
+- **Application version 7.1, 7.2, or 8.0 with Platform 32 or earlier** - This product version is out of service.  No new X++ updates are available, also, platform update will not be available starting from **platform update 33**, this means you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0. If you're running on this version, you need to upgrade to the latest version to stay with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
 
 > [!NOTE] 
         > If you are on this release, you need to upgrade as soon as possible. 
