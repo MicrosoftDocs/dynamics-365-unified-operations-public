@@ -88,7 +88,7 @@ Based on your product and version, you will have different update options from L
         
    - **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
-- **Application version 7.1, 7.2, or 8.0 with Platform update 32 and earlier** - This product version is out of service.  No new X++ updates are available, also, platform update will not be available starting from **platform update 33**, this means you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0. If you're running on this version, you need to upgrade to the latest version to stay with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
+- **Application version 7.1, 7.2, 8.0 and earlier (except 7.3) with Platform update 32 and earlier** - Any of these product version is out of service.  No new X++ updates are available, you can apply X++ updates that have been released but no new X++ update will be published to LCS. Also, platform update will not be available starting from **platform update 33**, this means you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0. If you're running on this version, you need to upgrade to the latest version to stay with the latest feature and functionality. [Learn more](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/one-version)
 
 > [!NOTE] 
         > If you are on this release, you need to upgrade as soon as possible. 
