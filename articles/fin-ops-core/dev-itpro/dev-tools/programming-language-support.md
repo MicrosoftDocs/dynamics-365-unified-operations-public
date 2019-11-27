@@ -5,7 +5,7 @@ title: Changes in X++ and the X++ compiler
 description: This topic reviews the changes made to the compiler for Finance and Operations applications.
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -21,7 +21,6 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26781
-ms.assetid: 056d4064-e365-487c-a606-e2fadfe28242
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
@@ -114,8 +113,7 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 -   There is no concept of a job, in the sense of **AOT** &gt; **Jobs** &gt; **MyJob**. To quickly and easily run an X++ method, you can still add in a `static Main` method to a class, and then set the class as the startup object form for the project in Microsoft Visual Studio. When the project is run, the `Main` method will be run.
 
 
-Additional resources
---------
+## Additional resources
 
 [Language Integrated Query (LINQ) provider for C#](linq-provider-c.md)
 
