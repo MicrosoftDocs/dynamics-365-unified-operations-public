@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom: 
 ms.search.region: Italy
 # ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.8
 
@@ -32,7 +32,10 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, ...
+This topic describes how to manage goods delivered for free. Operation requires setup of delivery reasons to be used in the sales order. Functionality makes possible to generate invoices with the words "free invoice" and the total of invoice to be equal to the tax amount only. There are two cases depending on who pays taxes on these items:
+- our company pays the sales tax, the system will generate a self-invoice and will also generate accounting entries for payment
+- customer pays the sales tax
+
 
 ## Prerequisites
 
