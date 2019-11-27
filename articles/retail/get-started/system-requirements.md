@@ -147,7 +147,7 @@ The computer must meet all system requirements for installing and using the foll
 ## Retail Store Scale Unit requirements
 
 > [!NOTE]
-> Starting October 1, 2018, Retail Store Scale Unit and other client-side components require that the .NET Framework version 4.6.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
+> Starting August 1, 2019, Retail Store Scale Unit and other client-side components require that the .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
 >
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 
