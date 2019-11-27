@@ -41,34 +41,38 @@ An attribute is a non-abstract class that extends (inherits from) the **SysAttri
 ## Creating an attribute class
 An attribute class can extend the **SysAttribute** class directly, or it can extend any descendant of the **SysAttribute** class. The **SysAttribute** class cannot be used as an attribute because it is declared **abstract**. The following example shows the declaration and design of an ordinary attribute class that you could create.
 
-    public class PracticeAttribute extends SysAttribute
+```xpp
+public class PracticeAttribute extends SysAttribute
+{
+    // Fields in the classDeclaration.
+    StartEnd startEndEnum;
+    str reason;
+    // Constructor.
+    public void new(StartEnd _startEndEnum, str _reason)
     {
-        // Fields in the classDeclaration.
-        StartEnd startEndEnum;
-        str reason;
-        // Constructor.
-        public void new(StartEnd _startEndEnum, str _reason)
-        {
-            startEndEnum  = _startEndEnum;
-            reason = _reason;
-        }
-        // Other methods can go here.
+        startEndEnum  = _startEndEnum;
+        reason = _reason;
     }
+    // Other methods can go here.
+}
+```
 
 ### Decorating a class with an attribute
 
 The following example shows a class and a method that are decorated with the **PracticeAttribute** given in the previous example. If the constructor of the attribute takes no parameters, the parentheses for the parameters are optional. The attribute decoration could be `[AnotherAttribute]` without parentheses.
 
-    [PracticeAttribute(StartEnd::End, "Use the RegularClass class at the end.")]
-    public class RegularClass
+```xpp
+[PracticeAttribute(StartEnd::End, "Use the RegularClass class at the end.")]
+public class RegularClass
+{
+    [PracticeAttribute(Startend::Start, "Use the rehearse method at the start.")]
+    public int rehearse()
     {
-        [PracticeAttribute(Startend::Start, "Use the rehearse method at the start.")]
-        public int rehearse()
-        {
-            // Logic goes here.
-        }
-        // More fields and methods belong here.
+        // Logic goes here.
     }
+    // More fields and methods belong here.
+}
+```
 
 ### Attribute constructors
 
@@ -83,11 +87,13 @@ The system provides several attributes, including the **SysObsoleteAttribute** c
 
 ### SysObsoleteAttribute code example
 
-    [SysObsoleteAttribute("The Automobile class might have faster performance.", false)]
-    class Bicycle
-    {
-        // Members of the Bicycle class go here.
-    }
+```xpp
+[SysObsoleteAttribute("The Automobile class might have faster performance.", false)]
+class Bicycle
+{
+    // Members of the Bicycle class go here.
+}
+```
 
 ## Metadata reflection
 You use reflection to find the attribute metadata that is attached to a class. The classes to use for attribute reflection are as follows:
@@ -109,69 +115,70 @@ On the previous reflection classes, the methods for reflecting on attribute meta
 
 You use the **DictMethod** class to find the metadata value of an attribute that is decoration on a method. The following code example uses the **SysEntryPointAttribute** class as the attribute. It accepts your parameter values for the method name, and for the name of the class that contains the method. The **parmChecked** method is particular to the **SysEntryPointAttribute** class, and it is not inherited from its base class **SysAttribute**. Each attribute class can have its own method name for its metadata.
 
-    static public int MetadataOfSysEntryPointAttributeOnMethod
-                (
-                str _sNameOfClass,
-                str _sNameOfMethod
-                )
+```xpp
+static public int MetadataOfSysEntryPointAttributeOnMethod
+        (
+        str _sNameOfClass,
+        str _sNameOfMethod
+        )
+{
+    // Return Values:
+    // 0 == Has the attribute, its metadata value is false;
+    // 1 == Has the attribute, its metadata value is true;
+    // 2 == The method lacks the SysEntryPointAttribute.
+    int nReturnValue = -1,
+        nClassId;
+    boolean boolParmChecked;
+    DictMethod dm;
+    Object attributeAsObject;
+    SysEntryPointAttribute sepAttribute;
+    Global::info("Starting AttributeReflection" 
+        + " ::MetadataOfSysEntryPointAttributeOnMethod ....");
+    Global::info(strFmt
+        ("Parameters are: _sNameOfClass = %1 ,  _sNameOfMethod = %2 .", 
+        _sNameOfClass, _sNameOfMethod)
+        );
+    nClassId = Global::className2Id(_sNameOfClass);
+    dm = new DictMethod
+        (UtilElementType::ClassInstanceMethod,
+        nClassId,
+        _sNameOfMethod
+        );
+    attributeAsObject = dm.getAttribute("SysEntryPointAttribute");
+    if (attributeAsObject is SysEntryPointAttribute)
     {
-        // Return Values:
-        // 0 == Has the attribute, its metadata value is false;
-        // 1 == Has the attribute, its metadata value is true;
-        // 2 == The method lacks the SysEntryPointAttribute.
-        int nReturnValue = -1,
-            nClassId;
-        boolean boolParmChecked;
-        DictMethod dm;
-        Object attributeAsObject;
-        SysEntryPointAttribute sepAttribute;
-        Global::info("Starting AttributeReflection" 
-            + " ::MetadataOfSysEntryPointAttributeOnMethod ....");
-        Global::info(strFmt
-            ("Parameters are: _sNameOfClass = %1 ,  _sNameOfMethod = %2 .", 
-            _sNameOfClass, _sNameOfMethod)
-            );
-        nClassId = Global::className2Id(_sNameOfClass);
-        dm = new DictMethod
-            (UtilElementType::ClassInstanceMethod,
-            nClassId,
-            _sNameOfMethod
-            );
-        attributeAsObject = dm.getAttribute("SysEntryPointAttribute");
-        if (attributeAsObject is SysEntryPointAttribute)
-        {
-            sepAttribute = attributeAsObject as SysEntryPointAttribute;
-            boolParmChecked = sepAttribute.parmChecked();
-            if (boolParmChecked)
-                nReturnValue = 1;
-            else
-                nReturnValue = 0;
-            Global::info(
-                strFmt("Return value is %1.",
-                    nReturnValue)
-                );
-        }
+        sepAttribute = attributeAsObject as SysEntryPointAttribute;
+        boolParmChecked = sepAttribute.parmChecked();
+        if (boolParmChecked)
+            nReturnValue = 1;
         else
-        {
-            nReturnValue = 2;
-            Global::error("Object is not a SysEntryPointAttribute??");
-        }
-        return nReturnValue;
+            nReturnValue = 0;
+        Global::info(
+            strFmt("Return value is %1.",
+                nReturnValue)
+            );
     }
-    /*** Output displayed in the Infolog.
-    Message (05:03:22 pm)
-    Starting AttributeReflection ::MetadataOfSysEntryPointAttributeOnMethod ....
-    Parameters are: _sNameOfClass = CustCustomerService ,  _sNameOfMethod = create .
-    Return value is 1.
-    ***/
-    /**************
-    // Simple AOT > Jobs job to run the method.
-    static void AttributeReflection33Job(Args _args)
+    else
     {
-        AttributeReflection::MetadataOfSysEntryPointAttributeOnMethod
-            ("CustCustomerService", "create");
+        nReturnValue = 2;
+        Global::error("Object is not a SysEntryPointAttribute??");
     }
-    **************/
-
+    return nReturnValue;
+}
+/*** Output displayed in the Infolog.
+Message (05:03:22 pm)
+Starting AttributeReflection ::MetadataOfSysEntryPointAttributeOnMethod ....
+Parameters are: _sNameOfClass = CustCustomerService ,  _sNameOfMethod = create .
+Return value is 1.
+***/
+/**************
+// Simple AOT > Jobs job to run the method.
+static void AttributeReflection33Job(Args _args)
+{
+    AttributeReflection::MetadataOfSysEntryPointAttributeOnMethod
+        ("CustCustomerService", "create");
+}
+**************/
+```
 
 
