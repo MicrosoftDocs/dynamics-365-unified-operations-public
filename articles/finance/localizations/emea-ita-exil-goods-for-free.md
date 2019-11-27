@@ -50,11 +50,15 @@ To do this, delivery reason must be available for both the packing slip and the 
 2.	In the tab **Summary update** click on **Summary update parameters**
 3.	The  **Delivery reason** summary update parameter must be selected for “Packing slip” and “Invoice” documents. To do this, select the "Invoice” tab and use the right-arrow to move  "Delivery reason" to Selected. Repeat the same in the "Packing slip" tab.
 
+![Summary update parameters](media/emea-ita-exil-free-goods-summary-update-parameters.jpg)
+
 ## Set up Sales for free account
 To set up the accounting account for sales for free:
 1. Go to **Inventory management > Setup > Posting > Posting**
 2. Select  **Sales for free** radio button
 3. Set up **Main account** selecting required relations and account codes.
+
+![Sales for free account](media/emea-ita-exil-free-goods-sales-free-account.jpg)
 
 ## Set up Miscellaneous charges
 
@@ -64,11 +68,15 @@ To do this:
 2. Create or select **Charges code**
 2. Enable **Exclude charge in free invoices** parameter
 
+![Charges codes](media/emea-ita-exil-free-goods-charges-codes.jpg)
+
 ## Set up Delivery reasons
 1. Go to **Sales and marketing > Setup > Distribution > Reasons for delivery**
 2. Enable **Goods for free** flag
 3. Select the customer account representing your company, in the **Invoice account** field 
 4. Set the cash term of payment in the **Term of payment** field 
+
+![Reasons for delivery](media/emea-ita-exil-free-goods-delivery-reason.jpg)
 
 > [!NOTE]
 > The company issues a self-invoice to account required taxes for goods delivered for free. In addition to the invoice posting, the accounting entries for payment must be also generated. To enable that process you must have a customer account that represents your company. In this case, the invoice account on a sales order will be defaulted to the company customer account, and conseqently the issued invoice will be a self-invoice. When you specify cash term of payments the payment occurs, in addition to the self-invoice. Finally the customer transaction is closed and the amount is posted to the cash account specified in the term of payment. This field will be also defaulted in a sales order header. When your customer pays taxes, then it is necessary to leave **Invoice account** and **Term of payment** empty.
