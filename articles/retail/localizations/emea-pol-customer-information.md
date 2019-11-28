@@ -104,7 +104,8 @@ The following examples show how to work with customer information in POS for Pol
 1. Sign in to POS.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
-1. Specify the new customer's attributes. In the **VAT number** field, enter the customer's NIP.
+1. Specify the new customer's attributes. 
+1. Select **Create a new address**. Specify the new customer's contact information and address. In the **VAT number** field, enter the customer's NIP.
 1. Save the customer record, and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. In the **Enter customer information** dialog box, select **Yes**, and then select **Copy from transaction customer**.
