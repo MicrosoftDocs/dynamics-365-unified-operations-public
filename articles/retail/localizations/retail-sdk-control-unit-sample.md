@@ -284,7 +284,7 @@ Follow these steps to create and apply deployable packages that contain Retail c
     1. Add the following section to the **composition** section of the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** config files.
 
         ``` xml
-        <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
         ```
 
     2. Add the following section to the **composition** section of the Hardware station configuration file.
