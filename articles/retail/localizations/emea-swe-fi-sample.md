@@ -369,9 +369,9 @@ If you are using the legacy [Sample for Retail POS integration with control unit
 
 ### Migration process
 
-Migration from the legacy integration sample to the control unit integration sample should be done based on the concept of gradual update. This means that all Retail Headquarters and Retail Server components should already be updated before you begin updating the POS and Hardware station components.
+The migration from the legacy integration sample to the control unit integration sample should be done based on the concept of gradual update. This means that all Retail Headquarters and Retail Server components should already be updated before you begin updating the POS and Hardware station components.
 
-To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or can not be signed because of the missing configuration, it is recommended to turn off all devices that use the legacy sample and then update both POS and Hardware station components simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
+To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or can not be signed because of the missing configuration, it is recommended to turn off all POS and Hardware station devices that use the legacy sample and then update them simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
 
 The migration process can consist of the following steps:
 
@@ -380,12 +380,44 @@ The migration process can consist of the following steps:
 1. Make sure all offline transactions are synchronized from offline-enabled MPOS devices.
 1. Turn off all devices that use the components of the legacy sample.
 1. Complete the setup tasks that are described in the [Setting up integration with control units](#setting-up-integration-with-control-units) section.
-1. Update the POS and Hardware station components, disable the extensions that are a part of the legacy sample and enable the extensions of the current sample.
+1. Update the POS and Hardware station components, disable the extensions that are parts of the legacy sample, and enable the extensions of the current sample.
 
     > [!NOTE]
-    > Depending on the type of environment, please find more technical details of the migration process in appropriate sections: [Migration in development environment](#migration-in-development-environment) or [Migration in production environment](#migration-in-production-environment).
+    > Depending on the type of environment, please find more technical details of the migration process in the corresponding sections: [Migration in development environment](#migration-in-development-environment) or [Migration in production environment](#migration-in-production-environment).
 
 ### Migration in development environment
+
+#### Update CRT
+
+1. Find the **Runtime.Extensions.DocumentProvider.CleanCashSample** project and build it.
+2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
+3. Copy the assembly file to the CRT extensions folder:
+
+    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
+    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
+
+4. Find the extension configuration file for CRT:
+
+    - **Retail Server:** The file is named **CommerceRuntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
+    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's in the bin\ext folder under the local CRT client broker location
+
+    > [!WARNING]
+    > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+5. Find and remove the legacy CRT extension in extension configuration file:
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
+    ```
+    > [!NOTE]
+    > Do not execute this step until you update all POS devices that work with this CRT instance. 
+
+6. Register the current CRT extensions in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
+    ```
 
 #### Harware station extensions uptake
 
@@ -438,37 +470,6 @@ The migration process can consist of the following steps:
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
     ```
-
-#### CRT extensions uptake
-
-1. Find the **Runtime.Extensions.DocumentProvider.CleanCashSample** project, and build it.
-2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
-3. Copy the assembly file to the CRT extensions folder:
-
-    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
-    - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
-
-4. Find the extensions configuration file for CRT:
-
-    - **Retail Server:** The file is named **CommerceRuntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail server site location.
-    - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the bin\ext folder under the local CRT client broker location
-
-    > [!WARNING]
-    > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
-
-5. Find and remove the CRT sample registration in extensions configuration file:
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
-    ```
-
-6. Register the CRT change in the extension configuration file.
-
-    ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
-    ```
-
 #### Modern POS extensions uptake
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**
