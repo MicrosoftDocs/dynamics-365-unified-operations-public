@@ -365,11 +365,11 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 ## Migrating from legacy integration sample
 
-If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you may need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future, you may need to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for, and execute the uptake for your environment.
+If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you may need to migrate from it to the current integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future, you may need to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for, and execute the uptake for your environment.
 
 ### Migration process
 
-The migration from the legacy integration sample to the control unit integration sample should be done based on the concept of gradual update. This means that all Retail Headquarters and Retail Server components should already be updated before you begin updating the POS and Hardware station components.
+The migration from the legacy integration sample to the current control unit integration sample should be done based on the concept of gradual update. This means that all Retail Headquarters and Retail Server components should already be updated before you begin updating the POS and Hardware station components.
 
 To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or can not be signed because of the missing configuration, it is recommended to turn off all POS and Hardware station devices that use the legacy sample and then update them simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
 
@@ -406,7 +406,7 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-5. Find and remove the legacy CRT extension in the extension configuration file:
+5. Find and remove the legacy extension in the extension configuration file:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
@@ -415,7 +415,7 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do not execute this step until you update all POS devices that work with this CRT instance. 
 
-6. Register the current CRT extensions in the extension configuration file.
+6. Register the current CRT extensions in the extension configuration file by adding the following lines:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
@@ -428,10 +428,10 @@ The migration process should consist of the following steps:
 
 2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** assembly file.
 
-3. Copy the assembly files to the Hardware station extensions folder:
+3. Copy the assembly file to the Hardware station extensions folder:
 
-    - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
-    - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
+    - **Shared hardware station:** Copy the file to the **bin** folder under the IIS Hardware station site location.
+    - **Dedicated hardware station on Modern POS:** Copy the file to the Modern POS client broker location.
 
 4. Find the **HardwareStation.Extension.config** extension configuration file:
 
@@ -441,7 +441,7 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-5. Find and remove the legacy Hardware station extension in the extension configuration file:
+5. Find and remove the legacy extension in the extension configuration file:
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -470,7 +470,7 @@ The migration process should consist of the following steps:
 
 #### Update Modern POS
 
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 2. Disable the legacy extension by removing the folowing lines from **extensions.json**:
     ``` json
     {
@@ -516,7 +516,7 @@ The migration process should consist of the following steps:
 
 ### Update CRT
 
-1. Remove the legacy CRT extension in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
+1. Remove the legacy extension in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
     ``` xml
     <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
@@ -534,7 +534,7 @@ The migration process should consist of the following steps:
 
 ### Update Hardware station
 
-1. Remove the legacy Hardware station extension by modifying the **HardwareStation.Extension.config** configuration file:
+1. Remove the legacy extension by modifying the **HardwareStation.Extension.config** configuration file:
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -561,7 +561,7 @@ The migration process should consist of the following steps:
     ```
     ---
 
-2. Enable the current sample extensions:
+2. Enable the current sample extension:
 
      - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
