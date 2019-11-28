@@ -371,7 +371,7 @@ If you are using the legacy [Sample for Retail POS integration with control unit
 
 The migration from the legacy integration sample to the current control unit integration sample should be done based on the concept of gradual update. This means that all Retail Headquarters and Retail Server components should already be updated before you begin updating the POS and Hardware station components.
 
-To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or can not be signed because of the missing configuration, it is recommended to turn off all POS and Hardware station devices that use the legacy sample and then update them simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
+To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or cannot be signed because of the missing configuration, it is recommended to turn off all POS and Hardware station devices that use the legacy sample and then update them simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
 
 The migration process should consist of the following steps:
 
@@ -471,14 +471,15 @@ The migration process should consist of the following steps:
 #### Update Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-2. Disable the legacy extension by removing the folowing lines from **extensions.json**:
+2. Disable the legacy extension by removing the following lines from **extensions.json**:
+
     ``` json
     {
         "baseUrl": "FiscalRegisterSample"
     }
     ```
 
-2. Enable the current sample extension by adding the following lines in **extensions.json**.
+2. Enable the current sample extension by adding the following lines in **extensions.json**:
 
     ``` json
     {
@@ -492,7 +493,7 @@ The migration process should consist of the following steps:
 
 #### Update Cloud POS
 
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 2. Disable the legacy extension by removing the following lines from **extensions.json**:
     ``` json
     {
@@ -500,7 +501,7 @@ The migration process should consist of the following steps:
     }
     ```
 
-2. Enable the current sample extension by adding the following lines in **extensions.json**.
+2. Enable the current sample extension by adding the following lines in **extensions.json**:
 
     ``` json
     {
