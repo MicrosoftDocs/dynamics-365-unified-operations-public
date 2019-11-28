@@ -373,9 +373,9 @@ The migration from the legacy integration sample to the control unit integration
 
 To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or can not be signed because of the missing configuration, it is recommended to turn off all POS and Hardware station devices that use the legacy sample and then update them simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
 
-The migration process can consist of the following steps:
+The migration process should consist of the following steps:
 
-1. Update the Retail Headquarters component.
+1. Update the Retail Headquarters components.
 1. Update the Retail Server components and enable the extensions of the current sample.
 1. Make sure all offline transactions are synchronized from offline-enabled MPOS devices.
 1. Turn off all devices that use the components of the legacy sample.
