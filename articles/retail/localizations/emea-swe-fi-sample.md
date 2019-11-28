@@ -132,7 +132,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 This deployment guide shows how to enable the Dynamics 365 Retail localization for Sweden. The localization is a part of the Retail software development kit (SDK), for information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md). 
 
-This sample consists of extensions for the CRT and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet. Follow these steps to set up a development environment so that you can test and extend the sample.
+This sample consists of extensions for CRT, POS and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet. Follow these steps to set up a development environment so that you can test and extend the sample.
 
 ### Enable Commerce runtime extensions
 
