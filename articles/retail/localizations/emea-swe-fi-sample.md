@@ -390,7 +390,9 @@ The migration process can consist of the following steps:
 #### Update CRT
 
 1. Find the **Runtime.Extensions.DocumentProvider.CleanCashSample** project and build it.
+
 2. In the **Runtime.Extensions.DocumentProvider.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll** assembly file.
+
 3. Copy the assembly file to the CRT extensions folder:
 
     - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
@@ -404,11 +406,12 @@ The migration process can consist of the following steps:
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-5. Find and remove the legacy CRT extension in extension configuration file:
+5. Find and remove the legacy CRT extension in the extension configuration file:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
     ```
+
     > [!NOTE]
     > Do not execute this step until you update all POS devices that work with this CRT instance. 
 
@@ -419,24 +422,18 @@ The migration process can consist of the following steps:
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
     ```
 
-#### Harware station extensions uptake
+#### Update Hardware station
 
-1. Find the **HardwareStation.Extension.CleanCashSample** project, and build it.
-2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find following files:
+1. Find the **HardwareStation.Extension.CleanCashSample** project and build it.
 
-    - The **Contoso.Commerce.HardwareStation.CleanCashSample.dll** assembly
+2. In the **Extension.CleanCashSample\\bin\\Debug** folder, find the **Contoso.Commerce.HardwareStation.CleanCashSample.dll** assembly file.
 
 3. Copy the assembly files to the Hardware station extensions folder:
 
     - **Shared hardware station:** Copy the files to the **bin** folder under the IIS Hardware station site location.
     - **Dedicated hardware station on Modern POS:** Copy the files to the Modern POS client broker location.
 
-4. Find the extension configuration file for the Hardware station's extensions. The file is named **HardwareStation.Extension.config**.
-
-    - **Shared hardware station:** The file is located under the IIS Hardware station site location.
-    - **Dedicated hardware station on Modern POS:** The file is located under the Modern POS client broker location.
-
-5. Find the **HardwareStation.Extension.config** extensions configuration file for CRT.
+4. Find the **HardwareStation.Extension.config** extension configuration file:.
 
     - **Remote Hardware station:** The file is located under the IIS Hardware station site location.
     - **Local Hardware station on Modern POS:** The file is located under the Modern POS client broker location.
@@ -444,7 +441,7 @@ The migration process can consist of the following steps:
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-6. Find and remove the Harware station sample registration in extensions configuration file:
+5. Find and remove the legacy Hardware station extension in the extension configuration file:
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -465,11 +462,12 @@ The migration process can consist of the following steps:
     ```
     ---
 
-7. Add the following line to the **composition** section of the configuration file.
+6. Add the following line to the **composition** section of the extension configuration file.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
     ```
+
 #### Modern POS extensions uptake
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**
