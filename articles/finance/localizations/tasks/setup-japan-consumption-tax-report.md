@@ -63,7 +63,10 @@ This task was created using the demo data company JPMF.
 2. Use the Quick Filter to find records. For example, filter on the Sales tax code field with a value of 'JP Cons'.
 3. Expand the Report setup section.
 4. Click Edit.
-    * Confirm the reporting codes were configured properly.   
+    * Confirm the reporting codes were configured properly. 
+    
+  > [!NOTE] 
+  > For setting reporting codes in sales tax codes you may use the table below.     
  
 **Using reporting codes in Japanese sales tax report base items**
 
