@@ -520,7 +520,7 @@ The migration process should consist of the following steps:
 1. Remove the legacy extension in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
     ``` xml
-    <add source="type" value="Contoso.Commerce.Runtime.FiscalRegisterReceipt, Contoso.Commerce.Runtime.FiscalRegisterReceipt" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
     ```
 
     > [!WARNING]
