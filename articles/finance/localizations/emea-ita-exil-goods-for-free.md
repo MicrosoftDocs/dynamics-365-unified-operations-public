@@ -34,7 +34,8 @@ ms.dyn365.ops.version: 10.0.8
 
 This topic describes how to manage goods delivered for free. Functionality makes possible to generate invoices with the words "free invoice" and the total of invoice to be equal to the tax amount only. Operation requires setup of delivery reasons to be used in the sales order. There are two cases depending on who pays taxes on these items:
 - your company pays the sales tax, the system will generate a self-invoice and will also generate accounting entries for payment
-- customer pays the sales tax
+- customer pays the sales tax.
+
 Delivery reason setup determines which case you use.
 
 
@@ -82,6 +83,9 @@ To do this:
 > The company issues a self-invoice to account required taxes for goods delivered for free. In addition to the invoice posting, the accounting entries for payment must be also generated. To enable that process you must have a customer account that represents your company. In this case, the invoice account on a sales order will be defaulted to the company customer account, and conseqently the issued invoice will be a self-invoice. When you specify cash term of payments the payment occurs, in addition to the self-invoice. Finally the customer transaction is closed and the amount is posted to the cash account specified in the term of payment. This field will be also defaulted in a sales order header. When your customer pays taxes, then it is necessary to leave **Invoice account** and **Term of payment** empty.
 
 ## Posting Tax invoice for goods delivered for free
-
 When you create a sales order for goods delivery for free, the specified delivery reason  will determine creation of the self-invoice for your company or your customer. If you use cash payment term, the payment accounting entries will also be created when you post the sales invoice.
 
+## Printing Tax invoice for goods delivered for free
+The invoice printout will show the title **Free invoice** and items will be prefixed with the **Free item:** wording if the flag “Goods for free” is active on the delivery reason used for the order.
+
+![Free invoice printout](media/emea-ita-exil-free-tax-invoice-printout.jpg)
