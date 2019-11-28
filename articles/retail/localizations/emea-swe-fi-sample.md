@@ -367,24 +367,23 @@ The configuration file is located in the **Configuration** folder of the extensi
 
 If you are using the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you may need to migrate from it to this integration sample. In order to uptake the change and receive timely updates for the features for Sweden in the future, you may need to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The legacy integration sample and your customizations will continue working in case no changes are made from your side. This is done so that you can plan, prepare for, and execute the uptake for your environment.
 
-In case you are planning to uptake the fiscal integration for Sweden it's required to disable previously released sample extensions for Retail POS integration with control units for Sweden.
-
 ### Migration process
 
-Migration from legacy integration sample to the control unit integration sample should be performed based on the concept of gradual update. This means that all AOS and Retail Server compmonents are already updated before you begin to update POS and Hardware station components.
+Migration from the legacy integration sample to the control unit integration sample should be done based on the concept of gradual update. This means that all Retail Headquarters and Retail Server components should already be updated before you begin updating the POS and Hardware station components.
 
-To avoid a situation when an event or transaction was signed twice (both with a legacy extension and with an extension from the current sample) or could not be signed because of the missing setup, it is recommended to switch off all devices using the the legacy [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md) and update both POS and and Hardware station components simultaneously.
+To avoid a situation when an event or a transaction is signed twice (that is, by both the legacy extension and the current extension) or can not be signed because of the missing configuration, it is recommended to turn off all devices that use the legacy sample and then update both POS and Hardware station components simultaneously. This can be done, for example, on the store by store basis by updating the store's functionality profile and the Hardware station's hardware profile.
 
-Basically, the migration process supposes the sequence of steps as follows:
+The migration process can consist of the following steps:
 
-1. Update all AOS and Retail Server compmonents.
-2. Switch off all devices using components of the the legacy sample.
-3. Complete all required setup tasks that are described in the [Setting up integration with control units](#setting-up-integration-with-control-units) section.
-4. Update POS and Hardware station components.
-5. Enable extesntions of the current sample and disable extensions, that are a part of the legacy sample.
+1. Update the Retail Headquarters component.
+1. Update the Retail Server components and enable the extensions of the current sample.
+1. Make sure all offline transactions are synchronized from offline-enabled MPOS devices.
+1. Turn off all devices that use the components of the legacy sample.
+1. Complete the setup tasks that are described in the [Setting up integration with control units](#setting-up-integration-with-control-units) section.
+1. Update the POS and Hardware station components, disable the extensions that are a part of the legacy sample and enable the extensions of the current sample.
 
     > [!NOTE]
-    > Depending on the type of environment, please see more technical details of the migration process in an appropriate section: [Migration in development environment](#migration-in-development-environment) or [Migration in production environment](#migration-in-production-environment).
+    > Depending on the type of environment, please find more technical details of the migration process in appropriate sections: [Migration in development environment](#migration-in-development-environment) or [Migration in production environment](#migration-in-production-environment).
 
 ### Migration in development environment
 
