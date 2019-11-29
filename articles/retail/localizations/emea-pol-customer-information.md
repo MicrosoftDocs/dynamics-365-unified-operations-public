@@ -64,7 +64,7 @@ To activate the inquiry for customer information, set the **Enable inquiry of cu
 
 ### Set up Registration Type for VAT Number
 
-You must to set up the appropriate Registration Type for VAT Number related to VAT ID registration category to allow add VAT Number in POS, for more information about how to work with Registration Id, see [Registration IDs](./finance/localization/emea-registration-ids.md).
+You must to set up the appropriate Registration Type for VAT Number related to VAT ID registration category to allow add VAT Number in POS, for more information about how to work with Registration Id, see [Registration IDs](./finance/localizations/emea-registration-ids.md).
 
 > [!WARNING]
 > The VAT Number save error will be gotten in POS if the Registration Type does not be set up.
