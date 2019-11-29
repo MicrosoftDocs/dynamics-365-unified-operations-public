@@ -67,14 +67,14 @@ The following default data mapping is included in the fiscal document provider c
   Where 
     1, 2, etc. - device-specific VAT codes,
     ";" - separator,
-    code1, code2 - sales tax codes, that were set up in the system.
+    code1, code2 - sales tax codes that are configured in Retail Headquarters.
 
 Control units support up to 4 different VAT code, so the VAT code mapping may be set up as shown below:
 
 *1 : code1 ; 2 : code2 ; 3 : code3 ; 4 : code4*
 
     > [!NOTE]
-    > Sevaral VAT codes, that are used in the system, can be mapped to the same device-specific VAT code.
+    > Several sales tax codes can be mapped to the same device-specific VAT code.
 
 ### Limitations of the sample
 
