@@ -73,6 +73,8 @@ Control units support up to 4 different VAT code, so the VAT code mapping may be
 
 *1 : code1 ; 2 : code2 ; 3 : code3 ; 4 : code4*
 
+    > [!NOTE]
+    > Sevaral VAT codes, that are used in the system, can be mapped to the same device-specific VAT code.
 
 ### Limitations of the sample
 
