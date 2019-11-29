@@ -46,6 +46,7 @@ You must complete the following configuration to use this functionality:
 
 - Add the "Add customer information" operation to screen layouts.
 - Activate the inquiry for customer information.
+- Set up Registration Type for Lottery code
 - Set up receipt formats.
 - Add a customer search criterion.
 - Configure retail channel components.
@@ -61,6 +62,13 @@ On the **Button grids** page, select the button grid where the operation should 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the "Add customer information" operation.
 
 To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
+
+### Set up Registration Type for Lottery code
+
+You must to set up the appropriate Registration Type for Lottery code related to Lottery code registration category to allow add Lottery code in POS, for more information about how to work with Registration Id, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
+
+> [!WARNING]
+> The VAT Number save error will be gotten in POS if the Registration Type does not be set up.
 
 ### Set up receipt formats
 
