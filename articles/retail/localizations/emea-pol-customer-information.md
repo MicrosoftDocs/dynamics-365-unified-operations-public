@@ -131,3 +131,113 @@ The following examples show how to work with customer information in POS for Pol
 ## Deployment guidelines
 
 This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Retail for Poland.
+
+> [!NOTE]
+> Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
+>
+> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customer NIP on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
+
+### Update customizations
+
+Follow these steps if any of your customizations include request handlers for the SaveCartRequest or CreateSalesOrderServiceRequest request.
+
+1. Find the request handler for the **SaveCartRequest** request.
+1. Find the line of code that runs the original handler.
+1. Replace the original handler class with **TaxRegistrationIdFiscalCustomerService**.
+
+    ```cs
+    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland.Services;
+
+    ...
+
+    var requestHandler = new TaxRegistrationIdFiscalCustomerService();
+    var response = request.RequestContext.Runtime.Execute<SaveCartResponse>(request, request.RequestContext, requestHandler, skipRequestTriggers: false);
+    ```
+
+1. Repeat steps 1 through 3 for the **CreateSalesOrderServiceRequest** request.
+
+### Update development environment
+
+Follow these steps to update a development environment.
+
+#### CRT extension components
+
+1. Find the extension configuration file for the Commerce runtime (CRT):
+
+    - **Retail Server:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
+    - **Local CRT on Modern POS:** Find the **CommerceRuntime.MPOSOffline.Ext.config** file under the local CRT client broker location.
+
+1. Register the CRT extension in the extension configuration file.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland" />
+    ```
+
+    > [!WARNING]
+    > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
+
+#### Modern POS extension components
+
+Follow these steps to make the TaxRegistrationId.PL extension available.
+
+1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
+1. In **POS.Extensions\\extensions.json**, turn on the extension.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+               "baseUrl": "Microsoft/TaxRegistrationId.PL"
+            }
+        ]
+    }
+    ```
+
+1. Build the solution.
+1. Open Modern POS, and test the functionality.
+
+#### Cloud POS extension components
+
+Follow these steps to make the TaxRegistrationId.PL extension available.
+
+1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
+1. In **POS.Extensions\\extensions.json**, turn on the extension.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+               "baseUrl": "Microsoft/TaxRegistrationId.PL"
+            }
+        ]
+    }
+    ```
+
+1. Build the solution.
+1. Open Cloud POS, and test the functionality.
+
+### Update a production environment
+
+Follow these steps to create deployable packages that contain Retail components, and to apply the packages in a production environment.
+
+1. In the **CommerceRuntime.Ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland" />
+    ```
+
+1. Turn on the **TaxRegistrationId.PL** POS extension.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/TaxRegistrationId.PL"
+            }
+        ]
+    }
+    ```
+
+1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
+1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+
