@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: COLLECTEDLIST ER function
-description: This topic explains how the COLLECTEDLIST ER function is used
+title: CH_BANK_MOD_10 ER function
+description: This topic explains how the CH_BANK_MOD_10 ER function is used
 author: NickSelin
 manager: kfend
 ms.date: 11/29/2019
