@@ -134,11 +134,11 @@ The following illustration shows expressions of this type (the version, **11.12.
 > [!NOTE]
 > The **PaymentNotes** and **DelimitedSequence** components are labeled using a question mark. This means that the usage of both components is conditional, based on the following criteria:
 
--	Defined for the **PaymentNote**s component, the **@.PaymentsNotes<>""** expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, the text of payment notes when this text for the current credit transfer is not blank.
+-	Defined for the **PaymentNote**s component, the `@.PaymentsNotes <> ""` expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, the text of payment notes when this text for the current credit transfer is not blank.
 
 [![Operations designer](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 
--	Defined for the **DelimitedSequence** component, `@.PaymentsNotes=""` expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, separated by comma invoice numbers that are used to settle the current credit transfer when the text of payment notes for this credit transfer is blank.
+-	Defined for the **DelimitedSequence** component, `@.PaymentsNotes = ""` expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, separated by comma invoice numbers that are used to settle the current credit transfer when the text of payment notes for this credit transfer is blank.
 
 [![Operations designer](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 
@@ -154,15 +154,15 @@ The **Test expression** pane can be offered on the right-hand side of the formul
 
 The presented below pictures show how the configured for the foreign trade domain formula can be tested to make sure that the Intrastat commodity code will contain the only digits. When this formula is being testing, the **Test expression** pane is offered allowing you to specify the value of Intrastat commodity code for testing.
 
-[![Formula designer](./ER-FormulaTest-Start-EnterArguments.png)](./ER-FormulaTest-Start-EnterArguments.png)
+[![Formula designer](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 When you specified the testing code and selected **OK**, the **Test result** area presents the result of execution of the configured formula allowing you to estimate whether the result is correct, update the formula if the result is unacceptable and test the formula again.
 
-[![Formula designer](./ER-FormulaTest-Result.png)](./ER-FormulaTest-Result.png)
+[![Formula designer](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Note that some formulas cannot be tested at design-time. It can happen, for example, when the formula returns the result of the data type that cannot be shown in the **Test result** area.
 
-[![Formula designer](./ER-FormulaTest-Error.png)](./ER-FormulaTest-Error.png)
+[![Formula designer](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## Additional resources
 
