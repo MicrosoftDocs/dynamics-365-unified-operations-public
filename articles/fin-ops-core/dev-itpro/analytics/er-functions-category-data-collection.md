@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Electronic reporting (ER) formula language: list of functions of the data collection category
+title: List of ER functions of the data collection category
 description: This topic explains what data collection functions are supported in ER
 author: NickSelin
 manager: kfend
