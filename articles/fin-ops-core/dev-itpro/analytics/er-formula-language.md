@@ -123,15 +123,15 @@ When an expression references a structured data source, you can use the path def
 
 When a path to a structured data source is started from the **@** symbol, it means that this path is relative. The **@** symbol is shown instead of the remaining part of the absolute path of using hierarchical tree structure. The picture below illustrates this. The absolute path `Ledger.'accountingCurrency()'` is used to indicate that the accounting currency value from the Ledger data source is populated to the **AccountingCurrency** field of the data model.
 
-[ER model mapping designer page](./media/ER-FormulaLanguage-AbsolutePath.png)
+![ER model mapping designer page](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 The sample of the relative path usage is presented on the pictures below. The relative path `@.AccountNum` is used to express that **AccountNum** field of the **Intrastat** data source (shown one level up from the **AccountNum** field in the data model hierarchical tree) is used to populate to the data model **AccountNum** field the customer or vendor account number.
 
-[ER model mapping designer page](./media/ER-FormulaLanguage-RelativePath1.png)
+![ER model mapping designer page](./media/ER-FormulaLanguage-RelativePath1.png)
 
 The remaining part of the absolute path is shown in the [ER formula editor](general-electronic-reporting-formula-designer.md) as well.
 
-[ER formula designer page](./media/ER-FormulaLanguage-RelativePath2.png)
+![ER formula designer page](./media/ER-FormulaLanguage-RelativePath2.png)
 
 ## <a name="Functions">Functions</a>
 
