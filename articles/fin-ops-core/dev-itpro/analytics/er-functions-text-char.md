@@ -1,0 +1,68 @@
+---
+# required metadata
+
+title: CHAR ER function
+description: This topic explains how the CHAR ER function is used
+author: NickSelin
+manager: kfend
+ms.date: 11/29/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-platform
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+# ROBOTS: 
+audience: Application User, IT Pro
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: nselin
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+
+---
+
+# <a name="CHAR">CHAR Function</a>
+
+[!include [banner](../includes/banner.md)]
+
+The `CHAR` function returns a *String* value as the set of characters that is referenced by the specified Unicode number.
+
+## Syntax
+
+```
+CHAR (number)
+```
+
+## Arguments
+
+`number` : *Integer*
+
+A number that is corresponded to an expected string of characters.
+
+## Returns
+
+*String*
+
+The result text value.
+
+## Usage notes
+
+> [!NOTE] The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For the list of supported encodings, see [Encoding
+class](https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx).
+
+## Example
+
+`CHAR (255)` returns **"ÿ"**.
+
+## Additional resources
+
+[Text functions](er-functions-category-text.md)
