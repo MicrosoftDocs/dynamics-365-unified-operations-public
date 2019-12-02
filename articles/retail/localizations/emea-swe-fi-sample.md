@@ -408,7 +408,7 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-5. Find and remove the legacy extension in the extension configuration file:
+5. Find and remove the legacy CRT extension in the extension configuration file:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
@@ -417,7 +417,7 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do not execute this step until you update all POS devices that work with this CRT instance. 
 
-6. Register the current CRT extensions in the extension configuration file by adding the following lines:
+6. Register the current sample CRT extensions in the extension configuration file by adding the following lines:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
@@ -443,7 +443,7 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-5. Find and remove the legacy extension in the extension configuration file:
+5. Find and remove the legacy Hardware station extension in the extension configuration file:
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -473,7 +473,7 @@ The migration process should consist of the following steps:
 #### Update Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-2. Disable the legacy extension by removing the following lines from **extensions.json**:
+2. Disable the legacy POS extension by removing the following lines from **extensions.json**:
 
     ``` json
     {
@@ -481,7 +481,7 @@ The migration process should consist of the following steps:
     }
     ```
 
-2. Enable the current sample extension by adding the following lines in **extensions.json**:
+2. Enable the current sample POS extension by adding the following lines in **extensions.json**:
 
     ``` json
     {
@@ -496,14 +496,14 @@ The migration process should consist of the following steps:
 #### Update Cloud POS
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-2. Disable the legacy extension by removing the following lines from **extensions.json**:
+2. Disable the legacy POS extension by removing the following lines from **extensions.json**:
     ``` json
     {
         "baseUrl": "FiscalRegisterSample"
     }
     ```
 
-2. Enable the current sample extension by adding the following lines in **extensions.json**:
+2. Enable the current sample POS extension by adding the following lines in **extensions.json**:
 
     ``` json
     {
@@ -519,7 +519,7 @@ The migration process should consist of the following steps:
 
 ### Update CRT
 
-1. Remove the legacy extension in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
+1. Remove the legacy CRT extension in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.FiscalRegisterReceiptSample" />
@@ -528,16 +528,16 @@ The migration process should consist of the following steps:
     > [!WARNING]
     > Do not execute this step until you update all POS devices that work with this CRT instance. 
 
-2. Enable the current sample extensions by making the following changes in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
+2. Enable the current sample CRT extensions by making the following changes in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
     ``` xml	
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
     ```
     
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file.
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-    - Add the following lines to include the CRT extensions in the deployable packages.
+    - Add the following lines to include the current sample CRT extension in deployable packages:
 
     ``` xml
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll" />
@@ -545,7 +545,7 @@ The migration process should consist of the following steps:
 
 ### Update Hardware station
 
-1. Remove the legacy extension by modifying the **HardwareStation.Extension.config** configuration file:
+1. Remove the legacy Hardware station extension by modifying the **HardwareStation.Extension.config** configuration file:
 
     # [Retail 7.3 and earlier](#tab/retail-7-3)
 
@@ -572,7 +572,7 @@ The migration process should consist of the following steps:
     ```
     ---
 
-2. Enable the current sample extension:
+2. Enable the current sample Hardware station extension:
 
      - In the **HardwareStation.Extension.config** configuration file, add the following line to the **composition** section.
 
@@ -581,15 +581,15 @@ The migration process should consist of the following steps:
         ```
 
 
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file.
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-    - Remove the following lines to exclude legacy Hardware station extension in the deployable packages.
+    - Remove the following lines to exclude the legacy Hardware station extension from deployable packages:
 
     ``` xml 
      <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
     ```
 
-    - Add the following line to include the Hardware station extension in the deployable packages.
+    - Add the following line to include the current sample Hardware station extension in deployable packages:
 
     ``` xml
     <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
@@ -599,7 +599,7 @@ The migration process should consist of the following steps:
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 
-2. Disable the legacy extension:
+2. Disable the legacy POS extension:
 
     - In the tsconfig.json file, add the FiscalRegisterSample folder to the exclude list.
     
@@ -611,7 +611,7 @@ The migration process should consist of the following steps:
       }
       ```
 
-3. Enable the current sample extension:
+3. Enable the current sample POS extension:
 
     - Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
       ``` json
@@ -628,7 +628,7 @@ The migration process should consist of the following steps:
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 
-2. Disable the legacy extension:
+2. Disable the legacy POS extension:
 
     - In the tsconfig.json file, add the FiscalRegisterSample folder to the exclude list.
 
@@ -640,7 +640,7 @@ The migration process should consist of the following steps:
       }
       ```
 
-4. Enable the current sample extension:
+4. Enable the current sample POS extension:
 
     - Open RetailSDK\POS\Extensions\extensions.json and add the following lines:
     
