@@ -38,7 +38,7 @@ This topic describes features that have been removed or deprecated for Microsoft
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-## October 2018 annoucements
+## October 2019 annoucements
 
 ### Flowchart diagrams in Business process modeler
 
