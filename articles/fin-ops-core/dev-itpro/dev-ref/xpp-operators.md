@@ -106,17 +106,17 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 |----------|----------|
 | `<<` | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.                  |
 | `>>` | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                      |
-| \*       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
-| /        | The **divide** operator divides *expression1* by *expression2*.                                                    |
-| DIV      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                  |
-| MOD      | The **integer remainder** operator returns the remainder of an integer division of *expression1* by *expression2*. |
-| ~        | The **not** operator, or unary operator, performs a binary not operation.                                          |
-| &        | The **binary AND** operator performs a binary and operation on *expression1* and *expression2*.                    |
-| ^        | The **binary XOR** operator performs a binary XOR-operation on *expression1* and *expression2*.                    |
-| `\|` &#124;        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                 |
-| +        | The **plus** operator adds *expression1* to *expression2*.                                                         |
-| -        | The **minus** operator subtracts *expression2* from *expression1*.                                                 |
-| ?        | The **ternary** operator takes three expressions: *expression1* ? *expression2* : *expression3*. If *expression1* is true, *expression2* is returned. Otherwise, *expression3* is returned. |
+| `\*`       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
+| `/`        | The **divide** operator divides *expression1* by *expression2*.                                                    |
+| `DIV`      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                  |
+| `MOD`      | The **integer remainder** operator returns the remainder of an integer division of *expression1* by *expression2*. |
+| `~`        | The **not** operator, or unary operator, performs a binary not operation.                                          |
+| `&`        | The **binary AND** operator performs a binary and operation on *expression1* and *expression2*.                    |
+| `^`        | The **binary XOR** operator performs a binary XOR-operation on *expression1* and *expression2*.                    |
+| `|` &#124;        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                 |
+| `+`        | The **plus** operator adds *expression1* to *expression2*.                                                         |
+| `-`        | The **minus** operator subtracts *expression2* from *expression1*.                                                 |
+| `?`        | The **ternary** operator takes three expressions: *expression1* ? *expression2* : *expression3*. If *expression1* is true, *expression2* is returned. Otherwise, *expression3* is returned. |
 
 ### Code examples for arithmetic operators
 
@@ -314,13 +314,13 @@ today() >= 1\1\1980  // Returns true, because today is later than January 1, 198
 The order that a compound expression is evaluated in can be important. For example, **(x + y / 100)** gives a different result, depending on whether the addition or the division is done first. You can use parentheses (**()**) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify **(x + y) / 100**. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression **x + y / 100**, the compiler evaluates **y / 100** first. In other words,` `**x + y / 100** is equivalent to **x + (y / 100)**. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
 
-| Operators, in order of precedence                                |                 Syntax                 |
-|------------------------------------------------------------------|----------------------------------------|
-| Unary                                                            | - ~ !                                  |
-| Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `\* / % DIV &lt;&lt; &gt;&gt; & ^ `    |
-| Additive, bitwise inclusive **OR**                               | + –                                    |
-| Relational, equality                                             | &lt; &lt;= == != &gt; &gt;= like as is |
-| Logical (**AND**, **OR**)                                        | && &#124;&#124;                        |
-| Conditional                                                      | ? :                                    |
+| Operator groups, in order of precedence                          |                 Operators    |
+|------------------------------------------------------------------|------------------------------|
+| Unary                                                            | `- ~ !`                      |
+| Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `* / % DIV << >> & ^ `       |
+| Additive, bitwise inclusive **OR**                               | `+ –`                        |
+| Relational, equality                                             | `< <= == != > >= like as is` |
+| Logical (**AND**, **OR**)                                        | `&& ||`                      |
+| Conditional                                                      | `? :`                        |
 
 Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore, `0&&0 || 1 == 1`, and `1||0&&0 == 0`.
