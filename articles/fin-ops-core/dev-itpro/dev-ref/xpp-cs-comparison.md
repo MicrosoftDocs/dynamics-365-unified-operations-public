@@ -47,7 +47,7 @@ The following sections describe some basic similarities and differences between 
 ### Similarities
 
 The following X++ features are the same for C#:
--   Single line (`//`) and multi-line (/\* \*/) comments.
+-   Single line (`//`) and multi-line (`/\* \*/`) comments.
 -   `==` (equal) operator for determining whether two values are equal.
 -   `!=` (not equal to) operator for determining whether two values are not equivalent.
 -   `+` (plus sign) operator for string concatenation.
@@ -67,7 +67,7 @@ The following table lists X++ features that are different in C#.
 
 This section contains two simple code samples. One sample is written in X++, and the other is in C\#. Both samples achieve the same result. The following X++ features are demonstrated:
 -   `//` single line comment
--   /\* \*/ multi-line comment
+-   `/\*` `\*/` multi-line comment
 -   `if` statement
 -   `==` operator
 -   `!=` operator
@@ -233,8 +233,6 @@ The output in the X++ Print window is as follows:
 
 #### C# Sample of while
 
-C#
-
 ```csharp
 using System;
 public class Pgm_CSharp
@@ -260,7 +258,6 @@ public class Pgm_CSharp
     }
 }
 ```
-
  
 ##### Output
 
@@ -307,7 +304,6 @@ static void JobRs002a_LoopsWhileFor(Args _args)
     pause;
 }
 ```
-
  
 ##### Output
 
@@ -350,7 +346,6 @@ public class Pgm_CSharp
     }
 }
 ```
-
  
 ##### Output
 
@@ -389,8 +384,6 @@ The X++ switch example shows the following:
 -   case iTemp: and case (93-90): to show that **case** expressions are not limited to constants, as they are in C\#.
 -   `//break;` to show that `break;` statements are not required in X++, although they are almost always desirable.
 -   case 2, (93-90), 5: to show that multiple expressions can be listed on one **case** clause in X++.
-
-X++
 
 ```xpp
 static void GXppSwitchJob21(Args _args)  // X++ job in AOT &gt; Jobs.
@@ -472,7 +465,6 @@ iEnum is one of these values: 2,3,5: 3
 >>
 ***/
 ```
-
  
 ## X++, C# Comparison: String Case and Delimiters
 This section compares the treatment of strings with mixed casing in X++ and C\#. It also explains the string delimiters that are available in X++.
@@ -693,71 +685,86 @@ The following table compares methods on the X++ `List` class to the methods on `
 
 ### Example 1: Declaration of a List
 
-The following table displays code examples in X++ and C# that declare `List` collections.
+Following are code examples in X++ and C# that declare `List` collections.
 
-    // X++
-    List listStrings ,list2 ,listMerged;
-    ListIterator literator;
+```xpp
+// X++
+List listStrings ,list2 ,listMerged;
+ListIterator literator;
+```
 
-    // C#
-    using System;
-    using SysCollGen = System.Collections.Generic;
-    SysCollGen.List<string> listStrings ,list2 ,listMerged; SysCollGen.IEnumerator<string> literator;
+```csharp
+// C#
+using System;
+using SysCollGen = System.Collections.Generic;
+SysCollGen.List<string> listStrings ,list2 ,listMerged; SysCollGen.IEnumerator<string> literator;
+```
 
 ### Example 2: Construction of a List
 
-In both languages, the type of items that the collection stores must be specified at the time of construction. For class types, X++ can get no more specific than whether the type is a class (Types::Class). Code examples are in the following table.
+In both languages, the type of items that the collection stores must be specified at the time of construction. For class types, X++ can get no more specific than whether the type is a class (Types::Class). Following are code examples in X++ and C#.
 
-    // X++
-    listStrings = new List( Types::String );
+```xpp
+// X++
+listStrings = new List( Types::String );
+```
 
-    // C#
-    listStrings = new SysCollGen.List<string>;
+```csharp
+// C#
+listStrings = new SysCollGen.List<string>;
+```
 
 ### Example 3: Add Items to a List
 
-In both X++ and C#, the collection provides a method for appending an item to the end of the collection, and for inserting an item the start. In C# the collection provides a method for inserting at any point in the collection based on an index value. In X++ a collection iterator can insert an item at its current position. Code examples are in the following table.
+In both X++ and C#, the collection provides a method for appending an item to the end of the collection, and for inserting an item the start. In C# the collection provides a method for inserting at any point in the collection based on an index value. In X++ a collection iterator can insert an item at its current position. Following are code examples in X++ and C#.
 
-    // X++
-    listStrings.addEnd ("String\_BB."); 
-    listStrings.addStart ("String\_AA.");
-    // Iterator performs a midpoint insert at current position. 
-    listIterator.insert ("dog");
+```xpp
+// X++
+listStrings.addEnd ("String\_BB."); 
+listStrings.addStart ("String\_AA.");
+// Iterator performs a midpoint insert at current position. 
+listIterator.insert ("dog");
+```
 
-    // C#
-    listStrings.Add ("String\_BB."); 
-    listStrings.Insert (0 ,"String\_AA.");
-    // Index 7 determines the insertion point.
-    listStrings.Insert (7 ,"dog");
+```csharp
+// C#
+listStrings.Add ("String\_BB."); 
+listStrings.Insert (0 ,"String\_AA.");
+// Index 7 determines the insertion point.
+listStrings.Insert (7 ,"dog");
+```
 
 ### Example 4: Iterate Through a List
 
-Both X++ and C\# have iterator classes that you can use to step through the items in a collection. Code examples are in the following table.
+Both X++ and C\# have iterator classes that you can use to step through the items in a collection as shown in the following examples.
 
-    // X++
-    literator = new ListIterator (listStrings); 
-    // Now the iterator points at the first item.
+```xpp
+// X++
+literator = new ListIterator (listStrings); 
+// Now the iterator points at the first item.
 
-    // The more method answers whether 
-    // the iterator currently points 
-    // at an item. 
-    while (literator.more()) 
-    { 
-        info(any2str (literator.value())); 
-        literator.next(); 
-    }
+// The more method answers whether 
+// the iterator currently points 
+// at an item. 
+while (literator.more()) 
+{ 
+    info(any2str (literator.value())); 
+    literator.next(); 
+}
+```
 
-    // C#
-    literator = listStrings .GetEnumerator(); 
-    // Now enumerator points before the first item, not at the first item.
+```csharp
+// C#
+literator = listStrings .GetEnumerator(); 
+// Now enumerator points before the first item, not at the first item.
 
-    // The MoveNext method both advances the item pointer, and 
-    // answers whether the pointer is pointing at an item. 
-    while (literator.MoveNext()) 
-    { 
-        Console.WriteLine (literator.Current); 
-    }
-
+// The MoveNext method both advances the item pointer, and 
+// answers whether the pointer is pointing at an item. 
+while (literator.MoveNext()) 
+{ 
+    Console.WriteLine (literator.Current); 
+}
+```
 
 ### Example 4b: foreach in C\#
 
@@ -772,27 +779,35 @@ foreach (string currentString in listStrings)
 
 ###  Example 5: Delete the Second Item
 
-The following table contains code examples that delete the second item from the collection. In X++ this requires an iterator. In C\# the collection itself provides the method for removing an item.
+The following code examples delete the second item from the collection. In X++ this requires an iterator. In C\# the collection itself provides the method for removing an item.
 
-    // X++
-    literator.begin(); 
-    literator.next(); 
-    literator.delete();
+```xpp
+// X++
+literator.begin(); 
+literator.next(); 
+literator.delete();
+```
 
-    // C#
-    listStrings.RemoveAt(1);
+```csharp
+// C#
+listStrings.RemoveAt(1);
+```
 
 ###  Example 6: Combine Two Collections
 
-The following table contains code examples that combine the contents of two collections into one.
+The following code examples combine the contents of two collections into one.
 
-    // X++
-    listStrings = List::merge(listStrings ,listStr3);
-    // Or use the .appendList method:
-    listStrings.appendList (listStr3);
+```xpp
+// X++
+listStrings = List::merge(listStrings ,listStr3);
+// Or use the .appendList method:
+listStrings.appendList (listStr3);
+```
 
-    // C#
-    listStrings.InsertRange(listStrings.Count ,listStr3);
+```csharp
+// C#
+listStrings.InsertRange(listStrings.Count ,listStr3);
+```
 
 ## Comparison: Collections of keys with values
 
@@ -817,96 +832,119 @@ The following table describes differences between X++ and C\# regarding their co
 
 ### Example 1: Declaration of a Key-Value Collection
 
-In both languages, the type of items that the key-value collection stores must be specified. In X++ the type is specified at time of construction. In C\# the type is specified at both the time of declaration and the time of construction. Code examples are in the following table.
+In both languages, the type of items that the key-value collection stores must be specified. In X++ the type is specified at time of construction. In C\# the type is specified at both the time of declaration and the time of construction. Following are code examples in X++ and C#.
 
-    // X++
-    Map mapKeyValue;
-    MapEnumerator enumer;
-    MapIterator mapIter;
+```xpp
+// X++
+Map mapKeyValue;
+MapEnumerator enumer;
+MapIterator mapIter;
+```
 
-    // C#
-    SysCollGen.Dictionary<int,string> dictKeyValue;
-    SysCollGen.IEnumerator<SysCollGen.KeyValuePair<int,string>> enumer;
-    SysCollGen.KeyValuePair<int,string> kvpCurrentKeyValuePair;
+```csharp
+// C#
+SysCollGen.Dictionary<int,string> dictKeyValue;
+SysCollGen.IEnumerator<SysCollGen.KeyValuePair<int,string>> enumer;
+SysCollGen.KeyValuePair<int,string> kvpCurrentKeyValuePair;
+```
 
 ### Example 2: Construction of the Collection
 
-In both languages, the type of items that the key-value collection stores specified during construction. For class types, X++ can get no more specific than whether the type is a class (Types::Class). Code examples are in the following table.
+In both languages, the type of items that the key-value collection stores specified during construction. For class types, X++ can get no more specific than whether the type is a class (Types::Class). Following are code examples in X++ and C#.
 
-    // X++
-    mapKeyValue = new Map(Types::Integer, Types::String);
+```xpp
+// X++
+mapKeyValue = new Map(Types::Integer, Types::String);
+```
 
-    // C#
-    dictKeyValue = new SysCollGen.Dictionary<int,string>();
+```csharp
+// C#
+dictKeyValue = new SysCollGen.Dictionary<int,string>();
+```
 
 ### Example 3: Add an Item to the Collection
 
-There is almost no difference in how an item is added to a key-value collection, in X++ and C\#. Code examples are in the following table.
+There is almost no difference in how an item is added to a key-value collection in X++ and C\# as shown in the following code examples.
 
-    // X++
-    mapKeyValue.insert(xx ,int2str(xx) + “_Value”);
+```xpp
+// X++
+mapKeyValue.insert(xx ,int2str(xx) + “_Value”);
+```
 
-    // C#
-    dictKeyValue.Add(xx ,xx.ToString() + “_Value”);
+```csharp
+// C#
+dictKeyValue.Add(xx ,xx.ToString() + “_Value”);
+```
 
 ### Example 4: Iterate Through a Key-Value Collection
 
-Enumerators are used to loop through the key-value collections in both X++ and C\#. Code examples are in the following table.
+Enumerators are used to loop through the key-value collections in both X++ and C\# as shown in the following code examples.
 
-    // X++ 
-    enumer = mapKeyValue.getEnumerator();
-    while (enumer.moveNext())
-    {
-        iCurrentKey = enumer.currentKey();
-        sCurrentValue = enumer.currentValue();
-        // Display key and value here.
-    }
+```
+// X++ 
+enumer = mapKeyValue.getEnumerator();
+while (enumer.moveNext())
+{
+    iCurrentKey = enumer.currentKey();
+    sCurrentValue = enumer.currentValue();
+    // Display key and value here.
+}
+```
 
-    // C#
-    enumer = dictKeyValue.GetEnumerator();
-    while (enumer.MoveNext())
-    {
-        kvpCurrentKeyValuePair = enumer.Current;
-        // Display .Key and .Value properties=
-        // of kvpCurrentKeyValuePair here.
-    }
+```csharp
+// C#
+enumer = dictKeyValue.GetEnumerator();
+while (enumer.MoveNext())
+{
+    kvpCurrentKeyValuePair = enumer.Current;
+    // Display .Key and .Value properties=
+    // of kvpCurrentKeyValuePair here.
+}
+```
 
 ### Example 5: Update the Value Associated with a Key
 
-The syntax is very different between the two languages for an update of the value associated to a given key. Code examples for the key 102 are in the following table.
+The syntax is very different between the two languages for an update of the value associated to a given key. Following are code examples for the key 102.
 
-    // X++
-    mapKeyValue.insert(
-        102 ,
-        ”.insert(), Re-inserted” + ” key 102 with a different value.”);
+```xpp
+// X++
+mapKeyValue.insert(
+    102 ,
+    ”.insert(), Re-inserted” + ” key 102 with a different value.”);
+```
 
-    // C#
-    dictKeyValue[102] = 
-        “The semi-hidden .item property” 
-        + ” in C#, Updated the value for key 102.”;
+```csharp
+// C#
+dictKeyValue[102] = 
+    “The semi-hidden .item property” 
+    + ” in C#, Updated the value for key 102.”;
+```
 
 ### Example 6: Delete One Item
 
 The syntax is very different between the two languages to delete one key-value pair from a collection, while iterating through the collection members. Code examples for the key 102 are shown below.
 
-    // X++
-    mapIter = new MapIterator(mapKeyValue);
-    //mapIter.begin();
-    while (mapIter.more())
+```xpp
+// X++
+mapIter = new MapIterator(mapKeyValue);
+//mapIter.begin();
+while (mapIter.more())
+{
+    iCurrentKey = mapIter.key();
+    if (104 == iCurrentKey)
     {
-        iCurrentKey = mapIter.key();
-        if (104 == iCurrentKey)
-        {
-            // mapKeyValue.remove would invalidate the iterator.
-            mapIter.delete();
-            break;
-        }
-        mapIter.next();
+        // mapKeyValue.remove would invalidate the iterator.
+        mapIter.delete();
+        break;
     }
+    mapIter.next();
+}
+```
 
-    // C#
-    dictKeyValue.Remove(104);
-
+```csharp
+// C#
+dictKeyValue.Remove(104);
+```
 
 ## Comparison: Exceptions
 There are some similarities but many differences when we compare exception related behavior between X++ and C\#. The **try**, **catch**, and **throw** keywords behave the same in X++ and C#. But the types of exceptions thrown and caught are different for the two languages.
