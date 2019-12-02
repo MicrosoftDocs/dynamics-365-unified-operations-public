@@ -315,9 +315,9 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
         ---
 
-3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file.
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file:
 
-   - Add the following line to include Hardware station extension in the deployable packages:
+   - Add the following line to include the Hardware station extension in deployable packages:
         ``` xml
         <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll"/>
         ```
