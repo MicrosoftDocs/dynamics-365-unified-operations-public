@@ -21,7 +21,6 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 150373
-ms.assetid: f06da12e-911c-442c-97fd-280cbc970061
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
@@ -102,10 +101,10 @@ static void Example5()
 ## Arithmetic operators
 You use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (**~**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
 
-| Operator | Description      |
-|----------|----------|
-| `<<` | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.                  |
-| `>>` | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                      |
+| Operator   | Description      |
+|------------|------------------|
+| `<<`       | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.              |
+| `>>`       | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                  |
 | `\*`       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
 | `/`        | The **divide** operator divides *expression1* by *expression2*.                                                    |
 | `DIV`      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                  |
@@ -113,7 +112,7 @@ You use arithmetic operators to perform numeric calculations. Most of the operat
 | `~`        | The **not** operator, or unary operator, performs a binary not operation.                                          |
 | `&`        | The **binary AND** operator performs a binary and operation on *expression1* and *expression2*.                    |
 | `^`        | The **binary XOR** operator performs a binary XOR-operation on *expression1* and *expression2*.                    |
-| `|` &#124;        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                 |
+| `|`        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                      |
 | `+`        | The **plus** operator adds *expression1* to *expression2*.                                                         |
 | `-`        | The **minus** operator subtracts *expression2* from *expression1*.                                                 |
 | `?`        | The **ternary** operator takes three expressions: *expression1* ? *expression2* : *expression3*. If *expression1* is true, *expression2* is returned. Otherwise, *expression3* is returned. |
@@ -137,19 +136,19 @@ int m = (400 > 4) ? 1 : 5;  // If 400>4, 1 is returned. Otherwise, 5 is returned
 ```
 
 ## Expression operators
-The **as** and **is** expression operators control downcast assignments. Downcast assignments involve class or table inheritance. Assignment statements that implicitly downcast can cause errors that are difficult to predict and diagnose. You can use the **as** keyword to make your downcasts explicit. You can use the **is** keyword to test whether a downcast is valid at run time.
+The `as` and `is` expression operators control downcast assignments. Downcast assignments involve class or table inheritance. Assignment statements that implicitly downcast can cause errors that are difficult to predict and diagnose. You can use the `as` keyword to make your downcasts explicit. You can use the `is` keyword to test whether a downcast is valid at run time.
 
 ### The as keyword
 
-Use the **as** keyword for assignments that downcast from a base class variable to a derived class variable. The **as** keyword tells other programmers and the compiler that you believe that the downcast will be valid during run time.
+Use the `as` keyword for assignments that downcast from a base class variable to a derived class variable. The `as` keyword tells other programmers and the compiler that you believe that the downcast will be valid during run time.
 
--   The compiler reports an error for downcast assignment statements that lack the **as** keyword.
--   At run time, the **as** keyword causes the downcast assignment statement to assign **null** if the downcast isn't valid.
--   This **is** keyword is often used to safely test whether the **as** keyword will work.
+-   The compiler reports an error for downcast assignment statements that lack the `as` keyword.
+-   At run time, the `as` keyword causes the downcast assignment statement to assign `null` if the downcast isn't valid.
+-   This `is` keyword is often used to safely test whether the `as` keyword will work.
 
 #### Code example for the as keyword
 
-In the following code example, the **DerivedClass** class extends the **BaseClass** class. The code example contains two valid assignments between its **basec** and **derivedc** variables. The upcast assignment to **basec** doesn't require the **as** keyword, but the downcast assignment to **derivedc** does require the **as** keyword. The following code will compile and run without errors.
+In the following code example, the **DerivedClass** class extends the **BaseClass** class. The code example contains two valid assignments between its **basec** and **derivedc** variables. The upcast assignment to **basec** doesn't require the `as` keyword, but the downcast assignment to **derivedc** does require the `as` keyword. The following code will compile and run without errors.
 
 ```xpp
 static void AsKeywordExample()
@@ -172,11 +171,11 @@ static void AsKeywordExample()
 
 ### The is keyword
 
-The **is** keyword verifies whether an object is a subtype of a specified class. The **is** expression returns **true** if the object is a subtype of the class, or if the object is the same type as the class. The compiler reports an error if an **is** keyword expression compares two types, but neither type is a subtype of the other, and they aren't of the same type. The compiler reports a similar error for any plain assignment statement between two types, where neither type is a subtype of the other, and they aren't of the same type. At run time, the type of variable that references the underlying object is irrelevant to the **is** keyword. The **is** keyword causes the system to verify the object that the variable references, not the declared type of the variable that references the object.
+The `is` keyword verifies whether an object is a subtype of a specified class. The `is` expression returns **true** if the object is a subtype of the class, or if the object is the same type as the class. The compiler reports an error if an `is` keyword expression compares two types, but neither type is a subtype of the other, and they aren't of the same type. The compiler reports a similar error for any plain assignment statement between two types, where neither type is a subtype of the other, and they aren't of the same type. At run time, the type of variable that references the underlying object is irrelevant to the `is` keyword. The `is` keyword causes the system to verify the object that the variable references, not the declared type of the variable that references the object.
 
 #### Code examples for the is keyword
 
-The following code examples illustrate the conditions that control whether an **is** expression returns **true** or **false**. The code examples depend on the fact that the **Form** class and the **Query** class both extend the **TreeNode** class.
+The following code examples illustrate the conditions that control whether an `is` expression returns **true** or **false**. The code examples depend on the fact that the **Form** class and the **Query** class both extend the **TreeNode** class.
 
 ```xpp
 // The compiler issues an error for the following code. 
@@ -217,7 +216,7 @@ info(strFmt("%1", (myTreeNode is Form)));
 
 #### Code example for the is and as keywords
 
-The following code example contains a typical use of the **is** keyword. The **as** keyword is used after the **is** keyword verifies that the **as** keyword will succeed. In this example, the **is** and **as** keywords are uppercase to make them more visible.
+The following code example contains a typical use of the `is` keyword. The `as` keyword is used after the `is` keyword verifies that the `as` keyword will succeed. In this example, the **is** and `as` keywords are uppercase to make them more visible.
 
 ```xpp
 static void IsKeywordExample() 
@@ -260,11 +259,11 @@ static void ObjectExample()
 
 ### Tables
 
-All tables inherit directly from the Common system table, unless they explicitly inherit from a different table. The Common table can't be instantiated. It doesn't exist in the underlying physical database. The Common table inherits from the **xRecord** class, but in a special way that isn't appropriate for the **is** keyword or the **as** keyword. When the **as** keyword is used to perform an invalid downcast among tables, the target variable references an unusable non-null entity. Any attempt to de-reference the target variable will cause an error that stops the program.
+All tables inherit directly from the Common system table, unless they explicitly inherit from a different table. The Common table can't be instantiated. It doesn't exist in the underlying physical database. The Common table inherits from the **xRecord** class, but in a special way that isn't appropriate for the `is` keyword or the `as` keyword. When the `as` keyword is used to perform an invalid downcast among tables, the target variable references an unusable non-null entity. Any attempt to de-reference the target variable will cause an error that stops the program.
 
 ### The is and as keywords and extended data types
 
-Each extended data type has an **Extends** property. The style of inheritance that this property controls differs from the style of inheritance that the **is** and **as** keywords are designed for.
+Each extended data type has an **Extends** property. The style of inheritance that this property controls differs from the style of inheritance that the **is** and `as` keywords are designed for.
 
 ## Relational operators
 The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (**!**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
@@ -293,7 +292,7 @@ where xRefPaths.Path like "\\\\Classes\\\\AddressSelectForm"
 
 ### The equal (==) operator
 
-When you use the **equal** (**==**) operator to compare objects, the object references are compared, not the objects themselves. This behavior might cause issues if you compare two objects, one of which is located on the server, and the other of which is located on the client. In these cases, you should use the **equal** method in the **Object** class. You can override this method to specify what it means for two objects to be equal. If you don't override the **equal** method, the comparison is identical to the comparison that is done by the **equal** (**==**) operator.
+When you use the **equal** (`==`) operator to compare objects, the object references are compared, not the objects themselves. This behavior might cause issues if you compare two objects, one of which is located on the server, and the other of which is located on the client. In these cases, you should use the **equal** method in the **Object** class. You can override this method to specify what it means for two objects to be equal. If you don't override the **equal** method, the comparison is identical to the comparison that is done by the **equal** (`==`) operator.
 
 ### Code examples for relational operators
 
@@ -311,7 +310,7 @@ today() >= 1\1\1980  // Returns true, because today is later than January 1, 198
 ```
 
 ## Operator precedence
-The order that a compound expression is evaluated in can be important. For example, **(x + y / 100)** gives a different result, depending on whether the addition or the division is done first. You can use parentheses (**()**) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify **(x + y) / 100**. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression **x + y / 100**, the compiler evaluates **y / 100** first. In other words,` `**x + y / 100** is equivalent to **x + (y / 100)**. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
+The order that a compound expression is evaluated in can be important. For example, `(x + y / 100)` gives a different result, depending on whether the addition or the division is done first. You can use parentheses (`()`) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify `(x + y) / 100`. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression `x + y / 100`, the compiler evaluates `y / 100` first. In other words,` `**x + y / 100** is equivalent to `x + (y / 100)`. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
 
 | Operator groups, in order of precedence                          |                 Operators    |
