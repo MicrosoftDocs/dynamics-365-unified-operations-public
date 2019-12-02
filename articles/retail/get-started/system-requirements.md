@@ -5,7 +5,7 @@ title: System requirements for cloud deployments
 description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Retail.
 author: jashanno 
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail 
