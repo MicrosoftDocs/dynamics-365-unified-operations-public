@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to set up current and future benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits. Examples of benefits include medical insurance, retirement investments, workers' compensation plans, and parking benefits.
 
-Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit.
+Garnishments and tax levies are also set up as benefits, but the steps for setting them up differ. For more information, see [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md). After you set up benefit elements by using the **Benefit elements** page, you must create the benefits so that they can be assigned to workers. When you create a benefit, you link an option to a benefit plan, designate a benefit period, and assign eligibility rules to the benefit.
 
 ## Setting up benefit elements
 
@@ -358,12 +358,12 @@ On the **Worker's compensation** FastTab, specify the state that each benefit ap
 
 ## Next step
 
-The next step is to set up payroll information for positions and workers. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
+The next step is to set up payroll information for positions and workers. For more information, see [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md).
 
 ## Additional resources
 
-[Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
+[Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
 
-[Payroll calculation frequency tasks](noam-usa-payroll-calculation-frequencies-tasks.md)
+[Set up payroll calculation frequencies](noam-usa-payroll-calculation-frequencies-tasks.md)
 
-[Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+[Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)

@@ -52,11 +52,11 @@ Two patterns are described in this document. The only difference between these p
 -   **Custom and Quick Filters** – In this subpattern, the QuickFilter control is mandatory.
 
 ## Wireframes
-### Custom Filters[![CustomFilterGroup(1)](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
+### Custom Filters[Custom Filters](./media/customfiltergroup1.png)](./media/customfiltergroup1.png)
 
 ### Custom and Quick Filters
 
-![CustomFilterGroup(2)](./media/customfiltergroup2.png)
+![Custom and Quick Filters](./media/customfiltergroup2.png)
 
 ## Model
 ### Custom Filters – High-level structure
@@ -113,13 +113,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **LedgerJournalTable (TopFields)** 
 
-![CustomFilterGroup(3)](./media/customfiltergroup3.png)
+![Custom Filters](./media/customfiltergroup3.png)
 
 ### Custom and Quick Filters
 
 Form: **CustTable** **(CustomFilterGroup)** 
 
-[![CustomFilterGroup(4)](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
+[![Custom and Quick Filters](./media/customfiltergroup4.png)](./media/customfiltergroup4.png)
 
 ## Resources
 ### Typically used by form patterns
@@ -157,4 +157,4 @@ This section will have answers to frequently asked questions that are related to
 
 #### AX 2012 example
 
-[![CustomFilterGroup(5)](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)
+[![Example](./media/customfiltergroup5.png)](./media/customfiltergroup5.png)

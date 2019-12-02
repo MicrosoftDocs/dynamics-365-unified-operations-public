@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
 ---
 
-# Edit onboarding guides and templates
+# Edit onboarding guides and templates in Dynamics 365 Talent - Onboard
 
 [!include [banner](includes/banner.md)]
 
@@ -130,7 +130,7 @@ To push your changes:
 
     - To add a YouTube video, drag the **YouTube** item to the editing area, enter a name and description for the activity, and enter the URL for the YouTube video.
     - To add a Sway presentation or newsletter, drag the **Sway** item to the editing area, enter a name and description for the activity, and enter the embedded URL for the Sway presentation or newsletter.
-    - To add a PowerApps app, drag the **PowerApps** item to the editing area, enter a name and description for the activity, and either select the PowerApps app or enter the PowerApps app ID.
+    - To add a Microsoft Power Apps app, drag the **Power Apps** item to the editing area, enter a name and description for the activity, and either select the Power Apps app or enter the Power Apps app ID.
     - To add a Microsoft Stream video, drag the **Microsoft Stream** item to the editing area, enter a name and description for the activity, and enter the URL for the Microsoft Stream video.
     - To add a Microsoft Forms form, drag the **Microsoft Forms** item to the editing area, enter a name and description for the activity, enter the URL for the Microsoft Forms form, and specify the size of the screen area.
     - To add an iframe that contains web content, drag the **Web Content (iframe)** item to the editing area, enter a name and description for the activity, enter the URL for the web content, and specify the size of the screen area.
@@ -192,6 +192,6 @@ To edit a contact, select the **Edit** button (the pencil symbol) to the right o
 ### See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

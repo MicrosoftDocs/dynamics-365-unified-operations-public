@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure Dynamics 365 Supply Chain Management - Warehousing app for on-premises deployments.
+This topic describes how to configure Dynamics 365 for Finance and Operations – Warehousing app for on-premises deployments.
 
 ## Prerequisites
 The Warehousing app is available on Android and Windows operating systems. To use the app for on-premises deployments, at a minimum, it must be version 1.1.1.0. You must also have one of the following supported versions of Dynamics 365 Finance + Operations (on-premises). Use the information in the following table to evaluate if your hardware and software environment supports the configuration.

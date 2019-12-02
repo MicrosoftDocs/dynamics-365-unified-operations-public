@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -104,7 +104,7 @@ However, this functionality requires the class being augmented to be compiled on
 
 ## OData batch request size configuration
 
-The default OData batch request size is 1,000 records. Microsoft can now change the size of OData batch requests for customers. Customers must log a support request through LCS to the Dynamics Service Engineering team (DSE) to increase the batch size up to a maximum value of 5,000 records. For more information, see [Submit a request to the DSE team](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)
+The default OData batch request size is 1,000 records. Microsoft can now change the size of OData batch requests for customers. Customers must log a support request through LCS to the Dynamics Service Engineering team (DSE) to increase the batch size up to a maximum value of 5,000 records. For more information, see [Submit service requests to the Dynamics Service Engineering team](../../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)
 
 ## System startup performance for virtual machines
 

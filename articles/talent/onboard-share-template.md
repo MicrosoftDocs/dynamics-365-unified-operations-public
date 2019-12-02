@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Share content with other contributors
+# Share content with other contributors in Dynamics 365 Talent - Onboard
 
 [!include [banner](includes/banner.md)]
 
@@ -59,7 +59,7 @@ Microsoft Dynamics 365 Talent: Onboard lets you share onboarding guides and temp
 
 3. Under **Recipient**, if recipients should be able to revise the template, set the **Can these people make edits?** option to **On**. If recipients should be notified by email that you've shared the template with them, set the **Send email notification to recipients** option to **On**.
 
-    [!Setting access and email preferences for a template](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Setting access and email preferences for a template](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Enter a name or email address, and select the desired recipient in the drop-down list.
 5. On the **Manage access** tab, you can review or change what recipients can do with the template. To change a recipient's access, in the drop-down list next to the recipient's name, select **Can View**, **Can edit**, or **Remove**, as appropriate.
@@ -74,6 +74,6 @@ Microsoft Dynamics 365 Talent: Onboard lets you share onboarding guides and temp
 ### See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

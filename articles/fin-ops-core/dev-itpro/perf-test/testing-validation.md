@@ -57,9 +57,6 @@ You can create new test cases to test the functionality in an application.
 1.  In **Solution Explorer**, right-click the **Fleet Management** solution, point to **Add**, and then click **New Project**.
 1.  Choose **Finance and Operations** as the project type to create.
 1.  Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then click **OK**. 
-
-    [![FleetManagementUnitTestSampe](./media/55.png)](./media/55.png)
-
 1.  In **Solution Explorer**, right-click the new project, and then click **Properties**.
 1.  Set the **Model** property to **FleetManagementUnitTests**, and then click **OK**. 
 
@@ -126,9 +123,6 @@ You can create new test cases to test the functionality in an application.
 
 1. Save the new class. After the save is complete, you will see the additional two test cases in **Test Explorer**. Right-click on the FleetManagementUnitTestSample project in **Solution Explorer**, and then click **Build.**
 1.  On the **View** menu, open **Test Explorer**. 
-
-    [![Test explorer](./media/58-1024x545.png)](./media/58.png)
-
 1. Click **Run selected test** to execute specific test case.
 1. Test Explorer will show the results of test after it is complete. 
 
@@ -139,12 +133,8 @@ Creating a test specific module helps to keep test code together and manageable.
 
 1. Open **Visual Studio** and go to **Finance and Operations** > **Model Management** > **Create model**.
 
-    [![Create model](./media/60-1024x574.png)](./media/60.png)
-
-2. Enter the model name, select the layer, and then enter any additional details. <strong>Note: **It's a good idea that you include the word **Test</strong> in the name of the test module. The default build definition is configured to discover all test modules that contain the word <strong>Test</strong>. 
-
-    [![Model name](./media/61-1024x775.png)](./media/61.png)
-
+2. Enter the model name, select the layer, and then enter any additional details. Note that it's a good idea to include the word **Test** in the name of the test module. The default build definition is configured to discover all test modules that contain the word **Test**. 
+   
 3. Because this model holds forms from the Application Platform/Foundation, add references to models shown below.
 
     [![Model references](./media/62-1024x786.png)](./media/62.png)
@@ -155,26 +145,20 @@ After the base test module is in place, you can import a Task Recorder recording
 You can generate test code from Task Recorder recording to execute headless (non-UI) test.
 
 1. Record a scenario in by using Task Recorder.
-2. To import a Task Recording, in Visual Studio, click **Finance and Operations** > **Addins** > **Import Task Recording**. 
 
-    [![Import task recording](./media/63-1024x613.png)](./media/63.png)
+2. To import a Task Recording, in Visual Studio, click **Finance and Operations** > **Addins** > **Import Task Recording**. 
 
 3. In the **Import Task Recording** dialog, select the Test Module (ISVTestModule) under which you want to import task recording, and browse to recording xml file. 
 
     [![Test module](./media/64-249x300.png)](./media/64.png)
 
 4. The task recording import process generates test code that is based on the SysTestAdapter and FormAdaptor which can be viewed in Visual Studio IDE. We do not expect you to change any test source code that is generated as part of this step.
-
-    [![Generate test code](./media/65-1024x655.png)](./media/65.png)    
-
+  
 5. After the test code is generated, set up Visual Studio options for test discovery and execution:
    - If you have a 64-bit machine, you can run unit tests and capture code coverage information as a 64-bit process.
    - To configure this, select **Test** &gt; **Test Settings** &gt; **Default Processor Architecture**, and then select **X64**.
    - You might run into a situation in which the test execution engine opens and locks an assembly in your test project. When this happens, you can’t for example, save changes to the assembly. To fix this, select **Test** &gt; **Test Settings**, and then select **Keep Test Execution Engine Running**. 
-
-     [![Keep execution engine running](./media/66.png)](./media/66.png)
-
-   - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
+    - Now that you have test code generated in Visual Studio IDE, it's time to discover the test and try executing them locally.
 
 6. From menu options, select **Test** &gt; **Windows**, and then click **Test Explorer**. After the Test Explorer window is open, it will try to discover test from test code and list all the available tests as shown below.
 

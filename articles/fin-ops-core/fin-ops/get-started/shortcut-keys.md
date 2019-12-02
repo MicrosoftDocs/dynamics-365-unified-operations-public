@@ -5,7 +5,7 @@ title: Keyboard shortcuts
 description: The following keyboard shortcuts can help you quickly and efficiently enter data. 
 author: jasongre
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -244,5 +244,5 @@ As of Platform update 11, users can discover currently available shortcuts direc
 | Move to the top/bottom of the lookup                                                                                    | Home / End                       |
 ## Additional resources
 
-- [Keyboard shortcuts in Report Designer](../../financials/general-ledger/financial-reporting-keyboard-shortcuts.md)
+- [Keyboard shortcuts for missing account analysis](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

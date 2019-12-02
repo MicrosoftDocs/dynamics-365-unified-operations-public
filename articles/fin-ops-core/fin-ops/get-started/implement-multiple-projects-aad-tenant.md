@@ -67,7 +67,7 @@ There are also advantages to having multiple LCS projects. Here are some of them
 
 ## Requesting multiple LCS projects on the same Azure AD tenant
 
-If your solution requires multiple LCS projects on the same Azure AD tenant, all LCS projects except the original project must be provisioned on demand by the DSE team. You should inform the DSE team about this requirement as early as possible, ideally when the project is being onboarded. For more information, see [Onboard a project](../imp-lifecycle/onboard.md). To request additional LCS Implementation projects, the customer must create a support request by using the Support portal in LCS. In this request, the customer must provide the following information:
+If your solution requires multiple LCS projects on the same Azure AD tenant, all LCS projects except the original project must be provisioned on demand by the DSE team. You should inform the DSE team about this requirement as early as possible, ideally when the project is being onboarded. For more information, see [Onboard an implementation project](../imp-lifecycle/onboard.md). To request additional LCS Implementation projects, the customer must create a support request by using the Support portal in LCS. In this request, the customer must provide the following information:
 
 - The business justification.
 - The enterprise and project structure. This information includes the following details:
@@ -76,3 +76,8 @@ If your solution requires multiple LCS projects on the same Azure AD tenant, all
     - The breakdown of licenses per LCS project
 
 - Confirmation that the customer understands the implications of multiple LCS projects on the same Azure AD tenant.
+
+## Online deployments in China sovereign cloud
+If your implementation includes China deployment/rollout, be informed that Dynamics 365 Finance online deployment became available in Mainland China starting in April 2019. For more information, see [Finance and Operations apps - operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md). This deployment is designed to comply with regulatory requirements in China and the services  include a physically separated instance of a cloud service with a different tenant (Azure Active Directory) that is operated and transacted by 21Vianet. 
+
+This is a single organization in multiple clouds with different tenant (Azure Active Directory). The advantages and disadvantages of multi-Lifecycle Services projects or production environments described above are still applicable, but the licensing requirement and requesting procedure are different. Work with your Microsoft Account Executive or your implementation partners for any process assistance.

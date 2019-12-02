@@ -5,7 +5,7 @@ title: Security architecture
 description: This topic provides an overview of the security architecture of Finance and Operations.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 08/30/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,13 +32,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security architecture
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides an overview of the security architecture of Finance and Operations.
 
 When you understand the security architecture, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
-[![security-architecture](./media/security-architecture.png)](./media/security-architecture.png)
+[![Diagram showing overview of security architecture](./media/security-architecture.png)](./media/security-architecture.png)
 
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 

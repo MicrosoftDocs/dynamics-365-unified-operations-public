@@ -60,7 +60,7 @@ The **Baseline forecast start date** - **From date** field has to be set to the 
 
 The **Baseline forecast start date** - **From date** field can be set to a date in in the past. In other words, it is possible to generate a demand forecast in the past. This is useful, because it lets users adjust the forecast service parameters so that the statistical forecast generated in the past matches the actual historical demand. Users can then continue using these parameter settings to generate a statistical baseline forecast for the future. 
 
-Manual adjustments made in previous demand forecasting iterations can be automatically applied to the new baseline forecast if the **Transfer manual adjustments to the demand forecas**t check box is selected. If the check box is cleared, the manual adjustments are not added to the baseline forecast – but they are not deleted. Manual adjustments made to a forecast can be deleted only at forecast import time, by clearing the **Save the manual adjustments made to the baseline demand forecast** check box. Manual adjustments are saved at authorization time. Therefore, if a user makes manual adjustments to the forecast, but doesn’t authorize the forecast back to Supply Chain Management, the changes are lost. For more information about manual adjustments and how they work, see [Authorizing the adjusted forecast](authorize-adjusted-forecast.md). 
+Manual adjustments made in previous demand forecasting iterations can be automatically applied to the new baseline forecast if the **Transfer manual adjustments to the demand forecas**t check box is selected. If the check box is cleared, the manual adjustments are not added to the baseline forecast – but they are not deleted. Manual adjustments made to a forecast can be deleted only at forecast import time, by clearing the **Save the manual adjustments made to the baseline demand forecast** check box. Manual adjustments are saved at authorization time. Therefore, if a user makes manual adjustments to the forecast, but doesn’t authorize the forecast back to Supply Chain Management, the changes are lost. For more information about manual adjustments and how they work, see [Authorize an adjusted forecast](authorize-adjusted-forecast.md). 
 
 A demand forecast generation can have a name and comments to help users identify the forecast that has been generated. These values are visible in forecast generation history on the **Statistical baseline forecast generation history** page. 
 
@@ -79,6 +79,6 @@ Additional resources
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
 
-- [Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+- [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
-- [Authorizing the adjusted forecast](authorize-adjusted-forecast.md)
+- [Authorize an adjusted forecast](authorize-adjusted-forecast.md)

@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -97,3 +97,25 @@ The previously opened window should gain focus. The application isn't actually r
 - If the debugger doesn't stop at the breakpoint that you set, it's usually a good idea to restart the server. In this way, you help guarantee that you have a clean build, because the Hot Module Replacement (HMR) functionality doesn't always achieve the best results.
 - Sometimes, the transpiled code (TypeScript to JavaScript) makes debugging more challenging, and you must review the raw JavaScript to understand the code that is running. In these cases, you should turn off JavaScript source maps and follow standard instructions for adding breakpoints in JavaScript code.
 - If you're debugging a node, make sure that the debugging port is configured for auto-connection by using the dedicated DevTools for Node.js.
+
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

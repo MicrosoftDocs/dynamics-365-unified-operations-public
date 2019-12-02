@@ -47,7 +47,7 @@ ms.dyn365.ops.version: Version 1611
 
         
 ## Which payment providers are supported and in what regions?
-- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
+- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
 - Verifone is supported in the United States for transactions where the card is present (performed using devices), and for transactions where the card is not present (for example, e-commerce or call center transactions).
 - Mastercard Simplify is no longer supported for new customers.
 
@@ -68,8 +68,8 @@ If a payment connector update is issued by the payment connector provider, the u
 
         
 Related topics: 
-- [Payment integration with a payment terminal](end-to-end-payment-extension.md)
-- [Deploying a Payment Connector](deploy-payment-connector.md)
-- [Create a Windows Installer for Payment Connector](create-windows-installer-payment-connector.md)
+- [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
+- [Deploy payment connectors](deploy-payment-connector.md)
+- [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Verifone Payment Connector](https://dynamics.verifone.com/repo/)
 

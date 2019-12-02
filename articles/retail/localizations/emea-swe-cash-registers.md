@@ -40,7 +40,7 @@ This topic provides an overview of the cash register functionality that is avail
 
 ### Common POS features
 
-To learn about common POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+To learn about common POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../index.md).
 
 Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:
 
@@ -73,15 +73,17 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 
   For more information about the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see [Sample for Retail POS integration with control units for Sweden (legacy)](./retail-sdk-control-unit-sample.md#overview-of-integration-with-control-units). 
 
+
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
   For more information about the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md).
 
 ---
 
+
 ## Setting up Retail for Sweden
 
-This section describes the settings that are specific to and recommended for Sweden. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the settings that are specific to and recommended for Sweden. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
 
 To use the Sweden-specific functionality, you must complete these tasks:
 

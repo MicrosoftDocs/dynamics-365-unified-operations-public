@@ -34,12 +34,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic explains how to create attribute types in Asset Management. Attributes are used to describe the properties of various elements. You can set up attributes on the following elements:
 
 - [Functional location types](../setup-for-functional-locations/functional-location-types.md)
-- [Functional locations](../functional-locations/create-functional-locations.md)
+- [Create functional locations](../functional-locations/create-functional-locations.md)
 - [Asset types](../setup-for-objects/object-types.md)
 - Assets
 

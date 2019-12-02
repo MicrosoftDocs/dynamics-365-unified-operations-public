@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Get updates from Lifecycle Services (LCS)
+# Download updates from Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,7 +64,7 @@ Based on your product and version, you will have different update options from L
 ### Finance and Operations
 - **Application version 8.1 and later** - All updates for version 8.1 and later will be a cumulative, combined binary update of all of the application and platform updates. There will be no granular X++ updates starting with this release.  
 
-     Based on your environment version and the [service update availability](../../fin-and-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
+     Based on your environment version and the [service update availability](../../fin-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
 
     You may see one or more of the following update options. 
 
@@ -132,5 +132,5 @@ To download X++ updates, follow these steps in LCS.
    
 
 ## Additional resources
-- [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
-- [Install a metadata hotfix](./install-metadata-hotfix-package.md) 
+- [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
+- [Install metadata hotfixes in development environments](./install-metadata-hotfix-package.md) 

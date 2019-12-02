@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -119,3 +119,15 @@ Here is the syntax of the query string parameter.
 `{module-name}:{action-mock-file-name}`
 
 If no action mock file name is specified, the package name is used to search for the mock.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Page load data actions](page-load-data-action.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Core data actions](core-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)

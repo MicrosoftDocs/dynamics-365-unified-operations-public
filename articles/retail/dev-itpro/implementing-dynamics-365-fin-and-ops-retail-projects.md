@@ -43,4 +43,4 @@ The information focuses on implementations of Finance and Operations apps that i
 
 [Update code and environments for Retail projects](./updating-environments.md)
 
-[Testing and performance](./retail-implementation-testing-performance.md)
+[Testing and performance issues](./retail-implementation-testing-performance.md)

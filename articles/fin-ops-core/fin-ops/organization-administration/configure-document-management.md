@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -149,7 +149,7 @@ There is no difference between document handling and document management. Both t
 
 Document management lets you add notes, documents, and other files to records.
 
-Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](../../dev-itpro/analytics/document-reporting-services.md).
+Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services](../../dev-itpro/analytics/document-reporting-services.md).
 
 ### What is the difference between document types and file types?
 
@@ -196,3 +196,8 @@ There will be proactive communications when you're approaching your database and
 ### Is there an option to export all document attachments from the system?
 
 Although attachments can be exported, that capability isn't a standard capability, because there isn't a standard attachment entity. Entities that provide attachments for a specific business document or record must be built.
+
+### How can attachments be extracted from the system?
+
+To extract attachments, an Attachments entity must be built for a specific business document or record. There isn't a standard attachment entity because the identity for each record type is different. To learn how to build an Attachments entity, you can find examples in the Application explorer by searching for "Attachment" under the **AOT > Data Model > Data Entities** node.
+

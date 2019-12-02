@@ -5,10 +5,10 @@ title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -49,7 +49,7 @@ After you create a fragment for your script code, it can be reused across all pa
 1. Go to **Fragments \> New page fragment**.
 2. Select **External Script**, enter a name for the fragment, and then select **OK**.
 3. In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.
-4. In the property pane on the right, add your client-side script, and set other configuration options as you require. For information about how to configure the module, see [External Script module](http://).
+4. In the property pane on the right, add your client-side script, and set other configuration options as you require.
 
 ## Add the fragment to templates
 
@@ -62,4 +62,17 @@ After you create a fragment for your script code, it can be reused across all pa
 > [!NOTE]
 > After you've finished, you must publish the fragment and the master template. 
 
-For more information about how to add script code to master templates, see [Add script to master templates](http://).
+## Additional resources
+
+[Add a logo](add-logo.md)
+
+[Select a site theme](select-site-theme.md)
+
+[Add a favicon](add-favicon.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
+

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Conditional statements: if, if...else, switch, and ternary operator (?)
+# X++ conditional statements
 
 [!include [banner](../includes/banner.md)]
 
@@ -70,7 +70,15 @@ else
 
 ## switch statements
 
-The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
+The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. 
+
+- If a case constant matches the **switch** expression, the **case** statement is executed. 
+- If the case contains a **break** statement, the program then jumps out of the switch. 
+- If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. 
+- If no matches are found, the **default** statement is executed. 
+- If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. 
+
+Here is the syntax for a **switch** statement:
 
 **switch** **(** *expression* **)** **{** **{ case }** **\[default:** *statement* **\]** **}**
 
@@ -83,7 +91,7 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
 
 ### Examples of switch statements
 
-When you include the **break** keyword in a switch statement, the execution of the case branch terminates, and the statement following the switch is executed as shown in the following example. If the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
+When you include the **break** keyword in a switch statement, the execution of the case branch terminates, and the statement following the switch is executed. As shown in the following example, if the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
 
 ```X++
 switch (Debtor.AccountNo)

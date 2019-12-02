@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Vendor invoices overview
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services that were received. Vendor invoices can represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
@@ -107,7 +106,7 @@ You can use the **Workflow history** page to reset the workflow status to **Draf
 ## Additional resources
 
 - [Set up vendor invoice policies](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md)
-- [Key invoice data into accounts payable using a vendor invoice](tasks/key-invoice-data-ap-system-vendor-invoice.md)
+- [Key invoice data in AP system using vendor invoice](tasks/key-invoice-data-ap-system-vendor-invoice.md)
 - [Key invoice data into accounts payable using an approval journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Key invoice data into the AP system using invoice pool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Record a vendor invoice in the invoice journal](tasks/record-vendor-invoice-invoice-journal.md)

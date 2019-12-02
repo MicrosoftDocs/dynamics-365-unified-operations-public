@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -125,3 +125,13 @@ To view ratings and reviews trends, follow these steps.
 1. Select **Trends sheet** to view ratings and reviews trends.
 
     ![Ratings and reviews trends](media/rnr-powerbi-dashboard-template.png) 
+    
+## Additional resources
+
+[Ratings and reviews overview](ratings-reviews-overview.md)
+
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
+[Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)

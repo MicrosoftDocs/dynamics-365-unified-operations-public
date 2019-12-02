@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -47,7 +47,7 @@ Dynamics 365 for Finance and Operations, Enterprise edition is a complex product
 
 ## Build and maintain mobile workspaces using X++ classes
 
-This release introduces a new model for creating and maintaining mobile workspaces through X++ classes in Microsoft Visual Studio. This allows for more flexibility and power in development, in addition to significant improvements to app performance. In this model, developers can create complex queries/structures without having to create forms. It's also possible to programmatically develop and edit the code supplying the data to the mobile workspaces. As a result, maintaining mobile workspaces is significantly improved in this new model. The App designer is still a valuable tool to quickly build mobile workspaces and can be used in combination with the new model when creating mobile workspaces. For more information, see "Server-side development" in [Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).
+This release introduces a new model for creating and maintaining mobile workspaces through X++ classes in Microsoft Visual Studio. This allows for more flexibility and power in development, in addition to significant improvements to app performance. In this model, developers can create complex queries/structures without having to create forms. It's also possible to programmatically develop and edit the code supplying the data to the mobile workspaces. As a result, maintaining mobile workspaces is significantly improved in this new model. The App designer is still a valuable tool to quickly build mobile workspaces and can be used in combination with the new model when creating mobile workspaces. For more information, see "Server-side development" in [Mobile platform resources](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).
 
 ## Excel add-in enables passing header context to detail records
 

@@ -194,13 +194,13 @@ The following folders and files are part of the Retail SDK at the top level.
 
 The C\# source code in the SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and your own types, because Microsoft uses Microsoft.Dynamics. If you're referencing a type from the Microsoft binary, reference it by using Microsoft.Dynamics. That way, you'll know that it's not from the Retail SDK but from a referenced binary. 
 
-[![RetailSDK02](./media/retailsdk02.png)](./media/retailsdk02.png)
+[![Code sample to reference a type](./media/retailsdk02.png)](./media/retailsdk02.png)
 
 ### Dependencies, build order, and full build
 
 The following illustration shows a high-level logical dependency tree within the Retail SDK. It doesn't show the references to all Microsoft files or assets. To see these, look at the Visual Studio project and solution files in more detail. 
 
-[![RetailSDK03](./media/retailsdk03.png)](./media/retailsdk03.png) 
+[![Diagram of high-level logical dependency tree](./media/retailsdk03.png)](./media/retailsdk03.png) 
 
 Consider the following important points:
 
@@ -209,17 +209,17 @@ Consider the following important points:
 - There is no single Visual Studio solution that includes all projects. Because there are few couplings between the various Visual Studio projects, you can open multiple projects or solutions side by side, and can compile the appropriate project after a change.
 - Even if you didn't customize every component, the easiest way to get the final deployment packages is by building the whole Retail SDK. To do this, open an **MSBuild Command Prompt for VS2015** window, and enter **msbuild** (or **msbuild /p:Configuration=Release** for a non-debug version). 
 
-[![RetailSDK04](./media/retailsdk04.png)](./media/retailsdk04.png)
+[![Screenshot of MSBuild command prompt](./media/retailsdk04.png)](./media/retailsdk04.png)
 
 This command will build all projects. This approach also provides a great way to verify that there are no implementation or code bugs. If there are any bugs, the build will fail, and the Command Prompt window will show what failed (this output resembles what Visual Studio would show). 
 
-[![RetailSDK05](./media/retailsdk05.png)](./media/retailsdk05.png)
+[![Screenshot of MSBuild command prompt with sample code](./media/retailsdk05.png)](./media/retailsdk05.png)
 
 For detailed help for MSBuild, see [https://msdn.microsoft.com/library/0k6kkbsd.aspx](https://msdn.microsoft.com/library/0k6kkbsd.aspx). 
 
 The binaries that the build creates are automatically copied to the SDK's References folder. The References folder also includes all the other binaries. Notice that no DLLs are overwritten, because they are all prefixed with a name (in this case, "Contoso") that you can define in Customization.settings. 
 
-[![RetailSDK06](./media/retailsdk06.png)](./media/retailsdk06.png)
+[![Screenshot of Retail SDK's Reference files](./media/retailsdk06.png)](./media/retailsdk06.png)
 
 ### Minimal required configuration
 
@@ -229,11 +229,11 @@ Do you just want to quickly build the Retail SDK, or to run POS in the debugger 
 
 BuildTools\\Customization.settings holds most of the configuration values for the SDK. The highlighted items in the following illustration are the global values. These values control how built binaries, components, and packages are named, versioned, and code-signed. 
 
-[![RetailSDK07](./media/retailsdk07.png)](./media/retailsdk07.png)
+[![Screenshot of code for BuildTools Customization settings](./media/retailsdk07.png)](./media/retailsdk07.png)
 
 It's good practice to sign your assemblies with a strong name, even though this isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx). To build correctly, you must create an app package signing certificate. Follow these instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file. Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder. The **RetailServerLibraryPathForProxyGeneration** property can be used to set a different RetailServer DLL for proxy generation. Customization.settings is also the place to define your new customization assets, such as binaries, configuration files, and SQL update scripts. After you specify your extensions, binaries, and assets here, the files will be added in the deployable package that is created. 
 
-[![RetailSDK08](./media/retailsdk08.png)](./media/retailsdk08.png)
+[![Screenshot of code for additional files](./media/retailsdk08.png)](./media/retailsdk08.png)
 
 ### Customizing the build
 
@@ -241,13 +241,13 @@ It's good practice to sign your assemblies with a strong name, even though this 
 
 It's easy to add new projects to the Retail SDK's build system. You can either clone one of the many existing projects or start a new project. You just have to make some adjustments in a text editor, as shown in the following illustration. The relative path of the **Import** elements should be adjusted, and the **AssemblyName** element should use the predefined **AssemblyNamePrefix** property. These adjustments are required in order to get versioning, code signing, uniform assembly naming, automatic dropping to the References folder, and other tasks for free. 
 
-[![RetailSDK09](./media/retailsdk09.png)](./media/retailsdk09.png)
+[![Screenshot of code for adding new projects](./media/retailsdk09.png)](./media/retailsdk09.png)
 
 #### Changing the build order or adding to the build
 
 The whole directory tree of the Retail SDK is built with the help of MSBuild traversal files (dirs.proj files). The following illustration shows the main traversal file of the Retail SDK. Similar files might also exist in subdirectories. Notice that Visual Studio solution files (.sln files) are very similar to traversal files. Both "direct" the MSBuild engine to process other build scripts. 
 
-[![RetailSDK10](./media/retailsdk10.png)](./media/retailsdk10.png) 
+[![Screenshot of code for changing build order or adding to build](./media/retailsdk10.png)](./media/retailsdk10.png) 
 
 After new code is added, most of it should be located in a new folder (for details, see "Best practices of code implementation"), and you must add it to the traversal structure by adding to one or multiple dirs.proj files. The Extensions folder appears highlighted on line 10 in the previous illustration. The quickest way to get started with a new dirs.proj file is to copy an existing file, correct the paths in the **Import** elements, and update the **ProjectFiles** elements in the **ItemGroup** element.
 
@@ -259,7 +259,7 @@ When you must implement new build steps, keep in mind that the existing scripts 
 
 As shown in the architecture diagram earlier in this article, several things depend on the RetailServer interface. It is likely that someone will change this interface. On a developer topology machine, someone might want to immediately try out a change. In this case, any CommerceRuntime and RetailServer extension DLLs must be copied into the bin folder of the locally installed RetailServer web application. A user can configure the Customization.setting file so that the DLLs are automatically copied into the bin folder of the local RetailServer web application whenever new versions of these files are built. 
 
-[![RetailSDK11](./media/retailsdk11.png)](./media/retailsdk11.png)
+[![Screenshot of code to automatically add new DLLs](./media/retailsdk11.png)](./media/retailsdk11.png)
 
 ### Application lifecycle management
 
@@ -271,7 +271,7 @@ A good ALM solution provides version control, builds, automated builds, planning
 
 To work efficiently in a team, or even just to be able to go back and look at some changes that were done in the past, you must have good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious.
 
-[![RetailSDK12](./media/retailsdk12.png)](./media/retailsdk12.png)
+[![Diagram of branching and merging](./media/retailsdk12.png)](./media/retailsdk12.png)
 
 #### Retail SDK mirror branch
 

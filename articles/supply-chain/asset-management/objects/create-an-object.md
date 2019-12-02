@@ -34,22 +34,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic describes how to create an asset in Asset Management.
 
 1. Click **Asset management** > **Common** > **assets** > **All assets** or **Active assets**.
 2. Click the **New** button.
 3. In the **Create assets** dialog, insert data regarding **Asset** (the asset ID) and the asset name. Select date and time for the asset in the **Effective** field. From that date, you are able to install the asset on a functional location as well as move and replace the asset in an asset structure.
-4. In the **Asset type** field, select the asset type for the asset (mandatory field). If required, select **Asset manufacturer** and **Asset model** for the asset. If only one product has been set up, that product is automatically selected in the **Asset manufacturer** field. The selections available in the **Asset manufacturer** and **Asset model** fields depend on the setup in [Asset manufacturer and model](../setup-for-objects/product-and-model.md).
+4. In the **Asset type** field, select the asset type for the asset (mandatory field). If required, select **Asset manufacturer** and **Asset model** for the asset. If only one product has been set up, that product is automatically selected in the **Asset manufacturer** field. The selections available in the **Asset manufacturer** and **Asset model** fields depend on the setup in [Asset manufacturers and models](../setup-for-objects/product-and-model.md).
 5. In the **Parent asset** group, the **Asset** field is blank as default. If required, you can select a parent asset, and then all fields in the **Parent asset** group will automatically be filled out.
 >[!NOTE]  
->When you select a parent asset, two or three tabs are available: The **My assets** tab contains assets related to the functional locations to which you (the maintenance worker who is logged on the system) may be allocated. If no functional locations are set up on a maintenance worker in the [Maintenance workers](../setup-for-objects/workers-and-worker-groups.md) form, the **My assets** tab will not be visible. The **Active assets** tab contains a list of all assets with asset lifecycle state "Active". The **Asset view** tab displays a tree view of functional locations and assets installed on those locations.
+>When you select a parent asset, two or three tabs are available: The **My assets** tab contains assets related to the functional locations to which you (the maintenance worker who is logged on the system) may be allocated. If no functional locations are set up on a maintenance worker in the [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md) form, the **My assets** tab will not be visible. The **Active assets** tab contains a list of all assets with asset lifecycle state "Active". The **Asset view** tab displays a tree view of functional locations and assets installed on those locations.
 
 6. The default functional location you have set up is suggested for the asset in the **Asset** group > **Functional location** field. Select another functional location, if required.
 
 >[!NOTE]
->After you have created an asset, you can install it on another functional location, if required. Only top-level assets (assets without a current parent asset) can be installed on a functional location. This means that you install the top level as well as any child assets on the selected functional location. Read more about installing assets on functional locations in [Functional locations](../functional-locations/introduction-to-functional-locations.md).
+>After you have created an asset, you can install it on another functional location, if required. Only top-level assets (assets without a current parent asset) can be installed on a functional location. This means that you install the top level as well as any child assets on the selected functional location. Read more about installing assets on functional locations in [Introduction to functional locations](../functional-locations/introduction-to-functional-locations.md).
 
 7. Click **OK**.
 8. Select the asset in the **All Assets** list and click the **Edit** button to add further information to the asset.
@@ -58,13 +58,13 @@ This topic describes how to create an asset in Asset Management.
 
 The functional location to which the asset is related is shown in the **Functional location** field. If the asset is a parent asset, the number of children related to the asset is shown in the **Children** field. If the asset is a sub asset to an existing asset, the ID of the parent asset is shown in the **Parent** field.
 
-You can edit **Asset manufacturer** and **Asset model** information on the asset, which is used to manage spare parts, alternative spare parts, and job type defaults. Refer to [Asset manufacturer and model](../setup-for-objects/product-and-model.md) for more information. You can also add information about **Model year** and **Serial number**, if required.
+You can edit **Asset manufacturer** and **Asset model** information on the asset, which is used to manage spare parts, alternative spare parts, and job type defaults. Refer to [Asset manufacturers and models](../setup-for-objects/product-and-model.md) for more information. You can also add information about **Model year** and **Serial number**, if required.
 
 **Current lifecycle state** is used to define if the asset is active or inactive. When creating an asset, the stage is always set to the first stage in the asset stage group. When you are ready to activate an asset, click **Update asset state**, and select the lifecycle state that you have defined as "asset active", and click **OK**.
 
 **Note:** When an asset is set to "inactive", it is no longer possible to create work orders for the asset. Also, you cannot schedule preventive maintenance jobs for an inactive asset.
 
-The **Service level** and **Criticality** fields relate to work orders created for the asset. The fields show the **Service level** and **Criticality** numbers calculated for the current setup for the asset. Refer to [Asset service levels](../setup-for-objects/object-priorities.md) and [Asset criticalities](../setup-for-objects/object-criticalities.md) regarding setup of those values.
+The **Service level** and **Criticality** fields relate to work orders created for the asset. The fields show the **Service level** and **Criticality** numbers calculated for the current setup for the asset. Refer to [Asset service levels](../setup-for-objects/object-priorities.md) and [Asset criticality types](../setup-for-objects/object-criticalities.md) regarding setup of those values.
 
 ## Asset
 

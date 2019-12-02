@@ -50,7 +50,6 @@ This topic explains how to download Electronic reporting (ER) configurations fro
 
 4. On the selected tile, click **Repositories**.
 
-    ![Repositories button on an ER provider tab](media/ger-providers-tiles.png)
 
 5. On the **Configuration repositories** page, in the grid, select the existing repository of the **File system** type. If the repository doesn't appear in the grid, follow these steps:
 
@@ -62,12 +61,8 @@ This topic explains how to download Electronic reporting (ER) configurations fro
     6. Click **OK** to confirm and save the new repository.
     7. In the grid, select the new repository of the **File system** type.
 
-    ![Repository of the File system type in the grid](media/ger-file-repository.png)
-
 6. In your browser, open another tab, and sign in to LCS.
 7. In the Shared asset library, select the **GER Configuration** asset type, and then click **Download all**.
-
-    ![Download all button in the Shared asset library](media/ger-lcs-shared-asset-library.png)
 
     > [!NOTE]
     > All the ER configurations will be put into a zip file for download.

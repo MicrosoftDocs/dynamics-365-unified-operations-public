@@ -5,7 +5,7 @@ title: Develop entities for data migration
 description: This tutorial shows how to develop data entities in Microsoft Visual Studio and then use them for data migration.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ This tutorial shows how to develop data entities in Microsoft Visual Studio and 
 This tutorial is broken out into two sections and four exercises. In the first section, you will build a **Project Category** entity in Visual Studio. You will then use this entity to export data. In the second section, you will use **Customer Groups** and **Customers** entities to import multiple sets of files by using the new Data Import/Export Framework.
 
 > [!NOTE]
-> This tutorial is designed to be slightly more challenging than [Building and consuming data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities.
+> This tutorial is designed to be slightly more challenging than [Build and consume data entities](build-consuming-data-entities.md). Instead of providing a step-by-step guide, it has scenario exercises and describes the expected outcomes. The assumption is that you've already familiarized yourself with entities.
 
 ## Prerequisites
 This tutorial requires that you access the environment by using Remote Desktop. You must be provisioned as an administrator on the instance.
@@ -48,7 +48,7 @@ This tutorial requires that you access the environment by using Remote Desktop. 
 Throughout this tutorial, "base URL" refers to the base URL of the instance.
 
 - In the cloud environment, you obtain the base URL from Microsoft Dynamics Lifecycle Services (LCS).
-- On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
+- On a local virtual machine (VM), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 ## Developing an entity in Visual Studio and enabling it for data export
 ### Business problem

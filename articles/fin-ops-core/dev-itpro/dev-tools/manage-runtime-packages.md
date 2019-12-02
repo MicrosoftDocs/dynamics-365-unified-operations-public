@@ -41,7 +41,7 @@ This topic outlines a recommended strategy for managing, distributing, and deplo
 ## Models from third parties
 Any source code that is received from third parties must be compiled into a binary and included in a deployable package. Models should be installed on a development virtual machine (VM) and added to source control. From there, the build VM can pick up the source code, build it, and include it in a deployable package. Other developers can just synchronize the model from Microsoft Azure DevOps to their development VMs. They don't have to manually install it.
 
-For information about how to install a model on a development VM, see [Export and import a model](models-export-import.md).
+For information about how to install a model on a development VM, see [Export and import models](models-export-import.md).
 
 After you install the model, follow these steps to add the new model to source control.
 
@@ -63,7 +63,7 @@ After you install the model, follow these steps to add the new model to source c
 ## Deployable packages from third parties
 Deployable packages from third parties can be manually installed on a development VM, and the installed artifacts can then be added to source control. Then, by synchronizing their local workspace, other developers can receive the runtime package on their VMs without having to install the deployable package. The build process on the build VM will help guarantee that the runtime packages for any extensions or other dependencies are available on the build VM. In Platform update 6 and later, by default, these runtime packages will be included in the final deployable package that is created from the build VM. For more information, see the  [Deploying third-party code](#deploying-third-party-code) section later in this topic.
 
-For information about how to install a deployable package on a development VM, see [Install a deployable package](../deployment/install-deployable-package.md).
+For information about how to install a deployable package on a development VM, see [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 
 > [!NOTE]
 > Don't install a software deployable package directly on the build VM. Use source control as described in this topic. Only binary updates should be installed on build VMs.

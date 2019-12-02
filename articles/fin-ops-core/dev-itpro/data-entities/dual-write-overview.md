@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Near-real-time data integration between Finance and Operations and Common Data Service
+title: Near-real-time data integration with Common Data Service
 description: This topic provides an overview of the integration between Finance and Operations and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
@@ -34,21 +34,22 @@ ms.search.validFrom: 2019-07-15
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
 In the current digital world, business ecosystems use Microsoft Dynamics 365 applications as a whole. Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops. To achieve this experience, integration between Finance and Operations apps and other Dynamics 365 applications is essential. Some applications are built on top of Common Data Service. Integration between Finance and Operations apps data with Common Data Service lets other applications communicate coherently and fluently with Finance and Operations.
 
 Finance and Operations apps and Common Data Service provide near-real-time data synchronization between Finance and Operations apps and other Dynamics 365 applications via a dual-write framework. The coverage is broad and spans 28 surface areas of the application. The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect business processes across applications.
 
 ![Architecture overview diagram](media/dual-write-overview.jpg)
 
-The following value propositions are available for customers:
+The following value propositions are available:
 
 + [Organization hierarchy in Common Data Service](dual-write-organization.md)
 + [Company concept in Common Data Service](dual-write-company.md)
 + [Integrated customer master](dual-write-customer.md)
++ [Integrated ledger](dual-write-ledger.md)
++ [Unified product experience](dual-write-product.md)
 + [Integrated vendor master](dual-write-vendor.md)
-+ Unified product master
++ [Integrated sites and warehouses](dual-write-sites-and-warehouses.md)
++ [Integrated tax master](dual-write-tax.md)
 
 ## System requirements
 
@@ -62,7 +63,7 @@ Synchronous, bidirectional, near-real-time data flows require the following vers
 Follow these steps to set up integration between Finance and Operations apps and Common Data Service.
 	
 1. For the setup of the dual-write system, see the [step-by-step guide](https://aka.ms/dualwrite-docs) on Announcing Dual Write Preview.
-2. Download and install the solution from the [Finance and Operations, Common Data Service, and Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains five solutions:
+2. Download and install the solution from the [Fin Ops and CDS/CE Integration via Dual-Write](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group. The package contains five solutions:
 
     + Dynamics365Company
     + CurrencyExchangeRates

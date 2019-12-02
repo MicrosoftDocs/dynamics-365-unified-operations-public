@@ -56,7 +56,7 @@ You define the scope of the rule within the policy. For example, if you create a
 Additional resources
 --------
 
-[Defining and managing a benefit program](manage-benefit-program.md)
+[Define and manage a benefits program](manage-benefit-program.md)
 
 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a copy of the standard user acceptance testing (UAT) database
-description: This topic explains a database export scenario for Finance and Operations applications.
+description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 07/08/2019
@@ -43,6 +43,9 @@ In this tutorial, you will learn how to:
 > * Import the database, and prepare it so that it can be used in a developer environment.
 
 As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
+
+> [!IMPORTANT]
+> Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
 
 ## Known limitations
 
@@ -179,7 +182,7 @@ To switch back to the original database, reverse this process. In other words, s
 
 ### Reset the Financial Reporting database
 
-If you're using Financial Reporting, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). (Financial Reporting was previously named Management Reporter.)
+If you're using Financial Reporting, you must reset the Financial Reporting database by following the steps in [Reset the Financial reporting data mart](../analytics/reset-financial-reporting-datamart-after-restore.md). (Financial Reporting was previously named Management Reporter.)
 
 ## Reenter data from encrypted and environment-specific fields in the target database
 

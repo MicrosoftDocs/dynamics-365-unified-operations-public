@@ -5,7 +5,7 @@ title: Removed or deprecated features for Finance and Operations
 description: This topic describes features that have been removed, or that are planned for removal.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -44,13 +44,42 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Starting with the Finance and Operations July 2017 release with Platform update 8, the type of deployments are noted for each removed or deprecated feature. All of the previous releases mentioned in this topic supported cloud deployments only.
 
-> Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
+Detailed information about objects in Finance and Operations can be found in the [Technical reference reports](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations.
 
+## Finance 10.0.7 with Platform update 31
+
+### Chinese voucher types without Account groups selection
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Changed to the feature with account groups selection. |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By December 1, 2020, we plan to no longer support Chinese voucher types setup without Account groups selection. Find more details about new feature design in What's new in 10.0.7 |
 
 ## Finance and Operations 10.0.6 with Platform update 30
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.6 with Platform update 30 is available to targeted users as part of a preview release. The content and the functionality are subject to change. For more information about preview releases, see [Service update availability](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### DimensionHash.getHash(str _message)
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1, as documented in [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+
+### Hash.ComputeSHA1Hash(string message)
+
+|   |  |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Windows is deprecating the use of SHA1, as documented in [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).  |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Platform |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By April 1, 2020, developers must use the new API. |
+
 
 ### FormDateTimeControl.setUtcString()
 
@@ -247,7 +276,7 @@ Embedded key performance indicators (KPIs) could be modeled in Visual Studio by 
 | **Status**                         | Deprecated: The warning will become a compile-time error in the future. We're currently targeting Platform update 30. |
 
 #### Complete list
-To access the full list of APIs that are being deprecated, see [Deprecation of methods and meta data elements](deprecation-deletion-apis.md).
+To access the full list of APIs that are being deprecated, see [Deprecation of methods and metadata elements](deprecation-deletion-apis.md).
 
 ## Finance and Operations 8.1 with Platform update 20
 
@@ -314,7 +343,7 @@ No features have been removed or deprecated with this release. Platform update 1
 ## Finance and Operations, Enterprise edition 7.3 with Platform update 12
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -325,7 +354,7 @@ Starting February 15, 2018, retailers will no longer be able to display personal
 | **Status**                         |Removed as of February 15, 2018. This affects customers running Dynamics 365 for Operations 1611 and later.  |
 
 ### Extension of the list of Electronic reporting (ER) functions
-The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more. Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.
+The possibility to introduce custom functions to be used in the ER expression builder (for more information, see [Extend the list of Electronic reporting (ER) functions](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) is not supported any more. Due to changes of the ER APIs, the API to call built-in functions from the ER expression builder became internal and can’t be extended any longer.
 
 |   |  |
 |------------|--------------------|
@@ -419,7 +448,7 @@ Users can download this from the government portal.
 ## Dynamics 365 for Retail 7.2
 
 ### Personalized product recommendations 
-Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Personalized product recommendations](../../retail/personalized-product-recommendations.md).  
+Starting February 15, 2018, retailers will no longer be able to display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/product-recommendations.md).  
 
 |   |  |
 |------------|--------------------|
@@ -451,7 +480,7 @@ Warehouse mobile devices portal (WMDP) was a standalone component that was inten
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Duplicate functionality.       |
-| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure Microsoft Dynamics 365 for Finance and Operations - Warehousing](../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Replaced by another feature?**   | Yes. This feature has been replaced by Finance and Operations - Warehousing. For more information about setup and prerequisites, see [Install and configure the Warehousing app overview](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Product areas affected**         | Warehouse management, Transportation management     |
 | **Deployment option**              | Warehouse mobile devices portal (WMDP) was a standalone component that was intended for on-premises self-deployment.               |
 | **Status**                         | Deprecated: Target timeframe for the functionality to be removed is Q4 2019.   |
@@ -1221,7 +1250,7 @@ Product builder was used to dynamically configure items from a sales order, purc
 |   |  |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Product builder exposed X++ code to end users and isn't supported in the current version of Dynamics AX. It has been removed to avoid duplicate maintenance efforts on overlapping, sizeable codebases.  |
-| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Build a product configuration model](../../supply-chain/pim/build-product-configuration-model.md). |
+| **Replaced by another feature?**   | Yes. The constraint-based configuration was introduced in Dynamics AX 2012 where the depreciation of Product builder in future versions was already announced. The constraint-based configuration technology is selected on the product masters to enable the configuration. To learn more, see [Product configuration overview](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Product areas affected**         | Product information management, Sales and marketing  |
 | **Status**                         | Removed as of Dynamics AX 7.0.      |
 

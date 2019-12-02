@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/28/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 8.0
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
-To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release notes](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview). The Release Notes provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
+To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](https://docs.microsoft.com/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 for Finance and Operations.
 
 ### Introducing Dynamics 365 for Finance and Operations
 
@@ -95,13 +95,13 @@ Migrating customizations from one release to the next has been simplified by mov
 
 Customers can submit a request to Microsoft for extension support to be added to the product for a needed scenario. In this release, this feature is moved to Lifecycle Services (LCS).
 
-### Embedding PowerApps in workspaces and forms
+### Embedding Microsoft Power Apps in workspaces and forms
 
-Use PowerApps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
+Use Microsoft Power Apps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
 
 ### Custom fields
 
-Organizations can add custom fields to tailor their application to their business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Custom fields](user-defined-fields.md).
+Organizations can add custom fields to tailor their application to their business requirements, using a no-code extensibility experience. For information about how to add a custom field, see [Create and work with custom fields](user-defined-fields.md).
 
 ## Integration 
 
@@ -135,7 +135,7 @@ Provides a quick and effective channel to escalate issues to Microsoft Support i
 
 ### Vendor collaboration – RFQ process
 
-Enhancements make it easy to tell who entered a bid (a vendor or a procurement department). For more information, see [Requests for quotation (RFQs)](../../supply-chain/procurement/request-quotations.md).
+Enhancements make it easy to tell who entered a bid (a vendor or a procurement department). For more information, see [Requests for quotation (RFQs)](../../../supply-chain/procurement/request-quotations.md).
 
 ### Partial shipment of a load (split load)
 
@@ -143,15 +143,15 @@ Allows single loads or multiple loads to be fully or partially loaded.
 
 ### Immediate replenishment of locations
 
-Used during wave execution if allocation fails for a location directive line that has a replenishment template. For more information about immediate replenishment, see [Immediate replenishment](../../supply-chain/warehousing/immediate-replenishment.md).
+Used during wave execution if allocation fails for a location directive line that has a replenishment template. For more information about immediate replenishment, see [Immediate replenishment](../../../supply-chain/warehousing/immediate-replenishment.md).
 
 ### Reason codes added to warehouse counting and adjustment
 
-Users can add a reason code when performing counts and when making an adjustment. For more information about reason codes, see [Reason codes for inventory counting](../../supply-chain/warehousing/reason-codes-for-counting-journals.md).
+Users can add a reason code when performing counts and when making an adjustment. For more information about reason codes, see [Reason codes for inventory counting](../../../supply-chain/warehousing/reason-codes-for-counting-journals.md).
 
 ### Batch balancing enabled for advanced warehousing processes
 
-The batch balancing process is now available for products that are set up for warehouse management processes (in earlier releases, the batch balancing process was enabled only for products that were not set up for warehouse management processes). This enhancement makes it possible for the user to release ingredients to picking after the batch balancing process has been completed. For more information about batch balancing, see [Batch balancing](../../supply-chain/production-control/batch-balancing.md).
+The batch balancing process is now available for products that are set up for warehouse management processes (in earlier releases, the batch balancing process was enabled only for products that were not set up for warehouse management processes). This enhancement makes it possible for the user to release ingredients to picking after the batch balancing process has been completed. For more information about batch balancing, see [Batch balancing](../../../supply-chain/production-control/batch-balancing.md).
 
 ### Analytical workspaces with embedded Power BI for Cost management
 
@@ -171,7 +171,7 @@ New features include import and testing scenarios, and also broader support for 
 
 ### Improved delivery of platform and financial reporting updates
 
-Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible. For more information, see [Finance and Operations cloud platform monthly updates FAQ](../../dev-itpro/sysadmin/faq-platform-monthly-updates.md).
+Platform and financial reporting updates will be continual updates managed by Microsoft rather than optional updates. This change is intended to improve service reliability and availability, and also to ensure that customers have the latest improvements and fixes. Platform and financial reporting updates are backward-compatible. For more information, see [Finance and Operations cloud platform monthly updates FAQ](../../../dev-itpro/sysadmin/faq-platform-monthly-updates.md).
 
 ### Upgrade automation
 

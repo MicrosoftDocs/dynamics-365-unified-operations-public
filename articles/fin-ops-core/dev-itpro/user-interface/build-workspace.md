@@ -59,7 +59,7 @@ Use Microsoft Visual Studio to import the tutorial project. The tutorial project
 5.  In the **Select the file to import** dialog box, browse to the **Downloads** folder, click **FMTutorialDataModel.axpp**, and then click **Open**.
 6.  Select the **Overwrite Elements** check box and the **Current solution** option. The following illustration shows the completed **Import Project** dialog box. 
 
-    [![Import project](./media/importproject1.png)](./media/importproject1.png)
+    [![Completed Import Project dialog box](./media/importproject1.png)](./media/importproject1.png)
 
 7.  Click **OK**.
 8.  In Solution Explorer, expand **Classes**, and then, under the **FMTutorial** project, right-click **FMTDataHelper**, and then click **Set as Startup Object**.
@@ -212,9 +212,6 @@ A system administrator can modify tile cache parameters at run time by using the
 
 1. Click in the navigation search field on the navigation bar.
 2. Type **Tile data**, and then click **Tile data cache configuration** in the search results. 
-
-   [![Tile cache search](./media/tilecachesearch.png)](./media/tilecachesearch.png)
-
 3. Find the **FMTCurrentRentalsTile** record. 
 
    [![Tile cache parameters](./media/tilecacheparams-1024x328.png)](./media/tilecacheparams.png)
@@ -682,8 +679,8 @@ Use Visual Studio to build and run the updated **FmtClerkWorkspace** form.
 5.  Set **End Mileage** to **100**, and then click **OK**. Notice that the rental that you just returned no longer appears in the list.
 
 ## Related tutorials
--   [Building the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
--   [Building navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
+-   [Build the Customer form](build-customer-form.md) – See this tutorial if you want more exposure to form patterns. This tutorial will walk through the process of applying the Details Master pattern to a form.
+-   [Build navigation](build-navigation.md) – See this tutorial if you want instructions for adding your workspace to the Dynamics AX menu structure.
 
 
 

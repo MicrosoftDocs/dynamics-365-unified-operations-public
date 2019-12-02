@@ -55,4 +55,4 @@ For N-1 support, the customer must install the N-1 package in Retail headquarter
 
 After the Retail headquarters upgrade and N-1 setup are completed, the N-1 store components can communicate with Retail headquarters. No channel-side components must be installed for N-1 support. However, to enable the N-1 store to communicate with Retail headquarters, cashiers must change their password the first time that they sign in.
  
-For instructions for N-1 installation, see [Installing N-1 components for use with Microsoft Dynamics 365 Retail](n-1-installation-configuration.md).
+For instructions for N-1 installation, see [Phased Rollout (N-1) installation, configuration, and cutover guide](n-1-installation-configuration.md).

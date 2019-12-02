@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Saving online payments with the Adyen connector
+# Saving online payment instruments with the Adyen connector
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]

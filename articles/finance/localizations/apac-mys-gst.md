@@ -188,8 +188,8 @@ You should run the **Settle and post sales tax** process before you generate the
 
 ## Additional resources
 - [Generate GAF files in the required format ](./tasks/my-00010-gst-gaf-files-required-format.md)
-- [Manage customer debit and credit for GST ](./tasks/my-00003-manage-customer-debit-note-credit-note-gst.md)
-- [Manage vendor debit and credit for GST ](./tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md)
+- [Manage customer Debit note and Credit note for GST](./tasks/my-00003-manage-customer-debit-note-credit-note-gst.md)
+- [Manage vendor Debit note and Credit note for GST](./tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md)
 - [Print GST customer invoices with a relief clause](./tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md)
 - [Print GST tax invoices](./tasks/my-00005-print-gst-tax-invoices.md)
 - [Set up GST relief clauses](./tasks/my-00006-01-gst-relief-clauses.md)

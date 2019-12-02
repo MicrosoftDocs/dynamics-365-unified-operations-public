@@ -41,7 +41,7 @@ Retail Server architecture
 
 The commerce runtime is wrapped in a Retail Server layer. Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Retail Server. 
 
-[![RetailServer](./media/retailserver.png)](./media/retailserver.png) 
+[![Retail server architecture diagram](./media/retailserver.png)](./media/retailserver.png) 
 
 Retail Server uses the following concepts.
 

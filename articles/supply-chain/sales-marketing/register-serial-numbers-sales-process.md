@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Register serial numbers in the sales process
+title: Working with serialized items
 description: This topic explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,11 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Register serial numbers in the sales process
+# Working with serialized items
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 This topic explains how you can register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't have to maintain serial numbers in inventory from receipt to issue.
 

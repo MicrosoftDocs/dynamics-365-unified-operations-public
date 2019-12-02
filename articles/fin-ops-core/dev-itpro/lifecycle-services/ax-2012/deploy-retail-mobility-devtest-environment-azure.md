@@ -43,7 +43,7 @@ Before you complete the procedures in this topic, make sure that the following p
 
 | Category       | Prerequisite                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
+| Required tasks | [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials, for details see [Log on to Lifecycle Services](https://lcs.dynamics.com/)
@@ -106,14 +106,14 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
    <tr class="odd">
    <td>Create a new domain in Azure for the environment</td>
    <td><ol>
-   <li>Click <strong><span class="label">New domain</span></strong>.</li>
+   <li>Click <strong>New domain</strong>.</li>
    <li>Enter a name for the domain. By default, the domain is named <em>contoso.com</em>.</li>
    </ol></td>
    </tr>
    <tr class="even">
    <td>Add the environment to an existing domain in Azure</td>
    <td><ol>
-   <li>Click <strong><span class="label">Existing domain</span></strong>.</li>
+   <li>Click <strong>Existing domain</strong>.</li>
    <li>Enter the name of the domain. For example, <em>contoso.com</em>.</li>
    </ol></td>
    </tr>
@@ -142,23 +142,23 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
     <tr class="odd">
     <td>Create a new virtual network in Azure for the environment</td>
     <td><ol>
-    <li>Click <span class="label"><strong>New virtual networ</strong>k</span>.</li>
+    <li>Click <strong>New virtual network</strong>.</li>
     <li>Enter a name for the virtual network.</li>
     </ol></td>
     </tr>
     <tr class="even">
     <td>Add the environment to an existing virtual network in Azure</td>
     <td><ol>
-    <li>Click <strong><span class="label">Existing virtual network</span></strong>.</li>
+    <li>Click <strong>Existing virtual network</strong>.</li>
     <li>Select the name of the existing virtual network that you want to use.</li>
-    <li>The <strong><span class="label">Address space</span></strong> field will automatically display the appropriate value. Select the provided value.</li>
-    <li>The <strong><span class="label">Application subnet name</span></strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong><span class="label"><em>APPNET</em></span></strong> value.</li>
+    <li>The <strong>Address space</strong> field will automatically display the appropriate value. Select the provided value.</li>
+    <li>The <strong>Application subnet name</strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong>APPNET</strong> value.</li>
     <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you want to target.
     <ol>
     <li>Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</li>
-    <li>In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</li>
+    <li>In the navigation pane on the left, click <strong>Virtual networks</strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
-    <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
+    <li>Click <strong>Configure</strong>. Details about the virtual network are listed on the page.</li>
     </ol></li>
     </ol></td>
     </tr>
@@ -167,7 +167,7 @@ Complete the following procedure to deploy a Retail mobility dev/test environmen
 
 11. Click **Done**. The **Deploy environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
@@ -184,7 +184,7 @@ Before you complete the following procedures, make sure that the following prere
 | Prerequisite                                                                                                                                                     | More information                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Set up and configure the Dynamics AX application object server (AOS), database, and client. As mentioned, Dynamics AX may be installed on-premises, or on Azure. | [System setup for Microsoft Dynamics AX](http://technet.microsoft.com/library/e9256fe4-888c-413e-aa35-53e1a6de5806(AX.60).aspx)                                                                                                                                                                                        |
-| Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md). |
+| Import data into Dynamics AX.                                                                                                                                    | If you want sample data installed in your Dynamics AX environment, use the Test Data Transfer tool to install the sample data. For instructions, see [Test Data Transfer Tool (beta)](test-data-transfer-tool-beta-2012.md). |
 | Set up and configure Async Server.                                                                                                                               | [Commerce Data Exchange: Async Server](http://technet.microsoft.com/library/8f802c2f-37bc-4a5c-805e-bece3640245f(AX.60).aspx)                                                                                                                                                                                          |
 | Set up and configure Real-time Service.                                                                                                                          | [Commerce Data Exchange: Real-time Service](http://technet.microsoft.com/library/7dc09b26-47ba-403e-9b69-a61601d46bae(AX.60).aspx)                                                                                                                                                                                     |
 | Sync metadata for Commerce Data Exchange.                                                                                                                        | [Enter parameters for Retail Scheduler](http://technet.microsoft.com/library/bfe69872-8fb9-41d9-8f61-d206055dbd87(AX.60).aspx)                                                                                                                                                                                         |

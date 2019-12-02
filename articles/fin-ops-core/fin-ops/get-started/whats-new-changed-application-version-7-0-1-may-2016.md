@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -109,6 +109,6 @@ This article describes features that are either new or changed in Microsoft Dyna
 
 ## Additional resources
 
-[What's new or changed](whats-new-changed.md)
+[What's new or changed in Finance and Operations home page](whats-new-changed.md)
 
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)

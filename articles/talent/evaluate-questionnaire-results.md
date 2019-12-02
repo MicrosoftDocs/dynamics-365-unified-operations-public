@@ -62,7 +62,8 @@ From the **Answers** page, you can view details about answers, points that were 
 -   **Answer report** – This report shows the answers that the respondent selected for each question on the questionnaire.
 -   **Incorrect answers** – This report shows information that is related to the incorrect answers that the respondent selected.
 
-**Note:** The **Results** report is available only if you use results groups on the questionnaire, and if you selected **Results page** on the **Questionnaires** page. The **Answer** report and the **Incorrect answers** report are available only if you selected **Answer report** on the **Questionnaires** page.
+> [!NOTE]
+> The **Results** report is available only if you use results groups on the questionnaire, and if you selected **Results page** on the **Questionnaires** page. The **Answer** report and the **Incorrect answers** report are available only if you selected **Answer report** on the **Questionnaires** page.
 
 ## Questionnaire statistics
 You can use questionnaire statistics to analyze the results of a completed questionnaire, based on calculations that you define. To define calculations, you must complete the following tasks:
@@ -80,9 +81,9 @@ The settings that you define are saved and can be used to periodically recalcula
 Additional resources
 --------
 
-[Designing questionnaires](design-questionnaires.md)
+[Design questionnaires](design-questionnaires.md)
 
-[Using questionnaires](questionnaires.md)
+[Questionnaires](questionnaires.md)
 
-[Distributing and completing questionnaires](distribute-questionnaires.md)
+[Distribute and schedule questionnaires](distribute-questionnaires.md)
 

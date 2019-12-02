@@ -159,14 +159,18 @@ For more information, see [X++ String Run-Time Functions](xpp-string-run-time-fu
 ## beep
 Emits a short sound from the speakers on the computer.
 
-    void beep()
+```xpp
+void beep()
+```
 
 ### Example
 
-    static void beepExample(Args _args)
-    {
-            beep();
-    }
+```xpp
+static void beepExample(Args _args)
+{
+        beep();
+}
+```
 
 ## newGuid
 Creates a globally unique identifier (GUID).

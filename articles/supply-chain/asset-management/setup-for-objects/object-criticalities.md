@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Asset criticalities
+# Asset criticality types
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 The topic explains asset criticality types in Asset Management. Asset criticality is related to assets and is transferred to work orders. It can't be changed on a work order. Asset criticality is used to calculate work order criticality during work order scheduling. In other words, it's used to calculate the extent to which a maintenance job on an asset affects the production schedule and productivity in your company. For more information about the setup that is related to the calculation of rating scores for work order scheduling, see [Asset Management parameters](../setup-for-objects/enterprise-asset-management-parameters.md).
 
@@ -48,7 +48,7 @@ To set up criticality, you first create the criticality types that should be use
 4. In the **Name** field, enter a name for the criticality type.
 5. In the **Factor** field, enter a factor. This factor is used during the calculation of work order scheduling to determine the criticality record that should be used. (The record that has the highest factor is always used.) This setting is relevant if, as shown in the following illustration, criticality lines are created that have the same criticality value.
 
-    ![Figure 1](media/23-setup-for-objects.png)
+    ![Criticality types page](media/23-setup-for-objects.png)
 
 ## Set up asset criticalities
 

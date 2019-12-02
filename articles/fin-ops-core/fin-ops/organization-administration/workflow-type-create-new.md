@@ -69,6 +69,6 @@ After you create a workflow type, the next step is to create a workflow document
 
 ## See also
 
-[Creating a workflow type](workflow-type-create.md)
+[Create a workflow type](workflow-type-create.md)
 
 [Create a workflow category](workflow-type-category.md)

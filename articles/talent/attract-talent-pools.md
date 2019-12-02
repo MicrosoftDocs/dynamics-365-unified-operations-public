@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Source candidates with talent pools in Microsoft Dynamics 365 Talent - Attract
+title: Source candidates with talent pools in Attract
 description: This topic explains how to create and set up talent pools in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Source candidates with talent pools
+# Source candidates with talent pools in Attract
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Recruiters and hiring managers can organize their candidates using the Talent pools functionality in Attract. Talent pools can help you keep track of and engage with all the candidates that apply for jobs at your company.
 
@@ -121,7 +120,7 @@ All users have a common view of candidate profiles. The **Profile** tab shows an
 
     To view a document, select the document name in the list of documents. You can view Microsoft Word documents in the application by using Microsoft Office 365. You can also download the documents to your local computer by using the **Download** option for each document.
 
-- The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Sourcing with LinkedIn Recruiter](./attract-linkedin-recruiter.md).
+- The **LinkedIn** tab shows the candidate's LinkedIn information. To use this tab, you must connect your LinkedIn account in the user settings, and your environment's LinkedIn Recruiter connection must be established. For more information, see [Source candidates with LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Only candidates can update their skills, education history, and work experience.

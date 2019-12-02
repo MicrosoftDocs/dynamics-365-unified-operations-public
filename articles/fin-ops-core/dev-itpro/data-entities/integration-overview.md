@@ -45,14 +45,14 @@ The following table lists the integration patterns that are available.
 
 | Pattern                       | Documentation |
 |-------------------------------|---------------|
-| OData                         | [OData](odata.md) |
-| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data package API](data-management-api.md) |
-| Custom service                | [Custom services](custom-services.md) |
-| Consume external web services | [Consuming external web services](consume-external-web-service.md) |
-| Excel integration             | [Office integration](../office-integration/office-integration.md) |
+| OData                         | [Open Data Protocol (OData)](odata.md) |
+| Batch data API                | [Recurring integrations](recurring-integrations.md)<br>[Data management package REST API](data-management-api.md) |
+| Custom service                | [Custom service development](custom-services.md) |
+| Consume external web services | [Consume external web services](consume-external-web-service.md) |
+| Excel integration             | [Office integration overview](../office-integration/office-integration.md) |
 
 > [!NOTE]
-> For on premise deployments, the only supported API is the [Data package API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
+> For on premise deployments, the only supported API is the [Data management package REST API](data-management-api.md). This is currently available on 7.2, platform update 12 build 7.0.4709.41184.
 
 ## Synchronous vs. asynchronous integration patterns
 
@@ -265,7 +265,7 @@ In the on-premises inventory system:
 
 ## Typical scenarios and patterns that call external web services
 
-It's typical that the application calls out to an external web service that is hosted either on-premises or by another SaaS provider. In this case, the application acts as the integration client. When you write an integration client, you should follow the same set of best practices and guidelines that you follow when you write an integration client for any other application. For a simple example, see [Consuming external web services](consume-external-web-service.md).
+It's typical that the application calls out to an external web service that is hosted either on-premises or by another SaaS provider. In this case, the application acts as the integration client. When you write an integration client, you should follow the same set of best practices and guidelines that you follow when you write an integration client for any other application. For a simple example, see [Consume external web services](consume-external-web-service.md).
 
 > [!IMPORTANT]
 > Because of security requirements, production and sandbox environments support only secured communication that uses Transport Layer Security (TLS) 1.2 or later. In other words, the target web service endpoint that the application calls out to must support TLS 1.2 or later. If the target service endpoint doesn't meet this requirement, calls fail. The exception error message resembles the following message:

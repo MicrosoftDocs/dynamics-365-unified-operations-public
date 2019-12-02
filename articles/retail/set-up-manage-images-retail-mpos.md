@@ -88,9 +88,7 @@ In the following procedures, images are set up for the Catalog entity as an exam
     [![Images dialog box](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> You can use the same procedure for all the five entities that are supported: Worker, Customer, Catalog, Category, and Products. "Catalog Products" (products that are set at the catalog level) and "Channel Products" (products that are set at the channel level) use the media template that is set for the Products entity. For the Products media template, you can select the number of product images to show per product. You can also set the default image for a given product. In this way, you can prevent blank images in MPOS and help to control which image is used as the default image for a product item. In the following example, each product has five images, and the first image is set as the default image. Variant products are treated the same way as master products. The file name of the image file should be based on the product number. Some characters are also escaped while the file name is generated. Therefore, it's a good to verify the file name by using the **Generate Image URLs for Excel** section.
->
-> [![Define media template dialog box](./media/prods.png)](./media/prods.png)
+> You can use the same procedure for all the five entities that are supported: Worker, Customer, Catalog, Category, and Products. "Catalog Products" (products that are set at the catalog level) and "Channel Products" (products that are set at the channel level) use the media template that is set for the Products entity. For the Products media template, you can select the number of product images to show per product. You can also set the default image for a given product. In this way, you can prevent blank images in MPOS and help to control which image is used as the default image for a product item. In the following example, each product has five images, and the first image is set as the default image. Variant products are treated the same way as master products. The file name of the image file should be based on the product number. Some characters are also escaped while the file name is generated. Therefore, it's a good to verify the file name by using the **Generate Image URLs for Excel** section. See the [Overwrite by using Edit in Excel](#overwrite-by-using-edit-in-excel) section later in this article.
 
 ## Synchronization jobs to send a media template to the channel side
 
@@ -115,8 +113,6 @@ As you learned in the previous section, the media template for a given entity su
 
     > [!IMPORTANT]
     > Whenever the media template is changed, you must click **Generate** before you can use the Edit in Excel functionality.
-
-    [![Generate Image URLs for Excel FastTab](./media/excel1.jpg)](./media/excel1.jpg)
 
     You now see a preview of the image URLs that were generated based on the last saved media template.
 

@@ -42,7 +42,7 @@ Usage
 This type of form was used when you wanted to present data that users will perceive as originating from a single data source with multiple records. This isn't a recommended pattern for new forms. No new forms should be created that use this pattern. This pattern will provide structure and stability for legacy forms, and will also provide a migration path to more modern form patterns.
 
 ## Wireframe
-[![Wireframe](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
+[![Wireframe for Task Single form](./media/tasksingle1-1024x577.png)](./media/tasksingle1.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -121,4 +121,4 @@ This section will have answers to frequently asked questions that are related to
 
 ### AX 2012 content
 
-[![AX 2012 visual example](./media/tasksingle4.png)](./media/tasksingle4.png)
+[![Previous version visual example](./media/tasksingle4.png)](./media/tasksingle4.png)

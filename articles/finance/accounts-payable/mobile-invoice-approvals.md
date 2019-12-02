@@ -144,13 +144,19 @@ As a general guidance, when working with the mobile designer, make sure to 'publ
 
 The first mobile page that you should design is the list of invoices that are assigned to the user for review. To design this mobile page, use the **VendMobileInvoiceAssignedToMeListPage** page. Before you complete this procedure, make sure that at least one vendor invoice is assigned to you for review, and that the invoice line has two distributions. This setup meets the requirements for this scenario.
 
-1.  In the URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  In the URL, replace the name of the menu item with **VendMobileInvoiceAssignedToMeListPage** to open the mobile version of the **Pending vendor invoices assigned to me** list page in the **Accounts payable** module. Depending on the number of invoices that you have in your system assigned to you, this page will show those invoices. To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice assigned to you which is going to allow you to design the mobile page. The new pages that are available have been designed specifically for developing mobile scenarios for vendor invoice. Therefore, you must use these pages. The URL should resemble the following URL, and after you enter it, the page that is shown in the illustration must appear: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
+
+    [![Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    
 2.  Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**
 3.  Select your workspace and click **Edit**
 4.  Click **Add page** to create the first mobile page.
 5.  Enter a name, such as **My vendor invoices**, and a description, such as **Vendor invoices assigned to me for review**.
 6.  Click **Done**.
-7.  In the mobile designer, on the **Fields** tab, click **Select fields**. The columns on the list page must resemble the following illustration. [![Columns on the Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+7.  In the mobile designer, on the **Fields** tab, click **Select fields**. The columns on the list page must resemble the following illustration. 
+
+    [![Columns on the Pending vendor invoices assigned to me page](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    
 8.  Add the required columns from the list page that must be shown to the users in the mobile page. The order in which you add is the order in which the fields will be displayed to the end user. The only way to change the ordering of the fields will be by re-selecting all the fields. Based on the requirements for this scenario, the following eight fields are required. However, some users might consider eight fields too much information to have on a mobile device. Therefore, we will show only the most important fields in the mobile list view. The remaining fields will appear in the details view that we will design later. For now, we will add the following fields. Click the plus sign (**+**) in these columns to add to the mobile page.
     - Vendor name
     - Invoice total
@@ -158,8 +164,10 @@ The first mobile page that you should design is the list of invoices that are as
     - Invoice number
     - Invoice date
 
-    After the fields are added, the mobile page must resemble the following illustration. 
-    [![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+  After the fields are added, the mobile page must resemble the following illustration. 
+    
+   [![Page after fields are added](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+
 9.  You must also add the following columns now, so that we can enable workflow actions later.
     - Show complete task
     - Show delegate task
@@ -175,16 +183,26 @@ The first mobile page that you should design is the list of invoices that are as
 
 ### Vendor invoice details
 
-To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. [![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+To design the invoice details page for mobile, use the **VendMobileInvoiceHeaderDetails** page. Note that, depending on the number of invoices that you have in your system, this page shows the oldest invoice (the invoice that was created first). To find a specific invoice, you can use the filter on the left. However, we don’t require a specific invoice for this example. We just require some invoice data so that we can design the mobile page. 
+
+[![Workflow page](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. In the URL, replace the name of the menu item with **VendMobileInvoiceHeaderDetails** to open the form
+
 2. Open the mobile designer from the **Settings** (gear) button.
+
 3. Click the **Edit** button to start edit mode in the workspace.
+
 4. Select the **My vendor invoices** page that you created earlier, and then click **Edit**.
+
 5. On the **Fields** tab, click the **Grid** column heading.
+
 6. Click **Properties &gt; Add page**. **Note:** When you click the **Grid** heading and add a page, the relationship with the details page is established automatically.
+
 7. Enter a page title, such as **Invoice details**, and a description, such as **View invoice header and line details**.
+
 8. Click **Select fields**. Note that, the order in which you add is the order in which the fields will be displayed to the end user. The only way to change the ordering of the fields will be by re-selecting all the fields. 
+
 9. Add the following fields from the header, based on the requirements for this scenario:
    - Vendor name
    - Invoice total
@@ -203,9 +221,13 @@ To design the invoice details page for mobile, use the **VendMobileInvoiceHeader
     - 1099 amount
 
 11. After all the fields from the previous two steps have been added, click **Done**. The page must resemble the following illustration.
+    
     [![Page after fields are added](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+
 12. Click **Done** to exit edit mode.
+
 13. Click **Back** and then **Done** to exit the workspace
+
 14. Click **Publish workspace** to save your work
 
 ### Workflow actions
@@ -301,12 +323,19 @@ To add workflow actions, use the **VendMobileInvoiceHeaderDetails** page. To ope
 ### Vendor invoice attachments
 
 1. Click the **Settings** (gear) button in the upper right of the page, and then click **Mobile app**
+
 2. Click the **Edit** button to start edit mode in the workspace.
+
 3. Select the <strong>Invoice details **page that you created earlier, and then click **Edit</strong>.
+
 4. Set the **Document management** option to **Yes** as shown below. **Note:** If there are no requirements to show attachments on the mobile device, you can leave this option set to **No**, which is the default setting.
+   
    ![Document management](./media/docmanagement-216x300.png)
+
 5. Click **Done** to exit edit mode.
+
 6. Click **Back** and then **Done** to exit the workspace
+
 7. Click **Publish workspace** to save your work
 
 ### Vendor invoice line distributions
@@ -317,12 +346,19 @@ The requirements for this scenario confirm that there will be only line-level di
 > Knowing the requirements helps us decide which specific page to use and how exactly to optimize the mobile experience for the user when we design the scenario. In the second scenario, we will use a different page to show the distributions, because the requirements for that scenario differ.
 
 1.  In the URL, replace the name of the menu item, as you did before. The page that appears should resemble the following illustration.
+
 [![All distributions page](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+
 2.  Open the mobile designer from the **Settings** (gear) button.
+
 3.  Click the **Edit** button to start edit mode in the workspace. **Note:** You will see that two new pages were created automatically. The system creates these pages, because you turned on document management in the previous section. You can ignore these new pages.
+
 4.  Click **Add page**.
+
 5.  Enter a page title, such as **View accounting**, and a description, such as **View accounting for the invoice**.
+
 6.  Click **Done**.
+
 7.  On the **Fields** tab, click **Select fields**, select the following fields from the distributions page, and then click **Done**:
     1.  Amount
     2.  Currency
@@ -330,8 +366,11 @@ The requirements for this scenario confirm that there will be only line-level di
 
     > [!NOTE] 
     > We didn’t select the **Description** column from the distributions grid, because the requirements for this scenario confirmed that the extended price is the only amount that there will be distributions for. Therefore, the user won’t require another field to determine the amount type that the distribution is for. However, in the next scenario, we **will** use this information, because the requirements for that scenario specify that other amount types have distributions (for example, sales tax).
+
 8.  Click **Done** to exit edit mode.
+
 9.  Click **Back** and then **Done** to exit the workspace
+
 10. Click **Publish workspace** to save your work
 
 > [!NOTE] 

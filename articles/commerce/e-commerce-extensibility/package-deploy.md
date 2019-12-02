@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -49,7 +49,7 @@ The command should be run from the root directory of your local online software 
 Here is an example.
 
 ``` bash
-c:\repos\D365.Commerce.Fabrikam>yarn d365 pack
+c:\repos\D365.Commerce.Fabrikam>yarn msdyn365 pack
 ```
 
 ## Upload a package by using LCS
@@ -127,3 +127,9 @@ You can now track the deployment status in the **Details** section.
 !["Details" section of "E-Commerce (Preview)" tab in LCS project dashboard](media/lcs-deploy-16.png)
 
 After the deployment is completed, you should see your changes in the authoring tools or on pages that are rendered. For example, new modules or themes will be available to page authors, or changes are rendered and will appear in the online environment.
+
+## Additional resources
+
+[SDK and core library updates](sdk-updates.md)
+
+[Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/)

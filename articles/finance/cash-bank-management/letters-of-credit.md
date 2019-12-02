@@ -51,10 +51,10 @@ A letter of credit can be revocable or irrevocable. The nature of a letter of cr
 
 For more information, see the following topics:
 
-[Import a letter of credit](tasks/import-letter-credit.md)
+[Import letter of credit](tasks/import-letter-credit.md)
 
-[Export a letter of credit](tasks/export-letter-credit.md)
+[Export letter of credit](tasks/export-letter-credit.md)
 
-[Create a bank facility for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
+[Create a bank facility agreement for a letter of credit](tasks/create-bank-facility-agreement-letter-credit.md)
 
 

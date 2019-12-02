@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -118,3 +118,18 @@ To configure a container module on a page, follow these steps.
 1. In the properties pane on the right, expand the nested controls by selecting the headers, and set any required control values.
 1. In the outline pane on the left, select the ellipsis button next to the name of either the container or any slots inside the container, and then select **Add Module**. Then add child modules to the selected container. For more information, see the [Add a module](#add-a-module) procedure earlier in this topic.
 1. If multiple child modules exist as siblings in a parent container, you can change their display order in the parent container. Select the ellipsis button for a module, and then use the up arrow and down arrow buttons.
+
+## Additional resources
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Add a container module to a page](add-container-module.md)
+
+[Add content placement modules to a page](add-content-placement-modules.md)
+

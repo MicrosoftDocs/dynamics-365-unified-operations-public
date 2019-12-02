@@ -55,7 +55,7 @@ When the Document Routing Agent runs as a desktop application, it continues to t
 ## Install the latest build
 1. Save a copy of the current Document Routing Agent configuration file. This file is located at C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config. In this path, &lt;UserID&gt; is the Active Directory Domain Services (AD DS) user name that the Document Routing Agent was installed under.
 2. Uninstall the current version of the Document Routing Agent.
-3. Install the latest version of the Document Routing Agent by following the instructions in [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md).
+3. Install the latest version of the Document Routing Agent by following the instructions in [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md).
 
     > [!NOTE]
     > Although you install the application at this point, don't run it yet.

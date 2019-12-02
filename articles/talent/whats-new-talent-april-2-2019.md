@@ -67,7 +67,7 @@ For more information about Platform update 25 for Finance and Operations, see [P
 In many organizations, compensation and benefits managers might only have access to certain compensation records. These might include records for executives or regional employees. This change allows HR to manage and maintain compensation plans for different employee groups in the organization. You can assign security roles to fixed and variable plans. These security roles determine access to plans and related employee data, such as salary or bonus records, so that only those roles can process compensation for the employee groups.
 
 ### Upgrade to Common Data Service
-Deadlines to upgrade to Common Data Service are rapidly approaching. Sign in to the PowerApps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Deadlines to upgrade to Common Data Service are rapidly approaching. Sign in to the Microsoft Power Apps Admin center to determine if your database needs to be upgraded. For more information about deadlines and necessary steps to upgrade, see [Upgrade to Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## In preview
 

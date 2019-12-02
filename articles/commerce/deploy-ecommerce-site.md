@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Deploy a new e-Commerce site
-description: This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
+title: Deploy a new e-Commerce tenant
+description: This topic describes how to deploy a new e-Commerce tenant by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +29,12 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Deploy a new e-Commerce site
+# Deploy a new e-Commerce tenant
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
+This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Overview
 	
@@ -54,22 +54,22 @@ Use this procedure to initialize the e-Commerce feature in an existing environme
 
 Before you begin, make sure that you have the following required information:
 
-- The RCSU that will be used
-- The Microsoft Azure Active Directory (Azure AD) security group that will be used for system admins
-- The domains that will be associated with the environment
+- The RCSU that will be used.
+- The Microsoft Azure Active Directory security group that will be used for e-Commerce system admins.
+- The Microsoft Azure Active Directory security group that will be used for ratings and reviews moderators.
+- The domains that will be associated with the environment.
 
 In addition, you can collect the following optional information:
 
 - Azure AD business-to-consumer (B2C) information:
 
-	- Tenant Name
-	- Client ID
-	- Login Custom Domain
-	- Reply URL
-	- SignUp SignIn Policy ID
-	- Reset password Policy ID
-	- Edit Profile Policy ID
-	- The security group that will be used for moderation of ratings and reviews
+	- Tenant Name.
+	- Client ID.
+	- Login Custom Domain.
+	- Reply URL.
+	- SignUp SignIn Policy ID.
+	- Reset password Policy ID.
+	- Edit Profile Policy ID.
 
 [!NOTE]
 This information can be added later, through a service request.
@@ -90,3 +90,19 @@ When e-Commerce is initialized from LCS, the system provisions several component
 ## Access the authoring environment
 
 To access the authoring environment, go to the **e-Commerce** tab on the **Retail management** page. There, you will find links to your e-Commerce site and the site management tool.
+
+## Additional resources
+
+[Online store overview](online-store-overview.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)

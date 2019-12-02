@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dynamics 365 for Finance and Operations Learning Catalog
+title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article
@@ -8,7 +8,7 @@ ms.author: margoc
 ---
 # Learning catalog for Finance and Operations
 
-Find the right online training, in person workshops, and events for your role as a user of Microsoft Dynamics 365 for Finance and Operations. 
+Find the right online training, in person workshops, and events for your role as a user of Finance and Operations applications. 
 
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
@@ -67,7 +67,7 @@ Find the right online training, in person workshops, and events for your role as
 
     ### Developers
 
-    Do you need to write code to integrate with other data sources,extend core system functionality, or build a complex application?
+    Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
     [Developer Learning Catalog](learning-catalog-developer.md)
 

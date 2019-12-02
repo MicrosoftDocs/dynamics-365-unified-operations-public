@@ -30,11 +30,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Loop statements: for, while, and do...while
+# X++ loop statements
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes loop statements in X++. There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
+This topic describes loop statements in X++. 
+
+There are three loop statements: **for**, **while**, and **do**...**while**. A loop repeats its statement until the condition that is set for the loop is **false**. Within the loop statements, you can use **break** and **continue** statements.
 
 ## for loops
 
@@ -42,7 +44,11 @@ The syntax of a **for** loop is:
 
 **for (** *initialization* **;** *test* **;** *increment* **) {** *statement* **}**
 
-The **for** loop repeatedly executes **statement** for as long as the conditional expression *test* is **true**. *statement* can be a block of statements. The body of the **for** loop (*statement*) might be executed zero or more times, depending on the results of *test*. A **for** loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays, because they have a fixed number of elements. You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element.
+The **for** loop repeatedly executes **statement** for as long as the conditional expression *test* is **true**. *statement* can be a block of statements. The body of the **for** loop (*statement*) might be executed zero or more times, depending on the results of *test*. 
+
+A **for** loop differs from other loops because an initial value can be assigned to a control variable, and because there is a statement for incrementing or decrementing the variable. These additions make a **for** loop especially useful for traversing lists, containers, and arrays because they have a fixed number of elements. 
+
+You can also apply a statement to each element and increment your way through the elements, setting the condition to test for the last element.
 
 ### Example of a for loop
 
@@ -138,7 +144,7 @@ The **break** statement within a loop is used to terminate that loop. Execution 
 
 ### Example of a break statement
 
-Break statement example within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
+This example is uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
 
 ```X++
 var mainMenu = SysDictMenu::newMainMenu();

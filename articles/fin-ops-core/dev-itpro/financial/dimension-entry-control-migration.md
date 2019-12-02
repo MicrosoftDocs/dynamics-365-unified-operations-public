@@ -42,7 +42,7 @@ Simple migration scenario - PurchTable form
 1.  Search for the **PurchTable** form in the **Application Explorer**.
 2.  Add the form to the current project.
 3.  Open the form in the designer and code editor view.
-4.  In the form design view
+4.  In the form design view:
     1.  Locate the dimension entry controls (DECs), either by manually in the control tree or by searching for "DimensionEntry" in the search bar below the **File** tab.
     2.  Select the first **DEC** (DimensionEntryControlHeader) and verify the following:
         -   The type for the control, specified in parenthesis next the control, is Dimension Entry Control.
@@ -137,8 +137,8 @@ Simple migration scenario - PurchTable form
 
 ## Additional resources
 
-- [Dimension Entry control uptake](dimension-entry-control-uptake.md)
-- [Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
+- [Uptake of Dimension Entry controls](dimension-entry-control-uptake.md)
+- [Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
 
 
 

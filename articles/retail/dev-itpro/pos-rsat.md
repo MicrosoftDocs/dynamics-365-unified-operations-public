@@ -5,7 +5,7 @@ title: Test recorder and Regression suite automation tool for Retail Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -40,7 +40,7 @@ This topic explains how to use the new test recorder tool in Retail Cloud POS to
 This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later.
+> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later. Currently, POS RSAT is in preview. This means that it's not available in a public download version. If you would like to try the preview version, please create a support ticket.
 
 ## Test recorder
 
@@ -211,9 +211,15 @@ When you use validation mode during a recording session, users can then validate
 
 After you end a recording session, you can download the recording by selecting **Save to this PC**.
 
-[![Save test recorder output file](./media/Save.png)](./media/Save.png)
+> [!div class="mx-imgBorder"]
+> ![Save test recorder output file](media/Save.png)
 
-The Recording.xml file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps. You must then either delete it from the file system or secure it.
+The .axtr file is saved to the local file system. You must manually upload this file to LCS or Azure DevOps and then either delete it from the file system or secure it. 
+
+To upload to Azure Dev Ops directly:
+1. Change the .axtr file extension to .zip.
+2. Open the .zip package. 
+3. Inside the package there will be file with name Recording.xml. Upload the Recording.xml to the test case in Azure DevOps. Don’t upload the entire .zip or .axtr package.
 
 ## Install RSAT
 
@@ -224,6 +230,14 @@ Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regre
 
 The following procedure describes the configuration that is required to run the Retail POS test cases.
 
+If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
+
+```Xml
+<add key="RetailPos" value="true" />
+```
+
+If this setting is not used, Retail POS tab will not be shown on the **RSAT Settings** tab.
+
 ### Configure the Retail POS settings
 
 1. Open RSAT from your desktop.
@@ -232,13 +246,17 @@ The following procedure describes the configuration that is required to run the 
 
     + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
     + **Retail server URL** – Enter the Retail Server URL that should be used for device activation, if the device hasn't already been activated.
-    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
-    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
-    + **Store** – Enter the ID of the store (retail channel) where the test should be run.
-    + **Device** – Enter the ID of the device where the test should be run.
-    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
-    [![Playback environment](./media/Setting.png)](./media/Setting.png)
+> [!NOTE]
+> The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+   
+   + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
+   + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
+   + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
+   + **Device** – Enter the ID of the device where the test should be run.
+   + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
+
+ [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
 
 5. Select the **POS login credentials** tab.
 
@@ -336,8 +354,28 @@ You must manually delete these files and secure them as you require. All these f
 
 ### Creating test cases by using the test recorder
 
-+ Make sure that all your recordings start from the POS sign-in screen.
++ Make sure that all your recordings start from the POS log-in screen.
 + Keep individual recordings short, and focus on a business task that is performed by one user, such as the creation a sale transaction. This approach makes it easier to maintain and reuse test cases.
 + Don't record any scenario that includes secrets.
 + Recording and playback must be done in the same screen layout and at the same resolution. If recording and playback are done in different layouts and at different resolutions, playback will fail.
 + You can't change the POS user name during playback of a recording. When you make a recording, always use the same user name that will be used later for playback.
++ Recording the POS activation flow is not supported.
++ Keystroke recording performance may be slow, so type slowly while recording so that all the events are captured property.
++ Peripheral emulation is currently not supported, use a keyboard wedge-based device.
++ Don’t hold a key down during recording, as this could record multiple key press events.
+
+## Troubleshooting guides
+
+### Chrome driver
+
+If playback fails by flickering (opens and closes browser multiple times without starting playback), this could be related to the Chrome driver version. Check the error log in the RSAT tool. If the error states that the Chrome driver version is not supported, then download the supported chromedriver.exe version mentioned in the error message and paste it in the …\Regression Suite Automation Tool\Common\External\Selenium folder.  You can download the Chrome driver from [ChromeDriver](https://chromedriver.chromium.org/downloads).
+
+### .NET standard error
+
+If you get the following 'netstandard’ error, install .NET Framework 4.8 runtime. You can download the .NET Runtime from [Download SDKs](https://dotnet.microsoft.com/download/visual-studio-sdks).
+
+Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51' or one of its dependencies. The system cannot find the file specified at Microsoft.Dynamics.Commerce.PosPlayback.RecordingsRunner.Program.Main(String[] args).Multifactor authentication:
+
+### Multifactor authentication
+
+If multifactor authentication is enabled for the device activation user, then playback may fail. If possible, disable the multifactor authentication for the activation user temporarily. After the activation is completed, then re-enable the multifactor authentication. Activation will be required only for the first-time playback. We recommend that you discuss this approach with your security experts before making this change.

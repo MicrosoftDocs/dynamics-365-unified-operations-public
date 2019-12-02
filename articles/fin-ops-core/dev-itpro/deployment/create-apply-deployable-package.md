@@ -62,7 +62,7 @@ On a development environment, after you have completed development and testing, 
 4.  Upload the deployable package that you created earlier.
 
 ## Apply a deployable package
-To apply a deployable package to an environment, see the article [Apply a deployable package](apply-deployable-package-system.md).
+To apply a deployable package to an environment, see the article [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 ## Remove a deployable package
-To uninstall or remove a deployable package from an environment, see the article [Uninstall (remove) a module (package)](uninstall-deployable-package.md).
+To uninstall or remove a deployable package from an environment, see the article [Uninstall a package](uninstall-deployable-package.md).

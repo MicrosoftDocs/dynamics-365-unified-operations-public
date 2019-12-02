@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -132,7 +132,7 @@ Locking the platform paves the way for seamless servicing and continuous update 
 
 ## Lifecycle Services
 
-Lifecycle Services (LCS) releases new features every month. For information about what's new, visit the [LCS blog](https://blogs.msdn.microsoft.com/lcs/). Use the search term, "release notes" to search for and view the monthly release and new feature information.
+Lifecycle Services (LCS) releases new features every month. For information about what's new, visit the [LCS blog](https://blogs.msdn.microsoft.com/lcs/). Use the search term, "release plans" to search for and view the monthly release and new feature information.
 
 ## Client
 
@@ -145,7 +145,7 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 
 | What you can do | Why is this important |
 |-----------------|-----------------------|
-| Design mobile workspaces to enable your users to stay productive while on the move. | Dynamics 365 for Operations brings support for a mobile phone app (available on the iTunes App Store for iPhones, Google Play Store for Android phones, and Windows Store for Window phones). The mobile approach allows you to reuse business logic and modeling from the product while enabling rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions in order to include customizations made to the product. For more information, see [Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md). |
+| Design mobile workspaces to enable your users to stay productive while on the move. | Dynamics 365 for Operations brings support for a mobile phone app (available on the iTunes App Store for iPhones, Google Play Store for Android phones, and Windows Store for Window phones). The mobile approach allows you to reuse business logic and modeling from the product while enabling rich offline and mobile interactions, and an easy-to-use designer experience. Developers can create simplified forms in Microsoft Visual Studio and then design mobile pages that expose this functionality. This mobile solution makes it easy to change the forms and mobile app definitions in order to include customizations made to the product. For more information, see [Mobile platform resources](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md). |
 
 ## Analytics
 
@@ -198,4 +198,4 @@ Lifecycle Services (LCS) releases new features every month. For information abou
 
 ## Additional resources
 
-[What's new or changed](whats-new-changed.md)
+[What's new or changed in Finance and Operations home page](whats-new-changed.md)

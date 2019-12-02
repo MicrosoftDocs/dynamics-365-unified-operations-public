@@ -63,25 +63,28 @@ Checklist to follow before activation
 1.  Open the initial device activation page for Modern POS or Cloud POS. You're prompted to sign in.
 2.  On the **Before you start** page, follow the instructions, and then click **Next**.
 
-    ![p24](./media/p24.png)
+    ![POS Wizard, before you start page](./media/p24.png)
 
 3.  Start Cloud POS or Modern POS.
-4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Configure, install, and activate Retail Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
 
-    [![p18](./media/p18.png)](./media/p18.png)
+    [![POS Wizard, add server URL page](./media/p18.png)](./media/p18.png)
 
 5.  Click **Next** to populate the list of stores.
 6.  Select the correct store in the list.
 
-    [![p20](./media/p20.png)](./media/p20.png)
+    [![POS Wizard, select the store page](./media/p20.png)](./media/p20.png)
 
-7.  Select the correct register and device. **Note:** The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. 
+7.  Select the correct register and device. 
 
-    [![p22](./media/p22.png)](./media/p22.png)
+    > [!NOTE]
+    > The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. 
+
+    [![POS Wizard, select register and device page](./media/p22.png)](./media/p22.png)
 
 8.  Click **Activate**. The device should be activated. 
 
-    [![p23](./media/p23.png)](./media/p23.png)
+    [![POS Wizard, device activated page](./media/p23.png)](./media/p23.png)
 
 ## Create a device ID from Modern POS and Cloud POS
 We have added features to create a device (that is, automatically generate a device ID) from Modern POS or Cloud POS, so that the device can be associated with a register that doesn't yet have devices mapped to it. This functionality can be used in Modern POS only if you set the HQ settings as follows.
@@ -107,9 +110,9 @@ Modern POS starts in Manual entry mode, and the Retail Server URL, device ID, an
 ## Activate the device for Cloud POS by using syntactic sugar
 IT Pros can now configure device activation for Cloud POS by providing the device ID and register ID as the part of the Cloud POS URL. The link is available in the **Cloud POS URL** field on the **Devices** page. (**Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**). 
 
-[![Cloud POS URL field](./media/p15_11_16.png)](./media/p15_11_16.png) 
-
 Cloud POS starts in Manual entry mode, and the Retail Server URL, device ID, and register ID are pre-populated for activation.
+
+[![Cloud POS URL field](./media/p15_11_16.png)](./media/p15_11_16.png) 
 
 
 

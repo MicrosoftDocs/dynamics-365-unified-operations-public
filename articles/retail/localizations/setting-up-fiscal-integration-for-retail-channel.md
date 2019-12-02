@@ -213,7 +213,7 @@ The error handling options that are available in the fiscal integration are set 
 
 To enable fiscal X/Z reports to be run from the POS, you should add new buttons to a POS layout.
 
-- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+- On the **Button grids** page, follow the instructions in [Add POS operations to POS layouts by using Button grid designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
 
     1. Select the layout to update. 
     2. Add a new button, and set the **Print fiscal X** button property.
@@ -224,7 +224,7 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
 
 To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.
 
-- On the **Button grids** page, follow the instructions in [Add a custom operation button to the POS layout in Retail headquarters](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
+- On the **Button grids** page, follow the instructions in [Add POS operations to POS layouts by using Button grid designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
 
     1. Select the layout to update.
     2. Add a new button, and set the **Complete fiscal registration process** button property.

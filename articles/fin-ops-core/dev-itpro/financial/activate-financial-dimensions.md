@@ -5,7 +5,7 @@ title: Financial dimension activation
 description: This topic contains information about the activating financial dimension process.
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,7 +50,7 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 
 ## Additional resources
 
-[Set up financial dimensions (Task guide)](../../financials/general-ledger/tasks/define-financial-dimensions.md)
+[Define financial dimensions](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
 
 [Maintenance mode](../sysadmin/maintenance-mode.md)
 

@@ -55,7 +55,9 @@ Overview
 -   Provide visual impact.
 -   Be constructed using prescriptive patterns and best practices that lead to minimal COGS and fast response times.
 
-[![WorkspaceDiagram\_OpWork](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) To accomplish these goals, the operation workspace pattern was developed.
+[![Example of a workspace](./media/workspacediagram_opwork.png)](./media/workspacediagram_opwork.png) 
+
+To accomplish these goals, the operation workspace pattern was developed.
 
 ### Examples
 

@@ -5,7 +5,7 @@ title: Planned maintenance window FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: manalidongre
 manager: AnnBe
-ms.date: 08/29/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 ### What is a planned maintenance window?
-A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-and-ops/get-started/one-version.md) to your cloud service.
+A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-ops/get-started/one-version.md) to your cloud service.
 
 ### How does a planned maintenance window work?
 For planned maintenance scheduled on your Tier 2 through Tier 5 sandbox environments and production environments, Microsoft will send a notification to all stakeholders **five business days** before the start of the patching window. The patching window is the period when the environment is patched. It's defined by geographic region. Details about the maintenance activity will be included in the notification that is sent to stakeholders. For Microsoft-managed Tier 1 environments, we will not send any notifications before the update. 
@@ -63,7 +63,7 @@ Any partner, independent software vendor (ISV), and other interested party who w
 Microsoft is continually working to reduce the necessity of downtime for the service, and many regular maintenance tasks don't incur downtime. However, to help guarantee the most predictability, Microsoft can't yet do all patching in zero downtime.
 
 ## Microsoft service updates 
-A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-and-ops/get-started/one-version.md).
+A separate set of frequently asked questions (FAQ) provides details about service updates that are done by Microsoft. See [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
 
 ## Infrastructure updates 
 
@@ -99,10 +99,9 @@ If the patching fails during an operating system–level update, the specific pa
 ### Will I be compensated if the update takes longer than the scheduled maintenance window?
 If the update takes longer than the scheduled maintenance window, the extra time is considered unplanned downtime and is subject to the general service level agreement (SLA).
 
-### Can I reschedule the planned maintenance?
-Microsoft doesn't offer an option to reschedule a planned maintenance. However, you can select to be excluded from the maintenance cycle for the current month. 
+### How do I reschedule security maintenance activities?
+Security maintenance helps ensure a secure environment, and not doing the maintenance could potentially introduce an avoidable security risk. 
 
-### How do I opt out of the current maintenance cycle?
-To opt out of the current maintenance cycle on Tier 2 through Tier 5 sandbox environments and production environments, file a support ticket with Microsoft. The deadline for filing the support ticket to request an opt-out will be included in your notification email. Any opt-out submitted after that deadline will not be honored. Your environment will be excluded from the maintenance cycle for the current month, however your environment will be updated in the next month.
+If there is an absolute business need and you are unable to move forward with this maintenance during the timeframe listed above, you can request to reschedule the current maintenance activity for Tier 2 through Tier 5 sandbox environments and production environments by filing a support ticket with Microsoft. The deadline for filing the support ticket to request a reschedule will be included in your notification email. Any request submitted after that deadline will not be honored. 
 
-We do not allow you to opt out of the patching scheduled on Microsoft-managed Tier 1 environments.
+We do not offer rescheduling of security maintenance activities on Microsoft-managed Tier 1 environments.

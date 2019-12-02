@@ -5,7 +5,7 @@ title: Update the local agent
 description: This topic explains how to update the local agent.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 10/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 2.3.0, which was released in August 2019.
+This topic explains how to update the local agent. The latest version of the local agent is version 2.3.1, which was released in September 2019.
 
 | Local agent version | Capability | 
 |---------------------|------------|
@@ -55,7 +55,7 @@ This topic explains how to update the local agent. The latest version of the loc
 - This release removes the monitoring agent and introduces a new service called LBDTelemetry, which will be used to install the ETWManifests.
 
 > [!IMPORTANT]
-> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot Finance + Operations deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
+> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
 
 ## What's new in local agent 2.1.0?
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.

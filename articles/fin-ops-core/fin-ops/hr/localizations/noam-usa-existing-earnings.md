@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 
-This topic doesn't discuss retroactive earnings. For information about retroactive earnings, see [Generate earnings](noam-usa-generate-earnings.md).
+This topic doesn't discuss retroactive earnings. For information about retroactive earnings, see [Generate earnings for workers](noam-usa-generate-earnings.md).
 
 ## If required: Hold earnings from payment processing
 
@@ -63,7 +63,7 @@ To release earnings statement lines, follow these steps.
 5. Click **OK** to change all the earnings statement lines that have a payment status of **None** to **Released**, so that they can be processed.
 
     > [!NOTE]
-    > When you release an earnings statement line for an accrued benefit, such as sick time or vacation time, the number of hours on the line is verified against the minimum balance that the benefit accrual plan requires. If the balance is less than the number of hours on the line, the line isn't released. For more information, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+    > When you release an earnings statement line for an accrued benefit, such as sick time or vacation time, the number of hours on the line is verified against the minimum balance that the benefit accrual plan requires. If the balance is less than the number of hours on the line, the line isn't released. For more information, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
 
 ## If required: Change earnings statements
 
@@ -74,12 +74,12 @@ After you generate an earnings statement, you can add lines to it. You can also 
 
     - **Salaried workers** – If you change or add a line for a salaried worker, lines that have a source of **Salary** are calculated and re-created, unless you click **Calculate Salary**. This functionality helps guarantee that salaried workers don't receive more or less than their usual amount for the pay period. We recommend that you keep the **Calculate Salary** functionality turned on unless you're terminating a worker's employment.
     - **Overtime premiums** – Earnings statement lines that have a rate basis of **Regular rate of pay** are used to create overtime premiums. These lines are calculated based on all other earnings statement lines for nondiscretionary earnings. Therefore, after you change any earnings statement line, you must delete all lines that have a rate basis of **Regular rate of pay** and then add those lines again. Otherwise, the **Regular rate of pay** lines might not be correct.
-    - **Retroactive earnings** – You can change retroactive earning lines, but you can't change the original retroactive rate that the earnings statement line originated from. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md).
+    - **Retroactive earnings** – You can change retroactive earning lines, but you can't change the original retroactive rate that the earnings statement line originated from. For more information, see [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md).
 
 ## Next step
 
-After you finalize all the earnings, you're ready to generate pay statements. For more information, see [Work with pay statements](noam-usa-pay-statements.md).
+After you finalize all the earnings, you're ready to generate pay statements. For more information, see [Generate and work with pay statements](noam-usa-pay-statements.md).
 
 ## Additional resources
 
-[Earnings and the earnings generation process Q&A](noam-usa-earnings-generation-process.md)
+[Earnings and earnings generation FAQ](noam-usa-earnings-generation-process.md)

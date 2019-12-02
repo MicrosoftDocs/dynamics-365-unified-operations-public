@@ -5,7 +5,7 @@ title: Business intelligence (BI) and reporting home page
 description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -54,7 +54,7 @@ To learn more, see the following topics:
 - [Power BI Embedded integration](power-bi-embedded-integration.md)
 - [Add analytics to workspaces by using Power BI Embedded](add-analytics-tab-workspaces.md)
 - [Help secure analytical workspaces and reports by using Power BI Embedded](secure-analytical-workspaces.md)
-- [Power BI content for Finance and Operations](power-bi-home-page.md)
+- [Power BI content home page](power-bi-home-page.md)
 
 ## Business documents and printing
 Reporting solutions are often used to capture and communicate the details of business transactions. Therefore, a reporting solution must be able to produce physical manifestations of business data by using existing devices, such as network printers. Examples of business documents include sales invoices, customer statements, and checks.
@@ -63,9 +63,9 @@ Reporting solutions are often used to capture and communicate the details of bus
 
 To learn more, see the following topics:
 
-- [Document Reporting Services overview](document-reporting-services.md)
-- [Printing in Finance and Operations applications](print-documents.md)
-- [Install the Document Routing Agent to enable network printer devices](install-document-routing-agent.md)
+- [Document Reporting Services](document-reporting-services.md)
+- [Document printing overview](print-documents.md)
+- [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md)
 
 ## Electronic reporting
 Electronic reporting (ER) is the tool that you use to configure electronic document formats that comply with the legal requirements of various countries or regions. The applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
@@ -74,9 +74,9 @@ Electronic reporting (ER) is the tool that you use to configure electronic docum
 
 To learn more, see the following topics:
 
-- [Electronic reporting overview](general-electronic-reporting.md)
-- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Create an Electronic reporting configuration](electronic-reporting-configuration.md)
+- [Electronic reporting (ER) overview](general-electronic-reporting.md)
+- [MManage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 
 ## Financial reporting
 Standard financial reports are provided that use the default main account categories. You can use the report designer to create or modify traditional financial statements, such as income statements and balance sheets. You can then share the results with other members of your organization. Examples of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
@@ -85,14 +85,14 @@ Standard financial reports are provided that use the default main account catego
 
 To learn more, see the following topics:
 
-- [Financial reporting for Finance and Operations](financial-reporting-intro.md)
-- [Generate a financial report](generate-financial-report.md)
+- [Financial reporting](financial-reporting-intro.md)
+- [Generate financial reports](generate-financial-report.md)
 - [Financial report components](financial-report-components.md)
 
 ## Technical reference reports
 The following reports provide reference information about the objects:
 
-- [Data entities report](../data-entities/data-entities-report.md)
+- [Find information about standard data entities](../data-entities/data-entities-report.md)
 - [License codes and configuration keys report](../sysadmin/license-codes-configuration-keys-report.md)
-- [SQL Server Reporting Services reports report](SSRS-report.md)
-- [Workflow types report](../../fin-and-ops/organization-administration/workflow-types-report.md)
+- [SQL Server Reporting Services (SSRS) reports that are available](SSRS-report.md)
+- [Workflow types report](../../fin-ops/organization-administration/workflow-types-report.md)

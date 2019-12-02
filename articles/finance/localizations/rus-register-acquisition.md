@@ -51,7 +51,7 @@ Before you can register the purchase of a fixed asset, the asset must be registe
 6.  Create a new line.
     
     > [!NOTE]
-    > <P>The posting date and voucher number are displayed in the <STRONG>Date</STRONG> and <STRONG>Voucher</STRONG> fields.</P>
+    > The posting date and voucher number are displayed in the <STRONG>Date</STRONG> and <STRONG>Voucher</STRONG> fields.
 
 7.  In the **Account type** field, select the **Vendor** account type. 
   
@@ -83,7 +83,7 @@ You can register the purchase of a fixed asset by creating a purchase order. Bef
 
 1.  Go to **Product information management** \> **Common** \> **Released products**.
 
-2.  Create a new item and in the **Item type** field, select **Service** or **Item**. On the **General** tab, fill in the **FA group** field. For more information, see **[Create released product](../../supply-chain/pim/tasks/create-released-product-single-company.md)**.
+2.  Create a new item and in the **Item type** field, select **Service** or **Item**. On the **General** tab, fill in the **FA group** field. For more information, see [Create a released product for a single company](../../supply-chain/pim/tasks/create-released-product-single-company.md).
 
     > [!NOTE]
     > The information provided on the purchase line determines whether the fixed asset belongs to the specified fixed asset group.

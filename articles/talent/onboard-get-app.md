@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
 ---
 
-# Get the Dynamics 365 Talent: Onboard app
+# Get the Dynamics 365 Talent - Onboard app
 
 [!include [banner](includes/banner.md)]
 
@@ -45,9 +45,9 @@ During the trial or purchase process, you will set up your Microsoft 365 email a
 > [!WARNING]
 > You can't migrate data from your trial to your paid subscription environment. <!--Reviewers: please verify.-->
 
-To find out about new features in Talent, see [What's new or changed in Dynamics 365 Talent](./whats-new.md) and [Dynamics 365 and Power Platform release notes](https://docs.microsoft.com/business-applications-release-notes/index). If you want to preview new features in Onboard, see [Access preview features in Talent](./access-preview-feature.md).
+To find out about new features in Talent, see [What's new or changed in Dynamics 365 Talent](./whats-new.md) and [Dynamics 365 and Power Platform release notes](https://docs.microsoft.com/business-applications-release-notes/index). If you want to preview new features in Onboard, see [Access preview features in Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
-If you're an IT professional and want to learn more about how the two versions of the Onboard app are provisioned, see [Provisioning for the Onboard app](./modular-app-tech-faq.md).
+If you're an IT professional and want to learn more about how the two versions of the Onboard app are provisioned, see [Provisioning for the Dynamics 365 Talent - Onboard app](./modular-app-tech-faq.md).
 
 ## Get started with Onboard
 
@@ -95,6 +95,6 @@ If you accepted the default domain name when you signed up with Onboard, you can
 ### See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

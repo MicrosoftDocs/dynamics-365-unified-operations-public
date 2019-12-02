@@ -28,7 +28,7 @@ ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 
 ---
-# Calculate depreciation (Russia)
+# Calculate depreciation for Russia
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,7 +85,7 @@ Use the following procedures to set up a depreciation method, and to calculate o
 
 The depreciation bonus is an additional depreciation amount that is assessed during the first year for some operational asset types. Before you can calculate the fixed asset depreciation bonus, you must set up a posting profile and create an acquisition journal.
 
-Use the **Depreciation bonus** page to calculate the depreciation bonus for fixed assets by using the tax non-linear group depreciation method. When you create the depreciation transactions, a depreciation bonus is calculated for every asset. The bonus amount is calculated first, and then the depreciation from the cost is calculated. This depreciation excludes the bonus. The bonus amount isn't included in the total balance of the depreciation group. For more information, see [Depreciation bonus (Russia)](rus-bonus-depreciation.md).
+Use the **Depreciation bonus** page to calculate the depreciation bonus for fixed assets by using the tax non-linear group depreciation method. When you create the depreciation transactions, a depreciation bonus is calculated for every asset. The bonus amount is calculated first, and then the depreciation from the cost is calculated. This depreciation excludes the bonus. The bonus amount isn't included in the total balance of the depreciation group. For more information, see [Depreciation bonuses (Russia)](rus-bonus-depreciation.md).
 
 ### Reverse fixed asset depreciation
 
@@ -104,5 +104,5 @@ Use the **Depreciation bonus** page to calculate the depreciation bonus for fixe
 
 ## Additional resources
 
-- [Depreciation setup (Russia)](rus-depreciation-setup.md)
+- [Set up depreciation (Russia)](rus-depreciation-setup.md)
 - [Depreciation methods (Russia)](rus-depreciation-methods.md)

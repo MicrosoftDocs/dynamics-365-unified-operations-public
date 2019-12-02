@@ -2,10 +2,10 @@
 # required metadata
 
 title: Golden configuration promotion
-description: This topic explains a golden configuration promotion for Finance and Operations applications.
+description: This topic explains a golden configuration promotion for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -171,7 +171,7 @@ When you're ready to do a mock go-live or actual go-live, you can copy the UAT e
 2. On the **Service requests** page, select **Add**, and then select **Sandbox to Production**.
 3. In the **Sandbox to Production** dialog box, follow these steps:
 
-    1. In the **Environment name** field, select the production environment.
+    1. In the **Source environment name** field, select the sandbox environment to copy the database from.
     2. Set the **Preferred downtime start date** and **Preferred downtime end date** fields. The end date must be at least one hour after the start date. To help guarantee that resources are available to run the request, submit your request at least 24 hours before your preferred downtime window.
     3. Select the check boxes at the bottom to agree to the terms.
 

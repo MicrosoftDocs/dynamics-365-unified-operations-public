@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for Finance and Operations apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 09/11/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -48,7 +48,7 @@ The following illustration shows the parts of the Help system. The in-product He
 ## Connecting the Help system
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both Retail and Talent.
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
 
@@ -85,7 +85,7 @@ You can use task guides to create custom help, or connect a website to the Help 
 
 You can create custom help for Finance, Supply Chain Management, and Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent.
 
-For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 
 ### Connect a custom site
 
@@ -96,8 +96,8 @@ Microsoft has provided a white paper and sample code that describe how to create
 
 ## Additional resources
 
-[Help overview](help-overview.md)
+[Help system](help-overview.md)
 
-[Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)
+[Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)
 
-[How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md)

@@ -39,11 +39,12 @@ This topic provides information about functionality that supports Russian regula
 - [Correspondence of accounts](rus-correspondence-accounts.md)
 - [Preview ledger transactions](rus-ledger-transactions-preview.md)
 - [Set up exchange rates for currency transactions](rus-exchange-difference.md)
-- [Import currency exchange rates from CBRF](../general-ledger/import-currency-exchange-rates.md)
+- [Import currency exchange rates](../general-ledger/import-currency-exchange-rates.md)
+- [Ledger translation](rus-ledger-translation-procedure.md)
 
 ## Advance holders
 
-- [Advance holders](rus-advance-holders.md)
+- [Russia advance holders overview](rus-advance-holders.md)
 - [Create an advance holder](emea-advance-holders.md#create-an-advance-holder)
 - [Daily operations for advance holders](rus-advance-holders-daily-operations.md)
 - [Advance reports with budget control](rus-advance-holders-reports-dailyops.md)
@@ -55,8 +56,9 @@ This topic provides information about functionality that supports Russian regula
 - [Set up bank accounts](rus-local-settings-requisites-bank-module.md)
 - [Set up and process payment orders](rus-payment-order-settings-processing.md)
 - [Exchange adjustment](rus-exchange-adjustment.md)
-- [Foreign currency sales, purchases, and transfers](/rus-currency-sale-purchase.md)
+- [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
+- [Cash - Local primary forms and unified reports](rus-local-primary-forms-and-unified-reports.md)
 
 ## VAT
 
@@ -66,6 +68,8 @@ This topic provides information about functionality that supports Russian regula
 - [Value-added tax (VAT) for tax agents](rus-tax-agent.md)
 - [VAT declaration](rus-VAT-declaration.md)
 - [Sales books, purchase books, and invoice-factures journals](rus-sales-books-purchase-books.md)
+- [Prepayments management](rus-prepayments-management.md)
+- [Incoming VAT restoring](rus-incoming-VAT-restoring.md)
 
 ## Fixed assets (Russia)
 - [Fixed assets (Russia)](rus-fixed-assets.md)
@@ -92,9 +96,12 @@ This topic provides information about functionality that supports Russian regula
 - [Set up dimension control for settlements](rus-transactions-settlement-date.md)
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
+- [Allocation of miscellaneous charges in proportion to weight and volume](rus-miscellaneous-charges.md)
+- [Third party miscellaneous charges](rus-third-party-misc-charges.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)
+- [Customs declaration numbers](rus-custom-declaration-number.md)
 
 ## Reporting
 
@@ -107,16 +114,17 @@ This topic provides information about functionality that supports Russian regula
 
 ## Organization administration
 
-- [Tax registration info related to address](emea-registration-ids.md)
+- [Registration IDs(emea-registration-ids.md)
 - [Set up officials](rus-officials.md)
 - [Company divisions](rus-company-divisions.md)
+- [Russian address formats and import from FIAS](rus-russian-address-format-and-import-from-FIAS.md)
 
 ## Deferrals
 
 - [Set up deferrals](rus-set-up-deferrals.md)
 - [Create or generate referrals](rus-create-generate-deferrals.md)
 - [Receipt of deferrals](rus-deferral-transactions.md)
-- [Write-off deferrals](rus-write-off-deferral.md)
+- [Write off deferrals](rus-write-off-deferral.md)
 - [Dispose of deferrals](rus-dispose-deferrals.md)
 - [Deferrals counting](rus-counting-deferrals.md)
 - [Reporting for deferrals](rus-reporting-deferrals.md)

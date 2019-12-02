@@ -58,13 +58,14 @@ This tool is part of the end to end flow described below. The application, along
 To learn more about this this process, see [Create and automate user acceptance tests](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
 ## Lifecycle Services
-Using Lifecycle Services (LCS) and BPM is recommended but not required. BPM is a great tool to manage and distribute test libraries, especially for Microsoft partners and independent software vendors. 
 
-You can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. Developer recording files can be created directly from the Task recorder pane.
+Using Lifecycle Services (LCS) and BPM is recommended but not required. BPM enables management and distribution of test libraries across projects and tenants, which is especially useful for Microsoft partners and independent software vendors. 
+
+If you are not using BPM, you can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. You can create developer recording files directly from the Task recorder pane.
 
 ![Save task recording as developer](media/save-as-developer.png)
 
-You must name the developer recording file **Recording.xml** before attaching it to a Azure DevOps test case. The recording file can also be named **<Test Case Title>.xml** where **<Test Case Title>** is the DevOps title of the test case.
+You must name the developer recording file **Recording.xml** before attaching it to the Azure DevOps test case. Alternatively, you can name the recording file **-Test Case Title-.xml**, where **-Test Case Title-** is the DevOps title of the test case.
 
 ![Add attachment](media/attachments.png)
 
@@ -76,7 +77,7 @@ The Regression suite automation tool is intended to be used for business cycle t
 ![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
 
 ### Unit and component testing
-For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance Test Library](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
+For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance test library resources](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
 + Lets you create consistent test data.
 + Increases the readability of test code.
 + Provides improved discoverability of the methods that are used to create test data.

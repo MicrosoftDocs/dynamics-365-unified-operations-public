@@ -73,7 +73,7 @@ Retail now contains a sample of the integration of POS with fiscal printers for 
 
 ## Additional resources
 
-### Dynamics 365 April '19 release notes
+### Dynamics 365 April '19 release plans
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 

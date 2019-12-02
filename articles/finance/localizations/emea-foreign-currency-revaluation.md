@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Currency revaluation for bank account transactions
+# Foreign currency revaluation for bank accounts
 
 [!include [banner](../includes/banner.md)]
 

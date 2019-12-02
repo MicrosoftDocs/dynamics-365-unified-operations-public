@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Prepare application-specific metadata for RCS
+# Prepare application-specific metadata for RCS and ER
 
 [!include[banner](../includes/banner.md)]
 
@@ -50,7 +50,7 @@ For this example, you want to use RCS to design an ER solution for the applicati
 > In this example, you will create a configuration for the sample company, Litware, Inc. These steps can be performed in any company.
 
 1. Go to **Organization administration \> Workspaces \> Electronic reporting**.
-2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure. 
+2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure. 
 3. Select **Metadata configurations**.
 4. Select **Create configuration**.
 5. In the drop-down dialog box, in the **Name** field, enter a name. For this example, enter **Foreign trade metadata**.
@@ -61,14 +61,14 @@ For this example, you want to use RCS to design an ER solution for the applicati
     > [!NOTE]
     > You can select all metadata either for the whole application, or for selected models or modules. In both cases, be aware that the following metadata will be automatically added: tables of records, enumerations, and extended data types (EDTs). When additional types of metadata are required, they must be manually added.
 
-You must add some metadata that is related to foreign trade transactions and manually select metadata items.
+    You must add some metadata that is related to foreign trade transactions and manually select metadata items.
 
 9. Select **Add data source \> Table records**.
 10. Filter on a value of **Intrastat** in the **Name** field.
 11. Select the **Intrastat** table record.
 12. Select **OK**.
 
-You must add metadata information about the Intrastat table of records.
+    You must add metadata information about the Intrastat table of records.
 
 13. In the tree, select **Table records Intrastat \> \>Relations \> IntrastatCommodity (Table records EcoResCategory)**.
 14. Select **Add metadata**.
@@ -102,11 +102,11 @@ The following procedure shows how an RCS user who has the **System Administrator
 
 Before you can complete this procedure, you must first complete the following procedures:
 
-- [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md)
+- [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md)
 - [Prepare application metadata that can be used in RCS](#prepare-application-metadata-that-can-be-used-in-rcs)
 
 1. Go to **All workspaces \> Electronic reporting**.
-2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure. 
+2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure. 
 3. Import the ER metadata configuration that contains metadata for the application, and that is configured to generate electronic documents for the foreign trade business domain. You created this ER metadata configuration and exported it as an XML file in the [Prepare application metadata that can be used in RCS](#prepare-application-metadata-that-can-be-used-in-rcs) procedure earlier in this topic.
 
     1. Select **Metadata configurations**.
@@ -208,7 +208,7 @@ As you require, you can extend the existing set of metadata in the application. 
 
 The following procedure shows how an RCS user who has the **System Administrator** or **Electronic Reporting Developer** role can design a new ER model mapping by using metadata of the application. Application metadata will be accessed online by using RCS connected application. A sample ER model mapping will be configured to access foreign trade transactions.
 
-To complete this procedure, you must first complete the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure in RCS. If you haven't yet completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, go to [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page to download the following ER configuration files in advance and save them locally: **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml**.
+To complete this procedure, you must first complete the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure in RCS. If you haven't yet completed the [Access application metadata by using an ER configuration](#access-application-metadata-by-using-an-er-configuration) procedure earlier in this topic, go to [Electronic Reporting Task Guides for Dynamics 365 for Finance and Operations 8.1](https://go.microsoft.com/fwlink/?linkid=2082739) page to download the following ER configuration files in advance and save them locally: **Foreign trade metadata.xml**, **Foreign trade model.xml**, and **Foreign trade mapping.xml**.
 
 
 ### Get required ER configurations

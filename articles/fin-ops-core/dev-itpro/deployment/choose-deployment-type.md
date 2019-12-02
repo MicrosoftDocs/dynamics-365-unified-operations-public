@@ -5,7 +5,7 @@ title: Deployment options
 description: Finance and Operations apps can run in the cloud or on-premises. This topic provides information about the different deployment options. 
 author: kfend
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ You can deploy Finance and Operations apps in the cloud or on-premises. Cloud de
 
 The following table provides a comparison of the capabilities provided by the two deployment options.
 
-[![Deployment options table](./media/deployment-options.PNG)](./media/deployment-options.PNG)
+[![Deployment options table](./media/deployment-options.png)](./media/deployment-options.png)
 
 
 ## Why cloud
@@ -64,5 +64,5 @@ For customers who choose to run Finance and Operations apps in their own data ce
 The additional costs to deploy and manage these capabilities might lead to higher deployment costs and a greater Total Cost of Ownership (TCO). Tools for deploying the Finance and Operations apps and updates will be available to partners and customers via Lifecycle Services. Unlike the cloud deployment option, Advanced Analytics and Azure Machine Learning services are not included in the on-premises deployment option. 
 
 There are several features that are not yet enabled in on-premises option. These features will be available in future updates. 
-For more information, see [Features not implemented in on-premises deployments](../../fin-and-ops/get-started/features-not-implemented-on-prem.md).
+For more information, see [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md).
 

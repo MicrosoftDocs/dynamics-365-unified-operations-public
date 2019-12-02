@@ -73,40 +73,40 @@ Much of this content also applies to the related products: Dynamics 365 Retail a
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrations</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Business events</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Data entities</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Flow</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration using Microsoft Power Automate</a></p>
 
-<h3><a href="../financials/index.md">Financial management</a></h3>
-<p><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></p>
-<p><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
-<p><a href="../financials/budgeting/budgeting-overview.md">Budgeting</a></p>
-<p><a href="../financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></p>
-<p><a href="../financials/general-ledger/audit-policy-rules.md">Compliance</a></p>
-<p><a href="../financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></p>
-<p><a href="../financials/fixed-assets/fixed-assets.md">Fixed assets</a></p>
-<p><a href="../financials/general-ledger/general-ledger.md">General ledger</a></p>
-<p><a href="../financials/project-management/overview-project-management-accounting.md">Project management</a></p>
-<p><a href="../financials/public-sector/public-sector-functionality.md">Public sector</a></p>
+<h3><a href="../../finance/index.md">Financial management</a></h3>
+<p><a href="../../finance/accounts-payable/accounts-payable.md">Accounts payable</a></p>
+<p><a href="../../finance/accounts-receivable/accounts-receivable.md">Accounts receivable</a></p>
+<p><a href="../../finance/budgeting/budgeting-overview.md">Budgeting</a></p>
+<p><a href="../../finance/cash-bank-management/cash-bank-management.md">Cash and bank management</a></p>
+<p><a href="../../finance/general-ledger/audit-policy-rules.md">Compliance</a></p>
+<p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></p>
+<p><a href="../../finance/fixed-assets/fixed-assets.md">Fixed assets</a></p>
+<p><a href="../../finance/general-ledger/general-ledger.md">General ledger</a></p>
+<p><a href="../../finance/project-management/overview-project-management-accounting.md">Project management</a></p>
+<p><a href="../../finance/public-sector/public-sector-functionality.md">Public sector</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Human resources</a></h3>
-<p><a href="../talent/manage-benefit-program.md">Benefits</a></p>
-<p><a href="../talent/performance-management-overview.md">Employee development and training</a></p>
-<p><a href="../talent/questionnaires.md">Questionnaire</a></p>
+<p><a href="../../talent/manage-benefit-program.md">Benefits</a></p>
+<p><a href="../../talent/performance-management-overview.md">Employee development and training</a></p>
+<p><a href="../../talent/questionnaires.md">Questionnaire</a></p>
 <p><a href="hr/manage-recruiting-process.md">Recruiting</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></p>
 
 </td>
 <td>
-<h3><a href="../supply-chain/index.md">Supply chain management</a></h3>
-<p><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
-<p><a href="../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
-<p><a href="../supply-chain/master-planning/master-plans.md">Master planning</a></p>
-<p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></p>
-<p><a href="../supply-chain/pim/product-information.md">Product information management</a></p>
-<p><a href="../supply-chain/production-control/production-process-overview.md">Production control</a></p>
-<p><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></p>
-<p><a href="../supply-chain/transportation/transportation-management-overview.md">Transportation management</a></p>
-<p><a href="../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></p>
+<h3><a href="../../supply-chain/index.md">Supply chain management</a></h3>
+<p><a href="../../supply-chain/cost-management/costing-sheets.md">Cost management</a></p>
+<p><a href="../../supply-chain/inventory/inventory-home-page.md">Inventory management</a></p>
+<p><a href="../../supply-chain/master-planning/master-plans.md">Master planning</a></p>
+<p><a href="../../supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></p>
+<p><a href="../../supply-chain/pim/product-information.md">Product information management</a></p>
+<p><a href="../../supply-chain/production-control/production-process-overview.md">Production control</a></p>
+<p><a href="../../supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></p>
+<p><a href="../../supply-chain/transportation/transportation-management-overview.md">Transportation management</a></p>
+<p><a href="../../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></p>
 
 
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
@@ -134,16 +134,16 @@ Much of this content also applies to the related products: Dynamics 365 Retail a
 </td>
 <td>
 <h3>Related products</h3>
-<h4><a href="../retail/index.md">Dynamics 365 Retail</a></h4>
-<p><a href="../retail/call-center-functionality.md">Call center</p>
-<p><a href="../retail/define-maintain-retail-channels.md">Channel setup and management</p>
-<p><a href="../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration</p>
+<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<p><a href="../../retail/call-center-functionality.md">Call center</p>
+<p><a href="../../retail/define-maintain-retail-channels.md">Channel setup and management</p>
+<p><a href="../../retail/retail-peripherals-overview.md">MPOS and Cloud POS</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration</p>
 
-<h4><a href="../talent/index.md">Dynamics 365 Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Benefits</a></p>
-<p><a href="../talent/performance-management-overview.md">Employee development and training</a></p>
-<p><a href="../talent/questionnaires.md">Questionnaire</a></p>
+<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
+<p><a href="../../talent/manage-benefit-program.md">Benefits</a></p>
+<p><a href="../../talent/performance-management-overview.md">Employee development and training</a></p>
+<p><a href="../../talent/questionnaires.md">Questionnaire</a></p>
 
 </td>
 </tr>

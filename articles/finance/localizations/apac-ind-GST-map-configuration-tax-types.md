@@ -41,7 +41,7 @@ ms.dyn365.ops.version: 10.0.4
 3. Select the **Customs** node.
 4. On the **Tax type mapping** tab, in the **Tax type** field, select **Customs**.
 
-![Customs tax type mapping](media/custom-duty.png)
+    ![Customs tax type mapping](media/custom-duty.png)
 
 ### Define the tax period
 
@@ -79,7 +79,7 @@ For each node for the tax component, on the **Reporting** tab, in the **Period**
 3. Select the **GST** node.
 4. On the **Tax type mapping** tab, in the **Tax type** field, select **GST**.
 
-![GST tax type mapping](media/gst-tax-type-mapping.png)
+    ![GST tax type mapping](media/gst-tax-type-mapping.png)
 
 ### Define the tax period
 

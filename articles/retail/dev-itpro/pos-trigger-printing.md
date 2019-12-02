@@ -5,7 +5,7 @@ title: Retail Modern POS (MPOS) triggers and printing
 description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -57,6 +57,7 @@ The following table lists the available triggers and denotes whether they can be
 | PreElevateUserTrigger      | Cancelable | Executed before the manager override.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
+| PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 
 
 
 ## Cash management triggers
@@ -83,6 +84,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostIssueLoyaltyCardTrigger  | Non-cancelable          | Executed after the loyalty card is issued.       |
 | PreCustomerSaveTrigger  | Cancelable          | Executed before the customer is created.       |
 | PostCustomerSaveTrigger  | Non-cancelable          | Executed after the customer is created.       |
+| PreSaveCustomerAddressTrigger      | Cancelable              | Executed before the customer address is saved.            |
 | PreGetLoyaltyCardBalanceTrigger  | Cancelable          | Executed before getting the loyalty card balance.       |
 | PostGetLoyaltyCardBalanceTrigger  | Non-cancelable          | Executed after getting the loyalty card balance.       |
 | PreDisplayLoyaltyCardBalanceTrigger  | Cancelable          | Executed before displaying the loyalty card balance.       |
@@ -156,16 +158,22 @@ The following table lists the available triggers and denotes whether they can be
 | PreRecallCustomerOrderTrigger 	| Cancelable     | Executed before the customer order is recalled. |
 | PostRecallCustomerOrderTrigger	| Non-cancelable | Executed after the customer order is recalled.  |
 | PrePickUpCustomerOrderLinesTrigger	| Cancelable     | Executed before the customer order lines are picked.  |
-| PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during customer order.|
-| PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by clicking the ship button.|
-| PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by clicking the Pack button.|
-| PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option triggered is from the order fulfillment view by clicking the Pack button.|
+| PreChangeShippingOriginTrigger	| Cancelable 	 | Executed before the shipping origin is changed during a customer order.|
+| PreGetFulfillmentLinesTrigger 	| Cancelable 	 | Executed before the Order fulfillment lines are loaded in the Order fulfillment view.|
+| PreShipFulfillmentLinesTrigger	| Cancelable 	 | Executed before the shipping is done from the Order fulfillment view by selecting the **Ship** button.|
+| PostShipFulfillmentLinesTrigger	| Non-Cancelable 	 | Executed after the shipping is done from the Order fulfillment view by selecting the **Ship** button.|
+| PreMarkFulfillmentLinesAsPackedTrigger	| Cancelable 	 | Executed before the mark as packed option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PostMarkFulfillmentLinesAsPackedTrigger	| Non-Cancelable 	 | Executed after the mark as packed option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PreCreatePackingSlipTrigger	| Cancelable 	 | Executed before the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PostCreatePackingSlipTrigger	| Non-Cancelable 	 | Executed after the create packing slip option is triggered from the order fulfillment view by selecting the **Pack** button.|
+| PostReturnInvoicedSalesLinesTrigger	| Non-Cancelable 	 | Executed after one or more invoices selected for return.|
 
 
 ## Shift triggers
 | Trigger              | Type           | Description                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostOpenShiftTrigger | Non-cancelable | This trigger is executed after the new shift is opened. |
+| PreCloseShiftTrigger | Cancelable | This trigger is executed before the shift is closed. |
 
 ## Tax override triggers
 
@@ -200,6 +208,12 @@ The following table lists the available triggers and denotes whether they can be
 | Trigger              | Type           | Description                                             |
 |----------------------|----------------|---------------------------------------------------------|
 | PostGetReasonCodeLine | Cancelable | This trigger is executed after the reason code line value is entered (before the reason code is added to the cart). |
+
+## Transfer Order triggers
+| Trigger              | Type           | Description                                             |
+|----------------------|----------------|---------------------------------------------------------|
+| PreCreateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is created (executed after the order input). |
+| PreUpdateTransferOrderTrigger | Cancelable | This trigger is executed before the transfer order is updated. |
 
 
 ## Business scenario

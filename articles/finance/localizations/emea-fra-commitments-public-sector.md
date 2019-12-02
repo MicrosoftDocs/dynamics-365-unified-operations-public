@@ -80,7 +80,7 @@ Commitments must be closed manually.
 Additional resources
 --------
 
-[Public-sector accounting in France](emea-fra-public-sector-accounting.md)
+[Public sector accounting in France](emea-fra-public-sector-accounting.md)
 
 
 

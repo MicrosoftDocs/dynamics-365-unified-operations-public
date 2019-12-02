@@ -187,7 +187,7 @@ This section walks you through the following business processes and uses the [EF
 ### Register an automatically posted COD payment for a free text invoice and print a cash receipt
 
 1. Select **Accounts receivable** &gt; **Free text invoices** &gt; **All free text invoices**.
-2. Create a free text invoice. For more information, see [Create a free text invoice](../accounts-receivable/create-free-text-invoice-new.md). 
+2. Create a free text invoice. For more information, see [Create free text invoices](../accounts-receivable/create-free-text-invoice-new.md). 
 3. On the **Payment** FastTab, select a method of payment that is set up as a method of payment for the cash register.
 4. Select terms of payment that are set up for COD.
 5. Select **Post**.
@@ -203,7 +203,7 @@ This section walks you through the following business processes and uses the [EF
 ### Register an automatically posted COD payment for a sales order invoice and print a cash receipt
 
 1. Select **Accounts receivable** &gt; **Orders** &gt; **All sales orders**.
-2. Create a sales order. For more information, see [Create a sales order](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
+2. Create a sales order. For more information, see [Create sales orders](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
 3. On the **Price and discount** FastTab, select a method of payment that is set up as a method of payment for the cash register.
 4. In the **Payment** field, select terms of payment that are set up for COD.
 5. Select **Invoice** &gt; **Invoice**.

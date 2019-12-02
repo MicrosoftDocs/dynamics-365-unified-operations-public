@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 When you create a work order, you might want to define the service levels for it and add a general description to it. You can create work order service levels on the **Work order service levels** page and descriptions on the **Work order description** page.
 
@@ -53,7 +53,7 @@ When you create a work order, you might want to define the service levels for it
 8. To set an end time for the work order, in addition to an end date, set the **Set end time** option to **Yes**. Then enter the end time in the **End time** field. If you set the option to **No**, the current time of day is used.
 9. Select **Save**.
 
-![Figure 1](media/19-setup-for-work-orders.png)
+![Work orders service level page](media/19-setup-for-work-orders.png)
 
 ## Create a description
 

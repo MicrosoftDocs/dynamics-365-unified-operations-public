@@ -51,7 +51,7 @@ Task recorder is able to record user actions in the client with exact fidelity. 
 Task recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Retail or Talent. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Retail or Talent. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/en-us/dynamics365/](../../fin-ops/index.md)) for both Retail and Talent.
 
 ## Create a recording
 The following steps show the process for creating a new recording using Task recorder.
@@ -67,12 +67,10 @@ The following steps show the process for creating a new recording using Task rec
     ![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)
     
 4.  The **Task recorder pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task recorder pane** before beginning a new recording. The pane can be reopened by following the previous steps.
-    [![This image shows the Task recorder main menu.](./media/taskrecorderguide-taskrecordermainmenu.png)](./media/taskrecorderguide-taskrecordermainmenu.png)
-    
+        
 5.  Click **Create a new recording**.
 6.  Enter a name for the recording and click **Start**. Recording begins the moment **Start** is clicked. For the Fleet example in this tutorial, we'll use the name "Create a new rental reservation."
-    [![This image shows the new Task recording menu which allows you to specify a name for your recording.](./media/taskrecorderguide-taskrecordercreatemenu.png)](./media/taskrecorderguide-taskrecordercreatemenu.png) 
-    
+        
     During recording, clicking the "**X**" in the upper-right corner will hide the pane without stopping the recording. The pane can be re-opened by clicking the **Task recorder** menu button that appears at the top of the screen. This icon only appears while recording is in progress. 
     
     [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
@@ -86,16 +84,13 @@ Now you're ready to record a business process using Task recorder. If you're fol
 1.  In the **Task recorder pane**, click **Start task**.
 2.  Set **Name** to "Create a new rental customer". Leave the **Comment** field blank.
 3.  Click **OK**. 
-[![This image shows the menu used to start a task while recording.](./media/taskrecorderguide-taskrecorderaddingatask.png)](./media/taskrecorderguide-taskrecorderaddingatask.png)
 4.  The task is added to the **Steps list**. 
-**[![This image shows the Steps List after a task has been added.](./media/taskrecorderguide-taskrecordertaskadded.png)](./media/taskrecorderguide-taskrecordertaskadded.png)**
 5.  Go to **Dashboard &gt; Fleet Management &gt; Reservation Management**.
 6.  Go to **All customers** under the **Summary** tab.
 7.  In the Action Pane, click **New**.
 8.  Enter a first and last name for the customer.
 9.  Click **Save**.
 10. In the **Task recorder pane**, click **End task**. 
-**[![This image shows what the Steps List looks like after recording a few steps.](./media/taskrecorderguide-taskrecordertaskended.png)](./media/taskrecorderguide-taskrecordertaskended.png)**
 11. Return to the **Reservation Management** workspace by clicking the browser back button twice.
 12. In the **Task recorder pane**, click **Start task**. Name the task "Rent a vehicle to the new customer." Click **Start**.
 13. Click (**+**) **Rental** under **Summary**.
@@ -115,7 +110,8 @@ Congratulations! You have created your first task recording. You can proceed to 
 ### Stop
 
 **Stop** is used to end the recording session. Ending the recording session isn't reversible, so the user should be sure that the recording is complete before clicking **Stop**. Clicking **Stop** will take the user to the download options screen.
-[![TaskRecorderGuide-TaskRecorderToolbarStop](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
+
+[![Stop control](./media/taskrecorderguide-taskrecordertoolbarstop.png)](./media/taskrecorderguide-taskrecordertoolbarstop.png)
 
 ### Start/End task
 
@@ -135,7 +131,7 @@ Congratulations! You have created your first task recording. You can proceed to 
 > [!NOTE]
 > The behavior of the **Delete** button changes when in **Maintenance mode.** When deleting a pending/un-executed step in **Maintenance mode**, the step cannot be restored after playback has progressed past the point at which it would have executed the Deleted step. For example, you load a recording that contains 3 steps in Maintenance mode. Before starting playback, you delete step 2. You can restore step 2, as long as playback has not executed step 3. After you start playback, and playback has "skipped' step 2 (because you deleted it) and executed step 3, you will not be able to restore step 2. This is because step 2 was not executed and thus not recorded, and it cannot be retroactively added back into the recording at its previous position. 
 
-[![TaskRecorderGuide-TaskRecorderRecordingControlsDelete](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
+[![Delete button](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)](./media/taskrecorderguide-taskrecorderrecordingcontrolsdelete.png)
 
 
 ### Add validation
@@ -268,11 +264,11 @@ You can now add a step anywhere in a task guide without playing back or re-recor
 
    In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn’t open. 
 
-   [![taskguide1](./media/taskguide1.png)](./media/taskguide1.png)
+   [![Insert step feature](./media/taskguide1.png)](./media/taskguide1.png)
 
    When you are on the correct page, **Insert step** becomes available.
 
-   [![taskguide2](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+   [![Insert step available on correct page](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  Click **Insert step**.
 
@@ -290,7 +286,7 @@ You can move steps under a sub-task without playing back or re-recording the ent
 1.  Select the step or sub-task step that you want to move. Make sure that the step is highlighted.
 2.  Click **… &gt; Move step after**.
 
-    [![taskguide3](./media/taskguide3.png)](./media/taskguide3.png)
+    [![Example of Move step after](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  Select the step or sub-task step that you want to move the step or sub-task step after. Task recorder will move the step.
 4.  To move the end sub-task step, select it, click **… &gt; Move step after**, and then select the step after which you want the end sub-task step to be.
@@ -302,7 +298,7 @@ If you want the first step in the task guide to be within a sub-task, create a s
 
 You can expand and collapse the **Recording name** and **Recording description** fields. When these fields are collapsed, more steps will be visible in the Task recorder editing pane. 
 
-[![taskguide4](./media/taskguide4-300x252.png)](./media/taskguide4.png)
+[![Expand and collapse recording name and description](./media/taskguide4-300x252.png)](./media/taskguide4.png)
 
 ## Advanced recording options
 
@@ -385,8 +381,6 @@ Using a **pre-release** Chrome extension, Task recorder is able to take screensh
 4.  Click **Load unpacked extension**.
 5.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
 
-    [![This image shows what the Extensions settings page looks like once the screenshot extension has been loaded.](./media/taskrecorderguide-googlechromeextensionsmenu1.png)](./media/taskrecorderguide-googlechromeextensionsmenu1.png)
-
 6.  Restart Chrome.
 
 Task recorder will now take screenshots of the tab that has the client running. These screenshots are only available for a certain period of time after the recording has been played. Starting in Platform Update 16, screenshots are available for a week after playback. Prior to that, the screenshots are only available for 15 minutes. If the screenshots have expired, you can regenerate them by playing the task recording again.  
@@ -408,7 +402,7 @@ After completing a business process recording using Task recorder, a developer m
 5.  If creating a new project, select the Model for the project. The generated X++ test will be placed in this model. The model needs to have references to the TestEssentials model for the generated test to build successfully.
 6.  Click **Import**.
 
-[![ImportNewProject\_TaskRecorderGuide](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
+    [![Import task recording dialog box](./media/importnewproject_taskrecorderguide.png)](./media/importnewproject_taskrecorderguide.png)
 
 7.  In the **New Project** dialog box, provide a name for the project.
 8.  After the project is created, the user can open and inspect the generated code.

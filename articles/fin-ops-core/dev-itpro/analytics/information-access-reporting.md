@@ -5,7 +5,7 @@ title: Information access and reporting
 description: This topic explains the various reporting options available as part of the platform.
 author: TJVass
 manager: AnnBe
-ms.date: 08/14/2017
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -140,7 +140,7 @@ Operational views represent an essential part of the average employee's daily li
 - Form data sources now support aggregate queries for analytical views using native controls.
 
 ## Analytical tools and visualizations
-Embedded visuals based on analytical data allow users to navigate between aggregate views down to the transactional details that affect them. Power BI service integration delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. Learn more about Power BI integration in [Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over.
+Embedded visuals based on analytical data allow users to navigate between aggregate views down to the transactional details that affect them. Power BI service integration delivers world-class analytical tools with built-in support for accessing data. These tools empower "citizen developers" to author the reports they need and share the reports with others within the organization. Use the Power BI content packs available in Lifecycle Services to get started. Learn more about Power BI integration in [Features and services available through Power BI integration](power-bi-integration.md). Example applications of analytical tools and visualizations include customer sales per quarter, total revenue by region, and inventory turn-over.
 
 [![supplier-quality-analysis-report](./media/supplier-quality-analysis-report.png)](./media/supplier-quality-analysis-report.png)
 
@@ -165,7 +165,7 @@ Embedded visuals based on analytical data allow users to navigate between aggreg
 - Visuals are highly-responsive to user interactions and provide near real-time results when using Direct Query access to the data source.
 
 ## Business documents
-These reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Learn more about the enhancements to the Document reporting service in [Document Reporting Services overview](document-reporting-services.md). Example applications of business documents include sales invoice, customer statements, and checks.
+These reporting solutions are often used to capture and communicate the details of business transactions. As such, this requires a reporting solution capable of producing physical manifestations of business data using existing devices like network printers. Learn more about the enhancements to the Document reporting service in [Document Reporting Services](document-reporting-services.md). Example applications of business documents include sales invoice, customer statements, and checks.
 
 [![image-of-business-documents](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
@@ -190,7 +190,7 @@ These reporting solutions are often used to capture and communicate the details 
 - Modifications to out-of-box solutions must be managed as a metadata change.
 
 ## Electronic reporting
-Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. For more information about the Electronic reporting tool, see [Electronic reporting overview](general-electronic-reporting.md). Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
+Electronic reporting (ER) is the tool to use to configure electronic document formats in accordance with the legal requirements of various countries/regions. For more information about the Electronic reporting tool, see [Electronic reporting (ER) overview](general-electronic-reporting.md). Example applications of electronic reporting include financial auditing, tax reporting, and electronic invoicing.
 
 [![electronic-reporting-example](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
@@ -207,7 +207,7 @@ Electronic reporting (ER) is the tool to use to configure electronic document fo
 - Use formulas to define data transformations into groups containing summary data and logical calculations.
 
 ## Financial reporting
-Standard financial reports are provided using the default main account categories. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [Financial reporting](../../financials/general-ledger/general-ledger.md). Example applications of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
+Standard financial reports are provided using the default main account categories. Use the report designer to create or modify traditional financial statements, such as Income statement and Balance sheet and share the results with other members of your organization. For detailed information about the Financial reporting tooling, see [General ledger and Financial reporting overview](../../../finance/general-ledger/general-ledger.md). Example applications of financial reporting include balance sheets, cash flow, and summary trial balance year over year.
 
 [![financial-reporting-example](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 

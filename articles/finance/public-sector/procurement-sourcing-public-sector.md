@@ -47,7 +47,7 @@ Before you begin to adjust the settings and input your data, you should:
 
 You may need to set up the following Procurement and sourcing features for public sector organizations:
 
--    [Public sector purchase order codes](purchase-order-codes-public-sector.md) 
+-    [Purchase order codes in the public sector](purchase-order-codes-public-sector.md): 
 Create codes and special messages for confirming purchase orders. A confirming purchase order circumvents the typical purchasing process.
 
 > [!NOTE]
@@ -141,8 +141,8 @@ Let’s say you view a purchase order line with purchases posted to two ledger a
 
 
 
-For more information, see [Procurement and sourcing](../../supply-chain/procurement/procurement-sourcing-overview.md) and 
-[Accounts payable in the public sector](accounts-payable-public-sector.md).
+For more information, see [Procurement and sourcing overview](../../supply-chain/procurement/procurement-sourcing-overview.md) and 
+[Accounts payable in the public sector overview](accounts-payable-public-sector.md).
 
 
 

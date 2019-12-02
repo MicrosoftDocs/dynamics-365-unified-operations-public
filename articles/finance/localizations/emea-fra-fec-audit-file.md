@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Create Standard Audit File for France (FEC)
+# Generate the Standard Audit File for France (FEC)
 
 [!include [banner](../includes/banner.md)]
 

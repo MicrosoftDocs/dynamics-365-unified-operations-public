@@ -5,7 +5,7 @@ title: Customize field descriptions
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 This article describes how you can customize existing field descriptions and add your own descriptions.
 
-There are descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can customize these descriptions if, for example, you want to add company-specific information. You can also add descriptions for additional fields. You create field descriptions by using the **HelpText** property for field controls. The **HelpText** property is no longer specified for table fields and data types, as it was in previous versions. Additionally, the inheritance of the **HelpText** property from data types and table fields to form controls is obsolete. Field descriptions are intended to be specific to an individual field, in the context of the other controls and information that are available on the page. To add and customize field descriptions, you must have access to the development environment. Like other metadata changes, new descriptions should be added in a new model to prevent them from being overwritten when a new version of Operations is released. For more information, see [Customization: Overlayering and extensions](../extensibility/customization-overlayering-extensions.md).
+There are descriptions for some of the more complex fields. These descriptions appear when you hover over a field. You can customize these descriptions if, for example, you want to add company-specific information. You can also add descriptions for additional fields. You create field descriptions by using the **HelpText** property for field controls. The **HelpText** property is no longer specified for table fields and data types, as it was in previous versions. Additionally, the inheritance of the **HelpText** property from data types and table fields to form controls is obsolete. Field descriptions are intended to be specific to an individual field, in the context of the other controls and information that are available on the page. To add and customize field descriptions, you must have access to the development environment. Like other metadata changes, new descriptions should be added in a new model to prevent them from being overwritten when a new version of Operations is released. For more information, see [Customize through extension and overlayering](../extensibility/customization-overlayering-extensions.md).
 
 ## Customize a field description or add a new description
 The same procedure is used to customize existing field descriptions and to add new field descriptions. However, when you customize an existing description, you replace the existing label reference.
@@ -61,9 +61,9 @@ The pattern for label IDs is @FieldDescriptions\_*ModuleName:PageName*\_*Control
 Additional resources
 --------
 
-[Create and use localizable labels in the client](create-localizable-labels-client.md)
+[Create localizable labels](create-localizable-labels-client.md)
 
-[View and export field descriptions](../../fin-and-ops/get-started/view-export-field-descriptions.md)
+[View and export field descriptions](../../fin-ops/get-started/view-export-field-descriptions.md)
 
 
 

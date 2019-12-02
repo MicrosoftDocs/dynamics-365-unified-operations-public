@@ -30,14 +30,13 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Electronic fiscal document for services
+# Service electronic fiscal document for Brazil
 
 [!include [banner](../includes/banner.md)]
 
 This topic provides an overview of the service electronic fiscal document.
 
 When a fiscal document is about service in Brazil, different rules apply than a regular electronic fiscal document. The model for a services fiscal document in Brazil is SE and includes ISS, PIS, and COFINS taxes.
-[![Service fiscal document](./media/ServiceFiscalDocument.png)](./media/ServiceFiscalDocument.png) 
 
 ## Recibo Provisorio de Servicos (RPS) document
 When a company issues a service fiscal document, depending on the city where the invoice was issued, some rules and formats may apply. For example, in Sao Paulo city, the service fiscal document is issued as a temporary service invoice or RPS. That document becomes an official service electronic fiscal document when it is approved by the city tax authority. After it is approved, the company issues an official service electronic fiscal document.

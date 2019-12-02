@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Date and Time fields in Talent
+# Work with date and time in Microsoft Dynamics 365 Talent
 
 [!include [banner](includes/banner.md)]
 

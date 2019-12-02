@@ -23,7 +23,7 @@ ms.search.scope: Operations, Retail
 ms.search.region: France
 ms.search.industry: Retail
 ms.author: v-alexec
-ms.search.scope: Retail
+ms.search.scope: Retail, Core, Operations
 ms.search.validFrom: 2018-4-13
 ms.dyn365.ops.version: 7.3.2
 
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for France, see [Cash registers for France](./emea-fra-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Dynamics 365 Retail localization for France. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
-This localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+This localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This localization consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
@@ -100,7 +100,7 @@ You can use custom fields to print the following application attributes on recei
 - **Build number** – The software version of the POS application. By default, the value should equal the POS build number that Microsoft assigned to the POS application.
 - **Certificate category** and **Certificate number** – The category and number of the certificate of compliance that an accredited body issues for the application. By default, the values equal the category and the number of the certificate that is granted to Microsoft:
 
-    - Microsoft Dynamics 365 for Finance and Operations:
+    - Microsoft Dynamics 365 for Retail:
 
         - **Certificate category:** C
         - **Certificate number:** 18/0202
@@ -111,7 +111,7 @@ You can use custom fields to print the following application attributes on recei
         - **Certificate number:** 18/0203
 
     > [!NOTE]
-    > By default, the certificate category and number that are assigned to Finance and Operations are printed. If you're implementing Retail, you must override the certificate category and number.
+    > By default, the certificate category and number that are assigned to Retail are printed. If you're implementing Retail, you must override the certificate category and number.
 
 If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the build number, and the certificate category and number. Otherwise, the default values for the certificate category and number will be printed, but you must still specify the POS build number that Microsoft assigned to the POS application.
 
@@ -678,7 +678,7 @@ You must complete the following procedure to enable the extensions in offline mo
 
 ### Set up required parameters in Retail headquarters
 
-For more information, see [Cash registers for France](./emea-fra-cash-registers.md).
+For more information, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
 ## Production environment
 
@@ -824,7 +824,7 @@ Follow these steps to create deployable packages that contain Retail components,
 5. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder. The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config**, and it's under **Extensions.SequentialSignatureRegister\\bin\\Debug**.
 6. Override the build number and the category and number of the certificate of compliance, as required. For more information, see the instructions in the [Specifying application attributes that will be printed on receipts](#specifying-application-attributes-that-will-be-printed-on-receipts) section earlier in this topic.
 7. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
-8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
 ### Enable the digital signature in offline mode for Modern POS
 

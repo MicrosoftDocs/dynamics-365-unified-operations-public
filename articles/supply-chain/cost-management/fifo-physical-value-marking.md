@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 First in, First out (FIFO) is an inventory model in which the first acquired receipts are issued first. Financially updated issues from inventory are settled against the first financially updated receipts into inventory, based on the financial date of the inventory transaction. 
 
 When you use FIFO, you don’t have to use the FIFO rule. Instead, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. We recommend a periodic inventory closing when you use the FIFO inventory model. The following examples show the effect of using FIFO in three configurations:
@@ -60,7 +58,9 @@ In this example, the item model group isn't marked to include physical value. Th
 -   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
 -   6. Inventory close is performed. Based on the FIFO method, the first financially updated issue will be settled against the first financially updated receipt. An adjustment of USD –10.00 will be made on the issue transaction.
 
-The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. ![FIFO without Include Physical Value](./media/fifowithoutincludephysicalvalue.gif) 
+The new running average cost price reflects the average of the financially updated transactions. The following illustrations shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
+
+![FIFO without Include Physical Value](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -90,7 +90,9 @@ If the **Include physical value** check box is selected for an item on the **Ite
 -   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each.
 -   7. Inventory close is performed. Based on the FIFO method, the first financial issue transaction will be adjusted or settled against the first updated receipt, either financial or physical.
 
-Transaction 5b will be settled against receipt transaction 1b. There will be an adjustment of USD –11.25 to this issue transaction. The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is used. ![FIFO with Include Physical Value](./media/fifowithincludephysicalvalue.gif) 
+Transaction 5b will be settled against receipt transaction 1b. There will be an adjustment of USD –11.25 to this issue transaction. The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when the **Include physical value** option is used. 
+
+![FIFO with Include Physical Value](./media/fifowithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -120,7 +122,9 @@ Marking is a process that lets you link, or mark, an issue transaction to a rece
 -   6a. Inventory physical issue for a quantity of 1 at a cost price of USD 21.25 each.
 -   7. Inventory close is performed. Because the financially updated FIFO transaction is marked to an existing receipt, these transactions are settled against each other, and no adjustment is made.
 
-The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when marking between issues and receipts is used. ![FIFO with Marking](./media/fifowithmarking.gif) 
+The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. The following illustration shows the effects of the FIFO inventory model on this series of transactions when marking between issues and receipts is used. 
+
+![FIFO with Marking](./media/fifowithmarking.gif) 
 
 **Key to the diagram**
 

@@ -5,16 +5,16 @@ title: Add module configuration fields
 description: This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -59,9 +59,6 @@ In the following example of a module definition file, an **imageAlignment** conf
     "description": "Feature module used to highlight a product.",
     "categories": ["marketing"],
     "tags": ["feature"],
-    "module": {
-        "view": "./productFeature"
-    },
     "config": {
         "imageAlignment": {
             "friendlyName": "Image Alignment",
@@ -80,20 +77,19 @@ In the following example of a module definition file, an **imageAlignment** conf
 
 ## Module configuration schema
 
-The **config** section in a module definition file contains a list of all the module's exposed configuration fields that will be used in the authoring tools.
+The **config** section of the module definition file contains a list of all the module's exposed configuration fields that will be used in the authoring tools.
 
-* **config name** – The name that is used to access the configuration values from the react source code.
-* **"friendlyName"** – The name that is shown as the configuration name in the authoring tools.
+* **configuration name** – The local name that is used to access the configuration values from your react source code.
+* **"friendlyName"** – The friendly name that is shown as the configuration name in the authoring tools.
 * **"description"** – The description that is shown as the configuration description in the authoring tools.
-* **"type"** – The type of the configuration. The possible values are **"string"**, **"boolean"**, **"number"**, **"integer"**, **"resource"**, **"link"**, **"productList"**, **"object"**, **"image"**, **"imageSettings"**, "**video"**, and **"array"**. The **"resource"** type doesn't appear in the authoring tools but enables localization of the string.
-* **"enum"** – For an enumerator type, this field must be set to **"string"**.
-* **"default"** – This field is used to set the default value if no default value is set in the authoring tools.
-* **"scope"** – This field is used to scope the configuration either to a module instance or to all modules on the site. The possible values are **"module"** and **"site"**. If this field is set to **"site"**, the module configuration appears only in the site-level settings. It doesn't appear and can't be configured on a page. Therefore, the value can be set one time for your whole site.
-* **"group"** – Groups are used to organize the configurations in the authoring tools.
-* **"required"** – This field indicates whether a property must be set on the module. If the property isn't set, an error is shown when the module and tooling are rendered.
-* **"resourceKey"** – This field is used for localization resources. 
-
-### Example
+* **"type"** – The type of the configuration. Possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"video"**, and **"array"**.
+* **"enum"** – For an enumerator type, the value must be set to **"string"**.
+* **"default"** – The default value that is set if no value is set in the authoring tools.
+* **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can only be configured at the site level. In this way, the value can be set one time for the entire site.
+* **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
+* **"required"** – A boolean flag that specifies whether or not a property must be set on the module. When set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be displayed when the module is rendered.
+* **"resources"** – This field is used for localization resources.
+* **"definitions"** - This field can contain complex config type definitions, which can be referenced in the config sections as extended types.
 
 The following example shows how the various supported data types are used.
 
@@ -105,23 +101,19 @@ The following example shows how the various supported data types are used.
     "description": "Sample Config",
     "categories": ["sample-config"],
     "tags": ["samples"],
-    "module": {
-        "view": "./sample-config",
-        "dataActions": {}
-    },
+    "dataActions": {},
     "config": {
-        "showText": {
-            "friendlyName": "showText",
-            "description": "example config value",
+        "title": {
             "type": "string",
-            "default": "Example Config Value",
-            "scope": "module",
-            "group": "Layout Properties"
+            "friendlyName": "title",
+            "description": "example config value",
+            "default": "",
+            "scope": "module"
         },
         "subTitle": {
-        "type": "richText",
-        "friendlyName": "SubTitle",
-        "description": "Sub title rich text field"
+            "type": "richText",
+            "friendlyName": "SubTitle",
+            "description": "Sub title rich text field"
         },
         "bgImage": {
             "type": "image",
@@ -137,14 +129,14 @@ The following example shows how the various supported data types are used.
             }
         },
         "backgroundImageSettings": {
+            "type": "imageSettings",
             "friendlyName": "Background Image Settings",
-            "description": "Image settings for background image settings",
-            "type": "imageSettings"
+            "description": "Image settings for background image settings"
         },
         "ambientVideo": {
+            "type": "video"
             "friendlyName": "Ambient Video",
             "description": "Ambient Video",
-            "type": "video"
         },
         "headingArray":{
             "type": "array",
@@ -304,3 +296,24 @@ class ProductFeature extends React.PureComponent <IProductFeatureProps<IProductF
 
 export default ProductFeature;
 ```
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

@@ -5,16 +5,16 @@ title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -94,15 +94,13 @@ The following example shows a module that uses the data action earlier in this t
     "name": "product-module",
     "friendlyName": "Product module",
     "description": "Product module",
-    "module": {
-        "view": "./product-module",
-        "dataActions": {
-            "product": {
-                "path": "../../actions/get-product"
-            }
+    "categories": ["Product"],
+    "dataActions": {
+        "product": {
+            "path": "../../actions/get-product",
+            "runOn": "server"
         }
     },
-    "categories": ["Product"],
     "config": {
         "productId": {
             "friendlyName": "Id of Product to show",
@@ -148,3 +146,16 @@ export interface IProductFeatureData {
 ```
 
 Notice that this example calls a core data action that is named **get-simple-products**. This data action returns an array of **SimpleProduct** results. The interface for the **SimpleProduct** return type is defined in the \\node\_modules\\@msdyn365-commerce\\commerce-entities\\dist\\types\\commerce-entities directory that is imported at the top of the example.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Core data actions](core-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)
+

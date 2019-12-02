@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -108,3 +108,9 @@ The following illustrations shows scenarios for preset and custom layouts.
 ![Preset and custom layout scenarios](../commerce/media/template-figure1.png)
 
 To start to use preset layouts, see [Work with preset layouts](work-with-layouts.md).
+
+## Additional resources
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)

@@ -5,7 +5,7 @@ title: Build and consume data entities
 description: This tutorial shows how to build an entity and how to consume some out-of-band (OOB) entities in an integration scenario.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,7 @@ This tutorial requires that you access an environment by using Remote Desktop, a
 Throughout this tutorial, baseUrl refers to the base URL of the instance.
 
 - In the cloud environment, the base URL is obtained from Microsoft Dynamics Lifecycle Services (LCS).
-- On a local virtual machine (VM), the base URL is https://usnconeboxax1aos.cloud.onebox.dynamics.com.
+- On a local virtual machine (VM), the base URL is `https://usnconeboxax1aos.cloud.onebox.dynamics.com`.
 
 ## Key concepts
 - Developing a data entity in Microsoft Visual Studio
@@ -97,7 +97,7 @@ Staging tables are used in import/export scenarios to provide intermediary stora
 
     [![Data Entity Wizard](./media/data-entity-wizard.png)](./media/data-entity-wizard.png)
 
-5. Click **Next**. For more information about the function of each property, see "Categories of entities" and "Building an entity" in [Data entities](data-entities.md).
+5. Click **Next**. For more information about the function of each property, see "Categories of entities" and "Building an entity" in [Data entities overview](data-entities.md).
 6. Add fields to the new entity from your data source, as shown in the following screen shot. You can add fields from the primary data source, **FMCustomer**. For this entity, clear the check box for the **Image** and **LicenseImage** container types to simplify testing.
 7. Rename the data entity fields to reflect public data contract standards, or click **Convert labels to field names** to generate names from the existing labels.
 8. On the line for the **DriverLicense** field, select the **Is mandatory** check box. This field will be used as the natural key for the entity.
@@ -434,4 +434,4 @@ Cannot create a row of size xxx which is greater than the allowable maximum row 
 
 ## Additional resources
 
-[Developing an entity and using it for data migration](develop-entity-for-data-migration.md)
+[Develop entities for data migration](develop-entity-for-data-migration.md)

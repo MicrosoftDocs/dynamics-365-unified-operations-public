@@ -34,8 +34,8 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic provides links to documentation resources for Singapore. 
 
-- [Generate the GST-05 report](apac-sgp-generate-gst-05-report.md)
-- [Set up reverse charge for customer accounting and GST on Imported Service](emea-reverse-charge.md)
+- [Generate the Singapore GST-05 report](apac-sgp-generate-gst-05-report.md)
+- [Reverse charge VAT](emea-reverse-charge.md)
 
 
 ## Additional resources

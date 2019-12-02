@@ -103,7 +103,7 @@ ms.dyn365.ops.version: 10.0.1
     3. Set the **Show dialog** option to **Yes**.
     4. In the **Format mapping** field, select the **Accounting reporting format 5.07 (RU)** configuration that you downloaded in step 1.
 
-    For more information about how to set up electronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/dynamics365/unified-operations/financials/general-ledger/electronic-messaging).
+    For more information about how to set up electronic messaging functionality, see [Electronic messaging](https://docs.microsoft.com/dynamics365/finance/general-ledger/electronic-messaging).
 
 ## Generate accounting reporting in electronic format
 

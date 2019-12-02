@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 29. 
+title: What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
+description: This topic describes features in Platform update 29 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,11 +29,11 @@ ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations platform update 29 (October 2019)
+# What's new or changed in Platform update 29 for Finance and Operations apps (October 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 29. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This topic describes features that are new or changed in Platform update 29 for Finance and Operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 
 ## Feature management
@@ -52,7 +52,7 @@ For more information, see [Feature management overview](feature-management/featu
 [Role-based security](../../dev-itpro/business-events/home-page.md#role-based-security-for-business-events) can be now applied to individual business events in the business event catalog. When this security is enabled and configured, users will be able to only view and subscribe to business events to which their roles have access. This security also applies to integration scenarios, such as Microsoft Flow.
 
 ## Attachment recovery
-An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For details, see [Configure document management](../../fin-and-ops/organization-administration/configure-document-management.md).
+An attachment recovery feature has been added that provides a recycle bin for record attachments. For a configured period of time after deletion, users and administrators can recover deleted attachments using the new deleted attachments forms. For details, see [Configure document management](../organization-administration/configure-document-management.md).
 
 ## Session idle timeout
 The session idle timeout is the amount of time a user can be inactive before the user's session times out and is closed. With Platform update 29, the web browser session timeout setting is exposed in the user interface and is optimized for a default value of 30 minutes instead of 60 minutes. You can still change and set the value up to 60 minutes, but that may cause an extra load on the system. For more information, see [Set the session idle timeout](../../dev-itpro/sysadmin/session-idle-timeout.md).
@@ -60,7 +60,7 @@ The session idle timeout is the amount of time a user can be inactive before the
 ## Visual refresh of the web client to align with the Fluent design language
 As part of the Dynamics 365 app-wide effort, we are incrementally working toward a visual refresh of the web client to more closely align controls and pages with the Microsoft Fluent design language. An initial set of changes are included in Platform update 29. For more information, see the [Visual refresh of the web client to align with the Fluent design language](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/visual-refresh-web-client-align-fluent-design-language) topic in the Release Plans.
 
-As part of this change, the workspace tiles on the dashboard now have a new visual style. See [Creating icons for workspace tiles](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) for updated guidance on creating images for workspace tiles that are visually aligned to out-of-the-box workspace tiles.
+As part of this change, the workspace tiles on the dashboard now have a new visual style. See [Create icons for workspace tiles](../../dev-itpro/user-interface/create-icons-workspace-tiles.md) for updated guidance on creating images for workspace tiles that are visually aligned to out-of-the-box workspace tiles.
 
 ##  Saved views (Preview)
 Saved views are now available in preview. This feature represents a significant enhancement to the personalization subsystem, and allows users to have multiple named sets of personalizations per page. For list pages, these views can also contain filters. Management of personalizations is also substantially easier with views, as views can be published to security roles. For more information about how to enable this feature in a developer environment, see [Saved views](saved-views.md). Also refer to the [Build forms that fully utilize saved views](../../dev-itpro/user-interface/understanding-saved-views.md) topic. Note that this preview feature will continue to evolve and change until it becomes generally available. 
@@ -83,7 +83,7 @@ When business event subscriptions associated with the workflow are found, a conf
 Standard workflow context has been added to the payloads for all Workflow Business Events including owner, originator, and last note.
 
 ## Flow templates for workflow work item
-Flow templates have been created to provide a useful starting point for building Flows that facilitate work item completion. For more information, see [Workflow Business Events](../../dev-itpro/business-events/business-events-workflow.md).
+Flow templates have been created to provide a useful starting point for building Flows that facilitate work item completion. For more information, see [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md).
 
 ## Extensibility enhancements
 The following enhanced extensibility capabilities have been added in Platform update 29:
@@ -111,11 +111,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.

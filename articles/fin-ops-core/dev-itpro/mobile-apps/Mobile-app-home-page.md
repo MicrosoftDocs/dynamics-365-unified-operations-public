@@ -5,7 +5,7 @@ title: Mobile app home page
 description: This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Finance and Operations Operations mobile app and provides links to resources that can help you implement it in your organization.
+This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
 
 Overview
 --------
@@ -96,12 +96,12 @@ The following table includes links to resources that can help you implement both
 <td>See the following topics for more information:
 <ul>
 
-<li><a href="../../financials/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></li>
-<li><a href="../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></li>
-<li><a href="../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></li>
-<li><a href="../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></li>
-<li><a href="../../financials/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></li>
-<li><a href="../../financials/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></li>
+<li><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></li>
+<li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></li>
+<li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></li>
+<li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></li>
 
 </ul></td>
 </tr>
@@ -155,3 +155,6 @@ The following table includes links to resources that can help you implement both
 </tr>
 </tbody>
 </table>
+
+## Troubleshooting
+[Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)

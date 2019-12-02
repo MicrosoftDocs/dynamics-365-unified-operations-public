@@ -44,7 +44,7 @@ To get started, you must follow all the steps to get a full continuous build sys
 
 ### Getting the Retail SDK
 
-If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail SDK overview](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
+If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail software development kit (SDK) architecture](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
 
 ## Install NuGet.exe 
 
@@ -71,7 +71,7 @@ Add a new step at the beginning of the build pipeline, as shown in the following
 
 This build step enables Microsoft to copy the latest built Retail binaries to the Retail bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.
 
-[![Adding a copy step for binaries from the Retail SDK to the Dynamics 365 Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Adding a copy step for binaries from the Retail SDK to the Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
 ## Add a copy step for all Retail packages
 

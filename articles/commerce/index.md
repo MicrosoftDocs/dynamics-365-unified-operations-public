@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -48,13 +48,17 @@ This release enables the creation of digital experiences using built-in web auth
 
 - Streamline operations using AI in the cloud: Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
 
+## Sign up for the preview
+
+Go to the [Dynamics 365 Commerce (Preview)](https://dynamics.microsoft.com/en-us/commerce/overview/) page to fill out an application to join the preview. Existing Dynamics 365 Retail customers will be able to update to Commerce once it becomes generally available. 
+
 ## Core concepts and tasks
 
 Select a feature area to learn more about it.
 - [Configure an e-Commerce evaluation environment](provisioning-guide.md)
-- [Store starter kit](starter-kit-overview.md)
-- [Product recommendations](product-recommendations.md)
-- [Ratings and reviews](ratings-reviews-overview.md)
-- [Templates and layouts](templates-layouts-overview.md)
+- [Store starter kit overview](starter-kit-overview.md)
+- [Product recommendations overview](product-recommendations.md)
+- [Ratings and reviews overview](ratings-reviews-overview.md)
+- [Templates and layouts overview](templates-layouts-overview.md)
 - [Add and manage content](add-manage-content.md)
-- [Extensibility](e-commerce-extensibility/overview.md)
+- [Online channel extensibility](e-commerce-extensibility/overview.md)

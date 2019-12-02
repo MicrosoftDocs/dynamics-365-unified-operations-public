@@ -5,7 +5,7 @@ title: Person search report
 description: This topic provides information about the Personal data report for Finance and Operations apps.
 author: rschloma
 manager: AnnBe
-ms.date: 01/24/2018
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -41,7 +41,7 @@ You can use the Global address book to create an instance of a person that is de
 
 When you add a contact, customer, user, worker, or other person in Finance and Operations data, you typically start by creating an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as customer, user, or worker, and has a role ID: CustID, UserID, WorkerID, and possibly others.
 
-![Address book structure](../../fin-and-ops/organization-administration/media/address-book-structure.png)
+![Address book structure](../../fin-ops/organization-administration/media/address-book-structure.png)
 
 At times, you might want to verify that the information that is entered and used to describe or otherwise identify a person is correct. Situations might also arise where it's useful to share that information with the data subject who requested the data. The Person search report can help with both these tasks.
 

@@ -100,7 +100,7 @@ The production environment can be deployed when the project is ready for the ini
 
 Production system readiness includes, but isn't limited to, the following conditions:
 
-- An up-to-date subscription estimate is activated, as described in [Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md).
+- An up-to-date subscription estimate is activated, as described in [Subscription estimator in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Code, configuration, and data are ready for cutover.
 - An engineering process is in place to manage critical fixes.
 - The customer has signed off on the solution and UAT.
@@ -161,7 +161,7 @@ After a subscription estimate is activated, you can view transaction lines per h
 ![Subscription estimate](./media/environment-planning-4-subscription-estimate.png)
 
 > [!IMPORTANT]
-> The upcoming admin lockdown for Tier-2 or higher environments will no longer allow Remote Desktop Protocol (RDP) connections to the servers. As part of the Microsoft roadmap, the most common actions where RDP access is required are being replaced by self-service tasks in LCS. For example, the procedure that is currently described in [Copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment](../../dev-itpro/database/copy-database-from-sql-server-to-azure-sql.md) will be available as a service from Microsoft. Therefore, to copy a database from SQL Server to a production Azure SQL Database environment, you will have to create a service request in LCS. More information will be available through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/).
+> The upcoming admin lockdown for Tier-2 or higher environments will no longer allow Remote Desktop Protocol (RDP) connections to the servers. As part of the Microsoft roadmap, the most common actions where RDP access is required are being replaced by self-service tasks in LCS. For example, the procedure to copy a Finance and Operations database from SQL Server to a production Azure SQL Database environment will be available as a service from Microsoft. Therefore, to copy a database from SQL Server to a production Azure SQL Database environment, you will have to create a service request in LCS. More information will be available through the [LCS Blog](https://blogs.msdn.microsoft.com/lcs/2018/02/27/notice-of-upcoming-change-removing-rdp-access-to-tiers-2-3-4-and-5-standard-acceptance-test-or-sandbox-environments-deployed-in-microsoft-subscription/) and on [Docs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/).
 
 ### Purchasing add-on environments
 
@@ -189,4 +189,4 @@ Create the environments plan early in your implementation.
 
 After you've identified the environments, the environments plan can be used to structure the Application Lifecycle Management (ALM) flows. For example, after you finalize your environments plan, you can define the flows for building and moving the code and the data across environments.
 
-We strongly recommend that you watch the [Environment Planning TechTalk](https://infopedia.eventbuilder.com/event?eventid=o8a5q2&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks). From the linked page, you can also download the *Sample Environment Planning exercise* spreadsheet to get a head start on your environment planning exercise.
+We strongly recommend that you watch the [Environment Planning TechTalk](https://community.dynamics.com/365/b/techtalks/posts/environment-planning-may-23-2018). From the linked page, you can also download the *Sample Environment Planning exercise* spreadsheet to get a head start on your environment planning exercise.

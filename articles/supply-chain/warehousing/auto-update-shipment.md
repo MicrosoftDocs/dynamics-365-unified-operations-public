@@ -5,7 +5,7 @@ title: Shipment auto-updates
 description: This topic provides an overview of functionality that provides automatic updates for shipments.
 author: josaw1
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Shipment auto-updates
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 The auto-update shipment functionality automatically updates quantities (both increases and decreases) on a load line that is associated with a shipment, after the load has been released to a warehouse. This functionality remains turned on until the load line on the shipment or load is processed on a wave. When it's used, order updates can automatically flow through to the warehouse, without requiring manual intervention, until warehouse work is created.

@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -75,3 +75,16 @@ search-org-unit-locations | Return a list of retail store locations.
 update-address | Update an existing customer address.
 update-line-delivery-specifications | Update delivery information for line items in the cart.
 update-primary-address | Update a customer's primary address.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Page load data actions](page-load-data-action.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)
+

@@ -69,4 +69,4 @@ It is possible to copy locations from one warehouse to another and to create loc
 Additional resources
 --------
 
-[Create a new warehouse layout (Task guide)](tasks/create-new-warehouse-layout.md)
+[Create a new warehouse layout](tasks/create-new-warehouse-layout.md)

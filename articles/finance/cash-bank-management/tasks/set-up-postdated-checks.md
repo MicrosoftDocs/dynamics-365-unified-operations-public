@@ -57,14 +57,6 @@ The role of this procedure is Treasurer. This procedure uses the USMF demo compa
     * The offset account of the payment method will be a bank.  
 17. In the Payment account field, specify the desired values.
     * Select the bank account that is used to deduct the invoice amount.  
-18. Close the page.
-19. Go to Accounts receivable > Payment setup > Methods of payment
-20. Click New.
-21. In the Method of payment field, type a value.
-22. Select the Postdated check clearing posting option to indicate that the check amount is posted to a clearing account.
-23. In the Account type field, select 'Bank'.
-    * The offset account of the payment method will be a bank.  
-24. In the Payment account field, specify the desired values.
-    * Select the bank account that is used to deduct the invoice amount.  
-25. Close the page.
+18. Click Save.
+19. Close the page.
 

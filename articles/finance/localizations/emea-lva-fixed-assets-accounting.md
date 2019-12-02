@@ -56,7 +56,7 @@ Use the **Books** page to define a tax category. Books are also referred to as t
 -   **Summarize for category** - Select this option if tax depreciation should be summarized and calculated for all fixed assets that have the same book selected in the **Category** field.
 -   **Tax coefficients** - You can set up tax coefficients for each coefficient to adjust the acquisition price for the fiscal year.
 
-For more information about setting up books, see [Set up depreciation books](../fixed-assets/tasks/set-up-depreciation-books-2016-05.md)
+For more information about setting up books, see [Set up depreciation books (May 2016)](../fixed-assets/tasks/set-up-depreciation-books-2016-05.md).
 
 ### Set up tax depreciation calculation
 

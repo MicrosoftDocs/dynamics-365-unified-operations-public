@@ -127,7 +127,7 @@ To set up Electronic messages functionality for SPED-Reinf event communications,
 
 Every event that is created, delivered, and received is represented by a message and a message item.
 
-![Electronic-messages-structure](media/bra-electronic-messages-structure.png)
+![Electronic messages structure](media/bra-electronic-messages-structure.png)
 
 The message item is represented by the XML event message, and it also includes the following additional information that is stored in the message or updated in Microsoft Dynamics:
 
@@ -145,7 +145,7 @@ The message item is represented by the XML event message, and it also includes t
 
 You can find this configuration at **Tax \> Setup \> Electronic messages \> Additional fields**.
 
-![Electronic-messages-additional-fields](media/bra-electronic-messaging-additional-fields.png)
+![Electronic messages additional fields](media/bra-electronic-messaging-additional-fields.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.*
@@ -159,7 +159,7 @@ The message item types are classified by the type of event at **Tax \> Setup \> 
 
 Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Number sequences** tab, select **Message** and **Message item** to set up the sequence number for message items.
 
-![Electronic-messages-number-sequences](media/bra-electronic-messages-number-sequences.png)
+![Electronic messages number sequences](media/bra-electronic-messages-number-sequences.png)
 
 > [!NOTE]
 > The number sequence must be defined as non-continuous.*
@@ -192,15 +192,15 @@ Every time that a message is created, prepared, validated, delivered, or receive
 
 -   **Preparation items (Preparacao dos eventos) –** This action is used to create and prepare the XML message. It requests additional parameters, such as **Booking date**, **CNPJ**, and **CNPJ root**, because the events are generated based on this information.
 
-![Preparation-items](media/bra-preparation-items.png)
+![Preparation items](media/bra-preparation-items.png)
 
 -   **Process response (Processo de reposta)** – This action is used to update the delivered message when it's approved by the government by using a protocol number. Additionally, the message is updated as registered on the     government website.
 
-![Preparation-items-process-response](media/bra-preparation-items-process-response.png)
+![Preparation items process response](media/bra-preparation-items-process-response.png)
 
 -   **Report generation (Geracao de relatório)** – This action is used to send and receive the message item.
 
-![Generate-reports-parameters](media/bra-generate-reports-parameters.png)
+![Generate reports parameters](media/bra-generate-reports-parameters.png)
 
 > [!NOTE]
 > Don't remove this configuration. This configuration is included in the package.*
@@ -212,7 +212,7 @@ Before a message is delivered, you must set up XML schema validation to prevent 
 Go to **Organization administration \> Document management \> Document management parameters**, and enable XSD files by adding **XSD** as a new file
 type.
 
-![Document-management-parameters](media/bra-document-management-parameters.png)
+![Document management parameters](media/bra-document-management-parameters.png)
 
 Go to **Tax \> Setup \> Electronic messages \> Message processing actions**, and select **New \> File** to attach the schemas (.xsd files) for the following
 actions:
@@ -225,11 +225,11 @@ actions:
 
 Go to **Tax \> Setup \> Electronic messages \> Message processing actions**, select the **Populate** (**Incluir**) action, and then, in the **Populate records action** field, select **Registrar transacões**.
 
-![Message-Processing-actions](media/bra-message-processing-actions.png)
+![Message Processing actions](media/bra-message-processing-actions.png)
 
 Go to **Tax \> Setup \> Electronic messages \> Web service settings**, and set up a web services connection and certificates for issuing and inquiring about events.
 
-![Webservices-settings](media/bra-web-service-settings.png)
+![Web services settings](media/bra-web-service-settings.png)
 
 > [!NOTE]
 > In the settings for **SPED Reinf asynchronous (SPED Reinf – assíncrono)**, include the web service address for inquire event R-5011.
@@ -242,7 +242,7 @@ The service type table represents table 06 that the tax authorities have establi
 
 2.  Select **New**, enter a classification code that has been established by the tax authorities, and enter a description.
 
-![Service-types](media/bra-service-type-setup.png)
+![Service types](media/bra-service-type-setup.png)
 
 After the list of service types is created, the service types must be assigned to service codes. Go to **Inventory management \> Setup \> Fiscal information \> Service code**, and then, for each service, assign the related service type.
 
@@ -250,23 +250,23 @@ After the list of service types is created, the service types must be assigned t
 
 Go to **Fiscal books \> Setup \> SPED Reinf \> Tax classification codes** and enter the available classification types.
 
-![Tax-classification](media/bra-tax-classification-codes.png)
+![Tax classification](media/bra-tax-classification-codes.png)
 
 This information is assigned to the fiscal organization on the **General** FastTab at **Fiscal books \> Setup \> Fiscal organization**.
 
-![Fiscal-organization](media/bra-fiscal-organization-setup.png)
+![Fiscal organization](media/bra-fiscal-organization-setup.png)
 
 ### **Set up codes explanation suspension**
 
 Go to **Fiscal books \> Setup \> SPED Reinf \> Codes explanation suspension**, and set up the codes that are used in event R-1070 when suspension of withholding applies. These codes are assigned at **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
-![Explanation-codes](media/bra-codes-explanation-suspension.png)
+![Explanation codes](media/bra-codes-explanation-suspension.png)
 
 ### **Set up fiscal books parameters**
 
 Go to **Fiscal books \> Setup \> Fiscal books parameters**, and set up the number sequence for events R-2010 and R-2020.
 
-![Fiscal-books-parameters](media/bra-sped-fiscal-books-parameters.png)
+![Fiscal books parameters](media/bra-sped-fiscal-books-parameters.png)
 
 > [!NOTE]
 > If the number sequences weren't initialized during the setup checklist for KB installation, you can generate them by using a wizard. To start the wizard, go to **Organization administration \> Number sequences \> Number sequences**, and select **Generate**. You will then be able to configure the related number sequence.
@@ -342,7 +342,7 @@ The events are transmitted to tax authorities by using Electronic messages funct
 
 The following illustrations show the actions that are performed and the status of message items that causes each event to be approved or rejected when it's delivered for the first time (Insertion), updated (Amendment/Update), or canceled or deleted (Cancel/Delete).
 
-![Flow-actions](media/bra-flow-actions.png)
+![Flow actions](media/bra-flow-actions.png)
 
 #### **Insertion**
 
@@ -359,7 +359,7 @@ This flow is used to deliver any event for the first time.
 
 #### **Inquire event 5011 (from event R-2099)**
 
-![Inquire-event-5011](media/bra-inquire-event-5011.png)
+![Inquire event 5011](media/bra-inquire-event-5011.png)
 
 #### **Manage electronic messages** 
 
@@ -407,25 +407,25 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 3.  Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Incluir**.
 
-    ![Run-processing](media/bra-run-processing.png)
+    ![Run processing](media/bra-run-processing.png)
 
 4.  Select **OK** to confirm the settings.
 
 >   A message item of **Informações do contribuinte** type is created, and the status of the message item is set to **Anexado**.
 
-![Electronic-message-items-insertion](media/bra-electronic-message-items-insertion.png)
+![Electronic message items insertion](media/bra-electronic-message-items-insertion.png)
 
 5.  Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 
 6.  Set the **Choose action** option to **Yes**, and then, in the **Action** field, select **Parâmetros adicionais** to update the related information in additional fields.
 
-![Run-processing-aditional-parameters](media/bra-run-processing-additional-parameters.png)
+![Run processing aditional parameters](media/bra-run-processing-additional-parameters.png)
 
-![Preparation-items](media/bra-preparation-items.png)
+![Preparation items](media/bra-preparation-items.png)
 
 7.  Select **OK** to confirm the settings. The message item of **Informações do contribuinte** type is updated, and the status of the message item is changed to **Preparado**.
 
-![Electronic-message-items-status](media/bra-electronic-message-items-status.png)
+![Electronic message items status](media/bra-electronic-message-items-status.png)
 
 8.  Select **Run processing** again, and then, in the dialog box, in the **Processing** field, select **SPED Reinf**.
 
@@ -433,7 +433,7 @@ Because communications can fail for technical reasons, such as a time-out or an 
 
 10.  Select **OK** to confirm the settings. The **Generate reports** dialog box automatically appears. On the **Records to include** FastTab, in the filter options, the ID of the message item type that is requesting generation of an XML file is selected in the **Message item** field.
 
-![Generate-reports](media/bra-generate-reports.png)
+![Generate reports](media/bra-generate-reports.png)
 
 11.  Select **OK** to confirm the settings. The message item of the **Informações do contribuinte** type is updated, and the status of the message item is changed to **Gerado**.
 
@@ -477,7 +477,7 @@ include all related information.
 
 1.  Go to **Fiscal books \> Periodic \> SPED Reinf \> Administrative and judicial process**.
 
-![Administrative-judicial-process](media/bra-administrative-judicial-process.png)
+![Administrative judicial process](media/bra-administrative-judicial-process.png)
 
 1.  Select **New**, and set the following fields.
 
@@ -533,7 +533,7 @@ Only service and retained INSS tax type must be selected to generate this event 
 
 -   The tax type is **INSS**, and it's retained (the **Retained tax/to recuperate** check box is selected).
 
-![Brazilian-taxes](media/bra-brazilian-taxes.png)
+![Brazilian taxes](media/bra-brazilian-taxes.png)
 
 > [!NOTE]
 > Never use the **INSS-CPRB** tax type.

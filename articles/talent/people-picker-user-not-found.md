@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Azure Active Directory users not found in People Picker
+# User not found in People Picker in Attract or Onboard
 
 [!include [banner](includes/banner.md)]
 

@@ -68,11 +68,11 @@ Yes, you can generate the following reports that contain information about impai
 -   Review fixed assets for impairment report
 
 ## Additional resources
-- [Fixed asset impairment accounting on cash generating units](apac-jpn-impairment-accounting-cash-generating-unit.md)
+- [Fixed asset impairment accounting on cash-generating units for Japan](apac-jpn-impairment-accounting-cash-generating-unit.md)
 - [Maintain impairment indicators on individual assets](./tasks/maintain-impairment-indicators-individual-assets.md)
 - [Propose and post the impairment amount by batch](./tasks/propose-post-impairment-amount-batch.md)
 - [Propose and post the impairment amount by using fixed asset journal](./tasks/propose-post-impairment-amount-fixed-asset-journal.md)
 - [Run the recognition test and calculate the impairment amount on individual assets](./tasks/run-recognition-test-calculate.md)
-- [Set up impairment accounting common parameters and posting profile](./tasks/impairment-accounting.md)
+- [Setup impairment accounting common parameters and posting profile](./tasks/impairment-accounting.md)
 
 

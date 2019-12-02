@@ -62,9 +62,9 @@ In the current topology, [create a new ER format](tasks/er-format-configuration-
 
 ## Create a new document type
 
-To specify how documents that an ER format generates are routed, you must configure [ER destinations](electronic-reporting-destinations.md). In each ER destination that is configured to store generated documents as files, you must specify a document type of the Document management framework. Different document types can be used to route documents that different ER formats generate.
+To specify how documents that an ER format generates are routed, you must configure [Electronic reporting (ER) destinations](electronic-reporting-destinations.md). In each ER destination that is configured to store generated documents as files, you must specify a document type of the Document management framework. Different document types can be used to route documents that different ER formats generate.
 
-1. Add a new [document type](../../fin-and-ops/organization-administration/configure-document-management.md) for the ER format that you created or imported earlier. In the illustration that follows, the document type is **FileX**.
+1. Add a new [document type](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) for the ER format that you created or imported earlier. In the illustration that follows, the document type is **FileX**.
 2. To differentiate this document type from other document types, include a specific keyword in its name. For example, in the illustration that follows, the name is **(LOCAL) folder**.
 3. In the **Class** field, specify **Attach file**.
 4. In the **Group** field, specify **File**.
@@ -181,5 +181,5 @@ The **AttachingFile()** event is raised when the following ER destinations are p
 
 ## Additional resources
 
-- [Electronic reporting destinations](electronic-reporting-destinations.md)
+- [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
 - [Extensibility home page](../extensibility/extensibility-home-page.md)

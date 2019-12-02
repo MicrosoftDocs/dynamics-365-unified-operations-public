@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Embed Power BI in workspaces
+title: Embedded Power BI in workspaces
 description: Dynamics Finance and Operations apps now deliver rich, interactive reports seamlessly integrated into application workspaces. By using graphics and visuals supported by Power BI, workspaces can provide a highly-visual, yet interactive experiences for users.
 author: TJVass
 manager: AnnBe

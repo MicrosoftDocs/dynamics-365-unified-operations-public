@@ -5,16 +5,16 @@ title: Extend a module definition file
 description: This topic describes how to extend a module definition file.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -58,10 +58,7 @@ The **$ref** command can also include a relative path to another module in your 
 {
     "$ref": "../productFeature/productFeature.definition.json",
     "friendlyName": "Extended Product Feature Module",
-    "name": "extendedProductFeature"
-    "module": {
-        "view": "./extendedProductFeature"
-    },
+    "name": "extendedProductFeature",
     "config": {
         "extendedProductData": {
             "friendlyName": "Extended Product Data",
@@ -73,3 +70,13 @@ The **$ref** command can also include a relative path to another module in your 
 ```
 
 After deployment, both the base module and the extended module appear in Microsoft Dynamics 365 Commerce.
+
+## Additional resources
+
+[Request properties object](request-properties-object.md)
+
+[App settings](app-settings.md)
+
+[Cookie API overview](cookie-api-overview.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

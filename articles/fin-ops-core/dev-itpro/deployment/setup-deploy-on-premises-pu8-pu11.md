@@ -5,7 +5,7 @@ title: Set up and deploy on-premises environments (Platform updates 8 and 11)
 description: This topic provides information about how to plan, set up, and deploy an on-premises environment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/19/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 8
 This topic describes how to plan your deployment, set up the infrastructure, and deploy Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises), Platform updates 8 and 11.
 
 > [!IMPORTANT]
-> This topic applies only to deploying on-premises environments on Platform updates 8 and 11. For information about deploying to Platform update 12, see [Set up and deploy on premises environments (Platform update 12](setup-deploy-on-premises-pu12.md).
+> This topic applies only to deploying on-premises environments on Platform updates 8 and 11. For information about deploying to Platform update 12, see [Set up and deploy on-premises environments (Platform update 12 and later)](setup-deploy-on-premises-pu12.md).
 
 ## Finance and Operations components
 
@@ -71,7 +71,7 @@ These components depend on the following system software:
 
 ## Lifecycle Services
 
-Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Create an on-premises project in Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
+Finance and Operations bits are distributed through Microsoft Dynamics Lifecycle Services (LCS). Before you can deploy, you must purchase license keys through the [Enterprise Agreements](https://www.microsoft.com/Licensing/licensing-programs/enterprise.aspx) channel and set up an on-premises project in LCS. Deployments can be initiated only through LCS. For more information about how to set up on-premises projects in LCS, see [Set up on-premises projects in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
 ## Authentication
 
@@ -103,11 +103,11 @@ The hardware configuration includes the following components:
 - Server Message Block (SMB) version 3 file share for storage
 - Optional: Microsoft Office Server 2017
 
-For more information, see [System requirements](../../fin-and-ops/get-started/system-requirements-on-prem.md) and Sizing guidelines.
+For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) and Sizing guidelines.
 
 ### Hardware layout
 
-Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing for on-premises environments](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+Plan your infrastructure and Service Fabric cluster based on the recommended sizing in [Hardware sizing requirements for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 The following table shows an example of a hardware layout. This example is used throughout this topic to illustrate the setup.
 
@@ -706,7 +706,7 @@ For more information, see [Install integration services](https://docs.microsoft.
 ### <a name="setupssrs"></a> 17. Set up SSRS
 
 1. Before you begin, make sure that the prerequisites that are listed at the beginning of this topic are installed.
-2. Follow the steps in [Configure SQL Server Reporting Services for an on-premises deployment](../analytics/configure-ssrs-on-premises.md).
+2. Follow the steps in [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 ### <a name="configureadfs"></a> 18. Configure AD FS
 
@@ -791,7 +791,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 1. In LCS, navigate to your on-premises project, go to **Environment** > **Sandbox**, and then select **Configure**.
 2. For new deployments, select your environment topology, and then complete the wizard to start your deployment.
-3. If you have an existing deployment, see the topic [Redeploy an on-premises environment](redeploy-on-prem.md).
+3. If you have an existing deployment, see the topic [Redeploy on-premises environments](redeploy-on-prem.md).
 4. The local agent will pick up the deployment request, start the deployment, and communicate back to LCS when the environment is ready.
 
 If the deployment fails, the **Reconfigure** button will become available for your environment in LCS. Fix the underlying issue, click **Reconfigure**, update any configuration changes, and click **Deploy** to retry the deployment.
@@ -801,5 +801,5 @@ If the deployment fails, the **Reconfigure** button will become available for yo
 In your browser, navigate to https://[yourD365FOdomain]/namespaces/AXSF, where yourD365FOdomain is the domain name that you defined in the [Plan your domain name and DNS zones](#plandomain) section of this document.
 
 ## Additional resources
-- [Apply updates to an on-premises deployment](apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](redeploy-on-prem.md)
+- [Apply updates to on-premises deployments](apply-updates-on-premises.md)
+- [Redeploy on-premises environments](redeploy-on-prem.md)

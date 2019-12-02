@@ -54,8 +54,8 @@ To enable nonconformance management, follow these steps:
 Additional resources
 --------
 
-[Create and process a non conformance (Task guide)](tasks/create-process-non-conformance.md)
+[Create and process a conformance](tasks/create-process-non-conformance.md)
 
 [Quality management processes](quality-management-processes.md)
 
-[Set up prerequisites for non-conformance management (Task guide)](tasks/set-up-prerequisites-nonconformance-management.md)
+[Set up prerequisites for nonconformance management](tasks/set-up-prerequisites-nonconformance-management.md)

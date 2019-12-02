@@ -5,16 +5,16 @@ title: Create an observable data action
 description: This topic describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -158,13 +158,10 @@ The following example shows a sample module definition that registers the sample
     "description": "Module for testing observable data actions",
     "categories": ["test-module"],
     "tags": ["samples"],
-    "module": {
-        "view": "./test-module",
-        "dataActions": {
-            "testResult":{
-                "path": "./actions/test-action",
-                "runOn": "client"
-            }
+    "dataActions": {
+        "testResult":{
+            "path": "./actions/test-action",
+            "runOn": "client"
         }
     }
 }
@@ -182,3 +179,11 @@ export interface IAsyncTestModuleData {
 When a data action is wrapped in an **AsyncResult** class (as in the above example), the module will now have access to the **status**, **result** and **error** properties. The **status** property contains the current state of the data action which can be one of: **'Success'**, **'Loading'** or **'Failed'**.  The **result** property contains the data that is returned by the action if it succeeds. If the data action throws an error the **result** property will not be filled in. Instead, the **error** property can be used to see the error details.
 
 By taking advantage of the **status**, **result**, and **error** properties that are provided by observable data actions, complicated scenarios can be better handled in a module. Examples include showing a loading screen while a data action call runs and providing contextual error messages in response to a failed data action.
+
+## Additional resources
+
+[Chain data actions](chain-data-actions.md)
+
+[Batch data actions](batch-data-actions.md)
+
+[Share state across modules](share-state-across-modules.md)

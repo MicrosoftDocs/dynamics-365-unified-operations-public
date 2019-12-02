@@ -36,9 +36,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to create and use classes in X++.
 
-A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
+A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. 
 
-You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](xpp-static-classes.md).
+*Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. 
+
+Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
+
+You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [X++ static classes](xpp-static-classes.md).
 
 ## Declare a class
 
@@ -52,7 +56,7 @@ All classes are public. If you remove the **public** modifier, the system still 
 
 ## Variables
 
-Instance variables are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify and instance variable declaration by using the **private**, **protected**, or **public** keywords. 
+Instance variables are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify an instance variable declaration by using the **private**, **protected**, or **public** keywords. 
 
 The following example shows how to use accessor methods to make the variable data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected variable. The variable **lastName** is public, so code can directly get and set the value of the variable.
 
@@ -240,13 +244,15 @@ info(int2Str(area));
 
 ### Static methods
 
-Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. You use the following syntax to call static methods.
+Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. 
+
+You use the following syntax to call static methods.
 
 ```X++
     ClassName::methodName();
 ```
 
-If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [Static class members](xpp-static-classes.md).
+If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [X++ static classes](xpp-static-classes.md).
 
 ### main methods
 
@@ -265,7 +271,9 @@ Method declarations consist of a header and a body. The method header declares t
 
 ### Return type
 
-A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type. The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
+A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type. 
+
+The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
 
 ```X++
     void methodNameNoReturnValue()
@@ -286,7 +294,9 @@ Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *Ret
 
 Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** 
 
-ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* 
+ReturnType = *Datatype*  **| void | anytype** 
+
+MethodName = *Identifier* 
 
 ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** 
 
@@ -340,7 +350,9 @@ boolean checkAccountBlocked(AmountCur amountCur)
 ## Method modifiers
 Several modifiers can be applied to method declarations. Some of the modifiers can be combined (for example, **final static**). Here are the method modifier keywords:
 
--   **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
+-   **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. 
+
+    Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
 -   **display**: The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
 -   **edit**: The method's return type should be used to provide information for a field that is used on a page. The value in the field can be modified.
 -   **final**: The method can't be overridden in any class that derives from its class.

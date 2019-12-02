@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Business events in Microsoft Flow
-description: This topics provides information abou the business events that are available for consumption in Microsoft Flow via the application connector.
+title: Business events in Microsoft Power Automate
+description: This topics provides information abou the business events that are available for consumption in Microsoft Power Automate via the application connector.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 07/19/2019
@@ -26,11 +26,11 @@ ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
 
-# Business events in Microsoft Flow
+# Business events in Microsoft Power Automate
 
 [!include[banner](../includes/banner.md)]
 
-Business events can be consumed in Microsoft Flow via the application connector. The connector has a trigger that is named **when a business event occurs**. This trigger can be used to subscribe to any of the business events that are available in the target instance of the application.
+Business events can be consumed in Microsoft Power Automate via the application connector. The connector has a trigger that is named **when a business event occurs**. This trigger can be used to subscribe to any of the business events that are available in the target instance of the application.
 
 ## Prerequisite
 
@@ -55,14 +55,14 @@ If either the trigger or the flow is deleted or disabled, the business event is 
 Multiple flows can subscribe to the same business event in different legal entities or in the same legal entity.
 
 > [!NOTE]
-> The Flow endpoint must not be configured manually. The endpoint will automatically get created from Flow as explained above.
+> The Power Automate endpoint must not be configured manually. The endpoint will automatically get created from Power Automate as explained above.
 
 For how-to information about using business events in Microsoft Flow, see [Consume business events in Microsoft Flow](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow). 
 
-## Other ways to consume business events in Microsoft Flow
+## Other ways to consume business events in Power Automate
 
-The previous section explains how you can subscribe to business events directly from Microsoft Flow by using the trigger in the connector. However, you can also consume business events in Microsoft Flow from Microsoft Azure Event Grid, by using the [Event Grid connector for Microsoft Flow](https://docs.microsoft.com/connectors/azureeventgrid/).
+The previous section explains how you can subscribe to business events directly from Power Automate by using the trigger in the connector. However, you can also consume business events in Microsoft Power Automate from Microsoft Azure Event Grid, by using the [Event Grid connector for Microsoft Power Automate](https://docs.microsoft.com/connectors/azureeventgrid/).
 
-Event Grid might be a viable approach for consuming business events in Microsoft Flow if it's already being used for other integrations in an implementation. If a business event in the same legal entity must trigger multiple flows, you should consider consuming the business event from Event Grid.
+Event Grid might be a viable approach for consuming business events in Power Automate if it's already being used for other integrations in an implementation. If a business event in the same legal entity must trigger multiple flows, you should consider consuming the business event from Event Grid.
 
-This approach is applicable to any messaging or event platform that is used as an endpoint for business events, provided that a connector is available for it in Microsoft Flow.
+This approach is applicable to any messaging or event platform that is used as an endpoint for business events, provided that a connector is available for it in Power Automate.

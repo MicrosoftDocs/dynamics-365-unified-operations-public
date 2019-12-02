@@ -5,7 +5,7 @@ title: Extend POS views to add custom columns and app bar buttons
 description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 manager: AnnBe
-ms.date: 08/26/2019
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -80,6 +80,9 @@ The following table shows the POS views that currently support extensions. It al
 | TransferOrderDetailsView        | No                            | No                           | Yes                               |
 | FulfillmentLineView             | No                            | Yes                          | No                               |
 | ReturnTransactionView           | No                            | Yes                          | Yes                               |
+| PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                    |
+| PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
+
 
 
 > [!NOTE]

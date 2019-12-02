@@ -5,7 +5,7 @@ title: One Version service updates FAQ
 description: This topic is intended to provide clarity on service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: meeramahabala
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,19 +31,17 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner. This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
-
-## Schedule for April 10.0 release
-
-### Can the update to 10.0 be delayed? Or does the policy for delaying updates only apply if you are using 10.0?
-Yes, the customer can pause or opt-out of the [10.0 release](whats-new-changed-10.md) if they are on 8.1.2 or 8.1.3. The ability to set up this configuration or pause updates is available through LCS. Customers will be able to pause up to 2 consecutive updates. Here are a few examples:
-
-- The customer is currently on version 8.1.2 and can choose to pause version 10. The customer will be required to take version 10.0.1
-- The customer is currently on version 8.1.3, the customer can choose to pause version 10 and version 10.0.1. The customer will be required to take the service update 10.0.2.  
+In July 2018 we announced a [change to the way we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/) that will help you stay current in a consistent, predictable, and seamless manner.  In June 2019, based on customer feedback we announced [New flexible service updates being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity on the service updates, processes, and tools you can use to prepare for it. We will continue to add additional information to this topic as needed.
 
 
-### With a release date in early April, when will the GA package be made available?
-Production updates for a monthly release will be scheduled for the first, second, and third weeks in April. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
+### Can the update be delayed, what is the policy?
+Yes, the customer can pause, delay, or opt-out of an update via Update Settings in the Lifecycle Services projects.  A customer can choose to pause up to 3 consecutive updates. The following is an example of a delayed update: 
+- The customer is currently on version 10.0.2.
+- The customer can pause updates 10.0.3, 10.0.4, and 10.0.5.
+- The customer must take the 10.0.6 update when it is available.
+  
+### With a release date in early April, when will the general availability package be made available?
+Production updates for a monthly release will be scheduled for the first, second, and third weeks in of the month. Depending on the configuration that you set up in Lifecycle Services (LCS), you will receive updates during that specific week.
  
 For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20 based on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
 
@@ -55,9 +53,9 @@ Customers can always choose to apply the update at an earlier time, or if there 
 
 | Version       | Description |
 |---------------|-------------|
-| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 3 months or 2 service updates. To pause an update, refer to [Pause service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates). |
-| 8.0           | Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months or 2 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see [Update environments from version 8.0 to 8.1 topic](../../dev-itpro/migration-upgrade/appupdate-80-81.md). | 
-| 7.x           | Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 3 months and 2 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3. 
+| 8.1 and later | All customers on 8.1 and later will be scheduled for automatic monthly updates with a combined application and platform update starting November 2018. You will be required to be on an update that's no older than 4 months or 3 service updates. To pause an update, refer to [Pause service updates](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/pause-service-updates). |
+| 8.0           | Customers on 8.0 can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months or 3 service updates. The 8.0 application lifecycle ends in April 2019. Customers on 8.0 must update by April 30, 2019 to stay supported. In order to be on a supported application, customers should follow the process to update to the latest version. For more information, see [Update environments from version 8.0 to 10.0.X](../../dev-itpro/migration-upgrade/appupdate-80-81.md). | 
+| 7.x           | Customers on 7.x can manually apply the monthly platform and financial reporting updates. You will be required to have an update that's no older than 4 months and 3 service updates. Customers on 7.x must update by April 30, 2019 to stay supported. If customer stays on version 7.3 past April 30 they will still receive automated platform updates every month. You are required to upgrade to 8.1 by April 2019 (unless extensions are not available). The only overlayered version in market will be version 7.3. 
 
 ### What does the service update contain?
 
@@ -69,7 +67,7 @@ A regulatory update is a new feature or an existing feature change required by l
 
 ### What's the upcoming schedule of updates?
 
-Service updates are available since November 2018. You have the option to apply the update when it is convenient for you, or let Microsoft auto-apply the service updates based on the selected maintenance window. You are required to have an update no older than 3 months.
+Service updates are available since November 2018. You have the option to apply the update when it is convenient for you, or let Microsoft auto-apply the service updates based on the selected maintenance window. You are required to have an update no older than 4 months.
 
 To see a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
@@ -91,17 +89,17 @@ Customers on version 8.1 or later will only be able to apply the 8.1.x or v10.x 
 
 ### Will Platform updates be able to be scheduled and delay/pause by customers?
 
-Yes, in the upcoming months customers who are on version 7.x or 8.0 will be able to schedule platform updates directly in Lifecycle Services. A delay/pause experience will also become available.
+Yes, customers who are on version 7.3 are able to schedule platform updates directly in Lifecycle Services. A delay/pause experience is also available.
 
 ### Do these updates apply to on-premises?
 
-Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. They will have a 3 month expiry in general. However, the process of the updates outlined in this topic only apply to the cloud service.
+Refer to the [Software lifecycle policy and on-premises releases](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/on-prem-version-update-policy?toc=/fin-and-ops/toc.json) topic for the specific expiration dates of the version that you are on. They will have a 3 service update expiry in general. However, the process of the updates outlined in this topic only apply to the cloud service.
 
 ## Process
 
 ### How will Microsoft ensure quality of releases?
 
-Ensuring quality of the release is a fundamental principle that's enabled through a series of progressive, rigorous, automated validations as described in [Standard and First release service updates](public-preview-releases.md).
+Ensuring quality of the release is a fundamental principle that's enabled through a series of progressive, rigorous, automated validations as described in [Service update availability](public-preview-releases.md).
 
 ### Can I select the day and time to update?
 
@@ -113,7 +111,7 @@ The same service update will be auto applied to all customers by Microsoft. Micr
 
 ### How do I update to the latest version?
 
-Users can update to the latest version using the tiles on the Environment details page in LCS. After the update is released by Microsoft, the tile will show the latest update. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments. Documentation will also be made available on docs.microsoft.com.
+Users can update to the latest version using the tiles on the Environment details page in LCS. After the update is released by Microsoft, the tile will show the update available. Customers can choose to apply the update on their own by going through the update experience on their sandbox and production environments. 
 
 ### How do I update the production environment to the same version after Microsoft updates the sandbox environment?
 
@@ -125,22 +123,22 @@ The expected downtime for a successful update is 30 minutes to 1 hour. However, 
 
 ### What's the process for deprecation?
 
-In the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic, we state the difference between removed and deprecated features as follows:
+In the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic, we state the difference between removed and deprecated features as follows:
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 
 ### Can I delay an update?
 
-You can pause an update up to 3 months or 2 consecutive service updates by way of LCS configuration. After this period, an update will be scheduled and auto-applied by Microsoft. The update experience for a delayed update will incur additional downtime.
+You can pause an update up to 4 months or 3 consecutive service updates by way of LCS configuration. After this period, an update will be scheduled and auto-applied by Microsoft. The update experience for a delayed update will incur additional downtime.
 
-### Can I delay an update for longer than 2 consecutive service updates due to seasonal activity or other business reason? 
+### Can I delay an update for longer than 3 consecutive service updates due to seasonal activity or other business reason? 
 
-No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 2 service updates old. A customer can only pause up to 2 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1 and 10.0.2, service update 10.0.3 will be auto applied to the sandbox. 
+No, service updates will be automatically applied to the sandbox, then 7 days later the update will be applied to the production environment if the environments are more than 3 service updates old. A customer can only pause up to 3 consecutive updates in a row. For example, if a customer on version 10.0 chooses to pause updates 10.0.1, 10.0.2, and 10.0.3 then service update 10.0.4 will be auto applied to the sandbox. 
 
 ### What if I find an issue during the sandbox update?
 
@@ -202,7 +200,7 @@ Data task automation lets you easily repeat many types of data tasks and validat
 
 ### How can I determine what's changed in a service update?
 
-The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release notes](https://docs.microsoft.com/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact om the features that you use.
+The What’s new or Changed documentation is the primary source for the details contained in each service update. The [Release plans](https://docs.microsoft.com/business-applications-release-notes/) are the primary source of information for all new features and changes for a future release. Features will also include help topics in docs.microsoft.com as needed. An impact analysis tool will be available in LCS to help you better understand the impact om the features that you use.
 
 ### How will I know if there is a deprecated feature that will impact me if I’m not doing active development/ recompile my code? 
 
@@ -221,9 +219,9 @@ Extensibility requests can be logged in LCS. Details are available in the [Exten
 
 ### What does end of service mean?
 
-Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 months. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
+Microsoft will not provide any fixes to issues on versions that have reached end of service. Microsoft will also not investigate or troubleshoot any issue that you may encounter on a version that's older than 3 service updates. If you encounter an issue on a version that has reached end of service, you will be required to update to the latest update and report the issue if it persists.
 
-All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as is.
+All environments will continue to be operated by Microsoft. All automatic processes around your environments, such as monitoring or self-healing, will also continue as long as the environment is on a supported version.
 
 ### Will individual hotfixes be supported?
 
@@ -249,7 +247,7 @@ All fixes and updates for retail components will be cumulative.
 
 ### What are the maintenance downtime requirements that may impact channel operations?
 
-For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../retail/pos-operations.md).
+For retailers with a business need for redundancy, Modern POS offline capability allows core retail POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Retail Store Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../retail/pos-operations.md).
 
 ### When will I need to update my in-store components?
 
@@ -267,6 +265,6 @@ Customers can choose to update self-hosted components manually at each store or 
 
 Microsoft provides several mechanisms to progressively roll-out and enable functional enhancements across stores, devices, and users.
 
-- **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../../retail/pos-screen-layouts.md).
+- **Screen layout designer** – Most visual elements in POS are configured and centrally managed by an administrative user in the customer organization. This means that new POS operations will not automatically be displayed on POS unless explicitly configured for inclusion in corresponding screen layouts. Screen layouts are configured using Screen layout designer and can be specific to a store or POS device. For more information, see [Screen layouts for the point of sale (POS)](../../../retail/pos-screen-layouts.md).
 - **Functionality profiles, POS permissions, Retail parameters** – Significant elements of functionality in POS are typically configurable by the user. This can be configured through functionality profiles, POS permissions, retail parameters, or other controls which allow for device, register, store, or user-level functionality control in applicable scenarios.
 - **Modern Point of Sale and Retail Store Scale Unit** – Because Modern Point of Sale and Retail Store Scale Unit are self-hosted by the retailer, topologies which include either of these components enable roll out of updates at a separate (and slower) cadence, and in a more granular fashion than with cloud-only topologies.

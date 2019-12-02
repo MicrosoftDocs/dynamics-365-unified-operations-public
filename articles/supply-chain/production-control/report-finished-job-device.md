@@ -31,7 +31,6 @@ ms.dyn365.ops.version: AX 10.0.6
 ---
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 # Report as finished to a license plate controlled location from the Job card device 
 

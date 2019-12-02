@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Method used to reduce forecast requirements
+# Forecast reduction keys
 
 [!include [banner](../includes/banner.md)]
 
@@ -230,4 +230,4 @@ When you select **Transactions - reduction key** or **Transactions - dynamic per
 
 ## Additional resources
 
-[Master plans](master-plans.md)
+[Master plans overview](master-plans.md)

@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -53,7 +53,7 @@ The data packages are similar but not identical to existing demo companies and m
 
 The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 for Finance and Operations is now available in private preview.
 
-The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the PowerApps documentation.
+The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 for Finance and Operations and Dynamics 365 for Project Service Automation instances via the Common Data Service (CDS). The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Common Data Service data integration, see [Integrate data into Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) in the Power Apps documentation.
 
 This solution provides direct synchronization in the following areas:
 
@@ -98,7 +98,7 @@ This feature provides support for functionality that is available in expense man
 - Support for intercompany expenses.
 - Support for per diem expenses.
 
-For more information, see [Expense management mobile workspace](https://docs.microsoft.com/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace).
+For more information, see [Expense management mobile workspace](https://docs.microsoft.com/dynamics365/finance/expense-management/expense-management-mobile-workspace).
 
 ## Financial reporting using Power BI
 
@@ -278,9 +278,9 @@ The Tax Engine (GTE) is an essential part of the configurable business applicati
 
 ### More information
 
-- [Tax engine overview](../../financials/general-ledger/tax-engine.md)
-- [Tax engine integration](../../financials/general-ledger/tax-engine-integration.md)
-- [Extending the Tax engine](../../financials/general-ledger/extend-tax-engine-configurations.md)
+- [Tax engine overview](../../../finance/general-ledger/tax-engine.md)
+- [Tax engine integration](../../../finance/general-ledger/tax-engine-integration.md)
+- [Extend tax engine configurations](../../../finance/general-ledger/extend-tax-engine-configurations.md)
 
 ## Vendor collaboration
 

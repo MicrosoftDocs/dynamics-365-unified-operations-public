@@ -64,23 +64,21 @@ Julia uses the following Excel template to prepare the budget:
 ## Exercise 1: Configuration
 
 ### **Task 1: Create organizational hierarchy**
-As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only. 1.1. Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button
+As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only. 
 
-![Org hierarchy](./media/screenshot3.png) 
+1.1. Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click the New button.
 
-1.2. Type the name for the organizational hierarchy and click button Assign purpose
+![Organization hierarchies](./media/screenshot3.png) 
 
-[![Name](./media/screenshot4.png)](./media/screenshot4.png) 
+1.2. Type the name for the organizational hierarchy in the Name box and click Assign purpose.
 
-1.3. Select Budget planning purpose, click button Add and assign newly created organizational hierarchy: 
+1.3. Select the Budget planning purpsose, click Add, and assign the newly created organizational hierarchy. 
 
 [![Assign purpose](./media/screenshot5.png)](./media/screenshot5.png)
 
-1.4. Repeat the step above for Security organizational purpose. Close the form when done.
+1.4. Repeat the step above for the Security organizational purpose. Close the form when done.
 
-[![Security org](./media/screenshot6.png)](./media/screenshot6.png)
-
-1.5. In the Organizational Hierarchies form click button View. Click Edit in the Hierarchy designer and create a hierarchy by clicking button Insert.
+1.5. In the Organizational Hierarchies form, click View. Click Edit in the Hierarchy designer, and create a hierarchy by clicking Insert.
 
 [![Insert](./media/screenshot7.png)](./media/screenshot7.png) 
 
@@ -88,7 +86,7 @@ As all the budgeting process happens in the Finance department, therefore Julia 
 
 [![Finance](./media/screenshot8.png)](./media/screenshot8.png)
 
-1.7. When done, click button Publish and Close. Select 1/1/2015 as effective date for hierarchy publishing.
+1.7. When done, click Publish and Close. Select 1/1/2015 as the effective date for hierarchy publishing.
 
 [![Effective date](./media/screenshot9.png)](./media/screenshot9.png)
 
@@ -98,7 +96,7 @@ Budget planning uses special security policies to configure access to budget pla
 2.1. Switch to DEMF legal entity context. 
 
 
-2.2. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In Parameters tab, set the Security model value to Based on security organizations 
+2.2. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In the Parameters tab, set the Security model value to Based on security organizations. 
 
 [![Parameters](./media/screenshot11.png)](./media/screenshot11.png) 
 
@@ -106,11 +104,11 @@ Budget planning uses special security policies to configure access to budget pla
 
 [![Budget manager](./media/screenshot12.png)](./media/screenshot12.png) 
 
-2.4. Pick user role and click Assign organizations 
+2.4. Pick user role and click Assign organizations. 
 
-[![Assign org](./media/screenshot13.png)](./media/screenshot13.png)
+[![Assign organizations](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Select “Grant access to specific organizations”. Pick Organizational hierarchy created in the first step. Pick Finance node and click Grant with children button 
+2.5. Select “Grant access to specific organizations”. Pick the Organizational hierarchy created in the first step. Pick Finance node, and click the Grant with children button. 
 
 ***Important!*** *Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity* 
 
@@ -126,40 +124,32 @@ Budget planning uses special security policies to configure access to budget pla
 ### Task 4: Create budget plan columns
 Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout. In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year. Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity. In this lab we will use Data entity to fill in the values. 
 
-4.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page. Click Office button on the top right corner of the form and pick Columns (unfiltered) 
+4.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration, open the Columns page. Click the Office button on the top right corner of the form, and pick Columns (unfiltered). 
 
 [![Columns unfiltered](./media/screenshot16.png)](./media/screenshot16.png) 
 
-4.2. System will open Excel workbook to be used for filling in the values. If prompted, click Enable Editing and Trust this app 
+4.2. The system will open an Excel workbook to be used for filling in the values. If prompted, click Enable Editing and Trust this app. 
 
-[![Enable editing](./media/screenshot18.png)](./media/screenshot18.png) 
-
-[![Trust this app](./media/screenshot17.png)](./media/screenshot17.png)
-
-4.3. We will need more columns to fill the values in. Click Design on the right side pane to add the columns to the grid: 
+4.3. We will need more columns to fill the values in. Click Design on the right side pane to add the columns to the grid. 
 
 [![Design](./media/screenshot19.png)](./media/screenshot19.png) 
 
-4.4. Click little pencil button next to PlanColumns to see available columns to add to the grid 
+4.4. Click the pencil button next to PlanColumns to see available columns to add to the grid. 
 
 [![Edit](./media/screenshot20.png)](./media/screenshot20.png) 
 
-4.5. Double click on each available field to add them to Selected fields and click Update 
+4.5. Double click on each available field to add them to Selected fields, and click Update. 
 
-![Update](./media/screenshot21.png)](./media/screenshot21.png) 
+4.6. In the Excel table, add all the columns that need to be created. Use the AutoFill feature in Excel to add the lines quickly. Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid). 
 
-4.6. In Excel table add all the columns that need to be created. Use AutoFill feature in Excel to add the lines quickly. Make sure the lines are added as a part of the table (when using vertical scroll, you should be able to see column headers on the top of the grid) 
-
-[![Autofill](./media/screenshot22.png)](./media/screenshot22.png) 
-
-4.7. Return to the application and refresh the page. Published values will appear. 
+4.7. Return to the application, and refresh the page. Published values will appear. 
 
 [![Refresh](./media/screenshot23.png)](./media/screenshot23.png)
 
 ### Task 5: Create budget plan document layouts and templates
 Layout defines how budget plan document lines grid is going to look like when user opens budget plan document. It is also possible to switch the layout for budget plan document to see the same data in different angles. Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab) 
 
-5.1. In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page. Create a new layout for Monthly budget entry:
+5.1. In the Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration, open the Layouts page. Create a new layout for Monthly budget entry:
 
 -   Pick MA+BU dimension set to include Main accounts and Business units to the layout.
 -   List all budget plan columns created in the previous step in the Elements section. Make all but Previous year actuals editable.
@@ -174,13 +164,13 @@ Based on the budget plan layout definition we can create an Excel template to be
 *Note: Make sure to select “Save as” and select the place where template should be stored in order to edit it. If user selects “Open” in the dialog without saving, the changes done to the file will not be retained when the file is closed.* 
 [![Template view](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload 
-[![Upload](./media/screenshot26.png)](./media/screenshot26.png)
+5.3. &lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload. 
+
 
 ### Task 6: Create a budget planning process
 Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans. Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans. 
 
-6.1. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.
+6.1. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process, and create a new record.
 
 -   Budget planning process – DEMF budgeting FY2016
 -   Budget cycle – FY2016
@@ -194,74 +184,68 @@ Julia needs to create and activate a new budget planning process combining all t
 
 [![Alternate layouts](./media/screenshot27.png)](./media/screenshot27.png) 
 
-6.2. Select Actions &gt; Activate to activate this budget planning workflow 
+6.2. Select Actions &gt; Activate to activate this budget planning workflow. 
 
 [![Activate](./media/screenshot28.png)](./media/screenshot28.png)
 
 ## Exercise 2: Process simulation
 
 ### Task 7: Generate initial data for budget plan from General ledger
-7.1. Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger. Fill in the periodic process parameters and click button Generate. 
+7.1. Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger. Fill in the periodic process parameters, and click Generate. 
 
-[![Generate](./media/screenshot29.png)](./media/screenshot29.png) 
-
-7.2. Navigate to Budgeting &gt; Budget plans to find a budget plan created by Generate process. 
+7.2. Navigate to Budgeting &gt; Budget plans to find a budget plan created by the Generate process. 
 
 [![Budget plan](./media/screenshot30.png)](./media/screenshot30.png) 
 
-7.3. Open document details by clicking on Document number hyperlink. Budget plan is displayed as defined in the layout created during this lab 
+7.3. Open document details by clicking on Document number hyperlink. Budget plan is displayed as defined in the layout created during this lab. 
 
 [![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### Task 8: Create current year budget based on previous year actuals
 Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions. We will use allocations to create current year budget from previous year actuals. 
 
-8.1. Pick all lines in the budget plan document grid and click button allocate budget 
+8.1. Pick all lines in the budget plan document grid and click Allocate budget. 
 
 [![All lines](./media/screenshot32.png)](./media/screenshot32.png) 
 
-8.2. Select allocation method, Period key, Source and destination scenarios and click Allocate 
+8.2. Select allocation method, Period key, Source and destination scenarios, and click Allocate. 
 
 [![Allocate](./media/screenshot33.png)](./media/screenshot33.png)
 
-The previous year actual amounts will be copied to current year budget and allocate them across periods using Sales curve period key. 
+The previous year actual amounts will be copied to the current year budget and allocate them across periods using the Sales curve period key. 
 
 [![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### Task 9: Adjust budget plan document using Excel and finalize the document
-9.1. Click Button worksheet to open document contents in Excel
+9.1. Click the Worksheet button to open document contents in Excel.
 
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+9.2. When the Excel workbook opens, adjust the numbers in the budget plan document, and click the Publish button.
 
-9.2. When Excel workbook opens, adjust the numbers in budget plan document and click button Publish.
-
-[![Publish](./media/screenshot36.png)](./media/screenshot36.png)
-
-9.3. Return to budget plan document. Click Workflow &gt; Submit to Auto-approve the document
+9.3. Return to budget plan document. Click Workflow &gt; Submit to Auto-approve the document.
 
 [![Auto-approve](./media/screenshot37.png)](./media/screenshot37.png) 
 
-Once workflow completes, budget plan document stage changes to Approved. [![Approved](./media/screenshot38.png)](./media/screenshot38.png)
+Once workflow completes, the budget plan document stage changes to Approved. [![Approved](./media/screenshot38.png)](./media/screenshot38.png)
 
 ## Appendix
 
 ### Auto-Approve workflow configuration
 
-A. Budgeting &gt; Setup &gt; Budget planning &gt; Budgeting workflows Create a new workflow using template Budget planning workflows:
+A. Budgeting &gt; Setup &gt; Budget planning &gt; Budgeting workflows. Create a new workflow using template Budget planning workflows:
 
 [![Create a new workflow](./media/screenshot39.png)](./media/screenshot39.png)
 
-This workflow will contain only one task – Stage transition budget plan 
+This workflow will contain only one task – Stage transition budget plan. 
 
 [![Stage transition budget plan](./media/screenshot40.png)](./media/screenshot40.png) 
 
 Save and activate the workflow. 
 
-B. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In Stages tab create 2 stages – Initial and Submitted 
+B. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In the Stages tab, create 2 stages – Initial and Submitted. 
 
 [![Initial and submitted](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In Workflow Stages tab Associate the workflow Auto – approve created in A step with the stages Initial and Submitted 
+C. Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning configuration. In the Workflow Stages tab, associate the workflow Auto–approve created in step A with the stages Initial and Submitted.
 
 [![Budgeting and budget planning](./media/screenshot42.png)](./media/screenshot42.png)  
 

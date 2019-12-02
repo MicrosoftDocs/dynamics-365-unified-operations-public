@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic explains how to set up asset manufacturers and related models in Asset Management. Models can be related to asset types.
 
@@ -50,7 +50,7 @@ This topic explains how to set up asset manufacturers and related models in Asse
 8. In the **Asset type** field, select the asset type that the manufacturer model should be related to.
 
     > [!NOTE]
-    > You can also set up relations for asset types, manufacturers, and models in the **Asset types** lookup. For more information, see [Create asset type](../setup-for-objects/object-types.md).
+    > You can also set up relations for asset types, manufacturers, and models in the **Asset types** lookup. For more information, see [Asset types](../setup-for-objects/object-types.md).
 
     In the **Details** FastTab, the **Models** field shows the number of asset models that are set up on the selected asset manufacturer. The **Assets** field shows the number of assets that are using the selected manufacturer.
     
