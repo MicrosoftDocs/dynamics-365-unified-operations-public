@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features in Lifecycle Services (LCS)
-description: This topic describes features that have been removed, or that are planned for removal in Lifecycle Services.
+description: This topic describes features that have been removed, or that are planned for removal from Microsoft Dynamics Lifecycle Services (LCS).
 author: sericks007
 manager: AnnBe
 ms.date: 12/02/2019
@@ -34,18 +34,39 @@ ms.dyn365.ops.version: 10.0.5
 This topic describes features that have been removed or deprecated for Microsoft Dynamics Lifecycle Services (LCS).
 
 - A *removed* feature is no longer available in the service.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
-This list is intended to help you consider these removals and deprecations for your own planning. 
+This list is provided so that you can consider these removals and deprecations as you do your own planning.
 
-## October 2019 annoucements
+## October 2019 announcements
 
 ### Flowchart diagrams in Business process modeler
 
-|   |  |
-|------------|--------------------|
-| **Reason for deprecation/removal** | We are deprecating the flowchart diagrams component in Business process modeler (BPM) due to the legacy design that results in low usage.  |
-| **Replaced by another feature?**   | No |
-| **Areas affected**                 | Business process modeler |
-| **Status**                         | Deprecated: The flowchart diagrams feature in BPM is expected to be removed by early February 2020. The following functionality will be removed:<br><br>- Existing flowcharts will be unavailable for viewing or editing, and the shape properties associated with flowchart activities will also be unavailable because the entire Flowchart tab will be removed.  These flowcharts include the default flowcharts that are automatically generated and customized flowcharts that are modified based on those default flowcharts.<br>- The legacy fit/gap analysis feature will be unavailable. Therefore, no gap list will be automatically created or available for export. Note: this feature had been deprecated and replaced by Azure DevOps integrations.<br>- Version history of the flowchart will be unavailable. 
-|
+<table>
+<tbody>
+<tr>
+<td><strong>Reason for deprecation/removal</strong></td>
+<td>We are deprecating the flowchart diagrams component in Business process modeler (BPM), because the legacy design caused low usage.</td>
+</tr>
+<tr>
+<td><strong>Replaced by another feature?</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Areas affected</strong></td>
+<td>Business process modeler</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Deprecated: The flowchart diagrams component in BPM is expected to be removed by early February 2020. The following functionality will be removed:
+<ul>
+<li>Existing flowcharts will be unavailable for viewing or editing. The shape properties that are associated with flowchart activities will also be unavailable, because the whole <strong>Flowchart</strong> tab will be removed. These flowcharts include both the default flowcharts that are automatically generated and customized flowcharts that are modified based on those default flowcharts.</li>
+<li>The legacy fit/gap analysis feature will be unavailable. Therefore, no gap list will be automatically created or available for export.
+<p><strong>Note:</strong> This feature had previously been deprecated and replaced by Microsoft Azure DevOps integrations.</p>
+</li>
+<li>The version history of the flowchart will be unavailable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
