@@ -5,7 +5,7 @@ title: Plan for the global address book and other address books
 description: This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -40,7 +40,7 @@ This topic describes the considerations and decisions that you must make during 
 
 Before you begin to work with the global address book, you must determine the default values for it. These default values are then used for any additional address books that you create.
 
-**Decisions:**
+**Decisions**
 
 - What sequence should names be displayed in for party records of the **Person** type? For example, one sequence is last name, middle name, first name.
 - Should party records be deleted from the address book when the role record is deleted? For example, if a customer record is deleted, should the party record also be deleted?
