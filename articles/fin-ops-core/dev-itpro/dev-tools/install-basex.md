@@ -90,8 +90,6 @@ Download the zip package from the download page.
 
 ---
 
-Currently, the latest version is 9.1.2.
-
 ## Install BaseX
 
 # [Admin: Install BaseX](#tab/admin)

@@ -34,7 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the library of classes in X++. There are two kinds of classes: *application classes* and *system classes*.
+This topic describes the library of classes in X++. 
+
+There are two kinds of classes: *application classes* and *system classes*.
 
 - **Application classes** – These classes are implemented in X++. They are available in the **Code > Classes** node in Application Explorer.
 - **System classes** – These classes are sometimes known as *kernel classes*. They are listed under the **System Documentation > Classes** node in Application Explorer. The source code for these classes isn't available. For a list of the system classes, see [API, class, and table reference](api-reference.md).
@@ -43,7 +45,7 @@ This topic describes the library of classes in X++. There are two kinds of class
 
 The following code block types are standard for application classes:
 
-- **class and variable declarations**: The class declaration contains modifiers such as **public**, **private**, and **extends**. 
+- **class and variable declarations**: The class declaration contains modifiers, such as **public**, **private**, and **extends**. 
 - **variable declarations**: These are the field members for objects that are constructed from the class. When you type the keyword **this** on a class instance variable, IntelliSense can show a list of the members.
 - **new** method: This method creates an instance of the class. The constructor can be called only by using the **new** keyword. Derived classes can call the **new** method of their constructor by calling the **super** method reference. For more information, see [X++ inheritance](xpp-inheritance.md).
 - **finalize** method: This method finalizes an instance of the class. This method is the destructor method. However, it's a destructor by convention only. The system doesn't automatically call the **finalize** method during garbage collection.
@@ -65,11 +67,19 @@ Methods can be created on many kinds of items. Here are some examples:
 
 ## Substituting application classes for system classes
 
-You should use the *substitute application classes* instead of the system classes that they extend. In Application Explorer, under **System Documentation > Classes**, several kernel or system classes have names that begin with a lowercase *x*. These classes are known as *x-system classes*. Examples of these system classes are **xApplication** and **xVersionControl**. Some of these classes are extended by application classes. For example, the **Application** class extends the **xApplication** system class. The classes that derive from x-system classes are known as *substitute application classes*. In Application Explorer, under the **Classes** node, the icon next to the substitute application classes differs from the standard icon.
+You should use the *substitute application classes* instead of the system classes that they extend. 
+
+In Application Explorer, under **System Documentation > Classes**, several kernel or system classes have names that begin with a lowercase *x*. These classes are known as *x-system classes*. Examples of these system classes are **xApplication** and **xVersionControl**. Some of these classes are extended by application classes. For example, the **Application** class extends the **xApplication** system class. 
+
+The classes that derive from x-system classes are known as *substitute application classes*. In Application Explorer, under the **Classes** node, the icon next to the substitute application classes differs from the standard icon.
 
 ### x-system classes
 
-Some of the substitute application classes are associated with a special global variable that represents an instance of the class. For example, the **appl** variable references a pre-instantiated object from the **Application** class. The advantage of the **appl** variable is that the system maintains the object throughout the scope of your session. Your code would be less efficient if it repeatedly used the **new Application()** syntax to obtain an instance of the **Application** class. You should not use the **xApplication** system class. Instead, use the **Application** substitute application class. You can reference the static members of the **Application** class by using the following standard syntax: **Application::checkForNewBatchJobs()**. However, to reference the instance members of the **Application** class, you should use that class's **appl** variable, if it exists. This pattern applies to most of the x-system classes. The **Session** substitute application class is one exception, because there is no special global variable for **Session**. The following table lists the x-system classes that have a corresponding substitute application class. The special global variables are also shown for those classes that have one.
+Some of the substitute application classes are associated with a special global variable that represents an instance of the class. For example, the **appl** variable references a pre-instantiated object from the **Application** class. The advantage of the **appl** variable is that the system maintains the object throughout the scope of your session. Your code would be less efficient if it repeatedly used the **new Application()** syntax to obtain an instance of the **Application** class. You should not use the **xApplication** system class. Instead, use the **Application** substitute application class. 
+
+You can reference the static members of the **Application** class by using the following standard syntax: **Application::checkForNewBatchJobs()**. However, to reference the instance members of the **Application** class, you should use that class's **appl** variable, if it exists. This pattern applies to most of the x-system classes. The **Session** substitute application class is one exception, because there is no special global variable for **Session**. 
+
+The following table lists the x-system classes that have a corresponding substitute application class. The special global variables are also shown for those classes that have one.
 
 | Application class | x-system class  | Global variable    |
 |-------------------|-----------------|--------------------|
@@ -147,7 +157,9 @@ You implement classes by using the batch processing system, and by extending the
 
 ### Removing the Recurrence button from the batch processing dialog box
 
-When you implement a class by using the batch processing system, you can remove the **Recurrence** button by calling the **Args.parmEnum** method and passing the **NoYes::Yes** system enumeration value. The **NoYes** system enumeration determines whether the **Recurrence** button is removed from the dialog box. The default value is **NoYes::No**. In the following example, the **InventTransferMultiShip** class is implemented. The **BatchDialog::main** method creates the **Batch processing** dialog box.
+When you implement a class by using the batch processing system, you can remove the **Recurrence** button by calling the **Args.parmEnum** method and passing the **NoYes::Yes** system enumeration value. The **NoYes** system enumeration determines whether the **Recurrence** button is removed from the dialog box. The default value is **NoYes::No**. 
+
+In the following example, the **InventTransferMultiShip** class is implemented. The **BatchDialog::main** method creates the **Batch processing** dialog box.
 
 ```X++
 static void noRecurrenceButton(Args _args)
@@ -166,10 +178,12 @@ static void noRecurrenceButton(Args _args)
 Two system classes let you to manipulate graphics and icons: **Image** and **Imagelist**.
 
 - **Image** – This class lets you load, save, and manipulate individual images. For example, you can capture a screen and save it as an image, crop or rotate an image, or manipulate the color depth.
-- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in the ImageListAppl\* application classes.
+- <strong>Imagelist</strong> – This class lets you work with a set of images that have common properties, such as the size and transparency color. You can view the image lists that are used in the **ImageListAppl** application classes.
 
 ## Query object model
-The query object model contains classes that are used to define and run a query. The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources. The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer. The following table describes the classes in the query object model.
+The query object model contains classes that are used to define and run a query. The query objects are used to define the query data source, the fields that are returned, record ranges, and relations to child data sources. The query classes are more visible when you create a dynamic query in code, but they are also used behind the scenes when you create a static query in Application Explorer. 
+
+The following table describes the classes in the query object model.
 
 | System class         | Description      |
 |----------------------|------------------|

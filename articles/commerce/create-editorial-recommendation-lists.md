@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -61,6 +61,6 @@ To create a curated product recommendation list, follow these steps.
 
 [Product recommendations overview](product-recommendations.md)
 
-[Enable omni-channel product recommendations](enable-product-recommendations.md)
+[Enable product recommendations](enable-product-recommendations.md)
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)

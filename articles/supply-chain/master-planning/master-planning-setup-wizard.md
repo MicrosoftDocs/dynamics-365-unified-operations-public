@@ -5,7 +5,7 @@ title: Master planning setup wizard
 description: This topic describes various important strategies and parameters that are used to set up master planning.
 author: t-benebo
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -35,6 +35,11 @@ ms.dyn365.ops.version: AX 10.0.0
 [!include [banner](../includes/banner.md)]
 
 This topic provides a guide for the **Master planning setup wizard**. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+
+The [Master planning setup wizard in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+
 
 ## Specific requirements of your company
 

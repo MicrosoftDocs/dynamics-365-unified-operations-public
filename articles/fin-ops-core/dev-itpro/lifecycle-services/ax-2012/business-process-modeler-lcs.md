@@ -67,9 +67,9 @@ To access Business process modeler, follow these steps:
 Additional resources
 --------
 
-[Business process libraries in Business process modeler](../business-process-libraries-business-process-modeler.md)
+[Business process libraries in Business process modeler (BPM)](../business-process-libraries-business-process-modeler.md)
 
-[Flowcharts in Business process modeler](../flowcharts-business-process-modeler.md)
+[Flowcharts in Business process modeler (BPM)](../flowcharts-business-process-modeler.md)
 
 
 

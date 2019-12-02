@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -152,3 +152,9 @@ To preview a specific module (for example, campaignBanner) in a local web browse
 The Dynamics 365 online SDK installs a self-signed SSL certificate for developing and testing on a local environment which work against localhost.  You can find these files inside the **.ssl** folder under the root SDK folder.  Note:  *yarn start* must be run at least once for these files to be generated.
 
 To install a new certificate on a developer environment, replace the public key (cert.pem) and private key (key.pem) files with your own.
+
+## Additional resources
+
+[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+
+[Configure a development environment (.env) file](configure-env-file.md)

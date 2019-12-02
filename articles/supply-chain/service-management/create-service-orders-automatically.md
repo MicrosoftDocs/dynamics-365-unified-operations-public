@@ -70,7 +70,7 @@ When you create service orders manually or automatically from the service agreem
 
 [Service orders](service-orders.md)
 
-[Automatically creating service orders](auto-create-service-orders.md)
+[Automatically create service orders](auto-create-service-orders.md)
 
   
 

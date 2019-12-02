@@ -57,7 +57,7 @@ On the **Positions** tab, indicate whether new positions are available for assig
 Additional resources
 --------
 
-[Set up company specific HR parameters](set-up-company-specific-hr-parameters.md)
+[Set up company-specific Human resources (HR) parameters](set-up-company-specific-hr-parameters.md)
 
 
 

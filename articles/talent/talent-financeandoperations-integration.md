@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 # Integration from Dynamics 365 Talent to Dynamics 365 Finance
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes the functionality available for integration from Dynamics 365 Talent and Dynamics 365 Finance. The Talent to Finance template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Talent into Finance. The template does not provide the ability for data to flow back from Finance into Talent. 
 
@@ -50,7 +50,7 @@ The integration solution requires the following versions of Talent and Finance:
 ## Template and tasks
 
 To access the template, do the following.
-1. Open [PowerApps Admin Center](https://admin.powerapps.com/). 
+1. Open [Power Apps Admin Center](https://admin.powerapps.com/). 
 1. Select **Projects**, and then, in the upper-right corner, select **New project** to select public templates. A new project will need to be created for each legal entity that you want to integrate into in Finance.
 
 The following template is used to synchronize records from Talent to Finance.

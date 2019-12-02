@@ -574,7 +574,7 @@ Payment processes are usually used only if a direct connection to a payment gate
 ### Understanding the merchant properties flows
 The following sections describe how the merchant properties are set on the **POS hardware profile** page in the client, and how they are passed to the payment connector during payment flows on the POS.
 
-#### Set merchant properties on the POS hardware profile page in the Finance and Operations client
+#### Set merchant properties on the POS hardware profile page in the client
 The following illustration shows how the merchant properties are set through the **POS hardware profile** page in the client. To enable the merchant properties to be set, the **IPaymentProcessor** interface that is defined in the **Microsoft.Dynamics.Retail.PaymentSDK** library must be implemented. Two interface methods are required: **GetMerchantAccountPropertyMetadata** and **ValidateMerchantAccount**.
 
 ![Setting merchant properties on the POS hardware profile page in the client](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)

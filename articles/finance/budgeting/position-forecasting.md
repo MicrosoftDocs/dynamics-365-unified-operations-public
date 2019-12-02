@@ -38,7 +38,7 @@ Expenses that are related to workers often make up a large proportion of an orga
 
 ## Position forecasting in budget planning
 
-[![Graphic top](./media/graphic-top.png)](./media/graphic-top.png) 
+[![Components of position forecasting](./media/graphic-top.png)](./media/graphic-top.png) 
 
 Position forecasting uses three main components to provide accurate budget amounts for position expenses. These amounts can then be brought into a budget plan for budget calculations. 
 
@@ -50,14 +50,14 @@ A **compensation group** is an optional setup component that is used to apply a 
 
 ### Position forecasting processes
 
-[![graphic1b](./media/graphic1b.png)](./media/graphic1b.png) 
+[![Illusration of position forecasting processes](./media/graphic1b.png)](./media/graphic1b.png) 
 
 In a typical process for position forecasting, you first create the setup components (budget cost elements and compensation groups). Forecast positions are then generated, based on existing positions. You can then make adjustments. For example, you can add or end positions, change pay rates and benefit costs, and add wage increases. You can create multiple versions of a forecast position to facilitate comparisons between different budgeting scenarios. Next, you can include the forecast positions in budget plans and bring in the costs from the forecast positions as budget plan lines.
 
 You can create additional forecast position versions as budget plans are revised. These new versions provide a basis for the revisions.
 
 ## Position forecasting setup
-[![graphic2](./media/graphic2-1024x327.png)](./media/graphic2.png)
+[![Illustration highlighting setup](./media/graphic2-1024x327.png)](./media/graphic2.png)
 
 ### Budget cost elements
 
@@ -94,7 +94,7 @@ The **Increase schedule** and **Date of increase** fields on the compensation gr
 The earning cost element that is selected on the compensation group is used when you create earnings for the forecast positions in the group, including their base pay and any step increases. The **Compensation fixed plan** field links the compensation group to a fixed compensation plan in Human resources. This link can assign a worker’s fixed compensation information to a forecast position, and can therefore make budget planning more accurate. Remember that the structure of the compensation grid (the levels and steps) for the compensation group should match the structure of the fixed compensation plan. Otherwise, the system can't correctly link the compensation group and the fixed compensation plan.
 
 ## Creating forecast positions
-[![graphic3](./media/graphic3-1024x327.png)](./media/graphic3.png)
+[![Illustration highlighting "create forecast positions"](./media/graphic3-1024x327.png)](./media/graphic3.png)
 
 ### Creating forecast positions for existing positions
 
@@ -110,7 +110,7 @@ When the **Assign a compensation group** option is set to **Yes**, if the worker
 
 The setting of the **Assign a compensation group** option takes precedence over the **Budget cost element assignment** setting. The two settings can be used at the same time. 
 
-[![graphic4](./media/graphic4.png)](./media/graphic4.png) 
+[!["Assign a compensation group" chart](./media/graphic4.png)](./media/graphic4.png) 
 
 Another option is to assign an anniversary date. The selected date (adjusted start date, worker start date, employment start date, or seniority date) from the assigned worker is then set as the forecast position’s anniversary date, and is used for information and when pay increases are generated.
 
@@ -123,7 +123,7 @@ When a forecast position is selected, select **Copy the selected forecast positi
 You can also create a completely new forecast position. Select an existing job, and also select the budget planning process and budget plan scenario. You can then add any other details that you want to add. Once again, a new position is created in Human resources at the same time.
 
 ## Working with forecast positions
-[![graphic5](./media/graphic5-1024x327.png)](./media/graphic5.png)
+[![Illustration highlighting "modify forecast positions"](./media/graphic5-1024x327.png)](./media/graphic5.png)
 
 ### Multiple versions of a forecast position
 
@@ -179,7 +179,7 @@ The recalculation process is automatically used on any forecast position that ha
 
 ## Bringing forecast positions into budget plans
 
-[![graphic6](./media/graphic6-1024x327.png)](./media/graphic6.png)
+[![Illustration highlighting "Add to budget plan"](./media/graphic6-1024x327.png)](./media/graphic6.png)
 
 The purpose of creating and modifying forecast positions is to add them to budget plans, so that the budget plans include the most accurate budget amounts. There are two methods for adding forecast positions to budget plans. You can use either a generation process or a selection process on the budget plan.
 

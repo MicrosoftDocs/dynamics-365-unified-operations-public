@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Talent January 2019 update
 
 # Data integration guidance for Dynamics 365 Talent
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 ## Overview
 Dynamics 365 Talent manages business data that is useful in a variety of
@@ -44,7 +43,7 @@ make informed decisions regarding which technologies best fit their needs.
 
 ## Data integration vision
 Microsoft sees business data as a key asset that makes your company unique. Your
-business’s data is highly valuable. Data gathered and maintained by one part of
+business's data is highly valuable. Data gathered and maintained by one part of
 the business relates to data gathered by another part of the business, and these
 relations can be used to improve business processes and business intelligence
 across your organization. Providing easy, secure, stable access to your business
@@ -100,6 +99,8 @@ entities you need for your integration are not yet available in Common Data Serv
 Core HR entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
 one of the other integration technologies described below.
+> 
+> By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. It's turned on in new environments that include demo data, and the environments start to sync data when they are provisioned. After your environment is ready to sync data, you can turn on the integration on the [Common Data Service configuration page](https://docs.microsoft.com/dynamics365/talent/hr-cds-admin-form).
 
 <sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 
@@ -245,7 +246,7 @@ and OData-enabled entities.
 Your business data is a valuable asset, but its value can be greatly diminished
 if it is hard to use the data for your specific purposes (such as reporting, data
 mashups, or custom applications). Dynamics 365 Talent provides several
-technologies for working with your data outside of the Talent application’s user interface (UI),
+technologies for working with your data outside of the Talent application's user interface (UI),
 allowing integrating applications access to the data. This topic has described
 the available integration technologies and some of their key characteristics.
 This information should help you make better decisions on which approaches to

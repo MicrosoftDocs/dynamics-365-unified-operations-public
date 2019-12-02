@@ -40,7 +40,7 @@ This topic describes functional locations and assets in Asset Management. Asset 
 
 ## Overview
 
-Asset Management is integrated seamlessly with several modules in Finance and Operations. The following illustration shows the interfaces with other modules.
+Asset Management is integrated seamlessly with several modules with other Finance and Operations apps. The following illustration shows the interfaces with other modules.
 
 ![Diagram showing how Asset Management interfaces with other modules](media/01-overview-image.png)
 

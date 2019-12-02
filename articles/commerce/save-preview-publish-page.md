@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -90,3 +90,18 @@ To publish a URL, follow these steps.
 1. In the navigation pane on the left, select **URLs**.
 1. Find and select the URL to publish.
 1. On the command bar, select **Publish**.
+
+## Additional resources
+
+[Modify an existing site page](modify-existing-page.md)
+
+[Add a new site page](add-new-page.md)
+
+[Select page layouts](select-page-layouts.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
+
+[Enrich a product page](enrich-product-page.md)
+
+[Enrich a category landing page](enrich-category-page.md)
+

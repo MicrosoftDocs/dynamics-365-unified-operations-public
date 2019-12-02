@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -162,3 +162,8 @@ The path is the full path of the package folder that contains the package.json f
 ```bash
 yarn msdyn365 validate ./
 ```
+## Additional resources
+
+[Architectural overview](architectural-overview.md)
+
+[e-Commerce components](ecommerce-components.md)

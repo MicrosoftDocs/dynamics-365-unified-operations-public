@@ -5,7 +5,7 @@ title: Automatic update of asset counters
 description: This topic describes automatic update of asset counters in Asset Management.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
 ---
@@ -34,39 +34,44 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
- 
+For information about manual registration of asset counters, see [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md). For information on how to set up asset counters, see [Counters](../setup-for-objects/counters.md).
 
-In the previous section, manual registration of asset counters is described. Setup of asset counters is described in [Counters](../setup-for-objects/counters.md).
+Counter values can also be automatically updated from production registrations, based on the production hours or production quantity (that is, the quantity that is produced). This update is done on the **Update asset counters** page. You can update one or several assets by setting one parameter, **From date**. This parameter specifies the start date for production registrations (production hours or production quantities). In other words, it specifies the date that counter values should be updated from.
 
-Counter values can also be automatically updated from production registrations, based on production hours or production quantity. This is done in **Update asset counters**. You can update one or several assets by inserting one parameter, **From date**. This parameter specifies the start date for production registrations (hours or quantity produced), meaning the start date from which counter values should be updated.
+All assets that are related to a resource, *and* that have asset counters that are set up to be updated based on the production hours or production quantity, will be included in an automatic update. New counter values will be created.
 
-All assets that are related to a resource *and* have asset counters, which are set up to be updated based on produced quantity or production hours, will be included in an automatic update, and new counter values will be created.
+For counters that are based on the production quantity, the count includes both the good quantity and the error quantity that are registered. If the unit that is used for production quantity registration differs from the unit that is used for the counter, the quantity is converted so that it corresponds to the counter unit.
 
-Regarding counters based on production quantity, good quantity as well as error quantity registered are included in the count. If the unit used for produced quantity registration is different from the unit used on the counter, quantity is converted to correspond with the counter unit.
+As mentioned above, automatic counters can be updated from production registrations. Therefore, the asset for which you want to automatically update counters must be related to a resource (machine). When produced quantities or production hours have been registered on the resource, you can update the related asset counters.
 
-As mentioned above, automatic counters can be updated from production registrations. Therefore, the asset for which you want to automatically update counters must be related to a resource (machine). The following descriptions provide an overview of the setup and processing of production orders (in the **Production control** module), which is used as a basis for automatic update of counters on an asset in the **Asset management** module.
+1. Select **Asset management** > **Periodic** > **Assets** > **Update asset counters**.
 
-When produced quantities or production hours have been registered on the resource, you can update the related asset counters.
+2. In the **From date** field, select the start date of the automatic update.
 
-1. Click **Asset management** > **Periodic** > **Assets** > **Update asset counters**.
+    >[!NOTE]
+    >The date in this field is the "work in progress" date from **Route transactions** (**Production control** > **Inquiries and reports** > **Production** > **Route transactions** > **Physical date** field).
 
-2. Select the start date of the automatic update in the **From date** field.
+3. On the **Records to include** FastTab, you can select specific assets, asset types, or resources for the automatic update. Select **Filter**, and make the relevant selections.
 
->[!NOTE]
->The date in this field is the "work in progress" date from **Route transactions** (**Production control** > **Inquiries and reports** > **Production** > **Route transactions** > **Physical date** field).
+4. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 
-3. If you want to select specific assets, asset types, or resources for the automatic update, click **Filter** on the **Records to include** FastTab, and make the relevant selections.
+    The illustration below shows an example of the **Update asset counters** dialog.
 
-4. If required, you can set up the automatic update as a batch job on the **Run in the background** FastTab.
+    ![Figure 1](media/12-work-orders.png)
 
-![Figure 1](media/12-work-orders.png)
+5. Select **OK**. 
 
-5. Click **OK**. When the automatic asset counter update is done, you can see the counter registrations related to the asset in **Asset counters** (**Asset management** > **Common** > **Assets** > **All assets** > select asset > **Counters** button).
+After the automatic asset counter update is done, you can view the counter registrations that are related to the asset on the **Asset counters** page. Select **Asset management** > **Common** > **Assets** > **All assets**, select the asset, and then, on the Action Pane, on the **Asset** tab, in the **Preventive** group, select **Counters**.
 
-In **Asset counter totals**, you can get an overview of the latest registration made on all counter types on all assets. Click **Asset management** > **Inquiries** > **Assets** > **Asset aggregated value**. The view is very similar to **Asset counters**, but you cannot add or edit registrations in **Asset aggregated value**. It is for overview only.
+On the **Asset aggregated value** page, you can get an overview of the latest registration that have been made on all counter types on all assets. Select **Asset management** > **Inquiries** > **Assets** > **Asset aggregated value**. This page resembles the **Asset counters** page, but you can't add or edit registrations. It's for overview only.
+
+The illustration below shows an example of the **Asset aggregated value** page.
 
 ![Figure 2](media/13-work-orders.png)
 
+Note the following points:
 
-- It is still possible to create manual counter value registrations for counter types that are automatically updated. Refer to the "Manual update of asset counters" section for more information.
-- You can set up counters related to another counter, which means that when a counter is updated, related counters are automatically updated at the same time. Refer to [Counters](../setup-for-objects/counters.md) regarding setup of related counters.
+- You can still create manual counter value registrations for counter types that are automatically updated. For more information, see [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md).
+
+- You can set up counters that are related to another counter. In this case, when a counter is updated, related counters are automatically updated at the same time. For more information about how to set up related counters, see [Counters](../setup-for-objects/counters.md).
+

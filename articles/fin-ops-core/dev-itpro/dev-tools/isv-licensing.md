@@ -5,7 +5,7 @@ title: Independent software vendor (ISV) licensing
 description: This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 author: robadawy
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -202,7 +202,7 @@ To install ISV licenses in production systems, you must use a deployable package
 ![Location of the template package for configuration mode](./media/isv21.png)
 
 1.  Make a copy of the package template.
-2.  Put the license file in the following folder within the package template: ImportISVLicense.zipAosServiceScriptsLicense
+2.  Put the license file in the following folder within the package template: ImportISVLicense.zip\\AosService\\Scripts\\License
 
 More than one license can be installed at a time. If one of the licenses depends on another, make sure that it's named accordingly. (Licenses are installed in alphabetical order.)
 

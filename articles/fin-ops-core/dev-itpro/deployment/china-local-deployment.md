@@ -60,19 +60,19 @@ There are a few technical limitations during the provisioning of services that n
 - OSSA = Online Services Standard Agreement
 - CSP = Cloud Solution Provider
 
-For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/en-us/power-platform/admin/create-environment).
+For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
 ## Features not available
 
-Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release notes](https://go.microsoft.com/fwlink/?linkid=2010158).
+Due to certain technical dependencies, the following features listed will not be available for general availability of the Dynamics 365 Services operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
 -   **Development, build, and testing of customizations** will be unavailable in **Azure DevOps in Mainland China**. However, use of Azure DevOps on-premises will be available in China in April 2019. Also, Azure DevOps can be used in other regions. For more information, see [Developer guide for Azure China 21Vianet](https://docs.microsoft.com/azure/china/china-get-started-developer-guide).
 
--   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail store scale unit](../../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
+-   **Retail cloud scale unit** functionality will be unavailable. However, the [Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-system-begin.md) and Retail Modern Store app will be available in April 2019.
 
--   [Vendor management and collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
+-   [Set up and maintain vendor collaboration](../../../supply-chain/procurement/set-up-maintain-vendor-collaboration.md) will be unavailable due to Azure Active Directory limitations.
 
--   Certain **mobile apps** (e.g., [Warehousing](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](../../../finance/project-management/project-time-entry-mobile-workspace.md)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
+-   Certain **mobile apps** (e.g., [Install and configure the Warehousing app overview](../../../supply-chain/warehousing/install-configure-warehousing-app.md) and [Project time entry mobile workspace](../../../finance/project-management/project-time-entry-mobile-workspace.md)) will be unavailable due to the Google Play Store not being available in China; however, alternatives are being considered.
 
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
 
@@ -80,21 +80,21 @@ Due to certain technical dependencies, the following features listed will not be
 
     -   **APQC Business process modeler (BPM) Library** will be unavailable. However, base Business process modeler (BPM) functionality will be available for custom models in April 2019. Search functionality in the BPM will be unavailable in China.
 
-    -   **[Electronic reporting (ER)](../analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json) assets** will not be available automatically, but can be manually uploaded from the LCS global asset library.
+    -   **[Electronic reporting (ER) overview](../analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json) assets** will not be available automatically, but can be manually uploaded from the LCS global asset library.
 
     -   **Code upgrade** will be unavailable for upgrades from Dynamics AX 2012.
 
-    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Finance and Operations apps operated by 21Vianet Support](../lifecycle-services/21vianet-support.md).
+    -   **Service and Support requests** will be available through LCS but 21Vianet is the service operator. For more information, see [Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China](../lifecycle-services/21vianet-support.md).
     
-    -   [Extensibility support requests](../extensibility/extensibility-requests.md) will be unavailable.
+    -   [Extensibility requests](../extensibility/extensibility-requests.md) will be unavailable.
     
     -   Hotfix requests will be unavailable.
 
-    -   [Translation service](../lifecycle-services/translation-service-overview.md) will not be available.
+    -   [Dynamics 365 Translation Service overview](../lifecycle-services/translation-service-overview.md) will not be available.
 
--   [Embedded PowerApps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft PowerApps and Microsoft Flow will be unavailable.
+    -   [Embedded Power Apps](../../fin-ops/get-started/embed-power-apps.md) and connectivity to Microsoft Power Apps and Microsoft Power Automate will be unavailable.
 
--   [Data integration by using Common Data Service](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
+    -   [Data integration using Common Data Service overview](../data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json) will be unavailable.
 
 -   The following features will not be available due to certain **current Azure Active Directory limitations** in China:
 
@@ -105,8 +105,8 @@ Due to certain technical dependencies, the following features listed will not be
 ## Additional resources
 
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
-- [Support for Finance and Operations apps operated by 21Vianet](../lifecycle-services/21vianet-support.md)
-- [Dynamics 365 for Customer Engagement - operated by 21Vianet](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
+- [Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China](../lifecycle-services/21vianet-support.md)
+- [Model-driven apps in Dynamics 365 - operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
 - [Dynamics 365 Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)

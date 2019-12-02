@@ -5,7 +5,7 @@ title: Finance and Operations application architecture
 description: This topic provides an overview of the architecture of Finance and Operations applications.
 author: ClaudiaBetz-Haubold
 manager: AnnBe
-ms.date: 06/04/2018
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -54,15 +54,15 @@ The cloud architecture consists of these conceptual areas:
 - **Office 365 admin center** – Office 365 admin center is the subscription management portal that Office 365 provides for administrators. It's used to provide management functions for users (AAD) and subscriptions. As part of these management functions, it provides information about service health. For more information, see [About the Office 365 admin center](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23).
 
     > [!NOTE]
-    > You don't have to have an Office 365 license to deploy Finance and Operations apps. However, you might require a license for specific Office integration scenarios. For more information, see [Office integration](../../dev-itpro/office-integration/office-integration.md).
+    > You don't have to have an Office 365 license to deploy Finance and Operations apps. However, you might require a license for specific Office integration scenarios. For more information, see [Office integration overview](../../dev-itpro/office-integration/office-integration.md).
 
-- **Microsoft Dynamics Lifecycle Services (LCS)** – LCS is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations. For more information, see [Lifecycle Services for Finance and Operations](../../dev-itpro/lifecycle-services/lcs.md). After you purchase and activate a subscription for a Finance and Operations app, an **Implementation project** workspace is provisioned in LCS when the tenant administrator signs in for the first time.
+- **Microsoft Dynamics Lifecycle Services (LCS)** – LCS is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the application lifecycle of your implementations. For more information, see [Lifecycle Services resources](../../dev-itpro/lifecycle-services/lcs.md). After you purchase and activate a subscription for a Finance and Operations app, an **Implementation project** workspace is provisioned in LCS when the tenant administrator signs in for the first time.
 
     > [!NOTE]
-    > An implementation project is an LCS project for the cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see [Lifecycle Services for Finance and Operations apps partners](../../dev-itpro/lifecycle-services/getting-started-lcs.md).
+    > An implementation project is an LCS project for the cloud service. As a Microsoft partner, you can also provision non-implementation LCS projects for your own purposes. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps partners](../../dev-itpro/lifecycle-services/getting-started-lcs.md).
 
 - **Finance and Operations apps** – Finance and Operations apps are deployed through LCS. Various topologies are available: development/test/build, acceptance test, performance test, and high-availability production. For more information about the various topologies, download the [latest Microsoft Dynamics 365 Licensing Guide from Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
-- **Microsoft Azure DevOps** – Azure DevOps is used primarily for code version control and to deploy a build environment. Azure DevOps is also used to track support incidents, such as work items in Azure DevOps that are submitted to Microsoft through Cloud-powered support, and to integrate the Business process modeler (BPM) library hierarchy into your Azure DevOps project as a hierarchy of work items. Azure DevOps is also used during code upgrade.
+- **Microsoft Azure DevOps** – Azure DevOps is used primarily for code version control, development, and to deploy a build environment. Azure DevOps is also used to track support incidents, such as work items in Azure DevOps that are submitted to Microsoft through Cloud-powered support, and to integrate the Business process modeler (BPM) library hierarchy into your Azure DevOps project as a hierarchy of work items. Azure DevOps is also used during code upgrade.
 
 "Under the hood," Finance and Operations apps use many features of the Azure platform, such as Azure Storage, networking, monitoring, and Azure SQL Database, to name just a few. Shared services put into operation and orchestrate the application lifecycle of the environments for participants. Together, Azure functionality and LCS offer a robust cloud service.
 

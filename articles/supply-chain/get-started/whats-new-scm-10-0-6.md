@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.6 (Nov
 description: This topic describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.6. 
 author: josaw1
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -47,8 +47,6 @@ What do you need to do to take this change?
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
 
-## Project contact committed detail
-You can now drilldown into the details of the committed amount on the funding source of a project contract, allowing the user to easily see the activity that makes up the committed amount.
 
 ## Purchase agreement responsible party
 You now have the ability to define primary and secondary responsible parties on the Purchase agreement classification form and resulting Purchase agreements.  This provides the user access to who oversees the agreements.

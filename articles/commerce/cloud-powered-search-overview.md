@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -76,3 +76,9 @@ The following illustration shows an example where immersive autosuggest is being
 ## Sort
 
 Enhanced sorting in Dynamics 365 Commerce lets customers sort, search, and browse search results, and refine them by criteria such as price, product name, and product number. Customers can also sort results based on whether a product is new, top-selling, or recently added.
+
+## Additional resources
+
+[Default category landing page and search results page](category-search-page-overview.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)

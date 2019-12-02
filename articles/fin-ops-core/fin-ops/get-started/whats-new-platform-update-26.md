@@ -38,11 +38,11 @@ This topic describes features that are new or changed in Dynamics 365 for Financ
 ## Business events generally available
 [Business events](../../dev-itpro/business-events/home-page.md) are now generally available. This means that business events are out of preview and are available by default, without having to enable the flight. 
 
-## 1:N support for Microsoft Flow to subscribe to business events
-Multiple Flow apps can subscribe to the same business event in the same legal entity. The [Business events in Microsoft Flow](../../dev-itpro/business-events/business-events-flow.md) can be leveraged for tasks such as sending notifications and triggering approval flows. 
+## 1:N support for Microsoft Power Automate to subscribe to business events
+Multiple Power Automate apps can subscribe to the same business event in the same legal entity. The [Business events in Microsoft Power Automate](../../dev-itpro/business-events/business-events-flow.md) can be leveraged for tasks such as sending notifications and triggering approval flows. 
 
 ## Workflow business events
-The [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) are a particularly good target for triggering approval flows. The **Workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Flow. Flow templates for facilitating completion of a work item are in progress and more information about them will be available on the [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) page in the near future.
+The [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) are a particularly good target for triggering approval flows. The **Workflow workitem** event can be used in conjunction with the validate and complete OData actions to facilitate completion of a work item in Power Automate. Power Automate templates for facilitating completion of a work item are in progress and more information about them will be available on the [Workflow business events](../../dev-itpro/business-events/business-events-workflow.md) page in the near future.
 
 ## Business events are idempotent
 Business events are idempotent. This means that the payload of a business event has a unique and ever increasing number called the ControlNumber. This control number can be used by consumers to apply duplicate detection logic and out of order delivery detection logic to ensure robust processing of events.
@@ -67,11 +67,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to be made to the compiler.

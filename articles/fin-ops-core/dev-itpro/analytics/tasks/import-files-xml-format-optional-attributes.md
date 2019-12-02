@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 7.0.0
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can design ER format configuration to import files in XML format containing optional attributes. To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure. Before you begin, download and save locally the IncomingDocumentToLearnHowToHandleOptionalAttributes.xml file from [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 1.	Go to **All workspaces** > **Electronic reporting**.
-2.	Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don’t see this configuration provider, complete the steps in the procedure [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md).
+2.	Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don’t see this configuration provider, complete the steps in the procedure [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
 3.	Click **Reporting configurations**.
 
 ## Create a new data model configuration

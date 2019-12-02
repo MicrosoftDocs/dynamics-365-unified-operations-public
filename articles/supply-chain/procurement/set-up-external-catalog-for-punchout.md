@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-By using the external catalog, you can ensure that the product and price information that you subsequently process in Dynamics 365 for Finance and Operations July 2017 is accurate and up to date. 
+By using the external catalog, you can ensure that the product and price information that you subsequently process in Supply Chain Management is accurate and up to date. 
 The requisition can then be approved and converted to a purchase order and an order can be placed at the vendor.
 
 When the external catalog is set up and an employee is preparing a requisition, there will be an option to redirect to an external site, the external catalog, and return the shopping basket that was created at the external site. 
@@ -54,7 +54,7 @@ When setting up the external catalog, you need to make sure that the purpose of 
 1. Set up a procurement category hierarchy. For more information, see [Set up policies for procurement category hierarchies](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Register the vendor in Supply Chain Management. Before you can set up configurations to access an external vendor’s catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog’s vendor must also be added to the selected procurement category. For more information about registering vendors, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md). 
 For information about how to assign vendors to a procurement category, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
-3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
+3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Manage unit of measure](../pim/tasks/manage-unit-measure.md).
 4. Configure the external vendor catalog by using the requirements for your vendor’s external catalog site. For more details about this task, see [Configure the external vendor catalog](#configure-the-external-vendor-catalog).
 5. Test the vendor’s external catalog configurations to verify that the settings are valid and that you can access the vendor’s external catalog. Use the **Validate settings** action to validate the request setup message that you’ve defined. This message should cause the vendors external catalog site to be opened in a browser window. During validation, you can’t order items and services from the vendor. To order items and services, you must access the vendor’s catalog from a purchase requisition.
 6. Activate the external catalog by using the **Activate catalog** button on the **External catalogs** page. The external catalog must be activated before employees can use it. You can inactivate the external catalog at any time.

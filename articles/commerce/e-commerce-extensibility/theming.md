@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 This topic presents an overview of online site theming in Microsoft Dynamics 365 Commerce.
 
-# Overview
+## Overview
 
 Dynamics 365 Commerce lets you apply a Sassy Cascading Style Sheets (SCSS) theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and also a campaign theme that is applied only to a subset of pages on the site.
 
@@ -114,3 +114,9 @@ For every module, a class name is defined that matches the module name. In this 
 1. Create a new theme directory in your SDK **/src/themes/** folder, such as **/src/themes/spring/**.
 1. In the new directory, create a new SCSS entry point file for the theme. For the file name, use the pattern **THEME\_NAME.theme.scs**. Then, when the theme is registered and appears in the authoring tools, the theme name will be provided in the file name (for example, **/src/themes/spring/spring.theme.scss**).
 1. After the theme is completed, the configurations can be packaged and uploaded to your site. The new theme then automatically appears in the authoring tools.
+
+## Additional resources
+
+[Create a new theme](create-theme.md)
+
+[Configure theme settings](configure-theme-settings.md)

@@ -5,7 +5,7 @@ title: Multi-user testing with the Performance SDK and a local test controller
 description: This topic explains how to do multi-user testing by using Microsoft Visual Studio and the Performance SDK together with performance test scripts that are generated from Task recorder.
 author: hasaid
 manager: AnnBe
-ms.date: 06/4/2019
+ms.date: 10/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -92,7 +92,7 @@ Before you complete the steps in this topic, verify that the following prerequis
 
     [![Certificate in PerfSDK\\PerfS folder](./media/multi-user-test-local-05.png)](./media/multi-user-test-local-05.png)
 
-6. Replace the **setup.md** file in the **Visual Studio Online** folder by running the following commands.
+6. Replace the **setup.md** file in the **Visual Studio Online** folder with the following.
 
     ```
     setx testroot "%DeploymentDirectory%"
@@ -245,4 +245,4 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ## Troubleshooting
 
-For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide](troubleshoot-perf-sdk-user-testing.md).
+For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).

@@ -36,7 +36,7 @@ This topic provides a walkthrough of the features that are related to Goods and 
 
 ## Prerequisites
 
-- Set up GST for India in Finance and Operations. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+- Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
 - Configure Retail channel components. To enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
 ## India tax entities for Retail
@@ -93,7 +93,7 @@ When you create custom fields, the value of the **Caption text ID** field must m
 
 ## Create the receipt format
 
-You can use Receipt format designer to add custom fields to the appropriate receipt sections. For more information, see [Receipt templates and printing](../receipt-templates-printing.md).
+You can use Receipt format designer to add custom fields to the appropriate receipt sections. For more information, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 1. Go to **Retail** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Receipt formats**.
 2. Select a receipt format for the **Receipt** receipt type, and make the required changes.

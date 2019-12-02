@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add an alert module to a page 
+title: Alert module 
 description: This topic covers alert modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Add an alert module to a page
+# Alert module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -71,3 +71,19 @@ To add an alert module to a page and set the required properties, follow these s
 1. In the settings for the alert module, enter the alert text. You can edit the other properties if you want to customize the alert module further.
 1. Save and preview the page. At the top of the page, you should see an alert that has the text that you added.
 1. Check in the page, and publish it. 
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Carousel module](add-carousel.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Content placement module](add-content-placement-modules.md)
+
+[Feature module](add-feature-module.md)
+
+[Hero module](add-hero-module.md)
+
+[Video player module](add-video-player.md)

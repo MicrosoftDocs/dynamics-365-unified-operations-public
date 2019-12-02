@@ -5,7 +5,7 @@ title: Business events and Azure Event Grid
 description: This topic explains how to configure a Microsoft Azure Event Grid endpoint, and how to consume a business event from Event Grid.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 10/30/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -74,7 +74,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
     <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
-4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the Service Bus connection string that you saved earlier.
+4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the event grid connection string that you saved earlier.
 
     <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 

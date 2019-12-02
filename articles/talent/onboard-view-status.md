@@ -60,6 +60,6 @@ Microsoft Dynamics 365 Talent: Onboard lets you view the progress that your new 
 ### See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

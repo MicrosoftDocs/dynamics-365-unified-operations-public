@@ -51,7 +51,7 @@ Here are the recommended steps for introducing a new function for Electronic rep
 
             - **SysOperationLabelAttribute** – This attribute defines the function’s name.
             - **SysOperationHelpTextAttribute** – This attribute defines the function’s Help text.
-            - **ERComponentGroupAttribute** – This attribute defines the group that the function belongs to. (For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md).)
+            - **ERComponentGroupAttribute** – This attribute defines the group that the function belongs to. (For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md).)
 
         - Provide arguments:
 
@@ -117,6 +117,6 @@ The following guidance is intended to help you design your custom Electronic rep
 
 ## Additional resources
 
-[Electronic reporting overview](general-electronic-reporting.md)
+[Electronic reporting (ER) overview](general-electronic-reporting.md)
 
-[Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
+[Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)

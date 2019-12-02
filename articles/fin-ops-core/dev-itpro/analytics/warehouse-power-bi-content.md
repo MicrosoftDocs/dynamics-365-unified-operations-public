@@ -83,7 +83,7 @@ The **Warehouse performance** Power BI content includes a report. This report co
 | Shipping performance        | Shipped by site / warehouse              | The percentage that is shipped early, on time, or late by site or warehouse. |
 
 ## Understanding the data model and calculations
-The following data is used to fill the report pages in the **Warehouse performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
+The following data is used to fill the report pages in the **Warehouse performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following key aggregate measurements are used as the basis of the content.
 

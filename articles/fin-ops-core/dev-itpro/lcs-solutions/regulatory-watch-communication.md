@@ -57,14 +57,17 @@ Follow these steps to set up the project.
 8.  Click **Create**.
 
 ## Invite participants to the project
-Invite participants that should have access to the project, so that they can submit and review regulatory alerts. For information about how to invite users, see [Configure lifecycle services security](../lifecycle-services/configure-lcs-security.md).
+Invite participants that should have access to the project, so that they can submit and review regulatory alerts. For information about how to invite users, see [Configure Lifecycle Services (LCS) security](../lifecycle-services/configure-lcs-security.md).
 
 ## Access the regulatory alert submission service
 1.  In your LCS project, scroll to the right side of the page, and then, under **More tools**, click **Localization and translation**.
-[![Loc & translation tile](./media/loc-translation-tile-300x185.jpg)](./media/loc-translation-tile.jpg)
+
+
+    [![Loc & translation tile](./media/loc-translation-tile-300x185.jpg)](./media/loc-translation-tile.jpg)
 
 2.  Select **Dynamics Regulatory Alert Submission**, and then click **Enter**. The **Dynamics Regulatory Alert Submission** page opens. Use this page to view any previous alerts that have been submitted by you or your organization.
-[![Reg alert service](./media/reg-alert-service-300x170.jpg)](./media/reg-alert-service.jpg)
+
+    [![Reg alert service](./media/reg-alert-service-300x170.jpg)](./media/reg-alert-service.jpg)
 
 ## Submit a regulatory alert
 To enter a new regulatory alert, click the plus sign (**+**) at the top of the form, above the filter. The **Submit regulatory alert** wizard starts. Follow these steps to complete the wizard.
@@ -76,6 +79,7 @@ To enter a new regulatory alert, click the plus sign (**+**) at the top of the f
     4.  If you don't find the regulatory feature that you're searching for, you can submit a regulatory alert by clicking **Submit regulatory alert** on the bottom ribbon.
 
     [![Submit alert](./media/submit-alert1-300x174.jpg)](./media/submit-alert1.jpg)
+    
 2.  On the **Attach business processes** page, follow these steps:
     1.  In the **Global business process libraries** field, you can select business process libraries.
     2.  You can enter search criteria to return business processes that are related to a search term. The tool highlights these business processes in yellow.
@@ -84,35 +88,38 @@ To enter a new regulatory alert, click the plus sign (**+**) at the top of the f
     5.  You receive a message that asks whether you want to add the selected business processes to the alert. You can click either **Yes** or **Cancel**.
 
     [![BP capture](./media/bp-capture-300x156.jpg)](./media/bp-capture.jpg)
+    
 3.  On the **Describe the alert** page, follow these steps:
     1.  Enter information for the alert in the appropriate fields. Required fields are indicated by a red asterisk (\*).
     The following table provides more information about the submission fields.
-
-| Field name                   | Field type        | Description  |
-|------------------------------|-------------------|--------------|
-| Title                        | Text              | A descriptive title to identify the area of impact. For example, you might enter **Changes in invoice document per Jan. 1st 2014**.    |
-| Description                  | Text              | A brief, pragmatic overview of the law. The description should focus on issues that are relevant to enterprise resource planning (ERP). It should have three to ten lines of details, so that users gain a high-level understanding of the requirement without having to read the legislation first.   |
-| Country                      | Valid values list | The country/region that the legislation applies to.  |
-| Industry                     | Valid values list | A list of industries, if the requirement applies only to selected industries (for example, Public sector, Retail, or Communication).   |
-| Link to legislation          | Text (URL format) | Add links to the published law, interpretation guideline, implementation guidance, or any other documentation that will be useful for understanding and implementing the requirement.|
-| Feature reference            | Text              | The feature reference ID (if it's known). |
-| Law enforcement date         | Date              | Date from which impacted customers must comply with the law  |
-| Government announcement date | Date              | The date when the authority announced the change. |
-| Latest filing date           | Date              | The deadline for the first submission of the new/changed report.|
-| Company name                 | Text              | The company name for the person who is submitting the alert.|
-| Contact name                 | Text              | The contact name of the person who is submitting the alert.|
-| Contact email                | Email address     | The contact email address of the person who is submitting the alert. This value must be in a valid email address format. |
-| Business processes           | Default           | The business processes are selected through the **Submit regulatory alert** wizard and entered automatically on the submission page.  |
-        | Comments                     | Text              | Enter any additional information that is related to the alert, and that might be useful for understanding or implementing the requirement. You can add multiple comments. Click **Submit** to save comments separately to the submission page. Comments are saved in order of date.   |
-        | Attachments                  | Upload            | Add alert attachments by using the attachment tool. Click the **Upload** button to open File explorer. After you select and upload a file, the file is appears as a linked file. You can upload up to three files, each of which can be up 5 MB. To delete a file that you've uploaded by mistake, click **Remove** under the file title. **Important:** Attachments must be publicly available materials. They can't be propriety or customer/partner specific. |
-        | Consent check box            | Check box         | Give appropriate consent to being contacted. The **Submit** button doesn't become available until you select this check box. |
+    
+    | Field name                   | Field type        | Description  |
+    |------------------------------|-------------------|--------------|
+    | Title                        | Text              | A descriptive title to identify the area of impact. For example, you might enter **Changes in invoice document per Jan. 1st 2014**.    |
+    | Description                  | Text              | A brief, pragmatic overview of the law. The description should focus on issues that are relevant to enterprise resource planning (ERP). It should have three to ten lines of details, so that users gain a high-level understanding of the requirement without having to read the legislation first.   |
+    | Country                      | Valid values list | The country/region that the legislation applies to.  |
+    | Industry                     | Valid values list | A list of industries, if the requirement applies only to selected industries (for example, Public sector, Retail, or Communication).   |
+    | Link to legislation          | Text (URL format) | Add links to the published law, interpretation guideline, implementation guidance, or any other documentation that will be useful for understanding and implementing the requirement.|
+    | Feature reference            | Text              | The feature reference ID (if it's known). |
+    | Law enforcement date         | Date              | Date from which impacted customers must comply with the law  |
+    | Government announcement date | Date              | The date when the authority announced the change. |
+    | Latest filing date           | Date              | The deadline for the first submission of the new/changed report.|
+    | Company name                 | Text              | The company name for the person who is submitting the alert.|
+    | Contact name                 | Text              | The contact name of the person who is submitting the alert.|
+    | Contact email                | Email address     | The contact email address of the person who is submitting the alert. This value must be in a valid email address format. |
+    | Business processes           | Default           | The business processes are selected through the **Submit regulatory alert** wizard and entered automatically on the submission page.  |
+    | Comments                     | Text              | Enter any additional information that is related to the alert, and that might be useful for understanding or implementing the requirement. You can add multiple comments. Click **Submit** to save comments separately to the submission page. Comments are saved in order of date.   |
+    | Attachments                  | Upload            | Add alert attachments by using the attachment tool. Click the **Upload** button to open File explorer. After you select and upload a file, the file is appears as a linked file. You can upload up to three files, each of which can be up 5 MB. To delete a file that you've uploaded by mistake, click **Remove** under the file title. **Important:** Attachments must be publicly available materials. They can't be propriety or customer/partner specific. |
+    | Consent check box            | Check box         | Give appropriate consent to being contacted. The **Submit** button doesn't become available until you select this check box. |
 
     2.  When you've finished adding all the required fields, you must provide appropriate consent by selecting the consent check box: **By creating this alert I allow Microsoft to contact me in the future for any further information related to this alert. Read the Microsoft Dynamics Lifecycle Services privacy statement for more information.**
     3.  After you select the check box, the **Submit** button becomes available. Click **Submit** to submit the alert. If you've partially completed an alert, you can save the information that you've already entered for later completion or review. Click **Save** before you submit the alert.
-    [![Alert details](./media/alert-details-300x152.jpg)](./media/alert-details.jpg)
+    
+        [![Alert details](./media/alert-details-300x152.jpg)](./media/alert-details.jpg)
 
     4.  When you receive a confirmation message that states that the alert has been successfully submitted, click **Done** to exit the wizard. If you chose to save the alert before you submitted it, an alert ID is generated, and you are notified that the alert has been saved.
-    [![submission confirmation](./media/submission-confirmation-300x166.png)](./media/submission-confirmation.png)
+    
+        [![submission confirmation](./media/submission-confirmation-300x166.png)](./media/submission-confirmation.png)
 
 ## Review regulatory alerts that have been entered into the project
 To view the regulatory alerts that have been entered into your alerting project, use the alert grid. This grid provides a high-level list view of the alerts that have been submitted, and shows the alert title, country/region, law enforced date, and so on.

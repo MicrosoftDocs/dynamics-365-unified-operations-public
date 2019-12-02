@@ -53,7 +53,7 @@ The camera page will be initiated on each page where the input field has the pre
 
 | Task and details page | Camera page | 
 | :---------------------: | :--------------------: |
-| ![camera-scanning-example-task-detail-page](./media/camera-scanning-example-task-detail-page50.png)          | ![camera-scanning-example-camera-page-smaller](./media/camera-scanning-example-camera-page50.png)          |
+| ![Camera scanning example task detail page](./media/camera-scanning-example-task-detail-page50.png)          | ![Camera scanning example camera page smaller](./media/camera-scanning-example-camera-page50.png)          |
 
 On the camera page, when you click the Camera button, it will appear dimmed while trying to identify a bar code. If a bar code is not identified within 5 seconds, the process will time out and the Camera button will become available again. You will then be able to try to scan a bar code again.
 

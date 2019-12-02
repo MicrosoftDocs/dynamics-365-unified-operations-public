@@ -30,15 +30,15 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using metadata in Finance and Operations. Application metadata will be accessed online by using the RCS connected application. Sample ER model mapping will be configured to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the topic, [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md). If you have not completed the steps in the topic, [Access application metadata by using ER configuration](access-application-metadata-er-configuration.md), go to the [Electronic reporting examples page](https://go.microsoft.com/fwlink/?linkid=862266) to download and save the following ER configurations: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, and then complete the steps in the procedure.
+The following steps explain how a Regulatory configuration service (RCS) user in the System Administrator or Electronic Reporting Developer role can design a new Electronic reporting (ER) model mapping by using metadata in Finance and Operations. Application metadata will be accessed online by using the RCS connected application. Sample ER model mapping will be configured to access foreign trade transactions. To complete these steps, in RCS you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). If you have not completed the steps in the topic, [Access application metadata by using ER configuration](access-application-metadata-er-configuration.md), go to the [Electronic reporting examples page](https://go.microsoft.com/fwlink/?linkid=862266) to download and save the following ER configurations: Foreign trade metadata.xml; Foreign trade model.xml; Foreign trade mapping.xml, and then complete the steps in the procedure.
 
 ## Prerequisites
 1. Go to **All workspaces** > **Electronic reporting**. 
-2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don’t see this configuration provider, complete the steps in the procedure [Create a configuration provider and mark it as active](er-configuration-provider-mark-it-active-2016-11.md). 
+2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don’t see this configuration provider, complete the steps in the procedure [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). 
 
 ## Get required ER configurations
 1. Click **Reporting configurations**. 
-2. If you already completed the steps in the [(RCS) Access application metadata by using ER configuration](access-application-metadata-er-configuration.md) procedure, you already have all necessary ER configurations (foreign trade metadata, model and mapping configurations) in the current RCS instance. You can skip all the remaining steps of this sub-task. 
+2. If you already completed the steps in the [Access application metadata by using ER configuration](access-application-metadata-er-configuration.md) procedure, you already have all necessary ER configurations (foreign trade metadata, model and mapping configurations) in the current RCS instance. You can skip all the remaining steps of this sub-task. 
 3. Click **Exchange**. 
 4. Click **Load from XML file**. 
 5. Click **Browse** and select the **Foreign trade metadata.xml** file. 
@@ -75,8 +75,8 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 4. In the tree, select **Foreign trade model\Foreign trade mapping**. 
 5. Expand the **Prerequisites** section. 
 
-> [!NOTE]
-> Currently, this mapping refers to the metadata configuration. Application metadata from this configuration will be offered while this model mapping will be designed. 
+    > [!NOTE]
+    > Currently, this mapping refers to the metadata configuration. Application metadata from this configuration will be offered while this model mapping will be designed. 
 
 6. Click **Designer**. 
 7. Click **Designer**. 
@@ -84,8 +84,8 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 9. Click **Add root**. 
 10. In the **Table** field, enter or select a value. 
 
-> [!NOTE]
-> Currently, this mapping refers to the metadata configuration. Application metadata from this configuration will be offered while this model mapping will be designed. 
+    > [!NOTE]
+    > Currently, this mapping refers to the metadata configuration. Application metadata from this configuration will be offered while this model mapping will be designed. 
 
 11. Click **Cancel**. 
 12. Close the page. 
@@ -95,8 +95,8 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 1. Click **Edit**. 
 2. Select **MyConnectedApp** application. 
 
-> [!NOTE]
-> Currently, this mapping refers to the metadata of the selected connected application. When the same mapping refers to metadata configuration and connected application at the same time, metadata of the connected application will be used. 
+    > [!NOTE]
+    > Currently, this mapping refers to the metadata of the selected connected application. When the same mapping refers to metadata configuration and connected application at the same time, metadata of the connected application will be used. 
 
 3. Click **Designer**. 
 4. Click **Designer**. 
@@ -104,14 +104,14 @@ The following steps explain how a Regulatory configuration service (RCS) user in
 6. Click **Add root**. 
 7. In the **Table** field, enter or select a value. 
 
-> [!NOTE]
-> More than two application tables were offered now as this mapping uses all the metadata of the connected application that has been assigned for it. 
+    > [!NOTE]
+    > More than two application tables were offered now as this mapping uses all the metadata of the connected application that has been assigned for it. 
 
 8. Click **Cancel**. 
 9. Click **Validate**. 
 
-> [!NOTE]
-> We successfully bound elements of data model with items of data sources that are described by using details of metadata of the connected application that has been assigned for this mapping. 
+    > [!NOTE]
+    > We successfully bound elements of data model with items of data sources that are described by using details of metadata of the connected application that has been assigned for this mapping. 
 
 10. Close the page. 
 11. Close the page. 

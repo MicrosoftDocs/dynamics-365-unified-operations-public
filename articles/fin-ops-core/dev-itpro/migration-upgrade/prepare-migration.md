@@ -50,13 +50,15 @@ You will need access to a Finance and Operations development environment using R
 ## Overview of the code migration process
 ### Model split
 
-The Finance and Operations application is split into several packages, or assemblies: Platform Packages
+The Finance and Operations application is split into several packages, or assemblies: 
+
+**Platform Packages**
 
 -   Application Platform
 -   Application Foundation
 -   Test Essentials
 
-Application Packages
+**Application Packages**
 
 -   Application Suite
 -   Other application packages.
@@ -74,16 +76,16 @@ The LCS code upgrade service takes a Dynamics AX 2012 R3 model store as input an
 -   Runs migration rules that inform developers what to manually fix by using TODOs.
 -   Automatically checks-in the upgraded solution into your Azure DevOps project.
 
-To configure and run the code upgrade service, see [Configure and execute the code upgrade service in Lifecycle Services](../lifecycle-services/configure-execute-code-upgrade.md).
+To configure and run the code upgrade service, see [Configure the code upgrade service in Lifecycle Services (LCS)](../lifecycle-services/configure-execute-code-upgrade.md).
 
 ### Manual migration steps
 
 After you upgrade your code using the LCS code upgrade service configure your developer VM and Azure DevOps to connect to the upgraded code branch.
 
--   [Configure your developer VM](../dev-tools/configure-developer-vm.md)
--   [Configure Azure DevOps](configure-vso-solution.md)
+-   [Configure one-box development environments](../dev-tools/configure-developer-vm.md)
+-   [Configure the Azure DevOps mapping during code migration](configure-vso-solution.md)
 
-The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models](../dev-tools/models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
+The code upgrade service will provide with Visual Studio solutions that you can open to compile your code. A **code merge** solution for all elements that contain conflicts and an **upgraded** solutions for all your upgraded elements. Typically, you can compile the application by fixing compilation errors in the order shown below. The order is determined based on the package dependencies graph, start with the lowest package in the graph. To determine package dependencies, see [Models and packages](../dev-tools/models.md). A typical order is Application Platform, Application Foundation, Directory, ...etc., Application Suite. For each of your upgraded models:
 
 -   Fix merge conflicts.
 -   Fix compilation errors related to a model split (references across packages).
@@ -94,7 +96,7 @@ The code upgrade service will provide with Visual Studio solutions that you can 
         -   A method in the Directory model is referencing a table in the Application Suite package.
         -   A form in the Directory package is referencing a data source in the Application Suite package.
     -   You will have to refactor your code to address these dependencies by moving model elements or business logic to higher level packages.
-    -   [Delegates for Migration](delegates-migration.md) describes how to use delegates to solve some of these issues.
+    -   [Solve dependencies among models by using delegates during code migration](delegates-migration.md) describes how to use delegates to solve some of these issues.
 -   Fix compilation errors.
 
 After you have resolved all of the compilation errors, all packages will compile. Next, you must complete the following tasks:
@@ -113,7 +115,11 @@ In the Best Practice framework, there is a subset of Best Practice warnings that
 1.  In Visual Studio, click **Dynamics 365 &gt; Options &gt; Best Practices**.
 2.  In the **Model** drop-down menu, select **Application Suite** (Repeat with all models you are working on)
 
-These rules should be set to “ON” while migrating your solution. The setting is driven by an XML file in the AxRuleSet folder. For example, see the Application Suite xml file, BPRules.xml, located under C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet. [![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) To complete the migration, you need to fix all migration-specific Best Practice rules. The errors will show up in the error list as warnings. In the error list, you will see compiler warnings and best practice errors. Best Practice errors are prefixed with the text **BP**. For example, **BPErrorFormControlPatternUnspecified**.
+These rules should be set to “ON” while migrating your solution. The setting is driven by an XML file in the AxRuleSet folder. For example, see the Application Suite xml file, BPRules.xml, located under C:\\Packages\\ApplicationSuite\\Foundation\\AxRuleSet. 
+
+[![bpupgraderules](./media/bpupgraderules.png)](./media/bpupgraderules.png) 
+
+To complete the migration, you need to fix all migration-specific Best Practice rules. The errors will show up in the error list as warnings. In the error list, you will see compiler warnings and best practice errors. Best Practice errors are prefixed with the text **BP**. For example, **BPErrorFormControlPatternUnspecified**.
 
 ## Debugging
 By default, Finance and Operations optimizes the debugging experience for the files that you are working on. As a result, when you step into a file (F11) that is not in your project, the PDBs are not loaded and you can’t debug the code. To work around this, change the project debugging setting by clicking <strong>Dynamics 365 **&gt; **Options</strong> &gt; <strong>Debugging</strong>. Verify that the <strong>Load symbols only for items in the solution</strong> check box is not selected. This option is selected by default because it improves the debugger speed significantly. Another debugging setting that you may want to turn off is Intellitrace. Intellitrace collects the complete execution history of an application. It creates a lot of noise in the IDE when debugging. To turn off Intellitrace, click <strong>Options</strong> &gt; <strong>IntelliTrace</strong> &gt; <strong>Enable IntelliTrace</strong>, clear the check box, and then click <strong>OK</strong>. Note that Intellitrace is only available in the Enterprise version of Visual Studio.  
@@ -121,7 +127,7 @@ By default, Finance and Operations optimizes the debugging experience for the fi
 ## Address code migration tasks
 When metadata is migrated to Finance and Operations, multiple auto-upgrade scripts are run. In the case where developers need to complete manual migration tasks, TO DOs and Best Practices (BP) have been added.
 
--   TO DOs are prefixed with */\* TODO: (Code Upgrade)*, and need to be fixed as a part of code migration.
+-   TO DOs are prefixed with `/* TODO: (Code Upgrade)`, and need to be fixed as a part of code migration.
 -   BP migration specific rules also need to be fixed as part of code migration.
 
 This example below uses the **PurchCommitment\_PSN** form to walk you through the migration task of fixing navigation. Specifically, you will see examples of duplicate buttons and Action Pane TODOs.
@@ -136,7 +142,9 @@ This example below uses the **PurchCommitment\_PSN** form to walk you through th
 6.  Note: The form is located in the French demo data company FRSI.
 7.  Press **Ctrl+F5 to** see the form.
 
-While the form looks complete, there are still code migration tasks necessary to be migration-complete. [![i](./media/i1.png)](./media/i1.png)
+While the form looks complete, there are still code migration tasks necessary to be migration-complete. 
+
+[![i](./media/i1.png)](./media/i1.png)
 
 ### Navigation migration tasks
 
@@ -160,9 +168,13 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 -   Remove or move the code.
 -   Delete redundant controls in the application code.
 
-**Note**: In the section below, we will provide examples of how to migrate and modify the code on modeled buttons that replicate system-defined buttons. However, in practice, before making changes similar to those made in this article, the code must first be evaluated with respect to the scenario to determine if it is still needed. First, fix the TODO for the DeleteCmdButton, which duplicates the system-defined Delete button.
+> [!NOTE]
+> In the section below, we will provide examples of how to migrate and modify the code on modeled buttons that replicate system-defined buttons. However, in practice, before making changes similar to those made in this article, the code must first be evaluated with respect to the scenario to determine if it is still needed. First, fix the TODO for the DeleteCmdButton, which duplicates the system-defined Delete button.
 
-1.  In Visual Studio, find the TODO shown below, and then double-click the TODO.[![k](./media/k1.png)](./media/k1.png)
+1.  In Visual Studio, find the TODO shown below, and then double-click the TODO.
+
+    [![k](./media/k1.png)](./media/k1.png)
+
 2.  Replace the TODO and the line of code as shown below.
     -   The state of the system-defined **Delete** button is controlled by the AllowDelete property on the firstmaster datasource. By setting AllowDelete to false, the delete task is kept from executing when the keyboard shortcut is used.
 
@@ -171,11 +183,17 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
             deleteCmdButton.enabled(purchCommitmentHeader && purchCommitmentHeader.canDelete());
             PurchCommitmentHeader_DS.allowDelete(purchCommitmentHeader && purchCommitmentHeader.canDelete());
 
-3.  In the editor, find and remove DeleteCmdButton from the form design. [![l](./media/l1.png)](./media/l1.png)
-4.  Press **Ctrl+S to** save the form.
+3.  In the editor, find and remove DeleteCmdButton from the form design. 
+
+    [![l](./media/l1.png)](./media/l1.png)
+
+4.  Press **Ctrl+S** to save the form.
     -   Next, we will focus on the EditCmdButton that duplicates the system Edit button, handing the two TODOs associated with this button as well as removing this button.
 
-5.  In Visual Studio, find the TODO shown below, and then double-click the TODO.[![m](./media/m1.png)](./media/m1.png)
+5.  In Visual Studio, find the TODO shown below, and then double-click the TODO.
+
+    [![m](./media/m1.png)](./media/m1.png)
+
 6.  Because the visibility of the **Edit** button is controlled by the View/Edit mode of the form, you will need to modify this code so it sets that property. Replace the TODO and the line of code as shown in the following graphic.
 
         /* TODO: (Code Upgrade) [Action Pane Rule] Please consider moving all references to the form task override method and remove the control: EditCmdButton */
@@ -191,7 +209,10 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 
         }
 
-7.   Double-click the other TODO for this button.[![n](./media/n1.png)](./media/n1.png)
+7.  Double-click the other TODO for this button.
+
+    [![n](./media/n1.png)](./media/n1.png)
+
 8.  Inspect the code on the modeled **Edit** button. This logic will need to be moved to the form’s task() method.
 
         [Control("CommandButton")]
@@ -260,7 +281,10 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
                 return ret;
             }
 
-11. In the Editor, find and remove the **EditCmdButton** from the form design. [![o](./media/o1.png)](./media/o1.png)
+11. In the Editor, find and remove the **EditCmdButton** from the form design. 
+
+    [![o](./media/o1.png)](./media/o1.png)
+
 12. Press **Ctrl+S** to save the form.
 13. Press **Ctrl+F5** to view the form. Notice the **Delete** and **Edit** buttons in the **Commitment** tab have been removed.
 
@@ -275,14 +299,23 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based an
 4.  Add the cosDimCheckBoxController class to your project.
 5.  Rebuild your project.
 6.  Press **Ctrl+F5** to run the form.
-7.  Note that you will get an exception, similar to the following, when running the form.[![u](./media/u1.png)](./media/u1.png)
+7.  Note that you will get an exception, similar to the following, when running the form.
+
+    [![u](./media/u1.png)](./media/u1.png)
+
 8.  Right-click the class, cosDimCheckBoxController, and then select **View Code**.
 9.  Set a breakpoint on the cosDimCheckBoxController::getBuildControl().
 10. Press **F5**.
     -   The breakpoint will be hit. This is where the casting error occurs. The reason for the casting error is because we are trying to return a control of type: FormBuildCheckboxControl and the object is expecting FormBuildStringControl.
 
-11. Hover over the buildcontrol to see the type and notice the differences.[![v](./media/v1.png)](./media/v1.png)
-12. Press **F10** to hit the exception.[![w](./media/w2.png)](./media/w2.png)
+11. Hover over the buildcontrol to see the type and notice the differences.
+
+    [![v](./media/v1.png)](./media/v1.png)
+
+12. Press **F10** to hit the exception.
+
+    [![w](./media/w2.png)](./media/w2.png)
+
 13. Stop debugging.
 14. To fix the exception, change the method declaration from FormBuildStringControl to FormBuildCheckBoxControl.
 
@@ -291,13 +324,13 @@ In Finance and Operations, X++ is completely intermediate-language (IL) based an
 
 15. Rebuild the project, and press **Ctrl+F5**. The form should open successfully because the casting error is resolved.
 
-[![a](./media/a-1024x576.png)](./media/a.png)
+    [![a](./media/a-1024x576.png)](./media/a.png)
 
 ## Migrating context menus and mouse double-click code
 Refer to these topics to migrate code Dynamics AX 2012 that deals with context menus and mouse double-click actions.
 
--   [Context menus](code-migration-context-menus.md)
--   [Mouse double-click](code-migration-double-click.md)
+-   [Code migration - Context menu code](code-migration-context-menus.md)
+-   [Code migration - Mouse double-click logic](code-migration-double-click.md)
 
 
 

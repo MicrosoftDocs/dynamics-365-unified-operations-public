@@ -5,7 +5,7 @@ title: Get support for Finance and Operations apps or Lifecycle Services (LCS)
 description: This topic explains how to get help with Finance and Operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -96,6 +96,6 @@ For technical questions that are related to signing in to and accessing Customer
 
 ## Additional resources
 - [Get support for Dynamics 365 Retail](../../../retail/retail-support.md)
-- [Get support for Dynamics 365 Talent](../../../talent/talent-support.md)
-- For more information about Microsoft Dynamics support offerings, see [Microsoft Dynamics Online support](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+- [Get support for Microsoft Dynamics 365 Talent](../../../talent/talent-support.md)
+- For more information about Microsoft Dynamics support offerings, see [Manage the support experiences for Finance and Operations apps](cloud-powered-support-lcs.md).
 

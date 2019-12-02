@@ -83,7 +83,9 @@ info(int2Str(fortytwo));
 ```
 
 ## TODO comments
-The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. Here are the rules for using **TODO** in comments:
+The compiler recognizes the string **TODO** when it occurs at the start of a comment. The **TODO** string prompts the compiler to report the rest of the comment text in the **Task List** window in Microsoft Visual Studio. To open the **Task List** window, select **View**, and then select **Task Window**. The **Task Window** reports the line number where the **TODO** comment can be found in the code. 
+
+Here are the rules for using **TODO** in comments:
 
 - The **TODO** string can appear in a comment that uses either the **//** style or the **/\*** style.
 - The **TODO** string must be the very first non–white space string in the comment. A carriage return, a line feed, a tab, and a space are all considered white space.
@@ -91,7 +93,7 @@ The compiler recognizes the string **TODO** when it occurs at the start of a com
 - The **TODO** string is case-insensitive. However, the convention is to type **TODO** in all uppercase letters, instead of **ToDo** or another variation.
 - The **TODO** string can have any characters appended to it. However, the convention is either to append a colon to the **TODO** string or to follow it with a white space.
 - The rest of the comment after the **TODO** string is reported as the task description. If the comment is longer than 200 characters, it might appear truncated on the **Tasks** tab.
-- The**TODO** task description can be spread over multiple lines when the **/\*** comment style is used.
+- The **TODO** task description can be spread over multiple lines when the **/\*** comment style is used.
 
 ### Examples of TODO comments
 
@@ -118,7 +120,9 @@ public boolean isLate()
 The **changeSite**, **pause**, and **window** keywords are no longer a part of the X++ language. These keywords will cause compilation errors if you use them.
 
 ## using clauses
-You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes. The following example shows a **using** clause, a namespace alias, and a class alias.
+You use **using** clauses so that you don't have to provide the fully qualified name of a type. The **using** clause must precede the class that it applies, and it's required in every source file that you want it to apply to. Typically, all **using** clauses are put at the beginning of the source file. You can also provide aliases that introduce a short name for a fully qualified name. Aliases can denote namespaces or classes. 
+
+The following example shows a **using** clause, a namespace alias, and a class alias.
 
 ```X++
 using System;

@@ -5,7 +5,7 @@ title: Apply updates to cloud environments
 description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: manalidongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/06/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -63,7 +63,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 > [!NOTE] 
 > A binary package and a Retail deployable package can't be included in the same merged package.
 
-> For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md).
+> For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 
 > If your environment is on an application version 8.1 and later, then the **Platform Update package** does not apply to your environment. Starting with 8.1 and later releases, **Application and Platform Binary update package** is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page, clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
 
@@ -85,7 +85,7 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 
 Before you begin, verify that the deployable package has been uploaded to the Asset library in LCS.
 
-1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services](../migration-upgrade/download-hotfix-lcs.md). For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
+1. For a binary update, upload the package directly to the Asset library. For information about how to download an update from LCS, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md). For an application (AOT) deployable package that results from an X++ hotfix, or from application customizations and extensions, create the deployable package in your development or build environment, and then upload it to the Asset library.
 2. Open the **Environment details** view for the environment where you want to apply the update.
 3. Click **Maintain** &gt; **Apply updates** to apply an update.
 4. Select the package to apply. Use the filter at the top to find your package.
@@ -119,7 +119,7 @@ If package deployment fails, see the [Troubleshoot package application issues](d
 
 ## Applying retail updates and extensions
 
-If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. For more information, see [Apply updates and extensions to cloud hosted retail channel components](Update-retail-channel.md).
+If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have initialized Retail Cloud Scale Unit, you will also need to update Retail channel components. For more information, see [Update Retail Cloud Scale Unit](Update-retail-channel.md).
 
 If you're using retail components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md).
 

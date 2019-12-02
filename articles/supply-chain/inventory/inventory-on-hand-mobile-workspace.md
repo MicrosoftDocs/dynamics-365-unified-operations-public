@@ -61,10 +61,10 @@ Specifically, the mobile workspace provides these features:
     -   By available physical (This view represents available amount that has no reservations.)
 
 ## Prerequisites
-The prerequisites differ, based on the version of Microsoft Dynamics 365 that has been deployed for your organization.
+The prerequisites differ, based on the version of Supply Chain Management that has been deployed for your organization.
 
-### Prerequisites if you use Finance and Operations 
-If Supply Chain Managementhas been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### Prerequisites if you use Supply Chain Management
+If Supply Chain Management has been deployed for your organization, the system administrator must publish the **Inventory on-hand** mobile workspace. For instructions, see [Publish a mobile workspace](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### Prerequisites if you use Platform update 3 or later 
 If Platform update 3 or later has been deployed for your organization, the system administrator must complete the following prerequisites. 

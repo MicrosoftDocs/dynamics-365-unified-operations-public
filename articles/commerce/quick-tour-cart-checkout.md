@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Quick tour of cart and checkout pages
-description: This topic provides a quick tour of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
+title: Overview of cart and checkout pages
+description: This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -27,12 +27,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of cart and checkout pages
+# Overview of cart and checkout pages
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides a quick tour of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -103,3 +103,13 @@ When the customer places an order, a confirmation number is provided. At this po
 After an order is created, an order confirmation email is sent to the customer.
 
 For more information about how to author a checkout page, see [Add a checkout module to a page](add-checkout-module.md).
+
+## Additional resources
+
+[Overview of the home page](quick-tour-home-page.md)
+
+[Overview of default category landing page and search results page](category-search-page-overview.md)
+
+[Overview of product details pages](quick-tour-pdp.md)
+
+[Overview of account management pages](quick-tour-account-management.md)

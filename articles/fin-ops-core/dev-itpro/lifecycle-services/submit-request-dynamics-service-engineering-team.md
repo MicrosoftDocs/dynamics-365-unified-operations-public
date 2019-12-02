@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Platform update 3
 A service request is a ticket that you use to request that the Dynamics Service Engineering (DSE) team perform a predefined set of tasks on your environments.
 
 > [!NOTE]
-> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Find support](lcs-support.md).
+> Don't use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this topic, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -74,7 +74,7 @@ There are two ways to create a service request: automatically and on demand.
 ### Automatically create a service request
 
 - **Environment deployment** – To set up deployment options and submit a request to the DSE team to deploy a new environment, in the **Environments** section, select **Configure**.
-- **Package application** – To apply a package to the production environment, on the **Environment details** page, select **Maintain**, select the package to apply, and then select **Schedule**. For more information, see [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md).
+- **Package application** – To apply a package to the production environment, on the **Environment details** page, select **Maintain**, select the package to apply, and then select **Schedule**. For more information, see [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
 
 ### Create a service request on demand
 Service requests that are created on demand aren't explicitly accepted by the DSE team. They will be addressed during the specified downtime window unless the DSE team has entered a comment in the request or has had to deny the request. For details, review the comments in the service request.
@@ -89,7 +89,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
         > [!NOTE]
         > If you need to restore a *production* database to a previous point-in-time during the cutover phase, select the **Production point-in-time restore request** type. If you need to restore a production database when you're already live in operations, submit a support ticket through LCS.
 
-   - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Request a sandbox database refresh](../database/database-refresh.md).  *This request type is being retired on January 31, 2019*.
+   - **Database refresh request** – Select this request type to refresh a database from a production environment to a sandbox environment, or from one sandbox environment to another. For more information, see [Refresh database](../database/database-refresh.md).  *This request type is being retired on January 31, 2019*.
 
         > [!NOTE]
         > If you need to refresh a database from a sandbox environment to a production environment during the cutover phase, select the **Sandbox to Production** type.
@@ -98,7 +98,7 @@ Microsoft frequently reviews all incoming service requests. By selecting the cor
 
    - **Other request** – You need to use the **Other request** type exactly as described here. If you word a request in a way that isn't clear to the DSE team, the team will enter a comment to ask for clarification, and your request will be delayed. If you use the **Other request** type for any request that isn't listed below, the request will be denied. Select this request type to request that the DSE team perform one of the following actions:
 
-      - Turn on maintenance mode in a production environment. For more information, see [Maintenance Mode](../sysadmin/maintenance-mode.md).
+      - Turn on maintenance mode in a production environment. For more information, see [Maintenance mode](../sysadmin/maintenance-mode.md).
       - Define explicit Internet Protocol (IP) whitelist rules in a production environment.
       - Request that Microsoft Power BI Embedded be activated in a sandbox environment, Standard Acceptance Test environment, or production environment if you receive the following message: "Power BI embedded isn't enabled. Please contact your system administrator."
 

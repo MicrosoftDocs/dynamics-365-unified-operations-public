@@ -59,7 +59,7 @@ You also use the **Vendor settlement for 1099s** page to enter or update 1099 in
 Additional resources
 --------
 
-[Accounts payable in the public sector](../public-sector/accounts-payable-public-sector.md)
+[Accounts payable in the public sector overview](../public-sector/accounts-payable-public-sector.md)
 
 
 

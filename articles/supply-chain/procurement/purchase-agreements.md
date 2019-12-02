@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Purchase agreements
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
 
@@ -85,6 +86,9 @@ When you create a PO, you can apply a purchase agreement to it. Information from
 You can select a purchase agreement only when you're creating a PO. You can't select a purchase agreement after the PO has been created.  
 In some situations where POs are created indirectly, you can control whetherSupply Chain Management automatically searches for applicable purchase agreements. For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.
 
+## Matching policy on purchase agreements
+You can define a line matching policy on the header of the purchase agreement. This line matching policy will respect the accounts payable parameters line matching policy when the **Allow matching policy override** field on the **Accounts payable parameters** page (on the **Prce and quantity matching** FastTab) is set to **Higher than company policy**. Documents that reference the purchase agreement will use the line matching policy that's defined on the purchase agreement header unless otherwise defined on the corresponding item, item and vendor, or category purchasing policy.
+
 ## Purchase agreements and intercompany trade
 Intercompany trading relationships can be created between vendor accounts and customer accounts that are in different legal entities. When a sales order or PO is created for one of the parties, an intercompany order chain is created. In the order chain, the sales order and PO are created in the appropriate legal entities.  
 
@@ -98,9 +102,9 @@ You can copy financial dimensions to document headers or to individual lines of 
 Additional resources
 --------
 
-[Create a purchase agreement (Task guide)](tasks/create-purchase-agreement.md)
+[Create a purchase agreement](tasks/create-purchase-agreement.md)
 
-[Create a purchase release order from a purchase agreement (Task guide)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

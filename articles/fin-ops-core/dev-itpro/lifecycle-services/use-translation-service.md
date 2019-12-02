@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about how to translate a user interface (UI) file for Microsoft Dynamics products or solutions.
 
-For more information about the Microsoft Dynamics 365 Translation Service, see [Dynamics 365 - Translation Service overview](translation-service-overview.md). For information about how to translate a documentation file, see [Dynamics 365 - Translation Service user guide - Documentation file translation](use-translation-service-ua.md).
+For more information about the Microsoft Dynamics 365 Translation Service, see [Dynamics 365 Translation Service overview](translation-service-overview.md). For information about how to translate a documentation file, see [Translate documentation files](use-translation-service-ua.md).
 
 ## Create a translation request
 1. In Microsoft Dynamics Lifecycle Services (LCS), on the DTS dashboard, select **Add** to create a new translation request.
@@ -77,7 +77,7 @@ Select the plus sign (**+**) in each section to open the **File upload** page.
 Create one zip file that contains all the UI files in the source language that you want to translate from. The zip file can include different file types, provided that the file types are supported for the product. For more information about supported file types, see [Supported products](translation-service-overview.md#supported-products). Note that DTS doesn't change the source files that you upload. The source files are only used to create files in the corresponding target languages you requested.
 
 ### Upload XLIFF translation memory files (Optional)
-If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md) to create an XLIFF TM, create a zip file that contains all TM files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Microsoft Dynamics 365 Translation service - Translation memory](use-translation-service-tm.md).
+If you have XLIFF TM files from a previous UI translation request, or if you used the [Align tool](use-translation-service-tm.md) to create an XLIFF TM, create a zip file that contains all TM files before you upload them. Strings that match are then recycled to help guarantee consistency between product versions. For more information about XLIFF TMs, see [Translation memory files](use-translation-service-tm.md).
 
 ![TM upload](./media/dts-tm-upload.png "TM upload")
 
@@ -116,7 +116,7 @@ For UI translation requests, two types of output file are available after the tr
 Click an individual file link or the download links to download a single file, all files for one target language, or all files for all target languages in one zip for convenience.  
 
 ### Review and edit the translations in the XLIFF file
-We recommend that you review and edit the translations in the XLIFF file that DTS provides, to verify that the translation output meets your product's quality standards. For more information about how to edit the XLIFF file, see [Editing an XLIFF translation memory](use-translation-service-tm.md#editing-an-xliff-translation-memory).
+We recommend that you review and edit the translations in the XLIFF file that DTS provides, to verify that the translation output meets your product's quality standards. For more information about how to edit the XLIFF file, see [Translation memory files](use-translation-service-tm.md#editing-an-xliff-translation-memory).
 
 ### Regenerate output files
 When you've finished reviewing and editing the translation files in XLIFF, you must regenerate the translated native format files next. You can then apply the latest translations (that is, your edited versions of the translations) to the UI files in the target language. You can regenerate any number of files from the output files set per target language.  

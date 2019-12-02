@@ -5,7 +5,7 @@ title: Help resources for Supply Chain Management
 description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
 author: josaw1
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -58,7 +58,7 @@ Select a feature area to learn more about it.
 
 ## Dynamics 365 Finance
 
-For information on Dynamics 365 Finance, go to the [Dynamics 365 Finance help resources](../finance/index.md) page.
+For information on Dynamics 365 Finance, go to the [Financial management home page](../finance/index.md) page.
 
 ## Videos
 
@@ -114,13 +114,12 @@ These tech conference recordings discuss product functionality in the previous v
 -  [Transportation management (TMS) in the new Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## Blogs
-There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version of Finance and Operations, but the same concepts still apply, and the procedures are similar in the current version. 
+There are many topics about manufacturing and supply chain management on the <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX Manufacturing R&D Team Blog</a> and <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Supply Chain Management in Dynamics AX R&D Team Blog </a>. Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version. 
 
 ## White papers
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Cost accounting hands-on labs</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean manufacturing: Capable to promise and kanban job scheduling</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">BOM calculation by using a costing sheet</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobility in the Warehouse facilitated by Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## eLearning courses
 For information about Dynamics 365 training, see <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics Learning Portal</a>. (requires CustomerSource account) 

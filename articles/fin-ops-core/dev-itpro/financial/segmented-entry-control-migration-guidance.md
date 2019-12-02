@@ -36,23 +36,26 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic guides you through the process of migrating a Segmented Entry control from the Microsoft Dynamics AX 2012 pattern to the new pattern in Microsoft Dynamics AX.
 
-The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry</em>* control instance<em>. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController</em>* and <strong>DimensionDynamicAccountController</strong>). Any property that was previously manipulated or called on the controller must now be called on the control. <strong>Notes:</strong>
+The goal of the new design is to encapsulate the control implementation and not require that forms interact with the classes that back the control. Therefore, in Microsoft Dynamics AX, <em>all forms should interact only with the application programming interface (API) of the **Segmented Entry** control instance. They should not interact directly with the controller classes (such as **LedgerDimensionAccountController** and **DimensionDynamicAccountController**)</em>. Any property that was previously manipulated or called on the controller must now be called on the control. 
+
+**Notes:**
 
 -   Some APIs have naming differences between the controller and the control. The following table lists these APIs.
-    **Controller Method (old)**
-    **Control Method (new)**
-    parmDate
-    parmControlDate
-    parmFilterLedgerPostingType
-    parmPostingType
-    parmDimensionAccountStorageUsage
-    parmDimensionAccountStorageUsageType
+
+    | Controller method (old) | Control method (new) |
+    |-------------------------|--------------------|
+    | parmDate | parmControlDate | 
+    | parmFilterLedgerPostingType | parmPostingType| 
+    | parmDimensionAccountStorageUsage | parmDimensionAccountStorageUsageType | 
+    
 -   **Example**
     -   **Before:** controller.parmDate(systemDateGet())
     -   **After:** LedgerAccount.parmControlDate(systemDateGet());
 
-    In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance
--   In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller. **Example**
+    In this example, **controller** &gt; **LedgerDimensionAccountController** instance and **LedgerAccount** &gt; new **Segmented Entry** control instance.
+-   In methods that have been overridden on controls and data fields, the code upgrade rule replaces method calls on the controllers with method calls on each control instance that was using a particular controller. 
+
+-   **Example**
     -   **Before:**
 
             Public void jumpRef()
@@ -74,103 +77,57 @@ The goal of the new design is to encapsulate the control implementation and not 
 -   **parmTaxCode** has been removed. There is no replacement.
 
 ## Properties
-The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example. [![111](./media/111.png)](./media/111.png) Not all properties apply to all **Controller** class types. Properties that don't apply to a selected controller class will be disabled. The following table provides details about the properties.
+The custom properties for the **Segmented Entry** control are found under **Controller**. The following screen shot shows an example. 
 
-**Property**
+[![111](./media/111.png)](./media/111.png) 
 
-**Valid Values**
+Not all properties apply to all **Controller** class types. Properties that don't apply to a selected controller class will be disabled. The following table provides details about the properties.
 
-**Usage**
+| Property           | Valid values      | Usage           |
+|-------------------------|--------------------|--------------------|
+| Account Type Field | A field from the datasource. | Determines the type of account used. Typically utilized for journal entry from a multi-segment ledger account to single segment values from other backing tables such as Cust, Vend, Bank, Project and similar. | 
+| Controller Class | One of 6 Controller classes. For example, LedgerDimensionDefaultAccountController. | Determines the pattern and behavior of the Segmented Entry control. More information about this property is provided below. | 
+| Include Financial Accounts | NoYes | Determines if Main accounts that are Financial accounts are valid for use. | 
+| Include Total Accounts | NoYes | Determines if Main accounts of type Total are valid for use. | 
+| Is Default Account | TrueFalse | For a Dynamic account, determines if the account should be a default or full account. | 
+| Lock Main Account Segment | NoYes | Controls whether the Main account segment is locked. Typically used in journals and distributions based upon configuration. | 
+| Posting Type | A value from the LedgerPostingType enumeration. | The Main account is validated to see if the posting type is allowed to be used with that account. | 
+| Validate Blocked For Manual Entry | NoYes | Determines if the 'Blocked for Manual Entry' status on the dimension should be respected or not. | 
 
-Account Type Field
-
-A field from the datasource.
-
-Determines the type of account used. Typically utilized for journal entry from a multi-segment ledger account to single segment values from other backing tables such as Cust, Vend, Bank, Project and similar.
-
-Controller Class
-
-One of 6 Controller classes. For example LedgerDimensionDefaultAccountController.
-
-Determines the pattern and behavior of the Segmented Entry control. More information about this property is provided below.
-
-Include Financial Accounts
-
-NoYes
-
-Determines if Main accounts that are Financial accounts are valid for use.
-
-Include Total Accounts
-
-NoYes
-
-Determines if Main accounts of type Total are valid for use.
-
-Is Default Account
-
-TrueFalse
-
-For a Dynamic account, determines if the account should be a default or full account.
-
-Lock Main Account Segment
-
-NoYes
-
-Controls whether the Main account segment is locked. Typically used in journals and distributions based upon configuration.
-
-Posting Type
-
-A value from the LedgerPostingType enumeration.
-
-The Main account is validated to see if the posting type is allowed to be used with that account.
-
-Validate Blocked For Manual Entry
-
-NoYes
-
-Determines if the 'Blocked for Manual Entry' status on the dimension should be respected or not.
 
 ## Controller class property
 The following table provides details about each controller.
 
-**Controller**
-
-**Details**
-
-BudgetLedgerDimension
-
-This Controller provides budget based support for data entry in the Segmented Entry control. When using this controller, an Account Structure must be provided to the Segmented Entry control.
-
-BudgetPlanningLedgerDimension
-
-This Controller provides budget planning based support for data entry in the Segmented Entry control. When using this controller, an Account Structure must be provided to the Segmented Entry control.
-
-DimensionDynamicAccount
-
-This Controller provides support for multiple account types in the Segmented Entry control.
-
-LedgerDimensionAccountAlias
-
-This Controller provides support for account aliases in the Segmented Entry control
-
-LedgerDimensionAccount
-
-This Controller provides support for multi-segment data entry in the Segmented Entry control.
-
-LedgerDimensionDefaultAccount
-
-This Controller provides support for default accounts in the Segmented Entry control.
+| Controller           | Details      | 
+|-------------------------|--------------------|
+| BudgetLedgerDimension | This Controller provides budget based support for data entry in the Segmented Entry control. When using this controller, an Account Structure must be provided to the Segmented Entry control. |
+| BudgetPlanningLedgerDimension | This Controller provides budget planning based support for data entry in the Segmented Entry control. When using this controller, an Account Structure must be provided to the Segmented Entry control. |
+| DimensionDynamicAccount | This Controller provides support for multiple account types in the Segmented Entry control. |
+| LedgerDimensionAccountAlias | This Controller provides support for account aliases in the Segmented Entry control |
+| LedgerDimensionAccount | This Controller provides support for multi-segment data entry in the Segmented Entry control. |
+| LedgerDimensionDefaultAccount | This Controller provides support for default accounts in the Segmented Entry control. |
 
 ## Migration steps
 ### Step 1
 
 #### AX 2012
 
-If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**. [![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
+If **SegmentedEntry** appears as the type next to any control, change it to **SegmentedEntryControl**. 
+
+[![SegmentMigrate01](./media/segmentmigrate01.png)](./media/segmentmigrate01.png)
 
 #### Dynamics AX
 
-An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control. **Note:** To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. [![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) The following screen shot shows how new control will look. [![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
+An easy method is to append "\_old" to the name of the old control, add the new control (which should have the original name of the control), migrate all the settings over, and then delete the old control. 
+
+> [!NOTE] 
+> To prevent tests and other code that references the control from breaking, make sure that the new control has the same name as the old control. To add the new control, right-click the parent control that will contain the **Segmented Entry** control, and then select **New** &gt; **SegmentedEntryControl**. 
+
+[![SegmentMigrate02](./media/segmentmigrate02-623x1024.png)](./media/segmentmigrate02.png) 
+
+The following screen shot shows how new control will look. 
+
+[![SegmentMigrate03](./media/segmentmigrate03.png)](./media/segmentmigrate03.png)
 
 ### Step 2
 
@@ -537,7 +494,8 @@ The approach is similar to the approach for the **loadSegments()** method. The c
         }
     }
 
-**Note:** After all the code has been moved out of the **gotFocus()** method, you can delete the method.
+> [!NOTE] 
+> After all the code has been moved out of the **gotFocus()** method, you can delete the method.
 
 ### Step 14
 
@@ -555,7 +513,12 @@ Set the following properties on the control:
 -   **Reference Field**
 -   **Controller Class**
 
-[![SegmentMigrate04](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) [![SegmentMigrate05](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) **Note:** A controller class is required for the control to work. Therefore, a run-time error will be thrown if the **Controller Class** property isn't set.
+[![SegmentMigrate04](./media/segmentmigrate04.png)](./media/segmentmigrate04.png) 
+
+[![SegmentMigrate05](./media/segmentmigrate05.png)](./media/segmentmigrate05.png) 
+
+> [!NOTE]
+> A controller class is required for the control to work. Therefore, a run-time error will be thrown if the **Controller Class** property isn't set.
 
 ### Step 15
 
@@ -571,7 +534,8 @@ A map of the dimension specifiers must be created that can then be sent into the
 
     TmpLedgerJournalSplitLines_LedgerAccount.setDimensionSpecifiers(defaultDimensionSpecifiers, false);
 
-**Note:** You can add anything to the dimension specifiers map before it's sent to the control. You can also create a new map here. (See the **onSegmentChangedForPrimaryAccount** method in the **LedgerJournalEngine** class for similar logic.)
+> [!NOTE]
+> You can add anything to the dimension specifiers map before it's sent to the control. You can also create a new map here. (See the **onSegmentChangedForPrimaryAccount** method in the **LedgerJournalEngine** class for similar logic.)
 
 ### Step 16
 
@@ -595,7 +559,11 @@ In the form **init()** method:
 
 #### Dynamics AX
 
-This is the **Posting Type** property on the control. The control that the **PostingType** property must be set on can be determined from the mapping details that are derived by looking at the **parmControl()** call. [![SegmentMigrate06](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) These properties can also be set in code, through corresponding **parm** methods on the control instance. Here's an example.
+This is the **Posting Type** property on the control. The control that the **PostingType** property must be set on can be determined from the mapping details that are derived by looking at the **parmControl()** call. 
+
+[![SegmentMigrate06](./media/segmentmigrate06.png)](./media/segmentmigrate06.png) 
+
+These properties can also be set in code, through corresponding **parm** methods on the control instance. Here's an example.
 
     ClearingAccount.parmPostingType(LedgerPostingType::VendSettlement);
 
@@ -603,7 +571,9 @@ This is the **Posting Type** property on the control. The control that the **Pos
 
 #### AX 2012
 
-Override **resolveReference()** in the data source field for the ledger dimension. [![SegmentMigrate07](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
+Override **resolveReference()** in the data source field for the ledger dimension. 
+
+[![SegmentMigrate07](./media/segmentmigrate07.png)](./media/segmentmigrate07.png)
 
 #### Dynamics AX
 
@@ -657,12 +627,16 @@ For **DimensionDynamicAccountController**, the account type is specified through
 
 There are two methods for implementing this functionality. These methods are mutually exclusive, so use only one of them, depending on the situation:
 
--   For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method. **Note:** If the **super()** call has been removed from the **modified()** method for the field that is bound to the **Account Type Field** property, this method won't work. We have seen this issue in some journal forms, such as **LedgerJournalTransDaily**. In such cases, either add the **super()** call back to the **modified()** method, or use the second method.
+-   For the **Segmented Entry** control, in the **Properties** dialog box, set the **Account Type Field** property to the data source field that will provide the account type. This is the preferred method. 
+
+    > [!NOTE]
+    > If the **super()** call has been removed from the **modified()** method for the field that is bound to the **Account Type Field** property, this method won't work. We have seen this issue in some journal forms, such as **LedgerJournalTransDaily**. In such cases, either add the **super()** call back to the **modified()** method, or use the second method.
 -   Set the account type manually by calling the **parmAccountTypeEnumValue()** method on the control. Here's an example.
 
         LedgerJournalTrans_AccountNum.parmAccountTypeEnumValue(enum2int(ledgerJournalTrans.AccountType));
 
-    **Note:** The call to **parmAccountTypeEnumValue()** must be put in both the data source's **active()** method and the **modified()** method of the field that will provide the account type.
+    > [!NOTE] 
+    > The call to **parmAccountTypeEnumValue()** must be put in both the data source's **active()** method and the **modified()** method of the field that will provide the account type.
 
 ### Step 23
 
@@ -686,7 +660,7 @@ Remove this, because the controller is no longer required.
 
 #### Dynamics AX
 
-Remove this line of code, because it's no longer required in most cases. Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the **LedgerCOA** value will be derived from that information. If the data area ID is not passed in, replace **parmCurrentLedgerCOA(â€¦)** with **parmDataAreaId(â€¦)**, and pass the appropriate **SelectableDataArea** value, which is usually **curext()** or another table field that controls the scope of the company for the account control. If the form has no data area context but only a current **LedgerCOA** value, it should be working only with the default account controller. There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, **MainAccount** and **Allocations**). In these cases, **parmCurrentLedgerCOA** should be called on the **Segmented Entry** control instance that has a default account controller type set.
+Remove this line of code, because it's no longer required in most cases. Before you delete this line, make sure that the data area ID is correctly passed in to the controller as a parameter, because the **LedgerCOA** value will be derived from that information. If the data area ID is not passed in, replace **parmCurrentLedgerCOA()** with **parmDataAreaId()**, and pass the appropriate **SelectableDataArea** value, which is usually **curext()** or another table field that controls the scope of the company for the account control. If the form has no data area context but only a current **LedgerCOA** value, it should be working only with the default account controller. There are only a few forms that are agnostic of a company, but that are scoped to a specific chart of accounts (COA) (for example, **MainAccount** and **Allocations**). In these cases, **parmCurrentLedgerCOA** should be called on the **Segmented Entry** control instance that has a default account controller type set.
 
 ### Step 25
 
@@ -698,7 +672,10 @@ Remove this line of code, because it's no longer required in most cases. Before 
 
 #### Dynamics AX
 
-This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. **Note:** Because of a framework bug, if you don't set this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
+This line of code is no longer required and should be set directly via a property on the **Segmented Entry** control. 
+
+> [!NOTE]
+> Because of a framework bug, if you don't set this explicitly, **No** will be assigned on a ledger dimension default account controller, whereas the previous behavior was to implicitly assign **Yes** during construction. You must set this manually as a property. Alternatively, for a **dialog** class, the **parm** method should still be explicitly called.
 
 ### Step 26
 
@@ -794,7 +771,10 @@ This method has been deprecated and must not be used. You should delete all call
 
 ### Migrating a Segmented Entry control on a dialog
 
-The uptake pattern for the new **Segmented Entry** control on a dialog has changed in Dynamics AX. Instead of interacting with the controller class API, you must now interact with the **SegmentedEntryControlBuild** class to link the SEC with the dialog. This section shows the code patterns for using SEC on a dialog with different controller types. **Note:** Help text is no longer required in Dynamics AX, so you don't have to set the Help text on dialog fields.
+The uptake pattern for the new **Segmented Entry** control on a dialog has changed in Dynamics AX. Instead of interacting with the controller class API, you must now interact with the **SegmentedEntryControlBuild** class to link the SEC with the dialog. This section shows the code patterns for using SEC on a dialog with different controller types. 
+
+> [!NOTE] 
+> Help text is no longer required in Dynamics AX, so you don't have to set the Help text on dialog fields.
 
 -   **Dynamic account:**
     -   **Before:**
@@ -920,13 +900,13 @@ The uptake pattern for the new **Segmented Entry** control on a dialog has chang
 Additional resources
 --------
 
-[Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)
+[Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
-[Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
+[Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
+[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration](segmented-entry-control-conversion.md)
+[Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
 
 

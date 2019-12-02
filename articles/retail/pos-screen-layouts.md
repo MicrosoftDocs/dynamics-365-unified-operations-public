@@ -175,7 +175,7 @@ The button grid designer lets you configure button grids that can be used on the
 
     - **Action** – In the list of applicable POS operations, select the operation that is invoked when the button is clicked in the POS.
 
-        For the list of supported POS operations, see [POS operations, online and offline](pos-operations.md).
+        For the list of supported POS operations, see [Online and offline point of sale (POS) operations](pos-operations.md).
 
     - **Action parameters** – Some POS operations use additional parameters when they are invoked. For example, for the Add product operation, users can specify the product to add.
     - **Button text** – Specify the text that appears on the button in the POS.
@@ -197,4 +197,4 @@ The button grid designer lets you configure button grids that can be used on the
 
 ## Additional resources
 
-[Install the Retail POS Layout designer](install-pos-layout-designer.md)
+[Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)

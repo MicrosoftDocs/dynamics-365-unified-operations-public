@@ -38,7 +38,7 @@ This topic discusses the templates and underlying task that are used to synchron
 
 [![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template. For more information, see [Field Service Products (Supply Chain Management to Field Service)](field-service-product.md).
+The used **Field Service Products with Inventory unit (Supply Chain Management to Field Service)** template is based on the **Field Service Products (Supply Chain Management to Field Service)** template. For more information, see [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md).
 
 This topic only describes the differences between the two templates: 
 - **Field Service Products with Inventory unit (Supply Chain Management to Sales)**

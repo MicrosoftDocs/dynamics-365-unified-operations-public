@@ -186,4 +186,4 @@ If the service date basis is set to **Seniority date**, make sure that a seniori
 > You can add and delete enrollments only for benefit accrual plans for the legal entity that you're signed in to.
 
 ## Next step
-The next step is to set up payroll taxes. For more information, see [Tax information tasks](noam-usa-tax-information-tasks.md).
+The next step is to set up payroll taxes. For more information, see [Set up taxes, tax regions, tax codes, and tax groups](noam-usa-tax-information-tasks.md).

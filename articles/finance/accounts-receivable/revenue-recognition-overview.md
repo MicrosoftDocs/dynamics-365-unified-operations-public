@@ -5,7 +5,7 @@ title: Revenue recognition overview
 description: This topic provides information about the Revenue recognition feature. This feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule for multi-element orders.
 author: kweekley
 manager: aolson
-ms.date: 08/24/2018
+ms.date: 11/11/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,10 +31,9 @@ ms.dyn365.ops.version: 8.0.4
 # Revenue recognition overview
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> The Revenue recognition feature can't yet be turned on through Feature management. Currently, you must use configuration keys to turn it on.
+> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
 
 Companies in industries that sell multiple elements, such as products, services, subscriptions, and so on, must be able to break out multi-element orders so that revenue can be recognized based on a set of company-specific and industry-specific guidelines.
 
@@ -42,6 +41,10 @@ In general, the revenue recognition process can be used to perform these tasks:
 
 * Allocate revenue, to help guarantee that the appropriate revenue price is recognized, based on the value of the components on multi-element orders.
 * Defer revenue, based on a revenue schedule that represents the contractual time frame and percentages for recognizing revenue over time.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44iER]
+
+The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 The Revenue recognition feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule.
 

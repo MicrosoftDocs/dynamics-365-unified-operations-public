@@ -59,7 +59,7 @@ To assign a questionnaire group to a questionnaire, on the **Questionnaires** pa
 ## Planned answer sessions in a questionnaire
 Planned answer sessions are questionnaires that you've designed and selected the respondents for. 
 
-> **Note**
+> [!NOTE]
 >   Before you can set up planned answer sessions, you must design a questionnaire. 
 
 On the **Planned answer session** page, you can create a planned answer session for an individual employee. The list on the page displays all planned questionnaires. 
@@ -114,13 +114,13 @@ If you use a planned answer session, you must notify the person directly, such a
 
 Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire. Enter the email text on the **E-mail for employee self service** tab. After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents. Respondents can then sign in to the website and complete the questionnaire. 
 
-> **Note**
+> [!NOTE]
 >   Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.
 
 ## Ending a scheduled questionnaire
 You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions. After a scheduled questionnaire is ended, you can't copy its settings to a new schedule. 
 
-> **Note**
+> [!NOTE]
 >   If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page. You can then end the schedule.
 
 ## Completing questionnaires
@@ -134,10 +134,10 @@ Questionnaires can made be available to specific users or groups of users, or to
 Additional resources
 --------
 
-[Designing questionnaires](design-questionnaires.md)
+[Design questionnaires](design-questionnaires.md)
 
-[Using questionnaires](questionnaires.md)
+[Questionnaires](questionnaires.md)
 
-[Viewing and evaluating the results of questionnaires](evaluate-questionnaire-results.md)
+[View and evaluate the results of questionnaires](evaluate-questionnaire-results.md)
 
 

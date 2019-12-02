@@ -5,7 +5,7 @@ title: Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
 description: This topic explains what data is synchronized in a Talent and Finance integration.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -43,6 +43,10 @@ the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance]
 
 For Attract and Onboard, all data is native to Common Data Service.
 
+## Why don't I see any data synced to Common Data Service?
+
+By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
+
 ## Can I create a new mapping without using the templates?
 
 Templates are the starting point. You can create your own template, but a
@@ -56,7 +60,7 @@ part of the default template. This entity is planned, but currently no release t
 
 For data that resides in Finance but does not exist in Talent,
 link the two systems together by using **Configure Links** in Talent. For more
-information about how to configure links between Talent and Finance, see [What's new or changed in Dynamics 365 Talent: Core HR (October 31, 2018)](whats-new-talent-october-31.md).
+information about how to configure links between Talent and Finance, see [What's new or changed in Dynamics 365 Talent - Core HR (October 31, 2018))](whats-new-talent-october-31.md).
 
 ![Map financial dimensions](media/MapFinancialDimensions.png)
 
@@ -76,13 +80,13 @@ integration mapping.
 With the use of "Advanced query", you can filter and reshape source data before
 passing it into the destination.
 
-![Active workers advanced quaery](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Active workers advanced query](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## Can I specify which fields to send to Finance for a specific entity?
 
 Fields can be added or removed from the integration task. Not all data fields
 that exist on the Common Data Service entity will be populated from Core HR.
-Additional data can be populated via PowerApps.
+Additional data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
 
@@ -145,23 +149,22 @@ project in Finance. If the task number is 9 in Data Integrator, the index in Fin
 
 1. Capture the task index from Data Integrator (in this example it is "9").
 
-![Capture task index from Data Integrator](media/CaptureTaskIndex.png)
+    ![Capture task index from Data Integrator](media/CaptureTaskIndex.png)
 
 2. Track the execution time of the project.
 
-![Track execution time of project](media/CaptureTimeOfExecution.png)
+    ![Track execution time of project](media/CaptureTimeOfExecution.png)
 
-3. In Finance, identify index - 1. In this example, the
-project with suffix "8" and execution time of index "0" project matches with
+3. In Finance, identify index - 1. In this example, the project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
-![Identify index](media/IdentifyIndex.png)
+    ![Identify index](media/IdentifyIndex.png)
 
 ## After integrating Talent and Finance, I don’t see my Talent data in Finance. What do I do?
 
 The integration to Finance is a two-step process. First, verify
 that the Talent data is updated and available in Common Data Service. This is a near real-time
-sync and can be verified in PowerApps by looking at the data within the data
+sync and can be verified in Power Apps by looking at the data within the data
 entities.
 
 ![Data in Common Data Service](media/DataInCDS.png)
@@ -213,7 +216,7 @@ of minutes to complete, then you should see those mappings. This issue occurs wh
 
   - [Data Integrator error management and troubleshooting](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Responding to DSR requests for system-generated logs in PowerApps, Microsoft Flow, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Responding to DSR requests for system-generated logs in Power Apps, Microsoft Power Automate, and Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Data Management:
 

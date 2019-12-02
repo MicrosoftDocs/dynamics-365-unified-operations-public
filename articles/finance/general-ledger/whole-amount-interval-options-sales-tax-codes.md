@@ -90,7 +90,7 @@ The sales tax is the sum of the tax amounts that are calculated for each amount 
 
 
 
-For more information, see [Determining sale tax rates based on the Marginal base and Calculation method fields](marginal-base-field.md).
+For more information, see [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md).
 
 
 

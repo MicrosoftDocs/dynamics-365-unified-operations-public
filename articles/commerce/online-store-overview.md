@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Online store overview
 [!include [banner](includes/banner.md)]
-
 [!include [banner](includes/preview-banner.md)]
 
 This topic introduces the concept of an online store and explains how online stores are used in Microsoft Dynamics 365 Commerce. It also provides a link to more information about online stores and information about how to set up an online store.
@@ -43,4 +42,18 @@ Only one online store has to be set up before you can get started with Dynamics 
 
 After an online store is set up, it can be associated with the Dynamics 365 Commerce site that will serve as your online storefront. For more information about online stores and how to set them up, see [Set up online stores](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
 
+## Additional resources
 
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)

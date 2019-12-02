@@ -34,4 +34,4 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides links to documentation resources for Switzerland. 
 
-- [Import customer payments in ESR](emea-che-esr-customer-payments-import.md)
+- [ESR customer payments import](emea-che-esr-customer-payments-import.md)

@@ -2,11 +2,11 @@
 
 # required metadata
 
-title: What's new or changed home page
+title: What's new or changed in Finance and Operations home page
 description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
 manager: AnnBe
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# What's new or changed home page
+# What's new or changed in Finance and Operations home page
 [!include [banner](../includes/banner.md)]
 
-This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
+As of October 2019, this page is no longer maintained. The information in this topic shows where to find feature information for Finance and Operations applications that were released before October 2019.
 
-For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
+For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 [!include [release notes](../includes/release-notes.md)]
 
@@ -55,13 +55,6 @@ This table lists the major releases of the application. For monthly cloud update
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>10.0.6</td>
-<td>10.0.234</td>
-<td>November 2019</td>
-<td><a href="whats-new-changed-10-0-6.md">What's new or change in Dynamics 365 for Finance and Operations version 10.0.6 (November 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.5</td>
@@ -190,13 +183,6 @@ This table lists the major releases of the application. For monthly cloud update
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Microsoft Dynamics 365 for Finance and Operations</td>
-<td>Platform update 30</td>
-<td>7.0.5407</td>
-<td>November 2019</td>
-<td><a href="whats-new-platform-update-30.md">What's new or changed in Dynamics 365 for Finance and Operations platform update 30 (November 2019)</a></td>
-</tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Platform update 29</td>

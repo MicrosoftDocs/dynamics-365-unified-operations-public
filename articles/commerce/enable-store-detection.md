@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -51,3 +51,19 @@ To turn on location-based store detection in Commerce, follow these steps.
 1. In the navigation pane on the left, select **Site Management**.
 1. Select **Site Settings**.
 1. Set the **Enable location based store detection** option to **On**.
+
+## Additional resources
+
+[Online store overview](online-store-overview.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)

@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -195,3 +195,19 @@ However, in the global.json file for the starter kit sign in module, you can edi
 ![Updated link text in the sign in module's global.json file](./media/B2C_CustomizingStringsForModule.png)
 
 After you update the global.json file and publish your changes, the new link text appears in the sign in module in both Commerce and on the live sign-in page.
+
+## Additional resources
+
+[Online store overview](online-store-overview.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)

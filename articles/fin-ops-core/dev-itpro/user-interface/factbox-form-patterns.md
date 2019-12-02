@@ -50,11 +50,11 @@ In general, FactBoxes are used to provide “related information” for a record
 ## Wireframe
 ### Form Part FactBox Grid
 
-[![FactBox(1)](./media/factbox1.png)](./media/factbox1.png)
+[![Illustration of Form Part FactBox grid](./media/factbox1.png)](./media/factbox1.png)
 
 ### Form Part FactBox Card
 
-[![FactBox(2)](./media/factbox2.png)](./media/factbox2.png)
+[![Illustration of Form Part FactBox card](./media/factbox2.png)](./media/factbox2.png)
 
 ## Pattern changes
 Here are the main changes to this pattern since Microsoft Dynamics AX 2012:
@@ -121,13 +121,13 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **CustTable** &gt; **ContactsInfoPart** 
 
-[![FactBox(3)](./media/factbox3.png)](./media/factbox3.png)
+[![Example of Form Part FactBox grid](./media/factbox3.png)](./media/factbox3.png)
 
 ### Form Part FactBox Card
 
 Form: **CustTable** &gt; **CustStatisticsStatistics** 
 
-[![FactBox(4)](./media/factbox4.png)](./media/factbox4.png)
+[![Example of Form Part FactBox card](./media/factbox4.png)](./media/factbox4.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -162,4 +162,4 @@ This section will have answers to frequently asked questions that are related to
 
 **CustTable** &gt; **ContactsInfoPart** 
 
-[![FactBox(5)](./media/factbox5.png)](./media/factbox5.png)
+[![Example of FactBox](./media/factbox5.png)](./media/factbox5.png)

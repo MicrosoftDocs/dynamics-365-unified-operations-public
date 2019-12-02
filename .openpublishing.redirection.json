@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/retail/dev-itpro/retail-modern-pos-offline.md",
+      "redirect_url": "../pos-operations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/retail/dev-itpro/ecommerce-platform.md",
+      "redirect_url": "../../commerce/e-commerce-extensibility/overview",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/dev-itpro/migration-upgrade/update-platform-each-release.md",
       "redirect_url": "upgrade-latest-platform-update",
       "redirect_document_id": "false"

@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -73,3 +73,25 @@ To preview the new module in a local web browser, follow these steps.
 2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=heroExtended`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 You can now update the module code as needed.
+
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

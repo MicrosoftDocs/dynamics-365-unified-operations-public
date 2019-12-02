@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -33,104 +33,147 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows whether each feature is available in these products:
+This topic shows a comparison of features available in cloud vs. on-premises for the following applications:
 
-+ Finance and Operations (cloud)
-+ Finance + Operations (on-premises)
+- [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
+- [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
+- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
+- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
 
-The following tables list the product areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
+Information about the [development and administration features](cloud-prem-comparison.md#development-and-administration-features) is included, as well.
 
-## Finance and Operations applications
+The following tables list the application areas. Cloud and on-premises support is listed for the feature as a whole. Where specific features differ from the area overall, the features are listed on a separate line in the Feature column.
 
-| Area | Feature | Cloud | On-premises |
-|---|---|---|---|
-| Compliance and certifications | | Yes | Yes |
-| | SOC 1 Type 1 certification | Yes | No |
-| Cost accounting | | Yes | Yes |
-| | Cost accounting content pack for Power BI | Yes | No |
-| | Cost accounting workspace for mobile app | Yes | No |
-| Cost management | | Yes | Yes |
-| | Cost management content pack for Power BI | Yes | No |
-| Data management and integration | | Yes | Yes |
-| | Configuration-driven extension | Yes | No |
-| | Export data to your own data warehouse | Yes | Yes |
-| | Enable the export of incremental updates to a data entity | Yes | No |
-| | Data integrations | Yes | Yes |
-| Document management | | Yes| Yes |
-| Financial management | | Yes | Yes |
-| Help | | Yes | No |
-| Human resources | | Yes | Yes |
-| Intelligence | | Yes | Yes |
-| | Electronic reporting (ER) | Yes | Yes |
-| | ER: Integration with LCS | Yes | No |
-| | ER: Integration with SharePoint | Yes | No |
-| | ER: Integration with Regulatory Configuration Services (RCS) | Yes | No |
-| | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No | Yes |
-| | Integration with PowerBI.com | Yes | No |
-| | Analytical workspaces | Yes | No |
-| | Intelligent business process: Recommendations | Yes | No |
-| | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools | Yes | No |
-| | SQL Server Reporting Services (SSRS) supports scaling out | Yes | No |
-| | Telemetry is transferred into the cloud | Yes | No |
-| Inventory management | | Yes | Yes |
-| Lifecycle services | | Yes | Yes |
-| | Configurable business processes | Yes | No |
-| Localizations | | Yes | Yes |
-| Manufacturing | | Yes | Yes |
-| Master planning and forecasting | | Yes | Yes |
-| Mobile app, workspaces, and platform | | Yes | Yes |
-| Office integration | | Yes | Yes |
-| Organization administration | | Yes | Yes |
-| Payroll | | Yes | Yes |
-| | Direct deposit | Yes | No |
-| Procurement and sourcing | | Yes | Yes |
-| | Punch-out to external catalog from purchase requisition | Yes | No |
-| | Purchase spend analysis Power BI reports | Yes | No |
-| Product information management | | Yes | Yes |
-| Product master data | | Yes | Yes |
-| Production | | Yes | Yes |
-| | Production performance Power BI reports | Yes | No |
-| Project management and accounting | | Yes | Yes |
-| Sales | | Yes | Yes |
-| | Sales and profitability performance Power BI reports | Yes | No |
-| Security | | Yes | Yes |
-| Service management | | Yes | Yes |
-| Supply chain management | | Yes | Yes |
-| Transportation management | | Yes | Yes |
-| Vendor collaboration | | Yes | No |
-| Warehouse management | | Yes | Yes |
-| | Mobile warehouse app | Yes | Yes |
-| | Warehousing Power BI reports | Yes | No |
-| Web client | | Yes | Yes |
-| | Task recorder - Save or load task recordings from the BPM library | Yes | No |
-| Support | | Yes | Yes |
-| | Access to Support via the Help & Support menu | Yes | No |
+## Dynamics 365 Finance
 
-### Development and administration
+| **Area**             | **Feature**                | **Cloud** | **On-premises** |
+|---------------------|-----------------------------|-----------|-----------------|
+| Compliance and certifications        |                                                                                           | Yes       | Yes             |
+|                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
+| Data management and integration      |                                                                                           | Yes       | Yes             |
+|                                      | Configuration-driven extension                                                            | Yes       | No              |
+|                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | No              |
+|                                      | Data integrations                                                                         | Yes       | Yes             |
+| Document management                  |                                                                                           | Yes       | Yes             |
+| Financial management                 |                                                                                           | Yes       | Yes             |
+| Help                                 |                                                                                           | Yes       | No              |
+| Human resources                      |                                                                                           | Yes       | Yes             |
+| Intelligence                         |                                                                                           | Yes       | Yes             |
+|                                      | Electronic reporting (ER)                                                                 | Yes       | Yes             |
+|                                      | ER: Integration with LCS                                                                  | Yes       | No              |
+|                                      | ER: Integration with SharePoint                                                           | Yes       | No              |
+|                                      | ER: Integration with Regulatory Configuration Services (RCS)                              | Yes       | No              |
+|                                      | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No        | Yes             |
+|                                      | Integration with PowerBI.com                                                              | Yes       | No              |
+|                                      | Integration with PowerBI Desktop                                                          | No        | Yes             |
+|                                      | Analytical workspaces                                                                     | Yes       | No              |
+|                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
+|                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
+|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | No              |
+|                                      | Telemetry is transferred into the cloud                                                   | Yes       | No              |
+| Lifecycle services                   |                                                                                           | Yes       | Yes             |
+|                                      | Configurable business processes                                                           | Yes       | No              |
+| Localizations                        |                                                                                           | Yes       | Yes             |
+| Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
+| Office integration                   |                                                                                           | Yes       | Yes             |
+| Organization administration          |                                                                                           | Yes       | Yes             |
+| Payroll                              |                                                                                           | Yes       | Yes             |
+|                                      | Direct deposit                                                                            | Yes       | No              |
+| Project management and accounting    |                                                                                           | Yes       | Yes             |
+| Security                             |                                                                                           | Yes       | Yes             |
+| Service management                   |                                                                                           | Yes       | Yes             |
+| Web client                           |                                                                                           | Yes       | Yes             |
+|                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
+| Support                              |                                                                                           | Yes       | Yes             |
+|                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
 
-| Area | Feature | Cloud | On-premises |
-|---|---|---|---|
-| Build and test | | Yes | Yes |
-| Extensibility | | Yes | Yes |
-| Monitoring and telemetry | | Yes | Yes |
-| Platform compatibility | | Yes | Yes |
-| Servicing | | Yes | Yes |
-| | Servicing environments | Yes | No |
-| Trace Parser and PerfTimer | | Yes | No |
-| Upgrade | | Yes | Yes |
-| | Upgrade | Yes | No |
-| | Upgrade and support for previous versions | Yes | No |
-| Visual Studio development | | Yes | Yes |
+## Dynamics 365 Supply Chain Management 
 
-### Dynamics 365 Retail 
+| **Area**                | **Feature**             | **Cloud** | **On-premises** |
+|-------------------------|-------------------|-----------|-----------------|
+| Compliance and certifications        |                                                                                           | Yes       | Yes             |
+|                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
+| Cost accounting                      |                                                                                           | Yes       | Yes             |
+|                                      | Cost accounting content pack for Power BI                                                 | Yes       | No              |
+|                                      | Cost accounting workspace for mobile app                                                  | Yes       | No              |
+| Cost management                      |                                                                                           | Yes       | Yes             |
+|                                      | Cost management content pack for Power BI                                                 | Yes       | No              |
+| Data management and integration      |                                                                                           | Yes       | Yes             |
+|                                      | Configuration-driven extension                                                            | Yes       | No              |
+|                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | No              |
+|                                      | Data integrations                                                                         | Yes       | Yes             |
+| Document management                  |                                                                                           | Yes       | Yes             |
+| Help                                 |                                                                                           | Yes       | No              |
+| Intelligence                         |                                                                                           | Yes       | Yes             |
+|                                      | Electronic reporting (ER)                                                                 | Yes       | Yes             |
+|                                      | ER: Integration with LCS                                                                  | Yes       | No              |
+|                                      | ER: Integration with SharePoint                                                           | Yes       | No              |
+|                                      | ER: Integration with Regulatory Configuration Services (RCS)                              | Yes       | No              |
+|                                      | ER: Uses local file system as storage of ER configurations accessible via ER repositories | No        | Yes             |
+|                                      | Integration with PowerBI.com                                                              | Yes       | No              |
+|                                      | Integration with PowerBI Desktop                                                          | No        | Yes             |
+|                                      | Analytical workspaces                                                                     | Yes       | No              |
+|                                      | Intelligent business process: Recommendations                                             | Yes       | No              |
+|                                      | Authoring Power BI reports with OData using Power BI desktop or Excel PowerQuery tools    | Yes       | No              |
+|                                      | SQL Server Reporting Services (SSRS) supports scaling out                                 | Yes       | No              |
+|                                      | Telemetry is transferred into the cloud                                                   | Yes       | No              |
+| Inventory management                 |                                                                                           | Yes       | Yes             |
+| Lifecycle services                   |                                                                                           | Yes       | Yes             |
+|                                      | Configurable business processes                                                           | Yes       | No              |
+| Localizations                        |                                                                                           | Yes       | Yes             |
+| Manufacturing                        |                                                                                           | Yes       | Yes             |
+| Master planning and forecasting      |                                                                                           | Yes       | Yes             |
+| Mobile app, workspaces, and platform |                                                                                           | Yes       | Yes             |
+| Office integration                   |                                                                                           | Yes       | Yes             |
+| Organization administration          |                                                                                           | Yes       | Yes             |
+| Procurement and sourcing             |                                                                                           | Yes       | Yes             |
+|                                      | Punch-out to external catalog from purchase requisition                                   | Yes       | No              |
+|                                      | Purchase spend analysis Power BI reports                                                  | Yes       | No              |
+| Product information management       |                                                                                           | Yes       | Yes             |
+| Product master data                  |                                                                                           | Yes       | Yes             |
+| Production                           |                                                                                           | Yes       | Yes             |
+|                                      | Production performance Power BI reports                                                   | Yes       | No              |
+| Project management and accounting    |                                                                                           | Yes       | Yes             |
+| Sales                                |                                                                                           | Yes       | Yes             |
+|                                      | Sales and profitability performance Power BI reports                                      | Yes       | No              |
+| Security                             |                                                                                           | Yes       | Yes             |
+| Service management                   |                                                                                           | Yes       | Yes             |
+| Supply chain management              |                                                                                           | Yes       | Yes             |
+| Transportation management            |                                                                                           | Yes       | Yes             |
+| Vendor collaboration                 |                                                                                           | Yes       | No              |
+| Warehouse management                 |                                                                                           | Yes       | Yes             |
+|                                      | Mobile warehouse app                                                                      | Yes       | Yes             |
+|                                      | Warehousing Power BI reports                                                              | Yes       | No              |
+| Web client                           |                                                                                           | Yes       | Yes             |
+|                                      | Task recorder - Save or load task recordings from the BPM library                         | Yes       | No              |
+| Support                              |                                                                                           | Yes       | Yes             |
+|                                      | Access to Support via the Help & Support menu                                             | Yes       | No              |
+
+## Dynamics 365 Retail 
+
 To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
-## Dynamics 365 Talent
+## Dynamics 365 Talent 
 
-| Area | Feature | Cloud | On-premises |
-|---|---|---|---|
-| All Talent areas | All Talent features | Yes | No |
+| **Area**         | **Feature**         | **Cloud** | **On-premises** |
+|------------------|---------------------|-----------|-----------------|
+| All Talent areas | All Talent features | Yes       | No              |
 
-## Additional resources
+## Development and administration features
 
-- [Features not implemented in on-premises deployments](features-not-implemented-on-prem.md)
+| **Area**                   | **Feature**                               | **Cloud** | **On-premises** |
+|----------------------------|-------------------------------------------|-----------|-----------------|
+| Build and test             |                                           | Yes       | Yes             |
+| Extensibility              |                                           | Yes       | Yes             |
+| Monitoring and telemetry   |                                           | Yes       | Yes             |
+| Platform compatibility     |                                           | Yes       | Yes             |
+| Servicing                  |                                           | Yes       | Yes             |
+|                            | Servicing environments                    | Yes       | No              |
+| Trace Parser and PerfTimer |                                           | Yes       | No              |
+| Upgrade                    |                                           | Yes       | Yes             |
+|                            | Upgrade                                   | Yes       | No              |
+|                            | Upgrade and support for previous versions | Yes       | No              |
+| Visual Studio development  |                                           | Yes       | Yes             |
+
