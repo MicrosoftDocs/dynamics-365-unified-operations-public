@@ -98,6 +98,8 @@ To learn more about form patterns, see [Form styles and patterns](../../dev-itpr
 
 The product is designed to work on various devices and form factors, from the smallest screens to large screens that have the highest resolution. Our responsive layout engine lets users zoom in to a magnification level of 200 percent (or, in some scenarios, more than 200 percent).
 
+On smartphones and other small screens, the controls and the form layout will responsively adapt to ensure that the core data is favored. These responsive behaviors can also include reducing the number of columns in groups and tabs to a single one, hiding shell elements, and collapsing the Action Pane.
+
 ## Guidance to help developers and customers incorporate accessible thinking in their customizations
 
 To learn more about Microsoft best practices for enabling accessibility, see [Accessibility in forms, products, and controls](../../dev-itpro/user-interface/enable-accessibility.md).
