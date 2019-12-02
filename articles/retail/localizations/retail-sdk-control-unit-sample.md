@@ -5,7 +5,7 @@ title: Sample for Retail POS integration with control units for Sweden (legacy)
 description: This topic is the building and installation guide for the sample for control unit integration for Sweden. 
 author: EvgenyPopovMBS
 manager: Annbe
-ms.date: 02/27/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,10 +57,10 @@ The sample includes the following capabilities:
 - The control code and the manufacturing number of the control unit for a registered transaction are captured from the control unit and saved in the transaction. (This data is also referred to as _fiscal data_.) The fiscal data can be viewed on the **Retail store transactions** page.
 - Custom fields for the control code and the manufacturing number of the control unit can be added to a receipt format, so that you can print the fiscal data for the transaction on a receipt.
 - The fiscal data for a transaction is printed on the **Electronic journal (Sweden)** channel report.
-- If a failure occurs during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, a new transaction can't be started, and the current shift can't be closed. The operator will be asked to try to register the unregistered transaction again in the control unit. If the second attempt fails, the operator can skip the registration, provided that he or she has a special permission. If the operator skips the registration of a transaction in the control unit, information about this event is saved in the transaction instead of the fiscal data.
+- If a failure occurs during the registration of a transaction in the control unit, the fiscal data for the transaction remains blank. In this case, a new transaction can't be started, and the current shift can't be closed. The operator will be asked to try to register the unregistered transaction again in the control unit. If the second attempt fails, the operator can skip the registration, provided that the operator has a special permission. If the operator skips the registration of a transaction in the control unit, information about this event is saved in the transaction instead of the fiscal data.
 
 > [!NOTE]
-> Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available later.
+> Currently, the control unit integration sample doesn't support customer orders. However, a sample that supports customer orders will be available at a later date.
 
 ## Setting up integration with control units
 
