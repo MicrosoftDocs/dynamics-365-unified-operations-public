@@ -5,7 +5,7 @@ title: Cash register functionality for Sweden
 description: This topic provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 06/22/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -71,7 +71,7 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 
    # [Retail 10.0.6 and earlier](#tab/retail-10-0-6)
 
-  For more information about the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see the [Sample for Retail POS integration with control units for Sweden (legacy)](./retail-sdk-control-unit-sample.md#overview-of-integration-with-control-units). 
+  For more information about the integration with control units that is available in Retail versions up to and including Retail 10.0.6, see [Sample for Retail POS integration with control units for Sweden (legacy)](./retail-sdk-control-unit-sample.md#overview-of-integration-with-control-units). 
 
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
