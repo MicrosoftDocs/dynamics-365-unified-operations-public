@@ -1108,8 +1108,6 @@
           href: localizations/emea-eeu-retail-invoices.md
         - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
           href: localizations/emea-eeu-deployment.md
-        - name: Fiscal printer integration sample for Poland
-          href: localizations/emea-pol-fpi-sample.md
         - name: Fiscal registration service integration sample for Czech Republic
           href: localizations/emea-cze-fi-sample.md
       - name: France
@@ -1146,6 +1144,8 @@
         items:
         - name: Customer information management for Poland
           href: localizations/emea-pol-customer-information.md
+        - name: Fiscal printer integration sample for Poland
+          href: localizations/emea-pol-fpi-sample.md
       - name: Sweden
         items:
         - name: Cash register functionality
