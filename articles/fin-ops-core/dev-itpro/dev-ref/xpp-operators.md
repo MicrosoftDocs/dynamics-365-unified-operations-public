@@ -99,7 +99,7 @@ static void Example5()
 ```
 
 ## Arithmetic operators
-You use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (**~**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
+You use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (`~`) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
 
 | Operator   | Description      |
 |------------|------------------|
@@ -216,7 +216,7 @@ info(strFmt("%1", (myTreeNode is Form)));
 
 #### Code example for the is and as keywords
 
-The following code example contains a typical use of the `is` keyword. The `as` keyword is used after the `is` keyword verifies that the `as` keyword will succeed. In this example, the **is** and `as` keywords are uppercase to make them more visible.
+The following code example contains a typical use of the `is` keyword. The `as` keyword is used after the `is` keyword verifies that the `as` keyword will succeed. In this example, the `is` and `as` keywords are uppercase to make them more visible.
 
 ```xpp
 static void IsKeywordExample() 
@@ -243,7 +243,7 @@ Test 2: (!(basec IS DerivedClass)) is true. Good.
 
 ### Object class as a special case
 
-The **Object** class can appear as a special case in inheritance functionality. The compiler bypasses type checking for assignments to and from variables that are declared to be of type **Object**. Some classes inherit from the **Object** class, some classes inherit from another class, and some classes don't inherit from any class. Although the **Dialog** class doesn't inherit from any class, the assignment and call statements in the following code example work. However, if the assignment is **bank4 = dlog3;**, it will fail at compile time, because the **Bank** and **Dialog** classes have no inheritance relationship to each other. The compiler performs only one small validation on assignments to a variable that is declared to be of the **Object** class. The compiler verifies that the item that is being assigned to the **Object** variable is an instance of a class. The compiler doesn't allow an instance of a table buffer to be assigned to the **Object** variable. Additionally, the compiler doesn't allow primitive data types, such as **int** or **str**, to be assigned to the **Object** variable.
+The **Object** class can appear as a special case in inheritance functionality. The compiler bypasses type checking for assignments to and from variables that are declared to be of type **Object**. Some classes inherit from the **Object** class, some classes inherit from another class, and some classes don't inherit from any class. Although the **Dialog** class doesn't inherit from any class, the assignment and call statements in the following code example work. However, if the assignment is `bank4 = dlog3;`, it will fail at compile time, because the **Bank** and **Dialog** classes have no inheritance relationship to each other. The compiler performs only one small validation on assignments to a variable that is declared to be of the **Object** class. The compiler verifies that the item that is being assigned to the **Object** variable is an instance of a class. The compiler doesn't allow an instance of a table buffer to be assigned to the **Object** variable. Additionally, the compiler doesn't allow primitive data types, such as `int` or `str`, to be assigned to the **Object** variable.
 
 ```xpp
 static void ObjectExample()
@@ -263,27 +263,27 @@ All tables inherit directly from the Common system table, unless they explicitly
 
 ### The is and as keywords and extended data types
 
-Each extended data type has an **Extends** property. The style of inheritance that this property controls differs from the style of inheritance that the **is** and `as` keywords are designed for.
+Each extended data type has an **Extends** property. The style of inheritance that this property controls differs from the style of inheritance that the `is` and `as` keywords are designed for.
 
 ## Relational operators
-The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (**!**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
+The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (`!`) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
 
 | Operator | Description     |
 |----------|--------------------------------|
-| like     | The **like** relational operator returns **true** if *expression1* is like *expression2*.  |
-| ==       | The **equal** relational operator returns **true** if both expressions are equal.  |
-| &gt;=    | The **greater than or equal to** relational operator returns **true** if *expression1* is greater than or equal to *expression2*.   |
-| &lt;=    | The **less than or equal to** relational operator returns **true** if *expression1* is less than or equal to *expression2*. |
-| &gt;     | The **greater than** relational operator returns **true** if *expression1* is greater than *expression2*. |
-| &lt;     | The **less than** relational operator returns **true** if *expression1* is less than *expression2*.  |
-| !=       | The **not equal** relational operator returns **true** if *expression1* differs from (that is, if it isn't equal to) *expression2*.                          |
-| &&       | The **and** relational operator returns **true** if both *expression1* and *expression2* are true.  |
-| \|\|       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true. |
-| !        | The **not** or **unary** relational operator negates the expression. It returns **true** if the expression is false and **false** if the expression is true. |
+| `like`   | The **like** relational operator returns **true** if *expression1* is like *expression2*.  |
+| `==`     | The **equal** relational operator returns **true** if both expressions are equal.  |
+| `>=`     | The **greater than or equal to** relational operator returns **true** if *expression1* is greater than or equal to *expression2*.   |
+| `<=`     | The **less than or equal to** relational operator returns **true** if *expression1* is less than or equal to *expression2*.|
+| `>`      | The **greater than** relational operator returns **true** if *expression1* is greater than *expression2*. |
+| `<`      | The **less than** relational operator returns **true** if *expression1* is less than *expression2*.  |
+| `!=`     | The **not equal** relational operator returns **true** if *expression1* differs from (that is, if it isn't equal to) *expression2*.                          |
+| `&&`     | The **and** relational operator returns **true** if both *expression1* and *expression2* are true.  |
+| `||`     | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true. |
+| `!`      | The **not** or **unary** relational operator negates the expression. It returns **true** if the expression is false and **false** if the expression is true. |
 
 ### The like operator
 
-The <strong>like</strong> operator can use <strong>*</strong> as a wildcard character for zero or more characters, and <strong>?</strong> as a wildcard character for one character. The operand can't be longer than 1,000 characters. The <strong>like</strong> operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
+The `like` operator can use `*` as a wildcard character for zero or more characters, and `?` as a wildcard character for one character. The maximum length of the operand is 1,000 characters. The `like` operator is evaluated by the underlying SQL, so the result might differ on different installations. If the expressions that you're comparing contain a file path, you must include four backslashes between each element, as shown in the following example.
 
 ```xpp
 select * from xRefpaths
@@ -310,7 +310,7 @@ today() >= 1\1\1980  // Returns true, because today is later than January 1, 198
 ```
 
 ## Operator precedence
-The order that a compound expression is evaluated in can be important. For example, `(x + y / 100)` gives a different result, depending on whether the addition or the division is done first. You can use parentheses (`()`) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify `(x + y) / 100`. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression `x + y / 100`, the compiler evaluates `y / 100` first. In other words,` `**x + y / 100** is equivalent to `x + (y / 100)`. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
+The order that a compound expression is evaluated in can be important. For example, `(x + y / 100)` gives a different result, depending on whether the addition or the division is done first. You can use parentheses (`()`) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify `(x + y) / 100`. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression `x + y / 100`, the compiler evaluates `y / 100` first. In other words, `x + y / 100` is equivalent to `x + (y / 100)`. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
 
 | Operator groups, in order of precedence                          |                 Operators    |
@@ -322,4 +322,6 @@ The order that a compound expression is evaluated in can be important. For examp
 | Logical (**AND**, **OR**)                                        | `&&` `||`                    |
 | Conditional                                                      | `? :`                        |
 
-Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore, `0&&0 || 1 == 1`, and `1||0&&0 == 0`.
+Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore: 
++ `0 && 0 || 1` is equal to `1`
++ `1 || 0 && 0` is equal to `0`.
