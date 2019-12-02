@@ -71,7 +71,7 @@ In general, Retail is optimized for the internet. The number of round trips from
 
 ## .NET Framework requirements
 
-Retail requires Microsoft .NET Framework 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx). Starting August 1, 2019, it is recommended to install .NET Framework version 4.7.1 or later.
+Retail requires Microsoft .NET Framework 4.7.1 or later for all ClickOnce applications, such as the document routing agent. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx). 
 
 ## Supported Microsoft Office applications
 
