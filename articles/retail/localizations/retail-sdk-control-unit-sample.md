@@ -315,5 +315,12 @@ Follow these steps to create and apply deployable packages that contain Retail c
 
         ---
 
-3. Run **msbuild** for the whole Retail SDK to create deployable packages.
-4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file.
+
+   - Add the following line to include Hardware station extension in the deployable packages:
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll"/>
+        ```
+
+4. Run **msbuild** for the whole Retail SDK to create deployable packages.
+5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
