@@ -82,6 +82,6 @@ between easily through configuration.
 
 ## Additional resources
 
-[Product recommendations overview](product-recommendations-overview.md)
+[Product recommendations overview](../commerce/product-recommendations.md)
 
-[Environment planning](environment-planning.md)
+[Environment planning](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
