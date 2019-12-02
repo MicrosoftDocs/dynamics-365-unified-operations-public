@@ -46,14 +46,14 @@ You must complete the following configuration to use this functionality:
 
 - Add the "Add customer information" operation to screen layouts.
 - Activate the inquiry for customer information.
-- Set up Registration Type for Lottery code
+- Set up registration type for lottery code
 - Set up receipt formats.
 - Add a customer search criterion.
 - Configure retail channel components.
 
 ### Add the "Add customer information" operation to screen layouts
 
-The "Add customer information" operation can be used to add customer information, such as the lottery code, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
+The "Add customer information" operation can be used to add customer information, such as the lottery code, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or entered manually.
 
 On the **Button grids** page, select the button grid where the operation should appear, and open the Button grid designer. Add a new button, and then, in the **Action** field, select **Add customer information**. For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
@@ -63,9 +63,9 @@ If the customer information isn't specified for a sales transaction, an inquiry 
 
 To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
 
-### Set up Registration Type for Lottery code
+### Set up registration type for lottery code
 
-You must to set up the appropriate Registration Type for Lottery code related to Lottery code registration category to allow add Lottery code in POS, for more information about how to work with Registration Id, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
+Set up the appropriate registration type and registration category for the lottery code type to allow adding the lottery code in POS. For more information about how to work with Registration Id, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
 
 > [!WARNING]
 > The VAT Number save error will be gotten in POS if the Registration Type does not be set up.
@@ -123,12 +123,12 @@ The following examples show how to work with customer information in POS for Ita
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
 1. Specify the new customer's attributes. 
-1. Select **Crate a new address**. Specify the new customer's contact information and address.
-1. In the **Lottery code** field, enter the customer's fiscal code.
+1. Select **Create a new address**. Specify new customer's contact information and an address.
+1. In the **Lottery code** field, enter the customer's lottery code.
 1. Save the customer record, and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. In the **Enter customer information** dialog box, select **Yes**, and then select **Copy from transaction customer**.
-1. Verify the customer's fiscal code, and then select **OK**.
+1. Verify the customer's lottery code, and then select **OK**.
 1. Verify that the printed receipt contains the customer's lottery code.
 
 > [!NOTE]
@@ -140,7 +140,7 @@ The following examples show how to work with customer information in POS for Ita
 1. Add items to the cart.
 1. Select **Add customer**, and then select a customer account to add it to the transaction.
 1. Select **Add customer information**, and then select **Copy from transaction customer**.
-1. Verify the customer's fiscal code, and then select **OK**.
+1. Verify the customer's lottery code, and then select **OK**.
 1. Select **Add customer information**, and then select **Clear** to clear the customer information from the transaction.
 1. Select **Add customer information**, and then select **Enter Manually**.
 1. Specify the customer's lottery code, and then select **OK**.
