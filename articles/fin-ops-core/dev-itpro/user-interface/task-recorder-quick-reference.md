@@ -92,7 +92,7 @@ This option allows you to save the task recording as a developer recording.</td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><a href="./media/playback-controls-menu-Playnext-Playall.png"><img src="./media/playback-controls-menu-Playnext-Playall.png" alt="Play next and Play all" class="alignnone size-full wp-image-290321" width="208" height="120" /></a><a href="./media/Playback-controls-menu-Pause.png"><img src="./media/Playback-controls-menu-Pause.png" alt="Pause" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
+<td><a href="./media/playback-controls-menu-Playnext-Playall.png"><img src="./media/playback-controls-menu-Playnext-Playall.png" alt="Play next and Play all" class="alignnone size-full wp-image-290321" width="208" height="120" /></a><a href="./media/playback-controls-menu-Pause.png"><img src="./media/playback-controls-menu-Pause.png" alt="Pause" class="alignnone size-full wp-image-290331" width="208" height="120" /></a></td>
 <td><h3 id="play-next-pending-step">Play next pending step</h3>
 This option will cause Task recorder to execute and record the next pending step, which is indicated by the arrow in the Steps list.
 <h3 id="play-to-selected-step">Play to selected step</h3>
