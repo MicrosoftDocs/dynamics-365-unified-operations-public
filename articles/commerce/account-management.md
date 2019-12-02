@@ -62,7 +62,7 @@ The order details page provides detailed information for each order and is acces
 
 ### User profile page
 
-The user profile page shows user account details, such as user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited. It also shows user preferences that allow the user to opt-in/opt-out from certain features such as Personalization of recommendation lists. 
+The user profile page shows user account details, such as a user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features such as personalization of recommendation lists. 
 
 ### User address page
 
