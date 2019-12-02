@@ -5,7 +5,7 @@ title: X++ operators
 description: This topic describes the operators supported in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -40,13 +40,13 @@ This topic describes the operators supported in X++.
 
 An assignment changes the value of a variable or field. The following table shows the X++ assignment operators. There is no difference between prefix and postfix operators.
 
-| Operator | Description                                                                                      |
-|----------|--------------------------------------------------------------------------------------------------|
-| =        | Assign the expression on the right of the equal sign to the variable on the left.                |
-| +=       | Assign the current variable value plus the expression on the right to the variable on the left.  |
-| ++       | Increment the variable by 1.                                                                     |
-| -=       | Assign the current variable value minus the expression on the right to the variable on the left. |
-| --       | Decrement the variable by 1.                                                                     |
+| Operator   | Description                                                                                      |
+|------------|--------------------------------------------------------------------------------------------------|
+| `=`        | Assign the expression on the right of the equal sign to the variable on the left.                |
+| `+=`       | Assign the current variable value plus the expression on the right to the variable on the left.  |
+| `++`       | Increment the variable by 1.                                                                     |
+| `-=`       | Assign the current variable value minus the expression on the right to the variable on the left. |
+| `--`       | Decrement the variable by 1.                                                                     |
 
 ### Code examples for assignment operators
 
@@ -102,37 +102,37 @@ static void Example5()
 ## Arithmetic operators
 You use arithmetic operators to perform numeric calculations. Most of the operators are binary and take two operands. However, the **not** (**~**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *ArithmeticOperator* *expression2* Syntax for unary operators: *ArithmeticOperator* *expression1*
 
-| Operator | Description                                                                                                                                                                                 |
-|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| &lt;&lt; | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.                                                                                       |
-| &gt;&gt; | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                                                                                           |
-| \*       | The **multiply** operator multiplies *expression1* by *expression2*.                                                                                                                        |
-| /        | The **divide** operator divides *expression1* by *expression2*.                                                                                                                             |
-| DIV      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                                                                                           |
-| MOD      | The **integer remainder** operator returns the remainder of an integer division of *expression1* by *expression2*.                                                                          |
-| ~        | The **not** operator, or unary operator, performs a binary not operation.                                                                                                                   |
-| &        | The **binary AND** operator performs a binary and operation on *expression1* and *expression2*.                                                                                             |
-| ^        | The **binary XOR** operator performs a binary XOR-operation on *expression1* and *expression2*.                                                                                             |
-| &#124;        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                                                                                               |
-| +        | The **plus** operator adds *expression1* to *expression2*.                                                                                                                                  |
-| -        | The **minus** operator subtracts *expression2* from *expression1*.                                                                                                                          |
+| Operator | Description      |
+|----------|----------|
+| `<<` | The **left shift** operator performs *expression2* left shift (multiplication by 2) on *expression1*.                  |
+| `>>` | The **right shift** operator performs *expression2* right shift (division by 2) on *expression1*.                      |
+| \*       | The **multiply** operator multiplies *expression1* by *expression2*.                                               |
+| /        | The **divide** operator divides *expression1* by *expression2*.                                                    |
+| DIV      | The **integer division** operator performs an integer division of *expression1* by *expression2*.                  |
+| MOD      | The **integer remainder** operator returns the remainder of an integer division of *expression1* by *expression2*. |
+| ~        | The **not** operator, or unary operator, performs a binary not operation.                                          |
+| &        | The **binary AND** operator performs a binary and operation on *expression1* and *expression2*.                    |
+| ^        | The **binary XOR** operator performs a binary XOR-operation on *expression1* and *expression2*.                    |
+| `\|` &#124;        | The **binary OR** operator performs a binary or operation on *expression1* and *expression2*.                 |
+| +        | The **plus** operator adds *expression1* to *expression2*.                                                         |
+| -        | The **minus** operator subtracts *expression2* from *expression1*.                                                 |
 | ?        | The **ternary** operator takes three expressions: *expression1* ? *expression2* : *expression3*. If *expression1* is true, *expression2* is returned. Otherwise, *expression3* is returned. |
 
 ### Code examples for arithmetic operators
 
 ```xpp
-int a = 1 << 4; // Perform four left shifts on 1 (1*2*2*2*2). a=16.
-int b = 16 >> 4;  // Perform four right shifts on 16 (16/2/2/2/2). b=1.
-int c = 4 * 5;  // Multiply 4 by 5. c=20.
-int d = 20 / 5;  // Divide 20 by 5. d=4.
+int a = 1 << 4;      // Perform four left shifts on 1 (1*2*2*2*2). a=16.
+int b = 16 >> 4;     // Perform four right shifts on 16 (16/2/2/2/2). b=1.
+int c = 4 * 5;       // Multiply 4 by 5. c=20.
+int d = 20 / 5;      // Divide 20 by 5. d=4.
 int e = 100 div 21;  // Return the integer division of 100 by 21. e=4 (4*21 = 84, remainder 16).
 int f = 100 mod 21;  // Return the remainder of the integer division of 100 by 21. f=16.
-int g = ~1;  // Binary negate 1 (all bits are reversed). g=-2.
-int h = 1 & 3;  // Binary AND. Return the bits that are in common in the two integers. h=1.
-int i = 1 | 3;  // Binary OR. Return the bits that are set in either 1 or 3. i=3.
-int j = 1 ^ 3;  // Binary XOR. Return the bits that are set in 1 and NOT set in 3, and vice versa. j=2.
-int k = 1 + 3;  // Add 1 and 3. k=4.
-int l = 3 - 1;  // Subtract 1 from 3. l=2.
+int g = ~1;          // Binary negate 1 (all bits are reversed). g=-2.
+int h = 1 & 3;       // Binary AND. Return the bits that are in common in the two integers. h=1.
+int i = 1 | 3;       // Binary OR. Return the bits that are set in either 1 or 3. i=3.
+int j = 1 ^ 3;       // Binary XOR. Return the bits that are set in 1 and NOT set in 3, and vice versa. j=2.
+int k = 1 + 3;       // Add 1 and 3. k=4.
+int l = 3 - 1;       // Subtract 1 from 3. l=2.
 int m = (400 > 4) ? 1 : 5;  // If 400>4, 1 is returned. Otherwise, 5 is returned. Because 400>4, 1 is returned. m=1.
 ```
 
@@ -269,17 +269,17 @@ Each extended data type has an **Extends** property. The style of inheritance th
 ## Relational operators
 The following table lists the relational operators that can be used in X++. Most of the operators are binary and take two operands. However, the **not** (**!**) operator is unary and takes only one operand. Syntax for binary operators: *expression1* *relationalOperator* *expression2* Syntax for unary operators: *relationalOperator* *expression1*
 
-| Operator | Description                                                                                                                                                  |
+| Operator | Description     |
 |----------|--------------------------------|
-| like     | The **like** relational operator returns **true** if *expression1* is like *expression2*.                                                                    |
-| ==       | The **equal** relational operator returns **true** if both expressions are equal.                                                                            |
-| &gt;=    | The **greater than or equal to** relational operator returns **true** if *expression1* is greater than or equal to *expression2*.                            |
-| &lt;=    | The **less than or equal to** relational operator returns **true** if *expression1* is less than or equal to *expression2*.                                  |
-| &gt;     | The **greater than** relational operator returns **true** if *expression1* is greater than *expression2*.                                                    |
-| &lt;     | The **less than** relational operator returns **true** if *expression1* is less than *expression2*.                                                          |
+| like     | The **like** relational operator returns **true** if *expression1* is like *expression2*.  |
+| ==       | The **equal** relational operator returns **true** if both expressions are equal.  |
+| &gt;=    | The **greater than or equal to** relational operator returns **true** if *expression1* is greater than or equal to *expression2*.   |
+| &lt;=    | The **less than or equal to** relational operator returns **true** if *expression1* is less than or equal to *expression2*. |
+| &gt;     | The **greater than** relational operator returns **true** if *expression1* is greater than *expression2*. |
+| &lt;     | The **less than** relational operator returns **true** if *expression1* is less than *expression2*.  |
 | !=       | The **not equal** relational operator returns **true** if *expression1* differs from (that is, if it isn't equal to) *expression2*.                          |
-| &&       | The **and** relational operator returns **true** if both *expression1* and *expression2* are true.                                                           |
-| \|\|       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true.                                              |
+| &&       | The **and** relational operator returns **true** if both *expression1* and *expression2* are true.  |
+| \|\|       | The **or** relational operator returns **true** if *expression1* or *expression2* is true, or if both are true. |
 | !        | The **not** or **unary** relational operator negates the expression. It returns **true** if the expression is false and **false** if the expression is true. |
 
 ### The like operator
@@ -314,13 +314,13 @@ today() >= 1\1\1980  // Returns true, because today is later than January 1, 198
 The order that a compound expression is evaluated in can be important. For example, **(x + y / 100)** gives a different result, depending on whether the addition or the division is done first. You can use parentheses (**()**) to explicitly tell the compiler how it should evaluate an expression. For example, you can specify **(x + y) / 100**. If you don't explicitly tell the compiler the order that you want operations to be done in, the order is based on the precedence that is assigned to the operators. For example, the division operator has higher precedence than the addition operator. Therefore, for the expression **x + y / 100**, the compiler evaluates **y / 100** first. In other words,` `**x + y / 100** is equivalent to **x + (y / 100)**. To make your code easy to read and maintain, be explicit. Use parentheses to indicate which operators should be evaluated first. The following table lists the operators in order of precedence. The higher an operator appears in the table, the higher its precedence. Operators that have higher precedence are evaluated before operators that have lower precedence. Note that the operator precedence of X++ isn't the same as the operator precedence of other languages, such as C\# and Java.
 
 
-|                             Operators, in order of precedence                              |                 Syntax                 |
-|--------------------------------------------------------------------------------------------|----------------------------------------|
-|                                           Unary                                            |                 - ~ !                  |
-| Multiplicative, shift, bitwise <strong>AND</strong>, bitwise exclusive <strong>OR</strong> |    \* / % DIV &lt;&lt; &gt;&gt; & ^    |
-|                      Additive, bitwise inclusive <strong>OR</strong>                       |                  + –                   |
-|                                    Relational, equality                                    | &lt; &lt;= == != &gt; &gt;= like as is |
-|                    Logical (<strong>AND</strong>, <strong>OR</strong>)                     |            && &#124;&#124;             |
-|                                        Conditional                                         |                  ? :                   |
+| Operators, in order of precedence                                |                 Syntax                 |
+|------------------------------------------------------------------|----------------------------------------|
+| Unary                                                            | - ~ !                                  |
+| Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `\* / % DIV &lt;&lt; &gt;&gt; & ^ `    |
+| Additive, bitwise inclusive **OR**                               | + –                                    |
+| Relational, equality                                             | &lt; &lt;= == != &gt; &gt;= like as is |
+| Logical (**AND**, **OR**)                                        | && &#124;&#124;                        |
+| Conditional                                                      | ? :                                    |
 
-Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, **&&** (logical **AND**) and **||** (logical **OR**) have the same precedence, and are evaluated from left to right. Therefore, **0&&0||1 == 1**, and **1||0&&0 == 0**.
+Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore, `0&&0 || 1 == 1`, and `1||0&&0 == 0`.
