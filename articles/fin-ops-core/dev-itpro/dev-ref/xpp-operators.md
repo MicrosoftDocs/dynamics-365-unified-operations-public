@@ -319,7 +319,7 @@ The order that a compound expression is evaluated in can be important. For examp
 | Multiplicative, shift, bitwise **AND**, bitwise exclusive **OR** | `* / % DIV << >> & ^ `       |
 | Additive, bitwise inclusive **OR**                               | `+ –`                        |
 | Relational, equality                                             | `< <= == != > >= like as is` |
-| Logical (**AND**, **OR**)                                        | `&& ||`                      |
+| Logical (**AND**, **OR**)                                        | `&&` `||`                    |
 | Conditional                                                      | `? :`                        |
 
 Operators on the same line have equal precedence. If an expression includes more than one of these operators, it's evaluated from left to right, unless assignment operators are used. (Assignment operators are evaluated from right to left.) For example, `&&` (logical `AND`) and `||` (logical `OR`) have the same precedence, and are evaluated from left to right. Therefore, `0&&0 || 1 == 1`, and `1||0&&0 == 0`.
