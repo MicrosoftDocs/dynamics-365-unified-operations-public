@@ -534,6 +534,14 @@ The migration process should consist of the following steps:
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsSweden" />
     ```
+    
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file.
+
+    - Add the following lines to include the CRT extensions in the deployable packages.
+
+    ``` xml
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll" />
+    ```
 
 ### Update Hardware station
 
@@ -571,6 +579,21 @@ The migration process should consist of the following steps:
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.CleanCashSample" />
         ```
+
+
+3. Make the following changes in the **BuildTools\\Customization.settings** package customization configuration file.
+
+    - Remove the following lines to exclude legacy Hardware station extension in the deployable packages.
+
+    ``` xml 
+     <ISV_CommerceRuntime_CustomizableFileInclude="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.Extension.FiscalRegisterSample.dll" />
+    ```
+
+    - Add the following line to include the Hardware station extension in the deployable packages.
+
+    ``` xml
+    <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
+    ```
 
 ### Update Modern POS
 
