@@ -517,7 +517,7 @@ The migration process should consist of the following steps:
 
 ### Migration in production environment
 
-### Update CRT
+#### Update CRT
 
 1. Remove the legacy CRT extension in the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder:
 
@@ -543,7 +543,7 @@ The migration process should consist of the following steps:
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.CleanCashSample.dll" />
     ```
 
-### Update Hardware station
+#### Update Hardware station
 
 1. Remove the legacy Hardware station extension by modifying the **HardwareStation.Extension.config** configuration file:
 
@@ -595,7 +595,7 @@ The migration process should consist of the following steps:
     <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.CleanCashSample.dll" />
     ```
 
-### Update Modern POS
+#### Update Modern POS
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
 
@@ -624,7 +624,7 @@ The migration process should consist of the following steps:
       }
       ```
 
-### Update Cloud POS
+#### Update Cloud POS
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
 
@@ -653,5 +653,7 @@ The migration process should consist of the following steps:
           ]
       }
       ```
+
+#### Create deployable packages
 
 Run msbuild for the whole Retail SDK to create deployable packages. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
