@@ -47,7 +47,7 @@ You can set up the customer credit groups on the **Credit management > Customer 
 
 - Enter the **Credit limit to date**, which is the date that the credit limit expires. Customer credit groups must have expiration dates.
 
-- Select **Yes** to use the **days overdue** for each customer in the group when the credit rules are processed.
+- Select **Yes** to use the **Days overdue** rule for every customer in the group when the credit rules are processed. If you select **No**, then the **Days overdue** rule will only be applied to the invoice customer on the sales order that is being processed.
 
 After the customer credit group has been set up, you can add customers to the group by specifying their legal entity and customer account ID. When adding a new customer to the customer credit group, the system will search for the same customer account across all legal entities and prompt you to add them to the customer credit group.
 
