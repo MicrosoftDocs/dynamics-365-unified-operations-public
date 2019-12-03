@@ -82,12 +82,12 @@ The following Microsoft Office applications are supported:
 
 ## Retail client components performance testing
 
-It is critical to perform proper performance testing prior to going live in production.  The following are considered minimum system requirements for applications to function.  To achieve desired performance, take into account concepts like data volumes, transactional load per hour, and customization impact.  Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
+It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
 ## Retail Modern POS for Windows requirements
 
 > [!NOTE]
-> - If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available (It is recommended to have no less than 20 GB of disk space available). An offline database for Retail Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
+> - If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available. It is recommended to have no less than 20 GB of disk space available. An offline database for Retail Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
 > - Starting August 1, 2019, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported Windows operating systems
@@ -133,7 +133,7 @@ It is critical to perform proper performance testing prior to going live in prod
 
     - Windows 8.1 Update 1 Professional, Enterprise, and Embedded editions.
     - Windows 10 Pro, Enterprise, Enterprise LTSB, and IOT Enterprise editions.
-    - Windows Server 2012 R2 and Windows Server 2016 (Note that Windows Server 2012 R2 is out of mainstream support at this time).
+    - Windows Server 2012 R2 and Windows Server 2016 (note that Windows Server 2012 R2 is out of mainstream support at this time).
     - It is not recommended to use Retail hardware station and other Retail components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
 
 ### Minimum system requirements
@@ -173,22 +173,22 @@ Take note that the minimum system requirements listed below are the bare minimum
 > The following are the minimum system requirements for Retail Store Scale Unit.  Both these and the recommended requirements are the minimum possible for testing and basic functionality.  It is crucial to perform performance testing and validate that the hardware used for Retail Store Scale Unit meets expectations.
 
 - 4 GB of RAM
-- 1.6 GHz i5 (or equivalent) minimum CPU speed per core (Two cores are the minimum.)
-- At least 15 GB of free space (The channel database can require a large amount of space.)
+- 1.6 GHz i5 (or equivalent) minimum CPU speed per core (2 cores are the minimum).
+- At least 15 GB of free space (the channel database can require a large amount of space).
 
 ### Recommended system requirements
 
 - 6 GB of RAM
-- 2.4 GHz i7 (or equivalent) minimum CPU speed per core (Four cores are recommended.)
-- At least 20 GB of free space (The channel database can require a large amount of space.)
+- 2.4 GHz i7 (or equivalent) minimum CPU speed per core (4 cores are recommended).
+- At least 20 GB of free space (the channel database can require a large amount of space).
 
 It would be in an organization's best interest to also take the following items into consideration when determining personal hardware needs:
 
-- Number of physical network ports (More ports enhances throughput per second.)
-- SQL Server log flush size (This directly impacts SQL Server performance.)
-- Data read and write capabilities (This directly impacts SQL Server performance.)
-- Number of CPU(s) core, number of simultaneous threads per core, and speed per core (This impacts overall throughput of the system.)
-- Whether load balancing will be required
+- Number of physical network ports (more ports enhances throughput per second).
+- SQL Server log flush size (this directly impacts SQL Server performance).
+- Data read and write capabilities (this directly impacts SQL Server performance).
+- Number of CPU(s) core, number of simultaneous threads per core, and speed per core (this impacts overall throughput of the system).
+- Whether load balancing will be required.
 
 ## Connector requirements
 
@@ -206,9 +206,9 @@ It would be in an organization's best interest to also take the following items 
 
 ### Minimum system requirements
 
-- 2 GB of RAM (Four GB of RAM are recommended.)
-- 1.6 GHz peak CPU speed per core (Two cores are the minimum.)
-- At least 10 GB of free space (The channel database can require a large amount of space.)
+- 2 GB of RAM (4 GB of RAM are recommended).
+- 1.6 GHz peak CPU speed per core (2 cores are the minimum).
+- At least 10 GB of free space (the channel database can require a large amount of space).
 
 ## Requirements for development on local VMs
 
