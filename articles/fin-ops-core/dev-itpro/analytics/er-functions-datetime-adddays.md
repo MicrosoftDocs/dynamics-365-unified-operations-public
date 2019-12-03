@@ -2,7 +2,7 @@
 # required metadata
 
 title: ADDDAYS ER function
-description: This topic provides information about how the ADDDAYS ER function is used.
+description: This topic provides information about how the ADDDAYS Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/03/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ADDDAYS">ADDDAYS Function</a> 
+# <a name="ADDDAYS">ADDDAYS ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ADDDAYS` function calculates the `DateTime` value before or after the specified number of days.
+The `ADDDAYS` function calculates a *DateTime* value that is the specified number of days before or after a specified start date.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ ADDDAYS (datetime, days)
 
 ## Arguments
 
-`datetime` : *DateTime*
+`datetime`: *DateTime*
 
-A datetime that represents the starting date.
+A date/time value that represents the start date.
 
-`days` : *Integer*
+`days`: *Integer*
 
-The number of days before or after datetime.
+The number of days before or after `datetime`.
 
-## Returns
+## Return values
 
 *DateTime*
 
-The result datetime value.
+The resulting date/time value.
 
 ## Usage notes
 
-A positive value for days yields a future date. A negative value yields a past date.
+A positive value for `days` yields a future date. A negative value yields a past date.
 
 ## Example 1
 
