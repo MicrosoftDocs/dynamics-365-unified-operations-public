@@ -5,7 +5,7 @@ title: Service update availability
 description: This topic provides information about the different release options.
 author: meeramahabala
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
