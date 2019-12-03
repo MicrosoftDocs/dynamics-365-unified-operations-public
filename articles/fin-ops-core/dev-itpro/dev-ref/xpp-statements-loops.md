@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: X++ statements
+title: Comments, using, and print statements
 description: This topic describes statements in X++.
 author: robinarh
 manager: AnnBe
-ms.date: 08/16/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# X++ statements
+# Comments, using, and print statements
 
 [!include [banner](../includes/banner.md)]
 
