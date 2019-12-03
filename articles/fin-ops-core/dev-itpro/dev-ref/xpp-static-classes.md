@@ -5,7 +5,7 @@ title: X++ static classes
 description: This topic describes static classes in X++.
 author: RobinARH
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -90,7 +90,7 @@ public class Singleton
 
     static void TypeNew()
     {
-    instance = new Singleton();
+        instance = new Singleton();
     }
 
     public static Singleton Instance()
