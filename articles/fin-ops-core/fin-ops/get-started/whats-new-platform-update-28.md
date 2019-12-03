@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
+# ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
