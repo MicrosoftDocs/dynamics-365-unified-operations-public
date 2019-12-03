@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Publish groups
-description: This topic describes why, when, and how to use publish groups within the e-commerce authoring toolset.
+title: Work with publish groups
+description: This topic describes why, when, and how to use the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
 ms.date: 12/02/2019
@@ -32,12 +32,22 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes why, when, and how to use publish groups within the e-commerce authoring toolset.
+This topic describes why, when, and how to use the publish groups feature in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-E-commerce websites constantly update content throughout the year, and often publish in batches around holidays, seasons, or their own promotional launch events.  These updates often require groups of website content (pages, images, fragments, templates, etc.) to be staged, validated, and concurrently published in a single action.  Grouping items into logical sets that need to publish together, each set with its own lifecycle, provides many advantages to web producers.  These groupings, referred to as ‘publish groups’, allow authors to track a whole set of updates as its own author-able, testable, and publishable entity.  Authors can preview broad updates within a staged publish group without affecting the live site or other self-contained publish groups.  Authors can then schedule the publish action to simultaneously publish all items contained within the publish group to the live site.  This is incredibly important for many enterprise level companies that generate considerable annual revenue around event-based site update milestones.  Slow or invalidated content rollouts can have big opportunity costs when they don’t go smoothly, and publish groups provide a solution to ensure launches are organized, validated, and publish on-time.  Large or small, publish groups and scheduled publish features provide a valuable tool set for authors to organize and simplify ongoing site update tasks.
 
+E-commerce websites are constantly updated with new content throughout the year, and updates are often published in batches around busy e-commerce events such as holidays, seasonal marketing campaigns, or promotional launches. These updates often require groups of website content (pages, images, fragments, templates, etc.) to be staged, validated, and concurrently published in a single action. 
 
+Grouping items into logical sets that need to publish together, each set with its own lifecycle, provides many advantages to site authors. These groupings, referred to in Commerce as "publish groups," enable site authors to track a whole set of updates as its own author-able, testable, and publishable entity. 
+
+Authors can preview broad updates within a staged publish group without affecting the live site or other self-contained publish groups.  
+Authors can then schedule the publish action to simultaneously publish all items contained within the publish group to the live site.  
+
+This is incredibly important for many enterprise level companies that generate considerable annual revenue around event-based site update milestones.  
+
+Slow or invalidated content rollouts can have big opportunity costs when they don’t go smoothly, and publish groups provide a solution to ensure launches are organized, validated, and publish on-time.  
+
+Large or small, publish groups and scheduled publish features provide a valuable tool set for authors to organize and simplify ongoing site update tasks.
 
 ## When to use publish groups
 
@@ -69,6 +79,7 @@ You can select your publish group context in one of two ways:
 
   >[!Note]
   >The "Live site" context is the default view where you can view and make changes directly to your website without using a publish group. The "Live site" context  represents the latest direct updates to the published version of your site.
+
 * The second option is to simply click on the name of the publish group in the list view shown by selecting **Publish groups** from the left navigation menu.  This will also set the publish group context in the left navigation context control mentioned above.
 
 Once you have set your context, which will show either "Live site" or the name of your chosen publish group in the left navigation menu, you will be operating within that context for previewing and editing site content. 
