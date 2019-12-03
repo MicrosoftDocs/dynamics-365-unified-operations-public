@@ -121,7 +121,6 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
-
 ### Configure fiscal integration
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
@@ -132,9 +131,9 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 ## Deployment guidelines for cash registers for Sweden
 
-This deployment guide shows how to enable the Dynamics 365 Retail localization for Sweden. The localization is a part of the Retail software development kit (SDK), for information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md). 
+This deployment guide shows how to enable the Dynamics 365 Retail localization for Sweden. The localization is a part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md). 
 
-This sample consists of extensions for CRT, POS and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet. Follow these steps to set up a development environment so that you can test and extend the sample.
+This sample consists of extensions for CRT, POS, and Hardware station. To run this sample, you must modify and build the CRT and Hardware station projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet. Follow these steps to configure a development environment so that you can test and extend the sample. You also need to complete all the required setup tasks that are described in the [Setting up integration with control units](#setting-up-integration-with-control-units) section.
 
 ### Enable Commerce runtime extensions
 
@@ -263,7 +262,7 @@ To enable the registration process, follow these steps to set up Retail Headquar
 
 ### Production environment
 
-The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+The above procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder.
 
@@ -310,7 +309,6 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 4. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 5. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-6. Complete all the required setup tasks that are described in the [Set up Retail for Sweden](#set-up-retail-for-sweden) section.
 
 ## Design of extensions
 
