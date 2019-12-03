@@ -5,7 +5,7 @@ title: Deploy a new environment
 description: This topic explains how to deploy a new environment using the self-service deployment experience.
 author: manado
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ This topic walks through the process of deploying sandbox (Tier 2 and above) and
 8. Specify **two user email addresses** that will receive **notifications** related to this environment. These users are in addition to the users who are already on the project team (such as an ISV or a partner).
 9. Select the **email address** of the **user** that will be set as the **system administrator** in the product.
 10. After you validate the configurations, click **Submit** to trigger the deployment.
-11. If you plan to use Retail channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md)
+11. If you plan to use Retail channels, you must also [Initialize Retail Cloud Scale Unit](initialize-retail-channels.md).
 
 The environment deployment starts immediately and could take anywhere between **1-2 hours** to complete. 
 
