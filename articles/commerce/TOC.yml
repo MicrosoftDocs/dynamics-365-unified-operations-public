@@ -80,6 +80,8 @@
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+          - name: Finance and Operations, Enterprise edition 7.3
+            href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
