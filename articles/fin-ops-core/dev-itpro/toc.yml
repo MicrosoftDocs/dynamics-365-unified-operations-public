@@ -926,6 +926,8 @@
           href: lifecycle-services/whats-new-lcs.md
         - name: Known issues
           href: lifecycle-services/known-issues.md
+        - name: Removed or deprecated features in Lifecycle Services (LCS)
+          href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
       - name: Subscription estimator
