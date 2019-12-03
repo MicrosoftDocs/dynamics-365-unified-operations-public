@@ -48,8 +48,10 @@ The X++ language syntax provides two composite types: arrays and containers. The
 
 The constructor for every collection class except **Struct** takes a type parameter that is an element of the **Types** system enum. The collection instance can store items of that type only. The **Types::AnyType** enum element is a special case that can't be used to construct a collection object, such as a **Set** object. The **null** value can't be stored as an element in a **Set** object. Additionally, **null** can't be a key in a **Map** object. You can iterate through a collection object by using an iterator or enumerator. Here are typical examples that show how you can obtain an iterator.
 
-    new MapIterator(myMap)
-    myMap.getEnumerator()
+```xpp
+new MapIterator(myMap)
+myMap.getEnumerator()
+```
 
 For **Set** objects, if any elements are added or removed after an iterator is created, the iterator instance can no longer be used to read from or step through the collection. 
 

@@ -44,19 +44,27 @@ The **Global::error** method is often the best way to write diagnostic informati
 
 You use the **throw** keyword to throw an **Exception** enum value. For example, the following statement throws an error exception.
 
-    throw Exception::error;
+```xpp
+throw Exception::error;
+```
 
 Instead of throwing an enum value, a best practice is to use the output of the **Global::error** method as the operand for **throw**.
 
-    throw Global::error("The parameter value is invalid.");
+```xpp
+throw Global::error("The parameter value is invalid.");
+```
 
 The **Global::error** method can automatically convert a label into the corresponding text. This functionality helps you write code that can be localized more easily.
 
-    throw Global::error("@SYS98765");
+```xpp
+throw Global::error("@SYS98765");
+```
 
 The static methods on the **Global** class can be called without the **Global::** prefix. For example, the **Global::error** method can be called like this.
 
-    error("My message.");
+```xpp
+error("My message.");
+```
 
 ## try, catch, finally, and retry statements
 
@@ -71,22 +79,24 @@ The <strong>retry</strong> statement can be written only in a <strong>catch</str
 > [!NOTE] 
 > You must make sure that your **retry** statements don't cause an infinite loop. As a best practice, the **try** block should include a variable that you can test to find out whether you're in a loop.
 
-    try 
-    { 
-        // Code here.
-    }
-    catch (Exception::Numeric) 
-    { 
-        info("Caught a Numeric exception."); 
-    }
-    catch 
-    { 
-        info("Caught an exception."); 
-    }
-    finally
-    {
-        // Executed no matter how the try block exits.
-    }
+```xpp
+try 
+{ 
+    // Code here.
+}
+catch (Exception::Numeric) 
+{ 
+    info("Caught a Numeric exception."); 
+}
+catch 
+{ 
+    info("Caught an exception."); 
+}
+finally
+{
+    // Executed no matter how the try block exits.
+}
+```
 
 ### The system exception handler
 
@@ -116,10 +126,12 @@ This section describes some **Global** class methods in more detail. These class
 
 The following code shows how the **error** method is declared.
 
-    static Exception error
-        (SysInfoLogStr txt,
-        URL helpURL = '',
-        SysInfoAction _sysInfoAction = null)
+```xpp
+static Exception error
+    (SysInfoLogStr txt,
+    URL helpURL = '',
+    SysInfoAction _sysInfoAction = null)
+```
 
 The return type is the **Exception::Error** enum value. The **error** method doesn't throw an exception. It just provides an enum value that can be used in a **throw** statement. The **throw** statement throws the exception. Here are descriptions of the parameters for the **error** method. Only the first parameter is required.
 
@@ -145,209 +157,219 @@ If an exception is thrown inside a transaction, the transaction is automatically
 
 The following code example shows exceptions in the Infolog.
 
-    // This example shows that a direct throw of Exception::Error does not
-    // display a message in the Infolog. This is why we recommend the 
-    // Global::error method. 
-    static void TryCatchThrowError1Job(Args _args)
+```xpp
+// This example shows that a direct throw of Exception::Error does not
+// display a message in the Infolog. This is why we recommend the 
+// Global::error method. 
+static void TryCatchThrowError1Job(Args _args)
+{
+/***
+    The 'throw' does not directly add a message to the Infolog.
+    The exception is caught.
+***/    
+    try
     {
-    /***
-      The 'throw' does not directly add a message to the Infolog.
-      The exception is caught.
-    ***/    
-        try
-        {
-            info("In the 'try' block. (j1)");
-            throw Exception::Error;
-        }
-        catch (Exception::Error)
-        {
-            info("Caught 'Exception::Error'.");
-        }
-
-    /**********  Actual Infolog output
-    Message (03:43:45 pm)
-    In the 'try' block. (j1)
-    Caught 'Exception::Error'.
-    **********/
+        info("In the 'try' block. (j1)");
+        throw Exception::Error;
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+    }
+
+/**********  Actual Infolog output
+Message (03:43:45 pm)
+In the 'try' block. (j1)
+Caught 'Exception::Error'.
+**********/
+}
+```
 
 ### Using the error method to write exception information to the Infolog
 
 The following code example uses the **error** method to write exception information to the Infolog.
 
-    // This example shows that the use of the Global::error method 
-    // is a reliable way to display exceptions in the Infolog. 
-    static void TryCatchGlobalError2Job(Args _args)
-    {
-        /***
-        The 'Global::error()' does directly add a message to the Infolog.
-        The exception is caught.
-        ***/
-        try
-        {
-            info("In the 'try' block. (j2)");
-            throw Global::error("Written to the Infolog.");
-        }
-        catch (Exception::Error)
-        {
-            info("Caught 'Exception::Error'.");
-        }
-
-    /***  Infolog output
-    Message (03:51:44 pm)
-    In the 'try' block. (j2)
-    Written to the Infolog.
-    Caught 'Exception::Error'.
+```xpp
+// This example shows that the use of the Global::error method 
+// is a reliable way to display exceptions in the Infolog. 
+static void TryCatchGlobalError2Job(Args _args)
+{
+    /***
+    The 'Global::error()' does directly add a message to the Infolog.
+    The exception is caught.
     ***/
+    try
+    {
+        info("In the 'try' block. (j2)");
+        throw Global::error("Written to the Infolog.");
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+    }
+
+/***  Infolog output
+Message (03:51:44 pm)
+In the 'try' block. (j2)
+Written to the Infolog.
+Caught 'Exception::Error'.
+***/
+}
+```
 
 ### Handling a CLRError
 
 The following code example handles a **CLRError** exception.
 
-    // This example shows that a CLRError exception is not displayed 
-    // in the Infolog unless you catch the exception and manually
-    // call the info method. The use of the CLRInterop::getLastException
-    // method is also demonstrated. 
-    static void TryCatchCauseCLRError3Job(Args _args)
+```xpp
+// This example shows that a CLRError exception is not displayed 
+// in the Infolog unless you catch the exception and manually
+// call the info method. The use of the CLRInterop::getLastException
+// method is also demonstrated. 
+static void TryCatchCauseCLRError3Job(Args _args)
+{
+    /***
+    The 'netString.Substring(-2)' causes a CLRError,
+    but it does not directly add a message to the Infolog.
+    The exception is caught.
+    ***/
+    System.String netString = "Net string.";
+    System.Exception netExcepn;
+    try
     {
-        /***
-        The 'netString.Substring(-2)' causes a CLRError,
-        but it does not directly add a message to the Infolog.
-        The exception is caught.
-        ***/
-        System.String netString = "Net string.";
-        System.Exception netExcepn;
-        try
-        {
-            info("In the 'try' block. (j3)");
-            netString.Substring(-2); // Causes CLR Exception.
-        }
-        catch (Exception::Error)
-        {
-            info("Caught 'Exception::Error'.");
-        }
-        catch (Exception::CLRError)
-        {
-            info("Caught 'Exception::CLRError'.");
-            netExcepn = CLRInterop::getLastException();
-            info(netExcepn.ToString());
-        }
-
-    /**********  Actual Infolog output (truncated for display)
-    Message (03:55:10 pm)
-    In the 'try' block. (j3)
-    Caught 'Exception::CLRError'.
-    System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> 
-        System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
-    Parameter name: startIndex
-       at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
-       at System.String.Substring(Int32 startIndex)
-       at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName, 
-       Int32 argsLength, ObjectWrapper** arguments, Boolean* argsAreByRef, Boolean* isException)
-    **********/
+        info("In the 'try' block. (j3)");
+        netString.Substring(-2); // Causes CLR Exception.
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+    }
+    catch (Exception::CLRError)
+    {
+        info("Caught 'Exception::CLRError'.");
+        netExcepn = CLRInterop::getLastException();
+        info(netExcepn.ToString());
+    }
+
+/**********  Actual Infolog output (truncated for display)
+Message (03:55:10 pm)
+In the 'try' block. (j3)
+Caught 'Exception::CLRError'.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> 
+    System.ArgumentOutOfRangeException: StartIndex cannot be less than zero.
+Parameter name: startIndex
+    at System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+    at System.String.Substring(Int32 startIndex)
+    at ClrBridgeImpl.InvokeClrInstanceMethod(ClrBridgeImpl* , ObjectWrapper* objectWrapper, Char* pszMethodName, 
+    Int32 argsLength, ObjectWrapper** arguments, Boolean* argsAreByRef, Boolean* isException)
+**********/
+}
+```
 
 ### Using a retry statement
 
 The following code example uses a **retry** statement.
 
-    // This example shows how to use the retry statement. The print
-    // statements are included because retry causes earlier Infolog 
-    // messages to be erased. 
-    static void TryCatchRetry4Job(Args _args)
+```xpp
+// This example shows how to use the retry statement. The print
+// statements are included because retry causes earlier Infolog 
+// messages to be erased. 
+static void TryCatchRetry4Job(Args _args)
+{
+    /***
+    Demonstration of 'retry'. The Infolog output is partially erased
+    by 'retry', but the Print window is fully displayed.
+    ***/
+    Exception excepnEnum;
+    int nCounter = 0;
+    try
     {
-        /***
-        Demonstration of 'retry'. The Infolog output is partially erased
-        by 'retry', but the Print window is fully displayed.
-        ***/
-        Exception excepnEnum;
-        int nCounter = 0;
-        try
+        info("        .");
+        print("        .");
+        info("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
+        print("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
+        nCounter++;
+        if (nCounter >= 3) // Prevent infinite loop.
         {
-            info("        .");
-            print("        .");
-            info("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
-            print("In the 'try' block, [" + int2str(nCounter) + "]. (j4)");
-            nCounter++;
-            if (nCounter >= 3) // Prevent infinite loop.
-            {
-                info("---- Will now throw a warning, which is not caught.");
-                print("---- Will now throw a warning, which is not caught.");
-                throw Global::warning("This warning will not be caught. [" + int2str(nCounter) + "]");
-            }
-            else
-            {
-                info("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
-                print("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
-            }
-            excepnEnum = Global::error("This error message is written to the Infolog.");
-            throw excepnEnum;
+            info("---- Will now throw a warning, which is not caught.");
+            print("---- Will now throw a warning, which is not caught.");
+            throw Global::warning("This warning will not be caught. [" + int2str(nCounter) + "]");
         }
-        catch (Exception::Error)
+        else
         {
-            info("Caught 'Exception::Error'.");
-            print("Caught 'Exception::Error'.");
-            retry;
+            info("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
+            print("Did not throw a warning this loop. [" + int2str(nCounter) + "]");
         }
-        info("End of job.");
-        print("End of job.");
-
-    /**********  Actual Infolog output
-    Message (04:33:56 pm)
-            .
-    In the 'try' block, [2]. (j4)
-    ---- Will now throw a warning, which is not caught.
-    This warning will not be caught. [3]
-    **********/
+        excepnEnum = Global::error("This error message is written to the Infolog.");
+        throw excepnEnum;
     }
+    catch (Exception::Error)
+    {
+        info("Caught 'Exception::Error'.");
+        print("Caught 'Exception::Error'.");
+        retry;
+    }
+    info("End of job.");
+    print("End of job.");
+
+/**********  Actual Infolog output
+Message (04:33:56 pm)
+            .
+In the 'try' block, [2]. (j4)
+---- Will now throw a warning, which is not caught.
+This warning will not be caught. [3]
+**********/
+}
+```
 
 ### Throwing an exception inside a transaction
 
 The following code example throws an exception in a transaction block.
 
-    // This examples uses three levels of try nesting to illustrate
-    // where an exception is caught when the exception is thrown inside
-    // a ttsBegin-ttsCommit transaction block. 
-    static void TryCatchTransaction5Job(Args _args)
+```xpp
+// This examples uses three levels of try nesting to illustrate
+// where an exception is caught when the exception is thrown inside
+// a ttsBegin-ttsCommit transaction block. 
+static void TryCatchTransaction5Job(Args _args)
+{
+    /***
+    Shows an exception that is thrown inside a ttsBegin - ttsCommit
+    transaction block cannot be caught inside that block.
+    ***/
+    try
     {
-        /***
-        Shows an exception that is thrown inside a ttsBegin - ttsCommit
-        transaction block cannot be caught inside that block.
-        ***/
         try
         {
+            ttsbegin;
             try
             {
-                ttsbegin;
-                try
-                {
-                    throw error("Throwing exception inside transaction.");
-                }
-                catch (Exception::Error)
-                {
-                    info("Catch_1: Unexpected, caught in 'catch' inside the transaction block.");
-                }
-                ttscommit;
+                throw error("Throwing exception inside transaction.");
             }
             catch (Exception::Error)
             {
-                info("Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.");
+                info("Catch_1: Unexpected, caught in 'catch' inside the transaction block.");
             }
+            ttscommit;
         }
         catch (Exception::Error)
         {
-            info("Catch_3: Unexpected, caught in 'catch' far outside the transaction block.");
+            info("Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.");
         }
-        info("End of job.");
-
-    /**********  Actual Infolog output
-    Message (04:12:34 pm)
-    Throwing exception inside transaction.
-    Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.
-    End of job.
-    **********/
     }
+    catch (Exception::Error)
+    {
+        info("Catch_3: Unexpected, caught in 'catch' far outside the transaction block.");
+    }
+    info("End of job.");
+
+/**********  Actual Infolog output
+Message (04:12:34 pm)
+Throwing exception inside transaction.
+Catch_2: Expected, caught in the innermost 'catch' that is outside of the transaction block.
+End of job.
+**********/
+}
+```
 
 ### Using Global::error with a SysInfoAction parameter
 
@@ -364,52 +386,56 @@ The following code sample is shown in two parts.
 
 #### Part 1: Calling Global::error
 
-    static void Job_SysInfoAction(Args _args)
+```xpp
+static void Job_SysInfoAction(Args _args)
+{
+    try
     {
-        try
-        {
-            throw Global::error
-                ("Click me to make the Print window display."
-                ,""
-                ,new SysInfoAction_PrintWindow_Demo()
-                );
-        }
-        catch
-        {
-            warning("Issuing a warning from the catch block.");
-        }
+        throw Global::error
+            ("Click me to make the Print window display."
+            ,""
+            ,new SysInfoAction_PrintWindow_Demo()
+            );
     }
+    catch
+    {
+        warning("Issuing a warning from the catch block.");
+    }
+}
+```
 
 #### Part 2: The SysInfoAction\_PrintWindow\_Demo class
 
-    public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
+```xpp
+public class SysInfoAction_PrintWindow_Demo extends SysInfoAction
+{
+    str m_sGreeting; // In classDeclaration.
+    public str description()
     {
-        str m_sGreeting; // In classDeclaration.
-        public str description()
-        {
-            return "Starts the Print Window for demonstration.";
-        }
-        public void run()
-        {
-            print("This appears in the Print window.");
-            print(m_sGreeting);
-
-            /*********** Actual Infolog output
-            Message (03:19:28 pm)
-            Click me to make the Print window display.
-            Issuing a warning from the catch block.
-            ***************/
-        }
-        public container pack()
-        {
-            return ["Packed greeting."]; // Literal container.
-        }
-        public boolean unpack(container packedClass, Object object = null)
-        {
-            [m_sGreeting] = packedClass;
-            return true;
-        }
+        return "Starts the Print Window for demonstration.";
     }
+    public void run()
+    {
+        print("This appears in the Print window.");
+        print(m_sGreeting);
+
+        /*********** Actual Infolog output
+        Message (03:19:28 pm)
+        Click me to make the Print window display.
+        Issuing a warning from the catch block.
+            ***************/
+    }
+    public container pack()
+    {
+        return ["Packed greeting."]; // Literal container.
+    }
+    public boolean unpack(container packedClass, Object object = null)
+    {
+        [m_sGreeting] = packedClass;
+        return true;
+    }
+}
+```
 
 ## List of exceptions
 
