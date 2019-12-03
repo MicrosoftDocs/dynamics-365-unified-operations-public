@@ -441,6 +441,17 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > The file in Blob storage will remain there for seven days. It will then be automatically deleted.
 
+## Getting the list of errors
+GetExecutionErrors can be used to get the list of errors in a job execution. The API takes the ‘Execution ID’ as the parameter, and returns the set of validation error messages as JSON list.
+
+```
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
+BODY
+{"executionId":"<executionId>"}
+
+```
+
 ## Import and export processes
 
 The following illustration shows how the Data management package methods can be used to import data packages.
