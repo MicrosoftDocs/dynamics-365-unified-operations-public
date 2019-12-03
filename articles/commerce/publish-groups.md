@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-12-02
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Publish groups and scheduled publishes
+# Work with publish groups
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
