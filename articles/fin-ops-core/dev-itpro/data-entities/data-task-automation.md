@@ -142,7 +142,7 @@ The **\<JobDefinition\>** element defines the data project definition. There can
 | \<JobDefinition\> | \<Operation\>                    | 1..1                | \-        | The operation to be performed is specified by the following values: <br> - Import <br> - Export |
 |                   | \<Truncate\>                     | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This is applicable only when operation is set to *Import*. |
 |                   | \<Mode\>                         | 1..1                | \-        | The mode specifies the method using which the operation must be performed. The possible values are:<br>- Import async <br>- Export async <br>- Recurring batch: This uses the enqueue API. Dequeue API is not supported yet. Package API supports both export and import.|
-|                   | \<ConfigurationOnly\>            | 1..1                | \-        | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation. |
+|                   | \<ConfigurationOnly\>            | 0..1                | \-        | This is a Boolean field with possible values of Yes or No. This must be set to Yes if the task is only to configure the data project but not to perform the specified operation. |
 |                   | \<BatchFrequencyInMinutes\>      | 1..1                | \-        | This specifies the frequency in which the batch must be scheduled. This is applicable only when mode is set to *recurring batch*. |
 |                   | \<NumberOfTimesToRunBatch\>      | 1..1                | \-        | This is used to set a limit to how many times the scheduled batch should run. This is applicable only when mode is set to *recurring batch*. |
 |                   | \<UploadFrequencyInSeconds\>     | 1..1                | \-        | This is used to control the rate at which a file is uploaded to the recurring batch job for import. This must be used only for automated testing of recurring integrations in non-production environments. This is applicable only when mode is set to *recurring batch* and operation is set to *Import*. |
@@ -293,9 +293,7 @@ The following data validations are currently supported:
 - **Skip staging** – If **Skip staging** is enabled on a test, this validation checks whether staging was skipped.
 
 ## Example 1: Configuration management for data projects
-The **\<ConfigurationOnly\>** element can be used to create configuration tasks for data projects and recurring schedules.
-
-This first example configures a data project that doesn't have a recurring schedule. The second example includes a recurring schedule. The difference is the value of the **\<Operation\>** element. Manifests for configuration tasks should also be kept under source control.
+The **\<ConfigurationOnly\>** element can be used to create configuration tasks for data projects. When ConfigurationOnly is set to Yes, the data projects are only created but not executed. This allows for managing data projects across environments in an automated manner.
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
@@ -377,7 +375,7 @@ This first example configures a data project that doesn't have a recurring sched
 ```
 
 ## Example 2: Automated setup of demo data
-The following manifest shows the setup of demo data for three legal entities when the demo data packages are stored in the Shared asset library.
+The following manifest shows the setup of demo data for three legal entities when the demo data packages are stored in the Shared asset library. The difference in this example from the previous example is the actual execution of the data projects itslef to set up the demo data. This is accomplished by not using ConfigurationOnly option or setting it to No if one were to use it for consistency of the manifest.
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
