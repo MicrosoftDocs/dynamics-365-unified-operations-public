@@ -2,10 +2,10 @@
 # required metadata
 
 title: DATEFORMAT ER function
-description: This topic explains how the DATEFORMAT ER function is used
+description: This topic provides information about how the DATEFORMAT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `DATEFORMAT` function returns a *String* value presenting a given date value as a text in the specified format and an optionally specified [culture](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)).
+The `DATEFORMAT` function returns a *String* value that presents a given date value as text in the specified format and an optionally specified [culture](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) and [custom](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx)).
 
 ## Syntax 1
 
@@ -70,23 +70,15 @@ The result string value.
 
 ## Usage notes
 
-When the culture is not defined as an argument of the called function, the value
-of culture is defined by the calling context. For example, when the
-**DATEFORMAT** function is called by using the syntax 1 in an ER format for a
-**FILE** element configured to use the German culture, the conversion will be
-performed by using the German culture. The default culture value is EN-US.
+When the culture is not defined as an argument of the called function, the value of culture is defined by the calling context. For example, when the **DATEFORMAT** function is called by using the syntax 1 in an ER format for a **FILE** element configured to use the German culture, the conversion will be performed by using the German culture. The default culture value is EN-US.
 
 ## Example 1
 
-`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server
-date, December 24, 2015, as the string **"24-12-2015"**, based on the specified
-custom format.
+`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified custom format.
 
 ## Example 2
 
-`DATEFORMAT (SESSIONTODAY (), "d", “DE”)` returns the current application
-session date, December 24, 2015, as the string  **"24-12-2015"**, based on the
-selected German culture the specified format.
+`DATEFORMAT (SESSIONTODAY (), "d", “DE”)` returns the current application session date, December 24, 2015, as the string  **"24-12-2015"**, based on the selected German culture the specified format.
 
 ## Additional resources
 
