@@ -56,7 +56,7 @@ To run a **select** query, follow these steps.
 
 The following example finds all rows in TestTable where **intField** \<= **5**.
 
-```X++
+```xpp
 // t is the table buffer that will hold the result.
 TestTable t;
 
@@ -104,7 +104,7 @@ To run an **update** statement, follow these steps.
 
 The following example updates **stringField** to **"fifty"** for all rows where **intField** = **50**.
 
-```X++
+```xpp
 TestTable t;
 
 // Create an update query to find rows where intField = 50.
@@ -147,7 +147,7 @@ To run an **insert** statement, follow these steps.
 
 The following example inserts rows where **intField** = **40** and **stringField** = **"en-us"** into TestTable.
 
-```X++
+```xpp
 TestTable t;
 
 // Specify the fields in the new row.
@@ -205,7 +205,7 @@ To run a **delete** statement, follow these steps.
 
 The following example deletes rows where **intField** is an even number.
 
-```X++
+```xpp
 TestTable t;
 
 // Build the query that specifies which rows to delete.
