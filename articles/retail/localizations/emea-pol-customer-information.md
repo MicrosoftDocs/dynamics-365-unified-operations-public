@@ -88,7 +88,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 |--------------------------------|---------|-----------------|
 | FISCALCUSTOMER\_VATID\_PL      | Receipt | 900001          |
 
-In the Receipt format designer, add the custom fields to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../../receipt-templates-printing.md).
+In the Receipt format designer, add the custom fields to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
 ### Configure retail channel components
 
