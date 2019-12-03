@@ -89,7 +89,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 | Name                           | Type    | Caption text ID |
 |--------------------------------|---------|-----------------|
 | FISCALCUSTOMER\_LOTTERYCODE\_IT| Receipt | 900001          |
-| FISCALCUSTOMER\_FISCALCODE\_IT | Receipt | 900002          |
+| CUSTOMER\_FISCALCODE\_IT       | Receipt | 900002          |
 
 
 In the Receipt format designer, add the custom fields to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
