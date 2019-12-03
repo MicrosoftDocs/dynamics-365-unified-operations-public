@@ -3,7 +3,7 @@
 
 title: Upload a robots.txt file
 description: This topic describes how to upload a robots.txt file for your site
-author: Brian Shook
+author: BrianShook
 manager: Brendan Sullivan
 ms.date: 12/2/2019
 ms.topic: article
@@ -16,13 +16,13 @@ ms.technology:
 ms.search.form:  
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: 
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: BrianShook
+ms.author: brishoo
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
