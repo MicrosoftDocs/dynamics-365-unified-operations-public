@@ -33,7 +33,11 @@
       - name: Platform update 20 (September 2018)
         href: ../fin-ops/get-started/whats-new-platform-update-20.md
       - name: Platform update 15 (March 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-15.md    
+        href: ../fin-ops/get-started/whats-new-platform-update-15.md  
+      - name: What's new or changed in previous versions
+        items:
+        - name: What's new or changed in Finance and Operations home page
+          href: ../fin-ops/get-started/whats-new-changed.md
     - name: Business events
       items:
       - name: Business events overview
