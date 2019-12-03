@@ -5,7 +5,7 @@ title: X++ and C# comparison
 description: This topic compares X++ and C# syntax and programming.
 author: RobinARH
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -21,7 +21,6 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 72424
-ms.assetid: 9e0b3126-aa04-4b76-a254-bfbd3fcd6552
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: rhaertle
@@ -47,7 +46,7 @@ The following sections describe some basic similarities and differences between 
 ### Similarities
 
 The following X++ features are the same for C#:
--   Single line (`//`) and multi-line (`/\* \*/`) comments.
+-   Single line (`//`) and multi-line (`/* */`) comments.
 -   `==` (equal) operator for determining whether two values are equal.
 -   `!=` (not equal to) operator for determining whether two values are not equivalent.
 -   `+` (plus sign) operator for string concatenation.
