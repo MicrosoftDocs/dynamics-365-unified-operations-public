@@ -72,55 +72,57 @@ To create a publish group for your site in Commerce authoring tools, follow thes
 
 You can select your publish group context in one of two ways:
 
-* The first option is to click on the Site Builder context control (directly below **Publish Groups**) in the left navigation panel, and select your desired authoring context.  This is also where you can return to your default **Live site** context.
+- The first option is to click on the Site Builder context control (directly below **Publish Groups**) in the left navigation panel, and select your desired authoring context. This is also where you can return to your default **Live site** context.
 
   >[!Note]
-  >The "Live site" context is the default view where you can view and make changes directly to your website without using a publish group. The "Live site" context  represents the latest direct updates to the published version of your site.
+  >The "Live site" context is the default view where you can view and make changes directly to your website without using a publish group. The "Live site" context represents the latest direct updates to the published version of your site.
 
-* The second option is to simply click on the name of the publish group in the list view shown by selecting **Publish groups** from the left navigation menu.  This will also set the publish group context in the left navigation context control mentioned above.
+- The second option is to simply click on the name of the publish group in the list view shown by selecting **Publish groups** from the left navigation menu.  This will also set the publish group context in the left navigation context control mentioned above.
 
 Once you have set your context, which will show either "Live site" or the name of your chosen publish group in the left navigation menu, you will be operating within that context for previewing and editing site content. 
 
-## Add items to a publish group
+## Add pages or other items to a publish group
 
-Once you have selected a publish group context and see this in the left navigation panel, you can create content just as you would in the default "Live site" context.  You can also add existing pages from other publish groups or from the default "Live site" context.  To copy existing pages to a publish group, follow these steps:
+Once you have selected a publish group context and it appears in the left navigation pane, you can create content just as you would in the default "Live site" context. You can also add existing pages or other items from other publish groups or from the default "Live site" context.
 
-1. After selecting either the "Live site" context or a different publish group context, select **Pages** from the left navigation panel.
+To copy existing pages to a publish group, follow these steps.
+
+1. After selecting either the "Live site" context or a different publish group context, select **Pages** from the left navigation pane.
 2. Select the page you want to add to a publish group.
-3. Click the **Copy to publish group** button in the top command bar.
-4. Select the publish group you wish to add the page into and click **Ok**.
+3. In the command bar, click **Copy to Publish group**.
+4. In the **Select a Publish Group** dialog box, select the publish group you wish to add the page to, and then click **Ok**.
 
 The same steps above can be used to create or add existing customized product pages, URLs, templates, layouts, fragments, and media library assets to a publish group.
 
 ## Validate a publish group
 
-To ensure that all content dependencies and validations are ok to publish, you can run a pre publish validation to identify any issues that need to be addressed before you can schedule a publish.  To validate your publish group, follow these steps:
+To ensure that all content dependencies and validations are ok to publish, you can run pre-publish validation to identify any issues that need to be addressed before you can schedule a publish. To validate your publish group, follow these steps.
 
 1. Select **Publish groups** from the left navigation panel.
-2. Select the publish group you wish to validate.
-3. Click the **Validate** button in the top command bar.
+2. Select the publish group you want   to validate.
+3. Click **Validate** in the top command bar.
 
-A validation check will be run across all content in the publish group, and any issues that would prevent successful publish will be displayed in the notification dialogs in the top right.
+A validation check will then be run on all content in the publish group, and any issues that would prevent a successful publish will be displayed a notification box that appears on the top right.
 
 >[!NOTE]
->Validation will always automatically run when scheduling a publish group. The designated "Validate" button is helpful to identify issues early, before attempting to schedule a publish group to go live.
+>Validation will always run automatically when scheduling a publish group. The command bar **Validate** functionality is helpful to identify issues to be fixed before attempting to schedule a publish group to go live.
+
 ## Schedule a publish group to go live
+
 To schedule a publish group to go live on your site, follow these steps:
 
 1. Select **Publish groups** from the left navigation panel.
-
 2. Select the publish group you wish to schedule.
-
 3. Click the **Publish schedule** button in the top command bar.
-
 4. Select the date and time for your publish group to go live on your website.
-
-5. Click the **Ok** button.
+5. Click **OK**.
 
 >[!NOTE]
 >To un-schedule a publish group, follow the same steps above and click the "Un-schedule publish group" option in the scheduling modal window.
+
 >[!NOTE]
->Very large publish groups may take up to a minute or two to complete when their scheduled time arrives.  Be aware that a publish action is not instant, and smaller publish groups will publish faster.
+>Very large publish groups may take up to a minute or two to complete when their scheduled time arrives. Be aware that a publish action is not instant, and smaller publish groups will publish faster.
+
 ## Publish groups FAQ
 
 Q: How many items can be in a publish group?
