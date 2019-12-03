@@ -15,7 +15,7 @@
     - name: What's new or changed in previous versions
       items:
       - name: What's new or changed in Finance and Operations home page
-        href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+        href: ../fin-ops/get-started/whats-new-changed.md
     - name: Business events
       items:
       - name: Business events overview
