@@ -60,7 +60,7 @@ The [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calcula
 The Commerce preview environment can only be deployed to the North America geographical region.
  
 ###  Why isn't there a downloadable virtual hard disk (VHD) with complete OneBox VM option? Setting this thing up is quite a pain... 
-Retail Cloud Scale Unit (RCSU) and Commerce are completely SaaS and must be cloud hosted.
+Retail Cloud Scale Unit (RCSU) and Commerce are completely software as a service (SaaS) and must be cloud hosted.
  
 ###  Is there a time limit on running the Commerce preview environment?
 The time limit on running the Commerce preview environment is 30 days from from provisioning e-Commerce.
