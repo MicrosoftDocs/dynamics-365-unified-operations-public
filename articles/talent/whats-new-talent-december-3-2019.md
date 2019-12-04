@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (December 3, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 12/3/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,20 +29,25 @@ ms.search.validFrom: 2019-12-03
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 Talent (December 3, 2019)"
+# What's new or changed in Dynamics 365 Talent (December 3, 2019)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 Talent.
+This article describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2646.
+
+Changes described in this section apply to build number 8.1.2646. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
+
+### Feature management workspace
 
 The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
@@ -52,57 +57,57 @@ At times, an integral feature will be on by default and can't be turned off (for
  
 Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
 
-### Add automatic scheduling of Batch Job History cleanup - (332528)
+### Add automatic scheduling of Batch Job History cleanup (332528)
 
-With this change, *Batch Job History* is automatically scheduled to run each night and will remove batch job history older than 30 days old.
+With this change, **Batch Job History** runs each night and removes batch job history items older than 30 days.
 
-### Talent does not respond in worker actions when identification number length does not match the identification type - (390971)
+### Talent doesn't respond in worker actions when identification number length doesn't match the identification type (390971)
 
-This release corrects the issue surfaced when the identification number length does not match the definition within the identification type. 
+This release corrects the issue surfaced when the identification number length doesn't match the definition within the identification type. 
 
-### Fixed compensation not able to update level with Position details changes  - (348085)
+### Fixed compensation doesn't update level with changes to position details  (348085)
 
-In this week's release, the compensation start date is now used to determine the job associated with the position at that point in time when creating a new fixed compensation record for an employee.
+In this week's release, **Compensation start date** determines the job associated with the position at that point in time when creating a new fixed compensation record for an employee.
 
-### Workers, Employees, and Contractors lists show Worker Type as Both when they should only be Worker or Contractor - (384473)
+### Workers, Employees, and Contractors lists show Worker Type as Both when they should only be Worker or Contractor (384473)
 
-A change has been made to accurately reflect the type of worker entered. (contractor or employee)
+This change accurately reflects the type of worker entered (contractor or employee).
 
-### Email notifications for new hire actions does not contain the name information due to security policies - (383402)
+### Email notifications for new hire actions don't contain name information due to security policies (383402)
 
 This change corrects the information displayed in the first or surname fields within the placeholders for workflow when advanced security is enabled.
 
-### System allows for 2 full day leave requests for the same day - (379284)
+### System allows two full-day leave requests for the same day (379284)
 
-With this change, you won't be able to issue two leave requests for the same day. 
+With this change, you can't issue two leave requests for the same day. 
 
-### Address changes list should be sorted by Effective date - (352798)
+### Address changes list should be sorted by Effective date (352798)
 
-With this change the address change list is now sorted by effective date.
+With this change, the address change list is now sorted by **Effective date**.
 
-### Leave requests should allow deletes from CDS to Talent - (376999)
+### Leave requests should allow deletes from Common Data Service to Talent (376999)
 
-With this change, draft and canceled leave requests can be deleted from CDS and in turn removed from Talent.
+With this change, draft and canceled leave requests can be deleted from Common Data Service and then removed from Talent.
 
-### Delete earning codes is allowed when the same earning code is assigned to an employee- (371792)
+### Delete earning codes is allowed when the same earning code is assigned to an employee (371792)
 
 In this release, you must first remove the earning code from the employee before deleting the earning code from the system.
 
-### Leave and Absence Workflow that has two approval stages fails to complete  - (391116)
+### Leave and Absence workflow with two approval stages fails to complete  (391116)
 
-With this change, the leave and absence workflow will continue through all steps when more than one approval stage is configured for the request.
+With this change, the leave and absence workflow continue through all steps when more than one approval stage is configured for the request.
 
-### Issue Date does not sync to CDS when updated/entered in Talent - (397361)
+### Issue date doesn't sync to Common Data Service when updated or entered in Talent (397361)
 
-This change, corrects a problem where the issue date for Person Identification records was not syncing to CDS from talent.
+This change corrects a problem where the issue date for **Person identification** records didn't sync to Common Data Service from Talent.
 
-### Hierarchy circular reference error issued when assigning a manager to a position - (386659)
+### Hierarchy circular reference error issued when assigning a manager to a position (386659)
 
 This change corrects a unique scenario where a circular reference error appears when assigning a new manager to a position.
 
-### CDS Entities now supporting Custom Fields
+### Common Data Service Entities that now support custom fields
 
-The following is a list of all the CDS entities that are now supported.
+The following Common Data Service entities now support custom fields:
 
 Bank Account Disbursement | cdm_bankaccountdisbursement
 Benefit Calculation Frequency | cdm_benefitcalculationfrequency
@@ -170,7 +175,9 @@ Worker Personal Detail | cdm_workerpersonaldetail
 Worker Person Identification Number | cdm_workerpersonidentificationnumber
 Worker Person Identification Type | cdm_workerpersonidentificationtype
 
-## In preview (Preview features are only available in *Sandbox* environments)
+## In preview
+
+Preview features are only available in **Sandbox** environments.
 
 ### Print performance reviews
 
