@@ -2,10 +2,10 @@
 # required metadata
 
 title: DAYS ER function
-description: This topic explains how the DAYS ER function is used
+description: This topic provides information about how the DAYS ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
