@@ -48,7 +48,7 @@ No, Dynamics 365 Commerce preview only works with Dynamics 365 Retail projects.
 No, this is the evaluation environment only. If you need an environment for an implementing customer, please reach out to us.
  
 ####  Can the Dynamics 365 Commerce preview environment be used in provisioning the e-commerce features on top of an existing application/environment that is implementing Dynamics 365 Retail?
-No, at this time the Commerce preview environment is only available on new environments deployed on Dynamics 365 Retail SKU projects with demo data from version 10.0.6.
+No, at this time the Dynamics 365 Commerce preview environment is only available on new environments deployed on Dynamics 365 Retail SKU projects with demo data from version 10.0.6.
  
 ####  What costs are involved in deploying the Dynamics 365 Commerce preview environment on Azure via Microsoft Lifecycle Services (LCS)? 
 Dynamics 365 Retail is the only component hosted in your subscription. Other components like CPU computing hours will be hosted in Microsoft subscriptions. The [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) can be used to estimate this cost.
@@ -57,15 +57,15 @@ Dynamics 365 Retail is the only component hosted in your subscription. Other com
 The Dynamics 365 Commerce preview environment can only be deployed to the North America geographical region.
  
 ####  Is there a downloadable virtual hard disk (VHD) with complete OneBox VM option? 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) and Commerce are completely software as a service (SaaS) and must be cloud hosted.
+Dynamics 365 Retail Cloud Scale Unit (RCSU) and Dynamics 365 Commerce are completely software as a service (SaaS) and must be cloud hosted.
  
 ####  How long will the Dynamics 365 Commerce preview environment be usable for?
 The Dynamics 365 Commerce preview environment has a 30 day time limit from the day of provisioning e-commerce.
  
 ####  Can I extend my time limit for Dynamics 365 Commerce preview environment? 
-Yes, you can reach out to the support team using the [Commerce preview extension form] (https://aka.ms/Dynamics365CommercePreviewExtensionForm).
+Yes, you can reach out to the support team using the [Commerce preview extension form](https://aka.ms/Dynamics365CommercePreviewExtensionForm).
 
-#### Can we make multiple request for a Dynamics 365 Commerce preview environment?
+#### Can we make multiple requests for a Dynamics 365 Commerce preview environment?
 We grant quota of a single Dynamics 365 Commerce preview environment per accepted request. Should you need more than that, please reach out to us via the Yammer group or email listed below.
 
 ## Dynamics 365 Commerce preview environment contact information
