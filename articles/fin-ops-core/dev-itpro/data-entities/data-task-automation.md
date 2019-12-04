@@ -5,7 +5,7 @@ title: Data task automation
 description: This topic explains how you can use data task automation in Finance and Operations to easily repeat many types of data tasks and validate the outcome of each task.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 04/23/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -375,7 +375,7 @@ The **\<ConfigurationOnly\>** element can be used to create configuration tasks 
 ```
 
 ## Example 2: Automated setup of demo data
-The following manifest shows the setup of demo data for three legal entities when the demo data packages are stored in the Shared asset library. The difference in this example from the previous example is the actual execution of the data projects itslef to set up the demo data. This is accomplished by not using ConfigurationOnly option or setting it to No if one were to use it for consistency of the manifest.
+The following manifest shows the setup of demo data for three legal entities when the demo data packages are stored in the Shared asset library. The difference in this example from the previous example is the actual execution of the data projects to set up the demo data. This is accomplished by not using the ConfigurationOnly option or setting it to No to use it for consistency of the manifest.
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
