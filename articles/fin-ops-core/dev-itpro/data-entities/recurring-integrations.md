@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/19/2019
+ms.date: 12/04/2019
 
 ms.topic: article
 ms.prod: 
@@ -187,6 +187,17 @@ The following table lists the possible status values.
 
 > [!NOTE]
 > The file in the blob storage will remain in the storage for seven days, after which it will be automatically deleted.
+
+### API to get the list of execution errors
+GetExecutionErrors can be used to get the list of errors in a job execution. The API takes the Execution ID as the parameter, and returns a set of error messages in a JSON list.
+
+```
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
+BODY
+{"executionId":"<executionId>"}
+
+```
 
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
