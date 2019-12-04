@@ -115,7 +115,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
     tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
     ```
 
-17. Save and send the request, and then verify the result.
+17. Save and send the request, and then verify the result. You must ensure the user account being used is set to a default company that has data. Alternatively, you can also specify cross-company=true as the query paramter in the OData request.
 
     ![Result](./media/postman15.png)
 
