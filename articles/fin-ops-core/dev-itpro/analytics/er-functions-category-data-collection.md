@@ -2,10 +2,10 @@
 # required metadata
 
 title: List of ER functions of the data collection category
-description: This topic explains what data collection functions are supported in ER
+description: This topic provides information about what data collection functions are supported in ER.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) data collection functions are used to do counting and summing in an executing ER format based on data of the already generated output in **Text** or **Xml** format. This approach is used to improve performance of
-an executed ER format, to populate to generated documents values of running totals, etc. You can find a summary of such functions below in this article.
+Electronic reporting (ER) data collection functions are used to do counting and summing in an executing ER format based on data of the already generated output in **Text** or **Xml** format. This approach is used to improve performance of an executed ER format, to populate to generated documents values of running totals, etc. You can find a summary of such functions below in this article.
 
 ## List of supported functions
 
