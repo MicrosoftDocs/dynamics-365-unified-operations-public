@@ -45,7 +45,7 @@
 	<li>On Fiscal document issuer field, select Fiscal establishment or Third party to define the origin of the fiscal document;</li>
 	<li>On Receiver taxation code field, enter the taxation code of the ICMS-ST configured for the receiving fiscal document line, where the product is subject to ICMS tax substitution;</li>
 	<li>On Sender taxation code field, enter the taxation code of the ICMS-ST present in the issuer's fiscal document line, where the product is subject to ICMS tax substitution;</li>
-	<li>For a give CFOP relation and Fiscal document issuer, and based on the relation between the Receiver taxation code vs the Sender taxation code, Enter on Responsible for withholding the ICMS-ST field, select Direct, Indirect or Own declarant.</li>
+	<li>For a given CFOP relation and Fiscal document issuer, and based on the relation between the Receiver taxation code vs the Sender taxation code, Enter on Responsible for withholding the ICMS-ST field, one of the options Direct, Indirect or Own declarant.</li>
 </ol>
 <p>&nbsp;</p>
 <p>The Responsible for withholding the ICMS-ST, the ICMS-ST collection payment mode and ICMS-ST collection payment number are new fields at:</p>
