@@ -223,7 +223,7 @@
       - name: Set up vendor invoice policies
         href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
       - name: Record vendor invoice and match against received quantity
-        href: accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
+        href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
         href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
