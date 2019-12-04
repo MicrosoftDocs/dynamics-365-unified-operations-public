@@ -272,6 +272,10 @@ There are a few standard steps that can help you troubleshoot the configuration 
 The **Email parameters** page allows an administrator to select Exchange as an interactive email provider and as the Batch email provider. The Exchange mail provider will use the current user's Exchange Online account to send emails. When used as the Batch email provider, the batch account will be used. No additional configuration is needed. 
 If troubleshooting is needed, ensure that the current user's account can be signed into and that emails can be sent from that account to the intended recipients.
 
+### Exchange mail provider not supported for external users
+
+Users that are external to the primary tenant will not have exchange accounts on that tenant, so the Exchange mail provider is not supported for external users.
+
 ## Other notes
 
 The system communicates with Exchange or an SMTP server like a typical email client, so standard behavior and limits apply. For example, standard [Exchange Online receiving and sending limits](https://technet.microsoft.com/library/exchange-online-limits.aspx#RecipientLimits) apply.
