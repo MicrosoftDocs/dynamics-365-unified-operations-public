@@ -46,7 +46,7 @@ For more information about Platform update 32, see [Additional resources](whats-
 
 ### File size limit for data management export has been removed
 
-When Data management is used to export files, there is a maximum file size of 256 megabytes (MB). In Platform update 32, you can remove this limit by implementing flight **DMFBlobSize256**. If this feature causes issues after you turn it on, you can revert to the previous behavior.
+For more information about this feature, see [Data management export file size limit removed](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed).
 
 ### Finance and Operations AOS (kernel) improvements
 
