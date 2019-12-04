@@ -58,7 +58,7 @@ For more information about this feature, see [User productivity – Saved views]
 
 ### Improved responsiveness of Action Panes on smaller screens
 
-When pages that have an Action Pane are opened on a smaller screen, the Action Pane is collapsed and can't be pinned open. For more information, see [Improved experience on mobile devices – Phase 1](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1).
+When pages that have an Action Pane are opened on a smaller screen, the Action Pane is collapsed and can't be pinned open. For more information, see [Improved experience on mobile devices – Phase 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1).
 
 ### Ability to filter on blank values by using the filter pane and filters in grid column headers
 
