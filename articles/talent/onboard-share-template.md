@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Share content with other contributors in Dynamics 365 Talent - Onboard
+# Share content with other contributors
 
 [!include [banner](includes/banner.md)]
 
