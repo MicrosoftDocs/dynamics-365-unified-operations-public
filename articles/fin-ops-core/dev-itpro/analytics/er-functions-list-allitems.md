@@ -2,10 +2,10 @@
 # required metadata
 
 title: ALLITEMS ER function
-description: This topic explains how the ALLITEMS ER function is used
+description: This topic provides information about how the ALLITEMS ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -58,7 +58,7 @@ The result list of records.
 
 The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the ER expression builder at design time.
 
-It is not recommended to use this function for transactional data sources that may potentially contain the large volume of data. Instead of it, consider using the [ALLTEMSQUERY](er-functions-list-allitemsquery.md) function.
+It is not recommended to use this function for transactional data sources that may potentially contain the large volume of data. Instead, consider using the [ALLTEMSQUERY](er-functions-list-allitemsquery.md) function.
 
 ## Example 1
 
@@ -66,7 +66,7 @@ If you enter `SPLIT("abcdef" , 2)` as the data source **DS**, the expression `CO
 
 ## Example 2
 
-If you enter **Vend** as the data source of the *Record list* type that refers to the **VendTable** application table, the expression `ALLITEMS (Vend.'<Relations'.ContactPerson)` returns the flattened list of records having the **ContactPerson** table structure and containing all contact persons that are accessible via the **ContactPerson.ContactForParty == VendTable.Party** relation and available for all vendors from the referred vendors table.
+If you enter **Vend** as the data source of the *Record list* type that refers to the **VendTable** application table, the expression `ALLITEMS (Vend.'<Relations'.ContactPerson)` returns the flattened list of records having the **ContactPerson** table structure and containing all contact persons that are accessible by using the **ContactPerson.ContactForParty == VendTable.Party** relation and is available for all vendors from the referred vendors table.
 
 ## Additional resources
 
