@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 
 ### I have received an invitation to Dynamics 365 Commerce preview environment on my account, but I want to set up the Commerce preview environment in another tenant (due to the fact that I'm not a global administrator for my company tenant). Is it possible to transfer the invitation to the other tenant instead?  
-Yes. For invitation transfers, you can use this form to provide us with the details: https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR5U60_Q9JVZPrDeJLlFt9MBUOEMxWjNBTU5aRVZJWEIzQUZDNVZPQ1dWNi4u.
+Yes. For invitation transfers, you can use this form to provide us with the details: https://aka.ms/Dynamics365CommercePreviewTransferForm.
  
 ###  How long will the invitation transfer take? 
 The transfer should take approximately 3-5 business days.
@@ -44,9 +44,6 @@ The transfer should take approximately 3-5 business days.
 ###  The Commerce preview environment does not work with Dynamics 365 for Finance and Operations projects? 
 Correct, it only works with Dynamics 365 Retail projects.
  
-###  When is the Commerce preview environment going to be available on the Dynamics 365 for Finance and Operations environment?
-This information has not yet been disclosed. >>>(Q: Should we include this question?)
-
 ###  What should we do if our customer is a Dynamics 365 for Finance and Operations customer who is also implementing Dynamics 365 Retail and needs an e-commerce storefront? 
 This is the evaluation environment process. If you need an environment for an implementing customer, please reach out to us.
  
@@ -57,22 +54,22 @@ At this time, the Commerce preview environment is only available on new environm
 Dynamics 365 Retail is the only component hosted in your subscription. The other components will be hosted in Microsoft subscriptions.
  
 ###  Is there a calculation option to estimate the monthly costs?
->>>(Do we have an answer for this? "TBD" was all that was provided.)
+The [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) can be used to estimate the cost. 
  
 ###  Which geographical regions are currently supported? 
-The Commerce preview environment is only supported in North America. >>>(Q: or is it just the U.S.?)
+The Commerce preview environment can only be deployed to the North America geographical region.
  
 ###  Why isn't there a downloadable virtual hard disk (VHD) with complete OneBox VM option? Setting this thing up is quite a pain... 
 Retail Cloud Scale Unit (RCSU) and Commerce are completely SaaS and must be cloud hosted.
  
 ###  Is there a time limit on running the Commerce preview environment?
-The time limit on running the Commerce preview environment is 30 days from >>>(Q: when?).
+The time limit on running the Commerce preview environment is 30 days from from provisioning e-Commerce.
  
 ###  Why is the Commerce preview environment only available for 30 days? 
-If 30 days is not enough for evaluation, you should reach out to us.
+If 30 days is not enough for evaluation, you should reach out to us using the [Commerce preview extension form] (https://aka.ms/Dynamics365CommercePreviewExtensionForm).
 
 ### Can we make multiple request for a preview? 
-What would be the reason for multiple requests for a preview? We grant quota of a single Commerce preview environment per accepted request. Should you need more than that, please reach out to us.
+We grant quota of a single Commerce preview environment per accepted request. Should you need more than that, please reach out to us.
 
 ## Dynamics 365 Commerce preview environment contact information
 
