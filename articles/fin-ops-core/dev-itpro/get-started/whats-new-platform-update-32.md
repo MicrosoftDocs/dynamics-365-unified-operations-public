@@ -5,7 +5,7 @@ title: Preview features in Platform update 32 for Finance and Operations apps (F
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -120,12 +120,12 @@ To make the new grid available while this feature is in preview, follow these st
 The new grid will be available in all subsequent user sessions that are started.
 
 ### Priority-based scheduling for batch jobs
-Two new system batch jobs are introduced to prepare existing batch job and tasks for the [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature:
+Two new system batch jobs are introduced to prepare existing batch jobs and tasks for the [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature. The two new system batch jobs are:
 
-- **System job to seed batch group associations to batch jobs** with class name **SysMigrateBatchGroupsForPriorityBasedScheduling** associates batch jobs with batch groups.
-- **System job to clean up expired batch heartbeat records** with class name **SysCleanupBatchHeartbeatTable** cleans up the new internal monitoring **BatchHeartbeatTable** table.
+- **System job to seed batch group associations to batch jobs:** This batch job, with class name **SysMigrateBatchGroupsForPriorityBasedScheduling**, associates batch jobs with batch groups.
+- **System job to clean up expired batch heartbeat records:** This batch job, with class name **SysCleanupBatchHeartbeatTable**, cleans up the new internal monitoring **BatchHeartbeatTable** table.
 
-This feature is currently in restricted preview. The batch jobs are designed to be non-disruptive and there is no impact on current batch job functionality or processing, if the feature is not enabled.
+The [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature is currently in restricted preview. The batch jobs are designed to be non-disruptive and there is no impact on current batch job functionality or processing, if the feature is not enabled.
 
 ## Additional resources
 
