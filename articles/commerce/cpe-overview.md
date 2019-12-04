@@ -45,9 +45,9 @@ The Commerce preview environment provides the complete Commerce experience with 
 
 Although the Commerce preview environment provides the full features and functionality of Dynamics 365 Commerce, there are some minor limitations as follows:
 
-- The Commerce preview environment is only available for use in the United States.>>>(Q: or is it North America?)
-- Use of the Commerce preview environment is time-limited to 30 days from >>>(Q: when?).
-- The Commerce preview environment can only be successfully deployed and initialized on an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM). The main limitation of this OneBox VM topology is the number of current users that the preview environment can support.
+- Although the Commerce preview environment itself has no geographical limitation, components of the environment such as the Retail Cloud Scale Unit (RCSU) and e-Commerce applications can only be provisioned in the United States.
+- Use of the Commerce preview environment is time-limited to 30 days from the provisioning of e-Commerce.
+- The Commerce preview environment can only be successfully deployed and initialized on an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM). The main limitation of this OneBox VM topology is the number of concurrent users that the preview environment can support.
 - The Commerce preview environment can only be evaluated until the general availability (GA) of the Dynamics 365 Commerce product. New demo environments will be available after GA.
 
 ## Get started
