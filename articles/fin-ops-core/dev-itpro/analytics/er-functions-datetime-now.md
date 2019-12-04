@@ -2,10 +2,10 @@
 # required metadata
 
 title: NOW ER function
-description: This topic explains how the NOW ER function is used
+description: This topic provides information about how the NOW ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,8 +50,7 @@ The result datetime value.
 
 ## Example
 
-`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server datetime, December 24, 2015, as **"24-12-2015"**, based on the specified custom
-format.
+`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server datetime, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.
 
 ## Additional resources
 
