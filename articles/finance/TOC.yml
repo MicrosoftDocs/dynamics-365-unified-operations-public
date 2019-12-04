@@ -72,10 +72,6 @@
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-          - name: Finance and Operations apps 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
-          - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
             href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
         - name: Removed or deprecated features

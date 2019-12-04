@@ -837,11 +837,11 @@ This topic shows the formal grammar of the X++ language.
 
 This section describes the grammar of X++ in Backus Naur Form (BNF). A small example of BNF is described here.
 
-    AA ::= BB  CC_SYM
-    BB ::= JJ_SYM
-       ::= KK_SYM
-
- 
+```xpp
+AA ::= BB  CC_SYM
+BB ::= JJ_SYM
+   ::= KK_SYM
+```
 
 `AA` is the name of a production rule. An `AA` requires a `BB`, followed by a CC\_SYM. A `BB` is also a production rule. Therefore, `BB` is not a terminal. `BB` must be either a JJ\_SYM or a KK\_SYM. Both JJ\_SYM and KK\_SYM are terminals because they are not the names of any other production rules. CC\_SYM is also a terminal.
 
@@ -851,6 +851,7 @@ In the BNF for X++ grammar, most of the terminals have \_SYM as the suffix of th
 
 This section contains the BNF that defines the grammar of X++.
 
+```xpp
     CMPL_UNIT ::= RETTYPEID  FUNC_HDR  FUNC_HEAD  BODY
               ::= RETTYPEID  DATA_HDR  CLASS_DECL
               ::= EXPR_HDR  IF_EXPR  SEMIOPT
@@ -1348,7 +1349,7 @@ This section contains the BNF that defines the grammar of X++.
            ::= CHANGESITE_SYM
     UNCHECKED_STMT ::= UNCHECKED_HEADER  STATEMENT
     UNCHECKED_HEADER ::= UNCHECKED_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
-
+```
  
 
 ## X++ Language Syntax is Stricter in Microsoft Dynamics AX 2012

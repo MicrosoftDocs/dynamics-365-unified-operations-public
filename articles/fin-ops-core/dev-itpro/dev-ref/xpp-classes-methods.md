@@ -60,7 +60,7 @@ Instance variables are **protected** by default. This means that they can only b
 
 The following example shows how to use accessor methods to make the variable data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected variable. The variable **lastName** is public, so code can directly get and set the value of the variable.
 
-```X++
+```xpp
 // This is the class definition.
 public class HasAFirstName
 {
@@ -99,7 +99,7 @@ To create an instance of a class, you must instantiate it by using a *constructo
 
 The following examples defines a parameterless constructor in the **Point** class.
 
-```X++
+```xpp
 class Point
 {
 
@@ -126,7 +126,7 @@ Following is information about how to create a clean inheritance model and minim
 
 A class constructor can instantiate other objects in addition to creating an instance of the class. For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds. In this case, the **Point** class has a constructor that has two **real** parameters.
 
-```X++
+```xpp
 
 class Point
 {
@@ -172,7 +172,7 @@ info(any2Str(customRectangle.lowerLeft.y));
 
 The constructor, **new**, returns a new instance of the class. The following code example creates two instances of the Point class.
 
-```X++
+```xpp
 // Declare a variable to refer to a Point instance.
 Point myPoint;
 
@@ -195,7 +195,7 @@ Use the **finalize** method to explicitly destroy an object. There are no implic
 
 The following example shows the basic structure for a call to the **finalize** method.
 
-```X++
+```xpp
 // From any method in a class.
 if (condition)
 {
@@ -208,7 +208,7 @@ if (condition)
 
 Set the reference variable to **null** to terminate an object. This approach destroys an object only if no other variables point to that object. You should verify that other code isn't using the variable. The following example creates an reference variable and then sets it to **null**.
 
-```X++
+```xpp
 Point myPoint = new Point();
 myPoint = null;
 ```
@@ -219,7 +219,7 @@ myPoint = null;
 
 Instance methods are embedded in each instance that is created from the class. You must instantiate the object before you can use the method. The following code shows how to define an instance method and call it from an instance.
 
-```X++
+```xpp
 class Square
 {
 
@@ -248,8 +248,8 @@ Static methods, which are also known as *class methods*, belong to a class and a
 
 You use the following syntax to call static methods.
 
-```X++
-    ClassName::methodName();
+```xpp
+ClassName::methodName();
 ```
 
 If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [X++ static classes](xpp-static-classes.md).
@@ -258,7 +258,7 @@ If you convert an instance method to a static method, you must restart the clien
 
 A **main** method is a class method that is run directly from a menu option. The method should only create an instance of the object and then call the required member methods. The **\_args** parameter lets you transfer data to the method.
 
-```X++
+```xpp
 static void main (Args _args)
 {
     // Your code here.
@@ -275,17 +275,17 @@ A return type is required for each method. If a method doesn't return anything, 
 
 The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
 
-```X++
-    void methodNameNoReturnValue()
-    {
-        // Your code here.
-    }
+```xpp
+void methodNameNoReturnValue()
+{
+    // Your code here.
+}
 
-    // If a method returns something, you must specify the return type and include a return statement.
-    int methodNameIntegerReturnValue()
-    {
-        return 1;
-    }
+// If a method returns something, you must specify the return type and include a return statement.
+int methodNameIntegerReturnValue()
+{
+    return 1;
+}
 ```
 
 ### Syntax
@@ -310,7 +310,7 @@ If you use the **anytype** return type, the method can return any data type.
 
 ### Example of a method that doesn't have a return type
 
-```X++
+```xpp
 void update ()
 {   
     // Variable declared and initialized
@@ -336,7 +336,7 @@ void update ()
 
 In the following example, the **checkAccountBlocked** method returns a Boolean value and acts on the **amountCur** parameter.
 
-```X++
+```xpp
 boolean checkAccountBlocked(AmountCur amountCur)
 {
     if (this.blocked == CustVendorBlocked::All 
@@ -365,7 +365,7 @@ Several modifiers can be applied to method declarations. Some of the modifiers c
 
 The following examples show only the method headers.
 
-```X++
+```xpp
 // A method that cannot be overridden
 final int dontAlterMe() 
 
@@ -404,7 +404,7 @@ Parameters can be initialized in the method declaration. In this case, the param
 ### Examples of optional parameters
 
 The following code example shows a class with a default parameter.
-```X++
+```xpp
 // This is an example of a function being used as the default.
 public class Person 
 {
@@ -440,7 +440,7 @@ info("Age in years: " + num2str(person.CalculateAgeAsOfDate(2\1\2044),2,0,0,0));
 
 This is an example of how you cannot skip to a second optional parameter. The first method has two optional parameters. The second method is a caller of the first method. The caller wants to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
 
-```X++
+```xpp
 public class Additions 
 {
     static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
@@ -464,7 +464,7 @@ info(int2Str(Additions::AddThreeInts(1, 2, 99)));
 
 Class variables are protected by default. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference variables, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.
 
-```X++
+```xpp
 class Point
 {
     // Instance variables
@@ -503,7 +503,7 @@ class Point
 
 These method declarations show how the **Point** class provides access to its variables from the outside world. Other objects can manipulate the instance variables of **Point** objects by using the accessor methods.
 
-```X++
+```xpp
 Point myPoint = new Point();
 // Set the x variable using the accessor method.
 myPoint.setX(4.0);
@@ -532,7 +532,7 @@ You can declare functions inside a method. These are called local functions. Whi
 
 The following example shows valid declarations of two local functions, **localFunctionA** and **localFunctionB**. Calls to the local functions occur after the function declarations in the example, as is required.
 
-```X++
+```xpp
 static void StaticFunction()
 {
     int number = 654;
