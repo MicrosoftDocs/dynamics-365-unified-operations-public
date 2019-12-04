@@ -63,7 +63,7 @@ The Commerce preview environment can only be deployed to the North America geogr
 Retail Cloud Scale Unit (RCSU) and Commerce are completely software as a service (SaaS) and must be cloud hosted.
  
 ###  Is there a time limit on running the Commerce preview environment?
-The time limit on running the Commerce preview environment is 30 days from from provisioning e-Commerce.
+The time limit on running the Commerce preview environment is 30 days from provisioning e-Commerce.
  
 ###  Why is the Commerce preview environment only available for 30 days? 
 If 30 days is not enough for evaluation, you should reach out to us using the [Commerce preview extension form] (https://aka.ms/Dynamics365CommercePreviewExtensionForm).
