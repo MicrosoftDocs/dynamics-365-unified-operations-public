@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
 
-[!include [banner](includes/banner.md)]
-
 This topic answers common questions associated about what data is synchronized when Dynamics 365 Talent is integrated with Dynamics 365 Finance.
 
 ## Is all data synchronized or just some data entities?
