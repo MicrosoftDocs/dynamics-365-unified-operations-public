@@ -198,7 +198,7 @@ Since the call to updateValues() has two parameters in this case, it needs to be
 DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
 
 > [!NOTE] 
-If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit is not needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.
+> If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit is not needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.
 
 ## Methods to potentially remove
 Any leftover methods on the datasource or tabpage/group that holds the Dimension Entry control can be removed if there is no custom logic. The following table shows examples of methods without customizations which should be deleted.
