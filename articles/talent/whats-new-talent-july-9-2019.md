@@ -55,7 +55,7 @@ Changes described in this section apply to build number 8.1.2374.
 
 ### Platform update 28 for Finance and Operations
 
-For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### Entity support for custom fields in Common Data Service 
 
