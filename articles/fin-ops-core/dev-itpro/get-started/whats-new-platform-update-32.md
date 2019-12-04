@@ -78,7 +78,7 @@ To install the redistributables, follow these steps.
 
 For more information about saved views, see [User productivity – Saved views](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
 
-### Improved responsiveness of Action Panes on smaller viewports
+### Improved responsiveness of Action Panes on smaller screens
 
 When pages that have an Action Pane are opened on a smaller screen, the Action Pane is collapsed and can't be pinned open.
 
