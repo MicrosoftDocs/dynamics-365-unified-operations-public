@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # User can access Core HR but not Onboard or Attract
 
-[!include [banner](includes/banner.md)]
-
 **Environment details**
 
 - The Microsoft Dynamics Lifecycle Services (LCS) deployment was done by user A.
