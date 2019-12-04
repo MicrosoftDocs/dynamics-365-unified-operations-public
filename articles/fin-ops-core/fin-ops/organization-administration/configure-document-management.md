@@ -102,6 +102,10 @@ The defaul cloud-based WOPI server in Finance + Operations can't read the attach
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
 
+### Document preview (WOPI) will not work in environments with IP whitelisting enabled
+
+Document preview (WOPI) will not work in environments with IP whitelisting enabled, since the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
+
 ## Other configuration
 
 Here are some other configuration options to consider, although these options are rarely used:
