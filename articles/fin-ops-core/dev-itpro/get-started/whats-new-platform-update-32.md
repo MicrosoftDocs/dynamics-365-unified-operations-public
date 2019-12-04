@@ -50,33 +50,11 @@ For more information about this feature, see [Data management export file size l
 
 ### Finance and Operations AOS (kernel) improvements
 
-As Microsoft focuses on continuous improvements to provide a more reliable and stable experience for its customers, these improvements are a required milestone.
-
-Starting in Platform update 32, AOS (kernel) will uptake Visual C++ 17 runtime libraries to take advantage of compiler performance optimizations. Platform engineers will benefit from the new upgrade while they use their development environments to provide a more robust and reliable experience for our customers.
-
-This change requires that existing environments be updated so that they use the Visual C++ 17 redistributables.
-
-- For Microsoft-managed Standard Acceptance Test sandbox and higher (Tier 2 and higher) environments, and production environments, the Visual C++ 17 redistributables are already installed. No action is required.
-- For Microsoft-managed dev (Tier 1) environments, customers, partners, and independent software vendors (ISVs) must restart their virtual machines (VMs) before they apply Platform update 32.
-- For non-managed dev, build, test, demo (Tier 1), and on-premises environments, customers, partners, and ISVs must download and install the Visual C++ 17 redistributables from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) and restart their machines.
-
-If the latest redistributables are already installed, no action is required.
-
-If you apply Platform update 32, and the redistributables are missing, you might receive an error message when you start your services. In this case, the following procedure can help resolve the issue.
-
-To install the redistributables, follow these steps.
-
-1. In LCS, select the **Shared asset library** tile.
-2. In the list of asset types, select **Model**.
-3. Select **VC++ 17 Redistributables**.
-
-    The download starts automatically.
-
-4. Apply the redistributables on your machine, and restart it.
+For more information about this feature, see [Finance and Operations AOS (kernel) improvements](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/finance-and-operations-aos-kernel-improvements).
 
 ### Continued stabilization of saved views
 
-For more information about saved views, see [User productivity – Saved views](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
+For more information about this feature, see [User productivity – Saved views](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-saved-views).
 
 ### Improved responsiveness of Action Panes on smaller screens
 
