@@ -109,71 +109,73 @@ This change corrects a unique scenario where a circular reference error appears 
 
 The following Common Data Service entities now support custom fields:
 
-Bank Account Disbursement | cdm_bankaccountdisbursement
-Benefit Calculation Frequency | cdm_benefitcalculationfrequency
-Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod
-Benefit Calculation Rate | cdm_benefitcalculationrate
-Benefit Calculation Rate Detail | cdm_benefitcalculationratedetail
-Benefit Option | cdm_benefitoption
-Benefit Plan | cdm_benefitplan (Not enabled for custom field support)
-Benefit Type | cdm_benefittype
-Business Process Calendar | cdm_businessprocesscalendar
-Business Process Group Assignment | cdm_businessprocessgroupassignment
-Business Process Library Task Group | cdm_businessprocesslibrarytaskgroup
-Business Process Stage | cdm_businessprocessstage
-Checklist Template Header | cdm_businessprocesstemplateheader
-Checklist Template Task | cdm_businessprocesstemplatetask
-Company | cdm_company
-Compensation Fixed Plan | cdm_compensationfixedplan
-Compensation Grid | cdm_compensationgrid
-Compensation Level | cdm_compensationlevel
-Compensation Pay Frequency | cdm_compensationpayfrequency
-Compensation Reference Point Setup | cdm_compensationreferencepointsetup
-Compensation Reference Point Setup Line | cdm_compensationreferencepointsetupline
-Compensation Region | cdm_compensationregion
-Compensation Structure | cdm_compensationstructure
-Compensation Variable Plan | cdm_compensationvariableplan
-Compensation Variable Plan Level | cdm_compensationvariableplanlevel
-Compensation Variable Plan Type | cdm_compensationvariableplantype
-Department | cdm_department
-Employment | cdm_employment
-Ethnic Origin | cdm_ethnicorigin
-Fixed Compensation Event | cdm_fixedcompensationevent
-Job | cdm_job
-Job Function | cdm_jobfunction
-Job Position | cdm_jobposition
-Job Type | cdm_jobtype
-Language | cdm_language
-Leave Bank Transaction | cdm_leavebanktransaction
-Leave Enrollment | cdm_leaveenrollment
-Leave Plan | cdm_leaveplan
-Leave Request | cdm_leaverequest
-Leave Request Detail | cdm_leaverequestdetail
-Leave Type | cdm_leavetype
-Leave Type Reason Code | cdm_leavetypereasoncode
-Pay Cycle | cdm_paycycle
-Pay Period | cdm_payperiod
-Payroll Earning Code | cdm_payrollearningcode
-Person Identification Issuing Agency | cdm_personidentificationissuingagency
-Position Type | cdm_positiontype
-Position Worker Assignment | cdm_positionworkerassignmentmap
-Reason Code | cdm_reasoncode
-Skill Type | cdm_skilltype
-Tax Region | cdm_taxregion
-Vesting Rule | cdm_vestingrule
-Veteran Status | cdm_veteranstatus
-Work Calendar | cdm_workcalendar
-Work Calendar Day | cdm_workcalendarday
-Work Calendar Holiday |cdm_workcalendarholiday
-Work Calendar Holiday Line | cdm_workcalendarholidayline
-Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support)
-Worker | cdm_worker
-Worker Address | cdm_workeraddress
-Worker Bank Account | cdm_workerbankaccount
-Worker Fixed Compensation | cdm_workerfixedcompensation
-Worker Personal Detail | cdm_workerpersonaldetail
-Worker Person Identification Number | cdm_workerpersonidentificationnumber
-Worker Person Identification Type | cdm_workerpersonidentificationtype
+| Name | Entity |
+| --- | --- |
+| Bank Account Disbursement | cdm_bankaccountdisbursement |
+| Benefit Calculation Frequency | cdm_benefitcalculationfrequency |
+| Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |
+| Benefit Calculation Rate | cdm_benefitcalculationrate |
+| Benefit Calculation Rate Detail | cdm_benefitcalculationratedetail |
+| Benefit Option | cdm_benefitoption |
+| Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |
+| Benefit Type | cdm_benefittype |
+| Business Process Calendar | cdm_businessprocesscalendar |
+| Business Process Group Assignment | cdm_businessprocessgroupassignment |
+| Business Process Library Task Group | cdm_businessprocesslibrarytaskgroup |
+| Business Process Stage | cdm_businessprocessstage |
+| Checklist Template Header | cdm_businessprocesstemplateheader |
+| Checklist Template Task | cdm_businessprocesstemplatetask |
+| Company | cdm_company |
+| Compensation Fixed Plan | cdm_compensationfixedplan |
+| Compensation Grid | cdm_compensationgrid |
+| Compensation Level | cdm_compensationlevel |
+| Compensation Pay Frequency | cdm_compensationpayfrequency |
+| Compensation Reference Point Setup | cdm_compensationreferencepointsetup |
+| Compensation Reference Point Setup Line | cdm_compensationreferencepointsetupline |
+| Compensation Region | cdm_compensationregion |
+| Compensation Structure | cdm_compensationstructure |
+| Compensation Variable Plan | cdm_compensationvariableplan |
+| Compensation Variable Plan Level | cdm_compensationvariableplanlevel |
+| Compensation Variable Plan Type | cdm_compensationvariableplantype |
+| Department | cdm_department |
+| Employment | cdm_employment |
+| Ethnic Origin | cdm_ethnicorigin |
+| Fixed Compensation Event | cdm_fixedcompensationevent |
+| Job | cdm_job |
+| Job Function | cdm_jobfunction |
+| Job Position | cdm_jobposition |
+| Job Type | cdm_jobtype |
+| Language | cdm_language |
+| Leave Bank Transaction | cdm_leavebanktransaction |
+| Leave Enrollment | cdm_leaveenrollment |
+| Leave Plan | cdm_leaveplan |
+| Leave Request | cdm_leaverequest |
+| Leave Request Detail | cdm_leaverequestdetail |
+| Leave Type | cdm_leavetype |
+| Leave Type Reason Code | cdm_leavetypereasoncode |
+| Pay Cycle | cdm_paycycle |
+| Pay Period | cdm_payperiod |
+| Payroll Earning Code | cdm_payrollearningcode |
+| Person Identification Issuing Agency | cdm_personidentificationissuingagency |
+| Position Type | cdm_positiontype |
+| Position Worker Assignment | cdm_positionworkerassignmentmap |
+| Reason Code | cdm_reasoncode |
+| Skill Type | cdm_skilltype |
+| Tax Region | cdm_taxregion |
+| Vesting Rule | cdm_vestingrule |
+| Veteran Status | cdm_veteranstatus |
+| Work Calendar | cdm_workcalendar |
+| Work Calendar Day | cdm_workcalendarday |
+| Work Calendar Holiday |cdm_workcalendarholiday |
+| Work Calendar Holiday Line | cdm_workcalendarholidayline |
+| Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |
+| Worker | cdm_worker |
+| Worker Address | cdm_workeraddress |
+| Worker Bank Account | cdm_workerbankaccount |
+| Worker Fixed Compensation | cdm_workerfixedcompensation |
+| Worker Personal Detail | cdm_workerpersonaldetail |
+| Worker Person Identification Number | cdm_workerpersonidentificationnumber |
+| Worker Person Identification Type | cdm_workerpersonidentificationtype |
 
 ## In preview
 
