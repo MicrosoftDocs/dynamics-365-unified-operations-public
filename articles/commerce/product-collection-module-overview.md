@@ -43,7 +43,7 @@ Product collection modules represent physical products and services on the websi
 
 The sources for product collections can be lists of three types:
 
-- Editorial lists of products that are manually defined in Dynamics 365 Retail as related products for a product, or product lists
+- Editorial lists of products that are manually defined in Commerce as related products for a product, or product lists
 - Algorithmic lists, such as lists of new, best-selling, or trending products
 - Recommendation lists that are based on machine learning
 
@@ -62,8 +62,8 @@ The following table describes various types of product collection modules in Dyn
 |----------------------------|------|-------------|
 | Category browse            | Editorial | This type of product collection module uses the navigation category hierarchy that the retailer created for a retail channel to show a browsing flow for products that are offered in a specific site category. |
 | Search results             | Search query | This type of product collection module shows a list of products that best match the search query that the customer entered. |
-| Related products           | Editorial | This type of product collection module shows a list of products that a merchandising manager has configured as related products in Retail, for the relation type that the author selected. |
-| Curated product lists      | Editorial | This type of product collection module shows custom lists that merchandisers and editors have created in Retail. |
+| Related products           | Editorial | This type of product collection module shows a list of products that a merchandising manager has configured as related products in Commerce, for the relation type that the author selected. |
+| Curated product lists      | Editorial | This type of product collection module shows custom lists that merchandisers and editors have created in Commerce. |
 | New                        | Algorithmic | This type of product collection module shows a list of the newest products that have been assorted to channels and catalogs. |
 | Best selling               | Algorithmic | This type of product collection module shows a list of products that are ranked by the highest number of sales. |
 | Trending                   | Algorithmic | This type of product collection module shows a list of the highest-performing products for a given period. |
@@ -90,8 +90,8 @@ The following table shows the list types that are available for selection in the
 | Type                       | Description | General practice | Context that can be derived from the page context | Context that the author can override the page context with |
 |----------------------------|-------------|------------------|-------------------------------------|-----------------------------------------------|
 | Products by category       | A list of products that belong to a given category. This category is determined from either the page context or the context that the author provides. | Enrich category page, home page, checkout and cart pages, and product pages | Category | Category determined by author |
-| Related products           | A list of products that a merchandising manager has configured as related products in Retail for the relation type. | Product pages, checkout and cart pages, wish list page, and customer account page | Product, Relation type (Mandatory)  | Product, Relation type |
-| Curated                    | A custom list that merchandisers and editors have created in Retail. | Enrich category page, home page, checkout and cart pages, and product pages | Not applicable | List picker |
+| Related products           | A list of products that a merchandising manager has configured as related products in Commerce for the relation type. | Product pages, checkout and cart pages, wish list page, and customer account page | Product, Relation type (Mandatory)  | Product, Relation type |
+| Curated                    | A custom list that merchandisers and editors have created in Commerce. | Enrich category page, home page, checkout and cart pages, and product pages | Not applicable | List picker |
 | Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category | Category determined by author |
 | Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Product pages, and checkout and cart pages | Product, Cart | Include cart |
 | People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Product pages, and checkout and cart pages | Product, Cart | Not applicable |
