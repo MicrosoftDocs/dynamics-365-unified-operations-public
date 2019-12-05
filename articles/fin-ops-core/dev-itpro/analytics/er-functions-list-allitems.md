@@ -2,7 +2,7 @@
 # required metadata
 
 title: ALLITEMS ER function
-description: This topic provides information about how the ALLITEMS ER function is used.
+description: This topic provides information about how the ALLITEMS Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/04/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ALLITEMS">ALLITEMS Function</a>
+# <a name="ALLITEMS">ALLITEMS ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ALLITEMS` function runs as an in-memory selection and returns a new flattened *Record list* as a list of records representing all items that match the specified path.
+The `ALLITEMS` function runs as an in-memory selection and returns a new flattened *Record list* value as a list of records that represents all items that match the specified path.
 
 ## Syntax
 
@@ -44,29 +44,29 @@ ALLITEMS (path)
 
 ## Arguments
 
-`path` : *Record list*
+`path`: *Record list*
 
-A valid path to a data source of the **Record list** data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the ER expression builder at design time.
+The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the Electronic reporting (ER) expression builder at design time.
 
-It is not recommended to use this function for transactional data sources that may potentially contain the large volume of data. Instead, consider using the [ALLTEMSQUERY](er-functions-list-allitemsquery.md) function.
+We don't recommend that you use this function for transactional data sources that might contain a large volume of data. Instead, consider using the [ALLTEMSQUERY](er-functions-list-allitemsquery.md) function.
 
 ## Example 1
 
-If you enter `SPLIT("abcdef" , 2)` as the data source **DS**, the expression `COUNT( ALLITEMS (DS))` returns **3**.
+If you enter `SPLIT("abcdef" , 2)` as data source **DS**, the expression `COUNT( ALLITEMS (DS))` returns **3**.
 
 ## Example 2
 
-If you enter **Vend** as the data source of the *Record list* type that refers to the **VendTable** application table, the expression `ALLITEMS (Vend.'<Relations'.ContactPerson)` returns the flattened list of records having the **ContactPerson** table structure and containing all contact persons that are accessible by using the **ContactPerson.ContactForParty == VendTable.Party** relation and is available for all vendors from the referred vendors table.
+If you enter **Vend** as the data source of the *Record list* type that refers to the VendTable application table, the expression `ALLITEMS (Vend.'<Relations'.ContactPerson)` returns a flattened list of records that has the **ContactPerson** table structure and contains all contact persons that can be accessed by using the **ContactPerson.ContactForParty == VendTable.Party** relation, and that is available for all vendors from the referenced vendor table.
 
 ## Additional resources
 
