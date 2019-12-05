@@ -61,7 +61,7 @@ Offer data is the smallest unit inside the offer package template. A typical off
     > 
     > To create a list of values for a placeholder, upload an Excel spreadsheet that has one column with the placeholder as the column title and the list of choices in the rows underneath. If the same placeholder is referenced in another data rule set, ensure they have a common set of values.
     
-    1.  To create a new offer data section, click **Add a section** and enter a unique name for the section.
+1.  To create a new offer data section, click **Add a section** and enter a unique name for the section.
 
 1.  To add offer data placeholders to any section, click **Add offer data** and enter a unique name for the placeholder.
 
