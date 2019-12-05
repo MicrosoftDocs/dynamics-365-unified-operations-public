@@ -72,14 +72,14 @@ To create a publish group for your site in Commerce authoring tools, follow thes
 
 You can select your publish group context in one of two ways:
 
-- The first option is to click on the Site Builder context control (directly below **Publish Groups**) in the left navigation panel, and select your desired authoring context. This is also where you can return to your default **Live site** context.
+- The first option is to click on the context control that is located directly below **Publish Groups** in the left navigation panel, and select your desired authoring context from the options. This is also where you can return to your default **Live site** context.
 
-  >[!Note]
-  >The "Live site" context is the default view where you can view and make changes directly to your website without using a publish group. The "Live site" context represents the latest direct updates to the published version of your site.
+>[!NOTE]
+>The "Live site" context is the default view where you can view and make changes directly to your website without using a publish group. The "Live site" context represents the latest direct updates to the published version of your site.
 
-- The second option is to simply click on the name of the publish group in the list view shown by selecting **Publish groups** from the left navigation menu.  This will also set the publish group context in the left navigation context control mentioned above.
+- The second option is to select **Publish groups** from the left navigation menu and then select the name of the publish group under **Publish Groups**. This will also set the publish group context in the left navigation pane context control.
 
-Once you have set your context, which will show either "Live site" or the name of your chosen publish group in the left navigation menu, you will be operating within that context for previewing and editing site content. 
+Once you have set your authoring context, which will show as either **Live site** or the name of your chosen publish group in the left navigation pane, you will be operating within that authoring context when previewing and editing site content. 
 
 ## Add pages or other items to a publish group
 
