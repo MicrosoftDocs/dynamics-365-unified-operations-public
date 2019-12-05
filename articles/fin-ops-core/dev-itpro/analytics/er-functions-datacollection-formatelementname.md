@@ -2,10 +2,10 @@
 # required metadata
 
 title: FORMATELEMENTNAME ER function
-description: This topic explains how the FORMATELEMENTNAME ER function is used
+description: This topic provides inofrmation about how the FORMATELEMENTNAME ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,11 +50,11 @@ The result text value.
 
 ## Usage notes
 
-This function can be called in ER expressions that were configured for the **Collected data key name** and **Collected data key value** property of an ER format component from the **Text** group that reside under the **Common \\ File** component the **Collect output details** flag of which is turned on.
+This function can be called in ER expressions that were configured for the **Collected data key name** and **Collected data key value** property of an ER format component from the **Text** group that reside under the **Common \\ File** component the **Collect output details** flag which is turned on.
 
 ## Example
 
-To learn more about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components**
+To learn more about how to use this function, see the task guide, [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md), which is part of the **Acquire/Develop IT service/solution components**
 business process.
 
 ## Additional resources
