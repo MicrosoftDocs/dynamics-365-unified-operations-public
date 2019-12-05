@@ -2,7 +2,7 @@
 # required metadata
 
 title: DAYS ER function
-description: This topic provides information about how the DAYS ER function is used.
+description: This topic provides information about how the DAYS Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/04/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DAYS">DAYS Function</a>
+# <a name="DAYS">DAYS ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `DAYS` function returns an *Integer* value that represents the number of days between the first specified date and the second specified date.
+The `DAYS` function returns an *Integer* value that represents the number of days between one specified date and a second specified date.
 
 ## Syntax
 
@@ -44,28 +44,27 @@ DAYS (date 1, date 2) as Integer
 
 ## Arguments
 
-`date 1` : *Date*
+`date 1`: *Date*
 
-A date that represents the start date for calculation of number of days.
+A date value that represents the start date for the calculation of the number of days.
 
-`date 2` : *Date*
+`date 2`: *Date*
 
-A date that represents the end date for calculation of number of days.
+A date value that represents the end date for the calculation of the number of days.
 
-## Returns
+## Return values
 
 *Integer*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
-The `DAYS` function returns a positive value when the first date is later than the second date, returns **0** (zero) when the first date equals the second date, or returns a negative value when the first date is earlier than the second date.
+The `DAYS` function returns a positive value when the first date is later than the second date, it returns **0** (zero) when the first date equals the second date, and it returns a negative value when the first date is earlier than the second date.
 
 ## Example
 
-`DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS ( NOW(), 1), "yyyyMMdd"),
-"yyyyMMdd"))` returns **-1**.
+`DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS ( NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))` returns **-1**.
 
 ## Additional resources
 
