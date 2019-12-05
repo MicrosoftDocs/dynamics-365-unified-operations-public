@@ -2,10 +2,10 @@
 # required metadata
 
 title: TRIM ER function
-description: This topic explains how the TRIM ER function is used
+description: This topic provides information about how the TRIM ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `TRIM` function returns a *String* value of the specified text after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.
+The `TRIM` function returns a *String* value of the specified text after the leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.
 
 ## Syntax
 
