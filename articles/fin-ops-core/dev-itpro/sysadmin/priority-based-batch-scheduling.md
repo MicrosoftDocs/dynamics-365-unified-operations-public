@@ -40,12 +40,12 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 > [!IMPORTANT]
 > This feature is available only in a restricted preview as part of Platform update 31.
 
-A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. Normal is the default value and is also applied to all existing batch groups when the feature is enabled. **Reserved capacity** represents the highest priority and starting in Platform Update 32, it ispossible to dedicate reserved capacity for jobs with this priority. For more information, see the section <a href="reserved">Set batch reserved capacity level</a> later in this topic.
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. Normal is the default value and is also applied to all existing batch groups when the feature is enabled. **Reserved capacity** represents the highest priority and starting in Platform Update 32, it ispossible to dedicate reserved capacity for jobs with this priority. For more information, see the section <a href="reserved">Set batch reserved capacity</a> later in this topic.
 
 > [!NOTE]
 > Because the schedule priority is set to **Normal** for all existing batch groups when the feature is enabled, it is important to plan and update the scheduling priority for each batch group so that it represents the relative priorities based on business requirements for the related batch jobs and their related business processes.
 
-Upgrade support for existing batch jobs are available with the release of Platform update 32. For more information, see the section <a href="automatic">Automatic batch group migration for batchjobs</a> later in this topic.
+Upgrade support for existing batch jobs are available with the release of Platform update 32. For more information, see the section <a href="automatic">Automatic batch group migration for batch jobs</a> later in this topic.
 
 Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
 
