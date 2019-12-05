@@ -2,7 +2,7 @@
 # required metadata
 
 title: TODAY ER function
-description: This topic provides information about how the TODAY ER function is used.
+description: This topic provides information about how the TODAY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,27 +30,27 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="TODAY">TODAY Function</a>
+# <a name="TODAY">TODAY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `TODAY` function returns a *Date* value of the current application server date.
+The `TODAY` function returns a *Date* value that represents the current application server date.
 
-### Syntax
+## Syntax
 
 ```
 TODAY ()
 ```
 
-## Returns
+## Return values
 
 *Date*
 
-The result date value.
+The resulting date value.
 
 ## Example
 
-`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified custom format.
+`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified custom format.
 
 ## Additional resources
 
