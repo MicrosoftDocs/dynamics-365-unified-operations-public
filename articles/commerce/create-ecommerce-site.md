@@ -39,7 +39,7 @@ This topic describes the tasks that are associated with the creation of a new e-
 
 ## Overview
 
-To start to develop your e-Commerce site, you must first establish a new site in the site authoring environment. Before you can create a new site, at least one online store must be created in Dynamics 365 Retail. 
+To start to develop your e-Commerce site, you must first establish a new site in the site authoring environment. Before you can create a new site, at least one online store must be created in Commerce. 
 
 ## Set up your site
 
