@@ -2,7 +2,7 @@
 # required metadata
 
 title: NOW ER function
-description: This topic provides information about how the NOW ER function is used.
+description: This topic provides information about how the NOW Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/04/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NOW">NOW Function</a>
+# <a name="NOW">NOW ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `NOW` function returns a *DateTime* value of the current application server date and time.
+The `NOW` function returns a *DateTime* value that represents the current application server date and time.
 
 ## Syntax
 
@@ -42,15 +42,15 @@ The `NOW` function returns a *DateTime* value of the current application server 
 NOW ()
 ```
 
-## Returns
+## Return values
 
 *DateTime*
 
-The result datetime value.
+The resulting date/time value.
 
 ## Example
 
-`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server datetime, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.
+`DATETIMEFORMAT (NOW(), "dd-MM-yyyy")` returns the current application server date/time value, December 24, 2015, as **"24-12-2015"**, based on the specified custom format.
 
 ## Additional resources
 
