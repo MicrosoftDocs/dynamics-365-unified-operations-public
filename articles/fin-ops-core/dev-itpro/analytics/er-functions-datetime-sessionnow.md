@@ -2,7 +2,7 @@
 # required metadata
 
 title: SESSIONNOW ER function
-description: This topic provides information about how the SESSIONNOW ER function is used.
+description: This topic provides information about how the SESSIONNOW Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/04/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="">SESSIONNOW Function</a>
+# <a name="">SESSIONNOW ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `SESSIONNOW` function returns a *DateTime* value of the current application session date and time.
+The `SESSIONNOW` function returns a *DateTime* value that represents the current application session date and time.
 
 ## Syntax
 
@@ -42,15 +42,15 @@ The `SESSIONNOW` function returns a *DateTime* value of the current application 
 SESSIONNOW ()
 ```
 
-## Returns
+## Return values
 
 *DateTime*
 
-The result datetime value.
+The resulting date/time value.
 
 ## Example
 
-`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session datetime, December 24, 2015, as **"24.12.2015"**, based on the selected German culture the specified format.
+`DATETIMEFORMAT (SESSIONNOW(), "d", "DE")` returns the current application session date/time value, December 24, 2015, as **"24.12.2015"**, based on the selected German culture and the specified format.
 
 ## Additional resources
 
