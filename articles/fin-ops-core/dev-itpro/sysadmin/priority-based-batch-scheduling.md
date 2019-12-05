@@ -40,9 +40,16 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 > [!IMPORTANT]
 > This feature is available only in a restricted preview as part of Platform update 31.
 
-A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Reserved capacity** represents the highest priority.
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. Normal is the default value and is also applied to all existing batch groups when the feature is enabled. **Reserved capacity** represents the highest priority and from Platform update 32 it ispossible to dedicate reserved capacity for jobs with this priority, see [Set batch reserved capacity level](#_Set_batch_reserved).
 
-Additional functionality is planned for future updates.
+> [!NOTE]
+> Since the schedule priority is set to Normal for all existing batch groups
+> when the feature is enabled it is important to plan and update the
+> scheduling priority for each batch group so that it represents the relative
+> priorities based on business requirements for the related batch jobs and
+> their related business processes.
+
+Upgrade support for existing batch jobs are available with the release of Platform update 32, see [Automatic batch group migration for batchjobs](#_Automatic_batch_group).
 
 Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
 
@@ -89,11 +96,11 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 1. On the **Batch job** page, in the **Batch tasks** section, select **New**.
 2. In the **Task description** field, enter a value.
 3. In the **Company accounts** field, select the company that the task will be run in.
-4. In the **Class name** field, select the process to run.
+4. In the **Class name** field, select the applicable process to be executed. Classes appear in the list only if the CanGoBatchJournal property is enabled.
 5. Select **Save**.
 6. Expand the **Batch task detail** FastTab to add more settings for the batch task, or to add constraints.
 7. On the **General** tab, set the **Ignore task failure** option to **Yes** to specify that failure of the task should not cause the job to fail.
-8. In the **Maximum retries** field, specify the number of times that a task should be retried before it's considered to have failed.
+8. In the **Maximum retries** field, specify the number of times that a task should be retried before it's considered to have failed.un.
 9. Set the **Private** option to **Yes** if the task should be run only by the user who created the job. This option is applicable only to client tasks.
 10. On the **Constraints** tab, select **New** if the execution of the selected task should be dependent on the status of a preceding task for the job.
 11. In the **Task ID** field, select the preceding task.
@@ -102,3 +109,57 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 
 > [!NOTE]
 > If you enter more than one condition/constraint, and if all conditions must be met before the dependent task can run, select **All** as the condition type. If the dependent task can run after any of the conditions has been met, select **Any** as the condition type.
+
+16.  If the batch task supports input parameters, click **Parameters** and set
+    task specific parameters.
+
+17.  Click **OK.**
+
+18.  Click **Save.**
+
+## Set batch reserved capacity level
+
+1.  Go to **System administration** \> **Setup** \> **System parameters**.
+
+2.  Go to the **Batch global settings** tab and select a value for **Batch reserved capacity level**, to be used for batch jobs with Reserved capacity priority.
+
+    -   **No reserved capacity**: Default value
+
+    -   **Low reserved capacity**: 10%\*) of the cumulative batch threads are
+        reserved
+
+    -   **Medium reserved capacity**: 15%\*) of the cumulative batch threads are
+        reserved
+
+    -   **High reserved capacity:** 25%\*) of their the cumulative batch threads
+        are reserved
+
+>   \*) Sample values for illustrative purposes only. The actual reserved
+>   capacity will be dependent on batch server configuration and the number of
+>   available batch threads at any given point.
+
+1.  Click **Save**.
+
+> [!NOTE]   
+> Any reserved capacity is exclusive to batch jobs with Reserved capacity
+> priority only. The reserved capacity will not be made available for batch
+> jobs with other priorities, even when there is idle reserved capacity.
+
+> A new internal system batch job **System job to clean up expired batch
+> heartbeat records** with Class name **SysCleanupBatchHeartbeatTable** will
+> clean up the new **BatchHeartbeatTable** table. **BatchHeartbeatTable** is
+> an internal monitoring table used to determine, configure and distribute
+> reserved capacity threads among online nodes.
+
+## Automatic batch group migration for batch jobs
+
+Batch group information on the task are duplicated on the job to be used once the feature is enabled. The batch group assignment on the job is based on themost used batch group for the tasks for a job.
+
+A new system batch job **System job to seed batch group associations to batch jobs** with Class name **SysMigrateBatchGroupsForPriorityBasedScheduling** is introduced to manage this migration.
+
+The batch job is triggered every day at 1:00 AM, even if the **Batch priority-based scheduling** feature is disabled and will migrate the delta of applicable batch jobs since the last execution.
+
+It is recommended to review the automatic batch group assignment after the feature is enabled and the migration is complete. The **Batch group** field for tasks are kept read-only to facilitate this review. The field will also be propagated from the job when new batch tasks are added to support backward compatibility.
+
+The batch job is also executed when the feature is enabled to migrate any batch jobs since the last execution. The user that enables this feature will receive a notification with a reference to the migration batch job Id.
+
