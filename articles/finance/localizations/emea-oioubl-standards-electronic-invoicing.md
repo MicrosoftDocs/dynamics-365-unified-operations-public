@@ -49,7 +49,7 @@ The following country-specific formats of electronic invoices are available:
 -   xRechnung v.1.2 for Germany
 -   Open PEPPOL BIS Billing v.3.0 for European Union
 
-Electronic invoicing is based on [electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE) and European Union (EU).
+Electronic invoicing is based on [electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE), and the European Union (EU).
 
 -   OIOUBL Sales invoice - for AT, DK, and NO
 -   OIOUBL Sales credit note - for AT, DK, and NO
