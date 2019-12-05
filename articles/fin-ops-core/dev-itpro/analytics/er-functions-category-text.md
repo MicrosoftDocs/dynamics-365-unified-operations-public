@@ -2,10 +2,10 @@
 # required metadata
 
 title: List of ER functions of the text category
-description: This topic explains what text functions are supported in ER
+description: This topic provides information about the text functions that are supported in ER.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
