@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `FORMATELEMENTNAME` function returns a *String* value that represents the name of the current Electronic reporting (ER) format element.
+The `FORMATELEMENTNAME` function returns a *String* value that represents the name of the current Electronic reporting (ER) format's element.
 
 ## Syntax
 
