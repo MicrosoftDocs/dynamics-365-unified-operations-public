@@ -2,10 +2,10 @@
 # required metadata
 
 title: TODAY ER function
-description: This topic explains how the TODAY ER function is used
+description: This topic provides information about how the TODAY ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,8 +50,7 @@ The result date value.
 
 ## Example
 
-`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified
-custom format.
+`DATEFORMAT (TODAY (), "dd-MM-yyyy")` returns the current application server date, December 24, 2015, as the string **"24-12-2015"**, based on the specified custom format.
 
 ## Additional resources
 
