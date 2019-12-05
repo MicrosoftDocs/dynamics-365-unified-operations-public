@@ -100,7 +100,7 @@ This topic provides detailed information about India Goods and Services Tax (GST
 > [!IMPORTANT]
 > The item sales tax group should be removed on products that are assigned an HSN or SAC code.
 </p>
-<blockquote>
+</blockquote>
 </td>
 </tr>
 <tr>
