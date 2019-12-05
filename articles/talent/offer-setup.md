@@ -5,7 +5,7 @@ title: Set up offer management in Attract
 description: This topic describes how to set up offers in Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -48,8 +48,7 @@ of the offer management capability in Attract. Users with non-administrator role
 
 ## Offer data 
 
-Offer data is the smallest unit inside the offer package template. A typical offer consists of standard text and a set of values. The sets of values are the only pieces that could change between offers. During the offer creation, the most important aspect that the offer creator can focus on is the list of offer data placeholders present in an offer package template. To set up offer
-data, do the following.
+Offer data is the smallest unit inside the offer package template. A typical offer consists of standard text and a set of values. The sets of values are the only pieces that could change between offers. During the offer creation, the most important aspect that the offer creator can focus on is the list of offer data placeholders present in an offer package template. To set up offer data, do the following.
 
 1.  Go to **Offer management**.
 
@@ -57,10 +56,12 @@ data, do the following.
 
     >[!NOTE]
     > On the **Offer data** page are the **Candidate details** and **Job details** sections. Attract provides a few offer data placeholders out-of-the-box.
-    
+    > 
     > There are sections on the page to organize different offer data placeholders together in logical groups. These sections can help with maintenance of offer data and population of data during the offer creation process.
-
-1.  To create a new offer data section, click **Add a section** and enter a unique name for the section.
+    > 
+    > To create a list of values for a placeholder, upload an Excel spreadsheet that has one column with the placeholder as the column title and the list of choices in the rows underneath. If the same placeholder is referenced in another data rule set, ensure they have a common set of values.
+    
+    1.  To create a new offer data section, click **Add a section** and enter a unique name for the section.
 
 1.  To add offer data placeholders to any section, click **Add offer data** and enter a unique name for the placeholder.
 
