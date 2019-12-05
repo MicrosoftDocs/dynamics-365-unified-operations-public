@@ -5,7 +5,7 @@ title: Solution Architects Learning Catalog
 description: 
 author: margoc
 manager: AnnBe
-ms.date: 05/03/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
