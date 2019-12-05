@@ -161,7 +161,7 @@ File types include Microsoft Word documents and images. A file type is denoted b
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 
-### How does the default storage location for Document Management change in Finnce + Operations environments?
+### How does the default storage location for Document Management change in Finance + Operations environments?
 
 For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 
