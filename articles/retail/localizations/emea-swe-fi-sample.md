@@ -78,12 +78,12 @@ Control units support up to 4 different VAT code, so the VAT code mapping may be
 
 ### Limitations of the sample
 
-  - Customer order scenarios are not supported in the Control unit integration sample for Sweden for now.
+Customer order scenarios are not supported in the Control unit integration sample for Sweden for now.
 
 
 ## Setting up integration with control units
 
-For more details about general setting for Sweden see [Setting up Retail for Sweden](./emea-swe-cash-registers.md#setting-up-retail-for-sweden).
+For more details about setting up for Sweden, see [Setting up Retail for Sweden](./emea-swe-cash-registers.md#setting-up-retail-for-sweden).
 
 ### Configuring Sweden–specific receipts
 
@@ -91,7 +91,7 @@ For more details about general setting for Sweden see [Setting up Retail for Swe
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or greater than 900001.
 
 Add the following POS labels to the **POS** section of **Language text** from the table:
 
@@ -123,7 +123,7 @@ For more information about how to work with receipt formats, see [Receipt templa
 
 ### Configure fiscal integration
 
-Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md):
+Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md).
 
 - [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Note also the settings for the fiscal registration process that are [specific to this control unit integration sample](#set-up-the-registration-process).
 - [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
