@@ -2,7 +2,7 @@
 # required metadata
 
 title: COUNTIF ER function
-description: This topic provides information about how the COUNTIF ER function is used.
+description: This topic provides information about how the COUNTIF Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COUNTIF">COUNTIF Function</a>
+# <a name="COUNTIF">COUNTIF ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `COUNTIF` function returns an *Integer* value as the number of format elements that was collected at their usage to generate an outbound document during the format run, and that satisfies the specified condition consisting of a key range and a key value.
+The `COUNTIF` function returns an *Integer* value that represents the number of format elements that was collected when the format elements were used to generate an outbound document during the format run, and that satisfies the specified condition. The condition consists of a key range and a key value.
 
 ## Syntax
 
@@ -44,35 +44,33 @@ COUNTIF (condition range, condition value)
 
 ## Arguments
 
-`condition range` : *String*
+`condition range`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key name** property of an ER format component.
+A value that is returned by the expression that has been configured in the **Collected data key name** property of an Electronic reporting (ER) format component.
 
-`condition value` : *String*
+`condition value`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key value** property of an ER format component.
+A value that is returned by the expression that has been configured in the **Collected data key value** property of an ER format component.
 
-## Returns
+## Return values
 
 *Integer*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
-The **Collected data key name** and **Collected data key value** property can be configured for either the **Sequence** or **XML Element** component of an ER format that resides under the **Common \\ File** component the **Collect output
-details** option which is turned on.
+The **Collected data key name** and **Collected data key value** properties can be configured for either the **Sequence** component or the **XML Element** component of an ER format that resides under the **Common\\File** component where the **Collect output details** option is turned on.
 
-Returns a **0** (zero) value when the **Collect output details** flag of the current **Common \\ File** component is turned off.
+This function returns a **0** (zero) value when the **Collect output details** option of the current **Common\\File** component is turned off.
 
-The wildcard “\*” can be used in a **condition value** argument to represent any multiple characters.
+In the `condition range` argument, the wildcard character **"\*"** can be used to represent any multiple characters.
 
-The wildcard “\*” can be used in a **condition range** argument to represent any multiple characters.
+In the `condition value` argument, the wildcard character **"\*"** can be used to represent any multiple characters.
 
 ## Example
 
-To learn more about how to use this function, see the task guide, [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md), which is part of the **Acquire/Develop IT service/solution components**
-business process.
+For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.
 
 ## Additional resources
 
