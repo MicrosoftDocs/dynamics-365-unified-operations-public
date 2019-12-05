@@ -2,7 +2,7 @@
 # required metadata
 
 title: COLLECTEDLIST ER function
-description: This topic provides information about how the COLLECTEDLIST ER function is used.
+description: This topic provides information about how the COLLECTEDLIST Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,56 +30,55 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COLLECTEDLIST">COLLECTEDLIST Function</a>
+# <a name="COLLECTEDLIST">COLLECTEDLIST ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `COLLECTEDLIST` function returns a *Record list* that includes the list of values returned by the **Collected data key value** property of format elements that were collected at their usage to generate outbound documents during the format run. This satisfies the specified conditions, each of which consist of a key range and a key value.
+The `COLLECTEDLIST` function a *Record list* value that contains the list of values that were returned by the **Collected data key value** property of format elements and collected when the format elements were used to generate outbound documents during the format run, and that satisfies the specified conditions. Each condition consists of a key range and a key value.
 
 ## Syntax
 
 ```
-COLLECTEDLIST (condition 1 range, condition 1 value [, condition 2 range, condition 2 value, … , condition N range, condition N value])
+COLLECTEDLIST (condition 1 range, condition 1 value[, condition 2 range, condition 2 value, …, condition N range, condition N value])
 ```
 
 ## Arguments
 
-`condition 1 range` : *String*
+`condition 1 range`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key name** property of an ER format component. This argument is mandatory.
+A value that is returned by the expression that has been configured in the **Collected data key name** property of an Electronic reporting (ER) format component. This argument is mandatory.
 
-`condition 1 value` : *String*
+`condition 1 value`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key value** property of an ER format component. This argument is mandatory.
+A value that is returned by the expression that has been configured in the **Collected data key value** property of an ER format component. This argument is mandatory.
 
-`condition N range` : *String*
+`condition N range`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key name** property of an ER format component. Other arguments are optional.
+A value that is returned by the expression that has been configured in the **Collected data key name** property of an ER format component. These additional arguments are optional.
 
-`condition N value` : *String*
+`condition N value`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key value** property of an ER format component. Other arguments are optional.
+A value that is returned by the expression that has been configured in the **Collected data key value** property of an ER format component. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-The **Collected data key name** and **Collected data key value** property can be configured for either the **Sequence** or **XML Element** components of an ER format that resides under the **Common \\ File** component the **Collect output
-details** flag which is turned on.
+The **Collected data key name** and **Collected data key value** properties can be configured for either the **Sequence** component or the **XML Element** component of an ER format that resides under the **Common\\File** component where the **Collect output details** option is turned on.
 
-Returns an empty list when the **Collect output details** flag of the current **Common \\ File** component is turned off.
+This function returns an empty list when the **Collect output details** option of the current **Common\\File** component is turned off.
 
-The wildcard “\*” can be used in a **condition value** argument to represent any multiple characters.
+In `condition range` arguments, the wildcard character **"\*"** can be used to represent any multiple characters.
 
-The wildcard “\*” can be used in a **condition range** argument to represent any multiple characters.
+In `condition value` arguments, the wildcard character **"\*"** can be used to represent any multiple characters.
 
 ## Example
 
-To learn more about how to use this function, see the task guide, [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md), which is part of the **Acquire/Develop IT service/solution components** business process.
+For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.
 
 ## Additional resources
 
