@@ -2,10 +2,10 @@
 # required metadata
 
 title: List of ER functions of the type conversion category
-description: This topic explains what type conversion functions are supported in ER
+description: This topic provides information about the conversion functions that are supported in ER.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Electronic reporting (ER) type conversion functions can be used to convert values between types. The following is a summary of conversion functions in ER.
 
-## List of type conversion functions
+## Type conversion functions
 
 | **Function**                | **Description**               |
 |-----------------------------|-------------------------------|
@@ -45,7 +45,7 @@ Electronic reporting (ER) type conversion functions can be used to convert value
 | [NumberValue](er-functions-conversion-numbervalue.md)       | Returns a *Real* value that is converted from the specified *String* value considering the specified decimal and digit grouping separators.                                          |
 | [Value](er-functions-conversion-value.md)                   | Returns a *Real* value that is converted from the specified *String* value.                                               |
 
-## List of type conversion functions of the [Date & Time category](er-functions-category-datetime.md)
+## Type conversion functions of the [Date & Time category](er-functions-category-datetime.md)
 
 | **Function**                | **Description**               |
 |-----------------------------|-------------------------------|
@@ -53,7 +53,7 @@ Electronic reporting (ER) type conversion functions can be used to convert value
 | [DateToDateTime](er-functions-datetime-datetodatetime.md)   | Returns a *DateTime* value that is converted from a given *Date* value to a datetime value in the GMT time zone.        |
 | [DateValue](er-functions-datetime-datevalue.md)             | Returns a *Date* value that is converted from a given *String* value in the specified format and an optionally specified culture to a date value.                            |
 
-## List of type conversion functions of the [List](er-functions-category-list.md) category
+## Type conversion functions of the [List category](er-functions-category-list.md)
 
 | **Function**                | **Description**               |
 |-----------------------------|-------------------------------|
@@ -62,7 +62,7 @@ Electronic reporting (ER) type conversion functions can be used to convert value
 | [Split](er-functions-list-split.md)                         | Splits the specified *String* value into substrings. Returns the result as a new *Record list*.                            |
 | [StringJoin](er-functions-list-stringjoin.md)               | Returns a *String* that consists of concatenated values of the specified field from the specified *Record list*. The values can be separated by the specified delimiter.           |
 
-## List of type conversion functions of the [Text](er-functions-category-text.md) category
+## Type conversion functions of the [Text category](er-functions-category-text.md)
 
 | **Function**                | **Description**               |
 |-----------------------------|-------------------------------|
