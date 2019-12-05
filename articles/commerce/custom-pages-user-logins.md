@@ -143,9 +143,10 @@ To update the "Sign up and sign in" policy with custom page information, follow 
 1. Set the **Use custom page content** option to **Yes**.
 1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+Now, update the 'Sign Up' portion:
 1. Select the **Local account sign up page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full sign-up URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-up?preloadscripts=true**.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. In the **User attributes** section, follow these steps:
 
