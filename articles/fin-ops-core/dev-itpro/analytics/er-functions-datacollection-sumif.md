@@ -2,7 +2,7 @@
 # required metadata
 
 title: SUMIF ER function
-description: This topic provides information about how the SUMIF ER function is used.
+description: This topic provides information about how the SUMIF Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/04/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SUMIF">SUMIF Function</a>
+# <a name="SUMIF">SUMIF ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `SUMIF` function returns a *Real* value as the sum of values returned by bindings of format elements that were collected at their usage to generate an outbound document during the format run, and that satisfies the specified condition consisting of a key range and a key value.
+The `SUMIF` function returns a *Real* value that represents the sum of values that were returned by bindings of format elements and collected when the format elements were used to generate an outbound document during the format run, and that satisfies the specified condition. The condition consists of a key range and a key value.
 
 ## Syntax
 
@@ -44,31 +44,29 @@ SUMIF (key name for summing, condition range, condition value)
 
 ## Arguments
 
-`key name for summing` : *String*
+`key name for summing`: *String*
 
-A value which is returned by the expression that has been configured in the **Collected data key name** property of an ER format component, the value of binding of which must be used for summing.
+A value that is returned by the expression that has been configured in the **Collected data key name** property of the Electronic reporting (ER) format component for which the value of the binding must be used for summing purposes.
 
+The **Collected data key value** property can be configured for either a **Sequence** component or an **XML Element** component of an ER format that resides under the **Common\\File** component where the **Collect output details** option is turned on.
 
-The **Collected data key value** property can be configured for a either **Sequence** or **XML Element** component of an ER format that resides under the **Common \\ File** component the **Collect output details** option of which is turned on.
-
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
-Returns a **0** (zero) value when the **Collect output details** flag of the current **Common \\ File** component is turned off.
+This function returns a **0** (zero) value when the **Collect output details** option of the current **Common\\File** component is turned off.
 
-The wildcard “\*” can be used in a **condition value** argument to represent any multiple characters.
+In the `condition range` argument, the wildcard character **"\*"** can be used to represent any multiple characters.
 
-The wildcard “\*” can be used in a **condition range** argument to represent any multiple characters.
+In the `condition value` argument, the wildcard character **"\*"** can be used to represent any multiple characters.
 
 ## Example
 
-To learn more about how to use this function, see the task guide, [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md), which is part of the **Acquire/Develop IT service/solution components**
-business process.
+For more information about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components** business process.
 
 ## Additional resources
 
