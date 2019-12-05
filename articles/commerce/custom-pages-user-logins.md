@@ -161,7 +161,7 @@ To update the "Profile editing" policy with custom page information, follow thes
 1. In the **Profile Editing** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **Profile edit page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full profile edit URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/profile-edit?preloadscripts=true**.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. In the **User attributes** section, follow these steps:
 
@@ -175,12 +175,14 @@ To update the "Password reset" policy with custom page information, follow these
 1. In the **Password Reset** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **New password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/passwordreset?preloadscripts=true**.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. Select the **Account verification page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/passwordreset-verification?preloadscripts=true**.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+
+
 
 ## Customize default text strings for labels and descriptions
 
