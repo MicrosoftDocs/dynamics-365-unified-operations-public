@@ -5,7 +5,7 @@ title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -115,7 +115,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
     tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
     ```
 
-17. Save and send the request, and then verify the result. You must ensure the user account being used is set to a default company that has data. Alternatively, you can also specify cross-company=true as the query paramter in the OData request.
+17. Save and send the request, and then verify the result. You must ensure that the user account being used is set to a default company that has data. Alternatively, you can also specify cross-company=true as the query parameter in the OData request.
 
     ![Result](./media/postman15.png)
 
