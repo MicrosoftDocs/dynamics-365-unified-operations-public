@@ -2,10 +2,10 @@
 # required metadata
 
 title: COUNTIFS ER function
-description: This topic explains how the COUNTIFS ER function is used
+description: This topic provides information about how the COUNTIFS ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,7 +69,7 @@ The result numeric value.
 ## Usage notes
 
 The **Collected data key name** and **Collected data key value** property can be configured for either **Sequence** or **XML Element** component of an ER format that resides under the **Common \\ File** component the **Collect output
-details** flag of which is turned on.
+details** flag which is turned on.
 
 Returns a **0** (zero) value when the **Collect output details** flag of the current **Common \\ File** component is turned off.
 
@@ -79,7 +79,7 @@ The wildcard “\*” can be used in a **condition range** argument to represent
 
 ## Example
 
-To learn more about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components**
+To learn more about how to use this function, see the task guide, [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md), which is part of the **Acquire/Develop IT service/solution components**
 business process.
 
 ## Additional resources
