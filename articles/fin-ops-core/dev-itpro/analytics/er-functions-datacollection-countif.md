@@ -2,10 +2,10 @@
 # required metadata
 
 title: COUNTIF ER function
-description: This topic explains how the COUNTIF ER function is used
+description: This topic provides information about how the COUNTIF ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `COUNTIF` function returns an *Integer* value as the number of format elements that was collected at their usage to generate outbound document during the format run, and that satisfies the specified condition consisting of a key range and a key value.
+The `COUNTIF` function returns an *Integer* value as the number of format elements that was collected at their usage to generate an outbound document during the format run, and that satisfies the specified condition consisting of a key range and a key value.
 
 ## Syntax
 
@@ -60,8 +60,8 @@ The result numeric value.
 
 ## Usage notes
 
-The **Collected data key name** and **Collected data key value** property can be configured for either **Sequence** or **XML Element** component of an ER format that resides under the **Common \\ File** component the **Collect output
-details** option of which is turned on.
+The **Collected data key name** and **Collected data key value** property can be configured for either the **Sequence** or **XML Element** component of an ER format that resides under the **Common \\ File** component the **Collect output
+details** option which is turned on.
 
 Returns a **0** (zero) value when the **Collect output details** flag of the current **Common \\ File** component is turned off.
 
@@ -71,7 +71,7 @@ The wildcard “\*” can be used in a **condition range** argument to represent
 
 ## Example
 
-To learn more about how to use this function, see the [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md) task guide, which is part of the **Acquire/Develop IT service/solution components**
+To learn more about how to use this function, see the task guide, [ER Use data of format output for counting and summing](tasks/er-format-counting-summing-1.md), which is part of the **Acquire/Develop IT service/solution components**
 business process.
 
 ## Additional resources
