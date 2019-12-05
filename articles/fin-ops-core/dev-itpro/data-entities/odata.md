@@ -250,6 +250,21 @@ OData enables an SQL-like language that lets you create rich queries against the
 
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx).
 
+## Using Enums
+Enums in F&O are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in a OData query is by using the below syntax.
+
+Microsoft.Dynamics.DataEntities.Gender'Unknown'
+
+Microsoft.Dynamics.DataEntities.NoYes'Yes'
+
+An example query for using the above enum values are shown below.
+
+https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'
+
+https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'
+
+The operations supported for enums are **eq** and **ne**
+
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints overview](services-home-page.md).
 
