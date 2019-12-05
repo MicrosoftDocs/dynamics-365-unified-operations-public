@@ -2,7 +2,7 @@
 # required metadata
 
 title: DAYOFYEAR ER function
-description: This topic provides information about how the DAYOFYEAR ER function is used.
+description: This topic provides information about how the DAYOFYEAR Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/04/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="DAYOFYEAR">DAYOFYEAR Function</a>
+# <a name="DAYOFYEAR">DAYOFYEAR ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,15 +44,15 @@ DAYOFYEAR (date) as Integer
 
 ## Arguments
 
-`date` : *Date*
+`date`: *Date*
 
-A date that represents the date for calculation of number of days.
+A date value that represents the date to use for the calculation of the number of days.
 
-## Returns
+## Return values
 
 *Integer*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example 1
 
