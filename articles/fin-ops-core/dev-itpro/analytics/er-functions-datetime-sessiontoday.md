@@ -2,7 +2,7 @@
 # required metadata
 
 title: SESSIONTODAY ER function
-description: This topic provides information about how the SESSIONTODAY ER function is used.
+description: This topic provides information about how the SESSIONTODAY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SESSIONTODAY">SESSIONTODAY Function</a>
+# <a name="SESSIONTODAY">SESSIONTODAY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `SESSIONTODAY` function returns a *Date* value of the current application session date.
+The `SESSIONTODAY` function returns a *Date* value that represents the current application session date.
 
 ## Syntax
 
@@ -42,15 +42,15 @@ The `SESSIONTODAY` function returns a *Date* value of the current application se
 SESSIONTODAY ()
 ```
 
-## Returns
+## Return values
 
 *Date*
 
-The result date value.
+The resulting date value.
 
 ## Example
 
-`DATEFORMAT (SESSIONTODAY (), "d", “DE”)` returns the current application session date, December 24, 2015, as the string  **"24-12-2015"**, based on the selected German culture the specified format.
+`DATEFORMAT (SESSIONTODAY (), "d", "DE")` returns the current application session date, December 24, 2015, as the string **"24-12-2015"**, based on the selected German culture and the specified format.
 
 ## Additional resources
 
