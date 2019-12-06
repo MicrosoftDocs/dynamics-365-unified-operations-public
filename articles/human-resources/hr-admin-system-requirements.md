@@ -33,9 +33,11 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 # System requirements
 
 **Status**
-Draft
-Need to check links and add other helpful links
-Need to add See also
+
+- Draft
+- Need to check links and add other helpful links
+- Need to add See also
+
 **End status**
 
 This article describes requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.

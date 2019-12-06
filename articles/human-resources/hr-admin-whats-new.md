@@ -33,8 +33,10 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 # What's new in Human Resources
 
 **Status**
-Draft, Acrolinx not run
-Darin, can we put weekly changes in one topic, maybe one topic per release cycle or year?
+
+- Draft, Acrolinx not run
+- Darin, can we put weekly changes in one topic, maybe one topic per release cycle or year?
+
 **End Status**
 
 Each week, we provide a new release for Microsoft Dynamics Human Resources. The changes are listed below.
