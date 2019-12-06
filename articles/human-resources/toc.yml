@@ -127,5 +127,9 @@
     items:
     - name: Overview
       href: hr-hrpro-overview.md
+  - name: Employee Guide
+    items:
+    - name: Overview
+      href: hr-employee-overview.md
 
 
