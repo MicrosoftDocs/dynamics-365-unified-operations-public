@@ -42,9 +42,9 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **End status**
 
-Dynamics 365 Talent manages business data that is useful in a variety of
+Dynamics 365 Human Resources manages business data that is useful in a variety of
 business processes. This topic provides guidance on various options for
-integrating with data managed by Talent, describing the
+integrating with data managed by Human Resources, describing the
 characteristics of different integration technologies so that integrators can
 make informed decisions regarding which technologies best fit their needs.
 
@@ -55,14 +55,14 @@ the business relates to data gathered by another part of the business, and these
 relations can be used to improve business processes and business intelligence
 across your organization. Providing easy, secure, stable access to your business
 data, regardless of which system “owns” the data is a key tenet to the vision we
-have for data integration with Talent.
+have for data integration with Human Resources.
 
 Historically, integrating data between multiple systems has been difficult.
 Microsoft is taking steps to make data integration easier, and a large step
 toward that goal is realized through [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
-Going forward, Talent is making Common Data Service the preferred
-public interface for Talent data. Over time, we expect that all the most important
-data managed by Talent will be exposed in Common Data Service. We recommend Common Data Service
+Going forward, Human Resources is making Common Data Service the preferred
+public interface for Human Resources data. Over time, we expect that all the most important
+data managed by Human Resources will be exposed in Common Data Service. We recommend Common Data Service
 as the technology of choice for most integrating applications. While we realize
 that not all data your application may require is currently present in Common Data Service, and
 that your project timelines may require an alternative technology, please
@@ -70,23 +70,23 @@ let us know when Common Data Service does not meet your integration needs.
 
 ## Integration technologies
 The following sections describe the different data integration technologies
-available for use with Talent: Core HR.
+available for use with Human Resources.
 
 ### Common Data Service entities
-Common Data Service is the preferred public data interface for Talent. Common Data Service is
+Common Data Service is the preferred public data interface for Human Resources. Common Data Service is
 built on a mature platform, having grown out of the Dynamics 365 “XRM” platform,
 upon which the [Dynamics 365 Customer
 Engagement](https://docs.microsoft.com/dynamics365/#pivot=business-apps&panel=customer-engagement)
 solutions are built.
 
 Common Data Service provides a platform for data entities and an API for accessing those
-entities. When Talent is deployed in your organization, Talent
-is connected to a Common Data Service instance and the entities that maintain Talent data are
+entities. When Human Resources is deployed in your organization, Human Resources
+is connected to a Common Data Service instance and the entities that maintain Human Resources data are
 deployed into that Common Data Service instance, making the entities and their data available to
-any application that can connect to the Common Data Service instance. Depending on which Talent
-apps you are using, Talent either performs data operations directly against the
+any application that can connect to the Common Data Service instance. Depending on which Human Resources
+apps you are using, Human Resources either performs data operations directly against the
 Common Data Service entities (this is the case for Attract and Onboard) or synchronizes data
-to/from the Common Data Service entities (this is the case for Core HR).
+to/from the Common Data Service entities.
 
 Once the data entities that expose the data your integrating apps require are
 present in Common Data Service, you can make full use of [Common Data Service and the APIs it
@@ -96,34 +96,33 @@ API](https://docs.microsoft.com/dynamics365/customer-engagement/developer/use-mi
 which provides an OData implementation for accessing Common Data Service data.
 
 The Common Data Service entities and the associated APIs are the best option for accessing
-Talent data from web applications, web services/APIs, and from any other
+Human Resources data from web applications, web services/APIs, and from any other
 application that connects to OData feeds.
 
 > [!NOTE]
 > With the decision to make Common Data Service the preferred data interface for
-Talent: Core HR being relatively recent, you may find that the Core HR data
+Human Resources being relatively recent, you may find that the Human Resources data
 entities you need for your integration are not yet available in Common Data Service<sup>1</sup>. If the
-Core HR entities required for your integration are not yet available, you will
+Human Resources entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
 one of the other integration technologies described below.
 > 
 > By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. It's turned on in new environments that include demo data, and the environments start to sync data when they are provisioned. After your environment is ready to sync data, you can turn on the integration on the [Common Data Service configuration page](https://docs.microsoft.com/dynamics365/talent/hr-cds-admin-form).
 
-<sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
+<sup>1</sup>For a list of Human Resources entities available in Common Data Service, see [Human Resources and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 
 ### DMF/DIXF entities
-Core HR, built primarily on the same platform as Finance and Operations applications, provides a [Data Management Framework(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
+Human Resources, built primarily on the same platform as Finance and Operations applications, provides a [Data Management Framework(DMF)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json), sometimes also known as the Data Import Export Framework or
 DIXF, and a set of data entities that can be used for importing/exporting data
-into/from Talent. While Common Data Service entities are the preferred data integration
-interface for Talent, the DMF entities will still be useful in some
+into/from Human Resources. While Common Data Service entities are the preferred data integration
+interface for Human Resources, the DMF entities will still be useful in some
 circumstances, such as:
 
 - Common Data Service entities aren't yet available.
 
 - The integration requires high performance bulk data import/export capabilities.
 
-The DMF entities currently provide the most complete data coverage for Talent
-(Core HR) data.
+The DMF entities currently provide the most complete data coverage for Human Resources data.
 
 DMF is not appropriate for real-time integrations (such as when immediate user
 feedback in a user interface is required), because package operations are
@@ -150,14 +149,14 @@ interact with the DMF, allowing actions such as:
 
 - Checking the status of an import/export operation.
 
-The DMF Package REST API is fully supported in Talent: Core
+The DMF Package REST API is fully supported in Human Resources: Core
 HR.
 
 ### Azure SQL DB (BYOD)
 
 DMF additionally provides a powerful feature (generally known as [Bring Your Own
 Database](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/export-entities-to-your-own-database),
-or BYOD) that allows Talent to export data to your own Microsoft Azure SQL
+or BYOD) that allows Human Resources to export data to your own Microsoft Azure SQL
 database. This provides tremendous flexibility, because when the data is present
 in your own SQL database, you can make use of any applications or middleware
 that can connect to a SQL datastore.
@@ -165,7 +164,7 @@ that can connect to a SQL datastore.
 BYOD should generally be considered a read-only solution. While you are able to
 manipulate and store whatever data you want in the Azure SQL database (such as for
 data mashups), data stored in the Azure SQL database will not be synchronized
-back to Talent: Core HR.
+back to Human Resources.
 
 BYOD is appropriate for reporting solutions, data integrations, data mashups, as
 a data source for an [Azure Data
@@ -175,24 +174,24 @@ Factory](https://docs.microsoft.com/azure/data-factory/) pipeline.
 > BYOD is not available for Attract and Onboard.
 
 ### OData-enabled entities
-Most DMF entities are also enabled for access through the Talent data service
+Most DMF entities are also enabled for access through the Human Resources data service
 (OData). The documentation provided for the [Finance and Operations OData
 service](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/odata)
-generally also applies to Talent: Core HR, although documentation about
+generally also applies to Human Resources, although documentation about
 creating your own OData-exposed entities will not apply.
 
 While Common Data Service and the OData implementation provided by Common Data Service (through the [Dynamics
 365 Web
 API](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)))
-is preferred over the Talent data service, the Talent data service currently has
-more complete entity coverage for the Talent data.
+is preferred over the Human Resources data service, the Human Resources data service currently has
+more complete entity coverage for the Human Resources data.
 
 ### Excel Add-in
 
 The [Excel
 Add-in](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/talent/toc.json)
 makes use of OData-enabled entities beneath the surface. It provides a
-convenient way for an end user to retrieve and modify Talent data through the
+convenient way for an end user to retrieve and modify Human Resources data through the
 familiar Excel UI.
 
 The Excel Add-in is appropriate for ad-hoc data imports/exports by business
@@ -211,7 +210,7 @@ manually.
 Data Integrator projects are appropriate for Common Data Service batch integrations and
 make a great choice for integrations between the Dynamics 365 family of
 applications. As an example, Microsoft provides an out-of-the-box Data
-Integrator template that can be used for integrating data from Core HR into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance](talent-financeandoperations-integration.md).
+Integrator template that can be used for integrating data from Human Resources into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 Human Resources to Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 ### Power Query
 
@@ -237,8 +236,8 @@ technology options.
 | Common Data Service entities           | Yes, using Data Integrator or middleware | Sync Async, Batch (through Data Integrator) | Yes, through Dynamics 365 Web API (OData) | Varies with use case (supports paging for interactive use) | Improving<sup>2</sup>                       |
 | DMF entities           | Yes, scheduled through middleware        | Async, Batch                                | Yes, through DMF Package REST API         | High (hundreds of thousands of records)                    | High                                |
 | DMF Package REST API   | Yes, scheduled through middleware        | Async, Batch                                | Yes                                       | High (hundreds of thousands of records)                    | API supports all DMF entities       |
-| BYOD                   | Yes, scheduled by Admin in Talent        | Async, Batch                                | No<sup>3</sup>                                    | High (hundreds of thousands of records)                    | Supports all DMF entities           |
-| OData-enabled entities | Yes, using middleware                    | Sync                                        | Yes, through Talent Data Service (OData)  | Varies with use case (supports paging for interactive use) | High                                |
+| BYOD                   | Yes, scheduled by Admin in Human Resources        | Async, Batch                                | No<sup>3</sup>                                    | High (hundreds of thousands of records)                    | Supports all DMF entities           |
+| OData-enabled entities | Yes, using middleware                    | Sync                                        | Yes, through Human Resources Data Service (OData)  | Varies with use case (supports paging for interactive use) | High                                |
 | Excel Add-in           | No                                       | Sync                                        | No                                        | Medium (tens of thousands of records)                      | Supports all OData-enabled entities |
 | Data Integrator        | Yes, scheduled in Data Integrator        | Async, Batch                                | No                                        | Varies with use case                                       | Supports all Common Data Service entities           |
 
@@ -252,8 +251,8 @@ and OData-enabled entities.
 ## Summary
 Your business data is a valuable asset, but its value can be greatly diminished
 if it is hard to use the data for your specific purposes (such as reporting, data
-mashups, or custom applications). Dynamics 365 Talent provides several
-technologies for working with your data outside of the Talent application's user interface (UI),
+mashups, or custom applications). Dynamics 365 Human Resources provides several
+technologies for working with your data outside of the Human Resources application's user interface (UI),
 allowing integrating applications access to the data. This topic has described
 the available integration technologies and some of their key characteristics.
 This information should help you make better decisions on which approaches to
