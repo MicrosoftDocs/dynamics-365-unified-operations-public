@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Design questionnaires
 
-[!include [banner](includes/banner.md)]
-
 This topic describes the process for creating a questionnaire. The first step is to design the questionnaire. When you design a questionnaire, you not only write the questions and answers, but also create the structure that enables answers to be recorded and tabulated. 
 
 A carefully designed questionnaire can help increase the quality of the data that you collect. Through careful design, you can better select the appropriate options at the appropriate time for a questionnaire. The following points can help you plan an effective questionnaire:
