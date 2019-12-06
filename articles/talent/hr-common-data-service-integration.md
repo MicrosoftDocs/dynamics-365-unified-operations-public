@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent October 2019 update
 
 # Configure Common Data Service integration
 
-[!include[banner](../includes/banner.md)]
-
 You can turn integration between Common Data Service and an instance of Microsoft Dynamics 365 Talent on or off. You can also view the synchronization details, clear tracking data, and resync an entity to help troubleshoot data issues between the two environments.
 
 When you turn off integration, users can make changes in Talent or Common Data Service, but those changes aren't synced between the two environments.

@@ -54,7 +54,7 @@ You can also apply a statement to each element and increment your way through th
 
 In the following code example, the items in an array of integers are printed.
 
-```X++
+```xpp
 int integers[10];
 for (int i = 0; i < 10; i++)
 {
@@ -75,7 +75,7 @@ A **while** loop repeatedly executes *statement* for as long as the conditional 
 
 The following code example demonstrates a **while** loop that traverses a container and prints out the contents of the container.
 
-```X++
+```xpp
 container cont = ["one", "two", "three"];
 int no = 0;
 while (no <= conlen(cont))
@@ -88,7 +88,7 @@ while (no <= conlen(cont))
 
 ## do...while loops
 
-The syntax of the **do...while*** loop is:
+The syntax of the **do...while** loop is:
 
 **do {** *statement* **} while (** *expression* **) ;**
 
@@ -98,7 +98,7 @@ The **do**...**while** loop is similar to the **while** loop, but the condition 
 
 The following code example finds the smallest power of 10 that is larger than `realNumber`.
 
-```X++
+```xpp
 int FindPower(real realNumber)
 {
     int exponent = -1;
@@ -123,7 +123,7 @@ The **continue** statement causes execution to move directly to the next iterati
 
 In the following code example, if `Iarray[i] <= 0`, the remaining statements in the loop are not executed, and `i` is incremented before the **if** statement is tried again.
 
-```X++
+```xpp
 int Iarray[100];
 for (int i = 0; i < 100; i++)
 {
@@ -146,7 +146,7 @@ The **break** statement within a loop is used to terminate that loop. Execution 
 
 This example is uses a **break** statement within a **while** loop. When used within a loop, the loop is terminated and execution continues from the statement following the loop. This works for **do... while** and **for** loops as well. 
 
-```X++
+```xpp
 var mainMenu = SysDictMenu::newMainMenu();
 var enum = mainMenu.getEnumerator();
 var found = false;

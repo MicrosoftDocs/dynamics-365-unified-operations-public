@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Questionnaires
 
-[!include [banner](includes/banner.md)]
-
 This topic provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that is used to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results. 
 
 You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 Finance. Here are some examples of how questionnaires can be used:

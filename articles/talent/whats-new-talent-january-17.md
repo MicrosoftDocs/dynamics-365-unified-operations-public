@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent - Core HR (January 17, 2019)
 
-[!include [banner](includes/banner.md)]
-
 **Build 8.1.2107**
 
 This topic describes features that are either new or changed in Core HR.

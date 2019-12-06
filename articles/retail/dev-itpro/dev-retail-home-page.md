@@ -36,6 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This page lists the resources that are available for IT pros and developers who support Retail.
 
+## Online channel
+- [Online channel extensibility](../../commerce/e-commerce-extensibility/overview.md)
+
 ## Retail components and architecture
 -   [Retail components](../retail-components.md)
 -   [Retail Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
@@ -106,6 +109,7 @@ This page lists the resources that are available for IT pros and developers who 
 -   [Add customer preference data to channel databases](add-customer-preference-channel.md)
 -   [Add properties to sales orders](add-properties-sales-order.md)
 -   [Manage secrets for retail channels](manage-secrets.md)
+-   [Log extension events to Application Insights](commerce-application-insights.md)
 
 ## Retail SDK
 - [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md)
@@ -135,6 +139,6 @@ This page lists the resources that are available for IT pros and developers who 
 
 ## Payment connectors
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
-- [Implementing a payment connector and payment device (white paper)](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public/edit/live/articles/retail/dev-itpro/dev-retail-home-page.md)
+- [Implementing a payment connector and payment device (white paper)](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 - [Create Windows installers for payment connectors](create-windows-installer-payment-connector.md)
 - [Deploy payment connectors](deploy-payment-connector.md)

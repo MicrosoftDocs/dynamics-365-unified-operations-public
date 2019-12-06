@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -91,46 +91,49 @@ The following configuration settings are available in the Customization.settings
 
 - The **ItemGroup** section includes the following settings:
 
-    - **ISV\_CommerceRuntime\_CustomizableFile** – Specify the details of all the customized CRT assemblies. You can have multiple entries, one for each CRT assembly.
+    - **ISV\_CommerceRuntime\_CustomizableFile** – Specify the details of all the customized CRT and dependent assemblies. You can have multiple entries, one for each assembly.
+    
+> [!NOTE]
+> If the extension depends on Newtonsoft.Json.Portable or some other assemblies, then explicitly include it. Don’t assume that these assemblies will be included by default in the packaging or Retail server folder because the out-of-band (OOB) Retail server or CRT is using this. In the future, if the OOB functionalities don’t use these assemblies, it could be removed. As a result, you should always explicitly include all of the extension dependent assemblies in order to package and place them in the correct folder.
 
-        **Example**
+**Example**
 
-        ```
+```
         ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
-        ```
+```
 
-    - **ISV\_RetailServer\_CustomizableFile** – Specify the details of all the customized Retail Server assemblies. You can have multiple entries, one for each Retail Server assembly.
+- **ISV\_RetailServer\_CustomizableFile** – Specify the details of all the customized Retail Server assemblies. You can have multiple entries, one for each Retail Server assembly.
 
-        **Example**
+**Example**
 
-        ```
+```
         ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
         ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
-        ```
+```
 
-    - **ISV\_RetailProxy\_CustomizableFile** – Specify the details of all the customized Retail proxy assemblies. You can have multiple entries, one for each Retail proxy assembly. 
+- **ISV\_RetailProxy\_CustomizableFile** – Specify the details of all the customized Retail proxy assemblies. You can have multiple entries, one for each Retail proxy assembly. 
 
-        **Example**
+**Example**
 
-        ```
+```
         ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
-        ```
+```
 
-    - **ISV\_HardwareStation\_CustomizableFile** – Specify the details of all the customized Hardware station assemblies. You can have multiple entries, one for each customized Hardware station assembly.
+- **ISV\_HardwareStation\_CustomizableFile** – Specify the details of all the customized Hardware station assemblies. You can have multiple entries, one for each customized Hardware station assembly.
 
-        **Example**
+**Example**
 
-        ```
-        ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
-        ```
+```
+   ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
+```
 
-    - **ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify the details of all the customized database scripts.
+- **ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify the details of all the customized database scripts.
 
-        **Example**
+ **Example**
 
-        ```
-        ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
-        ```
+ ```
+     ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
+```
 
 > [!IMPORTANT]
 > Before you start the build process, you must put extension assemblies in ...\\Retail SDK\\References and custom database scripts under ...\\RetailSDK\\Database\Upgrade\\Custom.
@@ -147,11 +150,15 @@ If you have any new extensions in CRT, Retail Server, Hardware station, or proxy
 
 Before you do the package, you must update the following configuration files if you have any customization in that area:
 
-- **CommerceRuntime.Ext.config** – Register all your CRT extension assemblies.
+- **CommerceRuntime.Ext.config** – Register all your CRT extensions and dependent assemblies. Also this is where you need to include the Retail Server extension dependent assemblies.
 
-    **Example**
+> [!NOTE]
+> If the extension depends on Newtonsoft.Json.Portable or some other assemblies, then explicitly include it. Don’t assume that these assemblies will be included by default in the packaging or Retail server folder because the out-of-band (OOB) Retail server or CRT is using this. In the future, if the OOB functionalities don’t use these assemblies, it could be removed. As a result, you should always explicitly include all of the extension dependent assemblies in order to package and place them in the correct folder.
 
-    ```C#
+
+**Example**
+
+ ```C#
     <?xml version="1.0" encoding="utf-8"?>
     <commerceRuntimeExtensions>
         <composition>
@@ -159,11 +166,11 @@ Before you do the package, you must update the following configuration files if 
             <add source="assembly" value="my custom library" />
         </composition>
     </commerceRuntimeExtensions>
-    ```
+```
 
-- **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions for offline.
+- **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions and dependent assemblies.
 
-    **Example**
+**Example**
 
     ```C#
     <?xml version="1.0" encoding="utf-8"?>
@@ -177,9 +184,9 @@ Before you do the package, you must update the following configuration files if 
 
 - **HardwareStation.Extension.config** – Register all your Hardware station extensions.
 
-    **Example**
+**Example**
 
-    ```C#
+```C#
     <?xml version="1.0" encoding="utf-8"?>
     <hardwareStationExtension>
         <composition>
@@ -187,11 +194,11 @@ Before you do the package, you must update the following configuration files if 
             <add source="assembly" value=" my custom library" />
         </composition>
     </hardwareStationExtension>
-    ```
+ ```
 
 - **RetailProxy.MPOSOffline.ext.config** – Register all your retail proxy extensions.
 
-    **Example**
+ **Example**
 
     ```C#
     <?xml version="1.0" encoding="utf-8"?>

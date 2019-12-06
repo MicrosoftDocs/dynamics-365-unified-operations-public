@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up work schedules and leave
-description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+description: This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 
 Although you use the same page to maintain the calendars that both Payroll and Production control use, we recommend that you maintain separate calendars for each of those feature areas.
 
@@ -86,8 +86,6 @@ Repeat these steps to create additional leave types.
 
 ## Put a worker on leave
 
-Schedules are used together with leave types when a worker is on paid leave. To incorporate the leave settings when you generate earnings statements for a worker who is on paid leave, you must assign a schedule to the worker's position. This step is required even if you generate earnings for that position by salary, not from a schedule. A schedule is optional for a salaried worker who is on unpaid leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
-
 To put a worker on leave, enter the following information on the **Workers** page.
 
 | Field      | Description                        |
@@ -97,6 +95,8 @@ To put a worker on leave, enter the following information on the **Workers** pag
 | End date   | Enter the last date of the leave.  |
 
 Repeat this step for any additional salaried positions that the worker holds.
+
+Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
 
 ## Next step
 

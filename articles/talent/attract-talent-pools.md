@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Source candidates with talent pools in Microsoft Dynamics 365 Talent - Attract
+title: Source candidates with talent pools in Attract
 description: This topic explains how to create and set up talent pools in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -30,10 +30,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Source candidates with talent pools in Microsoft Dynamics 365 Talent - Attract
+# Source candidates with talent pools in Attract
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Recruiters and hiring managers can organize their candidates using the Talent pools functionality in Attract. Talent pools can help you keep track of and engage with all the candidates that apply for jobs at your company.
 

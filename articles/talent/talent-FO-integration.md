@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
 
-[!include [banner](includes/banner.md)]
-
 This topic answers common questions associated about what data is synchronized when Dynamics 365 Talent is integrated with Dynamics 365 Finance.
 
 ## Is all data synchronized or just some data entities?
@@ -149,17 +147,16 @@ project in Finance. If the task number is 9 in Data Integrator, the index in Fin
 
 1. Capture the task index from Data Integrator (in this example it is "9").
 
-![Capture task index from Data Integrator](media/CaptureTaskIndex.png)
+    ![Capture task index from Data Integrator](media/CaptureTaskIndex.png)
 
 2. Track the execution time of the project.
 
-![Track execution time of project](media/CaptureTimeOfExecution.png)
+    ![Track execution time of project](media/CaptureTimeOfExecution.png)
 
-3. In Finance, identify index - 1. In this example, the
-project with suffix "8" and execution time of index "0" project matches with
+3. In Finance, identify index - 1. In this example, the project with suffix "8" and execution time of index "0" project matches with
 the execution time in Step 2.
 
-![Identify index](media/IdentifyIndex.png)
+    ![Identify index](media/IdentifyIndex.png)
 
 ## After integrating Talent and Finance, I don’t see my Talent data in Finance. What do I do?
 
