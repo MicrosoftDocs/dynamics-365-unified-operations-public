@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Access to private addresses by security role
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 After a customer duplicates a security role and signs in as that new role, the customer can't see addresses that were marked as private.

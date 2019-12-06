@@ -30,8 +30,6 @@ ms.dyn365.ops.version:
 
 # Core HR entities in Common Data Service
 
-[!include [banner](includes/banner.md)]
-
 Core HR uses Common Data Service to enable extensibility and integration scenarios.
 
 For more information about Common Data Service, see [What is Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).

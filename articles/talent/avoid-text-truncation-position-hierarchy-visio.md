@@ -33,8 +33,6 @@ ms.dyn365.ops.version: Talent
 
 # Avoid text truncation on the position hierarchy and export to Visio
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 When a customer views the position hierarchy in Microsoft Dynamics 365 Talent, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.

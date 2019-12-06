@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Analytic reports are not updated
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 A customer's data changes don't appear on the **Analytics** tabs of any of the customer's workspaces.

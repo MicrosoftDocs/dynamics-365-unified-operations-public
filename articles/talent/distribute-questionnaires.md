@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Distribute and schedule questionnaires
 
-[!include [banner](includes/banner.md)]
-
 This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 
 There are multiple ways to distribute a questionnaire:

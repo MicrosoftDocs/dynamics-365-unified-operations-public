@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create and send an onboarding guide by using Dynamics 365 Talent - Onboard
+# Create and send an onboarding guide
 
 [!include [banner](includes/banner.md)]
 

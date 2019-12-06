@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (July 9, 2019)
 
-[!include [banner](includes/banner.md)]
-
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
@@ -40,6 +38,7 @@ This topic describes features that are either new or changed in Dynamics 365 Tal
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ### Coming soon in Attract
+
 #### Job approvals appear on the home page
 
 Approvals appear in an **Approvals** section on the dashboard. Approvers can review their approvals under **Assigned to you**, which shows the job ID, the job title, other approvers, and the date when the job was assigned. Users who submit a job for approval can review their jobs under **Requested by you**, which shows the approvers who must still approve the submitted job.
@@ -54,7 +53,7 @@ Changes described in this section apply to build number 8.1.2374.
 
 ### Platform update 28 for Finance and Operations
 
-For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
+For more details about Platform update 28 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 28 (July 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-28).
 
 ### Entity support for custom fields in Common Data Service 
 
