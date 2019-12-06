@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create a hiring team by using Dynamics 365 Talent - Onboard
+# Create a hiring team
 
 [!include [banner](includes/banner.md)]
 

@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Talent October 2019 update
 
 # Talent updates
 
-[!include [banner](includes/banner.md)]
-
 Microsoft Dynamics 365 Talent is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
 ## Update policy

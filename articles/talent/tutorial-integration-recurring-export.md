@@ -29,8 +29,6 @@ ms.dyn365.ops.version: Talent January 2019 update
 
 # Recurring data export using Azure Logic apps
 
-[!include [banner](includes/banner.md)]
-
 This tutorial shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Talent: Core HR on a recurring schedule. The tutorial takes advantage of Core HR's DMF package REST application programming interface (API) to export the data. After the data has been exported, the logic app saves the exported data package to a Microsoft OneDrive for Business folder.
 
 ## Business scenario
