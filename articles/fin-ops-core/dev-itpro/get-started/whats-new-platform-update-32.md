@@ -5,7 +5,7 @@ title: Preview features in Platform update 32 for Finance and Operations apps (F
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 12/04/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 32
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This topic lists the preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
@@ -109,7 +109,7 @@ The Priority-based scheduling for batch jobs feature is currently in restricted 
 
 ### Platform update 32 bug fixes
 
-For information about the bug fixes that are included in each update that is part of Platform update 32, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/).
+For information about the bug fixes that are included in each update that is part of Platform update 32, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=400369&dbType=3&qc=30ab94ba46d00083bda800e9a50600fa1fdf63a47c33e8e83f74774b6d245f27).
 
 ### Dynamics 365: 2019 release wave 2 plan
 
