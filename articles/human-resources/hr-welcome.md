@@ -32,4 +32,20 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Welcome to Dynamics 365 Human Resources
 
-## See also
+**Temporary text**
+
+The way we work, and the workplace, have fundamentally changed—and yet, for many businesses HR processes have not. When workforce practices are disconnected, the result is lower employee engagement and higher turnover rates. Employee disruption ultimately impacts the organization through a lack of product innovation, expensive operational errors, less satisfied customers, and suboptimal financial results.
+
+Dynamics 365 Human Resources helps HR professionals get the workforce insights needed to build data-driven employee experiences across multiple areas:
+
+- Compensation
+- Benefits
+- Leave and absence
+- Compliance
+- Payroll
+- Performance feedback
+- Training and certification
+- Self-service programs
+
+Dynamics 365 Human Resources connects people and operations data to ensure businesses can optimize workforce costs and take better care of employees.
+
