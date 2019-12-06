@@ -96,7 +96,7 @@ This topic provides detailed information about India Goods and Services Tax (GST
 </ul>
 <p>You can assign HSN and SAC codes to products in the <strong>GST</strong> field group of the <strong>Released products</strong> page. Products of the <strong>Item</strong> item type should have an HSN code, and products of the <strong>Service</strong> item type should have an SAC code.</p>
 <p>
-**IMPORTANT**</br>
+<strong>IMPORTANT</strong></br>
 The item sales tax group should be removed on products that are assigned an HSN or SAC code.
 </p>
 </td>
