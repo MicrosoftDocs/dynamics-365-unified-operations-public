@@ -40,12 +40,12 @@ In Platform update 31, you can turn on the **Batch priority-based scheduling** f
 > [!IMPORTANT]
 > This feature is available only in a restricted preview as part of Platform update 31.
 
-A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. Normal is the default value and is also applied to all existing batch groups when the feature is enabled. **Reserved capacity** represents the highest priority and starting in Platform Update 32, it ispossible to dedicate reserved capacity for jobs with this priority. For more information, see the section <a href="reserved">Set batch reserved capacity</a> later in this topic.
+A scheduling priority is defined for batch groups, but it can be overridden for specific batch jobs. The scheduling priority classifications are used to declare relative priorities, and to determine the processing order of jobs and business processes. The available values for the scheduling priority are **Low**, **Normal**, **High**, **Critical**, and **Reserved capacity**. **Normal** is the default value and is also applied to all existing batch groups when the feature is turned on. **Reserved capacity** represents the highest priority. In Platform update 32 and later versions, you can use it to dedicate reserved capacity for jobs. For more information, see the <a href="#reserved">Set the batch reserved capacity</a> section later in this topic.
 
 > [!NOTE]
-> Because the schedule priority is set to **Normal** for all existing batch groups when the feature is enabled, it is important to plan and update the scheduling priority for each batch group so that it represents the relative priorities based on business requirements for the related batch jobs and their related business processes.
+> Because the schedule priority is set to **Normal** for all existing batch groups when the feature is turned on, it's important that you plan and update the scheduling priority for each batch group so that it represents the relative priorities according to business requirements for the related batch jobs and their related business processes.
 
-Upgrade support for existing batch jobs are available with the release of Platform update 32. For more information, see the section <a href="automatic">Automatic batch group migration for batch jobs</a> later in this topic.
+Platform update 32 includes upgrade support for existing batch jobs. For more information, see the <a href="#automatic">Automatic batch group migration for batch jobs</a> section later in this topic.
 
 Priority-based batch scheduling requires that you turn on the **Batch framework contention reduction** feature in Feature management.
 
@@ -92,7 +92,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 1. On the **Batch job** page, in the **Batch tasks** section, select **New**.
 2. In the **Task description** field, enter a value.
 3. In the **Company accounts** field, select the company that the task will be run in.
-4. In the **Class name** field, select the applicable process to be executed. Classes appear in the list only if the **CanGoBatchJournal** property is enabled.
+4. In the **Class name** field, select the process to run. Classes appear in the list only if the **CanGoBatchJournal** property is turned on.
 5. Select **Save**.
 6. Expand the **Batch task detail** FastTab to add more settings for the batch task, or to add constraints.
 7. On the **General** tab, set the **Ignore task failure** option to **Yes** to specify that failure of the task should not cause the job to fail.
@@ -103,41 +103,40 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 12. In the **Expected status** field, select the status that the preceding task must reach before the current task can run.
 13. Select **Save**.
 
-> [!NOTE]
-> If you enter more than one condition/constraint, and if all conditions must be met before the dependent task can run, select **All** as the condition type. If the dependent task can run after any of the conditions has been met, select **Any** as the condition type.
+    > [!NOTE]
+    > If you enter more than one condition/constraint, and if all conditions must be met before the dependent task can run, select **All** as the condition type. If the dependent task can run after any of the conditions has been met, select **Any** as the condition type.
 
-14. If the batch task supports input parameters, select **Parameters** and set task specific parameters.
+14. If the batch task supports input parameters, select **Parameters**, and then set task-specific parameters.
 15. Select **OK**, and then select **Save**.
 
-## <a name="reserved">Set batch reserved capacity level</a>
+## <a name="reserved">Set the batch reserved capacity level</a>
 
 1. Go to **System administration** \> **Setup** \> **System parameters**.
-2. On the **Batch global settings** tab, select the value for **Batch reserved capacity level** to be used for batch jobs with the priority, **Reserved capacity**.
+2. On the **Batch global settings** tab, in the **Batch reserved capacity level** field, select the reserved capacity level to use for batch jobs that have **Reserved capacity** priority:
 
-    - **No reserved capacity**: This is the default value.
-    - **Low reserved capacity**: 10% of the cumulative batch threads are reserved.
-    - **Medium reserved capacity**: 15% of the cumulative batch threads are reserved.
-    - **High reserved capacity:** 25% of the cumulative batch threads are reserved.
-    
+    - **No reserved capacity** – This value is the default value.
+    - **Low reserved capacity** – Ten percent of the cumulative batch threads are reserved.
+    - **Medium reserved capacity** – Fifteen percent of the cumulative batch threads are reserved.
+    - **High reserved capacity** – Twenty-five percent of the cumulative batch threads are reserved.
+
     > [!NOTE]
-    > Sample values are for illustrative purposes only. The actual reserved capacity wiis dependent on the batch server configuration and the number of available batch threads at any given point.
+    > Sample values are for the purpose of illustration only. The actual reserved capacity depends on the configuration of the batch server and the number of available batch threads at any given point.
 
 3. Select **Save**.
 
-> [!NOTE]   
-> Any reserved capacity is exclusive only to batch jobs with the priority **Reserved capacity**. The reserved capacity will not be made available for batch jobs with other priorities, even when there is idle reserved capacity.
+> [!NOTE]
+> Any reserved capacity is exclusive to batch jobs that have **Reserved capacity** priority. The reserved capacity won't be made available for batch jobs that have other priorities, even if there is idle reserved capacity.
 
-A new internal system batch job **System job to clean up expired batch heartbeat records**, with the Class name **SysCleanupBatchHeartbeatTable** will clean up the new **BatchHeartbeatTable** table. **BatchHeartbeatTable** is an internal monitoring table that is used to determine, configure, and distribute reserved capacity threads among online nodes.
+A new internal system batch job, **System job to clean up expired batch heartbeat records**, cleans up the new BatchHeartbeatTable table. This batch job has the class name **SysCleanupBatchHeartbeatTable**. BatchHeartbeatTable is an internal monitoring table that is used to determine, configure, and distribute reserved capacity threads among online nodes.
 
 ## <a name="automatic">Automatic batch group migration for batch jobs</a>
 
-Batch group information on the task is duplicated on the job to be used after the feature is enabled. The batch group assignment on the job is based on the most used batch group for the tasks for a job.
+After the feature is turned on, batch group information on the task is duplicated on the job that will be used. The batch group assignment on a job is based on the batch group that is most used for the tasks for the job.
 
-A new system batch job **System job to seed batch group associations to batch jobs** with the Class name **SysMigrateBatchGroupsForPriorityBasedScheduling**, is introduced to manage this migration.
+A new system batch job, **System job to seed batch group associations to batch jobs**, manages the migration. This batch job has the class name **SysMigrateBatchGroupsForPriorityBasedScheduling**.
 
-The batch job is triggered every day at 1:00 AM, even if the **Batch priority-based scheduling** feature is disabled. The job will migrate the delta of applicable batch jobs since the last execution.
+The batch job is run every day at 1:00 AM, even if the **Batch priority-based scheduling** feature is turned off. It migrates the delta of applicable batch jobs since the last execution.
 
-It is recommended to review the automatic batch group assignment after the feature is enabled and the migration is complete. The **Batch group** field for tasks are read-only to facilitate this review. The field will also be propagated from the job when new batch tasks are added to support backward compatibility.
+The batch job is also run when the feature is turned on, to migrate any batch jobs since the last execution. The user who turned on the feature will receive a notification that includes a reference to the ID of the migration batch job.
 
-The batch job is also executed when the feature is enabled to migrate any batch jobs since the last execution. The user that enables this feature will receive a notification with a reference to the migration batch job ID.
-
+We recommend that you review the automatic batch group assignment after the feature is turned on and the migration is completed. To facilitate this review, the **Batch group** field for tasks is read-only. To support backward compatibility, the value of this field will be propagated from the job when new batch tasks are added.
