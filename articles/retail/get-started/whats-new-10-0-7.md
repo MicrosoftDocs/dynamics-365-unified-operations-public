@@ -34,7 +34,13 @@ ms.dyn365.ops.version: Release 10.0.7
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283. While the general availability date is in January 2020, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](whats-new-10-0-7.md#additional-resources).
+This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283, and is available as follows:
+
+- Preview release is in October 2019.
+- General availability (self-update) is in November 2019.
+- Auto-update is in January 2020.
+
+For more information about version 10.0.7, see [Additional resources](whats-new-10-0-7.md#additional-resources).
 
 ## Clienteling
 Many retailers, especially high-end specialty retailers, want their sales associates to form long term relationships with their key customers. The sales associates are expected to know about their customer's likes and dislikes, purchase history, product preferences, important dates such as anniversary, birthday etc. The associates need a place to capture such information and easily find the information when needed. Once this information is available in a single view, then the associates can easily target the customers that meet certain criteria for e.g. find all the customers that prefer to shop for Handbags, find customers for whom an important live event such as birthday, anniversary, graduation etc. is approaching. The new clienteling capabilities in in Dynamics 365 Retail can help your associates easily build and maintain such relationships.

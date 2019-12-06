@@ -97,11 +97,11 @@ Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Create purchase orders](purchase-order-creation.md)
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+[Vendor invoices overview](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

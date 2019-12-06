@@ -76,16 +76,10 @@
           href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
         - name: Retail version 10.0.6
           href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail version 10.0.5
-          href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/commerce/toc.json
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-          - name: Finance and Operations apps 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/commerce/toc.json
-          - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/commerce/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
             href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
         - name: Removed or deprecated features
@@ -255,7 +249,7 @@
         - name: Update code and environments for Retail projects
           href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
         - name: Testing and performance issues
-          href: ../retail/dev-itpro/retail-implementation-testing-performance.md   
+          href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json   
     - name: System administration
       items:
       - name: Environment configuration
@@ -271,7 +265,7 @@
         - name: Initialize seed data in new Retail environments
           href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
         - name: Info codes and info code groups
-          href: ../retail/info-codes-retail.md     
+          href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json     
       - name: Store channel management 
         items:
         - name: Set up retail channels
@@ -295,7 +289,7 @@
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
           - name: Cash management improvements
-            href: ../retail/cash-mgmt.md 
+            href: ../retail/cash-mgmt.md?toc=/dynamics365/commerce/toc.json
           - name: Inventory lookup in the POS
             href: ../retail/product-variants-POS.md?toc=/dynamics365/commerce/toc.json
           - name: Suspend and resume transactions in the POS
@@ -813,7 +807,7 @@
       - name: Mexico
         items:
         - name: Global CFDI e-invoices for Mexico
-          href: ../finance/localizations/latam-mex-global-cfdi-3-3.md
+          href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
       - name: Norway
         items:
         - name: Cash register functionality
@@ -889,7 +883,7 @@
         - name: Benefits
           href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
         - name: Cash overview
-          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md
+          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
         - name: CFO overview
           href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
         - name: Compensation
@@ -905,7 +899,7 @@
         - name: Cost management
           href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
         - name: Credit and collections management
-          href: ../finance/accounts-receivable/credit-collections-power-bi.md
+          href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
         - name: Employee competencies and development
           href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
         - name: Employee development
@@ -917,7 +911,7 @@
         - name: Financial insights
           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
         - name: Fixed asset management
-          href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+          href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Learning
           href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
         - name: Organizational training
@@ -935,7 +929,7 @@
         - name: Sales and profitability performance
           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
         - name: Vendor payments
-          href: ../finance/accounts-payable/Vendor-payments-workspace.md
+          href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Warehouse performance
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
         - name: Workforce metrics
@@ -953,7 +947,7 @@
           - name: Install the Document Routing Agent to enable network printing
             href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
           - name: Upgrade the Document Routing Agent
-            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
           - name: Install network printer devices in on-premises environments
             href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
           - name: Document generation, publishing, and printing in on-premises deployments
@@ -1115,7 +1109,7 @@
             - name: Import files in XML format with optional attributes
               href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
             - name: Configure ER formats to import XML format files with optional attributes
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
         - name: Split generated XML files based on file size and content quantity
           href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
         - name: Support parameterized calls of ER data sources of Calculated field type
@@ -1137,7 +1131,7 @@
             - name: Download configurations from the ER repository of the RCS type
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
             - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -1215,7 +1209,7 @@
         - name: Power BI integration with Entity store
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
         - name: Resolve issues after Entity store maintenance
-          href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+          href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md?toc=/dynamics365/commerce/toc.json
         - name: Configure Power BI integration for workspaces
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
         - name: Bring your own database
@@ -1229,7 +1223,7 @@
         - name: Available mobile workspaces
           href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/commerce/toc.json
         - name: Asset management
-          href: ../supply-chain/asset-management/asset-management-mobile-workspace.md
+          href: ../supply-chain/asset-management/asset-management-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Company directory
           href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Cost controlling
@@ -1245,7 +1239,7 @@
         - name: Project mobile applications overview
           href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/commerce/toc.json
         - name: Project time entry
-          href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/retailtoc.json
+          href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
         - name: Project timesheet
           href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/commerce/toc.json
         - name: Purchase order approval
@@ -1656,6 +1650,8 @@
           href: ../retail/dev-itpro/customer-attributes.md?toc=/dynamics365/commerce/toc.json
         - name: CRT SDK samples
           href: ../retail/dev-itpro/retail-sdk/retail-sdk-samples.md?toc=/dynamics365/commerce/toc.json
+        - name: Log extension events to Application Insights
+          href: ../retail/dev-itpro/commerce-application-insights.md?toc=/dynamics365/commerce/toc.json
       - name: Payment connector extensibility
         items:
         - name: Create a payment integration for a payment terminal

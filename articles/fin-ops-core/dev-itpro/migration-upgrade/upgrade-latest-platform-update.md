@@ -72,9 +72,10 @@ Get the latest platform update package by clicking on one of the two tiles as me
 From a process perspective, deploying a platform upgrade package resembles a binary hotfix deployable package.
 
 -   To apply a platform update package to your cloud development, build, demo, tier-2 sandbox, or production environment, update directly from LCS.
-[![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
 
-For more details, follow the instructions for applying a binary hotfix in [Apply a deployable package](../deployment/apply-deployable-package-system.md).
+    [![Apply updates](./media/applyupdates.jpg)](./media/applyupdates.jpg)
+
+For more details, follow the instructions for applying a binary hotfix in [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md).
 
 > [!NOTE]
 > **Migrate files for Document management**: After upgrading to Platform update 6 or later, an administrator needs to click the **Migrate Files** button on the **Document management parameters** page to finish the upgrade process. This will migrate any attachments stored in the database to blob storage. The migration will run as a batch process and could take a long time, depending on the number and size of the files being moved from the database into Azure blob storage. The attachments will continue to be available to users while the migration process is running, so there should be no noticeable effects from the migration. To check if the batch process is still running, look for the **Migrate files stored in the database to blob storage** process on the **Batch jobs** page.
@@ -86,7 +87,10 @@ This section describes how to apply a platform update package to a *local develo
 Platform update packages are released by Microsoft and can be imported from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The package name is prefixed with **Dynamics 365 Unified Operations Platform Update**. Use these steps to import the platform update package:
 
 1.  Go to your LCS project's Asset library.
-2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+2.  On the **Software deployable package** tab, click **Import** to create a reference to the platform update package. 
+
+    [![Import button](./media/importupgradepackage.png)](./media/importupgradepackage.png)
+
 3.  Select the desired platform update package.
 
 > [!NOTE]
@@ -104,10 +108,10 @@ Platform update packages are released by Microsoft and can be imported from the 
     -   If you're upgrading a development or demo environment that contains source code, change the **MetaPackage** value to **dynamicsax-meta-platform-development**.
     -   If you're upgrading a runtime environment, such as a tier-2 sandbox environment or another environment that doesn't contain source code, the default value, **dynamicsax-meta-platform-runtime**, is correct.
 
-> [!NOTE]
-> Step 3 is not applicable when upgrading to Platform update 4 or later.
+    > [!NOTE]
+    > Step 3 is not applicable when upgrading to Platform update 4 or later.
 
-4.  Follow the instructions for installing a deployable package. See [Install a deployable package](../deployment/install-deployable-package.md).
+4.  Follow the instructions for installing a deployable package. See [Install deployable packages from the command line](../deployment/install-deployable-package.md).
 5.  If you're working in a development environment, rebuild your application’s code.
 
 #### Example
@@ -125,7 +129,7 @@ AXUpdateInstaller.exe generate -runbookid="OneBoxDev" -topologyfile="DefaultTopo
 > [!NOTE]
 > Skip this section if you are updating to Platform update 4 or later, development tools are automatically installed as part of installing the deployable package.
 
-Update the Visual Studio development tools as described in [Updating the Visual Studio development tools](../dev-tools/update-development-tools.md).
+Update the Visual Studio development tools as described in [Update the Visual Studio development tools](../dev-tools/update-development-tools.md).
 
 ### Regenerate form adaptor models
 
@@ -185,4 +189,4 @@ After you've prepared your build environment for this update, apply the platform
 Additional resources
 --------
 
-[Overview of moving to the latest update of Microsoft Dynamics 365 for Finance and Operations](upgrade-latest-update.md)
+[Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)

@@ -67,7 +67,7 @@ You cannot reconcile a bank statement with a bank account if any of the checks o
 
 8.  To view bank transactions that have not yet been reconciled, use the **Unreconciled bank transactions** report. To view the bank statement for a bank account, use the **Bank statement** report.
 
-# Cancel bank statement reconciliation 
+## Cancel bank statement reconciliation 
 
 The Cancel bank statement reconciliation functionality enables you to cancel bank statement reconciliation. To use this feature, enable the **Cancel bank statement reconciliation** feature in the **Feature management** workspace. You also need to enable the **Allow bank statement edit** parameter. To do this, go to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation**.
  

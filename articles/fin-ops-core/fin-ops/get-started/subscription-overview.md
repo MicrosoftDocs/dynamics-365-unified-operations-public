@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-When customers subscribe through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Azure Active Directory (Azure AD) tenant, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production environment. For more information about these core concepts, see [Architecture overview](../imp-lifecycle/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
+When customers subscribe through a Microsoft Volume Licensing agreement or a Microsoft Cloud Solution Provider (CSP) agreement, they usually have one Microsoft Azure Active Directory (Azure AD) tenant, one Microsoft Dynamics Lifecycle Services (LCS) Implementation project and any number of sandbox environments that are deployed to one data center of the customer's choice, and one production environment. For more information about these core concepts, see [Finance and Operations application architecture](../imp-lifecycle/architecture-overview.md). Although this setup works well for most projects, more advanced scenarios are sometimes required, or changes during the implementation lifecycle must be accommodated.
 
 This topic provides answers to frequently asked questions about subscriptions and licenses, Azure AD tenants, and LCS Implementation projects.
 
@@ -39,8 +39,8 @@ For more information, see the following topics:
 
 - [Move environments between data centers](move-environments-data-center.md)
 - [Move licenses between agreement types](move-licenses-between-agreement-types.md)
-- [Move an LCS Implementation project to another Azure Active Directory tenant](move-lcs-implementation-project-tenant.md)
-- [Implement multiple LCS projects and production environments on the same Azure Active Directory tenant](implement-multiple-projects-aad-tenant.md)
+- [Move LCS implementation projects to different Azure AD tenants](move-lcs-implementation-project-tenant.md)
+- [Multiple LCS projects and production environments on one Azure AD tenant](implement-multiple-projects-aad-tenant.md)
 
 ## Do I have to move Azure AD tenants when I move from a CSP agreement to a Volume Licensing agreement?
 

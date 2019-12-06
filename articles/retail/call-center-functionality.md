@@ -49,17 +49,17 @@ This page provides links to relevant documentation related to the setup, configu
 
 ## Configure the call center
 
-[Set up order processing options](set-up-order-processing-options.md)
+[Set up call center channels](set-up-order-processing-options.md)
 
 ## Configure order processing
 
-[Set up fraud alerts](set-up-fraud-alerts.md)
+[Set up and work with call center fraud alerts](set-up-fraud-alerts.md)
 
-[Manual Order Holds](work-with-order-holds.md)
+[Configure and work with call center order holds](work-with-order-holds.md)
 
 ## Configure payment processing
 
-[Payment methods in a call center](work-with-payments.md)
+[Payment methods in call centers](work-with-payments.md)
 
 ## Configure delivery modes
 
@@ -69,8 +69,8 @@ This page provides links to relevant documentation related to the setup, configu
 
 [Call center catalogs](call-center-catalogs.md)
 
-[Set up RFM analysis](set-up-rfm-analysis.md)
+[Set up Recency, Frequency, and Monetary (RFM) analysis](set-up-rfm-analysis.md)
 
 ## Configure continuity programs
 
-[Set up a continuity program for a call center](set-up-continuity-program.md)
+[Set up continuity programs for call centers](set-up-continuity-program.md)

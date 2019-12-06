@@ -50,7 +50,7 @@ The **Rebuild financial dimensions** option is set to **No** by default, as it i
 
 ## Additional resources
 
-[Set up financial dimensions (Task guide)](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
+[Define financial dimensions](../../../finance/general-ledger/tasks/define-financial-dimensions.md)
 
 [Maintenance mode](../sysadmin/maintenance-mode.md)
 

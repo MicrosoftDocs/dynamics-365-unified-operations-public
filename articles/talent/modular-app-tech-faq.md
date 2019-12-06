@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Provisioning for the Dynamics 365 Talent - Onboard app
+title: Provision Onboard
 description: This topic provides information about how to provision the standalone Dynamics 365 Talent - Onboard app.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
 ---
 
-#  Provisioning for the Dynamics 365 Talent - Onboard app
+#  Provision Onboard
 
 [!include [banner](includes/banner.md)]
 

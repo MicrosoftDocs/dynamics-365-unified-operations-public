@@ -58,6 +58,7 @@ This topic provides information about functionality that supports Russian regula
 - [Exchange adjustment](rus-exchange-adjustment.md)
 - [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
+- [Cash - Local primary forms and unified reports](rus-local-primary-forms-and-unified-reports.md)
 
 ## VAT
 
@@ -96,6 +97,7 @@ This topic provides information about functionality that supports Russian regula
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
 - [Allocation of miscellaneous charges in proportion to weight and volume](rus-miscellaneous-charges.md)
+- [Third party miscellaneous charges](rus-third-party-misc-charges.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)

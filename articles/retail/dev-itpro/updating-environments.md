@@ -198,4 +198,4 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
 [Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-[Testing and performance](./retail-implementation-testing-performance.md)
+[Testing and performance issues](./retail-implementation-testing-performance.md)

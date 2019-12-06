@@ -52,7 +52,7 @@ Information from the usage profile is also used in the project summary report th
 | Total peak concurrent users             | Highest among: Peak of total user load chart, question from Deployment details, and sum of the questions from all the Business process questionnaires.      |
 
 ## Prerequisites
-If you want to import process data from Business process modeler, you must first complete the modeling of the organization. For more information, see [Business process modeler](business-process-modeler-lcs.md).
+If you want to import process data from Business process modeler, you must first complete the modeling of the organization. For more information, see [Business process modeler (BPM) in Lifecycle Services (LCS)](business-process-modeler-lcs.md).
 
 ## Import business processes from BPM
 We recommend that you start by importing data from Business process modeler, and then add additional data manually.
@@ -64,9 +64,8 @@ We recommend that you start by importing data from Business process modeler, and
 ## Enter data
 You can either enter data directly in Usage profiler, or you can download an Excel template, complete it, and then upload it again.
 
-| **Note**                                                                                                                                                                                |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| When you are finished entering data, click the **Mark as complete** tile. The usage profile must be marked as complete to be used by other tools, such as the Infrastructure estimator. |
+> [!NOTE]
+> When you are finished entering data, click the **Mark as complete** tile. The usage profile must be marked as complete to be used by other tools, such as the Infrastructure estimator.
 
 The following table lists the sections that you can enter data for.
 
@@ -87,9 +86,8 @@ The following table lists the sections that you can enter data for.
 
 Click each section, and enter the requested data for your organization. Only modules that were imported from Business Process Modeler will be visible.
 
-| **Note**                                                                                                                               |
-|----------------------------------------------------------------------------------------------------------------------------------------|
-| The **Usage profiler** page is a panorama page. Scroll to the right by using your mouse wheel or the lower scroll bar in your browser. |
+> [!NOTE]
+> The **Usage profiler** page is a panorama page. Scroll to the right by using your mouse wheel or the lower scroll bar in your browser. 
 
 ### 
 

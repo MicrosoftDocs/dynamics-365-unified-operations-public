@@ -71,4 +71,4 @@ Access to the Provisioning guide can be found here:
 - [Provisioning guide on CustomerSource](https://go.microsoft.com/fwlink/?linkid=852080)
 - [Provisioning guide on PartnerSource](https://mbs.microsoft.com/partnersource/global/deployment/documentation/user-guides/D365Ops_OnPremEEProvisionGuide)
 
-After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy an on-premises environment. For more details on getting started with your LCS project, see [Create an on-premises project in Lifecycle Services](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md).
+After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy an on-premises environment. For more details on getting started with your LCS project, see [Set up on-premises projects in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md).

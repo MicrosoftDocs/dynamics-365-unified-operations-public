@@ -87,13 +87,13 @@ Run the data upgrade process on a copy of your source database. If your environm
 
 Run this process in the development environment that is running the release that you're upgrading to. This step is a validation process that is done by a developer. It helps the developer verify that the data upgrade can be successfully completed by using the specific set of customizations in the environment, without requiring any manual intervention.
 
-To make a copy of your production database, follow the steps in [Export a copy of the standard user acceptance test (UAT) database](../database/dbmovement-scenario-exportuat.md).
+To make a copy of your production database, follow the steps in [Export a copy of the standard user acceptance testing (UAT) database](../database/dbmovement-scenario-exportuat.md).
 
-To run the data upgrade process, follow the steps in [Upgrade data in development, or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md).
+To run the data upgrade process, follow the steps in [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md).
 
 > [!IMPORTANT]
 > - Data upgrade in a development environment is a required step. It helps reduce the risk of extended downtime and upgrade errors later, when you upgrade sandbox UAT and production environments.
-> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Microsoft Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in develop, or demo environments](upgrade-data-to-latest-update.md#before-you-begin).
+> - Several application hotfixes might be required before you can upgrade data. Before you redeploy your existing development environment, verify whether these hotfixes are required. Install the required hotfixes, and check them in to Microsoft Azure DevOps. This step can be completed only in the old version of your development environment. For a list of the hotfixes that are required in various situations, see [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md#before-you-begin).
  
 ## Upgrade your Tier 2+ Standard Acceptance Test sandbox environment
 
@@ -215,7 +215,7 @@ If you encounter an issue that causes excessive downtime during your production 
 
 ### Upgrade additional environments
 
-You can upgrade additional sandbox environments in the same way. You also can deallocate and delete your other sandbox environments, and then redeploy on the newer version. By using the [Database Refresh](../database/database-refresh.md) self-service action, you can copy in the upgraded database from another sandbox or production environment.
+You can upgrade additional sandbox environments in the same way. You also can deallocate and delete your other sandbox environments, and then redeploy on the newer version. By using the [Refresh database](../database/database-refresh.md) self-service action, you can copy in the upgraded database from another sandbox or production environment.
 
 ### Known issues
 

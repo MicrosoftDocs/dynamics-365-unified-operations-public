@@ -5,7 +5,7 @@ title: Assign users to security roles
 description: To access Finance and Operations apps, users must be assigned to security roles. 
 author: ChrisGarty
 manager: AnnBe 
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -40,6 +40,9 @@ To use anything other than common capabilities, users must be assigned to securi
 5. In the **Membership rule name** list, click the link in the selected row.
 6. Click **Edit query**. Edit the query, as needed.  
 7. Click **OK**.
+8. Click **Run automatic role assignment**.
+9. Go to **Navigation pane > Modules > System administration > Users > Users** (ideally in a separate browser tab).
+10. Review the roles assigned to various users to confirm that the role assignment query was correct. Adjust and re-run if needed.
 
 ## Exclude users from automatic role assignment
 1. Close the page.

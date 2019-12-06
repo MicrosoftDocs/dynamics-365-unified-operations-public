@@ -36,10 +36,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Describes the Dimension Entry control and associated Controller classes.
 
-General approach
-----------------
+## General approach
 
-The design goal is to encapsulate the control implementation and not require the form to interact with the classes backing the control. In alignment with this design, **all forms should interact only with the Dimension Entry control instance API and not directly with the controller classes**, like LedgerDimensionEntryController, LedgerDefaultDimensionEntryController, etc. Any property that was manipulated or any method that was called on the controller would now need to be called on the control. **Note:**
+The design goal is to encapsulate the control implementation and not require the form to interact with the classes backing the control. In alignment with this design, **all forms should interact only with the Dimension Entry control instance API and not directly with the controller classes**, like LedgerDimensionEntryController, LedgerDefaultDimensionEntryController, etc. Any property that was manipulated or any method that was called on the controller would now need to be called on the control. 
+
+**Notes:**
 
 -   The upgrade script only handles Dimension Entry controls constructed with the constructInGroupWithValues() and constructInTabWithValues() methods. Other controls will need to be upgraded manually.
 -   The upgrade script will not handle any Dimension Entry controls sent as parameters to helper methods. This code will need to be manually upgraded.
@@ -50,7 +51,9 @@ The design goal is to encapsulate the control implementation and not require the
 [![1](./media/1.png)](./media/1.png)
 
 ## Properties
-The custom properties for the Dimension Entry control are found under the **Controller** group. [![Capture1](./media/capture1.png)](./media/capture1.png)
+The custom properties for the Dimension Entry control are found under the **Controller** group. 
+
+[![Capture1](./media/capture1.png)](./media/capture1.png)
 
 #### Details on the properties
 
@@ -79,7 +82,11 @@ The table provided below gives details about each controller.
 | InventSiteSMAItemDimensionValueSet             | This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup.                                                                                                                                                                           |
 | InventSiteTmpLedgerBaseLinkedDimensionValueSet | This controller provides support for data entry in the Dimension Entry control for the behavior mandated by the Inventory Dimension Link setup. This controller specifically works with the DefaultDimension field on the TmpLedgerBase table.                                                                            |
 
-Some Dimension Entry controls might not have the controller property set. The controller is inferred from the EDT of the control’s Value Data Field in these cases. A set of Dimension Entry control specific properties is provided below. These properties are for the Dimension Entry control selected in the General Approach section above (DimensionEntryControlHeader) on the PurchTable form. This Dimension Entry control is using the DefaultDimension field on the PurchTable table. The Extended Data Type property of the DefaultDimension field on PurchTable is set to LedgerDefaultDimensionValueSet (shown below). At runtime, this EDT will be mapped to the LedgerDefaultDimensionEntryController. So the DimensionEntryControlHeader control uses the LedgerDefaultDimensionEntryController in this case. The following example shows the EDTs and the controllers they are mapped to. [![3](./media/3.png)](./media/3.png) [![4](./media/4.png)](./media/4.png)
+Some Dimension Entry controls might not have the controller property set. The controller is inferred from the EDT of the control’s Value Data Field in these cases. A set of Dimension Entry control specific properties is provided below. These properties are for the Dimension Entry control selected in the General Approach section above (DimensionEntryControlHeader) on the PurchTable form. This Dimension Entry control is using the DefaultDimension field on the PurchTable table. The Extended Data Type property of the DefaultDimension field on PurchTable is set to LedgerDefaultDimensionValueSet (shown below). At runtime, this EDT will be mapped to the LedgerDefaultDimensionEntryController. So the DimensionEntryControlHeader control uses the LedgerDefaultDimensionEntryController in this case. The following example shows the EDTs and the controllers they are mapped to. 
+
+[![3](./media/3.png)](./media/3.png) 
+
+[![4](./media/4.png)](./media/4.png)
 
 #### Extended data types and the controllers they are mapped to
 
@@ -102,12 +109,18 @@ Replace this based on the migration guidance. */
 DimensionEntryControl.reactivate();</code></pre>
 
 ### Finance and Operations 
-The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource; an optimization can be manually made to improve performance and reduce code uptake:
-<p>1) Remove the parmCompany() and reactivate() calls during the datasource active process.</p>
-<p>2) In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:</p>
-<pre><code>DimensionEntryControl.parmCompanyReference(
-    fieldStr([myTable], [myCompanyContextField]);</code></pre>
-This change will allow the DEC to automatically find the company field reference that is updated when the active record changes and refresh the list of dimensions accordingly. <strong>Note:</strong> This should not be combined with the use of parmDisplayedDimensionSet() otherwise the list of dimensions may not be the ones expected. In all other locations, such as the modified method of a company selection field, parmCompany() must be called to immediately reflect the change in company as the datasource is not in the process of being read at that time.
+The reactivate method refreshes the Dimension Entry control with current settings. The method only refreshes the control if the company or displayed dimension list changes. This call can be removed if neither of these are changed before it. Otherwise leave the call as is. If parmCompany() is called immediately before reactivate(), and it is the only DEC API called before reactivate(), and the method it resides in is called during the active() of the datasource, then an optimization can be manually made to improve performance and reduce code uptake:
+
+1. Remove the parmCompany() and reactivate() calls during the datasource active process.
+2. In the form init(), run(), datasource init(), or similar methods called before initial user interaction with the form, add the following line of code:
+
+    <pre><code>DimensionEntryControl.parmCompanyReference(
+        fieldStr([myTable], [myCompanyContextField]);</code></pre>
+    
+    This change will allow the DEC to automatically find the company field reference that is updated when the active record changes and refresh the list of dimensions accordingly. 
+
+> [!NOTE] 
+> This should not be combined with the use of parmDisplayedDimensionSet() otherwise the list of dimensions may not be the ones expected. In all other locations, such as the modified method of a company selection field, parmCompany() must be called to immediately reflect the change in company as the datasource is not in the process of being read at that time.
 
 ### Dynamics AX 2012
 <pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
@@ -118,7 +131,9 @@ DimensionEntryControl.setEditability(true, 0);</code></pre>
 If a specific editable dimension set is needed, replace this call with:
 <pre><code>DimensionEntryControl.parmEditableDimensionSet(
     editableDimensionSet);</code></pre>
-<strong>Note</strong>: The editableDimensionSet parameter is of type DimensionEnumeration.
+    
+> [!NOTE] 
+> The editableDimensionSet parameter is of type DimensionEnumeration.
 
 ### Dynamics AX 2012 
 <pre><code>/* TODO: (Code Upgrade) [Dimension entry control] 
@@ -181,9 +196,11 @@ Since the call to updateValues() has two parameters in this case, it needs to be
 <pre><code>DimensionEntryControlHeader.allowEdit(
     NoYesUnchanged::No);
 DimensionEntryControlHeader.loadAttributeValueSet(0);</code></pre>
-<strong>Note:</strong>If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit is not needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.
 
-## **Methods to potentially remove**
+> [!NOTE] 
+> If the first parameter in the updateValues method call was NoYesUnchanged::Unchanged, then the new call to allowEdit is not needed. Similarly, if the second parameter in the updateValues method call was false, then the call to loadAttributeValueSet is not needed.
+
+## Methods to potentially remove
 Any leftover methods on the datasource or tabpage/group that holds the Dimension Entry control can be removed if there is no custom logic. The following table shows examples of methods without customizations which should be deleted.
 
 ### Dynamics AX 2012
@@ -247,7 +264,7 @@ This method will be on the data source. It can be removed if there is no custom 
 ### Finance and Operations 
 This method will be on the tabpage or group that holds the Dimension Entry control. If there is no custom logic, the method can be deleted.
 
-## **Compile Errors**
+## Compile Errors
 This section will go through how to address common compile errors that may be left behind.
 
 
@@ -288,11 +305,10 @@ parmDimensionEntryControlHeader(
 
 
 
-Additional resources
---------
+## Additional resources
 
-[Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
+[Migrate default dimensions controls to Dimension Entry controls](dimension-entry-control-migration.md)
 
-[Dimension Entry control dialog support](dimension-entry-control-dialog-support.md)
+[Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
 
 

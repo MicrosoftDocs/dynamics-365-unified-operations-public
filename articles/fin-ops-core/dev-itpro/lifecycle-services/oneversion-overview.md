@@ -76,7 +76,7 @@ Customers will also be able to **self-update** by using the standard update expe
 
 ## Validate
 
-After an update is completed in the UAT environment, a basic business process test can be executed to validate the environment. To support this effort, a no-code automation test tool for business process testing is available, as shown in the following illustration. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
+After an update is completed in the UAT environment, a basic business process test can be executed to validate the environment. To support this effort, a no-code automation test tool for business process testing is available, as shown in the following illustration. For more information, see [Create and automate user acceptance tests](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
 
 [![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
 

@@ -224,7 +224,7 @@ If you're using consignment inventory, vendors can use the vendor collaboration 
 ## Working with RFQs when you use vendor collaboration
 
 This section describes the interactions between customers and vendors during the RFQ process. It also explains how information is communicated to the vendors. 
-For a basic overview of support for the RFQ process, see [Request for quotations (RFQs)](request-quotations.md).
+For a basic overview of support for the RFQ process, see [Requests for quotation (RFQs) overview](request-quotations.md).
 
 ### Alternates, attachments, amendments, and returns
 

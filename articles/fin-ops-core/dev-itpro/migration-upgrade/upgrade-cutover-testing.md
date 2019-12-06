@@ -70,7 +70,7 @@ During cutover testing, the technical team is focused on performance and reliabi
 > [!NOTE]
 > For the technical workstream, the cutover testing process is the same as the high-level steps of the actual/go-live cutover process.
 
-For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in a sandbox environment](upgrade-data-sandbox.md).
+For the technical workstream, the cutover testing process is the same described in [Upgrade from AX 2012 - Data upgrade in sandbox environments](upgrade-data-sandbox.md).
 
 ## Functional workstream
 

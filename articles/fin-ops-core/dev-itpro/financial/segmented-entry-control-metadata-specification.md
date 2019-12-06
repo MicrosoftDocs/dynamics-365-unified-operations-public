@@ -160,13 +160,13 @@ LedgerDimensionAccountAlias: No
 Additional resources
 --------
 
-[Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)
+[Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
-[Segmented Entry control Parm method Specification](segmented-entry-control-parm-method-specification.md)
+[Parm methods for Segmented Entry controls](segmented-entry-control-parm-method-specification.md)
 
-[Segmented Entry control migration](segmented-entry-control-conversion.md)
+[Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
-[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+[Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
 
 
 

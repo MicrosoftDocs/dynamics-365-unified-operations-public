@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent July 2018 update
 
 # What's new or changed in Dynamics 365 Talent - Core HR (July 2018)
 
-[!include [banner](includes/banner.md)]
-
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent: Core HR.
 
 ## Power Apps personalization
@@ -51,7 +49,7 @@ Integration between Talent and Ceridian Dayforce is now available for the US, Ca
 - Payroll data, such as pay cycles, pay periods, and earning codes
 - Worker data
 
-For more information, see [Configure your payroll integration](configure-payroll-integration.md).
+For more information, see [Configure the payroll integration between Talent and Dayforce](configure-payroll-integration.md).
 
 ## Worker tax regions have been expanded beyond the US
 

@@ -53,9 +53,9 @@ During export, the tool creates three files for each table. Make sure that there
 Additional resources
 --------
 
-[Test Data Transfer Tool (beta) for Microsoft Dynamics AX 2012](test-data-transfer-tool-beta-2012.md)
+[Test Data Transfer Tool (beta)](test-data-transfer-tool-beta-2012.md)
 
-[Run the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](run-test-data-transfer-tool-beta.md)
+[Run the Test Data Transfer Tool (beta)](run-test-data-transfer-tool-beta.md)
 
 
 

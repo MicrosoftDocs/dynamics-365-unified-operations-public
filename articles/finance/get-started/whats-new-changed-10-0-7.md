@@ -34,7 +34,13 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 Finance version 10.0.7. This version has a build number of 10.0.283. While the general availability date is in January 2020, the new features are available for early release in October. For more information about version 10.0.7, see [Additional resources](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md#additional-resources).
+This topic describes preview features that are new or changed for Platform update 31 for Microsoft Dynamics 365 Finance, version 10.0.7. This version has a build number of 7.0.5457 and is available as follows:
+
+- Preview release is in October 2019.
+- General availability (self-update) is in November 2019.
+- Auto-update is in January 2020.
+
+For more information about Platform update 31, see [Additional resources](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md#additional-resources).
 
 ## Budget register entry enhancements
 

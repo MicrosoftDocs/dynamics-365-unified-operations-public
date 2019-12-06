@@ -46,7 +46,7 @@ Users and developers will see an updated product name ("Microsoft Dynamics 365 f
 
 ## Development and customization – Changing the extended data type (EDT) on a table field using table extensions
 
-Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize with extensions and overlayering](../../dev-itpro/extensibility/customization-overlayering-extensions.md).
+Using table extensions, a developer can change the **Extended Data Type** (EDT) property of a table field. Developers can only select EDTs that are derived from the current one. For more information, see [Customize through extension and overlayering](../../dev-itpro/extensibility/customization-overlayering-extensions.md).
 
 ## Improved viewing experience for Application reports
 

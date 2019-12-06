@@ -41,7 +41,14 @@ Purchase agreements can apply to a specific quantity of a product, a specific cu
 
 On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement. The delivery date of a purchase must be within the effective dates of this validity period.  
 
-After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**.
+After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to **Yes**. 
+
+To prevent your purchase agreement from being used and confirmed, mark the agreement status as **Closed**. You can still update the status to **Effective** any time after making this change.
+
+## Responsible workers on purchase agreements
+
+You can identify a primary responsible worker and secondary responsible worker on the purchase agreement classification. These values will be inherited by the resulting purchase agreement. You're not required to add responsible workers to the purchase agreement, and they can be modified directly on a per case basis on the purchase agreement itself. You can't specify a secondary responsible worker without a primary responsible worker, although you don't have to have a secondary responsible worker. You can't specify the same worker as both the primary and secondary responsible worker. 
+
 
 ## Commitment types
 Each line in a purchase agreement is a commitment to buy something. You can use lines from multiple purchase orders (POs) to fulfill the commitment. There are four types of commitments:
@@ -102,9 +109,9 @@ You can copy financial dimensions to document headers or to individual lines of 
 Additional resources
 --------
 
-[Create a purchase agreement (Task guide)](tasks/create-purchase-agreement.md)
+[Create a purchase agreement](tasks/create-purchase-agreement.md)
 
-[Create a purchase release order from a purchase agreement (Task guide)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Create a purchase release order from a purchase agreement](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

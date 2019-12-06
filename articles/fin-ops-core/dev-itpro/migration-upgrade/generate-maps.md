@@ -39,7 +39,7 @@ Before you can generate maps, you must provide the target URL, tenant URL, and s
 > When you create a new app under Microsoft Azure Active Directory (Azure AD) in the Azure portal, you have two options, **Web API** and **Native**. Select **Native**, and grant permissions to the native Azure AD app.
 
 ## Prerequisites
-Before you generate the data maps between the source and target environments, you must install the Data migration tool (DMT). For more information, see [Install the Data migration tool](install-dmt.md).
+Before you generate the data maps between the source and target environments, you must install the Data migration tool (DMT). For more information, see [AX 2009 migration - Install the Data migration tool](install-dmt.md).
 
 ## Generate maps
 Follow these steps to generate maps for data migration.

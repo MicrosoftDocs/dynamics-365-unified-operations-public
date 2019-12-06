@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Set up Human resources (HR) parameters across legal entities
 
-[!include [banner](includes/banner.md)]
-
 You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
 
 Some types of records, such as Position records, are shared across companies. For these records, you must set up shared parameters. For example, you use the **Human resources shared parameters** page to set up Human resources parameters across legal entities. 
@@ -57,7 +55,7 @@ On the **Positions** tab, indicate whether new positions are available for assig
 Additional resources
 --------
 
-[Set up company specific HR parameters](set-up-company-specific-hr-parameters.md)
+[Set up company-specific Human resources (HR) parameters](set-up-company-specific-hr-parameters.md)
 
 
 

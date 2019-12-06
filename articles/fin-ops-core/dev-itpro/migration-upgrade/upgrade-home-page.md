@@ -40,9 +40,9 @@ The processes for each type of upgrade are similar, but different enough that we
 
 To get started, review the following topics:
 
-- [Overview of upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md)
+- [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md)
 
-- [Prepare to migrate code from AX 2012 to Finance and Operations](prepare-migration.md)
+- [Prepare to migrate code to Finance and Operations](prepare-migration.md)
 
 ## Migration from Microsoft Dynamics AX 2009 to Finance and Operations
 This Tech Talk video provides an introduction to migration from AX 2009 to Finance and Operations: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4).
@@ -54,29 +54,29 @@ The steps for applying updates and upgrading differ between cloud and on-premise
 ### Cloud
 If you are upgrading a cloud version of Finance and Operations, review the following topics:
 
-- [Overview of moving to the latest Finance and Operations update](upgrade-latest-update.md)
+- [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
 
-- [Apply the latest platform update to your Finance and Operations environment](upgrade-latest-platform-update.md)
+- [Apply the latest platform update to environments](upgrade-latest-platform-update.md)
 
-- [Download Finance and Operations hotfixes from Lifecycle Services](download-hotfix-lcs.md)
+- [Download updates from Lifecycle Services (LCS)](download-hotfix-lcs.md)
 
 
 ### On-premises
 If you are applying updates to an on-premises version of Finance and Operations, review the following topic:
 
-- [Apply updates to an on-premises deployment](../deployment/apply-updates-on-premises.md)
-- [Redeploy an on-premises deployment](../deployment/redeploy-on-prem.md)
+- [Apply updates to on-premises deployments](../deployment/apply-updates-on-premises.md)
+- [Redeploy on-premises environments](../deployment/redeploy-on-prem.md)
 
 ## Hotfixes
 
-- [Download hotfixes from Lifecycle Services](download-hotfix-lcs.md)
-- [Apply updates to a cloud environment](../deployment/apply-deployable-package-system.md)
-- [Install a metadata hotfix](install-metadata-hotfix-package.md)
-- [Patch Reporting Services in a one-box environment](patch-reporting-service-environment.md)
-- [Update Visual Studio development tools](../dev-tools/update-development-tools.md)
+- [Download updates from Lifecycle Services (LCS)](download-hotfix-lcs.md)
+- [Apply updates to cloud environments](../deployment/apply-deployable-package-system.md)
+- [Install metadata hotfixes in development environments](install-metadata-hotfix-package.md)
+- [Patch SQL Server Reporting Services (SSRS) in one-box environments](patch-reporting-service-environment.md)
+- [Update the Visual Studio development tools](../dev-tools/update-development-tools.md)
 
 This Tech Talk video provides an introduction servicing (applying code updates, requesting sandbox database refreshes, and filing support requests): [Dynamics 365 for Operations – Tech Talk: Servicing](https://www.youtube.com/watch?v=QkcdBI_ipTM).
 
  For more information, see: 
-- [Request a sandbox database refresh](../database/database-refresh.md)
-- [Set up technical support](../lifecycle-services/support-experience.md) 
+- [Refresh database](../database/database-refresh.md)
+- [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md) 

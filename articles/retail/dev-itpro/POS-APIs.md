@@ -5,7 +5,7 @@ title: Retail POS APIs
 description: This topic contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 manager: AnnBe
-ms.date: 05/24/2019
+ms.date: 11/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -210,6 +210,9 @@ The following is a list of APIs exposed to perform cart-related functionality.
 | CreateNonSalesTransactionServiceRequest |
 | ReturnTransactionOperationRequest |
 | AddLoyaltyCardToCartOperationRequest |
+| ReturnCartLineOperationRequest |
+| ReturnItemOperationRequest |
+
 
 ### Payments
 

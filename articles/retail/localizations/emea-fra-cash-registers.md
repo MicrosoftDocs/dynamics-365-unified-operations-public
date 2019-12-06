@@ -42,7 +42,7 @@ The functionality consists of the following parts:
 
 ### Common POS features
 
-To learn about POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../index.md).
 
 The following POS localization features that are available to customers in all countries or regions can now be used specifically for France:
 
@@ -201,7 +201,7 @@ The archive format is implemented by using [Electronic reporting (ER)](../../dev
 
 ## Setting up Retail for France
 
-This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Microsoft Dynamics 365 Retail documentation](../index.md).
+This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
 
 To use the France-specific functionality for Retail, you must complete these tasks:
 
@@ -309,7 +309,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Store name** – This standard field prints the name of the store.
     - **Store address** – This standard field prints the address of the store.
 
-For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
+For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 ### Configure the digital signature parameters for Retail headquarters
 
@@ -352,7 +352,7 @@ After you import the configurations, on the **Retail parameters** page, on the *
 
 To enable audit events, you must reinitialize the Retail Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Retail Scheduler.
 
-On the **General** FastTab of the **Retail parameters** page, click **Initialize**. For more information, see [Initialize seed data](../enable-configure-retail-functionality.md)
+On the **General** FastTab of the **Retail parameters** page, click **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md)
 
 There is an option to separately configure the Retail scheduler. Click **Retail scheduler** \> **Initialize retail scheduler**. On the **Initialize retail scheduler** page, click **OK**.
 

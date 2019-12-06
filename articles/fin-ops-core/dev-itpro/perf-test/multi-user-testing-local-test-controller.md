@@ -245,4 +245,4 @@ Before you complete the steps in this topic, verify that the following prerequis
 
 ## Troubleshooting
 
-For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide](troubleshoot-perf-sdk-user-testing.md).
+For information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).

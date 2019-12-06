@@ -36,7 +36,8 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes how to define and configure warehouse app field names and priorities in Dynamics 365 Supply Chain Management. 
 
-**Note:** This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure Warehousing](install-configure-warehousing-app.md).
+> [!NOTE]
+> This topic applies to features in Warehouse management. It doesn’t apply to features in Inventory management. Warehousing is an application that you can use to perform warehouse tasks. You can define and configure the field names that are used in the app, as well as configure the priority to which the field names should be assigned. This topic explains how to define and configure these warehouse app field names and priorities, and how they are used in Warehousing. For detailed information about how to configure the connection to FWarehousing, refer to the tutorial [Install and configure the Warehousing app overview](install-configure-warehousing-app.md).
 
 ## Configure warehouse app field names
 
@@ -146,4 +147,4 @@ The remaining metadata, for example, Location, will not be displayed on the task
 Additional resources
 --------
 
-[Install and configure Microsoft Dynamics 365 for Finance and Operations – Warehousing](install-configure-warehousing-app.md)
+[Install and configure the Warehousing app overview](install-configure-warehousing-app.md)

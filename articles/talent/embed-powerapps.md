@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Embed Power Apps apps in Dynamics 365 - Core HR
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 The **Power Apps** menu item has disappeared from the **System administration** module.
@@ -44,13 +42,13 @@ The user interface (UI) design has been changed, and Microsoft Power Apps is now
 
 **Resolution**
 
-The way that Power Apps apps are embedded has been changed. Power Apps apps are now added through the personalization model. You can add Power Apps apps to almost all pages in Microsoft Dynamics 365 Talent.
+The way that Power Apps are embedded has been changed. Power Apps are now added through the personalization model. You can add Power Apps to almost all pages in Microsoft Dynamics 365 Talent.
 
-For information about how to embed Power Apps apps in Talent, see [Embed Power Apps apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
+For information about how to embed Power Apps in Talent, see [Embed Microsoft Power Apps](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/embed-power-apps).
 
 Any Power Apps customer who embedded apps before the change should have been upgraded to the new model.
 
-The **Power Apps** button is in the upper-right corner of almost every page in Talent. You can use this button to insert a Power Apps app.
+The **Power Apps** button is in the upper-right corner of almost every page in Talent. You can use this button to insert Power Apps.
 
 Here is an example.
 

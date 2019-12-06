@@ -114,7 +114,7 @@ There are two ways to integrate test as part of build process for testing and va
 -   SysTest framework based unit and component level tests.
 -   Generate code from Task Recorder recording XML for automated test execution.
 
-The details of these two approaches are mentioned in the [Testing and validation. ](testing-validation.md)Review this article for testing and validation strategy.
+The details of these two approaches are mentioned in the [Testing and validation](testing-validation.md) article. Review this article for testing and validation strategy.
 
 ## Use the Build VM environment
 When a Build VM is deployed in Developer topology through LCS, it is pre-configured and ready to start a build. You can change the default configuration at any time from the Visual Studio IDE or the Azure DevOps interface. On a Build VM, the module source code is synchronized to the build machine for easy build setup. The build machine is also auto-configured with default settings for build agent, build controller, build process template, and build definition. Tests that are integrated with build definition are executed after the build is successful.

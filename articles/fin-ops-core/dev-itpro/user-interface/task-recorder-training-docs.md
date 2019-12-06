@@ -89,7 +89,7 @@ This is what the notes annotation looks like in the "bubble" in the task guide.
 
 [![Notes annotation appearance in task guide](./media/screen4.png)](./media/screen4.png)
 
--   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step. **Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of the application, or to refer to other recordings (although you cannot create hyperlinks in annotations).
+-   **Info step**: These annotations are created by right clicking on a control or anywhere on a form &lt; **Task recorder** &lt; **Add info step.** Info steps appear as a numbered step at whatever point you insert it, even though no action was recorded in the UI. You can add a form-level info step or an info step associated with a control. When an info step is associated with a form, the task guide “bubble” will appear someplace on the form, with no pointer, when the task guide is played. When an info step is associated with a control, the task guide “bubble” will point to the control when the task guide is played. In the Help pane, an info step annotation will appear as a numbered step with whatever text you entered. Use info steps to prepare the user for the next steps, to describe steps that need to be done outside of the application, or to refer to other recordings (although you cannot create hyperlinks in annotations).
 
 **Determine how long to make your recording**
 
@@ -102,7 +102,7 @@ This is what the notes annotation looks like in the "bubble" in the task guide.
 **Decide where, in the UI, to start a recording** The page that you are on when you start recording a task recording affects which page the task guide is displayed for. For example, if you want your task recording to be listed in the Help pane when a user clicks Help on the General ledger parameters page, you must start your recording on the General ledger parameters page. **Save recordings as .axtr files** When you are done creating or editing a task recording, you are presented with several options for how you want to download, or save the recording. You can download the file as a task recording package (.axtr), download it as a raw recording file (.xml), download it as a Word document, or save the file to an LCS library. It is a good idea to always save your task recording as a task recording package file (.axtr). This will help make maintenance of the file easier if procedures or annotations need to change later. If you want to download the file as a Word document, also save it as a task recording package file.
 
 ## Create your task recording
-For detailed walk-through steps, see [How to create a task recording](task-recorder.md).
+For detailed walk-through steps, see [Task recorder resources](task-recorder.md).
 
 ## Copy and customize Microsoft's task recordings
 You can download and edit Microsoft's task recordings to use them for your own Help documentation or training materials. To download a Microsoft task recording, follow these steps:
@@ -120,14 +120,14 @@ You can download and edit Microsoft's task recordings to use them for your own H
 11. Choose how you want to save the task recording.
 
 ## Include your task recordings in the Help pane
-To show your own custom task recordings in the Help pane so that they can be played back as task guides or viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connect the Help system.](../../fin-ops/get-started/help-connect.md)
+To show your own custom task recordings in the Help pane so that they can be played back as task guides or viewed as text, you must save your task recordings to your own BPM library, and then update your Help system parameters to point to your BPM library. For more information, see [Connect the Help system](../../fin-ops/get-started/help-connect.md).
 
 Additional resources
 --------
 
-[Help overview](../../fin-ops/get-started/help-overview.md)
+[Help system](../../fin-ops/get-started/help-overview.md)
 
-[Connect Help](../../fin-ops/get-started/help-connect.md)
+[Connect the Help system](../../fin-ops/get-started/help-connect.md)
 
 [Task Recorder](task-recorder.md)
 
