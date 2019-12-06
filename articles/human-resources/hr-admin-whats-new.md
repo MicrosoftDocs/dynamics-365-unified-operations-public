@@ -32,4 +32,17 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # What's new in Human Resources
 
-## See also
+**Status**
+Draft, Acrolinx not run
+Darin, can we put weekly changes in one topic, maybe one topic per release cycle or year?
+**End Status**
+
+Each week, we provide a new release for Microsoft Dynamics Human Resources. The changes are listed below.
+
+For more information about upcoming features or the update process for Human Resources, see the following:
+
+- [Overview of Dynamics 365 Human Resources 2019 release wave 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+
+- [Update process](hr-admin-setup-update-process.md)
+
+
