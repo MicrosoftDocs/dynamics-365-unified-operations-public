@@ -32,6 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Configure and send email
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users to make it easy to find relevant information.
 
@@ -39,12 +40,14 @@ Both administrators and users set the behavior of the email subsystem.
 
 ## Administrator: Email parameters page
 
-On the **Email parameters** page, note the following settings on the **Email providers** tab.
+On the **Email parameters** page, note the following settings on the **Configuration** tab.
 
 | Field                 | Description |
 |-----------------------|-------------|
 | Batch email provider  | Specifies which email provider will be used to send emails that are sent by processes in a batch or non-interactive manner. The Exchange provider will use the account associated with the batch process. |
 | Attachment size limit | Specifies the maximum size of a single email that can be sent via the email subsystem. |
+
+In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. By default, the last 30 days of email history is retained. This can be configured by changing the **Number of days to retain email history** to a non-zero amount. Zero provides the default amount and behavior.
 
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
 
@@ -228,7 +231,7 @@ The testing for email notifications is to simply trigger the notification and th
 
 1. Submit a workflow that has been set up for email notifications.
 2. Check the workflow history to make sure that a workflow work item was assigned to the expected user.
-3. Check the status of the pending email notification in **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**.
+3. Check the status of the pending email notification in **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch email sending status**.
 
     If the email is fails to send, make sure that the SMTP mail account can be opened.
 
@@ -255,17 +258,20 @@ There are a few standard steps that can help you troubleshoot the configuration 
         1. Select **No end date** to adjust all recurrences of the email batch process.
         2. Adjust the count as you require.
 
-3. To review the contents and status of the pending emails, go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Email sending status**.
+3. To review the contents and status of batch emails, go to **System administration** \> **Periodic tasks** \> **Email processing** \> **Batch email sending status**.
 
     1. If you're using a release that is earlier than Platform update 28, personalize the form to add the email sender for easy review. To do this, right-click the grid header, select **Add columns**, select **Email**, and then click **Insert**. If the **Email** field isn't added into the grid, you can view the sender by selecting **Show message**, and then selecting the **Email** field.
     2. Verify that emails are being sent from the correct account. If the account is incorrect, you need to adjust settings such as user options, system templates,  or organization templates, as needed.
     3. Verify that all email user accounts have been granted permission to **Send As** for the configured SMTP account (see step 4 for details).
+    
+4. In Platform update 32, an **Email history** page was added to allow administrators to review all sent emails, including any errors that might have prevented an email from being sent. The **Email history** page will show interactive as well as non-interactive/batch emails. For any emails that have an **Email status** of **Failed**, review the error message on the **Failure details** tab and determine if corrective actions should be taken.
 
-4. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
-5. Sign in to all user mailboxes to verify that they are valid and can be signed in to.
-6. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
-7. If the SMTP settings were migrated from another environment, clear the password field and re-enter the password to ensure that the field encryption hasn't negatively affected the stored value.
-8. If you continue to experience issues when email is sent via SMTP, enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+5. In the Office 365 admin center, verify that all user mail accounts that will be used to send emails have **Send As** and **Send On Behalf Of** permissions for the configured SMTP account. For more information, see [Enable sending email from another user's mailbox in Office 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E).
+6. Sign in to all user mailboxes to verify that they are valid and can be accessed using sign in.
+7. Send a test email using **System administration** \> **Setup** \> **Email** \> **Email parameters** \> **Test email**.
+8. If the SMTP settings were migrated from another environment, clear the password field and re-enter the password to ensure that the field encryption hasn't negatively affected the stored value.
+9. If you continue to experience issues when email is sent via SMTP, enter the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
+
 
 ## Troubleshoot the Exchange mail provider
 
