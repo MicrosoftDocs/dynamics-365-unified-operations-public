@@ -106,7 +106,7 @@ You can find out what's in the works for Human Resources and what we've released
 
 - [Human Resources blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
-- [Human Resource Yammer community](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
+- [Human Resources Yammer community](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=10542230)
 
 ## Preview features in a sandbox environment
 
@@ -120,7 +120,7 @@ Once a feature is generally available, it may be turned on or off in production 
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
-For more information about provisioning a sandbox environment, see [Provision a Human Resource project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](remove-talent-environment.md#removing-a-test-drive-environment). 
+For more information about provisioning a sandbox environment, see [Provision a Human Resources project](provisioning-talent.md#provision-a-talent-project). To remove a test environment, see [Removing a test drive environment](remove-talent-environment.md#removing-a-test-drive-environment). 
 
 ## Report bugs
 
