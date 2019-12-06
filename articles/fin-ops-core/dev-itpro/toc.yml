@@ -8,7 +8,9 @@
       href: index.md
     - name: What's new or changed
       items:
-      - name: Preview features in Platform update 31 (January 2020)
+      - name: Preview features in Platform update 32 (February 2020)
+        href: get-started/whats-new-platform-update-32.md
+      - name: Platform update 31 (January 2020)
         href: get-started/whats-new-platform-update-31.md
       - name: Platform update 30 (November 2019)
         href: ../fin-ops/get-started/whats-new-platform-update-30.md
