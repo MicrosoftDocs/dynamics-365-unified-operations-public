@@ -38,11 +38,11 @@ ms.search.validFrom: 2019-09-20
 
 If you use other Dynamics 365 apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.  
 
-![Basic vendor flow](media/dual-write-switch-1.png)
+![Basic vendor flow](media/dual-write-vendor-data-flow.png)
  
 If you use other Dynamics 365 apps for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, use this extended vendor design. In this design, extended vendor information like vendor on-hold status and vendor profile is stored in the **vendors** entity in Common Data Service. 
 
-![Extended vendor flow](media/dual-write-switch-2.png)
+![Extended vendor flow](media/dual-write-vendor-detail.jpg)
  
 Follow the below steps to use the extended vendor design: 
  

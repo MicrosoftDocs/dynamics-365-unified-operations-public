@@ -5,7 +5,7 @@ title: Date effectivity
 description: This topic provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 11/08/2017
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -175,8 +175,85 @@ Create a new entity that is named **FMVehicleRateEntity**, and add it to the pro
 
 #### Test your project
 
--   Build your project again, and run the following X++ job to test your project. [![Testing the project](./media/capa-504x1024.png)](./media/capa.png)
+-   Build your project again, and run the following X++ code to test your project.
+```
+/// <summary>
+    /// Runs the class with the specified arguments.
+    /// </summary>
+    /// <param name = "_args">The specified arguments.</param>
+    public static void main(Args _args)
+    {
+        FMVehicleRateEntity FMVehicleRateEntity;
+        FMCarClass          vehicle;
+        FMVehicleModel      model;
+        FMVehicleRate       vehicleRateTable;
+        TransDate           d1=1\1\1999,d2=31\12\2014;
 
+        ttsbegin;
+
+        select count(RecId) from FMVehicleRateEntity;
+        info(strfmt("Entity - Valid today before insert %1",FMVehicleRateEntity.RecId));
+
+        select count(RecId) from vehicleRateTable;
+        info(strfmt("Table - Valid today before insert %1",vehicleRateTable.RecId));
+
+        select firstonly model;
+
+        vehicle.VehicleModel = model.RecId;
+        vehicle.VehicleId = "TestV1001";
+        vehicle.insert();
+
+            if (vehicle)
+            {
+                FMVehicleRateEntity.clear();
+                FMVehicleRateEntity.FMVehicle_VehicleId = vehicle.VehicleId;
+                FMVehicleRateEntity.ValidFrom = d1;
+                FMVehicleRateEntity.ValidTo = d2;
+                FMVehicleRateEntity.RatePerDay = 100;
+                FMVehicleRateEntity.RatePerWeek = 600;
+                FMVehicleRateEntity.insert();
+
+                // Should increase by one as compared to before insert numbers
+                select count(RecId) from FMVehicleRateEntity;
+                info(strfmt("Entity - Valid today after insert %1",FMVehicleRateEntity.RecId));
+
+                // Should increase by one as compared to before insert numbers
+                select count(RecId) from vehicleRateTable;
+                info(strfmt("Table - Valid today after insert %1",vehicleRateTable.RecId));
+
+                // New record should show in count
+                select validtimestate(d1) count(RecId) from FMVehicleRateEntity;
+                info(strfmt("Entity - Valid 1999 %1",FMVehicleRateEntity.RecId));
+
+                // New record should show in count
+                select validtimestate(d1) count(RecId) from vehicleRateTable;
+                info(strfmt("Table - Valid 1999 %1",vehicleRateTable.RecId));
+
+                // update newly created record
+                // This should split record into two - 2009 to Today, today to 2014
+                // Split happens because of mode in saveEntityDatasource
+                select forupdate validtimestate(d1,d2) FMVehicleRateEntity 
+                     where FMVehicleRateEntity.FMVehicle_VehicleId == vehicle.VehicleId &&
+                           FMVehicleRateEntity.ValidFrom == d1 &&
+                           FMVehicleRateEntity.ValidTo == d2;
+                FMVehicleRateEntity.RatePerDay = 200;
+                FMVehicleRateEntity.update();
+
+                // validate the split
+                while select validtimestate(d1,d2) FMVehicleRateEntity
+                     where FMVehicleRateEntity.FMVehicle_VehicleId == vehicle.VehicleId
+                {
+                    info(strfmt("Entity - %1 to %2 , RatePerDay-%3, RatePerWeek-%4",
+                            FMVehicleRateEntity.ValidFrom,
+                            FMVehicleRateEntity.ValidTo,
+                            FMVehicleRateEntity.RatePerDay,
+                            FMVehicleRateEntity.RatePerWeek));
+                }
+                ttsabort;
+            }
+        }
+
+```
 
 
 

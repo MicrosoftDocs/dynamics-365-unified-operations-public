@@ -97,7 +97,7 @@ The following table lists the x-system classes that have a corresponding substit
 
 The following example shows the syntax for using several special variables that reference instances of the substitute application classes.
 
-```X++
+```xpp
 TreeNode treeNode;
 Args     args;
 FormRun  formRun;
@@ -134,7 +134,7 @@ You implement classes by using the batch processing system, and by extending the
 1.  Create a class that extends the **RunBaseBatch** class.
 2.  Override the **RunBaseBatch.runsImpersonated** method to return a value of **true**, as shown in the following example.
 
-    ```X++
+    ```xpp
     public boolean runsImpersonated()
     {
         return true;
@@ -161,7 +161,7 @@ When you implement a class by using the batch processing system, you can remove 
 
 In the following example, the **InventTransferMultiShip** class is implemented. The **BatchDialog::main** method creates the **Batch processing** dialog box.
 
-```X++
+```xpp
 static void noRecurrenceButton(Args _args)
 {
     Args a;
