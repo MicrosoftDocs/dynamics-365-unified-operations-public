@@ -51,7 +51,7 @@ The following Core HR entities are available in Common Data Service.
 | Benefit Plan | cdm_benefitplan (Not enabled for custom field support) |
 | Benefit Type | cdm_benefittype |
 
-## Business Process Tasks entities
+## Business process tasks entities
 
 | Name | Entity |
 | --- | --- |
@@ -96,7 +96,7 @@ The following Core HR entities are available in Common Data Service.
 | Job Type | cdm_jobtype |
 | Language | cdm_language |
 
-## Leave and Absence entities
+## Leave and absence entities
 
 | Name | Entity |
 | --- | --- |
@@ -134,7 +134,7 @@ The following Core HR entities are available in Common Data Service.
 | Work Calendar Time Interval | cdm_workcalendartimeinterval (Not enabled for custom field support) |
 | Worker Bank Account | cdm_workerbankaccount |
 
-## Worker Setup entities
+## Worker setup entities
 
 | Name | Entity |
 | --- | --- |
