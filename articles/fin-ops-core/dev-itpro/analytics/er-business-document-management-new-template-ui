@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 
 **Business document management** enables business users to edit business document templates by using Microsoft Office 365 service or appropriate Microsoft Office desktop application. Edits to the documents might include changing business document designs and adding placeholders for additional data without source code changes and new deployments. 
-For knowledge how to make setting and how to work with Business document managment use [Business document managment overview](er-business-document-managemen.md) 
+For knowledge how to make setting and how to work with Business document managment use [Business document managment overview](er-business-document-management.md) 
 New document user interface provide for business user more comfortable and clear interface. User will see only available templates for the current provider in the Business document area.
 The **New document** option is available  for create and edit a template in an ER format configuration provided by another provider (Microsoft in this example).
 
@@ -70,6 +70,6 @@ Use the following procedure to enable this functionality for all legal entities.
 
 The **New document** option is used to create and edite a template in an ER format configuration provided by another provider (Microsoft in this example). When you click **New document**  you see all templates owned by current and other providers. After you choose the template it will be opened for editing. The edited template will then be stored in a new ER format configuration that is automatically generated.
 
-For other operation use [Business document managment overview](er-business-document-managemen.md) 
+For other operation use [Business document managment overview](er-business-document-management.md) 
 
 
