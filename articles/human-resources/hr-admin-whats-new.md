@@ -34,7 +34,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **Status**
 
-- Draft, Acrolinx not run
+- Draft
+- Need to run Acrolinx
 - Darin, can we put weekly changes in one topic, maybe one topic per release cycle or year?
 
 **End Status**

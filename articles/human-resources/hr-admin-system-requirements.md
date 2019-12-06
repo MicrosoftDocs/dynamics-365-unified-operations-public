@@ -35,6 +35,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 **Status**
 
 - Draft
+- Need to run Acrolinx
 - Need to check links and add other helpful links
 - Need to add See also
 

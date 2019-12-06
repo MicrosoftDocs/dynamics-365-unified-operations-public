@@ -35,6 +35,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 **Status**
 
 - Draft
+- Need to run Acrolinx
 - Need to change links
 - Need to make sure HR is in [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
