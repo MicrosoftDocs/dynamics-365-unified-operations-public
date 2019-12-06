@@ -57,7 +57,7 @@ As companies increase in size, massive deployment and installation of components
 
 ### Platform update 31
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [What's new and changed in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
+Microsoft Dynamics 365 Retail 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [What's new and changed in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
 
 
 ### Bug fixes 
