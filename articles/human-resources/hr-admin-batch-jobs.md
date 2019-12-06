@@ -32,4 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Manage batch jobs
 
+**Status**
+
+**End status**
+
 ## See also

@@ -32,7 +32,11 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Welcome to Dynamics 365 Human Resources
 
-**Temporary text**
+
+**Status**
+Temporary text (do not use)
+**End status**
+
 
 The way we work, and the workplace, have fundamentally changed—and yet, for many businesses HR processes have not. When workforce practices are disconnected, the result is lower employee engagement and higher turnover rates. Employee disruption ultimately impacts the organization through a lack of product innovation, expensive operational errors, less satisfied customers, and suboptimal financial results.
 

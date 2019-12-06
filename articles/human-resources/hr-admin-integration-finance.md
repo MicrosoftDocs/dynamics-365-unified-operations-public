@@ -32,4 +32,9 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure integration with Finance
 
+**Status**
+
+**End status**
+
+
 ## See also
