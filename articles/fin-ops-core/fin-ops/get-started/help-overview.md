@@ -47,7 +47,7 @@ You can access help from the Help pane in whichever product you are using.
 
 ## Help on docs.microsoft.com
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) is the primary source of product documentation for the applications listed above. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) is the primary source of product documentation for the applications listed above. The site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 - **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
