@@ -119,6 +119,10 @@
         href: hr-admin-troubleshooting-overview.md
       - name: Get support
         href: hr-admin-troubleshooting-support.md
+      - name: Troubleshoot data integration
+        href: hr-admin-troubleshooting-data-integration.md
+      - name: Troubleshoot Office integration
+        href: hr-admin-troubleshooting-office-integration.md
   - name: Developer Guide
     items:
     - name: Overview
