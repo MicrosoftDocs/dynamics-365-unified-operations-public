@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides an overview of the components of the Help system. The Help system is shared by the following products:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
 - Dynamics 365 Talent
 
@@ -116,7 +116,7 @@ From the Help pane, you can access articles that apply to the client. When you f
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Managment, and Retail and configure some settings.
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Managment, and Commerce and configure some settings.
 
 > [!NOTE]
 > - In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
