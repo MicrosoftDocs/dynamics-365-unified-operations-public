@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Create a recurring data export app
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,6 +30,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-#
+# Create a recurring data export app
 
 ## See also

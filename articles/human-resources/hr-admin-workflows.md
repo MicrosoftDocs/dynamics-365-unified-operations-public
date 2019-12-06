@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 
+title: Manage workflows
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,6 +30,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-#
+# Manage workflows
 
 ## See also
