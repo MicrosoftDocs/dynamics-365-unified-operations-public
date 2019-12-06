@@ -42,6 +42,28 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **End status**
 
+**Status**
+
+| Description | Status | Notes |
+| --- | --- | --- |
+| Draft |  |  |
+| Verify procedures |  |  |
+| Change links |  |  |
+| Update screenshots |  |  |
+| Add See also links |  |  |
+| Run Acrolinx |  |  |
+| Review |  |  |
+| Edit |  |  |
+| Ready to publish |  |  |
+
+**Notes for Reviewers**
+
+| Description | Comments |
+| --- | --- |
+| From existing topic? | (link) |
+| Review document location | (link) |
+
+
 This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resourcess service plan, and you can't complete the steps in this topic, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.

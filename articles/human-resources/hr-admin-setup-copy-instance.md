@@ -42,6 +42,28 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **End status**
 
+**Status**
+
+| Description | Status | Notes |
+| --- | --- | --- |
+| Draft |  |  |
+| Verify procedures |  |  |
+| Change links |  |  |
+| Update screenshots |  |  |
+| Add See also links |  |  |
+| Run Acrolinx |  |  |
+| Review |  |  |
+| Edit |  |  |
+| Ready to publish |  |  |
+
+**Notes for Reviewers**
+
+| Description | Comments |
+| --- | --- |
+| From existing topic? | (link) |
+| Review document location | (link) |
+
+
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
 To copy an instance, you need to ensure the following:

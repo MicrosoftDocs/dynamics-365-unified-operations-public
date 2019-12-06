@@ -41,6 +41,28 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **End status**
 
+**Status**
+
+| Description | Status | Notes |
+| --- | --- | --- |
+| Draft |  |  |
+| Verify procedures |  |  |
+| Change links |  |  |
+| Update screenshots |  |  |
+| Add See also links |  |  |
+| Run Acrolinx |  |  |
+| Review |  |  |
+| Edit |  |  |
+| Ready to publish |  |  |
+
+**Notes for Reviewers**
+
+| Description | Comments |
+| --- | --- |
+| From existing topic? | (link) |
+| Review document location | (link) |
+
+
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
 ## Update policy

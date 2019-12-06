@@ -42,6 +42,28 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **End status**
 
+**Status**
+
+| Description | Status | Notes |
+| --- | --- | --- |
+| Draft |  |  |
+| Verify procedures |  |  |
+| Change links |  |  |
+| Update screenshots |  |  |
+| Add See also links |  |  |
+| Run Acrolinx |  |  |
+| Review |  |  |
+| Edit |  |  |
+| Ready to publish |  |  |
+
+**Notes for Reviewers**
+
+| Description | Comments |
+| --- | --- |
+| From existing topic? | (link) |
+| Review document location | (link) |
+
+
 This article describes the functionality available for integration from Dynamics 365 Human Resources and Dynamics 365 Finance. The Human Resources to Finance template that is available with the [Data Integrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) enables the flow of data for jobs, positions, and workers. The data flows from Human Resources into Finance. The template does not provide the ability for data to flow back from Finance into Human Resources. 
 
 ![Human Resources to Finance Integration Flow](./media/TalentFinOpsFlow.png)

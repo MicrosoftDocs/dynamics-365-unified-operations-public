@@ -40,6 +40,28 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **End Status**
 
+**Status**
+
+| Description | Status | Notes |
+| --- | --- | --- |
+| Draft |  |  |
+| Verify procedures |  |  |
+| Change links |  |  |
+| Update screenshots |  |  |
+| Add See also links |  |  |
+| Run Acrolinx |  |  |
+| Review |  |  |
+| Edit |  |  |
+| Ready to publish |  |  |
+
+**Notes for Reviewers**
+
+| Description | Comments |
+| --- | --- |
+| From existing topic? | (link) |
+| Review document location | (link) |
+
+
 Each week, we provide a new release for Microsoft Dynamics Human Resources. The changes are listed below.
 
 For more information about upcoming features or the update process for Human Resources, see the following:
