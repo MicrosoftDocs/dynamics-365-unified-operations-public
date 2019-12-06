@@ -131,6 +131,28 @@
     items:
     - name: Overview
       href: hr-hrpro-overview.md
+    - name: Set up Human Resources
+      items:
+    - name: Configure organization settings
+      items:
+    - name: Manage the hiring process
+      items:
+    - name: Manage benefits
+      items:
+    - name: Manage leave and absence requests
+      items:
+    - name: Create employee development plans
+      items:
+    - name: Create courses
+      items:
+    - name: Manage performance
+      items:
+    - name: Create surveys
+      items:
+    - name: Manage safety and compliance
+      items:
+    - name: Run reports
+      items:
   - name: Employee Guide
     items:
     - name: Overview
