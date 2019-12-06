@@ -41,6 +41,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Benefit entities
 
+| Name | Entity |
+| --- | --- |
 | Benefit Calculation Frequency | cdm_benefitcalculationfrequency |
 | Benefit Calculation Frequency Pay Period | cdm_benefitcalculationfrequencypayperiod |
 | Benefit Calculation Rate | cdm_benefitcalculationrate |
@@ -51,6 +53,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Business Process Tasks entities
 
+| Name | Entity |
+| --- | --- |
 | Business Process Calendar | cdm_businessprocesscalendar |
 | Business Process Group Assignment | cdm_businessprocessgroupassignment |
 | Business Process Library Task Group | cdm_businessprocesslibrarytaskgroup |
@@ -60,6 +64,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Compensation entities
 
+| Name | Entity |
+| --- | --- |
 | Compensation Fixed Plan | cdm_compensationfixedplan |
 | Compensation Grid | cdm_compensationgrid |
 | Compensation Level | cdm_compensationlevel |
@@ -77,6 +83,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Organization entities
 
+| Name | Entity |
+| --- | --- |
 | Department | cdm_department |
 | Employment | cdm_employment |
 | Company | cdm_company |
@@ -90,6 +98,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Leave and Absence entities
 
+| Name | Entity |
+| --- | --- |
 | Leave Bank Transaction | cdm_leavebanktransaction |
 | Leave Enrollment | cdm_leaveenrollment |
 | Leave Plan | cdm_leaveplan |
@@ -100,6 +110,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Payroll entities
 
+| Name | Entity |
+| --- | --- |
 | Pay Cycle | cdm_paycycle |
 | Pay Period | cdm_payperiod |
 | Payroll Earning Code | cdm_payrollearningcode |
@@ -108,6 +120,8 @@ The following Core HR entities are available in Common Data Service.
 
 ## Worker entities
 
+| Name | Entity |
+| --- | --- |
 | Worker | cdm_worker |
 | Worker Address | cdm_workeraddress |
 | Worker Personal Detail | cdm_workerpersonaldetail |
@@ -122,12 +136,17 @@ The following Core HR entities are available in Common Data Service.
 
 ## Worker Setup entities
 
+| Name | Entity |
+| --- | --- |
 | Veteran Status | cdm_veteranstatus |
 | Ethnic Origin | cdm_ethnicorigin |
 | Reason Code | cdm_reasoncode |
 | Person Identification Issuing Agency | cdm_personidentificationissuingagency |
 
 ## Competency entities
+
+| Name | Entity |
+| --- | --- |
 | Skill Type | cdm_skilltype |
 
 ## Entity relationship models
