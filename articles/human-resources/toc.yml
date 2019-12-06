@@ -1,0 +1,131 @@
+- name: Dynamics 365 Human Resources
+  href: hr-welcome.md
+  items:
+  - name: Get started
+    items:
+    - name: Get started with Human Resources
+      href: hr-get-started.md
+    - name: Explore Human Resources
+      href: hr-get-started-explore.md
+    - name: Training resources
+      href: hr-get-started-training-resources.md
+  - name: Administrator Guide
+    items:
+    - name: Overview
+      href: hr-admin-overview.md
+    - name: What's new
+      items:
+      name: What's new in Human Resources
+      href: hr-admin-whats-new.md
+    - name: System requirements
+      href: hr-admin-system-requirements.md
+    - name: Set up and manage instances
+      items:
+      - name: Overview
+        href: hr-admin-setup-overview.md
+      - name: Sign up for a free trial
+        href: hr-admin-setup-trial.md
+      - name: Deploy a demo environment
+        href: hr-admin-setup-demo.md
+      - name: Update process
+        href: hr-admin-setup-update-process.md
+      - name: Provision Human Resources
+        href: hr-admin-setup-provision.md
+      - name: Copy an instance
+        href: hr-admin-setup-copy-instance.md
+      - name: Remove an instance
+        href: hr-admin-setup-remove-instance.md
+    - name: Set up data integration
+      items:
+      - name: Overview
+        href: hr-admin-integration-overview.md
+      - name: Choose a data integration technology
+        href: hr-admin-integration-choose-technology.md
+      - name: Integrate data with the Data Management Framework
+        href: hr-admin-integration-dmf.md
+      - name: Configure Common Data Service integration
+        href: hr-admin-integration-common-data-service.md
+      - name: Configure integration with Finance
+        href: hr-admin-integration-finance.md
+      - name: Configure integration with Dayforce
+        href: hr-admin-integration-dayforce.md
+      - name: Create a recurring data export app
+        href: hr-admin-integration-recurring-data-export-app.md
+      - name: Set up number sequencing
+        href: hr-hrpro-setup-number-sequencing.md
+      - name: Set up document management
+        href: hr-admin-integration-document-management.md
+      - name: Integrate with Office
+        href: hr-admin-integration-office.md
+    - name: Manage features
+      href: hr-admin-manage-features.md
+    - name: Disaster recovery
+      href: hr-admin-disaster-recovery.md
+    - name: Manage users
+      items:
+      - name: Overview
+        href: hr-admin-users-overview.md
+      - name: Add or delete a user
+        href: hr-admin-users-add-delete.md
+      - name: Import multiple users
+        href: hr-admin-users-bulk-import.md
+      - name: Create a user import batch job
+        href: hr-admin-users-import-batch-job.md
+      - name: Create an alert
+        href: hr-admin-users-alert.md
+      - name: Configure user options
+        href: hr-admin-users-options.md
+      - name: Manage online users
+        href: hr-admin-users-online.md
+    - name: Manage security
+      items:
+      - name: Overview
+        href: hr-admin-security-overview.md
+      - name: Configure security roles
+        href: hr-admin-security-roles.md
+      - name: Assign user roles
+        href: hr-admin-security-assign-roles.md
+      - name: Manage segregation of duties
+        href: hr-admin-security-segration-of-duties.md
+      - name: Run security diagnostics
+        href: hr-admin-security-diagnostics.md
+      - name: Run security reports
+        href: hr-admin-security-reports.md
+    - name: Manage workflows
+      href: hr-admin-workflows.md
+    - name: View electronic reporting jobs
+      href: hr-admin-electronic-reporting-jobs.md
+    - name: Manage currency exchange rates
+      href: hr-admin-exchange-rates.md
+    - name: Manage batch jobs
+      href: hr-admin-batch-jobs.md
+    - name: Import and export data
+      items:
+      - name: Overview
+        href: hr-admin-import-export-overview.md
+      - name: Create Excel workbook templates
+        href: hr-admin-import-export-excel.md
+      - name: Configure external feeds
+        href: hr-admin-import-export-external-feeds.md
+    - name: Manage work items
+      href: hr-admin-work-items.md
+    - name: Configure cases
+      href: hr-admin-cases.md
+    - name: Configure record templates
+      href: hr-admin-record-templates.md
+    - name: Troubleshoot Human Resources
+      items:
+      - name: Overview
+        href: hr-admin-troubleshooting-overview.md
+      - name: Get support
+        href: hr-admin-troubleshooting-support.md
+  - name: Developer Guide
+    items:
+    - name: Overview
+      href: hr-developer-overview.md
+  - name: HR Pro Guide
+    items:
+    - name: Overview
+      href: hr-hrpro-overview.md
+
+
