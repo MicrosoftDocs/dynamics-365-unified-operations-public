@@ -50,9 +50,9 @@ There are two caveats to using CSS overrides:
 
 With these caveats in mind, CSS file overrides can be a quick way to prototype a design or implement a hotfix before a full theme update is developed and deployed. 
 
-## Create your CSS override file
+## Create a CSS override file
 
-To create your CSS override file, you can use any integrated development environment (IDE), text editor, or source code editor. A common approach is to use standard web debuggers in your browser to identify style selectors, properties, and values within your existing site.  Most browsers will let you change values and preview them within the debugger. Once you have identified the changes you want to make, you can save these overrides to your own CSS file.   
+To create a CSS override file, you can use any integrated development environment (IDE), text editor, or source code editor. A common approach is to use standard web debuggers in your browser to identify style selectors, properties, and values within your existing site.  Most browsers will let you change values and preview them within the debugger. Once you have identified the changes you want to make, you can save these overrides to your own CSS file.   
 
 ## Upload a CSS override file
 
