@@ -57,4 +57,19 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 4. Save the file.
 5. Restart the virtual machine.
 
-The above procedure must be performed for all Orchestrator node VMs. 
+The above procedure must be performed for all Orchestrator node VMs.
+
+## Whitelist URLs
+
+The LocalAgent needs to communicate with Azure resources. As such the following URLs should be whitelisted so that any **OrchestratorType** can access them:
+```
+	lcsapi.lcs.dynamics.com
+	login.windows.net
+	uswelcs1lcm.queue.core.windows.net
+	www.office.com
+	login.microsoftonline.com
+	dc.services.visualstudio.com
+	uswelcs1lcm.blob.core.windows.net
+```
+
+
