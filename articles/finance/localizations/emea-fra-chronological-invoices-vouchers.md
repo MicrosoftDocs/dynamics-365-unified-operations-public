@@ -60,15 +60,16 @@ In some countries, there is a legal requirement that all invoices and related vo
 </thead>
 <tbody>
 <tr class="odd">
-<td>Country/region</td>
-<td>The primary address of the legal entity must be in France.</td>
+<td>Feature activation</td>
+<td>In the <strong>Feature management</strong> workspace, turn on the <strong>Chronological numbering</strong> feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).</td>
 </tr>
 <tr class="even">
+<td>Country/region</td>
+<td>If the primary address of the legal entity is in <strong>France</strong> then additionally set the <strong>Chronological numbering</strong> option to <strong>Yes</strong>on the <strong>Accounts receivable parameters</strong> page, on the <strong>Updates</strong> tab.</td>
+</tr>
+<tr class="odd">
 <td>Related setup tasks</td>
-<td><ul>
-<li>On the <strong>Accounts receivable parameters</strong> page, on the <strong>Updates</strong> tab, set the <strong>Chronological numbering</strong> option to <strong>Yes</strong>.</li>
-<li>On the <strong>Number sequences</strong> page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.</li>
-</ul></td>
+<td>On the <strong>Number sequences</strong> page, define as many number sequences as you require to cover the affected fiscal periods. You should specify a company for each number sequence. The segments of the number sequences must be defined so that they provide chronological order for periods. For example, the segment names can contain a special prefix that identifies a specific period.</td>
 </tr>
 </tbody>
 </table>
