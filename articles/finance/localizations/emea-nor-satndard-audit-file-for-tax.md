@@ -42,4 +42,37 @@ Starting from January 2020 all the companies in Norway are obliged to provide by
 
 To support “Norwegian SAF-T Financial data” report in Microsoft Dynamics 365 for Finance and Operations, version of the application must be of the following or later version:
 
+| Version of Finance and Operations | Build number                       | 
+|-----------------------------------|------------------------------------|
+| 10.0.6      | 10.0.234.**20020**            |
+| 10.0.7      | 10.0.283.**10012**            |
+| 10.0.8      | 10.0.319.**12**               |
+| 10.0.9      | 10.0.328.**20020**            |
+
+When version of the Finance and Operations application is suitable, import from the LCS portal the following or later versions of the Electronic reporting (ER) configurations:
+
+|ER configuration name | Configuration type                       | Version |
+|----------------------|------------------------------------------|---------|
+| Standard Audit File (SAF-T)    | **Model**            | 32 |
+| SAF-T Financial data model mapping   | **Model mapping**            | 32.30 |
+| SAF-T Format (NO)   | Format (exporting)           | 32.41 |
+
+Import the latest versions of the configurations. The version description usually contains the number of the KB article that explains the change introduced by the configuration version.
+
+**Note**: After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configuration:	**SAF-T Financial data model mapping**.
+
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see Download Electronic reporting configurations from Lifecycle Services.
+
+## Setup
+
+To start using “Norwegian SAF-T Financial data” report in Microsoft Dynamics 365 for Finance and Operations the following setup must be done:
+
+•	General ledger parameters – to setup ER format
+
+•	Sales tax code – to associate with Standard tax codes (read more in the about this requirement in “Norwegian SAF-T Financial data Documentation”)
+
+•	Main accounts – to associate with Standard accounts (read more in the about this requirement in “Norwegian SAF-T Financial data Documentation”)
+
+
+
 
