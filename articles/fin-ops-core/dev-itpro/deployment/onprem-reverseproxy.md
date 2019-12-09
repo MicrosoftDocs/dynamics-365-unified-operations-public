@@ -61,15 +61,15 @@ The above procedure must be performed for all Orchestrator node VMs.
 
 ## Whitelist URLs
 
-The LocalAgent needs to communicate with Azure resources. As such the following URLs should be whitelisted so that any **OrchestratorType** can access them:
+The LocalAgent needs to communicate with Azure resources. As such the following URLs should be whitelisted on the proxy or firewalls so that any **OrchestratorType** can access them:
 ```
-	lcsapi.lcs.dynamics.com
-	login.windows.net
-	uswelcs1lcm.queue.core.windows.net
-	www.office.com
-	login.microsoftonline.com
-	dc.services.visualstudio.com
-	uswelcs1lcm.blob.core.windows.net
+lcsapi.lcs.dynamics.com
+login.windows.net
+uswelcs1lcm.queue.core.windows.net
+www.office.com
+login.microsoftonline.com
+dc.services.visualstudio.com
+uswelcs1lcm.blob.core.windows.net
 ```
 
 
