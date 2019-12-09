@@ -34,35 +34,38 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Pick line grouping allows multiple work lines that have the same item and location to be combined into a single pick presented to the user on the mobile device. This allows for warehouse workers to be given the most efficient instructions possible, while still maintaining required work line separation within the system (for different containers, orders, etc).
+Pick line grouping allows multiple work lines that have the same item and location to be combined into a single pick presented to the user on a mobile device. This functionality allows for warehouse workers to be given the most efficient instructions possible, while still maintaining required work line separation within the system (for different containers, orders, etc.).
 
 ## Set up pick line grouping
 
-### Mobile device menu item
+### Create a mobile device menu item
 
-Navigate to Warehouse management _-_Setup _-_  Mobile device _-_ Mobile device menu items and create a new menu item for Sales group line picking – User directed.
+1. Go to **Warehouse management > Setup >  Mobile device > Mobile device menu items** and create a new menu item for "Sales group line picking – User directed".
 
-In **Header** , specify the following:
+1. Under **Mobile device menu items**, specify the following:
 
-- --Menu item name – _Sales Pick - Group line_
-- --Title – _Sales Pick - Group line_
-- --Mode – _Work_
-- --Use existing work – _Yes_
+- In the **Menu item name** field, enter "Sales Pick - Group line".
+- In the **Title** field, enter "Sales Pick - Group line".
+- In the **Mode** field, select **Work**.
+- Set the **Use existing work** toggle to **Yes**.
 
-In **General** fast tab, the following setting can be specified:
+1. On the **General** FastTab, the following setting can be specified:
 
-- --Directed by – _User directed_
-- --Generate license plate – _Yes_
-- --Group pick – _Yes_
+- In the **Directed by** field, select **User directed**.
+- Set the  **Generate license plate** toggle to **Yes**.
+- Set the **Group pick** toggle to **Yes**.
 
-In **Work classes** fast tab, set up the valid work classes for this mobile device menu item:
+1. On the **Work classes** FastTab, configure the valid work classes for this mobile device menu item:
 
-- --Work class ID – _Sales and SO Pick – depending on which warehouse you will be using for demo_
-- --Work order type – _Sales orders_
+- Click **New**.
+- In the **Work class ID** field, select **Sales** or **SO Pick**, depending on which warehouse you will be using.
+- In the **Work order type** field, select **Sales orders**.
 
 ### Mobile device menu
 
-Navigate to _Warehouse management_ __ _Setup_ __ _Mobile device_ __ _Mobile device_ menu and add the newly created menu item to the desired menu.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**. 
+
+1. Add the newly created menu item to the desired menu.
 
 ### Work template
 
