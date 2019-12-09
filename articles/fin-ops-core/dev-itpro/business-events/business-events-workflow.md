@@ -5,7 +5,7 @@ title: Workflow business events
 description: Workflow business events are generated at various points in the processing of a workflow.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Platform update 24
 
 # Workflow business events
 [!include[banner](../includes/banner.md)]
+[!include[preview banner](../includes/preview-banner.md)]
 
 Workflow business events are generated at various points in the processing of a workflow.   
 
@@ -84,6 +85,8 @@ An approval or task work item can be completed in Power Automate using the follo
 - If the workitem is not ready for completion, then send a notification to the assigned user to let them know that there is a workitem that needs their attention.
 - If the workitem is ready for completion, then request a response from the assigned user by sending the available response options to the user.
 - After a response is provided, complete the workitem with that response by calling the **Complete** method on the **WorkflowWorkItems** entity. 
+
+To enable external completion of work items, the work item action manager class needs to implement the IValidateWorkflowWorkItemAction interface. The standard WorkflowWorkItemActionManager class has implemented this interface. In Platform update 32, the TrvWorkflowWorkItemActionManager class was updated to implement the IValidateWorkflowWorkItemAction interface. Use the existing IValidateWorkflowWorkItemAction implementations as examples to notify updates about other WorkflowWorkItemActionManager classes.
 
 For a step-by-step guide to setting up work item completion in Microsoft Power Automate, see [Consume workflow approval business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/how-to/how-to-flow).
 

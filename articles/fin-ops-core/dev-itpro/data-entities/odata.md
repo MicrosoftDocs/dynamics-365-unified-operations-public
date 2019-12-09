@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 02/11/2019
+ms.date: 12/05/2019
 
 ms.topic: article
 ms.prod: 
@@ -249,6 +249,21 @@ OData enables an SQL-like language that lets you create rich queries against the
 | \[Your organization's root URL\]/data/Customers?$format=json               | List all the customers in a JSON format that can be used to interact with JavaScript clients. |
 
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx).
+
+## Using Enums
+Enums are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in an OData query is by using the following syntax.
+
+Microsoft.Dynamics.DataEntities.Gender'Unknown'
+
+Microsoft.Dynamics.DataEntities.NoYes'Yes'
+
+An example query for using the above enum values is shown below.
+
+https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'
+
+https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'
+
+The operations supported for enums are **eq** and **ne**.
 
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints overview](services-home-page.md).

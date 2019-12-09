@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 X++ is an object-oriented, application-aware, and data-aware programming language used in enterprise resource planning (ERP) programming and in database applications. It provides system classes for a broad range of system programming areas, highlighted in the following table.
 
-| **X++ language attributes** | **Description** |
+| X++ language attributes | Description |
 |-----|-----|
 | **Classes**                 | In addition to system classes, there are also application classes for managing many types of business processes. Reflection on classes is supported.            |
 | **Tables**                  | X++ programmers can access the relational tables. X++ includes keywords that match most of the keywords in standard SQL. Reflection on tables is supported. |

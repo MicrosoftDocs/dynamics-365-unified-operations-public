@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 The customer doesn't see the Microsoft Dynamics 365 Talent app among the Microsoft Dynamics 365 apps.

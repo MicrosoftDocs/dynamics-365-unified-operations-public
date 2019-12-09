@@ -43,7 +43,7 @@ This topic describes inheritance in X++, including how to create a subclass and 
 
 The following example first creates a class that is named **Point**. It then extends the **Point** class to create a new class that is named **ThreePoint**.
 
-```X++
+```xpp
 class Point
 {
     // Instance fields.
@@ -77,7 +77,7 @@ class ThreePoint extends Point
 
 You can prevent classes from being inherited by using the **final** modifier.
 
-```X++
+```xpp
 public final class Attribute
 {
     int objectField;
@@ -91,7 +91,7 @@ When you instantiate the subclass, you can assign the reference to either a vari
 
 In the following code example, the subclass overrides the **write** method. Two variables, both of type **Point** are created. One is assigned a **Point** object, the other is assigned a **ThreePoint** object. When the **write** method is called on the **ThreePoint** object, the **ThreePoint** version of the method is called.
 
-```X++
+```xpp
 class Point
 {
     // Instance fields.
@@ -149,7 +149,7 @@ Static methods can't be overridden, because they exist per class. To protect oth
 
 The following example shows how to use the **final** keyword.
 
-```X++
+```xpp
 public class Attribute
 {
     int objectVariable;

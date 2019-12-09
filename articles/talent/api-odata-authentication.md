@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Talent
 
 # Authentication with the Talent data API
 
-[!include [banner](includes/banner.md)]
-
 This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Talent data application programming interface (API).
 
 ## Overview

@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance with auto cleanup tasks
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 Microsoft Dynamics 365 Talent can experience performance issues if the batch job history grows too large.

@@ -5,7 +5,7 @@ title: Video player module
 description: This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -62,6 +62,8 @@ The ambient video player module supports short informational videos. It should b
 ## Video player module
 
 The video player module can be used to showcase videos on an e-Commerce site. It supports all playback capabilities, such as play, pause, full-size mode, and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
+
+The video player module also supports secondary audio tracks. When a video is uploaded, a secondary audio track can also be uploaded. The video player module can then play the secondary audio track if a user selects it.
 
 ### Examples of video player modules in e-Commerce
 

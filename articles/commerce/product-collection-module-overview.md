@@ -5,7 +5,7 @@ title: Product collection modules
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Product collection modules  
+# Product collection modules
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -41,18 +41,19 @@ Product discovery is a primary tool that retailers use to engage with their cust
 
 Product collection modules represent physical products and services on the website. A product collection module is typically linked to a details page where customers can purchase a product or service, or learn more about it. 
 
-The sources for product collections can be lists of three types:
+The sources for product collections can be lists of the following four types:
 
 - Editorial lists of products that are manually defined in Commerce as related products for a product, or product lists
 - Algorithmic lists, such as lists of new, best-selling, or trending products
 - Recommendation lists that are based on machine learning
+- Personalization lists that support personalized results for a customer. Customers must be signed in to the e-Commerce site to see personalized results. Guest users don't see personalized results. Customers can opt out of personalization from the [account management page](account-management.md).
 
 The following illustration shows the different types of product collections being used on an e-Commerce site.
 
 ![Example of the different types of product collections on an e-Commerce site](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
-> Always use product collection modules to show a group of products of a similar type or theme.
+> Always use product collection modules to show a group of products of a similar type.
 
 ## Product collection modules and types
 
@@ -69,6 +70,7 @@ The following table describes various types of product collection modules in Dyn
 | Trending                   | Algorithmic | This type of product collection module shows a list of the highest-performing products for a given period. |
 | Frequently bought together | Artificial intelligence/Machine learning | This type of product collection module uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. |
 | People also like           | Artificial intelligence/Machine learning | This type of product collection module uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. |
+| Picks for you              | Artificial intelligence/Machine learning | This module uses machine learning to analyze the purchase patterns of the signed-in user and provide personalized recommendations that are based on those purchase patterns. For a guest user, this list will be collapsed. |
 
 ## Add a product collection module to a category page
 
@@ -95,6 +97,7 @@ The following table shows the list types that are available for selection in the
 | Algorithmic                | <ul><li>**New** – A list of the newest products that have been assorted to channels and catalogs.</li><li>**Best-selling** – A list of products that are ranked by the highest number of sales.</li><li>**Trending** – A list of the highest-performing products for a given period.</li></ul> | Home page, enrich category page, and checkout and cart pages | Category | Category determined by author |
 | Frequently bought together | A list that uses machine learning to analyze consumer purchase patterns and recommend related items that are frequently purchased together with a given product. | Product pages, and checkout and cart pages | Product, Cart | Include cart |
 | People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Product pages, and checkout and cart pages | Product, Cart | Not applicable |
+| Picks for you              | A list that uses machine learning to determine customer preferences. | This type of list can be used on any page. | Not applicable| Not applicable | Supported | 
 
 ## Additional resources
 
@@ -109,4 +112,3 @@ The following table shows the list types that are available for selection in the
 [Container module](add-container-module.md)
 
 [Buy box module](add-buy-box.md)
-
