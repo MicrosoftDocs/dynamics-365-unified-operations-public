@@ -42,7 +42,7 @@ The Global CFDI functionality lets you perform the following tasks:
 
 - Create an electronic invoice, in Global CFDI format (layout 3.3), that is based on the posted retail statement. For more information about the layout, see [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-3-3).
 
-- For each electronic invoice generate a file in the .pdf or .xml format, and send it to the customer as an email attachment. After the Global CFDI electronic invoices are generated, they are verified and certified by a digital signature service provider (PAC) in the same way as other CFDI documents. For more information, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices) and [Inquire and print an electronic invoice](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tasks/mx-00010-inquire-print-electronic-invoice).
+- For each electronic invoice generate a file in the .pdf or .xml format, and send it to the customer as an email attachment. After the Global CFDI electronic invoices are generated, they are verified and certified by a digital signature service provider (PAC) in the same way as other CFDI documents. For more information, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices) and [Inquire and print an electronic invoice](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/mx-00010-inquire-print-electronic-invoice).
 
 To generate and submit a Global CFDI electronic invoice, follow these steps.
 
