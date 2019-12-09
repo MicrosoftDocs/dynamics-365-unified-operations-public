@@ -52,13 +52,13 @@ Another advantage of publish groups is that you can stage multiple updates in pa
 
 ## Enable the publish group feature
 
-The publish groups capability is optional and must be enabled for your site.
+The publish groups functionality is optional and must be enabled for your site.
 
 To enable publish groups for your site in Commerce authoring tools, follow these steps.
 
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Under **Site Settings**, select **Features**.
-1. Set the **Publish groups** toggle key to the **On** setting.
+1. Set the **Publish groups** toggle key to **On**.
 
 ## Create a publish group
 
@@ -68,18 +68,21 @@ To create a publish group for your site in Commerce authoring tools, follow thes
 1. In the top command bar, select **New**.
 1. In the **Create Publish Group** dialog box, enter a descriptive name under **Publish Group Name**, then click **OK**.
 
-## Work within the context of a publish group
+## Set the publish group authoring context
 
-You can select your publish group context in one of two ways:
+In Commerce, the default authoring context is the live site context. The live site authoring context is the default view where you can view and make changes directly to your website without using a publish group, and represents the latest direct updates to the published version of your site. You can tell you are working in the live site authoring context if the context control (located in the left navigation pane under **Publish Groups**) displays the name **Live site**. The default name of the context control is **Live site**, otherwise it is the name of a publish group.
 
-- The first option is to click on the context control that is located directly below **Publish Groups** in the left navigation panel, and select your desired authoring context from the options. This is also where you can return to your default **Live site** context.
+To work within a publish group, you must switch to the publish group authoring context for a given publish group. To set the publish group context, follow one of these steps.
 
->[!NOTE]
->The "Live site" context is the default view where you can view and make changes directly to your website without using a publish group. The "Live site" context represents the latest direct updates to the published version of your site.
+- In the left navigation pane, click on the context control located directly below **Publish Groups**, and then select the desired publish group name from the options that appear. This action will rename the context control to the name of the publish group.   
 
-- The second option is to select **Publish groups** from the left navigation menu and then select the name of the publish group under **Publish Groups**. This will also set the publish group context in the left navigation pane context control.
+    — or —
 
-Once you have set your authoring context, which will show as either **Live site** or the name of your chosen publish group in the left navigation pane, you will be operating within that authoring context when previewing and editing site content. 
+- In the left navigation pane, select **Publish groups** and then under **Publish Groups** select the name of the publish group. This action will rename the context control to the name of the publish group.
+
+Once you have set your publish group authoring context, you will be operating within that publish group context when previewing and editing site content. 
+
+To return to the default live site authoring context, click on the context control and then select **Live site**.
 
 ## Add pages or other items to a publish group
 
