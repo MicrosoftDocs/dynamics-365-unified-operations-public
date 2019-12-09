@@ -59,7 +59,7 @@ Based on your product and version, you will have different update options from L
 
 
 ### Finance and Operations apps
-- **Application version 8.1 and later (One Version)** - All updates for version 8.1 and later will have the One Version service update experience. It will be be a cumulative, combined binary update of all of the application and platform updates. There will be no granular X++ updates starting with this release.  
+- **Application version 8.1 and later (One Version)** - All updates for version 8.1 and later will have the One Version service update experience. It will be a cumulative, combined binary update of all of the application and platform updates. There will be no granular X++ updates starting with this release.  
 
      Based on your environment version and the [service update availability](../../fin-ops/get-started/public-preview-releases.md), you will have the option to choose the updates available to your environment. Each update option is associated with a version number and a build number.  
 
@@ -82,7 +82,9 @@ Based on your product and version, you will have different update options from L
         
    - **Platform binary updates** - This tile shows only the Platform binary updates. If you want to update only the platform, you can get the update from this tile. 
 
-- **Application version 7.1, 7.2, 8.0, or earlier (except version 7.3) with Platform update 32 and earlier** - The product versions noted here are out of service.  No new X++ updates are available. You can apply the X++ updates that have been released previously but no new X++ update will be published to LCS. <br> Also, a platform update will not be available starting with **platform update 33**. This means that you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0 and earlier (except version 7.3). If you're running any of these versions, you need to upgrade to the latest version to stay with the latest feature and functionality. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md)
+- **Application version 7.1, 7.2, 8.0, or earlier (except version 7.3) with Platform update 32 and earlier** - The product versions noted here are out of service.  No new X++ updates are available. You can apply the X++ updates that have been released previously but no new X++ update will be published to LCS. 
+
+    Also, a platform update will not be available starting with **Platform update 33**. This means that you will not be able to apply the platform only update package if your application version is 7.1, 7.2, or 8.0 and earlier (except version 7.3). If you're running any of these versions, you need to upgrade to the latest version to stay with the latest feature and functionality. For more information, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md).
 
 > [!NOTE]
 > If you are on a release that is noted above, you need to upgrade as soon as possible. 
@@ -118,7 +120,7 @@ To download X++ updates, follow these steps in LCS.
 2. On the **Add updates** page, select the applicable Knowledge Base (KB) numbers, and then select **Add** to add selected KBs to the download package.
 
     > [!NOTE]
-    > For X++ updates, you can download all available updates at this point. Click **Select all**, and then click **Add** to add all KBs to the download package.
+    > For X++ updates, you can download all available updates at this point. Click **Select all**, and then select **Add** to add all KBs to the download package.
 
 3. Select **Download package**.
 
