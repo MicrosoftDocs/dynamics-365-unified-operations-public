@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with publish groups
-description: This topic describes covers use of the publish groups feature in Microsoft Dynamics 365 Commerce.
+description: This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
 ms.date: 12/09/2019
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes covers use of the publish groups feature in Microsoft Dynamics 365 Commerce.
+This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -70,7 +70,7 @@ To create a publish group for your site in Commerce authoring tools, follow thes
 
 ## Set the publish group authoring context
 
-In Commerce, the default authoring context is the live site context. The live site authoring context is the default view where you can view and make changes directly to your website without using a publish group, and represents the latest direct updates to the published version of your site. You can tell you are working in the live site authoring context if the context control (located in the left navigation pane under **Publish Groups**) displays the name **Live site**. The default name of the context control is **Live site**, otherwise it is the name of a publish group.
+In Commerce, the default authoring context is the live site context. The live site authoring context is the default view where you can view and make changes directly to your website without using a publish group, and represents the latest direct updates to the published version of your site. You can determine that you are working in the live site authoring context if the context control (located in the left navigation pane under **Publish Groups**) displays the name **Live site**. The default name of the context control is **Live site**, otherwise it is the name of a publish group.
 
 To work within a publish group, you must switch to the publish group authoring context for a given publish group. To set the publish group context, follow one of these steps.
 
