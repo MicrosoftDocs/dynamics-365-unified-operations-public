@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: SPED fiscal 2020: Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
+title: SPED fiscal 2020 - Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
 description: This topic provides information about .
 author: v-gonode
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# SPED fiscal 2020: Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
+# SPED fiscal 2020 - Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
 
 [!include [banner](../includes/banner.md)]
 
