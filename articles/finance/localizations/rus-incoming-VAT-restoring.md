@@ -222,7 +222,7 @@ Use the **VAT restoring journal** page to create, approve, and cancel VATrestora
             - The amounts of VAT that were restored in the current period and distributed to each export invoice
             - The share of export invoice revenue in the total export revenue amount for the period
 
-              ![](media/4%20VAT%20distribution.jpg)
+              ![Incoming VAT for indirect costs](media/4%20VAT%20distribution.jpg)
               
               This information is required to define the VAT amount that must be deducted when export is confirmed, or when the deadline for confirmation will expire but export isn't confirmed. This information is also used in the VAT declaration. For more information, see [VAT declaration (Russia)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/rus-vat-declaration).
 
