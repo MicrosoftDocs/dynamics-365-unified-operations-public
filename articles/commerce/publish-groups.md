@@ -2,10 +2,10 @@
 # required metadata
 
 title: Work with publish groups
-description: This topic describes why, when, and how to use the publish groups feature in Microsoft Dynamics 365 Commerce.
+description: This topic describes covers use of the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 12/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -23,7 +23,7 @@ ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry:
 ms.author: niholman
-ms.search.validFrom: 2019-12-02
+ms.search.validFrom: 2019-12-09
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes why, when, and how to use the publish groups feature in Microsoft Dynamics 365 Commerce.
+This topic describes covers use of the publish groups feature in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -86,11 +86,11 @@ To return to the default live site authoring context, click on the context contr
 
 ## Add pages or other items to a publish group
 
-Once you have selected a publish group context and it appears in the left navigation pane, you can create content just as you would in the default "Live site" context. You can also add existing pages or other items from other publish groups or from the default "Live site" context.
+Once you have selected a publish group authoring context and its name appears in the context control of the left navigation pane, you can then create content just as you would in the default live site context. You can also add existing pages or other items from other publish groups or from the live site context.
 
 To copy existing pages to a publish group, follow these steps.
 
-1. After selecting either the "Live site" context or a different publish group context, select **Pages** from the left navigation pane.
+1. After selecting the authoring context you want to copy from, select **Pages** from the left navigation pane.
 1. Select the page you want to add to a publish group.
 1. In the command bar, select **Copy to Publish group**.
 1. In the **Select a Publish Group** dialog box, select the publish group you wish to add the page to, and then click **OK**.
@@ -99,15 +99,15 @@ The same steps above can be used to create or add existing customized product pa
 
 ## Validate a publish group
 
-To ensure that all publish group content dependencies and validations are cleared to publish, you can run pre-publish validation to identify any issues that need to be addressed before you schedule a publish. 
+To ensure that all publish group content dependencies and validations are cleared to publish, you can run validation to identify any issues that need to be addressed before you schedule a publish. 
 
 To validate your publish group before scheduling, follow these steps.
 
 1. In the left navigation pane, select **Publish Groups**.
-1. Select the publish group you want   to validate.
-1. Select **Validate** in the top command bar.
+1. Select the publish group you want to validate.
+1. In the command bar, select **Validate**.
 
-A validation check will then be run on all content in the publish group, and any issues that would prevent a successful publish will be displayed in a notification box that appears on the top right.
+A validation check will then be run on all content in the publish group, and any issues that would prevent a successful publish will be displayed in a notification box that appears on the upper right.
 
 >[!NOTE]
 >Validation will always run automatically when scheduling a publish group. The command bar **Validate** functionality is helpful to identify issues to be fixed before attempting to schedule a publish group to go live.
@@ -124,7 +124,7 @@ To schedule a publish group to go live on your site, follow these steps.
 To unschedule a publish group, follow the same steps above and click **Unschedule publish group** in the **Edit Schedule** dialog box.
 
 >[!NOTE]
->Very large publish groups may take up to a minute or two to complete when their scheduled time arrives. Be aware that a publish action is not instant, and smaller publish groups will publish faster.
+>Very large publish groups may take up to a minute or two to complete when their scheduled time arrives. Be aware that a publish action is not instant, and that smaller publish groups will publish faster.
 
 ## Publish groups FAQ
 
@@ -138,7 +138,7 @@ A: Yes and no. Publish groups do act like branches in that they can be thought o
 
 #### Q: Can I schedule two publish groups to go live at the exact same time?
 
-A: Not at this time. The system will force you to stagger scheduled publish groups at least 5 minutes apart for performance and conflict reasons.
+A: No. The system will force you to stagger scheduled publish groups at least 5 minutes apart for performance and conflict reasons.
 
 #### Q: Can I schedule omnichannel back office items such as discounts and product updates using publish groups?
 
