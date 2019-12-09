@@ -5,7 +5,7 @@ title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the on-premises environment behind a proxy.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 12/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
