@@ -33,26 +33,26 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic gives an overview of the Microsoft Dynamics 36 Commerce preview environment.
+This topic gives an overview of the Microsoft Dynamics 365 Commerce preview environment.
 
 ## Overview
 
-The Microsoft Dynamics 365 Commerce preview environment is an optional end-to-end preview environment of Dynamics 365 Commerce that allows potential customers to try out the Commerce product before its general release to the public. 
+The Commerce preview environment is an optional end-to-end preview environment of Dynamics 365 Commerce that lets potential customers try out the Commerce product before its general release to the public.
 
-The Commerce preview environment provides the complete Commerce experience with some minor limitations that don't impact features or functionality, and can be used by customers and implementation partners to evaluate the product, provide feedback, and do fit/gap analysis.
+Aside from some minor limitations that don't affect features or functionality, the Commerce preview environment provides the complete Commerce experience, and can be used by customers and implementation partners to evaluate the product, provide feedback, and do fit/gap analysis.
 
-## Commerce preview environment limitations
+## Limitations of the Commerce preview environment
 
-Although the Commerce preview environment provides the full features and functionality of Dynamics 365 Commerce, there are some minor limitations as follows:
+Although the Commerce preview environment provides the full set of Commerce features and functionality, there are some minor limitations:
 
-- Although the Commerce preview environment itself has no geographical limitation, components of the environment such as the Retail Cloud Scale Unit (RCSU) and e-Commerce applications can only be provisioned in the United States.
-- Use of the Commerce preview environment is time-limited to 30 days from the provisioning of e-Commerce.
-- The Commerce preview environment can only be successfully deployed and initialized on an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM). The main limitation of this OneBox VM topology is the number of concurrent users that the preview environment can support.
-- The Commerce preview environment can only be evaluated until the general availability (GA) of the Dynamics 365 Commerce product. New demo environments will be available after GA.
+- Although the Commerce preview environment itself has no geographical limitations, components of the environment, such as the Retail Cloud Scale Unit (RCSU) and e-Commerce applications, can be provisioned only in the United States.
+- Use of the Commerce preview environment is limited to 30 days from the date when e-Commerce is provisioned.
+- The Commerce preview environment can be successfully deployed and initialized only in an environment that uses the demo topology, where all components of an environment are deployed in a single virtual machine (VM). The main limitation of this OneBox VM topology is the number of concurrent users that the preview environment can support.
+- The Commerce preview environment can be evaluated only until the general availability (GA) of the Commerce product. New demo environments will be available after GA.
 
 ## Get started
 
-To get started provisioning the Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
+To provision the Commerce preview environment, see [Provision a Commerce preview environment](provisioning-guide.md).
 
 ## Additional resources
 
@@ -60,7 +60,6 @@ To get started provisioning the Commerce preview environment, see [Provision a C
 
 [Configure a Commerce preview environment](cpe-post-provisioning.md)
 
-[Configure Commerce preview environment optional features](cpe-optional-features.md)
+[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
 
 [Commerce preview environment FAQ](cpe-faq.md)
-
