@@ -65,7 +65,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 </tr>
 <tr class="even">
 <td>Country/region</td>
-<td>If the primary address of the legal entity is in <strong>France</strong> then additionally set the <strong>Chronological numbering</strong> option to <strong>Yes</strong>on the <strong>Accounts receivable parameters</strong> page, on the <strong>Updates</strong> tab.</td>
+<td>If the primary address of the legal entity is in <strong>France</strong> then additionally set the <strong>Chronological numbering</strong> option to <strong>Yes</strong> on the <strong>Accounts receivable parameters</strong> page, on the <strong>Updates</strong> tab.</td>
 </tr>
 <tr class="odd">
 <td>Related setup tasks</td>
@@ -86,5 +86,7 @@ If different customers use different patterns for numbering, you must set up chr
 ## Invoice posting
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
 
+## Dates control
+When...
 
 
