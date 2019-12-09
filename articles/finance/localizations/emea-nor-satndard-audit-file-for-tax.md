@@ -61,7 +61,12 @@ Import the latest versions of the configurations. The version description usuall
 
 **Note**: After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configuration:	**SAF-T Financial data model mapping**.
 
-For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see Download Electronic reporting configurations from Lifecycle Services.
+![Upload and add button](media/nor-saf-default-model-mapping.jpg)
+
+For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json).
+
+
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services]().
 
 ## Setup
 
