@@ -56,54 +56,47 @@ In the section below, let's look at how to use this capability within Site Build
 
 You can use any IDE, text editor, or other tool to create your .CSS file.  A common approach is to use standard web debuggers in your browser to identify style selectors, properties, and values within your existing site.  Most browsers will let you change values and preview them within the debugger.  Once you have identified the changes you wish to make, you can save these overrides to your own .CSS file.   
 
-## Upload your .CSS override file
+## Upload your CSS override file
 
-To upload your .CSS file to your site, follow these steps.
+To upload your CSS file to your site in Commerce, follow these steps.
 
-1. Navigate to your site within Site Builder.
+1. Navigate to your site in the authoring tools.
+1. In the navigation pane on the left, select **Design**.
 
-2. In the navigation pane on the left, select **Design**.
-
-    >[!Note]
-    >Depending on your Site Builder version, you may first need to expand **Settings** in the navigation panel to unhide **Design**.
+    >[!NOTE]
+    >Depending on your version of the Commerce authoring tools, you may first need to expand **Settings** in the navigation pane to unhide **Design**.
     
-3. If it is not already selected, select the **CSS override** tab at the top of the main design pane.
-4. Click the **Upload CSS file** button under the **Available CSS overrides** view.
+1. If it is not already selected, select the **CSS override** tab at the top of the main design pane.
+1. Under the **Available CSS overrides**, click **Upload CSS file**. A File Explorer dialog box appears.
+1. Using from File Explorer, browse to and select a CSS file and then click **Open**. Your uploaded CSS file will now appear under **Available CSS overrides**.
 
-5. Choose a.CSS file from the file picker modal and click **Open**.
+## Preview a CSS override file
 
-Your newly uploaded CSS file will appear as a card in the **Available CSS overrides** view.
+To preview a CSS override file before making it active on your live site, follow these steps.
 
-## Preview a .CSS override file
+1. Under **Design > CSS override > Available CSS overrides**, find the CSS file you would like to preview.
+1. Next to the CSS file name, click **Preview site**.
+1. In the **Select a URL** dialog box, select the site URL that you want to preview with the override applied, and then click **OK**. If there are multiple variants for the selected URL, select the desired variant in the subsequent **Preview variations** dialog box.
+1. A new browser tab or window will open where you can validate your style overrides against your site. This URL can be shared with other authenticated Commerce users for review and feedback.
 
-To preview a .CSS override file before making it active on your live site, follow these steps.
+## Activate a CSS override file on your live site
 
-1. In the **Design > CSS override > Available CSS overrides** view, find the card for the file you would like to preview.
-2. Click the **Preview site** button on the desired card.
-3. In the URL picker dialog that appears, choose a site URL that you would like to begin previewing with the override applied.
-4. If there are multiple variants for the selected URL, choose the desired variant in the subsequent variant picker modal.
-5. A new browser tab or window will open where you can validate your style overrides against your site.  This URL can be shared with other authenticated Site Builder users for review and feedback.
-
-## Make a .CSS override active on your live site
-
-After you have previewed your site with a style override file, you can set it active against your live site.  
+After you have previewed and approved the CSS override file, you can activate on your live site.  
 
 >[!NOTE]
->Only one .CSS override file can be active on your site at a time. Activating a new override will deactivate the previous one, so be sure that all necessary overrides are present in a single file.
+>Only one CSS override file can be active on your site at a time. Activating a new override will deactivate the previous one, so ensure that all necessary overrides are present in a single CSS override file.
 
-To activate a .CSS override file, follow these steps:
+To activate a CSS override file, follow these steps.
 
-1. In the **Design > CSS override > Available CSS overrides** view, find the card for the file you would like to activate.
-2. Click the **Activate** button on the desired card.
-3. This will immediately set the override active on your live site.
+1. Under **Design > CSS override > Available CSS overrides**, find the CSS file you would like to activate.
+1. Under the CSS file name, click **Activate**. This will immediately make the override active on your live site.
 
-## Deactivate a .CSS override on your live site
+## Deactivate a CSS override on your live site
 
-To deactivate a .CSS override from your site, follow these steps:
+To deactivate a CSS override from your site, follow these steps:
 
-1. In the **Design > CSS override > Active CSS override** view, find the active style override card that you wish to deactivate.
-2. Click the **Deactivate** button on the active override card.
-3. This will immediately deactivate the .CSS override for your site.
+1. Under **Design > CSS override > Available CSS overrides**, find the CSS file you would like to deactivate.
+1. Under the CSS file name, click **Deactivate**. This will immediately deactivate the .CSS override on your live site.
 
 >[!TIP]
->On any of the .CSS cards, click the elipse (...) button to show additional controls. For quick modifications, the "Download" and "Replace" options are useful for quick modifications to an existing override file.
+>To display additional CSS override file options, click the ellipsis (**...**) button next to the CSS override file name. The **Download**, **Rename**, and **Replace** options are useful for quick modifications to an existing override file.
