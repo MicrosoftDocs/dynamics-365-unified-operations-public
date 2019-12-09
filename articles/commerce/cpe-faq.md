@@ -43,7 +43,7 @@ Yes. For invitation transfers, you can use the [Commerce preview transfer form](
 
 The transfer takes an average of approximately three to five business days. However, exceptions might apply.
 
-**Does the Commerce preview environment work with Dynamics 365 Finance and Operations projects?**
+**Does the Commerce preview environment work with Dynamics 365 Finance or Dynamics 365 Supply Chain projects?**
 
 No. The Commerce preview environment works only with Dynamics 365 Retail projects.
 
@@ -57,19 +57,19 @@ No. The Commerce preview environment is currently available only in new environm
 
 **What costs are involved in deploying the Commerce preview environment on Microsoft Azure via Microsoft Dynamics Lifecycle Services (LCS)?**
 
-Retail is the only component that is hosted in your subscription. Other components, such as CPU computing hours, will be hosted in Microsoft subscriptions. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
+Retail is the only component that is hosted in your subscription. Other components such as Retail Cloud Scale Unit (RCSU) and e-Commerce will be hosted in Microsoft subscriptions. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
 
 **Which Azure geographical regions are currently supported for the Commerce preview environment?**
 
-The Commerce preview environment can be deployed only in the North America geographical region.
+The Commerce preview environment can be deployed only in the North America geography.
 
 **Is there a downloadable virtual hard disk (VHD) that has the complete OneBox virtual machine (VM) option?**
 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) and Dynamics 365 Commerce are completely software as a service (SaaS) and must be cloud-hosted.
+Dynamics 365 Retail Cloud Scale Unit (RCSU) and e-Commerce are completely software as a service (SaaS) and must be cloud-hosted.
 
 **How long can the Commerce preview environment be used?**
 
-The Commerce preview environment has a 30-day time limit from the date when e-Commerce is provisioned.
+The Commerce preview environment has a 30-day time limit from the date of provisioning e-Commerce.
 
 **Can I extend the time limit for my Commerce preview environment?**
 
