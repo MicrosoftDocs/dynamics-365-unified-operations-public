@@ -61,32 +61,39 @@ Pick line grouping allows multiple work lines that have the same item and locati
 - In the **Work class ID** field, select **Sales** or **SO Pick**, depending on which warehouse you will be using.
 - In the **Work order type** field, select **Sales orders**.
 
-### Mobile device menu
+### Set up mobile device menu
 
 1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**. 
 
 1. Add the newly created menu item to the desired menu.
 
-### Work template
+### Set up work template
 
-Navigate to _Warehouse management - Setup - Work - Work templates_ and find the Work template that will be used with this function. For this demo, standard Contoso Work template **51 Pick to stage** was used.
+1. Go to **Warehouse management > Setup > Work > Work templates**.
 
-Select the correct Work template, click on _Edit query_ and navigate to _Sorting_tab. Add a new line with the following criteria:
+1. Find the work template that will be used with this function. For this example, select the standard Contoso work template **51 Pick to stage**.
 
-- --Table – _Temporary work transactions_
-- --Derived table – _Temporary work transactions_
-- --Field – _Item number_
-- --Search direction – _Ascending_
+1. In the menu, click **Edit query**.
 
-Current limitation of this functionality is that the work lines must be sorted by Item ID in order for this to work. If lines with the same items are not sequenced one after another, then they will not be grouped together.
+1. Click the **Sorting** tab.
 
-## Demo
+1. Click **Add** and select the following:
+
+- In the **Table** field, select **Temporary work transactions**.
+- In the **Derived table** field, select **Temporary work transactions**.
+- In the **Field** field, select **Item number**.
+- In the **Search direction** field, select **Ascending**.
+
+> [!NOTE]
+> The work lines must be sorted by **Item ID** for this funcitonality to work. If lines with the same items are not sequenced one after another, then they will not be grouped together.
+
+## Example
 
 ### Create picking work
 
-Before Pick line grouping can be done, some eligible outbound work must be created.
+Before pick line grouping can be done, some eligible outbound work must be created.
 
-Navigate to _Sales and Marketing - Sales orders - All sales order_. Click New to create a new sales order. Pick any customer. In the _General_ section specify Warehouse 51.
+Go to **Sales and Marketing > Sales orders > All sales orders**. Click New to create a new sales order. Pick any customer. In the _General_ section specify Warehouse 51.
 
 1. Sales order 1:
   1. Line 1 – Item M9200, 3 ea
