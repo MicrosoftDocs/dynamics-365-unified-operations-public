@@ -38,4 +38,8 @@ This topic includes country-specific information about how to set up the Standar
 
 Starting from January 2020 all the companies in Norway are obliged to provide by request of Norwegian Tax Administration Standard Audit File for Taxes Financial data (SAF-T) in accordance with the Documentation v.1.4 published on July 08,2019 and Technical documentation v.1.3 published on March 23, 2018 in the format of XML report coincident with the XSD schema v.1.1 of “Norwegian SAF-T Financial data” developed by “SAF-T Working group”, Skatteetaten ©, based on “OECD Standard Audit File - Taxation 2.00” modified on 02-02-2018.
 
-## Set up
+## Overview
+
+To support “Norwegian SAF-T Financial data” report in Microsoft Dynamics 365 for Finance and Operations, version of the application must be of the following or later version:
+
+
