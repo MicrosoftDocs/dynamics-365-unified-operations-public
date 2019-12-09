@@ -54,9 +54,9 @@ With these caveats in mind, CSS file overrides can be a quick way to prototype a
 
 To create your CSS override file, you can use any integrated development environment (IDE), text editor, or source code editor. A common approach is to use standard web debuggers in your browser to identify style selectors, properties, and values within your existing site.  Most browsers will let you change values and preview them within the debugger. Once you have identified the changes you want to make, you can save these overrides to your own CSS file.   
 
-## Upload your CSS override file
+## Upload a CSS override file
 
-To upload your CSS file to your site in Commerce, follow these steps.
+To upload a CSS file to your site in Commerce, follow these steps.
 
 1. Navigate to your site in the authoring tools.
 1. In the navigation pane on the left, select **Design**.
@@ -68,7 +68,7 @@ To upload your CSS file to your site in Commerce, follow these steps.
 1. Under the **Available CSS overrides**, click **Upload CSS file**. A File Explorer dialog box appears.
 1. In File Explorer, browse to and select a CSS file and then click **Open**. Your uploaded CSS file will now appear under **Available CSS overrides**.
 
-## Preview your CSS override file
+## Preview a CSS override file
 
 To preview a CSS override file before making it active on your live site, follow these steps.
 
@@ -78,7 +78,7 @@ To preview a CSS override file before making it active on your live site, follow
 
 A new browser tab or window will then open where you can validate your style overrides against your site. This URL can be shared with other authenticated Commerce users for review and feedback.
 
-## Activate the CSS override file on your live site
+## Activate a CSS override file on your live site
 
 After you have previewed and approved the CSS override file, you can activate on your live site.  
 
