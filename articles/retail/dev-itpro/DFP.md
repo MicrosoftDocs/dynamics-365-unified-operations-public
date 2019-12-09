@@ -131,9 +131,9 @@ Enabling this integration results in sharing data, including personally identifi
 
 Customer instances of Dynamics 365 for Retail / Dynamics 365 Commerce and Dynamics 365 Fraud Protection may not be in the same data center. To learn more about where Microsoft stores data, visit the [Microsoft Privacy - Where is Your Data Located](https://www.microsoft.com/en-us/trust-center/privacy/data-location).
 
-All data shared between DFP and Commerce is subject to the [Microsoft Privacy Policy](https://privacy.microsoft.com/en-US/). 
+Microsoft Dynamics 365 Fraud Protection purchase protection assessments are not saved by Microsoft Dynamics 365 for Retail or Microsoft Dynamics 365 Commerce. 
 
-Microsoft Dynamics 365 Fraud Protection purchase protection assessments are not saved by Microsoft Dynamics 365 for Retail or Microsoft Dynamics 365 Commerce in any way and are only used to determine whether an online order should be allowed to proceed through checkout flows. 
+Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## Related articles
 
