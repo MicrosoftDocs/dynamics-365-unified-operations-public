@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Chronological invoice and voucher numbers for France
-description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable for legal entities in France.  
+title: Chronological invoice and voucher numbers
+description: This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.  
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -29,13 +29,13 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Chronological invoice and voucher numbers for France
+# Chronological invoice and voucher numbers
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable for legal entities in France.  
+This topic explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.  
 
-In France, there is a legal requirement that all invoices and related vouchers that are issued be numbered in chronological order. The chronology must be supported by fiscal periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. Within one fiscal period, chronological order isn't mandatory, but there must be no gaps in the numbering. To meet this requirement, chronological numbering in Accounts receivable affects the following documents:
+In some countries, there is a legal requirement that all invoices and related vouchers that are issued be numbered in chronological order. The chronology must be supported by fiscal periods. All the numbers that belong to earlier periods must be less than the numbers that belong to later periods. Within one fiscal period, chronological order isn't mandatory, but there must be no gaps in the numbering. To meet this requirement, chronological numbering in Accounts receivable affects the following documents:
 
 -   Free text invoice
 -   Free text invoice voucher
