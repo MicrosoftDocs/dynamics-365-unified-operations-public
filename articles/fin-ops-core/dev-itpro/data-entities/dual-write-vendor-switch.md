@@ -2,7 +2,7 @@
 # required metadata
 
 title: Switch between vendor designs
-description: 
+description: This topic describes how to switch between vendor data integration between Finance and Operations apps and Common Data Service.
 author: RamaKrishnamoorthy 
 manager: AnnBe
 ms.date: 09/20/2019
