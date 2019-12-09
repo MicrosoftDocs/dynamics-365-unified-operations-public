@@ -74,7 +74,7 @@ When an order is terminated as a result of DFP purchase protection, the user sim
 "The order cannot be processed at this time. Please try again later"
 
 
-![Rejected order sample from a reference storefront](../media/payments/SampleDFPReject.png)
+![Rejected order sample from a reference storefront](../media/Payments/SampleDFPReject.png)
 
 Alternatively, if the order is deemed to be within the risk threshold configured by the merchant in the DFP portal, then the response from DFP to the Storefront includes the risk level determined by DFP. For the initial integration, that risk level is not used in any way and the response from DFP for both "Reject" and "Non-Reject" scenarios is not saved in any way. 
 
