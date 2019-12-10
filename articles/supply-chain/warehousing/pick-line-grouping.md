@@ -118,7 +118,7 @@ Before pick line grouping can be set up, some eligible outbound work must be cre
 
 7. Reserve the inventory and release it to the warehouse. A work ID with six lines is created, sorted by **Item number**.
 
-### Mobile device flow execution
+### Mobile device flow
 
 1. On the mobile device, select the menu where the new mobile device menu item is located.
 
