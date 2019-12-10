@@ -88,11 +88,11 @@ When you post an invoice or a credit note, the appropriate number sequence is us
 
 ### Dates control
 
-Additional invoice dates control is implemented for customer invoices:
+The system performs an additional invoice dates control for customer invoices:
 
- - Posting of new invoices with dates earlier than last posted invoice should be forbidden if no reason code defined. To enable posting, a reason code should be entered either in an invoice/order header or at least in one of invoice lines.
+ - Posting of new invoices with dates earlier than the date of the latest posted invoice is forbidden if no reason code defined. To enable posting, a reason code must be entered either in an invoice/order header or at least in one of the lines.
 
- - Warning is raised if a new invoice date is later than system date.
+ - Warning is raised if a new invoice date is later than the system date.
 
 
 
