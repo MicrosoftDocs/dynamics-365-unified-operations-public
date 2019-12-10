@@ -53,7 +53,7 @@ At the time of picking using a system-directed cluster, warehouse workers will b
 
 ### Cluster profiles
 
-1. Go to to **Warehouse management > Setup > Mobile device > Cluster profiles**. Cluster profile controls how each cluster will be created by the system. If different clusters are needed, different cluster profiles should be created, one for each mobile device menu item.
+1. Go to**Warehouse management > Setup > Mobile device > Cluster profiles**. Cluster profiles control how each cluster will be created by the system. If different clusters are needed, different cluster profiles should be created, one for each mobile device menu item.
 
 2. Click **New**.
 
