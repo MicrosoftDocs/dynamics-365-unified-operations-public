@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with CSS override files
-description: This topic describes why, when, and how to use CSS override files in Microsoft Dynamics 365 Commerce.
+description: This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
 ms.date: 12/09/2019
@@ -27,75 +27,75 @@ ms.search.validFrom: 2019-12-09
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# CSS override file uploads
+# Work with CSS override files
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes why, when, and how to use CSS override files in Microsoft Dynamics 365 Commerce.
+This topic describes why, when, and how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Under normal circumstances, permanent site styles should be handled directly through a site's theme. Themes provide the foundational CSS and style settings for modules within any given page on your site. Themes are created using the Dynamics 365 Commerce online software development kit (SDK) and deployed to your websites through Microsoft Lifecycle Services (LCS). Theme debugging capabilities and module interface configurations within the SDK help site developers create customizable and cohesive site design packages. When these design packages are deployed to a site, they enable site authors to focus on content creation, editing, and publishing rather than site development.  
+Permanent site styles should usually be handled through a site's theme. Themes provide the foundational CSS and style settings for the modules on any page of your site. Themes are created by using the Dynamics 365 Commerce online software development kit (SDK), and they are deployed to your websites through Microsoft Dynamics Lifecycle Services (LCS). Theme debugging capabilities and module interface configurations in the SDK help site developers create customizable and cohesive site design packages. When these design packages are deployed to a site, site authors can focus on creating, editing, and publishing content instead of site development.
 
-With the normal lifecycle of a theme in mind, there are specific scenarios when the dependency on developers to make quick style changes through the SDK and LCS deployment pipeline can be prohibitive. Site prototypes or hotfixes can feel cumbersome if you don't have the SDK configured, or don't have time to wait for an LCS deployment. 
+Given the usual lifecycle of a theme, the dependency on developers to make style changes through the SDK and LCS deployment pipeline can be prohibitive in some scenarios. Site prototypes or hotfixes can seem cumbersome if the SDK isn't configured, or if you don't have time to wait for an LCS deployment.
 
-This is where cascading style sheet (CSS) file override uploads can help. Within the Commerce authoring tools, authenticated users can directly upload a CSS file, preview it, and then activate it to override a site's theme without the overhead of SDK or LCS deployment. The CSS override file can be as small as a single text style change, or as wide-ranging as a complete brand overhaul.  
+In these scenarios, CSS override files can help. In the Commerce authoring tools, authenticated users can upload a CSS file, preview it, and then activate it to override a site's theme. The overhead of SDK or LCS deployment isn't required. The overrides that are specified in a CSS override file can be as small as a change to a single text style or as wide-ranging as a complete brand overhaul.
 
-There are two caveats to using CSS overrides: 
+Before you use CSS override files, be aware of the following limitations:
 
-- Only one override file can be active on a site at any one time, therefore all active overrides must be present within a single file.
+- Only one CSS override file can be active on a site at a time. Therefore, all active overrides must be present in a single override file.
+- Although you can preview the overrides in the Commerce authoring tools, there are no dedicated debugging features to help identify any bugs that the overrides introduce. In other words, when you use CSS override files, you don't have the same toolset that the SDK provides for module and authoring validation.
 
-- Although you can preview override changes in the Commerce authoring tools, there are no dedicated debugging features to identify bugs introduced by the override. In other words, when using CEE overrides you do not have the same toolset provided by SDK to perform module and authoring validation.
-
-With these caveats in mind, CSS file overrides can be a quick way to prototype a design or implement a hotfix before a full theme update is developed and deployed. 
+Nevertheless, CSS override files provide a quick way to prototype a design or implement a hotfix before a full theme update is developed and deployed.
 
 ## Create a CSS override file
 
-To create a CSS override file, you can use any integrated development environment (IDE), text editor, or source code editor. A common approach is to use standard web debuggers in your browser to identify style selectors, properties, and values within your existing site.  Most browsers will let you change values and preview them within the debugger. Once you have identified the changes you want to make, you can save these overrides to your own CSS file.   
+To create a CSS override file, you can use any integrated development environment (IDE), text editor, or source code editor. A typical approach is to use standard web debuggers in your browser to identify style selectors, properties, and values on your existing site. Most browsers let you change values and preview them in the debugger. After you've identified the changes that you want to make, you can save them to your own CSS file.
 
 ## Upload a CSS override file
 
 To upload a CSS file to your site in Commerce, follow these steps.
 
-1. Navigate to your site in the authoring tools.
+1. In the authoring tools, go to your site.
 1. In the navigation pane on the left, select **Design**.
 
-    >[!NOTE]
-    >Depending on your version of the Commerce authoring tools, you may first need to expand **Settings** in the navigation pane to unhide **Design**.
-    
-1. If it is not already selected, select the **CSS override** tab at the top of the main design pane.
-1. Under the **Available CSS overrides**, click **Upload CSS file**. A File Explorer dialog box appears.
-1. In File Explorer, browse to and select a CSS file and then click **Open**. Your uploaded CSS file will now appear under **Available CSS overrides**.
+    > [!NOTE]
+    > Depending on the version of the Commerce authoring tools that you're using, you might have to expand **Settings** in the navigation pane before you can select **Design**.
+
+1. At the top of the main design pane, select the **CSS override** tab, if it isn't already selected.
+1. Under **Available CSS overrides**, select **Upload CSS file**. A File Explorer window appears.
+1. In File Explorer, browse to and select a CSS file, and then select **Open**. The uploaded CSS file now appears under **Available CSS overrides**.
 
 ## Preview a CSS override file
 
-To preview a CSS override file before making it active on your live site, follow these steps.
+To preview a CSS override file before you make it active on your live site, follow these steps.
 
-1. Under **Design > CSS override > Available CSS overrides**, find the CSS file you would like to preview.
-1. Next to the CSS file name, click **Preview site**.
-1. In the **Select a URL** dialog box, select the site URL that you want to preview with the override applied, and then click **OK**. If there are multiple variants for the selected URL, select the desired variant in the subsequent **Preview variations** dialog box.
+1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to preview.
+1. Next to the CSS file name, select **Preview site**.
+1. In the **Select a URL** dialog box, select the URL of the site that you want to see the override applied to, and then select **OK**.
+1. If there are multiple variants for the selected URL, select the desired variant in the **Preview variations** dialog box that appears.
 
-A new browser tab or window will then open where you can validate your style overrides against your site. This URL can be shared with other authenticated Commerce users for review and feedback.
+A new browser tab or window is opened, where you can validate your style overrides against your site. You can then share the URL with other authenticated Commerce users for review and feedback.
 
 ## Activate a CSS override file on your live site
 
-After you have previewed and approved the CSS override file, you can activate on your live site.  
+After you've previewed and approved the CSS override file, you can activate it on your live site.
 
->[!NOTE]
->Only one CSS override file can be active on your site at a time. Activating a new override will deactivate the previous one, so ensure that all necessary overrides are present in a single CSS override file.
+> [!NOTE]
+> Only one CSS override file can be active on your site at a time. If you activate a new override file, the previous override file is inactivated. Therefore, make sure that all required overrides are present in a single CSS override file.
 
 To activate a CSS override file, follow these steps.
 
-1. Under **Design > CSS override > Available CSS overrides**, find the CSS file you would like to activate.
-1. Under the CSS file name, click **Activate**. This will immediately make the override active on your live site.
+1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to activate.
+1. Under the CSS file name, select **Activate**. The override file immediately becomes active on your live site.
 
-## Deactivate a CSS override on your live site
+## Inactivate a CSS override file on your live site
 
-To deactivate a CSS override from your site, follow these steps:
+To inactivate a CSS override file on your site, follow these steps.
 
-1. Under **Design > CSS override > Available CSS overrides**, find the CSS file you would like to deactivate.
-1. Under the CSS file name, click **Deactivate**. This will immediately deactivate the CSS override on your live site.
+1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to inactivate.
+1. Under the CSS file name, select **Deactivate**. The override file immediately becomes inactive on your live site.
 
->[!TIP]
->To display additional CSS override file options, click the ellipsis (**...**) next to the CSS override file name. The **Download**, **Rename**, and **Replace** options are useful for quick modifications to an existing override file.
+> [!TIP]
+> To access additional options for CSS override files, select the ellipsis (**...**) next to the CSS file name. The **Download**, **Rename**, and **Replace** options are useful for quick changes to an existing CSS override file.
