@@ -53,39 +53,35 @@ At the time of picking using a system-directed cluster, warehouse workers will b
 
 ### Cluster profiles
 
-Navigate to Warehouse management -  Setup - Mobile device - Cluster profiles. Cluster profile controls how each cluster will be created by the system. If different clusters are needed, different Cluster profiles should be created, one for each mobile device menu item.
+1. Go to to **Warehouse management > Setup > Mobile device > Cluster profiles**. Cluster profile controls how each cluster will be created by the system. If different clusters are needed, different cluster profiles should be created, one for each mobile device menu item.
 
-In the **Header** , specify the following:
+2. Click **New**.
 
-- --Cluster profile ID – _2 Position_
-- --Name – _2 Position       _
-In the **General** fast tab, the following setup must be specified:
-- --Generate cluster ID – _Yes_
-  - Determines whether the Cluster ID should be created automatically by the system or whether the user should create it at picking start.
-- --Activate positions – _Yes_
-  - Determines whether the position names should be generated automatically based on the Position name setup. If this is not selected, the license plate ID for the position is used.
-- --Number of positions – _2_
-  - Determines maximum number of positions the cluster can have (number of boxes, totes, etc.)
-- --Position name - _Numeric_
-  - Alphabetical – positions will be named in alphabetical order
-  - Numeric – positions will be named in continuous numbers
-- --Break cluster at – _Put_
-  - Determines when the cluster should be broken
-    - Put
-    - Work close
-- --Sort verification type – _Position scan_
-  - Determines whether the put to position step should be verified
-    - None
-    - License plate scan
-    - Position scan
+3. In the **Cluster profile ID** filed, enter "2 Position".
 
-In **Cluster sorting** fast tab, sorting criteria can be determined by creating a new line:
+4. In the **Name** filed, enter "2 Position".
 
-- --Sequence number – determines the sequence the system will sort by. It is added automatically but can be changed.
-- --Field name – _WMSLocationId_
-  - Determines what field will this line use for sorting criteria
-- --Sorting – _Ascending_
-  - Determines whether sorting should be Ascending or Descending
+5. On the **General** FastTab, do the following:
+
+    - **Generate cluster ID**: set the toggle to **Yes**. This setting determines whether the cluster ID should be created automatically by the system or whether the user should create it at the start of picking.
+
+    - **Activate positions**: set the toggle to **Yes**. This setting determines whether the position names should be generated automatically based on the position name setup. If this is not set to **Yes**, the license plate ID for the position is used.
+
+    - **Number of positions**: enter "2". This setting determines the maximum number of positions the cluster can have (number of boxes, totes, etc.)
+      
+    - **Position name**: select **Numeric**. If you choose **Alphabetical**, the positions will be named in alphabetical order. If you select **Numeric**, positions will be named in continuous numbers.
+    
+    - **Break cluster at**: select **Put**. This setting determines when the cluster should be broken.
+
+    - **Sort verification type**: select **Position scan**. This determines whether the put to position step should be verified.
+ 
+6. On the **Cluster sorting** FastTab, you can define the sorting criteria by creating a new line and doing the following:
+
+    - **Sequence number**: determines the sequence the system will sort by. It is added automatically but you can change the value if needed.
+     
+    - **Field name**: select **WMSLocationId**. This field determines the field that the line will use for sorting criteria.
+    
+    - **Sorting**: select **Ascending**. This field defines whether the sorting should be done in ascending or descending order.
 
 ## Mobile device menu item
 
