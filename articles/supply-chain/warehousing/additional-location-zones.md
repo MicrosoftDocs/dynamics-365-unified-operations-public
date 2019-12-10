@@ -57,4 +57,5 @@ In the Aisle segment, specify From number = 1, To number = 5
 
 Click on Create. You will receive a message that new locations were created.
 
-Navigate to _Warehouse management_ -_Setup_ -_Warehouse setup_ -_Locations_ and view the locations that were created. All 4 zone fields will be available. <!---- What are the 4 zone fields? you said above 3 fields were added? --------->
+Navigate to _Warehouse management_ -_Setup_ -_Warehouse setup_ -_Locations_ and view the locations that were created. All 4 zone fields will be available. 
+<!---- What are the 4 zone fields? you said above 3 fields were added? --------->
