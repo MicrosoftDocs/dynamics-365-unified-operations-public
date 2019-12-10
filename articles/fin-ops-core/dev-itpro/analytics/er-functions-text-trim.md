@@ -2,7 +2,7 @@
 # required metadata
 
 title: TRIM ER function
-description: This topic provides information about how the TRIM ER function is used.
+description: This topic provides information about how the TRIM Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="TRIM">TRIM Function</a>
+# <a name="TRIM">TRIM ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `TRIM` function returns a *String* value of the specified text after the leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.
+The `TRIM` function returns the specified text string as a *String* value after leading and trailing spaces have been truncated, and after multiple spaces between words have been removed.
 
 ## Syntax
 
@@ -44,15 +44,15 @@ TRIM (text )
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A valid path to a data source of the *String* type.
+The valid path of a data source of the *String* type.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
