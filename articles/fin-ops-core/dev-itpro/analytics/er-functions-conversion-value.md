@@ -2,7 +2,7 @@
 # required metadata
 
 title: VALUE ER function
-description: This topic provides information about how the VALUE ER function is used.
+description: This topic provides information about how the VALUE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="VALUE">VALUE Function</a>
+# <a name="VALUE">VALUE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `VALUE` function returns a *Real* value that is converted from the specified string. 
+The `VALUE` function returns a *Real* value that is converted from the specified string.
 
 ## Syntax
 
@@ -46,13 +46,13 @@ VALUE (text)
 
 `text`: *String*
 
-A string value to be converted to a numeric value.
+A string value that must be converted to a numeric value.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
