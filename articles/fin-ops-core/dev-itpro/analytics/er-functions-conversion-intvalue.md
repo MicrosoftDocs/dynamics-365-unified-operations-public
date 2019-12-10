@@ -2,7 +2,7 @@
 # required metadata
 
 title: INTVALUE ER function
-description: This topic provides information about how the INTVALUE ER function is used.
+description: This topic provides information about how the INTVALUE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="INTVALUE">INTVALUE Function</a>
+# <a name="INTVALUE">INTVALUE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `INTVALUE` function returns an *Int* representation of the specified string.
+The `INTVALUE` function returns an *Int* value that represents the specified string.
 
 ## Syntax 1
 
@@ -50,7 +50,7 @@ INTVALUE (number)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
 A text value that must be converted to an *Int* number.
 
@@ -58,11 +58,11 @@ A text value that must be converted to an *Int* number.
 
 A numeric *Real* or *Integer* value that must be converted to an *Int* number.
 
-## Returns
+## Return values
 
 *Int*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
@@ -70,11 +70,11 @@ Any decimal places are truncated.
 
 ## Example 1
 
-`INTVALUE ("100.77")` returns **100** as an *Int* value.
+`INTVALUE ("100.77")` returns the *Int* value **100**.
 
 ## Example 2
 
-`INTVALUE (-100.77)` returns **-100** as an *Int* value.
+`INTVALUE (-100.77)` returns the *Int* value **-100**.
 
 ## Additional resources
 
