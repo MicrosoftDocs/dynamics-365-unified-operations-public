@@ -2345,6 +2345,8 @@
           href: warehousing/tasks/set-up-short-picking-item-reallocation.md
         - name: Cancel warehouse work for exception handling
           href: warehousing/cancel-warehouse-work.md
+        - name: Pick line grouping
+          href: warehousing/pick-line-grouping.md 
       - name: Inventory counting
         items:
         - name: Reason codes for inventory counting
