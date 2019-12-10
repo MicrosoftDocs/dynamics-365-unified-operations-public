@@ -2,7 +2,7 @@
 # required metadata
 
 title: UPPER ER function
-description: This topic provides information about how the UPPER ER function is used.
+description: This topic provides information about how the UPPER Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="UPPER">UPPER Function</a>
+# <a name="UPPER">UPPER ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `UPPER` function returns the specified string as a *String* value after it has been converted to uppercase letters.
+The `UPPER` function returns the specified text string as a *String* value after it has been converted to uppercase letters.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ UPPER (text )
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A valid path to a data source of the *String* type.
+The valid path of a data source of the *String* type.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`UPPER ("Sample")` returns "SAMPLE".
+`UPPER ("Sample")` returns **"SAMPLE"**.
 
 ## Additional resources
 
