@@ -61,7 +61,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 <tbody>
 <tr class="odd">
 <td>Feature activation</td>
-<td>In the <strong>Feature management</strong> workspace, turn on the <strong>Chronological numbering</strong> feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).</td>
+<td>In the <strong>Feature management</strong> workspace, turn on the <strong>Chronological numbering</strong> feature. For more information, see <a href="../../fin-and-ops/get-started/feature-management/feature-management-overview.md">Feature management overview</a>.</td>
 </tr>
 <tr class="even">
 <td>Country/region</td>
@@ -86,7 +86,7 @@ If different customers use different patterns for numbering, you must set up chr
 ## Invoice posting
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
 
-## Dates control
+### Dates control
 When...
 
 
