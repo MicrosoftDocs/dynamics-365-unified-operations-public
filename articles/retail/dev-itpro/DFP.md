@@ -41,8 +41,7 @@ This topic describes out-of-box integrations between Dynamics 365 Commerce and D
 
 | Term | Description |
 |---|---|
-| Purchase protection | The DFP module that analyzes purchases for fraud based on risk levels determined by the merchant. |
-| Commerce | Microsoft Dynamics 365 Commerce. May also be referred to as Dynamics 365 for Retail or Retail.|
+| Purchase protection | The Fraud Protection module that analyzes purchases for fraud based on risk levels determined by the merchant. |
 | Storefront | The e-commerce storefront provided out of box with Dynamics 365 Commerce. |
 
 ## Overview
