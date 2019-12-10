@@ -62,6 +62,8 @@ If you are planning to firm many orders at the same time, parallelizing the run 
 -   **Parallelize firming** – If **Yes**, the firming process will be parallelized with the number of threads defined in **Number of threads**.
 -   **Number of threads** – Controls the number of threads used to parallelize the firming process. The parameter is only shown when **Parallelize firming** is set to **Yes**.
 
+> [!NOTE]
+> The option for **Parallelize firming** is only shown when you have more than one planned order selected for firming.
 
 Additional resources
 --------
