@@ -79,4 +79,4 @@ The new fields, **Responsible for withholding the ICMS-ST**, **ICMS-ST collectio
 - **Customer invoice** page on the **Fiscal information** tab. This is only for customer returns.
 
 > [!NOTE]
-> Operations where the ICMS-ST is taxable during receiving (taxation code = 10), although can be captured by the new field Responsible for withholding ICMS-ST, the further treatment of accounting, financial and costing remains out of scope of localization.
+> During the receipt of a fiscal document, when the ICMS-ST is taxable by using taxation code 10, even though it is entered in the **Responsible for withholding ICMS-ST** field, the financial and costing information is not included in the scope of localization.
