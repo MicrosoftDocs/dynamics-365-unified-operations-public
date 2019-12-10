@@ -2,10 +2,10 @@
 # required metadata
 
 title: MID ER function
-description: This topic explains how the MID ER function is used
+description: This topic provides information about how the MID ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `MID` function returns a *String* value of the specified number of characters from the specified string, starting at the specified position.
+Starting at the specified string position, the `MID` function returns a *String* value of the specified number of characters from the specified string.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ An *Integer* that specifies the position of the first character that must be ret
 
 `number of characters` : *Integer*
 
-An *Integer* that specifies the number of characters (beginning with the specified starting position), to be returned from the specified text.
+An *Integer* that specifies the number of characters, beginning with the specified starting position, to be returned from the specified text.
 
 ## Returns
 
@@ -64,9 +64,9 @@ The result text value.
 
 ## Usage notes
 
-If the value of the starting position is less than zero, the returned characters counting will start from the 1st position.
+If the value of the starting position is less than zero, the returned characters counting will start from the first position.
 
-If the value of the starting position is greater than the length  of the specified string, the empty string is returned.
+If the value of the starting position is greater than the length of the specified string, the empty string is returned.
 
 ## Example
 
