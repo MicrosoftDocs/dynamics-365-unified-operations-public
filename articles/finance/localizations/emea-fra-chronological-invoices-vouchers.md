@@ -87,6 +87,13 @@ If different customers use different patterns for numbering, you must set up chr
 When you post an invoice or a credit note, the appropriate number sequence is used to generate a number. This number sequence is selected based on the valid period that contains the invoice date. Customer-specific chronological numbering has higher priority than chronological numbering.
 
 ### Dates control
-When...
+
+Additional invoice dates control is implemented for customer invoices:
+
+ - Posting of new invoices with dates earlier than last posted invoice should be forbidden if no reason code defined. To enable posting, a reason code should be entered either in an invoice/order header or at least in one of invoice lines.
+
+ - Warning is raised if a new invoice date is later than system date.
+
+
 
 
