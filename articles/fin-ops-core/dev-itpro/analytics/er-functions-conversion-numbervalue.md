@@ -2,7 +2,7 @@
 # required metadata
 
 title: NUMBERVALUE ER function
-description: This topic provides information about how the NUMBERVALUE ER function is used.
+description: This topic provides information about how the NUMBERVALUE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMBERVALUE">NUMBERVALUE Function</a>
+# <a name="NUMBERVALUE">NUMBERVALUE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMBERVALUE` function returns a *Real* value that is converted from the specified *String* value considering the specified decimal and digit grouping separators.
+The `NUMBERVALUE` function returns a *Real* value that is converted from the specified *String* value. During the conversion, the specified decimal and digit grouping separators are considered.
 
 ## Syntax
 
@@ -44,27 +44,27 @@ NUMBERVALUE (text, decimal separator, digit grouping separator)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
 A text value that must be converted to a *Real* number.
 
-`decimal separator` : String
+`decimal separator`: String
 
-A decimal separator. It is used to separate the integer and fractional parts of a decimal number.
+A decimal separator. It's used to separate the integer and fractional parts of a decimal number.
 
-`digit grouping separator` : *String*
+`digit grouping separator`: *String*
 
-A digit grouping separator. It is used as the thousands separator.
+A digit grouping separator. It's used as the thousands separator.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example
 
-`NUMBERVALUE( "1 234,56", ",", " ")` returns the value **1234.56**.
+`NUMBERVALUE( "1 234,56", ",", " ")` returns **1234.56**.
 
 ## Additional resources
 
