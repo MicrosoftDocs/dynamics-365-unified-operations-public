@@ -83,53 +83,70 @@ At the time of picking using a system-directed cluster, warehouse workers will b
     
     - **Sorting**: select **Ascending**. This field defines whether the sorting should be done in ascending or descending order.
 
-## Mobile device menu item
+### Mobile device menu item
 
-Navigate to Warehouse management - Setup - Mobile device -  Mobile device menu items
+To create a new mobile device menu item for system-directed cluster picking and tie the cluster profile ID to the mobile device menu item, do the following. 
 
-Create new mobile device menu item for System directed cluster picking. This where the Cluster profile ID is tied to the Mobile device menu item.
+1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
 
-In **Header** , specify the following:
+2. Click **New**. 
 
-- --Menu item name – _SD Cluster_
-- --Title – _SD Cluster_
-- --Mode – _Work_
-- --Use existing work – _Yes_
+3. In the **Menu item name** field, enter "SD Cluster".
 
-In **General** fast tab, the following setting can be specified:
+4. In the **Title** field, enter "SD Cluster".
 
-- --Directed by – _System directed cluster picking_
-- --Generate license plate – _Yes_
-- --Cluster profile ID – _2 Position_
-  - Here a specific Cluster profile is tied to the mobile device menu item
+5. In the **Mode** field, select **Work**.
 
-In **Work classes** fast tab, set up the valid work class for this mobile device menu item:
+6. Set the **Use existing work** toggle to **Yes**.
 
-- --Work class ID – _Sales_
-- --Work order type – _Sales orders_
+7. On the **General** FastTab, do the following:
 
-A **System directed work sequence query** must also be specified, click on the button in the ribbon and create a new query:
+    - **Directed by**: select **System directed**.
+    
+    - **Generate license plate**: set the toggle to **Yes**. 
+    
+    - **Cluster profile ID**: select **2 Position**.
 
-- --Sequence number – _1_
-- --Description – _Work priority – Work ID_
+8. On the **Work classes** FastTab, set up the valid work class for this mobile device menu item by doing the following:
 
-Click Edit query, and add the following to the Sorting tab
+    - **Work class ID**: make sure **Sales** is entered in this field.
+    
+    - **Work order type**: make sure **Sales orders** is entered in this field.
 
-- --Table – _Work_
-- --Derived table – _Work_
-- --Field – _Work priority_
-- --Search direction – _Ascending_
+9. Specify a new system directed work sequence query by doing the following:
 
-- --Table – _Work_
-- --Derived table – _Work_
-- --Field – _Work ID_
-- --Search direction – _Ascending_
+    - Click **New**.
 
-The system will now sort Work IDs within the cluster first based on Work priority, then on Work ID.
+    - In the **Sequence number** field, enter "1".
+    
+    - In the **Description** field, select **Work priority – Work ID**.
+
+10. In the menu, click **Edit query**. 
+
+11. On the **Sorting** tab, do the following: 
+
+    - **Table**: select **Work**.
+        
+    - **Derived table**: select **Work**.
+    
+    - **Field**: select **Work priority**.
+    
+    - **Search direction**: select **Ascending**.
+
+    - **Table**: select **Work**.
+        
+    - **Derived table**: select **Work**.
+    
+    - **Field**: select **Work ID**.
+    
+    - **Search direction**: select **Ascending**.
+
+The system will now sort work IDs within the cluster first based on work priority, then on work ID.
 
 ### Mobile device menu
 
-Navigate to Warehouse management - Setup - Mobile device - Mobile device menu and add the newly created menu item to the desired menu.
+Go to **Warehouse management > Setup > Mobile device > Mobile device menu** and add the newly created menu item to the desired menu.
+
 
 # Process – Demo 1
 
