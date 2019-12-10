@@ -5,7 +5,7 @@ title: Commerce preview environment FAQ
 description: This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -59,7 +59,7 @@ No. The Commerce preview environment is currently available only in new environm
 
 Retail is the only component that is hosted in your subscription. Other components such as Retail Cloud Scale Unit (RCSU) and e-Commerce will be hosted in Microsoft subscriptions. You can use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate this cost.
 
-**Which Azure geographical regions are currently supported for the Commerce preview environment?**
+**Which Azure geographies are currently supported for the Commerce preview environment?**
 
 The Commerce preview environment can be deployed only in the North America geography.
 
