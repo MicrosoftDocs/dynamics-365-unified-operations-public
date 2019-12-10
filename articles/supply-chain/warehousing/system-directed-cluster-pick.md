@@ -148,18 +148,47 @@ The system will now sort work IDs within the cluster first based on work priorit
 Go to **Warehouse management > Setup > Mobile device > Mobile device menu** and add the newly created menu item to the desired menu.
 
 
-# Process – Demo 1
+## Example
 
 ### Create picking work
 
-Before system directed cluster picking, some outbound work must be created. Previously created Cluster profile specifies 2 cluster positions, hence create at least two different Work IDs.
+Before system-directed cluster picking can be set up, some eligible outbound work must be created. The previously-created cluster profile specifies two cluster positions, so here you will create at least two different work IDs.
 
-Navigate to _Sales and Marketing_ - _Sales orders_ - _All sales orders_. Click New to create a new sales order. Pick any customer. In the _General_ section specify warehouse 62.
+1. Go to **Sales and Marketing > Sales orders > All sales orders**. 
 
-1. Sales order 1: Add a new line to the sales order, item A0001, quantity 1 pcs. Add a second line for item A0002, quantity 3 pcs.
-2. Sales order 2: Add a new line to the sales order, item A0001, quantity 4 pcs. Add a second line for item A0002, quantity 2 pcs.
+2. Click **New** to create a new sales order.
 
-Reserve the inventory and Release it to warehouse. Two different Work IDs will be created, each with two pick lines.
+3. In the **Customer account** field, select any customer.
+
+4. On the **General** FastTab, in the **Warehouse** field, select warehouse **62**.
+
+5. Click **Ok**.
+
+6. On the **Sales order lines** FastTab, click **Add line**.
+
+7. In the **Item number** field, select **A0001**.
+
+8. In the **Quantity** field, enter "1".
+
+9. Click **Add line** to add a second line.
+
+10. In the **Item number** field, select **A0002**.
+
+11. In the **Quantity** field, enter "3".
+
+12. Repeat steps 2 through 6.
+
+13. In the **Item number** field, select **A0001**.
+
+14. In the **Quantity** field, enter "4". 
+
+15. Click **Add line** to add a second line.
+
+16. In the **Item number** field, select **A0002**.
+
+17. In the **Quantity** field, enter "2".
+
+Reserve the inventory and release it to the warehouse. Two different work IDs will be created, each with two pick lines.
 
 ### Mobile device flow execution
 
