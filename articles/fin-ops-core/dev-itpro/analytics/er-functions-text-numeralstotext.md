@@ -2,10 +2,10 @@
 # required metadata
 
 title: NUMERALSTOTEXT ER function
-description: This topic explains how the NUMERALSTOTEXT ER function is used
+description: This topic provides information about how the NUMERALSTOTEXT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMERALSTOTEXT` function returns a *String* representation of the specified number after it has been spelled out (converted to text strings) in the specified language.
+The `NUMERALSTOTEXT` function returns a *String* representation of the specified number after it has been convered to text strings and spelled out in the specified language.
 
 ## Syntax
 
@@ -72,11 +72,12 @@ The result text value.
 
 ## Usage notes
 
-The language code is optional. When it's defined as an empty string, the language code for the running context is used. (The default language code is EN-US. The language code for the running context is defined in a **Folder** or **File** element of the running ER format.)
+The language code is optional. When it's defined as an empty string, the language code for the running context is used. The default language code is EN-US. The language code for the running context is defined in a **Folder** or **File** element of the ER format that is running.
 
 The currency code is optional. When it's defined as an empty string, the company currency for the running context is used.
 
-> [!NOTE] The **print currency name flag** and **decimal points parameters** are analyzed only for the following language codes: CS, ET, HU, LT, LV, PL, and RU. Additionally, the **print currency name flag** parameter is analyzed only for companies where the country's or region's context supports declension of currency names.
+> [!NOTE] 
+> The **print currency name flag** and **decimal points parameters** are analyzed only for the following language codes: CS, ET, HU, LT, LV, PL, and RU. Additionally, the **print currency name flag** parameter is only analyzed for companies where the country's or region's context supports declension of currency names.
 
 ## Example 1
 
