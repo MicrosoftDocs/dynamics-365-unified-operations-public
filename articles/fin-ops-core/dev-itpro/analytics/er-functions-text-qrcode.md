@@ -2,10 +2,10 @@
 # required metadata
 
 title: QRCODE ER function
-description: This topic explains how the QRCODE ER function is used
+description: This topic provides information about how the QRCODE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -57,9 +57,9 @@ The result binary stream.
 ## Example
 
 You can add the `QRCODE ("Sample text")` expression as a binding of a **Cell** element of an ER format containing a template that is bound to either an image (for a template in Excel format) or to a picture content control (for a
-template in Word format) as a placeholder of the QR code image. When such ER format is executed, the generated document will contain the corresponding QR code image in its placeholder in using template. See [Embed images and shapes in
+template in Word format) as a placeholder of the QR code image. When such ER format is executed, the generated document will contain the corresponding QR code image in its placeholder in using template. For more information, see [Embed images and shapes in
 documents that you generate by using
-ER](electronic-reporting-embed-images-shapes.md) for more details.
+ER](electronic-reporting-embed-images-shapes.md).
 
 ## Additional resources
 
