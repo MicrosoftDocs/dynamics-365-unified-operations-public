@@ -5,7 +5,7 @@ title: Maintain planned orders
 description: This topic provides information about how to manage planned orders. It describes how you can update the status of planned orders, firm them, and filter for planned orders that have the same status as a selected planned order.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,7 +46,7 @@ You can use the **Status** field to help track your progress. The following valu
 -   If you want to firm a planned order, you can change the status to **Approved**. Planned orders with **Approved** status are respected by master planning, so they are not modified or deleted during a later master planning run. To achieve this, the planning logic copies the **Approved** planned orders from the old plan version to the new plan version during master planning.
 
 ## Firming planned orders 
-By firming planned orders, real orders are created. These are also know as *released* or *open orders*. When a planned order is firmed, it's moved to the orders section of the relevant module.
+By firming planned orders, real orders are created. These are also known as *released* or *open orders*. When a planned order is firmed, it's moved to the orders section of the relevant module.
 
 You can select two firming options from the **Planned orders** page:
 
