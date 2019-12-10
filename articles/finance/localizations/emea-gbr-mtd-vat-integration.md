@@ -200,7 +200,7 @@ The **UK MTD-VAT setup** package also provides a setup for two web applications 
 - **Dynamics 365 Finance** – For interoperation with the **production** HMRC web service.
 - **Sandbox HMRC** – For interoperation with the **sandbox** HMRC web service.
 
-Microsoft provides production web application credentials for interoperation with HMRC. When you import setup of Electronic messages functionality for MTD for VAT from the **UK MTD-VAT setup** package provided by Microsoft, credentials for **Dynamics 365 for Finance and Operations** web application, which will be used for production interoperation with HMRC, are imported to your system. These credentials are stored in in the system in encrypted format.
+Microsoft provides production web application credentials for interoperation with HMRC. When you import setup of Electronic messages functionality for MTD for VAT from the **UK MTD-VAT setup** package provided by Microsoft, credentials for **Dynamics 365 for Finance and Operations** web application, which will be used for production interoperation with HMRC, are imported to your system and are provided by Microsoft. These credentials are stored in in the system in encrypted format.
 
 For more information about the predefined setup that is included in the data entities in the package for MTD for VAT, see [Appendix 1: Electronic messages setup for MTD for VAT](#appendix-1-electronic-messages-setup-for-mtd-for-vat) later in this topic. 
 
