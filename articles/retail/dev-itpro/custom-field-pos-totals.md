@@ -169,7 +169,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
 9. In the **CustomFieldExtensions** folder, create a .json file that is named **manifest.json**.
 10. In the **manifest.json** file, paste the below code.
 
-```typescript
+    ```typescript
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -190,17 +190,17 @@ You can find similar sample code in the Retail software development kit (SDK), a
                     } }
             }  }
     } }
-```
+    ```
 
     In the manifest, note that the **fieldName** value in the **customFields** section should match the name of the custom field added in the Retail headquarters, the name you specified for the custom field in step 6 of the "Configure Retail headquarters" procedure. **modulePath** is the name of the implementation file, the implementation file name is the name of the file that you created in step 5 of "Add business logic to the custom field" procedure.
     
-If you add multiple custom fields, you should add multiple implementation files and update the information under the custonFileds section.
+    If you add multiple custom fields, you should add multiple implementation files and update the information under the custonFileds section.
 
     For example, if you add two custom fields, **Sample1** and **Sample2**, you should have two implementation files that extend from the same base class, **CartViewTotalsPanelCustomFieldBase**.
 
     In this case, the manifest should look like this.
 
-```typescript
+    ```typescript
     "customFields": [
         {
             "fieldName": "Sample1",
@@ -211,13 +211,13 @@ If you add multiple custom fields, you should add multiple implementation files 
             "modulePath": "Cart/SampleCustomField2"
         }
     ]
-```
+    ```
     
     In this example, **SampleCustomField1** and **SampleCustomField2** are the names of the typescript files where you will do the business logic.
 
 11. Open the **extensions.json** file under the **POS.Extensions** project, and update it with the **CustomFieldExtensions** samples, so that POS will load this extension at runtime.
 
-```typescript
+    ```typescript
     {
         "extensionPackages": [
             { 
@@ -228,17 +228,17 @@ If you add multiple custom fields, you should add multiple implementation files 
             }
         ]
     }
-```
+    ```
 
 12. Open the **tsconfig.json** file, and add the extension folder name **CustomFieldExtensions** and comment out the extension folder in the **exclude** list. POS will use this file to include or exclude the extension. By default, the **exclude** list contains all the excluded extensions. To include an extension as part of the POS, you must add the extension folder name and comment out the extension in the **extension** list, as shown here.
 
-```typescript
+    ```typescript
     "exclude": [
         "SampleExtensions",
         //"SampleExtensions2",
         //"CustomFieldExtensions"
     ],
-```
+    ```
 
 13. Compile and rebuild the project.
 14. Deploy the customized version of Retail Modern POS (MPOS) by selecting the **Local Machine** button. Make sure that the solution platform is x86. Alternatively, you can create a Retail deployable package and install MPOS from it.
