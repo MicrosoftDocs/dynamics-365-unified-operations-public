@@ -42,24 +42,24 @@ Pick line grouping allows multiple work lines that have the same item and locati
 
 1. Go to **Warehouse management > Setup >  Mobile device > Mobile device menu items** and create a new menu item for "Sales group line picking – User directed".
 
-1. Under **Mobile device menu items**, specify the following:
+2. Under **Mobile device menu items**, specify the following:
+  
+  - In the **Menu item name** field, enter "Sales Pick - Group line".
+  - In the **Title** field, enter "Sales Pick - Group line".
+  - In the **Mode** field, select **Work**.
+  - Set the **Use existing work** toggle to **Yes**.
 
-- In the **Menu item name** field, enter "Sales Pick - Group line".
-- In the **Title** field, enter "Sales Pick - Group line".
-- In the **Mode** field, select **Work**.
-- Set the **Use existing work** toggle to **Yes**.
+3. On the **General** FastTab, the following setting can be specified:
 
-1. On the **General** FastTab, the following setting can be specified:
+  - In the **Directed by** field, select **User directed**.
+  - Set the  **Generate license plate** toggle to **Yes**.
+  - Set the **Group pick** toggle to **Yes**.
 
-- In the **Directed by** field, select **User directed**.
-- Set the  **Generate license plate** toggle to **Yes**.
-- Set the **Group pick** toggle to **Yes**.
+4. On the **Work classes** FastTab, configure the valid work classes for this mobile device menu item:
 
-1. On the **Work classes** FastTab, configure the valid work classes for this mobile device menu item:
-
-- Click **New**.
-- In the **Work class ID** field, select **Sales** or **SO Pick**, depending on which warehouse you will be using.
-- In the **Work order type** field, select **Sales orders**.
+  - Click **New**.
+  - In the **Work class ID** field, select **Sales** or **SO Pick**, depending on which warehouse you will be using.
+  - In the **Work order type** field, select **Sales orders**.
 
 ### Set up mobile device menu
 
@@ -79,10 +79,10 @@ Pick line grouping allows multiple work lines that have the same item and locati
 
 1. Click **Add** and select the following:
 
-- In the **Table** field, select **Temporary work transactions**.
-- In the **Derived table** field, select **Temporary work transactions**.
-- In the **Field** field, select **Item number**.
-- In the **Search direction** field, select **Ascending**.
+  - In the **Table** field, select **Temporary work transactions**.
+  - In the **Derived table** field, select **Temporary work transactions**.
+  - In the **Field** field, select **Item number**.
+  - In the **Search direction** field, select **Ascending**.
 
 > [!NOTE]
 > The work lines must be sorted by **Item ID** for this funcitonality to work. If lines with the same items are not sequenced one after another, then they will not be grouped together.
@@ -95,13 +95,13 @@ Before pick line grouping can be set up, some eligible outbound work must be cre
 
 1. Go to **Sales and Marketing > Sales orders > All sales orders**.
 
-1. Click **New** to create a new sales order. 
+2. Click **New** to create a new sales order. 
 
-1. In the **Customer account** field, select any customer. 
+3. In the **Customer account** field, select any customer. 
 
-1. On the **General** FastTab, in the **Warehouse** field, select **51** and then click **Ok**.
+4. On the **General** FastTab, in the **Warehouse** field, select **51** and then click **Ok**.
 
-1. Under **Sales order lines**, add six lines with the selections:
+5. Under **Sales order lines**, add six lines with the selections:
   1. Line 1: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
   2. Line 2: in the **Item number** field, select **M9201**. In the **Quantity** field, enter **3**. 
   3. Line 3: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **2**. 
@@ -110,13 +110,13 @@ Before pick line grouping can be set up, some eligible outbound work must be cre
   6. Line 6: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **7*. 
 
   The total quantities are:
-  - Item M9200, 7 each
-  - Item M9201, 3 each
-  - Item M9202, 9 each
+   - Item M9200, 7 each
+   - Item M9201, 3 each
+    - Item M9202, 9 each
 
-1. Before releasing the orders to the warehouse, you need to ensure there is enough inventory on the pick locations for all the items on the orders. Review the **Location directive** setting to see which picking locations are used for sales order picking.
+6. Before releasing the orders to the warehouse, you need to ensure there is enough inventory on the pick locations for all the items on the orders. Review the **Location directive** setting to see which picking locations are used for sales order picking.
 
-1. Reserve the inventory and release it to the warehouse. A Work ID with six lines is created, sorted by **Item number**.
+7. Reserve the inventory and release it to the warehouse. A Work ID with six lines is created, sorted by **Item number**.
 
 ### Mobile device flow execution
 
