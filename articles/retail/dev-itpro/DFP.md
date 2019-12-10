@@ -85,7 +85,7 @@ If an online order is allowed to proceed after the Fraud Protection assessment, 
 Similar to bank events, once an order is created in the Commerce back office, a signal is sent to Fraud Protection indicating that the order was created successfully. Both the bank event and purchase status event are "fire and forget" events, meaning there is no response expected from Fraud Protection. 
 
 ### Availability
-As of Dynamics 365 Retail version 10.0.8, Retail includes the Fraud Protection integration back office setup. However, the full out-of-box integration requires requires the storefront included in Commerce, which is currently in public preview. For more details about Commerce, visit the [landing page](https://dynamics.microsoft.com/en-us/commerce/overview/). 
+As of Dynamics 365 Retail version 10.0.8, Retail includes the Fraud Protection integration back office setup. However, the full out-of-box integration requires requires the storefront included in Commerce, which is currently in public preview. When Commerce becomes generally available, existing Retail customers will be able to update to Commerce. For more details, visit the [Dynamics 365 Commerce landing page](https://dynamics.microsoft.com/en-us/commerce/overview/). 
 
 
 #### Setup
