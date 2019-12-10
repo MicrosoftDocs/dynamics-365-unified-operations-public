@@ -2,10 +2,10 @@
 # required metadata
 
 title: Formula designer in Electronic reporting (ER)
-description: This topic explains how to use the formula designer in Electronic reporting (ER).
+description: This topic provides information about how to use the formula designer in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 07/30/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -146,13 +146,13 @@ Based on this setting, the generated message for each debtor payment, **Ustrd** 
 
 ## <a name="TestFormula">Validation of configured formulas</a>
 
-You can validate how the configured formula works right on the formula designer page - you can select the **Test** option for that.
+On the **Formula designer** page, select **Test** to validate how the configured formula works.
 
 [![Formula designer](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
-The **Test expression** pane can be offered on the right-hand side of the formula designer page when values of formula arguments are required. In most cases such arguments must be defined manually as the configured bindings are not executed at design-time. The result of the execution of the configured formula will be shown in the **Test result** area.
+You can open the **Test expression** pane on the right side of the **Formula designer** page when the values of formula arguments are required. In most cases such arguments must be defined manually as the configured bindings are not executed at design-time. The result of the execution of the configured formula will be shown in the **Test result** area.
 
-The presented below pictures show how the configured for the foreign trade domain formula can be tested to make sure that the Intrastat commodity code will contain the only digits. When this formula is being testing, the **Test expression** pane is offered allowing you to specify the value of Intrastat commodity code for testing.
+The following graphics show how the configured for the foreign trade domain formula can be tested to make sure that the Intrastat commodity code will contain the only digits. When this formula is being tested, you can use the **Test expression** pane to specify the value of Intrastat commodity code for testing.
 
 [![Formula designer](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
@@ -160,7 +160,8 @@ When you specified the testing code and selected **OK**, the **Test result** are
 
 [![Formula designer](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
-Note that some formulas cannot be tested at design-time. It can happen, for example, when the formula returns the result of the data type that cannot be shown in the **Test result** area.
+
+some formulas can't be tested at design-time. It can happen, for example, when the formula returns the result of the data type that cannot be shown in the **Test result** area.
 
 [![Formula designer](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
