@@ -2,7 +2,7 @@
 # required metadata
 
 title: INT64VALUE ER function
-description: This topic provides information about how the INT64VALUE ER function is used.
+description: This topic provides information about how the INT64VALUE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/05/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="INT64VALUE">INT64VALUE Function</a>
+# <a name="INT64VALUE">INT64VALUE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `INT64VALUE` function returns an *Int64* representation of the specified string.
+The `INT64VALUE` function returns an *Int64* value that represents the specified string.
 
 ## Syntax 1
 
@@ -50,7 +50,7 @@ INT64VALUE (number)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
 A text value that must be converted to an *Int64* number.
 
@@ -58,11 +58,11 @@ A text value that must be converted to an *Int64* number.
 
 A numeric *Real* or *Integer* value that must be converted to an *Int64* number.
 
-## Returns
+## Return values
 
 *Int64*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
@@ -70,11 +70,11 @@ Any decimal places are truncated.
 
 ## Example 1
 
-`INT64VALUE ("22565422744")` returns **22565422744** as an *Int64* value.
+`INT64VALUE ("22565422744")` returns the *Int64* value **22565422744**.
 
 ## Example 2
 
-`INT64VALUE ( VALUE("22565422744.77"))` returns **22565422744** as an *Int64* value.
+`INT64VALUE ( VALUE("22565422744.77"))` returns the *Int64* value **22565422744**.
 
 ## Additional resources
 
