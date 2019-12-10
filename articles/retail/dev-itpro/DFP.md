@@ -96,7 +96,7 @@ Once the merchant's Fraud Protection environment is available and purchase prote
 
 ##### Key vault setup
 
-Part of the integration setup requires that a secret is used when Commerce communicates with Fraud Protection to get a purchase protection result. That secret must be stored using an Azure Key Vault client. Details around setting up and Key Vault client can be found by visiting [this support topic](https://support.microsoft.com/en-us/help/4040305/setting-up-azure-key-vault-client). 
+Part of the integration setup requires that a secret is used when Commerce communicates with Fraud Protection to get a purchase protection result. That secret must be stored using an Azure Key Vault client. Details around setting up and Key Vault client can be found by visiting the [Setting up Azure Key Vault Client](https://support.microsoft.com/en-us/help/4040305/setting-up-azure-key-vault-client) support topics. 
 
 To reference the Fraud Protection certificate stored in Key Vault, that certificate must be referenced by key vault parameters in the Commerce back office. To do so, navigate to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Key Vault parameters** in Commerce.
 
