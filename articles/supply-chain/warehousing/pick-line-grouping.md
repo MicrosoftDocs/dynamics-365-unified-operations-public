@@ -116,7 +116,7 @@ Before pick line grouping can be set up, some eligible outbound work must be cre
 
 6. Before releasing the orders to the warehouse, you need to ensure there is enough inventory on the pick locations for all the items on the orders. Review the **Location directive** setting to see which picking locations are used for sales order picking.
 
-7. Reserve the inventory and release it to the warehouse. A Work ID with six lines is created, sorted by **Item number**.
+7. Reserve the inventory and release it to the warehouse. A work ID with six lines is created, sorted by **Item number**.
 
 ### Mobile device flow execution
 
