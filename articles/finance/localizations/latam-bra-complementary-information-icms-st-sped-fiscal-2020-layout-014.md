@@ -2,7 +2,7 @@
 # required metadata
 
 title: SPED fiscal 2020 - Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
-description: This topic provides information about utilize the complement and compensation of ICMS-ST for the 2020 calendar year.
+description: This topic provides information about how to utilize the complement and compensation of ICMS-ST for the 2020 calendar year.
 author: gionoder
 manager: AnnBe
 ms.date: 12/09/2019
@@ -32,36 +32,37 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-When a company wants to utilize the functionality of the ICMS-ST for the 2020 calendar year, they need to start registering the ICMS-ST information during the reciept of electronic fiscal documents model 55 starting January 1st 2020.
+When a company wants to utilize the functionality of the ICMS-ST for the 2020 calendar year, they need to start registering the ICMS-ST information during the receipt of electronic fiscal documents model 55 starting January 1, 2020.
 
-For Dynamics 365 Finance only, this feature must be enabled using Feature Management. Complete the following steps to enable the feature.
+For Dynamics 365 Finance only, this feature must be enabled using Feature Management. Complete the following steps to enable this feature.
 
 1. In Finance, on the **Home** dashboard, select **Feature Management**.
-3. Search for and select *Complementary information of ICMS-ST* .
+3. Search for and select *Complementary information of ICMS-ST*.
 4. Select **Enable now**.
 
 When the vendor fiscal document or transfer fiscal document includes a product that is subject to ICMS-ST taxation on the UF (state) of the destination address, and if the receiving fiscal establishment utilizes the ICMS-ST, the following attributes of the fiscal document must be entered.
 
 - The party responsible for withholding the ICMS-ST:
 		
-	- **Direct**: When a third party or fiscal establishment issuer of the fiscal document is directly responsible for withholding the ICMS-ST for the product that is present in the fiscal document.
-	- **Indirect**: When a third party or fiscal establishment issuer of the fiscal document has already received the product and the ICMS-ST has been withheld from its supply chain.
-	- **Own declarant**: When the receiving fiscal establishment is responsible for withholding the ICMS-ST that should have been withheld by the third party issuer, but was not.
+	- **Direct** - When a third-party or fiscal establishment issuer of the fiscal document is directly responsible for withholding the ICMS-ST for the product that is present in the fiscal document.
+	- **Indirect** - When a third-party or fiscal establishment issuer of the fiscal document has already received the product and the ICMS-ST has been withheld from its supply chain.
+	- **Own declarant** - When the receiving fiscal establishment is responsible for withholding the ICMS-ST that should have been withheld by the third-party issuer, but was not.
 	
 - The ICMS-ST collection payment mode:
 		
-	- **State document of collection**: When the ICMS-ST is withheld through the regular ICMS-ST tax assessment and payment occurs after the end of the transaction period.
-	- **GNRE**: When the receiving fiscal document is accompanied by a GNRE that shows the due ICMS-ST was already withheld and paid by the fiscal document issuer when the document was generated.
+	- **State document of collection** - When the ICMS-ST is withheld through the regular ICMS-ST tax assessment and payment occurs after the end of the transaction period.
+	- **GNRE** - When the receiving fiscal document is accompanied by a GNRE that shows the due ICMS-ST was already withheld and paid by the fiscal document issuer when the document was generated.
 	
-- The ICMS-ST collection payment number: The number of GNRE used to settle the ICMS-ST payment amount by the fiscal document issuer.
+- The ICMS-ST collection payment number: 
+	- The number of GNRE used to settle the ICMS-ST payment amount by the fiscal document issuer.
 
-When a fiscal document line that includes a product that is subject to ICMS-ST on the receiving destination, the withholding of the ICMS-ST will be determined by looking at the taxation code of the ICMS-ST in the receiving fiscal document. This is compared with the equivalent ICMS-ST line in the NF-e XML issued by the sender of the fiscal document.
+When a fiscal document line that includes a product that is subject to ICMS-ST on the receiving destination, the withholding of the ICMS-ST will be determined by reviewing the taxation code of the ICMS-ST in the receiving fiscal document. This is compared with the equivalent ICMS-ST line in the NF-e XML issued by the sender of the fiscal document.
 
 ![GSTINs attached to a tax registration group with indirect taxation code](media/complementary-info-figure-01.PNG)
 
 ![GSTINs attached to a tax registration group with direct taxation code](media/complementary-info-figure-02.PNG)
 
-Nevertheless, a default value for the field, **Responsible for withholding the ICMS-ST** can be set up by completing the following steps.
+A default value for the **Responsible for withholding the ICMS-ST** field can be set up by completing the following steps.
 
 1. Go to **Tax** > **Set up** > **Sales tax** > **Responsible for withholding the ICMS-ST**.
 2. In the **CFOP Code** field, select **Table**, **Group**, or **All**.
