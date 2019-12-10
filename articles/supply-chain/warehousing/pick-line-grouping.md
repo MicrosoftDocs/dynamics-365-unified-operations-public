@@ -91,48 +91,57 @@ Pick line grouping allows multiple work lines that have the same item and locati
 
 ### Create picking work
 
-Before pick line grouping can be done, some eligible outbound work must be created.
+Before pick line grouping can be set up, some eligible outbound work must be created.
 
-Go to **Sales and Marketing > Sales orders > All sales orders**. Click New to create a new sales order. Pick any customer. In the _General_ section specify Warehouse 51.
+1. Go to **Sales and Marketing > Sales orders > All sales orders**.
 
-1. Sales order 1:
-  1. Line 1 – Item M9200, 3 ea
-  2. Line 2 – Item M9201, 3 ea
-  3. Line 3 – Item M9202, 2 ea
-  4. Line 4 – Item M9200, 1 ea
-  5. Line 5 – Item M9200, 3 ea
-  6. Line 6 – Item M9202, 7 ea
+1. Click **New** to create a new sales order. 
 
-Total quantities are therefore:
+1. In the **Customer account** field, select any customer. 
 
-- --Item M9200, 7 ea
-- --Item M9201, 3 ea
-- --Item M9202, 9 ea
+1. On the **General** FastTab, in the **Warehouse** field, select **51** and then click **Ok**.
 
-Before releasing the orders to warehouse, ensure there is enough inventory on the pick locations for all the items on the orders. Review the Location Directive setting to be sure what picking locations are used for sales order picking.
+1. Under **Sales order lines**, add six lines with the selections:
+  1. Line 1: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
+  2. Line 2: in the **Item number** field, select **M9201**. In the **Quantity** field, enter **3**. 
+  3. Line 3: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **2**. 
+  4. Line 4: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **1**. 
+  5. Line 5: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
+  6. Line 6: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **7*. 
 
-Reserve the inventory and Release it to warehouse. Work ID with 6 lines should have been created, sorted by Item number.
+  The total quantities are:
+  - Item M9200, 7 each
+  - Item M9201, 3 each
+  - Item M9202, 9 each
+
+1. Before releasing the orders to the warehouse, you need to ensure there is enough inventory on the pick locations for all the items on the orders. Review the **Location directive** setting to see which picking locations are used for sales order picking.
+
+1. Reserve the inventory and release it to the warehouse. A Work ID with six lines is created, sorted by **Item number**.
 
 ### Mobile device flow execution
 
-Enter mobile device and select the menu where the new mobile device menu item is located.
+1. On the mobile device, select the menu where the new mobile device menu item is located.
 
-Select the _Sales Pick – Group line_menu item and initiate the pick. After selecting the menu and entering the Work ID, the user will be presented with the Pick step where all Pick lines for Item M9200 will be grouped. The user is therefore instructed to pick 7ea of Item M9200. Confirm the Pick step. Navigate to the client screen of the Work in process and you can observe that all three Pick lines for Item M9200 have now been closed simultaneously.
+1. Select the **Sales Pick – Group line** menu item and initiate the pick.
 
-Next, Work line 4 is presented for the user. Confirm the pick and continue further.
+1. After selecting the menu and entering the work ID, you will see the pick step where all pick lines for item M9200 are grouped. You will receive an instruction to pick 7 each of item M9200.
 
-Last Pick step on the mobile device will aggregate the last two Pick lines from the Work order. Proceed with completing the Pick step in one go for 9 ea of Item M9202.
+1. Confirm the pick step. 
 
-Confirm the Put step and any further Pick/Put pairs to complete the Work.
+1. Go to the client screen of the work in process and you can observe that all three pick lines for item M9200 have now been closed simultaneously.
 
-Appendix
+1. Work line 4 is then presented.
 
-- Work lines must be in sequence to be grouped
-- Catch weight items are not supported
+1. Confirm the pick.
 
-- If there are any catch weight items on the work, the user will receive an error before starting to pick
+1. The last pick step on the mobile device will aggregate the last two pick lines from the work order. Complete the pick step for 9 each of item M9202.
 
-- Piece picking is not supported
-- Work lines with unfinished replenishment work are not supported
+1. Confirm the put step and any further pick/put pairs to complete the work.
 
-- Over picking is not supported
+> [!NOTES]
+> - Work lines must be in sequence to be grouped.
+> - The following functionality is not supported:
+>   - Catch weight items. If there are any catch weight items on the work, you will receive an error before starting to pick.
+>   - Piece picking.
+>   - Work lines with unfinished replenishment work.
+>   - Over picking is not supported.
