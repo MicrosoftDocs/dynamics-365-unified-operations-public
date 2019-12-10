@@ -102,17 +102,17 @@ Before pick line grouping can be set up, some eligible outbound work must be cre
 4. On the **General** FastTab, in the **Warehouse** field, select **51** and then click **Ok**.
 
 5. Under **Sales order lines**, add six lines with the selections:
-  1. Line 1: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
-  2. Line 2: in the **Item number** field, select **M9201**. In the **Quantity** field, enter **3**. 
-  3. Line 3: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **2**. 
-  4. Line 4: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **1**. 
-  5. Line 5: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
-  6. Line 6: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **7*. 
+  - Line 1: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
+  - Line 2: in the **Item number** field, select **M9201**. In the **Quantity** field, enter **3**. 
+  - Line 3: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **2**. 
+  - Line 4: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **1**. 
+  - Line 5: in the **Item number** field, select **M9200**. In the **Quantity** field, enter **3**.
+  - Line 6: in the **Item number** field, select **M9202**. In the **Quantity** field, enter **7*. 
 
   The total quantities are:
    - Item M9200, 7 each
    - Item M9201, 3 each
-    - Item M9202, 9 each
+   - Item M9202, 9 each
 
 6. Before releasing the orders to the warehouse, you need to ensure there is enough inventory on the pick locations for all the items on the orders. Review the **Location directive** setting to see which picking locations are used for sales order picking.
 
