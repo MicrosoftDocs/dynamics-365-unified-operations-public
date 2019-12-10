@@ -2,10 +2,10 @@
 # required metadata
 
 title: NUMBERFORMAT ER function
-description: This topic explains how the NUMBERFORMAT ER function is used
+description: This topic provides information about how the NUMBERFORMAT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,8 +34,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMBERFORMAT` function returns a *String* representation of the specified number in the specified format and an optionally specified [culture](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). (For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and
-[custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx)).
+The `NUMBERFORMAT` function returns a *String* representation of the specified number in the specified format and an optionally specified [culture](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and
+[custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx).
 
 ## Syntax 1
 
