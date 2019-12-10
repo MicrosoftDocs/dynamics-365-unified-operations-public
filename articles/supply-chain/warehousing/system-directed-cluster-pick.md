@@ -190,21 +190,21 @@ Before system-directed cluster picking can be set up, some eligible outbound wor
 
 Reserve the inventory and release it to the warehouse. Two different work IDs will be created, each with two pick lines.
 
-### Mobile device flow execution
+### Mobile device flow
 
-Open mobile device menu where the SD Cluster was added during the setup.
+1. On the mobile device, select the menu where the new mobile device menu item is located.
 
-Select the SD cluster menu item and initiate the pick. This will create a Cluster with two previously created Work IDs attached to it. If you had created more Work IDs, only the first two will be added to the cluster. Note that the Work IDs have been added to the Cluster in Ascending order, based on the Query setup.
+2. Select the SD cluster menu item and initiate the pick. A cluster with the two previously created work IDs attached to it is created. If you created more work IDs, only the first two will be added to the cluster. Note that the work IDs have been added to the cluster in ascending order, as defined on the query setup.
 
-After selecting the menu, you will be presented with the first pick screen. The system will aggregate all matching pick lines from the two Work IDs and ask the user to visit the pick location only once to satisfy both orders with one pick. This is done in the same fashion as with User directed cluster picking.
+3. After selecting the menu, you will see the first pick screen. The system will aggregate all matching pick lines from the two work IDs and direct you to visit the pick location only once to satisfy both orders with one pick. This is done in the same way as user-directed cluster picking.
 
-Confirm the first pick and the system will ask the worker to enter the Position name to confirm the put to each correct position.
+4. Confirm the first pick. You will then need to enter the position name to confirm the put to each correct position.
 
-Repeat this process until all items have been picked and put to the correct position.
+5. Repeat this process until all items have been picked and put to the correct position.
 
-The last step on the mobile device is to Put the Cluster to the final location. As this is confirmed, the cluster will be closed and broken due to the &#39;Break cluster at&#39; setting on the Cluster profile. Work IDs will also be closed.
+6. The last step on the mobile device is to put the cluster to the final location. When this is confirmed, the cluster is closed and broken, as defined in the **Break cluster at** setting on the cluster profile. Work IDs are also closed.
 
-&#39;Cluster complete&#39; message will be shown on the mobile device.
+7. A "cluster complete" message is now displayed on the mobile device.
 
-- --If enough additional Work IDs were created beforehand, new Cluster will be created automatically.
-- --If not,enough additional Work IDs were created, &#39;Not enough work can be found for cluster&#39; message will be shown on the mobile device.
+> [!NOTE]
+> If enough additional work IDs were created beforehand, the new cluster will be created automatically. If not, a message with "Not enough work can be found for cluster" will be displayed.
