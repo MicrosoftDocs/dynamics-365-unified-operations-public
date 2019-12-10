@@ -36,110 +36,107 @@ This topic describes the publish groups feature in Microsoft Dynamics 365 Commer
 
 ## Overview
 
-E-commerce websites are constantly updated with new content throughout the year, and updates are often published in batches around busy e-commerce events such as holidays, seasonal marketing campaigns, or promotional launches. These updates often require groups of website content (pages, images, fragments, templates, etc.) to be staged, validated, and published concurrently in a single action. 
+E-commerce websites are constantly updated with new content throughout the year. Updates are often published in batches around busy e-commerce events such as holidays, seasonal marketing campaigns, or promotional launches. These updates often require that groups of website content (for examples, pages, images, fragments, and templates) be staged, validated, and published concurrently in a single action.
 
-Grouping items into logical sets that publish items together, with each set having its own lifecycle, provides many advantages to site authors. These groupings, referred to in Commerce as "publish groups," enable site authors to track sets of updates as their own configurable, testable, and publishable entities.
+The ability to group items into logical sets that publish items together, where each set has its own lifecycle, provides many advantages to site authors. In Commerce, these logical sets are known as publish groups. They let site authors track sets of updates as their own configurable, testable, and publishable entities.
 
-Authors can preview updates within a staged publish group without affecting the live site or other self-contained publish groups. Authors can then schedule the publish action to simultaneously publish all items contained within the publish group to the live site. The ability to group, preview, and schedule updates for publishing is important for many enterprise-level companies that generate considerable annual revenue around event-based site update milestones.  
+Authors can preview updates in a staged publish group without affecting the live site or other self-contained publish groups. Authors can then schedule the publish action to simultaneously publish all the items in the publish group to the live site. The ability to group, preview, and schedule updates for publishing is important for many enterprise-level companies that generate considerable annual revenue around event-based site update milestones.
 
-Slow or invalidated content rollouts can incur costs when they don't go smoothly, and publish groups provide a solution to ensure that launches are organized, validated, and published on time. Large or small, publish groups provide a valuable tool set for authors to organize and simplify ongoing site update tasks.
+Companies can incur costs from slow or invalidated content rollouts that don't go smoothly. Publish groups help guarantee that launches are organized, validated, and published on time. Whether they are large or small, publish groups provide a valuable toolset that helps authors organize and simplify ongoing site update tasks.
 
 ## When to use publish groups
 
-You can use publish groups whenever you need to stage and publish multiple documents together. For example, if your website updates content seasonally, you can create publish groups for these seasonal marketing motions. Your "Autumn Seasonal Update" publish group might contain new seasonal images, fragments with seasonal marketing messages, pages with seasonal product collections, or other seasonal website updates.  
+You can use publish groups whenever you must stage and publish multiple documents together. For example, if your website updates content every season, you can create publish groups for these seasonal marketing motions. Your "Autumn Seasonal Update" publish group might contain new seasonal images, fragments that have seasonal marketing messages, pages that include seasonal product collections, or other seasonal website updates.
 
-Another advantage of publish groups is that you can stage multiple updates in parallel. To build on the previous "Autumn Seasonal Update" example, soon after the update there might also be a specific holiday weekend content update. You could stage content for the  "Autumn Seasonal Update" publish group at the same time you are staging a subsequent "Autumn Holiday Update" publish group. Each publish group would contain its own unique set of pages, images, fragments, templates, etc. You could stage, preview, and validate these two publish groups independently, but on a concurrent timeline. Each publish group could then be scheduled to go live on your site at specific dates and times.  
+An advantage of publish groups is that you can stage multiple updates in parallel. For example, soon after the update for the "Autumn Seasonal Update" publish group, there might be a content update for a specific holiday weekend. In this case, you can stage content for the "Autumn Seasonal Update" publish group at the same time that you stage content for a subsequent "Autumn Holiday Update" publish group. Each publish group contains its own unique set of pages, images, fragments, templates, and so on. You can stage, preview, and validate these two publish groups independently but on a concurrent timeline. Each publish group can then be scheduled to go live on your site at specific dates and times.
 
-## Enable the publish group feature
+## Turn on the publish groups feature
 
-The publish groups functionality is optional and must be enabled for your site.
+The publish groups feature is optional and must be turned for your site.
 
-To enable publish groups for your site in Commerce authoring tools, follow these steps.
+To turn on the publish groups feature for your site in the Commerce authoring tools, follow these steps.
 
 1. In the left navigation pane, select **Site Settings** to expand it.
 1. Under **Site Settings**, select **Features**.
-1. Set the **Publish groups** toggle key to **On**.
+1. Set the **Publish groups** option to **On**.
 
 ## Create a publish group
 
-To create a publish group for your site in Commerce authoring tools, follow these steps.
+To create a publish group for your site in the Commerce authoring tools, follow these steps.
 
 1. In the left navigation pane, select **Publish Groups**.
 1. In the top command bar, select **New**.
-1. In the **Create Publish Group** dialog box, enter a descriptive name under **Publish Group Name**, then click **OK**.
+1. In the **Create Publish Group** dialog box, under **Publish Group Name**, enter a descriptive name. Then select **OK**.
 
 ## Set the publish group authoring context
 
-In Commerce, the default authoring context is the live site context. The live site authoring context is the default view where you can view and make changes directly to your website without using a publish group, and represents the latest direct updates to the published version of your site. You can determine that you are working in the live site authoring context if the context control (located in the left navigation pane under **Publish Groups**) displays the name **Live site**. The default name of the context control is **Live site**, otherwise it is the name of a publish group.
+In Commerce, the default authoring context is the live site context. The live site authoring context is the default view where you can view and make changes directly to your website without using a publish group. It represents the latest direct updates to the published version of your site. If the context control under **Publish Groups** in the left navigation pane shows the name **Live site**, you're working in the live site authoring context. **Live site** is the default name of the context control. Otherwise, the context control shows the name of a publish group.
 
-To work within a publish group, you must switch to the publish group authoring context for a given publish group. To set the publish group context, follow one of these steps.
+To work in a publish group, you must switch to the publish group authoring context for it. To set the publish group context, follow one of these steps.
 
-- In the left navigation pane, click on the context control located directly below **Publish Groups**, and then select the desired publish group name from the options that appear. This action will rename the context control to the name of the publish group.   
+- In the left navigation pane, select the context control directly under **Publish Groups**, and then select the name of the publish group in the list of options that appears. The context control is renamed and shows the name of the publish group.
+- In the left navigation pane, select **Publish Groups**, and then, under **Publish Groups**, select the name of the publish group. The context control is renamed and shows the name of the publish group.
 
-    — or —
+After you set your publish group authoring context, you're working in that publish group context when you preview and edit site content.
 
-- In the left navigation pane, select **Publish groups** and then under **Publish Groups** select the name of the publish group. This action will rename the context control to the name of the publish group.
-
-Once you have set your publish group authoring context, you will be operating within that publish group context when previewing and editing site content. 
-
-To return to the default live site authoring context, click on the context control and then select **Live site**.
+To return to the default live site authoring context, select the context control, and then select **Live site**.
 
 ## Add pages or other items to a publish group
 
-Once you have selected a publish group authoring context and its name appears in the context control of the left navigation pane, you can then create content just as you would in the default live site context. You can also add existing pages or other items from other publish groups or from the live site context.
+After you've selected a publish group authoring context, and the context control in the left navigation pane shows its name, you can create content just as you do in the default live site context. You can also add existing pages or other items from other publish groups, or from the live site context.
 
 To copy existing pages to a publish group, follow these steps.
 
-1. After selecting the authoring context you want to copy from, select **Pages** from the left navigation pane.
-1. Select the page you want to add to a publish group.
+1. Select the authoring context to copy from, and then, in the left navigation pane, select **Pages**.
+1. Select the page to add to a publish group.
 1. In the command bar, select **Copy to Publish group**.
-1. In the **Select a Publish Group** dialog box, select the publish group you wish to add the page to, and then click **OK**.
+1. In the **Select a Publish Group** dialog box, select the publish group to add the page to, and then select **OK**.
 
-The same steps above can be used to create or add existing customized product pages, URLs, templates, layouts, fragments, and media library assets to a publish group.
+You can use the same basic steps to create customized product pages, URLs, templates, layouts, fragments, and media library assets, or to add existing items of these types to a publish group.
 
 ## Validate a publish group
 
-To ensure that all publish group content dependencies and validations are cleared to publish, you can run validation to identify any issues that need to be addressed before you schedule a publish. 
+To make sure that all dependencies in publish group content are satisfied, and that all validations are passed, you can run validation to identify any issues that must be addressed before you schedule a publish action.
 
-To validate your publish group before scheduling, follow these steps.
+To validate your publish group before you schedule it, follow these steps.
 
 1. In the left navigation pane, select **Publish Groups**.
-1. Select the publish group you want to validate.
+1. Select the publish group to validate.
 1. In the command bar, select **Validate**.
 
-A validation check will then be run on all content in the publish group, and any issues that would prevent a successful publish will be displayed in a notification box that appears on the upper right.
+Validation is run on all content in the publish group. Any issues that will prevent a successful publish action are shown in a notification box that appears in the upper right.
 
->[!NOTE]
->Validation will always run automatically when scheduling a publish group. The command bar **Validate** functionality is helpful to identify issues to be fixed before attempting to schedule a publish group to go live.
+> [!NOTE]
+> Validation is always run automatically when a publish group is scheduled. However, the **Validate** button in the command bar is useful because it helps identify issues that you must fix before you try to schedule a publish group to go live.
 
 ## Schedule a publish group to go live
 
 To schedule a publish group to go live on your site, follow these steps.
 
 1. In the left navigation pane, select **Publish Groups**.
-1. Under **Publish Groups**, select the publish group you want to schedule.
+1. Under **Publish Groups**, select the publish group to schedule.
 1. In the command bar, select **Edit Schedule**. The **Edit Schedule** dialog box appears.
-1. Select the date and time for your publish group to go live, and then click **OK**.
+1. Select the date and time when your publish group should go live, and then select **OK**.
 
-To unschedule a publish group, follow the same steps above and click **Unschedule publish group** in the **Edit Schedule** dialog box.
+To unschedule a publish group, follow the same steps, but select **Unschedule publish group** in the **Edit Schedule** dialog box.
 
->[!NOTE]
->Very large publish groups may take up to a minute or two to complete when their scheduled time arrives. Be aware that a publish action is not instant, and that smaller publish groups will publish faster.
+> [!NOTE]
+> Very large publish groups might take up to a minute or two to be published when their scheduled time arrives. Be aware that a publish action isn't instantaneous, and that smaller publish groups will be published faster.
 
 ## Publish groups FAQ
 
-#### Q: How many items can be in a publish group?
+**How many items can be in a publish group?**
 
-A: At this time, there is a limit of 2,000 items per publish group. Be aware that very large publish groups may take several minutes to publish at their scheduled time.
+Currently, there is a limit of 2,000 items per publish group. Be aware that very large publish groups might take several minutes to be published when their scheduled time arrives.
 
-#### Q: Are publish groups like code "branches" in software development terminology?
+**Are publish groups like code "branches" in software development terminology?**
 
-A: Yes and no. Publish groups do act like branches in that they can be thought of as forked versions of your site. However, there is no concept of a merge at the individual item level. The last published item simply overwrites what was previously there, and the most recent publish always supercedes previous publishes.
+Yes and no. Publish groups can be thought of as forked versions of your site. In that way, they do act like branches. However, there is no concept of a merge at the level of individual items. The item that is published last just overwrites what previously existed, and the most recent publish action always supersedes previous publish actions.
 
-#### Q: Can I schedule two publish groups to go live at the exact same time?
+**Can I schedule two publish groups to go live at the same time?**
 
-A: No. The system will force you to stagger scheduled publish groups at least 5 minutes apart for performance and conflict reasons.
+No. For performance and conflict reasons, the system will force you to stagger scheduled publish groups at least five minutes apart.
 
-#### Q: Can I schedule omnichannel back office items such as discounts and product updates using publish groups?
+**Can I use publish groups to schedule omnichannel back-office items, such as discounts and product updates?**
 
-A: Currently publish groups functionality supports website content only, but there is awareness of the value that integration with back office merchandising scenarios would bring to omnichannel campaign launch coordination and automation.
+Currently, the publish groups feature supports only website content. However, Microsoft is aware that integration with back-office merchandising scenarios could be valuable for the coordination and automation of omnichannel campaign launches.
