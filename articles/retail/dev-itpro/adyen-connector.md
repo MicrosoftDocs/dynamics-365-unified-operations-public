@@ -40,7 +40,7 @@ This topic provides an overview of the Microsoft Dynamics 365 Payment Connector 
 
 | Term | Description |
 |---|---|
-| Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Retail (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
+| Payment connector | An extension that facilitates communication between Microsoft Dynamics 365 Commerce (and associated components) and a payment service. The connector that is described in this topic was implemented by using the standard payments software development kit (SDK). |
 | Card present | Refers to payment transactions where a physical card is presented and used on a payment terminal connector to the Dynamics 365 Point of Sale. |
 | Card not present | Refers to payment transactions where a physical card is not present, such as e-Commerce or Call Center scenarios. In these scenarios the payment related information is entered manually either on an e-Commerce website, a Call Center flow, or on the point-of-sale or payment terminal. |
 
@@ -447,7 +447,7 @@ No. Adyen payment terminals are injected with the Adyen software. Therefore, exi
 
 ### Do I need a static IP address for the Adyen payment terminal?
 
-Yes. Modern POS requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the Retail client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
+Yes. Modern POS requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the Commerce client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
 
 ### Can I use my merchant bank?
 
