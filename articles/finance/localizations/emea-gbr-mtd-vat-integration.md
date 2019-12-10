@@ -254,7 +254,7 @@ If security roles aren't defined for a web application, only a system admin can 
 
 ## Initialize the web application for interoperation with HMRC
 
-Each web application on the HMRC side has three parameters that uniquely identify it:
+Each application on HMRC's side, has three parameters that uniquely identify it:
 
 - **Client ID** – The unique identifier of the web application.
 - **Client secret** – The secret passphrase that is used to authorize the web application.
@@ -262,9 +262,15 @@ Each web application on the HMRC side has three parameters that uniquely identif
 
 These parameters are used when requests are addressed to HMRC. They must be filled in before you start the authorization process for a web application.
 
-For the sandbox application, you can manually obtain these parameters from the **Manage credentials** section of your sandbox application on the HMRC portal. Copy the parameters, and then, on the **Web applications** page in Finance (**Tax** \> **Setup** \> **Electronic messages** \> **Web applications**), select the **Sandbox HMRC** web application, and paste the parameters into the appropriate fields in the **Authorization parameters** section on the **General** FastTab.
+For the production application (**Dynamics 365 for Finance and Operations**), these parameters are delivered by Microsoft via the package of data entities and stored in the system in encrypted format. When you import predefined setup of Electronic messages functionality for MTD for VAT these parameters are imported as well, no additional manual actions are needed, once imported, the production application is ready for authorization (obtain an authorization code and access token).
 
-For the production application, these parameters are delivered via the package of data entities and stored in the system in encrypted format. When you import predefined setup of Electronic messages functionality for MTD for VAT these parameters will be imported as well, no additional manual actions are needed, once imported, the production application is ready for authorization (obtain an authorization code and access token).
+Open **Tax** > **Setup** > **Electronic messages** > **Web applications** and check that **Client ID** and **Client secret** values are filled for **Dynamics 365 for Finance and Operations**:
+
+![Sales tax inquiry](media/uk-mtd-credentials-setup.png)
+
+Don’t edit the record by changing or updating these values. You also don’t need to create a web application of production type either on HMRC side, **Dynamics 365 for Finance and Operations** application is completely ready to interoperate in live with production MTD. Next steps should be Get authorization code and Obtain access token.
+
+For the sandbox application, you can manually obtain **Client ID** and **Client secret** from the **Manage credentials** section of your sandbox application on the HMRC portal. Copy the parameters, and then, on the **Web applications** page in Finance (**Tax** \> **Setup** \> **Electronic messages** \> **Web applications**), select the **Sandbox HMRC** web application, and paste the parameters into the appropriate fields in the **Authorization parameters** section on the **General** FastTab.
 
 ## Obtain an authorization code for sandbox 
 
@@ -297,7 +303,7 @@ We recommend that you enter **read:vat write:vat** in this field, because the sa
 
 ## Obtain an authorization code for production
 
-When a company is ready to interoperate in real life with MTD for VAT, it must create an HMRC online account and link it to the Finance application by selecting **Microsoft Dynamics 365 Finance** as the software. The company will then receive credentials that are linked to its VAT registration number:
+When a company is ready to interoperate in live with MTD for VAT, it must create a HMRC  online account (Government Gateway account) unless one already exist. The company will then need to link it to the Finance and Operantions application by selecting **Microsoft Dynamics 365 Finance** as the software. The company will then obtain user credentials (User ID and password) that are linked to its VAT registration number:
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested
@@ -311,12 +317,12 @@ To work with MTD for VAT, the VAT registration number of your legal entity must 
 
 ![Sales tax inquiry](media/reg-ids-setup.png)
 
-After the company has user credentials, an authorization process can be initialized. Two steps must be done before your system is ready to interoperate with HMRC:
+After the company has user obtaind user credentials, an application of **Production** type can be authorized. Application of production type is uniquely identified by **Client ID** and **Client secret** and are provided by Microsoft (unless the company is creating their own solution for any Dynamics AX version). The following steps must be done on Finance and Operations side to authorize the application of Production type: :
 
-- Get an authorization code.
-- Get an access token.
+- Get authorization code.
+- Get access token.
 
-To get an authorization code from HMRC, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize, and select **Get authorization code**. Select **OK** to confirm that you want to initialize the authorization process. On the **Electronic report parameters** page, set the **Scope** field. The following values are allowed by HMRC:
+To get an authorization code from HMRC, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize (Dynamics 365 for Finance and Operations), and select **Get authorization code**. Select **OK** to confirm that you want to initialize the authorization process. On the **Electronic report parameters** page, set the **Scope** field. The following values are allowed by HMRC:
 
 - read:vat
 - write:vat
