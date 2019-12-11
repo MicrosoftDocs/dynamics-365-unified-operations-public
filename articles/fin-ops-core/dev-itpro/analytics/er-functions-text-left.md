@@ -2,7 +2,7 @@
 # required metadata
 
 title: LEFT ER function
-description: This topic provides information about how the LEFT ER function is used.
+description: This topic provides information about how the LEFT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/11/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LEFT">LEFT Function</a>
+# <a name="LEFT">LEFT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `LEFT` function returns a *String* value as the specified number of characters from the start of the specified string.
+The `LEFT` function returns a *String* value that presents the specified number of characters from the start of the specified string.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ LEFT (text, number)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A *String* value of the original text.
+A *String* value that represents the original text.
 
-`number` : *Integer*
+`number`: *Integer*
 
-The number of characters to be returned from the start of the original text.
+The number of characters that must be returned from the start of the original text.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`LEFT ("Sample", 3)` returns "Sam".
+`LEFT ("Sample", 3)` returns **"Sam"**.
 
 ## Additional resources
 
