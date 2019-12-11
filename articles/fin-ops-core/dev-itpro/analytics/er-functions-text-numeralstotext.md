@@ -2,7 +2,7 @@
 # required metadata
 
 title: NUMERALSTOTEXT ER function
-description: This topic provides information about how the NUMERALSTOTEXT ER function is used.
+description: This topic provides information about how the NUMERALSTOTEXT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMERALSTOTEXT">NUMERALSTOTEXT Function</a>
+# <a name="NUMERALSTOTEXT">NUMERALSTOTEXT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMERALSTOTEXT` function returns a *String* representation of the specified number after it has been convered to text strings and spelled out in the specified language.
+The `NUMERALSTOTEXT` function returns the specified number as a *String* value after it has been spelled out (that is, converted to text strings) in the specified language.
 
 ## Syntax
 
@@ -44,40 +44,40 @@ NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal po
 
 ## Arguments
 
-`number` : *Integer* or *Real*
+`number`: *Integer* or *Real*
 
-A numeric value of the specified number that must be spelled out.
+A numeric value that specifies the number that must be spelled out.
 
-`language` : *String*
+`language`: *String*
 
-A *String* value representing the language code.
+A *String* value that represents the language code.
 
-`currency` : *String*
+`currency`: *String*
 
-A *String* value representing the currency code.
+A *String* value that represents the currency code.
 
-`print currency name flag` : *Boolean*
+`print currency name flag`: *Boolean*
 
-A *Boolean* value to indicate whether a currency name must be added to the spelled-out text.
+A *Boolean* value that indicates whether a currency name must be added to the spelled-out text.
 
-`decimal points` : *Integer*
+`decimal points`: *Integer*
 
-An *Integer* value to indicate the number of decimals for the spelled-out text.
+An *Integer* value that indicates the number of decimal places that the spelled-out text should have.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Usage notes
 
-The language code is optional. When it's defined as an empty string, the language code for the running context is used. The default language code is EN-US. The language code for the running context is defined in a **Folder** or **File** element of the ER format that is running.
+The language code is optional. If it's defined as an empty string, the language code for the running context is used. The default language code is **EN-US**. The language code for the running context is defined in a **Folder** or **File** element of the Electronic reporting (ER) format that is running.
 
-The currency code is optional. When it's defined as an empty string, the company currency for the running context is used.
+The currency code is optional. If it's defined as an empty string, the company currency for the running context is used.
 
 > [!NOTE] 
-> The **print currency name flag** and **decimal points parameters** are analyzed only for the following language codes: CS, ET, HU, LT, LV, PL, and RU. Additionally, the **print currency name flag** parameter is only analyzed for companies where the country's or region's context supports declension of currency names.
+> The `print currency name flag` and `decimal points` arguments are analyzed only for the following language codes: **CS**, **ET**, **HU**, **LT**, **LV**, **PL**, and **RU**. Additionally, the `print currency name flag` argument is analyzed only for companies where the country's or region's context supports declension of currency names.
 
 ## Example 1
 
