@@ -457,6 +457,14 @@ If, for some reason, you must regenerate a VAT return in JSON format before it's
 
 When a VAT return in JSON format is generated and ready to be submitted to HMRC, you can initialize its submission to the MTD for VAT web application. The last JSON file that was attached to the electronic message will be used for the submission. To avoid any discrepancy, we recommended that you delete any unnecessary JSON files that are attached to the electronic message that you will submit to HMRC. To find and clean up unnecessary attachments, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. The **Attachments** page for the selected message is opened.
 
+> [!IMPORTANT]
+>
+> Before you start VAT return submission to HMRC, it is important to make sure that **JSON** file type is defined in **File types** in **Document management parameters**. Open **Organization administration** > **Document management** > **Document management parameters** page, select **File types** and check if **JSON** is in the list of **File types**:
+>
+> ![JSON File type setup](media/uk-mtd-json-file-type-setup.png)
+
+If JSON is not in the list of file types, add it to the list.
+
 To start submission, go to **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for real-life interoperation with the production HMRC web application). On the **Messages** FastTab, select the electronic message record that is related to the period that you want to submit the VAT return for, and then select **Send report**. The **Send report** button is available only for electronic messages that have the following statuses:
 
 - **Generated VAT return** – The electronic message status is automatically updated to this value when a VAT return in JSON format is successfully generated and attached to the electronic message.
