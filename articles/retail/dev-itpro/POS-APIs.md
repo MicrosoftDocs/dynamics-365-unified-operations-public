@@ -68,14 +68,14 @@ Use the following steps to consume Retail APIs in your extensions.
 2.  Import the client entities and proxy entities if required.
 
     ```Typescript
-        import { ClientEntities } from "PosApi/Entities";
+    import { ClientEntities } from "PosApi/Entities";
 
-        import { ProxyEntities } from "PosApi/Entities";
+    import { ProxyEntities } from "PosApi/Entities";
     ```
 3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
     ```Typescript
-        executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
+    executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
     ```
 
     For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
