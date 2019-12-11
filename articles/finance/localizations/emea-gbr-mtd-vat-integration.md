@@ -274,7 +274,7 @@ For the sandbox application, you can manually obtain **Client ID** and **Client 
 
 ## Obtain an authorization code for production
 
-When a company is ready to interoperate in live with MTD for VAT, it must create a HMRC  online account (Government Gateway account) unless one already exist. The company will then need to link it to the Finance and Operantions application by selecting **Microsoft Dynamics 365 Finance** as the software. The company will then obtain user credentials (User ID and password) that are linked to its VAT registration number:
+When a company is ready to interoperate in live with MTD for VAT, it must create a HMRC  online account (Government Gateway account) unless one already exist. The company will then need to link it to the Finance and Operantions application by selecting **Microsoft Dynamics 365 Finance and Operations** as the software. The company will then obtain user credentials (User ID and password) that are linked to its VAT registration number:
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested
