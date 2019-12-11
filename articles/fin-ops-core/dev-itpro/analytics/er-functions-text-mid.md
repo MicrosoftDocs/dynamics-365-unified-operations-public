@@ -2,7 +2,7 @@
 # required metadata
 
 title: MID ER function
-description: This topic provides information about how the MID ER function is used.
+description: This topic provides information about how the MID Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="MID">MID Function</a>
+# <a name="MID">MID ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-Starting at the specified string position, the `MID` function returns a *String* value of the specified number of characters from the specified string.
+The `MID` function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position.
 
 ## Syntax
 
@@ -44,33 +44,33 @@ MID (text, starting position, number of characters)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A *String* value of the specified text.
+A *String* value that specifies the text to return characters from.
 
-`starting position` : *Integer*
+`starting position`: *Integer*
 
-An *Integer* that specifies the position of the first character that must be returned.
+An *Integer* value that specifies the position of the first character that must be returned from the specified text.
 
-`number of characters` : *Integer*
+`number of characters`: *Integer*
 
-An *Integer* that specifies the number of characters, beginning with the specified starting position, to be returned from the specified text.
+An *Integer* value that specifies the number of characters that must be returned, starting at the specified starting position.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Usage notes
 
-If the value of the starting position is less than zero, the returned characters counting will start from the first position.
+If the value of the `starting position` argument is less than 0 (zero), the characters that are returned are counted from the first position in the specified string.
 
-If the value of the starting position is greater than the length of the specified string, the empty string is returned.
+If the value of the `starting position` argument exceeds length of the specified string, an empty string is returned.
 
 ## Example
 
-`MID ("Sample", 2, 3)` returns "amp".
+`MID ("Sample", 2, 3)` returns **"amp"**.
 
 ## Additional resources
 
