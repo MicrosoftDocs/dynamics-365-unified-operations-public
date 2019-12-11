@@ -2,7 +2,7 @@
 # required metadata
 
 title: NUMBERFORMAT ER function
-description: This topic provides information about how the NUMBERFORMAT ER function is used.
+description: This topic provides information about how the NUMBERFORMAT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NUMBERFORMAT">NUMBERFORMAT Function</a>
+# <a name="NUMBERFORMAT">NUMBERFORMAT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `NUMBERFORMAT` function returns a *String* representation of the specified number in the specified format and an optionally specified [culture](https://docs.microsoft.com/en-us/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and
+The `NUMBERFORMAT` function returns a *String* value that presents the specified number in the specified format and in an optionally specified [culture](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes). For information about the supported formats, see [standard](https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx) and
 [custom](https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx).
 
 ## Syntax 1
@@ -51,35 +51,35 @@ NUMBERFORMAT (number, format, culture)
 
 ## Arguments
 
-`number` : *Integer* or *Real*
+`number`: *Integer* or *Real*
 
-A numeric value of the specified number that must be formatted.
+A numeric value that specifies the number that must be formatted.
 
 `format` : *String*
 
-A *String* value representing the specified format.
+A *String* value that represents the format.
 
-`culture` : *String*
+`culture`: *String*
 
-A *String* value representing the culture for formatting.
+A *String* value that represents the culture to use for formatting.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Usage notes
 
-When the culture is not defined as an argument of the called function, the context that this function is run in determines the culture that is used to format numbers.
+If the culture isn't defined as an argument of the called function, the context that this function is run in determines the culture that is used to format numbers.
 
 ## Example 1
 
-For the **EN-US** culture, `NUMBERFORMAT (0.45, "p") returns "45.00 %". NUMBERFORMAT (10.45, "#")` returns "10".
+For the **EN-US** culture, `NUMBERFORMAT (0.45, "p")` returns **"45.00 %"**, and `NUMBERFORMAT (10.45, "#")` returns **"10"**.
 
 ## Example 2
 
-`NUMBERFORMAT (10/3, “F2”, "de")` returns 3,33 while `NUMBERFORMAT (10/3, “F2”, "en-us")` returns 3.33.
+`NUMBERFORMAT (10/3, "F2", "de")` returns **3,33**, whereas `NUMBERFORMAT (10/3, "F2", "en-us")` returns **3.33**.
 
 ## Additional resources
 
