@@ -1082,9 +1082,11 @@ Any previously published versions of the ER configurations can be used.
 
 This hotfix introduces filtering by additional fields to help prevent unexpected tax transactions from appearing on the report.
 
-The hotfix is delivered in version 31.32 of the "Tax declaration model mapping" configuration.
+The hotfix is delivered in ER configuration:
 
-This version of the configuration can be imported into any version of the application that is sufficient for the previous version of this configuration (31.30).
+- Tax declaration model mapping.version.**31.32**
+
+This version of the ER configuration can be imported into any version of the application that is sufficient for the previous version of this configuration (31.30).
 
 ### Hotfix "UK Making tax digital: JSON and Excel format wrongly report Box3 amount for non-zero use tax transactions for services" (KB 4505110)
 
@@ -1101,7 +1103,7 @@ These versions of the configurations can be imported into any version of the app
 
 This change is related to a case where the VAT declaration (Excel and JSON formats) doesn't report tax-free purchases.
 
-The UK MTD VAT ReportFieldLookup v2.zip file that contains the example of application-specific parameters is updated for this type of scenario and is published on LCS.
+The **UK MTD VAT ReportFieldLookup v2.zip** file that contains the example of application-specific parameters is updated for this type of scenario and is published on LCS.
 
 For more details, see the KB at <https://support.microsoft.com/help/4514862>.
 
@@ -1113,9 +1115,9 @@ This update supports requirements that HMRC introduced to supply compulsory head
 
 In the scope of this update, the following ER configurations are released:
 
-- Electronic Messages framework model.version.22
-- MTD VAT model mapping.version.22.25
-- MTD VAT web request headers format (UK).version.22.13
+- Electronic Messages framework model.version.**22**
+- MTD VAT model mapping.version.**22.25**
+- MTD VAT web request headers format (UK).version.**22.13**
 
 These versions of the ER configurations must be imported and used in the following versions of the application or later versions.
 
@@ -1131,12 +1133,12 @@ For version 7.3, KB \#4504462 must be installed.
 
 In the scope of this update, the following ER formats are delivered without any **ISO country/region code** parameter:
 
-- MTD VAT return response importing JSON (UK).version.19.10
-- MTD VAT import token format (UK).version.19.8
-- MTD VAT web request headers format (UK).version.22.22
-- MTD VAT authorization format (UK).version.19.7
-- MTD VAT interoperation (UK).version.31.8
-- MTD VAT obligations importing JSON (UK).version.31.9
+- MTD VAT return response importing JSON (UK).version.**19.10**
+- MTD VAT import token format (UK).version.**19.8**
+- MTD VAT web request headers format (UK).version.**22.22**
+- MTD VAT authorization format (UK).version.**19.7**
+- MTD VAT interoperation (UK).version.**31.8**
+- MTD VAT obligations importing JSON (UK).version.**31.9**
 
 When these versions of the formats or later versions are used, the MTD for VAT feature can be set up and used in legal entities that have a primary address in any country or region.
 
@@ -1163,15 +1165,15 @@ This update supplements the previously delivered scope of the fraud prevention p
 
 In the scope of this update, the following ER configurations are released:
 
-- Electronic Messages framework model.version.24
-- MTD VAT model mapping.version.24.31
-- MTD VAT web request headers format (UK).version.24.24
+- Electronic Messages framework model.version.**24**
+- MTD VAT model mapping.version.**24.31**
+- MTD VAT web request headers format (UK).version.**24.24**
 
 These versions of the ER configurations must be imported and used on the following versions of the application or later versions.
 
 | Version | Check-in build |
 |---------|----------------|
-| 10.0.5  | 10.0.197.14    |
+| **10.0.5**  | 10.0.**197.14**    |
 
 For version 7.3, KB \#4513878 must be installed.
 
@@ -1181,7 +1183,7 @@ This hotfix fixes an issue where the JSON and Excel formats wrongly report the B
 
 The hotfix is delivered in the following versions of ER configurations:
 
-<un><li>Tax declaration model mapping.version.**31.34**</li></un>
+- Tax declaration model mapping.version.**31.34**
 
 This versions of the configurations can be imported into any version of the application that is sufficient for the initial versions of these configurations.
 
@@ -1217,9 +1219,9 @@ This hotfix fixes an issue where the JSON and Excel formats wrongly report the B
 
 The hotfix is delivered in the following versions of ER configurations:
 
-<un><li>Tax declaration model mapping.version.**32.37**</li></un>
+- Tax declaration model mapping.version.**32.37**
 
-This versions of the configurations can be imported into any version of Finance and Operations starting from **version 10.0.7 or later**.For version 7.3 the KB #4513052 must be installed.
+This versions of the configurations can be imported into any version of Finance and Operations starting from **version 10.0.7 or later**. For version 7.3 the KB \#4513052 must be installed.
 
 ### Hotfix "MTD VAT declaration in JSON and Excel formats shows incorrect shows wrong information with reverse charge credit note" (KB 4530861)
 
@@ -1227,7 +1229,7 @@ This hotfix delivers the fix released previously (KB 4525191) for Model of versi
 
 The hotfix is delivered in the following versions of ER configurations:
 
-<un><li>Tax declaration model mapping **(servicing)**.version.**31.34.1**</li></un>
+- Tax declaration model mapping **(servicing)**.version.**31.34.1**
 
 **“Tax declaration model mapping (servicing).version.31.34.1”** model mapping configuration should be used until your Finance and Operations application will be updated to version 10.0.7 or higher for which the issue is fixed starting from “Tax declaration model mapping version 32.37”.
 
