@@ -510,7 +510,7 @@ To prepare electronic reporting configurations for generation of the common VAT 
 Starting from these versions, Tax declaration model, model mapping and both formats for the UK VAT return support cross-company tax transactions data sources and can be used to aggregate data from several legal entities. These configurations can still be used to report VAT return from just one legal entity.
 
 > [!**Important note**:] 
-> Finance and Operations of version 10.0.7 or later supports these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
+> Finance and Operations of **version 10.0.7 or later supports** these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
 
 To use the formats for reporting of VAT return of a groups of several legal entities, you must set up Application specific parameters ***for each of the legal entities included into the group***:
 
@@ -1166,3 +1166,48 @@ These versions of the ER configurations must be imported and used on the followi
 | 10.0.5  | 10.0.197.14    |
 
 For version 7.3, KB \#4513878 must be installed.
+
+### Hotfix "MTD VAT declaration in JSON and Excel formats shows incorrect Box 1 and Box 6 when credit note on vendor invoice is posted with reverse charge" (KB 4517350)
+
+This hotfix fixes an issue where the JSON and Excel formats wrongly report the Boxes 1 and 6 amount when credit note on vendor invoice is posted with reverse charge.
+
+The hotfix is delivered in the following versions of ER configurations:
+
+<un><li>Tax declaration model mapping.version.**31.34**</li></un>
+
+This versions of the configurations can be imported into any version of the application that is sufficient for the initial versions of these configurations.
+
+### VAT return report creation for companies reporting as VAT group within the same system database
+
+The update provides possibility to collect a common summarized VAT return basing on tax transactions posted in several Legal entities in Finance and Operations. It is assumed that all the tax transactions for VAT return are in the same system using the same data base and it is supposed that tax transactions include all the information necessary for VAT return of the United Kingdom and preliminary VAT 100 report is correctly generated as for the VAT return in each legal entity involved into the summarized VAT return.
+
+The **"VAT return report creation for companies reporting as VAT group within the same system database"** is supported in Finance and Operations starting from **version 10.0.7 or later**. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
+
+Following versions of Electronic reporting configurations must imported and used for this feature:
+
+| GER configuration name, version          | Description |
+|------------------------------|--------------------------|
+| Tax declaration model.version.**32** | Generic model for different tax declarations |
+| Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations |
+| MTD VAT returns exporting JSON (UK).version.**32.27** | VAT return in JSON format for submission to MTD HMRC |
+| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | VAT 100 report - declaration in Excel format |
+
+### "Hotfix MTD tax declaration does not report sales on box 6 when tax is set with reverse charge + exempt (Building and Construction services)" (KB 4525191)
+
+This hotfix fixes an issue where the JSON and Excel formats wrongly report the Box 6 amount tax is set with reverse charge + exempt (Building and Construction services).
+
+The hotfix is delivered in the following versions of ER configurations:
+
+<un><li>Tax declaration model mapping.version.**32.37**</li></un>
+
+This versions of the configurations can be imported into any version of Finance and Operations starting from **version 10.0.7 or later**.For version 7.3 the KB #4513052 must be installed.
+
+### Hotfix "Making tax Digital preview report shows wrong information with reverse charge credit note" (KB 4530861)
+
+This hotfix delivers the fix released previously (KB 4525191) for Model of version 32 which contains dependency on Finance and Operation version (10.0.7) but for the previouse version of the model (31) with no dependency on Finance and Operations application version. This make it possible to fix the issue on all the application versions lower then 10.0.7.
+
+The hotfix is delivered in the following versions of ER configurations:
+
+<un><li>Tax declaration model mapping **(servicing)**.version.**31.34.1**</li></un>
+
+**“Tax declaration model mapping (servicing).version.31.34.1”** model mapping configuration should be used until your Finance and Operations application will be updated to version 10.0.7 or higher for which the issue is fixed starting from “Tax declaration model mapping version 32.37”.
