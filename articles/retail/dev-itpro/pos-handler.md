@@ -177,13 +177,13 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 7.  In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.
 
-	```
+    ```
     export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }
 	```
 	
 8.  Implement the executeAsync method inside the GetSerialNumberClientRequestHandlerExt class. In the executeAsync method, you can write your custom logic and return the response or call the default handler. When POS sells the serial item, it will look for executeAsync to execute the logic for the serial number, however because we are overriding it, POS will now execute this overridden executeAsync method instead of the standard method.
 
- ## Sample implementation of how to override the executeAsync method
+	**Sample implementation of how to override the executeAsync method**
 
 	```typescript
 	public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
@@ -209,8 +209,8 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 	}
 	```
-	
-   Full sample code:
+
+	Full sample code:
 
 	```typescript
 	/**
@@ -261,7 +261,7 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 10.  In the manifest.json file, copy and paste the following code. Be sure to delete the default generated code before copying this code.
 
-	```typescript
+    ```typescript
 	{
 	"$schema": "../manifestSchema.json",
 	"name": "Pos_Extensibility_Samples",
