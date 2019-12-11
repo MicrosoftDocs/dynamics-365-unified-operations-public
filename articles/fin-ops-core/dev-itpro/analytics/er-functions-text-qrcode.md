@@ -2,7 +2,7 @@
 # required metadata
 
 title: QRCODE ER function
-description: This topic provides information about how the QRCODE ER function is used.
+description: This topic provides information about how the QRCODE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="QRCODE">QRCODE Function</a>
+# <a name="QRCODE">QRCODE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `QRCODE` function returns a *Container* value of the Quick Response Code (QR code) image in binary format for the specified string.
+The `QRCODE` function returns a *Container* value that presents the Quick Response code (QR code) image for the specified string in binary format.
 
 ## Syntax
 
@@ -44,22 +44,19 @@ QRCODE (text)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A *String* value representing the original text.
+A *String* value that represents the original text.
 
-## Returns
+## Return values
 
 *Container*
 
-The result binary stream.
+The resulting binary stream.
 
 ## Example
 
-You can add the `QRCODE ("Sample text")` expression as a binding of a **Cell** element of an ER format containing a template that is bound to either an image (for a template in Excel format) or to a picture content control (for a
-template in Word format) as a placeholder of the QR code image. When such ER format is executed, the generated document will contain the corresponding QR code image in its placeholder in using template. For more information, see [Embed images and shapes in
-documents that you generate by using
-ER](electronic-reporting-embed-images-shapes.md).
+You can add the `QRCODE ("Sample text")` expression as a binding of a **Cell** element of an Electronic reporting (ER) format that contains a template that is bound to either an image (for a template in Microsoft Excel format) or a picture content control (for a template in Microsoft Word format) as a placeholder of the QR code image. Then, when the ER format is run, the generated document will contain the corresponding QR code image in the placeholder in the template. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
 ## Additional resources
 
