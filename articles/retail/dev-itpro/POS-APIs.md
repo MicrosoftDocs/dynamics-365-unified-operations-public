@@ -32,10 +32,11 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Retail POS APIs
 [!include [banner](../includes/banner.md)]
 
+This topic is applicable for Finance and Operations apps like Dynamics 365 Commerce. 
+
 Retail POS APIs help you to easily build extensions or new features to the POS app. For example, if you are extending the Retail POS application to add new features in which to want to get product details, change prices, or add items to a cart. you can consume APIs that will do the work for you. To do this, you need to simply call the APIs to do the work. The POS API simplifies the extension pattern and provides continuous support to build the extensions.
 
-Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations applications or Dynamics 365 Retail. 
-
+Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. 
 
 POS APIs are categorized into three different scenarios:
 
@@ -58,41 +59,44 @@ Use the following steps to consume Retail APIs in your extensions.
 
     For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.
 
- The pattern is import { api name } from "PosApi/Consume/Module name";
-```Typescript
- import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
-```
+     The pattern is import { api name } from "PosApi/Consume/Module name";
+
+    ```Typescript
+     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
+    ```
 
 2.  Import the client entities and proxy entities if required.
 
-```Typescript
-    import { ClientEntities } from "PosApi/Entities";
+    ```Typescript
+        import { ClientEntities } from "PosApi/Entities";
 
-    import { ProxyEntities } from "PosApi/Entities";
-```
+        import { ProxyEntities } from "PosApi/Entities";
+    ```
 3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
-```Typescript
-    executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
-```
+    ```Typescript
+        executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
+    ```
 
- For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
-```Typescript
-let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
+    For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
 
- attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
+    ```Typescript
+    let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
- attributeValue.TextValue = "Yes";
+     attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
 
- let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
+     attributeValue.TextValue = "Yes";
 
- let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
+     let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
 
-new SaveAttributesOnCartClientRequest(attributeValues);
+     let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
 
-result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+    new SaveAttributesOnCartClientRequest(attributeValues);
 
-```
+    result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+
+    ```
+
 ### Samples showing how to access APIs
 
 **Get Current cart**
