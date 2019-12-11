@@ -2,10 +2,10 @@
 # required metadata
 
 title: JSONVALUE ER function
-description: This topic explains how the JSONVALUE ER function is used
+description: This topic provides information about how the JSONVALUE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
