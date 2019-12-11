@@ -2,7 +2,7 @@
 # required metadata
 
 title: TRANSLATE ER function
-description: This topic provides information about how the TRANSLATE ER function is used.
+description: This topic provides information about how the TRANSLATE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="TRANSLATE">TRANSLATE Function</a>
+# <a name="TRANSLATE">TRANSLATE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `TRANSLATE` function returns a *String* value of the specified text replacing all or part of this text string with another string.
+The `TRANSLATE` function returns the specified text string as a *String* value after all or part of it has been replaced with another string.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ TRANSLATE (text , pattern, replacement)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A valid path to a data source of the *String* type.
+The valid path of a data source of the *String* type.
 
-`pattern` : *String*
+`pattern`: *String*
 
-A text that must be replaced.
+The text that must be replaced.
 
-`replacement` : *String*
+`replacement`: *String*
 
-A text using for replacement.
+The text to use as a replacement.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
