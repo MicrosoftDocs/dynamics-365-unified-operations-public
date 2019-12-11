@@ -2,7 +2,7 @@
 # required metadata
 
 title: REPLACE ER function
-description: This topic provides information about how the REPLACE ER function is used.
+description: This topic provides information about how the REPLACE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="REPLACE">REPLACE Function</a>
+# <a name="REPLACE">REPLACE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `REPLACE` function returns a *String* value of the specified text replacing all or part of this text string with another string.
+The `REPLACE` function returns the specified text string as a *String* value after all or part of it has been replaced with another string.
 
 ## Syntax
 
@@ -44,41 +44,41 @@ REPLACE (text, pattern, replacement, regular expression flag)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A valid path to a data source of the *String* type.
+The valid path of a data source of the *String* type.
 
-`pattern` : *String*
+`pattern`: *String*
 
-When the regular expression flag is **FALSE**, contains a text using for replacement.
+If the `regular expression flag` argument is **FALSE**, this argument contains the text to use as a replacement.
 
-When the regular expression flag is **TRUE**, contains the regular expression sequence of characters that defines a search pattern as well as a replacement text.
+If the `regular expression flag` argument is **TRUE**, this argument contains a regular expression that defines both a search pattern and the replacement text.
 
-`replacement` : *String*
+`replacement`: *String*
 
-When the regular expression flag is **FALSE**, contains a text that must be replaced.
+If the `regular expression flag` argument is **FALSE**, this argument contains the text that must be replaced.
 
-When the regular expression flag is **TRUE**, not used.
+If the `regular expression flag` argument is **TRUE**, this argument isn't used.
 
-`regular expression flag` : *Boolean*
+`regular expression flag`: *Boolean*
 
-A *Boolean* value to indicate whether a regular expression is used to perform replacement.
+A *Boolean* value that indicates whether a regular expression is used to do the replacement.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Usage notes
 
-When the specified **regular expression flag** parameter is **TRUE**, return the specified string after it has been modified by applying the regular expression that is specified as the **pattern** argument for this function. This expression is used to find characters that must be replaced.
+If the `regular expression flag` argument is **TRUE**, this function returns the specified string after it has been changed by applying the regular expression that is specified by the `pattern` argument. The regular expression is used to find the characters that must be replaced.
 
-Characters of the specified **replacement** argument are used to replace characters that are found. When the specified **regular expression flag** parameter is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md).
+The characters that are specified by the `replacement` argument are used to replace the characters that are found. If the `regular expression flag` argument is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md).
 
 ## Example 1
 
-`REPLACE ("+1 923 456 4971", "[^0-9]", "", true)` applies a regular expression that removes all non-numeric symbols, and returns **"19234564971"**. 
+`REPLACE ("+1 923 456 4971", "[^0-9]", "", true)` applies a regular expression that removes all non-numeric symbols, and it returns **"19234564971"**. 
 
 ## Example 2
 
