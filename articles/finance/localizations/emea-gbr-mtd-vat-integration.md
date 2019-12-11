@@ -509,8 +509,8 @@ To prepare electronic reporting configurations for generation of the common VAT 
 
 Starting from these versions, Tax declaration model, model mapping and both formats for the UK VAT return support cross-company tax transactions data sources and can be used to aggregate data from several legal entities. These configurations can still be used to report VAT return from just one legal entity.
 
->[!**Important note**:] 
->Finance and Operations of version 10.0.7 or later supports these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
+> [!**Important note**:] 
+> Finance and Operations of version 10.0.7 or later supports these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
 
 To use the formats for reporting of VAT return of a groups of several legal entities, you must set up Application specific parameters ***for each of the legal entities included into the group***:
 
@@ -736,13 +736,14 @@ System administration consent is available in the following versions of Electron
 | MTD VAT model mapping (UK)       | Model mapping (exporting, importing) | **27.34** |
 | MTD VAT web request headers format (UK)        | Format (exporting) | **27.24** |
 
->[!Important note:] 
->When new versions of ER configurations are imported, check that following configurations are marked as Default for model mapping:
+> [!Important note:] 
+> When new versions of ER configurations are imported, check that following configurations are marked as Default for model mapping:
+>
 > -	Tax declaration model mapping
+>
 > -	MTD VAT model mapping (UK)
 
 Electronic reporting configuration download instruction from Lifecycle Services: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs
-
 
 
 ## Using the MTD feature outside the UK
