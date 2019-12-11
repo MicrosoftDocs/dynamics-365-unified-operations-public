@@ -384,8 +384,6 @@ All the actions that are done for electronic messages are logged and can be view
 
 ### Test "Gov-Test-Scenario" for the "Retrieve VAT obligations" endpoint in the HMRC sandbox
 
-### Test "Gov-Test-Scenario" for the "Retrieve VAT obligations" endpoint in the HMRC sandbox
-
 HMRC lets you simulate different scenarios of VAT obligation retrieval on the sandbox web application. For example, "QUARTERLY\_NONE\_MET" simulates the scenario where the client has quarterly obligations, and none are fulfilled. You can find related information in the "Endpoints" paragraph of the "VAT" subscription API documentation.
 
 To try different scenarios in sandbox application, go to **Workspaces** \> **Electronic reporting** \> **Reporting configurations**, and select **MTD VAT web request headers format (UK)** under **Electronic Messages framework model**. Derive a new child format configuration under **MTD VAT web request headers format (UK)**, and open it in the designer. Find the **File** \> **JSON Object** \> **Gov-Test-Scenario** property, expand it, and select **String** under it. Define the scenario that you want to test as the **String** value.
@@ -403,9 +401,6 @@ Save and complete the format. To enable the system to use the new format (where 
 Change the **Gov-Test-Scenario** property in the new format for all the scenarios that you want to test. Clean up the **Gov-Test-Scenario** property in the format, and complete it when you've finished testing.
 
 ## Collect data for VAT return
-
-## Collect data for VAT return
-
 
 The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview).
 
