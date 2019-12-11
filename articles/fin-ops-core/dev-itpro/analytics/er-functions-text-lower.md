@@ -2,7 +2,7 @@
 # required metadata
 
 title: LOWER ER function
-description: This topic provides information about how the LOWER ER function is used.
+description: This topic provides information about how the LOWER Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/11/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LOWER">LOWER Function</a>
+# <a name="LOWER">LOWER ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `LOWER` function returns the specified string as a *String* value after it has been converted to lowercase letters.
+The `LOWER` function returns the specified text string as a *String* value after it has been converted to lowercase letters.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ LOWER (text)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A *String* value of the specified text.
+A *String* value that specifies the text.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`LOWER ("Sample")` returns “sample”.
+`LOWER ("Sample")` returns **"sample"**.
 
 ## Additional resources
 
