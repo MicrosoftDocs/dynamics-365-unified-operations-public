@@ -99,21 +99,26 @@ For more information, see: [OData actions that are bound to entities](https://do
 
 There are built-in operators for $filter:
 
-- Equals
-- Not equals
-- Greater than
-- Greater than or equal
-- Less than
-- Less than or equal
+- Equals (eq)
+- Not equals (ne)
+- Greater than (gt)
+- Greater than or equal (ge)
+- Less than (lt)
+- Less than or equal (le)
 - And
 - Or
 - Not
-- Addition
-- Subtraction
-- Multiplication
-- Division
+- Addition (add)
+- Subtraction (sub)
+- Multiplication (mul)
+- Division (div)
+- Decimal division (divby)
+- Modulo (mod)
+- Precedence grouping ({ })
 
 You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+
+The operators 'has' and 'in' are not supported.
 
 For more information, see [OData operators](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096).
 
