@@ -716,7 +716,36 @@ If for some reason a company decides to address requests to the HMRC without tra
 
 When at least one fraud prevention header about the originating device is enabled, the list of all parameters that were defined during the request to the HMRC API is shown. However, only the enabled parameters are transmitted as part of the request. 
 
-### Using the MTD feature outside the UK
+## System administrator consent is required to allow fraud prevention headers transmission to HMRC 
+
+To prevent frauds, HMRC requires on mandatory bases to transmit additional information (fraud prevention parameters) collected from the user devices used to submit VAT requests. Fraud prevention parameters are used to uniquely identify all request to VAT APIs for HMRC.
+
+System administrator of the company transmitting VAT data together with fraud prevention parameters must consent once for each web application used for interoperation with VAT APIs of HMRC to further transmit data collected from the user devices used to submit VAT request.
+
+The change is supported in Finance and Operations starting from **version 10.0.8**:
+
+| Dynamics 365 for Finance and Operations version | Build number                                              |
+|-----------------------------------------|----------------------------------------------------------|
+| 10.0.8       | 10.0.**314.0** |
+
+System administration consent is available in the following versions of Electronic reporting configurations (can be imported for application of version mentioned in the table above (Electronic configurations table) or later):
+
+| GER configuration name | Type | Version |
+|------------------------|------|---------|
+| Electronic Messages framework model       | **Model** | **27** |
+| MTD VAT model mapping (UK)       | Model mapping (exporting, importing) | **27.34** |
+| MTD VAT web request headers format (UK)        | Format (exporting) | **27.24** |
+
+>[!Important note:] 
+>When new versions of ER configurations are imported, check that following configurations are marked as Default for model mapping:
+> -	Tax declaration model mapping
+> -	MTD VAT model mapping (UK)
+
+Electronic reporting configuration download instruction from Lifecycle Services: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs
+
+
+
+## Using the MTD feature outside the UK
 
 A company that is registered for VAT in the territory of the UK might have a primary address that is outside the UK. To simplify adoption of the MTD for VAT feature in legal entities that have a primary address outside the UK, the following ER formats are delivered without any **ISO country/region code** parameter:
 
