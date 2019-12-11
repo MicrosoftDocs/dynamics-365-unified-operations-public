@@ -264,7 +264,7 @@ These parameters are used when requests are addressed to HMRC. They must be fill
 
 For the production application (**Dynamics 365 for Finance and Operations**), these parameters are delivered by Microsoft via the package of data entities and stored in the system in encrypted format. When you import predefined setup of Electronic messages functionality for MTD for VAT these parameters are imported as well, no additional manual actions are needed, once imported, the production application is ready for authorization (obtain an authorization code and access token).
 
-Open **Tax** > **Setup** > **Electronic messages** > **Web applications** and check that **Client ID** and **Client secret** values are filled for **Dynamics 365 for Finance and Operations**:
+Open **Tax** \> **Setup** \> **Electronic messages** \> **Web applications** and check that **Client ID** and **Client secret** values are filled for **Dynamics 365 for Finance and Operations**:
 
 ![Web application credentials](media/uk-mtd-credentials-setup.png)
 
@@ -459,7 +459,7 @@ When a VAT return in JSON format is generated and ready to be submitted to HMRC,
 
 > [!IMPORTANT]
 >
-> Before you start VAT return submission to HMRC, it is important to make sure that **JSON** file type is defined in **File types** in **Document management parameters**. Open **Organization administration** > **Document management** > **Document management parameters** page, select **File types** and check if **JSON** is in the list of **File types**:
+> Before you start VAT return submission to HMRC, it is important to make sure that **JSON** file type is defined in **File types** in **Document management parameters**. Open **Organization administration** \> **Document management** \> **Document management parameters** page, select **File types** and check if **JSON** is in the list of **File types**:
 >
 > ![JSON File type setup](media/uk-mtd-json-file-type-setup.png)
 
@@ -517,16 +517,16 @@ To prepare electronic reporting configurations for generation of the common VAT 
 
 Starting from these versions, Tax declaration model, model mapping and both formats for the UK VAT return support cross-company tax transactions data sources and can be used to aggregate data from several legal entities. These configurations can still be used to report VAT return from just one legal entity.
 
-> [!**Important note**:] 
+> [!IMPORTANT]
 > Finance and Operations of **version 10.0.7 or later supports** these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
 
 To use the formats for reporting of VAT return of a groups of several legal entities, you must set up Application specific parameters ***for each of the legal entities included into the group***:
 
-1.	Open Electronic reporting module and select **Tax declaration model** > **MTD VAT returns exporting JSON (UK)** format in the configurations tree. 
+1.	Open Electronic reporting module and select **Tax declaration model** \> **MTD VAT returns exporting JSON (UK)** format in the configurations tree. 
 
 2.	Select in the right top corner the Legal entity from VAT group tax transactions from which must be included into the VAT return of the group.
 
-3.	Click **Configurations** > **Application specific parameters** > **Setup** on the Action pane, select the last version of the format on the left part of the Application specific parameter page and define conditions on the **Conditions** fast tab. Learn more how you can define conditions in the [Set up application-specific parameters](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#set-up-application-specific-parameters) part of the documentation. Change state to **Completed**, save and close the **Application specific parameters** page.
+3.	Click **Configurations** \> **Application specific parameters** \> **Setup** on the Action pane, select the last version of the format on the left part of the Application specific parameter page and define conditions on the **Conditions** fast tab. Learn more how you can define conditions in the [Set up application-specific parameters](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#set-up-application-specific-parameters) part of the documentation. Change state to **Completed**, save and close the **Application specific parameters** page.
 
 4.	Change the legal entity again (as on the step 2) and repeat the step 3 as many times as much legal entities are included in the VAT group in your system.
 
@@ -538,7 +538,7 @@ Starting from **10.0.7 version**, Microsoft Dynamics 365 for **Finance and Opera
 
 1.	Activate **“Cross-company queries for the populate records actions”** feature in **Feature management**. Open **Workspaces** > **Feature management**, find **“Cross-company queries for the populate records actions”** and click **“Enable now”** button on the right bottom of the page.
 
-2.	When **“Cross-company queries for the populate records actions”** feature is activated in the **Feature management**, open **Modules** > **Tax** > **Setup** > **Electronic messages** > **Populate records actions** page. A new field **“Company”** will be available on the **Datasources setup** grid. For the already existing record created during the general process of MTD for VAT feature setup and current legal entity identifier is defined in the **Company** field. It is assumed that **Settlement period** for the current legal entity is already setup during the genal MTD for VAT feature setup.
+2.	When **“Cross-company queries for the populate records actions”** feature is activated in the **Feature management**, open **Modules** \> **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions** page. A new field **“Company”** will be available on the **Datasources setup** grid. For the already existing record created during the general process of MTD for VAT feature setup and current legal entity identifier is defined in the **Company** field. It is assumed that **Settlement period** for the current legal entity is already setup during the genal MTD for VAT feature setup.
 
 3.	Add as much lines to the **“Datasources setup”** as more legal entities are to be included in the VAT group reporting: one record for each legal entity and define fields’ values:
 
@@ -568,7 +568,7 @@ The changes in the setup of populate records action described above are enough t
 
 Setup one legal entity to interoperate with HMRC according to the general guidance ([Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration)), provide addition setup to populate records action as it is described in the section above and [retrieve VAT obligations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#retrieve-vat-obligations-from-hmrc) for your VAT group and move further to [Collect data for VAT return](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#collect-data-for-vat-return):
 
-1.	Open **Tax** > **Inquires and reports** > **Electronic messages** > **Electronic messages** page and select “UK MTD VAT returns” processing for production use or “UK MTD VAT TEST” processing for testing purposes.
+1.	Open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages** page and select “UK MTD VAT returns” processing for production use or “UK MTD VAT TEST” processing for testing purposes.
 
 2.	Select an electronic message in **“New VAT return”** status on the **Messages** fast tab which was automatically created as a result of retrieving of VAT obligations from HMRC.
 
@@ -744,7 +744,7 @@ System administration consent is available in the following versions of Electron
 | MTD VAT model mapping (UK)       | Model mapping (exporting, importing) | **27.34** |
 | MTD VAT web request headers format (UK)        | Format (exporting) | **27.24** |
 
-> [!Important note:] 
+> [!IMPORTANT]
 > When new versions of ER configurations are imported, check that following configurations are marked as Default for model mapping:
 >
 > -	Tax declaration model mapping
@@ -756,7 +756,7 @@ Electronic reporting configuration download instruction from Lifecycle Services:
 ### System administrator consent
 When Electronic configurations from the Electronic configurations table are successfully imported, system administrator must do the following steps in the Legal entity interoperating with HMRC (it is supposed that MTD for VAT feature setup is done):
 
-1.	Open **Modules** > **Tax** > **Setup** > **Electronic messages** > **Web applications** page, select the web application you are going to use for interoperation with MTD for VAT APIs and click **“Get authorization code”** button on the Action pane. This step must be done even if you have previously successfully authorized the web application.
+1.	Open **Modules** \> **Tax** \> **Setup** \> **Electronic messages** \> **Web applications** page, select the web application you are going to use for interoperation with MTD for VAT APIs and click **“Get authorization code”** button on the Action pane. This step must be done even if you have previously successfully authorized the web application.
 
 2.	Type **“write:vat read:vat”** in the in the **“Scope”** field of the **“Electronic report parameters”** page and click OK to continue. 
 
