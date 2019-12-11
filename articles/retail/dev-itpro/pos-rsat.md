@@ -247,8 +247,8 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
     + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
     + **Retail server URL** – Enter the Retail Server URL that should be used for device activation, if the device hasn't already been activated.
 
-    > [!NOTE]
-    > The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+        > [!NOTE]
+        > The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
