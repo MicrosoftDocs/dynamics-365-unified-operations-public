@@ -1181,7 +1181,7 @@ This versions of the configurations can be imported into any version of the appl
 
 The update provides possibility to collect a common summarized VAT return basing on tax transactions posted in several Legal entities in Finance and Operations. It is assumed that all the tax transactions for VAT return are in the same system using the same data base and it is supposed that tax transactions include all the information necessary for VAT return of the United Kingdom and preliminary VAT 100 report is correctly generated as for the VAT return in each legal entity involved into the summarized VAT return.
 
-The **"VAT return report creation for companies reporting as VAT group within the same system database"** is supported in Finance and Operations starting from **version 10.0.7 or later**. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
+The **"VAT return report creation for companies reporting as VAT group within the same system database"** is supported in Finance and Operations starting from **version 10.0.7 or later**. 
 
 Following versions of Electronic reporting configurations must imported and used for this feature:
 
@@ -1191,6 +1191,15 @@ Following versions of Electronic reporting configurations must imported and used
 | Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations |
 | MTD VAT returns exporting JSON (UK).version.**32.27** | VAT return in JSON format for submission to MTD HMRC |
 | MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | VAT 100 report - declaration in Excel format |
+
+For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update and the following versions of Electronic reporting configurations:
+
+| GER configuration name, version          | Description |
+|------------------------------|--------------------------|
+| Tax declaration model.version.**32** | Generic model for different tax declarations |
+| Tax declaration model mapping.version.**32.38** | Generic model mapping for VAT declarations |
+| MTD VAT returns exporting JSON (UK).version.**32.28** | VAT return in JSON format for submission to MTD HMRC |
+| MTD VAT returns exporting EXCEL (UK).version.**32.28.8** | VAT 100 report - declaration in Excel format |
 
 ### "Hotfix MTD tax declaration does not report sales on box 6 when tax is set with reverse charge + exempt (Building and Construction services)" (KB 4525191)
 
@@ -1211,3 +1220,20 @@ The hotfix is delivered in the following versions of ER configurations:
 <un><li>Tax declaration model mapping **(servicing)**.version.**31.34.1**</li></un>
 
 **“Tax declaration model mapping (servicing).version.31.34.1”** model mapping configuration should be used until your Finance and Operations application will be updated to version 10.0.7 or higher for which the issue is fixed starting from “Tax declaration model mapping version 32.37”.
+
+### Consent of system administrator to transmit information outside of D365 using the integration with HMRC
+
+System administration consent is available in the following versions of Electronic reporting configurations (can be imported for application of version mentioned in the table above (Electronic configurations table) or later).
+
+| GER configuration name          | Version |
+|------------------------------|--------------------------|
+| Electronic Messages framework model | **27** |
+| MTD VAT model mapping (UK) | **27.36** |
+| MTD VAT web request headers format (UK) | **27.24** |
+
+These versions of the ER configurations must be imported and used on the following versions of the application or later versions:
+
+| Version | Check-in build |
+|---------|----------------|
+| 10.0.8  | 10.0.**314.0**    |
+
