@@ -96,6 +96,8 @@ You can also use the **Competencies** section to discuss, review, and rate the e
 
 You can create new reviews that are based on templates that you’ve created. For example, you can have a template for one-on-ones, development plans, or periodic reviews. You can select the template when you create a new review.
 
+Reviews can be printed by selecting the Print review button.  If you don't see the button on the Review page, ensure you have enabled the feature in the Feature Management workspace. 
+
 ## Components you can include in performance reviews
 You can include a number of types of information in performance reviews. They include review detail, measurements, activities, ratings, sign-offs and attachments.
 
