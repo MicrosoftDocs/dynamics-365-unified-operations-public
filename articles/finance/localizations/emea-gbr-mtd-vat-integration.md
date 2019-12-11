@@ -745,6 +745,30 @@ System administration consent is available in the following versions of Electron
 
 Electronic reporting configuration download instruction from Lifecycle Services: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs
 
+### System administrator consent
+When Electronic configurations from the Electronic configurations table are successfully imported, system administrator must do the following steps in the Legal entity interoperating with HMRC (it is supposed that MTD for VAT feature setup is done):
+
+1.	Open **Modules** > **Tax** > **Setup** > **Electronic messages** > **Web applications** page, select the web application you are going to use for interoperation with MTD for VAT APIs and click **“Get authorization code”** button on the Action pane. This step must be done even if you have previously successfully authorized the web application.
+
+2.	Type **“write:vat read:vat”** in the in the **“Scope”** field of the **“Electronic report parameters”** page and click OK to continue. 
+
+3.	New page with **“System administrator consent”** will be shown. Read the information, mark the check box to confirm *“I consent to providing the information listed above from the users devices used to submit VAT request as part of all VAT request to HMRC.”* and click **“Agree”** button.
+
+![System administrator consent](media/uk-mtd-system-administrator-consent.png)
+
+4.	New record of **“System administrator consent received”** type will be stored in the Action log of the related web application:
+
+![System administrator consent log](media/uk-mtd-system-administrator-consent-log.png)
+
+5.	Continue authorization process as it is explained in the [documentation](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#obtain-an-authorization-code-for-production) if your web application was not previously authorized.
+
+6.	If your web application was previously authorized on HMRC side, you don’t need to continue the authorization and you may skip all other steps of authorization.
+
+When Electronic configurations from the Electronic configurations table above are successfully imported but system administrator didn’t provide the consent as it is described in the steps above, refreshing of the access token will be blocked and no new requests to MTD for VAT APIs will be accepted by HMRC due to the old access token will be used.
+
+In this case, if for example a new VAT obligations request is sent to HMRC, user will get **“401” error** and in the **Message details** it will be informed that *“Access token cannot be refreshed. System administrator must consent to transmit information outside of Dynamics 365 for Finance and Operations via initialization 'Get authorization code' button on Web applications page.”*:
+
+![System administrator consent log error](media/uk-mtd-system-administrator-consent-log-error.png)
 
 ## Using the MTD feature outside the UK
 
