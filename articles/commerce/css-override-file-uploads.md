@@ -90,11 +90,11 @@ To activate a CSS override file, follow these steps.
 1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to activate.
 1. Under the CSS file name, select **Activate**. The override file immediately becomes active on your live site.
 
-## Inactivate a CSS override file on your live site
+## Deactivate a CSS override file on your live site
 
-To inactivate a CSS override file on your site, follow these steps.
+To deactivate a CSS override file on your site, follow these steps.
 
-1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to inactivate.
+1. In the navigation pane on the left, select **Design**, and then, on the **CSS override** tab, under **Available CSS overrides**, find the CSS file that you want to deactivate.
 1. Under the CSS file name, select **Deactivate**. The override file immediately becomes inactive on your live site.
 
 > [!TIP]
