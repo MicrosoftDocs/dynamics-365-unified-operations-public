@@ -1201,7 +1201,9 @@ For the version 7.3 of Finance and Operations the KB # 4513052 must be installed
 | MTD VAT returns exporting JSON (UK).version.**32.28** | VAT return in JSON format for submission to MTD HMRC |
 | MTD VAT returns exporting EXCEL (UK).version.**32.28.8** | VAT 100 report - declaration in Excel format |
 
-### "Hotfix MTD tax declaration does not report sales on box 6 when tax is set with reverse charge + exempt (Building and Construction services)" (KB 4525191)
+These versions of ER configurations ar also compatible with Finance and Operations starting from **version 10.0.7 or later**. 
+
+### Hotfix "MTD VAT declaration in JSON and Excel formats do not report sales on box 6 when tax is set with reverse charge + exempt (Building and Construction services)" (KB 4525191)
 
 This hotfix fixes an issue where the JSON and Excel formats wrongly report the Box 6 amount tax is set with reverse charge + exempt (Building and Construction services).
 
@@ -1211,7 +1213,7 @@ The hotfix is delivered in the following versions of ER configurations:
 
 This versions of the configurations can be imported into any version of Finance and Operations starting from **version 10.0.7 or later**.For version 7.3 the KB #4513052 must be installed.
 
-### Hotfix "Making tax Digital preview report shows wrong information with reverse charge credit note" (KB 4530861)
+### Hotfix "MTD VAT declaration in JSON and Excel formats shows incorrect shows wrong information with reverse charge credit note" (KB 4530861)
 
 This hotfix delivers the fix released previously (KB 4525191) for Model of version 32 which contains dependency on Finance and Operation version (10.0.7) but for the previouse version of the model (31) with no dependency on Finance and Operations application version. This make it possible to fix the issue on all the application versions lower then 10.0.7.
 
@@ -1235,5 +1237,5 @@ These versions of the ER configurations must be imported and used on the followi
 
 | Version | Check-in build |
 |---------|----------------|
-| 10.0.8  | 10.0.**314.0**    |
+| **10.0.8**  | 10.0.**314.0**    |
 
