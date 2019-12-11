@@ -2,7 +2,7 @@
 # required metadata
 
 title: LEN ER function
-description: This topic provides information about how the LEN ER function is used.
+description: This topic provides information about how the LEN Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/11/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LEN">LEN Function</a>
+# <a name="LEN">LEN ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,19 +44,19 @@ LEN (text)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A *String* value of the specified text.
+A *String* value that specifies the text.
 
-## Returns
+## Return values
 
 *Integer*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example
 
-`LEN ("Sample")` returns 6.
+`LEN ("Sample")` returns **6**.
 
 ## Additional resources
 
