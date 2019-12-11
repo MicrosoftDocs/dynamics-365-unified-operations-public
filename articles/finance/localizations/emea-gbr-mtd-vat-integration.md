@@ -266,7 +266,7 @@ For the production application (**Dynamics 365 for Finance and Operations**), th
 
 Open **Tax** > **Setup** > **Electronic messages** > **Web applications** and check that **Client ID** and **Client secret** values are filled for **Dynamics 365 for Finance and Operations**:
 
-![Sales tax inquiry](media/uk-mtd-credentials-setup.png)
+![Web application credentials](media/uk-mtd-credentials-setup.png)
 
 Don’t edit the record by changing or updating these values. You also don’t need to create a web application of production type either on HMRC side, **Dynamics 365 for Finance and Operations** application is completely ready to interoperate in live with production MTD. Next steps should be Get authorization code and Obtain access token.
 
@@ -286,7 +286,7 @@ To work with MTD for VAT, the VAT registration number of your legal entity must 
 3. Go to **Organization administration** \> **Global Address Book** \> **Legal entities**, and on the Action Pane, select **Registration ID**.
 4. Define the VAT registration number as a **Registration ID** which is associated with the **VAT ID**" registration category.
 
-![Sales tax inquiry](media/reg-ids-setup.png)
+![Registration ID setup](media/reg-ids-setup.png)
 
 After the company has obtaind user credentials, an application of **Production** type can be authorized. Application of production type is uniquely identified by **Client ID** and **Client secret** and are provided by Microsoft (unless the company is creating their own solution for any Dynamics AX version). The following steps must be done on Finance and Operations side to authorize the application of Production type:
 
@@ -301,11 +301,11 @@ To get an authorization code from HMRC, go to **Tax** \> **Setup** \> **Electron
 
 We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. Select **OK** to address the authorization request to HMRC. 
 
-![Sales tax inquiry](media/uk-mtd-get-authorization-code.png)
+![Get authorization code](media/uk-mtd-get-authorization-code.png)
 
 You're redirected to the HMRC portal for authorization. On the **Sign in** page, enter the **User ID** and **Password** values that were obtained for your company when HMRC online account was created. 
 
-![Sales tax inquiry](media/uk-mtd-hmrc-reg.png)
+![Get authorization code on HMRC portal](media/uk-mtd-hmrc-reg.png)
 
 The next page will show the authorization code. Copy it to the clipboard and move on to getting an access token. The authorization code is valid for only 10 minutes. You must retrieve the access token during this time. If you don't retrieve the access token within 10 minutes and the authorization code expires, you may get a new authorization code.
 
@@ -509,7 +509,8 @@ To prepare electronic reporting configurations for generation of the common VAT 
 
 Starting from these versions, Tax declaration model, model mapping and both formats for the UK VAT return support cross-company tax transactions data sources and can be used to aggregate data from several legal entities. These configurations can still be used to report VAT return from just one legal entity.
 
-**Important note**: Finance and Operations of version 10.0.7 or later supports these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
+>[!**Important note**:] 
+>Finance and Operations of version 10.0.7 or later supports these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
 
 To use the formats for reporting of VAT return of a groups of several legal entities, you must set up Application specific parameters ***for each of the legal entities included into the group***:
 
