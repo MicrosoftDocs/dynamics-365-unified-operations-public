@@ -2,7 +2,7 @@
 # required metadata
 
 title: PADLEFT ER function
-description: This topic provides information about how the PADLEFT ER function is used.
+description: This topic provides information about how the PADLEFT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/10/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="PADLEFT">PADLEFT Function</a>
+# <a name="PADLEFT">PADLEFT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `PADLEFT` function returns a *String* of the specified length, where the start of the specified string is padded with the specified characters.
+The `PADLEFT` function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ PADLEFT (text, length, padding chars)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A *String* value representing the original text.
+A *String* value that represents the original text.
 
-`length` : *Integer*
+`length`: *Integer*
 
-An *Integer* value of the final number of characters in the padded string.
+An *Integer* value that represents the final number of characters in the padded string.
 
-`padding chars` : *String*
+`padding chars`: *String*
 
-The characters for padding.
+The characters to use for padding.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
