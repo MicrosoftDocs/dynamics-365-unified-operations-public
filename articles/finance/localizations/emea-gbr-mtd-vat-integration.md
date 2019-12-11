@@ -272,35 +272,6 @@ Don’t edit the record by changing or updating these values. You also don’t n
 
 For the sandbox application, you can manually obtain **Client ID** and **Client secret** from the **Manage credentials** section of your sandbox application on the HMRC portal. Copy the parameters, and then, on the **Web applications** page in Finance (**Tax** \> **Setup** \> **Electronic messages** \> **Web applications**), select the **Sandbox HMRC** web application, and paste the parameters into the appropriate fields in the **Authorization parameters** section on the **General** FastTab.
 
-## Obtain an authorization code for sandbox 
-
-HMRC lets you register as a developer on [HMRC Developer Hub](https://developer.service.hmrc.gov.uk/developer/registration) and access the sandbox environment for testing purposes. When you're registered as a developer, you can use the **UK MTD VAT TEST** processing to try to interoperate with the HMRC sandbox environment. However, you must first get test user credentials:
-
-- **User ID** – The name that is used to access HMRC while an authorization code is being requested.
-- **Password** – The password that is used to access HMRC while an authorization code is being requested.
-- **VRN** – The testing VAT registration number (VRN) that is used during testing interoperation with the HMRC sandbox.
-
-These three parameters must be used together.
-
-To get test user credentials, go to **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT TEST**, and then select **New** on the **Messages** FastTab. Select the **Create test user request** action, and then select **OK**. A new electronic message is created. You don't have to fill in any fields of this electronic message to create a test user request. Select **Generate report** on the **Messages** FastTab, and then select **OK** to confirm that you want to send a test user request to HMRC. (A **Generate test user request** action is initialized together with the **Send test user request** action.)
-
-The response from HMRC will be attached to the electronic message as an attachment in JSON format. To open it, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments** page for the selected electronic message, select the last **TestUserInfo.txt** file, and then select **Open** on the Action Pane. In the opened file, you will find **userID**, **password** and **VRN** fields, and their respective values.
-
-Update the **Tax exempt number** value of the legal entity that you're working in with the **VRN** value that you obtained from HMRC. Don't change this value while you're working with the sandbox web application unless you get new test user credentials.
-
-After the **Tax exempt number** value of the legal entity that you're working in is updated, you can proceed with authorization in HMRC. Two steps must be done before your system is authorized to interoperate with HMRC:
-
-- Get an authorization code.
-- Get an access token.
-
-To get an authorization code, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize for (**Sandbox HMRC**), and select **Get authorization code**. Select **OK** to confirm that you want to initialize the authorization process. On the **Electronic reporting parameters** page, set the **Scope** field. The following values are allowed by HMRC:
-
-- read:vat
-- write:vat
-- read:vat write:vat
-
-We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. Select **OK** to address the authorization request to HMRC. You're redirected to the HMRC portal for authorization. On the **Sign in** page, enter values that are related to the **userID** and **password** value from the response that you received when you got test user credentials. The next page will show the authorization code that was granted by HMRC. Copy it to the clipboard, and move on to getting an access token. The authorization code is valid for only 10 minutes. You must retrieve the access token during this time. If you don't retrieve the access token within 10 minutes, and the authorization code expires, you can get a new authorization code by using the same test user credentials. Alternatively, you can get a new test user.
-
 ## Obtain an authorization code for production
 
 When a company is ready to interoperate in live with MTD for VAT, it must create a HMRC  online account (Government Gateway account) unless one already exist. The company will then need to link it to the Finance and Operantions application by selecting **Microsoft Dynamics 365 Finance** as the software. The company will then obtain user credentials (User ID and password) that are linked to its VAT registration number:
@@ -317,7 +288,7 @@ To work with MTD for VAT, the VAT registration number of your legal entity must 
 
 ![Sales tax inquiry](media/reg-ids-setup.png)
 
-After the company has user obtaind user credentials, an application of **Production** type can be authorized. Application of production type is uniquely identified by **Client ID** and **Client secret** and are provided by Microsoft (unless the company is creating their own solution for any Dynamics AX version). The following steps must be done on Finance and Operations side to authorize the application of Production type: :
+After the company has obtaind user credentials, an application of **Production** type can be authorized. Application of production type is uniquely identified by **Client ID** and **Client secret** and are provided by Microsoft (unless the company is creating their own solution for any Dynamics AX version). The following steps must be done on Finance and Operations side to authorize the application of Production type:
 
 - Get authorization code.
 - Get access token.
@@ -328,7 +299,44 @@ To get an authorization code from HMRC, go to **Tax** \> **Setup** \> **Electron
 - write:vat
 - read:vat write:vat
 
-We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. Select **OK** to address the authorization request to HMRC. You're redirected to the HMRC portal for authorization. On the **Sign in** page, enter the **User ID** and **Password** values that HMRC granted when the HMRC online account was created. The next page will show the authorization code. Copy it to the clipboard, and move on to getting an access token. The authorization code is valid for only 10 minutes. You must retrieve the access token during this time. If you don't retrieve the access token within 10 minutes and the authorization code expires, you may get a new authorization code.
+We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. Select **OK** to address the authorization request to HMRC. 
+
+![Sales tax inquiry](media/uk-mtd-get-authorization-code.png)
+
+You're redirected to the HMRC portal for authorization. On the **Sign in** page, enter the **User ID** and **Password** values that were obtained for your company when HMRC online account was created. 
+
+![Sales tax inquiry](media/uk-mtd-hmrc-reg.png)
+
+The next page will show the authorization code. Copy it to the clipboard and move on to getting an access token. The authorization code is valid for only 10 minutes. You must retrieve the access token during this time. If you don't retrieve the access token within 10 minutes and the authorization code expires, you may get a new authorization code.
+
+## Obtain an authorization code for sandbox 
+
+For testing purposes HMRC lets you also register as a developer on [HMRC Developer Hub](https://developer.service.hmrc.gov.uk/developer/registration) and access the sandbox environment for testing purposes. When you're registered as a developer, you can use the **UK MTD VAT TEST** processing to try to interoperate with the HMRC sandbox environment. However, you must first get test user credentials:
+
+- **User ID** – The name that is used to access HMRC while an authorization code is being requested.
+- **Password** – The password that is used to access HMRC while an authorization code is being requested.
+- **VRN** – The testing VAT registration number (VRN) that is used during testing interoperation with the HMRC sandbox.
+
+These three parameters must be used together.
+
+To get test user credentials, go to **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages**, select **UK MTD VAT TEST**, and then select **New** on the **Messages** FastTab. Select the **Create test user request** action, and then select **OK**. A new electronic message is created. You don't have to fill in any fields of this electronic message to create a test user request. Select **Generate report** on the **Messages** FastTab, and then select **OK** to confirm that you want to send a test user request to HMRC. (A **Generate test user request** action is initialized together with the **Send test user request** action.)
+
+The response from HMRC will be attached to the electronic message as an attachment in JSON format. To open it, select the electronic message, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments** page for the selected electronic message, select the last **TestUserInfo.txt** file, and then select **Open** on the Action Pane. In the opened file, you will find **userID**, **password** and **VRN** fields, and their respective values.
+
+Update the **Tax exempt number** value of the legal entity that you're working in with the **VRN** value that you obtained from HMRC. Don't change this value while you're working with the sandbox web application unless you get new test user credentials.
+
+After the **Tax exempt number** value of the legal entity that you're working in is updated, you can proceed with authorization in HMRC. Two steps must be done before your system is authorized to interoperate with HMRC:
+
+- Get authorization code.
+- Get access token.
+
+To get an authorization code, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, select the web application that you want to authorize for (**Sandbox HMRC**), and select **Get authorization code** button on the Action pane. Select **OK** to confirm that you want to initialize the authorization process. On the **Electronic reporting parameters** page, set the **Scope** field. The following values are allowed by HMRC:
+
+- read:vat
+- write:vat
+- read:vat write:vat
+
+We recommend that you enter **read:vat write:vat** in this field, because the same application must be used for both GET and POST HTTPS requests to the web service. Select **OK** to address the authorization request to HMRC. You're redirected to the HMRC portal for authorization. On the **Sign in** page, enter values that are related to the **userID** and **password** value from the response that you received when you got test user credentials. The next page will show the authorization code that was granted by HMRC. Copy it to the clipboard, and move on to getting an access token. The authorization code is valid for only 10 minutes. You must retrieve the access token during this time. If you don't retrieve the access token within 10 minutes, and the authorization code expires, you can get a new authorization code by using the same test user credentials. Alternatively, you can get a new test user.
 
 ## Obtain an access token
 
