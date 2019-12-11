@@ -2,7 +2,7 @@
 # required metadata
 
 title: JSONVALUE ER function
-description: This topic provides information about how the JSONVALUE ER function is used.
+description: This topic provides information about how the JSONVALUE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/11/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="JSONVALUE">JSONVALUE Function</a>
+# <a name="JSONVALUE">JSONVALUE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `JSONVALUE` function returns a *String* value as the result of parsing data in JavaScript Object Notation (JSON) format that is accessed by the specified path to extract a scalar value that is based on the specified ID.
+The `JSONVALUE` function parses data in JavaScript Object Notation (JSON) format that is accessed at the specified path, and it extracts a scalar value that has the specified ID. It then returns the extracted scalar value as a *String* value.
 
 ## Syntax
 
@@ -46,21 +46,21 @@ JSONVALUE (input, path)
 
 `input`: *String*
 
-A valid path to a data source of the *String* type containing JSON data.
+The valid path of a data source of the *String* type that contains JSON data.
 
-`path` : *String*
+`path`: *String*
 
-An identification of a scalar value of JSON data.
+The identifier of a scalar value of JSON data.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-If the data source **JsonField** contains the **{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}** data in JSON format, the expression `JSONVALUE (JsonField, "BuildNumber")` returns the value **“7.3.1234.1”** of the *String* data type.
+The **JsonField** data source contains the following data in JSON format: **{"BuildNumber":"7.3.1234.1", "KeyThumbprint":"7366E"}**. In this case, the expression `JSONVALUE (JsonField, "BuildNumber")` returns the following value of the *String* data type: **"7.3.1234.1"**.
 
 ## Additional resources
 
