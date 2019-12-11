@@ -49,7 +49,7 @@ In each monthly update we will be adding additional extension points, so check t
 
 **Cart extension handlers**
 
-| **Request name**                           | **Description**                                                                              |
+| Request name                           | Description                                                                              |
 |--------------------------------------------|----------------------------------------------------------------------------------------------|
 | AddTenderLineToCartClientRequestHandler    | This handler is executed when you add tender (payment) line to cart.                          |
 | GetKeyedInPriceClientRequestHandler        | This handler is executed when you add an item that has a configuration key in price during sale. |
@@ -62,7 +62,7 @@ In each monthly update we will be adding additional extension points, so check t
 
 **Payment extension handler**
 
-| **Request name**                                 | **Description**                                                                                                                                   |
+| Request name                                 | Description                                                                                                                                  |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | GetGiftCardByIdServiceRequestHandler             | This handler is executed when you receive the gift card ID.                                                                                           |
 | GetPaymentCardTypeByBinRangeClientRequestHandler | This handler is executed when POS gets the card type, such as Visa or Master Card. This is based on the HQ configuration during the card tender line processing. |
