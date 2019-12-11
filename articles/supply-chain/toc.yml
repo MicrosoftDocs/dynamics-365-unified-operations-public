@@ -62,7 +62,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
       - name: What's new or changed
         items:
-        - name: Preview features in Supply Chain Management version 10.0.7 (December 2019)
+        - name: Supply Chain Management version 10.0.7 (December 2019)
           href: get-started/whats-new-scm-10-0-7.md
         - name: Supply Chain Management 10.0.6 (November 2019)
           href: get-started/whats-new-scm-10-0-6.md

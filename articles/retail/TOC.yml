@@ -62,7 +62,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
       - name: What's new or changed
         items:
-        - name: Preview features in Retail version 10.0.7
+        - name: Retail version 10.0.7
           href: get-started/whats-new-10-0-7.md
         - name: Retail version 10.0.6
           href: get-started/whats-new-10-0-6.md
