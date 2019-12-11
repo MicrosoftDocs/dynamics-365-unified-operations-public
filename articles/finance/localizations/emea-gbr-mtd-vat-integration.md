@@ -382,6 +382,86 @@ The last step of the processing is an **Import VAT obligations** action of the *
 
 All the actions that are done for electronic messages are logged and can be viewed on the **Log** FastTab.
 
+## VAT return report creation for companies reporting as VAT group within the same system database
+
+To prepare your Finance and Operations to report VAT return for a VAT group, make sure that your business processes and the system setup are in-line with the following terms:
+
+1.	Tax information from all the subsidiaries is registered in the same system – Finance and Operation.
+
+2.	All the tax transactions are correctly reflected in the system in accordance with the rules and principles of the United Kingdom.
+
+3.	Settlement periods for all the legal entities involved to the VAT group are defined identically and in full accordance with the period intervals defined in HMRC online account.
+
+4.	VAT settlement (“Settle and post” procedure) is done in each subsidiary legal entity.
+
+5.	“VAT 100” report is correctly generated for preview in each subsidiary legal entity.
+
+6.	One legal entity is setup for interoperation with HMRC according to the documentation ([Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration)) and user can request VAT obligations from this legal entity for the VAT group.
+
+This section of the documentation provides information:
+
+1.	How to setup additionally Electronic reporting configurations to collect data from several legal entities for VAT return reporting of the VAT group.
+
+2.	How to setup Electronic messages functionality additionally to the general process of MTD for VAT feature setup to collect data from several legal entities for VAT return reporting of a VAT group.
+
+3.	How to use Electronic message page to collect information for VAT return reporting from several legal entities.
+
+### Import and setup Electronic reporting configurations to collect data from several legal entities for VAT return reporting of the VAT group
+
+To prepare electronic reporting configurations for generation of the common VAT return of a VAT group based on tax transitions posted in several legal entities, import and use the following or later versions of the Electronic reporting configurations:
+
+| GER configuration name, version          | Description |
+|------------------------------|--------------------------|
+| Tax declaration model.version.**32** | Generic model for different tax declarations |
+| Tax declaration model mapping.version.**32.35** | Generic model mapping for VAT declarations |
+| MTD VAT returns exporting JSON (UK).version.**32.27** | VAT return in JSON format for submission to MTD HMRC |
+| MTD VAT returns exporting EXCEL (UK).version.**32.27.7** | VAT 100 report - declaration in Excel format |
+
+Starting from these versions, Tax declaration model, model mapping and both formats for the UK VAT return support cross-company tax transactions data sources and can be used to aggregate data from several legal entities. These configurations can still be used to report VAT return from just one legal entity.
+
+**Important note**: Finance and Operations of version 10.0.7 or later supports these versions of the electronic reporting configurations. For the version 7.3 of Finance and Operations the KB # 4513052 must be installed and the latest version of the Electronic reporting update.
+
+To use the formats for reporting of VAT return of a groups of several legal entities, you must set up Application specific parameters ***for each of the legal entities included into the group***:
+
+1.	Open Electronic reporting module and select **Tax declaration model** > **MTD VAT returns exporting JSON (UK)** format in the configurations tree. 
+
+2.	Select in the right top corner the Legal entity from VAT group tax transactions from which must be included into the VAT return of the group.
+
+3.	Click **Configurations** > **Application specific parameters** > **Setup** on the Action pane, select the last version of the format on the left part of the Application specific parameter page and define conditions on the **Conditions** fast tab. Learn more how you can define conditions in the [Set up application-specific parameters](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#set-up-application-specific-parameters) part of the documentation. Change state to **Completed**, save and close the **Application specific parameters** page.
+
+4.	Change the legal entity again (as on the step 2) and repeat the step 3 as many times as much legal entities are included in the VAT group in your system.
+
+5.	Repeat all the steps above for **MTD VAT returns exporting EXCEL (UK)** format.
+
+### Setup Electronic messages functionality additionally to the general process of MTD for VAT feature setup for VAT group reporting
+
+Starting from **10.0.7 version**, Microsoft Dynamics 365 for **Finance and Operations** allows user to prepare a VAT return report collecting information from several legal entities into the one Electronic reporting format. For this purpose, system must collect **Sales tax payment** transactions posted in different legal entities under the same Electronic message. Following steps must be done additionally to all the steps of the general process of MTD for VAT feature setup:
+
+1.	Activate **“Cross-company queries for the populate records actions”** feature in **Feature management**. Open **Workspaces** > **Feature management**, find **“Cross-company queries for the populate records actions”** and click **“Enable now”** button on the right bottom of the page.
+
+2.	When **“Cross-company queries for the populate records actions”** feature is activated in the **Feature management**, open **Modules** > **Tax** > **Setup** > **Electronic messages** > **Populate records actions** page. A new field **“Company”** will be available on the **Datasources setup** grid. For the already existing record created during the general process of MTD for VAT feature setup and current legal entity identifier is defined in the **Company** field. It is assumed that **Settlement period** for the current legal entity is already setup during the genal MTD for VAT feature setup.
+
+3.	Add as much lines to the **“Datasources setup”** as more legal entities are to be included in the VAT group reporting: one record for each legal entity and define fields’ values:
+
+| Field name          | Value |
+|------------------------------|--------------------------|
+| **Name** | Enter a text value which would help you understand where this record from. For example: “VAT payment of Subsidiary 1” |
+| **Message item type** | Select **“VAT return”** – the only available value for all the records. |
+| **Account type** | **All** |
+| **Master table name** | **“TaxReportVoucher”** – the same for all the records. |
+| **Document number field** | **“Voucher”** – the same for all the records. |
+| **Document date field** | **“TransDate”** – the same for all the records. |
+| **Document account field** | **“TaxPeriod”** – the same for all the records. |
+| **Company** | Select the ID for the subsidiary legal entity. |
+| **User query** | **Yes** (marked automatically when you define criteria by **“Edit query”** button) |
+
+Click **“Edit query”** for each of the new records and specify related **“Settlement period”** for the legal entity defined as **Company** in the selected line.
+
+As a result, you will have as much lines in the **“Datasources setup”** grid as more legal entities must be included into reporting of the VAT group with Settlement periods defined for each of the **Company**:
+
+![Lifecycle of electronic message processing for VAT obligation retrieval](media/mkd-process.png)
+
+
 ## Test "Gov-Test-Scenario" for the "Retrieve VAT obligations" endpoint in the HMRC sandbox
 
 HMRC lets you simulate different scenarios of VAT obligation retrieval on the sandbox web application. For example, "QUARTERLY\_NONE\_MET" simulates the scenario where the client has quarterly obligations, and none are fulfilled. You can find related information in the "Endpoints" paragraph of the "VAT" subscription API documentation.
