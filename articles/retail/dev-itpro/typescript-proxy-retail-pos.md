@@ -61,7 +61,7 @@ Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\Commerce
 2. Open a Command Prompt window as an administrator, and go to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
 
 ```
-    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
+CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
 ```
 
 > [!NOTE]
