@@ -35,8 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). We have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
-
 ## Architecture
 Integration does the following things:
 
