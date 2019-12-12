@@ -2,10 +2,10 @@
 # required metadata
 
 title: IF ER function
-description: This topic explains how the IF ER function is used
+description: This topic provides information about how the IF ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `IF` function returns the first specified value when the specified condition is met. Otherwise, return the second specified value. Returned value can be a value of any of the supported data types.
+The `IF` function returns the first specified value when the specified condition is met. Otherwise, the second specified value is returned. The returned value can be a value of any of the supported data types.
 
 ## Syntax
 
