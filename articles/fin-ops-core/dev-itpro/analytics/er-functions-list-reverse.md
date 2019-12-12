@@ -2,7 +2,7 @@
 # required metadata
 
 title: REVERSE ER function
-description: This topic provides information about how the REVERSE ER function is used.
+description: This topic provides information about how the REVERSE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="REVERSE">REVERSE Function</a>
+# <a name="REVERSE">REVERSE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `REVERSE` function returns the specified list as a *Record list* in reversed sort order.
+The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ REVERSE (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Example 1
 
-If you enter the data source **DS** of the `Calculated field` type and it contains the expression `SPLIT ("C|B|A", “|”)`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value, “C”.
+If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( REVERSE( ORDERBY( DS, DS. Value))).Value` returns the text value **"C"**.
 
 ## Example 2
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, the `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` expression returns a list of vendors that is sorted by name in descending order.
+If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` returns a list of vendors that is sorted by name in descending order.
 
 ## Additional resources
 
