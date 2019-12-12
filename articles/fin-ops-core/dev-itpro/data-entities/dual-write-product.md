@@ -5,7 +5,7 @@ title: Unified product experience
 description: This topic describes the integration of product data between Finance and Operations apps and Common Data Service.
 author: t-benebo 
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
