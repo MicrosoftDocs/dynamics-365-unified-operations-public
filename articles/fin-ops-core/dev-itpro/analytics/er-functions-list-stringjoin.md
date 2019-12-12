@@ -2,7 +2,7 @@
 # required metadata
 
 title: STRINGJOIN ER function
-description: This topic provides information about how the STRINGJOIN ER function is used.
+description: This topic provides information about how the STRINGJOIN Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="STRINGJOIN">STRINGJOIN Function</a>
+# <a name="STRINGJOIN">STRINGJOIN ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `STRINGJOIN` function returns a *String* that consists of concatenated values of the specified field from the specified list. The values can be separated by the specified delimiter.
+The `STRINGJOIN` function returns a *String* value that consists of concatenated values of the specified field from the specified list. The values can be separated by the specified delimiter.
 
 ## Syntax
 
@@ -44,27 +44,27 @@ STRINGJOIN (list, field, delimiter)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
 `field`: *Field*
 
-A valid path to a field of a given list of *String*.
+The valid path of a field of the *String* data type in the specified list.
 
 `delimiter`: *String*
 
-A delimiter to separate substrings.
+A delimiter that is used to separate substrings.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-If you enter `SPLIT("abc" , 1)` as a data source **DS**, `STRINGJOIN (DS, DS.Value, "-")` returns "a-b-c".
+If you enter `SPLIT("abc" , 1)` as data source **DS**, the expression `STRINGJOIN (DS, DS.Value, "-")` returns **"a-b-c"**.
 
 ## Additional resources
 
