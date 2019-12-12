@@ -608,9 +608,11 @@ Use services.msc to restart the services that you stopped earlier:
 
     Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
 
-## Export report definitions
+## Export and import report definitions
 
 Resetting the data mart shouldn't impact any report definitions, but certain data movement activities can cause the loss of reports. Be very careful if you are peforming a data movement activity such as overriting a UAT test environment with a copy of production where new reports were being created in UAT. 
+
+### Export report definitions
 
 First, follow these steps to export the report designs from Report designer.
 
@@ -634,7 +636,7 @@ You can copy or upload the file to a secure location.
 > [!WARNING]
 > Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
-#### Import report definitions
+### Import report definitions
 
 Import your report designs from Report designer by using the file that was created during the export.
 
