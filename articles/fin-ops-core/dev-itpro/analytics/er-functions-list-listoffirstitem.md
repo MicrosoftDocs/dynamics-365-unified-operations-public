@@ -2,7 +2,7 @@
 # required metadata
 
 title: LISTOFFIRSTITEM ER function
-description: This topic provides information about how the LISTOFFIRSTITEM ER function is used.
+description: This topic provides information about how the LISTOFFIRSTITEM Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LISTOFFIRSTITEM">LISTOFFIRSTITEM Function</a>
+# <a name="LISTOFFIRSTITEM">LISTOFFIRSTITEM ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `LISTOFFIRSTITEM` function returns a *Record list* that contains only the first record of the specified list.
+The `LISTOFFIRSTITEM` function returns a *Record list* value that consists of only the first record of the specified list.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ LISTOFFIRSTITEM (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Example
 
-The `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` expression return the text value, “A”.
+The expression `FIRST( LISTOFFIRSTITEM ( SPLIT ("ABC",1))).Value` returns the text value **"A"**.
 
 ## Additional resources
 
