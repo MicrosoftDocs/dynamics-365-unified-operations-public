@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/04/2019
+ms.date: 12/12/2019
 
 ms.topic: article
 ms.prod: 
@@ -35,8 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-## Architecture
-Integration does the following things:
+Recurring integration does the following things:
 
 - It builds on data entities and the Data management framework.
 - It enables the exchange of documents or files between Finance and Operations and any third-party application or service.
