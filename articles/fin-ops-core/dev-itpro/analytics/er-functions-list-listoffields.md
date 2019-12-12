@@ -2,7 +2,7 @@
 # required metadata
 
 title: LISTOFFIELDS ER function
-description: This topic provides information about how the LISTOFFIELDS ER function is used.
+description: This topic provides information about how the LISTOFFIELDS Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LISTOFFIELDS">LISTOFFIELDS Function</a>
+# <a name="LISTOFFIELDS">LISTOFFIELDS ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `LISTOFFIELDS` function returns a *Record list* that is created based on the structure of a given argument of one of the following types: *Enumeration* or *Container (record)*.
+The `LISTOFFIELDS` function returns a *Record list* value that is created based on the structure of the specified argument of the *Enumeration* or *Container (record)* type.
 
 ## Syntax 1
 
@@ -50,47 +50,47 @@ LISTOFFIELDS (path, language)
 
 ## Arguments
 
-`path` : Data source reference
+`path`: Data source reference
 
-A valid reference path to a data source of one of the following data types:
+The valid reference path of a data source of one of the following data types:
 
-- *Model enumeration*
-- *Format enumeration*
-- *Application enumeration*
-- *Container (record)*
+- Model enumeration
+- Format enumeration
+- Application enumeration
+- Container (record)
 
-`language` : *String*
+`language`: *String*
 
-A text representing a language code.
+Text that represents a language code.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-The list that is created consists of records having the following fields of the following data types:
+The list that is created consists of records that have the following fields:
 
-- Name: *String*
-- Label: *String*
-- Description: *String*
-- IsTranslated: *Boolean*
+- **Name** (*String* data type)
+- **Label** (*String* data type)
+- **Description** (*String* data type)
+- **IsTranslated** (*Boolean* data type)
 
-When the first argument refers to a data source of the *Container (Record)* type, for every field of the referred container record, a new record is added to the list that is created. The **Name** field of every created record returns the name of the field of the referred container record for which the current record has been created.
+If the `path` argument refers to a data source of the *Container (Record)* type, for every field of the referenced container record, a new record is added to the list that is created. For every record that is created, the **Name** field returns the name of the field of the referenced container record that the current record was created for.
 
-When the first argument refers to a data source of one of *Enumerations* type, for every enumeration value of the referred enumeration, a new record is added to the list that is created. The **Name** field of every created record returns the value of the referred enum for which the current record has been created. The **Description** field of every created record returns the description of the referred enum for which the current record has been created. The **Label** field of every created record returns the label of the referred enum for which the current record has been created.
+If the `path` argument refers to a data source of one of the *Enumeration* types, for every enumeration value of the referenced enumeration, a new record is added to the list that is created. For every record that is created, the **Name** field returns the value of the referenced enumeration that the current record was created for, the **Description** field returns the description of that enumeration, and the **Label** field returns the label of that enumeration.
 
-At runtime, when the syntax 1 is used, the **Label** and **Description** fields must return values that are based on the running ER format's language settings:
+At runtime, when syntax 1 is used, the **Label** and **Description** fields must return values that are based on the language settings of the Electronic reporting (ER) format that is running:
 
-- When the labels and descriptions for requested language are available, the **Label** and **Description** fields return values that are based on this language and the **IsTranslated** field returns **True**.
-- When the labels and descriptions for the requested language are not available, the **Label** and **Description** fields return values that are based on the default **EN-US** language and the **IsTranslated** field returns **False**.
+- If the labels and descriptions for the requested language are available, the **Label** and **Description** fields return values that are based on that language, and the **IsTranslated** field returns **True**.
+- If the labels and descriptions for the requested language aren't available, the **Label** and **Description** fields return values that are based on the default **EN-US** language, and the **IsTranslated** field returns **False**.
 
-At runtime, when the syntax 2 is used, the **Label** and **Description** fields must return values that are based on the language that is defined as the second argument of the called function:
+At runtime, when syntax 2 is used, the **Label** and **Description** fields must return values that are based on the language that is defined as the second argument of the called function:
 
-- When the labels and descriptions for requested language are available, the **Label** and **Description** fields return values that are based on this language and the **IsTranslated** field returns **True**.
-- When the labels and descriptions for requested language are not available, the **Label** and **Description** fields return values that are based on the **EN-US** language and the **IsTranslated** field returns **False**.
+- If the labels and descriptions for the requested language are available, the **Label** and **Description** fields return values that are based on that language, and the **IsTranslated** field returns **True**.
+- If the labels and descriptions for the requested language aren't available, the **Label** and **Description** fields return values that are based on the **EN-US** language, and the **IsTranslated** field returns **False**.
 
 ## Example 1
 
@@ -100,9 +100,9 @@ In the following illustration, an enumeration is introduced in an ER data model.
 
 The following illustration shows these details:
 
--   The model enumeration is inserted into a report as a data source.
--   An ER expression uses the model enumeration as a parameter of the `LISTOFFIELDS` function.
--   A data source of the *Record list* type is inserted into a report by using the ER expression that is created.
+- The model enumeration is inserted into a report as a data source.
+- An ER expression uses the model enumeration as a parameter of the `LISTOFFIELDS` function.
+- A data source of the *Record list* type is inserted into a report by using the ER expression that is created.
 
 <a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a>
 
@@ -119,16 +119,16 @@ The following illustration shows the result when the designed format is run.
 
 ## Example 2
 
-For example, you use the `Calculated field` data source type to configure the **enumType_de** and **enumType_deCH** data sources for the <strong>enumType</strong> data model enumeration.
+You use the *Calculated field* data source type to configure **enumType\_de** and **enumType\_deCH** data sources for the **enumType** data model enumeration:
 
--   **enumType_de** = `LISTOFFIELDS (enumType, "de")`
--   **enumType_deCH** = `LISTOFFIELDS (enumType, "de-CH")`
+- **enumType_de** = `LISTOFFIELDS (enumType, "de")`
+- **enumType_deCH** = `LISTOFFIELDS (enumType, "de-CH")`
 
-In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if this translation is available. If the Swiss German translation isn't available, the label is in German.
+In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if that translation is available. If the Swiss German translation isn't available, the label is in German.
 
-`
+```
 IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
-`
+```
 
 ## Additional resources
 
