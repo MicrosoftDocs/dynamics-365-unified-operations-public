@@ -5,7 +5,7 @@ title: Unified product experience
 description: This topic describes the integration of product data between Finance and Operations apps and Common Data Service.
 author: t-benebo 
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,7 +56,7 @@ Product information contains all the information related to the product and its 
 
 Finance and Operations | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
-Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
+Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. 
 Common Data Service released distinct products | Product | The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
 Product number identified barcode | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
 Default order settings | msdyn\_productdefaultordersettings
