@@ -2,10 +2,10 @@
 # required metadata
 
 title: WHERE ER function
-description: This topic explains how the WHERE ER function is used
+description: This topic provides information about how the WHERE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,21 +60,20 @@ The result list of records.
 
 ## Usage notes
 
-This function differs from the [FILTER](er-functions-list-filter.md) function, because the specified condition is applied to any ER data source of the *Record
-list* type in memory.
+This function differs from the [FILTER](er-functions-list-filter.md) function, because the specified condition is applied to any ER data source of the *Record list* type in memory.
 
-When the configured arguments of this functions (list and condition) allow to translate this request to the direct SQL call, the warning is thrown at design time informing that from the performance improvement perspective it would be
+When the configured arguments of this functions (list and condition) allow this request to be translated to the direct SQL call, the warning is thrown at design time that informs the user that from a performance improvement perspective, it would be
 better to use the
 [FILTER](file:///C:\Users\nselin\Documents\Projects\Ger\Content\Formula%20%20designer%20-%20restructuring\Formula%20designer%20(updated)\Formula%20language%20(new)\Category%20-%20list%20(new)\er-functions-list-filter.md)
 function instead of `WHERE`.
 
 ## Example 1
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, `WHERE (Vendors, Vendors.VendGroup = "40")` returns a list of just the vendors that belong to vendor group 40.
+If **Vendor** is configured as an ER data source that refers to the **VendTable** table, `WHERE (Vendors, Vendors.VendGroup = "40")` returns a list of only the vendors that belong to vendor group 40.
 
 ## Example 2
 
-If you enter the data source **DS** of the `Calculated field` type and it contains the expression `SPLIT ("A|B|C", “|”)`, the `WHERE( DS, DS.Value = “B”)` expression returns a list of just one record that contains the text “B” in the **Value** field.
+If you enter the data source **DS** of the `Calculated field` type, and it contains the expression `SPLIT ("A|B|C", “|”)`, the `WHERE( DS, DS.Value = “B”)` expression returns a list of only one record that contains the text “B” in the **Value** field.
 
 ## Additional resources
 
