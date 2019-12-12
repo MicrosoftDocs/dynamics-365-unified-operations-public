@@ -2,10 +2,10 @@
 # required metadata
 
 title: List of ER functions of the record category
-description: This topic explains what record functions are supported in ER
+description: This topic provides information about the record functions that are supported in ER.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
