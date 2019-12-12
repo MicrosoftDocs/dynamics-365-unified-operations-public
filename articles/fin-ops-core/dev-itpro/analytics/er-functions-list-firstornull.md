@@ -2,7 +2,7 @@
 # required metadata
 
 title: FIRSTORNULL ER function
-description: This topic explains how the FIRSTORNULL ER function is used
+description: This topic explains how the FIRSTORNULL Electronic reporting (ER) function is used
 author: NickSelin
 manager: kfend
 ms.date: 11/29/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FIRSTORNULL">FIRSTORNULL Function</a>
+# <a name="FIRSTORNULL">FIRSTORNULL ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `FIRSTORNULL` returns the first record of the specified list as a *Container (record)*, if that record is not empty. Otherwise, returns a null *Container (record)*.
+The `FIRSTORNULL` function returns the first record of the specified list as a *Container (record)* value, if that record isn't empty. If the record is empty, this function returns a null *Container (record)* value.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ FIRSTORNULL (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Container (record)*
 
-The result record value.
+The resulting record value.
 
 ## Example
 
-The `FIRSTORNULL(SPLIT("",1)).Value` expression returns an empty string “”.
+The expression `FIRSTORNULL(SPLIT("",1)).Value` returns an empty string (**""**).
 
 ## Additional resources
 
