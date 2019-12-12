@@ -47,6 +47,12 @@ This topic explains how to update the local agent. The latest version of the loc
 | 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting an ADFS that also is used for Office365. |
 | 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
 | 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config, which can be found on [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework) |
+| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
+
+## What's new in local agent 2.4.0?
+
+- Local agent 2.4.0 now requires .Net Framework 4.8 to uptake the newest changes from LCS. Please be sure run the latest Infrastructure Scripts available in LCS to meet the newest requirements.
+- This release also fixes the 255/-1 exit error from the AOSSetupHybridCloud.exe where the deployment ended when deploying the AXSFType.
 
 ## What's new in local agent 2.3.0?
 
