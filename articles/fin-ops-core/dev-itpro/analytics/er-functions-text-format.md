@@ -2,10 +2,10 @@
 # required metadata
 
 title: FORMAT ER function
-description: This topic explains how the FORMAT ER function is used
+description: This topic provides information about how the FORMAT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,7 +68,7 @@ If an argument is not provided for a parameter, the parameter is returned as "%N
 
 ## Example
 
-In the following illustration, the **PaymentModel** data source returns the list of customer records via the **Customer** component and the processing date value via the **ProcessingDate** field.
+In the following illustration, the **PaymentModel** data source returns the list of customer records by using the **Customer** component and the processing date value by using the **ProcessingDate** field.
 
 <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a>
 
@@ -99,7 +99,6 @@ If the same report is processed for the **Litware Retail** customer on December 
 >[!NOTE] The following syntax is applied in ER formulas for labels:
 >
 > - For labels from Finance app resources: **@X**, where **X** is the label ID in the Application Object Tree (AOT)
->
 > - For labels that reside in ER configurations: **@"GER_LABEL:X"**, where **X** is the label ID in the ER configuration
 
 ## Additional resources
