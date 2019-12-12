@@ -2,10 +2,10 @@
 # required metadata
 
 title: GETENUMVALUEBYNAME ER function
-description: This topic explains how the GETENUMVALUEBYNAME ER function is used
+description: This topic provides information about how the GETENUMVALUEBYNAME ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `GETENUMVALUEBYNAME` function searches for a specific *Enum* value in the specified enumeration data source by using the specified as *String* text enumeration name. Returns an *Enum* value when such value has been found. Otherwise, returns **null** enum value.
+The `GETENUMVALUEBYNAME` function searches for a specific *Enum* value in the specified enumeration data source by using the specified as *String* text enumeration name. An *Enum* value is returned when the value has been found. Otherwise, the enum value **null** is returned.
 
 ## Syntax
 
@@ -48,9 +48,9 @@ GETENUMVALUEBYNAME (enumeration data source path, enumeration value text)
 
 A valid path to a data source of one of the following enumeration types:
 
--   ER model enumeration
--   ER format enumeration
--   Dynamics 365 Finance enumeration
+- ER model enumeration
+- ER format enumeration
+- Dynamics 365 Finance enumeration
 
 `enumeration value text` : *String*
 
