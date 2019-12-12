@@ -2,7 +2,7 @@
 # required metadata
 
 title: SPLITLIST ER function
-description: This topic provides information about how the SPLITLIST ER function is used.
+description: This topic provides information about how the SPLITLIST Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="SPLITLIST">SPLITLIST Function</a>
+# <a name="SPLITLIST">SPLITLIST ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `SPLITLIST` function splits the specified list into sub-lists (or batches), each of which contains the specified number of records. It then returns the result as a new *Record list* of batches.
+The `SPLITLIST` function splits the specified list into sublists (or batches), each of which contains the specified number of records. It then returns the result as a new *Record list* value that consists of the batches.
 
 ## Syntax
 
@@ -44,39 +44,39 @@ SPLITLIST (list, number)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
 `number`: *Integer*
 
 The maximum number of records per batch.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-The returned list of batches contains the following elements:
- 
- - **Value**: *List*
+The list of batches that is returned contains the following elements:
+
+ - **Value:** *List*
 
     The list of records that belong to the current batch.
 
-- **BatchNumber**: *Integer*
+- **BatchNumber:** *Integer*
 
     The number of the current batch in the returned list.
 
 ## Example
 
-In the following illustration, a **Lines** data source is created as a record list of three records. This list is divided into batches, each of which contains up to two records.
+In the following illustration, a **Lines** data source is created as a record list that has three records. This list is divided into batches, each of which contains up to two records.
 
 <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
 
-The following illustration shows the designed format layout. In this format layout, bindings to the Lines data source are created to generate output in XML format. This output presents individual nodes for each batch and the records in it.
+The following illustration shows the designed format layout. In this format layout, bindings to the **Lines** data source are created to generate output in XML format. This output presents individual nodes for each batch and the records in it.
 
 <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a>
 
