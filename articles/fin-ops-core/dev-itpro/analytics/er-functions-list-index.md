@@ -2,7 +2,7 @@
 # required metadata
 
 title: INDEX ER function
-description: This topic provides information about how the INDEX ER function is used.
+description: This topic provides information about how the INDEX Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="INDEX">INDEX Function</a>
+# <a name="INDEX">INDEX ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `INDEX` function returns a *Container (record)* that is selected by a specific numeric index in the specified list. An exception is thrown if the index is out of range of the records in the specified list.
+The `INDEX` function returns a *Container (record)* value that is selected by using the specified numeric index in the specified list. If the index is out of range for the records in the specified list, an exception is thrown.
 
 ## Syntax
 
@@ -44,27 +44,27 @@ INDEX (list, index)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-`index` : *Integer*
+`index`: *Integer*
 
-A numeric index indicating the position of a desired record in a given list.
+A numeric index that indicates the position of the desired record in the specified list.
 
-## Returns
+## Return values
 
 *Container (record)*
 
-The result record value.
+The resulting record value.
 
 ## Example 1
 
-If you enter the data source **DS** of the *Calculated field* type and it contains the expression `SPLIT ("A|B|C", “|”)`, the expression `DS.Value` returns the text value, “B” for the 2nd record of this record list. The expression `INDEX (SPLIT ("A|B|C", “|”), 2).Value` also returns the “B” text value.
+If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `DS.Value` returns the text value **"B"** for the second record of this record list. The expression `INDEX (SPLIT ("A|B|C", "|"), 2).Value` also returns the text value **"B"**.
 
 ## Example 2
 
-If you enter the data source **DS** of the *Calculated field* type and it contains the expression `SPLIT ("A|B|C", “|”)`, the expression `INDEX (SPLIT ("A|B|C", “|”), 4).Value` throws an exception at runtime.
+If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `INDEX (SPLIT ("A|B|C", "|"), 4).Value` throws an exception at runtime.
 
 ## Additional resources
 
