@@ -2,7 +2,7 @@
 # required metadata
 
 title: ALLITEMSQUERY ER function
-description: This topic provides information about how the ALLITEMSQUERY ER function is used.
+description: This topic provides information about how the ALLITEMSQUERY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,13 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COLLECTEDLIST">COLLECTEDLIST Function</a>
+# <a name="ALLITEMSQUERY">ALLITEMSQUERY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-# <a name="ALLITEMSQUERY">ALLITEMSQUERY Function</a>
-
-The `ALLITEMSQUERY` function runs as a joined SQL query and returns a new flattened *Record list* as a list of records that represent all items that match the specified path.
+The `ALLITEMSQUERY` function runs as a joined SQL query. It returns a new flattened *Record list* value that consists of a list of records that represent all items that match the specified path.
 
 ## Syntax
 
@@ -46,41 +44,36 @@ ALLITEMSQUERY (path)
 
 ## Arguments
 
-`path` : *Record list*
+`path`: *Record list*
 
-A valid path to a data source of the *Record list* data type. It must contain at least one relation.
+The valid path of a data source of the *Record list* data type. It must contain at least one relation.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-The specified path must be defined as a valid data source path of a data source element of the *Record list* data type. It must also contain at least one relation. Data elements such as the path *String* and *Date* should raise an error in the ER
-expression builder at design time.
+The specified path must be defined as a valid data source path of a data source element of the *Record list* data type. It must also contain at least one relation. Data elements such as the path *String* and *Date* should raise an error in the Electronic reporting (ER) expression builder at design time.
 
-When this function is applied to a data sources of the *Record list* data type that refer to an application object that can be directly called by using SQL (table, entity, query), it runs as a joined SQL query. Otherwise, it is executed
-in memory as the [ALLITEMS](er-functions-list-allitems.md) function.
+When this function is applied to data sources of the *Record list* data type that refer to an application object that can be directly called by using SQL (for example, an table, entity, or query), it runs as a joined SQL query. Otherwise, it runs in memory as the [ALLITEMS](er-functions-list-allitems.md) function.
 
 ## Example
 
-Define the following data sources in your model mapping:
+You define the following data sources in your model mapping:
 
--   **CustInv** (`Table records` type), which refers to the
-    **CustInvoiceTable** table.
+- A **CustInv** data source of the *Table records* type that refers to the CustInvoiceTable table
+- A **FilteredInv** data source of the *Calculated field* type that contains the expression `FILTER (CustInv, CustInv.InvoiceAccount = "US-001")`
+- A **JourLines** of the *Calculated field* type that contains the expression `ALLITEMSQUERY ( FilteredInv.'<Relations'.CustInvoiceJour.'<Relations'.CustInvoiceTrans)`
 
--   **FilteredInv** (`Calculated field` type), which contains the expression** `FILTER (CustInv, CustInv.InvoiceAccount = "US-001")`
+When you run the model mapping to call the **JourLines** data source, the following SQL statement is run:
 
--   **JourLines** (`Calculated field` type), which contains the
-    expression `ALLITEMSQUERY ( FilteredInv.'<Relations'.CustInvoiceJour.'<Relations'.CustInvoiceTrans)`
-
-When you run your model mapping to call the **JourLines** data source, the following SQL statement is executed:
-
-`SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN
-CUSTINVOICETRANS T3 WHERE...`
-
+```
+SELECT ... FROM CUSTINVOICETABLE T1 CROSS JOIN CUSTINVOICEJOUR T2 CROSS JOIN
+CUSTINVOICETRANS T3 WHERE...
+```
 
 ## Additional resources
 
