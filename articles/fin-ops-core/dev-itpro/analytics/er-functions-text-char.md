@@ -2,10 +2,10 @@
 # required metadata
 
 title: CHAR ER function
-description: This topic explains how the CHAR ER function is used
+description: This topic provides information about how the CHAR ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ CHAR (number)
 
 `number` : *Integer*
 
-A number that is corresponded to an expected string of characters.
+A number that corresponds to an expected string of characters.
 
 ## Returns
 
@@ -56,8 +56,8 @@ The result text value.
 
 ## Usage notes
 
-> [!NOTE] The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For the list of supported encodings, see [Encoding
-class](https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx).
+> [!NOTE] 
+> The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For the list of supported encodings, see [Encoding class](https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx).
 
 ## Example
 
