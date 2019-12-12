@@ -2,10 +2,10 @@
 # required metadata
 
 title: REVERSE ER function
-description: This topic explains how the REVERSE ER function is used
+description: This topic provides information about how the REVERSE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,7 +60,7 @@ If you enter the data source **DS** of the `Calculated field` type and it contai
 
 ## Example 2
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` expression returns a list of vendors that is sorted by name in descending order.
+If **Vendor** is configured as an ER data source that refers to the **VendTable** table, the `REVERSE (ORDERBY (Vendors, Vendors.'name()'))` expression returns a list of vendors that is sorted by name in descending order.
 
 ## Additional resources
 
