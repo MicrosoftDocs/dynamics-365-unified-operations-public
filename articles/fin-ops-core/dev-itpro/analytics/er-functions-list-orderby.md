@@ -2,7 +2,7 @@
 # required metadata
 
 title: ORDERBY ER function
-description: This topic provides information about how the ORDERBY ER function is used.
+description: This topic provides information about how the ORDERBY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,45 +30,45 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ORDERBY">ORDERBY Function</a>
+# <a name="ORDERBY">ORDERBY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ORDERBY` function returns the specified list as a *Record list* after it has been sorted according to the specified arguments. These arguments can be defined as expressions.
+The `ORDERBY` function returns the specified list as a *Record list* value after it has been sorted according to the specified arguments. These arguments can be defined as expressions.
 
 ## Syntax
 
 ```
-ORDERBY (list , expression 1 [, expression 2, … , expression N])
+ORDERBY (list , expression 1[, expression 2, …, expression N])
 ```
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-`expression 1` : *Field*
+`expression 1`: *Field*
 
-A valid path to a field of a data source that is referred by using the first argument of the called function. The referred field must be a field of the primitive data type. This argument is mandatory.
+The valid path of a field of the data source that is referenced by the `list` argument of the called function. The referenced field must be a field of the primitive data type. This argument is required.
 
-`expression N` : *Field*
+`expression N`: *Field*
 
-A valid path to a field of a data source that is referred by using the first argument of the called function. The referred field must be a field of the primitive data type. These arguments are optional.
+The valid path of a field of the data source that is referenced by the `list` argument of the called function. The referenced field must be a field of the primitive data type. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Example 1
 
-If you enter the data source **DS** of the `Calculated field` type and it contains the expression `SPLIT ("C|B|A", “|”)`, the expression `FIRST( ORDERBY( DS, DS. Value)).Value` returns the text value, “A”.
+If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("C|B|A", "|")`, the expression `FIRST( ORDERBY( DS, DS. Value)).Value` returns the text value **"A"**.
 
 ## Example 2
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, `ORDERBY (Vendors, Vendors.'name()')` expression returns a list of vendors that is sorted by name in ascending order.
+If **Vendor** is configured as an Electronic reporting (ER) data source that refers to the VendTable table, the expression `ORDERBY (Vendors, Vendors.'name()')` returns a list of vendors that is sorted by name in ascending order.
 
 ## Additional resources
 
