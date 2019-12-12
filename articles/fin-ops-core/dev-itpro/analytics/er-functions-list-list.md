@@ -2,10 +2,10 @@
 # required metadata
 
 title: LIST ER function
-description: This topic explains how the LIST ER function is used
+description: This topic provides information about how the LIST ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `LIST` function returns a *Record list* as a new of records that is created from specified arguments.
+The `LIST` function returns a *Record list* as a new list of records that is created from specified arguments.
 
 ## Syntax
 
@@ -60,21 +60,21 @@ The result list of records.
 
 ## Usage notes
 
-The structure of the created list contains the only fields that are presented in the structure of every record that is  mentioned in arguments.
+The structure of the created list contains the only fields that are presented in the structure of every record that is mentioned in arguments.
 
 ## Example
 
 You can enter the data source **Record 1** of the `Container` type containing the following nested fields of the `Calculated field` type:
 
--	**Code** containing the expression that returns the value of the `String` type
--	**Amount** containing the expression that returns the value if the `Real` type
+-	**Code**: Contains the expression that returns the value of the `String` type
+-	**Amount**: Contains the expression that returns the value if the `Real` type
 
 Then, you can enter the data source **Record 2** of the `Container` type containing the following nested fields of the `Calculated field` type:
 
--	**Amount** containing the expression that returns the value if the `Real` type
--	**IsValid** containing the expression that returns the value of the `Boolean` type
+-	**Amount**: Contains the expression that returns the value if the `Real` type
+-	**IsValid**: Contains the expression that returns the value of the `Boolean` type
 
-The expression `LIST(‘Record 1’, ‘Record 2’)` returns a new list containing 2 records and having the structure consisting a single field **Amount** of the `Real` type as the only this field is presented in every argument of the called function.
+The expression `LIST(‘Record 1’, ‘Record 2’)` returns a new list that contains two records and has a structure that consists of a single field **Amount** of the `Real` type and is the only field is presented in every argument of the called function.
 
 ## Additional resources
 
