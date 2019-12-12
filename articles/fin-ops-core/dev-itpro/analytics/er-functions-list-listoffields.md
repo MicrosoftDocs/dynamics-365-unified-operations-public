@@ -121,8 +121,8 @@ The following illustration shows the result when the designed format is run.
 
 You use the *Calculated field* data source type to configure **enumType\_de** and **enumType\_deCH** data sources for the **enumType** data model enumeration:
 
-- **enumType_de** = `LISTOFFIELDS (enumType, "de")`
-- **enumType_deCH** = `LISTOFFIELDS (enumType, "de-CH")`
+- **enumType\_de** = `LISTOFFIELDS (enumType, "de")`
+- **enumType\_deCH** = `LISTOFFIELDS (enumType, "de-CH")`
 
 In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if that translation is available. If the Swiss German translation isn't available, the label is in German.
 
