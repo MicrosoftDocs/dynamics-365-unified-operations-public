@@ -2,10 +2,10 @@
 # required metadata
 
 title: EMPTYRECORD ER function
-description: This topic explains how the EMPTYRECORD ER function is used
+description: This topic provides information about how the EMPTYRECORD ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,12 +56,12 @@ The result record value.
 
 ## Usage notes
 
-> [!NOTE] A null record is a record where all fields have an empty value. An empty value is 0 (zero) for numbers, an empty string for strings, and so on.
+> [!NOTE] 
+> A null record is a record where all fields have an empty value. An empty value is zero (0) for numbers, an empty string for strings, and so on.
 
 ## Example
 
-`EMPTYRECORD (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the
-[SPLIT](er-functions-list-split.md) function.
+`EMPTYRECORD (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the SPLIT function. For more information, see [SPLIT](er-functions-list-split.md).
 
 ## Additional resources
 
