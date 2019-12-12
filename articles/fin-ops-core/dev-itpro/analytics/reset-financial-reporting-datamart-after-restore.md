@@ -33,32 +33,24 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for the following versions of Microsoft Dynamics 365 Finance:
+This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways depending on the role or the access to the client or infrastructure. 
 
-- Financial reporting release 7.2.6.0 and later
-- Financial reporting release 7.0.10000.4 and later
-- Microsoft Dynamics 365 Finance + Operations (on-premises) 
-
-To get Financial reporting release 7.2.6.0, you can download KB 4052514 from <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
-
-## Reset the Financial reporting data mart for Financial reporting release 7.2.6.0 and later
-
-### Reset the Financial reporting data mart from Report designer
-
-> [!NOTE]
-> The steps in this process are supported for Financial reporting release 7.2.6.0 and later. If you have an earlier release, contact the Support team for assistance.
-
-To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
-
-In specific scenarios, you might have to reset the data mart for Financial reporting. You can complete this task in the Report designer client. Here are some scenarios where you might have to reset the data mart:
+In specific scenarios, you might have to reset the data mart for Financial reporting. Here are some scenarios where you might have to reset the data mart:
 
 - The application database was restored, but the data mart database wasn't restored.
-- You see incorrect data for a period.
+- You see incorrect data for a period and have determined it is not a report design issue. 
+- You see incorrect data for a period and see records under integration attempts within Report designer integration status.
 - Support instructs you to reset the data mart as part of a troubleshooting step.
 
 The data mart reset should be done only during times when the amount of processing on the database is small. Financial reporting will be unavailable during the reset process.
 
-#### Reset the data mart
+### Reset the Financial reporting data mart from Report designer
+
+> [!NOTE]
+> The steps in this process are supported for Financial reporting release 7.2.6.0 and later. 
+
+To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
+
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart**. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
@@ -76,13 +68,7 @@ The **Data status** grid provides a snapshot of the transactions, exchange rates
 
 If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
 
-### Reset the data mart in Financial reporting release 7.2.6.0
-
-To reset the data mart in Financial reporting release 7.2.6.0 and earlier, in the **Reset Data Mart** dialog box, select the **Reset data mart** check box, and then select **OK**. You should reset the data mart only during scheduled downtime.
-
-[![Reset data mart check box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
-
-### Reset the data mart and select a reason in Financial reporting release 7.3.0
+### Reset the data mart and select a reason 
 
 If you determine that a data mart reset is required, select the **Reset data mart** check box, and then select a reason in the **Reason** field. The following options are available:
 
@@ -108,12 +94,12 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 > [!NOTE]
 > The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says "Integration complete" in the bottom-left corner.
 
-## Reset the Financial reporting data mart for Financial reporting release 7.0.10000.4 and later
+## Reset the Financial reporting data mart through PowerShell
 
 If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
 
 > [!NOTE]
-> The steps in this process are supported for Microsoft Dynamics AX application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
+> The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
 ### Export report definitions
 
@@ -218,7 +204,7 @@ Import your report designs from Report designer by using the file that was creat
 
 6. Select **Import**.
 
-## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) 
+## Reset the Financial reporting data mart for Dynamics 365 Finance and Operations (on-premises) through SQL 
 
 1. Instruct all users to exit Report designer and the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
