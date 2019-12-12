@@ -2,10 +2,10 @@
 # required metadata
 
 title: ALLITEMSQUERY ER function
-description: This topic explains how the ALLITEMSQUERY ER function is used
+description: This topic provides information about how the ALLITEMSQUERY ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # <a name="ALLITEMSQUERY">ALLITEMSQUERY Function</a>
 
-The `ALLITEMSQUERY` function runs as a joined SQL query and returns a new flattened *Record list* as a list or records representing all items that match the specified path.
+The `ALLITEMSQUERY` function runs as a joined SQL query and returns a new flattened *Record list* as a list of records that represent all items that match the specified path.
 
 ## Syntax
 
@@ -58,7 +58,7 @@ The result list of records.
 
 ## Usage notes
 
-The specified path must be defined as a valid data source path of a data source element of the *Record list* data type, and it must contain at least one relation. Data elements such as the path *String* and *Date* should raise an error in the ER
+The specified path must be defined as a valid data source path of a data source element of the *Record list* data type. It must also contain at least one relation. Data elements such as the path *String* and *Date* should raise an error in the ER
 expression builder at design time.
 
 When this function is applied to a data sources of the *Record list* data type that refer to an application object that can be directly called by using SQL (table, entity, query), it runs as a joined SQL query. Otherwise, it is executed
