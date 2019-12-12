@@ -75,7 +75,7 @@ After you've restored the database, follow these steps.
 2. Make sure that the batch service is running.
 3. Run the Environment reprovisioning tool. (Find the latest version in the global Shared asset library in LCS, and then deploy it by using the **Maintain** function.)
 4. Verify that the tool succeeded, the Retail channel profile is up to date with the correct URLs, and the data synchronization jobs for the Default data group succeeded.
-5. In Microsoft Dynamics 365 Retail, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
+5. In Microsoft Dynamics 365 Commerce, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
 
 ## Taking updates frequently
 
