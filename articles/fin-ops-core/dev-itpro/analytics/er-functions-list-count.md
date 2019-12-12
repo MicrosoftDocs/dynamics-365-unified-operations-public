@@ -2,10 +2,10 @@
 # required metadata
 
 title: COUNT ER function
-description: This topic explains how the COUNT ER function is used
+description: This topic provides information about how the COUNT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `COUNT` function returns an *Integer* value as the number of records in the specified list, if the list is not empty. Otherwise, returns 0 (zero).
+The `COUNT` function returns an *Integer* value as the number of records in the specified list, if the list is not empty. Otherwise, it returns zero (0).
 
 ## Syntax
 
