@@ -610,7 +610,7 @@ Use services.msc to restart the services that you stopped earlier:
 
 ## Export and import report definitions
 
-Resetting the data mart shouldn't impact any report definitions, but certain data movement activities can cause the loss of reports. Be very careful if you are peforming a data movement activity such as overriting a UAT test environment with a copy of production where new reports were being created in UAT. 
+Resetting the data mart won’t impact any report definitions, but certain data movement activities can cause the loss of reports definitions. Be very careful if you are performing a data movement activity such as overwriting a UAT test environment with a copy of production where new reports were being created in UAT.
 
 ### Export report definitions
 
