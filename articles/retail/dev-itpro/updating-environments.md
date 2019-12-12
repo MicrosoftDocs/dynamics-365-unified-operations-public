@@ -43,7 +43,7 @@ Other updates are code updates. The environment page in Microsoft Dynamics Lifec
 
 ![LCS environment page](./media/17-LCS-environment-page.png)
 
-Platform code is at a very low level, and no Microsoft Dynamics 365 Retail features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
+Platform code is at a very low level, and no Microsoft Dynamics 365 Commerce features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
 Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together as a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
 
