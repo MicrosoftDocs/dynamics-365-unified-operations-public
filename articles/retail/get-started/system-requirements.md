@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements for cloud deployments
-description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Retail.
+description: This topic lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: jashanno 
 manager: AnnBe
 ms.date: 12/02/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the system requirements for cloud deployments of the current version of Dynamics 365  Retail. If this step is appropriate, before you install Retail, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This topic lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. If this step is appropriate, before you install Retail, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 ## Supported web browsers
 
