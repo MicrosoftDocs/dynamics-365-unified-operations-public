@@ -2,10 +2,10 @@
 # required metadata
 
 title: SPLITLISTBYLIMIT ER function
-description: This topic explains how the SPLITLISTBYLIMIT ER function is used
+description: This topic provides information about how the SPLITLISTBYLIMIT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `SPLITLISTBYLIMIT` function splits the specified list into a new list of sub-lists (batches), each of which contains the number of records that is dynamically calculated. Returns the result as a new *Record list* of batches.
+The `SPLITLISTBYLIMIT` function splits the specified list into a new list of sub-lists (batches), each of which contains the number of records that is dynamically calculated. IT then returns the result as a new *Record list* of batches.
 
 ## Syntax
 
@@ -44,7 +44,7 @@ SPLITLISTBYLIMIT (list, limit value, limit source)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
 A valid path to a data source of the *Record list* data type.
 
@@ -66,13 +66,13 @@ The result list of records.
 
 The returned list of batches contains the following elements:
 
--   **Value** : *List*
+- **Value**: *List*
 
-    List of records that belong to the current batch
+    The list of records that belong to the current batch.
 
--   **BatchNumber** : *Integer*
+- **BatchNumber**: *Integer*
 
-    Number of the current batch in the returned list.
+    The number of the current batch in the returned list.
 
 The limit is not applied to a single item of the original list if the limit source exceeds the defined limit.
 
@@ -90,7 +90,7 @@ The following illustration shows the result when the format is run. In this case
 
 <a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
 
-In the following illustrations, the same format has been adjusted so that it presents the list of commodity items in batches when a single batch must include commodities and the total weight should not exceed the limit of 9.
+In the following illustrations, the same format has been adjusted so that it presents the list of commodity items in batches when a single batch must include commodities and the total weight should not exceed the limit of nine.
 
 <a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="Adjusted format" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a>
 
@@ -100,7 +100,8 @@ The following illustration shows the result when the adjusted format is run.
 
 <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
 
-> [!NOTE] The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the `WHERE` function or the **Enabled** expression of the corresponding format element to ignore (skip) sub-lists during report generation, as required.
+> [!NOTE] 
+> The limit isn't applied to the last item of the original list, because the value (11) of the limit source (weight) exceeds the defined limit (9). Use either the `WHERE` function or the **Enabled** expression of the corresponding format element to ignore sub-lists during report generation, as required.
 
 ## Additional resources
 
