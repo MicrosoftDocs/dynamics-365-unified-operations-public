@@ -2,7 +2,7 @@
 # required metadata
 
 title: EMPTYLIST ER function
-description: This topic provides information about how the EMPTYLIST ER function is used.
+description: This topic provides information about how the EMPTYLIST Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="EMPTYLIST">EMPTYLIST Function</a>
+# <a name="EMPTYLIST">EMPTYLIST ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `EMPTYLIST` function returns an empty *Record list* by using the specified list as a source for the list structure.
+The `EMPTYLIST` function returns an empty *Record list* value by using the specified list as a source for the list structure.
 
 ## Syntax
 
@@ -44,20 +44,19 @@ EMPTYLIST (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Example
 
-`EMPTYLIST (SPLIT ("abc", 1))` returns a new empty list that has the same structure as the list that is returned in this example by the `SPLIT` function.
-
+`EMPTYLIST (SPLIT ("abc", 1))` returns a new empty list that has the same structure as the list that is returned by the `SPLIT` function that is used.
 
 ## Additional resources
 
