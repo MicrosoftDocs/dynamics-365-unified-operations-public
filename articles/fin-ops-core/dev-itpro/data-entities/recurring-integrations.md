@@ -144,7 +144,7 @@ In cases when there was no file uploaded to the blob, the dequeue API will retur
 Use the following API.
 
 > [!NOTE]
-> The body of the response of **/enqueue** must be sent in the body of the **/ack** POST request.
+> The body of the response of **/dequeue** must be sent in the body of the **/ack** POST request.
 
 ```
 https://<base URL>/api/connector/ack/<activity ID>
