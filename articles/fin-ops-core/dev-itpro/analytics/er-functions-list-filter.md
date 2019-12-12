@@ -2,10 +2,10 @@
 # required metadata
 
 title: FILTER ER function
-description: This topic explains how the FILTER ER function is used
+description: This topic provides information about how the FILTER ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -68,17 +68,16 @@ querying database.
 
 ## Example 1
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, `FILTER (Vendors, Vendors.VendGroup = "40")` expression returns a list of just the vendors that belong to vendor group **40**.
+If **Vendor** is configured as an ER data source that refers to the **VendTable** table, the `FILTER (Vendors, Vendors.VendGroup = "40")` expression returns a list of only the vendors that belong to vendor group **40**.
 
 ## Example 2
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, and if **parmVendorBankGroup** is configured as an ER data source that returns a value of the `String` data type, `FILTER ( Vendor.'<Relations'.VendBankAccount, 
-Vendor.'<Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)` expression returns a list of just the vendor accounts that belong to a specific bank group.
+If **Vendor** is configured as an ER data source that refers to the **VendTable** table, and if **parmVendorBankGroup** is configured as an ER data source that returns a value of the `String` data type, the `FILTER ( Vendor.'<Relations'.VendBankAccount, 
+Vendor.'<Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)` expression returns a list of only the vendor accounts that belong to a specific bank group.
 
 ## Example 3
 
-If you enter the data source **DS** of the `Calculated field` type and it contains the expression `SPLIT ("A,B,C", “,”)`, you can enter another expression `FILTER( DS, DS.Value = “B”)`. The exception “Validation error: The list expression of FILTER function is not queryable.” is thrown when you try to
-save this expression in the ER formula designer.
+If you enter the data source **DS** of the `Calculated field` type and it contains the expression `SPLIT ("A,B,C", “,”)`, you can enter another expression `FILTER( DS, DS.Value = “B”)`. The exception “Validation error: The list expression of FILTER function is not queryable.” is thrown when you try to save this expression in the ER formula designer.
 
 ## Additional resources
 
