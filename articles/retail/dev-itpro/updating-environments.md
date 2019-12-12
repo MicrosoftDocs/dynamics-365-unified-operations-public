@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update code and environments for Retail projects
-description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Retail implementation projects.
+description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
