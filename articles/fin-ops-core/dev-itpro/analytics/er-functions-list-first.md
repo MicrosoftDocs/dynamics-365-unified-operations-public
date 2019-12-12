@@ -2,7 +2,7 @@
 # required metadata
 
 title: FIRST ER function
-description: This topic provides information about how the FIRST ER function is used.
+description: This topic provides information about how the FIRST Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="FIRST">FIRST Function</a>
+# <a name="FIRST">FIRST ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `FIRST` function returns the first record of the specified list as a *Container (record)*, if that list is not empty. Otherwise, throws an exception.
+The `FIRST` function returns the first record of the specified list as a *Container (record)* value, if that list isn't empty. If the list is empty, this function throws an exception.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ FIRST (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Container (record)*
 
-The result record value.
+The resulting record value.
 
 ## Example 1
 
-The `FIRST(SPLIT("ABC",1)).Value` expression returns the text value, “A”.
+The expression `FIRST(SPLIT("ABC",1)).Value` returns the text value **"A"**.
 
 ## Example 2
 
-The `FIRST(SPLIT("",1)).Value` expression throws an exception at runtime.
+The expression `FIRST(SPLIT("",1)).Value` throws an exception at runtime.
 
 ## Additional resources
 
