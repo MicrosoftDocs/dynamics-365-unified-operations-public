@@ -34,7 +34,7 @@ ms.search.validFrom: 2019-03-01
 
 This topic provides an overview of the various Dynamics 365 Commerce in-store topologies. 
 
-<a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right Retail in store topology](media/CHANNEL/INSTORE/Topology.jpg)</a>
+<a href="https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right Commerce in store topology](media/CHANNEL/INSTORE/Topology.jpg)</a>
 
 ## Supported capabilities when connectivity is lost
 | Operation | Without connectivity to Retail Server<br>(in MPOS Offline Mode) | Without connectivity to HQ<br>(using RSSU) |
