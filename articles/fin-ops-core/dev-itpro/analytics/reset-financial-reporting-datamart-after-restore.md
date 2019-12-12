@@ -44,6 +44,9 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 
 The data mart reset should be done only during times when the amount of processing on the database is small. Financial reporting will be unavailable during the reset process.
 
+ [!NOTE]
+ Resetting the data mart won't impact any report definitions that define the structure of reports, but it is always a good idea to have some backup of reports. See the note at the end of this doc for instructions on how to backup the report defintions. 
+
 ### Reset the Financial reporting data mart from Report designer
 
 > [!NOTE]
@@ -101,33 +104,6 @@ If you ever restore your database from a backup or copy the database from anothe
 > [!NOTE]
 > The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
-### Export report definitions
-
-First, follow these steps to export the report designs from Report designer.
-
-1. In Report designer, select **Company** &gt; **Building Block Groups**.
-2. Select the building block group to export, and then select **Export**.
-
-    > [!NOTE]
-    > For Finance and Operations, only one building block group is supported, **Default**.
-
-3. Select the report definitions to export:
-
-    - To export all your report definitions and the associated building blocks, select **Select All**.
-    - To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab. When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
-
-4. Select **Export**.
-5. Enter a file name, and select a secure location where you want to save the exported report definitions.
-6. Select **Save**.
-
-You can copy or upload the file to a secure location. In this way, the file can be imported into a different environment later. For information about how to use a Microsoft Azure storage account, see [Transfer data with the AzCopy Command-Line Utility](/azure/storage/storage-use-azcopy).
-
-> [!NOTE]
-> Microsoft doesn't provide a storage account as part of your Finance and Operations agreement. You must either purchase a storage account or use a storage account from a separate Azure subscription.
-
-> [!WARNING]
-> Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
-
 ### Stop services
 
 The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
@@ -144,7 +120,7 @@ Download the latest MinorVersionDataUpgrade.zip package. For instructions about 
 
 An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
-#### Run scripts against the database
+#### Run prerequisite SQL scripts against the database
 
 Run the following scripts against the database (not against the Financial reporting database):
 
@@ -153,7 +129,7 @@ Run the following scripts against the database (not against the Financial report
 
 These scripts help guarantee that the users, roles, and change tracking settings are correct.
 
-#### Run a Windows PowerShell command to reset the database
+#### Run a Windows PowerShell script to reset the database
 
 On the AOS computer, start Microsoft Windows PowerShell as an administrator, and run the following commands to reset the integration between application and Financial reporting.
 
@@ -185,26 +161,9 @@ Use services.msc to restart the services that you stopped earlier:
 - Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
-#### Import report definitions
 
-Import your report designs from Report designer by using the file that was created during the export.
 
-1. In Report designer, select **Company** &gt; **Building Block Groups**.
-2. Select the building block group to export, and then select **Export**.
-
-    > [!NOTE]
-    > Only one building block group is supported, **Default**.
-
-3. Select the **Default** building block, and then select **Import**.
-4. Select the file that contains the exported report definitions, and then select **Open**.
-5. In the **Import** dialog box, select the report definitions to import:
-
-    - To import all the report definitions and the associated building blocks, select **Select All**.
-    - To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
-
-6. Select **Import**.
-
-## Reset the Financial reporting data mart for Dynamics 365 Finance and Operations (on-premises) through SQL 
+## Reset the Financial reporting data mart for Dynamics 365 Finance (on-premises) through SQL Server Management Studio 
 
 1. Instruct all users to exit Report designer and the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
@@ -648,3 +607,43 @@ Import your report designs from Report designer by using the file that was creat
     ```
 
     Confirm that all rows have a **LastRunTime** value, and that **StateType** is set to **5**. A **StateType** value of **5** indicates that the data was successfully reloaded. A value of **7** indicates a faulted state. Sometimes, the Organization Hierarchy map has this state the first time that it runs. However, the faulted state but should be automatically resolved.
+
+## Export report definitions
+
+Resetting the data mart shouldn't impact any report definitions, but certain data movement activities can cause the loss of reports. Be very careful if you are peforming a data movement activity such as overriting a UAT test environment with a copy of production where new reports were being created in UAT. 
+
+First, follow these steps to export the report designs from Report designer.
+
+1. In Report designer, select **Company** &gt; **Building Block Groups**.
+2. Select the building block group to export, and then select **Export**.
+
+    > [!NOTE]
+    > For Finance and Operations, only one building block group is supported, **Default**.
+
+3. Select the report definitions to export:
+
+    - To export all your report definitions and the associated building blocks, select **Select All**.
+    - To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab. When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
+
+4. Select **Export**.
+5. Enter a file name, and select a secure location where you want to save the exported report definitions.
+6. Select **Save**.
+
+You can copy or upload the file to a secure location. 
+
+> [!WARNING]
+> Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+
+#### Import report definitions
+
+Import your report designs from Report designer by using the file that was created during the export.
+
+1. In Report designer, select **Company** &gt; **Building Block Groups**.
+2. Select the **Default** building block, and then select **Import**.
+3. Select the file that contains the exported report definitions, and then select **Open**.
+4. In the **Import** dialog box, select the report definitions to import:
+
+    - To import all the report definitions and the associated building blocks, select **Select All**.
+    - To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
+
+5. Select **Import**.
