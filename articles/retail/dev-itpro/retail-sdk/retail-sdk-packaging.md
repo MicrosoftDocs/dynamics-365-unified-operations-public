@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create retail deployable packages
-description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
+description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/22/2019
@@ -99,7 +99,7 @@ The following configuration settings are available in the Customization.settings
 **Example**
 
 ```
-        ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
+ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
 ```
 
 - **ISV\_RetailServer\_CustomizableFile** – Specify the details of all the customized Retail Server assemblies. You can have multiple entries, one for each Retail Server assembly.
@@ -107,8 +107,8 @@ The following configuration settings are available in the Customization.settings
 **Example**
 
 ```
-        ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
-        ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
+ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
+ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
 ```
 
 - **ISV\_RetailProxy\_CustomizableFile** – Specify the details of all the customized Retail proxy assemblies. You can have multiple entries, one for each Retail proxy assembly. 
@@ -116,7 +116,7 @@ The following configuration settings are available in the Customization.settings
 **Example**
 
 ```
-        ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
+ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
 ```
 
 - **ISV\_HardwareStation\_CustomizableFile** – Specify the details of all the customized Hardware station assemblies. You can have multiple entries, one for each customized Hardware station assembly.
@@ -124,15 +124,15 @@ The following configuration settings are available in the Customization.settings
 **Example**
 
 ```
-   ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
+ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
 ```
 
 - **ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify the details of all the customized database scripts.
 
  **Example**
 
- ```
-     ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
+```
+ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
 ```
 
 > [!IMPORTANT]
@@ -159,56 +159,56 @@ Before you do the package, you must update the following configuration files if 
 **Example**
 
  ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <commerceRuntimeExtensions>
-        <composition>
-            <!-- Register your own assemblies here. -->
-            <add source="assembly" value="my custom library" />
-        </composition>
-    </commerceRuntimeExtensions>
+<?xml version="1.0" encoding="utf-8"?>
+<commerceRuntimeExtensions>
+    <composition>
+        <!-- Register your own assemblies here. -->
+        <add source="assembly" value="my custom library" />
+    </composition>
+</commerceRuntimeExtensions>
 ```
 
 - **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions and dependent assemblies.
 
 **Example**
 
-    ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <commerceRuntimeExtensions>
-        <composition>
-            <!-- Register your own assemblies or types here. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
-    </commerceRuntimeExtensions>
-    ```
+```C#
+<?xml version="1.0" encoding="utf-8"?>
+<commerceRuntimeExtensions>
+    <composition>
+        <!-- Register your own assemblies or types here. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
+</commerceRuntimeExtensions>
+```
 
 - **HardwareStation.Extension.config** – Register all your Hardware station extensions.
 
 **Example**
 
 ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <hardwareStationExtension>
-        <composition>
-            <! -- Register your own assemblies or types here. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
-    </hardwareStationExtension>
+<?xml version="1.0" encoding="utf-8"?>
+<hardwareStationExtension>
+    <composition>
+        <! -- Register your own assemblies or types here. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
+</hardwareStationExtension>
  ```
 
 - **RetailProxy.MPOSOffline.ext.config** – Register all your retail proxy extensions.
 
  **Example**
 
-    ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <retailProxyExtensions>
-        <composition>
-            <!-- Register your own proxy extension assemblies. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
-    </retailProxyExtensions>
-    ```
+```C#
+<?xml version="1.0" encoding="utf-8"?>
+<retailProxyExtensions>
+    <composition>
+        <!-- Register your own proxy extension assemblies. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
+</retailProxyExtensions>
+```
 
 ### Retail Server extension assemblies
 
@@ -222,18 +222,20 @@ The following illustration shows an example of a Retail Server web.config file.
 
 If you are not using the legacy payment connector, then comment the legacy payment connector and enable the non-legacy connector in the web.config file. By default, the legacy payment connector is enabled in the shared hardware station web.config.
 
-**Example** To disable the legacy connector, open the web.config file from \RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin and comment the legacy connector. Enable the non-legacy connector under the composition section, as shown in the following sample code.
+**Example** 
+
+To disable the legacy connector, open the web.config file from \RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin and comment the legacy connector. Enable the non-legacy connector under the composition section, as shown in the following sample code.
 
 > [!NOTE]
 > x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number. This will vary based on your Retail SDK version number.
 
 ```C#
-    <composition>
-      <!-- Defaulting to legacy payment devices.
- <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
-      -->
-      <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
-    </composition>
+<composition>
+    <!-- Defaulting to legacy payment devices.
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
+    -->
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
+</composition>
 ```
 
 > [!NOTE]
