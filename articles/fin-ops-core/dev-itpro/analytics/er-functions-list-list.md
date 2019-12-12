@@ -2,7 +2,7 @@
 # required metadata
 
 title: LIST ER function
-description: This topic provides information about how the LIST ER function is used.
+description: This topic provides information about how the LIST Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,51 +30,51 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="LIST">LIST Function</a>
+# <a name="LIST">LIST ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `LIST` function returns a *Record list* as a new list of records that is created from specified arguments.
+The `LIST` function returns a *Record list* value that consists of a new list of records that is created from the specified arguments.
 
 ## Syntax
 
 ```
-LIST (record 1 [, record 2, … , record N])
+LIST (record 1 [, record 2, …, record N])
 ```
 
 ## Arguments
 
-`record 1` : *Container (record)*
+`record 1`: *Container (record)*
 
-A reference to a data source of the *Record* data type. One argument is mandatory.
+A reference to a data source of the *Record* data type. This argument is required.
 
-`record N` : *Container (record)*
+`record N`: *Container (record)*
 
-A reference to a data source of the *Record* data type. Other arguments are optional.
+A reference to a data source of the *Record* data type. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-The structure of the created list contains the only fields that are presented in the structure of every record that is mentioned in arguments.
+The structure of the list that is created contains only the fields that are presented in the structure of every record that is mentioned in the arguments.
 
 ## Example
 
-You can enter the data source **Record 1** of the `Container` type containing the following nested fields of the `Calculated field` type:
+You enter data source **Record 1** of the *Container* type. This data source contains the following nested fields of the *Calculated field* type:
 
--	**Code**: Contains the expression that returns the value of the `String` type
--	**Amount**: Contains the expression that returns the value if the `Real` type
+- **Code:** This field contains an expression that returns a value of the *String* type.
+- **Amount:** This field contains an expression that returns a value of the *Real* type.
 
-Then, you can enter the data source **Record 2** of the `Container` type containing the following nested fields of the `Calculated field` type:
+You then enter data source **Record 2** of the *Container* type. This data source contains the following nested fields of the *Calculated field* type:
 
--	**Amount**: Contains the expression that returns the value if the `Real` type
--	**IsValid**: Contains the expression that returns the value of the `Boolean` type
+- **Amount:** This field contains an expression that returns a value of the *Real* type.
+- **IsValid:** This field contains an expression that returns a value of the *Boolean* type.
 
-The expression `LIST(‘Record 1’, ‘Record 2’)` returns a new list that contains two records and has a structure that consists of a single field **Amount** of the `Real` type and is the only field is presented in every argument of the called function.
+In this case, the expression `LIST('Record 1', 'Record 2')` returns a new list that contains two records. The structure of this list consists of a single **Amount** field of the *Real* type, because this field is the only field that is presented in every argument of the called function.
 
 ## Additional resources
 
