@@ -2,7 +2,7 @@
 # required metadata
 
 title: ISEMPTY ER function
-description: This topic provides information about how the ISEMPTY ER function is used.
+description: This topic provides information about how the ISEMPTY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ISEMPTY">ISEMPTY Function</a>
+# <a name="ISEMPTY">ISEMPTY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ISEMPTY` returns a *Boolean* **TRUE** if the specified list contains no records. Otherwise, returns a *Boolean* **FALSE**.
+The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records. Otherwise, it returns a *Boolean* value of **FALSE**.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ ISEMPTY (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Boolean*
 
-The result *Boolean* value.
+The resulting *Boolean* value.
 
 ## Example 1
 
-If you enter the data source **DS** of the `Calculated field` type and it contains the expression `SPLIT ("A|B|C", “|”)`, the expression `ISEMPTY(DS)` returns **FALSE**.
+If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.
 
 ## Example 2
 
