@@ -69,6 +69,8 @@ After you publish the updated header fragment, all site pages that use the templ
 
 [Select a site theme](select-site-theme.md)
 
+[Work with CSS override files](css-override-files.md)
+
 [Add a favicon](add-favicon.md)
 
 [Add a welcome message](add-welcome-message.md)
