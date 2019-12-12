@@ -2,7 +2,7 @@
 # required metadata
 
 title: WHERE ER function
-description: This topic provides information about how the WHERE ER function is used.
+description: This topic provides information about how the WHERE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="WHERE">WHERE Function</a>
+# <a name="WHERE">WHERE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `WHERE` function returns the specified list as a *Record list* after it has been filtered according to the specified condition.
+The `WHERE` function returns the specified list as a *Record list* value after it has been filtered according to the specified condition.
 
 ## Syntax
 
@@ -44,36 +44,33 @@ WHERE (list, condition)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-`condition` : *Boolean*
+`condition`: *Boolean*
 
-A valid conditional expression to filter records of a given list.
+A valid conditional expression that is used to filter records of the specified list.
 
-## Returns
+## Return values
 
 *Record list*
 
-The result list of records.
+The resulting list of records.
 
 ## Usage notes
 
-This function differs from the [FILTER](er-functions-list-filter.md) function, because the specified condition is applied to any ER data source of the *Record list* type in memory.
+This function differs from the [FILTER](er-functions-list-filter.md) function, because the specified condition is applied to any Electronic reporting (ER) data source of the *Record list* type that is present in memory.
 
-When the configured arguments of this functions (list and condition) allow this request to be translated to the direct SQL call, the warning is thrown at design time that informs the user that from a performance improvement perspective, it would be
-better to use the
-[FILTER](file:///C:\Users\nselin\Documents\Projects\Ger\Content\Formula%20%20designer%20-%20restructuring\Formula%20designer%20(updated)\Formula%20language%20(new)\Category%20-%20list%20(new)\er-functions-list-filter.md)
-function instead of `WHERE`.
+If the arguments that are configured for this function (`list` and `condition`) allow this request to be translated to the direct SQL call, a warning message is thrown at design time. This message informs the user that performance might be improved if the [FILTER](er-functions-list-filter.md) function is used instead of `WHERE`.
 
 ## Example 1
 
-If **Vendor** is configured as an ER data source that refers to the **VendTable** table, `WHERE (Vendors, Vendors.VendGroup = "40")` returns a list of only the vendors that belong to vendor group 40.
+If **Vendor** is configured as an ER data source that refers to the VendTable table, the expression `WHERE (Vendors, Vendors.VendGroup = "40")` returns a list of only vendors that belong to vendor group 40.
 
 ## Example 2
 
-If you enter the data source **DS** of the `Calculated field` type, and it contains the expression `SPLIT ("A|B|C", “|”)`, the `WHERE( DS, DS.Value = “B”)` expression returns a list of only one record that contains the text “B” in the **Value** field.
+If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `WHERE( DS, DS.Value = "B")` returns a list of only one record that contains the text **"B"** in the **Value** field.
 
 ## Additional resources
 
