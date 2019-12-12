@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.3.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this topic doesn’t provide detailed instructions of every step in the process. This topic is applicable for Dynamics 365 Retail and Dynamics 365 Finance.
+This topic provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this topic doesn’t provide detailed instructions of every step in the process. This topic is applicable for Dynamics 365 Commerce and Dynamics 365 Finance.
 
 
 The following sections will walk through how to manually move your extension to the new Retail SDK, however you can do this using any source control system like Azure DevOps or Git.
@@ -74,7 +74,7 @@ The following tables provide some high-level information about which version the
 > [!NOTE]
 > You might have to rewrite some of the POS inline changes that were completed in 7.1 when you upgrade to version 7.3 or higher.
 
-| **Application version**                 | **CRT sealed** | **HWS sealed** | **POS sealed** | **DB sealed** | **Retail proxy sealed** |
+| Application version                     | CRT sealed     | HWS sealed     | POS sealed     | DB sealed     | Retail proxy sealed |
 |-----------------------------------------|----------------|----------------|----------------|---------------|-------------------------|
 | Application release 8.1                 | Yes            | Yes            | Yes            | Yes           | Yes                     |
 | Application release 8.0                 | Yes            | Yes            | Yes            | Yes           | Yes                     |
@@ -124,7 +124,6 @@ If you are completing a code upgrade, the following Retail SDK components must b
 
   For example, if you copied the **CustomExtension** folder, then you would update extension.json as shown below.
   ```Typescript
-
    {
    "extensionPackages": [
    {
