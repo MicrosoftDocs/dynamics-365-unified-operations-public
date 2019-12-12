@@ -5,7 +5,7 @@ title: Work with publish groups
 description: This topic describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 12/09/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -23,8 +23,8 @@ ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry:
 ms.author: niholman
-ms.search.validFrom: 2019-12-09
-ms.dyn365.ops.version: Release 10.0.5
+ms.search.validFrom: 2019-12-12
+ms.dyn365.ops.version: Release 10.0.8
 
 ---
 # Work with publish groups
@@ -140,3 +140,19 @@ No. For performance and conflict reasons, the system will force you to stagger s
 **Can I use publish groups to schedule omnichannel back-office items, such as discounts and product updates?**
 
 Currently, the publish groups feature supports only website content. However, Microsoft is aware that integration with back-office merchandising scenarios could be valuable for the coordination and automation of omnichannel campaign launches.
+
+## Additional resources
+
+[Ways to add content](add-manage-content.md)
+
+[Page model glossary](page-elements-overview.md)
+
+[Document states and lifecycle](document-states-overview.md)
+
+[Work with modules](work-with-modules.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Customize site navigation](customize-site-navigation.md)
