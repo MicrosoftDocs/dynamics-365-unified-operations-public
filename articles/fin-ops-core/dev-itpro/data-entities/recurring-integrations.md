@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/04/2019
+ms.date: 12/12/2019
 
 ms.topic: article
 ms.prod: 
@@ -144,7 +144,7 @@ In cases when there was no file uploaded to the blob, the dequeue API will retur
 Use the following API.
 
 > [!NOTE]
-> The body of the response of **/enqueue** must be sent in the body of the **/ack** POST request.
+> The body of the response of **/dequeue** must be sent in the body of the **/ack** POST request.
 
 ```
 https://<base URL>/api/connector/ack/<activity ID>
