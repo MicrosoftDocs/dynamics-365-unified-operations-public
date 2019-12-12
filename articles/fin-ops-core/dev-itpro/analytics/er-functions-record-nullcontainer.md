@@ -2,10 +2,10 @@
 # required metadata
 
 title: NULLCONTAINER ER function
-description: This topic explains how the NULLCONTAINER ER function is used
+description: This topic provides information about how the NULLCONTAINER ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,12 +56,12 @@ The result record value.
 
 ## Usage notes
 
-> [!NOTE] This function is obsolete. Use
-[EMPTYRECORD](er-functions-record-emptyrecord.md) instead.
+> [!NOTE] 
+> This function is obsolete. Use the function EMPTYRECORD instead. For more information, see [EMPTYRECORD](er-functions-record-emptyrecord.md).
 
 ## Example
 
-`NULLCONTAINER (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the [SPLIT](er-functions-list-split.md) function.
+`NULLCONTAINER (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the SPLIT function. For more information, see [SPLIT](er-functions-list-split.md).
 
 ## Additional resources
 
