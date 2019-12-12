@@ -2,10 +2,10 @@
 # required metadata
 
 title: CONCATENATE ER function
-description: This topic explains how the CONCATENATE ER function is used
+description: This topic provides information about how the CONCATENATE ER function is used
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -64,7 +64,8 @@ The result text value.
 
 ## Usage notes
 
-> [!NOTE] The expression `"abc" & "def"` also returns "abcdef".
+> [!NOTE] 
+> The expression `"abc" & "def"` also returns "abcdef".
 
 ## Additional resources
 
