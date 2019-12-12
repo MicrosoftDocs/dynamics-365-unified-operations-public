@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, data type conversion, and other (business domain–specific functions).
+This topic explains how to use the formula designer in Electronic reporting (ER). When you design a format for a specific electronic document in ER, you can use formulas to transform data so that it meets the requirements for the document's fulfillment and formatting. These formulas resemble formulas in Microsoft Excel. Various types of functions are supported in the formulas: text, date and time, mathematical, logical, information, and data type conversion functions, and also other, business domain–specific functions.
 
 ## Formula designer overview
 
 ER supports the formula designer. Therefore, at design time, you can configure expressions that can be used for the following tasks at runtime:
 
-- Transform data that is received from an application database, and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
+- Transform data that is received from an application database and that should be entered in an ER data model that is designed to be a data source for ER formats. (For example, these transformations might include filtering, grouping, and data type conversion.)
 - Format data that must be sent to a generating electronic document in accordance with the layout and conditions of a specific ER format. (For example, the formatting might be done in accordance with the requested language or culture, or the encoding).
 - Control the process of creating electronic documents. (For example, the expressions can enable or disable the output of specific elements of the format, depending on processing data. They can also interrupt the document creation process or throw messages to users.)
 
@@ -58,19 +58,19 @@ You can open the **Formula designer** page when you perform any of the following
 
 ## <a name="Binding">Data binding</a>
 
-The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer at runtime:
+The ER formula designer can be used to define an expression that transforms data that is received from data sources, so that the data can be entered in the data consumer in the following ways at runtime:
 
 - From application data sources and runtime parameters to an ER data model
 - From an ER data model to an ER format
 - From application data sources and runtime parameters to an ER format
 
-The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field the Intrastat table to two decimal places and then returns the rounded value.
+The following illustration shows the design of an expression of this type. In this example, the expression rounds the value of the **Intrastat.AmountMST** field in the Intrastat table to two decimal places and then returns the rounded value.
 
-[![Data binding](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Data binding expression](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 The following illustration shows how an expression of this type can be used. In this example, the result of the designed expression is entered in the **Transaction.InvoicedAmount** component of the **Tax reporting model** data model.
 
-[![Data binding being used](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Data binding expression being used](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 At runtime, the designed formula, `ROUND (Intrastat.AmountMST, 2)`, rounds the value of the **AmountMST** field for each record in the Intrastat table to two decimal places. It then enters the rounded value in the **Transaction.InvoicedAmount** component of the **Tax reporting** data model.
 
@@ -78,7 +78,7 @@ At runtime, the designed formula, `ROUND (Intrastat.AmountMST, 2)`, rounds the v
 
 The ER formula designer can be used to define an expression that formats data that is received from data sources, so that the data can be sent as part of the generating electronic document. You might have formatting that must be applied as a typical rule that should be reused for a format. In this case, you can introduce that formatting one time in the format configuration, as a named transformation that has a formatting expression. This named transformation can then be linked to many format components where the output must be formatted according to the formatting expression that you created.
 
-The following illustration shows the design of a transformation of this type. In this example, the **TrimmedString** transformation truncates incoming data of the **String** data type by removing leading and trailing spaces. It then returns the truncated string value.
+The following illustration shows the design of a transformation of this type. In this example, the **TrimmedString** transformation truncates incoming data of the *String* data type by removing leading and trailing spaces. It then returns the truncated string value.
 
 [![Transformation](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
@@ -108,62 +108,63 @@ Each rule of the process flow control is designed as an individual validation. T
 
 [![Validation](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
-The ER formula designer can also be used to generate a file name for a generating electronic document and control the file creation process. The following illustration shows the design of a process flow control of this type. Here is an explanation of the configuration in this example:
+The ER formula designer can also be used to generate a file name for a generating electronic document and to control the file creation process. The following illustration shows the design of a process flow control of this type. Here is an explanation of the configuration in this example:
 
 - The list of records from the **model.Intrastat** data source is divided into batches. Each batch contains up to 1,000 records.
 - The output creates a zip file that contains one file in XML format for every batch that was created.
 - An expression returns a file name for generating electronic documents by concatenating the file name and the file name extension. For the second batch and all subsequent batches, the file name contains the batch ID as a suffix.
 - An expression enables (by returning **TRUE**) the file creation process for batches that contain at least one record.
 
-[![File control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Process flow control](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
-## <a name="Enabled">Documents content control</a>
+## <a name="Enabled">Document content control</a>
 
-The ER formula designer can be used to configure expressions that control what data will be placed in generated electronic documents at runtime. The expressions can enable or disable the output of specific elements of the format, depending on processing data and configured logic. These expression can be entered for a single format element in the **Enabled** field on the **Mapping** tab on the **Operations designer** page as a logic condition returning the **Boolean** value:
+The ER formula designer can be used to configure expressions that control what data will be put into generated electronic documents at runtime. The expressions can enable or disable the output of specific elements of the format, depending on processing data and configured logic. These expressions can be entered for a single format element in the **Enabled** field on the **Mapping** tab of the **Operations designer** page. You can enter the expressions as a logic condition that returns a *Boolean* value:
 
--	When **True** is returned, the current format element is executed.
--	When **False** is returned, the current format element is skipped.
+- If the condition returns **True**, the current format element is run.
+- If the condition returns **False**, the current format element is skipped.
 
-The following illustration shows expressions of this type (the version, **11.12.11** of the **ISO20022 Credit transfer (NO)** format configuration provided by Microsoft is an example). The **XMLHeader** format component is configured to describe the structure of the credit transfer message, following the ISO 20022 XML message standards. The **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** format component is configured to add to the generated message, the **Ustrd** XML element, and place the remittance information in an unstructured format as text of the following XML elements:
+The following illustration shows expressions of this type. (Version 11.12.11 of the **ISO20022 Credit transfer (NO)** format configuration that is provided by Microsoft is used as an example.) The **XMLHeader** format component is configured to describe the structure of the credit transfer message according to the ISO 20022 XML message standards. The **XMLHeader/Document/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd** format component is configured to add the **Ustrd** XML element to the generated message and to put the remittance information in an unstructured format as text of the following XML elements:
 
--	The **PaymentNotes** component is used to output the text of payment notes.
--	The **DelimitedSequence** component outputs comma-separated invoice numbers that are used to settle the current credit transfer.
+- The **PaymentNotes** component is used to generate the text of payment notes.
+- The **DelimitedSequence** component generates comma-separated invoice numbers that are used to settle the current credit transfer.
 
-[![Operations designer](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![PaymentNotes and DelimitedSequence components](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
-> The **PaymentNotes** and **DelimitedSequence** components are labeled using a question mark. This means that the usage of both components is conditional, based on the following criteria:
-
--	Defined for the **PaymentNote**s component, the `@.PaymentsNotes <> ""` expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, the text of payment notes when this text for the current credit transfer is not blank.
-
-[![Operations designer](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
-
--	Defined for the **DelimitedSequence** component, `@.PaymentsNotes = ""` expression enables (by returning **TRUE**) the population to the **Ustrd** XML element, separated by comma invoice numbers that are used to settle the current credit transfer when the text of payment notes for this credit transfer is blank.
-
-[![Operations designer](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
-
-Based on this setting, the generated message for each debtor payment, **Ustrd** XML element, will contain either text of payment notes or, when such text is blank, text separated by comma invoice numbers used to settle this payment.
+> The **PaymentNotes** and **DelimitedSequence** components are labeled by using a question mark. A question mark indicates that the use of a component is conditional. In this case, use of the components is based on the following criteria:
+>
+> - The `@.PaymentsNotes <> ""` expression that is defined for the **PaymentNotes** component enables (by returning **TRUE**) the **Ustrd** XML element to be filled with the text of payment notes, if that text isn't blank for the current credit transfer.
+>
+>    [![Expression for the PaymentNotes component](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>
+> - The `@.PaymentsNotes = ""` expression that is defined for the **DelimitedSequence** component enables (by returning **TRUE**) the **Ustrd** XML element to be filled with a comma-separated list of the invoice numbers that are used to settle the current credit transfer, if the text of payment notes for that credit transfer is blank.
+>
+>    [![Expression for the DelimitedSequence component](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+> 
+> Based on this setup, the message that is generated for each debtor payment, the **Ustrd** XML element, will contain either the text of payment notes or, when that text is blank, a comma-separated list of the invoice numbers that are used to settle the payment.
 
 ## <a name="TestFormula">Validation of configured formulas</a>
 
 On the **Formula designer** page, select **Test** to validate how the configured formula works.
 
-[![Formula designer](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Selecting Test to validate a forumula](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
-You can open the **Test expression** pane on the right side of the **Formula designer** page when the values of formula arguments are required. In most cases such arguments must be defined manually as the configured bindings are not executed at design-time. The result of the execution of the configured formula will be shown in the **Test result** area.
+When the values of formula arguments are required, you can open the **Test expression** dialog box from the **Formula designer** page. In most cases, these arguments must be manually defined, because the configured bindings aren't run at design time. The **Test result** tab on the **Formula designer** page shows the result from execution of the configured formula.
 
-The following graphics show how the configured for the foreign trade domain formula can be tested to make sure that the Intrastat commodity code will contain the only digits. When this formula is being tested, you can use the **Test expression** pane to specify the value of Intrastat commodity code for testing.
+The following example shows how you can test the formula that is configured for the foreign trade domain to make sure that the Intrastat commodity code contains only digits.
 
-[![Formula designer](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+When you test this formula, you can use the **Test expression** dialog box to specify the value of the Intrastat commodity code for testing.
 
-When you specified the testing code and selected **OK**, the **Test result** area presents the result of execution of the configured formula allowing you to estimate whether the result is correct, update the formula if the result is unacceptable and test the formula again.
+[![Specifying the Intrastat commodity code for testing](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
-[![Formula designer](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+After you specify the Intrastat commodity code and select **OK**, the **Test result** tab on the **Formula designer** page shows the result of execution of the configured formula. You can then evaluate whether the result is acceptable. If the result isn't acceptable, you can update the formula and test it again.
 
+[![Test result](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
-some formulas can't be tested at design-time. It can happen, for example, when the formula returns the result of the data type that cannot be shown in the **Test result** area.
+Some formulas can't be tested at design time. For example, a formula might return a result of a data type that can't be shown on the **Test result** tab. In this case, you receive an error message that states that the formula can't be tested.
 
-[![Formula designer](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Error message](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## Additional resources
 
