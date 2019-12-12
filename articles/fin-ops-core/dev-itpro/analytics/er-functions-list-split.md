@@ -2,10 +2,10 @@
 # required metadata
 
 title: COLLECTEDLIST ER function
-description: This topic explains how the COLLECTEDLIST ER function is used
+description: This topic provides information about how the COLLECTEDLIST ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `SPLIT` function splits the specified input string into substrings. Returns the result as a new *Record list*.
+The `SPLIT` function splits the specified input string into substrings and returns the result as a new *Record list*.
 
 ## Syntax 1
 
