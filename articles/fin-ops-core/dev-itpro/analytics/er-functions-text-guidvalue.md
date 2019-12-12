@@ -2,10 +2,10 @@
 # required metadata
 
 title: GUIDVALUE ER function
-description: This topic explains how the GUIDVALUE ER function is used
+description: This topic provides information about how the GUIDVALUE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,7 +56,8 @@ The result GUID value.
 
 ## Usage notes
 
-> [!NOTE] To do a conversion in the opposite direction (that is, to convert specified input of the *GUID* data type to a data item of the *String* data type), you can use the [TEXT](er-functions-text-text.md) function.
+> [!NOTE] 
+> To perform a conversion in the opposite direction (that is, to convert specified input of the *GUID* data type to a data item of the *String* data type), you can use the [TEXT](er-functions-text-text.md) function.
 
 ## Example
 
@@ -66,7 +67,7 @@ You define the following data sources in your model mapping:
 `GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`
 - **Users** (*Table records* type), which refers to the **UserInfo** table
 
-When these data sources are defined, you can use an expression such as `FILTER (Users, Users.objectId = myID)` to filter the **UserInfo** table by the **objectId** field of the *GUID* data type.
+When these data sources are defined, you can use an expression, such as `FILTER (Users, Users.objectId = myID)`, to filter the **UserInfo** table by the **objectId** field of the *GUID* data type.
 
 ## Additional resources
 
