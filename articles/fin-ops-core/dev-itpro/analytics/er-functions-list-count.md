@@ -2,7 +2,7 @@
 # required metadata
 
 title: COUNT ER function
-description: This topic provides information about how the COUNT ER function is used.
+description: This topic provides information about how the COUNT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="COUNT">COUNT Function</a>
+# <a name="COUNT">COUNT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `COUNT` function returns an *Integer* value as the number of records in the specified list, if the list is not empty. Otherwise, it returns zero (0).
+The `COUNT` function returns an *Integer* value that represents the number of records in the specified list, if the list isn't empty. If the list is empty, this function returns **0** (zero).
 
 ## Syntax
 
@@ -44,19 +44,19 @@ COUNT (list)
 
 ## Arguments
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-## Returns
+## Return values
 
 *Integer*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example
 
-`COUNT (SPLIT("abcd" , 3))` returns **2**, because the `SPLIT` function creates in this example a list that consists of two records.
+`COUNT (SPLIT("abcd" , 3))` returns **2**, because the `SPLIT` function that is used in this example creates a list that consists of two records.
 
 ## Additional resources
 
