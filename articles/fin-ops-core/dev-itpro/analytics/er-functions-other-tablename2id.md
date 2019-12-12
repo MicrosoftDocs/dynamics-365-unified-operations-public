@@ -2,10 +2,10 @@
 # required metadata
 
 title: TABLENAME2ID ER function
-description: This topic explains how the TABLENAME2ID ER function is used
+description: This topic provides information about how the TABLENAME2ID ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,7 +56,7 @@ The result numeric value.
 
 ## Usage notes
 
-Note that the result of execution of this function can be different in different instances of Finance even the same company name is used.
+Note that the result of the execution of this function can be different in different instances of Finance even the same company name is used.
 
 ## Example
 
