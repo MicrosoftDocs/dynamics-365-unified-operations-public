@@ -2,10 +2,10 @@
 # required metadata
 
 title: AND ER function
-description: This topic explains how the AND ER function is used
+description: This topic provides information about how the AND ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `AND` function returns a *Boolean* **TRUE** if all specified conditions are true. Otherwise, returns a *Boolean* **FALSE**.
+The `AND` function returns a *Boolean* **TRUE** if all of the specified conditions are true. Otherwise, it returns a *Boolean* **FALSE**.
 
 ## Syntax
 
