@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-When a company wants to utilize the functionality of the ICMS-ST for the 2020 calendar year, they need to start registering the ICMS-ST information during the receipt of electronic fiscal documents model 55 starting January 1, 2020.
+When a company wants to utilize the complement and compensation of the ICMS-ST for the 2020 calendar year, they need to start registering the ICMS-ST information during the receipt of electronic fiscal documents model 55 starting January 1, 2020.
 
 For Dynamics 365 Finance only, this feature must be enabled using Feature Management. Complete the following steps to enable this feature.
 
@@ -40,7 +40,7 @@ For Dynamics 365 Finance only, this feature must be enabled using Feature Manage
 3. Search for and select *Complementary information of ICMS-ST*.
 4. Select **Enable now**.
 
-When the vendor fiscal document or transfer fiscal document includes a product that is subject to ICMS-ST taxation on the UF (state) of the destination address, and if the receiving fiscal establishment utilizes the ICMS-ST, the following attributes of the fiscal document must be entered.
+When the vendor fiscal document or transfer fiscal document includes a product that is subject to ICMS-ST taxation on the UF (state) of the destination address, and if the receiving fiscal establishment utilizes the complement and compensation of the ICMS-ST, the following attributes of the fiscal document must be entered.
 
 - The party responsible for withholding the ICMS-ST:
 		
