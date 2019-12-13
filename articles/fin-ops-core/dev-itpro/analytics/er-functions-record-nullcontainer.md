@@ -2,7 +2,7 @@
 # required metadata
 
 title: NULLCONTAINER ER function
-description: This topic provides information about how the NULLCONTAINER ER function is used.
+description: This topic provides information about how the NULLCONTAINER Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NULLCONTAINER">NULLCONTAINER Function</a>
+# <a name="NULLCONTAINER">NULLCONTAINER ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `NULLCONTAINER` function returns a null *Container (record)* that has the same structure as the specified record list or record.
+The `NULLCONTAINER` function returns a null *Container (record)* value that has the same structure as the specified record list or record.
 
 ## Syntax
 
@@ -44,24 +44,24 @@ NULLCONTAINER (list)
 
 ## Arguments
 
-`list` : *Record list* or *Container (record)*
+`list`: *Record list* or *Container (record)*
 
-A valid path to a data source of either *Record list* or *Container (record)* type.
+The valid path of a data source of either the *Record list* or *Container (record)* type.
 
-## Returns
+## Return values
 
 *Container (record)*
 
-The result record value.
+The resulting record value.
 
 ## Usage notes
 
 > [!NOTE] 
-> This function is obsolete. Use the function EMPTYRECORD instead. For more information, see [EMPTYRECORD](er-functions-record-emptyrecord.md).
+> This function is obsolete. Use the `EMPTYRECORD` function instead. For more information, see [EMPTYRECORD](er-functions-record-emptyrecord.md).
 
 ## Example
 
-`NULLCONTAINER (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the SPLIT function. For more information, see [SPLIT](er-functions-list-split.md).
+`NULLCONTAINER (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the `SPLIT` function. For more information, see [SPLIT](er-functions-list-split.md).
 
 ## Additional resources
 
