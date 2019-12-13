@@ -136,7 +136,7 @@ The following examples show how to work with customer information in POS for Ita
 
 ## Deployment guidelines
 
-This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Retail for Italy.
+This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Commerce for Italy.
 
 > [!NOTE]
 > Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
