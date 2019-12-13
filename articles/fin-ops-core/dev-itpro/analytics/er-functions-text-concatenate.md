@@ -2,7 +2,7 @@
 # required metadata
 
 title: CONCATENATE ER function
-description: This topic provides information about how the CONCATENATE ER function is used
+description: This topic provides information about how the CONCATENATE Electronic reporting (ER) function is used
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,42 +30,41 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CONCATENATE">CONCATENATE Function</a>
+# <a name="CONCATENATE">CONCATENATE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `CONCATENATE` function returns a *String* value that presents all specified text strings after they have been joined into one string.
+The `CONCATENATE` function returns all the specified text strings as a *String* value after they have been joined into one string.
 
 ## Syntax
 
 ```
-CONCATENATE (text 1 [, text 2, … , text N])
+CONCATENATE (text 1[, text 2, …, text N])
 ```
 
 ## Arguments
 
-`text 1` : *String*
+`text 1`: *String*
 
-A reference to a data source of the *String* data type. One argument is mandatory.
+A reference to a data source of the *String* data type. This argument is required.
 
-`text N` : *String*
+`text N`: *String*
 
-A reference to a data source of the *String* data type. Other arguments are optional.
+A reference to a data source of the *String* data type. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`CONCATENATE ("abc", "def")` returns "abcdef".
+`CONCATENATE ("abc", "def")` returns **"abcdef"**.
 
 ## Usage notes
 
-> [!NOTE] 
-> The expression `"abc" & "def"` also returns "abcdef".
+The expression `"abc" & "def"` also returns **"abcdef"**.
 
 ## Additional resources
 
