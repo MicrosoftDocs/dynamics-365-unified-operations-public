@@ -2,7 +2,7 @@
 # required metadata
 
 title: IF ER function
-description: This topic provides information about how the IF ER function is used.
+description: This topic provides information about how the IF Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="IF">IF Function</a>
+# <a name="IF">IF ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `IF` function returns the first specified value when the specified condition is met. Otherwise, the second specified value is returned. The returned value can be a value of any of the supported data types.
+The `IF` function returns the first specified value if the specified condition is met. Otherwise, it returns the second specified value. The value that is returned can be a value of any of the supported data types.
 
 ## Syntax
 
@@ -44,33 +44,33 @@ IF (condition, first value, second value) as any of the supported data types
 
 ## Arguments
 
-`condition` : *Boolean*
+`condition`: *Boolean*
 
-A valid conditional expression to be tested.
+A valid conditional expression that must be tested.
 
-`first value` : *Any of the supported data types*
+`first value`: *Any of the supported data types*
 
-The result returned when the condition is met.
+The result that is returned if the condition is met.
 
-`second value` : *Any of the supported data types*
+`second value`: *Any of the supported data types*
 
-The result returned when the condition is not met.
+The result that is returned if the condition isn't met.
 
-## Returns
+## Return values
 
 *Any of the supported data types*
 
-The result value of any of the supported data types.
+The resulting value of any of the supported data types.
 
 ## Usage notes
 
-First and second value arguments must be specified by using the same data type. An exception is thrown at design time when data types of configured values do not match.
+The `first value` and `second value` arguments must be specified by using the same data type. An exception is thrown at design time if the data types of the configured values don't match.
 
-If the first value and the second value are values of the *Container (record)* or *Record list* data types, the result has only the fields that exist in both values.
+If the first value and the second value are values of the *Container (record)* or *Record list* data type, the result has only the fields that exist in both values.
 
 ## Example
 
-`IF (1=2, "condition is met", "condition is not met")` returns the string "condition is not met".
+`IF (1=2, "condition is met", "condition is not met")` returns the string **"condition is not met"**.
 
 ## Additional resources
 
