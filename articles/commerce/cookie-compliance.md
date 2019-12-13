@@ -40,21 +40,7 @@ This topic describes considerations for cookie compliance and the default polici
 
 Privacy is an important factor whenever any tracking technologies that affect e-Commerce customers are used. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
 
-Here is what the GDPR directs site owners to do in the matter of cookies:
-
-- Receive user consent before you use any cookies that aren't strictly necessary.
-- Before consent is received, provide accurate and specific information, in plain language, about the data that each cookie tracks and the purpose of that data.
-- Document and store the consent that is received from users.
-- Allow users to access a service even if they refuse to allow some cookies to be used.
-- Make it as easy for users to withdraw their consent as it was for them to give their consent.
-
-(Source: [Cookies, the GDPR, and the ePrivacy Directive](https://gdpr.eu/cookies/))
-
-By default, Dynamics 365 Commerce doesn't collect any customer cookies that aren't strictly necessary. Therefore, when sites that are built by using the e-Commerce authoring tools are published, they don't use nonessential cookies.
-
-However, if any customization or extension that is done to your site adds cookies or tracking technologies, you must consider GDPR and cookie compliance, as required.
-
-For more information about GDPR privacy standards, see [Complete guide to GDPR compliance](https://gdpr.eu/).
+For more information, visit the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center) to better understand Microsoft’s foundational principles regarding cookie compliance and get additional information on areas of compliance and privacy.
 
 ## Additional resources
 
