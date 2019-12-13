@@ -2,7 +2,7 @@
 # required metadata
 
 title: EMPTYRECORD ER function
-description: This topic provides information about how the EMPTYRECORD ER function is used.
+description: This topic provides information about how the EMPTYRECORD Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="EMPTYRECORD">EMPTYRECORD Function</a>
+# <a name="EMPTYRECORD">EMPTYRECORD ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `EMPTYRECORD` function returns a null *Container (record)* that has the same structure as the specified record list or record.
+The `EMPTYRECORD` function returns a null *Container (record)* value that has the same structure as the specified record list or record.
 
 ## Syntax
 
@@ -44,24 +44,24 @@ EMPTYRECORD (list)
 
 ## Arguments
 
-`list` : *Record list* or *Container (record)*
+`list`: *Record list* or *Container (record)*
 
-A valid path to a data source of either *Record list* or *Container (record)* type.
+The valid path of a data source of either the *Record list* or *Container (record)* type.
 
-## Returns
+## Return values
 
 *Container (record)*
 
-The result record value.
+The resulting record value.
 
 ## Usage notes
 
 > [!NOTE] 
-> A null record is a record where all fields have an empty value. An empty value is zero (0) for numbers, an empty string for strings, and so on.
+> A null record is a record where all fields have an empty value. An empty value is **0** (zero) for numbers, an empty string for strings, and so on.
 
 ## Example
 
-`EMPTYRECORD (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the SPLIT function. For more information, see [SPLIT](er-functions-list-split.md).
+`EMPTYRECORD (SPLIT ("abc", 1))` returns a new empty record that has the same structure as the list that is returned by the `SPLIT` function. For more information, see [SPLIT](er-functions-list-split.md).
 
 ## Additional resources
 
