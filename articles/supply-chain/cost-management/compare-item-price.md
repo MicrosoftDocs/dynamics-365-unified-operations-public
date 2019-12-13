@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Cost management home page
+title: Compare item price storage
 description: Compare item price storage. 
 author: AndersGirke
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Compae item price storage
+# Compare item price storage
 
 [!include [banner](../includes/banner.md)]
 
