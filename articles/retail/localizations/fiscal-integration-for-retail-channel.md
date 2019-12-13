@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview of fiscal integration for Retail channels
-description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. 
+description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0
 
 ## Introduction
 
-This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
+This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 
 - Register a retail sale on a fiscal device that is connected to Retail point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
