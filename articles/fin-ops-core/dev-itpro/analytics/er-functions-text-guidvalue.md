@@ -2,7 +2,7 @@
 # required metadata
 
 title: GUIDVALUE ER function
-description: This topic provides information about how the GUIDVALUE ER function is used.
+description: This topic provides information about how the GUIDVALUE Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="GUIDVALUE">GUIDVALUE Function</a>
+# <a name="GUIDVALUE">GUIDVALUE ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,30 +44,28 @@ GUIDVALUE (input)
 
 ## Arguments
 
-`input` : *String*
+`input`: *String*
 
-A valid path to a data source of the *String* type.
+The valid path of a data source of the *String* type.
 
-## Returns
+## Return values
 
 *GUID*
 
-The result GUID value.
+The resulting globally unique identifier (GUID) value.
 
 ## Usage notes
 
-> [!NOTE] 
-> To perform a conversion in the opposite direction (that is, to convert specified input of the *GUID* data type to a data item of the *String* data type), you can use the [TEXT](er-functions-text-text.md) function.
+To do a conversion in the opposite direction (that is, to convert specified input of the *GUID* data type to a data item of the *String* data type), you can use the [TEXT](er-functions-text-text.md) function.
 
 ## Example
 
 You define the following data sources in your model mapping:
 
-- **myID** (*Calculated field* type), which contains the expression
-`GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`
-- **Users** (*Table records* type), which refers to the **UserInfo** table
+- A **myID** data source of the *Calculated field* type that contains the expression `GUIDVALUE ("AF5CCDAC-F728-4609-8C8B- A4B30B0C0AA0")`
+- A **Users** data source of the *Table records* type that refers to the UserInfo table
 
-When these data sources are defined, you can use an expression, such as `FILTER (Users, Users.objectId = myID)`, to filter the **UserInfo** table by the **objectId** field of the *GUID* data type.
+You can then use an expression such as `FILTER (Users, Users.objectId = myID)` to filter the UserInfo table by the **objectId** field of the *GUID* data type.
 
 ## Additional resources
 
