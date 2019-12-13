@@ -48,6 +48,8 @@ To review the Microsoft privacy statement while you're signed in to the Dynamics
 
 In Dynamics 365 Commerce, there are several ways to give users of your site access to your privacy policy. This section shows how to build a privacy policy page and then reference the page by using a footer fragment.
 
+The guidance that follows is an example of how to build a generic privacy policy page for your Commerce Site. It is up to you to design and implement a privacy policy page solution that best fits your company's legal needs.
+
 To start, in the authoring tools, go to the site that you want to build a privacy policy page for.
 
 ### Create a template
