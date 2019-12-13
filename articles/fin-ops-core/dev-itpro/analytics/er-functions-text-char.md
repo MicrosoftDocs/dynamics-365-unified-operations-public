@@ -2,7 +2,7 @@
 # required metadata
 
 title: CHAR ER function
-description: This topic provides information about how the CHAR ER function is used.
+description: This topic provides information about how the CHAR Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CHAR">CHAR Function</a>
+# <a name="CHAR">CHAR ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `CHAR` function returns a *String* value as the set of characters that is referenced by the specified Unicode number.
+The `CHAR` function returns a *String* value that presents the set of characters that is referenced by the specified Unicode number.
 
 ## Syntax
 
@@ -44,20 +44,19 @@ CHAR (number)
 
 ## Arguments
 
-`number` : *Integer*
+`number`: *Integer*
 
 A number that corresponds to an expected string of characters.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Usage notes
 
-> [!NOTE] 
-> The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For the list of supported encodings, see [Encoding class](https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx).
+The string that this function returns depends on the encoding that is selected in the parent **FILE** format element. For a list of the supported encodings, see [Encoding class](https://msdn.microsoft.com/library/system.text.encoding(v=vs.110).aspx).
 
 ## Example
 
