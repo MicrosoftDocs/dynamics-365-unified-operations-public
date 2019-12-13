@@ -2,7 +2,7 @@
 # required metadata
 
 title: TABLENAME2ID ER function
-description: This topic provides information about how the TABLENAME2ID ER function is used.
+description: This topic provides information about how the TABLENAME2ID Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="TABLENAME2ID">TABLENAME2ID Function</a>
+# <a name="TABLENAME2ID">TABLENAME2ID ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `TABLENAME2ID` function returns an *Integer* value as the numeric representation of a table ID for the specified table name.
+The `TABLENAME2ID` function returns a numeric representation of the table ID for the specified table name as an *Integer* value.
 
 ## Syntax
 
@@ -44,23 +44,23 @@ TABLENAME2ID (text)
 
 ## Arguments
 
-`text` : *String*
+`text`: *String*
 
-A text value representing a valid table name.
+A text value that represents a valid table name.
 
-## Returns
+## Return values
 
 *Integer*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
-Note that the result of the execution of this function can be different in different instances of Finance even the same company name is used.
+Execution of this function can have different results in different instances of Microsoft Dynamics 365 Finance, even if the same company name is used.
 
 ## Example
 
-`TABLENAME2ID ("Intrastat")` returns 1510.
+`TABLENAME2ID ("Intrastat")` returns **1510**.
 
 ## Additional resources
 
