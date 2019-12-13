@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compliance overview
-description: This topic provides an overview of the guidance for using various modules and features in Microsoft Dynamics 365 Commerce to make your sites compliant.
+description: This topic gives an overview of the compliance guidance provided to make your company's sites compliant using Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
 ms.date: 12/02/2019
@@ -34,18 +34,13 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the guidance for using various modules and features in Microsoft Dynamics 365 Commerce to make your sites compliant.
+This topic gives an overview of the compliance guidance provided to make your company's sites compliant using Microsoft Dynamics 365 Commerce. The compliance guidance will include a review of areas to consider when using Dynamics 365 Commerce to assist you in meeting your company's compliance requirements.
 
-Compliance is an important factor for all businesses, because it helps your user base better connect with your site content. By remaining compliant, businesses can also help protect themselves from expensive legal actions or heavy fines. The following topics provide information about how you can use Dynamics 365 Commerce to optimize your site for compliance.
+Compliance is an important factor for all businesses as it helps your user base to connect with your site content. Staying compliant can also protect a company from expensive legal actions or hefty fines.
 
-| Topic | Description |
-|-------|-------------|
-| [Accessibility](accessibility.md) | Accessibility helps guarantee that your site offers full functionality for various tools, so that the site can be accessed and used by everyone who visits it. |
-| [General web compliance](cookie-compliance.md) | This topic describes the range of compliance-regulated web and data protocols that are legally required for sites in many regions. |
-| [Privacy and privacy policies](add-privacy-page.md) | This topic describes the policies about online data privacy and data rights for site users that company websites in many regions must follow. |
-| [GDPR and handling data subject requests (DSRs)](delete-personal-information.md) | This topic covers the General Data Protection Regulation (GDPR) in the European Union (EU). It also describes how companies must handle data that they use on behalf of the people who own that data. |
+Topics in this section will provide examples of how to use Dynamics 365 Commerce authoring tools with compliance in mind. It is up to you to review your company's compliance requirements and to author and build sites to meet those requirement standards.
 
-Every company is responsible for reviewing compliance-based content and functionality and applying them to its site. Use these topics to learn about the various compliance areas, and implement the areas that best fit your company and the content needs of your business.
+Please reference the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center) to better understand Microsoft’s foundational principles and get additional information on areas of compliance.
 
 ## Additional resources
 
