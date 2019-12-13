@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: List of ER functions of the record category
-description: This topic provides information about the record functions that are supported in ER.
+title: List of ER functions in the record category
+description: This topic provides information about the record functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,18 +30,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Record functions
+# List of ER functions in the record category
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) record functions can be used to extract information from, and perform operations on, data sources of the *Container (record)* data type. You can find a summary of such functions below in this article.
+Electronic reporting (ER) record functions can be used to extract information from, and perform operations on, data sources of the *Container (record)* data type. This topic provides a summary of these functions.
 
 ## List of supported functions
 
-| **Function**  | **Description**   |
-|---------------|-------------------|
-| [NullContainer](er-functions-record-nullcontainer.md) | Returns a null *Container (record)* that has the same structure as the specified record list or record. |
-| [EmptyRecord](er-functions-record-emptyrecord.md)     | Returns a null *Container (record)* that has the same structure as the specified record list or record. |
+| Function | Description |
+|----------|-------------|
+| [NullContainer](er-functions-record-nullcontainer.md) | This function returns a null *Container (record)* value that has the same structure as the specified record list or record. |
+| [EmptyRecord](er-functions-record-emptyrecord.md) | This function returns a null *Container (record)* value that has the same structure as the specified record list or record. |
 
 ## Additional resources
 
