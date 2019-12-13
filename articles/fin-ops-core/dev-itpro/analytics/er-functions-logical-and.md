@@ -2,7 +2,7 @@
 # required metadata
 
 title: AND ER function
-description: This topic provides information about how the AND ER function is used.
+description: This topic provides information about how the AND Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/12/2019
@@ -30,44 +30,43 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="AND">AND Function</a>
+# <a name="AND">AND ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `AND` function returns a *Boolean* **TRUE** if all of the specified conditions are true. Otherwise, it returns a *Boolean* **FALSE**.
+The `AND` function returns a *Boolean* value of **TRUE** if all the specified conditions are true. Otherwise, it returns a *Boolean* value of **FALSE**.
 
 ## Syntax
 
 ```
-AND (condition 1 [, condition 2, …])
+AND (condition 1[, condition 2, …, condition N])
 ```
 
 ## Arguments
 
-`condition 1` : *Boolean*
+`condition 1`: *Boolean*
 
-A valid conditional expression to be tested. One argument is mandatory.
+A valid conditional expression that must be tested. This argument is required.
 
-`condition N` : *Boolean*
+`condition N`: *Boolean*
 
-A valid conditional expression to be tested. Other arguments are optional.
+A valid conditional expression that must be tested. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *Boolean*
 
-The result *Boolean* value.
+The resulting *Boolean* value.
 
 ## Usage notes
 
-In arguments of the logical functions, you can use data source references, numeric and text values, boolean values, comparison operators, and other ER functions. However, all arguments must evaluate to the *Boolean* values of
-**TRUE** or **FALSE**.
+In the arguments of logical functions, you can use data source references, numeric and text values, Boolean values, comparison operators, and other Electronic reporting (ER) functions. However, all the arguments must be evaluated to a *Boolean* value of **TRUE** or **FALSE**.
 
 ## Example
 
-`AND (1=1, "a"="a")` returns TRUE.
+`AND (1=1, "a"="a")` returns **TRUE**.
 
-`AND (1=2, "a"="a")` returns FALSE.
+`AND (1=2, "a"="a")` returns **FALSE**.
 
 ## Additional resources
 
