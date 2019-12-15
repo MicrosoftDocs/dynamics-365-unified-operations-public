@@ -48,7 +48,7 @@ The top of a PDP has a header that shows all the product categories and other pa
 
 ## Buy box module
 
-The most important module on a PDP is the buy box module. Therefore, it's the first item in the main section of the page. A buy box module is a container module and hosts several modules that contain the most important information about the product. This information includes the product name, product images, the description, the price, and product ratings.
+The most important module on a PDP is the buy box module. Therefore, it's the first item in the main section of the page. A buy box module shows all the information includes the product name, product images, the description, the price, and product ratings.
 
 The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart. It also lets the customer buy the product online and pick it up in a store. The buy online and pick up in store module uses integration with Bing Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.
 
@@ -75,7 +75,7 @@ The ratings and reviews module shows ratings and reviews that have been provided
 
 ## Marketing modules
 
-If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. 
+If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. For more details see [Enriching a product page](enrich-product-page.md)
 
 ## Additional resources
 
@@ -86,3 +86,5 @@ If marketing content is unique to a specific product, any marketing module can b
 [Overview of cart and checkout pages](quick-tour-cart-checkout.md)
 
 [Overview of account management pages](quick-tour-account-management.md)
+
+[Enriching a product details page](enrich-product-page.md)
