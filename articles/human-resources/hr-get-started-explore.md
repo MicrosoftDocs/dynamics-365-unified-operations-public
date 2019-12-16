@@ -55,15 +55,15 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 Navigating Dynamics 365 Human Resources is the same as it is for all Dynamics 365 Finance and Operations apps. If this is your first time using Human Resources, you might find the following articles helpful:
 
-- [User interface elements](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/user-interface-elements?toc=/dynamics365/finance/toc.json)
-- [Accessibility features](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/accessibility-features?toc=/dynamics365/finance/toc.json)
-- [Action search](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/action-search?toc=/dynamics365/finance/toc.json)
-- [Advanced filtering and query syntax](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/finance/toc.json
-- [Configure and filter workspaces](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/configure-filter-workspaces?toc=/dynamics365/finance/toc.json)
-- [Show pages side by side by using the Open in new window feature](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/display-pages-side-by-side?toc=/dynamics365/finance/toc.json)
-- [Keyboard shortcuts](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/shortcut-keys?toc=/dynamics365/finance/toc.json)
-- [Navigation search](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/navigation-search?toc=/dynamics365/finance/toc.json)
-- [Find information by using lookups](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/use-lookups-to-find-information?toc=/dynamics365/finance/toc.json)
+- [User interface elements](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-interface-elements)
+- [Accessibility features](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/accessibility-features)
+- [Action search](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/action-search)
+- [Advanced filtering and query syntax](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/advanced-filtering-query-options)
+- [Configure and filter workspaces](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/configure-filter-workspaces)
+- [Show pages side by side by using the Open in new window feature](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/display-pages-side-by-side)
+- [Keyboard shortcuts](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/shortcut-keys)
+- [Navigation search](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/navigation-search)
+- [Find information by using lookups](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/use-lookups-to-find-information)
 
 ## See also
 

@@ -37,10 +37,10 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | Description | Status | Notes |
 | --- | --- | --- |
 | Draft | In progress |  |
-| Verify procedures |  |  |
+| Verify procedures | NA |  |
 | Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
+| Update screenshots | NA |  |
+| Add See also links | NA |  |
 | Run Acrolinx |  |  |
 | Review |  |  |
 | Edit |  |  |
