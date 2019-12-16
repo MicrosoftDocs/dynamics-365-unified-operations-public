@@ -48,21 +48,22 @@ To review the Microsoft privacy statement while you're signed in to the Dynamics
 
 In Dynamics 365 Commerce, there are several ways to give users of your site access to your privacy policy. This section shows how to build a privacy policy page and then reference the page by using a footer fragment.
 
-The guidance that follows is an example of how to build a generic privacy policy page for your Commerce Site. It is up to you to design and implement a privacy policy page solution that best fits your company's legal needs.
+The guidance that follows is an example that shows how to build a generic privacy policy page for a Commerce site. You're responsible for designing and implementing a privacy policy page solution that best meets your company's legal requirements.
 
 To start, in the authoring tools, go to the site that you want to build a privacy policy page for.
 
 ### Create a template
 
 > [!NOTE]
-> If a template that can be used for the privacy policy page has already been created, skip ahead to the Build a privacy policy page section below.
+> If a template that can be used for the privacy policy page has already been created, skip ahead to the [Build a privacy policy page](#build-a-privacy-policy-page) section.
+
 To create a template, follow these steps.
 
 1. Go to **Templates \> New Template**.
 1. Enter the template name, and then select **OK**.
 1. In the template, add any required modules to the required page slots. For guidance, hover over the red exclamation marks.
 
-    For example, the **HTML Head** slot might require a module, such as a **Default External Script** module.
+    For example, the **HTML Head** slot might require a **Default External Script** module.
 
 1. In the **Body** slot, add a **Default Page** module.
 1. In the **Default Page** module, in the **Main** slot, add a **Content Rich Block** module.
@@ -79,7 +80,7 @@ To build a privacy policy page, follow these steps.
 1. In the **Main** slot of the page, add a **Content Rich Block** module.
 1. In the **Content Rich Block** module, add a **Content rich block item** module.
 1. In the properties pane for the **Content Rich Block** module, select **Add Data Source**, and then select **Rich Text Content**.
-1. In the rich text editor, enter the content for the privacy policy page. Expand the rich text editor to full screen mode as you require.
+1. In the rich text editor, enter the content for the privacy policy page. Expand the rich text editor to full-screen mode as you require.
 1. When you've finished entering content, select **Preview** to preview the page in the web browser.
 1. Complete any remaining additions to the page and module properties.
 1. Check the privacy policy page in, and publish it.
