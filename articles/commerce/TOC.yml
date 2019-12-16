@@ -411,13 +411,17 @@
           - name: Page model glossary
             href: page-elements-overview.md
           - name: Document states and lifecycle
-            href: document-states-overview.md 
+            href: document-states-overview.md
+          - name: Work with publish groups
+            href: publish-groups.md
           - name: Brand your site and add store details
             items:
             - name: Add a logo
               href: add-logo.md 
             - name: Select a site theme
               href: select-site-theme.md
+            - name: Work with CSS override files
+              href: css-override-files.md
             - name: Add a favicon
               href: add-favicon.md
             - name: Add a welcome message
