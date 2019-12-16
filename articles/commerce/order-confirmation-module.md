@@ -18,6 +18,7 @@ audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -28,29 +29,31 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Order confirmation module
+# Order details module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers order confirmation modules and describes how to create them in Microsoft Dynamics 365 Commerce.
+This topic covers order detail modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-An order confirmation module is used to show a confirmation message on an order confirmation page after an order is placed. The order confirmation module shows the order confirmation number and the customer email address that was provided during checkout.
+This module can be used for both order confirmation after placing an order and in account managemet for showing the order details. It requires order confirmation id as input to render all the information.
 
-When an order is placed during checkout, the order confirmation number and customer email address are passed to the order confirmation page as a query string in the page's URL. The order confirmation module receives this information and renders the order status on the order confirmation page. The order confirmation module requires this page context to provide the status of the order.
+The order details module shows the order confirmation id, email address and all the details about the order such as  items in the order, payment, shipping etc.
 
-## Order confirmation module properties
+
+
+## Order details module properties
 
 | Property name | Values | Description |
 |---------------|--------|-------------|
-| Heading       | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order confirmation module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-
-## Modules that can be used in an order confirmation page module 
+| Heading       | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order details module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
+|Contact number| Text| A contact number can be provided to contact for order related questions|
+## Modules that can be used in an order confirmation page  
 
 - **Recommendations** – The recommendations module can be put on the order confirmation page to suggest other products to the customer.
-- **Marketing** – The marketing module can add marketing content to the order confirmation page.
+- **Marketing** – Any marketing module can add marketing content to the order confirmation page.
 
 ## Create an order confirmation page module
 
