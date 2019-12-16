@@ -96,11 +96,11 @@ You can add a link to the privacy policy page to a fragment. In this way, you ca
 
 To add a link to a footer fragment, follow these steps.
 
-1. Go to **Fragments \> New Page Fragment**.
+1. Go to **Page Fragments \> New Page Fragment**.
 1. Select the **Footer** module, and then enter a name in the **Page Fragment Name** field.
-1. In the **sub footer** slot, add a sub footer module.
-1. In the properties pane, select **Add Data Source**, and then select **Links**.
-1. Enter the link text and the URL of the privacy policy page.
+1. In the **Footer category** slot, add a **footer item** module.
+1. In the properties pane on the right, select **Link text**.
+1. In the **Link text** dialog box, enter the link text and link target of the privacy policy page, and then click **OK**.
 
     To get the URL of the privacy policy page, go to **Pages**, go to the privacy policy page, and copy the URL from the properties pane.
 
