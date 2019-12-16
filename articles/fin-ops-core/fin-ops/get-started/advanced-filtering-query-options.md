@@ -121,6 +121,12 @@ This article describes the filtering and query options that are available when y
 <td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr>
+<td>"" (two double quotes)</td>
+<td>Matching a blank value</td>
+<td>Type two consecutive double quotes to filter for blank values in that field</td>
+<td><strong>""</strong> finds rows with no value for the current column</td>
+</tr>
+<tr>
 <td>(<span class="code">SQL statement</span>) (SQL statement between parentheses)</td>
 <td>Matching a defined query</td>
 <td>Type a query as an SQL statement between parentheses.</td>
