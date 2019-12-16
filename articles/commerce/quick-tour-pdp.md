@@ -71,7 +71,7 @@ Different types of recommendation lists are available:
 
 ## Ratings and reviews module
 
-The ratings and reviews module shows ratings and reviews that have been provided by other customers. It also lets a customer write his or her own review of the product. Additionally, it includes a histogram that shows the ratings trend for the product. For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
+There are three modules that can be used for displaying and adding reviews - **Reviews**, **Write review** and **Ratings histogram**. The Reviews shows the ratings and reviews that have been provided by other customers. It allows the user to sort and filter the reviews. It also allows a user to like/dislike reviews, report issues etc. The Write review module lets a customer write his or her own review of the product. Ratings histogram modules, it includes a histogram that shows the ratings trend for the product. For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
 
 ## Marketing modules
 
