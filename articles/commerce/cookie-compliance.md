@@ -40,7 +40,7 @@ This topic describes considerations for cookie compliance and the default polici
 
 Privacy is an important factor whenever any tracking technologies that affect e-Commerce customers are used. Because of privacy compliance standards such as the General Data Protection Regulation (GDPR) in the European Union (EU), electronic privacy guidelines must be considered for any site that is active today. Because many e-Commerce sites are globally accessible by default, it's important that you review the compliance standards for your e-Commerce site.
 
-To learn more, visit the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center) to better understand Microsoft’s foundational principles regarding cookie compliance and get additional information on areas of compliance and privacy.
+To learn more about the basic principles that Microsoft uses for cookie compliance, visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center). On that site, you can also get more information about areas of compliance and privacy.
 
 ## Additional resources
 
