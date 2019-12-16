@@ -34,19 +34,9 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **Status**
 
-- Draft
-- Need to verify procedures
-- Need screenshots
-- Need to run Acrolinx
-- Need See also
-
-**End status**
-
-**Status**
-
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -60,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | [Provision Talent](https://docs.microsoft.com/en-us/dynamics365/talent/provisioning-talent) |
 | Review document location | (link) |
 
 
@@ -69,6 +59,7 @@ This article walks you through the process of provisioning a new production envi
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
 ## Create an LCS project
+
 To use LCS to manage your Human Resources environments, you must first create an LCS project.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resource.
@@ -80,6 +71,7 @@ To use LCS to manage your Human Resources environments, you must first create an
 For information about how to get started with Human Resource, see the **Human Resource** methodology that you created in your new project. After you've finished creating the project, complete the following procedure to provision your Human Resources environment.
 
 ## Provision a Human Resources project
+
 After you've created an LCS project, you can provision Human Resources into an environment.
 
 1. In your LCS project, select the **Human Resources App Management** tile.
@@ -125,6 +117,7 @@ Use the following guidance when determining which Power Apps environment to depl
 6. After you have determined the correct environment to use, you can continue with the provisioning process. 
  
 ## Grant access to the environment
+
 By default, the global administrator who created the environment has access to it. However, additional application users must be explicitly granted access. To grant access, you need to add users and assign the appropriate roles to them in the Core HR environment. The global administrator that deployed Human Resources must also launch both Attract and Onboard to complete the initialization and enable access for other tenant users.  Until this happens, other users will not be able to access Attract and Onboard and will get access violation errors. For more information, see [Create new users](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
