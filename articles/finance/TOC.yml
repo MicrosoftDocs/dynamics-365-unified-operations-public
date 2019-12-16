@@ -335,7 +335,7 @@
       - name: Close Accounts receivable
         href: accounts-receivable/close-accounts-receivable.md
       - name: Payments and settlements
-         items:
+        items:
         - name: Revenue recognition overview
           href: accounts-receivable/revenue-recognition-overview.md
         - name: Customer payment overview
@@ -364,7 +364,6 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
-
       - name: Credit and collections
         items:
         - name: Credit and collections overview
