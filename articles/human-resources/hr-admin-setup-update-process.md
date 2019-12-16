@@ -34,18 +34,9 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **Status**
 
-- Draft
-- Need to run Acrolinx
-- Need to change links
-- Need to make sure HR is in [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
-
-**End status**
-
-**Status**
-
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -54,14 +45,14 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | Review |  |  |
 | Edit |  |  |
 | Ready to publish |  |  |
+| Other notes |  | Need to make sure HR is in [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy) |
 
 **Notes for Reviewers**
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | [Talent updates](https://docs.microsoft.com/dynamics365/talent/talent-updates) |
 | Review document location | (link) |
-
 
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
@@ -118,11 +109,11 @@ The following dates are exceptions to the regular release schedule:
 
 You can find out what's in the works for Human Resources and what we've released in the following locations:
 
-- [Dynamics 365 Human Resources roadmap](https://dynamics.microsoft.com/en-us/roadmap/talent/)
+- [Dynamics 365 Human Resources roadmap](https://dynamics.microsoft.com/roadmap/talent/)
 
 - [Dynamics 365 Release Plans](https://docs.microsoft.com/dynamics365/release-plans/)
 
-- [What's new or changed in Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/talent/whats-new)
+- [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
 - [Issue search in Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (for Platform-related bugs only)
 
