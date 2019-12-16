@@ -34,19 +34,9 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **Status**
 
-- Draft
-- Need to verify procedures
-- Need screenshots
-- Need to run Acrolinx
-- Need See also
-
-**End status**
-
-**Status**
-
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -60,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | [Copy a Core HR instance](https://docs.microsoft.com/en-us/dynamics365/talent/hr-copy-instance) |
 | Review document location | (link) |
 
 
