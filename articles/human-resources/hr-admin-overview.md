@@ -55,7 +55,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
-- [Overview](hr-admin-overview.md)
 - [What's new](hr-admin-whats-new.md)
 - [System requirements](hr-admin-system-requirements.md)
 - [Set up and manage instances](hr-admin-setup-overview.md)

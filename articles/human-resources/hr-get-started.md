@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | No |
 | Review document location | (link) |
 
 Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas, including:

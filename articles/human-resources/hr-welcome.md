@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | No |
 | Review document location | (link) |
 
 **Introductory video**
@@ -85,12 +85,10 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 ## Developer Guide
 
 - [Overview](hr-developer-overview.md)
-- [Embed Power BI in workspaces](hr-developer-power-bi.md)
 - [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
-- [Create a mobile experience](hr-developer-mobile-workspace.md)
 - [Track changes in recruiting data](hr-developer-track-changes.md)
 - [Custom fields](hr-developer-custom-fields.md)
-- [Entity API reference](hr-developer-api-reference-overview.md)
+- [Entity API reference](hr-developer-api-odata-authentication.md))
 
 ## HR Pro Guide
 

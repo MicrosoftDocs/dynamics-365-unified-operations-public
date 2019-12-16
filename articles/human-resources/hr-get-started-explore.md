@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | No |
 | Review document location | (link) |
 
 Navigating Dynamics 365 Human Resources is the same as it is for all Dynamics 365 Finance and Operations apps. If this is your first time using Human Resources, you might find the following articles helpful:
