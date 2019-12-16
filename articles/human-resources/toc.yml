@@ -133,6 +133,8 @@
       href: hr-developer-track-changes.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
+    - name: Entity API reference
+      items: 
   - name: HR Pro Guide
     items:
     - name: Overview
