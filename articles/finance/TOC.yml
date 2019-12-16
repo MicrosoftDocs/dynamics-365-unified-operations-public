@@ -383,7 +383,7 @@
         - name: Periodic credit management tasks
           href: accounts-receivable/cm-periodic-tasks.md
         - name: Collections management key concepts
-          href: accounts-receivable/collections-concepts.md
+          href: accounts-receivable/cm-collections-concepts.md
         - name: Configure Accounts receivables and credit and collections
           href: accounts-receivable/accounts-receivables-set-up-overview.md
         - name: Set up credit and collections
