@@ -5,7 +5,7 @@ title: Work with modules
 description: This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -132,4 +132,6 @@ To configure a container module on a page, follow these steps.
 [Add a container module to a page](add-container-module.md)
 
 [Add content placement modules to a page](add-content-placement-modules.md)
+
+[Work with publish groups](publish-groups.md)
 
