@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compliance overview
-description: This topic gives an overview of the compliance guidance provided to make your company's sites compliant using Microsoft Dynamics 365 Commerce.
+description: This topic is an overview of the compliance guidance provided with Microsoft Dynamics 365 Commerce to help make your company's sites compliant.
 author: BrianShook
 manager: annbe
 ms.date: 12/02/2019
@@ -34,13 +34,13 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic gives an overview of the compliance guidance provided to make your company's sites compliant using Microsoft Dynamics 365 Commerce. The compliance guidance will include a review of areas to consider when using Dynamics 365 Commerce to assist you in meeting your company's compliance requirements.
+This topic is an overview of the compliance guidance provided with Microsoft Dynamics 365 Commerce to help make your company's sites compliant. The compliance documentation includes a review of areas to consider when using Dynamics 365 Commerce to assist you to meet your company's compliance requirements.
 
 Compliance is an important factor for all businesses as it helps your user base to connect with your site content. Staying compliant can also protect a company from expensive legal actions or hefty fines.
 
-Topics in this section will provide examples of how to use Dynamics 365 Commerce authoring tools with compliance in mind. It is up to you to review your company's compliance requirements and to author and build sites to meet those requirement standards.
+The following topics provide examples of how to use Dynamics 365 Commerce authoring tools with compliance in mind. It is up to you to review your company's compliance requirements and to author and build sites to meet those requirement standards.
 
-Please reference the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center) to better understand Microsoft’s foundational principles and get additional information on areas of compliance.
+Please see the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center) to better understand Microsoft’s foundational principles and get additional information on areas of compliance.
 
 ## Additional resources
 
