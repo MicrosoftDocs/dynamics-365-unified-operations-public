@@ -135,6 +135,16 @@
       href: hr-developer-custom-fields.md
     - name: Entity API reference
       items: 
+      - name: Authentication
+        href: hr-developer-api-authentication.md
+      - name: Entities
+        items:
+        - name: MyLeaveRequests
+          items: 
+          - name: MyLeaveRequests overview
+            href: hr-developer-api-myleaverequests-overview.md
+          - name: Submit a leave request to workflow
+            href: hr-developer-api-myleaverequests-submit.md
   - name: HR Pro Guide
     items:
     - name: Overview
