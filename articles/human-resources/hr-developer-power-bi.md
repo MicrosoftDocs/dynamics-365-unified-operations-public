@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Assign user roles
+title: Embed Power BI in workspaces
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# Assign user roles
+# Embed Power BI in workspaces
 
 **Status**
 
@@ -52,7 +52,3 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | --- | --- |
 | From existing topic? | (link) |
 | Review document location | (link) |
-
-
-
-## See also

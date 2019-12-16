@@ -24,7 +24,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: trkeya
+ms.author: anbichse
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: Human Resources April 2020 update
 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -53,6 +53,24 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | From existing topic? | (link) |
 | Review document location | (link) |
 
+Dynamics 365 Human Resources provides the workforce insights you need to build data-driven employee experiences across multiple areas, including:
 
+- Compensation
+- Benefits
+- Leave and absence
+- Compliance
+- Payroll integration
+- Performance feedback
+- Training and certification
+- Self-service programs
+
+Human Resources connects people and operations data to help you optimize workforce costs and take better care of employees.
 
 ## See also
+
+- [Get started with Human Resources](hr-get-started.md)
+- [Expore Human Resources](hr-get-started-explore.md)
+- [Training resources](hr-get-started-training-resources.md)
+- [Developer Guide](hr-developer-overview.md)
+- [HR Pro Guide](hr-hrpro-overview.md)
+- [Employee Guide](hr-employee-overview.md)

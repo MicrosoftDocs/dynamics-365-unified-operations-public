@@ -24,7 +24,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: trkeya
+ms.author: anbichse
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: Human Resources April 2020 update
 
@@ -56,3 +56,10 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 
 ## See also
+
+- [Get started with Human Resources](hr-get-started.md)
+- [Expore Human Resources](hr-get-started-explore.md)
+- [Training resources](hr-get-started-training-resources.md)
+- [Developer Guide](hr-developer-overview.md)
+- [HR Pro Guide](hr-hrpro-overview.md)
+- [Employee Guide](hr-employee-overview.md)

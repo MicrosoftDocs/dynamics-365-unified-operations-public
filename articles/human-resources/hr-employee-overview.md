@@ -24,7 +24,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: trkeya
+ms.author: anbichse
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: Human Resources April 2020 update
 

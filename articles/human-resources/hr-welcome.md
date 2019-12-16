@@ -24,7 +24,7 @@ ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: trkeya
+ms.author: anbichse
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: Human Resources April 2020 update
 
@@ -32,16 +32,11 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Welcome to Dynamics 365 Human Resources
 
-
-**Status**
-Temporary text (do not use)
-**End status**
-
 **Status**
 
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -58,20 +53,61 @@ Temporary text (do not use)
 | From existing topic? | (link) |
 | Review document location | (link) |
 
+**Introductory video**
 
+## Get started
 
-The way we work, and the workplace, have fundamentally changed—and yet, for many businesses HR processes have not. When workforce practices are disconnected, the result is lower employee engagement and higher turnover rates. Employee disruption ultimately impacts the organization through a lack of product innovation, expensive operational errors, less satisfied customers, and suboptimal financial results.
+- [Get started with Human Resources](hr-get-started.md)
+- [Expore Human Resources](hr-get-started-explore.md)
+- [Training resources](hr-get-started-training-resources.md)
 
-Dynamics 365 Human Resources helps HR professionals get the workforce insights needed to build data-driven employee experiences across multiple areas:
+## Administrator Guide
 
-- Compensation
-- Benefits
-- Leave and absence
-- Compliance
-- Payroll
-- Performance feedback
-- Training and certification
-- Self-service programs
+- [Overview](hr-admin-overview.md)
+- [What's new](hr-admin-whats-new.md)
+- [System requirements](hr-admin-system-requirements.md)
+- [Set up and manage instances](hr-admin-setup-overview.md)
+- [Set up data integration](hr-admin-integration-overview.md)
+- [Manage features](hr-admin-manage-features.md)
+- [Disaster recovery](hr-admin-disaster-recovery.md)
+- [Manage users](hr-admin-users-overview.md)
+- [Manage security](hr-admin-security-overview.md)
+- [Manage workflows](hr-admin-workflows.md)
+- [View electronic reporting jobs](hr-admin-electronic-reporting-jobs.md)
+- [Manage currance exchange rates](hr-admin-exchange-rates.md)
+- [Manage batch jobs](hr-admin-batch-jobs.md)
+- [Import and export data](hr-admin-import-export-overview.md)
+- [Manage work items](hr-admin-work-items.md)
+- [Configure cases](hr-admin-cases.md)
+- [Configure record templates](hr-admin-record-templates.md)
+- [Troubleshoot Human Resources](hr-admin-troubleshooting-overview.md)
 
-Dynamics 365 Human Resources connects people and operations data to ensure businesses can optimize workforce costs and take better care of employees.
+## Developer Guide
 
+- [Overview](hr-developer-overview.md)
+- [Embed Power BI in workspaces](hr-developer-power-bi.md)
+- [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
+- [Create a mobile experience](hr-developer-mobile-workspace.md)
+- [Track changes in recruiting data](hr-developer-track-changes.md)
+- [Custom fields](hr-developer-custom-fields.md)
+- [Entity API reference](hr-developer-api-reference-overview.md)
+
+## HR Pro Guide
+
+- [Overview](hr-hrpro-overview.md)
+- Set up Human Resources
+- Configure organization settings
+- Manage the hiring process
+- Set up compensation plans
+- Manage benefits
+- Manage leave and absence requests
+- Create employee development plans
+- Create courses
+- Manage performance
+- Create surveys
+- Manage safety and compliance
+- Run reports
+
+## Employee Guide
+
+- [Overview](hr-employee-overview.md)
