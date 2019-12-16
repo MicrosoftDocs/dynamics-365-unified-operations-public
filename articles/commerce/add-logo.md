@@ -56,12 +56,9 @@ Before you can add a logo to all the pages of your site, you must complete these
 To add a logo to the header fragment for your site, follow these steps.
 
 1. In the navigation pane on the left, select **Fragments**, and then select the header fragment that you created.
-2. Select **Check out**.
-3. Expand the **Header** slot and the **Logo** slot.
-4. Select the ellipsis button (**...**) for the **Logo** slot, and then select **Add module**.
-5. Select the logo module.
-6. In the properties pane on the right, configure the logo module so that it shows your logo.
-7. Save the header fragment, check it in, and publish it.
+2. Select **Edit**.
+3. Expand the **Header** module and in the property panel configure the Logo by providing a Logo image and a Logo link. 
+4. Save the header fragment, check it in, and publish it.
 
 After you publish the updated header fragment, all site pages that use the template that contains the header fragment will show your logo.
 
