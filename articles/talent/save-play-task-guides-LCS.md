@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Save task guides to LCS and replay them
 
-[!include [banner](includes/banner.md)]
-
 **Environment details** 
 
 Microsoft Dynamics 365 Talent, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)

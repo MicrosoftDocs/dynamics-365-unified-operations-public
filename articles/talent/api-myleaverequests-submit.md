@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Talent
 
 # Submit a leave request to workflow
 
-[!include [banner](includes/preview-banner.md)]
-
 ## Overview
 
 In Microsoft Dynamics 365 Talent, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow. This API is exposed as an action on the MyLeaveRequests OData entity.

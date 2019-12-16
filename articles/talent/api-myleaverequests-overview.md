@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Talent
 
 # MyLeaveRequests overview
 
-[!include [banner](includes/banner.md)]
-
 The MyLeaveRequests entity in Microsoft Dynamics 365 Talent provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.
 
 ## Key

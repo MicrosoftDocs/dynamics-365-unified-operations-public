@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Reporting options in Talent
 
-[!include [banner](includes/banner.md)]
-
 **Environment details**
 
 This issue applies to all environments.

@@ -8,8 +8,6 @@
       items:
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-      - name: Sign up for preview subscriptions
-        href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/commerce/toc.json
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
@@ -36,10 +34,18 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Deploy a demo environment
-        href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/commerce/toc.json
-      - name: Configure an e-Commerce evaluation environment
-        href: provisioning-guide.md
+      - name: Set up a Commerce preview environment
+        items:
+        - name: Commerce preview environment overview
+          href: cpe-overview.md
+        - name: Provision a Commerce preview environment
+          href: provisioning-guide.md
+        - name: Configure a Commerce preview environment
+          href: cpe-post-provisioning.md
+        - name: Configure optional features for a Commerce preview environment
+          href: cpe-optional-features.md
+        - name: Commerce preview environment FAQ
+          href: cpe-faq.md
       - name: Deployment considerations
         items:
         - name: Deployment options
@@ -72,20 +78,14 @@
           href: ../retail/dev-itpro/retailSDK-update.md?toc=/dynamics365/commerce/toc.json
       - name: What's new or changed
         items:
-        - name: Preview features in Retail version 10.0.7
+        - name: Retail version 10.0.7
           href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
         - name: Retail version 10.0.6
           href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail version 10.0.5
-          href: ../retail/get-started/whats-new-10-0-5.md?toc=/dynamics365/commerce/toc.json
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-          - name: Finance and Operations apps 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/commerce/toc.json
-          - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/commerce/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
             href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/commerce/toc.json
         - name: Removed or deprecated features

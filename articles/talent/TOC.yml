@@ -8,6 +8,10 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: December 12, 2019
+        href: whats-new-talent-december-12-2019.md
+      - name: December 3, 2019
+        href: whats-new-talent-december-3-2019.md
       - name: November 19, 2019
         href: whats-new-talent-november-19-2019.md
       - name: November 12, 2019
@@ -441,8 +445,6 @@
           href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: My team mobile workspace
           href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Publish mobile workspaces
-        href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Track changes in recruiting data
       href: process-auditing.md
     - name: Extensibility in Attract

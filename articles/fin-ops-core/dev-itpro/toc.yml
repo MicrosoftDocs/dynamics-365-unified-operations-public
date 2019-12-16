@@ -8,7 +8,9 @@
       href: index.md
     - name: What's new or changed
       items:
-      - name: Preview features in Platform update 31 (January 2020)
+      - name: Preview features in Platform update 32 (February 2020)
+        href: get-started/whats-new-platform-update-32.md
+      - name: Platform update 31 (January 2020)
         href: get-started/whats-new-platform-update-31.md
       - name: Platform update 30 (November 2019)
         href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -33,7 +35,11 @@
       - name: Platform update 20 (September 2018)
         href: ../fin-ops/get-started/whats-new-platform-update-20.md
       - name: Platform update 15 (March 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-15.md    
+        href: ../fin-ops/get-started/whats-new-platform-update-15.md  
+      - name: What's new or changed in previous versions
+        items:
+        - name: What's new or changed in Finance and Operations home page
+          href: ../fin-ops/get-started/whats-new-changed.md
     - name: Business events
       items:
       - name: Business events overview
@@ -410,7 +416,7 @@
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: PowerBI.com integration with on-premises environments
           href: analytics/entity-store-on-prem.md
-        - name: Configure reverse proxies for on-premises environments
+        - name: Configure proxies for on-premises environments
           href: deployment/onprem-reverseproxy.md
         - name: Apply updates to an on-premises deployment
           href: deployment/apply-updates-on-premises.md
@@ -926,6 +932,8 @@
           href: lifecycle-services/whats-new-lcs.md
         - name: Known issues
           href: lifecycle-services/known-issues.md
+        - name: Removed or deprecated features in Lifecycle Services (LCS)
+          href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
       - name: Subscription estimator

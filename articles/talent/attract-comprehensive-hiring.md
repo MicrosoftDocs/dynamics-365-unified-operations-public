@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Choose a version of Attract
 
-[[!include [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 The version of Microsoft Dynamics 365 Talent: Attract that is right for you depends on your organization's size and needs. The basic version of Attract provides a subset of functionality that is targeted at smaller teams or organizations where the hiring manager is the primary user. You can start to use the basic version of Attract with one or more licenses.
 

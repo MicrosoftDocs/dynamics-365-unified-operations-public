@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -153,7 +153,7 @@ The following tables list the application areas. Cloud and on-premises support i
 
 ## Dynamics 365 Retail 
 
-To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
 ## Dynamics 365 Talent 
 

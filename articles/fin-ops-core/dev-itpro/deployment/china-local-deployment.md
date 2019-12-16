@@ -60,7 +60,7 @@ There are a few technical limitations during the provisioning of services that n
 - OSSA = Online Services Standard Agreement
 - CSP = Cloud Solution Provider
 
-For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/en-us/power-platform/admin/create-environment).
+For information on provisioning environments, see [Create and manage environments in the Power Platform Admin center](https://docs.microsoft.com/power-platform/admin/create-environment).
 
 ## Features not available
 
@@ -106,7 +106,7 @@ Due to certain technical dependencies, the following features listed will not be
 
 - [Dynamics 365 support site for 21Vianet (Chinese)](https://www.21vbluecloud.com/Dynamics365/)
 - [Support for Dynamics 365 Finance and Operations apps operated by 21Vianet in China](../lifecycle-services/21vianet-support.md)
-- [Dynamics 365 for Customer Engagement - operated by 21Vianet](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
+- [Model-driven apps in Dynamics 365 - operated by 21Vianet in China](https://docs.microsoft.com/dynamics365/customer-engagement/admin/datacenter/about-microsoft-cloud-china)
 - [Dynamics 365 Privacy statement (Dynamics 365 隐私声明)](https://www.21vbluecloud.com/Dynamics365/d365-privacy/)
 - [Dynamics 365 Service Level agreement (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/Dynamics365/d365-sla/)
 - [Dynamics 365 Legal information (Dynamics 365 法律信息)](https://www.21vbluecloud.com/Dynamics365/dynamics365-legal/)

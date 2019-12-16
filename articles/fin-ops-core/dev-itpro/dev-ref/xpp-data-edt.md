@@ -55,12 +55,14 @@ This feature isn't implemented as a language construct. To create an EDT, follow
 
 ## EDT example
 
-    public void EdtMethod()
-    {
-        // Example of declaring EDT variables where
-        // a UserGroupID (integer) variable is declared and initialized to 1.
-        UserGroupID groupID = 1;
+```xpp
+public void EdtMethod()
+{
+    // Example of declaring EDT variables where
+    // a UserGroupID (integer) variable is declared and initialized to 1.
+    UserGroupID groupID = 1;
 
-        // An Amount (real) variable is declared.
-        Amount currency;
-    }
+    // An Amount (real) variable is declared.
+    Amount currency;
+}
+```

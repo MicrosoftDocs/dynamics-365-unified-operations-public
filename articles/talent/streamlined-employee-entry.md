@@ -32,11 +32,9 @@ ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
 
 # Streamlined employee entry and navigation
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent allows efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors.
 
-You can also enable a simplified navigation experience to quickly find related information and make any necessary changes. This functionality is now available in sandbox environments. To turn this feature on, navigate to **System administration > Links > Setup > System parameters > Preview features**. Select **Enhanced worker form and navigation**. This will enable these changes for all users. You can turn this option off at any time.
+You can also enable a simplified navigation experience to quickly find related information and make any necessary changes. This functionality is now available in all environments. To turn this feature on, navigate to **System administration > Feature Management > New > Streamlined employee entry > Enable**. This will enable these changes for all users. You can turn this option off at any time.
 
 ## View options
 
