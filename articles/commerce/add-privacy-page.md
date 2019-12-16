@@ -98,7 +98,7 @@ To add a link to a footer fragment, follow these steps.
 
 1. Go to **Page Fragments \> New Page Fragment**.
 1. Select the **Footer** module, and then enter a name in the **Page Fragment Name** field.
-1. In the **Footer category** slot, add a **footer item** module.
+1. In the **Footer category** slot, add a **Footer item** module.
 1. In the properties pane on the right, select **Link text**.
 1. In the **Link text** dialog box, enter the link text and link target of the privacy policy page, and then click **OK**.
 
