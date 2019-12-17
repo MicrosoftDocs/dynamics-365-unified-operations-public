@@ -2,7 +2,7 @@
 # required metadata
 
 title: CONVERTCURRENCY ER function
-description: This topic provides information about how the CONVERTCURRENCY ER function is used.
+description: This topic provides information about how the CONVERTCURRENCY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CONVERTCURRENCY">CONVERTCURRENCY Function</a>
+# <a name="CONVERTCURRENCY">CONVERTCURRENCY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `CONVERTCURRENCY` function returns a *Real* value as the result of the conversion of the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified company on the specified date.
+The `CONVERTCURRENCY` function returns a *Real* value that represents the result of converting the specified monetary amount from the specified source currency to the specified target currency by using the settings of the specified company on the specified date.
 
 ## Syntax
 
@@ -44,31 +44,31 @@ CONVERTCURRENCY (amount, source currency, target currency, date, company)
 
 ## Arguments
 
-`amount` : *Integer* or *Real*
+`amount`: *Integer* or *Real*
 
-A numeric value of the monetary amount that must be converted.
+A numeric value that represents the monetary amount that must be converted.
 
-`source currency` : *String*
+`source currency`: *String*
 
-A code of the source currency.
+The code of the source currency.
 
-`target currency` : *String*
+`target currency`: *String*
 
-A code of the target currency.
+The code of the target currency.
 
-`date` : *Date*
+`date`: *Date*
 
-A Date value of date using to specify the exchange rate for conversion.
+A *Date* value that represents the date that is used to determine the exchange rate for the conversion.
 
-`company` : *String*
+`company`: *String*
 
-A String value of the code of a company the settings of which are used for conversion.
+A *String* value that represents the code of a company that supplies the settings that are used for the conversion.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example
 
