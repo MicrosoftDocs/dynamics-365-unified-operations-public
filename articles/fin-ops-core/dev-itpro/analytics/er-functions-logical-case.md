@@ -2,10 +2,10 @@
 # required metadata
 
 title: CASE ER function
-description: This topic explains how the CASE ER function is used
+description: This topic provides information about how the CASE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `CASE` function evaluates the value of the specified expression against the specified alternative options. Returns the result of the first option that equals the value of the specified expression. Otherwise, return an optional default result, if a default result is specified as the last argument of the called function that is not preceded by an option.
+The `CASE` function evaluates the value of the specified expression against the specified alternative options and returns the result of the first option that equals the value of the specified expression. Otherwise, it returns the optional default result, if a default result is specified as the last argument of the called function that is not preceded by an option.
 
 ## Syntax
 
