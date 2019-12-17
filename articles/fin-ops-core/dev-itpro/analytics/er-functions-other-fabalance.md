@@ -2,10 +2,10 @@
 # required metadata
 
 title: FA_BALANCE ER function
-description: This topic explains how the FA_BALANCE ER function is used
+description: This topic provides information about how the FA_BALANCE ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `FA_BALANCE` function returns a *Container (record)* of data of the fixed asset balance for the specified fixed asset item, value model code, reporting year and reporting date.
+The `FA_BALANCE` function returns a *Container (record)* of data of the fixed asset balance for the specified fixed asset item, value model code, reporting year, and reporting date.
 
 ## Syntax
 
