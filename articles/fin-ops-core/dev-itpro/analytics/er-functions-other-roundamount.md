@@ -2,7 +2,7 @@
 # required metadata
 
 title: ROUNDAMOUNT ER function
-description: This topic provides information about how the ROUNDAMOUNT ER function is used.
+description: This topic provides information about how the ROUNDAMOUNT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUNDAMOUNT">ROUNDAMOUNT Function</a>
+# <a name="ROUNDAMOUNT">ROUNDAMOUNT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ROUNDAMOUNT` function returns a *Real* value as the result of rounding the specified amount to the specified number of decimal places according to the specified rounding rule.
+The `ROUNDAMOUNT` function returns a *Real* value that represents the result of rounding the specified amount to the specified number of decimal places according to the specified rounding rule.
 
 ## Syntax
 
@@ -44,29 +44,29 @@ ROUNDAMOUNT (number, decimals, round rule)
 
 ## Arguments
 
-`number` : *Int* or *Real*
+`number`: *Int* or *Real*
 
-A numeric value to be rounded.
+A numeric value that must be rounded.
 
-`decimals` : *Int*
+`decimals`: *Int*
 
-A numeric value specifying the number of decimal places to round the specified number to.
+A numeric value that specifies the number of decimal places to round the specified number to.
 
-`round rule` : *Enum value*
+`round rule`: *Enum value*
 
-An *Enum value* of the **RoundOffType** enumeration defining the rounding rule.
+An enumeration value of the **RoundOffType** enumeration that defines the rounding rule.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example
 
-If the **model.RoundOff** parameter is set to **RoundOffType.Downward**, `ROUNDAMOUNT (1000.787, 2, model.RoundOff)` returns the value 1000.78. 
+If the **model.RoundOff** parameter is set to **RoundOffType.Downward**, `ROUNDAMOUNT (1000.787, 2, model.RoundOff)` returns the value **1000.78**. 
 
-If the **model.RoundOff** parameter is set to either **RoundOffType.Normal** or **RoundOffType.Rounding-up**, `ROUNDAMOUNT (1000.787, 2, model.RoundOff)` returns the value 1000.79.
+If the **model.RoundOff** parameter is set to either **RoundOffType.Normal** or **RoundOffType.Rounding-up**, `ROUNDAMOUNT (1000.787, 2, model.RoundOff)` returns the value **1000.79**.
 
 ## Additional resources
 
