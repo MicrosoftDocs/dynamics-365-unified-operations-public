@@ -2,7 +2,7 @@
 # required metadata
 
 title: CURCREDREF ER function
-description: This topic provides information about how the CURCREDREF ER function is used.
+description: This topic provides information about how the CURCREDREF Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CURCREDREF">CURCREDREF Function</a>
+# <a name="CURCREDREF">CURCREDREF ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `CURCREDREF` function returns a *String* value of a creditor reference, based on the digits of the specified invoice number.
+The `CURCREDREF` function returns a *String* value that represents a creditor reference, based on the digits of the specified invoice number.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ CURCREDREF (invoice number digits)
 
 ## Arguments
 
-`invoice number digits` : *String*
+`invoice number digits`: *String*
 
-A text representing the digits of an invoice number.
+A text value that represents the digits of an invoice number.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`CURCredRef ("VEND-200002")` returns "2200002".
+`CURCredRef ("VEND-200002")` returns **"2200002"**.
 
 ## Additional resources
 
