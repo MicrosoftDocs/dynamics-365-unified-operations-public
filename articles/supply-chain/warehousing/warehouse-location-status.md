@@ -1,72 +1,139 @@
+---
+# required metadata
+
+title: Warehouse location status
+description: This topic provides an overview of Warehouse location status.
+author: Mirzaab
+manager: AnnBe
+ms.date: 12/17/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+ms.search.form: 
+# ROBOTS: 
+audience: Application User
+# ms.devlang: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Supply Chain Management
+# ms.tgt_pltfrm: 
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: perlynne
+ms.search.validFrom: 2019-12-31
+ms.dyn365.ops.version: 10.0.1
+
+---
+
 # Warehouse location status
 
-# Released in version 10.0.1
-#
-# About
+[!include [banner](../includes/banner.md)]
 
-This functionality introduces new fields on locations table for more flexibility in working with and maintaining of locations. Location statuses dictate the status of location and can be included in the location directives query for better warehouse flow control.
+Dynamics 365 Supply Chain Management includes several locations fields to provide flexibility in working with and maintaining locations. Location statuses can be included in the location directives query for better warehouse flow control.
 
-The location status feature adds four new fields to the Locations form to track additional information about the current state of the location:
+There are four recently added fields on the **Locations** page to track additional information about the current state of the location. The fields allow warehouse managers to get a better overview of the status of the locations in the warehouse and enable more advanced reporting and filtering.
 
-- Item number
+- Item number: Item that is currently in the location. If the location contains multiple items, this field will be blank.
 
-- Item that is currently in the location. If the location contains multiple items, this field will be blank
+- Last activity date and time: Timestamp of the last warehouse transaction that was performed against the location.
 
-- Last activity date and time
+- Aging date: Date the inventory in the location was brought into the warehouse. This value is calculated based on the license plate aging date. It is accurate for license plate-tracked locations but not guaranteed to be accurate for non-license plate-tracked locations.
 
-- Timestamp of the last warehouse transaction that was performed against the location
+- Location status: There are four options for location status.
 
-- Aging date
-
-- Date the inventory in the location was brought into the warehouse.
-- Calculated based on the license plate aging date. Accurate for license plate tracked locations. Not guaranteed to be accurate for non license plate tracked locations.
-
-- Location status
-
-- Four options:
-
-- Undetermined: Location profile does not track status. Current status unknown
-- Empty: No inventory currently in the location
-- Picking: Outbound transactions have been performed against the location after it was last empty
-
-- Storage: Only inbound transactions have been performed since the location was last empty
-
-These fields allow warehouse managers to get a better overview of the status of the locations in the warehouse and enable more advanced reporting and filtering.
+  - Undetermined: Location profile cannot track status. Current status is unknown.
+  - Empty: There is currently no inventory in the location.
+  - Picking: Outbound transactions have been performed against the location after it was last empty.
+  - Storage: Only inbound transactions have been performed since the location was last empty.
 
 
+## Set up location profiles
 
-# Setup
+1. Go to **Warehouse management > Setup > Warehouse > Location profiles**.
 
-Navigate to _Warehouse management_ - _Setup_ - _ Warehouse_ - _Location profiles_ and select BULK-06. In the General FastTab, Location Updates section, ensure that Enable item in location, Enable location activity date and time, and Enable location status are set to Yes. These parameters control if the references field on the location are active or not. Do the same for profile PIKC-06
+2. Select "BULK-06". 
 
-# Process
+3. On the **General** FastTab, in the **Location Updates** group, set the toggles are set to **Yes** for **Enable item in location**, **Enable location activity date and time**, and **Enable location status**. These parameters control whether the references field on the location are active or not. 
 
-Navigate to _Procurement and Sourcing_ - _Purchase orders_ - _All purchase orders_ and create a new purchase order. Specify Vendor account = 104 and Warehouse = 61. Add a line to the order for item A0002, quantity 5 pcs.
+4. Select "PIKC-06".
 
-Open the mobile device and navigate to _Inbound_ - _Purchase Receive._ Enter your PO number and item, followed by the full quantity of the line.
+5. Repeat step 3.
 
-From your purchase order, click on Work details in the lines action bar, and note the Work ID that was created.
 
-On the mobile device navigate to _Inbound_ - _Purchase Put-away_ and enter the work ID. Complete the pick and the put, noting the putaway location.
+# Example scenario
 
-Navigate to _Warehouse management_ - _Setup_ - _Warehouse_ - _Locations_ and filter on Location = your putaway location from the purchase order work.
+1. Go to **Procurement and Sourcing > Purchase orders > All purchase orders**.
 
-The location status column will be populated with &#39;Storage&#39; because the last transaction against the location was put. The item number column is populated with A0002, the item that was received and put to the location. The Last Activity Date and Time column will be populated with the timestamp that the work was completed to the location.
+2. Click **New**.
 
-On the mobile device, navigate to _Quality_ - _Movement_ and enter the putaway location from the purchase order work as the location. Confirm the full quantity. Enter 06A07R2S1B as the put location and accept the system generated license plate.
+3. In the **Vendor account** field, select "104".
 
-In the locations form, refresh and view the original putaway location again. Notice that the Location Status is now &#39;Empty&#39; and the Item number column is blank.
+4. In the **Warehouse** field, select "61". 
 
-View the record for 06A07R2S1B and notice that the status has changed to Storage and the Item number and Last Activity Date and Time fields have been updated.
+5. Click **Ok**.
 
-Navigate to _Sales and marketing_ - _Sales orders_ - _ All sales order_s and create a new sales order. Specify customer US-002 and warehouse 61. Add a line to the sales order for item A0002, quantity 1 pcs. Reserve the order line and release to warehouse.
+6. Under **Purchase order lines**, click **Add line**.
 
-Click on Warehouse - Work details from the sales order line action bar. Copy the Work ID that was created.
+7. In the **Item number** field, select "A0002".
 
-On the mobile device, navigate to _Outbound_ - _Sales picking_ and enter the copied work ID. Enter the LP created earlier and confirm the pick and put.
+8. in the **Quantity** field, enter "5".
 
-Go back to the location form and notice that the Location Status for the location the sales order work picked from has been updated to &#39;Picking,&#39; as well as the Las Activity Date and Time.
+9. Open the mobile device and go to **Inbound > Purchase Receive**.
 
-# Appendix
+10. Enter the PO number and item, followed by the full quantity of the line.
 
-These location fields are only update by warehouse transactions. Moving inventory using a journal, or other non WHS processes will not update these fields.
+11. On the purchase order, click **Work details** in the **Purchase order lines** group. On the **General** tab, note the work ID that was created.
+
+12. On the mobile device, go to **Inbound > Purchase Put-away** and enter the work ID. 
+
+13. Complete the pick and the put, noting the putaway location.
+
+14. In Supply Chain Management, go to **Warehouse management > Setup > Warehouse > Locations**.
+
+15. Filter on "Location", and enter the putaway location from the purchase order work.
+
+  - The location status column is populated with "Storage" because the last transaction against the location was put. 
+  - The item number column is populated with "A0002", the item that was received and put to the location. 
+  - The **Last Activity Date** and **Time** column is populated with the timestamp that the work was completed to the location.
+
+16. On the mobile device, go to **Quality > Movement** and enter the putaway location from the purchase order work as the location. 
+
+17. Confirm the full quantity. Enter "06A07R2S1B" as the put location and accept the system-generated license plate.
+
+18. In Supply Chain Management, on the **Locations** page, refresh and view the original putaway location again. Notice that the **Location Status** is now "Empty", and the **Item number** column is blank.
+
+19. View the record for "06A07R2S1B" and notice that the **Status** changed to "Storage" and the **Item number** and **Last Activity Date and Time** fields are updated.
+
+20. Go to **Sales and marketing > Sales orders > All sales orders**. 
+
+21. Click **New**. 
+
+22. In the **Customer account** field, select "US-002".
+
+23. In the **Warehouse** field, select "61".
+
+24. Click **OK**.
+
+25. Under **Sales order lines**, click **Add line**.
+
+26. In the **Item number** field, select "A0002".
+
+27. In the **Quantity** field, enter "1".
+
+28. Reserve the order line and release to warehouse.
+
+29. Click on Warehouse - Work details from the sales order line action bar. Copy the Work ID that was created.
+
+30. On the mobile device, go to **Outbound > Sales picking** and enter the work ID from above.
+
+31. Enter the putaway location created earlier and confirm the pick and put.
+
+32. In Supply Chain Management, go to the **Locations** page. Notice that the **Location Status** for the location the sales order work picked from is updated to "Picking", and the **Last Activity Date and Time** fields are updated.
+
+> [!NOTE]
+> The location fields are only updated by warehouse transactions. Moving inventory using a journal, or other non-WHS processes will not update the fields.
