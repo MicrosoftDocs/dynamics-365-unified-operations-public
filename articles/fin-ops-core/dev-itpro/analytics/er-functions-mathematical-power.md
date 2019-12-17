@@ -2,7 +2,7 @@
 # required metadata
 
 title: POWER ER function
-description: This topic provides information about how the POWER ER function is used.
+description: This topic provides information about how the POWER Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="POWER">POWER Function</a>
+# <a name="POWER">POWER ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `POWER` function returns a *Real* value as the result of raising the specified positive number to the specified power.
+The `POWER` function returns a *Real* value that represents the result of raising the specified positive number to the specified power.
 
 ## Syntax
 
@@ -44,27 +44,27 @@ POWER (number, power)
 
 ## Arguments
 
-`number` : *Real* or *Integer*
+`number`: *Real* or *Integer*
 
-A numeric value that must be raised to a given power.
+A numeric value that must be raised to the specified power.
 
-`power` : *Real* or *Integer*
+`power`: *Real* or *Integer*
 
-A numeric value of the specific power.
+A numeric value that represents the specific power.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example 1
 
-`POWER (10, 2)` returns 100.
+`POWER (10, 2)` returns **100**.
 
 ## Example 2
 
-`POWER (4, 0.5)` returns 2.
+`POWER (4, 0.5)` returns **2**.
 
 ## Additional resources
 
