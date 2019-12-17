@@ -2,7 +2,7 @@
 # required metadata
 
 title: NOT ER function
-description: This topic provides information about how the NOT ER function is used.
+description: This topic provides information about how the NOT Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="NOT">NOT Function</a>
+# <a name="NOT">NOT ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -44,15 +44,15 @@ NOT (condition)
 
 ## Arguments
 
-`condition` : *Boolean*
+`condition`: *Boolean*
 
-A valid conditional expression to be reversed.
+A valid conditional expression that must be reversed.
 
-## Returns
+## Return values
 
 *Boolean*
 
-The result *Boolean* value.
+The resulting *Boolean* value.
 
 ## Example
 
