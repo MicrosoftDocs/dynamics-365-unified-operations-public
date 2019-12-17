@@ -4,7 +4,7 @@
 title: Manage robots.txt files
 description: This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-manager: Brendan Sullivan
+manager: annbe
 ms.date: 12/16/2019
 ms.topic: article
 ms.prod: 
@@ -91,23 +91,3 @@ To delete a robots.txt file in Commerce, follow these steps.
 >[!NOTE] 
 >Only robots.txt files uploaded previously with Commerce authoring tools will be available to delete using this method.
 
-
-
-
-%%%%%
-
-In a web browser, access the Homepage of your Commerce Site Builder instance. A System Admin must be logged in to perform the robots.txt upload. Once logged in, perform the following:
-
- The above methods can be used to manage updates to the robots.txt file content. 
- 
- - A right-side menu will open with options to 'delete' (garbage can icon) , 'download' (down-facing arrow icon), or 'upload' (up-facing arrow icon)a robots.txt file per domain.
-- Select the specific icons to the right of the listed domain you would like to operate against:
-  - **Upload**- use this option to upload or overwrite an existing robots.txt file
-    - A file picker dialog will appear- choose the correct 'robots.txt' file on your drive for the given domain. The tooling will do a basic check that the file is a text file (note: it will <u>not</u> validate the contents of the txt file).
-    - A status alert should show the upload was successful
-    
-    
-- **Download** - use this option to download the current robots.txt file previously uploaded to the domain via the step above ().
-    - A Save File dialog will appear
-    - 
-   - **Delete** - use this option to delete a previously uploaded robots.txt file (only robots.txt files uploaded previously through the Commerce Site Builder tool will be available to delete through this option).
