@@ -2,7 +2,7 @@
 # required metadata
 
 title: ROUND ER function
-description: This topic provides information about how the ROUND ER function is used.
+description: This topic provides information about how the ROUND Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUND">ROUND Function</a>
+# <a name="ROUND">ROUND ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ROUND` function returns a *Real* value of the specified number after it has been rounded to the specified number of decimal places.
+The `ROUND` function returns the specified number as a *Real* value after it has been rounded to the specified number of decimal places.
 
 ## Syntax
 
@@ -50,29 +50,29 @@ A numeric value that must be rounded.
 
 `decimals`: *Integer*
 
-A numeric number of decimal places.
+A numeric value that represents the number of decimal places.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
-If the value of the decimals parameter is more than zero (0), the specified number is rounded to that many decimal places.
+If the value of the `decimals` argument is more than 0 (zero), the specified number is rounded to that many decimal places.
 
-If the value of the decimals parameter is zero (0), the specified number is rounded to the nearest integer.
+If the value of the `decimals` argument is **0** (zero), the specified number is rounded to the nearest integer.
 
-If the value of the decimals parameter is less than zero (0), the specified number is rounded to the left of the decimal point.
+If the value of the `decimals` argument is less than 0 (zero), the specified number is rounded to the left of the decimal point.
 
 ## Example 1
 
-`ROUND (1200.767, 2)` rounds to two decimal places and returns 1200.77.
+`ROUND (1200.767, 2)` rounds to two decimal places and returns **1200.77**.
 
 ## Example 2
 
-`ROUND (1200.767, -3)` rounds to the nearest multiple of 1,000 and returns 1000.
+`ROUND (1200.767, -3)` rounds to the nearest multiple of 1,000 and returns **1000**.
 
 ## Additional resources
 
