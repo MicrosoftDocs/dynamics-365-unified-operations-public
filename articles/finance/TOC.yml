@@ -2763,6 +2763,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json  
         - name: Formula designer in Electronic reporting
           href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+          name: Formula and functions
+          items:
           - name: Formula language
             href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json  
             - name: Date and time functions
