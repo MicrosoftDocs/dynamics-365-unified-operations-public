@@ -2,7 +2,7 @@
 # required metadata
 
 title: GETCURRENTCOMPANY ER function
-description: This topic provides information about how the GETCURRENTCOMPANY ER function is used.
+description: This topic provides information about how the GETCURRENTCOMPANY Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY Function</a>
+# <a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `GETCURRENTCOMPANY` function returns a *String* value as representation of the code for the legal entity (company) that a user is currently signed in to.
+The `GETCURRENTCOMPANY` function returns a *String* value that represents the code for the legal entity (company) that a user is currently signed in to.
 
 ## Syntax
 
@@ -42,11 +42,11 @@ The `GETCURRENTCOMPANY` function returns a *String* value as representation of t
 GETCURRENTCOMPANY ()
 ```
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
