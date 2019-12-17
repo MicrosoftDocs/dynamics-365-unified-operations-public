@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -50,9 +50,65 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | [Set up Human resources (HR) parameters across legal entities](https://docs.microsoft.com/en-us/dynamics365/talent/set-up-hr-parameters-across-legal-entities), [Set up company-specific Human resources (HR) parameters](https://docs.microsoft.com/en-us/dynamics365/talent/set-up-company-specific-hr-parameters) |
 | Review document location | (link) |
+
+## Set up Human resources (HR) parameters across legal entities
+
+You must set up shared parameters for records that are shared across companies, such as Position records. This article explains how to set up Human resources parameters across legal entities.
+
+Some types of records, such as Position records, are shared across companies. For these records, you must set up shared parameters. For example, you use the **Human resources shared parameters** page to set up Human resources parameters across legal entities. 
+
+On the **Human resources shared parameters** page, parameters are grouped into areas, based on their functionality. 
+
+### Previously released functionality
+
+On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, click **Personnel management** &gt; **Links tab** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
+
+### If you're using Dynamics 365 Talent
+
+On the **Identification** tab, you must select the identification types that represent the identification numbers that are listed on the page. You must set up identification types before you can enter identification information for workers. Information about the Social Security number, national ID number, alien ID number, and personal ID code is maintained on the **Identification type** page. To define a new identification type or review the list of existing types, click **Human resources** &gt; **Setup** &gt; **Identification types**. You can enter a simple code and description. 
+
+On the **Number sequences** tab, you can select the number sequences that are used for the following records: Personnel number, Position, User request ID, I-9 document, Applicant, Discussion, Benefit ID, and Personnel action (if this record type is enabled). To maintain number sequence references and codes, use the **Number sequences** list page. To find this page, use the page search feature. 
+
+On the **Positions** tab, indicate whether new positions are available for assignment by default:
+
+- **Always** – You can assign workers to new positions when positions are created. When positions are created, the **Available for assignment** date and time on the **General** tab of the **Position** page are automatically set to the creation date and time.
+- **Never** – You can't assign workers to new positions when positions are created. If you select this option, you must open the **Position** page for each new position as it becomes available, and then, on the **General** tab, enter the **Available for assignment** date to enable worker assignment.
+
+
+## Set up company-specific Human resources (HR) parameters
+
+The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
+
+Two pages are used to set Human resources (HR) parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page. On the **Human resources parameters** page, the settings are divided among six tabs:
+
+-   General
+-   Recruitment - this is not included in Dynamics 365 Talent
+-   Compensation
+-   Number sequences
+-   Family and Medical Leave Act (FMLA)
+-   Employee self-service
+
+Each tab contains information that pertains to a single company. The settings on the **General** tab define the appearance of information about absence, injury and illness, and new hires. The settings on this tab also define some default entries that appear as you work. Specifically, this tab lets you select a color to apply to open absence transactions, specify the style sheet to use for reports, enable the integration between training courses and absence registration, and select the absence code that is used to control this integration. You can also indicate how long injury and illness case incidents should be kept, and specify the default identification number that is shown when a new worker is hired. 
+
+The settings on the **Recruitment** tab define the document types that are used for correspondence that is automatically sent to applicants, and the recruitment project that is used for unsolicited applications (applications that aren't for a specific recruitment project). The period that is defined for the recruitment project aging determines the recruitment projects that are included on the **Aging projects** tile in the **Recruitment management** workspace. The period that is defined for the application deadline warning is used to display recruitment projects that are approaching their application deadline on the **Application deadline approaching** tile in the **Recruitment** workspace. 
+
+The settings on the **Compensation** tab define whether users must confirm that they want to save information for a fixed or variable compensation plan. If you select the **Enable save validation** check box, any time that users close a compensation-related page, they receive a message that asks whether they want to save the record. Some pages in compensation management don't let users delete information. Therefore, by prompting users to verify that they want to save information, you might be able to limit the amount of information that is saved but can't be deleted later. If the **Enable save validation** check box is cleared, records are always saved immediately, possibly before the user is ready. If you're using performance management, the **Compensation** tab also lets you select a rating model to use instead of the model that is assigned to compensation plans when performance is rated. 
+
+### Previously released functionality
+
+The settings on the **Number sequence** tab determine the sequences that are used to automatically assign IDs to items in Human resources, such as applications, absence registrations, compensation process results, case numbers, courses, and course agendas. To maintain number sequence references and codes, use the **Number sequences** list page (click **Organization administration** &gt; **Number sequences** &gt; **Number sequences**).
+
+### If you're using Dynamics 365 Talent
+
+The settings on the **Number sequence** tab determine the sequences that are used to automatically assign IDs to items in Human resources, such as applications, absence registrations, compensation process results, case numbers, courses, and course agendas. To maintain number sequence references and codes, use the **Number sequences** list page (click **System administration** &gt; **Links tab** &gt; **Number sequences** &gt; **Number sequences**). 
+
+The settings on the **FMLA** tab define how many hours an employee must work in order to be eligible for FMLA benefits, the length of employment that is required for eligibility, and the employment start date that is used to determine the length of employment. The settings also define the number of FMLA hours that employees are entitled to and the FMLA leave calendar that is used to calculate how many FMLA hours employees have used. The **FMLA** tab is available only to companies in the United States. 
+
+**Note:** The number of hours that are worked can't exceed 1,250, and the length of employment can't exceed 12 months. These maximum values are in accordance with federal law in the United States. Finally, the settings on the **Employee self-service** tab determine the information that a manager can enter on behalf of his or her employees.
 
 
 
 ## See also
+
