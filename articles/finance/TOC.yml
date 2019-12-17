@@ -2985,11 +2985,11 @@
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
               - name: Value
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
-              - name: Date & Time category: DateTimeValue
+              - name: Date and Time category: DateTimeValue
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-              - name: Date & Time category: DateToDateTime
+              - name: Date and Time category: DateToDateTime
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-              - name: Date & Time category: DateValue
+              - name: Date and Time category: DateValue
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
               - name: List category: List
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
