@@ -2,10 +2,10 @@
 # required metadata
 
 title: Language and locale descriptors
-description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in certain Dynamics 365 apps. 
+description: This topic maps the language names between the finance and operations client and the GitHub repos with Microsoft's Help files. 
 author: edupont04
-manager: AnnBe
 ms.service: dynamics-ax-platform
+ms.date: 12/17/19
 
 # optional metadata
 
@@ -39,50 +39,50 @@ For more information, see [Deploying custom Help](deploy.md) and [Example of Dep
 
 The following table maps the language names between the client and the GitHub repos with Microsoft's translated Help content.  
 
-|Language region variation|Name of the GitHub repo|Name of the language in the client|
-|-------------------------|-----------------------|----------------------------------|
-|Arabic (United Arab Emirates)|[Dynamics-365-Operations.ar-sa](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|ar|
-|Arabic (Saudi Arabia)|[Dynamics-365-Operations.ar-sa](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|ar|
-|Czech|[Dynamics-365-Operations.cs-cz](https://github.com/MicrosoftDocs/Dynamics-365-Operations.cs-cz)|cs|
-|Danish|[Dynamics-365-Operations.da-dk](https://github.com/MicrosoftDocs/Dynamics-365-Operations.da-dk/)|da|
-|German (Austria)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|de-at|
-|German (Switzerland)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|de-ch|
-|German (Germany)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|de|
-|English (Australia)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-au|
-|English (Canada)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-ca|
-|English (United Kingdom)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-gb|
-|English (Ireland)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-ie|
-|English (India)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-in|
-|English (Malaysia)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-my|
-|English (New Zealand)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-nz|
-|English (Singapore)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-sg|
-|English (US)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-us|
-|English (South Africa)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|en-za|
-|Spanish (Spain)|[Dynamics-365-Operations.es-es](https://github.com/MicrosoftDocs/Dynamics-365-Operations.es-es)|es|
-|Spanish (Mexico)|[Dynamics-365-Operations.es-es](https://github.com/MicrosoftDocs/Dynamics-365-Operations.es-es)|es-mx|
-|Estonian|[Dynamics-365-Operations.et-ee](https://github.com/MicrosoftDocs/Dynamics-365-Operations.et-ee)|et|
-|Finnish|[Dynamics-365-Operations.fi-fi](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fi-fi)|fi|
-|French (Belgium)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|fr-be|
-|French (Canada)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|fr-ca|
-|French (Switzerland)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|fr-ch|
-|French (France)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|fr|
-|Hungarian|[Dynamics-365-Operations.hu-hu](https://github.com/MicrosoftDocs/Dynamics-365-Operations.hu-hu)|hu|
-|Icelandic|[Dynamics-365-Operations.is-is](https://github.com/MicrosoftDocs/Dynamics-365-Operations.is-is)|is|
-|Italian (Switzerland)|[Dynamics-365-Operations.it-it](https://github.com/MicrosoftDocs/Dynamics-365-Operations.it-it)|it-ch|
-|Italian|[Dynamics-365-Operations.it-it](https://github.com/MicrosoftDocs/Dynamics-365-Operations.it-it)|it|
-|Japanese|[Dynamics-365-Operations.ja-jp](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ja-jp)|ja|
-|Lithuanian|[Dynamics-365-Operations.lt-lt](https://github.com/MicrosoftDocs/Dynamics-365-Operations.lt-lt)|lt|
-|Latvian|[Dynamics-365-Operations.lv-lv](https://github.com/MicrosoftDocs/Dynamics-365-Operations.lv-lv)|lv|
-|Norwegian Bokmål|[Dynamics-365-Operations.nb-no](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nb-no)|nb-no|
-|Dutch (Belgium)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|nl-be|
-|Dutch (Netherlands)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|nl|
-|Polish|[Dynamics-365-Operations.pl-pl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.pl-pl)|pl|
-|Portuguese (Brazil)|[Dynamics-365-Operations.pt-br](https://github.com/MicrosoftDocs/Dynamics-365-Operations.pt-br)|pt-br|
-|Russian|[Dynamics-365-Operations.ru-ru](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ru-ru)|ru|
-|Swedish|[Dynamics-365-Operations.sv-se](https://github.com/MicrosoftDocs/Dynamics-365-Operations.sv-se)|sv|
-|Thai|[Dynamics-365-Operations.th-th](https://github.com/MicrosoftDocs/Dynamics-365-Operations.th-th)|th|
-|Turkish|[Dynamics-365-Operations.tr-tr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.tr-tr)|tr|
-|Chinese|[Dynamics-365-Operations.zh-cn](https://github.com/MicrosoftDocs/Dynamics-365-Operations.zh-cn)|zh-hans|
+|Name of the language in the client|Language/region name|Name of the GitHub repo|
+|----------------------------------|--------------------|-----------------------|
+|ar-ae|Arabic (United Arab Emirates)|[Dynamics-365-Operations.ar-ae](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
+|ar|Arabic (Saudi Arabia)|[Dynamics-365-Operations.ar-sa](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
+|cs|Czech|[Dynamics-365-Operations.cs-cz](https://github.com/MicrosoftDocs/Dynamics-365-Operations.cs-cz)|
+|da|Danish|[Dynamics-365-Operations.da-dk](https://github.com/MicrosoftDocs/Dynamics-365-Operations.da-dk/)|
+|de-at|German (Austria)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
+|de-ch|German (Switzerland)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
+|de|German (Germany)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
+|en-au|English (Australia)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-ca|English (Canada)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-gb|English (United Kingdom)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-ie|English (Ireland)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-in|English (India)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-my|English (Malaysia)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-nz|English (New Zealand)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-sg|English (Singapore)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-us|English (US)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|en-za|English (South Africa)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
+|es|Spanish (Spain)|[Dynamics-365-Operations.es-es](https://github.com/MicrosoftDocs/Dynamics-365-Operations.es-es)|
+|es-mx|Spanish (Mexico)|[Dynamics-365-Operations.es-es](https://github.com/MicrosoftDocs/Dynamics-365-Operations.es-es)|
+|et|Estonian|[Dynamics-365-Operations.et-ee](https://github.com/MicrosoftDocs/Dynamics-365-Operations.et-ee)|
+|fi|Finnish|[Dynamics-365-Operations.fi-fi](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fi-fi)|
+|fr-be|French (Belgium)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|
+|fr-ca|French (Canada)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|
+|fr-ch|French (Switzerland)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|
+|fr|French (France)|[Dynamics-365-Operations.fr-fr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.fr-fr)|
+|hu|Hungarian|[Dynamics-365-Operations.hu-hu](https://github.com/MicrosoftDocs/Dynamics-365-Operations.hu-hu)|
+|is|Icelandic|[Dynamics-365-Operations.is-is](https://github.com/MicrosoftDocs/Dynamics-365-Operations.is-is)|
+|it-ch|Italian (Switzerland)|[Dynamics-365-Operations.it-it](https://github.com/MicrosoftDocs/Dynamics-365-Operations.it-it)|
+|it|Italian|[Dynamics-365-Operations.it-it](https://github.com/MicrosoftDocs/Dynamics-365-Operations.it-it)|
+|ja|Japanese|[Dynamics-365-Operations.ja-jp](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ja-jp)|
+|lt|Lithuanian|[Dynamics-365-Operations.lt-lt](https://github.com/MicrosoftDocs/Dynamics-365-Operations.lt-lt)|
+|lv|Latvian|[Dynamics-365-Operations.lv-lv](https://github.com/MicrosoftDocs/Dynamics-365-Operations.lv-lv)|
+|nb-no|Norwegian Bokmål|[Dynamics-365-Operations.nb-no](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nb-no)|
+|nl-be|Dutch (Belgium)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|
+|nl|Dutch (Netherlands)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|
+|pl|Polish|[Dynamics-365-Operations.pl-pl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.pl-pl)|
+|pt-br|Portuguese (Brazil)|[Dynamics-365-Operations.pt-br](https://github.com/MicrosoftDocs/Dynamics-365-Operations.pt-br)|
+|ru|Russian|[Dynamics-365-Operations.ru-ru](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ru-ru)|
+|sv|Swedish|[Dynamics-365-Operations.sv-se](https://github.com/MicrosoftDocs/Dynamics-365-Operations.sv-se)|
+|th|Thai|[Dynamics-365-Operations.th-th](https://github.com/MicrosoftDocs/Dynamics-365-Operations.th-th)|
+|tr|Turkish|[Dynamics-365-Operations.tr-tr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.tr-tr)|
+|zh-hans|Chinese|[Dynamics-365-Operations.zh-cn](https://github.com/MicrosoftDocs/Dynamics-365-Operations.zh-cn)|
 
 ## See also
 
