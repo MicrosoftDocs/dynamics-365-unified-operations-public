@@ -2,7 +2,7 @@
 # required metadata
 
 title: VALUEIN ER function
-description: This topic provides information about how the VALUEIN ER function is used.
+description: This topic provides information about how the VALUEIN Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,13 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="VALUEIN">VALUEIN Function</a>
+# <a name="VALUEIN">VALUEIN ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `VALUEIN` function determines whether the specified input matches any value of a given item in the specified list. Return a *Boolean* **TRUE** if the specified input matches the result of running the specified expression for at least one
-record of the specified list. Otherwise, it returns a *Boolean* **FALSE**.
-
+The `VALUEIN` function determines whether the specified input matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**.
 
 ## Syntax
 
@@ -46,60 +44,60 @@ VALUEIN (input, list, list item expression)
 
 ## Arguments
 
-`input` : *Field*
+`input`: *Field*
 
-A valid path to an item of a data source of the *Record list* type. The value of this item will be matched.
+The valid path of an item of a data source of the *Record list* type. The value of this item will be matched.
 
-`list` : *Record list*
+`list`: *Record list*
 
-A valid path to a data source of the *Record list* data type.
+The valid path of a data source of the *Record list* data type.
 
-`list item expression` : *Boolean*
+`list item expression`: *Boolean*
 
 A valid conditional expression that either points to or contains a single field of the specified list that should be used for the matching.
 
-## Returns
+## Return values
 
 *Boolean*
 
-The result *Boolean* value.
+The resulting *Boolean* value.
 
 ## Usage notes
 
-In general, the `VALUEIN` function is translated to a set of **OR** conditions:
+In general, the `VALUEIN` function is translated to a set of **OR** conditions.
 
-`
+```
 (input = list.item1.value) OR (input = list.item2.value) OR …
-`
+```
 
 In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.
 
 ## Example 1
 
-You define the following data source in your model mapping: **List** (*Calculated field* type). This data source contains the expression `SPLIT ("a,b,c", ",")`.
+In your model mapping, you define the **List** data source of the *Calculated field* type. This data source contains the expression `SPLIT ("a,b,c", ",")`.
 
-When a data source is called and it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**. In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` is equal to **TRUE**.
+When a data source is called, if it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**. In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` equals **TRUE**.
 
-When a data source is called and it have been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**. In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which isn't equal to **TRUE**.
+When a data source is called, if it has been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**. In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which doesn't equal **TRUE**.
 
-The upper limit for the number of characters in the text of such a condition is 32,768 characters. Therefore, you should not create data sources that might exceed this limit at runtime. If the limit is exceeded, the application will stop running, and an exception will be thrown. For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.
+The upper limit for the number of characters in the text of such a condition is 32,768 characters. Therefore, you should not create data sources that might exceed this limit at runtime. If the limit is exceeded, the application stops running, and an exception is thrown. For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.
 
 In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator. This behavior occurs when the [FILTER](er-functions-list-filter.md) function is used and the following conditions are met:
 
 - The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records. No additional conditions will be applied to this data source at runtime.
 - No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.
-- A list item of the `VALUEIN` function refers to a field, not an expression or a method, of the specified data source.
+- A list item of the `VALUEIN` function refers to a field of the specified data source, not to an expression or method of that data source.
 
-Consider using this option instead of the [WHERE](er-functions-list-where.md) function as described earlier in this example.
+Consider using this option instead of the [WHERE](er-functions-list-where.md) function that is described earlier in this example.
 
 ## Example 2
 
 You define the following data sources in your model mapping:
 
-- **In** (*Table records* type), which refers to the **Intrastat** table
-- **Port** (*Table records* type), which refers to the **IntrastatPort** table
+- The **In** data source of the *Table records* type. This data source refers to the Intrastat table.
+- The **Port** data source of the *Table records* type. This data source refers to the IntrastatPort table.
 
-When a data source is called that is configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the **Intrastat** table:
+When a data source is called that has been configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the Intrastat table.
 
 ```
 select … from Intrastat
@@ -107,16 +105,16 @@ exists join TableId from IntrastatPort
 where IntrastatPort.PortId = Intrastat.Port
 ```
 
-For **dataAreaId** fields, the final SQL statement is generated by the using **IN** operator.
+For **dataAreaId** fields, the final SQL statement is generated by the using `IN` operator.
 
 ## Example 3
 
 You define the following data sources in your model mapping:
 
-- **Le** (*Calculated field* type), which contains the expression `SPLIT ("DEMF,GBSI,USMF", ",")`
-- **In** (*Table records* type), which refers to the **Intrastat** table and for which the **Cross-company** option is turned on
+- The **Le** data source of the *Calculated field* type. This data source contains the expression `SPLIT ("DEMF,GBSI,USMF", ",")`.
+- The **In** data source of the *Table records* type. This data source refers to the Intrastat table, and the **Cross-company** option is turned on for it.
 
-When a data source is called that is configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition:
+When a data source is called that has been configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition.
 
 ```
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
