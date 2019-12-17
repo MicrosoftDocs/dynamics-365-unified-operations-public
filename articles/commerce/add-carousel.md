@@ -38,9 +38,9 @@ This topic covers carousel modules and describes how to add them to site pages i
 
 ## Overview
 
-A carousel module is used to put multiple promotional items in a carousel that customers can browse. It's a special container module that hosts other modules. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
+A carousel module is used to put multiple promotional items in a carousel that customers can browse. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
 
-You can add hero and feature modules inside a carousel module. The properties of the carousel module then define how those modules are rendered.
+You can add content block modules inside a carousel module. The properties of the carousel module then define how those modules are rendered.
 
 ## Examples of carousel modules in e-Commerce
 
@@ -54,26 +54,25 @@ You can add hero and feature modules inside a carousel module. The properties of
 |---------------------------|--------------------------------------|-------------|
 | Autoplay                  | **True** or **False**                | If the value is set to **True**, the transition between items inside the carousel occurs automatically. If the value is set to **False**, no transition occurs unless the customer uses the keyboard or mouse to move from one item to the next item. |
 | Slide transition interval | A value in seconds                   | The interval for transitions between items. |
-| Transition animation      | **Slide** or **Fade**                | The transition effect. |
-| Width                     | **Fit container** or **Fill screen** | If the value is set to **Fit container**, the items inside the carousel are restricted to the width of the carousel. If the value is set to **Fill screen**, the items aren't restricted to the carousel width but can go into full-screen mode. You can change the value to achieve the desired layout. |
+| Transition type      | **Slide** or **Fade**                | The transition effect. |
+| Hide carousel flipper| **True** or **False** | If the value is set to **True**, the carousel flipper and sequence indicator will be hidden|
+| Allow carousel dismiss|**True** or **False** | If the value is set to **True**, the carousel will support a dismiss action|
+
 
 ## Add a carousel module to a page
 
 To add a carousel module to a new page and set the required properties, follow these steps.
 
 1. Create a page template that is named **carousel template**.
-1. In the **Main** slot of the default page, add a carousel module.
-1. Add a hero module to the carousel module.
-1. Add a feature module to the carousel module.
+1. In the **Main** slot of the default page, add a container module, set Width of the container to "Fill screen" if you want this module to be full-bleed on the page.
+1. Add a carousel module to the container module.
+1. Add a content block module to the carousel module. 
 1. Check in the template, and publish it. 
 1. Use the carousel template that you just created to create a page that is named **carousel page**.
 1. In the **Main** slot of the new page, add a carousel module.
-1. Set the **Width** property of the carousel module to **Fill screen**. 
 1. Set the **Transition animation** property to **Slide**.
-1. Add a hero module to the carousel module.
-1. In the hero module, add an image and a heading, and then select **Save**.
-1. Add a feature module to the carousel module.
-1. In the feature module, add an image, a heading, and a paragraph of text.
+1. Add a content block module to the carousel module. Set the properties of the content block by providing Heading, Link, Layout and other properties
+1. Repeat with another content block module
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
 1. Check in the page, and publish it.
 
@@ -81,11 +80,9 @@ To add a carousel module to a new page and set the required properties, follow t
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Alert module](add-alert.md)
+[Promo banner module](add-alert.md)
 
-[Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
+[Text block module](add-content-rich-block.md)
 
 [Feature module](add-feature-module.md)
 
