@@ -2,10 +2,10 @@
 # required metadata
 
 title: ROUNDAMOUNT ER function
-description: This topic explains how the ROUNDAMOUNT ER function is used
+description: This topic provides information about how the ROUNDAMOUNT ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `ROUNDAMOUNT` function returns a *Real* value as the result of rounding of the specified amount to the specified number of decimal places according to the specified rounding rule.
+The `ROUNDAMOUNT` function returns a *Real* value as the result of rounding the specified amount to the specified number of decimal places according to the specified rounding rule.
 
 ## Syntax
 
