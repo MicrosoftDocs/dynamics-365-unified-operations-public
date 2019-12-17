@@ -40,7 +40,7 @@ The additional fields can be used by warehouse managers to define additional war
 
 No additional setup is required to use the zone fields.
 
-# Manage location zones 
+## Use location zones 
 
 1. Go to **Warehouse management > Setup > Warehouse > Location setup wizard**. 
 
