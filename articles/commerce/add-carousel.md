@@ -38,7 +38,7 @@ This topic covers carousel modules and describes how to add them to site pages i
 
 ## Overview
 
-A carousel module is used to put multiple promotional items in a carousel that customers can browse. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
+A carousel module is used to put multiple promotional items which includes rich images in a carousel. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
 
 You can add content block modules inside a carousel module. The properties of the carousel module then define how those modules are rendered.
 
@@ -64,15 +64,14 @@ You can add content block modules inside a carousel module. The properties of th
 To add a carousel module to a new page and set the required properties, follow these steps.
 
 1. Create a page template that is named **carousel template**.
-1. In the **Main** slot of the default page, add a container module, set Width of the container to "Fill screen" if you want this module to be full-bleed on the page.
-1. Add a carousel module to the container module.
-1. Add a content block module to the carousel module. 
+1. In the **Main** slot add a default page.
 1. Check in the template, and publish it. 
 1. Use the carousel template that you just created to create a page that is named **carousel page**.
-1. In the **Main** slot of the new page, add a carousel module.
-1. Set the **Transition animation** property to **Slide**.
+1. In the **Main** slot of the new page, add a container module. Set Width to "Fill screen"
+1. To the container module, add a carousel module.
 1. Add a content block module to the carousel module. Set the properties of the content block by providing Heading, Link, Layout and other properties
 1. Repeat with another content block module
+1. Set additional properties to the carousel module as needed
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
 1. Check in the page, and publish it.
 
