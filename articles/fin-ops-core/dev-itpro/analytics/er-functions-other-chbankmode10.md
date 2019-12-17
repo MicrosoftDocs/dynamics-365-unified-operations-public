@@ -2,7 +2,7 @@
 # required metadata
 
 title: CH_BANK_MOD_10 ER function
-description: This topic provides information about how the CH_BANK_MOD_10 ER function is used.
+description: This topic provides information about how the CH_BANK_MOD_10 Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="CH_BANK_MOD_10">CH_BANK_MOD_10 Function</a>
+# <a name="CH_BANK_MOD_10">CH_BANK_MOD_10 ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `CH_BANK_MOD_10` function returns a *String* value of a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.
+The `CH_BANK_MOD_10` function returns a *String* value that represents a creditor reference as an MOD10 expression, based on the digits of the specified invoice number.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ CH_BANK_MOD_10 (invoice number digits)
 
 ## Arguments
 
-`invoice number digits` : *String*
+`invoice number digits`: *String*
 
-A text representing digits of an invoice number.
+A text value that represents the digits of an invoice number.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`CH_BANK_MOD_10 ("VEND-200002")` returns 3.
+`CH_BANK_MOD_10 ("VEND-200002")` returns **3**.
 
 ## Additional resources
 
