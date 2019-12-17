@@ -50,10 +50,30 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? |  |
+| From existing topic? | No |
 | Review document location | (link) |
 
+Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:
 
+- Number sequence for leave requests
+- Family Medical and Leave Act (FMLA) settings
+- Employee self service settings for leave and absence requests
+- Leave and absence parameters
+
+## View and change human resources parameters
+
+1. In the **Leave and absence** workspace, select **Human resources parameters** under **Setup**.
+
+2. On the **Number sequences** tab, verify the **Number sequence code** for **Leave request ID** and change as necessary.
+
+3. On the **FMLA** tab, verify the FMLA settings and change as necessary.
+
+4. On the **Employee self service** tab, indicate whether managers can enter leave and absence requests on behalf of their employees.
+
+5. On the **Leave and absence** tab, verify the settings and change as necessary.
+
+6. Select **Save**.
 
 ## See also
 
+- [Leave and absence overview](hr-leave-and-absence-overview.md)
