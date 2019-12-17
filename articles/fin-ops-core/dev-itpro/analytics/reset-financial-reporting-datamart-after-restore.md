@@ -33,19 +33,19 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways depending on the user's role and their access to the client or infrastructure. 
+This topic explains how to reset the financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways depending on the user's role and their access to the client or infrastructure. 
 
-In specific scenarios, you might have to reset the data mart for Financial reporting. Here are some scenarios where you might have to reset the data mart:
+In specific scenarios, you might have to reset the data mart for financial reporting. Here are some scenarios where you might have to reset the data mart:
 
 - The application database was restored, but the data mart database wasn't restored.
 - You see incorrect data for a period and have determined it is not a report design issue. 
 - You see incorrect data for a period and see records under integration attempts within Report designer integration status.
 - Support instructs you to reset the data mart as part of a troubleshooting step.
 
-The data mart reset should be done only during times when the amount of processing on the database is small. Financial reporting will be unavailable during the reset process.
+You should reset the data mart only when a small amount of processing is taking place on the database. Financial reporting will be unavailable during the reset process.
 
  [!NOTE]
- Resetting the data mart won't impact any report definitions that define the structure of reports, but it is always a good idea to have some backup of reports. See the note at the end of this doc for instructions on how to backup the report defintions. 
+ Resetting the data mart won't impact any report definitions that define the structure of reports, but it is always a good idea to have a backup of your reports. See the note at the end of this doc for instructions on how to backup the report defintions. 
 
 ### Reset the Financial reporting data mart from Report designer
 
@@ -65,11 +65,11 @@ The **Integration attempts** grid shows how many times the system has tried to i
 
 ##### Data status
 
-The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might cause slower report generation times.
+The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might increase the time it takes to generate reports.
 
 ##### Misaligned main account categories
 
-If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
+If you're using an earlier release than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
 
 ### Reset the data mart and select a reason 
 
@@ -86,7 +86,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 
 #### Clear users and companies
 
-Select the **Clear users and companies** check box if you restored your database, but you then made changes to users or companies. You should rarely have to select this check box.
+Select the **Clear users and companies** check box if you restored your database, but then changed users or companies. You should rarely have to select this check box.
 
 When you're ready to start the reset process, select **OK**. You're prompted to confirm that you're ready to start the process. Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.
 
