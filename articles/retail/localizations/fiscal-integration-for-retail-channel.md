@@ -141,9 +141,14 @@ The following fiscal integration samples are currently available in the Retail S
 - [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md)
 - [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md)
 - [Fiscal registration service integration sample for Czech Republic](emea-cze-fi-sample.md)
+- [Control unit integration sample for Sweden](./emea-swe-fi-sample.md)
 
 The following fiscal integration functionality is also available in the Retail SDK but doesn't currently take advantage of the fiscal integration framework. Migration of this functionality to the fiscal integration framework is planned for later updates.
 
-- [Cash register functionality for France](emea-fra-cash-registers.md)
-- [Cash register functionality for Norway](emea-nor-cash-registers.md)
-- [Sample for Retail POS integration with control units for Sweden](./retail-sdk-control-unit-sample.md)
+
+- [Digital signature for France](emea-fra-cash-registers.md)
+- [Digital signature for Norway](emea-nor-cash-registers.md)
+
+The following legacy fiscal integration functionality that is available in Retail SDK does not use the fiscal integration framework and will be deprecated in later updates:
+
+- [Control unit integration sample for Sweden (legacy)](./retail-sdk-control-unit-sample.md)

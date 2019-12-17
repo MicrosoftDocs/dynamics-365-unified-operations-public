@@ -558,10 +558,8 @@
           href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
         - name: Retail hierarchies
           href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-        - name: Attributes and attribute groups
+        - name: Manage attributes and attribute groups
           href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
-        - name: Create and manage attributes
-          href: ../retail/create-manage-attributes.md?toc=/dynamics365/commerce/toc.json
         - name: Set up retail products
           href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
         - name: Manage retail product categories and products
