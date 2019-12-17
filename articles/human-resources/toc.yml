@@ -161,6 +161,30 @@
       items:
     - name: Manage leave and absence
       items:
+      - name: Overview
+        href: hr-leave-and-absence-overview.md
+      - name: Configure leave and absence parameters
+        href: hr-leave-and-absence-parameters.md
+      - name: Configure calendars for leave and absence
+        href: hr-leave-and-absence-calendars.md
+      - name: Configure leave and absence types
+        href: hr-leave-and-absence-types.md
+      - name: Create a leave and absence plan
+        href: hr-leave-and-absence-plans.md
+      - name: Enroll workers in a leave plan
+        href: hr-leave-and-absence-enroll.md
+      - name: Accrue leave and absence plans
+        href: hr-leave-and-absence-accrue.md
+      - name: Create a leave request workflow
+        href: hr-leave-and-absense-workflow.md
+      - name: Create an alert for leave and absence requests
+        href: hr-leave-and-absence-alert.md
+      - name: View analytics for leave and absence
+        href: hr-leave-and-absence-analytics.md
+      - name: Generate reports for leave and absence
+        href: hr-leave-and-absence-reports.md
+      - name: Manage leave and absence requests
+        href: hr-leave-and-absence-manage-requests.md
     - name: Create employee development plans
       items:
     - name: Create courses
