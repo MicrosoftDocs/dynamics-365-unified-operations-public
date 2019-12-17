@@ -2,10 +2,10 @@
 # required metadata
 
 title: VALUEIN ER function
-description: This topic explains how the VALUEIN ER function is used
+description: This topic provides information about how the VALUEIN ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 The `VALUEIN` function determines whether the specified input matches any value of a given item in the specified list. Return a *Boolean* **TRUE** if the specified input matches the result of running the specified expression for at least one
-record of the specified list. Otherwise, return a *Boolean* **FALSE**.
+record of the specified list. Otherwise, it returns a *Boolean* **FALSE**.
 
 
 ## Syntax
@@ -78,17 +78,17 @@ In some cases, it can be translated to a database SQL statement by using the `EX
 
 You define the following data source in your model mapping: **List** (*Calculated field* type). This data source contains the expression `SPLIT ("a,b,c", ",")`.
 
-When a data source is called that is configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**. In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` is equal to **TRUE**.
+When a data source is called and it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**. In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` is equal to **TRUE**.
 
-When a data source is called that is configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**. In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which isn't equal to **TRUE**.
+When a data source is called and it have been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**. In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which isn't equal to **TRUE**.
 
-Note that the upper limit for the number of characters in the text of such a condition is 32,768 characters. Therefore, you should not create data sources that might exceed this limit at runtime. If the limit is exceeded, the application will stop running, and an exception will be thrown. For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.
+The upper limit for the number of characters in the text of such a condition is 32,768 characters. Therefore, you should not create data sources that might exceed this limit at runtime. If the limit is exceeded, the application will stop running, and an exception will be thrown. For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.
 
 In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator. This behavior occurs when the [FILTER](er-functions-list-filter.md) function is used and the following conditions are met:
 
-- The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records. (No additional conditions will be applied to this data source at runtime.)
+- The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records. No additional conditions will be applied to this data source at runtime.
 - No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.
-- A list item of the `VALUEIN` function refers to a field (not an expression or a method) of the specified data source.
+- A list item of the `VALUEIN` function refers to a field, not an expression or a method, of the specified data source.
 
 Consider using this option instead of the [WHERE](er-functions-list-where.md) function as described earlier in this example.
 
