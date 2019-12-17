@@ -2,10 +2,10 @@
 # required metadata
 
 title: ISOCREDREF ER function
-description: This topic explains how the ISOCREDREF ER function is used
+description: This topic provides information about how the ISOCREDREF ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -56,7 +56,8 @@ The result text value.
 
 ## Usage notes
 
-> [!NOTE] To eliminate symbols from alphabets that aren't ISO-compliant, the `invoice number digits` parameter must be translated before it's passed to this function.
+> [!NOTE] 
+> To eliminate symbols from alphabets that aren't ISO-compliant, the `invoice number digits` parameter must be translated before it's passed to this function.
 
 ## Example
 
