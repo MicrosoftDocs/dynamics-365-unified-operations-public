@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: List of ER functions of the mathematical category
-description: This topic provides information about the mathematical functions that are supported in ER.
+title: List of ER functions in the mathematical category
+description: This topic provides information about the mathematical functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,22 +30,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Mathematical functions
+# List of ER functions in the mathematical category
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) mathematical functions can be used to perform many common mathematical calculations. You can find a summary of such functions in this topic.
+Electronic reporting (ER) mathematical functions can be used to do many common mathematical calculations. This topic provides a summary of these functions.
 
 ## List of supported functions
 
-| **Function**  | **Description**  |
-|---------------|------------------|
-| [Abs](er-functions-mathematical-abs.md)             | Returns a *Real* value as the absolute value of the specified number.                                                    |
-| [Power](er-functions-mathematical-power.md)         | Returns a *Real* value as the result of raising the specified positive number to the specified power.                    |
-| [Round](er-functions-mathematical-round.md)         | Returns a *Real* value of the specified number after it has been rounded to the specified number of decimal places.      |
-| [RoundDown](er-functions-mathematical-rounddown.md) | Returns a *Real* value of the specified number after it has been rounded down to the specified number of decimal places. |
-| [RoundUp](er-functions-mathematical-roundup.md)     | Returns a *Real* value of the specified number after it has been rounded up to the specified number of decimal places.   |
-
+| Function | Description |
+|----------|-------------|
+| [Abs](er-functions-mathematical-abs.md)             | This function returns the absolute value (modulus) of the specified number as a *Real* value. In other words, it returns the number without its sign. |
+| [Power](er-functions-mathematical-power.md)         | This function returns a *Real* value that represents the result of raising the specified positive number to the specified power. |
+| [Round](er-functions-mathematical-round.md)         | This function returns the specified number as a *Real* value after it has been rounded to the specified number of decimal places. |
+| [RoundDown](er-functions-mathematical-rounddown.md) | This function returns the specified number as a *Real* value after it has been rounded down to the specified number of decimal places. |
+| [RoundUp](er-functions-mathematical-roundup.md)     | This function returns the specified number as a *Real* value after it has been rounded up to the specified number of decimal places. |
 
 ## Additional resources
 
