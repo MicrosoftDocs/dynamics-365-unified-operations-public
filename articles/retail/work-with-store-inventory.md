@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-When working with inventory in Dynamics 365 Retail and using the POS application, it is important to note that POS provides limited support for inventory dimensions and certain inventory item types.
+When working with inventory in Dynamics 365 Commerce and using the POS application, it is important to note that POS provides limited support for inventory dimensions and certain inventory item types.
 
 The POS solution does not support the following item configurations:
 
