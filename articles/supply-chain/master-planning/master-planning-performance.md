@@ -132,6 +132,27 @@ When you review the session log, consider the following points:
 
 Filters that are applied in the **Master planning run** dialog box affect the duration of the master planning run. Go to **Master planning \> Master planning \> Run \> Master planning**, or select **Run** in the **Master planning** workspace. To exclude items from the run, we recommend that you filter by the lifecycle state of the item (not by item numbers). When you filter by lifecycle state, the update process will take less time than when you filter by item numbers.
 
+## Automatically filter by items with direct demand
+
+To improve the master planning run time it is possible to only include items with direct demand. Note that this filter only applies for a complete master planning run, without any filters in the **Records to include**. This means that master planning run with filters will ignore the **Automatically filter by items with direct demand** setting
+
+The **Automatically filter by items with direct demand** is controlled from the Master planning parameters and can be for both **Pre-processing** and **Post-processing**.
+
+### Pre-processing: Automatically filter by items with direct demand
+The **Pre-processing: Automatically filter by items with direct demand** parameter is making sure that the pre-processing phase of master planning on include items that fulfill at least one of the following conditions:
+  - Item have expected receipt or issue. E.g. purchase order, sales order, quote, transfer order, production order. 
+  - Item have item coverage with safety stock (Minimum on-hand inventory)
+  - Forecast demand after today exists for item 
+  - Forecast supply after today exists for item 
+  - Item include any continuity lines from Call center module yet to be created.
+
+> [!NOTE]
+> This means that an item, which has physically available on-hand inventory would not show a requirement transaction anymore, since there is no demand for the item.
+
+### Post-processing: Automatically filter by items with direct demand
+The **Post-processing: Automatically filter by items with direct demand** is only relevant if you use **BOM version requirement** in your **Coverage groups**, else you do not need to set this to Yes. 
+Just before the coverage step start, there is a pre-coverage step, in which items with coverage setting **BOM version requirement** set to true will be reprocessed. This is done to ensure that items from the required BOM version are planned. This could lead to situations where items, that during pre-processing were considered to have demand, no longer have any demand and hence should be excluded from the planning run.
+
 ## Performance checklist summary
 
 - **Number of threads** – Set to a value that is more than **0** (zero).
