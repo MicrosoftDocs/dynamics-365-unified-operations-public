@@ -85,7 +85,7 @@ To delete a robots.txt file in Commerce, follow these steps.
 - Below **Tenant Settings**, select **Robots.txt**. A list of all the domains associated with the environment will appear in the main window.
 - Click **Manage** to delete a robots.txt file for a domain on your environment.
 - In the menu on the right, select the delete icon (trash can) next to the domain associated with the robots.txt file. A File Explorer window appears.
-- In File Explorer, browse to and select the the robots.txt file you want to delete for the given domain, and then select **Open**. A status alert will show if the upload was successful.
+- In File Explorer, browse to and select the the robots.txt file you want to delete for the given domain, and then select **Open**. 
 
 
 >[!NOTE] 
