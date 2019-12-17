@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Alert module 
-description: This topic covers alert modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+title: Promo banner module 
+description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 10/31/2019
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Alert module
+# Promo banner module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -86,9 +86,7 @@ Note: A promo banner is typically used in the page Header slot or Sub-header slo
 
 [Carousel module](add-carousel.md)
 
-[Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
+[Text block module](add-content-rich-block.md)
 
 [Feature module](add-feature-module.md)
 
