@@ -2,10 +2,10 @@
 # required metadata
 
 title: CURCREDREF ER function
-description: This topic explains how the CURCREDREF ER function is used
+description: This topic provides information about how the CURCREDREF ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -46,7 +46,7 @@ CURCREDREF (invoice number digits)
 
 `invoice number digits` : *String*
 
-A text representing digits of an invoice number.
+A text representing the digits of an invoice number.
 
 ## Returns
 
