@@ -2,7 +2,7 @@
 # required metadata
 
 title: ABS ER function
-description: This topic provides information about how the ABS ER function is used.
+description: This topic provides information about how the ABS Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ABS">ABS Function</a>
+# <a name="ABS">ABS ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ABS` function returns the absolute value of the specified number as a *Real* value. In other words, the number is returned without it's sign.
+The `ABS` function returns the absolute value (modulus) of the specified number as a *Real* value. In other words, it returns the number without its sign.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ ABS (number)
 
 ## Arguments
 
-`number` : *Real*
+`number`: *Real*
 
 A numeric value that you want the modulus of.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Example
 
-`ABS (-1)` returns 1.
+`ABS (-1)` returns **1**.
 
 ## Additional resources
 
