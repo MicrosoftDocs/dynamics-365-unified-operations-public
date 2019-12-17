@@ -2,7 +2,7 @@
 # required metadata
 
 title: ISOCREDREF ER function
-description: This topic provides information about how the ISOCREDREF ER function is used.
+description: This topic provides information about how the ISOCREDREF Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ISOCREDREF">ISOCREDREF Function</a>
+# <a name="ISOCREDREF">ISOCREDREF ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ISOCREDREF` function returns a *String* value of an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.
+The `ISOCREDREF` function returns a *String* value that represents an International Organization for Standardization (ISO) creditor reference, based on the digits and alphabetic symbols of the specified invoice number.
 
 ## Syntax
 
@@ -44,24 +44,24 @@ ISOCREDREF (invoice number digits)
 
 ## Arguments
 
-`invoice number digits` : *String*
+`invoice number digits`: *String*
 
-A text representing digits of an invoice number.
+A text value that represents the digits of an invoice number.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Usage notes
 
 > [!NOTE] 
-> To eliminate symbols from alphabets that aren't ISO-compliant, the `invoice number digits` parameter must be translated before it's passed to this function.
+> To eliminate symbols from alphabets that are't ISO-compliant, the `invoice number digits` argument must be translated before it's passed to this function.
 
 ## Example
 
-`ISOCredRef ("VEND-200002")` returns "RF23VEND-200002".
+`ISOCredRef ("VEND-200002")` returns **"RF23VEND-200002"**.
 
 ## Additional resources
 
