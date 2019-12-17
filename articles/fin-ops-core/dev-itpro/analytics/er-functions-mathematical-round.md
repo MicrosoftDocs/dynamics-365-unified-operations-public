@@ -2,10 +2,10 @@
 # required metadata
 
 title: ROUND ER function
-description: This topic explains how the ROUND ER function is used
+description: This topic provides information about how the ROUND ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -60,11 +60,11 @@ The result numeric value.
 
 ## Usage notes
 
-If the value of the decimals parameter is more than 0 (zero), the specified number is rounded to that many decimal places.
+If the value of the decimals parameter is more than zero (0), the specified number is rounded to that many decimal places.
 
-If the value of the decimals parameter is 0 (zero), the specified number is rounded to the nearest integer.
+If the value of the decimals parameter is zero (0), the specified number is rounded to the nearest integer.
 
-If the value of the decimals parameter is less than 0 (zero), the specified number is rounded to the left of the decimal point.
+If the value of the decimals parameter is less than zero (0), the specified number is rounded to the left of the decimal point.
 
 ## Example 1
 
