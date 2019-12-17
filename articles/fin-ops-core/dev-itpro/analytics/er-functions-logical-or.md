@@ -2,7 +2,7 @@
 # required metadata
 
 title: OR ER function
-description: This topic provides information about how the OR ER function is used.
+description: This topic provides information about how the OR Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,33 +30,33 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="OR">OR Function</a>
+# <a name="OR">OR ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `OR` function returns a *Boolean* **FALSE** if all of the specified conditions are false. Return a *Boolean* **TRUE** if any specified condition is true.
+The `OR` function returns a *Boolean* value of **FALSE** if all the specified conditions are false. If any specified condition is true, the function returns a *Boolean* value of **TRUE**.
 
 ## Syntax
 
 ```
-OR (condition 1[, condition 2, … , condition N])
+OR (condition 1[, condition 2, …, condition N])
 ```
 
 ## Arguments
 
-`condition 1` : *Boolean*
+`condition 1`: *Boolean*
 
-A valid conditional expression to be tested. This argument is mandatory.
+A valid conditional expression that must be tested. This argument is required.
 
-`condition N` : *Boolean*
+`condition N`: *Boolean*
 
-A valid conditional expression to be tested. Other arguments are optional.
+A valid conditional expression that must be tested. These additional arguments are optional.
 
-## Returns
+## Return values
 
 *Boolean*
 
-The result *Boolean* value.
+The resulting *Boolean* value.
 
 ## Example
 
