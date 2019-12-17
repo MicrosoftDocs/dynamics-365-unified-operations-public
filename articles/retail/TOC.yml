@@ -783,7 +783,7 @@
       - name: Retail hierarchies
         href: retail-hierarchies.md
       - name: Manage attributes and attribute groups
-        href: create-manage-attributes.md
+        href: attribute-attributegroups-lifecycle.md
       - name: Set up retail products
         href: set-up-retail-products.md
       - name: Create a product
