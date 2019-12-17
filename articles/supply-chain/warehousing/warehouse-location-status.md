@@ -65,7 +65,7 @@ There are four recently added fields on the **Locations** page to track addition
 5. Repeat step 3.
 
 
-# Example scenario
+## Example scenario
 
 1. Go to **Procurement and Sourcing > Purchase orders > All purchase orders**.
 
