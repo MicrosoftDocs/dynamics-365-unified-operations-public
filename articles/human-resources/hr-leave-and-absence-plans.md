@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up number sequencing
+title: Create a leave and absence plan
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# Set up number sequencing
+# Create a leave and absence plan
 
 **Status**
 
