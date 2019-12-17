@@ -2,7 +2,7 @@
 # required metadata
 
 title: MOD_97 ER function
-description: This topic provides information about how the MOD_97 ER function is used.
+description: This topic provides information about how the MOD_97 Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="MOD_97">MOD_97 Function</a>
+# <a name="MOD_97">MOD_97 ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `MOD_97` function returns a *String* value of a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.
+The `MOD_97` function returns a *String* value that represents a creditor reference as a MOD97 expression, based on the digits of the specified invoice number.
 
 ## Syntax
 
@@ -44,19 +44,19 @@ MOD_97 (invoice number digits)
 
 ## Arguments
 
-`invoice number digits` : *String*
+`invoice number digits`: *String*
 
-A text representing digits of an invoice number.
+A text value that represents the digits of an invoice number.
 
-## Returns
+## Return values
 
 *String*
 
-The result text value.
+The resulting text value.
 
 ## Example
 
-`MOD_97 ("VEND-200002")` returns "20000285".
+`MOD_97 ("VEND-200002")` returns **"20000285"**.
 
 ## Additional resources
 
