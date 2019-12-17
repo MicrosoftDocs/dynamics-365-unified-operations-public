@@ -2,10 +2,10 @@
 # required metadata
 
 title: OR ER function
-description: This topic explains how the OR ER function is used
+description: This topic provides information about how the OR ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `OR` function returns a *Boolean* **FALSE** if all specified conditions are false. Return a *Boolean* **TRUE** if any specified condition is true.
+The `OR` function returns a *Boolean* **FALSE** if all of the specified conditions are false. Return a *Boolean* **TRUE** if any specified condition is true.
 
 ## Syntax
 
