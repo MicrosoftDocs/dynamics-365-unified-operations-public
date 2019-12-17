@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: List of ER functions of the logical category
-description: This topic provides information about the logical functions that are supported in ER.
+title: List of ER functions in the logical category
+description: This topic provides information about the logical functions that are supported in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,22 +30,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Logical functions
+# List of ER functions in the logical category
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) logical functions can be used to work with logical values for carrying out more than one comparison in a single expression or testing multiple conditions. You can find a summary these functions in this topic.
+Electronic reporting (ER) logical functions can be used to work with logical values to perform more than one comparison in a single expression or test multiple conditions. This topic provides a summary of these functions.
 
 ## List of supported functions
 
-| **Function**  | **Description**  |
-|---------------|------------------|
-| [And](er-functions-logical-and.md)                       | Returns a *Boolean* **TRUE** if all specified conditions are true. Otherwise, return a *Boolean* **FALSE**.             |
-| [Case](er-functions-logical-case.md)                     | Evaluates the value of the specified expression against the specified alternative options. Returns the result of the first option that equals the value of the specified expression. Otherwise, returns an optional default result, if a default result is specified as the last argument of the called function that is not preceded by an option. The returned value can be a value of any of the supported data types.             |
-| [If](er-functions-logical-if.md)                         | Returns the first specified value when the specified condition is met. Otherwise, return the second specified value. The returned value can be a value of any of the supported data types.   |
-| [Not](er-functions-logical-not.md)                       | Returns the reversed logical value of the specified condition as a *Boolean* value.                                      |
-| [Or](er-functions-logical-or.md)                         | Returns a *Boolean* **FALSE** if all specified conditions are false. Returns a *Boolean* **TRUE** if any specified condition is true.                                                   |
-| [ValueIn](er-functions-logical-valuein.md)               | Determines whether the specified input matches any value of a given item in the specified list. Returns a *Boolean* **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* **FALSE**.             |
+| Function | Description |
+|----------|-------------|
+| [And](er-functions-logical-and.md)                       | This function returns a *Boolean* value of **TRUE** if all the specified conditions are true. Otherwise, it returns a *Boolean* value of **FALSE**. |
+| [Case](er-functions-logical-case.md)                     | This function evaluates the value of the specified expression against the specified alternative options and returns the result of the first option that equals the value of the specified expression. Otherwise, it returns an optional default result, if a default result is specified as the last argument of the called function that isn't preceded by an option. The value that is returned can be a value of any of the supported data types. |
+| [If](er-functions-logical-if.md)                         | This function returns the first specified value if the specified condition is met. Otherwise, it returns the second specified value. The value that is returned can be a value of any of the supported data types. |
+| [Not](er-functions-logical-not.md)                       | This function returns the reversed logical value of the specified condition as a *Boolean* value. |
+| [Or](er-functions-logical-or.md)                         | This function returns a *Boolean* value of **FALSE** if all the specified conditions are false. If any specified condition is true, the function returns a *Boolean* value of **TRUE**. |
+| [ValueIn](er-functions-logical-valuein.md)               | This function determines whether the specified input matches any value of a specified item in the specified list. It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. |
 
 ## Additional resources
 
