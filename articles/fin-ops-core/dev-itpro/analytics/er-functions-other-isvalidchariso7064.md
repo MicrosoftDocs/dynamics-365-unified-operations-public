@@ -2,10 +2,10 @@
 # required metadata
 
 title: ISVALIDCHARACTERISO7064 ER function
-description: This topic explains how the ISVALIDCHARACTERISO7064 ER function is used
+description: This topic provides information about how the ISVALIDCHARACTERISO7064 ER function is used.
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `ISVALIDCHARACTERISO7064` function returns a *Boolean* value **TRUE** when the specified string represents a valid international bank account number (IBAN). Otherwise, returns **FALSE**.
+The `ISVALIDCHARACTERISO7064` function returns a *Boolean* value **TRUE** when the specified string represents a valid international bank account number (IBAN). When it doesn't represent an IBAN, it returns **FALSE**.
 
 ## Syntax
 
