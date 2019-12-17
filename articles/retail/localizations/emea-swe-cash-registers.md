@@ -155,7 +155,7 @@ You must specify the following general settings for Sweden.
 
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
-  For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md#setting-up-integration-with-control-units).
+  For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
 
 ---
 
