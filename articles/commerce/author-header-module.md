@@ -57,7 +57,8 @@ The following modules can be used in a header module:
 
 - **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce back office. The navigation menu has a **Navigation Source** property that allows retail server navigation menu and static menu items. If static menu items are allowed as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. See [Navigation menu](Add-navigation-menu.md)for more details
 
-- **Search** – The search module lets users enter search terms so that they can search for products. It also shows auto-suggest options when the user searches for a term. See [Search](Add-Search.md) for more details on this module
+- **Search** – The search module lets users enter search terms so that they can search for products. Default search page URl and search query parameter must be provided in Site Settings - Extensibility. It has properties that will allow you to suppress the search button or label as needed. Search also supports auto-suggest options which could be Product, Keyword, Category search results or all of them. 
+
 
 ## Create a header for a page
 
