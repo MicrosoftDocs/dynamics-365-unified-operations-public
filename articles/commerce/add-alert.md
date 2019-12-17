@@ -34,43 +34,51 @@ ms.dyn365.ops.version:
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers alert modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers Promo banner module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-An alert module is used to show inline informational messages on a page. Alert modules support a text message and a link. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
+A Promo banner module is used to show inline informational messages on a page. It can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
 
-Alert modules are driven by data from the content management system (CMS) and can be put on any page.
+Promo banner supports a text message and a link. If multiple messages are added to the promo banner, it turns into a carousel view and allows user to cycle through all the mesages. 
 
-## Examples of alert modules in e-Commerce
+Promo banner module is driven by data from the content management system (CMS) and can be put on any page.
 
-Alert modules can be used in the site header to indicate site-wide promotions or messages. Here are some examples:
+## Usage examples of promo banner in e-Commerce
+
+Promo banner can be used in the site header to indicate site-wide promotions or messages. Here are some examples:
 
 "Annual sale ends in 10 days"
 
 "Save big with back to school sale. Shop Now."
 
-## Alert module properties
+## Promo banner module properties
 
 | Property name  | Value                              | Description |
 |----------------|------------------------------------|-------------|
-| Text           | Text                               | The text message that appears in the alert module. |
+| Banner Messages           | Array of text and links                               | An array of text an links can be added to the banner|
+|Autoplay| **True** or **False**| It automatically cycles through the messages if there are multiple messages configured|
+|Slide transition interval| Number in ms| An interval can be provided to cycle through each message|
+| Allow dismiss  | **True** or **False**              | If the value is set to **True**, the customer can dismiss the alert. |
+|Show carousel flipper| **True** or **False**| Shows the carousel flippers for a user to manually cycle through multiple items in the banner|
 | Text alignment | **Right**, **Left**, or **Center** | A value that defines how text is aligned in the alert module. |
-| Dismiss alert  | **True** or **False**              | If the value is set to **True**, the customer can dismiss the alert. |
+
 | Link           | URL                                | The URL for an optional link. |
 
-## Add an alert module to a page 
+## Add a promo banner to a page 
 
-To add an alert module to a page and set the required properties, follow these steps.
+To add an promo banner module to a page and set the required properties, follow these steps.
 
-1. Create a page template that is named **alert template**.
-1. In the **Main** slot of the default page, add an alert module.
+1. Create a page template that is named **Promo banner template**.
+1. In the **Main** slot of the default page, add a promo banner module.
 1. Check in the template, and publish it. 
-1. Use the alert template that you just created to create a page that is named **alert page**. 
-1. In the **Main** slot of the new page, add an alert module.
-1. In the settings for the alert module, enter the alert text. You can edit the other properties if you want to customize the alert module further.
+1. Use the alert template that you just created to create a page that is named **Promo banner page**. 
+1. In the **Main** slot of the new page, add a promo banner module.
+1. In the settings for the module, add one or many banner messages. Each message can have a text with a link. You can edit the other properties if you want to customize the module further.
 1. Save and preview the page. At the top of the page, you should see an alert that has the text that you added.
 1. Check in the page, and publish it. 
+
+Note: A promo banner is typically used in the page Header slot or Sub-header slot.
 
 ## Additional resources
 
