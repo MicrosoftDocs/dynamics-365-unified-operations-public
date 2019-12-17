@@ -41,13 +41,13 @@ The following table maps the language names between the client and the GitHub re
 
 |Name of the language in the client|Language/region name|Name of the GitHub repo|
 |----------------------------------|--------------------|-----------------------|
-|ar-ae|Arabic (United Arab Emirates)|[Dynamics-365-Operations.ar-ae](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
 |ar|Arabic (Saudi Arabia)|[Dynamics-365-Operations.ar-sa](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
+|ar-ae|Arabic (United Arab Emirates)|[Dynamics-365-Operations.ar-ae](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ar-sa)|
 |cs|Czech|[Dynamics-365-Operations.cs-cz](https://github.com/MicrosoftDocs/Dynamics-365-Operations.cs-cz)|
 |da|Danish|[Dynamics-365-Operations.da-dk](https://github.com/MicrosoftDocs/Dynamics-365-Operations.da-dk/)|
+|de|German (Germany)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
 |de-at|German (Austria)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
 |de-ch|German (Switzerland)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
-|de|German (Germany)|[Dynamics-365-Operations.de-de](https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de)|
 |en-au|English (Australia)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
 |en-ca|English (Canada)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
 |en-gb|English (United Kingdom)|[Dynamics-365-Unified-Operations-Public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public)|
@@ -74,8 +74,8 @@ The following table maps the language names between the client and the GitHub re
 |lt|Lithuanian|[Dynamics-365-Operations.lt-lt](https://github.com/MicrosoftDocs/Dynamics-365-Operations.lt-lt)|
 |lv|Latvian|[Dynamics-365-Operations.lv-lv](https://github.com/MicrosoftDocs/Dynamics-365-Operations.lv-lv)|
 |nb-no|Norwegian Bokmål|[Dynamics-365-Operations.nb-no](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nb-no)|
-|nl-be|Dutch (Belgium)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|
 |nl|Dutch (Netherlands)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|
+|nl-be|Dutch (Belgium)|[Dynamics-365-Operations.nl-nl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.nl-nl)|
 |pl|Polish|[Dynamics-365-Operations.pl-pl](https://github.com/MicrosoftDocs/Dynamics-365-Operations.pl-pl)|
 |pt-br|Portuguese (Brazil)|[Dynamics-365-Operations.pt-br](https://github.com/MicrosoftDocs/Dynamics-365-Operations.pt-br)|
 |ru|Russian|[Dynamics-365-Operations.ru-ru](https://github.com/MicrosoftDocs/Dynamics-365-Operations.ru-ru)|
@@ -83,6 +83,12 @@ The following table maps the language names between the client and the GitHub re
 |th|Thai|[Dynamics-365-Operations.th-th](https://github.com/MicrosoftDocs/Dynamics-365-Operations.th-th)|
 |tr|Turkish|[Dynamics-365-Operations.tr-tr](https://github.com/MicrosoftDocs/Dynamics-365-Operations.tr-tr)|
 |zh-hans|Chinese|[Dynamics-365-Operations.zh-cn](https://github.com/MicrosoftDocs/Dynamics-365-Operations.zh-cn)|
+
+## Languages, translations, and adaptations
+
+Microsoft's teams write their content in English (United States), which is then translated into a number of languages. The translated content is then made available in a public GitHub repo for each language.  
+
+Most translation services treat certain languages as variants of another language in order to recycle translations to the extent possible. For example, Danish and Norwegian are related languages but each considered unique in itself, whereas German (Austria) and German (Germany) are considered so closely related that the they are treated as variants of each other. As a result, Microsoft's translation process translates English source into German (Germany) and then runs an adaptation process for German (Austria). This is why you would use the files in the *Dynamics-365-Operations.de-de* GitHub repo as a starting point for both German (Germany) and German (Austria).  
 
 ## See also
 
