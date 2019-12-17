@@ -2,7 +2,7 @@
 # required metadata
 
 title: ROUNDUP ER function
-description: This topic provides information about how the ROUNDUP ER function is used.
+description: This topic provides information about how the ROUNDUP Electronic reporting (ER) function is used.
 author: NickSelin
 manager: kfend
 ms.date: 12/17/2019
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# <a name="ROUNDUP">ROUNDUP Function</a>
+# <a name="ROUNDUP">ROUNDUP ER function</a>
 
 [!include [banner](../includes/banner.md)]
 
-The `ROUNDUP` function returns a *Real* value of the specified number after it has been rounded up to the specified number of decimal places.
+The `ROUNDUP` function returns the specified number as a *Real* value after it has been rounded up to the specified number of decimal places.
 
 ## Syntax
 
@@ -50,13 +50,13 @@ A numeric value that must be rounded up.
 
 `decimals`: *Integer*
 
-A numeric number of decimal places.
+A numeric value that represents the number of decimal places.
 
-## Returns
+## Return values
 
 *Real*
 
-The result numeric value.
+The resulting numeric value.
 
 ## Usage notes
 
@@ -64,11 +64,11 @@ This function behaves like [ROUND](er-functions-mathematical-round.md), but it a
 
 ## Example 1
 
-`ROUNDUP (1200.763, 2)` rounds up to two decimal places and returns 1200.77.
+`ROUNDUP (1200.763, 2)` rounds up to two decimal places and returns **1200.77**.
 
 ## Example 2
 
-`ROUNDUP (1200.767, -3)` rounds up to the nearest multiple of 1,000 and returns 2000.
+`ROUNDUP (1200.767, -3)` rounds up to the nearest multiple of 1,000 and returns **2000**.
 
 ## Additional resources
 
