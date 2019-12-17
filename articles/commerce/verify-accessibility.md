@@ -1,4 +1,37 @@
-**Verify Accessibility**
+---
+# required metadata
+
+title: Manage robots.txt files
+description: This topic describes how to verify page content accessibility in Microsoft Dynamics 365 Commerce.
+author: arotkin
+manager: annbe
+ms.date: 12/16/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-commerce
+ms.technology: 
+
+# optional metadata
+
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: v-chgri
+ms.search.scope: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: retail
+ms.author: arotkin
+ms.search.validFrom: 2019-12-16
+ms.dyn365.ops.version: 
+
+---
+
+**Verify page content accessibility**
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to verify page content accessibility in Microsoft Dynamics 365 Commerce.
 
