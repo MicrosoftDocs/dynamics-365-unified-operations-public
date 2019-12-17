@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | [Set up Human resources (HR) parameters across legal entities](https://docs.microsoft.com/en-us/dynamics365/talent/set-up-hr-parameters-across-legal-entities), [Set up company-specific Human resources (HR) parameters](https://docs.microsoft.com/en-us/dynamics365/talent/set-up-company-specific-hr-parameters) |
+| From existing topic? |  |
 | Review document location | (link) |
 
 
