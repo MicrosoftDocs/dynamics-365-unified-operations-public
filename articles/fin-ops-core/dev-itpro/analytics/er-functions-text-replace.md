@@ -50,13 +50,13 @@ The valid path of a data source of the *String* type.
 
 `pattern`: *String*
 
-If the `regular expression flag` argument is **FALSE**, this argument contains the text to use as a replacement.
+If the `regular expression flag` argument is **FALSE**, this argument contains the text that must be replaced.
 
 If the `regular expression flag` argument is **TRUE**, this argument contains a regular expression that defines both a search pattern and the replacement text.
 
 `replacement`: *String*
 
-If the `regular expression flag` argument is **FALSE**, this argument contains the text that must be replaced.
+If the `regular expression flag` argument is **FALSE**, this argument contains the text to use as a replacement.
 
 If the `regular expression flag` argument is **TRUE**, this argument isn't used.
 
@@ -74,7 +74,7 @@ The resulting text value.
 
 If the `regular expression flag` argument is **TRUE**, this function returns the specified string after it has been changed by applying the regular expression that is specified by the `pattern` argument. The regular expression is used to find the characters that must be replaced.
 
-The characters that are specified by the `replacement` argument are used to replace the characters that are found. If the `regular expression flag` argument is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md).
+If the `regular expression flag` argument is **FALSE**, this function behaves like [TRANSLATE](er-functions-text-translate.md). The characters that are specified by the `replacement` argument are used to replace the characters that are found. 
 
 ## Example 1
 
