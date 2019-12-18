@@ -61,7 +61,7 @@ In some countries, there is a legal requirement that all invoices and related vo
 <tbody>
 <tr class="odd">
 <td>Feature activation</td>
-<td>In the <strong>Feature management</strong> workspace, turn on the <strong>Chronological numbering</strong> feature. For more information, see <a href="../../fin-and-ops/get-started/feature-management/feature-management-overview.md">Feature management overview</a>.</td>
+<td>In the **Feature management** workspace, turn on the **Chronological numbering** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).</td>
 </tr>
 <tr class="even">
 <td>Country/region</td>
@@ -90,12 +90,7 @@ When you post an invoice or a credit note, the appropriate number sequence is us
 
 ### Dates control
 
-The system performs an additional invoice dates control for customer invoices:
+The system performs an additional invoice dates control for customer invoices: 
 
- - Posting of new invoices with dates earlier than the date of the latest posted invoice is forbidden if no reason code defined. To enable posting, a reason code must be entered either in an invoice/order header or at least in one of the lines.
-
- - Warning is raised if a new invoice date is later than the system date.
-
-
-
-
+- Posting new invoices with dates earlier than the date of the latest posted invoice is forbidden if no reason code is defined. To enable posting, a reason code must be entered either in an invoice/order header or in one of the lines.
+- A warning is raised if the new invoice date is later than the system date.
