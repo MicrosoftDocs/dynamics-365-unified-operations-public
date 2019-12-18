@@ -40,7 +40,7 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 
 | Function | Description |
 |----------|-------------|
-| [Char](er-functions-text-char.md) | This function returns a *String* value that presents the set of characters that is referenced by the specified Unicode number. |
+| [Char](er-functions-text-char.md) | This function returns a *String* value that presents a single character that is referenced by the specified Unicode number. |
 | [Concatenate](er-functions-text-concatenate.md) | This function returns  all the specified text strings as a *String* value after they have been joined into one string. |
 | [Format](er-functions-text-format.md) | This function returns the specified string a *String* value after it has been formatted by substituting any occurrences of **%N** with the *N*th argument. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | This function searches for a specific *Enum* value in the specified enumeration data source by using the enumeration name that is specified as a *String* value. If the *Enum* value is found, the function returns it. |
@@ -52,7 +52,7 @@ Electronic reporting (ER) text functions can be used to perform operations on da
 | [Mid](er-functions-text-mid.md) | This function returns a *String* value that presents the specified number of characters from the specified string, starting at the specified position. |
 | [NumberFormat](er-functions-text-numberformat.md) | This function returns a *String* value that presents the specified number in the specified format and in an optionally specified culture. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | This function returns the specified number as a *String* value after it has been spelled out (that is, converted to text strings) in the specified language. |
-| [PadLeft](er-functions-text-padleft.md) | This function returns a *String* value of the specified length, where the start of the specified string is padded with the specified characters. |
+| [PadLeft](er-functions-text-padleft.md) | This function returns a *String* value of the specified length, where the start of the specified string is padded with one or more instances of the specified characters. |
 | [QrCode](er-functions-text-qrcode.md) | This function returns a *Container* value that presents the Quick Response code (QR code) image for the specified string in binary format. |
 | [Replace](er-functions-text-replace.md) | This function returns the specified text string as a *String* value after all or part of it has been replaced with another string. |
 | [Right](er-functions-text-right.md) | This function returns a *String* value that presents the specified number of characters from the end of the specified string. |
