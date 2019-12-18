@@ -71,7 +71,7 @@ ConsoleApp.exe provides functionality that supports the creation of custom Help 
 Here is the syntax for ConsoleApp.exe:  
 
 ```
-ConsoleApp.exe --Json <Articles/> --Out <path> --ExternalText <text> [--DoNotClone <true|false>] [--Repo <URL>] [--RemoveGitFolder <true|false>] [--ReplaceUrl <URL>] [--LogsDir <.\logs>] [--EnRepo <URL>] [--EnOut <path>] [--Lng <language code>] [--?[-]]
+ConsoleApp.exe -Json <Articles/> -Out <path> -ExternalText <text> [-DoNotClone <true|false>] [-Repo <URL>] [-RemoveGitFolder <true|false>] [-ReplaceUrl <URL>] [-LogsDir <.\logs>] [-EnRepo <URL>] [-EnOut <path>] [-Lng <language code>] [-?[-]]
 ```
 
 Here is an explanation of the parameters:
@@ -101,32 +101,32 @@ The following additional parameters are used when the tool is run against the lo
 The following example clones the en-US repo and generates HTML files for en-US.
 
 ```
-ConsoleApp.exe --json articles/ --out "D:\D365-Operations\en-US" --repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-Operations\logs\en-US
+ConsoleApp.exe -json articles/ -out "D:\D365-Operations\en-US" -repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-Operations\logs\en-US
 ```
 
 The following example uses the previously cloned en-US repo and generates HTML files for en-US.
 
 ```
-ConsoleApp.exe --json articles/ --out "D:\D365-Operations\en-US" --externalText "(This is an external link)" --replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" --LogsDir D:\D365-
+ConsoleApp.exe -json articles/ -out "D:\D365-Operations\en-US" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-
 Operations\logs\en-US
 ```
 
 The following example clones both the de-DE and en-US repos, and generates HTML files for German.
 
 ```
-ConsoleApp.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
+ConsoleApp.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example clones the de-DE repo, uses the existing en-US repo, and then generates HTML files for the *de* client locale.
 
 ```
-ConsoleApp.exe --json articles/ --out "D:\D365-Operations\de" --repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" --externalText "(This is an external link)" --EnOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
+ConsoleApp.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example uses the existing de-DE and en-US repos, and then generates HTML files for German. Make sure that the de-DE repo is up to date if you use the existing repo.
 
 ```
-ConsoleApp.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --externalText "(This is an external link)" --enOut "D:\D365-Operations\en-us" --replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" --lng "de" --LogsDir D:\D365-Operations\logs\de
+ConsoleApp.exe -json articles/ -out "D:\D365-Operations\de" -DoNotClone -externalText "(This is an external link)" -enOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
 ```
 
 > [!IMPORTANT]
@@ -141,7 +141,7 @@ The **HTML Locale Changer** tool can update your HTML files with a new value for
 Here is the syntax for HtmlLocaleChanger.exe:  
 
 ```
-HtmlLocaleChanger.exe --h <path> --v <true|false>
+HtmlLocaleChanger.exe -h <path> -v <true|false>
 ```
 
 Here is an explanation of the parameters:
@@ -156,7 +156,7 @@ Here is an explanation of the parameters:
 The following example changes the locale <!--from *de-de* to *de-at*--> with verbose logging:
 
 ```
-HtmlLocaleChanger.exe --h D:\D365-Operations\de --v
+HtmlLocaleChanger.exe -h D:\D365-Operations\de -v
 ```
 
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
@@ -170,7 +170,7 @@ When you run the ConvertHtmlToJson tool, you must specify the location of the HT
 Here is the syntax for ConvertHtmlToJson.exe:  
 
 ```
-ConvertHtmlToJson.exe --h <path> --j <path> --v <true|false>
+ConvertHtmlToJson.exe -h <path> -j <path> -v <true|false>
 ```
 
 Here is an explanation of the parameters:
@@ -186,7 +186,7 @@ Here is an explanation of the parameters:
 The following example generates JSON files without verbose logging:
 
 ```
-HtmlLocaleChanger.exe --h D:\D365-Operations\de --j D:\D365-Operations\json
+HtmlLocaleChanger.exe -h D:\D365-Operations\de -j D:\D365-Operations\json
 ```
 
 
