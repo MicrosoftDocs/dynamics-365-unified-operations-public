@@ -1095,6 +1095,8 @@
           href: master-planning/safety-stock-replenishment.md
         - name: Delays
           href: master-planning/delays.md
+        - name: Cancel a master planning job
+          href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
         - name: Action messages
