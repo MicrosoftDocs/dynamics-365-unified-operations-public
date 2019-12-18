@@ -56,7 +56,7 @@ The resulting list of records.
 
 ## Usage notes
 
-The path must be defined as a valid data source path of a data source element of a record list data type. Data elements such as the path string and date should raise an error in the Electronic reporting (ER) expression builder at design time.
+The path must be defined as a valid data source path of a data source element of the *Record list* data type. Data elements such as the path string and date should raise an error in the Electronic reporting (ER) expression builder at design time.
 
 We don't recommend that you use this function for transactional data sources that might contain a large volume of data. Instead, consider using the [ALLTEMSQUERY](er-functions-list-allitemsquery.md) function.
 
@@ -66,7 +66,7 @@ If you enter `SPLIT("abcdef" , 2)` as data source **DS**, the expression `COUNT(
 
 ## Example 2
 
-If you enter **Vend** as the data source of the *Record list* type that refers to the VendTable application table, the expression `ALLITEMS (Vend.'<Relations'.ContactPerson)` returns a flattened list of records that has the **ContactPerson** table structure and contains all contact persons that can be accessed by using the **ContactPerson.ContactForParty == VendTable.Party** relation, and that is available for all vendors from the referenced vendor table.
+If you enter **Vend** as the data source of the *Record list* data type that refers to the VendTable application table, the expression `ALLITEMS (Vend.'<Relations'.ContactPerson)` returns a flattened list of records that has the **ContactPerson** table structure and contains all contact persons that can be accessed by using the **ContactPerson.ContactForParty == VendTable.Party** relation, and that is available for all vendors from the referenced vendor table.
 
 ## Additional resources
 
