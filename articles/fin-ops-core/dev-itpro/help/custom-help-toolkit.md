@@ -78,22 +78,22 @@ Here is an explanation of the parameters:
 
 |Parameter   |Description  |
 |------------|-------------|
-|Json |Specify a relative path for the location of the docfx.json file. In Microsoft documentation repos, this location is typically ```articles/```. |
-|Out |Specify the folder where your existing clone is, or the folder to clone the repo to. If you run ConsoleApp to clone a repo, this folder must not already exist. Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). |
-|ExternalText |Specify text that must be added to the updated links if ConsoleApp must replace the original links.|
+|Json |Specifies a relative path for the location of the docfx.json file. In Microsoft documentation repos, this location is typically ```articles/```. |
+|Out |Specifies the folder where your existing clone is, or the folder to clone the repo to. If you run ConsoleApp to clone a repo, this folder must not already exist. Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). |
+|ExternalText |Specifies text that must be added to the updated links if ConsoleApp must replace the original links.|
 |DoNotClone |Set this parameter when you run the tool against previously cloned repos. |
-|Repo |Specify the repo URL. This parameter is not required if you are using a previously cloned repo. Examples of Microsoft documentation repo URLs include *https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public* for English (US) and *https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de* for German (Germany).|
-|RemoveGitFolder|Specify whether to remove the .git folder.|
-|ReplaceUrl|Specify the URL that is used to replace links between files when those files are not present. This parameter is intended to be used to turn relative links into absolute links.|
-|LogsDir|Specify the folder to save logs files to.|
+|Repo |Specifies the repo URL. This parameter is not required if you are using a previously cloned repo. Examples of Microsoft documentation repo URLs include *https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public* for English (US) and *https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de* for German (Germany).|
+|RemoveGitFolder|Specifies whether to remove the .git folder.|
+|ReplaceUrl|Specifies the URL that is used to replace links between files when those files are not present. This parameter is intended to be used to turn relative links into absolute links.|
+|LogsDir|Specifies the folder to save logs files to.|
 
 The following additional parameters are used when the tool is run against the localized Microsoft documentation repos:
 
 |Parameter   |Description  |
 |------------|-------------|
-|EnRepo|Specify the URL of the en-US repo. This parameter is not required if the repo is already cloned. The Microsoft documentation repo URL for English (US) is [https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public).|
-|EnOut|Specify the folder where the en-US repo exists or the folder that it should be cloned to. This folder should not exist if the repo is being cloned by the tool.|
-|Lng|Specify the language value to use for ms.locale metadata in the resulting HTML files. The value must correspond to the value that is used in the Finance and Operations client’s language setting that the Help content is intended for. If this parameter is omitted, en-US is used as a default value. Use the Finance and Operations language name as a parameter. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
+|EnRepo|Specifies the URL of the en-US repo. This parameter is not required if the repo is already cloned. The Microsoft documentation repo URL for English (US) is [https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public).|
+|EnOut|Specifies the folder where the en-US repo exists or the folder that it should be cloned to. This folder should not exist if the repo is being cloned by the tool.|
+|Lng|Specifies the language value to use for ms.locale metadata in the resulting HTML files. The value must correspond to the value that is used in the Finance and Operations client’s language setting that the Help content is intended for. If this parameter is omitted, en-US is used as a default value. Use the Finance and Operations language name as a parameter. For more information, see [Language and locale descriptors in across product and Help](language-locale.md).|
 |Rtl|Set this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew.|
 
 ### Examples
@@ -136,9 +136,28 @@ ConsoleApp.exe --json articles/ --out "D:\D365-Operations\de" --DoNotClone --ext
 
 ## <a name="htmllocale"></a>Use the HTML Locale Changer tool to align locales
 
-The **HTML Locale Changer** tool can update your HTML files with a new value for *ms.locale*. For example, if you have HTML files for German (Germany) and you want to make the same content available in German (Austria), then you can run the tool to change the setting from *ms.locale: de-de* to *ms.locale:de-at*.
+The **HTML Locale Changer** tool can update your HTML files with a new value for *ms.locale*. For example, if you have HTML files for German (Germany) and you want to make the same content available in German (Austria), then you can run the tool to change the setting from *ms.locale: de-de* to *ms.locale:de-at*.  
 
-<!--TODO: Examples-->
+Here is the syntax for HtmlLocaleChanger.exe:  
+
+```
+HtmlLocaleChanger.exe --h <path> --v <true|false>
+```
+
+Here is an explanation of the parameters:
+
+|Parameter   |Description  |
+|------------|-------------|
+|h|Specifies the path to the HTML files that you want to process. |
+|v|True to enable verbose logging; otherwise false.|
+
+### Examples
+
+The following example changes the locale <!--from *de-de* to *de-at*--> with verbose logging:
+
+```
+HtmlLocaleChanger.exe --h D:\D365-Operations\de --v
+```
 
 ## <a name="json"></a>Use the ConvertHtmlToJson tool to generate JSON files
 
@@ -148,7 +167,28 @@ The JSON files include metadata that is used by the indexer to identify which fo
 
 When you run the ConvertHtmlToJson tool, you must specify the location of the HTML files with your Help content, and you must specify the destination path.  
 
-<!--TODO: Examples?-->
+Here is the syntax for ConvertHtmlToJson.exe:  
+
+```
+ConvertHtmlToJson.exe --h <path> --j <path> --v <true|false>
+```
+
+Here is an explanation of the parameters:
+
+|Parameter   |Description  |
+|------------|-------------|
+|h|Specifies the path to the HTML files that you want to process. |
+|j|Specifies the folder that the JSON files will be saved to.|
+|v|True to enable verbose logging; otherwise false.|
+
+### Examples
+
+The following example generates JSON files without verbose logging:
+
+```
+HtmlLocaleChanger.exe --h D:\D365-Operations\de --j D:\D365-Operations\json
+```
+
 
 ## <a name="helppane"></a>Use the development environment to extend the Help pane
 
