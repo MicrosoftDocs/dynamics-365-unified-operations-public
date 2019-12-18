@@ -56,7 +56,13 @@ The resulting binary stream.
 
 ## Example
 
-You can add the `QRCODE ("Sample text")` expression as a binding of a **Cell** element of an Electronic reporting (ER) format that contains a template that is bound to either an image (for a template in Microsoft Excel format) or a picture content control (for a template in Microsoft Word format) as a placeholder of the QR code image. Then, when the ER format is run, the generated document will contain the corresponding QR code image in the placeholder in the template. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
+You can configure an Electronic reporting (ER) format to generate an outbound document in Microsoft Office format (Excel workbooks or Word documents) by using a predefined template. This template may contain a **Picture** object (Excel workbook) or a **Picture Content Control** (Word document) as a placeholder for a QR code image. You need to add to the configured ER format a **Cell** element that will be used to fill this placeholder in. To specify what information will be stored in a QR code, you need to define a binding for this **Cell** element. For example, you can configure such binding as containing the following expression:
+
+```
+QRCODE (model.ListOfShelfLabels.LabelText)`
+```
+
+When you run the configured ER format, the text value of the **LabelText** field of the **model.ListOfShelfLabels** data source will be used to generate a QR code image. This image will replace a QR code image placeholder in the document template using to generate an outbound document. When this image of the generated document is scanned, it returns the text that was taken from the **LabelText** field of the **model.ListOfShelfLabels** data source. For more information, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
 ## Additional resources
 
