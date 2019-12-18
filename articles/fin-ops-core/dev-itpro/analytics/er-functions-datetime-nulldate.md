@@ -50,7 +50,7 @@ The resulting date value.
 
 ## Example 1
 
-`DATEFORMAT (NULLDATE()**, **"yyyy-MM-dd")` returns the **null** date, January 1, 1900, as **"1900-01-01"**, based on the specified custom format.
+`DATEFORMAT (NULLDATE(), "yyyy-MM-dd")` returns the **null** date, January 1, 1900, as **"1900-01-01"**, based on the specified custom format.
 
 ## Example 2
 
