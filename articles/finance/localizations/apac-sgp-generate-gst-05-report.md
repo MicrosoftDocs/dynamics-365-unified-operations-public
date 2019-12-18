@@ -44,7 +44,7 @@ Singaporean companies must file a GST return (GST-05 report) on a regular basis.
     - Zero
     - Exempt
 
-- On the sales tax authority page, specify the dedicated **Singapore report layout** reporting format.
+- On the **Sales tax authority** page, specify the dedicated **Singapore report layout** reporting format.
 
 When you settle and post sales tax to process a tax settlement, the GST-05 report will be generated and printed.
 
