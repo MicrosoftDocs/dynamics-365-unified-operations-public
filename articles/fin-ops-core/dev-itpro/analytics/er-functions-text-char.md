@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `CHAR` function returns a *String* value that presents the set of characters that is referenced by the specified Unicode number.
+The `CHAR` function returns a *String* value that presents a single character that is referenced by the specified Unicode number.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ CHAR (number)
 
 `number`: *Integer*
 
-A number that corresponds to an expected string of characters.
+A number that corresponds to an expected single character.
 
 ## Return values
 
