@@ -48,10 +48,6 @@ Changes described in this section apply to build number 8.1.2674.
 
 Printing performance reviews is now available in all environments. To enable this functionality use the *Feature Management* workspace. See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
-### "The Filter for the export could not be determined" when using Export to Word template for performance goals - (386362)
-
-A change has been made to allow exporting of all workers to the word templates in Talent.
-
 ### Retired position with direct reports "floats" in org diagram as an open position - (385436)
 
 Changes have been made in this week's release to correct how retired positions with directs reports display in the reporting hierarchy.
