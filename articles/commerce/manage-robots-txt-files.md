@@ -55,8 +55,8 @@ To upload a robots.txt file in Commerce, follow these steps.
 - In the left navigation pane, select **Tenant Settings** (next to the gear icon) to expand it.
 - Below **Tenant Settings**, select **Robots.txt**. A list of all the domains associated with the environment will appear in the main window.
 - Click **Manage** to upload a robots.txt file for a domain on your environment.
-- In the menu on the right, select the upload icon (upward-facing arrow) next to the domain associated with the robots.txt file. A File Explorer window appears.
-- In File Explorer, browse to and select the the robots.txt file you want to upload for the given domain, and then select **Open**. A status alert will show if the upload was successful.
+- In the menu on the right, select the upload icon (upward-facing arrow) next to the domain associated with the robots.txt file. An **Open** file browser window appears.
+- In the **Open** file browser window, browse to and select the the robots.txt file you want to upload for the given domain, and then select **Open** to complete the upload. 
 
 >[!NOTE] 
 >When uploading the file, Commerce will do a basic check that it is a text file, but will not validate the contents of the file.
@@ -69,8 +69,8 @@ To download a robots.txt file in Commerce, follow these steps.
 - In the left navigation pane, select **Tenant Settings** (next to the gear icon) to expand it.
 - Below **Tenant Settings**, select **Robots.txt**. A list of all the domains associated with the environment will appear in the main window.
 - Click **Manage** to download a robots.txt file for a domain on your environment.
-- In the menu on the right, select the download icon (downward-facing arrow) next to the domain associated with the robots.txt file. A **Save File** dialog box appears. 
-- In the **Save File** dialog box, navigate to the desired location on your local drive, confirm or enter a file name, and then click **Save** to complete the download. 
+- In the menu on the right, select the download icon (downward-facing arrow) next to the domain associated with the robots.txt file. A **Save File** file browser window appears. 
+- In the **Save File** file browser window, navigate to the desired location on your local drive, confirm or enter a file name, and then click **Save** to complete the download. 
 
 >[!NOTE] 
 >Only robots.txt files uploaded previously with Commerce authoring tools will be downloadable using this method.
@@ -84,8 +84,9 @@ To delete a robots.txt file in Commerce, follow these steps.
 - In the left navigation pane, select **Tenant Settings** (next to the gear icon) to expand it.
 - Below **Tenant Settings**, select **Robots.txt**. A list of all the domains associated with the environment will appear in the main window.
 - Click **Manage** to delete a robots.txt file for a domain on your environment.
-- In the menu on the right, select the delete icon (trash can) next to the domain associated with the robots.txt file. A File Explorer window appears.
-- In File Explorer, browse to and select the the robots.txt file you want to delete for the given domain, and then select **Open**. 
+- In the menu on the right, select the delete icon (trash can) next to the domain associated with the robots.txt file. An **Open** file browser window appears.
+- In the **Open** file browser window, browse to and select the the robots.txt file you want to delete for the given domain, and then select **Open**. A **Warning** dialog box appears.
+- In the **Warning** dialog box, click **Delete** to confirm deletion of the robots.txt file.
 
 
 >[!NOTE] 
