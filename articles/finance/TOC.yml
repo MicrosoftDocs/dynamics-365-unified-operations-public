@@ -2263,6 +2263,8 @@
           items: 
           - name: Managing fixed assets
             href: localizations/rus-fixed-assets.md
+          - name: Fixed assets overview
+            hfre: localizations/rus-fixed-assets-overview.md
           - name: Set up fixed assets
             href: localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
