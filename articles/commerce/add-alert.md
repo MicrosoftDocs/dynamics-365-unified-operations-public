@@ -69,12 +69,13 @@ Promo banner can be used in the site header to indicate site-wide promotions or 
 
 To add an promo banner module to a page and set the required properties, follow these steps.
 
-1. Create a page template that is named **Promo banner template**.
-1. In the **Main** slot of the default page, add a promo banner module.
+1. Create a page template that is named **Promo banner template**
+1. To the **Body** add a **Default page**
 1. Check in the template, and publish it. 
-1. Use the alert template that you just created to create a page that is named **Promo banner page**. 
-1. In the **Main** slot of the new page, add a promo banner module.
-1. In the settings for the module, add one or many banner messages. Each message can have a text with a link. You can edit the other properties if you want to customize the module further.
+1. Use the banner template that you just created to create a page that is named **Promo banner page**. 
+1. In the **Main** slot of the new page, add a container module. Set Width to Fit container
+1. To the container module, add a promo banner module.
+1. In the settings for the banner module, add one or many banner messages. Each message can have a text with a link. You can edit the other properties if you want to customize the module further.
 1. Save and preview the page. At the top of the page, you should see an alert that has the text that you added.
 1. Check in the page, and publish it. 
 
