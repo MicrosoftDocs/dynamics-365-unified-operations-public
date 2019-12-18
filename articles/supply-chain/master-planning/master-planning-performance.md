@@ -4,7 +4,7 @@ title: Improve master planning performance
 description: This topic explains the various options that can help you improve the performance of master planning and troubleshoot issues.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -134,24 +134,25 @@ Filters that are applied in the **Master planning run** dialog box affect the du
 
 ## Automatically filter by items with direct demand
 
-To improve the master planning run time it is possible to only include items with direct demand. Note that this filter only applies for a complete master planning run, without any filters in the **Records to include**. This means that master planning run with filters will ignore the **Automatically filter by items with direct demand** setting
+To improve the master planning run time, you can choose to only include items with direct demand. This filter can only be used for a complete master planning run with no other filters applied in the **Records to include** field. A master planning run with filters will ignore the **Automatically filter by items with direct demand** setting.
 
-The **Automatically filter by items with direct demand** is controlled from the Master planning parameters and can be for both **Pre-processing** and **Post-processing**.
+The **Automatically filter by items with direct demand** field is found on the **Master planning parameters** page and can be used with both pre-processing and post-processing settings.
 
-### Pre-processing: Automatically filter by items with direct demand
-The **Pre-processing: Automatically filter by items with direct demand** parameter is making sure that the pre-processing phase of master planning only include items that fulfill at least one of the following conditions:
-  - Item has expected receipt or issue. E.g. purchase order, sales order, quote, transfer order, production order. 
-  - Item has item coverage with safety stock (Minimum on-hand inventory)
-  - Forecast demand after today exists for item 
-  - Forecast supply after today exists for item 
-  - Item include any continuity lines from Call center module yet to be created.
+### Pre-processing
+The **Pre-processing: Automatically filter by items with direct demand** parameter ensures that the pre-processing phase of master planning only includes items that fulfill at least one of the following conditions:
+  - The item has an expected receipt or issue. For example, a purchase order, sales order, quote, transfer order, or production order. 
+  - The item has item coverage with safety stock (minimum on-hand inventory).
+  - Forecast demand after today exists for the item.
+  - Forecast supply after today exists for the item.
+  - The item includes any continuity lines from the call center module yet to be created.
 
 > [!NOTE]
-> This means that an item, which has physically available on-hand inventory would not show a requirement transaction anymore, since there is no demand for the item.
+> An item that has physically available on-hand inventory will not show a requirement transaction, since there is no demand for the item.
 
-### Post-processing: Automatically filter by items with direct demand
-The **Post-processing: Automatically filter by items with direct demand** is only relevant if you use **BOM version requirement** in your **Coverage groups**, else you do not need to set this to Yes. 
-Just before the coverage step start, there is a pre-coverage step, in which items with coverage setting **BOM version requirement** set to true will be reprocessed. This is done to ensure that items from the required BOM version are planned. This could lead to situations where items, that during pre-processing were considered to have demand, no longer have any demand and hence should be excluded from the planning run.
+### Post-processing
+The **Post-processing: Automatically filter by items with direct demand** option is only relevant if you set **BOM version requirement** in your coverage groups. Otherwise, you do not need to enable the parameter. 
+
+Before the coverage step starts, there is a pre-coverage step during which items with the coverage setting **BOM version requirement** enabled will be reprocessed. This is done to ensure that items from the required BOM version are planned. Items that are considered to have demand during pre-processing no longer have any demand and therefore should be excluded from the planning run.
 
 ## Performance checklist summary
 
