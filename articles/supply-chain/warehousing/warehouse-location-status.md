@@ -34,22 +34,22 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Dynamics 365 Supply Chain Management includes several locations fields to provide flexibility in working with and maintaining locations. Location statuses can be included in the location directives query for better warehouse flow control.
+Dynamics 365 Supply Chain Management includes several location fields to provide flexibility in working with and maintaining locations. Location statuses can be included in the location directives query for better warehouse flow control.
 
-There are four recently added fields on the **Locations** page to track additional information about the current state of the location. The fields allow warehouse managers to get a better overview of the status of the locations in the warehouse and enable more advanced reporting and filtering.
+There are four recently added fields on the **Locations** page to track additional information about the current state of the location. The fields allow warehouse managers to get a better status overview of the warehouse locations, and also enable more advanced reporting and filtering.
 
-- Item number: Item that is currently in the location. If the location contains multiple items, this field will be blank.
+- **Item number:** Item that is currently in the location. If the location contains multiple items, this field will be blank.
 
-- Last activity date and time: Timestamp of the last warehouse transaction that was performed against the location.
+- **Last activity date and time:** Timestamp of the last warehouse transaction that was performed against the location.
 
-- Aging date: Date the inventory in the location was brought into the warehouse. This value is calculated based on the license plate aging date. It is accurate for license plate-tracked locations but not guaranteed to be accurate for non-license plate-tracked locations.
+- **Aging date:** Date the inventory in the location was brought into the warehouse. This value is calculated based on the license plate aging date. It is accurate for license plate-tracked locations but not guaranteed to be accurate for non-license plate-tracked locations.
 
-- Location status: There are four options for location status.
+- **Location status:** There are four options for location status.
 
-  - Undetermined: Location profile cannot track status. Current status is unknown.
-  - Empty: There is currently no inventory in the location.
-  - Picking: Outbound transactions have been performed against the location after it was last empty.
-  - Storage: Only inbound transactions have been performed since the location was last empty.
+  - **Undetermined:** Location profile cannot track status. Current status is unknown.
+  - **Empty:** There is currently no inventory in the location.
+  - **Picking:** Outbound transactions have been performed against the location after it was last empty.
+  - **Storage:** Only inbound transactions have been performed since the location was last empty.
 
 
 ## Set up location profiles
@@ -58,7 +58,7 @@ There are four recently added fields on the **Locations** page to track addition
 
 2. Select "BULK-06". 
 
-3. On the **General** FastTab, in the **Location Updates** group, set the toggles are set to **Yes** for **Enable item in location**, **Enable location activity date and time**, and **Enable location status**. These parameters control whether the references field on the location are active or not. 
+3. On the **General** FastTab, in the **Location Updates** group, set the toggles to **Yes** for **Enable item in location**, **Enable location activity date and time**, and **Enable location status**. These parameters control whether the references field on the location are active or not. 
 
 4. Select "PIKC-06".
 
@@ -75,13 +75,13 @@ There are four recently added fields on the **Locations** page to track addition
 
 4. In the **Warehouse** field, select "61". 
 
-5. Click **Ok**.
+5. Click **OK**.
 
 6. Under **Purchase order lines**, click **Add line**.
 
 7. In the **Item number** field, select "A0002".
 
-8. in the **Quantity** field, enter "5".
+8. In the **Quantity** field, enter "5".
 
 9. Open the mobile device and go to **Inbound > Purchase Receive**.
 
@@ -95,7 +95,7 @@ There are four recently added fields on the **Locations** page to track addition
 
 14. In Supply Chain Management, go to **Warehouse management > Setup > Warehouse > Locations**.
 
-15. Filter on "Location", and enter the putaway location from the purchase order work.
+15. Filter on **Location**, and enter the putaway location from the purchase order work.
 
   - The location status column is populated with "Storage" because the last transaction against the location was put. 
   - The item number column is populated with "A0002", the item that was received and put to the location. 
