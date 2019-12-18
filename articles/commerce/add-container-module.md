@@ -122,9 +122,7 @@ To add a container player module to a new page and set the required properties, 
 
 [Carousel module](add-carousel.md)
 
-[Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
+[Text block module](add-content-rich-block.md)
 
 [Buy box module](add-buy-box.md)
 
