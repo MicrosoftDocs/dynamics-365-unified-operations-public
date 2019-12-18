@@ -72,7 +72,7 @@ The following table describes the type conversion functions in the [text categor
 
 | Function | Description |
 |----------|-------------|
-| [Char](er-functions-text-char.md)                 | This function returns a *String* value that represents the set of characters that is referenced by the specified Unicode number. |
+| [Char](er-functions-text-char.md)                 | This function returns a *String* value that represents a single character that is referenced by the specified Unicode number. |
 | [GuidValue](er-functions-text-guidvalue.md)       | This function converts the specified input of the *String* type to a data item of the *GUID* type. |
 | [NumberFormat](er-functions-text-numberformat.md) | This function returns a *String* value that represents the specified number in the specified format and in an optionally specified culture. |
 | [QrCode](er-functions-text-qrcode.md)             | This function returns a *Container* value that presents the Quick Response code (QR code) image for the specified string in binary format. |
