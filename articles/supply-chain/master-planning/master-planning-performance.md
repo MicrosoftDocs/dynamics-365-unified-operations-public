@@ -139,9 +139,9 @@ To improve the master planning run time it is possible to only include items wit
 The **Automatically filter by items with direct demand** is controlled from the Master planning parameters and can be for both **Pre-processing** and **Post-processing**.
 
 ### Pre-processing: Automatically filter by items with direct demand
-The **Pre-processing: Automatically filter by items with direct demand** parameter is making sure that the pre-processing phase of master planning on include items that fulfill at least one of the following conditions:
-  - Item have expected receipt or issue. E.g. purchase order, sales order, quote, transfer order, production order. 
-  - Item have item coverage with safety stock (Minimum on-hand inventory)
+The **Pre-processing: Automatically filter by items with direct demand** parameter is making sure that the pre-processing phase of master planning only include items that fulfill at least one of the following conditions:
+  - Item has expected receipt or issue. E.g. purchase order, sales order, quote, transfer order, production order. 
+  - Item has item coverage with safety stock (Minimum on-hand inventory)
   - Forecast demand after today exists for item 
   - Forecast supply after today exists for item 
   - Item include any continuity lines from Call center module yet to be created.
