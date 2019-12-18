@@ -50,7 +50,7 @@ In this syntax, both occurrences of *statement* can be compound statements (stat
 
 ### Examples of if and if...else statements
 
-```X++
+```xpp
 // if statement
 if (a > 4)
 {
@@ -70,7 +70,15 @@ else
 
 ## switch statements
 
-The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. If a case constant matches the **switch** expression, the **case** statement is executed. If the case contains a **break** statement, the program then jumps out of the switch. If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. If no matches are found, the **default** statement is executed. If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. Here is the syntax for a **switch** statement:
+The **switch** statement is a multibranch language construct that has the same behavior as nested **if**. The expression of the **switch** statement is evaluated and checked against each case value. The case values must be constants that the compiler can evaluate. 
+
+- If a case constant matches the **switch** expression, the **case** statement is executed. 
+- If the case contains a **break** statement, the program then jumps out of the switch. 
+- If the case doesn't contain a **break** statement, the program continues and executes the next **case** statements. 
+- If no matches are found, the **default** statement is executed. 
+- If there are no matches and no **default** statement, none of the statements inside the **switch** statement are executed. 
+
+Here is the syntax for a **switch** statement:
 
 **switch** **(** *expression* **)** **{** **{ case }** **\[default:** *statement* **\]** **}**
 
@@ -83,9 +91,9 @@ In the syntax for both a **switch** statement and a **case** statement, every oc
 
 ### Examples of switch statements
 
-When you include the **break** keyword in a switch statement, the execution of the case branch terminates, and the statement following the switch is executed as shown in the following example. If the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
+When you include the **break** keyword in a switch statement, the execution of the case branch terminates, and the statement following the switch is executed. As shown in the following example, if the Debtor account number is 1000, the program executes "do something", and then continues execution after the switch statement.
 
-```X++
+```xpp
 switch (Debtor.AccountNo)
 {
     case "1000":
@@ -102,7 +110,7 @@ switch (Debtor.AccountNo)
 
 The following code examples makes the execution drop through the first case branch by omitting a break statement. If x is 10, b is assigned to a, and d is assigned to c. If x is 11, d is assigned to c. If x is 12, f is assigned to e.
 
-```X++
+```xpp
  switch (x)
  {
      case 10:
@@ -119,7 +127,7 @@ The following code examples makes the execution drop through the first case bran
 If you do not use the break statement, the program flow in the switch statement continues into the next case. Code segments A and B
 have the same behavior. 
 
-```X++
+```xpp
 // Code segment A (break omitted)
 case 13:
 case 17:
@@ -146,13 +154,13 @@ In this syntax, *expression1* must return a value of **true** or **false**. If *
 
 The following code example returns one of two strings based on a Boolean return value from a method call. The Boolean expression indicates whether the CustTable table has a row with a RecId field value of 1. If this Boolean expression is true (meaning RecId != 0), found is assigned to result. Otherwise, the alternative not found is assigned to result.
 
-```X++
+```xpp
 result = (custTable::find("1").RecId) ? "found" : "not found";
 ```
 
 You can nest statements with the ternary operator. The following example assigns one of three values to **level** based on the value of **x**.
 
-```X++
+```xpp
 int x = 1001;
 str level = x <= 1000 ? "A" : (x <= 2000 ? "B" : "C");
 info(level);

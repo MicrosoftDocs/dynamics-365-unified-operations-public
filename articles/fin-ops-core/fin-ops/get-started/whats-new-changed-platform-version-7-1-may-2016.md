@@ -242,10 +242,10 @@ This article describes features that are either new or changed in Microsoft Dyna
 
 | What can you do? | Why is this important? |
 |------------------|------------------------|
-| Access new or updated task guides | Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. To see a list of new or updated task guides, see [New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md). |
+| Access new or updated task guides | Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. To see a list of new or updated task guides, see [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md). |
 
 ## Additional resources
 
-[What's new or changed](whats-new-changed.md)
+[What's new or changed in Finance and Operations home page](whats-new-changed.md)
 
-[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
+[New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)

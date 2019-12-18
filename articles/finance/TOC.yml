@@ -10,6 +10,8 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
       - name: Sign up for preview subscriptions
         href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+      - name: Customer payment insights (preview)
+        href: accounts-receivable/payment-insights-overview.md
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
@@ -62,7 +64,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed
         items:
-        - name: Preview features in Finance version 10.0.7 (January 2020)
+        - name: Finance version 10.0.7 (January 2020)
           href: get-started/whats-new-changed-10-0-7.md
         - name: Finance version 10.0.6 (November 2019)
           href: get-started/whats-new-finance-10-0-6.md
@@ -70,10 +72,6 @@
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-          - name: Finance and Operations apps 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/finance/toc.json
-          - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/finance/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
             href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/finance/toc.json
         - name: Removed or deprecated features
@@ -225,7 +223,7 @@
       - name: Set up vendor invoice policies
         href: accounts-receivable/tasks/set-up-vendor-invoice-policies.md
       - name: Record vendor invoice and match against received quantity
-        href: accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md  
+        href: accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md  
       - name: Positive pay overview
         href: accounts-payable/positive-pay-overview.md
       - name: Set up and generate positive pay files
@@ -960,6 +958,10 @@
         href: public-sector/plan-public-sector-functionality.md
       - name: Create cover and signature pages for a payments report for the public sector
         href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
+      - name: Forecast position distribution
+        href: public-sector/forecast-positions.md
+      - name: Forecast position reports in the public sector
+        href: public-sector/forecast-position-reports.md
       - name: Accounts payable in the public sector
         items:
         - name: Accounts payable in the public sector overview
@@ -1238,6 +1240,8 @@
           href: localizations/latam-bra-sped-reinf.md
         - name: SPED fiscal resolution 13/2019 RJ
           href: localizations/latam-bra-resolution-13-2019-RJ.md
+        - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
+          href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
         - name: Parameters for legal entities
           href: localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
@@ -2235,6 +2239,8 @@
             href: localizations/rus-currency-sale-purchase.md 
           - name: Petty cash
             href: localizations/emea-petty-cash.md
+          - name: Cash - Local primary forms and unified reports
+            href: localizations/rus-local-primary-forms-and-unified-reports.md
         - name: VAT
           items:
           - name: Local specific posting of sales VAT
@@ -2251,10 +2257,14 @@
             href: localizations/rus-sales-books-purchase-books.md
           - name: Prepayments management
             href: localizations/rus-prepayments-management.md
+          - name: Incoming VAT restoring
+            href: localizations/rus-incoming-VAT-restoring.md
         - name: Fixed assets
           items: 
           - name: Managing fixed assets
             href: localizations/rus-fixed-assets.md
+          - name: Fixed assets overview
+            hfre: localizations/rus-fixed-assets-overview.md
           - name: Set up fixed assets
             href: localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
@@ -2307,6 +2317,16 @@
             href: ../supply-chain/localizations/rus-goods-transit-postponed.md
           - name: Cash flow management
             href: localizations/rus-cash-flow.md
+          - name: Allocation of miscellaneous charges in proportion to weight and volume
+            href: localizations/rus-miscellaneous-charges.md
+          - name: Third party miscellaneous charges
+            href: localizations/rus-third-party-misc-charges.md
+        - name: Inventory
+          items:
+          - name: Goods in transit from vendor
+            href: localizations/rus-goods-transit-vendor.md
+          - name: Customs declaration numbers
+            href: localizations/rus-custom-declaration-number.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -2329,6 +2349,8 @@
             href: localizations/rus-officials.md 
           - name: Company divisions
             href: localizations/rus-company-divisions.md
+          - name: Russian address formats and import from FIAS
+            href: localizations/rus-russian-address-format-and-import-from-FIAS.md
         - name: Deferrals
           items:
           - name: Set up deferrals
@@ -2863,6 +2885,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
             - name: Import configurations from RCS
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+        - name: Tutorials
+          items: 
+          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+          - name: Configure country context dependent ER model mappings
+            href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -2895,8 +2923,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
           - name: Trace execution of ER formats to troubleshoot performance issues
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-          - name: Business document management overview
-            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+          - name: Business document management 
+            items:
+            - name: Business document management overview
+              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+            - name: Add new fields to a business document template in Microsoft Excel
+              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
         - name: ER framework API
           items: 
           - name: Extend the list of Electronic reporting functions

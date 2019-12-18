@@ -5,7 +5,7 @@ title: Test services by using third-party utilities
 description: This topic describes how to set up third-party utilities to test services.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -98,7 +98,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 
     ![Environment quick look](./media/postman12.png)
 
-14. Create a request to perform create, read, update, or delete (CRUD) operations on the desired data entity via the OData service. Create the URL according to your requirements. For more information, see [Odata](odata.md). You might find it useful to parameterize the request by using a variable that is stored in the environment, as shown earlier. The following example of a GET query uses a **Customer Account** parameter. The query returns name and address details for the customer account that is specified in the environment variable. Note that special characters must be correctly URL-encoded.
+14. Create a request to perform create, read, update, or delete (CRUD) operations on the desired data entity via the OData service. Create the URL according to your requirements. For more information, see [Open Data Protocol (OData)](odata.md). You might find it useful to parameterize the request by using a variable that is stored in the environment, as shown earlier. The following example of a GET query uses a **Customer Account** parameter. The query returns name and address details for the customer account that is specified in the environment variable. Note that special characters must be correctly URL-encoded.
 
     ```
     https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
@@ -115,7 +115,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
     tests["Get customer info"] = !json.error && responseBody !== '' && responseBody !== '{}';
     ```
 
-17. Save and send the request, and then verify the result.
+17. Save and send the request, and then verify the result. You must ensure that the user account being used is set to a default company that has data. Alternatively, you can also specify cross-company=true as the query parameter in the OData request.
 
     ![Result](./media/postman15.png)
 

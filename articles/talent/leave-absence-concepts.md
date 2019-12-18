@@ -29,8 +29,6 @@ ms.dyn365.ops.version:
 
 # Leave and absence concepts
 
-[!include[banner](../includes/banner.md)]
-
 The concepts and terms that are described in this topic can help you determine how an employee is awarded time off, and how that employee's time balances are calculated. For more information about leave and absence management, see 
 [Leave and absence management](https://docs.microsoft.com/dynamics365/unified-operations/talent/leave-absence-overview).
 

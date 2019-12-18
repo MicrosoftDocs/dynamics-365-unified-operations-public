@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Associate an online site with a channel
+title: Associate an e-Commerce site with an online channel
 description: This topic explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 author: stuharg
 manager: AnnBe
-ms.date: 09/06/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
 
 ---
-# Associate an online site with a channel
+# Associate an e-Commerce site with an online channel
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]

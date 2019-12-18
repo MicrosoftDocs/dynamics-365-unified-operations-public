@@ -111,7 +111,7 @@ These items apply to the .htm file, which is also referred to as the resource bu
 
 -   The whole JavaScript code is wrapped in an anonymous function.
 -   Localizable strings are stored in the Globalize culture info object.
--   Localizable strings are also stored in a label file, according to the instructions in [Create and use localizable labels in the client](create-localizable-labels-client.md).
+-   Localizable strings are also stored in a label file, according to the instructions in [Create localizable labels](create-localizable-labels-client.md).
 -   Default values are provided for all properties that aren't initialized inside the constructor.
 -   The JavaScript constructor is added to the control JavaScript namespace.
 -   A reference to **this** is stored in an object that is named **self**, and **self** is used instead of **this** throughout the constructor.
@@ -154,7 +154,7 @@ These items apply to the .htm file, which is also referred to as the resource bu
 
 #### Localizable labels
 
--   The control uses a label file for UI text that is used only on the client side (not used in X++). For instructions about how to create and use these labels, see [How to create and use localizable labels in the client](create-localizable-labels-client.md).
+-   The control uses a label file for UI text that is used only on the client side (not used in X++). For instructions about how to create and use these labels, see [Create localizable labels](create-localizable-labels-client.md).
 
 ### Task Recorder compatibility
 
@@ -206,7 +206,7 @@ This section explores the control criteria in more detail.
 #### JavaScript
 
 -   **Script encapsulation** Each control must wrap all its JavaScript in an anonymous function. This requirement helps prevent the framework’s global JavaScript namespace from being populated with control-specific logic.
--   **Localizable strings** Each control must use the Globalization API to store any string messages that are used by the control’s JavaScript. Therefore, the control’s JavaScript should not hard-code any strings that are displayed in the UI. Instead, the JavaScript should reference the string messages that are stored via the Globalization API. To load strings in the globalization object in HTML and JavaScript, you can use the $dyn.label API and pass in the identifier of the label. For more information, see [Create and use localizable labels in the client](create-localizable-labels-client.md).
+-   **Localizable strings** Each control must use the Globalization API to store any string messages that are used by the control’s JavaScript. Therefore, the control’s JavaScript should not hard-code any strings that are displayed in the UI. Instead, the JavaScript should reference the string messages that are stored via the Globalization API. To load strings in the globalization object in HTML and JavaScript, you can use the $dyn.label API and pass in the identifier of the label. For more information, see [Create localizable labels](create-localizable-labels-client.md).
 -   **Default values** Each control must provide default values for any properties that aren't initialized in the JavaScript. Therefore, any properties for which values are passed in to the JavaScript constructor on initialization (that is, the FormProperties in the X++ Runtime class) must provide a default-value dictionary for these properties.
 -   **JavaScript constructor** Each control must implement a constructor in the controls namespace. This constructor is the first line of code that will be executed when the control is loaded in the client. After the constructor is completed, the constructor’s associated object, *this*, is passed in to the HTML as the default data context.
 -   **Inheriting base control** Each control’s constructor must “inherit” from the base JavaScript control class. The base JavaScript control class contains behaviors that are required by each control.
@@ -232,7 +232,7 @@ Controls must use the SysTaskRecorder X++ API to indicate which actions on the c
 -   For controls that enable values to be set via properties, **SysTaskRecorder::addPropertyUserAction** should be called when the value is being set in X++. This method call tells Task Recorder to record the setting of the property.
 -   A similar method exists for commands (**SysTaskRecorder::addCommandUserAction**).
 
-For more information, see [Determine the text that Task recorder generates for a control](task-recorder-control-text.md).
+For more information, see [Control the text that Task Recorder generates for a control](task-recorder-control-text.md).
 
 #### Task Recorder playback support
 

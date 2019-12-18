@@ -145,7 +145,7 @@ There are multiple ways to create an entity. For example, you can use a wizard, 
 
 #### Building an entity by using a wizard
 
-The simplest way to build an entity is to use a wizard. This wizard lets you select a root data source and expand to other related data sources, and then select fields for the entity. To start the wizard, add a new item of type **Data entity** to your project. For step-by-step instructions for using the wizard to build an entity, see [Building and consuming Data Entities](build-consuming-data-entities.md). The following table provides information about the properties that you set for an entity in the wizard.
+The simplest way to build an entity is to use a wizard. This wizard lets you select a root data source and expand to other related data sources, and then select fields for the entity. To start the wizard, add a new item of type **Data entity** to your project. For step-by-step instructions for using the wizard to build an entity, see [Build and consume data entities](build-consuming-data-entities.md). The following table provides information about the properties that you set for an entity in the wizard.
 
 | Property                            | Description |
 |-------------------------------------|-------------|

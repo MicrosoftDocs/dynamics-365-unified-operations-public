@@ -64,7 +64,7 @@ To notify users manually via LCS, follow these steps.
 
 ### Programmatically send a broadcast message
 
-The following sample code can be used as shown in a console application, or it can be modified to make it work with other services that can be called on demand, such as Microsoft Azure Functions. Before this sample code will work, you must set up your application registration as described in [How to authenticate custom services](../data-entities/services-home-page.md).
+The following sample code can be used as shown in a console application, or it can be modified to make it work with other services that can be called on demand, such as Microsoft Azure Functions. Before this sample code will work, you must set up your application registration as described in [Service endpoints overview](../data-entities/services-home-page.md).
 
 ```csharp
 [Serializable]
@@ -121,7 +121,7 @@ Both approaches, manual via LCS and programmatic via RESTful API calls, will sho
 
 Depending on the size of your source environment, it might make sense to begin the refresh process immediately. The larger the source database, the longer it will take to copy to your target Azure SQL Database instance. While the copy is in progress, the target environment will still be online. The downtime will start after the copy is completed.
 
-This process can be done manually via LCS. For the latest steps, see [Refresh database quickstart](database-refresh.md). In a future release of LCS, you will also be able to trigger this process via a RESTful API.
+This process can be done manually via LCS. For the latest steps, see [Refresh database](database-refresh.md). In a future release of LCS, you will also be able to trigger this process via a RESTful API.
 
 ## Reconfigure environment specific settings
 

@@ -48,16 +48,16 @@ As mentioned above, automatic counters can be updated from production registrati
 
 2. In the **From date** field, select the start date of the automatic update.
 
->[!NOTE]
->The date in this field is the "work in progress" date from **Route transactions** (**Production control** > **Inquiries and reports** > **Production** > **Route transactions** > **Physical date** field).
+    >[!NOTE]
+    >The date in this field is the "work in progress" date from **Route transactions** (**Production control** > **Inquiries and reports** > **Production** > **Route transactions** > **Physical date** field).
 
 3. On the **Records to include** FastTab, you can select specific assets, asset types, or resources for the automatic update. Select **Filter**, and make the relevant selections.
 
 4. On the **Run in the background** FastTab, you can set up the automatic update as a batch job, as you require.
 
-The illustration below shows an example of the **Update asset counters** dialog.
+    The illustration below shows an example of the **Update asset counters** dialog.
 
-![Figure 1](media/12-work-orders.png)
+    ![Figure 1](media/12-work-orders.png)
 
 5. Select **OK**. 
 

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a checkout module to a page
+title: Checkout module
 description: This topic describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a checkout module to a page 
+# Checkout module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -88,14 +88,14 @@ To add a checkout module to a new page and set the required properties, follow t
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Add a container module to a page](add-container-module.md)
+[Container module](add-container-module.md)
 
-[Add a buy box to a page](add-buy-box.md)
+[Buy box module](add-buy-box.md)
 
-[Add a cart module to a page](add-cart-module.md)
+[Cart module](add-cart-module.md)
 
-[Create an order confirmation module](order-confirmation-module.md)
+[Order confirmation module](order-confirmation-module.md)
 
-[Create a header module](author-header-module.md)
+[Header module](author-header-module.md)
 
-[Create a footer module](author-footer-module.md)
+[Footer module](author-footer-module.md)

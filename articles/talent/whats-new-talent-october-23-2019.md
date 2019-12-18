@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (October 23, 2019)
 
-[!include [banner](includes/banner.md)]
-
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
@@ -51,7 +49,7 @@ For more information, see [What's new or changed in Platform update 30 for Finan
 
 ### Remove benefits open enrollment preview feature
 
-In conjunction with our announcement in the Strategic investments in core HR drive operational excellence blog post, Microsoft is removing the benefits open enrollment feature from public preview on October 18, 2019. Instead, new functionality will be released in the future. Production use of the benefits open enrollment feature that is currently in public preview won't be supported.
+In conjunction with our announcement in the [Strategic investments in core HR drive operational excellence](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/10/02/strategic-investments-in-core-hr-drive-operational-excellence) blog post, Microsoft is removing the benefits open enrollment feature from public preview on October 18, 2019. Instead, new functionality will be released in the future. Production use of the benefits open enrollment feature that is currently in public preview won't be supported.
 
 ### Error while selecting the country/region on the Worker form a second time (350294)
 
@@ -73,7 +71,7 @@ With this week's release, adding a new list value to an existing custom field th
 
 With this release, only the selected employees' terms of employment will open in Excel. All company security is also honored.
 
-### The association between the Work calendar holiday entity and the Work calendar entity is missing in Common Data Service - (324178)
+### The association between the Work calendar holiday entity and the Work calendar entity is missing in Common Data Service (324178)
 
 This relationship has been added with the release. This change will enable working days of an employee to display in PowerApps. 
 

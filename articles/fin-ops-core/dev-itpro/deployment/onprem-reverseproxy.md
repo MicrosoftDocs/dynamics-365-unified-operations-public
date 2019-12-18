@@ -5,7 +5,7 @@ title: Configure proxies for on-premises environments
 description: This topic describes how you can secure the on-premises environment behind a proxy.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/05/2019
+ms.date: 12/09/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-You may want to secure the Dynamics 365 Finance + Operations (on-premises) environment behind a proxy. Proxy is a server that hides the actual servers serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the environment. This adds another measure of security and enables load balancing. 
+You may want to secure the Dynamics 365 Finance + Operations (on-premises) environment behind a proxy. Proxy is a server that hides the actual servers that are serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the environment. This adds another measure of security and enables load balancing. 
 
 ## Configure the proxy
 
@@ -57,4 +57,17 @@ Perform the following steps in **each** node of type **OrchestratorType** in the
 4. Save the file.
 5. Restart the virtual machine.
 
-The above procedure must be performed for all Orchestrator node VMs. 
+The above procedure must be performed for all Orchestrator node VMs.
+
+## Whitelist URLs
+
+The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be whitelisted on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
+```
+- lcsapi.lcs.dynamics.com
+- login.windows.net
+- uswelcs1lcm.queue.core.windows.net
+- www.office.com
+- login.microsoftonline.com
+- dc.services.visualstudio.com
+- uswelcs1lcm.blob.core.windows.net
+```

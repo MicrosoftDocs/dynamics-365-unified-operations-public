@@ -39,7 +39,7 @@ This topic provides an overview of the cash register functionality that is avail
 
 ### Common POS features
 
-To learn about POS features that are available to customers in all countries or regions, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+To learn about POS features that are available to customers in all countries or regions, see [Help resources for Dynamics 365 Retail](../index.md).
 
 The following POS localization features that were previously implemented and made available to customers in all countries or regions can now be used specifically for Norway:
 
@@ -118,7 +118,7 @@ The SAF-T Cash Register format is implemented at Retail Headquarters by using [E
 
 ## Setting up Retail for Norway
 
-This section describes the settings that are specific to and recommended for Norway. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the settings that are specific to and recommended for Norway. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
 
 To use the Norway-specific functionality, you must complete these tasks:
 
@@ -201,7 +201,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Total with tax (sales)** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
     - **Tax amount (sales)** – This field prints the receipt's tax amount for cash sales per tax code. Prepayments and gift card operations are excluded.
 
-For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
+For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 ### Configure the SAF-T Cash Register export format
 

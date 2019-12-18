@@ -49,7 +49,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Platform update 21
 
-Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018)](whats-new-platform-update-21.md).
+Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)](whats-new-platform-update-21.md).
 
 ## Ledger settlements
 

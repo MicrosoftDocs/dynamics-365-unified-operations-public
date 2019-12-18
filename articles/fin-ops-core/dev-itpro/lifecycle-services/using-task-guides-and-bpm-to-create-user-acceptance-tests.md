@@ -1,7 +1,7 @@
 ---
 title: Create and automate user acceptance tests
 description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
-author: kfend
+author: robadawy
 manager: AnnBe
 ms.date: 10/02/2018
 ms.topic: article
@@ -22,7 +22,7 @@ ms.custom: 13301
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ntecklu
+ms.author: robadawy
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 
@@ -33,23 +33,19 @@ ms.dyn365.ops.version: 2012
 [!include [banner](../includes/banner.md)]
 
 You can use Task recorder and Business process modeler (BPM) to create user acceptance test libraries. Task recorder is a powerful tool to record test cases and organize them by business process using BPM. As a Microsoft partner you can use BPM to distribute test libraries to your customers via LCS and LCS solutions. If you are a customer, use BPM to author and distribute test libraries across different projects and team.
-Since BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results.  
+
+Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results.  
 
 This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
-
-
-
-
-
 
 
 ## Create a Scenario Acceptance Testing BPM library
 BPM is a great LCS tool to describe a hierarchy of business processes and user tasks. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
 
 ### Create a BPM library
-There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse BPM libraries](creating-editing-browsing.md).
+There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse Business process modeler (BPM) libraries](creating-editing-browsing.md).
 
-For illustration purposes, this topic uses a library that contains common business processes such as Create expense report and Approve order requests. The library was created by using the Excel import functionality.  
+For illustration purposes, this topic uses a library that contains common business processes, such as create an expense report and approve order requests. The library was created by using the Excel import functionality.  
 
 ![Import from Excel](./media/import-from-excel.PNG "Import from Excel")
 
@@ -64,14 +60,14 @@ If you're using a BPM library that already has all of the necessary task recordi
 2. Select the company that you want to use while recording.
 3. Go to **Settings** > **Task recorder**.
 
-![Select Task recorder](./media/select_task_recorder.PNG "Select Task recorder")
+    ![Select Task recorder](./media/select_task_recorder.PNG "Select Task recorder")
 
 4. Click **Create a new recording**.
 5. Enter a name for the recording, and then click **Start**. Recording begins the moment that you click **Start**.
 6. When the recording is complete, in the Task recorder pane, click **Stop**.
 7. To save the task recording to an attached BPM, click **Save to Lifecycle Services**.
 
-![Task recorder options](./media/task_recorder_options.PNG "Task recorder options")
+    ![Task recorder options](./media/task_recorder_options.PNG "Task recorder options")
 
 8. Select the library that you want to save the recording to, and then click **Save**. Otherwise, select **Save to Disk** and follow the steps in the next section, "Upload an AXTR file to BPM."
 
@@ -86,11 +82,11 @@ If you have saved your recordings (AXTR files) to disk, follow these steps to up
 2. Click **Author and edit** and in the lines, locate and select the process to upload the task recording to.
 3. In the right pane, click **Upload**. 
 
-![Upload AXTR 1](./media/upload_axtr_1.PNG "Upload AXTR 1")
+    ![Upload AXTR 1](./media/upload_axtr_1.PNG "Upload AXTR 1")
 
 4. Click **Browse** to find and select the file to upload, and then click **Upload**.
 
-![Upload AXTR 2](./media/upload_axtr_2.PNG "Upload AXTR 2")
+    ![Upload AXTR 2](./media/upload_axtr_2.PNG "Upload AXTR 2")
 
 #### Save an existing task recording to BPM
 1. To attach an existing task recording, sign in to the client.
@@ -116,24 +112,24 @@ An acceptance test library is your starting point. It typically contains all tes
 Once you have selected your acceptance testing BPM library, synchronize it with Azure DevOps and create your test plan and test suites.
 
 ### Sync with Azure DevOps
-Synchronize your BPM library with your Azure DevOps project. For more information, see [Configure your LCS project and connect to LCS](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops). 
+Synchronize your BPM library with your Azure DevOps project. For more information, see [Synchronize BPM libraries with Azure DevOps](synchronize-bpm-vsts.md#configure-your-lcs-project-to-connect-to-azure-devops). 
 
 After configuration is complete, synchronize the BPM library with a Azure DevOps project.
 1. On the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
+    ![VSTS Sync1](./media/vsts_sync_1.png "VSTS Sync1")
 
 You can also start Azure DevOps synchronization from the toolbar in a BPM library. Select the ellipsis button (…), and then select **Azure DevOps sync**.
 
-![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
+    ![VSTS Sync2](./media/vsts_sync_2.png "VSTS Sync2")
 
 2. After Azure DevOps synchronization is complete, select the ellipsis button (…), and then select **Sync test cases**.
 
-![Sync test cases](./media/sync_test_case.PNG "Sync test cases")
+    ![Sync test cases](./media/sync_test_case.PNG "Sync test cases")
 
 3. When this step is complete, your task recordings will become test cases in Azure DevOps and a link will appear under the **Requirements** tab. 
 
-![View test case](./media/view_test_case.PNG "View test case")
+    ![View test case](./media/view_test_case.PNG "View test case")
 
 
 In addition to the test steps, the task recording XML file is attached to the Azure DevOps test case. This file will be needed if you want to automate test execution. 
@@ -148,11 +144,11 @@ Next, you will need to create a test plan and test suite in Azure DevOps. This w
 5. Click **Add existing** and query the tag **LCS:Test Cases**.
 6. Click **Run** > **Add test cases**.
 
-![Add test cases](./media/add_test_cases.PNG "Add test cases")
+    ![Add test cases](./media/add_test_cases.PNG "Add test cases")
  
 7. Select the test case to view details and the attached XML file.   
 
-![Test case details](./media/test_case_details.PNG "Test case details")
+    ![Test case details](./media/test_case_details.PNG "Test case details")
 
  >[!NOTE]
  > This example shows how to create one comprehensive acceptance test suite with all test cases added. Instead, you should create various test suites under the same test plan and then use custom queries to add specific test cases to a test suite. A test case can belong to more than one test suite.
@@ -174,18 +170,18 @@ The platform for Finance and Operations provides developers with tools to author
 
 Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md).
 
-Functional power users can automate the execution of their test cases using the **Regression suite automation tool**. For more information, [download the tool](https://www.microsoft.com/download/details.aspx?id=57357) and read the [Regression suite automation tool documentation](../perf-test/rsat/rsat-overview.md).
+Functional power users can automate the execution of their test cases using the **Regression suite automation tool**. For more information, [download the tool](https://www.microsoft.com/download/details.aspx?id=57357) and read the [Regression suite automation tool](../perf-test/rsat/rsat-overview.md).
 
 To learn more about using the Regression suite automation tool, see the following:
 
-- [-	PART 1: Regression Suite Automation Tool -- Background & Setup](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [-	PART 2: Regression Suite Automation Tool -- Testing Lifecycle Demo](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
--  [Regression suite automation tool documentation](../perf-test/rsat/rsat-overview.md)
+- [PART 1: Regression Suite Automation Tool -- Background & Setup](https://infopedia.eventbuilder.com/event?eventid=j5m3w4&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [PART 2: Regression Suite Automation Tool -- Testing Lifecycle Demo](https://infopedia.eventbuilder.com/event?eventid=r5j6c1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Regression suite automation tool](../perf-test/rsat/rsat-overview.md)
  
 For a hands-on lab experience, see the following topics:
 
-- [Set up and install Regression suite automation tool](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
-- [Use Regression suite automation tool](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
+- [Set up and install Regression suite automation tool tutorial](../../fin-ops/get-started/hol-set-up-regression-suite-automation-tool.md)
+- [Use the Regression suite automation tool tutorial](../../fin-ops/get-started/hol-use-regression-suite-automation-tool.md)
 
 #### Investigate test runs
 Once an automated run is complete, on the Azure DevOps toolbar, select **Test > Runs** (or **Test Plans > Runs**) to investigate your test run. Select the desired test run to investigate test case failures and errors. You can also go to your test suite in Azure DevOps to see the latest results associated with your test cases.

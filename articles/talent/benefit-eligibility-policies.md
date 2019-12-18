@@ -32,8 +32,6 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 # Benefit eligibility policies
 
-[!include [banner](includes/banner.md)]
-
 This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
 
 When you create benefits, you decide which benefits will be available to which employees. The following table shows examples of benefits that you might make available to specific employees.
@@ -56,7 +54,7 @@ You define the scope of the rule within the policy. For example, if you create a
 Additional resources
 --------
 
-[Defining and managing a benefit program](manage-benefit-program.md)
+[Define and manage a benefits program](manage-benefit-program.md)
 
 
 

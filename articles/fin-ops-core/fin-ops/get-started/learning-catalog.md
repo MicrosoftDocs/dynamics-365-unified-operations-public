@@ -67,7 +67,7 @@ Find the right online training, in person workshops, and events for your role as
 
     ### Developers
 
-    Do you need to write code to integrate with other data sources,extend core system functionality, or build a complex application?
+    Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
     [Developer Learning Catalog](learning-catalog-developer.md)
 

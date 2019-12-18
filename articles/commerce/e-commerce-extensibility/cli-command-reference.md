@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -74,7 +74,7 @@ This command adds a module to the root/src/modules folder.
 **Example**
 
 ``` bash
-yarn msdyb365 add-module campaignBanner
+yarn msdyn365 add-module campaignBanner
 ```
 
 ## clone
@@ -82,7 +82,7 @@ yarn msdyb365 add-module campaignBanner
 **Usage**
 
 ``` bash
-yarn d365 clone <starter-kit-module-name> <new-module-name>
+yarn msdyn365 clone <starter-kit-module-name> <new-module-name>
 ```
 
 This command creates a renamed copy of a starter kit module and adds the source code to the local root/src/modules folder.

@@ -105,8 +105,8 @@ No. When you depreciate a fixed asset by using the equally divided depreciation 
 No. If you selected an equally divided depreciation profile on the **Books** page, you can't change the value in the **Number of years to equally divide depreciation amounts** field on the **Depreciation profiles** page for the depreciation profile.
 
 ## Additional resources
-- [Fixed asset depreciation FAQ](apac-jpn-fixed-asset-depreciation.md)
-- [Create lump-sum depreciation assets using equally-divided method](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
+- [Fixed asset depreciation for Japan FAQ](apac-jpn-fixed-asset-depreciation.md)
+- [Create lump-sum depreciation assets using equally divided method](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 
 
 

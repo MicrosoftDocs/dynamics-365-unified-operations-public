@@ -38,7 +38,7 @@ This article lists the new or updated Task guides that were released to the Micr
 
 ## Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX
 
-The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).
+The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release. Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library. For more information about how to connect the Help system to a Task guide library, see [Help system](help-overview.md).
 
 > [!NOTE]
 > An asterisk (\*) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.
@@ -195,8 +195,8 @@ The (May 2016) APQC Unified Library contains the Task guides that are intended t
 
 ## Additional resources
 
-[New Task guides (February 2016)](new-task-guides-available-february-2016.md)
+[New task guides (February 2016)](new-task-guides-available-february-2016.md)
 
-[New or updated Task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
+[New or updated task guides (August 2016)](new-updated-task-guides-available-august-2016.md)
 
-[New or updated Task guides (November 2016)](new-task-guides-november-2016.md)
+[New or updated task guides (November 2016)](new-task-guides-november-2016.md)

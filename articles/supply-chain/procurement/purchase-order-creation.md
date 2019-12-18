@@ -94,11 +94,11 @@ Additional resources
 
 [Purchase order overview](purchase-order-overview.md)
 
-[Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+[Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 
-[Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+[Vendor invoices overview](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

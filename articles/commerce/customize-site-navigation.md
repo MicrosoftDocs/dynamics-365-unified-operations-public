@@ -5,10 +5,10 @@ title: Customize site navigation
 description: This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -111,3 +111,5 @@ To add custom navigation options to your navigation menu, follow these steps.
 [Work with modules](work-with-modules.md)
 
 [Create a page URL](create-page-url.md)
+
+[Work with publish groups](publish-groups.md)

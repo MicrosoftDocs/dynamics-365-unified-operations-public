@@ -604,6 +604,6 @@ You can divide the amount in a column by a specified number of periods. For exam
 
 ## Additional resources
 
-[Row definitions in financial reporting](row-definitions-financial-reporting.md)
+[Row definitions in financial report designer](row-definitions-financial-reporting.md)
 
 [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md)

@@ -97,7 +97,7 @@ The third option is to use consolidation account groups. You can define as many 
 ![Mapping on the Additional consolidation accounts page](./media/additional-consolidation-accounts.png "Mapping on the Additional consolidation accounts page")
 
 ## Consolidating online
-To learn how to enter details of consolidations online, see [Consolidate online](./consolidate-online.md).
+To learn how to enter details of consolidations online, see [Online financial consolidations](./consolidate-online.md).
 
 ## Managing consolidation transactions
 To view the results of the consolidation, you have multiple options:

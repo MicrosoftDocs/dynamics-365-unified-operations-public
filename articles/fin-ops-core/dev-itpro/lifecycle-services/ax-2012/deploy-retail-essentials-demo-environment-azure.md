@@ -41,7 +41,7 @@ Before you complete the procedures in this article, make sure that the following
 
 | Category       | Prerequisite                                                                                                                                            |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX deployment on Azure](plan-2012-r3-deployment-azure.md) |
+| Required tasks | [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services provides a cloud-based collaborative workspace that customers and partners can use to manage Microsoft Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials. [Log on to Lifecycle Services](https://lcs.dynamics.com/)
@@ -106,21 +106,21 @@ Complete the following procedure to deploy a Retail essentials demo environment 
     <tr class="odd">
     <td>Create a new virtual network in Azure for the environment</td>
     <td><ol>
-    <li>Click <strong><span class="label">New virtual network</span></strong>.</li>
+    <li>Click <strong>New virtual network</strong>.</li>
     <li>Enter a name for the virtual network.</li>
     </ol></td>
     </tr>
     <tr class="even">
     <td>Add the environment to an existing virtual network in Azure</td>
     <td><ol>
-    <li>Click <strong><span class="label">Existing virtual network</span></strong>.</li>
-    <li>Select the name of the existing virtual network that you want to use. The <span class="label"><strong>Application subnet</strong> <strong>name</strong></span> and <strong><span class="label">Address space</span></strong> fields will automatically display the appropriate information based on the virtual network that you selected. If you want to verify the information in these fields, do this:
+    <li>Click <strong>Existing virtual network</strong>.</li>
+    <li>Select the name of the existing virtual network that you want to use. The <strong>Application subnet name</strong> and <strong>Address space</strong> fields will automatically display the appropriate information based on the virtual network that you selected. If you want to verify the information in these fields, do this:
     <ol>
     <li>Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</li>
-    <li>In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</li>
+    <li>In the navigation pane on the left, click <strong>Virtual networks</strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
-    <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
-    <li>Click <strong><span class="label">Done</span></strong>. The <strong><span class="label">Deploy environment</span></strong> panel is redisplayed.</li>
+    <li>Click <strong>Configure</strong>. Details about the virtual network are listed on the page.</li>
+    <li>Click <strong>Done</strong>. The <strong>Deploy environment</strong> panel is redisplayed.</li>
     <li>The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.</li>
     </ol></li>
     </ol></td>
@@ -128,7 +128,7 @@ Complete the following procedure to deploy a Retail essentials demo environment 
     </tbody>
     </table>
 
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX deployment on Azure](plan-2012-r3-deployment-azure.md).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 8.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.

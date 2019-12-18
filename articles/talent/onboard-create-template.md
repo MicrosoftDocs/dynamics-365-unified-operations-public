@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create an onboarding template by using Dynamics 365 Talent - Onboard
+# Create an onboarding template
 
 [!include [banner](includes/banner.md)]
 
@@ -65,6 +65,6 @@ Microsoft Dynamics 365 Talent: Onboard provides various templates that can help 
 ### See also
 
 - [Try or buy the Onboard app](https://dynamics.microsoft.com/talent/onboard/)
-- [What's new](./whats-new.md)
-- [Release notes](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Get support](./talent-support.md)
+- [What's new or changed in Dynamics 365 Talent](./whats-new.md)
+- [Release plans](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Get support for Microsoft Dynamics 365 Talent](./talent-support.md)

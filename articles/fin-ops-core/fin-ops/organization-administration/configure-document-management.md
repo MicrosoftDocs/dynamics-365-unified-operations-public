@@ -5,7 +5,7 @@ title: Configure document management
 description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 10/08/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -98,9 +98,13 @@ The attachments preview uses the Web app Open Platform Interface (WOPI) that is 
 
 ### For a Microsoft Dynamics 365 Finance + Operations (on-premises) environment
 
-The defaul cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
+The default cloud-based WOPI server in Finance + Operations can't read the attachment file to provide a preview. If previews are required, you must [install an on-premises Office Online Server instance](https://technet.microsoft.com/library/jj219455.aspx) and configure it inside the environment. Set the **Office Web Apps Server** field to the host name of the installed Office Online Server instance, and then click **Save**.
 
 If previews aren't required, set the **Office Web Apps Server** field to `https://localhost`. The preview will then show the message "No preview available" instead of an error message.
+
+### Document preview (WOPI) will not work in environments with IP whitelisting enabled
+
+Document preview (WOPI) will not work in environments with IP whitelisting enabled, because the WOPI service that provides the preview will not be able to connect back to the file service to retrieve the file for rendering.
 
 ## Other configuration
 
@@ -149,7 +153,7 @@ There is no difference between document handling and document management. Both t
 
 Document management lets you add notes, documents, and other files to records.
 
-Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services overview](../../dev-itpro/analytics/document-reporting-services.md).
+Print management lets you control print settings for selected reports. Print settings include the number of copies, the printer destination, and the multilanguage text that can be included on the report. For more information, see [Document Reporting Services](../../dev-itpro/analytics/document-reporting-services.md).
 
 ### What is the difference between document types and file types?
 
@@ -161,7 +165,7 @@ File types include Microsoft Word documents and images. A file type is denoted b
 
 Yes. SharePoint storage is supported natively and can be selected as the storage location for a document type. In addition, any URL addressable file can be made an attachment via the **URL** document type.
 
-### How does the default storage location for Document Management change in Finnce + Operations environments?
+### How does the default storage location for Document Management change in Finance + Operations environments?
 
 For Finance + Operations, the Azure Blob storage provider for attachments is replaced by a file folder storage provider so that attachments are kept on-premise instead of being stored in the cloud. Therefore, the default storage location for attachments is a file folder.
 

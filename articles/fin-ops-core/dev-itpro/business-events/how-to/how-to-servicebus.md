@@ -5,7 +5,7 @@ title: Business events and Azure Service Bus
 description: This topic explains how to configure a Microsft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 author: ibenbouzid
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -77,6 +77,9 @@ Here is an overview of the procedures that you must complete:
 4. Select the new **Send** policy, and then copy and save the **Primary Connection String** value. You will use this value later.
 
     <img alt="Service Bus connection string" src="../../media/BEF-Howto-servicebus-06.png" width="70%">
+
+  > [!NOTE]
+  > The shared access policy must be at the name space level and not at the topic level. If the shared access policy from the topic level is used, the trailing string with semi colon EntityPath= must not be included when configuring the endpoint for business events.
 
 ## Create a new key vault
 

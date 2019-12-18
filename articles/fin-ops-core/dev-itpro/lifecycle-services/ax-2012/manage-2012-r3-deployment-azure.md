@@ -90,7 +90,7 @@ You can add (or remove) virtual machines to AX 2012 R3 environments that you’v
 4.  Select the environment to which you want to add virtual machines.
 5.  Click the Edit (pencil) icon near the top of the page.
 6.  Indicate how many virtual machines you want to add to the environment. Then specify the size of those virtual machines.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
     -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
 
 7.  Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
@@ -151,14 +151,15 @@ Complete the following procedure to identify the Azure storage account that is a
 
 1. Log on to the [Azure management portal](https://manage.windowsazure.com/).
 2. In the navigation pane on the left, click **Virtual Machines**. The **Virtual machines** page is displayed.
-3. Use the information in the <strong>Name</strong> and <strong>Location</strong> columns to identify a virtual machine that is associated with an AX 2012 R3 environment in the project. There may be multiple virtual machines associated with the project; however, you just need to select one. <strong>Note: **To make sure that you’ve identified an appropriate virtual machine, compare the name that you see on this page with the name of the virtual machine that is listed on the **Cloud-hosted environments</strong> page in [Lifecycle Services](https://lcs.dynamics.com/en/).
+3. Use the information in the <strong>Name</strong> and <strong>Location</strong> columns to identify a virtual machine that is associated with an AX 2012 R3 environment in the project. There may be multiple virtual machines associated with the project; however, you just need to select one. 
+
+    > [!NOTE]
+    > To make sure that you’ve identified an appropriate virtual machine, compare the name that you see on this page with the name of the virtual machine that is listed on the **Cloud-hosted environments** page in [Lifecycle Services](https://lcs.dynamics.com/en/).
+    
 4. Click the arrow next to the name of the virtual machine.
 5. Click **Dashboard** at the top of the page.
 6. Scroll down to the **Disks** section of the page.
-7. View the information in the <strong>VHD</strong> column. Take note of the GUID. This GUID will help you identify other related artifacts. A URL may look similar to this: 
-
-```https://dyn&lt;GUID&gt;.blob.core.windows.net/dynamicsdeployments... 
-```
+7. View the information in the <strong>VHD</strong> column. Take note of the GUID. This GUID will help you identify other related artifacts. A URL may look similar to this: `https://dyn&lt;GUID&gt;.blob.core.windows.net/dynamicsdeployments...`
 
 ### 2. Delete the environments in the project
 
@@ -166,7 +167,10 @@ Delete the AX 2012 R3 environments that exist in the project. For instructions, 
 
 ### 3. Delete the image files that were used to create virtual machines
 
-Complete the following procedure to delete image files. These image files were used to create the virtual machines for the AX 2012 R3 environments in the Lifecycle Services project. **Note: **If AX 2012 R3 demo environments were the only type of environments deployed from this project, there may be no image files to delete.
+Complete the following procedure to delete image files. These image files were used to create the virtual machines for the AX 2012 R3 environments in the Lifecycle Services project. 
+
+> [!NOTE]
+> If AX 2012 R3 demo environments were the only type of environments deployed from this project, there may be no image files to delete.
 
 1.  Log on to the [Azure management portal](https://manage.windowsazure.com/).
 2.  In the navigation pane on the left, click **Virtual Machines**. The **Virtual machines** page is displayed.
@@ -230,7 +234,11 @@ Complete the following procedure to delete the management certificate that is as
 Complete the following procedure to delete the Lifecycle Services project.
 
 1.  Log on to [Lifecycle Services](https://lcs.dynamics.com/en/).
-2.  Click **All projects**. The **Project** list page is displayed. **Note:** If you only have one project, that project opens. Click the Back icon in Lifecycle Services to display the **Project** list page.
+2.  Click **All projects**. The **Project** list page is displayed. 
+
+    > [!NOTE]
+    > If you only have one project, that project opens. Click the Back icon in Lifecycle Services to display the **Project** list page.
+
 3.  Select the row for the project that you want to delete.
 4.  Click **Remove** at the bottom of the page.
 

@@ -5,10 +5,10 @@ title: Add script code to site pages to support telemetry
 description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -64,8 +64,17 @@ After you create a fragment for your script code, it can be reused across all pa
 
 ## Additional resources
 
-[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+[Add a logo](add-logo.md)
 
-[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+[Select a site theme](select-site-theme.md)
 
-[Manage Content Security Policy (CSP)](manage-csp.md)
+[Work with CSS override files](css-override-files.md)
+
+[Add a favicon](add-favicon.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
+

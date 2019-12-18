@@ -76,7 +76,7 @@ Additional resources
 
 [Straight line service life depreciation](Straight-line-service-life-depreciation.md)
 
-[Reducing balance depreciation](reduce-balance-depreciation.md)
+[Reduce balance depreciation](reduce-balance-depreciation.md)
 
 [Manual depreciation](manual-depreciation.md)
 

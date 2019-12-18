@@ -239,6 +239,6 @@ This task walks through all necessary steps to configure the generation of elect
 
 ## Additional resources
 
-- [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
+- [CFDI layout version 3.3](latam-mex-cfdi-3-3.md)
 
 

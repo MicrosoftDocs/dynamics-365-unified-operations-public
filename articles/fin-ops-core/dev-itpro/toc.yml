@@ -2,11 +2,15 @@
   items:
   - name: Development and administration for Finance and Operations apps
     items:
+    - name: Finance and Operations application documentation
+      href: ../fin-ops/index.md
     - name: Development and administration for Finance and Operations apps
       href: index.md
     - name: What's new or changed
       items:
-      - name: Preview features in Platform update 31 (January 2020)
+      - name: Preview features in Platform update 32 (February 2020)
+        href: get-started/whats-new-platform-update-32.md
+      - name: Platform update 31 (January 2020)
         href: get-started/whats-new-platform-update-31.md
       - name: Platform update 30 (November 2019)
         href: ../fin-ops/get-started/whats-new-platform-update-30.md
@@ -31,7 +35,11 @@
       - name: Platform update 20 (September 2018)
         href: ../fin-ops/get-started/whats-new-platform-update-20.md
       - name: Platform update 15 (March 2018)
-        href: ../fin-ops/get-started/whats-new-platform-update-15.md    
+        href: ../fin-ops/get-started/whats-new-platform-update-15.md  
+      - name: What's new or changed in previous versions
+        items:
+        - name: What's new or changed in Finance and Operations home page
+          href: ../fin-ops/get-started/whats-new-changed.md
     - name: Business events
       items:
       - name: Business events overview
@@ -128,16 +136,28 @@
               href: data-entities/dual-write-overview.md
             - name: Organization hierarchy on Common Data Service
               href: data-entities/dual-write-organization.md
-            - name: Company concept in Common Data Services
-              href: data-entities/dual-write-company.md
-            - name: Integrated Customer Master
+            - name: Company integration
+              items:
+              - name: Company concept in Common Data Services
+                href: data-entities/dual-write-company.md
+              - name: Bootstrap with company data
+                href: data-entities/dual-write-bootstrap.md
+            - name: Integrated customer master
               href: data-entities/dual-write-customer.md
+            - name: Integrated ledger
+              href: data-entities/dual-write-ledger.md            
             - name: Unified product experience
               href: data-entities/dual-write-product.md
-            - name: Integrated Vendor Master
-              href: data-entities/dual-write-vendor.md
+            - name: Vendor integration
+              items:
+              - name: Integrated vendor master
+                href: data-entities/dual-write-vendor.md
+              - name: Switch between vendor designs
+                href: data-entities/dual-write-vendor-switch.md
             - name: Integrated sites and warehouses
               href: data-entities/dual-write-sites-and-warehouses.md
+            - name: Integrated tax master
+              href: data-entities/dual-write-tax.md
             - name: Initial synchronization
               href: data-entities/dual-write-initial.md
             - name: Troubleshooting data integration
@@ -396,7 +416,7 @@
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: PowerBI.com integration with on-premises environments
           href: analytics/entity-store-on-prem.md
-        - name: Configure reverse proxies for on-premises environments
+        - name: Configure proxies for on-premises environments
           href: deployment/onprem-reverseproxy.md
         - name: Apply updates to an on-premises deployment
           href: deployment/apply-updates-on-premises.md
@@ -418,6 +438,8 @@
           href: user-interface/client-disconnected.md
         - name: Troubleshoot on-premises deployments
           href: deployment/troubleshoot-on-prem.md
+        - name: Scripts for resolving issues in on-premises environments
+          href: deployment/onprem-tsg-implementations.md
         - name: Certificate rotation
           href: deployment/certificate-rotation-on-prem.md
       - name: Deploy custom code
@@ -910,6 +932,8 @@
           href: lifecycle-services/whats-new-lcs.md
         - name: Known issues
           href: lifecycle-services/known-issues.md
+        - name: Removed or deprecated features in Lifecycle Services (LCS)
+          href: lifecycle-services/removed-deprecated-features.md
       - name: Lifecycle Services user guide
         href: lifecycle-services/lcs-user-guide.md
       - name: Subscription estimator

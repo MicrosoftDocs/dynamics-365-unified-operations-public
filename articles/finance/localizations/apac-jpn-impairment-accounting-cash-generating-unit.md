@@ -59,6 +59,6 @@ After the recognition test and measurement of the impairment amount, the user ca
 The user can use the **Impairment reports and transactions** inquiry pages to retrieve detailed information about the impairment transactions. Specific operations are required after an impairment is posted, such as adjustment on the corporate tax declaration. The user will have to manually calculate and post these operations.
 
 ## Additional resources
-- [Impairment accounting for fixed assets](apac-jpn-impairment-accounting-fixed-assets.md)
+- [Impairment accounting for fixed assets for Japan](apac-jpn-impairment-accounting-fixed-assets.md)
 - [Propose and post the impairment amount on a cash generating unit](./tasks/propose-post-impairment-amount-cash-generating-unit.md)
 

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Authoring home page overview
-description: This topic provides an overview of the authoring home page in Microsoft Dynamics 365 Commerce.
+title: Authoring page overview
+description: This topic provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
 author: brendans
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,36 +28,36 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Authoring home page overview
+# Authoring page overview
 
  [!include [banner](includes/preview-banner.md)] 
  [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the authoring home page in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
 Websites can be created to support various business needs. They can represent a whole business, offer a single channel of the business, or target a specific audience or segment of an audience. For example, a clothing manufacturer might have a website that showcases all the brands that it owns. The same clothing manufacturer might then have a separate website for each of those brands, and also a set of websites that feature luxury fashion, outdoor fashion, and children's fashion.
 
-Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content. The authoring home page serves as a common access point for these websites. You can use it to sign in to and out of the system, and to create new websites.
+Dynamics 365 Commerce supports the creation and management of multiple websites, and each website can have its own appearance and content. The authoring page serves as a common access point for these websites. You can use it to sign in to and out of the system, and to create new websites.
 
-Currently, the authoring home page consists of the following sections.
+Currently, the authoring page consists of the following sections.
 
-- **Top bar** – The top bar appears at the top of the authoring home page. It provides easy access to e-Commerce tools, notifications, support links, and user sign-in.
+- **Top bar** – The top bar appears at the top of the authoring page. It provides easy access to e-Commerce tools, notifications, support links, and user sign-in.
 - **Command bar** – The command bar appears below the top bar. It can be used to create new websites.
 - **Site list** – The site list fills all the space below the command bar. It provides a comprehensive list of websites and the domains that are associated with them.
 
-The following illustration shows the authoring home page.
+The following illustration shows the authoring page.
 
-![Dynamics 365 Commerce authoring home page](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce authoring page](../commerce/media/authoring_tools_01.png)
 
 ## Use the Home button to select a tool
 
-The **Home** button is in the upper-left corner of the authoring home page. It provides easy access to other e-Commerce tools. When you select this button, a menu of the tools that you can use is opened. When you select a tool, the menu is closed, and the selected tool is loaded in the browser.
+The **Home** button is in the upper-left corner of the authoring page. It provides easy access to other e-Commerce tools. When you select this button, a menu of the tools that you can use is opened. When you select a tool, the menu is closed, and the selected tool is loaded in the browser.
 
 ## View and clear notifications
 
-The **Notifications** button is one of the buttons in the upper-right corner of the authoring home page. It looks like a bell. By selecting this button, you can view all the notifications that have been sent to you.
+The **Notifications** button is one of the buttons in the upper-right corner of the authoring page. It looks like a bell. By selecting this button, you can view all the notifications that have been sent to you.
 
 Notifications are used throughout the authoring tool to inform you when actions have been completed. For example, a notification might state, "Your page has been published" to inform you that a publish action was successful.
 
@@ -67,7 +67,7 @@ You can clear notifications from the notification menu by selecting **Remove** a
 
 ## Get help with the authoring tool
 
-The **Help** button is another button in the upper-right corner of the authoring home page. It looks like a question mark. When you select this button, a menu of the following predefined options is opened:
+The **Help** button is another button in the upper-right corner of the authoring page. It looks like a question mark. When you select this button, a menu of the following predefined options is opened:
 
 - **Site development help** – If you select this option, the documentation for creating a new website is opened on a new browser tab.
 - **Feedback and support** – Select this option to open a Microsoft Yammer channel where you can leave feedback about the authoring tool or request support.
@@ -76,7 +76,7 @@ The **Help** button is another button in the upper-right corner of the authoring
 
 ## Sign in to and out of the authoring tool
 
-The **My account** button is another button in the upper-right corner of the authoring home page. It looks like a colored circle. By selecting this button, you can see which account you used to sign in, and you can also sign out of that account as you require.
+The **My account** button is another button in the upper-right corner of the authoring page. It looks like a colored circle. By selecting this button, you can see which account you used to sign in, and you can also sign out of that account as you require.
 
 To sign in to or out of the authoring tool, follow one of these steps.
 
@@ -117,4 +117,12 @@ To create a new website, follow these steps.
 
 The site list provides a comprehensive list of the websites that are associated with the e-Commerce system. Websites appear in alphabetical order. The domain that is associated with each website is also shown. To view the contents of a website and start to author pages, select the name of the website. The authoring tool and the content for the website are loaded.
 
-After the authoring tool is loaded, you can select **Home** to return to the authoring home page.
+After the authoring tool is loaded, you can select **Home** to return to the authoring page.
+
+## Additional resources
+
+[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)

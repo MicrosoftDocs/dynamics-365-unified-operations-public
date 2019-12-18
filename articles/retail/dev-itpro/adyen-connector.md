@@ -119,6 +119,7 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware Version | Maximum Adyen Firmware Version |
 | --- | --- |
 | adyen_v1_38p5 | adyen_v1_45p3 |
+
 ---
 
 ### Supported payment terminals

@@ -778,9 +778,9 @@ When these data sources are defined, you can use an expression such as <strong>F
 
 ### Functions list extension
 
-ER lets you extend the list of functions that are used in ER expressions. Some engineering effort is required. For detailed information, see [Extending the list of Electronic reporting functions](general-electronic-reporting-formulas-list-extension.md).
+ER lets you extend the list of functions that are used in ER expressions. Some engineering effort is required. For detailed information, see [Extend the list of Electronic reporting (ER) functions](general-electronic-reporting-formulas-list-extension.md).
 
 ## Additional resources
 
-- [Electronic Reporting overview](general-electronic-reporting.md)
+- [Electronic Reporting (ER) overview](general-electronic-reporting.md)
 - [Extend the list of Electronic reporting (ER) functions](general-electronic-reporting-formulas-list-extension.md)

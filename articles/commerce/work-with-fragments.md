@@ -5,10 +5,10 @@ title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -130,3 +130,5 @@ You can also edit a fragment by selecting it on a page, in a template, or in a p
 [Work with templates](work-with-templates.md)
 
 [Work with preset layouts](work-with-layouts.md)
+
+[Work with publish groups](publish-groups.md)

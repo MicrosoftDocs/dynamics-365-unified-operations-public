@@ -5,7 +5,7 @@ title: Sign MPOS with a code signing certificate
 description: This topic explains how to sign MPOS with a code signing certificate.
 author: mugunthanm
 manager: AnnBe
-ms.date: 09/26/2019
+ms.date: 11/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Sign MPOS with a code signing certificate
+# Sign MPOS appx with a code signing certificate
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,7 +39,7 @@ To install Modern POS (MPOS) you must sign the MPOS app with a signing certifica
 - Add the Secure file task part of Azure DevOps build steps and upload the certificate to secure the file task. Use the secure file task output path variable as a parameter in the Customization.settings file.
 
     > [!NOTE] 
-    > The Secure File task doesn’t support a password protected certificate. You must remove the password before uploading this task. Because the certificate is uploaded to the secure file system task in Azure, you can remove the password only for this step. However, you should discuss removing the password with your security experts to determine if this is the correct action for your project. The certificate uploaded to the build task can be accessed only by the build pipeline during build flow and no other process can access it. Using the Secure File task, the additional layer of password security is not required, however this is only during the build signing process. Don’t remove the certificate password for other scenarios.
+    > The Secure File task doesn’t support a password protected certificate. You must remove the password before uploading this task. Because the certificate is uploaded to the secure file system task in Azure, you can remove the password only for this step. However, you should discuss removing the password with your security experts to determine if this is the correct action for your project. Don’t remove the certificate password for other scenarios.
 - Use a certificate that is in the file system. To do this, download or generate a certificate and place it in the file system where the build is running. The Visual Studio Online agent or build user should have access to this path and file.
 - Use thumbprint to look up in the certificate in the store and sign in with that certificate.
 
@@ -48,6 +48,9 @@ To install Modern POS (MPOS) you must sign the MPOS app with a signing certifica
 Using a Secure File task is the recommended approach for Universal Windows Platform (UWP) app signing. For more information about package signing, see [Configure package signing](https://docs.microsoft.com/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). This process is shown in the following image.
 
 ![MPOS app signing flow](media/POSSigningFlow.png)
+
+> [!NOTE] 
+> Currently the OOB packaging supports signing only the appx file, the different self-service installers like MPOIS, RSSU, and HWS are not signed by this process. You need to manually sign it using SignTool or other signing tools.
 
 ## Steps to configure the certificate for signing
 

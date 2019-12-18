@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create a header module
+title: Header module
 description: This topic covers header modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Create a header module
+# Header module
 
-[!include [banner]includes/preview-banner.md)]
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers header modules and describes how to create them in Microsoft Dynamics 365 Commerce.
@@ -80,14 +80,16 @@ To help guarantee that a header appears on every page, follow these steps on eve
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Add a container module to a page](add-container-module.md)
+[Container module](add-container-module.md)
 
-[Add a buy box to a page](add-buy-box.md)
+[Buy box module](add-buy-box.md)
 
-[Add a cart module to a page](add-cart-module.md)
+[Cart module](add-cart-module.md)
 
-[Add a checkout module to a page](add-checkout-module.md)
+[Checkout module](add-checkout-module.md)
 
-[Create an order confirmation module](order-confirmation-module.md)
+[Order confirmation module](order-confirmation-module.md)
 
-[Create a footer module](author-footer-module.md)
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

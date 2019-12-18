@@ -38,15 +38,15 @@ ms.dyn365.ops.version: 10.0.5
 
 You can make a calculation for a specific item to get an overview of where in Asset Management the item has been used. The results show the context in which the item has been used during its lifetime. The **Item where used** page can be opened from the main Asset Management menu, and it can also be accessed from the following pages:
 
-- [Asset BOM](../objects/object-BOM.md)
+- [Asset BOMs](../objects/object-BOM.md)
 
-- [Spare parts on asset type defaults](../setup-for-objects/object-types.md)
+- [Spare parts on asset type defaults](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [Item forecast on Maintenance job type defaults forecast](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Work order maintenance forecast](../work-orders/maintenance-forecasts.md)
+- [Maintenance forecast](../work-orders/maintenance-forecasts.md)
 
-- [Work order purchase requisition](../work-orders/procurement.md)
+- [Procurement](../work-orders/procurement.md)
 
 - [Work order purchase](../work-orders/procurement.md)
 

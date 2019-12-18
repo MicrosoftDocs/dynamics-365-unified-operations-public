@@ -45,7 +45,7 @@ The following illustration shows the overall process for cutover to go-live as i
 
 ## Overall process
 
-The high-level steps of the production environment upgrade process are the same as the Mock cutover process, refer to [Cutover testing](./upgrade-cutover-testing.md) for detailed instructions.
+The high-level steps of the production environment upgrade process are the same as the Mock cutover process, refer to [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md) for detailed instructions.
 
 
 1. Turn off the AX 2012 AOS instances
@@ -67,5 +67,5 @@ Before you can perform an upgrade in the production environment the following pr
 
 ## Related articles
 - [Onboarding](../../fin-ops/imp-lifecycle/onboard.md)
-- [Submit a service request](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
-- [Upgrade from AX 2012 - Cutover testing](./upgrade-cutover-testing.md)
+- [Submit service requests to the Dynamics Service Engineering team](../lifecycle-services/submit-request-dynamics-service-engineering-team.md).
+- [Upgrade from AX 2012 - Cutover testing (Mock cutover)](./upgrade-cutover-testing.md)

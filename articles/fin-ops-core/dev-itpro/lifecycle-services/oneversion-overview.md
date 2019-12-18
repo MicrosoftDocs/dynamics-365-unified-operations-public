@@ -58,7 +58,7 @@ Users must opt in to new features and turn them on. All updates are applied firs
 
 ## Notice
 
-[Release notes](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to help you plan ahead and understand what is changing. You can learn about upcoming features up to three months in advance. The [What's new](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) topics provide details about the updates for specific months.
+[Release plans](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/) will be available to help you plan ahead and understand what is changing. You can learn about upcoming features up to three months in advance. The [What's new](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed) topics provide details about the updates for specific months.
 
 Additionally, a notification email will be sent five days in advance, and a notification will appear in LCS just before an update, as shown in the following illustration.
 
@@ -76,7 +76,7 @@ Customers will also be able to **self-update** by using the standard update expe
 
 ## Validate
 
-After an update is completed in the UAT environment, a basic business process test can be executed to validate the environment. To support this effort, a no-code automation test tool for business process testing is available, as shown in the following illustration. For more information, see [Create user acceptance test libraries by using task recordings and BPM](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
+After an update is completed in the UAT environment, a basic business process test can be executed to validate the environment. To support this effort, a no-code automation test tool for business process testing is available, as shown in the following illustration. For more information, see [Create and automate user acceptance tests](using-task-guides-and-bpm-to-create-user-acceptance-tests.md). 
 
 [![Regression Suite Automation Tool](./media/TestAutomation.png)](./media/TestAutomation.png)
 

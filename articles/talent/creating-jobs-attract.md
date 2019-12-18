@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create, approve, and post jobs in Attract
+title: Create a job in Attract
 description: This topic describes the elements of a job in Attract. It also explains how to create a job.
 author: hasrivas
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Create, approve, and post jobs in Attract
+# Create a job in Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -53,7 +53,7 @@ If position management has been turned on in the Admin Center, the **Update posi
 > [!NOTE]
 > Position management is available with the Comprehensive Hiring Add-on.
 
-Depending on the settings in the Offer activity of the hiring process, a position number can be used twice in an offer. For more information, see [Hiring process](./activities-attract.md).
+Depending on the settings in the Offer activity of the hiring process, a position number can be used twice in an offer. For more information, see [Activities in hiring processes](./activities-attract.md).
 
 Attract includes a default set of **Skills**. These skills appear as suggestions as you type. You can add more skills by entering the new skill text in the field and then pressing Enter.
 
@@ -71,7 +71,7 @@ The hiring team can be updated after the job is activated.
 
 Default information about the hiring process is based on the process template that was selected when the job was created. If a specific template wasn't selected at that time, the default template is used. When you define the hiring process, you can add or remove various stages, except the Prospect, Application, and Offer stages. Although the Prospect stage can't be removed, it can be turned off. Within each stage, you can add or remove one or more predefined activities.
 
-For more information about activities that can be added to the hiring process, see [Hiring process activities in Attract](./activities-attract.md).
+For more information about activities that can be added to the hiring process, see [Activities in hiring processes](./activities-attract.md).
 
 > [!NOTE]
 > The process hiring can't be updated after a job is activated.
@@ -80,7 +80,7 @@ For more information about activities that can be added to the hiring process, s
 
 After a job is activated, it can be posted. Only recruiters and admins can post jobs. The job can be posted to either Talent Careers (a Dynamics 365 Talent career site) or LinkedIn. The Attract team is continually working to partner with job board aggregators. This list will expand over time. When a job is posted as internal only, candidates need an AAD account to view and apply for the job. If the job is listed as public, candidates can view and apply for jobs using all authentication options. 
 
-For more information about job postings, see [Career site functionality in Attract](career-site.md).
+For more information about job postings, see [Set up your career site in Microsoft Dynamics 365 Talent - Attract](career-site.md).
 
 > [!NOTE]
 > The job posting functionality is available only with the Comprehensive Hiring Add-on for Attract.
@@ -94,7 +94,7 @@ After a job is activated, it can be posted, and prospects and applicants can be 
 
 ## Prospects and applicants
 
-The option to add prospects to a job is set in the [Prospect activity](./activities-attract.md#prospect-activity) in the hiring process. This option should be set before you activate the job. After a job is activated, prospects and applicants can be added to it.
+The option to add prospects to a job is set in the [Activities in hiring processes](./activities-attract.md#prospect-activity) in the hiring process. This option should be set before you activate the job. After a job is activated, prospects and applicants can be added to it.
 
 ## Approvals
 

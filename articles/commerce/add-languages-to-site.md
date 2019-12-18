@@ -5,10 +5,10 @@ title: Add languages to your site
 description: This topic explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -170,8 +170,12 @@ The language that you added will now be available so that you can configure your
 
 [Select a site theme](select-site-theme.md)
 
+[Work with CSS override files](css-override-files.md)
+
 [Add a favicon](add-favicon.md)
 
 [Add a welcome message](add-welcome-message.md)
 
 [Add a copyright notice](add-copyright-notice.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)

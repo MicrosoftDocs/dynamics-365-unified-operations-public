@@ -75,7 +75,7 @@ From our experience working with numerous ISVs, we have found that the following
 
 | Category | Description |
 |----------|-------------|
-| Extensible enums | You can add new enum values by using extensions. For more information, see [Add an enum value](add-enum-value.md). |
+| Extensible enums | You can add new enum values by using extensions. For more information, see [Add values to enums through extension](add-enum-value.md). |
 | Construct with throw | Most construct methods are simple and can be extended by using post-event handlers. However, some construct methods are more complex and throw an exception when no class is created. |
 | Exposing members | Member variables that have the **private** access modifier in their definition can't be accessed through extensions unless they become exposed through public methods. You can request that we add access to members through extensions that currently have not been exposed for this. Note that access to protected members is generally enabled through extension classes. |
 | Data manipulation methods that don't raise DataEvents | In some places in the application, data methods such as **insert()** and **update()** don't call **super()**. Therefore, the methods don't raise DataEvents to add extensions to. Microsoft plans to refactor the standard application so that it includes additional methods that enable extensions in these places. If you submit a request for Microsoft to add this, add any of the affected methods that you must currently overlayer, if those methods haven't already been accounted for. |
@@ -112,7 +112,7 @@ For changes that require different approaches to make the customizations extensi
 
 When you review a customization, be sure to consider different options for converting it to an extension. Be sure to consider whether a method is hookable, or whether it can be a class extension or form event. Review most of the currently available application code that is available to you. 
 
-You might conclude that a change to the standard application is required in order to enable the required extension. In this case, you must [log an extensibility request](extensibility-requests.md)  The request is then put into the backlog at Microsoft so that it can be addressed. Don't log extensibility requests by opening a request for a hotfix, because Microsoft doesn't release extensibility requests as hotfixes.
+You might conclude that a change to the standard application is required in order to enable the required extension. In this case, you must [log an extensibility request](extensibility-requests.md). The request is then put into the backlog at Microsoft so that it can be addressed. Don't log extensibility requests by opening a request for a hotfix, because Microsoft doesn't release extensibility requests as hotfixes.
 
 Be sure to supply enough contextual information in your extensibility requests. For example, a request for an inline delegate might come from the current customization approach. However, to better accommodate extension, the requirement that led to this customization might be better served by a structural change to the standard application. We appreciate suggestions of this type, because they help move the application toward a better platform for building different customizations.
 

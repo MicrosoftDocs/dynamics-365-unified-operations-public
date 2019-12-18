@@ -49,11 +49,10 @@ The following diagram illustrates the dimensions that are used in Cost accountin
 After the data is imported into Cost accounting, you can use it to build various perspectives that provide insights to managers at all levels of the organization. The following topics provide information about creating dimensions and importing dimension members. 
 
 -  [Cost element dimensions](cost-elements.md)
--  [Create cost elements (Task guide)](./tasks/create-cost-elements.md)
+-  [Create cost elements](./tasks/create-cost-elements.md)
 -  [Cost object dimensions](cost-objects.md)
--  [Create cost elements (Task guide)](./tasks/create-cost-objects.md)
 -  [Map cost element dimension members to a common set of dimension members](map-cost-elements-dimension-members.md)
--  [Map a cost element dimension (Task guide)](./tasks/map-cost-element-dimension.md)
+-  [Map a cost element dimension](./tasks/map-cost-element-dimension.md)
 -  [Statistical dimension members and statistical measure provider templates](statistical-measure-provider-template.md)
 
 

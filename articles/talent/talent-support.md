@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Talent September 10, 2018 update
 
 # Get support for Microsoft Dynamics 365 Talent
 
-[!include [banner](includes/banner.md)]
-
 This topic explains how to get help with Microsoft Dynamics 365 Talent: Core HR, Dynamics 365 Talent: Attract, and Dynamics 365 Talent: Onboard.
 
 ## Support for Talent

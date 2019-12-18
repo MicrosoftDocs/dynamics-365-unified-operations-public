@@ -43,7 +43,7 @@ This topic describes inheritance in X++, including how to create a subclass and 
 
 The following example first creates a class that is named **Point**. It then extends the **Point** class to create a new class that is named **ThreePoint**.
 
-```X++
+```xpp
 class Point
 {
     // Instance fields.
@@ -77,7 +77,7 @@ class ThreePoint extends Point
 
 You can prevent classes from being inherited by using the **final** modifier.
 
-```X++
+```xpp
 public final class Attribute
 {
     int objectField;
@@ -87,9 +87,11 @@ public final class Attribute
 ## Overriding a method
 The methods in a class are inherited by any class that extends the class. To change the functionality of an inherited method, you create a method in the subclass, and then give that method the same name and parameters as the method in the superclass. This process is known as *overriding* the method. In the following example, **ColorAttribute** is a subclass of **Attribute** and therefore inherits the **methodAttr** method. However, because **ColorAttribute** defines a method that has the same name and the same number of arguments, the method in the superclass is overridden.
 
-When you instantiate the subclass, you can assign the reference to either a variable of the superclass type or the subclass type. Regardless of the type of the variable, the overridden method is called. In the following code example, the subclass overrides the **write** method. Two variables, both of type **Point** are created. One is assigned a **Point** object, the other is assigned a **ThreePoint** object. When the **write** method is called on the **ThreePoint** object, the **ThreePoint** version of the method is called.
+When you instantiate the subclass, you can assign the reference to either a variable of the superclass type or the subclass type. Regardless of the type of the variable, the overridden method is called. 
 
-```X++
+In the following code example, the subclass overrides the **write** method. Two variables, both of type **Point** are created. One is assigned a **Point** object, the other is assigned a **ThreePoint** object. When the **write** method is called on the **ThreePoint** object, the **ThreePoint** version of the method is called.
+
+```xpp
 class Point
 {
     // Instance fields.
@@ -143,9 +145,11 @@ point3.write();
 
 ### Preventing method overrides
 
-Static methods can't be overridden, because they exist per class. To protect other sensitive methods, or core methods, from being overridden, use the **final** modifier. In the following example, because **methodAtt** is declared as **final**, it can't be overridden in any class that extends **Attribute**. You should not specify **new** or **finalize** methods as **final**. The following example shows how to use the **final** keyword.
+Static methods can't be overridden, because they exist per class. To protect other sensitive methods, or core methods, from being overridden, use the **final** modifier. In the following example, because **methodAtt** is declared as **final**, it can't be overridden in any class that extends **Attribute**. You should not specify **new** or **finalize** methods as **final**. 
 
-```X++
+The following example shows how to use the **final** keyword.
+
+```xpp
 public class Attribute
 {
     int objectVariable;
@@ -159,5 +163,7 @@ public class Attribute
 
 ### Overriding vs. overloading
 
-Overriding occurs when the superclass's implementation of a method is changed by the subclass's implementation of that method, but the signatures of both methods are the same. By contrast, *overloading* occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both). X++ supports overriding, but it doesn't support overloading.
+Overriding occurs when the superclass's implementation of a method is changed by the subclass's implementation of that method, but the signatures of both methods are the same. 
+
+By contrast, *overloading* occurs when more than one method has the same name, but the methods have different signatures (return types, parameter lists, or both). X++ supports overriding, but it doesn't support overloading.
 

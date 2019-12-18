@@ -5,17 +5,17 @@ title: Create an e-Commerce site
 description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
-audience: Enduser
+audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
@@ -76,3 +76,7 @@ After your site is created, you can verify that it is associated with your onlin
 [Enable location-based store detection](enable-store-detection.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Authoring home page overview](authoring-home-overview.md)
+
+[Add a new site page](add-new-page.md)

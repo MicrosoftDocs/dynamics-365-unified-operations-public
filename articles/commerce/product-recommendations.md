@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -59,10 +59,10 @@ Product recommendations use the Recommendations machine learning technologies in
 
 ## Additional resources
 
-[Enable omni-channel product recommendations](enable-product-recommendations.md)
+[Enable product recommendations](enable-product-recommendations.md)
 
-[Create editorial-based product recommendation lists](create-editorial-recommendation-lists.md)
+[Create curated product recommendation lists](create-editorial-recommendation-lists.md)
 
-[Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md)
+[Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md)
 
-[Add product recommendation lists to an eCommerce page](add-reco-list-to-page.md)
+[Add product recommendation lists to pages](add-reco-list-to-page.md)

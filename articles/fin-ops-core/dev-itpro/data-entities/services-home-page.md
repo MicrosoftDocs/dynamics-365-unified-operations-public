@@ -52,8 +52,8 @@ The following table lists all the service endpoints, and compares the endpoints 
 
 This topic describes authentication for services, and the REST Metadata service. The following links provide detailed documentation for:
 
-- [Custom services](custom-services.md)
-- [OData service](odata.md)
+- [Custom service development](custom-services.md)
+- [Open Data Protocol (OData)](odata.md)
 
 ## Authentication
 OData services, JSON-based custom services, and the REST metadata service support standard OAuth 2.0 authentication.
@@ -68,7 +68,7 @@ Two kinds of application are supported in Microsoft Azure Active Directory (AAD
 For more information, see:
 
 - [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/library/azure/dn645545.aspx)
-- [Troubleshoot service authentication](troubleshoot-service-authentication.md)
+- [Troubleshoot service authentication issues](troubleshoot-service-authentication.md)
 
 The following illustration describes how authorization must be configured for Authorization code grant flow.
 

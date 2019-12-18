@@ -144,7 +144,7 @@ The depreciation rate schedule that you import depends on the type of depreciati
 
 ## Additional resources
 
-- [Create lump-sum depreciation assets using equally-divided method](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
+- [Create lump-sum depreciation assets using equally divided method](./tasks/create-lump-sum-depreciation-assets-equally-divided-method.md)
 - [Change the depreciation method during the asset life for book](./tasks/change-depreciation-method-during-asset-life-book.md)
 - [Change the depreciation method during the asset life for one asset](./tasks/change-depreciation-method-during-asset-life-one-asset.md)
 - [Configure accelerated depreciation parameters and posting profiles](./tasks/accelerated-depreciation-posting-profiles.md)
@@ -152,9 +152,9 @@ The depreciation rate schedule that you import depends on the type of depreciati
 - [Create a fixed asset with additional depreciation](./tasks/create-fixed-asset-additional-depreciation.md)
 - [Create a fixed asset with special depreciation profile](./tasks/create-fixed-asset-special-depreciation-profile.md)
 - [Create an accelerated depreciation document and enter usage data](./tasks/create-accelerated-depreciation-document-enter-usage-data.md)
-- [Create an accelerated depreciation profile and assign it to book](./tasks/create-accelerated-depreciation-profile-assign-it-book.md)
+- [Create accelerated depreciation profile and assign it to book](./tasks/create-accelerated-depreciation-profile-assign-it-book.md)
 - [Define asset idle period and validate depreciation process](./tasks/define-asset-idle-period-validate-depreciation-process.md)
-- [Enter a depreciation rate schedule and associate to a depreciation profile](./tasks/enter-depreciation-rate-schedule.md)
+- [Enter depreciation rate schedule and associate to depreciation profile](./tasks/enter-depreciation-rate-schedule.md)
 - [Periodic settlement of over and under depreciation](./tasks/periodic-settlement-over-under-depreciation.md)
 - [Propose additional depreciation](./tasks/propose-additional-depreciation.md)
 - [Propose and post accelerated depreciation](./tasks/propose-post-accelerated-depreciation.md)

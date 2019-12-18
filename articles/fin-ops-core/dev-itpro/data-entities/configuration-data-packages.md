@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the topic [Copy configuration](copy-configuration.md). 
+> This topic applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the topic [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
 
 Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration.
 
@@ -58,7 +58,7 @@ You can access configuration data packages from LCS. You can either apply them t
 
 At this point, you can use the **Consume** function to apply the process data package to an LCS environment. 
 
-You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies](copy-configuration.md).
+You can also download the individual data package files from the **Data package** area. Use the **Data management** workspace to import the data packages from LCS. For more information about how to import and export configurations, see [Copy configuration data between companies or legal entities overview](copy-configuration.md).
 
 ## Special considerations
 ### System setup

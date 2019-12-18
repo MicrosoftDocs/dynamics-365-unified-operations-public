@@ -32,17 +32,15 @@ ms.dyn365.ops.version: Talent
 
 # Talent doesn't appear among the Microsoft Dynamics 365 apps (Common Data Service 1.0)
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 The customer doesn't see the Microsoft Dynamics 365 Talent app among the Microsoft Dynamics 365 apps.
 
 **Resolution**
 
-The user must be added to the Environment Maker role for the environment in Microsoft PowerApps.
+The user must be added to the Environment Maker role for the environment in Microsoft Power Apps.
 
-1. The admin user who has a PowerApps Plan 2 license must open the [PowerApps Admin portal](https://preview.admin.powerapps.com/).
+1. The admin user who has a Power Apps Plan 2 license must open the [Power Apps Admin portal](https://preview.admin.powerapps.com/).
 2. Select **Environments**, and select the correct environment for Talent.
 3. On the **Security** tab, on the **Environment roles** tab, select **Environment Maker**.
 

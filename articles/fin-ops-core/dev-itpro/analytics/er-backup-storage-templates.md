@@ -34,11 +34,11 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-The [Electronic reporting (ER) framework](general-electronic-reporting.md) lets business users configure formats for outbound documents according to the legal requirements of various countries and regions. Configured ER formats can use predefined templates to generate outbound documents in various formats, such as Microsoft Excel workbooks, Microsoft Word documents, or PDF documents. The templates are filled with data that the configured dataflow for generated documents requires.
+The [Electronic reporting (ER) overview](general-electronic-reporting.md) lets business users configure formats for outbound documents according to the legal requirements of various countries and regions. Configured ER formats can use predefined templates to generate outbound documents in various formats, such as Microsoft Excel workbooks, Microsoft Word documents, or PDF documents. The templates are filled with data that the configured dataflow for generated documents requires.
 
 Each configured format can be published as part of an ER solution. Each ER solution can be exported from one instance of Finance and Operations and imported into another instance.
 
-The ER framework uses the [Document management framework](../../fin-ops/organization-administration/configure-document-management.md) to keep the required templates for the current Finance and Operations instance. Depending on the settings of the ER framework, Microsoft Azure Blob storage or a Microsoft SharePoint folder can be selected as the physical primary storage location for templates. (For more information, see [Configure the ER framework](electronic-reporting-er-configure-parameters.md).) The DocuValue table holds an individual record for each template. In each record, the **AccessInformation** field stores the path of a template file that is located in the configured storage location.
+The ER framework uses the [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) to keep the required templates for the current Finance and Operations instance. Depending on the settings of the ER framework, Microsoft Azure Blob storage or a Microsoft SharePoint folder can be selected as the physical primary storage location for templates. (For more information, see [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).) The DocuValue table holds an individual record for each template. In each record, the **AccessInformation** field stores the path of a template file that is located in the configured storage location.
 
 When you manage your Finance and Operations instances, you might decide to migrate the current instance to another location. For example, you might migrate your production instance to a new sandbox environment. If you configured the ER framework to store templates in Blob storage, the DocuValue table in the new sandbox environment refers to the instance of Blob storage in the production environment. However, this instance can't be accessed from the sandbox environment, because the migration process doesn't support the migration of artifacts in Blob storage. Therefore, if you try to run an ER format that uses a template to generate business documents, an exception occurs, and you're notified about the missing template. You're also guided to use the ER cleanup tool to delete and then re-import the ER format configuration that contains the template. Because you might have several ER format configurations, this process can be time consuming.
 
@@ -99,6 +99,6 @@ In Finance and Operations version 10.0.5, the Backup storage of ER templates fea
 
 ## Additional resources
 
-[Electronic reporting overview](general-electronic-reporting.md)
+[Electronic reporting (ER) overview](general-electronic-reporting.md)
 
-[Configure the Electronic reporting framework](electronic-reporting-er-configure-parameters.md)
+[Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md)

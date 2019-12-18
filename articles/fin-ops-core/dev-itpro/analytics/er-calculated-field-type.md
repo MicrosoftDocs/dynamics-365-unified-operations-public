@@ -62,7 +62,7 @@ and stored locally.
 | Sample ER format configuration        | Format to learn parameterized calls.version.1.1.xml  |
 
 ## Sign in to your RCS instance
-In this example, you will create a configuration for the sample company, Litware, Inc. First, in RCS, you must complete the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure:
+In this example, you will create a configuration for the sample company, Litware, Inc. First, in RCS, you must complete the steps in the [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) procedure:
 
 1. On the default dashboard, select **Electronic reporting**.
 2. Select **Reporting configurations**.
@@ -82,24 +82,21 @@ In this example, you will create a configuration for the sample company, Litware
 3. Select **Designer**.
 4. Select **Designer**.  
    
-This ER model mapping is designed to do the following:
+    This ER model mapping is designed to do the following:
 
-- Fetch the list of tax codes (**Tax** data source) residing in the
-    **TaxTable** table.
-- Fetch the list of tax transactions (**Trans** data source) residing in the
-    **TaxTrans** table:
+    - Fetch the list of tax codes (**Tax** data source) residing in the **TaxTable** table.
+    - Fetch the list of tax transactions (**Trans** data source) residing in the **TaxTrans** table:
     
-    - Group the list of fetched transactions (**Gr** data source) by tax code.
-    - Calculate for grouped transactions following aggregated values per
-        tax code:
+        - Group the list of fetched transactions (**Gr** data source) by tax code.
+        - Calculate for grouped transactions following aggregated values per tax code:
 
-        - Sum of tax base values.
-        - Sum of tax values.
-        - Minimum value of applied tax rate.
+            - Sum of tax base values.
+            - Sum of tax values.
+            - Minimum value of applied tax rate.
 
-The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance and Operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
+    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance and Operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
 
-  ![Model mapping designer page showing Tax and Gr data sources](media/er-calculated-field-type-01.png)
+    ![Model mapping designer page showing Tax and Gr data sources](media/er-calculated-field-type-01.png)
 
 5.  Close the **Model mapping designer** page.
 6.  Close the **Model mapping** page.
@@ -110,25 +107,25 @@ The model mapping in this configuration implements the base data model for any o
 2. Select **Format to learn parameterized calls**.
 3. Select **Designer**. This ER format is designed to do the following:
 
-  - Generate a tax statement in XML format.
-  - Present the following levels of taxation in the tax statement: regular, reduced, and none.
-  - Present multiple details at each taxation level, having a different number of details in each level.
+    - Generate a tax statement in XML format.
+    - Present the following levels of taxation in the tax statement: regular, reduced, and none.
+    - Present multiple details at each taxation level, having a different number of details in each level.
 
-  ![Format designer page](media/er-calculated-field-type-02.png)
+    ![Format designer page](media/er-calculated-field-type-02.png)
 
 4. Select **Mapping**.
 5. Expand the **Model**, **Data,** and **Summary** items. 
 
-   The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None,** or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
+    The calculated field **Model.Data.Summary.Level** contains the expression that returns the code of the taxation level (**Regular**, **Reduced**, **None,** or **Other**) as a text value for any tax code that can be retrieved from the **Model.Data.Summary** data source at run time.
 
-  ![Format designer page showing details of the Data model Model to learn parameterized calls](media/er-calculated-field-type-03.png)
+    ![Format designer page showing details of the Data model Model to learn parameterized calls](media/er-calculated-field-type-03.png)
 
 6. Expand the **Model**.**Data2** item.
 7. Expand the **Model**.**Data2.Summary2** item.
    
-   The **Model**.**Data2.Summary2** data source is configured to group the **Model.Data.Summary** data source transaction details by taxation level (returned by the **Model.Data.Summary.Level** calculated field) and compute the aggregations.
+    The **Model**.**Data2.Summary2** data source is configured to group the **Model.Data.Summary** data source transaction details by taxation level (returned by the **Model.Data.Summary.Level** calculated field) and compute the aggregations.
 
-  ![Format designer page showing details of the Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
+    ![Format designer page showing details of the Model.Data2.Summary2 data source](media/er-calculated-field-type-04.png)
 
 8. Review the calculated fields **Model**.**Data2.Level1**, **Model**.**Data2.Level2**, and **Model**.**Data2.Level3.** These calculated fields are used to filter the **Model**.**Data2.Summary2** records list and return only records that represent a particular taxation level.
 9. Close the **Format designer** page.
@@ -319,7 +316,7 @@ When a parameterized calculated field returns a record, you need to support bind
 You can run the initial and improved ER formats to make sure that configured parameterized calculated fields work properly.
 
 ### Import ER configurations
-You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting configurations from Regulatory Configuration Services](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
+You can import reviewed configurations from RCS by using the ER repository of the **RCS** type. If you already went through the steps in the topic, [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md), use the configured ER repository to import configurations discussed earlier in this topic to your environment. Otherwise, follow these steps:
 
 1. Select the **DEMF** company and on the default dashboard, select **Electronic reporting**.
 2. Select **Reporting configurations**.
@@ -349,4 +346,4 @@ You can import reviewed configurations from RCS by using the ER repository of th
 8. Compare the contents of the generated outputs.
 
 ## Additional resources
-[Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)
+[Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
