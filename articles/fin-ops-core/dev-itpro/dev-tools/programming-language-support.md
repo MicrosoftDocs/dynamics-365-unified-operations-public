@@ -88,7 +88,7 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
         static utcdatetime utcInitialized3;  // Static variable member.
         static void typenew()                // Static constructor member. 'typenew' is a new keyword.
         {
-        utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
+            utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
         }
     }
     ```
