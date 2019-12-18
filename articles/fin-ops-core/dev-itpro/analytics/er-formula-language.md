@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Electronic reporting (ER) formula language
-description: This topic explains how to use the formula language in Electronic reporting (ER).
+title: Electronic reporting formula language
+description: This topic provides information about how to use the formula language in Electronic reporting (ER).
 author: NickSelin
 manager: kfend
-ms.date: 11/29/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Electronic reporting (ER) formula language
+# Electronic reporting formula language
 
 [!include [banner](../includes/banner.md)]
 
-ER provides a powerful data transformation experience. The Excel-like language is used to express the required data manipulations by using the ER formula designer.
+Electronic Reporting (ER) provides a powerful data transformation experience. The Excel-like language is used to express the required data manipulations by using the ER formula designer.
 
 ## Basic syntax
 
@@ -80,7 +80,7 @@ Additionally, you can use an ampersand (&) as a text concatenation operator. In 
 
 ### Operator precedence
 
-The order that the parts of a compound expression are evaluated in is important. For example, the result of the expression `1 + 4 / 2` varies, depending on whether the addition operation or the division operation is done first. You can use parentheses to explicitly define how an expression is evaluated. For example, to indicate that the addition operation should be done first, you can change the preceding expression to `(1 + 4) / 2`. If you don't explicitly indicate the order of operations in an expression, the order is based on the default precedence that is assigned to the supported operators. The following table shows the precedence that is assigned to each operator. Operators that have a higher precedence (for example, 7) are evaluated before operators that have a lower precedence (for example, 1).
+The order in which the parts of a compound expression are evaluated is important. For example, the result of the expression `1 + 4 / 2` varies, depending on whether the addition or division operation is done first. You can use parentheses to explicitly define how an expression is evaluated. For example, to indicate that the addition operation should be done first, you can change the preceding expression to `(1 + 4) / 2`. If you don't explicitly indicate the order of operations in an expression, the order is based on the default precedence that is assigned to the supported operators. The following table shows the precedence that is assigned to each operator. Operators that have a higher precedence, for example 7, are evaluated before operators that have a lower precedence, for example 1.
 
 | Precedence | Operators      | Syntax                                                                  |
 |------------|----------------|-------------------------------------------------------------------------|
@@ -96,9 +96,9 @@ If an expression includes multiple consecutive operators that have the same prec
 
 ## <a name="References">References</a>
 
-All data sources of the current ER component that are available during the design of an expression can be used as named references. (The current ER component can be either a model mapping or a format.) For example, the current ER model mapping contains the **ReportingDate** data source, and this data source returns a value of the *DateTime* data type. To correctly format that value in the generating document, you can reference the data source in the expression as `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+All data sources of the current ER component that are available during the design of an expression can be used as named references. The current ER component can be either a model mapping or a format. For example, the current ER model mapping contains the **ReportingDate** data source, which returns a value of the data type, *DateTime*. To correctly format that value in the generating document, you can reference the data source in the expression as `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
-All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark ('). If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks. (For example, these non-alphabetic symbols can be punctuation marks or other written symbols.) Here are some examples:
+All characters in the name of a referencing data source that don't represent a letter of the alphabet must be preceded by a single quotation mark ('). If the name of a referencing data source contains at least one symbol that doesn't represent a letter of the alphabet, the name must be enclosed in single quotation marks. For example, these non-alphabetic symbols can be punctuation marks or other written symbols. Here are some examples:
 
 - The **Today's date & time** data source must be referred to in an ER expression as `'Today''s date & time'`.
 - The **name()** method of the **Customers** data source must be referred to in an ER expression as `Customers.'name()'`.
@@ -113,7 +113,7 @@ When the **System** data source is added to an ER mapping that refers to the **G
 You can limit the way that values are passed to the parameters of this type of method:
 
 - Only constants can be passed to methods of this type. The values of the constants are defined at design time.
-- Only primitive (basic) data types are supported for parameters of this type. (The primitive data types are *Integer*, *Real*, *Boolean*, *String*, and so on.).
+- Only primitive (basic) data types are supported for parameters of this type. The primitive data types are *Integer*, *Real*, *Boolean*, *String*, and so on.
 
 ## <a name="Paths">Paths</a>
 
@@ -121,11 +121,11 @@ When an expression references a structured data source, you can use the path def
 
 ### Relative path
 
-When a path to a structured data source is started from the **@** symbol, it means that this path is relative. The **@** symbol is shown instead of the remaining part of the absolute path of using hierarchical tree structure. The picture below illustrates this. The absolute path `Ledger.'accountingCurrency()'` is used to indicate that the accounting currency value from the Ledger data source is populated to the **AccountingCurrency** field of the data model.
+When a path to a structured data source is started from the **@** symbol, it means that this path is relative. The **@** symbol is shown instead of the remaining part of the absolute path of using a hierarchical tree structure. The following graphic illustrates this. The absolute path `Ledger.'accountingCurrency()'` is used to indicate that the accounting currency value from the Ledger data source is populated to the **AccountingCurrency** field of the data model.
 
 ![ER model mapping designer page](./media/ER-FormulaLanguage-AbsolutePath.png)
 
-The sample of the relative path usage is presented on the pictures below. The relative path `@.AccountNum` is used to express that **AccountNum** field of the **Intrastat** data source (shown one level up from the **AccountNum** field in the data model hierarchical tree) is used to populate to the data model **AccountNum** field the customer or vendor account number.
+The sample of the relative path usage is presented in the following graphic. The relative path `@.AccountNum` is used to express that **AccountNum** field of the **Intrastat** data source (shown one level up from the **AccountNum** field in the data model hierarchical tree) is used to populate to the data model **AccountNum** field the customer or vendor account number.
 
 ![ER model mapping designer page](./media/ER-FormulaLanguage-RelativePath1.png)
 
@@ -137,7 +137,7 @@ The remaining part of the absolute path is shown in the [ER formula editor](gene
 
 ER built-in functions can be used in ER expressions. All data sources of the expression context (the current ER model mapping or ER format) can be used as parameters of calling functions, in accordance with the list of arguments for calling functions. Constants can also be used as parameters of calling functions. For example, the current ER model mapping contains the **InvoiceTransactions** data source, and this data source returns a list of records. The **InvoiceTransactions** record structure contains the **AmountDebit** and **AmountCredit** fields, and both these fields return numeric values. Therefore, to calculate the invoiced amount, you can design the following expression that uses the built-in ER rounding function: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
-You can use ER functions of the following categories while you design ER model mappings and ER reports :
+You can use ER functions of the following categories while you design ER model mappings and ER reports:
 
 -	[Date and time functions](er-functions-category-datetime.md)
 -	[List functions](er-functions-category-list.md)
@@ -155,7 +155,7 @@ ER lets you extend the list of functions that are used in ER expressions. Some e
 
 ## Compound expressions
 
-You can create a compound expression using functions in different categories as long as the data types match. Match the data type of the output from one function to the input data type required by another function when you use them together. For example, combine functions from the [List](er-functions-category-list.md) category with a function from the [Logical](er-functions-category-logical.md) category to avoid a possible "list-is-empty" error in a binding of a field to an ER format element, as in the example below. The formula uses the [IF](er-functions-logical-if.md) function to test if the **IntrastatTotals** list is empty before it returns the value of the required aggregation from it; otherwise it returns zero.
+You can create a compound expressions using functions in different categories as long as the data types match. Match the data type of the output from one function to the input data type required by another function when you use them together. For example, combine functions from the [List](er-functions-category-list.md) category with a function from the [Logical](er-functions-category-logical.md) category to avoid a possible "list-is-empty" error in a binding of a field to an ER format element, as in the example below. The formula uses the [IF](er-functions-logical-if.md) function to test if the **IntrastatTotals** list is empty before it returns the value of the required aggregation from it; otherwise it returns zero.
 
 ```
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
@@ -163,7 +163,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 ## Multiple solutions
 
-There is often more than one way to get a data transformation result using functions of different categories or different functions from same category. For example, the presented above expression can be configured in the alternative way by using the [COUNT](er-functions-list-count.md) function of the [List](er-functions-category-list.md) category:
+There is often more than one way to get a data transformation result using functions of different categories or different functions from same category. For example, the previous expression can be configured in another way by using the [COUNT](er-functions-list-count.md) function of the [List](er-functions-category-list.md) category:
 
 ```
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
