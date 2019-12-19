@@ -43,8 +43,6 @@ The [Microsoft Accessibility Insights](https://accessibilityinsights.io/en/) int
 
 ## Enable Microsoft Accessibility Insights for all of the sites in your tenant
 
-The following procedure shows how to enable the [Microsoft Accessibility Insights](https://accessibilityinsights.io/en/) integration in your tenant for all of your sites. 
-
 To enable [Microsoft Accessibility Insights](https://accessibilityinsights.io/en/) integration for all of the Commerce sites in your tenant, follow these steps. 
 
 >[!NOTE]
@@ -55,7 +53,7 @@ To enable [Microsoft Accessibility Insights](https://accessibilityinsights.io/en
 1. Below **Tenant Settings**, select **Features**.
 1. Set the **Accessibility Check** option to **On**.
 
-## Enable Microsoft Accessibility Insights for your site
+## Enable Microsoft Accessibility Insights for a single site
 
 To enable [Microsoft Accessibility Insights](https://accessibilityinsights.io/en/) integration for a single Commerce site, follow these steps.
 
