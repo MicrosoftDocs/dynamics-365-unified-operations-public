@@ -136,7 +136,8 @@ Select **Sales order** if the blocking rule applies to value of the sales order.
   - Select **Blocking** to create a rule that blocks an order. 
   - Select **Exclusion** to create a rule that will exclude another rule from blocking an order. 
 6. Enter the **Sales order amount** for the selected blocking rule before an order is placed on credit management hold. 
-7. The sales order rule includeds an additional setting that overrides all other rules. To create an exclusion that will release the sales order without taking into effects any other rules, select the **Release sales order** check box on the exclusion line.
+
+The sales order rule includes an additional setting that overrides all other rules. To create an exclusion that will release the sales order without taking into effects any other rules, select the **Release sales order** check box on the exclusion line.
 
 ### Credit limit used
 
@@ -229,8 +230,8 @@ Sales orders are placed in the hold list based on the blocking rules. However, s
 
 You can use the **Evaluate for release** menu to review the sales orders in the hold list and automatically release them if the reason for the hold has been mitigated.
 1.	Select the **Evaluate for release** menu
-2.	Select **Process blocking rules** to review all of the sales orders
-3. A slider will appear so that you can select a single customer or leave the customer drop down blank for all customers. 
+2.	Select **Process blocking rules** to review all of the sales orders. Select **Process blockign rules for selected lines** to review only the lines that you have selected.
+3. A slider will appear so that you can select a single customer. Leave the customer drop down blank for all customers. 
 4. When you click ok, the process is run in the background and you can continue working on other tasks. If you select batch processing before you click on Ok, the process will run in batch when you click Ok. It may take some time to process the orders on hold in the list so use Refresh to update the status of the orders. 
 5.	If a blocking reason no longer is applicable for an order, the blocking reason will be considered no longer valid and you will no longer see a check mark next to the reason when you view the blocking reasons.
 6.	If all of the blocking reasons are cleared, then a new reason, **Ready to release**, is added to the list of blocking reasons. The sales order can be automatically released.
