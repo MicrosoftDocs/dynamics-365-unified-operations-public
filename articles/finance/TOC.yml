@@ -2985,29 +2985,29 @@
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/finance/toc.json
               - name: Value
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/finance/toc.json
-              - name: Date and Time category: DateTimeValue
+              - name: "Date and Time category: DateTimeValue"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/finance/toc.json
-              - name: Date and Time category: DateToDateTime
+              - name: "Date and Time category: DateToDateTime"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/finance/toc.json
-              - name: Date and Time category: DateValue
+              - name: "Date and Time category: DateValue"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/finance/toc.json
-              - name: List category: List
+              - name: "List category: List"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
-              - name: List category: ListOfFields
+              - name: "List category: ListOfFields"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/finance/toc.json
-              - name: List category: Split
+              - name: "List category: Split"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
-              - name: List category: StringJoin
+              - name: "List category: StringJoin"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/finance/toc.json
-              - name: Text category: Char
+              - name: "Text category: Char"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/finance/toc.json
-              - name: Text category: GuidValue
+              - name: "Text category: GuidValue"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
-              - name: Text category: NumberFormat
+              - name: "Text category: NumberFormat"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
-              - name: Text category: QrCode
+              - name: "Text category: QrCode"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
-              - name: Text category: Text
+              - name: "Text category: Text"
                 href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
         - name: Manage ER model mapping in separate ER configurations
           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
