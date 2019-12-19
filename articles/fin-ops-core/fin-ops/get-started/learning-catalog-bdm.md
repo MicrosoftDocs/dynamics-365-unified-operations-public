@@ -5,7 +5,7 @@ title: Business and Technical Decision Makers Learning Catalog
 description: 
 author: margoc
 manager: AnnBe
-ms.date: 05/03/2019
+ms.date: 11/29/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
