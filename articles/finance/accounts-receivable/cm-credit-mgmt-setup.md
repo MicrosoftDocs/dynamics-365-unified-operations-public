@@ -42,7 +42,7 @@ There are four FastTabs where you can change the parameters that control credit 
 
 ### Credit holds
 
--	Select **Yes** for **Allow edit of sales orders value after order hold is released** to require the sales order to check the rules again if the sales order value has been edited after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
+-	Select **Yes** for **Allow edit of sales orders value after order hold is released** to require the sales order to check the rules again if the sales order value (extended price) has been changed after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
 
 -	Select the default release reason for the **Reasons for canceled orders** field. This will be the default reason used when a sales order that was on credit management hold is cancelled.
 
@@ -56,11 +56,11 @@ There are four FastTabs where you can change the parameters that control credit 
 
 -	Select **Yes** for **Ignore credit limit expired blocking rule when expiration date is blank** to control the behavior of the **Credit limit expired** rule. Select **No** to block an order when the expiration date is blank.
 
--	Within warehouse management, it is possible to automatically create loads at sales order entry. Select **No** for **Remove blocked load lines** to leave the sales order lines on the load when a sales order is on credit hold. The load cannot be processed when the sales order is on hold. Select **Yes** to remove the sales order lines from the load when a sales order is on credit hold. The load can then be processed.
+-	Within warehouse management, it is possible to create loads at sales order entry. Select **No** for **Remove blocked load lines** to leave the sales order lines on the load when a sales order is on credit hold. The load cannot be processed when the sales order is on hold. Select **Yes** to remove the sales order lines from the load when a sales order is on credit hold. The load can then be processed.
 
 -	Sales orders can be automatically released from credit management review. Select the release reason for **Reason to release automatically** that will be used as the default entry when sales orders are released automatically.
 
--	Sales orders can be automatically released from credit management review. Select **Without posting** for **Automatically release** to allow an order to be posted using the same posting process that ran when the sales order was placed on hold. Select **Original posting** to post the order using the same posting process that was executed when the sales order was placed on hold.
+-	Sales orders can be automatically released from credit management review. Select **Without posting** for **Automatically release** to release the hold on the order. You will need to manually execute that same process that placed the order on hold. Select **With posting** to post the order using the same posting process that was executed when the sales order was placed on hold.
 
 ### Credit management checkpoint
 
