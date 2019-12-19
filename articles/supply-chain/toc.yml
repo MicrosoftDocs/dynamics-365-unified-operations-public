@@ -1095,6 +1095,8 @@
           href: master-planning/safety-stock-replenishment.md
         - name: Delays
           href: master-planning/delays.md
+        - name: Cancel a master planning job
+          href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
         - name: Action messages
@@ -2345,6 +2347,10 @@
           href: warehousing/tasks/set-up-short-picking-item-reallocation.md
         - name: Cancel warehouse work for exception handling
           href: warehousing/cancel-warehouse-work.md
+        - name: System-directed cluster picking
+          href: warehousing/system-directed-cluster-pick.md
+        - name: Pick line grouping
+          href: warehousing/pick-line-grouping.md 
       - name: Inventory counting
         items:
         - name: Reason codes for inventory counting

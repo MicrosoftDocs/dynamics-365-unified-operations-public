@@ -8,8 +8,6 @@
       items:
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
-      - name: Sign up for preview subscriptions
-        href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/commerce/toc.json
       - name: One Version service updates 
         items:
         - name: One Version service updates overview
@@ -36,10 +34,18 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Deploy a demo environment
-        href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/commerce/toc.json
-      - name: Configure an e-Commerce evaluation environment
-        href: provisioning-guide.md
+      - name: Set up a Commerce preview environment
+        items:
+        - name: Commerce preview environment overview
+          href: cpe-overview.md
+        - name: Provision a Commerce preview environment
+          href: provisioning-guide.md
+        - name: Configure a Commerce preview environment
+          href: cpe-post-provisioning.md
+        - name: Configure optional features for a Commerce preview environment
+          href: cpe-optional-features.md
+        - name: Commerce preview environment FAQ
+          href: cpe-faq.md
       - name: Deployment considerations
         items:
         - name: Deployment options
@@ -405,13 +411,17 @@
           - name: Page model glossary
             href: page-elements-overview.md
           - name: Document states and lifecycle
-            href: document-states-overview.md 
+            href: document-states-overview.md
+          - name: Work with publish groups
+            href: publish-groups.md
           - name: Brand your site and add store details
             items:
             - name: Add a logo
               href: add-logo.md 
             - name: Select a site theme
               href: select-site-theme.md
+            - name: Work with CSS override files
+              href: css-override-files.md
             - name: Add a favicon
               href: add-favicon.md
             - name: Add a welcome message
@@ -548,10 +558,8 @@
           href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
         - name: Retail hierarchies
           href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-        - name: Attributes and attribute groups
+        - name: Manage attributes and attribute groups
           href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
-        - name: Create and manage attributes
-          href: ../retail/create-manage-attributes.md?toc=/dynamics365/commerce/toc.json
         - name: Set up retail products
           href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
         - name: Manage retail product categories and products

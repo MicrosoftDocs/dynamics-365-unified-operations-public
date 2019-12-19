@@ -8,6 +8,8 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: December 12, 2019
+        href: whats-new-talent-december-12-2019.md
       - name: December 3, 2019
         href: whats-new-talent-december-3-2019.md
       - name: November 19, 2019
