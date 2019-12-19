@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-When you have set up the parameters that control advanced credit management, you can add additional details to each customer that will control the credit management processes and provide additional information that helps members of the collections team manage customers. 
+When you have set up the parameters that control credit management, you can add additional details to each customer that will control the credit management processes and provide additional information that helps members of the collections team manage customers. 
 
 ## Customer information
 You can add the additional infomation on the **Account receivable > Customers > All customers page on the Credit and collections** FastTab.
@@ -59,7 +59,7 @@ You can add the additional infomation on the **Account receivable > Customers > 
 
 Also note that some information that is shown on the customer page is created by another process:
 
-1.	The **Credit limit expiration date** is the date when the credit limit will expire. If you don't make an entry in this field is, the customers' credit limit won't expire.
+1.	The **Credit limit expiration date** is the date when the credit limit will expire. If you don't make an entry in this field, the customer's credit limit won't expire.
 2.	The **Credit limit date** is the date on which the credit limit was created. This date is updated whenever the credit limit is adjusted.
 3.	**Temporary credit limits** override the customer credit limit for a period of time.  It will be used instead of the credit limit to calculate the total credit limit. It is only shown if there is an active credit limit. You can add temporary credit limits using credit limit adjustments.
 4.	The amount displayed in the **Insurance and guarantees** field shows the total value of insurance and guarantees that can increase the credit limit for the customer.
@@ -89,7 +89,7 @@ You can create insurance policies and guarantees on the **Accounts receivable > 
 7. Enter the **Expiration** date on which the guarantee or insurance policy expires.
 8. Enter the **Value** of the insurance or guarantee. This is the full value of the policy.
 9. Select the **Currency** for the policy value. 
-10. Select the **Update credit limit** percentage using a number between 0 and 100. The percentage will be applied to the policy value and the resulting amount will be used to increase the credit limit used in credit limit calculations. The calculated value is called the **Effective credit limit** and is displayed on the **Customers** page in the **Credit management statistics** fact box.
+10. Select the **Update credit limit** percentage using a number between 0 and 100. The percentage will be applied to the policy value and the resulting amount will be used to increase the credit limit used in credit limit calculations. The calculated value is displayed on the **Customers** page in the **Credit and collections** fast tab under **Total credit limit, Insurance and Guarantees**.
    For Example:
    -  Assume a credit limit of 100,000 (A)
    -  Assume a policy value of 50,000 (B)
@@ -101,6 +101,6 @@ For Example:
   -  Assume a policy value of 50,000 (B)
   -  Assume an update credit limit value of 50.00 (C)
   -  The effective credit limit will now be 125,000 (A + (B * C))
-  -  Selct the check box to change the in the **Included in exposure** field to **Checked**.
+  -  Select the check box to change the in the **Included in exposure** field to **Checked**.
   -  Remove the update credit limit value of 50,000
   -  The exposure value is 75,000 (A + (B * C)) – B
