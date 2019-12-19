@@ -1240,6 +1240,8 @@
           href: localizations/latam-bra-sped-reinf.md
         - name: SPED fiscal resolution 13/2019 RJ
           href: localizations/latam-bra-resolution-13-2019-RJ.md
+        - name: SPED fiscal 2020 - Complementary information of the ICMS-ST for SPED fiscal layout 014
+          href: localizations/latam-bra-complementary-information-icms-st-sped-fiscal-2020-layout-014.md
         - name: Parameters for legal entities
           href: localizations/latam-bra-legal-entity-parameters.md
         - name: Set up legal entity parameters
@@ -2261,6 +2263,8 @@
           items: 
           - name: Managing fixed assets
             href: localizations/rus-fixed-assets.md
+          - name: Fixed assets overview
+            hfre: localizations/rus-fixed-assets-overview.md
           - name: Set up fixed assets
             href: localizations/rus-set-up-fixed-assets.md
           - name: Acquiring fixed assets and putting them into operation
@@ -2919,10 +2923,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
           - name: Trace execution of ER formats to troubleshoot performance issues
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-          - name: Business document management overview
-            href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-          - name: Add new fields to a business document template in Microsoft Excel
-            href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+          - name: Business document management 
+            items:
+            - name: Business document management overview
+              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+            - name: Add new fields to a business document template in Microsoft Excel
+              href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
         - name: ER framework API
           items: 
           - name: Extend the list of Electronic reporting functions
