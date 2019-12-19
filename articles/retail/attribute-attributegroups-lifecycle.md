@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attributes and attribute groups
+title: Manage attributes and attribute groups
 description: This topic describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
-# Attributes and attribute groups
+# Manage attributes and attribute groups
 
 [!include [banner](includes/banner.md)]
 
