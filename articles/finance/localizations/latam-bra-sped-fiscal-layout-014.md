@@ -1,6 +1,6 @@
 # SPED Fiscal ICMS-IPI - Layout 014
 
-This topic explains how to set up and generate Sped fiscal statement layout 014 applicable from January 2020 under the practical guide **EFD-ICMS/IPI – version 3.0.3
+This topic explains how to set up and generate Sped fiscal statement layout 014 applicable from January 2020 under the practical guide **EFD-ICMS/IPI – version 3.0.3**
 
 ## Record 0000 - Opening record
 
