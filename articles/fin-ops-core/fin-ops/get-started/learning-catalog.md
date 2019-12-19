@@ -3,8 +3,27 @@ title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article
-ms.date: 07/08/2019
+ms.date: 11/20/2019
 ms.author: margoc
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+ 
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: margoc
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.author: margoc
+ms.search.validFrom: 2017-12-31 
+ms.dyn365.ops.version: 7.3
+
 ---
 # Learning catalog for Finance and Operations
 
