@@ -73,3 +73,19 @@ To scan and verify your home page content in Commerce using the integrated [Micr
 1. After the scan is complete, review the contents of the report.
 1. If there are failed checks, select each failed check item to expand it for more details.
 1. To close the report when done reviewing it, scroll to the bottom of the **Check Accessibility** window and click **OK**.
+
+## Additional resources
+
+[Modify an existing site page](modify-existing-page.md)
+
+[Add a new site page](add-new-page.md)
+
+[Select page layouts](select-page-layouts.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
+
+[Save, preview, and publish a page](save-preview-publish-page.md)
+
+[Enrich a product page](enrich-product-page.md)
+
+[Enrich a category landing page](enrich-category-page.md)
