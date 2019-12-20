@@ -56,10 +56,48 @@ Channel set up is perfomed in the Commerce Headquarters tool. Each channel can h
 ## Channel setup pre-requisites
 Before you can set up a channel, you must complete some prerequisite tasks. You can then create the channel and add details.
 
-* [Define and configure your legal entity structure](link tbd)
-* [Configure your organizational hierarchy](link tbd)
-* [Set up a warehouse](../temp.md)
-* 
+* [Define and configure your legal entity structure](tbd.md)
+* [Configure your organizational hierarchy](tbd.md)
+* [Set up a warehouse](tbd.md)
+* [Set up a default customer](tbd.md)
+* [Set up a customer address book](tbd.md)
+* [Set up an employee address book](tbd.md)
+* [Set up an email notification profile](tbd.md)
+* [Set up a functionality profile](tbd.md)
+* [Set up sales tax groups](tbd.md)
+* [Set up a screen layout](tbd.md) (Retail only)
+* [Set up a hardware station](tbd.md) (Retail only)
+* [Set up number sequences, store statements and statement vouchers](tbd.md)
+* [Configure parameters for Commerce](tbd.md)
+* [Set up methods of payments](tbd.md) 
+* [Set up payment services to process credit card transactions](tbd.md)
+* [Set up modes of delivery](tbd.md)
+* [Set up products](tbd.md) As part of this task, you'll also set up retail product hierarchies, product variants, and product assortments.
+* [Set up product price groups](tbd.md)
+* [Set up product pricing](tbd.md)  As part of this task, you also set up price adjustments, discounts and discount periods.
+* [Set up staff members]
+* [Configure the Retail POS profiles to assign to the store](tbd.md).  This task includes many other tasks, such as setting up registers, setting up offline profiles and setting up receipt formats and profiles.
+
+## Set up a channel
+After you complete the prerequisite tasks, follow the link to the channel type you want to create for set up instructions.
+[Set up a Retail channel](tbd.md)
+[Set up a Call Center channel)(tbd.md)
+[Set up an Online channel)(tbd.md)
+
+## After you set up a channel
+After you create a channel, complete these tasks:
+
+* Configure the POS registers for the store.
+* Assign product assortments to the store.
+* Process assortments to generate the list of products that are included in the assortment and to make the products available in the retail store.
+* Send data such as number sequences, hardware profiles, and POS screen layouts to the Retail POS registers.
+* Publish the retail store to send store data to Retail POS.
+* Run the jobs to send the store data to Retail POS.
+
+
+
+
+
 
 
 
