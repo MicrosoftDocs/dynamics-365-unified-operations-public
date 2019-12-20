@@ -1,10 +1,9 @@
 ---
-
 # required metadata
 
-title: [Configure shipment consolidation policies]
-description: [The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Prior the introduction of this functionality the consolidation functionality allowed automated consolidation with hardcoded fields and based on the “Consolidate shipment at release to warehouse” filed at warehouse level.]
-author: [GarmMSFT]
+title: Configure shipment consolidation policies
+description: This topic provides an overview of functionality that provides flexible configuration of shipment consolidation policies.
+author: GarmMSFT
 manager: PJacobse
 ms.date: 12/31/2019
 ms.topic: configure-shipment-consolidation-policies
@@ -14,18 +13,19 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form:  
+# ROBOTS: 
 audience: Application User
 # ms.devlang:
-ms.reviewer: [pjacobse]
-ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.reviewer: PJacobse
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+# ms.custom: 
+ms.search.region: Global 
+# ms.search.industry: 
+ms.author: v-olbara
+ms.search.validFrom: 2019-08-31
+ms.dyn365.ops.version: 10.0.3
 
 ---
 
