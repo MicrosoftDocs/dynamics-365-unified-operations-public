@@ -90,11 +90,3 @@ After you create a channel, complete these tasks:
 * Send data such as number sequences, hardware profiles, and POS screen layouts to the Retail POS registers.
 * Publish the retail store to send store data to Retail POS.
 * Run the jobs to send the store data to Retail POS.
-
-
-
-
-
-
-
-
