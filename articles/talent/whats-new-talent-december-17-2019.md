@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (December 17, 2019)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/17/2019
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (December 17, 2019)
 
-This topic describes features that are either new or changed in Dynamics 365 Talent.
+This article describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
@@ -47,7 +47,7 @@ Changes described in this section apply to build number 8.1.2674. The numbers in
 
 ### Print performance reviews
 
-Printing performance reviews is now available in all environments. To enable this functionality use the **Feature management** workspace. See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+Printing performance reviews is now available in all environments. To enable this functionality, use the **Feature management** workspace. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview). For more information about printing performance reviews, see [Performance reviews](https://docs.microsoft.com/dynamics365/talent/performance-management-overview#performance-reviews).
 
 ### Retired position with direct reports "floats" in org diagram as an open position (385436)
 
