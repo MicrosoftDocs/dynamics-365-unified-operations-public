@@ -403,7 +403,7 @@ Change the **Gov-Test-Scenario** property in the new format for all the scenario
 
 ## Collect data for VAT return
 
-The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/create-sales-tax-payment) job. For more information about sales tax settlement and reporting, see [Sales tax overview](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview).
+The process of preparing and submitting a VAT return for a period is based on sales tax payment transactions that were posted during the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job. For more information about sales tax settlement and reporting, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
 
 Before you start to prepare and submit a VAT return to HMRC, complete the regular **Settle and post sales tax** job for the period that you will report to HMRC. When this job is run, new sales tax payment transactions are created. Go to **Tax** \> **Inquires and reports** \> **Sales tax inquires** \> **Sales tax payments** to view the sales tax payments. You can review the resulting values for each sales tax payment transaction on the **VAT 100** report in SSRS or Excel format. For information about how to define the format that is used, see the [Set up General ledger parameters](#vat-statement-format-mapping) section of this topic. To generate a **VAT 100** report for selected sales tax payment transactions, select **Print report** on the Action Pane.
 
@@ -495,7 +495,7 @@ To prepare your Finance and Operations to report VAT return for a VAT group, mak
 
 5.	“VAT 100” report is correctly generated for preview in each subsidiary legal entity.
 
-6.	One legal entity is setup for interoperation with HMRC according to the documentation ([Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration)) and user can request VAT obligations from this legal entity for the VAT group.
+6.	One legal entity is setup for interoperation with HMRC according to the documentation ([Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)](emea-gbr-mtd-vat-integration.md)) and user can request VAT obligations from this legal entity for the VAT group.
 
 This section of the documentation provides information:
 
@@ -527,7 +527,7 @@ To use the formats for reporting of VAT return of a groups of several legal enti
 
 2.	Select in the right top corner the Legal entity from VAT group tax transactions from which must be included into the VAT return of the group.
 
-3.	Click **Configurations** \> **Application specific parameters** \> **Setup** on the Action pane, select the last version of the format on the left part of the Application specific parameter page and define conditions on the **Conditions** fast tab. Learn more how you can define conditions in the [Set up application-specific parameters](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#set-up-application-specific-parameters) part of the documentation. Change state to **Completed**, save and close the **Application specific parameters** page.
+3.	Click **Configurations** \> **Application specific parameters** \> **Setup** on the Action pane, select the last version of the format on the left part of the Application specific parameter page and define conditions on the **Conditions** fast tab. Learn more how you can define conditions in the [Set up application-specific parameters](emea-gbr-mtd-vat-integration.md#set-up-application-specific-parameters) part of the documentation. Change state to **Completed**, save and close the **Application specific parameters** page.
 
 4.	Change the legal entity again (as on the step 2) and repeat the step 3 as many times as much legal entities are included in the VAT group in your system.
 
@@ -567,7 +567,7 @@ The changes in the setup of populate records action described above are enough t
 
 ### Use Electronic messages page to collect information for VAT return reporting from several legal entities
 
-Setup one legal entity to interoperate with HMRC according to the general guidance ([Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration)), provide addition setup to populate records action as it is described in the section above and [retrieve VAT obligations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#retrieve-vat-obligations-from-hmrc) for your VAT group and move further to [Collect data for VAT return](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#collect-data-for-vat-return):
+Setup one legal entity to interoperate with HMRC according to the general guidance ([Prepare Finance and Operations for integration with MTD for VAT (United Kingdom)](emea-gbr-mtd-vat-integration.md)), provide addition setup to populate records action as it is described in the section above and [retrieve VAT obligations](emea-gbr-mtd-vat-integration.md#retrieve-vat-obligations-from-hmrc) for your VAT group and move further to [Collect data for VAT return](emea-gbr-mtd-vat-integration.md#collect-data-for-vat-return):
 
 1.	Open **Tax** \> **Inquires and reports** \> **Electronic messages** \> **Electronic messages** page and select “UK MTD VAT returns” processing for production use or “UK MTD VAT TEST” processing for testing purposes.
 
@@ -575,7 +575,7 @@ Setup one legal entity to interoperate with HMRC according to the general guidan
 
 3.	When you have activated **“Cross-company queries for the populate records actions”** feature in Feature management, you will see **Company** column on the **Message items** fast tab of the **Electronic messages** page. Click **“Collect data”** button on the **Messages** fast tab and **Sales tax payment** transactions from all the legal entities defined as datasources on populate records action will be populated as message items on the Message items fast tab. When you click on “Original document” button for a message item populated from a legal entity differ from the current one, you will be redirected to the appropriate company.
 
-4.	Work further with the **Electronic message** as according to the general process to generate VAT return for preview or for submission to HMRC and submit it when it is ready ([Generate a VAT return in Excel format for preview](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#generate-a-vat-return-in-excel-format-for-preview), [Generate a VAT return in JSON format](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#generate-a-vat-return-in-json-format), [Submit VAT returns to HMRC](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#submit-vat-returns-to-hmrc)).
+4.	Work further with the **Electronic message** as according to the general process to generate VAT return for preview or for submission to HMRC and submit it when it is ready ([Generate a VAT return in Excel format for preview](emea-gbr-mtd-vat-integration.md#generate-a-vat-return-in-excel-format-for-preview), [Generate a VAT return in JSON format](emea-gbr-mtd-vat-integration.md#generate-a-vat-return-in-json-format), [Submit VAT returns to HMRC](emea-gbr-mtd-vat-integration.md#submit-vat-returns-to-hmrc)).
 
 
 ## Retrieve VAT liabilities and payments from HMRC
@@ -752,7 +752,7 @@ System administration consent is available in the following versions of Electron
 >
 > -	MTD VAT model mapping (UK)
 
-Electronic reporting configuration download instruction from Lifecycle Services: https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs
+[Electronic reporting configuration download instruction from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 
 ### System administrator consent
 When Electronic configurations from the Electronic configurations table are successfully imported, system administrator must do the following steps in the Legal entity interoperating with HMRC (it is supposed that MTD for VAT feature setup is done):
@@ -769,7 +769,7 @@ When Electronic configurations from the Electronic configurations table are succ
 
 ![System administrator consent log](media/uk-mtd-system-administrator-consent-log.png)
 
-5.	Continue authorization process as it is explained in the [documentation](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#obtain-an-authorization-code-for-production) if your web application was not previously authorized.
+5.	Continue authorization process as it is explained in the [documentation](emea-gbr-mtd-vat-integration.md#obtain-an-authorization-code-for-production) if your web application was not previously authorized.
 
 6.	If your web application was previously authorized on HMRC side, you don’t need to continue the authorization and you may skip all other steps of authorization.
 
@@ -1112,7 +1112,7 @@ A new version of the application-specific parameters configuration example can b
 
 ### Support of fraud prevention headers – part 1 (KB 4504462)
 
-This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](https://docs.microsoft.com/dynamics365/finance/localizations/emea-gbr-mtd-vat-integration#fraud-prevention-headers).
+This update supports requirements that HMRC introduced to supply compulsory header information for the VAT API, to help prevent fraud. For more information, see [Fraud prevention](emea-gbr-mtd-vat-integration.md#fraud-prevention-headers).
 
 In the scope of this update, the following ER configurations are released:
 
