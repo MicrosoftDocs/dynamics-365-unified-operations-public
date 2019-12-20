@@ -6,19 +6,19 @@ description: [The shipment consolidation process using shipment consolidation po
 author: [GarmMSFT]
 manager: PJacobse
 ms.date: 12/31/2019
-ms.topic: configure-wave-label-printing
-ms.prod: 
+ms.topic: configure-shipment-consolidation-policies
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: [pjacobse]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: [name of release that feature was introduced in, see list
 
 # About
 
-The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Prior the introduction of this functionality the consolidation functionality allowed automated consolidation with hardcoded fields and based on the “Consolidate shipment at release to warehouse” filed at warehouse level. 
+The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Prior the introduction of this functionality the consolidation functionality allowed automated consolidation with hardcoded fields and based on the “Consolidate shipment at release to warehouse” filed at warehouse level.
 
-The shipment consolidation policies are used at following instances of functionality: 1) automated release to warehouse batch job, 2) release to warehouse function from the sales or transfer order, 3) separate release to warehouse form, 4) release to warehouse function from the Load planning workbench, and 5) the manual consolidation of shipment workbench . 
+The shipment consolidation policies are used at following instances of functionality: 1) automated release to warehouse batch job, 2) release to warehouse function from the sales or transfer order, 3) separate release to warehouse form, 4) release to warehouse function from the Load planning workbench, and 5) the manual consolidation of shipment workbench .
 
-Prior the introduction of this functionality the consolidation function was a setting at the warehouse level, where the application treated all customers from a single warehouse with the same consolidation requirement. This represented a limitation. The consolidation of shipment policies caters for scenarios where different end customers can have different requirements for shipment consolidation. 
+Prior the introduction of this functionality the consolidation function was a setting at the warehouse level, where the application treated all customers from a single warehouse with the same consolidation requirement. This represented a limitation. The consolidation of shipment policies caters for scenarios where different end customers can have different requirements for shipment consolidation.
 
 The shipment consolidation policies follow the pattern of e.g. the wave templates, where queries are used for identifying the applicability of the specific policy and then a modifiable set of fields drives how to group the load lines on shipment level. In addition, a setting “consolidate with existing shipments” is added to each policy allowing the policy to consult all open shipments that match the policy – in this case the load will not be created but the existing one will be used.
 
@@ -52,7 +52,7 @@ The “Shipment consolidation workbench“ allows for consolidation of existing 
 
 ## Shipment consolidation policies (form)
 
-The policies are differentiated based on work order types (Sales orders to Sales orders shipments, Transfer orders to Transfer issue shipments). 
+The policies are differentiated based on work order types (Sales orders to Sales orders shipments, Transfer orders to Transfer issue shipments).
 
 Each shipment consolidation policy has a query used for defining the applicability and a sequence number in which it will be applied. The consolidation is applied for each unique combination of the selected fields. An additional parameter to consolidate with existing (open) shipments is included. The policies are evaluated and applied when new shipments are created which is before wave processing.
 
@@ -85,9 +85,9 @@ Following fields are unavailable to the user for all document types (these field
 
 The consolidation fields defaults to the mandatory set of fields when a new policy is created, but can be modified with left-right arrows (similar user interaction pattern as for methods in “Wave templates”).
 
-Values of these fields, selected by a user, will be equal in a new shipment being created or added to an existing shipment (consolidate with existing shipment). When the values of a field selected for consolidation of two shipments is the same the shipment are consolidated (if this remain the case for all the subsequent selected consolidation fields), if they differ then the second shipment is discarded and will be selected for a new shipment. The process during the automated consolidation consists of creating all the unique combination of values of the consolidate shipment fields and assign the shipment to the relevant combination. 
+Values of these fields, selected by a user, will be equal in a new shipment being created or added to an existing shipment (consolidate with existing shipment). When the values of a field selected for consolidation of two shipments is the same the shipment are consolidated (if this remain the case for all the subsequent selected consolidation fields), if they differ then the second shipment is discarded and will be selected for a new shipment. The process during the automated consolidation consists of creating all the unique combination of values of the consolidate shipment fields and assign the shipment to the relevant combination.
 
-Values in not-selected fields are ignored during the consoldation process. If not selected field has different values in two shipments, it will be cleared (set to blank). If a field was not selected but has the same values in both shipments, it will be filled in. 
+Values in not-selected fields are ignored during the consoldation process. If not selected field has different values in two shipments, it will be cleared (set to blank). If a field was not selected but has the same values in both shipments, it will be filled in.
 
 The list of consolidation fields (fields which will be cleared when they have different values) is hardcoded. The list contains all fields which are initialized from a sales line or transfer line when a new shipment is created. I.e. if a field is not initialized from a sales line or transfer line, it is ignored when new data is being added into existing shipment.
 
@@ -103,8 +103,8 @@ The list of consolidation fields (fields which will be cleared when they have di
 
 ## Consolidate shipments (form)
 
-- Search for similar shipments (candidates for consolidation) modified to use fields selected on shipment consolidation policy 
-- Fields that have different values in different shipments are now set to blank (previously the values from the selected “base” shipment were used) 
+- Search for similar shipments (candidates for consolidation) modified to use fields selected on shipment consolidation policy
+- Fields that have different values in different shipments are now set to blank (previously the values from the selected “base” shipment were used)
 
 ## Shipment consolidation workbench (form)
 
