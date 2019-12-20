@@ -50,7 +50,7 @@ Online channels represent online e-Commerce storefronts. Once an online channel 
 ## Channel set up basics
 Channel set up is perfomed in the Commerce Headquarters tool. Each channel can have its own payment methods, price groups, product hierarchies, assortments and set of products. You must set up some of these elements before you create the channel but they can be modified afterwards as well. After you create the channel, you assign the products that you want it to carry. You also assign employees, registers, and customers to retail channels. Finally, you add the new channel to an organization hierarchy.
 
-## Channel setup pre-requisites
+## Channel setup prerequisites
 Before you can set up a channel, you must complete some prerequisite tasks. You can then create the channel and add details.
 
 * [Define and configure your legal entity structure](tbd.md)
