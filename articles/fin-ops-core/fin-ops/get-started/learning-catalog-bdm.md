@@ -3,7 +3,7 @@ title: Business and Technical Decision Makers Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 11/29/2019
+ms.date: 12/20/2019
 ms.topic: article
 ms.author: margoc
 ---

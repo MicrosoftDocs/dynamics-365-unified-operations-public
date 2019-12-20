@@ -3,7 +3,7 @@ title: Business User's Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article
-ms.date: 07/08/2019
+ms.date: 12/20/2019
 ms.author: margoc
 ---
 
