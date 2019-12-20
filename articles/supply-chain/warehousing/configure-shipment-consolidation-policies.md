@@ -221,4 +221,4 @@ Example of a business case.
 # Related articles and demo scripts
 
 - [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
-- [Consolidate shipments](../consolidate shipments.md)
+- [Consolidate shipments](../consolidate-shipments.md)
