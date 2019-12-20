@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The `ROUNDAMOUNT` function returns a *Real* value as the result of rounding of the specified number to the nearest multiple of another number according to the specified rounding rule.
+The `ROUNDAMOUNT` function returns a *Real* value as the result of the rounding of the specified number to the nearest multiple of another number according to the specified rounding rule.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ An enumeration value of the **RoundOffType** enumeration that defines the roundi
 
 *Real*
 
-The result numeric value is a multiple of the value specified by the `decimals` parameter and is closest to the value specified by the `number` parameter.
+The resulting numeric value is a multiple of the value specified by the `decimals` parameter and is closest to the value specified by the `number` parameter.
 
 ## Usage notes
 
