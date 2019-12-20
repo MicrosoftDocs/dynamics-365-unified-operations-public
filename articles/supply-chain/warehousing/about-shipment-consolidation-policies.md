@@ -119,4 +119,5 @@ The list of consolidation fields (fields which will be cleared when they have di
 # Related articles and demo scripts
 
 - [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
-- [Consolidate shipments](../consolidate shipments.md)
+- [Consolidate shipments](../consolidate-shipments.md)
+
