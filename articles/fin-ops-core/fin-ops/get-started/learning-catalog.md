@@ -5,12 +5,10 @@ author: margoc
 ms.topic: article
 ms.date: 12/20/2019
 ms.author: margoc
-
 ---
 # Learning catalog for Finance and Operations
 
 Find the right online training, in person workshops, and events for your role as a user of Finance and Operations applications. 
-
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
