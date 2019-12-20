@@ -49,12 +49,12 @@ The following procedure explains how to create a legal entity from within Commer
 * In the **Country/region** field, enter or select a value.
 * Click **OK**. 
 
-[Legal entity Creation](media/legal-entities.png)
+![Legal entity Creation](media/legal-entities.png)
 
 * In the **General** section, provide the following general information about the legal entity: Enter a search name, if a search name is required. A search name is an alternate name that can be used to search for this legal entity. Select whether this legal entity is being used as a consolidation company. Select whether this legal entity is being used as an elimination company. Select the default language for the entity and time zone.
 * Expand the **Addresses** section. In the **Addresses** section, click **Edit** to enter address information, such as the street name and number, postal code, and city.
 
-[Legal entity general section](mediat/legal-entities-general.png)
+![Legal entity general section](media/legal-entities-general.png)
 
 * Expand the **Contact information** section. In the **Contact information** section, enter information about methods of communication, such as email addresses, URLs, and telephone numbers.
 * Expand the **Statutory reporting** section. In the **Statutory reporting** section, enter the registration numbers that are used for statutory reporting.
