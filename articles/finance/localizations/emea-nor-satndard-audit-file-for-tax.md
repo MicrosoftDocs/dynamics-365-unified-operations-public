@@ -3,7 +3,7 @@
 
 title: Standard Audit File for Tax (SAF-T) for Norway
 description: This topic explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway. 
-author: v-elgolu
+author: LizaGolub
 ms.author: v-elgolu
 ms.date: 12/18/2019
 ms.topic: article
