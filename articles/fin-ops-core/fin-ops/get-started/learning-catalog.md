@@ -22,8 +22,9 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2017-12-31 
 ms.dyn365.ops.version: 7.3
-# Learning catalog for Finance and Operations
+
 ---
+# Learning catalog for Finance and Operations
 
 Find the right online training, in person workshops, and events for your role as a user of Finance and Operations applications. 
 
