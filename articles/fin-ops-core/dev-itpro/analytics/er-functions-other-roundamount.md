@@ -54,7 +54,7 @@ The number that the value of the `number` parameter must be rounded to a multipl
 
 `round rule`: *Enum value*
 
-An enumeration value of the **RoundOffType** enumeration that defines the rounding rule. This enumeration is offered the following values:
+An enumeration value of the **RoundOffType** enumeration that defines the rounding rule. This enumeration offers the following values:
 
 - Normal (Ordinary)
 - Downward (RoundDown)
