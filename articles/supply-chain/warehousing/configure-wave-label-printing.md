@@ -1,20 +1,10 @@
 ---
+
 # required metadata
 
-title: [Configure wave label printing]
-description: [Wave label printing functionality is included in D365 since version 10.0.0. This functionality has been enhanced with the following functionalities:
-
-- Allow for labels to be printed according to a number of cartons on a single work line – without using containerization feature (“carton” meaning designated unit from Unit sequence group lines); use of multiple different label sequences (for example, carton and pallet labels) is covered by "Repeatable" check box.
-- Include an enumeration of the labels (1/124, 2/124,…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.)
--	Allow for BOL (Bill of lading) ID to be created and printed on label
--	Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label
--	Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers
--	Allow for HAZMAT code to be include if relevant on label
--	Support for reprint of labels (from handhelds and from rich client)
--	Support for voiding of labels (a.o. for short pick scenarios) and reprint
--	Support for clean-up of wave label history
-These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.]
-author: [GarmMSFT]
+title: Configure wave label printing
+description: This topic provides an overview of functionality that provides wave label printing.
+author: GarmMSFT
 manager: PJacobse
 ms.date: 12/31/2019
 ms.topic: configure-wave-label-printing
@@ -24,20 +14,25 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+# ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.reviewer: [pjacobse]
-ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.reviewer: PJacobse
+ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
+# ms.custom:
+ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: [author's Microsoft alias]
-ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
-ms.dyn365.ops.version: [name of release that feature was introduced in, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
+ms.author: v-olbara
+ms.search.validFrom: yyyy-mm-dd
+ms.dyn365.ops.version: 10.0.0
+
 ---
+
 # Configure wave label printing
+
+[!include [banner](../includes/banner.md)]
 
 # Released in version 10.0.0, upgraded in version 10.0.2
 
@@ -101,6 +96,7 @@ In the ZPL Layout FastTab there are three sections in which you can write ZPL: H
 
 Put the following text in the header:
 
+```text
 CT~~CD,~CC^~CT~
 ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
 ^XA
@@ -136,7 +132,11 @@ CT~~CD,~CC^~CT~
 ^FT19,504^A0N,28,28^FH\^FDPO#:^FS
 ^FT437,316^A0N,28,28^FH\^FDPRO#^FS
 ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)31533^FS
+```
+
 In the body, put:
+
+```text
 <Row name="WaveLabel">
 ^FT127,439^A0N,28,28^FH\^FD$WHSWaveLabel.SeqNum$^FS
 ^FT256,439^A0N,28,28^FH\^FD$WHSWaveLabel.NumberOfLabels$^FS
@@ -151,10 +151,13 @@ In the body, put:
 ^FD>;>800$WHSWaveLabel.WaveLabelId$^FS
 ^FT194,439^A0N,28,28^FH\^FDof^FS
 </Row>
+```
 
-In the footer put
+In the footer put:
 
+```text
 ^PQ1^XZ
+```
 
 This ends the label.
 
@@ -163,13 +166,14 @@ This ends the label.
 Navigate to _Warehouse Management - Setup - Document Routing - Wave Label Types_ and create a new record.
 
 - Label type: Carton
-– Description: Carton
+- Description: Carton
 
 ## Unit sequence groups
 
 Navigate to _Warehouse Management - Setup - Warehouse - Unit Sequence Groups_.
 
-Select or create ‘Ea Box PL’ group. Set the ‘Carton’ wave label type to Box line.
+- Select or create ‘Ea Box PL’ group.
+- Set the ‘Carton’ wave label type to Box line.
 
 ## Wave label templates
 
@@ -193,7 +197,7 @@ In the Label Template Details FastTab, add a new record:
 
 As we are setting up a customer-specific label design, it should be necessary to create a query for that account specifically.
 
-Click on Edit Query in the Ribbon, and in the sorting tab, add sorting on Load line ref rec ID (Reference load line id (Record-ID). Click OK and Yes on Grouping reset suggestion.
+Click on **Edit Query** in the Ribbon, and in the sorting tab, add sorting on Load line ref rec ID (Reference load line id (Record-ID). Click OK and Yes on Grouping reset suggestion.
 
 Click on Wave Label Template Grouping, and check the box to Label build by Load line ref rec ID. This will create one label sequence (“Carton 1 of X” on a label layout) per Load line that is created through the wave.
 
@@ -248,17 +252,17 @@ Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Nu
 
 # Process
 
-Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-001 and warehouse 62.
+1. Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-001 and warehouse 62.
 
-Add two lines to the sales order, one for item A0001, quantity 9024, and one for item A0002, quantity 9016 (items are given as example, they must have the Unit sequence group defined above, have unit conversions from ea to Box to PL, and have stock in Warehouse 62).
+2. Add two lines to the sales order, one for item A0001, quantity 9024, and one for item A0002, quantity 9016 (items are given as example, they must have the Unit sequence group defined above, have unit conversions from ea to Box to PL, and have stock in Warehouse 62).
 
-Reserve the order and release it to the warehouse.
+3. Reserve the order and release it to the warehouse.
 
-The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template.
+- The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template.
 
-Wave labels will be generated and printed in the amount equal to the number of cartons.
+- Wave labels will be generated and printed in the amount equal to the number of cartons.
 
-The new Bill of lading ID will be generated for the shipments, and the wave label IDs will be following SSCC-18 number format from GS-1.
+- The new Bill of lading ID will be generated for the shipments, and the wave label IDs will be following SSCC-18 number format from GS-1.
 
 Labels can be viewed and re-printed from the following forms (Related information section):
 

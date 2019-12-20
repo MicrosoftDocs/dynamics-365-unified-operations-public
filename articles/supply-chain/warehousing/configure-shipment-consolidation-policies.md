@@ -13,18 +13,18 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form:  
-# ROBOTS: 
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+# ROBOTS:
 audience: Application User
 # ms.devlang:
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm:
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
+# ms.custom:
+ms.search.region: Global
+# ms.search.industry:
 ms.author: v-olbara
-ms.search.validFrom: 2019-08-31
+ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.3
 
 ---
@@ -37,7 +37,8 @@ ms.dyn365.ops.version: 10.0.3
 
 # Scenario 1: Configure default shipment consolidation policies
 
-## Default policies setup – new environment:
+## Default policies setup – new environment
+
 1.	Navigate to _Warehouse management > Setup > Release to warehouse > Shipment consolidation policies_.
 2.	Click Create default setup.
 - A „Default“ policy will be created for Sales orders
@@ -45,7 +46,7 @@ ms.dyn365.ops.version: 10.0.3
 
 Note: Both policies will have the same set of fields taken into consideration by legacy logic, including order number (consolidate lines into shipments based on order number, warehouse, mode of delivery, address, etc.)
 
-##	Default policies setup – upgrading an environment with warehouses already configured for cross-order consolidation:
+##	Default policies setup – upgrading an environment with warehouses already configured for cross-order consolidation
 
 1.	Navigate to _Warehouse management /> Setup /> Warehouse /> Warehouses_.
 2.	In the list, find and select the desired Warehouse record.
@@ -217,4 +218,7 @@ Example of a business case.
 - CrossOrder
 - Default
 
-# Demo scripts of the functionality included here (links TODO)
+# Related articles and demo scripts
+
+- [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
+- [Consolidate shipments](../consolidate shipments.md)
