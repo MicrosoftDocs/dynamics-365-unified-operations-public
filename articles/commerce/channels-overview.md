@@ -53,8 +53,8 @@ Channel set up is perfomed in the Commerce Headquarters tool. Each channel can h
 ## Channel setup prerequisites
 Before you can set up a channel, you must complete some prerequisite tasks. You can then create the channel and add details.
 
-* [Define and configure your legal entity structure](tbd.md)
-* [Configure your organizational hierarchy](tbd.md)
+* [Define and configure your legal entities](channels-legal-entities.md)
+* [Configure your organizational hierarchy](channels-org-hierarchies.md)
 * [Set up a warehouse](tbd.md)
 * [Set up a default customer](tbd.md)
 * [Set up a customer address book](tbd.md)
