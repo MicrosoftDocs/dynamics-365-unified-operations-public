@@ -37,7 +37,9 @@ This topic presents an overview of Microsoft Dynamics 365 Commerce legal entitie
 
 ## Overview
 
-A legal entity is an organization that is identified through registration with a legal authority. Legal entities can enter into contracts and are required to prepare statements that report on their performance. Typically these are broken up by markets such as countries.  When creating a channel you must specify which legal entity that channel belongs to.
+A legal entity is an organization that has a registered or legislated legal structure. Legal entities can enter into legal contracts and are required to prepare statements that report on their performance.
+
+A company is a type of legal entity. Currently, companies are the only kind of legal entity that you can create, and every legal entity is associated with a company ID. This association exists because some functional areas in the program use a company ID, or DataAreaId, in their data models. In these functional areas, companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to. When creating a channel you must specify which legal entity that channel belongs to.
 
 ## Create a new legal entity
 The following procedure explains how to create a legal entity from within Commerce Headquarters app.
@@ -67,3 +69,6 @@ The following procedure explains how to create a legal entity from within Commer
 * Expand the **Tax 1099** section. In the **Tax 1099** section, enter 1099 information for the legal entity.
 * Expand the **Tax information** section. In the **Tax invormation** section, enter tax information for the legal entity.
 * Click **Save**.
+
+For more information see
+[Organizations and organizational hierarchies overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies)
