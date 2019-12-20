@@ -33,10 +33,7 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of setting up Microsoft Dynamics 365 Commerce channels.
-
-## Overview
-This topic provides an overview of the section on setting up the various Dynamic 365 Commerce channels. It includes information about the tasks that you must complete both before and after you set up each channel. 
+This topic presents an overview of setting up Microsoft Dynamics 365 Commerce channels. It includes information about the tasks that you must complete both before and after you set up each channel. 
 
 ## Channels
 Dynamics 365 Commerce supports three different channel types: **Retail**, **Call Center** and **Online**.  Below you'll find details relating to each. 
