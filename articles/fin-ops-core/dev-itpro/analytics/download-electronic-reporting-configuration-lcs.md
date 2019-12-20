@@ -44,7 +44,7 @@ This tutorial guides you through the process of downloading the newest version o
     - Electronic reporting functional consultant
     - System administrator
 
-2. Go to **Organization administration** &gt; **Electronic reporting**.
+2. Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.
 3. In the **Configuration providers** section, select the **Microsoft** tile.
 4. On the **Microsoft** tile, click **Repositories**.
 
