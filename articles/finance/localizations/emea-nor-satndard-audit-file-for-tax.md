@@ -145,14 +145,14 @@ Here is an explanation of the parts of this file name:
 - **20160401235911** represents the date and time when the file was created. (A 24-hour clock is used for the time.)
 - **1\_12** represents file 1 out of 12 total files in the export (that is, in the same selection).
 
-The volume of a single XML file must be less than 2 gigabytes (GB). Every individual XML file that is submitted must be validated against the schema. All \<MasterFiles\> must be in the first file, and the associated transactions must be in the subsequent files (the number of these files is flexible).
+The volume of a single XML file must be less than 2 gigabytes (GB). Every individual XML file that is submitted must be validated against the schema. All \<MasterFiles\> nodes must be in the first file, and the associated transactions must be in the subsequent files (the number of these files is flexible).
 
 The following table shows a sample selection of one accounting year that has 12 periods. For each period, there is one file that contains transactions.
 
-| File number | Contents of the audit file      |
-|-------------|---------------------------------|
-| 1           | Header and MasterFiles          |
-| 2–13        | Header and GeneralLedgerEntries |
+| File number | Contents of the audit file                     |
+|-------------|------------------------------------------------|
+| 1           | \<Header\> and \<MasterFiles\> nodes           |
+| 2–13        | \<Header\> and \<GeneralLedgerEntries\> nodes  |
 
 There can be a maximum of 10 XML files in the same zip archive.
 
