@@ -61,11 +61,14 @@ Before you create an organizational hierarchy, you must create organizations. Fo
 
 Below is a sample organizational hierarchy created for a ficticious "Adventure Works" set of stores.
 
-![Example organizational hierarchy](media/organizational-hierarchies.png]
+![Example organizational hierarchy](media/organizational-hierarchies.png)
 
 ### Add organizations to the hierarchy
 * In the list, find and select the desired record. Select your hierarchy.
-* In the **Assigned hierarchies** section, click **View hierarchy**.
-* Add organizations, as necessary.
-To add an organization, click Edit and then Insert to add the organization. When you are done making changes you can Save a draft and/or Publish the changes.
+* On the **Action pane**, click **View**.
+  * Add organizations, as necessary.
+  * To add an organization, click **Edit** and then **Insert** to add the organization. When you are done making changes you can **Save** a draft and/or **Publish** the changes.
 
+In the below screen shot, a legal entity was added at the hierarchy root with four cost centers added for "Mall", "Outlet", "Online" and "Call Center" channels.
+
+![Example hierarchy designer](media/hierarchy-designer.png)
