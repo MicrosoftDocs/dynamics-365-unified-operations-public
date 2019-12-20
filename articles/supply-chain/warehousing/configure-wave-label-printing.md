@@ -2,33 +2,34 @@
 # required metadata
 
 title: [Configure wave label printing]
-description: [Wave label printing functionality is included in D365 since version 10.0.0. This functionality has been enhanced with the following functionalities: 
-•	Allow for labels to be printed according to a number of cartons on a single work line – without using containerization feature (“carton” meaning designated unit from Unit sequence group lines); use of multiple different label sequences (for example, carton and pallet labels) is covered by “repeatable” check box.
-•	Include an enumeration of the labels (1/124, 2/124…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.) 
-•	Allow for BOL (Bill of lading) ID to be created and printed on label 
-•	Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label 
-•	Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers 
-•	Allow for HAZMAT code to be include if relevant on label 
-•	Support for reprint of labels (from handhelds and from rich client) 
-•	Support for voiding of labels (a.o. for short pick scenarios) and reprint 
-•	Support for clean-up of wave label history 
+description: [Wave label printing functionality is included in D365 since version 10.0.0. This functionality has been enhanced with the following functionalities:
+
+- Allow for labels to be printed according to a number of cartons on a single work line – without using containerization feature (“carton” meaning designated unit from Unit sequence group lines); use of multiple different label sequences (for example, carton and pallet labels) is covered by "Repeatable" check box.
+- Include an enumeration of the labels (1/124, 2/124,…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.)
+-	Allow for BOL (Bill of lading) ID to be created and printed on label
+-	Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label
+-	Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers
+-	Allow for HAZMAT code to be include if relevant on label
+-	Support for reprint of labels (from handhelds and from rich client)
+-	Support for voiding of labels (a.o. for short pick scenarios) and reprint
+-	Support for clean-up of wave label history
 These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.]
 author: [GarmMSFT]
 manager: PJacobse
 ms.date: 12/31/2019
 ms.topic: configure-wave-label-printing
-ms.prod: 
+ms.prod:
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology:
 
 # optional metadata
 
 # ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User
-# ms.devlang: 
+# ms.devlang:
 ms.reviewer: [pjacobse]
 ms.search.scope: [Which Operations client to show this topic as help for, to be set by content strategist, see list here: https://microsoft.sharepoint.com/teams/DynDoc/_layouts/15/WopiFrame.aspx?sourcedoc={23419e1c-eb64-42e9-aa9b-79875b428718}&action=edit&wd=target%28Core%20Dynamics%20AX%20CP%20requirements%2Eone%7C4CC185C0%2DEFAA%2D42CD%2D94B9%2D8F2A45E7F61A%2FVersions%20list%20for%20docs%20topics%7CC14BE630%2D5151%2D49D6%2D8305%2D554B5084593C%2F%29]
-# ms.tgt_pltfrm: 
+# ms.tgt_pltfrm:
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]
 # ms.search.industry: [leave blank for most, retail, public sector]
@@ -50,18 +51,18 @@ With this setup you can print and collate labels based on work headers, print br
 
 NOTE: This functionality does not replace existing label printing functionality via Document routing.
 
-This functionality has been enhanced in 10.0.2 release with the following functionalities: 
+This functionality has been enhanced in 10.0.2 release with the following functionalities:
 - Allow for labels to be printed according to a number of cartons on a single work line – without using containerization feature (“carton” meaning designated unit from Unit sequence group lines); use of multiple different label sequences (for example, carton and pallet labels) is covered by “repeatable” check box.
-- Include an enumeration of the labels (1/124, 2/124…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.) 
-- Allow for BOL (Bill of lading) ID to be created and printed on label 
-- Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label 
-- Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers 
-- Allow for HAZMAT code to be include if relevant on label 
-- Support for reprint of labels (from handhelds and from rich client) 
-- Support for voiding of labels (a.o. for short pick scenarios) and reprint 
+- Include an enumeration of the labels (1/124, 2/124…124/124) and configuration of how to define the range of enumeration (work line, load line, shipment, etc.)
+- Allow for BOL (Bill of lading) ID to be created and printed on label
+- Allow unique SSCC (Serial Shipping Container Code) to be created per carton and included on label
+- Allow for creation of GS1 compliant number sequence for BOL and SSCC numbers
+- Allow for HAZMAT code to be include if relevant on label
+- Support for reprint of labels (from handhelds and from rich client)
+- Support for voiding of labels (a.o. for short pick scenarios) and reprint
 - Support for clean-up of wave label history
 
-These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton. 
+These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.
 
 # Setup
 
@@ -75,7 +76,7 @@ Navigate to _Warehouse management - Setup -  Waves - Wave templates._ Select the
 
 ## Wave label layout
 
-The label layout control what information is printed on the label, and how it is laid out. Here is where you write the ZPL code that is sent to the printer. 
+The label layout control what information is printed on the label, and how it is laid out. Here is where you write the ZPL code that is sent to the printer.
 
 Navigate to _Warehouse Management - Setup - Document routing - Wave Label Layout_. Create a new record.
 
@@ -92,11 +93,11 @@ Save the Carton record and click on ‘Row Settings’ in the Ribbon. Click on �
 
 The above setup results in 1 separate ZPL label to be printed per record in Wave labels table.
 
-Click on Edit Query in the ribbon, and in the range section, add a record for Work lines – Work type = Pick. This is so that only the Pick-type work lines are printed on the label, and not the put. 
+Click on Edit Query in the ribbon, and in the range section, add a record for Work lines – Work type = Pick. This is so that only the Pick-type work lines are printed on the label, and not the put.
 
 You need to add the Shipments table to the query to be able to print out Bill of lading ID. Join it to the table Work lines.
 
-In the ZPL Layout FastTab there are three sections in which you can write ZPL: Header, Body, and Footer. 
+In the ZPL Layout FastTab there are three sections in which you can write ZPL: Header, Body, and Footer.
 
 Put the following text in the header:
 
@@ -155,7 +156,7 @@ In the footer put
 
 ^PQ1^XZ
 
-This ends the label. 
+This ends the label.
 
 ## Wave label types
 
@@ -194,13 +195,13 @@ As we are setting up a customer-specific label design, it should be necessary to
 
 Click on Edit Query in the Ribbon, and in the sorting tab, add sorting on Load line ref rec ID (Reference load line id (Record-ID). Click OK and Yes on Grouping reset suggestion.
 
-Click on Wave Label Template Grouping, and check the box to Label build by Load line ref rec ID. This will create one label sequence (“Carton 1 of X” on a label layout) per Load line that is created through the wave. 
+Click on Wave Label Template Grouping, and check the box to Label build by Load line ref rec ID. This will create one label sequence (“Carton 1 of X” on a label layout) per Load line that is created through the wave.
 
 ## Number sequence extensions
 
-Number sequence extension controls GS1 compliance of specific number sequences: 
+Number sequence extension controls GS1 compliance of specific number sequences:
 
-- A new column was added to the “Number sequences” Tab in Warehouse management parameters where you can select the extension. Out of the box it is available only for the following references: 
+- A new column was added to the “Number sequences” Tab in Warehouse management parameters where you can select the extension. Out of the box it is available only for the following references:
 - License plate ID
 - Wave label ID
 - Container ID
@@ -220,7 +221,7 @@ Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Re
 
 Navigate to _Warehouse Management - Setup - Number Sequence Extensions_ and click “Create default setup”. It covers 3 variants of SSCC number generation and 1 variant of GS1-compliant BOL number sequence. You can also create the following setups manually:
 
-Create a new record. 
+Create a new record.
 
 - Number sequence extension: SSCC-18
 - Description: SSCC without application identifier
@@ -229,10 +230,10 @@ In the Segments FastTab, add new segments:
 
 -	Packing type
 - GS1 prefix
-- Number sequence (make sure the length is 16 minus GS1 prefix length) 
-- Check digit 
+- Number sequence (make sure the length is 16 minus GS1 prefix length)
+- Check digit
 
-Create a new record: 
+Create a new record:
 
 - Number sequence extension: BOL
 - Description: Bill of lading ID
@@ -240,8 +241,8 @@ Create a new record:
 In the Segments FastTab, add new segments:
 
 -	GS1 prefix
--	Number sequence (make sure the length is 16 minus GS1 prefix length) 
--	Check digit 
+-	Number sequence (make sure the length is 16 minus GS1 prefix length)
+-	Check digit
 
 Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Number Sequences_ and select extension ID on Wave label ID (SSCC-18) and Bill of lading ID (BOL).
 
@@ -251,9 +252,9 @@ Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ 
 
 Add two lines to the sales order, one for item A0001, quantity 9024, and one for item A0002, quantity 9016 (items are given as example, they must have the Unit sequence group defined above, have unit conversions from ea to Box to PL, and have stock in Warehouse 62).
 
-Reserve the order and release it to the warehouse. 
+Reserve the order and release it to the warehouse.
 
-The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template. 
+The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template.
 
 Wave labels will be generated and printed in the amount equal to the number of cartons.
 
