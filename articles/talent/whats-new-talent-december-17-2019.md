@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,20 +29,21 @@ ms.search.validFrom: 2019-12-17
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 Talent (December 17, 2019)"
-
-[!include [banner](includes/banner.md)]
+# What's new or changed in Dynamics 365 Talent (December 17, 2019)
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
+
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2674.
+
+Changes described in this section apply to build number 8.1.2674. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
 ### Print performance reviews
 
