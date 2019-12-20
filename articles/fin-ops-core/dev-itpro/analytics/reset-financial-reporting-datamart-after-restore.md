@@ -33,27 +33,26 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to reset the financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways depending on the user's role and their access to the client or infrastructure. 
+This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-In specific scenarios, you might have to reset the data mart for financial reporting. Here are some scenarios where you might have to reset the data mart:
+In specific scenarios, you might have to reset the data mart for Financial reporting. Here are some examples:
 
 - The application database was restored, but the data mart database wasn't restored.
-- You see incorrect data for a period and have determined it is not a report design issue. 
-- You see incorrect data for a period and see records under integration attempts within Report designer integration status.
+- You see incorrect data for a period, and you've determined that the issue isn't a report design issue.
+- You see incorrect data for a period, and records appear under integration attempts in Report designer integration status.
 - Support instructs you to reset the data mart as part of a troubleshooting step.
 
-You should reset the data mart only when a small amount of processing is taking place on the database. Financial reporting will be unavailable during the reset process.
+You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
- [!NOTE]
- Resetting the data mart won't impact any report definitions that define the structure of reports, but it is always a good idea to have a backup of your reports. See the note at the end of this doc for instructions on how to backup the report defintions. 
+> [!NOTE]
+> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports. For information about how to back up report definitions, see the note at the end of this topic.
 
 ### Reset the Financial reporting data mart from Report designer
 
 > [!NOTE]
-> The steps in this process are supported for Financial reporting release 7.2.6.0 and later. 
+> The steps in this process are supported for Financial reporting release 7.2.6.0 and later.
 
 To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
-
 
 To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart**. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
@@ -65,13 +64,13 @@ The **Integration attempts** grid shows how many times the system has tried to i
 
 ##### Data status
 
-The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might increase the time it takes to generate reports.
+The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
 
 ##### Misaligned main account categories
 
-If you're using an earlier release than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
+If you're using a release that is earlier than Financial reporting release 7.2.1, you might have to reset the data mart if you rename accounts and move accounts between account categories. These actions can cause main account categories to become misaligned. The **Misaligned main account categories** field shows whether you're experiencing that issue.
 
-### Reset the data mart and select a reason 
+### Reset the data mart and select a reason
 
 If you determine that a data mart reset is required, select the **Reset data mart** check box, and then select a reason in the **Reason** field. The following options are available:
 
@@ -95,22 +94,22 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 [![View the status of the integration](./media/New-integration.PNG)](./media/New-integration.PNG)
 
 > [!NOTE]
-> The reset is finished when all mappings show the status of RanToCompletion and the Integration Status window says "Integration complete" in the bottom-left corner.
+> The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.
 
-## Reset the Financial reporting data mart through PowerShell
+## Reset the Financial reporting data mart through Windows PowerShell
 
 If you ever restore your database from a backup or copy the database from another environment, you must follow the steps in this section to help guarantee that the Financial reporting data mart correctly uses the restored database.
 
 > [!NOTE]
-> The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
+> The steps in this process are supported for Microsoft Dynamics 365 Finance application version 7.0.1 (May 2016) (application build 7.0.1265.23014 and Financial reporting build 7.0.10000.4) and later. If you have an earlier version, contact Support for assistance.
 
 ### Stop services
 
 The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
 
-- World wide web publishing service (on all Application Object Servers [AOS] computers)
+- World wide web publishing service (on all Application Object Servers \[AOS\] computers)
 - Batch Management Service (on non-private AOS computers only)
-- Management Reporter 2012 Process Service (on Business intelligence [BI] computers only)
+- Management Reporter 2012 Process Service (on Business intelligence \[BI\] computers only)
 
 ### Reset
 
@@ -118,7 +117,7 @@ The following Microsoft Windows services will have open connections to the Finan
 
 Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
 
-An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
+An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
 
 #### Run prerequisite SQL scripts against the database
 
@@ -141,7 +140,7 @@ Reset-DatamartIntegration -Reason OTHER -ReasonDetail "<reason for resetting>" -
 ```
 
 > [!NOTE]
-> - SkipMRTableReset preserves tree unit security if you are using it.
+> - SkipMRTableReset preserves tree unit security if you're using it.
 > - If you get an error that a parameter cannot be found that matches SkipMRTableReset, you can remove the parameter and try again (later versions have updated the default behavior to include this switch).
 
 Here is an explanation of the parameters in the **Reset-DatamartIntegration** command:
@@ -161,13 +160,11 @@ Use services.msc to restart the services that you stopped earlier:
 - Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
+## Reset the Financial reporting data mart for Dynamics 365 Finance (on-premises) through SQL Server Management Studio
 
-
-## Reset the Financial reporting data mart for Dynamics 365 Finance (on-premises) through SQL Server Management Studio 
-
-1. Instruct all users to exit Report designer and the Financial reporting area.
+1. Instruct all users to close Report designer and exit the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
- 
+
     ```
     ------------------------------------------------------------------------------------------
     ---- Set service into disabled mode
@@ -197,7 +194,6 @@ Use services.msc to restart the services that you stopped earlier:
     END
     COMMIT TRANSACTION
 
-
     --Enable servicing mode
     IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)
     BEGIN		
@@ -216,7 +212,6 @@ Use services.msc to restart the services that you stopped earlier:
     WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
     PRINT 'Disable integration tasks'
     UPDATE [Scheduling].[Trigger] SET IsEnabled = 0 WHERE [Id] in (SELECT id FROM @triggerIds)
-    
     ```
 
 3. Truncate or delete all records from the FINANCIALREPORTS table in the database (AXDB).
@@ -232,8 +227,8 @@ Use services.msc to restart the services that you stopped earlier:
     BEGIN
         IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Datamart' AND  TABLE_NAME = 'AttributeValueIndexesBackUp'))
         BEGIN
-            --create table to store indexses
-            -- Indexes of different table can have same index_id,but we need unique index id
+            --create table to store indexes
+            -- Indexes of different table can have same index_id, but we need unique index id
             Create table [Datamart].[AttributeValueIndexesBackUp]
             (
                 IndexID INT not null IDENTITY(1,1) PRIMARY KEY,
@@ -491,7 +486,6 @@ Use services.msc to restart the services that you stopped earlier:
 			CLOSE columnCursor
 			DEALLOCATE columnCursor
 
-
 			DECLARE @dcColumnList nvarchar(max) = ''
 			DECLARE @rowsCopied bigint
 			DECLARE @columnName nvarchar(100)
@@ -545,11 +539,8 @@ Use services.msc to restart the services that you stopped earlier:
 		END
 	END
 
-
-
     -- Rebuild dropped indexes that are dynamic
     EXEC [Datamart].ConfigureIndexesAndConstraints
-
 
     --------------------------------------------------------------------------
     ----- Re-Enable the service after resetting the tokens
@@ -610,7 +601,7 @@ Use services.msc to restart the services that you stopped earlier:
 
 ## Export and import report definitions
 
-Resetting the data mart won’t impact any report definitions, but certain data movement activities can cause the loss of reports definitions. Be very careful if you are performing a data movement activity such as overwriting a UAT test environment with a copy of production where new reports were being created in UAT.
+Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment.
 
 ### Export report definitions
 
@@ -620,25 +611,25 @@ First, follow these steps to export the report designs from Report designer.
 2. Select the building block group to export, and then select **Export**.
 
     > [!NOTE]
-    > For Finance and Operations, only one building block group is supported, **Default**.
+    > For Finance and Operations, only one building block group is supported: **Default**.
 
 3. Select the report definitions to export:
 
     - To export all your report definitions and the associated building blocks, select **Select All**.
-    - To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export. Press and hold the Ctrl key to select multiple items on a tab. When you select reports to export, the associated rows, columns, trees, and dimension sets are selected.
+    - To export specific reports, rows, columns, trees, or dimension sets, select the appropriate tab, and then select the items to export. To select multiple items on a tab, press and hold the **Ctrl** key while you make your selections. When you select reports to export, the associated rows, columns, trees, and dimension sets are also selected.
 
 4. Select **Export**.
-5. Enter a file name, and select a secure location where you want to save the exported report definitions.
+5. Enter a file name, and select a secure location to save the exported report definitions in.
 6. Select **Save**.
 
-You can copy or upload the file to a secure location. 
+You can copy or upload the file to a secure location.
 
 > [!WARNING]
-> Be aware of the behavior of drive D on Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+> Be aware of the behavior of drive D on Microsoft Azure virtual machines (VMs). Don't permanently store your exported building block groups on drive D. For more information about temporary drives, see [Understanding the temporary drive on Windows Azure Virtual Machines](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ### Import report definitions
 
-Import your report designs from Report designer by using the file that was created during the export.
+Next, import your report designs from Report designer by using the file that was created during export.
 
 1. In Report designer, select **Company** &gt; **Building Block Groups**.
 2. Select the **Default** building block, and then select **Import**.
@@ -646,6 +637,6 @@ Import your report designs from Report designer by using the file that was creat
 4. In the **Import** dialog box, select the report definitions to import:
 
     - To import all the report definitions and the associated building blocks, select **Select All**.
-    - To import specific reports, rows, columns, trees, or dimension sets, select the reports, rows, columns, trees, or dimension sets to import.
+    - To import specific reports, rows, columns, trees, or dimension sets, select them.
 
 5. Select **Import**.
