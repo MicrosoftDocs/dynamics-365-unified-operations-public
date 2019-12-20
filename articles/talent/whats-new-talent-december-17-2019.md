@@ -47,16 +47,16 @@ Changes described in this section apply to build number 8.1.2674. The numbers in
 
 ### Print performance reviews
 
-Printing performance reviews is now available in all environments. To enable this functionality use the *Feature Management* workspace. See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
+Printing performance reviews is now available in all environments. To enable this functionality use the **Feature management** workspace. See [Print performance reviews](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) in the Dynamics 365: 2019 release wave 2 plan.
 
-### Retired position with direct reports "floats" in org diagram as an open position - (385436)
+### Retired position with direct reports "floats" in org diagram as an open position (385436)
 
-Changes have been made in this week's release to correct how retired positions with directs reports display in the reporting hierarchy.
+This week's release corrects how retired positions with direct reports display in the reporting hierarchy.
  
-### System unable to generate calendar days - (381195)
+### System unable to generate calendar days (381195) 
 
-This week's changes corrects an issue where calendar days could not be generated.
+This week's changes correct an issue where calendar days couldn't be generated.
 
-### Current balance report in leave PBI doubling employee balance - (385581)
+### Current balance report in leave PBI doubles employee balance (385581)
 
-With this change, the current balance report has been corrected in this scenario.
+This change corrects the current balance report in this scenario.
