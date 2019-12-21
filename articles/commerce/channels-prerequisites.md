@@ -48,10 +48,10 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 * [Configure parameters for Commerce](tbd.md)
 
 ## Retail channel prerequisites
+* [Set up a functionality profile](tbd.md)
 * [Set up a default customer](tbd.md)
 * [Set up a customer address book](tbd.md)
 * [Set up an employee address book](tbd.md)
-* [Set up a functionality profile](tbd.md)
 * [Set up a screen layout](tbd.md) (Retail only)
 * [Set up a hardware station](tbd.md) (Retail only)
 
