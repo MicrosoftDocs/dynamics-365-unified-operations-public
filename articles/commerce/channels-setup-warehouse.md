@@ -49,7 +49,7 @@ Before setting up a warehouse, we need to configure warehouse sites.
 
 Below shows an example site created for West US stores.
 
-![Example site](media\warehouse-site.png)
+![Example site](media/warehouse-site.png)
 
 ## Set up a Warehouse
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Warehouses**.
