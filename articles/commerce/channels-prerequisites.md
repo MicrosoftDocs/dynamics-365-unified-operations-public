@@ -41,7 +41,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 ## Prerequisities required for all channel types
 * [Define and configure your legal entity structure](channels-legal-entities.md)
 * [Configure your organizational hierarchy](channels-org-hierarchies.md)
-* [Set up a warehouse](tbd.md)
+* [Set up a warehouse](channels-setup-warehouse.md)
 * [Set up sales tax groups](tbd.md)
 * [Set up an email notification profile](tbd.md)
 * [Set up number sequences, store statements and statement vouchers](tbd.md)
