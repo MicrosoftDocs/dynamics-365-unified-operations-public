@@ -70,29 +70,29 @@ Below shows an example site created for West US stores.
 * In the **Name** field give it a name such as "Default aisle".
 * Select **Save**.
 
-## Continue Warehouse inventory locations.
+## Set up Warehouse inventory locations
 This section shows how to set up inventory locations for standard, damaged and returned inventory.
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Warehouses**.
 * Select the Warehouse you previously created.
-* On the **Action pane**, click **Edit**
+* On the **Action pane**, click **Edit**.
 * On the **Action pane**, select **Warehouse** and **Inventory locations**.
   * On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
   * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to the same name as the Warehouse.
   * Select **Save**.
 	* On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
   * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to "Damaged".
-  * Select **Save**
+  * Select **Save**.
 	* On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
   * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to "Returns".
-  * Select **Save**
+  * Select **Save**.
     
 Below example shows a San Francisco warehouse inventory location setup.
 ![Example inventory location setup](media/warehouse-inventory-locations.png)
     
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Warehouses**.
 * Select the Warehouse you previously created.
-* On the **Action pane**, click **Edit** 
-* Under **Inventory and warehouse Management**
+* On the **Action pane**, click **Edit**.
+* Under **Inventory and warehouse Management**.
 * Set **Default receipt location** to the default location created above.
 * Select **Default issue location** to the default location created above.
 * Under the **Addresses** section add a warehouse address.
@@ -100,8 +100,8 @@ Below example shows a San Francisco warehouse inventory location setup.
   * Set the **Store** to "Yes".
   * Set **Weight** to "1.00". 
   * Set "Storage Dimensions" to the default location created above.
-* Under the **Warehouse** section, set **Physical negative inventory** to "Yes"
-* Select **Save**
+* Under the **Warehouse** section, set **Physical negative inventory** to "Yes".
+* Select **Save**.
 
 The below example shows a warehouse fully configured.
 
