@@ -425,10 +425,10 @@ In your B2C Tenant, collect the names of each policy created for User flows to p
 
 <u>Example Data Only</u>: Provide the following data points to Commerce (in the future, this information will be entered via LCS):
 
-**b2cLoginCustomDomain**: "d365ecom.b2clogin.com",
-**b2cTenantName**: "d365ecom",
-**b2c Application ID**: "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6",
-**b2cReplyUrl**: "https://prod.fabrikam.com",
-**b2cEditProfilePolicyId**: "B2C_1A_ProfileEdit",
-**b2cSignUpSignInPolicyId**: "B2C_1A_signup_signin",
-**b2cResetPasswordPolicyId**: "B2C_1A_PasswordReset",
+- **b2cLoginCustomDomain**: "d365ecom.b2clogin.com"
+- **b2cTenantName**: "d365ecom"
+- **b2c Application ID**: "22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6"
+- **b2cReplyUrl**: "https://prod.fabrikam.com"
+- **b2cEditProfilePolicyId**: "B2C_1A_ProfileEdit"
+- **b2cSignUpSignInPolicyId**: "B2C_1A_signup_signin"
+- **b2cResetPasswordPolicyId**: "B2C_1A_PasswordReset"
