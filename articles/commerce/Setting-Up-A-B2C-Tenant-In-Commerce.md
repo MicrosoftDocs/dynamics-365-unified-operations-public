@@ -45,7 +45,7 @@ Dynamics 365 Commerce utilizes Azure Active Directory (AAD) B2C to support the e
 
 2. Select “Create a resource” from the Microsoft Azure Portal menu. Be sure to use the subscription and directory that will be connected with your Commerce environment.
 
-![Create a Resource in Azure Portal](/commerce/media/B2CImage_1.png "Create a Resource in Azure Portal")
+![Create a Resource in Azure Portal](./media/B2CImage_1.png "Create a Resource in Azure Portal")
 
 
 3. Search for “B2C” in the ‘Search the Marketplace’ toolbar; or navigate to **Identity** **> Azure Active Directory B2C**
@@ -61,7 +61,7 @@ Dynamics 365 Commerce utilizes Azure Active Directory (AAD) B2C to support the e
 
  
 
- ![Create a new Azure AD Tenant](/commerce/media/B2CImage_2.png "Create a new Azure AD Tenant")
+ ![Create a new Azure AD Tenant](./media/B2CImage_2.png "Create a new Azure AD Tenant")
 
  **-OR-**
 
@@ -75,13 +75,13 @@ Dynamics 365 Commerce utilizes Azure Active Directory (AAD) B2C to support the e
 
  
 
-![Link an existing Azure AD B2C Tenant to Azure Subscription](/commerce/media/B2CImage_3.png "Link an existing Azure AD B2C Tenant to Azure Subscription")
+![Link an existing Azure AD B2C Tenant to Azure Subscription](./media/B2CImage_3.png "Link an existing Azure AD B2C Tenant to Azure Subscription")
 
  
 
 5. Once the new Azure AD B2C Directory is created (this may take a few moments), a link to the new directory will be presented in the dashboard
 
-![Link to new AAD Directory](/commerce/media/B2CImage_4.png "Link to new AAD Directory")
+![Link to new AAD Directory](./media/B2CImage_4.png "Link to new AAD Directory")
 
 This link will direct you to the “Welcome to Azure Active Directory B2C” page.
 
@@ -89,13 +89,13 @@ This link will direct you to the “Welcome to Azure Active Directory B2C” pag
 
  
 
-![Warning showing directory has no Active Subscription](/commerce/media/B2CImage_5.png "Warning showing directory has no Active Subscription")
+![Warning showing directory has no Active Subscription](./media/B2CImage_5.png "Warning showing directory has no Active Subscription")
 
  
 
 The link will provide the following options:
 
-![Options to link B2C Tenant to a Subscription](/commerce/media/B2CImage_6.png "Options to link B2C Tenant to a Subscription")
+![Options to link B2C Tenant to a Subscription](./media/B2CImage_6.png "Options to link B2C Tenant to a Subscription")
 
 For example, to switch directories to the location of your target Azure subscription, click on your Account Icon and within the menu, select ‘Switch directory’
 
@@ -121,7 +121,7 @@ Now that the B2C Tenant is created, you will create a B2C Application within the
 
 1. Select “applications” and “Add”
 
-![Adding a B2C Application to your tenant](/commerce/media/B2CImage_7.png "Adding a B2C Application to your tenant")
+![Adding a B2C Application to your tenant](./media/B2CImage_7.png "Adding a B2C Application to your tenant")
 
  
 
@@ -139,7 +139,7 @@ Now that the B2C Tenant is created, you will create a B2C Application within the
 
 - Set ‘Native Client’ to “no” (default)
 
-![Settings for the B2C Application](/commerce/media/B2CImage_8.png "Settings for the B2C Application")
+![Settings for the B2C Application](./media/B2CImage_8.png "Settings for the B2C Application")
 
  
 
@@ -162,7 +162,7 @@ To create default user policies:
 1. Go to the ‘User flows (policies)’ menu-item in the Azure AD B2C – User flows (policies) page 
    
 
-![User Flows menu in Application settings](/commerce/media/B2CImage_9.png "User Flows menu in Application settings")
+![User Flows menu in Application settings](./media/B2CImage_9.png "User Flows menu in Application settings")
 
 2. Select ‘New User Flow’
 
@@ -174,7 +174,7 @@ To create default user policies:
 
 **The following steps will walk through setting each up for the Dynamics 365 Commerce project:**
 
-![Selecting a user flow in the Add User Flow menu](/commerce/media/B2CImage_10.png "Selecting a user flow in the Add User Flow menu")
+![Selecting a user flow in the Add User Flow menu](./media/B2CImage_10.png "Selecting a user flow in the Add User Flow menu")
 
 **Sign up and sign in**
 
@@ -200,7 +200,7 @@ To create default user policies:
 
  
 
-![Sign Up and Sign In policy settings](/commerce/media/B2CImage_11.png "Sign Up and Sign In policy settings")
+![Sign Up and Sign In policy settings](./media/B2CImage_11.png "Sign Up and Sign In policy settings")
 
  
 
@@ -210,7 +210,7 @@ To create default user policies:
 
 8. Select “Run user flow” to view the login ‘domain’ for the policy, under the **select domain** header. (ex: fabrikam.b2clogin.com’. 
 
-![Run user flow option in policy flow](/commerce/media/B2CImage_23.png "Run user flow option in policy flow")
+![Run user flow option in policy flow](./media/B2CImage_23.png "Run user flow option in policy flow")
 
  
 
@@ -222,7 +222,7 @@ To create default user policies:
 
 1. In ‘Create a user flow’, select ‘profile editing’
 
-![Create the Profile Editing user flow](/commerce/media/B2CImage_12.png "Create the Profile Editing user flow")
+![Create the Profile Editing user flow](./media/B2CImage_12.png "Create the Profile Editing user flow")
 
 1. Enter a “Name” for your ‘Profile editing’ profile
 
@@ -243,7 +243,7 @@ To create default user policies:
 
 1.   In ‘Create a user flow’, select the ‘Password Reset’
 
-![Set "Reset Password using mail address" in Password Reset policy](/commerce/media/B2CImage_13.png "Set "Reset Password using mail address" in Password Reset policy")
+![Set "Reset Password using mail address" in Password Reset policy](./media/B2CImage_13.png "Set "Reset Password using mail address" in Password Reset policy")
 
  
 
@@ -301,7 +301,7 @@ To set up a Social Identity Provider:
 
  
 
-![Adding a Social Identity Provider to your application](/commerce/media/B2CImage_14.png "Adding a Social Identity Provider to your application")
+![Adding a Social Identity Provider to your application](./media/B2CImage_14.png "Adding a Social Identity Provider to your application")
 
 *Be sure to use the ‘Client ID’ and ‘Client secret’ as obtained in the above setup steps per identity provider chosen
 
@@ -311,7 +311,7 @@ To set up a Social Identity Provider:
 
 3. Attach User Flow for sign in sign up policies
 
-![Select the added Identity Provider user flow in the 'Identity Providers' menu](/commerce/media/B2CImage_15.png "Select the added Identity Provider user flow in the 'Identity Providers' menu")
+![Select the added Identity Provider user flow in the 'Identity Providers' menu](./media/B2CImage_15.png "Select the added Identity Provider user flow in the 'Identity Providers' menu")
 
  
 
@@ -319,11 +319,11 @@ To set up a Social Identity Provider:
 
 - Select each “Identity Provider” that you have set up for your account
 
-![Select each Social Identity Provider to enable for your policy](/commerce/media/B2CImage_16.png "Select each Social Identity Provider to enable for your policy")
+![Select each Social Identity Provider to enable for your policy](./media/B2CImage_16.png "Select each Social Identity Provider to enable for your policy")
 
 - You may choose to test by clicking “Run user flow”. A new tab will display the login page with the new Identity Provider selection box shown:
 
-![Example default login screen with Social Identity Provider sign-in button displayed](/commerce/media/B2CImage_17.png "Example default login screen with Social Identity Provider sign-in button displayed")
+![Example default login screen with Social Identity Provider sign-in button displayed](./media/B2CImage_17.png "Example default login screen with Social Identity Provider sign-in button displayed")
 
 
 
@@ -346,7 +346,7 @@ In Dynamics, navigate to **Retail>Shared Parameters**
 
 **Step 3**: Copy issuer url
 
-![Copy the Issuer URL from metadata address](/commerce/media/B2CImage_18.png "Copy the Issuer URL from metadata address")
+![Copy the Issuer URL from metadata address](./media/B2CImage_18.png "Copy the Issuer URL from metadata address")
 
 - **Name:** Select a name value for your 
 
@@ -400,12 +400,12 @@ Once Setup of the Azure AD B2C Tenant is complete, provide the Commerce Team wit
 
 Navigate to the “Properties” section of your B2C Application. If needed, use the top search bar in the portal to search Azure AD B2C, select the result for your domain, and go to “Applications”.
 
-![Navigate to the B2C Application within your tenant](/commerce/media/B2CImage_19.png "Navigate to the B2C Application within your tenant")
+![Navigate to the B2C Application within your tenant](./media/B2CImage_19.png "Navigate to the B2C Application within your tenant")
 
 
 Select the Application and then go to the “Properties” tab for the Application details.
 
-![Select the Properties menu of your B2C Application](/commerce/media/B2CImage_20.png "Select the Properties menu of your B2C Application")
+![Select the Properties menu of your B2C Application](./media/B2CImage_20.png "Select the Properties menu of your B2C Application")
 
  
 
@@ -413,13 +413,13 @@ B2C Application ID is the Application ID of the B2C application created in your 
 
 Collect the set Reply URL also:
 
-![Copy the Application ID from the B2C Application's Properties](/commerce/media/B2CImage_21.png "Copy the Application ID from the B2C Application's Properties")
+![Copy the Application ID from the B2C Application's Properties](./media/B2CImage_21.png "Copy the Application ID from the B2C Application's Properties")
 
  
 
 In your B2C Tenant, collect the names of each policy created for User flows to provide to the Commerce Team:
 
-![Collect the names of each B2C policy flow](/commerce/media/B2CImage_22.png "Collect the names of each B2C policy flow")
+![Collect the names of each B2C policy flow](./media/B2CImage_22.png "Collect the names of each B2C policy flow")
 
  
 
