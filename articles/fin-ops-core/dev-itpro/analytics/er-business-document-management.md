@@ -64,7 +64,7 @@ The following reports, with Excel-based templates, will available with the relea
 
 More reports will become available. Special notifications about additional reports will be sent separately. 
 
-A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). To learn more about this feature, complete the example in this topic.
+A complete list of all the reports planned for the October 2019 release can be found in [Configurable business documents reporting in Word and Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). To learn more about this feature, complete the example in this topic.
 
 ## Configure ER parameters
 
