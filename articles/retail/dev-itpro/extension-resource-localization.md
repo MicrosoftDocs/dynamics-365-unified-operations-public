@@ -78,7 +78,7 @@ To get the text ID for a POS string, you must run the POS by using the Retail so
 
 ### Troubleshooting
 
-If the **Developer Mode** option doesn't appear on the **Settings** page in the POS, verify that you're running in Debug mode. Open the **pos.js** file, and verify that **Config.isDebugMode** is set to **true**. If it's set to **false**, change the value to **true**, and then deploy the POS again.
+If the **Developer Mode** option doesn't appear on the **Settings** page in the POS, verify that you're running in Debug mode. Open the **pos.js** file, and verify that **Config.isDebugMode** is set to **true**. If it's set to **false**, change the value to **true**, and then deploy the POS again. If you are not able to find the **Config.isDebugMode** in the **pos.js** file then run the **Commerce.Helpers.DeveloperModeHelper.setDeveloperMode(true);** command in the JavaScript console to set the developer mode On. (Press F12 to launch the developer command tools and select the **Console** tab to open the JavaScript console)
 
 > [!IMPORTANT]
 > You should edit the pos.js file **only** to do quick testing and to get string IDs. In these cases, after you edit the file, you should revert your changes. Any changes that you make in Microsoft cores files will be overridden during deployment. Therefore, you will lose the changes. Additionally, future versions might not support editing the pos.js file.
