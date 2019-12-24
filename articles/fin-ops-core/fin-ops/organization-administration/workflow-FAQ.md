@@ -44,7 +44,7 @@ Each notification is for a different work item, but the similarity can cause con
 There is currently a limitation in the workflow export feature that prevents workflow names from exceeding 48 characters. Using a name that is longer than 48 characters can result in a "Server failed to authenticate the request" error and/or prevent a file to be exported  without a file type. The following blog post provides more details [Workflow Export Troubleshooting](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting).
 
 ## Can the submitter of a workflow also approve the workflow?
-Yes, a submitter of a workflow can also approve the workflow if it is configured that way. To prevent this behavior, set **Workflow parameters > General > Approver > Disallow approval by submitter** to **Yes**.
+Yes, a submitter of a workflow can also approve the workflow if it is configured that way. To prevent this behavior, set **System administration > Workflow > Workflow parameters > General > Approver > Disallow approval by submitter** to **Yes**.
 
 ## Can I add alerts to workflows to provide notifications to users?
 Here are a few key areas to note about adding alerts to workflows to provide notifications:
