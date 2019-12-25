@@ -3,7 +3,7 @@
 
 title: General ledger simulations (Italy)
 description: General ledger simulations.
-author: ilkond
+author: anasyash
 manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-Feature allows to post ledger transactions as simulation from the general journal.
-Simulated ledger transactions can be deleted, modified and moved to the real general ledger.
-Simulated ledger transactions can be shown in the following reports: **Trial balance**, **Dimension statement**.
+Feature allows to post ledger transactions as simulation from the general journal. Simulation feature is avaiable only for journal lines with both **Account type** and **Offset account type** equal to **Ledger**.
+Posted simulation ledger transactions can be deleted, modified and moved to the real general ledger posted transactions.
+Posted simulation ledger transactions can be shown in the reports **Trial balance** and **Dimension statement**.
 
 
 ## Prerequisites
@@ -43,7 +43,8 @@ Simulated ledger transactions can be shown in the following reports: **Trial bal
 - In the **Feature management** workspace, turn on the **General ledger simulations** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Setup 
-### Simulation general journal transfer Number Sequence
+
+### Create Number sequence for Simulation general journal transfer.
 
 Create Number sequence for the Simulation general journal transfer and then setup in the **General ledger parameters**:
 1.	Go to **General ledger > Ledger setup > General ledger parameters**.
@@ -51,17 +52,26 @@ Create Number sequence for the Simulation general journal transfer and then setu
 3.	Set the sequence in the field **Simulation general journal transfer**.
 
 ### Create Simulation Journal
-Go to **General ledger > Journal setup > Journal name** and create Simulation Journal.
-Set **Journal type** as **Daily**.
-Set **Simulation** to **Yes**.
-Set **Requires validation** to **Yes** under **Simulation journal** fields group, to indicate that the journal must be validated before executing simulation posting.
+1. Go to **General ledger > Journal setup > Journal name** and create Simulation Journal.
+2. Set **Journal type** as **Daily**.
+3. Set **Simulation** to **Yes**.
+4. Set **Requires validation** to **Yes** under **Simulation journal** fields group, to indicate that the journal must be validated before executing simulation posting.
 
 
-## Use...
+## Operations
 
-### Post
+### Create and post simulation transaction
+1. Go to **General Ledger > Journal Entries > Simulation journals**
+2. Create journal lines as Ledger - Ledger in standard way.
+3. Post simulation transaction by clicking **Post > Post simulation**. This makes the transaction effective for simulation calculations, and the journal becomes “simulation posted”.
+4. Make posted simulation transaction editable by clicking **Post > Reopen**
+5. Move posted simulation transaction to ordinary ledger by clicking **Post > Post**
 
-When you post...
+It is important to keep in mind that the function that closes a fiscal period or a fiscal year checks that the simulation transactions are either posted as normal transaction or deleted. Consequently if there are pending simulated general ledger transactions for the period, an error message appears.
+
+## Review simulation transactions in reports
+
+### 
 
 > [!NOTE]
 > Warning...
