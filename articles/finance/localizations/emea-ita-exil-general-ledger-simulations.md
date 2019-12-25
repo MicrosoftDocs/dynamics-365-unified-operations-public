@@ -37,7 +37,7 @@ Feature is available only for legal entities with primary address in Italy.
 
 You can post simulation transactions only for journal lines with both **Account type** and **Offset account type** equal to **Ledger**.
 You can delete simulation ledger transactions, modify them and move to the real general ledger posted transactions.
-You can review posted simulation ledger transactions in the reports **Trial balance** and **Dimension statement**.
+You can review posted simulation ledger transactions in the reports **Trial balance** and **Dimension statement with simulation**.
 
 
 ## Prerequisites
@@ -89,7 +89,7 @@ Review that report contains columns which consider simulation tansactions:
 -	**Credit (simultion)**
 -	**Closing balance (with simulations)** which is the total of the values in **Closing balance**, **Debit (simulation)** and **Credit (simultion)**.
 
-### Dimension statements
-Go to **General Ledger > Inquiries and reports > Ledger reports > Dimension statements**.
+### Dimension statement with simulation
+Go to **General Ledger > Inquiries and reports > Ledger reports > Dimension statement with simulation**.
 Set **Simulation journal transactions** to **Yes** on the **Statement by dimension** dialog. Select value in **Simulation journal group**. Click **OK**.
 Review that report contains posted simulation transactions along with standard ledger transactions.
