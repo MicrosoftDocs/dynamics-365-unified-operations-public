@@ -71,7 +71,21 @@ It is important to keep in mind that the function that closes a fiscal period or
 
 ## Review simulation transactions in reports
 
-### 
+Simulation transactions can be reviewed in several ledger reports.
+Please note, that simulation transactions do not appear on the Italian fiscal journal until they become real transactions.
+
+### Create Simulation Journal name group 
+Go to **General ledger > Journal setup > Simulations > Simulation journal group**.
+Create simulation journal group. On the **Simulation journals** tab, include simulation journals to this group from the list of available simulation journals. 
+
+### Trial balance
+Go to **General Ledger > Inquiries and reports > Trial balance**.
+Select **Simulation journal group** on the **Parameters** FastTab of the **Trial balance** report header.
+Review that report contains columns which consider simulation tansactions:
+-	**Debit (simulation)**
+-	**Credit (simultion)**
+-	**Closing balance (with simulations)** which is the total of the values in **Closing balance**, **Debit (simulation)** and **Credit (simultion)**.
+
 
 > [!NOTE]
 > Warning...
