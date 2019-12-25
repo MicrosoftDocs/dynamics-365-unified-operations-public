@@ -32,9 +32,12 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-Feature allows to post ledger transactions as simulation from the general journal. Simulation feature is avaiable only for journal lines with both **Account type** and **Offset account type** equal to **Ledger**.
-Posted simulation ledger transactions can be deleted, modified and moved to the real general ledger posted transactions.
-Posted simulation ledger transactions can be shown in the reports **Trial balance** and **Dimension statement**.
+Feature allows to post ledger transactions as simulation from the general journal and review reports including simulation transactions.
+Feature is available only for legal entities with primary address in Italy. 
+
+You can post simulation transactions only for journal lines with both **Account type** and **Offset account type** equal to **Ledger**.
+You can delete simulation ledger transactions, modify them and move to the real general ledger posted transactions.
+You can review posted simulation ledger transactions in the reports **Trial balance** and **Dimension statement**.
 
 
 ## Prerequisites
@@ -46,7 +49,6 @@ Posted simulation ledger transactions can be shown in the reports **Trial balanc
 
 ### Create Number sequence for Simulation general journal transfer.
 
-Create Number sequence for the Simulation general journal transfer and then setup in the **General ledger parameters**:
 1.	Go to **General ledger > Ledger setup > General ledger parameters**.
 2.	Click the **Number sequences** tab.
 3.	Set the sequence in the field **Simulation general journal transfer**.
@@ -80,12 +82,14 @@ Create simulation journal group. On the **Simulation journals** tab, include sim
 
 ### Trial balance
 Go to **General Ledger > Inquiries and reports > Trial balance**.
-Select **Simulation journal group** on the **Parameters** FastTab of the **Trial balance** report header.
+Select value in **Simulation journal group** on the **Parameters** FastTab of the **Trial balance** report header.
+Enter other parameters and calculate balances.
 Review that report contains columns which consider simulation tansactions:
 -	**Debit (simulation)**
 -	**Credit (simultion)**
 -	**Closing balance (with simulations)** which is the total of the values in **Closing balance**, **Debit (simulation)** and **Credit (simultion)**.
 
-
-> [!NOTE]
-> Warning...
+### Dimension statements
+Go to **General Ledger > Inquiries and reports > Ledger reports > Dimension statements**.
+Set **Simulation journal transactions** to **Yes** on the **Statement by dimension** dialog. Select value in **Simulation journal group**. Click **OK**.
+Review that report contains posted simulation transactions along with standard ledger transactions.
