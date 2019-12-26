@@ -69,6 +69,6 @@ Below is a sample organizational hierarchy created for a ficticious "Adventure W
   * Add organizations, as necessary.
   * To add an organization, click **Edit** and then **Insert** to add the organization. When you are done making changes you can **Save** a draft and/or **Publish** the changes.
 
-In the below screen shot, a legal entity was added at the hierarchy root with four cost centers added for "Mall", "Outlet", "Online" and "Call Center" channels.
+In the below screen shot, a legal entity was added at the hierarchy root with four cost centers added for "Mall", "Outlet", "Online" and "Call Center" channels.  Various retail, call center and online channels can then be added to each.
 
 ![Example hierarchy designer](media/hierarchy-designer.png)
