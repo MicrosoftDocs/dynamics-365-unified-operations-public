@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ## Scenario 1: Consolidate shipments when released to warehouse by automatic release to warehouse of sales orders
 
-This demo will simulate a scenario where multiple orders are released to warehouse within the same automated release to warehouse periodic procedure, and they will be consolidated into shipments automatically based on rules defined as shipment consolidation policies (see [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
+This demo will simulate a scenario where multiple orders are released to warehouse within the same automated release to warehouse periodic procedure, and they will be consolidated into shipments automatically based on rules defined as shipment consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
@@ -158,7 +158,7 @@ Query should be used adding orders by sales order ID.
 
 ## Scenario 2: Override consolidation policy in “Release to warehouse” form
 
-This scenario assumes that you went through shipment policies configuration scripts and have more than 1 consolidation policies (see [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
+This scenario assumes that you went through shipment policies configuration scripts and have more than 1 consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
