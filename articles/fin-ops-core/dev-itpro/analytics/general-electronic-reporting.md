@@ -56,12 +56,12 @@ The ER engine has the following capabilities:
 
 ER supports two types of components: **Data model** and **Format**.
 
-#### Data model components
+#### Data model and model mapping components
 
 A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
 
-- A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+- <a name="DataModelComponent"></a>A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
+- <a name="ModelMappingComponent"></a>A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
 
 A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
 
@@ -86,7 +86,7 @@ A model mapping that supports incoming electronic documents has the following ca
 
 A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
-#### Format components for outgoing electronic documents
+#### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
 
 A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
 
@@ -112,7 +112,7 @@ The following illustration shows how the data flows for these formats.
 
 To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
 
-#### Format components for incoming electronic documents
+#### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
 A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
 
 - A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
