@@ -69,4 +69,4 @@ Before an email notification can be created it will require an organization emai
 * Select the **Active** check box.
 * Click **Save**.
 
-![Email template](media/email-notification-profiles.png)
+![Email template](media/email-notification-profile.png)
