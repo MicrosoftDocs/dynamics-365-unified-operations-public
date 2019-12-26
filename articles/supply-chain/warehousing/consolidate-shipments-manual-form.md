@@ -79,3 +79,4 @@ Release all sales orders manually by clicking on Release to warehouse button on 
 
 - [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](../warehousing/consolidate-shipments.md)

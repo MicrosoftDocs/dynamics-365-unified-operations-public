@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.3
 
 # Released in version 10.0.3
 
-## Scenario 1: Consolidate shipments when released to warehouse by automatic release to warehouse of sales orders
+## Consolidate shipments when released to warehouse by automatic release to warehouse of sales orders
 
 This demo will simulate a scenario where multiple orders are released to warehouse within the same automated release to warehouse periodic procedure, and they will be consolidated into shipments automatically based on rules defined as shipment consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
@@ -159,5 +159,6 @@ Query should be used adding orders by sales order ID.
 
 # Related articles and demo scripts
 
-- [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
-- [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
+- [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
+- [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](../warehousing/consolidate-shipments.md)

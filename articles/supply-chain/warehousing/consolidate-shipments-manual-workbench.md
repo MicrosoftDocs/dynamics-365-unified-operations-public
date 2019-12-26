@@ -25,7 +25,7 @@ ms.search.region: Global
 # ms.search.industry:
 ms.author: v-olbara
 ms.search.validFrom: 2019-08-31
-ms.dyn365.ops.version: 10.0.3
+ms.dyn365.ops.version: 10.0.6
 
 ---
 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-# Released in version 10.0.3
+# Released in version 10.0.6
 
 ## Shipment consolidation workbench
 
@@ -144,3 +144,4 @@ Open the **Shipment consolidation workbench** form and click **Propose shipments
 
 - [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](../warehousing/consolidate-shipments.md)

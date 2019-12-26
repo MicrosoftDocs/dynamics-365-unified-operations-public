@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.3
 
 # Released in version 10.0.3
 
-## Scenario 2: Override consolidation policy in “Release to warehouse” form
+## Override consolidation policy in “Release to warehouse” form
 
 This scenario assumes that you went through shipment policies configuration scripts and have more than 1 consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
@@ -70,5 +70,6 @@ Click **Release to warehouse** for all lines.
 
 # Related articles and demo scripts
 
-- [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
-- [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
+- [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
+- [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](../warehousing/consolidate-shipments.md)

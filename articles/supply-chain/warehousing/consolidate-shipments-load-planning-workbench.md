@@ -33,11 +33,11 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-# Released in version 10.0.3
+# Released in version 10.0.4
 
 ## Release to warehouse from Load planning workbench form
 
-This scenario will simulate a scenario where multiple orders are released to warehouse within the same Load, and they will be consolidated into shipments automatically and assumes that you went through shipment policies configuration scripts (see Scenario 2 at [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
+This scenario will simulate a scenario where multiple orders are released to warehouse within the same Load, and they will be consolidated into shipments automatically and assumes that you went through shipment policies configuration scripts (see Scenario 2 at [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
@@ -143,3 +143,4 @@ Click “Release to warehouse” in the lower grid after the load is created and
 
 - [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
+- [Consolidate shipments](../warehousing/consolidate-shipments.md)

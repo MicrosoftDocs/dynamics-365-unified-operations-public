@@ -64,9 +64,9 @@ The mandatory field list (the shipments are always split by these fields, or in 
 
 For **Sales orders**:
 
-- **Account**: _WHSShipmentTable.AccountNum_
-- **Recipient**: _WHSShipmentTable.DeliveryName_
-- **Delivery address** (RecId): _WHSShipmentTable.DeliveryPostalAddress_
+- **Account number**: _WHSShipmentTable.AccountNum_
+- **Delivery recipient**: _WHSShipmentTable.DeliveryName_
+- **Postal address** (RecId): _WHSShipmentTable.DeliveryPostalAddress_
 - **Warehouse**: _WHSShipmentTable.InventLocationId_
 
 For **Transfer orders**:
