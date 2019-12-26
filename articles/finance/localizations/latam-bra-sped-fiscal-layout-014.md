@@ -69,6 +69,8 @@ In order to generate these records, you need to setup per state the rule that wi
 	1. Go to  **Fiscal books > Setup > Fiscal books parameters per state**
 	2. Select the related State, for example SP
 	3. Mark as **Yes** 
-	4. Select the **SPED presumed tax calculation algorithm**  since the amounts calculated will be reported in record C185
+	4. Select the **SPED presumed tax calculation algorithm**  since the amounts calculated will be reported in record C185.
+	
+![SpedFiscal Setup](media/bra-sped-Fiscal014-Setup.png)	
   
   
