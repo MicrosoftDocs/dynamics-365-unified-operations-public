@@ -58,7 +58,7 @@ This record is generated for Incoming fiscal documents model **6, 66, 29, 28**. 
 The tax authority has introduced the generation of records C180, C185, 1010 and 1250 to detail the operations that that are subject to ICMS-ST tax when the company applies the complement and compensation of ICMS-ST tax. The generation of these record will be addressed by each state
 
 
-### Perquisites
+### Prerequisites
 
 Before you enable the generation of these records , enable the Presumed tax calculation in **Organization administration > Setup > Brazilian parameters > Fiscal document**
 	- ICMS- ST presumed tax
