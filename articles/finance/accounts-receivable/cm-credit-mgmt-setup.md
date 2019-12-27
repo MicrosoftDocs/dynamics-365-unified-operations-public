@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit management setup
-description: 
+description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/04/2019
@@ -31,72 +31,60 @@ ms.dyn365.ops.version:
 ---
 
 # Credit management parameters setup
+
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the options available for configuring Credit management to fit your business' needs. To begin using Credit management features, setup the parameters in **Credit management > Setup > Credit management parameters**.
+This topic describes the options that you can use to configure Credit management to meet your business's requirements. To start to use Credit management features, set up the parameters on the **Credit management parameters** page (**Credit management \> Setup \> Credit management parameters**).
 
 ## Credit parameters
 
-There are four FastTabs where you can change the parameters that control credit management: **Credit holds**; **Credit management checkpoint**; **Credit management statistics**; **Credit limits**. The following sections describe the settings that are available in each of them. 
+There are four FastTabs where you can change the parameters that control Credit management: **Credit holds**, **Credit management checkpoint**, **Credit management statistics**, and **Credit limits**. The following sections describe the settings that are available on each FastTab.
 
 ### Credit holds
 
--	Select **Yes** for **Allow edit of sales orders value after order hold is released** to require the sales order to check the rules again if the sales order value (extended price) has been changed after being released from the on-hold hold list. Normally, if the posting rules have been set up with grace days, the order will only be placed on hold if it is processed within the number of grace days.
-
--	Select the default release reason for the **Reasons for canceled orders** field. This will be the default reason used when a sales order that was on credit management hold is cancelled.
-
--	Select **Yes** for the **Check customer credit groups credit limit** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked and, if the credit limit is sufficient, then the credit limit of the customer will be checked.
-
--	Select **Yes** for **Check credit limit when payment terms are increased** to check the payment terms rankings to see if the payment terms on the sales order are different from the payment terms on the sales order. If the ranking of the new payment term is higher than the original payment term, then the order is placed on credit management hold.
-
--	Select **Yes** for **Check credit limit when a settlement discount is increased** to check the settlement discount rankings to see if the cash discount on the sales order is different from the cash discount on the sales order. If the new cash discount ranking is higher than the original cash discount, the order is placed on credit management hold.
-
--	Select the default release reason for **Reason for releasing modified orders** that will be used when modified orders are automatically released from credit management hold.
-
--	Select **Yes** for **Ignore credit limit expired blocking rule when expiration date is blank** to control the behavior of the **Credit limit expired** rule. Select **No** to block an order when the expiration date is blank.
-
--	Within warehouse management, it is possible to create loads at sales order entry. Select **No** for **Remove blocked load lines** to leave the sales order lines on the load when a sales order is on credit hold. The load cannot be processed when the sales order is on hold. Select **Yes** to remove the sales order lines from the load when a sales order is on credit hold. The load can then be processed.
-
--	Sales orders can be automatically released from credit management review. Select the release reason for **Reason to release automatically** that will be used as the default entry when sales orders are released automatically.
-
--	Sales orders can be automatically released from credit management review. Select **Without posting** for **Automatically release** to release the hold on the order. You will need to manually execute that same process that placed the order on hold. Select **With posting** to post the order using the same posting process that was executed when the sales order was placed on hold.
+- Set the **Allow edit of sales orders value after order hold is released** option to **Yes** to require that the posting rules be checked again if the sales order value (extended price) has been changed since the sales order was released from the on-hold list. Usually, if the posting rules have been set up so that they include grace days, an order will be put on hold only if it's processed within the specified number of grace days.
+- In the **Reasons for canceled orders** field, select the release reason that will be used by default when a sales order that was on credit management hold is canceled.
+- Set the **Check customer credit groups credit limit** option to **Yes** to check the credit limit of a customer credit group when the customer on a sales order belongs to a customer credit group. The credit limit for the group will be checked, and then, if it's sufficient, the credit limit for the customer will be checked.
+- Set the **Check credit limit when payment terms are increased** option to **Yes** to check the payment terms rankings to determine whether the payment terms on the sales order differ from the payment terms on the sales order. If the new payment terms have a higher rank than the original payment terms, the order is put on credit management hold.
+- Set the **Check credit limit when a settlement discount is increased** option to **Yes** to check the settlement discount rankings to determine whether the cash discount on the sales order differs from the cash discount on the sales order. If the new cash discount has a higher rank than the original cash discount, the order is put on credit management hold.
+- In the **Reason for releasing modified orders** field, select the release reason that will be used by default when modified orders are automatically released from credit management hold.
+- Set the **Ignore credit limit expired blocking rule when expiration date is blank** option to **Yes** to control the behavior of the **Credit limit expired** rule. Set the option to **No** to block an order when the expiration date is blank.
+- In Warehouse management, loads can be created at the time of sales order entry. Set the **Remove blocked load lines** option to **No** to leave sales order lines on the load when a sales order is on credit hold. The load can't be processed while the sales order is on hold. Set the option to **Yes** to remove sales order lines from the load when a sales order is on credit hold. The load can then be processed.
+- Sales orders can be automatically released from credit management review. In the **Reason to release automatically** field, select the release reason that will be used by default when sales orders are automatically released.
+- Sales orders can be automatically released from credit management review. In the **Automatically release** field, select **Without posting** to release the hold on an order. You must manually run the process that put the order on hold. Select **With posting** to post the order by using the same posting process that was run when the sales order was put on hold.
 
 ### Credit management checkpoint
 
-You can set the timing for checking sales orders for credit issues. The **Credit management checkpoint** FastTab is used to identify which document posting processes will include processing of credit management rules. You can also choose to check the credit rules while doing either a proforma posting or full posting of the sales order. Select each check box to define which posting processes will put an order on hold after if an issue is found after processing the credit management blocking rules.
+You can set the timing that is used to check sales orders for credit issues. The **Credit management checkpoint** FastTab identifies the document posting processes that include processing of credit management rules. You can also check the credit rules while you do either a pro-forma posting or a full posting of the sales order. Select the check boxes to define the posting processes that should put an order on hold if an issue is found after the credit management blocking rules are processed.
 
-You can also define the number of grace days before the credit rules are checked again. Although you may specify that the credit management rules are checked at posting, the rules will not be checked for the specified number of grace days. For example, if you confirm a sales order on day 1 and you specify 2 grace days for the confirmation step, then credit rules won't be checked at the next posting step, such as creating a packing slip, invoicing the order, and so on, until day 4. On or after day 4, the rules will be checked again when posting occurs and the number of grace days will be changed to the grace days value for the next posting checkpoint.
+You can also define the number of grace days before the credit rules are checked again. Although you can specify that the credit management rules are checked at posting, the rules won't be checked for the specified number of grace days. For example, you confirm a sales order on day 1, and you specify two grace days for the confirmation step. In this case, credit rules won't be checked at the next posting step (for example, creation of a packing slip or invoicing of the order) until day 4. On or after day 4, the rules will be checked again when posting occurs, and the number of grace days will be changed to the value that is specified for the next posting checkpoint.
 
-If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set to execute credit management rules. If you release the sales order without posting and then execute the same order processing step again, it will check the credit rules again. For example, if an order is put on hold after a confirmation and you release it with or without posting, it will be placed on hold again if you confirm it again. Use grace days if you want the order to move on to the next processing step without being held again.
+If you don't specify the number of grace days, the credit rules will be checked at every posting step that is set up to run credit management rules. If you release the sales order without posting and then run the same order processing step again, the credit rules will be checked again. For example, an order is put on hold after a confirmation, and you release it either with or without posting. In this case, the order will be put on hold again if you confirm it again. Use grace days if the order should move on to the next processing step without being held again.
 
-You can't specify grace days for some posting checkpoints and not for others. You must set up all posting checkpoints with grace days or set them all up with no grace days.
+You can't specify grace days for some posting checkpoints but not for others. You must set up all posting checkpoints so that they have grace days, or you must set them all up so that they don't have grace days.
 
--	Select the check box in the **Posting** column to execute the credit management rules when the posting checkpoint shown on the line is executed. If you don't select the check box, the rules will only be checked once during the entire posting process.
-
--	If you selected the **Posting column** check box, add Grace days to identify how many days will pass before the blocking rules will be checked again. You can't add grace days when the check box is not selected.
-
--	Select the check box in the **Pro forma** column to execute the credit management rules when the proforma posting checkpoint shown on the line is executed. In most cases, the posting box is set to No on the dialog that shows when a sales order is posted.
-
--	If you selected the **Posting column** check box, add the number of grace days that identify how many days will pass before the blocking rules will be checked again. You can't add grace days when the check box is not selected.
+- Select the **Posting** check box to run the credit management rules when the posting checkpoint that is shown on the line is run. If you don't select the check box, the rules will be checked only once during the whole posting process.
+- If you select the **Posting** check box, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** check box is cleared.
+- Select the **Pro forma** check box to run the credit management rules when the pro-forma posting checkpoint that is shown on the line is run. In most cases, the **Posting** field is set to **No** in the dialog box that appears when a sales order is posted.
+- If you select the **Posting** check box, specify the number of grace days that should pass before the blocking rules are checked again. You can't add grace days if the **Posting** check box is cleared.
 
 ### Credit management statistics
 
-There are several credit management statistics included in the credit management statistics fact box on the **Customer** page. These statistics require you to specify several values that will be used to calculate those statistics. Enter the number of months used to calculate the following values shown in the **Customer credit management statistics** fact box:
+Several credit management statistics are included in the **Customer credit management statistics** FactBox on the **Customer** page. You must specify several values that are required to calculate those statistics. Enter the number of months that is used to calculate the following values in the **Customer credit management statistics** FactBox:
 
-1.	Days Sales Outstanding 1
-2.	Days Sales Outstanding 2
-3.	Average balance 1
-4.	Average balance 2
-5.	Average credit limit %
-6.	Average exposure %
+1. Days Sales Outstanding 1
+2. Days Sales Outstanding 2
+3. Average balance 1
+4. Average balance 2
+5. Average credit limit %
+6. Average exposure %
 
 ### Credit limits
 
--	In Credit management, the customer credit limit is shown using the customer's currency. You must define the exchange rate type for the credit limit using the customer's currency. Select the **Credit Limit exchange rate type** that will be used to convert the primary credit limit to the customer's credit limit.
+- In Credit management, the customer credit limit is shown in the customer's currency. You must define the exchange rate type for the credit limit in the customer's currency. In the **Credit limit exchange rate type** field, select the type of exchange rate that should be used to convert the primary credit limit to the customer's credit limit.
+- Set the **Allow manual editing of credit limits** option to **No** to prevent users from editing credit limits on the **Customer** page. If this option is set to **No**, changes to a customer's credit limit can be made only by posting credit limit adjustment transactions.
 
--	Select **No** for **Allow manual editing of credit limits** to stop users from editing credit limits on the customer form. When this field is set to No, changes to a customer's credit limit can be only by posting credit limit adjustment transactions.
+### Number sequences and shared number sequence parameters
 
-### Number sequences and shared number sequences parameters
-
-You must add the **Credit limit adjustment number** that will be used to generate the journal ID needed for processing credit limit adjustments.
+A journal ID is required to process credit limit adjustments. You must add the credit limit adjustment number that should be used to generate the journal ID.
