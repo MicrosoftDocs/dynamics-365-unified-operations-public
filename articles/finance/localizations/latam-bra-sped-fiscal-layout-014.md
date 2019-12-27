@@ -1,19 +1,19 @@
-#SPED Fiscal ICMS-IPI - Layout 014
+# SPED Fiscal ICMS-IPI - Layout 014
 
 This topic explains how to set up and generate Sped fiscal statement layout 014 applicable from January 2020 under the practical guide **EFD-ICMS/IPI – version 3.0.3**
 
-##Record 0000 - Opening record
+## Record 0000 - Opening record
 
 New layout 014.(1.13) has been introduced in **Fiscal books > Setup > Tax statements parameters > Sped fiscal > Sped fiscal parameters > Layout version**
 
-##Record 0002 - Classification of fiscal establishment
+## Record 0002 - Classification of fiscal establishment
 
 This record is generated when the field **IND_ATIV** of record 0000 is equal to "0" and the classification of fiscal establishment is configured in **Fiscal books > Setup > Tax statements parameters > Sped fiscal > Sped fiscal parameters > Classification**. 
 
 Assign classification in the related fiscal establishment and when applies more than one type of classification, please inform the classification that is most relevant in the establishment.
 
 
-##Record C500. Incoming fiscal documents
+## Record C500. Incoming fiscal documents
 This record is generated for Incoming fiscal documents model **6, 66, 29, 28**. The following new fields are included as part of new layout
 
 <table>
@@ -54,11 +54,11 @@ This record is generated for Incoming fiscal documents model **6, 66, 29, 28**. 
   </tr>
 </table>
 
-##Complement and compensation for ICMS-ST
+## Complement and compensation for ICMS-ST
 The tax authority has introduced the generation of records C180, C185, 1010 and 1250 to detail the operations that that are subject to ICMS-ST tax when the company applies the complement and compensation of ICMS-ST tax. The generation of these record will be addressed by each state
 
 
-###Prerequisites
+### Prerequisites
 
 Before you enable the generation of these records , enable the Presumed tax calculation in **Organization administration > Setup > Brazilian parameters > Fiscal document**
 	- ICMS- ST presumed tax
@@ -73,7 +73,7 @@ In order to generate these records, you need to setup per state the rule that wi
 	
 ![SpedFiscal Setup](media/bra-sped-Fiscal014-Setup.png)	
   
- ###Table 5.7 . Reason code table for complement and restitution
+ ### Table 5.7 . Reason code table for complement and restitution
 
 The table 5.7 represents the classification of complement and compensation of ICMS-ST amounts. This table is implemented by each state and configured in **Fiscal books > Setup > Reason code for complement and restitution**
 
@@ -86,7 +86,7 @@ After to complete the configuration of reason code table you need to setup the d
 
 ![bra-sped-fiscal014-table57-determination-setup](media/bra-sped-fiscal014-table57-determination-setup.png)
 
-###Record C180
+### Record C180
 This new record introduces complementary information of incoming fiscal document model 01, 1B, 04 and 55 for transactions with ICMS-ST tax transaction. This record is generated under the following criteria:
 	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
 	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
@@ -155,7 +155,7 @@ This new record introduces complementary information of incoming fiscal document
   </tr>
 </table>
 
-###Record C185
+### Record C185
 This new record introduces complementary information of outgoing fiscal document model 01, 1B, 04 and 55 for transactions with ICMS-ST tax transaction. This record is generated under the following criteria:
 	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
 	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
@@ -255,6 +255,23 @@ This new record introduces complementary information of outgoing fiscal document
     <td>18</td>
     <td>VL_UNIT_FCP_ST_CONV_COMPL</td>
     <td>ICMS-ST FCP amount that composes the field "VL_UNIT_ICMS_ST_CONV_COMPL", considering unit used to inform the QUANT_CONV field.</td>
+  </tr>
+</table>
+
+Note: Amounts from field 10 to field 18 are recovered from ICMS-ST presumed tax calculation in ICMS-ST tax assessment
+
+### Record 1010
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>IND_REST_RESSARC_COMPL_ICMS</td>
+    <td>This field is filled with "S" when the generation of record C180 and C185 has been established in Fiscal books parameters per state, Enable record C180 and C185 = Yes and the record 1250 is not empty.</td>
   </tr>
 </table>
 
