@@ -91,6 +91,7 @@ This new record introduces complementary information of incoming fiscal document
 	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
 	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
 
+
 <table>
   <tr>
     <th>#</th>
@@ -100,54 +101,60 @@ This new record introduces complementary information of incoming fiscal document
   <tr>
     <td>1</td>
     <td>REG</td>
-    <td>Fixed<br>&nbsp;&nbsp;text containing "C180"</td>
+    <td>Fixed text containing C180</td>
   </tr>
   <tr>
     <td>2</td>
     <td>COD_RESP_RET</td>
-    <td>Code<br>&nbsp;&nbsp;that indicates the person responsible for the withholding of ICMS-ST:<br>&nbsp;&nbsp;1-Direct Sender 2-Indirect Sender 3-Own declarant. This classification is<br>&nbsp;&nbsp;available in the fiscal document line. For more information about how this<br>&nbsp;&nbsp;code is determined, see: ….</td>
+    <td>Code that indicates the person responsible for the withholding of ICMS-ST: 1-Direct Sender 2-Indirect Sender 3-Own declarant.This classification is available in the fiscal document line. 
   </tr>
   <tr>
     <td>3</td>
     <td>QUANT_CONV</td>
-    <td>The<br>&nbsp;&nbsp;quantity of incoming fiscal document</td>
+    <td>The quantity of incoming fiscal document</td>
   </tr>
   <tr>
     <td>4</td>
     <td>UNID</td>
-    <td>Unit<br>&nbsp;&nbsp;of measure of QUANT_CONV</td>
+    <td>Unit of measure of QUANT_CONV</td>
   </tr>
   <tr>
     <td>5</td>
     <td>VL_UNIT_CONV</td>
-    <td>Line<br>&nbsp;&nbsp;amount per unit considering the unit of measure  used to inform the field<br>&nbsp;&nbsp;"QUANT_CONV" of incoming fiscal document</td>
+    <td>Line amount per unit considering the unit of measure  used to inform the field QUANT_CONV of incoming fiscal document</td>
   </tr>
   <tr>
     <td>6</td>
     <td>VL_UNIT_ICMS_OP_CONV</td>
-    <td>ICMS<br>&nbsp;&nbsp;amount of own operation that the informant would be entitled to recover<br>&nbsp;&nbsp;(credit)  considering unit used to<br>&nbsp;&nbsp;inform the "QUANT_CONV" field. This is the ICMS amount (per unit) .<br>&nbsp;&nbsp;The ICMS tax transaction must be defined with the internal tax rate.</td>
+    <td>ICMS amount of own operation that the informant would be entitled to recover (credit) considering unit used to inform the QUANT_CONV field. This is the ICMS amount per unit. The ICMS tax transaction must be defined with the internal tax rate.</td>
   </tr>
   <tr>
     <td>7</td>
-    <td>VL_UNIT_BC_ICMS_ST<br>&nbsp;&nbsp;_CONV</td>
-    <td>Base Amount of<br>&nbsp;&nbsp;ICMS-ST (per unit) considering the unit used to inform the<br>&nbsp;&nbsp;"QUANT_CONV" field.</td>
+    <td>VL_UNIT_BC_ICMS_ST_CONV</td>
+    <td>Base Amount of ICMS-ST per unitconsidering the unit used to inform the QUANT_CONV field.</td>
   </tr>
   <tr>
     <td>8</td>
-    <td>VL_UNIT_ICMS_ST_<br>&nbsp;&nbsp;CONV</td>
-    <td>ICMS-ST<br>&nbsp;&nbsp;or ICMS-ST presumed tax including FCP considering the unit used to report the<br>&nbsp;&nbsp;"QUANT_CONV".</td>
+    <td>VL_UNIT_ICMS_ST_CONV</td>
+    <td>ICMS-ST or ICMS-ST presumed tax including FCP considering the unit used to report the QUANT_CONV.</td>
   </tr>
   <tr>
     <td>9</td>
     <td>VL_UNIT_FCP_ST_CONV</td>
-    <td>ICMS-ST<br>&nbsp;&nbsp;or ICMS-ST presumed FCP amount (per unit)</td>
+    <td>ICMS-ST or ICMS-ST presumed FCP amount per unit</td>
   </tr>
   <tr>
     <td>10</td>
     <td>COD-DA</td>
-    <td>Type<br>&nbsp;&nbsp;of collection document: 0: State document of collection or 1: GNRE. This<br>&nbsp;&nbsp;classification is available in the fiscal document line. For more information<br>&nbsp;&nbsp;about how this code is determined, see: ….</td>
+    <td>Type of collection document: 0-State document of collection or 1-GNRE. This classification is available in the fiscal document line.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>NUM_DA</td>
+    <td>Number of the state collection document. This classification is available in the fiscal document line.</td>
   </tr>
 </table>
+
 
 
 
