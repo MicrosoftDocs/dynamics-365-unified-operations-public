@@ -61,7 +61,7 @@ A customer needs to be associated with an address book, if one is not created th
 * In the **Description** field, provide a description.
 
 Below is an example address book.
-~[Address book](media/address-book.png)
+![Address book](media/address-book.png)
 
 ## Create a customer
 * Go to **Navigation pane** > **Modules** > **Retail** > **Customers** > **All customers**.
