@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer credit groups
-description: 
+description: This topic provides information about customer credit groups.
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/04/2019
@@ -35,18 +35,16 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-## Customer credit groups
+You can define groups of customers who have the same credit limit. The individual credit limit that is defined on the customer invoice account is also considered.
 
-You can define a group of customers so that members of the group can share a credit limit. In addition, the individual credit limit defined on the customer invoice account is also considered. Members of a customer credit group can be selected from different legal entities. When you add a customer to the list of customers in the customer credit group, the credit limit expiration date for each customer will be changed to the expiration date that is assigned to the group. 
+Members of a customer credit group can be selected from different legal entities. When you add a customer to the list of customers in the customer credit group, the expiration date of the credit limit for each customer is changed to the expiration date that is assigned to the group.
 
-You can set up the customer credit groups on the **Credit management > Customer credit groups > Customer credit groups** page.
+You can set up customer credit groups on the **Customer credit groups** page (**Credit management \> Customer credit groups \> Customer credit groups**).
 
-- Enter a **Group number** and a **Description** of the group.
+1. In the **Group number** and **Description** fields, enter an identifier and description for the group.
+2. In the **Credit limit** and **Currency** fields, enter the credit limit and currency that should be used when the system checks the credit limit for any member of the group.
+3. In the **Credit limit to date** field, enter the date when the credit limit expires. Customer credit groups must have an expiration date.
 
-- Enter the **Credit limit** and **Currency** that will be used when the system checks the credit limit for any member of the group.
+After you've finished setting up a customer credit group, you can add customers to it by specifying their legal entity and customer account ID. When you add a new customer to a customer credit group, the system searches for the same customer account across all legal entities and prompts you to add it to the customer credit group.
 
-- Enter the **Credit limit to date**, which is the date that the credit limit expires. Customer credit groups must have expiration dates.
-
-After the customer credit group has been set up, you can add customers to the group by specifying their legal entity and customer account ID. When adding a new customer to the customer credit group, the system will search for the same customer account across all legal entities and prompt you to add them to the customer credit group.
-
-Open the **Aged balances** menu to view the details of the aging balance for all invoice customers within the customer credit group. The **Aging balance** page shows a summary of the invoice customer account aged balances.
+Open the **Aged balances** menu to view the details of the aging balance for all invoice customers in a customer credit group. The **Aging balance** page shows a summary of the aged balances for the invoice customer accounts.
