@@ -67,9 +67,11 @@ Below is an example address book.
 * Go to **Navigation pane** > **Modules** > **Retail** > **Customers** > **All customers**.
 * On the **Action pane**, click **New**.
 * In the **Type** field, select "Person".
+* In the **Customer account** field, provide an account number. "100001" is used in the example below.
 * In the **First name** field, provide a name such as "Default" used in the example below.
-* In the **Middle name** field, provide a name such as "Online" used in the example below.
-* In the **Last name** field, provide a name such as "Customer".
+* In the **Middle name** field, provide a name such as "Retail" used in the example below.
+* In the **Last name** field, provide a name such as "Customer" used in the example below.
+* In the **Currency** field, provide a currency such as "USD".
 * Select an appropriate **Customer group** created in the previous section.
 * An address is not necessary for a default customer, but you can select a pre-configured customer **Address book**.
 * Click the **Save** button to get back to the customer details for the new customer.
