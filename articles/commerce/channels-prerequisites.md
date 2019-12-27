@@ -56,8 +56,14 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 * [Set up a hardware station](tbd.md) (Retail only)
 
 ## Call Center channel prerequisites
+* [Call center parameters](tbd.md)
+* [Call center refund methods](tbd.md)
+* [Rental types](tbd.md)
+* [Payment services](tbd.md)
+* [Order hold codes](tbd.md)
 
 ## Online channel prerequisites
+* [Online store functionality profiles](tbd.md)
 
 * [Set up product price groups](tbd.md)
 * [Set up product pricing](tbd.md)  As part of this task, you also set up price adjustments, discounts and discount periods.
