@@ -106,7 +106,7 @@ This new record introduces complementary information of incoming fiscal document
   <tr>
     <td>2</td>
     <td>COD_RESP_RET</td>
-    <td>Code that indicates the person responsible for the withholding of ICMS-ST: **1-Direct Sender, 2-Indirect Sender and 3-Own declarant**.This classification is available in the fiscal document line. 
+    <td>Code that indicates the person responsible for the withholding of ICMS-ST: 1-Direct Sender, 2-Indirect Sender and 3-Own declarant.This classification is available in the fiscal document line. 
   </tr>
   <tr>
     <td>3</td>
@@ -146,7 +146,7 @@ This new record introduces complementary information of incoming fiscal document
   <tr>
     <td>10</td>
     <td>COD-DA</td>
-    <td>Type of collection document: **0-State document of collection or 1-GNRE**. This classification is available in the fiscal document line.</td>
+    <td>Type of collection document: 0-State document of collection or 1-GNRE. This classification is available in the fiscal document line.</td>
   </tr>
   <tr>
     <td>11</td>
@@ -155,7 +155,108 @@ This new record introduces complementary information of incoming fiscal document
   </tr>
 </table>
 
+### Record C185
+This new record introduces complementary information of outgoing fiscal document model 01, 1B, 04 and 55 for transactions with ICMS-ST tax transaction. This record is generated under the following criteria:
+	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
+	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
 
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>REG</td>
+    <td>Fixed text containing "C185"</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>NUM_ITEM</td>
+    <td>Sequence number of fiscal document item line</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>COD_ITEM</td>
+    <td>Item code of fiscal document line</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>CST_ICMS</td>
+    <td>ICMS Taxation code</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>CFOP</td>
+    <td>CFOP</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>COD_MOT_REST_COMPL</td>
+    <td>Reason code for restitution or complement as per Table 5.7. For more information<br>&nbsp;&nbsp;about how is determined this classification see….</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>QUANT_CONV</td>
+    <td>Item quantity</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>UNID</td>
+    <td>Unit of measure</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>VL_UNIT_CONV</td>
+    <td>Amountof goods per unit</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>VL_UNIT_ICMS_NA_OPERACAO_CONV</td>
+    <td>ICMS amount per unit</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>VL_UNIT_ICMS_OP_CONV</td>
+    <td>ICMS-ST presumed amount (from incoming fiscal document) per unit</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>VL_UNIT_ICMS_OP_ESTOQUE_CONV</td>
+    <td>Average ICMS tax amount in inventory per unit, considering unit used to inform the QUANT_CONV field.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>VL_UNIT_ICMS_ST_ESTOQUE_CONV</td>
+    <td>Average ICMS-ST tax amount including FCP ST, of the goods in stock, considering the unit used to inform the QUANT_CONV</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV</td>
+    <td>Average of the ICMS ST FCP per unit of the goods in stock, considering the unit used to inform the field QUANT_CONV</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>VL_UNIT_ICMS_ST_CONV_REST</td>
+    <td>ICMS-ST amount, including FCP ST, to be refunded / reimbursed</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>VL_UNIT_FCP_ST_CONV_REST</td>
+    <td>ICMS-ST FCP amount that composes the field "VL_UNIT_ICMS_ST_CONV_REST", considering the unit used to inform the QUANT_CONV field.</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>VL_UNIT_ICMS_ST_CONV_COMPL</td>
+    <td>ICMS amount complement, including FCP ST, considering the unit used to inform the QUANT_CONV field.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>VL_UNIT_FCP_ST_CONV_COMPL</td>
+    <td>ICMS-ST FCP amount that composes the field "VL_UNIT_ICMS_ST_CONV_COMPL", considering unit used to inform the QUANT_CONV field.</td>
+  </tr>
+</table>
 
 
 
