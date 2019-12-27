@@ -46,9 +46,8 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 * Set up an [email notification profile](email-notification-profiles.md)
 * Set up [number sequences](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 * Set up [store statements](tbd.md) (retail only?) and [statement vouchers](tbd.md)
-* Set up a [default customer](default-customer.md)
+* Set up a [default customer and address book](default-customer.md)
 * [Configure parameters for Commerce](tbd.md)
-* [Set up a customer address book](tbd.md)
 
 ## Retail channel prerequisites
 * [Set up a functionality profile](tbd.md)
