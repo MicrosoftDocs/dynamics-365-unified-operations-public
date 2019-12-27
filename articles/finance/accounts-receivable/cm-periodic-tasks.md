@@ -2,7 +2,7 @@
 # required metadata
 
 title: Periodic credit management tasks
-description: This topic describes period tasks that are a necessary component of managing credit limits for your cutomers. 
+description: This topic describes the periodic tasks that are a necessary part of the process of managing credit limits for cutomers. 
 author: mikefalkner
 manager: AnnBe
 ms.date: 09/04/2019
@@ -35,21 +35,21 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes periodic tasks that are a necessary component of managing credit limits for your cutomers. 
+This topic describes the periodic tasks that are a necessary part of the process of managing credit limits for customers.
 
 ## Update risk scores
 
-As businesses evolve and circumstances change, the credit risks for any given customer can also change. To help maintain appropriate credit limits for your customers, you must periodically review the criteria for each risk score and update the scores for each customer. You can use the Update risk scores page (**Credit and collections > Periodic tasks > Credit management > Update risk scores**) to update the following scores. All user-defined calculations are processed, as well.
+As businesses evolve and circumstances change, the credit risks for a given customer can also change. To help maintain appropriate credit limits for your customers, you must periodically review the criteria for each risk score and update the scores for each customer. You can update the following scores by using the **Update risk scores** page (**Credit and collections \> Periodic tasks \> Credit management \> Update risk scores**). All user-defined calculations are also processed.
 
-- **Average payment days** is the average number of days that it takes a customer to pay their invoices. 
-- **Customer since** is the number of years that a customer has been a customer of your organization.
-- **In business since** is the number of years that a customer has been in business using the **Business start** value on the **Customers** page. 
-- **Days sales outstanding** is based on the accounts receivables balance, sales revenue, and number of days for the previous 12 month period.
-- **Average balance** is based on the accounts receivables balance for the previous 12 month period.
-- **Credit management group**, **Account status** and **Country** uses information from the customer. 
+- **Average payment days** – This score is the average number of days that a customer takes to pay invoices.
+- **Customer since** – This score is the number of years that a customer has been a customer of your organization.
+- **In business since** – This score is the number of years that a customer has been in business. It uses the value of the **Business start** field on the **Customers** page.
+- **Days sales outstanding** – This score is based on the accounts receivable balance, sales revenue, and number of days for the previous 12-month period.
+- **Average balance** – This score is based on the accounts receivable balance for the previous 12-month period.
+- **Credit management group**, **Account status**, and **Country** – These scores use information from the customer.
 
-## Update Customer Balance Statistics
+## Update customer balance statistics
 
-You can run the **Update customer balance statistics** process to update the balance statistics calculation that is viewed on the **Balance statistics inquiry** page. This information is used to calculate risk scores and the values shown on the credit statistics fact boxes found on the **Customer** page.
+You can run the **Update customer balance statistics** process to update the calculation of balance statistics that is shown on the **Balance statistics inquiry** page. This information is used to calculate risk scores and the values that are shown in the credit statistics FactBoxes on the **Customer** page.
 
-You can run the process to update customer balance statistics for a single customer, and set up a batch process to run it for multiple customers using the **Calculate balance statistics** page (**Credit management > Periodic tasks > Calculate balance statistics**).
+When you run the the process, it updates customer balance statistics for a single customer. To set up a batch job to run the process for multiple customers, you can use the **Calculate balance statistics** page (**Credit management \> Periodic tasks \> Calculate balance statistics**).
