@@ -38,6 +38,8 @@ This topic presents an overview of Microsoft Dynamics 365 Commerce email notific
 ## Overview
 Before creating channels you'll want to ensure you have set up an email notification profile to ensure email notifications can be sent out for various activities such as order creation, order shipped and payment failure.
 
+For additional email configuration information see [configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+
 ## Creating an email notification profile
 * Go to **Navigation pane** > **Modules** > **Retail** > **Headquearters setup** > **Retail Email notification profile**.
 * On the **Action pane**, click **New**.
