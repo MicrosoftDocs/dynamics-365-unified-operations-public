@@ -106,7 +106,7 @@ This new record introduces complementary information of incoming fiscal document
   <tr>
     <td>2</td>
     <td>COD_RESP_RET</td>
-    <td>Code that indicates the person responsible for the withholding of ICMS-ST: 1-Direct Sender 2-Indirect Sender 3-Own declarant.This classification is available in the fiscal document line. 
+    <td>Code that indicates the person responsible for the withholding of ICMS-ST: **1-Direct Sender, 2-Indirect Sender and 3-Own declarant**.This classification is available in the fiscal document line. 
   </tr>
   <tr>
     <td>3</td>
@@ -146,7 +146,7 @@ This new record introduces complementary information of incoming fiscal document
   <tr>
     <td>10</td>
     <td>COD-DA</td>
-    <td>Type of collection document: 0-State document of collection or 1-GNRE. This classification is available in the fiscal document line.</td>
+    <td>Type of collection document: **0-State document of collection or 1-GNRE**. This classification is available in the fiscal document line.</td>
   </tr>
   <tr>
     <td>11</td>
