@@ -149,7 +149,7 @@ Access to ER format components depends on the setting for the ISO country/region
 
 Different versions of a data format component can have different settings for ISO country/region codes.
 
-#### Configuration
+#### <a name="Configuration"></a>Configuration
 
 An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
@@ -159,13 +159,13 @@ The format configuration that is created contains a format component. The data m
 
 An ER configuration is shared for application companies.
 
-#### Provider
+#### <a name="Provider"></a>Provider
 
 The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-#### Repository
+#### <a name="Repository"></a>Repository
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
