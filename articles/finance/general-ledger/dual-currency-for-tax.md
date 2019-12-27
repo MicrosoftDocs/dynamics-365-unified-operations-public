@@ -59,8 +59,8 @@ The new features are currently enabled for private preview customers. If you or 
 
 This parameter provides two options to convert tax amount from transaction currency to tax currency. 
 
-- Accounting currency: The path will be "Amount in transaction currency -> Amount in accounting currency -> Amount in tax currency"
-- Reporting currency: The path will be "Amount in transaction currency -> Amount in reporting currency -> Amount in tax currency"
+- Accounting currency: The path will be "Amount in transaction currency -> Amount in accounting currency -> Amount in tax currency". Accounting currency exhange rate type (configured in Ledger setup) will be used for currency conversion.
+- Reporting currency: The path will be "Amount in transaction currency -> Amount in reporting currency -> Amount in tax currency". Reporting currency exhange rate type (configured in Ledger setup) will be used for currency conversion.
 
 #### Example
 
