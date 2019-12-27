@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Organizational hierarchies overview
+# Default customer
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic presents an overview of how to create a default customer in Microsoft Dynamics 365 Commerce for use when creating a channel.
 
 ## Overview
-When creating a retail or online channel, you will need to provide a default customer.  Default customers can easily be created following the below steps.
+When creating a retail or online channel, you will need to provide a default customer.  Default customers can easily be created following the below steps including prerequisites of creating a customer group and a customer address book.
 
 ## Create a customer group
 If no customer groups exist yet, you can create one.  Examples may be groups to represent different customer groups such as wholesale, retail, Internet, Employees, ...
