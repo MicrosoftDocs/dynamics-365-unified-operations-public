@@ -73,15 +73,18 @@ Below is an example address book.
 * In the **Last name** field, provide a name such as "Customer" used in the example below.
 * In the **Currency** field, provide a currency such as "USD".
 * Select an appropriate **Customer group** created in the previous section.
-* An address is not necessary for a default customer, but you can select a pre-configured customer **Address book**.
+* An address is not necessary for a default customer.
+* Select a pre-configured customer **Address book**.
 * Click the **Save** button to get back to the customer details for the new customer.
 
+![Default customer creation](media/default-customer-creation.png)
+
+Below example shows a default customer configuration.
+![Sample customer configuration](media/default-customer-configuration1.png)
+
 Most of the defaults for the customer can remain however there are some others that should be changed.
-* Expand the **General** section
-  * Select a
 * Expand the **Sales order defaults**
   * Select the **Site** drop down and select a pre-configured site.
   * Select the **Warehouse** drop down and select a pre-configured warehouse.
   
-Below example shows a default customer configuration.
-![Sample customer configuration](media/default-customer-configuration1.png)
+![Sample customer configuration](media/default-customer-configuration2.png)
