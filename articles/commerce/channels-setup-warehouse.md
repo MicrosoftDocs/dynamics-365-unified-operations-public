@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up a Warehouse
+title: Warehouse set up
 description: This topic presents an overview of warehouse creation to be used with a new channel.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Set up a warehouse
+# Warehouse set up
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
