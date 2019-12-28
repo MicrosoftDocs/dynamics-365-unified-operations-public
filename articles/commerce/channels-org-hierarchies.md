@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Organizational hierarchies overview
+title: Organizational hierarchies
 description: This topic presents an overview of Microsoft Dynamics 365 Commerce organizational hierarchies.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Organizational hierarchies overview
+# Organizational hierarchies
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
