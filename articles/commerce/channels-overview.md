@@ -52,34 +52,13 @@ Channel set up is perfomed in the Commerce Headquarters tool. Each channel can h
 
 ## Channel setup prerequisites
 Before you can set up a channel, you must complete some prerequisite tasks. You can then create the channel and add details.
-
-* [Define and configure your legal entities](channels-legal-entities.md)
-* [Configure your organizational hierarchy](channels-org-hierarchies.md)
-* [Set up a warehouse](tbd.md)
-* [Set up a default customer](tbd.md)
-* [Set up a customer address book](tbd.md)
-* [Set up an employee address book](tbd.md)
-* [Set up an email notification profile](tbd.md)
-* [Set up a functionality profile](tbd.md)
-* [Set up sales tax groups](tbd.md)
-* [Set up a screen layout](tbd.md) (Retail only)
-* [Set up a hardware station](tbd.md) (Retail only)
-* [Set up number sequences, store statements and statement vouchers](tbd.md)
-* [Configure parameters for Commerce](tbd.md)
-* [Set up methods of payments](tbd.md) 
-* [Set up payment services to process credit card transactions](tbd.md)
-* [Set up modes of delivery](tbd.md)
-* [Set up products](tbd.md) As part of this task, you'll also set up retail product hierarchies, product variants, and product assortments.
-* [Set up product price groups](tbd.md)
-* [Set up product pricing](tbd.md)  As part of this task, you also set up price adjustments, discounts and discount periods.
-* [Set up staff members]
-* [Configure the Retail POS profiles to assign to the store](tbd.md).  This task includes many other tasks, such as setting up registers, setting up offline profiles and setting up receipt formats and profiles.
+[Channel prerequisites](channels-prerequisites.md)
 
 ## Set up a channel
 After you complete the prerequisite tasks, follow the link to the channel type you want to create for set up instructions.
-[Set up a Retail channel](tbd.md)
-[Set up a Call Center channel)(tbd.md)
-[Set up an Online channel)(tbd.md)
+[Set up a Retail channel - tbd](tbd.md)
+[Set up a Call Center channel - tbd)(tbd.md)
+[Set up an Online channel - tbd)(tbd.md)
 
 ## After you set up a channel
 After you create a channel, complete these tasks:
