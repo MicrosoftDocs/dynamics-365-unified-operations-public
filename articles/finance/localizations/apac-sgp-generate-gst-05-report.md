@@ -38,13 +38,13 @@ This topic explains the functionality for generating Singapore GST-05 reports. T
 
 Singaporean companies must file a GST return (GST-05 report) on a regular basis. The GST-05 report includes a breakdown of details such as standard-rated, zero-rated, and exempt purchases and sales in a regulated format. To accommodate the requirements, you must follow these two steps while you complete the tax settlement process:
 
-- On the **Sales tax codes** page, categorize your tax codes into three categories by selecting an appropriate value in the **VAT type** field:
+- On the **Set up sales tax codes** form, categorize your tax codes into three categories by selecting an appropriate value in the **VAT type** field:
 
     - Standard
     - Zero
     - Exempt
 
-- On the **Sales tax authority** page, specify the dedicated **Singapore report layout** reporting format.
+- On the **Set up sales tax codes** form, specify the dedicated **Singapore report layout** reporting format.
 
 When you settle and post sales tax to process a tax settlement, the GST-05 report will be generated and printed.
 
@@ -67,23 +67,23 @@ Before you generate the report for the first time, download the following models
 
 After you've finished downloading the ER configurations from LCS, follow these steps.
 
-1. In Microsoft Dynamics 365 Finance, select the related SG company.
+1. In Microsoft Dynamics 365 Finance, select the related 'Singaporean company.
 2. Go to **Workspaces** \> **Electronic reporting**, and set the Microsoft provider to **Active**.
-3. Select **Configurations** \> **Exchange**, and load from the XML file to import the tax declaration model and GST report format file.
+3. Select **Configurations** \> **Exchange**, and load the configuration from the XML file to import the tax declaration model and GST report format file.
 4. In the **Electronic reporting** workspace, select **Configurations** \> **Setup**.
-5. On the **Conditions** tab, select **version 32.1**, and create the configuration that will let you set up the mapping between the sales tax code that is configured in your company and the related boxes of the GST-05 report:
+5. On the **Conditions** tab, select **version 32.1**, and create the configuration that will let you set up the mapping between the sales tax codes that are configured in your company and the related boxes of the GST-05 report:
 
     1. In the **Lookup result** field, select the related box.
     2. In the **Tax code (Code)** field, select the sales tax code that is used to calculate the related box.
     3. In the **Name** field, select the operation where this tax is used.
 
-6. Set the parameter status to **Completed**.
+6. Set the **Status** parameter to **Completed**.
 
 **Example**
 
 In the GST-05 declaration report, box 1 refers to the value of the supplies that are subject to GST at the standard rate of 7 percent. The value that you enter in this box should not include the GST amount that is charged.
 
-If the sales code that you created supports the standard rate of GST\_7% in sales, you must create entries on the **Conditions** tab.
+If the sales code that you created supports the standard rate of the **GST\_7%** sales tax code, you must create entries on the **Conditions** tab.
 
 ![Example of line entries on the Conditions tab](media/SG_GST_Report_Configuration.png)
 
