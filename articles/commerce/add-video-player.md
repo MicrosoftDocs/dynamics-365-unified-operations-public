@@ -38,32 +38,14 @@ This topic covers video player modules and describes how to add them to site pag
 
 ## Overview
 
-Video player modules are used to support video playback. Two video player modules are provided in the store starter kit: the ambient video player module and the video player module. Both players support the .mp4 media type.
+Video player module is used to support video playback. The module can be added to any page as long as a video content is uploaded/available in the content management system. The player support the .mp4 media type.
 
-## Ambient video player module
-
-The ambient video player module supports short informational videos. It should be used for videos that are less than five seconds long. This player supports limited video playback capabilities, such as play and pause.
-
-### Examples of ambient video player modules in e-Commerce
-
-- Short informational videos that highlight new products on the home page
-- Short informational videos that highlight product features on a product details page
-
-### Ambient video player module properties
-
-| Property name     | Value                 | Description |
-|-------------------|-----------------------|-------------|
-| Autoplay          | **True** or **False** | When the value is set to **True**, the video is automatically played. |
-| Mute              | **True** or **False** | When the value is set to **True**, the audio is muted. For this player, the default value is **True**. In the Google Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
-| Loop              | **True** or **False** | When the value is set to **True**, the video is repeated in a loop. |
-| Media             |  Video file path and name | The video file that is played by the video player. |
-| Playback controls | **True** or **False** | When the value is set to **True**, a play/pause button is shown on the video. If the value is set to **False**, the play/pause button isn't shown, but users can still pause and resume the video by using the keyboard. |
 
 ## Video player module
 
-The video player module can be used to showcase videos on an e-Commerce site. It supports all playback capabilities, such as play, pause, full-size mode, and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
+The video player module can be used to showcase videos on an e-Commerce site. It supports all playback capabilities, such as play, pause, full-size mode, audio descriptions and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
 
-The video player module also supports secondary audio tracks. When a video is uploaded, a secondary audio track can also be uploaded. The video player module can then play the secondary audio track if a user selects it.
+The video player module also supports secondary audio tracks. When a video is uploaded to content management system, a secondary audio track can also be uploaded. The video player module can then play the secondary audio track if a user selects it.
 
 ### Examples of video player modules in e-Commerce
 
@@ -79,16 +61,17 @@ The video player module also supports secondary audio tracks. When a video is up
 | Mute                  | **True** or **False**               | When the value is set to **True**, the audio is muted. For this player, the default value is **False**. In the Chrome browser, autoplay videos are muted by default, and the audio is played only if the user manually plays the video. |
 | Loop                  | **True** or **False**               | When the value is set to **True**, the video is repeated in a loop. |
 | Media                 | Video file path and name | The video file that is played in the video player. |
-| Playback controls     | **True** or **False**               | When the value is set to **True**, a play/pause button is shown on the video. If the value is set to **False**, the play/pause button isn't shown, but users can still pause and resume the video by using the keyboard. |
+
 | Play fullscreen       | **True** or **False**               | When the value is set to **True**, the video is played in full-screen mode. |
-| Controls              | **True** or **False**               | When the value is set to **True**, all controls are shown. These controls include play and pause buttons, a progress indicator, and closed captions. |
-| Hide poster frame     | **True** or **False**               | A video can have a poster frame. When the value of this property is set to **True**, the poster frame is hidden. |
+| Play pause trigger| **True** or **False**               | When the value is set to **True**, the video the play/pause buttons on the video are shown on the video|
+| Video player controls              | **True** or **False**               | When the value is set to **True**, all controls are shown. These controls include play and pause buttons, a progress indicator, and closed caption options etc. |
+| Hide poster image     | **True** or **False**               | A video can have a poster frame. When the value of this property is set to **True**, the poster frame is hidden. |
 | Mask level            | A number from **0** through **100** | The mask that is applied to the video for styling. |
-| Fullscreen icon style | **Square** or **Arrow**             | The style of the full-screen icon that is shown in the video player. |
+
 
 ## Add a video player module to a page
 
-To add a video player module to a new page and set the required properties, follow these steps.
+As a pre-requisite, you must first upload a video to the **Media Library**. To add a video player module to a new page and set the required properties, follow these steps.
 
 1. Create a page template that is named **video player template**.
 1. In the **Main** slot of the default page, add a container module.
@@ -111,9 +94,7 @@ To add a video player module to a new page and set the required properties, foll
 
 [Carousel module](add-carousel.md)
 
-[Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
+[Text rich block module](add-content-rich-block.md)
 
 [Feature module](add-feature-module.md)
 
