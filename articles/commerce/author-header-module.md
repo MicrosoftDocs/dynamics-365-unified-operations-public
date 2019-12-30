@@ -33,13 +33,13 @@ ms.dyn365.ops.version:
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers header and describes how to create a header in Microsoft Dynamics 365 Commerce.
+This topic covers header and describes how to create a header for a page in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
 A page header is comprised of multiple modules - Header, Navigation Menu, Search, Promo banner, Cookie consent etc. 
 
-A header module in particular includes a site logo, links to the navigation hierarchy, links to other pages on the site, cart icon, wishlist icon, sign-in optins and the search bar. A header module is automatically optimized for the device that the site is being viewed on (that is, a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
+A Header module in particular includes a site logo, links to the navigation hierarchy, links to other pages on the site, cart icon, wishlist icon, sign-in optins and the search bar. A header module is automatically optimized for the device that the site is being viewed on (that is, a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
 
 In addition to a header module, a page header typically includes a cookie consent and promo banner. These additional modules can be added to the page header if needed.
 
@@ -55,7 +55,7 @@ My account links can be used to define the account pages that the site owner wan
 
 The following modules can be used in a header module:
 
-- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce back office. The navigation menu has a **Navigation Source** property that allows retail server navigation menu and static menu items. If static menu items are allowed as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. See [Navigation menu](Add-navigation-menu.md)for more details
+- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce back office. The navigation menu has a **Navigation Source** property that allows retail server navigation menu and static menu items. If static menu items are allowed as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. 
 
 - **Search** – The search module lets users enter search terms so that they can search for products. Default search page URl and search query parameter must be provided in Site Settings - Extensibility. It has properties that will allow you to suppress the search button or label as needed. Search also supports auto-suggest options which could be Product, Keyword, Category search results or all of them. 
 
