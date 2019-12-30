@@ -54,8 +54,8 @@ This record is generated for Incoming fiscal documents model **6, 66, 29, 28**. 
   </tr>
 </table>
 
-## Complement and compensation for ICMS-ST
-The tax authority has introduced the generation of records C180, C185, 1010 and 1250 to detail the operations that that are subject to ICMS-ST tax when the company applies the complement and compensation of ICMS-ST tax. The generation of these record will be addressed by each state
+## Complement and compensation of ICMS-ST tax
+The tax authority has introduced the generation of records C180, C185, 1010 and 1250 to detail the operations that  are subject to ICMS-ST tax when the company applies the complement and compensation of ICMS-ST tax. The generation of these records will be addressed by each state.
 
 
 ### Prerequisites
@@ -66,10 +66,10 @@ Before you enable the generation of these records , enable the Presumed tax calc
 
 
 In order to generate these records, you need to setup per state the rule that will allow the generation of these records:
-	1. Go to  **Fiscal books > Setup > Fiscal books parameters per state**
-	2. Select the related State, for example SP
-	3. Mark as **Yes** 
-	4. Select the **SPED presumed tax calculation algorithm**  since the amounts calculated will be reported in record C185.
+1. Go to  **Fiscal books > Setup > Fiscal books parameters per state**
+2. Select the related State, for example SP
+3. Mark as **Yes** 
+4. Select the **SPED presumed tax calculation algorithm**  since the amounts calculated will be reported in record C185.
 	
 ![SpedFiscal Setup](media/bra-sped-Fiscal014-Setup.png)	
   
