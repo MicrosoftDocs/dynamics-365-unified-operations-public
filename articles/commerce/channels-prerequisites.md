@@ -57,17 +57,19 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 * [Set up a hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
 
 ## Call Center channel prerequisites
-* [Call center parameters](tbd.md)
-* [Call center refund methods](tbd.md)
-* [Rental types](tbd.md)
-* [Payment services](tbd.md)
-* [Order hold codes](tbd.md)
+* [Call center parameters - tbd](tbd.md)
+* [Call center refund methods - tbd](tbd.md)
+* [Rental types - tbd](tbd.md)
+* [Payment services - tbd](tbd.md)
+* [Order hold codes - tbd](tbd.md)
 
 ## Online channel prerequisites
-* [Online store functionality profiles](tbd.md)
+* [Online store functionality profiles - tbd](tbd.md)
 
-* [Set up product price groups](tbd.md)
-* [Set up product pricing](tbd.md)  As part of this task, you also set up price adjustments, discounts and discount periods.
-* [Set up staff members]
-* [Configure the Retail POS profiles to assign to the store](tbd.md).  This task includes many other tasks, such as setting up registers, setting up offline profiles and setting up receipt formats and profiles.
+* [Set up product price groups - tbd](tbd.md)
+* [Set up product pricing - tbd](tbd.md)  As part of this task, you also set up price adjustments, discounts and discount periods.
+* [Set up staff members - tbd]
+* [Configure the Retail POS profiles to assign to the store - tbd](tbd.md).  This task includes many other tasks, such as setting up registers, setting up offline profiles and setting up receipt formats and profiles.
 
+## Setup Seed data and demo data info
+tbd
