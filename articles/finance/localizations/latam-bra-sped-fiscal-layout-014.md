@@ -194,7 +194,7 @@ This new record introduces complementary information of outgoing fiscal document
   <tr>
     <td>6</td>
     <td>COD_MOT_REST_COMPL</td>
-    <td>Reason code for restitution or complement as per Table 5.7. For more information<br>&nbsp;&nbsp;about how is determined this classification see….</td>
+    <td>Reason code for restitution or complement as per Table 5.7.</td>
   </tr>
   <tr>
     <td>7</td>
@@ -275,5 +275,227 @@ Note: Amounts from field 10 to field 18 are recovered from ICMS-ST presumed tax 
   </tr>
 </table>
 
+### Record 1250
 
+This new record is generated to consolidate information about balance of complement or restitution of ICMS and ICMS-ST. 
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>REG</td>
+    <td>Fixed text containing "1250"</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>VL_CREDITO_ICMS_OP</td>
+    <td>Summarization of records  1255 field VL_CREDITO_ICMS_OP_MOT</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>VL_ICMS_ST_REST</td>
+    <td>Summarization of records  1255 field VL_ICMS_ST_REST_MOT</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>VL_FCP_ST_REST</td>
+    <td>Summarization of records  1255 field<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>REG</td>
+    <td>Fixed text containing "1250"</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>VL_CREDITO_ICMS_OP</td>
+    <td>Summarization of records 1255 field VL_CREDITO_ICMS_OP_MOT</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>VL_ICMS_ST_REST</td>
+    <td>Summarization of records 1255 field VL_ICMS_ST_REST_MOT</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>VL_FCP_ST_REST</td>
+    <td>Summarization of records 1255 field VL_ICMS_FCP_REST_MOT</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>VL_ICMS_ST_COMPL</td>
+    <td>Summarization of records 1255 VL_ICMS_ST_COMPL_MOT</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>VL_FCP_ST_COMPL</td>
+    <td>Summarization of records 1255 field VL_FCP_ST_COMPL_MOT</td>
+  </tr>
+</table>L_ICMS_FCP_REST_MOT</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>VL_ICMS_ST_COMPL</td>
+    <td>Summarization of records 1255 VL_ICMS_ST_COMPL_MOT</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>VL_FCP_ST_COMPL</td>
+    <td>Summarization of records 1255 field VL_FCP_ST_COMPL_MOT</td>
+  </tr>
+</table>
+
+### Record 1255
+
+This new record is generated to consolidate information about balance of complement or restitution of ICMS by reason code (table 5.7). 
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>REG</td>
+    <td>Fixed text containing "1255"</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>COD_MOT_REST_COMPL</td>
+    <td>Reason code for restitution and/or complement <br>  Table 5.7</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>VL_CREDITO_ICMS_OP_MOT</td>
+    <td>Summarization of record C185, field VL_UNIT_ICMS_OP_CONV * QUANT_CONV</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>VL_ICMS_ST_REST_MOT</td>
+    <td>Summarization of record C185, field VL_UNIT_ICMS_ST_CONV_REST * QUANT_CONV</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>VL_FCP_ST_REST_MOT</td>
+    <td>Summarization of record C185, field,VL_UNIT_FCP_ST_CONV_REST * QUANT_CONV</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>VL_ICMS_ST_COMPL_MOT</td>
+    <td>Summarization of record C185, field VL_UNIT_ICMS_ST_CONV_COMPL * QUANT_CONV</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>VL_FCP_ST_COMPL_MOT</td>
+    <td>Summarization of record C185 field VL_UNIT_FCP_ST_CONV_COMPL * QUANT_CONV</td>
+  </tr>
+</table>
+
+### Record H030 
+This record is generated together with H005 and H010 when the control of compensation or restitution about ICMS-ST tax was enabled in Fiscal books parameters per state, **Enable record C180 and C185** = Yes,
+The record H005 is generated with field  MOT_INV = 06 , and the record H010 is generated in the same way when the MOT_INV <> 6 
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>REG</td>
+    <td>Fixed text containing "H030".</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>VL_ICMS_OP</td>
+    <td>Average unit amount of ICMS own operations</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>VL_BC_ICMS_ST</td>
+    <td>Average unit amount of ICMS ST base</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>VL_ICMS_ST</td>
+    <td>Average unit amount of ICMS ST tax including FCP</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>VL_FCP</td>
+    <td>Average unit amount of FCP of ICMS-ST tax</td>
+  </tr>
+</table>
+
+## Record G130
+This record is generated to identify the fiscal document of those CIAP operations. A new field has been included as part of new layout
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>NUM_DA</td>
+    <td>Number of the state collection document. This classification is available in the fiscal document line. For more information about how this code is determined </td>
+  </tr>
+</table>
+
+## Record G140 
+This record is generated to identify the fiscal document of those CIAP operations. New fields have been included as part of new layout
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>QTDE</td>
+    <td>Quantity, which was applied to this item, expressed in the same unit as the incoming fiscal document</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>UNID</td>
+    <td>Unit of measure of incoming fiscal document</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>VL_ICMS_OP_APLICADO</td>
+    <td>ICMS amount of incoming fiscal document. The ICMS column from CIAP assessment</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>VL_ICMS_ST_APLICADO</td>
+    <td>ICMS-ST amount of incoming fiscal document. The ICMS column from CIAP assessment</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>VL_ICMS_FRT_APLICADO</td>
+    <td>ICMS amount of incoming fiscal document. The ICMS on freight column from CIAP<br>&nbsp;&nbsp;assessment</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>VL_ICMS_DIF_APLICADO</td>
+    <td>ICMS-DIF amount of incoming fiscal document. The ICMS-DIF column from CIAP assessment</td>
+  </tr>
+</table>
 
