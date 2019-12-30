@@ -68,8 +68,8 @@ Before you enable the generation of these records , enable the Presumed tax calc
 In order to generate these records, you need to setup per state the rule that will allow the generation of these records:
 1. Go to  **Fiscal books > Setup > Fiscal books parameters per state**
 2. Select the related State, for example SP
-3. Mark as **Yes** 
-4. Select the **SPED presumed tax calculation algorithm**  since the amounts calculated will be reported in record C185.
+3. Enable record C180 and C185 as **Yes** . Records H030 with MOT_INV = 06 of record H005 and 1010, 1250, 1255 are also generated. 
+4. Select the method of calculation in **SPED presumed tax calculation algorithm**  since the amounts calculated in Presumed tax process will be reported in record C185.
 	
 ![SpedFiscal Setup](media/bra-sped-Fiscal014-Setup.png)	
   
@@ -90,7 +90,6 @@ After to complete the configuration of reason code table you need to setup the d
 This new record introduces complementary information of incoming fiscal document model 01, 1B, 04 and 55 for transactions with ICMS-ST tax transaction. This record is generated under the following criteria:
 	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
 	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
-
 
 <table>
   <tr>
