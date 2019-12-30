@@ -225,11 +225,11 @@ A single pricing engine is used to calculate retail prices across all channels: 
 
 Retail pricing is designed to work with retail entities instead of non-retail entities. Specifically, it's designed to set prices by store, not by warehouse.
 
-The retail pricing engine doesn't support the following pricing features:
+The retail pricing engine ** does not support** the following pricing features:
 
-- Setting price by using the Site and Warehouse storage dimensions
-- Attribute-based pricing
-- Vendor discount pass-through
+- Setting prices by Site or Site and Warehouse storage dimensions are not supported. If you just specify Site dimension on the trade agreements, then the retail pricing will ignore the Site and apply the trade agremeent to all sites, however, if you specify both Site and Warehouse, then the behavior is un-defined/untested as we expect the retailers to use the store price groups to control the prices for each store/warehouse
+- Attribute-based pricing is not supported
+- Vendor discount pass-through is not supported
 
 In addition, **only** the retail pricing engine supports the following pricing features:
 
