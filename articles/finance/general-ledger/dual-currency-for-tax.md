@@ -34,26 +34,26 @@ ms.dyn365.ops.version: 10.0.9
 # Dual currency support for sales tax
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to extend dual currency accounting feature for sales tax and the impact for sales tax calculation, posting and settlement.
+This topic explains how to extend dual currency accounting for sales taxes and the impact for sales tax calculations, posting and settlements.
 
-Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018) . It changes the way of calculating accounting entry amount in reporting currency.
+Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018). It changes the way of calculating accounting entries in the reporting currency are calculated.
 
-Before dual currency feature, the logic to calculate amount in reporting currency was:
+In earlier versions, the logic to calculate amount in reporting currency was as follows.
 
-- Transaction currency amount -> Accounting currency amount -> Reporting currency amount
+- Transaction currency amount > Accounting currency amount > Reporting currency amount
 
 After dual currency feature, the logic to calculate amount in reporting currency is:
 
-- Transaction currency amount -> Reporting currency amount
+- Transaction currency amount > Reporting currency amount
 
 For more information about dual currency, please refer to [Dual currency](dual-currency.md).
 
-As a consequence, two new features are introduced in feature management "Dual currency support for tax" to ensure accurate sales tax calculation in tax currency and tax settlement balance in both accounting currency and reporting currency.
+As a consequence of support for dual currencies, two new features are available in feature management: "Dual currency support for tax" to ensure that sales taxes are calculated accurately in tax currency and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
 
 - Sales tax conversion
 - Tax settlement auto balance in reporting currency
 
-The new features are currently enabled for private preview customers. If you or your customer wants to enable it, please raise service request through corresponding channels to Microsoft.
+The new features are currently enabled for private preview customers. If you'd like to enable the features, please raise a service request through corresponding channels to Microsoft.
 
 ## Sales tax conversion
 
