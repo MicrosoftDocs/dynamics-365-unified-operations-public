@@ -42,7 +42,7 @@ TBD
 Before an online channel is created ensure you follow the channel prerequisite steps.
 
 * Go to **Navigation pane** > **Modules** > **Channels** > **Online Stores**.
-* Click **New** in the action pane.
+* On the **Action pane** click **New**.
 
 ![New online channel](media/channel-setup-online-1.png)
 
@@ -50,4 +50,16 @@ Before an online channel is created ensure you follow the channel prerequisite s
 * In the **Name** field, provide a name for the new channel.
 * Select the appropriate **Legal entity** from the drop down.
 * Select the appropriate **Warehouse** location from the drop down.
+* Set the appropriate time zone in the **Store time zone** field.
+* Set the appropriate currency in the **Currency** field.
+* In the **Default customer** field, provide a valid default customer.
+* In the **Customer address book** field, provide a valid address book.
+* In the **Email notification profile** field, provide a valid email notification profile.
+* Select **Save**
+
+## Set up payment account
+TBD
+
+## Set up languages
+TBD
 
