@@ -77,14 +77,14 @@ This section shows how to set up inventory locations for standard, damaged and r
 * On the **Action pane**, click **Edit**.
 * On the **Action pane**, select **Warehouse** and **Inventory locations**.
   * On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
-  * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to the same name as the Warehouse.
-  * Select **Save**.
-	* On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
-  * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to "Damaged".
-  * Select **Save**.
-	* On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
-  * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to "Returns".
-  * Select **Save**.
+    * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to the same name as the Warehouse.
+    * Select **Save**.
+  * On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
+    * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to "Damaged".
+    * Select **Save**.
+  * On the **Action pane**, select **New**.  The **Warehouse** drop down should default to your new Warehouse.
+    * Select **Aisle** to "Def" , **Manual update** to "Yes" and **Location** to "Returns".
+    * Select **Save**.
     
 Below example shows a San Francisco warehouse inventory location setup.
 ![Example inventory location setup](media/warehouse-inventory-locations.png)
