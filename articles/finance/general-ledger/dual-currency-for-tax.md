@@ -48,23 +48,25 @@ After dual currency feature, the logic to calculate amount in reporting currency
 
 For more information about dual currency, please refer to [Dual currency](dual-currency.md).
 
-As a consequence of support for dual currencies, two new features are available in feature management: "Dual currency support for tax" to ensure that sales taxes are calculated accurately in tax currency and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
+As a consequence of support for dual currencies, two new features are available in feature management: 
 
 - Sales tax conversion
 - Tax settlement auto balance in reporting currency
 
-The new features are currently enabled for private preview customers. If you'd like to enable the features, please raise a service request through corresponding channels to Microsoft.
+Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
+
+The new features are currently enabled for private preview customers. To enable the features, raise a service request through corresponding channels to Microsoft.
 
 ## Sales tax conversion
 
 This parameter provides two options to convert tax amount from transaction currency to tax currency. 
 
-- Accounting currency: The path will be "Amount in transaction currency -> Amount in accounting currency -> Amount in tax currency". Accounting currency exhange rate type (configured in Ledger setup) will be used for currency conversion.
-- Reporting currency: The path will be "Amount in transaction currency -> Amount in reporting currency -> Amount in tax currency". Reporting currency exhange rate type (configured in Ledger setup) will be used for currency conversion.
+- Accounting currency: The path will be "Amount in transaction currency > Amount in accounting currency > Amount in tax currency". The accounting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
+- Reporting currency: The path will be "Amount in transaction currency > Amount in reporting currency > Amount in tax currency". The reporting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
 
-#### Example
+### Example
 
-A simple example here to demonstrate this feature is:
+A simple example to demonstrate this functionality is:
 
 Currency setup for ledger and tax
 
@@ -93,17 +95,16 @@ Customer could configure this parameter based on the compliance need from tax au
 
 
 
-#### Upgrade Consideration
+### Upgrade Consideration
 
 This feature will only apply for new transactions. For tax transaction already saved in TAXTRANS table but not settled yet, system will not recalculate tax amount in tax currency because the exchange rate at time point of posting tax is already missing.
 
-To prevent above scenario, It's strongly recommended to change this parameter value in a new (clean) tax settlement period without any unsettled tax transaction. If you want to change this value in the middle of a tax settlement period, please run "Settle and post sales tax" program for current tax settlement period before changing this parameter value.
-
+To prevent above scenario, we recommend changing this parameter value in a new (clean) tax settlement period that doesn't contain any unsettled tax transactions. To change this value in the middle of a tax settlement period, please run "Settle and post sales tax" program for current tax settlement period before changing this parameter value.
 
 
 ## Track reporting currency tax amount
 
-Three new fields are added in tax related tables to track amount in reporting currency. You can find these fields in TAXUNCOMMITTED, TAXTRANS tables:
+Three new fields were added to tax-related tables to track amounts in the reporting currency. You can find these fields in the TAXUNCOMMITTED and TAXTRANS tables:
 
 - TaxAmountRep: tax amount in reporting currency
 - TaxBaseAmountRep: base amount in reporting currency
@@ -111,18 +112,18 @@ Three new fields are added in tax related tables to track amount in reporting cu
 
 For tax only saved in TAXUNCOMMITTED table but not posted yet, system will recalculate tax amount in reporting currency at the time of posting and save in TAXTRANS table.
 
-This release will not include reports and forms change to show reporting currency tax amount. It will be delivered in the future release.
+This release will not include changes to reports and forms that show the tax amount in the reporting currency. Changes to reports and forms will be delivered in the future release.
 
 
 
 ## Tax settlement auto-balance in reporting currency
 
-If tax settlement is not balanced in reporting currency for certain reasons, e.g.
+If tax settlement is not balanced in reporting currency for certain reasons, as the following examples show.
 
 - Sales tax conversion path is "Accounting currency"  
 - Exchange rate change in a single tax settlement period
 
-System will automatically generate accounting entry lines to adjust the tax amount variance and offset it against realized exchange gain/loss account which is configured in Ledger setup.
+The system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
 
 Take the previous example to demonstrate this feature:
 
