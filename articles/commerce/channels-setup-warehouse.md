@@ -38,7 +38,7 @@ This topic presents an overview of warehouse creation to be used with a new chan
 ## Overview
 Before setting up a warehouse, we need to configure warehouse sites.
 
-## Set up a Site
+## Set up a wite
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Sites**.
 * On the **Action pane**, click **New**.
 * In the **Site** field, type a value.
@@ -51,7 +51,7 @@ Below shows an example site created for West US stores.
 
 ![Example site](media/warehouse-site.png)
 
-## Set up a Warehouse
+## Set up a warehouse
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Warehouses**.
 * On the **Action pane**, click **New**.
 * In the **Warehouse** field, type a value.  If this is a 1:1 mapping to a Retail store, consider using the store name or the name of a regional distribution center.
@@ -62,7 +62,7 @@ Below shows an example site created for West US stores.
 * If you want to set a **Transit warehouse**, first you'll need to follow these steps to create an additional warehouse where the **Type** is set to **Transit**, then it can be set here.
 * Select **Save**.
 
-## Set up Inventory aisles
+## Set up inventory aisles
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Location setup** -> **Inventory aisles**.
 * On the **Action pane**, click **New**.
 * In the **Warehouse** drop down, select the previously created Warehouse.
@@ -70,7 +70,7 @@ Below shows an example site created for West US stores.
 * In the **Name** field give it a name such as "Default aisle".
 * Select **Save**.
 
-## Set up Warehouse inventory locations
+## Set up warehouse inventory locations
 This section shows how to set up inventory locations for standard, damaged and returned inventory.
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Warehouses**.
 * Select the Warehouse you previously created.
