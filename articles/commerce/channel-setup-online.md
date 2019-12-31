@@ -39,7 +39,7 @@ This topic presents the steps needed to create a new online channel within Micro
 TBD
 
 ## Create a new online channel
-Before an online channel is created ensure you follow the channel prerequisite steps.
+Before an online channel is created ensure you follow the channel [channel prerequisites](channels-prerequisites.md).
 
 * Go to **Navigation pane** > **Modules** > **Channels** > **Online Stores**.
 * On the **Action pane** click **New**.
