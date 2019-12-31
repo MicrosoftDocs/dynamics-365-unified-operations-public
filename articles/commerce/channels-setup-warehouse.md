@@ -66,7 +66,7 @@ Below shows an example site created for West US stores.
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Location setup** -> **Inventory aisles**.
 * On the **Action pane**, click **New**.
 * In the **Warehouse** drop down, select the previously created Warehouse.
-* In the **Aisle* field give it a name such as "Def".
+* In the **Aisle** field give it a name such as "Def".
 * In the **Name** field give it a name such as "Default aisle".
 * Select **Save**.
 
