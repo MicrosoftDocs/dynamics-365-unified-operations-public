@@ -89,6 +89,7 @@ This section shows how to set up inventory locations for standard, damaged and r
 Below example shows a San Francisco warehouse inventory location setup.
 ![Example inventory location setup](media/warehouse-inventory-locations.png)
     
+## Complete warehouse set up
 * Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Warehouses**.
 * Select the Warehouse you previously created.
 * On the **Action pane**, click **Edit**.
