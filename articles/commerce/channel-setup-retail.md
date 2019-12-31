@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Set up an online channel
+# Set up an retail channel
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -44,7 +44,7 @@ Before a retail channel is created ensure you follow the channel prerequisite st
 * Go to **Navigation pane** > **Modules** > **Channels** > **Retail stores** > **All retail stores**.
 * On the **Action pane** click **New**.
 
-![New online channel](media/channel-setup-retail-1.png)
+![New retail channel](media/channel-setup-retail-1.png)
 
 ## Configure the new retail channel
 * In the **Name** field, provide a name for the new channel.
