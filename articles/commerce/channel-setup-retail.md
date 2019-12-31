@@ -39,7 +39,7 @@ This topic presents the steps needed to create a new retail channel within Micro
 TBD
 
 ## Create a new retail channel
-Before a retail channel is created ensure you follow the channel prerequisite steps. (LINK TBD)
+Before a retail channel is created ensure you follow the [channel prerequisites](channels-prerequisites.md).
 
 * Go to **Navigation pane** > **Modules** > **Channels** > **Retail stores** > **All retail stores**.
 * On the **Action pane** click **New**.
