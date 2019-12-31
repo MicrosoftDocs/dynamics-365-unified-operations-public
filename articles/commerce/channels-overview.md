@@ -63,6 +63,8 @@ After you complete the prerequisite tasks, follow the link to the channel type y
 ## Post channel configuration
 After you create a channel, you may need to complete some of the below tasks:
 
+* Set up fulfillment groups. (LINK TBD)
+* Add channel to org hierarchy. (LINK TBD)
 * Configure the POS registers for the store. (LINK TBD)
 * Assign product assortments to the store. (LINK TBD)
 * Process assortments to generate the list of products that are included in the assortment and to make the products available in the retail store. (LINK TBD)
