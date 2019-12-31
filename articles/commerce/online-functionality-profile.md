@@ -36,6 +36,7 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic presents an overview of setting up an online functionality profile for Microsoft Dynamics 365 Commerce.
 
 ## Overview
+tbd
 
 ## Create a functionality profile
 The following procedure explains how to create an online functionality profile from within Commerce Headquarters app.
