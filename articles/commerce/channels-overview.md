@@ -56,16 +56,16 @@ Before you can set up a channel, you must complete some prerequisite tasks based
 
 ## Set up a channel
 After you complete the prerequisite tasks, follow the link to the channel type you want to create for set up instructions.
-[Set up a Retail channel - tbd](channel-setup-retail.md)
-[Set up a Call Center channel - tbd)(channel-setup-callcenter.md)
-[Set up an Online channel - tbd)(channel-setup-online.md)
+* [Set up a Retail channel - tbd](channel-setup-retail.md)
+* [Set up a Call Center channel - tbd)(channel-setup-callcenter.md)
+* [Set up an Online channel - tbd)(channel-setup-online.md)
 
 ## Post channel configuration
 After you create a channel, you may need to complete some of the below tasks:
 
-* Configure the POS registers for the store.
-* Assign product assortments to the store.
-* Process assortments to generate the list of products that are included in the assortment and to make the products available in the retail store.
-* Send data such as number sequences, hardware profiles, and POS screen layouts to the Retail POS registers.
-* Publish the retail store to send store data to Retail POS.
-* Run the jobs to send the store data to Retail POS.
+* Configure the POS registers for the store. (LINK TBD)
+* Assign product assortments to the store. (LINK TBD)
+* Process assortments to generate the list of products that are included in the assortment and to make the products available in the retail store. (LINK TBD)
+* Send data such as number sequences, hardware profiles, and POS screen layouts to the Retail POS registers.(LINK TBD)
+* Publish the retail store to send store data to Retail POS. (LINK TBD)
+* Run the jobs to send the store data to Retail POS. (LINK TBD)
