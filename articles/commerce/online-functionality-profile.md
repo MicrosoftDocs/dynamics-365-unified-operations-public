@@ -42,21 +42,12 @@ The following procedure explains how to create an online functionality profile f
 
 * Go to **Navigation pane** > **Modules** > **Channel setup** > **Online store setup** > **Functionality profiles**.
 * From the action pane, click **New**.
-* In the **Profile** field, provide an ID for the profile, the example below uses "FN006".
+* In the **Profile** field, provide an ID for the profile.
 * In the **Description** field, provide a value, the example below uses "Adventure Works Profile".
-* Expand the **General** section.
-  * Select a country for the **ISO** locale.
-  * Modify other settings if desired.
-  * Select a **Receipt profile ID* for email receipts.
 * Expand the **Functions** section.
-  * Modify settings as desired.
-* Expand the **Amount** section.
-  * Modify settings as desired.
-* Expand the **Info Codes** section.
-  * Modify settings as desired.
-* Expand the **Receipt numbering** section.
-  * Modify settings as desired. 
+  * Modify the **CART**, **RETAIL CUSTOMERS** or **CHECKOUT** settings as desired.
+  * Select **Save** button in the action pane when complete.
+
+The below shows an example online functionality profile.
   
-The below shows an example retail functionality profile.
-  
-![Retail functionality profile example](media/retail-functionality-profile.png)
+![Online functionality profile example](media/online-functionality-profile.png)
