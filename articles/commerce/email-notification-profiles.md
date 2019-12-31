@@ -51,7 +51,7 @@ For additional email configuration information see [configure and send email](ht
 Before an email notification can be created it will require an organization email template which contains the senders email information and the email template.  Follow the below steps to create one.
 
 ### Create email template
-* Go to **Navigation pane** > **Modules** > **Retail** > **Headquearters setup** > **Parameters > **Organization email templates**.
+* Go to **Navigation pane** > **Modules** > **Retail** > **Headquearters setup** > **Parameters** > **Organization email templates**.
 * On the **Action pane**, click **New**.
 * In the **Email ID** field, provide an ID to help identify this template.
 * In the **Sends name** field, provide the senders name.
