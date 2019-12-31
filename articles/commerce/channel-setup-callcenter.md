@@ -39,7 +39,7 @@ This topic presents the steps needed to create a new call center channel within 
 TBD
 
 ## Create a new call center channel
-Before a call center channel is created ensure you follow the channel prerequisite steps. (LINK TBD)
+Before a call center channel is created ensure you follow the [channel prerequisites](channels-prerequisites.md).
 
 * Go to **Navigation pane** > **Modules** > **Channels** > **Call centers** > **All call centers**.
 * On the **Action pane** click **New**.
