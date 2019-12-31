@@ -54,12 +54,20 @@ Before an online channel is created ensure you follow the channel prerequisite s
 * Set the appropriate currency in the **Currency** field.
 * In the **Default customer** field, provide a valid default customer.
 * In the **Customer address book** field, provide a valid address book.
+* In the **Functionality profile** field, select one if applicable.
 * In the **Email notification profile** field, provide a valid email notification profile.
 * Select **Save**
 
-## Set up payment account
-TBD
-
 ## Set up languages
-TBD
+If your e-Commerce site will support multiple languages, expand the **Languages** section and add additional languages as needed.
+
+## Set up payment account
+From within the **Payment account** section you can add a 3rd party payment provider.  Please see the following to setup Adyen payment connect (TBD)
+
+Below is an example online channel.
+
+![Example online channel](media/channel-setup-online-2.png)
+
+
+
 
