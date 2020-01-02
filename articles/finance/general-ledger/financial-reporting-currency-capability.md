@@ -20,8 +20,10 @@ By default, any amount appearing in a report will appear as the accounting curre
 * Modifying the <b> Currency display </b> field in the column definition to any of the <b> Translate to ... </b> options, which will perform the currency translation within Financial reporting
 
 Additionally, the following actions will also cause translation:
-* Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. 
-* Using the <b>Currency</b> button in the web report viewer or the <b>Include all reporting currencies</b> button in Report Designer will cause additional versions of the report using translated data to be generated for each currency selected. 
+* Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. You will see the currency being used in Report Designer near the top of the form with a text label saying "Values will be displayed in USD" in the case of US Dollars being the accounting currency of the current company. 
+* Using the <b>Currency</b> button in the web report viewer will cause one additional version of the report to be generated, overriding the accounting currency if it wasn't previously specified. 
+Using the <b>Include all reporting currencies</b> button in Report Designer will cause additional versions of the report using translated data to be generated for each currency selected. 
+Note that this option should only be done if these versions are expected to be used since it will take additional resources to perform the additional generation. 
 
 For amounts being translated within Financial reporting, the following types of translation are available for use, as defined on each MainAccount. 
 
@@ -47,17 +49,17 @@ The Currency translation type will determine how each main account is translated
 
 
 ### Setup for Retained Earnings
-Retained earnings accounts are special in regards to Currency Translation as it has several requirements
+Retained earnings accounts are special in regards to Currency Translation as it has several requirements:
 * Any retained earnings account must be assigned to the Retained Earnings main account category in the Main Accounts form to translate
 * If the default category was renamed, financial reporting is still expecting the original with the backing ID number of 29. 
-* The retained earnings account only translates system generated transactions initiated through the fiscal year end close process. 
-* The retained earnings balance is translated at the rate that exists at the end of the most recent year closed.  This means that currently it is a point in time calculation, not an accumulation of amounts and rates from the beginning balance entered. 
+* The retained earnings account only translates system generated transactions initiated through the fiscal year end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
+* The retained earnings balance is translated at the rate that exists at the end of the most recent year closed.  This means that  it is a point in time calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
 
 ## Report design elements related to currency
 The following are additional report design elements that can be used when doing reporting on currencies
 
 ### Auto text codes
-Users can dynamically see the currency symbol, code, and description they have defined in Dynamics when the currency is changed. Three auto text options have been added to Financial reporting to enable this functionality:
+Users can dynamically see the currency symbol, code, and description they have defined in Dynamics when the currency is changed. Three auto text options are available to Financial reporting to enable this functionality:
 * Currency symbol (@CurrencySymbol)
 * Currency code (@CurrencyCode)
 * Currency description (@CurrencyDescription)
@@ -65,7 +67,7 @@ You can add the auto text both in the Column Definition and in the Report Defini
 
 The places where currency symbols are used are:
 * Display currency symbol on first row which is defined in the Report Definition
-* Use currency format in this row (CS), defined in the Row Definition
+* Use currency format in this row (CS), which is defined in the Row Definition
 * Format Overrides defined in the Row and Column Definition
 
 ### Financial reporting attributes related to currency
@@ -81,11 +83,11 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments form in the row definition
 
-When you enter the row in which you want to display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting ill calculate this difference and put it in the desired row. A line named Rounding Adjustment will be created and shown upon drill-down, as shown in Figure 24. 
+When you enter the row in which you want to display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting will calculate this difference and put it in the desired row. A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected. 
  
 2. Create a single line with all accounts to calculate the CTA. 
 
-Put all of the accounts in a range, from assets to expenses. This difference will be the same amount as the rounding adjustment (CTA) and can be used as a check total to make sure the rounding adjustment form is not including any missed account balance
+Put all of the accounts in a range, from assets to expenses. This difference will be the same amount as the rounding adjustment (CTA) and can be used as a check total to make sure the rounding adjustment form is not including any missed account balance.
 
 Resources for more information
 * https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2014/01/23/acquisition-date-attribute-for-dynamics-ax-2012-cu7-feature/
@@ -93,3 +95,4 @@ Resources for more information
 * https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2013/10/24/currency-translation-for-microsoft-dynamics-ax-2012-part-3-report-designer-options-for-currency-translation-cu7-feature/
 * https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2013/10/23/currency-translation-for-microsoft-dynamics-ax-2012-part-2-changing-reporting-currencies-in-the-web-viewer-cu7-feature/
 * https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2013/10/23/currency-translation-for-microsoft-dynamics-ax-2012-part-1-setup-cu7-feature/
+* https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/05/03/using-currency-translation-with-management-reporter-and-ax/?source=axsupport
