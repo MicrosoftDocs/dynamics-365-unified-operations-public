@@ -62,7 +62,7 @@ Before a retail channel is created ensure you follow the [channel prerequisites]
 
 ![Example retail channel](media/channel-setup-retail-2.png)
 
-## Additional settings
+## Other settings
 There are numerous others settings that can be optionally set in the **Statement/closing**, **Miscellaneous** sections based on the needs of the retail store.
 
 Additionally see [screen layouts for the POS](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) to setup the default **Screen Layout** and [configure and install Retail hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) for **Hardware stations** set up information.
@@ -70,8 +70,43 @@ Additionally see [screen layouts for the POS](https://docs.microsoft.com/en-us/d
 Below image shows an example retail channel setup configuration.
 ![Example retail channel configuration](media/channel-setup-retail-3.png)
 
+## Additional channel set up
+There are additional items that need to be set up for a channel that can be found on the **Action pane** under the **Set up** section.
 
+![Set up channel](media/channel-setup-retail-4.png)
 
+### Set up payment methods
+* On the **Action pane**, select the **Set Up** tab and click **Payment methods**.
 
+For each payment type supported on this channel do the following:
+* On the **Action pane**, select **New**.
+* Select an appropriate **Payment method**.
+* In the **General** section provide an **Operation name** and set any other desired settings.
+* Configure any additional settings as required for the payment type.
+* Select **Save**.
 
+![Example payment methods](media/channel-setup-retail-5.png)
 
+### Set up Cash declartion
+* On the **Action pane**, select the **Set Up** tab and click **Cash declaration**.
+* TBD
+
+### Set up modes of deliver
+* On the **Action pane**, select the **Set Up** tab and click **Modes of delivery**.
+TBD
+
+### Set up Income/Expense account
+* On the **Action pane**, select the **Set Up** tab and click **Income/Expense account**.
+TBD
+
+### Set up Sections
+* On the **Action pane**, select the **Set Up** tab and click **Sections**.
+TBD
+
+### Set up fulfillment group assignment
+* On the **Action pane**, select the **Set Up** tab and click **Modes of delivery**.
+TBD
+
+### Set up Safes
+* On the **Action pane**, select the **Set Up** tab and click **Safes**.
+TBD
