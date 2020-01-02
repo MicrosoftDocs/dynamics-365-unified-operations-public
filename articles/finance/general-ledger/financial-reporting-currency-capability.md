@@ -95,10 +95,3 @@ When you enter the row in which you want to display the CTA, the total assets ro
 
 Put all of the accounts in a range, from assets to expenses. This difference will be the same amount as the rounding adjustment (CTA) and can be used as a check total to make sure the rounding adjustment form is not including any missed account balance.
 
-Resources for more information
-* https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2014/01/23/acquisition-date-attribute-for-dynamics-ax-2012-cu7-feature/
-* https://download.microsoft.com/download/2/0/D/20D27A5C-6AA5-4FA9-A6E9-AB6F244B38DA/Financial%20consolidations%20and%20currency%20translation.pdf
-* https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2013/10/24/currency-translation-for-microsoft-dynamics-ax-2012-part-3-report-designer-options-for-currency-translation-cu7-feature/
-* https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2013/10/23/currency-translation-for-microsoft-dynamics-ax-2012-part-2-changing-reporting-currencies-in-the-web-viewer-cu7-feature/
-* https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2013/10/23/currency-translation-for-microsoft-dynamics-ax-2012-part-1-setup-cu7-feature/
-* https://cloudblogs.microsoft.com/dynamics365/no-audience/2016/05/03/using-currency-translation-with-management-reporter-and-ax/?source=axsupport
