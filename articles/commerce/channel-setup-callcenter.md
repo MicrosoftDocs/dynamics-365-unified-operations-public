@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up an call center channel
+title: Set up a call center channel
 description: This topic presents the steps needed to create a new call center channel within Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Set up an online channel
+# Set up a call center channel
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -50,24 +50,13 @@ Before a call center channel is created ensure you follow the [channel prerequis
 * In the **Name** field, provide a name for the new channel.
 * Select the appropriate **Legal entity** from the drop down.
 * Select the appropriate **Warehouse** location from the drop down.
-* Set the appropriate time zone in the **Store time zone** field.
-* Set the appropriate currency in the **Currency** field.
 * In the **Default customer** field, provide a valid default customer.
-* In the **Customer address book** field, provide a valid address book.
-* In the **Functionality profile** field, select one if applicable.
 * In the **Email notification profile** field, provide a valid email notification profile.
+* Provide a **Price override** info code.  Note you may need to create an info code for this first.
+* Provide a **Hold code** info code.  Note you may need to create an info code for this first.
+* Provide a **Credit** info code.  Note you may need to create an info code for this first.
 * Select **Save**
-
-## Set up languages
-If your e-Commerce site will support multiple languages, expand the **Languages** section and add additional languages as needed.
-
-## Set up payment account
-From within the **Payment account** section you can add a 3rd party payment provider.  Please see the following to setup Adyen payment connect (TBD)
 
 Below is an example call center channel.
 
 ![Example call center channel](media/channel-setup-callcenter-2.png)
-
-
-
-
