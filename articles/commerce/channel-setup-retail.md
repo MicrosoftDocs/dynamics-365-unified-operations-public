@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Set up an retail channel
+# Set up a retail channel
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -48,25 +48,29 @@ Before a retail channel is created ensure you follow the [channel prerequisites]
 
 ## Configure the new retail channel
 * In the **Name** field, provide a name for the new channel.
+* In the **Store number** field, provide a unique store number. THe number can be alphanumeric with a maximum of 10 characters.
 * Select the appropriate **Legal entity** from the drop down.
 * Select the appropriate **Warehouse** location from the drop down.
 * Set the appropriate time zone in the **Store time zone** field.
+* Select an appropriate **Sales tax group** for the store.
 * Set the appropriate currency in the **Currency** field.
-* In the **Default customer** field, provide a valid default customer.
 * In the **Customer address book** field, provide a valid address book.
+* In the **Default customer** field, provide a valid default customer.
 * In the **Functionality profile** field, select one if applicable.
 * In the **Email notification profile** field, provide a valid email notification profile.
 * Select **Save**
 
-## Set up languages
-If your e-Commerce site will support multiple languages, expand the **Languages** section and add additional languages as needed.
-
-## Set up payment account
-From within the **Payment account** section you can add a 3rd party payment provider.  Please see the following to setup Adyen payment connect (TBD)
-
-Below is an example retail channel.
-
 ![Example retail channel](media/channel-setup-retail-2.png)
+
+## Additional settings
+There are numerous others settings that can be optional set in the **Statement/closing**, **Miscellaneous**.
+
+See (**LINK TBD**) to setup the default **Screen Layout** and (**LINK TBD**) for **Hardware stations** set up information.
+
+Below image shows an example retail channel setup configuration.
+![Example retail channel configuration](media/channel-setup-retail-3.png)
+
+
 
 
 
