@@ -60,3 +60,29 @@ Before a call center channel is created ensure you follow the [channel prerequis
 Below is an example call center channel.
 
 ![Example call center channel](media/channel-setup-callcenter-2.png)
+
+## Additional channel set up
+There are additional items that need to be set up for a channel that can be found on the **Action pane** under the **Set up** section.
+
+![Set up channel](media/channel-setup-callcenter-3.png)
+
+### Set up payment methods
+* On the **Action pane**, select the **Set Up** tab and click **Payment methods**.
+
+For each payment type supported on this channel do the following:
+* On the **Action pane**, select **New**.
+* Select an appropriate **Payment method**.
+* In the **General** section provide an **Operation name** and set any other desired settings.
+* Configure any additional settings as required for the payment type.
+* Select **Save**.
+
+![Example payment methods](media/channel-setup-retail-5.png)
+
+### Set up modes of delivery
+By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane** you can see the configured modes of delivery.  To change or add a mode of delivery follow the below steps.
+* Go to **Navigation pane** > **Modules** > **Invetory management** > **Modes of delivery**.
+* On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
+* In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
+
+![Example payment methods](media/channel-setup-retail-7.png)
+
