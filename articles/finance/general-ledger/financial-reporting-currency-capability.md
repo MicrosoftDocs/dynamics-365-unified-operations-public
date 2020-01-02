@@ -1,3 +1,4 @@
+[!include preview banner]
 # Overview
 Financial reporting has a wide variety of features in order to support complex currency reporting requirements. Financial reporting can report on any of the following currency amounts:
 * Accounting currency amount 
@@ -54,6 +55,8 @@ Retained earnings accounts are special in regards to Currency Translation as it 
 * If the default category was renamed, financial reporting is still expecting the original with the backing ID number of 29. 
 * The retained earnings account only translates system generated transactions initiated through the fiscal year end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
 * The retained earnings balance is translated at the rate that exists at the end of the most recent year closed.  This means that  it is a point in time calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
+
+Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 () enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality, go to the Feature management workspace and select Enable dual currency functionality in General ledger consolidation.
 
 ## Report design elements related to currency
 The following are additional report design elements that can be used when doing reporting on currencies
