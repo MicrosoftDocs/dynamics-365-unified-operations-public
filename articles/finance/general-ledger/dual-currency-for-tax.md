@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.9
 
 This topic explains how to extend dual currency accounting for sales taxes and the impact for sales tax calculations, posting and settlements.
 
-Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018). It changes the way of calculating accounting entries in the reporting currency are calculated.
+The Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018). It changes the way that accounting entries in the reporting currency are calculated.
 
 In earlier versions, the logic to calculate amount in reporting currency was as follows.
 
@@ -53,7 +53,7 @@ As a consequence of support for dual currencies, two new features are available 
 - Sales tax conversion
 - Tax settlement auto balance in reporting currency
 
-Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
+Dual currency support for sales taxes ensures that taxes are calculated accurately in the tax currency, and that the sales tax settlement balance is calculated accurately in both the accounting currency and reporting currency. 
 
 The new features are currently enabled for private preview customers. To enable the features, raise a service request through corresponding channels to Microsoft.
 
@@ -91,20 +91,19 @@ Tax amount = 100 EUR
 | Accounting currency             | 100                        | 111                       | 83                       | **83.25**          |
 | Reporting currency              | 100                        | 111                       | 83                       | **83**             |
 
-Customer could configure this parameter based on the compliance need from tax authority.
-
+This parameter can be configured based on the compliance need from tax authority.
 
 
 ### Upgrade Consideration
 
 This feature will only apply for new transactions. For tax transaction already saved in TAXTRANS table but not settled yet, system will not recalculate tax amount in tax currency because the exchange rate at time point of posting tax is already missing.
 
-To prevent above scenario, we recommend changing this parameter value in a new (clean) tax settlement period that doesn't contain any unsettled tax transactions. To change this value in the middle of a tax settlement period, please run "Settle and post sales tax" program for current tax settlement period before changing this parameter value.
+To prevent preceding scenario, we recommend changing this parameter value in a new (clean) tax settlement period that doesn't contain any unsettled tax transactions. To change this value in the middle of a tax settlement period, please run "Settle and post sales tax" program for current tax settlement period before changing this parameter value.
 
 
 ## Track reporting currency tax amount
 
-Three new fields were added to tax-related tables to track amounts in the reporting currency. You can find these fields in the TAXUNCOMMITTED and TAXTRANS tables:
+Three new fields were added to tax-related tables to track amounts in the reporting currency. These fields are within the TAXUNCOMMITTED and TAXTRANS tables:
 
 - TaxAmountRep: tax amount in reporting currency
 - TaxBaseAmountRep: base amount in reporting currency
@@ -118,24 +117,16 @@ This release will not include changes to reports and forms that show the tax amo
 
 ## Tax settlement auto-balance in reporting currency
 
-If tax settlement is not balanced in reporting currency for certain reasons, as the following examples show.
+If the tax settlement is not balanced in the reporting currency for certain reason such as the sales tax conversion path is "Accounting currency", or the exchange rate change in a single tax settlement period, thebn the system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
 
-- Sales tax conversion path is "Accounting currency"  
-- Exchange rate change in a single tax settlement period
-
-The system will automatically generate accounting entries to adjust the tax amount variance and offset it against realized exchange gain/loss account, which is configured in Ledger setup.
-
-Take the previous example to demonstrate this feature:
-
-Data in TAXTRANS table at the time point of posting
+Using the the previous example to demonstrate this feature, suppose that the data in TAXTRANS table at the time of posting is as follows.
 
 | Sales tax conversion parameters | Transaction currency (EUR) | Accounting currency (USD) | Reporting currency (GBP) | Tax currency (GBP) |
 | ------------------------------- | -------------------------- | ------------------------- | ------------------------ | ------------------ |
 | Accounting currency             | 100                        | 111                       | 83                       | **83.25**          |
 | Reporting currency              | 100                        | 111                       | 83                       | **83**             |
 
-When customer runs the sales tax settlement program at month end, the accounting entry will be
-
+When you run the sales tax settlement program at month-end, the accounting entry will be as follows:.
 #### Scenario: sales tax conversion = "Accounting currency"
 
 | Main account           | Transaction currency (GBP) | Accounting currency (USD) | Reporting currency (GBP) |
