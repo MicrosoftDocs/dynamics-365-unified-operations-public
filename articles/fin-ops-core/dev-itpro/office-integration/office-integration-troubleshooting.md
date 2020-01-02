@@ -136,6 +136,10 @@ The default Excel Add-in cell limit is about half the limit of what the Excel Ad
 
 If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName and PublicCollectionName values, then it will be available via the OData service. Check that there aren’t any existing entities with the same PublicEntityName and PublicCollectionName values by looking at the $metadata feed for the environment (preferably in Google Chrome): https://*SomeFullEnvironmentURL*.dynamics.com/data/$metadata
 
+### Why are date and time values in UTC in the Excel Add-in?
+
+The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
+
 ## Troubleshooting issues
 
 ### \[Fixed\] Issue: During sign-in to the Excel Add-in, I receive the following error message: "AADSTS65001: The user or administrator has not consented to use the application with ID XYZ"
