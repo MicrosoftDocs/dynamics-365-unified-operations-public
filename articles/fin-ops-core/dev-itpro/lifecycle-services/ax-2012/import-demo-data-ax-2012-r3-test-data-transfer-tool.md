@@ -42,7 +42,7 @@ We strongly recommend that you work locally on the database server where the bus
 **Caution:** The Test Data Transfer Tool (beta) is only supported for use in a development, test, or demo environment. Do not perform this procedure in a production environment.
 
 ## Download the demo data and Test Data Transfer Tool (beta)
-1.  Download the AX 2012 R3 demo data from the Release Page on [PartnerSource](http://go.microsoft.com/fwlink/?LinkId=403073).
+1.  Download the AX 2012 R3 demo data from the Release Page on [PartnerSource](https://go.microsoft.com/fwlink/?LinkId=403073).
 2.  Extract the demo data from the package to the database server that hosts the AX 2012 R3 business database for your environment.
 3.  Download the Test Data Transfer Tool (beta) tool installer from the Downloadable tools section of [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com), and install it on the database server that hosts the AX 2012 R3 business database for your environment.
 4.  Verify that you have appropriate permissions to import data. You must have read access to the location where the demo data is stored, and in SQL Server Management Studio, permission to execute **SELECT** statements and **BULK INSERT** statements. For more information, see [Install the Test Data Transfer Tool (beta)](install-test-data-transfer-tool-beta.md).
