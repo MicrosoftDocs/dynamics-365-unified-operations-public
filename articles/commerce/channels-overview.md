@@ -56,8 +56,8 @@ Before you can set up a channel, you must complete some prerequisite tasks based
 
 ## Set up a channel
 After you complete the prerequisite tasks, follow the link to the channel type you want to create for set up instructions.
-* [Set up a retail channel - tbd](channel-setup-retail.md)
-* [Set up a call center channel - tbd](channel-setup-callcenter.md)
+* [Set up a retail channel](channel-setup-retail.md)
+* [Set up a call center channel](channel-setup-callcenter.md)
 * [Set up an online channel](channel-setup-online.md)
 
 ## Post channel configuration
