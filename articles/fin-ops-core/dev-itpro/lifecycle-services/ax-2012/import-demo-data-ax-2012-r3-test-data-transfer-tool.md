@@ -5,7 +5,7 @@ title: Import demo data for AX 2012 R3 by using the Test Data Transfer Tool
 description: In this walkthrough, you will use the Test Data Transfer Tool (beta) to import the demo data for Microsoft Dynamics AX 2012 R3.
 author: kfend
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: dynamics-ax-2012 
 ms.service: 
@@ -51,7 +51,7 @@ We strongly recommend that you work locally on the database server where the bus
 1.  Go to **Control Panel** &gt; **Services**, and stop the AOS instance associated with your environment.
 2.  Using Windows Explorer, browse to the **Test Data Transfer Tool (beta)**.
 3.  On the **File** menu in Windows Explorer, click **Open command prompt as administrator**.
-4.  At the command prompt, enter the following command to import the demo data: **dp.exe import** location\_of\_demo\_data Name\_of\_AX\_business\_database ServernameInstanceName. 
+4.  At the command prompt, enter the following command to import the demo data: **dp.exe import** \location\_of\_demo\_data \Name\_of\_AX\_business\_database \ServernameInstanceName. 
 
     We assume that you are running the Test Data Transfer Tool (beta) on the local computer. If you have a named instance on the local computer, you can use the syntax localhostInstanceName or **.** InstanceName. In the following example, the data is on the E drive, in the demodata folder, and the business database is named MicrosoftDynamicsAX: **dp.exe import e:demodata MicrosoftDynamicsAX** 
 
