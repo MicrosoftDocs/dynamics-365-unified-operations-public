@@ -63,9 +63,9 @@ Before a retail channel is created ensure you follow the [channel prerequisites]
 ![Example retail channel](media/channel-setup-retail-2.png)
 
 ## Additional settings
-There are numerous others settings that can be optional set in the **Statement/closing**, **Miscellaneous**.
+There are numerous others settings that can be optionally set in the **Statement/closing**, **Miscellaneous** sections based on the needs of the retail store.
 
-See (**LINK TBD**) to setup the default **Screen Layout** and (**LINK TBD**) for **Hardware stations** set up information.
+Additionally see [screen layouts for the POS](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) to setup the default **Screen Layout** and [configure and install Retail hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) for **Hardware stations** set up information.
 
 Below image shows an example retail channel setup configuration.
 ![Example retail channel configuration](media/channel-setup-retail-3.png)
