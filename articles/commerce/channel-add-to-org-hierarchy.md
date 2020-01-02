@@ -45,7 +45,7 @@ See [Organizational hierarchies](channels-org-hierarchies.md) for more details o
 * Select the organization hierarchy that you'll be adding the channel to from the list.
 * From the **Action pane** select "View" to load the visual 
 
-![Select a hierarchy](channel-add-to-org-hierarchy-1.png)
+![Select a hierarchy](media/channel-add-to-org-hierarchy-1.png)
 
 ## Add a channel to a hierachy node
 * In the **Action pane**, select **Edit**.
@@ -54,8 +54,8 @@ See [Organizational hierarchies](channels-org-hierarchies.md) for more details o
 * Select **Save** in the **Action pane**.
 * In the **Action pane**, select **Publish** and provide an **Effective date** in the past to have this go into effect immediately.
 
-![Add a channel](channel-add-to-org-hierarchy-2.png)
+![Add a channel](media/channel-add-to-org-hierarchy-2.png)
 
 Below example shows a hierarchy with various channels added.
-![Channels example](channel-add-to-org-hierarchy-3.png)
+![Channels example](media/channel-add-to-org-hierarchy-3.png)
 
