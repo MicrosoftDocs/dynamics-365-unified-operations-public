@@ -58,7 +58,7 @@ Before a retail channel is created ensure you follow the [channel prerequisites]
 * In the **Default customer** field, provide a valid default customer.
 * In the **Functionality profile** field, select one if applicable.
 * In the **Email notification profile** field, provide a valid email notification profile.
-* Select **Save**
+* Select **Save**.
 
 ![Example retail channel](media/channel-setup-retail-2.png)
 
@@ -89,24 +89,47 @@ For each payment type supported on this channel do the following:
 
 ### Set up Cash declartion
 * On the **Action pane**, select the **Set Up** tab and click **Cash declaration**.
-* TBD
+* On the **Action pane**, select **New** and create all **Coin** and **Note** denominations that are applicable.
 
-### Set up modes of deliver
-* On the **Action pane**, select the **Set Up** tab and click **Modes of delivery**.
-TBD
+![Example payment methods](media/channel-setup-retail-6.png)
+
+### Set up modes of delivery
+By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane** you can see the configured modes of delivery.  To change or add a mode of delivery follow the below steps.
+* Go to **Navigation pane** > **Modules** > **Invetory management** > **Modes of delivery**.
+* On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
+* In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
+
+![Example payment methods](media/channel-setup-retail-7.png)
 
 ### Set up Income/Expense account
 * On the **Action pane**, select the **Set Up** tab and click **Income/Expense account**.
-TBD
+* On the **Action pane**, select **New**.
+* Provide a **Name** and **Search name**.
+* Select the **Account type**.
+* Provide a **Message line 1**, **Message line 2**, **Slip text 1** and **Slip text 2** as needed.
+* Fill out **Posting** information.
+* Select **Save**.
+
+![Set up income/expense accounts](media/channel-setup-retail-8.png)
 
 ### Set up Sections
 * On the **Action pane**, select the **Set Up** tab and click **Sections**.
-TBD
+* On the **Action pane**, select **New**.
+* Provide a **Section number** and **Description** and **Section size**.
+* Additional configurations can be set in the **General** and **Sales statistics** sections.
+* Select **Save**.
 
 ### Set up fulfillment group assignment
-* On the **Action pane**, select the **Set Up** tab and click **Modes of delivery**.
-TBD
+* On the **Action pane**, select the **Set Up** tab and click **Fulfullment group assignment**.
+* On the **Action pane**, select **New**.
+* Select a **Fulfillment group**.
+* Provide a **Description**.
+* Select **Save**.
+
+![Set up income/expense accounts](media/channel-setup-retail-9.png)
 
 ### Set up Safes
 * On the **Action pane**, select the **Set Up** tab and click **Safes**.
-TBD
+* On the **Action pane**, select **New**.
+* Provide a name for the safe
+* Select **Save**.
