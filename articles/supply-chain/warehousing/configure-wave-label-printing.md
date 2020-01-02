@@ -134,7 +134,7 @@ CT~~CD,~CC^~CT~
 ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)31533^FS
 ```
 
-In the body, put:
+In the body put:
 
 ```text
 <Row name="WaveLabel">

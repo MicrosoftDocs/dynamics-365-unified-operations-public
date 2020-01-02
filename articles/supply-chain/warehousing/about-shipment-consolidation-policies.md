@@ -114,7 +114,7 @@ The list of consolidation fields (fields which will be cleared when they have di
 - Can be open from the Release to warehouse menu of Warehouse management module
 - The algorithm analyzes existing shipments (not Shipped yet) and proposes consolidation based on fields selected in consolidation policies
 
-## Comparison of functionality before and after (table TODO)
+## Comparison of functionality before and after
 
 | Behavior prior the introduction of Shipment consolidation policies                                                                                                                                                                                                                   | Behavior when applying consolidation shipment policies                                                                                                                                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
