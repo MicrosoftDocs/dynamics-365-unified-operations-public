@@ -48,7 +48,7 @@ Call center channels represent call center order and customer management.
 Online channels represent online e-Commerce storefronts. Once an online channel is created a site must be created using the [site builder](link tbd) tool or third part e-Commerce solutions can be used.
 
 ## Channel set up basics
-Channel set up is perfomed in the Commerce Headquarters tool. Each channel can have its own payment methods, price groups, product hierarchies, assortments and set of products. After you create the channel, you assign the products that you want it to carry and sell. Each channel type has a unique set of features that may need to be configured, for example, a retail channel needs assigned employees, registers, and customers. Once a new channel is created it need to be assigned to an organization hierarchy.
+Channel set up is perfomed in the Commerce Headquarters tool. Each channel can have its own payment methods, price groups, product hierarchies, assortments and set of products. After you create the channel, you assign the products that you want it to carry and sell. Each channel type has a unique set of features that may need to be configured, for example, a retail channel needs to have assigned employees, registers, and customers. Once a new channel is created it needs to be assigned to an organization hierarchy.
 
 ## Channel setup prerequisites
 Before you can set up a channel, you must complete some prerequisite tasks based on the channel type. For more information see
