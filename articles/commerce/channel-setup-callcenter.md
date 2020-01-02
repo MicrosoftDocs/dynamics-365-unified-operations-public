@@ -84,5 +84,4 @@ By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane*
 * On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
 * In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
 
-![Example payment methods](media/channel-setup-retail-7.png)
-
+![Set up modes of delivery](media/channel-setup-retail-7.png)
