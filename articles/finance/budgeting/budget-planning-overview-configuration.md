@@ -33,6 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Budget planning overview
 
 [!include [banner](../includes/banner.md)]
+[!include preview banner]
 
 This article introduces budget planning, and contains information to help you configure budget planning and set up budget planning processes.
 
@@ -50,7 +51,6 @@ When you understand the concepts and terminology that are used in Microsoft Dyna
 -   **Budget plan scenarios** – Budget plan scenarios define categories of data for the budget plans. You define budget plan scenarios to support monetary and other unit of measure classes, such as quantity. Examples of monetary budget plan scenarios include Department previous year and Department requests. Examples of budget plan scenarios that use quantities include Previous year support calls and Full-time equivalent (FTE) count.
 -   **Budget planning stages** – Budget planning stages define the steps that a budget plan follows from its inception to final approval. Budget planning stages are arranged in budget planning workflows.
 -   **Budget planning workflows** – Budget planning workflows consist of and define budget planning stages. Budget planning workflows are associated with Budgeting workflows. Budgeting workflows are the automated and manual processes that move budget plans through the budget planning stages.
-
 [![Budget planning terminology](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
 ### Common tasks
@@ -66,6 +66,8 @@ Budget planning is integrated with other modules. Therefore, you can bring in in
 
 ## Configuring budget planning
 The **Budget planning configuration** page contains most of the settings that you require in order to set up budget planning. The following sections describe some key factors that you should consider as you configure budget planning. After you've completed the configuration, you set up budget planning processes.
+
+Functionality that was introduced in Dynamics 365 Finance version 10.0.9 (April 2020) enables an option for improved performance through the feature management workspace. The initial enhancement included is performance improvements when using the **publish** button to update existing records within Excel to publish back to the client. Performance of updates should be improved and there will be much less of a chance of blocking when working with large amounts of records. To enable this functionality, go to the feature management workspace and enable **Budget planning query optimization for performance** under Budgeting.
 
 ### Create a budget planning schema
 
