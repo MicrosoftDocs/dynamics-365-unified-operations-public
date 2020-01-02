@@ -87,11 +87,11 @@ For each payment type supported on this channel do the following:
 
 ![Example payment methods](media/channel-setup-retail-5.png)
 
-### Set up Cash declartion
+### Set up Cash declaration
 * On the **Action pane**, select the **Set Up** tab and click **Cash declaration**.
 * On the **Action pane**, select **New** and create all **Coin** and **Note** denominations that are applicable.
 
-![Example payment methods](media/channel-setup-retail-6.png)
+![Setup up cash declarations](media/channel-setup-retail-6.png)
 
 ### Set up modes of delivery
 By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane** you can see the configured modes of delivery.  To change or add a mode of delivery follow the below steps.
@@ -99,7 +99,7 @@ By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane*
 * On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
 * In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
 
-![Example payment methods](media/channel-setup-retail-7.png)
+![Set up modes of delivery](media/channel-setup-retail-7.png)
 
 ### Set up Income/Expense account
 * On the **Action pane**, select the **Set Up** tab and click **Income/Expense account**.
@@ -126,7 +126,7 @@ By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane*
 * Provide a **Description**.
 * Select **Save**.
 
-![Set up income/expense accounts](media/channel-setup-retail-9.png)
+![Set up fulfillment group assignments](media/channel-setup-retail-9.png)
 
 ### Set up Safes
 * On the **Action pane**, select the **Set Up** tab and click **Safes**.
