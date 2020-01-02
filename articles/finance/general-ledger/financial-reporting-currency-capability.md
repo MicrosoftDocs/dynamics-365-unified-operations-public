@@ -20,7 +20,7 @@ By default, any amount appearing in a report will appear as the accounting curre
 * Modifying the <b> Currency display </b> field in the column definition to any of the <b> Translate to ... </b> options, which will perform the currency translation within Financial reporting
 
 Additionally, the following actions will also cause translation:
-* Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity defined in the Reporting Tree or logged current logged in company if the @ANY company is used. 
+* Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. 
 * Using the <b>Currency</b> button in the web report viewer or the <b>Include all reporting currencies</b> button in Report Designer will cause additional versions of the report using translated data to be generated for each currency selected. 
 
 For amounts being translated within Financial reporting, the following types of translation are available for use, as defined on each MainAccount. 
@@ -41,9 +41,9 @@ The exchange rate type defines the table of exchange rates and currencies to be 
 * If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.
 
 ### Setup for Currency translation type
-The Currency translation type will determine how each main account is translated. Exchange rate type can also be configured in multiple locations. 
+The Currency translation type will determine how each main account is translated. Currency translation rate type can also be configured in multiple locations. 
 * Within the main accounts form within General ledger there is an option for Currency translation type on the Financial reporting fast tab. 
-* You can also specify an override of an exchange rate type for a legal entity which will overide the default behavior. 
+* You can also specify an override of a currency translation rate type for a legal entity which will overide the default behavior. 
 
 
 ### Setup for Retained Earnings
