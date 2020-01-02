@@ -12,7 +12,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 # optional metadata
 
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
