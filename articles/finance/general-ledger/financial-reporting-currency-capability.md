@@ -1,5 +1,5 @@
-[!include preview banner]
 # Overview
+[!include preview banner]
 Financial reporting has a wide variety of features in order to support complex currency reporting requirements. Financial reporting can report on any of the following currency amounts:
 * Accounting currency amount 
 * Reporting currency amount 
@@ -56,7 +56,9 @@ Retained earnings accounts are special in regards to Currency Translation as it 
 * The retained earnings account only translates system generated transactions initiated through the fiscal year end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
 * The retained earnings balance is translated at the rate that exists at the end of the most recent year closed.  This means that  it is a point in time calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
 
-Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 () enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality, go to the Feature management workspace and select Enable dual currency functionality in General ledger consolidation.
+Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 () enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality in preview, create a support incident for financial reporting to be enabled in a sandbox or development environment. 
+
+This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the Currency translation type set to Transaction date will calculate the translated balance of the account using rates and balances from its entire history using end of year rate * balance for all years, rather than only using the most recent year and rate.
 
 ## Report design elements related to currency
 The following are additional report design elements that can be used when doing reporting on currencies
@@ -74,6 +76,7 @@ The places where currency symbols are used are:
 * Format Overrides defined in the Row and Column Definition
 
 ### Financial reporting attributes related to currency
+The following are additional report design attributes that can be used when doing reporting on currencies that will display on account or transaction drilldown in support of amount lines. 
 * Account Currency
 * Currency code
 * Transaction currency
