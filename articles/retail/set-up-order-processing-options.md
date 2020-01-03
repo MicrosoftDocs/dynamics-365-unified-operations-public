@@ -85,3 +85,6 @@ Users who aren't linked to a call center channel use the standard order entry fe
 
 
 After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.
+
+> [!NOTE]
+> In order to use Call Center functionality, the configuration key for 'Multiple ship-to' must be enabled.  This configuration key can be found in the Trade configuration keys under **System Administration**\> **Setup** \> **License Configuration**.  This is required due to functionality of call center that performs various validations based on the delivery address configured at the sales order line level. 
