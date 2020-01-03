@@ -191,6 +191,13 @@ The behavior of the **Credit limit used** rule will change based on the settings
 - If the parameter is set to Yes and the **Message when exceeding credit limit** is set to warning, then you will get a warning when the credit limit is exceeded. The **Credit limit used** rules will be run to see if you have rules that you want to be run. However, for this scenario, you would normally not add any rules.
 - If the parameter is set to Yes and the **Message when exceeding credit limit** is set to error, then the credit limit will be checked and the order will be put on hold if credit limit is exceeded. In addition, the **Credit limit used** rules will be run to see if there are additional rules that should be run. An error message won't display, but the **Exceeded credit limit** blocking reason will be shown. 
 
+## Settings that will change the way an order is placed on hold
+
+Orders can be excluded from credit management even if there are rules in place. 
+
+- If you change the settings **Exclude customer from credit management** in **All customers > select a customer > Credit and collections fasttab** to **Yes**, then no orders for that customer will be processed
+- If you change the value **Exclude from credit management** on the **sales orders header** in the **Credit management fast tab** to **Yes**, then the credit management rules will not be processed. This setting can only be done by the credit clerk or credit manager.
+
 ## Processing orders on hold using the credit management hold list
 
 The Credit management hold list lets credit managers view all sales orders that have been placed on hold and lets them remove the holds when the credit issues have been mitigated. The **Credit management hold list** page shows all sales orders that have been placed on hold. You can view the hold list on the **All credit holds** page (**Credit management > Credit management hold list > All credit holds**).
@@ -244,7 +251,7 @@ You can also create **Credit management workflows** to control the release of cr
 
 ### Forced credit hold	
   
-At times, sales orders may be released prematurely when a credit manager reviews a blocked order, releases it and then later discovers another reason for it to remain on hold. You can manually force a sales order to be on hold if that situation occurs.
+At times, sales orders may need to be blocked even though the order does not meet the criteria of the blocking rules. For example, a credit manager may be notified of a non-credit related issue with the customer and decide to manually put orders on hold immediately until the issue is cleared up. You can manually force a sales order to be on hold if that situation occurs.
 
 1. Open the sales order that you want to place on hold.  
 2. Select **Force credit hold** in the **Credit management** tab on the **Credit management** action pane.
