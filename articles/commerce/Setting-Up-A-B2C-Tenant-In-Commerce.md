@@ -348,7 +348,7 @@ In Dynamics, navigate to **Retail>Shared Parameters**
 
 ![Copy the Issuer URL from metadata address](./media/B2CImage_18.png "Copy the Issuer URL from metadata address")
 
-- **Name:** Select a name value for your 
+- **Name:** Enter a name value for your issuer record for the Identity Providers table
 
 - **Type:** Azure AD B2C (id_token)
 
