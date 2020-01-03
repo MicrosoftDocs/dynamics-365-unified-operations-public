@@ -89,3 +89,6 @@ After you enter the details for the retail store, complete these tasks to send t
 ## Organization hierarchies
 
 Retail uses organization hierarchies to structure retail channels. Organization hierarchies represent the relationships between the organizations that make up your business. When you set up stores, you can add them to an organization hierarchy. The stores then share data that is used for assortments, replenishment, and reporting.
+
+> [!NOTE]
+> In order to use Retail sales functionality, the configuration key for 'Multiple ship-to' must be enabled.  This configuration key can be found in the Trade configuration keys under **System Administration**\> **Setup** \> **License Configuration**.  This is required due to functionality of Retail that performs various validations based on the delivery address configured at the sales order line level.
