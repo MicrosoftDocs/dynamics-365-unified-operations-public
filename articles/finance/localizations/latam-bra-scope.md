@@ -613,7 +613,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>No</td>
 </tr>
 <tr>
-<td>Retail Enterprise POS</td>
+<td>Enterprise POS</td>
 <td>Customer CPF/CNPJ on fiscal receipts</td>
 <td>Yes</td>
 <td>No</td>
@@ -713,7 +713,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>No</td>
 </tr>
 <tr>
-<td>NFC-e (Nota Fiscal ao Consumidor Eletr&ocirc;nica) in Retail Enterprise POS</td>
+<td>NFC-e (Nota Fiscal ao Consumidor Eletr&ocirc;nica) in Enterprise POS</td>
 <td><span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Support for layout NFC-e 4.0</span></td>
 <td>Yes</td>
 <td>No</td>
@@ -1108,7 +1108,7 @@ The following features and functionality are out of scope for the Brazilian loca
 
         - Sites Services for Microsoft Dynamics ERP
         - Commerce Services for Microsoft Dynamics ERP
-        - Modern POS and Retail server
+        - Modern POS and Commerce Scale Unit
 
     - **Retailers:** Retail POS can't be used in the following retail businesses in states where compliance with the PAF-ECF law "ATO COTEPE/ICMS N° 46" of 2014 is mandatory:
 
@@ -1129,7 +1129,7 @@ The following features and functionality are out of scope for the Brazilian loca
 
     - **Tax calculation requirements:** The following tax calculation requirements for retail businesses in Brazil are out of scope for the Brazilian localization:
 
-        - Tax discounts for sales through Retail Enterprise POS in SUFRAMA or other Free Trade Zone
+        - Tax discounts for sales through Enterprise POS in SUFRAMA or other Free Trade Zone
 
 ### Out of scope for fiscal books
 
