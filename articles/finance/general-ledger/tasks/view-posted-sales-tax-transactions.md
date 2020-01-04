@@ -32,13 +32,13 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This topic describes some ways to view posted sales tax transactions. You can view posted sales tax transactions from various pages depending on what you need to view. This task uses the USMF demo company.
 
-# Posted sales tax page
+## Posted sales tax page
 
 1. In the navigation pane, go to **Modules > Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax**.
 2. Select **Show filters** to narrow the view to specific transactions.
 3. Close the page.
 
-# Sales tax settlement periods page
+## Sales tax settlement periods page
 
 1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.
 2. Expand the **Period intervals** section.
@@ -46,7 +46,7 @@ This topic describes some ways to view posted sales tax transactions. You can vi
 4. You can further filter the list of posted sales tax transactions.
 5. Close the page.
 
-# Sales tax codes page
+## Sales tax codes page
 
 1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax codes**.
 2. On the Action Pane, select **Sales tax code**.

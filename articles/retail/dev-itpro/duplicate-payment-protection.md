@@ -46,7 +46,7 @@ This topic describes how to enable duplicate payment protection functionality in
 Be sure to read the following topics before enabling duplicate payment protection for a given payment connector.
 
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md) - The duplicate payment protection feature builds on the payment integration for a payment terminal described in this topic.
-- [Duplicate Payment Protection](duplicate-payment-protection.md) - This topic describes key functional aspects of the duplicate payment protection feature.
+- [Enable duplicate payment protection for payment connector](duplicate-payment-protection.md) - This topic describes key functional aspects of the duplicate payment protection feature.
 
 ## Prerequisites
 The following prerequisites must be met before duplicate payment protection can be enabled for a payment connector implementation.

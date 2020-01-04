@@ -5,7 +5,7 @@ title: Account management pages and modules
 description: This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -62,7 +62,7 @@ The order details page provides detailed information for each order and is acces
 
 ### User profile page
 
-The user profile page shows user account details, such as user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited.
+The user profile page shows user account details, such as a user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features such as personalization of recommendation lists. 
 
 ### User address page
 

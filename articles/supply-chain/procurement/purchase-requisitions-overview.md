@@ -199,7 +199,7 @@ To consolidate approved purchase requisition lines, follow these steps:
 Additional resources
 --------
 
-[Create a requisition for consumption (Task guide)](tasks/create-requisition-consumption.md)
+[Create a requisition for consumption](tasks/create-requisition-consumption.md)
 
 [Purchase requisition workflow](purchase-requisitions-workflow.md)
 

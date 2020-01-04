@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 # Extensibility in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent is built on top of Common Data Service, and can be extended in various ways by using the Microsoft Power Platform and the capabilities that Common Data Service offers. Therefore, you can configure and personalize the system by using Microsoft Power Apps and Microsoft Power Automate. You can also get additional analytics about people by using Microsoft Power BI. Furthermore, new custom activities, such as the Power Apps and Web content (iframe) activities, make the hiring process more adaptable than ever. By using these activities, you can tailor the hiring process to your business needs and processes, and can make sure that both the hiring team and candidates have a seamless, customized experience.
 
@@ -83,14 +83,14 @@ You can add custom activities, such as the Power Apps apps and Web content (ifra
 
 #### Power Apps activity 
 
-The Power Apps activity lets the creator of a job or job process template embed a Power Apps app in the hiring flow. After you create and publish the app, you can enter its app ID in the activity configurations. By using a Power Apps app, you can read and write data into Common Data Service. You can even link the app to a flow. For example, you have an app that recruiters use to fill in a form while they conduct phone interviews. In this case, you can link the app to a flow that evaluates whether an applicant can be advanced further in the job application process. This type of activity can be viewed only by members of the hiring team. For more information about how to configure the Power Apps activity, see [Activities in Attract](./activities-attract.md).
+The Power Apps activity lets the creator of a job or job process template embed a Power Apps app in the hiring flow. After you create and publish the app, you can enter its app ID in the activity configurations. By using a Power Apps app, you can read and write data into Common Data Service. You can even link the app to a flow. For example, you have an app that recruiters use to fill in a form while they conduct phone interviews. In this case, you can link the app to a flow that evaluates whether an applicant can be advanced further in the job application process. This type of activity can be viewed only by members of the hiring team. For more information about how to configure the Power Apps activity, see [Activities in hiring processes](./activities-attract.md).
 
 > [!NOTE]
 > The Power Apps activity is available only with the Comprehensive hiring add-on.
 
 #### Web content (iframe) activity
 
-The Web content (iframe) activity lets you embed a custom web solution that you've built in the hiring process or the Candidate portal. You can read and write data directly from Common Data Service. You can also customize the solution so that it triggers flows or takes advantage of Microsoft Azure functions. For more information about how to configure the Web content activity, see [Activities in Attract](./activities-attract.md).
+The Web content (iframe) activity lets you embed a custom web solution that you've built in the hiring process or the Candidate portal. You can read and write data directly from Common Data Service. You can also customize the solution so that it triggers flows or takes advantage of Microsoft Azure functions. For more information about how to configure the Web content activity, see [Activities in hiring processes](./activities-attract.md).
 
 > [!NOTE]
 > The Web content activity is available only with the Comprehensive hiring add-on.

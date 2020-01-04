@@ -62,7 +62,7 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
       - name: What's new or changed
         items:
-        - name: Preview features in Supply Chain Management version 10.0.7 (December 2019)
+        - name: Supply Chain Management version 10.0.7 (December 2019)
           href: get-started/whats-new-scm-10-0-7.md
         - name: Supply Chain Management 10.0.6 (November 2019)
           href: get-started/whats-new-scm-10-0-6.md
@@ -70,10 +70,6 @@
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Finance and Operations apps 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-          - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
             href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
         - name: Removed or deprecated features
@@ -264,7 +260,7 @@
         - name: Create assets based on purchase orders
           href: asset-management/objects/create-objects-based-on-purchase-orders.md
         - name: Asset BOM
-          href: /asset-management/objects/object-bom.md
+          href: asset-management/objects/object-bom.md
         - name: Asset event history
           href: asset-management/objects/object-timeline.md
         - name: Asset view
@@ -571,6 +567,8 @@
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
           href: cost-management/adjust-hand-inventory-cost-values.md
+        - name: Inventory aging report
+          href: cost-management/inventory-aging-report-storage.md
       - name: Manufacturing accounting
         items:
         - name: BOM calculations
@@ -590,7 +588,7 @@
         - name: Production order cost analysis
           href: cost-management/production-order-cost-analysis.md
         - name: Production order cost estimation
-          href: /cost-management/production-order-cost-estimation.md
+          href: cost-management/production-order-cost-estimation.md
         - name: View current WIP status on a production order
           href: cost-management/tasks/view-current-wip-status-production-order.md
         - name: Compare active, estimated, and realized costs on a production order
@@ -1097,6 +1095,8 @@
           href: master-planning/safety-stock-replenishment.md
         - name: Delays
           href: master-planning/delays.md
+        - name: Cancel a master planning job
+          href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
         - name: Action messages
@@ -2347,6 +2347,10 @@
           href: warehousing/tasks/set-up-short-picking-item-reallocation.md
         - name: Cancel warehouse work for exception handling
           href: warehousing/cancel-warehouse-work.md
+        - name: System-directed cluster picking
+          href: warehousing/system-directed-cluster-pick.md
+        - name: Pick line grouping
+          href: warehousing/pick-line-grouping.md 
       - name: Inventory counting
         items:
         - name: Reason codes for inventory counting

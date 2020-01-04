@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Talent system requirements and update policy
-description: This topic lists requirements for Dynamics 365 Talent. The update policy is outlined, as well.
+title: Talent system requirements
+description: This topic lists requirements for Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/02/2019
+ms.date: 10/21/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Talent system requirements and update policy
+# Talent system requirements
 
 [!include [banner](includes/banner.md)]
 
@@ -72,8 +72,3 @@ You can download a PDF file of the countries, regions, and languages Talent supp
 
 If you're a developer interested in creating country- or region-specific customizations, or in creating a solution for a country or region not currently supported by Microsoft, see [Globalization](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
 
-## Update policy
-
-Talent is serviced as a cloud offering. Talent updates are continuous and applied automatically by Microsoft.
-
-Updates are released on a regular cadence and will be made to all environments. Talent is supported according to the [Microsoft Support Lifecycle policy](https://support.microsoft.com/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecycle"), which provides consistent and predictable guidelines for product support availability.

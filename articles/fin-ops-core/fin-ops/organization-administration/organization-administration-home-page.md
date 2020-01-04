@@ -42,8 +42,8 @@ Much of the content listed here applies to features in the **Organizational admi
 
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*. Before you can create new records for a reference, you must set up a number sequence and associate it with the reference.
 
-- [Number sequence overview](number-sequence-overview.md)
-- [Set up number sequences by using a wizard](tasks/set-up-number-sequences-wizard.md) (Task guide)
+- [Number sequences overview](number-sequence-overview.md)
+- [Set up number sequences using a wizard](tasks/set-up-number-sequences-wizard.md) (Task guide)
 - [Set up number sequences on an individual basis](tasks/set-up-number-sequences-individual-basis.md) (Task guide)
 
 ## Organizations
@@ -52,7 +52,7 @@ An organization is a group of people who are working together to carry out a bus
 
 Before you set up organizations and organization hierarchies, make sure that you plan how your business will be modeled. The organization model has a significant effect on implementation and business processes.
 
-- [Organizations and organizational hierarchies](organizations-organizational-hierarchies.md)
+- [Organizations and organizational hierarchies overview](organizations-organizational-hierarchies.md)
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)
 - [Create an organization hierarchy](tasks/create-organization-hierarchy.md) (Task guide)
 - [Create a legal entity](tasks/create-legal-entity.md) (Task guide)
@@ -64,8 +64,8 @@ The global address book is a centralized repository for master data that must be
 
 After you create the global address book, you can create additional address books as you require, such as a separate address book for each company in your organization or for each line of business.
 
-- [Global address book](overview-global-address-book.md)
-- [Plan how to configure the global address book and additional address books](plan-configuration-global-address-book-additional-address-books.md)
+- [Global address book overview](overview-global-address-book.md)
+- [Plan for the global address book and other address books](plan-configuration-global-address-book-additional-address-books.md)
 - [Configure the global address book](tasks/configure-global-address-book.md)
 - [Address books FAQ](qa-address-books.md)
 
@@ -73,10 +73,10 @@ After you create the global address book, you can create additional address book
 
 Workflow is a system that you can use to create individual workflows, or business processes. When you create a workflow, you specify how a document flows, or moves, through the system by showing who must complete a task, make a decision, or approve a document.
 
-- [Workflow overview](overview-workflow-system.md)
+- [Workflow system overview](overview-workflow-system.md)
 - [Workflow elements](workflow-elements.md)
-- [Workflow actions](workflow-actions.md)
-- [Create a workflow](create-workflow.md)
+- [Actions in workflow approval processes](workflow-actions.md)
+- [Create workflows overview](create-workflow.md)
 
 ## Electronic signatures
 
@@ -84,7 +84,7 @@ An electronic signature confirms the identity of a person who is about to start 
 
 You can use electronic signatures for critical business processes. Some processes have built-in electronic signature capabilities. You can also create custom signature requirements for any database table and field.
 
-- [Electronic signature overview](electronic-signature-overview.md)
+- [Electronic signatures overview](electronic-signature-overview.md)
 - [Set up electronic signatures](tasks/set-up-electronic-signatures.md) (Task guide)
 
 ## Case management
@@ -92,15 +92,15 @@ You can use electronic signatures for critical business processes. Some processe
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work with or resolve a case more efficiently.
 
 - [Case management overview](cases.md)
-- [Configure case security, processes, and categories](plan-case-management.md)
+- [Plan case category security, case processes, and case categories](plan-case-management.md)
 
 ## Record templates
 
 Record templates can help you to create records more quickly. You can create a record template so that field values that are used often do not have to be entered explicitly for each new record.
 
-- [Record templates](record-templates.md)
+- [Record templates overview](record-templates.md)
 - [Create a record template to facilitate data entry](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Task guide)
-- [Use a record template to create a new record](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Task guide)
+- [Use record template to create a new record](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Task guide)
 
 ## General organization administration
 

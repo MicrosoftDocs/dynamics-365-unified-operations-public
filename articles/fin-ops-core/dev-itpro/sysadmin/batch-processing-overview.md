@@ -58,11 +58,11 @@ For more information, see [Batch processing and batch servers](batch-server-over
 Administrators and Batch managers can perform common tasks including creating and copying batch jobs, changing a batch job user, and specifying a time period in which a job should not execute. For more information about these tasks, see the following topics:
 
 -  [Create a batch job](tasks/create-batch-job.md)
--  [Batch manager role](runby.md)
--  [Batch active period](activeperiod.md)
+-  [Batch manager security role](runby.md)
+-  [Active batch periods](activeperiod.md)
 -  [Copy a batch job](copy-batch-job.md)
--  [Configure batch alerts](alerts.md)
--  [Batch enhanced forms](enhanced-forms.md)
--  [Batch history cleanup](batch-history-cleanup.md)
+-  [Set up alerts](alerts.md)
+-  [Enhanced batch forms](enhanced-forms.md)
+-  [Clean up the batch job history](batch-history-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 

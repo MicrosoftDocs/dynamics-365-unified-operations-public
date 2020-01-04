@@ -139,7 +139,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 [Synchronize products directly from Supply Chain Management to products in Sales](products-template-mapping-direct.md)
 
-[Synchronize sales order headers and lines directly from Supply Chain Management to Sales](sales-order-template-mapping-direct-two-ways.md)
+[Synchronization of sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
 

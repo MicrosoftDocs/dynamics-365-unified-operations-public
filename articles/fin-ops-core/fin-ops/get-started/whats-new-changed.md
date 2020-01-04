@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 2
 
 As of October 2019, this page is no longer maintained. The information in this topic shows where to find feature information for Finance and Operations applications that were released before October 2019.
 
-For information about how to upgrade to the latest version, see [Process for upgrading to the latest update](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
+For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 [!include [release notes](../includes/release-notes.md)]
 

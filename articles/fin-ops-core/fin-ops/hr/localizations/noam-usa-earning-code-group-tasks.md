@@ -58,9 +58,9 @@ Because earning codes are used to uniquely identify every type of earning that w
 
 - **Base pay hourly earnings** – If you have workers on multiple shifts, you must have a separate earning code for each shift.
 - **Salaried earnings** – You must have a separate earning code for each fixed compensation plan.
-- **Premiums** – If premiums are paid based on other earnings, such as shift differentials or overtime earnings, or on a worker's characteristics, such as bonuses based on credentials, you must have additional earning codes. For more information, see [Premium earning setup tasks](noam-usa-premium-earning-setup-tasks.md).
+- **Premiums** – If premiums are paid based on other earnings, such as shift differentials or overtime earnings, or on a worker's characteristics, such as bonuses based on credentials, you must have additional earning codes. For more information, see [Set up premium earnings](noam-usa-premium-earning-setup-tasks.md).
 - **Leave** – You must have separate earning codes for jury duty, bereavement leave, and any other type of leave that your organization offers.
-- **Benefit accruals** – You must have a separate earning code for every benefit accrual plan. The earning code for a benefit accrual plan is used to verify the available balance in the plan and reduce the balance when a pay statement line that includes the earning code is submitted for payment. For more information, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+- **Benefit accruals** – You must have a separate earning code for every benefit accrual plan. The earning code for a benefit accrual plan is used to verify the available balance in the plan and reduce the balance when a pay statement line that includes the earning code is submitted for payment. For more information, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
 - **Retroactive earnings** – We recommend that you create a retroactive earning code for every type of earning that can be paid retroactively. It's helpful if the names of the two codes resemble each other. For example, if the regular earning code is named **Hourly union 1st shift**, the retroactive earning code might be named **Hourly union 1st shift retro**.
 - **Miscellaneous or occasional earnings** – Many organizations provide car allowances, reimbursement of relocation expenses, and other miscellaneous earnings. You must have a separate earning code for each type of miscellaneous or occasional earning.
 
@@ -263,10 +263,10 @@ On the **Earning code groups** tab of the **Earning codes** page, you can see ea
 
 ## Next step
 
-The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Work schedule and leave tasks](noam-usa-work-schedule-leave-tasks.md) and [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+The next step is to set up schedules, leave types, and benefit accrual plans. For more information, see [Set up work schedules and leave](noam-usa-work-schedule-leave-tasks.md) and [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
 
 ## Additional resources
 
-[Generate earnings](noam-usa-generate-earnings.md)
+[Generate earnings for workers](noam-usa-generate-earnings.md)
 
-[Generate payroll reports](noam-usa-generate-payroll-reports.md)
+[Standard payroll reports](noam-usa-generate-payroll-reports.md)

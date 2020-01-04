@@ -50,7 +50,7 @@ When you declare variables of managed types that aren't authored in X++, you hav
 
 ## Variable examples
 
-```X++
+```xpp
 // An example of two valid variable names.
 str variableName;
 CustInfo custNumber;
@@ -145,7 +145,7 @@ Don't use **var** when the type isn't clear from the initialization expression.
 
 ## var examples
 
-```X++
+```xpp
 // When the type of a variable is clear from
 // the context, use var in the declaration.
 var var1 = "This is clearly a string.";
@@ -173,64 +173,74 @@ There are several advantages to making scopes small:
 
 In the following example, we declare the loop counter inside the **for** statement that it's used in.
 
-    void MyMethod()
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
     {
-        for (int i = 0; i < 10; i++)
-        {
-            info(strfmt("i is %1", i));
-        }
+        info(strfmt("i is %1", i));
     }
+}
+```
 
 The scope of the variable is the **for** statement itself, and includes the condition expression and the loop update parts. The value can’t be used outside this scope. 
 
 In the following example, when the compiler reaches the **info** statement, it will issue the following error message: "'i' isn't declared."
 
-    void MyMethod()
+```xpp
+void MyMethod()
+{
+    for (int i = 0; i < 10; i++)
     {
-        for (int i = 0; i < 10; i++)
+        if (i == 7)
         {
-            if (i == 7)
-            {
-                break;
-            }
+            break;
         }
-        // The next statement causes a compiler error.
-        info(strfmt("Found: %1", i));
     }
+    // The next statement causes a compiler error.
+    info(strfmt("Found: %1", i));
+}
+```
 
 You can also scope variables to a **using** statement, as shown in the following example.
 
-    static void AnotherMethod()
+```xpp
+static void AnotherMethod()
+{
+    str textFromFile;
+    using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
     {
-        str textFromFile;
-        using (System.IO.StreamReader sr = new System.IO.StreamReader("c:\\test.txt"))
-        {
-            textFromFile = sr.ReadToEnd();
-        }
+        textFromFile = sr.ReadToEnd();
     }
+}
+```
 
 When you use an object that implements **IDisposable**, you should declare and instantiate that object in a **using** statement. The **using** statement calls the **Dispose** method on the object correctly, even if an exception occurs while you're calling methods on the object. You can achieve the same result by putting the object inside a **try** block and then explicitly calling **Dispose** in a **finally** block. In fact, the compiler translates the **using** statement in just this manner. 
 
 The following example shows some of the features that we have been describing.
 
-    // loop variable declared within the loop: It will
-    // not be misused outside the loop
-    for(int i = 1; i < 10; i++)
-    {
-        // Because this value is not used from outside the loop,
-        // its declaration belongs in this smaller scope.
-        str s = int2str(i);
-        info(s);
-    }
+```xpp
+// loop variable declared within the loop: It will
+// not be misused outside the loop
+for(int i = 1; i < 10; i++)
+{
+    // Because this value is not used from outside the loop,
+    // its declaration belongs in this smaller scope.
+    str s = int2str(i);
+    info(s);
+}
+```
 
 To prevent confusion, the compiler issues an error message if you try to introduce a variable that will hide another variable in an enclosing scope, or even in the same scope. For example, the following code will cause the compiler to issue the following diagnostic message: "A local variable named 'i' can't be declared in this scope because it would give a different meaning to 'i', which is already used in a parent or current scope to denote something else."
 
+```xpp
+{
+    int i;
     {
         int i;
-        {
-            int i;
-        }
     }
+}
+```
 
 ## Constants, read-only variables, and macros
 
@@ -247,21 +257,27 @@ Macros that are defined in class scopes (that is, in class declarations) are eff
 
 Constants can be declared at the class level, as shown in the following example.
 
-    private const str MyConstant = 'SomeValue';
+```xpp
+private const str MyConstant = 'SomeValue';
+```
 
 The constants can then be referenced by using the double colon (::) syntax.
 
-    str value = MyClass::MyConstant;
+```xpp
+str value = MyClass::MyConstant;
+```
 
 If you're in the scope of the class where the constant (**const**) is defined, you can omit the type name prefix (**MyClass** in the preceding example). Therefore, you can easily implement the concept of a macro library. The list of macro symbols becomes a class that has public **const** definitions. 
 
 You can also define constants as variables only. The compiler will maintain the invariant so that the value can't be modified.
 
-    {
-        const int Blue = 0x0000FF;
-        const int Green = 0x00FF00;
-        const int Red = 0xFF0000;
-    }
+```xpp
+{
+    const int Blue = 0x0000FF;
+    const int Green = 0x00FF00;
+    const int Red = 0xFF0000;
+}
+```
 
 ## Null values for data types
 The concept of **null** values that is available in many other database management systems (DBMSs) is not supported. A variable in X++ always has a type and a value, however, for each data type, one value is considered **null** (for example, when the **validateField** table method is run).

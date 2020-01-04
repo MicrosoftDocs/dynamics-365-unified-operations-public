@@ -72,7 +72,7 @@ The following table provides recommendations about the solver strategy to use in
 
 ## Additional resources
 
-[Build product configuration model](build-product-configuration-model.md)
+[Product configuration overview](build-product-configuration-model.md)
 
 [Heuristics](https://techterms.com/definition/heuristic)
 

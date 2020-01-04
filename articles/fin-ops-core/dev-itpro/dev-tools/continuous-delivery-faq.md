@@ -36,8 +36,7 @@ ms.dyn365.ops.version: Platform update 2
 
 This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 
-Customization
--------------
+## Customization
 
 ### Do I customize (overlayer) or use extensions?
 
@@ -45,11 +44,11 @@ Extensibility is the only customization framework in Finance, Supply Chain, and 
 
 Dynamics 365 Finance, Supply Chain, and Retail are extensively customized by partners, value added resellers (VARs), and even some customers. The ability to customize the product is a strength that has historically been supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and has replaced customization through overlayering.
 
-For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and the [Developer home page](developer-home-page.md).
+For more information, see [Extensibility home page](../extensibility/extensibility-home-page.md) and the [Develop and customize home page](developer-home-page.md).
 
 ### How do I prevent my models from being customized by customers or other partners?
 
-You can block customizations of your model as described in [How to disable model customization and deprecate functionality,](lock-models.md) or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
+You can block customizations of your model as described in [Turn off model customization and deprecate functionality](lock-models.md), or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
 
 ### How can I define the scope of my models? How many models or packages should I create?
 Designing models and model elements is no different than designing other types of software libraries. You should apply [SOLID (object-oriented design)](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) design principles. In addition, we recommend the following tips that are specific to the platform:
@@ -60,14 +59,14 @@ Designing models and model elements is no different than designing other types o
 ## Continuous delivery
 ### Do I need build environments?
 
-Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Developer topology deployment with continuous build and test automation](../perf-test/continuous-build-test-automation.md) for more details.
+Yes, you should take advantage of the build and test automation tools provided in the build environments. You can deploy build environments from your Lifecycle Services (LCS) project. Creating daily builds and daily regression tests are key tools to enable the continuous delivery and maintain the quality of your application. Refer to [Deploy and use an environment that supports continuous build and test automation](../perf-test/continuous-build-test-automation.md) for more details.
 
 Do not use build environments for development activities. Do not keep a backup of your test database on these build VMs. Build VMs are designed to reset themselves to a known state with every build and whenever they are updated with a Microsoft binary or platform updates from LCS. 
 For example, if you apply a binary hotfix or platform update to a build VM, the VM prepares itself for the next build as part of the update. This will remove your customizations and also trigger a database synchronization.
 
 ### What strategy do I use for test automation?
 
-For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/) blog article and refer to [Automated testing guidance.](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/) 
+For test automation, concentrate on unit tests (use the SysTest framework) that are data independent or create their own data. Use a smaller number of functional scenario tests (based on Task Recorder) that rely on test data to execute. Scenario tests are more expensive to maintain. Unit tests can then be executed on any development environment easily and quickly. Review the [Test Automation Pyramid](https://blogs.msdn.microsoft.com/dave_froslie/2016/03/09/test-automation-pyramid/) blog article and refer to [Automated testing guidance](https://blogs.msdn.microsoft.com/axdevalm/2016/08/12/automated-testing-guidance-for-ax-7/).
 
 ![media/testautomationpyramid1.png](media/testautomationpyramid1.png) Some key concepts to keep in mind:
 
@@ -96,7 +95,7 @@ On a build environment, copy this backup over to the I:\\DynamicsBackupDatabases
 
 ### How do I distribute my application to customers?
 
-There are two artifacts you can use to distribute your application to your customers or partners: model files or deployable packages. Model files are design time artifacts that contain source code. Use model files if your customer is integrating your application with other third-party models or when you want to allow customization of your models. For more information, see [Distribution of models: Export and import a model](models-export-import.md). Model files are the most common methods for ISVs to distribute solutions. Deployable packages are final applications. Use deployable packages with customers that will not be customizing or integrating your application with other third-party models. If you use deployable packages, your customer can only use or extend your application. They will not see or have access to your source code. To create a deployable package use the Visual Studio tools (**Dynamics 365**&gt;  **Deploy** &gt; **Create Deployment package**) or use a build environment. Build environments generate a deployable package with every successful build.
+There are two artifacts you can use to distribute your application to your customers or partners: model files or deployable packages. Model files are design time artifacts that contain source code. Use model files if your customer is integrating your application with other third-party models or when you want to allow customization of your models. For more information, see [Export and import models](models-export-import.md). Model files are the most common methods for ISVs to distribute solutions. Deployable packages are final applications. Use deployable packages with customers that will not be customizing or integrating your application with other third-party models. If you use deployable packages, your customer can only use or extend your application. They will not see or have access to your source code. To create a deployable package use the Visual Studio tools (**Dynamics 365**&gt;  **Deploy** &gt; **Create Deployment package**) or use a build environment. Build environments generate a deployable package with every successful build.
 
 ## Development topologies
 ### Should I develop on premises or in the cloud?
@@ -141,7 +140,7 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 ### Can more than one developer develop concurrently on the same VM?
 
-This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Enable a new developer on a development machine](enable-development-machine.md).
+This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Create new users on development machines](enable-development-machine.md).
 
 If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Azure DevOps) and you keep a backup of test databases. 
 
@@ -149,6 +148,7 @@ If you are a Microsoft partner developing code for more than one customer, we re
 ### How many sandbox environments do I need within an LCS customer implementation project?
 
 A customer subscription comes with three environments by default: a dev or build environment, a tier-2 sandbox environment, and a production environment. You can use the tier-2 sandbox environment as a configuration and a UAT environment before the application goes live in production. After configuring the sandbox with the code and data that you need to go live (also known as your *gold configuration*), you can run your validation on the same environment. When your validation passes, restore your sandbox database to the point in time of its gold configuration. You can then deploy your code to production and copy the sandbox database to your production environment. You can also chose to have more than one sandbox environment that is is tier-2 or higher, especially after your application is live. One sandbox can be used as a pre-production UAT environment, and ther other sandboxes can be used for configuration, upgrade or other scenarios. You can purchase additional tier-2 or higher sandboxes. 
+
 The following servicing requests and tools are supported by LCS, which may help you decide whether one tier-2 sandbox is sufficient for your implementation.
 
 1.  Restore a sandbox database to a point in time.

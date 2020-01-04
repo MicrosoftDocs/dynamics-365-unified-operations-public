@@ -5,7 +5,7 @@ title: Changes in X++ and the X++ compiler
 description: This topic reviews the changes made to the compiler for Finance and Operations applications.
 author: pvillads
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -21,7 +21,6 @@ ms.reviewer: rhaertle
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 26781
-ms.assetid: 056d4064-e365-487c-a606-e2fadfe28242
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: pvillads
@@ -64,16 +63,18 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
 -   The `finally` keyword is now available to follow the `try` and `catch` keywords. The semantics are identical to the semantics in C\#. The statements provided in the finally clause are executed irrespective of whether the try block threw any exceptions.
 -   The `using` keyword has been added as shorthand for referencing .NET namespaces. The following code example illustrates two ways of utilizing the using keyword to reference namespaces:
 
-        using SysColl = System.Collections;  // SysColl is an alias for the whole namespace.
-        using           System.CodeDom;      // Contains the class named CodeComment.
+    ```xpp
+    using SysColl = System.Collections;  // SysColl is an alias for the whole namespace.
+    using           System.CodeDom;      // Contains the class named CodeComment.
 
-        public class MyClass2
-        {
-            static SysColl.ArrayList arrayList = new SysColl.ArrayList(); // Initialized on declaration.
-            CodeComment codeComment          = new CodeComment("I am a comment.");
+    public class MyClass2
+    {
+        static SysColl.ArrayList arrayList = new SysColl.ArrayList(); // Initialized on declaration.
+        CodeComment codeComment          = new CodeComment("I am a comment.");
 
-            // More X++ code here.
-        }
+        // More X++ code here.
+    }
+    ```
 
 -   You can now initialize a class's field in the field's declaration statement. This is illustrated twice in the previous code example.
 -   You can declare variables in smaller scopes, not just at the start of methods.
@@ -81,14 +82,16 @@ X++ is now a first-class citizen in the .NET world. Therefore we are adding to X
 -   A class's fields can now be static. In previous versions, only instance fields were allowed.
 -   A class can now have one static constructor. In previous versions, only instance constructors were available. The following X++ code example shows the syntax for a static constructor, through the new keyword typenew.
 
-        .    public class MyClass4
-            {
-                static utcdatetime utcInitialized3;  // Static variable member.
-                static void typenew()                // Static constructor member. 'typenew' is a new keyword.
-                {
-                utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
-                }
-            }
+    ```xpp
+    public class MyClass4
+    {
+        static utcdatetime utcInitialized3;  // Static variable member.
+        static void typenew()                // Static constructor member. 'typenew' is a new keyword.
+        {
+            utcInitialized3 = DateTimeUtil::utcNow(); // Static variable referenced without class name.
+        }
+    }
+    ```
 
 -   An attribute decoration, such as on a class or a method, can now omit the suffix of the attribute name if the suffix is `Attribute`. So the X++ joins the C\# in allowing `[MyFavorite]` instead of requiring `[MyFavoriteAttribute]`.
 -   A delegate can now be defined in a table, form, or query, and not just in a class.
@@ -110,12 +113,11 @@ There are a few changes to X++ that require corresponding changes in legacy cust
 -   There is no concept of a job, in the sense of **AOT** &gt; **Jobs** &gt; **MyJob**. To quickly and easily run an X++ method, you can still add in a `static Main` method to a class, and then set the class as the startup object form for the project in Microsoft Visual Studio. When the project is run, the `Main` method will be run.
 
 
-Additional resources
---------
+## Additional resources
 
-[Dynamics AX LINQ Provider for use in C#](linq-provider-c.md)
+[Language Integrated Query (LINQ) provider for C#](linq-provider-c.md)
 
-[Technical Concepts Guide](developer-home-page.md)
+[Develop and customize home page](developer-home-page.md)
 
 
 

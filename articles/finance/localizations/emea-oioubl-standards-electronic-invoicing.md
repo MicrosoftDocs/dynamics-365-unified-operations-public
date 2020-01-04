@@ -41,13 +41,15 @@ Implementation and adoption of European Union-wide electronic invoicing is regul
 The following country-specific formats of electronic invoices are available:
 
 -   OIOUBL v.2.02 for Denmark
--   EHF v.2.0.8 for Norway
+-   EHF v.3.0 for Norway
 -   PEPPOL BIS v.2 for Austria, France, and Belgium
 -   UBL-OHNL 1.9 for the Netherlands
 -   FacturaE v.3.2.1 for Spain
 -   FatturaPA v.1.2 for Italy
+-   xRechnung v.1.2 for Germany
+-   Open PEPPOL BIS Billing v.3.0 for European Union
 
-Electronic invoicing is based on [electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). There is a **Customer invoice model** data model and a number of country-specific electronic reporting format configurations created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), and the Netherlands (NL).
+Electronic invoicing is based on [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). A **Customer invoice model** data model and several country/region-specific ER format configurations have been created for Austria (AT), Denmark (DK), Italy (IT), Norway (NO), Spain (ES), France (FR), Belgium (BE), the Netherlands (NL), Germany (DE), and the European Union (EU).
 
 -   OIOUBL Sales invoice - for AT, DK, and NO
 -   OIOUBL Sales credit note - for AT, DK, and NO
@@ -69,6 +71,12 @@ Electronic invoicing is based on [electronic reporting](../../dev-itpro/analytic
 -   Sales invoice (IT)
 -   Project invoice (ES)
 -   Project invoice (IT)
+-   Sales Invoice DE
+-   Project Invoice DE
+-   Peppol Sales Invoice - for EU
+-   Peppol Sales Credit Note - for EU
+-   Peppol Project Invoice - for EU
+-   Peppol Project Credit Note - for EU
 
 The electronic invoices and credit notes that you generate include required information, such as a European Article Numbering (EAN) number, contact person, dimension account number, and address information for the customer. Validation rules are applied when invoices are generated so you can verify that the correct information has been entered. The set of required information may differ from country to country. Because the requirements, as well as supported countries and formats, is subject to change, you should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**.
 

@@ -39,7 +39,7 @@ This topic explains how to import independent software vendor (ISV) licenses int
 > [!IMPORTANT]
 > The process that is described in this topic is available only for customers who have on-premises environments that are deployed with Platform update 12 or later.
 
-For general information about the benefits of ISV licensing, information about how to enable licensing for your solution, and other information that is related to self-signed certificates, see [ISV licensing](isv-licensing.md).
+For general information about the benefits of ISV licensing, information about how to enable licensing for your solution, and other information that is related to self-signed certificates, see [Independent software vendor (ISV) licensing](isv-licensing.md).
 
 ## Prerequisites
 Before you import the ISV license file into your on-premises environment, verify that the following prerequisites are met:

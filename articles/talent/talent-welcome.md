@@ -58,11 +58,11 @@ Develop a strategy for managing your human resources
 
 As you work with Talent, you'll decide how to structure your organization, using elements, such as departments, jobs, and positions. These are among the foundational elements that you'll configure. Individual employees are assigned to positions which are associated with jobs.
 
--   [Organize your workforce using departments, jobs, and positions](departments-jobs-positions.md)
--   [Set up company-specific HR parameters](set-up-company-specific-hr-parameters.md)
--   [Set up HR parameters across legal entities](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organize your workforce by using departments, jobs, and positions](departments-jobs-positions.md)
+-   [Set up company-specific Human resources (HR) parameters](set-up-company-specific-hr-parameters.md)
+-   [Set up Human resources (HR) parameters across legal entities](set-up-hr-parameters-across-legal-entities.md) 
 -   [Personnel actions FAQ](personnel-actions-faq.md)
--   [Leave and absence overview](leave-absence-overview.md)
+-   [Leave and absence management](leave-absence-overview.md)
 -   [How to use Dynamics 365 Talent: Leave and Absence (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [How to manage personnel in Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -70,8 +70,8 @@ As you work with Talent, you'll decide how to structure your organization, using
 
 Talent includes Attract, which can help you identify, interview, and hire candidates that hold the skills your organization needs. As you move from recruiting through hiring, the Onboard app can help you bring your new employee into your organization by setting accurate expectations, providing information they need to get started, connecting them with colleagues, and set them up for success in their new role.  
 
-- [Attract overview](attract-overview.md)
-- [Onboard overview](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent - Attract features and capabilities](attract-overview.md)
+- [Get started with Onboard](create-onboarding-experience.md)
 
 ## Retain and motivate employees
 
@@ -88,17 +88,17 @@ You can set up plans to effectively and equitably manage compensation, as well a
 To help your employees reach their career objectives while delivering critical business needs you can set up goals, create performance reviews and track feedback. To help employees develop needed skills, you can also set up instructors, course types, courses, course descriptions, agendas, tracks, and sessions before you assign an instructor to a course, or register someone for a course. Instructors must already exist as workers, applicants, or contacts.
 
 -   [Performance management](performance-management-overview.md)
--   [Align workforce skills and business needs](skills.md)
--   [Administer training through courses](courses.md)
+-   [Align workforce skills with business needs](skills.md)
+-   [Set up training courses](courses.md)
 -   [How to manage employee development in Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## Create and maintain benefits
 
 In addition to compensating your staff with wages, salaries, and bonuses, you can develop benefit programs such as health insurance and retirement plans. You can also manage benefits such as loan programs, in which your company lends items, such as computers or phones, to its employees.
 
--   [Manage a benefit program](manage-benefit-program.md)
+-   [Define and manage a benefits program](manage-benefit-program.md)
 -   [Benefit eligibility policies](benefit-eligibility-policies.md)
--   [Manage items lent to workers](loan-items.md)
+-   [Manage items that are lent to workers](loan-items.md)
 -   [How to manage employee benefits in Dynamics 365 Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## Maintain workplace safety and compliance
@@ -113,6 +113,6 @@ Talent can help you maintain a safe work environment that’s in compliance with
 You can design and administer questionnaires to gather information that’s used for a variety of purposes. The Questionnaire feature lets you design and create questionnaires. When a questionnaire is ready, you distribute it broadly or to a specific set of respondents to complete. After the respondents provide their answers, you can review and analyze the results.
 
 -   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Design questionnaire](design-questionnaires.md)
+-   [Distribute and schedule questionnaires](distribute-questionnaires.md)
+-   [View and evaluate the results of questionnaires](evaluate-questionnaire-results.md)

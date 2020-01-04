@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Can't create an environment in the Power Apps Admin center
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 - The tenant/environment admin can't create an environment in the Microsoft Power Apps Admin center.

@@ -80,4 +80,4 @@ Follow these steps to edit a methodology in a specific project only.
 Additional resources
 --------
 
-[Publishing an App in AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)

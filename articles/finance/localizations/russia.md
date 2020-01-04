@@ -73,6 +73,7 @@ This topic provides information about functionality that supports Russian regula
 
 ## Fixed assets (Russia)
 - [Fixed assets (Russia)](rus-fixed-assets.md)
+- [Fixed assets overview](rus-fixed-assets-overview.md)
 - [Set up fixed assets](rus-set-up-fixed-assets.md)
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Register fixed assets acquisitions](rus-register-acquisition.md)
@@ -97,6 +98,7 @@ This topic provides information about functionality that supports Russian regula
 - [Register goods shipped to customers](../../supply-chain/localizations/rus-goods-transit-postponed.md)
 - [Cash flow management](rus-cash-flow.md)
 - [Allocation of miscellaneous charges in proportion to weight and volume](rus-miscellaneous-charges.md)
+- [Third party miscellaneous charges](rus-third-party-misc-charges.md)
 
 ## Inventory
 - [Goods in transit from vendor](rus-goods-transit-vendor.md)

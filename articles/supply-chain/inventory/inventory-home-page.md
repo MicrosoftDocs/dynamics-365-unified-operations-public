@@ -55,7 +55,7 @@ The following learning map shows the major concepts and tasks that make up the f
 Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
 
 ### Inventory accounting 
-To learn more, see [Inventory accounting in Cost management](../cost-management/inventory-close.md).
+To learn more, see [Inventory close](../cost-management/inventory-close.md).
 
 ### Manufacturing and Supply Chain Management blogs
 You can find opinions, news, and other information about Inventory management and other solutions on the

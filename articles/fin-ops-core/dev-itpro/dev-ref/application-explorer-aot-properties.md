@@ -903,7 +903,8 @@ The following table describes the properties that are available for indexes on t
 | ValidTimeStateKey     | Specify whether this index key is used to determine the valid time state relationship with the parent table. The default value is **No**. **Tip:** To enable this property, you must set the **AllowDuplicates** property to **No** and the **AlternateKey** property to **Yes**.                                                                                                                                                                                   |
 | ValidTimeStateMode    | Specify whether gaps are allowed between two date-effective records. The default value is **NoGap**. **Tip:** To enable this property, you must set the **AllowDuplicates** property to **No**, the **AlternateKey** property to **Yes**, and the **ValidTimeStateKey** property to **Yes**.                                                                                                                                                                        |
 
-**Note:** Pages sort on the first index.
+> [!NOTE]
+> Pages sort on the first index.
 
 ## Table relation properties
 ### List of properties
@@ -985,7 +986,8 @@ The following table describes the properties for a table relation in Application
 </tbody>
 </table>
 
-**Note:** When the **SaveDataPerCompany** property is set to **Yes** for both tables, the system adds the **DataAreaId** field to each relationship.
+> [!NOTE]
+> When the **SaveDataPerCompany** property is set to **Yes** for both tables, the system adds the **DataAreaId** field to each relationship.
 
 ### RelatedTableRole and query JoinRelation
 
@@ -995,7 +997,9 @@ This section describes how you can use the **RelatedTableRole** property to simp
 
 When you set the **CreateNavigationPropertyMethods** property to **Yes** on a table relation, the system generates navigation methods for the table buffer class. A navigation method links two table buffer instances by using their foreign key relationship. The **UnitOfWork** class is one area where this navigation linkage is used. The name of a navigation method is copied from the value of the **RelatedTableRole** property on the table relation. This behavior is used when the **RelatedTableRole** value is explicitly set in the **Properties** window, and when the system generates the **RelatedTableRole** value because the **UseDefaultRoleNames** property is set to **Yes**. The property values generate the following navigation method on the child CustTable buffer. Most directly, the navigation method name is copied from the value of the **RelatedTableRole** property.
 
-    public final CustBankAccount BankAccounts([CustBankAccount relatedTable])
+```xpp
+public final CustBankAccount BankAccounts([CustBankAccount relatedTable])
+```
 
 #### NavigationPropertyMethodNameOverride property
 
@@ -2047,7 +2051,8 @@ The value that you select determines the web menu item names that are available 
 </tbody>
 </table>
 
-**Note:** When you use the **Parameters** or **EnumParameter** property, errors such as type mismatches can be found only at run time, not at compile time.
+> [!NOTE]
+> When you use the **Parameters** or **EnumParameter** property, errors such as type mismatches can be found only at run time, not at compile time.
 
 ## Query properties
 Within a query, you can set properties on the query itself, the data sources, the fields that are used for sorting, and the ranges that are used to delimit the query.
@@ -2638,14 +2643,14 @@ The following table describes properties for report design sections. For informa
 |          ColumnHeadingsStrategy           | Specify the layout of column headings. If you set this property to <strong>WordWrap</strong>, a heading wraps when it's longer than the longest field in the column. Headings can wrap to a maximum of eight lines. Headings that are longer than eight lines are truncated. <strong>Note:</strong> The heading length varies, depending on the language. |
 |                  Columns                  |                                                                                                                                                              Specify the number of columns.                                                                                                                                                               |
 |                Columnspace                |                                                                                                                                                            Specify the space between columns.                                                                                                                                                             |
-|                   Font                    |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
-|                 FontSize                  |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|                   Font                    |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options &gt; Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|                 FontSize                  |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options &gt; Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
 |              ForegroundColor              |                                                                                                                                                               Specify the foreground color.                                                                                                                                                               |
 |                GrandHeader                |                                                                          Specify whether the value of the <strong>HeaderText</strong> property is shown. The <strong>GrandHeader</strong> property is available only when a report has multiple data sources that aren't nested.                                                                          |
 |                GrandTotal                 |                                                                          Specify whether the value of the <strong>FooterText</strong> property is shown. The <strong>GrandTotal</strong> property is available only when a report has multiple data sources that aren't nested.                                                                           |
 |                HeaderText                 |                                                       Specify the text that is shown above the first record in a section when the <strong>GrandHeader</strong> property is set to <strong>Yes</strong>. This property is available only when a report has multiple data sources that aren't nested.                                                       |
 |                  Height                   |                                                                                                                                                                    Specify the height.                                                                                                                                                                    |
-|                  Italic                   |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|                  Italic                   |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options &gt; Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
 |     LabelTopMargin, LabelBottomMargin     |                                                                                                                                                   Specify the margins above and below column headings.                                                                                                                                                    |
 |                LeftMargin                 |                                                                                                    Specify the left margin. If you set this property to <strong>Auto</strong>, the default value that is stored in the UserInfo system table is used.                                                                                                     |
 | LineAbove, LineBelow, LineLeft, LineRight |                                                                                                          Specify the type of line for a section border. If a report has many lines and boxes, consider using the shape control inside a section.                                                                                                          |
@@ -2659,7 +2664,7 @@ The following table describes properties for report design sections. For informa
 |                 Thickness                 |                                                                                                                                                        Specify the thickness of a section border.                                                                                                                                                         |
 |                    Top                    |                                                                                                                                                       Change the position of the top of the report.                                                                                                                                                       |
 |                 TopMargin                 |                                                                                                     Specify the top margin. If you set this property to <strong>Auto</strong>, the default value that is stored in the UserInfo system table is used.                                                                                                     |
-|                 Underline                 |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options **&gt; **Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
+|                 Underline                 |                                                       Specify the text formatting. The settings of the <strong>Font</strong> and <strong>FontSize</strong> properties override the values that you can set by clicking <strong>Options &gt; Fonts</strong> on the <strong>Tools</strong> menu.                                                        |
 
 ## Report query properties
 The following table describes report query properties. For information about additional report properties, see the "Report properties" and "System and common properties" sections.

@@ -123,7 +123,7 @@ TThe following table includes a list of models that are now hard-sealed with thi
 
 The following changes were made to support extending enumerations:
 - Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
-- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add an enum value](add-enum-value.md).
+- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
 - Some application code that uses enumerations was changed to support extensibility. Common changes include:
     + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
     + Adding **SysExtension** support for extension.

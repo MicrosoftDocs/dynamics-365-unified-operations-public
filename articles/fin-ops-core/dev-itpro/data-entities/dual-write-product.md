@@ -5,7 +5,7 @@ title: Unified product experience
 description: This topic describes the integration of product data between Finance and Operations apps and Common Data Service.
 author: t-benebo 
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -56,7 +56,7 @@ Product information contains all the information related to the product and its 
 
 Finance and Operations | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
-Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. The following table shows the mappings.
+Released products V2 | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** entity contains the fields from Finance and Operations apps that define the product, and that contain the product's financial and management information. 
 Common Data Service released distinct products | Product | The **Product** entity contains the fields that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
 Product number identified barcode | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
 Default order settings | msdyn\_productdefaultordersettings
@@ -78,7 +78,7 @@ Unit conversions | msdyn_ unitofmeasureconversions
 Product specific unit of measure conversion | msdyn_productspecificunitofmeasureconversion
 Product categories | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category entity. 
 Product category hierachies | msdyn_productcategoryhierarhies | You use product hierarchies to categorize or group products.The category hierarchies are available in Common Data Service using the Prodcut category hierarchy entity. 
-Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used with the following mappings. 
+Product category hierarchy roles | msdyn_productcategoryhierarchies | Product hierarchies can be used for different roles in D365 Finance and Operations. The specify which category is used in each role the product category role entity is used. 
 Product category assignments | msdyn_productcategoryassignments | To assign a product to a category the product category assignments entity can be used.
 
 ## Integration of products

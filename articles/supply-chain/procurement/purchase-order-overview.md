@@ -48,8 +48,8 @@ The **Purchase order preparation** and **Purchase order receipt and follow-up** 
 
 The following articles provide an overview of the various stages that a PO goes through:
 
--   [Purchase order creation](purchase-order-creation.md)
--   [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+-   [Create purchase orders](purchase-order-creation.md)
+-   [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 -   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
 
@@ -89,9 +89,9 @@ The **Approval status** field is used when a PO goes through a review process or
 Additional resources
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Create purchase orders](purchase-order-creation.md)
 
-[Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+[Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 

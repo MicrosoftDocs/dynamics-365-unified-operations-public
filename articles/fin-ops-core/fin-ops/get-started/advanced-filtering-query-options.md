@@ -5,7 +5,7 @@ title: Advanced filtering and query syntax
 description: This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the matches operator in the Filter pane or grid column header filters.  
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -119,6 +119,12 @@ This article describes the filtering and query options that are available when y
 <td>Matching the values that are separated by commas</td>
 <td>Type all your criteria, and separate them by using commas.</td>
 <td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</td>
+</tr>
+<tr>
+<td>"" (two double quotes)</td>
+<td>Matching a blank value</td>
+<td>Type two consecutive double quotes to filter for blank values in that field.</td>
+<td>Two consecutive double quotes (<strong>""</strong>) finds rows with no value for the current column.</td>
 </tr>
 <tr>
 <td>(<span class="code">SQL statement</span>) (SQL statement between parentheses)</td>

@@ -47,4 +47,4 @@ Service agreement groups are useful for sorting and filtering service agreements
 
 ## Related topics
 
-[Service agreement groups](service-agreement-groups.md)
+[Service agreement overview](service-agreement-groups.md)

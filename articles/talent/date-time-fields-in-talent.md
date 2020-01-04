@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Work with date and time in Microsoft Dynamics 365 Talent
 
-[!include [banner](includes/banner.md)]
-
 **Date and Time** fields are a fundamental concept in Dynamics 365 Talent. It's important to understand how to work with **Date and Time** data in a Dynamics 365 form, Common Data Service, and external sources.
 
 ## Understanding the difference between Date and Date and Time field data types

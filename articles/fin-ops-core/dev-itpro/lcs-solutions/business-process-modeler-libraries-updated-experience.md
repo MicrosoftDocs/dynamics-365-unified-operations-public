@@ -50,8 +50,10 @@ There are two ways to create a BPM library. You can create a new library that ha
 2.  To create a new library, right-click any library, and then, in the lower-left corner of the window, select **Create**. To copy an existing library, right-click that library, and then, in the lower-left corner of the window, select **Copy**.
 
     [![Location of the Copy button](./media/bpm_03.png)](./media/bpm_03.png)
-=======
-    -   **Global libraries** – Cross-industry standard business processes. [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
+
+    -   **Global libraries** – Cross-industry standard business processes. 
+    
+    [![Three types of libraries on the Business process libraries page](./media/bpm_02.png)](./media/bpm_02.png)
 
 3.  Enter a name for the library.
 
@@ -99,7 +101,7 @@ There are two sections in business process libraries: **Core Business Processes*
 
 ## Create a task recording and associate it with a business process
 
-Task recordings should be created in an environment that has your custom data and customizations. For reference information about Task recorder, see [Task Recorder](../user-interface/task-recorder.md).
+Task recordings should be created in an environment that has your custom data and customizations. For reference information about Task recorder, see [Task recorder resources](../user-interface/task-recorder.md).
 
 ### Create a task recording
 
@@ -142,4 +144,4 @@ Task recordings can be played as task guides. Task guides are used to guide user
 Additional resources
 --------
 
-[Publishing an App in AppSource](lcs-solutions-app-source.md)
+[Requirements for publishing apps on AppSource](lcs-solutions-app-source.md)

@@ -114,7 +114,7 @@ The fiscal registration service supports only scenarios where sales tax is inclu
 
 ## Set up Retail for Austria
 
-This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Microsoft Dynamics 365 for Retail documentation](../index.md).
+This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
 
 To use the Austria-specific functionality for Retail, you must specify the following settings:
 
@@ -216,7 +216,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 
     - **QR Code** field, which is used to print the reference to the registered cash transaction in the form of QR code.
 
-For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
+For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
 ### Configure fiscal integration
 
@@ -228,7 +228,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 ## Deployment guidelines for cash registers for Austria
 
-The fiscal registration service integration sample for Austria is part of the Retail SDK. For information about how to install and use the Retail SDK, see the [Retail SDK documentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The fiscal registration service integration sample for Austria is part of the Retail SDK. For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
@@ -369,7 +369,7 @@ The Hardware station extension components are included in the Hardware station s
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 2. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
@@ -436,7 +436,7 @@ The purpose of the extension that is a fiscal document provider is to generate s
 
 The CRT extension is **Runtime.Extensions.DocumentProvider.EFRSample**.
 
-For more details about the design of the fiscal integration solution, see [Fiscal registration process and fiscal integration samples for fiscal devices](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+For more details about the design of the fiscal integration solution, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### Request handler
 	

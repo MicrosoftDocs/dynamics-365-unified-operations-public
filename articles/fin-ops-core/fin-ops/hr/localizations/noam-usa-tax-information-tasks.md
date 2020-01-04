@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 
-Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md) and [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
+Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md) and [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ To save time when you create tax regions, you can enter any part of the location
 > [!TIP]
 > In the **Name or description** field, include the name of the state as the first part of the tax region name. Tax regions in the same state will then be sorted together.
 
-For information about how to assign tax regions to workers, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
+For information about how to assign tax regions to workers, see [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md).
 
 ## Set up tax codes
 
@@ -76,7 +76,7 @@ You don't have to create tax codes. The codes for all payroll taxes that Dynamic
 
 You can create as many versions of the data for each tax code as you require. However, only one version can be active for a legal entity at any time. The **Tax codes** page always shows the version that is currently active for the selected legal entity.
 
-Tax codes are automatically assigned to workers, based on their worker tax regions, position, and legal entity. You can then set up the worker tax code for each worker's individual tax situation. For information about how to set up worker tax codes, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
+Tax codes are automatically assigned to workers, based on their worker tax regions, position, and legal entity. You can then set up the worker tax code for each worker's individual tax situation. For information about how to set up worker tax codes, see [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md).
 
 > [!IMPORTANT]
 > Dynamics AX doesn't support the following taxes:
@@ -135,10 +135,10 @@ After you create tax groups that are enabled for posting definitions, you can as
 
 ## Next step
 
-The next step is to set up benefits and mandatory deductions. For more information, see [Benefit setup tasks](noam-usa-benefit-set-up-tasks.md).
+The next step is to set up benefits and mandatory deductions. For more information, see [Set up benefits](noam-usa-benefit-set-up-tasks.md).
 
 ## Additional resources
 
-[Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
+[Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)
 
 [Posting definitions in the public sector](../../../../finance/public-sector/posting-definitions-public-sector.md)
