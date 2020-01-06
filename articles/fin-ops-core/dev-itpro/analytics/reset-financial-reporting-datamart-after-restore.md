@@ -39,7 +39,7 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 
 - The application database was restored, but the data mart database wasn't restored.
 - You see incorrect data for a period, and you've determined that the issue isn't a report design issue.
-- You see incorrect data for a period, and records appear under integration attempts in Report designer integration status.
+- You see incorrect data for a period, and records appear under integration attempts in Report designer integration status (start the Report designer and select **Tools** > **Integration status**).
 - Support instructs you to reset the data mart as part of a troubleshooting step.
 
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
@@ -160,7 +160,7 @@ Use services.msc to restart the services that you stopped earlier:
 - Batch Management Service (on non-private AOS computers only)
 - Management Reporter 2012 Process Service (on BI computers only)
 
-## Reset the Financial reporting data mart for Dynamics 365 Finance (on-premises) through SQL Server Management Studio
+## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (on-premises) through SQL Server Management Studio
 
 1. Instruct all users to close Report designer and exit the Financial reporting area.
 2. Run the following script against the Financial reporting database (MRDB).
