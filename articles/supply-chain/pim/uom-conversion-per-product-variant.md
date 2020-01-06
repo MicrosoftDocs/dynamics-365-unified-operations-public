@@ -5,7 +5,7 @@ title: Unit of measure conversion per product variant
 description: This topic explains how unit of measure conversions can be set up on product variants.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
