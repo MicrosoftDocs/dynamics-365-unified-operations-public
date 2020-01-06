@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a recommendations control to the transaction screen on POS devices
-description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 for Retail.
+description: This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
 ms.date: 10/01/19
@@ -35,14 +35,14 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](includes/banner.md)]
 
 
-This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 Retail. For more information about product recommendations, read the  [product recommendations on POS documentation](product.md).
+This topic describes how to add a recommendations control to the transaction screen on a point of sale (POS) device using the screen layout designer in Microsoft Dynamics 365 Commerce. For more information about product recommendations, read the  [product recommendations on POS documentation](product.md).
 
 
-You can display product recommendations on your POS device when you use Microsoft Dynamics 365 Retail. To display product recommendations, you need to add a control to the transaction screen using the screen layout designer. 
+You can display product recommendations on your POS device when you use Commerce. To display product recommendations, you need to add a control to the transaction screen using the screen layout designer. 
 
 ## Open Layout designer
 
-1. Go to **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
+1. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Screen layouts**.
 2. Use the Quick Filter to find the screen that you want to add the control to. For example, filter on the **Screen layout ID** field using a value of **F2CP16:9M**.
 3. In the list, find and select the desired record. For example, select **Name: F2CP16:9M Screen Layout ID: F2CP16:9M**.
 4. Click **Layout designer**.
@@ -73,7 +73,7 @@ There are two configurations options available. Choose the option that works bes
 
 
 3. Click the **X** to save and exit Layout designer.
-4. In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
+4. In Commerce, go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedules**.
 5. In the list, select **1090 Registers**.
 6. Click **Run now**.
 
@@ -96,7 +96,7 @@ There are two configurations options available. Choose the option that works bes
 7. In the **Image** field, select the image to appear on the tab.
 8. Click **OK**. The new tab appears in the button grid.
 9. Click the **X** to save and exit Layout designer.
-10. In Dynamics 365 for Retail, go to **Retail** &gt; **Retail IT** &gt; **Distribution schedules**.
+10. In Commerce, go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedules**.
 11. In the list, select **1090 Registers**.
 12. Click **Run now**.
 
