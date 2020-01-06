@@ -5,7 +5,7 @@ title: Create retail deployable packages
 description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Retail.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/22/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -148,15 +148,15 @@ For more details about Channel database extensions, see [Channel database extens
 
 If you have any new extensions in CRT, Retail Server, Hardware station, or proxy, you should register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
 
-Before you do the package, you must update the following configuration files if you have any customization in that area:
+Before you use the package, you must update the following configuration files if you have any customization in that area:
 
-- **CommerceRuntime.Ext.config** – Register all your CRT extensions and dependent assemblies. Also this is where you need to include the Retail Server extension dependent assemblies.
+- **CommerceRuntime.Ext.config** – Register all of your CRT extensions, CRT and Retail server dependent assemblies, and custom Key Value pair configurations. The key name for the extension configuration values must be prefixed with "ext". The Commerce runtime initialization will enforce this convention and will not load if this is not used. Additional prefixes can be added to represent the sub-area that is controlled, such as  "ext.CusomStorageConfig.CustomKeyCart”.
 
 > [!NOTE]
-> If the extension depends on Newtonsoft.Json.Portable or some other assemblies, then explicitly include it. Don’t assume that these assemblies will be included by default in the packaging or Retail server folder because the out-of-band (OOB) Retail server or CRT is using this. In the future, if the OOB functionalities don’t use these assemblies, it could be removed. As a result, you should always explicitly include all of the extension dependent assemblies in order to package and place them in the correct folder.
+> If the extension depends on Newtonsoft.Json.Portable or some other assemblies, then explicitly include it. By default, in the packaging or in the Retail server folder these assemblies may not be include if the OOB functionalities don’t use these assemblies anymore. So extensions should always explicitly include all the extension dependent assemblies to package and place them in the correct folder.
 
+**Example - How to register extension assemblies and extension key value pair configurations**
 
-**Example**
 
  ```C#
     <?xml version="1.0" encoding="utf-8"?>
@@ -165,22 +165,32 @@ Before you do the package, you must update the following configuration files if 
             <!-- Register your own assemblies here. -->
             <add source="assembly" value="my custom library" />
         </composition>
+        
+        <settings>
+             <add name="ext.myCustomKey1" value="myCustomValue1" />
+             <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
+        </settings>
     </commerceRuntimeExtensions>
 ```
 
-- **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions and dependent assemblies.
+- **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions, dependent assemblies and extension Key Value pair configurations. The key name for the extension configuration values must be prefixed with "ext." as the CommerceRuntime initialization will enforce this convention and will not load otherwise, additional prefixes can be added to represent the sub-area they control. Ex: "ext.CusomStorageConfig.CustomKeyCart"
 
-**Example**
+**Example - How to register extension assemblies and extension key value pair configurations**
 
-    ```C#
+```C#
     <?xml version="1.0" encoding="utf-8"?>
     <commerceRuntimeExtensions>
         <composition>
             <!-- Register your own assemblies or types here. -->
             <add source="assembly" value=" my custom library" />
         </composition>
+        
+        <settings>
+             <add name="ext.myCustomKey1" value="myCustomValue1" />
+             <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
+        </settings>
     </commerceRuntimeExtensions>
-    ```
+```
 
 - **HardwareStation.Extension.config** – Register all your Hardware station extensions.
 
