@@ -47,7 +47,7 @@ To view available updates:
 
 - **Binary updates** are pre-compiled and cumulative. Every subsequent binary update includes all previous updates. These updates don't have to be compiled in a development environment, and they can be applied directly to a non-development environment from LCS.
         
-    If you're running an environment that has Retail functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 Retail, all updates, even updates for application models, are released as binary updates.    
+    If you're running an environment that has Commerce functionality and a customized instance of Cloud point of sale (POS), you must complete the additional steps that are listed under Retail SDK packaging. For Microsoft Dynamics 365 Commerce, all updates, even updates for application models, are released as binary updates.    
     
     For all versions of Finance and Operations apps that are version 8.1 and later, all updates, including updates for application models, are released as binary updates.
 
