@@ -59,43 +59,48 @@ This functionality has been enhanced in 10.0.2 release with the following functi
 
 These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.
 
-# Setup
+# Example scenario
 
-## Wave process methods
+For this scenario, you must have demo data installed, and you must use the **USMF** demo data company.
 
-You may need to regenerate the wave process methods for the wave label printing method to become available. Navigate to _Warehouse management - Setup - Waves -  Wave process methods_ and check if waveLabelPrinting is present in the list. If it isn&#39;t, click on &#39;Regenerate methods&#39; in the action bar to add it.
+## Setup
 
-## Wave templates
+### Wave process methods
 
-Navigate to _Warehouse management - Setup -  Waves - Wave templates._ Select the template &#39;62 Shipping Default&#39;. In the Methods FastTab, add the Wave label printing method to the Selected Methods. Assign the &#39;Printlabel&#39; wave step code to the method.
+You may need to regenerate the wave process methods for the wave label printing method to become available.
 
-## Wave label layout
+1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave process methods** and check if **waveLabelPrinting** is present in the list.
+2. If it isn&#39;t, click on **Regenerate methods** in the action bar to add it.
+
+### Wave templates
+
+1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave templates**.
+2. Select a template, such as **62 Shipping Default**.
+3. In the **Methods** FastTab, add the **Wave label printing** method to the **Selected methods**.
+4. Assign a wave step code to the method, such as **Printlabel**.
+
+### Wave label layout
 
 The label layout control what information is printed on the label, and how it is laid out. Here is where you write the ZPL code that is sent to the printer.
 
-Navigate to _Warehouse Management - Setup - Document routing - Wave Label Layout_. Create a new record.
-
-- Label Layout ID: Carton
-- Description: Carton (SSCC)
-
-Save the Carton record and click on ‘Row Settings’ in the Ribbon. Click on ‘Row Settings’ in the Ribbon. Row settings allow you to configure the dynamic part of the label. Create a new row:
-
-- Row Id: WaveLabel
-- Row Table: WHSWaveLabel
-- Row start position – Where the row will begin on the label (vertically): 0
-- Row Height – The height of each row: 0. The row height is positive if the label is horizontal, negative if vertical
-- Rows Per Page – How many rows can be printed on one label: 1
-
-The above setup results in 1 separate ZPL label to be printed per record in Wave labels table.
-
-Click on Edit Query in the ribbon, and in the range section, add a record for Work lines – Work type = Pick. This is so that only the Pick-type work lines are printed on the label, and not the put.
-
-You need to add the Shipments table to the query to be able to print out Bill of lading ID. Join it to the table Work lines.
-
-In the ZPL Layout FastTab there are three sections in which you can write ZPL: Header, Body, and Footer.
-
-Put the following text in the header:
-
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave Label Layout**.
+2. Create a new record.
+  - **Label layout ID**: **Carton**
+  - **Description**: **Carton (SSCC)**
+3. Save the **Carton** record.
+4. Click on **Row Settings** in the ribbon. Row settings allow you to configure the dynamic part of the label.
+5. Create a new row:
+  - **Row Id**: **WaveLabel**
+  - **Row table**: **WHSWaveLabel**
+  - **Row start position** – Where the row will begin on the label (vertically): **0**
+  - **Row height** – The height of each row: **0**. The row height is positive if the label is horizontal, negative if vertical
+  - **Rows per page** – How many rows can be printed on one label: **1**<br>
+  > [!NOTE]
+  > The above setup results in 1 separate ZPL label to be printed per record in Wave labels table.
+6. Click on **Edit query** in the ribbon, and in the range section, add a record for **Work lines** with criterion **Pick** set on **Work type** field. This is so that only the Pick-type work lines are printed on the label, and not the put.
+7. You need to add the **Shipments** table to the query to be able to print out **Bill of lading ID**. Join it to the **Work lines** table.
+8. In the **ZPL Layout** FastTab, there are three sections in which you can write ZPL: Header, Body, and Footer.
+  - Put the required text in the **Header**, such as the following:
 ```text
 CT~~CD,~CC^~CT~
 ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
@@ -133,9 +138,7 @@ CT~~CD,~CC^~CT~
 ^FT437,316^A0N,28,28^FH\^FDPRO#^FS
 ^FT105,371^A0N,28,28^FB130,1,0,C^FH\^FD(420)31533^FS
 ```
-
-In the body put:
-
+  - Put the required text in the **Body**, such as the following:
 ```text
 <Row name="WaveLabel">
 ^FT127,439^A0N,28,28^FH\^FD$WHSWaveLabel.SeqNum$^FS
@@ -152,122 +155,71 @@ In the body put:
 ^FT194,439^A0N,28,28^FH\^FDof^FS
 </Row>
 ```
-
-In the footer put:
-
+  - Put the required text in the **Footer**, such as the following:
 ```text
 ^PQ1^XZ
 ```
+  This ends the label.
+  > [!NOTE]
+  > The above setup results in 1 copy for each ZPL label to be printed. If more copies are needed (for example, to put on each side of the pallet), change the **n** value in **^PQn** section, such as **^PQ4**.
 
-This ends the label.
+### Wave label types
 
-## Wave label types
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label types**.
+2. Create a new record:
+  - **Label type**: **Carton**
+  - **Description**: **Carton**
 
-Navigate to _Warehouse Management - Setup - Document Routing - Wave Label Types_ and create a new record.
+### Unit sequence groups
 
-- Label type: Carton
-- Description: Carton
+1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Unit Sequence Groups**.
+2. Select or create a **Ea Box PL** group.
+3. Set the **Carton** wave label type to the **Box** line.
 
-## Unit sequence groups
+### Wave label templates
 
-Navigate to _Warehouse Management - Setup - Warehouse - Unit Sequence Groups_.
+1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label templates**
+2. Create a new record:
+  - **Label template name**: **Carton labels**
+  - **Description**: **Carton labels**
+  - **Wave step code**: **PrintLabel**
+  - **Warehouse**: **62**
+3. In the **General** FastTab of the label template, select a **Wave label type**, such as **Carton**.
+4. In the **Details** FastTab of the label template, add a new record:
+  - **Label layout Id**: **Carton**
+  - **Printer name**: Whatever ZPL printer you have setup.
+  - **Run query**: **Yes** (optional)
+  - Click on **Edit query** in **Details** and add a filter on table **Shipments**, field **Account number** (optional)
+    > [!NOTE]
+    > If we are setting up a customer-specific label design, it is necessary to create a query for that account specifically.
+5. Click on **Edit Query** in the Ribbon (for the entire record), and in the **Sorting** tab, add sorting on **Load line ref rec ID (Reference load line id (Record-ID))**. Click **OK** and Yes on Grouping reset suggestion.
+6. Click on **Wave label template grouping**, and enable the **Label build** parameter next to the **Load line ref rec ID** field.
+  > [!NOTE]
+  > This will create one label sequence (“Carton 1 of X” as can be printed on a label layout) per Load line that is created through the wave regardless of work grouping setup.
 
-- Select or create ‘Ea Box PL’ group.
-- Set the ‘Carton’ wave label type to Box line.
+### Number sequence extensions
 
-## Wave label templates
+Number sequence extension controls GS1 compliance of specific number sequences (optional for the current scenario; more details and configuration instruction can be found here: [Configure number sequence extensions](../warehousing/configure-number-sequence-extensions.md)).
 
-Navigate to _Warehouse Management - Setup - Document Routing - Wave Label Templates_ and create a new record.
+## Process
 
-- Label Template Name: Carton labels
-- Description: Carton labels
-- Wave step code: PrintLabel
-- Warehouse: 62
-
-In the Label Template General FastTab, select a Wave label type:
-
-- Wave label type: Carton
-
-In the Label Template Details FastTab, add a new record:
-
-- Label Layout Id: Carton
-- Printer name: Whatever ZPL printer you have setup.
-- Run query: Yes (optional)
-- Click on Edit query and add a filter on Shipment -> Account number (optional)
-
-As we are setting up a customer-specific label design, it should be necessary to create a query for that account specifically.
-
-Click on **Edit Query** in the Ribbon, and in the sorting tab, add sorting on Load line ref rec ID (Reference load line id (Record-ID). Click OK and Yes on Grouping reset suggestion.
-
-Click on Wave Label Template Grouping, and check the box to Label build by Load line ref rec ID. This will create one label sequence (“Carton 1 of X” on a label layout) per Load line that is created through the wave.
-
-## Number sequence extensions
-
-Number sequence extension controls GS1 compliance of specific number sequences:
-
-- A new column was added to the “Number sequences” Tab in Warehouse management parameters where you can select the extension. Out of the box it is available only for the following references:
-- License plate ID
-- Wave label ID
-- Container ID
-- Bill of lading ID
-- GS1 prefix is not a constant but always comes from the Parameters. So, updating this setup will impact all number sequences using extensions with it included
-- License plate ID rules will remain As Is if no extension is configured, and overridden with new rules if some extension is configured there
-- Extension segments description:
-- GS1 prefix: GS1 prefix in Warehouse management parameters
-- Application identifier: 00 for SSCC, for example, 420 for BOL, numeric value
-- New number for the Number sequence specified
-- Packing type: field from Unit sequence group lines or 0 as default (current LP logic)
-- Check digit: Modulo 10 calculation
-
-Navigate to _Warehouse Management - Setup - Warehouse Management Parameters_ and enter a value in GS1 company prefix (your company’s GS1-prefix).
-
-Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Reports_ and activate checkbox “Generate Bill of lading number when printing wave labels”.
-
-Navigate to _Warehouse Management - Setup - Number Sequence Extensions_ and click “Create default setup”. It covers 3 variants of SSCC number generation and 1 variant of GS1-compliant BOL number sequence. You can also create the following setups manually:
-
-Create a new record.
-
-- Number sequence extension: SSCC-18
-- Description: SSCC without application identifier
-
-In the Segments FastTab, add new segments:
-
--	Packing type
-- GS1 prefix
-- Number sequence (make sure the length is 16 minus GS1 prefix length)
-- Check digit
-
-Create a new record:
-
-- Number sequence extension: BOL
-- Description: Bill of lading ID
-
-In the Segments FastTab, add new segments:
-
--	GS1 prefix
--	Number sequence (make sure the length is 16 minus GS1 prefix length)
--	Check digit
-
-Navigate to _Warehouse Management - Setup - Warehouse Management Parameters - Number Sequences_ and select extension ID on Wave label ID (SSCC-18) and Bill of lading ID (BOL).
-
-# Process
-
-1. Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-001 and warehouse 62.
-
-2. Add two lines to the sales order, one for item A0001, quantity 9024, and one for item A0002, quantity 9016 (items are given as example, they must have the Unit sequence group defined above, have unit conversions from ea to Box to PL, and have stock in Warehouse 62).
-
+1. Go to **Sales and marketing** \> **Common** \> **Sales order** \> **All sales orders**.
+2. Create a new sales order.
+3. Select a customer account, such as **US-001**, and a warehouse, such as **62**.
+4. Add two lines to the sales order:
+  - One for an item, such as **A0001**, enter quantity, such as **9024**,
+  - One for another item, such as **A0002**, enter quantity, such as **9016**
+  > [!NOTE]
+  > Items and quantities are provided as an example only, they must have the **Unit sequence group** defined above, have unit conversions defined from **ea** to **Box** to **PL**, and have stock in Warehouse **62**).
 3. Reserve the order and release it to the warehouse.
+  - The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template.
+  - Wave labels will be generated and printed in the amount equal to the number of cartons.
+  - The new **Bill of lading ID** will be generated for the shipments, and the wave label IDs will be following **SSCC-18** number format if the number sequence extensions have been configured.
 
-- The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template.
+Wave labels can be viewed and re-printed from the following forms (**Related information** field group in the ribbon):
 
-- Wave labels will be generated and printed in the amount equal to the number of cartons.
-
-- The new Bill of lading ID will be generated for the shipments, and the wave label IDs will be following SSCC-18 number format from GS-1.
-
-Labels can be viewed and re-printed from the following forms (Related information section):
-
--	All shipments/shipment details
--	All loads/load details
+-	**All shipments/Shipment details**
+-	All loads/Load details
 -	All waves
 -	Wave labels
 -	Wave label history

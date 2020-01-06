@@ -53,19 +53,21 @@ These amendments will make it more efficient to support labelling of cartons, as
 
 Number sequence extension controls GS1 compliance of specific number sequences:
 
-- A new column was added to the “Number sequences” Tab in Warehouse management parameters where you can select the extension. Out of the box it is available only for the following references:
- - License plate ID
- - Wave label ID
- - Container ID
- - Bill of lading ID
-- GS1 prefix is not a constant but always comes from the Parameters. So, updating this setup will impact all number sequences using extensions with it included
-- License plate ID rules will remain As Is if no extension is configured, and overridden with new rules if an extension is configured there
+- A new column was added to the **Number sequences** Tab in **Warehouse management parameters** where you can select the extension. Out of the box it is available only for the following references:
+ - **License plate ID**
+ - **Wave label ID**
+ - **Container ID**
+ - **Bill of lading ID**
+- **GS1 prefix** is not a constant but always comes from the **Warehouse management parameters**. So, updating this setup will impact all number sequences using extensions where it is included as a segment
+- License plate ID generation rules will remain As Is if no extension is configured, and overridden with new rules if an extension is configured for this number sequence reference
 - Extension segments description:
- - GS1 prefix: GS1 prefix in Warehouse management parameters
- - Application identifier: 00 for SSCC, for example, 420 for BOL, numeric value
- - New number for the Number sequence specified
- - Packing type: field from Unit sequence group lines or 0 as default (current LP logic)
- - Check digit: Modulo 10 calculation
+ - **GS1 prefix**: GS1 prefix in Warehouse management parameters
+ - **Application identifier**: a numeric value assigned manually according to GS1 policies; 00 for SSCC, 420 for BOL, for example
+ - New number for the **Number sequence** specified - will be automatically shortened based on the entered value (ending characters are used, starting characters are removed)
+ - **Packing type**: field from **Unit sequence group lines** or 0 as default (existing LP ID logic)
+ - **Check digit**: Modulo 10 calculation (existing LP ID logic)
+
+### Example scenario
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters** and enter a value in **GS1 company prefix** (your company’s GS1-prefix).
 
@@ -73,7 +75,8 @@ Number sequence extension controls GS1 compliance of specific number sequences:
 
 3. Go to **Warehouse management** \> **Setup** \> **Number sequence extensions**
 
-4. Click **“Create default setup”**. It covers 3 variants of SSCC number generation and 1 variant of GS1-compliant BOL number sequence.
+4. Click **“Create default setup”**.
+- It covers 3 variants of SSCC number generation and 1 variant of GS1-compliant BOL number sequence.
 
 **OR**
 
@@ -81,25 +84,30 @@ You can also create the following setups manually:
 
 4. Create a new record.
 
-- Number sequence extension: SSCC-18
-- Description: SSCC without application identifier
+- Number sequence extension: **SSCC-18**
+- Description: **SSCC without application identifier**
 
 5. In the **Segments** FastTab, add new segments:
 
--	Packing type
-- GS1 prefix
-- Number sequence (make sure the length is 16 minus GS1 prefix length)
-- Check digit
+-	**Packing type**
+- **GS1 prefix**
+- **Number sequence**
+- **Check digit**
+  > [!NOTE]
+  > Make sure the length of **Number sequence** segment is 16 minus length of your **GS1 prefix**  to comply with GS1 requirements. If **Create default setup** is clicked, the length of this segment is calculated automatically.
 
 6. Create a new record:
 
-- Number sequence extension: BOL
-- Description: Bill of lading ID
+- Number sequence extension: **BOL**
+- Description: **Bill of lading ID**
 
 7. In the **Segments** FastTab, add new segments:
 
--	GS1 prefix
--	Number sequence (make sure the length is 16 minus GS1 prefix length)
--	Check digit
+-	**GS1 prefix**
+-	**Number sequence**
+-	**Check digit**
+  > [!NOTE]
+  > Make sure the length of **Number sequence** segment is 16 minus length of your **GS1 prefix**  to comply with GS1 requirements. If **Create default setup** is clicked, the length of this segment is calculated automatically.
 
 8. Go to **Warehouse management** \> **Setup** \> **Warehouse management parameters** \> **Number sequences** and select **Extension ID** on an appropriate **SSCC-18 number** sequence (**License plate ID**, **Wave label ID**, **Container ID**) and **Bill of lading ID** (**BOL**).
+- Next time a new number will be generated for one of these number sequences, the new logic will be taken into account.
