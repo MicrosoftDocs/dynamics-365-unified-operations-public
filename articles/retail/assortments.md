@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assortment management
-description: This topic explains the basic concepts of assortment management in Dynamics 365 Retail and provides implementation considerations for your project.
+description: This topic explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Application update 5
 
 ## Overview
 
-Dynamics 365 Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
+Dynamics 365 Commerce provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
 
-In Retail, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
+In Commerce, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
 
 The overall product mix of a channel is determined by the published assortments that are assigned to the channel. Therefore, you can configure multiple active assortments per channel.
 
@@ -55,7 +55,7 @@ Alternatively, you can add store 1 to assortment 2.
 
 ### Organization hierarchies
 
-In situations where multiple channels share the same product assortments, you can configure the assortments by using the Retail assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
+In situations where multiple channels share the same product assortments, you can configure the assortments by using the Commerce assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
 
 ![Organization hierarchy](./media/Managing-assortments-figure4.png)
 
@@ -90,7 +90,7 @@ You can "stop" released products for the sales process by turning on a setting i
 
 ### Blocked products
 
-In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Retail** tab of a released product. Blocked products are still assorted, but you will receive a message in the POS that states that the product can't be sold.
+In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you will receive a message in the POS that states that the product can't be sold.
 
 ### Date effectivity
 
@@ -98,14 +98,14 @@ Assortments are date-effective. Therefore, retailers can configure when products
 
 ### Process assortments batch job
 
-Assortments that are defined in Retail must be processed before they take effect. This processing is done for the following reasons:
+Assortments that are defined in Commerce must be processed before they take effect. This processing is done for the following reasons:
 
 - Assortment definitions must be de-normalized so that channels can more easily consume them. A product mix for a channel can be defined through multiple assortments that span various date ranges. When some of this information is calculated ahead of time on the server, performance at the channel is improved.
 - The products and channels in the assortment can change outside the assortment itself. Dynamic assortments that contain references to categories or organization units must be processed periodically so that they include or exclude records, based on their current assignment.
 
 ## Implementation considerations
 
-Consider the following implementation requirements as you plan and manage assortments for your retail implementation:
+Consider the following implementation requirements as you plan and manage assortments for your Commerce implementation:
 
 - **Data replication and database size** – Although assortments help serve the business need to manage product availability, they are also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Fewer records in these databases will increase performance when you add items to a transaction, search, and browse for products.
 - **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (non-expiring) assortments for seasonal products or products that are at the end of their life, these databases will grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.
