@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -83,7 +83,7 @@ For the latest regulatory update plans, refer to the following table.
 |      Spain          |   August - July 2019      | 10.0.5, 10.0.4HF      |   Spain: SII: Validation rules change from October 1, 2019    |
 |      United Kingdom          |   December 2019       | 10.0.8      |   Making Tax Digital (MTD) - Consent of system administrator to transmit information outside of D365 using the integration with HMRC |
 |      United Kingdom          |   November 2019     | 10.0.7     |   Making Tax Digital - VAT return report creation for companies reporting as VAT group within the same system database v.10 |
-|      United Kingdom          |   June - July 2019      | 10.0.5     |   Making Tax Digital - fraud prevention parameters about originating device - 10.0.5    |
+|      United Kingdom          |   June - July 2019      | 10.0.5     |   Making Tax Digital - Fraud prevention parameters about originating device - 10.0.5    |
 
 
 
