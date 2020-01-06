@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -53,7 +53,7 @@ The following tables list the application areas. Cloud and on-premises support i
 | Data management and integration      |                                                                                           | Yes       | Yes             |
 |                                      | Configuration-driven extension                                                            | Yes       | No              |
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | No              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Financial management                 |                                                                                           | Yes       | Yes             |
