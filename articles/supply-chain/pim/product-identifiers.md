@@ -5,7 +5,7 @@ title: Product identifiers
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -46,7 +46,8 @@ When you implement Supply Chain Management, you should give special consideratio
 
 When you use Common Data Service, the product number in Supply Chain Management is also the product number in the Common Data Service. Product variants are synchronized to the Common Data Service as distinct products.
 
-Note that product number must not start with "%".
+> [!NOTE]
+> The product number cannot start with "%".
 
 ## Item number and product dimensions
 
