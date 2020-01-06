@@ -5,7 +5,7 @@ title: Troubleshoot the Office integration
 description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities. The questions and issues that are discussed range across user, administration, and development scenarios.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -138,7 +138,7 @@ If the entity is marked as “IsPublic=Yes” and has unique PublicEntityName an
 
 ### Why are date and time values in UTC in the Excel Add-in?
 
-The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Since there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
+The Excel Add-In, Data Management Framework, and Power BI reporting are all designed to interact with data directly on the database level. Because there is no client to adjust Date and Time data to the time zone of the user, all Date and Time values are in UTC.
 
 ## Troubleshooting issues
 
