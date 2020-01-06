@@ -38,7 +38,7 @@ This topic explains how to extend dual currency accounting for sales taxes and t
 
 The Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018). It changes the way that accounting entries in the reporting currency are calculated.
 
-In earlier versions, the logic to calculate amount in reporting currency was as follows.
+In earlier versions, the logic to calculate amounts in the reporting currency was as follows.
 
 - Transaction currency amount > Accounting currency amount > Reporting currency amount
 
