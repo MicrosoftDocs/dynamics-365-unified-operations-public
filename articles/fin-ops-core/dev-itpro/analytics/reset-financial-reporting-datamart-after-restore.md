@@ -39,7 +39,7 @@ In specific scenarios, you might have to reset the data mart for Financial repor
 
 - The application database was restored, but the data mart database wasn't restored.
 - You see incorrect data for a period, and you've determined that the issue isn't a report design issue.
-- You see incorrect data for a period, and records appear under integration attempts in Report designer integration status (start the Report designer and select **Tools** > **Integration status**).
+- You see incorrect data for a period, and records appear under integration attempts on Report designer integration status page (start the Report designer and select **Tools** > **Integration status**).
 - Support instructs you to reset the data mart as part of a troubleshooting step.
 
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
@@ -54,7 +54,7 @@ You should reset the data mart only when a small amount of processing is occurri
 
 To find the version of report designer, watch this video: [How to find the version of Report designer](https://www.youtube.com/watch?v=icfA5Q3kp4w)
 
-To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart**. The dialog box that appears has two sections: **Statistics** and **Reset**.
+To reset the data mart, in Report designer, on the **Tools** menu, select **Reset Data Mart** as shown in the following illustration. The dialog box that appears has two sections: **Statistics** and **Reset**.
 
 [![Reset Data Mart dialog box](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
