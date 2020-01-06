@@ -5,7 +5,7 @@ title: Product identifiers
 description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,6 +45,9 @@ In many cases, the product number isn't originally created in Dynamics 365 Suppl
 When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an additional name that represents the classifications of a product.
 
 When you use Common Data Service, the product number in Supply Chain Management is also the product number in the Common Data Service. Product variants are synchronized to the Common Data Service as distinct products.
+
+> [!NOTE]
+> The product number cannot start with "%".
 
 ## Item number and product dimensions
 
