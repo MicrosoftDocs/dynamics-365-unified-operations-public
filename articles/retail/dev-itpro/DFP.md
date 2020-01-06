@@ -5,7 +5,7 @@ title: Dynamics 365 Fraud Protection integration
 description: This topic describes out-of-box integrations available for Dynamics 365 Fraud Protection with Dynamics 365 Commerce. 
 author: rubendel
 manager: AnnBe
-ms.date: 12/10/2019 
+ms.date: 01/06/2020 
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -121,7 +121,7 @@ Alternatively, the **Protect** assessment type can be enabled. When **Protect** 
 ![Fraud Protection setup in Retail parameters](../media/Payments/DFPSetupParams.png)
 
 > [!NOTE]
-> The Key Vault and Fraud Protection settings are company specific. When enabling Fraud Protection for production environments, the AAD Client ID is not entered through the user interface. Instead, enabling Fraud Protection for production environments requires a [serivce request](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). When creating a support request to enable Fraud Protection for production, clearly indicate in the title that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment. 
+> The Key Vault and Fraud Protection settings are company specific. When enabling Fraud Protection for production environments, the AAD Client ID is not entered through the user interface. Instead, enabling Fraud Protection for production environments requires a [serivce request](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). When creating a support request to enable Fraud Protection for production, clearly indicate in the title that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment. 
 
 ## Privacy Notice
 
@@ -130,4 +130,4 @@ Enabling this feature results in sharing certain of your data such as payment, c
 ## Related articles
 
 - [Payments FAQ](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
-- [Dynamics 365 payment data use](https://docs.microsoft.com/en-us/dynamics365/retail/payment-connector-data-fields)
+- [Dynamics 365 payment data use](https://docs.microsoft.com/dynamics365/retail/payment-connector-data-fields)
