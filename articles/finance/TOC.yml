@@ -2167,6 +2167,12 @@
           href: localizations/emea-nor-nets-import-format.md
         - name: VAT statement
           href: localizations/emea-nor-sales-tax-payment-report.md
+        - name: Standard Audit File for Tax (SAF-T) for Norway
+          href: localizations/emea-nor-satndard-audit-file-for-tax.md
+        - name: Cash register functionality for Norway
+          href: localizations/emea-nor-cash-registers.md
+        - name: Deployment guidelines for cash registers for Norway
+          href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md
       - name: Poland
         items:
         - name: Poland overview
