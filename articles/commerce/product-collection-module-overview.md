@@ -43,7 +43,7 @@ Product collection modules represent physical products and services on the websi
 
 The sources for product collections can be lists of the following four types:
 
-- Editorial lists of products that are manually defined in Dynamics 365 Retail as related products for a product, or product lists
+- Editorial lists of products that are manually defined in Dynamics 365 Commerce as related products for a product, or product lists
 - Algorithmic lists, such as lists of new, best-selling, or trending products
 - Recommendation lists that are based on machine learning
 - Personalization lists that support personalized results for a customer. Customers must be signed in to the e-Commerce site to see personalized results. Guest users don't see personalized results. Customers can opt out of personalization from the [account management page](account-management.md).
@@ -61,7 +61,7 @@ The following table describes various types of product collection modules in Dyn
 
 | Product collection module  | Type | Description |
 |----------------------------|------|-------------|
-| Category                   | Category | This module shows a list of products in a category, as defined by the navigation category hierarchy that the retailer created for a retail channel. |
+| Category                   | Category | This module shows a list of products in a category, as defined by the navigation category hierarchy that the retailer created for a channel. |
 | Related products           | Editorial | This module shows a list of products that a merchandising manager has configured as related products in Commerce, for the relation type that the author has selected. |
 | Curated product lists      | Editorial | This module shows custom lists that merchandisers and editors have created in Commerce. |
 | New                        | Algorithmic | This module shows a list of the newest products that have been assorted to channels and catalogs. This list can show personalized results for a signed-in user if the site author chooses that option. |
