@@ -68,12 +68,12 @@ To accommodate the desired flexibility in the batch reservation behaviour for it
 
 Be aware that when **Batch number** level in the hierarchy is selected, all other dimensions that are above and up to the location will be selected automatically (all dimensions placed above the **Location** level are pre-selected by default.) This behaviour is meant to convey the logic according to which, once you reserve a specific batch number on the order line, all dimensions in the range between the batch number and location are also automatically reserved (see more details in the sections below).
 
- > [!NOTE]
- > The **Allow reservation on demand order** option only applies to reservation hierarchy levels that are below the warehouse location dimension.
- 
- > In the current implementation, Batch number is the only level in the hierarchy that is open for flexible reservation policy. That means that you cannot set checkmark in the **Allow reservation on demand order** field for Location, License plate or Serial number.
- 
- > If your reservation hierarchy includes Serial number dimension (which must always be placed below the Batch number level) and you have enabled batch-specific reservation for the Batch number, the program will continue handling serial number reservation and picking operations based on rules applicable to "Serial\_below[location]" reservation policy.
+> [!NOTE]
+> The **Allow reservation on demand order** option only applies to reservation hierarchy levels that are below the warehouse location dimension.
+>
+> In the current implementation, Batch number is the only level in the hierarchy that is open for flexible reservation policy. That means that you cannot set checkmark in the **Allow reservation on demand order** field for Location, License plate or Serial number.
+>
+> If your reservation hierarchy includes Serial number dimension (which must always be placed below the Batch number level) and you have enabled batch-specific reservation for the Batch number, the program will continue handling serial number reservation and picking operations based on rules applicable to "Serial\_below[location]" reservation policy.
  
 You can allow batch-specific reservation for an existing "Batch\_below[location]" hierarchy at any point of time in your deployment. This will not affect any reservations or open warehouse work that have been created prior to this change. However, removal of the **Allow reservation on demand order** option is disallowed when there are existing inventory transactions of issue type Reserved ordered, Reserved physical, or Ordered for one or more items that are associated with that reservation hierarchy.
 
@@ -137,9 +137,9 @@ Enter sales order details:
 
     > [!NOTE]
     > If you want to reserve a specific batch for the sales order you must use the **Batch reservation** page.
-
+    >
     > If you enter the batch number directly on the sales order line, the system will regard this as if you entered a specific batch value for an item that is subject to the "Batch-below[location]" reservation policy. If on the warning message that appears upon line saving you confirm your decision to have the batch number specified directly on the order line, the line in question will not be handled by the regular warehouse management logic.
-
+    >
     > If you open the **Reservation** page and reserve the quantity from there, no specific batch will be reserved and the execution of the warehouse operations for this line will follow the rules applicable under the "Batch-below[location]" reservation policy.
 
     The general working of and interactions with this page are the same as for items whose associated reservation hierarchy is of type "Batch-above[location]", except:
@@ -153,7 +153,7 @@ Enter sales order details:
 
     > [!NOTE]
     > Reservation of the sales order line quantity can be done across multiple batches. Likewise, reservation of the same batch can be done against multiple locations and license plates, if enabled for location.
-    
+    >
     > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, while 80 units are reserved at the site and warehouse level for any available batch. In this case, the warehouse management system will handle picking operations by two separate work lines.
 
 7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory** Action Pane \> **View** \> **Transactions**:
