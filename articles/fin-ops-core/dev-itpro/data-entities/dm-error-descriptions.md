@@ -51,3 +51,6 @@ One of the scenarios where this can happen is when the environment, such as the 
 
 ## XML is not in correct format-Exception from HRESULT: 0xC0010009
 This is a generic message that covers all XML formatting issues in the file. For example, the data project has mappings for columns that do not exist in the file that is being used for the operation. This can happen if certain columns were removed from the file and this file is now used. Either fix the mapping in the data project or fix the file to have all the columns as expected.
+
+## Error(s) while uploading the file during exports
+When running exports on a development environment, if an error is encountered relating to not being able to upload the export file, it is could be related to Azure storage emulator not available or an older version of the emulator is on the machine. The mitigation is to install the latest emulator, re-start the VM and re-run the export job. The storage emulator can be installed from [Azure storage emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator).
