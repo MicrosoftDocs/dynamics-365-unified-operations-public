@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-With the Charge send feature in Retail, customer orders can be placed in one store and shipped from another store.
+With the Charge send feature in Commerce, customer orders can be placed in one store and shipped from another store.
 
 Customer orders in the point of sale (POS) client support multiple fulfillment options. Some examples of fulfillment options include:
 
@@ -46,4 +46,4 @@ The Charge send feature uses the following POS operations: Ship all products and
 
 The ability to select "ship to" addresses remains unchanged.
 
-The shipping methods that can be used to fulfill the order line are based on the configuration of valid modes of delivery for products and addresses. Because the rules about valid of modes of delivery are maintained only in the Retail headquarters (HQ), the POS client makes a real-time call to fetch the valid modes of delivery for a ship line.
+The shipping methods that can be used to fulfill the order line are based on the configuration of valid modes of delivery for products and addresses. Because the rules about valid of modes of delivery are maintained only in the Headquarters (HQ), the POS client makes a real-time call to fetch the valid modes of delivery for a ship line.
