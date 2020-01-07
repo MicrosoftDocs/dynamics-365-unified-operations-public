@@ -58,20 +58,20 @@ Removing or changing the order of buy box product properties and action controls
 
 ## Module properties
 
-- **Heading tag** - This defines the heading tag for the product title. If the buy box is on top of the page, this should be set to a H1 to meet accessibility standards. 
+- **Heading tag** - The heading tag property defines the heading tag for the product title. If the buy box is on top of the page, this should be set to a **h1** to meet accessibility standards. 
 
 ## Modules that can be used in a buy box module
 
 - **Media gallery** – This module is used to showcase images of a product on a product details page. It can support one to many images. It also supports thumbnail images. The thumbnail images can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). The media gallery module can be added to the **Media** slot in the buy box module. It currently supports only images. 
-- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. The module allows the user to input a location and find stores nearby. This module is integrated with Bings Maps Geocoding API to convert the location to a latitude and longitude. A Bing Maps API key is required fand this API key should be provided in HQ Retail Shared Parameters.This module supports two properties **Search radius** and **Terms of service**.  The search radius defines the search radius for stores in miles. It defaults to a 50-mile radius if not provided. If using Bings Maps or any external service a terms of service link can be provided using the Terms of service property.  In addition, a Terms of link service link should be configured using **Terms of service** property, this is required for Bing Maps service. 
+- **Store selector** – This module shows a list of nearby stores where an item is available for pickup. The module allows the user to enter a location to find stores nearby. The store selector module is integrated with the Bing Maps Geocoding API to convert the location to a latitude and longitude. A Bing Maps API key is required and must be added to the Retail shared parameters page in Dynamics 365 Retail. This module supports two properties, **Search radius** and **Terms of service link**. The search radius property defines the search radius for stores in miles. It defaults to a 50 mile radius if a radius is not provided. If using Bings Maps or any external service, a terms of service link can be provided using the terms of service link property. A terms of service link is required for Bing Maps service. 
 
 ## Buy box module settings
 
-Buy box modules have three settings that can be configured at Site Settings-Extensibility:
+Buy box modules have three settings that can be configured at **Site Settings \> Extensibility**:
 
-- **Maximum quantity** – The maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
+- **Maximum quantity** – This specifies the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
-- **Inventory buffer** – Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. Therefore, a buffer can be defined for inventory. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, so that the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
+- **Inventory buffer** – This specifies a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
 ## Retail server interaction
 
@@ -82,17 +82,17 @@ The buy box module retrieves product information using Retail Server APIs. The p
 To add a buy box module to a new page and set the required properties, follow these steps.
 
 1. Create a fragment that is named **buy box fragment**, and add a buy box module to it.
-2. In the **Media** slot of the buy box module, add a media gallery module.
-3. In the **Store selector** slot of the buy box module, add the Store selector module
-4. Check in the page, and publish it.
-5. Create a template for a product details page, and name it **PDP template**.
-6. Add a default page.
-7. In the **Main** slot of the default page, add a buy box fragment.
-8. Save the template, Finish editing and publish it.
-9. Use the template that you just created to create a page that is named **PDP page**.
-10. In the **Main** slot of the new page, add a buy box fragment.
-11. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
-12. Save, Finish editing the page, and publish it. A buy box should appear on the product details page.
+1. In the **Media** slot of the buy box module, add a media gallery module.
+1. In the **Store selector** slot of the buy box module, add a store selector module.
+1. Check in the page, and publish it.
+1. Create a template for a product details page, and name it **PDP template**.
+1. Add a default page.
+1. In the **Main** slot of the default page, add a buy box fragment.
+1. Save the template, Finish editing and publish it.
+1. Use the template that you just created to create a page that is named **PDP page**.
+1. In the **Main** slot of the new page, add a buy box fragment.
+1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
+1. Finish editing the page, save it, and publish it. A buy box should appear on the product details page.
 
 ## Additional resources
 
