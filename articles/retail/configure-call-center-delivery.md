@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure call center delivery modes and charges
-description: This topic describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Retail.
+description: This topic describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2018
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!INCLUDE [banner](includes/banner.md)]
 
-When a sales order is placed in Dynamics 365 Retail, if the person who entered the sales order is linked to a call center channel, logic and rules are used to validate the mode of delivery (delivery mode) and calculate charges for the order.
+When a sales order is placed in Dynamics 365 Commerce, if the person who entered the sales order is linked to a call center channel, logic and rules are used to validate the mode of delivery (delivery mode) and calculate charges for the order.
 
 When you create a sales order, you can select a delivery mode on the sales order header and the sales order lines. By default, the delivery mode that you select on the header is used for all sales order lines. However, you can override the default delivery mode on individual sales lines as you require. You can also define a delivery mode on a customer record. Then, when orders are created for the customer, that delivery mode is used by default on the sales order header.
 
-Retail has capabilities that let users limit the delivery modes that can be used by a channel, the delivery modes that can be used for a product, and the delivery modes that are valid for specific shipping destinations. Charges can also be defined so that additional fees are added to a customer's order, based on the delivery modes that are selected for the sales order and the total order value.
+Commerce has capabilities that let users limit the delivery modes that can be used by a channel, the delivery modes that can be used for a product, and the delivery modes that are valid for specific shipping destinations. Charges can also be defined so that additional fees are added to a customer's order, based on the delivery modes that are selected for the sales order and the total order value.
 
 ## Define delivery modes
 
@@ -45,7 +45,7 @@ Before you specify which delivery modes can be used for call center orders, and 
 
 In the **Mode of delivery** field, you can enter any combination alphanumeric characters, based on your business requirement. You can then use the **Description** field to provide additional context. The **Charges group** and **Expedite** fields are optional and will be explained in more detail later in this topic.
 
-On the **Retail channels** FastTab, add any Retail channel that should be allowed to use the delivery mode when sales transactions are created in that channel.
+On the **Commerce channels** FastTab, add any channel that should be allowed to use the delivery mode when sales transactions are created in that channel.
 
 On the **Products** FastTab, you can specify which products and/or product categories the delivery mode can and can't be used for. For example, if a product can't be shipped by air because of hazardous material (hazmat) restrictions, make sure that the product or product category is excluded from all delivery modes that involve air transportation.
 
@@ -53,21 +53,21 @@ On the **Addresses** FastTab, you can specify which countries or regions, or sta
 
 ## Validate delivery modes for a call center order
 
-After the delivery modes are defined, you must run the **Process delivery modes** batch job. This job makes the delivery modes available so that they can be used in sales order processes for Retail channels. To run the **Process delivery modes** job, go to **Retail \> Retail IT \> Process delivery modes**. This job should be run any time that new delivery modes are added to a retail channel or changes are made to existing delivery mode/channel relationships.
+After the delivery modes are defined, you must run the **Process delivery modes** batch job. This job makes the delivery modes available so that they can be used in sales order processes for channels. To run the **Process delivery modes** job, go to **Retail and Commerce \> Retail and Commerce IT \> Process delivery modes**. This job should be run any time that new delivery modes are added to a channel or changes are made to existing delivery mode/channel relationships.
 
-After you run the **Process delivery modes** batch job, you can go to **Retail \> Channels \> Call centers \> All call centers**. On the **All call centers** page, on the Action Pane, on the **Set up** tab, select **Modes of delivery**. The **Modes of delivery** page lists all the valid delivery modes for the selected call center channel. To edit existing delivery modes or add new delivery modes, select **Manage modes of delivery**. Note that the **Process delivery modes** job must be run whenever changes are made.
+After you run the **Process delivery modes** batch job, you can go to **Retail and Commerce \> Channels \> Call centers \> All call centers**. On the **All call centers** page, on the Action Pane, on the **Set up** tab, select **Modes of delivery**. The **Modes of delivery** page lists all the valid delivery modes for the selected call center channel. To edit existing delivery modes or add new delivery modes, select **Manage modes of delivery**. Note that the **Process delivery modes** job must be run whenever changes are made.
 
 ## Define charges for delivery services
 
 When sales orders are created for customers, a company might want to add charges that are automatically calculated based on the delivery modes that are selected for the order. These charges can be configured so that they are the same for all customers and delivery modes. Alternatively, the charges can vary, depending on the customer and/or the delivery modes that are selected for the sales order.
 
-To define the charges, go to **Retail \> Channel setup \> Charges \> Auto charges**. Select **New** to add new charges. Alternatively, select an existing entry, and then select **Edit**.
+To define the charges, go to **Retail and Commerce \> Channel setup \> Charges \> Auto charges**. Select **New** to add new charges. Alternatively, select an existing entry, and then select **Edit**.
 
 Charges can be defined so that they are calculated at the level of either the order header or the order lines. Use the **Level** field to select the level desired.
 
 Charges can be defined for a specific customer, a group of customers, or all customers. In the **Account code** field, select **Table** to define charges that are applied only to a specific customer. Select **Group** to define charges for a specific customer group. Select **All** to apply the charges to every customer who places a sales order that uses the related delivery mode. If you selected **Table** or **Group** in the **Account code** field, select the customer or customer group in the **Account relation** field.
 
-Charges can be configured so that they are applied for a specific delivery mode, a delivery mode group, or all delivery modes. If you select **Table** in the **Mode of delivery code** field, you must select a specific delivery mode in the **Mode of delivery relation** field. If you select **Group**, you must select a delivery mode group in the **Mode of delivery relation** field. Delivery mode groups are defined at **Retail \> Channel setup \> Charges \> Delivery charges group**. They can then be linked to one or more delivery modes on the **Modes of delivery** page. If you select a group when you define charges, any delivery mode that is linked to the selected delivery group uses those charges. Finally, if you select **All** in the **Mode of delivery code** field, all delivery modes use the charges. Therefore, you don't select a value in the **Mode of delivery relation** field.
+Charges can be configured so that they are applied for a specific delivery mode, a delivery mode group, or all delivery modes. If you select **Table** in the **Mode of delivery code** field, you must select a specific delivery mode in the **Mode of delivery relation** field. If you select **Group**, you must select a delivery mode group in the **Mode of delivery relation** field. Delivery mode groups are defined at **Retail and Commerce \> Channel setup \> Charges \> Delivery charges group**. They can then be linked to one or more delivery modes on the **Modes of delivery** page. If you select a group when you define charges, any delivery mode that is linked to the selected delivery group uses those charges. Finally, if you select **All** in the **Mode of delivery code** field, all delivery modes use the charges. Therefore, you don't select a value in the **Mode of delivery relation** field.
 
 In the **Lines** section, you can define one or more charges by currency, as you require. Charges must be linked to a charges code that defines the financial posting rules for the charge. The **Category** field is used to define how charges are calculated. For example, if customers should be charged a flat rate of $9.95 to have an order shipped by a specific delivery mode, use the **Fixed** category. If the business decides to charge customers a percentage of the order total to cover the delivery charges, use the **Percent** category. The actual charge to the customers is defined in the **Charges value** field.
 
