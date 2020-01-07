@@ -119,12 +119,12 @@ Enable an inventory reservation hierarchy to allow batch-specific reservation:
 
 Create a new released product and:
 
-1. set the following product's three master data parameters to the below values:
+1. Set the following product's three master data parameters to the below values:
     - Storage dimension group=*Ware*
     - Tracking dimension group=*Batch-Phy*
     - Reservation hierarchy=*BatchFlex*
-2. create two batch numbers, for example "B11" and "B22"
-3. add item quantity to on-hand stock as per below:
+2. Create two batch numbers, for example "B11" and "B22"
+3. Add item quantity to on-hand stock as per below:
 
     | Warehouse | Batch number | Location | License plate | Quantity |
     | --- | --- | --- | --- | --- |
@@ -134,7 +134,7 @@ Create a new released product and:
 
 Enter sales order details:
 
-1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 2. Click **New**.
 3. For the sales order header, select customer account **US-003**.
 4. Add a line for your new item and enter quantity "10". Make sure the **Warehouse** field is set to **24**.
