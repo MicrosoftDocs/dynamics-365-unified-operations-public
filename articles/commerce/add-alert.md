@@ -34,19 +34,19 @@ ms.dyn365.ops.version:
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers Promo banner module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A Promo banner module is used to show inline informational messages on a page. It can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
+Promo banner modules are used to show inline informational messages on a page. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
 
-Promo banner supports a text message and a link. If multiple messages are added to the promo banner, it turns into a carousel view and allows user to cycle through all the mesages. 
+Promo banner modules support a text message and a link. If multiple messages are added to a promo banner, it becomes a rotating carousel banner to let customers cycle through all the messages. 
 
-Promo banner module is driven by data from the content management system (CMS) and can be put on any page.
+Promo banner modules are driven by data from the content management system (CMS) and can be put on any page.
 
-## Usage examples of promo banner in e-Commerce
+## Usage examples of promo banners in e-Commerce
 
-Promo banner can be used in the site header to indicate site-wide promotions or messages. Here are some examples:
+Promo banners can be used in the site header to indicate site-wide promotions or messages, as in the following examples.
 
 "Annual sale ends in 10 days"
 
@@ -56,30 +56,32 @@ Promo banner can be used in the site header to indicate site-wide promotions or 
 
 | Property name  | Value                              | Description |
 |----------------|------------------------------------|-------------|
-| Banner Messages           | Array of text and links                               | An array of text an links can be added to the banner|
-|Autoplay| **True** or **False**| It automatically cycles through the messages if there are multiple messages configured|
-|Slide transition interval| Number in ms| An interval can be provided to cycle through each message|
+| Banner messages           | Text and links                               | Contains an array of text and links|
+|Autoplay| **True** or **False**| Automatically cycles through messages if there are multiple messages configured|
+|Slide transition interval| Number in ms| Specifies the interval to cycle through each message|
 | Allow dismiss  | **True** or **False**              | If the value is set to **True**, the customer can dismiss the alert. |
-|Show carousel flipper| **True** or **False**| Shows the carousel flippers for a user to manually cycle through multiple items in the banner|
-| Text alignment | **Right**, **Left**, or **Center** | A value that defines how text is aligned in the alert module. |
+|Show carousel flipper| **True** or **False**| Displays the carousel flippers to allow manual cycling through multiple banner items|
+| Text alignment | **Right**, **Left**, or **Center** | Defines how text is aligned in the promo module |
 
-| Link           | URL                                | The URL for an optional link. |
+| Link           | URL                                | URL for an optional link |
 
 ## Add a promo banner to a page 
 
 To add an promo banner module to a page and set the required properties, follow these steps.
 
 1. Create a page template that is named **Promo banner template**
-1. To the **Body** add a **Default page**
+1. Under **Page Outline**, add a **Default page module** to the **Body** slot. 
 1. Check in the template, and publish it. 
-1. Use the banner template that you just created to create a page that is named **Promo banner page**. 
-1. In the **Main** slot of the new page, add a container module. Set Width to Fit container
-1. To the container module, add a promo banner module.
-1. In the settings for the banner module, add one or many banner messages. Each message can have a text with a link. You can edit the other properties if you want to customize the module further.
-1. Save and preview the page. At the top of the page, you should see an alert that has the text that you added.
+1. Use the template that you just created to create a page that is named **Promo banner page**. 
+1. In the **Main** slot of the new page, add a container module. 
+1. In the pane on the right, set the **Width** value to **Fill Container**.
+1. Under **Page Outline**, add a promo banner module to the container module.
+1. In the settings for the banner module, add one or more banner messages. Each message can have text with a link. You can edit the other properties if you want to customize the module further.
+1. Save and preview the page. At the top of the page, you should see an alert that shows the text that you added.
 1. Check in the page, and publish it. 
 
-Note: A promo banner is typically used in the page Header slot or Sub-header slot.
+> [!NOTE]
+> A promo banner is typically used in the page header slot or a subheader slot.
 
 ## Additional resources
 
