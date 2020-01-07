@@ -48,7 +48,7 @@ Additionally, ensure that RetailSale measurements have been enabled. To Learn mo
 To turn on product recommendations, follow these steps.
 
 1. Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation parameters**.
-1. In the list of retail shared parameters, select **Recommendation Lists**.
+1. In the list of shared parameters, select **Recommendation Lists**.
 1. Set the **Enable recommendations** option to **Yes**.
 
 ![enable product recommendations](./media/enableproductrecommendations.png)
