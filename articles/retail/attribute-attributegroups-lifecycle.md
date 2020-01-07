@@ -81,7 +81,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 ### Set up an attribute
 
-1. Sign in to the back-office client as a retail merchandising manager.
+1. Sign in to the back-office client as a merchandising manager.
 2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
 3. Create an attribute that is named **Lens**.
 4. Set the **Attribute type** field to **Lens shape**.
