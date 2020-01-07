@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Flexible warehouse-level dimension reservation 
-description: This topic describes an enhancement to the inventory reservation policy that allows businesses, who sell batch-tracked products and run their logistics as WMS-enabled operations, to reserve specific batches for their customers’ sales orders even though the reservation hierarchy associated with such products disallows this (by being of a type that is commonly referred to as “Batch-below[location]”.)
+title: Flexible warehouse-level dimension reservation policy
+description: This topic describes the inventory reservation policy that allows businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for their customers’ sales orders when the reservation hierarchy associated with the products disallows it.
 author: omulvad
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,54 +30,54 @@ ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# Flexible warehouse-level dimension reservation
+# Flexible warehouse-level dimension reservation policy
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes an enhancement to the inventory reservation policy that allows businesses, who sell batch-tracked products and run their logistics as WMS-enabled operations, to reserve specific batches for their customers’ sales orders even though the reservation hierarchy associated with such products disallows this (by being of a type that is commonly referred to as “Batch-below[location]”.)
+This topic describes the inventory reservation policy that allows businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for their customers’ sales orders when the reservation hierarchy associated with the products disallows it (by being of a type that is commonly referred to as “Batch-below[location]”.)
 
 ## Inventory reservation hierarchy
 
-Below is a summary of the existing inventory reservation hierarchy with focus on handing the batch- and serial-tracked items. Inventory reservation hierarchy concept is described in more details [insert link].
+Below is a summary of the existing inventory reservation hierarchy with focus on handing the batch and serial tracked items. 
 
-Inventory reservation hierarchy dictates that as far as storage dimensions are concerned, it is the demand order that carries the mandatory dimensions of site, warehouse, and inventory status, while it is the warehouse logic that is responsible for assigning and reserving a location to the requested quantities. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to say from where - site and warehouse - the order must be shipped, and the warehouse then relies on its logic to locate the required quantity within the warehouse premises.
+Inventory reservation hierarchy dictates that as far as storage dimensions are concerned, it is the demand order that carries the mandatory dimensions of site, warehouse, and inventory status, while it is the warehouse logic that is responsible for assigning and reserving a location to the requested quantities. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to say from where (site and warehouse) the order must be shipped, and the warehouse then relies on its logic to locate the required quantity within the warehouse premises.
 
-Tracking dimensions - batch and/or serial numbers - are, however, a subject to more flexibility, that is meant to reflect the business's operational model. Here, an inventory reservation hierarchy can accommodate scenarios where:
+Tracking dimensions (batch and serial numbers) are, however, subject to more flexibility in order to reflect the operational model of the business. An inventory reservation hierarchy can accommodate scenarios where:
 
-1. The business choses to rely on their warehouse operations to manage picking of quantities with batch/serial numbers after the said quantities have been located within the warehousing storage space. This model - referred to as "Batch-below[location]" - is common when product's batch/serial number identification is of no importance to the customers when placing the demand with the selling company.
+1. The business chooses to rely on their warehouse operations to manage picking of quantities with batch or serial numbers after the quantities have been located within the warehousing storage space. This model, referred to as "Batch-below[location]", is common when product's batch or serial number identification is of no importance to the customers when placing the demand with the selling company.
 
-2. When batch/serial numbers are part of the customer's order specification and are recorded on the demand order, the warehouse operations are constrained by the requested specific numbers when locating the quantities within the warehouse, and are not allowed to change them. This is a "Batch-above[location]" reservation hierarchy type.
+2. When batch or serial numbers are part of the customer's order specification and are recorded on the demand order, the warehouse operations are constrained by the requested specific numbers when locating the quantities within the warehouse and are not allowed to change them. This is a "Batch-above[location]" reservation hierarchy type.
 
-The challenge with the above principle is that any given released product can have only one inventory reservation hierarchy assigned to it. This implies that in order for the warehouse management system to support handling of the tracked item, the decision on timing for when batch/serial number is reserved, i.e. at demand order taking or during the warehouse picking work, once taken by means of hierarchy assignment, cannot be changed ad-hoc.
+The challenge with the above principle is that any given released product can have only one inventory reservation hierarchy assigned to it. This implies that in order for the warehouse management system to support handling of the tracked item, the decision on timing for when the batch or serial number is reserved, at demand order taking or during the warehouse picking work, once taken by means of hierarchy assignment, cannot be ad hoc changed.
 
 ## Flexible reservation for batch-tracked items
 
 ### Business scenario
 
-Due to the nature of its manufactured products, a company employs an inventory strategy of tracking its finished goods by batch numbers. As the said company also uses the D365F&amp;O Warehouse Management System workload, that has a well-equipped logic for planning and executing warehouse pick and ship operations for batch-enabled items, most of the finished items are associated with a "Batch-below[Location]" inventory reservation hierarchy. The advantage behind such an operational setup is that decisions (that are effectively, reservation decisions) about which batches to pick and where to locate them within the warehouse are postponed until the warehouse picking operations start as opposed to when the customer's order is placed.
+In this scenario, a company employs an inventory strategy of tracking its finished goods by batch numbers. Because the company also uses the Dynamics 365 Warehouse Management System workload that has well-equipped logic for planning and executing warehouse pick and ship operations for batch-enabled items, most of the finished items are associated with a "Batch-below[Location]" inventory reservation hierarchy. The advantage behind such an operational setup is that decisions (that are effectively reservation decisions) about which batches to pick and where to locate them within the warehouse are postponed until the warehouse picking operations start, as opposed to when the customer's order is placed.
 
-While the "Batch\_below[location]" inventory reservation hierarchy serves the company's business goals well, there are multiple of its established customers that when reordering products require the same batch as previously purchased. In essence, the company is looking for flexibility in handling the batch reservation rules, where depending on the customers' demand for the same item:
+While the "Batch\_below[location]" inventory reservation hierarchy serves the company's business goals well, they have many established customers that, when reordering products, require the same batch as previously purchased. The company is looking for flexibility in handling the batch reservation rules, where depending on the customers' demand for the same item:
 
-- a batch number can be recorded and reserved at the order taking time by the sales processor, with no possibility to be changed during warehouse operations and/or being taken by other demands, hence ensuring the ordered batch number is shipped to the customer.
+- A batch number can be recorded and reserved at the order taking time by the sales processor, with no possibility of it being changed during warehouse operations and/or being taken by other demands, hence ensuring the ordered batch number is shipped to the customer.
 
-- when irrelevant to the customer, a batch number(s) can be decided beyond the sales order registration and reservation by the warehouse operations during picking work.
+- When irrelevant to the customer, a batch number can be decided beyond the sales order registration and reservation by the warehouse operations during picking work.
 
 ### Allowing specific batch reservation on the sales order
 
-To accommodate the desired flexibility in the batch reservation behaviour for items that are associated with a "Batch\_below[location]" inventory reservation hierarchy, inventory managers must enable the **Allow reservation on demand order** field for the Batch number level.
+To accommodate the desired flexibility in the batch reservation behavior for items that are associated with a "Batch\_below[location]" inventory reservation hierarchy, inventory managers must enable the **Allow reservation on demand order** field for the Batch number level.
 
 ![Making inventory reservation hierarchy flexible](media/Flexible-inventory-reservation-hierarchy.png)
 
-Be aware that when **Batch number** level in the hierarchy is selected, all other dimensions that are above and up to the location will be selected automatically (all dimensions placed above the **Location** level are pre-selected by default.) This behaviour is meant to convey the logic according to which, once you reserve a specific batch number on the order line, all dimensions in the range between the batch number and location are also automatically reserved (see more details in the sections below).
+When **Batch number** level in the hierarchy is selected, all other dimensions that are above and up to the location will be selected automatically (all dimensions placed above the **Location** level are pre-selected by default.) This behaviour is meant to convey the logic according to which, once you reserve a specific batch number on the order line, all dimensions in the range between the batch number and location are also automatically reserved.
 
 > [!NOTE]
 > The **Allow reservation on demand order** option only applies to reservation hierarchy levels that are below the warehouse location dimension.
 >
-> In the current implementation, Batch number is the only level in the hierarchy that is open for flexible reservation policy. That means that you cannot set checkmark in the **Allow reservation on demand order** field for Location, License plate or Serial number.
+> Batch number is the only level in the hierarchy that is open for flexible reservation policy. That means that you cannot select **Allow reservation on demand order** field for location, license plate, or serial number.
 >
-> If your reservation hierarchy includes Serial number dimension (which must always be placed below the Batch number level) and you have enabled batch-specific reservation for the Batch number, the program will continue handling serial number reservation and picking operations based on rules applicable to "Serial\_below[location]" reservation policy.
+> If your reservation hierarchy includes serial number dimension (which must always be placed below the batch number level) and you have enabled batch-specific reservation for the batch number, the system will continue handling serial number reservation and picking operations based on rules applicable to "Serial\_below[location]" reservation policy.
  
-You can allow batch-specific reservation for an existing "Batch\_below[location]" hierarchy at any point of time in your deployment. This will not affect any reservations or open warehouse work that have been created prior to this change. However, removal of the **Allow reservation on demand order** option is disallowed when there are existing inventory transactions of issue type Reserved ordered, Reserved physical, or Ordered for one or more items that are associated with that reservation hierarchy.
+You can allow batch-specific reservation for an existing "Batch\_below[location]" hierarchy at any point of time in your deployment. This will not affect any reservations or open warehouse work that have been created prior to this change. However, removal of the **Allow reservation on demand order** option is not permitted when there are existing inventory transactions of issue type "Reserved ordered", "Reserved physical", or "Ordered" for one or more items that are associated with that reservation hierarchy.
 
  > [!NOTE]
  > You can also change item's existing reservation hierarchy from the one that does not allow batch specification on the order to the one that does, provided the hierarchy level structure is identical in both hierarchies. Use the standard **Change reservation hierarchy for items** function to perform the desired reassignment. This may be relevant when you wish to disallow flexible batch reservation for a subset of batch-tracked items and allow it for the rest of the product portfolio.
