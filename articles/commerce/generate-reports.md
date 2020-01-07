@@ -130,7 +130,7 @@ To generate a **Category sales** report, follow these steps.
 
 ## Organization sales report
 
-The **Organization sales** report shows the performance of your retail stores by organization unit. This report includes the sales quantity and amount by store, and the profit margin for each store. The organization unit is based on the default reporting hierarchy.
+The **Organization sales** report shows the performance of your stores by organization unit. This report includes the sales quantity and amount by store, and the profit margin for each store. The organization unit is based on the default reporting hierarchy.
 
 To generate an **Organization sales** report, follow these steps.
 
