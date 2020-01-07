@@ -37,15 +37,15 @@ This topic covers cart modules and describes how to add them to site pages in Mi
 
 ## Overview
 
-A cart module is used to showcase items that are added to the cart/shopping bag before the user proceeds to checkout. For example, it includes all the items that have been added to the cart and an order summary. It also allows the user to apply/remove promotional codes.
+A cart module is used to display items that are added to the cart before a customer proceeds to checkout. For example, it includes all the items that have been added to the cart and an order summary. It also allows the customer to apply or remove promotional codes.
 
-The Cart supports signed-in checkout and guest checkout. It also has a Back to shopping link. The route for Back to shopping can be configured in the Site Settings/Extensibilty/Routes/
+The cart module supports signed-in checkout and guest checkout, as well as a "Back to shopping" link. The route for the "Back to shopping" link can be configured in **Site Settings \> Extensibility \> Routes**.
 
 The cart module renders data based on the cart ID. The cart ID is a browser cookie that is available throughout the site.
 
 ## Cart module properties and slots
 
-Cart module has a **Heading** property. This can be set to "Shopping bag", "Items in your cart" etc. 
+The cart module has a **Heading** property, which for example can be set to "Shopping bag," "Items in your cart," etc. 
 
 ## Modules that can be used in a cart module
 
