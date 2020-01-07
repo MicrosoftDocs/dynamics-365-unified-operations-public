@@ -38,7 +38,7 @@ This topic covers carousel modules and describes how to add them to site pages i
 
 ## Overview
 
-A carousel module is used to put multiple promotional items which includes rich images in a carousel. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
+A carousel module is used to put multiple promotional items (including rich images) in a rotating carousel banner that customers can browse. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
 
 You can add content block modules inside a carousel module. The properties of the carousel module then define how those modules are rendered.
 
@@ -53,10 +53,10 @@ You can add content block modules inside a carousel module. The properties of th
 | Property name             | Value                                | Description |
 |---------------------------|--------------------------------------|-------------|
 | Autoplay                  | **True** or **False**                | If the value is set to **True**, the transition between items inside the carousel occurs automatically. If the value is set to **False**, no transition occurs unless the customer uses the keyboard or mouse to move from one item to the next item. |
-| Slide transition interval | A value in seconds                   | The interval for transitions between items. |
-| Transition type      | **Slide** or **Fade**                | The transition effect. |
-| Hide carousel flipper| **True** or **False** | If the value is set to **True**, the carousel flipper and sequence indicator will be hidden|
-| Allow carousel dismiss|**True** or **False** | If the value is set to **True**, the carousel will support a dismiss action|
+| Slide transition interval | A value in seconds                   | The interval for transitions between items |
+| Transition type      | **Slide** or **Fade**                | The transition effect between items |
+| Hide carousel flipper| **True** or **False** | If the value is set to **True**, the carousel flipper and sequence indicator will be hidden.|
+| Allow carousel dismiss|**True** or **False** | If the value is set to **True**, the carousel will support a dismiss action by the user.|
 
 
 ## Add a carousel module to a page
@@ -67,11 +67,12 @@ To add a carousel module to a new page and set the required properties, follow t
 1. In the **Body** slot add a **Default page**.
 1. Check in the template, and publish it. 
 1. Use the carousel template that you just created to create a page that is named **carousel page**.
-1. In the **Main** slot of the new page, add a container module. Set Width to "Fill screen"
-1. To the container module, add a carousel module.
-1. Add a content block module to the carousel module. Set the properties of the content block by providing Heading, Link, Layout and other properties
-1. Repeat with another content block module
-1. Set additional properties to the carousel module as needed
+1. In the **Main** slot of the new page, add a container module. 
+1. In the pane on the right, set the **Width** value to **Fill Screen**.
+1. Under **Page Outline**, add a carousel module to the container module.
+1. Add a content block module to the carousel module. Set the properties of the content block module by providing **Heading*, **Link**, **Layout**, and other properties.
+1. Add and configure another content block module.
+1. Set additional properties to the carousel module as needed.
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
 1. Check in the page, and publish it.
 
@@ -83,7 +84,7 @@ To add a carousel module to a new page and set the required properties, follow t
 
 [Text block module](add-content-rich-block.md)
 
-[Feature module](add-feature-module.md)
+[Content block module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
 
