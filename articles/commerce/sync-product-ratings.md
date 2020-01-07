@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sync product ratings in Dynamics 365 Retail
-description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Retail.
+description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 author:  gvrmohanreddy 
 manager: annbe
 ms.date: 10/01/2019
@@ -34,45 +34,45 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes how to sync product ratings in Microsoft Dynamics 365 Retail.
+This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-To consume product ratings in omnichannels, such as at the point of sale (POS) and in call centers, product ratings from the ratings and reviews service must be imported into the Retail channel database. When product ratings are made available in omnichannels, they can help customers indirectly during their interactions with sales associates.
+To consume product ratings in omnichannels, such as at the point of sale (POS) and in call centers, product ratings from the ratings and reviews service must be imported into the channel database. When product ratings are made available in omnichannels, they can help customers indirectly during their interactions with sales associates.
 
 This topic describes following tasks:
 
-1. Configure a Retail batch job to import product ratings.
+1. Configure a Commerce batch job to import product ratings.
 1. Verify that the batch job for product rating synchronization was successful.
 1. Make product ratings available at the POS.
 
-## Configure a Retail batch job to import product ratings
+## Configure a batch job to import product ratings
 
 > [!IMPORTANT]
 > Before you start, make sure that version 10.0.6 or later of Retail is installed.
 
-### Initialize the retail scheduler
+### Initialize the commerce scheduler
 
-To initialize the retail scheduler, follow these steps.
+To initialize the commerce scheduler, follow these steps.
 
-1. Go to **Retail \> Headquarters setup \> Retail scheduler \> Initialize retail scheduler**. Alternatively, search for "Initialize retail scheduler."
-1. In the **Initialize retail scheduler** dialog box, make sure that the **Delete existing configuration** option is set to **No**, and then select **OK**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize commerce scheduler**. Alternatively, search for "Initialize commerce scheduler."
+1. In the **Initialize commerce scheduler** dialog box, make sure that the **Delete existing configuration** option is set to **No**, and then select **OK**.
 
 ### Verify the RetailProductRating subjob
 
 To verify that the **RetailProductRating** subjob exists, follow these steps.
 
-1. Go to **Retail \> Headquarters setup \> Retail scheduler \> Scheduler subjobs**. Alternatively, search for "Scheduler subjobs."
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Scheduler subjobs**. Alternatively, search for "Scheduler subjobs."
 1. In the subjob list, find or search for the **RetailProductRating** subjob.
 
-The following illustration shows an example of the subjob details in Retail.
+The following illustration shows an example of the subjob details in Commerce.
 
 ![Details of the RetailProductRating subjob](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
-> If you don't find the **RetailProductRating** subjob, you might already have run the **Sync product ratings** job and the **1040 CDX** job before you initialized the retail scheduler. In this case, follow these steps to run the **Full data sync** job.
+> If you don't find the **RetailProductRating** subjob, you might already have run the **Sync product ratings** job and the **1040 CDX** job before you initialized the scheduler. In this case, follow these steps to run the **Full data sync** job.
 >
-> 1. Go to **Retail \> Headquarters setup \> Retail scheduler \> Channel database**. Alternatively, search for "Channel database."
+> 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**. Alternatively, search for "Channel database."
 > 1. Select the channel database to sync.
 > 1. On the Action Pane, select **Full data sync**.
 > 1. In the **Select a distribution schedule** drop-down dialog box, select **1040 - products**, and then select **OK**.
@@ -80,9 +80,9 @@ The following illustration shows an example of the subjob details in Retail.
 
 ### Import product ratings
 
-To import product ratings into Retail from the ratings and reviews service, follow these steps.
+To import product ratings into Commerce from the ratings and reviews service, follow these steps.
 
-1. Go to **Retail \> Headquarters setup \> Retail scheduler \> Sync product ratings job**. Alternatively, search for "Sync product ratings job."
+1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Sync product ratings job**. Alternatively, search for "Sync product ratings job."
 1. In the **Pull product ratings** dialog box, on the **Run in the background** FastTab, select **Recurrence**.
 1. In the **Define recurrence** dialog box, set up a recurrence pattern. (The suggested value is two hours.) Don't schedule a recurrence that is less than one hour.
 1. Select **OK**.
@@ -97,11 +97,11 @@ The following illustration shows an example of batch job configuration in Retail
 
 To verify that the **Sync product ratings** batch job was successful, follow these steps.
 
-1. Go to **Retail \> System administrator \> Inquiries \> Batch jobs** or, if you're using a Retail-only stock keeping unit (SKU), **Retail \> Inquiries and reports \> Batch jobs** instead. Alternatively, search for "Batch jobs."
+1. Go to **Retail and Commerce \> System administrator \> Inquiries \> Batch jobs** or, if you're using a Commerce-only stock keeping unit (SKU), **Retail and Commerce \> Inquiries and reports \> Batch jobs** instead. Alternatively, search for "Batch jobs."
 1. To view the details of the batch job, in the batch job list, in the **Job description** column, search for a description that contains "Pull product ratings."
 1. Select the job ID to view the batch job details, such as the scheduled start date/time and the recurrence text.
 
-The following illustration shows an example of the batch job details in Retail when the batch job is scheduled to run at two-hour intervals.
+The following illustration shows an example of the batch job details when the batch job is scheduled to run at two-hour intervals.
 
 ![Details of the Sync product rating batch job](media/rnr-hq-batchjob-status-checking.png)
 
@@ -111,17 +111,17 @@ The ratings and reviews solution in Dynamics 365 Commerce is an omnichannel solu
 
 To turn on product ratings at the POS, follow these steps.
 
-1. Go to **Retail \> Retail setup \> Parameters \> Retail parameters**. Alternatively, search for "Retail parameters."
+1. Go to **Retail and Commerce \>  setup \> Parameters \> Commerce parameters**. Alternatively, search for "Commerce parameters."
 1. On the **Configuration parameters** tab, select **New**.
 1. Enter a name such as **RatingsAndReviews.EnableProductRatingsForRetailStores**, and set the value to **true**.
 1. Select **Save**.
-1. Go to **Retail \> Retail IT \> Distribution schedule**. Alternatively, search for "Distribution schedule."
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Alternatively, search for "Distribution schedule."
 1. In the job list, select **1110** (**Global configuration**), and then select **Run now**.
 1. After the job has successfully run, verify that products ratings are now shown at the POS.
 
-The following illustration shows an example of the configuration of the Retail parameters to turn on product ratings at the POS.
+The following illustration shows an example of the configuration of the parameters to turn on product ratings at the POS.
 
-![Configuration of Retail parameters for product ratings at the POS](media/rnr-hq-enable-ratings-in-pos.png)
+![Configuration of Commerce parameters for product ratings at the POS](media/rnr-hq-enable-ratings-in-pos.png)
 
 The following illustration shows an example of product ratings at the POS.
 
