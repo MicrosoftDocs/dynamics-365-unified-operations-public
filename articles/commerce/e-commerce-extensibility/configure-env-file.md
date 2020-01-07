@@ -125,7 +125,7 @@ The **MSDyn365Commerce\_CHANNELID** variable defines the online channel that you
 
 To find the channel ID, follow these steps.
 
-1. Go to the Dynamics 365 Retail website.
+1. Go to the Dynamics 365 Commerce website.
 1. In the search field at the top of the page, enter **Online channels**, and then select the channel to use.
 1. On the Action Pane, on the **Options** tab, in the **Page options** group, select **Record Info**.
 1. In the **Record information** dialog box, the value of the **Record-ID** field is the channel ID. Copy this value.
