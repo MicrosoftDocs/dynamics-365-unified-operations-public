@@ -89,7 +89,7 @@ To import product ratings into Commerce from the ratings and reviews service, fo
 1. Set the **Batch process** option to **Yes**. This setting helps guarantee that you will be able to audit the logs and verify the status of batch job runs.
 1. Select **OK** to schedule the batch job.
 
-The following illustration shows an example of batch job configuration in Retail.
+The following illustration shows an example of batch job configuration.
 
 ![Configuration of the Sync product ratings batch job](media/rnr-hq-batchjob-recurrence.png)
 
