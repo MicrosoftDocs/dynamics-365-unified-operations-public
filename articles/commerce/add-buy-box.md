@@ -46,25 +46,24 @@ The URL of a product details page includes the product ID. All the information t
 
 ## Buy box module properties and slots 
 
-On a product details page, a buy box is divided into two regions: a media region on the left and a content region on the right. By default, the ratio of column widths for the media region and the content region is 2:1. In addition, on mobile devices, the two regions are stacked, so that one region appears below the other region.This can be further customized via Theme.
+On a product details page, a buy box is divided into two regions: a media region on the left and a content region on the right. By default, the ratio of media region column width to content region column width is 2:1. On mobile devices the two regions are stacked so that one region appears below the other region. Column widths and stacking rank can be customized using themes.
 
-Buy box modules renders product title, ratings, price, description of a product. It allows you to select a product variant using a picker which shows the product dimensions such as  size, style, and color of the product. When a product variant is selected, other properties in the buy box (for example, the product description and images) are updated to reflect the variant information. 
+A buy box module renders the title, description, price, and ratings of a product. It also allows customers to select product variants with differing product attributes such as size, style, and color. When a product variant is selected, other properties in the buy box (for example, the product description and images) are updated to reflect the variant information. 
 
-A quantity input is provided to input the quantity. The max quantity can be defined in Site settings.
+A quantity selector is provided to enter the quantity of items to purchase. The maximum quantity allowed for purchase can be defined in site settings.
  
-From the buy box, user can perform the following actions - add a product to cart, add a product to wishlist, choose a pick-up location. These actions can be performed on a product or a product variant. In addtion, wishlist actions require the user to be signed-in.
+From the buy box, customers can also perform actions such as adding a product to the cart, adding a product to their wishlist, and choosing a pick-up location. These actions can be performed on a product or a product variant. Adding a product to a wishlist requires the customer to be signed in.
 
-To remove or change the order of the product properties/actions on the buy box, it can be done via a Theme. 
+Removing or changing the order of buy box product properties and action controls can be done using themes. 
 
 ## Module properties
--**Heading tag** - This defines the heading tag for the product title. If the buy box is on top of the page, this should be set to a H1 to meet accessibility standards. 
 
+- **Heading tag** - This defines the heading tag for the product title. If the buy box is on top of the page, this should be set to a H1 to meet accessibility standards. 
 
 ## Modules that can be used in a buy box module
 
 - **Media gallery** – This module is used to showcase images of a product on a product details page. It can support one to many images. It also supports thumbnail images. The thumbnail images can be arranged either horizontally (as a row below the image) or vertically (as a column next to the image). The media gallery module can be added to the **Media** slot in the buy box module. It currently supports only images. 
 - **Store selector** – This module shows a list of nearby stores where an item is available for pickup. The module allows the user to input a location and find stores nearby. This module is integrated with Bings Maps Geocoding API to convert the location to a latitude and longitude. A Bing Maps API key is required fand this API key should be provided in HQ Retail Shared Parameters.This module supports two properties **Search radius** and **Terms of service**.  The search radius defines the search radius for stores in miles. It defaults to a 50-mile radius if not provided. If using Bings Maps or any external service a terms of service link can be provided using the Terms of service property.  In addition, a Terms of link service link should be configured using **Terms of service** property, this is required for Bing Maps service. 
-
 
 ## Buy box module settings
 
