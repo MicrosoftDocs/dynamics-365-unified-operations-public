@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce runtime (CRT) and Retail Server extensibility
-description: This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
+description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
 author: mugunthanm
 manager: AnnBe
 ms.date: 07/13/2018
@@ -34,11 +34,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes various ways that you can extend the commerce runtime (CRT) and Retail Server. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Retail Server controller and add a controller for an entity.
+This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
 
-CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and it's then compiled and released as class libraries (.NET assemblies). Retail point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and CRT processes the information and then sends it back to POS. 
+CRT contains the core business logic. If you want to add or modify any business logic, you should customize CRT. All the CRT code is developed by using C#, and it's then compiled and released as class libraries (.NET assemblies). Point of sale (POS) is a thin client. All the business logic is done in CRT. POS calls CRT to perform any business logic, and CRT processes the information and then sends it back to POS. 
 
-Every CRT service consists of a group of one or more requests and responses. Any time that you do something in POS, POS sends a request to Retail Server, and Retail Server calls CRT. CRT then processes the request and sends back the response.
+Every CRT service consists of a group of one or more requests and responses. Any time that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT then processes the request and sends back the response.
 
 For example, the Customer service in CRT contains all the customer-related requests and responses, each of which is run in a different flow. Likewise, the Product service in CRT contain all the product-related requests and responses. The following table shows the requests in the Customer service.
 
@@ -100,7 +100,7 @@ Before you learn about the CRT extension patterns, you should understand how a C
 <p>For example, you want to capture and show some additional information to the customer entity in POS. In this case, you can add a post-trigger to fetch all your custom properties for customer, add them to the customer entity as extension properties, and send those extension properties to POS.</p>
 <p>You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to HQ.</p>
 <p>All CRT entities, such as products, customers, transactions, and parameters, support extension properties.</p>
-<blockquote>[!NOTE]<br>
+<blockquote><strong>Note</strong><br>
 Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration-driven and aren't required in order to create table fields. Therefore, no code is required for read and update operations.</blockquote>
 <p>For details about the attributes, see the following topics:</p>
 <ul>
@@ -115,14 +115,14 @@ Attributes are also supported (configuration-driven development). For extension 
 </tr>
 <tr>
 <td>CRT data service and data service with entity</td>
-<td>Specialized data service for channel database data access and entity for Retail Server exposures.</td>
+<td>Specialized data service for channel database data access and entity for Commerce Scale Unit exposures.</td>
 </tr>
 </tbody>
 </table>
 
 **Manually deploying the CRT extension for 7.1 with May update and later**
 
-After you extend CRT, you should put the custom library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (that is, when POS is connected to Retail Server). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
+After you extend CRT, you should put the custom library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (that is, when POS is connected to Commerce Scale Unit). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
 
 ```C#
 <add source="assembly" value="your custom library name" />
@@ -144,7 +144,7 @@ The preceding steps are used for manual deployment and testing in your developme
 
 **Debugging CRT**
 
-To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Retail server)** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
+To debug CRT from POS, you should attach the CRT extension project to the **w3wp.exe (IIS process for Commerce Scale Unit)** process for online (that is, when POS is connected to CRT). For offline, attach the CRT extension project to the **dllhost.exe** process.
 
 **Using extension properties on CRT entities and requests and responses**
 
@@ -152,7 +152,7 @@ One way to add new data to an existing CRT entity is to use extension properties
 
 **Using extension properties on CRT entities with persistence**
 
-Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Retail Server/CRT, the key-value pair is also available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
+Any extension property that you add to an entity stays in memory for POS and CRT for the lifetime of either the object or the transaction, depending on the scenario. The extension property also travels across application boundaries. For example, if you add an extension property in Retail Modern POS and then call Commerce Scale Unit/CRT, the key-value pair is also available during the whole flow. Additionally, if that entity is sent to during a call to Commerce Data Exchange: Real-time Service, the key-value pair is available during the process.
 
 > [!NOTE]
 > For HQ, extension properties are sent only for customers and orders.
@@ -178,15 +178,15 @@ entity.SetProperty("key", value);
 
 **Scenario**
 
-You created a new extension table for Retail parameters. You want to read a field from that extension table and send it to POS.
+You created a new extension table for Commerce parameters. You want to read a field from that extension table and send it to POS.
 
-When you extend the retail channel database, it's always a good idea to have a primary key relation between the main table and the extension table. You can then read the data from the extension table by using the primary key.
+When you extend the channel database, it's always a good idea to have a primary key relation between the main table and the extension table. You can then read the data from the extension table by using the primary key.
 
 **Steps**
 
-1. Create the extension table for Retail parameters in the channel table that has the primary key relation to the main table. (In this case, the main table is Retail shared parameters.)
-2. Identify the CRT data request that reads the Retail parameters.
-3. Add a post-trigger for the data request. You will then be able to use the primary key of the shared parameters table to query your extension table for Retail shared parameters and read the custom fields.
+1. Create the extension table for Commerce parameters in the channel table that has the primary key relation to the main table. (In this case, the main table is Commerce shared parameters.)
+2. Identify the CRT data request that reads the Commerce parameters.
+3. Add a post-trigger for the data request. You will then be able to use the primary key of the shared parameters table to query your extension table for Commerce shared parameters and read the custom fields.
 
     > [!NOTE]
     > You can get the primary key for the entity in the post-trigger request. That request will have the entity object, and that entity object will have all the required fields.
@@ -195,7 +195,7 @@ When you extend the retail channel database, it's always a good idea to have a p
 
 **Reading extension properties in triggers**
 
-The request that reads the data from the Retail parameters table is GetChannelConfigurationDataRequest. The following example shows how you can add a post-trigger for this request.
+The request that reads the data from the Commerce parameters table is GetChannelConfigurationDataRequest. The following example shows how you can add a post-trigger for this request.
 
 ```C#
 /**
@@ -617,10 +617,10 @@ In some cases, some processing must be done before or after a request is handled
 
 4.  Register the class in the commerceRuntime.Config file.
 
-## Retail Server extensibility scenarios
+## Commerce Scale Unit extensibility scenarios
 ### Adding a new ODATA action to an existing controller
 
-In the easiest scenario, you must add a new application programming interface (API) for a slightly different use case. To make this scenario work, you can add the new action through inheritance. For any changes to the APIs to Retail Server, you must follow these steps.
+In the easiest scenario, you must add a new application programming interface (API) for a slightly different use case. To make this scenario work, you can add the new action through inheritance. For any changes to the APIs to Commerce Scale Unit, you must follow these steps.
 
 1.  Implement the new action or controller.
 2.  Override the requirements of the model factory to add the new corresponding metadata.
@@ -664,11 +664,11 @@ Next, override the model factory.
         }
     }
 
-Before clients can use this new customization, you must adjust the build system to generate the Retail Server proxy code for the new model factory. This configuration step is done in the build system. Finally, you must adjust the web.config file. You must complete this step in the packaging project for Retail Server in the SDK. If local tests will be done, you can also optionally complete this step on the local development topology machine that is used for testing.
+Before clients can use this new customization, you must adjust the build system to generate the Commerce Scale Unit proxy code for the new model factory. This configuration step is done in the build system. Finally, you must adjust the web.config file. You must complete this step in the packaging project for Commerce Scale Unit in the SDK. If local tests will be done, you can also optionally complete this step on the local development topology machine that is used for testing.
 
 ### Adding a new simple controller for an entity
 
-Suppose that you have a simple entity and require a controller to fetch the data. For an example, see the StoreHours sample in the Retail SDK. A new Retail Server controller makes sense, and all the low-level work is done in the CRT (new entity, request, response, and service). To create a new controller, you derive from CommerceController. An example is shown here. The controller name is important and must match the name of the entity.
+Suppose that you have a simple entity and require a controller to fetch the data. For an example, see the StoreHours sample in the Retail SDK. A new Commerce Scale Unit controller makes sense, and all the low-level work is done in the CRT (new entity, request, response, and service). To create a new controller, you derive from CommerceController. An example is shown here. The controller name is important and must match the name of the entity.
 
     [ComVisible(false)]
     public class StoreHoursController : CommerceController
@@ -719,19 +719,19 @@ For new entities, you must also override the factory’s **BuildEntitySets()** m
         }
     }
 
-### How to call the new retail server API from MPOS/Cloud POS:
+### How to call the new Commerce Scale Unit API from MPOS/Cloud POS:
 
-Before calling the new retail server API please make sure you have performed the below steps:
+Before calling the new Commerce Scale Unit API please make sure you have performed the below steps:
 
-1.  Register your new retail server extension in Retail server web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt; under the extensionComposition section.
-2.  Add the new retail server extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
-3.  Move both the CRT and Retail server extension dlls into the **…\\RetailServer\\webroot\\bin\\Ext** folder. If you have a CRT extension that is related to the new retail server API, then update that information in the CommerceRuntime.Ext.config file in the **…\\RetailServer\\webroot\\bin\\Ext** folder.
+1.  Register your new extension in Commerce Scale Unit web.config file:  &lt;add source="assembly" value="**Your assembly name**" /&gt; under the extensionComposition section.
+2.  Add the new Commerce Scale Unit extension in the Customization.settings file. You can find this file in RetailSdk\\BuildTools&lt;RetailServerLibraryPathForProxyGeneration Condition="'$(RetailServerLibraryPathForProxyGeneration)' == ''"&gt;$(SdkReferencesPath)\\**Your assembly name.dll**&lt;/RetailServerLibraryPathForProxyGeneration&gt; &lt;/PropertyGroup&gt;
+3.  Move both the CRT and Commerce Scale Unit extension dlls into the **…\\RetailServer\\webroot\\bin\\Ext** folder. If you have a CRT extension that is related to the new Commerce Scale Unit API, then update that information in the CommerceRuntime.Ext.config file in the **…\\RetailServer\\webroot\\bin\\Ext** folder.
 4.  &lt;add source="assembly" value="**Your assembly name**" /&gt;
-5.  Use inetmgr to browse to the retail server metadata and verify whether your entity is exposed in the xml.
-6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the retail server metadata, so that you can call the new entities using the commerce context like below:
+5.  Use inetmgr to browse to the Commerce Scale Unit metadata and verify whether your entity is exposed in the xml.
+6.  Compile and build the mpos/Cloud POS to regenerate the proxy. During compile mpos regenerates all the entities defined in the Commerce Scale Unit metadata, so that you can call the new entities using the commerce context like below:
 
 > [!NOTE]
-> Do not change or add anything in the Retail server web.config file or Retail server folder, with the expection of the extension composition section and possibly to copy custom assemblies in the bin\ext folder. During deployment, only the extensionComposition section in the web.config file will be merged, all the other sections will be overwritten and only the assemblies in the **...\\RetailServer\\webroot\\bin\\Ext** folder be merged with other assemblies. This file will be overwritten based on the latest binary package. Do not use the Retail server web.config file to add or modify any custom app settings.
+> Do not change or add anything in the Commerce Scale Unit web.config file or Commerce Scale Unit folder, with the expection of the extension composition section and possibly to copy custom assemblies in the bin\ext folder. During deployment, only the extensionComposition section in the web.config file will be merged, all the other sections will be overwritten and only the assemblies in the **...\\RetailServer\\webroot\\bin\\Ext** folder be merged with other assemblies. This file will be overwritten based on the latest binary package. Do not use the Commerce Scale Unit web.config file to add or modify any custom app settings.
 
 #### Cross loyalty sample:
 
@@ -743,4 +743,4 @@ Before calling the new retail server API please make sure you have performed the
     var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
     return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
 
-Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.
+Please refer the Retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new Commerce Scale Unit API in mpos.
