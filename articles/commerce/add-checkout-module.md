@@ -38,14 +38,13 @@ This topic describes how to add a checkout module to a page and set the required
 
 ## Overview
 
-A checkout module is a special container that hosts all the modules that are required to create an order. A checkout module captures shipping address, shipping methods, billing information. It provides order summary, and other information that is related to a customer order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase.
+A checkout module is a special container that hosts all modules that are required to create an order, and presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information, and also provides order summary and other information related to a customer order.
 
 A checkout module renders data based on the cart ID. This cart ID is saved as a browser cookie. A cart ID is required to render information in the checkout module, such as the items in the order, the total amount, and discounts.
 
 ## Checkout module properties
 
-A checkout module shows Order summary and has a Place order action. For all other information that needs to be captured before placing an order, the respective modules need to be added. This gives the flexibilty to add custom modules and/or not show certain modules on the Checkout flow based on the needs of the retailer.
-
+A checkout module displays the order summary and provides the functionality to place an order. To gather all of the customer information needed before an order can be placed, additional modules must be added to the checkout module. This gives the flexibility to add custom modules or exclude modules from the checkout flow based on the needs of the retailer.
 
 ### Modules that can be used in the checkout module
 
@@ -68,14 +67,14 @@ Most of the checkout information, such as the shipping address and shipping meth
 To add a checkout module to a new page and set the required properties, follow these steps.
 
 1. Go to **Fragment \> New Fragment**, and name the new fragment **Checkout fragment**.
-2. Add a checkout module to the fragment.
-3. Add a heading to the checkout module.
-4. Add shipping address, delivery options, checkout section container, and contact information modules. 
-5. In the checkout section container module, add gift card, loyalty points, and  payment modules. In this way, you make sure that all the payment methods appear together in a section.
-9. Select **Save**. Some modules might not be rendered in the preview, because they don't have a cart context.
-10. Finish editing  and publish it.
-11. Create a template that uses the new checkout fragment.
-12. Create a checkout page that uses the new template.
+1. Add a checkout module to the fragment.
+1. Add a heading to the checkout module.
+1. Add shipping address, delivery options, checkout section container, and contact information modules. 
+1. In the checkout section container module, add gift card, loyalty points, and  payment modules. In this way, you make sure that all the payment methods appear together in a section.
+1. Select **Save**. Some modules that don't have a cart context may not render in the preview.
+1. Finish editing, save, and publish.
+1. Create a template that uses the new checkout fragment.
+1. Create a checkout page that uses the new template.
 
 ## Additional resources
 
