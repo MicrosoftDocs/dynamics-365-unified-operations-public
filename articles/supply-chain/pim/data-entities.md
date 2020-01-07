@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use product data entities 
+title: Product data entities 
 description: This topic provides information about the different entities that can be used to import and export product data. 
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-12-1
 
 ---
 
-# Use product data entities
+# Product data entities
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,8 +38,8 @@ To import and export product data, you must use data entities. The following tab
 
 | Entity | Application Object Tree (AOT) name (type) | Notes |
 |--------|-------------------------------------------|-------|
-| Products V2 | EcoResProductV2Entity | This entity is used to import and export shared products; distinct products and product masters. It allows for updates. It doesn't support set-based SQL operations. It's enabled for Open Data Protocol (OData). |
-| Released products V2 | EcoResReleasedProductV2Entity | This entity is used to import and export released products; distinct products and product masters. It allows for updates. It requires that the shared product already be created. When a new released product is imported, a release of the shared product occurs. There are also separate entities that can be used to import and export released product masters and released distinct variants. This entity doesn't support set-based SQL operations or delete operations. It's enabled for OData. |
+| Products V2 | EcoResProductV2Entity | This entity is used to import and export shared products-distinct products and product masters. It allows for updates. It doesn't support set-based SQL operations. It's enabled for Open Data Protocol (OData). |
+| Released products V2 | EcoResReleasedProductV2Entity | This entity is used to import and export released products-distinct products and product masters. It allows for updates. It requires that the shared product already be created. When a new released product is imported, a release of the shared product occurs. There are also separate entities that can be used to import and export released product masters and released distinct variants. This entity doesn't support set-based SQL operations or delete operations. It's enabled for OData. |
 | Released product creation V2 | EcoResReleasedProductCreationV2Entity | This entity is used to import shared products and released products in one step. Although it supports exports, that use isn't recommended, because the purpose of the entity is product creation. It doesn't support updates. It supports a limited set of fields (fields that are available in the product creation dialog box). It doesn't support set-based SQL operations. It isn't exposed through OData. |
 | Product variants | EcoResProductVariantEntity | This entity is used to import and export shared product variants. It allows for updates. It requires that dimension values already be created. The integration key is the product master plus product dimensions. This entity doesn't support set-based SQL operations. It's enabled for OData. It supports delete operations. It can't be extended through the addition of new product dimensions. |
 | Product variants by product number identification | EcoResProductNumberIdentifiedProductVariantEntity | This entity is used to import and export shared product variants. It allows for updates. It requires that dimension values already be created. The integration key is the product number (whereas the integration key for the **Product variants** entity is the product master plus product dimensions). |
