@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 [!include [banner](includes/banner.md)]
 
-*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). Attributes can be associated with various Retail entities, such as product categories and retail channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or retail channels. The default values can be overridden at the individual product level, at the retail channel level, or in a retail catalog.
+*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for them. Products then inherit the attributes and the default values when they are associated with the product categories or channels. The default values can be overridden at the individual product level, at the channel level, or in a catalog.
 
 
 For example, a typical television product might have the following attributes.
@@ -70,7 +70,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 ### Set up attribute types
 
-1. Sign in to the back-office client as a retail merchandising manager.
+1. Sign in to the back-office client as a merchandising manager.
 2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.
 3. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
 
@@ -92,9 +92,9 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 *Attribute metadata* lets you select options to specify how the attributes for each product should behave. For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.
 
-For retail products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this topic.
+For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this topic.
 
-As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the retail point of sale (POS) or the way that the system handles those attribute values. Only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the retail POS.
+As you might notice, the **Attributes** page includes options that are related to attribute metadata. Under **Attribute metadata for POS**, one option that is named **Can be refined** affects the behavior of the attribute values in the point of sale (POS) or the way that the system handles those attribute values. Only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the POS.
 
 Here are the remaining attribute metadata options on the **Attributes** page:
 
@@ -106,13 +106,13 @@ Here are the remaining attribute metadata options on the **Attributes** page:
 - Ignore case and format
 - Complete match
 
-These options were originally intended to improve the search functionality for the online storefront. Although Retail doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
+These options were originally intended to improve the search functionality for the online storefront. Although Commerce doesn't include the online storefront out of the box, it does include the eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into a search index of their choice. Although the product data is imported, customers should still be able to distinguish searchable data, data that can be queried, and so on. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
 For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## Filter settings for attributes
 
-Filter settings for attributes let you define how the filters for attributes are shown in the retail POS. To access the filter settings for an attribute, on the **Attributes** page, select the attribute, and then, on the Action Pane, select **Filter settings**.
+Filter settings for attributes let you define how the filters for attributes are shown in the POS. To access the filter settings for an attribute, on the **Attributes** page, select the attribute, and then, on the Action Pane, select **Filter settings**.
 
 The **Filter display preferences** page includes the following fields:
 
@@ -131,7 +131,7 @@ The **Filter display preferences** page includes the following fields:
 
 - **Threshold value** – This setting is required if you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
 
-    For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the retail POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
+    For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
 
     - Less than 10
     - 10 – 20
@@ -145,29 +145,29 @@ The **Filter display preferences** page includes the following fields:
 
 ## Attribute groups
 
-After attributes have been defined, they can be assigned to attribute groups. An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products, because the various selections are arranged in a specific context. Attribute groups can be assigned to retail categories or retail channels.
+After attributes have been defined, they can be assigned to attribute groups. An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products, because the various selections are arranged in a specific context. Attribute groups can be assigned to categories or channels.
 
-You can also set default values for attributes that are included in an attribute group. For example, you add an attribute for color to an attribute group and select **Blue** as the default attribute value. In this case, when the attribute group is added to a retail product that includes color as one of its attributes, **Blue** appears as the default color for that product.
+You can also set default values for attributes that are included in an attribute group. For example, you add an attribute for color to an attribute group and select **Blue** as the default attribute value. In this case, when the attribute group is added to a product that includes color as one of its attributes, **Blue** appears as the default color for that product.
 
 ![Attribute groups](media/AttributeGroup.png)
 
 ### Create an attribute group
 
-1. Sign in to the back-office client as a retail merchandising manager.
+1. Sign in to the back-office client as a merchandising manager.
 2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.
 3. Create an attribute group that is named **Fashion Sunglasses**.
 4. Add the following attributes: **Lens shape** and **Sunglass brand**.
 
-### Assign attribute groups to retail categories
+### Assign attribute groups to categories
 
-One or more attribute groups can be associated with category nodes in the following types of retail category hierarchies: Retail product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Then, when products are categorized, they inherit the attributes that are included in the attribute groups.
+One or more attribute groups can be associated with category nodes in the following types of category hierarchies: Commerce product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Then, when products are categorized, they inherit the attributes that are included in the attribute groups.
 
 ![Retail product hierarchy – Product attribute groups](media/AGRetailProdHierarchy.PNG)
 
-Follow these steps to assign attribute groups to categories in the Retail product hierarchy.
+Follow these steps to assign attribute groups to categories in the Commerce product hierarchy.
 
-1. Sign in to the back-office client as a retail merchandising manager.
-2. Go to **Retail** &gt; **Category and product management** &gt; **Retail product hierarchy**.
+1. Sign in to the back-office client as a merchandising manager.
+2. Go to **Retail and Commerce** &gt; **Category and product management** &gt; **Commerce product hierarchy**.
 3. Select **Fashion navigation hierarchy**.
 4. Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**.
 5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**.
@@ -181,15 +181,15 @@ Follow these steps to assign attribute groups to categories in the Retail produc
 > [!NOTE]
 > This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy. In step 2, use the following navigation paths:
 >
-> - Retail &gt; Category and product management &gt; Channel navigation categories
-> - Retail &gt; Category and product management &gt; Supplemental product categories
+> - Retail and Commerce &gt; Category and product management &gt; Channel navigation categories
+> - Retail and Commerce &gt; Category and product management &gt; Supplemental product categories
 
-### Assign attribute groups to retail stores
+### Assign attribute groups to stores
 
-One or more attribute groups can be associated with one or more retail stores in the retail store hierarchy. Then, when products are enriched for specific retail stores, they inherit the attributes that are included in the attribute groups.
+One or more attribute groups can be associated with one or more stores in the store hierarchy. Then, when products are enriched for specific stores, they inherit the attributes that are included in the attribute groups.
 
-1. Sign in to the back-office client as a retail merchandising manager.
-2. Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
+1. Sign in to the back-office client as a merchandising manager.
+2. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
 3. Assign attribute groups to the Houston channel:
 
     1. Select the **Houston** channel.
@@ -211,12 +211,12 @@ One or more attribute groups can be associated with one or more retail stores in
 
 ## Overriding attribute values
 
-The default values of attributes can be overridden for individual products at the product level. Default values can also be overridden for individual products in specific catalogs that are targeted at specific retail channels.
+The default values of attributes can be overridden for individual products at the product level. Default values can also be overridden for individual products in specific catalogs that are targeted at specific channels.
 
 ### Override the attribute values of an individual product
 
-1. Sign in to the back-office client as a retail merchandising manager.
-2. Go to **Retail** &gt; **Category and product management** &gt; **Released products by category**.
+1. Sign in to the back-office client as a merchandising manager.
+2. Go to **Retail and Commerce** &gt; **Category and product management** &gt; **Released products by category**.
 3. Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.
 4. Select the required product in the grid. Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.
 5. Select an attribute in the left pane, and then update its value in the right pane.
@@ -225,8 +225,8 @@ The default values of attributes can be overridden for individual products at th
 
 ### Override the attribute values of products in a catalog
 
-1. Sign in to the back-office client as a retail merchandising manager.
-2. Go to **Retail** &gt; **Catalog management** &gt; **All catalogs**.
+1. Sign in to the back-office client as a merchandising manager.
+2. Go to **Retail and Commerce** &gt; **Catalog management** &gt; **All catalogs**.
 3. Select the **Fabrikam Base Catalog** catalog.
 4. Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.
 5. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
@@ -238,14 +238,14 @@ The default values of attributes can be overridden for individual products at th
     - Channel product attributes
 
     > [!NOTE]
-    > If shared product media and shared product attributes are created, they apply to all the retail products.
+    > If shared product media and shared product attributes are created, they apply to all the products.
 
 ![Catalog product attribute groups](media/CatalogProdAttrValues.png)
 
 ### Override the attribute values of products in a channel
 
-1. Sign in to the back-office client as a retail merchandising manager.
-2. Go to **Retail** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
+1. Sign in to the back-office client as a merchandising manager.
+2. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
 3. Select the **Houston** channel.
 4. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 
@@ -260,4 +260,4 @@ The default values of attributes can be overridden for individual products at th
     - Channel product attributes
 
     > [!NOTE]
-    > If shared product media and shared product attributes are created, they apply to all the retail products.
+    > If shared product media and shared product attributes are created, they apply to all the products.
