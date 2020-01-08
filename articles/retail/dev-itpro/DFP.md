@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Fraud Protection integration
-description: This topic describes out-of-box integrations available for Dynamics 365 Fraud Protection with Dynamics 365 Commerce. 
+title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
+description: This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
 author: rubendel
 manager: AnnBe
 ms.date: 01/06/2020 
@@ -30,102 +30,102 @@ ms.dyn365.ops.version: 10.0.8
 
 ---
 
-# Dynamics 365 Fraud Protection integration for Commerce
+# Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 <!-----------I want marketing and Fraud protection to review this.-------------->
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes out-of-box integrations between Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
+This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Purchase protection | The Fraud Protection module that analyzes purchases for fraud based on risk levels determined by the merchant. |
-| Storefront | The e-commerce storefront provided out of box with Dynamics 365 Commerce. |
+| Purchase protection | The Fraud Protection module that analyzes purchases for fraud, based on risk levels that are determined by the merchant. |
+| Storefront | The out-of-box e-commerce storefront that is provided with Commerce. |
 
 ## Overview
 
-Microsoft Dynamics 365 Fraud Protection is a service dedicated to offering fraud protection solutions that help retailers prevent fraudulent activity and identify where fraud may be going unnoticed. This article describes out-of-box integrations between Commerce and Fraud Protection. It will be updated as new integrations between the two services are shipped in future releases. For more information about Fraud Protection, including modules that aren't yet supported by an out-of-box integration with Commerce, please visit the Fraud Protection [landing page](https://dynamics.microsoft.com/en-us/ai/fraud-protection/). You many also [request a call back](https://dynamics.microsoft.com/en-us/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative to discuss how Fraud Protection can help boost profitability, reduce operational expenses, and improve customer experiences.
+Fraud Protection is a service that offers fraud protection solutions to help retailers prevent fraudulent activity and identify places where fraud might be unnoticed. This topic describes out-of-box integrations between Fraud Protection and Commerce. It will be updated as new integrations between the two services are released in future releases. For more information about Fraud Protection, including information about modules that aren't yet supported by an out-of-box integration with Commerce, visit the [Fraud Protection landing page](https://dynamics.microsoft.com/ai/fraud-protection/). You can also [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative to discuss how Fraud Protection can help boost profitability, reduce operational expenses, and improve customer experiences.
 
-## Purchase protection in Dynamics 365 Commerce
+## Purchase protection in Commerce
 
 ### Purchase protection overview
 
-The first generally available offering from Fraud Protection is a purchase protection service. This offering allows merchants to log into the Fraud Protection dashboard for their organization and configure risk rules for online purchases. Based on the settings configured by the merchant in DFP, e-commerce transactions are can then be validated with DFP prior to being sent for payment authorization. When orders are sent to the Fraud Protection purchase protection module, Fraud Protection analyzes the purchase and provides a risk assessment based on merchant-configured fraud rules, AI driven insights, and consortium-based fraud analytics. If the fraud score returned for an order exceeds a merchant's risk tolerance, the DFP will instruct the storefront to reject the order. If an order is not rejected, Fraud Protection will return a fraud score that can be used by the storefront to determine the next steps in order fulfillment. Those steps might include placing the order on hold for manual review or follow-up with the customer who placed the order.
+The first generally available offering from Fraud Protection is a purchase protection module that lets merchants sign in to the Fraud Protection dashboard for their organization and define risk rules for online purchases. Based on the settings that a merchant configures in Fraud Protection, e-commerce transactions can be validated with Fraud Protection before they are sent for payment authorization.
 
-### Purchase protection integration supported capabilities
+When an order is sent to the Fraud Protection purchase protection module, Fraud Protection analyzes the purchase and provides a risk assessment, based on merchant-defined fraud rules, insights that are driven by artificial intelligence (AI), and consortium-based fraud analytics. If the fraud score that is returned for the order exceeds the merchant's risk tolerance, Fraud Protection instructs the storefront to reject the order. If an order isn't rejected, Fraud Protection returns a fraud score that the storefront can use to determine the next steps in the order fulfillment process. Those steps might include putting the order on hold for manual review or follow-up with the customer who placed the order.
 
-#### Purchase event
-Upon general availability of Commerce, the purchase protection integration will support receiving a Fraud Protection risk assessment and terminating the order in the online storefront. 
+### Supported capabilities in the purchase protection integration
 
-The flow for such an event is as follows:
+#### Purchase events
 
-1. Storefront customer adds items to the basket and proceeds to checkout.
-2. Customer fills in shipping and payment details.
-3. Upon completion of prerequisites, customer clicks **Place order**.
-4. Order details are sent to Fraud Protection for purchase protection assessment. 
-5. If merchant rules defined in Fraud Protection determine the order should be rejected, a response is sent to the storefront and the order is terminated.
+Currently, Commerce is in public preview. However, when it becomes generally available, the purchase protection integration will support the receipt of Fraud Protection risk assessments and termination of orders in the online storefront.
 
-When an order is terminated as a result of Fraud Protection purchase protection, the user sees an error stating: "The order cannot be processed at this time. Please try again later."
+Here is the flow for purchase events.
 
+1. A storefront customer adds items to the basket and proceeds to checkout.
+2. The customer enters shipping and payment details.
+3. After the prerequisites are completed, the customer selects **Place order**.
+4. Order details are sent to Fraud Protection for purchase protection assessment.
+5. If the merchant rules that are defined in Fraud Protection determine that the order should be rejected, a response is sent to the storefront, and the order is terminated.
 
-![Rejected order sample from a reference storefront](../media/Payments/SampleDFPReject.png)
+If Fraud Protection purchase protection causes an order to be terminated, the user receives the following error message: "The order cannot be processed at this time. Please try again later."
 
-Alternatively, if the order is deemed to be approved based on the rules configured by the merchant in the Fraud Protection portal, then the response from Fraud Protection to the storefront includes the risk score and reason code determined by Fraud Protection. For the initial integration, that Fraud Protection assessment is not used in any way and the response for both "Approve" and "Reject" scenarios is not saved in any way. 
+![Example of a rejected order from a reference storefront](../media/Payments/SampleDFPReject.png)
 
-Rejected orders are not sent to payment processors for authorization and do not go through the order creation process in the back office. 
+Alternatively, if the merchant rules determine that the order should be approved, the response that is sent to the storefront includes the risk score and the reason code that were determined by Fraud Protection. For the initial integration, the Fraud Protection assessment isn't used in any way, and the response for both approval and rejection scenarios isn't saved.
 
-#### Bank event
+Rejected orders aren't sent to payment processors for authorization, and they don't go through the order creation process in the back office.
 
-If an online order is approved based on Fraud Protection assessment, the next step is to authorize payments for that order, if applicable. The result of those payment authorizations are referenced back to Fraud Protection with a correlation ID for the purchase event previously assessed. Using AI insights, these post-authorization results can rapidly boost the quality of future fraud protection assessments.  
+#### Bank events
 
-#### Purchase status event
+If an online order is approved based on the Fraud Protection assessment, the next step is to authorize payments for that order, if payment authorizations are applicable. The result of the payment authorizations is referenced back to Fraud Protection by using a correlation ID for the purchase event that was previously assessed. Through AI insights, these post-authorization results can quickly boost the quality of future Fraud Protection assessments.
 
-Similar to bank events, once an order is created in the Commerce back office, a signal is sent to Fraud Protection indicating that the order was created successfully. Both the bank event and purchase status event are informational events, meaning there is no response expected from Fraud Protection. 
+#### Purchase status events
+
+Purchase status events resemble bank events. After an order is created in the Commerce back office, a signal is sent to Fraud Protection to indicate that the order was successfully created. Both bank events and purchase status events are informational events. Therefore, no response is expected from Fraud Protection.
 
 ### Availability
-As of Dynamics 365 Retail version 10.0.8, Retail includes the Fraud Protection integration back office setup. However, the full out-of-box integration requires requires the storefront included in Commerce, which is currently in public preview. When Commerce becomes generally available, existing Retail customers will be able to update to Commerce. For more details, visit the [Dynamics 365 Commerce landing page](https://dynamics.microsoft.com/en-us/commerce/overview/). 
 
+As of Dynamics 365 Retail version 10.0.8, Retail includes the back-office setup for Fraud Protection integration. However, the full out-of-box integration requires the storefront that is included in Commerce, and Commerce is currently in public preview. When Commerce becomes generally available, existing Retail customers will be able to update to it. For more information, visit the [Dynamics 365 Commerce landing page](https://dynamics.microsoft.com/commerce/overview/).
 
 #### Setup
 
-Enabling the out-of-box purchase protection integration requires a Fraud Protection environment. To get set up with Fraud Protection, [request a call back](https://dynamics.microsoft.com/en-us/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative.
+The out-of-box purchase protection integration requires a Fraud Protection environment. To set up Fraud Protection, [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative.
 
-Once the merchant's Fraud Protection environment is available and purchase protection settings have been configured, the setup can continue in the Commerce back office.
+After the merchant's Fraud Protection environment is available, and purchase protection settings have been configured, the setup can continue in the Commerce back office.
 
-##### Key vault setup
+##### Key Vault setup
 
-Part of the integration setup requires that a secret is used when Commerce communicates with Fraud Protection to get a purchase protection result. That secret must be stored using an Azure Key Vault client. Details around setting up and Key Vault client can be found by visiting the [Setting up Azure Key Vault Client](https://support.microsoft.com/en-us/help/4040305/setting-up-azure-key-vault-client) support topics. 
+The integration setup requires that a secret be used when Commerce communicates with Fraud Protection to get a purchase protection result. That secret must be stored by using an Azure Key Vault client. For information about how to set up a Key Vault client, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client).
 
-To reference the Fraud Protection certificate stored in Key Vault, that certificate must be referenced by key vault parameters in the Commerce back office. To do so, navigate to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Key Vault parameters** in Commerce.
+The Fraud Protection certificate that is stored in Key Vault can be referenced only if it's referenced by Key Vault parameters in the Commerce back office. To set up Key Vault parameters, go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Key Vault parameters** in Commerce.
 
-Next, select the Key Vault URL used to store the DFP secret and click **Add**. Then specify the name, description, and path for the Key Vault secret that is used to authenticate Commerce when it sends orders for purchase protection assessment. 
+Next, select the Key Vault URL that is used to store the Fraud Protection secret, and select **Add**. Then specify the name, description, and path of the Key Vault secret that is used to authenticate Commerce when it sends orders for purchase protection assessment.
 
 ##### Retail parameters setup
 
-1. Go to **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Retail parameters**.
+1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Retail parameters**.
+2. On the **Dynamics Fraud Protection** tab, set the **Enable Dynamics Fraud Protection integration** option to **Yes**.
+3. On the **Configuration** FastTab, add the Azure Active Directory (Azure AD) client ID, and then select the name of the Key Vault secret that you configured earlier.
 
-2. Select the **Dynamics Fraud Protection** tab.
+    By default, the **Assessment type** field is set to **Evaluate**. In this case, Fraud Protection will passively check orders for fraud but won't actively reject orders. Therefore, merchants can compare Fraud Protection fraud assessments with incumbent fraud tools to understand the impact of Fraud Protection.
 
-3. Set **Enable Dynamics Fraud Protection integration** to **Yes**. 
+    Alternatively, the **Assessment type** field can be set to **Protect**. In this case, Fraud Protection will return "Reject" assessments, and fraudulent orders will be terminated before they are sent for authorization or created in the back office.
 
-4. Expand the **Configuration** FastTab and add the Azure Active Directory (AAD) Client ID, then select the **Key Vault secret name** that was set up during Key Vault configuration. 
-
-By default, the **Assessment type** will be set to **Evaluate**. When the integration is configured with assessment type in evaluate mode, Fraud Protection will passively check orders for fraud without actively rejecting those orders. This mode is provided for merchants to be able to compare Fraud Protection fraud assessments with incumbent fraud tools to understand the impact of Fraud Protection. 
-
-Alternatively, the **Protect** assessment type can be enabled. When **Protect** is enabled, Fraud Protection will return "Reject" assessments and fraudulent orders will be stopped before being sent for authorization or created in the back office. 
-
-5. The **Dynamics Fraud Protection endpoint URL** must be specified. This URL is provided by Fraud Protection and will be different across UAT and production environments. 
+4. The **Dynamics Fraud Protection endpoint URL** field must be set. This URL is provided by Fraud Protection and will vary across user acceptance testing (UAT) and production environments.
 
 ![Fraud Protection setup in Retail parameters](../media/Payments/DFPSetupParams.png)
 
 > [!NOTE]
-> The Key Vault and Fraud Protection settings are company specific. When enabling Fraud Protection for production environments, the AAD Client ID is not entered through the user interface. Instead, enabling Fraud Protection for production environments requires a [serivce request](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). When creating a support request to enable Fraud Protection for production, clearly indicate in the title that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment. 
+> The Key Vault and Fraud Protection settings are company-specific. To enable Fraud Protection for production environments, you don't enter the Azure AD client ID through the user interface (UI). Instead, you must create and submit a [service request](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team). In the title of your request, clearly indicate that the request is to configure Fraud Protection purchase protection for a production Commerce or Retail environment.
 
-## Privacy Notice
+## Privacy notice
 
-Enabling this feature results in sharing certain of your data such as payment, credit, returns, transaction status, or personal data with other Microsoft online services.  Fraud Protection’s purchase protection assessments are not stored by the Retail or Commerce online services.  Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+When you enable this feature, some of your data is shared with other Microsoft online services. This data includes information about payments, credit, returns, and transaction status, or personal data. Fraud Protection purchase protection assessments aren't stored by the Retail or Commerce online services.
+
+Your privacy is important to Microsoft. To learn more, read the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 ## Related articles
 
