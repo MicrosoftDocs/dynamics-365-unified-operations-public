@@ -5,7 +5,7 @@ title: Accessibility features and capabilities
 description: This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -115,7 +115,5 @@ To set the **Minimum Age** attribute for a video asset, follow these steps.
 [Compliance overview](compliance-overview.md)
 
 [Cookie compliance](cookie-compliance.md)
-
-[Delete personal information](delete-personal-information.md)
 
 [Add a privacy policy page](add-privacy-page.md)
