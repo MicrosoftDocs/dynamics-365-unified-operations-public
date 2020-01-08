@@ -5,7 +5,7 @@ title: Apply updates and extensions to Retail Cloud Scale Unit
 description: This topic shows how to apply updates and extensions to cloud-hosted Retail channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 11/06/2019
+ms.date: 01/05/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
