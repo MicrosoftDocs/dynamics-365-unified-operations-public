@@ -62,9 +62,9 @@ Before you begin, you should understand *deployable packages*, *runbooks*, and t
 - **Merged package** – A package that is created by combining one package of each type. For example, you can merge one binary update package and one AOT package, or one AOT package and one Retail deployable package. The packages are merged in the Asset library for the project in LCS.
 > [!NOTE] 
 > A binary package and a Retail deployable package can't be included in the same merged package.
-
+>
 > For information about how to download an update from LCS and what you see in the tiles based on your environment version, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
-
+>
 > If your environment is on an application version 8.1 and later, then the **Platform Update package** does not apply to your environment. Starting with 8.1 and later releases, **Application and Platform Binary update package** is the one that applies since application and platform will be combined into a single cumulative package and will be released by Microsoft. Also note that you will no longer be applying granular X++ hotfixes and will get all application and platform updates together. This means that on the environment details page, clicking on **View detailed version information** will not have details on the granular hotfixes or KBs applied as there is no way to apply them. 
 
 ## Prerequisite steps
@@ -119,9 +119,9 @@ If package deployment fails, see the [Troubleshoot package application issues](d
 
 ## Applying updates and extensions
 
-If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have initialized Retail Cloud Scale Unit, you will also need to update Retail channel components. For more information, see [Update Retail Cloud Scale Unit](Update-retail-channel.md).
+If you are updating a Tier-2 Sandbox or Production environment on application version 8.1.2.x or newer and have initialized Cloud Scale Unit, you will also need to update Commerce channel components. For more information, see [Update Retail Cloud Scale Unit](Update-retail-channel.md).
 
-If you're using components (such as Retail Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md).
+If you're using components (such as Modern POS), after you've applied updates and extensions in your environment, you must also update your in-store components. For more information, see [Configure, install, and activate Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md).
 
 ## Packages, runbooks, and the AXUpdateInstaller in depth
 
