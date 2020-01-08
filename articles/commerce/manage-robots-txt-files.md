@@ -89,3 +89,19 @@ To delete a robots.txt file in Commerce, follow these steps.
 
 > [!NOTE] 
 > This procedure can be used to delete only robots.txt files that were previously uploaded via the Commerce authoring tools.
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)
