@@ -88,17 +88,17 @@ Before you can start installation of channel components, you must first complete
 9.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
 10.  Edit the newly generated Server application and select **Reset the Secret**.
 
-    > [!NOTE]
-    > It is an important security measure to run this script for each Commerce Store Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
-    >
-    > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Store Scale Unit that used the previous secret.
+     > [!NOTE]
+     > It is an important security measure to run this script for each Commerce Store Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
+     >
+     > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Store Scale Unit that used the previous secret.
 
 11.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Connector for Microsoft Dynamics AX**.
 12.  Select **Edit** on the Action pane.
 13.  In the **Profile** field, enter the value **Default**.  If needed, enter a description in the **Description** field.
 
-    > [!NOTE]
-    > It is possible for the following fields in steps 12 through 14 to already have values. If this occurs, skip those steps and continue from there. What is important is to have a selectable profile title (default in this case).
+     > [!NOTE]
+     > It is possible for the following fields in steps 12 through 14 to already have values. If this occurs, skip those steps and continue from there. What is important is to have a selectable profile title (default in this case).
 
 14.  In the  **Web application name** field, enter **RetailCDXRealTimeService**.
 15.  In the **Protocol** field, select **https**.
@@ -114,13 +114,13 @@ Before you can start installation of channel components, you must first complete
 25.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.
 26.  On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
 
-    > [!NOTE]
-    > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Store Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
-    >
-    > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
-    >
-    > ```powershell
-    > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
-    > ```
+     > [!NOTE]
+     > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Store Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
+     >
+     > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
+     >
+     > ```powershell
+     > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
+     > ```
 
 28.	Follow the installation steps for installing the Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 
