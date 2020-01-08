@@ -57,7 +57,7 @@ This topic includes information and links to resources that can help you set up 
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)
 - [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
-- Retail
+- Commerce
   - [Cash register functionality](../../retail/localizations/emea-fra-cash-registers.md)
   - [Deployment guidelines for cash registers](../../retail/localizations/emea-fra-deployment.md)
 
