@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include[banner](../includes/banner.md)]
 
-The Commerce functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for Mexican retail companies. For more information about CFDI electronic invoices, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices). When a company closes the daily process, it must issue a Global CFDI document to consolidate all receipts that were issued to the final consumers. This document includes the following information for each transaction that is registered during the period:
+The Commerce functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for Mexican companies. For more information about CFDI electronic invoices, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices). When a company closes the daily process, it must issue a Global CFDI document to consolidate all receipts that were issued to the final consumers. This document includes the following information for each transaction that is registered during the period:
 
 - A receipt number
 - A corresponding amount
@@ -40,7 +40,7 @@ The Commerce functionality for Mexico supports the Comprobantes fiscales digital
 
 The Global CFDI functionality lets you perform the following tasks:
 
-- Create an electronic invoice, in Global CFDI format (layout 3.3), that is based on the posted retail statement. For more information about the layout, see [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-3-3).
+- Create an electronic invoice, in Global CFDI format (layout 3.3), that is based on the posted commerce statement. For more information about the layout, see [CFDI layout version 3.3](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-3-3).
 
 - For each electronic invoice generate a file in the .pdf or .xml format, and send it to the customer as an email attachment. After the Global CFDI electronic invoices are generated, they are verified and certified by a digital signature service provider (PAC) in the same way as other CFDI documents. For more information, see [Electronic invoices (CFDI)](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/latam-mex-cfdi-electronic-invoices) and [Inquire and print an electronic invoice](https://docs.microsoft.com/dynamics365/finance/localizations/tasks/mx-00010-inquire-print-electronic-invoice).
 
@@ -49,8 +49,8 @@ To generate and submit a Global CFDI electronic invoice, follow these steps.
 1. As a preparatory step, on the **Retail** tab of the **Electronic invoice parameters** page (**Organization administration \> Setup \> EInvoice \> Electronic invoice parameters**), you must specify the default parameters of the Global CFDI format.
 2. Close the shift at the point of sale (POS).
 3. Run the P-job in the distribution schedule to transfer transactions from the channel database to Headquarters.
-4. Calculate and post a retail statement by following the steps in [Create, calculate, and post a statement for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
-5. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices that are based on a posted retail statement. You can select a statement number for this periodic operation. If you don't select a statement number, the system creates Global CFDI electronic invoices for all posted retail statements that haven't yet been processed.
+4. Calculate and post a statement by following the steps in [Create, calculate, and post a statement for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+5. Run the **Post CFDI – Electronic invoices** periodic operation to create Global CFDI electronic invoices that are based on a posted statement. You can select a statement number for this periodic operation. If you don't select a statement number, the system creates Global CFDI electronic invoices for all posted statements that haven't yet been processed.
 
     As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices are created. One electronic invoice collects all receipts that are related to sales operations, and the other collects all receipts that are related to returns. For the electronic invoice that is related to returns, the **Return** attribute is set to **Yes**. You can view these electronic invoices on the **CFDI (electronic invoices)** page (**Retail and Commerce \> Inquiries and reports \> CFDI (electronic invoices)**).
 
