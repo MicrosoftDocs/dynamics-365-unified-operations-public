@@ -45,7 +45,7 @@ Before you begin, the following prerequisites must be met:
 
 ## Import bank groups
 
-You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../dev-itpro/data-entities/data-import-export-job.md?toc=/fin-and-ops/toc.json).
+You can import the list of banks by using the **Bank groups** entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
 
 The source data that is used to import bank groups can be presented as a Microsoft Excel file that has the following column names:
 
