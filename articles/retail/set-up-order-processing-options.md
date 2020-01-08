@@ -5,7 +5,7 @@ title: Set up call center channels
 description: This topic provides information about how to process orders for call centers by using Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 04/16/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -85,3 +85,6 @@ Users who aren't linked to a call center channel use the standard order entry fe
 
 
 After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.
+
+> [!NOTE]
+> To use call center functionality, the configuration key for **Multiple ship-to** must be enabled. This configuration key can be found in the **Trade configuration** keys under **System Administration**\> **Setup** \> **License Configuration**. This is required due to call center functionality that performs various validations based on the delivery address configured at the sales order line level. 

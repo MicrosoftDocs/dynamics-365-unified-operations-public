@@ -5,7 +5,7 @@ title: Retail sales price management
 description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -225,11 +225,11 @@ A single pricing engine is used to calculate retail prices across all channels: 
 
 Retail pricing is designed to work with retail entities instead of non-retail entities. Specifically, it's designed to set prices by store, not by warehouse.
 
-The retail pricing engine doesn't support the following pricing features:
+The retail pricing engine **does not support** the following pricing features:
 
-- Setting price by using the Site and Warehouse storage dimensions
-- Attribute-based pricing
-- Vendor discount pass-through
+- Setting prices by Site or Site and Warehouse storage dimensions is not supported. If you only specify Site dimension on the trade agreements, then the retail pricing will ignore the Site and apply the trade agreement to all sites. If you specify both Site and Warehouse, then the behavior is undefined/untested because it’s expected that retailers use the store price groups to control the prices for each store/warehouse.
+- Attribute-based pricing is not supported.
+- Vendor discount pass-through is not supported.
 
 In addition, **only** the retail pricing engine supports the following pricing features:
 
