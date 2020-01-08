@@ -1899,6 +1899,22 @@
           href: localizations/emea-ita-credit-invoicing.md
         - name: Withholding tax
           href: localizations/emea-ita-withholding-tax.md
+        - name: Separate accounts for credit notes
+          href: localizations/emea-ita-exil-separate-account-credit.md
+        - name: Sort sales invoice lines by packing slip
+          href: localizations/emea-ita-exil-invoicing-packing-slips.md
+        - name: Posting invoices with zero amounts
+          href: localizations/emea-ita-exil-zero-invoice-posting.md
+        - name: Bank data usability enhancement
+          href: localizations/emea-ita-exil-bank-accounts-setup.md
+        - name: Miscellaneous charges per kilogram in an Intrastat declaration
+          href: localizations/emea-ita-exil-misc-charges-intrastat.md
+        - name: Advanced notes management
+          href: localizations/emea-ita-exil-structured-notes.md
+        - name: Tax invoice for goods delivered for free
+          href: localizations/emea-ita-exil-goods-for-free.md
+        - name: Improved inquiry on debit or credit settlements
+          href: localizations/emea-ita-exil-improved-inquiry-settlement.md
       - name: Japan
         items:
         - name: Japan overview
