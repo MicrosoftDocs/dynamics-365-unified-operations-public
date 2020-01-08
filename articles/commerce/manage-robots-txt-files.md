@@ -5,7 +5,7 @@ title: Manage robots.txt files
 description: This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 12/18/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
