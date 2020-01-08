@@ -742,7 +742,7 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <ul>
 <li>Released products by category</li>
 <li>Mass update worksheet</li>
-<li>Retail product hierarchy</li>
+<li>Product hierarchy</li>
 </ul>
 </td>
 <td>Yes</td>
@@ -1110,7 +1110,7 @@ The following features and functionality are out of scope for the Brazilian loca
         - Commerce Services for Microsoft Dynamics ERP
         - Modern POS and Commerce Scale Unit
 
-    - **Retailers:** Retail POS can't be used in the following retail businesses in states where compliance with the PAF-ECF law "ATO COTEPE/ICMS N° 46" of 2014 is mandatory:
+    - **Retailers:** POS can't be used in the following businesses in states where compliance with the PAF-ECF law "ATO COTEPE/ICMS N° 46" of 2014 is mandatory:
 
         - Gas station
         - Restaurant
@@ -1121,13 +1121,13 @@ The following features and functionality are out of scope for the Brazilian loca
         - Toll road
         - Parking lot
 
-    - **Fiscal printer features:** The following features and functionality for fiscal printers for retail businesses in Brazil are out of scope for the Brazilian localization:
+    - **Fiscal printer features:** The following features and functionality for fiscal printers for businesses in Brazil are out of scope for the Brazilian localization:
 
         - Fiscal printers that have a different setup of tender types
         - Fiscal printers that have more than one registry for the same tax rate
         - Rounding of values, quantities, and amounts at the point of sale (POS) by using a different rule than the fiscal printer
 
-    - **Tax calculation requirements:** The following tax calculation requirements for retail businesses in Brazil are out of scope for the Brazilian localization:
+    - **Tax calculation requirements:** The following tax calculation requirements for businesses in Brazil are out of scope for the Brazilian localization:
 
         - Tax discounts for sales through Enterprise POS in SUFRAMA or other Free Trade Zone
 
