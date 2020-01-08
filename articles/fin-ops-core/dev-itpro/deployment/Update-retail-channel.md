@@ -53,7 +53,7 @@ To apply an extension to a Retail Cloud Scale Unit, run the following steps:
 2. In the selection panel, select the extension to apply.
 
 > [!NOTE]
-> You must first upload the Retail deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Retail deployment setup page** in LCS.
+> You must first upload the Retail deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Retail deployment setup page** in LCS. Extension package size for RCSU is limited to 300MB.
 
 Both Apply updates and Apply extension operations will involve a downtime of up to 1 hour. During this time, the following will occur:
 
