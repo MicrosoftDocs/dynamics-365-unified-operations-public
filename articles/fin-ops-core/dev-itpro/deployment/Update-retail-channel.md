@@ -5,7 +5,7 @@ title: Apply updates and extensions to Retail Cloud Scale Unit
 description: This topic shows how to apply updates and extensions to cloud-hosted Retail channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 01/05/2020
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include[banner](../includes/banner.md)]
 
-If you are updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have initialized Retail Cloud Scale Unit, you will also need to update Retail channel components. This topic shows how to apply updates and extensions to Retail Cloud Scale Unit.
+If you are updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have initialized Retail Cloud Scale Unit (RCSU), you will also need to update Retail channel components. This topic shows how to apply updates and extensions to Retail Cloud Scale Unit.
 
 Updates to Retail Cloud Scale Unit are cumulative. This means that any update that you apply will include all previously released changes. Applying a Retail deployable package for extensions is also a cumulative process and will replace the previously deployed version of the extension.
 
@@ -53,7 +53,7 @@ To apply an extension to a Retail Cloud Scale Unit, run the following steps:
 2. In the selection panel, select the extension to apply.
 
 > [!NOTE]
-> You must first upload the Retail deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Retail deployment setup page** in LCS. Extension package size for RCSU is limited to 300MB.
+> You must first upload the Retail deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Retail deployment setup page** in LCS. Extension package size for RCSU is limited to 300 MB.
 
 Both Apply updates and Apply extension operations will involve a downtime of up to 1 hour. During this time, the following will occur:
 
