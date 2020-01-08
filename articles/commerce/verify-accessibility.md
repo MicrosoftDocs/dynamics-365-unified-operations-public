@@ -5,7 +5,7 @@ title: Verify page content accessibility
 description: This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.
 author: arotkin
 manager: annbe
-ms.date: 12/19/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
