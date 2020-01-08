@@ -55,16 +55,16 @@ Before you can start installation of channel components, you must first complete
     ```powershell
     .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://<My Environment Name>.com/namespaces/AXSF/’ -       SendProductSupportTelemetryToMicrosoft
     ```
-   > [!IMPORTANT]
-   > The above steps apply to version 10.0 and later.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used.
-   >
-   > ```powershell
-   > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
-   > ```
-   > - The parameter **-envName** should be known based on creation when the environment is generated.
-   > - The legacy parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
-   > - The parameter **-SendProductSupportTelemetryToMicrosoft** is a required value to enable telemetry to Microsoft.  This is critical to maximize support from Microsoft.
-   > - This script will perform a variety of actions, including updating the Service user and role and updating registry keys.
+    > [!IMPORTANT]
+    > The above steps apply to version 10.0 and later.  For the original 8.1.3 release of Retail on-premises functionality, the original version of the script delimiters must be used.
+    >
+    > ```powershell
+    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>’ -SendProductSupportTelemetryToMicrosoft
+    > ```
+    > - The parameter **-envName** should be known based on creation when the environment is generated.
+    > - The legacy parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
+    > - The parameter **-SendProductSupportTelemetryToMicrosoft** is a required value to enable telemetry to Microsoft.  This is critical to maximize support from Microsoft.
+    > - This script will perform a variety of actions, including updating the Service user and role and updating registry keys.
 
 4. On each AOS computer, run the following PowerShell script.
 
@@ -72,8 +72,8 @@ Before you can start installation of channel components, you must first complete
    .\RetailUpdateDatabase.ps1 -RetailSelfServicePackages 'C:\RetailSelfService\Packages'
    ```
 
-   > [!NOTE]
-   > The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
+    > [!NOTE]
+    > The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:/selfservicepackages**).
 
 5.	Download the appropriate binary update from LCS to have the Commerce installers. For instructions, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 6.	Extract the zip file and copy all self-service installers into the folder **C:/selfservicepackages** defined and created in step 2 in each of the AOS machines. The six self-service installers include: 
@@ -88,17 +88,17 @@ Before you can start installation of channel components, you must first complete
 9.  Access the newly generated Server application from the **Application Groups** in AD FS Management.
 10.  Edit the newly generated Server application and select **Reset the Secret**.
 
-   > [!NOTE]
-   > It is an important security measure to run this script for each Commerce Store Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
-   >
-   > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Store Scale Unit that used the previous secret.
+    > [!NOTE]
+    > It is an important security measure to run this script for each Commerce Store Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
+    >
+    > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Store Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Store Scale Unit that used the previous secret.
 
 11.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Connector for Microsoft Dynamics AX**.
 12.  Select **Edit** on the Action pane.
 13.  In the **Profile** field, enter the value **Default**.  If needed, enter a description in the **Description** field.
 
-   > [!NOTE]
-   > It is possible for the following fields in steps 12 through 14 to already have values. If this occurs, skip those steps and continue from there. What is important is to have a selectable profile title (default in this case).
+    > [!NOTE]
+    > It is possible for the following fields in steps 12 through 14 to already have values. If this occurs, skip those steps and continue from there. What is important is to have a selectable profile title (default in this case).
 
 14.  In the  **Web application name** field, enter **RetailCDXRealTimeService**.
 15.  In the **Protocol** field, select **https**.
@@ -114,13 +114,13 @@ Before you can start installation of channel components, you must first complete
 25.  Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.
 26.  On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
 
-   > [!NOTE]
-   > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Store Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
-   >
-   > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
-   >
-   > ```powershell
-   > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
-   > ```
+    > [!NOTE]
+    > The installers will not download from their relevant pages the first time a download is attempted.  This is because the installers have only just been placed into the download location and the associated database values do not yet exist.  In Headquarters, when the **Download** functionality is attempted (for example, Store Scale Unit or Modern POS), an error will display and then an automated upload functionality will be initiated to allow the installers to be downloaded the second time that the download is attempted. (Wait one minute before attempting to download the installer again).
+    >
+    > The Peripheral Simulator (downloaded on the Hardware profile page in headquarters) will not be available until at least one Hardware profile has been created and is functional. After that point has been achieved, the following script can be run.
+    >
+    > ```powershell
+    > .\RetailUpdateDatabase.ps1 -envName 'LBDenv1' -UpdateRetailHardwareProfileSelfServicePackage
+    > ```
 
 28.	Follow the installation steps for installing the Store Scale Unit. For instructions, see [Configure and install Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 
