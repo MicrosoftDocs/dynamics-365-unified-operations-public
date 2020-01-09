@@ -772,6 +772,8 @@
           href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
     - name: Monitoring and analysis
       items:
+      - name: Dynamics 365 Fraud Protection integration for Commerce
+        href: ../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
       - name: Monitor sales and margin performance
         href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
       - name: Analyze sales trends and patterns
