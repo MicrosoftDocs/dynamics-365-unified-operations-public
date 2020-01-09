@@ -35,11 +35,9 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-## About wave step codes
-
 Wave step codes are codes that users can set up and use to link specific instances of wave methods to a corresponding template. The templates include templates for replenishment, containerization, label printing, load building, and sorting.
 
-When wave step codes aren't used, users must enter free text to reference a specific template from the wave method instance. Free text is prone to error, because users must make sure that the wave step text that they add for a specific wave step method in a wave template exactly matches the wave step text in the target template.
+When wave step codes aren't used, users must enter free text to reference a specific template from the wave method instance. Free text is prone to errors because users must make sure that the wave step text that they add for a specific wave step method in a wave template exactly matches the wave step text in the target template.
 
 Wave step codes for a specific wave step type are set up on a separate page. For every wave step method instance in a wave template that requires a wave step code, the wave step code must be selected in a drop-down list. Selection in a drop-down list replaces free text entry and helps reduce the risk and impact of human error. Setup codes are used to link a wave step method in a wave template to a target template for the method.
 
@@ -55,7 +53,7 @@ For this demo, demo data must be installed, and you must use the **USMF** demo d
 Follow these steps to turn on the wave step codes feature.
 
 1. Go to **Feature Management**.
-2. Select to enable the feature Organization-wide Wave Step Code
+2. Select to enable the feature called **Organization-wide Wave Step Code**.
 
 All existing wave step free texts in all legal entities are upgraded to the new structure. After this upgrade is completed for all legal entities, then the feature is enabled. If the feature cannot be enabled for one or more legal entities, then the feature is not enabled for any legal entities.
 
@@ -67,7 +65,7 @@ During the enablement, validations are done during the data upgrade. If the upgr
 
 After you've resolved any conflicts that are identified during the validations, you can retry to enable the feature.
 
-When the feature has been enabled organization wide, the **Wave step codes** page (**Warehouse management \> Setup \> Waves \> Wave step codes**) becomes available. This page lists the wave step codes that were upgraded when the Organization-wide Wave Step Code feature was enabled.
+When the feature has been enabled, the **Wave step codes** page (**Warehouse management \> Setup \> Waves \> Wave step codes**) becomes available. This page lists the wave step codes that were upgraded when the Organization-wide Wave Step Code feature was enabled.
 
 ### Create new wave step codes
 
