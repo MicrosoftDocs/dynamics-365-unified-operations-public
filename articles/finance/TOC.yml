@@ -3155,6 +3155,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
           - name: Configure country context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+          - name: Configure ER formats to use parameters that are specified per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+          - name: Set up the parameters of an ER format per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
