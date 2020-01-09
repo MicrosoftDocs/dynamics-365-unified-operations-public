@@ -3,7 +3,7 @@
 
 title: Abort an executing batch job
 description: This topic provides information about how cancel an executing batch job.
-author: hasaid
+author: Peakerbl
 manager: AnnBe
 ms.date: 06/14/2019
 ms.topic: article
