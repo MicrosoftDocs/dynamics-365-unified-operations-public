@@ -5,7 +5,7 @@ title: Apply filters to a plan
 description: This topic explains how to use filters on a plan when the Planning Optimization functionality is used. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -39,7 +39,7 @@ When the Planning Optimization functionality is used, you can apply a filter to 
 
 If a **Plan filter** is applied, and a runtime filter is also applied during the master planning run, only the intersection of the two filters is included in the planning run.
 
-The **Plan filter** can be accessed from the **Master plans**, when Planning Optimization is used.
+The **Plan filter** can be accessed from **Master plans** when Planning Optimization is used.
 
 ## Example scenario
 
