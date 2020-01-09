@@ -58,9 +58,9 @@ Before you can complete this procedure, demo data must be installed in your envi
 
 The display order for the channel navigation hierarchy will be reflected in HQ for the commerce product hierarchy and released products by category.
 
-![Commerce product hierarchy custom sorted with negative values](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Product hierarchy custom sorted with negative values](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Released products by category custom sorted based on the retail product hierarchy](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Released products by category custom sorted based on the product hierarchy](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## Configure the display order for categories in the channel navigation hierarchy
 
