@@ -162,7 +162,7 @@ You can also set default values for attributes that are included in an attribute
 
 One or more attribute groups can be associated with category nodes in the following types of category hierarchies: Commerce product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Then, when products are categorized, they inherit the attributes that are included in the attribute groups.
 
-![Retail product hierarchy – Product attribute groups](media/AGRetailProdHierarchy.PNG)
+![Product hierarchy – Product attribute groups](media/AGRetailProdHierarchy.PNG)
 
 Follow these steps to assign attribute groups to categories in the Commerce product hierarchy.
 
