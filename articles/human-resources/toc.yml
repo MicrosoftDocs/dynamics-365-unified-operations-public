@@ -52,13 +52,17 @@
       - name: Create a recurring data export app
         href: hr-admin-integration-recurring-data-export-app.md
       - name: Set up number sequencing
-        href: hr-hrpro-setup-number-sequencing.md
+        href: hr-setup-number-sequencing.md
       - name: Set up document management
         href: hr-admin-integration-document-management.md
       - name: Integrate with Office
         href: hr-admin-integration-office.md
     - name: Manage features
       href: hr-admin-manage-features.md
+    - name: Manage preview features
+      items:
+      - name: Enable Benefits management
+        href: hr-admin-preview-features-benefits-management.md
     - name: Disaster recovery
       href: hr-admin-disaster-recovery.md
     - name: Manage users
@@ -159,6 +163,15 @@
       items:
     - name: Manage benefits
       items:
+      - name: "In preview: Benefits management"
+        items:
+        - name: Benefits management overview
+          href: hr-benefits-management-overview.md
+        - name: Configure Benefits management
+          items: 
+        - name: Create benefits plans
+          items: 
+        - name: Enroll 
     - name: Manage leave and absence
       items:
       - name: Overview
