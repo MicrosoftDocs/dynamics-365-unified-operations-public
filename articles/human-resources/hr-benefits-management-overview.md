@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefits management overview
-description: 
+description: Overview of the Benefits management preview feature in Dynamics 365 Human Resources. Offer your employees extended benefits options with an easy-to-use online experience.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/01/2020
@@ -67,9 +67,12 @@ The Benefits management preview feature provides you with the following solution
 
 - Qualified life event processing that is integrated with employee self service that also supports future life events.
 
+To use Benefits management, see the following articles:
 
-
-
-
+Set up Benefits management
+Configure Benefits management
+Create benefits plans
+Process benefits plans
+View benefits reports
 
 ## See also
