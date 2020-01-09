@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-# Released in version 10.0.0, upgraded in version 10.0.2
+_Released in version 10.0.0, upgraded in version 10.0.2_
 
-# About
+## About
 
 This functionality offers alternative approach to label printing in Microsoft Dynamics 365 by introducing a new wave step method. The new method enables creating and printing of the labels directly from the wave template during wave execution process. Therefore, the labels will be available before the work order is executed on the mobile device. This handles scenarios where different approach to label handling is desirable, enabling the worker to use and attach the required labels during picking and not only after picking.
 
@@ -59,27 +59,27 @@ This functionality has been enhanced in 10.0.2 release with the following functi
 
 These amendments will make it more efficient to support labelling of cartons prior palletizing. It especially supports companies shipping to large retailers that perform order receipt confirmation on an automatic fashion using scanning of each individual carton.
 
-# Example scenario
+## Example scenario
 
 For this scenario, you must have demo data installed, and you must use the **USMF** demo data company.
 
-## Setup
+### Setup
 
-### Wave process methods
+#### Wave process methods
 
 You may need to regenerate the wave process methods for the wave label printing method to become available.
 
 1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave process methods** and check if **waveLabelPrinting** is present in the list.
 2. If it isn&#39;t, click on **Regenerate methods** in the action bar to add it.
 
-### Wave templates
+#### Wave templates
 
 1. Go to **Warehouse management** \> **Setup** \> **Waves** \> **Wave templates**.
 2. Select a template, such as **62 Shipping Default**.
 3. In the **Methods** FastTab, add the **Wave label printing** method to the **Selected methods**.
 4. Assign a wave step code to the method, such as **PrintLabel**.
 
-### Wave label layout
+#### Wave label layout
 
 The label layout controls what information is printed on the label, and how it is laid out. Here is where you write the ZPL code that is sent to the printer.
 
@@ -165,20 +165,20 @@ CT~~CD,~CC^~CT~
   > [!NOTE]
   > The above setup results in 1 copy for each ZPL label to be printed. If more copies are needed (for example, to put on each side of the pallet), change the **n** value in **^PQn** section, such as **^PQ4**.
 
-### Wave label types
+#### Wave label types
 
 1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label types**.
 2. Create a new record:
   - **Label type**: **Carton**
   - **Description**: **Carton**
 
-### Unit sequence groups
+#### Unit sequence groups
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse** \> **Unit sequence groups**.
 2. Select or create a **Ea Box PL** group.
 3. Set the **Carton** wave label type to the **Box** line.
 
-### Wave label templates
+#### Wave label templates
 
 1. Go to **Warehouse management** \> **Setup** \> **Document routing** \> **Wave label templates**
 2. Create a new record:
@@ -199,11 +199,11 @@ CT~~CD,~CC^~CT~
   > [!NOTE]
   > This will create one label sequence (“Carton 1 of X” as can be printed on a label layout) per Load line that is created through the wave regardless of work grouping setup.
 
-### Number sequence extensions
+#### Number sequence extensions
 
 Number sequence extension controls GS1 compliance of specific number sequences (optional for the current scenario; more details and configuration instruction can be found here: [Configure number sequence extensions](../warehousing/configure-number-sequence-extensions.md)).
 
-## Process
+### Process
 
 1. Go to **Sales and marketing** \> **Common** \> **Sales order** \> **All sales orders**.
 2. Create a new sales order.
@@ -213,7 +213,7 @@ Number sequence extension controls GS1 compliance of specific number sequences (
   - One for another item, such as **A0002**, enter quantity, such as **9016**
   > [!NOTE]
   > Items and quantities are provided as an example only, they must have the **Unit sequence group** defined above, have unit conversions defined from **ea** to **Box** to **PL**, and have stock in Warehouse **62**).
-3. Reserve the order and release it to the warehouse.
+5. Reserve the order and release it to the warehouse:
   - The system will process the created shipment through the wave, using the template that includes the label printing step. The label layout will be used to define the format of the label, and the end result will be a label printed at the printer setup in the label template.
   - Wave labels will be generated and printed in the amount equal to the number of cartons.
   - The new **Bill of lading ID** will be generated for the shipments, and the wave label IDs will be following **SSCC-18** number format if the number sequence extensions have been configured.
