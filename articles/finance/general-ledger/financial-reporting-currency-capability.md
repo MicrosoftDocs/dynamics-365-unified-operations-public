@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Financial reporting currency overview
-description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
+title: Currency considerations for financial reporting
+description: Financial reporting includes features that support complex currency reporting requirements.
 author: ryansandness
 manager: AnnBe
 ms.date: 01/09/2020
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 10.0.8
 
 ---
 
-# Financial reporting currency overview
+# Currency considerations for financial reporting
 
 [!include [banner](../includes/banner.md)]
 [!include preview banner]
@@ -39,14 +39,14 @@ Financial reporting includes features that support complex currency reporting re
 - Accounting currency amount 
 - Reporting currency amount 
 - Transaction currency amount 
-- Translate to any currency setup within Dynamics 365 Finance
+- Translate to any currency that has been set up in the system
 
 ## Filtering by currency
 By default all report amounts are summarized and presented in the accounting currency of that company. If you need to do additional analysis by the transactions and related currencies, you can do so by setting filters on the report. 
 
-- In the column definition, you can use the **Currency filter** for any amount column and specify the ISO code of the currency you want to restric the column to. By setting the column to a specific currency, only transactions entered for that currency will be displayed. 
+- In the column definition, you can use the **Currency filter** for any amount column, and specify the ISO code of the currency you want to restrict the column to. When you set the column to a specific currency, only transactions entered for that currency will be displayed. 
 
-- In the row definition, you can specify a **Row modifier** with the attribute set to **Transaction currency** with a currency code listed as the restriction. By setting the row to a specific currency, likewise only transactions entered for the matching currency will be displayed. 
+- In the row definition, you can specify a **Row modifier** with the attribute set to **Transaction currency** with a currency code listed as the restriction. As is the case when you restrict a column to a currency, when you restrict the row to a specific currency,  only transactions entered for the matching currency will be displayed. 
 
 
 ## Reporting on currency
@@ -56,35 +56,35 @@ By default, any amount appearing on a report will appear as the accounting curre
 - Modifying the **Currency display** field in the column definition to any of the **Translate to ...** options, which will perform the currency translation within Financial reporting
 
 Additionally, the following actions will also cause translation:
-* Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. You will see the currency being used in Report Designer near the top of the form with a text label saying "Values will be displayed in USD" in the case of US Dollars being the accounting currency of the current company. 
-* Using the **Currency** button in the web report viewer will cause one additional version of the report to be generated, overriding the accounting currency if it wasn't previously specified. 
-Using the **Include all reporting currencies** button in Report Designer will cause additional versions of the report using translated data to be generated for each currency selected. 
-Note that this option should only be done if these versions are expected to be used since it will take additional resources to perform the additional generation. 
+- Use of a reporting tree to summarize multiple legal entites with different accounting currencies. Amounts will be translated to the accounting currency based on the legal entity specified in the report definition or the current company context if the @ANY company is used in the report definition. You will see the currency being used in Report Designer near the top of the page with a text label saying "Values will be displayed in USD" when US dollar is the accounting currency of the current company. 
+- Using the **Currency** button in the web report viewer will cause one additional version of the report to be generated, overriding the accounting currency if it wasn't previously specified. 
+Using the **Include all reporting currencies** button in Report Designer will cause additional versions of the report to be generated using translated data for each currency selected. 
+Note that this option should only be used if these versions are expected to be used since it will take additional resources to generate the additional reports. 
 
-For amounts being translated within Financial reporting, the following types of translation are available for use, as defined on each Main Account. 
+For amounts being translated within Financial reporting, the following types of translation are available for use, as defined on each main account. 
 
 | Translation type  |  Description |  Example rate calculation |   
 |---|---|---|
 | Current | Uses the last rate on or before the period specified. Typically used for Balance Sheet accounts  |  (Rate) |   
 | Weighted average  | Uses the weighted average rate for the period. Typically used for P&L accounts | ((Rate1 * Number of days in effect) + (Rate2 * Number of days in effect)) + …/ Number of days in the period  |   
-|  Average | This is a simpler average rate for the period. Typically used for P&L accounts  | (Sum of rates)/(number of rates)  |   
+|  Average | This is a simpler average rate for the period. Typically used for Profit and loss accounts  | (Sum of rates)/(number of rates)  |   
 | Transaction date (Historical)  | Uses the rate in effect on the posting date of the transaction. If no rate is available will use the closest previously entered rate. Typically used for Retained Earnings, Equity accounts and longer term fixed assets (for example, Land)  | (Rate)  |   
 
 
 ### Setup for Exchange rate type
-The exchange rate type defines the table of exchange rates and currencies to be used. Exchange rate type can be configured in multiple locations. 
+The exchange rate type defines the table of exchange rates and currencies to be used. The exchange rate type can be configured in multiple locations. 
 
-* Within the Main accounts form within General Ledger there is an option for Exchange rate type on the Financial reporting FastTab. 
-* You can also specify an override of an exchange rate type for a legal entity which will override the default behavior. 
-* If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.
+- Within the **Main accounts** page within General ledger there is an option for **Exchange rate type** on the **Financial reporting** FastTab. 
+- You can also specify an override of an exchange rate type for a legal entity which will override the default behavior. 
+- If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.
 
 ### Setup for Currency translation type
 The Currency translation type will determine how each main account is translated. Currency translation rate type can also be configured in multiple locations. 
-- Within the main accounts form within General ledger there is an option for Currency translation type on the Financial reporting FastTab. 
+- Within the **Main accounts** page within General ledger there is an option for **Currency translation type** on the **Financial reporting** FastTab. 
 - You can also specify an override of a currency translation rate type for a legal entity which will overide the default behavior. 
 
 
-### Setup for Retained Earnings
+### *Setup for Retained Earnings*
 Retained earnings accounts are special in regards to Currency Translation as it has several requirements:
 - Any retained earnings account must be assigned to the Retained Earnings main account category in the Main Accounts form to translate
 - If the default category was renamed, financial reporting is still expecting the original with the backing ID number of 29. 
