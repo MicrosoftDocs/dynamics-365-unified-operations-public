@@ -2,10 +2,10 @@
 # required metadata
 
 title: Preview features in Dynamics 365 Retail version 10.0.7
-description: This topic describes features that are in preview in Dynamics 365 Retail. 
+description: This topic describes features that are new and changed in Dynamics 365 Retail. 
 author: josaw1
 manager: AnnBe
-ms.date: 12/05/2019
+ms.date: 01/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.7
 # What's new and changed in Dynamics 365 Retail version 10.0.7
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
+
 
 This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.7. This version has a build number of 10.0.283, and is available as follows:
 
