@@ -75,7 +75,7 @@ To turn on the clienteling functionality in your environment, follow these steps
 
 1. In the **Feature management** workspace, filter the features by the **Retail and commerce** module.
 
-    ![Clienteling in the list of features for the Retail and commerce module](./media/Enable_clienteling.png "Clienteling in the list of features for the Retail and commerce module")
+    ![Clienteling in the list of features for the Commerce module](./media/Enable_clienteling.png "Clienteling in the list of features for the Retail and commerce module")
 
 2. Turn on the **Clienteling** feature by selecting **Enable now**.
 3. On the **Commerce Parameters** page, on the **Number sequence** tab, select the **Client book identifier** row. Then, in the **Number sequence code** field, select a number sequence. The system will use this number sequence to assign an ID to client books.
@@ -86,7 +86,7 @@ To turn on the clienteling functionality in your environment, follow these steps
     - Set the display order for these attributes. This display order determines which attributes should be shown on the customer card in the client book. A display order of 1 is considered higher than a display order of 2. Therefore, the attribute that has a display order of 1 will be shown before to the attribute that has a display order of 2.
 
     > [!NOTE]
-    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Turn on the integration of Customer Insights with Retail](#turn-on-the-integration-of-customer-insights-with-retail) section later in this topic.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
+    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Turn on the integration of Customer Insights with Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) section later in this topic.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
 
 6. On the **Commerce parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you just created.
 
