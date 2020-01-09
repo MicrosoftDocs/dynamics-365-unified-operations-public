@@ -223,8 +223,8 @@ Follow the steps in this section if you are also configuring for Commerce.
 
 5.  Reset Internet Information Services (IIS) by running **IISRESET** in an elevated **Command Prompt** window.
 6.  Update the Real-time service profile to use the new admin user.
-    1.  Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Real-time service profiles**.
-    2.  Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Real-time service profiles**.
+    1.  Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Real-time service profiles**.
+    2.  Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Commerce scheduler** &gt; **Real-time service profiles**.
     3.  Edit the JBB record so that it uses the user that you used earlier (for example, **administrator@contosoax7.onmicrosoft.com**).
     4.  Run CDX Job 1070 (Staff) for the default channel database.
     5.  Verify that the job succeeded by viewing the **Download Sessions** page on the client.
