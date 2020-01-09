@@ -46,7 +46,7 @@ Expense entry has been enhanced through the introduction of optical character re
     1. Open the **Expense management** workspace.
     2. On the **Receipts** tab, verify that unattached receipts exist. You can also upload receipts on the **Receipts** tab.
     3. On the **Expenses** tab, verify that unattached expenses exist. Typically, the expense administrator imports these expenses from the credit card provider.
-    4. Select **New expense report**. Notice that you can now add expenses and receipts when you create an expense. If you add both expenses and receipts, automatic matching of the receipts against the expenses is triggered.
+    4. Select **New expense report**. Notice that you can include expenses, and receipts, now as well, when you create an expense report. If you add both expenses and receipts, automatic matching of the receipts against the expenses is triggered.
 
 - **Create an expense, or match an expense from a receipt.**
 
@@ -75,15 +75,15 @@ In the **Feature management** workspace, turn on the following features:
 - Expense reports re-imagined
 - Auto-match and create expense from receipt
 
-When you turn on these features, the following actions occur:
+When you turn on these features the following actions occur:
 
-- The existing expense workspace is replaced with the new workspace.
+- The existing **Expense management** workspace is replaced with the new workspace.
 - A new menu item for expense field visibility is added.
-- No existing menu items for expense reports (the existing page) or expense report fields are removed.
+- You can still open the former **Expense reports** page by going to **Expense management > My expenses > Expense reports**.
 - Workflows and any approvals still take you to the existing expense reports page.
 - Receipts will be processed through Microsoft Azure Cognitive Services, and metadata will be extracted and added.
 - An option is added that lets you create an expense report that includes matched unattached receipts.
-- An option that is added to expense reports lets you create an expense line from a receipt or match to an existing expense line.
+- An option that is added to expense reports lets you create an expense line from a receipt, or attempts to match an existing receipt to an existing expense line.
 
 For more information about the Expense reports re-imagined feature, see [Expense reports reimagined](ExpenseWorkspaceNew.md).
 
