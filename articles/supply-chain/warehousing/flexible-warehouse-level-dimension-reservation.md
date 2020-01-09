@@ -121,7 +121,7 @@ For this scenario, you must have demo data installed, and you must use the **USM
 
 Create a new released product using the following configuration.
 
-  1. Set the product's three master data parameters using the below values:
+  1. Set the product's three master data parameters using these values:
       - In the **Storage dimension group** field, enter "Ware".
       - In the **Tracking dimension group** field, enter "Batch-Phy".
       - In the **Reservation hierarchy** field, enter "BatchFlex".
@@ -149,7 +149,7 @@ Create a new released product using the following configuration.
       >
       > If you reserve the quantity from the **Reservation** page, no specific batch will be reserved and the execution of the warehouse operations for this line will follow the rules applicable under the "Batch-below[location]" reservation policy.
 
-      The general working of and interactions with this page are the same as for items whose associated reservation hierarchy is of type "Batch-above[location]", with the exception of:
+      The general working of and interactions with this page are the same as for items that have associated reservation hierarchy of type "Batch-above[location]", with the exception of:
 
       -  The **Batch numbers committed to source line** tab displays the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the entire fulfilment cycle of the order line, including the warehouse processing stages. This is in contrast to the display of records in the **Overview** tab, where a regular order line reservation, as done for the dimensions above location level, is shown in the grid up to a point when warehouse work is created and after which the line reservation is taken over by the work entity and no longer displayed on the page. The **Batch numbers committed to source line** tab ensures that the sales order processor can view the batch numbers that were committed to the customer's order at any point in its lifecycle, up to invoicing.
 
@@ -164,47 +164,47 @@ Create a new released product using the following configuration.
       >
       > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, while 80 units are reserved at the site and warehouse level for any available batch. In this case, the warehouse management system will handle picking operations by two separate work lines.
 
-  7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory** Action Pane \> **View** \> **Transactions**:
+  7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory**  \> **View** \> **Transactions**.
 
       ![Order-committed reservation as an inventory transaction type](media/Inventory-transactions-for-order-committed-reservation.png)
 
-      Review the item's inventory transactions related to the sales order line reservation:
+      Review the item's inventory transactions related to the sales order line reservation.
 
-      - transaction with **Reference** type **Sales order** and **Issue** type **Reserved physical** represents the order line reservation for the inventory dimensions above location, which according to the item's reservation hierarchy are "Site", "Warehouse" and "Inventory status".
+      - A transaction with **Reference** type "Sales order" and **Issue** type "Reserved physical" represents the order line reservation for the inventory dimensions above location, which according to the item's reservation hierarchy are "Site", "Warehouse", and "Inventory status".
 
-      - transaction with **Reference** type **Order-committed reservation** and **Issue** type **Reserved physical** represents the order line reservation for the specific batch and all other inventory dimensions above it. In our example, those dimensions are "Batch number" and "Location". The latter happened to be "Bulk-001".
+      - A transaction with **Reference** type "Order-committed reservation" and **Issue** type "Reserved physical" represents the order line reservation for the specific batch and all other inventory dimensions above it. In our example, those dimensions are "Batch number" and "Location", where "Location" is "Bulk-001".
 
-  8. On the sales order header, click **Warehouse** Action Pane \> **Actions** \> **Release to warehouse**. The order line has now been waved, and load and work have been created.
+  8. On the sales order header, click **Warehouse** \> **Actions** \> **Release to warehouse**. The order line is now waved, and load and work are created.
 
 ### Review and process warehouse work with order-committed batch number
 
-  1. From the sales order lines action bar, click **Warehouse** \> **Work details**.
+  1. From the **Sales order lines** action bar, click **Warehouse** \> **Work details**.
 
-      The work that handles pick operation of batch quantities committed to sales order line has the following 3 characteristics:
+      The work that handles pick operation of batch quantities committed to the sales order line has the following characteristics:
 
-      1. To create work, the system uses work templates but not location directives. This means that all the standard settings that are defined for work template, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when a new work should be created. However, the rules that are associated with location directives for identifying pick and put locations are not considered. This is because the order-committed reservation already specifies all the inventory dimensions, including those at the warehouse storage level, so that the work inherits them without consulting location directives.
+      1. To create work, the system uses work templates but not location directives. All the standard settings that are defined for work templates, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when new work should be created. However, the rules that are associated with location directives for identifying pick and put locations are not considered. This is because the order-committed reservation already specifies all the inventory dimensions, including those at the warehouse storage level, so the work inherits them without consulting location directives.
 
-      2. The batch number is not displayed on the pick line (as is the case for the work line created for an item with "Batch-above[location]" hierarchy). Instead, specifications of the "from" batch number as well as all other storage dimensions are shown on the work line's Work inventory transaction, that are referenced from the associated inventory transactions:
+      2. The batch number is not displayed on the pick line (as is the case for the work line created for an item with "Batch-above[location]" hierarchy). Instead, specifications of the "from" batch number as well as all other storage dimensions are shown on the work line's Work inventory transaction, that are referenced from the associated inventory transactions, as shown in the image below.
 
       ![Warehouse inventory transaction for work originating from order-committed reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-      3. Once work is created, the item's inventory transaction of Reference type **Order-committed reservation** is removed, with the inventory transaction of **Reference** type **Work** now holding the physical reservation on all the quantity's inventory dimensions.
+      3. Once work is created, the item's inventory transaction of **Reference** type "Order-committed reservation" is removed, with the inventory transaction of **Reference** type "Work" now holding the physical reservation on all the quantity's inventory dimensions.
 
-      Once work is created, warehouse operations can proceed with handling its execution in a regular fashion, except that the instructions on the mobile device will prescribe the worker what specific batch number to pick. In the warehouse environments where locations are license plate-controlled, once at the location storing the same batch on multiple license plates, the worker can pick from/any license plate, provided it is not already reserved, for example, by another order-committed reservation or work that originates from such a reservation.
+      Once work is created, warehouse operations can proceed with handling its execution in a regular manner, except that the instructions on the mobile device will prescribe the worker the specific batch number to pick. In the warehouse environments where locations are license plate-controlled, once at the location storing the same batch on multiple license plates, the worker can pick from any license plate, provided it is not already reserved (for example, by another order-committed reservation or work that originates from such a reservation.)
 
-      To address the potential challenge where picking from the location as specified on the work line may turn out to be impractical, the warehouse operators can make use of:
+      To address the potential challenge where picking from the location as specified on the work line may turn out to be impractical, the warehouse operators can make use of one of the following:
 
-      - the standard **Override location** action on a mobile device (provided the warehouse worker's **Allow pick location override** setting is enabled), or
+      - The standard **Override location** action on a mobile device (provided the warehouse worker's **Allow pick location override** setting is enabled).
 
-      - the **Change location** action on the **Work list details** page to direct picking of the specific batch from a more convenient location.
+      - The **Change location** action on the **Work list details** page to direct picking of the specific batch from a more convenient location.
 
   2. From the mobile device, complete picking and putting the work.
 
-      The quantity 10 of batch number "B11" has now been picked for the sales order line and is placed in the "Baydoor" location, ready to be loaded onto the trick and dispatched to the customer's address.
+      The quantity 10 of batch number "B11" is now picked for the sales order line and is placed in the "Baydoor" location, ready to be loaded onto the trick and dispatched to the customer's address.
 
 ## Exception handling of warehouse work with order-committed batch number
 
-Warehouse work for picking order-committed batch number is subject to the same standard warehouse exception handling and actions as any other regular work. Generally, the open work and/or work line can be cancelled, interrupted due to Full user location situation, short-picked, and get updated due to a movement. Likewise, the picked quantity of the already completed work can be reduced or the work can be reversed. The key rule that is applied to all of these exception handling actions is that the batch number that was reserved for the customer can never be replaced with a different one, while its storage dimension – location and license plate – may change due to manual update by the user or automatic update by the system. The latter is based on the same random storage dimension assignment as applied when automatically reserving a specific batch without specifying storage dimensions.
+Warehouse work for picking order-committed batch number is subject to the same standard warehouse exception handling and actions as any other regular work. In general, the open work or work line can be cancelled, can be interrupted due to Full user location situation, can be short-picked, and can get updated due to a movement. Likewise, the picked quantity of the already completed work can be reduced or the work can be reversed. The key rule that is applied to all of these exception handling actions is that the batch number that was reserved for the customer can never be replaced with a different one, while its storage dimension (location and license plate) may change due to manual update by the user or automatic update by the system. The latter is based on the same random storage dimension assignment as applied when automatically reserving a specific batch without specifying storage dimensions.
 
 For example, let's review the scenario where the previously completed work is being unpicked by means of using the Reduce pick quantity function.
 
