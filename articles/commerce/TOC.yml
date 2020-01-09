@@ -376,6 +376,8 @@
             href: create-ecommerce-site.md
           - name: Associate an e-Commerce site with an online channel
             href: associate-site-online-store.md
+          - name: Manage robots.txt files
+            href: manage-robots-txt-files.md
           - name: Set up custom pages for user sign-ins
             href: custom-pages-user-logins.md
           - name: Add support for a content delivery network (CDN)
@@ -464,12 +466,24 @@
               href: enrich-product-page.md
             - name: Enrich a category landing page
               href: enrich-category-page.md
+            - name: Verify page content accessibility
+              href: verify-accessibility.md
           - name: Site navigation
             items:
             - name: Customize site navigation
               href: customize-site-navigation.md
             - name: Create a page URL
               href: create-page-URL.md
+        - name: Make your site compliant
+          items:
+          - name: Compliance overview
+            href: compliance-overview.md
+          - name: Accessibility features and capabilities
+            href: accessibility.md
+          - name: Cookie compliance
+            href: cookie-compliance.md
+          - name: Add a privacy policy page
+            href: add-privacy-page.md
         - name: Starter kit
           items: 
           - name: Starter kit overview

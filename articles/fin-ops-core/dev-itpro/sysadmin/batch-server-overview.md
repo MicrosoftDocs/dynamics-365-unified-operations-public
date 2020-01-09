@@ -3,7 +3,7 @@
 
 title: Batch processing and batch servers
 description: This topic describes batch processing and batch servers, and how to plan for their use.
-author: maertenm
+author: Peakerbl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 57201
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: maertenm
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
