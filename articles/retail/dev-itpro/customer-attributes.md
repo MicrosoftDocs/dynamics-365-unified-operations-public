@@ -35,20 +35,20 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-We extended the attribute framework in Retail headquarters to support attributes for customers, customer orders, cash-and-carry transactions, and call center orders.
+We extended the attribute framework in Headquarters to support attributes for customers, customer orders, cash-and-carry transactions, and call center orders.
 
 > [!NOTE]
 > The attributes are read-only. However, in the case of customer or order attributes, you can edit and set values at the level of the individual customer or order.
 
-The new customer attribute framework lets you use configurations to add new fields to the customer master record. Those fields then automatically appear on the **Customer add/edit** or **Customer details** screen in Point of Sale (POS) or Retail headquarters. After you configure the customer attribute group in the Retail parameters, POS and Retail headquarters automatically show the new attribute. No code change or customization is required. You can also use the screen layout designer to configure the customer card on the POS transaction screen so that it shows the customer attributes.
+The new customer attribute framework lets you use configurations to add new fields to the customer master record. Those fields then automatically appear on the **Customer add/edit** or **Customer details** screen in Point of Sale (POS) or Headquarters. After you configure the customer attribute group in the Commerce parameters, POS and Headquarters automatically show the new attribute. No code change or customization is required. You can also use the screen layout designer to configure the customer card on the POS transaction screen so that it shows the customer attributes.
 
 ## Why and when you should configure customer attributes
 
-If you want to add new fields to the customer master record, and capture the information in POS or Retail headquarters, you can use this feature. Previously, to add a new field to the customer master record and show it in POS and Retail headquarters, you had to create a new extension table in Retail headquarters and the channel database, and make inline modifications to Commerce runtime (CRT) and POS code. You had to write code in CRT and POS to read/write to the extension fields and show them in POS. You had to handle this in various POS views and scenarios, such as the **Customer details** screen and the **Customer** panel on the transaction screen. In addition, in CRT, you had to handle all insert, select, and update operations. However, the new functionality lets you complete all these steps through configuration. You don't have to write any code or create custom extension tables in Retail headquarters or the channel database.
+If you want to add new fields to the customer master record, and capture the information in POS or Headquarters, you can use this feature. Previously, to add a new field to the customer master record and show it in POS and Headquarters, you had to create a new extension table in Headquarters and the channel database, and make inline modifications to Commerce runtime (CRT) and POS code. You had to write code in CRT and POS to read/write to the extension fields and show them in POS. You had to handle this in various POS views and scenarios, such as the **Customer details** screen and the **Customer** panel on the transaction screen. In addition, in CRT, you had to handle all insert, select, and update operations. However, the new functionality lets you complete all these steps through configuration so you don't have to write any code or create custom extension tables.
 
 The first version of this functionality doesn't support **datetime** and **reference** attribute types. For those attribute types, you should use extension properties and custom controls to show the details in POS.
 
-## Configure customer attributes in POS and Retail headquarters
+## Configure customer attributes in POS and Headquarters
 
 ### Define attribute types
 
@@ -82,14 +82,14 @@ The first version of this functionality doesn't support **datetime** and **refer
 4. On the **Attributes** FastTab, select **Add** to add attributes to the attribute group. In the **Default value** field, you can enter a default value for the selected attributes.
 5. Select **Translate** to open the **Text translation** page, where you can enter the description, friendly name, and Help text for the attribute group in additional languages.
 
-### Link the attribute group to the customers in the Retail parameters
+### Link the attribute group to the customers
 
-1. Select **Retail** > **Headquarters setup** > **Parameters** > **Retail parameters**.
+1. Select **Retail and Commerce** > **Headquarters setup** > **Parameters** > **Commerce parameters**.
 2. On the **General** tab, in the **Customer attribute group** field, select the attribute group that should be shown in POS.
 
 ### Run the distribution jobs
 
-1. Select **Retail** > **Retail IT** > **Distribution schedule**.
+1. Select **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
 2. Select the **Customers** job (1010), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 3. Select the **Global configuration** job (1110), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 
@@ -106,9 +106,9 @@ The first version of this functionality doesn't support **datetime** and **refer
 
 ### Show customer attributes in the POS transaction screen
 
-#### Retail headquarters
+#### Headquarters
 
-1. Select **Retail** > **Channel setup** > **POS Setup** > **POS** > **Screen layouts**.
+1. Select **Retail and Commerce** > **Channel setup** > **POS Setup** > **POS** > **Screen layouts**.
 2. On the **screen layout** page, select **New** to create a new screen layout, or select an existing screen layout.
 3. Enter the ID and name for the screen layout.
 4. On the **Layout sizes** FastTab, select the **Add** button to add new layout sizes for the POS.
@@ -121,7 +121,7 @@ The first version of this functionality doesn't support **datetime** and **refer
 11. When the page for the **Customization - Customer** card appears, select the required attributes in the **Available columns** section, and then select the right arrow button (**>**) to move them to the **Selected columns** section. You can move the attributes up or down by selecting the **Up** or **Down** buttons.
 12. When you've finished, select **OK** to save your changes.
 13. Close the screen layout designer by selecting the **Close** button (**X**) in the upper-right corner. When you're prompted, select **Yes** to save your changes.
-14. Select **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+14. Select **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
 15. Select the **Registers** job (1090), and then, on the Action Pane, select **Run now**. When you're prompted, select **Yes**.
 
 #### POS
