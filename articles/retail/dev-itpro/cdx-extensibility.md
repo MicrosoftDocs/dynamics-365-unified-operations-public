@@ -126,8 +126,8 @@ If you created a new HQ table and a new channel database table, follow these ste
     >
     > When the initialization class runs, it looks for any extension that implements this handler. If an extension is found, the runtime will also initialize the custom information that is found in the resource file.
 
-9. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler >Initialize retail scheduler**.
-10. Run the CDX initialization by clicking the **OK** button on **Initialize retail scheduler** dialog.
+9. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler >Initialize commerce scheduler**.
+10. Run the CDX initialization by clicking the **OK** button on **Initialize commerce scheduler** dialog.
 
 ## Pull data from a new channel database table to a new HQ table by using a push job
 
@@ -274,7 +274,7 @@ The table extension on the Commerce side is already created in the sample. To cr
 5. Save the changes, and build your project.
 6. Right-click your project, and then select **Synchronize the database**.
 
-    > NOTE:
+    > [!NOTE]
     > As a best practice, the unique prefix is added to the new column names to help prevent future naming conflicts. A naming conflict can occur if another ISV creates a column that has the same name, or if Microsoft releases an update that uses a column that has the same name. Even though the extension table is created in a different AOT asset, the new columns are added to the original table in SQL.
 
 ### Extend the database on the channel side
