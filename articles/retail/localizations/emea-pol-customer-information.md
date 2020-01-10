@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.9
 
 This topic describes how you can handle customer information, such as the customer's VAT number, in Retail point of sale (POS) for Poland.
 
-You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and can be used for invoicing purposes.
+You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts and can be used for invoicing purposes.
 
 > [!NOTE]
 > This functionality is available in the version 10.0.8 and later of the Retail application.
@@ -44,13 +44,13 @@ You can specify the customer's VAT number when you create or edit a customer mas
 
 You must complete the following configuration to use this functionality:
 
-- Set up a registration type for VAT ID.
+- Set up a registration type for VAT number.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Configure retail channel components.
 
-### Set up a registration type for VAT ID
+### Set up a registration type for VAT number
 
 You need to create an appropriate registration type for VAT number and link it to the **VAT ID** registration category to allow specifying VAT numbers in POS. For more information about how to work with registration types and registration IDs, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
 
@@ -132,7 +132,7 @@ The following examples show how to work with customer information in POS for Pol
 1. Select **Add customer information**, and then select **Copy from transaction customer**.
 1. Verify the customer's VAT number, and then select **OK**.
 1. Select **Add customer information**, and then select **Clear** to clear the customer information from the transaction.
-1. Select **Add customer information**, and then select **Enter Manually**.
+1. Select **Add customer information**, and then select **Enter manually**.
 1. Specify the customer's VAT number, and then select **OK**.
 1. Register payments for the transaction, and then finalize the transaction.
 1. Verify that the printed receipt contains the customer's VAT number.
