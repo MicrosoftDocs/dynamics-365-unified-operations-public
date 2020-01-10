@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce runtime (CRT) services
-description: This topic describes the Commerce runtime (CRT) services, which are a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionality.
+description: This topic describes the Commerce runtime (CRT) services, which are a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality.
 author: mugunthanm 
 manager: AnnBe
 ms.date: 05/23/2018
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: AX 8.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the retail channel and pricing functionality. To add or modify any business logic, you should customize CRT. Retail Modern POS or Cloud POS calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to retail point of sale. Retail point of sale is like a thin client, all the business logic should be done in CRT.
+Commerce runtime (CRT) is a collection of portable .NET libraries that contain the core business logic for the commerce channel and pricing functionality. To add or modify any business logic, you should customize CRT. Retail Modern POS or Cloud POS calls CRT to request that it perform business logic. CRT processes the request and then sends the response back to point of sale. Retail point of sale is like a thin client, all the business logic should be done in CRT.
 
-A CRT service is a group of requests/responses. Any time that you do something in POS, POS sends a request to Retail server, and Retail server calls CRT. CRT processes the request and sends back the response.
+A CRT service is a group of requests/responses. Any time that you do something in POS, POS sends a request to Commerce Scale Unit, and Commerce Scale Unit calls CRT. CRT processes the request and sends back the response.
 
 This topic shows some important requests/responses that you can customize for your business scenario.
 
@@ -60,7 +60,7 @@ Each CRT service contains one or more requests/responses. For example, the Custo
 
 ### Default CRT services
 
-Many services in CRT support the functionality of the retail channel and store operations. You can add your own services or extend the existing services. The following table describes some of the services that you might customize for various business services.
+Many services in CRT support the functionality of the channel and store operations. You can add your own services or extend the existing services. The following table describes some of the services that you might customize for various business services.
 
 For more information about each service, see the CRT request/response document in the Retail software development kit (SDK), at …\\RetailSDK\\Code\\Documents\\CommerceRuntimeMessages.chm.
 
@@ -256,7 +256,7 @@ The Address service supports the following requests/responses for various extens
 
 | Request                                                     | Purpose                                                                                                    |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| GetSalesTransactionsServiceRequest                          | This request gets the sales transaction from Retail headquarters.                                          |
+| GetSalesTransactionsServiceRequest                          | This request gets the sales transaction from Headquarters.                                          |
 | GetCartServiceRequest                                       | This request gets the cart from the sales transaction table by using the cart ID.                          |
 | CalculateSalesTransactionServiceRequest                     | This request calculates the various sales transaction totals, based on the specified calculation mode.     |
 | CalculateEstimatedShippingAuthorizationAmountServiceRequest | This request calculates the estimated shipping authorization amount on the transaction.                    |
@@ -266,7 +266,7 @@ The Address service supports the following requests/responses for various extens
 
 | Request                               | Purpose                                                                                                              |
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| UpdateCouponCodesOnCartServiceRequest | This request updates the coupon codes status in Retail headquarters, based on the coupons that are used in the cart. |
+| UpdateCouponCodesOnCartServiceRequest | This request updates the coupon codes status in Headquarters, based on the coupons that are used in the cart. |
 | ValidateCouponCodesServiceRequest     | This request validates the coupon code that is entered in the transactions.                                          |
 | UpdateCouponUsageServiceRequest       | This request updates coupon usage for the transaction.                                                               |
 
