@@ -39,7 +39,7 @@ This topic covers cart modules and describes how to add them to site pages in Mi
 
 A cart module is used to display items that are added to the cart before a customer proceeds to checkout. For example, it includes all the items that have been added to the cart and an order summary. It also allows the customer to apply or remove promotional codes.
 
-The cart module supports signed-in checkout and guest checkout, as well as a "Back to shopping" link. The route for the "Back to shopping" link can be configured in **Site Settings \> Extensibility \> Routes**.
+The cart module supports signed-in checkout and guest checkout, as well as a "Back to shopping" link. The route for the "Back to shopping" link can be configured in **Site Settings \> Extensions \> Routes**.
 
 The cart module renders data based on the cart ID. The cart ID is a browser cookie that is available throughout the site.
 
@@ -54,7 +54,7 @@ The cart module has a **Heading** property, which for example can be set to "Sho
 
 ## Cart module settings
 
-Cart modules have the following settings that can be configured at **Site Settings \> Extensibility**:
+Cart modules have the following settings that can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This specifies the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
