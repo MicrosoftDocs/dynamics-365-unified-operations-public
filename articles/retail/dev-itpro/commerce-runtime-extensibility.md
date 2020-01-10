@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce runtime (CRT) and Retail Server extensibility
+title: Commerce runtime (CRT) and Server extensibility
 description: This topic describes various ways that you can extend the commerce runtime (CRT) and Commerce Scale Unit. It explains the concept of extension properties, and shows how to add them to a CRT entity both with and without persistence. It also shows how to add an action to a Commerce Scale Unit controller and add a controller for an entity.
 author: mugunthanm
 manager: AnnBe
