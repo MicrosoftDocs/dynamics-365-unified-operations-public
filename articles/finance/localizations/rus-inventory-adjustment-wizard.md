@@ -1,9 +1,9 @@
----
-title: Inventory adjustment wizard
----
+Inventory adjustment wizard
+============
+
 
 Introduction
-============
+-------------
 
 The **Inventory adjustment** wizard is used to adjust on-hand inventory or
 inventory transactions. Before you adjust on-hand inventory, it must be closed.
@@ -28,7 +28,7 @@ the ledger account. You can select the set of dimensions to determine the
 account balance.
 
 Preliminary setup
-=================
+------------------
 
 Before you can adjust item cost by using miscellaneous charges and the
 **Inventory adjustment** wizard, verify that you've completed the prerequisites
@@ -40,7 +40,7 @@ that you've completed the prerequisites in the Inventory valuation in secondary
 currency (here will be link to the topic from content deliverable 148936) topic.
 
 Adjust item cost by using the Inventory adjustment wizard
-=========================================================
+----------------------------------------------------------
 
 1.  Go to **Inventory management \> Periodic tasks \> Closing and adjustment**
     or **Inventory management \> Periodic tasks \> Closing and adjustment in
@@ -186,8 +186,7 @@ Adjust item cost by using the Inventory adjustment wizard
 To cancel adjustments that are done by the wizard, on the **Closing and
 adjustment** page, on the Action Pane, select **Cancellation**.
 
-Method for calculating an adjustment to a fixed cost price
-----------------------------------------------------------
+### Method for calculating an adjustment to a fixed cost price
 
 1.  Open the **Inventory adjustment** wizard, select the method of adjustment,
     and select on-hand items or item transactions, as described in the [Adjust
@@ -206,8 +205,7 @@ Method for calculating an adjustment to a fixed cost price
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
-Method for calculating an adjustment by using an amount
--------------------------------------------------------
+### Method for calculating an adjustment by using an amount
 
 1.  Open the **Inventory adjustment** wizard, select the method of adjustment,
     and select on-hand items or item transactions, as described in the [Adjust
@@ -231,8 +229,7 @@ Method for calculating an adjustment by using an amount
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
-Method for calculating an adjustment to a value
------------------------------------------------
+### Method for calculating an adjustment to a value
 
 1.  Open the **Inventory adjustment** wizard, select the method of adjustment,
     and select on-hand items or item transactions, as described in the [Adjust
@@ -256,8 +253,7 @@ Method for calculating an adjustment to a value
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
-Method for calculating a percentage adjustment
-----------------------------------------------
+### Method for calculating a percentage adjustment
 
 1.  Start the **Inventory adjustment** wizard, select the method of adjustment,
     and select on-hand items or item transactions, as described in the [Adjust
@@ -282,8 +278,7 @@ Method for calculating a percentage adjustment
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
-Method for calculating adjustment amounts from a ledger account
----------------------------------------------------------------
+### Method for calculating adjustment amounts from a ledger account
 
 This method lets you determine the adjustment amount based on the balance of the
 main account on a specific date. The adjustment amount can be all balances and
@@ -338,7 +333,7 @@ dimensions only to determine the amount of the adjustment. It doesn't
 automatically close the balance on the dimensions at the item cost price of the
 inventory.
 
-### Example
+#### Example
 
 On account 26.100, the **Department** dimension accumulates the amounts that you
 want to allocate to the cost of inventory that is accounted for in specific
