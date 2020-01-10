@@ -60,7 +60,7 @@ You need to create an appropriate registration type for lottery code and link it
 
 ### Add the "Add customer information" operation to screen layouts
 
-The "Add customer information" operation can be used to add customer information, such as the lottery code, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be entered manually.
+The "Add customer information" operation can be used to add customer information, such as the lottery code, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
 
 On the **Button grids** page, select the button grid where the operation should appear, and open the Button grid designer. Add a new button, and then, in the **Action** field, select **Add customer information**. For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
@@ -106,7 +106,7 @@ To make the functionality that is specific to Italy available, you must configur
 
 ## Example scenarios
 
-The following examples show how to work with customer information in POS for Italy.
+The following examples demonstrate how to work with customer information in POS for Italy.
 
 ### Scenario 1: Make a sale to an anonymous customer
 
@@ -122,17 +122,17 @@ The following examples show how to work with customer information in POS for Ita
 1. Sign in to POS.
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
-1. Specify the new customer's attributes. 
-1. Select **Create a new address**. Specify new customer's contact information and an address.
+1. Specify the new customer's attributes. In the **Fiscal code** field, enter the customer's fiscal code.
+1. Select **Create a new address**. Specify the new customer's contact information and an address.
 1. In the **Lottery code** field, enter the customer's lottery code.
-1. Save the customer record, and add the customer to the transaction.
+1. Save the customer record and the customer address record, and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. In the **Enter customer information** dialog box, select **Yes**, and then select **Copy from transaction customer**.
+1. As the inquiry for customer information is enabled and customer information is not added to the transaction, the **Enter customer information** dialog box will be opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's lottery code, and then select **OK**.
 1. Verify that the printed receipt contains the customer's lottery code.
 
 > [!NOTE]
-> If you have to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
+> If you need to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
 
 ### Scenario 3: Change the customer information for a sale to a named customer
 
