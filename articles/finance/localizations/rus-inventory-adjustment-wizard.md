@@ -174,7 +174,7 @@ Adjust item cost by using the Inventory adjustment wizard
                 to **No**, the adjustment is assigned to the account that is specified
                 in the **Corr. account** field.
                 
-![](media/5%20Posting.png)
+     ![](media/5%20Posting.png)
 
 15.  Select **Next**.
 
