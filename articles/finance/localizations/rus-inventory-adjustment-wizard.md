@@ -198,7 +198,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 3.  On the **Adjustment to fixed cost price** page, in the **Price** field,
     enter the fixed cost price, and then select **Next**.
 
-![](media/6%20Adjustment%20to%20fixed%20cost%20price.png)
+    ![](media/6%20Adjustment%20to%20fixed%20cost%20price.png)
 
 4.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
@@ -220,7 +220,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
     -   In the **Allocation principle** field, select **Value** or **Quantity**.
 
-![](media/7%20Adjustment%20with%20amount.png)
+    ![](media/7%20Adjustment%20with%20amount.png)
 
 4.  Select **Next**.
 
@@ -244,7 +244,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
     -   In the **Allocation principle** field, select **Value** or **Quantity**.
 
-![](media/8%20Adjustment%20to%20value.png)
+    ![](media/8%20Adjustment%20to%20value.png)
 
 4.  Select **Next**.
 
@@ -269,7 +269,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
     -   In the **Adjust** field, select **Positive on-hand inventory** or **On-hand
     inventory total**.
 
-![](media/9%20Percentage%20adjustment.png)
+    ![](media/9%20Percentage%20adjustment.png)
 
 4.  Select **Next**.
 
@@ -310,7 +310,7 @@ warehouse maintenance costs, on the item cost price of inventory.
         the account balance from. This field is available only if the **Balance from
         ledger account and dimensions** option is selected.
 
-![](media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    ![](media/10%20Balance%20from%20ledger%20account%20or%20dimensions.png)
 
 4.  Select **Next**.
 
@@ -319,7 +319,7 @@ warehouse maintenance costs, on the item cost price of inventory.
 
 6.  In the **Allocation principle** field, select **Value** or **Quantity**.
 
-![](media/11%20Balance%20from%20ledger%20account%20or%20dimensions.png)
+    ![](media/11%20Balance%20from%20ledger%20account%20or%20dimensions.png)
 
 7.  Select **Next**.
 
