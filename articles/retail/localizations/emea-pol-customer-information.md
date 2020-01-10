@@ -33,41 +33,41 @@ ms.dyn365.ops.version: 10.0.9
 
 ## Introduction
 
-This topic describes how you can handle customer information, such as the customer's VAT number (NIP), in Retail point of sale (POS) for Poland.
+This topic describes how you can handle customer information, such as the customer's VAT number, in Retail point of sale (POS) for Poland.
 
-You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify the VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and can be used for the invoicing purposes.
+You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and can be used for invoicing purposes.
 
 > [!NOTE]
-> This functionality is available in version 10.0.9 and later of the Retail apps.
+> This functionality is available in the version 10.0.8 and later of the Retail application.
 
 ## Setup
 
 You must complete the following configuration to use this functionality:
 
-- Add the "Add customer information" operation to screen layouts.
+- Set up a registration type for VAT ID.
+- Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
-- Set up registration type for VAT number.
 - Set up receipt formats.
 - Configure retail channel components.
 
-### Add the "Add customer information" operation to screen layouts
+### Set up a registration type for VAT ID
 
-The "Add customer information" operation can be used to add customer information, such as VAT number, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or entered manually.
+You need to create an appropriate registration type for VAT number and link it to the **VAT ID** registration category to allow specifying VAT numbers in POS. For more information about how to work with registration types and registration IDs, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
+
+> [!WARNING]
+> If a registration type is not created or not linked to the **VAT ID** registration category, an error will be generated in POS when VAT number is populated for a customer address. 
+
+### Add the Add customer information operation to screen layouts
+
+The **Add customer information** operation can be used to add customer information, such as VAT number, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
 
 On the **Button grids** page, select the button grid where the operation should appear, and open the Button grid designer. Add a new button, and then, in the **Action** field, select **Add customer information**. For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
 ### Activate the inquiry for customer information
 
-If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the "Add customer information" operation.
+If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
 To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
-
-### Set up registration type for VAT number
-
-Set up the appropriate registration type and registration category for the VAT id type to allow adding the VAT number in POS. For more information about how to work with Registration Id, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
-
-> [!WARNING]
-> The VAT number save error will be gotten in POS if the Registration Type does not be set up.
 
 ### Set up receipt formats
 
@@ -80,7 +80,7 @@ On the **Language text** page, on the **POS** tab, add the following records for
 
 | Language ID | Text ID | Text                |
 |-------------|---------|---------------------|
-| en-US       | 900001  | Vat number          |
+| en-US       | 900001  | VAT number          |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt formats. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
@@ -113,15 +113,16 @@ The following examples show how to work with customer information in POS for Pol
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
 1. Specify the new customer's attributes. 
-1. Select **Create a new address**. Specify the new customer's contact information and address. In the **VAT number** field, enter the customer's VAT number.
-1. Save the customer record, and add the customer to the transaction.
+1. Select **Create a new address**. Specify the new customer's contact information and an address.
+1. In the **VAT number** field, enter the customer's VAT number.
+1. Save the customer record and the customer address record and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. In the **Enter customer information** dialog box, select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's VAT number, and then select **OK**.
 1. Verify that the printed receipt contains the customer's VAT number.
 
 > [!NOTE]
-> If you have to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
+> If you need to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
 
 ### Scenario 3: Change the customer information for a sale to a named customer
 
@@ -143,7 +144,7 @@ This section provides deployment guidance for enabling customer information mana
 > [!NOTE]
 > Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 >
-> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customer NIP on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
+> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customers' AT numbers on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
 
 ### Update customizations
 
