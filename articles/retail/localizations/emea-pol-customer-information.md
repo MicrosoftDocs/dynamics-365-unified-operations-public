@@ -117,7 +117,7 @@ The following examples show how to work with customer information in POS for Pol
 1. In the **VAT number** field, enter the customer's VAT number.
 1. Save the customer record and the customer address record and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. In the **Enter customer information** dialog box, select **Yes**, and then select **Copy from transaction customer**.
+1. As the inquiry for customer information is enabled and customer information is not added to the transaction, the **Enter customer information** dialog box will be opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's VAT number, and then select **OK**.
 1. Verify that the printed receipt contains the customer's VAT number.
 
