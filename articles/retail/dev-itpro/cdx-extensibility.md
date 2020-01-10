@@ -39,7 +39,7 @@ CDX is a system that transfers data between Commerce Headquarters (HQ) and chann
 + Configure all the custom jobs and subjobs by using the configuration user interface (UI) for CDX.
 + Extend the Commerce initialization class by using the extension points that are provided to support custom jobs and subjobs for both push and pull.
 
-The advantage of using the Commerce initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the retail CDX initialization by using the **Initialize retail scheduler** dialog box from **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
+The advantage of using the Commerce initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the CDX initialization by using the **Initialize commerce scheduler** dialog box from **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
 
 There are various scenarios for data transfer between HQ and the channel database:
 
