@@ -67,7 +67,7 @@ Removing or changing the order of buy box product properties and action controls
 
 ## Buy box module settings
 
-Buy box modules have three settings that can be configured at **Site Settings \> Extensibility**:
+Buy box modules have three settings that can be configured at **Site Settings \> Extensions**:
 
 - **Maximum quantity** – This specifies the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
