@@ -142,7 +142,7 @@ The following examples demonstrate how to work with customer information in POS 
 1. Select **Add customer information**, and then select **Copy from transaction customer**.
 1. Verify the customer's lottery code, and then select **OK**.
 1. Select **Add customer information**, and then select **Clear** to clear the customer information from the transaction.
-1. Select **Add customer information**, and then select **Enter Manually**.
+1. Select **Add customer information**, and then select **Enter manually**.
 1. Specify the customer's lottery code, and then select **OK**.
 1. Register payments for the transaction, and then finalize the transaction.
 1. Verify that the printed receipt contains the customer's lottery code.
