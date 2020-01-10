@@ -127,7 +127,9 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments form in the row definition
 
-*When you enter the row that will display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting will calculate this difference and put it in the desired row.* A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected. 
+*Original:* When you enter the row that will display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting will calculate this difference and put it in the desired row. A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected. 
+
+*Draft revision:* Financial reporting will calculate the amount of the rounding adjustments difference and enter it in the row that you select, such as the Total assets or the Total liabilities and equities row, based on the threshold that you’re comfortable with. A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected.
  
 2. Create a single line with all accounts to calculate the CTA 
 
