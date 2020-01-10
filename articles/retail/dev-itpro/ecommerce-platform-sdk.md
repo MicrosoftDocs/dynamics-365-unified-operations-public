@@ -69,7 +69,9 @@ We recommend that you put the SDK in a source control system such as Visual Stud
 
 e-Commerce websites need to enable anonymous access. This is available as a web.config file in the Commerce Scale Unit web.config under app settings. Please ensure that this is enabled to have the website work. 
 
-`&lt;add key="IsAnonymousEnabled" value="true" /&gt;`
+`
+add key="IsAnonymousEnabled" value="true"
+`
 
 ### Externally accessing the ASP.net website
 
