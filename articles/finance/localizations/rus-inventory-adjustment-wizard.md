@@ -71,7 +71,8 @@ Adjust item cost by using the Inventory adjustment wizard
     transactions that are selected for adjustment. Select the ellipsis button
     (**…**), and then select **Print** to print the list of lines for
     adjustment.
-
+    
+    ![](media/1%20Selection%20result.png)
 
 8.  Select **Next**.
 
@@ -101,7 +102,8 @@ Adjust item cost by using the Inventory adjustment wizard
         calculating adjustment amounts from a ledger
         account](#method-for-calculating-adjustment-amounts-from-a-ledger-account)
         section.)
-
+        
+     ![](media/1%20Selection%20result.png)
 
 10.  Select **Next**.
 
@@ -117,11 +119,14 @@ Adjust item cost by using the Inventory adjustment wizard
         >   code** page. Then, in the **Charges code** field, select the charges
         >   code for a line. To apply the charges code that you entered to all
         >   lines, set the **Apply to all** option to **Yes**.
+        
+        ![](media/1%20Selection%20result.png)
 
     -   In the **Amount of allocation** field, you can manually edit allocation
     amounts, except the amounts that are calculated by using the **From ledger
     account** method. When you manually edit this field, the allocation amount
     must be either negative for all lines or positive for all lines.
+        ![](media/1%20Selection%20result.png)
 
 13.  Select **Next**.
 
@@ -167,6 +172,7 @@ Adjust item cost by using the Inventory adjustment wizard
                 the **Corr. account profit/loss** option on the **Posting** page is set
                 to **No**, the adjustment is assigned to the account that is specified
                 in the **Corr. account** field.
+![](media/1%20Selection%20result.png)
 
 15.  Select **Next**.
 
@@ -190,7 +196,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 3.  On the **Adjustment to fixed cost price** page, in the **Price** field,
     enter the fixed cost price, and then select **Next**.
 
-![](media/4fb71bb1e3c409cba2bedaa4bd663cd9.png)
+![](media/1%20Selection%20result.png)
 
 4.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
@@ -212,7 +218,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
     -   In the **Allocation principle** field, select **Value** or **Quantity**.
 
-![A screenshot of a cell phone Description automatically generated](media/f0cf82d020663276f898d5748db5efc5.png)
+![](media/1%20Selection%20result.png)
 
 4.  Select **Next**.
 
@@ -236,7 +242,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
     -   In the **Allocation principle** field, select **Value** or **Quantity**.
 
-![](media/dd56e5c29cfd9fa72890488c6f165f59.png)
+![](media/1%20Selection%20result.png)
 
 4.  Select **Next**.
 
@@ -261,7 +267,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
     -   In the **Adjust** field, select **Positive on-hand inventory** or **On-hand
     inventory total**.
 
-![](media/844611f57dd176f47802e90f2bf1d523.png)
+![](media/1%20Selection%20result.png)
 
 4.  Select **Next**.
 
@@ -302,7 +308,7 @@ warehouse maintenance costs, on the item cost price of inventory.
         the account balance from. This field is available only if the **Balance from
         ledger account and dimensions** option is selected.
 
-![](media/476aa480b8b643bcc4fdfd84e3cfa0f7.png)
+![](media/1%20Selection%20result.png)
 
 4.  Select **Next**.
 
@@ -311,7 +317,7 @@ warehouse maintenance costs, on the item cost price of inventory.
 
 6.  In the **Allocation principle** field, select **Value** or **Quantity**.
 
-![](media/df672e4fda022367c23dfbc4bc0cc2ea.png)
+![](media/1%20Selection%20result.png)
 
 7.  Select **Next**.
 
