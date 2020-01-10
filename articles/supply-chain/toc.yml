@@ -1095,6 +1095,8 @@
           href: master-planning/safety-stock-replenishment.md
         - name: Delays
           href: master-planning/delays.md
+        - name: Cancel a master planning job
+          href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
         - name: Action messages
@@ -1511,6 +1513,8 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
+        - name: Use data entities
+          href: pim/data-entities.md
         - name: Product lifecycle state
           items:
           - name: Product lifecycle state overview

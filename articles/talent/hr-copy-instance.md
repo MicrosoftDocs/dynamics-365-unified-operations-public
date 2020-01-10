@@ -5,7 +5,7 @@ title: Copy a Core HR instance
 description: This topic explains how to copy the database for Microsoft Dynamics 365 Talent - Core HR to a sandbox environment.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: HcmACACoverageGroup
 # ROBOTS: 
-audience: Admin
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: anbichse
 ms.search.scope: Core, Talent
