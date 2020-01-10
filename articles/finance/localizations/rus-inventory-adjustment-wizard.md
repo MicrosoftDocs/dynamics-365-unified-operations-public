@@ -152,23 +152,21 @@ Adjust item cost by using the Inventory adjustment wizard
             field, depending on the account that an adjustment should be assigned to
             during posting:
 
-                -   If the miscellaneous charges code is entered on the item line, the
+            -   If the miscellaneous charges code is entered on the item line, the
                 adjustment is assigned to the offset account that is set up for the
                 miscellaneous charges code.
 
-                -   If the miscellaneous charges code isn't entered on the item line, and
+            -   If the miscellaneous charges code isn't entered on the item line, and
                 the **Corr. account profit/loss** option on the **Posting** page is set
                 to **Yes**, the adjustment is assigned in the standard manner to the
                 offset profit or loss account that is set up on the **Inventory** tab of
                 the **Posting** page (**Inventory management \> Setup \> Posting \>
                 Posting**).
 
-                -   If the miscellaneous charges code isn't entered on the item line, and
+            -   If the miscellaneous charges code isn't entered on the item line, and
                 the **Corr. account profit/loss** option on the **Posting** page is set
                 to **No**, the adjustment is assigned to the account that is specified
                 in the **Corr. account** field.
-
-![](media/da40f85b78957e86641be1cdc812f46a.png)
 
 15.  Select **Next**.
 
