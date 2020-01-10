@@ -53,67 +53,66 @@ Adjust item cost by using the Inventory adjustment wizard
 4.  On the **Method of cost value adjustment** page, select the method of
     adjustment:
 
--   **On-hand** – Adjust on-hand inventory.
+    -   **On-hand** – Adjust on-hand inventory.
 
--   **Transactions** – Adjust transactions.
+    -   **Transactions** – Adjust transactions.
 
-1.  Select **Next**. Either the **Select on-hand inventory** page or the
+5.  Select **Next**. Either the **Select on-hand inventory** page or the
     **Adjust transactions** page appears, depending on the method of adjustment
     that you selected.
 
-2.  Specify a selection criterion, and then select **OK**.
+6.  Specify a selection criterion, and then select **OK**.
 
     >   *Note:* If you know that both positive and negative adjustments will be
     >   made during the cost adjustment, this procedure should be completed in
     >   two separate stages: positive adjustment and negative adjustment.
 
-3.  On the **Selection result** page, you can view the on-hand items or item
+7.  On the **Selection result** page, you can view the on-hand items or item
     transactions that are selected for adjustment. Select the ellipsis button
     (**…**), and then select **Print** to print the list of lines for
     adjustment.
 
 ![](media/4ec7014c86f09b7c3febd16be8037f79.png)
 
-1.  Select **Next**.
+8.  Select **Next**.
 
-2.  On the **Functions for calculating adjustment amounts** page, select the
+9.  On the **Functions for calculating adjustment amounts** page, select the
     method for calculating adjustment amounts:
 
--   **Item cost price**
+    -   **Item cost price**
 
--   **Fixed cost price** (For more information, see the [Method for calculating
-    an adjustment to a fixed cost
-    price](#method-for-calculating-an-adjustment-to-a-fixed-cost-price)
-    section.)
+    -   **Fixed cost price** (For more information, see the [Method for calculating
+        an adjustment to a fixed cost
+        price](#method-for-calculating-an-adjustment-to-a-fixed-cost-price)
+        section.)
 
--   **Amount** (For more information, see the [Method for calculating an
-    adjustment by using an
-    amount](#method-for-calculating-an-adjustment-by-using-an-amount) section.)
+    -   **Amount** (For more information, see the [Method for calculating an
+        adjustment by using an
+        amount](#method-for-calculating-an-adjustment-by-using-an-amount) section.)
 
--   **Value** (For more information, see the [Method for calculating an
-    adjustment to a value](#method-for-calculating-an-adjustment-to-a-value)
-    section.)
+    -   **Value** (For more information, see the [Method for calculating an
+        adjustment to a value](#method-for-calculating-an-adjustment-to-a-value)
+        section.)
 
--   **Percent** (For more information, see the [Method for calculating a
-    percentage adjustment](#method-for-calculating-a-percentage-adjustment)
-    section.)
+    -   **Percent** (For more information, see the [Method for calculating a
+        percentage adjustment](#method-for-calculating-a-percentage-adjustment)
+        section.)
 
--   **From ledger account** (For more information, see the [Method for
-    calculating adjustment amounts from a ledger
-    account](#method-for-calculating-adjustment-amounts-from-a-ledger-account)
-    section.)
+    -   **From ledger account** (For more information, see the [Method for
+        calculating adjustment amounts from a ledger
+        account](#method-for-calculating-adjustment-amounts-from-a-ledger-account)
+        section.)
 
 ![](media/939b076bb8deebe5f55dfe42331ede00.png)
 
-1.  Select **Next**.
+10.  Select **Next**.
 
-2.  Set the parameters for the selected method of adjustment. The parameters
+11.  Set the parameters for the selected method of adjustment. The parameters
     vary, depending on the method that you selected.
 
-3.  On the **Results of allocation** page, you can review the allocation
+12. On the **Results of allocation** page, you can review the allocation
     results.
-
--   In the **Charges code** field, select a charge code for a line.
+    -   In the **Charges code** field, select a charge code for a line.
 
     >   *Note:* Alternatively, select the ellipsis button (**…**), and then
     >   select **Functions \> Charges code** to open the **Change Misc. charge
@@ -121,43 +120,43 @@ Adjust item cost by using the Inventory adjustment wizard
     >   code for a line. To apply the charges code that you entered to all
     >   lines, set the **Apply to all** option to **Yes**.
 
-![](media/bbac0f84c45290ea37b9f045ec9c0c40.png)
+  ![](media/bbac0f84c45290ea37b9f045ec9c0c40.png)
 
--   In the **Amount of allocation** field, you can manually edit allocation
-    amounts, except the amounts that are calculated by using the **From ledger
-    account** method. When you manually edit this field, the allocation amount
-    must be either negative for all lines or positive for all lines.
+   -   In the **Amount of allocation** field, you can manually edit allocation
+   amounts, except the amounts that are calculated by using the **From ledger
+   account** method. When you manually edit this field, the allocation amount
+   must be either negative for all lines or positive for all lines.
 
-![](media/04409ee027a43182032c62435503d26b.png)
+  ![](media/04409ee027a43182032c62435503d26b.png)
 
-1.  Select **Next**.
+13.  Select **Next**.
 
-2.  On the **Posting** page, specify the details for posting the adjustment:
+14. On the **Posting** page, specify the details for posting the adjustment:
 
--   In the **Adjustment date** field, specify the date of the adjustment.
+    -   In the **Adjustment date** field, specify the date of the adjustment.
 
--   Set the **Storno** option to **Yes** to post vouchers to the general ledger
-    as storno. This setting of this option can be changed only when the **Amount
-    of allocation** value is negative. If the **Amount of allocation** value is
-    negative, and the **Storno** option is set to **No**, the system posts the
-    adjustment voucher as a reversal.
+    -   Set the **Storno** option to **Yes** to post vouchers to the general ledger
+        as storno. This setting of this option can be changed only when the **Amount
+        of allocation** value is negative. If the **Amount of allocation** value is
+        negative, and the **Storno** option is set to **No**, the system posts the
+        adjustment voucher as a reversal.
 
--   In the **Specification** field, select how transaction adjustments should be
-    posted:
+    -   In the **Specification** field, select how transaction adjustments should be
+        posted:
 
-    -   **Total** – Adjustments are posted for all items that have the same
-        settings in the posting profile.
+       -   **Total** – Adjustments are posted for all items that have the same
+            settings in the posting profile.
 
-    -   **Item group** – Adjustments are posted for all items that have the same
-        item group.
+       -   **Item group** – Adjustments are posted for all items that have the same
+            item group.
 
-    -   **Item number** – Adjustments are posted for each item.
+       -   **Item number** – Adjustments are posted for each item.
 
--   In the **Note** field, enter a note for the adjustment.
+    -   In the **Note** field, enter a note for the adjustment.
 
--   Set the **Corr. account profit/loss** option and the **Corr. account**
-    field, depending on the account that an adjustment should be assigned to
-    during posting:
+    -   Set the **Corr. account profit/loss** option and the **Corr. account**
+        field, depending on the account that an adjustment should be assigned to
+        during posting:
 
     -   If the miscellaneous charges code is entered on the item line, the
         adjustment is assigned to the offset account that is set up for the
@@ -177,9 +176,9 @@ Adjust item cost by using the Inventory adjustment wizard
 
 ![](media/da40f85b78957e86641be1cdc812f46a.png)
 
-1.  Select **Next**.
+15.  Select **Next**.
 
-2.  On the **Finish** page, select the **Show ledger voucher list** check box to
+16.  On the **Finish** page, select the **Show ledger voucher list** check box to
     show the list of ledger vouchers that are posted, and then select **Finish**
     to post the adjustment.
 
@@ -201,7 +200,7 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
 ![](media/4fb71bb1e3c409cba2bedaa4bd663cd9.png)
 
-1.  Complete the remaining steps of the adjustment as described in the [Adjust
+4.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
@@ -217,15 +216,15 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
 3.  On the **Adjustment with amount** page, set the following fields:
 
--   In the **Amount** field, enter the amount.
+    -   In the **Amount** field, enter the amount.
 
--   In the **Allocation principle** field, select **Value** or **Quantity**.
+    -   In the **Allocation principle** field, select **Value** or **Quantity**.
 
 ![A screenshot of a cell phone Description automatically generated](media/f0cf82d020663276f898d5748db5efc5.png)
 
-1.  Select **Next**.
+4.  Select **Next**.
 
-2.  Complete the remaining steps of the adjustment as described in the [Adjust
+5.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
@@ -241,15 +240,15 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
 3.  On the **Adjustment to value** page, set the following fields:
 
--   In the **Value** field, enter the value.
+    -   In the **Value** field, enter the value.
 
--   In the **Allocation principle** field, select **Value** or **Quantity**.
+    -   In the **Allocation principle** field, select **Value** or **Quantity**.
 
 ![](media/dd56e5c29cfd9fa72890488c6f165f59.png)
 
-1.  Select **Next**.
+4.  Select **Next**.
 
-2.  Complete the remaining steps of the adjustment as described in the [Adjust
+5.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
@@ -265,16 +264,16 @@ adjustment** page, on the Action Pane, select **Cancellation**.
 
 3.  On the **Percentage adjustment** page, set the following fields:
 
--   In the **Percent** field, enter the percentage.
+    -   In the **Percent** field, enter the percentage.
 
--   In the **Adjust** field, select **Positive on-hand inventory** or **On-hand
+    -   In the **Adjust** field, select **Positive on-hand inventory** or **On-hand
     inventory total**.
 
 ![](media/844611f57dd176f47802e90f2bf1d523.png)
 
-1.  Select **Next**.
+4.  Select **Next**.
 
-2.  Complete the remaining steps of the adjustment as described in the [Adjust
+5.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
@@ -297,34 +296,34 @@ warehouse maintenance costs, on the item cost price of inventory.
 3.  On the **Balance from ledger account or dimensions** page, set the following
     fields:
 
--   In the **Main account** field, select the main account where the balance is
-    determined.
+    -   In the **Main account** field, select the main account where the balance is
+        determined.
 
--   In the **Balance on the date** field, specify the date when the balance is
-    determined.
+    -   In the **Balance on the date** field, specify the date when the balance is
+        determined.
 
--   Select the **Balance account** option to determine the account balance, or
-    select the **Balance from ledger account and dimensions** option to
-    determine an account balance by using specific dimension values.
+    -   Select the **Balance account** option to determine the account balance, or
+        select the **Balance from ledger account and dimensions** option to
+        determine an account balance by using specific dimension values.
 
--   In the **Dimension set** field, select the set of dimensions to determine
-    the account balance from. This field is available only if the **Balance from
-    ledger account and dimensions** option is selected.
+    -   In the **Dimension set** field, select the set of dimensions to determine
+        the account balance from. This field is available only if the **Balance from
+        ledger account and dimensions** option is selected.
 
 ![](media/476aa480b8b643bcc4fdfd84e3cfa0f7.png)
 
-1.  Select **Next**.
+4.  Select **Next**.
 
-2.  Select the amounts to include in the adjustment. You can use the **Select
+5.  Select the amounts to include in the adjustment. You can use the **Select
     all** and **Deselect all** links to select and clear all lines.
 
-3.  In the **Allocation principle** field, select **Value** or **Quantity**.
+6.  In the **Allocation principle** field, select **Value** or **Quantity**.
 
 ![](media/df672e4fda022367c23dfbc4bc0cc2ea.png)
 
-1.  Select **Next**.
+7.  Select **Next**.
 
-2.  Complete the remaining steps of the adjustment as described in the [Adjust
+8.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
 
@@ -346,37 +345,37 @@ warehouses. To complete this process in the system, follow these steps.
 
 3.  On the **Select on-hand inventory** page, set the following fields:
 
--   On the **Parameters** FastTab, set the **Warehouse** option to **Yes**.
+    -   On the **Parameters** FastTab, set the **Warehouse** option to **Yes**.
 
--   On the **Records to include** FastTab, select **Filter**, and specify a
+    -   On the **Records to include** FastTab, select **Filter**, and specify a
     filter for a specific warehouse or warehouses.
 
-1.  Select **Next**.
+4.  Select **Next**.
 
-2.  On the **Functions for calculating adjustment amounts** page, select **From
+5.  On the **Functions for calculating adjustment amounts** page, select **From
     ledger account**, and then select **Next**.
 
-3.  On the **Balance from ledger account or dimensions** page, set the following
+6.  On the **Balance from ledger account or dimensions** page, set the following
     fields:
 
--   In the **Main account** field, select main account **26.100**.
+    -   In the **Main account** field, select main account **26.100**.
 
--   In the **Balance on the date** field, specify the date when the balance is
+    -   In the **Balance on the date** field, specify the date when the balance is
     determined.
 
--   Select the **Balance from ledger account and dimensions** option, and then,
+    -   Select the **Balance from ledger account and dimensions** option, and then,
     in the **Dimension set** field, select the dimension set.
 
-1.  Select **Next**.
+7.  Select **Next**.
 
-2.  On the next page, select the lines for the **Department** dimension values
+8.  On the next page, select the lines for the **Department** dimension values
     from which the balances should be assigned to the inventory of the selected
     warehouse or warehouses, and then select **Next**.
 
-3.  Set the **Corr. account profit/loss** option to **Yes**, and set the **Corr.
+9.  Set the **Corr. account profit/loss** option to **Yes**, and set the **Corr.
     account** field.
 
-4.  Complete the remaining steps of the adjustment as described in the [Adjust
+10.  Complete the remaining steps of the adjustment as described in the [Adjust
     item cost by using the Inventory adjustment
     wizard](#adjust-item-cost-by-using-the-inventory-adjustment-wizard) section.
     Repeat the allocation operation for all warehouses and dimensions that you
