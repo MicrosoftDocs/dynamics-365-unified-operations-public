@@ -49,7 +49,7 @@ This topic describes the e-Commerce Platform SDK. The e-Commerce Platform SDK co
 The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
 - If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../dev-itpro/dev-tools/access-instances.md). 
-- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and include all other fixes. 
+- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Hotfixes are cumulative and include all other fixes. 
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
 
@@ -67,14 +67,16 @@ We recommend that you put the SDK in a source control system such as Visual Stud
 
 ### Enabling anonymous access
 
-e-Commerce websites need to enable anonymous access. This is available as a web.config file in the Retail Server web.config under app settings. Please ensure that this is enabled to have the website work. &lt;add key="IsAnonymousEnabled" value="true" /&gt;
+e-Commerce websites need to enable anonymous access. This is available as a web.config file in the Commerce Scale Unit web.config under app settings. Please ensure that this is enabled to have the website work. 
+
+`&lt;add key="IsAnonymousEnabled" value="true" /&gt;`
 
 ### Externally accessing the ASP.net website
 
 The following configuration changes will be required if either of these applies:
 
 -   If you are accessing web storefront from within a browser that is not on the same box as the e-Commerce server.
--   If the e-Commerce server and retail server are on two different boxes.
+-   If the e-Commerce server and Commerce Scale Unit are on two different boxes.
 
 You will need to update the “retailServerUrl” inside the web.config file of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
 
@@ -102,6 +104,6 @@ The e-Commerce platform uses OpenID as the mechanism for authentication. You can
 
     The subsequent steps should only be done to register additional providers.
 
-2.  The Retail Shared Parameters-&gt; Open ID Providers form can be used to register additional providers.
+2.  The **Retail Shared Parameters -&gt; Open ID Providers** form can be used to register additional providers.
 3.  Run distribution schedule 1110.
 
