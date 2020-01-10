@@ -95,10 +95,10 @@ The first version of this functionality doesn't support **datetime** and **refer
 
 ### View customer attributes
 
-#### Retail headquarters
+#### Headquarters
 
-1. Select **Retail** > **Customers** > **All customers**.
-2. On the Action Pane, on the **Retail**, in the **Attribute** section, select **Retail attributes** to view or edit the attribute values.
+1. Select **Retail and Commerce** > **Customers** > **All customers**.
+2. On the Action Pane, in **Retail and Commerce**, in the **Attribute** section, select **Retail attributes** to view or edit the attribute values.
 
 #### POS
 
