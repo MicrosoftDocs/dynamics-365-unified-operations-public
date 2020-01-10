@@ -35,17 +35,17 @@ ms.dyn365.ops.version: 10.0.7
 
 This topic describes how you can handle customer information, such as the customer's lottery code, in Retail point of sale (POS) for Italy.
 
-You can specify the customer's information such as the fiscal code or lottery code when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and can be used for the National lottery. Personal fiscal codes can also be used to search for a customer in POS.
+You can specify the customer's information such as the fiscal code or lottery code when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts and can be used for the National lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
 > [!NOTE]
-> This functionality is available in version 10.0.8 and later of the Finance and Operations apps.
+> This functionality is available in the version 10.0.8 and later of the Finance and Operations apps.
 
 ## Setup
 
 You must complete the following configuration to use this functionality:
 
 - Set up a registration type for lottery code.
-- Add the "Add customer information" operation to screen layouts.
+- Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Add a customer search criterion.
@@ -58,15 +58,15 @@ You need to create an appropriate registration type for lottery code and link it
 > [!WARNING]
 > If a registration type is not created or not linked to the **Lottery code** registration category, an error will be generated in POS when Lottery code is populated for a customer address. 
 
-### Add the "Add customer information" operation to screen layouts
+### Add the Add customer information operation to screen layouts
 
-The "Add customer information" operation can be used to add customer information, such as the lottery code, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
+The **Add customer information** operation can be used to add customer information, such as the lottery code, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
 
 On the **Button grids** page, select the button grid where the operation should appear, and open the Button grid designer. Add a new button, and then, in the **Action** field, select **Add customer information**. For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
 ### Activate the inquiry for customer information
 
-If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the "Add customer information" operation.
+If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
 To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
 
@@ -125,7 +125,7 @@ The following examples demonstrate how to work with customer information in POS 
 1. Specify the new customer's attributes. In the **Fiscal code** field, enter the customer's fiscal code.
 1. Select **Create a new address**. Specify the new customer's contact information and an address.
 1. In the **Lottery code** field, enter the customer's lottery code.
-1. Save the customer record and the customer address record, and add the customer to the transaction.
+1. Save the customer record and the customer address record and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. As the inquiry for customer information is enabled and customer information is not added to the transaction, the **Enter customer information** dialog box will be opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's lottery code, and then select **OK**.
@@ -154,7 +154,7 @@ This section provides deployment guidance for enabling customer information mana
 > [!NOTE]
 > Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 >
-> If you want to enable the integration of POS with fiscal printers for Italy, and specifically if you want to print customer lottery codes on fiscal receipts, you must deploy the [fiscal printer integration sample for Italy](emea-ita-fpi-sample.md).
+> If you want to enable the integration of POS with fiscal printers for Italy, and specifically if you want to print customers' lottery codes on fiscal receipts, you must deploy the [fiscal printer integration sample for Italy](emea-ita-fpi-sample.md).
 
 ### Update customizations
 
