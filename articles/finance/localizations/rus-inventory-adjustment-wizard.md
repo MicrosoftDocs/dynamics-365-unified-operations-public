@@ -126,7 +126,8 @@ Adjust item cost by using the Inventory adjustment wizard
     amounts, except the amounts that are calculated by using the **From ledger
     account** method. When you manually edit this field, the allocation amount
     must be either negative for all lines or positive for all lines.
-![](media/4%20Results%20of%20allocation.png)
+    
+    ![](media/4%20Results%20of%20allocation.png)
 
 13.  Select **Next**.
 
@@ -172,6 +173,7 @@ Adjust item cost by using the Inventory adjustment wizard
                 the **Corr. account profit/loss** option on the **Posting** page is set
                 to **No**, the adjustment is assigned to the account that is specified
                 in the **Corr. account** field.
+                
 ![](media/5%20Posting.png)
 
 15.  Select **Next**.
