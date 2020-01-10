@@ -114,20 +114,16 @@ Adjust item cost by using the Inventory adjustment wizard
     results.
     -   In the **Charges code** field, select a charge code for a line.
 
-    >   *Note:* Alternatively, select the ellipsis button (**…**), and then
-    >   select **Functions \> Charges code** to open the **Change Misc. charge
-    >   code** page. Then, in the **Charges code** field, select the charges
-    >   code for a line. To apply the charges code that you entered to all
-    >   lines, set the **Apply to all** option to **Yes**.
+        >   *Note:* Alternatively, select the ellipsis button (**…**), and then
+        >   select **Functions \> Charges code** to open the **Change Misc. charge
+        >   code** page. Then, in the **Charges code** field, select the charges
+        >   code for a line. To apply the charges code that you entered to all
+        >   lines, set the **Apply to all** option to **Yes**.
 
-  ![](media/bbac0f84c45290ea37b9f045ec9c0c40.png)
-
-   -   In the **Amount of allocation** field, you can manually edit allocation
-   amounts, except the amounts that are calculated by using the **From ledger
-   account** method. When you manually edit this field, the allocation amount
-   must be either negative for all lines or positive for all lines.
-
-  ![](media/04409ee027a43182032c62435503d26b.png)
+    -   In the **Amount of allocation** field, you can manually edit allocation
+    amounts, except the amounts that are calculated by using the **From ledger
+    account** method. When you manually edit this field, the allocation amount
+    must be either negative for all lines or positive for all lines.
 
 13.  Select **Next**.
 
