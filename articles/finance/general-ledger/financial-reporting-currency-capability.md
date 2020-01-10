@@ -84,7 +84,7 @@ The Currency translation type will determine how each main account is translated
 - You can also specify an override of a currency translation rate type for a legal entity which will overide the default behavior. 
 
 
-### *Setup for Retained Earnings*
+### Setup for Retained Earnings
 Currency translation for retained earnings accounts are subject to some specific requirements:
 - Any retained earnings account must be assigned to the Retained earnings main account category on the **Main accounts** form to translate.
 - If the default category was renamed, financial reporting is still expecting the original with the backing ID number of 29. 
@@ -95,27 +95,30 @@ Functionality that was introduced in preview for Dynamics 365 Finance version 10
 
 This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the **Currency translation type** set to **Transaction date** will calculate the translated balance of the account using rates and balances from its entire history using end-of-year rate * balance for all years, rather than only using the most recent year and rate.
 
-## *Report design elements related to currency*
-The following are additional report design elements that can be used when doing reporting on currencies
+## Report design elements related to currency
+The are additional report design elements that can be used when doing reporting on currencies.
 
-### Auto text codes
+### Autotext codes
 Users can dynamically see the currency symbol, code, and description they have defined in Dynamics when the currency is changed. Three auto text options are available to Financial reporting to enable this functionality:
-* Currency symbol (@CurrencySymbol)
-* Currency code (@CurrencyCode)
-* Currency description (@CurrencyDescription)
+- Currency symbol (@CurrencySymbol)
+- Currency code (@CurrencyCode)
+- Currency description (@CurrencyDescription)
+
 You can add the auto text both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. 
 
 The places where currency symbols are used are:
-* Display currency symbol on first row which is defined in the Report Definition
-* Use currency format in this row (CS), which is defined in the Row Definition
-* Format Overrides defined in the Row and Column Definition
+
+- Display currency symbol on first row which is defined in the Report Definition
+- Use currency format in this row (CS), which is defined in the Row Definition
+- Format Overrides defined in the Row and Column Definition
 
 ### Financial reporting attributes related to currency
-The following are additional report design attributes that can be used when doing reporting on currencies that will display on account or transaction drilldown in support of amount lines. 
-* Account Currency
-* Currency code
-* Transaction currency
-* Acquisition date
+The following are additional report design attributes that can be used when reporting on currencies that will display on account or transaction drilldown in support of amount lines.
+
+- Account Currency
+- Currency code
+- Transaction currency
+- Acquisition date
 
 ### Currency Translation Adjustment
 The currency translation adjustment (CTA) is the difference between the rates used to calculate the balance sheet accounts and the rate used for the income statement accounts. This difference in rates will cause the balance sheet to be out of balance. 
@@ -124,9 +127,9 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments form in the row definition
 
-When you enter the row in which you want to display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting will calculate this difference and put it in the desired row. A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected. 
+*When you enter the row that will display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting will calculate this difference and put it in the desired row.* A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected. 
  
-2. Create a single line with all accounts to calculate the CTA. 
+2. Create a single line with all accounts to calculate the CTA 
 
 Put all of the accounts in a range, from assets to expenses. This difference will be the same amount as the rounding adjustment (CTA) and can be used as a check total to make sure the rounding adjustment form is not including any missed account balance.
 
