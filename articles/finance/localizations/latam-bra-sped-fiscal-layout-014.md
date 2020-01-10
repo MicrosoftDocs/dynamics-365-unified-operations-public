@@ -1,282 +1,153 @@
-# SPED Fiscal ICMS-IPI - Layout 014
+---
+# required metadata
 
-This topic explains how to set up and generate Sped fiscal statement layout 014 applicable from January 2020 under the practical guide **EFD-ICMS/IPI – version 3.0.3**
+title: SPED fiscal ICMS-IPI Layout 014
+description: This topic explains how to set up and generate Sped fiscal statement layout 014 applicable.
+author: sndray
+manager: AnnBe
+ms.date: 01/07/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology:
 
-## Record 0000 - Opening record
+# optional metadata
 
-New layout 014.(1.13) has been introduced in **Fiscal books > Setup > Tax statements parameters > Sped fiscal > Sped fiscal parameters > Layout version**
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Brazil
+# ms.search.industry: 
+ms.author: shylaw
+ms.search.validFrom: 2020-01-15
+ms.dyn365.ops.version: 10.0.9
 
-## Record 0002 - Classification of fiscal establishment
+---
 
-This record is generated when the field **IND_ATIV** of record 0000 is equal to "0" and the classification of fiscal establishment is configured in **Fiscal books > Setup > Tax statements parameters > Sped fiscal > Sped fiscal parameters > Classification**. 
+# SPED fiscal ICMS-IPI Layout 014 
 
-Assign classification in the related fiscal establishment and when applies more than one type of classification, please inform the classification that is most relevant in the establishment.
+[!include [banner](../includes/banner.md)]
 
 
-## Record C500. Incoming fiscal documents
-This record is generated for Incoming fiscal documents model **6, 66, 29, 28**. The following new fields are included as part of new layout
+This topic provides information about how to set up and generate the Sped fiscal statement layout 014 which is applicable as of January 2020 under the practical guide, **EFD-ICMS/IPI – version 3.0.3**.
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>28</td>
-    <td>CHV_DOCe</td>
-    <td>Access key of fiscal document when fiscal document = 66, otherwise the field is presented in blank</td>
-  </tr>
-  <tr>
-    <td>29</td>
-    <td>FIN_DOCe</td>
-    <td>Fixed as 1 only for fiscal document = 66 otherwise the field is presented in blank</td>
-  </tr>
-  <tr>
-    <td>30</td>
-    <td>CHV_DOCe_REF</td>
-    <td>Access key of referenced fiscal document if exist. When fiscal document = 66, otherwise the field is presented in blank</td>
-  </tr>
-  <tr>
-    <td>31</td>
-    <td>IND_DEST</td>
-    <td>Fixed as 1 since the fiscal establishment is ICMS taxpayer.</td>
-  </tr>
-  <tr>
-    <td>32</td>
-    <td>COD_MUN_DEST</td>
-    <td>IBGE code of fiscal establishment.</td>
-  </tr>
-  <tr>
-    <td>33</td>
-    <td>COD_CTA</td>
-    <td>Expense or Asset main account. (Financial ledger dimension)</td>
-  </tr>
-</table>
+To view the new layout, go to **Fiscal books** > **Setup** > **Tax statements parameters** > **Sped fiscal** > **Sped fiscal parameters** > **Layout version**.
+
+## Record 0002: Classification of fiscal establishment
+
+This record is generated when the field **IND_ATIV** of record 0000 is equal to "0" and the classification of the fiscal establishment is configured and assigned. This can be completed by going to **Fiscal books** > **Setup** > **Tax statements parameters** > **Sped fiscal** > **Sped fiscal parameters** > **Classification**. 
+
+The classification is assigned to the related fiscal establishment. When more than one type of classification applies, select the classification that is most relevant in the establishment.
+
+## Record C500: Incoming fiscal documents
+This record is generated for Incoming fiscal document models, 6, 66, 29, and 28. The following new fields are included as part of new layout
+
+| #  | Field        | Description                                                                                                                            |
+|----|--------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| 28 | CHV_DOCe     | Access key of the fiscal document then the fiscal document is equal to 66. Otherwise, the field is blank.                              |
+| 29 | FIN_DOCe     | Fixed as one (1) only when a fiscal document is equal to 66. Otherwise, the field is blank.                                            |
+| 30 | CHV_DOCe_REF | The access key for the referenced fiscal document if it exists when the fiscal document is equal to 66. Otherwise, the field is blank. |
+| 31 | IND_DEST     | Fixed as one (1) because the fiscal establishment in the ICMS taxpayer.                                                                |
+| 32 | COD_MUN_DEST | The IBGE code of the fiscal establishment.                                                                                             |
+| 33 | COD_CTA      | Expense or Asset main account. A Financial ledger dimension.                                                                           |
 
 ## Complement and compensation of ICMS-ST tax
-The tax authority has introduced the generation of records C180, C185, 1010 and 1250 to detail the operations that  are subject to ICMS-ST tax when the company applies the complement and compensation of ICMS-ST tax. The generation of these records will be addressed by each state.
+The tax authority has introduced records C180, C185, 1010, and 1250 which detail the operations that are subject to ICMS-ST tax when the company applies the complement and compensation of ICMS-ST tax. Generating these records will be addressed by each state.
 
 
 ### Prerequisites
 
-Before you enable the generation of these records , enable the Presumed tax calculation in **Organization administration > Setup > Brazilian parameters > Fiscal document**
-	- ICMS- ST presumed tax
-	- ICMS-ST presumed tax in fiscal books 
+Before you enable generating these records, you must enable the presumed tax calculation. To do this, go to **Organization administration** > **Setup** > **Brazilian parameters** > **Fiscal document** and enable the following:
+	
+- ICMS- ST presumed tax
+- ICMS-ST presumed tax in fiscal books 
 
+To generate these records, complete the followign steps to set up the rule that will allow the records to be generated. The rule must be set up for each state.
 
-In order to generate these records, you need to setup per state the rule that will allow the generation of these records:
-1. Go to  **Fiscal books > Setup > Fiscal books parameters per state**
-2. Select the related State, for example SP
-3. Enable record C180 and C185 as **Yes** . Records H030 with MOT_INV = 06 of record H005 and 1010, 1250, 1255 are also generated. 
-4. Select the method of calculation in **SPED presumed tax calculation algorithm**  since the amounts calculated in Presumed tax process will be reported in record C185.
+1. Go to  **Fiscal books** > **Setup** > **Fiscal books parameters per state**.
+2. Select the related state. For example, **SP**.
+3. Enable record C180 and C185 as **Yes**. Records H030 with MOT_INV = 06 of record H005 and 1010, 1250, 1255 are also generated. 
+4. Select the method of calculation in **SPED presumed tax calculation algorithm**. The amounts calculated in the presumed tax process will be reported in record C185.
 	
 ![SpedFiscal Setup](media/bra-sped-Fiscal014-Setup.png)	
   
- ### Table 5.7 . Reason code table for complement and restitution
+ ### Table 5.7 - Reason code table for complement and restitution
 
-The table 5.7 represents the classification of complement and compensation of ICMS-ST amounts. This table is implemented by each state and configured in **Fiscal books > Setup > Reason code for complement and restitution**
+Table 5.7 represents the classification of complement and compensation of the ICMS-ST amounts. This table is implemented by each state and configured in **Fiscal books** > **Setup** > **Reason code for complement and restitution**.
 
 ![bra-sped-fiscal014-table57-setup](media/bra-sped-fiscal014-table57-setup.png)
 
-After to complete the configuration of reason code table you need to setup the determination of reason code table 5.2 in **Fiscal books > Setup > Table 5.7 determination** by using the following criteria's
-	- Item code 
-	- CFOP code
-	- Taxation code
+After you complete the configuration of the reason code table, you need to set up the determination of reason code table 5.2 in **Fiscal books** > **Setup** > **Table 5.7 determination** by using the following criteria:
+
+- Item code 
+- CFOP code
+- Taxation code
 
 ![bra-sped-fiscal014-table57-determination-setup](media/bra-sped-fiscal014-table57-determination-setup.png)
 
 ### Record C180
-This new record introduces complementary information of incoming fiscal document model 01, 1B, 04 and 55 for transactions with ICMS-ST tax transaction. This record is generated under the following criteria:
-	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
-	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
+This new record introduces complementary information of incoming fiscal document models 01, 1B, 04. and 55 for transactions with the ICMS-ST tax transaction. This record is generated based on the following criteria:
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>REG</td>
-    <td>Fixed text containing C180</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>COD_RESP_RET</td>
-    <td>Code that indicates the person responsible for the withholding of ICMS-ST: 1-Direct Sender, 2-Indirect Sender and 3-Own declarant.This classification is available in the fiscal document line. 
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>QUANT_CONV</td>
-    <td>The quantity of incoming fiscal document</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>UNID</td>
-    <td>Unit of measure of QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>VL_UNIT_CONV</td>
-    <td>Line amount per unit considering the unit of measure  used to inform the field QUANT_CONV of incoming fiscal document</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>VL_UNIT_ICMS_OP_CONV</td>
-    <td>ICMS amount of own operation that the informant would be entitled to recover (credit) considering unit used to inform the QUANT_CONV field. This is the ICMS amount per unit. The ICMS tax transaction must be defined with the internal tax rate.</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>VL_UNIT_BC_ICMS_ST_CONV</td>
-    <td>Base Amount of ICMS-ST per unitconsidering the unit used to inform the QUANT_CONV field.</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>VL_UNIT_ICMS_ST_CONV</td>
-    <td>ICMS-ST or ICMS-ST presumed tax including FCP considering the unit used to report the QUANT_CONV.</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>VL_UNIT_FCP_ST_CONV</td>
-    <td>ICMS-ST or ICMS-ST presumed FCP amount per unit</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>COD-DA</td>
-    <td>Type of collection document: 0-State document of collection or 1-GNRE. This classification is available in the fiscal document line.</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>NUM_DA</td>
-    <td>Number of the state collection document. This classification is available in the fiscal document line.</td>
-  </tr>
-</table>
+- Fiscal books parameters per state, **Enable record C180 and C185** = Yes 
+- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
+
+| #  | Field                   | Description                                                                                                                                                                                                                                            |
+|----|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | REG                     | Fixed text containing C180.                                                                                                                                                                                                                            |
+| 2  | COD_RESP_RET            | The code that indicates the person responsible for the withholding of ICMS-ST:1-Direct sender, 2-Indirect sender, and 3-Own declarant. This classification is available on the fiscal document line.                                                   |
+| 3  | QUANT_CONV              | The quantity of the incoming fiscal document.                                                                                                                                                                                                          |
+| 4  | UNID                    | The unit of measure of QUANT_CONV.                                                                                                                                                                                                                     |
+| 5  | VL_UNIT_CONV            | Line amount per unit considering the unit of measure used to inform the field QUANT_CONV of incoming fiscal document.                                                                                                                                  |
+| 6  | VL_UNIT_ICMS_OP_CONV    | ICMS amount of own operation that the informant would be entitled to recover (credit) considering the unit used to inform the QUANT_CONV field. This is the ICMS amount per unit. The ICMS tax transaction must be defined with the internal tax rate. |
+| 7  | VL_UNIT_BC_ICMS_ST_CONV | Base Amount of the ICMS-ST per unit considering the unit used to inform the QUANT_CONT field.                                                                                                                                                          |
+| 8  | VL_UNIT_ICMS_ST_CONV    | ICMS-ST or ICMS-ST presumed tax including FCP considering the unit used to report the QUANT_CONV.                                                                                                                                                      |
+| 9  | VL_UNIT_FCP_ST_CONV     | ICMS-ST or ICMS-ST presumed FCP amount per unit.                                                                                                                                                                                                       |
+| 10 | COD_DA                  | Type of collection document: 0-State document of collection or 1-GNRE. This classification is available on the fiscal document line.                                                                                                                   |
+| 11 | NUM_DA                  | Number of the state collection document. This classification is available in the fiscal document line.                                                                                                                                                 |
 
 ### Record C185
-This new record introduces complementary information of outgoing fiscal document model 01, 1B, 04 and 55 for transactions with ICMS-ST tax transaction. This record is generated under the following criteria:
-	- Fiscal books parameters per state, **Enable record C180 and C185** = Yes, 
-	- Fiscal document tax transactions have taxation code = 10, 30, 60, 70
+This new record introduces complementary information of outgoing fiscal document models 01, 1B, 04, and 55 for transactions with the ICMS-ST tax transaction. This record is generated based on the following criteria:
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>REG</td>
-    <td>Fixed text containing "C185"</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>NUM_ITEM</td>
-    <td>Sequence number of fiscal document item line</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>COD_ITEM</td>
-    <td>Item code of fiscal document line</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>CST_ICMS</td>
-    <td>ICMS Taxation code</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>CFOP</td>
-    <td>CFOP</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>COD_MOT_REST_COMPL</td>
-    <td>Reason code for restitution or complement as per Table 5.7.</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>QUANT_CONV</td>
-    <td>Item quantity</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>UNID</td>
-    <td>Unit of measure</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>VL_UNIT_CONV</td>
-    <td>Amountof goods per unit</td>
-  </tr>
-  <tr>
-    <td>10</td>
-    <td>VL_UNIT_ICMS_NA_OPERACAO_CONV</td>
-    <td>ICMS amount per unit</td>
-  </tr>
-  <tr>
-    <td>11</td>
-    <td>VL_UNIT_ICMS_OP_CONV</td>
-    <td>ICMS-ST presumed amount (from incoming fiscal document) per unit</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>VL_UNIT_ICMS_OP_ESTOQUE_CONV</td>
-    <td>Average ICMS tax amount in inventory per unit, considering unit used to inform the QUANT_CONV field.</td>
-  </tr>
-  <tr>
-    <td>13</td>
-    <td>VL_UNIT_ICMS_ST_ESTOQUE_CONV</td>
-    <td>Average ICMS-ST tax amount including FCP ST, of the goods in stock, considering the unit used to inform the QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV</td>
-    <td>Average of the ICMS ST FCP per unit of the goods in stock, considering the unit used to inform the field QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>15</td>
-    <td>VL_UNIT_ICMS_ST_CONV_REST</td>
-    <td>ICMS-ST amount, including FCP ST, to be refunded / reimbursed</td>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td>VL_UNIT_FCP_ST_CONV_REST</td>
-    <td>ICMS-ST FCP amount that composes the field "VL_UNIT_ICMS_ST_CONV_REST", considering the unit used to inform the QUANT_CONV field.</td>
-  </tr>
-  <tr>
-    <td>17</td>
-    <td>VL_UNIT_ICMS_ST_CONV_COMPL</td>
-    <td>ICMS amount complement, including FCP ST, considering the unit used to inform the QUANT_CONV field.</td>
-  </tr>
-  <tr>
-    <td>18</td>
-    <td>VL_UNIT_FCP_ST_CONV_COMPL</td>
-    <td>ICMS-ST FCP amount that composes the field "VL_UNIT_ICMS_ST_CONV_COMPL", considering unit used to inform the QUANT_CONV field.</td>
-  </tr>
-</table>
+- Fiscal books parameters per state, **Enable record C180 and C185** = **Yes** 
+- Fiscal document tax transactions taxation code = 10, 30, 60, or 70
 
-Note: Amounts from field 10 to field 18 are recovered from ICMS-ST presumed tax calculation in ICMS-ST tax assessment
+| #  | Field                            | Description                                                                                                                                        |
+|----|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | REG                              | Fixed text containing **C185**.                                                                                                                    |
+| 2  | NUM_ITEM                         | The sequence number of the fiscal document item line.                                                                                              |
+| 3  | COD_ITEM                         | The item code of the fiscal document line.                                                                                                         |
+| 4  | CST_ICMS                         | The ICMS taxation code.                                                                                                                            |
+| 5  | CFOP                             | The CFOP.                                                                                                                                          |
+| 6  | COD_MOT_REST_COMPL               | The reason code for restitution or complement per Table 5.7.                                                                                       |
+| 7  | QUANT_CONV                       | The item quantity.                                                                                                                                 |
+| 8  | UNID                             | The unit of measure.                                                                                                                               |
+| 9  | VL_UNIT_CONV                     | The amount of goods per unit.                                                                                                                      |
+| 10 | VL_UNIT_ICMS_NA_OPERACAO_CONV    | The ICMS amount per unit.                                                                                                                          |
+| 11 | VL_UNIT_ICMS_OP_CONV             | The ICMS-ST presumed amount per unit from the incoming fiscal document.                                                                            |
+| 12 | VL_UNIT_ICMS_OP_ESTOQUE_CONV     | The average ICMS tax amount per unit in inventory, as the unit is used to inform the field, **QUANT_CONV**.                                        |
+| 13 | VL_UNIT_ICMS_ST_ESTOQUE_CONV     | The average ICMS-ST tax amount including FCP ST, of the goods in stock as the unit is used to inform the field, **QUANT_CONV**.                    |
+| 14 | VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV | The average of the OCMS ST FCP per unit of the goods in stock, as the unit is used to inform the field, **QUANT_CONV**.                            |
+| 15 | VL_UNIT_ICMS_ST_CONV_REST        | The ICMS-ST amount, including FCP ST, to be refunded or reimbursed.                                                                                |
+| 16 | VL_UNIT_FCP_ST_CONV_REST         | The ICMS-ST FCP amount that composes the field, **VL_UNIT_ICMS_ST_CONV_REST** as the unit is used to inform the field, **QUANT_CONV**.             |
+| 17 | VL_UNIT_ICMS_ST_CONV_COMPL       | The ICMS amount complement, including FCP ST, as the unit is used to inform the field, **QUANT_CONV**.                                             |
+| 18 | VL_UNIT_FCP_ST_CONV_COMPL        | The ICMS-ST FCP amount that composes the field, **VL_UNIT_ICMS_ST_CONV_COMPL** as the unit is used to inform what is in the field, **QUANT_CONV**. |
+
+> [!NOTE]
+> The amounts from field 10 to field 18 are recovered from the ICMS-ST presumed tax calculation in the ICMS-ST tax assessment.
 
 ### Record 1010
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>14</td>
-    <td>IND_REST_RESSARC_COMPL_ICMS</td>
-    <td>This field is filled with "S" when the generation of record C180 and C185 has been established in Fiscal books parameters per state, Enable record C180 and C185 = Yes and the record 1250 is not empty.</td>
-  </tr>
-</table>
+| #  | Field                       | Description                                                                                                                                                                                            |
+|----|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 14 | IND_REST_RESSARC_COMPL_ICMS | This field is filled with **S** when the generated records, C180 and C185 are enabled in the Fiscal books parameters per state. When you enable records C180 and C185, record 1250 is no longer empty. |
 
 ### Record 1250
 
-This new record is generated to consolidate information about balance of complement or restitution of ICMS and ICMS-ST. 
+Record 1250 is generated to consolidate information about the balance of complement or restitution of the ICMS and the ICMS-ST. 
 
 <table>
   <tr>
@@ -287,22 +158,22 @@ This new record is generated to consolidate information about balance of complem
   <tr>
     <td>1</td>
     <td>REG</td>
-    <td>Fixed text containing "1250"</td>
+    <td>Fixed text that contains **1250**.</td>
   </tr>
   <tr>
     <td>2</td>
     <td>VL_CREDITO_ICMS_OP</td>
-    <td>Summarization of records  1255 field VL_CREDITO_ICMS_OP_MOT</td>
+    <td>The sum of records 1255 in field, **VL_CREDITO_ICMS_OP_MOT**.</td>
   </tr>
   <tr>
     <td>3</td>
     <td>VL_ICMS_ST_REST</td>
-    <td>Summarization of records  1255 field VL_ICMS_ST_REST_MOT</td>
+    <td>The sum of records 1255 in field **VL_ICMS_ST_REST_MOT**.</td>
   </tr>
   <tr>
     <td>4</td>
     <td>VL_FCP_ST_REST</td>
-    <td>Summarization of records  1255 field<table>
+    <td>The sum of records 1255 in the following fields:<table>
   <tr>
     <th>#</th>
     <th>Field</th>
@@ -311,190 +182,89 @@ This new record is generated to consolidate information about balance of complem
   <tr>
     <td>1</td>
     <td>REG</td>
-    <td>Fixed text containing "1250"</td>
+    <td>Fixed text that contains **1250**.</td>
   </tr>
   <tr>
     <td>2</td>
     <td>VL_CREDITO_ICMS_OP</td>
-    <td>Summarization of records 1255 field VL_CREDITO_ICMS_OP_MOT</td>
+    <td>The sum of record 1255 in the field **VL_CREDITO_ICMS_OP_MOT**.</td>
   </tr>
   <tr>
     <td>3</td>
     <td>VL_ICMS_ST_REST</td>
-    <td>Summarization of records 1255 field VL_ICMS_ST_REST_MOT</td>
+    <td>The sum of record 1255 in field **VL_ICMS_ST_REST_MOT**.</td>
   </tr>
   <tr>
     <td>4</td>
     <td>VL_FCP_ST_REST</td>
-    <td>Summarization of records 1255 field VL_ICMS_FCP_REST_MOT</td>
+    <td>The sum of record 1255 in field **VL_ICMS_FCP_REST_MOT**.</td>
   </tr>
   <tr>
     <td>5</td>
     <td>VL_ICMS_ST_COMPL</td>
-    <td>Summarization of records 1255 VL_ICMS_ST_COMPL_MOT</td>
+    <td>The sum of record 1255 in field **VL_ICMS_ST_COMPL_MOT**.</td>
   </tr>
   <tr>
     <td>6</td>
     <td>VL_FCP_ST_COMPL</td>
-    <td>Summarization of records 1255 field VL_FCP_ST_COMPL_MOT</td>
+    <td>The sum of record 1255 in field **VL_FCP_ST_COMPL_MOT**.</td>
   </tr>
 </table>L_ICMS_FCP_REST_MOT</td>
   </tr>
   <tr>
     <td>5</td>
     <td>VL_ICMS_ST_COMPL</td>
-    <td>Summarization of records 1255 VL_ICMS_ST_COMPL_MOT</td>
+    <td>The sum of record 1255 in field **VL_ICMS_ST_COMPL_MOT**.</td>
   </tr>
   <tr>
     <td>6</td>
     <td>VL_FCP_ST_COMPL</td>
-    <td>Summarization of records 1255 field VL_FCP_ST_COMPL_MOT</td>
+    <td>The sum of record 1255 in field **VL_FCP_ST_COMPL_MOT**.</td>
   </tr>
 </table>
 
 ### Record 1255
 
-This new record is generated to consolidate information about balance of complement or restitution of ICMS by reason code (table 5.7). 
+Record 1255 is generated to consolidate information about the balance of complement or restitution of ICMS by reason code (table 5.7). 
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>REG</td>
-    <td>Fixed text containing "1255"</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>COD_MOT_REST_COMPL</td>
-    <td>Reason code for restitution and/or complement <br>  Table 5.7</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>VL_CREDITO_ICMS_OP_MOT</td>
-    <td>Summarization of record C185, field VL_UNIT_ICMS_OP_CONV * QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>VL_ICMS_ST_REST_MOT</td>
-    <td>Summarization of record C185, field VL_UNIT_ICMS_ST_CONV_REST * QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>VL_FCP_ST_REST_MOT</td>
-    <td>Summarization of record C185, field,VL_UNIT_FCP_ST_CONV_REST * QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>VL_ICMS_ST_COMPL_MOT</td>
-    <td>Summarization of record C185, field VL_UNIT_ICMS_ST_CONV_COMPL * QUANT_CONV</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>VL_FCP_ST_COMPL_MOT</td>
-    <td>Summarization of record C185 field VL_UNIT_FCP_ST_CONV_COMPL * QUANT_CONV</td>
-  </tr>
-</table>
+| # | Field                  | Description                                                                                |
+|---|------------------------|--------------------------------------------------------------------------------------------|
+| 1 | REG                    | Fixed text of **1255**.                                                                    |
+| 2 | COD_MOT_REST_COMPL     | The reason code for restitution or complement for Table 5.7.                               |
+| 3 | VL_CREDITO_ICMS_OP_MOT | The sum of record C185 in field **VL_UNIT_ICMS_OP_CONV** x ** QUANT_CONV**.      |
+| 4 | VL_ICMS_ST_REST_MOT    | The sum of record C185 in field **VL_UNIT_ICMS_ST_CONV_REST** x **QUANT_CONV**.  |
+| 5 | VL_FCP_ST_REST_MOT     | The sum of record C185 in field **VL_UNIT_FCP_ST_CONV_REST** x **QUANT_CONV**.   |
+| 6 | VL_ICMS_ST_COMPL_MOT   | The sum of record C185 in field **VL_UNIT_ICMS_ST_CONV_COMPL** x **QUANT_CONV**. |
+| 7 | VL_FCP_ST_COMPL_MOT    | The sum of record C185 in field **VL_UNIT_FCP_ST_CONV_COMPL** x **QUANT_CONV**.  |
 
 ### Record H030 
-This record is generated together with H005 and H010 when the control of compensation or restitution about ICMS-ST tax was enabled in Fiscal books parameters per state, **Enable record C180 and C185** = Yes,
-The record H005 is generated with field  MOT_INV = 06 , and the record H010 is generated in the same way when the MOT_INV <> 6 
+Record H030 is generated together with H005 and H010 when the control of compensation or restitution of the ICMS-ST tax was enabled  by setting **Enable record C180 and C185** to **Yes** in the Fiscal books parameters per state.
+The record H005 is generated with field **MOT_INV** equal to six (6). The record H010 is generated in the same way when the field **MOT_INV** is not equal to six (6). 
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>REG</td>
-    <td>Fixed text containing "H030".</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>VL_ICMS_OP</td>
-    <td>Average unit amount of ICMS own operations</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>VL_BC_ICMS_ST</td>
-    <td>Average unit amount of ICMS ST base</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>VL_ICMS_ST</td>
-    <td>Average unit amount of ICMS ST tax including FCP</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>VL_FCP</td>
-    <td>Average unit amount of FCP of ICMS-ST tax</td>
-  </tr>
-</table>
+| # | Field         | Description                                                   |
+|---|---------------|---------------------------------------------------------------|
+| 1 | REG           | Fixed text, **H030**.                                       |
+| 2 | VL_ICMS_OP    | The average unit amount of the ICMS operations.               |
+| 3 | VL_BC_ICMS_ST | The Average unit amount of the ICMS-ST base.                  |
+| 4 | VL_ICMS_ST    | The average unit amount of the ISMC-ST tax including the FCP. |
+| 5 | VL_FCP        | The average unit amount of the FCP of ICMS-ST tax.            |
 
 ## Record G130
-This record is generated to identify the fiscal document of those CIAP operations. A new field has been included as part of new layout
+Record G130 is generated to identify the fiscal document of CIAP operations. A new field has been included as part of the new layout.
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>NUM_DA</td>
-    <td>Number of the state collection document. This classification is available in the fiscal document line. For more information about how this code is determined </td>
-  </tr>
-</table>
+| # | Field  | Description                                                                                                |
+|---|--------|------------------------------------------------------------------------------------------------------------|
+| 9 | NUM_DA | The number of the state collection document. This classification is available in the fiscal document line. |
 
 ## Record G140 
-This record is generated to identify the fiscal document of those CIAP operations. New fields have been included as part of new layout
+Record G140 is generated to identify the fiscal document of CIAP operations. New fields have been included as part of the new layout.
 
-<table>
-  <tr>
-    <th>#</th>
-    <th>Field</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>QTDE</td>
-    <td>Quantity, which was applied to this item, expressed in the same unit as the incoming fiscal document</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>UNID</td>
-    <td>Unit of measure of incoming fiscal document</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>VL_ICMS_OP_APLICADO</td>
-    <td>ICMS amount of incoming fiscal document. The ICMS column from CIAP assessment</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>VL_ICMS_ST_APLICADO</td>
-    <td>ICMS-ST amount of incoming fiscal document. The ICMS column from CIAP assessment</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>VL_ICMS_FRT_APLICADO</td>
-    <td>ICMS amount of incoming fiscal document. The ICMS on freight column from CIAP<br>&nbsp;&nbsp;assessment</td>
-  </tr>
-  <tr>
-    <td>9</td>
-    <td>VL_ICMS_DIF_APLICADO</td>
-    <td>ICMS-DIF amount of incoming fiscal document. The ICMS-DIF column from CIAP assessment</td>
-  </tr>
-</table>
+| # | Field                | Description                                                                                                    |
+|---|----------------------|----------------------------------------------------------------------------------------------------------------|
+| 4 | QTDE                 | The quantity that was applied to the item. This is expressed in the same unit as the incoming fiscal document. |
+| 5 | UNID                 | The unit of measure of the incoming fiscal document.                                                           |
+| 6 | VL_ICMS_OP_APLICADO  | The ICMS amount of the incoming fiscal document. The ICMS column from the CIAP assessment.                     |
+| 7 | VL_ICMS_ST_APLICADO  | The ICMS-ST amount of the incoming fiscal document. The ICMS column from the CIAP assessment.                  |
+| 8 | VL_ICMS_FRT_APLICADO | The ICMS amount of the incoming fiscal document. The ICMS on the freight column from the CIAP assessment.      |
+| 9 | VL_ICMS_DIF_APLICADO | The ICMS-DIF amount of the incoming fiscal document. The ICMS-DIF column from the CIAP assessment.             |
 
