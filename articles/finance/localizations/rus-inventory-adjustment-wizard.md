@@ -72,7 +72,6 @@ Adjust item cost by using the Inventory adjustment wizard
     (**…**), and then select **Print** to print the list of lines for
     adjustment.
 
-![](media/4ec7014c86f09b7c3febd16be8037f79.png)
 
 8.  Select **Next**.
 
@@ -103,7 +102,6 @@ Adjust item cost by using the Inventory adjustment wizard
         account](#method-for-calculating-adjustment-amounts-from-a-ledger-account)
         section.)
 
-![](media/939b076bb8deebe5f55dfe42331ede00.png)
 
 10.  Select **Next**.
 
@@ -127,48 +125,48 @@ Adjust item cost by using the Inventory adjustment wizard
 
 13.  Select **Next**.
 
-14. On the **Posting** page, specify the details for posting the adjustment:
+14.  On the **Posting** page, specify the details for posting the adjustment:
 
-    -   In the **Adjustment date** field, specify the date of the adjustment.
+        -   In the **Adjustment date** field, specify the date of the adjustment.
 
-    -   Set the **Storno** option to **Yes** to post vouchers to the general ledger
-        as storno. This setting of this option can be changed only when the **Amount
-        of allocation** value is negative. If the **Amount of allocation** value is
-        negative, and the **Storno** option is set to **No**, the system posts the
-        adjustment voucher as a reversal.
+        -   Set the **Storno** option to **Yes** to post vouchers to the general ledger
+            as storno. This setting of this option can be changed only when the **Amount
+            of allocation** value is negative. If the **Amount of allocation** value is
+            negative, and the **Storno** option is set to **No**, the system posts the
+            adjustment voucher as a reversal.
 
-    -   In the **Specification** field, select how transaction adjustments should be
+        -   In the **Specification** field, select how transaction adjustments should be
         posted:
 
-       -   **Total** – Adjustments are posted for all items that have the same
+            -   **Total** – Adjustments are posted for all items that have the same
             settings in the posting profile.
 
-       -   **Item group** – Adjustments are posted for all items that have the same
+            -   **Item group** – Adjustments are posted for all items that have the same
             item group.
 
-       -   **Item number** – Adjustments are posted for each item.
+            -   **Item number** – Adjustments are posted for each item.
 
-    -   In the **Note** field, enter a note for the adjustment.
+        -   In the **Note** field, enter a note for the adjustment.
 
-    -   Set the **Corr. account profit/loss** option and the **Corr. account**
-        field, depending on the account that an adjustment should be assigned to
-        during posting:
+        -   Set the **Corr. account profit/loss** option and the **Corr. account**
+            field, depending on the account that an adjustment should be assigned to
+            during posting:
 
-    -   If the miscellaneous charges code is entered on the item line, the
-        adjustment is assigned to the offset account that is set up for the
-        miscellaneous charges code.
+                -   If the miscellaneous charges code is entered on the item line, the
+                adjustment is assigned to the offset account that is set up for the
+                miscellaneous charges code.
 
-    -   If the miscellaneous charges code isn't entered on the item line, and
-        the **Corr. account profit/loss** option on the **Posting** page is set
-        to **Yes**, the adjustment is assigned in the standard manner to the
-        offset profit or loss account that is set up on the **Inventory** tab of
-        the **Posting** page (**Inventory management \> Setup \> Posting \>
-        Posting**).
+                -   If the miscellaneous charges code isn't entered on the item line, and
+                the **Corr. account profit/loss** option on the **Posting** page is set
+                to **Yes**, the adjustment is assigned in the standard manner to the
+                offset profit or loss account that is set up on the **Inventory** tab of
+                the **Posting** page (**Inventory management \> Setup \> Posting \>
+                Posting**).
 
-    -   If the miscellaneous charges code isn't entered on the item line, and
-        the **Corr. account profit/loss** option on the **Posting** page is set
-        to **No**, the adjustment is assigned to the account that is specified
-        in the **Corr. account** field.
+                -   If the miscellaneous charges code isn't entered on the item line, and
+                the **Corr. account profit/loss** option on the **Posting** page is set
+                to **No**, the adjustment is assigned to the account that is specified
+                in the **Corr. account** field.
 
 ![](media/da40f85b78957e86641be1cdc812f46a.png)
 
