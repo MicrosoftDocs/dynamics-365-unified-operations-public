@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payments FAQ
-description: This topic describes the payment options that are available in Dynamics 365 Retail.
+description: This topic describes the payment options that are available in Dynamics 365 Commerce.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/16/2017
