@@ -675,7 +675,7 @@ This section explains how to override the existing CRT request to print a receip
     ```
 
 16. Save and close the file.
-17. Restart the Retail Server to load the new assembly.
+17. Restart the Commerce Scale Unit to load the new assembly.
 
 ## Add the custom receipt layout
 
