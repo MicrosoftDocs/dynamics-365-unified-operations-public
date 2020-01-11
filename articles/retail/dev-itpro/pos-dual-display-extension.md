@@ -54,10 +54,10 @@ You will add a custom control column in the POS Dual display view to show the ca
 ## Configure the hardware profile to enable dual display
 
 1. Sign in to the client.
-2. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
+2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 3. Select the hardware profile that is linked to your register.
 4. On the **Dual display** tab, set the **Dual display in use** option to **Yes**.
-5. Go to **Retail \> Retail IT \> Distribution schedule**.
+5. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 6. Select the **Registers** (**1090**) job, and then select **Run now**.
 
 > [!NOTE]
