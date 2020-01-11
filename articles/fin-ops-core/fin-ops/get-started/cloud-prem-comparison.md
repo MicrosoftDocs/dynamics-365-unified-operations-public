@@ -50,8 +50,7 @@ The following tables list the application areas. Cloud and on-premises support i
 |---------------------|-----------------------------|-----------|-----------------|
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
-| Data management and integration      |                                                                                           | Yes       | Yes             |
-|                                      | Configuration-driven extension                                                            | Yes       | No              |
+| Data management and integration      |                                                                                           | Yes       | Yes             
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
 |                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
