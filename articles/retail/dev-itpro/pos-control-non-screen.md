@@ -113,7 +113,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
 11. Inside the class, declare the following variables for state and data list information.
  
- ```typescript
+    ```typescript
     private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
     public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
     public readonly dataList: DataList<ProxyEntities.OrgUnitAvailability>;
