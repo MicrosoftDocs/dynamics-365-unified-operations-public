@@ -133,7 +133,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 3. Grant **DataSyncUsersRole** permission if your table is going to send or eceive data from HQ.
 
     ```sql
-    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
+    GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 
