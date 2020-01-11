@@ -58,7 +58,7 @@ Use the following steps to consume Retail APIs in your extensions.
 
     For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.
 
- The pattern is import { api name } from "PosApi/Consume/Module name";
+    The pattern is import { api name } from "PosApi/Consume/Module name";
  
     ```Typescript
     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
