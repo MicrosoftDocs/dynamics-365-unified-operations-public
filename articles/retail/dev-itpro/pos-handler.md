@@ -207,7 +207,7 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 	 }
 	```
-	Full sample code:
+	**Full sample code:**
 
 	 ```Typescript
 	 /**
@@ -274,29 +274,29 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 	 ]
 	 }
 	 }
-	}
-	```
+	 }
+	 ```
 	
 11.  Open the extensions.json file under the POS.Extensions project. Update it with POSRequestHandlerExtension samples, so that POS during runtime will include this extension.
  
-	```Typescript
-	 {
-	 "extensionPackages": [
-		{ 
-		   "baseUrl": "SampleExtensions2" 
-		 }, 
+	 ```Typescript
+	  {
+	  "extensionPackages": [
 		 { 
-		   "baseUrl": " SampleExtensions" 
-		 }, 
-		 {
-		  "baseUrl": "POSRequestHandlerExtension"
+		    "baseUrl": "SampleExtensions2" 
+		  }, 
+		  { 
+		    "baseUrl": " SampleExtensions" 
+		  }, 
+		  {
+		   "baseUrl": "POSRequestHandlerExtension"
+	  }
+	  ]
 	 }
-	 ]
-	}
-	```
+	 ```
 
-	> [!NOTE]
-	> The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name. For production, don’t use the sample extensions. You should add your own extension folders and remove all the samples.
+	 > [!NOTE]
+	 > The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name. For production, don’t use the sample extensions. You should add your own extension folders and remove all the samples.
 
 12.  Open the tsconfig.json file to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension for compilation. By default, the list contains all the excluded extensions list. If you want to compile any extension part of the POS, then you need to add the extension folder name and comment the extension from the extension list, as shown below.
 
@@ -307,8 +307,8 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 	 //"SampleExtensions2",
 	 //"POSRequestHandlerExtension"
 
-	],
-	```
+	 ],
+	 ```
 
 13.  Compile and rebuild the project.
 
