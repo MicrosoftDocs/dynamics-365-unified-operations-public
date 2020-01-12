@@ -209,6 +209,8 @@ More than one license can be installed at a time. If one of the licenses depends
 ## Appendix: Create self-signed certificates for test purposes
 **Note:** Self-signed certificates can be used only during development. They aren't supported in production environments.
 
+For Platform Update 32 and earlier:
+
 1.  For test purposes, create a self-signed CA certificate. Use the Visual Studio tools prompt to run the following command.
 
         makecert -r -pe -n "CN=IsvCertTestAuthority O=IsvCertTestAuthority" -ss CA -sr LocalMachine -a sha256 -len 2048 -cy authority -sky signature -b 01/01/2016 -sv c:\temp\CA.pvk c:\temp\CA.cer
@@ -231,7 +233,23 @@ More than one license can be installed at a time. If one of the licenses depends
 
         certutil -addstore root c:\temp\isvcert.cer
 
+For Platform Update 33 and later:
 
+1. For test purposes, create a self-signed certificate using the PowerShell command New-SelfSignedCertificate
 
+    # Create the certificate
+    $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "IsvCertTest" -Type CodeSigningCert -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -KeySpec Signature -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotBefore (Get-Date -Year 2020 -Month 1 -Day 1)
 
+    # Get a reference to the new certificate
+    [String]$certPath = Join-Path -Path "cert:\LocalMachine\My\" -ChildPath "$($cert.Thumbprint)"
+ 
+    # Create the secure string password that the certificate uses
+    [System.Security.SecureString]$certPassword = ConvertTo-SecureString -String "########" -Force -AsPlainText
 
+    # Export the certificate private key as pfx file using the password
+    Export-PfxCertificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.pfx" -Password $rootcertPassword
+
+    # Export the certificate public key as crt file
+    Export-Certificate -Cert $certPath -FilePath "C:\Temp\TestISVLicenseSHA256Cert.cer"
+
+2. Import the exported *cer file into the local machine's Trusted Root Certificate Authorities\Certificates folder
