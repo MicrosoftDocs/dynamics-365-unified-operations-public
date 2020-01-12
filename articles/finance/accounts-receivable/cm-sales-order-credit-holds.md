@@ -249,6 +249,10 @@ You can use the **Evaluate for release** menu to review the sales orders in the 
 
 You can also create **Credit management workflows** to control the release of credit holds. Once you have set up workflow using the **Credit management > Setup > Credit management workflows** page, the orders marked for release or rejection will be sent to workflow where they must be approved first before they will be released or rejected. 
 
+If you include the tasks for release with posting or release without posting in your workflow, the workflow approval will also release the sales order. However, if there is a failure in the release process due to missing setup information or other causes, you will need to recall the sales order from workflow, fix the issue that caused the failure, and then submit the order to workflow again.
+
+If you do not include the tasks for release with posting or release without posting in your workflow, the workflow approval process will simply enable you to release the sales order manually once the approval is complete.
+
 ### Forced credit hold	
   
 At times, sales orders may need to be blocked even though the order does not meet the criteria of the blocking rules. For example, a credit manager may be notified of a non-credit related issue with the customer and decide to manually put orders on hold immediately until the issue is cleared up. You can manually force a sales order to be on hold if that situation occurs.
@@ -262,6 +266,8 @@ You can also force multiple orders to be on hold using the **Credit management >
 1. Select the **Forced hold reason**. 
 2. Click **Records to include** to select the sales orders to place on hold. 
 3. Click **OK** to process the selected sales orders.
+
+Sales orders that have been forced on hold cannot be processed with workflow.
 
 #### Releasing orders that were added to the credit management hold list with a forced credit hold
 Sales orders that have a forced hold reason cannot be released automatically. If the sales order was forced on hold and you have used a process that automatically releases sales orders, the sales order will show as **Ready to release** and remain in the hold list. You must use the **Release** menu to release the order.
