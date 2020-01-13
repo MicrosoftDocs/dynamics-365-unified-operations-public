@@ -81,8 +81,9 @@ To add a video player module to a new page and set the required properties, foll
 1. Check in the template, and publish it.
 1. Use the video player template that you just created to create a page that is named **video player page**.
 1. In the **Main Slot** of the new page, add a video player module.
-1. In the **Video Player** proprety pane on the right, select **Add a video**, and upload a video file.
-1. Save and preview the page. You should see both video modules on the page. You can change additional settings to customize the behavior of each module.
+1. In the **Video Player** property pane on the right, select **Add a video**.
+1. In the **Media Picker** window, select a video and then click **Upload new media item**.
+1. Save and preview the page. You should see the video module on the page. You can change additional settings to customize the behavior of the module.
 1. Check in the page, and publish it.
 
 ## Additional resources
@@ -95,6 +96,6 @@ To add a video player module to a new page and set the required properties, foll
 
 [Text rich block module](add-content-rich-block.md)
 
-[Feature module](add-feature-module.md)
+[Content block module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
