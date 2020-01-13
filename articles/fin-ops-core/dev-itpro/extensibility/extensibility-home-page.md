@@ -98,6 +98,7 @@ This section includes "How do I?" topics that explain how to customize specific 
 
 ### Others
 + [Extending decimal point precision for selected data types](decimal-point-precision.md)
++ [Add new inventory dimensions through extension](inventory-dimensions.md)
 
 ### Reports
 + [Extend the list of Electronic reporting (ER) functions](../analytics/general-electronic-reporting-formulas-list-extension.md)
@@ -108,13 +109,10 @@ This section includes "How do I?" topics that explain how to customize specific 
 Information about customization is also shared through blogs where various topics are discussed. This section includes reference to some of these blogs.
 
 + [Extending Dynamics 365 for Finance and Operations](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extending-dynamics-365-for-operations)
-+ [Extending class state](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extending-class-state/)
 + [Extension methods](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-extension-methods/)
 + [Extensible base enumerations](https://kashperuk.blogspot.dk/2016/09/development-tutorial-extensible-base.html)
 + [Static event subscription](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/x-in-ax7-static-event-subscription/)
-+ [Responding through delegates](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/responding-through-delegates/)
 + [Subscribing to onValidatingWrite](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/subscribing-to-onvalidatingwrite/)
-+ [Extending inventory dimensions](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-inventory-dimensions/)
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations/)
 + [Extensible X++ - Method Signatures](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-method-signatures/)
 
