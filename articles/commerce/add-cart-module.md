@@ -70,14 +70,14 @@ The cart module retrieves product information by using Retail Server APIs. The c
 To add a cart module to a new page and set the required properties, follow these steps.
 
 1. Create a fragment that is named **Cart fragment**, and add a cart module to it.
-2. Add a heading to the cart module.
-3. Add a **Store selector** module to the cart module.
-4. Finish editing, save, and publish the fragment.
-5. Create a template that is named **Cart template**, and add the cart fragment that you just created to it.
-6. Save the template, check it in, and publish it.
-7. Create a page that uses the new template.
-8. Save and preview the page.
-9. Check in the page, and publish it.
+1. Add a heading to the cart module.
+1. Add a **Store selector** module to the cart module.
+1. Save, finish editing, and publish the fragment.
+1. Create a template that is named **Cart template**, and add the cart fragment that you just created to it.
+1. Save, finish editing, and publish the template.
+1. Create a page that uses the new template.
+1. Save and preview the page.
+1. Finish editing and publish the page.
 
 ## Additional resources
 
