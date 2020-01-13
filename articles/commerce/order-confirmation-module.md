@@ -5,7 +5,7 @@ title: Order details module
 description: This topic covers order details modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -61,15 +61,16 @@ When creating an order details page, in addition to the order details module you
 1. In the **Main** slot of the default page, add an order details module.
 1. In the order details module, add a recommendations module.
 1. Save and preview the template. The order details module will not be rendered, because it requires the context of the order confirmation number.
-1. Check in the template, and publish it.
+1. Finish editing and publish the template.
 1. Use the order details template that you just created to create a page that is named **order details page**.
 1. Add the default page to the page outline.
 1. In the **Header** slot, add a header fragment.
 1. In the **Footer** slot, add a footer fragment.
 1. In the **Main** slot, add an order details module.
-1. In the property pane of the order details module, add the heading **Order details**.
+1. In the **Order details** property pane, add the heading **Order details**.
 1. Below the order details module, add a recommendations module, and configure it so that it uses the **New** and **Best Selling** settings.
-1. Save and preview the page, check it in, and publish it.
+1. Save and preview the page.
+1. Finish editing and publish the page.
 
 ## Additional resources
 
