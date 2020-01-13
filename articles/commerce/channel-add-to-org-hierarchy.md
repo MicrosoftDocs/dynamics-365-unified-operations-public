@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add channel to org hierarchy
+title: Add channel to an organizational hierarchy
 description: This topic presents the instructions to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Add channel to org hierarchy
+# Add channel to an organizational hierarchy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
