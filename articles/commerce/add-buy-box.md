@@ -92,7 +92,7 @@ To add a buy box module to a new page and set the required properties, follow th
 1. Use the template that you just created to create a page that is named **PDP page**.
 1. In the **Main** slot of the new page, add a buy box fragment.
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
-1. Finish editing the page, save it, and publish it. A buy box should appear on the product details page.
+1. To publish the page, select **Save**, select **Finish editing**, and then select **Publish**. A buy box should appear on the product details page.
 
 ## Additional resources
 
