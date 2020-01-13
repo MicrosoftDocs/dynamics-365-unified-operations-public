@@ -95,7 +95,7 @@ The following steps are required so that device activation works correctly when 
 4. Select **Settings** at the top of the tile to open the **Settings** tile for the application. Then select **Required permissions**.
 5. On the **Required permissions** tile, select **+ Add**.
 6. On the **Add API access** tile, select **1 Select an API**.
-7. On the **Select an API** tile, in the search field, enter the name of the Commerce Scale Unit Azure AD application that you created in the "Create the Commerce Scale Unit Azure AD application" section. (In this topic, the application is named **Customized Retail Server**.) Select the item that corresponds to that application, and then select **Select**.
+7. On the **Select an API** tile, in the search field, enter the name of the Commerce Scale Unit Azure AD application that you created in the "Create the Commerce Scale Unit Azure AD application" section. (In this topic, the application is named **Customized Commerce Server**.) Select the item that corresponds to that application, and then select **Select**.
 
     On the **Add API access** tile, **2 Select permission** is automatically selected, and a new tile appears that is named **Enable Access**.
 
@@ -107,10 +107,10 @@ The following steps are required so that device activation works correctly when 
 13. Find the value that corresponds to the **AADClientId** key. (By default, this value is a globally unique identifier [GUID] that corresponds to the headquarters environment.) Paste the value that you copied in step 3.
 14. Select **File** \> **Save**.
 
-### Configure Dynamics 365 headquarters
-The previous steps were required so that the Retail Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Dynamics 365 headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a whitelist.)
+### Configure Dynamics 365 Headquarters
+The previous steps were required so that the Retail Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a whitelist.)
 
-1. In a web browser, go to the Dynamics 365 headquarters URL, and sign in by using Azure AD credentials.
+1. In a web browser, go to the Headquarters URL, and sign in by using Azure AD credentials.
 2. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 3. On the **Identity Providers** tab, in the **Identity providers** section, select the provider that begins with `HTTPS://sts.windows.net/`. The values in the **Relying parties** section are updated, based on the provider that you selected.
 5. In the **Relying parties** section, select **+ Add**, and enter the following values:
@@ -128,7 +128,7 @@ The previous steps were required so that the Retail Modern POS application can b
 
 8. On the Action Pane, select **Save**.
 9. Go to **Retail and Commerce** &gt; **Retail and CommerceIT** \> **Distribution schedule**.
-10. Select job **1110** (**Global configuration**), and then, on the Action Pane, select **Run now**. This job synchronizes the new data. However, there is a cache in Retail Server that won't be updated for several minutes. Therefore, if you require an immediate update, the Retail Server application pool must be recycled.
+10. Select job **1110** (**Global configuration**), and then, on the Action Pane, select **Run now**. This job synchronizes the new data. However, there is a cache in Commerce Scale Unit that won't be updated for several minutes. Therefore, if you require an immediate update, the Commerce Scale Unit application pool must be recycled.
 
     > [!NOTE]
     > For best results, verify that Retail Modern POS is closed, and that no instances of DLLHost.exe exist in Task Manager.
