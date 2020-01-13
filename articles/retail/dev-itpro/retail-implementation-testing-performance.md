@@ -2,7 +2,7 @@
 # required metadata
 
 title: Testing and performance issues
-description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 Retail implementation projects.
+description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -54,7 +54,7 @@ If you use Retail Modern POS/Cloud POS, make sure that you use the correct user 
 
 In some cases, channel performance might not be as good as you expected. Poor performance is often caused by the following factors. This list is in order from highest to lowest impact.
 
-- Additional custom calls to Retail Server. If you extend the product with additional Retail Server calls, performance often decreases significantly. Not only is there a possibility of additional processing, but the network latency must also be considered. We recommend that you try to avoid any additional Retail Server calls. Often, you can accomplish the same tasks by using extension properties and extending existing Commerce runtime (CRT) handlers or triggers.
+- Additional custom calls to Commerce Scale Unit. If you extend the product with additional calls, performance often decreases significantly. Not only is there a possibility of additional processing, but the network latency must also be considered. We recommend that you try to avoid any additional Commerce Scale Unit calls. Often, you can accomplish the same tasks by using extension properties and extending existing Commerce runtime (CRT) handlers or triggers.
 - Additional channel database extensions. Make sure that your custom SQL is efficient and uses correct indexes.
 - Multiple runs of the same custom or built-in CRT SQL queries. If this approach is too expensive, caching in the CRT request handler can be applied, as appropriate.
 
@@ -74,12 +74,12 @@ Typically, when you test the performance of a system, you should focus on compon
 Here are some of the reasons why bottlenecks can occur:
 
 - Resource-intensive calculations, such as statement posting, change calculations for channel data synchronization, warehousing operations that involve a large product assortment, and MRP (Material Requirements Planning) runs
-- Complex retail business logic for multiple terminals or stores that run on a few Retail Servers (either in the cloud or in a Retail store scale unit)
-- Integrated third-party systems (integrated from either Retail or Retail Server)
-- Real-time transaction services that are frequently called from Retail Server.
+- Complex business logic for multiple terminals or stores that run on a few Commerce Scale Unit 
+- Integrated third-party systems (integrated from either Commerce or Commerce Scale Unit)
+- Real-time transaction services that are frequently called from Commerce Scale Unit.
 - Non-standard or extended standard functionality (for example, extended statement posting that uses a custom WHS code)
 
-In general, default and non-real-time POS operations aren't considered bottlenecks because they have their own dedicated resource: the computer that the POS is installed or running on. Performance issues are typically caused by the business logic or "chatty" calls to Retail Server.
+In general, default and non-real-time POS operations aren't considered bottlenecks because they have their own dedicated resource: the computer that the POS is installed or running on. Performance issues are typically caused by the business logic or "chatty" calls to Commerce Scale Unit.
 
 Ideally, performance testing should be done after some initial optimizations have already been completed by using the information earlier in this topic. If the system doesn't perform well for a single user or process, it won't perform well for concurrent users or processes. For more information, see [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/). Additionally, in the Finance documentation, search for "PerfSdk" or "Trace parser."
 
