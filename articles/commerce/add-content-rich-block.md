@@ -63,13 +63,13 @@ To add a text block module to a new page and set the required properties, follow
 
 1. Create a page template that is named **Content template**. 
 1. In the **Body** slot, add a **Default page** module.
-1. Check in the template, and publish it.
+1. Finish editing and publish the template.
 1. Use the content template that you just created to create a page that is named **Content page**.
-1. In the **Main Slot** of the new page, add a container module.
-1. In the property pane on the right, set the **Width** property to **Fill container**.
+1. In the **Main** slot of the new page, add a container module.
+1. In the **Container** property pane, set the **Width** property to **Fill container**.
 1. Add a **Text block** module to the container module. 
 1. In the text block module property pane, add text to the **Rich text** field.
-1. Check in the page, and publish it.
+1. Finish editing and publish the page.
 
 ## Additional resources
 
