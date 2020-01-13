@@ -38,11 +38,11 @@ This topic explains how to extend dual currency accounting for sales taxes and t
 
 The Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018). It changes the way that accounting entries in the reporting currency are calculated.
 
-In earlier versions, the logic to calculate amounts in the reporting currency was as follows.
+In earlier versions, transactions were converted to the reporting currency in the following sequence: 
 
-- Transaction currency amount > Accounting currency amount > Reporting currency amount
+Transaction total was calculated in the transaction currency > Transaction amount was converted to the accounting currency > Accounting currency amount was converted to the Reporting currency
 
-After dual currency feature, the logic to calculate amount in reporting currency is:
+After enabling the dual currency feature, transactions were converted to the reporting currency in the following sequence:
 
 - Transaction currency amount > Reporting currency amount
 
@@ -59,7 +59,7 @@ The new features are currently enabled for private preview customers. To enable 
 
 ## Sales tax conversion
 
-This parameter provides two options to convert tax amount from transaction currency to tax currency. 
+The **Sales tax conversion** parameter provides two options to convert tax amount from transaction currency to tax currency. 
 
 - Accounting currency: The path will be "Amount in transaction currency > Amount in accounting currency > Amount in tax currency". The accounting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
 - Reporting currency: The path will be "Amount in transaction currency > Amount in reporting currency > Amount in tax currency". The reporting currency exhange rate type (configured in Ledger setup) will be used for the currency conversion.
