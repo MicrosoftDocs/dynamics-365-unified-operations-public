@@ -91,7 +91,7 @@ To add an promo banner module to a page and set the required properties, follow 
 
 [Text block module](add-content-rich-block.md)
 
-[Feature module](add-feature-module.md)
+[Content block module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
 
