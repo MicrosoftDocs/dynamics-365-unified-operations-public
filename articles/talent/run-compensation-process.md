@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Run the compensation process
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 The customer is trying to run the compensation process in Microsoft Dynamics 365 Talent but isn't having any success.

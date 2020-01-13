@@ -48,24 +48,26 @@ An **anytype** variable is automatically converted to a date, enumeration (enum)
 
 ### anytype examples
 
-    // An example of using anytype variables.
-    public static str range(anytype _from, anytype _to)
-    {
-        return queryValue(_from) + '..' + queryValue(_to);
-    }
+```xpp
+// An example of using anytype variables.
+public static str range(anytype _from, anytype _to)
+{
+    return queryValue(_from) + '..' + queryValue(_to);
+}
 
-    // Another example of using anytype variables.
-    void put(int position, anytype data)
-    {
-        record = conPoke (record, position, data);
-    }
+// Another example of using anytype variables.
+void put(int position, anytype data)
+{
+    record = conPoke (record, position, data);
+}
 
-    public void AnytypeMethod()
-    {
-        // An example of automatic conversion for anytype.
-        anytype a;
-        a = "text"; // Automatically assigns a string literal.
-    }
+public void AnytypeMethod()
+{
+    // An example of automatic conversion for anytype.
+    anytype a;
+    a = "text"; // Automatically assigns a string literal.
+}
+```
 
 ## boolean
 
@@ -75,37 +77,39 @@ A **boolean** is automatically converted to an **int**, **date**, or **real**. I
 
 ### boolean examples
 
-    public void BooleanMethod()
+```xpp
+public void BooleanMethod()
+{
+    // Simple declaration of a boolean variable, b.
+    boolean b;
+
+    // Multiple declarations of booleans.
+    boolean b1, b2;
+
+    // Boolean variable is initialized to true.
+    boolean b3 = true;
+
+    // Declares a dynamic array of booleans.
+    boolean b4[];
+
+    // This example shows the most common usage of a boolean: a boolean in
+    // a conditional statement and as a result of a logical expression.
+    void main()
     {
-        // Simple declaration of a boolean variable, b.
-        boolean b;
+        // Declares a boolean called exprValue.
+        boolean exprValue;
 
-        // Multiple declarations of booleans.
-        boolean b1, b2;
+        // Assigns ExprValue the value of (7*6 == 42), which equates to true.
+        exprValue = (7*6 == 42);
 
-        // Boolean variable is initialized to true.
-        boolean b3 = true;
-
-        // Declares a dynamic array of booleans.
-        boolean b4[];
-
-        // This example shows the most common usage of a boolean: a boolean in
-        // a conditional statement and as a result of a logical expression.
-        void main()
+        // If the conditional statement is true, print "OK".
+        if (exprValue)
         {
-            // Declares a boolean called exprValue.
-            boolean exprValue;
-
-            // Assigns ExprValue the value of (7*6 == 42), which equates to true.
-            exprValue = (7*6 == 42);
-
-            // If the conditional statement is true, print "OK".
-            if (exprValue)
-            {
-                print "OK";  //"OK" is printed because the expression is true.
-            }
+            print "OK";  //"OK" is printed because the expression is true.
         }
     }
+}
+```
 
 ## date
 
@@ -119,40 +123,42 @@ You can add and subtract integers from dates, which moves the date some days int
 
 ### date examples
 
-    public void DateMethod()
+```xpp
+public void DateMethod()
+{
+    // Simple declaration of a date variable, d.
+    date d;
+
+    // Multiple declaration of two date variables.
+    date d1, d2;
+
+    // A date variable, d3, is initialized to the 21st of November 1998.
+    date d3 = 21\11\1998;
+
+    // Declaration of a dynamic array of dates.
+    date d4[];
+
+    // Using arithmetic operators with integer variables and dates.
+    void myMethod()
     {
-        // Simple declaration of a date variable, d.
-       date d;
+        int anInteger;
+        date aDate;
+        // Sets the date variable aDate to January 1, 1998.
+        aDate = 1\1\1998;
+        // Sets the integer variable anInteger to 30.
+        anInteger = 30;
+        // Uses an integer value in the computation of dates.
+        // This sets aDate to aDate + 30; that is the 31st of January 1998.
+        aDate = aDate + anInteger;
 
-        // Multiple declaration of two date variables.
-        date d1, d2;
-
-        // A date variable, d3, is initialized to the 21st of November 1998.
-        date d3 = 21\11\1998;
-
-        // Declaration of a dynamic array of dates.
-        date d4[];
-
-        // Using arithmetic operators with integer variables and dates.
-        void myMethod()
-        {
-            int anInteger;
-            date aDate;
-            // Sets the date variable aDate to January 1, 1998.
-            aDate = 1\1\1998;
-            // Sets the integer variable anInteger to 30.
-            anInteger = 30;
-            // Uses an integer value in the computation of dates.
-            // This sets aDate to aDate + 30; that is the 31st of January 1998.
-            aDate = aDate + anInteger;
-
-            // Create 2 variables, set bDate, and then subtract from that date.
-            date bDate;
-            int dateDifference;
-            bDate = 2\10\1998; 
-            dateDifference = bDate - aDate; // dateDifference will equal 244.
-        }
+        // Create 2 variables, set bDate, and then subtract from that date.
+        date bDate;
+        int dateDifference;
+        bDate = 2\10\1998; 
+        dateDifference = bDate - aDate; // dateDifference will equal 244.
     }
+}
+```
 
 ## enum
 
@@ -175,14 +181,16 @@ Hundreds of enumerable types are built into the standard application. For exampl
 
 ### enum examples
 
-    public void EnumMethod()
-    {
-        // Declare the enum (a NoYes enum) in the Application Explorer.
-        NoYes done;
+```xpp
+public void EnumMethod()
+{
+    // Declare the enum (a NoYes enum) in the Application Explorer.
+    NoYes done;
 
-        // An array of Criteria enums.
-        Criteria crit[100];
-    }
+    // An array of Criteria enums.
+    Criteria crit[100];
+}
+```
 
 ## guid
 
@@ -200,49 +208,53 @@ The size of a **guid** is 16 bytes or 128-bits. The following explicit [conversi
 
 The following set of examples shows how to use the **guid** functions. The code output of these examples follows.
 
-    // An example of how to use the GUID functions.
-    static void GuidRoundTripJob(Args _args)
-    {
-        guid guid2;
-        str string3;
+```xpp
+// An example of how to use the GUID functions.
+static void GuidRoundTripJob(Args _args)
+{
+    guid guid2;
+    str string3;
 
-        // Convert a guid to a string, and back to a guid.
-        guid2 = newGuid();
-        info(strFmt("Info_a1:  guid2 == %1", guid2));
-        string3 = guid2str(guid2);
-        info(strFmt("Info_a2:  string3 == %1", string3));
-        guid2 = str2guid(string3);
-        info(strFmt("Info_a3:  guid2 == %1", guid2));
+    // Convert a guid to a string, and back to a guid.
+    guid2 = newGuid();
+    info(strFmt("Info_a1:  guid2 == %1", guid2));
+    string3 = guid2str(guid2);
+    info(strFmt("Info_a2:  string3 == %1", string3));
+    guid2 = str2guid(string3);
+    info(strFmt("Info_a3:  guid2 == %1", guid2));
 
-        // Test string representations of a guid. Mixing upper and lower case letters does not affect the guid.
-        guid2 = str2guid("BB345678-abcd-ABCD-0000-bbbbffff9012");
-        string3 = guid2str(guid2);
-        info(strFmt("Info_b1:  8-4-4-4-12 format for dashes works (%1)", string3));
-        info(strFmt("Info_b2:  Mixed upper and lower case works."));
+    // Test string representations of a guid. Mixing upper and lower case letters does not affect the guid.
+    guid2 = str2guid("BB345678-abcd-ABCD-0000-bbbbffff9012");
+    string3 = guid2str(guid2);
+    info(strFmt("Info_b1:  8-4-4-4-12 format for dashes works (%1)", string3));
+    info(strFmt("Info_b2:  Mixed upper and lower case works."));
 
-        // Test invalid dash locations, see output is all zeros. Dash locations must be exact.
-        guid2 = str2guid("CC2345678abcd-ABCD-0000-cccc9012");
-        string3 = guid2str(guid2);
-        info(strFmt("Info_c1:  These embedded dash locations are required.  %1", string3));
+    // Test invalid dash locations, see output is all zeros. Dash locations must be exact.
+    guid2 = str2guid("CC2345678abcd-ABCD-0000-cccc9012");
+    string3 = guid2str(guid2);
+    info(strFmt("Info_c1:  These embedded dash locations are required.  %1", string3));
 
-        // Braces {} are optional.
-        guid2 = str2guid("{DD345678-abcd-ABCD-0000-ddddaaaa9012}");
-        string3 = guid2str(guid2);
-        info(strFmt("Info_d1:  Braces {} are optional (%1)", string3));
-    }
+    // Braces {} are optional.
+    guid2 = str2guid("{DD345678-abcd-ABCD-0000-ddddaaaa9012}");
+    string3 = guid2str(guid2);
+    info(strFmt("Info_d1:  Braces {} are optional (%1)", string3));
+}
+```
 
 ### guid code output
 
 The following output appears in the Infolog. Note that the string includes the optional braces.
 
-    Message (02:26:46 pm)
-    Info_a1:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
-    Info_a2:  string3 == {93945629-734B-475E-99CE-6AA7AFA43259}
-    Info_a3:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
-    Info_b1:  8-4-4-4-12 format for dashes works ({BB345678-ABCD-ABCD-0000-BBBBFFFF9012})
-    Info_b2:  Mixed upper and lower case works.
-    Info_c1:  These embedded dash locations are required.  {00000000-0000-0000-0000-000000000000}
-    Info_d1:  Braces {} are optional ({DD345678-ABCD-ABCD-0000-DDDDAAAA9012})
+```xpp
+Message (02:26:46 pm)
+Info_a1:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
+Info_a2:  string3 == {93945629-734B-475E-99CE-6AA7AFA43259}
+Info_a3:  guid2 == {93945629-734B-475E-99CE-6AA7AFA43259}
+Info_b1:  8-4-4-4-12 format for dashes works ({BB345678-ABCD-ABCD-0000-BBBBFFFF9012})
+Info_b2:  Mixed upper and lower case works.
+Info_c1:  These embedded dash locations are required.  {00000000-0000-0000-0000-000000000000}
+Info_d1:  Braces {} are optional ({DD345678-ABCD-ABCD-0000-DDDDAAAA9012})
+```
 
 ## int and int64
 
@@ -256,39 +268,41 @@ Additionally, the following explicit [conversion functions](xpp-conversion-run-t
 
 The following example shows how to declare integers and use them in expressions. If you try to assign the largest integer plus 1 to an **int64**, you get the wrong result, because the number is interpreted as a 32-bit number. Therefore, the number is wrapped around and stored instead as -2,147,483,647. To prevent this behavior, add "u" to the end of the number. For example, enter **int64 i = 0x8000 0000u** (0x8000 0000 is 2,147,483,648).
 
-    public void IntegerMethod()
+```xpp
+public void IntegerMethod()
+{
+    // Declaration of an integer variable, i.
+    int i;
+
+    // Declaration of two int64 variables.
+    int64 i1, i2;
+
+    // An integer variable is initialized to the value 100.
+    int i3 = 100;
+
+    // Declaration of a dynamic array of integers.
+    int i4[];
+    void element()
     {
-        // Declaration of an integer variable, i.
-        int i;
+        // Two integer variables are declared and initialized.
+        int k = 1, j = 2;
 
-        // Declaration of two int64 variables.
-        int64 i1, i2;
+        // j is assigned the result of j + ((i + i) DIV 2).
+        j +=(i + i) div 2;
 
-        // An integer variable is initialized to the value 100.
-        int i3 = 100;
+        // This results in: j=3.
 
-        // Declaration of a dynamic array of integers.
-        int i4[];
-        void element()
+        if (j > 2 )
         {
-            // Two integer variables are declared and initialized.
-            int k = 1, j = 2;
-
-            // j is assigned the result of j + ((i + i) DIV 2).
-            j +=(i + i) div 2;
-
-            // This results in: j=3.
-
-            if (j > 2 )
-            {
-                print "J is greater than 2";
-            }
-            else
-            {
-                print "J is NOT greater than 2";
-            }
+            print "J is greater than 2";
+        }
+        else
+        {
+            print "J is NOT greater than 2";
         }
     }
+}
+```
 
 ## real
 
@@ -301,102 +315,105 @@ A **real** variable is automatically converted to a **boolean**, **enum**, or **
 Direct assignments between X++ **real** and the Microsoft .NET Framework **System.Decimal** convert the value correctly. A call to a conversion function isn't required. A *decimal number* is a floating-point value that consists of a sign, a numeric value where each digit is in the range 0 through 9, and a scaling factor that indicates the position of a floating decimal point that separates the integral and fractional parts of the numeric value. The binary representation of a **real** value consists of a 1-bit sign, a 96-bit integer number, and a scaling factor. The scaling factor is used to divide the 96-bit integer and specify what part of it is a decimal fraction. The scaling factor is implicitly the number 10 raised to an exponent in the range 0 through 28. Therefore, the binary representation of a decimal value represents (\[-2⁹⁶ through 2⁹⁶\] ÷ 10(0\\ through\\ 28)), where -(2⁹⁶-1) is the minimum value that can be expressed and 2⁹⁶-1 is the maximum value. 
 
 > [!NOTE] 
-
 > The type that is used to represent **real** values in Finance and Operations applications has changed from the interpreted X++ of Microsoft Dynamics AX 2012. However, you don't have to rewrite any code, because the new type can express all the values that the old type could express. We provide this material in the interest of full disclosure only. 
 
 All instances of the **real** type are now implemented as instances of the .NET decimal type (**System.Decimal**). Just as the **real** type in previous versions, the decimal type in a binary-coded decimal type is resilient to rounding errors. The range and resolution of the decimal type differ from previous versions. The original X++ **real** type supported 16 digits and an exponent that defined the position of the decimal point. However, the X++ **real** type for Finance and Operations applications can represent decimal numbers in the range 79,228,162,514,264,337,593,543,950,335 (2⁹⁶-1) through -79,228,162,514,264,337,593,543,950,335 (-\[2⁹⁶-1\]). 
 
 Rounding is still required for the new **real** type. For example, the following code produces a result of 0.9999999999999999999999999999 instead of 1. No number of decimals will suffice to represent the value of 1/3 accurately. The discrepancy obtained here is due to the fact that only a finite number of decimals are provided. You should use the **round** function to round to the number of decimals required.
 
-    // An example of using the debugger to show the value of the variables.
-    public static void UseTheDebugger(Args a)
-    {
-        real dividend = 1.0;
-        real divisor = 3.0;
-        str stringvalue;
-        System.Decimal valueAsDecimal;
-        real value = dividend/divisor * divisor; 
-        valueAsDecimal = value;
-        info(valueAsDecimal.ToString("G28"));
-        // An example of using the Round function to round to the number of decimals required.
-        value  = round(value, 2);
-    }
+```xpp
+// An example of using the debugger to show the value of the variables.
+public static void UseTheDebugger(Args a)
+{
+    real dividend = 1.0;
+    real divisor = 3.0;
+    str stringvalue;
+    System.Decimal valueAsDecimal;
+    real value = dividend/divisor * divisor; 
+    valueAsDecimal = value;
+    info(valueAsDecimal.ToString("G28"));
+    // An example of using the Round function to round to the number of decimals required.
+    value  = round(value, 2);
+}
+```
 
 ### real examples
 
-    public void RealMethod()
+```xpp
+public void RealMethod()
+{
+    // Simple declaration of a real variable, r.
+    real r;
+
+    // Multiple declaration of two real variables.
+    real r1, r2;
+
+    // A real variable is initialized to the approximate value of pi.
+    real r3 = 3.1415;
+
+    // Declaration of a dynamic array of reals.
+    real r4[];
+
+    // An example of a real literal written using exponential notation.
+    real r;
+    r = 1.000e3;
+    r = 1.2345e+3;
+    r = 1.2345e+03;
+    r = 1234.5e4;
+    r = 1.0e1; // Means 1.0E1 
+}
+
+// An example of automatic conversions.
+void main()
+{
+    // Declares a variable of type integer with the name exprValue.
+    int exprValue;
+
+    // Declares a real variable with the name area.
+    real area = 3.141528;
+    exprValue = Area/3;
+
+    // The expression Area/3 is a real expression because
+    // division is a real operator, and the result is 1.047176. This result is
+    // automatically converted (actually truncated) to an integer with the value 1,
+    // because exprValue is an integer.
+}
+
+// An example of a real being converted to .NET System.Decimal.
+void AnotherMain(Args _args)
+{
+    real real9;
+    System.Decimal sysdec1;
+
+    // Direct assignments supported between these types.
+    sysdec1 = 2.3456;
+    real9 = sysdec1;
+    info(strFmt("strFmt says real9 == %1", real9));
+}
+
+/***
+Message (05:48:43 pm)
+strFmt says real9 == 2.35
+***/
+
+// An example of using reals in expressions.
+void myMethod()
+{
+    // Two real variables are declared and initialized.
+    real i = 2.5, j = 2.5;
+
+    // j is assigned the result of j * i, so j=6.25.
+    j = j * i;
+    if (j > (i * 2)) // If j > 5 
     {
-        // Simple declaration of a real variable, r.
-        real r;
-
-        // Multiple declaration of two real variables.
-        real r1, r2;
-
-        // A real variable is initialized to the approximate value of pi.
-        real r3 = 3.1415;
-
-        // Declaration of a dynamic array of reals.
-        real r4[];
-
-        // An example of a real literal written using exponential notation.
-        real r;
-        r = 1.000e3;
-        r = 1.2345e+3;
-        r = 1.2345e+03;
-        r = 1234.5e4;
-        r = 1.0e1; // Means 1.0E1 
+        print "Great"; // "Great" is printed.
     }
-
-    // An example of automatic conversions.
-    void main()
+    else
     {
-        // Declares a variable of type integer with the name exprValue.
-        int exprValue;
-
-        // Declares a real variable with the name area.
-        real area = 3.141528;
-        exprValue = Area/3;
-
-        // The expression Area/3 is a real expression because
-        // division is a real operator, and the result is 1.047176. This result is
-        // automatically converted (actually truncated) to an integer with the value 1,
-        // because exprValue is an integer.
+        print "Oops"; // else "Oops" is printed.
     }
-
-    // An example of a real being converted to .NET System.Decimal.
-    void AnotherMain(Args _args)
-    {
-        real real9;
-        System.Decimal sysdec1;
-
-        // Direct assignments supported between these types.
-        sysdec1 = 2.3456;
-        real9 = sysdec1;
-        info(strFmt("strFmt says real9 == %1", real9));
-    }
-
-    /***
-    Message (05:48:43 pm)
-    strFmt says real9 == 2.35
-    ***/
-
-    // An example of using reals in expressions.
-    void myMethod()
-    {
-        // Two real variables are declared and initialized.
-        real i = 2.5, j = 2.5;
-
-        // j is assigned the result of j * i, so j=6.25.
-        j = j * i;
-        if (j > (i * 2)) // If j > 5 
-        {
-            print "Great"; // "Great" is printed.
-        }
-        else
-        {
-           print "Oops"; // else "Oops" is printed.
-        }
-    }
+}
+```
 
 ## str
 
@@ -412,28 +429,30 @@ A string can hold an unlimited number of characters, however, you can specify th
 
 ### str examples
 
-    void StringMethod()
+```xpp
+void StringMethod()
+{
+    // Declare a dynamic string of unlimited length.
+    str unlimitedString;
+
+    // Declare a string with a maximum of 64 characters
+    // in order to force a truncation, initialized to "A".
+    str 64 maxLengthString = "A";
+
+    // Declare an array of 100 strings.
+    str 30 hundredStrings[100];
+
+    // Using strings in expressions.
+    void myMethod()
     {
-        // Declare a dynamic string of unlimited length.
-        str unlimitedString;
+        // Two strings are declared and initialized.
+        str a="Hello", b="World";
 
-        // Declare a string with a maximum of 64 characters
-        // in order to force a truncation, initialized to "A".
-        str 64 maxLengthString = "A";
-
-        // Declare an array of 100 strings.
-       str 30 hundredStrings[100];
-
-        // Using strings in expressions.
-        void myMethod()
-        {
-            // Two strings are declared and initialized.
-            str a="Hello", b="World";
-
-            // The concatenation of a, " " and b is printed in a window.
-            print a+" "+b;
-        }
+        // The concatenation of a, " " and b is printed in a window.
+        print a+" "+b;
     }
+}
+```
 
 ## timeOfDay
 
@@ -441,14 +460,16 @@ The **timeOfDay** (time) data type is an integer value that represents the numbe
 
 ### timeOfDay examples
 
-    public void TimeofdayMethod()
-    {
-        // Declaration of a timeOfDay variable, time1.
-        timeOfDay time1;
+```xpp
+public void TimeofdayMethod()
+{
+    // Declaration of a timeOfDay variable, time1.
+    timeOfDay time1;
 
-        // Declaration and initialization of a timeOfDay variable to 00:21:35.
-        timeOfDay time2 = 1295;
-    }
+    // Declaration and initialization of a timeOfDay variable to 00:21:35.
+    timeOfDay time2 = 1295;
+}
+```
 
 ## utcdatetime
 
@@ -468,14 +489,16 @@ Comparison operators are the only type of operators that can be used with the **
 
 ### utcdatetime examples
 
-    public void UtcdatetimeMethod()
-    {
-        // Declaring a utcdatetime literal.
-        utcdatetime myUtc2 = 1988-07-20T13:34:45;
+```xpp
+public void UtcdatetimeMethod()
+{
+    // Declaring a utcdatetime literal.
+    utcdatetime myUtc2 = 1988-07-20T13:34:45;
 
-        // Another example of declaring a utcdatetime literal.
-        int iDay = DateTimeUtil::day(1988-07-20T13:34:45);
+    // Another example of declaring a utcdatetime literal.
+    int iDay = DateTimeUtil::day(1988-07-20T13:34:45);
 
-        // utcdatetime using a quoted string parameter into the DateTimeUtil::parse method.
-        utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
-    }
+    // utcdatetime using a quoted string parameter into the DateTimeUtil::parse method.
+    utcdatetime myUtc4 = DateTimeUtil::parse("1988-07-20T13:34:45");
+}
+```

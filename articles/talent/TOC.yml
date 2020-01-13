@@ -8,6 +8,12 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: December 17, 2019
+        href: whats-new-talent-december-17-2019.md
+      - name: December 12, 2019
+        href: whats-new-talent-december-12-2019.md
+      - name: December 3, 2019
+        href: whats-new-talent-december-3-2019.md
       - name: November 19, 2019
         href: whats-new-talent-november-19-2019.md
       - name: November 12, 2019
@@ -26,16 +32,16 @@
         href: whats-new-talent-september-17-2019.md
       - name: September 10, 2019
         href: whats-new-talent-september-12-2019.md
-      - name: August 27, 2019
-        href: whats-new-talent-august-28-2019.md
-      - name: August 22, 2019
-        href: whats-new-talent-august-21-2019.md
-      - name: August 13, 2019
-        href: whats-new-talent-august-15-2019.md
-      - name: August 6, 2019
-        href: whats-new-talent-august-7-2019.md
       - name: What's new archives 2019
         items: 
+        - name: August 27, 2019
+          href: whats-new-talent-august-28-2019.md
+        - name: August 22, 2019
+          href: whats-new-talent-august-21-2019.md
+        - name: August 13, 2019
+          href: whats-new-talent-august-15-2019.md
+        - name: August 6, 2019
+          href: whats-new-talent-august-7-2019.md
         - name: July 30, 2019
           href: whats-new-talent-july-31-2019.md
         - name: July 23, 2019
@@ -134,32 +140,28 @@
       href: hr-copy-instance.md
     - name: Remove Talent environments
       href: remove-talent-environment.md
-    - name: Provisioning for the Onboard app
+    - name: Manage features
+      href: access-preview-feature.md
+    - name: Provision Onboard
       href: modular-app-tech-faq.md
-    - name: Embed PowerApps apps
+    - name: Embed Power Apps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Core HR and Common Data Service
+    - name: Core HR entities in Common Data Service
       href: CoreHREntities.md
     - name: Get support for Talent
       href: talent-support.md
   - name: Staff your organization with Attract
     items:
-    - name: Which version of Attract?
+    - name: Choose a version of Attract
       href: attract-comprehensive-hiring.md
     - name: Attract features and capabilities
       href: attract-overview.md
-    - name: Frequently asked questions
-      items:
-      - name: LinkedIn integration FAQ
-        href: attract-linkedin-faq.md
     - name: Configure system settings
       items:
       - name: Configure company information
         href: admin-settings-attract.md
       - name: Set user permissions
         href: security-attract.md
-      - name: Manage features
-        href: access-preview-feature.md
       - name: Set up your career site
         href: career-site.md
       - name: Enable Broadbean integration
@@ -168,13 +170,15 @@
         href: attract-configure-email-settings.md
       - name: Set up LinkedIn integration
         href: attract-admin-linkedin.md
+      - name: LinkedIn integration FAQ
+        href: attract-linkedin-faq.md
     - name: Create a hiring process
       items:
-      - name: Create a process template
+      - name: Create a hiring process template
         href: process-templates-attract.md
-      - name: Activities in hiring processes 
+      - name: Add activities to a hiring process 
         href: activities-attract.md
-      - name: Email templates
+      - name: Create email templates
         href: email-templates.md
       - name: Use analytic reports
         href: analytic-reports.md
@@ -197,10 +201,10 @@
       - name: Track candidate sources
         href: source-tracking.md    
       - name: Intelligent recommendations
-        href: Intelligent-Recommendations.md
+        href: intelligent-recommendations.md
     - name: Set up interviews
       items: 
-      - name: Interview scheduling and feedback
+      - name: Schedule interviews
         href: interview-scheduling-feedback.md
     - name: Make an offer
       items:
@@ -433,7 +437,7 @@
     items:
     - name: Embedded Power BI in workspaces
       href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-    - name: Extend Talent by using PowerApps and Microsoft Flow - Example scenarios
+    - name: Extend Talent with Power Apps and Power Automate
       href: extensibility-examples.md
     - name: Mobile app
       items:
@@ -443,8 +447,6 @@
           href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: My team mobile workspace
           href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-      - name: Publish mobile workspaces
-        href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Track changes in recruiting data
       href: process-auditing.md
     - name: Extensibility in Attract

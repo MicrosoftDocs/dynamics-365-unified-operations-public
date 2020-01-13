@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Embed Power Apps apps in Dynamics 365 - Core HR
 
-[!include [banner](includes/banner.md)]
-
 **Issue**
 
 The **Power Apps** menu item has disappeared from the **System administration** module.

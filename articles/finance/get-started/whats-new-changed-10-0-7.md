@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Finance version 10.0.7 (January 2020)
+title: What's new and changed in Dynamics 365 Finance version 10.0.7 (January 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.7.
 author: roschlom
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,10 +29,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
 
 ---
-# Preview features in Dynamics 365 Finance version 10.0.7 (January 2020)
+# What's new and changed in Dynamics 365 Finance version 10.0.7 (January 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes preview features that are new or changed for Platform update 31 for Microsoft Dynamics 365 Finance, version 10.0.7. This version has a build number of 7.0.5457 and is available as follows:
 
@@ -124,7 +123,7 @@ Instead of creating a new tax component from scratch, users can now create it wi
 
 ### Platform update 31
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [Preview features in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.7 includes Platform update 31. To learn more about Platform update 31, see [What's new and changed in Platform update 31](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-31.md).
 
 
 ### Bug fixes 

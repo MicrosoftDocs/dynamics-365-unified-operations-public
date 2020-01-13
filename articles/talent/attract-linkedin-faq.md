@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Attract integration with LinkedIn FAQ
+title: LinkedIn integration FAQ
 description: This topic answers questions that you might have about integration between LinkedIn and Microsoft Dynamics 365  Talent - Attract.
 author: hasrivas
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Attract integration with LinkedIn FAQ
+# LinkedIn integration FAQ
 
 [!include [banner](includes/banner.md)]
 

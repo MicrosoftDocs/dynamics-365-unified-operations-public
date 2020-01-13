@@ -50,7 +50,7 @@ Array indexes begin at 1. The first item in the array is referenced as \[1\], th
 
 ### Array examples
 
-```X++
+```xpp
 public void ArrayMethod()
 {
     int myArray[10]; // Fixed-length array with 10 integers.
@@ -87,44 +87,48 @@ public void ArrayMethod()
 
 Some languages, such as C++ and C\#, let you declare arrays that have more than one index. In other words, you can define "arrays of arrays." In X++, you can't directly create multiple array indexes because only one-dimensional arrays are supported. However, you can implement multiple indexes by using the method that is described in this section. For example, you want to declare an array that has two dimensions, to hold an amount that is earned by country by dimension. There are 10 countries and three dimensions. In C++ and C\#, you declare the following array.
 
-    // This is C# or C++ code, not X++ code.
-    real earning[10, 3];
+```xpp
+// This is C# or C++ code, not X++ code.
+real earning[10, 3];
+```
 
 However, X++ doesn't support this declaration. Instead, you can define a one-dimensional array where the number of elements is the product of the elements in each dimension. Here is an example.
 
-    public void MultipleArrayMethod()
-    {
-        // Step 1: define a one-dimensional array with the number
-        // of elements that is the product of the elements in each dimension.
-        real earnings[10*3];
+```xpp
+public void MultipleArrayMethod()
+{
+    // Step 1: define a one-dimensional array with the number
+    // of elements that is the product of the elements in each dimension.
+    real earnings[10*3];
 
-        // Step 2: to refer to a specific element, such as earnings[i,j], write the following:
-        // declare i and j (maybe) and assign the value to something
-        int i = 1;
-        int j = 2;
-        real element = earnings[(i-1)*3 + j];
-    }
+    // Step 2: to refer to a specific element, such as earnings[i,j], write the following:
+    // declare i and j (maybe) and assign the value to something
+    int i = 1;
+    int j = 2;
+    real element = earnings[(i-1)*3 + j];
+}
 
-    // This can be written into a macro like this:
-    #localmacro.earningIndex
-    (%1-1)*3+%2
-    #endmacro
+// This can be written into a macro like this:
+#localmacro.earningIndex
+(%1-1)*3+%2
+#endmacro
 
-    public void CallTheMacro()
-    {
-        // Next, call the specific element within the macro like this:
-        int i = 1;
-        int j = 2;
-        real element = earnings[#earningIndex(i,j)];
+public void CallTheMacro()
+{
+    // Next, call the specific element within the macro like this:
+    int i = 1;
+    int j = 2;
+    real element = earnings[#earningIndex(i,j)];
 
-        // The previous scheme can be extended to any number of dimensions.
-        // The element a[i1, i2, ..., ik] can be accessed by computing the
-        // offset into an array containing (d1*d2*...*dk) elements.
-        //(i1 - 1)*d2*d3*..*dk +
-        //(i2 - 1)*d3*d4*...*dk + .... +
-        //(ik-1 -1)*dk +
-        //(ik-1)
-    }
+    // The previous scheme can be extended to any number of dimensions.
+    // The element a[i1, i2, ..., ik] can be accessed by computing the
+    // offset into an array containing (d1*d2*...*dk) elements.
+    //(i1 - 1)*d2*d3*..*dk +
+    //(i2 - 1)*d3*d4*...*dk + .... +
+    //(ik-1 -1)*dk +
+    //(ik-1)
+}
+```
 
 ## Container
 
@@ -146,103 +150,105 @@ In Dynamics AX 2012, although you could use the X++ compiler to store object ref
 
 ### Container examples
 
-    public void ContainerExample() 
-    {
-        // First, declare the variables you are using.  
-        container myContainer;
-        container myContainer4;
-        container myContainer5; 
-        // Three ways to declare a container.
-        myContainer = [1];
-        myContainer += [2];
-        myContainer4 = myContainer5;
+```xpp
+public void ContainerExample() 
+{
+    // First, declare the variables you are using.  
+    container myContainer;
+    container myContainer4;
+    container myContainer5; 
+    // Three ways to declare a container.
+    myContainer = [1];
+    myContainer += [2];
+    myContainer4 = myContainer5;
 
-        // Declare a container.
-        container cr3;
+    // Declare a container.
+    container cr3;
 
-        // Assign a literal container to a container variable.
-        cr3 = [22, "blue"];
+    // Assign a literal container to a container variable.
+    cr3 = [22, "blue"];
 
-        // Declare and assign a container.
-        container cr2 = [1, "blue", true];
+    // Declare and assign a container.
+    container cr2 = [1, "blue", true];
 
-        // Mimic container modification (implicitly creates a copy).
-        cr3 += [16, strMyColorString];
-        cr3 = conIns(cr3, 1, 3.14);
-        cr3 = conPoke(cr3, 2, "violet");
+    // Mimic container modification (implicitly creates a copy).
+    cr3 += [16, strMyColorString];
+    cr3 = conIns(cr3, 1, 3.14);
+    cr3 = conPoke(cr3, 2, "violet");
 
-        // Assignment of a container (implicitly creates a copy).
-        cr2 = cr3;
+    // Assignment of a container (implicitly creates a copy).
+    cr2 = cr3;
 
-        // Read a value from the container.
-        str  myStr = conPeek(cr2, 1);
+    // Read a value from the container.
+    str  myStr = conPeek(cr2, 1);
 
-        // One statement that does multiple assignments from a container.
-        str myStr;
-        int myInt;
-        container cr4 = ["Hello", 22, 20\07\1988];
-        [myStr, myInt] = cr4; // "Hello", 22
+    // One statement that does multiple assignments from a container.
+    str myStr;
+    int myInt;
+    container cr4 = ["Hello", 22, 20\07\1988];
+    [myStr, myInt] = cr4; // "Hello", 22
 
-        // Example of applying the = operator to a container. The example
-        // initializes myContainer2 and myContainer33.
-        myContainer2 = [2, "apple"];
+    // Example of applying the = operator to a container. The example
+    // initializes myContainer2 and myContainer33.
+    myContainer2 = [2, "apple"];
 
-        // Next, you make a copy of myContainer33 and assign the copy to myContainer2.
-        myContainer33 = [33, "grape"];
-        myContainer2 = myContainer33;  // The container that myContainer2 had been holding is no longer available and cannot be recovered.
-        // An example of building a new container by
-        // assigning a new value to myContainer33 through the += operator.
-        myContainer33 += [34, "banana"];
-    }
+    // Next, you make a copy of myContainer33 and assign the copy to myContainer2.
+    myContainer33 = [33, "grape"];
+    myContainer2 = myContainer33;  // The container that myContainer2 had been holding is no longer available and cannot be recovered.
+    // An example of building a new container by
+    // assigning a new value to myContainer33 through the += operator.
+    myContainer33 += [34, "banana"];
+}
 
-    // List class example. In this example, variable2 and variable3 refer to the same List object.
-    static void JobC(Args _args)
-    {
-        container variable2, variable33;
-        variable2 += [98];
-        variable33 = variable2;
-        variable2 += [97];
-    }
+// List class example. In this example, variable2 and variable3 refer to the same List object.
+static void JobC(Args _args)
+{
+    container variable2, variable33;
+    variable2 += [98];
+    variable33 = variable2;
+    variable2 += [97];
+}
 
-    // Container example. The variable2 and variable3 hold different containers.
-    static void JobL(Args _args)
-    {
-        List variable2,variable33;
-        variable2 = new List(Types::Integer);
-        variable2.addEnd(98);
-        variable33 = variable2;
-        variable2.addEnd(97);
-    }
+// Container example. The variable2 and variable3 hold different containers.
+static void JobL(Args _args)
+{
+    List variable2,variable33;
+    variable2 = new List(Types::Integer);
+    variable2.addEnd(98);
+    variable33 = variable2;
+    variable2.addEnd(97);
+}
 
-    // The automatic type conversion by anytype also applies to the special syntax for making multiple
-    // assignments from a container in one statement. This is shown in the following code example,
-    // which assigns a str to an int, and an int to a str.
-    static void JobContainerMultiAssignmentUsesAnytype(Args _args)
-    {
-        container con2;
-        int int4;
-        str str7;
-        con2 = ["11", 222];
-        [int4, str7] = con2;
-        info(strfmt("int4==11==(%1), str7==222==(%2)", int4, str7));
-    }
+// The automatic type conversion by anytype also applies to the special syntax for making multiple
+// assignments from a container in one statement. This is shown in the following code example,
+// which assigns a str to an int, and an int to a str.
+static void JobContainerMultiAssignmentUsesAnytype(Args _args)
+{
+    container con2;
+    int int4;
+    str str7;
+    con2 = ["11", 222];
+    [int4, str7] = con2;
+    info(strfmt("int4==11==(%1), str7==222==(%2)", int4, str7));
+}
 
-    /***  Output:
-    Message (10:36:22 am)
-    int4==11==(11), str7==222==(222)
-    ***/
+/***  Output:
+Message (10:36:22 am)
+int4==11==(11), str7==222==(222)
+***/
 
-    static void UseQuery()
-    {
-        // An example of how the compiler diagnoses attempts to store object in containers
-        container c = [new Query()];   // This statement will cause the error message shown below.
-        /*** Instance of type 'Query' cannot be added to a container. ***/
+static void UseQuery()
+{
+    // An example of how the compiler diagnoses attempts to store object in containers
+    container c = [new Query()];   // This statement will cause the error message shown below.
+    /*** Instance of type 'Query' cannot be added to a container. ***/
 
-        // An example of a code that won't cause an error message, but will
-        // cause an error message to be thrown at runtime.
-        anytype a = new Query();
-        container d = [a];
-    }
+    // An example of a code that won't cause an error message, but will
+    // cause an error message to be thrown at runtime.
+    anytype a = new Query();
+    container d = [a];
+}
+```
 
 ## Classes as data types
 
@@ -264,46 +270,50 @@ By default, member variables that aren’t adorned with an explicit modifier are
 
 In the following example, **field1** is accessed by using the explicit **this** qualifier. In this case, it might not be a good idea to make a member variable public, because that approach exposes the internal workings of the class to its consumers, and therefore creates a strong dependency between the class implementation and its consumers. You should always try to depend only on a contract, not an implementation.
 
-    public class AnotherClass3
+```xpp
+public class AnotherClass3
+{
+    int field1;
+    str field2;
+    void new()
     {
-        int field1;
-        str field2;
-        void new()
-        {
-            this.field1 = 1;   // Explicit object designated.
-            field2 = "Banana";  // 'this' assumed, as usual.
-        }
+        this.field1 = 1;   // Explicit object designated.
+        field2 = "Banana";  // 'this' assumed, as usual.
     }
+}
+```
 
 ### Static constructors and static fields
 
 *Static fields* are fields that are declared by using the **static** keyword. Conceptually, static fields apply to the class, not to instances of the class. Static constructors are guaranteed to run before any static calls or instance calls are made to the class. The execution of the static constructor is relative to the user’s session. You never call the static constructor explicitly. Instead, the compiler will generate code to make sure that the constructor is called exactly one time, before any other method on the class is called. A static constructor is used to initialize any static data or perform an action that must be performed only one time. You can't provide parameters for the static constructor, and it must be marked with the **static** keyword.
 
-    // An example of how a singleton (call instance in the example below)
-    // can be created using the static constructor.
-    public class Singleton
+```xpp
+// An example of how a singleton (call instance in the example below)
+// can be created using the static constructor.
+public class Singleton
+{
+    private static Singleton instance;
+    private void new()
     {
-        private static Singleton instance;
-        private void new()
-        {
-        }
-        static void TypeNew()    // This is the static constructor.
-        {
-            instance = new Singleton();
-        }
-
-        public static Singleton Instance()
-        {
-            return Singleton::instance;
-        }
+    }
+    static void TypeNew()    // This is the static constructor.
+    {
+        instance = new Singleton();
     }
 
-    // The singleton ensures that only one instance of the class
-    // will be called, which is consumed by the following. 
+    public static Singleton Instance()
     {
-        // Your code here.
-        Singleton i = Singleton::Instance();
+        return Singleton::instance;
     }
+}
+
+// The singleton ensures that only one instance of the class
+// will be called, which is consumed by the following. 
+{
+    // Your code here.
+    Singleton i = Singleton::Instance();
+}
+```
 
 ### Class elements in Application Explorer
 
@@ -311,26 +321,30 @@ Under most class nodes in Application Explorer, there are two special nodes: a *
 
 In the following example, the variables **m\_priority** and **m\_rectangle** are members of the class.
 
-    // An example of a classDeclaration.
-    public class YourDerivedClass extends YourBaseClass
+```xpp
+// An example of a classDeclaration.
+public class YourDerivedClass extends YourBaseClass
+{
+    int m_priority;
+    Rectangle m_rectangle;
+    void new(int _length, int _width)
     {
-        int m_priority;
-        Rectangle m_rectangle;
-        void new(int _length, int _width)
-        {
-            this.m_rectangle = new Rectangle(_length, _width);
-        }
+        this.m_rectangle = new Rectangle(_length, _width);
     }
+}
+```
 
 A **new** operator contains logic that is run when the **new** operator is used to create an instance of the class. The logic in the **new** method might construct an object and assign that object to a variable that is declared in the **classDeclaration**. Each class can have only one **new** method. However, in the **new** method, you often should call the **new** method of the base class. To call the **new** method of the base class, call **super()**. 
 
 The following example shows the **new** method for the **YourDerivedClass** class in the previous **classDeclaration** example. In this **new** method, the code constructs an instance of the **Rectangle** class. The instance is assigned to the **m\_rectangle** variable. The **this** keyword that is used in the example is optional, however, if you include it, IntelliSense might be more helpful.
 
-    // An example of the new method from the previous classDeclaration example.
-    void new(int _length, int _width)
-    {
-        this.m_rectangle = new Rectangle(_length, _width);
-    }
+```xpp
+// An example of the new method from the previous classDeclaration example.
+void new(int _length, int _width)
+{
+    this.m_rectangle = new Rectangle(_length, _width);
+}
+```
 
 ### Garbage collection
 
@@ -354,23 +368,25 @@ An extension class can contain private or protected static methods. These method
 
 Upgrades to the target class are never affected by any existing extension methods. If an upgrade to the target class adds a method that has the same name as your extension method, your extension method can no longer be reached through objects of the target class. The extension method technique uses the same dot-delimited syntax that you often use to call regular instance methods. Extension methods can access all public artifacts of the target class, but they can’t access anything that is protected or private. Therefore, extension methods can be considered a type of syntactic sugar. Regardless of the target type, an extension class is used to add extension methods to the type. For example, an extension table isn't used to add methods to a table, and there’s no such thing as an extension table.
 
-    // An example of an extension class holding a few extension methods.
-    public static class AtlInventLocation_Extension
+```xpp
+// An example of an extension class holding a few extension methods.
+public static class AtlInventLocation_Extension
+{
+    public static InventLocation refillEnabled(
+        InventLocation _warehouse,
+        boolean _isRefillEnabled = true)
     {
-        public static InventLocation refillEnabled(
-           InventLocation _warehouse,
-           boolean _isRefillEnabled = true)
-        {
-           _warehouse.ReqRefill = _isRefillEnabled;
-           return _warehouse;
-        }
-
-        public static InventLocation save(InventLocation _warehouse)
-        {
-           _warehouse.write();
-           return _warehouse;
-        }
+        _warehouse.ReqRefill = _isRefillEnabled;
+        return _warehouse;
     }
+
+    public static InventLocation save(InventLocation _warehouse)
+    {
+        _warehouse.write();
+        return _warehouse;
+    }
+}
+```
 
 ## Delegates as data types
 
@@ -378,23 +394,25 @@ A *delegate* collects methods that subscribe to it. The delegate specifies the p
 
 ### Delegate examples
 
-    abstract class VarDatClass
+```xpp
+abstract class VarDatClass
+{
+    // delegatemethod examples
+    // An example of declaring a delegate.
+    delegate void notifyChange(utcdatetime _dateTime, str _changeDescription)
     {
-        // delegatemethod examples
-        // An example of declaring a delegate.
-        delegate void notifyChange(utcdatetime _dateTime, str _changeDescription)
-        {
-        }
-
-        // An example of subscribing an event handler to a delegate.
-        public static void notifyStatic(utcDateTime _dateTime, str _changeDescription)
-        {
-            info("A notification has occurred calling static handler:" +
-                DateTimeUtil::toStr(_dateTime) +
-                " Message:" +
-                _changeDescription);
-        }
     }
+
+    // An example of subscribing an event handler to a delegate.
+    public static void notifyStatic(utcDateTime _dateTime, str _changeDescription)
+    {
+        info("A notification has occurred calling static handler:" +
+            DateTimeUtil::toStr(_dateTime) +
+            " Message:" +
+            _changeDescription);
+    }
+}
+```
 
 ## Tables as data types
 
@@ -416,35 +434,39 @@ The syntax enables various possibilities for referencing fields in records. For 
 
 The following example prints the contents of the fields in the current record in the Customer table.
 
-    // Declares and allocates space for one CustTable record.
-    public void myMethod()
-    {
-        CustomerTable custTable;
-    }
+```xpp
+// Declares and allocates space for one CustTable record.
+public void myMethod()
+{
+    CustomerTable custTable;
+}
 
-    // An example of referencing table variables.
-    public void printAccountNo()
-    {
-        CustomerTable custTable;
-        print custTable.AccountNo;  // Prints the field reference.
-    }
+// An example of referencing table variables.
+public void printAccountNo()
+{
+    CustomerTable custTable;
+    print custTable.AccountNo;  // Prints the field reference.
+}
+```
 
 The following example uses the **fieldCnt** and **fieldCnt2Id** methods. The **fieldCnt** method counts the number of fields in a table, whereas **fieldCnt2Id** returns the ID for a field number. For example, you can use the **fieldCnt2Id** method to learn that field number 6 in a table has the ID 54. This conversion is required, because there is no guarantee that the IDs of the fields in a table are consecutive.
 
-    // An example of the various possibilities for referencing fields in records.
-    public void printCust()
+```xpp
+// An example of the various possibilities for referencing fields in records.
+public void printCust()
+{
+    int i, n, k;
+    CustomerTable custTable;
+    DictTable dictTable;
+    dictTable = new DictTable(custTable.TableId);
+    n = dictTable.fieldCnt();
+    print "Number of fields in table: ", n;
+    for(i=1; i<=n; i++)
     {
-        int i, n, k;
-        CustomerTable custTable;
-        DictTable dictTable;
-        dictTable = new DictTable(custTable.TableId);
-        n = dictTable.fieldCnt();
-        print "Number of fields in table: ", n;
-        for(i=1; i<=n; i++)
-        {
-            k = dictTable.fieldCnt2Id(i);
-            print "The ", dictTable.fieldName(k),
-            " field with Id=",k, " contains '",
-            custTable.(k), "'";
-        }
+        k = dictTable.fieldCnt2Id(i);
+        print "The ", dictTable.fieldName(k),
+        " field with Id=",k, " contains '",
+        custTable.(k), "'";
     }
+}
+```

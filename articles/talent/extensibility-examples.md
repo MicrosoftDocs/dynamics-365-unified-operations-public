@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Extend Talent by using Power Apps and Microsoft Power Automate - Example scenarios
+title: Extend Talent with Power Apps and Power Automate
 description: This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft Power Apps and Microsoft Power Automate.
 author: negudava
 manager: Annbe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Extend Talent by using Power Apps and Microsoft Power Automate - Example scenarios
+# Extend Talent with Power Apps and Power Automate
 
 This topic describes some examples of extensibility scenarios for Microsoft Dynamics 365 Talent that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
@@ -110,7 +110,7 @@ You can use the Referral App to add candidates to a shared talent pool. The refe
 
 You can embed this app in Employee self-service (ESS) for submitting referrals, or you can be use it as a hyperlink in the Corporate Portal and run as a stand-alone app.
 
-To download **Referral App**, go to [Dynamics 365 Talent extensibility solution: Referral App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
+To download **Referral App**, go to [Dynamics 365 Talent extensibility solution: Referral App](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) on the Microsoft Download Center. You can import this app and customize it to add additional functionality.
 
 ## Additional resources
 

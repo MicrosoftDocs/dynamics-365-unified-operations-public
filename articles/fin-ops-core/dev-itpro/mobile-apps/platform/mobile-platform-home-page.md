@@ -153,13 +153,43 @@ During development it can be useful to attach a debugger to get more detailed in
 
 9. If more changes or validation is needed, repeat the process.
 
-## Change needed for ADFS to support Mobile Client in on-premises environments 
-If ADFS is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Finance and Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support wia](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
-
-## Troubleshooting
-### The Mobile Client app is not working correctly on particular devices
-Sometimes the cache associated with the Unified Operations app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
+## Troubleshooting the app
+### The Mobile Client app is not working on particular devices
+Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
 To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Dynamics 365 Unified Operations**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
+
+### On Android devices with non-English regions, the comma can't be used as the decimal separator in an amount field
+On Android devices with non-English regions, using a comma as the decimal separator is standard practice. Problems using a comma in an amount field is an Android-specific problem because iPhone works as expected. On Android, use of the comma in an amount field is a problem with the default "gboard" keyboard and some other keyboards. Installing the SwiftKey keyboard (published by Microsoft) allows the entry of commas just like on iPhone: [SwiftKey Keyboard](https://www.microsoft.com/swiftkey).
+
+### Change needed for ADFS to support Mobile Client in on-premises environments 
+If Active Directory Federation Services (ADFS) is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The Finance and Operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support WIA](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
+
+### Using multi-factor authentication with Finance and Operations apps
+The Finance and Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in, it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this include:
+
+- Different device - Use a different device for the multi-factor authentication response so the app remains active on the original device.
+- Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
+- Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
+
+If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
+
+### Trouble signing out of the app and signing in with new credentials
+If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
+- To sign out of the app, follow these steps:
+    - Open the app.
+    - Sign out of the app.
+    - Force close the app.
+- To forget old credentials, follow these steps:
+    - Open the app.
+    - Connect to the server.
+    - On the Azure AD sign-in screen, if there are saved credentials, select the ellipsis (...) button on that card, and then select **Forget the credential**.
+    - Force close the app.
+- To sign in to the app, follow these steps:
+    - Open the app.
+    - Connect to the server
+    - Sign in using the Azure AD sign-in screen.
+
+## Troubleshooting app content
 
 ### I can't figure out how to build or change something in my Mobile Client content
 There are many resources that you can leverage to figure out how to build or change content for the Mobile Client.
@@ -193,27 +223,3 @@ Avoid using forms with these patterns and controls when creating workspace recor
     - Recorded forms should not have FastTabs because the FastTabs expansion state can interfere with playback.
 - Any user interface (UI) that has state, like an expandable or hide/show region.
 - There is no check box in mobile. You have to manually bind the field to a Yes/No enum in JavaScript.
-
-### Using multi-factor authentication with the Finance and Operations app
-The Finance and Operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this are:
-- Different device - Use a different device for the multi-factor authentication response so the app remains active on the original device.
-- Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
-- Use the "touch and hold" gesture on the authentication notification and then select the **Accept** option. Because the notification acceptance will not require an app switch, the sign in will proceed as usual.
-
-If there are continued problems with MFA authentication, it is helpful to [submit the Microsoft Authenticator app logs](https://github.com/AzureAD/azure-activedirectory-library-for-objc/wiki/Instructions-on-Collecting-Microsoft-Authenticator-Logs) and provide support with the resulting Incident ID.
-
-### Trouble signing out of the app and signing in with new credentials
-If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
-- To sign out of the app, follow these steps:
-    - Open the app.
-    - Sign out of the app.
-    - Force close the app.
-- To forget old credentials, follow these steps:
-    - Open the app.
-    - Connect to the server.
-    - On the Azure AD sign-in screen, if there are saved credentials, select the ellipsis (...) button on that card, and then select **Forget the credential**.
-    - Force close the app.
-- To sign in to the app, follow these steps:
-    - Open the app.
-    - Connect to the server
-    - Sign in using the Azure AD sign-in screen.

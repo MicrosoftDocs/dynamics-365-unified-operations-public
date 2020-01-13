@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Troubleshoot integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract
+# Troubleshoot integration with LinkedIn and Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Use the following information to help troubleshoot issues that you might have when you try to post jobs to LinkedIn from Microsoft Dynamics 365 Talent: Attract.
 

@@ -5,7 +5,7 @@ title: Copy a Core HR instance
 description: This topic explains how to copy the database for Microsoft Dynamics 365 Talent - Core HR to a sandbox environment.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -15,7 +15,7 @@ ms.technology:
 
 # ms.search.form: HcmACACoverageGroup
 # ROBOTS: 
-audience: Admin
+audience: IT Pro
 # ms.devlang: 
 ms.reviewer: anbichse
 ms.search.scope: Core, Talent
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 # Copy a Core HR instance
-
-[!include [banner](includes/banner.md)]
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Talent: Core HR database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
