@@ -2,7 +2,7 @@
 # required metadata
 
 title: Header module
-description: This topic covers header modules and describes how to create them in Microsoft Dynamics 365 Commerce.
+description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
 ms.date: 10/31/2019
@@ -33,34 +33,31 @@ ms.dyn365.ops.version:
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers header and describes how to create a header for a page in Microsoft Dynamics 365 Commerce.
+This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A page header is comprised of multiple modules - Header, Navigation Menu, Search, Promo banner, Cookie consent etc. 
+In Dynamics 365 Commerce, a page header comprises multiple modules such as the header, navigation menu, search, promo banner, and cookie consent modules. 
 
-A Header module in particular includes a site logo, links to the navigation hierarchy, links to other pages on the site, cart icon, wishlist icon, sign-in optins and the search bar. A header module is automatically optimized for the device that the site is being viewed on (that is, a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
+The header module includes a site logo, links to the navigation hierarchy, links to other pages on the site, a cart icon, a wishlist icon, sign-in options, and the search bar. A header module is automatically optimized for the device that the site is being viewed on (in other words, a desktop device or a mobile device). For example, on a mobile device, the navigation bar is collapsed into a **Menu** button (which is sometimes referred to as a *hamburger menu*).
 
-In addition to a header module, a page header typically includes a cookie consent and promo banner. These additional modules can be added to the page header if needed.
+## Properties of a header module
 
-## Properties of a header
+A header module supports **Logo image**, **Logo link**, and **My account links** properties. 
 
-A header module supports a **Logo image**, **Logo link** and **My account links**. 
+The **Logo image** and **Logo link** properties are used to define a logo on the page. See [Add a logo](add-a-logo.md) for more details. 
 
-Logo image and Logo link are used to define a logo on the page. See [Adding a logo](add-a-logo.md) for more details on adding a logo. 
-
-My account links can be used to define the account pages that the site owner wants to show quick links on the header.
+The **My account links** property can be used to define account pages that the site owner wants to show quick links for in the header.
 
 ## Modules that are available in a header module
 
 The following modules can be used in a header module:
 
-- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce back office. The navigation menu has a **Navigation Source** property that allows retail server navigation menu and static menu items. If static menu items are allowed as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. 
+- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Commerce Retail. The navigation menu has a **Navigation Source** property that specifies retail server navigation menu and static menu items. If static menu items are specified as a source, relative links to other pages on the site can be provided. Configured items then appear as header navigation. 
 
-- **Search** – The search module lets users enter search terms so that they can search for products. Default search page URl and search query parameter must be provided in Site Settings - Extensibility. It has properties that will allow you to suppress the search button or label as needed. Search also supports auto-suggest options which could be Product, Keyword, Category search results or all of them. 
+- **Search** – The search module enables users to enter search terms to search for products. The default search page URL and search query parameters must be provided in **Site Settings \> Extensions**. The search module has properties that allow you to suppress the search button or label as needed. The search module also supports auto-suggest options such as product, keyword, and category search results. 
 
-
-## Create a header for a page
+## Create a header module for a page
 
 To create a header module, follow these steps.
 
