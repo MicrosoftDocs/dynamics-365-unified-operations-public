@@ -58,9 +58,9 @@ This topic explains how to perform the following tasks:
 
 3.  [Calculate assessed tax registers](#calculate-assessed-tax-registers)
 
-4.  [Generate an assessed tax declaration and an assessed tax advance payments calculation](#generate-an-assessed-tax-declaration-and-an-assessed-tax-advance-payments-calculation)
+4.  [Generate an assessed tax declaration](#generate-an-assessed-tax-declaration)
 
-5.  [Create and post assessed tax ledger transactions](#generate-an-assessed-tax-declaration-and-an-assessed-tax-advance-payments-calculation)
+5.  [Create and post assessed tax ledger transactions](#сreate-and-post-assessed-tax-ledger-transactions)
 
 ## Set up assessed tax
 
@@ -718,7 +718,7 @@ To create corrective registers, follow these steps.
 8.  Create tax register lines, and calculate and approve the tax registers as
     described in the previous procedure.
 
-Generate an assessed tax declaration and an assessed tax advance payments calculation
+Generate an assessed tax declaration
 -------------------------------------------------------------------------------------
 
 ### Set up the system to generate an assessed tax declaration
@@ -861,8 +861,7 @@ Create and post assessed tax ledger transactions
 ------------------------------------------------
 
 After you've calculated and approved tax registers, and generated an assessed
-tax declaration or an assessed tax advance payments calculation, you can create
-transactions for assessed tax accruals. Following these steps.
+tax declaration, you can create transactions for assessed tax accruals. Follow these steps:
 
 1.  Go to **Fixed assets (Russia) \> Journals \> Tax register journal**.
 
