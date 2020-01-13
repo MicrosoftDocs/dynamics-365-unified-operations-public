@@ -1,36 +1,50 @@
 # Advanced load building during wave
 
-# Released in version 10.0.1
+Advanced load building automatically assigns shipments to existing waves during wave execution, which can help you create meaningful loads that represent trucks without requiring you to use the load-planning workbench. This is useful for businesses who want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but don't want to manually create these loads each day.
 
-# About
+When a shipment isn't assigned to a load during wave processing, the system normally creates a new load for that shipment, but advanced load building enables the system instead to assign unassigned shipments to existing loads (when an appropriate load exists), and only create new loads when required.
 
-Some businesses want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but don&#39;t want to manually create these loads each day. If a shipment isn&#39;t assigned to a load during wave processing, the wave will be default create a new load for that shipment. Advanced load building allows the wave to assign the shipment to an existing load, if one exists that meets the criteria, or create a new load if required.
+The load building feature creates loads automatically based on user-defined criteria. A load-build template links to a specific wave template method, and controls which load (existing or new) the load lines being waved will be added to. You can choose to combine or separate shipments based on criteria such as load template, equipment, and/or other field values on the load line. You can also define load mix groups to control which items shouldn't be combined on a single load, and choose whether the restriction should produce a warning or an error. You can also choose whether or not to evaluate the volumetric restriction of the load template.
 
-Load building allows the system to automatically assign shipments to existing waves during wave execution, letting users create meaningful loads representing trucks without using the load planning workbench.
+## Set up advanced load building
 
-The load building features allows users to create loads automatically based on user defined criteria. A load build template is created, which links to a specific wave template method, and controls what load (existing or new) load lines being waved will be added to. Criteria such as load template, equipment, and any fields on the load line can be used to combine/separate shipments. Load mix groups can be defined to control what items should not be combined on a single load, users can choose if the restriction should product a warning or an error. Users can also choose whether to evaluate the volumetric restriction of the load template, or if volumetric/weight maximums should not be considered and only other criteria.
+### Regenerate your wave process methods
 
-# Setup
+You may need to regenerate your wave process methods to make the load building method available. To do this:
 
-## Wave process methods
+1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave process methods**.
+2. Check whether **buildLoads** is present in the list. If it isn't, select **Regenerate methods** on the action bar to add it.
 
-You may need to regenerate the wave process methods for the load building method to become available. Navigate to _Warehouse management - Setup - Waves -  Wave process methods_ and check if buildLoads is present in the list. If it isn&#39;t, click on &#39;Regenerate methods&#39; in the action bar to add it.
+<!-- KFM: I don't see buildLoads here. Should we list some prerequisites that I might be missing? -->
 
-## Wave templates
+### Set up your wave templates
 
-Navigate to _Warehouse management - Setup -  Waves - Wave templates._ Select the template &#39;62 Shipping Default&#39;. In the Methods FastTab, add the Load Building method to the Selected Methods. Assign the &#39;LoadBuild&#39; wave step code to the method.
+1. Go to **Warehouse management** > **Setup** >  **Waves** > **Wave templates**.
+1. Select the template **62 Shipping Default**.
+1. Select **Edit** on the command bar to put the page into edit mode.
+1. In the **Methods** FastTab, select the **Load Building** method from the **Remaining methods** column.
+1. Select the right-pointing arrow button between the columns to move the **Load Building** method to the **Selected Methods** column.
+1. Assign the **LoadBuild** wave step code to the method.
 
-## Load mix group
+<!-- KFM: 
 
-Navigate to _Advanced Warehouse Management -Setup - Load - Load Mix Group_. Create a new mix group named TV.
+* Is it always "62 Shipping Default" that users should choose, or is that just an example?
+* I don't see the **Load Building** method here. 
+* What is a "wave step code" and how do I assign this?
+* It's a bit tricky to go into edit mode, but I suppose that's standard for SCM. Should we provide full details or assume the user is used to this?
 
-In the Item Criteria create a record and select &#39;TV&amp;Video&#39; in the Item group column.
+ -->
 
-In the Mixing Constraints grid, create a new record, select CarAudio as the Item group, and in the Load build action column select &#39;Restrict.&#39;
+### Load mix group
 
-This will restrict items with an item group of CarAudio from being on the same load as items with an item group of TV&amp;Video.
+1. Go to **Advanced Warehouse Management** > **Setup** >  **Load** > **Load Mix Group**.
+1. Create a new mix group named "TV".
+1. In the **Item Criteria** create a record and select **TV&Video** in the **Item group** column.
+1. In the **Mixing Constraints** grid, create a new record, select **CarAudio** as the **Item group**, and in the **Load build action** column select **Restrict**. This will restrict items with an item group of **CarAudio** from being on the same load as items with an item group of **TV&Video**.
 
-## Load build template
+<!-- KFM: This seems like an example based on sample data. Shouldn't we make this more generic? I dont't have **Advanced Warehouse Management**--I must be missing something here. -->
+
+### Load build template
 
 Navigate to _Advanced Warehouse Management - Setup - Load - Load Build Template_ and create a new record.
 
@@ -40,17 +54,17 @@ Navigate to _Advanced Warehouse Management - Setup - Load - Load Build Template_
 - Load template ID – The load template that will be used for any loads that are created – Stnd Load Template
 - Load mix group – Group that is used to determine what can or cannot be combined on a load – TV
 - Use open loads – Controls what existing loads are allowed to be used – Any
-- Create loads – Should the system create loads if it doesn&#39;t find one that matches the criteria? – Yes
+- Create loads – Should the system create loads if it doesn't find one that matches the criteria? – Yes
 - Allow shipment line split – Can a single line be split across multiple loads if the full line exceeds the load capacity? – No
 - Validate volumetrics – Controls if the volumetric limits of the load template should be evaluated - No
 
 Open the Edit Query for the template, and in the sorting table, add sorting on Load details – Order number – Ascending.
 
-In the Break by grid, check the &#39;Break by&#39; box for the Load details – Order number record.
+In the Break by grid, check the 'Break by' box for the Load details – Order number record.
 
 This will create one load per order number. Generally, this functionality is used to break on custom fields that have been extended onto the load line, such as Route, Tour, Run, etc.
 
-# Process
+## Example scenario
 
 Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-007 and warehouse 62.
 
@@ -58,4 +72,4 @@ Add a line and specify item A0001, quantity 1. Click on Inventory – Reservatio
 
 Create another line on the same sales order, for item A0002. Reserve the line and release the order to the warehouse again. The system will create a new shipment for the new line, but because of load building it will add that shipment and load line to the existing wave. Without load building enabled, a new load would have been created for the shipment as well.
 
-Create a third line of the same sales order, for item M9200. Reserve the line and release the order to the warehouse. A new shipment will be created, and added to a new load, because the item failed the load mix group constraints. If a load mix group hadn&#39;t been specified on the load build template, then this shipment would have been added to the first load as well.
+Create a third line of the same sales order, for item M9200. Reserve the line and release the order to the warehouse. A new shipment will be created, and added to a new load, because the item failed the load mix group constraints. If a load mix group hadn't been specified on the load build template, then this shipment would have been added to the first load as well.
