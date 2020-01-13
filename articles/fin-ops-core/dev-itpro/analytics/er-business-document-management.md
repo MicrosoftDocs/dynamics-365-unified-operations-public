@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -263,15 +263,14 @@ The **Edit template** option is available for the selected template. This option
 
 ### Initiate editing templates owned by other providers
 
-1. In the Business document management workspace select the document that you want to use as a template
+1. In the Business document management workspace, select the document that you want to use as a template.
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Click **New document**
-4. In the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
-5. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
-6. In the **Comment** field, change the remark for the automatically created revision of the editable template.
-7. Select **OK** to confirm the start of the editing process
+3. Click **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
+4. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
+5. In the **Comment** field, change the remark for the automatically created revision of the editable template.
+6. Select **OK** to confirm the start of the editing process
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate4.png)
 
