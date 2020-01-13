@@ -127,7 +127,7 @@ Use the following procedure to enable Business document management functionality
 4. Refresh the page to access the new feature.
 
 >[!NOTE]
-> For more information about using New document user interface in Business document management, see  [New document user interface in Business document management](er-business-document-management-new-template-ui.md)
+> For more information about using the new document user interface in Business document management, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
@@ -267,9 +267,9 @@ The **Edit template** option is available for the selected template. This option
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
 
-3. Click **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
+3. Select **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
 4. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
-5. In the **Comment** field, change the remark for the automatically created revision of the editable template.
+5. In the **Comment** field, change the comment for the automatically created revision of the editable template.
 6. Select **OK** to confirm the start of the editing process
 
 ![Business document management workspace page](./media/BDM-Overview-EditingTemplate4.png)
