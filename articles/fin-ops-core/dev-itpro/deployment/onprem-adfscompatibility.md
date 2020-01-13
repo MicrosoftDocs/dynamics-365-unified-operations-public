@@ -66,7 +66,7 @@ This topic explains how to use the same instance of Active Directory Federation 
 
 8. Use Service Fabric Explorer to [Restart applications (such as AOS)](troubleshoot-on-prem.md#restartapplications).
 9. Verify that you are able to sign in to the product with the system administrator user that was specified during deployment. 
-10. Download the newest version of the infrastructure scripts from the LCS shared asset library.
+10. Download the newest version of the infrastructure scripts from the LCS Shared asset library.
 11. Copy the Reset-SID.ps1 script from the downloaded infrastructure scripts folder into one of your AOS machines.
 12. Execute the Reset-Sid.ps1 script.
     
