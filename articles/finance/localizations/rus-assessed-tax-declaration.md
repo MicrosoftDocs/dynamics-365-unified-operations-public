@@ -33,13 +33,16 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-According to the tax code of the Russian Federation, realty assetsare subject to assessed tax.
+According to the tax code of the Russian Federation, realty assets are subject to assessed tax.
 
-The tax period for assessed tax is one year. The reporting periods are the first quarter (three months, the second quarter (six months or half year), and the third quarter (nine months).
+The tax period for assessed tax is one year. The advances payments must be calculated and paid to tax authorities for the first quarter, the second quarter (six months or half year), and the third quarter (nine months).
 
-At the end of the tax period, a company must report an assessed tax declaration. At the end of each reporting period, the company must report an assessed tax advance payments calculation declaration.
+At the end of the tax period, a company must report an assessed tax declaration which also includes information about amounts of quarterly advance payments. Before Year 2019, at the end of each quarter, the company must have reported an assessed tax advance payments calculation declaration. Starting from the Year 2019, assessed tax advance payments calculation declaration is cancelled.
 
-For most realty types, the assessed tax declaration and the assessed tax advance payments calculation should be submitted to the tax authority where the realty is located. In this case, the code **281** should be entered for the **at place of** attribute. The greatest taxpayers can submit declarations to the tax authority where the organization is registered as a greatest taxpayer. In this case, the code **215** should be entered for the **at place of** attribute.
+The assessed tax declaration should be submitted:
+- Either to the tax authority where the realty is located. (In this case, the code **281** should be entered for the **at place of** attribute).
+- Or to the tax authority where the company is registered. (In this case, the code **214** should be entered for the **at place of** attribute).
+- The greatest taxpayers can submit declarations to the tax authority where the organization is registered as a greatest taxpayer. (In this case, the code **213** should be entered for the **at place of** attribute).
 
 The tax base for the calculation of assessed tax is either the annual average cost of the realty asset or the cadastral cost of the realty asset.
 
@@ -649,7 +652,7 @@ calculate assessed tax registers. The following tax registers are available:
         calculation.
 
     -   **Years** – Generate a journal for the annual assessed tax calculation.
-
+    
 5.  In the **Period number** field, if you selected **Quarter** in the **Period
     types** field, enter the number of the quarter. If you selected **Years**,
     enter **1**.
@@ -727,20 +730,20 @@ Generate an assessed tax declaration and an assessed tax advance payments calcul
 
 >   For example, to generate the assessed tax declaration for the year 2019 reporting period, download the latest versions of the following configurations:
 > -   Assets declarations model
-> -  Property tax declaration model mapping
-> -   Property tax advance calculation format 5.05
-> -  Property tax declaration format 5.05
->   For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+> -   Property tax declaration model mapping
+> -   Property tax declaration format 5.06
 
-1.  You can upload Data management package settings to work with the assessed
+> For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+
+2.  You can upload Data management package settings to work with the assessed
     tax declaration. Follow these steps:
 
     -   In the LCS Shared asset library, select **Data package** as the asset
         type.
 
-    -   Download the package that is named **RU Property tax declaration v5.05
+    -   Download the package that is named **RU Property tax declaration v5.06
         (2019)**. The file that is downloaded is named **RU Property tax
-        declaration v5.05 (2019).zip**.
+        declaration v5.06 (2019).zip**.
 
     -   In Dynamics 365 Finance, in the **Data
         management** workspace, select **Import**.
@@ -752,48 +755,37 @@ Generate an assessed tax declaration and an assessed tax advance payments calcul
         -   In the **Source data format** field, select **Package**.
 
     -   Select **Upload** next to the **Upload data file** field, and then
-        select the **RU Property tax declaration v5.05 (2019).zip** file that
+        select the **RU Property tax declaration v5.06 (2019).zip** file that
         you downloaded earlier.
 
     -   After the data entities are uploaded, select **Import**.
 
-2.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
+3.  Go to **Tax \> Setup \> Electronic messages \> Electronic message
     processing**, and validate the electronic message processing that is
     imported. (Most of the data that is imported is presented in the Russian
     language.)
 
 | **Processing**                            | **Processing code**  | **Name**                                                |
 |-------------------------------------------|----------------------|---------------------------------------------------------|
-| Property tax declaration                  | НалИмущД 5.05 (2019) | Декларация по налогу на имущество(2019)                 |
-| Property tax advance payments calculation | НалИмущР 5.05 (2019) | Расчет авансовых платежей по налогу на имущество (2019) |
+| Property tax declaration                  | НалИмущД 5.06 (2019) | Декларация по налогу на имущество(2019)                 |
 
-3.  Set up the ER format that is run when accounting reporting is generated in
+4.  Set up the ER format that is run when accounting reporting is generated in
     electronic format.
 
-4.  Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
+5.  Go to **Tax \> Setup \> Electronic messages \> Message processing actions**.
 
-5.  Select the **Generate IMUD 5.05** action, and then select **Edit**.
+6.  Select the **Generate IMUD 5.06** action, and then select **Edit**.
 
-6.  Set the **Show dialog** option to **Yes**.
+7.  Set the **Show dialog** option to **Yes**.
 
-7.  In the **Format mapping** field, select the **Property tax declaration
-    format 5.05** ER configuration that you downloaded earlier.
+8.  In the **Format mapping** field, select the **Property tax declaration
+    format 5.06** ER configuration that you downloaded earlier.
 
-8.  Select the **Generate IMUR 5.05** action, and then select **Edit**.
 
-9.  Set the **Show dialog** option to **Yes**.
-
-10. In the **Format mapping** field, select the **Property tax advance
-    calculation format 5.05** ER configuration that you downloaded earlier.
-
-### Generate an assessed tax declaration and an assessed tax advance payments calculation
+### Generate an assessed tax declaration
 
 Before you can generate the assessed tax declaration for a tax year, you must
-calculate the assessed tax register for the same year.
-
-Before you can generate the advance payments calculation for a reporting period
-(first quarter, second quarter, or third quarter), you must calculate the
-assessed tax register for the same period.
+calculate the assessed tax register for the same year and assessed tax registers for the first, second and third quarters.
 
 1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
     messages**.
@@ -801,9 +793,7 @@ assessed tax register for the same period.
 2.  Select the report format to generate.
 
     For example, to generate an assessed tax declaration in XML format for the
-    year 2019, select **НалИмущД 5.05 (2019)**. To generate an assessed tax
-    advance payments calculation in XML format for the year 2019, select
-    **НалИмущР 5.05 (2019)**.
+    year 2019, select **НалИмущД 5.06 (2019)**.
 
 3.  On the **Messages** FastTab, select **New**.
 
@@ -817,22 +807,19 @@ assessed tax register for the same period.
     for the year 2019, enter **01.01.2019** in the **From date** field and
     **31.12.2019** in the **To date** field.
 
-To generate an assessed tax advance payments calculation, enter the quarter
-period. For example, for the third quarter of 2019, enter **01.04.2019** in the
-**From date** field and **30.06.2019** in the **To date**.
 
-1.  Optional: On the **Message additional fields** FastTab, on the line for the
+7.  Optional: On the **Message additional fields** FastTab, on the line for the
     **CorrectionNumber** field, in the **Field value** field, enter the number
     of the correction for a corrective declaration On the **Messages** FastTab,
     select **Update status**.
 
-2.  In the **Run processing** dialog box, select **OK**.
+8.  In the **Run processing** dialog box, select **OK**.
 
-3.  Validate that the message status has been changed to **Ready to generate**.
+9.  Validate that the message status has been changed to **Ready to generate**.
 
-4.  On the **Messages** FastTab, select **Generate report**.
+10.  On the **Messages** FastTab, select **Generate report**.
 
-5.  In the **Electronic reporting parameters** dialog box, on the **Parameter**
+11.  In the **Electronic reporting parameters** dialog box, on the **Parameter**
     FastTab, set the following values.
 
 | **Field**                                                        | **Description**                                                                                                                                          |
@@ -844,24 +831,24 @@ period. For example, for the third quarter of 2019, enter **01.04.2019** in the
 | Representative company                                           | If you selected **Representative** as the signatory type, and if the representative is an organization, enter the name of the organization.              |
 | Representative document                                          | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority.                               |
 
-6.  On the first **Records to include** FastTab, apply a filter for separate
+12.  On the first **Records to include** FastTab, apply a filter for separate
     divisions, if this type of filter is applicable. In this case, declarations
     will be generated only for the selected separate divisions.
 
-7.  On the second **Records to include** FastTab, apply a filter for tax
+13.  On the second **Records to include** FastTab, apply a filter for tax
     authorities, if this type of filter is applicable. In this case,
     declarations will be generated only for the selected tax authorities.
 
-8.  Select **OK**.
+14.  Select **OK**.
 
 >   When the report is generated, the status of the message is changed to
 >   **Generated**. If an error occurs during generation, the status is changed
 >   to **Technical error**.
 
-1.  On the **Action log** FastTab, review all user actions for the current
+15.  On the **Action log** FastTab, review all user actions for the current
     message.
 
-2.  To review the report that is generated, select the **Attachments** button
+16.  To review the report that is generated, select the **Attachments** button
     (the paper clip symbol) in the upper-right corner of the page, and then
     select **Open** to view the file.
 
