@@ -3151,7 +3151,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
         - name: Tutorials
           items: 
-          - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+          - name: Use JOIN data sources to get data from multiple application tables
             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
           - name: Configure country context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
@@ -3159,6 +3159,12 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
           - name: Set up the parameters of an ER format per legal entity
             href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
+          - name: Defer execution of ER format elements
+            items: 
+            - name: Defer execution of a sequence element
+              href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
+            - name: Defer execution of a XML element
+              hfer: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
