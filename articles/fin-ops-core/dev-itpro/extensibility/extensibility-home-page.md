@@ -83,7 +83,7 @@ This section includes "How do I?" topics that explain how to customize specific 
 + [Customize application startup by using delegates](startup-customizations.md)
 
 ### Tables
-+ [Modify existing fields in a table through extension(modify-existing-field.md)
++ [Modify existing fields in a table through extension](modify-existing-field.md)
 + [Add fields to tables through extension](add-field-extension.md)
 + [Add indexes to tables through extension](add-index.md)
 + [Add relations to tables through extension](add-relation.md)
