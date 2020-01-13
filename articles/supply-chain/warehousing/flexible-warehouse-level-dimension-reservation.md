@@ -256,6 +256,8 @@ The following table provides an overview of how an order-committed batch reserva
 |    Change inventory status*       *   Performed from multiple entry points. Example here is based on using **Inventory status change**  from **On-hand by location**.          |    On the **Warehouse** tab, on the **Warehouse** record, **Remove reservations and markings** is set to "None".   |    No  |    As above   |    Inventory status change is not allowed for quantities reserved for work. |  Inventory status change is not allowed.    |
 |    Change inventory status*       *   Performed from multiple entry points. Example here is based on using **Inventory status change**  from **On-hand by location**.          |    On the **Warehouse** tab, on the **Warehouse** record, **Remove reservations and markings** is set to "None".   |    Yes  |    As above    |    Inventory status change is not allowed for quantities reserved for work.  |    Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.   |
 
+\[i\] **Batch quantity is available** in addition to already reserved for the current order-committed reservations or by the warehouse works originating from such a reservation type.
+
 ## Limitations
 
 - The features below are not supported with the flexible warehouse-level dimension reservation feature.
