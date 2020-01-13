@@ -65,11 +65,5 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 ## Online channel prerequisites
 * [Online store functionality profiles](online-functionality-profile.md)
 
-## Other items tbd
-* [Set up product price groups - tbd](tbd.md)
-* [Set up product pricing - tbd](tbd.md)  As part of this task, you also set up price adjustments, discounts and discount periods.
-* [Set up staff members - tbd]
-* [Configure the Retail POS profiles to assign to the store - tbd](tbd.md).  This task includes many other tasks, such as setting up registers, setting up offline profiles and setting up receipt formats and profiles.
-
 ## Setup Seed data and demo data info
 tbd
