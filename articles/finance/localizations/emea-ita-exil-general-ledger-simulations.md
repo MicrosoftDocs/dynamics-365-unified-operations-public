@@ -71,6 +71,20 @@ You can review posted simulation ledger transactions in the reports **Trial bala
 
 It is important to keep in mind that the function that closes a fiscal period or a fiscal year checks that the simulation transactions are either posted as normal transaction or deleted. Consequently if there are pending simulated general ledger transactions for the period, an error message appears.
 
+
+## Periodic operations
+
+### Posting all Simulation Transaction 
+To post simulation transactions for all simulaiton journals, go to **Periodic tasks > Simulations > Post simulation journals**.
+Transactions will be no longer simulation transactions once all journals are posted
+
+### Reopen all Simulation journals 
+To reopen all Simulation journals go to **Periodic tasks > Simulations > Reopen simulation journals**.
+All simulation posted Simulation journals are reopened. You can edit the Simulation journals and post simulation again.
+
+### Delete all Simulation journals 
+To delete all open Simulation journals go to **Periodic tasks > Simulations > Delete simulation journals**. 
+
 ## Review simulation transactions in reports
 
 Simulation transactions can be reviewed in several ledger reports.
