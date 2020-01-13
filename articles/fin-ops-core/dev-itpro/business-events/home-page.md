@@ -67,10 +67,16 @@ In summary, the business event catalog helps identify the business events that a
 
 The next step is to manage the endpoints.
 
-## Business events processing
+## Business events parameters and processing
 The application allocates dedicated batch threads to process business events in near real time. The maximum number of threads cannot exceed the total threads available in the system (**System administration > Server configuration**). Because threads are a shared resource for all batch processing, care must be taken when deciding to change the thread allocation for business events. The total threads allocated for business events is controlled using a parameter in the business events parameter table. This setting is not exposed from the user interface (UI), so a support case must be created to get this count changed in production environments as this will need database access.
 
-The existing business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. The corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround. If the batch job was scheduled in one of the earlier platform releases, the batch will become ineffective after the update to the latest platform and dedicated processing will occur automatically. This behavior is controlled using a parameter BATCHENABLED in the business events parameter table, which is set to 0 (off) by default to indicate that manual batch job will not be effective by default. This must be set to 1 if the manual batch is being used as a workaround. For more information, see [Troubleshoot business events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/troubleshooting).
+The business events batch processing job is available as a workaround to mitigate issues with the dedicated processing, if needed. Prior to platform update 33, the corresponding menu item to schedule the business events batch processor has been removed to avoid any confusion for users. However, you can manually create a batch job using the BusinessEventsBundleBatchProcessor class from the batch UI. From platform update 33 and later, the batch job can be enabled and scheduled from the business events paramters form in **System administration > Set up > Business events > Business events parameters**. It’s important that you do not run this as a manual batch job unless it is absolutely necessary as a workaround.
+
+In the event of an error while sending business events to its end point, the system retries to send the business events three times with an interval of one second per retry. This is the default setting which can be changed if needed in the business events parameters form in **System administration > Set up > Business events > Business events parameters**.
+
+The number of endpoints that can subscribe to the same business event in a legal entity is limited to ten by default. This can be changed in the business events paramters form in **System administration > Set up > Business events > Business events parameters**.
+
+The out of the box default settings for the above described parameters can be restored in the business events parameters form.
 
 ## Managing endpoints
 
