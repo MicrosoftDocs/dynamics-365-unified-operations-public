@@ -388,7 +388,7 @@ If the organization has railways, set up the railway assets factors.
 -   **Total** – A ledger journal for assessed tax transactions will be created
     as one line that has the default sales tax code.
 
-1.  Close the page.
+5.  Close the page.
 
 ### Set up the journal for posting assessed tax
 
@@ -419,10 +419,10 @@ tax registers, you should set up posting groups.
 >   If no ledger posting group is listed, create one. In the **Sales tax
 >   payable** field, enter the ledger account code for posting assessed tax.
 
-1.  In the **Account for FA taxes** field, select a ledger account for the
+4.  In the **Account for FA taxes** field, select a ledger account for the
     assessed tax expenses.
 
-2.  Make sure that the **Sales tax payable** field is set to the ledger account
+5.  Make sure that the **Sales tax payable** field is set to the ledger account
     code that you entered for the ledger posting group in step 3.
 
 Create a realty asset and set up parameters for assessed tax calculation
