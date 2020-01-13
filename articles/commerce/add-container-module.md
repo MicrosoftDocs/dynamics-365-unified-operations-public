@@ -105,17 +105,17 @@ To add a container player module to a new page and set the required properties, 
 
 1. Create a page template that is named **container template**. 
 1. In the **Body** slot, add a **Default page** module.
-1. Check in the template, and publish it.
+1. Finish editing and publish the template.
 1. Use the container template that you just created to create a page that is named **container page**.
-1. In the **Main Slot** of the new page, add a container module.
-1. In the property pane for the container module, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
+1. In the **Main** slot of the new page, add a container module.
+1. In the **Container** property pane, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
 1. In the container module, add a content block module.
 1. In the property pane for the content block module, configure the heading, image, and layout.
 1. Save and preview the page. You should see one feature module that fits within the width of the container module.
-1. In the property pane for the container module, change the the value of the **Number of columns** property to **3**.
+1. In the **Container** property pane, change the the value of the **Number of columns** property to **3**.
 1. Add two more content block modules to the container module.
 1. Save and preview the page. You should now see three content block modules that appear side by side.
-1. After you've achieved the layout that you want, check in the page, and publish it.
+1. After you've achieved the layout that you want, finish editing and publish the page.
 
 ## Additional resources
 
