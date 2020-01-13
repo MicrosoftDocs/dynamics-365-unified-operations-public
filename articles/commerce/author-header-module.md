@@ -61,20 +61,21 @@ The following modules can be used in a header module:
 
 To create a header module, follow these steps.
 
-1. Create a page fragment and add a container, set Width to Fill Container.
-2. To the container, add Promo banner and Cookie consent module.
-3. Add another container, set Width to Fill Container.
-4. To the second container, add Header module.
-5. Select the Header module, Navigation menu slot and add Navigation menu module. Configure the properties of navigation menu
-6. Select the Header module, Search slot and add the Search module. Configure the properties of Search module. 
-7. Save and Finish editing the page fragment. 
-8. Publish it.
+1. Create a fragment that is named **Header fragment**, and add a container module to it.
+1. In the container property pane on the right, set the **Width** property to **Fill container**.
+1. Add **Promo banner** and **Cookie consent** modules to the container module.
+1. Add another container to the fragment, and set the **Width** property to **Fill container**.
+1. Add a **Header module** to the second container module.
+1. In the **Navigation menu** slot of the header module, add a **Navigation menu** module. 
+1. In the **Navigation menu** properties pane, configure the properties of the navigation menu module.
+1. In the **Search** slot of the header module, add a **Search** module. 
+1. In the **Search** properties pane, configure the properties of the search module. 
+1. Save, finish editing, and publish the page fragment. 
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
-1. On the default page, add the Header page fragment containing the header module to the header in the main slot.
-1. Save the template. 
-1. Finish editing the template, and publish it.
+1. In the **Main Slot** of the default page, add the header page fragment containing the header module to the header.
+1. Finish editing the template, save it, and publish it.
 
 ## Additional resources
 
