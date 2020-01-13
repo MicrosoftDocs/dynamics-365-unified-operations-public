@@ -96,7 +96,7 @@ Some existing factory methods might not instantiate subclasses by using the inst
 	
 For more information about class hierarchies, see the following blog posts:
 
-+ [SysExtension Framework – to the rescue](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
++ [SysExtension Framework – to the rescue](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/sysextension-framework-to-the-rescue)
 + [Embrace the extensions mindset with Dynamics 365 for Finance and Operations #2 – SysExtension framework](https://blogs.msdn.microsoft.com/axinthefield/embrace-the-extensions-mindset-with-dynamics-365-for-finance-and-operations-2-sysextension-framework/)
 
 ## Deprecation
