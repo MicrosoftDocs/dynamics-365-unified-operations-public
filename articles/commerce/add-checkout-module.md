@@ -71,8 +71,8 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Add a heading to the checkout module.
 1. Add shipping address, delivery options, checkout section container, and contact information modules. 
 1. In the checkout section container module, add gift card, loyalty points, and  payment modules. In this way, you make sure that all the payment methods appear together in a section.
-1. Select **Save**. Some modules that don't have a cart context may not render in the preview.
-1. Finish editing, save, and publish.
+1. Save and preview the fragment. Some modules that don't have a cart context may not render in the preview.
+1. Finish editing and publish the fragment.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
 
