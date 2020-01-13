@@ -62,7 +62,7 @@ The following modules can be used in a header module:
 To create a header module, follow these steps.
 
 1. Create a fragment that is named **Header fragment**, and add a container module to it.
-1. In the container property pane on the right, set the **Width** property to **Fill container**.
+1. In the **Container** property pane, set the **Width** property to **Fill container**.
 1. Add **Promo banner** and **Cookie consent** modules to the container module.
 1. Add another container to the fragment, and set the **Width** property to **Fill container**.
 1. Add a **Header module** to the second container module.
@@ -74,8 +74,8 @@ To create a header module, follow these steps.
 
 To help guarantee that a header appears on every page, follow these steps on every page template that is created for the site.
 
-1. In the **Main Slot** of the default page, add the header page fragment containing the header module to the header.
-1. Finish editing the template, save it, and publish it.
+1. In the **Main** slot of the default page, add the header page fragment containing the header module to the header.
+1. Save, finish editing, and publish the template.
 
 ## Additional resources
 
