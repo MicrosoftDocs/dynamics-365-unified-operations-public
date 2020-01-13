@@ -74,7 +74,7 @@ To add a carousel module to a new page and set the required properties, follow t
 1. Add and configure another content block module.
 1. Set additional properties to the carousel module as needed.
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
-1. Check in the page, and publish it.
+1. Finish editing the page, and publish it.
 
 ## Additional resources
 
