@@ -127,7 +127,7 @@ Use the following procedure to enable Business document management functionality
 4. Refresh the page to access the new feature.
 
 >[!NOTE]
-> For using New document user interface in Business document management read  [New document user interface in Business document management](New document user interface in Business document management.md)
+> For more information about using New document user interface in Business document management, see  [New document user interface in Business document management](er-business-document-management-new-template-ui.md)
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
