@@ -80,3 +80,5 @@ To select a different layout for an existing page, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)
+

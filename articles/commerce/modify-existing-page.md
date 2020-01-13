@@ -90,3 +90,5 @@ The following example shows how to modify the home page by changing the video th
 [Enrich a product page](enrich-product-page.md)
 
 [Enrich a category landing page](enrich-category-page.md)
+
+[Verify page content accessibility](verify-accessibility.md)

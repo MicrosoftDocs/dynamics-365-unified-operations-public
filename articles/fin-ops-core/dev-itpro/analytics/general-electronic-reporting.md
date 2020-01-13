@@ -56,12 +56,12 @@ The ER engine has the following capabilities:
 
 ER supports two types of components: **Data model** and **Format**.
 
-#### Data model components
+#### Data model and model mapping components
 
 A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
 
-- A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+- <a name="DataModelComponent"></a>A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
+- <a name="ModelMappingComponent"></a>A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
 
 A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
 
@@ -86,7 +86,7 @@ A model mapping that supports incoming electronic documents has the following ca
 
 A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
-#### Format components for outgoing electronic documents
+#### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
 
 A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
 
@@ -112,7 +112,7 @@ The following illustration shows how the data flows for these formats.
 
 To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
 
-#### Format components for incoming electronic documents
+#### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
 A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
 
 - A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
@@ -149,7 +149,7 @@ Access to ER format components depends on the setting for the ISO country/region
 
 Different versions of a data format component can have different settings for ISO country/region codes.
 
-#### Configuration
+#### <a name="Configuration"></a>Configuration
 
 An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
@@ -159,13 +159,13 @@ The format configuration that is created contains a format component. The data m
 
 An ER configuration is shared for application companies.
 
-#### Provider
+#### <a name="Provider"></a>Provider
 
 The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-#### Repository
+#### <a name="Repository"></a>Repository
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 

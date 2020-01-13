@@ -5,7 +5,7 @@ title: Filtering options
 description: This topic explains the filtering options that are available.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -74,6 +74,8 @@ One important difference between filtering in Finance and Operations apps and fi
 | Between “square” and “circle”              | “square..circle”                               |
 
 Any query syntax that doesn't match the preceding templates is interpreted as the **matches** operator.
+
+Note that the syntax for looking for blank values in a column remains the same as AX2012. With either the **matches** operator or the **is equal to** operator, you can type **""** to retrive rows with blank values for the current column. For example, **First Name IS ""** will finds all records where the first name is blank.    
 
 ## Filter Pane
 The Filter Pane provides an easy-to-use interface for filtering full page lists. The Filter Pane is an inline pane that slides in from the left side of the screen and pushes the page content to the right, so that users can see the data that they want to filter. Users open this filter mechanism by clicking the system-defined **Show filters** button on the left side of the page. After it has been opened, the Filter Pane remains visible until the user goes to a new page, or until the user closes the Filter Pane by using the **Hide filters** button.

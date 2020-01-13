@@ -3,11 +3,13 @@ title: Functional Application Consultant Learning Catalog
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article
-ms.date: 07/08/2019
+ms.date: 01/08/2020
 ms.author: margoc
 ---
 
 # Functional Application Consultant Learning Catalog
+
+Are you an implementation expert for a business domain? 
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs. For more information, see Training content formats. 
 

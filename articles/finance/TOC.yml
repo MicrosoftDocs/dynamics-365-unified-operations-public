@@ -1899,6 +1899,22 @@
           href: localizations/emea-ita-credit-invoicing.md
         - name: Withholding tax
           href: localizations/emea-ita-withholding-tax.md
+        - name: Separate accounts for credit notes
+          href: localizations/emea-ita-exil-separate-account-credit.md
+        - name: Sort sales invoice lines by packing slip
+          href: localizations/emea-ita-exil-invoicing-packing-slips.md
+        - name: Posting invoices with zero amounts
+          href: localizations/emea-ita-exil-zero-invoice-posting.md
+        - name: Bank data usability enhancement
+          href: localizations/emea-ita-exil-bank-accounts-setup.md
+        - name: Miscellaneous charges per kilogram in an Intrastat declaration
+          href: localizations/emea-ita-exil-misc-charges-intrastat.md
+        - name: Advanced notes management
+          href: localizations/emea-ita-exil-structured-notes.md
+        - name: Tax invoice for goods delivered for free
+          href: localizations/emea-ita-exil-goods-for-free.md
+        - name: Improved inquiry on debit or credit settlements
+          href: localizations/emea-ita-exil-improved-inquiry-settlement.md
       - name: Japan
         items:
         - name: Japan overview
@@ -2167,6 +2183,8 @@
           href: localizations/emea-nor-nets-import-format.md
         - name: VAT statement
           href: localizations/emea-nor-sales-tax-payment-report.md
+        - name: Standard Audit File for Tax (SAF-T) for Norway
+          href: localizations/emea-nor-satndard-audit-file-for-tax.md
       - name: Poland
         items:
         - name: Poland overview
@@ -3137,6 +3155,10 @@
             href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
           - name: Configure country context dependent ER model mappings
             href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
+          - name: Configure ER formats to use parameters that are specified per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md
+          - name: Set up the parameters of an ER format per legal entity
+            href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework

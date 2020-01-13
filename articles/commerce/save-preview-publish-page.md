@@ -105,3 +105,4 @@ To publish a URL, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)
