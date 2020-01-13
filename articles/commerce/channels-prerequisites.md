@@ -54,7 +54,6 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 * [Set up an employee address book](new-address-book.md)
 * [Set up a screen layout](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
 * [Set up a hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
-* Set up [store statements - tbd](tbd.md) (retail only?) and [statement vouchers - tbd](tbd.md)
 
 ## Call Center channel prerequisites
 * [Call center parameters - tbd](tbd.md)
