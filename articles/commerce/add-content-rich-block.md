@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Content rich block module
+title: Text block module
 description: This topic covers text block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
@@ -36,9 +36,9 @@ This topic covers text block modules and describes how to add them to site pages
 
 ## Overview
 
-A text block module is a module used for adding textyal content that can be either informational or promotional.
+A text block module is a module used for adding textual content that can be informational or promotional.
 
-Text block module is driven by data from the content management system (CMS) and can be put on any page. Its a stand-alone module that doesn't depend on page context or any other modules.
+Text block modules are driven by data from the content management system (CMS) and can be put on any page. They are stand-alone modules that don't depend on page context or any other modules.
 
 ## Examples of text block modules in e-Commerce
 
@@ -54,20 +54,21 @@ Text block modules can be used in the following ways:
 | Property name | Value          | Description |
 |---------------|----------------|-------------|
 | Rich text     | Rich text | Paragraph text. Some basic rich text capabilities are supported, such as bold, underlined, and italic text. |
-|Custom class name| class name| This will be a custom CSS class name that can be provided by a developer to style this module. The class name should be defined in the theme pack.|
-|Font size| Small, Medium, Large, X-Large| This is a property of the starter theme pack to showcase how different font sizes can be targetted for the content |
+|Custom class name| CSS class name| The name of a custom CSS class provided by a developer to format this module. The class name should be defined in the theme pack.|
+|Font size| Small, Medium, Large, X-Large| This property specifies the font size for the content. |
 
 ## Add a text block module to a page
 
 To add a text block module to a new page and set the required properties, follow these steps.
 
 1. Create a page template that is named **Content template**. 
-1. Add a **Default page** to the **Body**
+1. In the **Body** slot, add a **Default page** module.
 1. Check in the template, and publish it.
 1. Use the content template that you just created to create a page that is named **Content page**.
-1. In the **Main** slot of the new page, add a container module. Set Width to Fit container.
-1. To the container module, add **text block** module
-1. On the property panel for text block, add text to the Rich text field
+1. In the **Main Slot** of the new page, add a container module.
+1. In the property pane on the right, set the **Width** property to **Fill container**.
+1. Add a **Text block** module to the container module. 
+1. In the text block module property pane, add text to the **Rich text** field.
 1. Check in the page, and publish it.
 
 ## Additional resources
