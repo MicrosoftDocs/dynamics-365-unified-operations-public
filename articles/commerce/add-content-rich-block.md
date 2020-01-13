@@ -79,7 +79,7 @@ To add a text block module to a new page and set the required properties, follow
 
 [Carousel module](add-carousel.md)
 
-[Feature module](add-feature-module.md)
+[Content block module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
 
