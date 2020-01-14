@@ -37,7 +37,9 @@ This topic describes how to create a new call center channel in Microsoft Dynami
 
 ## Overview
 
-Before you create new call center channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
+In Dynamics 365 Commerce, a call center is a type of retail channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel. A company can define multiple call center channels in Dynamics 365 Commerce. 
+
+Before you create a new call center channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
 ## Create and configure new call center channel
 
