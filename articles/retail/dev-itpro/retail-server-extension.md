@@ -61,7 +61,7 @@ The following illustration shows the flow of the extension.
 
 The following illustration shows the class structure of the extension.
 
-![Retail Server extension class diagram](media/RSClassFlow.png)
+![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
 
 ### Steps
 
