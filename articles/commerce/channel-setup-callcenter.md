@@ -36,11 +36,10 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic describes how to create a new call center channel in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-TBD
+
+Before you create new call center channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
 ## Create and configure new call center channel
-
-Before a new call center channel is created, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
 To create and configure a new call center channel, follow these steps.
 
