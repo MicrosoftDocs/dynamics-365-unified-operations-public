@@ -247,7 +247,7 @@ The Generic Tax Engine component is a part of sealed extensions.
 
 ### The extension components
 
-1. Open **web.config** in the root folder under the IIS Retail Server site location.
+1. Open **web.config** in the root folder under the IIS Retail Server site location. Note that Retail Server is known as Commerce Scale Unit in Commerce 10.0.8 and above.
 2. Register the extensions in the **extensionComposition** section of the configuration file.
 
 # [Retail 7.3.1](#tab/retail-7-3-1)
