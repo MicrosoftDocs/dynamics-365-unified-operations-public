@@ -596,6 +596,8 @@
         href: expense-management/expense-workflows.md
       - name: Expense management workflow
         href: expense-management/expense-workflow.md
+      - name: Manage expense delegation
+        href: expense-management/manage-expense-delegation.md
       - name: Import and maintain credit card transactions
         href: expense-management/import-credit-card.md
       - name: Distributions on an expense report
