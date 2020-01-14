@@ -50,7 +50,7 @@ The following tax terms are mentioned in this topic.
 |BCD| Basic Customs Duty|
 
 ## Prerequisites
-Before you can complete the example scenarios, complete the following tasks, [Import GTE configuation from LCS](tax-engine-import-configuration.md).
+Before you can complete the example scenarios, complete the following tasks, [Tax engine import configuration](tax-engine-import-configuration.md).
 
 ### Add a configuration provider and make it the active provider
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
@@ -145,55 +145,52 @@ Before you use this method, be sure to read about [Tax engine integration](tax-e
 
 ![GTE extension of union territory](media/gte-extension-union-territory-form-info.png)
 
-2. Add a tax engine model field for intrastate transactions in a union territory. 
-    1. In the AOT, open **Classes** > **TaxableDocRowDataProviderExtensionLine**, add a ```const str``` for intrastate transactions in a union territory.
+2. Add a tax engine model field for intrastate transactions in a union territory.
 
-```
-public class TaxableDocRowDataProviderExtensionLine extends TaxableDocumentRowDataProviderExtension
-{
-    public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
-```
+   1. Create a new project of model Application Suite, and add the new class, TaxableDocRowDPExtLineSubscriberSample. Implement the following logic to determine if a transaction is an intrastate transaction in a union territory and pass the flag to GTE.
+   
+   			public class TaxableDocRowDPExtLineSubscriberSample
+			{
+			    public static const str IsIntraStateInUnionTerritory = 'IntraStateInUnionTerritory';
 
-3. Implement logic to determine if a transaction is an intrastate transaction in a union territory. For example, add a new method for the **TaxableDocRowDataProviderExtensionLine** class, and implement the logic in the method.
+			    [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), 			  delegateStr(TaxableDocRowDataProviderExtensionLine, initExtensionFieldsForLine))]
+			    public static void initExtensionFieldsForLine(TaxableDocumentValidFields _validFields)
+			    {
+				_validFields.add(IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
+			    }
 
-```
-private NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
-{
-    boolean                     isIntraStateWithUnionTerritory = NoYes::No;
-    LogisticsPostalAddress      partyAddress;
-    LogisticsPostalAddress      taxAddress;
-    LogisticsAddressState       partyState;
-    SalesPurchJournalLine       documentLineMap;
-    TaxModelTaxable_IN          taxModelTaxable;
-    documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
-    taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
-    partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
-    taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
-    if (partyAddress && taxAddress
-        && partyAddress.CountryRegionId == taxAddress.CountryRegionId
-        && partyAddress.State != ''
-        && taxAddress.State != ''
-        && partyAddress.State == taxAddress.State)
-    {
-        partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
-        isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
-    }
-    return  isIntraStateWithUnionTerritory;
-}
-```
-4. Pass the flag to GTE in TaxableDocRowDataProviderExtensionLine.fillInExtensionFields()
+			    [SubscribesTo(classStr(TaxableDocRowDataProviderExtensionLine), delegateStr(TaxableDocRowDataProviderExtensionLine, fillInExtensionFieldsForLine))]
+			    public static void fillInExtensionFieldsForLine(TaxableDocumentLineObject _lineObj)
+			    {
+				_lineObj.setFieldValue(IsIntraStateInUnionTerritory, TaxableDocRowDPExtLineSubscriberSample::IsIntraStateWithUnionTerritory(_lineObj), enumNum(NoYes));
+			    }
 
-```
-_lineObj.setFieldValue(IsIntraStateInUnionTerritory, this.IsIntraStateWithUnionTerritory(_lineObj));
-```
+			    private static NoYes IsIntraStateWithUnionTerritory(TaxableDocumentLineObject _lineObj)
+			    {
+				  boolean                     isIntraStateWithUnionTerritory = NoYes::No;
+				  LogisticsPostalAddress      partyAddress;
+				  LogisticsPostalAddress      taxAddress;
+				  LogisticsAddressState       partyState;
+				  SalesPurchJournalLine       documentLineMap;					TaxModelTaxable_IN          taxModelTaxable;
+				  documentLineMap = SalesPurchJournalLine::findRecId(_lineObj.getTransactionLineTableId(), _lineObj.getTransactionLineRecordId());
+				  taxModelTaxable = TaxModelDocLineFactory_IN::newTaxModelDocLine(documentLineMap);
+				  partyAddress = taxModelTaxable.getPartyLogisticsPostalAddress();
+				  taxAddress = taxModelTaxable.getTaxLogisticsPostalAddressTable();
+				  if (partyAddress && taxAddress
+				      && partyAddress.CountryRegionId == taxAddress.CountryRegionId
+				      && partyAddress.State != ''
+				      && taxAddress.State != ''
+				      && partyAddress.State == taxAddress.State)
+				  {
+				      partyState = LogisticsAddressState::find(partyAddress.CountryRegionId, partyAddress.State);
+			      	      isIntraStateWithUnionTerritory = partyState.UnionTerritory_IN;
+				  }
+				  return isIntraStateWithUnionTerritory;
+ 			    }
 
-5. Add the new field in TaxableDocumentRowDataProviderLine. initValidFields ()
+			}
 
-```
-validFields.add(TaxableDocRowDataProviderExtensionLine::IsIntraStateInUnionTerritory, Types::Enum, enumNum(NoYes));
-```
-
-6. Complete the data binding in the Designer.
+3. Complete the data binding in the Designer.
    1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
 
       ![Tax configuration designer](media/gte-extension-tax-configuration-designer.png)
@@ -247,7 +244,7 @@ Before you use this method, be sure that you are familiar with ER and the table 
 8. Save the configuration, and close the designer.
 9. In the **Configurations** workspace, click **Change status** > **Complete**.
 
-	![Chang configuration status](media/gte-change-configuration-status.png)
+	![Change configuration status](media/gte-change-configuration-status.png)
 
 10. Enter a description such as **UTGST**, and then click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.

@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -163,3 +163,9 @@ To get the CMS tenant ID in Dynamics 365 Commerce, follow these steps.
     ![Public URL field in Dynamics 365 Commerce](media/obtain-tenant-id.png)
 
 After you've finished changing the .env file, restart the Node server by using the **yarn start** command.
+
+## Additional resources
+
+[System requirements for a Dynamics 365 Commerce online extensibility development environment](system-requirements.md)
+
+[Set up a development environment](setup-dev-environment.md)

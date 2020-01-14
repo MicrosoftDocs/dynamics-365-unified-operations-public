@@ -46,12 +46,14 @@
           href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-        - name: System requirements for cloud deployments
-          href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/retail/toc.json
+        - name: System requirements for Retail client components
+          href: get-started/system-requirements.md
         - name: On-premises deployment
           href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
         - name: System requirements for on-premises deployments
           href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/retail/toc.json
+        - name: Installation steps for Retail channel components in an on-premises environment
+          href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/retail/toc.json
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/retail/toc.json
         - name: Finance and Operations apps operated by 21Vianet in China
@@ -60,22 +62,12 @@
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
       - name: What's new or changed
         items:
-        - name: What's new or changed in Retail home page
-          href: get-started/whats-new.md
-        - name: Retail 10.0.6
-          href: get-started/whats-new-10-0-6.md
-        - name: Retail 10.0.5
-          href: get-started/whats-new-10-0-5.md
+        - name: Retail version 10.0.7
+          href: get-started/whats-new-10-0-7.md
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
             href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-          - name: Finance and Operations apps 10.0.6 (November 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/retail/toc.json
-          - name: Finance and Operations apps 10.0.5 (October 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-          - name: Finance and Operations 10.0.4 (July 2019)
-            href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
           - name: Finance and Operations, Enterprise edition 7.3
             href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
         - name: Removed or deprecated features
@@ -788,10 +780,8 @@
         href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
       - name: Retail hierarchies
         href: retail-hierarchies.md
-      - name: Attributes and attribute groups
+      - name: Manage attributes and attribute groups
         href: attribute-attributegroups-lifecycle.md
-      - name: Create and manage attributes
-        href: create-manage-attributes.md
       - name: Set up retail products
         href: set-up-retail-products.md
       - name: Create a product
@@ -836,6 +826,8 @@
         href: optimal-combination-overlapping-discounts.md
       - name: Define channel-specific discounts
         href: define-channel-specific-discounts.md
+      - name: Tender-based discounts
+        href: tender_based_discounts.md
       - name: Options for preventing discounts for retail products
         href: prevent-discounts.md
       - name: Shipping discount overview
@@ -847,7 +839,9 @@
     - name: Loyalty
       items:
       - name: Loyalty overview
-        href: set-up-customer-loyalty-program.md      
+        href: set-up-customer-loyalty-program.md
+      - name: Clienteling overview
+        href: clienteling-overview.md
     - name: Payments
       items:
       - name: Payment methods
@@ -1008,6 +1002,8 @@
         href: dev-itpro/gift-card-cash-out.md
       - name: Ship orders from another store
         href: charge-send.md
+      - name: Hide non-carrier delivery modes from POS shipment dialog
+        href: hide-non-carrier-modes.md 
       - name: Task recorder and Help for MPOS and Cloud POS
         href: task-recorder-retail-pos.md
       - name: Hardware peripherals
@@ -1140,7 +1136,9 @@
         items:
         - name: Cash register functionality
           href: localizations/emea-swe-cash-registers.md
-        - name: Sample for Retail POS integration with control units
+        - name: Control unit integration sample for Sweden
+          href: localizations/emea-swe-fi-sample.md
+        - name: Sample for Retail POS integration with control units (legacy)
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Retail tasks
       items:
@@ -1150,12 +1148,6 @@
         href: tasks/category-pricing-rules-trade-agreements.md
       - name: Configure functionality profiles for sales representatives
         href: tasks/configure-functionality-profile-sales-representative.md
-      - name: Create devices and associate them with registers
-        href: tasks/create-associate-device.md
-      - name: Create hardware stations
-        href: tasks/create-associate-hardware-station.md
-      - name: Create POS registers
-        href: tasks/create-associate-registers.md
       - name: Create call center orders
         href: tasks/create-call-center-orders.md
       - name: Create financial dimensions for POS registers and configure dimension values on registers
@@ -1184,8 +1176,6 @@
         href: tasks/design-relationships-between-organizational-units.md
       - name: Manage assortments
         href: tasks/manage-assortments-2016-11.md
-      - name: Download hardware stations by using self-service
-        href: tasks/perform-self-service-download-hardware-station.md
       - name: Post online sales and payments
         href: tasks/posting-online-sales-payments.md
       - name: Process adjustments of loyalty reward points
@@ -1273,8 +1263,6 @@
           href: Open-URL-in-POS.md
         - name: Install the POS Layout designer
           href: install-pos-layout-designer.md
-        - name: Retail Modern POS in offline mode
-          href: dev-itpro/retail-modern-pos-offline.md
         - name: Extend the POS Dual display view
           href: dev-itpro/pos-dual-display-extension.md
         - name: Retail Modern POS and Cloud POS trigger extensibility
@@ -1337,6 +1325,8 @@
           href: dev-itpro/trigger-example-blocking-transaction.md
         - name: Implement a return policy using triggers
           href: dev-itpro/trigger-example-return-policy.md
+        - name: Log extension events to Application Insights
+          href: dev-itpro/commerce-application-insights.md
       - name: e-Commerce extensibility
         items:
         - name: Configure online stores

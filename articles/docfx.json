@@ -42,7 +42,9 @@
       "feedback_github_repo": "MicrosoftDocs/dynamics-365-unified-operations-public",
       "feedback_product_url": "https://ideas.dynamics.com",
       "contributors_to_exclude": [
-        "OpenLocalizationService"
+        "OpenLocalizationService",
+        "buck1ey",
+        "bishalgoswami"
       ],
       "layout": "Conceptual",
       "searchScope": [
@@ -53,7 +55,6 @@
       "breadcrumb_path": "/dynamics365/unified-operations/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-Dynamics365",
       "brand": "dyn-ops",
-      "titleSuffix": "Finance & Operations | Dynamics 365 | #MSDyn365FO",
       "_op_documentIdPathDepotMapping": {
         "dev-itpro/": {
           "folder_relative_path_in_docset": ".",
@@ -125,11 +126,6 @@
             "Retail"
         ]
        },
-      "titleSuffix": {
-        "dev-itpro/lifecycle-services/ax-2012/**/*.md": "AX 2012",
-        "talent/**.md": "Talent | Dynamics 365",
-        "retail/**.md": "Retail | Dynamics 365"
-      },
       "breadcrumb_path": {
         "dev-itpro/lifecycle-services/ax-2012/**/*.md": "/dynamics365/unified-operations/breadcrumb/toc.json"}
     },

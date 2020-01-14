@@ -5,7 +5,7 @@ title: Improved handling of batch-tracked items
 description: This topic describes the improvements that have been made to the handling of batches for batch-tracked items during the Retail statement posting process.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 11/04/2019
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,8 +33,6 @@ ms.dyn365.ops.version: 10.0
 
 
 [!include [banner](includes/banner.md)]
-
-[!include [banner](includes/preview-banner.md)]
 
 
 In Retail Point of Sale (POS), batch numbers can't be captured for batch-tracked items at the time of sale. However, for specific configurations, when sales are posted in the headquarters through customer orders or statement posting, the Microsoft Dynamics system expects that valid batch numbers for batch-tracked items exist, and that they will be used during the invoicing process.

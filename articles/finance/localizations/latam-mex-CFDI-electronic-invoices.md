@@ -56,7 +56,9 @@ There are two methods for generating electronic invoices:
 > [!NOTE]
 >  Integration with the PAC web service is not part of the Mexican localization. For information about how to customize a web service connection with a PAC, see “Customizing the integration with PAC web services” later in this article. 
 
-The following illustration shows the process for generating an electronic invoice by using the CFDI method. ![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
+The following illustration shows the process for generating an electronic invoice by using the CFDI method. 
+
+![The electronic invoice process for Mexico](./media/about-electronic-invoices-cfdi.jpg "Electronic invoicing generation process for CFDI method")    
 
 ### Requirements for using electronic invoices
 
@@ -94,9 +96,9 @@ As is explained in detail in the Mexican localization scope document, integratio
 
 ## Additional resources
 
-- [Create and post a customer invoice as an electronic invoice by using the CFDI method](./tasks/mx-00010-e-invoicing-cfdi.md)
-- [View, email, export, or print an already-generated CFDI electronic invoice based on a customer’s request](./tasks/mx-00010-inquire-print-electronic-invoice.md)
-- [Cancel a CFDI electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
-- [CFDI Version 3.3](latam-mex-cfdi-3-3.md)
+- [E-invoicing CFDI](./tasks/mx-00010-e-invoicing-cfdi.md)
+- [Inquire and print an electronic invoice](./tasks/mx-00010-inquire-print-electronic-invoice.md)
+- [Cancel an electronic invoice](./tasks/mx-00010-cancel-electronic-invoice.md)
+- [CFDI layout Version 3.3](latam-mex-cfdi-3-3.md)
 
 

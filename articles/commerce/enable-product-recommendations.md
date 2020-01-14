@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -57,7 +57,7 @@ To turn on product recommendations, follow these steps.
 > This procedure starts the process of generating product recommendation lists. Up to several hours might be required before the lists are available and can be seen at the point of sale (POS) or in Dynamics 365 for Commerce.
 
 ## Configure recommendation list parameters
-By default, the AI-ML-based product recommendation list provides suggested values. You can change the default suggested values to suit the flow of your business. To learn more about how to change the default parameters, go to [Modify AI-ML based product recommendation lists.](modify-product-recommendation-results.md)
+By default, the AI-ML-based product recommendation list provides suggested values. You can change the default suggested values to suit the flow of your business. To learn more about how to change the default parameters, go to [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 ## Show recommendations on POS devices
 After enabling recommendations in the back office, the recommendations pannel must be added to the control POS screen via the layout tool. To learn about this process, go [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)

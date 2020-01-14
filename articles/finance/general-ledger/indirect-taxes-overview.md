@@ -5,7 +5,7 @@ title: Sales tax overview
 description: This topic provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -45,7 +45,7 @@ The sales tax framework supports many types of indirect taxes, such as sales tax
 
 The following diagram shows the entities of the tax setup and how they are related.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Diagram showing overview of tax setup entities](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 For every sales tax that a company must account for, a sales tax code must be defined. A sales tax code stores the tax rates and calculation rules for the sales tax. 
 
@@ -62,7 +62,7 @@ The following table describes the entities and the sequence for the tax setup.
 | Setup activity                                                  | Required/Optional and description                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Create main accounts.                                           | Required. Before you can set up the sales tax functionality, the main accounts that the company uses to pay and record taxes must be created.                                                                                                                                                                             |
-| Set up ledger posting groups for sales tax.                     | Required. Ledger posting groups define the main accounts for recording and paying sales taxes.   For more information, see [Set up ledger posting groups for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Set up ledger posting groups for sales tax.                     | Required. Ledger posting groups define the main accounts for recording and paying sales taxes.   For more information, see [Set up Ledger posting groups for sales tax](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
 | Set up sales tax authorities.                                   | Required. Sales tax authorities are the entities that tax must be reported and paid to.    For more information, see [Set up sales tax authorities](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Set up sales tax settlement periods.                            | Required. Sales tax settlement periods contain information about when and how often sales tax must be reported and paid. They are related to a sales tax authority.                                                                                                                                                       |
 | Set up sales tax reporting codes.                               | Optional. Sales tax reporting codes can be assigned to sales tax codes to report amounts for multiple sales tax codes under one sales tax reporting code. For more information, see [Set up sales tax reporting codes](tasks/set-up-sales-tax-reporting-codes.md).                                         |
@@ -99,5 +99,8 @@ You typically would have to settle and pay 2,500 to the tax authority when the i
 
 However, if you are using a conditional sales tax, you settle with the tax authority when you receive the payment from the customer on July 30.
 
+### Postdated check
+
+If you use postdated check as the payment method, when the payment is created, the bank account isn't cleared. In some countries, the VAT becomes 'realized' liability when the payment clears the bank, which means the postdated check is settled. You can enable it by selecting **Realize the conditional tax when postdated checks are drawn** in **Cash and bank management > Setup > Cash and bank management parameters > Postdated checks**.
 
 For more information, see [Set up withholding tax](tasks/set-up-withholding-tax.md).

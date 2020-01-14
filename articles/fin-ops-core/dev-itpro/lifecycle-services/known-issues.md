@@ -3,9 +3,9 @@
 
 title: Known issues
 description: This topic explains how to view the known issues that you might experience when you use Finance and Operations.
-author: sericks007
+author: josaw1
 manager: AnnBe
-ms.date: 03/25/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.scope: Operations
 # ms.tgt_pltfrm: 
 ms.custom: 21861
 ms.assetid: 45699dd5-5e95-484b-8eb9-7bf32a4cf487
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 

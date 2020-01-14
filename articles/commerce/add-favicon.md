@@ -5,10 +5,10 @@ title: Add a favicon
 description: This topic explains how to add a favicon to your site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -62,3 +62,20 @@ To create the HTML for the favicon, use the following HTML snippet. For the **hr
 ## Add the HTML for the favicon to the \<head\> element of your pages
 
 To add a favicon to your site, use the same procedure that is used to add any type of HTML or script to the **\<head\>** element of your site pages.
+
+## Additional resources
+
+[Add a logo](add-logo.md)
+
+[Select a site theme](select-site-theme.md)
+
+[Work with CSS override files](css-override-files.md)
+
+[Add a welcome message](add-welcome-message.md)
+
+[Add a copyright notice](add-copyright-notice.md)
+
+[Add languages to your site](add-languages-to-site.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
+

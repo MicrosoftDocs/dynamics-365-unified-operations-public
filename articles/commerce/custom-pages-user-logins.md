@@ -5,10 +5,10 @@ title: Set up custom pages for user sign-ins
 description: This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -141,11 +141,11 @@ To update the "Sign up and sign in" policy with custom page information, follow 
 1. In the **Sign in and sign up** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **Unified sign up or sign in page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/sign-in?preloadscripts=true``.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. Select the **Local account sign up page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full sign-up URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/sign-up?preloadscripts=true``.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. In the **User attributes** section, follow these steps:
 
@@ -161,7 +161,7 @@ To update the "Profile editing" policy with custom page information, follow thes
 1. In the **Profile Editing** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **Profile edit page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full profile edit URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/profile-edit?preloadscripts=true``.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. In the **User attributes** section, follow these steps:
 
@@ -175,12 +175,14 @@ To update the "Password reset" policy with custom page information, follow these
 1. In the **Password Reset** policy that you configured earlier, in the navigation pane, select **Page layouts**.
 1. Select the **New password page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full password reset URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/passwordreset?preloadscripts=true``.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
 1. Select the **Account verification page** layout.
 1. Set the **Use custom page content** option to **Yes**.
-1. In the **Custom page URI** field, enter the full sign-in URL. Include the **?preloadscripts=true** suffix. For example, enter **www.\<my domain\>.com/sign-in?preloadscripts=true**.
+1. In the **Custom page URI** field, enter the full password reset verification URL. Include the **?preloadscripts=true** suffix. For example, enter ``www.<my domain>.com/passwordreset-verification?preloadscripts=true``.
 1. In the **Page Layout Version (Preview)** field, select **1.2.0**.
+
+
 
 ## Customize default text strings for labels and descriptions
 
@@ -195,3 +197,19 @@ However, in the global.json file for the starter kit sign in module, you can edi
 ![Updated link text in the sign in module's global.json file](./media/B2C_CustomizingStringsForModule.png)
 
 After you update the global.json file and publish your changes, the new link text appears in the sign in module in both Commerce and on the live sign-in page.
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)

@@ -67,9 +67,9 @@ Use the following steps to create a service object relation for a service order:
 
 ## See also
 
-[Service objects](service-objects.md)
+[Service objects overview](service-objects.md)
 
-[service object relations](service-object-relations.md)
+[Service object relations](service-object-relations.md)
 
 [Template BOMs](template-boms.md)
 

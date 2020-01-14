@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Provisioning for the Dynamics 365 Talent - Onboard app
+title: Provision Onboard
 description: This topic provides information about how to provision the standalone Dynamics 365 Talent - Onboard app.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: Talent March 2018 update
 ---
 
-#  Provisioning for the Dynamics 365 Talent - Onboard app
+#  Provision Onboard
 
 [!include [banner](includes/banner.md)]
 
@@ -40,8 +40,8 @@ The Onboard app is automatically provisioned when you start a trial or purchase 
 
 With the standalone Onboard app, you don't select the exact location where it should be provisioned. Instead, the following factors determine where Onboard is provisioned:
 
-- The location of your organization's existing Microsoft PowerApps environments, if any.
-- If no PowerApps environments exist, the location of the organization's existing tenant.
+- The location of your organization's existing Microsoft Power Apps environments, if any.
+- If no Power Apps environments exist, the location of the organization's existing tenant.
 - The data centers that Talent currently supports.
 
 The Onboard app is provisioned only in supported countries or regions. The supported countries and regions are defined in the Microsoft Trust Center for Talent data transparency. For a list of supported countries and regions, see [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability).

@@ -66,7 +66,7 @@ Checklist to follow before activation
     ![POS Wizard, before you start page](./media/p24.png)
 
 3.  Start Cloud POS or Modern POS.
-4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Retail Modern POS self-service and device activation](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Configure, install, and activate Retail Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
 
     [![POS Wizard, add server URL page](./media/p18.png)](./media/p18.png)
 
@@ -77,7 +77,8 @@ Checklist to follow before activation
 
 7.  Select the correct register and device. 
 
-    **Note:** The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. 
+    > [!NOTE]
+    > The device can be **Pending**, **De-activated**, or **Activated**. Alternatively, if you turned on the Retail HQ **Allow devices to be associated to registers from store** setting, you might see a list of registers that have no device associated with them. 
 
     [![POS Wizard, select register and device page](./media/p22.png)](./media/p22.png)
 

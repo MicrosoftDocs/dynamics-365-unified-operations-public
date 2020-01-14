@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -161,3 +161,15 @@ To create a new custom data action, follow these steps.
     ```
 
 TypeScript files for new custom data actions are created under the \\src\\actions\\ directory. The name of each file uses the name of the data action. For the preceding example, the path and name of the file for the new custom data action are **\\src\\actions\\getProductReviews.ts**.
+
+## Additional resources
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Page load data actions](page-load-data-action.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Core data actions](core-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)

@@ -5,7 +5,7 @@ title: Comparison of cloud and on-premises features
 description: The topic shows which features are supported in Cloud and on-premises.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -50,10 +50,9 @@ The following tables list the application areas. Cloud and on-premises support i
 |---------------------|-----------------------------|-----------|-----------------|
 | Compliance and certifications        |                                                                                           | Yes       | Yes             |
 |                                      | SOC 1 Type 1 certification                                                                | Yes       | No              |
-| Data management and integration      |                                                                                           | Yes       | Yes             |
-|                                      | Configuration-driven extension                                                            | Yes       | No              |
+| Data management and integration      |                                                                                           | Yes       | Yes             
 |                                      | Export data to your own data warehouse                                                    | Yes       | Yes             |
-|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | No              |
+|                                      | Enable the export of incremental updates to a data entity                                 | Yes       | Yes              |
 |                                      | Data integrations                                                                         | Yes       | Yes             |
 | Document management                  |                                                                                           | Yes       | Yes             |
 | Financial management                 |                                                                                           | Yes       | Yes             |
@@ -153,7 +152,7 @@ The following tables list the application areas. Cloud and on-premises support i
 
 ## Dynamics 365 Retail 
 
-To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+To see a list of retail capabilities that are available in on-premises deployments, see [Retail capabilities that are available in on-premises deployments](../../../retail/retail-onprem.md).
 
 ## Dynamics 365 Talent 
 

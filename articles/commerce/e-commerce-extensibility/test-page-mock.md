@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -122,3 +122,25 @@ The following example shows a page mock that adds two instances of the same modu
 Every page defines a root (**core-root** in the example above) that controls the page HTMl structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
 
 The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-page** page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
+
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

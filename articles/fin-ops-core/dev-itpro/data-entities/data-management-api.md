@@ -4,7 +4,7 @@
 title: Data management package REST API
 description: This topic describes the Data management framework's package REST API.
 author: Sunil-Garg
-ms.date: 05/09/2019
+ms.date: 12/04/2019
 manager: AnnBe
 ms.topic: article
 ms.prod: 
@@ -440,6 +440,17 @@ HTTP/1.1 200 OK
 
 > [!NOTE]
 > The file in Blob storage will remain there for seven days. It will then be automatically deleted.
+
+## Getting the list of errors
+GetExecutionErrors can be used to get the list of errors in a job execution. The API takes the Execution ID as the parameter, and returns a set of error messages in a JSON list.
+
+```
+
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
+BODY
+{"executionId":"<executionId>"}
+
+```
 
 ## Import and export processes
 

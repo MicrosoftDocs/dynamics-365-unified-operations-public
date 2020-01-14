@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -142,3 +142,19 @@ The following illustration shows the **Custom Domain HTTPS** dialog box in Azure
 ![Custom Domain HTTPS dialog box](./media/Custom_Domain_HTTPS.png)
 
 Your CDN should now be correctly configured so that it can be used with your Commerce site.
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Enable location-based store detection](enable-store-detection.md)

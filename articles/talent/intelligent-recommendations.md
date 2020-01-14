@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Intelligent recommendations
-description: This topic explains how machine learning can be used to provide recommendations for jobs and job candidates.
+title: Intelligent recommendations in Attract
+description: This article explains how machine learning can be used to provide recommendations for jobs and job candidates in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Intelligent recommendations
+# Intelligent recommendations in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Machine learning can help recruiters and hiring managers quickly identify top candidates for a position. It can also help prospects find the position that best suits their profile and interests. As these features are used, and feedback is provided, recommendations will improve.
 
 > [!NOTE] 
 > - The intelligent recommendation features are available only with the [Comprehensive hiring add-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
-> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin center** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more information, see [Access preview features in Talent](./access-preview-feature.md). 
+> - Functionality noted in this topic is available as part of a preview review release. The content and the functionality are subject to change. To use this feature, ask an administrator to enable it using the **Admin center** in Attract. Set **Candidate recommendation**, **Job recommendation**, and **Prospect recommendation** to **On**. For more information, see [Access preview features in Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## Candidate recommendations

@@ -50,4 +50,4 @@ On the **Fixed asset posting profiles** page, you set up general ledger accounts
 
 ## Additional resources
 
-- [Value model and depreciation book merge](../fixed-assets/fixed-asset-value-model-depreciation-book-merge.md)
+- [Fixed asset value model and depreciation book merge](../fixed-assets/fixed-asset-value-model-depreciation-book-merge.md)

@@ -5,7 +5,7 @@ title: Project invoicing
 description: This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -60,6 +60,9 @@ You can create invoice proposals for the following transactions:
 -   Amounts that are withheld by customers on previous project invoices
 -   Credit notes
 -   Amounts that a customer paid to you before a project is started
+
+> [!NOTE]
+> The **Enable sorting by resource during project invoice proposal creation** feature enables the project accountant to sort the project transactions available for billing by the resource when creating a new project invoice proposal. The grid displaying the available project transactions will have a separate field for Resource ID and Resource, allowing the user to filter and sort on the resource name. This feature is disabled by default and can be enabled in **Workspaces > Feature management**. Contact your system administrator for help in enabling this feature.
 
 You can create fee transactions in an invoice proposal. You can also modify the sales price on hour, expense, item, and fee transactions. When you post an invoice proposal, the updated prices and transactions are added to project reports and the transaction history. 
 

@@ -5,7 +5,7 @@ title: Export a copy of the standard user acceptance testing (UAT) database
 description: This topic explains a database export scenario for Finance and Operations.
 author: LaneSwenka
 manager: AnnBe
-ms.date: 07/08/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,7 +45,7 @@ In this tutorial, you will learn how to:
 As an example of this scenario, a customer who has already gone live wants to load a recent copy of production transactions into his or her development environment. In this way, the customer will be able to debug specific transactions, or develop new features and reports by using realistic datasets.
 
 > [!IMPORTANT]
-> Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments)
+> Database copy to a build environment is not supported. Learn more about [build environments](../dev-tools/continuous-delivery-faq.md#do-i-need-build-environments).
 
 ## Known limitations
 
@@ -70,10 +70,9 @@ After you've downloaded a database backup (.bacpac) file, you can begin the manu
 - Keep a copy of the existing AxDB database, so that you can revert to it later if you must.
 - Import the new database under a new name, such as **AxDB\_fromProd**.
 
-To help guarantee the best performance, copy the \*.bacpac file to the local computer that you're importing from. Open a **Command Prompt** window, and run the following commands.
+To ensure the best performance, copy the \*.bacpac file to the local computer that you're importing from. Download sqlpackage .NET Core for Windows from [Get sqlpackage .NET Core for Windows](https://docs.microsoft.com/sql/tools/sqlpackage-download?view=sql-server-ver15#get-sqlpackage-net-core-for-windows). Open a **Command Prompt** window, and run the following commands from the sqlpackage .NET Core folder.
 
 ```
-cd C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin
 
 SqlPackage.exe /a:import /sf:D:\Exportedbacpac\my.bacpac /tsn:localhost /tdn:<target database name> /p:CommandTimeout=1200
 ```
@@ -182,7 +181,7 @@ To switch back to the original database, reverse this process. In other words, s
 
 ### Reset the Financial Reporting database
 
-If you're using Financial Reporting, you must reset the Financial Reporting database by following the steps in [Resetting the financial reporting data mart after restoring a database](../analytics/reset-financial-reporting-datamart-after-restore.md). (Financial Reporting was previously named Management Reporter.)
+If you're using Financial Reporting, you must reset the Financial Reporting database by following the steps in [Reset the Financial reporting data mart](../analytics/reset-financial-reporting-datamart-after-restore.md). (Financial Reporting was previously named Management Reporter.)
 
 ## Reenter data from encrypted and environment-specific fields in the target database
 

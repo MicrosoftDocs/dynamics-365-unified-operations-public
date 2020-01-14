@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -138,3 +138,7 @@ To generate an **Organization sales** report, follow these steps.
 1. In the **From date** field, enter a date.
 1. In the **To date** field, enter a date.
 1. Select **OK**.
+
+## Additional resources
+
+- [Help resources for Dynamics 365 Retail](../retail/index.md)

@@ -77,7 +77,7 @@ The Regression suite automation tool is intended to be used for business cycle t
 ![Unit tests, component tests, multiple component tests, business cycle tests](media/business-cycle.png)
 
 ### Unit and component testing
-For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance Test Library](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
+For unit tests, we do not recommend that you use RSAT. Instead, use the SysTest framework and the build/test automation tools. For component tests, take advantage of the [Acceptance test library resources](../acceptance-test-library.md) (ATL). ATL is a library of X++ test helpers. When used with the SysTest framework, it offers the following benefits:
 + Lets you create consistent test data.
 + Increases the readability of test code.
 + Provides improved discoverability of the methods that are used to create test data.

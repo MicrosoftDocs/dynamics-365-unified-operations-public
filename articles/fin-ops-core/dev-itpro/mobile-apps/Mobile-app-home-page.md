@@ -5,7 +5,7 @@ title: Mobile app home page
 description: This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 09/17/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.search.validFrom: 2017-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Finance and Operations Operations mobile app and provides links to resources that can help you implement it in your organization.
+This topic describes the Finance and Operations mobile app and provides links to resources that can help you implement it in your organization.
 
 Overview
 --------
@@ -155,3 +155,6 @@ The following table includes links to resources that can help you implement both
 </tr>
 </tbody>
 </table>
+
+## Troubleshooting
+[Mobile platform resources](platform/mobile-platform-home-page.md#troubleshooting-the-app)

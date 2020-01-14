@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add content placement modules to a page
+title: Content placement module
 description: This topic covers content placement and content placement item modules, and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -27,7 +27,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Add content placement modules to a page
+# Content placement module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -79,3 +79,19 @@ To add a content placement module that contains a content placement item module 
 1. Repeat steps 7 and 8 to add another content placement item module that has the same tile size.
 1. Save and preview the page. You should see two content placement items that appear side by side. You can adjust the **Tile size** property of each content placement item module or add more modules to achieve the desired layout.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Alert module](add-alert.md)
+
+[Carousel module](add-carousel.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Feature module](add-feature-module.md)
+
+[Hero module](add-hero-module.md)
+
+[Video player module](add-video-player.md)

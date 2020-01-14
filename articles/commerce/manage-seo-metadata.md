@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -87,3 +87,19 @@ To modify page metadata, follow these steps.
 1. In the **Comments** field, enter **Updated metatags**, and then select **OK**.
 1. Select **Preview** to preview your page. When you've finished, close the preview tab to return to the authoring tool.
 1. Select **Publish**.
+
+## Additional resources
+
+[Modify an existing site page](modify-existing-page.md)
+
+[Add a new site page](add-new-page.md)
+
+[Select page layouts](select-page-layouts.md)
+
+[Save, preview, and publish a page](save-preview-publish-page.md)
+
+[Enrich a product page](enrich-product-page.md)
+
+[Enrich a category landing page](enrich-category-page.md)
+
+[Verify page content accessibility](verify-accessibility.md)

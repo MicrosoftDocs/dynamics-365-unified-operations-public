@@ -37,13 +37,13 @@ ms.dyn365.ops.version: Platform update 8
 
 The output of this task is an upgraded database that you can use in a sandbox environment. In this topic, we use the term *sandbox* to refer to a Standard or Premier Acceptance Testing (Tier 2/3) or higher environment connected to a SQL Azure database. On this environment business users and functional team members can validate application functionality. This functionality includes customizations and the data that was brought forward from Microsoft Dynamics AX 2012.
 
-We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Data upgrade in a development environment](prepare-data-upgrade.md).
+We strongly recommend that you run the data upgrade process in a development environment before you run it in a shared sandbox environment, because this approach will help reduce the overall time that is required for a successful data upgrade. For more information, see [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!NOTE]
 > It's very important that you install the latest version of SQL Server Management Studio before you start this process: [Download SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms). 
 
 ## Overview of the sandbox data upgrade process
-Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Data upgrade in a development environment](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
+Before you start to upgrade data in a sandbox environment, you will have already upgraded data in a development environment, as explained in [Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade](prepare-data-upgrade.md). The two processes are very similar. The main difference is that a sandbox environment uses Microsoft Azure SQL Database for data storage, whereas a development environment uses Microsoft SQL Server. This technical difference in the database layer requires that you  modify the data upgrade procedure slightly in a sandbox environment, because a backup from the AX 2012 database instance can't just be restored to SQL Database.
 
 ![Sandbox data upgrade process](./media/data-upgrade-sandbox.png)
 
@@ -309,7 +309,7 @@ Tier 2 Sandbox environments do not allow running DataUpgrade packages against th
 
 Next, execute the package manually via Remote Desktop on the AOS VM. 
 
-For more information, see [Upgrade data in development, demo, or sandbox environments](upgrade-data-to-latest-update.md). 
+For more information, see [Upgrade data in development or demo environments](upgrade-data-to-latest-update.md). 
 
 ### Upgrade a copy of the database in a development environment
 

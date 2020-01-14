@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Manage Content Security Policy (CSP)
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 
@@ -124,3 +124,11 @@ To prevent CSP from applying policies to your site, you can turn it off for that
     ![Disable content security check box on the Content Security Policy tab](media/content-security-policy-disable.png)
 
 1. Select **Save and Publish**.
+
+## Additional resources
+
+[Manage e-Commerce users and roles](manage-ecommerce-users-roles.md)
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)

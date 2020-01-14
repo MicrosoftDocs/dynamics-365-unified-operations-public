@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a video player module to a page
+title: Video player module
 description: This topic covers video player modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a video player module to a page
+# Video player module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -62,6 +62,8 @@ The ambient video player module supports short informational videos. It should b
 ## Video player module
 
 The video player module can be used to showcase videos on an e-Commerce site. It supports all playback capabilities, such as play, pause, full-size mode, and closed captions. The video player module also supports customization of closed captions to meet Microsoft accessibility standards. For example, you can customize the font size and background color.
+
+The video player module also supports secondary audio tracks. When a video is uploaded, a secondary audio track can also be uploaded. The video player module can then play the secondary audio track if a user selects it.
 
 ### Examples of video player modules in e-Commerce
 
@@ -100,3 +102,19 @@ To add a video player module to a new page and set the required properties, foll
 1. In the settings for the video player module, go to **Media**, and upload a video file.
 1. Save and preview the page. You should see both video modules on the page. You can change additional settings to customize the behavior of each module.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Alert module](add-alert.md)
+
+[Carousel module](add-carousel.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Content placement module](add-content-placement-modules.md)
+
+[Feature module](add-feature-module.md)
+
+[Hero module](add-hero-module.md)

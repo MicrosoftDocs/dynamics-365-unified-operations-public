@@ -5,10 +5,10 @@ title: Create a layout container module
 description: This topic describes how to create, test, and preview a layout container module.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/25/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -60,9 +60,6 @@ The following example shows the addition of a **slots** section that contains tw
     "description": "Sample container module",
     "categories": ["container"],
     "tags": [""],
-    "module": {
-        "view": "./campaignContainer"
-    },
     "config": {
     },
     "slots": {
@@ -211,3 +208,25 @@ To preview the page in a local web browser, follow these steps.
     ```
 
 2. In a web browser, open the following URL to view the module: `https://localhost:4000/page?mock=campaignContainerMock`. Notice the name of the page mock in the **mock=** query string parameter.
+
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using module mocks](test-module-mock.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

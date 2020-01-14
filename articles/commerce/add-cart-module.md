@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a cart module to a page
+title: Cart module
 description: This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a cart module to a page
+# Cart module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -91,3 +91,19 @@ To add a cart module to a new page and set the required properties, follow these
 1. Create a page that uses the new template.
 1. Save and preview the page.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Container module](add-container-module.md)
+
+[Buy box module](add-buy-box.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

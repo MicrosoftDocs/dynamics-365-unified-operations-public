@@ -113,13 +113,13 @@ Note that there are no remaining patterns work left in your models if there are 
 
 To find container controls in the form that must still have a pattern applied, search for “unspecified” in the form designer. This search will highlight all the nodes in the form that have the **Pattern: &lt;unspecified&gt;** designation. You can then examine each container individually to apply the most appropriate subpattern. 
 
-![FormFaq2](media/formfaq2.png)
+![Search result of nodes that have an "unspecified" designation](media/formfaq2.png)
 
 ### How do I check whether more pattern work must still be done on a form?
 
 To determine whether more pattern work must be done on an open form, right-click the form in the designer, and then select **Addins** &gt; **Form statistics**. If the **Pattern=Unspecified** count is more than 0 (zero), the form still has containers that must have a pattern applied. Ideally, every form should also have a **Pattern=Custom** count of 0 (zero) and a **Pattern coverage** value of 100 percent. These values indicate that the form is fully covered by patterns. 
 
-![formStatistics](media/formstatistics.png)
+![Dialog box with values that indicate a form is fully covered by patterns](media/formstatistics.png)
 
 ### Why isn’t static text allowed inside the Fields and Field Groups subpattern? Isn’t static text allowed in forms any longer? What do I do with the static text that the Fields and Field Groups subpattern doesn’t accept? How can I show user Help instead of static text?
 
@@ -149,7 +149,7 @@ Your current options for scenarios where a manually sized control is needed incl
 
 Groups and controls appear as “unmatched” in the **Pattern Information** panel if they, or any controls inside them, aren’t allowed by the pattern. 
 
-![FormFaq5](media/formfaq5.png)
+![Example of unmatched controls](media/formfaq5.png)
 
 There are two typical reasons why groups appear as "unmatched" in the Fields and Field Groups subpattern:
 

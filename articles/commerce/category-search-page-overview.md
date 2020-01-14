@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Default category landing page and search results page
+title: Overview of default category landing page and search results page
 description: This topic provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,7 +28,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Default category landing page and search results page
+# Overview of default category landing page and search results page
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -99,3 +99,14 @@ The following components are essential for a search results page:
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
+
+## Additional resources
+
+[Overview of the home page](quick-tour-home-page.md)
+
+[Overview of product details pages](quick-tour-pdp.md)
+
+[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
+
+[Overview of account management pages](quick-tour-account-management.md)
+

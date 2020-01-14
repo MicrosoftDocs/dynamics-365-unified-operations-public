@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -51,3 +51,9 @@ The online extensibility development environment can preview customizations in a
 * Internet Explorer 11
 * Mozilla Firefox (up to the current version minus 1)
 * Microsoft Edge (up to the current version minus 1)
+
+## Additional resources
+
+[Set up a development environment](setup-dev-environment.md)
+
+[Configure a development environment (.env) file](configure-env-file.md)

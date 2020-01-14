@@ -213,4 +213,4 @@ To import baseline settings from an XML file that is stored on the Microsoft Sha
 ## Additional resources
 
 - [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md)
-- [Task recorder](../user-interface/task-recorder.md)
+- [Task recorder resources](../user-interface/task-recorder.md)

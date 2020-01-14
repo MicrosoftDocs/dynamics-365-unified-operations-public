@@ -65,12 +65,12 @@ Overtime premiums can be processed only for work periods that are in the system.
 
 ## Assign work cycles to positions
 
-Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
+Typically, work cycles are assigned to non-exempt positions when the positions are set up for payroll. For more information, see [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md).
 
 ## Next step
 
-The next step is to set up earning codes and earning code groups. For more information, see [Earning code and earning code group tasks](noam-usa-earning-code-group-tasks.md).
+The next step is to set up earning codes and earning code groups. For more information, see [Set up earning codes and earning code groups](noam-usa-earning-code-group-tasks.md).
 
 ## Additional resources
 
-[Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md)
+[Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md)

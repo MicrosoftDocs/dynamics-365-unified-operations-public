@@ -84,7 +84,7 @@ If you're working with finite materials, scheduling also depends on the availabi
 Additional resources
 --------
 
-[Operation scheduling options](operation-scheduling-options.md)
+[Operations scheduling options](operation-scheduling-options.md)
 
 
 

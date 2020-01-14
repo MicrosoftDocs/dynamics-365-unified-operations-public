@@ -1,14 +1,15 @@
+
 ---
 # required metadata
 
-title: Quick tour of account management
-description: This topic provides a quick tour of account management pages in Microsoft Dynamics 365 Commerce.
+title: Overview of account management pages
+description: This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -27,12 +28,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Quick tour of account management
+# Overview of account management pages
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides a quick tour of account management pages in Microsoft Dynamics 365 Commerce.
+This topic provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -91,3 +92,14 @@ The following illustration shows an example of a **Wishlist** page.
 ![Example of a Wishlist page](./media/Account-Management-Wishlist.PNG)
 
 For more information about account management modules and how to author them, see [Account Management](account-management.md).
+
+## Additional resources
+
+[Overview of the home page](quick-tour-home-page.md)
+
+[Overview of default category landing page and search results page](category-search-page-overview.md)
+
+[Overview of product details pages](quick-tour-pdp.md)
+
+[Overview of cart and checkout pages](quick-tour-cart-checkout.md)
+

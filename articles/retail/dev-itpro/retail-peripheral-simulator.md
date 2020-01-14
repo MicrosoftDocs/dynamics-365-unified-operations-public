@@ -255,7 +255,7 @@ The POS simulator supports the following devices:
 - Payment terminal
 
     > [!NOTE]
-    > A payment terminal requires that a payment connector be present. For more information, see [Payment integration with a payment terminal](end-to-end-payment-extension.md).
+    > A payment terminal requires that a payment connector be present. For more information, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
 Below the list of supported devices, there is a **Settings** tab. You can use the **Settings** tab to specify how the POS simulator should communicate with the devices that are being tested. If **Runtime** is selected, the method that the POS simulator uses to communicate with the device resembles the method that MPOS that has a built-in hardware station communicates. If **Win32** is selected, the POS simulator communicates directly with the device. This communication method resembles the method that a standalone hardware station communicates.
 
@@ -537,4 +537,4 @@ For support if you're performing compatibility tests, and for other inquiries, s
 
 ## Additional resources
 
-[Retail peripherals overview](../retail-peripherals-overview.md)
+[Retail peripherals](../retail-peripherals-overview.md)

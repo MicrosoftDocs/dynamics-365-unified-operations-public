@@ -103,6 +103,6 @@ The data model that is included in the PowerBI.com solution for the Dynamics AX
 
 ## Additional resources
 
-[Power BI integration](power-bi-integration.md)
+[Features and services available through Power BI integration](power-bi-integration.md)
 
-[Configuring Power BI integration for workspaces](configure-power-bi-integration.md)
+[Configure Power BI integration for workspaces](configure-power-bi-integration.md)

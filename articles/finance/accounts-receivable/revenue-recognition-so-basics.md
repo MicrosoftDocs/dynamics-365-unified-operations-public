@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The Revenue recognition feature can't  be turned on through Feature management. Currently, you must use configuration keys to turn it on.
+> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
 
 This topic describes the basic functionality for recognizing revenue on sales orders and invoices. Revenue recognition is available on a sales order and on the corresponding invoice that is created from the sales order. The sales order can also be created through a Time and materials project.
 

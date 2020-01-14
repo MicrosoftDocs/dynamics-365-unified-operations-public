@@ -5,10 +5,10 @@ title: Customize site navigation
 description: This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -81,7 +81,7 @@ To make your navigation hierarchy available to your online storefront, follow th
 
 ## Show categories on your site
 
-To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment. For more information, see [Creating templates](http://) and [Creating fragments](http://). The navigation menu module will then show your navigation hierarchy, provided that you've published your retail navigation hierarchy to the channel that your site is bound to.
+To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment. The navigation menu module will then show your navigation hierarchy, provided that you've published your retail navigation hierarchy to the channel that your site is bound to.
 
 > [!NOTE]
 > The navigation menu module that is included in the store starter kit lets users navigate only to categories that don't have subcategories. If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.
@@ -97,3 +97,19 @@ To add custom navigation options to your navigation menu, follow these steps.
 1. Enter link text and a URL.
 1. Repeat steps 2 and 3 to add more custom navigation options.
 1. When you've finished, save the template or fragment, and check it in.
+
+## Additional resources
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Work with modules](work-with-modules.md)
+
+[Create a page URL](create-page-url.md)
+
+[Work with publish groups](publish-groups.md)

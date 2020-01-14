@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -107,3 +107,9 @@ After you've previewed the changes to your preset layout, follow one of these st
 
 > [!WARNING]
 > Preset layouts can be referenced by multiple pages. When you publish a preset layout, be aware that you might affect the layout of multiple pages.
+
+## Additional resources
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)

@@ -39,7 +39,7 @@ Overview
 
 This topic guides retail IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components. We assume that the payment connector has been implemented and tested by the payment provider or the payment independent software vendor (ISV), and that it's ready for validation and subsequent production deployment in a customer environment.
 
-This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). For information about how to download the SDK, see [Retail SDK overview](retail-sdk/retail-sdk-overview.md). For guidelines about how to package a payment connector, see the Retail SDK packaging document in the downloaded SDK. 
+This topic doesn't include information about how to package a payment connector by using the Retail software development kit (SDK). For information about how to download the SDK, see [Retail software development kit (SDK) architecture](retail-sdk/retail-sdk-overview.md). For guidelines about how to package a payment connector, see the Retail SDK packaging document in the downloaded SDK. 
 
 This topic also doesn't include information about how to deploy the payment web application, payment front-end processor, or payment back-end processor, because those applications are managed by payment providers or payment ISVs. If you're using Microsoft Dynamics AX 7.0 (February 2016), you must apply KB 3183058 before you create the Retail deployable package.
 
@@ -101,7 +101,7 @@ After you've uploaded your deployable packages to the LCS asset library, you can
 
 #### Download and run installers on client computers
 
-The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Retail Modern POS configuration and installation](../retail-modern-pos-device-activation.md).
+The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Configure, install, and activate Retail Modern POS (MPOS)](../retail-modern-pos-device-activation.md).
 
 ## Manual deployment
 This section describes how to manually deploy a payment connector. You can use a manual deployment to test locally in a developer environment. This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD).
@@ -136,6 +136,6 @@ E-commerce sites aren't deployed in LCS-managed environments. You should work wi
 Additional resources
 --------
 
-[Guide to implementing a payment connector and a payment device](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+[Guide to implementing a payment connector and a payment device](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf)
 
-[Retail SDK packaging](retail-sdk/retail-sdk-packaging.md)
+[Create retail deployable packages](retail-sdk/retail-sdk-packaging.md)

@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -69,3 +69,24 @@ The following example shows a module mock data file that is used to mock the **c
     "typeName": "productFeature"
 }
 ```
+## Additional resources
+
+[Create a new module](create-new-module.md)
+
+[Clone a starter kit module](clone-starter-module.md)
+
+[Add module configuration fields](add-module-config-fields.md)
+
+[Preview and debug a module](test-module.md)
+
+[Debug modules](debug-modules.md)
+
+[Test modules by using page mocks](test-page-mock.md)
+
+[Container modules](container-modules.md)
+
+[Create a layout container module](create-layout-container.md)
+
+[Create a page container module](create-page-containers.md)
+
+[Localize a module](localize-module.md)

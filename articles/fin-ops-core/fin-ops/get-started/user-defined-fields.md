@@ -107,7 +107,7 @@ Additionally, for picklist fields, the set of valid values for the custom field 
 
 ### Exposing custom fields on data entities
 
-It may also be important to allow custom fields to be visible on data entities. Data entities are utilized in the [Open in Office](../../dev-itpro/office-integration/office-integration.md) feature, as well as for data import/export scenarios.
+It may also be important to allow custom fields to be visible on data entities. Data entities are utilized in the [Office integration overview](../../dev-itpro/office-integration/office-integration.md) feature, as well as for data import/export scenarios.
 
 Follow these steps to expose a custom field on a data entity:
 

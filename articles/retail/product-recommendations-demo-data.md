@@ -5,7 +5,7 @@ title: Omni-channel product recommendations demo data
 description: This document aims to provide guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -37,7 +37,7 @@ environments using pre-populated, customizable demo data.
 
 Omni-channel product recommendations provide a set of editorially curated or programmatically generated ordered list of products. 
 These lists can be used in several scenarios, depending on the business need. 
-For more information about product recommendation lists, see [Product recommendations overview.](product-recommendaitons-overview.md)
+For more information about product recommendation lists, see [Product recommendations overview.](../commerce/product-recommendations.md)
 
 For Tier-2 and higher Dynamics Environments product recommendations are automatically computed based on customer data.
 Using product recommendations demo data does not disable any product recommendations solution already provisioned in the environment
@@ -82,6 +82,6 @@ between easily through configuration.
 
 ## Additional resources
 
-[Product recommendations overview](product-recommendations-overview.md)
+[Product recommendations overview](../commerce/product-recommendations.md)
 
-[Environment planning](environment-planning.md)
+[Environment planning](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

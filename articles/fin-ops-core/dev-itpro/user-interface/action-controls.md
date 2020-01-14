@@ -84,7 +84,7 @@ Note that the other values of **Button Display** from Microsoft Dynamics AX 2012
 
 In previous versions, images or icons were often shown on buttons to help users recognize those buttons. In the current version, the number of images that are used for this purpose has been drastically reduced. Fewer images produce a cleaner, more modern user interface. Additionally, there was a desire to indicate processes and tasks by using more common symbols instead of multiple subtly different images. For more details about how images are used on buttons, see the "Button image guidelines" section of the [General form guidelines](general-form-guidelines.md) article. 
 
-Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, with the shift to the web, this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that require images will use this format (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format. For a list of the full set of symbols that are supported, see [the symbol font](symbol-font.md) article. The following table shows the recommended and preferred method for assigning images to buttons.
+Two metadata properties are used to define an image for a button: **Image Location** and **Normal Image**. The allowed values for the **Normal Image** property depend on the value of the **Image Location** property. In previous versions, Embedded Resources (kernel resources) were heavily used to specify button images or icons. However, with the shift to the web, this image format option is no longer available. Instead, a new image format (Symbol font) has been added, and the expectation is that all buttons that require images will use this format (**Image Location** = **Symbol**). The primary reason for this change is that a symbol font is the best performing and most scalable image format. For a list of the full set of symbols that are supported, see [Dynamics Symbol font](symbol-font.md) article. The following table shows the recommended and preferred method for assigning images to buttons.
 
 | Property       | Value                             |
 |----------------|-----------------------------------|
@@ -97,15 +97,15 @@ In general, the **Button Style** property defines how a button is shown in the u
 
 | Style           | Example                                                                                                                                                      | Description                                                                          |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| Standard (Auto) | [![11\_Control](./media/11_control.png)](./media/11_control.png) | The traditional button appearance                                                    |
-| Command link    | [![12\_Control](./media/12_control.png)](./media/12_control.png) | A combination of a small square block or image on the left, and a label on the right |
-| Link            | [![13\_Control](./media/13_control.png)](./media/13_control.png) | A button that has the appearance of a hyperlink                                      |
+| Standard (Auto) | [![Example of Standard button style](./media/11_control.png)](./media/11_control.png) | The traditional button appearance                                                    |
+| Command link    | [![Example of Command link button style](./media/12_control.png)](./media/12_control.png) | A combination of a small square block or image on the left, and a label on the right |
+| Link            | [![Example of Link button style](./media/13_control.png)](./media/13_control.png) | A button that has the appearance of a hyperlink                                      |
 
 ## Standard Action Panes
 The standard Action Pane is the primary location for page-level actions. It consists of both system-defined actions (actions that aren't explicitly modeled but are automatically added by the framework) and developer-defined actions (actions that are explicitly modeled in either Action Pane tabs or Button Groups). Developers can promote the most frequently used actions directly to the standard Action Pane by modeling Button Groups directly under the Action Pane. However, Action Pane tabs can still be used to group actions and provide access via a flyout. The following illustration shows a standard Action Pane that includes system-defined buttons, two promoted developer-defined actions, and a set of Action Pane tabs. 
-[![1\_Control](./media/1_control.png)](./media/1_control.png) 
+[![Illustration of standard Action Pane](./media/1_control.png)](./media/1_control.png) 
 The following illustration shows the flyout that appears to show additional commands when an Action Pane tab is clicked. 
-[![Control\_2](./media/control_2.png)](./media/control_2.png)
+[![Illustration showing Action Pane flyout](./media/control_2.png)](./media/control_2.png)
 
 ### System-defined buttons
 
@@ -113,16 +113,16 @@ Several system-defined buttons are added automatically to pages. The following t
 
 | Button                                                                                                                                                              | Name                     | Comments                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|------------------------------------------------------------------------|
-| [![newButton](./media/newbutton.png)](./media/newbutton.png)            | New                      | Create a new record for the first master data source.                  |
-| [![deleteButton](./media/deletebutton.png)](./media/deletebutton.png)   | Delete                   | Delete the currently selected record for the first master data source. |
-| [![editButton](./media/editbutton.png)](./media/editbutton.png)         | Edit                     | Switch to **Edit** mode.                                               |
-| [![filterButton](./media/filterbutton.png)](./media/filterbutton.png)   | Show filters             | Open the **Filter** pane.                                              |
-| [![listButton](./media/listbutton.png)](./media/listbutton.png)         | Show list                | Toggle visibility of the navigation list on the details pages.         |
-| [![attachButton](./media/attachbutton.png)](./media/attachbutton.png)   | Attach                   | Attach a document.                                                     |
-| [![attachButton](./media/refreshbutton.png)](./media/refreshbutton.png) | Refresh                  | Update all the data on the page.                                       |
-| [![closeButton](./media/closebutton.png)](./media/closebutton.png)      | Close                    | Close the page (equivalent to clicking the browser's **Back** button). |
-| [![officeButton](./media/officebutton.png)](./media/officebutton.png)   | Open in Microsoft Office | Open or export to Microsoft Excel. More Office integration is planned. |
-| [![popoutButton](./media/popoutbutton.png)](./media/popoutbutton.png)   | Popout                   | Pop out the current form into a new dynalinked window.                 |
+| [![New button](./media/newbutton.png)](./media/newbutton.png)            | New                      | Create a new record for the first master data source.                  |
+| [![Delete button](./media/deletebutton.png)](./media/deletebutton.png)   | Delete                   | Delete the currently selected record for the first master data source. |
+| [![Edit button](./media/editbutton.png)](./media/editbutton.png)         | Edit                     | Switch to **Edit** mode.                                               |
+| [![Filter button](./media/filterbutton.png)](./media/filterbutton.png)   | Show filters             | Open the **Filter** pane.                                              |
+| [![List button](./media/listbutton.png)](./media/listbutton.png)         | Show list                | Toggle visibility of the navigation list on the details pages.         |
+| [![Attach button](./media/attachbutton.png)](./media/attachbutton.png)   | Attach                   | Attach a document.                                                     |
+| [![Refresh button](./media/refreshbutton.png)](./media/refreshbutton.png) | Refresh                  | Update all the data on the page.                                       |
+| [![Close button](./media/closebutton.png)](./media/closebutton.png)      | Close                    | Close the page (equivalent to clicking the browser's **Back** button). |
+| [![Open in Office button](./media/officebutton.png)](./media/officebutton.png)   | Open in Microsoft Office | Open or export to Microsoft Excel. More Office integration is planned. |
+| [![Popout button](./media/popoutbutton.png)](./media/popoutbutton.png)   | Popout                   | Pop out the current form into a new dynalinked window.                 |
 
 ### Pinning the Action Pane
 The standard Action Pane supports the ability for the user to "pin" or "unpin" the Action Pane as desired. 
@@ -154,14 +154,15 @@ Some actions can also be accessed via shortcut menus (right-click context menus)
 
 + Other right-click targets (for example, on a field label or on the value of a read-only control) should trigger the context menu.  
 
-**Note:** Context menus are intended to provide an alternate route to a command, and should not be only way to execute a command. Therefore, any action that is added to a control's context menu should also have a corresponding action that is available outside the context menu. 
+> [!NOTE]
+> Context menus are intended to provide an alternate route to a command, and should not be only way to execute a command. Therefore, any action that is added to a control's context menu should also have a corresponding action that is available outside the context menu. 
 
-The programming model for modifying context menus differs from the model used in previous releases. In Dynamics AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see [Code migration: Context menus](../migration-upgrade/code-migration-context-menus.md).
+The programming model for modifying context menus differs from the model used in previous releases. In Dynamics AX 2012, the **PopupMenu** class was used. This class relies on Microsoft Windows application programming interfaces (APIs). However, because these APIs aren't available on the web, replacement APIs have been created to provide similar functionality. For more information, see [Code migration - Context menu code](../migration-upgrade/code-migration-context-menus.md).
 
 ## Keyboard shortcuts
 Keyboard shortcuts are another mechanism for triggering some actions. Many actions that had shortcuts in Dynamics AX 2012 continue to have shortcuts in Operations. However, because of browser restrictions, the key combination that is used to trigger a particular action might differ. 
 
-The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Shortcut keys](../../fin-ops/get-started/shortcut-keys.md) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
+The following table shows some important keyboard shortcuts that are available. For the full list of current keyboard shortcuts, see the [Keyboard shortcuts](../../fin-ops/get-started/shortcut-keys.md) article. In the future, we plan to provide mechanisms so that developers and end users can define shortcuts for other actions.
 
 | Key combination     | Action              | Comments                                                                                                                                                                                                                           |
 |---------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -65,3 +65,20 @@ To select a different layout for an existing page, follow these steps.
 1. Select the page, check it out, and then select it to open it.
 1. Select **Change layout**.
 1. Select the new layout for the page, and then select **OK**. The page editor is refreshed to show the new layout.
+
+## Additional resources
+
+[Modify an existing site page](modify-existing-page.md)
+
+[Add a new site page](add-new-page.md)
+
+[Manage SEO metadata](manage-seo-metadata.md)
+
+[Save, preview, and publish a page](save-preview-publish-page.md)
+
+[Enrich a product page](enrich-product-page.md)
+
+[Enrich a category landing page](enrich-category-page.md)
+
+[Verify page content accessibility](verify-accessibility.md)
+

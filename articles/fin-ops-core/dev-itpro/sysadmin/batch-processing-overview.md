@@ -3,7 +3,7 @@
 
 title: Batch processing overview
 description: This topic provides an overview of batch processing.
-author: hasaid
+author: Peakerbl
 manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: hasaid
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -58,11 +58,11 @@ For more information, see [Batch processing and batch servers](batch-server-over
 Administrators and Batch managers can perform common tasks including creating and copying batch jobs, changing a batch job user, and specifying a time period in which a job should not execute. For more information about these tasks, see the following topics:
 
 -  [Create a batch job](tasks/create-batch-job.md)
--  [Batch manager role](runby.md)
--  [Batch active period](activeperiod.md)
+-  [Batch manager security role](runby.md)
+-  [Active batch periods](activeperiod.md)
 -  [Copy a batch job](copy-batch-job.md)
--  [Configure batch alerts](alerts.md)
--  [Batch enhanced forms](enhanced-forms.md)
--  [Batch history cleanup](batch-history-cleanup.md)
+-  [Set up alerts](alerts.md)
+-  [Enhanced batch forms](enhanced-forms.md)
+-  [Clean up the batch job history](batch-history-cleanup.md)
 -  [Abort an executing batch job](batch-abort.md)
 

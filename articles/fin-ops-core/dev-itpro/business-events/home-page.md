@@ -38,7 +38,7 @@ A business action that a user performs can be either a workflow action or a non-
 
 ## Prerequisites
 
-Business events can be consumed using Microsoft Flow and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
+Business events can be consumed using Microsoft Power Automate and Azure messaging services. Therefore, customers must bring their subscriptions to such assets to use business events
 
 > [!IMPORTANT]
 > Business events must not be considered a mechanism for exporting data. By definition, business events are supposed to be lightweight and nimble. They aren't intended to carry large payloads to fulfill data export scenarios.
@@ -81,7 +81,7 @@ Endpoints let you manage the destinations for sending business events to. The fo
 - Azure Event Grid
 - Azure Event Hub
 - HTTPS
-- Microsoft Flow
+- Microsoft Power Automate
 
 Some scenarios might require multiple endpoints for organized distribution of business events to consumers. You can create multiple endpoints to support these scenarios.
 

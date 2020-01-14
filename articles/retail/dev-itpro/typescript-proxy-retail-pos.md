@@ -5,7 +5,7 @@ title: Typescript and C# proxies for Retail point of sale (POS)
 description: This topic provides information about the Retail proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
-ms.date: 05/01/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-Whenever you create a new controller for Retail Server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
+When you create a new controller for Retail Server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
 
 ## What is the Retail proxy used for and when should you use it?
 
@@ -53,42 +53,28 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 ## Generate the Typescript proxy
 
 > [!IMPORTANT]
-> The following procedure applies only to Microsoft Dynamics 365 Retail (July 2017 release) and Microsoft Dynamics 365 for Finance and Operation.
+> The following procedure applies only to Microsoft Dynamics 365 Retail (July 2017 release) and Microsoft Dynamics 365 Finance.
 
-You use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference folder to generate the Typescript proxy for the POS.
+Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\CommerceProxyGenerator.<version_number> folder to generate the typescript proxy for the POS.
 
-[!NOTE] 
-> In the latest version of the Retail there is a folder named CommerceProxyGenerator.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version). This folder is under RetailSDK\Code\References\, with CommerceProxyGenerator.exe and all the libraries mentioned in step 1 pre-copied, so you don’t have to perform step 1 described below. You need to use CommerceProxyGenerator.exe from this folder to generate the proxy.
+1. Before you generate the proxy, copy the customized Retail Server, CRT, and other dependent libraries to the **RetailSDK\\Reference** folder.
+2. Open a Command Prompt window as an administrator. Go to the **...\\RetailSDK\\Reference\CommerceProxyGenerator.<version_number>** folder and run the following command in the command prompt window to generate the proxy. The proxy files will be generated in the same folder.
 
-1. Before you generate the proxy, copy the following libraries from **Retail SDK\\Reference\\...** to the **Retail SDK\\Reference** folder:
+```
+    CommerceProxyGenerator.exe .\RetailSDK\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.<version_number>\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll .\RetailSDK\References\Your.RetailServer.Extension.dll /a:typescriptextensions
+```
 
-    - Microsoft.OData.Core.dll@ 6.11.0.0
-    - Microsoft.OData.Edm.dll@ 6.11.0.0
-    - Microsoft.Spatial.dll@ 6.11.0.0
-    - System.Web.Http.dll@ 5.2.2.0
-    - System.Web.OData.dll@ 5.5.1.0
-
-2. Copy the customized Retail Server and CRT libraries to the **Retail SDK\\Reference** folder.
-3. Open a Command Prompt window as an administrator, and navigate to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
-
-    ```
-    CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
-    
 > [!NOTE]
-> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from RetailSDK\Code\References\Microsoft.Dynamics.Retail.RetailServerLibrary.x.x.x.x (x.x.x.x is the version number, which varies based on your SDK version).
+> Use the Microsoft.Dynamics.Retail.RetailServerLibrary.dll file from \RetailSDK\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.<version_number>\build\
 
-Here is an example.
+``` 
+Ex:
+CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19299.3\\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
+```
+In the above command, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
 
-    ``` 
-    CommerceProxyGenerator.exe C:\RetailSDK\Reference\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\RetailSDK\Reference\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /application:typescriptextensions
-    ```
-
-
-
-    In the command that you run, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
-
-    > [!NOTE]
-    > You must generate the proxy for all Retail Server extensions.
+> [!NOTE]
+> You must generate the proxy for all Retail Server extensions.
 
 ## Generate the C# proxy (7.1 and 7.2)
 

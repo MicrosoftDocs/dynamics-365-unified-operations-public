@@ -50,7 +50,7 @@ Learn how to achieve common implementation scenarios using DataALM to your advan
 
 * [Refresh for training purposes](dbmovement-scenario-general-refresh.md)
 * [Debug a copy of the production database](dbmovement-scenario-debugdiag.md)
-* [Export a copy of the Standard User Acceptance Test (UAT) database](dbmovement-scenario-exportuat.md)
+* [Export a copy of the standard user acceptance testing (UAT) database](dbmovement-scenario-exportuat.md)
 * [Golden configuration promotion](dbmovement-scenario-goldenconfig.md)
 * [Destructive testing](dbmovement-scenario-destructivetests.md)
 

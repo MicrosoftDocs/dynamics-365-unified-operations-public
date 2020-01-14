@@ -42,7 +42,7 @@ Usage
 The Section Stacked Chart subpattern is used as part of the Operational Workspace pattern, specifically for a panorama section that contains one or two charts.
 
 ## Wireframe
-[![sectionStackedChartWireframe](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
+[![Wireframe for Section Stacked Chart](./media/sectionstackedchartwireframe.png)](./media/sectionstackedchartwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -74,7 +74,7 @@ The verification checklist shows the steps for manually verifying that the form 
 ## Examples
 Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 
-[![sectionStackedChartExample](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
+[![Section Stacked Chart example](./media/sectionstackedchartexample.png)](./media/sectionstackedchartexample.png)
 
 ## Appendix
 ### Frequently asked questions

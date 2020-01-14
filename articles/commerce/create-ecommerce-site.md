@@ -5,17 +5,17 @@ title: Create an e-Commerce site
 description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Dynamics 365 Commerce.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
-audience: Enduser
+audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
@@ -60,3 +60,19 @@ To set up your site, do the following.
 
 
 After your site is created, you can verify that it is associated with your online store by selecting the **Products** tab. You should see the assortment of products that has been allocated to the online store. You can also use the drop-down menu in the upper left of the page to access the allocated products by category.
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Deploy a new e-Commerce site](deploy-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)

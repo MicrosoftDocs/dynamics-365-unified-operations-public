@@ -5,7 +5,7 @@ title: Performance management
 description: The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Version 1611
 ---
 
 # Performance management
-
-[!include [banner](includes/banner.md)]
 
 The performance management process lets employees document and discuss their performance with their manager. In turn, managers can then provide feedback and guidance to the employees.  
 
@@ -97,6 +95,8 @@ For more detailed reviews, you can pull in active and completed goals, and enter
 You can also use the **Competencies** section to discuss, review, and rate the employee’s competencies. You can add as many competencies as you require, and you can choose whether the competency must be rated. 
 
 You can create new reviews that are based on templates that you’ve created. For example, you can have a template for one-on-ones, development plans, or periodic reviews. You can select the template when you create a new review.
+
+To print reviews, select the **Print review** button. If you don't see the button on the **Review** page, ensure you have enabled the feature in the **Feature management** workspace. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## Components you can include in performance reviews
 You can include a number of types of information in performance reviews. They include review detail, measurements, activities, ratings, sign-offs and attachments.

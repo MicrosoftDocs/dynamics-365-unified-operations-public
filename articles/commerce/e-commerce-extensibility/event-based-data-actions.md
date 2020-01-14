@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -116,3 +116,16 @@ export default ProductButton;
 
 > [!NOTE]
 > This example uses a hard-coded **productId** value. However, it can be updated so that the **productId** value is read from text input or the module's configuration properties.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Page load data actions](page-load-data-action.md)
+
+[Core data actions](core-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)
+

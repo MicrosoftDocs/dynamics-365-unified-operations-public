@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (October 8, 2019)
 
-[!include [banner](includes/banner.md)]
-
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 
 ## Changes in Attract
@@ -61,15 +59,15 @@ Functionality for employee entry and navigation is now available in all environm
 
 For more information, see [Streamlined employee data entry](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/streamlined-employee-data-entry) in the Dynamics 365: 2019 release wave 2 plan.
 
-### Issue: Attract and Onboard create inactive workers in Core HR (380517)
+### Attract and Onboard create inactive workers in Core HR (380517)
 
 This week's release corrects an issue where Attract and Onboard create inactive workers in Core HR.
 
-### Issue: The workflow fails when the manager is signed in to another company while terminating an employee (346852)
+### The workflow fails when the manager is signed in to another company while terminating an employee (346852)
 
 The workflow no longer fails based on the legal entity that the manager is signed in to.
 
-### Issue: Missing information on HcmOnboardingWorkerChecklistTaskEntity (349591)
+### Missing information on HcmOnboardingWorkerChecklistTaskEntity (349591)
 
 This release includes additional information on **HcmOnboardingWorkerChecklistTaskEntity**. Here are some examples:
 
@@ -77,35 +75,35 @@ This release includes additional information on **HcmOnboardingWorkerChecklistTa
 - **Employee name** when the assigned type is **employee**
 - **Manager name** when the assigned type is **manager**
 
-### Issue: Entities aren't listed in alphabetical order in Common Data Service Administration (377414)
+### Entities aren't listed in alphabetical order in Common Data Service Administration (377414)
 
 Entities are now listed in alphabetical order on the **CDS Administration** page.
 
-### Issue: Changing the employment type with a future date doesn't allow a position assignment (339958)
+### Changing the employment type with a future date doesn't allow a position assignment (339958)
 
 This change allows for position assignments when worker types are changed (for example, from employee to contractor).
 
-### Issue: Updating the Common Data Service Leave bank transaction entity creates a new record in Talent (352938)
+### Updating the Common Data Service Leave bank transaction entity creates a new record in Talent (352938)
 
 The leave transaction is now updated when an update is made to Common Data Service for leave bank transactions.
 
-### Issue: The title of attachments for feedback items shows the feedback description (343765)
+### The title of attachments for feedback items shows the feedback description (343765)
 
 The feedback description no longer appears in the attachment title.
 
-### Issue: Compensation workflow Comments field shows incorrect content (339297)
+### Compensation workflow Comments field shows incorrect content (339297)
 
 This change shows the content of the **%HcmActionState.HcmWorkerActionComment.Comments%** field.
 
-### Issue: WorkCalendarEntity and WorkCalendarDayEntity aren't exposed through OData (376329)
+### WorkCalendarEntity and WorkCalendarDayEntity aren't exposed through OData (376329)
 
 In this release, **WorkCalendarEntity** and **WorkCalendarDayEntity** are now available through Open Data Protocol (OData).
 
-### Issue: HCMWorkerEntity is slow when OData is used (375221)
+### HCMWorkerEntity is slow when OData is used (375221)
 
 Changes improve the performance of **HCMWorkerEntity** when the Microsoft Excel workbook designer is used.
 
-### Issue: Manager performance journal entry shows an error after deleting a performance journal and creating a new one (336061)
+### Manager performance journal entry shows an error after deleting a performance journal and creating a new one (336061)
 
 This release corrects an issue that occurs after one performance journal is deleted and a new one is created immediately afterward. This correction changes the behavior in manager self-service.
 

@@ -72,12 +72,12 @@ After you've saved your data, follow these steps.
     4. After the environment is deleted, select **Configure** to redeploy the environment.
     5. In the **Geography/location** field, select the data center to use.
     6. After the environment is deployed, apply the code packages.
-    7. If the redeployed environment is used as the build environment, complete the required configurations that are described in [Deployment with continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md).
+    7. If the redeployed environment is used as the build environment, complete the required configurations that are described in [Deploy and use an environment that supports continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md).
     8. Restore the data.
 
 > [!NOTE]
 > - The movement of files that are stored in Azure Blob Storage isn't supported in sandbox environments.
-> - Retail customers should be aware that extra steps are required for Retail components to work correctly after a move. For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
+> - Retail customers should be aware that extra steps are required for Retail components to work correctly after a move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## Move production environments
 

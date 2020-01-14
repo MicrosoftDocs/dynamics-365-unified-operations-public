@@ -46,7 +46,7 @@ The **Cost accounting analysis** content lets cost accountants analyze how cost 
 
 To learn more about Cost accounting, see [Cost accounting home page](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
-By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for Cost accounting content for Power BI](setup-security-cost-accounting-content-pack.md).
+By defining access-level security in Cost accounting and combining it with row-level security in Power BI, you can grant all cost object owners access to the **Cost accounting analysis** Power BI content. All data in the visualizations will then be filtered based on the access level that is controlled in Cost accounting. To learn more about access-level security and row-level security, see [Set up security for the Cost accounting analysis Power BI content](setup-security-cost-accounting-content-pack.md).
 
 ## Accessing the Power BI content
 You can find the **Cost accounting analysis** Power BI content in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS). For more information about how to download the content and implement it in your organization, see [Power BI content in LCS from Microsoft and your partners](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
@@ -80,7 +80,7 @@ The content includes a set of report pages. Each page consists of a set of metri
 |                                  | Actual cost by Cost object dimension member name and Cost element dimension member name                                       |                                               |
 
 ## Understanding the data model and entities
-The following data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Overview of Power BI integration with Entity store](power-bi-integration-entity-store.md).
+The following data is used to fill the report pages in the **Cost accounting analysis** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
 The following key aggregate measurements are used as the basis of the content.
 

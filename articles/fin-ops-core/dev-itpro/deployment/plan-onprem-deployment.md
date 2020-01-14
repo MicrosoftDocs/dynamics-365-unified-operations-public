@@ -3,9 +3,9 @@
 
 title: Plan and prepare for on-premises deployments
 description: This topic will help you plan and prepare for your on-premises deployment.
-author: robinarh
+author: sericks007
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -24,7 +24,7 @@ ms.custom: 60373
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robinr
+ms.author: sericks
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
 
@@ -44,9 +44,9 @@ This topic will help you plan and prepare for your on-premises deployment.
 ## Differences between cloud deployments and on-premises deployments
 The features in cloud deployments and on-premises deployments differ. These differences will affect your planning. The differences are described in the following topics:
 - [Deployment options](choose-deployment-type.md)
-- [Cloud and on-premises feature comparison](../../fin-ops/get-started/cloud-prem-comparison.md)
+- [Comparison of cloud and on-premises features](../../fin-ops/get-started/cloud-prem-comparison.md)
 - [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Removed or deprecated features](../migration-upgrade/deprecated-features.md)
+- [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
 
 ## How LCS is used with on-premises deployments
 Microsoft Dynamics Lifecycle Services (LCS) is an application management portal that provides tools and services for managing the application lifecycle. Customers and partners use LCS to manage both cloud and on-premises deployments. You can use LCS for the following tasks:
@@ -56,19 +56,19 @@ Microsoft Dynamics Lifecycle Services (LCS) is an application management portal 
 - Search for product issues and regulatory features.
 - Obtain support.
 
-For more information about LCS, see [Lifecycle Services](../lifecycle-services/lcs.md).
+For more information about LCS, see [Lifecycle Services resources](../lifecycle-services/lcs.md).
 
 ## Environments
 There are four types of environments that you need to plan for. This section describes the four environments and how to access and deploy them.
 
 ### Demo environment
-You can sign up for a demo environment to learn about the system. The demo environment is applicable to both cloud and on-premises deployments. For more information, see [Sign up for a preview subscription](../dev-tools/sign-up-preview-subscription.md).
+You can sign up for a demo environment to learn about the system. The demo environment is applicable to both cloud and on-premises deployments. For more information, see [Sign up for preview subscriptions](../dev-tools/sign-up-preview-subscription.md).
 
 ### Developer environment
-The development experience is the same for cloud and on-premises deployments. To access a developer environment, see [Access instances](../dev-tools/access-instances.md).
+The development experience is the same for cloud and on-premises deployments. To access a developer environment, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ### Sandbox environment
-Business users and functional team members validate application functionality by using a sandbox environment. This functionality includes customizations and data that was brought forward from Microsoft Dynamics AX 2012 environments. To deploy an on-premises sandbox environment, see [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
+Business users and functional team members validate application functionality by using a sandbox environment. This functionality includes customizations and data that was brought forward from Microsoft Dynamics AX 2012 environments. To deploy an on-premises sandbox environment, see [Set up and deploy on-premises environments home page](setup-deploy-on-premises-environments.md).
 
 At a minimum, an on-premises sandbox environment requires:
 - 3 machines running Environment Orchestrator
@@ -79,7 +79,7 @@ At a minimum, an on-premises sandbox environment requires:
 - 1 machine running SQL Server
 
 ### Production environment
-The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments](setup-deploy-on-premises-environments.md).
+The production environment is the live deployment that your users and customers have access to. To deploy a production environment, see [Set up and deploy on-premises environments home page](setup-deploy-on-premises-environments.md).
 
 At a minimum, an on-premises production environment requires:
 - 3 machines running Environment Orchestrator
@@ -112,7 +112,7 @@ To learn more about Service Fabric, see the following topics:
 Review the system requirements in [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) and be aware of the number of machines that are required for on-premises deployments.
 
 ## Hardware sizing
-Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](../../fin-ops/get-started/system-requirements-on-prem.md) and [Setup and deployment instructions](setup-deploy-on-premises-environments.md) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
+Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md) and [Set up and deploy on-premises environments home page](setup-deploy-on-premises-environments.md) to gain a solid understanding of the underlying infrastructure. Pay close attention to the system setup best practices for optimum performance. After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.
 
 ### Factors that affect sizing
 The core factors that affect sizing are:
@@ -202,7 +202,7 @@ In most cases, unless used extensively, the recommended minimum requirements usi
 For the current release of Finance + Operations, only one SSRS node can be deployed. Monitor your SSRS node while testing and increase the number of cores available for SSRS as needed. Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM. This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host. If this the case, the node would need to be replaced.
 
 ### Environment Orchestrator
-The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Service Fabric cluster capacity planning considerations](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-capacity).
+The Orchestrator service is the service that manages your deployment and the related communication with LCS. This service is deployed as the primary Service Fabric service and requires at least three VMs. This service is co-located with the Service Fabric orchestration services. This should be sized to the peak load of the cluster. For more information, see [Plan and prepare your Service Fabric Standalone cluster deployment](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ### Virtualization and oversubscription
 Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – core, memory, and disk.
@@ -236,6 +236,6 @@ Additional services or components can be configured to extend an on-premises dep
 
 ## Next steps
 
-After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md#onboard) section of the [On-premises deployment landing page](on-premises-deployment-landing-page.md).
+After you’ve completed the planning activities mentioned in this topic, you can begin the procedures listed in the [Onboard](on-premises-deployment-landing-page.md#onboard) section of the [On-premises deployment home page](on-premises-deployment-landing-page.md).
 
-Be sure to refer to the [On-premises deployment landing page](on-premises-deployment-landing-page.md) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.
+Be sure to refer to the [On-premises deployment home page](on-premises-deployment-landing-page.md) throughout your implementation for more information about planning, deployment, maintenance, and troubleshooting.

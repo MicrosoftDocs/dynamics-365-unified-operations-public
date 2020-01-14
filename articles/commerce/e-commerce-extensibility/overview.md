@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -52,3 +52,17 @@ The SSK contains production-ready components, modules, data actions, and themes 
 ## Command-line interface tools
 
 Command-line interface (CLI) tools are provided as part of the online SDK. These tools help you create new modules, data actions, and themes. There is also a CLI tool that you can use to package all the configurations for your site into a single configuration file. You can then upload this file to your production or test site by using Microsoft Dynamics Lifecycle Services (LCS).
+
+## Additional resources
+
+[Architectural overview](architectural-overview.md)
+
+[System requirements](system-requirements.md)
+
+[Set up a development environment](setup-dev-environment.md)
+
+[Starter kit overview](../starter-kit-overview.md)
+
+[e-Commerce components](ecommerce-components.md)
+
+[CLI command reference](cli-command-reference.md)

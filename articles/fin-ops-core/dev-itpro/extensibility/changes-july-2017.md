@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
+This is a list of extensibility features that were implemented in the Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility roadmap](extensibility-roadmap.md).
 
 ## Soft-sealed application models
 
@@ -90,7 +90,7 @@ The following application middle-tier models were hard-sealed in this release. O
 
 The following changes were made to support extending enumerations:
 - Many enumerations in the standard application have been made extensible. An enumeration is made extensible by setting two properties on the enumeration. The **IsExtensible** property is set to **Yes**, and the **UseEnumValue** property is set to **No**. 
-- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add an enum value](add-enum-value.md).
+- Some enumerations represent state. New façade methods have been added to help enable adding enumeration values by extension. For information about how to extend an enumeration, see [Add values to enums through extension](add-enum-value.md).
 - Some application code that uses enumerations was changed to support extensibility. Common changes include:
     + Removing **throw** exception statements in the default case of a switch to allow post-event subscription.
     + Adding **SysExtension** support for extension.
@@ -751,7 +751,7 @@ The **insert**, **update**, and **delete** methods on the type classes have been
 
 ## Exposing class members
 
-Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://blogs.msdn.microsoft.com/mfp/2017/07/04/extensible-x-chain-of-command/).
+Additional private members are now available for customization as a result of the changes to the access modifier or new parm methods. The chain of command platform feature enables extension class access to protected methods and members. For more information about chain of command, see [Extensible X++: Chain of Command](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/extensible-x-chain-of-command).
 
 | Member |
 | -------------|

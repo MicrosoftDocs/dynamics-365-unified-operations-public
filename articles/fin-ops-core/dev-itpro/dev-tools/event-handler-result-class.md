@@ -42,9 +42,9 @@ Before the functionality described in this topic was introduced (platform update
 
 In platform update 5, the **EventHandlerResult** class has an additional static constructor which ensures that the logic fails if more than one subscriber provides a result. The new constructor is named **newSingleResponse**. When instantiating an **EventHandlerResult** object using this method, the framework will throw an exception as soon as a second delegate handler method attempts to provide a result.
 
-```
-    EventHandlerResult result = EventHandlerResult::newSingleResponse();
-    this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+```xpp
+EventHandlerResult result = EventHandlerResult::newSingleResponse();
+this.validateWarehouseTypeDelegate(this.WarehouseType, result);
 ```
 
 ## IEventHandlerResultValidator interface
@@ -53,8 +53,8 @@ The validation in the **EventHandlerResult** class is handled by injecting an ob
 
 For example, the **newSingleResponse** static constructor simply delegates the instantiation to the **newWithResultValidator** static constructor like this.
 
-```
-    return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
+```xpp
+return EventHandlerResult::newWithResultValidator(EventHandlerSingleResponseValidator::construct());
 ```
 
 ## Accept and reject request/response scenarios
@@ -65,31 +65,31 @@ To mitigate this confusion, two new result type classes have been introduced in 
 
 When using the **EventHandlerAcceptResult** class, the delegate handler method can only respond by calling the **accept** method. When using the **EventHandlerRejectResult** class, only the **reject** method can be called.
 
-```
-    [SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
-    public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
-        InventLocationType _inventLocationType, 
-        EventHandlerAcceptResult _result)
+```xpp
+[SubscribesTo(tableStr(InventWarehouseEntity), delegateStr(InventWarehouseEntity, validateWarehouseTypeDelegate))]
+public static void validateWarehouseTypeIsSupportedStandardDelegateHandler(
+    InventLocationType _inventLocationType, 
+    EventHandlerAcceptResult _result)
+{
+    switch (_inventLocationType)
     {
-        switch (_inventLocationType)
-        {
-            case InventLocationType::Standard: 
-            case InventLocationType::Quarantine: 
-            case InventLocationType::Transit: 
-                _result.accept(); 
-                break; 
-        }     
-    }
+        case InventLocationType::Standard: 
+        case InventLocationType::Quarantine: 
+        case InventLocationType::Transit: 
+            _result.accept(); 
+            break; 
+    }     
+}
 ```
 
 The two new classes also contain a **newSingleResponse** static constructor for use in scenarios where, at most, one subscriber is allowed to respond with their rejection or acceptance. Whether any subscriber has responded can still be answered by querying the **hasResult** method, and the acceptance/rejection is queried by calling either the **isAccepted** or **isRejected** methods for the **EventHandlerAcceptResult** and **EventHandlerRejectResult** classes, respectively.
 
-```
-    boolean ret = false;
-    EventHandlerAcceptResult result = EventHandlerAcceptResult::newSingleResponse(); 
-    this.validateWarehouseTypeDelegate(this.WarehouseType, result);
-    if (result.hasResult())
-    {
-        ret = result.isAccepted();
-    }
+```xpp
+boolean ret = false;
+EventHandlerAcceptResult result = EventHandlerAcceptResult::newSingleResponse(); 
+this.validateWarehouseTypeDelegate(this.WarehouseType, result);
+if (result.hasResult())
+{
+    ret = result.isAccepted();
+}
 ```

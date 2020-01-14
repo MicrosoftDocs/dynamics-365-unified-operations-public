@@ -45,9 +45,9 @@ The first phase  of the integration between Field Service and Supply Chain Manag
 
 The first phase of the integration between Field Service and Supply Chain Management enables synchronization of the following items:
 
-- [Products in Supply Chain Management to products in Field Service that include Product Type information](field-service-product.md)
-- [Work orders in Field Service to sales orders in Supply Chain Management](field-service-work-order.md)
-- [Invoices in Field Service to free text invoices in Supply Chain Management](field-service-invoice.md)
+- [Synchronize products in Supply Chain Management to products in Field Service](field-service-product.md)
+- [Synchronize work orders in Field Service to sales orders in Supply Chain Management](field-service-work-order.md)
+- [Synchronize agreement invoices in Field Service to free text invoices in Supply Chain Management](field-service-invoice.md)
 
 To see an example of how you can synchronize a work order between Field Service and Supply Chain Management, watch the short YouTube video [How to synchronize a work order with Microsoft Dynamics 365 Integration](https://www.youtube.com/watch?v=46ylO7raZAo).
 

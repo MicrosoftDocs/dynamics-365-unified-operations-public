@@ -5,7 +5,7 @@ title: Demand forecasting setup
 description: This topic describes the setup tasks that you must perform to prepare for demand forecasting.  
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -67,16 +67,17 @@ At any point, you can add forecast dimensions to the list of dimensions that are
 
 Not all items behave in the same manner from a demand forecasting perspective. Similar items can be grouped in one item allocation key, and parameters such as transaction types and forecast method settings can be set per item allocation key. Click **Item allocation keys** in the left pane of the **Demand forecasting parameters** page. 
 
-To generate the forecast, Supply Chain Management uses a Machine Learning web service. To connect to the service, you must provide the following information if you sign in to Microsoft Azure Machine Learning Studio:
+To generate the forecast, Supply Chain Management uses a Machine Learning web service. To connect to the service, you must provide the following information if you sign in to Microsoft Azure Machine Learning Studio (classic):
 
 -   Web service application programming interface (API) key
 -   Web service endpoint URL
 -   Azure storage account name
 -   Azure storage account key
 
-**Note:** The Azure storage account name and key are required only if you use a custom storage account. If you deploy the on-premises version, you must have a custom storage account on Azure, so that the Machine Learning service can access the historical data. 
+> [!NOTE]
+> The Azure storage account name and key are required only if you use a custom storage account. If you deploy the on-premises version, you must have a custom storage account on Azure, so that Machine Learning can access the historical data. 
 
-To create demand predictions, you can deploy your own service by using Machine Learning Studio or the Supply Chain Management demand forecasting experiments. Instructions for deploying the demand forecasting experiments as a web service are available in Finance and Operations. On the **Demand forecasting parameters** page, click the **Azure Machine Learning** tab.
+To create demand predictions, you can deploy your own service by using Machine Learning Studio or the Supply Chain Management demand forecasting experiments. Instructions for deploying the demand forecasting experiments as a web service are available in Supply Chain Management. On the **Demand forecasting parameters** page, click the **Azure Machine Learning** tab.
 
 ## Settings for the demand forecasting machine learning service
 To view the parameters that can be configured for the demand forecasting service, go to **Master Planning** &gt; **Setup** &gt; **Demand forecasting** &gt; **Forecasting algorithm parameters**. The **Forecasting algorithm parameters** page shows the default values for the parameters. You can overwrite these parameters on the **Demand forecasting parameters** page. Use the **General** tab to overwrite the parameters globally, or use the **Item allocation keys** tab to overwrite the parameters per item allocation key. Parameters that are overwritten for an item allocation key affect only the forecast of items that are associated with that item allocation key.
@@ -97,11 +98,11 @@ On the **Allocation keys** tab you can set the **Forecast algorithm parameters**
 Additional resources
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Demand forecasting overview](introduction-demand-forecasting.md)
 
-[Generating a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
-[Making manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+[Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 
 
 

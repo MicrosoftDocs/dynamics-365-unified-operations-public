@@ -53,7 +53,7 @@ The Public Digital Bookkeeping System, or Sistema Público de Escrituração Dig
 -   [ICMS tax fiscal documents](latam-bra-icms-tax-fiscal-documents.md)         
 -   [Import fiscal documents](latam-bra-import-fiscal-documents.md)
 -   [Import and verify NF-e XML documents and DANFE files](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
--   [Fiscal documents](latam-bra-fiscal-documents-fiscal-document-framework.md) 
+-   [Fiscal documents and fiscal document framework](latam-bra-fiscal-documents-fiscal-document-framework.md) 
 -   [Fiscal document text placeholders](latam-bra-fiscal-document-text-placeholders.md)
 -   [Purchase complementary fiscal documents](latam-bra-purchase-complementary-fiscal-documents.md) 
 -   [Referenced fiscal documents](latam-bra-referenced-fiscal-documents.md)         

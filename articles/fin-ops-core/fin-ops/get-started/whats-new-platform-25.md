@@ -65,20 +65,20 @@ The latest Platform update release includes the ability to create alert rules th
 ## Azure blob storage as an endpoint for business events (private preview)
 Azure blob storage account can be configured as an endpoint for business events. This adds to the existing set of Azure endpoint types that are supported, which allows for a wider choice of integration scenarios.
 
-For more information about business events, see [Business events](../../dev-itpro/business-events/home-page.md). 
+For more information about business events, see [Business events overview](../../dev-itpro/business-events/home-page.md). 
 
 > [!Note]
-> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
+> The business events feature is available as a private preview. For information about when the feature is scheduled for generally availability, see the [Release plans](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/planned-features). 
 
 ## Batch jobs single scheduler
 Improvements are made in the batch framework to optimize the batch scheduling functionality. Only one batch scheduler will be active at a time, which will reduce contention on batch tables and may increase throughput. This is enabled by default in Platform update 25.
 
 ## Batch Jobs enhanced forms
-The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Batch enhanced forms](../../dev-itpro/sysadmin/enhanced-forms.md).
-Additionally, support has been added for saved views and will be released in a future Platform update. For information about saved views, see the [Release notes](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
+The **Batch jobs** form has been enhanced to increase productivity and enhance the user experience. Users are able to switch between enhanced and legacy forms. For more information, see [Enhanced batch forms](../../dev-itpro/sysadmin/enhanced-forms.md).
+Additionally, support has been added for saved views and will be released in a future Platform update. For information about saved views, see the [Release plans](https://docs.microsoft.com/business-applications-release-notes/april19/dynamics365-finance-operations/saved-views).
 
 ## Batch jobs alerts and notifications
-You can view batch job notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in the action center. For more information, see [Alerts](../../dev-itpro/sysadmin/alerts.md).
+You can view batch job notifications in the action center. These notifications will keep you informed about batch events. You can enable alert rules for when a batch job ends, ends in error, or is canceled. You can choose whether the alerts are emailed to you or appear as a pop-up notification in the action center. For more information, see [Set up alerts](../../dev-itpro/sysadmin/alerts.md).
 
 ## Additional resources
 
@@ -91,11 +91,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.

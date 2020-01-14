@@ -5,10 +5,10 @@ title: SDK and core library updates
 description: This topic covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -43,4 +43,8 @@ Regular updates will be released as part of the Dynamics 365 Commerce online SDK
 
 SDK updates are optional and can be pulled down to a local development environment by using the **yarn** command in the SDK source code. This command causes the latest dependencies to be pulled down. Dependencies are backward-compatible and can be pulled down at any time.
 
-When a configuration package is created by using the **yarn msdyn265 pack** command-line interface (CLI) tool, all dependencies are updated to their local versions during the packaging process. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
+When a configuration package is created by using the **yarn msdyn365 pack** command-line interface (CLI) tool, all dependencies are updated to their local versions during the packaging process. The package that is created can then be uploaded to an online site by using Microsoft Dynamics Lifecycle Services (LCS).
+
+## Additional resources
+
+[Package configurations and deploy them to an online environment](package-deploy.md)
