@@ -68,20 +68,24 @@ error("My message.");
 
 In PU31 or later versions, the **throw** keyword can be used to throw .NET exceptions.
 
-    throw new InvalidOperationException("This function is not allowed");
+```xpp
+throw new InvalidOperationException("This function is not allowed");
+```
 
 Also in PU31 or later, the **throw** keyword can be used by itself inside a catch block. In such a case, **throw** will behave like the **rethrow** statement in C\#. The original exception, exception message and its context such as call stack will be rethrown and be available to any catch statements in calling code.
 
-    try
-    {
-        throw Exception::error;
-    }
-    catch
-    {
-        // locally handle exception
-        // then rethrow for caller
-        throw;
-    }
+```
+try
+{
+    throw Exception::error;
+}
+catch
+{
+    // locally handle exception
+    // then rethrow for caller
+    throw;
+}
+```
 
 ## try, catch, finally, and retry statements
 
@@ -131,27 +135,31 @@ If no **catch** statement handles the exception, it's handled by the system exce
 
 You can call Microsoft .NET Framework classes and methods that reside in assemblies that are managed by the common language runtime (CLR). When a .NET Framework **System.Exception** instance is thrown, your code can catch it by declaring a variable of type **System.Exception** to catch any .NET exception, or one of its derived classes to catch a specific .NET exception type as shown in the following example.
 
-    System.ArgumentException ex;
-    try
-    {
-        throw new System.ArgumentException("Invalid argument specified");
-    }
-    catch(ex)
-    {
-        error(ex.Message);
-    }
+```xpp
+System.ArgumentException ex;
+try
+{
+    throw new System.ArgumentException("Invalid argument specified");
+}
+catch(ex)
+{
+    error(ex.Message);
+}
+```
 
 In releases prior to PU31, .NET exceptions can be caught by referencing **Exception::CLRError**. Your code can obtain a reference to the **System.Exception** instance by calling the **CLRInterop::getLastException** method.
 
-    try
-    {
-        // call to .NET code which throws exception
-    }
-    catch(Exception::CLRError)
-    {
-        System.Exception ex = CLRInterop::getLastException();
-        error(ex.Message);
-    }
+```xpp
+try
+{
+    // call to .NET code which throws exception
+}
+catch(Exception::CLRError)
+{
+    System.Exception ex = CLRInterop::getLastException();
+    error(ex.Message);
+}
+```
 
 ### Ensuring that exceptions are shown
 
