@@ -44,6 +44,14 @@ Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically mo
 - Delete a customer's reviews at the customer's request.
 - Bulk-import ratings and reviews data for all products into a Microsoft Power BI template, so that trends for ratings and reviews can be analyzed.
 
+Use the following steps to access **Ratings and Review moderation features** those are located in **e-Commerce site management tool**,  
+
+1. Sign in to [LCS](https://lcs.dynamics.com).
+1. Open the project that contains the environment where you want to initialize e-Commerce.
+1. In the **Environments** section, select the environment.
+1. Under **Environment features**, select the **Retail manage** link.
+1. On the **e-Commerce** tab, under **links**, select **e-Commerce Site management tool**.
+
 ## Read a review 
 
 1. Go to **Home \> Reviews \> Moderation**.
