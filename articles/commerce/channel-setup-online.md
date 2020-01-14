@@ -55,9 +55,9 @@ To create and configure a new online channel, follow these steps.
 1. In the **Customer address book** field, provide a valid address book.
 1. In the **Functionality profile** field, select a functionality profile if applicable.
 1. In the **Email notification profile** field, provide a valid email notification profile.
-1. On the **Action pane**, select **Save**
+1. On the **Action pane**, select **Save**.
 
-The following image shows how to create a new online channel.
+The following image shows the creation of a new online channel.
 
 ![New online channel](media/channel-setup-online-1.png)
 
