@@ -13,20 +13,20 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: SystemParameters
+# ms.search.form: 
 # ROBOTS: 
-audience: Application User, Developer, IT Pro
+audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: tfehr
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 16141
-ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
+# ms.custom: 
+# ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Operations
 
 ---
 
