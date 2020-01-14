@@ -3,9 +3,9 @@
 
 title: Plan for the global address book and other address books
 description: This topic describes the considerations and decisions that you must make during the planning process, before you set up and configure the global address book and any additional address books.
-author: ShivamPandey-msft
+author: msftbrking 
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -24,7 +24,7 @@ ms.custom: 23341
 ms.assetid: a41cd8de-9ee0-4275-aea5-131db5326e5b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
