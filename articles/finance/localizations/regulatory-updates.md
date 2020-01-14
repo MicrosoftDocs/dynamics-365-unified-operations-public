@@ -5,7 +5,7 @@ title: Regulatory updates
 description: This topic provides a list of planned and released reguatory updates for Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
