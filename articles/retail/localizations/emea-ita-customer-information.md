@@ -5,7 +5,7 @@ title: Customer information management for Italy
 description: This topic describes how to handle customer information in Retail POS for Italy.
 author:
 manager: annbe
-ms.date: 10/08/2019
+ms.date: 01/14/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -38,7 +38,7 @@ This topic describes how you can handle customer information, such as the custom
 You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts and can be used for the National lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
 > [!NOTE]
-> This functionality is available in the version 10.0.8 and later of the Retail application.
+> This functionality is available in version 10.0.8 and later.
 
 ## Setup
 
