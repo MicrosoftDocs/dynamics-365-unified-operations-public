@@ -5,7 +5,7 @@ title: Connect a custom help site
 description: Microsoft has provided a toolkit with sample code that describe how you can create and connect custom help to the Help pane.  
 author: edupont04
 manager: AnnBe
-ms.date: 11/01/2019
+ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,11 +38,13 @@ Finance and Operations apps are rarely used out-of-the-box. Rather, the solution
 
 Microsoft has provided a toolkit with sample code to help you deploy and connect custom Help to the Help pane. In [Deploying custom Help](../../dev-itpro/help/deploy.md), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, make the content searchable, and extending the Help pane to connect to the website.  
 
+If you want to collaborate with Microsoft on tools and processes for customizing help, please fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).  
+
 ## Resources
 
 <!--- [Create Custom Help for Finance and Operations apps (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)-->
 - [Deploying custom Help](../../dev-itpro/help/deploy.md)  
-- [Custom help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
+- [Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  
 
 ## See also
 
