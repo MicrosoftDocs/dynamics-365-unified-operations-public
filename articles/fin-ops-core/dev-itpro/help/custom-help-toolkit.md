@@ -5,7 +5,7 @@ title: Custom Help Toolkit
 description: This topic describes the components in the custom help toolkit for Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 12/17/2019
+ms.date: 01/14/2020
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -36,29 +36,30 @@ Microsoft has published a GitHub repository with scripts and tools that can help
 
 The toolkit is available at [https://github.com/microsoft/dynamics365f-o-custom-help/](https://github.com/microsoft/dynamics365f-o-custom-help/) and provides the following tools as well as the source code for the tools:
 
-- ConsoleApp.exe
-
-- run_ax2012.ps1 PowerShell script
-
-- HTML Locale tool
+- AX 2012 metadata scripts
 
 - Convert HTML to JSON tool
 
-- AzureSearchCustomHelp solution for Visual Studio
+- HtmlFromRepoGenerator tool
 
-- HelppaneOption project for Visual Studio
+- HtmlLocaleChanger tool
+
+- Help Pane extension Visual Studio project
 
 - REST API index creation scripts
 
 Each tool is described in the following sections.
 
-## <a name="consoleapp"></a>Use the ConsoleApp to get MarkDown files and generate HTML files
+> [!NOTE]
+> The first version of this toolkit is available as a release in the GitHub repo.  
 
-ConsoleApp.exe provides functionality that supports the creation of custom Help based on source files from Microsoft. It is available from [the content tools repo](https://github.com/microsoft/dynamics365f-o-custom-help/tree/master/docfx%20scripts). You can use ConsoleApp.exe to:
+## <a name="consoleapp"></a>Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files
+
+HtmlFromRepoGenerator.exe provides functionality that supports the creation of custom Help based on source files from Microsoft. You can use HtmlFromRepoGenerator.exe to:
 
 - Clone a Microsoft documentation repo
 
-    If you already have a clone of the Microsoft repo, your can run ConsoleApp without this command.
+    If you already have a clone of the Microsoft repo, your can run HtmlFromRepoGenerator without this command.
 
 - Remove developer and administrator content from your clone of the Microsoft repo.
 - Update links to files that are no longer in the clone.
@@ -68,10 +69,12 @@ ConsoleApp.exe provides functionality that supports the creation of custom Help 
 - Generate HTML files that can be used for publishing.
 - Compare a localized Microsoft repo to the en-US repo to identify discrepancies and update the links accordingly.
 
-Here is the syntax for ConsoleApp.exe:  
+In the first version of the toolkit, this tool had the name ConsoleApp.exe but is now renamed.  
+
+Here is the syntax for HtmlFromRepoGenerator.exe:  
 
 ```
-ConsoleApp.exe -Json <Articles/> -Out <path> -ExternalText <text> [-DoNotClone <true|false>] [-Repo <URL>] [-RemoveGitFolder <true|false>] [-ReplaceUrl <URL>] [-LogsDir <.\logs>] [-EnRepo <URL>] [-EnOut <path>] [-Lng <language code>] [-?[-]]
+HtmlFromRepoGenerator.exe -Json <Articles/> -Out <path> -ExternalText <text> [-DoNotClone <true|false>] [-Repo <URL>] [-RemoveGitFolder <true|false>] [-ReplaceUrl <URL>] [-LogsDir <.\logs>] [-EnRepo <URL>] [-EnOut <path>] [-Lng <language code>] [-?[-]]
 ```
 
 Here is an explanation of the parameters:
@@ -79,8 +82,8 @@ Here is an explanation of the parameters:
 |Parameter   |Description  |
 |------------|-------------|
 |Json |Specifies a relative path for the location of the docfx.json file. In Microsoft documentation repos, this location is typically ```articles/```. |
-|Out |Specifies the folder where your existing clone is, or the folder to clone the repo to. If you run ConsoleApp to clone a repo, this folder must not already exist. Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). |
-|ExternalText |Specifies text that must be added to the updated links if ConsoleApp must replace the original links.|
+|Out |Specifies the folder where your existing clone is, or the folder to clone the repo to. If you run HtmlFromRepoGenerator to clone a repo, this folder must not already exist. Use the language name as the folder name as described in [Language and locale descriptors in across product and Help](language-locale.md). |
+|ExternalText |Specifies text that must be added to the updated links if HtmlFromRepoGenerator must replace the original links.|
 |DoNotClone |Set this parameter when you run the tool against previously cloned repos. |
 |Repo |Specifies the repo URL. This parameter is not required if you are using a previously cloned repo. Examples of Microsoft documentation repo URLs include *https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public* for English (US) and *https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de* for German (Germany).|
 |RemoveGitFolder|Specifies whether to remove the .git folder.|
@@ -101,36 +104,36 @@ The following additional parameters are used when the tool is run against the lo
 The following example clones the en-US repo and generates HTML files for en-US.
 
 ```
-ConsoleApp.exe -json articles/ -out "D:\D365-Operations\en-US" -repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-Operations\logs\en-US
+HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\en-US" -repo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-Operations\logs\en-US
 ```
 
 The following example uses the previously cloned en-US repo and generates HTML files for en-US.
 
 ```
-ConsoleApp.exe -json articles/ -out "D:\D365-Operations\en-US" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-
+HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\en-US" -externalText "(This is an external link)" -replaceUrl "https://docs.microsoft.com/en-us/dynamics365/supply-chain" -LogsDir D:\D365-
 Operations\logs\en-US
 ```
 
 The following example clones both the de-DE and en-US repos, and generates HTML files for German.
 
 ```
-ConsoleApp.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
+HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnRepo "https://github.com/MicrosoftDocs/Dynamics-365-unified-Operations-public" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example clones the de-DE repo, uses the existing en-US repo, and then generates HTML files for the *de* client locale.
 
 ```
-ConsoleApp.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
+HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\de" -repo "https://github.com/MicrosoftDocs/Dynamics-365-Operations.de-de" -externalText "(This is an external link)" -EnOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
 ```
 
 The following example uses the existing de-DE and en-US repos, and then generates HTML files for German. Make sure that the de-DE repo is up to date if you use the existing repo.
 
 ```
-ConsoleApp.exe -json articles/ -out "D:\D365-Operations\de" -DoNotClone -externalText "(This is an external link)" -enOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
+HtmlFromRepoGenerator.exe -json articles/ -out "D:\D365-Operations\de" -DoNotClone -externalText "(This is an external link)" -enOut "D:\D365-Operations\en-us" -replaceUrl "https://docs.microsoft.com/de-de/dynamics365/supply-chain" -lng "de" -LogsDir D:\D365-Operations\logs\de
 ```
 
 > [!IMPORTANT]
-> ConsoleApp.exe should not be run repeatedly on a cloned repo, because the folder that contains the files from your clone of the repository is already modified. Therefore, the files no longer contain the correct links that must be replaced. If you must rerun the tool, either let the tool re-clone the repo, or make sure that all local changes are reverted.
+> HtmlFromRepoGenerator.exe should not be run repeatedly on a cloned repo, because the folder that contains the files from your clone of the repository is already modified. Therefore, the files no longer contain the correct links that must be replaced. If you must rerun the tool, either let the tool re-clone the repo, or make sure that all local changes are reverted.
 
 <!--TODO: Figure out what that alert really means. What is a one-off task and what is a regular task?-->
 
@@ -188,7 +191,6 @@ The following example generates JSON files without verbose logging:
 ```
 HtmlLocaleChanger.exe -h D:\D365-Operations\de -j D:\D365-Operations\json
 ```
-
 
 ## <a name="helppane"></a>Use the development environment to extend the Help pane
 

@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 01/14/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -78,7 +78,7 @@ In most cases, you can reuse content from a Dynamics AX 2012 solution. For more 
 If your Help solution extends Microsoft's content, then you can fork our repo and then use standard Git tools to keep your fork updated with our content updates. You can make it a habit to get updates from Microsoft every week, every month, or every 6 months, for example. In some cases, though, you may prefer to get a completely new clone of the content of our repo and regenerate the Help from the clone on a regular basis.  
 
 > [!TIP]
-> The Custom Help Toolkit includes a console app that can help integrate the latest Microsoft content with yours. For more information, see [Use the ConsoleApp to get MarkDown files and generate HTML files](custom-help-toolkit.md#consoleapp).
+> The Custom Help Toolkit includes a tool that can help integrate the latest Microsoft content with yours. For more information, see [Use the HtmlFromRepoGenerator tool to get MarkDown files and generate HTML files](custom-help-toolkit.md#consoleapp).
 
 ## <a name="extendhelppane"></a>Connect your Help website with the Help pane
 
