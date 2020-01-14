@@ -38,7 +38,7 @@ This topic provides general information about the Retail SDK. The Retail SDK inc
 
 ## Overview
 
-The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to add new or customize existing retail functionality. The SDK supports rapid development, full MSBuild integration, package generation, and code separation.
+The Retail software development kit (SDK) includes code, code samples, templates, and tools that you can use to add new or customize existing commerce functionality. The SDK supports rapid development, full MSBuild integration, package generation, and code separation.
 
 > [!NOTE]
 > The Retail SDK supports TLS (Transport Layer Security) 1.2 standard, any customization build using the Retail SDK should follow TLS 1.2 standard.
@@ -48,7 +48,7 @@ The Retail software development kit (SDK) includes code, code samples, templates
 The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder. For more information see:
 
 - If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../../dev-itpro/dev-tools/access-instances.md). 
-- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Retail hotfixes are cumulative and includes all other fixes. 
+- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Hotfixes are cumulative and includes all other fixes. 
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
 
@@ -62,7 +62,9 @@ The Retail SDK is a build system. A simple MSBuild command from the root of the 
 
 ### Creation of final update packages, and better and explicit control over the customization
 
-The Retail SDK includes tools that generate new packages that include everything that is required in order to deploy a service. For example, if the commerce runtime is extended with a new custom service dynamic-link library (DLL), the SDK automatically includes the new DLL in all appropriate packages (RetailServer and MPOSOffline). Or, if the database is extended, the upgrade script is automatically included in both RetailServer and MPOSOffline packages, because these are the packages that must (potentially) run the channel database update. Files that are shared exist only one time in the SDK. The packaging projects are set up in such a way that they pull in the right files for the package. Therefore, you edit a commerceruntime.config file in only one place. The same applies for deployment-related script files, even though these files rarely require customization.
+The Retail SDK includes tools that generate new packages that include everything that is required in order to deploy a service. For example, if the commerce runtime is extended with a new custom service dynamic-link library (DLL), the SDK automatically includes the new DLL in all appropriate packages (RetailServer and MPOSOffline). Or, if the database is extended, the upgrade script is automatically included in both RetailServer and MPOSOffline packages, because these are the packages that must (potentially) run the channel database update. 
+
+Files that are shared exist only one time in the SDK. The packaging projects are set up in such a way that they pull in the right files for the package. Therefore, you edit a commerceruntime.config file in only one place. The same applies for deployment-related script files, even though these files rarely require customization.
 
 ### Better code separation
 
@@ -70,7 +72,7 @@ If the Retail SDK needs to be updated, a potential code merge is required. This 
 
 ### Real-world implementation samples
 
-In addition to the source code of some of the Retail implementations, the Retail SDK includes sample code that illustrates how certain scenarios should be implemented.
+In addition to the source code of some of the Commerce implementations, the Retail SDK includes sample code that illustrates how certain scenarios should be implemented.
 
 ## Retail SDK deep dive
 
@@ -84,14 +86,14 @@ In addition to the source code of some of the Retail implementations, the Retail
 
     This list of requirements is very short and lets developers be productive on simple laptops. There is no longer a prerequisite for a validation utility.
 
-- To **run** your customization, the normal prerequisites to run Retail apply. We recommend that you run the customizations on a single-box developer topology (either LCS cloud-hosted or downloaded) during development.
+- To **run** your customization, the normal prerequisites to run Commerce apply. We recommend that you run the customizations on a single-box developer topology (either LCS cloud-hosted or downloaded) during development.
 
 ### Retail SDK contents
 
 The following folders and files are part of the Retail SDK at the top level.
 
 > [!NOTE]
-> The folder structure and description above are applicable only for the Retail July 2017 update (7.2). In the Retail 7.3 release, we sealed the Retail proxy and Hardware station projects. Therefore, in the Retail 7.3 release, you will see only samples for Hardware station and retail proxy. The proxy can be generated by following the new extensibility pattern.
+> The folder structure and description above are applicable only for the Retail July 2017 update (7.2). In the Retail 7.3 release, we sealed the Retail proxy and Hardware station projects. Therefore, in the Retail 7.3 release, you will see only samples for Hardware station and commerce proxy. The proxy can be generated by following the new extensibility pattern.
 
 <table>
 <thead>
@@ -171,11 +173,11 @@ The following folders and files are part of the Retail SDK at the top level.
 </tr>
 <tr>
 <td>Proxies</td>
-<td>Contains two Visual Studio projects that are referenced by others. These projects contain interfaces and generated code that serves as a proxy client of Retail Server. Proxies.Retail.TypeScript is the TypeScript proxy, and RetailProxy is the C# proxy. They are used by Modern POS/Cloud POS and the ECommerce SDK.</td>
+<td>Contains two Visual Studio projects that are referenced by others. These projects contain interfaces and generated code that serves as a proxy client of Commerce Scale Unit. Proxies.Retail.TypeScript is the TypeScript proxy, and RetailProxy is the C# proxy. They are used by Modern POS/Cloud POS and the ECommerce SDK.</td>
 </tr>
 <tr>
 <td>References</td>
-<td>The single place where all binaries live. The location is used to resolve any project's binary references. The list of files includes external non-Retail binaries and also Microsoft Retail binaries. Additionally, this directory serves as the global drop location for any binaries that are built from the Retail SDK.</td>
+<td>The single place where all binaries live. The location is used to resolve any project's binary references. The list of files includes external non-Commerce binaries and also Microsoft Commerce binaries. Additionally, this directory serves as the global drop location for any binaries that are built from the Retail SDK.</td>
 </tr>
 <tr>
 <td>SampleExtensions</td>
@@ -231,7 +233,11 @@ BuildTools\\Customization.settings holds most of the configuration values for th
 
 [![Screenshot of code for BuildTools Customization settings](./media/retailsdk07.png)](./media/retailsdk07.png)
 
-It's good practice to sign your assemblies with a strong name, even though this isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx). To build correctly, you must create an app package signing certificate. Follow these instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file. Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder. The **RetailServerLibraryPathForProxyGeneration** property can be used to set a different RetailServer DLL for proxy generation. Customization.settings is also the place to define your new customization assets, such as binaries, configuration files, and SQL update scripts. After you specify your extensions, binaries, and assets here, the files will be added in the deployable package that is created. 
+It's good practice to sign your assemblies with a strong name, even though this isn't required. To learn how to create your own key file if you don't already have one, see [https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx](https://msdn.microsoft.com/library/6f05ezxy(v=vs.110).aspx). 
+
+To build correctly, you must create an app package signing certificate. Follow these instructions at [https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/jj835832(v=vs.85).aspx) to create a PFX file. 
+
+Both the strong name key file and the app package signing certificate can be stored inside the BuildTools folder. The **RetailServerLibraryPathForProxyGeneration** property can be used to set a different RetailServer DLL for proxy generation. Customization.settings is also the place to define your new customization assets, such as binaries, configuration files, and SQL update scripts. After you specify your extensions, binaries, and assets here, the files will be added in the deployable package that is created. 
 
 [![Screenshot of code for additional files](./media/retailsdk08.png)](./media/retailsdk08.png)
 
@@ -275,8 +281,12 @@ To work efficiently in a team, or even just to be able to go back and look at so
 
 #### Retail SDK mirror branch
 
-A very important point to emphasize is that the non-customized Retail SDK should be stored in your source control. You don't have to store every version, but the versions that your team wants to snap to should be added (these versions might be cumulative updates or hotfixes). Only a simple merge of all changes (additions, changes, and deletions) should be done. No other development work should occur in this branch. The Retail SDK has its own version. All Retail binaries and packages that are included have the same version. The version can also be found in the root of the Retail SDK in a file that is named Microsoft-version.txt.
+A very important point to emphasize is that the non-customized Retail SDK should be stored in your source control. You don't have to store every version, but the versions that your team wants to snap to should be added (these versions might be cumulative updates or hotfixes). Only a simple merge of all changes (additions, changes, and deletions) should be done. No other development work should occur in this branch. The Retail SDK has its own version. All Commerce binaries and packages that are included have the same version. The version can also be found in the root of the Retail SDK in a file that is named Microsoft-version.txt.
 
 #### Customization branch
 
-After development can start, a new branch should be started (customization branch). At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for a team's development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly. Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, this update should very rarely. For example, Microsoft's assembly version stayed the same for the multiple CTP releases for the current version. Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions. The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
+After development can start, a new branch should be started (customization branch). At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for a team's development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly. 
+
+Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, this update should very rarely. For example, Microsoft's assembly version stayed the same for the multiple CTP releases for the current version. Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions. The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property. 
+
+In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
