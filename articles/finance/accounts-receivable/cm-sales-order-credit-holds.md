@@ -237,7 +237,7 @@ Sales orders are placed in the hold list based on the blocking rules. However, s
 
 You can use the **Evaluate for release** menu to review the sales orders in the hold list and automatically release them if the reason for the hold has been mitigated.
 1.	Select the **Evaluate for release** menu
-2.	Select **Process blocking rules** to review all of the sales orders. Select **Process blockign rules for selected lines** to review only the lines that you have selected.
+2.	Select **Process blocking rules** to review all of the sales orders. Select **Process blocking rules for selected lines** to review only the lines that you have selected.
 3. A slider will appear so that you can select a single customer. Leave the customer drop down blank for all customers. 
 4. When you click ok, the process is run in the background and you can continue working on other tasks. If you select batch processing before you click on Ok, the process will run in batch when you click Ok. It may take some time to process the orders on hold in the list so use Refresh to update the status of the orders. 
 5.	If a blocking reason no longer is applicable for an order, the blocking reason will be considered no longer valid and you will no longer see a check mark next to the reason when you view the blocking reasons.
