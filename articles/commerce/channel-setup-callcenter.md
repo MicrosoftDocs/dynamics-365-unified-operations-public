@@ -69,9 +69,9 @@ The following image shows an example call center channel.
 
 Additional tasks required for call center channel setup include setting up payment methods and modes of delivery.
 
-The following image shows **Modes of delivery** and **Payment methods** on the **Set up** tab.
+The following image shows **Modes of delivery** and **Payment methods** actions on the **Set up** tab.
 
-![Additional channel setup actions](media/channel-setup-callcenter-3.png)
+![Additional call center channel setup actions](media/channel-setup-callcenter-3.png)
 
 ### Set up payment methods
 
