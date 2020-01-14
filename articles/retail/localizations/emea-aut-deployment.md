@@ -78,7 +78,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 4. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Retail and Commerce:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail and Commerce site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extension configuration file.
