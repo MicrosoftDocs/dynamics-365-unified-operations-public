@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for France in Dynamics 365 Retail. It also provides guidelines for setting up the functionality.
+This topic provides an overview of the cash register functionality that is available for France in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
 The functionality consists of the following parts:
 
@@ -78,7 +78,7 @@ The signature is created and recorded in the channel database at the same time t
 6. Encrypt the resulting string by using a digital certificate.
 7. Do the base64url transformation for the resulting string.
 8. Store the string that is used for signing, the sequential number, the signature, and the thumbprint of the certificate in a fiscal response record that is linked to the transaction or event.
-9. Transfer the fiscal response to the enterprise resource planning (ERP) system in Retail headquarters, together with the transaction or event.
+9. Transfer the fiscal response to the enterprise resource planning (ERP) system in Headquarters, together with the transaction or event.
 
 #### Digital signing of sales transactions
 
@@ -101,14 +101,14 @@ The data that is signed for a sales transaction is a text string that consists o
 7. A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
 8. The previous signature for the same register. A blank value is used for the first signed sales transaction.
 
-You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Retail store transactions** page in Retail headquarters.
+You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Store transactions** page in Headquarters.
 
 #### Digital signing of receipt copies
 
 When a copy of a receipt is printed, the event is registered in the POS audit event log. Only copies of receipts for signed sales transactions are signed. The data that is signed for a receipt copy event is a text string that consists of the following data fields:
 
 1. The receipt number of the original sales transaction.
-2. The type of retail transaction for the original sales transaction.
+2. The type of transaction for the original sales transaction.
 3. The number of the receipt copy for this sales transaction.
 4. The staff ID of the operator who is printing the receipt copy.
 5. The date and time of the receipt copy event, in the format YYYYMMDDHHMMSS.
@@ -116,7 +116,7 @@ When a copy of a receipt is printed, the event is registered in the POS audit ev
 7. A value (Y/N) that indicates whether the transaction is the first signed receipt copy event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed receipt copy event.
 
-You can view the signature of the receipt copy, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Retail headquarters.
+You can view the signature of the receipt copy, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Headquarters.
 
 #### Digital signing of closed shifts
 
@@ -129,7 +129,7 @@ When a shift is closed, the event is registered in the POS audit event log. The 
 5. A value (Y/N) that indicates whether the transaction is the first signed shift closing event for the register.
 6. The previous signature for the same register. A blank value is used for the first signed shift closing event.
 
-You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Signature** tab of the **Shifts** page in Retail headquarters.
+You can view the signature of a closed shift, together with the shift data that was used to generate it, on the **Signature** tab of the **Shifts** page in Headquarters.
 
 #### Digital signing of events
 
@@ -144,7 +144,7 @@ The data that is signed for an event other than a receipt copy or shift closing 
 7. A value (Y/N) that indicates whether the transaction is the first signed event for the register.
 8. The previous signature for the same register. A blank value is used for the first signed event.
 
-You can view the event signature, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Retail headquarters.
+You can view the event signature, together with the event data that was used to generate it, on the **Signature** tab of the **Audit events** page in Headquarters.
 
 #### Receipts
 
@@ -179,7 +179,7 @@ The information that is included on X and Z reports is based on French requireme
 - **Cumulative perpetual grand total**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift plus the total sales amount of this shift plus the absolute value of the total returns amount of this shift.
 - Value-added tax (VAT) amounts per tax rate.
 
-The totals are also stored in the closed shift record and transferred to Retail headquarters.
+The totals are also stored in the closed shift record and transferred to Headquarters.
 
 #### Period grand total journal
 
@@ -191,7 +191,7 @@ The journal can then be calculated. Shifts that were closed during the journal p
 
 After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and period.
 
-A closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Retail headquarters.
+A closed journal is digitally signed. You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Headquarters.
 
 #### Archive
 
@@ -199,11 +199,11 @@ An archive is an XML file that can be exported from a Period grand total journal
 
 The archive format is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md).
 
-## Setting up Retail for France
+## Setting up Commerce for France
 
-This section describes the Retail settings that are specific to and recommended for France. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
 
-To use the France-specific functionality for Retail, you must complete these tasks:
+To use the France-specific functionality, you must complete these tasks:
 
 - Set the **Country/region** field to **FRA** (France) in the primary address of the legal entity.
 - Set the **ISO code** field to **FR** (France) in the POS functionality profile of every store that is located in France.
@@ -311,11 +311,11 @@ In the Receipt format designer, add the following custom fields to the appropria
 
 For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
-### Configure the digital signature parameters for Retail headquarters
+### Configure the digital signature parameters for Headquarters
 
 To digitally sign Period grand total journals and archives, you must set up digital signature parameters. The signing is done by using a digital certificate that is stored in Microsoft Azure Key Vault storage. The following steps must be completed before you can use a certificate that is stored in Key Vault storage:
 
-- The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Retail Server.
+- The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
 - The certificate must be uploaded to the Key Vault storage.
 - The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
 
@@ -329,7 +329,7 @@ Then, on the **Key Vault parameters** page, you must specify the parameters for 
 - **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
-Finally, on the **Retail parameters** page, you must specify the parameters for digital signatures:
+Finally, on the **Commerce parameters** page, you must specify the parameters for digital signatures:
 
 - **Certificate** – Select the certificate that you configured in the previous step.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA1**.
@@ -345,17 +345,17 @@ You can download the ER configuration for the archive from Microsoft Dynamics Li
 
 After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
 
-### Renitialize Retail components
+### Renitialize Commerce components
 
 > [!NOTE]
 > You only need to complete the steps of this section if you are updating an existing evironment.
 
-To enable audit events, you must reinitialize the Retail Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Retail Scheduler.
+To enable audit events, you must reinitialize the Commerce Extensible enumerations. To enable transmitting France-specific data from POS to HQ, you must reinitialize the Commerce Scheduler.
 
-On the **General** FastTab of the **Retail parameters** page, click **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md)
+On the **General** FastTab of the **Commerce parameters** page, click **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md)
 
-There is an option to separately configure the Retail scheduler. Click **Retail scheduler** \> **Initialize retail scheduler**. On the **Initialize retail scheduler** page, click **OK**.
+There is an option to separately configure the scheduler. Click **Commerce scheduler** \> **Initialize commerce scheduler**. On the **Initialize Commerce scheduler** page, click **OK**.
 
-### Configure Retail channel components
+### Configure channel components
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-deployment.md).
