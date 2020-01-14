@@ -827,7 +827,7 @@ After the ER configurations from the previous table are successfully imported, s
 
     ![System administrator consent received record in the action log](media/uk-mtd-system-administrator-consent-log.png)
 
-4. If your web application wasn't previously authorized, continue the [authorization process](#obtain-an-authorization-code-for-production) as it's described in this topic. If your web application was previously authorized on the HMRC side, you don't need to continue the authorization process and can skip all other authorization steps.
+4. If your web application wasn't previously authorized, continue the [authorization process](#obtain-an-authorization-code-for-the-production-environment) as it's described in this topic. If your web application was previously authorized on the HMRC side, you don't need to continue the authorization process and can skip all other authorization steps.
 
 If the ER configurations from previous table were successfully imported, but the system admin didn't give consent, requests to refresh the access token will be blocked. In this case, because the old access token will be used, HMRC will accept no new requests to the MTD for VAT APIs. For example, a user who sends a new VAT obligations request to HMRC will receive a "401" error. The message details will state, "Access token cannot be refreshed. System administrator must consent to transmit information outside of Dynamics 365 for Finance and Operations via initialization 'Get authorization code' button on Web applications page."
 
