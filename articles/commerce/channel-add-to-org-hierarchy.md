@@ -75,7 +75,7 @@ The following image shows a hierarchy with various channels added.
 
 [Channels overview](channels-overview.md)
 
-[Channel set up prerequisites](channels-prerequisites.md)
+[Channel setup prerequisites](channels-prerequisites.md)
 
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
