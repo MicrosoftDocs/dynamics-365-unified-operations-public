@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Defer execution of Sequence elements in ER formats
-description: This topic This topic explains how the execution of a sequence element in an ER format can be deferred.
+title: Defer the execution of sequence elements in ER formats
+description: This topic explains how you can defer the execution of a sequence element in an ER format.
 author: NickSelin
 manager: kfend
 ms.date: 1/14/2020
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Defer execution of a sequence element in ER format
+# Defer the execution of sequence elements in ER formats
 
 [!include [banner](../includes/banner.md)]
 
 ## Overview
 
-You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to [configure](./tasks/er-format-configuration-2016-11.md) the [format component](general-electronic-reporting.md#FormatComponentOutbound) of an ER solution using to generate outbound documents in text format. The hierarchical structure of the configured format component consists of format elements of various types using to populate at runtime necessary information to generated documents. By default, when you run an ER format, these format elements are executed in the same sequence as they are presented in the format hierarchy – one by one from top to bottom order. At design time, you can change this default execution order for any of sequence elements of the configured format component. 
+You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to [configure](tasks/er-format-configuration-2016-11.md) the [format component](general-electronic-reporting.md#FormatComponentOutbound) of an ER solution using to generate outbound documents in text format. The hierarchical structure of the configured format component consists of format elements of various types using to populate at runtime necessary information to generated documents. By default, when you run an ER format, these format elements are executed in the same sequence as they are presented in the format hierarchy – one by one from top to bottom order. At design time, you can change this default execution order for any of sequence elements of the configured format component. 
 
 You can turn on the <a name="DeferredSequenceExecution"></a>**Deferred execution** option for a sequence format element to postpone the execution of this element. When this option for a sequence element is on, execution of this element is deferred until all other elements of its parent have been executed.
 
