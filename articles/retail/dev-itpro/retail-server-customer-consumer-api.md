@@ -39,7 +39,7 @@ This topic provides an overview of the APIs that are available across various ro
 Overview
 --------
 
-- Retail Server business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
+- Commerce Scale Unit business data and operations are available to any connected device through the OData Web API, across both employee (point of sale) scenarios and customer (online store) scenarios.
 - The embedded commerce runtime (CRT) enables a unified omni-channel platform.
 - The application programming interfaces (APIs) are stateless and can process requests from many channels.
 - The APIs have a linear scale-out model (“brick” scale-out).
@@ -47,14 +47,14 @@ Overview
 - The APIs are built on the .NET stack by using C\#.
 
 ## Roles
-Every request to Retail Server (via retail proxy) operates under these main roles:
+Every request to Commerce Scale Unit (via commerce proxy) operates under these main roles:
 
 - CommerceRole.Employee
 - CommerceRole.Anonymous
 - CommerceRole.Customer
 - CommerceRole.Application
 
-The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Retail Server. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
+The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenarios. The Anonymous role is used for requests that represent an eCommerce customer who hasn't signed in. The Customer role is used for requests that represent an eCommerce customer who has been authenticated and has signed in. A role filter is applied to every API that is exposed in Commerce Scale Unit. For eCommerce scenarios, you can use only APIs that have either CommerceRole.Anonymous or CommerceRole.Customer associated with them.
 
 > [!NOTE]
 > By default, Anonymous access is not enabled. To enable Anonymous access for your environment, contact [Support](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support).
@@ -91,7 +91,7 @@ The Anonymous and Customer roles apply to eCommerce (customer/consumer) scenario
 | GetInvoicedSalesLinesBy- SalesIds                        | IEnumerable\<string\> salesIds, QueryResultSettings queryResultSettings                                                                        | PageResult\<SalesLine\>    | Employee                 | Gets the list of invoiced sales lines by sales order identifiers                                        |
 | CreatePickingList [Obsolete("Use CreatePickingListForItems instead.")]  | string salesId                                                                                                                                     | void                           | Employee                 | Creates a picking list for a sales order                                                                |
 | CreatePickingListForItems                              | string salesId, IEnumerable- \<PickAndPackSalesLineParameter\> pickAndPackSalesLineParameters                                                    | string                         | Employee                 | Creates a picking list for selected lines on sales order.                                               |
-| GetPickingLists                                        | string salesId, QueryResultSettings queryResultSettings                                                                                            | PageResult\<PickingList\>  | Employee                 | Gets the picking lists for an order from Retail headquarters.                                           |
+| GetPickingLists                                        | string salesId, QueryResultSettings queryResultSettings                                                                                            | PageResult\<PickingList\>  | Employee                 | Gets the picking lists for an order from Headquarters.                                           |
 | CreatePackingSlip                                      |                                                                                                                                                    | void                           | Employee                 | Creates a packing slip                                                                                  |
 | GetSalesOrderDetailsBy- TransactionId                    | string transactionId, int searchLocationValue                                                                                                      | SalesOrder                     | Employee, Customer        | Gets the sales order details by transaction id.                                                         |
 | GetSalesOrderDetailsBy- SalesId                          | string salesId                                                                                                                                     | SalesOrder                     | Employee, Customer        | Gets the sales order details by sales id.                                                               |
