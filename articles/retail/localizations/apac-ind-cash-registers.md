@@ -43,7 +43,7 @@ This topic provides a walkthrough of the features that are related to Goods and 
 
 The following table shows the navigation paths for the India tax entities in Commerce.
 
-| India tax entities                  | Navigation path in Retail                                                     |
+| India tax entities                  | Navigation path in Commerce                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------|
 | Business verticals                  | Retail and Commerce \> Channel setup \> Sales taxes \> Business verticals                  |
 | Enterprise tax registration numbers | Retail and Commerce \> Channel setup \> Sales taxes \> Enterprise tax registration numbers |
@@ -73,7 +73,7 @@ You can configure the language text and custom fields that are used in the POS r
 
 ### Set up the POS language text
 
-1. Go to **Retail** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Language text**.
+1. Go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Language text**.
 2. On the **POS** tab, on the **POS language text** FastTab, select the language ID for the text. The language should match the user's preferred language.
 3. In the **Text ID** field, enter a unique ID that is equal to or more than **900001**.
 4. In the **Text** field, enter the language text.
