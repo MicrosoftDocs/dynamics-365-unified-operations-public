@@ -5,7 +5,7 @@ title: Provision a Commerce preview environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce preview environment.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -273,10 +273,10 @@ To initialize e-Commerce, follow these steps.
 
 1. Select **Next** to continue.
 1. In the **Supported host names** field, enter any valid domain, such as `www.fabrikam.com`.
-1. In the **AAD security group for system admin** field, enter the ID of the Azure AD security group that you want to use as the e-Commerce system admin group.
-1. In the **AAD security group for ratings and review moderator** field, enter the ID of the Azure AD security group that you want to use for the Ratings and Reviews moderator group.
-1. For the seven fields that start with **B2C**, leave the **B2C** value blank.
+1.	In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use. Select the magnifying class icon to display the search results. Select a security group from the list.
+2.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use. Select the magnifying class icon to display the search results. Select a security group from the list.
 1. Leave the **Enable ratings and review service** option turned on.
+1. If you have already completed the Microsoft Azure Active Directory (Azure AD) consent step as described in the "Grant access to e-Commerce applications" section, select the check box to confirm your consent. If you have not yet completed this step, you need to do that before proceeding with the initialization. Select the link within the text next to the check box to open the consent dialog box and complete the step.
 1. Select **Initialize**. You're returned to the **Retail management** view, where the **e-Commerce (Preview)** tab is selected. E-Commerce initialization has started.
 1. Before you continue, wait until the status of e-Commerce initialization is **Initialization successful**.
 1. Under **Links** in the lower right, make a note of the URLs for the following links:

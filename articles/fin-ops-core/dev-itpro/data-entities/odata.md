@@ -258,15 +258,15 @@ The OData protocol supports many similar filtering and querying options on entit
 ## Using Enums
 Enums are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in an OData query is by using the following syntax.
 
-Microsoft.Dynamics.DataEntities.Gender'Unknown'
+`Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
-Microsoft.Dynamics.DataEntities.NoYes'Yes'
+`Microsoft.Dynamics.DataEntities.NoYes'Yes'`
 
 An example query for using the above enum values is shown below.
 
-https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'
+`https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'`
 
-https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'
+`https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'`
 
 The operations supported for enums are **eq** and **ne**.
 

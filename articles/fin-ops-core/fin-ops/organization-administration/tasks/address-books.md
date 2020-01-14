@@ -3,7 +3,7 @@
  
 title: Configure address books
 description: Use this procedure, and the decisions that you made in the Planning the configuration of the global address book and additional address books topic, to set up additional address books for your organization. 
-author: kfend
+author: msftbrking 
 manager: AnnBe 
 ms.date: 08/09/2019
 ms.topic: business-process 
@@ -22,7 +22,7 @@ ms.search.scope: Core, Operations
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: brking
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
