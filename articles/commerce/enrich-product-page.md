@@ -77,3 +77,4 @@ To enrich a product page, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)

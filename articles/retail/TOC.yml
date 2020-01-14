@@ -64,8 +64,6 @@
         items:
         - name: Retail version 10.0.7
           href: get-started/whats-new-10-0-7.md
-        - name: Retail version 10.0.6
-          href: get-started/whats-new-10-0-6.md
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page

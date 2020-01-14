@@ -5,7 +5,7 @@ title: What's new and changed in Platform update 31 for Finance and Operations a
 description: This topic describes features that are in preview in Platform update 31 for Finance and Operations apps. 
 author: tonyafehr
 manager: AnnBe
-ms.date: 12/06/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Platform update 31
 # What's new and changed in Platform update 31 for Finance and Operations apps (January 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This topic describes preview features that are new or changed for Platform update 31 for Finance and Operations apps. This version has a build number of 7.0.5457 and is available as follows:
 
