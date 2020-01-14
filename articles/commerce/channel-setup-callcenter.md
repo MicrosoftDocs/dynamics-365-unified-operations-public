@@ -104,7 +104,7 @@ The following image shows an example of a mode of delivery.
 
 ## Additional resources
 
-[Channel set up prerequisites](channels-prerequisites.md)
+[Channel setup prerequisites](channels-prerequisites.md)
 
 [Call center sales functionality](../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json)
 
