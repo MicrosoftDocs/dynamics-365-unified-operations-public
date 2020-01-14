@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Add channel to an organizational hierarchy
-description: This topic presents the instructions to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
+title: Add a channel to an organizational hierarchy
+description: This topic describes how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -24,38 +24,65 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: samjar
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Add channel to an organizational hierarchy
+# Add a channel to an organizational hierarchy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents the instructions to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
+This topic describes how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-Channels need to be assosiated with one or more organizational hierarchies, follow the instructions below to add.  
+
+Channels need to be associated with one or more organizational hierarchies, follow the instructions below to add.  
 
 See [Organizational hierarchies](channels-org-hierarchies.md) for more details on how to create an organizational hierarchies.
 
-## Select a hierachy
-* Go to **Navigation pane** > **Modules** > **Retail** > **Channel Setup** > **Organization hierarchies**.
-* Select the organization hierarchy that you'll be adding the channel to from the list.
-* From the **Action pane** select "View" to load the visual 
+## Select a hierarchy
+
+To select a hierarchy, follow these steps.
+
+1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Organization hierarchies**.
+1. Select the organization hierarchy that you'll be adding the channel to from the list.
+1. From the **Action pane**, select **View** to view hierarchy details.
+
+The following image shows organizational hierarchy details for the selected hierarchy.
 
 ![Select a hierarchy](media/channel-add-to-org-hierarchy-1.png)
 
 ## Add a channel to a hierachy node
-* In the **Action pane**, select **Edit**.
-* Select the hierachy node you want the channel added to and select the **Insert** drop down followed by **Retail Channel**. 
-* Select the channel to add, then hit the **OK** button.
-* Select **Save** in the **Action pane**.
-* In the **Action pane**, select **Publish** and provide an **Effective date** in the past to have this go into effect immediately.
+
+To add a channel to a hierachy node, follow these steps.
+
+1. On the **Action pane**, select **Edit**.
+1. Select the hierachy node you want the channel added to and select the **Insert** drop down, then select **Retail Channel**. 
+1. Select the channel to add, then select the **OK** button.
+1. On the **Action pane**, select **Save**.
+1. On the **Action pane**, select **Publish** and provide an **Effective date** in the past to have this action go into effect immediately.
+
+The following image shows how to select a channel to add to a hierarchy node.
 
 ![Add a channel](media/channel-add-to-org-hierarchy-2.png)
 
-Below example shows a hierarchy with various channels added.
+The following image shows a hierarchy with various channels added.
+
 ![Channels example](media/channel-add-to-org-hierarchy-3.png)
 
+## Additional resources
+
+[Channels overview](channels-overview.md)
+
+[Channel set up prerequisites](channels-prerequisites.md)
+
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+[Plan your organizational hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+
+[Organization hierarchies](channels-org-hierarchies.md)
+
+[Set up a retail channel](channel-setup-retail.md)
+	
+[Set up an online channel](channel-setup-online.md)
