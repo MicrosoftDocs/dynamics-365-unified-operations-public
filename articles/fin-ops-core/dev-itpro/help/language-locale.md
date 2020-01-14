@@ -5,7 +5,7 @@ title: Language and locale descriptors
 description: This topic maps the language names between the finance and operations client and the GitHub repos with Microsoft's Help files. 
 author: edupont04
 ms.service: dynamics-ax-platform
-ms.date: 12/17/19
+ms.date: 01/14/2020
 
 # optional metadata
 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Language and locale descriptors in across product and Help
 
-The client used by finance and operations apps supports many languages and locales. To add custom Help content for one or more locales to the in-product Help pane, the following must be true:
+The client used by Finance and Operations apps supports many languages and locales. To add custom Help content for one or more locales to the in-product Help pane, the following must be true:
 
 1. The value of the ```ms.locale``` property in each HTML file must match the locale of the content.  
 2. The content must be uploaded to a folder with the same name as the locale on the website that hosts the content.  
@@ -88,7 +88,7 @@ The following table maps the language names between the client and the GitHub re
 
 Microsoft's teams write their content in English (United States), which is then translated into a number of languages. The translated content is then made available in a public GitHub repo for each language.  
 
-Most translation services treat certain languages as variants of another language in order to recycle translations to the extent possible. For example, Danish and Norwegian are related languages but each considered unique in itself, whereas German (Austria) and German (Germany) are considered so closely related that the they are treated as variants of each other. As a result, Microsoft's translation process translates English source into German (Germany) and then runs an adaptation process for German (Austria). This is why you would use the files in the *Dynamics-365-Operations.de-de* GitHub repo as a starting point for both German (Germany) and German (Austria).  
+Most translation services treat certain languages as variants of another language in order to recycle translations to the extent possible. For example, Danish and Norwegian are related languages but each considered unique in itself, whereas German (Austria) and German (Germany) are considered so closely related that they are treated as variants of each other. As a result, Microsoft's translation process translates English source into German (Germany) and then runs an adaptation process for German (Austria). This is why you would use the files in the *Dynamics-365-Operations.de-de* GitHub repo as a starting point for both German (Germany) and German (Austria).  
 
 ## See also
 

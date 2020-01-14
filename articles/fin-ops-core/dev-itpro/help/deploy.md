@@ -65,7 +65,7 @@ If you host the Help content on another type of website, it is a requirement tha
 
 #### Host your content on Azure
 
-Optionally, you can set up an Azure web app and host your content there for easy integration with the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
+We recommend that you set up an Azure web app and host your content there for easy integration with the in-product Help pane. If you do not have an [Azure subscription](/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing), create an account before you begin. You can start with a free account for 12 months. For more information, see [Create your Azure free account today](https://azure.microsoft.com/free/).  
 
 There are several different ways of getting your content hosted on Azure. In [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md), we describe one approach. You can find inspiration for other approaches in the Azure documentation. For more information, see [Azure Blob storage documentation](/azure/storage/blobs/).  
 
