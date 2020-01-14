@@ -615,7 +615,7 @@ The changes to the setup of the **Populate VAT return records** action that are 
 
 ### Use the Electronic messages page to collect information for VAT return reporting for several legal entities
 
-Set up one legal entity to interoperate with HMRC, according to the general guidance in this topic, and do the additional setup for the **Populate VAT return records** action that is described in the previous section. Then [retrieve VAT obligations](#retrieve-vat-obligations-from-hmrc) for your VAT group, and [collect data for the VAT return](#collect-data-for-vat-a-return).
+Set up one legal entity to interoperate with HMRC, according to the general guidance in this topic, and do the additional setup for the **Populate VAT return records** action that is described in the previous section. Then [retrieve VAT obligations](#retrieve-vat-obligations-from-hmrc) for your VAT group, and [collect data for the VAT return](#collect-data-for-a-vat-return).
 
 1. Go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Electronic messages**, and select either the **UK MTD VAT TEST** processing (for testing purposes) or the **UK MTD VAT returns** processing (for production).
 2. On the **Messages** FastTab, select an electronic message that has a status of **New VAT return** and that was automatically created when VAT obligations were retrieved from HMRC.
