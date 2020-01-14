@@ -31,40 +31,40 @@ ms.dyn365.ops.version: 7.3.1
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of retail business transactions, and shows the accounting and posting of retail transactions where the receipt is printed at the point of sale (POS).
+This topic provides a walkthrough of the features that are related to Goods and Services Tax (GST). It also highlights the effect of GST on various types of commerce business transactions, and shows the accounting and posting of transactions where the receipt is printed at the point of sale (POS).
 
 
 ## Prerequisites
 
 - Set up GST for India. For more information, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
-- Configure Retail channel components. To enable India-specific functionality, you must configure extensions for Retail channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
+- Configure Commerce channel components. To enable India-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./apac-ind-loc-deployment-guidelines.md).
 
-## India tax entities for Retail
+## India tax entities for Commerce
 
-The following table shows the navigation paths for the India tax entities in Retail.
+The following table shows the navigation paths for the India tax entities in Commerce.
 
 | India tax entities                  | Navigation path in Retail                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------|
-| Business verticals                  | Retail \> Channel setup \> Sales taxes \> Business verticals                  |
-| Enterprise tax registration numbers | Retail \> Channel setup \> Sales taxes \> Enterprise tax registration numbers |
-| GST reference number sequence group | Retail \> Channel setup \> Sales taxes \> GST reference number sequence group |
-| HSN codes                           | Retail \> Channel setup \> Sales taxes \> HSN codes                           |
-| Service accounting codes            | Retail \> Channel setup \> Sales taxes \> Service accounting codes            |
-| Maintain setoff hierarchy profiles  | Retail \> Channel setup \> Sales taxes \> Maintain setoff hierarchy profiles  |
-| VAT schedules                       | Retail \> Channel setup \> Sales taxes \> VAT schedules                       |
-| Tax setup                           | Retail \> Channel setup \> Sales taxes \> Tax configuration \> Tax setup      |
+| Business verticals                  | Retail and Commerce \> Channel setup \> Sales taxes \> Business verticals                  |
+| Enterprise tax registration numbers | Retail and Commerce \> Channel setup \> Sales taxes \> Enterprise tax registration numbers |
+| GST reference number sequence group | Retail and Commerce \> Channel setup \> Sales taxes \> GST reference number sequence group |
+| HSN codes                           | Retail and Commerce \> Channel setup \> Sales taxes \> HSN codes                           |
+| Service accounting codes            | Retail and Commerce \> Channel setup \> Sales taxes \> Service accounting codes            |
+| Maintain setoff hierarchy profiles  | Retail and Commerce \> Channel setup \> Sales taxes \> Maintain setoff hierarchy profiles  |
+| VAT schedules                       | Retail and Commerce \> Channel setup \> Sales taxes \> VAT schedules                       |
+| Tax setup                           | Retail and Commerce \> Channel setup \> Sales taxes \> Tax configuration \> Tax setup      |
 
 > [!NOTE]
-> The navigation paths for the India tax entities in Retail differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
+> The navigation paths for the India tax entities in Commerce differ from the navigations paths in Finance. For information about the navigation paths in Finance, see [India Goods and Services Tax (GST)](../../financials/localizations/apac-ind-gst.md).
 
-## Validate tax information for the retail store
+## Validate tax information for the store
 
-The tax information for the retail store comes from the selected retail warehouse. This warehouse is defined in the warehouse master. The configured tax information from the store is printed on the POS receipt. It's also updated on the retail sales order at the retail headquarters for the financial postings.
+The tax information for the store comes from the selected warehouse. This warehouse is defined in the warehouse master. The configured tax information from the store is printed on the POS receipt. It's also updated on the sales order at the headquarters for the financial postings.
 
-Follow these steps to view the tax information for a retail store.
+Follow these steps to view the tax information for a store.
 
-1. Go to **Retail** \> **Channels** \> **Retail stores** \> **All retail stores**.
-2. Select a retail store.
+1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**.
+2. Select a store.
 3. Select the **Tax information** FastTab.
 
 ## Configure language texts and custom fields
@@ -84,7 +84,7 @@ You can configure the language text and custom fields that are used in the POS r
 
 When you create custom fields, the value of the **Caption text ID** field must match the value that you entered for the **Text ID** field on the **Language text** page.
 
-1. Go to **Retail** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Custom fields**.
+1. Go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Custom fields**.
 2. Enter a name for the field.
 3. Select the field type.
 4. In the **Caption text ID** field, enter the **Text ID** value for one of the language texts on the **Language text** page.
@@ -95,7 +95,7 @@ When you create custom fields, the value of the **Caption text ID** field must m
 
 You can use Receipt format designer to add custom fields to the appropriate receipt sections. For more information, see [Set up and design receipt formats](../receipt-templates-printing.md).
 
-1. Go to **Retail** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Receipt formats**.
+1. Go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS profile** \> **Receipt formats**.
 2. Select a receipt format for the **Receipt** receipt type, and make the required changes.
 
 ![Receipt format design](media/apac-ind-gst-receipt-format.png)
@@ -106,14 +106,14 @@ After you create a receipt format, you can assign that format to a receipt profi
 
 Follow these steps to update a receipt profile.
 
-1. Go to **Retail** \> **Setup** \> **POS** \> **Receipt profile**.
+1. Go to **Retail and Commerce** \> **Setup** \> **POS** \> **Receipt profile**.
 2. Select the receipt profile to update.
 3. Select **Edit**.
 4. For each receipt type in the list, select a receipt format.
 
 ## Update the POS invoice number
 
-You can reconcile the POS receipt number with the invoice number for customer retail transactions. If you set the **Update POS invoice number** option to **Yes** on the **Posting** tab of the **Retail parameters** page, the POS receipt number is entered in the **Transaction ID** field for corresponding retail sales orders.
+You can reconcile the POS receipt number with the invoice number for customer transactions. If you set the **Update POS invoice number** option to **Yes** on the **Posting** tab of the **Commerce parameters** page, the POS receipt number is entered in the **Transaction ID** field for corresponding sales orders.
 
 You can set the **Update POS invoice number** option to **Yes** only if the existing receipt number format includes both the store number and the terminal number. The following illustration shows a POS functionality profile where the receipt numbering includes the store number and the terminal number.
 
@@ -121,11 +121,11 @@ You can set the **Update POS invoice number** option to **Yes** only if the exis
 
 ## Run a distribution schedule
 
-To synchronize Tax Engine (GTE) data from retail headquarter to the POS database, you must add a job to the **Distribution schedule** page.
+To synchronize Tax Engine (GTE) data from headquarter to the POS database, you must add a job to the **Distribution schedule** page.
 
 Follow these steps to verify that the job exists and to run the job.
 
-1. Go to **Retail** \> **Periodic** \> **Data distribution** \> **Distribution schedule**.
+1. Go to **Retail and Commerce** \> **Periodic** \> **Data distribution** \> **Distribution schedule**.
 2. Verify that a new job, **1180**, has been added for **Generic tax engine**.
 3. Run all the jobs (**9999**).
 
@@ -181,9 +181,9 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 
     ![Receipt example](media/apac-ind-gst-s1-receipt1.png)
 
-11. Validate the sales order and tax document in Retail headquarters:
+11. Validate the sales order and tax document in Headquarters:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    1. Go to **Retail and Commerce** \> **Customers** \> **All sales orders**.
     2. Select the sales order.
     3. On the Action Pane, on the **Sell** tab, in the **Tax** group, select **Tax document**.
 
@@ -206,7 +206,7 @@ Sales to a registered customer are known as *business-to-business* (B2B) sales. 
 
 15. Validate the voucher transactions:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    1. Go to **Retail and Commerce** \> **Customers** \> **All sales orders**.
     2. Select the sales order.
     3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
     4. Select **Voucher**.
@@ -245,21 +245,21 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
     ![Receipt validation](media/apac-ind-gst-receipt-validation.png)
 
-6. Validate the retail sales invoice in Retail headquarters:
+6. Validate the sales invoice in Headquarters:
 
-    1. Go to **Retail** \> **Retail IT** \> **Data distribution**.
+    1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Data distribution**.
     2. Run job **P-0001** (**Channel transactions**).
     3. Close the page.
 
 7. Post the statement:
 
-    1. Go to **Retail** \> **Channels** \> **Retail stores** \> **Open statements**.
+    1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **Open statements**.
     2. Create a statement.
     3. Select **Calculate statement** and then **Post statement**.
 
 8. Validate the voucher transactions:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    1. Go to **Retail and Commerce** \> **Customers** \> **All sales orders**.
     2. Select the sales invoice.
     3. Select **Sales order lines** \> **Tax information**.
     4. On the appropriate tabs, verify the location (store address) and the customer address.
@@ -281,15 +281,15 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
 ### Scenario 3: Sell taxable goods to an anonymous customer where GST is price-inclusive
 
-1. Define price-inclusiveness at the retail store:
+1. Define price-inclusiveness at the store:
 
-    1. Go to **Retail** \> **Channels** \> **Retail stores** \> **All retail stores**.
-    2. Select a retail store.
+    1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**.
+    2. Select a store.
     3. Set the **Prices include sales tax** option to **Yes**.
 
 2. Run the distribution schedule:
 
-    1. Go to **Retail** \> **Retail IT** \> **Data distribution**.
+    1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Data distribution**.
     2. Run the job to update the changes in the POS database.
     3. Close the page.
 
@@ -309,21 +309,21 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
     ![Receipt example](media/apac-ind-gst-s3-receipt4.png)
 
-6. Validate the retail sales invoice in Retail headquarters:
+6. Validate the sales invoice in Headquarters:
 
-    1. Go to **Retail** \> **Retail IT** \> **Data distribution**.
+    1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Data distribution**.
     2. Run job **P-0001** (**Channel transactions**).
     3. Close the page.
 
 7. Post the statement:
 
-    1. Go to **Retail** \> **Channels** \> **Retail stores** \> **Open statements**.
+    1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **Open statements**.
     2. Create a statement.
     3. Select **Calculate statement** and then **Post statement**.
 
 8. Validate the voucher transactions:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    1. Go to **Retail and Commerce** \> **Customers** \> **All sales orders**.
     2. Select the sales invoice.
     3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
     4. Select **Voucher**.
@@ -352,21 +352,21 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
     ![Receipt example.png](media/apac-ind-gst-receipt-4.png)
 
-5. Validate the retail sales invoice in Retail headquarters:
+5. Validate the sales invoice in Headquarters:
 
-    1. Go to **Retail** \> **Retail IT** \> **Data distribution**.
+    1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Data distribution**.
     2. Run job **P-0001** (**Channel transactions**).
     3. Close the page.
 
 6. Post the statement:
 
-    1. Go to **Retail** \> **Channels** \> **Retail stores** \> **Open statements**.
+    1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **Open statements**.
     2. Create a statement.
     3. Select **Calculate statement** and then **Post statement**.
 
 7. Validate the voucher transactions:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    1. Go to **Retail and Commerce** \> **Customers** \> **All sales orders**.
     2. Select the sales invoice.
     3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
     4. Select **Voucher**.
@@ -394,21 +394,21 @@ When you sell to unregistered customers, the sales are referred to as *business-
 
     ![Receipt example](media/apac-ind-gst-receipt-5.png)
 
-8. Validate the retail sales invoice in Retail headquarters:
+8. Validate the sales invoice in Headquarters:
 
-    1. Go to **Retail** \> **Retail IT** \> **Data distribution**.
+    1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Data distribution**.
     2. Run job **P-0001** (**Channel transactions**).
     3. Close the page.
 
 9. Post the statement:
 
-    1. Go to **Retail** \> **Channels** \> **Retail stores** \> **Open statements**.
+    1. Go to **Retail and Commerce** \> **Channels** \> **Stores** \> **Open statements**.
     2. Create a statement.
     3. Select **Calculate statement** and then **Post statement**.
 
 10. Validate the voucher transactions:
 
-    1. Go to **Retail** \> **Customers** \> **All sales orders**.
+    1. Go to **Retail and Commerce** \> **Customers** \> **All sales orders**.
     2. Select the sales invoice.
     3. On the Action Pane, on the **Invoice** tab, select **Invoice journals**.
     4. Select **Voucher**.
@@ -422,14 +422,14 @@ When you sell to unregistered customers, the sales are referred to as *business-
     5. Select **Tax document**.
     6. Verify that the return receipt number is updated as the transaction ID.
 
-## Update retail credit notes with references to original invoices
+## Update credit notes with references to original invoices
 
 > [!NOTE]
 > This functionality is available with Application update 10.0.3 and later.
 
-In order to be correctly reflected in the GSTR reporting, sales credit notes should contain references to original sales invoices. When retail store transactions are posted through retail statements, it is not always possible to establish this reference for retail return transactions. You can use the **Update credit notes with references to original invoices** procedure to update the **Original GST transaction ID** link in credit notes so that the link correctly references the related original sales invoice. The procedure is located on the **Retail > Retail IT > POS posting** menu.
+In order to be correctly reflected in the GSTR reporting, sales credit notes should contain references to original sales invoices. When  store transactions are posted through statements, it is not always possible to establish this reference for return transactions. You can use the **Update credit notes with references to original invoices** procedure to update the **Original GST transaction ID** link in credit notes so that the link correctly references the related original sales invoice. The procedure is located on the **Retail and Commerce > Retail and Commerce IT > POS posting** menu.
 
-It is also recommended that you enable the **Do not aggregate returns** parameter on the **Retail parameters** page. In this case, each return transaction will be posted as a separate sale order when posting a retail statement. This option is only available if the retail transaction aggregation is enabled.
+It is also recommended that you enable the **Do not aggregate returns** parameter on the **Commerce parameters** page. In this case, each return transaction will be posted as a separate sale order when posting a statement. This option is only available if the transaction aggregation is enabled.
 
 ## Manage customer registration numbers from POS
 
@@ -450,4 +450,4 @@ Add the custom fields to receipt profiles.
 
 ### Enable searching customers by tax registration numbers in POS
 
-To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Retail parameters** page, add a record on the **Customer search criteria** fast-tab and select **Tax registration number** in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the 1110 job on the **Distribution schedules** page.
+To enable searching customers by tax registration numbers in POS, on the **POS search criteria** tab of the **Commerce parameters** page, add a record on the **Customer search criteria** fast-tab and select **Tax registration number** in the **Customer search criteria** drop-down list. Select the **Display as shortcut** checkbox while keeping the **Can be refined** checkbox clear. Run the 1110 job on the **Distribution schedules** page.
