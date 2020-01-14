@@ -226,7 +226,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 
 The last steps require validation and verification that the Azure application ID (client ID) and key (secret) are correctly accepted in Headquarters, so that connections can be made between the environment and the new Commerce Scale Unit.
 
-1. After the application ID (client ID) and key (secret) are created for Commerce Scale Unit and entered in the installer, the application ID (client ID) must be accepted in Retail headquarters. 
+1. After the application ID (client ID) and key (secret) are created for Commerce Scale Unit and entered in the installer, the application ID (client ID) must be accepted in Headquarters. 
 
     In Headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
@@ -422,7 +422,7 @@ If the Commerce Scale Unit stops functioning after a period of time, there are t
 
 ### Uninstall Commerce Store system
 
-Use Control Panel in Microsoft Windows to uninstall Retail Store system.
+Use Control Panel in Microsoft Windows to uninstall Commerce Store system.
 
 1. Press the Windows logo key, and then enter **Control Panel** in the search box. In the search results, select **Control Panel**.
 2. In Control Panel, select **Programs** &gt; **Uninstall a program**.
