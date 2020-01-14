@@ -93,7 +93,7 @@ The following configuration settings are available in the Customization.settings
     - **ISV\_CommerceRuntime\_CustomizableFile** – Specify the details of all the customized CRT and dependent assemblies. You can have multiple entries, one for each assembly.
     
 > [!NOTE]
-> If the extension depends on Newtonsoft.Json.Portable or some other assemblies, then explicitly include it. Don’t assume that these assemblies will be included by default in the packaging or Retail server folder because the out-of-band (OOB) Commerce Scale Unit or CRT is using this. In the future, if the OOB functionalities don’t use these assemblies, it could be removed. As a result, you should always explicitly include all of the extension dependent assemblies in order to package and place them in the correct folder.
+> If the extension depends on Newtonsoft.Json.Portable or some other assemblies, then explicitly include it. Don’t assume that these assemblies will be included by default in the packaging or Commerce Scale Unit folder because the out-of-band (OOB) Commerce Scale Unit or CRT is using this. In the future, if the OOB functionalities don’t use these assemblies, it could be removed. As a result, you should always explicitly include all of the extension dependent assemblies in order to package and place them in the correct folder.
 
 **Example**
 
@@ -145,7 +145,7 @@ For more details about Channel database extensions, see [Channel database extens
 
 ## Update the extension configuration files
 
-If you have any new extensions in CRT, Retail Server, Hardware station, or proxy, you should register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
+If you have any new extensions in CRT, Commerce Scale Unit, Hardware station, or proxy, you should register the details of the extension assemblies in the \<composition\> section of the relevant extension configuration file. You can find all the extension configuration files in the ...\\RetailSDK\\Assets folder. Because all extensions are loaded based on the information in the extension configuration files, you must register your assemblies there.
 
 Before you do the package, you must update the following configuration files if you have any customization in that area:
 
@@ -199,15 +199,15 @@ Before you do the package, you must update the following configuration files if 
 
  **Example**
 
-    ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <retailProxyExtensions>
-        <composition>
-            <!-- Register your own proxy extension assemblies. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
-    </retailProxyExtensions>
-    ```
+```C#
+<?xml version="1.0" encoding="utf-8"?>
+<retailProxyExtensions>
+    <composition>
+        <!-- Register your own proxy extension assemblies. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
+</retailProxyExtensions>
+```
 
 ### Commerce Scale Unit extension assemblies
 
