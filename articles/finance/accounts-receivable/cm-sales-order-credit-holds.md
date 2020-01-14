@@ -273,6 +273,6 @@ Sales orders that have been forced on hold cannot be processed with workflow.
 Sales orders that have a forced hold reason cannot be released automatically. If the sales order was forced on hold and you have used a process that automatically releases sales orders, the sales order will show as **Ready to release** and remain in the hold list. You must use the **Release** menu to release the order.
  
 ## Free text invoices, retail orders, and project invoice support in Credit management 
-Credit management can only be used currently for sales orders. Free text invoices, retail point of sales orders and call center orders will will use the temporary credit limits and insurance/guarantees that you add to adjust the credit limit. They will not use the blocking rules and they will not be placed in the hold list if there is an issue with the credit limit.
+Credit management can only be used currently for sales orders. Free text invoices, retail point of sales orders and call center orders will use the temporary credit limits and insurance/guarantees that you add to adjust the credit limit. They will not use the blocking rules and they will not be placed in the hold list if there is an issue with the credit limit.
 
 There is no support for project invoices in credit management.
