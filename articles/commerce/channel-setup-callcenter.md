@@ -41,7 +41,7 @@ In Dynamics 365 Commerce, a call center is a type of retail channel that can be 
 
 Before you create a new call center channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
-## Create and configure new call center channel
+## Create and configure a new call center channel
 
 To create and configure a new call center channel, follow these steps.
 
