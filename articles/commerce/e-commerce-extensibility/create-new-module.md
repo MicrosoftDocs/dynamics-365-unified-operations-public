@@ -43,10 +43,10 @@ To create a new module in Commerce, the online Software Development Kit (SDK) pr
 
 ## Example
 
-The following example shows how to create a module that is named productFeature.
+The following example shows how to create a module that is named product-feature.
 
 ```
-yarn msdyn365 add-module productFeature
+yarn msdyn365 add-module product-feature
 ```
 
 It can take 20 to 30 seconds to create a module and generate all the template files for it. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
@@ -58,16 +58,16 @@ To preview the new module in a local web browser, follow these steps.
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
-    c:\repos\MyEcommerceSite\yarn start
+    c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=productFeature`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
+2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=product-feature`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 ![Module preview](media/create-new-module.png)
 
 ## Module naming conventions
 
-You should use camel case (camelCase) for module names. You should also use whole words whenever you can.
+Module name are not case sensitive. You should also use whole words whenever you can for module names.
 
 ## Additional resources
 
