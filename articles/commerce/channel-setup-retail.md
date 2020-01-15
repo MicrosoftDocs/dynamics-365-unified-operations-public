@@ -36,9 +36,8 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 
 ## Overview
-TBD
 
-Microsoft Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores).
+Microsoft Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
 
 Before a retail channel is created ensure you follow the [channel prerequisites](channels-prerequisites.md).
 
