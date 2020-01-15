@@ -33,7 +33,7 @@ To take advantage of advanced wave load building, you must include the `buildLoa
 1. Select **Edit** on the action pane to put the page into edit mode.
 1. In the **Methods** FastTab, select the **buildLoads** method from the **Remaining methods** table.
 1. Select the right-pointing arrow button between the tables to move the **buildLoads** method to the **Selected Methods** table.
-1. Assign a value in he **Wave step code** column for the **LoadBuild** method you just added to the **Selected Methods** table. You can choose any value you want, but take note of it because you'll need it later. More information: [Wave step codes](wave-step-codes.md)<BR>(If you're working with the **USMF** company demo data, you could enter "WSC2112", which is the value we'll show later in this topic.)
+1. Assign a value in the **Wave step code** column for the **LoadBuild** method you just added to the **Selected Methods** table. You can choose any value you want, but take note of it because you'll need it later. More information: [Wave step codes](wave-step-codes.md)<BR>(If you're working with the **USMF** company demo data, you could enter "WSC2112", which is the value we'll show later in this topic.)
 
 <!-- KFM: Anything more to say about how to pick a wave step code? -->
 
@@ -56,35 +56,42 @@ You can set up as many load build templates as you need, but to use this feature
 
 1. Go to **Warehouse Management** > **Setup** >  **Load** > **Wave load building templates**.
 1. Select **New** on the action pane to add a new row to the table here. Then make the settings described in the following table:
-    | Column | Description | **USMF** company demo value |
+    | Setting | Instructions | **USMF** company demo value |
     |--|--|--|
     | **Sequence** | <!-- KFM: What is this? --> | 1 |
-    | **Load build template name** | Enter the name of the template you created previously during this setup. <!-- KFM: Exact? Seems like get no help --> | 62 Shipping Default <!-- KFM: Or just "62" --> |
-    | **Wave step code** | Enter the code you chose for the LoadBuild method when you set up the wave template previously during this setup | WSC2112 |
-    | **Load template ID** | 
-
-1. Make the following settings:
-    - Sequence – 1
-    - Load build name – 62
-    - Wave step code – LoadBuild
-    - Load template ID – The load template that will be used for any loads that are created – Stnd Load Template
-    - Load mix group – Group that is used to determine what can or cannot be combined on a load – TV
-    - Use open loads – Controls what existing loads are allowed to be used – Any
-    - Create loads – Should the system create loads if it doesn't find one that matches the criteria? – Yes
-    - Allow shipment line split – Can a single line be split across multiple loads if the full line exceeds the load capacity? – No
-    - Validate volumetrics – Controls if the volumetric limits of the load template should be evaluated - No
-1. Open the **Edit Query** for the template, and in the sorting table, add sorting on Load details – Order number – Ascending.
-1. In the **Break by** grid, select the **Break by** check box for the Load details – Order number record.
-
-This will create one load per order number. Generally, this functionality is used to break on custom fields that have been extended onto the load line, such as Route, Tour, Run, etc.
+    | **Load build template name** | Enter the name of the template you created or updated previously during this setup. <!-- KFM: Exact? Seems like I get no help --> | 62 Shipping Default <!-- KFM: Or just "62" --> |
+    | **Wave step code** | Enter the code you chose for the LoadBuild method when you set up the wave template previously during this setup <!-- KFM: Exact? Looks like a drop-down but offers no values --> | WSC2112 |
+    | **Load template ID** | The load template defines maximum weight and volume permitted for the entire load. Select the load template to use for any loads that are created.   <!-- Seems like we have no documentation about load templates. --> | Stnd Load Template |
+    | **Equipment** | <!-- KFM: This setting is offered, but you didn't mention it. Should we? --> |  |
+    | **Load mix group ID** | The mix group establishes rules for which types of items can can't be combined in a single load. Select one of the mix groups that you created previously during this setup. | TV |
+    | **Use open loads** | Choose whether to allow existing loads to be used (any or none) | Any |
+    | **Create loads** | Choose whether to create a new load if no existing loads match the criteria. <!-- KFM: Which criteria? What happens if this is "no" and we don't have a match? --> | Yes (selected) |
+    | **Allow shipment line split** | Choose whether to allow a single line to be split across multiple loads if the full line exceeds the load capacity. <!-- KFM: What happens if this is "no" and we are over capacity? --> | No (unselected) |
+    | **Validate volumetrics** | Choose whether to evaluate the volumetric limits of the specified load template. <!-- KFM: Does the load template do anythign if this is set to "no"? What happens if this is "yes" and the check fails? --> | No (unselected) |
+1. Select **Edit query** on the action pane to open a flyout for editing the query.
+1. Open the **Sorting** tab in the flyout and select the **Add** button to add a new row here. Configure the row to define the sorting rules you want to use, for example by entering the following: <!-- KFM: It's not clear to me what we are doing here. -->
+    - **Table**: Load details
+    - **Derived table**: Load details
+    - **Field**: Order number
+    - **Search direction**: Ascending
+1. Select **OK** to save your changes and close the flyout.
+1. In the **Break by** FastTab, set rules to control how your loads will be split up. You might typically use this to break on custom fields that have been extended onto the load line, such as Route, Tour, Run, etc. For example, to create one load per order number, select the **Break by** check box for the row with the following values:
+    - **Reference table name**: Load details
+    - **Reference field name**: Order number
 
 ## Example scenario
 
-<!-- Add intro. What does this scenario demonstrate? What will we do here? -->
+This scenario shows how the settings described in this topic will affect warehouse operations while processing a sales order. This scenario uses the **USMF** company demo data combined with other demo values provided in these setup instructions.
 
-Navigate to _Sales and Marketing_ _-_ _Common - Sales order - All sales orders_ and create a new sales order. Select customer US-007 and warehouse 62.
+1. Go to **Sales and Marketing** > **Sales orders** >  **All sales orders**.
+1. Select **New** on the action pane to open a flyout for creating a new sales order.
+1. In the flyout, make the following settings:
+    - On the **Customer** FastTab, set **Customer account** to "US-007".
+    - On the **General** FastTab, set **Warehouse** to "62". 
+1. Select **OK** to create the sales order and close the flyout.
 
-<!-- KFM: I can't find this path--maybe "common" doesn't exist? Where does this sample data come from? -->
+
+
 
 Add a line and specify item A0001, quantity 1. Click on Inventory – Reservation and reserve inventory to the line. Click on Release to warehouse in the Warehouse _-_ Actions section of the ribbon. A shipment will be created, and added to a new load, as there is no existing load containing load lines with this order number.
 
