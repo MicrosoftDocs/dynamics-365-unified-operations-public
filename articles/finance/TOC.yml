@@ -202,6 +202,8 @@
           href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
         - name: Key invoice data into the AP system using invoice pool
           href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+        - name: Copy vendors by using shared number sequences
+          href: accounts-payable/vendor-copy.md
         - name: Record a vendor invoice in the invoice journal
           href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
       - name: Audit invoices and key data in accounts payable
