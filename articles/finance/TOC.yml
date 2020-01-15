@@ -600,6 +600,8 @@
         href: expense-management/expense-workflows.md
       - name: Expense management workflow
         href: expense-management/expense-workflow.md
+      - name: Expense receipt processing
+        href: expense-management/expense-receipt-processing.md
       - name: Import and maintain credit card transactions
         href: expense-management/import-credit-card.md
       - name: Distributions on an expense report
