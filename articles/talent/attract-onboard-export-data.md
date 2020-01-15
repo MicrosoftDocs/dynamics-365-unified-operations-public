@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Talent October 2019 update
 
 [!include [banner](includes/banner.md)]
 
-As announced in [Retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps), we're retiring Attract and Onboard on February 1, 2022. To help with your migration to another product, both apps now provide data export capabilities.
+As announced in [Retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps), we're retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard on February 1, 2022. To help with your migration to another product, both apps now provide data export capabilities.
 
 ## Export data from Attract
 
-For testing purposes, you can export your data without restricting access to your environment. When you're ready to migrate, restrict access to your Attract environment using the instructions after this procedure. Be sure to export your data again. 
+You can export your data without restricting access to your environment. You might want to do this for testing purposes or to understand our data structure. When you're ready to migrate, restrict access to your Attract environment using the instructions after this procedure. Be sure to export your data again. 
 
 1. Go to [https://aka.ms/AttractDataExport](https://aka.ms/AttractDataExport).
 
@@ -51,23 +51,23 @@ For testing purposes, you can export your data without restricting access to you
 4. When your export completes, select the **Download** button next to it. 
 
    >[!NOTE]
-   >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
-   >When you start a new data export, any existing downloads will expire after the new export succeeds.
+   >All data exports are available for seven days, at which point the **Download** link expires.</br>
+   
+The download contains a .zip file with your Attract data, including the following folders:
 
-The download contains a .zip file with your Attract data, including:
-
-- Admin settings
-- Candidates
-- Email templates
-- Job offer package templates
-- Job offer rule sets
-- Job offer templates
-- Job openings
-- Job opening templates
-- Talent pools
-- Workers
-- A JSON schema file that describes the data structure fields
-- Any attachments associated with candidates and applications
+| Folder name | Description |
+| --- | --- |
+| Admin settings | Attract admin center configurations |
+| Candidates | All candidates that were added to jobs or talent pools |
+| Email templates | All email templates that were configured for the environment |
+| Job offer package templates | All job offer package templates that were created, plus their associated configurations |
+| Job offer rule sets |  All rule set files that were uploaded for offer management |
+| Job offer templates | All job offer document templates created for the environment |
+| Job openings | All created jobs. Deleted jobs aren't exported. The sub-folders contain candidate applications, with sub-folders for candidate application attachments and offer packages, where applicable. |
+| Job opening templates | Job process templates that were configured in the environment |
+| Talent pools | All created talent pools, their contributors list, and the candidates lists for the talent pools. |
+| Workers | List of all the workers who are present in the environment, plus their roles. |
+| (root folder) | A JSON schema file that describes the data structure fields |
 
 ### Restrict access to Attract
 
@@ -85,6 +85,9 @@ When you're ready to migrate, restrict non-admins from accessing your Attract en
 3. When you see the warning **This is a permanent change**, select **Restrict access** to permanently restrict non-admin users from this environment. If you're not ready to complete this step, select **Cancel**.
 
    ![[Warning that restricting access is a permanent change](./media/attract-onboard-export-data-attract-warning.png)](./media/attract-onboard-export-data-attract-warning.png)
+
+   >[!NOTE]
+   >Admins can continue to access the data export and person report pages after you restrict access to the Attract environment.
 
 ## Export data from Onboard
 
