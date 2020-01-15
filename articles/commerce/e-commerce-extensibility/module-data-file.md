@@ -63,6 +63,8 @@ export interface IProductFeatureData {
 
 [Module definition file](module-definition-file.md)
 
+[Module React component file](module-react-file.md)
+
 [Module view file](module-view-file.md)
 
 [Module mock file](module-mock-file.md)
