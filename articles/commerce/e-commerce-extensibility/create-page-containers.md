@@ -43,7 +43,7 @@ Like layout container modules, page container modules can define *named slots* t
 
 ## Create a new page container module
 
-The Online Software Development Kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule**.
+The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule**.
 
 For example, run the following command to create a module that is named **campaign-page-container**:
 
