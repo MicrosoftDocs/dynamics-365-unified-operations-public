@@ -34,11 +34,11 @@ ms.dyn365.ops.version: Talent October 2019 update
 
 [!include [banner](includes/banner.md)]
 
-As announced in [Retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps), we are retiring Attract and Onboard on February 1, 2022. To help with your migration to another product, both apps now provide data export capabilities.
+As announced in [Retiring Dynamics 365 Talent: Attract and Dynamics 365 Talent: Onboard Apps](https://community.dynamics.com/365/talent/b/dynamics365fortalent/posts/retiring-dynamics-365-talent-attract-and-onboard-apps), we're retiring Attract and Onboard on February 1, 2022. To help with your migration to another product, both apps now provide data export capabilities.
 
 ## Export data from Attract
 
-For testing purposes, you can export your data without restricting access to your environment. When you're ready to migrate, restrict access to your Attract environment using the instructions after this procedure, and then export your data again. 
+For testing purposes, you can export your data without restricting access to your environment. When you're ready to migrate, restrict access to your Attract environment using the instructions after this procedure. Be sure to export your data again. 
 
 1. Go to [https://aka.ms/AttractDataExport](https://aka.ms/AttractDataExport).
 
@@ -78,11 +78,11 @@ When you're ready to migrate, restrict non-admins from accessing your Attract en
 
 1. Go to [https://aka.ms/AttractDataExport](https://aka.ms/AttractDataExport).
 
-2. To restrict non-admins from accessing your Attract environment, under **Restrict access to this app**, select **Restrict access now**. This also unposts any active jobs that have been posted.
+2. To restrict non-admins from accessing your Attract environment, under **Restrict access to this app**, select **Restrict access now**. Restricting access also unposts any active jobs that have been posted.
 
   ![[Restrict non-admin access to Attract](./media/attract-onboard-export-data-attract-restrict-access.png)](./media/attract-onboard-export-data-attract-restrict-access.png)
 
-3. When the **This is a permanent change** message box appears, select **Restrict access** to permanently restrict non-admin users from this environment. If you're not ready to complete this step, select **Cancel**.
+3. When you see the warning **This is a permanent change**, select **Restrict access** to permanently restrict non-admin users from this environment. If you're not ready to complete this step, select **Cancel**.
 
   ![[Warning that restricting access is a permanent change](./media/attract-onboard-export-data-attract-warning.png)](./media/attract-onboard-export-data-attract-warning.png)
 
@@ -106,7 +106,7 @@ When you're ready, you can download templates, guides, and candidate data from O
   >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
   >When you start a new data export, any existing downloads will expire after the new export succeeds.
 
-The download is a .zip file that contains the following:
+The download is a .zip file that contains:
 
 - A **Templates** folder that contains your Onboard templates in Word document format.
 
