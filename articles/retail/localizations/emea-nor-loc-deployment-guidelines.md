@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway
-description: This topic is a deployment guide for the Retail localization for Norway.
+description: This topic is a deployment guide for the Commerce localization for Norway.
 author: AlexChern0v
 manager: olegkl
 ms.date: 07/08/2019
@@ -32,14 +32,17 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Retail localization for Norway. The localization consists of several extensions of Retail components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the Retail localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
+This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
 
-This sample is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+This sample is part of the Retail software development kit (SDK). For information about the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE]
-> Some steps in the procedures in this topic differ, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
+> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
+
+> [!NOTE]
+> Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 
 ## Development environment
 
@@ -1227,13 +1230,13 @@ Complete the following procedure only if you're using Retail 7.3.1 and later.
 6. Run the solution by using the **Run** command and following the steps in the Retail SDK handbook.
 7. Test the functionality.
 
-### Set up required parameters in Retail headquarters
+### Set up required parameters in Headquarters
 
 For more information, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
 
 ## Production environment
 
-Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
@@ -1310,7 +1313,7 @@ Follow these steps to create deployable packages that contain Retail components,
 
         ---
 
-    2. Enable Retail Proxy customization:
+    2. Enable Commerce Proxy customization:
 
         # [Application update 4](#tab/app-update-4)
 
@@ -1550,7 +1553,7 @@ Follow these steps to create deployable packages that contain Retail components,
         ``` xml
         <<File_name> Include="$(SdkReferencesPath)\nb-NO\*" />
         ```
-    > [Note]
+    > [!Note]
     > Instead of the <File_name> specify a name of the resource file. The same is relevant for the other examples given below.
  
     - Add line to the **Target Name="CopyPackageFiles"** section
