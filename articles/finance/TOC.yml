@@ -202,6 +202,8 @@
           href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
         - name: Key invoice data into the AP system using invoice pool
           href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
+        - name: Copy vendors by using shared number sequences
+          href: accounts-payable/vendor-copy.md
         - name: Record a vendor invoice in the invoice journal
           href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
       - name: Audit invoices and key data in accounts payable
@@ -414,6 +416,8 @@
         href: budgeting/create-budget-transaction-accounts-total-accounts.md
       - name: Budget planning templates for Excel
         href: budgeting/budget-planning-excel-templates.md
+      - name: Extend the budget planning layout
+        href: budgeting/extending-budget-planning-layout.md
       - name: Position budgeting troubleshooting
         href: budgeting/position-budgeting-set-up-issues.md
       - name: Budget planning
@@ -596,6 +600,8 @@
         href: expense-management/expense-workflows.md
       - name: Expense management workflow
         href: expense-management/expense-workflow.md
+      - name: Expense receipt processing
+        href: expense-management/expense-receipt-processing.md
       - name: Import and maintain credit card transactions
         href: expense-management/import-credit-card.md
       - name: Distributions on an expense report
@@ -960,6 +966,8 @@
         href: public-sector/forecast-positions.md
       - name: Forecast position reports in the public sector
         href: public-sector/forecast-position-reports.md
+      - name: Set up and run the Cash position inquiry
+        href: public-sector/cash-position-inquiry-setup.md
       - name: Accounts payable in the public sector
         items:
         - name: Accounts payable in the public sector overview
