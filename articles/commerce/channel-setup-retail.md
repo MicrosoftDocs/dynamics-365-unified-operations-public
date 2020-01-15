@@ -44,20 +44,20 @@ Before a retail channel is created ensure you follow the [channel prerequisites]
 
 ## Create and configure a new retail channel
 
-* Go to **Navigation pane \> Modules \> Channels \> Retail stores \> All retail stores**.
-* On the **Action pane**, select **New**.
-* In the **Name** field, provide a name for the new channel.
-* In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
-* In the **Legal entity** drop-down list, enter the appropriate legal entity.
-* In the **Warehouse** drop-down list, enter the appropriate warehouse.
-* In the **Store time zone** field, select the appropriate time zone.
-* In the **Sales tax group** drop-down list, select an appropriate sales tax group for the store.
-* In the **Currency** field, select the appropriate currency.
-* In the **Customer address book** field, provide a valid address book.
-* In the **Default customer** field, provide a valid default customer.
-* In the **Functionality profile** field, select a functionality profile if applicable.
-* In the **Email notification profile** field, provide a valid email notification profile.
-* On the **Action pane**, select **Save**.
+1. Go to **Navigation pane \> Modules \> Channels \> Retail stores \> All retail stores**.
+1. On the **Action pane**, select **New**.
+1. In the **Name** field, provide a name for the new channel.
+1. In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
+1. In the **Legal entity** drop-down list, enter the appropriate legal entity.
+1. In the **Warehouse** drop-down list, enter the appropriate warehouse.
+1. In the **Store time zone** field, select the appropriate time zone.
+1. In the **Sales tax group** drop-down list, select an appropriate sales tax group for the store.
+1. In the **Currency** field, select the appropriate currency.
+1. In the **Customer address book** field, provide a valid address book.
+1. In the **Default customer** field, provide a valid default customer.
+1. In the **Functionality profile** field, select a functionality profile if applicable.
+1. In the **Email notification profile** field, provide a valid email notification profile.
+1. On the **Action pane**, select **Save**.
 
 The following image shows
 
@@ -86,14 +86,14 @@ The following image shows
 
 ### Set up payment methods
 
-* On the **Action pane**, select the **Set Up** tab and click **Payment methods**.
+1. On the **Action pane**, select the **Set Up** tab and click **Payment methods**.
 
 For each payment type supported on this channel do the following:
-* On the **Action pane**, select **New**.
-* Select an appropriate **Payment method**.
-* In the **General** section provide an **Operation name** and set any other desired settings.
-* Configure any additional settings as required for the payment type.
-* Select **Save**.
+1. On the **Action pane**, select **New**.
+1. Select an appropriate **Payment method**.
+1. In the **General** section provide an **Operation name** and set any other desired settings.
+1. Configure any additional settings as required for the payment type.
+1. Select **Save**.
 
 The following image shows
 
@@ -101,8 +101,8 @@ The following image shows
 
 ### Set up Cash declaration
 
-* On the **Action pane**, select the **Set Up** tab and click **Cash declaration**.
-* On the **Action pane**, select **New** and create all **Coin** and **Note** denominations that are applicable.
+1. On the **Action pane**, select the **Set Up** tab and click **Cash declaration**.
+1. On the **Action pane**, select **New** and create all **Coin** and **Note** denominations that are applicable.
 
 The following image shows
 
@@ -112,50 +112,53 @@ The following image shows
 
 By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane** you can see the configured modes of delivery.  To change or add a mode of delivery follow the below steps.
 
-* Go to **Navigation pane** > **Modules** > **Invetory management** > **Modes of delivery**.
-* On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
-* In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
+1. Go to **Navigation pane** > **Modules** > **Invetory management** > **Modes of delivery**.
+1. On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
+1. In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
 
 The following image shows
 
 ![Set up modes of delivery](media/channel-setup-retail-7.png)
 
 ### Set up Income/Expense account
-* On the **Action pane**, select the **Set Up** tab and click **Income/Expense account**.
-* On the **Action pane**, select **New**.
-* Provide a **Name** and **Search name**.
-* Select the **Account type**.
-* Provide a **Message line 1**, **Message line 2**, **Slip text 1** and **Slip text 2** as needed.
-* Fill out **Posting** information.
-*  On the **Action pane**, select **Save**.
+1. On the **Action pane**, select the **Set Up** tab and click **Income/Expense account**.
+1. On the **Action pane**, select **New**.
+1. Provide a **Name** and **Search name**.
+1. Select the **Account type**.
+1. Provide a **Message line 1**, **Message line 2**, **Slip text 1** and **Slip text 2** as needed.
+1. Fill out **Posting** information.
+1. On the **Action pane**, select **Save**.
 
 The following image shows
 
 ![Set up income/expense accounts](media/channel-setup-retail-8.png)
 
 ### Set up Sections
-* On the **Action pane**, select the **Set Up** tab and click **Sections**.
-* On the **Action pane**, select **New**.
-* Provide a **Section number** and **Description** and **Section size**.
-* Additional configurations can be set in the **General** and **Sales statistics** sections.
-*  On the **Action pane**, select **Save**.
+
+1. On the **Action pane**, select the **Set Up** tab and click **Sections**.
+1. On the **Action pane**, select **New**.
+1. Provide a **Section number** and **Description** and **Section size**.
+1. Additional configurations can be set in the **General** and **Sales statistics** sections.
+1. On the **Action pane**, select **Save**.
 
 ### Set up fulfillment group assignment
-* On the **Action pane**, select the **Set Up** tab and click **Fulfullment group assignment**.
-* On the **Action pane**, select **New**.
-* Select a **Fulfillment group**.
-* Provide a **Description**.
-* On the **Action pane**, select **Save**.
+
+1. On the **Action pane**, select the **Set Up** tab and click **Fulfullment group assignment**.
+1. On the **Action pane**, select **New**.
+1. Select a **Fulfillment group**.
+1. Provide a **Description**.
+1. On the **Action pane**, select **Save**.
 
 The following image shows
 
 ![Set up fulfillment group assignments](media/channel-setup-retail-9.png)
 
 ### Set up Safes
-* On the **Action pane**, select the **Set Up** tab and click **Safes**.
-* On the **Action pane**, select **New**.
-* Provide a name for the safe
-*  On the **Action pane**, select **Save**.
+
+1. On the **Action pane**, select the **Set Up** tab and click **Safes**.
+1. On the **Action pane**, select **New**.
+1. Provide a name for the safe
+1. On the **Action pane**, select **Save**.
 
 ## Additional resources
 
