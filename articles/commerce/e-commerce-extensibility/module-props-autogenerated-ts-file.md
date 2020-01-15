@@ -55,7 +55,7 @@ export const enum imageAlignment {
     right = 'right'
 }
 
-export interface IProductFeatureConfig {
+export interface IProductFeatureConfig extends Msdyn365.IModuleConfig {
     imageAlignment?: imageAlignment;
     productTitle?: string;
     productDetails?: Msdyn365.RichText;
@@ -64,7 +64,12 @@ export interface IProductFeatureConfig {
     productIds?: string;
 }
 
+export interface IProductFeatureResources {
+    resourceKey: string;
+}
+
 export interface IProductFeatureProps<T> extends Msdyn365.IModule<T> {
+    resources: IProductFeatureResources;
     config: IProductFeatureConfig;
 }
 ```
@@ -72,6 +77,8 @@ export interface IProductFeatureProps<T> extends Msdyn365.IModule<T> {
 ## Additional resources
 
 [Module definition file](module-definition-file.md)
+
+[Module React component file](module-react-file.md)
 
 [Module view file](module-view-file.md)
 
