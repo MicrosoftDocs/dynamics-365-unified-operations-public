@@ -50,7 +50,7 @@ Select the purchase agreement in the list. Alternatively, click New, and include
 
 ## Purchase order: Edit lead time for a line
 
-Lead time details entered for a line in the Purchase agreement page appear in the Lead time group for a purchase order. You can edit lead time details for an unconfirmed purchase order. Alternately, click New, and include this information when you enter a new purchase  order.
+Lead time details entered for a line in the **Purchase agreement** page appear in the Lead time group for a purchase order. You can edit lead time details for an unconfirmed purchase order. Alternately, click **New**, and include this information when you enter a new purchase  order.
 
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders** list page (or other list page).
 Select the purchase order in the list. Alternatively, click **New** and include this information when you create a new purchase order.
