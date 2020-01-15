@@ -123,7 +123,7 @@ To set up a fulfillment group assignment, follow these steps.
 1. In the **Description** drop-down list, enter a description.
 1. On the **Action pane**, select **Save**.
 
-The following image shows an example of setting up a fulfillment group assignment.
+The following image shows an example of a fulfillment group assignment setup.
 
 ![Set up fulfillment group assignment](media/channel-setup-retail-9.png)
 
