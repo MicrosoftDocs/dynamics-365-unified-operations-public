@@ -149,7 +149,7 @@ Ensure the charges code that will be used in this scenario has been properly con
 
 If the charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, set **Shipping charge** on the charges code to **Yes**. If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, set **Refundable** to **Yes**. The **Refundable** flag is only applicable when the **Use advanced auto-charges** parameter is set to **Yes**.
 
-Send the charges to the Retail Server/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
+Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
 The **Add header charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 141). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
 
