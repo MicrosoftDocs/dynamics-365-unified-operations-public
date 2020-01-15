@@ -41,35 +41,65 @@ Dynamics 365 Commerce lets you apply a theme to your whole online site, and also
 
 After a theme is created and uploaded to your production site, you can use authoring tools to set the theme on the site. Themes can be set in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. In this way, all the modules on the page have a consistent look and feel.
 
-## Create the theme directory and theme file
+## Create a new theme
 
-To create a new theme, follow these steps.
+To create a new theme in Commerce, the online Software Development Kit (SDK) provides the **add-theme** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to give to the new module. 
 
-1. Under the **/src/themes** directory, create a directory. Use the local name of the theme as the name.
-1. In the new directory, create a **\*.theme.scss** file. Use the local name of the theme as the name.
+**yarn msdyn365 add-theme THEME\_NAME**
 
-For example, to create a new theme that is named **spring**, follow these steps.
+### Example
 
-1. Under the **/src/themes/** directory, create a directory that is named **spring**.
-1. In the **/src/themes/spring** directory, create a file that is named **spring.theme.scss**.
-
-The following example shows a theme file that pulls in Bootstrap and FontAwesome dependencies.
+The following example shows how to create a theme that is named spring-theme.
 
 ```
-$fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
-@import "bootstrap/scss/bootstrap";
-body {
-    background: purple;
-    color: yellow;
+yarn msdyn365 add-theme spring-theme
+```
+
+The new theme will be created in a new directory under the `...\src\themes` directory, for example the above theme would be created under the `...\src\themes\spring-theme` directory.  
+
+### Theme naming conventions
+
+Theme name are not case sensitive. Theme friendly names and descriptions can be added to the theme definition file found under the new theme directory
+
+## Theme definition file
+A theme is created as a special module.  Each theme will contain a theme definition json file, which contains the theme friendly name and description. The $type property will be set to "themeModule".
+
+Below shows a sample theme definition file.
+
+```json
+{
+    "$type": "themeModule",
+    "friendlyName": "Spring theme",
+    "name": "spring-theme",
+    "description": "This is default theme."
 }
 ```
 
-### Naming convention
+## Theme styles
+SCSS files are stored under the **...\src\themes\THEME_NAME\styles** directory.  By default, you will find a **THEME\_NAME.theme.scss** file which is the entry point SCSS file, any additional SCSS files and directories can be added here as needed.
 
-Themes are registered as **THEMENAME.theme.scss**, where **THEMENAME** is the local name of your theme. In the app.settings.json file, you provide the friendly name for your theme. This friendly name will appear in the authoring tools.
+Example **...\src\themes\spring-theme\styles\spring-theme.theme.scss**
+
+## Theme view extensions
+View extensions are stored under the **...\src\themes\views** directory and follow a similar naming pattern as used for module views **MODULE\_NAME.view.tsx** (example **product-feature.view.tsx**).  View extensions can be written exactly like a module view used for a module, the react component will just call the extension instead of the default one if it exists in a selected theme.
+
+In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy/paste code into it.  To see the module view source code, open up the **...\node_modules\@msdyn365-commerce-modules\** directory and look for the module you are interested in.  
+
+### Adding a view extension
+To create a new view extension in Commerce, the online Software Development Kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to add the view extension to and replace **MODULE\_NAME** with the name of the module you are extending.
+
+```yarn msdyn365 add-view-extension THEME_NAME MODULE_NAME```
+
+The below example will add a new “product-feature.view.ts” file under the spring-theme’s view directory.
+
+```yarn msdyn365 add-view-extension spring-theme product-feature```
+
+## Theme definition extensions
+TBD
+### Adding a theme definition file
+TBD
 
 ## Test a theme
-
 You can easily test a theme in your development environment by using the **?theme=THEME\_NAME** query string parameter.
 
 To test your theme, follow these steps.
@@ -77,40 +107,12 @@ To test your theme, follow these steps.
 1. At a command prompt, under the directory of your local code repository, run **yarn start**. 
 1. In a web browser, load a module test page, and add the **?theme=THEME\_NAME** query string parameter. Here is an example.
 
-    `https://localhost:4000/modules?type=campaignBanner&theme=spring`
+    `https://localhost:4000/modules?type=product-feature&theme=spring-theme`
 
-## Surface a theme in the authoring tools
+If your .env file MSDyn365_HOST entry is pointint to your production site, you can also preview your site with a custom theme to do this navigate to the below URL.
 
-For a theme to appear in the theme selector in the authoring tools, the \\src\\settings\\app.settings.json file must include a **themes** entry that specifies the friendly name of the theme. The following example shows an entry for a theme that is named **spring**.
+```https://localhost:4000?theme-spring-theme```
 
-```json
-{
-    "config":{
-        "logoUrl":{
-            "type": "image",
-            "friendlyName": "Logo Image",
-            "description": "Logo Image"
-        }
-    },
-    "routes": {
-        "cart": {
-            "friendlyName": "Cart Page Route",
-            "description": "Cart Page Route",
-            "default": "/cart2"
-        },
-        "checkout": {
-            "friendlyName": "Checkout Page Route",
-            "description": "Checkout Page Route",
-            "default": "/checkout"
-        }
-    },
-    "themes": {
-        "spring":{
-            "friendlyName": "Spring Theme"
-        }
-    }
-}
-```
 ## Additional resources
 
 [Theming overview](theming.md)
