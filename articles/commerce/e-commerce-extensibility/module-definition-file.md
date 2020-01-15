@@ -96,7 +96,7 @@ Here is an example of a module definition file.
 
 A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for a image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Microsoft Dynamics 365 Retail product data.
 
-The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configs can be scoped per module or global such that they can be set at the site level and used across modules, an example for global usage might be an API key for an external service that multiple modules rely on. 
+The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configs can be scoped per module instance or globally across all instances of the module.
 
 ## Module definition schema
 
