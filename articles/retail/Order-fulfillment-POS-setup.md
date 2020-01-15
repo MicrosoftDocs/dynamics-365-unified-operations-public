@@ -60,7 +60,7 @@ Be default, order lines assigned to a store are marked as **Accepted**. This mea
 
 Order lines for store pickup are marked as **Pending** and are not subject to acceptance.
 
-To turn on manual acceptance for order lines, navigate to **Retail** \> **Channels** \> **Retail stores** \> **All retail stores**. Select the store and click in the store ID to view the store's details. Click **Edit**. On the **General** FastTab, locate the **Order fulfillment** subheader and change **Manual accept** from **No** to **Yes**.
+To turn on manual acceptance for order lines, navigate to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**. Select the store and click in the store ID to view the store's details. Click **Edit**. On the **General** FastTab, locate the **Order fulfillment** subheader and change **Manual accept** from **No** to **Yes**.
 
 ### Enable reject order line capability
 
@@ -71,7 +71,7 @@ Order lines can also be rejected from the point of sale. Rejecting an order line
 
 ### Synchronize changes to the channel database
 
-After the operation has been assigned to a button grid, the proper permissions have been assigned, and the channel is configured, the changes must be synchronized to the channel database. To do so, navigate to **Retail** \> **Retail IT** \> **Distribution schedule**. Select schedule "1090-Registers" to sync button grid changes and then click **Run now**. Next, sync permissions changes by selecting "1060-Staff" and then click **Run now**. Next, sync channel changes by selecting "1070-Channel configuration" and click **Run now**. Finally, sync the newly created info code for reject reason by selecting the "1110-Global configuration" and click **Run now**.
+After the operation has been assigned to a button grid, the proper permissions have been assigned, and the channel is configured, the changes must be synchronized to the channel database. To do so, navigate to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**. Select schedule "1090-Registers" to sync button grid changes and then click **Run now**. Next, sync permissions changes by selecting "1060-Staff" and then click **Run now**. Next, sync channel changes by selecting "1070-Channel configuration" and click **Run now**. Finally, sync the newly created info code for reject reason by selecting the "1110-Global configuration" and click **Run now**.
 
 ## Use order fulfillment at the point of sale
 
