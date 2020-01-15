@@ -21,22 +21,22 @@ The ability to calculate delivery dates and the calendar to use must be set up i
 4. In the **Select calendar to determine working days** field, select the calendar to indicate the days your agency is open.
 5. Click **Save** to save the changes. 
 The **Lead time** group now appears in the **Purchase requisitions** page, **Purchase order** page, and **Purchase agreements**.
-Users can now enter or update delivery dates by using the Lead time group in forms.
+
 
 ## Purchase requisition: Edit lead time for a line
 
-Lead time details that a vendor has entered for a line in the Request for quotation reply form appear in the Lead time group for a purchase requisition. You can enter or edit the lead time details for a purchase requisition line.
+Lead time details that a vendor has entered for a line in the Request for quotation reply page appear in the Lead time group for a purchase requisition. You can enter or edit the lead time details for a purchase requisition line.
 
 1. Go to **Procurement and sourcing > Purchase requisitions > All purchase requisitions** (or other list page), and then select the purchase requisition in the list. Alternatively, click **New** on the Action Pane, and include this information when you enter a new purchase requisition.
 2. Click the **Purchase requisition lines** FastTab, select a line, and then on the Action strip, click **Details**.
-3. In the **Purchase requisition line details** form, on the **Details** FastTab, enter delivery date details in the Lead time group. 
+3. In the **Purchase requisition line details** page, on the **Details** FastTab, enter delivery date details in the Lead time group. 
 4. In the **Lead time** field, enter the number of days required for lead time.
 5. To limit the lead time calculation to business days rather than all calendar days, set the **Working days** option to **Yes**.
 6. Click **Save** to save the changes. The lead time values for the purchase requisition line are carried over when a purchase order is created.
 
 ## Purchase agreement: Edit lead time for a line
 
-Lead time details entered for a line in the Purchase requisition form appear in the Lead time group on a purchase agreement. You can edit an existing unapproved purchase agreement or include the lead time details for a new purchase agreement. The lead time values for the purchase agreement lines are carried over when a purchase order is created.
+Lead time details entered for a line in the Purchase requisition page appear in the Lead time group on a purchase agreement. You can edit an existing unapproved purchase agreement or include the lead time details for a new purchase agreement. The lead time values for the purchase agreement lines are carried over when a purchase order is created.
 
 1. Go to **Procurement and sourcing > Purchase orders > Purchase agreements**.
 Select the purchase agreement in the list. Alternatively, click New, and include this information when you enter a new purchase agreement.
@@ -50,13 +50,12 @@ Select the purchase agreement in the list. Alternatively, click New, and include
 
 ## Purchase order: Edit lead time for a line
 
-Lead time details entered for a line in the Purchase agreement form appear in the Lead time group for a purchase order. You can edit lead time details for an unconfirmed purchase order. Alternately, click New, and include this information when you enter a new purchase  order.
+Lead time details entered for a line in the Purchase agreement page appear in the Lead time group for a purchase order. You can edit lead time details for an unconfirmed purchase order. Alternately, click New, and include this information when you enter a new purchase  order.
 
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders** list page (or other list page).
 Select the purchase order in the list. Alternatively, click **New** and include this information when you create a new purchase order.
 2. In the **Purchase order** page, on the Action Pane, on the **Maintain** tab, click **Edit**.
 3. On the **Line details** FastTab, on the **Delivery*8 tab, in the **Lead time** group, view the calculated delivery date (**Delivery date** field). 
 4. In the **Lead time** field, edit the number of days required for lead time.
-5. To use only business days to calculate the delivery date, set the **Working days check box to **Yes**. The delivery date will update when the purchase order is confirmed based on the lead time specified when the purchase order is confirmed.
-Optional: To view the delivery date for the line if you confirmed the purchase order today, on the Action Pane, on the Purchase tab, click **Calculate > Delivery dates** to calculate for all lines in the purchase order.
+5. To use only business days to calculate the delivery date, set the **Working days** check box to **Yes**. The delivery date will update when the purchase order is approved and confirmed based on the lead time specified.
 6. Click **Save** to save the changes.
