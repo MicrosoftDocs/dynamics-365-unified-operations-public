@@ -46,14 +46,14 @@ To preview a module in a local web browser, follow these steps.
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
-    c:\repos\MyEcommerceSite\yarn start
+    c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-1. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=productFeature`. Notice the module name in the **type=MODULE\_NAME** query string parameter. This parameter is shorthand for **type=:MODULE\_NAME:MOCK\_FILE\_NAME**, where the default mock file that matches the name of the module is loaded. Therefore, the preceding URL is equivalent to `https://localhost:4000/modules?type=productFeature:productFeature`.
+1. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=product-feature`. Notice the module name in the **type=MODULE\_NAME** query string parameter. This parameter is shorthand for **type=:MODULE\_NAME:MOCK\_FILE\_NAME**, where the default mock file that matches the name of the module is loaded. Therefore, the preceding URL is equivalent to `https://localhost:4000/modules?type=product-feature:product-feature`.
 
-By adding **&debug=true**, you can get more verbose debug information in the Yarn output window.
+By adding **&debug=true**, you can get more verbose debug information in the Yarn output window and will display error details in the browser if they occur.
 
-`https://localhost:4000/modules?type=productFeature&debug=true`
+`https://localhost:4000/modules?type=product-feature&debug=true`
 
 ## Debug a module
 
