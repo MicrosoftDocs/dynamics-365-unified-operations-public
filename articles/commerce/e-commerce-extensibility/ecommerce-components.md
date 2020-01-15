@@ -57,7 +57,9 @@ You can create custom data actions and use them in your modules. Custom data act
 
 ## Themes
 
-Themes contain sitewide Cascading Style Sheets (CSS) style definitions. They also let you add custom, module-specific CSS style definitions. You can set a site theme in the authoring tools. All pages then use that theme by default. You can add more themes, and set them on a template, a layout, or a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
+Themes contain sitewide SCSS (syntactically awesome style sheets) style definitions. They also let you add custom, module-specific SCSS style definitions. You can set a site theme in the authoring tools. All pages then use that theme by default. You can add more themes, and set them on a template, a layout, or a specific page. This capability is useful if you want to change the theme for a campaign or a temporary seasonal change. You can set the theme on the whole site or a subset of pages.
+
+Themes also have the ability to override module views including starter kit modules as well as add module definition extension to extend the configurations and resources on a module. This gives the theme the ability to alter the look and feel of all modules (custom and starter kit) without needing to clone modules allowing for better servicability.
 
 ## Script injectors
 
