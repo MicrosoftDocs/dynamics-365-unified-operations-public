@@ -135,7 +135,11 @@ Now that the B2C Tenant is created, you will create a B2C Application within the
 
 - Add your dedicated ‘Reply URL’ (example: https://www.fabrikam.com)
 
-- The ‘Reply URL’ is used to whitelist the return domains when your site calls AAD B2C to authenticate a user- allowing the return of the authenticated user back to the domain from which they are logging in (your site domain). For this field, you will add both your site domain (example value only: ‘https://www.<yoursitedomain>.com’) and, once your environment is provisioned, add the Dynamics generated URL as a separate line. Use the same pattern and format for both URLs (for example, https://www.<domain>.com and https://www.<DynamicsGenerateddomain>.com … no additional “/” layers should be added at the end, nor additional folders) 
+- The ‘Reply URL’s are important as they allow a whitelist of the return domains when your site calls AAD B2C to authenticate a user- allowing the return of the authenticated user back to the domain from which they are logging in (your site domain). For the Reply URL field, you will add lines for both your site domain (example value only: ‘https://www.<yoursitedomain>.com’) and, once your environment is provisioned, the Dynamics generated URL, each as a separate line. Use the same pattern and format for both URLs (for example, 'https://www.<domain>.com' and 'https://www.<DynamicsGenerateddomain>.com' … no additional “/” layers should be added at the end, nor additional folders. **Additionally**, add a trailing "/_msdyn365/authresp" to these URLs.
+
+	Example Reply URL Lines in B2C App Properties:
+	- https://fabrikam.com/_msdyn365/authresp
+	- https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp
 
 - Set ‘Native Client’ to “no” (default)
 
