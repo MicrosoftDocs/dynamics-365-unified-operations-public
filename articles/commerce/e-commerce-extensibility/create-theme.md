@@ -47,8 +47,6 @@ To create a new theme in Commerce, the online Software Development Kit (SDK) pro
 
 **yarn msdyn365 add-theme THEME\_NAME**
 
-### Example
-
 The following example shows how to create a theme that is named spring-theme.
 
 ```
