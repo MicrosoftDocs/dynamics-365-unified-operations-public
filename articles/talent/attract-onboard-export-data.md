@@ -65,7 +65,7 @@ The download contains a .zip file with your Attract data, including the followin
 | Job offer templates | All job offer document templates created for the environment. |
 | Job openings | All created jobs. Deleted jobs aren't exported. The sub-folders contain candidate applications, with sub-folders for candidate application attachments and offer packages, where applicable. |
 | Job opening templates | Job process templates that were configured in the environment. |
-| Talent pools | All created talent pools, their contributors list, and the candidates lists for the talent pools. |
+| Talent pools | All created talent pools, their contributors lists, and the candidates lists for the talent pools. |
 | Workers | List of all the workers who are present in the environment, plus their roles. |
 | (root folder) | A JSON schema file that describes the data structure fields. |
 
