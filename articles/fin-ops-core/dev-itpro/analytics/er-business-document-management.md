@@ -127,7 +127,7 @@ Use the following procedure to enable Business document management functionality
 4. Refresh the page to access the new feature.
 
 >[!NOTE]
-> Also you need to enable **Office-like UI experience for Business document management** for using new business document management interface
+> For more information about using the new document user interface in Business document management, see [New document user interface in Business document management](er-business-document-management-new-template-ui.md).
 
 ![Feature management workspace](./media/BDM-Overview-FMEnabling.png)
 
@@ -266,23 +266,18 @@ The **Edit template** option is available for the selected template. This option
 
 ### Initiate editing templates owned by other providers
 
-1. In the Business document management workspace, select the **New document**.
+1. In the Business document management workspace, select the document that you want to use as a template.
 
-![Business document management workspace page](./media/BDM_overview_new_template1.png)
+![Business document management workspace page](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Select the document that you want to use as a template.
+3. Select **New document**, and in the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
+4. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
+5. In the **Comment** field, change the comment for the automatically created revision of the editable template.
+6. Select **OK** to confirm the start of the editing process
 
-![Business document management workspace page](./media/BDM_overview_new_template2.png)
+![Business document management workspace page](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Click **Create document**
-4. In the **Title** field, change the title of the editable template if needed. The text will be used to name the ER format configuration that is automatically created. Note that the draft version of this configuration (**Customer FTI report (GER) Copy**) that will contain the edited template will automatically be marked to run this ER format for the current user. At the same time, the non-modified original template from the base ER format configuration will be used to run this ER format for any other user.
-5. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
-6. In the **Comment** field, change the remark for the automatically created revision of the editable template.
-7. Select **OK** to confirm the start of the editing process
-
-![Business document management workspace page](./media/BDM_overview_new_template3.png)
-
-The **New document** option is always available for a template in an ER format configuration provided by another provider (Microsoft in this example). When you click **New document**  you see all templates owned by current and other providers. After you choose the template it will be opened for editing. The edited template will then be stored in a new ER format configuration that is automatically generated.
+The **New document** option is always available for a template in an ER format configuration provided by current and another provider (Microsoft in this example) that doesn't have any revision. The edited template will then be stored in a new ER format configuration that is automatically generated.
 
 ### Start editing a template
 
@@ -290,7 +285,7 @@ The **New document** option is always available for a template in an ER format c
 2. In the **Name** field, change the name of the first revision of the editable template that will be created automatically.
 3. In the **Comment** field, change the remark for the automatically created revision of the editable template.
 
-    ![Business document management workspace page](./media/BDM_overview_new_template4.png)
+    ![Business document management workspace page](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Select **OK** to confirm the start of the editing process.
 
@@ -422,3 +417,4 @@ Most likely you signed in to the current instance of the app of the Azure AD dom
 [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md)
 
 [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

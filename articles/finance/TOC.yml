@@ -66,8 +66,6 @@
         items:
         - name: Finance version 10.0.7 (January 2020)
           href: get-started/whats-new-changed-10-0-7.md
-        - name: Finance version 10.0.6 (November 2019)
-          href: get-started/whats-new-finance-10-0-6.md
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
@@ -3195,6 +3193,8 @@
             items:
             - name: Business document management overview
               href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+            - name: New document user interface in Business document management
+              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
             - name: Add new fields to a business document template in Microsoft Excel
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
         - name: ER framework API

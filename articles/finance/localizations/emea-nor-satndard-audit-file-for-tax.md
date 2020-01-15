@@ -64,7 +64,11 @@ Import the latest versions of the configurations. The version description usuall
 >
 > ![Default for model mapping option set to Yes](media/nor-saf-default-model-mapping.jpg)
 
-For more information about how to download ER configurations from LCS, see [Download Electronic reporting configurations from Lifecycle Services](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+
+![Upload and add button](media/nor-saf-default-model-mapping.jpg)
+
+For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+
 
 ## Setup
 
