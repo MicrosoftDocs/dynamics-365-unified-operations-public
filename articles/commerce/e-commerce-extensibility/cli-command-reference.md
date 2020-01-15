@@ -74,7 +74,39 @@ This command adds a module to the root/src/modules folder.
 **Example**
 
 ``` bash
-yarn msdyn365 add-module campaignBanner
+yarn msdyn365 add-module product-feature
+```
+
+## add-theme
+
+**Usage**
+
+``` bash
+yarn msdyn365 add-theme <theme-name>
+```
+
+This command adds a theme to the root/src/themes folder.
+
+**Example**
+
+``` bash
+yarn msdyn365 add-theme spring-theme
+```
+
+## add-view-extension
+
+**Usage**
+
+``` bash
+yarn msdyn365 add-view-extension <theme-name> <Module-name>
+```
+
+This command adds a module view extension to the root/src/themes/<theme-name>/views folder. This allows the theme to add additional module definition items such as configs, resources and slots.
+
+**Example**
+
+``` bash
+yarn msdyn365 add-view-extension spring-theme product-feature
 ```
 
 ## clone
