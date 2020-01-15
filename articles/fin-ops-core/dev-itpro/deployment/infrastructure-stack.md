@@ -5,7 +5,7 @@ title: Self-service deployment overview
 description: This topic provides an overview of self-service deployment.
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -61,3 +61,13 @@ Customers using the self-service capabilities will see the following changes in 
 - You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
 
 - You will need to provide a combined deployable package for customizations. That is, all custom extension packages, including ISV packages, must be deployed as a single software deployable package. You will not be able to deploy one module at a time. This was always a recommended best practice and is now enforced.
+
+- The document preview experience has been improved to deliver greater fidelity with the printed output. Before this change, documents viewed on screen were displayed using an HTML viewer. Although, the HTML format supported interactive functions like embedded drill-thru links and collapsable sections, this was not a true representation of the document rendered by the service. With the new embedded PDF Viewer, customers have access to a preview that's consistent with the printed documents. For more information, see [Preview PDF documents with an embedded viewer](../analytics/preview-pdf-documents.md)
+
+- Custom fonts are no longer supported for document reports rendered using the built-in SSRS framework. Dynamics 365 for Finance & Operations includes access to 270+ standard business ready fonts available for documents rendered by the Cloud hosted service. And, our portfolio continues to grow as the service expands into new regions and industries. However, the service no longer supports the installation of custom fonts in customer environments. Requests to expand the collection of fonts supported by the service will be considered on a case-by-case basis.
+
+- The service no longer supports business logic defined using VB-Script embedded in SSRS reports. VB expressions defined in Tablix controls used to format and evaluate data at runtime will continue to be fully supported. However, the service will ignore instructions defined in VB-Script functions. This change was necessary to improve the security and bolster the reliability of the service.
+
+- Sub-reports are no longer supported in document reports defined using the SSRS development tools. Application solutions that include sub-reports will need to be recreated or replaced with solutions that take advantage of other reporting options supported by the service.
+
+
