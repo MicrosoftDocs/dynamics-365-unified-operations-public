@@ -37,7 +37,7 @@ This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to Dynamics 365 Commerce. This metadata includes the module name, description, categories, and configurations.
+A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to the Dynamics 365 Commerce site builder tool. This metadata includes the module name, description, categories, and configurations.
 
 Here is an example of a module definition file.
 
@@ -45,10 +45,10 @@ Here is an example of a module definition file.
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
-    "name": "productFeature",
+    "name": "product-feature",
     "description": "Feature module used to highlight a product.",
     "categories": ["marketing"],
-    "tags": ["feature"],
+    "tags": [""],
     "dataActions": {
         "products":{
             "path": "@msdyn365-commerce-modules/retail-actions/dist/lib/get-simple-products",
@@ -96,13 +96,13 @@ Here is an example of a module definition file.
 
 A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for a image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Microsoft Dynamics 365 Retail product data.
 
-The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. 
+The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configs can be scoped per module or global such that they can be set at the site level and used across modules, an example for global usage might be an API key for an external service that multiple modules rely on. 
 
 ## Module definition schema
 
 * **"$type"** – The type of the module. A module can be either a container module (**containerModule**), a page module (**PageModule**), a content module (**contentModule**) or a script injector module (**scriptModule**). Container and page modules also define "slots" that are used for layout regions.  Script injector modules also define an "attributes" section that is used for specifying where script can be injected.
 * **"friendlyName"** – The friendly name of the module. This name is shown to page authors. The minimum length is three characters.
-* **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the authoring tools. It should not be changed.
+* **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the site builder tool. It should not be changed.
 * **"description"** – The description of the module. The description provides a friendly string that is shown in the authoring tools when modules are added to pages.
 * **"categories"** – The categories that the module can subscribe to. Container modules use the values that are specified here to allow or disallow some modules in specific slots.
 * **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
