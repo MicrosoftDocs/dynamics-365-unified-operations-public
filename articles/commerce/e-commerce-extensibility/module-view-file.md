@@ -78,6 +78,8 @@ Configuration properties that are defined in the module definition file (MODULE\
 
 [Module definition file](module-definition-file.md)
 
+[Module React component file](module-react-file.md)
+
 [Module data file](module-data-file.md)
 
 [Module mock file](module-mock-file.md)
