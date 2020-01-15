@@ -38,16 +38,16 @@ ms.dyn365.ops.version: July 2017 update
 
 ## Overview of coupons
 
-Coupons are codes and bar codes that are used to add retail discounts to transactions. Each coupon can have multiple codes, and each code can have its own effective dates.
+Coupons are codes and bar codes that are used to add discounts to transactions. Each coupon can have multiple codes, and each code can have its own effective dates.
 
-Each coupon is related to one retail discount. The price groups that are associated with the discount define the customers that can use a coupon or the channels where a coupon is valid.
+Each coupon is related to one discount. The price groups that are associated with the discount define the customers that can use a coupon or the channels where a coupon is valid.
 
-Essentially, coupons are additional validation on top of retail discounts. The coupon provides the coupon codes and bar codes that are required, together with date ranges for those codes. The coupon also provides optional usage limits and customer required properties. The discount provides the set of products that the coupon is valid for. The price groups for the discount provide the set of customers, channels, or catalogs that the coupon is valid for.
+Essentially, coupons are additional validation on top of discounts. The coupon provides the coupon codes and bar codes that are required, together with date ranges for those codes. The coupon also provides optional usage limits and customer required properties. The discount provides the set of products that the coupon is valid for. The price groups for the discount provide the set of customers, channels, or catalogs that the coupon is valid for.
 
-To create a coupon, you create the discount and the coupon separately. You then link them by selecting the discount on the coupon page in Retail.
+To create a coupon, you create the discount and the coupon separately. You then link them by selecting the discount on the coupon page in Commerce.
 
 > [!NOTE]
-> After a coupon is linked to a discount, several fields on the discount page in Retail become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
+> After a coupon is linked to a discount, several fields on the discount page in Commerce become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
 
 ### Limited-use coupons
 
@@ -62,7 +62,7 @@ The limit is enforced per coupon code on a coupon. For example, a single-use cou
 
 You must create the discount and the coupon separately. You then link them by selecting the discount on the coupon page. After you link a coupon to a discount, several fields for the discount become read-only, because they are managed by the coupon's settings. These fields include the fields for the status and standard date ranges.
 
-Essentially, coupons are now additional validation on top of retail discounts. The coupon provides the coupon codes and bar codes, together with date ranges, the usage limits, and the customer required property. The discount provides the set of products that the coupon is valid for. The discount's price groups provide the set of customers, channels, or catalogs that the coupon is valid for.
+Essentially, coupons are now additional validation on top of discounts. The coupon provides the coupon codes and bar codes, together with date ranges, the usage limits, and the customer required property. The discount provides the set of products that the coupon is valid for. The discount's price groups provide the set of customers, channels, or catalogs that the coupon is valid for.
 
 ## System setup for coupons
 
@@ -76,14 +76,14 @@ Before you can set up a coupon, you must set up the coupon bar code and two coup
     > [!NOTE]
     > For both number sequences, you must set the **Scope** field to **Company**. In most cases, you should automatically generate both sequence numbers.
 
-5. On the **Retail parameters** page, on the **Bar codes** tab, select the bar code that you created earlier.
-6. On the **Retail shared parameters** page, on the **Number sequences** tab, select the number sequences that you created for the coupon number and coupon code ID.
+5. On the **Commerce parameters** page, on the **Bar codes** tab, select the bar code that you created earlier.
+6. On the **Commerce shared parameters** page, on the **Number sequences** tab, select the number sequences that you created for the coupon number and coupon code ID.
 7. You can now open the **Coupons** page and create new coupons.
 
 ## The effect of partial updates on coupons
 
-Coupon functionality comprises multiple distinct features. Dynamics 365 Retail headquarters (HQ) and the channel can be partially updated across components. Therefore, it's important that you understand how partial updates affect coupon functionality as a whole.
+Coupon functionality comprises multiple distinct features. Commerce Headquarters (HQ) and the channel can be partially updated across components. Therefore, it's important that you understand how partial updates affect coupon functionality as a whole.
 
-- **HQ is partially updated, but Retail server and POS aren't updated.** In an HQ update, the coupon and discount pages are updated, and the retail price engine is also updated. If only one of those two components is updated, some pages in Retail won't match the price calculation data. Therefore, unexpected discount calculations or errors might occur during discount calculations.
-- **HQ is updated, but Retail server and POS aren't updated (N-1).** Because not all retail stores can be updated at the same time, we recommend that you update HQ before you update retail stores. In the N-1 scenario, new functionality that is related to coupons won't be available in stores that haven't been updated yet. For example, the coupon functionality introduces "exclude" lines. If you use exclude lines on a discount, they won't be applied in a retail store that is running an earlier version.
-- **HQ isn't updated, but Retail server and POS are updated (N+1).** Because the updated price engine in Retail server can handle legacy discount codes during price calculations, the update should have no functional impact in this scenario.
+- **HQ is partially updated, but Commerce Scale Unit and POS aren't updated.** In an HQ update, the coupon and discount pages are updated, and the commerce price engine is also updated. If only one of those two components is updated, some pages in Commerce won't match the price calculation data. Therefore, unexpected discount calculations or errors might occur during discount calculations.
+- **HQ is updated, but Commerce Scale Unit and POS aren't updated (N-1).** Because not all stores can be updated at the same time, we recommend that you update HQ before you update stores. In the N-1 scenario, new functionality that is related to coupons won't be available in stores that haven't been updated yet. For example, the coupon functionality introduces "exclude" lines. If you use exclude lines on a discount, they won't be applied in a store that is running an earlier version.
+- **HQ isn't updated, but Commerce Scale Unit and POS are updated (N+1).** Because the updated price engine in Commerce Scale Unit can handle legacy discount codes during price calculations, the update should have no functional impact in this scenario.
