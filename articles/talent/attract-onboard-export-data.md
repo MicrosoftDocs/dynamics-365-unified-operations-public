@@ -57,17 +57,17 @@ The download contains a .zip file with your Attract data, including the followin
 
 | Folder name | Description |
 | --- | --- |
-| Admin settings | Attract admin center configurations |
-| Candidates | All candidates that were added to jobs or talent pools |
-| Email templates | All email templates that were configured for the environment |
-| Job offer package templates | All job offer package templates that were created, plus their associated configurations |
-| Job offer rule sets |  All rule set files that were uploaded for offer management |
-| Job offer templates | All job offer document templates created for the environment |
+| Admin settings | Attract admin center configurations. |
+| Candidates | All candidates that were added to jobs or talent pools. |
+| Email templates | All email templates that were configured for the environment. |
+| Job offer package templates | All job offer package templates that were created, plus their associated configurations. |
+| Job offer rule sets |  All rule set files that were uploaded for offer management. |
+| Job offer templates | All job offer document templates created for the environment. |
 | Job openings | All created jobs. Deleted jobs aren't exported. The sub-folders contain candidate applications, with sub-folders for candidate application attachments and offer packages, where applicable. |
-| Job opening templates | Job process templates that were configured in the environment |
+| Job opening templates | Job process templates that were configured in the environment. |
 | Talent pools | All created talent pools, their contributors list, and the candidates lists for the talent pools. |
 | Workers | List of all the workers who are present in the environment, plus their roles. |
-| (root folder) | A JSON schema file that describes the data structure fields |
+| (root folder) | A JSON schema file that describes the data structure fields. |
 
 ### Restrict access to Attract
 
