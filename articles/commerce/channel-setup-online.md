@@ -80,7 +80,7 @@ From within the **Payment account** section you can add a third-party payment pr
 
 Additional tasks required for online channel setup include setting up payment methods, modes of delivery, and the fulfillment group assignment.
 
-The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** actions on the **Set up** tab.
+The following image shows **Modes of delivery**, **Payment methods**, and **Fulfillment group assignment** setup options on the **Set up** tab.
 
 ![Additional online channel setup actions](media/channel-setup-online-3.png)
 
@@ -95,7 +95,7 @@ To set up payment methods, for each payment type supported on this channel follo
 1. Configure any additional settings as required for the payment type.
 1. On the **Action pane**, select **Save**.
 
-The following image shows an example for a cash payment method.
+The following image shows an example of a cash payment method.
 
 ![Example payment methods](media/channel-setup-retail-5.png)
 
