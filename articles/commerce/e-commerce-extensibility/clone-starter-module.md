@@ -37,7 +37,7 @@ This topic describes how to clone a starter kit module.
 
 ## Overview
 
-The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated.
+The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated.  Module extension views can also be created to provide alternative layout views without needing to clone a module.  See more info in the module theming section.  It is recommended to avoid cloning if possible, since clones are copies of starter kit modules they will not receive any automatic service updates that the starter kit modules will get.
 
 ## Clone and update a module
 
@@ -52,10 +52,10 @@ This command adds the source code for the module to the /src/modules/ directory 
 The following example shows how to clone the hero SDK module so that you can update it.
 
 ```
-yarn msdyn365 clone hero heroExtended
+yarn msdyn365 clone content-block super-content-block
 ```
 
-It can take one to two minutes to clone the module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
+It can take up to a minute to clone the module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 > [!NOTE]
 > Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.
@@ -67,10 +67,10 @@ To preview the new module in a local web browser, follow these steps.
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
     ```
-    c:\repos\MyEcommerceSite\yarn start
+    c:\repos\Msdyn365.Commerce.Online\yarn start
     ```
 
-2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=heroExtended`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
+2. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=super-content-block`. Notice the module name in the **type=MODULE\_NAME** query string parameter.
 
 You can now update the module code as needed.
 
