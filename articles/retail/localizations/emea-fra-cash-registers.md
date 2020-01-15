@@ -343,7 +343,7 @@ You can download the ER configuration for the archive from Microsoft Dynamics Li
 - **Archiving DMM.version.2.1** data model mapping
 - **Retail data archive FR .version.2.1** format
 
-After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
+After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **Retail data archive export format** field, select the **Retail data archive FR .version.2.1** format.
 
 ### Renitialize Commerce components
 
