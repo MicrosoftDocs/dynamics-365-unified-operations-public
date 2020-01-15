@@ -69,7 +69,7 @@ yarn msdyn365 add-data-action getMyData
 yarn msdyn365 add-module <module-name>
 ```
 
-This command adds a module to the root/src/modules folder.
+This command adds a module to the root/src/modules folder.  Note module names are case insensitive. 
 
 **Example**
 
@@ -122,7 +122,7 @@ This command creates a renamed copy of a starter kit module and adds the source 
 **Example**
 
 ``` bash
-yarn msdyn365 clone hero myHero
+yarn msdyn365 clone content-block super-content-block
 ```
 
 ## pack
