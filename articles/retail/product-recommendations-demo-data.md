@@ -52,7 +52,7 @@ which automatically enables product recommendations demo data.
 
 ## Default demo data
 Each Onebox type environment comes with a preloaded set of product recommendations demo data stored in the 
-coma separated **‘reco_demo_data.csv’** file, located in the same folder as this document on Retail Server.
+coma separated **‘reco_demo_data.csv’** file, located in the same folder as this document on Commerce Scale Unit.
 
 This data is structured along the following columns
 
@@ -75,9 +75,9 @@ mock recommendations results. The file name can be controlled through extension 
 between easily through configuration.
 
 ```
-  <settings>
+<settings>
     <add name="ext.Recommendations.DemoFilePath" value="RecoMockDataset.csv" />
-  </settings>
+</settings>
 ```
 
 ## Additional resources
