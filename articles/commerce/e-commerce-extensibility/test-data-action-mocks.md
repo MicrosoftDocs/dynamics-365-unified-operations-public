@@ -37,7 +37,6 @@ This topic describes how to test data actions with mock data.
 
 ## Overview
 
-
 By mocking data actions in Dynamics 365 Commerce, you can replace the output of a data action with the data that is specified in the actionmock.json file that has been loaded. Action mocks are useful if you want to test your module without invoking the actual action.
 
 ## Action mock structure
@@ -112,7 +111,7 @@ The following example shows a data action mock that returns product data.
 
 To use an action mock in your module preview, include the query string parameter for the action mock **actionMock=MODULE_NAME:MOCK_FILE_NAME**, as shown in the following example.
 
-`https://localhost:4000/modules?type=productFeature&actionMock=productFeature:myModuleMock`
+`https://localhost:4000/modules?type=product-feature&actionMock=product-feature:myModuleMock`
 
 Here is the syntax of the query string parameter.
 
