@@ -3193,6 +3193,8 @@
             items:
             - name: Business document management overview
               href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+            - name: New document user interface in Business document management
+              href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
             - name: Add new fields to a business document template in Microsoft Excel
               href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
         - name: ER framework API
