@@ -5,7 +5,7 @@ title: Retail functionality profile
 description: This topic presents an overview of setting up a Retail functionality profile for Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: samjar
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
@@ -36,6 +36,8 @@ ms.dyn365.ops.version: Release 10.0.8
 This topic presents an overview of setting up a Retail functionality profile for Microsoft Dynamics 365 Commerce.
 
 ## Overview
+
+TBD
 
 ## Create a functionality profile
 The following procedure explains how to create a retail functionality profile from within Commerce Headquarters app.
@@ -57,6 +59,16 @@ The following procedure explains how to create a retail functionality profile fr
 * Expand the **Receipt numbering** section.
   * Modify settings as desired. 
   
-The below shows an example retail functionality profile.
+The following image shows an example retail functionality profile.
   
 ![Retail functionality profile example](media/retail-functionality-profile.png)
+
+## Additional resources
+
+[Info codes and info code groups](../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json)  		  
+
+[Create new address book](new-address-book.md) 
+
+[Screen layout overview](../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json)		  
+
+[Configure and install Retail hardware station](../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json) 
