@@ -5,7 +5,7 @@ title: Create new address book
 description: 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: samjar
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
@@ -42,8 +42,19 @@ Address books are used in Microsoft 365 Commerce for various reasons including s
 ## Create a new address book
 The following procedure explains how to create a legal entity from within Commerce Headquarters app.
 
-* Go to **Navigation pane** > **Modules** > **Channel setup** > **Address books**.
-* From the action bar, click **New**.
+1. Go to **Navigation pane** > **Modules** > **Channel setup** > **Address books**.
+1. From the action bar, click **New**.
 
-The below example shows the creation of an employee address book for a retail store.
+The following image shows the creation of an employee address book for a retail store.
+
 ![Employee address book example](media/address-books.png)
+
+## Additional resources
+
+[Info codes and info code groups](../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json)  		  
+
+[Retail functionality profile](retail-functionality-profile.md)	  
+
+[Screen layout overview](../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json)		  
+
+[Configure and install Retail hardware station](../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json)  
