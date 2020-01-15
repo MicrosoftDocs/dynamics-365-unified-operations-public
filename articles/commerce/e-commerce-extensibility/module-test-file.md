@@ -96,6 +96,8 @@ Note that the mock data fields are set inside this file.
 
 [Module definition file](module-definition-file.md)
 
+[Module React component file](module-react-file.md)
+
 [Module view file](module-view-file.md)
 
 [Module data file](module-data-file.md)
