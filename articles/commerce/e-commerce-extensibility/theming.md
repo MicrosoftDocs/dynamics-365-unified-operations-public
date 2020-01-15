@@ -37,9 +37,11 @@ This topic presents an overview of online site theming in Microsoft Dynamics 365
 
 ## Overview
 
-Dynamics 365 Commerce lets you apply a Sassy Cascading Style Sheets (SCSS) theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and also a campaign theme that is applied only to a subset of pages on the site.
+Dynamics 365 Commerce lets you apply a theme to your whole online site, individual templates, or individual pages.  For example, you might have a default theme that is set for the whole online site and also a campaign theme that is applied only to a subset of pages on the site. 
 
-After a theme is created and uploaded to your production site, authoring tools can be used to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. Therefore, all the modules on that page have a consistent look and feel.
+Theme's are made up of Sassy Cascading Style Sheets (SCSS) files to style your site and modules, and optionally may also contain module view and definition extensions allowing modules to render different views based on the theme selected. 
+
+After a theme is created and uploaded to your production site, the site builder tool can be used to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. Therefore, all the modules on that page have a consistent look and feel.  The site builder tool also allows addional CSS overrides to be uploaded to make changes on top of a selected theme if needed.
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
@@ -57,10 +59,6 @@ A theme can be set on the master page in a similar manner. In this case, the the
 ```
 $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
 @import "bootstrap/scss/bootstrap";
-body {
-    background: $brand-primary;
-    color: $brand-secondary;
-}
 ...
 ```
 
@@ -109,11 +107,9 @@ Import or define the following items:
 
 For every module, a class name is defined that matches the module name. In this way, any theme can target the module. This class name should be the first class name that is applied to the outermost element that is rendered by the React component. To allow for more granular theme options, developers can provide additional class names on elements or features of a module. In that way, custom themes can target those elements or features.
 
-## Create a custom theme
+## Custom themes
 
-1. Create a new theme directory in your SDK **/src/themes/** folder, such as **/src/themes/spring/**.
-1. In the new directory, create a new SCSS entry point file for the theme. For the file name, use the pattern **THEME\_NAME.theme.scs**. Then, when the theme is registered and appears in the authoring tools, the theme name will be provided in the file name (for example, **/src/themes/spring/spring.theme.scss**).
-1. After the theme is completed, the configurations can be packaged and uploaded to your site. The new theme then automatically appears in the authoring tools.
+Custom themes can be created using the Dynamics 365 online SDK and stored within the **/src/themes/** folder.  For more information see [Create a theme](create-theme.md).
 
 ## Additional resources
 
