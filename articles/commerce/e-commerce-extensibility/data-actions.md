@@ -153,11 +153,10 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
 
 To create a new custom data action, follow these steps.
 
-1. At a command prompt, go to your Dynamics 365 Commerce extensibility code directory. For this example, the directory is **c:\\repos\\myEcommerce**.
-1. Run the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command to create a module, as shown in the following example.
+1. At a command prompt, go to your root SDK folder and run the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command to create a data action, as shown in the following example.
 
     ```
-    c:\repos\myEcommerceSite>yarn msdyn365 add-data-action getProductReviews
+    c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-data-action get-product-reviews
     ```
 
 TypeScript files for new custom data actions are created under the \\src\\actions\\ directory. The name of each file uses the name of the data action. For the preceding example, the path and name of the file for the new custom data action are **\\src\\actions\\getProductReviews.ts**.
