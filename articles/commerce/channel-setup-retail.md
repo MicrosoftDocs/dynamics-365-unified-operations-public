@@ -59,11 +59,11 @@ Before a retail channel is created ensure you follow the [channel prerequisites]
 1. In the **Email notification profile** field, provide a valid email notification profile.
 1. On the **Action pane**, select **Save**.
 
-The following image shows
+The following image shows the creation of a new retail channel.
 
 ![New retail channel](media/channel-setup-retail-1.png)
 
-The following image shows
+The following image shows an example retail channel.
 
 ![Example retail channel](media/channel-setup-retail-2.png)
 
@@ -78,86 +78,103 @@ The following image shows an example retail channel setup configuration.
 ![Example retail channel configuration](media/channel-setup-retail-3.png)
 
 ## Additional channel set up
+
 There are additional items that need to be set up for a channel that can be found on the **Action pane** under the **Set up** section.
 
-The following image shows
+Additional tasks required for online channel setup include setting up payment methods, cash declaration, modes of delivery, income/expense account, sections, the fulfillment group assignment, and safes.
+
+The following image shows various additional retail channel setup options on the **Set up** tab.
 
 ![Set up channel](media/channel-setup-retail-4.png)
 
 ### Set up payment methods
 
-1. On the **Action pane**, select the **Set Up** tab and click **Payment methods**.
+To set up payment methods, for each payment type supported on this channel follow these steps.
 
-For each payment type supported on this channel do the following:
+1. On the **Action pane**, select the **Set Up** tab, then select **Payment methods**.
 1. On the **Action pane**, select **New**.
-1. Select an appropriate **Payment method**.
-1. In the **General** section provide an **Operation name** and set any other desired settings.
+1. In the navigation pane, select a desired payment method.
+1. In the **General** section, provide an **Operation name** and configure any other desired settings.
 1. Configure any additional settings as required for the payment type.
-1. Select **Save**.
+1. On the **Action pane**, select **Save**.
 
-The following image shows
+The following image shows an example of a cash payment method.
 
 ![Example payment methods](media/channel-setup-retail-5.png)
 
-### Set up Cash declaration
+### Set up cash declaration
 
-1. On the **Action pane**, select the **Set Up** tab and click **Cash declaration**.
-1. On the **Action pane**, select **New** and create all **Coin** and **Note** denominations that are applicable.
+1. On the **Action pane**, select the **Set Up** tab, and then select **Cash declaration**.
+1. On the **Action pane**, select **New**, and then create all **Coin** and **Note** denominations that are applicable.
 
-The following image shows
+The following image shows an example of a cash declaration.
 
 ![Setup up cash declarations](media/channel-setup-retail-6.png)
 
 ### Set up modes of delivery
 
-By selecting **Modes of delivery** from the **Set Up** tab on the **Action pane** you can see the configured modes of delivery.  To change or add a mode of delivery follow the below steps.
+You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.  
 
-1. Go to **Navigation pane** > **Modules** > **Invetory management** > **Modes of delivery**.
-1. On the **Action pane**, select **New** to create a new mode of delivery of select an existing mode.
-1. In the **Retail channels** section select **Add line** to add the channel.  Channels can be added via organization nodes which can streamline adding channels versus adding each individual channel.
+To change or add a mode of delivery, follow these steps.
 
-The following image shows
+1. Go to **Navigation pane \> Modules \> Inventory management \> Modes of delivery**.
+1. On the **Action pane**, select **New** to create a new mode of delivery, or select an existing mode.
+1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
+
+The following image shows an example of a mode of delivery.
 
 ![Set up modes of delivery](media/channel-setup-retail-7.png)
 
-### Set up Income/Expense account
-1. On the **Action pane**, select the **Set Up** tab and click **Income/Expense account**.
+### Set up income/expense account
+
+To set up income/expense account, follow these steps.
+
+1. On the **Action pane**, select the **Set Up** tab, and then select **Income/Expense account**.
 1. On the **Action pane**, select **New**.
-1. Provide a **Name** and **Search name**.
-1. Select the **Account type**.
-1. Provide a **Message line 1**, **Message line 2**, **Slip text 1** and **Slip text 2** as needed.
-1. Fill out **Posting** information.
+1. Under **Name**, enter a name.
+1. Under **Search name**, enter a search name.
+1. Under **Account type**, enter the account type.
+1. Enter text for **Message line 1**, **Message line 2**, **Slip text 1**, and **Slip text 2** as needed.
+1. Under **Posting**, enter posting information.
 1. On the **Action pane**, select **Save**.
 
-The following image shows
+The following image shows an example of an income/expense account.
 
 ![Set up income/expense accounts](media/channel-setup-retail-8.png)
 
-### Set up Sections
+### Set up sections
+
+To set up sections, follow these steps.
 
 1. On the **Action pane**, select the **Set Up** tab and click **Sections**.
 1. On the **Action pane**, select **New**.
-1. Provide a **Section number** and **Description** and **Section size**.
-1. Additional configurations can be set in the **General** and **Sales statistics** sections.
+1. Under **Section number**, enter a section number.
+1. Under **Description**, enter a description.
+1. Under **Section size**, enter a section size.
+1. Configure additional settings for **General** and **Sales statistics** as needed.
 1. On the **Action pane**, select **Save**.
 
-### Set up fulfillment group assignment
+### Set up a fulfillment group assignment
 
-1. On the **Action pane**, select the **Set Up** tab and click **Fulfullment group assignment**.
+To set up a fulfillment group assignment, follow these steps.
+
+1. On the **Action pane**, select the **Set up** tab, then select **Fulfillment group assignment**.
 1. On the **Action pane**, select **New**.
-1. Select a **Fulfillment group**.
-1. Provide a **Description**.
-1. On the **Action pane**, select **Save**.
+1. In the **Fulfillment group** drop-down list, select a fulfillment group.
+1. In the **Description** drop-down list, enter a description.
+1. On the **Action pane**, select **Save**
 
-The following image shows
+The following image shows an example of a fulfillment group assignment setup.
 
 ![Set up fulfillment group assignments](media/channel-setup-retail-9.png)
 
-### Set up Safes
+### Set up safes
+
+To set up safes, follow these steps.
 
 1. On the **Action pane**, select the **Set Up** tab and click **Safes**.
 1. On the **Action pane**, select **New**.
-1. Provide a name for the safe
+1. Enter a name for the safe.
 1. On the **Action pane**, select **Save**.
 
 ## Additional resources
