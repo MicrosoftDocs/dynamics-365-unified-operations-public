@@ -158,6 +158,12 @@ export interface IAsyncTestModuleData {
 
 You can then access the results of the data action in your module.
 
+## Module Resource Schema
+* **"resources"**: Used for localizing resources. When resources strings are defined, the localized strings are pulled from corresponding json files.  These files are stored under the **/src/resources/modules/** directory and include a **global.json** for default locale values and any needed localized json files, example fr-fr.json.
+* **"resourcekey"**: The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
+* **"comment"** - Comment is a string used to identify the purpose of the string to aid in localization.
+* **"value"** -  Resource string data that will be used in the module.
+
 
 To get more details on the config section, see [Add module configuration fields](add-module-config-fields.md).
 
