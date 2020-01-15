@@ -103,8 +103,7 @@ When you're ready, you can download templates, guides, and candidate data from O
    ![[Download data export from Onboard](./media/attract-onboard-export-data-onboard-download.png)](./media/attract-onboard-export-data-onboard-download.png)
 
    >[!NOTE]
-   >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
-   >When you start a new data export, any existing downloads will expire after the new export succeeds.
+   >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again. When you start a new data export, any existing downloads will expire after the new export succeeds.
 
 The download is a .zip file that contains:
 
