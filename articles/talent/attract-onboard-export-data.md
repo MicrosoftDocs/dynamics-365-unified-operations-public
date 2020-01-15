@@ -44,15 +44,15 @@ For testing purposes, you can export your data without restricting access to you
 
 2. Under **Data export**, select **Request a data export**.
 
-  ![[Request a data export from Attract](./media/attract-onboard-export-data-attract-request.png)](./media/attract-onboard-export-data-attract-request.png)
+   ![[Request a data export from Attract](./media/attract-onboard-export-data-attract-request.png)](./media/attract-onboard-export-data-attract-request.png)
 
 3. When the **Your request is being processed** message box appears, select **OK**. The data export can take up to 20 minutes, depending on the size of your export.
 
 4. When your export completes, select the **Download** button next to it. 
 
-  >[!NOTE]
-  >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
-  >When you start a new data export, any existing downloads will expire after the new export succeeds.
+   >[!NOTE]
+   >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
+   >When you start a new data export, any existing downloads will expire after the new export succeeds.
 
 The download contains a .zip file with your Attract data, including:
 
@@ -73,18 +73,18 @@ The download contains a .zip file with your Attract data, including:
 
 When you're ready to migrate, restrict non-admins from accessing your Attract environment and export your data.
 
-  >[!IMPORTANT]
-  >Restricting access to your Attract environment is permanent and can't be undone. If you want non-admin users to continue accessing your environment, skip this step.
+>[!IMPORTANT]
+>Restricting access to your Attract environment is permanent and can't be undone. If you want non-admin users to continue accessing your environment, skip this step.
 
 1. Go to [https://aka.ms/AttractDataExport](https://aka.ms/AttractDataExport).
 
 2. To restrict non-admins from accessing your Attract environment, under **Restrict access to this app**, select **Restrict access now**. Restricting access also unposts any active jobs that have been posted.
 
-  ![[Restrict non-admin access to Attract](./media/attract-onboard-export-data-attract-restrict-access.png)](./media/attract-onboard-export-data-attract-restrict-access.png)
+   ![[Restrict non-admin access to Attract](./media/attract-onboard-export-data-attract-restrict-access.png)](./media/attract-onboard-export-data-attract-restrict-access.png)
 
 3. When you see the warning **This is a permanent change**, select **Restrict access** to permanently restrict non-admin users from this environment. If you're not ready to complete this step, select **Cancel**.
 
-  ![[Warning that restricting access is a permanent change](./media/attract-onboard-export-data-attract-warning.png)](./media/attract-onboard-export-data-attract-warning.png)
+   ![[Warning that restricting access is a permanent change](./media/attract-onboard-export-data-attract-warning.png)](./media/attract-onboard-export-data-attract-warning.png)
 
 ## Export data from Onboard
 
@@ -94,17 +94,17 @@ When you're ready, you can download templates, guides, and candidate data from O
 
 2. Under **Data export**, select **Request a data export**. 
 
-  ![[Request a data export from Onboard](./media/attract-onboard-export-data-onboard-request.png)](./media/attract-onboard-export-data-onboard-request.png)
+   ![[Request a data export from Onboard](./media/attract-onboard-export-data-onboard-request.png)](./media/attract-onboard-export-data-onboard-request.png)
 
 3. When the **Your request is being processed** message box appears, select **OK**. The data export can take up to 20 minutes, depending on the size of your export.
 
 4. When your export completes, select the **Download** button next to it. 
 
-  ![[Download data export from Onboard](./media/attract-onboard-export-data-onboard-download.png)](./media/attract-onboard-export-data-onboard-download.png)
+   ![[Download data export from Onboard](./media/attract-onboard-export-data-onboard-download.png)](./media/attract-onboard-export-data-onboard-download.png)
 
-  >[!NOTE]
-  >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
-  >When you start a new data export, any existing downloads will expire after the new export succeeds.
+   >[!NOTE]
+   >Your data export is available for seven days. After seven days, the **Download** link expires, and you must request a new export if you need to download your data again.</br>
+   >When you start a new data export, any existing downloads will expire after the new export succeeds.
 
 The download is a .zip file that contains:
 
