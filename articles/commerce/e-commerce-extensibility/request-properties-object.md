@@ -152,6 +152,115 @@ interface IRequestContext {
     cookies: ICookieContext;
 }
 ```
+
+## Testing modules with authenticated signed in state
+Some modules may require the state to be signed in.  To test these a test page mock can be created with user auth information.
+To get started, load the e-Commerce web page you are working on and sign in or create a new account.
+
+Open up the web browser debugging tools. Example when using Chrome enable the developer tools with the F12 key.  User info is available in  Global JS variable `___initialData___.requestContext.user`
+
+* Type `___initialData___.requestContext.user` in console to get the user info
+
+* Next, add module to test into a page mock
+* Inside the renderingContext section in the page mock add the below “userContext” section 
+* Update user information taken from the web browser debugging tools from above
+
+```
+"userContext": {
+    "token": "<TOKEN>",
+    "isAuthenticated": true,
+    "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+    "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+    "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+    "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+    "signinName": "<User Name>",
+    "firstName": "<User First Name>",
+    "lastName": "<User Last Name>",
+    "tenantId": "",
+    "customerAccountNumber": "<User Account Number(HQ)>",
+     "name": "<User Name>",
+     "emailAddress": "<User Email Address>"
+},
+```
+
+The user information can now be obtained in the React component from within the “this.props.context.request.user” object.
+
+Example page mock:
+```
+{
+    "exception": null,
+    "pageRoot": {
+        "id": "core-root_0",
+        "typeName": "core-root",
+        "modules": {
+            "body": [
+                {
+                    "id": "default-page_0",
+                    "typeName": "default-page",
+                    "modules": {
+                        "primary": [
+                            {
+                                "id": "ProductFeature__0",
+                                "typeName": "product-feature",
+                                "config": {
+                                    "imageAlignment": "left",
+                                    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+                                    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+                                    "productImage": {
+                                        "src" : "https://bit.ly/33cMGxr",
+                                        "altText" : "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+                                    },
+                                    "buttonText": "Buy Now"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "renderingContext": {
+        "gridSettings": {
+            "xs": {
+                "w":767
+            },
+            "sm": {
+                "w":991
+            },
+            "md": {
+                "w":1199
+            },
+            "lg": {
+                "w":1599
+            },
+            "xl": {
+                "w":1600
+            }
+        },        
+        "staticContext": {
+            "staticCdnUrl": "/_scnr/"
+        },
+        "locale": "en-us",
+        "userContext": {
+            "token": "<TOKEN>",
+            "isAuthenticated": true,
+            "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+            "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+            "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+            "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+            "signinName": "<User Name>",
+            "firstName": "<User First Name>",
+            "lastName": "<User Last Name>",
+            "tenantId": "",
+            "customerAccountNumber": "<User Account Number(HQ)>",
+            "name": "<User Name>",
+            "emailAddress": "<User Email Address>"
+        },
+    },
+    "statusCode": 200
+}
+```
+
 ## Additional resources
 
 [App settings](app-settings.md)
