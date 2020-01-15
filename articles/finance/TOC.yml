@@ -966,6 +966,8 @@
         href: public-sector/forecast-positions.md
       - name: Forecast position reports in the public sector
         href: public-sector/forecast-position-reports.md
+      - name: Set up and run the Cash position inquiry
+        href: public-sector/cash-position-inquiry-setup.md
       - name: Accounts payable in the public sector
         items:
         - name: Accounts payable in the public sector overview
