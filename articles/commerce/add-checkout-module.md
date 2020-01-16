@@ -56,7 +56,7 @@ A checkout module shows an order summary and provides the functionality for plac
 - **Payment** – This module lets a customer pay for an order by using a credit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. Credit card integration is provided by the Adyen payment connector for this module. For more information about how to use this connector, see [Adyen payment connector](https://).
 - **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
-- **Textblock** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
+- **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
 ## Retail server interaction
 
