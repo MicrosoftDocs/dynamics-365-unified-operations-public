@@ -83,7 +83,6 @@ View extensions are stored under the **...\src\themes\views** directory and foll
 
 In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy/paste code into it.  To see the module view source code, open up the **...\node_modules\@msdyn365-commerce-modules\** directory and look for the module you are interested in.  
 
-### Adding a view extension
 To create a new view extension in Commerce, the online Software Development Kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to add the view extension to and replace **MODULE\_NAME** with the name of the module you are extending.
 
 ```yarn msdyn365 add-view-extension THEME_NAME MODULE_NAME```
@@ -93,9 +92,45 @@ The below example will add a new “product-feature.view.ts” file under the sp
 ```yarn msdyn365 add-view-extension spring-theme product-feature```
 
 ## Theme definition extensions
-TBD
-### Adding a theme definition file
-TBD
+When using a module view extension, you may have scenarios where you need to extend the config, slots or resources section of a module definition and access these from the module view extension. You can add new configs, slots and resources but you cannot modify or remove existing ones.
+
+Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE\_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  To create a new definition extension, create a new file under the theme directory that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
+
+Below shows a sample theme definition extension file with several added configs, slots and resources.  Notice the "$type" must be set to "definitionExtension".
+
+```json
+{
+    "$type": "definitionExtension",
+    "config": {
+        "favoriteIcon": {
+            "type": "image",
+            "friendlyName": "Favorite icon",
+            "description": "Favorite icon"
+        },
+        "favoriteIconSettings": {
+            "friendlyName": "Favorite icon Settings",
+            "description": "Image settings for the favorite icon property",
+            "type": "imageSettings"
+        }
+    },
+    "slots": {
+        "content":
+        {
+            "friendlyName": "Content Slot",
+            "description": "This is the content slot",
+            "allowedCategories": ["container"],
+            "max": 10,
+            "min": 0
+        }
+    },
+    "resources": {
+        "recommendedLocations": {
+            "value": "Recommended Locations"
+        }
+    }
+
+}
+```
 
 ## Test a theme
 You can easily test a theme in your development environment by using the **?theme=THEME\_NAME** query string parameter.
