@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail functionality profile
-description: This topic presents an overview of setting up a Retail functionality profile for Microsoft Dynamics 365 Commerce.
+title: Create a retail functionality profile
+description: This topic describes how to create a retail functionality profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -28,36 +28,32 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Retail functionality profile
+# Create a retail functionality profile
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of setting up a Retail functionality profile for Microsoft Dynamics 365 Commerce.
+This topic describes how to create a retail functionality profile in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-TBD
+TBD (Sam please provide some content here, couldn't find anything relevant - what is it, why do we need to create it?)
 
-## Create a functionality profile
-The following procedure explains how to create a retail functionality profile from within Commerce Headquarters app.
+## Create a retail functionality profile
 
-* Go to **Navigation pane** > **Modules** > **Channel setup** > **POS profiles** > **Functionality profiles**.
-* From the action pane, click **New**.
-* In the **Profile** field, provide an ID for the profile, the example below uses "FN006".
-* In the **Description** field, provide a value, the example below uses "Adventure Works Profile".
-* Expand the **General** section.
-  * Select a country for the **ISO** locale.
-  * Modify other settings if desired.
-  * Select a **Receipt profile ID* for email receipts.
-* Expand the **Functions** section.
-  * Modify settings as desired.
-* Expand the **Amount** section.
-  * Modify settings as desired.
-* Expand the **Info Codes** section.
-  * Modify settings as desired.
-* Expand the **Receipt numbering** section.
-  * Modify settings as desired. 
+To create a retail functionality profile, follow these steps.
+
+1. Go to **Navigation pane \> Modules \> Channel setup \> POS profiles \> Functionality profiles**.
+1. From the action pane, select **New**.
+1. In the **Profile** field, enter an ID for the profile ("FN006" in the example image below).
+1. In the **Description** field, enter a value ("Adventure Works Profile" in the example image below).
+1. In the **General** section, select a country for the **ISO** locale.
+1. In the **General** section, modify other settings as needed.
+1. In the **General** section, select a **Receipt profile ID** for email receipts.
+1. In the **Functions** section, modify settings as needed.
+1. In the **Amount** section, modify settings as needed.
+1. In the **Info Codes** section, modify settings as needed.
+1. In the **Receipt numbering** section, modify settings as needed. 
   
 The following image shows an example retail functionality profile.
   
