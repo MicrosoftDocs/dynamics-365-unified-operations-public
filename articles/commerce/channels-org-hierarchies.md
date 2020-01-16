@@ -46,7 +46,7 @@ For more information see
 
 ## Create an organization hierarchy
 
-Use the following procedure to create an organizational hierarchy. You can use organizational hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that is not legally required, but that is used for internal reporting.
+You can use organizational hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that is not legally required, but that is used for internal reporting.
 
 Before you create an organizational hierarchy, you must create organizations. For more information, see the [Create a new legal entity](channels-legal-entities.md) or “Create an operating unit” tasks. You can also create departments and teams.
 
@@ -83,3 +83,13 @@ The following image shows
 ![Example hierarchy designer](media/hierarchy-designer.png)
 
 ## Additional resources
+
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+[Plan your organizational hierarchy](../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+
+[Create legal entities](channels-legal-entities.md)
+
+[Channels overview](channels-overview.md)
+
+[Channel setup prerequisites](channels-prerequisites.md)
