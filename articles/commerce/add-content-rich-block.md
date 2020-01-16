@@ -36,7 +36,7 @@ This topic covers text block modules and describes how to add them to site pages
 
 ## Overview
 
-A text block module is a module used for adding textual content that can be informational or promotional.
+A text block module is a module that is used to add textual content. This content can be informational or promotional.
 
 Text block modules are driven by data from the content management system (CMS) and can be put on any page. They are stand-alone modules that don't depend on page context or any other modules.
 
@@ -51,11 +51,11 @@ Text block modules can be used in the following ways:
 
 ## Text block module properties
 
-| Property name | Value          | Description |
-|---------------|----------------|-------------|
-| Rich text     | Rich text | Paragraph text. Some basic rich text capabilities are supported, such as bold, underlined, and italic text. |
-|Custom class name| CSS class name| The name of a custom CSS class provided by a developer to format this module. The class name should be defined in the theme pack.|
-|Font size| Small, Medium, Large, X-Large| This property specifies the font size for the content. |
+| Property name     | Value                                            | Description |
+|-------------------|--------------------------------------------------|-------------|
+| Rich text         | Rich text                                        | Paragraph text. Some basic rich text capabilities are supported, such as bold, underlined, and italic text. |
+| Custom class name | A Cascading Style Sheets (CSS) class name        | The name of a custom CSS class that a developer provides to format this module. The class name should be defined in the theme pack. |
+| Font size         | **Small**, **Medium**, **Large**, or **X-Large** | The font size of the content. |
 
 ## Add a text block module to a page
 
@@ -63,13 +63,13 @@ To add a text block module to a new page and set the required properties, follow
 
 1. Create a page template that is named **Content template**. 
 1. In the **Body** slot, add a **Default page** module.
-1. Finish editing and publish the template.
+1. Finish editing the template, and publish it.
 1. Use the content template that you just created to create a page that is named **Content page**.
 1. In the **Main** slot of the new page, add a container module.
 1. In the **Container** property pane, set the **Width** property to **Fill container**.
-1. Add a **Text block** module to the container module. 
-1. In the text block module property pane, add text to the **Rich text** field.
-1. Finish editing and publish the page.
+1. Add a text block module to the container module. 
+1. In the property pane of the text block module, add text to the **Rich text** field.
+1. Finish editing the page, and publish it.
 
 ## Additional resources
 
