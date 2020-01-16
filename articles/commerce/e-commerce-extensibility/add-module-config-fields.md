@@ -240,6 +240,27 @@ The following example shows how the various supported data types are used.
 ### css config type
 Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via this.props.config.className. Note that config types with type css will not be directly accessible from this.props.config as they are merged into this.props.config.className. 
 
+
+### className property
+Every content module’s will includes a built in config named **className** that is accessible inside the module’s view via **this.props.config.className**.  This config field will show up in the site authoring tools allowing a page author to add a string of space separated CSS class names that will be appended to the module root class.
+
+### __cssClassName__ property 
+**__cssClassName__** is another special property that is declared inside of a module’s definition file. It provides a way for the module creator to give an non-authorable, non-editable read-only className which will always be applied to the module. It therefore, must have its editable property set to false and must provide a default value. 
+
+In the below example, the module creator has given this field a default value of hero. This means that every instance of this module will always have the class ‘hero’ as part of this.props.config.className. 
+
+```json
+...    
+    "__cssClassName__": {
+        "default": "hero",
+        "editable": false,
+        "friendlyName": "Readonly CSS Class Name(s)",
+        "description": "Provides a way to set constant, unchangeable default css class(es) to apply to your module.",
+        "type": "string"
+    },
+...
+```
+
 ### Use mock data in configuration fields for local testing 
 
 The following example shows how to set a mock value for a new configuration field in the **mocks/MODULE\_NAME.json** file. Mock data is useful when a module is rendered in a local development environment.
