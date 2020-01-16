@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Print ER destination type
-description: You can configure a screen destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents in either PDF or Microsoft Office formats (Excel\Word). Based on the setting of such destination, a generated document is sent to a network printer for direct printing.
+title: Printer ER destination type
+description: You can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents in either PDF or Microsoft Office formats (Excel\Word). Based on the setting of such destination, a generated document is sent to a network printer for direct printing.
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# <a name="PrintDestinationType">Print destination</a>
+# <a name="PrinterDestinationType">Printer destination</a>
 
 [!include [banner](../includes/banner.md)]
 
