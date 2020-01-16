@@ -42,7 +42,7 @@ With traditional personalization, users could only have a single set of personal
 
 -    Views created for particular page types can also include user-added filters or sorts, which allows users to quickly return to commonly filtered datasets. See the [What pages support views](saved-views.md#what-pages-support-views) section for more details. 
 
--    Views can be published to users in specific security roles and specific legal entities. Therefore, any user who has a specified role in a specified legal entity can access and use that view, even though that user might not be able to personalize it. This publish capability lets organizations define corporate, standard views that are optimized for their business. For more information, see the [Managing personalizations at an organizational level with views](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) section.
+-    Views can be published to users in specific security roles and specific legal entities. Therefore, any user who has a specified role and access to a specified legal entity can access and use that view, even though that user might not be able to personalize it. This publish capability lets organizations define corporate, standard views that are optimized for their business. For more information, see the [Managing personalizations at an organizational level with views](saved-views.md#managing-personalizations-at-an-organizational-level-with-views) section.
 
 -    Unlike traditional personalization, views are not automatically saved when a user performs explicit personalizations or filters a list. Explicit saves are required to provide flexibility in creating a view before or after the changes associated with that view have been made and to ensure that view definitions are not unintentionally altered by filters or personalizations that are not intended for long-term use.  
 
@@ -76,7 +76,7 @@ If you want to save those changes, follow these steps.
 2.	To modify the existing view:
      1. Select **Save**. Note that this action will not be enabled for locked views. 
 3.	To create a new view:
-     1.    Select **Save as**. 
+     1.    Select **Save as...**. 
      2.    Enter a view name and (optionally) a description.
      3.    Select **Save**.
 
@@ -88,7 +88,7 @@ To change the default view for a page, follow these steps:
 2.	Select the view name to open the view selector. 
 3.	Select **More** and then **Pin as default**.  
 
-Alternatively, when you create a new view (by using the **Save as** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
+Alternatively, when you create a new view (by using the **Save as..** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
 
 Note that in some cases, the query associated with the default view does not execute when you first navigate to a page. For example, if you navigate through a tile to a page, the tile's query will be executed regardless of the query associated with the default view. Also, if you navigate to a page whose Classic view already has a defined query, the original query will execute originally in place of the default view's query. When this happens, you will be alerted by an informational message when the view is loading. Switching views after the page has loaded should allow the view query to execute as expected.
 
