@@ -37,12 +37,12 @@ This topic covers container modules and describes how to add them to site pages 
 
 ## Overview
 
-A container module is a module that hosts other modules inside it. The primary purpose of a container module is to define, through the properties that are set for it, the layout of the modules it contains. For example, those modules can appear side by side in a two-column, three-column, four-column, or six-column layout. They can also be limited to the width of the container, or they can fill the screen. A heading can also be added to every container module.
+A container module is a module that hosts other modules inside it. The primary purpose of a container module is to define, through the properties that are set for it, the layout of the modules that it contains. For example, those modules can appear side by side in a two-column, three-column, four-column, or six-column layout. They can also be limited to the width of the container, or they can fill the screen. A heading can also be added to every container module.
 
-There are three supported container modules: container, container with 2-slots, and container with 3-slots. Modules of any type can be placed inside these containers. 
+Three container modules are supported: container, container with 2-slots, and container with 3-slots. Modules of any type can be put inside these containers. 
 
 > [!NOTE] 
-> It is recommended that you always put modules inside a container module, so that they can be limited to the width of the container.
+> We recommend that you always put modules inside a container module, so that they can be limited to the width of the container.
 
 ## Examples of container modules in e-Commerce
 
@@ -105,17 +105,17 @@ To add a container player module to a new page and set the required properties, 
 
 1. Create a page template that is named **container template**. 
 1. In the **Body** slot, add a **Default page** module.
-1. Finish editing and publish the template.
+1. Finish editing the template, and publish it.
 1. Use the container template that you just created to create a page that is named **container page**.
 1. In the **Main** slot of the new page, add a container module.
 1. In the **Container** property pane, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
 1. In the container module, add a content block module.
 1. In the property pane for the content block module, configure the heading, image, and layout.
 1. Save and preview the page. You should see one feature module that fits within the width of the container module.
-1. In the **Container** property pane, change the the value of the **Number of columns** property to **3**.
+1. In the **Container** property pane, change the value of the **Number of columns** property to **3**.
 1. Add two more content block modules to the container module.
 1. Save and preview the page. You should now see three content block modules that appear side by side.
-1. After you've achieved the layout that you want, finish editing and publish the page.
+1. After you've achieved the layout that you want, finish editing the page, and publish it.
 
 ## Additional resources
 
