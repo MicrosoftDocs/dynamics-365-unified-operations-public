@@ -58,7 +58,7 @@ Below image shows an example product being added.
 
 ![Create a product](media/create-new-product.png)
 
-Once the product is added additional data can be set on it such as the **Product description**,  **Product attributes**, **Dimension groups** and **Related products**.
+Once the product is added additional data can be set on it such as the **Product description**, **Variant groups**, **Dimension groups**, **Product attributes** and **Related products**.
 
 Below image shows a products additional details.
 ![Product details](media/create-new-product-2.png)
