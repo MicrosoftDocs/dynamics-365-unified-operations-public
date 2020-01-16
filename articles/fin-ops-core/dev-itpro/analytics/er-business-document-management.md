@@ -5,7 +5,7 @@ title: Business document management overview
 description: This topic provides information about how to use the Business document management feature of the ER framework.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/13/2020
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -152,7 +152,7 @@ For information about how to set up the required document management parameters 
 
 ![Set up Document management document type](./media/BDM-Overview-DMSetting.png)
 
-### Set up parameters
+### <a name="SetupBdmParameters">Set up parameters</a>
 
 Basic Business document management parameters can be set up on the **Business document parameters** page. Only specific users can access the page. This includes:
 
@@ -171,6 +171,9 @@ Use the following procedure to set up the basic parameters for all legal entitie
 ![Set up of Business document management parameters](./media/BDM-Overview-BDMSetting.png)
 
 The selected document type is company-specific and will be used when the user is working with Business document management in the company for which the selected document type is configured. When the user is working with Business document management in another company, the same selected document type will be used if one has not been configured for this company. When a document type has been configured, it will be used instead of the one selected in the **SharePoint document type** field.
+
+> [!NOTE]
+> The **SharePoint document type** parameter defines a SharePoint folder as temporary storage for templates that are editable using either Microsoft Excel or Word. You need to set up this parameter if you plan to use these Office desktop applications for editing templates. For more information, see [Edit a template in the Office desktop application](#EditInOfficeDesktopApp). You can keep this parameter blank if you plan to modify the template by only using the functionality in  Office 365. For more information, see [Edit a template in Office 365](#EditInOffice365).
 
 ## Configure access permissions
 
@@ -290,13 +293,16 @@ The **BDM template editor** page will open. The selected template will be availa
 
 ![Business document management workspace page](./media/BDM-Overview-EditingLayout1.png)
 
-### Edit a template in Office 365
+### <a name="EditInOffice365">Edit a template in Office 365</a>
 
-Modify the template by using the functionality of the Office 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored for the editable template that is stored in the primary template’s storage (by default, the Azure blob storage) that is configured for the ER framework.
+You can modify the template using Office 365. For example, in Office online, change the font of the field prompts in the template header from **Regular** to **Bold**. These changes are automatically stored in the editable template that is stored in the primary template’s storage (by default, the Azure blob storage). This is configured for the ER framework.
 
 ![Business document management template editor page](./media/BDM-Overview-EditingLayout2.png)
 
-### Edit a template in the Office desktop application
+### <a name="EditInOfficeDesktopApp">Edit a template in the Office desktop application</a>
+
+> [!NOTE]
+> This function is only available when the **SharePoint document type** parameter is properly configured. For more information, see [Configure parameters](#SetupBdmParameters).
 
 1. Select the **Open in Desktop App** option to modify the template by using the functionality of the Office desktop application (Excel in this example). The editable template is copied from the permanent storage to the temporary storage configured in the Business document management parameters as a SharePoint folder.
 2. Confirm that you want to open the template from the temporary file storage in the Office desktop Excel application.
