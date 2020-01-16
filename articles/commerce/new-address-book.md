@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create new address book
-description: 
+title: Create a new address book
+description: This topic describes how to create address books in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -33,17 +33,21 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of creating address books for Microsoft Dynamics 365 Commerce.
+This topic describes how to create a new address book in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Address books are used in Microsoft 365 Commerce for various reasons including storing customer lists and employee lists for a channel.  Address book can be used for single channel use or shared between channels.  The below steps are used to create an address book.
+Address books are used in Microsoft 365 Commerce for various reasons including storing customer lists and employee lists for a channel.  Address books can be used for a single channel or shared between channels.
 
 ## Create a new address book
-The following procedure explains how to create a legal entity from within Commerce Headquarters app.
 
-1. Go to **Navigation pane** > **Modules** > **Channel setup** > **Address books**.
-1. From the action bar, click **New**.
+
+To create a new address book, follow these steps.
+ 
+1. Go to **Navigation pane \> Modules \> Channel setup \> Address books**.
+1. On the action bar, select **New**.
+1. Enter name and description information.
+1. On the action bar, select **Save**.
 
 The following image shows the creation of an employee address book for a retail store.
 
