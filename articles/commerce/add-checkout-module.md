@@ -38,13 +38,13 @@ This topic describes how to add a checkout module to a page and set the required
 
 ## Overview
 
-A checkout module is a special container that hosts all modules that are required to create an order, and presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information, and also provides order summary and other information related to a customer order.
+A checkout module is a special container that hosts all modules that are required to create an order. It presents a step-by-step flow that a customer uses to enter all the relevant information to make a purchase. It captures the shipping address, shipping method, and billing information. It also provides an order summary and other information that is related to a customer order.
 
 A checkout module renders data based on the cart ID. This cart ID is saved as a browser cookie. A cart ID is required to render information in the checkout module, such as the items in the order, the total amount, and discounts.
 
 ## Checkout module properties
 
-A checkout module displays the order summary and provides the functionality to place an order. To gather all of the customer information needed before an order can be placed, additional modules must be added to the checkout module. This gives the flexibility to add custom modules or exclude modules from the checkout flow based on the needs of the retailer.
+A checkout module shows an order summary and provides the functionality for placing an order. To gather all the customer information that is required before an order can be placed, additional modules must be added to the checkout module. Therefore, retailers have the flexibility to add custom modules to the checkout flow, or to exclude modules, based on their requirements.
 
 ### Modules that can be used in the checkout module
 
@@ -56,7 +56,7 @@ A checkout module displays the order summary and provides the functionality to p
 - **Payment** – This module lets a customer pay for an order by using a credit card. If the total amount in the cart is covered by loyalty points or a gift card, or if it's 0 (zero), this module is automatically hidden. Credit card integration is provided by the Adyen payment connector for this module. For more information about how to use this connector, see [Adyen payment connector](https://).
 - **Billing address** – This module lets a customer provide billing information. This information is processed, together with the credit card information, by Adyen. This module includes an option that lets customers use their billing address as the shipping address.
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
-- **Textblock** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, please contact 1-800-FABRIKAM." 
+- **Textblock** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
 ## Retail server interaction
 
@@ -70,9 +70,9 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Add a checkout module to the fragment.
 1. Add a heading to the checkout module.
 1. Add shipping address, delivery options, checkout section container, and contact information modules. 
-1. In the checkout section container module, add gift card, loyalty points, and  payment modules. In this way, you make sure that all the payment methods appear together in a section.
-1. Save and preview the fragment. Some modules that don't have a cart context may not render in the preview.
-1. Finish editing and publish the fragment.
+1. In the checkout section container module, add gift card, loyalty points, and payment modules. In this way, you make sure that all the payment methods appear together in a section.
+1. Save and preview the fragment. Some modules that don't have a cart context might not be rendered in the preview.
+1. Finish editing the fragment, and publish it.
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
 
