@@ -48,7 +48,7 @@ The top of a PDP has a header that shows all the product categories and other pa
 
 ## Buy box module
 
-The most important module on a PDP is the buy box module, which appears as the first item in the main section of the page. A buy box module displays important product information including product name, product description, product price, product images, and product ratings.
+The most important module on a PDP is the buy box module, which appears as the first item in the main section of the page. A buy box module shows important product information, such as the product name, the product description, the product price, product images, and product ratings.
 
 The buy box module lets the customer select product options (for example, a size, style, and color) and add the product to the cart. It also lets the customer buy the product online and pick it up in a store. The buy online and pick up in store module uses integration with Bing Maps application programming interfaces (APIs) to find nearby stores or stores in another location that the customer specifies.
 
@@ -71,11 +71,17 @@ Different types of recommendation lists are available:
 
 ## Ratings and reviews modules
 
-There are three modules that can be used for displaying and adding reviews: the reviews module, the write review module, and the ratings histogram module. The reviews module lists ratings and reviews that have been provided by other customers, and lets customers sort and filter reviews. It also enables customers to like or dislike reviews, and to report issues. The write review module enables customers to write their own reviews of a product. The ratings histogram module includes a histogram that shows the ratings trend for a product. For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
+Three modules can be used to show and add reviews:
+
+- **Reviews** – This module lists ratings and reviews that have been provided by other customers. Customers can sort and filter the reviews. This module also lets customers like or dislike reviews, and report issues.
+- **Write review** – This module lets customers write their own reviews of a product.
+- **Ratings histogram** – This module includes a histogram that shows the ratings trend for a product.
+
+For more details, see [Ratings and reviews overview](ratings-reviews-overview.md).
 
 ## Marketing modules
 
-If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. For more details see [Enrich a product page](enrich-product-page.md).
+If marketing content is unique to a specific product, any marketing module can be added to the PDP. You can add marketing modules to a PDP by "enriching" the page. For more details, see [Enrich a product page](enrich-product-page.md).
 
 ## Additional resources
 
