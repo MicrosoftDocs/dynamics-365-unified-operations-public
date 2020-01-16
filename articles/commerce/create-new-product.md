@@ -54,6 +54,14 @@ A product is primarily defined by a product number, name, and description. Howev
 1. Select an appropriate **Configuration technology**.
 1. Select the "OK" button to save.
 
+Below image shows an example product being added.
+
 ![Create a product](media/create-new-product.png)
+
+Once the product is added additional data can be set on it such as the **Product description**,  **Product attributes**, **Dimension groups** and **Related products**.
+
+Below image shows a products additional details.
+![Product details](media/create-new-product-2.png)
+
 
 ## Additional resources
