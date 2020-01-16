@@ -61,17 +61,41 @@ Below image shows an example product being added.
 Once the product is added additional data can be set on it such as the **Product description**, **Variant groups**, **Dimension groups**, **Product attributes** and **Related products**.
 
 Below image shows a products additional details.
+
 ![Product details](media/create-new-product-2.png)
 
-## Product Variants
+### Product Variants
 Specific variants need to be created for a product master.  
 1. On the **Action pane**, select **Product variants**.
 1. If variant groups have been selected on the **Action pane**, select **Variant suggestions*.
 1. Select the variants you would like to support on the product.
 1. Select the **Create** button to create the variants.
 
-Below image shows a sample product variants.
-![Product variants](media/create-new-product-3.png)
 
+## Release product
+To sell a product it must first be released to a legal entity.
+1. From the product page, select **Release products**.
+
+Below image shows a sample product variants and where to find the **Release product** link.
+
+![Release product](media/create-new-product-3.png)
+
+1. Select the product to release and the **Next** button.
+
+![Choose product to release](media/create-new-product-4.png)
+
+1. Select the set of variants of the product to release followed by selecting the **Next** button.
+
+![Choose variants to release](media/create-new-product-5.png)
+
+1. Select the legal entity followed by the **Next** button.
+
+![Choose legal entity](media/create-new-product-6.png)
+
+1. Select the **Finish** button to complete the product release.
+
+![Finish product release](media/create-new-product-7.png)
 
 ## Additional resources
+legal entity
+variant groups
