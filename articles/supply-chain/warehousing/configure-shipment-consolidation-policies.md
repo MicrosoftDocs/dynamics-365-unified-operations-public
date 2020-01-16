@@ -35,15 +35,15 @@ ms.dyn365.ops.version: 10.0.3
 
 *Released in version 10.0.3*
 
-[TBD] To add high-level description of what are we trying to achieve by scenarios in this article.
+The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. After the feature is enabled, initial configuration of policies has to be done. If not configured at all, each sales line will generate a separate shipment with a single load line.
 
 ## Scenario 1: Configure default shipment consolidation policies
 
-[TBD] To add high-level description of what will be covered in the scenario.
+There are two potential cases where you activate the feature and have to configure the minimum number of default policies: setting up a completely new environment and upgrading environment with data in it. For example sake, both scenarios are described assuming you use **Contoso** demo data and **USMF** company. So, the second case includes a step where you have to set the **Consolidate shipment at release to warehouse** option to **Yes** on one or more warehouses before enabling the feature.
 
 ### Default policies setup – new environment
 
-To set up default shipment consolidation policies on a brand new environment, follow steps below.
+To set up default shipment consolidation policies on a brand new environment, follow steps below. This assumes that the **Consolidate shipments** feature is already enabled in the **Feature management** workspace.
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 2. Click **Create default setup**.
@@ -60,9 +60,10 @@ To set up default shipment consolidation policies on an environment where wareho
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 2. In the list, find and select the desired warehouse record.
 3. Click **Edit**.
-4. On the **Warehouse** FastTab, set the **Consolidate shipment at release to warehouse** option to **Yes**
+4. On the **Warehouse** FastTab, set the **Consolidate shipment at release to warehouse** option to **Yes**.
 5. Repeat steps 2 through 4 for all warehouses where consolidation is needed.
 6. Close the page.
+1. Enable the **Consolidate shipments** feature in the **Feature management** workspace.
 7. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 8. Click **Create default setup**.
     1. A **CrossOrder** policy will be created for **Sales orders** policy type.
@@ -81,9 +82,9 @@ To set up default shipment consolidation policies on an environment where wareho
 
 ## Scenario 2: Configure custom shipment consolidation policies
 
-[TBD] To add high-level description of what will be covered in the scenario.
+This scenario assumes that the company has complex business requirements, and shipment consolidation has to depend on several conditions. The following examples include a short description of the business case and are supposed to be set up in a sequence that ensures the "pyramid-like" evaluation of the queries (the policies with most conditions should be evaluated with a higher priority).
 
-[TBD] Also add few words about required preconditions (items, mode of delivery, etc.).
+The master data needed to filtering is described first, and is a precondition for processing scenarios referenced here: [Consolidate shipments](../warehousing/consolidate-shipments.md).
 
 ### Product filter codes
 

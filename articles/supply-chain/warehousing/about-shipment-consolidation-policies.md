@@ -58,7 +58,7 @@ The policies are differentiated based on work order types (**Sales orders** to r
 
 Each shipment consolidation policy has a query used to define its applicability and a sequence number in which it will be applied. The consolidation is applied for each unique combination of the selected fields. An additional parameter to consolidate with existing (open) shipments is included. The policies are evaluated and applied when new shipments are created (i.e. before wave processing).
 
-If a policy either doesn’t have any mandatory field or has any prohibited field in the _“Selected”_ section, the policy is marked as invalid. The lists of mandatory/forbidden fields are hardcoded and can be extended.
+If a policy either doesn’t have any mandatory field or has any prohibited field in the **Selected** section, the policy is marked as invalid. The lists of mandatory/forbidden fields are hardcoded and can be extended.
 
 The mandatory field list (the shipments are always split by these fields, or in other words you cannot group several shipments with different values on these fields):
 
@@ -85,7 +85,7 @@ Following fields are unavailable to the user for all document types (these field
 - **Shipment ID**: _WHSLoadLine.ShipmentId_
 - **Load ID**: _WHSLoadLine.LoadId_
 
-The consolidation fields default to the mandatory set of fields when a new policy is created, but can be modified with left-right arrows (similar user interaction pattern as for methods in _Wave templates_).
+The consolidation fields default to the mandatory set of fields when a new policy is created, but can be modified with left-right arrows (similar user interaction pattern as for methods in **Wave templates**).
 
 Values of these fields, selected by a user, will be equal in a new shipment being created or added to an existing shipment (consolidate with existing shipment). When the values of a field selected for consolidation of two shipments is the same the shipment are consolidated (if this remain the case for all the subsequent selected consolidation fields), if they differ then the second shipment is discarded and will be selected for a new shipment. The process during the automated consolidation consists of creating all the unique combination of values of the consolidate shipment fields and assign the shipment to the relevant combination.
 
