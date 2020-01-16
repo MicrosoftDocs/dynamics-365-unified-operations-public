@@ -40,7 +40,7 @@ You can use this option to send a generated output directly to a network printer
 
 You need to install in advance the Document Routing Agent, configure it and register network printers. See [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent) for more.
 
-## Enable Print destination
+## Enable Printer destination
 
 To make the **Printer** destination available in the current Finance instance, you need to open the **Feature management** workspace and enable the **Document Routing Agent as Electronic Reporting destination for outbound documents** feature.
 
