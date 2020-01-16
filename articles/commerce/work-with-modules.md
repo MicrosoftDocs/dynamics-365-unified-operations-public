@@ -103,12 +103,10 @@ The following procedures describe how to configure content and container modules
 
 To configure a content module on a page, follow these steps.
 
-1. In the outline pane on the left, select a content module type (for example, **Feature**, **Hero**, or **Banner**).
-1. In the properties pane on the right, expand the nested controls by selecting the headers, and set any required control values.
-1. If the properties pane has a **Data Configuration** section, select it to expand it. Otherwise, go to step 5.
-1. If there is a **Add Data Source** button, select it, and then select the content items to add.
-1. Enter settings for any required or desired module controls.
-1. Select **Save**.
+1. In the outline pane on the left, expand the tree and select any content module (for example, **Feature**, **Hero**, or **Banner**).
+1. In the properties pane on the right, find the module's content and settings controls.
+1. Enter settings values for any desired module controls.
+1. Click **Save** in the command bar.  This will also refresh the preview canvas.
 
 ### Configure a container module
 
