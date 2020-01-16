@@ -1,28 +1,31 @@
 # Change work pool on work
 
-This features adds a **Change work pool** button, which makes it easy for warehouse managers to change the work pool of existing Work IDs. It enables managers to react quickly to  changes on the shop floor and improves their ability to streamline physical processes by changing situations.
+This features adds a **Change work pool** button <!-- KFM: Where? -->, which makes it easy for warehouse managers to change the work pool of existing work records. It enables managers to react quickly to changes on the shop floor and improves their ability to streamline physical processes by changing situations.
 
-<!-- KFM: What is a "work ID". What is "work" in this context? What do you mean by "improves their ability to streamline physical processes by changing situations"? -->
+<!-- KFM: What do you mean by "improves their ability to streamline physical processes by changing situations"? -->
 
 ## Set up the change work pool feature
 
 This feature is automatically available to warehouses that use work pools in their process. You don't have to do anything to enable it.
 
-<!-- KFM: If no setup is required, then what are the following two procedures for? -->
+<!-- KFM: If no setup is required, then what are the following two procedures for? Or is this about enabling the feature? -->
 
-### Work pool
+### Set up your work pools
 
-<!-- KFM: What are we doing here? Why? -->
+Work pools enable you to organize work records by type. To work with this feature you must have at least two work pools available. To view and add work pools:
 
-1. Go to **Warehouse management** > **Setup** > **Work** > **Work pools**
-1. Select **New** on the command bar to add a new row to the **Work pools** table.
-1. Set the **Work pool ID** to "Webshop" for the new row.
-1. Add a second row and set its **Work pool ID** of "CallCenter". <!-- KFM: Do we really need these specific values? Or are these just examples? -->
-1. Select **Save** on the command bar. <!-- KFM: When I did this, all the other rows went away. Is that normal? -->
+1. Go to **Warehouse management** > **Setup** > **Work** > **Work pools**.
+1. If you don't see the work pools you need, then do the following:
+    - Select **New** on the command bar to add a new row to the **Work pools** table.
+    - Assign a **Work pool ID** to identify the new work pool.
+    (If you're working with the **USMF** company demo data and will work through the sample scenario later in this topic, then set the **Work pool ID** to "Webshop" and also add a second work pool with a **Work pool ID** of "CallCenter".)
+1. Continue adding work pools as needed.
 
-### Work template
+1. Select **Save** on the command bar.
 
-<!-- KFM: What are we doing here? Why? -->
+### Set up your work templates
+
+<!-- KFM: Add intro. What are we doing here? Why? -->
 
 1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
 1. Select **Edit** on the command bar to put the page into edit mode.
