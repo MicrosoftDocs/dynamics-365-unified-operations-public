@@ -96,6 +96,19 @@ Below image shows a sample product variants and where to find the **Release prod
 
 ![Finish product release](media/create-new-product-7.png)
 
+## Configure Released product
+Once a product is released, it will then require further configuration including adding a price to the product.
+1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Released products by category**.
+1. Select the product category node for the product that was released and select the product in the product list.
+1. On the **Action pane**, select **Edit** to edit the product.
+1. Configure any required properties including the **Unit**, **Price** and **Quantity** in the **Purchase** section.
+1. Once complete, on the **Action pane**, select **Validate** and ensure no errors are reported for missing fields.
+1. On the **Action pane**, select **Save**
+
+Below image shows a sample released product configuration.
+
+![Configure released product](media/create-new-product-8.png)
+
 ## Additional resources
 legal entity
 variant groups
