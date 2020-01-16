@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create a variant group
+# Create a product
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -39,7 +39,7 @@ This topic describes how to create a new product in Microsoft Dynamics 365 Comme
 
 A product is primarily defined by a product number, name, and description. However, other data is also required in order to describe a product or service:
 
-## Create a size group
+## Create a product
 
 1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Products by category**.
 1. On the **Action pane**, select **New** to create a new product.
@@ -55,20 +55,5 @@ A product is primarily defined by a product number, name, and description. Howev
 1. Select the "OK" button to save.
 
 ![Create a product](media/create-new-product.png)
-
-### Add sizes to the size group
-1. In the **Size group lines** section select **Add**.
-1. Provide a string representing the **Size**.
-1. Provide a **Size name**.
-1. Provide a **Replenishment weight**.
-1. Provide a **Number in bar code**.
-1. Provide a **Display order**.
-1. When finished adding sizes, on the **Action pane**, select **Save**.
-
-The following image shows an example of a size group for "casual shirt sizes".
-
-![Create size group](media/create-new-product.png)
-
-The above can be adapted to create color and style groups.
 
 ## Additional resources
