@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Legal entities
-description: This topic is an overview of Microsoft Dynamics 365 Commerce legal entities, which must be created and configured before creating channels.
+title: Create legal entities
+description: This topic describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -33,13 +33,15 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic is an overview of Microsoft Dynamics 365 Commerce legal entities, which must be created and configured before creating channels.
+This topic describes how to create legal entities in Microsoft Dynamics 365 Commerce, which must be created and configured before creating channels.
 
 ## Overview
 
 A legal entity is an organization that has a registered or legislated legal structure. Legal entities can enter into legal contracts and are required to prepare statements that report on their performance.
 
-A company is a type of legal entity. Currently, companies are the only kind of legal entity that you can create, and every legal entity is associated with a company ID. This association exists because some functional areas in the program use a company ID, or *DataAreaId*, in their data models. In these functional areas, companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to. When creating a channel you must specify which legal entity that channel belongs to.
+A company is a type of legal entity. Currently, companies are the only kind of legal entity that you can create, and every legal entity is associated with a company ID. This association exists because some functional areas in the program use a company ID, or *DataAreaId*, in their data models. In these functional areas, companies are used as a boundary for data security. Users can access data only for the company that they are currently logged on to. 
+
+When creating a channel, you must specify which legal entity that channel belongs to.
 
 ## Create a new legal entity
 
