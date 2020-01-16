@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up call center channels
-description: This topic provides information about how to process orders for call centers by using Dynamics 365 Retail.
+description: This topic provides information about how to process orders for call centers by using Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -34,13 +34,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-A company can define multiple call center channels in Dynamics 365 Retail. Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
+A company can define multiple call center channels in Dynamics 365 Commerce. Call center channels are configured at **Retail and Commerce** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
 
-When a new call center channel is created, it's systematically assigned an operating unit number. Because call centers are created as operating units, users can link the call center channel to various Retail features, such as assortments, catalogs, and specific modes of delivery.
+When a new call center channel is created, it's systematically assigned an operating unit number. Because call centers are created as operating units, users can link the call center channel to various Commerce features, such as assortments, catalogs, and specific modes of delivery.
 
 A default warehouse can be configured on the call center channel. Then, when sales orders are created in that channel, the default warehouse is automatically entered on the sales order header, unless another warehouse has been defined on the customer that is selected for the sales order. In that case, the customer's warehouse is entered by default.
 
-Users must be linked to a call center channel to use the features of call center. Any sales order that a user creates in Retail is automatically linked to that user's call center channel. Currently, a single user may not be linked to multiple call center channels at the same time.
+Users must be linked to a call center channel to use the features of call center. Any sales order that a user creates is automatically linked to that user's call center channel. Currently, a single user may not be linked to multiple call center channels at the same time.
 
 An email notification profile can also be configured on the call center channel. The profile defines the set of email templates that is used when email is sent to customers who place orders through the call center channel. The email triggers can be configured against system events, such as order submission or order shipment.
 
@@ -66,7 +66,7 @@ Even if the **Enable order completion** setting is turned off, users can still a
 
 ### Enable direct selling
 
-If the **Enable direct selling** setting is turned for the call center channel, users can take advantage of the upsell and cross-sell features of Retail. In this case, pop-up windows appear during order entry and suggest other products that the call center user can offer to the customer. The products that are suggested are based on the product that was just ordered on the sales order line. Currently, the upsell and cross-sell suggestions are configured at the item level on products or catalogs. If the **Enable direct selling** setting is turned off for the call center channel, pop-up windows don't appear during order entry, even if a valid upsell or cross-sell was defined for an item that is being ordered.
+If the **Enable direct selling** setting is turned for the call center channel, users can take advantage of the upsell and cross-sell features of Commerce. In this case, pop-up windows appear during order entry and suggest other products that the call center user can offer to the customer. The products that are suggested are based on the product that was just ordered on the sales order line. Currently, the upsell and cross-sell suggestions are configured at the item level on products or catalogs. If the **Enable direct selling** setting is turned off for the call center channel, pop-up windows don't appear during order entry, even if a valid upsell or cross-sell was defined for an item that is being ordered.
 
 When the **Enable direct selling** setting is turned on, the scripts and images features of the sales order entry page are also turned on. In this case, an information panel is available on right side of the page during order entry. This panel can show scripts that are related to the generic order entry process, the catalog source code that was applied, or scripts that are related to the items that are being ordered. Additionally, the images panel can show a product image for the items that are being ordered, if an image has been defined for the item in the product setup.
 
@@ -76,12 +76,12 @@ When the **Enable order price control** setting is turned, only authorized users
 
 ## Channel users
 
-When you define the call center channel, you must link channel users to the call center. Otherwise, the call center can't be used in the system. When users sign in to Retail and enter sales orders or return orders on a page that is related to order entry, their user ID is validated against the configuration of the call center channel. If a user is linked to a specific call center channel, orders that the user creates inherit the traits and default values of that channel.
+When you define the call center channel, you must link channel users to the call center. Otherwise, the call center can't be used in the system. When users sign in to Commerce and enter sales orders or return orders on a page that is related to order entry, their user ID is validated against the configuration of the call center channel. If a user is linked to a specific call center channel, orders that the user creates inherit the traits and default values of that channel.
 
-By default, the **Retail sale** flag on the sales order header is turned on for all orders that call center users create. The orders can then take advantage of the system's retail-specific price and promotions features.
-
-
-Users who aren't linked to a call center channel use the standard order entry features of Microsoft Dynamics 365 Finance. Orders that these users enter through the sales order entry form will not be systematically identified as Retail orders. Additionally, these orders entered by these users will not be subject to any of the order completion processing rules, retail pricing logic, or other order validations that can be defined in the call center channel configuration or call center system parameters.
+By default, the **Sale** flag on the sales order header is turned on for all orders that call center users create. The orders can then take advantage of the system's commerce-specific price and promotions features.
 
 
-After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.
+Users who aren't linked to a call center channel use the standard order entry features of Microsoft Dynamics 365 Finance. Orders that these users enter through the sales order entry form will not be systematically identified as Commerce orders. Additionally, these orders entered by these users will not be subject to any of the order completion processing rules, pricing logic, or other order validations that can be defined in the call center channel configuration or call center system parameters.
+
+
+After you've finished configuring the call center channel and defining channel users, to help guarantee the desired system behavior, make sure that all required Call center parameters are defined at **Retail and Commerce** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. Make sure that related number sequences are also defined.
