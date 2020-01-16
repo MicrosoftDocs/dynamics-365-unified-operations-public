@@ -88,25 +88,25 @@ To set up default shipment consolidation policies on an environment where wareho
 ### Product filter codes
 
 1. Go to **Warehouse management \> Setup \> Product filters \> Product filters** and create two  filter codes of **Code 4** filter title.
-    - For example, **Flammable** and **Explosive**.
+    1. For example, **Flammable** and **Explosive**.
 
 2. Go to **Product information management \> Products \> Released products** and set up two different WHS-enabled items with **Flammable** product filter code (**Code 4** field on the **Warehouse** FastTab) and one item with **Explosive** product filter code.
 
 ### Mode of delivery
 
 1. Go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery** and create a mode of delivery that is different from a default mode of delivery used by the customer.
-    - For example, customer **US-001**, default mode of delivery is **10**, another mode of delivery would be **Air**.
+    1. For example, customer **US-001**, default mode of delivery is **10**, another mode of delivery would be **Air**.
 
 ### Order pool
 
 1. Go to **Sales and marketing \> Setup \> Sales orders \> Order pools** and create a new order pool that will be used for consolidation query.
-    - For example, **Consolidate**.
+    1. For example, **ShipCons**.
 
 2. Go to **Sales and marketing \> Customers \> All customers** and assign new pool to **US-003** and **US-004** customers on the **Sales order defaults** FastTab.
 
 ### Shipment consolidation policies
 
-This setup assumes the script for Scenario 1 (above) has been followed previously.
+This setup assumes the Scenario 1 described above has been already executed.
 
 #### Add Policy 1
 
