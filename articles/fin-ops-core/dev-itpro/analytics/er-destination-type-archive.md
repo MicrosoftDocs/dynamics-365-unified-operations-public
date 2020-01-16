@@ -43,6 +43,16 @@ The location determines where the file is saved. After the **Archive** destinati
 > [!NOTE]
 > You can select a document type for the Job archive at **Organization administration** \> **Workspaces** \> **Electronic reporting** \> **Electronic reporting parameters**. See [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md#prerequisites-for-er-setup) for more.
 
+## SharePoint
+
+You can save a file in a designated SharePoint folder. You define the default SharePoint server at **Organization administration** \> **Document management** \> **Document management parameters**, on the **SharePoint** tab. After the SharePoint folder is configured, you can select it as the folder where the ER output will be saved for the document type. The **SharePoint** location must be selected in this document type.
+
+[![Selecting a SharePoint folder](./media/ER_Destinations-SharePointDocuTypeLocation.png)](./media/ER_Destinations-SharePointDocuTypeLocation.png)
+
+## Azure Storage
+
+When the document type location is set to **Azure storage**, you can save a file to Azure Storage.
+
 ## Additional resources
 
 [Electronic reporting (ER) overview](general-electronic-reporting.md)
