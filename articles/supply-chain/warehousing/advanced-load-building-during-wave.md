@@ -58,7 +58,9 @@ You can set up as many load build templates as you need, but to use this feature
 <!-- KFM: Again, it seems like we have no other documentation about load build templates. Are these added by this feature? Should we say more about them here? -->
 
 1. Go to **Warehouse Management** > **Setup** >  **Load** > **Wave load building templates**.
+
 1. Select **New** on the action pane to add a new row to the table here. Then make the  following settings for the new row:
+
     | Setting | Instructions | **USMF** legal-entity demo value |
     |--|--|--|
     | **Sequence** | <!-- KFM: What is this? --> | 1 |
@@ -71,14 +73,20 @@ You can set up as many load build templates as you need, but to use this feature
     | **Create loads** | Choose whether to create a new load if no existing loads match the criteria. <!-- KFM: Which criteria? What happens if this is "no" and we don't have a match? --> | Yes (selected) |
     | **Allow shipment line split** | Choose whether to allow a single line to be split across multiple loads if the full line exceeds the load capacity. <!-- KFM: What happens if this is "no" and we are over capacity? --> | No (unselected) |
     | **Validate volumetrics** | Choose whether to evaluate the volumetric limits of the specified load template. <!-- KFM: Does the load template do anythign if this is set to "no"? What happens if this is "yes" and the check fails? --> | No (unselected) |
+
 1. Select **Edit query** on the action pane to open a flyout for editing the query.
+
 1. Open the **Sorting** tab in the flyout and select the **Add** button to add a new row here. Configure the row to define the sorting rules you want to use, for example by entering the following: <!-- KFM: It's not clear to me what we are doing here. -->
+
     - **Table**: Load details
     - **Derived table**: Load details
     - **Field**: Order number
     - **Search direction**: Ascending
+
 1. Select **OK** to save your changes and close the flyout.
+
 1. In the **Break by** FastTab, set rules to control how your loads will be split up. You might typically use this to break on custom fields that have been extended onto the load line, such as Route, Tour, Run, etc. For example, to create one load per order number, select the **Break by** check box for the row with the following values:
+
     - **Reference table name**: Load details
     - **Reference field name**: Order number
 
