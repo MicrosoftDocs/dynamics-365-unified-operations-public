@@ -38,39 +38,38 @@ This topic covers order details modules and describes how to use them in Microso
 
 ## Overview
 
-The order details module is used to display order confirmation details after the placement of an order. It shows the order confirmation ID, order contact information, and other order details such as items purchased, payment information, and shipping method.
-
+The order details module is used to show order confirmation details after an order has been placed. It shows the order confirmation ID, order contact information, and other order details, such as the items that were purchased, payment information, and the shipping method.
 
 ## Order confirmation module properties
 
-| Property name | Values | Description |
-|---------------|--------|-------------|
-| Heading       | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order confirmation module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
-|Contact number| Text| A contact number can be provided for order-related questions.|
+| Property name  | Values | Description |
+|----------------|--------|-------------|
+| Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | The order confirmation module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
+| Contact number | Text | A contact number can be provided for order-related questions. |
 
-## Modules that can be used on an order details page  
+## Modules that can be used on an order details page
 
-When creating an order details page, in addition to the order details module you can add other relevant modules to the page such as the following.
+When you create an order details page, you can add other relevant modules in addition to the order details module. Here are some examples:
 
 - **Recommendations module** – The recommendations module can be added to the order details page to suggest other products to the customer.
-- **Marketing modules** – Any marketing module can be added to to the order details page to display marketing content.
+- **Marketing modules** – Any marketing module can be added to the order details page to show marketing content.
 
 ## Create an order details page module
 
 1. Create a page template that is named **Order details template**.
 1. In the **Main** slot of the default page, add an order details module.
 1. In the order details module, add a recommendations module.
-1. Save and preview the template. The order details module will not be rendered, because it requires the context of the order confirmation number.
-1. Finish editing and publish the template.
+1. Save and preview the template. The order details module won't be rendered, because it requires the context of the order confirmation number.
+1. Finish editing the template, and publish it.
 1. Use the order details template that you just created to create a page that is named **order details page**.
 1. Add the default page to the page outline.
 1. In the **Header** slot, add a header fragment.
 1. In the **Footer** slot, add a footer fragment.
 1. In the **Main** slot, add an order details module.
-1. In the **Order details** property pane, add the heading **Order details**.
+1. In the property pane for the order details module, add the heading **Order details**.
 1. Below the order details module, add a recommendations module, and configure it so that it uses the **New** and **Best Selling** settings.
 1. Save and preview the page.
-1. Finish editing and publish the page.
+1. Finish editing the page, and publish it.
 
 ## Additional resources
 
