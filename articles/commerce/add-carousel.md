@@ -50,29 +50,28 @@ You can add content block modules inside a carousel module. The properties of th
 
 ## Carousel module properties
 
-| Property name             | Value                                | Description |
-|---------------------------|--------------------------------------|-------------|
-| Autoplay                  | **True** or **False**                | If the value is set to **True**, the transition between items inside the carousel occurs automatically. If the value is set to **False**, no transition occurs unless the customer uses the keyboard or mouse to move from one item to the next item. |
-| Slide transition interval | A value in seconds                   | The interval for transitions between items |
-| Transition type      | **Slide** or **Fade**                | The transition effect between items |
-| Hide carousel flipper| **True** or **False** | If the value is set to **True**, the carousel flipper and sequence indicator will be hidden.|
-| Allow carousel dismiss|**True** or **False** | If the value is set to **True**, the carousel will support a dismiss action by the user.|
-
+| Property name             | Value                 | Description |
+|---------------------------|-----------------------|-------------|
+| Autoplay                  | **True** or **False** | If the value is set to **True**, the transition between items inside the carousel occurs automatically. If the value is set to **False**, no transition occurs unless the customer uses the keyboard or mouse to move from one item to the next item. |
+| Slide transition interval | A value in seconds    | The interval for transitions between items. |
+| Transition type           | **Slide** or **Fade** | The transition effect between items. |
+| Hide carousel flipper     | **True** or **False** | If the value is set to **True**, the carousel flipper and sequence indicator are hidden. |
+| Allow carousel dismiss    | **True** or **False** | If the value is set to **True**, users can dismiss the carousel. |
 
 ## Add a carousel module to a page
 
 To add a carousel module to a new page and set the required properties, follow these steps.
 
 1. Create a page template that is named **carousel template**.
-1. In the **Body** slot add a **Default page**.
+1. In the **Body** slot, add a **Default page** module.
 1. Check in the template, and publish it. 
 1. Use the carousel template that you just created to create a page that is named **carousel page**.
 1. In the **Main** slot of the new page, add a container module. 
 1. In the pane on the right, set the **Width** value to **Fill Screen**.
 1. Under **Page Outline**, add a carousel module to the container module.
-1. Add a content block module to the carousel module. Set the properties of the content block module by providing **Heading*, **Link**, **Layout**, and other properties.
+1. Add a content block module to the carousel module. Set the properties of the content block module by providing **Heading**, **Link**, **Layout**, and other properties.
 1. Add and configure another content block module.
-1. Set additional properties to the carousel module as needed.
+1. Set additional properties for the carousel module as you require.
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
 1. Finish editing the page, and publish it.
 
