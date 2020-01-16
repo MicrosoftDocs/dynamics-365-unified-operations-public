@@ -45,20 +45,32 @@ For more information about Platform update 33, see [Additional resources](whats-
 ## Features included in this release
 
 ### Feature name (must match the name of feature found in Release Plans)
-For more information about this feature, see [Feature name](URL to feature description in Release Plans)
+To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+
+To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
+- [Title of content](URL of content)
+- [Title of content](URL of content)
 
 ### Feature name (must match the name of feature found in Release Plans)
-For more information about this feature, see [Feature name](URL to feature description in Release Plans)
+To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+
+To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
+- [Title of content](URL of content)
+- [Title of content](URL of content)
 
 ### Feature name (must match the name of feature found in Release Plans)
-For more information about this feature, see [Feature name](URL to feature description in Release Plans)
+To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+
+To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
+- [Title of content](URL of content)
+- [Title of content](URL of content)
 
 ### Feature name (must match the name of feature found in Release Plans)
-For more information about this feature, see [Feature name](URL to feature description in Release Plans)
+To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
 
-### Feature name (must match the name of feature found in Release Plans)
-For more information about this feature, see [Feature name](URL to feature description in Release Plans)
-
+To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
+- [Title of content](URL of content)
+- [Title of content](URL of content)
 
 ## Additional resources
 
