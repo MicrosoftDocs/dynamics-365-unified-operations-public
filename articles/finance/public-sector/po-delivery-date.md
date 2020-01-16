@@ -60,4 +60,4 @@ Select the purchase order in the list. Alternatively, click **New** and include 
 5. To use only business days to calculate the delivery date, set the **Working days** check box to **Yes**. The delivery date will update when the purchase order is approved and confirmed based on the lead time specified.
 6. Click **Save** to save the changes.
 
-[Note!] The delivery date will not be recalculated if the lead time is zero. 
+[Note!] Released items have the option to select a **Purchase lead time**. The **Purchase lead time** will auto calculate the the **Delivery date** when a Purchase order is created.  The **Delivery date** will not be recalculated if the **Lead time** on the purchase order line is zero. 
