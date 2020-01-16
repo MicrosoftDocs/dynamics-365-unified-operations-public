@@ -38,13 +38,13 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how to set up and use shifts in retail point of sale (POS).
 
-In Dynamics 365 Retail, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
+In Dynamics 365 Commerce, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
 
 Typically, shifts are opened at the start of the business day. At that point, a user declares the starting amount that the cash drawer contains. Sales transactions are then performed throughout the day. Finally, at the end of the day, the drawer is counted, and the closing amounts are declared. The shift is closed, and a Z report is generated. The Z report indicates whether there is an overage or shortage.
 
 ## Typical shift scenarios
 
-Retail provides several configuration options and POS operations to support a wide range of end-of-day business processes for the POS. This section describes some typical shift scenarios.
+Commerce provides several configuration options and POS operations to support a wide range of end-of-day business processes for the POS. This section describes some typical shift scenarios.
 
 ### Fixed till
 
@@ -68,7 +68,7 @@ Some retailers are willing to sacrifice the level of accountability that single-
 
 A "shared shift" configuration lets retailers have a single shift across multiple registers, cash drawers, and users. A shared shift has a single starting amount and a single closing amount that are summarized across all cash drawers. Shared shifts are most typical when mobile devices are used. In this scenario, a separate cash drawer isn't reserved for each register. Instead, all registers can share one cash drawer.
 
-For shared shifts to be used in a store, the cash drawer must be configured as a "shared shift drawer" at **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles \> Drawer**. Additionally, users must have one or both of the shared shift permissions (Allow manage shared shift and Allow use shared shift).
+For shared shifts to be used in a store, the cash drawer must be configured as a "shared shift drawer" at **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles \> Drawer**. Additionally, users must have one or both of the shared shift permissions (Allow manage shared shift and Allow use shared shift).
 
 > [!NOTE]
 > Only one shared shift can be open at a time in each store. Shared shifts and stand-alone shifts can be used in the same store.
@@ -159,7 +159,7 @@ The way that shifts and cash drawer reconciliation are used in the POS differs f
 
 Although every retailer has different business requirements, we recommend that you set up your system in the following way to avoid situations where differences of this type occur:
 
-Go to **Retail \> Channels \> Retail stores \> All retail stores \> Statement/closing**, and for each store, set both the **Statement method** field and the **Closing method** field to **Shift**.
+Go to **Retail and Commerce \> Channels \> Stores \> All stores \> Statement/closing**, and for each store, set both the **Statement method** field and the **Closing method** field to **Shift**.
 
 This setup helps guarantee that back-office statements include the same transactions as shifts in the POS, and that the data is summarized by that shift.
 
