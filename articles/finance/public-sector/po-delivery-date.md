@@ -50,7 +50,7 @@ Select the purchase agreement in the list. Alternatively, click **New**, and inc
 
 ## Purchase order: Edit lead time for a line
 
-Lead time details entered for a line in the **Purchase agreement** page appear in the Lead time group for a purchase order. You can edit lead time details for an unconfirmed purchase order. 
+Lead time details entered for a line in the **Purchase agreement** and **Purchase requisition** pages appear in the **Lead time** group for a purchase order. You can edit lead time details for an unconfirmed purchase order. 
 
 1. Go to **Procurement and sourcing > Purchase orders > All purchase orders** list page (or other list page).
 Select the purchase order in the list. Alternatively, click **New** and include this information when you create a new purchase order.
@@ -59,3 +59,5 @@ Select the purchase order in the list. Alternatively, click **New** and include 
 4. In the **Lead time** field, edit the number of days required for lead time.
 5. To use only business days to calculate the delivery date, set the **Working days** check box to **Yes**. The delivery date will update when the purchase order is approved and confirmed based on the lead time specified.
 6. Click **Save** to save the changes.
+
+[Note!] The delivery date will not be recalculated if the lead time is zero. 
