@@ -103,7 +103,7 @@ Once a product is released, it will then require further configuration including
 1. On the **Action pane**, select **Edit** to edit the product.
 1. Configure any required properties including the **Unit**, **Price** and **Quantity** in the **Purchase** section.
 1. Once complete, on the **Action pane**, select **Validate** and ensure no errors are reported for missing fields.
-1. On the **Action pane**, select **Save**
+1. On the **Action pane**, select **Save**.
 
 Below image shows a sample released product configuration.
 
