@@ -63,5 +63,15 @@ Once the product is added additional data can be set on it such as the **Product
 Below image shows a products additional details.
 ![Product details](media/create-new-product-2.png)
 
+## Product Variants
+Specific variants need to be created for a product master.  
+1. On the **Action pane**, select **Product variants**.
+1. If variant groups have been selected on the **Action pane**, select **Variant suggestions*.
+1. Select the variants you would like to support on the product.
+1. Select the **Create** button to create the variants.
+
+Below image shows a sample product variants.
+![Product variants](media/create-new-product-3.png)
+
 
 ## Additional resources
