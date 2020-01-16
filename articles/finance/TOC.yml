@@ -264,7 +264,7 @@
           href: cash-bank-management/tasks/vendor-payment-overview.md
         - name: Vendor payments workspace
           href: accounts-payable/vendor-payments-workspace.md
-        - name: Specify a cross rate
+        - name: Specify the cross rate
           href: accounts-payable/specify-cross-rate.md
         - name: Define vendor payment fees
           href: accounts-payable/tasks/define-vendor-payment-fees.md
