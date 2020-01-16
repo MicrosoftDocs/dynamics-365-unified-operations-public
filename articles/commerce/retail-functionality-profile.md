@@ -37,7 +37,7 @@ This topic describes how to create a retail functionality profile in Microsoft D
 
 ## Overview
 
-The retail functionality profile provides various settings used for online channels. Each retail channel must specify an online functionality profile.
+The retail functionality profile provides various settings used for online channels. Each retail channel must specify a retail functionality profile.
 
 ## Create a retail functionality profile
 
