@@ -100,7 +100,7 @@ This scenario shows how the settings previously described in this topic will aff
     - On the **Customer** FastTab, set **Customer account** to "US-007".
     - On the **General** FastTab, set **Warehouse** to "62".
 1. Select **OK** to create the sales order and close the flyout.
-1. Your new purchase order opens. It should include a new, empty line in the **Sales order lines** table. For this new line, set the **Item number** to "A0001" and the **Quantity** to "1".
+1. Your new sales order opens. It should include a new, empty line in the **Sales order lines** table. For this new line, set the **Item number** to "A0001" and the **Quantity** to "1".
 1. Open the **Inventory** drop-down list at the top of the **Sales order lines** table and select **Reservation**. <!-- KFM: How do I "reserve inventory to the line" here, just edit the **Reservation** column? -->
 1. Select the close (X) button in the upper-right corner to return to your sales order.
 1. Open the **Warehouse** tab on the action pane and then select **Actions** > **Release to warehouse** here. The system creates a shipment and adds it to a new load because there is no existing load that contains load lines with this order number. <!-- KFM: Where is a good place to go to confirm this? -->
