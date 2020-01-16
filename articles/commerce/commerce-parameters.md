@@ -5,7 +5,7 @@ title: Configure commerce parameters
 description: 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-audience: Developer
+audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -24,7 +24,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: samjar
-ms.search.validFrom: 2019-10-31
+ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
@@ -40,6 +40,9 @@ This topic presents an overview of Microsoft Dynamics 365 Commerce parameters se
 There are several commerce parameters that must be set during channel configuration.  
 
 ## Change commerce parameters
+
+To change commerce parameters, follow these steps.
+
 * Go to **Navigation pane** > **Modules** > **Headquarters setup** > **Parameters** > **Retail parameters**.
 * Select the appropriate tab for the area you are changing and change the desired setting.
 * Select the **Save** button in the action bar.
@@ -87,4 +90,4 @@ tbd
 ### POS search criteria
 tbd
 
-
+## Additional resources
