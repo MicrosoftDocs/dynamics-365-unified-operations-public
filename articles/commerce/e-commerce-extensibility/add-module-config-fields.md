@@ -93,7 +93,7 @@ The **config** section of the module definition file contains a list of all the 
 * **configuration name** – The local name that is used to access the configuration values from your react source code. This name is case insensitive.
 * **"friendlyName"** – The friendly name that is shown as the configuration name in the authoring tools.
 * **"description"** – The description that is shown as the configuration description in the authoring tools.
-* **"type"** – The type of the configuration. Possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"video"**, and **"array"**.
+* **"type"** – The type of the configuration. Possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
 * **"enum"** – For an enumerator type, the value must be set to **"string"**.
 * **"default"** – The default value that is set if no value is set in the authoring tools.
 * **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can only be configured at the site level. In this way, the value can be set one time for the entire site.
@@ -179,7 +179,18 @@ The following example shows how the various supported data types are used.
                     "description": "Heading style"
                 }
             }
-        }
+        },
+	"textPlacement":{
+	    "friendlyName": "Text placement",
+            "description": "Placement of the text",
+	    "type": "object",
+	    "enum":{
+	        "left": "Left",
+		"right": "Right",
+		"center": "Center"
+	    },
+	    "default": "left"
+	}
     },
     "definitions": {
         "heading": {
@@ -225,6 +236,9 @@ The following example shows how the various supported data types are used.
     }
 }
 ```
+
+### css config type
+Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via this.props.config.className. Note that config types with type css will not be directly accessible from this.props.config as they are merged into this.props.config.className. 
 
 ### Use mock data in configuration fields for local testing 
 
