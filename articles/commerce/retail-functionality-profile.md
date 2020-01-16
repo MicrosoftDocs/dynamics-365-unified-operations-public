@@ -37,7 +37,7 @@ This topic describes how to create a retail functionality profile in Microsoft D
 
 ## Overview
 
-TBD (Sam please provide some content here, couldn't find anything relevant - what is it, why do we need to create it?)
+The retail functionality profile provides various settings used for online channels. Each retail channel must specify an online functionality profile.
 
 ## Create a retail functionality profile
 
