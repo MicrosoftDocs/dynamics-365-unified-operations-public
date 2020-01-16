@@ -142,7 +142,7 @@ To test your theme, follow these steps.
 
     `https://localhost:4000/modules?type=product-feature&theme=spring-theme`
 
-If your .env file MSDyn365_HOST entry is pointint to your production site, you can also preview your site with a custom theme to do this navigate to the below URL.
+If your .env file MSDyn365_HOST entry is point to your production site, you can also preview your site with a custom theme.  To do this navigate to the below URL.
 
 ```https://localhost:4000?theme-spring-theme```
 
