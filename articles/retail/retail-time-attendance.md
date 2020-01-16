@@ -2,7 +2,7 @@
 # required metadata
 
 title: Time and attendance management in Retail
-description: This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Retail. 
+description: This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce. 
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Retail.
+This topic describes the scenarios that are supported for time and attendance management in Dynamics 365 Commerce.
 
 ## Manage worker setup and scheduling
 
@@ -50,7 +50,7 @@ This topic describes the scenarios that are supported for time and attendance ma
 
 For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).
 
-### Retail-specific configuration
+### Commerce-specific configuration
 
 - Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for. Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.
 - Configure point of sale (POS) permissions groups to enable the View timeclock entries permission. This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book). You might want to enable this permission for a manager role but not for a cashier role. Click **POS permission groups** &gt; **View time clock entries**.
@@ -130,7 +130,7 @@ On POS:
 
 ## Process and manage time registrations
 
-A Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
+A Commerce user follows the workflow to calculate, approve, and transfer time registrations to payroll.
 
 ### Primary operations
 
