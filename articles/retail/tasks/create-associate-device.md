@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure walks through how to create a new device and associate it to a register. It is assumed that the register is already created.  This task uses the USRT company in demo data. This task is intended for Administrators, IT Professional or Retail IT, and the Store Manager roles.
+This procedure walks through how to create a new device and associate it to a register. It is assumed that the register is already created.  This task uses the USRT company in demo data. This task is intended for Administrators, IT Professional or Commerce IT, and the Store Manager roles.
 
-1. Go to Retail and commerce > .. > Devices.
+1. Go to Retail and Commerce > .. > Devices.
 2. Click New.
 3. In the Device ID field, type a value.
 4. In the Device type field, click the drop-down button to open the lookup.
