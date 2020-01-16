@@ -94,7 +94,7 @@ The below example will add a new “product-feature.view.ts” file under the sp
 ## Theme definition extensions
 When using a module view extension, you may have scenarios where you need to extend the config, slots or resources section of a module definition and access these from the module view extension. You can add new configs, slots and resources but you cannot modify or remove existing ones.
 
-Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE\_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  To create a new definition extension, create a new file under the theme directory that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
+Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE\_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  To create a new definition extension, create a new file under the **/src/themes/THEME\_NAME\definition-extensions** folder that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
 
 Below shows a sample theme definition extension file with several added configs, slots and resources.  Notice the "$type" must be set to "definitionExtension".
 
