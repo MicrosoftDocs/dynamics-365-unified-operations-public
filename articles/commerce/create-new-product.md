@@ -74,25 +74,25 @@ Specific variants need to be created for a product master.
 
 ## Release product
 To sell a product it must first be released to a legal entity.
-1. From the product page, select **Release products**.
+* From the product page, select **Release products**.
 
 Below image shows a sample product variants and where to find the **Release product** link.
 
 ![Release product](media/create-new-product-3.png)
 
-1. Select the product to release and the **Next** button.
+* Select the product to release and the **Next** button.
 
 ![Choose product to release](media/create-new-product-4.png)
 
-1. Select the set of variants of the product to release followed by selecting the **Next** button.
+* Select the set of variants of the product to release followed by selecting the **Next** button.
 
 ![Choose variants to release](media/create-new-product-5.png)
 
-1. Select the legal entity followed by the **Next** button.
+* Select the legal entity followed by the **Next** button.
 
 ![Choose legal entity](media/create-new-product-6.png)
 
-1. Select the **Finish** button to complete the product release.
+* Select the **Finish** button to complete the product release.
 
 ![Finish product release](media/create-new-product-7.png)
 
