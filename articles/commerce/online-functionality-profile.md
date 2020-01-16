@@ -37,7 +37,7 @@ This topic presents an overview of setting up an online functionality profile fo
 
 ## Overview
 
-TBD
+The online functionality profile provides various settings used for online channels.  Each channel must specify a functionality profile.
 
 ## Create a functionality profile
 
@@ -54,6 +54,12 @@ The following procedure explains how to create an online functionality profile f
 The following image shows an example online functionality profile.
   
 ![Online functionality profile example](media/online-functionality-profile.png)
+
+## Functions
+* **Aggregate products** when enabled is for the cart view to update quantity when same item is added multiple times.
+* **Create customer in async mode** is a legacy setting applicable to 3rd party e-Commerce channels and not applicable to the Dynamics 365 Commerce e-Commerce site.
+* **Allow checkout with no payments** is for the scenario when items added to cart havea a price $0.00.
+
 
 ## Additional resources
 
