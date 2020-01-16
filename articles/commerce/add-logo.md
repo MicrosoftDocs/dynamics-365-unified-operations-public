@@ -47,7 +47,7 @@ You can add a logo directly to a template, layout, or page. In this way, you can
 
 Before you can add a logo to all the pages of your site, you must complete these tasks.
 
-1. Upload your logo to the **Media Library**.
+1. Upload your logo to the Media Library.
 1. Create a header fragment. For more information about how to create and use fragments, see [Work with fragments](work-with-fragments.md).
 1. Include the header fragment in the template that the pages of your site use for their layout and module options. For more information about templates, see [Work with templates](work-with-templates.md).
 
@@ -56,10 +56,10 @@ Before you can add a logo to all the pages of your site, you must complete these
 To add a logo to the header fragment for your site, follow these steps.
 
 1. In the navigation pane on the left, select **Page Fragments**.
-1. Select the header fragment that you created, then select **Edit**.
+1. Select the header fragment that you created, and then select **Edit**.
 1. Expand the **Header** module.
 1. In the **Header** properties pane, provide an image and link for the logo. 
-1. Save, finish editing, and publish the header fragment.
+1. Save the header fragment, finish editing it, and publish it.
 
 After you publish the updated header fragment, all site pages that use the template that contains the header fragment will show your logo.
 
