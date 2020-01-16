@@ -37,7 +37,7 @@ This topic describes how to create a size, style or color variant group in Micro
 
 ## Overview
 
-Microsoft Dynamics 365 Commerce supports multiple variants on products.  It is ideal to setup variant groups for different product categories.  For example a size group can be created for t-shirts with sizes extra small, small, medium, large and extra large, or a color group could be created to hold available colors of a product.
+Microsoft Dynamics 365 Commerce supports multiple variants on products.  It is ideal to setup variant groups for different product categories.  For example a size group can be created for t-shirts with sizes extra small, small, medium, large and extra large, or a color group could be created to hold available colors of a product.  Variant groups should be added before products are added.
 
 ## Create a size group
 
