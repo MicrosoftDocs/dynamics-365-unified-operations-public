@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-29
 
 ---
 
-Set up and report value-added tax (VAT)
+# Set up and report value-added tax (VAT)
 
 [!include [banner](../includes/banner.md)]
 
@@ -54,7 +54,7 @@ For more detailed information about standard sales tax functionality, see the fo
 
 - [Setting up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md)
 - [Set up a sales tax settlement period](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md)
-- [Ledger posting groups](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.,d)
+- [Ledger posting groups](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md)
 - [Sales tax exempt codes](https://technet.microsoft.com/library/aa634356.aspx)
 - [Sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md)
 - [Setting up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md)
