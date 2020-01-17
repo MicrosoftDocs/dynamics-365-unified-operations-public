@@ -108,83 +108,83 @@ Go to **Tax** \> **Indirect tax** \> **Sales tax** \> **Sales tax reporting code
 | Sales tax code | VAT reporting code | Report setup                    | Description                                                                             | VAT rate |
 |----------------|--------------------|---------------------------------|-----------------------------------------------------------------------------------------|----------|
 | SRSAD          | 10                 | Sale \> Taxable sales           | Standard rated supplies in Abu Dhabi                                                    | 5        |
-|                | 11                 | Sale \> Tax Payable             | Standard rated supplies in Abu Dhabi                                                    | 5        |
+|        -        | 11                 | Sale \> Tax Payable             | Standard rated supplies in Abu Dhabi                                                    | 5        |
 | SRSAD-A        | 15                 | Sale \> Tax Payable             | Standard rated supplies in Abu Dhabi – Adjustment                                       | 5        |
 | SRSD           | 20                 | Sale \> Taxable sales           | Standard rated supplies in Dubai                                                        | 5        |
-|                | 21                 | Sale \> Tax Payable             | Standard rated supplies in Dubai                                                        | 5        |
+|     -           | 21                 | Sale \> Tax Payable             | Standard rated supplies in Dubai                                                        | 5        |
 | SRSD-A         | 25                 | Sale \> Tax Payable             | Standard rated supplies in Dubai – Adjustment                                           | 5        |
 | SRSS           | 30                 | Sale \> Taxable sales           | Standard rated supplies in Sharjah                                                      | 5        |
-|                | 31                 | Sale \> Tax Payable             | Standard rated supplies in Sharjah                                                      | 5        |
+|      -          | 31                 | Sale \> Tax Payable             | Standard rated supplies in Sharjah                                                      | 5        |
 | SRSS-A         | 35                 | Sale \> Tax Payable             | Standard rated supplies in Sharjah – Adjustment                                         | 5        |
 | SRSA           | 40                 | Sale \> Taxable sales           | Standard rated supplies in Ajman                                                        | 5        |
-|                | 41                 | Sale \> Tax Payable             | Standard rated supplies in Ajman                                                        | 5        |
+|    -            | 41                 | Sale \> Tax Payable             | Standard rated supplies in Ajman                                                        | 5        |
 | SRSA-A         | 45                 | Sale \> Tax Payable             | Standard rated supplies in Ajman – Adjustment                                           | 5        |
 | SRSRQ          | 50                 | Sale \> Taxable sales           | Standard rated supplies in Umm Al Quwain                                                | 5        |
-|                | 51                 | Sale \> Tax payable             | Standard rated supplies in Umm Al Quwain                                                | 5        |
-| SRSRQ-A        | 55                 | Sale \> Tax payable             | Standard rated supplies in Umm Al Quwain – Adjustment                                   |          |
+|      -          | 51                 | Sale \> Tax payable             | Standard rated supplies in Umm Al Quwain                                                | 5        |
+| SRSRQ-A        | 55                 | Sale \> Tax payable             | Standard rated supplies in Umm Al Quwain – Adjustment                                   |    -      |
 | SRSRK          | 60                 | Sale \> Taxable sales           | Standard rated supplies in Ras Al Khaimah                                               | 5        |
-|                | 61                 | Sale \> Tax payable             | Standard rated supplies in Ras Al Khaimah                                               | 5        |
+|      -          | 61                 | Sale \> Tax payable             | Standard rated supplies in Ras Al Khaimah                                               | 5        |
 | SRSRK-A        | 65                 | Sale \> Tax payable             | Standard rated supplies in Ras Al Khaimah – Adjustment                                  | 5        |
 | SRSF           | 70                 | Sale \> Taxable sales           | Standard rated supplies in Fujairah                                                     | 5        |
-|                | 71                 | Sale \> Tax Payable             | Standard rated supplies in Fujairah                                                     | 5        |
+|     -           | 71                 | Sale \> Tax Payable             | Standard rated supplies in Fujairah                                                     | 5        |
 | SRSF-A         | 75                 | Sale \> Tax payable             | Standard rated supplies in Fujairah – Adjustment                                        | 5        |
 | TRPTS          | 80                 | Sale \> Taxable sales           | Tax Refunds provided to Tourists                                                        | 5        |
-|                | 81                 | Sale \> Tax Payable             | Tax Refunds provided to Tourists                                                        | 5        |
+|       -         | 81                 | Sale \> Tax Payable             | Tax Refunds provided to Tourists                                                        | 5        |
 | TRPTS-A        | 85                 | Sale \> Tax payable             | Tax Refunds provided to Tourists – Adjustment                                           | 5        |
 | SSRCP-R        | 90                 | Purchases \> Taxable Purchases  | Supplies subject to the reverse charge provisions-Sales                                 | 5        |
-|                | 91                 | Purchases \> Taxable Receivable | Supplies subject to the reverse charge provisions-Sales                                 | 5        |
+|      -          | 91                 | Purchases \> Taxable Receivable | Supplies subject to the reverse charge provisions-Sales                                 | 5        |
 | SSRCP-R-A      | 95                 | Purchases \> Taxable Receivable | Supplies subject to the reverse charge provisions-Sales – Adjustment                    | 5        |
 | ZRS            | 100                | Sale \> Taxable sales           | Zero rated supplies                                                                     | 0        |
 | SOGSRC         | 110                | Sale \> Taxable sales           | Supplies of goods and services to registered customers in other GCC implementing states | 5        |
 | ES             | 120                | Sale \> Taxable sales           | Exempt supplies                                                                         | 0        |
 | GITUAE         | 170                | Purchases \> Taxable Purchases  | Goods imported into the UAE                                                             | 5        |
-|                | 171                | Purchases \> Sales tax payable  | Goods imported into the UAE                                                             | 5        |
+|      -          | 171                | Purchases \> Sales tax payable  | Goods imported into the UAE                                                             | 5        |
 | GITUAE-R       | 130                | Sale \> Taxable sales           | Goods imported into the UAE reverse charge                                              | -5       |
-|                | 131                | Sale \> Tax Payable             | Goods imported into the UAE reverse charge                                              | -5       |
+|      -          | 131                | Sale \> Tax Payable             | Goods imported into the UAE reverse charge                                              | -5       |
 | SSRCP-R        | 90                 | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       | -5       |
-|                | 91                 | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | -5       |
+|      -          | 91                 | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | -5       |
 | SSRCP          | 170                | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       | 5        |
-|                | 171                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | 5        |
+|    -            | 171                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | 5        |
 | SRE-A          | 160                | Purchases \> Taxable Receivable | Standard rated expenses – Adjustment                                                    | 5        |
-| SSRCP          | 170                | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       |          |
-|                | 171                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | -5       |
-| SSRCP-A        | 175                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions – Adjustment                          |          |
-| GTTKOB         | 180                | Sale \> Taxable sales           | Goods transferred to the Kingdom of Bahrain                                             |          |
-|                | 181                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Bahrain                                             | 5        |
-| GTTKOB-A       | 185                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Bahrain – Adjustment                                |          |
-| GTTSOK         | 190                | Sale \> Taxable sales           | Goods transferred to the State of Kuwait                                                |          |
-|                | 191                | Sale \> Tax Payable             | Goods transferred to the State of Kuwait                                                | 5        |
-| GTTSOK-A       | 195                | Sale \> Tax Payable             | Goods transferred to the State of Kuwait – Adjustment                                   |          |
-| GTTSOO         | 200                | Sale \> Taxable sales           | Goods transferred to the Sultanate of Oman                                              |          |
-|                | 201                | Sale \> Tax Payable             | Goods transferred to the Sultanate of Oman                                              | 5        |
-| GTTSOO-A       | 205                | Sale \> Tax Payable             | Goods transferred to the Sultanate of Oman – Adjustment                                 |          |
+| SSRCP          | 170                | Sale \> Taxable sales           | Supplies subject to the reverse charge provisions                                       |  -        |
+|     -           | 171                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions                                       | -5       |
+| SSRCP-A        | 175                | Sale \> Tax Payable             | Supplies subject to the reverse charge provisions – Adjustment                          |     -     |
+| GTTKOB         | 180                | Sale \> Taxable sales           | Goods transferred to the Kingdom of Bahrain                                             |     -     |
+|      -          | 181                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Bahrain                                             | 5        |
+| GTTKOB-A       | 185                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Bahrain – Adjustment                                |   -       |
+| GTTSOK         | 190                | Sale \> Taxable sales           | Goods transferred to the State of Kuwait                                                |   -       |
+|     -           | 191                | Sale \> Tax Payable             | Goods transferred to the State of Kuwait                                                | 5        |
+| GTTSOK-A       | 195                | Sale \> Tax Payable             | Goods transferred to the State of Kuwait – Adjustment                                   |    -      |
+| GTTSOO         | 200                | Sale \> Taxable sales           | Goods transferred to the Sultanate of Oman                                              |   -       |
+|      -          | 201                | Sale \> Tax Payable             | Goods transferred to the Sultanate of Oman                                              | 5        |
+| GTTSOO-A       | 205                | Sale \> Tax Payable             | Goods transferred to the Sultanate of Oman – Adjustment                                 |   -       |
 | GTTSOQ         | 210                | Sale \> Taxable sales           | Goods transferred to the State of Qatar                                                 | 5        |
-|                | 211                | Sale \> Tax Payable             | Goods transferred to the State of Qatar                                                 | 5        |
+|     -           | 211                | Sale \> Tax Payable             | Goods transferred to the State of Qatar                                                 | 5        |
 | GTTSOQ-A       | 215                | Sale \> Tax Payable             | Goods transferred to the State of Qatar – Adjustment                                    | 5        |
-| GTTKOSA        | 220                | Sale \> Taxable sales           | Goods transferred to the Kingdom of Saudi Arabia                                        |          |
-|                | 221                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia                                        |          |
+| GTTKOSA        | 220                | Sale \> Taxable sales           | Goods transferred to the Kingdom of Saudi Arabia                                        |   -       |
+|      -          | 221                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia                                        |     -     |
 | GTTKOSA-A      | 225                | Sale \> Tax Payable             | Goods transferred to the Kingdom of Saudi Arabia – Adjustment                           | 5        |
-| RVPKOB         | 230                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Bahrain                                          |          |
-|                | 231                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain                                          |          |
+| RVPKOB         | 230                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Bahrain                                          |    -      |
+|        -        | 231                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain                                          |    -      |
 | RVPKOB-A       | 235                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Bahrain – Adjustment                             | 5        |
-| RVPSOK         | 240                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the State of Kuwait                                             |          |
-|                | 241                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Kuwait                                             |          |
+| RVPSOK         | 240                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the State of Kuwait                                             |    -      |
+|       -         | 241                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Kuwait                                             |    -      |
 | RVPSOK-A       | 245                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Kuwait – Adjustment                                | 5        |
-| RVPSOO         | 250                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Sultanate of Oman                                           |          |
-|                | 251                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman                                           |          |
+| RVPSOO         | 250                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Sultanate of Oman                                           |     -     |
+|      -          | 251                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman                                           |    -      |
 | RVPSOO-A       | 255                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Sultanate of Oman – Adjustment                              | 5        |
-| RVPSOQ         | 260                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the State of Qatar                                              |          |
-|                | 261                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Qatar                                              |          |
+| RVPSOQ         | 260                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the State of Qatar                                              |    -      |
+|     -          | 261                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Qatar                                              |    -      |
 | RVPSOQ-A       | 265                | Purchases \> Taxable Receivable | Recoverable VAT paid in the State of Qatar – Adjustment                                 | 5        |
-| RVPKOSA        | 270                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |          |
-|                | 271                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |          |
-| RVPKOSA-A      | 275                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia – in Adjustment                     | 5        |
+| RVPKOSA        | 270                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |    -      |
+|      -          | 271                | Purchases \> Taxable Receivable | Recoverable VAT paid in the Kingdom of Saudi Arabia                                     |    -      |
+| RVPKOSA-A      | 275                | Purchases \> Taxable Purchases  | Recoverable VAT paid in the Kingdom of Saudi Arabia –  Adjustment                     | 5        |
 
-The configuration of sales tax reporting codes will appear as a grid on the **Sales tax reporting codes** page.
 
-[![Sales tax reporting codes page](./media/uae_vat_04.jpg)](./media/uae_vat_04.jpg)
 
-Use the information in the "Report setup" column of the previous table to configure sales tax codes and associate them with sales tax reporting codes on the **Report setup** FastTab of each report that is relevant to your company's business.
+
+
+Use the information in the "Report setup" column of the above table to configure sales tax codes and associate them with sales tax reporting codes on the **Report setup** FastTab of each report that is relevant to your company's business.
 
 [![Report setup FastTab](./media/uae_vat_05.jpg)](./media/uae_vat_05.jpg)
 
@@ -202,7 +202,7 @@ In the **Reverse charge** sales tax group, you must select the **Reverse charge*
 
 [![Sales tax groups page](./media/uae_vat_07.jpg)](./media/uae_vat_07.jpg)
 
-When the invoice line is posted with the **Reverse charge** sales tax group, the system will create two sales tax transactions: one that has a sales tax receivable tax direction and one that has a sales tax payable tax direction.
+When the invoice line is posted with the sales tax group defined as **Reverse charge**, the system will create two sales tax transactions: one that has a sales tax receivable tax direction and one that has a sales tax payable tax direction.
 
 [![Posted sales tax page](./media/uae_vat_08.jpg)](./media/uae_vat_08.jpg)
 
@@ -261,7 +261,7 @@ After you generate the file (**Tax** \> **Declarations** \> **FAF declaration**)
 
 [![Electronic report parameters dialog box](./media/uae_vat_14.jpg)](./media/uae_vat_14.jpg)
 
-If you expect a large volume of transactions in the scope of the auditing period, you can deliver multiple FAFs. Consider using batch processing to run the job that generates FAFs in the background. Also consider dividing the audited periods into smaller intervals of months, weeks, or days.
+In case a large volume of transactions has been posted in an auditing period, FAF declaration can be delivered in multiple files submission. Consider using batch processing to run the job that generates FAF declaration in the background. Also consider dividing the audited periods into smaller intervals of months, weeks or days.
 
 ## Print a sales invoice in the UAE layout
 
