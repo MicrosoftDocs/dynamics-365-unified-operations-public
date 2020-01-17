@@ -124,7 +124,8 @@ To publish a view, follow these steps:
 4.	Enter a name and (optionally) a description for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
 5.	Add the security roles that correspond to the users who are being targeted by this view.
 6. Add the legal entities that this view should be available for. 
-7.	Select **Publish**.
+7. [10.0.9/Platform update 33 or later] Determine if the view should be published as the default view for the selected users. Making a view the default means that this is the view users will see the next time they open the target page. This will modify the default view for these users; however, users can still change their default view after the publish has occurred.    
+8.	Select **Publish**.
 
 Note that in some environments, it may take some time (up to an hour) before users see the published view.
 
@@ -137,7 +138,8 @@ If the changes that you want to make to a published view only involve the publis
 3.	Select **Yes** if you want to update the existing view (or **No** if you want to publish this under a different name).
 4.	Update the name, description, and/or security roles for the view. 
 5.	Select **Publish**. 
-6.	If you updated the name of the published view, you'll also need to delete the published view with the old name (see the **Managing published views** section for more details). 
+6.	[10.0.8/Platform update 32 or prior] If you updated the name of the published view, you'll also need to delete the published view with the old name (see the **Managing published views** section for more details). 
+7. [10.0.9/Platform update 33 or later] If you had originally chosen this published view to be the default view, it will be the default view for these users again after the re-publish.  
 
 If the changes to the published view involve modifying the personalizations or filters associated with the view, follow these steps: 
 1.	Switch to the published view that you want to modify. 
@@ -157,7 +159,13 @@ For the list of all published views for the page, the following set of actions a
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
-To enable saved views while the feature is in preview, follow the steps below: 
+Note: The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
+
+**10.0.9 / Platform update 33 and later**
+The **Saved views** feature is available directly in Feature management in any environment. Like other public preview features, enabling this feature in production is subject to the [Supplemental Terms of Use agreement](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8 / Platform update 32 and prior**
+The **Saved views** feature can be enabled in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes by following the steps below.
 
 1.	**Enable the flight**: Execute the following SQL statement: 
 
@@ -171,15 +179,12 @@ To enable saved views while the feature is in preview, follow the steps below:
 
 All subsequent user sessions will start with saved views enabled.
 
-Saved Views is only for use in Tier 1 (Dev/Test) and Tier 2 (Sandbox) environments in order to provide additional testing and design changes. A preview of Saved Views will be available in production environments in a future release.
-
-Note that if personalization is turned off for the environment, views will be disabled even if you follow the above steps. This is because the views feature is built on top of the personalization subsystem.
 
 ### What happens to existing personalizations when views are enabled? 
 When views are enabled, any existing personalizations for a user and form are saved into a new view called **My view** that is automatically set as the default view. This is meant to ensure that there is a consistent user experience before and after views are enabled, except for the view selector control appearing on forms.  
 
 ### What pages support views? 
-Views are available on most, but not all pages. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, also currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
+Views are available on most, but not all pages. Specifically, views are currently available on all full-screen pages except for dashboards and workspaces. Non-full-screen pages, which include dialog boxes, drop-down dialogs, lookups, enhanced previews, currently do not support views. View support for additional page types, such as workspaces and dialog boxes, may be considered for a future update.   
 
 ### Who is allowed to publish views?
 Only system admins and users who have been assigned to the **Saved views administrator** role have the rights to publish views. 
@@ -187,12 +192,15 @@ Only system admins and users who have been assigned to the **Saved views adminis
 ### Why am I not able to save filters with this view? 
 There are a few reasons why a filter may not appear to save with a view: 
 
-- The page may not support saving filters as part of the view definition. Note that only pages with large view selectors  allow personalizations and query modifications to be saved as a view. See the "Switching views" section for more information. 
-
-- If the view is the default view and the navigation path to the page includes a query, the view's query may not be applied initially. The two primary scenarios for this are: 
-     - If you navigate to a page from a tile, the tile query will execute regardless of the query associated with the default view. 
-     - If you navigate to a page and that entry point includes a query, the original query will execute originally in place of the default view's query. 
-     
-  You should be alerted when these situations occur by an informational message when the view is loading. You can also confirm by switching to this view after the page loads, as that should allow the view query to execute regardless.  
+- The page may not support saving filters as part of the view definition. Note that only pages with large view selectors allow personalizations and query modifications to be saved as a view. See the **Switching views** section for more information. 
 
 - The page in question may not properly support views, as it may ignore the view query completely or may operate on a temporary table whose data is not persistent. 
+
+### What data will I see when I visit a page? 
+For pages with small view selectors (only personalizations can be saved to the view), you will see the same data as you always have when you visit the page. 
+
+For pages with large view selectors (personalizations and queries can be saved to the view), you will primarily see the data linked to the query associated with your default view. There are two main exceptions to this: 
+     - If you navigate to a page from a tile, the tile query will execute regardless of the query associated with the default view. If you created that tile after views have been enabled, selecting a tile will open the page with the view associated with that tile.   
+     - If you navigate to a page and that entry point includes a query, the original query will execute originally in place of the default view's query. You should be alerted when this occurs via an informational message when the view is loading. You can also confirm by switching to this view after the page loads, as that should allow the view query to execute regardless.  
+
+
