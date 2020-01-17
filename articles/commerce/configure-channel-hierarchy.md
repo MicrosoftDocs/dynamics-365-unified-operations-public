@@ -69,4 +69,11 @@ Below image shows an example set of channel product attributes configured on a c
 For changes to take effect you will need to publish the changes.
 
 1. On the **Action pane**, select **Publish channel updates**.
+1. Select **OK**.
+
+Below image shows an example publishing channel updates.
+
+![Publish channel updates](media/configure-channel-hierarchy-3.png)
+
+
 
