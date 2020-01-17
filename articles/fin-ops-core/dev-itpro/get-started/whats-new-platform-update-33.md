@@ -5,7 +5,7 @@ title: Preview features in Platform update 33 for Finance and Operations apps (A
 description: This topic lists the features that are in preview in Platform update 33 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,8 +44,8 @@ For more information about Platform update 33, see [Additional resources](whats-
 
 ## Features included in this release
 
-### Feature name (must match the name of feature found in Release Plans)
-To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+### Feature name (must match the name of the feature found in the release plan)
+To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
 
 To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
 - [Title of content](URL of content)
