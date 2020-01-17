@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure walks through creating a new point of sale (POS) visual profile. A visual profile contains basic information that determines the appearance of POS registers. You can create several visual profiles and assign specific profiles to run on specific registers. This procedure uses the USRT demo data company.
 
-1. Go to Retail and commerce > Channel setup > POS setup > POS profiles > Visual profiles.
+1. Go to Retail and Commerce > Channel setup > POS setup > POS profiles > Visual profiles.
 2. Click New.
 3. In the Profile number field, type a value.
 4. In the Description field, type a value.
