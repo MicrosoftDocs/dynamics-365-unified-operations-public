@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Configure a worker
-description: This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS. 
+description: This procedure demonstrates how to configure a worker as a sales representative who is eligible for commission on sales in POS. 
 author: jblucher
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS. This procedure uses the USRT demo data company.
+This procedure demonstrates how to configure a worker as a sales representative who is eligible for commission on sales in POS. This procedure uses the USRT demo data company.
 
 
 ## Create a commission sales group for the worker
@@ -50,10 +50,10 @@ This procedure demonstrates how to configure a retail worker as a sales represen
 12. Close the page.
 
 ## Assign the workers default sales group
-1. Go to Retail and commerce > Employees > Workers.
+1. Go to Retail and Commerce > Employees > Workers.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
-4. Click the Retail tab.
+4. Click the Commerce tab.
     * A worker can be assigned to a default sales group. The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.  
 5. Click Edit.
 6. In the Default group field, enter or select a value.
