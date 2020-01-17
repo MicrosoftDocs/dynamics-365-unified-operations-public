@@ -34,7 +34,7 @@ This procedure walks through creating a new online channel and adding it to the 
 
 
 ## Create a new online channel
-1. Go to Retail and commerce > Channels > Online stores.
+1. Go to Retail and Commerce > Channels > Online stores.
 2. Click New.
 3. In the Name field, type a value.
 4. In the Warehouse field, enter or select a value.
@@ -57,14 +57,14 @@ This procedure walks through creating a new online channel and adding it to the 
 5. Click Edit.
     * You can select any hierarchy node under which you want to insert the new channel.  
 6. Click Insert.
-7. Click Retail channel.
+7. Click Commerce channel.
 8. Click OK.
 9. Click Publish to open the drop dialog.
 10. In the Effective date field, enter a date and time.
 11. Click Publish.
 
 ## Configure orders for near realtime notification
-1. Go to Retail  > Headquarters setup > Parameters > Retail parameters.
+1. Go to Retail and Commerce  > Headquarters setup > Parameters > Commerce parameters.
 2. Set Use realtime service for eCommerce order creation to "Yes".
 3. Run the 1070 distribution schedule to sync changes to the channel database. 
 
