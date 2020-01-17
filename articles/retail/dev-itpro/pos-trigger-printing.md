@@ -203,6 +203,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostCartCheckoutTrigger            | Non-cancelable | Executed after the checkout process is completed.     |
 | PreRecallTransactionTrigger        | Cancelable     | Executed before the customer order is recalled.       |
 | PostRecallTransactionTrigger       | Non-Cancelable | Executed after the customer order is recalled.        |
+| PreSelectTransactionPaymentMethodTrigger       | Cancelable |  When the user clicks the totals button in the Cart view - totals panel, the available payment methods are shown and this trigger will get executed before that dialog is shown. Extension code can modify the available payment methods from this trigger.      |
 
 ## Reason code triggers
 | Trigger              | Type           | Description                                             |
