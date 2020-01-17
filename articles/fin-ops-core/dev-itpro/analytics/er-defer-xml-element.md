@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 ## Overview
 
 You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to [configure](./tasks/er-format-configuration-2016-11.md) the [format component](general-electronic-reporting.md#FormatComponentOutbound) of an ER solution that is used to generate outbound documents in XML format. The hierarchical structure of the configured format component consists of format elements of various types that are used to populate necessary information to generated documents at run timme. By default, when you run an ER format, these format elements are executed in the same sequence as they are presented in the format hierarchy – one by one from top to bottom order. At design time, you can change this default execution order for any of XML elements of the configured format component. 
@@ -50,7 +52,7 @@ The **Deferred execution** option is supported only for the XML element that res
 
 The **Deferred execution** option is not supported for XML elements that reside in the **Common\\File** format element when the option **Split file** is set to **Yes**. For more information about how to split XML files, see [Split generated XML files based on file size and content quantity](er-split-files.md).
 
-# <a name="Example"></a>Example: Defer execution of an XML element in ER format
+### <a name="Example"></a>Example: Defer execution of an XML element in ER format
 
 The following steps explain how a [System administrator or Electronic reporting functional consultant](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) can configure an ER format that contains an XML element when the order of execution odiffers from its order in the format’s hierarchy.
 
