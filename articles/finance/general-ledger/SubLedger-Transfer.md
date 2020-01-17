@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 10.0.8
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes capabilities in Microsoft Dynamics 365 Finance that are related to the rules for transferrubg batches of subledger journal entries.
+This topic describes capabilities in Microsoft Dynamics 365 Finance that are related to the rules for transferring batches of subledger journal entries.
 
 Version 8.1 changed the allowed transfer rules, deprecating the Synchronous option. 
 https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20
@@ -44,7 +44,7 @@ The following options are available for transferring subledger batches.
 
  - Asynchronous – This choice will schedule the transfer of the subledger accounting entries to the general ledger immediately. The general ledger voucher will be recorded as soon as resources are free to process this request on the server. 
 
-- Scheduled batch – This choice will queue the transfer of the subledger accounting entries to the generel ledger for the next batch job to process. The general ledger vocher will be recorded at the scheduled time, as long as resources are free to process this batch job on the server. 
+- Scheduled batch – This choice will queue the transfer of the subledger accounting entries to the general ledger for the next batch job to process. The general ledger voucher will be recorded at the scheduled time, as long as resources are free to process this batch job on the server. 
  
  
 Version 10.0.8 has improved the performance of the Asynchrounous option. This feature is enabled under the feature name 'Subledger transfer to General Ledger performance optimization.' 
