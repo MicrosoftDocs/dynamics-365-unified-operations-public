@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a product hierarchy
+title: Create a new product hierarchy
 description: This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create a product hierarchy
+# Create a new product hierarchy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -38,22 +38,36 @@ This topic describes how to create a new product hierarchy in Microsoft Dynamics
 ## Overview
 
 Microsoft Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
-A Retail product hierarchy is used to define the overall product hierarchy for your organization. You can use this hierarchy type for merchandising, pricing and promotions, reporting, and assortment planning. Only one retail product hierarchy can be assigned this hierarchy type.
 
-## Create and configure category hierarchy
+A retail product hierarchy is used to define the overall product hierarchy for your organization. You can use this hierarchy type for merchandising, pricing and promotions, reporting, and assortment planning. Only one retail product hierarchy can be assigned this hierarchy type.
+
+## Create and configure a category hierarchy
+
+To create and configure a category hierarchy, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Retail product hierarchy**.
 1. If no hierachy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
-1. In the **General** section, provide a **Name**, **Description** and **Friendly Name** and set to **Active**.
-
+1. Under **General**:
+    1. In the **Name** box, enter a name.
+    1. In the **Description** box, enter a description.
+    1. In the **Friendly name** box, enter a friendly name.
+    1. Set **Active** to **Yes**.
 
 ## Add hierarchy nodes
-1. On the **Action pane**, select **Edit category hierarchy**.
-1. Select the parent node to add a new node to and press the "New category Node" button.
+
+To add hierarchy nodes, follow these steps.
+
+1. On the action pane, select **Edit category hierarchy**.
+1. Select the parent node you want to add a new node to, and then select **New category node**.
 1. In the **General** section provide a **Name**, **Description**, **Friendly name** and **Keywords**.
-1. Optionaly set a **Display order* for the node.
-1. On the **Action pane**, select **Save**.
-1. Repeat for any other needed nodes.
+1. Under **General**:
+    1. In the **Name** box, enter a name.
+    1. In the **Description** box, enter a description.
+    1. In the **Friendly name** box, enter a friendly name.
+    1. In the **Keywords** box, enter relevant keywords.
+    1. In the **Display order**box, enter a number for the display order (optional).
+1. On the action pane, select **Save**.
+1. Repeat the steps above to add additional nodes.
 
 The following image shows the creation of a new product hierarchy node.
 
@@ -65,4 +79,8 @@ Category attribute groups can also be assigned to each group as required.
 
 ## Additional resources
 
-[Retail hierarchies](retail-hierarchies.md)
+[Retail hierarchies](../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+[Manage retail product categories and products ](../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json)
+
+[Change the sort order for merchandizing entities](../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json)
