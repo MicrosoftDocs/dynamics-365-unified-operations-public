@@ -39,19 +39,9 @@ This article describes features that are either new or changed in Dynamics 365 T
 
 This release includes minor bug fixes for Dynamics 365 Talent: Attract.
 
-### Export data from Attract
-
-Admins can now download environment data from Attract. The data is in standard JSON format. The data is exported into a .zip file with all jobs, candidates, and configurations. 
-
-Admins can also choose to restrict access to the environment for non-admin users. This action is permanent and can't be undone. 
-
 ## Changes in Onboard
 
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
-
-### Export data from Onboard
-
-Users can now export all of their onboarding guides and onboarding templates in Word document format.
 
 ## Changes in Core HR
 
