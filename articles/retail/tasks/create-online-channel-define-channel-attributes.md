@@ -63,7 +63,7 @@ This procedure walks through creating a new online channel and adding it to the 
 10. In the Effective date field, enter a date and time.
 11. Click Publish.
 
-## Configure orders for near realtime notification
+## Configure orders for near real-time notification
 1. Go to Retail and Commerce  > Headquarters setup > Parameters > Commerce parameters.
 2. Set Use realtime service for eCommerce order creation to "Yes".
 3. Run the 1070 distribution schedule to sync changes to the channel database. 
