@@ -37,6 +37,8 @@ ms.dyn365.ops.version: 10.0.3
 
 The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. After the feature is enabled, initial configuration of policies has to be done. If not configured at all, each sales line will generate a separate shipment with a single load line.
 
+Scenarios below describe how to set up default and custom shipment consolidation policies.
+
 ## Scenario 1: Configure default shipment consolidation policies
 
 There are two potential cases where you activate the feature and have to configure the minimum number of default policies: setting up a completely new environment and upgrading environment with data in it. For example sake, both scenarios are described assuming you use **Contoso** demo data and **USMF** company. So, the second case includes a step where you have to set the **Consolidate shipment at release to warehouse** option to **Yes** on one or more warehouses before enabling the feature.
@@ -107,7 +109,7 @@ The master data needed to filtering is described first, and is a precondition fo
 
 ### Shipment consolidation policies
 
-This setup assumes the Scenario 1 described above has been already executed.
+This setup assumes that Scenario 1 described above has been already executed.
 
 #### Add Policy 1
 
@@ -124,8 +126,10 @@ To create a shipment consolidation policy that covers mentioned above business c
 1. Click **New**.
 1. In the **Policy name** field, type a value, for example, **CustomerMode**.
 1. In the **Policy description** field, type a value, for example, **Customer account and mode of delivery**.
-1. In the list of **Remaining fields**, find and select the **Mode of delivery** record.
-1. Click **Add**.
+1. Click **Save**.
+1. Expand the **Consolidation fields** FastTab
+1. In the list of **Remaining fields**, find and select **Mode of delivery** record (where **Field name** = Mode of delivery).
+1. Click ![forward arrow](media/forward-button.png) button to move the record under **Selected fields**.
 1. Click **Edit query**.
 1. In the list, find and select the **Customer account** record.
 1. In the **Criteria** field, enter or select a value, for example, **US-001**.
@@ -141,34 +145,32 @@ To create a shipment consolidation policy that covers mentioned above business c
 Example of a business case:
 
 - “Hazardous goods” policy
-  - Query: Specific “hazardous” filter code, specific Transportation modes of delivery “Air,Sea”
+  - Query: Specific “hazardous” filter code, specific Transportation modes of delivery “Air, Sea”
   - Consolidation with open shipments is on
   - Consolidation is across orders (separate shipments per account, warehouse, etc. but within the item group specified in the query)
 
 To create a shipment consolidation policy that covers mentioned above business case, follow these steps.
 
+1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Click **New**.
-2. In the **Policy name** field, type a value, for example, **Item type**.
-3. In the **Policy description** field, type a value, for example **Consolidate the same type of item across orders**.
-4. In the list of **Remaining fields**, find and select the record for **Mode of delivery**.
-5. Click ![forward arrow](media/forward-button.png) button.
-6. Select **Yes** in the **Consolidate with open shipments** field.
-7. Click **Edit query**.
-8. Click the **Joins** tab.
-9. In the tree, expand **Tables\Load details**.
-10. In the tree, select **Tables\Load details**.
-11. Click **Add table join**.
-12. In the list, find and select **Items (InventTable)**.
-13. Click **Select**.
-14. Click **Add table join**.
-15. In the list, find and select **Warehouse items (WHSInventTable)**.
-16. Click **Select**.
-17. Click the **Range** tab.
-18. Click **Add**.
-19. Add a record for a filter code from Warehouse items, for example Filter code 4
+1. In the **Policy name** field, type a value, for example, **Item type**.
+1. In the **Policy description** field, type a value, for example **Consolidate the same type of item across orders**.
+1. Click **Save**.
+1. In the list of **Remaining fields**, find and select **Mode of delivery** record.
+1. Click ![forward arrow](media/forward-button.png) button.
+1. Select **Yes** in the **Consolidate with open shipments** field.
+1. Click **Edit query**.
+1. Click the **Joins** tab.
+1. In the tree, expand and select **Tables\Load details**.
+1. Click **Add table join**.
+1. In the list, find and select **Warehouse item number (Item number)**.
+1. Click **Select**.
+1. Click the **Range** tab.
+1. Click **Add**.
+1. Add a record for a filter code from Warehouse items, for example **Warehouse item number.Code 4**.
     1. Any other grouping value can be used.
-20. In the **Criteria** field, enter or select a value.
-21. Click **OK**.
+1. In the **Criteria** field, enter or select a value, for example **Flammable**.
+1. Click **OK**.
 
 > [!NOTE]
 > All order lines where items have the same Filter code 4, for example “Flammable”, will be consolidated across orders with other items of the same kind. If there is an open shipment for the same account, warehouse, and group of items, the new lines will be attached to it.
@@ -184,18 +186,20 @@ Example of a business case.
 
 To create a shipment consolidation policy that covers mentioned above business case, follow these steps.
 
+1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Click **New**.
-2. In the **Policy name** field, type a value, for example **CustomerOrderNo**.
-3. In the **Policy description** field, type a value, for example **Consolidate lines based on customer PO**.
-4. Select **Yes** in the **Consolidate with open shipments** field.
-5. In the list, find and select the **Customer requisition** record.
-6. Click **Add**.
-7. In the list, find and select the **Mode of delivery** record.
-8. Click **Add**.
-9. Click **Edit query**.
-10. In the list, find and select the **Customer account** record.
-11. In the **Criteria** field, enter or select a value, for example, **US-001**.
-12. Click **OK**.
+1. In the **Policy name** field, type a value, for example **CustomerOrderNo**.
+1. In the **Policy description** field, type a value, for example **Consolidate lines based on customer PO**.
+1. Select **Yes** in the **Consolidate with open shipments** field.
+1. Click **Save**.
+1. In the list of **Remaining fields**, find and select the **Customer requisition** record.
+1. Click ![forward arrow](media/forward-button.png) button.
+1. In the list of **Remaining fields**, find and select the **Mode of delivery** record.
+1. Click ![forward arrow](media/forward-button.png) button.
+1. Click **Edit query**.
+1. In the list, find and select the **Customer account** record.
+1. In the **Criteria** field, enter or select a value, for example, **US-001**.
+1. Click **OK**.
 
 > [!NOTE]
 > All order lines where sales orders have the same Customer requisition number (which is used as the customer’s PO number) will be consolidated into one shipment regardless of Sales order number. If there is an open shipment for the same account, warehouse, and customer requisition, the new lines will be attached to it. It can be used if the customer sends additional order lines with the same PO number several times a day and wants them all to be grouped in one shipment (resulting in one bill of lading and packing slip).
@@ -212,15 +216,17 @@ Example of a business case.
 
 To create a shipment consolidation policy that covers mentioned above business case, follow these steps.
 
+1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Click **New**.
-2. In the **Policy name** field, type **Order pool**.
-3. In the **Policy description** field, type a value, for example **Consolidate across orders based on order pool**.
-4. In the list, find and select the **Mode of delivery** records.
-5. Click **Add**.
-6. Click **Edit query**.
-7. In the list, find and select the record, for example **Sales orders.Pool**.
-8. In the **Criteria** field, enter or select a value.
-9. Click **OK**.
+1. In the **Policy name** field, type **Order pool**.
+1. In the **Policy description** field, type a value, for example **Consolidate across orders based on order pool**.
+1. Click  **Save**.
+1. In the list of **Remaining fields**, find and select the **Mode of delivery** records.
+1. Click ![forward arrow](media/forward-button.png) button.
+1. Click **Edit query**.
+1. In the list, find and add the **Sales orders.Pool** record.
+1. In the **Criteria** field, enter or select a value, for example, **ShipCons**.
+1. Click **OK**.
 
 > [!NOTE]
 > All order lines where sales orders belong to the same Order pool will be consolidated into one shipment across sales orders for the same account, warehouse, and mode of delivery. Order pool can be replaced with any other field setting a group of customers apart and defaulting to the sales order header. This can be used if the customer and not the warehouse (like in the legacy logic) is driving the need for consolidation.
@@ -234,26 +240,27 @@ Example of a business case.
   - Consolidation with open shipments is off
   - Consolidation is across orders with regular fields selected (replication of the current “Warehouse” checkbox)
 
-To create a shipment consolidation policy that covers mentioned above business case, follow these steps.
+To create a shipment consolidation policy that covers mentioned above business case, if it wasn't created automatically as part of Scenario 1, follow these steps.
 
+1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Click **New**.
-2. In the **Policy name** field, type a value, for example **CrossOrder**.
-3. In the **Policy description** field, type a value, for example **Cross-order consolidation for specific warehouses**.
-4. In the list, find and select the **Mode of delivery**.
-5. Click **Add**.
-6. Click **Edit query**.
-7. In the list, find and select the **Warehouse** record.
-8. In the **Criteria field**, type **61, 63**.
-9. Click **OK**.
+1. In the **Policy name** field, type a value, for example **CrossOrder**.
+1. In the **Policy description** field, type a value, for example **Cross-order consolidation for specific warehouses**.
+1. Click **Save**
+1. In the list, find and select the **Mode of delivery**.
+1. Click ![forward arrow](media/forward-button.png) button.
+1. Click **Edit query**.
+1. In the list of **Remaining fields**, find and select the **Warehouse** record.
+1. In the **Criteria field**, type **61, 63**.
+1. Click **OK**.
     - It is manual replication of the legacy logic where the consolidation decision was driven by specific warehouses.
-10. In the list, find and select the desired records.
-11. Use **Move up/Move down** buttons to arrange the policies in the order of applicability (pyramid-like approach) as follows:
-    - CustomerMode
-    - Item type
-    - CustomerOrderNo
-    - Order pool
-    - CrossOrder
-    - Default
+1. In the list, find and select the desired policies and by using **Move up/Move down** buttons arrange them in the order of applicability (pyramid-like approach) as follows:
+    1. CustomerMode
+    1. Item type
+    1. CustomerOrderNo
+    1. Order pool
+    1. CrossOrder
+    1. Default
 
 ## Related articles and demo scripts
 
