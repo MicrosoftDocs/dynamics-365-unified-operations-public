@@ -51,22 +51,29 @@ To learn more about the feature, see: (remove this bulleted list if you don't ha
 - [Title of content](URL of content)
 - [Title of content](URL of content)
 
-### Feature name (must match the name of feature found in Release Plans)
-To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+### Feature name (must match the name of the feature found in the release plan)
+To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
 
 To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
 - [Title of content](URL of content)
 - [Title of content](URL of content)
 
-### Feature name (must match the name of feature found in Release Plans)
-To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+### Feature name (must match the name of the feature found in the release plan)
+To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
 
 To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
 - [Title of content](URL of content)
 - [Title of content](URL of content)
 
-### Feature name (must match the name of feature found in Release Plans)
-To read a description of this feature, see [Feature name](URL to feature description in Release Plans) in the Release plans.
+### Feature name (must match the name of the feature found in the release plan)
+To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
+
+To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
+- [Title of content](URL of content)
+- [Title of content](URL of content)
+
+### Feature name (must match the name of the feature found in the release plan)
+To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
 
 To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
 - [Title of content](URL of content)
