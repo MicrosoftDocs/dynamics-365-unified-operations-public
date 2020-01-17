@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure channel to use a hierarchy
-description: This topic describes how to configure a channel to use a channel navigation hierarchy.
+title: Configure a channel to use a hierarchy
+description: This topic describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -28,32 +28,37 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Configure channel to use a hierarchy
+# Configure a channel to use a hierarchy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a new product in Microsoft Dynamics 365 Commerce.
+This topic describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A product is primarily defined by a product number, name, and description. However, other data is also required in order to describe a product or service:
+A product is primarily defined by a product number, name, and description. However, other data is also required in order to describe a product or service.
 
 ## Create a product
 
+To create a product, follow these steps.
+
 1. Go to **Navigation pane \> Modules \> Retail \> Channel setup \> Channel categories and product attributes**.
 1. Select the channel to configure.
-1. On the **Action pane**, select **Edit** to edit the channel.
-1. Select **Category hierarchy** drop down and pick the appropriate channel navigation hierarchy.
-1. On the **Action pane**, welect the **Save** button to save.
-1. Add any **Attribute group** that will be added as global attributes to all nodes.
+1. On the action pane, select **Edit**.
+1. In the **Category hierarchy** drop-down list, select the appropriate channel navigation hierarchy.
+1. On the action pane, select **Save**.
+1. Under **Attribute group**, add any attribute groups that will be global attributes for all nodes.
 
-Below image shows an example channel config.
+The following image shows an example channel configuration.
 
 ![Create a product](media/configure-channel-hierarchy-1.png)
 
 ## Set attribute metadata
+
 Setting the attribute metadata will allow configuration of attributes on each node.
+
+To set attribute metadata, follow these steps.
 
 1. On the **Action pane**, select **Set attribute metadata**.
 1. For each node select the **Channel product attribute**.
@@ -61,17 +66,20 @@ Setting the attribute metadata will allow configuration of attributes on each no
 1. After configuring each node as desired, n the **Action pane**, select the **Save** button to save.
 1. Select the **X** in the top right corner to exit this screen back to the **Channel categories and product attributes** page.
 
-Below image shows an example set of channel product attributes configured on a channel category node.
+The following image shows an example set of channel product attributes configured on a channel category node.
 
 ![Channel attributes on a channel category node](media/configure-channel-hierarchy-2.png)
 
 ## Publish changes
+
 For changes to take effect you will need to publish the changes.
 
-1. On the **Action pane**, select **Publish channel updates**.
-1. Select **OK**.
+To publish changes, follow these steps.
 
-Below image shows an example publishing channel updates.
+1. On the **Action pane**, select **Publish channel updates**.
+1. In the **Publish channel updates** pane, select **OK**.
+
+The following image shows how to publish channel updates.
 
 ![Publish channel updates](media/configure-channel-hierarchy-3.png)
 
