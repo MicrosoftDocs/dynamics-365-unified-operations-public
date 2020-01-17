@@ -261,7 +261,7 @@ After you generate the file (**Tax** \> **Declarations** \> **FAF declaration**)
 
 [![Electronic report parameters dialog box](./media/uae_vat_14.jpg)](./media/uae_vat_14.jpg)
 
-In case a large volume of transactions has been posted in an auditing period, FAF declaration can be delivered in multiple files submission. Consider using batch processing to run the job that generates FAF declaration in the background. Also consider dividing the audited periods into smaller intervals of months, weeks or days.
+FAF declaration can be submitted trough multiple files submission. In case a large volume of transactions included in an auditing period, consider using batch processing to run the job that generates FAF declaration in the background. Also consider dividing the audited period into smaller intervals of months, weeks or days.
 
 ## Print a sales invoice in the UAE layout
 
