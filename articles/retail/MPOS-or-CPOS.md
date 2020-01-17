@@ -5,7 +5,7 @@ title: Choose between Retail Modern POS (MPOS) and Cloud POS
 description: This topic explains the key differences between Retail Modern POS and Cloud POS. It also describes various factors that retailers implementing Dynamics 365 Retail should consider to help them make the best choice for their requirements.
 author:  jblucher 
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 10/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
