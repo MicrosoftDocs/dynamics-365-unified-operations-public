@@ -73,7 +73,7 @@ The file upload control accepts the file and upload strategy in the client, and 
 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
-## Scanning files for upload
+## Scanning uploaded files for viruses or malicious code
 <to be filled in>
 
 
