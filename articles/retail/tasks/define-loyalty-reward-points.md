@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure walks through defining loyalty reward points. You should set up loyalty reward points before you set up a loyalty program. This procedure uses the USRT demo data company.
 
-1. Go to Retail and commerce > Customers > Loyalty > Loyalty reward points.
+1. Go to Retail and Commerce > Customers > Loyalty > Loyalty reward points.
 2. Click New.
 3. In the Reward point ID field, type a value.
 4. In the Description field, type a value.
