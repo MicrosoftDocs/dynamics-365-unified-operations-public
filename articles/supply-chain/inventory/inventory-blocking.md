@@ -48,6 +48,9 @@ You can block a quantity of an item by creating a transaction on the **Inventory
 ## Blocking items by creating a quality order
 You can specify items that must be inspected by creating a quality order on the **Quality orders** page. When you create a quality order, the quantity that you specify for an item is blocked. The sampling plan that is associated with a quality order controls only the quantity of items that must be inspected, not the quantity that is blocked. The quantity that is entered on the quality order is the quantity that is blocked, regardless of the quantity that the sampling plan specifies should be sent for inspection.
 
+> [!NOTE]
+> The combination of the batch expiry date and blocking inventory status features is not supported by master planning. This is due to the double exclusion of on-hand, that can happen during master planning. It is recommended to rely on batch disposition codes, instead of inventory status, for blocking of expired batches.
+
 ## Blocking items by using a process that generates a quality order
 If a quality process specifies that an item must be inspected, a quantity of the item is blocked automatically. Therefore, when a quality order is generated automatically, the item sampling plan that is associated with the quality order controls the both quantity of items that is blocked and the quantity that must be inspected. If the **Full blocking** option on the **Item sampling** page is selected, the full quantity of, for example, a purchase order line is blocked during inspection, regardless of the item sampling quantity.
 ### Example
