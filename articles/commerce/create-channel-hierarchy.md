@@ -65,7 +65,7 @@ The below image shows a sample complete channel navigation hierarchy.
 ![Sample channel hierarchy](media/create-channel-hierarchy-2.png)
 
 ## Add products to category nodes
-The followin steps show how to add products to a node inside the channel navigation hierarchy.  Note this step is not sufficient for the products to show up on a selected channel, the products must also be **assorted** to a product.  
+The following steps show how to add products to a node inside the channel navigation hierarchy.  Note this step is not sufficient for the products to show up on a selected channel, the products must also be **assorted** to a product.  
 
 1. Select a category node.
 1. Expand the **Products** section and select the **Add** button to add a new product.
@@ -76,5 +76,18 @@ The below image shows a sample node with products added.
 
 ![Products added to a category node](media/create-channel-hierarchy-3.png)
 
+## Add product attribute groups to category nodes
+The following steps show how to add product attribute groups to a node inside the channel navigation hierarchy.  Note - this is assuming product attribute groups have already been created. 
+
+1. Select a category node.
+1. Expand the **Product attribute group** section and select the **Add** button to add a new product.
+1. Find the attribute group(s) you would like to add select the **OK** button.
+1. On the **Action pane**, select **Save**.
+
+The below image shows a sample node with product attribute groups added.
+
+![Product attribute groups on a node](media/create-channel-hierarchy-4.png)
+
 ## Additional docs
 TBD - Add product assortments reference here
+TBD - add link to product attribute groups
