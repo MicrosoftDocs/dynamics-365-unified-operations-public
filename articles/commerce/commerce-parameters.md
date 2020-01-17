@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure commerce parameters
-description: 
+description: This topic describes how configure commerce parameter settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -33,21 +33,24 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of Microsoft Dynamics 365 Commerce parameters settings.
+This topic describes how configure commerce parameter settings in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
 There are several commerce parameters that must be set during channel configuration.  
 
+(SAM: need more content here: what are they, why do we need to configure them?)
+
 ## Change commerce parameters
 
 To change commerce parameters, follow these steps.
 
-* Go to **Navigation pane** > **Modules** > **Headquarters setup** > **Parameters** > **Retail parameters**.
-* Select the appropriate tab for the area you are changing and change the desired setting.
-* Select the **Save** button in the action bar.
+1. Go to **Navigation pane \> Modules \> Headquarters setup \> Parameters \> Retail parameters**.
+1. Select the appropriate tab for the parameter you are changing and update the desired setting.
+1. On the action bar, select **Save**.
 
-## Parameter Details
+## Parameter details
+
 ### General
 tbd
 
@@ -91,3 +94,15 @@ tbd
 tbd
 
 ## Additional resources
+
+[Channels overview](channels-overview.md)
+
+[Channel setup prerequisites](channels-prerequisites.md)
+
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+[Set up a retail channel](channel-setup-retail.md)
+	
+[Set up an online channel](channel-setup-online.md)
+
+[Set up a call center channel](channel-setup-callcenter.md)
