@@ -34,7 +34,7 @@ This procedure walks through creating a product package and using it on a purcha
 
 
 ## Create a product package
-1. Go to Retail and commerce > Inventory management > Replenishment > Product packages.
+1. Go to Retail and Commerce > Inventory management > Replenishment > Product packages.
 2. Click New.
 3. In the Package number field, type a value.
 4. In the Description field, type a value.
