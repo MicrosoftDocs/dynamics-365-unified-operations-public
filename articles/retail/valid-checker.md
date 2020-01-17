@@ -74,7 +74,7 @@ Configure the "Validate store transactions" batch process, at **Retail and Comme
 
 ## Results of validation process
 
-The results of the validation check by the batch process are tagged on the appropriate retail transaction. The **Validation status** field on the transaction record is either set to **Successful** or **Error**, and the date of the last validation run appears on the **Last validation time** field.
+The results of the validation check by the batch process are tagged on the appropriate transaction. The **Validation status** field on the transaction record is either set to **Successful** or **Error**, and the date of the last validation run appears on the **Last validation time** field.
 
 To view more descriptive error text relating to a validation failure, select the relevant store transaction record and click the **Validation errors** button.
 
