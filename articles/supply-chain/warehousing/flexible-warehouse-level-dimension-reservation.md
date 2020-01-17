@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flexible warehouse-level dimension reservation policy
-description: This topic describes the inventory reservation policy that allows businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for their customers’ sales orders when the reservation hierarchy associated with the products disallows it.
+description: This topic describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation.
 author: omulvad
 manager: AnnBe
 ms.date: 01/07/2020
@@ -34,240 +34,638 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the inventory reservation policy that allows businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for their customers’ sales orders when the reservation hierarchy associated with the products disallows it (by being of a type that is commonly referred to as “Batch-below[location]”.)
+Usually, if an inventory reservation hierarchy of the "Batch-below\[location\]" type is associated with products, businesses that sell batch-tracked products and run their logistics as WMS-enabled operations can't reserve specific batches of those products for customer sales orders. This topic describes the inventory reservation policy that lets these businesses reserve specific batches, even when the products are associated with a Batch-below\[location\] reservation hierarchy.
 
 ## Inventory reservation hierarchy
 
-Below is a summary of the existing inventory reservation hierarchy with focus on handing the batch and serial tracked items. 
+This section summarizes the existing inventory reservation hierarchy. It focuses on the way that batch-tracked and serial-tracked items are handled.
 
-Inventory reservation hierarchy dictates that as far as storage dimensions are concerned, it is the demand order that carries the mandatory dimensions of site, warehouse, and inventory status, while it is the warehouse logic that is responsible for assigning and reserving a location to the requested quantities. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to say from where (site and warehouse) the order must be shipped, and the warehouse then relies on its logic to locate the required quantity within the warehouse premises.
+The inventory reservation hierarchy dictates that, as far as storage dimensions are concerned, the demand order carries the mandatory dimensions of site, warehouse, and inventory status, whereas the warehouse logic is responsible for assigning a location to the requested quantities and reserving the location. In other words, in the interactions between the demand order and the warehouse operations, the demand order is expected to indicate where the order must be shipped from (that is, what site and warehouse). The warehouse then relies on its logic to find the required quantity in the warehouse premises.
 
-Tracking dimensions (batch and serial numbers) are, however, subject to more flexibility in order to reflect the operational model of the business. An inventory reservation hierarchy can accommodate scenarios where:
+However, to reflect the operational model of the business, tracking dimensions (batch and serial numbers) are subject to more flexibility. An inventory reservation hierarchy can accommodate scenarios where the following conditions apply:
 
-1. The business chooses to rely on their warehouse operations to manage picking of quantities with batch or serial numbers after the quantities have been located within the warehousing storage space. This model, referred to as "Batch-below[location]", is common when product's batch or serial number identification is of no importance to the customers when placing the demand with the selling company.
+- The business relies on its warehouse operations to manage picking of quantities that have batch or serial numbers after the quantities have been found in the warehousing storage space. This model is often referred to as *Batch-below\[location\]*. It's typically used when a product's batch or serial number identification isn't important to the customers who place the demand with the selling company.
+- If batch or serial numbers are part of a customer's order specification, and they are recorded on the demand order, the warehouse operations that find the quantities in the warehouse are constrained by the specific requested numbers and aren't allowed to change them. This model is referred to as *Batch-above\[location\]*.
 
-2. When batch or serial numbers are part of the customer's order specification and are recorded on the demand order, the warehouse operations are constrained by the requested specific numbers when locating the quantities within the warehouse and are not allowed to change them. This is a "Batch-above[location]" reservation hierarchy type.
-
-The challenge with the above principle is that any given released product can have only one inventory reservation hierarchy assigned to it. This implies that in order for the warehouse management system to support handling of the tracked item, the decision on timing for when the batch or serial number is reserved, at demand order taking or during the warehouse picking work, once taken by means of hierarchy assignment, cannot be ad hoc changed.
+In these scenarios, the challenge is that only one inventory reservation hierarchy can be assigned to each released product. Therefore, for the warehouse management system to handle tracked items, after the hierarchy assignment determines when the batch or serial number should be reserved (either when the demand order is taken or during the warehouse picking work), this timing can't be changed on an ad-hoc basis.
 
 ## Flexible reservation for batch-tracked items
 
 ### Business scenario
 
-In this scenario, a company employs an inventory strategy of tracking its finished goods by batch numbers. Because the company also uses the Dynamics 365 Warehouse Management System workload that has well-equipped logic for planning and executing warehouse pick and ship operations for batch-enabled items, most of the finished items are associated with a "Batch-below[Location]" inventory reservation hierarchy. The advantage behind such an operational setup is that decisions (that are effectively reservation decisions) about which batches to pick and where to locate them within the warehouse are postponed until the warehouse picking operations start, as opposed to when the customer's order is placed.
+In this scenario, a company uses an inventory strategy where finished goods are tracked by batch numbers. This company also uses the Microsoft Dynamics 365 Warehouse Management System workload. Because this workload has well-equipped logic for planning and running warehouse picking and shipping operations for batch-enabled items, most of the finished items are associated with a Batch-below\[location\] inventory reservation hierarchy. The advantage of this type of operational setup is that decisions (which are effectively reservation decisions) about which batches to pick and where to put them in the warehouse are postponed until the warehouse picking operations start. They aren't made when the customer's order is placed.
 
-While the "Batch\_below[location]" inventory reservation hierarchy serves the company's business goals well, they have many established customers that, when reordering products, require the same batch as previously purchased. The company is looking for flexibility in handling the batch reservation rules, where depending on the customers' demand for the same item:
+Although the Batch\_below\[location\] reservation hierarchy serves the company's business goals well, many of the company's established customers require the same batch that they previously purchased when they reorder products. Therefore, the company is looking for flexibility in the way that the batch reservation rules are handled, so that, depending on the customers' demand for the same item, the following behaviors occur:
 
-- A batch number can be recorded and reserved at the order taking time by the sales processor, with no possibility of it being changed during warehouse operations and/or being taken by other demands, hence ensuring the ordered batch number is shipped to the customer.
+- A batch number can be recorded and reserved when the order is taken by the sales processor, and it can't be changed during warehouse operations and/or taken by other demands. This behavior helps guarantee that the batch number that was ordered is shipped to the customer.
+- If the batch number isn't important to the customer, the warehouse operations can determine a batch number during picking work, after sales order registration and reservation have been done.
 
-- When irrelevant to the customer, a batch number can be decided beyond the sales order registration and reservation by the warehouse operations during picking work.
+### Allowing reservation of a specific batch on the sales order
 
-### Allow specific batch reservation on the sales order
+To accommodate the desired flexibility in the batch reservation behavior for items that are associated with a Batch\_below\[location\] inventory reservation hierarchy, inventory managers must select the **Allow reservation on demand order** check box for the **Batch number** level on the **Inventory reservation hierarchies** page.
 
-To accommodate the desired flexibility in the batch reservation behavior for items that are associated with a "Batch\_below[location]" inventory reservation hierarchy, inventory managers must enable the **Allow reservation on demand order** field for the Batch number level.
+![Making the inventory reservation hierarchy flexible](media/Flexible-inventory-reservation-hierarchy.png)
 
-![Making inventory reservation hierarchy flexible](media/Flexible-inventory-reservation-hierarchy.png)
-
-When **Batch number** level in the hierarchy is selected, all other dimensions that are above and up to the location will be selected automatically (all dimensions placed above the **Location** level are pre-selected by default.) This behaviour is meant to convey the logic according to which, once you reserve a specific batch number on the order line, all dimensions in the range between the batch number and location are also automatically reserved.
+When the **Batch number** level in the hierarchy is selected, all dimensions above that level and up through the **Location** level will be automatically selected. (By default, all dimensions above the **Location** level are preselected.) This behavior reflects the logic where all dimensions in the range between the batch number and location are also automatically reserved after you reserve a specific batch number on the order line.
 
 > [!NOTE]
-> The **Allow reservation on demand order** option only applies to reservation hierarchy levels that are below the warehouse location dimension.
+> The **Allow reservation on demand order** check box applies only to reservation hierarchy levels that are below the warehouse location dimension.
 >
-> Batch number is the only level in the hierarchy that is open for flexible reservation policy. That means that you cannot select **Allow reservation on demand order** field for location, license plate, or serial number.
+> **Batch number** is the only level in the hierarchy that is open for the flexible reservation policy. In other words, you can't select the **Allow reservation on demand order** check box for the **Location**, **License plate**, or **Serial number** level.
 >
-> If your reservation hierarchy includes serial number dimension (which must always be placed below the batch number level) and you have enabled batch-specific reservation for the batch number, the system will continue handling serial number reservation and picking operations based on rules applicable to "Serial\_below[location]" reservation policy.
- 
-You can allow batch-specific reservation for an existing "Batch\_below[location]" hierarchy at any point of time in your deployment. This will not affect any reservations or open warehouse work that have been created prior to this change. However, removal of the **Allow reservation on demand order** option is not permitted when there are existing inventory transactions of issue type "Reserved ordered", "Reserved physical", or "Ordered" for one or more items that are associated with that reservation hierarchy.
+> If your reservation hierarchy includes the serial number dimension (which must always be below the **Batch number** level), and if you've turned on batch-specific reservation for the batch number, the system will continue to handle serial number reservation and picking operations, based on the rules that apply to the Serial\_below\[location\] reservation policy.
 
- > [!NOTE]
- > You can also change item's existing reservation hierarchy from the one that does not allow batch specification on the order to the one that does, provided the hierarchy level structure is identical in both hierarchies. Use the **Change reservation hierarchy for items** function to perform the reassignment. This may be relevant when you wish to disallow flexible batch reservation for a subset of batch-tracked items and allow it for the rest of the product portfolio.
+At any point, you can allow batch-specific reservation for an existing Batch\_below\[location\] reservation hierarchy in your deployment. This change won't affect any reservations and open warehouse work that were created before the change occurred. However, the **Allow reservation on demand order** check box can't be cleared if inventory transactions of the **Reserved ordered**, **Reserved physical**, or **Ordered** issue type exist for one or more items that are associated with that reservation hierarchy.
 
-Regardless of whether you have enabled the **Allow reservation on demand order** option, if you do not want to reserve a specific batch number for the item on an order line, default warehouse operations logic that is valid for a "Batch\_below[location]" reservation hierarchy will still apply.
+> [!NOTE]
+> If an item's existing reservation hierarchy doesn't allow batch specification on the order, you can reassign it to a reservation hierarchy that does allow batch specification, provided that the hierarchy level structure is the same in both hierarchies. Use the **Change reservation hierarchy for items** function to do the reassignment. This change might be relevant when you want to prevent flexible batch reservation for a subset of batch-tracked items but allow it for the rest of the product portfolio.
 
-### Reserve specific batch number for the customer order
+Regardless of whether you've selected the **Allow reservation on demand order** check box, if you don't want to reserve a specific batch number for the item on an order line, default warehouse operations logic that is valid for a Batch\_below\[location\] reservation hierarchy will still apply.
 
-Once the batch-tracked item's "Batch\_below[location]" reservation hierarchy is enabled to allow specific batch number reservation on the sales order, the sales order processors can take customer orders for the same item in one of the following two ways, depending on the customer's request:
+### Reserve a specific batch number for a customer order
 
-- Enter order details without batch number. This should be done when the product's batch specification is of no importance to the customer. All existing processes associated with handling such an order in the system remain unchanged and will require no additional considerations from the users.
+After a batch-tracked item's Batch\_below\[location\] inventory reservation hierarchy is set up to allow reservation of specific batch numbers on sales orders, sales order processors can take customer orders for the same item in one of the following ways, depending on the customer's request:
 
-- Enter order details and reserve a specific batch number. This should be done when the customer requests a specific batch, typically when reordering the previously purchased product. This kind of specific batch reservation is referred to as "order-committed reservation".
+- **Enter order details without specifying a batch number** – This approach should be used when the product's batch specification isn't important to the customer. All existing processes that are associated with handling an order of this type in the system remain unchanged. No additional considerations are required on the part of users.
+- **Enter order details and reserve a specific batch number** – This approach should be used when the customer requests a specific batch. Typically, customers will request a specific batch when they are reordering a product that they previously purchased. This type of batch-specific reservation is referred to as *order-committed reservation*.
 
-The following set of rules are valid when processing quantities with batch number committed to a specific order:
+The following set of rules is valid when quantities are processed, and a batch number is committed to a specific order:
 
-- To allow reservation of a specific batch number for the item under "Batch-below[location]" reservation policy, the system must reserve all dimensions up to and including location. This range will typically include license plate dimension.
+- To allow reservation of a specific batch number for an item under the Batch-below\[location\] reservation policy, the system must reserve all dimensions up through location. This range typically includes the license plate dimension.
+- Location directives aren't used when picking work is created for a sales line that uses order-committed batch reservation.
+- During warehouse processing of work for order-committed batches, neither the user nor the system is allowed to change the batch number. (This processing includes exception handling.)
 
-- Location directives are not used when creating pick work for a sales line with order-committed batch reservation.
-
-- During warehouse processing of work for order-committed batches (including exception handling), neither the users nor the system are allowed to change the batch number.
-
-The following example will illustrate the end-to-end flow.
+The following example shows the end-to-end flow.
 
 ## Example scenario
 
-For this scenario, you must have demo data installed, and you must use the **USMF** demo data company.
+For this example, demo data must be installed, and you must use the **USMF** demo data company.
 
-### Enable an inventory reservation hierarchy to allow batch-specific reservation
+### Set up an inventory reservation hierarchy to allow batch-specific reservation
 
-  1. Go to **Warehouse management** \> **Setup** \> **Inventory \> Reservation hierarchy**.
-  2. Click **New**.
-  3. In the **Name** field, type a name. For example, type "BatchFlex".
-  4. In the **Description** field, type a name. For example, type "Batch below flexible".
-  5. In the **Selected** table, select **Serial number** and **Owner**. Click the left arrow to move **Serial number** and **Owner** to the **Available** table. 
-  6. Click **OK**.
-  7. In the **Batch number** row, select the **Allow reservation on demand order** column. The **License plate** and **Location** dimension levels are automatically selected, and you cannot unselect them.
-  8. Click **Save**.
+1. Go to **Warehouse management** \> **Setup** \> **Inventory \> Reservation hierarchy**.
+2. Select **New**.
+3. In the **Name** field, enter a name (for example, **BatchFlex**).
+4. In the **Description** field, enter a description (for example, **Batch below flexible**).
+5. In the **Selected** field, select **Serial number** and **Owner**, and then select the left arrow button to move them to the **Available** field.
+6. Select **OK**.
+7. In the row for the **Batch number** dimension level, select the **Allow reservation on demand order** check box. The **License plate** and **Location** levels are automatically selected, and you can't clear the check boxes for them.
+8. Select **Save**.
 
 ### Create a new released product
 
-Create a new released product using the following configuration.
+1. Set the product's three master data parameters by using these values:
 
-  1. Set the product's three master data parameters using these values:
-      - In the **Storage dimension group** field, enter "Ware".
-      - In the **Tracking dimension group** field, enter "Batch-Phy".
-      - In the **Reservation hierarchy** field, enter "BatchFlex".
-  2. Create two batch numbers, for example, "B11" and "B22".
-  3. Add item quantity to on-hand stock using the below values:
+    - In the **Storage dimension group** field, enter **Ware**.
+    - In the **Tracking dimension group** field, enter **Batch-Phy**.
+    - In the **Reservation hierarchy** field, enter **BatchFlex**.
 
-      | Warehouse | Batch number | Location | License plate | Quantity |
-      | --- | --- | --- | --- | --- |
-      | 24 | B11 | BULK-001 |   | 10 |
-      | 24 | B11 | FL-001 | LP11 | 10 |
-      | 24 | B22 | FL-002 | LP22 | 10 |
+2. Create two batch numbers, such as **B11** and **B22**.
+3. Add item quantities to on-hand stock by using the following values.
+
+    | Warehouse | Batch number | Location | License plate | Quantity |
+    |-----------|--------------|----------|---------------|----------|
+    | 24        | B11          | BULK-001 | None          | 10       |
+    | 24        | B11          | FL-001   | LP11          | 10       |
+    | 24        | B22          | FL-002   | LP22          | 10       |
 
 ### Enter sales order details
 
-  1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
-  2. Click **New**.
-  3. For the sales order header, in the **Customer account** field, enter **US-003**.
-  4. Add a line for your new item and enter quantity "10". Make sure the **Warehouse** field is set to **24**.
-  5. From the **Sales order lines** action bar, click **Inventory**, and in the **Maintain** group, click **Batch reservation**. The **Batch reservation** page displays a list of batches available for order line quantity reservation. For this example, it displays quantity 20 of batch "B11" and quantity 10 of batch "B22". Note that the **Batch reservation** page is not accessible from a line with an item whose associated reservation hierarchy is not enabled for batch-specific reservation.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+2. Select **New**.
+3. On the sales order header, in the **Customer account** field, enter **US-003**.
+4. Add a line for the new item, and enter **10** as the quantity. Make sure that the **Warehouse** field is set to **24**.
+5. On the **Sales order lines** action bar, select **Inventory**, and then, in the **Maintain** group, select **Batch reservation**. The **Batch reservation** page shows a list of batches that are available for order line quantity reservation. For this example, it shows a quantity of **20** for batch number **B11** and a quantity of **10** for batch number **B22**. Note that the **Batch reservation** page can be accessed from a line only if the inventory reservation hierarchy that is associated with the item on that line is set up for batch-specific reservation.
 
-      > [!NOTE]
-      > If you want to reserve a specific batch for the sales order, you must use the **Batch reservation** page.
-      >
-      > If you enter the batch number directly on the sales order line, the system will regard this as if you entered a specific batch value for an item that is subject to the "Batch-below[location]" reservation policy. On the warning message that appears when you save the line, if you confirm your decision to have the batch number specified directly on the order line, the line in question will not be handled by the regular warehouse management logic.
-      >
-      > If you reserve the quantity from the **Reservation** page, no specific batch will be reserved and the execution of the warehouse operations for this line will follow the rules applicable under the "Batch-below[location]" reservation policy.
+    > [!NOTE]
+    > To reserve a specific batch for a sales order, you must use the **Batch reservation** page.
+    >
+    > If you enter the batch number directly on the sales order line, the system will behave as though you entered a specific batch value for an item that is subject to the Batch-below\[location\] reservation policy. When you save the line, you will receive a warning message. If you confirm that the batch number should be specified directly on the order line, the line won't be handled by the regular warehouse management logic.
+    >
+    > If you reserve the quantity from the **Reservation** page, no specific batch will be reserved, and the execution of warehouse operations for the line will follow the rules that are applicable under the Batch-below\[location\] reservation policy.
 
-      The general working of and interactions with this page are the same as for items that have associated reservation hierarchy of type "Batch-above[location]", with the exception of:
+    In general, this page works and is interacted with in the same way that it works and is interacted with for items that have an associated reservation hierarchy of the Batch-above\[location\] type. However, the following exceptions apply:
 
-      -  The **Batch numbers committed to source line** tab displays the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the entire fulfilment cycle of the order line, including the warehouse processing stages. This is in contrast to the display of records in the **Overview** tab, where a regular order line reservation, as done for the dimensions above location level, is shown in the grid up to a point when warehouse work is created and after which the line reservation is taken over by the work entity and no longer displayed on the page. The **Batch numbers committed to source line** tab ensures that the sales order processor can view the batch numbers that were committed to the customer's order at any point in its lifecycle, up to invoicing.
+    - The **Batch numbers committed to source line** FastTab shows the batch numbers that are reserved for the order line. The batch values in the grid will be shown throughout the fulfilment cycle of the order line, even during the warehouse processing stages. By contrast, on the **Overview** FastTab, regular order line reservation (that is, reservation that is done for the dimensions above the **Location** level) is shown in the grid up to the point when warehouse work is created. The work entity then takes over the line reservation, and the line reservation no longer appears on the page. The **Batch numbers committed to source line** FastTab helps guarantee that the sales order processor can view the batch numbers that were committed to the customer's order at any point during its lifecycle, up to invoicing.
+    - In addition to reserving a specific batch, a user can manually select the batch's specific location and license plate instead of letting the system automatically select them. This capability is related to the design of the order-committed batch reservation mechanism. As was mentioned earlier, when a batch number is reserved for an item under the Batch-below\[location\] reservation policy, the system must reserve all dimensions up through location. Therefore, warehouse work will carry the same storage dimensions that were reserved by the users who worked with the orders, and it might not always represent the item storage placement that is convenient, or even possible, for picking operations. If order processors are aware of the warehouse constraints, they might want to manually select the specific locations and license plates when they reserve a batch. In this case, the user must use the **Display dimensions** functionality on the page header, and must add the location and license plate in the grid on the **Overview** FastTab.
 
-      -  In addition to reserving a specific batch, a user can decide whether they also want to manually select the batch's specific location and license plate, instead of letting the system make the selection automatically. This is related to the design of the order-committed batch reservation mechanism. As pointed out earlier, when reserving a batch number for an item under "Batch-below[location]" reservation policy, the system must reserve all dimensions up to and including location. As a result, warehouse work will carry the same storage dimensions as were reserved by the users working with the orders, and may not always represent the item storage placement that is convenient, or even possible, for picking operations. In cases where order processors are aware of the warehouse constraints, they may be interested in making manual selections of the specific locations and license plates when reserving a batch. To do so, the user must use the "Display dimensions" facility on the page header and add the location and license plate in the grid on the **Overview** tab.
+6. On the **Batch reservation** page, select the line for batch **B11**, and then select **Reserve line**. There is no designated logic for assigning locations and license plates during automatic reservation. You can manually enter the quantity in the **Reservation** field. Notice that, on the **Batch numbers committed to source line** FastTab, batch **B11** is shown as **Committed**.
 
-  6. On the **Batch reservation** page, select the line for batch "B11" and click **Reserve line**. There is no designated logic as to how locations and license plates are assigned during the automatic reservation. Optionally, you can enter the quantity in the **Reservation** field manually. Note that in the **Batch numbers committed to source line** tab, batch "B11" is shown as **Committed**:
+    ![Committing a specific batch number to a sales order line on the Batch reservation page](media/Batch-reservation-form-with-order-committed-reservation.png)
 
-      ![Committing specific batch number to a sales order line on the Batch reservation page](media/Batch-reservation-form-with-order-committed-reservation.png)
+    > [!NOTE]
+    > Reservation of the quantity on a sales order line can be done across multiple batches. Likewise, reservation of the same batch can be done against multiple locations and license plates, if enabled for location.
+    >
+    > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, whereas 80 units are reserved at the site and warehouse levels for any available batch. In this case, the warehouse management system will handle picking operations by using two separate work lines.
 
-      > [!NOTE]
-      > Reservation of the sales order line quantity can be done across multiple batches. Likewise, reservation of the same batch can be done against multiple locations and license plates, if enabled for location.
-      >
-      > Reservation of a specific batch for the quantity on a sales order line can also be partial. For example, the total quantity of 100 units can be reserved so that a specific batch is committed to 20 units, while 80 units are reserved at the site and warehouse level for any available batch. In this case, the warehouse management system will handle picking operations by two separate work lines.
+7. Go to **Product information management** \> **Products** \> **Released products**. Select your item, and then select **Manage inventory** \> **View** \> **Transactions**.
 
-  7. Go to **Product information management** \> **Products** \> **Released products**. Select your item and click **Manage inventory**  \> **View** \> **Transactions**.
+    ![Order-committed reservation as an inventory transaction type](media/Inventory-transactions-for-order-committed-reservation.png)
 
-      ![Order-committed reservation as an inventory transaction type](media/Inventory-transactions-for-order-committed-reservation.png)
+8. Review the item's inventory transactions that are related to the sales order line reservation.
 
-      Review the item's inventory transactions related to the sales order line reservation.
+    - A transaction where the **Reference** field is set to **Sales order** and the **Issue** field is set to **Reserved physical** represents the order line reservation for the inventory dimensions above the **Location** level. According to the item's inventory reservation hierarchy, those dimensions are site, warehouse, and inventory status.
+    - A transaction where the **Reference** field is set to **Order-committed reservation** and the **Issue** field is set to **Reserved physical** represents the order line reservation for the specific batch and all inventory dimensions above it. According to the item's inventory reservation hierarchy, those dimensions are batch number and location. In this example, the location is **Bulk-001**.
 
-      - A transaction with **Reference** type "Sales order" and **Issue** type "Reserved physical" represents the order line reservation for the inventory dimensions above location, which according to the item's reservation hierarchy are "Site", "Warehouse", and "Inventory status".
+9. On the sales order header, select **Warehouse** \> **Actions** \> **Release to warehouse**. The order line is now waved, and a load and work are created.
 
-      - A transaction with **Reference** type "Order-committed reservation" and **Issue** type "Reserved physical" represents the order line reservation for the specific batch and all other inventory dimensions above it. In our example, those dimensions are "Batch number" and "Location", where "Location" is "Bulk-001".
+### Review and process warehouse work with order-committed batch numbers
 
-  8. On the sales order header, click **Warehouse** \> **Actions** \> **Release to warehouse**. The order line is now waved, and load and work are created.
+1. On the **Sales order lines** action bar, select **Warehouse** \> **Work details**.
 
-### Review and process warehouse work with order-committed batch number
+    The work that handles the picking operation for batch quantities that are committed to the sales order line has the following characteristics:
 
-  1. From the **Sales order lines** action bar, click **Warehouse** \> **Work details**.
+    - To create work, the system uses work templates but not location directives. All the standard settings that are defined for work templates, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when new work should be created. However, the rules that are associated with location directives for identifying pick and put locations aren't considered, because the order-committed reservation already specifies all the inventory dimensions. Those inventory dimensions include the dimensions at the warehouse storage level. Therefore, the work inherits those dimensions without having to consult location directives.
+    - The batch number is shown on the work line that is created for an item that has an associated Batch-above\[location\] reservation hierarchy. However, it isn't shown on the pick line. Instead, the "from" batch number and all other storage dimensions are shown on the work line's work inventory transaction, that are referenced from the associated inventory transactions.
 
-      The work that handles the pick operation of batch quantities committed to the sales order line has the following characteristics:
+        ![Warehouse inventory transaction for work that originates from order-committed reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
-      1. To create work, the system uses work templates but not location directives. All the standard settings that are defined for work templates, such as a maximum number of pick lines or a specific unit of measure, will be applied to determine when new work should be created. However, the rules that are associated with location directives for identifying pick and put locations are not considered. This is because the order-committed reservation already specifies all the inventory dimensions, including those at the warehouse storage level, so the work inherits them without consulting location directives.
+    - After work is created, the item's inventory transaction where the **Reference** field is set to **Order-committed reservation** is removed. The inventory transaction where the **Reference** field is set to **Work** now holds the physical reservation on all the quantity's inventory dimensions.
 
-      2. The batch number is not displayed on the pick line (as is the case for the work line created for an item with "Batch-above[location]" hierarchy). Instead, specifications of the "from" batch number as well as all other storage dimensions are shown on the work line's Work inventory transaction, that are referenced from the associated inventory transactions:
+        Warehouse operations can proceed to handle its execution in the usual manner. However, the instructions on the mobile device will instruct the worker to pick a specific batch number. In warehouse environments where locations are license plate–controlled, after a worker reaches a location that stores the same batch on multiple license plates, he or she can pick from any license plate that isn't already reserved (for example, by another order-committed reservation or work that originates from a reservation of that type.)
 
-      ![Warehouse inventory transaction for work originating from order-committed reservation](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        If it turns out to be impractical to pick from the location that is specified on the work line, the warehouse operators can use of one of the following actions to address this challenge:
 
-      3. Once work is created, the item's inventory transaction of **Reference** type "Order-committed reservation" is removed, with the inventory transaction of **Reference** type "Work" now holding the physical reservation on all the quantity's inventory dimensions.
+        - The standard **Override location** action on a mobile device (provided that the warehouse worker's **Allow pick location override** setting is enabled)
+        - The **Change location** action on the **Work list details** page, to redirect picking of the specific batch so that it's done from a more convenient location
 
-      Warehouse operations can proceed with handling its execution in a regular manner, except that the instructions on the mobile device will prescribe the worker the specific batch number to pick. In the warehouse environments where locations are license plate-controlled, once at the location storing the same batch on multiple license plates, the worker can pick from any license plate, provided it is not already reserved (for example, by another order-committed reservation or work that originates from such a reservation.)
+2. On the mobile device, finish picking and putting the work.
 
-      To address the potential challenge if picking from the location as specified on the work line may turn out to be impractical, the warehouse operators can make use of one of the following:
+    The quantity of **10** for batch number **B11** is now picked for the sales order line and put in the **Baydoor** location. At this point, it's ready to be loaded onto the truck and dispatched to the customer's address.
 
-      - The standard **Override location** action on a mobile device (provided the warehouse worker's **Allow pick location override** setting is enabled).
+## Exception handling of warehouse work with order-committed batch numbers
 
-      - The **Change location** action on the **Work list details** page to direct picking of the specific batch from a more convenient location.
+Warehouse work for picking order-committed batch numbers is subject to the same standard warehouse exception handling and actions as regular work. In general, the open work or work line can be canceled, it can be interrupted because a user location is full, it can be short-picked, and it can be updated because of a movement. Likewise, the picked quantity of work that has already been completed can be reduced, or the work can be reversed.
 
-  2. From the mobile device, complete picking and putting the work.
-
-      The quantity 10 of batch number "B11" is now picked for the sales order line and is placed in the "Baydoor" location, ready to be loaded onto the trick and dispatched to the customer's address.
-
-## Exception handling of warehouse work with order-committed batch number
-
-Warehouse work for picking order-committed batch number is subject to the same standard warehouse exception handling and actions as any other regular work. In general, the open work or work line can be cancelled, can be interrupted due to a full user location situation, can be short-picked, and can get updated due to a movement. Likewise, the picked quantity of the already completed work can be reduced or the work can be reversed. The key rule that is applied to all of these exception handling actions is that the batch number that was reserved for the customer can never be replaced with a different one, while its storage dimension (location and license plate) may change by a manual update by the user or an automatic update by the system. The automatic update is based on the same random storage dimension assignment as applied when automatically reserving a specific batch without specifying storage dimensions.
+The following key rule is applied to all these exception handling actions: the batch number that was reserved for the customer can never be replaced with a different batch number, but its storage dimensions (location and license plate) can be changed through either a manual update by the user or an automatic update by the system. The automatic update is based on the same random assignment of storage dimensions that applied when a specific batch was automatically reserved but no storage dimensions were specified.
 
 ### Example scenario
 
-An example of this scenario is where the previously completed work is being unpicked by using the reduce pick quantity functionality.
+An example of this scenario is a situation where previously completed work is being unpicked by using the **Reduce picked quantity** function. This example continues the previous example in this topic.
 
-1. Continuing from the previous example in the section above, go to **Warehouse management** \> **Loads** \> **Active loads**.
-2. Select the load that was created in connection with shipping your sales order.
-3. From the **Load order lines** action bar, click **Reduce picked quantity**.
-4. On the **Reduce picked quantity** page, in the **Move to location** field, select **FL-001**. In the **Move to license plate** field, select **LP33**.
-5. In the grid, in the **Inventory quantity to unpick** field, enter "10".
-6. Click **OK**.
+1. Go to **Warehouse management** \> **Loads** \> **Active loads**.
+2. Select the load that was created in connection with the shipment of your sales order.
+3. From the **Load order lines** action bar, select **Reduce picked quantity**.
+4. On the **Reduce picked quantity** page, in the **Move to location** field, select **FL-001**.
+5. In the **Move to license plate** field, select **LP33**.
+6. In the grid, in the **Inventory quantity to unpick** field, enter **10**.
+7. Select **OK**.
 
-The results of the unpicking action are:
+Here are the results of the unpicking action:
 
-- The previously closed work is set to status "Cancelled".
+- The status of the previously closed work is set to **Cancelled**.
+- New work of the **Inventory movement** type is created for the unpicked quantity of **10** for batch number **B11**. This work represents the movement from the **Baydoor** location to license plate **LP33** in location **FL-001**. The status is set to **Closed**.
+- The system re-reserves the batch number that was originally ordered, and assigns the location and license plate IDs. (This process is equivalent to running the **Reserve line** function for the order line for a given batch number). As a result, batch **B11** is shown as physically reserved on the **Batch numbers committed to source line** FastTab of the **Batch reservation** page, and the **Reservation** field contains a quantity of **10** for batch number **B11**. Additionally, the **Location** field is set to **FL-001**, and the **License plate** field is set to **LP11**. (You can add these fields to the grid if they aren't visible.)
 
-- A new work of type "Inventory movement" is created for the unpicked quantity of 10 for batch number "B11" to represent movement from location "Baydoor" to location "FL-001", license plate "LP33", and is set to status "Closed".
+The following tables provide an overview that shows how the system handles order-committed batch reservation for specific warehouse actions. To interpret the content in the tables, assume that each warehouse action is run in the context of existing warehouse work that originates from an order-committed batch reservation, or that execution of each warehouse action affects work of that type.
 
-- On the **Batch reservation** page, batch "B11" is shown as physically reserved in the **Batch numbers committed to source line** tab, and the **Reservation** field contains quantity 10 for batch number "B11". The **Location** and **License plate** fields contain "FL-001" and "LP11" respectively (you can add these fields to the grid if they aren't displayed). This is a result of the system re-reserving the originally ordered batch number and assigning the location and license plate IDs where the. batch is available for reservation. (This is equivalent to running the **Reserve line** function for the order line for a given batch number).
+> [!NOTE]
+> In these tables, the "Batch quantity is available" column indicates whether a batch quantity is available in addition to the quantity that is either already reserved for the current order-committed reservations or already reserved by the warehouse work that originates from reservations of that type.
 
-The following table provides an overview of how an order-committed batch reservation is handled by the system with regard to a given warehouse action. To interpret the content in the table, assume that a given warehouse action is executed in the context of an existing warehouse work that originates from an order-committed batch reservation, or that its execution affects such a work.
+#### Override the pick location on the open work
 
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan='2'>The <strong>Allow pick location override</strong> option is enabled on the worker.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Select the <strong>Override location</strong> menu item on the WMA when you start picking work.</li>
+<li>Select <strong>Suggest</strong>.</li>
+<li>Confirm the new location that is suggested based on batch quantity availability.</li>
+</ol>
+</td>
+<td>On the current work, the following actions occur:
+<ul>
+<li>The location on the pick line is updated to the new location. (If the location is license plate–controlled, a random license plate is assigned to the work inventory transaction, and the worker can pick from any license plate that has available quantity.)</li>
+<li>If the quantity is found on more than one license plate in the new location, the original pick line is split into multiple lines to match each license plate.</li>
+</ul>
+</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>No</td>
+<td>
+<ol>
+<li>Select the <strong>Override location</strong> menu item on the WMA when you start picking work.</li>
+<li>Manually enter a location.</li>
+</ol>
+</td>
+<td>The <strong>Override location</strong> action isn't possible. It fails, and an error is thrown.</td>
+<td>Not applicable</td>
+</tr>
+</tbody>
+</table>
 
-|    Warehouse   action         |    Key setup parameter         |    Batch quantity is available[i]    |    Key user steps   |    Warehouse work     |    Order-committed batch reservation   |
-|------------------|-------------------------------------|------------------------------------------------|--------------------------------------|-------------------------|--------------------|
-|    Override pick location on the open work.            |    **Allow pick location override** option is enabled (on the worker).     |    Yes        |    Click **Override location** menu item on the WMA when starting on a pick work.<br><br>Click **Suggest**.<br><br>Confirm the new location (suggested based on batch quantity availability).        |    On the current work:<ul><li>Location on the pick line is updated to the new location. (If LP-controlled, random LP is assigned to the work inventory transaction and the worker can pick from any LP with available quantity.)</li><li>If quantity is found on more than one LP on the new location, the original pick line is split into multiple lines to match each LP.</li></ul>    |    n/a     |
-|    Override pick location on the open work.            |    **Allow pick location override** option is enabled (on the worker).    |   No |    Click **Override location** menu item on the WMA when starting a pick work.<br><br>Enter location manually.   |    **Override location** is not possible and fails with an error.       |     n/a         |
-|    Full button - split work line due to overflow on user location.     |    **Allow splitting of work** option is enabled (on the mobile device menu item).  |    n/a     |    Click **Full** menu item on the WMA when processing a pick work.<br><br>Enter partial quantity of the required pick in the **Pick Qty** field to indicate the full capacity. |    On the current work, quantity is updated to the remaining to pick.<br><br>New work for the picked quantity is created and closed.  |    n/a   |
-|    Reduce picked quantity of completed work (from load).    |    n/a    |    Yes   |    Open **Reduce picked quantity** page from the load line.<br><br>Enter full quantity to unpick.<br><br>Select "Move to" location/LP.   |    <ul><li>Work associated with the load line is cancelled.</li><li>New work for inventory movement is created and closed.</li></ul> |    Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available. |
-|    Reduce picked quantity of completed work (from load).    |    n/a    |  No   |    As above   |    As above   |    Re-reserved for the same batch, and location and LP (if LP-controlled) entered during unpicking.   |   
-|    Move item within warehouse. (Only applicable to "Work creation process" type movement, not movement by template.) |    **Allow movement of inventory with associated work** option is enabled (on the worker).   |    Yes  |    Start a movement on the on the WMA.<br><br>Enter "From/To" locations.    |    <ul><li>On all existing work affected by the move, pick location is updated to the new “To” Location.</li><li>New work for inventory movement is created and closed.</li></ul>      |    All existing reservations affected by the quantity movement from the given location are re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.  |
-|    Move item within warehouse. (Only applicable to "Work creation process" type movement, not movement by template.) |   **Allow movement of inventory with associated work** option is enabled (on the worker).  |   No |    As above  |    As above  |    All existing reservations affected by the quantity movement from the given location are re-reserved for the same batch, and the new “To” location and LP (if LP-controlled). |  
-|    Reverse picked quantity of completed work (from load or wave).  |    n/a   |    Yes |    Open **Reverse work** page.<br><br>Select **Leave items at current location** option on the request page.  |    All work associated with the load is cancelled. |    Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.|
-|    Reverse picked quantity of completed work (from load or wave).  |    n/a  |    No  |    As above  |    As above  |   Re-reserved for the same batch, and location and LP where quantity was left upon reversal.   |  
-|    Reverse picked quantity of completed work (from load or wave).  |    n/a  |    Yes   |  Select **Assign items to this location** option on the request page.  |    Current work is cancelled.<br><br>New work for inventory movement is created and closed.   |  Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.   |  
-|    Reverse picked quantity of completed work (from load or wave).  |    n/a  |    No  |    As above   |    As above   |  Re-reserved for the same batch, and location and LP where quantity was assigned to upon reversal.  |
-|    Reverse picked quantity of completed work (from load or wave).  |    n/a  |    Yes/No   |    Select **Move items to this location** option on the request page.  |    Reversal is not supported.   |    n/a  |
-|    Reverse picked quantity of completed work (from load or wave).  |    n/a  |    Yes/No  |    Select **Move items based on location directives** option on the request page. |    Reversal is not supported.  |    n/a    |
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work. |    **Work exception**  of type "Short pick" is set with: **Item reallocation** = "None", **Adjust inventory** = "Yes", **Remove reservations** = "No".   |    Yes  |    Click  **Shortpick** menu item on the WMA when executing a pick work.<br><br>Enter 0 for the **Pick Quantity**.<br><br>For **Reason**, enter "No reallocation".  |    Current work is closed, with 0 picked quantity.<br><br>Inventory transaction type = "Counting", issue = "Sold", is created to represent adjustment-out.  |    Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available. |
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work. |    **Work exception** of type "Short pick" is set with: **Item reallocation** = "None", **Adjust inventory** = "Yes", **Remove reservations** = "No".  |    No    |    As above  |    Shortpicking action fails with an error.<br><br>Current work remains open. |    n/a  |  
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work. |    **Work exception** of type "Short pick" is set with: **Item reallocation** = "None", **Adjust inventory** = "Yes", **Remove reservations** = "Yes".    |    Yes    |    As above     |    Current work is closed, with 0 picked quantity.<br><br>Inventory transaction of type = "Counting", issue = "Sold", is created to represent adjustment-out.    |    All existing reservations affected by the quantity adjustment in the shortpicked location are re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.    |
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work. |    **Work exception** of type "Short pick" is set with: **Item reallocation** = "None", **Adjust inventory** = "Yes", **Remove reservations** = "Yes".    |    No   |    As above   |    As above   |    All existing reservations affected by the quantity adjustment in the shortpicked location are removed.     |
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work.|    **Work exception** of type "Short pick" is set with: **Item reallocation** = "Manual", **Adjust inventory** = "Yes", **Remove reservations** = "No/Yes",       **Allow manual item reallocation option** is enabled (on the worker).      |    Yes   |    Click **Shortpick** menu item on the WMA when executing a pick work.<br><br>Enter 0 in the **Shortpick Quantity** field.<br><br>For **Reason**, select **Short Picking with manual reallocation**.<br><br>Select the location/LP from the list.    |   On the current work:<ul><li>Pick line is closed, with 0 picked quantity.</li><li>Put line is cancelled.</li><li>New pick line is created with location/LP chosen by the user.</li><li>New put line is created.</li></ul>Inventory transaction of type = "Counting", issue = "Sold", is created to represent adjustment-out. |   n/a | 
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work.|   **Work exception** of type "Short pick" is set with: **Item reallocation** = "Manual", **Adjust inventory** = "Yes", **Remove reservations** = "No",     **Allow manual item reallocation** option is enabled (on the worker).            |    No      |    As above except no location/LP list is given to select from.  |    Shortpicking action fails with an error.  |   n/a     |  
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work.|  **Work exception** of type "Short pick" is set with: **Item reallocation** = "Manual", **Adjust inventory** = "Yes", **Remove reservations** = "Yes", **Allow manual item reallocation** option is enabled (on the worker).      |    No   |    As above   |    On the current work:<ul><li>Pick line is closed, with 0 picked quantity.</li><li>Put line is cancelled.</li></ul>Inventory transaction of type = "Counting", issue = "Sold", is created to represent adjustment-out.    |    All existing reservations affected by the quantity adjustment in the shortpicked location/LP are removed. |      
-|    Shortpick quantity - register quantity physically not found on location/LP while performing pick work.|   **Work exception** of type "Short pick" is set with: **Item reallocation** = "Automatic", **Adjust inventory** = "Yes/No", **Remove reservations** = "Yes/No".   |     n/a     |    Click **Shortpick** menu item on the WMA when executing a pick work.<br><br>Enter 0 in the **Shortpick Quantity** field.<br><br>For **Reason**, select **Short Picking with automatic reallocation**.  |    Shortpick with automatic reallocation is not supported.    |    Shortpick with automatic reallocation is not supported.   |                                     
-|    Change inventory status. (Performed from multiple entry points. Example here is based on using **Inventory status change**  from **On-hand by location**.)         |    On the **Warehouse** tab, on the **Warehouse** record, the **Remove reservations and markings** is set to "Reservations" or "Markings and reservations".            |    No  |    Select specific location.<br><br>Select line with specific item, location and LP (if LP-controlled).<br><br>Click **Inventory status change**.<br><br>Set **Inventory status** to "Blocking".         |    Inventory status change is not allowed for quantities reserved for work.   |    Reservation is removed.<br><br>Two inventory transactions of type "Inventory status change" are created to represent change in inventory status dimension change.<br><br>Inventory transaction of type "Inventory blocking", issue = "Reserved physical", is created to represent reservation of blocked quantity.   |
-|    Change inventory status. (Performed from multiple entry points. Example here is based on using **Inventory status change**  from **On-hand by location**.)          |    On the **Warehouse** tab, on the **Warehouse** record, **Remove reservations and markings** is set to "Reservations" or "Markings and reservations".           |    Yes    |    As above    |    Inventory status change is not allowed for quantities reserved for work.    |    Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.<br><br>Two inventory transactions of type "Inventory status change" are created to represent change in inventory status dimension change.<br><br>Inventory transaction of type "Inventory blocking", issue = "Reserved physical", is created to represent reservation of blocked quantity.   |
-|    Change inventory status. (Performed from multiple entry points. Example here is based on using **Inventory status change**  from **On-hand by location**.)          |    On the **Warehouse** tab, on the **Warehouse** record, **Remove reservations and markings** is set to "None".   |    No  |    As above   |    Inventory status change is not allowed for quantities reserved for work. |  Inventory status change is not allowed.    |
-|    Change inventory status. (Performed from multiple entry points. Example here is based on using **Inventory status change**  from **On-hand by location**.)          |    On the **Warehouse** tab, on the **Warehouse** record, **Remove reservations and markings** is set to "None".   |    Yes  |    As above    |    Inventory status change is not allowed for quantities reserved for work.  |    Re-reserved for the same batch, with randomly assigned location and LP (if LP-controlled) where quantity is available.   |
+#### Full button – Split a work line because of overflow on the user location
 
-\[i\] **Batch quantity is available** in addition to already reserved for the current order-committed reservations or by the warehouse works originating from such a reservation type.
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The <strong>Allow splitting of work</strong> option is enabled on the mobile device menu item.</td>
+<td>Not applicable</td>
+<td>
+<ol>
+<li>Select the <strong>Full</strong> menu item on the WMA when you process picking work.</li>
+<li>In the <strong>Pick Qty</strong> field, enter a partial quantity of the required pick to indicate the full capacity.</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>On the current work, the quantity is updated to the remaining quantity that must be picked.</li>
+<li>New work for the picked quantity is created and closed.</li>
+</ul></td>
+<td>Not applicable</td>
+</tr>
+</tbody>
+</table>
+
+#### Reduce the picked quantity of completed work (from a load)
+
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan='2'>Not applicable</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Open the <strong>Reduce picked quantity</strong> page from the load line.</li>
+<li>Enter the full quantity to unpick.</li>
+<li>Select a "move to" location/license plate.</li>
+</ol>
+</td>
+<td>
+<ul> 
+<li>Work that is associated with the load line is canceled.</li>
+<li>New work for the inventory movement is created and closed.</li>
+</ul>
+</td>
+<td>Re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>See the previous row.</td>
+<td>Re-reserved for the same batch, and for the same location and license plate (if the location is license plate–controlled) that were entered during unpicking.</td>
+</tr>
+</tbody>
+</table>
+
+#### Move an item within a warehouse
+
+> [!NOTE]
+> This warehouse action is applicable only to movement of the **Work creation process** type, not to movement by template.
+
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan='2'>The <strong>Allow movement of inventory with associated work</strong> option is enabled on the worker.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Start a movement on the WMA.</li>
+<li>Enter "from" and "to" locations.</li>
+</ol></td>
+<td>
+<ul>
+<li>On all existing work that is affected by the move, the pick location is updated to the new "to" location.</li>
+<li>New work for the inventory movement is created and closed.</li>
+</ul>
+</td>
+<td>All existing reservations that are affected by the quantity movement from the given location are re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>See the previous row.</td>
+<td>All existing reservations that are affected by the quantity movement from the given location are re-reserved for the same batch, and for the new "to" location and license plate (if the location is license plate–controlled).</td>
+</tr>
+</tbody>
+</table>
+
+#### Reverse the picked quantity of completed work (from a load or a wave)
+
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan='6'>Not applicable</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Open the <strong>Reverse work</strong> page.</li>
+<li>On the request page, select the <strong>Leave items at current location</strong> option.</li>
+</ol>
+</td>
+<td>All work that is associated with the load is canceled.</td>
+<td>Re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>See the previous row.</td>
+<td>Re-reserved for the same batch, and for the location and license plate where the quantity was left upon reversal.</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>On the request page, select the <strong>Assign items to this location</strong> option.</td>
+<td>
+<ul>
+<li>The current work is canceled.</li>
+<li>New work for the inventory movement is created and closed.</li>
+</ul>
+</td>
+<td>Re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>See the previous row.</td>
+<td>Re-reserved for the same batch, and for the location and license plate that the quantity was assigned to upon reversal.</td>
+</tr>
+<tr>
+<td>Yes/No</td>
+<td>On the request page, select the <strong>Move items to this location</strong> option.</td>
+<td>Reversal isn't supported.</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>Yes/No</td>
+<td>On the request page, select the <strong>Move items based on location directives</strong> option.</td>
+<td>Reversal isn't supported. </td>
+<td>Not applicable</td>
+</tr>
+</tbody>
+</table>
+
+#### Short-pick a quantity – Register the quantity as physically not found at the location/license plate while you perform picking work
+
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan='2'>A work exception of the <strong>Short pick</strong> type is set up, where <strong>Item reallocation</strong> = <strong>None</strong>, <strong>Adjust inventory</strong> = <strong>Yes</strong>, and <strong>Remove reservations</strong> = <strong>No</strong>.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
+<li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>The current work is closed, and the picked quantity is 0 (zero).</li>
+<li>An inventory transaction of the <strong>Counting</strong> type and the <strong>Sold</strong> issue type is created to represent the adjustment-out.</li>
+</ul>
+</td>
+<td>Re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>
+<ul>
+<li>The short-picking action fails, and an error is thrown.</li>
+<li>The current work remains open.</li>
+</ul>
+</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td rowspan='2'>A work exception of the <strong>Short pick</strong> type is set up, where <strong>Item reallocation</strong> = <strong>None</strong>, <strong>Adjust inventory</strong> = <strong>Yes</strong>, and <strong>Remove reservations</strong> = <strong>Yes</strong>.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>In the <strong>Pick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
+<li>In the <strong>Reason</strong> field, enter <strong>No reallocation</strong>.</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>The current work is closed, and the picked quantity is 0 (zero).</li>
+<li>An inventory transaction of the <strong>Counting</strong> type and the <strong>Sold</strong> issue type is created to represent the adjustment-out.</li>
+</ul>
+</td>
+<td>All existing reservations that are affected by the quantity adjustment in the short-picked location are re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>See the previous row.</td>
+<td>All existing reservations that are affected by the quantity adjustment in the short-picked location are removed.</td>
+</tr>
+<tr>
+<td>A work exception of the <strong>Short pick</strong> type is set up, where <strong>Item reallocation</strong> = <strong>Manual</strong>, <strong>Adjust inventory</strong> = <strong>Yes</strong>, and <strong>Remove reservations</strong> = <strong>No/Yes</strong>. Additionally, the <strong>Allow manual item reallocation</strong> option is enabled on the worker.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
+<li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
+<li>Select the location/license plate in the list.</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>On the current work, the following actions occur:
+<ul>
+<li>The pick line is closed, and the picked quantity is 0 (zero).</li>
+<li>The put line is canceled.</li>
+<li>A new pick line is created. It uses the location/license plate that the user selected.</li>
+<li>A new put line is created.</li>
+</ul>
+</li>
+<li>An inventory transaction of the <strong>Counting</strong> type and the <strong>Sold</strong> issue type is created to represent the adjustment-out.</li>
+</ul>
+</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>A work exception of the <strong>Short pick</strong> type is set up, where <strong>Item reallocation</strong> = <strong>Manual</strong>, <strong>Adjust inventory</strong> = <strong>Yes</strong>, and <strong>Remove reservations</strong> = <strong>No</strong>. Additionally, the <strong>Allow manual item reallocation</strong> option is enabled on the worker.</td>
+<td>No</td>
+<td>
+<ol>
+<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
+<li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
+</ol>
+</td>
+<td>The short-picking action fails, and an error is thrown.</td>
+<td>Not applicable</td>
+</tr>
+<tr>
+<td>A work exception of the <strong>Short pick</strong> type is set up, where <strong>Item reallocation</strong> = <strong>Manual</strong>, <strong>Adjust inventory</strong> = <strong>Yes</strong>, and <strong>Remove reservations</strong> = <strong>Yes</strong>. Additionally, the <strong>Allow manual item reallocation</strong> option is enabled on the worker.</td>
+<td>No</td>
+<td>
+<ol>
+<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
+<li>In the <strong>Reason</strong> field, select <strong>Short Picking with manual reallocation</strong>.</li>
+<li>Select the location/license plate in the list.</li>
+</ol>
+</td>
+<td>
+<ul>
+<li>On the current work, the following actions occur:
+<ul>
+<li>The pick line is closed, and the picked quantity is 0 (zero).</li>
+<li>The put line is canceled.</li>
+</ul>
+</li>
+<li>An inventory transaction of the <strong>Counting</strong> type and the <strong>Sold</strong> issue type is created to represent the adjustment-out.</li>
+</ul>
+</td>
+<td>All existing reservations that are affected by the quantity adjustment in the short-picked location/license plate are removed.</td>
+</tr>
+<tr>
+<td>A work exception of the <strong>Short pick</strong> type is set up, where <strong>Item reallocation</strong> = <strong>Automatic</strong>, <strong>Adjust inventory</strong> = <strong>Yes/No</strong>, and <strong>Remove reservations</strong> = <strong>Yes/No</strong>.</td>
+<td>Not applicable</td>
+<td>
+<ol>
+<li>Select the <strong>Shortpick</strong> menu item on the WMA when you run picking work.</li>
+<li>In the <strong>Shortpick Quantity</strong> field, enter <strong>0</strong> (zero).</li>
+<li>In the <strong>Reason</strong> field, select <strong>Short Picking with automatic reallocation</strong>.</li>
+</ol>
+</td>
+<td>Short-picking that involves automatic reallocation isn't supported.</td>
+<td>Short-picking that involves automatic reallocation isn't supported.</td>
+</tr>
+</tbody>
+</table>
+
+#### Change the inventory status
+
+> [!NOTE]
+> This warehouse action can be performed from multiple entry points. The example that is shown here uses **Inventory status change** from **On-hand by location**.
+
+<table>
+<thead>
+<tr>
+<th>Key setup parameter</th>
+<th>Batch quantity is available</th>
+<th>Key user steps</th>
+<th>Warehouse work</th>
+<th>Order-committed batch reservation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan='2'>On the <strong>Warehouse</strong> tab, in the <strong>Warehouse</strong> record, the <strong>Remove reservations and markings</strong> field is set to <strong>Reservations</strong> or <strong>Markings and reservations</strong>.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Select a specific location.</li>
+<li>Select a line that has a specific item, location, and license plate (if the location is license plate–controlled).</li>
+<li>Select <strong>Inventory status change</strong>.</li>
+<li>Set the <strong>Inventory status</strong> field to <strong>Blocking</strong>.</li>
+</ol>
+</td>
+<td>Inventory status changes aren't allowed for quantities that are reserved for work.</td>
+<td>
+<ul>
+<li>Re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</li>
+<li>Two inventory transactions of the <strong>Inventory status change</strong> type are created to represent the change in the inventory status dimension.</li>
+<li>An inventory transaction of the <strong>Inventory blocking</strong> type and the <strong>Reserved physical</strong> issue type is created to represent the reservation of the blocked quantity.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>Inventory status changes aren't allowed for quantities that are reserved for work.</td>
+<td>
+<ul>
+<li>The reservation is removed.</li>
+<li>Two inventory transactions of the <strong>Inventory status change</strong> type are created to represent the change in the inventory status dimension.</li>
+<li>An inventory transaction of the <strong>Inventory blocking</strong> type and the <strong>Reserved physical</strong> issue type is created to represent the reservation of the blocked quantity.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td rowspan='2'>On the <strong>Warehouse</strong> tab, in the <strong>Warehouse</strong> record, the <strong>Remove reservations and markings</strong> field is set to <strong>None</strong>.</td>
+<td>Yes</td>
+<td>
+<ol>
+<li>Select a specific location.</li>
+<li>Select a line that has a specific item, location, and license plate (if the location is license plate–controlled).</li>
+<li>Select <strong>Inventory status change</strong>.</li>
+<li>Set the <strong>Inventory status</strong> field to <strong>Blocking</strong>.</li>
+</ol>
+</td>
+<td>Inventory status changes aren't allowed for quantities that are reserved for work.</td>
+<td>Re-reserved for the same batch. The system randomly assigns a location and license plate (if the location is license plate–controlled) where the quantity is available.</td>
+</tr>
+<tr>
+<td>No</td>
+<td>See the previous row.</td>
+<td>Inventory status changes aren't allowed for quantities that are reserved for work.</td>
+<td>Inventory status changes aren't allowed.</td>
+</tr>
+</tbody>
+</table>
 
 ## Limitations
 
-- The features below are not supported with the flexible warehouse-level dimension reservation feature.
+- The flexible warehouse-level dimension reservation functionality doesn't support the following features:
 
- - Catch weight management.
- - Physical negative inventory.
- - Reservation against ordered supply.
- - Transfer orders and material consumption.
+    - Catch weight management
+    - Physical negative inventory
+    - Reservation against ordered supply
+    - Transfer orders and material consumption
 
-- Container consolidation rule of packing by directive unit limitations. Container build templates that have **Pack by directive unit** field enabled are not recommended for use with order-committed reservations. In the current design, location directives are not utilized in warehouse work creation, and therefore only the lowest unit in the unit sequence group (inventory unit) is applied during the containerization wave step.
-
-
-
+- The container consolidation rule for packing by directive unit has limitations. For order-committed reservations, we recommend that you not use container build templates where the **Pack by directive unit** field is enabled. In the current design, location directives aren't used when warehouse work is created. Therefore, only the lowest unit in the unit sequence group (the inventory unit) is applied during the containerization wave step.
