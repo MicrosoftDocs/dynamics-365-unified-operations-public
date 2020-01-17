@@ -5,7 +5,7 @@ title: Customer information management for Poland
 description: This topic describes how to handle customer information in Retail POS for Poland.
 author:
 manager:
-ms.date: 11/11/2019
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -33,12 +33,12 @@ ms.dyn365.ops.version: 10.0.9
 
 ## Introduction
 
-This topic describes how you can handle customer information, such as the customer's VAT number, in Retail point of sale (POS) for Poland.
+This topic describes how you can handle customer information, such as the customer's VAT number, in the point of sale (POS) for Poland.
 
 You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts and can be used for invoicing purposes.
 
 > [!NOTE]
-> This functionality is available in the version 10.0.8 and later of the Retail application.
+> This functionality is available in version 10.0.8 and later.
 
 ## Setup
 
@@ -142,9 +142,9 @@ The following examples show how to work with customer information in POS for Pol
 This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Retail for Poland.
 
 > [!NOTE]
-> Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
+> Some steps in these procedures vary, depending on the product version you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 >
-> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customers' AT numbers on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
+> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customers' VAT numbers on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
 
 ### Update customizations
 
