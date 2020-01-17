@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Email notification profile
-description: This topic presents an overview of Microsoft Dynamics 365 Commerce email notification profile.
+title: Create an email notification profile
+description: This topic descriobes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -28,66 +28,67 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Email notification profile
+# Create an email notification profile
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of Microsoft Dynamics 365 Commerce email notification profile.
+This topic describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Before creating channels you'll want to ensure you have set up an email notification profile to ensure email notifications can be sent out for various activities such as order creation, order shipped and payment failure.
+Before creating channels you'll want to set up an email notification profile to ensure that email notifications can be sent out for various events such as order creation, order shipping status, and payment failure.
 
-For additional email configuration information see [configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
+For additional email configuration information, see [Configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email).
 
 ## Create an email notification profile
 
 To create an email notification profile, follow these steps.
 
-1. Go to **Navigation pane** > **Modules** > **Retail** > **Headquearters setup** > **Retail Email notification profile**.
-1. On the **Action pane**, click **New**.
-1. In the **Email notification profile** field, provide a name to identify the profile.
-1. In the **Description** field, provide a relevant description.
-1. Set the **Active** switch to Yes.
-
-## Create email events
-
-Before an email notification can be created it will require an organization email template which contains the senders email information and the email template.  Follow the below steps to create one.
+1. Go to **Navigation pane > Modules > Retail > Headquearters setup > Retail Email notification profile**.
+1. On the action pane, click **New**.
+1. In the **Email notification profile** field, enter a name to identify the profile.
+1. In the **Description** field, enter a relevant description.
+1. Set the **Active** switch to **Yes**.
 
 ### Create an email template
 
+Before an email notification can be created, you must create an organization email template which contains the senders email information and the email template.
+
 To create an email template, follow these steps.
 
-1. Go to **Navigation pane** > **Modules** > **Retail** > **Headquearters setup** > **Parameters** > **Organization email templates**.
-1. On the **Action pane**, click **New**.
-1. In the **Email ID** field, provide an ID to help identify this template.
-1. In the **Sends name** field, provide the senders name.
-1. In the **Email Description**, provide a meaningful description.
-1. In the **Sender email**, provide the senders email address.
-1. Fill out any optional information in the **General** section as needed such as the email priority.
-1. Expand the **Email message content** section and click **New** to create the content.  For each content select the **Language** and provid eht email **Subject** line.  If the email will have a body ensure **Has body** is checked.
-1. On the **Action pane**, click "Email message** to provide an email body template.
+1. Go to **Navigation pane \> Modules \> Retail \> Headquarters setup \> Parameters \> Organization email templates**.
+1. On the action pane, select **New**.
+1. In the **Email ID** field, enter an ID to help identify this template.
+1. In the **Sends name** field, enter the senders name.
+1. In the **Email Description**, enter a meaningful description.
+1. In the **Sender email**, enter the senders email address.
+1. In the **General** section, fill out any optional information needed (such as the email priority).
+1. Expand the **Email message content** section and select **New** to create the template content. For each content item, select the language and provide the email subject line. If the email will have a body, ensure that the **Has body** box is checked.
+1. On the action pane, select **Email message** to provide an email body template.
 
-The following image shows an example email template.
+The following image shows example email template settings.
 
 ![Email template](media/email-template.png)
 
 ### Create an email event
+
 To create an email event, follow these steps.
 
-1. Go to **Navigation pane** > **Modules** > **Retail** > **Headquearters setup** > **Retail Email notification profile**.
+1. Go to **Navigation pane > Modules > Retail > Headquarters setup > Retail Email notification profile**.
 1. In the list, find and select the desired record. 
-1. Select the email template created in the previous step from the **Email ID** drop down
-1. Select the appropriate **Email notification type** from the drop down.
+1. Select the email template from the **Email ID** drop-down list.
+1. Select the appropriate **Email notification type** from the drop-down list.
 1. Select the **Active** check box.
-1. Click **Save**.
+1. On the action pane, select **Save**.
 
 The following image shows example email notification profiles.
 
 ![Email template](media/email-notification-profile.png)
 
 ## Additional resources
+
+[Configure and send email](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
 
 [Channels overview](channels-overview.md)
 
