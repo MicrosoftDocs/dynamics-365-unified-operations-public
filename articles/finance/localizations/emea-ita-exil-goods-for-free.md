@@ -103,3 +103,15 @@ When you create a sales order for goods that are delivered for free, the specifi
 The invoice printout will show the title **Free invoice**. Additionally, items will be prefixed with **Free item:** if the **Goods for free** flag is active on the delivery reason that is used for the order.
 
 ![Free invoice printout](media/emea-ita-exil-free-tax-invoice-printout.jpg)
+
+## Electronic invoicing
+
+To enable the changes made in **FatturaPA** electronic invoices for goods delivered for free, use the following or higher versions of Electronic reporting configurations:
+
+ - Invoice model.version.180;
+ - Invoice model mapping.version.180.92;
+ - Sales invoice (IT).version.180.63.
+
+Please refer to [Download Electronic reporting configurations from Lifecycle Services](
+https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+
