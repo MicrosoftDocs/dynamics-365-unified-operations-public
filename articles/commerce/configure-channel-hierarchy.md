@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure a channel to use a hierarchy
+title: Configure a channel to use a channel navigation hierarchy
 description: This topic describes how to configure a channel to use a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Configure a channel to use a hierarchy
+# Configure a channel to use a channel navigation hierarchy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -37,11 +37,13 @@ This topic describes how to configure a channel to use a channel navigation hier
 
 ## Overview
 
+TBD (Sam, looks like this intro is for another topic. Also, the first image doesn't seem to make sense for the procedure.)
+
 A product is primarily defined by a product number, name, and description. However, other data is also required in order to describe a product or service.
 
-## Create a product
+## Configure the channel
 
-To create a product, follow these steps.
+To configure a channel to use a channel navigation hierarchy, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Retail \> Channel setup \> Channel categories and product attributes**.
 1. Select the channel to configure.
@@ -52,7 +54,7 @@ To create a product, follow these steps.
 
 The following image shows an example channel configuration.
 
-![Create a product](media/configure-channel-hierarchy-1.png)
+![Example channel configuration](media/configure-channel-hierarchy-1.png)
 
 ## Set attribute metadata
 
@@ -60,9 +62,9 @@ Setting the attribute metadata will allow configuration of attributes on each no
 
 To set attribute metadata, follow these steps.
 
-1. On the **Action pane**, select **Set attribute metadata**.
+1. On the action pane, select **Set attribute metadata**.
 1. For each node select the **Channel product attribute**.
-1. Set **SHow attribute on channel** to **Yes** and **Can be refined** to **Yes**, to enable refiners on that channel.
+1. Set **Show attribute on channel** to **Yes** and **Can be refined** to **Yes**, to enable refiners on that channel.
 1. After configuring each node as desired, n the **Action pane**, select the **Save** button to save.
 1. Select the **X** in the top right corner to exit this screen back to the **Channel categories and product attributes** page.
 
@@ -83,5 +85,12 @@ The following image shows how to publish channel updates.
 
 ![Publish channel updates](media/configure-channel-hierarchy-3.png)
 
+## Additional resources
+
+[Channel hierarchy overview](TBD.md)
+
+[Create a channel navigation hierarchy](create-channel-hierarchy.md)
+
+[Add products to hierarchy](TBD.md)
 
 
