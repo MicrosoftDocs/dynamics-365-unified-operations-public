@@ -34,6 +34,8 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 ## Overview
 
 You can use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to [configure](tasks/er-format-configuration-2016-11.md) the [format component](general-electronic-reporting.md#FormatComponentOutbound) of an ER solution that is used to generate outbound documents in a text format. The hierarchical structure of the configured format component consists of format elements of various types that are used populate generated documents with necessary information at run time. By default, when you run an ER format, these format elements are executed in the same sequence that they are presented in the format hierarchy – one by one from top to bottom. At design time, you can change this default execution order for any of sequence elements of the configured format component. 
@@ -48,7 +50,7 @@ The **Deferred execution** option is only supported for the sequence elements th
 
 The **Deferred execution** option is not applicable for a sequence that has been configured as a trimmed one when its maximum length is limited.
 
-# <a name="Example"></a>Example: Defer execution of a sequence format element
+## <a name="Example"></a>Example: Defer execution of a sequence format element
 
 The following steps explain how a user in either the System administrator or Electronic reporting functional consultant [role](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) can configure an ER format containing a sequence element the order of execution of which differs from its order in the format’s hierarchy.
 
