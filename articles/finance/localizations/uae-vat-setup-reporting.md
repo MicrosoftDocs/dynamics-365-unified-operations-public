@@ -5,7 +5,7 @@ title: Set up and report value-added tax (VAT)
 description: This topic explains how to set up and report value-added tax (VAT).
 author: kfend
 manager: AnnBe
-ms.date: 11/25/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
