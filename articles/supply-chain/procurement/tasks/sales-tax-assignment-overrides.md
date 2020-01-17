@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Sales tax assignment and overrides
-description: This procedure demonstrates how to assign sales tax groups to retail channels. 
+description: This procedure demonstrates how to assign sales tax groups to commerce channels. 
 author: mkirknel
 manager: AnnBe 
 ms.date: 08/29/2018
@@ -46,8 +46,8 @@ This procedure demonstrates how to assign sales tax groups to commerce channels.
 10. Set the status to "Enable."
 11. Expand or collapse the Override section.
 12. In the Type field, select an option.
-    * Item sales tax groups can be used to override taxes for specific items that belong to the group. For example, food items are typically taxed differently from hard goods, and would likely have their own sales tax group.     Sales tax groups are groups of taxes that are applicable to a particular channel. For example, if a channel sells both retail and business-to-business, different items sales tax groups may be used. All the applicable taxes would be mapped to the sales tax group.  
-    * Now you can select the "From" and "To" taxes or "From tax group" and "To tax group" to create your sales tax override.    The "From" field indicates the tax or tax group to be overridden. Overriding by Item sales tax group provides different options than overriding by sales tax group.    Sales tax overrides can be set up to override taxes on entire transactions or on particular lines in the transaction.  
+    * Item sales tax groups can be used to override taxes for specific items that belong to the group. For example, food items are typically taxed differently from hard goods, and would likely have their own sales tax group. Sales tax groups are groups of taxes that are applicable to a particular channel. For example, if a channel sells both retail and business-to-business, different items sales tax groups may be used. All the applicable taxes would be mapped to the sales tax group.  
+    * Now you can select the "From" and "To" taxes or "From tax group" and "To tax group" to create your sales tax override. The "From" field indicates the tax or tax group to be overridden. Overriding by Item sales tax group provides different options than overriding by sales tax group. Sales tax overrides can be set up to override taxes on entire transactions or on particular lines in the transaction.  
 13. Click Save.
 14. Close the page.
 15. Go to Retail and Commerce > Channel setup > Sales taxes > Sales tax override groups.
