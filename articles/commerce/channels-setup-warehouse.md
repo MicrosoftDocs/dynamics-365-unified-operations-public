@@ -35,9 +35,9 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
 
-This topic is meant only as a quick start guide to setting up a warehouse.  Warehouses can be quite powerful see links sections below for further details on warehouse managment.
-
 ## Overview
+
+(SAM: need more content here, I'm unclear what existing warehouse info to repurpose. What they are, how they work with channels, why they need to be set up.)
 
 Before setting up a warehouse, you need to configure warehouse sites.
 
@@ -95,7 +95,7 @@ To set up warehouse inventory locations for standard, damaged, and returned inve
     1. Set **Manual update** to **Yes**
     1. In the **Location** box, enter the name of the warehouse.
     1. On the action pane, select **Save**.
- 1. On the action pane, select **New**.  The **Warehouse** drop down should default to your new warehouse.
+ 1. On the action pane, select **New**.  The **Warehouse** drop-down list should default to your new warehouse.
     1. In the **Aisle** box, enter the name of the aisle you specified earlier.  
     1. Set **Manual update** to **Yes**
     1. In the **Location** box, enter "Damaged".
