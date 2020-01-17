@@ -59,7 +59,7 @@ A new Common Data Service solution will be available soon with the following cha
 | --- | --- |
 | **Job/Position** entity changes | - **Compensation region** added </br>- **Financial dimensions** added |
 | **Worker** entity changes | - **Name sequence** added </br>- **Works from home** added </br>- **Language** added </br>- **Seniority date** added </br>- **Anniversary date** added </br>- **Original hire date** added |
-| **Employment** entity changes | - **Financial dimensions** added </br>- **Termination reason** added </br>- **Termination date** renamed </br>- **Probation date** added |
+| **Employment** entity changes | - **Financial dimensions** added </br>- **Termination reason** added </br>- **Termination date** renamed from **Transition date** </br>- **Probation date** added |
 | **Worker address** entity changes | - **Street address** added </br>- **Address line 1**, **Address line 2**, and **Address line 3** marked for deprecation |
 | New variable compensation setup entities | - **Compensation variable plan type** </br>- **Compensation variable plan** </br>- **Vesting rules** </br>- **Compensation variable plan level** |
 | New **Worker calender employment** entity | - **Work calendar entity** added |
