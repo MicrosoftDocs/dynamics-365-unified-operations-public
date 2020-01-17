@@ -34,7 +34,7 @@ Enrich the channel by adding channel and product attributes. You must add the ch
 
 
 ## Define channel product attribute.
-1. Go to Retail and commerce > Channel setup > Channel categories and product attributes.
+1. Go to Retail and Commerce > Channel setup > Channel categories and product attributes.
 2. In the tree, select 'Contoso Retail\Fashion\Houston'.
 3. Click Edit.
 4. In the Category hierarchy field, enter or select a value.
