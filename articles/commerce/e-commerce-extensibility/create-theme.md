@@ -41,6 +41,8 @@ Dynamics 365 Commerce lets you apply a theme to your whole online site, and also
 
 After a theme is created and uploaded to your production site, you can use authoring tools to set the theme on the site. Themes can be set in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. In this way, all the modules on the page have a consistent look and feel.
 
+Themes generally contain SCSS files to style your online site and individual modules and can optionally contain module view extensions which can provide new layout views on a module and definition extensions to change a modules configurations.
+
 ## Create a new theme
 
 To create a new theme in Commerce, the online Software Development Kit (SDK) provides the **add-theme** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to give to the new module. 
@@ -53,7 +55,7 @@ The following example shows how to create a theme that is named spring-theme.
 yarn msdyn365 add-theme spring-theme
 ```
 
-The new theme will be created in a new directory under the `...\src\themes` directory, for example the above theme would be created under the `...\src\themes\spring-theme` directory.  
+The new theme will be created in a new directory under the `...\src\themes` directory, for example the above theme would be created under the `...\src\themes\spring-theme` directory.
 
 ### Theme naming conventions
 
@@ -78,12 +80,15 @@ SCSS files are stored under the **...\src\themes\THEME_NAME\styles** directory. 
 
 Example **...\src\themes\spring-theme\styles\spring-theme.theme.scss**
 
-## Theme view extensions
-View extensions are stored under the **...\src\themes\views** directory and follow a similar naming pattern as used for module views **MODULE\_NAME.view.tsx** (example **product-feature.view.tsx**).  View extensions can be written exactly like a module view used for a module, the react component will just call the extension instead of the default one if it exists in a selected theme.
+## Theme module view extensions
+Themes provide the ability to customize a module view extensions.  This is generally used to change the default layout of a module for the selected theme.  This is supported on both starter kit and custom modules.  For example, you may want to add a new button to a starter kit module to support additional features, by creating a view extension you can avoid creating a full copy of the starter kit module with the clone CLI command. In some cases you may want to extend the module definition as well to add additional configs properties, slots or resources, see section below for more information on creating defintion extensions.
 
-In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy/paste code into it.  To see the module view source code, open up the **...\node_modules\@msdyn365-commerce-modules\** directory and look for the module you are interested in.  
+View extensions are stored under the **...\src\themes\THEME\_NAME\views** directory and follow a similar naming pattern as used for module views **MODULE\_NAME.view.tsx** (example **product-feature.view.tsx**).  View extensions can be written exactly like a module view used for a module, the react component will just call the extension instead of the default one if it exists in a selected theme.
 
-To create a new view extension in Commerce, the online Software Development Kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to add the view extension to and replace **MODULE\_NAME** with the name of the module you are extending.
+In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy/paste additional code into it.  To see starter kit module view source code, open up the **...\node_modules\@msdyn365-commerce-modules** directory and look for the module you are interested in.  You may need to fix up file path references for relative path imports as necessary.
+
+### Create a module view extension
+To create a new module view extension in Commerce, the online Software Development Kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to add the view extension to and replace **MODULE\_NAME** with the name of the module you are extending.
 
 ```yarn msdyn365 add-view-extension THEME_NAME MODULE_NAME```
 
@@ -91,17 +96,45 @@ The below example will add a new “product-feature.view.ts” file under the sp
 
 ```yarn msdyn365 add-view-extension spring-theme product-feature```
 
+The below shows a sample view file extension created with the above command.
+
+```typescript
+/*!
+ * Copyright (c) Microsoft Corporation.
+ * All rights reserved. See LICENSE in the project root for Licence information.
+ */
+import * as React from 'react';
+import { ISampleModuleViewProps } from '../../../modules/product-feature/./product-feature';
+
+export default (props: IProductFeatureViewProps) => {
+    return (
+        <div className='row'>
+            <h2>Config Value: {props.config.showText}</h2>
+            <h2>Resource Value: {props.resources.resourceKey}</h2>
+        </div>
+    );
+};
+```
+
 ## Theme definition extensions
-When using a module view extension, you may have scenarios where you need to extend the config, slots or resources section of a module definition and access these from the module view extension. You can add new configs, slots and resources but you cannot modify or remove existing ones.
+When using a module view extension, you may have scenarios where you need to extend the config, slots or resources section of a module definition and access these from the module view extension. You can add new configs, slots and resources but you cannot modify existing ones, however using **disableConfigProperties** you can disable inheritence of some configs.
 
-Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE\_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  To create a new definition extension, create a new file under the **/src/themes/THEME\_NAME\definition-extensions** folder that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
+Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE\_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  
 
-Below shows a sample theme definition extension file with several added configs, slots and resources.  Notice the "$type" must be set to "definitionExtension".
+### Create a module definition extension
+To create a new definition extension, create a new file under the **/src/themes/THEME\_NAME\definition-extensions** folder that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
+
+Below shows a sample theme definition extension file with several added configs, slots and resources.  Notice the **$type** must be set to "definitionExtension".  In the definition file you can declare new properties under the **config**, **slots** or **resources** nodes.
 
 ```json
 {
     "$type": "definitionExtension",
     "config": {
+        "subTitle": {
+            "type": "string",
+            "friendlyName": "Sub Title",
+            "description": "Sub Title for additional information"
+        },
         "favoriteIcon": {
             "type": "image",
             "friendlyName": "Favorite icon",
@@ -127,10 +160,40 @@ Below shows a sample theme definition extension file with several added configs,
         "recommendedLocations": {
             "value": "Recommended Locations"
         }
-    }
-
+    },
+    "disableConfigProperties": ["subTitle", "imageAlignment"]
 }
 ```
+
+The **disableConfigProperties** allows the definition to define configs that should be disabled.  When disabled the config fields will not show up as configurable options in the site builder tool for the selected module when the theme is set.
+
+Note when the **yarn start** command is run, a new autogenerated props file will appear in the definition-extension directory that includes the merging of the parent-module and extended-module according to the properties and rules defined in the defininition extension file.
+
+If you are using a definition extension alogn with a module view extension, you'll need to add the reference to the new autogenerated file to your view file to take advantage of the new definition changes.
+
+Below example shows the additon of the new autogenerated file and also imports the module data file if needed.
+
+```typescript
+/*!
+ * Copyright (c) Microsoft Corporation.
+ * All rights reserved. See LICENSE in the project root for Licence information.
+ */
+import * as React from 'react';
+import { ISampleModuleViewProps } from '../../../modules/product-feature/product-feature';
+import { ISampleModuleViewProps } from '../../../modules/product-feature/product-feature.data';
+import { ISampleModuleViewProps } from '../modules/product-feature/./product-feature.ext.props.autogenerated';
+
+export default (props: IProductFeatureViewProps) => {
+    return (
+        <div className='row'>
+            <h2>Config Value: {props.config.showText}</h2>
+            <h2>New Config SubTitle Value: {props.config.subTitle}</h2>
+            <h2>Resource Value: {props.resources.resourceKey}</h2>
+        </div>
+    );
+};
+```
+
 
 ## Test a theme
 You can easily test a theme in your development environment by using the **?theme=THEME\_NAME** query string parameter.
@@ -145,6 +208,9 @@ To test your theme, follow these steps.
 If your .env file MSDyn365_HOST entry is point to your production site, you can also preview your site with a custom theme.  To do this navigate to the below URL.
 
 ```https://localhost:4000?theme-spring-theme```
+
+### Mocking new config values in a theme
+If new config fields are added to a module in a theme, mock data can be added to the modules mock file.  For example if you modified a starter kit module view and definition file, you can add new config mocks to the starter kit mock files located in specific starter kit module under the **...\node_modules\@msdyn365-commerce-modules** directory.  Similarily if you are mocking data for a custom module, you can add new mock data in the modules mock json file or create new mock files under the same module mock directory.
 
 ## Additional resources
 
