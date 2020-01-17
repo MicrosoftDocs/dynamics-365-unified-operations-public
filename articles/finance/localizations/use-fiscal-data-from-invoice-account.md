@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use fiscal data from the invoice account
+title: Use fiscal data from invoice account
 description: The feature “Use fiscal data from invoice account” enables fiscal data, such as the customer or vendor name, their sales tax group and tax exempt number on sales orders, free text invoices or purchase orders to be updated automatically based on the information from the invoice account. This topic explains how to configure the feature.
 author: 
 manager: 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# Use fiscal data from the invoice account
+# Use fiscal data from invoice account
 
 [!include [banner](../includes/banner.md)]
 
