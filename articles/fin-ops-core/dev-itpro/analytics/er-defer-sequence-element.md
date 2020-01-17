@@ -50,7 +50,7 @@ The **Deferred execution** option is only supported for the sequence elements th
 
 The **Deferred execution** option is not applicable for a sequence that has been configured as a trimmed one when its maximum length is limited.
 
-## <a name="Example"></a>Example: Defer execution of a sequence format element
+### <a name="Example"></a>Example: Defer execution of a sequence format element
 
 The following steps explain how a user in either the System administrator or Electronic reporting functional consultant [role](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) can configure an ER format containing a sequence element the order of execution of which differs from its order in the format’s hierarchy.
 
