@@ -88,7 +88,7 @@ To change the default view for a page, follow these steps:
 2.	Select the view name to open the view selector. 
 3.	Select **More** and then **Pin as default**.  
 
-Alternatively, when you create a new view (by using the **Save as..** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
+Alternatively, when you create a new view (by using the **Save as...** action), you can make that new view the default view by setting the **Pin as default** option before you save the view.
 
 Note that in some cases, the query associated with the default view does not execute when you first navigate to a page. For example, if you navigate through a tile to a page, the tile's query will be executed regardless of the query associated with the default view. Also, if you navigate to a page whose Classic view already has a defined query, the original query will execute originally in place of the default view's query. When this happens, you will be alerted by an informational message when the view is loading. Switching views after the page has loaded should allow the view query to execute as expected.
 
@@ -104,11 +104,11 @@ For a list of available views for that page, the following set of actions are av
 Any changes made in this dialog box will take effect after you select the **Save** button.
 
 ## Managing personalizations at an organizational level with views
-To help you understand how saved views help improve management of personalizations at an organizational level, this section describes how personalization management worked before views were available.
+To help you understand how saved views help improve management of personalizations at an organizational level, this section describes some differences in personalization management with and without the saved views feature.
 
 Without views, administrators would apply a set of personalizations for a page to a user or a group of users via the Personalization page. If those users had personalization rights, the personalizations would be applied to that page. However, there was no ability to prevent users from further personalizing the page, which meant the organization could not ensure that its users had a consistent user interface. If any of those users didn't have personalization rights, the personalizations given to them by an administrator were not loaded. Further, if new users were hired into an organization, administrators needed to manually load a set of personalizations for the user. There was no automatic mechanism for specifying that a certain set of personalizations should be available for users in that role.
 
-The saved views feature makes organizational management of personalizations significantly easier, primarily because views can be published to groups of users. After a view has been published, any user who has one of the defined security roles and is in the specified legal entities will be able to access and use the view, even though that user might not be able to personalize it. Although each user has a copy of the published view where page usage (implicit personalizations) are automatically applied, no user can save explicit personalizations or query updates to a published view. (In other words, published views are locked.) Additionally, if new users are given roles in legal entities that views were published to, they will automatically see the views that are associated with their roles and legal entities. No additional action is required by the admin. Likewise, if users change roles in an organization or are given access to different legal entities, they might no longer be able to access the views that were previously published to them. Again, no additional action is required by the admin.
+The saved views feature makes organizational management of personalizations significantly easier, primarily because views can be published to groups of users. After a view has been published, any user who has one of the defined security roles and has access to one the specified legal entities will be able to see and use the view, even though that user might not be able to personalize it. Although each user has a copy of the published view where page usage (implicit personalizations) are automatically applied, no user can save explicit personalizations or query updates to a published view. In other words, published views are locked. Additionally, if new users are given roles in legal entities that views were published to, they will automatically see the views that are associated with their roles and legal entities. No additional action is required by the administrator. Likewise, if users change roles in an organization or are given access to different legal entities, they may no longer be able to access the views that were previously published to them. Again, no additional action is required by the admin.
 
 Updates to a published view can easily be distributed to users by republishing the view to the appropriate security roles and legal entities.
 
@@ -153,9 +153,7 @@ While all users see a **My views** tab showing their personal views, users with 
 For the list of all published views for the page, the following set of actions are available. 
 
 -    **Publish**: Use the **Publish** action to republish a view after publish parameters (name, description, security roles, or legal entities) are changed.
--    **Remove**: Use the **Remove** action to permanently delete a published view. This action removes the view for all users in the system.  
- 
-Any changes made in this dialog box will take effect after the **Save** button is selected.
+-    **Remove**: Use the **Remove** action to permanently delete a published view. This action removes the view for all users in the system. Removing published views will take effect after the **Save** button is selected.
 
 ## Frequently asked questions
 ### How do I enable saved views in my environment? 
