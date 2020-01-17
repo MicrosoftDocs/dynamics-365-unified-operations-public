@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create an email notification profile
+title: Set up an email notification profile
 description: This topic descriobes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create an email notification profile
+# Set up an email notification profile
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -45,7 +45,7 @@ For additional email configuration information, see [Configure and send email](h
 
 To create an email notification profile, follow these steps.
 
-1. Go to **Navigation pane > Modules > Retail > Headquearters setup > Retail Email notification profile**.
+1. Go to **Navigation pane > Modules > Retail > Headquarters setup > Retail Email notification profile**.
 1. On the action pane, click **New**.
 1. In the **Email notification profile** field, enter a name to identify the profile.
 1. In the **Description** field, enter a relevant description.
@@ -67,11 +67,11 @@ To create an email template, follow these steps.
 1. Expand the **Email message content** section and select **New** to create the template content. For each content item, select the language and provide the email subject line. If the email will have a body, ensure that the **Has body** box is checked.
 1. On the action pane, select **Email message** to provide an email body template.
 
-The following image shows example email template settings.
+The following image shows some example email template settings.
 
-![Email template](media/email-template.png)
+![Email template settings](media/email-template.png)
 
-### Create an email event
+##E Create an email event
 
 To create an email event, follow these steps.
 
@@ -82,9 +82,9 @@ To create an email event, follow these steps.
 1. Select the **Active** check box.
 1. On the action pane, select **Save**.
 
-The following image shows example email notification profiles.
+The following image shows some example retail event notification settings.
 
-![Email template](media/email-notification-profile.png)
+![Retail event notification settings](media/email-notification-profile.png)
 
 ## Additional resources
 
