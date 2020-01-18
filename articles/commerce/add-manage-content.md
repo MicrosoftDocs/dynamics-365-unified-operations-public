@@ -38,7 +38,7 @@ This topic provides an introduction and select links for where to begin with con
 
 There are many ways to change the look, feel, and content of your site. Depending on the required level of customization, many of these changes can be implemented by non-developers within Site Builder, the web authoring toolset included with Dynamics 365 Commerce. For example, Site Builder enables you to build templates, select themes, and select and configure modules without writing any code. By contrast, development skills are required to create a new theme or module, because the e-Commerce software development kit (SDK) and the Microsoft Dynamics Lifecycle Services (LCS) deployment workflow must be used.
 
-The following topics are good jumping off points to start understanding how to add and manage site content. They most topics focus on areas of your site that don't require a developer. Some topics are geared towards site administrator roles, while others are geared towards basic content editing. As required, the topics will point out tasks that could require SDK work.
+The following topics are good jumping off points to start understanding how to add and manage site content. Most topics in this section focus on areas of your site that don't require a developer. Some are geared towards site administrator roles, while others are geared towards basic content editing. As required, the topics will point out tasks that could require SDK work.  This documentation assumes that you have already provisioned a site and been granted access to the Site Builder toolset for your site.
 
 Pick a topic below to begin:
 
