@@ -44,8 +44,8 @@ Pick a topic below to begin:
 
 - To familiarize yourself with the content managment terminology used Site Builder and within this documentation, see [Page model glossary](page-elements-overview.md)
 - To understand how modules work within content management workflows, see [Work with modules](work-with-modules.md)
-- To see how fragments can make content managment more efficient and flexible, see [Work with fragments](work-with-fragments.md)
 - To change the text, images, or video on an existing site page, see [Work with modules](work-with-modules.md).
+- To see how fragments can make content managment more efficient and flexible, see [Work with fragments](work-with-fragments.md)
 - To help guarantee a foolproof, on-brand authoring experience for web content authors, see [Templates and layouts overview](templates-layouts-overview.md) and [Work with templates](work-with-templates.md).
 - To rearrange sections on a site page, see [Work with layouts](work-with-layouts.md).
 - To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md).
