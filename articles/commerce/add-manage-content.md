@@ -48,6 +48,6 @@ Pick a topic below to begin:
 - To see how fragments can make content managment more efficient and flexible, see [Work with fragments](work-with-fragments.md)
 - To help guarantee a foolproof, on-brand authoring experience for web content authors, see [Templates and layouts overview](templates-layouts-overview.md) and [Work with templates](work-with-templates.md).
 - To rearrange sections on a site page, see [Work with layouts](work-with-layouts.md).
-- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md).
+- To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md) or [Using .CSS over-rides](css-override-files.md).
 - To rearrange or add new navigation options, see [Customize site navigation](customize-site-navigation.md)
 - To learn how to stage, preview, and publish a broad set of concurrent web content changes, see [Work with publish groups](publish-groups.md)
