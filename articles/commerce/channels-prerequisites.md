@@ -2,7 +2,7 @@
 # required metadata
 
 title: Channel setup prerequisites
-description: This topic presents an overview of Microsoft Dynamics 365 Commerce channels set up prerequisites.
+description: This topic presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic presents an overview of Microsoft Dynamics 365 Commerce channels set up prerequisites.
+This topic presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-Before a Dynamics 365 Commerce channel can be created, several prerequisites must be completed.  Follow the below global steps then the steps for each channel type that you are working on.
+Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following links provide instructions for various tasks related to each channel type.
 
 ## Initialization
 
@@ -72,6 +72,20 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisites mus
 
 ## Online channel prerequisites
 
-* [Online store functionality profiles](online-functionality-profile.md)
+- [Create an online functionality profile](online-functionality-profile.md)
 
 ## Additional resources
+
+[Channels overview](channels-overview.md)
+
+[Channel setup prerequisites](channels-prerequisites.md)
+
+[Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+[Set up organization hierarchies](channels-org-hierarchies.md)
+
+[Create legal entities](channels-legal-entities.md)
+
+[Set up a retail channel](channel-setup-retail.md)
+	
+[Set up an online channel](channel-setup-online.md)
