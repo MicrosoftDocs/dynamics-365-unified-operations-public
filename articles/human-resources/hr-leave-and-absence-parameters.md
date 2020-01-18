@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure leave and absence parameters
-description: 
+description: Define human resources parameters for leave and absence in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -52,6 +52,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | --- | --- |
 | From existing topic? | No |
 | Review document location | (link) |
+| Question | Should I delete references to FMLA? |
 
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:
 
@@ -62,17 +63,19 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 
 ## View and change human resources parameters
 
-1. In the **Leave and absence** workspace, select **Human resources parameters** under **Setup**.
+1. On the **Leave and absence** page, select the **Links** tab.
 
-2. On the **Number sequences** tab, verify the **Number sequence code** for **Leave request ID** and change as necessary.
+2. Under **Setup**, select **Human resources parameters**.
 
-3. On the **FMLA** tab, verify the FMLA settings and change as necessary.
+3. On the **Number sequences** tab, verify the **Number sequence code** for **Leave request ID** and change as necessary. This setting determines the sequence used for automatically assigning IDs to leave requests.
 
-4. On the **Employee self service** tab, indicate whether managers can enter leave and absence requests on behalf of their employees.
+4. On the **FMLA** tab, verify the FMLA settings and change as necessary.
 
-5. On the **Leave and absence** tab, verify the settings and change as necessary.
+5. On the **Employee self service** tab, indicate whether managers can enter leave and absence requests on behalf of their employees.
 
-6. Select **Save**.
+6. On the **Leave and absence** tab, verify the settings and change as necessary.
+
+7. Select **Save**.
 
 ## See also
 

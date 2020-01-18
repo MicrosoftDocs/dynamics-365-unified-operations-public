@@ -1,7 +1,6 @@
----
 # required metadata
 
-title: Enroll workers in a leave plan
+title: Create absence calendars
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +29,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# Enroll workers in a leave plan
+# Create absence calendars
 
 **Status**
 

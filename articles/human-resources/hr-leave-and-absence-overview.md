@@ -5,7 +5,7 @@ title: Overview
 description: 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -50,7 +50,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | https://docs.microsoft.com/en-us/dynamics365/talent/leave-absence-overview |
 | Review document location | (link) |
 
 The **Leave and absence management** module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. After employees are enrolled in a plan, they can submit time-off requests for approval by managers. Leave tracking lets both first-level managers and Human Resources (HR) managers see who is taking time off and how much time off each employee still has.  

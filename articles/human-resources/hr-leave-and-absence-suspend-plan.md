@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Create a leave request workflow
+title: Suspend a leave plan
 description: 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# Create a leave request workflow
+# Suspend a leave plan
 
 **Status**
 

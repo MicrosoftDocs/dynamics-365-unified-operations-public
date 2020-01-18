@@ -163,7 +163,7 @@
       items:
     - name: Manage benefits
       items:
-      - name: "In preview: Benefits management"
+      - name: Benefits management
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
@@ -233,6 +233,12 @@
         href: hr-leave-and-absence-overview.md
       - name: Configure leave and absence parameters
         href: hr-leave-and-absence-parameters.md
+      - name: Create a working time calendar
+        href: hr-leave-and-absence-working-time-calendar.md
+      - name: Create absence calendars
+        href: hr-leave-and-absence-calendars.md
+      - name: Create a leave request workflow
+        href: hr-leave-and-absence-workflow.md
       - name: Configure leave and absence types
         href: hr-leave-and-absence-types.md
       - name: Create a leave and absence plan
@@ -241,8 +247,6 @@
         href: hr-leave-and-absence-enroll.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
-      - name: Create a leave request workflow
-        href: hr-leave-and-absense-workflow.md
       - name: Create an alert for leave and absence requests
         href: hr-leave-and-absence-alert.md
       - name: View analytics for leave and absence
