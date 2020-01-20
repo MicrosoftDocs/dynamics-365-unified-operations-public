@@ -67,15 +67,15 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
     public render(): JSX.Element | null {
         const {
             config,
-            data
+            resources
          } = this.props;
 
         const Title = config.title;
         const ResourceKey = resources.resourceKey;
-        
+
         const ProductFeatureViewProps = {
             ...this.props,
-            title: ProductName,
+            title: Title,
             resourceSample: ResourceKey
         };
 
