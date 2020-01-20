@@ -1,68 +1,94 @@
 # Confirm and Transfer
 
-# Released in version 10.0.1
+The confirm-and-transfer feature allows users to ship loads out of the warehouse before completing all work associated with them. On receiving a shipment that includes load lines that weren't fully picked, the confirming user will be prompted to choose either to split the remaining quantities onto a new load or to cancel the incomplete quantities.
 
-# About
+Systems set to allow load splitting support scenarios where planned and partially loaded loads must be adapted as a result of new or changing circumstances.
 
-The confirm and transfer features allows users to ship loads out of the warehouse prior to all work associated with the load being completed. When ship confirming, if all of the load lines are not fully picked, then the user will be prompted to either split off the remaining quantities onto a new load or cancel the quantities that have not been completed.
+The client includes logic that allows a partially loaded load to be closed and confirmed as shipped. If necessary, and if allowed by the setup, all remaining shipments and load lines (including full or partial line quantities) will be rolled over to a newly created load and shipment. New shipments and loads are automatically created based on the initial shipment/load creation criteria and will keep their main attributes unchanged. There is also an option to auto-cancel the remaining quantities if a work order hasn't been created yet and the user deems it necessary.
 
-With the setup to allow splitting of loads you can handle scenarios where already planned and partially loaded Loads need to be adapted due to new or changing circumstances.
+This functionality supports scenarios where the full load doesn't fit onto a single truck or where some of the load should leave the warehouse before the remainder is ready for shipping. The remaining products can therefore be transferred to a new load and consequently to a new truck. This feature can be used with loads that are otherwise intended to require full-load shipping, so it provides extra flexibility that lets transport managers solve nonstandard or unforeseen scenarios.
 
-New logic has been added to the client to allow a Load that is partially loaded to be closed and ship confirmed. If necessary, and if allowed by the setup, all remaining shipments and load lines, this includes full or partial line quantities, will be rolled over to newly created load and shipment. New shipment and load are automatically created based on initial Shipment/Load creation criteria and will keep the main attributes unchanged. Further, there is also an option to auto cancel the remaining quantities if work order has not been created yet and if deemed necessary by the user.
+When splitting a load, the confirm-and-transfer feature does the following:
 
-This functionality supports the scenario in which all product cannot fit onto a truck or where some of the load should leave the warehouse before the remainder is ready for shipping. The left-over product can therefore be transferred to a new load and consequently to a new truck. This feature can be used with loads that are otherwise intended to allow only full load shipping and therefore gives more flexibility to transport managers for solving nonstandard or unforeseen scenarios.
+- Create new loads and shipments as required. Each of these loads/shipments will have the same attributes as the original load/shipment, except for the load status, which will be recalculated based on the work status.
+- Inform the user that a new load has been created along with the new load ID.
+- Update the load lines, work headers, and work lines that were split with the new load and shipment information.
+- If an entire shipment is being split, then the shipment will be maintained and only the load references will be updated. If the shipment needs to be split, then a new shipment will be created.
 
-Please note that this functionality is not the same as transport load feature as transport load feature should be used in warehouses that never are able to plan and create load prior to picking but do loading of the available transportation space after picking is completed.
+When canceling, any load line quantities that haven't been picked, and which don't have non-canceled work associated with them, will be removed from the load. If there is in-process work, then the user will only be able to split, not cancel.
 
-Confirm and transfer feature is used where loads are planned and created but where sometimes exceptions occur where load does not fit the available transport e.g. truck.
+You can only split loads that meet all of the following criteria:
 
+- One or more load lines have picked quantities
+- The load status is less than loaded
+- There are no LoadLineWorkLineDetails (these are created as a result of LP consolidation on the staging location, which isn't supported by confirm and transfer)
+- No inventory is currently at a packing location awaiting packing (inventory picked to the pack station, but not yet packed, isn't supported by confirm and transfer)
 
+<!-- KFM: What kind of thing is "LoadLineWorkLineDetails"--can we make a real word or phrase out of this? Also, what is a "LP"? -->  
 
-When splitting, using Confirm and Transfer feature,  a new load and shipment(s) will be created with all of the same attributes as the current load/shipment, with the exception of the load status, which will be recalculated based on the work status. The user will receive a message that a new load has been created along with the new load ID. Load lines, work headers, and work lines that were split will be updated with the new load and shipment information. If an entire shipment is being split, then the shipment will be maintained and only the load references will be updated. If the shipment needs to be split, then a new shipment will be created.
+> [!NOTE]
+> This functionality is different from the transport-load feature, which should be used in warehouses that are never able to plan and create loads prior to picking, but instead load the available transportation space after picking is completed.
+> <!-- KFM: Let's add a link to the transport-load feature; is it this?: https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/partial-shipping-of-transport-loads -->  
+> Use the confirm-and-transfer feature in situations where loads are normally planned and created ahead of time, but where exceptions sometimes occur in which the load doesn't fit the available transport (such as a truck).
 
-When canceling, any load line quantities that have not been picked, and do not have non-canceled work associated with them will be removed from the load. If there is in process work, then the user will only be able to split, not cancel.
+## Enable confirm and transfer
 
-A load will be eligible to be split if any load lines have picked quantities, the load status is less than loaded, there are no LoadLineWorkLineDetails (created as a result of LP consolidation on the staging location, this action is not supported by confirm and transfer), and there is no inventory currently on a packing location awaiting packing (Inventory picked to the pack station, but not yet packed is not supported by confirm and transfer).
+Before you begin trying to set up or use this feature, you must make sure it's available on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed listed as:
 
+- **Module**: Warehouse management
+- **Feature name**: Confirm and transfer
 
+<!-- KFM: Add this?: "If you don't see the feature listed here, then it may have become a standard part of the product since this documentation was written, in which case you can proceed with the remaining sections of this topic and all of the described features should be available to you." -->
 
-# Setup
+## Set up confirm and transfer
 
-## Load templates
+To use confirm-and-transfer feature, you must enable it on each of your relevant load templates. In addition, you might choose to prepare your work templates to support the feature, depending on your requirements. If you'd like to work through the example scenario (based on **USMF** legal-entity demo data) provided later in this topic, then set up your system as described in this section.
 
-Navigate to _Advanced warehouse management_ _-_ _Setup - Loads - Load templates_. Select the template to be used with this functionality and enable the _Allow Load Split During Ship Confirm_ parameter.
+### Prepare your load templates
 
-For this demo, I have enabled this on the standard Contoso _20&#39; Container_ Load template. If preferred, create a new Template with desired configuration.
+1. Go to **Warehouse management** > **Setup** > **Loads** > **Load templates**.
+1. Select **Edit** on the action pane to put the page into edit mode.
+1. Select the **Allow load split during ship confirm** check box for each listed template where you'd like to enable this feature (or select **Add** to create a new template and configure it as needed). Every load that you create using this template will now inherit this functionality <!-- KFM: also existing loads, or just new ones? -->. <br>(If you're working with the **USMF** legal-entity demo data, then enable this feature for the **20' Container** load template.)
 
-Every Load that will have been created with this Load Template will now inherit the _Allow Load Split During Ship Confirm_ functionality.
+<!--
+KFM: I'm not sure what to do with the following text. I think maybe it belongs in the intro or in the scenario:
 
-There are two options available to the user when this functionality is used:
+    There are two options available to the user when this functionality is used:
 
-- --Split quantity to new load
-- --Cancel unfulfilled quantity
+    - --Split quantity to new load
+    - --Cancel unfulfilled quantity
 
-In this demo, I will show the _Split quantity to new load_. No additional setup is needed for the other option, as it is a user decision at execution.
+    In this demo, I will show the _Split quantity to new load_. No additional setup is needed for the other option, as it is a user decision at execution.
+ -->
 
-## Work templates
+### Prepare your work templates
 
-Navigate to Warehouse management _-_ Setup _-_  Work _-_  Work templates and find the Work template that will be used with this function. For this demo, standard Contoso Work template **51 Pick to stage** was used.
+This setup isn't required in all situations. The example shown here ensures that work can be broken by shipment, which will support the example scenario provided later in this topic. There are also other ways to accomplish this.
 
-The following setup is not required, but it ensures that Work will be broken by Shipment, to easier simulate the demo scenario. This can also be achieved differently.
+1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
+1. Find or create a work template where you want to set up the confirm-and-transfer feature.<br>(If you're working with the **USMF** legal-entity demo data, then edit the **51 Pick to stage** work template.) 
+1. Select **Edit query** on the action pane to open the **Sales** flyout.
+1. Open the **Sorting** tab on the flyout.
+1. Select **Add** to add a new row to the table and then make the following settings for the new row: <!-- KMF: what are we doing here? What do these settings do? Do we always want to do this? Do we have a link for more info? -->
+    - **Table**: Temporary work transactions
+    - **Derived table**: Temporary work transactions
+    - **Field**: Shipment ID
+    - **Search direction**: Ascending
+1. Select **OK** to save your settings and close the flyout.
+1. You may see an alert telling you that grouping will be reset. Select **Yes** to continue. <!-- KMF: I got this warning. Anything more to say here? -->
+1. In the **Work templates** table, select the template that you just edited and then select **Work header breaks** on the action pane.
+1. Select **Edit** on the action pane to put the page into edit mode.
+1. Make the following settings in the table:
+    - **Table name**: Temporary work transactions
+    - **Field name**: Shipment ID
+    - **Group by this field**: (Selected)
+1. Select **Save** on the action pane.
 
-Select the correct Work template, click on _Edit query_ and navigate to _Sorting_tab. Add a new line with the following criteria:
+## Example scenario
 
-- --Table – _Temporary work transactions_
-- --Derived table – _Temporary work transactions_
-- --Field – _Shipment ID_
-- --Search direction – _Ascending_
+This scenario illustrates an example where the picking process isn't finished yet, but the already picked items need to be loaded onto a truck and shipped anyway. The user will therefore be able to _split_ the unpicked load lines into a new load with all data relationships updated automatically.
 
-After saving, select the _Work header breaks_ blue ribbon button and _Group by_ Shipment ID. Save selection and close the form.
-
-# Demo
-
-This demo will simulate a scenario where picking process has not been fully completed and where the already picked items should be loaded to a truck and shipped regardless of the status of the remaining items. The user will be able to _split_ the unpicked Load lines to a new Load and all data relationship will be updated accordingly.
-
-## Create Load with multiple Load lines
+### Step 1: create a load with multiple load lines
 
 Before the functionality can be demonstrated, Load must be created with multiple Load lines.
 
@@ -82,7 +108,7 @@ New Load is now created.
 
 On the _Loads_ section on the LPW, navigate to _Release_ and _Release to warehouse_ newly created Load. This will create Work orders for the added Load lines.
 
-## Mobile device flow execution
+### Step 2: Set up the execution flow for mobile devices
 
 Enter mobile device and select the menu where the new Sales order picking mobile device menu is located.
 
@@ -92,7 +118,7 @@ Next, load the two picked pallets to the truck. Select the _Sales Loading_ menu 
 
 These two Work IDs will now be closed (loaded).
 
-## Confirm outbound shipment
+### Step 3: Confirm the outbound shipment
 
 Navigate to _Sales and Warehouse management - Loads - Load planning workbench_ and select the click on the Load you have created with this demo to view the load details.
 
@@ -113,7 +139,7 @@ You can also confirm that transaction relations have been updated accordingly.
 - --The Wave remains the same.
 - --Status of the new Load is also correctly updated (if work is _In process_, Load status will also be _In process_)
 
-# Appendix
+## Notes and tips
 
 - --_Allow Load Split During Ship Confirm_ can also be enabled after the Load has been created with the Load template parameter turned off, but before the loading process has started. Simply navigate to the desired Load and on the header view enable the parameter.
 - --_Split quantity to new load_ option is working also if some of the remaining Work headers are _In process_ status, hence the functionality can be used even if workers are already executing the pick orders.
