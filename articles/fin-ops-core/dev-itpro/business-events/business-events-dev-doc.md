@@ -109,7 +109,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 
     ```
     [BusinessEvents(classStr(SalesInvoicePostedBusinessEventContract),
-    "AccountsReceivable:SalesOrderInvoicePostedBusinessEventName","AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription",ModuleAxapta::SalesOrder)]
+    'AccountsReceivable:SalesOrderInvoicePostedBusinessEventName','AccountsReceivable:SalesOrderInvoicePostedBusinessEventDescription',ModuleAxapta::SalesOrder)]
     public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     ```
 

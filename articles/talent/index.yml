@@ -12,6 +12,7 @@ metadata:
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
   ms.author: buckg #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
+  audience: Application User
   hide_bc: false
 
 # productDirectory section (optional)
