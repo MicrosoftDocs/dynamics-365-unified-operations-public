@@ -55,13 +55,15 @@ Currently, no columns will be configured to show totals by default. Instead, thi
 There are two ways to configure a column to show a total: 
 1.	Right-click on the column you are interested in seeing a total for and select **Total this column**. This action will do three things. First, it will make the footer visible. Second, it will save your preference for seeing a total on this column. Third, this action will initiate a totals calculation for this column and any others you’ve previously configured to see totals. The time it takes for a total to be shown is directly related to the size of the dataset you are totalling.  
 
-2.	Once the footer has been shown, you can alternatively click on the **Show total** button in the footer region at the bottom of the column you are interested in seeing a total for. If there are no configured columns, then the **Show total** button will be visible for all numeric columns. Once there is at least one column configured for totals, the **Show total** buttons will only be available on hover or focus. This action simply saves your preference for seeing a total in this column for future visits to this page, and this state is indicated by the dash that appears in this column in the footer (or a total will show immediately if the dataset is sufficiently small).  
+2.	Once the footer has been shown, you can alternatively click on the **Show total** button in the footer region at the bottom of the column you are interested in seeing a total for. If there are no configured columns, then the **Show total** button will be visible for all numeric columns. Once there is at least one column configured for totals, the **Show total** buttons will only be available on hover or focus. This action simply saves your preference for seeing a total in this column for future visits to this page, and this state is indicated by the dash that appears in this column in the footer (or a total will show immediately if the dataset is sufficiently small).
+
 If you make a mistake and no longer want to see a total in a particular column, right-click on the column and select **Hide total** or select the **Hide total** button in the footer in that column. This preference will also be saved for future visits to the page. 
 
 ### Calculating totals
 When you come to a page with the footer visible and columns already configured for totals, totals may or may not be shown in the footer. The behavior is dependent on the size of the dataset on the page. If the dataset is sufficiently small, totals will be shown automatically, along with the number of rows in the dataset. If there are dashes in the footer under the columns you configured for totals, then the dataset is too large for the system to show totals immediately, and an explicit action is needed to calculate the totals. To do this, click the **Calculate** button in the footer, or right-click on a column you want a total for and select **Total this column**.  
 
-If the calculation is taking too long, you can cancel the operation by selecting the **Cancel** button. Sometimes, however, the dataset will be too large to calculate totals (a limit imposed by your organization), and you will instead be notified to filter your data more.   
+If the calculation is taking too long, you can cancel the operation by selecting the **Cancel** button. Sometimes, however, the dataset will be too large to calculate totals (a limit imposed by your organization), and you will instead be notified to filter your data more.
+
 Totals will update automatically as you update, delete, or create rows in the dataset.  
 
 ## Grouping data
@@ -77,7 +79,7 @@ If you select **Group by this column** on a different column, the original group
 
 To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
 
-Typing ahead of the system
+## Typing ahead of the system
 In support of faster data entry, users can modify existing data and create new rows 
 - **Fast data entry**: This feature lets users enter data in a grid ahead of the server. Therefore, it minimizes the need for users to wait for the server to validate one row in the grid before they move to another row. This feature first became available as part of the new grid control feature in 10.0.7 / Platform update 31, and will continue to evolve in subsequent platform versions.
 
