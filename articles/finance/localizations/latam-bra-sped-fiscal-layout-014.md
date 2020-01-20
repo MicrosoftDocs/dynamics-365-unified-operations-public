@@ -48,12 +48,12 @@ Record C500 is generated for incoming fiscal document models 6, 66, 29, and 28. 
 
 | Number | Field          | Description |
 |--------|----------------|-------------|
-| 28     | CHV\_DOCe      | If the fiscal document is 66, the access key of the fiscal document. Otherwise, this field is blank. |
-| 29     | FIN\_DOCe      | If the fiscal document is 66, the fixed value **1**. Otherwise, this field is blank. |
-| 30     | CHV\_DOCe\_REF | If the fiscal document is 66, the access key of the referenced fiscal document, if a referenced fiscal document exists. Otherwise, this field is blank. |
-| 31     | IND\_DEST      | The fixed value **1**, because the fiscal establishment in the ICMS taxpayer. |
+| 28     | CHV\_DOCe      | If the fiscal document model is 66, the access key of the fiscal document. Otherwise, this field is blank. |
+| 29     | FIN\_DOCe      | If the fiscal document model is 66, the fixed value **1**. Otherwise, this field is blank. |
+| 30     | CHV\_DOCe\_REF | If the fiscal document model is 66, the access key of the referenced fiscal document, if a referenced fiscal document exists. Otherwise, this field is blank. |
+| 31     | IND\_DEST      | The fixed value **1**, because the fiscal establishment is the ICMS taxpayer. |
 | 32     | COD\_MUN\_DEST | The IBGE code of the fiscal establishment. |
-| 33     | COD\_CTA       | The expense or asset main account. A financial ledger dimension. |
+| 33     | COD\_CTA       | The expense or asset main account posted for the fiscal document |
 
 ## Complement and compensation of ICMS-ST tax
 
@@ -70,7 +70,7 @@ Next, follow these steps to set up the rule that will enable the generation of t
 
 1. Go to **Fiscal books** \> **Setup** \> **Fiscal books parameters per state**.
 2. Select the related state. For example, for São Paulo state, select **SP**.
-3. Set the **Enable record C180 and C185** option to **Yes**. Instances of record H030 where the **MOT\_INV** field is set to **06** of records H005 and 1010, 1250, and 1255 will also be also generated.
+3. Set the **Enable record C180 and C185** option to **Yes** to generate the related records. In addition to this, instances of record H030 with the **MOT\_INV** field is set to **06**, H005, 1010, 1250, and 1255 will also be generated.
 4. In the **SPED presumed tax calculation algorithm** field, select the method of calculation. The amounts that are calculated in the presumed tax process will be reported in record C185.
 	
 ![Fiscal books parameters per state page](media/bra-sped-Fiscal014-Setup.png)	
@@ -91,7 +91,7 @@ After you've finished configuring the reason code table (table 5.7), you must go
 
 ### Record C180
 
-Record C180 is a new record. It introduces complementary information for incoming fiscal document models 01, 1B, 04, and 55 for transactions with the ICMS-ST tax transaction. This record is generated based on the following criteria:
+Record C180 is a new record. It introduces complementary information for incoming fiscal document models 01, 1B, 04, and 55 for transactions that include the ICMS-ST tax type. This record is generated based on the following criteria:
 
 - On the **Fiscal books parameters per state** page, the **Enable record C180 and C185** option is set to **Yes**.
 - Fiscal document tax transactions have taxation code 10, 30, 60, or 70.
@@ -105,7 +105,7 @@ The following fields are included.
 | 3      | QUANT\_CONV                  | The quantity of the incoming fiscal document. |
 | 4      | UNID                         | The unit of measure of the **QUANT\_CONV** field. |
 | 5      | VL\_UNIT\_CONV               | The line amount per unit, based on the unit of measure that is used for the **QUANT\_CONV** field of the incoming fiscal document. |
-| 6      | VL\_UNIT\_ICMS\_OP\_CONV     | The ICMS amount per unit of own operation that the informant is entitled to recover (credit), based on the unit of measure that is used for the **QUANT\_CONV** field. The ICMS tax transaction must be defined by using the internal tax rate. |
+| 6      | VL\_UNIT\_ICMS\_OP\_CONV     | The ICMS amount per unit of the own operation that the fiscal establishment is entitled to recover (credit), based on the unit of measure that is used for the **QUANT\_CONV** field. The ICMS tax transaction must be defined by using the internal tax rate. |
 | 7      | VL\_UNIT\_BC\_ICMS\_ST\_CONV | The base amount of the ICMS-ST per unit, based on the unit of measure that is used for the **QUANT\_CONV** field. |
 | 8      | VL\_UNIT\_ICMS\_ST\_CONV     | The ICMS-ST or ICMS-ST presumed tax, including FCP, based on the unit of measure that is used for the **QUANT\_CONV** field. |
 | 9      | VL\_UNIT\_FCP\_ST\_CONV      | The ICMS-ST or ICMS-ST presumed FCP amount per unit. |
@@ -114,7 +114,7 @@ The following fields are included.
 
 ### Record C185
 
-Record C185 is a new record. It introduces complementary information for outgoing fiscal document models 01, 1B, 04, and 55 for transactions with the ICMS-ST tax transaction. This record is generated based on the following criteria:
+Record C185 is a new record. It introduces complementary information for outgoing fiscal document models 01, 1B, 04, and 55 for transactions that include ICMS-ST tax type. This record is generated based on the following criteria:
 
 - On the **Fiscal books parameters per state** page, the **Enable record C180 and C185** option is set to **Yes**.
 - Fiscal document tax transactions have taxation code 10, 30, 60, or 70.
@@ -151,7 +151,7 @@ The following new field is included as part of the new layout.
 
 | Number | Field                           | Description |
 |--------|---------------------------------|-------------|
-| 14     | IND\_REST\_RESSARC\_COMPL\_ICMS | The fixed value **S** if the generated records, C180 and C185, are enabled on the **Fiscal books parameters per state** page. When you enable records C180 and C185, record 1250 is no longer empty. |
+| 14     | IND\_REST\_RESSARC\_COMPL\_ICMS | The fixed value **S** if the generated records, C180 and C185, are enabled on the **Fiscal books parameters per state** page. Otherwise this field is set to **N**. |
 
 ### Record 1250
 
