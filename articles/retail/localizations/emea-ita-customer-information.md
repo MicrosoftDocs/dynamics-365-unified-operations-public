@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.7
 
 This topic describes how you can handle customer information, such as the customer's lottery code, in Retail point of sale (POS) for Italy.
 
-You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts and can be used for the National lottery. Personal fiscal codes can also be used to search for a customer in POS.
+You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and it can be used for the national lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
 > [!NOTE]
 > This functionality is available in version 10.0.8 and later.
@@ -44,19 +44,19 @@ You can specify the customer information, such as the fiscal code or lottery cod
 
 You must complete the following configuration to use this functionality:
 
-- Set up a registration type for lottery code.
+- Set up a registration type for the lottery code.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Add a customer search criterion.
 - Configure retail channel components.
 
-### Set up a registration type for lottery code
+### Set up a registration type for the lottery code
 
-You need to create an appropriate registration type for lottery code and link it to the **Lottery code** registration category to allow specifying lottery codes in POS. For more information about how to work with registration types and registration IDs, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
+Before lottery codes can be specified in POS, you must create an appropriate registration type for the lottery code and link it to the **Lottery code** registration category. For more information about how to work with registration types and registration IDs, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
 
 > [!WARNING]
-> If a registration type is not created or not linked to the **Lottery code** registration category, an error will be generated in POS when Lottery code is populated for a customer address. 
+> If a registration type isn't created or isn't linked to the **Lottery code** registration category, an error will be generated in POS when the lottery code is filled in for a customer address. 
 
 ### Add the Add customer information operation to screen layouts
 
@@ -91,7 +91,6 @@ On the **Custom fields** page, add the following records for the custom fields f
 | FISCALCUSTOMER\_LOTTERYCODE\_IT| Receipt | 900001          |
 | CUSTOMER\_FISCALCODE\_IT       | Receipt | 900002          |
 
-
 In the Receipt format designer, add the custom fields to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
 ### Add a customer search criterion
@@ -106,7 +105,7 @@ To make the functionality that is specific to Italy available, you must configur
 
 ## Example scenarios
 
-The following examples demonstrate how to work with customer information in POS for Italy.
+The following example scenarios show how to work with customer information in POS for Italy.
 
 ### Scenario 1: Make a sale to an anonymous customer
 
@@ -123,16 +122,16 @@ The following examples demonstrate how to work with customer information in POS 
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
 1. Specify the new customer's attributes. In the **Fiscal code** field, enter the customer's fiscal code.
-1. Select **Create a new address**. Specify the new customer's contact information and an address.
+1. Select **Create a new address**. Then specify the new customer's contact information and an address.
 1. In the **Lottery code** field, enter the customer's lottery code.
 1. Save the customer record and the customer address record and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. As the inquiry for customer information is enabled and customer information is not added to the transaction, the **Enter customer information** dialog box will be opened. Select **Yes**, and then select **Copy from transaction customer**.
+1. Because the inquiry for customer information has been activated, but customer information hasn't been added to the transaction, the **Enter customer information** dialog box is opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's lottery code, and then select **OK**.
 1. Verify that the printed receipt contains the customer's lottery code.
 
 > [!NOTE]
-> If you need to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
+> If you must specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
 
 ### Scenario 3: Change the customer information for a sale to a named customer
 
@@ -154,7 +153,7 @@ This section provides deployment guidance for enabling customer information mana
 > [!NOTE]
 > Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 >
-> If you want to enable the integration of POS with fiscal printers for Italy, and specifically if you want to print customers' lottery codes on fiscal receipts, you must deploy the [fiscal printer integration sample for Italy](emea-ita-fpi-sample.md).
+> If you want to enable the integration of POS with fiscal printers for Italy, and specifically if you want to print customer lottery codes on fiscal receipts, you must deploy the [fiscal printer integration sample for Italy](emea-ita-fpi-sample.md).
 
 ### Update customizations
 
@@ -206,7 +205,7 @@ Follow these steps to make the TaxRegistrationId.IT extension available.
     {
         "extensionPackages": [
             {
-               "baseUrl": "Microsoft/TaxRegistrationId.IT"
+                "baseUrl": "Microsoft/TaxRegistrationId.IT"
             }
         ]
     }
@@ -226,7 +225,7 @@ Follow these steps to make the TaxRegistrationId.IT extension available.
     {
         "extensionPackages": [
             {
-               "baseUrl": "Microsoft/TaxRegistrationId.IT"
+                "baseUrl": "Microsoft/TaxRegistrationId.IT"
             }
         ]
     }
