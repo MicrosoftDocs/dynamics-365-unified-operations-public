@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 01/14/2020
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Operations
 
 [!include [banner](../includes/banner.md)]
 
-You can connect solution-specific and customer-specific Help content with the Help pane in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Retail. This topic describes the main steps and decision points.  
+You can connect solution-specific and customer-specific Help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Retail. This topic describes the main steps and decision points.  
 
 ## Plan your Help system
 

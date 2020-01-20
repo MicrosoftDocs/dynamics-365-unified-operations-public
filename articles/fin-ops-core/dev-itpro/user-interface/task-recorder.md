@@ -5,7 +5,7 @@ title: Task recorder resources
 description: This topic describes how to use Task recorder to record client functions.
 author: jasongre
 manager: AnnBe
-ms.date: 07/23/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -51,7 +51,7 @@ Task recorder is able to record user actions in the client with exact fidelity. 
 Task recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently not available in Retail or Talent. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/en-us/dynamics365/](../../fin-ops/index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently available for Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/en-us/dynamics365/](../../fin-ops/index.md)) for both Retail and Talent.
 
 ## Create a recording
 The following steps show the process for creating a new recording using Task recorder.

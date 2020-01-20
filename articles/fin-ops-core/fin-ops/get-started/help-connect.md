@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for certain Dynamics 365 apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 11/01/2019
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -45,10 +45,10 @@ The following illustration shows the parts of the Help system. The in-product He
 
 [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
 
-## Connecting the Help system
+## Adding Task guides
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Talent or Retail. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both [Retail](/dynamics365/retail/) and [Talent](/dynamics365/talent/).
+> The **Task guides** tab is currently available for Dynamics 365 Finance and Dynamics 365 Supply Chain Management. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both [Retail](/dynamics365/retail/) and [Talent](/dynamics365/talent/).
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
 
@@ -83,11 +83,11 @@ You can use task guides to create custom help, or connect a website to the Help 
 
 ### Create custom help with task guides
 
-You can create custom help for Finance, Supply Chain Management, and Retail by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Talent.
+You can create custom help for Finance and Supply Chain Management by creating task recordings that reflect your implementation, and saving them to an LCS Business Process Library. You cannot create custom task guides for Retail and Talent.
 
 For partners, if you promote a library to be a corporate library, and include it in a solution, it will be available to your customers. You can also make a copy of the APQC Unified global library, and then open your copy, open task recordings from it, modify them, and save the recordings with your changes. For more information, see [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 
-### Connect a custom site
+### Connect a custom help site
 
 Microsoft has provided a toolkit with sample code that can help you create and connect a custom help site to the Help pane. For more information, see [Connect a custom help site](help-custom.md) and [Deploying custom Help](../../dev-itpro/help/deploy.md).  
 
