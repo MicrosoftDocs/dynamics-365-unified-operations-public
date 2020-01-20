@@ -75,6 +75,8 @@ To use this feature, right-click on the column you wish to group by, and select 
 -  Number of data rows in this group
 -  Subtotals for any column configured to show totals
 
+With [Saved views](saved-views.md) enabled, this grouping can be saved by personalization as part of a view for quick access the next time you visit the page.  
+
 If you select **Group by this column** on a different column, the original grouping will be replaced, as only level of grouping is supported in 10.0.9 / Platform update 33.
 
 To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
