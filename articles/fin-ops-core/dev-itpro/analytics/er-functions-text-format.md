@@ -101,7 +101,7 @@ If the same report is processed for the **Litware Retail** customer on December 
 >[!NOTE]
 > The following syntax is applied in ER formulas for labels:
 >
-> - **For labels from resources in the Microsoft Dynamics 365 Finance app:** **@X**, where **X** is the label ID in the Application Object Tree (AOT)
+> - **For labels from resources in the Microsoft Dynamics 365 Finance app:** **\@X**, where **X** is the label ID in the Application Object Tree (AOT)
 > - **For labels that reside in ER configurations:** **@"GER_LABEL:X"**, where **X** is the label ID in the ER configuration
 
 ## Additional resources
