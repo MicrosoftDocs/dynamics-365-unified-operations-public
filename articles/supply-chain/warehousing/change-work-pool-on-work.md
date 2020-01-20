@@ -52,7 +52,7 @@ You can set a default work pool for each of your work templates as needed. All w
 
 This scenario provides a demo for how to change the stream of processing for an existing work item by changing its work pool. It uses the **USMF** company demo data and each of the settings suggested earlier in this topic.
 
-1. Make sure there's enough quantity on-hand for items A0001 and A0002 in warehouse 62. <!-- KFM: Should we explain how to do this? I don't know how. -->
+1. Make sure there's enough quantity on-hand for items A0001 and A0002 in warehouse 62. <!-- KFM: Should we explain how to do this? I don't know how. Maybe just a link? -->
 
 1. Go to **Sales and marketing** > **Sales orders** > **All sales orders**.
 
