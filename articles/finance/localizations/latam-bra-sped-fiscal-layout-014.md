@@ -181,57 +181,20 @@ Record 1250 is generated to consolidate information about the balance of the com
 <tr>
 <td>4</td>
 <td>VL_FCP_ST_REST</td>
-<td>The sum of instances of record 1255 in the following fields.
-<table>
-<tr>
-<th>Number</th>
-<th>Field</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>1</td>
-<td>REG</td>
-<td>The fixed text <strong>1250</strong>.</td>
-</tr>
-<tr>
-<td>2</td>
-<td>VL_CREDITO_ICMS_OP</td>
-<td>The sum of record 1255 in the <strong>VL_CREDITO_ICMS_OP_MOT</strong> field.</td>
-</tr>
-<tr>
-<td>3</td>
-<td>VL_ICMS_ST_REST</td>
-<td>The sum of record 1255 in the <strong>VL_ICMS_ST_REST_MOT</strong> field.</td>
-</tr>
-<tr>
-<td>4</td>
-<td>VL_FCP_ST_REST</td>
-<td>The sum of record 1255 in the <strong>VL_ICMS_FCP_REST_MOT</strong> field.</td>
+<td>The sum of instances of record 1255 in the <strong>VL_ICMS_FCP_REST_MOT</strong> field.</td>
 </tr>
 <tr>
 <td>5</td>
 <td>VL_ICMS_ST_COMPL</td>
-<td>The sum of record 1255 in the <strong>VL_ICMS_ST_COMPL_MOT</strong> field.</td>
+<td>The sum of instances of record 1255 in the <strong>VL_ICMS_ST_COMPL_MOT</strong> field.</td>
 </tr>
 <tr>
 <td>6</td>
 <td>VL_FCP_ST_COMPL</td>
-<td>The sum of record 1255 in the <strong>VL_FCP_ST_COMPL_MOT</strong> field.</td>
-</tr>
+<td>The sum of instances of record 1255 in the <strong>VL_FCP_ST_COMPL_MOT</strong> field.</td>
+</tr>	
 </table>
-L_ICMS_FCP_REST_MOT</td>
-</tr>
-<tr>
-<td>5</td>
-<td>VL_ICMS_ST_COMPL</td>
-<td>The sum of record 1255 in the <strong>VL_ICMS_ST_COMPL_MOT</strong> field.</td>
-</tr>
-<tr>
-<td>6</td>
-<td>VL_FCP_ST_COMPL</td>
-<td>The sum of record 1255 in the <strong>VL_FCP_ST_COMPL_MOT</strong> field.</td>
-</tr>
-</table>
+
 
 ### Record 1255
 
