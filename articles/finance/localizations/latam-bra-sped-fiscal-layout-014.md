@@ -203,7 +203,7 @@ Record 1255 is generated to consolidate information about the balance of the com
 | Number | Field                      | Description |
 |--------|----------------------------|-------------|
 | 1      | REG                        | The fixed text **1255**. |
-| 2      | COD\_MOT\_REST\_COMPL      | The reason code for the restitution or complement, per table 5.7. |
+| 2      | COD\_MOT\_REST\_COMPL      | The reason code for the complement or restitution, per table 5.7. |
 | 3      | VL\_CREDITO\_ICMS\_OP\_MOT | The sum of record C185 in the **VL\_UNIT\_ICMS\_OP\_CONV** field × the quantity in the **QUANT\_CONV** field. |
 | 4      | VL\_ICMS\_ST\_REST\_MOT    | The sum of record C185 in the **VL\_UNIT\_ICMS\_ST\_CONV\_REST** field × the quantity in the **QUANT\_CONV** field. |
 | 5      | VL\_FCP\_ST\_REST\_MOT     | The sum of record C185 in the **VL\_UNIT\_FCP\_ST\_CONV\_REST** field × the quantity in the **QUANT\_CONV** field. |
@@ -212,17 +212,17 @@ Record 1255 is generated to consolidate information about the balance of the com
 
 ### Record H030
 
-Record H030 is generated together with records H005 and H010 if control of the compensation or restitution of ICMS-ST tax was enabled by setting the **Enable record C180 and C185** option to **Yes** on the **Fiscal books parameters per state** page.
+Record H030 is generated together with records H005 and H010 if control of the complement or restitution of ICMS-ST tax was enabled by setting the **Enable record C180 and C185** option to **Yes** on the **Fiscal books parameters per state** page.
 
 When record H005 is generated, the **MOT\_INV** field is set **6**. Record H010 is generated in the same way if the **MOT\_INV** field isn't set to **6**. 
 
 | Number | Field            | Description |
 |--------|------------------|-------------|
 | 1      | REG              | The fixed text **H030**. |
-| 2      | VL\_ICMS\_OP     | The average unit amount of the ICMS operations. |
-| 3      | VL\_BC\_ICMS\_ST | The average unit amount of the ICMS-ST base. |
-| 4      | VL\_ICMS\_ST     | The average unit amount of the ISMC-ST tax, including the FCP. |
-| 5      | VL\_FCP          | The average unit amount of the FCP of the ICMS-ST tax. |
+| 2      | VL\_ICMS\_OP     | The average amount per unit of the ICMS operations. |
+| 3      | VL\_BC\_ICMS\_ST | The average amount per unit of the ICMS-ST base. |
+| 4      | VL\_ICMS\_ST     | The average amount per unit of the ICMS-ST tax, including the FCP. |
+| 5      | VL\_FCP          | The average amount PER UNIT of the FCP of the ICMS-ST tax. |
 
 ## Record G130
 
@@ -240,7 +240,7 @@ Record G140 is generated to identify the fiscal document of CIAP operations. The
 |--------|-------------------------|-------------|
 | 4      | QTDE                    | The quantity that was applied to the item. This quantity is expressed in the same unit as the incoming fiscal document. |
 | 5      | UNID                    | The unit of measure of the incoming fiscal document. |
-| 6      | VL\_ICMS\_OP\_APLICADO  | The ICMS amount of the incoming fiscal document. The ICMS column from the CIAP assessment. |
-| 7      | VL\_ICMS\_ST\_APLICADO  | The ICMS-ST amount of the incoming fiscal document. The ICMS column from the CIAP assessment. |
-| 8      | VL\_ICMS\_FRT\_APLICADO | The ICMS amount of the incoming fiscal document. The ICMS on the freight column from the CIAP assessment. |
-| 9      | VL\_ICMS\_DIF\_APLICADO | The ICMS-DIF amount of the incoming fiscal document. The ICMS-DIF column from the CIAP assessment. |
+| 6      | VL\_ICMS\_OP\_APLICADO  | The ICMS amount of the incoming fiscal document. This amount comes from the **ICMS** column of the CIAP assessment. |
+| 7      | VL\_ICMS\_ST\_APLICADO  | The ICMS-ST amount of the incoming fiscal document. This amount comes from the **ICMS-ST** column of the CIAP assessment. |
+| 8      | VL\_ICMS\_FRT\_APLICADO | The ICMS amount of the incoming fiscal document. This amount comes from the **ICMS on the freight** column of the CIAP assessment. |
+| 9      | VL\_ICMS\_DIF\_APLICADO | The ICMS-DIF amount of the incoming fiscal document. This amount comes from the **ICMS-DIF** column of the CIAP assessment. |
