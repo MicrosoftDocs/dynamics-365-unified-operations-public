@@ -174,7 +174,7 @@ Follow these steps if any of your customizations include request handlers for th
 
 1. Repeat steps 1 through 3 for the **CreateSalesOrderServiceRequest** request.
 
-### Update development environment
+### Update a development environment
 
 Follow these steps to update a development environment.
 
