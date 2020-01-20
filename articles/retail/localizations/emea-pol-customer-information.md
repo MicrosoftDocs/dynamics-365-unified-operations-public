@@ -33,9 +33,9 @@ ms.dyn365.ops.version: 10.0.9
 
 ## Introduction
 
-This topic describes how you can handle customer information, such as the customer's VAT number, in the point of sale (POS) for Poland.
+This topic describes how you can handle customer information, such as the customer's value-added tax (VAT) number, in Retail point of sale (POS) for Poland.
 
-You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts and can be used for invoicing purposes.
+You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and it can be used for invoicing purposes.
 
 > [!NOTE]
 > This functionality is available in version 10.0.8 and later.
@@ -44,22 +44,22 @@ You can specify the customer's VAT number when you create or edit a customer mas
 
 You must complete the following configuration to use this functionality:
 
-- Set up a registration type for VAT number.
+- Set up a registration type for the VAT number.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Configure retail channel components.
 
-### Set up a registration type for VAT number
+### Set up a registration type for the VAT number
 
-You need to create an appropriate registration type for VAT number and link it to the **VAT ID** registration category to allow specifying VAT numbers in POS. For more information about how to work with registration types and registration IDs, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
+Before VAT numbers can be specified in POS, you must create an appropriate registration type for the VAT number and link it to the **VAT ID** registration category. For more information about how to work with registration types and registration IDs, see [Registration IDs](../../finance/localizations/emea-registration-ids.md).
 
 > [!WARNING]
-> If a registration type is not created or not linked to the **VAT ID** registration category, an error will be generated in POS when VAT number is populated for a customer address. 
+> If a registration type isn't created or isn't linked to the **VAT ID** registration category, an error will be generated in POS when VAT number is filled in for a customer address.
 
 ### Add the Add customer information operation to screen layouts
 
-The **Add customer information** operation can be used to add customer information, such as VAT number, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
+The **Add customer information** operation can be used to add customer information, such as the VAT number, to a sales transaction. This information can be copied from the customer that is specified for the transaction, or it can be manually entered.
 
 On the **Button grids** page, select the button grid where the operation should appear, and open the Button grid designer. Add a new button, and then, in the **Action** field, select **Add customer information**. For more information about how to work with screen layouts and button grids, see [Screen layouts for the point of sale (POS)](../pos-screen-layouts.md).
 
@@ -76,19 +76,19 @@ You can configure receipt formats so that the customer's VAT number is printed o
 > [!NOTE]
 > The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, on the **POS** tab, add the following records for the labels of the custom fields for receipt formats. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the following table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
+On the **Language text** page, on the **POS** tab, add the following record for the label of the custom field for receipt formats. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the following table are just examples. You can change them to meet your requirements. However, the **Text ID** value that you use must be unique, and it must be equal to or more than 900001.
 
-| Language ID | Text ID | Text                |
-|-------------|---------|---------------------|
-| en-US       | 900001  | VAT number          |
+| Language ID | Text ID | Text       |
+|-------------|---------|------------|
+| en-US       | 900001  | VAT number |
 
-On the **Custom fields** page, add the following records for the custom fields for receipt formats. Note that the **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+On the **Custom fields** page, add the following record for the custom field for receipt formats. Note that the **Caption text ID** value must correspond to the **Text ID** value that you specified on the **Language text** page.
 
-| Name                           | Type    | Caption text ID |
-|--------------------------------|---------|-----------------|
-| FISCALCUSTOMER\_VATID\_PL      | Receipt | 900001          |
+| Name                      | Type    | Caption text ID |
+|---------------------------|---------|-----------------|
+| FISCALCUSTOMER\_VATID\_PL | Receipt | 900001          |
 
-In the Receipt format designer, add the custom fields to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
+In the Receipt format designer, add the custom field to the appropriate receipt section for every receipt format that is required. For more information about how to work with receipt formats, see [Receipt templates and printing](../receipt-templates-printing.md).
 
 ### Configure retail channel components
 
@@ -96,7 +96,7 @@ To make the functionality that is specific to Poland available, you must configu
 
 ## Example scenarios
 
-The following examples show how to work with customer information in POS for Poland.
+The following example scenarios show how to work with customer information in POS for Poland.
 
 ### Scenario 1: Make a sale to an anonymous customer
 
@@ -113,16 +113,16 @@ The following examples show how to work with customer information in POS for Pol
 1. Add items to the cart.
 1. Select **Add customer**, and then select **New**.
 1. Specify the new customer's attributes. 
-1. Select **Create a new address**. Specify the new customer's contact information and an address.
+1. Select **Create a new address**. Then specify the new customer's contact information and an address.
 1. In the **VAT number** field, enter the customer's VAT number.
-1. Save the customer record and the customer address record and add the customer to the transaction.
+1. Save the customer record and the customer address record, and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
-1. As the inquiry for customer information is enabled and customer information is not added to the transaction, the **Enter customer information** dialog box will be opened. Select **Yes**, and then select **Copy from transaction customer**.
+1. Because the inquiry for customer information has been activated, but customer information hasn't been added to the transaction, the **Enter customer information** dialog box is opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's VAT number, and then select **OK**.
 1. Verify that the printed receipt contains the customer's VAT number.
 
 > [!NOTE]
-> If you need to specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
+> If you must specify a different customer for the transaction, you must clear the customer information and then copy it again after the new customer is added.
 
 ### Scenario 3: Change the customer information for a sale to a named customer
 
@@ -144,7 +144,7 @@ This section provides deployment guidance for enabling customer information mana
 > [!NOTE]
 > Some steps in these procedures vary, depending on the product version you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 >
-> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customers' VAT numbers on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
+> If you want to enable the integration of POS with fiscal printers for Poland, and specifically if you want to print customer VAT numbers on fiscal receipts, you must deploy the [fiscal printer integration sample for Poland](emea-pol-fpi-sample.md).
 
 ### Update customizations
 
@@ -165,7 +165,7 @@ Follow these steps if any of your customizations include request handlers for th
 
 1. Repeat steps 1 through 3 for the **CreateSalesOrderServiceRequest** request.
 
-### Update development environment
+### Update a development environment
 
 Follow these steps to update a development environment.
 
@@ -196,7 +196,7 @@ Follow these steps to make the TaxRegistrationId.PL extension available.
     {
         "extensionPackages": [
             {
-               "baseUrl": "Microsoft/TaxRegistrationId.PL"
+                "baseUrl": "Microsoft/TaxRegistrationId.PL"
             }
         ]
     }
@@ -216,7 +216,7 @@ Follow these steps to make the TaxRegistrationId.PL extension available.
     {
         "extensionPackages": [
             {
-               "baseUrl": "Microsoft/TaxRegistrationId.PL"
+                "baseUrl": "Microsoft/TaxRegistrationId.PL"
             }
         ]
     }
@@ -249,4 +249,3 @@ Follow these steps to create deployable packages that contain Retail components,
 
 1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
