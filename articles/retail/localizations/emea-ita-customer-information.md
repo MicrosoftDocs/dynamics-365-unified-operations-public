@@ -124,7 +124,7 @@ The following example scenarios show how to work with customer information in PO
 1. Specify the new customer's attributes. In the **Fiscal code** field, enter the customer's fiscal code.
 1. Select **Create a new address**. Then specify the new customer's contact information and an address.
 1. In the **Lottery code** field, enter the customer's lottery code.
-1. Save the customer record and the customer address record and add the customer to the transaction.
+1. Save the customer record and the customer address record, and add the customer to the transaction.
 1. Register payments for the transaction, and then finalize the transaction.
 1. Because the inquiry for customer information has been activated, but customer information hasn't been added to the transaction, the **Enter customer information** dialog box is opened. Select **Yes**, and then select **Copy from transaction customer**.
 1. Verify the customer's lottery code, and then select **OK**.
