@@ -48,7 +48,7 @@ Before you create a new online channel, ensure that you have completed the [Chan
 To create and configure a new online channel, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Channels \> Online Stores**.
-1. On the **Action pane**, select **New**.
+1. On the action pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. In the **Legal entity** drop down, enter the appropriate legal entity.
 1. In the **Warehouse** drop down, enter the appropriate warehouse.
@@ -58,7 +58,7 @@ To create and configure a new online channel, follow these steps.
 1. In the **Customer address book** field, provide a valid address book.
 1. In the **Functionality profile** field, select a functionality profile if applicable.
 1. In the **Email notification profile** field, provide a valid email notification profile.
-1. On the **Action pane**, select **Save**.
+1. On the action pane, select **Save**.
 
 The following image shows the creation of a new online channel.
 
@@ -88,12 +88,12 @@ The following image shows **Modes of delivery**, **Payment methods**, and **Fulf
 
 To set up payment methods, for each payment type supported on this channel follow these steps.
 
-1. On the **Action pane**, select the **Set Up** tab, then select **Payment methods**.
-1. On the **Action pane**, select **New**.
+1. On the action pane, select the **Set Up** tab, then select **Payment methods**.
+1. On the action pane, select **New**.
 1. In the navigation pane, select a desired payment method.
 1. In the **General** section, provide an **Operation name** and configure any other desired settings.
 1. Configure any additional settings as required for the payment type.
-1. On the **Action pane**, select **Save**.
+1. On the action pane, select **Save**.
 
 The following image shows an example of a cash payment method.
 
@@ -106,7 +106,7 @@ You can see the configured modes of delivery by selecting **Modes of delivery** 
 To change or add a mode of delivery, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Inventory management \> Modes of delivery**.
-1. On the **Action pane**, select **New** to create a new mode of delivery, or select an existing mode.
+1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
 1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
 
 The following image shows an example of a mode of delivery.
@@ -117,11 +117,11 @@ The following image shows an example of a mode of delivery.
 
 To set up a fulfillment group assignment, follow these steps.
 
-1. On the **Action pane**, select the **Set up** tab, then select **Fulfillment group assignment**.
-1. On the **Action pane**, select **New**.
+1. On the action pane, select the **Set up** tab, then select **Fulfillment group assignment**.
+1. On the action pane, select **New**.
 1. In the **Fulfillment group** drop-down list, select a fulfillment group.
 1. In the **Description** drop-down list, enter a description.
-1. On the **Action pane**, select **Save**.
+1. On the action pane, select **Save**.
 
 The following image shows an example of a fulfillment group assignment setup.
 
