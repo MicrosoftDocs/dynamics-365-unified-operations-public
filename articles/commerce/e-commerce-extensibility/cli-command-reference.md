@@ -69,7 +69,7 @@ yarn msdyn365 add-data-action getMyData
 yarn msdyn365 add-module <module-name>
 ```
 
-This command adds a module to the root/src/modules folder.  Note module names are case insensitive. 
+This command adds a module to the root/src/modules folder. Note that module names are case insensitive. 
 
 **Example**
 
