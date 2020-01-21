@@ -238,16 +238,15 @@ The following example shows how the various supported data types are used.
 ```
 
 ### css config type
-Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via this.props.config.className. Note that config types with type css will not be directly accessible from this.props.config as they are merged into this.props.config.className. 
-
+Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected, the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via the **this.props.config.className** API property. Note that config types with type css will not be directly accessible from the **this.props.config** property, as they are merged into **this.props.config.className** property. 
 
 ### className property
-Every content module’s will includes a built in config named **className** that is accessible inside the module’s view via **this.props.config.className**.  This config field will show up in the site authoring tools allowing a page author to add a string of space separated CSS class names that will be appended to the module root class.
+Every content module includes a built-in config field named **className** that is accessible inside the module's view via the **this.props.config.className** property. This config field will appear in the site authoring tools, allowing a page author to add a string of space-separated CSS class names that will be appended to the module root class.
 
 ### __cssClassName__ property 
-**__cssClassName__** is another special property that is declared inside of a module’s definition file. It provides a way for the module creator to give an non-authorable, non-editable read-only className which will always be applied to the module. It therefore, must have its editable property set to false and must provide a default value. 
+**__cssClassName__** is another special property that is declared inside of a module's definition file. It provides a way for the module creator to give an non-authorable, non-editable, read-only **className** property which will always be applied to the module. It must therefore have its editable property set to false, and be populated with a default value. 
 
-In the below example, the module creator has given this field a default value of hero. This means that every instance of this module will always have the class ‘hero’ as part of this.props.config.className. 
+In the following example, the module creator has given this field a default value of *hero*. This means that every instance of this module will always have the class "hero" as part of the **this.props.config.className** property. 
 
 ```json
 ...    
@@ -292,7 +291,7 @@ The following example shows how to set a mock value for a new configuration fiel
 
 To access configuration fields in the React component, use the **props.config** application programming interface (API).
 
-The following example creates a props with config values to be sent to the module view file to render the appropriate HTML.
+The following example creates a props property with config values to be sent to the module view file to render the appropriate HTML.
 
 ```typescript
 /*---------------------------------------------------------------------------------------------
@@ -345,7 +344,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
 export default ProductFeature;
 ```
 
-The below example is the corresponding module view file that handles the HTML layout.
+The following example shows the corresponding module view file that handles the HTML layout.
 
 ```
 /*---------------------------------------------------------------------------------------------
