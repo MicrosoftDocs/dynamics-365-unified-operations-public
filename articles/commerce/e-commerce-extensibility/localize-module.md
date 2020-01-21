@@ -5,7 +5,7 @@ title: Localize a module
 description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -159,7 +159,7 @@ To use a resource string in a module, you must reference the resource string key
 
 ### Access resources in the module view file
 
-Resources can be accessed in the module React file and view file by using the **this.props.resources** API, as shown in the following example.
+Resources can be accessed in the module React file and view file by using the **this.props.resources** property, as shown in the following example.
 
 ```html
 <button className="nextButton">
@@ -310,6 +310,7 @@ You can generate global.json files for module resources and authoring resources 
 ```
 
 ### Example fr-fr.json localized file
+
 ```
 {
     "nextButtonText": {
@@ -324,8 +325,8 @@ You can generate global.json files for module resources and authoring resources 
 ```
 
 ## Testing localized content
-To test we need to use the a page mock (See [Testing modules with page mocks](test-page-mock.md)) and change the **locale** to the appropriate locale you are testing.
 
+To test localized content. you need to use a page mock and change the **locale** to the appropriate locale you are testing. For more information on page mocks, see [Testing modules with page mocks](test-page-mock.md).
 
 ## Additional resources
 
