@@ -46,7 +46,7 @@ Before you create a new call center channel, ensure that you have completed the 
 To create and configure a new call center channel, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Channels \> Call centers \> All call centers**.
-1. On the **Action pane**, select **New**.
+1. On the action pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. Select the appropriate **Legal entity** from the drop down.
 1. Select the appropriate **Warehouse** location from the drop down.
