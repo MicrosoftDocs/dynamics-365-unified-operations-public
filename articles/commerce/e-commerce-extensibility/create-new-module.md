@@ -5,7 +5,7 @@ title: Create a new module
 description: This topic describes how to create a new module in Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -67,7 +67,7 @@ To preview the new module in a local web browser, follow these steps.
 
 ## Module naming conventions
 
-Module name are not case sensitive. You should also use whole words whenever you can for module names.
+Module names are not case sensitive. It is recommended that you use whole words whenever you can for module names.
 
 ## Additional resources
 
