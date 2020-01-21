@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.3
 
 # About
 
-The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before introduction of this functionality  automated consolidation was available with hardcoded fields and based on the “Consolidate shipment at release to warehouse” field set on a warehouse.
+The shipment consolidation process using shipment consolidation policies allows for automated shipment consolidation during automated and manual release to warehouse. Before introduction of this functionality, automated consolidation was available with hardcoded fields and based on the “Consolidate shipment at release to warehouse” field set on a warehouse.
 
 The shipment consolidation policies are used at the following instances of functionality: 1) automated release to warehouse batch job, 2) release to warehouse function from the sales or transfer order, 3) separate release to warehouse form, 4) release to warehouse function from the Load planning workbench, and 5) the manual consolidation of shipments on Consolidate shipments and Shipment consolidation workbench forms.
 

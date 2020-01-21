@@ -61,7 +61,7 @@ Wave labels can be viewed and re-printed from the following forms (**Related inf
 1. Select
 1. Click **OK** to confirm your selection.
 
-## Scenario 2. Reprint of a specific label sequence due to label roll damaged on mobile device
+## Scenario 2. Reprint of a specific label sequence on warehouse mobile app due to label roll being lost or damaged
 
 ### Setup
 
