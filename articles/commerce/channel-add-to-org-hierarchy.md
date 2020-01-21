@@ -57,11 +57,11 @@ The following image shows organizational hierarchy details for the selected hier
 
 To add a channel to a hierachy node, follow these steps.
 
-1. On the **Action pane**, select **Edit**.
+1. On the action pane, select **Edit**.
 1. Select the hierachy node you want the channel added to and select the **Insert** drop down, then select **Retail Channel**. 
 1. Select the channel to add, then select the **OK** button.
-1. On the **Action pane**, select **Save**.
-1. On the **Action pane**, select **Publish** and provide an **Effective date** in the past to have this action go into effect immediately.
+1. On the action pane, select **Save**.
+1. On the action pane, select **Publish** and provide an **Effective date** in the past to have this action go into effect immediately.
 
 The following image shows how to select a channel to add to a hierarchy node.
 
