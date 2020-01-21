@@ -235,8 +235,6 @@
         href: hr-leave-and-absence-parameters.md
       - name: Create a working time calendar
         href: hr-leave-and-absence-working-time-calendar.md
-      - name: Create absence calendars
-        href: hr-leave-and-absence-calendars.md
       - name: Create a leave request workflow
         href: hr-leave-and-absence-workflow.md
       - name: Configure leave and absence types
