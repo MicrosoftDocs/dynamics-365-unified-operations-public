@@ -1,7 +1,40 @@
+---
+# required metadata
 
+title: Responding to vendor questions on Request for quotations
+description: Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page.
+author: velofog
+manager: AnnBe
+ms.date: 01/22/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: Application User
+# ms.devlang: 
+ms.reviewer: roschlom
+ms.search.scope: Operations, Core 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: public sector
+ms.author: v-alpavk
+ms.search.validFrom: 2020-1-22
+ms.dyn365.ops.version: 10.0.9
+
+---
 # Responding to vendor questions on Request for quotations
 
-When your agency has sent a request for quotation (RFQ), vendors might have questions pertaining to the solicitation. The vendors can ask questions and receive answers in **Vendor collaboration**. When vendor questions are allowed, **Questions and answers** is available on the **Request for quotation bid** page on **Vendor collaboration** and for your agency through the **Request for quotation** page, **Questions and answers**. Users can publish answers to vendor questions more than once. After a vendor is selected and the RFQ is awarded, or the cutoff date for questions is reached, vendors can no longer enter questions.
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+When your agency has sent a request for quotation (RFQ), vendors sometimes have questions that pertain to the request. Vendors that have questions related to an RFP can submit their questions and read the answers on **Vendor collaboration** page, when you make that page available to them. When vendor questions are accepted, **Questions and answers** is available on the **Request for quotation bid** page on **Vendor collaboration**, and for your agency through the **Request for quotation** page, **Questions and answers**. 
+
+Users can publish answers to vendor questions more than once. Vendors can't no longer post questions after a vendor is selected and the RFQ is awarded, or after the cutoff date for questions is reached.
 
 ## Setting up for vendor questions
 When creating a request for quotation, you determine whether vendors can ask questions about the RFQ.
