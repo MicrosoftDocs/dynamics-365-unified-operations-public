@@ -5,7 +5,7 @@ title: Deploy and use an environment that supports continuous build and test aut
 description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 manager: AnnBe
-ms.date: 02/22/2018
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
