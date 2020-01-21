@@ -77,12 +77,12 @@ The following image shows **Modes of delivery** and **Payment methods** set up o
 
 To set up payment methods, for each payment type supported on this channel follow these steps.
 
-1. On the **Action pane**, select the **Set up** tab, and then select **Payment methods**.
-1. On the **Action pane**, select **New**.
+1. On the action pane, select the **Set up** tab, and then select **Payment methods**.
+1. On the action pane, select **New**.
 1. In the navigation pane, select a desired payment method.
 1. In the **General** section, provide an **Operation name** and configure any other desired settings.
 1. Configure any additional settings as required for the payment type.
-1. On the **Action pane**, select **Save**.
+1. On the action pane, select **Save**.
 
 The following image shows an example of a cash payment method.
 
@@ -95,7 +95,7 @@ You can see the configured modes of delivery by selecting **Modes of delivery** 
 To change or add a mode of delivery, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Inventory management \> Modes of delivery**.
-1. On the **Action pane**, select **New** to create a new mode of delivery, or select an existing mode.
+1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
 1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
 
 The following image shows an example of a mode of delivery.
