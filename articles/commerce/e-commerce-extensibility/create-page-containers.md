@@ -5,7 +5,7 @@ title: Create a page container module
 description: This topic describes how to create a page container module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -95,7 +95,7 @@ In the following example, notice that the **slots** section contains the various
 
 In the **MODULE\_NAME.tsx** view file, you can define the HTML structure for the slots on the page.
 
-The following example shows a snippit from a react view file (**campaign-page-container.view.tsx**) that takes advantage of the slots for the container.
+The following example shows a snippet from a react view file (**campaign-page-container.view.tsx**) that takes advantage of the slots for the container.
 
 ```
 ...
