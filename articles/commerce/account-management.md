@@ -61,7 +61,7 @@ The order details page provides detailed information for each order and is acces
 
 ### User profile page
 
-The user profile page shows user account details, such as a user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features such as personalization of recommendation lists. 
+The user profile page shows user account details, such as a user's name and email address. It uses the user profile details and user profile edit modules. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features such as personalization of recommendation lists. 
 
 ### User address page
 
@@ -73,7 +73,9 @@ The wish list page shows the items that have been added to the customer's wish l
 
 ### Loyalty page
 
-The loyalty page lets customers join a loyalty program or, if they are already loyalty program members, view their program details. They can also view the points that they have earned and redeemed in recent transactions.
+The loyalty page lets customers view their loyalty details if they are already loyalty program members. They can also view the points that they have earned and redeemed in recent transactions. The page uses the Loyalty details module to showcase the loyalty details. 
+
+To join loyalty program, a marketing page can be created with Loyalty sign up and Loyalty terms modules. If the user is not a member of loyalty, these modules will allow the user to sign-up for it.
 
 ## Additional resources
 
