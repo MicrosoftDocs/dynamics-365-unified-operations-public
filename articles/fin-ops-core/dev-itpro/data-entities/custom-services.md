@@ -5,7 +5,7 @@ title: Custom service development
 description: This topic describes how to create a custom service.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
