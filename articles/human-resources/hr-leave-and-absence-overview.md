@@ -37,11 +37,11 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | Description | Status | Notes |
 | --- | --- | --- |
 | Draft | In progress |  |
-| Verify procedures |  |  |
-| Change links |  |  |
+| Verify procedures | NA |  |
+| Change links | Complete |  |
 | Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
+| Add See also links | NA |  |
+| Run Acrolinx | Complete |  |
 | Review |  |  |
 | Edit |  |  |
 | Ready to publish |  |  |
@@ -53,45 +53,39 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | From existing topic? | https://docs.microsoft.com/en-us/dynamics365/talent/leave-absence-overview |
 | Review document location | (link) |
 
-The **Leave and absence management** module offers a flexible framework for defining the absence management process. Leave and absence plans can be created to determine how employees accrue or are granted time off. After employees are enrolled in a plan, they can submit time-off requests for approval by managers. Leave tracking lets both first-level managers and Human Resources (HR) managers see who is taking time off and how much time off each employee still has.  
+Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
-Leave and absence management provides the following features: 
+## Set up Leave and absence
 
-- **Define leave and absence types.**
+Before you can create leave plans for your employees, you need to do a few setup steps:
 
-    Leave types define the various types of absences that employees can report. Because these types are user-defined, they can be tailored to your organization. Some typical leave types include paid time off (PTO), leave, short-term disability, jury duty (this leave type is specific to the United States), and bereavement. 
+- [Configure leave and absence parameters](hr-leave-and-absence-parameters.md)
+- [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
+- [Create a leave request workflow](hr-leave-and-absence-workflow.md)
 
-- **Define leave and absence plans that are tiered to fit your business.**
+## Create and manage leave plans
 
-    Leave and absence plans can be defined so that accrual occurs at specific frequencies, such as annually, monthly, or semimonthly. Plans can also be defined as a grant, where a single accrual occurs on a specific date. 
+Before creating leave plans for your workers, you need to create leave and absence types. After you create a leave plan, you can then enroll workers into the plan. If necessary, you can suspend a leave plan. You can also run the accrue process, create alerts, and view analytics for your plans.
 
-    Leave plans often contain tiers, where some groups of employees receive additional benefits, based on the amount of time that they have been with the organization. These user-defined tiers enable automatic enrollment in additional benefit hours, based on the date criteria that are defined. Leave plans can also be configured to enforce a maximum carry-over amount or a minimum balance, to prevent employees from using more benefit hours than they have accrued. 
+- [Configure leave and absence types](hr-leave-and-absence-types.md)
+- [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+- [Assign workers to a leave plan](hr-leave-and-absence-enroll.md)
+- [Suspend a leave plan](hr-leave-and-absence-suspend-plan.md)
+- [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
+- [Create an alert for leave and absence requests](hr-leave-and-absence-alert.md)
+- [View analytics for leave and absence](hr-leave-and-absence-analytics.md)
+- [Generate reports for leave and absence](hr-leave-and-absence-reports.md)
 
-    Typical leave plans include tiered plans that grant a benefit of 80 hours of PTO to new employees but a benefit of 120 hours after 60 months of service. Additional plans might grant floating holidays or position-based benefits, such as executive-only benefit hours.
+## Request time off and manage requests
 
-- **Enroll employees in leave and absence plans individually or through mass assignment that is based on job criteria.**
+Your employees can submit time off requests, and you can manage them, in the **Employee self service** workspace.
 
-    Several job-related filters can be used to assign a group of employees to a leave plan. HR managers can view an employee to see what leave and absence plans the employee is enrolled in. Alternatively, HR managers can view all plans and the related employee enrollments.
+- [Request time off](hr-employee-self-service-time-off.md)
+- [Manage leave and absence requests](hr-employee-self-service-manage-requests.md)
 
-- **Suspend leave and absence plans.**
+## In preview
 
-    Leave and absence plans can be suspended to make them inactive and prevent additional accruals. Accruals are suspended for employees if their employment ends.  
+The following articles are for Leave and absence features that are in preview. For more information about enabling preview features, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)>
 
-- **Adjust entitlements and grants.**
+- [Create a company calendar](hr-employee-self-service-calendar.md)
 
-    An employee can be enrolled in a higher plan tier by using a worker-specific date to override the employee's default plan offering. Employees can receive a manual adjustment to their leave and absence balance at the time of plan enrollment, or HR can make a manual adjustment at any time. 
-
-- **Apply a workflow to time-off requests.**
-
-     A workflow can be customized and applied to time-off requests to meet the organization’s requirements.  
-
-- **Track employee absence balances.**
-
-    Employees, their manager, and HR can view leave and absence balances. HR can use interactive reports to track plan enrollments and time-off balances by type. 
-
-- **Submit time-off requests.**
-
-    Employees can submit time-off requests against their available hours. Requests can be simple single-day requests or multiple-day requests that include multiple leave and absence types. If a workflow isn't enabled, the requests are automatically approved. If a workflow is enabled, the approval can be automatic, or it can require sign-off, depending on the workflow configuration.
-
-
-## See also
