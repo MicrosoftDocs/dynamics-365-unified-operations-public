@@ -35,6 +35,13 @@ ms.dyn365.ops.version: 10.0.9
 ## Releases of Dynamics 365 Finance
 To see what's new or changed in each release of Dynamics 365 Finance, see the following topics:
 
+| Version | Build number | Auto-update availability | Learn more |
+|---------|--------------|--------------|-------------|
+| 10.0.8  |             | February 2020 | [What's new and changed in Dynamics 365 Finance version 10.0.8](whats-new-changed-10-0-8.md) |
+| 10.0.7  | 7.0.5457    | January 2020 | [What's new and changed in Dynamics 365 Finance version 10.0.7](whats-new-changed-10-0-7.md) |
+
+
+
 ## Releases in that occurred in 2019 or earlier
 To see what's new or changed in releases that occurred in 2019 or earlier, see the following topics:
 
