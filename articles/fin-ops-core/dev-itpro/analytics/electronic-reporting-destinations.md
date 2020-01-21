@@ -2,10 +2,10 @@
 # required metadata
 
 title: Electronic reporting (ER) destinations
-description: You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who are granted appropriate access rights can also modify destination settings at run time. This article explains ER destination management, the types of destinations that are supported, and security considerations.
-author: ShylaThompson
+description: This topic provides information about ER destination management, the types of destinations that are supported, and security considerations.
+author: nselin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -39,7 +39,7 @@ You can configure a destination for each Electronic reporting (ER) format config
 Electronic reporting (ER) format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, XLSX, DOCX, PDF, etc.) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets the user save or open the file. The same behavior is also used when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
 
 ## Availability and general prerequisites
-The ER destinations functionality isn't available in the Microsoft Dynamics AX 7.0 (February 2016). Therefore, you must install Microsoft Dynamics 365 for Operations version 1611 (November 2016) to use the following destination types:
+The ER destinations functionality isn't available in the Microsoft Dynamics AX 7.0 (February 2016). Therefore, you must install Dynamics 365 Finance version 1611 (November 2016) to use the following destination types:
 
 - [Email](er-destination-type-email.md)
 - [Archive](er-destination-type-archive.md)
@@ -52,9 +52,7 @@ Alternatively, you can install one of the following prerequisites. However, be a
 - Microsoft Dynamics AX application version 7.0.1 (May 2016)
 - ER destination management [application hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
-You must install Microsoft Dynamics 365 Finance version 10.0.9 (April 2020) to use additionally the following destination type:
-
-- [Print](er-destination-type-print.md)
+You must install Dynamics 365 Finance version 10.0.9 (April 2020) to use the  destination type, [Print](er-destination-type-print.md).
 
 ## Overview
 
@@ -66,13 +64,13 @@ After you've created a reference, you can create a file destination for each **F
 
 [![Creating a file destination](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
-You can then enable and disable individual destinations for the file destination in the **Destination settings** dialog box. The **Settings** button is used to control all the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it.
+Next, you can enable and disable individual destinations for the file destination in the **Destination settings** dialog box. The **Settings** button is used to control all of the destinations for a selected file destination. In the **Destination settings** dialog box, you can control each destination separately by setting the **Enabled** option for it.
 
-In any Microsoft Dynamics 365 Finance version prior to **10.0.9**, you can create **one file destination** for each output component of the same format, such as a folder or a file that is selected in the **File Name** field.
+In any Microsoft Dynamics 365 Finance version prior to **10.0.9**, you can create one file destination for each output component of the same format, such as a folder or a file that is selected in the **File Name** field.
 
 Starting from the Microsoft Dynamics 365 Finance version **10.0.9**, you can create **multiple file destinations** for a single output component of the same format, such as a folder or a file that is selected in the **File Name** field.
 
-For example, you can use this capability to configure file destinations for a file component using to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive. Another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) this Excel file to PDF one and send this PDF file via email.
+For example, you can use this capability to configure file destinations for a file component used to generate an outbound document in Excel format. One destination ([Archive](er-destination-type-archive.md)) can be configured to store the original Excel file in the ER jobs archive while another destination ([Email](er-destination-type-email.md)) can be configured to simultaneously [convert](#OutputConversionToPDF) this Excel file to PDF and send the PDF file over email.
 
 [![Configuring multiple destinations for a single format element](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
@@ -92,45 +90,45 @@ Various types of destinations are supported. You can disable or enable all types
 You can set up destinations only for ER configurations that have been imported, and for the formats that are available on the **Electronic reporting configurations** page.
 
 > [!NOTE]
-> Be aware that configured destinations are company specific. If you plan to use an ER format in different companies of the current Finance instance, you need to configured destinations for this ER format for each such company.
+> Be aware that configured destinations are company-specific. If you plan to use an ER format in different companies of the current Finance instance, you need to configure destinations for this ER format for each such company.
 
 When you configure file destinations for a selected format, you configure them for the entire format. 
 
 [![Configuration link](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-At the same time you might have multiple [versions](general-electronic-reporting.md#component-versioning) of this format that have been imported to the current Finance instance. You can observe them if you select the **Configuration** link that is offered when you select the **Reference** field.
+At the same time, you might have multiple [versions](general-electronic-reporting.md#component-versioning) of this format that have been imported to the current Finance instance. You can observe them if you select the **Configuration** link that is offered when you select the **Reference** field.
 
 [![Configuration versions](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
-By default, configured destinations are applied only when you run an ER format version in either **Completed** or **Shared** status. Sometimes you need to use configured destinations when the draft version of an ER format is executed. For example, you modify a draft version of your format and want to test how a generated output will be delivered by using configured destinations. You need to complete the following steps to apply destinations for an ER format when the draft version of it is executed.
+By default, configured destinations are applied only when you run an ER format version in either **Completed** or **Shared** status. Sometimes you need to use configured destinations when the draft version of an ER format is executed. For example, you modify a draft version of your format and want to test how a generated output will be delivered by using configured destinations. Complete the following steps to apply destinations for an ER format when the draft version is executed.
 
-1. Go to **Organization administration \> Electronic reporting \> Configurations**.
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. Set the **Use destinations for draft status** field to **Yes**.
 
 [![Set ER user parameters](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
-Note that if you want to start using the draft version of an ER format, you need to mark this ER format accordingly.
+To use the draft version of an ER format, you need to mark this ER format accordingly.
 
-1. o to **Organization administration \> Electronic reporting \> Configurations**.
+1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. Set the **Run setting** field to **Yes**.
 
 [![Set ER user parameters](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
-After that, the **Run draft** option becomes available for an ER format that you modify. You need to set this option to **Yes** to start using the draft version of this format when this format is executed.
+After that, the **Run draft** option becomes available for an ER format that you modify. Set this option to **Yes** to start using the draft version of this format when this format is executed.
 
 [![Set format parameter](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="DestinationFailure">Destination failure handling</a>
 
-Usually an ER format is executed within the scope of a certain business process. Sometimes the delivery of an outbound document that is generated during this ER format execution must be considered as part of that business process. In this case the execution of that process must be cancelled whenever the delivery of a generated outbound document to a configured destination failed. To configure the appropriate ER destination accordingly, you need to check the **Stop processing on failure** option.
+Usually, an ER format is executed within the scope of a certain business process. Sometimes the delivery of an outbound document that is generated during this ER format execution must be considered as part of that business process. In this case, the execution of that process must be canceled whenever the delivery of a generated outbound document to a configured destination fails. To configure the appropriate ER destination, select the **Stop processing on failure** option.
 
-For example, you may configure vendor payments processing as running the **ISO20022 Credit Transfer** ER format to generate the payment file as well as supplementary documents (covering letter, control report, etc.). If you want to consider a payment processing as successfully completed only when the delivery of the covering letter of this payment via email succeeded, you need to check the **Stop processing on failure** option for the appropriate file destination as shown in the picture below. With this setting, the status of the selected for processing payment will be changed from **None** to **Sent** only when the generated covering letter has been successfully accepted for sending by an email provider that is configured in the Finance instance.
+For example, you may configure vendor payments processing as running the **ISO20022 Credit Transfer** ER format to generate the payment file as well as supplementary documents (covering letter, control report, etc.). If you want to consider a payment processing as successfully completed only when the delivery of the covering letter of this payment using email succeeded, you need to check the **Stop processing on failure** option for the appropriate file destination as shown in the following illustration. With this setting, the status of the payment that is selected for processing will be changed from **None** to **Sent** only when the generated covering letter has been successfully accepted for sending by an email provider that is configured in the Finance instance.
 
 [![Configuring process handling on file destination failure](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
-If you uncheck the **Stop processing on failure** option for the **CoveringLetter** component in this sample destination, a payment will be considered as successfully processed regardless of the results of the covering letter emailing. The status of the selected for processing payment will be changed from **None** to **Sent** even when the emailing of the covering letter failed due to, for example, missing or incorrect email address of a recipient or a sender. 
+If you deselect the **Stop processing on failure** option for the **CoveringLetter** component in this sample destination, a payment will be considered as successfully processed regardless of the results of the covering letter emailing. The status of the processing payment will be changed from **None** to **Sent** even when the emailing of the covering letter failed due to, for example, missing or incorrect email address of a recipient or a sender. 
 
 ## <a name="OutputConversionToPDF">Output conversion to PDF</a>
 
@@ -144,19 +142,19 @@ To make this option available in the current Finance instance, you need to open 
 
 ### Applicability
 
-The PDF conversion option can be turned on for the only file components that are used to generate an output in Microsoft Office Excel/Word formats (**Excel file**). When this option is turned on, a generated in Microsoft Office format output is automatically converted to PDF format.
+The PDF conversion option can be turned on only for tfile components that are used to generate an output in Microsoft Office Excel or Word formats (**Excel file**). When this option is enabled, a generated Office format output is automatically converted to PDF format.
 
 ### Limitations
 
 > [!NOTE]
->This is a preview feature and is subject to the same terms of use described in the [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
+> This is a preview feature and is subject to the same terms of use described in the [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 > [!NOTE]
 > This option is implemented only for cloud deployments.
 
 ### Usage
 
-To enable the PDF conversion for the entered file destination, check the **Convert to PDF** option.
+To enable the PDF conversion for the entered file destination, select **Convert to PDF**.
 
 [![Configuring PDF conversion for a file destination](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
