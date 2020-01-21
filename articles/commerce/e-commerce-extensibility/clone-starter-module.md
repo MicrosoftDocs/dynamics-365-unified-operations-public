@@ -5,7 +5,7 @@ title: Clone a starter kit module
 description: This topic describes how to clone a starter kit module.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,7 +37,9 @@ This topic describes how to clone a starter kit module.
 
 ## Overview
 
-The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated.  Module extension views can also be created to provide alternative layout views without needing to clone a module.  See more info in the module theming section.  It is recommended to avoid cloning if possible, since clones are copies of starter kit modules they will not receive any automatic service updates that the starter kit modules will get.
+The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) includes a set of starter kit modules that can be used on an e-Commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
+
+Module extension views can also be created to provide alternative layout views without needing to clone a module. It is recommended that cloning is avoided if possible, since clones would be copies of starter kit modules and would not receive any automatic service updates that the starter kit modules would get. For more information, see the [Theming overview](theming.md). 
 
 ## Clone and update a module
 
@@ -55,7 +57,7 @@ The following example shows how to clone the hero SDK module so that you can upd
 yarn msdyn365 clone content-block super-content-block
 ```
 
-It can take up to a minute to clone the module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
+It can take up to a minute to clone a module. After the command has finished running, you can find the new module in the \\src\\modules\\ directory.
 
 > [!NOTE]
 > Module dependencies aren't automatically pulled down when you clone a module. Before you build the module, you must run Yarn and fix any missing dependencies.
