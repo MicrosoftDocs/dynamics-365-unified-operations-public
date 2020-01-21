@@ -219,7 +219,7 @@ export interface IProductFeatureData {
 
 ## Call a Retail Server proxy API directly in module code
 
-The following example shows how to call the **getCategories** Retail API by using the Retail proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories and the sample code logs them to the the console.
+The following example shows how to call the **getCategories** Retail API by using the Retail proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories and the sample code logs them to the console.
 
 ```typescript
 import * as React from 'react';
