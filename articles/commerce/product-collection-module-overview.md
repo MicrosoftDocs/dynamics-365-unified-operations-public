@@ -80,7 +80,6 @@ To add a product collection module to a category page, follow these steps.
 1. In the **Add Module** dialog box, select **Container**, and then select **OK**.
 1. In the container module, select the ellipsis button, and then select **Add Module**.
 1. In the **Add Module** dialog box, select **Product collection**, and then select **OK**.  
-![Example product collection module Wizard flow](./media/productCollectionModule.png)
 1. Configure settings by selecting an appropriate data source and inputs for the product collection.
 1. In the properties pane for the product collection module, select **Add a product list**.
 1. In the **Select product list configuration** dialog box, select the type of list, enter the number of items, and select any other options that are available for the list type. For more information about list types, see the table that follows. 
