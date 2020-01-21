@@ -47,8 +47,8 @@ To see what's new or changed in each release of a Finance and Operations app, se
 
 ## Platform updates
 
-To see what's new or changed in the platform updates for Finance and Operations apps, see:
+To see what's new or changed in the platform updates for Finance and Operations apps, see the following topic:
 
-- What's new or changed in Platform updates
+- [What's new or changed in Platform updates](../dev-itpro/get-started/whats-new-home-page.md)
 
 
