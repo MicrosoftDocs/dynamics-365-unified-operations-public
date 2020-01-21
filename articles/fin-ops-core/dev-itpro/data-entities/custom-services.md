@@ -56,7 +56,7 @@ Code examples for consuming custom services using SOAP are available in the [Mic
 
 **Example endpoint for a non-dev environment**
 
-`https://<env-name>soap.cloudax.dynamics.com/soap/services/UserSessionService?wsdl`
+`https://<env-name>aossoap.cloudax.dynamics.com/services/UserSessionService?wsdl`
 
 For more information about custom services, see:
 
