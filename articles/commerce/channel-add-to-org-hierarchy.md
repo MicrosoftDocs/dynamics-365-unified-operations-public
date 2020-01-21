@@ -47,7 +47,7 @@ To select a hierarchy, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Organization hierarchies**.
 1. Select the organization hierarchy that you'll be adding the channel to from the list.
-1. From the **Action pane**, select **View** to view hierarchy details.
+1. On the action pane, select **View** to view hierarchy details.
 
 The following image shows organizational hierarchy details for the selected hierarchy.
 
