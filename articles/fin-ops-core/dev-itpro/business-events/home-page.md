@@ -5,7 +5,7 @@ title: Business events overview
 description: This topic provides information about business events, which provide a mechanism for external systems to receive notifications from Dynamics 365 Finance and Operations applications.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/14/2020
+ms.date: 01/20/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
