@@ -32,26 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure leave and absence types
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | Complete |  |
-| Verify procedures | Complete |  |
-| Change links | NA |  |
-| Update screenshots |  |  |
-| Add See also links | Complete |  |
-| Run Acrolinx | Complete |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
 **Notes for Reviewers**
 
-| Description | Comments |
-| --- | --- |
-| From existing topic? | (link) |
-| Review document location | (link) |
 | Question | Is vacation and sick time considered leave, even though they're part of an accrual plan? If not, I need to remove those examples from the bulleted list below. |
 
 Leave types in Dynamics 365 Human Resources define the types of absences that employees can report. You can tailor leave types according to the needs of your organization. Examples of leave types include:

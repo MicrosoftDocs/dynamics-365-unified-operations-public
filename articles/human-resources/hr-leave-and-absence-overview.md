@@ -32,27 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Overview
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures | NA |  |
-| Change links | Complete |  |
-| Update screenshots |  |  |
-| Add See also links | NA |  |
-| Run Acrolinx | Complete |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | https://docs.microsoft.com/en-us/dynamics365/talent/leave-absence-overview |
-| Review document location | (link) |
-
 Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
 ## Set up Leave and absence
@@ -65,12 +44,11 @@ Before you can create leave plans for your employees, you need to do a few setup
 
 ## Create and manage leave plans
 
-Before creating leave plans for your workers, you need to create leave and absence types. After you create a leave plan, you can then enroll workers into the plan. If necessary, you can suspend a leave plan. You can also run the accrue process, create alerts, and view analytics for your plans.
+Before creating leave plans for your workers, you need to create leave and absence types. After you create a leave plan, you can then enroll workers into the plan. You can also run the accrue process, create alerts, and view analytics for your plans.
 
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
 - [Assign workers to a leave plan](hr-leave-and-absence-enroll.md)
-- [Suspend a leave plan](hr-leave-and-absence-suspend-plan.md)
 - [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
 - [Create an alert for leave and absence requests](hr-leave-and-absence-alert.md)
 - [View analytics for leave and absence](hr-leave-and-absence-analytics.md)

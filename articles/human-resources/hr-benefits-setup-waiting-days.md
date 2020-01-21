@@ -32,26 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure waiting days
 
-**Status**
 
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft |  |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | (link) |
-| Review document location | (link) |
 
 
 

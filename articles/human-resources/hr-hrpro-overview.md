@@ -32,24 +32,4 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Overview
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft |  |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | https://docs.microsoft.com/en-us/dynamics365/talent/leave-absence-overview |
-| Review document location | (link) |
 

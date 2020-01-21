@@ -32,26 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure leave and absence parameters
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
 **Notes for Reviewers**
 
-| Description | Comments |
-| --- | --- |
-| From existing topic? | No |
-| Review document location | (link) |
 | Question | Should I delete references to FMLA? |
 
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:

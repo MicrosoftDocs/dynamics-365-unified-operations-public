@@ -32,29 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Welcome to Dynamics 365 Human Resources
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures | NA |  |
-| Change links |  |  |
-| Update screenshots | NA |  |
-| Add See also links | NA |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | No |
-| Review document location | (link) |
-
-**Introductory video**
-
 ## Get started
 
 - [Get started with Human Resources](hr-get-started.md)

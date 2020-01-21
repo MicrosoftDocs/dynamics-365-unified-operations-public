@@ -32,26 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Generate reports for leave and absence
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft |  |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
 **Notes for Reviewers**
 
-| Description | Comments |
-| --- | --- |
-| From existing topic? | No |
-| Review document location | (link) |
 | Question | Is this needed? Is it possible to generate FMLA or other reports? |
 
 

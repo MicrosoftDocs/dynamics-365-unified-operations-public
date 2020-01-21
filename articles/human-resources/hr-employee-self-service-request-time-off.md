@@ -32,27 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Request time off
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | Complete |  |
-| Verify procedures | Complete |  |
-| Change links | Complete |  |
-| Update screenshots |  |  |
-| Add See also links | Complete |  |
-| Run Acrolinx | Complete |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | (link) |
-| Review document location | (link) |
-
 You can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests in Dynamics 365 Human Resources.
 
 ## Request time off

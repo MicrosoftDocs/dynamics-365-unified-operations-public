@@ -32,27 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # MyLeaveRequests overview
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots | NA |  |
-| Add See also links | Complete |  |
-| Run Acrolinx | Yes |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | [MyLeaveRequestsOverview](https://docs.microsoft.com/en-us/dynamics365/talent/api-myleaverequests-overview) |
-| Review document location | (link) |
-
 The MyLeaveRequests entity in Microsoft Dynamics 365 Human Resources provides the list of Leave Requests in the system, scoped (limited) to the requests accessible to the current user querying the entity.
 
 ## Key

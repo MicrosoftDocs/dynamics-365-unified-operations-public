@@ -32,27 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Explore Human Resources
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | No |
-| Review document location | (link) |
-
 Navigating Dynamics 365 Human Resources is the same as it is for all Dynamics 365 Finance and Operations apps. If this is your first time using Human Resources, you might find the following articles helpful:
 
 - [User interface elements](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-interface-elements)

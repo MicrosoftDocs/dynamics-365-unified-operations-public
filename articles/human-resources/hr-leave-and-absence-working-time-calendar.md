@@ -32,26 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Create a working time calendar
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | Complete |  |
-| Verify procedures | Complete |  |
-| Change links | NA |  |
-| Update screenshots |  |  |
-| Add See also links | Complete |  |
-| Run Acrolinx | Complete |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | https://docs.microsoft.com/en-us/dynamics365/talent/working-time-calendars |
-
 A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization. When an employee submits a time-off request, they don't have to worry about holidays and closures.
 
 To streamline time-off requests, configure these items for your organization:

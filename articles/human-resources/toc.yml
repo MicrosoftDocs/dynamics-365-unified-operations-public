@@ -243,8 +243,6 @@
         href: hr-leave-and-absence-plans.md
       - name: Assign workers to a leave plan
         href: hr-leave-and-absence-enroll.md
-      - name: Suspend a leave plan
-        href: hr-leave-and-absence-suspend-plan.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
       - name: Create an alert for leave and absence requests

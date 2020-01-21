@@ -32,26 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Accrue leave and absence plans
 
-**Status**
 
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | Complete |  |
-| Verify procedures | Complete |  |
-| Change links | Complete |  |
-| Update screenshots |  |  |
-| Add See also links | Complete |  |
-| Run Acrolinx | Complete |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | [Leave and absence concepts](https://docs.microsoft.com/en-us/dynamics365/talent/leave-absence-concepts), [Accrue time off based on hours worked](https://docs.microsoft.com/en-us/dynamics365/talent/leave-accrue-hours-worked) |
-| Review document location | (link) |
 
 1. On the **Leave and absence** page, select the **Links** tab.
 

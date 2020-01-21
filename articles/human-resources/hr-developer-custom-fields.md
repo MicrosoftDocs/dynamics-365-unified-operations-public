@@ -32,27 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Custom fields
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures | NA |  |
-| Change links |  |  |
-| Update screenshots | NA |  |
-| Add See also links |  |  |
-| Run Acrolinx |  |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | [Custom fields in Core HR](https://docs.microsoft.com/dynamics365/talent/corehr-custom-fields) |
-| Review document location | (link) |
-
 You can add custom fields to pages in Dynamics 365 Human Resources. For more information about how to create custom fields on a page, see [Create and work with custom fields](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
 The following entities in Common Data Service support custom fields created in Human Resources:

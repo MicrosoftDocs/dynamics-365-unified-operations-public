@@ -32,20 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Authentication
 
-**Status**
-
-| Description | Status | Notes |
-| --- | --- | --- |
-| Draft | In progress |  |
-| Verify procedures |  |  |
-| Change links |  |  |
-| Update screenshots |  |  |
-| Add See also links |  |  |
-| Run Acrolinx | Yes |  |
-| Review |  |  |
-| Edit |  |  |
-| Ready to publish |  |  |
-
 **Notes for Reviewers**
 
 | Description | Comments |
