@@ -42,7 +42,7 @@ To see what's new or changed in each release of Dynamics 365 Finance, see the fo
 
 
 
-## Releases in that occurred in 2019 or earlier
+## Releases in 2019 or earlier
 To see what's new or changed in releases that occurred in 2019 or earlier, see the following topics:
 
 
