@@ -114,17 +114,21 @@ You can also create position-based leave benefits, such as executive-only benefi
 
 4. Define the accrual schedule in the **Accrual schedule** tab. The accrual schedule determines:
 
-- How an employee accrues time off
-- What amounts the employee will accrue
-- What amounts will carry forward.
+   - How an employee accrues time off
+   - What amounts the employee will accrue
+   - What amounts will carry forward
 
-You can create tiers to award time off based on different levels.
+   You can create tiers to award time off based on different levels.
+
+   If you have hourly employees, you can award time off based on hours worked instead of tenure with your organization. The data for hours worked is typically stored in a time and attendance system. You can import regular and overtime hours worked from the time and attendance system and use them as a basis for an employee's award.
 
    1. Select an option from the **Accrual type** dropdown box:
 
       - **Months of service** - Base the accrual schedule on months of service.
 
-      - **Hours worked** - Base the accrual schedule on hours worked.
+      - **Hours worked** - Base the accrual schedule on hours worked. For more information about accruals for hours worked, see [Accrue time off based on hours worked](hr-leave-and-absence-plans.md?accrue-time-off-based-on-hours-worked).
+
+      For more information about accrual balances, see [Accrue time off based on hours worked](hr-leave-and-absence-plans.md?enrollments-and-balances).
 
     2. Enter values in the accrual schedule table:
 
@@ -140,7 +144,248 @@ You can create tiers to award time off based on different levels.
 
       - **Grant amount** - The initial number of hours or days that employees are granted when they first enroll in the leave plan. The amount doesn't accrue for each accrual period.
 
+5. Select **Save**.
+
+## Accrue time off based on hours worked
+
+If you have hourly employees, you can award time off based on hours worked instead of tenure with your organization. Data for hours worked data is typically stored in a time and attendance system. You can import regular and overtime hours worked from your time and attendance system and use it as a basis for an employee's award.
+
+When you select hours worked as the accrual type, you can use two types of hours for the accrual: regular and overtime. Accrual processing for hours worked plans uses the accrual frequency, along with the accrual period basis, to determine the hours to be accrued.
+
+### Annual accrual frequency
+
+| Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
+| --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
+| 12/31/2018            | 2080                 | 144                   | 1/1/2018-12/31/2018  | 2085                | 144                 |        
+| 12/31/2018            | 2080                 | 144                   | 1/1/2018-12/31/2018  | 2000                | 0                 |
+
+
+### Monthly accrual frequency
+
+| Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
+| --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
+| 8/31/2018             | 160                  | 12                    | 8/1/2018-8/31/2018   | 184                 | 12                  |        
+| 8/31/2018             | 160                  | 3                     | 8/1/2018-8/31/2018   | 184                 | 3                   |
+
+### Semi-monthly accrual frequency
+
+| Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
+| --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
+| 8/31/2018             | 80                   | 6                     | 8/16/2018-8/31/2018  | 81                  | 6                  |        
+| 8/31/2018             | 80                   | 6                     | 8/16/2018-8/31/2018  | 75                  | 0                   |
+
+### Weekly accrual frequency
+
+| Accrual award date    | Hours worked tier    | Accrual amount        | Hours worked dates   | Hours worked actuals| Award               |
+| --------------------- | -------------------- | --------------------- | -------------------- |-------------------- |-------------------- |
+| 8/31/2018             | 40                   | 3                     | 8/27/2018-8/31/2018  | 42                  | 3                  |        
+| 8/31/2018             | 40                   | 3                     | 8/27/2018-8/31/2018  | 35                  | 0                   |
+
+### Employee assigned leave plans
+
+In the employee's assigned leave plans, the tier basis and type of hours displays for hours worked plans. The actual hours worked for the accrual periods as of the current date also displays for active plans.
+
+### Loading data
+
+You can import actual hours by using the **Leave and absence hours worked** entity in data management. If you use working time calendars, the import validates that regular hours worked doesn't exceed the scheduled hours in a day defined by the calendar. The import also validates that the hours worked for a given day doesn't exceed 24. 
+
+You need the following information to import the actual hours to be used in the leave accrual process:
+
+- Personnel number 
+- Date worked
+- Type
+- Hours
+
+A single date can only have one of each type associated with it.
+
+| Personnel number       | Date worked           | Type                  | Hours                |
+| --------------------- | -------------------- | --------------------- | -------------------- |
+| 000337                | 8/6/2018             | Regular               | 8                    |       
+| 000337                | 8/7/2018             | Regular               | 8                    |
+| 000337                | 8/7/2018             | Overtime              | 3                    |
+| 000337                | 8/8/2018             | Regular               | 8                    |
+| 000337                | 8/7/2018             | Regular               | 8                    |
+| 000337                | 8/9/2018             | Regular               | 8                    |
+
+## Enrollments and balances
+
+### Enrollment date
+
+The enrollment date determines when an employee can start to accrue time off. For example, an employee enrolled in a vacation plan on June 15, 2018 can't accrue any time off before June 15, 2018.
+
+### Current balance
+
+The current balance is the amount of leave that is available for time-off requests. This amount includes accruals, approved requests, and adjustments through the current date.
+
+### Current balance examples
+
+#### Annual plan
+
+**Plan setup**
+
+| Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|-----------------|-------------------|----------------------|-----------------------|
+| 1/1/2018        | 1/1/2018        | Annual            | Plan start date      | End of accrual period |
+
+Accruals are processed on January 1, 2019 (1/1/2019) to include the whole period .
+
+**Results**
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2019) |
+|----------------|-----------------|-----------------------|----------------|----------------------------------|
+| 200            | 0               | 120                   | 40             | 160                              |
+
+Current balance (160) = Accrual amount (200) – Request amount (40)
+
+#### Semimonthly plan
+
+**Plan setup**
+
+| Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|-----------------|-------------------|----------------------|-----------------------|
+| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+
+Accruals are processed on May 1, 2018 (5/1/2018) to include the whole period.
+
+**Results**
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2019) |
+|----------------|-----------------|-----------------------|----------------|----------------------------------|
+| 5              | 0               | 120                   | 8              | 22                               |
+
+Current balance (22) = Accrual amount (5 × 6) – Request amount (8)
+
+#### Monthly plan
+
+**Plan setup**
+
+| Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|-----------------|-------------------|----------------------|-----------------------|
+| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+
+Accruals are processed on May 1, 2018 (5/1/2018) to include the whole period.
+
+**Results**
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Request amount | Current balance (as of 1/1/2019) |
+|----------------|-----------------|-----------------------|----------------|----------------------------------|
+| 5              | 0               | 120                   | 8              | 7                                |
+
+Current balance (7) = Accrual amount (5 × 3) – Request amount (8)
+
+### Forecasted balance
+
+The *forecasted balance* is the amount of leave available on a future date. Accruals and carry-forward adjustments are forecasted up to that date.
+
+Human Resources uses the following formula:
+
+Monday forecasted balance = Current balance – Requests + Accruals – Carry-forward adjustment
+
+### Forecasted balance examples
+
+#### Annual plan
+
+**Plan setup**
+
+| Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|-----------------|-------------------|----------------------|-----------------------|
+| 1/1/2018        | 1/1/2018        | Annual            | Plan start date      | End of accrual period |
+
+Accruals are processed on February 15, 2019 (2/15/2019) to include the whole period.
+
+**Results**
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2019) |
+|----------------|-----------------|-----------------------|-----------------|--------------------------------------|
+| 20             | 0               | 20                    | 40              | 40                                   |
+
+Forecasted balance (40) = Accrual amount (20) + Current balance (40) – Carry-forward adjustment (20)
+
+#### Semimonthly plan
+
+**Plan setup**
+
+| Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|-----------------|-------------------|----------------------|-----------------------|
+| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+
+Accruals are processed on February 15, 2019 (2/15/2019) to include the whole period.
+
+**Results**
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2019) |
+|----------------|-----------------|-----------------------|-----------------|--------------------------------------|
+| 5              | 0               | 20                    | 40              | 35                                   |
+
+Forecasted balance (35) = Accrual amount (5 × 3) + Current balance (40) – Carry-forward adjustment (20)
+
+#### Monthly plan
+
+**Plan setup**
+
+| Plan start date | Enrollment date | Accrual frequency | Accrual period basis | Accrual award date    |
+|-----------------|-----------------|-------------------|----------------------|-----------------------|
+| 1/1/2018        | 2/1/2018        | Semimonthly       | Plan start date      | End of accrual period |
+
+Accruals are processed on February 15, 2019 (2/15/2019) to include the whole period.
+
+**Results**
+
+| Accrual amount | Minimum balance | Maximum carry-forward | Current balance | Forecasted balance (as of 2/15/2019) |
+|----------------|-----------------|-----------------------|-----------------|--------------------------------------|
+| 10             | 0               | 20                    | 40              | 30                                   |
+
+Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Carry-forward adjustment (20)
+
+### Proration balance examples
+
+#### Prorated monthly plan
+
+**Plan setup**
+
+| Plan start date | Accrual frequency | Accrual period basis |
+|-----------------|-------------------|----------------------|
+| 1/1/2018        | Monthly           | Plan start date      |
+
+**Results**
+
+| Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
+|---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
+| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.53    |
+
+#### Full accrual monthly plan
+
+**Plan setup**
+
+| Plan start date | Accrual frequency | Accrual period basis |
+|-----------------|-------------------|----------------------|
+| 1/1/2018        | Monthly           | Plan start date      |
+
+**Results**
+
+| Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
+|---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
+| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 3.00    |
+
+#### No accrual monthly plan
+
+**Plan setup**
+
+| Plan start date | Accrual frequency | Accrual period basis |
+|-----------------|-------------------|----------------------|
+| 1/1/2018        | Monthly           | Plan start date      |
+
+**Results**
+
+| Employee            | Months of service | Enrollment date | Start date | Accrual amount | Process accrual | Balance |
+|---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
+| Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
+| Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Configure leave and absence types](hr-leave-and-absence-types.md)
+- [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)

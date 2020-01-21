@@ -243,8 +243,10 @@
         href: hr-leave-and-absence-types.md
       - name: Create a leave and absence plan
         href: hr-leave-and-absence-plans.md
-      - name: Enroll workers in a leave plan
+      - name: Assign workers to a leave plan
         href: hr-leave-and-absence-enroll.md
+      - name: Suspend a leave plan
+        href: hr-leave-and-absence-suspend-plan.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
       - name: Create an alert for leave and absence requests
@@ -254,7 +256,11 @@
       - name: Generate reports for leave and absence
         href: hr-leave-and-absence-reports.md
       - name: Manage leave and absence requests
-        href: hr-leave-and-absence-manage-requests.md
+        href: hr-employee-self-service-manage-requests.md
+      - name: Request time off
+        href: hr-employee-self-service-time-off.md
+      - name: Create a company calendar
+        href: hr-employee-self-service-calendar.md
     - name: Create employee development plans
       items:
     - name: Create courses

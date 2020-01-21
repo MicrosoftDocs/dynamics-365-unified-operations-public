@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Assign workers to a leave plan
-description: Assign employees and contractors to leave plans in Dynamics 365 Human Resources.
+title: Manage leave and absence requests
+description: View and approve leave and absence requests in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# Assign workers to a leave plan
+# Manage leave and absence requests
 
 **Status**
 
@@ -53,24 +53,13 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 | From existing topic? | (link) |
 | Review document location | (link) |
 
-After you've created a leave and absence plan in Dynamics 365 Human Resources, assign it to workers.
+Managers can manage time-off requests from the **Employee self service** workspace in Dynamics 365 Human Resources. Requests can be simple single-day requests or multiple-day requests that include multiple leave and absence types. If a workflow isn't enabled, the requests are automatically approved. If a workflow is enabled, the approval can be automatic, or it can require sign-off, depending on the workflow configuration.
 
-## Assign a plan to an employee
+1. In the **Employee self service** workspace, select **My team**.
 
-1. On the **Leave and absence** page, select the plan you want to assign.
+2. Under **My team information**, select the **Leave and absence** tab. 
 
-2. Select **Assign to employees**.
-
-3. Adjust the following settings as appropriate:
-
-   - **Enroll on employment start date**
-   - **Enrollment date**
-   - **End date**
-   - **Tier basis**
-
-4. Under **Workers to enroll**, select all the works to assign to the plan.
-
-5. Select **Assign plan** at the bottom of the page.
+3. View and approve your team members' time-off requests as necessary.
 
 ## See also
 

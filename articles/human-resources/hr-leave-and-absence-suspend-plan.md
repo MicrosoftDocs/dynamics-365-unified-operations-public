@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Status | Notes |
 | --- | --- | --- |
-| Draft |  |  |
+| Draft | In progress |  |
 | Verify procedures |  |  |
 | Change links |  |  |
 | Update screenshots |  |  |
@@ -50,9 +50,13 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 | Description | Comments |
 | --- | --- |
-| From existing topic? | (link) |
+| From existing topic? | https://docs.microsoft.com/en-us/dynamics365/talent/leave-absence-overview |
 | Review document location | (link) |
+| Question | How do I do this? Couldn't find it in UI |
 
-
+You can suspend leave and absence plans. This makes them inactive and prevents additional accruals. Accruals are suspended for employees if their employment ends.
 
 ## See also
+
+- [Leave and absence overview](hr-leave-and-absence-overview.md)
+- [Create a leave and absence plan](hr-leave-and-absence-plans.md)
