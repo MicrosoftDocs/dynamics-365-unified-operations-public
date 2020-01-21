@@ -3182,17 +3182,17 @@
             - name: Destination types
               items:
                 - name: Archive destination
-                  href: href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
                 - name: Email destination
-                  href: href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
                 - name: File destination
-                  href: href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                  href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
                 - name: Power BI destination
-                  href: href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
                 - name: Printer destination
-                  href: href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
                 - name: Screen destination
-                  href: href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
             - name: Configure destinations
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Automatically validate generated reports
