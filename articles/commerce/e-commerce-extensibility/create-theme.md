@@ -5,7 +5,7 @@ title: Create a new theme
 description: This topic describes how to create a new theme for a Microsoft Dynamics 365 Commerce online site. 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -41,28 +41,31 @@ Dynamics 365 Commerce lets you apply a theme to your whole online site, and also
 
 After a theme is created and uploaded to your production site, you can use authoring tools to set the theme on the site. Themes can be set in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied. In this way, all the modules on the page have a consistent look and feel.
 
-Themes generally contain SCSS files to style your online site and individual modules and can optionally contain module view extensions which can provide new layout views on a module and definition extensions to change a modules configurations.
+Themes generally contain SCSS files to style your online site and individual modules, and can optionally contain:
+- Module view extensions that provide new layout views on a module.
+- Definition extensions to change a module's configurations.
 
 ## Create a new theme
 
-To create a new theme in Commerce, the online Software Development Kit (SDK) provides the **add-theme** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to give to the new module. 
+To create a new theme in Commerce, the online software development kit (SDK) provides the **add-theme** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to give to the new module. 
 
 **yarn msdyn365 add-theme THEME\_NAME**
 
-The following example shows how to create a theme that is named spring-theme.
+The following example shows how to create a theme named "spring-theme."
 
 ```
 yarn msdyn365 add-theme spring-theme
 ```
 
-The new theme will be created in a new directory under the `...\src\themes` directory, for example the above theme would be created under the `...\src\themes\spring-theme` directory.
+The new theme will be created in a new directory under the `...\src\themes` directory. For example, the "spring-time" theme above would be created under the `...\src\themes\spring-theme` directory.
 
 ### Theme naming conventions
 
-Theme name are not case sensitive. Theme friendly names and descriptions can be added to the theme definition file found under the new theme directory
+Theme names are not case sensitive. The theme friendly name and description can be added to the theme definition file located in the new theme directory.
 
 ## Theme definition file
-A theme is created as a special module.  Each theme will contain a theme definition json file, which contains the theme friendly name and description. The $type property will be set to "themeModule".
+
+A theme is created as a special module. Each theme will contain a theme definition JSON file, which contains the theme friendly name and description. The **$type** property will be set to "themeModule."
 
 Below shows a sample theme definition file.
 
@@ -76,18 +79,20 @@ Below shows a sample theme definition file.
 ```
 
 ## Theme styles
-SCSS files are stored under the **...\src\themes\THEME_NAME\styles** directory.  By default, you will find a **THEME\_NAME.theme.scss** file which is the entry point SCSS file, any additional SCSS files and directories can be added here as needed.
+SCSS files are stored under the **...\src\themes\THEME_NAME\styles** directory. By default, you will find a **THEME_NAME.theme.scss** file which is the entry point SCSS file, any additional SCSS files and directories can be added to the directory as needed.
 
-Example **...\src\themes\spring-theme\styles\spring-theme.theme.scss**
+Example file name and path for the "spring-theme" theme: **...\src\themes\spring-theme\styles\spring-theme.theme.scss**.
 
 ## Theme module view extensions
-Themes provide the ability to customize a module view extensions.  This is generally used to change the default layout of a module for the selected theme.  This is supported on both starter kit and custom modules.  For example, you may want to add a new button to a starter kit module to support additional features, by creating a view extension you can avoid creating a full copy of the starter kit module with the clone CLI command. In some cases you may want to extend the module definition as well to add additional configs properties, slots or resources, see section below for more information on creating defintion extensions.
+
+Themes provide the ability to customize module view extensions. This is generally used to change the default layout of a module for the selected theme, and is supported for both starter kit and custom modules. For example, you may want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid creating a full copy of the starter kit module using the clone CLI command. In some cases you may want to extend the module definition as well to add additional config properties, slots, or resources. For more information on creating definition extensions, see [Create a module view extension](##create-a-module-view-extension) below.
 
 View extensions are stored under the **...\src\themes\THEME\_NAME\views** directory and follow a similar naming pattern as used for module views **MODULE\_NAME.view.tsx** (example **product-feature.view.tsx**).  View extensions can be written exactly like a module view used for a module, the react component will just call the extension instead of the default one if it exists in a selected theme.
 
 In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy/paste additional code into it.  To see starter kit module view source code, open up the **...\node_modules\@msdyn365-commerce-modules** directory and look for the module you are interested in.  You may need to fix up file path references for relative path imports as necessary.
 
 ### Create a module view extension
+
 To create a new module view extension in Commerce, the online Software Development Kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to add the view extension to and replace **MODULE\_NAME** with the name of the module you are extending.
 
 ```yarn msdyn365 add-view-extension THEME_NAME MODULE_NAME```
