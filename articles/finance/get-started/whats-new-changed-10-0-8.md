@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Finance version 10.0.8 (January 2020)
+title: Preview features in Dynamics 365 Finance version 10.0.8 (February 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
 author: roschlom
 manager: AnnBe
@@ -29,22 +29,18 @@ ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
 
 ---
-# Preview features in Dynamics 365 Finance version 10.0.8 (January 2020)
+# Preview features in Dynamics 365 Finance version 10.0.8 (February 2020)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes preview features that are new or changed for Platform update 32 for Microsoft Dynamics 365 Finance, version 10.0.8. This version has a build number of 8.0.xxxx and is available as follows:
 
-- Preview release is in November 2019.
-- General availability (self-update) is in January 2020.
-- Auto-update is in February 2020.
+- Preview release: December 2019.
+- General availability (self-update): January 2020.
+- Auto-update: February 2020.
 
 For more information about Platform update 32, see [Additional resources](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md#additional-resources).
-
-## Feature name
-
-Description 
 
 ## Expense receipt processing
 
