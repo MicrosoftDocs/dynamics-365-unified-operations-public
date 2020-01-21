@@ -238,7 +238,7 @@ The following example shows how the various supported data types are used.
 ```
 
 ### css config type
-Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected, the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via the **this.props.config.className** API property. Note that config types with type css will not be directly accessible from the **this.props.config** property, as they are merged into **this.props.config.className** property. 
+Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected, the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via the **this.props.config.className** property. Note that config types with type css will not be directly accessible from the **this.props.config** property, as they are merged into **this.props.config.className** property. 
 
 ### className property
 Every content module includes a built-in config field named **className** that is accessible inside the module's view via the **this.props.config.className** property. This config field will appear in the site authoring tools, allowing a page author to add a string of space-separated CSS class names that will be appended to the module root class.
