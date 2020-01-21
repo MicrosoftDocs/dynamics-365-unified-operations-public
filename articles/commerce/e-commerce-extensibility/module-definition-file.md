@@ -5,7 +5,7 @@ title: Module definition file
 description: This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -37,7 +37,7 @@ This topic covers the module definition file in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to the Dynamics 365 Commerce site builder tool. This metadata includes the module name, description, categories, and configurations.
+A module definition file, MODULE\_NAME.definition.json, is used to register a module and provide metadata to the Dynamics 365 Commerce Site Builder tool. This metadata includes the module name, description, categories, and configurations.
 
 Here is an example of a module definition file.
 
@@ -96,13 +96,13 @@ Here is an example of a module definition file.
 
 A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for a image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Microsoft Dynamics 365 Retail product data.
 
-The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configs can be scoped per module instance or globally across all instances of the module.
+The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configurations can be implemented per module instance or globally across all instances of the module.
 
 ## Module definition schema
 
 * **"$type"** – The type of the module. A module can be either a container module (**containerModule**), a page module (**PageModule**), a content module (**contentModule**) or a script injector module (**scriptModule**). Container and page modules also define "slots" that are used for layout regions.  Script injector modules also define an "attributes" section that is used for specifying where script can be injected.
 * **"friendlyName"** – The friendly name of the module. This name is shown to page authors. The minimum length is three characters.
-* **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the site builder tool. It should not be changed.
+* **"name"** – The name of the module. This name must be unique across the application. It's used as the ID of the module and is referenced by the Site Builder tool. It should not be changed.
 * **"description"** – The description of the module. The description provides a friendly string that is shown in the authoring tools when modules are added to pages.
 * **"categories"** – The categories that the module can subscribe to. Container modules use the values that are specified here to allow or disallow some modules in specific slots.
 * **"tags"** – The tags that are used to search for the module. All the categories are automatically added as tags.
@@ -158,11 +158,12 @@ export interface IAsyncTestModuleData {
 
 You can then access the results of the data action in your module.
 
-## Module Resource Schema
-* **"resources"**: Used for localizing resources. When resources strings are defined, the localized strings are pulled from corresponding json files.  These files are stored under the **/src/resources/modules/** directory and include a **global.json** for default locale values and any needed localized json files, example fr-fr.json.
-* **"resourcekey"**: The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
-* **"comment"** - Comment is a string used to identify the purpose of the string to aid in localization.
-* **"value"** -  Resource string data that will be used in the module.
+## Module resource schema
+
+- **"resources"**: Used for localizing resources. When resources strings are defined, the localized strings are pulled from corresponding JSON files. These files are stored under the **/src/resources/modules/** directory and include a **global.json** for default locale values and any needed localized JSON files, example fr-fr.json.
+- **"resourcekey"**: The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
+- **"comment"**: A string used to identify the purpose of the string to aid in localization.
+- **"value"**: Resource string data that will be used in the module.
 
 
 To get more details on the config section, see [Add module configuration fields](add-module-config-fields.md).
