@@ -2,11 +2,11 @@
 
 # required metadata
 
-title: What's new or changed in Finance and Operations home page
+title: What's new or changed in Finance and Operations apps home page
 description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
 manager: AnnBe
-ms.date: 10/24/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Platform update 2
 
 ---
 
-# What's new or changed in Finance and Operations home page
+# What's new or changed in Finance and Operations apps home page
 [!include [banner](../includes/banner.md)]
 
-As of October 2019, this page is no longer maintained. The information in this topic shows where to find feature information for Finance and Operations applications that were released before October 2019.
-
-For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-latest-update.md).
 
 [!include [release notes](../includes/release-notes.md)]
 
@@ -170,7 +167,7 @@ This table lists the major releases of the application. For monthly cloud update
 </tbody>
 </table>
 
-## Platform releases
+## Platform updates
 
 <table>
 <thead>
