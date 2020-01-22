@@ -55,7 +55,7 @@ To create and configure a new call center channel, follow these steps.
 1. Provide a **Price override** info code.  Note you may need to create an info code for this first.
 1. Provide a **Hold code** info code.  Note you may need to create an info code for this first.
 1. Provide a **Credit** info code.  Note you may need to create an info code for this first.
-1. Select **Save**
+1. Select **Save**.
 
 The following image shows the creation of a new call center channel.
 
