@@ -5,7 +5,7 @@ title: Batch processing and batch servers
 description: This topic describes batch processing and batch servers, and how to plan for their use.
 author: Peakerbl
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -106,8 +106,7 @@ You can configure AOS2 and AOS3 to process tasks from other batch groups. These 
 
 ### Batch excessive tasks configuration (Batch throttling)
 
-Batch has a guard against excessive tasks, it works by limiting the average number of executions of a certain batchable class per minute. The default upper-bound is 60 tasks per minute, after that batch framework will
-suspend the execution of classes of the offending class for another minute, to prevent that specific batchable class from monopolizing the system resources.
+Batch throttling can prevent excessive tasks by limiting the average number of executions of a certain batch class per minute. The default upper-bound is 60 tasks per minute. After that, batch framework will suspend the execution of classes for the offending class for another minute, to prevent that specific class from monopolizing the system resources.
 
-**Note:** The batch framework is able to detect the case when there are no non-throttled tasks to be scheduled and executed at any given time, and then it will try to fetch batch tasks from the throttled classes 
-queue to prevent its resources from sitting idle.
+> [!NOTE]
+> The batch framework is able to detect instances when there are no non-throttled tasks to be scheduled and executed at any given time. When this occurs, the batch will try to fetch batch tasks from the throttled classes queue to prevent resources from being idle.
