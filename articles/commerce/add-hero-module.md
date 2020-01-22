@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Hero module 
-description: This topic covers hero modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+title: Content block module 
+description: This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
 ms.date: 10/31/2019
@@ -29,26 +29,26 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Hero module
+# Content block module
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic covers hero modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-A hero module is used to market products or promotions through a combination of images and text. For example, a retailer can add a hero module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.
+A content block module is used to market products or promotions through a combination of images and text. For example, a retailer can add a content block module to the home page of an e-Commerce site to promote a new product and attract the attention of customers.
 
-A hero module is driven by data from the content management system (CMS). It's a stand-alone module that doesn't depend on any other modules on the page. A hero module can be put on any site page where a retailer wants to market or promote something (for example, products, sales, or features).
+A content block module is driven by data from the content management system (CMS). It's a stand-alone module that doesn't depend on any other modules on the page. A content block module can be put on any site page where a retailer wants to market or promote something (for example, products, sales, or features).
 
-## Examples of hero module in e-Commerce
+## Examples of content block module in e-Commerce
 
-- A hero module can be used on the home page of an e-Commerce site to highlight promotions and new products.
-- A hero module can be used on a product details page to showcase product information.
-- Multiple hero modules can be put inside a carousel module to highlight multiple products or promotions.
+- A content block module can be used on the home page of an e-Commerce site to highlight promotions and new products.
+- A content block module can be used on a product details page to showcase product information.
+- Multiple content block modules can be put inside a carousel module to highlight multiple products or promotions.
 
-## Hero module properties
+## Content block module properties
 
 | Property name  | Values | Description |
 |----------------|--------|-------------|
@@ -60,14 +60,14 @@ A hero module is driven by data from the content management system (CMS). It's a
 | Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. |
 | Gradient       | **True** or **False** | A gradient can be applied to the image to meet color contrast ratios for accessibility purposes. |
 
-## Add a hero module to a new page
+## Add a content block module to a new page
 
 To add a hero module to a new page and set the required properties, follow these steps.
 
-1. Go to **Templates**, and create a page template that is named **hero template**.
+1. Go to **Templates**, and create a page template that is named **content block template**.
 1. In the **Main** slot of the default page, add a hero module.
 1. Check in the template, and publish it.
-1. Use the hero template that you just created to create a page that is named **hero page**.
+1. Use the hero template that you just created to create a page that is named **content block page**.
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.
 1. In the outline tree on the left, select the hero module.
