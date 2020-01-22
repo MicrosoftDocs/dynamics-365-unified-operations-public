@@ -80,8 +80,6 @@
         items:
         - name: Retail version 10.0.7
           href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail version 10.0.6
-          href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
@@ -448,12 +446,26 @@
         items:
         - name: Add a channel to an organization hierarchy  
           href: channel-add-to-org-hierarchy.md
-        - name: Set up payment methods 
-          href: TBD.md
-        - name: Set up modes of delivery 
-          href: TBD.md
         - name: Configure channel to channel database (RCSU)
           href: TBD.md
+        - name: Advanced auto charges 
+          items:
+          - name: Configure and use advanced auto charges 
+            href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
+          - name: Prorate header charges to matching sales lines
+            href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
+      - name: Retail store management 
+        items:
+        - name: Create and change store hours
+          href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail Store Scale Unit
+          href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
+      - name: Call Center Management 
+        items:
+        - name: Configure and work with call center order holds
+          href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
+        - name: Define continuity schedules
+          href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
     - name: Merchandizing your products and services  
       items:
       - name: Merchandizing overview 	  
@@ -830,18 +842,6 @@
           items:
           - name: Build custom response pages for 4xx/5xx status code errors
             href: build-pages-400-500-errors.md
-      - name: Retail store management 
-        items:
-        - name: Create and change store hours
-          href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Store Scale Unit
-          href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-      - name: Call Center Management 
-        items:
-        - name: Configure and work with call center order holds
-          href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
-        - name: Define continuity schedules
-          href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
       - name: Payments
         items:
         - name: Payment methods 
@@ -866,12 +866,6 @@
           href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
         - name: Payments FAQ 
           href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json
-      - name: Advanced auto charges 
-        items:
-        - name: Configure and use advanced auto charges 
-          href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
-        - name: Prorate header charges to matching sales lines
-          href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
       - name: Sales Tax 
         items:
         - name: Sales tax overview 
