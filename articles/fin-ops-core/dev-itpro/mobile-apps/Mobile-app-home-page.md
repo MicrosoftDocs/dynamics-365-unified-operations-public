@@ -5,7 +5,7 @@ title: Mobile app home page
 description: This topic describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
 author: sericks007
 manager: AnnBe
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
