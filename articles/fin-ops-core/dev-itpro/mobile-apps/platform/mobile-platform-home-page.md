@@ -5,7 +5,7 @@ title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
 author: RobinARH
 manager: AnnBe
-ms.date: 08/28/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
