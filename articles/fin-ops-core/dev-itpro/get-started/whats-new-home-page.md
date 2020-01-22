@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-To see what's new or changed in the platform updates for Finance and Operations apps, see the following topics:
+To see what's new or changed in the Platform updates for Finance and Operations apps, see the following topics:
 
 | **Version**        | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
