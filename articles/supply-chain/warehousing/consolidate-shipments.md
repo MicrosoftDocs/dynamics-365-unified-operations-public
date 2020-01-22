@@ -33,6 +33,8 @@ ms.dyn365.ops.version: 10.0.3, 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
+Scenarios below will walk you through shipment consolidation process during automated and manual release to warehouse using shipment consolidation policies.
+
 Scenario 1: [Consolidate shipments when released to warehouse by automatic release to warehouse of sales orders](../warehousing/consolidate-shipments-automatic.md)
 
 Scenario 2: [Override consolidation policy in “Release to warehouse” form](../warehousing/consolidate-shipments-release-to-warehouse-override.md)
