@@ -5,7 +5,7 @@ title: Page load data actions
 description: This topic covers page load data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/25/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -131,7 +131,7 @@ Now, when you develop this module, you will have access to the product informati
 
 ## Register a core data action
 
-The Dynamics 365 Commerce online SDK contains a set of core data actions for performing typical retail data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in your MODULE\_definition.json file inside the **dataActions** node.
+The Dynamics 365 Commerce online SDK contains a set of core data actions for performing typical retail data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in the **dataActions** node of your MODULE\_definition.json file .
 
 ```json
 {
