@@ -68,6 +68,7 @@ After you complete the prerequisite tasks, for further setup instructions follow
 - [Set up a call center channel](channel-setup-callcenter.md)
 - [Set up an online channel](channel-setup-online.md)
 
+<!--
 ## Post-channel configuration
 
 After you create a channel, you may need to complete some of the below tasks:
@@ -80,7 +81,7 @@ After you create a channel, you may need to complete some of the below tasks:
 - Send data such as number sequences, hardware profiles, and POS screen layouts to the Retail POS registers.(LINK TBD)
 - Publish the retail store to send store data to Retail POS. (LINK TBD)
 - Run the jobs to send the store data to Retail POS. (LINK TBD)
-
+-->
 ## Additional resources
 
 [Channel setup prerequisites](channels-prerequisites.md)
