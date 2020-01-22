@@ -57,7 +57,7 @@ Channel set up is performed in the Commerce tool. Each channel can have its own 
 
 ## Channel setup prerequisites
 
-Before you can set up a channel, you must complete some prerequisite tasks based on the channel type. For more information see
+Before you can set up a channel, you must complete some prerequisite tasks based on the channel type. For more information, see
 [Channel setup prerequisites](channels-prerequisites.md).
 
 ## Set up a channel
