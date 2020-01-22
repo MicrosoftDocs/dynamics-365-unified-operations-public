@@ -5,7 +5,7 @@ title: Preview features in Dynamics 365 Finance version 10.0.8 (February 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
 author: roschlom
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -36,17 +36,17 @@ ms.dyn365.ops.version: 10.0.8
 
 This topic describes preview features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.8. This version has a build number of 10.0.319 and is available as follows:
 
-- Preview release: December 2019.
-- General availability (self-update): January 2020.
-- Auto-update: February 2020.
+- **Preview release:** December 2019
+- **General availability (self-update):** January 2020
+- **Auto-update:** February 2020
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/en-us/dynamics365/release-plans/) site. 
 
-[Financial report retention policies](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
+- [Financial report retention policies](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
 
-[Retained earnings calculation enhancements for financial reporting when using currency translation](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+- [Retained earnings calculation enhancements for financial reporting when using currency translation](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
 
-[Purchase agreement enhancements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
+- [Purchase agreement enhancements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
 
 ## Additional resources
 
@@ -56,7 +56,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 3
 
 
 ### Bug fixes 
-For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=386529&dbType=3&qc=e03ced97fa18dc4439f36de17b00da7257dc15869a72e5b2435fec0acec0c493).
+For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=400368&dbType=3&qc=8405de0733ac4045859057a4e710a3ef07637ce2485f6a317ea49efe6f67f35f).
 
 
 ### Dynamics 365: 2019 release wave 2 plan
