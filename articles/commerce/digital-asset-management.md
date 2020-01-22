@@ -46,7 +46,7 @@ Digital assets are channel-specific with the exception of omni-channel assets wh
 # How to upload an image
 To upload an image, first navigate to the "Assets"-tab. Assets for selected site, channel and locale are shown in the middle pane.
 
-[screenshot1]
+![Screenshot](./media/dam-screenshot.png)
 
 In order to upload a new image, click "Upload" from the action bar, then click "Upload Assets". File dialog will open which allows you to select one or more image assets. Supported image formats are JPEG, PNG and GIF.
 
