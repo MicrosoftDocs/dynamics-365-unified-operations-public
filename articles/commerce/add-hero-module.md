@@ -69,6 +69,8 @@ E.g. of content block with Feature layout
 | Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Hero modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
 
 ## Properties exposed by Fabrikam theme for content block
+| Property name  | Values | Description |
+|----------------|--------|-------------|
 | Text placement | **Left**, **Right**, **Center** | This property defines the position of the text on the image. It only applies to Hero layout. |
 | Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. It only applies to Hero layout.|
 | Image placement       | **Left**,  **Right** |This applies only to Feature layout, it allows image to be left or right of the text. |
