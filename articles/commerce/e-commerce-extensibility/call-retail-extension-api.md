@@ -2,7 +2,7 @@
 # required metadata
 
 title: Call Retail Server Extension APIs
-description: This topic explains how to call a Microsoft Dynamics 365 Retail Server extension API from a data action or directly from module code.
+description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension API from data actions or directly from module code.
 author: samjarawan
 manager: annbe
 ms.date: 01/21/2020
@@ -28,42 +28,48 @@ ms.search.validFrom: 2020-01-22
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Call Retail Server Extension APIs
+# Call Retail Server extension APIs
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to call a Microsoft Dynamics 365 Retail Server extension API from a data action or directly from module code.
+This topic describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
 
 ## Overview
-You may have many Dynamics 365 Retail server extensions implemented and are calling them from the Dynamics 365 POS (Point of sale), these APIs can also be called from the e-Commerce modules and data actions.  To do this you will need to use a tool that is provided as part of the Dynamics 365 Retail SDK to create proxy module typescript files.  You can then include these files in your e-Commerce configurations and use them to call the Retail extension APIs from within your e-Commerce module and/or data actions.
 
-Note: this guide will not cover the details of building a Retail see the following docs for more details: [Create a Retail Server Extension](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-extension).
+Dynamics 365 Retail Server extensions APIs are usually implemented and called from the Dynamics 365 Retail's Point of Sale (POS) system, but these APIs can also be called from e-Commerce modules and data actions. To do this, you will need to use a tool to create proxy module typescript files that is provided as part of the Dynamics 365 Retail software develpment kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from within e-Commerce module or data actions.
 
-As a pre-requistite we are assuming you have a retail extension already deployed and have access to the Retail extension DLLs available. Also ensure your .env file `MSDyn365Commerce_BASEURL` is pointing to the environment that has the deployed Retail extension to test against it.  Mocks can also be used if this is not available.
+> [!NOTE]
+> This topic does not cover the details of creating a Retail Server extension, for more information see [Create a new Retail Server extension](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/retail-server-extension).
 
-## Creating Proxy files
-Retail extensions can be called from Retail POS (Point of sale) by following the instructions here: [Typescript Proxies for Retail POS](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/typescript-proxy-retail-pos).
+As a prerequisite, it is assumed that you already have a retail extension already deployed and have access to the Retail extension DLLs that are available. In addition, ensure that your .env file `MSDyn365Commerce_BASEURL` is pointing to the environment that has the deployed Retail extension, so you can test against it. Mocks can also be used if this option is not available.
 
-The above instructions will have you create a proxy using similar command as below:
+## Create proxy files
+
+Retail extensions can be called from Retail POS by following the instructions here: [Typescript and C# proxies for Retail point of sale (POS)](https://docs.microsoft.com/en-us/dynamics365/retail/dev-itpro/typescript-proxy-retail-pos).
+
+These instructions describe how to create a proxy using a command similar to the following:
  
 ```C:\RetailSDK\SourceCode\RetailSDK\Code\References\CommerceProxyGenerator.10.9.19281.3\tools>
 CommerceProxyGenerator.exe e:\NewSDK\RetailSDK\Code\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19315.4\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll e:\NewSDK\RetailSDK\Code\References\RetailServer.Extensions.WarrantySample.dll /application:typescriptextensions
 ```
 
-Note the SDK version above may be different depending on the version of Retail Server you are running.
+> [!NOTE]
+> The SDK version referenced above may differ, depending on the version of Retail Server you are running.
 
-Creating proxy files for e-Commerce is identical to above except replace the final option **/application:typescriptextensions** with **/application:typescriptmoduleextensions**.
+Creating proxy files for e-Commerce is similar to the process above, with the exception of replacing the final option **/application:typescriptextensions** with **/application:typescriptmoduleextensions**, as in the following example.
 
-Example
 ```
 C:\RetailSDK\SourceCode\RetailSDK\Code\References\CommerceProxyGenerator.10.9.19281.3\tools>
 CommerceProxyGenerator.exe e:\NewSDK\RetailSDK\Code\References\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19315.4\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll e:\NewSDK\RetailSDK\Code\References\RetailServer.Extensions.WarrantySample.dll /application:typescriptmoduleextensions
 ```
-Once you have run the above command, 2 new files will be generated `DataActionExtension.g.ts` and `DataServiceEntities.g.ts`.
+Once you have run the command above, two new files will be generated: `DataActionExtension.g.ts` and `DataServiceEntities.g.ts`.
 
-## Create a new data action 
-From within the Dynamics 365 online SDK, include the 2 new files created above in the `/src/actions/` directory.  Then create a new data action ts file and copy similar code as below to call the Retail extension api from within the data action.  The below example is using a file called get-warranty-info.ts.  Notice how it is importing the `DataActionExtension.g` and `DataServiceEntities.g` files created above and calling the Retail extension API **createGetWarrantyByProductIdInput**.
+## Create a new data action
+
+From within the Dynamics 365 Commerce online SDK, include the two new files created above in the `/src/actions/` directory. Then create a new data action .ts file and copy code similar to that in the example below to call the Retail extension API from within the data action. 
+
+The following example uses a file called **get-warranty-info.ts**. Notice how it is importing the `DataActionExtension.g` and `DataServiceEntities.g` files created above and calling the Retail extension API **createGetWarrantyByProductIdInput**.
 
 ```typescript
 import { createObservableDataAction, IAction, ICreateActionContext } from '@msdyn365-commerce/core';
@@ -82,7 +88,7 @@ export default createObservableDataAction({
 });
 ```
 
-Now we can call the data action just like we call any other by declaring it in the *dataActions* node in our module.definition.json file.  Below is an example.
+Now we can call the data action like any other by declaring it in the **dataActions** node of our module.definition.json file, as in the following example.
 
 ```json
 {
@@ -123,7 +129,7 @@ Now we can call the data action just like we call any other by declaring it in t
 }
 ```
 
-We also need to add the return data type to the module data.ts file.  Below is an example.
+We also need to add the return data type to the module data.ts file, as in the following example.
 
 ```typescript
 import { AsyncResult } from '@msdyn365-commerce/retail-proxy';
@@ -134,9 +140,9 @@ export interface IWarrantylistData {
 }
 ```
 
-Finally we can access the data from within our module React component using this.props.data.productWarranties property.
+Finally we can access the data from within our module React component using the **this.props.data.productWarranties** property.
 
-
+## Additional resources
 
 
 
