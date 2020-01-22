@@ -80,6 +80,8 @@
         items:
         - name: Retail version 10.0.7
           href: ../retail/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail version 10.0.6
+          href: ../retail/get-started/whats-new-10-0-6.md?toc=/dynamics365/commerce/toc.json
         - name: What's new or changed in previous versions
           items:
           - name: What's new or changed in Finance and Operations home page
@@ -178,6 +180,8 @@
       items:
       - name: Architecture
         items:
+        - name: Commerce architecture
+          href: commerce-architecture.md
         - name: Retail components
           href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
         - name: Retail Server architecture
@@ -253,32 +257,84 @@
         - name: Update code and environments for Retail projects
           href: ../retail/dev-itpro/updating-environments.md?toc=/dynamics365/commerce/toc.json
         - name: Testing and performance issues
-          href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json   
-    - name: System administration
+          href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json
+    - name: Set up your channels 
       items:
-      - name: Environment configuration
+      - name: Set up retail channels
+        href: channels-overview.md	  
+      - name: Channel prerequisites
         items:
-        - name: Add links to your organization's legal terms and privacy statement
-          href: ../fin-ops-core/dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage Bing Maps
-          href: ../retail/dev-itpro/manage-bing-maps.md?toc=/dynamics365/commerce/toc.json
-    - name: Channel setup and management
-      items:
-      - name: Core cross-channel setup
-        items:
-        - name: Initialize seed data in new Retail environments
-          href: ../retail/enable-configure-retail-functionality.md?toc=/dynamics365/commerce/toc.json
-        - name: Info codes and info code groups
-          href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json     
-      - name: Store channel management 
-        items:
-        - name: Set up retail channels
+        - name: Channel setup prerequisites
+          href: channels-prerequisites.md
+        - name: General prerequisites
+          items:
+          - name: Organizations and organizational hierarchies
+            items:
+            - name: Organizations and organizational hierarchies overview
+              href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json
+            - name: Plan your organizational hierarchy
+              href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/commerce/toc.json
+            - name: Create legal entities
+              href: channels-legal-entities.md	  
+            - name: Set up organization hierarchies
+              href: channels-org-hierarchies.md
+            - name: Create an operating unit
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
+            - name: Define the relationships between organizational units
+              href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
+          - name: Warehouse set up
+            href: channels-setup-warehouse.md
+          - name: Sales tax setup	
+            items:
+            - name: Sales tax overview
+              href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
+            - name: Sales tax calculation methods
+              href:	../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json		
+            - name: Sales tax assignment and overrides			
+              href:	../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json		
+            - name: Whole amount and Interval calculation options for sales tax codes
+              href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up an email notification profile 
+            href: email-notification-profiles.md
+          - name: Number sequences 
+            items:
+            - name: Number sequences overview
+              href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
+            - name: Set up number sequences on an individual basis
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis?toc=/dynamics365/retail/toc.json
+            - name: Set up number sequence using a wizard
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/retail/toc.json
+          - name: Set up a default customer and address book 
+            href: default-customer.md
+          - name: Configure commerce parameters 
+            href: commerce-parameters.md
+        - name: Retail channel prerequisites
+          items:
+          - name: Info codes and info code groups	  
+            href: ../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json  		  
+          - name: Create a retail functionality profile		  
+            href: retail-functionality-profile.md	  
+          - name: Create a new address book 		  
+            href: new-address-book.mdd 
+          - name: Screen layout overview
+            href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
+        - name: Online channel prerequisites 
+          items:
+          - name: Create an online functionality profile
+            href: online-functionality-profile.md		  
+        - name: Call center prerequisites
+          items:  	  
+          - name: Configure and work with call center order holds
+            href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
+      - name: Set up a retail channel 
+        items: 
+        - name: Set up a retail channel
+          href: channel-setup-retail.md		
+        - name: Define and maintain retail channels
           href: ../retail/define-maintain-retail-channels.md?toc=/dynamics365/commerce/toc.json
-        - name: Create and change store hours
-          href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and install Retail hardware station
-          href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
-        - name: Modern Point of Sale (MPOS) and Cloud POS
+        - name: Configure retail workers 
+          href: ../retail/tasks/worker.md?toc=/dynamics365/commerce/toc.json
+        - name: Modern Point of Sale (MPOS) and Cloud POS 
           items:
           - name: Choose between MPOS and Cloud POS
             href: ../retail/MPOS-or-CPOS.md?toc=/dynamics365/commerce/toc.json
@@ -352,13 +408,241 @@
               href: ../retail/extended-logon.md?toc=/dynamics365/commerce/toc.json
             - name: Manage Retail activation accounts and validate devices
               href: ../retail/set-up-activation-accounts-validate-devices-hq.md?toc=/dynamics365/commerce/toc.json
-          - name: Receipts
-            items:
-            - name: Set up and design receipt formats
-              href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
-            - name: Send email receipts from MPOS
-              href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json
-      - name: Online channel management 
+          - name: Create financial dimensions for POS registers and configure dimension values on registers 
+            href: ../retail/tasks/create-financial-dimensions-pos.md?toc=/dynamics365/commerce/toc.json
+          - name: Create POS permissions group 
+            href: ../retail/tasks/create-pos-permission-groups.md?toc=/dynamics365/commerce/toc.json
+          - name: Create POS visual profiles 
+            href: ../retail/tasks/create-pos-visual-profile-2016-02.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure and install Retail hardware station 
+          href: ../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json
+        - name: Receipts
+          items:
+          - name: Set up and design receipt formats
+            href: ../retail/receipt-templates-printing.md?toc=/dynamics365/commerce/toc.json
+          - name: Send email receipts from Retail Modern POS (MPOS)
+            href: ../retail/email-receipts.md?toc=/dynamics365/commerce/toc.json           
+        - name: Create functionality profiles for sales representatives 
+          href: ../retail/tasks/configure-functionality-profile-sales-representative.md?toc=/dynamics365/commerce/toc.json
+        - name: Create financial dimensions for retail channels and configure values on stores 
+          href: ../retail/tasks/create-financial-dimensions-retail-channels.md?toc=/dynamics365/commerce/toc.json
+      - name: Set up an online channel
+        items:
+        - name: Set up an online channel
+          href: channel-setup-online.md
+      - name: Set up a call center channel
+        items:
+        - name: Call center sales functionality
+          href: ../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up a call center channel  
+          href: channel-setup-callcenter.md
+        - name: Call center catalogs 
+          href: ../retail/call-center-catalogs.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up call center order processing options
+          href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up and work with fraud alerts 
+          href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up continuity programs for call centers 
+          href: ../retail/set-up-continuity-program.md?toc=/dynamics365/commerce/toc.json
+      - name: Additional channel configuration 
+        items:
+        - name: Add a channel to an organization hierarchy  
+          href: channel-add-to-org-hierarchy.md
+        - name: Set up payment methods 
+          href: TBD.md
+        - name: Set up modes of delivery 
+          href: TBD.md
+        - name: Configure channel to channel database (RCSU)
+          href: TBD.md
+    - name: Merchandizing your products and services  
+      items:
+      - name: Merchandizing overview 	  
+        href: TBD.md	  
+      - name: Categories, products, and assortments 
+        items:
+        - name: Product information overview 
+          href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up retail products 
+          href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail product hierarchy 
+          items:
+          - name: Retail hierarchies 
+            href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
+          - name: Create a new product hierarchy 
+            href: create-product-hierarchy.md
+          - name: Manage Retail product categories and products 
+            href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
+          - name: Change the sort order for merchandizing entities 
+            href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json
+        - name: Product dimensions 
+          items:
+          - name: Product dimensions 
+            href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
+          - name: Create a variant group 
+            href: create-variant-group.md
+        - name: Create and manage products 
+          items:
+          - name: Create a new product 
+            href: create-new-product.md
+          - name: Release and configure a product 
+            href: TBD.md
+          - name: Manage retail product categories and products 
+            href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
+        - name: Product attributes 
+          items:
+          - name: Attributes and attribute groups 
+            href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
+          - name: Define channel attributes 
+            href: ../retail/tasks/define-channel-attributes.md?toc=/dynamics365/commerce/toc.json
+        - name: Channel hierarchies 
+          items:
+          - name: Channel hierarchy overview 
+            href: TBD.md
+          - name: Create a channel navigation hierarchy
+            href: create-channel-hierarchy.md
+          - name: Add products to hierarchy 
+            href: TBD.md
+          - name: Configure channel to use a channel navigation hierarchy 
+            href: configure-channel-hierarchy.md
+        - name: Assortments
+          items:
+          - name: Assortment management
+            href: ../retail/assortments.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up assortments 
+            href: ../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json
+          - name: Manage assortments
+            href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
+        - name: Bar Codes 
+          items:
+          - name: Set up bar codes 
+            href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up bar code masks 
+            href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
+        - name: Product Images 
+          items:
+          - name: Digital asset management 
+            href: TBD.md
+      - name: Pricing and discounts 
+        items:
+        - name: Discounts
+          href: ../retail/retail-discounts-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Sales price management 
+          href: ../retail/price-management.md?toc=/dynamics365/commerce/toc.json
+        - name: Price adjustments and discounts 
+          href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Apply multiple discounts to a product 
+          href: ../retail/apply-multiple-retail-discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Determine the optimal combination of overlapping discounts 
+          href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Define channel-specific discounts 
+          href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Options for preventing discounts for retail products 
+          href: ../retail/prevent-discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Tender-based discounts 
+          href: ../retail/tender_based_discounts.md?toc=/dynamics365/commerce/toc.json
+        - name: Shipping discount overview 
+          href: ../retail/retail-shipping-discount.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up coupons  
+          href: ../retail/retail-coupons.md?toc=/dynamics365/commerce/toc.json
+        - name: Price reports 
+          href: ../retail/price-report.md?toc=/dynamics365/commerce/toc.json
+        - name: Create channel-specific trade agreements 
+          href: ../retail/tasks/base-price-trade-agreements.md?toc=/dynamics365/commerce/toc.json
+        - name: Create trade agreements using category pricing rules
+          href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
+    - name: Manage your orders and inventory  
+      items:
+      - name: Inventory and purchase orders 
+        items:
+        - name:	Inventory   
+          items:
+          - name: Store inventory management  
+            href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
+          - name: Working with serialized items 
+            href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+          - name: Push products from distribution center to store using buyer's push 
+            href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up rules and parameters for cross-docking and buyer's push  
+            href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
+        - name:	Sales orders   
+          items:
+          - name: Create a customer order 
+            href: TBD.md
+          - name: Create a cash and carry order 
+            href: TBD.md
+          - name: Create a call center order 
+            href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
+          - name: Create a continuity order 
+            href: TBD.md
+        - name: Purchase Orders	  
+          items:
+          - name: Purchase order overview
+            href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+          - name: Create purchase orders
+            href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+          - name: Product receipt against purchase orders
+            href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+          - name: Approve and confirm purchase orders
+            href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+          - name: Purchase order approval mobile workspace
+            href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+          - name: Create product packages for purchase orders
+            href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+        - name: Distributed order management	  
+          items:
+          - name: DOM overview
+            href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
+          - name: Cost configuration
+            href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
+        - name: Order fulfillment and processing 
+          items:
+          - name: Store order fulfillment
+            href: ../retail/order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up order fulfillment for stores
+            href: ../retail/order-fulfillment-pos-setup.md?toc=/dynamics365/commerce/toc.json
+          - name: Show order notifications in the POS
+            href: ../retail/notifications-pos.md?toc=/dynamics365/commerce/toc.json
+          - name: Selling continuity programs and processing sales orders
+            href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
+        - name:	Returns  
+          items:
+          - name: Linked refunds
+            href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
+          - name: Sell and return products not included in a store's assortment
+            href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure and process an exchange on a return order
+            href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
+          - name: Restrict payment methods for returns without a receipt
+            href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
+          - name: Return items across multiple customer orders and invoices
+            href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json	
+    - name: Manage your customers  
+      items:
+      - name: Customers 
+        items:
+        - name: TBD	  
+          href: TBD.md		  
+      - name: Clienteling
+        items:
+        - name: Clienteling overview
+          href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json	
+      - name: Loyalty 
+        items:
+        - name: Loyalty	overview  
+          href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
+        - name: Define loyalty programs	  
+          href: ../retail/tasks/define-loyalty-programs.md?toc=/dynamics365/commerce/toc.json
+        - name: Define loyalty reward points	  
+          href: ../retail/tasks/define-loyalty-reward-points.md?toc=/dynamics365/commerce/toc.json	
+        - name: Define loyalty schemes	  
+          href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json	
+        - name: Process adjustments of loyalty reward points	  
+          href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
+    - name: Manage your channels 
+      items:
+      - name: Channel management overview 	  
+        href: TBD.md		  
+      - name: E-commerce store management 
         items:
         - name: Online store overview
           href: online-store-overview.md
@@ -546,83 +830,23 @@
           items:
           - name: Build custom response pages for 4xx/5xx status code errors
             href: build-pages-400-500-errors.md
-      - name: Call center channel management
+      - name: Retail store management 
         items:
-        - name: Call center sales functionality
-          href: ../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up call center channels
-          href: ../retail/set-up-order-processing-options.md?toc=/dynamics365/commerce/toc.json
-        - name: Call center catalogs
-          href: ../retail/call-center-catalogs.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure delivery modes and charges
-          href: ../retail/configure-call-center-delivery.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up and work with fraud alerts
-          href: ../retail/set-up-fraud-alerts.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up continuity programs for call centers
-          href: ../retail/set-up-continuity-program.md?toc=/dynamics365/commerce/toc.json
+        - name: Create and change store hours
+          href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail Store Scale Unit
+          href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
+      - name: Call Center Management 
+        items:
         - name: Configure and work with call center order holds
           href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
-    - name: Omni-channel configuration
-      items:
-      - name: Products and merchandising
-        items:
-        - name: Product information overview
-          href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail hierarchies
-          href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage attributes and attribute groups
-          href: ../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up retail products
-          href: ../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json
-        - name: Manage retail product categories and products
-          href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
-        - name: Product dimensions
-          href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json
-        - name: Assortment management
-          href: ../retail/assortments.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up assortments
-          href: ../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up bar codes
-          href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up bar code masks
-          href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
-        - name: Change the sort order for merchandising entities
-          href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json
-      - name: Pricing and discounts
-        items:
-        - name: Retail discounts
-          href: ../retail/retail-discounts-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail sales price management
-          href: ../retail/price-management.md?toc=/dynamics365/commerce/toc.json
-        - name: Price adjustments and discounts
-          href: ../retail/price-adjustments-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Apply multiple discounts to a product
-          href: ../retail/Apply-multiple-retail-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Determine the optimal combination of overlapping discounts
-          href: ../retail/optimal-combination-overlapping-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Define channel-specific discounts
-          href: ../retail/define-channel-specific-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Options for preventing discounts for retail products
-          href: ../retail/prevent-discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Tender-based discounts
-          href: ../retail/tender_based_discounts.md?toc=/dynamics365/commerce/toc.json
-        - name: Shipping discount overview
-          href: ../retail/retail-shipping-discount.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up coupons for retail sales
-          href: ../retail/retail-coupons.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail price reports
-          href: ../retail/price-report.md?toc=/dynamics365/commerce/toc.json
-      - name: Loyalty
-        items:
-        - name: Loyalty overview
-          href: ../retail/set-up-customer-loyalty-program.md?toc=/dynamics365/commerce/toc.json
-        - name: Clienteling overview
-          href: ../retail/clienteling-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Define continuity schedules
+          href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
       - name: Payments
         items:
-        - name: Payment methods
+        - name: Payment methods 
           href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
-        - name: Payment methods in call centers
+        - name: Payment methods in call centers 
           href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
         - name: Credit card setup, authorization, and capture
           href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
@@ -630,148 +854,114 @@
           href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
         - name: Configure credit card processing
           href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
-        - name: Dynamics 365 Payment Connector for Adyen
+        - name: Adyen payment connector
           href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
         - name: Saving online payment instruments with the Adyen connector
-          href: ../retail/dev-itpro/adyen-connector-listPI.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up pay invoice scenarios
+          href: ../retail/dev-itpro/adyen-connector-listpi.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up pay invoice scenarios 
           href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
-        - name: Duplicate payments prevention
+        - name: Duplicate payments prevention 
           href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-        - name: Omni-channel payments overview
+        - name: Omni-channel payments overview 
           href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Payments FAQ
+        - name: Payments FAQ 
           href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json
-      - name: Advanced auto charges
+      - name: Advanced auto charges 
         items:
-        - name: Configure and use advanced auto charges
+        - name: Configure and use advanced auto charges 
           href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
         - name: Prorate header charges to matching sales lines
           href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
-      - name: Sales tax
+      - name: Sales Tax 
         items:
-        - name: Sales tax overview
+        - name: Sales tax overview 
           href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
         - name: Sales tax calculation methods in the Origin field
           href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
-        - name: Sales tax assignment and overrides
+        - name: Sales tax assignment and overrides 
           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
-        - name: Whole amount and Interval calculation options for sales tax codes
-          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json    
-      - name: Purchase orders
-        items:
-        - name: Purchase order overview
-          href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Create purchase orders
-          href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
-        - name: Product receipt against purchase orders
-          href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-        - name: Approve and confirm purchase orders
-          href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
-        - name: Purchase order approval mobile workspace
-          href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-      - name: Inventory
-        items:
-        - name: Store inventory management
-          href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-        - name: Working with serialized items
-          href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+        - name: Whole amount and interval calculation options for sales tax codes 
+          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
       - name: Statements
         items:
         - name: Retail statements
           href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail transaction consistency checker
+        - name: Transaction consistency checker 
           href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
         - name: Disable rules in retail transaction consistency checker
           href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
         - name: Edit and audit retail store transactions
           href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
-        - name: Create, calculate, and post statements for a retail store
+        - name: Create, calculate and post statements for a retail store
           href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
         - name: Improvements to statement posting functionality
-          href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
-        - name: Trickle feed-based order creation for retail store transactions
+          href: ../retail/statement-posting-eod.md?toc=/dynamics365/commerce/toc.json
+        - name: Trickle feed-based order creation for retail store transactions 
           href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
-        - name: Create, calculate, and post statements for a retail store
+        - name: Create, calculate and post statements for a retail store 
           href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-        - name: Improvements to statement posting functionality
-          href: ../retail/statement-posting-EOD.md?toc=/dynamics365/commerce/toc.json
+        - name: Improvements to statement posting functionality 
+          href: ../retail/statement-posting-eod.md?toc=/dynamics365/commerce/toc.json
         - name: Improved handling of batch tracked items
           href: ../retail/batch.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure Retail parameters that affect retail statements
+        - name: Configure Retail parameters that affect statements 
           href: ../retail/tasks/parameter-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure payment method settings that affect retail statements
+        - name: Configure payment method settings that affect retail statements 
           href: ../retail/tasks/payment-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and run a job to calculate statements
+        - name: Configure and run a job to calculate statements 
           href: ../retail/tasks/run-job-calculate-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and run a job to post statements
+        - name: Configure and run a job to post statements 
           href: ../retail/tasks/run-job-post-statements.md?toc=/dynamics365/commerce/toc.json
         - name: Configure store settings that affect retail statements
           href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-      - name: Distributed order management (DOM)
+        - name: Posting of online sales and payments 
+          href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
+      - name: Data Syncing 
         items:
-        - name: DOM overview
-          href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
-        - name: Cost configuration
-          href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
-      - name: Order fulfillment and processing
-        items:
-        - name: Store order fulfillment
-          href: ../retail/Order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up order fulfillment for stores
-          href: ../retail/Order-fulfillment-POS-setup.md?toc=/dynamics365/commerce/toc.json
-        - name: Show order notifications in the POS
-          href: ../retail/Notifications-POS.md?toc=/dynamics365/commerce/toc.json
-      - name: Returns
-        items:
-        - name: Linked refunds
-          href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
-        - name: Sell and return products not included in a store's assortment
-          href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and process an exchange on a return order
-          href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
-        - name: Restrict payment methods for returns without a receipt
-          href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
-        - name: Return items across multiple customer orders and invoices
-          href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json
-    - name: Ratings and reviews
+        - name: How to ensure new products show up in store 
+          href: TBD.md
+    - name: Manage surround apps and services 
       items:
-      - name: Ratings and reviews overview
-        href: ratings-reviews-overview.md
-      - name: Opt in to use ratings and reviews 
-        href: opt-in-ratings-reviews.md 
-      - name: Manage ratings and reviews
-        href: manage-reviews.md
-      - name: Configure ratings and reviews
-        href: configure-ratings-reviews.md
-      - name: Sync product ratings in Dynamics 365 Retail
-        href: sync-product-ratings.md
-    - name: Product recommendations
-      items:
-      - name: Product recommendations overview
-        href: product-recommendations.md
-      - name: Add product recommendations lists to e-Commerce pages
-        href: add-reco-list-to-page.md
-      - name: Enable product recommendations
-        href: enable-product-recommendations.md
-      - name: Create curated product recommendation lists
-        href: create-editorial-recommendation-lists.md
-      - name: Manage AI-ML-based product recommendation results
-        href: modify-product-recommendation-results.md
-      - name: Get product recommendations using demo data
-        href: product-recommendations-demo-data.md
-      - name: Product recommendations FAQ
-        href: faq-recommendations.md
-      - name: POS experiences
-        items: 
-        - name: Product recommendations on POS 
-          href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
-        - name: Add a recommendations control on POS devices
-          href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+      - name: Ratings and reviews 
+        items:
+        - name: Ratings and reviews overview
+          href:	ratings-reviews-overview.md	
+        - name: Opt in to use ratings and reviews		
+          href:	opt-in-ratings-reviews.md
+        - name:	Manage ratings and reviews	
+          href:	manage-reviews.md
+        - name:	Configure ratings and reviews	
+          href:	configure-ratings-reviews.md
+        - name:	Sync product ratings in Dynamics 365 Retail	
+          href:	sync-product-ratings.md
+      - name: Product recommendations 
+        items:
+        - name:	Product recommendations overview	
+          href:	product-recommendations.md	
+        - name:	Add product recommendation lists to e-Commerce pages	
+          href:	add-reco-list-to-page.md
+        - name:	Enable product recommendations
+          href:	enable-product-recommendations.md
+        - name: Create curated product recommendation lists		
+          href:	create-editorial-recommendation-lists.md
+        - name:	Manage AI-ML-based product recommendation results	
+          href: modify-product-recommendation-results.md
+        - name:	Get product recommendations using demo data	
+          href:	product-recommendations-demo-data.md
+        - name:	Product recommendations FAQ
+          href: faq-recommendations.md
+        - name: POS experiences
+          items:
+          - name: Product recommendations on POS
+            href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
+          - name: Add a recommendations control to the transaction screen on POS devices
+            href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+      - name: Fraud protection 
+        items:
+        - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
+          href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
     - name: Monitoring and analysis
       items:
-      - name: Dynamics 365 Fraud Protection integration for Commerce
-        href: ../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
       - name: Monitor sales and margin performance
         href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
       - name: Analyze sales trends and patterns
@@ -1688,7 +1878,7 @@
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
-    - name: Development
+    - name: Extensibility
       items: 
       - name: Commerce development and extensibility
         href: ../retail/dev-itpro/dev-retail-home-page.md?toc=/dynamics365/commerce/toc.json
