@@ -42,16 +42,17 @@ Web analytics are an essential tool when you want to understand how your custome
 > [!NOTE]
 > The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.
 
-## Create a reusable fragment for your script code
+### Create a reusable page fragment for your script code
 
-After you create a fragment for your script code, it can be reused across all pages on your site.
+A page fragment allows you to reuse inline or external script code across all pages on your site, regardless of the template they use.
 
-1. Go to **Fragments \> New page fragment**.
-2. Select **External Script**, enter a name for the fragment, and then select **OK**.
-3. In the fragment hierarchy, select the **script injector** module child of the fragment that you just created.
-4. In the property pane on the right, add your client-side script, and set other configuration options as you require.
+1. Go to **Page Fragments ** and click **New**.
+2. Select **Default External Script Module** for a link to an external script, or **Default Inline Script Module** to insert inline script into the page.
+3. Enter a name for the fragment, and then select **OK**.
+4. Click on the **Default external script** or **Default inline script** module under the page fragment you created. 
+5. In the property pane on the right, add your client-side script, and set other configuration options as necessary.
 
-## Add the fragment to templates
+### Add the fragment to templates
 
 1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
 2. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
@@ -59,8 +60,22 @@ After you create a fragment for your script code, it can be reused across all pa
 4. Select the fragment that you created for your script code.
 5. Save the template, and check it in.
 
+### Add an external script or inline script directly to a template
+
+If you want to insert an inline or external script directly into a set of pages controlled by a single template, it is not necessary to first create a page fragment. 
+
+1. Go to **Templates**, and open the template for the pages that you want to add your script code to.
+2. In the left pane, expand the template hierarchy to show the **HTML Head** slot.
+3. Select the ellipsis button (**...**) for the **HTML Head** slot, and then select **Add Module**.
+4. Select **Default External Script Module** for a link to an external script, or **Default Inline Script Module** to insert inline script into the page.
+5. In the property pane on the right, add your client-side script, and set other configuration options as necessary.
+
+
+
 > [!NOTE]
 > After you've finished, you must publish the fragment and the master template. 
+
+
 
 ## Additional resources
 
@@ -77,4 +92,3 @@ After you create a fragment for your script code, it can be reused across all pa
 [Add a copyright notice](add-copyright-notice.md)
 
 [Add languages to your site](add-languages-to-site.md)
-
