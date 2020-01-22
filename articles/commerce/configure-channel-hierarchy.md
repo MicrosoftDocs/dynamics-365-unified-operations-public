@@ -85,10 +85,6 @@ The following image shows how to publish channel updates.
 
 ## Additional resources
 
-[Channel hierarchy overview](TBD.md)
-
 [Create a channel navigation hierarchy](create-channel-hierarchy.md)
-
-[Add products to hierarchy](TBD.md)
 
 
