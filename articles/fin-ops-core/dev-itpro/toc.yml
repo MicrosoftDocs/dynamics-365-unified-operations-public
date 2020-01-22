@@ -14,42 +14,42 @@
         items:
         - name: What's new and changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-          - name: Preview features in Platform update 32 (February 2020)
-            href: get-started/whats-new-platform-update-32.md
-          - name: Platform update 31 (January 2020)
-            href: get-started/whats-new-platform-update-31.md
-          - name: Platform update 30 (November 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-30.md
-          - name: Platform update 29 (October 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-29.md
-          - name: Platform update 28 (July 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-28.md 
-          - name: Platform update 27 (June 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-27.md 
-          - name: Platform update 26 (May 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-26.md 
-          - name: Platform update 25 (April 2019)
-            href: ../fin-ops/get-started/whats-new-platform-25.md 
-          - name: Platform update 24 (March 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-24.md
-          - name: Platform update 23 (January 2019)
-            href: ../fin-ops/get-started/whats-new-platform-update-23.md
-          - name: Platform update 22 (December 2018)
-            href: ../fin-ops/get-started/whats-new-platform-update-22.md
-          - name: Platform update 21 (November 2018)
-            href: ../fin-ops/get-started/whats-new-platform-update-21.md
-          - name: Platform update 20 (September 2018)
-            href: ../fin-ops/get-started/whats-new-platform-update-20.md
-          - name: Platform update 15 (March 2018)
-            href: ../fin-ops/get-started/whats-new-platform-update-15.md 
-        - name: Removed or deprecated features
-          href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-        - name: AX 2012 features that were postponed
-          href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-        - name: Features not implemented in on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-        - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-          href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+        - name: Preview features in Platform update 32 (February 2020)
+          href: get-started/whats-new-platform-update-32.md
+        - name: Platform update 31 (January 2020)
+          href: get-started/whats-new-platform-update-31.md
+        - name: Platform update 30 (November 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-30.md
+        - name: Platform update 29 (October 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-29.md
+        - name: Platform update 28 (July 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-28.md 
+        - name: Platform update 27 (June 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-27.md 
+        - name: Platform update 26 (May 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-26.md 
+        - name: Platform update 25 (April 2019)
+          href: ../fin-ops/get-started/whats-new-platform-25.md 
+        - name: Platform update 24 (March 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-24.md
+        - name: Platform update 23 (January 2019)
+          href: ../fin-ops/get-started/whats-new-platform-update-23.md
+        - name: Platform update 22 (December 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-22.md
+        - name: Platform update 21 (November 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-21.md
+        - name: Platform update 20 (September 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-20.md
+        - name: Platform update 15 (March 2018)
+          href: ../fin-ops/get-started/whats-new-platform-update-15.md 
+      - name: Removed or deprecated features
+        href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+      - name: AX 2012 features that were postponed
+        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+      - name: Features not implemented in on-premises deployments
+        href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+      - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
+        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
     - name: Business events
       items:
       - name: Business events overview
