@@ -49,13 +49,13 @@ The main section of the home page can highlight products, categories, or promoti
 
 - **Hero** – Typically, the first item at the top of the main section shows one or more "hero" images that highlight new products and promotions in the store. If there are multiple hero images, they are hosted in a carousel module so that users can browse them.
 
-    The following illustration shows an example of a home page where the first item in the main section is a hero layout of a content block module that is named **New Arrival**.
+    The following illustration shows an example of a home page where the first item in the main section is a **hero layout of a content block module** that is named **New Arrival**.
 
     ![Example of a hero module](./media/Hero.PNG)
 
-- **Feature** – A feature  is used to market products or promotions by using a combination of images and text. Feature modules can be used independently, or they can be hosted in a carousel module.
+- **Feature** – A feature  is used to market products or promotions by using a combination of images and text. Feature can be used independently, or they can be hosted in a carousel module.
 
-    The following illustration shows an example of feature layout of a content block module on a home page.
+    The following illustration shows an example of **feature layout of a content block module** on a home page.
 
     ![Examples of feature modules](./media/Feature.PNG)
 
