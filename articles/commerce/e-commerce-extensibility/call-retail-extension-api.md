@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Call Retail Server Extension APIs
+title: Call Retail Server extension APIs
 description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension API from data actions or directly from module code.
 author: samjarawan
 manager: annbe
