@@ -2,10 +2,10 @@
 # required metadata
 
 title: Module React component file
-description: This topic covers the module react component file in Microsoft Dynamics 365 Commerce. 
+description: This topic covers the module React component file in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
