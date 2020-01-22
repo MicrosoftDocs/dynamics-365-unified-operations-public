@@ -3,7 +3,7 @@
 
 title: Models and packages
 description: This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 05/30/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
