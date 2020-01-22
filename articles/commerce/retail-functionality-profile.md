@@ -44,7 +44,7 @@ The retail functionality profile provides various settings used for online chann
 To create a retail functionality profile, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Channel setup \> POS profiles \> Functionality profiles**.
-1. From the action pane, select **New**.
+1. On the action pane, select **New**.
 1. In the **Profile** field, enter an ID for the profile ("FN006" in the example image below).
 1. In the **Description** field, enter a value ("Adventure Works Profile" in the example image below).
 1. In the **General** section, select a country for the **ISO** locale.
