@@ -5,7 +5,7 @@ title: Test modules by using module mocks
 description: This topic describes how to test modules by using module mocks. 
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -70,7 +70,7 @@ The following example shows a module mock data file that is used to mock the **c
 } 
 ```
 
-Below example shows how to mock the data for a core data action that returns a SimpleProduct type.
+The following example shows how to mock the data for a core data action that returns a SimpleProduct type.
 
 ```
 [
