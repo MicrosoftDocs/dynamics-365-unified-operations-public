@@ -87,21 +87,21 @@ Example file name and path for the "spring-theme" theme: **...\src\themes\spring
 
 Themes provide the ability to customize module view extensions. This is generally used to change the default layout of a module for the selected theme, and is supported for both starter kit and custom modules. For example, you may want to add a new button to a starter kit module to support additional features. By creating a view extension, you can avoid creating a full copy of the starter kit module using the clone CLI command. In some cases you may want to extend the module definition as well to add additional config properties, slots, or resources. For more information on creating definition extensions, see [Create a module view extension](#create-a-module-view-extension) below.
 
-View extensions are stored under the **...\src\themes\THEME\_NAME\views** directory and follow a similar naming pattern as used for module views **MODULE\_NAME.view.tsx** (example **product-feature.view.tsx**).  View extensions can be written exactly like a module view used for a module, the react component will just call the extension instead of the default one if it exists in a selected theme.
+View extensions are stored under the **...\src\themes\THEME_NAME\views** directory and follow a similar naming pattern as used for module views **MODULE_NAME.view.tsx** (example **product-feature.view.tsx**).  View extensions can be written exactly like a module view used for a module, the react component will just call the extension instead of the default one if it exists in a selected theme.
 
-In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy/paste additional code into it.  To see starter kit module view source code, open up the **...\node_modules\@msdyn365-commerce-modules** directory and look for the module you are interested in.  You may need to fix up file path references for relative path imports as necessary.
+In general, you may want to examine the existing view file for one of the starter kit modules before you create a new view on it, and you may even choose to copy and paste additional code into it. To see starter kit module view source code, open up the **...\node_modules\@msdyn365-commerce-modules** directory and look for the module you are interested in. You may need to fix up file path references for relative path imports as necessary.
 
 ### Create a module view extension
 
-To create a new module view extension in Commerce, the online Software Development Kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME\_NAME** with the name that you want to add the view extension to and replace **MODULE\_NAME** with the name of the module you are extending.
+To create a new module view extension in Commerce, the online software development kit (SDK) provides the **add-view-extension** command-line interface (CLI) command. When you run the command as in the following example, you replace **THEME_NAME** with the name that you want to add the view extension to and replace **MODULE_NAME** with the name of the module you are extending.
 
 ```yarn msdyn365 add-view-extension THEME_NAME MODULE_NAME```
 
-The below example will add a new “product-feature.view.ts” file under the spring-theme’s view directory.
+The following example adds a new “product-feature.view.ts” file under the spring-theme’s view directory.
 
 ```yarn msdyn365 add-view-extension spring-theme product-feature```
 
-The below shows a sample view file extension created with the above command.
+The following example shows a sample view file extension created with the above command.
 
 ```typescript
 /*!
@@ -122,12 +122,14 @@ export default (props: IProductFeatureViewProps) => {
 ```
 
 ## Theme definition extensions
+
 When using a module view extension, you may have scenarios where you need to extend the config, slots or resources section of a module definition and access these from the module view extension. You can add new configs, slots and resources but you cannot modify existing ones, however using **disableConfigProperties** you can disable inheritence of some configs.
 
-Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE\_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  
+Definition extensions are stored under the **definition-extensions** folder and follow a naming pattern of **MODULE_NAME.definition.ext.json**, where MODULE_NAME is the name of the module you are extending.  
 
 ### Create a module definition extension
-To create a new definition extension, create a new file under the **/src/themes/THEME\_NAME\definition-extensions** folder that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
+
+To create a new definition extension, create a new file under the **/src/themes/THEME_NAME\definition-extensions** folder that matches the module you are extending.  Example **/src/themes/spring-theme/definition-extensions/product-feature.definition.ext.json**.
 
 Below shows a sample theme definition extension file with several added configs, slots and resources.  Notice the **$type** must be set to "definitionExtension".  In the definition file you can declare new properties under the **config**, **slots** or **resources** nodes.
 
