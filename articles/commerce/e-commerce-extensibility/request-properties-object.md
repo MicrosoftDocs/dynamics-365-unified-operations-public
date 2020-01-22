@@ -5,7 +5,7 @@ title: Request properties object
 description: This topic covers the request properties object in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -153,17 +153,18 @@ interface IRequestContext {
 }
 ```
 
-## Testing modules with authenticated signed in state
-Some modules may require the state to be signed in.  To test these a test page mock can be created with user auth information.
-To get started, load the e-Commerce web page you are working on and sign in or create a new account.
+## Test a module with authenticated signed-in state
 
-Open up the web browser debugging tools. Example when using Chrome enable the developer tools with the F12 key.  User info is available in  Global JS variable `___initialData___.requestContext.user`
+Some modules may require the state to be "signed-in." To test these modules, a test page mock can be created with user authentication information.
 
-* Type `___initialData___.requestContext.user` in console to get the user info
+To get started, follow these steps.
 
-* Next, add module to test into a page mock
-* Inside the renderingContext section in the page mock add the below “userContext” section 
-* Update user information taken from the web browser debugging tools from above
+1. Load the e-Commerce web page you are working on and sign in or create a new account.
+1. Open up the web browser debugging tools. For example, when using Google Chrome enable the developer tools with the F12 key. 
+1. Type `___initialData___.requestContext.user` into console to get the user info. (User info is available in the Global JS variable `___initialData___.requestContext.user`.)
+1. Add the module to be tested into a page mock.
+1. Inside the **renderingContext** section of the page mock, add the **userContext** section below. 
+1. Update user information taken from the web browser debugging tools.
 
 ```
 "userContext": {
@@ -183,7 +184,7 @@ Open up the web browser debugging tools. Example when using Chrome enable the de
 },
 ```
 
-The user information can now be obtained in the React component from within the “this.props.context.request.user” object.
+The user information can now be obtained in the React component from within the **this.props.context.request.user** object.
 
 Example page mock:
 ```
