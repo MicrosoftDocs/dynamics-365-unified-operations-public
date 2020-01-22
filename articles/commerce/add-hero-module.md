@@ -54,8 +54,10 @@ Content block can support various layouts and styles based on theme. For instanc
 In addtion, the Theme can expose can different properties for each layout. A Theme developer can build more layouts with more styles using the content block module.
 
 E.g. of content block with Hero layout
+![Example of a hero module](./media/Hero.PNG)
 
 E.g. of content block with Feature layout
+  ![Examples of feature modules](./media/Feature.PNG)
 
 E.g. of content block with Tile layout
 
