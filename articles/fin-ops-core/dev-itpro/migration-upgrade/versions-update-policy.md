@@ -5,7 +5,7 @@ title: Software lifecycle policy and cloud releases
 description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
 author: RyanCCarlson2 
 manager: AnnBe
-ms.date: 12/10/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
