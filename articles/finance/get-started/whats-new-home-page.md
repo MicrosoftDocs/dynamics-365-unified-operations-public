@@ -39,7 +39,7 @@ To see what's new or changed in each release of Dynamics 365 Finance, see the fo
 |---------|--------------|--------------|-------------|
 | 10.0.8  |             | February 2020 | [What's new and changed in Dynamics 365 Finance version 10.0.8](whats-new-changed-10-0-8.md) |
 | 10.0.7  | 7.0.5457    | January 2020 | [What's new and changed in Dynamics 365 Finance version 10.0.7](whats-new-changed-10-0-7.md) |
-| 10.0.6 |   10.0.234   | November 2019  | [What's new or changed in Dynamics 365 Finance 10.0.6}(whats-new-finance-10-0-6.md)
+| 10.0.6 |   10.0.234   | November 2019  | [What's new or changed in Dynamics 365 Finance 10.0.6](whats-new-finance-10-0-6.md) |
 
 
 ## Releases in 2019 or earlier
