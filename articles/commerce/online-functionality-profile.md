@@ -47,7 +47,7 @@ The following procedure explains how to create an online functionality profile f
 1. On the action pane, select **New**.
 1. In the **Profile** field, enter an ID for the profile.
 1. In the **Description** field, enter a value ("Adventure Works Profile" in the example image below).
-1. In the **Functions** section, modify the **CART**, **RETAIL CUSTOMERS** or **CHECKOUT** settings as needed.
+1. In the **Functions** section, modify the **CART**, **RETAIL CUSTOMERS**, or **CHECKOUT** settings as needed.
 1. On the action pane, select **Save**.
 
 The following image shows an example online functionality profile.
