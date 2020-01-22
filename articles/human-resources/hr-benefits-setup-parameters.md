@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set Benefits management parameters
-description: 
+description: Configure parameters for Benefits management in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/01/2020
@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you need to configure Benefits management parameters. These parameters set default values, reason codes, and other options.
 
+## Configure general parameters
+
 1. In the **Benefits management** workspace, under **Setup**, select **Parameters**.
 
 2. In the **General** tab, specify values for the following fields:
@@ -54,13 +56,19 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
    | **Life event notifications enabled** | Allows you to receive notifications when life event changes occur. |
    | **Hide legacy benefit forms** | Allows you to hide legacy benefit forms. |
 
-3. In the **Employee self service** tab, specify values for the following fields:
+3. Select **Save**.
+
+## Configure Employee self service parameters
+
+1. In the **Benefits management** workspace, under **Setup**, select **Parameters**.
+
+2. In the **Employee self service** tab, specify values for the following fields:
 
    | Field | Description |
    | --- | --- |
    | **Benefit verification** | The verification text to use during self-service benefits checkout. |
    | **Auto select designees** | Specifies whether to automatically select dependents and beneficiaries based on their eligibility for plan options. |
 
-4. Select **Save**.
+3. Select **Save**.
 
 ## See also
