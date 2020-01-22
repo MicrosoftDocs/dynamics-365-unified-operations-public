@@ -104,5 +104,10 @@ You create a named batch group, BG1, and configure it to run on AOS2 and AOS3. T
 
 You can configure AOS2 and AOS3 to process tasks from other batch groups. These batch groups include the default batch group.
 
+### Batch excessive tasks configuration (Batch throttling)
 
+Batch has a guard against excessive tasks, it works by limiting the average number of executions of a certain batchable class per minute. The default upper-bound is 60 tasks per minute, after that batch framework will
+suspend the execution of classes of the offending class for another minute, to prevent that specific batchable class from monopolizing the system resources.
 
+**Note:** The batch framework is able to detect the case when there are no non-throttled tasks to be scheduled and executed at any given time, and then it will try to fetch batch tasks from the throttled classes 
+queue to prevent its resources from sitting idle.
