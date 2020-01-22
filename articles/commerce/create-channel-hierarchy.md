@@ -54,7 +54,7 @@ To create a channel navigation hierarchy, follow these steps.
 1. In the **Friendly name** box, enter a friendly name.
 1. On the action pane, select **Save**.
 
-The below image shows a sample root node.
+The following image shows a example root node.
 
 ![Sample root node](media/create-channel-hierarchy-1.png)
 
