@@ -32,7 +32,35 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Set Benefits management parameters
 
+Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you need to configure Benefits management parameters. These parameters set default values, reason codes, and other options.
 
+1. In the **Benefits management** workspace, under **Setup**, select **Parameters**.
 
+2. In the **General** tab, specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+   | **Country/region** | The **Country/region** field is used when entering records for state eligibility rule configurations. |
+   | **Enrollment reason code** | Select a default reason code to use when employee plans are created during open enrollment processing. |
+   | **Cancellation reason code** | The reason code to use when an employee benefit plan is canceled. It displays in a dialog during the cancellation process. Users can change it the **Cancellation reason code** if necessary. |
+   | **Reopen reason code** | The reason code to use when an employee benefit plan is reopened. It displays in a dialog during the cancellation process. Users can change the **Reopen reason code** if necessary. | 
+   | **Life event reason code** | The reason code to use when a life event occurs. |
+   | **Rate change reason code** | The reason code to use when canceling and reopening an employee benefit plan during the rate change update process. It indicates which records were changed by the rate change update process. |
+   | **New hire eligible** | Specifies whether new hires are eligible. |
+   | **New hire enrollment period** | The period of time the new hire enrollment is allowed. | 
+   | **Annual salary enhancement** | Specifies whether to automatically calculate the **Annual benefit salary** amount in **Employment Benefit Details**. It's based on the employee’s **Fixed compensation pay rate**, **Average hours**, and **Payment frequency**.</br>**Average hours** x **Fixed pay rate** x **Payment frequency** (# of pay periods) = **Annual benefit salary**</br>If any of the values in the **Average hours**, **Fixed compensation pay rate**, or **Payment frequency** fields change, the system automatically recalculates the employee’s **Annual benefit salary** amount based on the changed values. The system creates a **Date effective** record to identify the exact date and time the change occurred. You can manually edit the **Annual benefit salary** amount if necessary. |
+   | **Life events enabled** | Enables life events. |
+   | **Real-time life events enabled** | Allows you to see information logs immediately when life event changes occur. |
+   | **Life event notifications enabled** | Allows you to receive notifications when life event changes occur. |
+   | **Hide legacy benefit forms** | Allows you to hide legacy benefit forms. |
+
+3. In the **Employee self service** tab, specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+   | **Benefit verification** | The verification text to use during self-service benefits checkout. |
+   | **Auto select designees** | Specifies whether to automatically select dependents and beneficiaries based on their eligibility for plan options. |
+
+4. Select **Save**.
 
 ## See also
