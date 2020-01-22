@@ -2789,8 +2789,12 @@
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
           - name: Upgrade your format by adopting a new base version of that format
             href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/finance/toc.json  
-        - name: Formula designer in Electronic reporting
-          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json
+        - name: Formula designers in Electronic reporting
+          items:
+          - name: Formula designer
+            href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/finance/toc.json  
+          - name: Advanced formula designer
+            href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json  
         - name: Formula language and functions
           items:
           - name: Formula language
