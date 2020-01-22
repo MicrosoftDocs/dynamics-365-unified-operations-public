@@ -123,5 +123,4 @@ While testing preview features or trying new capabilities, you might find items 
 - [What's new or changed in Dynamics 365 Human Resource](https://docs.microsoft.com/dynamics365/talent/whats-new)
 - [Software lifecycle policy](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
 ## See also
