@@ -53,6 +53,12 @@ Content block can support various layouts and styles based on theme. For instanc
 
 In addtion, the Theme can expose can different properties for each layout. A Theme developer can build more layouts with more styles using the content block module.
 
+E.g. of content block with Hero layout
+
+E.g. of content block with Feature layout
+
+E.g. of content block with Tile layout
+
 
 ## Content block module properties
 
@@ -62,9 +68,11 @@ In addtion, the Theme can expose can different properties for each layout. A The
 | Heading        | Heading text and heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | Every hero module can have a heading. By default, the **H2** heading tag is used for the heading. However, the tag can be changed to meet accessibility requirements. |
 | Paragraph      | Paragraph text | Hero modules support paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. Some of these capabilities can be overridden by the page theme that is applied to the module. |
 | Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Hero modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
-| Text placement | **Top Left**, **Top Right**, **Top Center**, **Bottom Left**, **Bottom Right**, **Bottom Center**, **Center Left**, **Center Right**, or **Center Center** | This property defines the position of the image relative to the text. For example, if **Right** is selected, the image appears to the right of the text. |
-| Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. |
-| Gradient       | **True** or **False** | A gradient can be applied to the image to meet color contrast ratios for accessibility purposes. |
+
+## Properties exposed by Fabrikam theme for content block
+| Text placement | **Left**, **Right**, **Center** | This property defines the position of the text on the image. It only applies to Hero layout. |
+| Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. It only applies to Hero layout.|
+| Image placement       | **Left**,  **Right** |This applies only to Feature layout, it allows image to be left or right of the text. |
 
 ## Add a content block module to a new page
 
@@ -76,13 +84,14 @@ To add a hero module to a new page and set the required properties, follow these
 1. Use the hero template that you just created to create a page that is named **content block page**.
 1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, under **Select Modules**, select the hero module, and then select **OK**.
-1. In the outline tree on the left, select the hero module.
+1. In the outline tree on the left, select the content block module.
 1. In the properties pane on the right, select **Add an image**. Then either select an existing image or upload a new image.
 1. Select **Heading**.
 1. In the **Heading** dialog box, add the heading text, select the heading level, and then select **OK**.
 1. Under **Rich Text**, add text as you require.
-1. Select **Add Action Link**.
-1. In the **Action Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
+1. Select **Add Link**.
+1. In the **Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
+1. Choose a layout **Hero**
 1. Save the page, and preview your changes.
 1. Check in the page, and publish it.
 
@@ -90,14 +99,10 @@ To add a hero module to a new page and set the required properties, follow these
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Alert module](add-alert.md)
+[Promo banner module](add-alert.md)
 
 [Carousel module](add-carousel.md)
 
-[Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
-
-[Feature module](add-feature-module.md)
+[Text block module](add-content-rich-block.md)
 
 [Video player module](add-video-player.md)
