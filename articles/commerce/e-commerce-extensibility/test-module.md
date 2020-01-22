@@ -5,7 +5,7 @@ title: Preview and debug a module
 description: This topic describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -51,7 +51,7 @@ To preview a module in a local web browser, follow these steps.
 
 1. In a web browser, open the following URL to view the module: `https://localhost:4000/modules?type=product-feature`. Notice the module name in the **type=MODULE\_NAME** query string parameter. This parameter is shorthand for **type=:MODULE\_NAME:MOCK\_FILE\_NAME**, where the default mock file that matches the name of the module is loaded. Therefore, the preceding URL is equivalent to `https://localhost:4000/modules?type=product-feature:product-feature`.
 
-By adding **&debug=true**, you can get more verbose debug information in the Yarn output window and will display error details in the browser if they occur.
+By adding **&debug=true**, you can get more verbose debug information in the Yarn output window and the browser will display any error details if errors occur.
 
 `https://localhost:4000/modules?type=product-feature&debug=true`
 
