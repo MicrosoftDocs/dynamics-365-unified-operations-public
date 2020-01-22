@@ -466,6 +466,30 @@
           href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
         - name: Define continuity schedules
           href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
+      - name: Payments
+        items:
+        - name: Payment methods 
+          href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
+        - name: Payment methods in call centers 
+          href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
+        - name: Credit card setup, authorization, and capture
+          href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure cash denominations for the POS
+          href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure credit card processing
+          href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
+        - name: Adyen payment connector
+          href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
+        - name: Saving online payment instruments with the Adyen connector
+          href: ../retail/dev-itpro/adyen-connector-listpi.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up pay invoice scenarios 
+          href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
+        - name: Duplicate payments prevention 
+          href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+        - name: Omni-channel payments overview 
+          href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
+        - name: Payments FAQ 
+          href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json     
     - name: Merchandizing your products and services  
       items:
       - name: Merchandizing overview 	  
@@ -842,30 +866,6 @@
           items:
           - name: Build custom response pages for 4xx/5xx status code errors
             href: build-pages-400-500-errors.md
-      - name: Payments
-        items:
-        - name: Payment methods 
-          href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
-        - name: Payment methods in call centers 
-          href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Credit card setup, authorization, and capture
-          href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure cash denominations for the POS
-          href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure credit card processing
-          href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
-        - name: Adyen payment connector
-          href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
-        - name: Saving online payment instruments with the Adyen connector
-          href: ../retail/dev-itpro/adyen-connector-listpi.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up pay invoice scenarios 
-          href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
-        - name: Duplicate payments prevention 
-          href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-        - name: Omni-channel payments overview 
-          href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Payments FAQ 
-          href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json
       - name: Sales Tax 
         items:
         - name: Sales tax overview 
