@@ -48,6 +48,12 @@ A content block module is driven by data from the content management system (CMS
 - A content block module can be used on a product details page to showcase product information.
 - Multiple content block modules can be put inside a carousel module to highlight multiple products or promotions.
 
+## Theme on content block
+Content block can support various layouts and styles based on theme. For instance the Fabrikam theme supports three layout variations of content block module - Hero, Feature, Tile. Hero layout shows image on the background with text overlay. Feature layout shows image and text side by side. Tile layout allows multiple content blocks in a tile format.
+
+In addtion, the Theme can expose can different properties for each layout. A Theme developer can build more layouts with more styles using the content block module.
+
+
 ## Content block module properties
 
 | Property name  | Values | Description |
