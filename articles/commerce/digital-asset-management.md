@@ -46,19 +46,19 @@ Digital assets are channel-specific with the exception of omni-channel assets wh
 # How to upload an image
 To upload an image, first navigate to the "Assets"-tab. Assets for selected site, channel and locale are shown in the middle pane.
 
-![Screenshot](./media/dam-screenshot.png)
+![Assets tab](./media/dam-screenshot1.png)
 
 In order to upload a new image, click "Upload" from the action bar, then click "Upload Assets". File dialog will open which allows you to select one or more image assets. Supported image formats are JPEG, PNG and GIF.
 
-[screenshot2]
+![Upload](./media/dam-screenshot2.png)
 
 After selecting the images you wish to upload, click "Open" (title might vary per browser). The tool will perform image path validation and you will be shown the "Upload Asset"- or "Upload Assets"-dialog depending on the number of images selected.
 
 Single image:
-[screenshot3]
+![Single image](./media/dam-screenshot3.png)
 
 Multiple images:
-[screenshot4]
+![Multiple images](./media/dam-screenshot4.png)
 
 This dialog allows entering the image meta data, image category information and whether the assets should be published automatically after upload. If more than one image is being uploaded, only category, keywords and publishing information can be entered.
 
@@ -109,7 +109,7 @@ If single video is being uploaded, you will be able to specify the following inf
 * *Thumbnail* - Specify the thumbnail for the video. If not specified, it will be generated automatically
 * *Descriptive Audio* - Manually specify the descriptive audio track
 
-[screenshot5]
+![Video](./media/dam-screenshot4.png)
 
 Note: You should always upload the version of the video with highest bitrate and resolution. The video will be converted automatically to be suitable for different viewports/breakpoints.
 
@@ -147,7 +147,7 @@ In order to manually set a focal point or define custom cropping for specific mo
 1. Click "Check In"
 1. Click "Publish"
 
-[screenshot6]
+![Focal point](./media/dam-screenshot6.png)
 
 ### Custom cropping
 1. Make sure you have the "Assets"-tab selected
@@ -161,6 +161,6 @@ In order to manually set a focal point or define custom cropping for specific mo
 1. Click "Check In"
 1. Click "Publish"
 
-[screenshot7]
+![Custom crop](./media/dam-screenshot7.png)
 
 Manually set focal point or custom cropping will be reflected on the image almost immediately.
