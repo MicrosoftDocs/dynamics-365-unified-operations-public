@@ -5,7 +5,7 @@ title: Set up a development environment
 description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -65,7 +65,7 @@ Go to the [Yarn site](https://yarnpkg.com), and download and install the latest 
 
 The Online SDK provides everything that you require to extend your online channel. It even lets you create new modules, data actions, and themes.
 
-The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository](https://github.com/microsoft/Msdyn365.Commerce.Online). Either download or clone the repo to a local folder on your development machine. The repo can be cloned using the following command:
+The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development machine. The repo can be cloned using the following command:
 
 ```git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git```
 
@@ -102,7 +102,7 @@ To run your Node app, follow these steps.
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
-This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (**4000**, by default but can be changed in the .env file).
+This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number ("4000" by default, but this can be changed in the .env file).
 
 2. To test that your Node app is running correctly, open the following URLs in a web browser:
 
@@ -123,7 +123,7 @@ This command can take up to a minute to run. It adds a new module under \\src\\m
 
 ## Clone an existing starter kit module
 
-Several of the available starter kit modules can be cloned, such as the carousel, content-block or header modules.  Cloned modules are copies of the module with new names, they will not get regular service updates as the starter kit modules do.  You may wish to extend the views on a module to make layout changes instead of cloning.
+Several of the available starter kit modules can be cloned, such as the carousel, content-block, or header modules. Cloned modules are copies of the module with new names, and will not get regular service updates as the starter kit modules do. Instead of cloning a module to make layout changes, you may wish to extend the views on the module.
 
 For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
