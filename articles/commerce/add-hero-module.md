@@ -59,9 +59,6 @@ E.g. of content block with Hero layout
 E.g. of content block with Feature layout
   ![Examples of feature modules](./media/Feature.PNG)
 
-E.g. of content block with Tile layout
-
-
 ## Content block module properties
 
 | Property name  | Values | Description |
