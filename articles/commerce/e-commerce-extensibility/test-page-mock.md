@@ -5,7 +5,7 @@ title: Test modules by using page mocks
 description: This topic describes how to test modules by using page mocks.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -115,7 +115,6 @@ The following example shows a page mock that adds two instances of the same modu
 Every page defines a root (**core-root** in the example above) that controls the page HTMl structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
 
 The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-page** page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
-
 
 The example above can be accessed with the following URL: `https://localhost:4000/page?mock=campaign-page`.
 
