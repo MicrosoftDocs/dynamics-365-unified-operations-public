@@ -40,19 +40,19 @@ This topic describes preview features that are new or changed for Microsoft Dyna
 - **General availability (self-update):** January 2020
 - **Auto-update:** February 2020
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/en-us/dynamics365/release-plans/) site. 
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. 
 
-- [Financial report retention policies](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
+- [Financial report retention policies](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/financial-report-retention-policies)
 
-- [Retained earnings calculation enhancements for financial reporting when using currency translation](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
+- [Retained earnings calculation enhancements for financial reporting when using currency translation](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance/retained-earnings-calculation-enhancements-financial-reporting-when-using-currency-translation)
 
-- [Purchase agreement enhancements](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
+- [Purchase agreement enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements) 
 
 ## Additional resources
 
 ### Platform update 32
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 32. To learn more about Platform update xx, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 
 ### Bug fixes 
@@ -63,7 +63,7 @@ For information about the bug fixes included in each of the updates that are par
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
 
