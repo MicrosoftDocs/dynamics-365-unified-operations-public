@@ -133,6 +133,8 @@
       href: hr-developer-power-apps.md
     - name: Track changes in recruiting data
       href: hr-developer-track-changes.md
+    - name: Human Resources entities in Common Data Service
+      href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
     - name: Entity API reference
@@ -169,6 +171,8 @@
           items: 
           - name: Set Benefits management parameters
             href: hr-benefits-setup-parameters.md
+          - name: Configure eligibility rules and options
+            href: hr-benefits-setup-eligibility-rules.md
           - name: Configure personal contact eligibility options
             href: hr-benefits-setup-contact-eligibility-options.md
           - name: Create coverage options

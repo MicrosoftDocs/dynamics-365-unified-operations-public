@@ -44,108 +44,120 @@ During open enrollment, employees can select benefit plans. If they become ineli
 
 2. In the **Eligibility rules** tab, select **New** to create an eligibility rule. To see plans that are associated with an eligibility rule, select **Attached plans**.
 
-2. Specify values for the following fields:
+3. Specify values for the following fields:
 
    | Field | Description |
    | --- | --- |
-   | Eligibility rule | A unique identifier for the eligibility rule. |
-   | Description | A description of the eligibility rule. |
-   | Valid from date and time | The start date of the eligibility rule. | 
-   | Valid to date and time | The end date of the eligibility rule. |
-   | User worker type | Specifies whether to use the employee’s worker type in the benefit eligibility rule. |
-   | Worker type | The worker type, if the Use worker type check box is selected. |
-   | Use employee status | Specifies whether to use the employee’s employment status in the benefit eligibility rule. |
-   | Status | The employee status, if the Use employee status check box is selected. If the Use employee status check box is not selected, the field isn’t used. |
-   | Use employment category | Specifies whether to use the employee’s Employment category value as part of the benefit eligibility rule. | 
-   | Employment category | The employee’s employment category if the Use employment category check box is selected. |
-   | Use new hire period | Specifies whether to use a new hire’s new hire period value as part of the benefits eligibility rule. |
-   | Enrollment period | The time period that new hire enrollment is allowed. |
-   | User former employment status | Specifies whether the eligibility rule depends on a change in employee status. For example, you can have an eligibility rule for employees who are currently set to ‘Temporary leave of absence’ but have a former employment status of ‘Employed’ within the last 30 days. This field must be used in conjunction with the fields that follow it (Status, From, and To). | 
-   | Status | The former status to use for the eligibility rule. In the preceding example, the value would be ‘Employed’. |
-   | From | A value from the Waiting days form that is used to indicate the effective date of the status change time frame. If the ‘From’ date is set to 0 and the ‘To’ date is set to 365, the system will search for a time lapse of 365 days between statuses. | 
-   | To | A value from the Waiting days form that is used to indicate the expiration date of the status change time frame. If the ‘From’ date is set to 0 and the ‘To’ date is set to 365, the system will search for a time lapse of 365 days between statuses. |
-   | Eligible age | Specifies the age range or ranges that a person must be in to satisfy the eligibility rule. </br>Age is defined by the Birthdate value on the employee’s master record on the Personal information fast tab. |
-   | Eligible department | Specifies the department or departments an employee must be in to satisfy the eligibility rule. </br>The department is attached to the position on the General fast tab of the Position details form. |
-   | Eligible employment type | Specifies the employment type or types an employee must be categorized as to satisfy the eligibility rule. For example, full time or part time. |
-   | Eligible job | Specifies the job or jobs that satisfy the eligibility rule. Jobs are associated with positions, and positions are filled by employees. | 
-   | Eligible job function | Specifies the job function or functions that satisfy an eligibility rule. For example, sales workers or technicians. </br>The job function is assigned on the Job classification fast tab of the Job details form. |
-   | Eligible job type | Specifies the job type or types that satisfy the eligibility rule. For example, clerical or executive. </br>The job type is assigned to a job record on the Job classification fast tab on the Job details form. The job is assigned to a position, which is associated with an employee. |
-   | Eligible legal entity | Specifies the legal entity or legal entities that are valid for the eligibility rule. For example, Contoso Entertainment System USA. </br>Employees are associated to legal entities both on their employment record (on the Employment details fast tab) and on the General fast tab of the Position details form. |
-   | Eligible location | Specifies the employee location that satisfies the eligibility rule. For example, central US. </br>The location (compensation region) is attached to the position record on the General fast tab of the Position details form. |
-   | Eligible office location | Specifies the employee’s office location that satisfies the eligibility rule. For example, New Jersey office. |
-   | Eligible position | Specifies the position or positions that satisfy the eligibility rule. For example, HR Assistant or HR Manager. </br>Positions are associated with employees on the Worker assignment fast tab of the Position details form and on the worker position assignment form. |
-   | Eligible position type | Specifies the position type or types that satisfy the eligibility rule. For example, full-time. |
-   | Eligible state | Specifies the states or provinces that satisfy the eligibility rule. For example, North Dakota USA or British Columbia, Canada. </br>A state or province is assigned to an employee through the Addresses fast tab of the Employee profile form. If the employee has multiple primary addresses, the eligibility rule will check all of them to assess eligibility. |
-   | Eligible terms of employment | Specifies the terms of employment that satisfy the eligibility rule. For example, at will or group contract. |
-   | Eligible union |Specifies the labor union memberships that satisfy the eligibility rule. For example, Forklift Drivers of America. Employees are assigned to labor unions by clicking the Labor Unions link on the Employee profile form. </br>When using a union-based eligibility rule, the worker’s union record must have the end date populated. It can’t be left blank. |
-   | Eligible ZIP/postal code | Specifies the ZIP/postal codes that satisfy the eligibility rule. For example, 58104. </br>A ZIP/postal code assigned to an employee through the Addresses fast tab of the Employee profile form. If the employee has multiple primary addresses, the eligibility rule will check all of them to assess eligibility. |
-   | Eligible user field | Specifies additional eligibility rules based on customerdefined fields. </br>Employees are linked to user fields on the Benefit details fast tab of the Employment form. |
-   | Eligibility type | Specifies the criterion category you selected in the Additional criteria fast tab. |
-   | Eligibility reference | Specifies the values you selected as criteria in the Additional criteria fast tab. |
-   | Description | The description of the criteria you selected in the Additional criteria fast tab. |
+   | **Eligibility rule** | A unique identifier for the eligibility rule. |
+   | **Description** | A description of the eligibility rule. |
+   | **Valid from date and time** | The start date of the eligibility rule. | 
+   | **Valid to date and time** | The end date of the eligibility rule. |
+   | **User employee type** | Specifies whether to use the employee’s employee type in the benefit eligibility rule. |
+   | **Worker type** | The worker type, if the **Use employee type** toggle is set to **Yes**. |
+   | **Use employee status** | Specifies whether to use the employee’s employment status in the benefit eligibility rule. |
+   | **Status** | The employee status, if the **Use employee status** toggle is set to **Yes**. If the **Use employee status** toggle is set to **No**, the field isn’t used. |
+   | **Use employment category** | Specifies whether to use the employee’s **Employment category** value as part of the benefit eligibility rule. | 
+   | **Employment category** | The employee’s employment category if the **Use employment category** toggle is set to **Yes**. |
+   | **Use new hire rule** | Specifies whether to use a new hire’s new hire period value as part of the benefits eligibility rule. |
+   | **Enrollment period** | The time period when new hire enrollment is allowed. |
+   | **User former employment status** | Specifies whether the eligibility rule depends on a change in employee status. For example, you can have an eligibility rule for employees who are currently set to **Temporary leave of absence**, but have a former employment status of **Employed** within the last 30 days. This field is used in conjunction with the fields that follow it. | 
+   | **Status** | The former status to use for the eligibility rule. In the preceding example, the value would be **Employed**. |
+   | **From** | A value from the Waiting days form that is used to indicate the effective date of the status change time frame. If the ‘From’ date is set to 0 and the ‘To’ date is set to 365, the system will search for a time lapse of 365 days between statuses. | 
+   | **To** | Indicates the expiration date of the status change time frame. If you set. From** to 0 and **To** to 365, the system will search for a time lapse of 365 days between statuses. |
 
+4. Under **Additional criteria**, select the following options and add information as necessary:
 
-3. Select **Save**.
+   | Option | Description |
+   | --- | --- |
+   | **Eligible age** | Specifies the age range or ranges required to satisfy the eligibility rule. |
+   | **Eligible department** | Specifies the department or departments an employee must be in to satisfy the eligibility rule. |
+   | **Eligible employment type** | Specifies the employment type or types an employee must be categorized as to satisfy the eligibility rule. For example, full time or part time. |
+   | **Eligible job** | Specifies the job or jobs that satisfy the eligibility rule. Jobs are associated with positions, and positions are filled by employees. | 
+   | **Eligible job function** | Specifies the job function or functions that satisfy an eligibility rule. For example, sales workers or technicians. |
+   | **Eligible job type** | Specifies the job type or types that satisfy the eligibility rule. For example, clerical or executive. |
+   | **Eligible legal entity** | Specifies the legal entity or legal entities that are valid for the eligibility rule. For example, Contoso Entertainment System USA. |
+   | **Eligible office location** | Specifies the employee location that satisfies the eligibility rule. For example, central US. |
+   | **Eligible office location** | Specifies the employee’s office location that satisfies the eligibility rule. For example, New Jersey office. |
+   | **Eligible position** | Specifies the position or positions that satisfy the eligibility rule. For example, HR Assistant or HR Manager. |
+   | **Eligible position type** | Specifies the position type or types that satisfy the eligibility rule. For example, full time. |
+   | **Eligible state** | Specifies the states or provinces that satisfy the eligibility rule. For example, North Dakota USA or British Columbia, Canada. If the employee has multiple primary addresses, the eligibility rule checks all of them to assess eligibility. |
+   | **Eligible terms of employment** | Specifies the terms of employment that satisfy the eligibility rule. For example, at will or group contract. |
+   | **Eligible union** | Specifies the labor union memberships that satisfy the eligibility rule. For example, Forklift Drivers of America. </br></br>When using a union-based eligibility rule, the worker’s union record must have the end date populated. You can’t leave it blank. |
+   | **Eligible ZIP/postal code** | Specifies the ZIP/postal codes that satisfy the eligibility rule. For example, 58104. If the employee has multiple primary addresses, the eligibility rule will check all of them to assess eligibility. |
 
+ 5. Under **Additional detail**, you can view the following additional details:
 
+   | Field | Description |
+   | --- | --- |
+   | **Eligible user field** | Specifies additional eligibility rules based on customer-defined fields. |
+   | **Eligibility type** | Specifies the criterion category you selected under **Additional criteria**. |
+   | **Eligibility reference** | Specifies the values you selected under **Additional criteria**. |
+   | **Description** | The description you selected under **Additional criteria**. |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+4. Select **Save**.
 
 ## Configure bundles
 
+Bundles are a set of related benefit plans. You can use benefits bundles to group benefit plans that an employee must choose in order to enroll in certain benefit plans that may be dependent on other benefit plan enrollments. For example, a health bundle or savings bundle. 
+
 1. In the **Benefits management** workspace, under **Setup**, select **Eligibility rules and options**.
 
-2. In the **Bundles** tab, specify values for the following fields:
+2. In the **Bundles** tab, select **New** to create a bundle. To see plans that are associated with a bundle, select **Attached plans**.
+
+3. Specify values for the following fields:
 
    | Field | Description |
    | --- | --- |
+   | **Bundle** | A unique identifier for the bundle. |
+   | **Description** | A description of the bundle. |
+   | **Master** | Indicates whether one of the plans in the bundle must be marked as the master plan. The master plan must be selected during open enrollment as part of the bundle before the benefits administrator can confirm the employee’s benefits elections. |
+   | **Valid from date and time** | The date and time the bundle becomes active. |
+   | **Valid to** | The date the bundle expires. The default is 12/31/2154, which represents never. |
 
-3. Select **Save**.
-
-
+4. Select **Save**.
 
 ## Configure periods
 
+Periods define when benefits are in effect and when employees are allowed to enroll. You can create as many periods as you want in order to maintain benefits open enrollment and benefit coverage periods. Benefit plan years may or may not follow a calendar year. 
+
 1. In the **Benefits management** workspace, under **Setup**, select **Eligibility rules and options**.
 
-2. In the **Periods** tab, specify values for the following fields:
+2. In the **Periods** tab, select **New** to create a period. To run a process that attaches all valid active benefit plans to the benefit period, select **Attach plans**. To see plans that are associated with a bundle, select **Attached plans**. 
+
+3. Specify values for the following fields:
 
    | Field | Description |
    | --- | --- |
-
-3. Select **Save**.
-
+   | **Period** | A unique identifier for the period. |
+   | **Valid from date and time** | The start date and time when the benefits period is active. |
+   | **Valid to date and time** | The date and time when the benefits period becomes inactive. |
+   | **Enroll start** | The start date for open enrollment. Open enrollment is when an employee can make benefits elections in self-service benefits. |
+   | **Enroll end** | The end date for open enrollment. |
+   | **Open** | Indicates whether the period is open based on the system date and the valid from and to dates and times. | 
+   | **Previous period** | Specifies the benefits period that precedes the selected benefits period. This information is used during benefit eligibility enrollment to assign plans, coverage options, and designees from a prior year. |
+ 
+4. Select **Save**.
 
 ## Configure programs
 
+Programs are a set of benefit plans that share a common set of eligibility rules. You can define eligibility rules for the entire program instead of for each individual plan. For example, a Contoso Canada FTE program or Contoso Europe contractor program. 
+
 1. In the **Benefits management** workspace, under **Setup**, select **Eligibility rules and options**.
 
-2. In the **Programs** tab, specify values for the following fields:
+2. In the **Programs** tab, select **New** to create a program. To make exceptions for employees who don't meet the eligibility rule requirements, select **Eligibility rule override**. To see plans that are associated with a bundle, select **Attached plans**.
+
+3. Specify values for the following fields:
 
    | Field | Description |
    | --- | --- |
-
-3. Select **Save**.
-
+   | **Program** | A unique identifier for the program. |
+   | **Description** | A description of the program. | 
+   | **Valid from date and time** | The date and time the program becomes active. |
+   | **Valid to date and time** | The date and time the program expires. The default is 12/31/2154, which represents never. |
+   | **Coverage waiting period** | The period an employee must wait before coverage starts for the benefit program. |
+   | **Deduction waiting period** | The period an employee waits before deductions begin for the benefit program. |
+   | **Eligibility rules** | Select the eligibility rules to apply to the benefits program. You define the eligibility rules on the **Eligibility rules** tab on this page. |
+   
+4. Select **Save**.
 
 ## See also
