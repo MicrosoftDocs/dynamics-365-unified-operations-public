@@ -88,12 +88,10 @@ To add a video player module to a new page and set the required properties, foll
 
 [Starter kit overview](starter-kit-overview.md)
 
-[Alert module](add-alert.md)
+[Promo banner module](add-alert.md)
 
 [Carousel module](add-carousel.md)
 
-[Text rich block module](add-content-rich-block.md)
+[Text block module](add-content-rich-block.md)
 
-[Content block module](add-feature-module.md)
-
-[Hero module](add-hero-module.md)
+[Content block module](add-hero-module.md)
