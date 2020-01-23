@@ -41,9 +41,9 @@ ms.dyn365.ops.version: Platform update 2
 
 To see what's new or changed in each release of a Finance and Operations app, see the following topics:
 
-- [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md) 
-- [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
-- [What's new or changed in Dynamics 365 Retail](../../../retail/get-started/whats-new-home-page.md)
+- **Finance:** [What's new or changed in Dynamics 365 Finance](../../../finance/get-started/whats-new-home-page.md) 
+- **Supply Chain Management:** [What's new or changed in Dynamics 365 Supply Chain Management](../../../supply-chain/get-started/whats-new-home-page.md) 
+- **Retail:** [What's new or changed in Dynamics 365 Retail](../../../retail/get-started/whats-new-home-page.md)
 
 ## Platform updates
 
