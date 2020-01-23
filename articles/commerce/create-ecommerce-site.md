@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an e-Commerce site
-description: This topic describes the tasks that are associated with the creation of a new e-Commerce site in Dynamics 365 Commerce.
+description: This topic describes the steps and information required to create a new e-Commerce site in Dynamics 365 Commerce site builder.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 10/31/2019
@@ -35,17 +35,17 @@ ms.dyn365.ops.version: 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic describes the tasks that are associated with the creation of a new e-Commerce site in Dynamics 365 Commerce.
+This topic describes the steps and information required to create a new e-Commerce site in Dynamics 365 Commerce site builder.
 
 ## Overview
 
-To start to develop your e-Commerce site, you must first establish a new site in the site authoring environment. Before you can create a new site, at least one online store must be created in Dynamics 365 Retail. 
+Before you can start developing your e-Commerce site, you must first establish a new site in site builder. NOTE: Before you can successfully set up a new e-Commerce site, you must have at least one online store created in Dynamics 365 Commerce. 
 
 ## Set up your site
 
 To set up your site, do the following.
 
-1. In Microsoft Lifecycle Services (LCS), select the link for the site authoring environment. 
+1. Open the site builder environment. You can find a link to site builder in Microsoft Lifecycle Services (LCS) within the envioronment features page for Commerce.
 1. On the home page for the site authoring environment, select **New site**.
 1. In the **New site** dialog box, provide the following information.
 
