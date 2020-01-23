@@ -930,11 +930,11 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
-   - name: Fraud protection 
-     items:
-     - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
-       href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
-   - name: Monitoring and analysis
+    - name: Fraud protection 
+      items:
+      - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
+        href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
+    - name: Monitoring and analysis
      items:
      - name: Monitor sales and margin performance
        href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
@@ -948,168 +948,168 @@
        href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
      - name: Set up Recency, Frequency, and Monetary (RFM) analysis
        href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
-   - name: Localization and regulatory features
-     items:
-     - name: Fiscal integration overview for Retail channel
-       href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-     - name: Set up fiscal integration for Retail channel
-       href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-     - name: Austria
-       items:
-       - name: Fiscal registration service integration sample for Austria
+    - name: Localization and regulatory features
+      items:
+      - name: Fiscal integration overview for Retail channel
+        href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+      - name: Set up fiscal integration for Retail channel
+        href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+      - name: Austria
+        items:
+        - name: Fiscal registration service integration sample for Austria
          href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
-     - name: Eastern Europe
-       items: 
-       - name: Advance invoices for Retail for Eastern Europe
-         href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
-       - name: Petty cash management for Retail for Eastern Europe
-         href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
-       - name: Retail customer invoices and return sales orders in Eastern European countries
-         href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
-       - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-         href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
-       - name: Fiscal printer integration sample for Poland
-         href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
-       - name: Fiscal registration service integration sample for Czech Republic
-         href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
-     - name: France
-       items:
-       - name: Cash register functionality
-         href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
-       - name: Deployment guidelines for cash registers
-         href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
-     - name: India
-       items:
-       - name: Goods and Services Tax (GST) integration for cash registers
-         href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
-       - name: Deployment guidelines for cash registers
-         href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
-       - name: Support for upgrade and N-1 for India
-         href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
-     - name: Italy
-       items:
-       - name: Fiscal printer integration sample for Italy
-         href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
-     - name: Mexico
-       items:
-       - name: Global CFDI e-invoices for Mexico
-         href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
-     - name: Norway
-       items:
-       - name: Cash register functionality
-         href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
-       - name: Deployment guidelines for cash registers
-         href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
-     - name: Sweden
-       items:
-       - name: Cash register functionality
-         href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
-       - name: Sample for Retail POS integration with control units
-         href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
-   - name: Intelligence
-     items:
-     - name: Intelligence home page
-       href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
-     - name: Information access and reporting
-       href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-     - name: Power BI content
+      - name: Eastern Europe
+        items: 
+        - name: Advance invoices for Retail for Eastern Europe
+          href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
+        - name: Petty cash management for Retail for Eastern Europe
+          href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail customer invoices and return sales orders in Eastern European countries
+          href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
+        - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+          href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
+        - name: Fiscal printer integration sample for Poland
+          href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+        - name: Fiscal registration service integration sample for Czech Republic
+          href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
+      - name: France
         items:
-        - name: Power BI content home page
-          href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
-        - name: Actual vs budget
-          href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Benefits
-          href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Cash overview
-          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
-        - name: CFO overview
-          href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Compensation
-          href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Compensation and benefits
-          href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Cost accounting analysis
-          items:
-          - name: Cost accounting analysis Power BI content
-            href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/commerce/toc.json
-          - name: Set up security for the Cost accounting analysis Power BI content
-            href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Cost management
-          href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Credit and collections management
-          href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Employee competencies and development
-          href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Employee development
+        - name: Cash register functionality
+          href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
+        - name: Deployment guidelines for cash registers
+          href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
+      - name: India
+        items:
+        - name: Goods and Services Tax (GST) integration for cash registers
+          href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
+        - name: Deployment guidelines for cash registers
+          href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+        - name: Support for upgrade and N-1 for India
+          href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
+      - name: Italy
+        items:
+        - name: Fiscal printer integration sample for Italy
+          href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+      - name: Mexico
+        items:
+        - name: Global CFDI e-invoices for Mexico
+          href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
+      - name: Norway
+        items:
+        - name: Cash register functionality
+          href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
+        - name: Deployment guidelines for cash registers
+          href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+      - name: Sweden
+        items:
+        - name: Cash register functionality
+          href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
+        - name: Sample for Retail POS integration with control units
+          href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
+    - name: Intelligence
+      items:
+      - name: Intelligence home page
+        href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
+      - name: Information access and reporting
+        href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
+      - name: Power BI content
+         items:
+         - name: Power BI content home page
+           href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
+         - name: Actual vs budget
+           href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Benefits
+           href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Cash overview
+           href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
+         - name: CFO overview
+           href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Compensation
+           href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Compensation and benefits
+           href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Cost accounting analysis
+           items:
+           - name: Cost accounting analysis Power BI content
+             href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/commerce/toc.json
+           - name: Set up security for the Cost accounting analysis Power BI content
+             href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Cost management
+           href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Credit and collections management
+           href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Employee competencies and development
+           href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Employee development
           href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/commerce/toc.json
-        - name: Expense management Power BI content
-          href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Financial performance
-          href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Financial insights
-          href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
-        - name: Fixed asset management
-          href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
-        - name: Learning
-          href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Organizational training
+         - name: Expense management Power BI content
+           href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Financial performance
+           href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Financial insights
+           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
+         - name: Fixed asset management
+           href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
+         - name: Learning
+           href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Organizational training
           href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Practice manager
-          href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Production performance
-          href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Purchase spend analysis
-          href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
-        - name: Recruiting
-          href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail channel performance
-          href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
-        - name: Sales and profitability performance
-          href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
-        - name: Vendor payments
-          href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
-        - name: Warehouse performance
-          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
-        - name: Workforce metrics
-          href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-      - name: Document reporting and printing
-        items:
-        - name: Document Reporting Services overview
-          href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure SSRS for on-premises deployments
-          href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
-        - name: Printing
-          items:
-          - name: Document printing overview
-            href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
-          - name: Install the Document Routing Agent to enable network printing
-            href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
-          - name: Upgrade the Document Routing Agent
-            href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
-          - name: Install network printer devices in on-premises environments
-            href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
-          - name: Document generation, publishing, and printing in on-premises deployments
-            href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
-          - name: Run the Document Routing Agent as a Windows service
-            href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
-        - name: Help prevent long-running reports from timing out
-          href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/commerce/toc.json
-        - name: Available SQL Server Reporting Services reports
-          href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
-        - name: Create reporting solutions
-          href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
-        - name: Install report design templates
-          href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
-        - name: Customize App Suite reports by using extensions
-          href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/commerce/toc.json
-        - name: Expand Application Suite report data sets
-          href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/commerce/toc.json
-        - name: Extend report menu items to redirect user navigation
-          href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/commerce/toc.json
-        - name: Create custom designs for business documents
-          href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/commerce/toc.json
-        - name: Preview PDF documents with an embedded viewer
-          href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
+         - name: Practice manager
+           href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Production performance
+           href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Purchase spend analysis
+           href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
+         - name: Recruiting
+           href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Retail channel performance
+           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+         - name: Sales and profitability performance
+           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
+         - name: Vendor payments
+           href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
+         - name: Warehouse performance
+           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
+         - name: Workforce metrics
+           href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+       - name: Document reporting and printing
+         items:
+         - name: Document Reporting Services overview
+           href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+         - name: Configure SSRS for on-premises deployments
+           href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
+         - name: Printing
+           items:
+           - name: Document printing overview
+             href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/commerce/toc.json
+           - name: Install the Document Routing Agent to enable network printing
+             href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
+           - name: Upgrade the Document Routing Agent
+             href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md?toc=/dynamics365/commerce/toc.json
+           - name: Install network printer devices in on-premises environments
+             href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/commerce/toc.json
+           - name: Document generation, publishing, and printing in on-premises deployments
+             href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/commerce/toc.json
+           - name: Run the Document Routing Agent as a Windows service
+             href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/commerce/toc.json
+         - name: Help prevent long-running reports from timing out
+           href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/commerce/toc.json
+         - name: Available SQL Server Reporting Services reports
+           href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/commerce/toc.json
+         - name: Create reporting solutions
+           href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/commerce/toc.json
+         - name: Install report design templates
+           href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/commerce/toc.json
+         - name: Customize App Suite reports by using extensions
+           href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/commerce/toc.json
+         - name: Expand Application Suite report data sets
+           href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/commerce/toc.json
+         - name: Extend report menu items to redirect user navigation
+           href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/commerce/toc.json
+         - name: Create custom designs for business documents
+           href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/commerce/toc.json
+         - name: Preview PDF documents with an embedded viewer
+           href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/commerce/toc.json
       - name: Electronic reporting
         items:
         - name: Electronic reporting overview
@@ -1611,7 +1611,7 @@
         - name: Configure Power BI integration for workspaces
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
         - name: Bring your own database
-          href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
+           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
     - name: Finance and Operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
