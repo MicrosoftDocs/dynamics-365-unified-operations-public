@@ -28,7 +28,7 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Channel set up prerequisites
+# Channel setup prerequisites
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
@@ -39,19 +39,22 @@ This topic presents an overview of channel setup prerequisites in Microsoft Dyna
 
 Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following lists of prerequisite tasks are organized by channel type.
 
+> [!NOTE]
+> Some documentation is still being written, and links will be updated as new content is published.
+
 ## Initialization
 
 - [Initialize seed data](../retail/enable-configure-retail-functionality.md)
 
 ## Global prerequisities required for all channel types
 
-- Define and configure your [legal entity](channels-legal-entities.md) structure
-- Configure your [organizational hierarchy](channels-org-hierarchies.md)
-- Set up a [warehouse](channels-setup-warehouse.md)
-- Configure [sales tax](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
-- Set up an [email notification profile](email-notification-profiles.md)
-- Set up [number sequences](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
-- Set up a [default customer and address book](default-customer.md)
+- [Define and configure your legal entity structure](channels-legal-entities.md) 
+- [Configure your organizational hierarchy](channels-org-hierarchies.md)
+- [Set up a warehouse](channels-setup-warehouse.md)
+- [Configure sales tax](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Set up an email notification profile](email-notification-profiles.md)
+- [Set up number sequences](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Set up a default customer and address book](default-customer.md)
 - [Configure commerce parameters](commerce-parameters.md)
 
 ## Retail channel prerequisites
