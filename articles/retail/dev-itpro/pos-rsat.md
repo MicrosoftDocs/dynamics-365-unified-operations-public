@@ -247,18 +247,18 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
     + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
     + **Retail server URL** – Enter the Retail Server URL that should be used for device activation, if the device hasn't already been activated.
 
-> [!NOTE]
-> The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+    > [!NOTE]
+    > The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
-   + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
-   + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
-   + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
-   + **Device** – Enter the ID of the device where the test should be run.
-   + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
+    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
+    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
+    + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
+    + **Device** – Enter the ID of the device where the test should be run.
+    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
- [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
+    [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
 
-5. Select the **POS login credentials** tab.
+4. Select the **POS login credentials** tab.
 
     During a recording session, the test recorder captures only the user name from the POS. It doesn't store any password. However, to run the test, you must have both the user name and the password that are used to sign in to POS. This tab captures the POS user name and password, so that the password information is securely stored outside the recording file. During test execution, the user ID is then mapped to the same user ID that is entered in RSAT, and the password is retrieved.
     
@@ -266,15 +266,15 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
 
     [![POS login credentials](./media/PosLogin.png)](./media/PosLogin.png)
 
-6. Select **New**.
+5. Select **New**.
 
     [![POS user](./media/EditPosUser.png)](./media/EditPosUser.png)
 
-7. In the **Username** field, enter the user name for sign-in to POS.
-8. In the **Password** field, enter the password for sign-in to POS.
-9. Repeat steps 6 through 8 to enter other user names and passwords for sign-in to POS.
-10. To edit a set of POS sign-in credentials, select **Edit**.
-11. To delete a set of POS sign-in credentials, select **Delete**.
+6. In the **Username** field, enter the user name for sign-in to POS.
+7. In the **Password** field, enter the password for sign-in to POS.
+8. Repeat steps 6 through 8 to enter other user names and passwords for sign-in to POS.
+9. To edit a set of POS sign-in credentials, select **Edit**.
+10. To delete a set of POS sign-in credentials, select **Delete**.
 
 ## Run tests
 
