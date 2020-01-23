@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure commerce parameters
-description: This topic describes how configure commerce parameter settings in Microsoft Dynamics 365 Commerce.
+description: This topic describes how configure parameter settings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -33,11 +33,7 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how configure commerce parameter settings in Microsoft Dynamics 365 Commerce.
-
-## Overview
-
-There are several commerce parameters that must be set during channel configuration.  
+This topic describes how to configure parameter options when setting up channels in Microsoft Dynamics 365 Commerce. 
 
 ## Change commerce parameters
 
