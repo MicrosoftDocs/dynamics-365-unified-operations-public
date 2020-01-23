@@ -37,7 +37,7 @@ This topic presents an overview of channel setup prerequisites in Microsoft Dyna
 
 ## Overview
 
-Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following links provide instructions for various tasks related to each channel type.
+Before a Dynamics 365 Commerce channel can be created, several prerequisite tasks must be completed. The following lists of prerequisite tasks are organized by channel type.
 
 ## Initialization
 
@@ -64,11 +64,11 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 ## Call Center channel prerequisites
 
-- [Call center parameters - tbd](tbd.md)
-- [Call center refund methods - tbd](tbd.md)
-- [Rental types - tbd](tbd.md)
-- [Payment services - tbd](tbd.md)
-- [Order hold codes - tbd](tbd.md)
+- Call center parameters
+- Call center refund methods
+- Rental types
+- Payment services
+- Order hold codes
 
 ## Online channel prerequisites
 
