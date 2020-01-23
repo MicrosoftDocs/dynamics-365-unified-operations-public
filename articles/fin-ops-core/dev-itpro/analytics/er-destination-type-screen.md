@@ -2,10 +2,10 @@
 # required metadata
 
 title: Screen ER destination type
-description: You can configure a screen destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the setting of such destination, a generated document is opened for preview in a separated tab of using web browser.
+description: This topic provides information about how to configure a screen destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,12 +34,13 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
+You can configure a screen destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the setting of the destination, a generated document is opened for preview in a separate browswer tab.
+
 If you set **Enabled** to **Yes**, a preview of the output is created. You can view some file types, such as XML, TXT, or PDF, directly in a browser window. For other file types, such Microsoft Excel or Word, the Microsoft Office Online service is used.
 
 [![Destination setting page](./media/ER_Destinations-EnableScreenDestination.png)](./media/ER_Destinations-EnableScreenDestination.png)
 
 ## Additional resources
 
-[Electronic reporting (ER) overview](general-electronic-reporting.md)
-
-[Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+- [Electronic reporting (ER) overview](general-electronic-reporting.md)
+- [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
