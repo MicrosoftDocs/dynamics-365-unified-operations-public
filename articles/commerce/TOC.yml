@@ -1013,67 +1013,67 @@
       - name: Information access and reporting
         href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
       - name: Power BI content
-         items:
-         - name: Power BI content home page
-           href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
-         - name: Actual vs budget
-           href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Benefits
-           href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Cash overview
-           href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
-         - name: CFO overview
-           href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Compensation
-           href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Compensation and benefits
-           href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Cost accounting analysis
-           items:
-           - name: Cost accounting analysis Power BI content
-             href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/commerce/toc.json
-           - name: Set up security for the Cost accounting analysis Power BI content
-             href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Cost management
-           href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Credit and collections management
-           href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Employee competencies and development
-           href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Employee development
-           href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/commerce/toc.json
-         - name: Expense management Power BI content
-           href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Financial performance
-           href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Financial insights
-           href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
-         - name: Fixed asset management
-           href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
-         - name: Learning
-           href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Organizational training
-           href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Practice manager
-           href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Production performance
-           href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Purchase spend analysis
-           href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
-         - name: Recruiting
-           href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Retail channel performance
-           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
-         - name: Sales and profitability performance
-           href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
-         - name: Vendor payments
-           href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
-         - name: Warehouse performance
-           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
-         - name: Workforce metrics
-           href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
-       - name: Document reporting and printing
-         items:
+        items:
+        - name: Power BI content home page
+          href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
+        - name: Actual vs budget
+          href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Benefits
+          href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Cash overview
+          href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/commerce/toc.json
+        - name: CFO overview
+          href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Compensation
+          href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Compensation and benefits
+          href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Cost accounting analysis
+          items:
+          - name: Cost accounting analysis Power BI content
+            href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up security for the Cost accounting analysis Power BI content
+            href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Cost management
+          href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Credit and collections management
+          href: ../finance/accounts-receivable/credit-collections-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Employee competencies and development
+          href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Employee development
+          href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/commerce/toc.json
+        - name: Expense management Power BI content
+          href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Financial performance
+          href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Financial insights
+          href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/commerce/toc.json
+        - name: Fixed asset management
+          href: ../finance/fixed-assets/Fixed-asset-management-workspace.md?toc=/dynamics365/commerce/toc.json
+        - name: Learning
+          href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Organizational training
+          href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Practice manager
+          href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Production performance
+          href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Purchase spend analysis
+          href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/commerce/toc.json
+        - name: Recruiting
+          href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Retail channel performance
+          href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
+        - name: Sales and profitability performance
+          href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/commerce/toc.json
+        - name: Vendor payments
+          href: ../finance/accounts-payable/Vendor-payments-workspace.md?toc=/dynamics365/commerce/toc.json
+        - name: Warehouse performance
+          href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/commerce/toc.json
+        - name: Workforce metrics
+          href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+      - name: Document reporting and printing
+        items:
          - name: Document Reporting Services overview
            href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
          - name: Configure SSRS for on-premises deployments
