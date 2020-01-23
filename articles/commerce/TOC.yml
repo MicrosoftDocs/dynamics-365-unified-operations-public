@@ -304,8 +304,6 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/retail/toc.json
           - name: Set up a default customer and address book 
             href: default-customer.md
-          - name: Configure commerce parameters 
-            href: commerce-parameters.md
         - name: Retail channel prerequisites
           items:
           - name: Info codes and info code groups	  
