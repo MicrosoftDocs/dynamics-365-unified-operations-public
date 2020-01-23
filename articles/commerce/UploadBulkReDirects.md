@@ -94,4 +94,4 @@ If making additions, deletions, or edits to the CSV; once completed, use the "Re
 
 ## Turning off the bulk redirect mappings
 
-If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with valid but non-existent Source and Target URLs. (Example: 'https://www.com,https://www.com,301' Click **Save & Publish** on the General settings page to commit the changes.
+If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with valid but non-existent Source and Target URLs. (Example: 'https://www.com,https://www.com,301'. Set the Toggle to "On" and click **Save & Publish** on the General settings page to commit the changes.
