@@ -29,46 +29,63 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments using shipment consolidation policies
+# Override consolidation policy in Release to warehouse form
 
 [!include [banner](../includes/banner.md)]
 
-# Released in version 10.0.3
+*Released in version 10.0.3*
 
-## Override consolidation policy in “Release to warehouse” form
+[TBD] Oleksandr - Add explanation of a scenario like for Scenario 1
 
-This scenario assumes that you went through shipment policies configuration scripts and have more than 1 consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
+This scenario assumes that you went through shipment policies configuration scripts and have more than one consolidation policy (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
+
+[TBD] Olga - During the demo, you will...
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
-### Sales orders
+## Sales orders creation
 
-**Order set 1**:
+### Order set 1
 
-Create 3 new sales orders:
-- Customer = US-001
+Create three identical sales orders.
 
-For each order of the above:
--	Add a line for item A0001, quantity 1 (an item without filter code 4).
+**Sales order 1, 2 and 3**:
 
-### Release to warehouse (form)
+- In the **Customer account** field, select **US-001**.
 
-1. Select order 1 created above.
-2. Click **Add** to add the line to release to warehouse. Note that the _Default_ policy was applied in the grid below.
-3. Click **Select new shipment consolidation policy**. Choose any other policy from the list (for this test, we assume you use a "ConsolidateOpen" policy that enables consolidation with other open shipments of the same policy).
-4. Click **Release to warehouse**.
+Add an order line to each sales order.
 
-5. Select orders 2 and 3 created above.
-6. Click **Add** to add the lines to release to warehouse. Note that the _Default_ policy was applied in the grid below.
+**Line 1**:
 
-7. Select line 2 and click **Select new shipment consolidation policy**. Choose _ConsolidateOpen_ from the list.
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**.
+
+## Release of sales orders via Release to warehouse form
+
+[TBD] Olga - Add explanation details like in scenario 1
+
+1. Go to **Warehouse management > Release to warehouse > Release to warehouse**
+1. In the upper section, select sales order 1 created above.
+1. Click **Add** to add the line to release to warehouse. Note that the **Default** policy is applied in the bottom section.
+1. Click **Select new shipment consolidation policy** and choose a policy from the list that enables consolidation with other open shipments of the same policy, for example, **ConsolidateOpen** policy).
+1. Click **Release to warehouse**.
+1. Select orders 2 and 3 created above.
+1. Click **Add** to add the lines to release to warehouse. Note that the **Default** policy is applied in the bottom section.
+1. Select line 2 and click **Select new shipment consolidation policy**. Choose _ConsolidateOpen_ from the list.
 Click **Release to warehouse** for all lines.
 
-- Expected result:
-  - Shipment 1, policy: “ConsolidateOpen”, 2 lines.
-  - Shipment 2, policy: Default, 1 line.
+As a result, two shipments are created:
 
-# Related articles and demo scripts
+- The first shipment is created using **ConsolidateOpen** policy and contains two lines ;
+- The second shipment is created using **Default** policy and contains one line.
+
+To review created shipments, follow these steps.
+
+1. Go to **Warehouse management > Shipments > All shipments**.
+1. Find and select required shipment.
+1. Review consolidation policy that is used during shipment creation in the **Shipment consolidation policy** field.
+
+## Related articles and demo scripts
 
 - [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)

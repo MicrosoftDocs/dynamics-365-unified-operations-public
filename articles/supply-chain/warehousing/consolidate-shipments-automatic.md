@@ -96,7 +96,7 @@ Add two order lines to the sales order.
 
 - In the **Item number** field, select **A0002** (an item without filter code 4);
 - In the **Quantity** field, enter **1.00**;
-- In the **Mode of delivery** field, select **10**.
+- In the **Mode of delivery** field, select **Air**.
 
 ### Order set 2
 
@@ -269,23 +269,23 @@ To review created or updated shipment, follow these steps.
 
 Now, using instructions above, release to warehouse each of created set of orders and verify shipments that are created or updated as a result of shipment consolidation according to expected results provided below.
 
-### Release sales order from Order set 1
+### Release sales orders from Order set 1
 
 Expected result:
 
 - Four shipments are created:
-  - First three shipments created using **Policy 1** shipment consolidation policy;
+  - The first three shipments created using **Policy 1** shipment consolidation policy;
   - The fourth shipment (without **Air** mode of delivery) is created using **Policy 3**.
 
-### Release sales order from Order set 2
+### Release sales orders from Order set 2
 
 Expected result:
 
 - Three shipments are created:
-  - First shipment contains **Flammable** items;
+  - The first shipment contains **Flammable** items;
   - Each of the other two shipments contains one line with **Explosive** item.
 
-### Release sales order from Order set 3
+### Release sales orders from Order set 3
 
 Expected result:
 
@@ -294,14 +294,14 @@ Expected result:
 - One new shipment is created:
   - The shipment contains **Explosive** item.
 
-### Release sales order from Order set 4
+### Release sales orders from Order set 4
 
 Expected result:
 
 - One existing shipment (where **Customer requisition** = 1) is updated:
   - One line is added.
 
-### Release sales order from Order set 5
+### Release sales orders from Order set 5
 
 Expected result:
 
@@ -310,7 +310,7 @@ Expected result:
 - One new shipment is created:
   - Lines from sales orders 1 and 2 are grouped into one shipment.
 
-### Release sales order from Order set 6
+### Release sales orders from Order set 6
 
 Expected result:
 
