@@ -174,7 +174,7 @@ Other considerations to keep in mind:
 -   If non-Premium Storage VMs are deployed with the High Availability topologies, all of the above SQL Server configuration settings are applicable; however, Premium Storage benefits will not apply.
 -   When setting up your Lifecycle Services project for deployment, you must select a region that supports Premium Storage.
 
-SQL Server best practices implemented by the deployment service include those recommended by the SQL Server team. For more information, click [here](http://blogs.technet.com/b/dataplatforminsider/archive/2014/09/12/new-vm-images-optimized-for-transactional-and-dw-workloads-in-azure-vm-gallery.aspx). In addition, the following items are done:
+SQL Server best practices implemented by the deployment service include those recommended by the SQL Server team. For more information, click [here](https://blogs.technet.com/b/dataplatforminsider/archive/2014/09/12/new-vm-images-optimized-for-transactional-and-dw-workloads-in-azure-vm-gallery.aspx). In addition, the following items are done:
 
 -   Multiple temp files (one per CPU core).
 -   Set max memory for SQL Server to 90% of available machine RAM.
