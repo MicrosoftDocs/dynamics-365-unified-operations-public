@@ -12,9 +12,9 @@
         href: ../fin-ops/get-started/whats-new-changed.md
       - name: What's new or changed in Platform updates
         items:
-        - name: What's new and changed in Platform updates home page
+        - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
-        - name: Preview features in Platform update 32 (February 2020)
+        - name: Platform update 32 (February 2020)
           href: get-started/whats-new-platform-update-32.md
         - name: Platform update 31 (January 2020)
           href: get-started/whats-new-platform-update-31.md
