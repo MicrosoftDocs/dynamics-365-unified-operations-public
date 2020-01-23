@@ -45,6 +45,8 @@ To change commerce parameters, follow these steps.
 
 ## Commerce parameters
 
+The following parameters need to be configured when setting up a channel.
+
 - General
 - Posting
 - Accounting export
