@@ -37,9 +37,9 @@ To see what's new or changed in the Platform updates for Finance and Operations 
 
 | **Version**        | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                                        |
 |--------------------|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Platform update 32 | 7.0.5493         | October 2019     | [What's new or changed in Platform update 32 for Finance and Operations apps](whats-new-platform-update-32.md)  |
-| Platform update 31 | 7.0.5457      | October 2019     | [What's new or changed in Platform update 31 for Finance and Operations apps](whats-new-platform-update-31.md) |
-| Platform update 30 | 7.0.5407       | October 2019     | [What's new or changed in Platform update 30 for Finance and Operations apps](../../fin-ops/get-started/whats-new-platform-update-30.md) |
+| Platform update 32 | 7.0.5493         | February 2020     | [What's new or changed in Platform update 32 for Finance and Operations apps](whats-new-platform-update-32.md)  |
+| Platform update 31 | 7.0.5457      | January 2020     | [What's new or changed in Platform update 31 for Finance and Operations apps](whats-new-platform-update-31.md) |
+| Platform update 30 | 7.0.5407       | November 2019     | [What's new or changed in Platform update 30 for Finance and Operations apps](../../fin-ops/get-started/whats-new-platform-update-30.md) |
 | Platform update 29 | 7.0.5372         | October 2019     | [What's new or changed in Platform update 29 for Finance and Operations apps](../../fin-ops/get-started/whats-new-platform-update-29.md)                      |
 | Platform update 28 | 7.0.5314         | July 2019        | [What's new or changed in Dynamics 365 for Finance and Operations platform update 28](../../fin-ops/get-started/whats-new-platform-update-28.md)                         |
 | Platform update 27 | 7.0.5286         | June 2019        | [What's new or changed in Dynamics 365 for Finance and Operations platform update 27](../../fin-ops/get-started/whats-new-platform-update-27.md)                         |
