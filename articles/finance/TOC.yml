@@ -66,7 +66,7 @@
         items: 
         - name: What's new or changed in Finance and Operations apps
           href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-          name: What's new or changed in Finance
+        - name: What's new or changed in Finance
           items:
           - name: What's new or changed in Finance home page
             href: get-started/whats-new-home-page.md
