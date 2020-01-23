@@ -957,7 +957,7 @@
       - name: Austria
         items:
         - name: Fiscal registration service integration sample for Austria
-         href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
+          href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
       - name: Eastern Europe
         items: 
         - name: Advance invoices for Retail for Eastern Europe
@@ -1041,7 +1041,7 @@
          - name: Employee competencies and development
            href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
          - name: Employee development
-          href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/commerce/toc.json
+           href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/commerce/toc.json
          - name: Expense management Power BI content
            href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/commerce/toc.json
          - name: Financial performance
@@ -1053,7 +1053,7 @@
          - name: Learning
            href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
          - name: Organizational training
-          href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
+           href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
          - name: Practice manager
            href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/commerce/toc.json
          - name: Production performance
