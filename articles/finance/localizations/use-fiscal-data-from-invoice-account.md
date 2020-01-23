@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Use fiscal data from invoice account
-description: The feature “Use fiscal data from invoice account” enables fiscal data, such as the customer or vendor name, their sales tax group and tax exempt number on sales orders, free text invoices or purchase orders to be updated automatically based on the information from the invoice account. This topic explains how to configure the feature.
-author: 
-manager: 
-ms.date: 
+title: Use fiscal data from an invoice account
+description: This topic provides information about how to enable fiscal data to be automatically updated on sales orders, free text invoices, or purchase orders based on information from the invoice account.
+author: epodkolz
+manager: annbeebe
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,21 +23,21 @@ ms.custom: 265224
 ms.search.region: 
 # ms.search.industry: 
 ms.author:
-ms.search.validFrom: 
+ms.search.validFrom: 02/03/2020
 ms.dyn365.ops.version: 10.0.9
 
 ---
 
-# Use fiscal data from invoice account
+# Use fiscal data from an invoice account
 
 [!include [banner](../includes/banner.md)]
 
-The feature “Use fiscal data from invoice account” enables fiscal data, such as the customer or vendor name, their sales tax group and tax exempt number on sales orders, free text invoices or purchase orders to be updated automatically based on the information from the invoice account. This topic explains how to configure the feature.
+You can use fiscal data, such as the customer or vendor name, or the sales tax group and tax exempt numbers from an invoice account on sales orders, free text invoices, or purchase orders to be updated automatically based on the information from the invoice account. This topic explains how to configure the feature.
 
 ## Accounts payable and Accounts receivable parameters
 
-In order to enable the feature for purchase orders, sales orders and free text invoices, set the **Use fiscal data from invoice account** parameter in the Accounts payable and Accounts receivable modules respectively. It is located on the Invoice tab of the **Accounts payable parameters** page and on the **Invoice** fasttab of the **Updates** tab of the **Accounts receivable parameters** page. The following options are available:
+To enable this functionality for purchase orders, sales orders, and free text invoices, set the **Use fiscal data from invoice account** parameter in the **Accounts payable** and **Accounts receivable** modules, respectively. The parameter field is located on the **Invoice** tab of the **Accounts payable parameters** page, and on the **Invoice** FastTab of the **Updates** tab of the **Accounts receivable parameters** page. The following options are available:
 
--	**Never** – the information is updated from the vendor or customer account.
--	**Always** – the information is updated from the invoice account.
--	**Ask** – The user is prompted to specify whether the information should be updated from the invoice account or from the vendor/customer account. If the user selects **Yes**, the information is updated from the invoice account; otherwise the information is defaulted from the vendor/customer account.
+-	**Never**: The information is updated from the vendor or customer account.
+-	**Always**: The information is updated from the invoice account.
+-	**Ask**: The user is prompted to specify whether the information should be updated from the invoice account or from the vendor or customer account. If the user selects **Yes**, the information is updated from the invoice account; otherwise the information is defaulted from the vendor or customer account.
