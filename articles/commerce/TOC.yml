@@ -708,7 +708,7 @@
           href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json	
         - name: Process adjustments of loyalty reward points	  
           href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
-   - name: Statements
+    - name: Statements
       items:
       - name: Statements overview
         href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
