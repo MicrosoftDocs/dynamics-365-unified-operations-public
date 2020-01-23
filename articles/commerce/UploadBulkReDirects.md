@@ -50,7 +50,7 @@ To review these fields further:
 - **Redirection Type**: Use "301" or "302" dependent on the type of redirect you intend to use. 
   - **301** redirects signal permanent redirects, and are the most common redirect type. This is the best approach for maintaining SEO rankings.
   - **302** redirects signal temporary redirects, and are less commonly used. This code is best for temporary maintenance or other non-permanent scenarios to maintain link targeting.
-- **case sensitivity**: Set this to "true" if your URLs are case-sensitive. If true, case sensitivity will be honored. Leave this field blank or set to "false" if case sensitivity is not needed. The default (leaving blank) will be false.
+- **case sensitivity**: Set this to "true" if your Source URL paths are case-sensitive. If true, case sensitivity will be honored for paths of the Source URL field. Leave this field blank or set to "false" if case sensitivity is not needed. The default (leaving blank) will be false.
 
 So a sample set of redirect rows may look like the following:
 
@@ -90,7 +90,7 @@ In order to download the currently uploaded CSV, navigate to your Site and go to
 
 Within the "URL Redirect Mapping" section, select the "Download" button. (This button will be grayed out if no CSV has been uploaded). A save file dialogue will be prompted to save the file to your machine.
 
-If making additions, deletions, or edits to the CSV; once completed, use the same "Upload" button to upload the edited file. Notice that upon re-upload, the Toggle will switch back to "Off".  Change the Toggle to "On" and **Save & Publish** the General settings page to commit these changes. This will then activate the newly uploaded file. Again, allow up to 15 minutes for the changes to occur. 
+If making additions, deletions, or edits to the CSV; once completed, use the "Replace" button (which should show in place of the original 'Upload' button) to upload the edited file. Notice that upon re-upload, the Toggle will switch back to "Off".  Change the Toggle to "On" and **Save & Publish** the General settings page to commit these changes. This will then activate the newly uploaded file. Again, allow up to 15 minutes for the changes to occur. 
 
 ## Turning off the bulk redirect mappings
 
