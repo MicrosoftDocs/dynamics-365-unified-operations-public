@@ -935,19 +935,19 @@
       - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
         href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
     - name: Monitoring and analysis
-     items:
-     - name: Monitor sales and margin performance
-       href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
-     - name: Analyze sales trends and patterns
-       href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
-     - name: Assess sales performance by product
-       href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
-     - name: Assess customer and product profitability
-       href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
-     - name: Analyze store performance
-       href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
-     - name: Set up Recency, Frequency, and Monetary (RFM) analysis
-       href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
+      items:
+      - name: Monitor sales and margin performance
+        href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
+      - name: Analyze sales trends and patterns
+        href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
+      - name: Assess sales performance by product
+        href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
+      - name: Assess customer and product profitability
+        href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
+      - name: Analyze store performance
+        href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
+      - name: Set up Recency, Frequency, and Monetary (RFM) analysis
+        href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
     - name: Localization and regulatory features
       items:
       - name: Fiscal integration overview for Retail channel
