@@ -608,7 +608,7 @@
             href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
       - name: Ratings and reviews 
         items:
-         - name: Ratings and reviews overview
+        - name: Ratings and reviews overview
           href:	ratings-reviews-overview.md	
         - name: Opt in to use ratings and reviews		
           href:	opt-in-ratings-reviews.md
