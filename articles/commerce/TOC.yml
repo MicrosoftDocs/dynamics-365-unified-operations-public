@@ -313,7 +313,7 @@
           - name: Create a retail functionality profile		  
             href: retail-functionality-profile.md	  
           - name: Create a new address book 		  
-            href: new-address-book.mdd 
+            href: new-address-book.md
           - name: Screen layout overview
             href: ../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json
         - name: Online channel prerequisites 
