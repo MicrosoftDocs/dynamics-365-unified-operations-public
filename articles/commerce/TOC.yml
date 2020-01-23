@@ -1006,52 +1006,6 @@
           href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
         - name: Sample for Retail POS integration with control units
           href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
-    - name: Retail tasks
-      items:
-      - name: Create channel-specific trade agreements
-        href: ../retail/tasks/base-price-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-      - name: Create trade agreements using category pricing rules
-        href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-      - name: Configure functionality profiles for sales representatives
-        href: ../retail/tasks/configure-functionality-profile-sales-representative.md?toc=/dynamics365/commerce/toc.json
-      - name: Create call center orders
-        href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
-      - name: Create financial dimensions for POS registers and configure dimension values on registers
-        href: ../retail/tasks/create-financial-dimensions-pos.md?toc=/dynamics365/commerce/toc.json
-      - name: Create financial dimensions for retail channels and configure dimension values on stores
-        href: ../retail/tasks/create-financial-dimensions-retail-channels.md?toc=/dynamics365/commerce/toc.json
-      - name: Create POS permission groups
-        href: ../retail/tasks/create-pos-permission-groups.md?toc=/dynamics365/commerce/toc.json
-      - name: Create POS visual profiles
-        href: ../retail/tasks/create-pos-visual-profile-2016-02.md?toc=/dynamics365/commerce/toc.json
-      - name: Create product packages for purchase orders
-        href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-      - name: Create call center channels and define channel attributes
-        href: ../retail/tasks/define-call-center-channel-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-      - name: Define channel attributes
-        href: ../retail/tasks/define-channel-attributes.md?toc=/dynamics365/commerce/toc.json
-      - name: Define continuity schedules
-        href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
-      - name: Define loyalty programs
-        href: ../retail/tasks/define-loyalty-programs.md?toc=/dynamics365/commerce/toc.json
-      - name: Define loyalty reward points
-        href: ../retail/tasks/define-loyalty-reward-points.md?toc=/dynamics365/commerce/toc.json
-      - name: Define loyalty schemes
-        href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json
-      - name: Design the relationships between organizational units
-        href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
-      - name: Manage assortments
-        href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
-      - name: Post online sales and payments
-        href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-      - name: Process adjustments of loyalty reward points
-        href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
-      - name: Push products from distribution centers to stores via buyer's push
-        href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
-      - name: Set up rules and parameters for cross-docking and buyer's push
-        href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-      - name: Selling continuity programs and processing sales orders
-        href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
     - name: Intelligence
       items:
       - name: Intelligence home page
@@ -1658,7 +1612,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
         - name: Bring your own database
           href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
-    - name: Mobile app
+    - name: Finance and Operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
         href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
