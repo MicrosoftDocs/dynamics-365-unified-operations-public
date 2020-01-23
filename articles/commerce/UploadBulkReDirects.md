@@ -54,9 +54,9 @@ To review these fields further:
 
 So a sample set of redirect rows may look like the following:
 
-*www.oldsite.com/shop, www.newsite.com/allstores, 301,*
+*www.oldsite.com/shop, www.newsite.com/allstores, 301*
 
-*www.oldsite.com/news, www.newsite.com/updates, 301,*
+*www.oldsite.com/news, www.newsite.com/updates, 301*
 
 **<u>Important:</u>** The following **<u>must</u>** be followed in order for the bulk redirects to work correctly:
 
