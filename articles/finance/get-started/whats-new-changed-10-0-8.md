@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Dynamics 365 Finance version 10.0.8 (February 2020)
+title: What's new or changed in Dynamics 365 Finance version 10.0.8 (February 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.8.
 author: roschlom
 manager: AnnBe
-ms.date: 01/22/2020
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -29,12 +29,11 @@ ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
 
 ---
-# Preview features in Dynamics 365 Finance version 10.0.8 (February 2020)
+# What's new or changed in Dynamics 365 Finance version 10.0.8 (February 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes preview features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.8. This version has a build number of 10.0.319 and is available as follows:
+This topic lists features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.8. This version has a build number of 10.0.319 and is available as follows:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
