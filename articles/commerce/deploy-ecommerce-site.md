@@ -37,7 +37,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Overview
-	
+
 Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that partners and customers can use to manage their projects and environments, view the latest information about Microsoft Dynamics products and features, and create, track, and browse support incidents. E-Commerce management features are integrated into LCS.
 
 To learn more about LCS, see the [Lifecycle Services User Guide](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -85,11 +85,19 @@ After you've collected the required information, follow these steps to initializ
 1. On the next page, fill in the required information, and then submit the form. You're returned to the **e-Commerce** tab, where you should see that initialization has been started.
 1. To view the initialization status, either **Refresh** or return to the **e-Commerce** tab later.
 	
-When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site management tool (the authoring tool).
 
-## Access the authoring environment
+When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site builder where sites are authored.
 
-To access the authoring environment, go to the **e-Commerce** tab on the **Retail management** page. There, you will find links to your e-Commerce site and the site management tool.
+## Access site builder
+
+To access site builder, go to the **e-Commerce** tab on the **Retail management** page in [LCS](https://lcs.dynamics.com) and click the **e-Commerce site management tool** link. The site builder landing page displays a tenant-level view. From this page, you can:
+
+1. Modify tenant-level settings.
+2. Navigate to any site you have created, and have permission to view. 
+3. Access Reviews features such as moderation and reporting.
+4. Create a new site. See the [Create an e-Commerce site](create-ecommerce-site.md) help topic to learn more about how to create a new site. 
+
+ 
 
 ## Additional resources
 
