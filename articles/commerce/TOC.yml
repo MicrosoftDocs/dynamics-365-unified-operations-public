@@ -742,7 +742,7 @@
         href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
       - name: Posting of online sales and payments 
         href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-   - name: Manage your e-Commerce site 
+    - name: Manage your e-Commerce site 
       items:
       - name: Online store overview
         href: online-store-overview.md
@@ -935,84 +935,84 @@
      - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
        href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
    - name: Monitoring and analysis
-      items:
-      - name: Monitor sales and margin performance
-        href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
-      - name: Analyze sales trends and patterns
-        href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
-      - name: Assess sales performance by product
-        href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
-      - name: Assess customer and product profitability
-        href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
-      - name: Analyze store performance
-        href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
-      - name: Set up Recency, Frequency, and Monetary (RFM) analysis
-        href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
-    - name: Localization and regulatory features
-      items:
-      - name: Fiscal integration overview for Retail channel
-        href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-      - name: Set up fiscal integration for Retail channel
-        href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
-      - name: Austria
-        items:
-        - name: Fiscal registration service integration sample for Austria
-          href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
-      - name: Eastern Europe
-        items: 
-        - name: Advance invoices for Retail for Eastern Europe
-          href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
-        - name: Petty cash management for Retail for Eastern Europe
-          href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail customer invoices and return sales orders in Eastern European countries
-          href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
-        - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-          href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
-        - name: Fiscal printer integration sample for Poland
-          href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
-        - name: Fiscal registration service integration sample for Czech Republic
-          href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
-      - name: France
-        items:
-        - name: Cash register functionality
-          href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
-        - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
-      - name: India
-        items:
-        - name: Goods and Services Tax (GST) integration for cash registers
-          href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
-        - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
-        - name: Support for upgrade and N-1 for India
-          href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
-      - name: Italy
-        items:
-        - name: Fiscal printer integration sample for Italy
-          href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
-      - name: Mexico
-        items:
-        - name: Global CFDI e-invoices for Mexico
-          href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
-      - name: Norway
-        items:
-        - name: Cash register functionality
-          href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
-        - name: Deployment guidelines for cash registers
-          href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
-      - name: Sweden
-        items:
-        - name: Cash register functionality
-          href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
-        - name: Sample for Retail POS integration with control units
-          href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
-    - name: Intelligence
-      items:
-      - name: Intelligence home page
-        href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
-      - name: Information access and reporting
-        href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-      - name: Power BI content
+     items:
+     - name: Monitor sales and margin performance
+       href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
+     - name: Analyze sales trends and patterns
+       href: ../retail/analyze-sales-trends-patterns.md?toc=/dynamics365/commerce/toc.json
+     - name: Assess sales performance by product
+       href: ../retail/sales-performance-products.md?toc=/dynamics365/commerce/toc.json
+     - name: Assess customer and product profitability
+       href: ../retail/assess-customer-product-profitability.md?toc=/dynamics365/commerce/toc.json
+     - name: Analyze store performance
+       href: ../retail/store-performance-information.md?toc=/dynamics365/commerce/toc.json
+     - name: Set up Recency, Frequency, and Monetary (RFM) analysis
+       href: ../retail/set-up-rfm-analysis.md?toc=/dynamics365/commerce/toc.json
+   - name: Localization and regulatory features
+     items:
+     - name: Fiscal integration overview for Retail channel
+       href: ../retail/localizations/fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+     - name: Set up fiscal integration for Retail channel
+       href: ../retail/localizations/setting-up-fiscal-integration-for-retail-channel.md?toc=/dynamics365/commerce/toc.json
+     - name: Austria
+       items:
+       - name: Fiscal registration service integration sample for Austria
+         href: ../retail/localizations/emea-aut-fi-sample.md?toc=/dynamics365/commerce/toc.json
+     - name: Eastern Europe
+       items: 
+       - name: Advance invoices for Retail for Eastern Europe
+         href: ../retail/localizations/emea-eeu-advance-invoices-for-retail.md?toc=/dynamics365/commerce/toc.json
+       - name: Petty cash management for Retail for Eastern Europe
+         href: ../retail/localizations/emea-eeu-petty-cash-for-retail.md?toc=/dynamics365/commerce/toc.json
+       - name: Retail customer invoices and return sales orders in Eastern European countries
+         href: ../retail/localizations/emea-eeu-retail-invoices.md?toc=/dynamics365/commerce/toc.json
+       - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+         href: ../retail/localizations/emea-eeu-deployment.md?toc=/dynamics365/commerce/toc.json
+       - name: Fiscal printer integration sample for Poland
+         href: ../retail/localizations/emea-pol-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+       - name: Fiscal registration service integration sample for Czech Republic
+         href: ../retail/localizations/emea-cze-fi-sample.md?toc=/dynamics365/commerce/toc.json
+     - name: France
+       items:
+       - name: Cash register functionality
+         href: ../retail/localizations/emea-fra-cash-registers.md?toc=/dynamics365/commerce/toc.json
+       - name: Deployment guidelines for cash registers
+         href: ../retail/localizations/emea-fra-deployment.md?toc=/dynamics365/commerce/toc.json
+     - name: India
+       items:
+       - name: Goods and Services Tax (GST) integration for cash registers
+         href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/commerce/toc.json
+       - name: Deployment guidelines for cash registers
+         href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+       - name: Support for upgrade and N-1 for India
+         href: ../retail/localizations/apac-ind-n-1-for-india.md?toc=/dynamics365/commerce/toc.json
+     - name: Italy
+       items:
+       - name: Fiscal printer integration sample for Italy
+         href: ../retail/localizations/emea-ita-fpi-sample.md?toc=/dynamics365/commerce/toc.json
+     - name: Mexico
+       items:
+       - name: Global CFDI e-invoices for Mexico
+         href: ../finance/localizations/latam-mex-global-cfdi-3-3.md?toc=/dynamics365/commerce/toc.json
+     - name: Norway
+       items:
+       - name: Cash register functionality
+         href: ../retail/localizations/emea-nor-cash-registers.md?toc=/dynamics365/commerce/toc.json
+       - name: Deployment guidelines for cash registers
+         href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/dynamics365/commerce/toc.json
+     - name: Sweden
+       items:
+       - name: Cash register functionality
+         href: ../retail/localizations/emea-swe-cash-registers.md?toc=/dynamics365/commerce/toc.json
+       - name: Sample for Retail POS integration with control units
+         href: ../retail/localizations/retail-sdk-control-unit-sample.md?toc=/dynamics365/commerce/toc.json
+   - name: Intelligence
+     items:
+     - name: Intelligence home page
+       href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
+     - name: Information access and reporting
+       href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
+     - name: Power BI content
         items:
         - name: Power BI content home page
           href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
