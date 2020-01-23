@@ -51,7 +51,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform update 32
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Microsoft Dynamics 365 Finance 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 
 ### Bug fixes 
