@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes preview features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.7. This version has a build number of 10.0.283 and is available as follows:
+This topic describes features that are new or changed for Microsoft Dynamics 365 Finance, version 10.0.7. This version has a build number of 10.0.283 and is available as follows:
 
 - Preview release is in October 2019.
 - General availability (self-update) is in November 2019.
