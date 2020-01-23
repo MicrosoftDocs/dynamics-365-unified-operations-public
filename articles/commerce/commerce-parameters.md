@@ -39,8 +39,6 @@ This topic describes how configure commerce parameter settings in Microsoft Dyna
 
 There are several commerce parameters that must be set during channel configuration.  
 
-(SAM: need more content here: what are they, why do we need to configure them?)
-
 ## Change commerce parameters
 
 To change commerce parameters, follow these steps.
@@ -49,49 +47,23 @@ To change commerce parameters, follow these steps.
 1. Select the appropriate tab for the parameter you are changing and update the desired setting.
 1. On the action bar, select **Save**.
 
-## Parameter details
+## Commerce parameters
 
-### General
-tbd
+- General
+- Posting
+- Accounting export
+- Customer orders
+- Replenishment
+- Prices and discounts
+- Number sequences
+- POS authentication 
+- Channel deployment
+- Configuration parameters
+- Transaction validation
+- Workforce management
+- Electronic documents
+- POS search criteria
 
-### Posting
-TBD
-
-### Accounting export
-tbd
-
-### Customer orders
-tbd
-
-### Replenishment
-tbd
-
-### Prices and discounts
-tbd
-
-### Number sequences
-tbd
-
-### POS authentication 
-tbd
-
-### Channel deployment
-tbd
-
-### Configuration parameters
-tbd
-
-### Transaction validation
-tbd
-
-### Workforce management
-tbd
-
-### Electronic documents
-tbd
-
-### POS search criteria
-tbd
 
 ## Additional resources
 
