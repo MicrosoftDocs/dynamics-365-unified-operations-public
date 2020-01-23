@@ -54,15 +54,15 @@ To review these fields further:
 
 So a sample set of redirect rows may look like the following:
 
-*www.oldsite.com/shop, www.newsite.com/allstores, 301*
+*https://www.oldsite.com/shop, https://www.newsite.com/allstores, 301*
 
-*www.oldsite.com/news, www.newsite.com/updates, 301*
+*https://www.oldsite.com/news, https://www.newsite.com/updates, 301*
 
 **<u>Important:</u>** The following **<u>must</u>** be followed in order for the bulk redirects to work correctly:
 
 - **<u>No header</u>** in the CSV file. The first or topmost row must start with the first redirect row
 - No circular entries - a source must not also be repeated as the target in the same row. Additionally, avoid a data set where a target may link back as a source via multiple rows (or redirects).
-- Web protocol prefixes are not required of the URLs provided (http://, https:// is not required in target and source urls). Otherwise, the data must be valid URL format (no spaces or invalid characters).
+- The source and target data must be valid URL format (no spaces or invalid characters).
 - **No Query String URLs** supported. The current solution will not execute query strings provided as source or target URLs.
 - CSV must be a valid CSV format. Use comma-separated, no header, new-line valid CSV data and file formatting.
 
@@ -94,4 +94,4 @@ If making additions, deletions, or edits to the CSV; once completed, use the "Re
 
 ## Turning off the bulk redirect mappings
 
-If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with blank Source and Target URLs. Click **Save & Publish** on the General settings page to commit the changes.
+If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with valid but non-existent Source and Target URLs. Click **Save & Publish** on the General settings page to commit the changes.
