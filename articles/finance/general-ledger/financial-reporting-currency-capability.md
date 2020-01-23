@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Currency considerations for financial reporting
+title: Currency capabilities in financial reporting
 description: Financial reporting includes features that support complex currency reporting requirements.
 author: ryansandness
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 10.0.8
 
 ---
 
-# Currency considerations for financial reporting
+# Currency capabilities in financial reporting
 
 [!include [banner](../includes/banner.md)]
 [!include preview banner]
@@ -39,7 +39,7 @@ Financial reporting includes features that support complex currency reporting re
 - Accounting currency amount 
 - Reporting currency amount 
 - Transaction currency amount 
-- Translate to any currency that has been set up in the system
+- Translate (currency translation is also known as conversion) to any currency that has been set up in the system
 
 ## Filtering by currency
 By default all report amounts are summarized and presented in the accounting currency of that company. If you need to do additional analysis by the transactions and related currencies, you can do so by setting filters on the report. 
@@ -72,14 +72,14 @@ For amounts being translated within Financial reporting, the following types of 
 
 
 ### Setup for Exchange rate type
-The exchange rate type defines the table of exchange rates and currencies to be used. The exchange rate type can be configured in multiple locations. 
+The exchange rate type defines the table of exchange rates and currencies to be used. The exchange rate type can be set in multiple locations. 
 
 - Within the **Main accounts** page within General ledger there is an option for **Exchange rate type** on the **Financial reporting** FastTab. 
 - You can also specify an override of an exchange rate type for a legal entity which will override the default behavior. 
 - If no exchange rate type is specified for a main account, the exchange rate type will default from the ledger.
 
 ### Setup for Currency translation type
-The Currency translation type will determine how each main account is translated. Currency translation rate type can also be configured in multiple locations. 
+The Currency translation type will determine how each main account is translated. Currency translation rate type can also be set in multiple locations. 
 - Within the **Main accounts** page within General ledger there is an option for **Currency translation type** on the **Financial reporting** FastTab. 
 - You can also specify an override of a currency translation rate type for a legal entity which will overide the default behavior. 
 
@@ -93,7 +93,7 @@ Currency translation for retained earnings accounts are subject to some specific
 
 Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 () enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality in preview, create a support incident for financial reporting to be enabled in a sandbox or development environment. 
 
-This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the **Currency translation type** set to **Transaction date** will calculate the translated balance of the account using rates and balances from its entire history using end-of-year rate * balance for all years, rather than only using the most recent year and rate.
+This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the **Currency translation type** field on the **Main accounts** page set to **Transaction date** will calculate the translated balance of the account using rates and balances from its entire history using end-of-year rate * balance for all years, rather than only using the most recent year and rate.
 
 ## Report design elements related to currency
 The are additional report design elements that can be used when doing reporting on currencies.
