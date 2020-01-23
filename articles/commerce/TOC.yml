@@ -594,58 +594,58 @@
           href:	enable-product-recommendations.md
         - name: Create curated product recommendation lists		
           href:	create-editorial-recommendation-lists.md
-         - name:	Manage AI-ML-based product recommendation results	
-           href: modify-product-recommendation-results.md
-         - name:	Get product recommendations using demo data	
-           href:	product-recommendations-demo-data.md
-         - name:	Product recommendations FAQ
-           href: faq-recommendations.md
-         - name: POS experiences
-           items:
-           - name: Product recommendations on POS
-             href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
-           - name: Add a recommendations control to the transaction screen on POS devices
-             href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
-       - name: Ratings and reviews 
-         items:
-         - name: Ratings and reviews overview
-           href:	ratings-reviews-overview.md	
-         - name: Opt in to use ratings and reviews		
-           href:	opt-in-ratings-reviews.md
-         - name:	Manage ratings and reviews	
-           href:	manage-reviews.md
-         - name:	Configure ratings and reviews	
-           href:	configure-ratings-reviews.md
-         - name:	Sync product ratings in Dynamics 365 Retail	
-           href:	sync-product-ratings.md
-    - name: Manage your inventory  
-      items:
-      - name: Inventory and purchase orders 
+        - name:	Manage AI-ML-based product recommendation results	
+          href: modify-product-recommendation-results.md
+        - name:	Get product recommendations using demo data	
+          href:	product-recommendations-demo-data.md
+        - name:	Product recommendations FAQ
+          href: faq-recommendations.md
+        - name: POS experiences
+          items:
+          - name: Product recommendations on POS
+            href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
+          - name: Add a recommendations control to the transaction screen on POS devices
+            href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+      - name: Ratings and reviews 
         items:
-        - name:	Inventory   
+         - name: Ratings and reviews overview
+          href:	ratings-reviews-overview.md	
+        - name: Opt in to use ratings and reviews		
+          href:	opt-in-ratings-reviews.md
+        - name:	Manage ratings and reviews	
+          href:	manage-reviews.md
+        - name:	Configure ratings and reviews	
+          href:	configure-ratings-reviews.md
+        - name:	Sync product ratings in Dynamics 365 Retail	
+          href:	sync-product-ratings.md
+      - name: Manage your inventory  
+        items:
+        - name: Inventory and purchase orders 
           items:
-          - name: Store inventory management  
-            href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-          - name: Working with serialized items 
-            href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-          - name: Push products from distribution center to store using buyer's push 
-            href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
-          - name: Set up rules and parameters for cross-docking and buyer's push  
-            href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-        - name: Purchase orders	  
-          items:
-          - name: Purchase order overview
-            href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-          - name: Create purchase orders
-            href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
-          - name: Product receipt against purchase orders
-            href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-          - name: Approve and confirm purchase orders
-            href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
-          - name: Purchase order approval mobile workspace
-            href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-          - name: Create product packages for purchase orders
-            href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+          - name:	Inventory   
+            items:
+            - name: Store inventory management  
+              href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
+            - name: Working with serialized items 
+              href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+            - name: Push products from distribution center to store using buyer's push 
+              href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
+            - name: Set up rules and parameters for cross-docking and buyer's push  
+              href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
+          - name: Purchase orders	  
+            items:
+            - name: Purchase order overview
+              href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+            - name: Create purchase orders
+              href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+            - name: Product receipt against purchase orders
+              href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+            - name: Approve and confirm purchase orders
+              href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+            - name: Purchase order approval mobile workspace
+              href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+            - name: Create product packages for purchase orders
+              href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
     - name: Manage your orders
       items:
       - name:	Sales orders   
@@ -708,7 +708,7 @@
           href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json	
         - name: Process adjustments of loyalty reward points	  
           href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
-    - name: Statements
+   - name: Statements
       items:
       - name: Statements overview
         href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
@@ -742,7 +742,7 @@
         href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
       - name: Posting of online sales and payments 
         href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-    - name: Manage your e-Commerce site 
+   - name: Manage your e-Commerce site 
       items:
       - name: Online store overview
         href: online-store-overview.md
@@ -930,11 +930,11 @@
         items:
         - name: Build custom response pages for 4xx/5xx status code errors
           href: build-pages-400-500-errors.md
-    - name: Fraud protection 
-      items:
-      - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
-        href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
-    - name: Monitoring and analysis
+   - name: Fraud protection 
+     items:
+     - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
+       href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
+   - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
         href: ../retail/monitor-sales-margin-performance.md?toc=/dynamics365/commerce/toc.json
