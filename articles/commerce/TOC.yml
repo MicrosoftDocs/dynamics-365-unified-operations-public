@@ -320,10 +320,6 @@
           items:
           - name: Create an online functionality profile
             href: online-functionality-profile.md		  
-        - name: Call center prerequisites
-          items:  	  
-          - name: Configure and work with call center order holds
-            href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
       - name: Set up a retail channel 
         items: 
         - name: Set up a retail channel
@@ -460,7 +456,7 @@
           href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
         - name: Retail Store Scale Unit
           href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-      - name: Call Center Management 
+      - name: Call Center management 
         items:
         - name: Configure and work with call center order holds
           href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
@@ -506,7 +502,7 @@
             href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
           - name: Create a new product hierarchy 
             href: create-product-hierarchy.md
-          - name: Manage Retail product categories and products 
+          - name: Manage retail product categories and products 
             href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
           - name: Change the sort order for merchandizing entities 
             href: ../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json
@@ -516,9 +512,9 @@
             href: ../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json
           - name: Create a variant group 
             href: create-variant-group.md
-        - name: Create and manage products 
+        - name: Create a new product
           items:
-          - name: Create a new product 
+          - name: Create a new product overview
             href: create-new-product.md
           - name: Release and configure a product 
             href: TBD.md
@@ -548,13 +544,13 @@
             href: ../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json
           - name: Manage assortments
             href: ../retail/tasks/manage-assortments-2016-11.md?toc=/dynamics365/commerce/toc.json
-        - name: Bar Codes 
+        - name: Bar codes 
           items:
           - name: Set up bar codes 
             href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
           - name: Set up bar code masks 
             href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
-        - name: Product Images 
+        - name: Product images 
           items:
           - name: Digital asset management 
             href: TBD.md
@@ -610,7 +606,7 @@
             href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
           - name: Create a continuity order 
             href: TBD.md
-        - name: Purchase Orders	  
+        - name: Purchase orders	  
           items:
           - name: Purchase order overview
             href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
@@ -636,9 +632,9 @@
             href: ../retail/order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
           - name: Set up order fulfillment for stores
             href: ../retail/order-fulfillment-pos-setup.md?toc=/dynamics365/commerce/toc.json
-          - name: Show order notifications in the POS
+          - name: Show order notifications in POS
             href: ../retail/notifications-pos.md?toc=/dynamics365/commerce/toc.json
-          - name: Selling continuity programs and processing sales orders
+          - name: Sell continuity programs and process sales orders
             href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
         - name:	Returns  
           items:
@@ -674,11 +670,45 @@
           href: ../retail/tasks/define-loyalty-schemes.md?toc=/dynamics365/commerce/toc.json	
         - name: Process adjustments of loyalty reward points	  
           href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
+    - name: Statements
+      items:
+      - name: Retail statements
+        href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
+      - name: Transaction consistency checker 
+        href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
+      - name: Disable rules in retail transaction consistency checker
+        href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
+      - name: Edit and audit retail store transactions
+        href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
+      - name: Create, calculate and post statements for a retail store
+        href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
+      - name: Improvements to statement posting functionality
+        href: ../retail/statement-posting-eod.md?toc=/dynamics365/commerce/toc.json
+      - name: Trickle feed-based order creation for retail store transactions 
+        href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
+      - name: Create, calculate and post statements for a retail store 
+        href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
+      - name: Improvements to statement posting functionality 
+        href: ../retail/statement-posting-eod.md?toc=/dynamics365/commerce/toc.json
+      - name: Improved handling of batch tracked items
+        href: ../retail/batch.md?toc=/dynamics365/commerce/toc.json
+      - name: Configure Retail parameters that affect statements 
+        href: ../retail/tasks/parameter-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
+      - name: Configure payment method settings that affect retail statements 
+        href: ../retail/tasks/payment-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
+      - name: Configure and run a job to calculate statements 
+        href: ../retail/tasks/run-job-calculate-statements.md?toc=/dynamics365/commerce/toc.json
+      - name: Configure and run a job to post statements 
+        href: ../retail/tasks/run-job-post-statements.md?toc=/dynamics365/commerce/toc.json
+      - name: Configure store settings that affect retail statements
+        href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
+      - name: Posting of online sales and payments 
+        href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
     - name: Manage your channels 
       items:
       - name: Channel management overview 	  
         href: TBD.md		  
-      - name: E-commerce store management 
+      - name: e-Commerce store management 
         items:
         - name: Online store overview
           href: online-store-overview.md
@@ -876,40 +906,6 @@
           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
         - name: Whole amount and interval calculation options for sales tax codes 
           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
-      - name: Statements
-        items:
-        - name: Retail statements
-          href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Transaction consistency checker 
-          href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
-        - name: Disable rules in retail transaction consistency checker
-          href: ../retail/disable-consistency-check-rule.md?toc=/dynamics365/commerce/toc.json
-        - name: Edit and audit retail store transactions
-          href: ../retail/edit-audit-retail-transactions.md?toc=/dynamics365/commerce/toc.json
-        - name: Create, calculate and post statements for a retail store
-          href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-        - name: Improvements to statement posting functionality
-          href: ../retail/statement-posting-eod.md?toc=/dynamics365/commerce/toc.json
-        - name: Trickle feed-based order creation for retail store transactions 
-          href: ../retail/trickle-feed.md?toc=/dynamics365/commerce/toc.json
-        - name: Create, calculate and post statements for a retail store 
-          href: ../retail/tasks/create-calculate-post-statement-retail-store.md?toc=/dynamics365/commerce/toc.json
-        - name: Improvements to statement posting functionality 
-          href: ../retail/statement-posting-eod.md?toc=/dynamics365/commerce/toc.json
-        - name: Improved handling of batch tracked items
-          href: ../retail/batch.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure Retail parameters that affect statements 
-          href: ../retail/tasks/parameter-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure payment method settings that affect retail statements 
-          href: ../retail/tasks/payment-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and run a job to calculate statements 
-          href: ../retail/tasks/run-job-calculate-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure and run a job to post statements 
-          href: ../retail/tasks/run-job-post-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure store settings that affect retail statements
-          href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
-        - name: Posting of online sales and payments 
-          href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
       - name: Data Syncing 
         items:
         - name: How to ensure new products show up in store 
