@@ -148,6 +148,8 @@
       href: access-preview-feature.md
     - name: Provision Onboard
       href: modular-app-tech-faq.md
+    - name: Export data from Attract and Onboard
+      href: attract-onboard-export-data.md
     - name: Embed Power Apps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR entities in Common Data Service
