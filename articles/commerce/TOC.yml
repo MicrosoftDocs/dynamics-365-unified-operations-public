@@ -258,7 +258,7 @@
           href: ../retail/dev-itpro/retail-implementation-testing-performance.md?toc=/dynamics365/commerce/toc.json
     - name: Set up your channels 
       items:
-      - name: Set up retail channels
+      - name: Channels overview
         href: channels-overview.md	  
       - name: Channel prerequisites
         items:
@@ -280,7 +280,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/commerce/toc.json
             - name: Define the relationships between organizational units
               href: ../retail/tasks/design-relationships-between-organizational-units.md?toc=/dynamics365/commerce/toc.json
-          - name: Warehouse set up
+          - name: Warehouse setup
             href: channels-setup-warehouse.md
           - name: Sales tax setup	
             items:
@@ -290,7 +290,7 @@
               href:	../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json		
             - name: Sales tax assignment and overrides			
               href:	../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json		
-            - name: Whole amount and Interval calculation options for sales tax codes
+            - name: Whole amount and interval calculation options for sales tax codes
               href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
           - name: Set up an email notification profile 
             href: email-notification-profiles.md
@@ -319,7 +319,9 @@
         - name: Online channel prerequisites 
           items:
           - name: Create an online functionality profile
-            href: online-functionality-profile.md		  
+            href: online-functionality-profile.md	
+        - name: Call center prerequisites
+          href: TBD
       - name: Set up a retail channel 
         items: 
         - name: Set up a retail channel
@@ -442,6 +444,10 @@
         items:
         - name: Add a channel to an organization hierarchy  
           href: channel-add-to-org-hierarchy.md
+        - name: Data Syncing 
+          items:
+          - name: How to ensure new products show up in store 
+            href: TBD.md
         - name: Configure channel to channel database (RCSU)
           href: TBD.md
         - name: Advanced auto charges 
@@ -449,43 +455,43 @@
           - name: Configure and use advanced auto charges 
             href: ../retail/omni-auto-charges.md?toc=/dynamics365/commerce/toc.json
           - name: Prorate header charges to matching sales lines
-            href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json
-      - name: Retail store management 
-        items:
-        - name: Create and change store hours
-          href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
-        - name: Retail Store Scale Unit
-          href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-      - name: Call Center management 
-        items:
-        - name: Configure and work with call center order holds
-          href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
-        - name: Define continuity schedules
-          href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
-      - name: Payments
-        items:
-        - name: Payment methods 
-          href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
-        - name: Payment methods in call centers 
-          href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Credit card setup, authorization, and capture
-          href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure cash denominations for the POS
-          href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
-        - name: Configure credit card processing
-          href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
-        - name: Adyen payment connector
-          href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
-        - name: Saving online payment instruments with the Adyen connector
-          href: ../retail/dev-itpro/adyen-connector-listpi.md?toc=/dynamics365/commerce/toc.json
-        - name: Set up pay invoice scenarios 
-          href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
-        - name: Duplicate payments prevention 
-          href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
-        - name: Omni-channel payments overview 
-          href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
-        - name: Payments FAQ 
-          href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json     
+            href: ../retail/pro-rate-charges-matching-lines.md?toc=/dynamics365/commerce/toc.json 
+        - name: Retail store management 
+          items:
+          - name: Create and change store hours
+            href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
+          - name: Retail Store Scale Unit
+            href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
+        - name: Call Center management 
+          items:
+          - name: Configure and work with call center order holds
+            href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
+          - name: Define continuity schedules
+            href: ../retail/tasks/define-continuity-schedules.md?toc=/dynamics365/commerce/toc.json
+        - name: Payments
+          items:
+          - name: Payment methods 
+            href: ../retail/payment-methods.md?toc=/dynamics365/commerce/toc.json
+          - name: Payment methods in call centers 
+            href: ../retail/work-with-payments.md?toc=/dynamics365/commerce/toc.json
+          - name: Credit card setup, authorization, and capture
+            href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure cash denominations for the POS
+            href: ../retail/cash-denominations.md?toc=/dynamics365/commerce/toc.json
+          - name: Configure credit card processing
+            href: ../retail/tasks/configure-credit-card-processing.md?toc=/dynamics365/commerce/toc.json
+          - name: Adyen payment connector
+            href: ../retail/dev-itpro/adyen-connector.md?toc=/dynamics365/commerce/toc.json
+          - name: Saving online payment instruments with the Adyen connector
+            href: ../retail/dev-itpro/adyen-connector-listpi.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up pay invoice scenarios 
+            href: ../retail/payinvoice.md?toc=/dynamics365/commerce/toc.json
+          - name: Duplicate payments prevention 
+            href: ../retail/duplicate-payment-protection.md?toc=/dynamics365/commerce/toc.json
+          - name: Omni-channel payments overview 
+            href: ../retail/omni-channel-payments.md?toc=/dynamics365/commerce/toc.json
+          - name: Payments FAQ 
+            href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json     
     - name: Merchandizing your products and services  
       items:
       - name: Merchandizing overview 	  
@@ -516,8 +522,6 @@
           items:
           - name: Create a new product overview
             href: create-new-product.md
-          - name: Release and configure a product 
-            href: TBD.md
           - name: Manage retail product categories and products 
             href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
         - name: Product attributes 
@@ -532,8 +536,6 @@
             href: TBD.md
           - name: Create a channel navigation hierarchy
             href: create-channel-hierarchy.md
-          - name: Add products to hierarchy 
-            href: TBD.md
           - name: Configure channel to use a channel navigation hierarchy 
             href: configure-channel-hierarchy.md
         - name: Assortments
@@ -582,7 +584,41 @@
           href: ../retail/tasks/base-price-trade-agreements.md?toc=/dynamics365/commerce/toc.json
         - name: Create trade agreements using category pricing rules
           href: ../retail/tasks/category-pricing-rules-trade-agreements.md?toc=/dynamics365/commerce/toc.json
-    - name: Manage your orders and inventory  
+      - name: Recommendations 
+        items:
+        - name:	Product recommendations overview	
+          href:	product-recommendations.md	
+        - name:	Add product recommendation lists to e-Commerce pages	
+          href:	add-reco-list-to-page.md
+        - name:	Enable product recommendations
+          href:	enable-product-recommendations.md
+        - name: Create curated product recommendation lists		
+          href:	create-editorial-recommendation-lists.md
+         - name:	Manage AI-ML-based product recommendation results	
+           href: modify-product-recommendation-results.md
+         - name:	Get product recommendations using demo data	
+           href:	product-recommendations-demo-data.md
+         - name:	Product recommendations FAQ
+           href: faq-recommendations.md
+         - name: POS experiences
+           items:
+           - name: Product recommendations on POS
+             href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
+           - name: Add a recommendations control to the transaction screen on POS devices
+             href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
+       - name: Ratings and reviews 
+         items:
+         - name: Ratings and reviews overview
+           href:	ratings-reviews-overview.md	
+         - name: Opt in to use ratings and reviews		
+           href:	opt-in-ratings-reviews.md
+         - name:	Manage ratings and reviews	
+           href:	manage-reviews.md
+         - name:	Configure ratings and reviews	
+           href:	configure-ratings-reviews.md
+         - name:	Sync product ratings in Dynamics 365 Retail	
+           href:	sync-product-ratings.md
+    - name: Manage your inventory  
       items:
       - name: Inventory and purchase orders 
         items:
@@ -596,16 +632,6 @@
             href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
           - name: Set up rules and parameters for cross-docking and buyer's push  
             href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-        - name:	Sales orders   
-          items:
-          - name: Create a customer order 
-            href: TBD.md
-          - name: Create a cash and carry order 
-            href: TBD.md
-          - name: Create a call center order 
-            href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
-          - name: Create a continuity order 
-            href: TBD.md
         - name: Purchase orders	  
           items:
           - name: Purchase order overview
@@ -620,34 +646,46 @@
             href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
           - name: Create product packages for purchase orders
             href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-        - name: Distributed order management	  
-          items:
-          - name: DOM overview
-            href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
-          - name: Cost configuration
-            href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
-        - name: Order fulfillment and processing 
-          items:
-          - name: Store order fulfillment
-            href: ../retail/order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
-          - name: Set up order fulfillment for stores
-            href: ../retail/order-fulfillment-pos-setup.md?toc=/dynamics365/commerce/toc.json
-          - name: Show order notifications in POS
-            href: ../retail/notifications-pos.md?toc=/dynamics365/commerce/toc.json
-          - name: Sell continuity programs and process sales orders
-            href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
-        - name:	Returns  
-          items:
-          - name: Linked refunds
-            href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
-          - name: Sell and return products not included in a store's assortment
-            href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
-          - name: Configure and process an exchange on a return order
-            href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
-          - name: Restrict payment methods for returns without a receipt
-            href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
-          - name: Return items across multiple customer orders and invoices
-            href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json	
+    - name: Manage your orders
+      items:
+      - name:	Sales orders   
+        items:
+        - name: Create a customer order 
+          href: TBD.md
+        - name: Create a cash and carry order 
+          href: TBD.md
+        - name: Create a call center order 
+          href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
+        - name: Create a continuity order 
+          href: TBD.md
+      - name: Distributed order management	  
+        items:
+        - name: DOM overview
+          href: ../retail/dom.md?toc=/dynamics365/commerce/toc.json
+        - name: Cost configuration
+          href: ../retail/cost.md?toc=/dynamics365/commerce/toc.json
+      - name: Order fulfillment and processing 
+        items:
+        - name: Store order fulfillment
+          href: ../retail/order-fulfillment-overview.md?toc=/dynamics365/commerce/toc.json
+        - name: Set up order fulfillment for stores
+          href: ../retail/order-fulfillment-pos-setup.md?toc=/dynamics365/commerce/toc.json
+        - name: Show order notifications in POS
+          href: ../retail/notifications-pos.md?toc=/dynamics365/commerce/toc.json
+        - name: Sell continuity programs and process sales orders
+          href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
+      - name:	Returns  
+        items:
+        - name: Linked refunds
+          href: ../retail/dev-itpro/linked-refunds.md?toc=/dynamics365/commerce/toc.json
+        - name: Sell and return products not included in a store's assortment
+          href: ../retail/sell-return-outside-assortments.md?toc=/dynamics365/commerce/toc.json
+        - name: Configure and process an exchange on a return order
+          href: ../retail/orderexchanges.md?toc=/dynamics365/commerce/toc.json
+        - name: Restrict payment methods for returns without a receipt
+          href: ../retail/payment-methods-restrictions.md?toc=/dynamics365/commerce/toc.json
+        - name: Return items across multiple customer orders and invoices
+          href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json	
     - name: Manage your customers  
       items:
       - name: Customers 
@@ -672,7 +710,7 @@
           href: ../retail/tasks/process-loyalty-reward-point-adjustments.md?toc=/dynamics365/commerce/toc.json
     - name: Statements
       items:
-      - name: Retail statements
+      - name: Statements overview
         href: ../retail/retail-statements.md?toc=/dynamics365/commerce/toc.json
       - name: Transaction consistency checker 
         href: ../retail/valid-checker.md?toc=/dynamics365/commerce/toc.json
@@ -704,252 +742,198 @@
         href: ../retail/tasks/store-configurations-retail-statements.md?toc=/dynamics365/commerce/toc.json
       - name: Posting of online sales and payments 
         href: ../retail/tasks/posting-online-sales-payments.md?toc=/dynamics365/commerce/toc.json
-    - name: Manage your channels 
+    - name: Manage your e-Commerce site 
       items:
-      - name: Channel management overview 	  
-        href: TBD.md		  
-      - name: e-Commerce store management 
+      - name: Online store overview
+        href: online-store-overview.md
+      - name: Create an e-Commerce site
         items:
-        - name: Online store overview
-          href: online-store-overview.md
+        - name: Configure your domain name
+          href: configure-your-domain-name.md
+        - name: Deploy a new e-Commerce tenant
+          href: deploy-ecommerce-site.md
+        - name: Set up an online store channel
+          href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json            
         - name: Create an e-Commerce site
+          href: create-ecommerce-site.md
+        - name: Associate an e-Commerce site with an online channel
+          href: associate-site-online-store.md
+        - name: Manage robots.txt files
+          href: manage-robots-txt-files.md
+        - name: Set up custom pages for user sign-ins
+          href: custom-pages-user-logins.md
+        - name: Add support for a content delivery network (CDN)
+          href: add-cdn-support.md
+        - name: Enable location-based store detection
+          href: enable-store-detection.md
+      - name: Sample site overview
+        items:
+        - name: Overview of the home page
+          href: quick-tour-home-page.md
+        - name: Overview of default category landing page and search results page
+          href: category-search-page-overview.md 
+        - name: Overview of product details pages
+          href: quick-tour-pdp.md
+        - name: Overview of cart and checkout pages
+          href: quick-tour-cart-checkout.md
+        - name: Overview of of account management pages
+          href: quick-tour-account-management.md
+      - name: Manage your site settings
+        items:
+        - name: Authoring page overview
+          href: authoring-home-overview.md
+        - name: Manage users and roles
+          href: manage-ecommerce-users-roles.md
+        - name: Search engine optimization (SEO) considerations for your site
+          href: search-engine-optimization-considerations.md
+        - name: Manage Content Security Policy (CSP)
+          href: manage-csp.md
+      - name: Manage your site content 
+        items:
+        - name: Ways to add content
+          href: add-manage-content.md
+        - name: Page model glossary
+          href: page-elements-overview.md
+        - name: Document states and lifecycle
+          href: document-states-overview.md
+        - name: Work with publish groups
+          href: publish-groups.md
+        - name: Brand your site and add store details
           items:
-          - name: Configure your domain name
-            href: configure-your-domain-name.md
-          - name: Deploy a new e-Commerce tenant
-            href: deploy-ecommerce-site.md
-          - name: Set up an online store channel
-            href: ../retail/online-stores.md?toc=/dynamics365/commerce/toc.json            
-          - name: Create an e-Commerce site
-            href: create-ecommerce-site.md
-          - name: Associate an e-Commerce site with an online channel
-            href: associate-site-online-store.md
-          - name: Manage robots.txt files
-            href: manage-robots-txt-files.md
-          - name: Set up custom pages for user sign-ins
-            href: custom-pages-user-logins.md
-          - name: Add support for a content delivery network (CDN)
-            href: add-cdn-support.md
-          - name: Enable location-based store detection
-            href: enable-store-detection.md
-        - name: Sample site overview
+          - name: Add a logo
+            href: add-logo.md 
+          - name: Select a site theme
+            href: select-site-theme.md
+          - name: Work with CSS override files
+            href: css-override-files.md
+          - name: Add a favicon
+            href: add-favicon.md
+          - name: Add a welcome message
+            href: add-welcome-message.md 
+          - name: Add a copyright notice
+            href: add-copyright-notice.md
+          - name: Add languages
+            href: add-languages-to-site.md
+          - name: Add script code to site pages to support telemetry
+            href: add-telemetry.md
+        - name: Modules
           items:
-          - name: Overview of the home page
-            href: quick-tour-home-page.md
-          - name: Overview of default category landing page and search results page
-            href: category-search-page-overview.md 
-          - name: Overview of product details pages
-            href: quick-tour-pdp.md
-          - name: Overview of cart and checkout pages
-            href: quick-tour-cart-checkout.md
-          - name: Overview of of account management pages
-            href: quick-tour-account-management.md
-        - name: Manage your site settings
+          - name: Work with modules
+            href: work-with-modules.md
+        - name: Fragments
           items:
-          - name: Authoring page overview
-            href: authoring-home-overview.md
-          - name: Manage users and roles
-            href: manage-ecommerce-users-roles.md
-          - name: Search engine optimization (SEO) considerations for your site
-            href: search-engine-optimization-considerations.md
-          - name: Manage Content Security Policy (CSP)
-            href: manage-csp.md
-        - name: Manage your site content 
+          - name: Work with fragments
+            href: work-with-fragments.md
+        - name: Templates
           items:
-          - name: Ways to add content
-            href: add-manage-content.md
-          - name: Page model glossary
-            href: page-elements-overview.md
-          - name: Document states and lifecycle
-            href: document-states-overview.md
-          - name: Work with publish groups
-            href: publish-groups.md
-          - name: Brand your site and add store details
-            items:
-            - name: Add a logo
-              href: add-logo.md 
-            - name: Select a site theme
-              href: select-site-theme.md
-            - name: Work with CSS override files
-              href: css-override-files.md
-            - name: Add a favicon
-              href: add-favicon.md
-            - name: Add a welcome message
-              href: add-welcome-message.md 
-            - name: Add a copyright notice
-              href: add-copyright-notice.md
-            - name: Add languages
-              href: add-languages-to-site.md
-            - name: Add script code to site pages to support telemetry
-              href: add-telemetry.md
-          - name: Modules
-            items:
-            - name: Work with modules
-              href: work-with-modules.md
-          - name: Fragments
-            items:
-            - name: Work with fragments
-              href: work-with-fragments.md
-          - name: Templates
-            items:
-            - name: Templates and layouts overview
-              href: templates-layouts-overview.md
-            - name: Work with templates
-              href: work-with-templates.md
-            - name: Work with preset layouts
-              href: work-with-layouts.md
-          - name: Pages
-            items:
-            - name: Modify an existing site page
-              href: modify-existing-page.md
-            - name: Add a new site page
-              href: add-new-page.md
-            - name: Select page layouts
-              href: select-page-layouts.md
-            - name: Manage SEO metadata
-              href: manage-seo-metadata.md
-            - name: Save, preview, and publish a page
-              href: save-preview-publish-page.md
-            - name: Enrich a product page
-              href: enrich-product-page.md
-            - name: Enrich a category landing page
-              href: enrich-category-page.md
-            - name: Verify page content accessibility
-              href: verify-accessibility.md
-          - name: Site navigation
-            items:
-            - name: Customize site navigation
-              href: customize-site-navigation.md
-            - name: Create a page URL
-              href: create-page-URL.md
-        - name: Make your site compliant
+          - name: Templates and layouts overview
+            href: templates-layouts-overview.md
+          - name: Work with templates
+            href: work-with-templates.md
+          - name: Work with preset layouts
+            href: work-with-layouts.md
+        - name: Pages
           items:
-          - name: Compliance overview
-            href: compliance-overview.md
-          - name: Accessibility features and capabilities
-            href: accessibility.md
-          - name: Cookie compliance
-            href: cookie-compliance.md
-          - name: Add a privacy policy page
-            href: add-privacy-page.md
-        - name: Starter kit
-          items: 
-          - name: Starter kit overview
-            href: starter-kit-overview.md
-          - name: Container modules
-            items:
-            - name: Container module
-              href: add-container-module.md
-          - name: Marketing modules
-            items:
-            - name: Alert module 
-              href: add-alert.md
-            - name: Carousel module
-              href: add-carousel.md
-            - name: Content placement module
-              href: add-content-placement-modules.md
-            - name: Content rich block module
-              href: add-content-rich-block.md
-            - name: Feature module
-              href: add-feature-module.md
-            - name: Hero module
-              href: add-hero-module.md 
-            - name: Video player module
-              href: add-video-player.md
-          - name: Header and footer modules
-            items:
-            - name: Header module
-              href: author-header-module.md
-            - name: Footer module
-              href: author-footer-module.md
-          - name: Product detail page modules
-            items:
-            - name: Buy box module
-              href: add-buy-box.md
-          - name: Purchase modules
-            items:
-            - name: Cart module
-              href: add-cart-module.md
-            - name: Checkout module
-              href: add-checkout-module.md
-            - name: Order confirmation module
-              href: order-confirmation-module.md 
-          - name: Account management modules
-            items:
-            - name: Account management pages and modules
-              href: account-management.md
+          - name: Modify an existing site page
+            href: modify-existing-page.md
+          - name: Add a new site page
+            href: add-new-page.md
+          - name: Select page layouts
+            href: select-page-layouts.md
+          - name: Manage SEO metadata
+            href: manage-seo-metadata.md
+          - name: Save, preview, and publish a page
+            href: save-preview-publish-page.md
+          - name: Enrich a product page
+            href: enrich-product-page.md
+          - name: Enrich a category landing page
+            href: enrich-category-page.md
+          - name: Verify page content accessibility
+            href: verify-accessibility.md
+        - name: Site navigation
+          items:
+          - name: Customize site navigation
+            href: customize-site-navigation.md
+          - name: Create a page URL
+            href: create-page-URL.md
+      - name: Make your site compliant
+        items:
+        - name: Compliance overview
+          href: compliance-overview.md
+        - name: Accessibility features and capabilities
+          href: accessibility.md
+        - name: Cookie compliance
+          href: cookie-compliance.md
+        - name: Add a privacy policy page
+          href: add-privacy-page.md
+      - name: Starter kit
+        items: 
+        - name: Starter kit overview
+          href: starter-kit-overview.md
+        - name: Container modules
+          items:
+          - name: Container module
+            href: add-container-module.md
+        - name: Marketing modules
+          items:
+          - name: Alert module 
+            href: add-alert.md
+          - name: Carousel module
+            href: add-carousel.md
+          - name: Content placement module
+            href: add-content-placement-modules.md
+          - name: Content rich block module
+            href: add-content-rich-block.md
+          - name: Feature module
+            href: add-feature-module.md
+          - name: Hero module
+            href: add-hero-module.md 
+          - name: Video player module
+            href: add-video-player.md
+        - name: Header and footer modules
+          items:
+          - name: Header module
+            href: author-header-module.md
+          - name: Footer module
+            href: author-footer-module.md
+        - name: Product detail page modules
+          items:
+          - name: Buy box module
+            href: add-buy-box.md
+        - name: Purchase modules
+          items:
+          - name: Cart module
+            href: add-cart-module.md
+          - name: Checkout module
+            href: add-checkout-module.md
+          - name: Order confirmation module
+            href: order-confirmation-module.md 
+        - name: Account management modules
+          items:
+          - name: Account management pages and modules
+            href: account-management.md
+        - name: Product collection modules
+          items:
           - name: Product collection modules
-            items:
-            - name: Product collection modules
-              href: product-collection-module-overview.md
-        - name: Search
-          items:
-          - name: Default category landing page and search results page
-            href: category-search-page-overview.md
-          - name: Cloud-powered search overview
-            href: cloud-powered-search-overview.md
-        - name: Reporting
-          items:
-          - name: Generate online channel reports
-            href: generate-reports.md
-        - name: Error handling
-          items:
-          - name: Build custom response pages for 4xx/5xx status code errors
-            href: build-pages-400-500-errors.md
-      - name: Sales Tax 
+            href: product-collection-module-overview.md
+      - name: Search
         items:
-        - name: Sales tax overview 
-          href: ../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json
-        - name: Sales tax calculation methods in the Origin field
-          href: ../finance/general-ledger/sales-tax-calculation-methods-origin-field.md?toc=/dynamics365/commerce/toc.json
-        - name: Sales tax assignment and overrides 
-          href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
-        - name: Whole amount and interval calculation options for sales tax codes 
-          href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
-      - name: Data Syncing 
+        - name: Default category landing page and search results page
+          href: category-search-page-overview.md
+        - name: Cloud-powered search overview
+          href: cloud-powered-search-overview.md
+      - name: Reporting
         items:
-        - name: How to ensure new products show up in store 
-          href: TBD.md
-    - name: Manage surround apps and services 
+        - name: Generate online channel reports
+          href: generate-reports.md
+      - name: Error handling
+        items:
+        - name: Build custom response pages for 4xx/5xx status code errors
+          href: build-pages-400-500-errors.md
+    - name: Fraud protection 
       items:
-      - name: Ratings and reviews 
-        items:
-        - name: Ratings and reviews overview
-          href:	ratings-reviews-overview.md	
-        - name: Opt in to use ratings and reviews		
-          href:	opt-in-ratings-reviews.md
-        - name:	Manage ratings and reviews	
-          href:	manage-reviews.md
-        - name:	Configure ratings and reviews	
-          href:	configure-ratings-reviews.md
-        - name:	Sync product ratings in Dynamics 365 Retail	
-          href:	sync-product-ratings.md
-      - name: Product recommendations 
-        items:
-        - name:	Product recommendations overview	
-          href:	product-recommendations.md	
-        - name:	Add product recommendation lists to e-Commerce pages	
-          href:	add-reco-list-to-page.md
-        - name:	Enable product recommendations
-          href:	enable-product-recommendations.md
-        - name: Create curated product recommendation lists		
-          href:	create-editorial-recommendation-lists.md
-        - name:	Manage AI-ML-based product recommendation results	
-          href: modify-product-recommendation-results.md
-        - name:	Get product recommendations using demo data	
-          href:	product-recommendations-demo-data.md
-        - name:	Product recommendations FAQ
-          href: faq-recommendations.md
-        - name: POS experiences
-          items:
-          - name: Product recommendations on POS
-            href: ../retail/product.md?toc=/dynamics365/commerce/toc.json
-          - name: Add a recommendations control to the transaction screen on POS devices
-            href: ../retail/add-recommendations-control-pos-screen.md?toc=/dynamics365/commerce/toc.json
-      - name: Fraud protection 
-        items:
-        - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
-          href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
+      - name:	Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce	
+        href:	../retail/dev-itpro/DFP.md?toc=/dynamics365/commerce/toc.json
     - name: Monitoring and analysis
       items:
       - name: Monitor sales and margin performance
@@ -1068,8 +1052,6 @@
         href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
       - name: Selling continuity programs and processing sales orders
         href: ../retail/tasks/use-continuity-program.md?toc=/dynamics365/commerce/toc.json
-      - name: Configure retail workers
-        href: ../retail/tasks/worker.md?toc=/dynamics365/commerce/toc.json
     - name: Intelligence
       items:
       - name: Intelligence home page
