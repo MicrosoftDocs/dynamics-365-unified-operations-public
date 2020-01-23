@@ -90,8 +90,6 @@ To add a promo banner module to a page and set the required properties, follow t
 
 [Text block module](add-content-rich-block.md)
 
-[Content block module](add-feature-module.md)
-
-[Hero module](add-hero-module.md)
+[Content block module](add-hero-module.md)
 
 [Video player module](add-video-player.md)
