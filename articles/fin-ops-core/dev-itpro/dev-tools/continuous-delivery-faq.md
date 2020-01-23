@@ -24,7 +24,7 @@ ms.custom: 202614
 ms.assetid: bc80fee3-8f54-43c4-9162-f058056c956c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 
