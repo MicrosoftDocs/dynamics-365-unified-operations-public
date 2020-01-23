@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
 
 ---
-# What's new and changed in Dynamics 365 Finance version 10.0.7 (January 2020)
+# What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020)
 
 [!include [banner](../includes/banner.md)]
 
