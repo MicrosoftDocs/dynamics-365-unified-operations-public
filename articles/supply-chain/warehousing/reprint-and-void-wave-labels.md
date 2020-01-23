@@ -65,49 +65,7 @@ Wave labels can be viewed and re-printed from the following forms (**Related inf
 
 ### Setup
 
-#### Mobile device menu items
-
-1. Go to **Warehouse management** \>
-1. Click
-1. Select
-1. Click **OK** to confirm your selection.
-
-#### Mobile device menu
-
-1. Go to **Warehouse management** \>
-1. Click
-1. Select
-1. Click **OK** to confirm your selection.
-
 ### Process
-
-1.	The user enters a **Reprint multiple carton labels** menu item.
-1.	He is prompted to scan the **Shipment ID**.
-1.  Once the **Shipment ID** is scanned, a list of all available label rolls is displayed as tiles
-    1. **Label build ID** acts as a identifier of a label roll
-1.	Three sub-scenarios are possible:
-    1. Product range.
-    1. Carton number range.
-    1. Wave label ID range.
-1.	The following flow for the “Product range” option. Once scanned and no enumeration on the label: [we are assuming that we cannot scan the SSCC bar code]
-    1. The user is asked for Item ID (the standard way of searching for the item – barcode, external number, etc.)
-    1.	The user enters how many labels to print
-    1.	User gets a confirmation that x label(s) will be sent to print
-    1. User confirms with Print button, the print is sent to queue
-1.	Once scanned and there is an enumeration (“Enumeration” range option on the menu item):
-    1.	A dialogue asks for the start of the series of labels, the dialogue should show __/Y to make the user understand that it’s__ value that is needed
-    1.	The user enters that value the system shows above the input field the value “Start of reprint series x/Y”
-    1.	The system asks how long the series should be (the final carton number to reprint)?
-    1.	The user enters a value z (*** no value equals y if y then the rest of the series ? )
-    1.	The system shows the next dialog “Reprint labels: x-z/Y”
-    1.	User confirms with Print button, the print is sent to queue
-    1.	In case of cancel the user is brought back to step a. if he cancels again he is out of that menu
-1.	Once scanned and for option “Wave label id range” on the menu item:
-    1.	The user is asked for the last good printed label
-    1.	The user enters how many labels to reprint
-    1.	User gets a confirmation that x-z/Y label(s) will be sent to print (the labels following the last good label are selected)
-    1.	User confirms with Print button, the print is sent to queue
-
 
 ## Scenario 3. Short pick
 
