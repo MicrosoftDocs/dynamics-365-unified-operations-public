@@ -5,7 +5,7 @@ title: Deploy a new e-Commerce tenant
 description: This topic describes how to deploy a new e-Commerce tenant by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -85,19 +85,16 @@ After you've collected the required information, follow these steps to initializ
 1. On the next page, fill in the required information, and then submit the form. You're returned to the **e-Commerce** tab, where you should see that initialization has been started.
 1. To view the initialization status, either **Refresh** or return to the **e-Commerce** tab later.
 	
-
-When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site builder where sites are authored.
+When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is complete, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site builder where sites are authored.
 
 ## Access site builder
 
-To access site builder, go to the **e-Commerce** tab on the **Retail management** page in [LCS](https://lcs.dynamics.com) and click the **e-Commerce site management tool** link. The site builder landing page displays a tenant-level view. From this page, you can:
+To access site builder, go to the **e-Commerce** tab on the **Retail management** page in LCS and select the **e-Commerce site management tool** link. The site builder landing page displays a tenant-level view. From this page, you can:
 
-1. Modify tenant-level settings.
-2. Navigate to any site you have created, and have permission to view. 
-3. Access Reviews features such as moderation and reporting.
-4. Create a new site. See the [Create an e-Commerce site](create-ecommerce-site.md) help topic to learn more about how to create a new site. 
-
- 
+- Modify tenant-level settings.
+- Navigate to any site you have created, and have permission to view. 
+- Access Reviews features such as moderation and reporting.
+- Create a new site. For more information about how to create a new site, see [Create an e-Commerce site](create-ecommerce-site.md) . 
 
 ## Additional resources
 
