@@ -43,9 +43,9 @@ The following options are available for transferring subledger batches.
 
  - Asynchronous – This choice will schedule the transfer of the subledger accounting entries to the general ledger immediately. The general ledger voucher will be recorded as soon as resources are free to process this request on the server. 
 
-- Scheduled batch – Scheduled batch – This choice will add the subledger accounting entries that are being transferred to the processing queue in general ledger where it will be processed in its turn. The general ledger voucher will be recorded at the scheduled time, as long as resources are free to process this batch job on the server. 
+- Scheduled batch – This choice will add the subledger accounting entries that are being transferred to the processing queue in general ledger where it will be processed in its turn. The general ledger voucher will be recorded at the scheduled time, as long as resources are free to process this batch job on the server. 
  
 Version 10.0.8 has improved the performance of the Asynchrounous option. This feature is enabled under the feature name **Subledger transfer to General Ledger performance optimization**. 
  
-This functionality improves the the transfer of data from the subledger to the general ledger. It allows the process to be more efficient and group sets of smaller transactions to transfer together allowing for a more efficient use of the batch server. 
+This functionality improves the the transfer of data from the subledger to the general ledger. It allows the process to be more efficient, and it groups together sets of smaller transactions to transfer, which allows for a more efficient use of the batch server. 
 This does require the batch server to be set up, online, and functioning for the Asynchrounous transfer option to work. 
