@@ -90,12 +90,13 @@ This feature allows you to select accounts groups when setting up voucher types 
 
 ### Set up voucher type
 1. Go to **General ledger > Journal setup > Chinese voucher type > Voucher type**.
-2. On the **Rules** FastTab, select the line with a specific restriction.
-2. On the **Impacted accounts** FastTab, click **Add** and set up the accounts for the selected rule:
-- In the **Account type** field, select **Ledger**, **Customer**, **Vendor**, **Project**, **Fixed assets**, or **Bank**.
-- In the **Account code**, select **Account**, **Group**, or **All**. Note that **Group** is not available for **Ledger** account code.
-- In the **Group number** field, select customer group, vendor group, project group, fixed asset group, or bank group respectively to the value in **Account type**, if you selected **Group** in the  **Account code** field.
-- In the **Account number** field, select ledger account, customer account, vendor account, project ID, fixed asset number, or bank account respectively value in **Account type**, if you selected **Table** in the **Account code** field.
+2. Under the **Rules** FastTab, select the line with specific restriction.
+3. Under the **Impacted accounts** FastTab, click **Add** and set up the accounts for the selected rule:
+- In the **Account type** field, select **Ledger**, **Customer**, **Vendor**, **Project**, **Fixed assets**, **Bank**
+- In the **Account code**, select **Account**, **Group**, or **All**. Note that the value **Group** is not available for **Ledger** account code.
+- In the **Group number** field, select **Customer group**, **Vendor group**, **Project group**, **Fixed asset group**, or **Bank group** to match the value in the **Account type** field, if you selected **Group** in the **Account code** field.
+- In the **Account number** field, select **Ledger account**, **Customer account**, **Vendor account**, **Project ID**, **Fixed asset number**, or **Bank account value** in the **Account type** field, if you selected **Table** in the **Account code** field.
+
 
 For details about how to set up Chinese voucher types, see [Set up Chinese vouchers](../localizations/tasks/set-up-chinese-vouchers.md).
 
