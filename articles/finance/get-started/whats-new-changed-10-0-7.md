@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new and changed in Dynamics 365 Finance version 10.0.7 (January 2020)
+title: What's new or changed in Dynamics 365 Finance version 10.0.7 (January 2020)
 description: This topic describes features that are either new or changed in Dynamics 365 Finance version 10.0.7.
 author: roschlom
 manager: AnnBe
