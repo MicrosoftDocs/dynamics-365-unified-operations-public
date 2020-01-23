@@ -96,8 +96,8 @@ This feature allows you to select accounts groups when setting up voucher types 
 2. Under the **Impacted accounts** FastTab, click **Add** and set up the accounts for the selected rule:
 - In the **Account type** field, select **Ledger**, **Customer**, **Vendor**, **Project**, **Fixed assets**, **Bank**
 - In the **Account code**, select **Account**, **Group**, or **All**. Note that the value **Group** is not available for **Ledger** account code.
-- In the **Group number** field, select customer group, vendor group, project group, fixed asset group, or bank group to match the value in the **Account type** field, if you selected **Group** in the **Account code** field.
-- In the **Account number** field, select ledger account, customer account, vendor account, project ID, fixed asset number, or bank account value in **Account type**, if you selected **Table** in the field **Account code**
+- In the **Group number** field, select **Customer group**, **Vendor group**, **Project group**, **Fixed asset group**, or **Bank group** to match the value in the **Account type** field, if you selected **Group** in the **Account code** field.
+- In the **Account number** field, select **Ledger account**, **Customer account**, **Vendor account**, **Project ID**, **Fixed asset number**, or **Bank account value** in the **Account type** field, if you selected **Table** in the **Account code** field.
 
 Find more details about how to set up Chinese voucher types in the topic [Set up Chinese vouchers](../localizations/tasks/set-up-chinese-vouchers.md)
 
