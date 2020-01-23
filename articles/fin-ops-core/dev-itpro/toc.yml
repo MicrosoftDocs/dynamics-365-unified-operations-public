@@ -9,7 +9,7 @@
     - name: What's new or changed
       items:
       - name: What's new or changed in Finance and Operations apps
-        href: ../fin-ops/get-started/whats-new-changed.md
+        href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: What's new or changed in Platform updates
         items:
         - name: What's new or changed in Platform updates home page
@@ -43,13 +43,13 @@
         - name: Platform update 15 (March 2018)
           href: ../fin-ops/get-started/whats-new-platform-update-15.md 
       - name: Removed or deprecated features
-        href: migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+        href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: AX 2012 features that were postponed
-        href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+        href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: Features not implemented in on-premises deployments
-        href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+        href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-        href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+        href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
     - name: Business events
       items:
       - name: Business events overview
