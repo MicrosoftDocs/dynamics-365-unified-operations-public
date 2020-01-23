@@ -94,4 +94,4 @@ If making additions, deletions, or edits to the CSV; once completed, use the "Re
 
 ## Turning off the bulk redirect mappings
 
-If a bulk redirect CSV is uploaded and active (Toggle is On); to turn the redirects off- go to **Site Settings > General** and set teh "URL Redirect Mapping" to "Off". **Save & Publish** the General settings page to commit the 'off' change.
+If a bulk redirect CSV has been uploaded and is active; to turn the redirects off- go to **Site Settings > General** and select the "Replace" button. Upload a new CSV with blank Source and Target URLs. Click **Save & Publish** on the General settings page to commit the changes.
