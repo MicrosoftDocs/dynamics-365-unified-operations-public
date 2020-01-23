@@ -2,10 +2,10 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Talent (January 21, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
-ms.date: 1/21/2020
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 # ms.tgt_pltfrm: 
 ms.custom: 
@@ -29,48 +29,51 @@ ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Talent
 
 ---
-# "What's new or changed in Dynamics 365 Talent (January 21, 2020)"
+# What's new or changed in Dynamics 365 Talent (January 21, 2020)
 
 [!include [banner](includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 Talent.
+This article describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
-This release includes minor bug fixes for Dynamics 365 Talent: Attract. Additional functionality is being added within Attract as a result of the announcement posted [here](https://dynamics.microsoft.com/en-us/talent-to-human-resources/).
+
+This release includes minor bug fixes for Dynamics 365 Talent: Attract. We've added functionality to Attract to support our recent announcement, [Building a more successful workforce with Dynamics 365 Human Resources](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/12/06/building-a-more-successful-workforce-with-dynamics-365-human-resources/).
 
 ### Download environment data
 
-Administrators can download their environment’s data. The data is exported in standard JSON format with all the jobs, candidates and configuration exported in a zip file. More information is available [here](https://docs.microsoft.com/en-us/dynamics365/talent/attract-onboard-export-data).
+Administrators can download their environment’s data. The data is exported in standard JSON format with all the jobs, candidates, and configuration exported in a zip file. For more information, see [Export data from Attract and Onboard](https://docs.microsoft.com/dynamics365/talent/attract-onboard-export-data).
 
 ### Restricting access to environments for non-admin users
 
-In this release, administrators can also choose to restrict access to the environment for non-admin users. Please note that this is a one-way action.
+Administrators can now restrict access to the environment for non-admin users. This action can't be undone. For more information, see [Restrict access to Attract](https://docs.microsoft.com/dynamics365/talent/attract-onboard-export-data#restrict-access-to-attract).
 
 ## Changes in Onboard
+
 This release includes minor bug fixes for Dynamics 365 Talent: Onboard.
 
 ### Exporting onboarding guides
 
-Users can now export all of their onboarding guides and onboarding templates in Word document format.
+Users can now export all of their onboarding guides and onboarding templates in Word document format. For more information, see [Export data from Attract and Onboard](https://docs.microsoft.com/dynamics365/talent/attract-onboard-export-data).
 
 ## Changes in Core HR
-Changes described in this section apply to build number 8.1.2726.
 
-### Most recent annual compensation field in Verify employment form is not consistent  - (392092)
+Changes described in this section apply to build number 8.1.2726. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-This release includes a change that will consistently display the latest currency based on the company selector on the verify employment form.
+### Most recent annual compensation field in Verify employment form isn't consistent (392092)
 
-### Known as field has been to be added to the Feedback recipient lookup. - (407789)
+This release includes a change that will consistently display the latest currency based on the company selector on the **Verify employment** form.
 
-The lookup for workers, when providing performance feedback, does not provide enough information to determine if feedback is going to the correct person. The "known as" column has been added to help identify the unique name of the employee.
+### Known as field added to the Feedback recipient lookup (407789)
+
+When providing performance feedback, the lookup for workers didn't provide enough information to determine if feedback is going to the correct person. We added a **Known as** column to help identify the unique name of the employee.
  
-### HcmWorkerPayrollInfo record is created without an association to a worker - (394526)
+### HcmWorkerPayrollInfo record is created without an association to a worker (394526)
 
-With this release, a change has been made to not write HCMWorkerPayrollInfo records without reference to an employee.
+This release includes a change to not write HCMWorkerPayrollInfo records without reference to an employee.
 
-### Able to access edit department when navigating from position hierarchy - (341001)
+### Able to edit department when navigating from position hierarchy (341001)
 
-When security has been set up to deny access to editing departments, the edit will be disabled when navigating to the departments form in all scenarios.
+When security has been set up to deny access to editing departments, editing is disabled when navigating to the **Departments** form in all scenarios.
 
 ## Coming soon
 
