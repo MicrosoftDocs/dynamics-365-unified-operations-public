@@ -72,7 +72,7 @@ The following image shows an example set of channel product attributes configure
 
 ## Publish changes
 
-For changes to take effect you will need to publish the changes.
+For changes to take effect, you will need to publish the changes.
 
 To publish changes, follow these steps.
 
