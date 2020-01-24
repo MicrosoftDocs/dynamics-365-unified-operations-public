@@ -69,12 +69,15 @@ To read a description of this feature, see [Grouping in grids](https://successhu
 To learn more about the feature, see: 
 - [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md)
 
-### Feature name (must match the name of the feature found in the release plan)
-To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
+### (Preview) Embed third-party apps  
+To read a description of this feature, see [Embed third-party apps - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ec26b6a7-db1d-ea11-a811-000d3a8f0f1e) in the release plan.
 
-To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
-- [Title of content](URL of content)
-- [Title of content](URL of content)
+### Recommended fields
+To read a description of this feature, see [Recommended fields](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=7bf28e3b-84ca-e911-a96a-000d3a4f36ce) in the release plan.
+
+
+### New task recorder capabilities: Resizable task recorder pane 
+To read a description of this feature, see [New task recorder capabilities for RSAT](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=2f825ba0-84ca-e911-a96a-000d3a4f36ce) in the release plan.
 
 ### Feature name (must match the name of the feature found in the release plan)
 To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
