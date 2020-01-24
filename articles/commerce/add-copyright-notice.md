@@ -5,7 +5,7 @@ title: Add a copyright notice
 description: This topic describes how to add a copyright notice to your e-Commerce website.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
