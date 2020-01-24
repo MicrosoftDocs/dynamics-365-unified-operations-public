@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: ERSolutionTable, ERWorkspace, IntrastatParameters
+ms.search.form: ERSolutionTable, ERWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -97,7 +97,7 @@ Access to the GR in the ER format lookup is currently supported for the only sel
 
 I have enabled the **Extended lookup of ER format configurations allowing to inquire the Global repository** feature in the **Feature management** page. But when a user playing the different than the **System administrator** role opened the ER format lookup, the **Import from Global repository** fast tab is visible but shows no ER formats. The **Synchronize** option is visible but disabled and cannot be used.
 
-Make sure that you granted the **Maintain configuration repositories** (**ERMaintainSolutionRepositories**) privilege to the user opening this ER format lookup.
+Make sure that you granted the **Maintain configuration repositories** (**ERMaintainSolutionRepositories**) privilege to the user opening this ER format lookup. Contact your system administrator to get this privilege.
 
 ## Additional resources
 
