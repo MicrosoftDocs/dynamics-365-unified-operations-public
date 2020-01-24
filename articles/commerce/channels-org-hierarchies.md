@@ -53,7 +53,7 @@ For more information, see the following topics.
 
 To create an organizational hierarchy, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Organization hierarchies**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Organization hierarchies**.
 1. On the action pane, select **New**.
 1. In the **Name** field, enter a value.
 1. In the **Purpose** section, select **Assign purpose**.
