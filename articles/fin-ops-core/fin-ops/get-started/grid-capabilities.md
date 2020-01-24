@@ -81,9 +81,6 @@ If you select **Group by this column** on a different column, the original group
 
 To undo grouping in a grid, right-click on the grouping column and select **Ungroup**.  
 
-## Typing ahead of the system
-In support of faster data entry, users can modify existing data and create new rows 
-- **Fast data entry**: This feature lets users enter data in a grid ahead of the server. Therefore, it minimizes the need for users to wait for the server to validate one row in the grid before they move to another row. This feature first became available as part of the new grid control feature in 10.0.7 / Platform update 31, and will continue to evolve in subsequent platform versions.
 
 ## Evaluating math expressions
 As a productivity booster, user can enter mathematical formulae into numeric cells in a grid, instead of having to do the calculation in an app outside the system. For example, you can enter **=15\*4** and tab out of the field. The system will evaluate the expression and save a value of “60” for the field.
