@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Benefits management overview
 
-As competition for resources increases, you must offer a rich set of benefits to attract and retain your best employees. The benefits you offer can range from the standard medical and dental coverage options to expanded services, like adoption assistance, recreation programs, and clothing allowances. The Benefits management preview feature in Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings.
+As competition for resources increases, you must offer a rich set of benefits to attract and retain your best employees. The benefits you offer can range from the standard medical and dental coverage options to expanded services, like adoption assistance, recreation programs, and clothing allowances. The Benefits management preview feature in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings.
 
 The Benefits management preview feature provides you with the following solutions:
 
@@ -50,10 +50,14 @@ To use Benefits management, see the following articles:
 
 **Enable Benefits management**
 
+Benefits management is a preview feature, and is only available in **Sandbox** environments. These articles describe how to turn on preview features in Human Resources. They also provide information about which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
+
 - [Manage features](hr-admin-manage-features.md)
 - [Preview feature: Benefits management](hr-admin-manage-features.md?preview-feature-benefits-management)
 
 **Configure Benefits management**
+
+Before you can create benefit plans for your employees, you need to configure options for the plans.
 
 - [Set Benefits management parameters](hr-benefits-setup-parameters.md)
 - [Configure eligibility rules and options](hr-benefits-setup-eligibility-rules.md)
@@ -75,6 +79,8 @@ To use Benefits management, see the following articles:
 
 **Create benefit plans**
 
+These articles show how to create benefit plans, including bundles and flex credit programs.
+
 - [Set up benefit plans](hr-benefits-plans-setup.md)
 - [Create worker benefit plans](hr-benefits-plans-worker.md)
 - [Bulk update worker benefits plans](hr-benefits-plans-worker-bulk-update.md)
@@ -82,6 +88,8 @@ To use Benefits management, see the following articles:
 - [Configure future life events](hr-benefits-plans-future-life-events.md)
 
 **Process benefit plans**
+
+You need to process some of your changes to make them active.
 
 - [Process enrollment eligibility](hr-benefits-process-enrollment-eligibility.md)
 - [Process life events](hr-benefits-process-life-events.md)
