@@ -83,8 +83,6 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 
 [Channels overview](channels-overview.md)
 
-[Channel setup prerequisites](channels-prerequisites.md)
-
 [Organizations and organizational hierarchies overview](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
 [Set up organization hierarchies](channels-org-hierarchies.md)
