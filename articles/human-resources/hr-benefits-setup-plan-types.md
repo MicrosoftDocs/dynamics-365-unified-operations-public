@@ -34,5 +34,18 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 
 
+1. In the **Benefits management** workspace, under **Setup**, select **Plan types**.
+
+2. Select **New**.
+
+3. Specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+
+
+
+4. Select **Save**. 
+
 
 ## See also
