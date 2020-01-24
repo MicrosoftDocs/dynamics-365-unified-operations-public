@@ -39,14 +39,14 @@ This topic describes how to add a channel to an organizational hierarchy in Micr
 
 Channels need to be associated with one or more organizational hierarchies. Before creating channels, you need to confirm that your organizational hierarchies have been set up.  
 
-See [Organizational hierarchies](channels-org-hierarchies.md) for more details on how to create an organizational hierarchies.
+See [Organizational hierarchies](channels-org-hierarchies.md) for more details on how to create organizational hierarchies.
 
 ## Select a hierarchy
 
 To select a hierarchy, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Organization hierarchies**.
-1. Select the organization hierarchy that you'll be adding the channel to from the list.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Organization hierarchies**.
+1. From the list, select the organization hierarchy that you'll be adding the channel to.
 1. On the action pane, select **View** to view hierarchy details.
 
 The following image shows organizational hierarchy details for the selected hierarchy.
@@ -58,7 +58,7 @@ The following image shows organizational hierarchy details for the selected hier
 To add a channel to a hierachy node, follow these steps.
 
 1. On the action pane, select **Edit**.
-1. Select the hierachy node you want the channel added to and select the **Insert** drop down, then select **Retail Channel**. 
+1. Select the hierachy node you want the channel added to, then from the **Insert** drop-down list, select **Retail Channel**. 
 1. Select the channel to add, then select the **OK** button.
 1. On the action pane, select **Save**.
 1. On the action pane, select **Publish** and provide an **Effective date** in the past to have this action go into effect immediately.
