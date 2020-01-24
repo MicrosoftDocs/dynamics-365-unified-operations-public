@@ -65,7 +65,7 @@ Customers will be able to take up to 8 service updates per year and are required
 | Version                   | Preview availability (PEAP) | Generally available (Self-update) | Auto-update schedule (via LCS Update Settings) | End of service    |
 |---------------------------|-----------------------------|-----------------------------------|-----------------------------------------------|-------------------|
 | 10.0.1 Platform update 25 |                             |                                   | Production starting:  May 1, 2019             | June 10, 2019     |
-| 10.0.2 Platform update 26 | April 12, 2019              | May 17,2019                       | Production starting:  June 1, 2019            | August 12, 2019   |
+| 10.0.2 Platform update 26 | April 12, 2019              | May 17, 2019                       | Production starting:  June 1, 2019            | August 12, 2019   |
 | 10.0.3 Platform update 27 | May 10, 2019                | June 14, 2019                     | Production starting:  July 1, 2019            | September 9, 2019 |
 | 10.0.4 Platform update 28 | June 7, 2019                | July 12, 2019                     | Production starting:  August 1, 2019          | October 14, 2019  |
 | 10.0.5 Platform update 29 | August 2, 2019              | September 13, 2019                | Production starting:  October 1, 2019         | December 2, 2019  |
