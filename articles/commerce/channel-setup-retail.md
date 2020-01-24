@@ -43,7 +43,7 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 
 ## Create and configure a new retail channel
 
-1. Go to **Navigation pane \> Modules \> Channels \> Stores \> All stores**.
+1. In the navigation pane, go to **Modules \> Channels \> Stores \> All stores**.
 1. On the action pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
@@ -116,7 +116,7 @@ You can see the configured modes of delivery by selecting **Modes of delivery** 
 
 To change or add a mode of delivery, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Inventory management \> Modes of delivery**.
+1. In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.
 1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
 1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
 
