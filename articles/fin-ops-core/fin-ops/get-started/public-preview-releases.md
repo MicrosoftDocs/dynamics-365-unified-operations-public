@@ -62,7 +62,7 @@ Customers will be able to take up to 8 service updates per year and are required
 > [!NOTE] 
 > Sandbox auto-update takes place 7 days prior to the production update.  End of service indicates the date when no new cumulative service updates will be provided.
 
-| Version                   | Preview Availability (PEAP) | Generally Available (Self update) | Auto-Update schedule (via LCS Update Settings | End of Service    |
+| Version                   | Preview availability (PEAP) | Generally available (Self-update) | Auto-update schedule (via LCS Update Settings) | End of service    |
 |---------------------------|-----------------------------|-----------------------------------|-----------------------------------------------|-------------------|
 | 10.0.1 Platform update 25 |                             |                                   | Production starting:  May 1, 2019             | June 10, 2019     |
 | 10.0.2 Platform update 26 | April 12, 2019              | May 17,2019                       | Production starting:  June 1, 2019            | August 12, 2019   |
