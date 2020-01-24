@@ -318,8 +318,6 @@
           items:
           - name: Create an online functionality profile
             href: online-functionality-profile.md	
-        - name: Call center prerequisites
-          href: TBD
       - name: Set up a retail channel 
         items: 
         - name: Set up a retail channel
@@ -442,12 +440,10 @@
         items:
         - name: Add a channel to an organization hierarchy  
           href: channel-add-to-org-hierarchy.md
-        - name: Data Syncing 
+        - name: Data syncing 
           items:
           - name: How to ensure new products show up in store 
             href: TBD.md
-        - name: Configure channel to channel database (RCSU)
-          href: TBD.md
         - name: Advanced auto charges 
           items:
           - name: Configure and use advanced auto charges 
@@ -460,7 +456,7 @@
             href: ../retail/dev-itpro/store-hours.md?toc=/dynamics365/commerce/toc.json
           - name: Retail Store Scale Unit
             href: ../retail/dev-itpro/retail-store-system-begin.md?toc=/dynamics365/commerce/toc.json
-        - name: Call Center management 
+        - name: Call center management 
           items:
           - name: Configure and work with call center order holds
             href: ../retail/work-with-order-holds.md?toc=/dynamics365/commerce/toc.json
@@ -492,8 +488,6 @@
             href: ../retail/dev-itpro/payments-retail.md?toc=/dynamics365/commerce/toc.json     
     - name: Merchandizing your products and services  
       items:
-      - name: Merchandizing overview 	  
-        href: TBD.md	  
       - name: Categories, products, and assortments 
         items:
         - name: Product information overview 
@@ -686,10 +680,6 @@
           href: ../retail/multireturn.md?toc=/dynamics365/commerce/toc.json	
     - name: Manage your customers  
       items:
-      - name: Customers 
-        items:
-        - name: TBD	  
-          href: TBD.md		  
       - name: Clienteling
         items:
         - name: Clienteling overview
