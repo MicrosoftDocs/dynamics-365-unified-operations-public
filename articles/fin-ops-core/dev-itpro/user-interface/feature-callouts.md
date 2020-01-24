@@ -92,7 +92,7 @@ The following code snippet will trigger a feature callout attached to the contro
               "My title" , 
               "My description", 
               TestStringControl.name(), 
-              "http://www.microsoft.com"
+              "https://www.microsoft.com"
          );
     }
 
