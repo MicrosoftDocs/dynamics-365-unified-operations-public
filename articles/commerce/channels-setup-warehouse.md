@@ -39,11 +39,11 @@ This topic describes how to set up a warehouse to be used with a new channel in 
 
 Each Commerce channel requires a configured warehouse to be associated with it. The following procedures provide the minimum configuration required to set up a warehouse for a Commerce channel. For more information regarding warehouse setup, please see the [Warehouse management overview](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
 
-## Set up a warehouse site
+## Configure a warehouse site
 
 Before setting up a warehouse, you need to configure a warehouse site.
 
-To set up a warehouse site, follow these steps.
+To configure a warehouse site, follow these steps.
 
 1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Sites**.
 1. On the action pane, select **New**.
