@@ -29,15 +29,17 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments when consolidation policy is overridden in Release to warehouse form
+# Consolidate shipments when Shipment consolidation policy is overridden in Release to warehouse form
 
 [!include [banner](../includes/banner.md)]
 
 *Released in version 10.0.3*
 
-[TBD] Oleksandr - Add explanation of a scenario like for Scenario 1
+This demo will simulate a scenario where one or more sales lines have to be released to warehouse manually from the **Release to warehouse** form. There is a need to override the shipment consolidation policy defined by the system before the release (for example, consolidate with open shipments for an order that is usually not consolidated with open shipments).
 
 This scenario assumes that you went through shipment policies configuration scripts and have more than one consolidation policy (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
+
+During the demo, you will create a set of sales orders and override the default shipment consolidation policy before release to warehouse.  
 
 Standard Contoso data is used with some additions done during configuration of policies.
 

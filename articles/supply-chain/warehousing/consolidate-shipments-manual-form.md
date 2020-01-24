@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.3
 
 *Released in version 10.0.3*
 
-[TBD] Oleksandr - Add scenario overview like for scenario 1.
+This demo will simulate a scenario where multiple orders are released to warehouse, and they will be consolidated later in **All shipments \> Consolidate shipments** form.
 
 This scenario assumes that you went through shipment policies configuration scripts and have more than one consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
@@ -43,7 +43,7 @@ Standard Contoso data is used with some additions done during configuration of p
 
 ## Sales orders creation
 
-Go to **Accounts receivable > Orders > All sales orders** and create sales orders according to information below.
+Go to **Accounts receivable \> Orders \> All sales orders** and create sales orders according to information below.
 
 ### Order set 1
 

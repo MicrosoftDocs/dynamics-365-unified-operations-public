@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments when released to warehouse by automatic release to warehouse of sales orders
+# Consolidate shipments when released to warehouse by Automatic release of sales orders
 
 [!include [banner](../includes/banner.md)]
 

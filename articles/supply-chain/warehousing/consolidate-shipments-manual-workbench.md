@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.6
 
 *Released in version 10.0.6*
 
-This demo will simulate a scenario where multiple orders are released to warehouse, and they will be consolidated into shipments in Shipment consolidation workbench. It is assumed that you went through shipment policies configuration scripts (see Scenario 2 at [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
+This demo will simulate a scenario where multiple orders are released to warehouse, and they will be consolidated later into shipments in Shipment consolidation workbench. It is assumed that you went through shipment policies configuration scripts (see Scenario 2 at [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
