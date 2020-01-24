@@ -46,14 +46,14 @@ The Benefits management preview feature provides you with the following solution
 
 - Qualified life event processing that is integrated with employee self service that also supports future life events.
 
-**Enable Benefits management**
+## Enable Benefits management
 
 Benefits management is a preview feature, and is only available in **Sandbox** environments. These articles describe how to turn on preview features in Human Resources. They also provide information about which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
 
 - [Manage features](hr-admin-manage-features.md)
 - [Preview feature: Benefits management](hr-admin-manage-features.md?preview-feature-benefits-management)
 
-**Configure Benefits management**
+## Configure Benefits management
 
 Before you can create benefit plans for your employees, you need to configure options for the plans.
 
@@ -75,7 +75,7 @@ Before you can create benefit plans for your employees, you need to configure op
 - [Set up employment types](hr-benefits-setup-employment-types.md)
 - [Configure employee self service](hr-benefits-setup-employee-self-service.md)
 
-**Create benefit plans**
+## Create benefit plans
 
 These articles show how to create benefit plans, including bundles and flex credit programs.
 
@@ -85,7 +85,7 @@ These articles show how to create benefit plans, including bundles and flex cred
 - [Set up flex credit programs](hr-benefits-plans-flex-credit-programs.md)
 - [Configure future life events](hr-benefits-plans-future-life-events.md)
 
-**Process benefit plans**
+## Process benefit plans
 
 You need to process some of your changes to make them active.
 
