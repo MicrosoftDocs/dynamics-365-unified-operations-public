@@ -37,7 +37,7 @@ This topic describes how to create a new call center channel in Microsoft Dynami
 
 ## Overview
 
-In Dynamics 365 Commerce, a call center is a type of retail channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel. A company can define multiple call center channels in Dynamics 365 Commerce. 
+In Dynamics 365 Commerce, a call center is a type of retail channel that can be defined in the application. Defining a channel for your call center entities allows the system to tie specific data and order processing defaults to sales orders. A company can define multiple call center channels in Commerce. 
 
 Before you create a new call center channel, ensure that you have completed the [Channel set up prerequisites](channels-prerequisites.md).
 
@@ -45,16 +45,16 @@ Before you create a new call center channel, ensure that you have completed the 
 
 To create and configure a new call center channel, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Channels \> Call centers \> All call centers**.
+1. In the navigation pane, go to **Modules \> Channels \> Call centers \> All call centers**.
 1. On the action pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. Select the appropriate **Legal entity** from the drop down.
 1. Select the appropriate **Warehouse** location from the drop down.
 1. In the **Default customer** field, provide a valid default customer.
 1. In the **Email notification profile** field, provide a valid email notification profile.
-1. Provide a **Price override** info code.  Note you may need to create an info code for this first.
-1. Provide a **Hold code** info code.  Note you may need to create an info code for this first.
-1. Provide a **Credit** info code.  Note you may need to create an info code for this first.
+1. Provide a **Price override** info code. Note you may need to create an info code for this first.
+1. Provide a **Hold code** info code. Note you may need to create an info code for this first.
+1. Provide a **Credit** info code. Note you may need to create an info code for this first.
 1. Select **Save**.
 
 The following image shows the creation of a new call center channel.
@@ -94,7 +94,7 @@ You can see the configured modes of delivery by selecting **Modes of delivery** 
 
 To change or add a mode of delivery, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Inventory management \> Modes of delivery**.
+1. In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.
 1. On the action pane, select **New** to create a new mode of delivery, or select an existing mode.
 1. In the **Retail channels** section, select **Add line** to add the channel. Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.
 
