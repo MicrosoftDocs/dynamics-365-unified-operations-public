@@ -1,0 +1,2 @@
+> [!NOTE]
+> This article applies to both Dynamics 365 Human Resources and the **Human resources** workspace in Dynamics 365 Finance. For a comparison of the two products, see [Comparison of Human Resources with the Human resources workspace in Finance](./hr-get-started.md?comparison-of-human-resources-with-the-human-resources-workspace-in-finance).
