@@ -36,7 +36,7 @@ As competition for resources increases, you must offer a rich set of benefits to
 
 The Benefits management preview feature provides you with the following solutions:
 
-- Enhanced benefits plans that let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easiy create benefit programs, bundles, and auto-enrollment rules for a seamless employee experience.
+- Enhanced benefits plans that let you create and manage unique benefit plans and support complex benefit rate tables and nested tiers. You can easily create benefit programs, bundles, and auto-enrollment rules for a seamless employee experience.
 
 - Flex credit programs that you can prorate to support retirement and other life events.
 
