@@ -43,7 +43,7 @@ Channel navigation hierarchies organize products into categories so that the pro
 
 To configure a channel to use a channel navigation hierarchy, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel setup \> Channel categories and product attributes**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel setup \> Channel categories and product attributes**.
 1. Select the channel to configure.
 1. On the action pane, select **Set attribute metadata**.
 1. In the **Category hierarchy** drop-down list, select the appropriate channel navigation hierarchy.
