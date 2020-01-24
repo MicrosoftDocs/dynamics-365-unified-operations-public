@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import currency exchange rates
-description: This topic provides information about the requirements for importing foreign exchange reference rates that are published over the Internet by the exchange rate providers.
+description: This topic provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 01/23/2020
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the settings and processing required to import foreign exchange reference rates that are published over the Internet by the exchange rate providers such as the European Central Bank and the Central Bank of Russia.
+If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
 
 The following sections describe the flow of information that is used for setting up and processing the import of foreign exchange rates.
 
@@ -62,8 +62,4 @@ You can import exchange rates from the exchange rate providers source and add th
 | **Create necessary currency pairs**    | This check box manages the automatic creation of currency pairs, if the currency pairs that are imported do not exist. This option might not be available for some providers.                                                                                                                                                                                               |
 | **Override existing exchange rates**   | This check box manages the update of the existing exchange rate for a currency pair when the exchange rate for a specific date already exists. If you do not select this check box, the exchange rate for the specific dates is not imported if another exchange rate already exists.                                                                                       |
 | **Prevent import on national holiday** | This check box manages the import of the exchange rate for public holiday's date. For example, if you select this check box and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
-| **Rate from the previous day** | This check box is available if you enable the feature, **ECB import on the current or previous date** on the **Feature management** page. This check box is only available for the provider, *Central Bank of Europe*. Select this check box to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the check box is selected. Unselect this check box to import the currency exchange rate that is published on the same working day.  |
-
-
-
-
+| **Rate from the previous day** | This check box is available if you enable **ECB import on the current or previous date** feature on the **Feature management** page. This check box is only available for the provider, *Central Bank of Europe*. Select this check box to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the check box is selected. Clear this check box to import the currency exchange rate that is published on the same working day.  |
