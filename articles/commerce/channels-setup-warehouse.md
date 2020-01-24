@@ -45,7 +45,7 @@ Before setting up a warehouse, you need to configure a warehouse site.
 
 To configure a warehouse site, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Sites**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Sites**.
 1. On the action pane, select **New**.
 1. In the **Site** field, enter a value.
 1. In the **Name** field, enter a value.
@@ -61,7 +61,7 @@ The following image shows an example warehouse site.
 
 To set up a warehouse, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Warehouses**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Warehouses**.
 1. On the action pane, select **New**.
 1. In the **Warehouse** field, enter a value.  If this is a 1:1 mapping to a retail store, consider using the store name or the name of a regional distribution center.
 1. In the **Name** field, enter a value.
@@ -75,7 +75,7 @@ To set up a warehouse, follow these steps.
 
 To set up inventory aisles, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Location setup \> Inventory aisles**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Location setup \> Inventory aisles**.
 1. On the action pane, select **New**.
 1. In the **Warehouse** drop-down list, select the warehouse created previously.
 1. In the **Aisle** field, enter a name (for example, "Def").
@@ -86,7 +86,7 @@ To set up inventory aisles, follow these steps.
 
 To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Warehouses**.
+1. In the navigation pane, go to**Modules \> Retail \> Channel Setup \> Warehouses**.
 1. Select the warehouse you created previously.
 1. On the action pane, select **Edit**.
 1. On the action pane, select **Warehouse**, and then select **Inventory location**.
@@ -114,7 +114,7 @@ The following image shows a San Francisco warehouse inventory location setup.
 
 To complete warehouse setup, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Channel Setup \> Warehouses**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Warehouses**.
 1. Select the warehouse you previously created.
 1. On the action pane, select **Edit**.
 1. Under **Inventory and warehouse management**:
