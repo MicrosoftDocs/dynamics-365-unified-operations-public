@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Release to warehouse from Load planning workbench form
+# Consolidate shipments when released to warehouse from Load planning workbench form
 
 [!include [banner](../includes/banner.md)]
 
@@ -215,15 +215,19 @@ Add an order line to each sales order.
 
 ## Release to warehouse of sales orders via Load planning workbench form
 
-[TBD] Olga - add intro .., follow these steps.
+Using instructions below, create a load for each set of orders and release it to warehouse.
+
+To release to warehouse sales orders from specific order set using **Load planning workbench** form, follow these steps.
 
 1. Go to **Warehouse management > Loads > Load planning workbench**.
 1. In the upper section, click **Sales lines**.
 1. Find and select all sales order lines from required order set.
 1. On the Action Pane, on the **Supply and demand** tab, click **To new load** to add selected order lines to a new Load.
-1. In the **Load template ID**, select any load template and click **OK**.
+1. In the **Load template ID** field, select a load template, for example, **Stnd Load Template** and click **OK**.
 1. In the bottom section of the **Load planning workbench** form, find and select created load.
-1. Click **Release > Release to warehouse** to release load to warehouse. 
+1. Click **Release > Release to warehouse** to release load to warehouse.
+
+## Shipment verification
 
 To review created or updated shipment, follow these steps.
 
@@ -231,7 +235,7 @@ To review created or updated shipment, follow these steps.
 1. Find and select required shipment.
 1. If consolidation policy is used during shipment creation or update it can be found in the **Shipment consolidation policy** field.
 
-Now, using instructions above, create a load for each set of orders, release it to warehouse and verify shipments that are created or updated as a result of shipment consolidation according to expected results provided below.
+Using instructions above, verify shipments that are created or updated as a result of shipment consolidation according to expected results provided below.
 
 ### Release Order set 1 within one load
 

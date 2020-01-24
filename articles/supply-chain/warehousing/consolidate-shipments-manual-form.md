@@ -29,53 +29,78 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Consolidate shipments using shipment consolidation policies
+# Consolidate shipments manually in Consolidate shipments form
 
 [!include [banner](../includes/banner.md)]
 
-# Released in version 10.0.3
+*Released in version 10.0.3*
 
-## Consolidate shipments manually in “Consolidate shipments” form
+[TBD] Oleksandr - Add scenario overview like for scenario 1.
 
-This scenario assumes that you went through shipment policies configuration scripts and have more than 1 consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
+This scenario assumes that you went through shipment policies configuration scripts and have more than one consolidation policies (see [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md) for instructions).
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
-### Sales orders
+## Sales orders creation
 
-**Order set 1**:
+Go to **Accounts receivable > Orders > All sales orders** and create sales orders according to information below.
 
-Create 2 new sales orders:
--	Customer = US-007
--	Pool = “Consolidate”
+### Order set 1
 
-Create 2 new sales orders:
--	Customer = US-007
--	Pool = None
+Create two identical sales orders.
 
-For each order of the above:
--	Add a line for item A0001, quantity 1.
-- Reserve the order line.
+**Sales order 1 and 2**:
 
-### Release to warehouse
+- In the **Customer account** field, select **US-007**.
+- In the **Pool** field, select **ShipCons**.
 
-Release all sales orders manually by clicking on Release to warehouse button on All sales orders form (separately for each order).
+Add an order line to each sales order.
 
-### All shipments (form)
+**Line 1**:
 
-1. Select one of the shipments created above where **Shipment consolidation policy** is set to _"Order pool"_.
-2. Click **Consolidate shipments** button.
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-- Expected result:
-  - Only 1 other shipment with the same policy is suggested for consolidations
+Create another two identical sales orders.
 
-3. Select one of the shipments created above where **Shipment consolidation policy** is set to _"Default"_.
-4. Click **Consolidate shipments** button.
+**Sales order 3 and 4**:
 
-- Expected result:
-  - Only 1 other shipment with the same policy is suggested for consolidations
+- In the **Customer account** field, select **US-007**;
+- Leave **Pool** field empty.
 
-# Related articles and demo scripts
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+## Release to warehouse
+
+To release to warehouse a sales order using All sales orders form, follow these steps.
+
+1. Go to **Accounts receivable > Orders > All sales orders**.
+1. Find and select desired sales order.
+1. On the Action Pane, on the **Warehouse** tab, click **Release to warehouse** to release a sales order.
+
+Release all sales orders from the order set using instructions above.
+
+## Consolidate shipments
+
+1. Go to **Warehouse management > Shipments > All shipments**.
+1. Find and select a shipment created when Sales order 1 was released to warehouse (this shipment **Shipment consolidation policy** field set to **Order pool**).
+1. On the Action Pane, on the **Shipments** tab, click **Consolidate shipments**.
+1. Verify shipments suggested for consolidation:
+    - There is only one shipment with the same policy suggested for consolidation.
+1. Close the **Shipment consolidation** form.
+1. Find and select a shipment created when Sales order 3 was released to warehouse (this shipment **Shipment consolidation policy** field set to **Default**).
+1. On the Action Pane, on the **Shipments** tab, click **Consolidate shipments**.
+1. Verify shipments suggested for consolidation:
+    - There is only one shipment with the same policy suggested for consolidation.
+
+## Related articles and demo scripts
 
 - [About shipment consolidation policies](../warehousing/about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../warehousing/configure-shipment-consolidation-policies.md)

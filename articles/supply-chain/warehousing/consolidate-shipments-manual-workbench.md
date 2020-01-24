@@ -29,118 +29,258 @@ ms.dyn365.ops.version: 10.0.6
 
 ---
 
-# Consolidate shipments using shipment consolidation policies
+# Consolidate shipments using Shipment consolidation workbench form
 
 [!include [banner](../includes/banner.md)]
 
-# Released in version 10.0.6
+*Released in version 10.0.6*
 
-## Shipment consolidation workbench
-
-This scenario will simulate a scenario where multiple orders are released to warehouse, and they will be consolidated into shipments in Shipment consolidation workbench, and assumes that you went through shipment policies configuration scripts (see Scenario 2 at [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
+This demo will simulate a scenario where multiple orders are released to warehouse, and they will be consolidated into shipments in Shipment consolidation workbench. It is assumed that you went through shipment policies configuration scripts (see Scenario 2 at [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md) for instructions).
 
 Standard Contoso data is used with some additions done during configuration of policies.
 
-### Sales orders
+## Sales orders creation
 
-The warehouse must be used the same (WHS-enabled) in the following sets of orders unless another warehouse is explicitly mentioned:
+The same WHS-enabled warehouse must be used in the following sets of orders unless another warehouse is explicitly mentioned.
 
-**Order set 1**:
+Go to **Accounts receivable > Orders > All sales orders** and create sales orders according to information below.
 
-Create a new sales order:
--	Customer = US-001
--	Mode of delivery = Air
+### Order set 1
 
-For this sales order:
+Create the first sales order.
 
-- Add a line for item A0001, quantity 1 (an item without filter code 4).
-- Reserve the order line.
+**Sales order 1**:
 
-Create a second sales order:
+- In the **Customer account** field, select **US-001**;
+- In the **Mode of delivery** field, select **Air**.
 
-- Customer = US-001
-- Mode of delivery = Air
+Add an order line to the sales order.
 
-For this sales order:
+**Line 1**:
 
-- Add a line for item A0001, quantity 1 (an item without filter code 4).
-- Reserve the order line.
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-Create a third sales order:
+Create the second sales order.
 
-- Customer = US-001
-- Mode of delivery = 10
+**Sales order 2**:
 
-For this sales order:
+- In the **Customer account** field, select **US-001**;
+- In the **Mode of delivery** field, select **Air**.
 
-- Add a line for item A0001, quantity 1 (an item without filter code 4).
-- Add a second line for item A0002, quantity 1 (an item without filter code 4). Specify Mode of delivery = Air.
-- Reserve the order lines.
+Add an order line to the sales order.
 
-**Order set 2**:
+**Line 1**:
 
-Create 3 new sales orders:
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-- Customer = US-002
+Create the third sales order.
 
-For each order:
--	Add a line for item D0001, quantity 1 (an item with filter code 4 Flammable).
--	Add a second line for item D0002, quantity 1 (an item with filter code 4 Explosive).
-- Reserve the order lines.
+**Sales order 3**:
 
-**Order set 3**:
+- In the **Customer account** field, select **US-001**;
+- In the **Mode of delivery** field, select **10**.
 
-Create 2 new sales orders:
-- Customer = US-001
-- Customer requisition = 1
+Add two order lines to the sales order.
 
-Create 2 new sales orders:
-- Customer = US-001
-- Customer requisition = 2
+**Line 1**:
 
-For each order of the above:
--	Add a line for item A0001, quantity 1 (an item without filter code 4).
-- Reserve the order line.
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-**Order set 4**:
+**Line 2**:
 
-Create 2 new sales orders:
--	Customer = US-003
+- In the **Item number** field, select **A0002** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- In the **Mode of delivery** field, select **Air**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-Create 2 new sales orders:
--	Customer = US-004
+### Order set 2
 
-Create 2 new sales orders:
--	Customer = US-007
--	Pool = “Consolidate”
+Create three identical sales orders.
 
-Create 2 new sales orders:
--	Customer = US-007
--	Pool = None
+**Sales order 1, 2 and 3**:
 
-For each order of the above:
--	Add a line for item A0001, quantity 1 (an item without filter code 4).
-- Reserve the order line.
+- In the **Customer account** field, select **US-002**.
 
-### Release to warehouse
+Add two order lines to each sales order.
 
-Release all sales orders manually by clicking on Release to warehouse button on All sales orders form (separately for each order).
+**Line 1**:
 
-### Shipment consolidation workbench
+- In the **Item number** field, select **D0001** (an item with **Flammable** filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-Open the **Shipment consolidation workbench** form and click **Propose shipments**
+**Line 2**:
 
-1.	Orders from Order set 1:
-  - Expected result: 4 shipments, where first 3 will use Policy 1, while the last one (without “Air”) will use Policy 3.
-2.	Orders from Order set 2:
-  - Expected result: 3 shipments, where the first 1 will combine “Flammable” items, and the other two will contain “Explosive” items
-3.	Orders from Order set 3:
-  - Expected result: 2 orders will be grouped into 1 shipment with requisition “1”. 2 other orders will be grouped into 1 shipment with requisition “2”
+- In the **Item number** field, select **D0002** (an item with **Explosive** filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
 
-4.	Orders from Order set 4
-  - Expected result: orders for customers US-003 and US-004 will be grouped into 2 shipments respectively but using the same Policy 4. Orders for US-007 customer will be grouped into 1 shipment with Policy 5.
+### Order set 3
 
-# Related articles and demo scripts
+Create two identical sales orders.
+
+**Sales order 1 and 2**:
+
+- In the **Customer account** field, select **US-001**;
+- In the **Customer requisition** field, enter **1**.
+
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+Create another two identical sales orders.
+
+**Sales order 3 and 4**:
+
+- In the **Customer account** field, select **US-001**;
+- In the **Customer requisition** field, enter **2**.
+
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+### Order set 4
+
+Create two identical sales orders.
+
+**Sales order 1 and 2**:
+
+- In the **Customer account** field, select **US-003**.
+
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+Create another two identical sales orders.
+
+**Sales order 3 and 4**:
+
+- In the **Customer account** field, select **US-004**.
+
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+Create another two identical sales orders.
+
+**Sales order 5 and 6**:
+
+- In the **Customer account** field, select **US-007**.
+- In the **Pool** field, select **ShipCons**.
+
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+Create another two identical sales orders.
+
+**Sales order 7 and 8**:
+
+- In the **Customer account** field, select **US-007**;
+- Leave **Pool** field empty.
+
+Add an order line to each sales order.
+
+**Line 1**:
+
+- In the **Item number** field, select **A0001** (an item without filter code 4);
+- In the **Quantity** field, enter **1.00**;
+- Click **Inventory > Reservation** and then **Reserve lot** to reserve the order line.
+
+## Release to warehouse
+
+Using instructions below, release sales orders from all order sets.
+
+To release to warehouse a sales order using **All sales orders** form, follow these steps.
+
+1. Go to **Accounts receivable > Orders > All sales orders**.
+1. Find and select desired sales order.
+1. On the Action Pane, on the **Warehouse** tab, click **Release to warehouse** to release a sales order.
+
+## Consolidate shipments via Shipment consolidation workbench form
+
+To consolidate shipments using **Shipment consolidation workbench** form, follow these steps.
+
+1. Go to **Warehouse management > Release to warehouse > Shipment consolidation workbench**.
+1. Click **Edit query**.
+1. Click **Add** to add a new criteria line.
+1. In the **Table** field, select **Sales orders**.
+1. In th **Field** field, select **Sales order**.
+1. In the **Criteria** field, enter sales order numbers from all order sets.
+1. Click **OK**.
+1. Click **Consolidate shipments**.
+1. Select all the shipments and click **Consolidate**.
+
+## Shipment verification
+
+To review created or updated shipment, follow these steps.
+
+1. Go to **Warehouse management > Shipments > All shipments**.
+1. Find and select required shipment.
+1. If consolidation policy is used during shipment creation or update it can be found in the **Shipment consolidation policy** field.
+
+Using instructions above, verify shipments that are created or updated as a result of shipment consolidation according to expected results provided below.
+
+### Order set 1 related shipments
+
+Expected result:
+
+- Four shipments are created:
+  - The first three shipments created using **Policy 1** shipment consolidation policy;
+  - The fourth shipment (without **Air** mode of delivery) is created using **Policy 3**.
+
+### Order set 2 related shipments
+
+Expected result:
+
+- Three shipments are created:
+  - The first shipment contains **Flammable** items;
+  - Each of the other two shipments contains one line with **Explosive** item.
+
+### Order set 3 related shipments
+
+Expected result:
+
+- Two shipments are created:
+  - The first shipment contains order lines from sales order with **1** customer requisition;
+  - The second shipment contains order lines from sales order with **2** customer requisition;
+
+### Order set 4 related shipments
+
+Expected result:
+
+- Three shipments are created:
+  - Lines from two orders for **US-003** customer are grouped into one shipment using **Policy 4**;
+  - Lines from two orders for **US-004** customer are grouped into one shipment using **Policy 4**;
+  - Lines from four orders for **US-007** customer are grouped into one shipment using **Policy 5**.
+
+## Related articles and demo scripts
 
 - [About shipment consolidation policies](../about-shipment-consolidation-policies.md)  
 - [Configure shipment consolidation policies](../configure-shipment-consolidation-policies.md)
