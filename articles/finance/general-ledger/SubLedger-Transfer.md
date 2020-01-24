@@ -36,13 +36,13 @@ ms.dyn365.ops.version: AX 10.0.8
 
 This topic describes capabilities in Microsoft Dynamics 365 Finance that are related to the rules for transferring batches of subledger journal entries.
 
-In version 8.1, changes were made to the allow transfer rules, which deprecated the Synchronous option. For more information, see [Removed or deprecated features for Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20).
+In version 8.1, changes were made to allow the transfer of rules, which deprecated the Synchronous option. For more information, see [Removed or deprecated features for Finance and Operations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/finance/toc.json#finance-and-operations-81-with-platform-update-20).
 
 The following options are available for transferring subledger batches. 
 
  - Asynchronous – This option will immediately schedule the transfer of the subledger accounting entries to the general ledger. The general ledger voucher will be recorded as soon as resources are free to process this request on the server. 
 
-- Scheduled batch – This option will add the subledger accounting entries that are being transferred to the processing queue in the general ledger where it will be processed in order. The general ledger voucher will be recorded at the scheduled time, as long as resources are free to process this batch job on the server. 
+- Scheduled batch – This option will add the subledger accounting entries that are being transferred to the processing queue in the general ledger, where the entries will be processed in order received. The general ledger voucher will be recorded at the scheduled time if resources are free to process this batch job on the server. 
  
 In version 10.0.8, improvements were made to enhance the performance of the Asynchrounous option. This feature is enabled under the feature name **Subledger transfer to General Ledger performance optimization**. 
  
