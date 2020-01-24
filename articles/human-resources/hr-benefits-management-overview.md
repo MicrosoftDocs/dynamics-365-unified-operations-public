@@ -46,8 +46,6 @@ The Benefits management preview feature provides you with the following solution
 
 - Qualified life event processing that is integrated with employee self service that also supports future life events.
 
-To use Benefits management, see the following articles:
-
 **Enable Benefits management**
 
 Benefits management is a preview feature, and is only available in **Sandbox** environments. These articles describe how to turn on preview features in Human Resources. They also provide information about which existing features in Human Resources that Benefits management replaces or are disabled once you turn on Benefits management.
