@@ -466,7 +466,7 @@ self.LinkClicked = function (event) {
 </script>
 
 <!-- In your control’s template HTM file -->
-<a href="http://www.microsoft.com" data-dyn-bind="click: $control.LinkClicked">Click here</a>
+<a href="https://www.microsoft.com" data-dyn-bind="click: $control.LinkClicked">Click here</a>
 ```
 
 #### css

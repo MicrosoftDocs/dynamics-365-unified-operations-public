@@ -5,7 +5,7 @@ title: Get started with Planning Optimization
 description: This topic explains how to start to use the Planning Optimization functionality. 
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/29/2019
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -51,15 +51,17 @@ To use Planning Optimization, install the Planning Optimization Add-in for Dynam
 
 1. Sign in to LCS, and open the desired environment.
 1. Go to **Full details**.
-1. Select **Maintain**, or scroll down to the **Environment add-ins** FastTab.
+1. Scroll down to the **Environment add-ins** FastTab.
 1. Select **Install a new add-in**.
 1. Select **Planning Optimization**.
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
+1. On the **Environment add-ins** FastTab you should see that Planning Optimization is installing.
+1. After a few minutes **Installing** should change to **Installed** (you may need to refresh the page). When installed, you are ready to activate Planning Optimization in Dynamics 365 Supply Chain Management.
 
 ### Planning Optimization integration
 
-To configure whether the Planning Optimization Add-in should be used for master planning, go to **Master planning** \> **Setup** \> **Planning Optimization integration** \> **Integration parameters**.
+To configure whether the Planning Optimization Add-in should be used for master planning, go to **Master planning** \> **Setup** \> **Planning Optimization parameters**.
 
 #### Connection status
 

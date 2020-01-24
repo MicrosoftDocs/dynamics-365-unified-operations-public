@@ -5,7 +5,7 @@ title: Channel database extensions
 description: This topic explains how to extend the channel database.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/21/2019
+ms.date: 01/13/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-365-retail
@@ -133,7 +133,7 @@ CREATE VIEW [ext].[CONTOSORETAILSTOREHOURSVIEW] AS
 3. Grant **DataSyncUsersRole** permission if your table is going to send or eceive data from HQ.
 
     ```sql
-    GRANT SELECT, INSERT, UPDATE, DELETE ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
+    GRANT SELECT, INSERT, UPDATE, DELETE, ALTER ON OBJECT::[ext].[EXTTABLENAME] TO [DataSyncUsersRole]
     GO
     ```
 

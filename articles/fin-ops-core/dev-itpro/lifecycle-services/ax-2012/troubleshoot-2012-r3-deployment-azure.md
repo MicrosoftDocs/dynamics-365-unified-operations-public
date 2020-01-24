@@ -98,7 +98,7 @@ To obtain support for Azure, use the resources listed in the following table.
 </tr>
 <tr class="even">
 <td>Get assistance with billing-related questions</td>
-<td>Go to the <a href="http://azure.microsoft.com/support/understand-your-bill/">Understand your bill</a> page to get an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period.</td>
+<td>Go to the <a href="https://azure.microsoft.com/support/understand-your-bill/">Understand your bill</a> page to get an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period.</td>
 </tr>
 <tr class="odd">
 <td>Ask the community</td>
@@ -147,7 +147,7 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 </tr>
 <tr class="odd">
 <td>Ask the community</td>
-<td>Go to the <a href="http://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX forum</a> page to get help with your questions from the Microsoft Dynamics AX community.</td>
+<td>Go to the <a href="https://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX forum</a> page to get help with your questions from the Microsoft Dynamics AX community.</td>
 </tr>
 <tr class="even">
 <td>Use the Cloud-powered support tool</td>

@@ -5,7 +5,7 @@ title: Scope of the Brazilian localization
 description: This topic describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
 author: sndray
 manager: AnnBe
-ms.date: 08/02/2018
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -103,15 +103,14 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <tr>
 <th>Area</th>
 <th>Item</th>
-<th>AX 2012 RTM-R2</th>
 <th>AX 2012 R3</th>
-<th>Finance and Operations</th>
+<th>Finance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Master data</td>
-<td>Legal entity and fiscal establishment tax identifiers:
+<td>Tax identifiers for legal entities and fiscal establishments:
 <ul>
 <li>CNPJ/CPF</li>
 <li>IE</li>
@@ -122,11 +121,10 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Customer and vendor tax identifiers:
+<td>&nbsp;</td>
+<td>Tax identifiers for customers and vendors:
 <ul>
 <li>CNPJ/CPF</li>
 <li>IE</li>
@@ -138,10 +136,9 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Item tax characteristics:
 <ul>
 <li>Fiscal classification code and exception</li>
@@ -151,12 +148,10 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>CFOP table</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -165,102 +160,88 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Tax types: IPI, ICMS, ICMS tax substitution, ICMS difference, DIFAL, Importation tax, PIS, COFINS, CSLL, IRRF, INSS, Retained INSS, and ISS</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Taxation mode per tax type:
 <ul>
-<li>1 – Taxable</li>
-<li>2 – Exempt or non-taxable</li>
-<li>3 – Others</li>
+<li>1 &ndash; Taxable</li>
+<li>2 &ndash; Exempt or non-taxable</li>
+<li>3 &ndash; Others</li>
 </ul>
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Tax credit based on taxation mode</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>ICMS base reduction</td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>ICMS tax substitution with calculation based only on markup for outbound fiscal documents</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>ICMS tax substitution with calculation based on markup</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Simplified ICMS tax substitution</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Independent configuration for ICMS base reduction and tax substitution</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>IPI tax on the final user</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>ICMS for use and consumption</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>ICMS, PIS, and COFINS tax discounts for sales to SUFRAMA</td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>ICMS difference over sales in final consumer (DIFAL) only for simplified base</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>ICMS difference over sales in final consumer (DIFAL)</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>ICMS difference over purchase</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Configurable default taxes based on operations defined/specified per CFOP group</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Calculation of PIS and COFINS reference to law 1.401/2013 during importation</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -269,26 +250,22 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Purchase requisitions, requests for quotation, and purchase orders localized to support the Brazilian taxes per the Brazilian localization scope</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal document texts in purchase orders</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Cancel inbound issued fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Reverse received fiscal documents</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -308,68 +285,58 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Referenced fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal documents with referenced processes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Multiple processes referenced by fiscal document texts</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Tax adjustments during receipt of inbound fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Electronic fiscal document XML and DANFE received from a POP3 (Post Office Protocol version 3) email account</td>
 <td>No</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Validation of electronic fiscal document access key in SEFAZ</td>
 <td>No</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Archiving of electronic fiscal document XML together with the posted received fiscal document</td>
 <td>No</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Matching the quantity and price unit from the received electronic fiscal document XML with the vendor invoice from the purchase order</td>
 <td>No</td>
-<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>Purchase return</td>
 <td>Issuing fiscal document for vendor returns</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -378,26 +345,22 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Sales quotations, sales orders, free text invoices, and project invoices localized to support Brazilian taxes per the Brazilian localization scope</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Input of transport information for fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal document texts in sales orders and free text invoices</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Cancel issued fiscal documents</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -417,63 +380,54 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Referenced fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal document with referenced processes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Multiple processes referenced by fiscal document texts</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Withholding tax for IRRF, INSS, and ISS</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Outbound fiscal document viewer</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Display approximated taxes</td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>Manual maintenance of Ficha Conte&uacute;do de Importa&ccedil;&atilde;o (FCI) by product, fiscal establishment, and period</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Manual maintenance of Ficha Conteúdo de Importação (FCI) by product, fiscal establishment, and period</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for São Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
+<td>&nbsp;</td>
+<td>The localization supports issuing fiscal document models 1, 1-A, and 55, and the Services fiscal document for S&atilde;o Paulo city. Partners must customize the requirements or behavior for unsupported fiscal document models.
 <p><strong>Note:</strong> The localization doesn't support generation of FCI files, subsequent operation, automatic sending of FCI files, and automatic calculation of importation composition.</p>
 </td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -482,19 +436,16 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Customer returns with your organization's fiscal document</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Customer returns with a fiscal document issued by the customer</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Electronic fiscal document access key</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -503,45 +454,27 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Issue and receive fiscal documents for transfers/returns of inventory items between fiscal establishments</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Issue and receive fiscal documents for remittance/returns of inventory items from a third party</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>Production</td>
-<td>Indirect and direct cost absorption</td>
-<td>Yes</td>
+<td>Indirect and direct cost absorption only over production orders from discrete manufacturing</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>NF-e (Federal)</td>
-<td>Support for NF-e layout 2.0</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Support for NF-e layout 3.10</td>
-<td>Yes</td>
+<td><span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Support for NF-e layout 4.0</span></td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Support for NF-e layout 4.0</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>NF-e messages/events:
 <ul>
 <li>Issue</li>
@@ -552,61 +485,52 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Contingency mode: security form (FS or FS-DA)</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Contingency mode: SCAN</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Contingency mode: SVC</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>XML viewer for issued and received electronic fiscal documents</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Automatic sending of electronic fiscal document through email for customers, vendors, and transportation companies</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td><strong>Out of scope:</strong> Overall purpose services in the NF-e</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td>NFS-e Services (São Paulo city)</td>
+<td>NFS-e Services (S&atilde;o Paulo city)</td>
 <td>Service electronic fiscal document using .txt files</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Recibo Provisório de Serviços (RPS) for São Paulo city</td>
-<td>Yes</td>
+<td>&nbsp;</td>
+<td>Recibo Provis&oacute;rio de Servi&ccedil;os (RPS) for S&atilde;o Paulo city</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -615,54 +539,46 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Withholding IRRF, PIS, COFINS, CSLL, ISS, and INSS taxes on payments and receiving</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Withholding IRRF, PIS, and COFINS tax threshold by legal entity</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Payment with check per bank</td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>Payment with Brazilian Border&ocirc;</td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Payment with Brazilian Borderô</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Interest and fines on payments and receiving, applying federal, state, and city holiday calendars</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Interest, fines, and withholding tax on centralized payments</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Electronic payment based on configurable files for the FCC-400 layout</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Electronic receiving based on configurable files for the CNAB-240 layout</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -671,24 +587,21 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Accounting consolidation with transaction detailed transfers</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal document for ICMS tax credit transfer between fiscal establishments</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal document for 1/48 ICMS tax credits</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Legal reports:
 <ul>
 <li>Day book</li>
@@ -697,157 +610,129 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </ul>
 </td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
 <td>Retail Enterprise POS</td>
 <td>Customer CPF/CNPJ on fiscal receipts</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>File generation for Nota Fiscal Paulista</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Tax calculation according to Microsoft Dynamics AX 2012 configuration</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal printer integration for Daruma printers, models FS600, FS700 (H, L and M), FS800i, Mach 1, Mach 2, and Mach 3</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal printer integration for Bematech printers, models MP2100 FI TH FI and MP4200 TH FI II</td>
 <td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N&deg;9" of 2013, except for any businesses identified as out of scope in the <a href="#out-of-scope">Out of scope</a> section of this topic</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
-<td>POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°9" of 2013, except for any businesses identified as out of scope in the <a href="#out-of-scope">Out of scope</a> section of this topic</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td></td>
-<td>POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014, except for any businesses identified as out of scope in the <a href="#out-of-scope">Out of scope</a> section</td>
-<td>Yes</td>
+<td>&nbsp;</td>
+<td>POS legal requirements according to PAF-ECF law "ATO COTEPE/ICMS N&deg;46" of 2014, except for any businesses identified as out of scope in the <a href="#out-of-scope">Out of scope</a> section</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Display approximated taxes in fiscal receipts</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Void last fiscal receipt</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Payments with multiple credit cards</td>
 <td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Dire&ccedil;&atilde;o Processamento de Dados Ltda</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
-<td>EFT integration with third-party software D-TEF Dedicado, version 8.1.37.2, commercialized by Direção Processamento de Dados Ltda</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td></td>
-<td>EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Informática Ltda
-<p>Presales according to PAF-ECF law "ATO COTEPE/ICMS N°46" of 2014</p>
+<td>&nbsp;</td>
+<td>EFT integration with third-party software SiTef, version 4.0.111.6, commercialized by Software Express Inform&aacute;tica Ltda
+<p>Presales according to PAF-ECF law "ATO COTEPE/ICMS N&deg;46" of 2014</p>
 </td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Issuing return NF-e in EPOS for sales return</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Issuing NF-e linked to fiscal receipt in EPOS</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Configurable AOS for NF-e/NFC-e messaging with SEFAZ</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>The EFT service must be contracted directly from the third-party provider and isn't included in any Microsoft software license.
-<p><strong>Note:</strong> Not all Enterprise POS operations are permitted in Brazil because of conflicts with the PAF-ECF legislation. For more details, see <a href="https://www.microsoft.com/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</p>
+<p><strong>Note:</strong> Because of conflicts with the PAF-ECF legislation, not all Enterprise POS operations are permitted in Brazil. For more details, see <a href="https://www.microsoft.com/download/details.aspx?id=42938">the Retail and Enterprise POS Localization for Brazil white paper.</a></p>
 </td>
 <td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>NFC-e (Nota Fiscal ao Consumidor Eletr&ocirc;nica) in Retail Enterprise POS</td>
+<td><span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Support for layout NFC-e 4.0</span></td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td>NFC-e (Nota Fiscal ao Consumidor Eletrônica) in Retail Enterprise POS</td>
-<td>Support for layout NFC-e 3.10</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td></td>
-<td>Support for layout NFC-e 4.0</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Contingency mode: off-line</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Contingency mode for SP: SAT (model 59)</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Sales presence type: in-person</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
@@ -858,43 +743,38 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Released products by category</li>
 <li>Mass update worksheet</li>
 <li>Retail product hierarchy</li>
-</ul></td>
-<td>Yes</td>
+</ul>
+</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>SAT (model 59) for São Paulo state layout 0.07</td>
-<td>No</td>
+<td>&nbsp;</td>
+<td>SAT (model 59) for S&atilde;o Paulo state layout 0.07</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Support for only one SAT hardware per EPOS</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Support for SAT DLL selection, for multiple-brand compatibility</td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal receipt reference</td>
 <td>Yes</td>
-<td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Fiscal printer auto-configuration</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
@@ -903,26 +783,22 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <td>Credit notes</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
 <td>TMS</td>
 <td>Issuing outbound fiscal documents and electronic fiscal documents from loads for sales order invoices</td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Issuing outbound fiscal documents and electronic fiscal documents from loads from transfer orders and fiscal document slips</td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>Call center</td>
 <td>Support for Brazilian tax registration ID (CNPJ/CPF) in customer data management</td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -944,17 +820,15 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Tax assessments</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Generation of tax assessment and payment of the following taxes:
 <ul>
 <li>IPI</li>
@@ -965,203 +839,149 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Generation of tax assessment and payment of the following taxes:
 <ul>
 <li>INSS CPRB</li>
 </ul>
 </td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Generation of tax assessment and payment of the following taxes:
 <ul>
 <li>PIS and COFINS regime Cumulative</li>
-</ul>
-</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Generation of tax assessment and payment of the following taxes:
-<ul>
 <li>PIS and COFINS regime Non-Cumulative</li>
-</ul>
-</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Integration with the AX 2012 <strong>General ledger</strong> module:
-<ul>
-<li>Registration and posting of adjustment transactions for ICMS, ICMS_ST, and IPI taxes</li>
-<li>Registration and posting of non-fiscal operations with calculation of PIS and COFINS taxes</li>
-<li>Tax payment integration with the <strong>Accounts payable</strong> module</li>
+<li>Both</li>
 </ul>
 </td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">CIAP control and manual registration of ICMS installments</span></td>
+<td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Integration with Microsoft Dynamics AX 2009</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td></td>
+<td>
+<div>&nbsp;SPED Fiscal</div>
+<div>(ICMS, IPI)</div>
+</td>
 <td>Generation of a text file and support for companies defined as Profile A
 <p>Available layout versions:</p>
 <ul>
-<li>Layout Code 08 – Version 1.07 From 01.01.2014 to 12.31.2014</li>
-<li>Layout Code 09 – Version 1.08 From 01.01.2015 to 12.31.2015</li>
-<li>Layout Code 10 – Version 1.09 From 01.01.2016 to 12.31.2016</li>
+<li>Layout Code 13 and earlier</li>
 </ul>
 </td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Layout Code 11 – Version 1.10 From 01.01.2017 to 12.31.2017</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Layout Code 12 – Version 1.11 From 01.01.2018 to 12.31.2018</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>CIAP control and manual registration of ICMS installments</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Support for the following records for companies defined as Profile A:
 <ul>
-<li>Block 0: 0000-0001-0005-0015-0100-0150-0190-0200-0220-0300-0305-0400-0450-0460-0500-0600-0990</li>
-<li>Block C: C001-C100-C101-C110-C111-C113-C120-C130-C140-C141-C160-C170-C172-C190-C195-C400-C405-C410-C420-C460-C470-C490-C500 (incoming)-C590 (incoming)-C990</li>
+<li>Block 0: 0000-0001-0005-0015-0100-0150-0190-0200-0210-0220-0300-0305-0400-0450-0460-0500-0600-0990</li>
+<li>Block C: C001-C100-C101-C110-C111-C113-C114-C120-C130-C140-C141-C160-C170-C172-C190-C195-C400-C405-C410-C420-C460-C470-C490-C500 (incoming)-C590 (incoming)-C990</li>
 <li>Block D (only for incoming fiscal documents): D001-D100-D190-D195-D500-D590-D990</li>
 <li>Block E: E001-E100-E110-E111-E116-E200-E210-E220-E250-E300-E310-E311-E312-E313-E316-E500-E510-E520-E530-E990</li>
 <li>Block G: G001-G110-G125-G126-G130-G140-G990</li>
-<li>Block H: H001-H005-H010-H990</li>
-<li>Block 1: 1001-1010-1990</li>
+<li>Block H: H001-H005-H010-H020-H990</li>
+<li>Block K:&nbsp;<span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">K001-K100-K200-K220-K230-K235</span></li>
+<li>Block 1: 1001-1010-1990
+<ul>
+<li>Block 1900-1910-1920-1921-1923-1926-1990 only for Rio Grande do Sul state</li>
+</ul>
+</li>
 </ul>
 </td>
 <td>Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>Resolution 13/2019 and Portaria SUCIEF 55/2019- RJ</td>
+<td>&nbsp;Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Block C: C114</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Block K and related: 0210- K001-K100-K200-K220-K230-K235</td>
-<td>No</td>
+<td>&nbsp;</td>
+<td><strong>Out of scope:</strong> SPED Fiscal with specific requirements from the state/region, as described in the <a href="#brazilian-localization-strategy">Brazilian localization strategy</a> section of this topic, and companies that are categorized as Profile B and Profile C.</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td><strong>Out of scope:</strong> SPED Fiscal with specific requirements from the state/region, as described in the <a href="#brazilian-localization-strategy">Brazilian localization strategy</a> section of this topic, and companies that are categorized as Profile B and Profile C</td>
+<td>Portaria CAT 42/2018 - SP</td>
+<td>
+<ul style="color: #000000; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">
+<li>Layout 1.1 B</li>
+</ul>
+</td>
+<td>&nbsp;Yes</td>
 <td>Yes</td>
+</tr>
+<tr>
+<td><span style="display: inline !important; float: none; background-color: #ffffff; color: #000000; cursor: text; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">DRCST for Santa Catarina state</span></td>
+<td>
+<ul>
+<li>SEF Portaria No. 396/2018</li>
+<li>SEF Portaria No. 208/2019</li>
+<li>Records:
+<ul>
+<li>Block 0: 0000-0001-0005-0100-0190-0200-0220</li>
+<li>Block 2: 2100-2110-2113-2114-2115-2120-2121-2130-2132-2133</li>
+<li>Block H: H001-H005-H010-H990</li>
+<li>Block 9: 9001-9900-9990-9999</li>
+</ul>
+</li>
+</ul>
+</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>SPED Contributions (PIS and COFINS)</td>
-<td>Generation of a text file in accordance with layout 004</td>
-<td>No</td>
+<td>Generation of a text file in accordance with layout 005 and earlier</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Support for tax assessment regime Cumulative</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Support for company type Sociedade empresaria em geral</td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
-<td>Support for booking criterion Regime de Competência – Escrituracao detalhada only</td>
-<td>No</td>
+<td>&nbsp;</td>
+<td>Support for booking criteria Regime de Compet&ecirc;ncia &ndash; Escrituracao detalhada only</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Support for the following records:
 <ul>
-<li>Block 0: 0000-0001-0100-0110-0140-0150-0190-0200-0400-0450-0990</li>
+<li>Block 0: 0000-0001-0100-0110-0111-0140-0150-0190-0200-0400-0450-0990</li>
 <li>Block A: A001-A010-A100-A110-A111-A120-A170-A990</li>
-<li>Block C: C001-C010-C100-C110-C111-C120-C170-C180-C181-C185-C188-C190-C191-C195-C198-C199-C380-C381-C385-C400-C405-C481-C485-C490-C491-C495-C500-C501-C505-C509</li>
+<li>Block C: C001-C010-C100-C110-C111-C120-C170-C175-C180-C181-C185-C188-C190-C191-C195-C198-C199-C380-C381-C385-C400-C405-C481-C485-C490-C491-C495-C500-C501-C505-C509</li>
 <li>Block D (only for incoming fiscal documents): D001-D010-D100-D101-D105-D111-D500-D501-D505-D509</li>
-<li>Block F: F010-F100-F111-F600-F990</li>
-</ul>
-</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td>Support for the following records:
-<ul>
-<li>Block 0: 0111</li>
-<li>Block C: C175</li>
-<li>Block F: F120-F129-F130-F139-F700-F800</li>
+<li>Block F: F010-F100-F111-F120-F129-F130-F600-F700-F800-F990</li>
 <li>Block M: M001-M100-M105-M110-M115-M200-M205-M210-M220-M225-M400-M410-M500-M505-M510-M515-M600-M606-M610-M620-M625-M800-M810-M990</li>
 <li>Block 1: 1100-1300-1500-1700</li>
 </ul>
 </td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Out of scope:</strong> The tax assessment process and generation of related blocks (M) for regimes Non cumulative and Both</td>
-<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>SPED ECF</td>
 <td>Generation of a text file by using Management Reporter
-<p>Layouts 001, 002, 003, and 004</p>
+<p>Layouts 005 and previous</p>
 <p>Support for the following blocks and records:</p>
 <ul>
 <li>Block 0: 0000-0001-0010-0020-0030-0035-0930-0990</li>
@@ -1170,81 +990,64 @@ Microsoft makes no representations, warranties, or guarantees about the timeline
 <li>Block V (DEREX): V001-V010-V020-V030-V100-V990</li>
 </ul>
 </td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>SPED Reinf</td>
-<td>Generation of events R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099, R-5011
-<p>Layout version 1.3.02</p>
+<td>
+<div>Generation of events:</div>
+<ul>
+<li>R-1000, R-1070, R-2010, R-2020, R-2060, R-2098, R-2099, R-5011</li>
+<li>Layout version 1.4</li>
+</ul>
 </td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>SINTEGRA</td>
 <td>Generation of text files in accordance with Version 3 - ICMS-76/03, which is available from <a href="http://www.sintegra.gov.br/">http://www.sintegra.gov.br</a></td>
-<td>No</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr>
 <td>GIA-SP</td>
-<td>Generation of GIA São Paulo state text files in accordance with version 08.00 (01/02/2013), which is available from <a href="http://www.fazenda.sp.gov.br/download/download_gia.shtm">http://www.fazenda.sp.gov.br/download/download_gia.shtm</a></td>
-<td>No</td>
+<td>Generation of GIA S&atilde;o Paulo state text files in accordance with version 08.00 (01/02/2013), which is available from <a href="http://www.fazenda.sp.gov.br/download/download_gia.shtm">http://www.fazenda.sp.gov.br/download/download_gia.shtm</a></td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>GIA-ST Nacional</td>
 <td>Generation of GIA-ST text files in accordance with version 3.1, which is available from <a href="http://www.fazenda.sp.gov.br/download/downloadgiast.shtm">http://www.fazenda.sp.gov.br/download/downloadgiast.shtm</a></td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>SPED Accounting</td>
-<td>Generation of SPED Contábil text files
-<p>Layout version supported: 2.0, 3.0, 4.0, 5.0, and 6.0</p>
+<td>Generation of SPED Cont&aacute;bil text files
+<p>Layout version supported: 7.0 and earlier</p>
 </td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td></td>
+<td>&nbsp;</td>
 <td>Support for bookkeeping type G (Day Book - Livro Diario) and the generation of the following blocks and records:
 <ul>
-<li>Block 0: 0000-0001-0007-0220-0990</li>
-<li>Block I: I001-I010-I020-I050-I052-I100-I150-I155-I200-I250-I350-I355-I990</li>
-<li>Block J: J001-J005-J100-J150-J900-J930-J999</li>
-<li>Block 9: 9900-9999</li>
-</ul>
-<strong>Out of scope:</strong> Referenced chart of account (mapping between local CoA and government CoA)</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Tax statement extensibility</td>
-<td>The Tax Statement Framework aims to provide a unified experience for tax statement developers (for example, partners and independent software vendors [ISVs]), so that they can make their tax statements available to users in the AX 2012 <strong>Fiscal books</strong> module. The framework consists of a set of base artifacts and object-oriented design guidelines that should be followed by tax statement providers. Microsoft, being a tax statement developer itself, also develops its own tax statements by taking advantage of this framework.
-<ul>
-<li>Sped Fiscal</li>
-<li>EFD Contributions</li>
-<li>Sped ECD and ECF</li>
-<li>GIA-SP</li>
-<li>GIA-ST</li>
-<li>Sintegra</li>
+<li>Block 0: 0000-0001-0007-0020-0035-0150-0180-0990</li>
+<li>Block I: I001-I010-I030-I050-I051-I052-I100-I150-I155-I200-I250-I350-I355-I990</li>
+<li>Block J: J001-J005-J100-J150-J800-J801-J900-J930-J932-J935-J999</li>
+<li>Block 9: 9001-9900-9990-9999</li>
 </ul>
 </td>
-<td>No</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
+
 
 ## Out of scope
 

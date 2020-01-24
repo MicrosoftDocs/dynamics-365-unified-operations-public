@@ -69,3 +69,5 @@ To enrich a category page, do the following.
 [Save, preview, and publish a page](save-preview-publish-page.md)
 
 [Enrich a product page](enrich-product-page.md)
+
+[Verify page content accessibility](verify-accessibility.md)

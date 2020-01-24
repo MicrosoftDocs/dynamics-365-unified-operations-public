@@ -3,7 +3,7 @@
 
 title: Batch job to handle SQL index defragmentation
 description: This topic describes a system batch job that is used to rebuild fragmented indexes.
-author: sericks
+author: Peakerbl
 manager: AnnBe
 ms.date: 02/25/2019
 ms.topic: article

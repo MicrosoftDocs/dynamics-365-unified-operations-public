@@ -5,7 +5,7 @@ title: Shipping discount overview
 description: This topic describes the shipping discount capabilities within Dynamics 365 Retail and the corresponding setup steps required to start using these discounts.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 01/22/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -48,7 +48,7 @@ The next step is to configure the shipping discount itself. To do this, go to **
 
 Like product discounts, this discount honors all the existing standard discount capabilities, such as allowing the retailer to restrict these discounts with coupons so that only the customers with coupons can get these discounts. Also, these discounts leverage the Price groups capability to determine the eligibility of the discount. For example, the retailer can choose to run these promotions only in the online channels and/or across channels for certain customer groups such as loyalty customers. Lastly, to view the charges applied on the sales lines and the applied promotion, you need to add **Manage charges** on the POS screen. Go to the **Screen layout** page to make those changes. Now run the jobs 1020, 1040, 1090, and 1110 to send the charges, shipping promotion, and screen layout information to the channels. 
 
-When the cashier creates a customer order on POS or the customer places an order on an e-Commerce website, the charges are calculated automatically. However, if the mode of delivery on the order meets the mode of delivery and the transaction amount meets the threshold set on the retail shipping threshold discount, then the shipping discount gets applied. Currently, the shipping discounts apply only on POS and e-Commerce orders. These discounts will also be available for call center orders in a future release of Retail. 
+When the cashier creates a customer order on POS or the customer places an order on an e-Commerce website, the charges are calculated automatically. However, if the mode of delivery on the order meets the mode of delivery and the transaction amount meets the threshold set on the retail shipping threshold discount, then the shipping discount gets applied. Currently, the shipping discounts apply only on POS and e-Commerce orders. These discounts are also applicable for call center orders. 
 
 > [!NOTE]
 > Unlike product discounts such as quantity, simple, mix and match, and threshold discounts, the shipping discount does not create discount lines. Instead, the shipping discount edits the shipping charge directly and appends the name of the discount to the charge description. 
