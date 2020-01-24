@@ -225,6 +225,12 @@
             href: hr-benefits-process-rate-changes.md
         - name: View benefits reports
           href: hr-benefits-reports.md
+        - name: Benefits management examples
+          items:
+          - name: Configure and enroll in benefits
+            href: hr-benefits-example-configure-and-enroll.md
+          - name: Configure a flex credit program
+            href: hr-benefits-example-configure-flex-credit-program.md
     - name: Manage leave and absence
       items:
       - name: Overview
