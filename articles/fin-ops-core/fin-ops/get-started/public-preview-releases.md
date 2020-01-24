@@ -83,4 +83,4 @@ Customers will be able to take up to 8 service updates per year and are required
 
 Sign up for the PEAP program by joining the Insider Program available at https://experience.dynamics.com. Once your nomination has been accepted, join the program.
 
-Public previews are made available as a deployable package via the shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md).  
+Public previews are made available as a deployable package via the Shared asset library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md).  
