@@ -159,7 +159,7 @@
       items:
     - name: Manage benefits
       items:
-      - name: Benefits management
+      - name: Benefits management preview feature
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md

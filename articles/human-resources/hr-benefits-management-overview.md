@@ -48,13 +48,45 @@ The Benefits management preview feature provides you with the following solution
 
 To use Benefits management, see the following articles:
 
-| Article | Description |
-| --- | --- |
-| [Manage features](hr-admin-manage-features.md) |  |
-| Set up Benefits management |  |
-| Configure Benefits management |  |
-| Create benefits plans |  |
-| Process benefits plans |  |
-| View benefits reports |  |
+**Enable Benefits management**
+
+- [Manage features](hr-admin-manage-features.md)
+- [Preview feature: Benefits management](hr-admin-manage-features.md?preview-feature-benefits-management)
+
+**Configure Benefits management**
+
+- [Set Benefits management parameters](hr-benefits-setup-parameters.md)
+- [Configure eligibility rules and options](hr-benefits-setup-eligibility-rules.md)
+- [Configure personal contact eligibility options](hr-benefits-setup-contact-eligibility-options.md)
+- [Create coverage options](hr-benefits-setup-coverage-options.md)
+- [Set up payment frequencies](hr-benefits-setup-payment-frequencies.md)
+- [Configure life event types](hr-benefits-setup-life-event-types.md)
+- [Create plan types](hr-benefits-setup-plan-types.md)
+- [Set up reason codes](hr-benefits-setup-reason-codes.md)
+- [Set up tier codes](hr-benefits-setup-tier-codes.md)
+- [Configure rates](hr-benefits-setup-rates.md)
+- [Configure deductions](hr-benefits-setup-deductions.md)
+- [Configure waiting days](hr-benefits-setup-waiting-days.md)
+- [Configure waiting periods](hr-benefits-setup-waiting-periods.md)
+- [Set up rounding rules](hr-benefits-setup-rounding-rules.md)
+- [Create employment categories](hr-benefits-setup-employment-categories.md)
+- [Set up employment types](hr-benefits-setup-employment-types.md)
+- [Configure employee self service](hr-benefits-setup-employee-self-service.md)
+
+**Create benefit plans**
+
+- [Set up benefit plans](hr-benefits-plans-setup.md)
+- [Create worker benefit plans](hr-benefits-plans-worker.md)
+- [Bulk update worker benefits plans](hr-benefits-plans-worker-bulk-update.md)
+- [Set up flex credit programs](hr-benefits-plans-flex-credit-programs.md)
+- [Configure future life events](hr-benefits-plans-future-life-events.md)
+
+**Process benefit plans**
+
+- [Process enrollment eligibility](hr-benefits-process-enrollment-eligibility.md)
+- [Process life events](hr-benefits-process-life-events.md)
+- [Process life event changes](hr-benefits-process-life-event-changes.md)
+- [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
+- [Process rate changes](hr-benefits-process-rate-changes.md)
 
 ## See also
