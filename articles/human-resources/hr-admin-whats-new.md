@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new in Human Resources
+title: What's new or changed in Human Resources
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# What's new in Human Resources
+# What's new or changed in Human Resources
 
 Each week, we provide a new release for Microsoft Dynamics Human Resources. The changes are listed below.
 
