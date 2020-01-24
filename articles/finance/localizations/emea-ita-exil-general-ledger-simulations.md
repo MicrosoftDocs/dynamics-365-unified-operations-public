@@ -2,10 +2,10 @@
 # required metadata
 
 title: General ledger simulations (Italy)
-description: General ledger simulations.
+description: This topic provides information about posting ledger transactions as a simulation from the general journal and then reviewing reports that include the simulated transactions.
 author: anasyash
 manager: AnnBe
-ms.date: 11/15/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -23,7 +23,7 @@ ms.search.scope: Core, Operations
 ms.search.region: Italy
 # ms.search.industry: 
 ms.author: ilyako
-ms.search.validFrom: 2020-06-01
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: 10.0.9
 
 ---
@@ -32,58 +32,67 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-Feature allows to post ledger transactions as simulation from the general journal and review reports including simulation transactions.
-Feature is available only for legal entities with primary address in Italy. 
+General ledger simulations allows you to post simulated ledger transactions from the general journal and then review reports that include the simulatedtransactions.
 
-You can post simulation transactions only for journal lines with both **Account type** and **Offset account type** equal to **Ledger**.
-You can delete simulation ledger transactions, modify them and move to the real general ledger posted transactions.
-You can review posted simulation ledger transactions in the reports **Trial balance** and **Dimension statement with simulation**.
+This feature is available only for legal entities with primary address in Italy. 
+
+You can post simulation transactions only for journal lines where **Account type** and **Offset account type** are equal to **Ledger**.
+You can delete the simulated ledger transactions, modify them, and move them to the real general ledger posted transactions.
+You can review the posted simulation ledger transactions in the reports, **Trial balance** and **Dimension statement with simulation**.
 
 
 ## Prerequisites
 
-- The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **General ledger simulations** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+Before you can use the General ledger simulations, the following prerequisites must be met:
+
+- The primary address of the legal entity is in Italy.
+- Enable the **General ledger simulations** feature in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Setup 
 
-### Create Number sequence for Simulation general journal transfer.
+### Create a number sequence for the simulated general journal transfer
 
-1.	Go to **General ledger > Ledger setup > General ledger parameters**.
-2.	Click the **Number sequences** tab.
-3.	Set the sequence in the field **Simulation general journal transfer**.
+1.	Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+2.	Onthe **Number sequences** tab, set the sequence in the field to **Simulation general journal transfer**.
 
-### Create Simulation Journal
-1. Go to **General ledger > Journal setup > Journal name** and create Simulation Journal.
-2. Set **Journal type** as **Daily**.
-3. Set **Simulation** to **Yes**.
-4. Set **Requires validation** to **Yes** under **Simulation journal** fields group, to indicate that the journal must be validated before executing simulation posting.
+### Create a Simulation journal
+
+1. Go to **General ledger** > **Journal setup** > **Journal name** and create a new journal called, Simulation.
+2. Set the **Journal type** field to **Daily**.
+3. In the **Simulation** field, select **Yes**.
+4. In the **Simulation journal** field group, set the **Requires validation** field to **Yes** to indicate that the journal must be validated before the simulated posting is executed.
 
 
 ## Operations
 
 ### Create and post simulation transaction
-1. Go to **General Ledger > Journal Entries > Simulation journals**
-2. Create journal lines as Ledger - Ledger in standard way.
-3. Post simulation transaction by clicking **Post > Post simulation**. This makes the transaction effective for simulation calculations, and the journal becomes “simulation posted”.
-4. Make posted simulation transaction editable by clicking **Post > Reopen**
-5. Move posted simulation transaction to ordinary ledger by clicking **Post > Post**
 
-It is important to keep in mind that the function that closes a fiscal period or a fiscal year checks that the simulation transactions are either posted as normal transaction or deleted. Consequently if there are pending simulated general ledger transactions for the period, an error message appears.
+1. Go to **General Ledger** > **Journal Entries** > **Simulation journals**.
+2. Create journal lines as **Ledger - Ledger** in the standard way, and then select **Post** > **Post simulation** to post the simulation transactions. This makes the transaction effective for simulation calculations, and the journal becomes *simulation posted*.
+3. Select **Post** > **Reopen** to make the posted simulation transaction editable.
+4. Select **Post** > **Post** to move the posted simulation transaction to an ordinary ledger.
+
+> [!IMPORTANT]
+> The function that closes a fiscal period or a fiscal year verifies that the simulation transactions have been posted as normal transactions or have been deleted. If there are pending simulated general ledger transactions for the period, an error message appears.
 
 
 ## Periodic operations
 
-### Posting all Simulation Transaction 
-To post simulation transactions for all simulaiton journals, go to **Periodic tasks > Simulations > Post simulation journals**.
-Transactions will be no longer simulation transactions once all journals are posted
+### Post all simulation transactions 
 
-### Reopen all Simulation journals 
-To reopen all Simulation journals go to **Periodic tasks > Simulations > Reopen simulation journals**.
+- To post simulation transactions for all simulation journals, go to **Periodic tasks** > **Simulations** > **Post simulation journals**.
+
+Transactions will be no longer simulation transactions after all journals are posted.
+
+### Reopen all simulation journals 
+
+- To reopen all Simulation journals go to **Periodic tasks** > **Simulations** > **Reopen simulation journals**.
+
 All simulation posted Simulation journals are reopened. You can edit the Simulation journals and post simulation again.
 
 ### Delete all Simulation journals 
-To delete all open Simulation journals go to **Periodic tasks > Simulations > Delete simulation journals**. 
+
+- To delete all open Simulation journals go to **Periodic tasks** > **Simulations** > **Delete simulation journals**. 
 
 ## Review simulation transactions in reports
 
@@ -91,19 +100,25 @@ Simulation transactions can be reviewed in several ledger reports.
 Please note, that simulation transactions do not appear on the Italian fiscal journal until they become real transactions.
 
 ### Create Simulation Journal name group 
-Go to **General ledger > Journal setup > Simulations > Simulation journal group**.
-Create simulation journal group. On the **Simulation journals** tab, include simulation journals to this group from the list of available simulation journals. 
+
+1. Go to **General ledger** > **Journal setup** > **Simulations** > **Simulation journal group**.
+2. Create a simulation journal group. 
+3. On the **Simulation journals** tab, select to include simulation journals in this group from the list of available simulation journals. 
 
 ### Trial balance
-Go to **General Ledger > Inquiries and reports > Trial balance**.
-Select value in **Simulation journal group** on the **Parameters** FastTab of the **Trial balance** report header.
-Enter other parameters and calculate balances.
-Review that report contains columns which consider simulation tansactions:
+
+1. Go to **General Ledger** > **Inquiries and reports** > **Trial balance**.
+2. On the **Parameters** FastTab of the **Trial balance** report header, select a value in the **Simulation journal group** field.
+3. Enter other parameters and calculate the balances.
+4. Verify that the report contains columns that consider simulation tansactions, including:
+
 -	**Debit (simulation)**
 -	**Credit (simultion)**
--	**Closing balance (with simulations)** which is the total of the values in **Closing balance**, **Debit (simulation)** and **Credit (simultion)**.
+-	**Closing balance (with simulations)**: This is the total of the values in the **Closing balance**, **Debit (simulation)** and **Credit (simultion)** columns.
 
 ### Dimension statement with simulation
-Go to **General Ledger > Inquiries and reports > Ledger reports > Dimension statement with simulation**.
-Set **Simulation journal transactions** to **Yes** on the **Statement by dimension** dialog. Select value in **Simulation journal group**. Click **OK**.
-Review that report contains posted simulation transactions along with standard ledger transactions.
+
+1. Go to **General Ledger** > **Inquiries and reports** > **Ledger reports** > **Dimension statement with simulation**.
+2. Set **Simulation journal transactions** to **Yes** on the **Statement by dimension** dialog.
+3. Select a value in the **Simulation journal group** field, and then select **OK**.
+4. Verify that the report contains posted simulation transactions and standard ledger transactions.
