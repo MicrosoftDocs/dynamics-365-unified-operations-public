@@ -71,7 +71,7 @@ The following scenarios are covered by the fiscal printer integration sample for
         - Print a fiscal receipt for a return order.
 
     - Print a bar code for the receipt number on a fiscal receipt.
-    - Print the [customer information](emea-ita-customer-information.md) that is specified for a sales transaction on a fiscal receipt. An example of this information is the customer's fiscal code. 
+    - Print the [customer information](emea-ita-customer-information.md) that is specified for a sales transaction on a fiscal receipt. An example of this information is the customer's lottery code. 
 
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
