@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Release 10.0.8
 
 This topic presents an overview of channels in Microsoft Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up each channel.
 
-## Channels
+## Types of Channels
 
 Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.
 
 ### Retail channels
 
-Retail channels represent standard brick-and-mortar stores. Each retail store can have its own point of sale (POS) registers, income and expense accounts, and staff. 
+Retail channels represent standard brick-and-mortar stores. Each store can have its own point of sale (POS) registers, income and expense accounts, and staff. 
 
 ### Call center channels
 
@@ -49,11 +49,11 @@ Call center channels represent call center order and customer management.
 
 ### Online channels
 
-Online channels represent online e-Commerce storefronts. Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solutions.
+Online channels represent online e-Commerce storefronts. Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.
 
 ## Channel setup basics
 
-Channel set up is performed in the Commerce tool. Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products. After you create a channel, you assign the products that you want it to carry and sell. Each channel type has a unique set of features that may need to be configured. For example, a retail channel needs to have assigned employees, registers, and customers. Once a new channel is created, it needs to be assigned to an organization hierarchy.
+Channel set up is performed in the Commerce tool. Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products. After you create a channel, you assign the products that you want it to carry and sell. Each channel type has a unique set of features that may need to be configured. For example, a retail channel needs assigned employees, registers, and customers. Once a new channel is created, it needs to be assigned to an organization hierarchy.
 
 ## Channel setup prerequisites
 
@@ -62,7 +62,7 @@ Before you can set up a channel, you must complete some prerequisite tasks based
 
 ## Set up a channel
 
-After you complete the prerequisite tasks, for further setup instructions follow the link below for the channel type you want to create.
+After you complete the prerequisite tasks, for further setup instructions, use the following links.
 
 - [Set up a retail channel](channel-setup-retail.md)
 - [Set up a call center channel](channel-setup-callcenter.md)
@@ -82,6 +82,7 @@ After you create a channel, you may need to complete some of the below tasks:
 - Publish the retail store to send store data to Retail POS. (LINK TBD)
 - Run the jobs to send the store data to Retail POS. (LINK TBD)
 -->
+
 ## Additional resources
 
 [Channel setup prerequisites](channels-prerequisites.md)
