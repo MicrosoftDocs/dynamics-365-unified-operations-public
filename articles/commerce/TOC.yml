@@ -440,10 +440,6 @@
         items:
         - name: Add a channel to an organization hierarchy  
           href: channel-add-to-org-hierarchy.md
-        - name: Data syncing 
-          items:
-          - name: How to ensure new products show up in store 
-            href: TBD.md
         - name: Advanced auto charges 
           items:
           - name: Configure and use advanced auto charges 
@@ -524,8 +520,6 @@
             href: ../retail/tasks/define-channel-attributes.md?toc=/dynamics365/commerce/toc.json
         - name: Channel hierarchies 
           items:
-          - name: Channel hierarchy overview 
-            href: TBD.md
           - name: Create a channel navigation hierarchy
             href: create-channel-hierarchy.md
           - name: Configure channel to use a channel navigation hierarchy 
@@ -544,10 +538,6 @@
             href: ../retail/set-up-bar-codes.md?toc=/dynamics365/commerce/toc.json
           - name: Set up bar code masks 
             href: ../retail/set-up-bar-code-masks.md?toc=/dynamics365/commerce/toc.json
-        - name: Product images 
-          items:
-          - name: Digital asset management 
-            href: TBD.md
       - name: Pricing and discounts 
         items:
         - name: Discounts
@@ -642,14 +632,8 @@
       items:
       - name:	Sales orders   
         items:
-        - name: Create a customer order 
-          href: TBD.md
-        - name: Create a cash and carry order 
-          href: TBD.md
         - name: Create a call center order 
           href: ../retail/tasks/create-call-center-orders.md?toc=/dynamics365/commerce/toc.json
-        - name: Create a continuity order 
-          href: TBD.md
       - name: Distributed order management	  
         items:
         - name: DOM overview
