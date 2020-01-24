@@ -39,7 +39,7 @@ You can use the [Electronic reporting](general-electronic-reporting.md) (ER) to 
 for more.
 
 For example, when you configure [foreign trade 
-parameters](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters),
+parameters](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters),
 you need to set up the references to individual ER formats that will be used to generate the Intrastat declaration and the Intrastat declaration control report. The pictures below show how the ER formats lookup field looks like in the foreign trade parameters page.
 
 If the current Finance instance contains no Intrastat business process related ER formats, this lookup field will be empty.
