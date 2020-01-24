@@ -37,13 +37,13 @@ This topic describes how to create a new retail channel in Microsoft Dynamics 36
 
 ## Overview
 
-Microsoft Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
+Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
 
-Before a retail channel is created ensure you follow the [channel prerequisites](channels-prerequisites.md).
+Before a retail channel is created, ensure you follow the [channel prerequisites](channels-prerequisites.md).
 
 ## Create and configure a new retail channel
 
-1. Go to **Navigation pane \> Modules \> Channels \> Retail stores \> All retail stores**.
+1. Go to **Navigation pane \> Modules \> Channels \> Stores \> All stores**.
 1. On the action pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
@@ -70,7 +70,7 @@ The following image shows an example retail channel.
 
 There are numerous other optional settings that can be set in the **Statement/closing** and **Miscellaneous** sections, based on the needs of the retail store.
 
-In addition, see [Screen layouts for the point of sale (POS)](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) for information on setting up the default screen layout in the **Screen layout** section and [Configure and install Retail hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) for **Hardware stations** section setup information.
+In addition, see [Screen layouts for the point of sale (POS)](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json) for information on setting up the default screen layout in the **Screen layout** section and [Configure and install Retail hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) for setup information about the **Hardware stations** section.
 
 The following image shows an example retail channel setup configuration.
 
