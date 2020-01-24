@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **Notes for Reviewers**
 
+[!include [banner](includes/preview-feature.md)]
+
 | Question | Should I delete references to FMLA? |
 
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:

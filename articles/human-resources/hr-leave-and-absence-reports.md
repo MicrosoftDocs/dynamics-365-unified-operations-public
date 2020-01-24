@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 **Notes for Reviewers**
 
+[!include [banner](includes/preview-feature.md)]
+
 | Question | Is this needed? Is it possible to generate FMLA or other reports? |
 
 

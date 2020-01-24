@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Create an alert for leave and absence requests
 
+[!include [banner](includes/preview-feature.md)]
+
 You can set up alerts for leave and absence requests in Dynamics 365 Human Resources.
 
 1. On the **Leave and absence** page, select the **Links** tab.

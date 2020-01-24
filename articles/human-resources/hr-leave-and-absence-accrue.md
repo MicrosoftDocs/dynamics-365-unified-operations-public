@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Accrue leave and absence plans
 
+[!include [banner](includes/preview-feature.md)]
+
 
 
 1. On the **Leave and absence** page, select the **Links** tab.
