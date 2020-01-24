@@ -80,6 +80,9 @@ To read a description of this feature, see [Recommended fields](https://successh
 ### New task recorder capabilities: Resizable task recorder pane 
 To read a description of this feature, see [New task recorder capabilities for RSAT](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=2f825ba0-84ca-e911-a96a-000d3a4f36ce) in the release plan.
 
+### (Preview) Branding changes for updated Finance and Operations licensing
+To read a description of this feature, see [Finance and Operations licensing](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=a49e05d7-df1d-ea11-a811-000d3a8f022a) in the release plan.
+
 ### Feature name (must match the name of the feature found in the release plan)
 To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
 
