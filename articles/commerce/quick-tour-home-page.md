@@ -5,7 +5,7 @@ title: Overview of the home page
 description: This topic provides an overview of the home page in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
