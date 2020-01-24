@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 11
 
 [!include [banner](../includes/banner.md)]
 
-Service updates are continuous, touchless updates that provide new features and fuctionality. They elminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
+Service updates are continuous, touchless updates that provide new features and functionality. They eliminate the need to do expensive upgrades every few years. The service updates maintain backward compatibility, which means there is no need to ‘merge your code’.  We recommend leveraging tools such as the Regression Suite Automation Tool (RSAT) for regression testing.
 
 You are in control and manage how your organization receives these updates. For example, you can sign up for the First Release program so that your organization receives updates first. You can apply the updates to any of your environments manually (self-update) or remain on the default release schedule and receive the auto-updates when you schedule them using Lifecyle Services (LCS). This topic explains the different release options and how you can use them for your organization.
 
@@ -72,7 +72,7 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting:  November 1, 2019        | January 13, 2019  |
 | 10.0.7 Platform update 31 | October 25, 2019            | November 29, 2019                 | Production starting:  January 1, 2020         | March 9, 2020     |
 | 10.0.8 Platform update 32 | November 29, 2019           | January 17, 2020                  | Production starting:  February 1, 2020        | April 13, 2020    |
-| 10.0.9 Platform Update 33 | Februrary 1, 2020           | March 13, 2020                    | Production starting:  April 1, 2020           | June 5, 2020      |
+| 10.0.9 Platform Update 33 | February 1, 2020           | March 13, 2020                    | Production starting:  April 1, 2020           | June 5, 2020      |
 | 10.0.10                   | March 6, 2020               | April 10, 2020                    | Production starting:  May 1, 2020             | July 3, 2020      |
 | 10.0.11                   | April 17, 2020              | May 29, 2020                      | Production starting:  July 1, 2020            | September 4, 2020 |
 | 10.0.12                   | May 29, 2020                | July 10, 2020                     | Production starting:  August 1, 2020          | October 9, 2020   |
