@@ -37,7 +37,7 @@ This topic describes how to create a size, style, or color variant group for a p
 
 ## Overview
 
-Microsoft Dynamics 365 Commerce supports multiple variants for products. It is ideal to set up variant groups for different product categories. For example, a size group can be created for t-shirts with sizes extra small, small, medium, large, and extra large, or a color group could be created to include all available colors of a product. Variant groups should be added before products are added.
+Dynamics 365 Commerce supports multiple variants for products. It is ideal to set up variant groups for different product categories. For example, a size group can be created for t-shirts with sizes extra small, small, medium, large, and extra large, or a color group could be created to include all available colors of a product. Variant groups should be added before products are added.
 
 In this topic, a size group will be created and configured. Similar procedures can be used for adding and configuring style groups and color groups.
 
