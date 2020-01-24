@@ -13,7 +13,7 @@ ms.technology:
  
 # optional metadata 
  
-# ms.search.form:   
+ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole  
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: josaw

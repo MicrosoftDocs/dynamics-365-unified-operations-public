@@ -5,7 +5,7 @@ title: Product collection modules
 description: This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -79,7 +79,8 @@ To add a product collection module to a category page, follow these steps.
 1. In the page outline, select the **Sub footer** slot, select the ellipsis button (**...**), and then select **Add Module**.
 1. In the **Add Module** dialog box, select **Container**, and then select **OK**.
 1. In the container module, select the ellipsis button, and then select **Add Module**.
-1. In the **Add Module** dialog box, select **Product collection**, and then select **OK**.
+1. In the **Add Module** dialog box, select **Product collection**, and then select **OK**.  
+![Example product collection module Wizard flow](./media/productCollectionModule.png)
 1. Configure settings by selecting an appropriate data source and inputs for the product collection.
 1. In the properties pane for the product collection module, select **Add a product list**.
 1. In the **Select product list configuration** dialog box, select the type of list, enter the number of items, and select any other options that are available for the list type. For more information about list types, see the table that follows. 
@@ -111,3 +112,5 @@ The following table shows the list types that are available for selection in the
 [Container module](add-container-module.md)
 
 [Buy box module](add-buy-box.md)
+
+[Product recommendations overview](product-recommendations.md)

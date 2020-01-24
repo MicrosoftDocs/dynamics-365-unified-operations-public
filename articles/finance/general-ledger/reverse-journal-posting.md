@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 # Reverse journal posting
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic describes capabilities Microsoft Dynamics 365 Finance that allows you to reverse an entire
 journal, or reverse one or more vouchers from the voucher transaction list, regardless of their origin. 
