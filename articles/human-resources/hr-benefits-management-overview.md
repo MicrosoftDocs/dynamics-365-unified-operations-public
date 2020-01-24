@@ -48,10 +48,13 @@ The Benefits management preview feature provides you with the following solution
 
 To use Benefits management, see the following articles:
 
-Set up Benefits management
-Configure Benefits management
-Create benefits plans
-Process benefits plans
-View benefits reports
+| Article | Description |
+| --- | --- |
+| [Manage features](hr-admin-manage-features.md) |  |
+| Set up Benefits management |  |
+| Configure Benefits management |  |
+| Create benefits plans |  |
+| Process benefits plans |  |
+| View benefits reports |  |
 
 ## See also

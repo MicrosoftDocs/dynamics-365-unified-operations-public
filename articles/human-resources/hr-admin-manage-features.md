@@ -36,22 +36,32 @@ As part of our continuous rollout of new capabilities for Microsoft Dynamics 365
 
 For more information about new features in Human Resources, see [What's new in Human Resources](hr-adminwhats-new.md) and [Dynamics 365 and Power Platform Release Plan](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
 
+The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+
+All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features may be on by default.
+
+Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
+
 ## Enable or disable preview features
 
 To access preview features, you must first enable them in your environment. Enabling or disabling preview features is environment-specific.
 
 > [!IMPORTANT]
-> When you turn on the **Preview Features** setting, you enable preview features for all users in your organization who are in that environment. When you turn off the setting, you disable preview features and make them inaccessible to your users. Preview features have limited support in Talent. They might use fewer privacy and security measures, and they aren't included in the Talent service level agreement (SLA). You should not use preview features to process personal data (that is, any information that could identify you), or to process other data that is subject to legal or regulatory compliance requirements.
+> Preview features are only available in **Sandbox** environments. When you turn on a preview feature, you enable it for all users in your organization who are in that environment. When you turn off the preview feature, you disable it and make it inaccessible to your users. Preview features have limited support in Human Resources. They might use fewer privacy and security measures, and they aren't included in the Human Resources service level agreement (SLA). You should not use preview features to process personal data (that is, any information that could identify you), or to process other data that is subject to legal or regulatory compliance requirements.
 
-1. In Human Resources, select **System administration**, and then select the **Links** tab.
-3. On the **System administration** page, under **Setup**, select **System parameters**.
-4. On the **System parameters** page, select the **Preview features** tab.
-5. Set the **Enable preview mode for all users** option to **Yes** to make preview features available.
+1. In Human Resources, select **System administration**.
 
-    ![Enable preview features in Human Resources](./media/corehr-enable-preview-features.png)
+2. Select the **Feature management** tile.
 
-> [!NOTE]
-> To disable preview features, use the same steps, but set the **Enable preview mode for all users** option to **No**. When you disable preview features, they become inaccessible to your users, and errors might occur in processes that are associated with the features.
+3. To enable a preview feature, select it from the list, and then select **Enable**. To disable a preview feature, select it from the list, and then select **Disable**.
+
+## Preview feature: Benefits management
+
+Benefits management provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings. For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
+
+
+
+
 
 ## Feedback
 

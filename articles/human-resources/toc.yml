@@ -57,10 +57,6 @@
         href: hr-admin-integration-office.md
     - name: Manage features
       href: hr-admin-manage-features.md
-    - name: Manage preview features
-      items:
-      - name: Set up Benefits management
-        href: hr-admin-preview-features-benefits-management.md
     - name: Disaster recovery
       href: hr-admin-disaster-recovery.md
     - name: Manage users
@@ -149,7 +145,7 @@
             href: hr-developer-api-myleaverequests-overview.md
           - name: Submit a leave request to workflow
             href: hr-developer-api-myleaverequests-submit.md
-  - name: HR Pro Guide
+  - name: User Guide
     items:
     - name: Overview
       href: hr-hrpro-overview.md
@@ -271,9 +267,5 @@
       items:
     - name: Run reports
       items:
-  - name: Employee Guide
-    items:
-    - name: Overview
-      href: hr-employee-overview.md
 
 
