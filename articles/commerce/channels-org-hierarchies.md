@@ -37,7 +37,7 @@ This topic descibes how to set up organization hierarchies in Microsoft Dynamics
 
 ## Overview
 
-Before creating channels you'll want to ensure you have set up your organization hierarchies.
+Before creating channels, you'll want to ensure you have set up your organization hierarchies.
 
 You can use organization hierarchies to view and report on your business from various perspectives. For example, you can set up one hierarchy for tax, legal, or statutory reporting. You can then set up another hierarchy to report financial information that is not legally required, but that is used for internal reporting.
 
