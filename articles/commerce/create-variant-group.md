@@ -45,7 +45,7 @@ In this topic, a size group will be created and configured. Similar procedures c
 
 To create a size group, follow these steps.
  
-1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Variant groups \> Size groups**.
+1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Variant groups \> Size groups**.
 1. On the action pane, select **New**.
 1. In the **Size group** box, enter a name for the size group.
 1. In the **Description** box, enter an appropriate description.
@@ -55,7 +55,7 @@ To create a size group, follow these steps.
 
 To add attributes to a size group, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Variant groups \> Size groups**
+1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Variant groups \> Size groups**
 1. In the navigation pane, select a size group.
 1. Under **Size group lines**, select **Add**.
 1. In the **Size** box, enter a string representing the size (for example, "XL").
