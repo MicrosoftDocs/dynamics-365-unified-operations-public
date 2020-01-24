@@ -85,7 +85,7 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Eligible union** | Specifies the labor union memberships that satisfy the eligibility rule. For example, Forklift Drivers of America. </br></br>When using a union-based eligibility rule, the worker’s union record must have the end date populated. You can’t leave it blank. |
    | **Eligible ZIP/postal code** | Specifies the ZIP/postal codes that satisfy the eligibility rule. For example, 58104. If the employee has multiple primary addresses, the eligibility rule will check all of them to assess eligibility. |
 
- 5. Under **Additional detail**, you can view the following additional details:
+5. Under **Additional detail**, you can view the following additional details:
 
    | Field | Description |
    | --- | --- |
@@ -94,7 +94,7 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Eligibility reference** | Specifies the values you selected under **Additional criteria**. |
    | **Description** | The description you selected under **Additional criteria**. |
 
-4. Select **Save**.
+6. Select **Save**.
 
 ## Configure bundles
 
