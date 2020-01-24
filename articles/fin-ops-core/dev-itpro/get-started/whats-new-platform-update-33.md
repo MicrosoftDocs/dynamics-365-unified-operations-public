@@ -51,19 +51,23 @@ To learn more about the feature, see: (remove this bulleted list if you don't ha
 - [Title of content](URL of content)
 - [Title of content](URL of content)
 
-### Feature name (must match the name of the feature found in the release plan)
-To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
+### (Preview) Saved views
+To read a description of the Saved views feature, see [User productivity - Saved views - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) in the release plan.  
 
-To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
-- [Title of content](URL of content)
-- [Title of content](URL of content)
+To learn more about saved views, see: 
+- [Saved views](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/saved-views)
 
-### Feature name (must match the name of the feature found in the release plan)
-To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
+### (Preview) New grid control 
+To read a description of this feature, see [User productivity - New grid control - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ebd342bc-d91d-ea11-a811-000d3a8f0f1e) in the release plan.
 
-To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
-- [Title of content](URL of content)
-- [Title of content](URL of content)
+To learn more about the feature, see: 
+- [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md)
+
+### (Preview) Grouping in grids 
+To read a description of this feature, see [Grouping in grids](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=bc751b0a-83ca-e911-a96a-000d3a4f36ce) in the release plan.
+
+To learn more about the feature, see: 
+- [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md)
 
 ### Feature name (must match the name of the feature found in the release plan)
 To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
