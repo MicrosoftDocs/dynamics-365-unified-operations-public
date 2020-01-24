@@ -45,6 +45,9 @@ Dynamics 365 Human Resources provides the workforce insights you need to build d
 
 Human Resources connects people and operations data to help you optimize workforce costs and take better care of employees.
 
+## Comparison of Human Resources with the Human resources workspace in Finance
+
+
 ## See also
 
 - [Get started with Human Resources](hr-get-started.md)

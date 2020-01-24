@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Benefits management overview
 
+[!include [banner](includes/preview-feature.md)]
+
 As competition for resources increases, you must offer a rich set of benefits to attract and retain your best employees. The benefits you offer can range from the standard medical and dental coverage options to expanded services, like adoption assistance, recreation programs, and clothing allowances. The Benefits management preview feature in Microsoft Dynamics 365 Human Resources provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings.
 
 The Benefits management preview feature provides you with the following solutions:

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage workflows
+title: View benefits reports
 description: 
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,9 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
 
-# Manage workflows
+# View benefits reports
+
+[!include [banner](includes/preview-feature.md)]
 
 
 

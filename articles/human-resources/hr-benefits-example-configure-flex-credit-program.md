@@ -32,5 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure a flex credit program
 
+[!include [banner](includes/preview-feature.md)]
+
 
 ## See also

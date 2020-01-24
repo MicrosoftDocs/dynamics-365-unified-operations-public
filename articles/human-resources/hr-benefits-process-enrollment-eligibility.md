@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Process enrollment eligibility
 
+[!include [banner](includes/preview-feature.md)]
+
 
 1. In the **Benefits management** workspace, under **Processing**, select **Enrollment eligibility processing**.
 

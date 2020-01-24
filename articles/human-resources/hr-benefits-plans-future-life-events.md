@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure future life events
 
+[!include [banner](includes/preview-feature.md)]
+
 
 
 

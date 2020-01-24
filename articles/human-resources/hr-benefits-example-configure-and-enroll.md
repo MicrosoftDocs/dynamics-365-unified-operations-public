@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Configure and enroll in benefits
 
+[!include [banner](includes/preview-feature.md)]
+
 This demonstration illustrates how to configure and use benefit plans in Microsoft Dynamics 365 Human Resources. For the demonstration’s scenario, your company offers three plans: a medical plan, an accidental death and dismemberment insurance plan, and a 401k plan.
 
 The medical plan has two offerings: one for the employee only, and one for the employee’s entire family. The family plan is more expensive than the employee-only plan, and both plans are more expensive for employees who smoke.
