@@ -5,7 +5,7 @@ title: Content block module
 description: This topic covers content block modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -48,16 +48,17 @@ A content block module is driven by data from the content management system (CMS
 - A content block module can be used on a product details page to showcase product information.
 - Multiple content block modules can be put inside a carousel module to highlight multiple products or promotions.
 
-## Theme on content block
-Content block can support various layouts and styles based on theme. For instance the Fabrikam theme supports three layout variations of content block module - Hero, Feature, Tile. Hero layout shows image on the background with text overlay. Feature layout shows image and text side by side. Tile layout allows multiple content blocks in a tile format.
+## Content block modules and themes
 
-In addtion, the Theme can expose can different properties for each layout. A Theme developer can build more layouts with more styles using the content block module.
+Content block modules can support various layouts and styles based on a theme. For example, the Fabrikam theme supports three layout variations of a content block module: hero, feature, and tile. The hero layout shows image on the background with text overlay. The feature layout shows image and text side by side. The tile layout allows multiple content blocks in a tile format.
 
-E.g. of content block with Hero layout
+In addition, the theme can expose can different properties for each layout. A theme developer can build more layouts with more styles using the content block module.
+
+The following image shows an example of a content block module with a hero layout.
 ![Example of a hero module](./media/Hero.PNG)
 
-E.g. of content block with Feature layout
-  ![Examples of feature modules](./media/Feature.PNG)
+The following image shows an example of a content block module with a feature layout.
+![Examples of feature modules](./media/Feature.PNG)
 
 ## Content block module properties
 
@@ -68,12 +69,13 @@ E.g. of content block with Feature layout
 | Paragraph      | Paragraph text | Hero modules support paragraph text in rich text format. Some basic rich text capabilities are supported, such as bold, underlined, and italic text, and hyperlinks. Some of these capabilities can be overridden by the page theme that is applied to the module. |
 | Link           | Link text, link URL, Accessible Rich Internet Applications (ARIA) label, and **Open link in new tab** | Hero modules support one or more "call to action" links. If a link is added, link text, a URL, and an ARIA label are required. ARIA labels should be descriptive to meet accessibility requirements. Links can be configured so that they are opened on a new tab. |
 
-## Properties exposed by Fabrikam theme for content block
+## Content block module properties exposed by the Fabrikam theme 
+
 | Property name  | Values | Description |
 |----------------|--------|-------------|
-| Text placement | **Left**, **Right**, **Center** | This property defines the position of the text on the image. It only applies to Hero layout. |
-| Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. It only applies to Hero layout.|
-| Image placement       | **Left**,  **Right** |This applies only to Feature layout, it allows image to be left or right of the text. |
+| Text placement | **Left**, **Right**, **Center** | This property defines the position of the text on the image. It only applies to the hero layout. |
+| Text theme     | **Light** or **Dark** | A color scheme can be defined for the text, based on the background image. For example, if the image has a dark background, a light theme can be applied to make the text more visible and to meet color contrast ratios for accessibility purposes. It only applies to the hero layout.|
+| Image placement       | **Left**,  **Right** | This property specifies if the image should be to the left or right of the text. It only applies to the feature layout.  |
 
 ## Add a content block module to a new page
 
@@ -92,7 +94,7 @@ To add a hero module to a new page and set the required properties, follow these
 1. Under **Rich Text**, add text as you require.
 1. Select **Add Link**.
 1. In the **Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
-1. Choose a layout **Hero**
+1. Select the **Hero** layout.
 1. Save the page, and preview your changes.
 1. Check in the page, and publish it.
 
