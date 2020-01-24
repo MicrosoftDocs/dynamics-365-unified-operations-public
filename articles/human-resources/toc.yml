@@ -193,6 +193,8 @@
             href: hr-benefits-setup-deductions.md
           - name: Configure waiting days
             href: hr-benefits-setup-waiting-days.md
+          - name: Configure waiting periods
+            href: hr-benefits-setup-waiting-periods.md
           - name: Set up rounding rules
             href: hr-benefits-setup-rounding-rules.md
           - name: Create employment categories
@@ -201,13 +203,11 @@
             href: hr-benefits-setup-employment-types.md
           - name: Configure employee self service
             href: hr-benefits-setup-employee-self-service.md
-        - name: Create benefits plans
+        - name: Create benefit plans
           items: 
-          - name: Configure rules and options
-            href: hr-benefits-plans-rules-and-options.md
-          - name: Set up benefits plans
+          - name: Set up benefit plans
             href: hr-benefits-plans-setup.md
-          - name: Create worker benefits plans
+          - name: Create worker benefit plans
             href: hr-benefits-plans-worker.md
           - name: Bulk update worker benefits plans
             href: hr-benefits-plans-worker-bulk-update.md
@@ -215,7 +215,7 @@
             href: hr-benefits-plans-flex-credit-programs.md
           - name: Configure future life events
             href: hr-benefits-plans-future-life-events.md
-        - name: Process benefits plans
+        - name: Process benefit plans
           items: 
           - name: Process enrollment eligibility
             href: hr-benefits-process-enrollment-eligibility.md

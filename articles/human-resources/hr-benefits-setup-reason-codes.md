@@ -32,8 +32,19 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Set up reason codes
 
+Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing. 
 
+1. In the **Benefits management** workspace, under **Setup**, select **Reason codes**.
 
+2. Select **New**.
 
+3. Specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+   | Reason code | A unique name to identify the reason an employee would change a benefit plan enrollment. |
+   | Description | A description of the reason code. |
+
+4. Select **Save**. 
 
 ## See also
