@@ -5,7 +5,7 @@ title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 06/24/2019
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
