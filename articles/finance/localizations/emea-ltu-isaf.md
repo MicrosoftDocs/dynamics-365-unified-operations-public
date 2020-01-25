@@ -72,22 +72,9 @@ Import the latest versions of these configurations. The version description usua
 
 For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-## Set up application-specific parameters
+## Standard VAT codes and application-specific parameters setup
 
-Starting from **52.4** version of **i.SAF format (LT)** ER configuration, format includes application specific parameters, where a user must define which **Sales tax codes** in the system (here and further “System Sales tax codes”) corresponds to which values from the enumerated list of VAT codes prescript by the Table 1 “VAT table” of the **“Tables of the Technical Specification of the Standard Accounting Data File”** (here and further “Standard VAT codes”).
-
-To setup application specific parameter, open **Electronic Reporting** workspace, select **i.SAF format (LT)** format and select **Configurations** > **Application specific parameters** > **Setup** on the Action pane, select **ReportTaxCodesLookup** on **Lookups** fast tab for the latest version of the format and on the **Conditions** fast tab define which “Standard VAT codes” must correspond to which “System Sales tax codes”.
-
-As for example, if you have in the system two “System Sales tax codes” (VAT1, VAT2) which must be reported in one “Standard VAT codes” (PVM1), you would need to add the following lines on the Conditions fast tab:
-
-| Lookup result | Line | Tax Code |
-|---------------|------|----------|
-| **PVM1** (the value must be selected from the predefined enumerated list) | 1 | **VAT1** (the value must be selected from the list of values which are entries in the Sales tax codes table) |
-| **PVM1** (the value must be selected from the predefined enumerated list) | 2 | **VAT2** (the value must be selected from the list of values which are entries in the Sales tax codes table) |
-
-Column “Line” is the counter which controls order of execution of the conditions of lookup field.
-
-Add all necessary for your Legal entity conditions for those “Standard VAT codes” which must be reported for your Legal entity. According to the documentation the list of “Standard VAT codes” is the following:
+Table 1 “VAT table” of the **“Tables of the Technical Specification of the Standard Accounting Data File”** (here and further “Standard VAT codes”) defines the following "Standard VAT codes" to be used by companies in Lithuania:
 
 
 
@@ -143,7 +130,23 @@ Add all necessary for your Legal entity conditions for those “Standard VAT cod
 | PVM49                 | Cases where agricultural products and services are purchased from farmers who are subject to the compensatory VAT rate scheme Rate 6%                                                                                                                                                                                                                                                              |
 | PVM100                | Other cases                                                                                                                                                                                                                                                                                                                                                                                        |
 
+Starting from **52.4** version of **i.SAF format (LT)** ER configuration, format includes application-specific parameters, where a user must define which **Sales tax codes** in the system (here and further “System Sales tax codes”) corresponds to which values from the enumerated list of VAT codes prescript as "Standard VAT codes".
+
+To setup application-specific parameter, open **Electronic Reporting** workspace, select **i.SAF format (LT)** format and select **Configurations** > **Application specific parameters** > **Setup** on the Action pane, select **ReportTaxCodesLookup** on **Lookups** fast tab for the latest version of the format and on the **Conditions** fast tab define which “Standard VAT codes” must correspond to which “System Sales tax codes”.
+
+As for example, if you have in the system two “System Sales tax codes” (VAT1, VAT2) which must be reported in one “Standard VAT codes” (PVM1), you would need to add the following lines on the Conditions fast tab:
+
+| Lookup result | Line | Tax Code |
+|---------------|------|----------|
+| **PVM1** (the value must be selected from the predefined enumerated list) | 1 | **VAT1** (the value must be selected from the list of values which are entries in the Sales tax codes table) |
+| **PVM1** (the value must be selected from the predefined enumerated list) | 2 | **VAT2** (the value must be selected from the list of values which are entries in the Sales tax codes table) |
+
+Column “Line” is the counter which controls order of execution of the conditions of lookup field.
+
+Add all necessary for your Legal entity conditions for those “Standard VAT codes” which must be reported for your Legal entity. According to the documentation the list of “Standard VAT codes” is the following:
+
 > [!NOTE]
+
 > It is important to add “PVM100” which must collect data by “other cases” as the last in the list (its “Line” value must be the last in your table).  Set it up as following:
 
 | **Lookup result** | **Line**              | **Tax Code**      |
@@ -167,7 +170,7 @@ The process of setting up the Electronic messages functionality for i.SAF has ma
 
 In [LCS](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type. Then find **LT i.SAF setup for Electronic messages.zip** in the list of data package files, and download it to your computer.
 
-After the LT i.SAF setup for Electronic messages.zip file is downloaded, open Finance, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
+After the **LT i.SAF setup for Electronic messages.zip** file is downloaded, open Finance, select the company that you will interoperate with HMRC from, and then go to **Workspaces** \> **Data management**.
 
 Before you import setup data from the package of data entities, follow these steps to make sure that the data entities in your application are refreshed and synced.
 
@@ -179,7 +182,7 @@ Before you import setup data from the package of data entities, follow these ste
 
 For more information about data management, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md). 
 
-You must now import data from the LT i.SAF setup for Electronic messages.zip file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **LT i.SAF setup for Electronic messages.zip** file on your computer, and upload it.
+You must now import data from the **LT i.SAF setup for Electronic messages.zip** file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **LT i.SAF setup for Electronic messages.zip** file on your computer, and upload it.
 
 You will get a notification in the Messages or you may manually refresh the page to see data importing progress. When the importing process is completed you will see the results on Execution summary page.
 
@@ -208,4 +211,26 @@ By default, all the records from these data sources will be populated to the **M
 On the **Datasource setup** FastTab, select the **Vendor invoice journal** record, and then select **Edit query**. 
 
 For the **Date** field of the **Vendor invoice journal** table, define the period from which vendor invoices from the selected legal entity must be reported in i.SAF format. You can specify other selection criteria here to reflect specific requirements of your company to i.SAF report. Repeat the same setup for other data sources of the report (Sales invoice journal, Project invoice journal) or delete unnecessary for your company data sources from the list.
+
+![Populate invoices data sources](media/isaf-populate-records.jpg)
+
+
+## Set up Electronic messaging parameters for i.SAF
+
+After Data entities are imported to the data base, Electronic Messages functionality is almost ready for work. You need to additionally do the following steps:
+
+1.  Open **Tax** \> **Setup** \> **Electronic messages** \> **Executable class settings**, select **EvaluateInvoiceType_LT** executable class and click **Parameters** on Action pane. Select in the **Invoice type** field **InvoiceType** and click **OK.**
+
+2.  Set up GER configurations for Electronic messages processing actions. Open **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions** and set up related GER configurations in Format mapping field for the following actions:
+
+| **Message processing actions name** | **GER configuration** |
+|-------------------------------------|-----------------------|
+| GenerateMessage                     | i.SAF format (LT)     |
+
+3.  Number sequences in **General ledger parameters**:
+
+| **Number sequences reference** | **Number sequences description**                                                                                                                                                                                                                         |
+|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message                        | Unique key for message. Set up a non-continuous number sequence for this Reference. This number sequence will be used for numbering messages on their generation. This number is not used in the reporting for SII**.**                                  |
+| Message item                   | Unique key for message item. Set up a non-continuous number sequence for this Reference. This number sequence will be used for numbering message items on their population from the source tables. |
 
