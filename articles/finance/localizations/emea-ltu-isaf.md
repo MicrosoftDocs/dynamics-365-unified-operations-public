@@ -185,20 +185,17 @@ You will get a notification in the Messages or you may manually refresh the page
 
 The **LT i.SAF setup for Electronic messages.zip** package provides a setup for **"i.SAF"** processing that supports the process of i.SAF reporting composed generaly of three steps:
 
-1.	Populate invoices – invoices will be added to the Message item table,
-2.	Attrib. evaluation – Document type field values will be evaluated for all the added invoice.
-3.	Generate message – a message will be generated and related Message items according to their status and criteria setup will be added to the generated message.
-
+1.	**Populate invoices** – invoices will be added to the Message item table,
+2.	**Attributes evaluation** – Document type field values will be evaluated for all the added invoice.
+3.	**Generate message** – a message will be generated and related Message items according to their status and criteria setup will be added to the generated message.
 
 ## Set up data sources to collect documents to be reported
 
-Both the UK MTD VAT returns processing (for production) and the UK MTD VAT TEST processing (for testing purposes) let you collect sales tax payment transactions in the legal entity. You can then generate a VAT return in JSON or Excel format, for either production purposes or testing purposes. The collection of sales tax payment transactions is implemented by using the Populate VAT return records action of the Populate record type. To correctly collect sales tax payment transactions, you must define a sales tax settlement period for the Populate VAT return records action.
-Go to Tax > Setup > Electronic messages > Populate records actions, and select Populate VAT return records. 2. On the Datasource setup FastTab, select the VAT payment record, and then select Edit query.
-For the Settlement period field of the Sales tax payments table, define the sales tax settlement period when tax transactions from the selected legal entity must be reported to HMRC.
+**i.SAF** processing let you collect invoices to be reported in the legal entity. You can then generate report in i.SAF format. The collection of invoices is implemented by using the **Populate invoices** action of the **Populate record** type. To correctly collect invoices, you must define a period for the **Populate invoices** action.
 
-Electronic messages functionality let user setup data sources from which data should be collected for the reporting.
+Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, and select **Populate invoices**. 
 
-For i.SAF reporting data should be collected from three data sources:
+For **i.SAF** processing default data sources set up includes following three data sources:
 
 -   **VendInvoiceJour** (**Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**)
 
@@ -206,6 +203,9 @@ For i.SAF reporting data should be collected from three data sources:
 
 -   **ProjInvoiceJour** (**Project management and accounting** \> **Project invoices** \> **Project invoices**)
 
-By default, all the records from these data sources will be populated to the **Message item** table on **Populate records** action run. 
+By default, all the records from these data sources will be populated to the **Message item** table on **Populate records** action run.
 
-Query for data collection to be populated to the Message item table can adjusted by using **Edit query** button on the **Datasources setup** fast tab:
+On the **Datasource setup** FastTab, select the **Vendor invoice journal** record, and then select **Edit query**. 
+
+For the **Date** field of the **Vendor invoice journal** table, define the period from which vendor invoices from the selected legal entity must be reported in i.SAF format. You can specify other selection criteria here to reflect specific requirements of your company to i.SAF report. Repeat the same setup for other data sources of the report (Sales invoice journal, Project invoice journal) or delete unnecessary for your company data sources from the list.
+
