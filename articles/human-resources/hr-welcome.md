@@ -51,7 +51,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 - [Manage security](hr-admin-security-overview.md)
 - [Manage workflows](hr-admin-workflows.md)
 - [View electronic reporting jobs](hr-admin-electronic-reporting-jobs.md)
-- [Manage currance exchange rates](hr-admin-exchange-rates.md)
+- [Manage currancy exchange rates](hr-admin-exchange-rates.md)
 - [Manage batch jobs](hr-admin-batch-jobs.md)
 - [Import and export data](hr-admin-import-export-overview.md)
 - [Manage work items](hr-admin-work-items.md)
@@ -65,7 +65,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 - [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
 - [Track changes in recruiting data](hr-developer-track-changes.md)
 - [Custom fields](hr-developer-custom-fields.md)
-- [Entity API reference](hr-developer-api-odata-authentication.md))
+- [Entity API reference](hr-developer-api-odata-authentication.md)
 
 ## HR Pro Guide
 
