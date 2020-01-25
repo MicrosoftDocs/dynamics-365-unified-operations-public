@@ -61,8 +61,6 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
 
     ![8](media/8-300x260.png)
 
-    ![8](media/8.png)
-
 4. Your customization is now completed. You can test it in SQL using the following statement.
 
     ```Sql
