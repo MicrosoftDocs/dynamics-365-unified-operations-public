@@ -41,7 +41,7 @@ A product is primarily defined by a product number, name, and description. Howev
 
 ## Create a new product
 
-1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Products by category**.
+1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Products by category**.
 1. On the action pane, select **New**.
 1. In the **Product type** drop-down list, select either **Item** or **Service**.
 1. In the **Product subtype** drop-down list, select either **Product** (if the product will have no variants) or **Product master** (if the product will have variants).
@@ -50,7 +50,7 @@ A product is primarily defined by a product number, name, and description. Howev
 1. In the **Search name** box, enter a search name.
 1. In the **Retail category** drop-down list, select an appropriate category.
 1. If the product is a kit, select **Yes** for **Product kit**.
-1. If the product subtype is product master, set the **Product dimension group** to include the supported variants. Optionss include **Color**, **Size**, **Style**, and **Configuration**. You may need to create additional product dimension groups if needed.
+1. If the product subtype is product master, set the **Product dimension group** to include the supported variants. Options include **Color**, **Size**, **Style**, and **Configuration**. You may need to create additional product dimension groups if needed.
 1. In the **Configuration technology** drop-down list, select an appropriate option.
 1. Select **OK**.
 
@@ -58,7 +58,7 @@ The following image shows an example product being added.
 
 ![Create a product](media/create-new-product.png)
 
-Once a product is added, additional data can be set for it such as **Product description**, **Variant groups**, **Dimension groups**, **Product attributes**, and **Related products**.
+Once a product is added, additional data can be set for it, such as **Product description**, **Variant groups**, **Dimension groups**, **Product attributes**, and **Related products**.
 
 The following image shows a product's additional details.
 
@@ -103,7 +103,7 @@ To sell a product it must first be released to a legal entity.
 
 Once a product is released, it will then require further configuration that includes adding a price to the product.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Released products by category**.
+1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Released products by category**.
 1. Select the product category node for the product that was released, and then select the product from the product list.
 1. On the action pane, select **Edit**.
 1. In the **Purchase** section, configure any required properties including **Unit**, **Price**,  and **Quantity**.
