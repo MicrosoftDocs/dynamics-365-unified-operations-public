@@ -37,7 +37,7 @@ This topic describes how to create a new product hierarchy in Microsoft Dynamics
 
 ## Overview
 
-Microsoft Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
+Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
 
 A retail product hierarchy is used to define the overall product hierarchy for your organization. You can use this hierarchy type for merchandising, pricing and promotions, reporting, and assortment planning. Only one retail product hierarchy can be assigned this hierarchy type.
 
@@ -45,7 +45,7 @@ A retail product hierarchy is used to define the overall product hierarchy for y
 
 To create and configure a category hierarchy, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Retail \> Products and categories \> Retail product hierarchy**.
+1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Retail product hierarchy**.
 1. If no hierachy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
 1. Under **General**:
     1. In the **Name** box, enter a name.
