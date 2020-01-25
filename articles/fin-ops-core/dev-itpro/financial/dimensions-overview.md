@@ -56,7 +56,7 @@ Modifying the **DimensionCombinationEntity** has been greatly simplified with th
 2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
     ![financial dimensions for odata](financial-dimensions-odata.png).
 3. Compile the project, and then synchronize it with the database.
-    ![8](./media/8.png)
+    [![8](./media/8-300x260.png)](./media/8.png)
 4. Your customization is now completed. You can test it in SQL using the following statement.
 
     ```Sql
