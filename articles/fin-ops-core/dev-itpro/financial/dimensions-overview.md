@@ -48,9 +48,9 @@ This topic shows how to modify DimensionCombinationEntity to enable the dimensio
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
 
-## Add dimensions Dynamics 365 for Operations (version 1611, build 7.1.1541.3036 +, November 2016)
+## Add dimensions to Dynamics 365 Finance
 
-Modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.
+With the November 2016 release, modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.
 
 1. In Microsoft Visual Studio, click **Dynamics 365 > Addins > Add financial dimensions for Odata.**
 2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
