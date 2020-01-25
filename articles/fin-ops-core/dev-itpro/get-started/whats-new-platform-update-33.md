@@ -52,9 +52,7 @@ To learn more about the feature, see: (remove this bulleted list if you don't ha
 - [Title of content](URL of content)
 
 ### (Preview) Saved views
-In 10.0.9 / Platform update 33, the Saved views feature is now public preview, with one significant functional addition -- the ability to publish views to users as the default view. 
-
-To read the full description of the Saved views feature, see [User productivity - Saved views - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) in the release plan.  
+In 10.0.9 / Platform update 33, the Saved views feature is now public preview, with one significant functional addition -- the ability to publish views to users as the default view. To read the full description of the Saved views feature, see [User productivity - Saved views - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) in the release plan.  
 
 To learn even more about saved views, see: 
 - [Saved views](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/saved-views)
