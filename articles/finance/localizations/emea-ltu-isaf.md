@@ -248,8 +248,45 @@ Green boxes on the schema show the general process of i.SAF report generation.
 
 **Populate invoice** action is the first step in the process. Open **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items** page and click **Run processing** button on the Action pane. Select **i.SAF** in the **Processing** field. You can mark **Choose action** check box and select **"Populate invoice"** action to start collecting data for i.SAF report or leave **Choose action** check box not marked and **"Populate invoice"** action will be run automaticaly as the first one from the selected processing. As a resul of **"Populate invoice"** action, all the invoices from the data sources defined on "Set up data sources to collect documents to be reported" step according to the sciteria defined for these data sources will be generated in **Message items** table. All the invoices will be of the same "Invoice" **Message item type**.
 
+Click **Original document** button on the Action pane to review original document of the selected **Message item**.
+
 ## Define type of invoices for i.SAF reporting
 
-When invoices are successfully populated from the data sources to the **Message items** table, "Invoice type" must be defined for each of the invoice. "Invoice type" is stored as an **Additional field** for each invoice. To define "Invoice type", click **Run processing** button on the Action pane. Select **i.SAF** in the **Processing** field. You can mark **Choose action** check box and select **"Attrib. evaluation"** action to start defining "Invoice type" or leave **Choose action** check box not marked and **"Attrib. evaluation"** action will be run automaticaly as the next action from the selected processing. As a resul of **"Attrib. evaluation"** action, for all the invoices which were in "Populated" status, "Invoice type" will be defined ans shown in "Invoice type" **Addtional field** in relation with each invoice.
+When invoices are successfully populated from the data sources to the **Message items** table, "Invoice type" must be defined for each of the invoice. "Invoice type" is stored as an **Additional field** for each invoice. To define "Invoice type", click **Run processing** button on the Action pane. Select **i.SAF** in the **Processing** field. You can mark **Choose action** check box and select **"Attrib. evaluation"** action to start defining "Invoice type" or leave **Choose action** check box not marked and **"Attrib. evaluation"** action will be run automaticaly as the next action from the selected processing. As a resul of **"Attrib. evaluation"** action, for all the invoices which were in "Populated" status, "Invoice type" will be defined and shown in "Invoice type" **Addtional field** in relation with each invoice.
 
+![i.SAF Invoice type evaluation](media/isaf-invoice-type.jpg)
 
+## Generate i.SAF report in XML
+
+i.SAF report must be generated and provided to the Tax Authority in XML format.
+
+1. To generate i.SAF report, go to **Tax** \> **Inquiries and reports** \> **Electronic messages** \> **Message itemss**, and click **Generate report** button on the Action pane. Select **i.SAF** in the **Processing** field and select **"Generate message"** in the **Action** field to generate i.SAF report. 
+2. In the **Electronic report parameters** dialog page define parameters:
+
+| **Parameter name** | **Description** |
+|----------------|-------------|
+| **Report type** | Select one of the allowed reporting type:<ul><li> - **F**: Report will include both received and issued invoices</li><li> - **S**: Report will include only issued invoices</li><li> - **P**: Report will include only received invoices </li></ul> |
+| **From date** | Define start date of the period for which i.SAF report must be generated |
+| **To date** | Define end date of the period for which i.SAF report must be generated |
+| **Settlement period** | Select **Settlement period** to define tax transactions posted in which **Settlement period** must be included to the report |
+| **Part number** | Define the number of the part of the report |
+| **Number of parts** | Define number of the parts |
+
+3. As a result of **"Generate message"** action, for all the invoices which were in "Evaluated" status, Electronic message will be created and shown in **Message** column in relation with each invoice. **Status** of the messages items included to the report will be changed to "Reported".
+4. To view the file, select the electronic message item, and then select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. 
+5. On the **Attachments** page for the selected message, select the last attachment, and then, on the Action Pane, select **Open**.
+
+## Regenerate i.SAF report 
+
+If, for some reason, you must regenerate i.SAF for some message items, use the **Update status** button on the Action pane to update the status of the message items to initial. On the **Update status** dialog page select **i.SAF** processing and **Update to initial status** action. To reverse an invoice status to initial select one of allowed values:**Populated** or **Evaluated**.
+
+## Exclude or postpone invoice reporting in i.SAF
+
+If you want to exclude an invoice from i.SAF report, use the **Update status** button on the Action pane to update the status of the message items to **Excluded**. Invoice in **Excluded** status will not the included into the report. On the **Update status** dialog page select **i.SAF** processing, select **Exclude message item** in **Action** field and select **Excluded** in **New status** field. Define additional criteria by **Filter** function, to specify which invoice must be excluded from further processing.
+
+![i.SAF Exclude message item from processing](media/isaf-exclude-message-item.jpg)
+
+If you want to postpone reporting of an invoice in i.SAF report, use the **Update status** button on the Action pane to update the status of the message items to **Postponed**. Invoice in **Postponed** status will not the included into the report. On the **Update status** dialog page select **i.SAF** processing, select **Update to Postponed** in **Action** field and select **Postponed** in **New status** field. Define additional criteria by **Filter** function, to specify reporting of which invoice(s) must be postponed.
+by criteria.
+
+You can always reverse status of **Excluded** or **Postponed** message items to initial by using **Update to initial status** action.
