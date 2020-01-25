@@ -43,17 +43,17 @@ The retail functionality profile provides various settings used for online chann
 
 To create a retail functionality profile, follow these steps.
 
-1. Go to **Navigation pane \> Modules \> Channel setup \> POS profiles \> Functionality profiles**.
+1. In the navigation pane, go to **Modules \> Channel setup \> POS profiles \> Functionality profiles**.
 1. On the action pane, select **New**.
 1. In the **Profile** field, enter an ID for the profile ("FN006" in the example image below).
 1. In the **Description** field, enter a value ("Adventure Works Profile" in the example image below).
 1. In the **General** section, select a country for the **ISO** locale.
-1. In the **General** section, modify other settings as needed.
+1. In the **General** section, modify other settings, as needed.
 1. In the **General** section, select a **Receipt profile ID** for email receipts.
-1. In the **Functions** section, modify settings as needed.
-1. In the **Amount** section, modify settings as needed.
-1. In the **Info Codes** section, modify settings as needed.
-1. In the **Receipt numbering** section, modify settings as needed. 
+1. In the **Functions** section, modify settings, as needed.
+1. In the **Amount** section, modify settings as, needed.
+1. In the **Info Codes** section, modify settings, as needed.
+1. In the **Receipt numbering** section, modify settings, as needed. 
   
 The following image shows an example retail functionality profile.
   
