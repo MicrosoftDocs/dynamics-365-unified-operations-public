@@ -47,13 +47,13 @@ This guidance describes how to set up Electronic Reporting (ER) configurations f
 
 The document includes following parts:
 
-•	Import and set up ER configurations
+•	Import and set up ER configurations and application-specific parameters
 
 •	Set up EM functionality
 
 •	Work with EM functionality to prepare i.SAF report.
 
-## Setup ER configurations
+## Import and set up ER configurations
 
 To prepare Finance to i.SAF reporting, you must import the following ER configurations.
 
@@ -155,4 +155,6 @@ is no specific setup (no “Standard VAT code” is defined for it specifically)
 will be considered for **PVM100.** It is mandatory to define such lookup result
 field at the end of the list of your conditions.
 
+You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
 
+When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
