@@ -210,7 +210,6 @@ For the **Date** field of the **Vendor invoice journal** table, define the perio
 
 ![Populate invoices data sources](media/isaf-populate-records.jpg)
 
-
 ## Set up Electronic messaging parameters for i.SAF
 
 After Data entities are imported to the data base, Electronic Messages functionality is almost ready for work. You need to additionally do the following steps:
@@ -221,7 +220,7 @@ After Data entities are imported to the data base, Electronic Messages functiona
 
 | **Message processing actions name** | **GER configuration** |
 |-------------------------------------|-----------------------|
-| GenerateMessage                     | i.SAF format (LT)     |
+| Generate message                     | i.SAF format (LT)     |
 
 3.  Set up **Number sequences** in **General ledger parameters**:
 
@@ -234,15 +233,23 @@ After Data entities are imported to the data base, Electronic Messages functiona
 
 Different groups of users might require access to **i.SAF** precessing. You can limit access to the processing, based on security groups that are defined in the system.
 
-Complete the following steps to limit access to the **UK MTD VAT TEST** processing.
-
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
-2. Select the **UK MTD VAT TEST** processing, and add the security groups that must work with this processing for testing purposes. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
-
 Complete the following steps to limit access to the **i.SAF** processing.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
 2. Select the **i.SAF** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
 
 ## Collect data for i.SAF report
+
+Setup of **i.SAF** processing provided via package of data entites is shown in the schema:
+
+![i.SAF electronic messaging process](media/isaf-processing.jpg)
+
+Green boxes on the schema show the general process of i.SAF report generation.
+
+**Populate invoice** action is the first step in the process. Open **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items** page and click **Run processing** button on the Action pane. Select **i.SAF** in the **Processing** field. You can mark **Choose action** check box and select **"Populate invoice"** action to start collecting data for i.SAF report or leave **Choose action** check box not marked and **"Populate invoice"** action will be run automaticaly as the first one from the selected processing. As a resul of **"Populate invoice"** action, all the invoices from the data sources defined on "Set up data sources to collect documents to be reported" step according to the sciteria defined for these data sources will be generated in **Message items** table. All the invoices will be of the same "Invoice" **Message item type**.
+
+## Define type of invoices for i.SAF reporting
+
+When invoices are successfully populated from the data sources to the **Message items** table, "Invoice type" must be defined for each of the invoice. "Invoice type" is stored as an **Additional field** for each invoice. To define "Invoice type", click **Run processing** button on the Action pane. Select **i.SAF** in the **Processing** field. You can mark **Choose action** check box and select **"Attrib. evaluation"** action to start defining "Invoice type" or leave **Choose action** check box not marked and **"Attrib. evaluation"** action will be run automaticaly as the next action from the selected processing. As a resul of **"Attrib. evaluation"** action, for all the invoices which were in "Populated" status, "Invoice type" will be defined ans shown in "Invoice type" **Addtional field** in relation with each invoice.
+
 
