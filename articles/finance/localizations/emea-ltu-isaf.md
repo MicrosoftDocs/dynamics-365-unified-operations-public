@@ -43,7 +43,7 @@ According to the Order No VA-55 "On the Approval of Rules for the Processing and
 
 This document is a guidance for users of Microsoft Dynamics 365 Finance.
 
-This guidance describes how to set up Electronic Reporting (ER) configurations for i.SAF report, how to set up and use Electronic Messages functionality (EM).
+This guidance describes how to set up Electronic Reporting (ER) configurations for i.SAF report, how to set up and use Electronic Messages (EM) functionality.
 
 The document includes following parts:
 
@@ -66,17 +66,13 @@ To prepare Finance to i.SAF reporting, you must import the following ER configur
 Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
 > [!NOTE]
-> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configurations:
->
-> - **Tax declaration model mapping**.
+> After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for  **Tax declaration model mapping** ER configuration.
 
 For more information about how to download ER configurations from Microsoft Dynamics Lifecycle Services (LCS), see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Standard VAT codes and application-specific parameters setup
 
-Table 1 “VAT table” of the **“Tables of the Technical Specification of the Standard Accounting Data File”** (here and further “Standard VAT codes”) defines the following "Standard VAT codes" to be used by companies in Lithuania:
-
-
+Table 1 “VAT table” of the **“Tables of the Technical Specification of the Standard Accounting Data File”** (here and further “Standard VAT codes”) defines the following "Standard VAT codes" to be used by companies in Lithuania for i.SAF reporting:
 
 | **Standard VAT code** | **Description**                                                                                                                                                                                                                                                                                                                                                                                    |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -134,14 +130,14 @@ Starting from **52.4** version of **i.SAF format (LT)** ER configuration, format
 
 To setup application-specific parameter, open **Electronic Reporting** workspace, select **i.SAF format (LT)** format and select **Configurations** > **Application specific parameters** > **Setup** on the Action pane, select **ReportTaxCodesLookup** on **Lookups** fast tab for the latest version of the format and on the **Conditions** fast tab define which “Standard VAT codes” must correspond to which “System Sales tax codes”.
 
-As for example, if you have in the system two “System Sales tax codes” (VAT1, VAT2) which must be reported in one “Standard VAT codes” (PVM1), you would need to add the following lines on the Conditions fast tab:
+As for example, if you have in the system two “System Sales tax codes” (VAT1, VAT2) which must be reported in one “Standard VAT codes” (PVM1), you would need to add the following lines on the **Conditions** fast tab:
 
 | Lookup result | Line | Tax Code |
 |---------------|------|----------|
 | **PVM1** (the value must be selected from the predefined enumerated list) | 1 | **VAT1** (the value must be selected from the list of values which are entries in the Sales tax codes table) |
 | **PVM1** (the value must be selected from the predefined enumerated list) | 2 | **VAT2** (the value must be selected from the list of values which are entries in the Sales tax codes table) |
 
-Column “Line” is the counter which controls order of execution of the conditions of lookup field.
+**Line** column is used for counter which controls order of execution of the conditions of lookup field.
 
 Add all necessary for your Legal entity conditions for those “Standard VAT codes” which must be reported for your Legal entity. According to the documentation the list of “Standard VAT codes” is the following:
 
@@ -153,16 +149,14 @@ Add all necessary for your Legal entity conditions for those “Standard VAT cod
 |-------------------|-----------------------|-------------------|
 | **PVM100**        | The last in your list | **\*Not blank\*** |
 
-This setup means that all the tax transactions for **Sales tax code** of which there
-is no specific setup (no “Standard VAT code” is defined for it specifically)
-will be considered for **PVM100.** It is mandatory to define such lookup result
+This setup means that all the tax transactions for **Sales tax code** of which there is no specific setup (no “Standard VAT code” is defined for it specifically) will be considered for **PVM100.** It is mandatory to define such lookup result
 field at the end of the list of your conditions.
 
 You can easily export the setup of application-specific parameters from one version of a report and import it into another version. You can also export the setup from one report and import it into another report, provided that both reports have the same structure of lookup fields.
 
 When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-## Import a package of data entities that includes a predefined electronic message setup
+## Import a package of data entities that includes a predefined Electronic messaging setup
 
 **Electronic Messages** functionality is provided to maintain different processes of electronic reporting of different document types. For more information about Electronic messages, see [Electronic messaging](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/electronic-messaging).
 
@@ -184,29 +178,31 @@ For more information about data management, see [Data management](../../dev-itpr
 
 You must now import data from the **LT i.SAF setup for Electronic messages.zip** file into the selected company. In the **Data management** workspace, select **Import**, and set the **Source data format** field to **Package**. Select **Upload and add**, select the **LT i.SAF setup for Electronic messages.zip** file on your computer, and upload it.
 
-You will get a notification in the Messages or you may manually refresh the page to see data importing progress. When the importing process is completed you will see the results on Execution summary page.
+![Import a package of data entities](media/isaf-data-management.jpg)
+
+You will get a notification in the **Messages** or you may manually refresh the page to see data importing progress. When the importing process is completed you will see the results on Execution summary page.
 
 The **LT i.SAF setup for Electronic messages.zip** package provides a setup for **"i.SAF"** processing that supports the process of i.SAF reporting composed generaly of three steps:
 
-1.	**Populate invoices** – invoices will be added to the Message item table,
-2.	**Attributes evaluation** – Document type field values will be evaluated for all the added invoice.
-3.	**Generate message** – a message will be generated and related Message items according to their status and criteria setup will be added to the generated message.
+1.	**Populate invoices** – invoices will be added to the **Message items** table,
+2.	**Attributes evaluation** – **Document type** field values will be evaluated for all the added to the **Message items** table invoices.
+3.	**Generate message** – **Electronic message** will be created and related **Message items** according to their status and criteria setup will be linked to the generated **Electronic message**. i.SAF report will be generated and attached to the **Electronic message**.
 
 ## Set up data sources to collect documents to be reported
 
-**i.SAF** processing let you collect invoices to be reported in the legal entity. You can then generate report in i.SAF format. The collection of invoices is implemented by using the **Populate invoices** action of the **Populate record** type. To correctly collect invoices, you must define a period for the **Populate invoices** action.
+**i.SAF** processing lets you collect invoices to be reported in the legal entity. You can then generate report in i.SAF report. The collection of invoices is implemented by using the **Populate invoices** action of the **Populate record** type. To correctly collect invoices, you must define a period for the **Populate invoices** action.
 
 Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**, and select **Populate invoices**. 
 
 For **i.SAF** processing default data sources set up includes following three data sources:
 
--   **VendInvoiceJour** (**Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**)
+-   **"Vendor invoice journal"** - **VendInvoiceJour** (**Accounts payable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**)
 
--   **CustInvoiceJour** (**Accounts receivable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**)
+-   **"Sales invoice journal"** - **CustInvoiceJour** (**Accounts receivable** \> **Inquiries and reports** \> **Invoice** \> **Invoice journal**)
 
--   **ProjInvoiceJour** (**Project management and accounting** \> **Project invoices** \> **Project invoices**)
+-   **"Project invoice journal"** - **ProjInvoiceJour** (**Project management and accounting** \> **Project invoices** \> **Project invoices**)
 
-By default, all the records from these data sources will be populated to the **Message item** table on **Populate records** action run.
+By default, all the records from these data sources will be populated to the **Message items** table during **Populate records** action run.
 
 On the **Datasource setup** FastTab, select the **Vendor invoice journal** record, and then select **Edit query**. 
 
@@ -227,10 +223,26 @@ After Data entities are imported to the data base, Electronic Messages functiona
 |-------------------------------------|-----------------------|
 | GenerateMessage                     | i.SAF format (LT)     |
 
-3.  Number sequences in **General ledger parameters**:
+3.  Set up **Number sequences** in **General ledger parameters**:
 
 | **Number sequences reference** | **Number sequences description**                                                                                                                                                                                                                         |
 |--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message                        | Unique key for message. Set up a non-continuous number sequence for this Reference. This number sequence will be used for numbering messages on their generation. This number is not used in the reporting for SII**.**                                  |
+| Message                        | Unique key for message. Set up a non-continuous number sequence for this Reference. This number sequence will be used for numbering messages on their generation. |
 | Message item                   | Unique key for message item. Set up a non-continuous number sequence for this Reference. This number sequence will be used for numbering message items on their population from the source tables. |
+
+## Set up security roles for electronic message processing
+
+Different groups of users might require access to **i.SAF** precessing. You can limit access to the processing, based on security groups that are defined in the system.
+
+Complete the following steps to limit access to the **UK MTD VAT TEST** processing.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
+2. Select the **UK MTD VAT TEST** processing, and add the security groups that must work with this processing for testing purposes. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+
+Complete the following steps to limit access to the **i.SAF** processing.
+
+1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**. 
+2. Select the **i.SAF** processing, and add the security groups that must work with this processing. If no security group is defined for the processing, only a system admin can see the processing on the **Electronic messages** page.
+
+## Collect data for i.SAF report
 
