@@ -1,0 +1,3 @@
+# Introduction
+
+According to the Order No VA-55 "On the Approval of Rules for the Processing and Submitting of the Data Taxes Invoice Registers", approved by the Head of the State Tax Inspectorate under the Ministry of Finance of the Republic of Lithuania in 2004, April 21 the processing and submission of data about value added tax invoice registers is updated to create conditions for the taxable persons to e-way present the data of issued and received invoices for the Tax Authority using standardized format for i.SAF application. i.SAF format must match the current standard of accounting data files technical specifications and technical requirements (FileVersion iSAF1.2).
