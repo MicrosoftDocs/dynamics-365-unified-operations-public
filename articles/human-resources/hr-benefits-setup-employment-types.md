@@ -34,6 +34,19 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 [!include [banner](includes/preview-feature.md)]
 
+Set up employment types in Dynamics 365 Human Resources to match your workers.
 
+1. In the **Benefits management** workspace, under **Setup**, select **Employment types**.
+
+2. Select **New**.
+
+3. Specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+   | Employment type | Unique identification for the employment type. |
+   | Description | A description of the employment type. |
+
+4. Select **Save**. 
 
 ## See also

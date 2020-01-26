@@ -5,7 +5,7 @@ title: Set up rounding rules
 description: 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---
@@ -34,7 +34,20 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 [!include [banner](includes/preview-feature.md)]
 
+You can set up rounding rules in Dynamics 365 Human Resources to meet the needs of your organization.
 
+1. In the **Benefits management** workspace, under **Setup**, select **Rounding rules**.
 
+2. Select **New**.
+
+3. Specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+   | Round to the nearest |  |
+   | Scenario |  |
+   | Rounding form |  |
+
+4. Select **Save**. 
 
 ## See also

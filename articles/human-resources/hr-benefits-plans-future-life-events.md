@@ -34,7 +34,25 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 [!include [banner](includes/preview-feature.md)]
 
+You can schedule future life events in Dynamics 365 Human Resources.
 
+1. In the **Benefits management** workspace, under **Setup**, select **Future life events**.
+
+2. Select **New**.
+
+3. Specify values for the following fields:
+
+   | Field | Description |
+   | --- | --- |
+   | Life event date | The system processes all events during the enrollment period that occur up until this date. |
+   | Life event logged |  |
+   | Log type |  |
+   | Life event type ID | The life event type unique identifier. |
+   | Life event type | A catalyst to updating an employee’s benefits enrollment. For more details, see the Life event triggers section. |
+   | Status |  |
+   | Line | The line number of the future life event. |
+
+4. Select **Save**. 
 
 
 ## See also
