@@ -490,7 +490,7 @@
           items:
           - name: Retail hierarchies 
             href: ../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json
-          - name: Create a new product hierarchy 
+          - name: Create a new Commerce product hierarchy 
             href: create-product-hierarchy.md
           - name: Manage retail product categories and products 
             href: ../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json
