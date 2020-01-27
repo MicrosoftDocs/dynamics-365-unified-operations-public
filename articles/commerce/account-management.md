@@ -46,7 +46,7 @@ The account management landing page uses the following modules:
 
 - **Container** - All account management landing page modules should be placed within a container. 
 - **Account welcome tile** – This module is used to provide a welcome message on the account management page. It includes properties for the heading.
-- **Account generic tile** - This module can be used to provide headings and links to account management pages such as the "Order history" or "My profile" pages. The generic tile module can be used to configure a tile for any page. In Fabrikam, this module is used for "Order history" and "My profile" page links on the account management landing page.
+- **Account generic tile** - This module can be used to provide headings and links to account management pages, such as the "Order history" or "My profile" pages. The generic tile module can be used to configure a tile for any page. In Fabrikam, this module is used for "Order history" and "My profile" page links on the account management landing page.
 - **Account wishlist tile** – This module is used to provide a summary of the items on the customer's wish list. For example, it might state, "You have 10 items in your wish list." It includes properties for the heading and the "View details" link. The "View details" link should be configured to redirect to the wish list page. 
 - **Account address tile** – This module is used to provide a summary of the user's addresses. For example, it might state, "You have 2 addresses added to your account." It includes properties for the heading and the "View details" link. The "View details" link should be configured to redirect to the user address page.
 - **Account loyalty tile** – This module is used to display and link to loyalty program information. This tile has two states: one state shows links to join a loyalty progam if the user is not a member already. The other state shows links to view the loyalty details page when the user is already a member. Properties include the heading, the "Sign-up" link, and the "View loyalty" link. The "View loyalty" link should be configured to redirect to the loyalty page. The "Sign-up" link should be configured to redirect to a page where users can join the loyalty program. 
@@ -61,7 +61,7 @@ The order details page provides detailed information for each order and is acces
 
 ### User profile page
 
-The user profile page shows user account details, such as a user's name and email address. It uses the user profile details and user profile edit modules. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features such as personalization of recommendation lists. 
+The user profile page shows user account details, such as a user's name and email address. It uses the user profile details and user profile edit modules. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features, such as personalization of recommendation lists. 
 
 ### User address page
 
