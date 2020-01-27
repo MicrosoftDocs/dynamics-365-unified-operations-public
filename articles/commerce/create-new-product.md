@@ -103,7 +103,7 @@ To sell a product it must first be released to a legal entity.
 
 Once a product is released, it will then require further configuration that includes adding a price to the product.
 
-1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Released products by category**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Released products by category**.
 1. Select the product category node for the product that was released, and then select the product from the product list.
 1. On the action pane, select **Edit**.
 1. In the **Purchase** section, configure any required properties including **Unit**, **Price**,  and **Quantity**.
