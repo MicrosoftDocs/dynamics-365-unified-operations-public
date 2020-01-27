@@ -86,7 +86,7 @@ To set up inventory aisles, follow these steps.
 
 To set up warehouse inventory locations for standard, damaged, and returned inventory, follow these steps.
 
-1. In the navigation pane, go to**Modules \> Retail \> Channel Setup \> Warehouses**.
+1. In the navigation pane, go to **Modules \> Retail \> Channel Setup \> Warehouses**.
 1. Select the warehouse you created previously.
 1. On the action pane, select **Edit**.
 1. On the action pane, select **Warehouse**, and then select **Inventory location**.
