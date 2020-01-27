@@ -32,6 +32,8 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 General ledger simulations allow you to post simulated ledger transactions from the general journal and then review reports that include the simulated transactions.
 
 This feature is available only for legal entities with a primary address in Italy. 
