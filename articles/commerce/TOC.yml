@@ -178,8 +178,6 @@
       items:
       - name: Architecture
         items:
-        - name: Commerce architecture
-          href: commerce-architecture.md
         - name: Retail components
           href: ../retail/retail-components.md?toc=/dynamics365/commerce/toc.json
         - name: Retail Server architecture
