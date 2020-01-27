@@ -45,7 +45,7 @@ If no customer groups exist yet, you can create one. Examples may be groups to r
 
 To create a customer group, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail \> Customers \> Customer groups**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> Customer groups**.
 1. On the action pane, select **New**.
 1. In the **Customer group** box, enter a customer group ID.
 1. In the **Description** box, enter an appropriate description.
@@ -65,7 +65,7 @@ A customer needs to be associated with an address book. If one has not yet been 
 
 To create a customer address book, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail \> Channel setup \> Address Books**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Channel setup \> Address Books**.
 1. On the action pane, select **New**.
 1. In the **Name** box, enter a name.
 1. In the **Description** box, enter a description.
@@ -79,7 +79,7 @@ The following image shows an example address book.
 
 To create a default customer, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail \> Customers \> All customers**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Customers \> All customers**.
 1. On the action pane, select **New**.
 1. In the **Type** drop-down list, select "Person".
 1. In the **Customer account** drop-down list, select or enter an account number (for example, "100001").
