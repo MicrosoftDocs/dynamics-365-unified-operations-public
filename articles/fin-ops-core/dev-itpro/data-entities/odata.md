@@ -6,7 +6,7 @@ description: This topic provides information about Open Data Protocol (OData) an
 author: Sunil-Garg
 manager: AnnBe
 
-ms.date: 02/11/2019
+ms.date: 12/11/2019
 
 ms.topic: article
 ms.prod: 
@@ -99,21 +99,26 @@ For more information, see: [OData actions that are bound to entities](https://do
 
 There are built-in operators for $filter:
 
-- Equals
-- Not equals
-- Greater than
-- Greater than or equal
-- Less than
-- Less than or equal
+- Equals (eq)
+- Not equals (ne)
+- Greater than (gt)
+- Greater than or equal (ge)
+- Less than (lt)
+- Less than or equal (le)
 - And
 - Or
 - Not
-- Addition
-- Subtraction
-- Multiplication
-- Division
+- Addition (add)
+- Subtraction (sub)
+- Multiplication (mul)
+- Division (div)
+- Decimal division (divby)
+- Modulo (mod)
+- Precedence grouping ({ })
 
 You can also use the **Contains** option with $filter requests. It has been implemented as a wildcard character. For example: `http://host/service/EntitySet?$filter=StringField eq '\*retail\*'`
+
+The operators 'has' and 'in' are not supported.
 
 For more information, see [OData operators](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part2-url-conventions/odata-v4.0-errata02-os-part2-url-conventions-complete.html#_Toc406398096).
 
@@ -250,6 +255,21 @@ OData enables an SQL-like language that lets you create rich queries against the
 
 The OData protocol supports many similar filtering and querying options on entities. For the full set of query options, see [Windows Communication Foundation](https://msdn.microsoft.com/library/ff478141.aspx).
 
+## Using Enums
+Enums are under namespace **Microsoft.Dynamics.DataEntities**. Enums can be included in an OData query is by using the following syntax.
+
+`Microsoft.Dynamics.DataEntities.Gender'Unknown'`
+
+`Microsoft.Dynamics.DataEntities.NoYes'Yes'`
+
+An example query for using the above enum values is shown below.
+
+`https://environment.cloud.onebox.dynamics.com/data/CustomersV3?\$filter=PersonGender eq Microsoft.Dynamics.DataEntities.Gender'Unknown'`
+
+`https://environment.cloud.onebox.dynamics.com/data/Currencies?\$filter=ReferenceCurrencyForTriangulation eq Microsoft.Dynamics.DataEntities.NoYes'No'`
+
+The operations supported for enums are **eq** and **ne**.
+
 ## Authentication
 OData sits on the same authentication stack as the server. For more information about the authentication, see [Service endpoints overview](services-home-page.md).
 
@@ -309,7 +329,7 @@ public static void CreateVendor(Resources context)
 ```
 
 ### Handling duplicate names between enums and entities in metadata
-There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in gitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the Odata logic on the client side.
+There are instances where enums and entities share the same name. This name duplication results in OData client code generation errors. To recover from this error, the [helper code in gitHub](https://github.com/Microsoft/Dynamics-AX-Integration/blob/master/ServiceSamples/ODataConsoleApplication/MetadataDocumentValidator.cs) can be used to identify duplicate name instances that must be removed. The generated metadata document can be used for further processing of the OData logic on the client side.
 
 ### Array fields
 OData does not support array fields in entities. This must be taken into consideration when designing entities that will be used with OData.

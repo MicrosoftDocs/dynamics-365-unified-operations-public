@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
 ---
 
-# Create an onboarding template by using Dynamics 365 Talent - Onboard
+# Create an onboarding template
 
 [!include [banner](includes/banner.md)]
 

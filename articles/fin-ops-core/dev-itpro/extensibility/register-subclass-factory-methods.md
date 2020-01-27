@@ -50,7 +50,7 @@ The following illustrations shows a typical decorated hierarchy.
 
 In X++, two extension frameworks serve the same purpose. The implementer of the factory method determines which extension framework should be used:
 
-+ [SysExtension](https://blogs.msdn.microsoft.com/mfp/2013/06/12/sysextension-framework-to-the-rescue/)
++ [SysExtension](https://community.dynamics.com/365/financeandoperations/b/mfp/posts/sysextension-framework-to-the-rescue)
 
   - This extension framework uses custom attributes that make it easier to consume.
   - It supports singletons that save a little performance when the same instance is created repeatedly. This extension framework is especially useful for stateless subclasses.

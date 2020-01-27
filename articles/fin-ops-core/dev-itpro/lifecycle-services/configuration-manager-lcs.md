@@ -24,7 +24,7 @@ ms.custom: 62753
 ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 

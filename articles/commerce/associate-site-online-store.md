@@ -44,16 +44,16 @@ After your site is created, you can verify that it's associated with your online
 
 ## Additional resources
 
-[Online store overview](online-store-overview.md)
-
-[Create an e-Commerce site](create-ecommerce-site.md)
+[Configure your domain name](configure-your-domain-name.md)
 
 [Deploy a new e-Commerce site](deploy-ecommerce-site.md)
 
-[Configure your domain name](configure-your-domain-name.md)
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
 
 [Add support for a content delivery network (CDN)](add-cdn-support.md)
 
 [Enable location-based store detection](enable-store-detection.md)
-
-[Set up custom pages for user logins](custom-pages-user-logins.md)

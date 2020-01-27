@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Talent
 
 # Talent client disconnects
 
-[!include [banner](includes/banner.md)]
-
 **Environment details** 
 
 This issue can occur in all environments.

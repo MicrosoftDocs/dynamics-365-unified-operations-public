@@ -3,7 +3,7 @@
 
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure on-premises development VMs, and find important configuration settings for developers and administrators.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 10031
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -219,11 +219,11 @@ Follow the steps in this section if you are also configuring for Retail.
 
 ### Base URL of the local application
 
-After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: https://usnconeboxax1aos.cloud.onebox.dynamics.com. If you're using version control and plan to connect multiple development VMs to the same Azure DevOps project, rename your local VM. For instructions, see [Rename a local development (VHD) environment](../migration-upgrade/vso-machine-renaming.md).
+After the user is provisioned as an administrator, that user can access the instance on the computer by navigating to the following base URL: `https://usnconeboxax1aos.cloud.onebox.dynamics.com`. If you're using version control and plan to connect multiple development VMs to the same Azure DevOps project, rename your local VM. For instructions, see [Rename a local development (VHD) environment](../migration-upgrade/vso-machine-renaming.md).
 
 #### Retail configuration
 
-The URL of the Retail Cloud POS app is: <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
+The URL of the Retail Cloud POS app is: `https://usnconeboxax1pos.cloud.onebox.dynamics.com` After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
 
 -   Cashier user ID: **000160**
 -   Cashier password: **123**

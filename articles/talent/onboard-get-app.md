@@ -29,7 +29,7 @@ ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
 ---
 
-# Get the Dynamics 365 Talent - Onboard app
+# Get the Onboard app
 
 [!include [banner](includes/banner.md)]
 
