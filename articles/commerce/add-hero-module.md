@@ -50,9 +50,9 @@ A content block module is driven by data from the content management system (CMS
 
 ## Content block modules and themes
 
-Content block modules can support various layouts and styles based on a theme. For example, the Fabrikam theme supports three layout variations of a content block module: hero, feature, and tile. The hero layout shows image on the background with text overlay. The feature layout shows image and text side by side. The tile layout allows multiple content blocks in a tile format.
+Content block modules can support various layouts and styles based on a theme. For example, the Fabrikam theme supports three layout variations of a content block module: hero, feature, and tile. The hero layout shows an image on the background with text overlay. The feature layout shows an image and text side by side. The tile layout allows multiple content blocks in a tile format.
 
-In addition, the theme can expose can different properties for each layout. A theme developer can build more layouts with more styles using the content block module.
+In addition, the theme can expose different properties for each layout. A theme developer can build more layouts with more styles using the content block module.
 
 The following image shows an example of a content block module with a hero layout.
 ![Example of a hero module](./media/Hero.PNG)
