@@ -320,8 +320,6 @@
         items: 
         - name: Set up a retail channel
           href: channel-setup-retail.md		
-        - name: Define and maintain retail channels
-          href: ../retail/define-maintain-retail-channels.md?toc=/dynamics365/commerce/toc.json
         - name: Configure retail workers 
           href: ../retail/tasks/worker.md?toc=/dynamics365/commerce/toc.json
         - name: Modern Point of Sale (MPOS) and Cloud POS 
@@ -600,32 +598,30 @@
           href:	sync-product-ratings.md
       - name: Manage your inventory  
         items:
-        - name: Inventory and purchase orders 
+        - name:	Inventory   
           items:
-          - name:	Inventory   
-            items:
-            - name: Store inventory management  
-              href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
-            - name: Working with serialized items 
-              href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
-            - name: Push products from distribution center to store using buyer's push 
-              href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
-            - name: Set up rules and parameters for cross-docking and buyer's push  
-              href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
-          - name: Purchase orders	  
-            items:
-            - name: Purchase order overview
-              href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-            - name: Create purchase orders
-              href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
-            - name: Product receipt against purchase orders
-              href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
-            - name: Approve and confirm purchase orders
-              href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
-            - name: Purchase order approval mobile workspace
-              href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
-            - name: Create product packages for purchase orders
-              href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+          - name: Store inventory management  
+            href: ../retail/work-with-store-inventory.md?toc=/dynamics365/commerce/toc.json
+          - name: Working with serialized items 
+            href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+          - name: Push products from distribution center to store using buyer's push 
+            href: ../retail/tasks/push-products-distribution-center-store-buyers-push.md?toc=/dynamics365/commerce/toc.json
+          - name: Set up rules and parameters for cross-docking and buyer's push  
+            href: ../retail/tasks/set-up-rules-parameters-cross-docking-buyers-push.md?toc=/dynamics365/commerce/toc.json
+        - name: Purchase orders	  
+          items:
+          - name: Purchase order overview
+            href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
+          - name: Create purchase orders
+            href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
+          - name: Product receipt against purchase orders
+            href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
+          - name: Approve and confirm purchase orders
+            href: ../supply-chain/procurement/purchase-order-approval-confirmation.md?toc=/dynamics365/commerce/toc.json
+          - name: Purchase order approval mobile workspace
+            href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/commerce/toc.json
+          - name: Create product packages for purchase orders
+            href: ../retail/tasks/create-product-packages-purchase-orders.md?toc=/dynamics365/commerce/toc.json
     - name: Manage your orders
       items:
       - name:	Sales orders   
