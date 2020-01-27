@@ -2,10 +2,10 @@
 # required metadata
 
 title: File ER destination type
-description: You can configure a file destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the setting of such destination, a generated document is offered for downloading by using web browser.
+description: This topic provides information about configuring a file destination for an ER format.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/16/2020
+ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -34,12 +34,13 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-If you set **Enabled** to **Yes**, an open or save dialog box of using web browser appears when the configuration has finished running.
+You can configure a file destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the setting of the destination, a generated document is offered for download from the web browser.
+
+On the **Destination settings** page, if you set **Enabled** to **Yes**, an open or save dialog box opens when the configuration has finished running.
 
 [![Destination setting page](./media/ER_Destinations-EnableFileDestination.png)](./media/ER_Destinations-EnableFileDestination.png)
 
 ## Additional resources
 
-[Electronic reporting (ER) overview](general-electronic-reporting.md)
-
-[Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
+- [Electronic reporting (ER) overview](general-electronic-reporting.md)
+- [Electronic reporting (ER) destinations](electronic-reporting-destinations.md)
