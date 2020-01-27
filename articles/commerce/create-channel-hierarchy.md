@@ -43,7 +43,7 @@ A channel navigation hierarchy is used to group and organize products into categ
 
 To create a channel navigation hierarchy, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Channel navigation categories**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Channel navigation categories**.
 1. On the action pane, select **New**.
 1. In the **Name** box, enter a name.
 1. In the **Description** box, enter a description.
