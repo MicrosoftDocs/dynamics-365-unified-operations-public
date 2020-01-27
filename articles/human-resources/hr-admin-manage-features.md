@@ -59,9 +59,18 @@ To access preview features, you must first enable them in your environment. Enab
 
 Benefits management provides you with a flexible solution that supports a wide variety of benefit options, along with an easy-to-use employee experience that showcases your offerings. For more information about Benefits management configuration and use, see [Benefits management overview](hr-benefits-management-overview.md).
 
+Benefits management replaces functionality in the **Benefits** workspace. When you enable the Benefits management preview feature, you can no longer access the following forms in the **Benefits** workspace:
 
+- **Benefits**
+- **Benefit elements**
+- **Contribution calculation rates**
+- **Benefit enrollment results**
+- **Benefit expiration and extension results**
+- **Benefit eligibility policy rule types**
+- **Benefit eligibility policies**
+- **Eligibility events**
 
-
+You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable the Benefits management preview feature.
 
 ## Feedback
 
