@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a variant group
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic describes how to create a size, style, or color variant group for a product in Microsoft Dynamics 365 Commerce.
 
