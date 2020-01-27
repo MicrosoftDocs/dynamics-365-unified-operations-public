@@ -82,7 +82,7 @@ Before you can use the General ledger simulations, the following prerequisites m
 
 - To post simulation transactions for all simulation journals, go to **Periodic tasks** > **Simulations** > **Post simulation journals**.
 
-Transactions will be no longer simulation transactions after all journals are posted.
+Transactions will be no longer include simulation transactions after all journals are posted.
 
 ### Reopen all simulation journals 
 
