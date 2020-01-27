@@ -55,9 +55,11 @@ Content block modules can support various layouts and styles based on a theme. F
 In addition, the theme can expose different properties for each layout. A theme developer can build more layouts with more styles using the content block module.
 
 The following image shows an example of a content block module with a hero layout.
+
 ![Example of a hero module](./media/Hero.PNG)
 
 The following image shows an example of a content block module with a feature layout.
+
 ![Examples of feature modules](./media/Feature.PNG)
 
 ## Content block module properties
