@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a new product hierarchy
-description: This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
+title: Create a new Commerce product hierarchy
+description: This topic describes how to create a new Commerce product hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/20/2020
@@ -28,24 +28,24 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create a new product hierarchy
+# Create a new Commerce product hierarchy
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
+This topic describes how to create a new Commerce   product hierarchy in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
 Dynamics 365 Commerce supports multiple retail channels. These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores). Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff. You must set up all of these elements before you can create a retail store channel. 
 
-A retail product hierarchy is used to define the overall product hierarchy for your organization. You can use a retail product hierarchy for merchandising, pricing and promotions, reporting, and assortment planning. Only one retail product hierarchy can be assigned per organization.
+A Commerce product hierarchy is used to define the overall product hierarchy for your organization. You can use a Commerce product hierarchy for merchandising, pricing and promotions, reporting, and assortment planning. Only one Commerce product hierarchy can be assigned per organization.
 
-## Create and configure a retail product hierarchy
+## Create and configure a Commerce product hierarchy
 
-To create and configure a retail product hierarchy, follow these steps.
+To create and configure a Commerce product hierarchy, follow these steps.
 
-1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Retail product hierarchy**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Commerce product hierarchy**.
 1. If no hierachy exists yet, on the **Action pane**, select **New** to create the root of the hierarchy.
 1. Under **General**:
     1. In the **Name** box, enter a name.
