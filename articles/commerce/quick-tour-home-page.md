@@ -62,7 +62,7 @@ The main section of the home page can highlight products, categories, or promoti
 - **Tile** – A tile layout of a content block module is used to showcase multiple products or category of products by using a combination of images and text in a multicolumn layout. In the illustration of a home page that appears earlier in this topic, a tile  layout is used for the three-column rendering of the **Shop Women**, **Shop Men**, and **Shop Accessories** items.
 - **Video player** – A video player module can be used to showcase video content on the home page. The illustration of a home page that appears earlier in this topic includes a video player module.
 - **Text block** – A content rich block module can be used to present text content on the home page in a single-column or multicolumn layout.
-- **Product recommendations** – Product recommendations modules are used to show lists such as **New**, **Trending**, and **Best Selling** on the home page. These lists showcase products based on shopping trends, and they can be algorithmically generated or manually curated. They help customers quickly discover top products and then continue to shop.
+- **Product recommendations** – Product recommendations modules are used to show lists, such as **New**, **Trending**, and **Best Selling** on the home page. These lists showcase products based on shopping trends, and they can be algorithmically generated or manually curated. They help customers quickly discover top products and then continue to shop.
 
     The following illustration shows an example of product recommendations modules on a home page.
 
