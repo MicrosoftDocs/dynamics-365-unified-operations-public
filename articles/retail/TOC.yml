@@ -1090,18 +1090,26 @@
           href: localizations/emea-aut-fi-sample.md
       - name: Eastern Europe
         items: 
-        - name: Advance invoices for Retail for Eastern Europe
-          href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: Petty cash management for Retail for Eastern Europe
-          href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Retail customer invoices and return sales orders in Eastern European countries
-          href: localizations/emea-eeu-retail-invoices.md
-        - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
-          href: localizations/emea-eeu-deployment.md
-        - name: Fiscal printer integration sample for Poland
-          href: localizations/emea-pol-fpi-sample.md
-        - name: Fiscal registration service integration sample for Czech Republic
-          href: localizations/emea-cze-fi-sample.md
+        - name: Common
+          items:
+          - name: Advance invoices for Retail for Eastern Europe
+            href: localizations/emea-eeu-advance-invoices-for-retail.md
+          - name: Petty cash management for Retail for Eastern Europe
+            href: localizations/emea-eeu-petty-cash-for-retail.md
+          - name: Retail customer invoices and return sales orders in Eastern European countries
+            href: localizations/emea-eeu-retail-invoices.md
+          - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
+            href: localizations/emea-eeu-deployment.md
+        - name: Czech Republic
+          items:
+          - name: Fiscal registration service integration sample for Czech Republic
+            href: localizations/emea-cze-fi-sample.md
+        - name: Poland
+          items:
+          - name: Fiscal printer integration sample for Poland
+            href: localizations/emea-pol-fpi-sample.md
+          - name: Customer information management for Poland
+            href: localizations/emea-pol-customer-information.md
       - name: France
         items:
         - name: Cash register functionality
