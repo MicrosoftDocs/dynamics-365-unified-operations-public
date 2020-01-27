@@ -40,8 +40,6 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** January 2020
 - **Auto-update:** Febraury 2020 
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index).
-
 ## Features included in this release
 
 The following features will become available with the 10.0.8 release, but must be enabled using [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
@@ -86,11 +84,13 @@ To learn more about the feature, see: [Warehouse management overview](../warehou
 
 To read a description of this feature, see [Pick-line grouping](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping) in the release plan.
 
-To learn more about the feature, see: [Warehouse management overview](../warehousing/warehouse-management-overview.md) in the online help.
+To learn more about the feature, see: [Pick line grouping](../warehousing/pick-line-grouping.md) in the online help.
 
 ### Shipment auto update
 
 To read a description of this feature, see [Shipment auto update](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update) in the release plan.
+
+To learn more about the feature, see: [Shipment auto-updates](../warehousing/auto-update-shipment.md) in the online help.
 
 ### Warehouse app task validation with RSAT
 
@@ -112,7 +112,7 @@ To learn more about the feature, see: [Warehouse management overview](../warehou
 
 To read a description of this feature, see [System-directed cluster picking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) in the release plan.
 
-To learn more about the feature, see: [Warehouse management overview](../warehousing/warehouse-management-overview.md) in the online help.
+To learn more about the feature, see: [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md) in the online help.
 
 ### Location status
 
