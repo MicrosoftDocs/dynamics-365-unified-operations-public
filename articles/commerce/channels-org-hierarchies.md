@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Set up organization hierarchies
 
-[!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
 
 This topic descibes how to set up organization hierarchies in Microsoft Dynamics 365 Commerce.
 
