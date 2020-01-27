@@ -299,9 +299,9 @@
             - name: Number sequences overview
               href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/retail/toc.json
             - name: Set up number sequences on an individual basis
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis?toc=/dynamics365/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/retail/toc.json
             - name: Set up number sequence using a wizard
-              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard?toc=/dynamics365/retail/toc.json
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/retail/toc.json
           - name: Set up a default customer and address book 
             href: default-customer.md
         - name: Retail channel prerequisites
