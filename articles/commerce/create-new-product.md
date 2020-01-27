@@ -41,7 +41,7 @@ A product is primarily defined by a product number, name, and description. Howev
 
 ## Create a new product
 
-1. In the navigation pane, go to **Modules \> Retail \> Products and categories \> Products by category**.
+1. In the navigation pane, go to **Modules \> Retail and commerce \> Products and categories \> Products by category**.
 1. On the action pane, select **New**.
 1. In the **Product type** drop-down list, select either **Item** or **Service**.
 1. In the **Product subtype** drop-down list, select either **Product** (if the product will have no variants) or **Product master** (if the product will have variants).
