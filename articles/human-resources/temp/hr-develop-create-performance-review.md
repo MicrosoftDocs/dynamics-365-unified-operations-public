@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create performance reviews
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+
 
 This topic explains how to create a performance review and describes the purpose for each section of the review. This procedure was created using the USMF demo data company.
 

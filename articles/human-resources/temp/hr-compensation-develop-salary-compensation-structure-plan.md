@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Develop salary/compensation structure and plan
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+
 
 This task guide walks though the process of creating a Fixed compensation plan and enabling employees to be enrolled in the plan through eligibility rules. The demo data company used to create this task is USMF and the task is intended for Compensation and Benefits Managers.
 

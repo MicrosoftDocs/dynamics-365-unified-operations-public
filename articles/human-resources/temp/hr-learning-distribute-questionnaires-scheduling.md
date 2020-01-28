@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Distribute questionnaires using scheduling
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+
 
 Questionnaire scheduling allows you to plan and distribute questionnaires to multiple respondents. The demo data company used to create this procedure is USMF.
 

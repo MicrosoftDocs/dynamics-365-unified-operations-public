@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a goal
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+
 
 You can create goals, add activities to goals, track measurements, and link the goals to a review. This procedure was created using the USMF demo data company. This procedure is for a feature that was added in Dynamics 365 for Operations, version 1611.
 
