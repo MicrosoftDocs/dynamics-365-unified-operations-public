@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Manage AI-ML-based product recommendation results
+# Manage AI-ML recommendations results
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
@@ -85,7 +85,7 @@ The **Best selling** product list has one parameter that can be changed:
 8.	To remove products from the table: select the line to remove and select **Remove**.
 
 
-### For People also like or Frequently bought together lists
+### For "People also like" or "Frequently bought together" lists
 
 In the context of **Frequently bought together** or **People also like** lists, machine learning is used to analyze consumer purchase patterns to recommend related products commonly purchased together for a unique seed product. 
  
