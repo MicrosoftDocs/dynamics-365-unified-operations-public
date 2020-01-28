@@ -33,6 +33,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
+
+[!include [banner](../includes/preview-banner.md)]
+
 According to Order No VA-55, "On the Approval of Rules for the Processing and Submitting of the Data Taxes Invoice Registers", which was approved by the Head of the State Tax Inspectorate under the Ministry of Finance of the Republic of Lithuania in 2004 April 21, the processing and submission of data about value added tax invoice registers is updated to create conditions for the taxable persons to present the data of issued and received invoices for the Tax Authority using standardized format for the i.SAF application. The i.SAF format must match the current standard of accounting data files technical specifications and technical requirements (FileVersion iSAF1.2).
 
 ## Overview
