@@ -2109,6 +2109,8 @@
           href: localizations/tasks/lt-00003-fixed-asset-transfer.md
         - name: VAT statement details
           href: localizations/emea-ltu-vat-statement-details.md
+        - name: i.SAF reporting for Lithuania
+          href: localizations/emea-ltu-isaf.md
       - name: Malaysia
         items:
         - name: Malaysia overview
