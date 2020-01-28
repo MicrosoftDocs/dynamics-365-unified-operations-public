@@ -1,7 +1,39 @@
+---
+# required metadata
 
-## Calculate delivery date for a line based on the lead time
+title: Calculate delivery date for a line based on the lead time
+description: You can calculate a delivery date for a line based on a vendor's lead time and your organization's working days calendar.
+author: velofog
+manager: AnnBe
+ms.date: 09/03/2019
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
 
-Calculate a delivery date for a line based on a vendor's lead time (**Request for quotation reply** page, **Quotation** tab) and your organization's working days calendar. Vendors can enter a lead time for each line. When a purchase order is confirmed, a delivery date for a line is calculated from the confirmation date, based on the lead time and the working days calendar. If no lead time is specified, the delivery date will be the confirmation date, unless the delivery date is calculated automatically. 
+# optional metadata
+
+# ms.search.form:
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Operations, Core 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+ms.search.industry: public sector
+ms.author: v-alpavk
+ms.search.validFrom: 2019-9-03
+ms.dyn365.ops.version: 10.0.7
+
+---
+
+
+# Calculate delivery date for a line based on the lead time
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+This topic describes how to calculate a delivery date for a line based on a vendor's lead time and your organization's working days calendar(**Request for quotation reply** page, **Quotation** tab). Vendors can enter a lead time for each line. When a purchase order is confirmed, a delivery date for a line is calculated from the confirmation date, based on the lead time and the working days calendar. If no lead time is specified, the delivery date will be the confirmation date, unless the delivery date is calculated automatically. 
 
 The lead time information for a line is available on the following pages: **Request for quotation reply, Purchase requisitions, Purchase agreements**, and **Purchase order**. 
 
@@ -10,9 +42,9 @@ The lead time details are not overwritten when delivery dates are calculated for
 ## Setting up lead time calendar
 
 The ability to calculate delivery dates, and the calendar to use in those calculations, must be set up on the **Procurement and sourcing parameters** page 
-1. Determine whether a calendar exists that indicates the days your agency is open. If none of the existing calendar match your organization's working days - that is, days your office is open and able to receive shipments - create a new working days calendar. For example, you might want to create a new calendar if your office receives shipments from Monday through Thursday, but your working days are Monday through Friday. We recommended that you do not change an existing calendar already in use by another part of your organization. 
+1. Determine whether a calendar exists that indicates the days your agency is open. If none of the existing calendars match your organization's working days - that is, the days your office is open and able to receive shipments - create a new working days calendar. For example, you might want to create a new calendar if your office receives shipments from Monday through Thursday, but your working days are Monday through Friday. We recommended that you do not change an existing calendar already in use by another part of your organization. 
 
-- Go to **Organization administration > Setup > Calendars**. View calendars to find one that matches your working days. If one exists, continue with step 2. If not, continue with the next point.
+- Go to **Organization administration > Setup > Calendars**. View calendars to find one that matches your working days. If one exists, continue with step 2. If not, continue to the following step.
 - Click **New** to create a new calendar, or click **Copy** to create a calendar from an existing, similar calendar that you can quickly update.
 - In the **Calendar** and **Name** fields, enter an identifier and a descriptive name for the calendar.
 - Click **Working times**.
@@ -56,7 +88,7 @@ Select a purchase agreement in the list. Alternatively, click **New**, and inclu
 
 Lead time details entered for a line in the **Purchase agreement** and **Purchase requisition** pages appear in the **Lead time** group for a purchase order. You can edit lead time details for an unconfirmed purchase order. 
 
-1. Go to **Procurement and sourcing > Purchase orders > All purchase orders** list page (or other list page).
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders** list page.
 Select the purchase order in the list. Alternatively, click **New** and include this information when you create a new purchase order.
 2. On the **Purchase order** page, on the Action Pane, on the **Maintain** tab, click **Edit**.
 3. On the **Line details** FastTab, on the **Delivery** tab, in the **Lead time** group, view the calculated delivery date (**Delivery date** field). 
@@ -65,4 +97,4 @@ Select the purchase order in the list. Alternatively, click **New** and include 
 6. Click **Save** to save the changes.
 
 > [Note!] 
-> Released items have the option to select a **Purchase lead time**. The **Purchase lead time** will auto calculate the the **Delivery date** when a Purchase order is created.  The **Delivery date** will not be recalculated if the **Lead time** on the purchase order line is zero. 
+> For Released items, you have the option to select a **Purchase lead time**. The **Purchase lead time** will auto calculate the the **Delivery date** when a Purchase order is created.  The **Delivery date** will not be recalculated if the **Lead time** on the purchase order line is zero. 
