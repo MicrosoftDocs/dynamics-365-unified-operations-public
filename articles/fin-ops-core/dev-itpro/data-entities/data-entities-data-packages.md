@@ -5,7 +5,7 @@ title: Data management overview
 description: This topic provides information about data management in Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
