@@ -134,7 +134,7 @@ namespace TalentODataPoC
             UriBuilder uri = new UriBuilder("https://login.microsoftonline.com/common");
             AuthenticationContext authenticationContext = new AuthenticationContext(uri.ToString());
 
-            // request token for the resource we want to access (Talent Core HR). This will authenticate
+            // request token for the resource we want to access (Human Resources). This will authenticate
             // the user and return an access token containing claims for the authenticated user.
             var authResult = await authenticationContext.AcquireTokenAsync(
                 "http://hr.talent.dynamics.com", /*Talent app id or resource URI*/

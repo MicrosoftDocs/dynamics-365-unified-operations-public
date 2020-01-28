@@ -400,7 +400,7 @@
       - name: Manage leave and absence requests
         href: hr-employee-self-service-manage-requests.md
       - name: Request time off
-        href: hr-employee-self-service-time-off.md
+        href: hr-employee-self-service-request-time-off.md
       - name: Create a team calendar
         href: hr-employee-self-service-calendar.md
     - name: Create employee development plans

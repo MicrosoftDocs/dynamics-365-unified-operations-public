@@ -39,7 +39,7 @@ This topic provides an overview of the components of the Help system. The Help s
 - Dynamics 365 Finance 
 - Dynamics 365 Retail
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 You can access help from the Help pane in whichever product you are using. 
 
@@ -111,7 +111,7 @@ To access Help content, either click the **Help** (**?**) icon and then choose H
 From the Help pane, you can access articles that apply to the client. When you first open the Help pane and click the **Help** tab, you'll see the articles that apply to the page that you're currently on. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article.
 
 > [!IMPORTANT]
-> This section does not apply to Dynamics 365 Talent. The Help system for Talent is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Talent.
+> This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Human Resources.
 
 
 ### Accessing Task guides from the Help pane

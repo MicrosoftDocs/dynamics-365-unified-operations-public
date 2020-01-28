@@ -56,7 +56,7 @@ To access the template, do the following.
 
 The following template is used to synchronize records from Human Resources to Finance.
 
-- **Name of the template in Data integration:** Core HR (Human Resources Common Data Service to Finance)
+- **Name of the template in Data integration:** Human Resources (Human Resources Common Data Service to Finance)
 
   > [!NOTE]
   > The name of the task contains the entities used in each application. The source (Human Resources) is on the left and the destination

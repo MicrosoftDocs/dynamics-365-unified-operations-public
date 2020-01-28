@@ -50,7 +50,7 @@ For a detailed list of when each version of the product was released, see [Softw
 <tr>
 <td>Absence management in Human resources</td>
 <td>Functionality for entering absence transactions isn't included. Additionally, functionality for approving absence transactions as a manager isn't included. Setup capabilities that are required for integration with other modules are available through the <strong>Human Resources 2</strong> configuration key.</td>
-<td>Implemented in Dynamics 365 Talent</td>
+<td>Implemented in Dynamics 365 Human Resources</td>
 </tr>
 <tr>
 <td>Alerts</td>

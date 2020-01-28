@@ -60,20 +60,20 @@ This tutorial uses the following technologies:
 
 Before you begin the exercise in this tutorial, you must have the following items:
 
-- A Core HR environment that has admin-level permissions in the environment
+- A Human Resources environment that has admin-level permissions in the environment
 - An [Azure subscription](https://azure.microsoft.com/free/) to host the logic app
 
 ## The exercise
 
-At the end of this exercise, you will have a logic app that is connected to your Core HR environment and your OneDrive for Business account. The logic app will export a data package from Core HR, wait for the export to be completed, download the exported data package, and save the data package in the OneDrive for Business folder that you specified.
+At the end of this exercise, you will have a logic app that is connected to your Human Resources environment and your OneDrive for Business account. The logic app will export a data package from Human Resources, wait for the export to be completed, download the exported data package, and save the data package in the OneDrive for Business folder that you specified.
 
 The completed logic app will resemble the following illustration.
 
 ![Logic app overview](media/integration-logic-app-overview.png)
 
-### Step 1: Create a data export project in Core HR
+### Step 1: Create a data export project in Human Resources
 
-In Core HR, create a data export project that exports workers. Name the project **Export Workers**, and make sure that the **Generate data package** option is set to **Yes**. Add a single entity (**Worker**) to the project, and select the format to export in. (Microsoft Excel format is used in this tutorial.)
+In Human Resources, create a data export project that exports workers. Name the project **Export Workers**, and make sure that the **Generate data package** option is set to **Yes**. Add a single entity (**Worker**) to the project, and select the format to export in. (Microsoft Excel format is used in this tutorial.)
 
 ![Export Workers data project](media/integration-logic-app-export-workers-project.png)
 
@@ -101,7 +101,7 @@ The bulk of the exercise involves creating the logic app.
         - **Azure AD Resource URI:** `http://hr.talent.dynamics.com`
 
         > [!NOTE]
-        > The Core HR service doesn't yet provide a connector that exposes all the APIs that make up the DMF package REST API, such as **ExportToPackage**. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Human Resources.
+        > The Human Resources service doesn't yet provide a connector that exposes all the APIs that make up the DMF package REST API, such as **ExportToPackage**. Instead, you must call the APIs by using raw HTTPS requests through the HTTP with Azure AD connector. This connector uses Azure Active Directory (Azure AD) for authentication and authorization to Human Resources.
 
         ![HTTP with Azure AD connector](media/integration-logic-app-http-aad-connector-step.png)
 
@@ -207,7 +207,7 @@ The following illustration shows what the Logic Apps Designer looks like when al
 
 ## Summary
 
-In this tutorial, you learned how to use a logic app to export data from Core HR and save the exported data to a OneDrive for Business folder. You can modify the steps of this tutorial as required to suit your business needs.
+In this tutorial, you learned how to use a logic app to export data from Human Resources and save the exported data to a OneDrive for Business folder. You can modify the steps of this tutorial as required to suit your business needs.
 
 
 ## See also
