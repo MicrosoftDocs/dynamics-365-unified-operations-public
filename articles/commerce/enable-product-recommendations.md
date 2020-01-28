@@ -38,7 +38,9 @@ ms.dyn365.ops.version: 10.0.5
 This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
 ## Recommendations pre-check
-Before enabling, please note that product recommendations are only supported for F&O customers supporting build 10.0.6 and have migrated their storage to using BDL. 
+Before enabling, please note that product recommendations are only supported for F&O customers who have migrated their storage to using ADLS. 
+
+For steps on how to enable ADLS for a Dynamics 365 Environment, please see the feature documentation [here](enable-ADLS-environment.md)
 
 Additionally, ensure that RetailSale measurements have been enabled. To Learn more about this set up process, go [here.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
 
@@ -60,15 +62,22 @@ To turn on product recommendations, follow these steps.
 By default, the AI-ML-based product recommendation list provides suggested values. You can change the default suggested values to suit the flow of your business. To learn more about how to change the default parameters, go to [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 ## Show recommendations on POS devices
-After enabling recommendations in the back office, the recommendations pannel must be added to the control POS screen via the layout tool. To learn about this process, go [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)
+After enabling recommendations in the back office, the recommendations pannel must be added to the control POS screen via the layout tool. To learn about this process, go [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen) 
 
+## Enable personalized recommendations
+To learn more about how to receive personalized recommendations, please refer to the [enable personalized recommendations documentation.](personalized-recommendations.md)
 
 ## Additional resources
 
 [Product recommendations overview](product-recommendations.md)
 
+[enable personalized recommendations](personalized-recommendations.md)
+
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
 
-[Add recommendations panel to POS devices](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)
+[Add recommendations panel to POS devices](retail/add-recommendations-control-pos-screen.md)
 
+[Product Collection Module Overview](product-collection-module-overview.md)
+
+[Enable ADLS in Dynamics 365 environment](enable-ADLS-environment.md)
 
