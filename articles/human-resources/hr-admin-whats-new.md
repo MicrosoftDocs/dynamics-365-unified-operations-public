@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # What's new or changed in Human Resources
 
-Each week, we provide a new release for Microsoft Dynamics Human Resources. The changes are listed below.
+Each week, we provide a new release for Microsoft Dynamics Human Resources. The articles in this section detail the changes made each week.
 
 For more information about upcoming features or the update process for Human Resources, see the following:
 
@@ -40,6 +40,4 @@ For more information about upcoming features or the update process for Human Res
 
 - [Update process](hr-admin-setup-update-process.md)
 
-## February 3, 2020
-
-### General availability for Dynamics 365 Human Resources
+## See also
