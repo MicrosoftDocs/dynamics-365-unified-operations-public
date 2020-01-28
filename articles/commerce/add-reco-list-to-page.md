@@ -5,7 +5,7 @@ title: Add product recommendation lists to pages
 description: This topic explains how to add a product recommendation list to an e-Commerce page.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -42,7 +42,7 @@ This topic explains how to add a product recommendation list to an e-Commerce pa
 3. In the module wizard, select the list to add to the page.
 4. Save your changes.
 
-To learn more about the types of lists that you can add to a page, see [Product collection module overview.](product-collection-module-overview.md).
+To learn more about the types of lists that you can add to a page, see [Product collection module overview](product-collection-module-overview.md).
 
 
 ## Additional resources
