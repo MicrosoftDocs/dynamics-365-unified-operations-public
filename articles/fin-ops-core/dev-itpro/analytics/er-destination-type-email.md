@@ -36,7 +36,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 You can configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents. Based on the destination setting, a generated document is delivered as an attachment of an electronic mail.
 
-Set **Enabled** to **Yes** to send an output file by email. After this option is enabled, you can specify the email recipients and edit the subject and body of the email message. You can set up constant texts for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email texts. You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print management feature in the application completes it, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
+Set **Enabled** to **Yes** to send an output file by email. After this option is enabled, you can specify the email recipients and edit the subject and body of the email message. You can set up constant texts for the email subject and body, or you can use ER [formulas](er-formula-language.md) to dynamically create email texts. 
+
+You can configure email addresses for ER in two ways. The configuration can be completed in the same way that the Print management feature completes it, or you can resolve an email address by using a direct reference to the ER configuration through a formula.
 
 [![Enable email destination](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
@@ -57,17 +59,20 @@ are supported: **Customer**, **Vendor**, **Prospect**, **Contact**, **Competitor
 
 [![Configure email source account](./media/ER_Destinations-EmailDefineAddressSource.png)](./media/ER_Destinations-EmailDefineAddressSource.png)
 
-Fformulas are specific to the ER configuration. In the **Formula** field, enter a document-specific reference to a customer or vendor party type. Instead of typing, you can find the data source node that represents the customer or vendor account, and then select **Add data source** to update the formula. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents a vendor account is `'\$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
+Formulas are specific to the ER configuration. In the **Formula** field, enter a document-specific reference to a customer or vendor party type. Instead of typing, you can find the data source node that represents the customer or vendor account, and then select **Add data source** to update the formula. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents a vendor account is `'\$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
+
+If you enter a string value, such as `"DE-001"`, and save a formula, an email will be sent to the contact person of the vendor, **DE-001**.
+
 
 [![ER formula designer page](./media/ER_Destinations-EmailDefineAddressSourceFormula.png)](./media/ER_Destinations-EmailDefineAddressSourceFormula.png)
 
 [![Configure email source account](./media/ER_Destinations-EmailDefineAddressSourceAttributes.png)](./media/ER_Destinations-EmailDefineAddressSourceAttributes.png)
 
-If you enter a string value, such as `"DE-001"`, and save a formula, an email will be sent to the contact person of the vendor, **DE-001**.
+
 
 ### Configuration email
 
-Use this email type if the configuration that you use has a node in the data sources that returns at runtime an **email address**. You can use data sources and functions in the formula designer to get a correctly formatted email address. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents an email address of a vendor's contact person is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Use this email type if the configuration that you use has a node in the data sources that returns an **email address**. You can use data sources and functions in the formula designer to get a correctly formatted email address. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents an email address of a vendor's contact person is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Configure email address source](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
