@@ -37,7 +37,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
-- **Auto-update:** Febraury 2020 
+- **Auto-update:** February 2020 
 
 ## Features included in this release
 
@@ -51,7 +51,7 @@ To read a description of this feature, see [Additional location zone](https://do
 
 To read a description of this feature, see [Cancel work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) in the release plan.
 
-To learn more about the feature, see: [Cancel warehouse work for exception handling](../warehousing/cancel-warehouse-work.md) in the online help.
+To learn more about the feature, see [Cancel warehouse work for exception handling](../warehousing/cancel-warehouse-work.md).
 
 ### Change work pool on work
 
@@ -73,13 +73,13 @@ To read a description of this feature, see [Location directive inventory picking
 
 To read a description of this feature, see [Pick-line grouping](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping) in the release plan.
 
-To learn more about the feature, see: [Pick line grouping](../warehousing/pick-line-grouping.md) in the online help.
+To learn more about the feature, see [Pick line grouping](../warehousing/pick-line-grouping.md).
 
 ### Shipment auto update
 
 To read a description of this feature, see [Shipment auto update](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update) in the release plan.
 
-To learn more about the feature, see: [Shipment auto-updates](../warehousing/auto-update-shipment.md) in the online help.
+To learn more about the feature, see [Shipment auto-updates](../warehousing/auto-update-shipment.md).
 
 ### Warehouse app task validation with RSAT
 
@@ -97,7 +97,7 @@ To read a description of this feature, see [Split work](https://docs.microsoft.c
 
 To read a description of this feature, see [System-directed cluster picking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) in the release plan.
 
-To learn more about the feature, see: [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md) in the online help.
+To learn more about the feature, see [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md).
 
 ### Location status
 
@@ -119,7 +119,7 @@ To read a description of this feature, see [Wave template grouping](https://docs
 
 To read a description of this feature, see [Work line details](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details) in the release plan.
 
-To learn more about the feature, take a look at our [work line details video](https://www.microsoft.com/en-us/videoplayer/embed/RE4fcYN).
+To learn more about the feature, take a look at the [Work line details](https://www.microsoft.com/en-us/videoplayer/embed/RE4fcYN) video.
 
 ### Zone threshold replenishment
 
@@ -143,7 +143,7 @@ Check out the [Dynamics 365: 2019 release wave 2 plan](https://docs.microsoft.co
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Finance and Operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
