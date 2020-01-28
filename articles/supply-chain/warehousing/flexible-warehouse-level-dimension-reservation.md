@@ -187,7 +187,7 @@ For this example, demo data must be installed, and you must use the **USMF** dem
         If it turns out to be impractical to pick from the location that is specified on the work line, the warehouse operators can use one of the following actions to redirect picking of the specific batch from a more convenient location:
 
         - The standard **Override location** action on a mobile device (provided that the warehouse worker's **Allow pick location override** setting is enabled)
-        - The **Change location** action on the **Work list details** page, 
+        - The **Change location** action on the **Work list details** page. 
 
 2. On the mobile device, finish picking and putting the work.
 
