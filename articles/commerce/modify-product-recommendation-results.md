@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage AI-ML-based product recommendation results
+title: Manage AI-ML recommendations results
 description: This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
 author: bebeale
 manager: AnnBe
@@ -46,7 +46,9 @@ Before changing the parameters, learn about how they will affect the results bel
 ### Trending product list
 
 The **Trending** product list has two parameters that can be changed:
+
 ![Example Trending list default parameters](./media/exampletrendingparameters.png)
+
 1. **Include new products from last X days** - Products that have been added within the specified number of days before the current date can be used to select product candidates. The default value in the picture suggests that products as old has 180 days can be used in the trending product list.
 1. **Include sales from last X days** - Sales transactions that have occurred within the specified number of days before the current date can be used to order the products. The default value above suggests that all purchases made of a product in the last 30 days would be used to determine the placement of the product in the trending product list. 
 
@@ -57,6 +59,7 @@ Depending on your business, Best selling can bring different results than trendi
 The **Best selling** product list has one parameter that can be changed:
 
 ![Example Best selling list default parameter](./media/examplebestsellingparameters.PNG)
+
 1. **Include sales from last X days** - Sales transactions that have occurred within the specified number of days before the current date can be used to order the products. The default value above suggests that all purchases made of a product in the last 30 days would be used to determine the placement of the product in the Best selling product list. 
 
 ## Manually add or remove products from recommendation lists
@@ -68,14 +71,18 @@ The **Best selling** product list has one parameter that can be changed:
 1.	Select the list add or remove products from.
 1.	To add products to the table, select **Add line.** 
 1.	Under the Product column, search for a product by **Name** or **Product number.**
+
 ![Example of searching for a product on the New product list](./media/examplenewlistconfiguration1.png)
-1.	Under the Line type column, select one of two options:
+
+6.	Under the Line type column, select one of two options:
     -	**Include** – forces a product to the front of the list
     -	**Exclude** – removes a product from appearing in the list
+    
 ![Example of Including or Excluding a product from the New product list](./media/examplenewlistconfiguration2.png)
-1.	Changing the **Display order** will change the order that products marked **include** will appear in the list.
+
+7.	Changing the **Display order** will change the order that products marked **include** will appear in the list.
     - If two products have the same **display order** value, then the final order of those two results may differ from the back office.
-1.	To remove products from the table: select the line to remove and select **Remove**.
+8.	To remove products from the table: select the line to remove and select **Remove**.
 
 
 ### For People also like or Frequently bought together lists
@@ -101,4 +108,8 @@ Follow these steps to manually add or remove results for a seed product:
 
 [Enable product recommendations](enable-product-recommendations.md)
 
+[Enable personalized recommendations](personalized-recommendations.md)
+
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
+
+[Product Collection Module Overview](product-collection-module-overview.md)
