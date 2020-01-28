@@ -1,3 +1,32 @@
+---
+# required metadata
+
+title: Set up and use advanced wave load building
+description: Advanced wave load building automatically assigns shipments to existing waves during wave execution, which can help you create meaningful loads that represent trucks without requiring you to use the load-planning workbench.
+author: mirzaab
+manager: AnnBe
+ms.date: 02/01/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Retail, Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2020-02-01
+ms.dyn365.ops.version: Release 10.0.8
+---
+
 # Set up and use advanced wave load building
 
 Advanced wave load building automatically assigns shipments to existing waves <!-- do we mean *existing loads*? --> during wave execution, which can help you create meaningful loads that represent trucks without requiring you to use the load-planning workbench. This is useful for businesses who want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but don't want to manually create these loads each day.
