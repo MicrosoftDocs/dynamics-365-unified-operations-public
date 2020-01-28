@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: General ledger parameters
+title: Subledger transfer to the General ledger
 description: This topic describes capabilities in Microsoft Dynamics 365 Finance related to the subledger transfer process in the general ledger.
 author: roschlom
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 ---
 
-# Subledger transfer to the General ledger process
+# Subledger transfer to the General ledger
 
 [!include [banner](../includes/banner.md)]
 
