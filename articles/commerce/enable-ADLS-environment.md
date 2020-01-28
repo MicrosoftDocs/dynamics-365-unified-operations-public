@@ -49,7 +49,7 @@ If product recommendations or personalized recommendations are also enabled in t
 
 Customers need to have ADLS configured in an Azure subscription that they own. This topic does not cover the purchase of an Azure subscription or the setup of an ADLS-enabled storage account.
 
-For more information about ADLS, see [ADLS official documentation](https://azure.microsoft.com/en-us/pricing/details/storage/data-lake).
+For more information about ADLS, see [ADLS official documentation](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## Configuration steps
 
