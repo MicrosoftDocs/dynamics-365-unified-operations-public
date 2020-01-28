@@ -36,6 +36,13 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans, workflows for managing requests, and an intuitive self service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.
 
+## Enable Leave and absence preview features
+
+You can try out new Leave and absence preview features in a **Sandbox** environment. These articles describe how to turn on preview features in Human Resources. 
+
+- [Manage features](hr-admin-manage-features.md)
+- [Preview feature: Leave and absence](hr-admin-manage-features.md?preview-feature-leave-and-absence)
+
 ## Set up Leave and absence
 
 Before you can create leave plans for your employees, you need to do a few setup steps:
