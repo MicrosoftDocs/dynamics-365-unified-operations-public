@@ -564,7 +564,7 @@
         href: cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md
       - name: Create a cost rollup policy
         href: cost-accounting/tasks/create-cost-rollup-policy.md
-      - name: Manage data source for the cost accounting ledger
+      - name: Manage a data source for the cost accounting ledger
         href: cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md
       - name: Process and trace source data
         href: cost-accounting/tasks/process-trace-source-data.md
