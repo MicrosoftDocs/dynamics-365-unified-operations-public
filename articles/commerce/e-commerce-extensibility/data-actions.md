@@ -151,9 +151,9 @@ export const IGetProductReviewsAction =  Msdyn365.createObservableDataAction({
 
 ### Create a new custom data action
 
-To create a new custom data action, follow these steps.
+To create a new custom data action, follow this step.
 
-1. At a command prompt, go to your root SDK folder and run the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command to create a data action, as shown in the following example.
+- At a command prompt, go to your root software development kit (SDK) folder, and run the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command to create a data action, as shown in the following example.
 
     ```
     c:\repos\Msdyn365.Commerce.Online>yarn msdyn365 add-data-action get-product-reviews
