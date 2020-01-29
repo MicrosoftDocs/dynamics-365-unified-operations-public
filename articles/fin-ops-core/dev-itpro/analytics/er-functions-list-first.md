@@ -38,7 +38,7 @@ The `FIRST` function returns the first record of the specified list as a *Contai
 
 ## Syntax
 
-```
+```vb
 FIRST (list)
 ```
 
