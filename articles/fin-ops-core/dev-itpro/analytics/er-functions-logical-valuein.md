@@ -38,7 +38,7 @@ The `VALUEIN` function determines whether the specified input matches any value 
 
 ## Syntax
 
-```
+```vb
 VALUEIN (input, list, list item expression)
 ```
 
