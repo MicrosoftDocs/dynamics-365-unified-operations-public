@@ -69,7 +69,7 @@ yarn msdyn365 add-data-action getMyData
 yarn msdyn365 add-module <module-name>
 ```
 
-This command adds a module to the root/src/modules folder. Note that module names are case insensitive. 
+This command adds a module to the root/src/modules folder. Note that module names are case-insensitive. 
 
 **Example**
 
@@ -101,7 +101,7 @@ yarn msdyn365 add-theme spring-theme
 yarn msdyn365 add-view-extension <theme-name> <Module-name>
 ```
 
-This command adds a module view extension to the root/src/themes/<theme-name>/views folder. This allows the theme to add additional module definition items such as configs, resources and slots.
+This command adds a module view extension to the root/src/themes/\<theme-name\>/views folder. The theme can then add more module definition items, such as configurations, resources, and slots.
 
 **Example**
 
