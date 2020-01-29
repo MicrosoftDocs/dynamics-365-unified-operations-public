@@ -38,7 +38,7 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
-- **Auto-update:** Febraury 2020 
+- **Auto-update:** February 2020 
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index).
 
