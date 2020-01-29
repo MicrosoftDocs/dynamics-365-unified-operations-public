@@ -38,7 +38,7 @@ The `DATETODATETIME` function returns a *DateTime* value that is converted from 
 
 ## Syntax
 
-```
+```vb
 DATETODATETIME (date)
 ```
 
