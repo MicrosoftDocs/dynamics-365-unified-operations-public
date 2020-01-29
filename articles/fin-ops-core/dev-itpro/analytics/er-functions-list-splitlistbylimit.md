@@ -38,7 +38,7 @@ The `SPLITLISTBYLIMIT` function splits the specified list into a new list of sub
 
 ## Syntax
 
-```
+```vb
 SPLITLISTBYLIMIT (list, limit value, limit source)
 ```
 
