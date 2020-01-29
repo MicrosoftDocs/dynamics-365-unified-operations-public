@@ -6,7 +6,7 @@ title: What's new or changed in Finance and Operations apps home page
 description: This page points you to topics that can help you learn about the new features in the latest Finance and Operations applications.
 author: josaw1
 manager: AnnBe
-ms.date: 01/21/2020
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
