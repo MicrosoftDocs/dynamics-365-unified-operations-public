@@ -49,8 +49,11 @@ This procedure is intended for users who have the System administrator or Electr
 
     Note that the ‘Implementations’ prerequisites group has been added automatically at this stage. This group contains the prerequisite component that refers to the data model configuration and has the Implementation flag turned on. This flag indicates that the ‘Sample mapping’ mapping configuration is considered the implementation of the ‘Sample data model’ data model. This component will force ER to download the ‘Sample mapping’ mapping configuration from an ER repository whenever the ‘Sample data model’ model configuration is downloaded.   
 4. Click Edit.
-    * A single dependency of the current version of a configuration from a software component can be specified by using the definition of the component’s type, and either the component version or a range of component versions.  
-    * Desired dependencies can be grouped together. When the ‘All of’ grouping type is selected, the dependency condition of this group is considered satisfied when each dependency condition from this group and subordinate group is satisfied. When the ‘One of’ grouping type is selected, the dependency condition of this group is considered satisfied when at least one dependency condition from this group is satisfied.   
+
+    A single dependency of the current version of a configuration from a software component can be specified by using the definition of the component’s type, and either the component version or a range of component versions.  
+
+    Desired dependencies can be grouped together. When the ‘All of’ grouping type is selected, the dependency condition of this group is considered satisfied when each dependency condition from this group and subordinate group is satisfied. When the ‘One of’ grouping type is selected, the dependency condition of this group is considered satisfied when at least one dependency condition from this group is satisfied.
+    
 5. Click New.
 6. Select Product prerequisite component.
 7. Select Microsoft Dynamics 365 for Operations (1611).
@@ -125,7 +128,7 @@ This procedure is intended for users who have the System administrator or Electr
      Version 1.1 of this model mapping configuration has been uploaded to LCS by using the LCS project for the ER repository that was previously configured.   
 
 ## Evaluate ER configuration dependencies
-This following procedure deletes created configurations from the system and downloads them back from the LCS repository.  
+This following procedure deletes configurations from the system and downloads them back from the LCS repository.  
 1. In the tree, select 'Sample data model\Sample mapping'.
 2. Click Delete.
 3. Click Yes.
