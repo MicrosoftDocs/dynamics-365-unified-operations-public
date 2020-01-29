@@ -65,9 +65,11 @@ Go to the [Yarn site](https://yarnpkg.com), and download and install the latest 
 
 The Online SDK provides everything that you require to extend your online channel. It even lets you create new modules, data actions, and themes.
 
-The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development machine. The repo can be cloned using the following command:
+The SDK configuration package is available through the [Msdyn365.Commerce.Online GitHub repository (repo)](https://github.com/microsoft/Msdyn365.Commerce.Online). Download or clone the repo to a local folder on your development computer. To clone the repo, use the following command.
 
-```git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git```
+```
+git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
+```
 
 > [!NOTE]
 > The whole SDK and Store Starter Kit (SSK) won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
@@ -102,14 +104,14 @@ To run your Node app, follow these steps.
     c:\repos\Msdyn365.Commerce.Online>yarn start
     ```
 
-This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number ("4000" by default, but this can be changed in the .env file).
+This command can take up to a minute to run. When it's completed, you will see output that indicates that the server has been started. The output also shows the allocated port number (4000 by default, but you can change the value in the .env file).
 
 2. To test that your Node app is running correctly, open the following URLs in a web browser:
 
     * `https://localhost:4000/version`
     * `https://localhost:4000/_sdk/allmodules`
 
-3. To close the Node app, at the command prompt, press **Ctrl+c** two times.
+3. To close the Node app, at the command prompt, press **Ctrl+C** two times.
 
 ## Create a new module
 
@@ -123,7 +125,7 @@ This command can take up to a minute to run. It adds a new module under \\src\\m
 
 ## Clone an existing starter kit module
 
-Several of the available starter kit modules can be cloned, such as the carousel, content-block, or header modules. Cloned modules are copies of the module with new names, and will not get regular service updates as the starter kit modules do. Instead of cloning a module to make layout changes, you may wish to extend the views on the module.
+Several of the available starter kit modules can be cloned. These modules include the carousel, content-block, and header modules. A cloned module is a copy of the module and has a new name. Unlike the starter kit modules, cloned modules don't get regular service updates. Instead of cloning a module to make layout changes, you might want to extend the views on the module.
 
 For example, to modify the content-block module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
