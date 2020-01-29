@@ -51,7 +51,7 @@ To add configuration fields, you add an entry in the **config** section of the m
 
 In the following example of a module definition file, an **imageAlignment** configuration field has been added so that page authors can configure the alignment of an image inside a module. There are two enumeration (enum) options: **"Left"** (the default option) and **"Right"**.
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
@@ -93,7 +93,7 @@ The **config** section of the module definition file contains a list of all the 
 
 The following example shows how the various supported data types are used.
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Sample Config",
@@ -219,7 +219,7 @@ The following example shows how the various supported data types are used.
 
 The following example shows how to set a mock value for a new configuration field in the **mocks/MODULE\_NAME.json** file. Mock data is useful when a module is rendered in a local development environment.
 
-```
+```json
 {
     "id": "R1Module1",
     "config": {
@@ -296,6 +296,7 @@ class ProductFeature extends React.PureComponent <IProductFeatureProps<IProductF
 
 export default ProductFeature;
 ```
+
 ## Additional resources
 
 [Create a new module](create-new-module.md)
