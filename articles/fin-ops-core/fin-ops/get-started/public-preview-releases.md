@@ -5,7 +5,7 @@ title: Service update availability
 description: This topic provides information about the different release options.
 author: ShellyBakke
 manager: AnnBe
-ms.date: 01/24/2020
+ms.date: 01/28/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -69,7 +69,7 @@ Customers will be able to take up to 8 service updates per year and are required
 | 10.0.3 Platform update 27 | May 10, 2019                | June 14, 2019                     | Production starting:  July 1, 2019            | September 9, 2019 |
 | 10.0.4 Platform update 28 | June 7, 2019                | July 12, 2019                     | Production starting:  August 1, 2019          | October 14, 2019  |
 | 10.0.5 Platform update 29 | August 2, 2019              | September 13, 2019                | Production starting:  October 1, 2019         | December 2, 2019  |
-| 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting:  November 1, 2019        | January 13, 2019  |
+| 10.0.6 Platform update 30 | September 6, 2019           | October 11, 2019                  | Production starting:  November 1, 2019        | January 13, 2020  |
 | 10.0.7 Platform update 31 | October 25, 2019            | November 29, 2019                 | Production starting:  January 1, 2020         | March 9, 2020     |
 | 10.0.8 Platform update 32 | November 29, 2019           | January 17, 2020                  | Production starting:  February 1, 2020        | April 13, 2020    |
 | 10.0.9 Platform Update 33 | February 1, 2020           | March 13, 2020                    | Production starting:  April 1, 2020           | June 5, 2020      |
