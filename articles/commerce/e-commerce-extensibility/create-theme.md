@@ -91,7 +91,7 @@ Themes provide the ability to customize module view extensions. This customizati
 
 View extensions are stored under the **...\\src\\themes\\THEME\_NAME\\views** directory and follow a naming pattern that resembles the naming pattern for module views (**MODULE\_NAME.view.tsx**). For example, a view extension might be named **product-feature.view.tsx**. If a view extension exists in the selected theme, the React component will call it instead of the default view file. Therefore, view extensions can be written exactly like a module view that is used for a module.
 
-In general, you might want to examine the existing view file for one of the starter kit modules before you create a new view on it. You might even want to copy and paste additional code into the existing view file. To view the source code of a starter kit module view, open the **...\\node\_modules\@msdyn365-commerce-modules** directory, and look for the module that you're interested in. You might have to fix the file path references for relative path imports.
+In general, you might want to examine the existing view file for one of the starter kit modules before you create a new view on it. You might even want to copy and paste additional code into the existing view file. To view the source code of a starter kit module view, open the **...\\node\_modules\\@msdyn365-commerce-modules** directory, and look for the module that you're interested in. You might have to fix the file path references for relative path imports.
 
 ### Create a module view extension
 
@@ -220,7 +220,7 @@ If your .env file's **MSDyn365\_HOST** entry points to your production site, you
 
 ### Mock new configuration values in a theme
 
-If new configuration fields are added to a module in a theme, mock data can be added to the module's mock file. For example, if you modify a starter kit module's view and definition files, you can add new configuration mocks to the starter kit mock files that are under the **...\node_modules\@msdyn365-commerce-modules** directory in the starter kit module.
+If new configuration fields are added to a module in a theme, mock data can be added to the module's mock file. For example, if you modify a starter kit module's view and definition files, you can add new configuration mocks to the starter kit mock files that are under the **...\node_modules\\@msdyn365-commerce-modules** directory in the starter kit module.
 
 In a similar way, if you're mocking data for a custom module, you can add new mock data in the module's mock JSON file. Alternatively, you can create new mock files under the same module mock directory.
 
