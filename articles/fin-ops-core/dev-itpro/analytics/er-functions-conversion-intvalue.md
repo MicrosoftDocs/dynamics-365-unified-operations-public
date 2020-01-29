@@ -38,13 +38,13 @@ The `INTVALUE` function returns an *Int* value that represents the specified str
 
 ## Syntax 1
 
-```
+```vb
 INTVALUE (text)
 ```
 
 ## Syntax 2
 
-```
+```vb
 INTVALUE (number)
 ```
 
