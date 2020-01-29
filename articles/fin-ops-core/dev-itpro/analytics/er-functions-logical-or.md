@@ -38,7 +38,7 @@ The `OR` function returns a *Boolean* value of **FALSE** if all the specified co
 
 ## Syntax
 
-```
+```vb
 OR (condition 1[, condition 2, …, condition N])
 ```
 
