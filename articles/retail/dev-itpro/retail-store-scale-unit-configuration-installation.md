@@ -5,7 +5,7 @@ title: Configure and install Retail Store Scale Unit
 description: This topic explains how you can use self-service to configure Retail Store Scale Unit in Retail headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
-ms.date: 06/24/2019
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -163,7 +163,7 @@ To create a functioning Retail Store Scale Unit, complete the procedures in all 
 > [!NOTE]
 > If you will install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.
 
-Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../../fin-and-ops/get-started/system-requirements.md) are met. 
+Before you run the Retail Store Scale Unit installer, make sure that all [system requirements](../get-started/system-requirements.md) are met.
 
 > [!IMPORTANT]
 > If you are installing Retail Store Scale Unit for use with an on-premises environment, you must start it from a command line using administrator privileges as follows:
@@ -186,7 +186,7 @@ The Retail Store Scale Unit installer first extracts the associated files. It th
 2. The installer validates that all prerequisites are met. If a valid version of Microsoft SQL Server isn't found, the installer downloads and installs Microsoft SQL Server 2014 Express with Service Pack 2.
 
     > [!NOTE]
-    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2012, Service Pack 3 must be installed, at a minimum. For Microsoft SQL Server 2014, Service Pack 2 must be installed.
+    > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. For Microsoft SQL Server 2014, Service Pack 2 must be installed.  For Microsoft SQL Server 2016, Service Pack 1 is the minimum required.
     > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that tells all applications if a restart is required.  While it is recommended to restart prior to continuing the installation, a restart is not mandatory and the installer can continue without restarting the computer.
 
 3. Verify the URL for Application Object Server (AOS), and then select **Next**. (The AOS URL is the URL that is used to access Retail headquarters.)
