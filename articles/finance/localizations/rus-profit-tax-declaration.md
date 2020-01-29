@@ -1,3 +1,31 @@
+---
+# required metadata
+title: Profit tax declaration 
+description: This topic provides information about the profit tax declaration for Russia.
+author: anasyash
+manager: AnnBe
+ms.date: 01/29/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kfend
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Russia
+# ms.search.industry: 
+ms.author: anasyash
+ms.search.validFrom: 2020-01-29
+ms.dyn365.ops.version: 10.0.9
+
+---
+
 **Overview**
 
 This feature allows you to generate profit tax declaration in electronic format.
@@ -41,7 +69,7 @@ are available in the data package and configured in ER configuration:
 >   Lifecycle
 >   Services](https://docs.microsoft.com/en-us/dynamics365/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-1.  Upload the Data management package settings.
+2.  Upload the Data management package settings.
 
 >   The data package contains the following items:
 
@@ -69,22 +97,22 @@ are available in the data package and configured in ER configuration:
 
 -   After the data entities are uploaded, select **Import**.
 
-1.  Go to **General ledger \> Financial reports setup \> Financial reports**,
+3.  Go to **General ledger \> Financial reports setup \> Financial reports**,
     and validate the financial report that is imported. (All the data that is
     imported is presented only in the Russian language.)
 
 | **Report**             | **Report code** | **Description**             |
 |------------------------|-----------------|-----------------------------|
-| Profit tax declaration | Прибыль         | Бухгалтерский баланс (2016) |
+| Profit tax declaration | Прибыль  (2019)        | Декларация по налогу на прибыль (2019) |
 
-2.  Set up financial report cell operations for the financial reports that are
+4.  Set up financial report cell operations for the financial reports that are
     imported. Set up all required cells.
 
 >   For more information about how to set up financial reports for Russia, see
 >   [Financial reporting
 >   (Russia)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-financial-reports).
 
-1.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
+5.  Go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic
     messages**, and validate the electronic message processing that is imported.
     (Most of the data that is imported is presented in the Russian language.)
 
@@ -92,7 +120,7 @@ are available in the data package and configured in ER configuration:
 |------------------------|---------------------|----------------------------------------|
 | Profit tax declaration | НалПриб 5.08 (2019) | Декларация по налогу на прибыль (2019) |
 
-2.  Set up the reference information that is used in the profit tax declaration.
+6.  Set up the reference information that is used in the profit tax declaration.
 
     -   Go to **Tax \> Setup \> Electronic messages \> Additional fields**.
 
@@ -115,7 +143,7 @@ are available in the data package and configured in ER configuration:
 -   On the **Message additional fields** FastTab, select default values for the
     fields.
 
-1.  Set up the ER format that is run when profit tax declaration is generated in
+7.  Set up the ER format that is run when profit tax declaration is generated in
     electronic format.
 
     -   Go to **Tax \> Setup \> Electronic messages \> Message processing
@@ -153,8 +181,8 @@ are available in the data package and configured in ER configuration:
 
 | **Field name**   | **Description**             | **Field value**                                                                                                                                                                                                                    |
 |------------------|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CorrectionNumber | Номер коррекции             | Enter the number of the correction for corrective declaration.                                                                                                                                                                     |
-| ReportingDate    | Отчетная дата для коррекции | Enter the reporting date for corrective declaration. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
+| **CorrectionNumber** | **Номер коррекции**             | Enter the number of the correction for corrective declaration.                                                                                                                                                                     |
+| **ReportingDate**    | **Отчетная дата для коррекции** | Enter the reporting date for corrective declaration. (The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period.) |
 
 6.  On the **Messages** FastTab, select **Update status**. Then, in the **Run
     processing** dialog box, select **OK**.
@@ -168,11 +196,11 @@ are available in the data package and configured in ER configuration:
 
 | **Field**                                                        | **Description**                                                                                                            |
 |------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Signatory type                                                   | Specify who signs the profit tax declaration. Select either **Taxpayer** or **Representative**.                            |
-| Signatory first name, Signatory middle name, Signatory last name | Enter the full name of the signatory.                                                                                      |
-| Representative document                                          | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority. |
-| Correction number                                                | Enter the number of the correction, if you didn't specify it in step 5.                                                    |
-| Reporting date                                                   | Enter the reporting date, if you didn't specify it in step 5.                                                              |
+| **Signatory type**                                                   | Specify who signs the profit tax declaration. Select either **Taxpayer** or **Representative**.                            |
+| **Signatory first name**, **Signatory middle name**, **Signatory last name** | Enter the full name of the signatory.                                                                                      |
+| **Representative document**                                          | If you selected **Representative** as the signatory type, enter the document that confirms the representative's authority. |
+| **Correction number**                                                | Enter the number of the correction, if you didn't specify it in step 5.                                                    |
+| **Reporting date**                                                   | Enter the reporting date, if you didn't specify it in step 5.                                                              |
 
 10. Select **OK**. When the report is generated, the status of the message is
     changed to **Generated**. If an error occurs while the report is generated,
