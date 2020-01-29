@@ -24,7 +24,7 @@ ms.custom: 62673
 ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 

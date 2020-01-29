@@ -69,6 +69,8 @@ The following scenarios are covered by the fiscal printer integration sample for
         - Print a fiscal receipt for the pickup operation for a customer order.
         - Print a fiscal receipt for a return order.
 
+    - Print the [customer information](emea-pol-customer-information.md) that is specified for a sales transaction on a fiscal receipt. An example of this information is the customer's VAT number.
+
 - End of day statements (fiscal X and fiscal Z reports).
 - Error handling, such as the following options:
 

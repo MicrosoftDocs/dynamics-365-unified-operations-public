@@ -31,9 +31,9 @@ ms.dyn365.ops.version: 10.0.8
 ---
 
 # Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
-<!-----------I want marketing and Fraud protection to review this.-------------->
+
 [!include [banner](../includes/preview-banner.md)]
-[!include [banner](../includes/banner.md)]
+
 
 This topic describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
 

@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 In Italy, companies must often issue *accompanying invoices*. Accompanying invoices are combinations of an ordinary invoice and a transport document or packing slip (documento di trasporto, or DDT).
 
 ## Prerequisites
