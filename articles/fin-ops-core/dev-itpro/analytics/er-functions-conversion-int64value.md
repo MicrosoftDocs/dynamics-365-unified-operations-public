@@ -38,13 +38,13 @@ The `INT64VALUE` function returns an *Int64* value that represents the specified
 
 ## Syntax 1
 
-```
+```vb
 INT64VALUE (text)
 ```
 
 ## Syntax 2
 
-```
+```vb
 INT64VALUE (number)
 ```
 
