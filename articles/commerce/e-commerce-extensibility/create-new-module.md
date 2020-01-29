@@ -43,7 +43,7 @@ To create a new module in Commerce, the online Software Development Kit (SDK) pr
 
 ## Example
 
-The following example shows how to create a module that is named product-feature.
+The following example shows how to create a module that is named **product-feature**.
 
 ```
 yarn msdyn365 add-module product-feature
@@ -67,7 +67,7 @@ To preview the new module in a local web browser, follow these steps.
 
 ## Module naming conventions
 
-Module names are not case sensitive. It is recommended that you use whole words whenever you can for module names.
+Module names are case-insensitive. We recommended that you use whole words for module names whenever you can.
 
 ## Additional resources
 
