@@ -78,7 +78,7 @@ To specify how documents that an ER format generates are routed, you must config
 
 Review the code of the **insertFile()** method of the **ERDocuManagement** class. Notice that the **AttachingFile()** event is raised while the generated file is attached to a record.
 
-```
+```xml
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -139,7 +139,7 @@ The **AttachingFile()** event is raised when the following ER destinations are p
     1. Store generated files in a folder of the local file system of the server that runs the Application Object Server (AOS) service.
     2. Store these generated files only when the new document type (for example, the **FileX** type that has the "(LOCAL)" keyword in its name) is used while a file is attached to the record in the ER execution job log.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()
