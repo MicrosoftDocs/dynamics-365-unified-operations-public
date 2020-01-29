@@ -38,7 +38,7 @@ The `LOWER` function returns the specified text string as a *String* value after
 
 ## Syntax
 
-```
+```vb
 LOWER (text)
 ```
 
