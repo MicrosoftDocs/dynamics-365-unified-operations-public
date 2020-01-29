@@ -38,7 +38,7 @@ The `NUMBERVALUE` function returns a *Real* value that is converted from the spe
 
 ## Syntax
 
-```
+```vb
 NUMBERVALUE (text, decimal separator, digit grouping separator)
 ```
 
