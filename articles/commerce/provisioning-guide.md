@@ -56,6 +56,7 @@ If you have any questions about the provisioning steps, or if you encounter any 
 The following prerequisites must be in place before you can provision your Commerce preview environment:
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
+- You are existing Microsoft Dynamics 365 partner or customer and are able to create Dynamics 365 Retail project.
 - You've been accepted into the Dynamics 365 Commerce Preview program.
 - You have the required permissions to create a project for **Prospective presales** or **Migrate, create solutions, and learn**.
 - You're a member of the **Environment manager** or **Project owner** role in the project where you will provision the environment.
