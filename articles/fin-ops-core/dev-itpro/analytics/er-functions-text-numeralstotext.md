@@ -38,7 +38,7 @@ The `NUMERALSTOTEXT` function returns the specified number as a *String* value a
 
 ## Syntax
 
-```
+```vb
 NUMERALSTOTEXT (number, language, currency, print currency name flag, decimal points)
 ```
 
