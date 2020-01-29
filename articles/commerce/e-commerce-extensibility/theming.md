@@ -37,11 +37,11 @@ This topic presents an overview of online site theming in Microsoft Dynamics 365
 
 ## Overview
 
-Dynamics 365 Commerce lets you apply a theme to your entire online site, individual templates, or individual pages. For example, you might have a default theme that is set for the entire online site and also a campaign theme that is applied only to a subset of pages on the site. 
+Dynamics 365 Commerce lets you apply a theme to your whole online site, individual templates, or individual pages. For example, you might have a default theme that is set for the whole online site and a campaign theme that is applied to just a subset of the pages on the site. 
 
-Themes include Sassy Cascading Style Sheets (SCSS) files to format your site pages and modules, and optionally may also contain module view and definition extensions allowing modules to render different views based on the theme selected. 
+Themes include Sassy Cascading Style Sheets (SCSS) files that you can use to format your site pages and modules. They can optionally also contain module view and definition extensions, so that modules can render different views, depending on the theme that is selected. 
 
-After a theme is created and uploaded to your production site, the Site Builder tool can be used to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied so that all the modules on that page have a consistent look and feel. The Site Builder tool also allows additional CSS overrides to be uploaded to make changes on top of a selected theme if needed.
+After a theme is created and uploaded to your production site, you can use the Site Builder tool to set the theme for the site. You can set the site's theme in a template, in a layout, or on a single page. When an online page is rendered, the appropriate theme is applied, so that all the modules on that page have a consistent look and feel. The Site Builder tool also lets you upload additional CSS overrides. In that way, you can make changes on top of the selected theme.
 
 The following illustration shows how a theme is selected for a page in Dynamics 365 Commerce. Notice that the page container (**Default page**) is selected, and the **Theme** field for the page appears in the properties pane on the right.
 
@@ -54,13 +54,13 @@ A theme can be set on the master page in a similar manner. In this case, the the
 - There is no limit to the number of SCSS files that your theme can contain.
 - Your theme entry point can import other SCSS files by using relative paths.
 - Starter kit modules are built by using Bootstrap 4 classes. Therefore, we recommend that every theme include either Bootstrap 4 or Bootstrap 4 RTL as the  SCSS framework.
-- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **font-awesome** in a SCSS file:
+- If you want to take advantage of starter kit modules that are built by using Font Awesome glyph icons, **font-awesome** should be included in the SCSS file. The following example shows how to include **font-awesome** in an SCSS file.
 
-```
-$fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
-@import "bootstrap/scss/bootstrap";
-...
-```
+    ```
+    $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
+    @import "bootstrap/scss/bootstrap";
+    ...
+    ```
 
 ## Consume SCSS files that are distributed by using Node Package Manager
 
@@ -83,11 +83,11 @@ This section shows the recommended structure for any custom theme.
 Import or define the following items:
 
 - Fonts and glyph icons
-- Mixins and functions:
+- Mix-ins and functions:
 
     - **Bootstrap:** Dependencies, excluding components and utilities
     - **Shared components:** Dependencies, excluding components and utilities
-    - Custom theme mixins and functions
+    - Custom theme mix-ins and functions
 
 - Theme variables:
 
@@ -109,7 +109,7 @@ For every module, a class name is defined that matches the module name. In this 
 
 ## Custom themes
 
-Custom themes can be created using the Dynamics 365 Commerce online software development kit (SDK) and stored within the **/src/themes/** folder.  For more information, see [Create a theme](create-theme.md).
+Custom themes can be created by using the Dynamics 365 Commerce online SDK. They can then be stored in the **/src/themes/** folder. For more information, see [Create a theme](create-theme.md).
 
 ## Additional resources
 
