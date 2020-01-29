@@ -38,7 +38,7 @@ The `IF` function returns the first specified value if the specified condition i
 
 ## Syntax
 
-```
+```vb
 IF (condition, first value, second value) as any of the supported data types
 ```
 
