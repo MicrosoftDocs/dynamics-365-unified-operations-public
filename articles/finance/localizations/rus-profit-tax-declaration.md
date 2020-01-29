@@ -73,12 +73,12 @@ are available in the data package and configured in ER configuration:
 
 >   The data package contains the following items:
 
--   Financial report and financial report cells for the profit tax declaration
+> -   Financial report and financial report cells for the profit tax declaration
 
--   Electronic message settings for generating profit tax declaration in
+> -   Electronic message settings for generating profit tax declaration in
     electronic format.
 
->   Follow these steps:
+   Follow these steps:
 
 -   In the LCS Shared asset library, select **Data package** as the asset type.
 
