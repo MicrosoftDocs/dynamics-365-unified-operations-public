@@ -38,7 +38,7 @@ The `CASE` function evaluates the value of the specified expression against the 
 
 ## Syntax
 
-```
+```vb
 CASE (expression, option 1, result 1[, option 2, result 2, …, option N, result N, default result])
 ```
 
