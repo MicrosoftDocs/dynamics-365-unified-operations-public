@@ -1,49 +1,84 @@
+---
+# required metadata
+
+title: Location directive inventory picking aging
+description: Learn how to use FIFO (first in, first out) and LIFO (last in, first out) location directive strategies during picking. 
+author: mirzaab
+manager: AnnBe
+ms.date: 02/01/2020
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:  [Operations AOT form name to tie this topic to]
+audience: Application User
+# ms.devlang: 
+ms.reviewer: kamaybac
+ms.search.scope:  Retail, Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.search.region: Global
+# ms.search.industry: [leave blank for most, retail, public sector]
+ms.author: mirzaab
+ms.search.validFrom: 2020-02-01
+ms.dyn365.ops.version: Release 10.0.8
+---
+
 # Location directive inventory picking aging
 
-# Released in version 10.0.2
-#
-# About
+Read this topic to learn how to use FIFO (first in, first out) and LIFO (last in, first out) location directive strategies during picking. These strategies work in conjunction with aging dates recorded for locations and license plates to track when inventory first entered the warehouse.
 
-Two new location directive strategies are introduced to be used in picking: FIFO (First In First Out) and LIFO (Last In First Out). These work in conjunction with aging date fields on the location and license plate to track when inventory first entered the warehouse.
+You can use these strategies to ship both batch and non-batch tracked items based on when the inventory entered the warehouse. This can be especially useful for non-batch tracked inventory where an expiration date is not available for use in sorting.
 
-These strategies can be used for both batch and non-batch tracked items, to ship items to customers based on when the inventory entered the warehouse. This can be especially useful for non-batch tracked inventory where an expiration date is not available to use for sorting.
+When inventory is first received/created in the warehouse, the system updates the relevant license plate to show the current date as the aging date. This date is then used by the location directive strategies to identify the oldest or youngest inventory in the warehouse. If inventory is moved to a location that isn't tracked by license plate, the location itself is updated with aging information, which will then be used by these strategies.
 
-When inventory in first received/created in the warehouse, the license plate is updated with the current date populated as the aging date. This date is then used by the strategies to determine what is the oldest/youngest inventory in the warehouse. If inventory is moved to a non-license plate tracked location, the location itself is updated with an aging, which will also be used by the strategies.
+> [!NOTE]
+> This feature requires the following:
+> 
+> - The warehouse location status feature must be enabled.
+> - The location profiles used to store inventory must have location status enabled (as it is for the FLOOR-05 location in the demo data).
+> - You must run a consistency check to ensure the data is accurate.
 
-Note: This features requires the warehouse location status feature be enabled, the location profiles used to store inventory have location status enabled (in demo data for this demo FLOOR-05), and the consistency check run so that the data is accurate.
+## Demo prerequisites
 
-# Location aging FIFO
+This remainder of this topic provides examples for how to set up and use FIFO and LIFO strategies based on the demo data provided for the **USMF** legal entity. To work through these demos, you must be on a system with the demo data installed, and you must select the **USMF** legal entity before you begin.
 
-The Location aging FIFO location directive strategy will allocate based on aging date, finding the location containing the oldest aging date.
+## Demo 1: Set up and use FIFO location aging
 
-## Setup
+The location aging FIFO strategy finds the location that contains the oldest aging date and allocates picking based on that.
 
-Navigate to _Warehouse management - Setup_ _-_ _Location directives_ and select 63 Pick containerization. In the Location Directive Actions FastTab, change the strategy for Sequence 1 from &#39;None&#39; to &#39;Location aging FIFO.&#39; Click on Edit query in the Location Directive Actions grid and add a Range for Locations – Zone ID = FLOOR.
+### Set up the FIFO demo
+
+
+Navigate to _Warehouse management - Setup_ _-_ _Location directives_ and select 63 Pick containerization. In the Location Directive Actions FastTab, change the strategy for Sequence 1 from "None" to "Location aging FIFO." Click on Edit query in the Location Directive Actions grid and add a Range for Locations – Zone ID = FLOOR.
 
 On the mobile device, login to warehouse 63, and navigate to _Quality - Scrap._ Enter LP 63\_1 and click OK to adjust out the license plate.
 
 This will leave inventory in two locations. FL-001 has an aging date of 4/15/2017, while FL-002 has an aging date of  1/29/2017. Both locations contain item A0001.
 
-## Process
+### Create picking work based on the FIFO strategy
 
 Navigate to _Sales and marketing - Sales order - All sales orders_ and create a new order. Specify Customer account = US-001 and Warehouse = 63. Add a line to the order and specify item A0001, quantity 1 pcs.
 
 Reserve the order line and release to warehouse.
 
-Click on &#39;Work details&#39; in the Warehouse dropdown of the Sales order lines action bar. Notice that the pick location for the work is FL-002, as this is the location containing the license plate with the oldest aging date.
+Click on "Work details" in the Warehouse dropdown of the Sales order lines action bar. Notice that the pick location for the work is FL-002, as this is the location containing the license plate with the oldest aging date.
 
-# Location aging LIFO
+## Demo 2: Set up and use LIFO location aging
 
-The Location aging LIFO location directive strategy will allocate based on aging date, finding the location containing the newest aging date.
+The location aging LIFO strategy finds the location that contains the newest aging date and allocates picking based on that.
 
-## Setup
+### Set up the LIFO demo
 
 Cancel the work created for the FIFO example.
 
-Navigate to _Warehouse management - Setup - Location directives_ and select 63 Pick Containerization. In the Location Directive Actions FastTab, change the strategy for sequence 1 from &#39;Location aging FIFO&#39; to &#39;Location aging LIFO.&#39;
+Navigate to _Warehouse management - Setup - Location directives_ and select 63 Pick Containerization. In the Location Directive Actions FastTab, change the strategy for sequence 1 from "Location aging FIFO" to "Location aging LIFO."
 
-## Process
+### Create picking work based on the LIFO strategy
 
-Navigate to _Warehouse management - Outbound waves -  Shipment waves - All waves_ and select the wave containing the order created previously. Click on &#39;Process&#39; in the WAVE – WAVE section of the ribbon.
+Navigate to _Warehouse management - Outbound waves -  Shipment waves - All waves_ and select the wave containing the order created previously. Click on "Process" in the WAVE – WAVE section of the ribbon.
 
-Click on &#39;Work&#39; in the WAVE – RELATED INFORMATION section of the ribbon. Notice that the pick location of the work is FL-001, as that is the location containing the license plate with the newest aging date.
+Click on "Work" in the WAVE – RELATED INFORMATION section of the ribbon. Notice that the pick location of the work is FL-001, as that is the location containing the license plate with the newest aging date.
