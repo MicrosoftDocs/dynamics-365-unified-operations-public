@@ -38,7 +38,7 @@ The `ADDDAYS` function calculates a *DateTime* value that is the specified numbe
 
 ## Syntax
 
-```
+```vb
 ADDDAYS (datetime, days)
 ```
 
