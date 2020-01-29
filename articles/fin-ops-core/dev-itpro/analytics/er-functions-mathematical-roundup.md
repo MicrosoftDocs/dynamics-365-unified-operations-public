@@ -38,7 +38,7 @@ The `ROUNDUP` function returns the specified number as a *Real* value after it h
 
 ## Syntax
 
-```
+```vb
 ROUNDDOWN (number, decimals)
 ```
 
