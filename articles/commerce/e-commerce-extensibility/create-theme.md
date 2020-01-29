@@ -55,7 +55,7 @@ For example, to create a new theme that is named **spring**, follow these steps.
 
 The following example shows a theme file that pulls in Bootstrap and FontAwesome dependencies.
 
-```
+```css
 $fa-font-path: 'https://use.fontawesome.com/releases/v5.2.0/webfonts' !default;
 @import "bootstrap/scss/bootstrap";
 body {
