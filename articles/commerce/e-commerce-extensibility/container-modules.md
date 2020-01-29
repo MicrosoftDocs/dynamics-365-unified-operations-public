@@ -41,7 +41,7 @@ Configuration settings can also be exposed to page authors. In this way, page au
 
 Container modules are created just like regular modules. However, in the MODULE\_NAME.definition.json file, you must change the **$type** value as shown in the following example.
 
-```
+```json
 "$type": "containerModule"
 ```
 
