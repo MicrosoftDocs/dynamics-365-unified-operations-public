@@ -49,28 +49,28 @@ The following example shows a module mock data file that is used to mock the **c
 
 ```json
 {
-	"id": "R1Module1",
-	"config": {
-	  "imageAlignment": "left",
-	  "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-	  "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-	  "productImage": {
-		"src": "https://bit.ly/33cMGxr",
-		"altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+	  "id": "R1Module1",
+	  "config": {
+	      "imageAlignment": "left",
+	      "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+	      "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+	      "productImage": {
+		        "src": "https://bit.ly/33cMGxr",
+		        "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+	      },
+	      "buttonText": "Buy Now",
+	      "productIds": "68719498121"
 	  },
-	  "buttonText": "Buy Now",
-	  "productIds": "68719498121"
-	},
-	"data": {
-	  "actionResponse": {
-		"text": "Sample Action Response"
-	  }
-	},
-	"typeName": "product-feature"
+	  "data": {
+	      "actionResponse": {
+		        "text": "Sample Action Response"
+	      }
+	  },
+	  "typeName": "product-feature"
 } 
 ```
 
-The following example shows how to mock the data for a core data action that returns a SimpleProduct type.
+The following example shows how to mock the data for a core data action that returns a **SimpleProduct** type.
 
 ```
 [
