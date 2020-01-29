@@ -84,7 +84,7 @@ To download the SDK dependency packages, follow these steps.
     > [!IMPORTANT]
     > This step should be done after you've completed any update to the packages.json file.
 
-    ```
+    ```console
     c:\repos\MyEcommerceSite>yarn
     ```
 
@@ -96,7 +96,7 @@ To run your Node app, follow these steps.
 
 1. Run the **yarn start** command to open the Node app.
 
-    ```
+    ```console
     c:\repos\MyEcommerceSite>yarn start
     ```
 
@@ -113,7 +113,7 @@ This command can take up to a minute to run. When it's completed, you will see o
 
 To add a new module that is named **campaignBanner**, run the **yarn msdyn365 add-module MODULE\_NAME** command. Here is an example.
 
-```
+```console
 c:\repos\MyEcommerceSite>yarn msdyn365 add-module campaignBanner
 ```
 
@@ -125,7 +125,7 @@ Several of the available core modules can be cloned, such as the alert, banner, 
 
 For example, to modify the hero module, run the **yarn msdyn365 clone STARTER\_KIT\_MODULE\_NAME NEW\_MODULE\_NAME** command to pull down the source code. Here is an example.
 
-```
+```console
 c:\repos\MyEcommerceSite>yarn msdyn365 clone hero heroExtended
 ```
 
@@ -137,7 +137,7 @@ To preview a specific module (for example, campaignBanner) in a local web browse
 
 1. At a command prompt, open your Node app by running the **yarn start** command.
 
-    ```
+    ```console
     c:\repos\MyEcommerceSite>yarn start
     ```
 
