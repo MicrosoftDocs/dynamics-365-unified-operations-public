@@ -47,20 +47,20 @@ Here is an example of a mock file.
 {
 	"id": "R1Module1",
 	"config": {
-	  "imageAlignment": "left",
-	  "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-	  "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-	  "productImage": {
-		"src": "https://bit.ly/33cMGxr",
-		"altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
-	  },
-	  "buttonText": "Buy Now",
-	  "productIds": "68719498121"
+	    "imageAlignment": "left",
+	    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+	    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+	    "productImage": {
+		    "src": "https://bit.ly/33cMGxr",
+		    "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+	    },
+	    "buttonText": "Buy Now",
+	    "productIds": "68719498121"
 	},
 	"data": {
-	  "actionResponse": {
-		"text": "Sample Action Response"
-	  }
+	    "actionResponse": {
+		    "text": "Sample Action Response"
+	    }
 	},
 	"typeName": "product-feature"
 } 
