@@ -1027,8 +1027,6 @@
           href: inventory/tasks/trace-item-or-raw-material.md
         - name: Merge inventory batch
           href: inventory/merge-inventory-batches.md
-        - name: Flexible warehouse-level dimension reservation policy
-          href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Correct inventory tracking information
           href: inventory/tasks/correct-inventory-tracking-information.md
         - name: Register serial number in the sales process
@@ -2301,6 +2299,10 @@
           href: warehousing/mobile-barcode-support.md
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
+      - name: Reservations in warehouse management
+        items:
+        - name: Flexible warehouse-level dimension reservation policy
+          href: warehousing/flexible-warehouse-level-dimension-reservation.md
       - name: Warehouse work policies
         items:
         - name: Warehouse work policies overview
