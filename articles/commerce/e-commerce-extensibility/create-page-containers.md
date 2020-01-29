@@ -45,7 +45,7 @@ Like layout container modules, page container modules can define *named slots* t
 
 The Microsoft Dynamics 365 Commerce online software development kit (SDK) provides a **yarn msdyn365 add-module MODULE\_NAME** command-line interface (CLI) command. To create a page container module, you use this command to create a new module, and then change the **$type** value to **pageModule**.
 
-For example, run the following command to create a module that is named **campaign-page-container**:
+For example, run the following command to create a module that is named **campaign-page-container**.
 
 ```
 yarn msdyn365 add-module campaign-page-container
@@ -53,7 +53,7 @@ yarn msdyn365 add-module campaign-page-container
 
 Then open the definition file for the new module, **campaign-page-container.definition.json**, and change the **$type** value to **pageModule**.
 
-In the following example, notice that the **slots** section contains the various named slots that the page container supports. To restrict a slot so that onlt a specific set of modules can be put into it, use the **"allowedTypes"** array to define the list of allowed modules. Alternatively, use an asterisk (\*) to allow any module to be put into the slot.
+In the following example, notice that the **slots** section contains the various named slots that the page container supports. To restrict a slot so that only a specific set of modules can be put into it, use the **"allowedTypes"** array to define the list of allowed modules. Alternatively, use an asterisk (\*) to allow any module to be put into the slot.
 
 ```
 {
@@ -95,7 +95,7 @@ In the following example, notice that the **slots** section contains the various
 
 In the **MODULE\_NAME.tsx** view file, you can define the HTML structure for the slots on the page.
 
-The following example shows a snippet from a react view file (**campaign-page-container.view.tsx**) that takes advantage of the slots for the container.
+The following example shows an excerpt from a react view file (campaign-page-container.view.tsx) that takes advantage of the slots for the container.
 
 ```
 ...
