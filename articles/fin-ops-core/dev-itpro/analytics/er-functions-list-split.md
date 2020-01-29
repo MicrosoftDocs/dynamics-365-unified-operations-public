@@ -38,14 +38,14 @@ The `SPLIT` function splits the specified input string into substrings and retur
 
 ## Syntax 1
 
-```
+```vb
 SPLIT (input, length)
 ```
 
 This syntax is used to split the specified input string into substrings, each of which has the specified length.
 
 ## Syntax 2
-
+vb
 ```
 SPLIT (input, delimiter)
 ```
