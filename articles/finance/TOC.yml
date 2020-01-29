@@ -492,7 +492,7 @@
         href: cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
-        - name: Advanced bank reconciliation setup tasks
+        - name: Advanced bank reconciliation setup process
           href: cash-bank-management/configure-advanced-bank-reconciliation.md
         - name: Set up the advanced bank reconciliation import process
           href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
