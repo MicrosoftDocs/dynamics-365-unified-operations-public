@@ -38,7 +38,7 @@ The `SPLITLIST` function splits the specified list into sublists (or batches), e
 
 ## Syntax
 
-```
+```vb
 SPLITLIST (list, number)
 ```
 
