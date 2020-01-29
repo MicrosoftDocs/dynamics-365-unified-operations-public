@@ -89,8 +89,9 @@ You can define when the weight is captured for sales and transfer order processi
 - **Packing** – The weight is captured during manual packing. (You must send the items to a packing station.)
 
 If the actual weight is captured at the packing station during the container packing processes, warehouse workers aren't prompted to capture the weight during picking work. Instead, the average weight of the physical inventory is used as the weight of the picked inventory that goes to the packing area. This concept also applies to catch weight items that are tracked by tags. For tag-tracked items, these parameters determine when the tag is captured. The tag can be captured either at picking time by using the mobile device or during manual packing.
+
 > [!NOTE]
-> Since inventory is updated with the average picked weight when the Packing option is chosen, this could trigger a discrepancy that could cause a catch weight profit/loss adjustment and/or a difference between on-hand inventory weight and catch weight tag weight.
+> Because the **Packing** option causes inventory to be updated with the average picked weight, this could trigger a discrepancy that could cause a catch weight profit/loss adjustment and/or a difference between on-hand inventory weight and catch weight tag weight.
 
 For internal warehouse management processes such as counting and adjustment corrections, you can define whether the weight should be captured. If it isn't captured, the nominal weight is used. Other options let you capture weight per catch weight unit and per counting quantity.
 
@@ -158,7 +159,7 @@ Not all workflows support catch weight product processing with warehouse managem
 ### Inbound warehouse processing
 
 - Receiving license plates requires that weights be assigned during registration, because weight information isn't supported as part of the advance ship notice. When catch weight tag processes are used, the tag number must be manually assigned per catch weight unit.
-- Inbound quality check work is not supported for catch weight products. If configured, the quality check work is skipped.
+- Inbound quality check work isn't supported for catch weight products. If configured, the quality check work will be skipped.
 
 ### Inventory and warehouse operations
 
@@ -174,7 +175,7 @@ Not all workflows support catch weight product processing with warehouse managem
 - The functionality for cluster picking isn't supported for catch weight products.
 - Pick and pack warehouse processing isn't supported for catch weight products.
 - For catch weight products, work that is defined in a work template can be run automatically.
-- For catch weight products, manual packing station processing where packed container picking work is created after containers are closed isn't supported.
+- For catch weight products, the system doesn't support manual packing station processing where packed container picking work is created after containers are closed.
 - The functionality for pcs-by-pcs scanning isn't supported for catch weight products.
 
 ### Production processing
@@ -204,8 +205,8 @@ A catch weight tag can be created by using a warehousing app process, it can be 
 
 In addition to the restrictions that currently apply for catch weight products, tagged catch weight products have other restrictions that currently apply.
 
-- All manual updates to inventory (that is, updates that aren't done by using a mobile device) must include corresponding manual updates to the associated catch weight tags, because these updates aren't done automatically. For example, manual adjustment journals will update inventory but not the associated catch weight tags.
--	Replenishment moves average weight and Catch weight tags will need to be updated manually to reflect the replenishment work.
+- All manual updates to inventory (that is, updates that aren't done using a mobile device) must include corresponding manual updates to the associated catch weight tags because these updates aren't done automatically. For example, manual adjustment journals will update inventory but not the associated catch weight tags.
+- Replenishment moves average weight and catch weight tags must be updated manually to reflect the replenishment work.
 - Mixed licensing place receiving isn't currently supported for tagged catch weight items.
 - The processing of sales return order receiving can record catch weight tags. However, the process doesn't validate that the returned tag is the same tag that was originally shipped for a sales order.
 - The mobile device menu item that has the **Register material consumption** activity code doesn't currently support recording catch weight tags.
