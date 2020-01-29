@@ -214,7 +214,7 @@
         items:
         - name: Accounts payable invoice matching overview
           href: accounts-payable/accounts-payable-invoice-matching.md
-        - name: Set up accounts payable invoice matching validation
+        - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
