@@ -324,7 +324,7 @@
         href: accounts-receivable/customer-posting-profiles.md
       - name: SEPA direct debit overview
         href: accounts-receivable/sepa-direct-debit-overview.md
-      - name: SEPA direct debit mandate
+      - name: Set up SEPA direct debit mandate
         href: accounts-receivable/sepa-direct-debit-mandate.md
       - name: Credit card setup, authorization, and capture
         href: accounts-receivable/credit-card-authorizations.md
