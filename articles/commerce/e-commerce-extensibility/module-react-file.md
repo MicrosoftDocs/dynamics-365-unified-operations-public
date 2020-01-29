@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module React component file
-description: This topic covers the module React component file in Microsoft Dynamics 365 Commerce. 
+description: This topic provides information about the module React component file in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 manager: annbe
 ms.date: 01/21/2020
@@ -33,11 +33,11 @@ ms.dyn365.ops.version: Release 10.0.8
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-This topic covers the module React component file in Microsoft Dynamics 365 Commerce.
+This topic provides information about the module React component file in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-The module React component file is a TypeScript file that includes a that controls a module's view. The React **render()** method renders HTML for the module.
+The module React component file is a TypeScript (.ts) file that includes a that controls a module's view. The React **render()** method renders HTML for the module.
 
 ## Example 
 
@@ -68,7 +68,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
         const {
             config,
             resources
-         } = this.props;
+        } = this.props;
 
         const Title = config.title;
         const ResourceKey = resources.resourceKey;
