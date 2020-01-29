@@ -153,40 +153,42 @@ interface IRequestContext {
 }
 ```
 
-## Test a module with authenticated signed-in state
+## Test a module that has an authenticated signed-in state
 
-Some modules may require the state to be "signed-in." To test these modules, a test page mock can be created with user authentication information.
+Some modules might require that the state be **signed-in**. To test these modules, you can create a test page mock that has user authentication information.
 
 To get started, follow these steps.
 
-1. Load the e-Commerce web page you are working on and sign in or create a new account.
-1. Open up the web browser debugging tools. For example, when using Google Chrome enable the developer tools with the F12 key. 
-1. Type `___initialData___.requestContext.user` into console to get the user info. (User info is available in the Global JS variable `___initialData___.requestContext.user`.)
-1. Add the module to be tested into a page mock.
-1. Inside the **renderingContext** section of the page mock, add the **userContext** section below. 
-1. Update user information taken from the web browser debugging tools.
+1. Load the e-Commerce webpage that you're working on, and sign in or create a new account.
+1. Open your web browser's debugging tools. For example, if you're using Google Chrome, you can open the developer tools by pressing the **F12** key. 
+1. Enter **\_\_\_initialData\_\_\_.requestContext.user** in the console to get the user information. (User information is available in the **\_\_\_initialData\_\_\_.requestContext.user** global JavaScript variable.)
+1. Add the module that must be tested to a page mock.
+1. In the **renderingContext** section of the page mock, add the following **userContext** section. 
 
-```
-"userContext": {
-    "token": "<TOKEN>",
-    "isAuthenticated": true,
-    "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
-    "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
-    "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
-    "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
-    "signinName": "<User Name>",
-    "firstName": "<User First Name>",
-    "lastName": "<User Last Name>",
-    "tenantId": "",
-    "customerAccountNumber": "<User Account Number(HQ)>",
-     "name": "<User Name>",
-     "emailAddress": "<User Email Address>"
-},
-```
+    ```
+    "userContext": {
+        "token": "<TOKEN>",
+        "isAuthenticated": true,
+        "signInUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signin",
+        "signOutUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signout",
+        "signUpUrl": "https://dev.fabrikam.com/fedev/_msdyn365/signup",
+        "editProfileUrl": "https://dev.fabrikam.com/fedev/_msdyn365/editprofile",
+        "signinName": "<User Name>",
+        "firstName": "<User First Name>",
+        "lastName": "<User Last Name>",
+        "tenantId": "",
+        "customerAccountNumber": "<User Account Number(HQ)>",
+        "name": "<User Name>",
+        "emailAddress": "<User Email Address>"
+    },
+    ```
+
+1. Update the user information from the web browser's debugging tools.
 
 The user information can now be obtained in the React component from within the **this.props.context.request.user** object.
 
-Example page mock:
+Here in an example of the page mock.
+
 ```
 {
     "exception": null,
