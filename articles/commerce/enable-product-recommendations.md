@@ -40,7 +40,7 @@ This topic explains how to make product recommendations that are based on artifi
 ## Recommendations pre-check
 Before enabling, please note that product recommendations are only supported for Commerce customers who have migrated their storage to using ADLS. 
 
-For steps on enabling ADLS, see [How to enable ADLS on a Dynamics 365 environment](enable-ADLS-environment.md).
+For steps on enabling ADLS, see [How to enable ADLS in a Dynamics 365 environment](enable-ADLS-environment.md).
 
 Additionally, ensure that RetailSale measurements have been enabled. To Learn more about this set up process, go [here.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
 
