@@ -97,21 +97,22 @@ The following image shows an example of a "Recommended for customer" list on a P
 
 Retailers can apply personalization to existing recommendation lists such as "New," "Trending," "Best selling," "People also like," and "Frequently bought together." Applying personalization to existing lists removes items that a signed-in user has previously purchased. For both anonymous and opted-out users, default versions of the existing lists will be shown, which removes the need for retailers to manually maintain separate page experiences. 
 
-### How to personalize an existing recommendation list
-
-Follow the steps below to personalize existing product recommendation lists:
-
-1. From an existing site builder page, open the product collection module and select a list source.
-1. Select the "apply personalization" checkbox, and save the list.
-
-![Turn on apply personalization for a trending list](./media/ApplyPersonalizationToTrending.png)
-
-3. Save and publish the page. 
-
-Once published, signed-in users will now see personalized trending lists. 
 For example, a signed-in user who purchased the black watch and the brown work boots in the "Trending - default" list will be able to see new products instead (as shown in the "Trending - personalized" list).
 
 ![Apply personalization](./media/applypersonalization.png)
+
+To apply personalization to an existing recommendation list in Commerce site builder, follow these steps.
+
+1. Navigate to an existing site builder page containing a product collection module.
+1. In the left navigation pane, select the product collection module.
+1. Under **Products** in the right navigation pane, select the list.
+1. Under **Type** in the **Select product list configuration** dialog box, select the list type.
+1. Select the **Apply Personalization** check box, and then select **OK**.
+1. Save, finish editing, and publish the page. Once published, signed-in users will see personalized trending lists. 
+
+The following image shows where to apply personalization in the **Select product list configuration** dialog box.
+
+![Apply personalization for a trending list](./media/ApplyPersonalizationToTrending.png)
 
 ## Additional resources
 
