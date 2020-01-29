@@ -64,7 +64,7 @@ Product recommendations use the Recommendations machine learning technologies in
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
-[Product Collection Module Overview](product-collection-module-overview.md)
+[Product collection module overview](product-collection-module-overview.md)
 
 [Create curated product recommendation lists](create-editorial-recommendation-lists.md)
 
