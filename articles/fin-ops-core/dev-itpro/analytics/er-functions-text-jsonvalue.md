@@ -38,7 +38,7 @@ The `JSONVALUE` function parses data in JavaScript Object Notation (JSON) format
 
 ## Syntax
 
-```
+```vb
 JSONVALUE (input, path)
 ```
 
