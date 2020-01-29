@@ -5,7 +5,7 @@ title: Work with modules
 description: This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -105,8 +105,8 @@ To configure a content module on a page, follow these steps.
 
 1. In the outline pane on the left, expand the tree and select any content module (for example, **Feature**, **Hero**, or **Banner**).
 1. In the properties pane on the right, find the module's content and settings controls.
-1. Enter settings values for any desired module controls.
-1. Click **Save** in the command bar.  This will also refresh the preview canvas.
+1. Enter properties for any desired module controls.
+1. Select **Save** in the command bar. This will also refresh the preview canvas.
 
 ### Configure a container module
 
