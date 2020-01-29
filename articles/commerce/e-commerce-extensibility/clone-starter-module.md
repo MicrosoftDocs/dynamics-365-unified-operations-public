@@ -51,7 +51,7 @@ This command adds the source code for the module to the /src/modules/ directory 
 
 The following example shows how to clone the hero SDK module so that you can update it.
 
-```
+```console
 yarn msdyn365 clone hero heroExtended
 ```
 
@@ -66,7 +66,7 @@ To preview the new module in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```
+    ```console
     c:\repos\MyEcommerceSite\yarn start
     ```
 
