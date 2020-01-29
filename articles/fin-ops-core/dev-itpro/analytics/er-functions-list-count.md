@@ -38,7 +38,7 @@ The `COUNT` function returns an *Integer* value that represents the number of re
 
 ## Syntax
 
-```
+```vb
 COUNT (list)
 ```
 
