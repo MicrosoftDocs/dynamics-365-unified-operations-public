@@ -38,7 +38,7 @@ The `FA_SUM` function returns a *Container (record)* value that consists of data
 
 ## Syntax
 
-```
+```vb
 FA_SUM (fixed asset code, value model code, start date, end date)
 ```
 
