@@ -37,7 +37,7 @@ This topic covers the module view file in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-The module view file is a TypeScript file called from the module's React component that controls a module's view. Additional module views can be provided in various themes to render a module differently, depending on the requirements of the theme.
+A module view file is a TypeScript (.ts) file that controls a module's view. It's called from the module's React component. Additional module views can be provided in various themes to render a module differently, depending on the requirements of the theme.
 
 ## Example 
 
@@ -56,8 +56,8 @@ const ProductFeatureView: React.FC<IProductFeatureViewProps> = props => {
 
     return (
         <div className='row'>
-          <h2>Config Value: {title}</h2>
-          <h2>Resource Value: {resourceSample}</h2>
+            <h2>Config Value: {title}</h2>
+            <h2>Resource Value: {resourceSample}</h2>
         </div>
     );
 };
