@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Commerce 10.0.8 (February 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.8. 
+title: What's new or changed in Dynamics 365 Retail 10.0.8 (February 2020)
+description: This topic describes features that are either new or changed in Dynamics 365 Retail 10.0.8. 
 author: josaw1
 manager: AnnBe
 ms.date: 01/29/2020
@@ -29,12 +29,12 @@ ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
 
 ---
-# What's new or changed in Dynamics 365 Commerce 10.0.8 (February 2020)
+# What's new or changed in Dynamics 365 Retail 10.0.8 (February 2020)
 
 [!include [banner](../includes/banner.md)]
 
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.8. This version has a build number of 10.0.319 and is available as follows:
+This topic lists features that are either new or changed in Microsoft Dynamics 365 Retail 10.0.8. This version has a build number of 10.0.319 and is available as follows:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
@@ -52,7 +52,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform update 32
 
-Microsoft Dynamics 365 Commerce 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Microsoft Dynamics 365 Retail 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 
 ### Bug fixes 
