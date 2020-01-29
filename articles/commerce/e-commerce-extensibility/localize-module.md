@@ -159,7 +159,7 @@ To use a resource string in a module, you must reference the resource string key
 
 ### Access resources in the module view file
 
-Resources can be accessed in the module React file and view file by using the **this.props.resources** property, as shown in the following example.
+Resources can be accessed in the module React file and module view file by using the **this.props.resources** property, as shown in the following example.
 
 ```html
 <button className="nextButton">
@@ -326,7 +326,7 @@ You can generate global.json files for module resources and authoring resources 
 
 ## Testing localized content
 
-To test localized content. you need to use a page mock and change the **locale** to the appropriate locale you are testing. For more information on page mocks, see [Testing modules with page mocks](test-page-mock.md).
+To test localized content, you must use a page mock and change the locale to the locale that you're testing. For more information about page mocks, see [Testing modules with page mocks](test-page-mock.md).
 
 ## Additional resources
 
