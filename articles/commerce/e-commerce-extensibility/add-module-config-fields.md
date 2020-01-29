@@ -90,15 +90,15 @@ In the following example of a module definition file, an **imageAlignment** conf
 
 The **config** section of the module definition file contains a list of all the module's exposed configuration fields that will be used in the authoring tools.
 
-* **configuration name** – The local name that is used to access the configuration values from your react source code. This name is case insensitive.
+* **configuration name** – The local name that is used to access the configuration values from your react source code. This name is case-insensitive.
 * **"friendlyName"** – The friendly name that is shown as the configuration name in the authoring tools.
 * **"description"** – The description that is shown as the configuration description in the authoring tools.
-* **"type"** – The type of the configuration. Possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
+* **"type"** – The type of the configuration. The possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
 * **"enum"** – For an enumerator type, the value must be set to **"string"**.
 * **"default"** – The default value that is set if no value is set in the authoring tools.
 * **"scope"** – This field is used to scope the configuration to either a specific module instance or all modules on the site. Possible values are **"module"** and **"site"**. If the value is set to **"site"**, the module configuration doesn't appear on a page and can't be configured there. It appears and can only be configured at the site level. In this way, the value can be set one time for the entire site.
 * **"group"** – Groups are used to organize the configurations into organized groups in the authoring tools.
-* **"required"** – A boolean flag that specifies whether or not a property must be set on the module. When set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be displayed when the module is rendered.
+* **"required"** – A Boolean flag that specifies whether or not a property must be set on the module. When set to **true**, the authoring tools will show an error if the required property isn't set, and an error will be displayed when the module is rendered.
 * **"resources"** – This field is used for localization resources.
 * **"definitions"** - This field can contain complex config type definitions, which can be referenced in the config sections as extended types.
 
@@ -180,17 +180,17 @@ The following example shows how the various supported data types are used.
                 }
             }
         },
-	"textPlacement":{
-	    "friendlyName": "Text placement",
-            "description": "Placement of the text",
-	    "type": "object",
-	    "enum":{
-	        "left": "Left",
-		"right": "Right",
-		"center": "Center"
-	    },
-	    "default": "left"
-	}
+        "textPlacement":{
+            "friendlyName": "Text placement",
+                "description": "Placement of the text",
+            "type": "object",
+            "enum":{
+                "left": "Left",
+            "right": "Right",
+            "center": "Center"
+            },
+            "default": "left"
+        }
     },
     "definitions": {
         "heading": {
@@ -237,19 +237,22 @@ The following example shows how the various supported data types are used.
 }
 ```
 
-### css config type
-Module config properties can also be declared to be of type "css". A CSS type must specify a set of string enums of possible classes to apply to a module and only one of the enum options can be selected for a given module config property. When an enum option is selected, the selected class will be appended to the list of classes to pass down to the module in the format propertyName__propertyValue via the **this.props.config.className** property. Note that config types with type css will not be directly accessible from the **this.props.config** property, as they are merged into **this.props.config.className** property. 
+### css configuration type
+
+The configuration type of module configuration properties can also be declared as **"css"**. Module configuration properties of the **css** type must specify a set of string enums of the classes that can be applied to a module. Only one of the enum options can be selected for a given module configuration property. When an enum option is selected, the selected class is appended to the list of classes that is passed down to the module in the format *propertyName\_\_propertyValue* via the **this.props.config.className** property. Note that configuration types of the **css** type can't be accessed directly from the **this.props.config** property, because they are merged into the **this.props.config.className** property. 
 
 ### className property
-Every content module includes a built-in config field named **className** that is accessible inside the module's view via the **this.props.config.className** property. This config field will appear in the site authoring tools, allowing a page author to add a string of space-separated CSS class names that will be appended to the module root class.
 
-### __cssClassName__ property 
-**__cssClassName__** is another special property that is declared inside of a module's definition file. It provides a way for the module creator to give an non-authorable, non-editable, read-only **className** property which will always be applied to the module. It must therefore have its editable property set to false, and be populated with a default value. 
+Every content module includes a built-in configuration field that is named **className**. This configuration field can be accessed inside the module's view via the **this.props.config.className** property. This configuration field will appear in the site authoring tools. Therefore, page authors can add a string of space-separated Cascading Style Sheets (CSS) class names that should be appended to the module root class.
 
-In the following example, the module creator has given this field a default value of *hero*. This means that every instance of this module will always have the class "hero" as part of the **this.props.config.className** property. 
+### \_\_cssClassName\_\_ property
+
+**\_\_cssClassName\_\_** is another special property that is declared inside a module definition file. It provides a way for the module creator to specify a non-authorable, non-editable, read-only **className** property that will always be applied to the module. Therefore, its **editable** property must be set to **false**, and a default value must be specified. 
+
+In the following example, the module creator has given this field a default value of **hero**. Therefore, every instance of this module will always have the **hero** class as part of the **this.props.config.className** property. 
 
 ```json
-...    
+...
     "__cssClassName__": {
         "default": "hero",
         "editable": false,
@@ -266,24 +269,24 @@ The following example shows how to set a mock value for a new configuration fiel
 
 ```
 {
-	"id": "R1Module1",
-	"config": {
-	  "imageAlignment": "left",
-	  "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
-	  "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
-	  "productImage": {
-		"src": "https://bit.ly/33cMGxr",
-		"altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
-	  },
-	  "buttonText": "Buy Now",
-	  "productIds": "68719498121"
-	},
-	"data": {
-	  "actionResponse": {
-		"text": "Sample Action Response"
-	  }
-	},
-	"typeName": "product-feature"
+    "id": "R1Module1",
+    "config": {
+        "imageAlignment": "left",
+        "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+        "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+        "productImage": {
+            "src": "https://bit.ly/33cMGxr",
+            "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+        },
+        "buttonText": "Buy Now",
+        "productIds": "68719498121"
+    },
+    "data": {
+        "actionResponse": {
+            "text": "Sample Action Response"
+        }
+    },
+    "typeName": "product-feature"
 } 
 ```
 
@@ -291,7 +294,7 @@ The following example shows how to set a mock value for a new configuration fiel
 
 To access configuration fields in the React component, use the **props.config** application programming interface (API).
 
-The following example creates a props property with config values to be sent to the module view file to render the appropriate HTML.
+The following example creates a **props** property that has configuration values that will be sent to the module view file to render the appropriate HTML.
 
 ```typescript
 /*---------------------------------------------------------------------------------------------
