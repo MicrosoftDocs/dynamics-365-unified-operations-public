@@ -41,7 +41,7 @@ To call Retail Server APIs, you must use the Retail Server proxy library that Re
 
 ## Install the Retail Server proxy
 
-The Retail Server proxy is available for download via the Dynamics 365 npm feed and should be added by default. If it is not there, you can get it by adding a reference in the packages.json file.
+The Retail Server proxy is available for download via the Dynamics 365 npm feed and should be added by default. If it isn't there, you can get it by adding a reference in the packages.json file.
 
 To install the Retail Server proxy in your software development kit (SDK) development environment, follow these steps.
 
@@ -126,7 +126,7 @@ export default createObservableDataAction({
 });
 ```
 
-The **get-category-list.ts** file exports a data action that can be registered on a module to get the list of all categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, we recommend that you call Retail Server only by using the Retail Server proxy.
+The **get-category-list.ts** file exports a data action that can be registered on a module to get the list of all categories from whatever channel has been configured for the project. Because this approach requires much less custom code to make the HTTP call than manual communication with Retail Server, we recommend that you always call Retail Server by using the Retail Server proxy.
 
 The following example shows how the **get-category-list** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
 
@@ -219,7 +219,7 @@ export interface IProductFeatureData {
 
 ## Call a Retail Server proxy API directly in module code
 
-The following example shows how to call the **getCategories** Retail API by using the Retail proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories and the sample code logs them to the console.
+The following example shows how to call the **getCategories** Retail API by using the Retail proxy **getCategoriesAsync** wrapper API. This API call returns a list of all categories, and the sample code logs them to the console.
 
 ```typescript
 import * as React from 'react';
@@ -241,7 +241,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
     public render(): JSX.Element | null {
         const {
             config,
-         } = this.props;
+        } = this.props;
 
         // set default product info values from config values if available
         let ProductName = config.productTitle ? config.productTitle : 'No product name defined';
