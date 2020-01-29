@@ -38,7 +38,7 @@ The `WHERE` function returns the specified list as a *Record list* value after i
 
 ## Syntax
 
-```
+```vb
 WHERE (list, condition)
 ```
 
