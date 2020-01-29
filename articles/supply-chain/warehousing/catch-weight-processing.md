@@ -206,7 +206,7 @@ A catch weight tag can be created by using a warehousing app process, it can be 
 In addition to the restrictions that currently apply for catch weight products, tagged catch weight products have other restrictions that currently apply.
 
 - All manual updates to inventory (that is, updates that aren't done using a mobile device) must include corresponding manual updates to the associated catch weight tags because these updates aren't done automatically. For example, manual adjustment journals will update inventory but not the associated catch weight tags.
-- Replenishment moves average weight and catch weight tags must be updated manually to reflect the replenishment work.
+- You must manually update catch weight tags to reflect replenishment work movements. This is because the system can't capture weights while processing replenishment work and therefore records the average weight instead.
 - Mixed licensing place receiving isn't currently supported for tagged catch weight items.
 - The processing of sales return order receiving can record catch weight tags. However, the process doesn't validate that the returned tag is the same tag that was originally shipped for a sales order.
 - The mobile device menu item that has the **Register material consumption** activity code doesn't currently support recording catch weight tags.
