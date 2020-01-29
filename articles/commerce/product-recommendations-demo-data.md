@@ -62,7 +62,7 @@ The extension contains a datafile called 'RecoMockDataset.csv' which allows you 
 
 ```xml
 <settings>
-	<add name="ext.Recommendations.DemoFilePath" value="RecoMockDataset.csv" />
+    <add name="ext.Recommendations.DemoFilePath" value="RecoMockDataset.csv" />
 </settings>
 ```
 
