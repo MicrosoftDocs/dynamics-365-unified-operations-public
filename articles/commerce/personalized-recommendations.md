@@ -73,9 +73,15 @@ After enabling personalization, retailers are able to show shoppers personalized
 
 A "Picks for you" artificial intelligence-machine learning (AI-ML) list shows an authenticated user a personalized list of suggested products that is based on their omnichannel purchase history. Personalized recommendations update dynamically over time as more purchases are made. This type of list also supports category filtering, which allows retailers to show top picks based on navigational hierarchies. 
 
+In order for the **Picks for you** list to appear on any e-Commerce page, the following user requirements must be met. 
+-	Users must be signed in. Anonymous users will not see personalized recommendations.
+- Users must have at least one purchase on their account.
+- Users must be opted in to receive personalized recommendations. 
+
 The following image shows an example of a "Picks for you" list on an online store page.
 
 ![Picks for you online](./media/picksforyou.png)
+
 
 ### "Recommended for customer" lists on POS
 
@@ -85,16 +91,25 @@ The following image shows an example of a "Recommended for customer" list on a P
 
 ![Picks for you on POS](./media/picksonpos.png)
 
-In order for "Picks for you" personalized recommendations lists to appear on any page, the following user requirements must be met. 
--	Users must be signed in. Anonymous users will not see personalized recommendations.
-- Users must have at least one purchase on their account.
-- Users must be opted in to receive personalized recommendations. 
+
 
 ## Apply personalization to existing recommendation lists
 
 Retailers can apply personalization to existing recommendation lists such as "New," "Trending," "Best selling," "People also like," and "Frequently bought together." Applying personalization to existing lists removes items that a signed-in user has previously purchased. For both anonymous and opted-out users, default versions of the existing lists will be shown, which removes the need for retailers to manually maintain separate page experiences. 
 
-In the example image below, a signed-in user who has already purchased the black watch and the brown work boots in the "Trending - default" list will be able to see new products instead (as shown in the "Trending - personalized" list).
+### How to personalize an existing recommendation list
+
+Follow the steps below to personalize existing product recommendation lists:
+
+1. From an existing site builder page, open the product collection module and select a list source.
+1. Select the "apply personalization" checkbox, and save the list.
+
+![Turn on apply personalization for a trending list](./media/ApplyPersonalizationToTrending.png)
+
+3. Save and publish the page. 
+
+Once published, signed-in users will now see personalized trending lists. 
+For example, a signed-in user who purchased the black watch and the brown work boots in the "Trending - default" list will be able to see new products instead (as shown in the "Trending - personalized" list).
 
 ![Apply personalization](./media/applypersonalization.png)
 
