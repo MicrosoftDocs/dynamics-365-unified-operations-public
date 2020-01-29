@@ -132,7 +132,7 @@ The **getCategoryList.ts** file exports a data action that can be registered on 
 
 The following example shows how the **getCategoryList** data action can be registered in the **"module" \> "dataActions"** node in the module definition file.
 
-```
+```json
 {
     "$type": "contentModule",
     "friendlyName": "Product Feature",
@@ -165,7 +165,7 @@ The following example shows how the **getCategoryList** data action can be regis
 
 The module **data.ts** file also requires an entry for the return type of the data action. The following example shows a sample module **data.ts** file. After it's implemented, the property can be accessed from the module's view file by using the **this.props.data.** object.
 
-```
+```typescript
 import { AsyncResult , Category, SimpleProduct } from '@msdyn365-commerce/retail-proxy';
 export interface IProductFeatureData {
     products: AsyncResult<SimpleProduct>[];
@@ -201,6 +201,7 @@ class ProductFeature extends React.PureComponent<IProductFeatureProps<IProductFe
             })
 ...
 ```
+
 ## Additional resources
 
 [Data actions overview](data-actions.md)
