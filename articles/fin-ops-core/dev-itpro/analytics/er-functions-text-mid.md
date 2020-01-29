@@ -38,7 +38,7 @@ The `MID` function returns a *String* value that presents the specified number o
 
 ## Syntax
 
-```
+```vb
 MID (text, starting position, number of characters)
 ```
 
