@@ -58,6 +58,7 @@ Before you start the steps that are outlined in this topic, follow these steps.
 - Verify that you have administrative or root access to install Retail Modern POS on a device.
 - Verify that you can access the Retail Server from the device.
 - Verify that the environment contains the Retail permission groups and jobs in the **Human resources** module. These permission groups and jobs should have been installed as part of the demo data.
+- Verify your outbound firewall rules allow outbound connections for (Telemetry)[https://docs.microsoft.com/en-us/azure/azure-monitor/app/ip-addresses#outgoing-ports] to enable troubleshooting and diagnostics. 
 
 ## Download and install Retail Modern POS
 
