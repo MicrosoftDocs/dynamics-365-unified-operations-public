@@ -38,11 +38,12 @@ ms.dyn365.ops.version: 10.0.5
 This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
 ## Recommendations pre-check
-Before enabling, please note that product recommendations are only supported for Commerce customers who have migrated their storage to using ADLS. 
+
+Before enabling, please note that product recommendations are only supported for Commerce customers who have migrated their storage to using Azure Data Lake Storage (ADLS). 
 
 For steps on enabling ADLS, see [How to enable ADLS in a Dynamics 365 environment](enable-ADLS-environment.md).
 
-Additionally, ensure that RetailSale measurements have been enabled. To Learn more about this set up process, go [here.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
+Additionally, ensure that RetailSale measurements have been enabled. To learn more about this set up process, go [here.](https://docs.microsoft.com/en-us/dynamics365/ai/customer-insights/pm-measures)
 
 
 ## Turn on recommendations
