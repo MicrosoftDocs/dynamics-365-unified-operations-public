@@ -38,7 +38,7 @@ The `GETENUMVALUEBYNAME` function searches for a specific *Enum* value in the sp
 
 ## Syntax
 
-```
+```vb
 GETENUMVALUEBYNAME (enumeration data source path, enumeration value text)
 ```
 
