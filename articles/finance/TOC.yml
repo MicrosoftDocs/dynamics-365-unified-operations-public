@@ -488,7 +488,7 @@
         href: cash-bank-management/set-up-centralized-payments.md
       - name: Automatic settlement and prioritization
         href: accounts-receivable/automatic-settlement-prioritization.md
-      - name: Simple bank reconciliation
+      - name: Reconcile a bank account
         href: cash-bank-management/reconcile-bank-account.md        
       - name: Advanced bank reconciliation
         items:
