@@ -38,13 +38,13 @@ The `LISTOFFIELDS` function returns a *Record list* value that is created based 
 
 ## Syntax 1
 
-```
+```vb
 LISTOFFIELDS (path)
 ```
 
 ## Syntax 2
 
-```
+```vb
 LISTOFFIELDS (path, language)
 ```
 
@@ -126,7 +126,7 @@ You use the *Calculated field* data source type to configure **enumType\_de** an
 
 In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if that translation is available. If the Swiss German translation isn't available, the label is in German.
 
-```
+```vb
 IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 ```
 
