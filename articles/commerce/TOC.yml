@@ -79,15 +79,15 @@
       - name: What's new or changed
         items:
         - name: What's new or changed in Finance and Operations apps
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
+          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
         - name: What's new or changed in Retail
           items:
           - name: What's new or changed in Retail home page
-            href: get-started/whats-new-home-page.md
+            href: ../retail/get-started/get-started/whats-new-home-page.md?toc=/dynamics365/commerce/toc.json
           - name: Retail version 10.0.8 (February 2020)
-            href: get-started/whats-new-10-0-8.md
+            href: ../retail/get-started/get-started/whats-new-10-0-8.md?toc=/dynamics365/commerce/toc.json
           - name: Retail version 10.0.7 (January 2020)
-            href: get-started/whats-new-10-0-7.md
+            href: ../retail/get-started/get-started/whats-new-10-0-7.md?toc=/dynamics365/commerce/toc.json
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features in Finance and Operations
