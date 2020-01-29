@@ -41,89 +41,26 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 
 ## Features included in this release
 
-The following features will become available with the 10.0.8 release, but must be enabled using [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following features are included in this release. The feature titles link to additional information on the [Release plans](https://docs.microsoft.com/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Some of these features may also have been included a previous incremental release, but weren't announced in previous *What's new* articles, so we are adding them here. Most of these features must be enabled using [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
 
-### Additional location zone
-
-To read a description of this feature, see [Additional location zone](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone) in the release plan.
-
-### Cancel work
-
-To read a description of this feature, see [Cancel work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work) in the release plan.
-
-To learn more about the feature, see: [Cancel warehouse work for exception handling](../warehousing/cancel-warehouse-work.md) in the online help.
-
-### Change work pool on work
-
-To read a description of this feature, see [Change work pool on work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work) in the release plan.
-
-### Cluster position full
-
-To read a description of this feature, see [Cluster position full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) in the release plan.
-
-### Confirm and transfer
-
-To read a description of this feature, see [Confirm and transfer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer) in the release plan.
-
-### Location directive inventory picking aging
-
-To read a description of this feature, see [Location directive inventory picking aging](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging) in the release plan.
-
-### Pick-line grouping
-
-To read a description of this feature, see [Pick-line grouping](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping) in the release plan.
-
-To learn more about the feature, see: [Pick line grouping](../warehousing/pick-line-grouping.md) in the online help.
-
-### Shipment auto update
-
-To read a description of this feature, see [Shipment auto update](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update) in the release plan.
-
-To learn more about the feature, see: [Shipment auto-updates](../warehousing/auto-update-shipment.md) in the online help.
-
-### Warehouse app task validation with RSAT
-
-To read a description of this feature, see [Warehouse app task validation with RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat) in the release plan.
-
-### Split demand replenishment work from create pick work step
-
-To read a description of this feature, see [Split demand replenishment work from create pick work step](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step) in the release plan.
-
-### Split work
-
-To read a description of this feature, see [Split work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work) in the release plan.
-
-### System-directed cluster picking
-
-To read a description of this feature, see [System-directed cluster picking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking) in the release plan.
-
-To learn more about the feature, see: [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md) in the online help.
-
-### Location status
-
-To read a description of this feature, see [Location status](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status) in the release plan.
-
-### Warehouse release rule
-
-To read a description of this feature, see [Warehouse release rule](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule) in the release plan.
-
-### Wave status visualization
-
-To read a description of this feature, see [Wave status visualization](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization) in the release plan.
-
-### Wave template grouping
-
-To read a description of this feature, see [Wave template grouping](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping) in the release plan.
-
-### Work line details
-
-To read a description of this feature, see [Work line details](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details) in the release plan.
-
-To learn more about the feature, take a look at our [work line details video](https://www.microsoft.com/en-us/videoplayer/embed/RE4fcYN).
-
-### Zone threshold replenishment
-
-To read a description of this feature, see [Zone threshold replenishment](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment) in the release plan.
+- [Additional location zone](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+- [Cancel work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)&mdash;for more information, see [Cancel warehouse work for exception handling](../warehousing/cancel-warehouse-work.md) in the online help.
+- [Change work pool on work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
+- [Cluster position full](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
+- [Confirm and transfer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
+- [Location directive inventory picking aging](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [Location status](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
+- [Pick-line grouping](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)&mdash;for more information, see [Pick line grouping](../warehousing/pick-line-grouping.md) in the online help.
+- [Shipment auto update](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)&mdash;for more information, see [Shipment auto-updates](../warehousing/auto-update-shipment.md) in the online help.
+- [Split demand replenishment work from create pick work step](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-demand-replenishment-work-create-pick-work-step)
+- [Split work](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/split-work)
+- [System-directed cluster picking](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/system-directed-cluster-picking)&mdash;for more information, see [System-directed cluster picking](../warehousing/system-directed-cluster-pick.md) in the online help.
+- [Warehouse app task validation with RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat) in the release plan.
+- [Warehouse release rule](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
+- [Wave status visualization](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
+- [Wave template grouping](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
+- [Work line details](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)&mdash;for more information, see our [work line details video](https://www.microsoft.com/en-us/videoplayer/embed/RE4fcYN).
+- [Zone threshold replenishment](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
 
 ## Additional resources
 
