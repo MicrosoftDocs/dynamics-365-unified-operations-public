@@ -74,7 +74,7 @@ Retailers wanting to create their own extensions to manage the opt-out experienc
 
 Customers may want to obtain a digital copy of their personal data and also see an exported view of their recommendations results. Once asked, the retailer would need to create a customized extension that will call the Retail Server API and query for the full results from the "Picks for you" list based on the customer's Customer ID. The results can then be exported in CSV format and shared with the customer.
 
-An example of how a retailer could accomplish this task is provided below.
+An example of how a retailer could accomplish this task is outlined below.
 
 - The retailer would need to create a custom extension to pull personal recommendations data on behalf of the user. Steps on how to create modules, clone existing modules, call Retail Server APIs, and call data actions are all covered in the [Online channel extensibility](e-commerce-extensibility/overview.md) documentation.
 - The custom extension would need to make a call to the "get-recommendations" core data action and pass it the required information based on the requirements of the list. In the case of a "Picks for you" list, the extension would need to pass the data action the proper list name and Customer ID.
