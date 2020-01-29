@@ -38,7 +38,7 @@ The `LISTOFFIRSTITEM` function returns a *Record list* value that consists of on
 
 ## Syntax
 
-```
+```vb
 LISTOFFIRSTITEM (list)
 ```
 
