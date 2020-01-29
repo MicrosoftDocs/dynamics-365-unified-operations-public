@@ -38,7 +38,7 @@ The `EMPTYRECORD` function returns a null *Container (record)* value that has th
 
 ## Syntax
 
-```
+```vb
 EMPTYRECORD (list)
 ```
 
