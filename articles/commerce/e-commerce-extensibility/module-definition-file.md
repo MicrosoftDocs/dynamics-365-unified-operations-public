@@ -94,7 +94,7 @@ Here is an example of a module definition file.
 }
 ```
 
-A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for a image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Microsoft Dynamics 365 Retail product data.
+A module definition file also exposes configuration fields, so that a page author can configure module settings and resource definitions. In the example above, there is a configuration field for an image alignment setting (where the available values are **left** and **right**). Other examples could include a module title or heading, a rich text description, a "call to action" link, an image URL, or Microsoft Dynamics 365 Retail product data.
 
 The page author can configure the settings of a module on a specific page without affecting the settings of that module on other pages. Module configurations can be implemented per module instance or globally across all instances of the module.
 
@@ -160,11 +160,10 @@ You can then access the results of the data action in your module.
 
 ## Module resource schema
 
-- **"resources"**: Used for localizing resources. When resources strings are defined, the localized strings are pulled from corresponding JSON files. These files are stored under the **/src/resources/modules/** directory and include a **global.json** for default locale values and any needed localized JSON files, example fr-fr.json.
-- **"resourcekey"**: The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
-- **"comment"**: A string used to identify the purpose of the string to aid in localization.
-- **"value"**: Resource string data that will be used in the module.
-
+- **"resources"** – This property is used for localizing resources. When resources strings are defined, the localized strings are pulled from corresponding JavaScript Object Notation (JSON) files. These files are stored under the **/src/resources/modules/** directory. They include a **global.json** file for default locale values and any localized JSON files that are required, such as **fr-fr.json**.
+- **"resourcekey"** – The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
+- **"comment"** – A string that identifies the purpose of the string, to help with localization.
+- **"value"** – The resource string data that will be used in the module.
 
 To get more details on the config section, see [Add module configuration fields](add-module-config-fields.md).
 
