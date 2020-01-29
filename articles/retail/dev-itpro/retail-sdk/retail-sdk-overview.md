@@ -5,7 +5,7 @@ title: Retail software development kit (SDK) architecture
 description: This topic provides general information about the Retail SDK. The Retail SDK includes code, code samples, templates, and tools that you can use to customize retail functionality.
 author: RobinARH
 manager: AnnBe
-ms.date: 7/22/2019
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -265,8 +265,6 @@ As shown in the architecture diagram earlier in this article, several things dep
 
 A good ALM solution provides version control, builds, automated builds, planning tools, tracking tools, dashboards, customization, and more. The Retail SDK is organized in such a way that it supports these tasks. 
 
-[Azure DevOps](/Azure DevOps/) is a great tool and is recommended.
-
 ### Branching and versioning
 
 To work efficiently in a team, or even just to be able to go back and look at some changes that were done in the past, you must have good branching strategy and versioning discipline. The following illustration shows a simple branching strategy that might work well for most teams. The version numbers are fictitious.
@@ -279,4 +277,4 @@ A very important point to emphasize is that the non-customized Retail SDK should
 
 #### Customization branch
 
-After development can start, a new branch should be started (customization branch). At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for a team's development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly. Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases. In other words, this update should very rarely. For example, Microsoft's assembly version stayed the same for the multiple CTP releases for the current version. Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions. The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
+After development can start, a new branch should be started (customization branch). At the beginning of the initial branch-out, this branch will be an exact copy of the Retail SDK mirror branch. This is the branch for a team's development. The version of the customization branch must be incremented at least every time that a build is created for testing, or it can even be incremented daily. The file version to increment is defined in Customization.setting file by using the **CustomVersion** property. If you update it and rebuild, all binaries, packages, manifest files are updated accordingly. Note that the **CustomAssemblyVersion** property should be updated only when the update isn't backward compatible and/or for major new releases, which means that updates should be performed infrequently. For example, Microsoft's assembly version stayed the same for the multiple CTP releases for the current version. Because there are both Microsoft assets and your own changes in the same branch, the branch essentially has two file versions. The first version is the Microsoft version of the Retail SDK that the current branch is based on, and the second version is the version that is set by the **CustomVersion** property. In the previous illustration, the current file version of the customization branch is 1.0.2.\* (based on Microsoft version 7.0.2200.3). The file version of the first rolled-out release was 1.0.0.40 (based on 7.0.2000.0). When a testing phase is completed, and the final packages are being deployed with that version, it's important that you increment the version (or create a source control label).
