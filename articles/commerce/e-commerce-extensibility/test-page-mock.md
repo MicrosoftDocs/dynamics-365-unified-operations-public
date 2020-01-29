@@ -49,7 +49,8 @@ To create a new page mock, create a blank .json file under the /src/pageMocks di
 
 The following example shows a page mock that adds two instances of the same module to a page but uses different mock data for each instance.
 
-```{
+```
+{
     "exception": null,
     "pageRoot": {
         "id": "core-root_0",
@@ -112,11 +113,11 @@ The following example shows a page mock that adds two instances of the same modu
 }
 ```
 
-Every page defines a root (**core-root** in the example above) that controls the page HTMl structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
+Every page defines a root (**core-root** in the example above) that controls the page HTML structure with slots for "HTML Head", "Body Begin", "Body" and "Body End". The **body** then must have a page container module. In this example, the **default-page** page container is used.
 
 The **modules** section lists the modules that are included inside the page arranged by named slots. The **default-page** page container has a slot that is named **primary**. This container is responsible for laying out the modules that are included inside it. In this example, the **productFeature** module is rendered two times in a row with the mock data defined in the **config** section for each.
 
-The example above can be accessed with the following URL: `https://localhost:4000/page?mock=campaign-page`.
+The preceding example can be accessed by using the following URL: `https://localhost:4000/page?mock=campaign-page`.
 
 ## Additional resources
 
