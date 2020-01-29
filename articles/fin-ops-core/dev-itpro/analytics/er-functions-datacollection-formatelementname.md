@@ -38,7 +38,7 @@ The `FORMATELEMENTNAME` function returns a *String* value that represents the na
 
 ## Syntax
 
-```
+```vb
 FORMATELEMENTNAME ()
 ```
 
