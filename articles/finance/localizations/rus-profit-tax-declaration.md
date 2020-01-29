@@ -106,7 +106,9 @@ are available in the data package and configured in ER configuration:
 | Profit tax declaration | Прибыль  (2019)        | Декларация по налогу на прибыль (2019) |
 
 4.  Set up financial report cell operations for the financial reports that are
-    imported. Set up all required cells.
+    imported.
+    
+> Note. Sort financial report cells which are loaded from the package, by **Description** column so that cells are shown on the page in the same sequence as they are present in the paper form of the declaration.
 
 >   For more information about how to set up financial reports for Russia, see
 >   [Financial reporting
