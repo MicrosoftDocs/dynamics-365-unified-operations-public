@@ -252,7 +252,7 @@ Note that the data source element that contains the only validated transactions 
     
     If you have not installed the hotfix, KB 4012871, notice that the dialog box contains an additional model mapping question that is used to parse the file that you are importing. The data is then ported from the dialog box to the data model. Currently, you can choose which format mapping must be used depending on the type of file that you plan to import.  
     
-   If you plan to call this model mapping from a point in the application that is specifically designed for the action, the ER destination and the format mapping must be marked as part of the integration.  
+    If you plan to call this model mapping from a point in the application that is specifically designed for the action, the ER destination and the format mapping must be marked as part of the integration.  
 
 26. Click Cancel.
 27. Close the page.
