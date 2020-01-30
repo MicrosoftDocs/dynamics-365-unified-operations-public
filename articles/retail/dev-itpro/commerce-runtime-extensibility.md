@@ -100,7 +100,7 @@ Before you learn about the CRT extension patterns, you should understand how a C
 <p>For example, you want to capture and show some additional information to the customer entity in POS. In this case, you can add a post-trigger to fetch all your custom properties for customer, add them to the customer entity as extension properties, and send those extension properties to POS.</p>
 <p>You can also send extension properties from POS to CRT and store them in your custom table. Alternatively, you can do some custom logic based on those properties, or send it to HQ.</p>
 <p>All CRT entities, such as products, customers, transactions, and parameters, support extension properties.</p>
-<blockquote>[!NOTE]<br>
+<blockquote><strong>Note:</strong><br>
 Attributes are also supported (configuration-driven development). For extension properties, you must create a custom table and store the data. However, attributes are configuration-driven and aren't required in order to create table fields. Therefore, no code is required for read and update operations.</blockquote>
 <p>For details about the attributes, see the following topics:</p>
 <ul>
@@ -124,19 +124,19 @@ Attributes are also supported (configuration-driven development). For extension 
 
 After you extend CRT, you should put the custom library in the **…\\RetailServer\\webroot\\bin\\Ext** folder for online (that is, when POS is connected to Retail Server). You should also update the **composition** section in the **CommerceRuntime.Ext.config** file with the custom library information, as shown here.
 
-```C#
+```csharp
 <add source="assembly" value="your custom library name" />
 ```
 
 For example, if the name of your custom library is **Contoso.Commerce.Runtime.CustomerSearchSample**, add the following line in the **composition** section.
 
-```C#
+```csharp
 <add source="assembly" value="Contoso.Commerce.Runtime.CustomerSearchSample" />
 ```
 
 For offline, you should you put the custom library in the **…\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker\\ext** folder. You should also update the **composition** section in the **CommerceRuntime.MPOSOffline.ext.config** file with the custom library information, as shown here.
 
-```C#
+```csharp
 <add source="assembly" value="your custom library name" />.
 ```
 
@@ -169,7 +169,7 @@ However, as was mentioned earlier, the extension property isn't persisted by def
 
 **Syntax to set an extension property on an entity**
 
-```C#
+```csharp
 public virtual void SetProperty(string key, object value);
 entity.SetProperty("key", value);
 ```
@@ -197,7 +197,7 @@ When you extend the retail channel database, it's always a good idea to have a p
 
 The request that reads the data from the Retail parameters table is GetChannelConfigurationDataRequest. The following example shows how you can add a post-trigger for this request.
 
-```C#
+```csharp
 /**
 * SAMPLE CODE NOTICE
 *
@@ -319,7 +319,7 @@ The example that follows doesn't have the SQL scripts that are used. You can fin
 
 **Example**
 
-```C#
+```csharp
 /**
 * SAMPLE CODE NOTICE
 *
@@ -385,7 +385,7 @@ namespace Contoso
 
 **Syntax to enable the property to be read later**
 
-```C#
+```csharp
 var property = entity.GetProperty("EXTENSION_PROPERTY_ADDED");
 ```
 
@@ -393,7 +393,7 @@ var property = entity.GetProperty("EXTENSION_PROPERTY_ADDED");
 
 Like entities, request and response types can be extended to set and get extension properties. However, they will persist only for the lifecycle of the request and won't be available in POS. If you want to save them to the database, you must write custom code.
 
-```C#
+```csharp
 request.SetProperty("PropertyName", true);
 response.SetProperty("PropertyName2", true);
 var PropertyName = request.GetProperty("PropertyName");
@@ -408,7 +408,7 @@ To set an extension property on the cart line, you use SaveExtensionPropertiesOn
 
 Here is an example.
 
-```Typescript
+```typescript
 let sampleExtensionProperty = <ProxyEntities.CommerceProperty>{
     Key: "sampleExtensionProperty",
     Value: <ProxyEntities.CommercePropertyValue>{
@@ -420,7 +420,7 @@ this.context.runtime.executeAsync(new SaveExtensionPropertiesOnCartClientRequest
 
 **Reading the extension property from the cart in POS**
 
-```Typescript
+```typescript
 let getCartRequest: GetCurrentCartClientRequest<GetCurrentCartClientResponse> = new GetCurrentCartClientRequest<GetCurrentCartClientResponse>();
 return this.context.runtime.executeAsync(getCartRequest).then((value: ICancelableDataResult<GetCurrentCartClientResponse>) => {
     let cart: Commerce.Proxy.Entities.Cart = (<GetCurrentCartClientResponse>value.data).result;
@@ -453,34 +453,38 @@ It's a typical case to implement a new CRT service. First, you must create new r
 
 For serialization to work, the new request type must implement the **\[DataContract\]** and **\[DataMember\]** attributes.
 
-    using System.Runtime.Serialization;
-    using Microsoft.Dynamics.Commerce.Runtime.Messages;
+```typescript
+using System.Runtime.Serialization;
+using Microsoft.Dynamics.Commerce.Runtime.Messages;
 
-    [DataContract]
-    public sealed class GetStoreHoursDataRequest : Request
+[DataContract]
+public sealed class GetStoreHoursDataRequest : Request
+{
+    public GetStoreHoursDataRequest(string storeNumber)
     {
-        public GetStoreHoursDataRequest(string storeNumber)
-        {
-            this.StoreNumber = storeNumber;
-        }
-
-        [DataMember]
-        public string StoreNumber { get; private set; }
+        this.StoreNumber = storeNumber;
     }
+
+    [DataMember]
+    public string StoreNumber { get; private set; }
+}
+```
 
 The new response type resembles the request type.
 
-    [DataContract]
-    public sealed class GetStoreHoursDataResponse : Response
+```typescript
+[DataContract]
+public sealed class GetStoreHoursDataResponse : Response
+{
+    public GetStoreHoursDataResponse(PagedResult dayHours)
     {
-        public GetStoreHoursDataResponse(PagedResult dayHours)
-        {
-            this.DayHours = dayHours;
-        }
-
-        [DataMember]
-        public PagedResult DayHours { get; private set; }
+        this.DayHours = dayHours;
     }
+
+    [DataMember]
+    public PagedResult DayHours { get; private set; }
+}
+```
 
 Next, you must create a new CRT service that uses the request and response types.
 
@@ -488,22 +492,26 @@ Next, you must create a new CRT service that uses the request and response types
 
 1.  Implement the new service.
 
-        public class StoreHoursDataService : IRequestHandler
-
+    ```typescript
+    public class StoreHoursDataService : IRequestHandler
+    ```
+    
 2.  Implement two members of the interface. The **SupportedRequestTypes** member returns a list of all requests that this service can handle. The execute method is the method that the CRT calls for you if a request for this service is run.
 
-        public IEnumerable SupportedRequestTypes
+    ```typescript
+    public IEnumerable SupportedRequestTypes
+    {
+        get
         {
-            get
+            return new[]
             {
-                return new[]
-                {
-                typeof(GetStoreHoursDataRequest),
-                };
-            }
+            typeof(GetStoreHoursDataRequest),
+            };
         }
+    }
 
-        public Response Execute(Request request);
+    public Response Execute(Request request);
+    ```
 
 3.  In the commerceRuntime.Config file, update the **composition** section (or the equivalent section) to register this service. Note that you can register single types or all types from an assembly. The CommerceRuntime engine will find all IRequestHandler derived types.
 4.  Optional: Use the CommerceRuntime Test Host to do a test run of your service.
@@ -512,7 +520,9 @@ Next, you must create a new CRT service that uses the request and response types
 
 It’s slightly easier to create a single-request service.
 
-    public class CrossLoyaltyCardService : SingleRequestHandler
+```typescript
+public class CrossLoyaltyCardService : SingleRequestHandler
+```
 
 Registration is done as described in the previous procedure.
 
@@ -524,71 +534,75 @@ In some cases, the request and response types are sufficient, but the service im
 
 Any new entity must be of the **CommerceEntity** type. When you use this type, lots of low-level functionality is automatically handled for you. The following example, which is taken from the StoreHours sample, shows how to create an entity that is bound to the database table. This is the usual case.
 
-    public class StoreDayHours : CommerceEntity
-    {
-        private const string DayColumn = "DAY";
-        private const string OpenTimeColumn = "OPENTIME";
-        private const string CloseTimeColumn = "CLOSINGTIME";
-        private const string IdColumn = "RECID";
+```typescript
+public class StoreDayHours : CommerceEntity
+{
+	private const string DayColumn = "DAY";
+	private const string OpenTimeColumn = "OPENTIME";
+	private const string CloseTimeColumn = "CLOSINGTIME";
+	private const string IdColumn = "RECID";
 
-        public StoreDayHours()
-            : base("StoreDayHours")
-        {
-        }
+	public StoreDayHours()
+		: base("StoreDayHours")
+	{
+	}
 
-        [DataMember]
-        [Column(DayColumn)]
-        public int DayOfWeek
-        {
-            get { return (int)this[DayColumn]; }
-            set { this[DayColumn] = value; }
-        }
+	[DataMember]
+	[Column(DayColumn)]
+	public int DayOfWeek
+	{
+		get { return (int)this[DayColumn]; }
+		set { this[DayColumn] = value; }
+	}
 
-        [DataMember]
-        [Column(OpenTimeColumn)]
-        public int OpenTime
-        {
-            get { return (int)this[OpenTimeColumn]; }
-            set { this[OpenTimeColumn] = value; }
-        }
+	[DataMember]
+	[Column(OpenTimeColumn)]
+	public int OpenTime
+	{
+		get { return (int)this[OpenTimeColumn]; }
+		set { this[OpenTimeColumn] = value; }
+	}
 
-        [DataMember]
-        [Column(CloseTimeColumn)]
-        public int CloseTime
-        {
-            get { return (int)this[CloseTimeColumn]; }
-            set { this[CloseTimeColumn] = value; }
-        }
+	[DataMember]
+	[Column(CloseTimeColumn)]
+	public int CloseTime
+	{
+		get { return (int)this[CloseTimeColumn]; }
+		set { this[CloseTimeColumn] = value; }
+	}
 
-        [Key]
-        [DataMember]
-        [Column(IdColumn)]
-        public long Id
-        {
-            get { return (long)this[IdColumn]; }
-            set { this[IdColumn] = value; }
-        }
-    }
+	[Key]
+	[DataMember]
+	[Column(IdColumn)]
+	public long Id
+	{
+		get { return (long)this[IdColumn]; }
+		set { this[IdColumn] = value; }
+	}
+}
+```
 
 When you want to use the new entity in a service, the process is straightforward. As described earlier, you create a new service as a derived IRequestHandler. Then either use or return the new entity. The following example shows how to read the entity from the database and return it as part of the response.
 
-    private GetStoreHoursDataResponse GetStoreDayHours(GetStoreHoursDataRequest request)
-    {
-        ThrowIf.Null(request, "request");
-        using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
-        {
-            var query = new SqlPagedQuery(request.QueryResultSettings)
-            {
-                DatabaseSchema = "crt",
-                Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
-                From = "ISVRETAILSTOREHOURSVIEW",
-                Where = "STORENUMBER = @storeNumber",
-            };
+```typescript
+private GetStoreHoursDataResponse GetStoreDayHours(GetStoreHoursDataRequest request)
+{
+	ThrowIf.Null(request, "request");
+	using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+	{
+		var query = new SqlPagedQuery(request.QueryResultSettings)
+		{
+			DatabaseSchema = "crt",
+			Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+			From = "ISVRETAILSTOREHOURSVIEW",
+			Where = "STORENUMBER = @storeNumber",
+		};
 
-            query.Parameters["@storeNumber"] = request.StoreNumber;
-            return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
-        }
-    }
+		query.Parameters["@storeNumber"] = request.StoreNumber;
+		return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
+	}
+}
+```
 
 For the preceding example, the CRT runtime engine automatically makes a query to the channel database via the registered data adapter. It queries a type that has the name **crt.ISVRetailStoreHoursView**, and generates a **where** clause and columns as specified in the code. The customizer is responsible for providing the SQL objects as part of the customization.
 
@@ -598,22 +612,28 @@ In some cases, some processing must be done before or after a request is handled
 
 1.  Create a new trigger class that implements IRequestTrigger.
 
-        public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
-
+	```typescript
+	public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
+	```
+	
 2.  In the **IRequest.SupportedRequestTypes** property, return the list of requests that this trigger should be run for.
 
-        public IEnumerable SupportedRequestTypes
-        {
-            get
-            {
-                return new[] { typeof(GetCrossLoyaltyCardRequest) };
-            }
-        }
+	```typescript
+	public IEnumerable SupportedRequestTypes
+	{
+		get
+		{
+			return new[] { typeof(GetCrossLoyaltyCardRequest) };
+		}
+	}
+	```
 
 3.  Implement the functions that are called before and after the request.
 
-        void OnExecuted(Request request, Response response);
-        void OnExecuting(Request request);
+	```typescript
+    void OnExecuted(Request request, Response response);
+    void OnExecuting(Request request);
+	```
 
 4.  Register the class in the commerceRuntime.Config file.
 
@@ -627,97 +647,104 @@ In the easiest scenario, you must add a new application programming interface (A
 
 The following example, which is taken from the Retail SDK, shows how to extend an existing controller so that it has a POST action.
 
-    public class MyCustomersController : CustomersController
-    {
-        [HttpPost]
-        [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
-        public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
-        {
-            if (parameters == null)
-            {
-                throw new ArgumentNullException("parameters");
-            }
+```typescript
+public class MyCustomersController : CustomersController
+{
+	[HttpPost]
+	[CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
+	public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
+	{
+		if (parameters == null)
+		{
+			throw new ArgumentNullException("parameters");
+		}
 
-            var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-            string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
+		var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+		string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
 
-            GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
+		GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
 
-            string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
-            RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
-            return resp.Discount;
-        }
-    }
-
+		string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
+		RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
+		return resp.Discount;
+	}
+}
+```
 Next, override the model factory.
 
-    [Export(typeof(IEdmModelFactory))]
-    [ComVisible(false)]
-    public class CustomizedEdmModelFactory : CommerceModelFactory
-    {
-        protected override void BuildActions()
-        {
-            base.BuildActions();
-            var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
-            var1.Parameter("LoyaltyCardNumber");
-            var1.Returns();
-        }
-    }
-
+```typescript
+[Export(typeof(IEdmModelFactory))]
+[ComVisible(false)]
+public class CustomizedEdmModelFactory : CommerceModelFactory
+{
+	protected override void BuildActions()
+	{
+		base.BuildActions();
+		var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
+		var1.Parameter("LoyaltyCardNumber");
+		var1.Returns();
+	}
+}
+```
+	
 Before clients can use this new customization, you must adjust the build system to generate the Retail Server proxy code for the new model factory. This configuration step is done in the build system. Finally, you must adjust the web.config file. You must complete this step in the packaging project for Retail Server in the SDK. If local tests will be done, you can also optionally complete this step on the local development topology machine that is used for testing.
 
 ### Adding a new simple controller for an entity
 
 Suppose that you have a simple entity and require a controller to fetch the data. For an example, see the StoreHours sample in the Retail SDK. A new Retail Server controller makes sense, and all the low-level work is done in the CRT (new entity, request, response, and service). To create a new controller, you derive from CommerceController. An example is shown here. The controller name is important and must match the name of the entity.
 
-    [ComVisible(false)]
-    public class StoreHoursController : CommerceController
-    {
-        public override string ControllerName
-        {
-            get { return "StoreHours"; }
-        }
+```typescript
+[ComVisible(false)]
+public class StoreHoursController : CommerceController
+{
+	public override string ControllerName
+	{
+		get { return "StoreHours"; }
+	}
 
-        [HttpPost]
-        [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
-        public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
-        {
-            if (parameters == null)
-            {
-                throw new ArgumentNullException("parameters");
-            }
+	[HttpPost]
+	[CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
+	public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
+	{
+		if (parameters == null)
+		{
+			throw new ArgumentNullException("parameters");
+		}
 
-            var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+		var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
 
-            QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
-            queryResultSettings.Paging = new PagingInfo(10);
+		QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
+		queryResultSettings.Paging = new PagingInfo(10);
 
-            var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
-            PagedResult hours = runtime.Execute(request, null).DayHours;
-            return this.ProcessPagedResults(hours);
-        }
-    }
+		var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
+		PagedResult hours = runtime.Execute(request, null).DayHours;
+		return this.ProcessPagedResults(hours);
+	}
+}
+```
 
 For new entities, you must also override the factory’s **BuildEntitySets()** method, as shown in the following example.
 
-    [Export(typeof(IEdmModelFactory))]
-    [ComVisible(false)]
-    public class CustomizedEdmModelFactory : CommerceModelFactory
-    {
-        protected override void BuildActions()
-        {
-            base.BuildActions();
-            var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
-            action.Parameter("StoreNumber");
-            action.ReturnsCollectionFromEntitySet("StoreHours");
-        }
+```typescript
+[Export(typeof(IEdmModelFactory))]
+[ComVisible(false)]
+public class CustomizedEdmModelFactory : CommerceModelFactory
+{
+	protected override void BuildActions()
+	{
+		base.BuildActions();
+		var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
+		action.Parameter("StoreNumber");
+		action.ReturnsCollectionFromEntitySet("StoreHours");
+	}
 
-        protected override void BuildEntitySets()
-        {
-            base.BuildEntitySets();
-            CommerceModelFactory.BuildEntitySet("StoreHours");
-        }
-    }
+	protected override void BuildEntitySets()
+	{
+		base.BuildEntitySets();
+		CommerceModelFactory.BuildEntitySet("StoreHours");
+	}
+}
+```
 
 ### How to call the new retail server API from MPOS/Cloud POS:
 
@@ -735,12 +762,16 @@ Before calling the new retail server API please make sure you have performed the
 
 #### Cross loyalty sample:
 
-    var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
-    return request.execute<number>();
+```typescript
+var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.customers().getCrossLoyaltyCardDiscountAction(loyaltyCardNumber);
+return request.execute<number>();
+```
 
 #### Store hours sample:
 
-    var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
-    return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
+```typescript
+var request: Commerce.Proxy.Common.IDataServiceRequest = this._context.storeHours().getStoreDaysByStore(storeId);
+return request.execute<Commerce.Proxy.Entities.StoreDayHours[]>();
+```
 
 Please refer the retail SDK POS.Extension.CrossloaylySample and POS.Extension.SToreHoursSample sample projects for more details on how to call the new retail server api in mpos.
