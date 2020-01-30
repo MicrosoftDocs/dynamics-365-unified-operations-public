@@ -85,25 +85,25 @@ The Currency translation type will determine how each main account is translated
 
 ### Setup for Retained Earnings
 Currency translation for retained earnings accounts are subject to some specific requirements:
-- Any retained earnings account must be assigned to the Retained earnings main account category on the **Main accounts** form to translate.
+- Any retained earnings account must be assigned to the Retained earnings main account category on the **Main accounts** page to translate.
 - If the default category was renamed, financial reporting is still expecting the original with the backing ID number of 29. 
 - The retained earnings account only translates system-generated transactions initiated through the fiscal year-end close process. If any transactions are posted directly, they will not be accurately reflected through translation. 
 - The retained earnings balance is translated at the rate that exists at the end of the most recently closed year. This means that it is a point-in time-calculation, not an accumulation of amounts and rates calculated from the beginning balance entered through today. 
 
-Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 () enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality in preview, create a support incident for financial reporting to be enabled in a sandbox or development environment. 
+Functionality that was introduced in preview for Dynamics 365 Finance version 10.0.7 enables functionality for enhanced flexibility for consolidation and dual currency. To enable this functionality in preview, create a support incident for financial reporting to be enabled in a sandbox or development environment. 
 
-This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the **Currency translation type** field on the **Main accounts** page set to **Transaction date** will calculate the translated balance of the account using rates and balances from its entire history using end-of-year rate * balance for all years, rather than only using the most recent year and rate.
+This feature improves the precision of calculations of retained earnings when earnings are calculated across multiple years using currency translation. When you enable this feature, any retained earnings account that has the **Currency translation type** field on the **Main accounts** page set to **Transaction date** will calculate the translated balance of the account using rates and balances from its entire history using the end-of-year rate X the balance for all years, rather than only using the most recent year and rate.
 
 ## Report design elements related to currency
 The are additional report design elements that can be used when doing reporting on currencies.
 
-### Autotext codes
-Users can dynamically see the currency symbol, code, and description they have defined in Dynamics when the currency is changed. Three auto text options are available to Financial reporting to enable this functionality:
+### Auto-text codes
+Users can dynamically see the currency symbol, code, and description they have defined in Dynamics when the currency is changed. Three auto-text options are available to Financial reporting to enable this functionality:
 - Currency symbol (@CurrencySymbol)
 - Currency code (@CurrencyCode)
 - Currency description (@CurrencyDescription)
 
-You can add the auto text both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. 
+You can add the auto-text both in the Column Definition and in the Report Definition headers. Additionally, anywhere in a report where a currency symbol is used will update with the appropriate symbol for the currency from Dynamics. 
 
 The places where currency symbols are used are:
 
@@ -112,9 +112,9 @@ The places where currency symbols are used are:
 - Format Overrides defined in the Row and Column Definition
 
 ### Financial reporting attributes related to currency
-The following are additional report design attributes that can be used when reporting on currencies that will display on account or transaction drilldown in support of amount lines.
+The following are additional report design attributes that can be used when reporting on currencies that will display on account or transaction drill down in support of amount lines.
 
-- Account Currency
+- Account currency
 - Currency code
 - Transaction currency
 - Acquisition date
@@ -126,7 +126,7 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments form in the row definition
 
-Financial reporting will calculate the amount of the difference from currency calculations using the rounding adjustments calculation. To use this, edit the Row Definition and click Edit > Rounding Adjustment. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept.  A line named Rounding Adjustment will be created for the rounding difference row and shown upon drill-down of the row you've selected.
+Financial reporting will calculate the amount of the difference from currency calculations using the rounding adjustments calculation. To use this, edit the **Row Definition** and click **Edit > Rounding Adjustment**. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept. A line named **Rounding Adjustment** will be created for the rounding difference row and shown upon drill-down of the row you've selected.
  
 2. Create a single line with all accounts to calculate the CTA 
 
