@@ -56,7 +56,7 @@ Here are the basic tasks in the sample:
 
 Here is the code for these tasks.
 
-```
+```typescript
 public sealed class CustomerSearchRequestHandler : SingleRequestHandler<CustomersSearchRequest, CustomersSearchResponse>
 {
     /// <summary>
@@ -103,7 +103,7 @@ The following steps show the CRT code changes. For MPOS and the channel database
 
 1. **Read the entity.** Implement the post-trigger for **GetCustomerDataRequest**, read the value from channel database, and add the value to the extension property.
 
-    ```
+    ```typescript
     public class GetCustomerTriggers : IRequestTrigger
     {
         public IEnumerable<Type> SupportedRequestTypes
@@ -144,7 +144,7 @@ The following steps show the CRT code changes. For MPOS and the channel database
 
 2. **Write the entity.** Override the handler for **CreateOrUpdateCustomerDataRequest** to run the original request handler and the custom stored procedure inside a transaction scope. If the database transaction isn't required, a post-trigger suffices here.
 
-    ```
+    ```typescript
     protected override SingleEntityDataServiceResponse<Customer> Process(CreateOrUpdateCustomerDataRequest request)
     {
         using (var databaseContext = new SqlServerDatabaseContext(request))
@@ -188,7 +188,7 @@ The following steps show the CRT code changes:
 1. At the headquarters (HQ), create two custom receipt fields: **EXPIRATIONDATE** for the warranty expiration date and **WARRANTYID** for the warranty ID. Add these fields to the receipt format layout.
 2. To add the custom fields to the sales receipts or any receipt format, implement **GetSalesTransactionCustomReceiptFieldServiceRequest**, as shown in the following code. This code is called every time that the standard code doesn't recognize the receipt field.
 
-    ```
+    ```typescript
     public IEnumerable<Type> SupportedRequestTypes
     {
         get
@@ -209,7 +209,7 @@ The following steps show the CRT code changes:
 
 3. Add the logic for your sample fields.
 
-    ```
+    ```typescript
     private GetCustomReceiptFieldServiceResponse GetCustomReceiptFieldForSalesTransactionReceipts( GetSalesTransactionCustomReceiptFieldServiceRequest request)
     {
         string receiptFieldName = request.CustomReceiptField;
@@ -233,7 +233,7 @@ The following steps show the CRT code changes:
 
 4. To create new receipt type, implement **GetCustomReceiptsRequest**.
 
-    ```
+    ```typescript
     protected override GetReceiptResponse Process(GetCustomReceiptsRequest request)
     {
         Collection<Receipt> result = new Collection<Receipt>();
