@@ -98,41 +98,41 @@ The following configuration settings are available in the Customization.settings
 
 **Example**
 
-```
-        ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
+```Text
+ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\MyCrtExtension.dll"
 ```
 
 - **ISV\_RetailServer\_CustomizableFile** – Specify the details of all the customized Retail Server assemblies. You can have multiple entries, one for each Retail Server assembly.
 
 **Example**
 
-```
-        ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
-        ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
+```Text
+ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension.dll"
+ISV_RetailServer_CustomizableFile Include="$(SdkReferencesPath)\MyRetailServerExtension2.dll"
 ```
 
 - **ISV\_RetailProxy\_CustomizableFile** – Specify the details of all the customized Retail proxy assemblies. You can have multiple entries, one for each Retail proxy assembly. 
 
 **Example**
 
-```
-        ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
+```Text
+ISV_RetailProxy_CustomizableFile Include="$(SdkReferencesPath)\MyRetailProxyExtension.dll"
 ```
 
 - **ISV\_HardwareStation\_CustomizableFile** – Specify the details of all the customized Hardware station assemblies. You can have multiple entries, one for each customized Hardware station assembly.
 
 **Example**
 
-```
-   ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
+```Text
+ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\MyHardwareStationExtension.dll"
 ```
 
 - **ISV\_CustomDatabaseFile\_Upgrade\_Custom** – Specify the details of all the customized database scripts.
 
  **Example**
 
- ```
-     ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
+```Text
+ISV_CustomDatabaseFile_Upgrade_Custom Include="$(SdkRootPath)\Database\Upgrade\Custom\SqlUpdatev1.sql"
 ```
 
 > [!IMPORTANT]
@@ -157,20 +157,19 @@ Before you use the package, you must update the following configuration files if
 
 **Example - How to register extension assemblies and extension key value pair configurations**
 
-
  ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <commerceRuntimeExtensions>
-        <composition>
-            <!-- Register your own assemblies here. -->
-            <add source="assembly" value="my custom library" />
-        </composition>
+<?xml version="1.0" encoding="utf-8"?>
+<commerceRuntimeExtensions>
+    <composition>
+        <!-- Register your own assemblies here. -->
+        <add source="assembly" value="my custom library" />
+    </composition>
         
-        <settings>
-             <add name="ext.myCustomKey1" value="myCustomValue1" />
-             <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
-        </settings>
-    </commerceRuntimeExtensions>
+    <settings>
+        <add name="ext.myCustomKey1" value="myCustomValue1" />
+        <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
+    </settings>
+</commerceRuntimeExtensions>
 ```
 
 - **CommerceRuntime.MPOSOffline.Ext.config** – Register all your CRT extensions, dependent assemblies and extension Key Value pair configurations. The key name for the extension configuration values must be prefixed with "ext." as the CommerceRuntime initialization will enforce this convention and will not load otherwise, additional prefixes can be added to represent the sub-area they control. Ex: "ext.CusomStorageConfig.CustomKeyCart"
@@ -178,18 +177,18 @@ Before you use the package, you must update the following configuration files if
 **Example - How to register extension assemblies and extension key value pair configurations**
 
 ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <commerceRuntimeExtensions>
-        <composition>
-            <!-- Register your own assemblies or types here. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
+<?xml version="1.0" encoding="utf-8"?>
+<commerceRuntimeExtensions>
+    <composition>
+        <!-- Register your own assemblies or types here. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
         
-        <settings>
-             <add name="ext.myCustomKey1" value="myCustomValue1" />
-             <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
-        </settings>
-    </commerceRuntimeExtensions>
+    <settings>
+        <add name="ext.myCustomKey1" value="myCustomValue1" />
+        <add name="ext.myCustomarea.myCustomKey2" value="myCustomValue2" />
+    </settings>
+</commerceRuntimeExtensions>
 ```
 
 - **HardwareStation.Extension.config** – Register all your Hardware station extensions.
@@ -197,28 +196,28 @@ Before you use the package, you must update the following configuration files if
 **Example**
 
 ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <hardwareStationExtension>
-        <composition>
-            <! -- Register your own assemblies or types here. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
-    </hardwareStationExtension>
+<?xml version="1.0" encoding="utf-8"?>
+<hardwareStationExtension>
+    <composition>
+        <! -- Register your own assemblies or types here. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
+</hardwareStationExtension>
  ```
 
 - **RetailProxy.MPOSOffline.ext.config** – Register all your retail proxy extensions.
 
  **Example**
 
-    ```C#
-    <?xml version="1.0" encoding="utf-8"?>
-    <retailProxyExtensions>
-        <composition>
-            <!-- Register your own proxy extension assemblies. -->
-            <add source="assembly" value=" my custom library" />
-        </composition>
-    </retailProxyExtensions>
-    ```
+```C#
+<?xml version="1.0" encoding="utf-8"?>
+<retailProxyExtensions>
+    <composition>
+        <!-- Register your own proxy extension assemblies. -->
+        <add source="assembly" value=" my custom library" />
+    </composition>
+</retailProxyExtensions>
+```
 
 ### Retail Server extension assemblies
 
@@ -238,12 +237,12 @@ If you are not using the legacy payment connector, then comment the legacy payme
 > x.x.x.x in the web.config folder path (\RetailSDK\References\Microsoft.Dynamics.Retail.HardwareStation.WebHost.x.x.x.x\Pkg\bin) is the version number. This will vary based on your Retail SDK version number.
 
 ```C#
-    <composition>
-      <!-- Defaulting to legacy payment devices.
- <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
-      -->
-      <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
-    </composition>
+<composition>
+    <!-- Defaulting to legacy payment devices.
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.Legacy.PaymentDeviceAdapter"/>
+    -->
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.HardwareStation.Peripherals.PaymentDeviceAdapter" />
+</composition>
 ```
 
 > [!NOTE]
@@ -271,7 +270,7 @@ Some of the dependency packages and references have moved to NuGet packages to m
 
 To generate the retail deployable package, open the MSBuild build Command Prompt window. (On the developer virtual machine, search for **msbuild** on the **Start** menu.) Then run the following command.
 
-```
+```Console
 msbuild /p:Configuration=Release
 ```
 
