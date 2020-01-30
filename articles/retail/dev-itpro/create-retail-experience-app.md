@@ -62,18 +62,19 @@ You must modify the Retail Experience app solution before it can be loaded corre
 1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
 2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
 
-
-~~~
+    ```xml
     Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
-~~~
+    ```
 
 3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
 
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
-        <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
-        <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
-        <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
-
+    ```xml
+    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.props" />
+    <Import Project="......BuildToolsMicrosoft.Dynamics.RetailSdk.Build.settings" />
+    <Import Project="$(SdkRootPath)BuildToolsMicrosoft.Dynamics.RetailSdk.Build.targets" />
+    <HintPath>......ReferencesXamarin.iOS.0.0.0Xamarin.iOS.dll</HintPath>
+    ````
+				
 4.  In Visual Studio, open Sample.ShoppingApp.sln, and add existing projects from the Droid and iOS folders. (Right-click the solution, and then select **Add** &gt; **Existing Projects in Visual Studio**.)
 5.  Xamarin.Forms fixed an issue with the version 2.3.2.127 that is required for the app. Please upgrade the Xamarin.Forms version as described below:
     1.  Open the .csproj files for both Android and iOS projects and replace the line "&lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.1.114&lt;/PkgXamarin\_Forms&gt;" with &lt;PkgXamarin\_Forms&gt;$(NugetPackagesRoot)Xamarin.Forms.2.3.2.127&lt;/PkgXamarin\_Forms&gt;
@@ -195,7 +196,7 @@ To change the text for the iOS app, open the TextResources.resx file, and edit t
 
 To change the colors that appear in the iOS app, open the config.xml file, and change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground**. 
 
-[!NOTE]
+> [!NOTE]
 > The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
 
 ## Build, test, and distribute apps
@@ -228,5 +229,5 @@ For detailed information about the distribution techniques that are available fo
 
 To learn how to maintain your signing identities and certificates, refer to [What is app signing](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html). 
 
-[!NOTE]
+> [!NOTE]
 > If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).
