@@ -537,15 +537,15 @@ Any new entity must be of the **CommerceEntity** type. When you use this type, l
 ```typescript
 public class StoreDayHours : CommerceEntity
 {
-	private const string DayColumn = "DAY";
-	private const string OpenTimeColumn = "OPENTIME";
-	private const string CloseTimeColumn = "CLOSINGTIME";
-	private const string IdColumn = "RECID";
+    private const string DayColumn = "DAY";
+    private const string OpenTimeColumn = "OPENTIME";
+    private const string CloseTimeColumn = "CLOSINGTIME";
+    private const string IdColumn = "RECID";
 
-	public StoreDayHours()
-		: base("StoreDayHours")
-	{
-	}
+    public StoreDayHours()
+        : base("StoreDayHours")
+    {
+    }
 
 	[DataMember]
 	[Column(DayColumn)]
