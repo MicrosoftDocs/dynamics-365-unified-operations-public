@@ -63,22 +63,22 @@ If you created a new Retail HQ table and a new channel database table, follow th
 1. Create a custom project and use the Application Object Tree (AOT) to add a custom table.
 2. Create a new resource file to add all custom job information. Here is the template for the resource file.
 
-    ```
+    ```xml
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
         </jobs>
         <Subjobs>
             <Subjob Id="" TargetTableSchema="" TargetTableName="">
         </Subjobs>
-     </RetailCdxSeedData>
+    </RetailCdxSeedData>
     ```
 
 3. Use the AOT to create a new XML resource. In the XML file for the resource, specify the new table and new job details, as shown in the following example.
 
-    > [NOTE]
+    > [!NOTE]
     > You can either add the new table as part of the existing job, or create a new job and add this table. In this case, we are creating a new job, where the job ID is **7000** and the custom table is named **ContosoRetailSeatingArrangementData**.
 
-```
+	```xml
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
             <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
@@ -97,11 +97,11 @@ If you created a new Retail HQ table and a new channel database table, follow th
             </Subjob>
         </Subjobs>
     </RetailCdxSeedData>
-```
+	```
 
-By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Retail side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
+	By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Retail side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
 
-Similarly, in the mapping section, only the names of fields on the Retail side are specified (**AxFields**). By default, it's assumed that the same field name is also used on the channel side. However, the field name on the corresponding channel table might sometimes differ from the field name on the Retail side. In this case, in the mapping, you can use the **ToName** attribute of the **&lt;Field&gt;** node to set the name of the field on the channel side.
+	Similarly, in the mapping section, only the names of fields on the Retail side are specified (**AxFields**). By default, it's assumed that the same field name is also used on the channel side. However, the field name on the corresponding channel table might sometimes differ from the field name on the Retail side. In this case, in the mapping, you can use the **ToName** attribute of the **&lt;Field&gt;** node to set the name of the field on the channel side.
 
 4. Right-click the project, and then select **Add** &gt; **New Item**.
 5. In the **Add New item** dialog box, select **Resources**, name the resource file **RetailCDXSeedDataAX7_Custom**, and then select **Add**.
@@ -112,19 +112,19 @@ Similarly, in the mapping section, only the names of fields on the Retail side a
 7. Add a new class that should be used to handle the **registerCDXSeedDataExtension** event. Search for the **RetailCDXSeedDataBase** class, and then open it in the designer. Right-click the **registerCDXSeedDataExtension** delegate, and then select **Copy event handler**.
 8. Go to the event handler class that you created and paste the following event handler code into it.
 
-    ```
+    ```csharp
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
         resources.addEnd(resourceStr(RetailCDXSeedDataAX7_Custom));
     }
     ```
 
-> [NOTE]
-> Because there are two definitions for CDX seed data in the system, you must specify that your extension CDX seed data should be added only if the CDX seed data that is being generated is the version that you're trying to extend. If the **if** condition is removed, your extension CDX seed data could also be applied on top of the N-1 CDX seed data and cause unintended results. As a best practice, try to avoid any other customization on CDX/Retail scheduler sync framework class in X++. This could impact the flow of data when extra processing is performed. The suggested pattern is to have a separate class and batch job to process the uploaded data.
-
-> You don't have to create separate resource files for the various scenarios that are mentioned later. You can have one file that contains all the custom job information and register that file from the extension class.
-
-> When the Retail initialization class runs, it looks for any extension that implements this handler. If an extension is found, the runtime will also initialize the custom information that is found in the resource file.
+	> [!NOTE]
+	> Because there are two definitions for CDX seed data in the system, you must specify that your extension CDX seed data should be added only if the CDX seed data that is being generated is the version that you're trying to extend. If the **if** condition is removed, your extension CDX seed data could also be applied on top of the N-1 CDX seed data and cause unintended results. As a best practice, try to avoid any other customization on CDX/Retail scheduler sync framework class in X++. This could impact the flow of data when extra processing is performed. The suggested pattern is to have a separate class and batch job to process the uploaded data.
+	>
+	> You don't have to create separate resource files for the various scenarios that are mentioned later. You can have one file that contains all the custom job information and register that file from the extension class.
+	>
+	> When the Retail initialization class runs, it looks for any extension that implements this handler. If an extension is found, the runtime will also initialize the custom information that is found in the resource file.
 
 9. Go to **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**.
 10. Run the Retail CDX initialization by clicking the OK button on **Initialize retail scheduler** dialog.
@@ -145,7 +145,7 @@ To pull data from a new channel table to Retail HQ, you have two options:
 
 + Update the existing resource file with the new information, so that you don't have to add a new line. To upload you set the **IsUpload** attribute to **true** in the resource file and add information about your custom pull job, as shown in the following example.
 
-    ```
+    ```xml
     <Subjob Id="ContosoRetailSeatReservationTrans" TargetTableSchema="ext" IsUpload="true"
     ReplicationCounterFieldName="ReplicationCounterFromOrigin" AxTableName="ContosoRetailSeatReservationTrans">
         <ScheduledByJobs>
@@ -164,7 +164,7 @@ To pull data from a new channel table to Retail HQ, you have two options:
         </AxFields>
     </Subjob>
     ```
-  > [NOTE]
+  > [!NOTE]
   > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
 
 ## Other scenarios
@@ -174,7 +174,7 @@ For the remaining push and pull scenarios, only the information for the sample r
 
 You can push the existing unmapped column to either new extension columns or existing columns in the channel database, as shown in the following example. 
 
-```
+```xml
 <Subjob Id="RetailChannelTable" TargetTableSchema="ext">
     <AxFields>
         <Field Name="Payment"/>
@@ -189,15 +189,15 @@ You can push the existing unmapped column to either new extension columns or exi
 
 If the table has a primary key that isn't **RecId**, your extension table on the channel side should also contain the non-**RecId** primary keys, as shown in the following example.
 
-```
-    <Subjob Id="RetailCustTable" TargetTableSchema="ext">
-        <AxFields>
+```xml
+	<Subjob Id="RetailCustTable" TargetTableSchema="ext">	
+		<AxFields>
             <Field Name="ReturnTaxGroup_W"/>
             <!-- Existing column which was not pushed to channel db-->
             <Field Name="SSNNumber"/>
             <!-- New column from the extended table-->
-        </AxFields>
-    </Subjob>
+		</AxFields>
+	</Subjob>
 </Subjobs>
 ```
 
@@ -205,7 +205,7 @@ If the table has a primary key that isn't **RecId**, your extension table on the
 
 If you add new columns and want to pull in part of the existing table, use the following code.
 
-```
+```xml
 <Subjob Id="RetailTransactionTable" TargetTableName="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext"  OverrideTarget="false">
     <AxFields>
         <Field Name="ContosoRetailSeatNumber"/>
@@ -218,7 +218,7 @@ If you add new columns and want to pull in part of the existing table, use the f
 
 To move an existing subjob to another job, you can change the **ScheduledByJob** attribute in the resource file and it is run as part of the event handler.
 
-```
+```xml
 <Subjob Id="DirPartyTable">
     <ScheduledByJobs>
         <ScheduledByJob>1000</ScheduledByJob>
@@ -274,7 +274,7 @@ The table extension on the Retail side is already created in the sample. To crea
 5. Save the changes, and build your project.
 6. Right-click your project, and then select **Synchronize the database**.
 
-    > NOTE:
+    > [!NOTE]
     > As a best practice, the unique prefix is added to the new column names to help prevent future naming conflicts. A naming conflict can occur if another ISV creates a column that has the same name, or if Microsoft releases an update that uses a column that has the same name. Even though the extension table is created in a different AOT asset, the new columns are added to the original table in SQL.
 
 ### Extend the database on the channel side
@@ -287,7 +287,7 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
 
 The sample CDX resource file in the Retail SDK contains additional customizations. However, for our example of RetailTransactionTable extension, the section in the following code is the only section that is required to pull data from the channel side back to Retail HQ.
 
-    ```
+    ```xml
     <RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7">
         <Subjobs>
             <!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ.For upload subjobs, set the OverrideTarget property to  "false", as ilustrated below. This will tell CDX to use the table defined by TargetTableName and TargetTableSchema as extension table on this subjob.-->
@@ -331,7 +331,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
 6. Create a new class, and give it a name, such as **ContosoRetailCDXSeedDataAX7EventHandler**. You can specify any name. However, as a best practice, be sure to prefix the class name with your prefix.
 7. Paste the code that you copied in step 5.
 
-    ```
+    ```csharp
     class ContosoRetailCDXSeedDataAX7EventHandler
     {
         /// <summary>
@@ -347,7 +347,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
 8. The CDX extensibility framework calls this method when you select the Retail initialization. To help guarantee that the CDX extensibility module uses the CDX customization, paste the following code into the preceding method.
     
-    ```
+    ```csharp
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
     {
         resources.addEnd(resourceStr(RetailCDXSeedDataAX7_ContosoRetailExtension));
@@ -378,7 +378,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
     1. Create some transactions in Retail Modern POS (MPOS).
     2. Because the extension table isn't used in the Commerce Runtime (CRT) and MPOS, you must manually insert data into the extension table. Run the following script after you change the required values.
 
-        ```
+        ```sql
         INSERT INTO [ext].[CONTOSORETAILTRANSACTIONTABLE] (
         [CONTOSORETAILSEATNUMBER],
         [CONTOSORETAILSERVERSTAFFID],
