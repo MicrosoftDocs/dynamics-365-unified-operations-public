@@ -36,7 +36,6 @@ Retail POS APIs help you to easily build extensions or new features to the POS a
 
 Extension patterns have been unified across commerce runtime (CRT), POS, and Hardware station (HWS) by following the request/response pattern. All the POS APIs are exposed as request/response like CRT and HWS. This topic is applicable for Dynamics 365 for Finance and Operations applications or Dynamics 365 Retail. 
 
-
 POS APIs are categorized into three different scenarios:
 
 - **Consume** – Consume public APIs in your extension.
@@ -58,45 +57,49 @@ Use the following steps to consume Retail APIs in your extensions.
 
     For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.
 
- The pattern is import { api name } from "PosApi/Consume/Module name";
-```Typescript
- import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
-```
+    The pattern is import { api name } from "PosApi/Consume/Module name";
+    
+    ```typescript
+    import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
+    ```
 
 2.  Import the client entities and proxy entities if required.
 
-```Typescript
+    ```typescript
     import { ClientEntities } from "PosApi/Entities";
 
     import { ProxyEntities } from "PosApi/Entities";
-```
+    ```
 3.  Declare the API variable and execute it using the POS runtime, which you can access the runtime by using: this.context.runtime.executeAsync("api name")
 
-```Typescript
+    ```typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
-```
+    ```
 
- For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
-```Typescript
-let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
+    For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
 
- attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
+    ```Typescript
+    let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
- attributeValue.TextValue = "Yes";
+    attributeValue.Name = PreEndTransactionTrigger.B2B_CART_ATTRIBUTE_NAME;
 
- let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
+    attributeValue.TextValue = "Yes";
 
- let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
+    let attributeValues: ProxyEntities.AttributeValueBase[] = [attributeValue];
 
-new SaveAttributesOnCartClientRequest(attributeValues);
+    let saveAttributesOnCartRequest: SaveAttributesOnCartClientRequest<SaveAttributesOnCartClientResponse> =
 
-result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+    new SaveAttributesOnCartClientRequest(attributeValues);
 
-```
+    result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
+
+    ```
+
 ### Samples showing how to access APIs
 
 **Get Current cart**
-```
+
+```typscript
 // Gets the current cart.
 
  let currentCart: ProxyEntities.Cart;
@@ -111,7 +114,8 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 ```
 **Get Current customer added to cart**
-```
+
+```typescript
  // Gets the current customer.
 
  let result: Promise<ClientEntities.ICancelableDataResult<GetCustomerClientResponse>>;
@@ -130,10 +134,12 @@ currentCart = getCurrentCartClientResponse.data.result;
 
 }
 ```
+
 **Force void transaction**
-```
+
+```typescript
  // Force void tarnsaction.
-```Typescript
+
  let forceVoidTransactionRequest: VoidTransactionOperationRequest<VoidTransactionOperationResponse> =
 
  new VoidTransactionOperationRequest<VoidTransactionOperationResponse>(false, this.context.logger.getNewCorrelationId());
