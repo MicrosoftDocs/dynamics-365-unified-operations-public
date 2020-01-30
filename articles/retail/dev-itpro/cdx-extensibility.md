@@ -78,7 +78,7 @@ If you created a new Retail HQ table and a new channel database table, follow th
     > [!NOTE]
     > You can either add the new table as part of the existing job, or create a new job and add this table. In this case, we are creating a new job, where the job ID is **7000** and the custom table is named **ContosoRetailSeatingArrangementData**.
 
-	```xml
+    ```xml
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
             <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
@@ -97,7 +97,7 @@ If you created a new Retail HQ table and a new channel database table, follow th
             </Subjob>
         </Subjobs>
     </RetailCdxSeedData>
-	```
+    ```
 
 	By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Retail side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
 
@@ -164,6 +164,7 @@ To pull data from a new channel table to Retail HQ, you have two options:
         </AxFields>
     </Subjob>
     ```
+    
   > [!NOTE]
   > You can either add this new table as part of the existing pull job (P-1000) or create a new pull job.
 
@@ -190,14 +191,14 @@ You can push the existing unmapped column to either new extension columns or exi
 If the table has a primary key that isn't **RecId**, your extension table on the channel side should also contain the non-**RecId** primary keys, as shown in the following example.
 
 ```xml
-	<Subjob Id="RetailCustTable" TargetTableSchema="ext">	
-		<AxFields>
-			<Field Name="ReturnTaxGroup_W"/>
-			<!-- Existing column which was not pushed to channel db-->
-			<Field Name="SSNNumber"/>
-			<!-- New column from the extended table-->
-		</AxFields>
-	</Subjob>
+    <Subjob Id="RetailCustTable" TargetTableSchema="ext">	
+        <AxFields>
+            <Field Name="ReturnTaxGroup_W"/>
+            <!-- Existing column which was not pushed to channel db-->
+            <Field Name="SSNNumber"/>
+            <!-- New column from the extended table-->
+        </AxFields>
+    </Subjob>
 </Subjobs>
 ```
 
@@ -289,17 +290,17 @@ The sample CDX resource file in the Retail SDK contains additional customization
 
 ```xml
 <RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7">
-	<Subjobs>
-		<!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ.For upload subjobs, set the OverrideTarget property to  "false", as ilustrated below. This will tell CDX to use the table defined by TargetTableName and TargetTableSchema as extension table on this subjob.-->
-		<Subjob Id="RetailTransactionTable" TargetTableName ="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext" OverrideTarget="false">
-			<!--Notice that there is no mention of the <ScheduledByJobs></ScheduledByJobs> because the subjob is already part of an upload job. -->
-			<AxFields>
-				<!--If you notice the existing columns are not listed here in the <Field> tag, it's because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. -->
-				<Field Name="ContosoRetailSeatNumber" />
-				<Field Name="ContosoRetailServerStaffId" />
-			</AxFields>
-		</Subjob>
-	</Subjobs>
+    <Subjobs>
+        <!--Adding additional columns to (existing) RetailTransactionTable and wants to pull it back to HQ.For upload subjobs, set the OverrideTarget property to  "false", as ilustrated below. This will tell CDX to use the table defined by TargetTableName and TargetTableSchema as extension table on this subjob.-->
+        <Subjob Id="RetailTransactionTable" TargetTableName ="CONTOSORETAILTRANSACTIONTABLE" TargetTableSchema="ext" OverrideTarget="false">
+            <!--Notice that there is no mention of the <ScheduledByJobs></ScheduledByJobs> because the subjob is already part of an upload job. -->
+            <AxFields>
+                <!--If you notice the existing columns are not listed here in the <Field> tag, it's because the existing fields are already mapped in the main RetailCdxSeedData resource file, we only add the delta here. -->
+                <Field Name="ContosoRetailSeatNumber" />
+                <Field Name="ContosoRetailServerStaffId" />
+            </AxFields>
+        </Subjob>
+    </Subjobs>
 </RetailCdxSeedData>
 ```
 
