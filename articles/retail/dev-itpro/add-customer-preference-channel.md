@@ -58,43 +58,49 @@ Next, you create a subjob of the CustTable job to move data in the new table to 
 3. In the **Retail channel schema** field, select **Dynamics 365 Retail.**
 4. In the **Channel table name** field, select **ax.RetailCustPreference**.
 5. In the **table name** field, select **RetailCustPreference**.
-6. On the **Channel field mapping** tab, click **Match fields**. The **From** field and **To** field columns are filled in. **Alternative approach, instead of using the UI in the steps above this can also accomplished in code:**
-   1.  Start Microsoft Visual Studio, and then, in the Application Object Tree (AOT) find the **RetailCDXSeedData\_AX7** class.
-   2.  Add the following method.
+6. On the **Channel field mapping** tab, click **Match fields**. The **From** field and **To** field columns are filled in. 
 
-           private void C_RetailCustPreference()
-           {
-               jobIDContainer = ['1010'];
-               subjobID = 'RetailCustPreference';
-               axTableName = tableStr(RetailCustPreference);
-               axFieldNames = [
-               fieldStr(RetailCustPreference, AccountNum),
-               fieldStr(RetailCustPreference, EmailOptIn),
-               fieldStr(RetailCustPreference, RecId)
-               ];
-           }
+**Alternative approach, instead of using the UI in the steps above this can also accomplished in code:**
+1.  Start Microsoft Visual Studio, and then, in the Application Object Tree (AOT) find the **RetailCDXSeedData\_AX7** class.
+2.  Add the following method.
 
-   3.  Compile the class.
-   4.  Reset Internet Information Services (IIS).
-   5.  Switch to the client.
-   6.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
+	```xml
+	private void C_RetailCustPreference()
+	{
+		jobIDContainer = ['1010'];
+		subjobID = 'RetailCustPreference';
+		axTableName = tableStr(RetailCustPreference);
+		axFieldNames = [
+		fieldStr(RetailCustPreference, AccountNum),
+		fieldStr(RetailCustPreference, EmailOptIn),
+		fieldStr(RetailCustPreference, RecId)
+		];
+	}
+	```
+	
+3.  Compile the class.
+4.  Reset Internet Information Services (IIS).
+5.  Switch to the client.
+6.  Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Initialize retail scheduler**. The required scheduler subjob definition is generated, and the subjob is added to the scheduler job.
 
 7. Click **Retail** &gt; **Headquarters setup** &gt; **Retail scheduler** &gt; **Retail channel schema**.
 8. On the **Retail channel schema** page, in the left navigation pane, click **Dynamics 365 Retail.**
 9. On the **Retail data distribution** tab, click **Export**.
 10. Follow one of these steps, depending on the browser that you're using:
-    -   If you're using Google Chrome, you should be prompted to download an XML file. Save the file to a path.
-    -   If you're using Internet Explorer, a webpage will open. Right-click in the page, and then click **View source**. Then save the contents of the page source to a file path.
+     -   If you're using Google Chrome, you should be prompted to download an XML file. Save the file to a path.
+     -   If you're using Internet Explorer, a webpage will open. Right-click in the page, and then click **View source**. Then save the contents of the page source to a file path.
 
 11. In a text editor such as Notepad++, open the XML file that you just saved, and follow these steps.
-    1.  Search for the following line: **&lt;Table name=“RetailCustTable”&gt;**. There are two instances, at approximately line 29 and line 744.
-    2.  Add the following code after the last line in both **&lt;Table name=“RetailCustTable”&gt;** code blocks. You add the code after the **&lt;/Table&gt;** tag.
+     1.  Search for the following line: **&lt;Table name=“RetailCustTable”&gt;**. There are two instances, at approximately line 29 and line 744.
+     2.  Add the following code after the last line in both **&lt;Table name=“RetailCustTable”&gt;** code blocks. You add the code after the **&lt;/Table&gt;** tag.
 
-            <Table name="RetailCustPreference">
-                <LinkGroup>
-                    <Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
-                </LinkGroup>
-            </Table>
+		```xpp
+		<Table name="RetailCustPreference">
+			<LinkGroup>
+				<Link type="FieldMatch" fieldName="accountNum" parentFieldName="AccountNum" />
+			</LinkGroup>
+		</Table>
+		```
 
 12. After you've finished editing the file, go back to client and the **Retail channel schema** page. In the left navigation pane, click **Dynamics 365 Retail.**
 13. On the **Retail data distribution** tab, click **Import**.
