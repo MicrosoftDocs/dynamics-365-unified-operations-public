@@ -5,7 +5,7 @@ title: Prepare for integration with MTD for VAT (United Kingdom)
 description: This topic explains the process of setting up Making Tax Digital (MTD) for value-added tax (VAT) in the United Kingdom.
 author: lizagolub
 manager: AnnBe
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -802,8 +802,8 @@ System admin consent is available in the following versions of the ER configurat
 | ER configuration name                   | Type                                 | Version |
 |-----------------------------------------|--------------------------------------|---------|
 | Electronic Messages framework model     | Model                                | 27      |
-| MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 27.34   |
-| MTD VAT web request headers format (UK) | Format (exporting)                   | 27.24   |
+| MTD VAT model mapping (UK)              | Model mapping (exporting, importing) | 27.35   |
+| MTD VAT authorization format (UK)       | Format (exporting, importing)        | 27.11   |
 
 > [!IMPORTANT]
 > When new versions of the ER configurations are imported, verify that the following configurations are marked as **Default for model mapping**:
@@ -1289,15 +1289,15 @@ The hotfix is delivered in the following version of the ER configuration:
 
 This model mapping configuration should be used until your application is updated to version 10.0.7 or later. In these versions, the issue is fixed starting from Tax declaration model mapping.version.32.37.
 
-### Consent of system admin to transmit information outside of D365 using the integration with HMRC
+### Consent of system admin to transmit information outside of D365 using the integration with HMRC (KB 4531237)
 
 System admin consent is available in the following versions of the ER configurations.
 
 | ER configuration name                   | Version |
 |-----------------------------------------|---------|
 | Electronic Messages framework model     | 27      |
-| MTD VAT model mapping (UK)              | 27.36   |
-| MTD VAT web request headers format (UK) | 27.24   |
+| MTD VAT model mapping (UK)              | 27.35   |
+| MTD VAT authorization format (UK)       | 27.11   |
 
 These versions of the ER configurations must be imported and used in the following version and later of the application.
 
