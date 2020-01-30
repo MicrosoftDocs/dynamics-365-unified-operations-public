@@ -2,7 +2,7 @@
 # required metadata
 
 title: Printer ER destination type
-description: You can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents in either PDF or Microsoft Office formats (Excel\Word). 
+description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format that is configured to generate outbound documents in either PDF or Microsoft Office formats (Excel\Word). 
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 ---
 
-# <a name="PrinterDestinationType">Printer destination</a>
+# <a name="PrinterDestinationType"></a>Printer destination
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,36 +38,37 @@ You can send a generated document directly to a network printer for direct print
 
 ## Prerequisites
 
-Before you begin, you must install and configure the Document Routing Agent, and then register the network printers. For more information, see [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
+Before you begin, you must install and configure the Document Routing Agent, and then register the network printers. For more information, see [Install the Document Routing Agent to enable network printing](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/install-document-routing-agent).
 
-## Enable Printer destination
+## Make the Printer destination available
 
-To make the **Printer** destination available in the current Dynamics 365 Finance instance, go to the **Feature management** workspace and enable the following features:
+To make the **Printer** destination available in the current instance of Microsoft Dynamics 365 Finance, go to the **Feature management** workspace, and turn on the following features, in this order:
 
-1. **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF**
-2. **Document Routing Agent as Electronic Reporting destination for outbound documents** 
+1. Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF
+2. Document Routing Agent as Electronic Reporting destination for outbound documents
 
-[![Enable ER printer destination feature in Feature management](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Turning on the ER printer destination feature in Feature management](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### Applicability
-The Printer destination can be configured for the only file components that are used to generate an output in either printable PDF format (PDF Merger or PDF file format elements) or in Microsoft Office Excel/Word formats (Excel file). When an output is generated in PDF format, this output is sent to a printer. When an output is generated in Microsoft Office format, it is automatically converted to PDF format and sent to a printer.
+
+The **Printer** destination can be configured only for file components that are used to generate output in either printable PDF format (PDF Merger or PDF file format elements) or Microsoft Office Excel/Word format (Excel file). When output is generated in PDF format, it's sent to a printer. When output is generated in Microsoft Office format, it's automatically converted to PDF format and then sent to a printer.
 
 ### Limitations
 
-This is a preview feature and is subject to the same terms of use described in the [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
+This feature is a preview feature and is subject to the terms of use that are described in [Supplemental Terms of Use for Microsoft Dynamics 365 Previews](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-This destination type is implemented only for cloud deployments.
+The **Printer** destination is implemented only for cloud deployments.
 
-### Usage
+### Use the Printer destination
 
-1. Set the **Enabled** field to **Yes** to send a generated document to a printer.
+1. Set the **Enabled** option to **Yes** to send a generated document to a printer.
 2. In the **Printer name** field, select the required network printer.
-3. Set the **Save in print archive** field to **Yes** if you want to store a generated output in the print archive for further printing. Archived outputs can be accessed later by using the going to **Organization administration** \> **Inquiries and reports** \> **Report archive**.
+3. Set the **Save in print archive?** option to **Yes** to store the generated output in the print archive, so that it's available for further printing. To access archived output later, go to **Organization administration** \> **Inquiries and reports** \> **Report archive**.
 
-    [![Configuring Printer destination](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Using the Printer destination](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
-> The **Convert to PDF** option doesn't have to be enabled when you configure the **Printer** destination. The PDF conversion will be performed for printing regardless.
+> The **Convert to PDF** option doesn't have to be turned on when you configure the **Printer** destination. The PDF conversion for printing purposes will occur even if the option is turned off.
 
 ## Additional resources
 
