@@ -117,4 +117,3 @@ The following values are reserved for future use:
 
 [Deploying custom Help](deploy.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
-[Connect a custom help site](../../fin-ops/get-started/help-custom.md)  

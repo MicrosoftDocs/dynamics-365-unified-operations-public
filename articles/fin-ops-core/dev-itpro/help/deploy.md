@@ -154,6 +154,5 @@ The search and fallback order are defined in the following order of priority:
 [Example of Deploying Custom Help on Azure](walkthrough-help-azure.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in across product and Help](language-locale.md)  
-[Connect a custom help site](../../fin-ops/get-started/help-custom.md)  
 [Connect the Help system](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)  

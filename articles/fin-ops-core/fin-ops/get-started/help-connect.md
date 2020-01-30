@@ -5,7 +5,7 @@ title: Connect the Help system
 description: This topic describes the components of the Help system for certain Dynamics 365 apps, and provides an overview of how to connect them and a summary of how to create custom help. 
 author: margoc
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 01/30/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -77,7 +77,7 @@ Translated Task guides were first shipped in the May 2016 APQC Unified Library, 
 > - If a task guide has been translated, when you open that task guide all the text of the task guide will appear in your selected language.
 > - If a task guide has not yet been translated, when you open it, only some of the text (the text of the controls) will appear in your selected language.
 
-## Creating custom help
+## Adding custom help
 
 You can use task guides to create custom help, or connect a website to the Help pane.
 
@@ -89,12 +89,16 @@ For partners, if you promote a library to be a corporate library, and include it
 
 ### Connect a custom help site
 
-Microsoft has provided a toolkit with sample code that can help you create and connect a custom help site to the Help pane. For more information, see [Connect a custom help site](help-custom.md) and [Deploying custom Help](../../dev-itpro/help/deploy.md).  
+Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience, including adding custom help to the in-product help pane.  
+
+Microsoft has provided a toolkit with sample code to help you deploy and connect custom Help to the Help pane. In [Deploying custom Help](../../dev-itpro/help/deploy.md), you can read about how you can set up a custom Help solution by publishing content as HTML to a website, make the content searchable, and extending the Help pane to connect to the website.  
+
+If you want to collaborate with Microsoft on tools and processes for customizing help, please fill in the form at [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback).  
 
 ## See also
 
 [Help overview](help-overview.md)  
-[Connect a custom help site](help-custom.md)  
-[Deploying custom Help](../../dev-itpro/help/deploy.md)  
+[Deploying custom help](../../dev-itpro/help/deploy.md)  
 [Task recorder overview](../../dev-itpro/user-interface/task-recorder.md)  
 [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
+[Custom Help GitHub repository](https://github.com/microsoft/dynamics356f-o-custom-help)  

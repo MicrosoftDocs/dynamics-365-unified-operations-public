@@ -94,4 +94,4 @@ Most translation services treat certain languages as variants of another languag
 
 [Deploying custom Help](deploy.md)  
 [Running the Custom Help Toolkit](custom-help-toolkit.md)  
-[Connect a custom help site](../../fin-ops/get-started/help-custom.md)  
+
