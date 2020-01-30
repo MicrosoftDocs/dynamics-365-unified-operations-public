@@ -404,7 +404,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
     4. In the list of distribution schedules, select **P-0001**. This distribution schedule contains the RetailTransactionTable subjob that you customized.
     5. On the Action Pane, select **Run**. When the confirmation message appears, select **Yes**.
     6. On the Action Pane, select **History** to open the **History** page, where you can verify that the uploaded session was completed successfully.
-    7. On the **History** page, verify that there is a new upload session record. Also verify that the status of the record is set to **Applied**, and that the **Rows Affected** value isn't **0** (zero).
+    7. On the **History** page, verify that there is a new upload session record. Also verify that the status of the record is set to **Applied**, and that the **Rows Affected** value isn't **0** (zero). 
 
 3. If the upload session is applied successfully, go to **Retail** > **Inquiries and reports** > **Retail store transactions**, and search for the new transactions that you just uploaded. Verify that the transactions, seat number, and server staff ID custom columns have the expected values.
 
