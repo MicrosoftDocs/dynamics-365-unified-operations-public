@@ -47,7 +47,7 @@ The online software development kit (SDK) provides a **yarn msdyn365 add-module 
 
 For example, run the following command to create a module that is named **campaignPageContainer**:
 
-```console
+```Console
 yarn msdyn365 add-module campaignPageContainer
 ```
 
@@ -235,7 +235,7 @@ To preview the page in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```console
+    ```Console
     c:\repos\MyEcommerceSite\yarn start
     ```
 
