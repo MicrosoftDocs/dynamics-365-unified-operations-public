@@ -156,7 +156,7 @@ To create a new custom data action, follow these steps.
 1. At a command prompt, go to your Dynamics 365 Commerce extensibility code directory. For this example, the directory is **c:\\repos\\myEcommerce**.
 1. Run the **yarn msdyn365 add-data-action DATA\_ACTION\_NAME** command-line interface (CLI) command to create a module, as shown in the following example.
 
-    ```console
+    ```Console
     c:\repos\myEcommerceSite>yarn msdyn365 add-data-action getProductReviews
     ```
 
