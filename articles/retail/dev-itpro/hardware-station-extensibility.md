@@ -71,8 +71,7 @@ For this scenario, we will add support for a cash dispenser device in Hardware S
 -   The new **CashDispenser** controller must extend **ApiController** and **IHardwareStationController**.
 -   The **Export** attribute string here specifies the device that this controller is used for: \[Export("CASHDISPENSER", typeof(IHardwareStationController))\]
 
-<!-- -->
-
+    ```csharp
     namespace Contoso
     {
         namespace Commerce.HardwareStation.CashDispenserSample
@@ -90,7 +89,8 @@ For this scenario, we will add support for a cash dispenser device in Hardware S
             { 
                 // Add your controller code here
             }
-
+    ```
+    
 ### Scenario 2: Adding a new device type for an existing device
 
 For this scenario, we will add support for a new device type for an existing device (an Audio Jack MSR implementation).
@@ -98,8 +98,7 @@ For this scenario, we will add support for a new device type for an existing dev
 -   The **Export** attribute string specifies the device that this controller is used for: \[Export("MSR", typeof(IHardwareStationController))\]
 -   Because there will be multiple controllers for MSRs, Hardware Station uses the configuration file to determine which implementation to use at run time. For more information, see the "Retail Hardware Station extensibility configuration" section later in this article.
 
-<!-- -->
-
+    ```csharp
     namespace Contoso
     {
         namespace Commerce.HardwareStation.RamblerService
@@ -122,7 +121,8 @@ For this scenario, we will add support for a new device type for an existing dev
             {
                 // Add controller implementation here
             }
-
+    ```
+    
 ## Retail Hardware Station extensibility configuration
 ### Configuration for IIS-hosted Hardware Station
 
@@ -134,8 +134,5 @@ Before Hardware Station can consume your extension, the **composition** section 
 
 Before local Hardware Station can consume your extension, the **composition** section in the Modern POS DLLHost.exe.config file (C:\\Program Files (x86)\\Microsoft Dynamics AX\\70\\Retail Modern POS\\ClientBroker) must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence.
 
-[![Local Hardware station config](./media/hws-dll-host-local-config.png)
-
-
-
+[![Local Hardware station config]](./media/hws-dll-host-local-config.png)
 
