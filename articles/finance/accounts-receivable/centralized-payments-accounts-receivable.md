@@ -1,4 +1,4 @@
----https://github.com/marketplace
+---
 # required metadata
 
 title: Centralized payments for Accounts receivable
