@@ -587,20 +587,20 @@ When you want to use the new entity in a service, the process is straightforward
 ```typescript
 private GetStoreHoursDataResponse GetStoreDayHours(GetStoreHoursDataRequest request)
 {
-	ThrowIf.Null(request, "request");
-	using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
-	{
-		var query = new SqlPagedQuery(request.QueryResultSettings)
-		{
-			DatabaseSchema = "crt",
-			Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
-			From = "ISVRETAILSTOREHOURSVIEW",
-			Where = "STORENUMBER = @storeNumber",
-		};
+    ThrowIf.Null(request, "request");
+    using (DatabaseContext databaseContext = new DatabaseContext(request.RequestContext))
+    {
+        var query = new SqlPagedQuery(request.QueryResultSettings)
+        {
+            DatabaseSchema = "crt",
+            Select = new ColumnSet("DAY", "OPENTIME", "CLOSINGTIME", "RECID"),
+            From = "ISVRETAILSTOREHOURSVIEW",
+            Where = "STORENUMBER = @storeNumber",
+        };
 
-		query.Parameters["@storeNumber"] = request.StoreNumber;
-		return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
-	}
+        query.Parameters["@storeNumber"] = request.StoreNumber;
+        return new GetStoreHoursDataResponse(databaseContext.ReadEntity(query));
+    }
 }
 ```
 
@@ -612,28 +612,28 @@ In some cases, some processing must be done before or after a request is handled
 
 1.  Create a new trigger class that implements IRequestTrigger.
 
-	```typescript
-	public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
-	```
+    ```typescript
+    public class GetCrossLoyaltyCardRequestTrigger : IRequestTrigger
+    ```
 	
 2.  In the **IRequest.SupportedRequestTypes** property, return the list of requests that this trigger should be run for.
 
-	```typescript
-	public IEnumerable SupportedRequestTypes
-	{
-		get
-		{
-			return new[] { typeof(GetCrossLoyaltyCardRequest) };
-		}
-	}
-	```
+    ```typescript
+    public IEnumerable SupportedRequestTypes
+    {
+        get
+        {
+            return new[] { typeof(GetCrossLoyaltyCardRequest) };
+        }
+    }
+    ```
 
 3.  Implement the functions that are called before and after the request.
 
-	```typescript
+    ```typescript
     void OnExecuted(Request request, Response response);
     void OnExecuting(Request request);
-	```
+    ```
 
 4.  Register the class in the commerceRuntime.Config file.
 
@@ -650,24 +650,24 @@ The following example, which is taken from the Retail SDK, shows how to extend a
 ```typescript
 public class MyCustomersController : CustomersController
 {
-	[HttpPost]
-	[CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
-	public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
-	{
-		if (parameters == null)
-		{
-			throw new ArgumentNullException("parameters");
-		}
+    [HttpPost]
+    [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Customer, CommerceRoles.Employee })]
+    public decimal GetCrossLoyaltyCardDiscountAction(ODataActionParameters parameters)
+    {
+        if (parameters == null)
+        {
+            throw new ArgumentNullException("parameters");
+        }
 
-		var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
-		string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
+        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+        string loyaltyCardNumber = (string)parameters["LoyaltyCardNumber"];
 
-		GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
+        GetCrossLoyaltyCardResponse resp = runtime.Execute(new GetCrossLoyaltyCardRequest(loyaltyCardNumber), null);
 
-		string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
-		RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
-		return resp.Discount;
-	}
+        string logMessage = "GetCrossLoyaltyCardAction successfully handled with card number '{0}'. Returned discount '{1}'.";
+        RetailLogger.Log.ExtendedInformationalEvent(logMessage, loyaltyCardNumber, resp.Discount.ToString());
+        return resp.Discount;
+    }
 }
 ```
 Next, override the model factory.
@@ -677,13 +677,13 @@ Next, override the model factory.
 [ComVisible(false)]
 public class CustomizedEdmModelFactory : CommerceModelFactory
 {
-	protected override void BuildActions()
-	{
-		base.BuildActions();
-		var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
-		var1.Parameter("LoyaltyCardNumber");
-		var1.Returns();
-	}
+    protected override void BuildActions()
+    {
+        base.BuildActions();
+        var var1 = CommerceModelFactory.BindEntitySetAction("GetCrossLoyaltyCardDiscountAction");
+        var1.Parameter("LoyaltyCardNumber");
+        var1.Returns();
+    }
 }
 ```
 	
@@ -697,29 +697,29 @@ Suppose that you have a simple entity and require a controller to fetch the data
 [ComVisible(false)]
 public class StoreHoursController : CommerceController
 {
-	public override string ControllerName
-	{
-		get { return "StoreHours"; }
-	}
+    public override string ControllerName
+    {
+        get { return "StoreHours"; }
+    }
 
-	[HttpPost]
-	[CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
-	public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
-	{
-		if (parameters == null)
-		{
-			throw new ArgumentNullException("parameters");
-		}
+    [HttpPost]
+    [CommerceAuthorization(AllowedRetailRoles = new string[] { CommerceRoles.Anonymous, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee })]
+    public System.Web.OData.PageResult GetStoreDaysByStore(ODataActionParameters parameters)
+    {
+        if (parameters == null)
+        {
+            throw new ArgumentNullException("parameters");
+        }
 
-		var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
+        var runtime = CommerceRuntimeManager.CreateRuntime(this.CommercePrincipal);
 
-		QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
-		queryResultSettings.Paging = new PagingInfo(10);
+        QueryResultSettings queryResultSettings = QueryResultSettings.SingleRecord;
+        queryResultSettings.Paging = new PagingInfo(10);
 
-		var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
-		PagedResult hours = runtime.Execute(request, null).DayHours;
-		return this.ProcessPagedResults(hours);
-	}
+        var request = new GetStoreHoursDataRequest((string)parameters["StoreNumber"]) { QueryResultSettings = queryResultSettings };
+        PagedResult hours = runtime.Execute(request, null).DayHours;
+        return this.ProcessPagedResults(hours);
+    }
 }
 ```
 
@@ -730,19 +730,19 @@ For new entities, you must also override the factory’s **BuildEntitySets()** m
 [ComVisible(false)]
 public class CustomizedEdmModelFactory : CommerceModelFactory
 {
-	protected override void BuildActions()
-	{
-		base.BuildActions();
-		var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
-		action.Parameter("StoreNumber");
-		action.ReturnsCollectionFromEntitySet("StoreHours");
-	}
+    protected override void BuildActions()
+    {
+        base.BuildActions();
+        var action = CommerceModelFactory.BindEntitySetAction("GetStoreDaysByStore");
+        action.Parameter("StoreNumber");
+        action.ReturnsCollectionFromEntitySet("StoreHours");
+    }
 
-	protected override void BuildEntitySets()
-	{
-		base.BuildEntitySets();
-		CommerceModelFactory.BuildEntitySet("StoreHours");
-	}
+    protected override void BuildEntitySets()
+    {
+        base.BuildEntitySets();
+        CommerceModelFactory.BuildEntitySet("StoreHours");
+    }
 }
 ```
 
