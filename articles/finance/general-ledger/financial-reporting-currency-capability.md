@@ -32,14 +32,13 @@ ms.dyn365.ops.version: Version 10.0.8
 # Currency capabilities in financial reporting
 
 [!include [banner](../includes/banner.md)]
-[!include preview banner]
 
 Financial reporting includes features that support complex currency reporting requirements. Financial reporting can generate reports using any of the following currency amounts:
 
 - Accounting currency amount 
 - Reporting currency amount 
 - Transaction currency amount 
-- Translate (currency translation is also known as conversion) to any currency that has been set up in the system
+- Translated amount (currency translation is also known as conversion), translated to any currency that has been set up in the system
 
 ## Filtering by currency
 By default all report amounts are summarized and presented in the accounting currency of that company. If you need to do additional analysis by the transactions and related currencies, you can do so by setting filters on the report. 
@@ -127,9 +126,7 @@ You can use Financial reporting to calculate the CTA in two ways:
 
 1. Use the Rounding Adjustments form in the row definition
 
-*Original:* When you enter the row that will display the CTA, the total assets row, the total liabilities and equity row, and the threshold you are comfortable with, Financial reporting will calculate this difference and put it in the desired row. A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected. 
-
-*Draft revision:* Financial reporting will calculate the amount of the rounding adjustments difference and enter it in the row that you select, such as the Total assets or the Total liabilities and equities row, based on the threshold that you’re comfortable with. A line named Rounding Adjustment will be created and shown upon drill-down of the row you've selected.
+Financial reporting will calculate the amount of the difference from currency calculations using the rounding adjustments calculation. To use this, edit the Row Definition and click Edit > Rounding Adjustment. Set the total assets row, total liabilities and equities row, and a threshold for maximum variance to silently accept.  A line named Rounding Adjustment will be created for the rounding difference row and shown upon drill-down of the row you've selected.
  
 2. Create a single line with all accounts to calculate the CTA 
 
