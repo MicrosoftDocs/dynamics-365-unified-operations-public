@@ -80,7 +80,7 @@ The following example shows how you can use extension to add custom controls to 
 
 7. Open the **ProductAvailabilityPanel.html** file, and paste the following code into it.
 
-    ```
+    ```html
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
         <head>
@@ -105,7 +105,7 @@ The following example shows how you can use extension to add custom controls to 
 
 8. Open the **ProductAvailabilityPanel.ts** file, and paste the following code into it.
 
-    ```
+    ```typescript
     /**
         SAMPLE CODE NOTICE
         THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
@@ -133,7 +133,7 @@ Next, you must add the constructor and initialize the data list with the product
 
 1. In your **SampleExtensions** folder, add a new .json file, name it **manifest.json**, and paste the following code into it.
 
-    ```
+    ```json
     {
         "$schema": "../manifestSchema.json",
         "name": "Pos_Extensibility_Samples",
@@ -177,7 +177,7 @@ Next, you must add the constructor and initialize the data list with the product
 
 3. Open the **extensions.json** file, and paste the following code into it.
 
-    ```
+    ```json
     {
         "extensionPackages": [
             {
@@ -194,7 +194,7 @@ Next, you must add the constructor and initialize the data list with the product
 
 4. Open the **tsconfig.json** file, and include your extension. Paste the following code into the file.
 
-    ```
+    ```json
     "extends": "../tsconfigs/tsmodulesconfig",
     "exclude": [
         // "SampleExtensions"
