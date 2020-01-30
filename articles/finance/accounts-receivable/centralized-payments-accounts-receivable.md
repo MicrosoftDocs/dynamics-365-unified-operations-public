@@ -93,8 +93,8 @@ Fabrikam receives a payment of 580.00 for Fabrikam customer 4000, Northwind Trad
 
 | Account                             | Debit amount | Credit amount |
 |-------------------------------------|--------------|---------------|
-| Accounts receivable (Fabrikam East) | 600.00       |               |
-| Sales (Fabrikam East)               |              | 600.00        |
+| Accounts receivable (Fabrikam East) | 580.00       |               |
+| Sales (Fabrikam East)               |              | 580.00        |
 
 ### Payment is received and posted in Fabrikam for Fabrikam customer 4000
 
