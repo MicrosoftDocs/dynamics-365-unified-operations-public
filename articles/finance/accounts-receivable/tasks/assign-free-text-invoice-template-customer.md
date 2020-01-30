@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Assign free text invoice template to a customer
+title: Assign a free text invoice template to a customer
 description: This task demonstrates how to assign a free text invoice template to a customer. 
 author: ShivamPandey-msft
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Assign free text invoice template to a customer
+# Assign a free text invoice template to a customer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
