@@ -40,7 +40,7 @@ This topic explains how to opt in to use ratings and reviews on your Microsoft D
 
 The ratings and reviews solution is an omni-channel solution that you can make available in Dynamics 365 Commerce by using Microsoft Dynamics Lifecycle Services (LCS). LCS is an administration portal that retailers use to manage their environments from provisioning to decommissioning.
 
-If you want to use the ratings and reviews solution on your Commerce website, you must opt in for ratings and reviews while deploying your e-Commerce site on Dynamics 365 Commerce.
+If you want to use the ratings and reviews solution on your Commerce website, you must opt in for ratings and reviews during deployment of your e-Commerce site on Dynamics 365 Commerce.
 
 ## Opt in to use ratings and reviews
 
