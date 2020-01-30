@@ -44,7 +44,7 @@ The Microsoft Dynamics 365 Commerce Online Software Development Kit (SDK) provid
 
 The following example shows how to create a container module that is named campaignContainer.
 
-```console
+```Console
 yarn msdyn365 add-module campaignContainer
 ```
 
@@ -203,7 +203,7 @@ To preview the page in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```console
+    ```Console
     c:\repos\MyEcommerceSite\yarn start
     ```
 
