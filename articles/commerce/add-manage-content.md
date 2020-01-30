@@ -2,10 +2,10 @@
 # required metadata
 
 title: Ways to add content 
-description: This topic provides information about how to add and manage content on your Microsoft Dynamics 365 Commerce site.
+description: This topic provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring toolset.
 author: phinneyridge
 manager: annbe
-ms.date: 01/31/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic provides an introduction and select links for where to begin with content management using the Microsoft Dynamics 365 Commerce site builder web authoring toolset.
+This topic provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring toolset.
 
 ## Overview
 
@@ -42,28 +42,18 @@ The following topics are good jumping off points to start understanding how to a
 
 Pick one of the following topics to get started.
 
-- To familiarize yourself with the content management terminology used in site builder and within this documentation, see the [Page model glossary](page-elements-overview.md)
-- To understand how modules work within content management workflows, see [Work with modules](work-with-modules.md)
+- To familiarize yourself with the content management terminology used in site builder and within this documentation, see the [Page model glossary](page-elements-overview.md).
+- To understand how modules work within content management workflows, see [Work with modules](work-with-modules.md).
 - To change the text, images, or video on an existing site page, see [Work with modules](work-with-modules.md).
-- To see how fragments can make content managment more efficient and flexible, see [Work with fragments](work-with-fragments.md).
+- To see how fragments can make content management more efficient and flexible, see [Work with fragments](work-with-fragments.md).
 - To help guarantee a foolproof, on-brand authoring experience for web content authors, see [Templates and layouts overview](templates-layouts-overview.md) and [Work with templates](work-with-templates.md).
 - To rearrange sections on a site page, see [Work with layouts](work-with-layouts.md).
 - To change the fonts, colors, and general look of site pages, see [Select a site theme](select-site-theme.md) or [Work with CSS over-ride files](css-override-files.md).
-- To rearrange or add new navigation options, see [Customize site navigation](customize-site-navigation.md)
+- To rearrange or add new navigation options, see [Customize site navigation](customize-site-navigation.md).
 - To learn how to stage, preview, and publish a broad set of concurrent web content changes, see [Work with publish groups](publish-groups.md).
 
 ## Additional resources
 
-[Page model glossary](page-elements-overview.md)
+[Authoring page overview](authoring-home-overview.md)
 
 [Document states and lifecycle](document-states-overview.md)
-
-[Work with publish groups](publish-groups.md)
-
-[Work with modules](work-with-modules.md)
-
-[Work with fragments](work-with-fragments.md)
-
-[Templates and layouts overview](templates-layouts-overview.md)
-
-[Customize site navigation](customize-site-navigation.md)
