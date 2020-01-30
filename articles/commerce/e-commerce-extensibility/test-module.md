@@ -45,7 +45,7 @@ To preview a module in a local web browser, follow these steps.
 
 1. At a command prompt, go to your root SDK folder, and run the **yarn start** command. Here is an example.
 
-    ```console
+    ```Console
     c:\repos\MyEcommerceSite\yarn start
     ```
 
@@ -80,7 +80,7 @@ From the view that is opened, you can attach a debugger to the running Node.js a
 
 To inform Node.js that you want to attach a debugger, start your application by using the following command.
 
-```console
+```Console
 yarn start --inspect-brk
 ```
 
