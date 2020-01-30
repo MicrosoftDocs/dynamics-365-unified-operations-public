@@ -109,7 +109,7 @@ To add a fragment to a page, follow these steps.
 1. In the dialog box, search for and select a fragment to add. If no available fragments are listed, you might first have to create a fragment from a module type that the selected container or slot supports.
 1. Select your desired fragment to add it to the container or slot on your page.
 
-![A screen capture of the fragment picker modal window](./media/fragment-picker.png)
+    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)
 
 > [!NOTE]
 > The modules that are allowed in a container or slot are defined by the page's template or the modules' own definitions.
