@@ -181,6 +181,7 @@ Transactions can't have both return and sale operations if a fiscal register is 
 
 4.  Add the following code to the TriggerSample.ts file.
 
+        ```typescript
         ///<reference path="ITrigger.ts" />
         ///<reference path="ApplicationTriggers.ts" />
         ///<reference path="TransactionTriggers.ts" />
@@ -248,9 +249,11 @@ Transactions can't have both return and sale operations if a fiscal register is 
                 Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
                 new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
         });
-
+        ````
+        
 5.  Inspect the TriggerSample.ts file to see the implementation of **IPreProductSaleTrigger**.
 
+        ```typescript
         export class ValidateProductSalePreProductSaleTrigger implements IPreProductSaleTrigger {
             private static SALE_NOT_ALLOWED_IN_SAME_TRANSACTION_AS_RETURN_ERROR_CODE: string = "Return and sale not allowed in same transaction";       
             /**
@@ -271,9 +274,11 @@ Transactions can't have both return and sale operations if a fiscal register is 
                 return result;
             }    
         }
-
+        ```
+        
 6.  Inspect the registration of **ValidateProductSalePreProductSaleTrigger**.
 
+        ```typescript
         /**
         * Implementation of a post log on trigger that is used to perform conidtional registration of other triggers.
         */
@@ -291,9 +296,11 @@ Transactions can't have both return and sale operations if a fiscal register is 
             }
             return VoidAsyncResult.createResolved();
         }
-
+        ```
+        
 7.  Inspect the **performRegistration** method where the trigger is registered.
 
+        ```typescript
         private performRegistration(): void {
             var conditionIsMet: boolean = true;
             if (conditionIsMet) {
@@ -307,9 +314,11 @@ Transactions can't have both return and sale operations if a fiscal register is 
                 //    NonCancelableTriggerType.PostCustomerAdd,
                 //    new GiveBirthDayDiscountTrigger());
         }
-
+        ```
+        
 8.  Inspect the registration of **PostLogonTrigger** on the **DOMContentLoad** event.
 
+        ```typescript
         /**
         * Trigger types that do not support conditional registration should be registered when the DOMContentLoaded event is fired.
         * @remarks These trigger types include: ApplicationStart, PreLogOn and PostLogOn.
@@ -319,6 +328,7 @@ Transactions can't have both return and sale operations if a fiscal register is 
             Commerce.Triggers.NonCancelableTriggerType.PostLogOn,
             new Commerce.Triggers.Samples.ConditionalRegistrationPostLogOnTrigger());
         });
+        ```
 
 9.  Compile and rebuild Modern POS to verify the implementation:
     1.  Go to **Show Journal**, and select a transaction to return. If the transaction has multiple lines, return one line. A return line should be added in the cart.
