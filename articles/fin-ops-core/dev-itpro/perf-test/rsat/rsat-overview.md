@@ -57,9 +57,9 @@ This tool is part of the end to end flow described below. The application, along
 
 To learn more about this this process, see [Create and automate user acceptance tests](../../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
-## Lifecycle Services
+## Lifecycle Services and BPM
 
-Using Lifecycle Services (LCS) and BPM is recommended but not required. BPM enables management and distribution of test libraries across projects and tenants, which is especially useful for Microsoft partners and independent software vendors. 
+Using Lifecycle Services (LCS) and BPM is not required. BPM is recommended to enable management and distribution of test libraries across projects and tenants, which is especially useful for Microsoft partners and independent software vendors. BPM enables the distribution of test libraries as part of LCS solutions.
 
 If you are not using BPM, you can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. You can create developer recording files directly from the Task recorder pane.
 
