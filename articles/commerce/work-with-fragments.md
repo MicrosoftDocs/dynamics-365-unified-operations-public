@@ -68,7 +68,7 @@ To convert a previously configured module to a reusable fragment, follow these s
 1. Open a page or template that contains the module that you want to convert to a fragment.
 1. In the outline pane on the left, select the ellipsis button (**...**) next to the name of the module. 
 1. Select **Share as Fragment**. 
-1. A new fragment dialog box appears. Enter a name and metadata for the fragment.
+1. A dialog box appears. Enter a name and metadata for the fragment.
 1. Select **OK** to save the module configuration as a fragment that can be added to other pages.
 
 The following image shows how to save a module configuration as a fragment.
@@ -88,7 +88,7 @@ The following image shows where to create a new fragment.
 ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)
 
 > [!TIP]
-> By selecting a generic container module type, you get the most flexibility when you must update and configure your fragment later.
+> By selecting a generic container module type, you get the most flexibility when you need to update and configure your fragment later.
 
 ## Add, remove, or edit fragments on a page
 
