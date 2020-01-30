@@ -76,7 +76,7 @@ The steps in this subtask show you how a new format configuration can be created
     Instead of creating a new format to support data import, load the 1099format.xml file that you previously downloaded. This file contains the defined structure of the file you are importing and the mapping of the structure to the custom data model of vendors’ transactions.   
 5. Click Exchange.
 6. Click Load from XML file.
-    * Click Browse and navigate to the 1099format.xml file that you previously downloaded.  
+    Click Browse and navigate to the 1099format.xml file that you previously downloaded.  
 7. Click OK.
 8. In the tree, expand '1099 Payments model'.
 9. In the tree, select '1099 Payments model\Format for importing vendors' transactions'.
@@ -167,7 +167,7 @@ Execute this format mapping for testing purposes. Use the file 1099entries.xml t
 16. Click Show mapped only.
 17. In the tree, expand 'tax1099trans: Table 'VendSettlementTax1099' records= model.Validated'.
 
-Note that the data source element that contains the only validated transactions is bound to the created destination. You can filter the imported transactions to skip the ones that are incompatible with the applications’ data.  
+    Note that the data source element that contains the only validated transactions is bound to the created destination. You can filter the imported transactions to skip the ones that are incompatible with the applications’ data.  
 
 18. In the tree, select 'failed: Table 'VendSettlementTax1099Entity' records= model.Failed'.
 19. Click the Validations tab.
