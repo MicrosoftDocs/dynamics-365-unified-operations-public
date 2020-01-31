@@ -49,7 +49,7 @@ Before you use the fiscal integration functionality, you should configure the fo
 
 1. Update retail parameters.
 
-    1. On the **Retail shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. On the **Number sequences** tab, define the number sequences for the following references:
+    1. On the **Commerce shared parameters** page, on the **General** tab, set the **Enable fiscal integration** option to **Yes**. On the **Number sequences** tab, define the number sequences for the following references:
 
         - Fiscal technical profile number
         - Fiscal connector group number
