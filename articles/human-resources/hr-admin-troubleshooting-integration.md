@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration with Finance FAQ
-description: This topic explains what data is synchronized in a Human Resources and Finance integration.
+description: This article explains what data is synchronized in a Human Resources and Finance integration.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/14/2019

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Manage features
-description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 Human Resources, and it lists the features that are currently enabled for preview.
-author: tracykeya
+description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 Talent, and it lists the features that are currently enabled for preview.
+author: andreabichsel
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-human-resources
 ms.technology: 
 
 # optional metadata
@@ -18,15 +18,15 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Human Resources, Core
+ms.search.scope: Talent, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Human Resources
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: AX 7.1.0, Talent
 
 ---
 

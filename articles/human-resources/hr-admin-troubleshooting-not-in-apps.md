@@ -2,7 +2,7 @@
 # required metadata
 
 title: Human Resources doesn't appear in Microsoft Dynamics 365 apps
-description: This topic explains what to do if the customer doesn't see the Microsoft Dynamics 365 Human Resources app among the Microsoft Dynamics 365 apps.
+description: This article explains what to do if the customer doesn't see the Microsoft Dynamics 365 Human Resources app among the Microsoft Dynamics 365 apps.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018

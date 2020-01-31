@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get support
-description: This topic explains how to get help with Microsoft Dynamics 365 Human Resources.
+description: This article explains how to get help with Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/07/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Get support
 
-This topic explains how to get help with Microsoft Dynamics 365 Human Resources.
+This article explains how to get help with Microsoft Dynamics 365 Human Resources.
 
 To get support for Human Resources, use the resources in the following table. These resources are listed in the order that we recommend that you follow when you troubleshoot.
 

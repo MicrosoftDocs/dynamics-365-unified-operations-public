@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Benefit eligibility policies
 
-This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
+This article provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.
 
 When you create benefits, you decide which benefits will be available to which employees. The following table shows examples of benefits that you might make available to specific employees.
 

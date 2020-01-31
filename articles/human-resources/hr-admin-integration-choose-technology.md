@@ -2,10 +2,10 @@
 # required metadata
 
 title: Choose a data integration technology
-description: 
+description: This article provides guidance on various options for integrating with data managed by Human Resources, describing the characteristics of different integration technologies so that integrators can make informed decisions regarding which technologies best fit their needs.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,17 +25,15 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: Human Resources April 2020 update
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Choose a data integration technology
 
-Dynamics 365 Human Resources manages business data that is useful in a variety of
-business processes. This topic provides guidance on various options for
-integrating with data managed by Human Resources, describing the
-characteristics of different integration technologies so that integrators can
+Dynamics 365 Human Resources manages business data that is useful in a variety of business processes. This article provides guidance on various options for
+integrating with data managed by Human Resources, describing the characteristics of different integration technologies so that integrators can
 make informed decisions regarding which technologies best fit their needs.
 
 ## Data integration vision

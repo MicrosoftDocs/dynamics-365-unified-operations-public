@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reporting options
-description: This topic explains how to resolve the issue where a customer wants to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
+description: This article explains how to resolve the issue where a customer wants to customize Microsoft Dynamics 365 Human Resources reports or create new reports.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018

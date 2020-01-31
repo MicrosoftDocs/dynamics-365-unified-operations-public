@@ -2,11 +2,11 @@
 # required metadata
 
 title: Client disconnects
-description: This topic explains what to do if the customer is disconnected from his or her environment and doesn't know why.
+description: This article explains what to do if the customer is disconnected from his or her environment and doesn't know why.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
-ms.topic: article
+ms.article: article
 ms.prod: 
 ms.service: dynamics-365-talent
 ms.technology: 

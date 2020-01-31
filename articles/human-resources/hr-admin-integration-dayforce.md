@@ -2,10 +2,10 @@
 # required metadata
 
 title: Configure integration with Dayforce
-description: 
+description: The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this article. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,14 +25,14 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: Human Resources April 2020 update
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Configure integration with Dayforce
 
-The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this topic. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
+The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this article. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
 
 When you use a service such as Dayforce to complete pay runs, you must enable the integration in Human Resources. The integration requires specific data from Human Resources. Therefore, you must verify that data that is mapped to Dayforce is configured in Human Resources in a manner that supports the integration. The integration uses the following broad categories of data:
 
@@ -41,7 +41,7 @@ When you use a service such as Dayforce to complete pay runs, you must enable th
 - Payroll data, such as pay cycles, pay periods, and earning codes
 - Worker data
 
-This topic describes the steps that you must follow to enable the integration. It also explains the types of data and the configuration details that the integration requires.
+This article describes the steps that you must follow to enable the integration. It also explains the types of data and the configuration details that the integration requires.
 
 ## Enable the integration
 
@@ -56,7 +56,7 @@ To turn on the integration in Human Resources, follow these steps.
 
 When the integration is turned on, the data export package and files are created, and the frequency is set. You can change this frequency as you require.
 
-For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure topics:
+For more information about Azure storage accounts and Azure Storage connection strings, see the following Azure articles:
 
 - [About Azure storage accounts](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Configure Azure Storage connection strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
@@ -127,7 +127,7 @@ Dayforce creates the following deductions, based on the payroll impact that is d
 | Contribution only          | An employer deduction is created.             |
 | Deduction and contribution | Employee and employer deductions are created. |
 
-For more information about how to define and manage a benefits program, see the following topics:
+For more information about how to define and manage a benefits program, see the following articles:
 
 - [Deliver an employee benefits program](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
 - [Create a new benefit](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
@@ -140,7 +140,7 @@ Compensation management is used to control the delivery of base pay and awards. 
 
 Dayforce uses compensation information to calculate an employee's hourly or annual rate. Fixed compensation plans and pay rate conversions are required. Employees must be associated with a fixed compensation plan.
 
-For more information about compensation plans, see the following topics:
+For more information about compensation plans, see the following articles:
 
 - [Create fixed compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
 - [Create variable compensation plans](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
@@ -152,7 +152,7 @@ For more information about compensation plans, see the following topics:
 
 #### Jobs 
 
-A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following topics:
+A job is a collection of the tasks and responsibilities that are required of a person who performs a job. For more information, see the following articles:
 
 - [Setting up the components of a job](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
 - [Define new jobs](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
@@ -177,7 +177,7 @@ Keep the following data and configuration in mind when you set up positions:
 
 If multiple positions in the same department are associated with the same job, they are consolidated into a single position in Dayforce.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Organize your workforce using departments, jobs, and positions](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
 - [Set up positions](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
@@ -186,7 +186,7 @@ For more information, see the following topics:
 
 A department is an operating unit that represents a category or functional area of an organization. A department is responsible for a specific area of the organization, such as sales, accounting, or human resources. You can use departments to report on functional areas. Departments might have profit and loss responsibility.
 
-For more information, see the following topics:
+For more information, see the following articles:
 
 - [Create a department and associate it with the department hierarchy](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
 - [Define new departments](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)

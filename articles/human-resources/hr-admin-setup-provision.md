@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Provision Human Resources
 
-This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resourcess service plan, and you can't complete the steps in this topic, contact Support.
+This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resourcess service plan, and you can't complete the steps in this article, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
@@ -57,7 +57,7 @@ After you've created an LCS project, you can provision Human Resources into an e
     > [!NOTE]
     > The Human Resources instance type is separate from the instance type of the Microsoft Power Apps environment, which you set in the Power Apps Admin center.
 3. Select the **Include Demo Data** option if you want your environment to include the same demo data set used in the Human Resources Test Drive experience. This is beneficial for long-term demo or training environments, and should never be used for production environments.  Note that you must choose this option upon initial deployment. You cannot update an existing deployment later.
-4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this topic before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Human Resources is always provisioned into a Microsoft Power Apps environment to enable Power Apps integration and extensibility. Read the “Selecting a Power Apps environment” section of this article before you continue. If you don't already have a Power Apps environment, select Manage environments in LCS or navigate to the Power Apps Admin center. Then follow the steps to [Create a Power Apps environment](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > To view existing environments or create new environments, the tenant admin who provisions Human Resources must be assigned to the Power Apps P2 license. If your organization doesn't have a Power Apps P2 license, you can get one from your CSP or from the [Power Apps pricing page](https://powerapps.microsoft.com/pricing/).

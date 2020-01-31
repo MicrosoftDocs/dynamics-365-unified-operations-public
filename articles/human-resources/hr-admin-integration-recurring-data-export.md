@@ -2,10 +2,10 @@
 # required metadata
 
 title: Create a recurring data export app
-description: 
+description: This article shows how to create a Microsoft Azure logic app that exports data from Microsoft Dynamics 365 Human Resources on a recurring schedule.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-01
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources April 2020 update
 
 ---

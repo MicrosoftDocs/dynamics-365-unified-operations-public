@@ -43,4 +43,4 @@ Dynamics 365 Human Resources provides the workforce insights you need to build d
 - Training and certification
 - Self-service programs
 
-Human Resources connects people and operations data to help you optimize workforce costs and take better care of employees.
+Human Resources connects people and operations data to help you optimize workforce costs and take care of your employees.

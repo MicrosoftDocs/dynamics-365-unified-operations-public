@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create calendars and generate working times
-description: Calendars describe the capacity and working times of operations resources. This topic explains how to define a work calendar based on a working time template.  
+description: Calendars describe the capacity and working times of operations resources. This article explains how to define a work calendar based on a working time template.  
 author: andreabichsel
 manager: AnnBe 
 ms.date: 07/09/2019
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 
 
-Calendars describe the capacity and working times of operations resources. This topic explains how to define a work calendar based on a working time template. You can walk through this procedure in demo data company USMF, or using your own data.
+Calendars describe the capacity and working times of operations resources. This article explains how to define a work calendar based on a working time template. You can walk through this procedure in demo data company USMF, or using your own data.
 
 1. On the home page, select **Resource lifecycle management**.
 2. Select **Calendars**.

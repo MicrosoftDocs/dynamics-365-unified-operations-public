@@ -2,7 +2,7 @@
 # required metadata
 
 title: Analytic reports are not updated
-description: This topic explains what to do if a customer's data changes don't appear in any of the customer's workspaces.
+description: This article explains what to do if a customer's data changes don't appear in any of the customer's workspaces.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018

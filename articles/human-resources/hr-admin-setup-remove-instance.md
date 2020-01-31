@@ -47,7 +47,7 @@ The existing test drive environment will be removed. When it is removed, you can
 
 ## Remove a production environment
 
-This topic assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
+This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
 
 Since a single Human Resources environment is contained within a single Power Apps environment, there are two options to consider. The first option involves removing the entire Power Apps environment; the second option involves removing only Human Resources. The first option is preferred when you have created a Power Apps environment expressly for the purpose of provisioning Human Resources, and you've just begun implementation, or you don’t have any established integrations. The second option is appropriate when you have an established Power Apps environment populated with rich data that's leveraged in Power Apps and Power Automate.
 
