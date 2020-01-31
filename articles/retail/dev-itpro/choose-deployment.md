@@ -51,7 +51,7 @@ The following table lists the key differences between Retail and Finance and Ope
 
 For more information about licensing, see the [Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
-When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type, which is where you must select **Dynamics 365 Retail** or **Dynamics 365 Finance **. You can use the above considerations to choose the right product to deploy.
+When you first visit Lifecycle Services (LCS) after acquiring the necessary licenses for your tenant, you will be prompted to choose an implementation project type, which is where you must select **Dynamics 365 Retail** or **Dynamics 365 Finance**. You can use the above considerations to choose the right product to deploy.
  
 As indicated in the table above, if you choose to deploy Dynamics 365 Retail--and you have the necessary licenses--you will have the option, at deployment time, to configure the solution: 
 
