@@ -247,14 +247,16 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
     + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
     + **Retail server URL** – Enter the Retail Server URL that should be used for device activation, if the device hasn't already been activated.
 
-        > [!NOTE]
-        > The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+
+    > [!NOTE]
+    > The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+
    
-   + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
-   + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
-   + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
-   + **Device** – Enter the ID of the device where the test should be run.
-   + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
+    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
+    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
+    + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
+    + **Device** – Enter the ID of the device where the test should be run.
+    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
     [![Playback environment](./media/Settings.PNG)](./media/Settings.PNG)
 

@@ -80,16 +80,16 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 <tbody>
 <tr class="odd">
 <td>
-<h3><strong>Role</strong></h3>
+<strong>Role</strong>
 </td>
 <td>
-<h3><strong>Scenarios</strong></h3>
+<strong>Scenarios</strong>
 </td>
 <td>
-<h3><strong>Implementation</strong></h3>
+<strong>Implementation</strong>
 </td>
 <td>
-<h3><strong>Level of data access</strong></h3>
+<strong>Level of data access</strong>
 </td>
 </tr>
 <tr class="even">
