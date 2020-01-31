@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail for IT pros and developers
+title: Commerce for IT pros and developers
 description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail for IT pros and developers
+# Commerce for IT pros and developers
 
 [!include [banner](../includes/banner.md)]
 
@@ -81,7 +81,6 @@ This page lists the resources that are available for IT pros and developers who 
 - [Call point of sale (POS) APIs or operations from POS extensions](pos-api-extension.md)
 - [Retail Modern POS (MPOS) triggers and printing](pos-trigger-printing.md)
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
-- [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Retail Cloud POS](pos-rsat.md)
 
@@ -91,7 +90,6 @@ This page lists the resources that are available for IT pros and developers who 
 ## Commerce Scale Unit
 -   [Extend a Retail Server OData controller](extend-retail-server-odata-controller.md)
 -   [Extend the default Retail Server metadata controller](extend-metadata.md)
--   [Web API and OData controllers](odata-controllers-api.md)
 -   [Retail Server customer and consumer APIs](retail-server-customer-consumer-api.md)
 -   [Retail Store Scale Unit](retail-store-system-begin.md)
 -   [Configure and install Retail Store Scale Unit](retail-store-scale-unit-configuration-installation.md)
@@ -126,12 +124,10 @@ This page lists the resources that are available for IT pros and developers who 
 - [Call point of sale (POS) APIs or operations from POS extensions](pos-api-extension.md)
 - [Retail Modern POS (MPOS) triggers and printing](pos-trigger-printing.md)
 - [Add custom controls to POS views that aren't screen layout designer-based](pos-control-non-screen.md)
-- [Generate the Retail proxy for POS and e-Commerce](pos-generate-retail-proxy.md)
 - [Sign MPOS with a code signing certificate](pos-app-signing-certificate.md)
 - [Show custom notifications in POS](extend-pos-notification.md)
 
 ## eCommerce
--   [e-Commerce platform](ecommerce-platform.md)
 -   [e-Commerce platform software development kit (SDK)](ecommerce-platform-sdk.md)
 -   [Configure online stores](configure-online-store.md)
 
