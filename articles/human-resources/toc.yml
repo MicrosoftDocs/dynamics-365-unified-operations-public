@@ -303,25 +303,7 @@
         href: hr-compensation-process.md
     - name: Manage benefits
       items:
-      - name: Define and manage a benefits program
-        href: hr-benefits-manage-program.md
-      - name: Benefit eligibility policies
-        href: hr-benefits-eligibility-policies.md
-      - name: Benefit eligibility process
-        href: hr-benefits-eligibility-process.md
-      - name: Define benefit eligibility rules and policies
-        href: hr-benefits-define-eligibility-rules-policies.md
-      - name: Deliver an employee benefits program
-        href: hr-benefits-deliver-employee-benefits-program.md
-      - name: Create new benefits
-        href: hr-benefits-create.md
-      - name: Enroll workers in benefits
-        href: hr-benefits-enroll-workers.md
-      - name: Manage benefit expiration dates
-        href: hr-benefits-expiration-dates.md
-      - name: Generate ACA reports
-        href: hr-benefits-aca-reports.md
-      - name: Benefits management preview feature
+      - name: "Preview feature: Benefits management"
         items:
         - name: Benefits management overview
           href: hr-benefits-management-overview.md
@@ -385,14 +367,24 @@
             href: hr-benefits-process-life-event-eligibility.md
           - name: Process rate changes
             href: hr-benefits-process-rate-changes.md
-        - name: View benefits reports
-          href: hr-benefits-reports.md
-        - name: Benefits management examples
-          items:
-          - name: Configure and enroll in benefits
-            href: hr-benefits-example-configure-and-enroll.md
-          - name: Configure a flex credit program
-            href: hr-benefits-example-configure-flex-credit-program.md
+      - name: Define and manage a benefits program
+        href: hr-benefits-manage-program.md
+      - name: Benefit eligibility policies
+        href: hr-benefits-eligibility-policies.md
+      - name: Benefit eligibility process
+        href: hr-benefits-eligibility-process.md
+      - name: Define benefit eligibility rules and policies
+        href: hr-benefits-define-eligibility-rules-policies.md
+      - name: Deliver an employee benefits program
+        href: hr-benefits-deliver-employee-benefits-program.md
+      - name: Create new benefits
+        href: hr-benefits-create.md
+      - name: Enroll workers in benefits
+        href: hr-benefits-enroll-workers.md
+      - name: Manage benefit expiration dates
+        href: hr-benefits-expiration-dates.md
+      - name: Generate ACA reports
+        href: hr-benefits-aca-reports.md
     - name: Manage leave and absence
       items:
       - name: Overview
