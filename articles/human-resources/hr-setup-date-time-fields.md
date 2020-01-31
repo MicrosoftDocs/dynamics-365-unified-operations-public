@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-365-human-resources
 ms.technology: 
 
 # optional metadata

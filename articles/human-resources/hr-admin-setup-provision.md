@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Provision Human Resources
 
-This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resourcess service plan, and you can't complete the steps in this article, contact Support.
+This article walks you through the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
 To begin, the global administrator should sign in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and create a new Human Resources project. Unless a licensing issue prevents you from provisioning Human Resource, assistance from Support or Dynamics Service Engineering (DSE) representatives isn't required.
 
@@ -40,13 +40,13 @@ To begin, the global administrator should sign in to [Microsoft Dynamics Lifecyc
 
 To use LCS to manage your Human Resources environments, you must first create an LCS project.
 
-1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resource.
+1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index) by using the account that you used to subscribe to Human Resources.
 2. Select the plus sign (**+**) to create a project.
-3. Select **Microsoft Dynamics 365 Human Resource** as the product name and product version.
-4. Select the **Dynamics 365 Human Resource** methodology.
+3. Select **Microsoft Dynamics 365 Human Resources** as the product name and product version.
+4. Select the **Dynamics 365 Human Resources** methodology.
 5. Select **Create**.
 
-For information about how to get started with Human Resource, see the **Human Resource** methodology that you created in your new project. After you've finished creating the project, complete the following procedure to provision your Human Resources environment.
+For information about how to get started with Human Resources, see the **Human Resources** methodology that you created in your new project. After you've finished creating the project, complete the following procedure to provision your Human Resources environment.
 
 ## Provision a Human Resources project
 
