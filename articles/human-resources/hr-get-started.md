@@ -44,15 +44,3 @@ Dynamics 365 Human Resources provides the workforce insights you need to build d
 - Self-service programs
 
 Human Resources connects people and operations data to help you optimize workforce costs and take better care of employees.
-
-## Comparison of Human Resources with the Human resources workspace in Finance
-
-
-## See also
-
-- [Get started with Human Resources](hr-get-started.md)
-- [Expore Human Resources](hr-get-started-explore.md)
-- [Training resources](hr-get-started-training-resources.md)
-- [Developer Guide](hr-developer-overview.md)
-- [HR Pro Guide](hr-hrpro-overview.md)
-- [Employee Guide](hr-employee-overview.md)

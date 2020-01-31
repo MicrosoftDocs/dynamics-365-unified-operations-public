@@ -41,15 +41,12 @@ You can find information about further extending Human Resources in the followin
 
 - [Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
 - [Track changes in recruiting data](hr-developer-track-changes.md)
-- [Embedded Power BI in workspaces](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces)
-- [Company directory mobile workspace](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace)
+- [Embedded Power BI in workspaces](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces)
+- [Company directory mobile workspace](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace)
 - [My team mobile workspace](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace)
 
 ## See also
 
 - [Get started with Human Resources](hr-get-started.md)
-- [Expore Human Resources](hr-get-started-explore.md)
-- [Training resources](hr-get-started-training-resources.md)
 - [Administrator Guide](hr-admin-overview.md)
-- [HR Pro Guide](hr-hrpro-overview.md)
-- [Employee Guide](hr-employee-overview.md)
+- [User Guide](hr-hrpro-overview.md)

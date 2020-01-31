@@ -37,13 +37,13 @@ This topic answers common questions associated about what data is synchronized w
 ## Is all data synchronized or just some data entities?
 
 For Core HR, a subset of the data is synchronized. For a list of all
-the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance](talent-financeandoperations-integration.md).
+the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 For Attract and Onboard, all data is native to Common Data Service.
 
 ## Why don't I see any data synced to Common Data Service?
 
-By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Common Data Service integration](hr-common-data-service-integration.md).
+By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. By default, it's turned on in new environments that include demo data, and data synchronization begins when the environment is provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Configure Common Data Service integration](hr-admin-integration-common-data-service.md).
 
 ## Can I create a new mapping without using the templates?
 
@@ -56,16 +56,14 @@ more information about data integrator (DI), templates, and projects, see [Integ
 Financial dimensions aren’t currently in Common Data Service and as a result aren’t
 part of the default template. This entity is planned, but currently no release timeline is available.
 
-For data that resides in Finance but does not exist in Talent,
-link the two systems together by using **Configure Links** in Talent. For more
-information about how to configure links between Talent and Finance, see [What's new or changed in Dynamics 365 Talent - Core HR (October 31, 2018))](whats-new-talent-october-31.md).
+For data that resides in Finance but does not exist in Talent, link the two systems together by using **Configure Links** in Talent.
 
 ![Map financial dimensions](media/MapFinancialDimensions.png)
 
 ## Sometimes when I import employees, they go into inactive workers in Finance. Why?
 
 You may get this error if employees don’t have an active employment detail
-record in Talent. To resolve this, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
+record in Human Resources. To resolve this, go to **Personnel Management \> Employees \> Employment History \> Date Manager**, and verify that there is an active employment detail record.
 
 ## If I select to map only a subset of fields, will changes made to non-mapped fields trigger a sync?
 

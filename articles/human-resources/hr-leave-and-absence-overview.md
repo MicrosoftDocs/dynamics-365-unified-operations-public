@@ -72,7 +72,7 @@ Your employees can submit time off requests, and you can manage them, in the **E
 
 ## In preview
 
-The following articles are for Leave and absence features that are in preview. For more information about enabling preview features, see [Feature management overview](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)>
+The following articles are for Leave and absence features that are in preview. For more information about enabling preview features, see [Feature management overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview)>
 
 - [Create a company calendar](hr-employee-self-service-calendar.md)
 

@@ -102,10 +102,5 @@ You can use the **Overrides** tab to override specific values for the employee. 
 
 **Organizational overrides** are used to base an employee's award on the performance of one or more departments. The percentage that is allocated across departments should total 100 percent. The employee's individual performance is also considered. These settings are used only if **Pay for performance** is selected when the compensation process is run.
 
-Additional resources
---------
-
-[Compensation plans](compensation-plans.md)
-
 
 

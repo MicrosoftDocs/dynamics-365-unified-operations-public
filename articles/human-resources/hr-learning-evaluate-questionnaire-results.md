@@ -48,6 +48,7 @@ You can also generate various reports to view results that are sorted by person,
 -   Feedback analysis
 
 ## Answer session results
+
 After respondents complete a questionnaire, you can view the results of the completed answer sessions. An answer session is one user’s response to a questionnaire. You can view details about completed answer sessions on the **Answers** page. The answer sessions that are included on the **Answers** page are filtered in various ways, depending on how you open the page:
 
 -   All questionnaires
@@ -64,6 +65,7 @@ From the **Answers** page, you can view details about answers, points that were 
 > The **Results** report is available only if you use results groups on the questionnaire, and if you selected **Results page** on the **Questionnaires** page. The **Answer** report and the **Incorrect answers** report are available only if you selected **Answer report** on the **Questionnaires** page.
 
 ## Questionnaire statistics
+
 You can use questionnaire statistics to analyze the results of a completed questionnaire, based on calculations that you define. To define calculations, you must complete the following tasks:
 
 -   Select criteria to calculate and display the statistics.
@@ -75,13 +77,3 @@ You can use questionnaire statistics to analyze the results of a completed quest
 -   Select or verify criteria to analyze results by respondent or questionnaire characteristics. For example, by selecting **ZIP/postal code**, you can analyze the correlation between a respondent’s location and correct answers.
 
 The settings that you define are saved and can be used to periodically recalculate results.
-
-Additional resources
---------
-
-[Design questionnaires](design-questionnaires.md)
-
-[Questionnaires](questionnaires.md)
-
-[Distribute and schedule questionnaires](distribute-questionnaires.md)
-

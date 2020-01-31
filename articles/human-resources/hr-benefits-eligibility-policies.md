@@ -51,10 +51,6 @@ Policy rule types define the query parameters that are used when you develop spe
 
 You define the scope of the rule within the policy. For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy. In this example, the rule might state that any job title that contains the word "executive" should be included in the rule. After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.
 
-Additional resources
---------
-
-[Define and manage a benefits program](manage-benefit-program.md)
 
 
 

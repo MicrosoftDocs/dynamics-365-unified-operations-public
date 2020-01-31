@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 ---
 
-# Create fixed compensation plans
+# Create a fixed compensation plans
 
 Fixed compensation refers to an employee's regular gross salary or wages. This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 
@@ -102,11 +102,4 @@ You can now assign an employee to a fixed compensation plan. Open the **Employee
 **Note:** The compensation plan field shows only the plans that an employee is eligible for under the eligibility rules that were set up for each plan. If no eligibility rule is set up for a plan, no employees will be eligible for that plan. 
 
 The system verifies that the compensation amount that is specified for a compensation plan of the grade or band type is within the minimum and maximum reference points for the given compensation level on the employee's job. If the compensation amount is outside the allowed range, a warning or error message is displayed, depending on the tolerance level that is set on the fixed compensation plan.
-
-Additional resources
---------
-
-[Compensation plans](compensation-plans.md)
-
-
 
