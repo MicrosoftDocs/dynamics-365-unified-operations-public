@@ -163,7 +163,7 @@ service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 that can be used for data integrations to/from Common Data Service. Data Integrator can be used to define integration projects (often based on pre-defined templates that application developers have tailored for specific integrations). The integration projects can be scheduled to run automatically on a recurring schedule or be run manually.
 
 Data Integrator projects are appropriate for Common Data Service batch integrations and make a great choice for integrations between the Dynamics 365 family of applications. As an example, Microsoft provides an out-of-the-box Data
-Integrator template that can be used for integrating data from Human Resources into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 Human Resources to Dynamics 365 Finance](talent-financeandoperations-integration.md).
+Integrator template that can be used for integrating data from Human Resources into Dynamics 365 Finance. For more information, see [Integration from Dynamics 365 Human Resources to Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ### Power Query
 
