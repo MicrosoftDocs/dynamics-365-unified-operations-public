@@ -36,7 +36,7 @@ This procedure walks you through generating the Standard Audit File (FEC) for Fr
 
 Before you can generate a FEC audit file, you must 
 1. Set up number sequences for vouchers properly: each voucher series must contain a text part which is considered as a JournalCode in FEC audit report.
-> For example, configure voucher series for vendor invoice journal as FRSIFACF-######## to get JournalCode as "FRSIFACF" in FEC.txt file.
+> For example, configure voucher series for vendor invoice journal as FRSIFACF-######## to get *JournalCode* as "FRSIFACF" in FEC.txt file.
 2. Import the latest version of the Electronic reporting configuration **French FEC audit file**. 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 3. On the **Configurations** page, expand **Data export model**, select **French FEC model mapping**. Set **Default for model mapping** to **Yes**
