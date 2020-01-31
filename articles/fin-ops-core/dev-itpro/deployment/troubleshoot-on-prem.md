@@ -1426,8 +1426,8 @@ The located assembly's manifest definition does not match the assembly reference
 
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
 
-## DBSync fails with PEAP version 10.0.9 Platform update 33
-**Issue:** During deployment of the APP 10.0.9 PU33 PEAP package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+## DBSync fails with PEAP APP version 10.0.9 Platform update 33
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
 
 Error message from DBSync:
  ```stacktrace
@@ -1454,3 +1454,11 @@ DB sync failed.
 ```
 
 **Reason:** This issue occurs because there is data in the SQL DatabaseLog table that conflicts with the metadata in the package.
+
+**Resolution:** Run the following query on AXDB to clean the DatabaseLog table and retry the deployment.
+
+```sql
+select * into databaselog_bak from databaselog
+truncate table databaselog
+```
+
