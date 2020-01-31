@@ -37,7 +37,9 @@ This topic provides information about the module React component file in Microso
 
 ## Overview
 
-The module React component file is a TypeScript (.ts) file that includes a that controls a module's view. The React **render()** method renders HTML for the module.
+The module React component file is a TypeScript (.ts) file that contains business logic and controls a module's view. You'll find a typical React **render()** method which is responsible for creating the modules HTML.  
+
+The default template of a module breaks up the React component and view into two files: the module React component (MODULE_NANME.tsx)  and the module view file (MODULE_NAME.view.tsx).  Generally, business logic is performed in the React component file and any data needed by the view is passed into the view with the **props** object.  Separating into two files allows themes to provide a view extension file which will override the view for a module.  This allows greater flexibility in changing a modules view based on the selected theme.
 
 ## Example 
 
