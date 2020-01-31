@@ -59,10 +59,10 @@ Use the following steps to consume Retail APIs in your extensions.
 
     For example, if you want to consume the save attribute on cart API in your extension, then you need to add the following import statements.
 
-     The pattern is import { api name } from "PosApi/Consume/Module name";
-
+    The pattern is import { api name } from "PosApi/Consume/Module name";
+ 
     ```Typescript
-     import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
+    import { SaveAttributesOnCartClientRequest, SaveAttributesOnCartClientResponse } from "PosApi/Consume/Cart";
     ```
 
 2.  Import the client entities and proxy entities if required.
@@ -77,9 +77,9 @@ Use the following steps to consume Retail APIs in your extensions.
     ```Typescript
     executeAsync<TResponse extends Response>(request: Request<TResponse>): Promise<Client.Entities.ICancelableDataResult<TResponse>>;
     ```
-
+    
     For example, if you want to execute the tender removal, use SaveAttributesOnCartClientRequest api, and refer to the following steps.
-
+ 
     ```Typescript
     let attributeValue: ProxyEntities.AttributeTextValue = new ProxyEntities.AttributeTextValueClass();
 
@@ -96,7 +96,6 @@ Use the following steps to consume Retail APIs in your extensions.
     result = this.context.runtime.executeAsync(saveAttributesOnCartRequest);
 
     ```
-
 ### Samples showing how to access APIs
 
 **Get Current cart**

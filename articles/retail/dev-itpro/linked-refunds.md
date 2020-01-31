@@ -48,13 +48,13 @@ By using linked refunds, retailers can greatly reduce risk by making sure that r
 
 ### Additional setup
 
-Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
+Customers who aren't using the out-of-box implementation of the Adyen Connector must set up the connector that supports tokenization of credit cards. All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here.
 
 ## Turn on the linked refunds functionality
 
 The linked refunds functionality works with the omni-channel payments functionality that is available in Microsoft Dynamics 365 Retail 8.1.3 and later.
 
-To turn on the linked refunds functionality, go to **Retail \> Headquarters setup \> Parameters \> Retail Shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
+To turn on the linked refunds functionality, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 
 ![Omni-channel payments configuration](media/LinkedRefundsOmniChannel.jpg)
 

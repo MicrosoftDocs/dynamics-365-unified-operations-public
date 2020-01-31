@@ -62,10 +62,9 @@ You must modify the Retail Experience app solution before it can be loaded corre
 1.  Copy the **entire** Retail SDK folder to a Xamarin-enabled computer. For example, copy it to C:\RetailSdk.
 2.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\Sample.ShoppingApp.sln, and remove the following line.
 
-
-~~~
+    ```
     Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailSdk.Sample.ShoppingApp", "RetailSdk.Sample.ShoppingApp.csproj", "{D88688FA-C42E-48BE-8334-5A5855561913}" .
-~~~
+    ```
 
 3.  Open C:\RetailSdk\SampleExtensions\ShoppingApp\iOSShoppingApp.iOS.csproj, and remove following lines.
 
@@ -83,9 +82,9 @@ You must modify the Retail Experience app solution before it can be loaded corre
 The Retail Experience app uses an online channel to show the products. You can use any online channel. Depending on your requirements, you can use a different online channel for each apps, or you can use the same online channel for both apps. Any released product that is assorted to the online channel will appear in the app. 
 
 > [!NOTE]
-> The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Retail Server endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
+> The app can't be used to issue gift cards. Therefore, gift cards must be excluded from the assortment for the online channel that the apps use. Information about the Commerce Scale Unit endpoint and the online channel is added to the config.xml file that is present in each app project. You must make the following changes in the config.xml file:
 
--   In the **&lt;DataServiceUrl&gt;** tag, add the URL of the Retail Server.
+-   In the **&lt;DataServiceUrl&gt;** tag, add the URL of the Commerce Scale Unit.
 -   In the **&lt;MediaBaseUrl&gt;** tag, add the URL of the media server. Make sure that this URL has a slash (/) at the end.
 -   In the **&lt;OperatingUnitNumber&gt;** tag, add the operating unit number of the online channel that you want to use together with the app. 
 
@@ -103,7 +102,7 @@ Add the following links to the about page:
 -   In the **&lt;ThirdPartyNoticesUrl&gt;** tag, add a link to the third-party notices.
 
 > [!NOTE]
-> If these links are missing, and the user clicks them, the app might stop responding. Therefore, be sure to add the links to these tags. The About page has an **&lt;EvaluationModeEnabled&gt;** tag that is used to enable Evaluation Mode view. Evaluation Mode lets retailers easily change the Retail Server endpoint without having to change any code. This feature helps retailers evaluate the app for various channels. **Evaluation Mode must be disabled in the production version of the app.** By default, Evaluation Mode is disabled in the Retail SDK.
+> If these links are missing, and the user clicks them, the app might stop responding. Therefore, be sure to add the links to these tags. The About page has an **&lt;EvaluationModeEnabled&gt;** tag that is used to enable Evaluation Mode view. Evaluation Mode lets retailers easily change the Commerce Scale Unit endpoint without having to change any code. This feature helps retailers evaluate the app for various channels. **Evaluation Mode must be disabled in the production version of the app.** By default, Evaluation Mode is disabled in the Retail SDK.
 
 ## Apply branding
 After you've successfully built the Retail Experience app by using the Microsoft sample branding, you can change icons, labels, and colors to make the app meet your own branding requirements. The following list shows some of the icons, labels, and colors that retailers might want to change. This list isn't exhaustive. 
@@ -195,7 +194,7 @@ To change the text for the iOS app, open the TextResources.resx file, and edit t
 
 To change the colors that appear in the iOS app, open the config.xml file, and change the values for **Primary** (the app bar color), **PrimaryDark** (the status bar color), **Accent**, and **ActionButtonBackground**. 
 
-[!NOTE]
+> [!NOTE]
 > The product price is shown on two pages namely products list page and the product details page. The price shown on the product list page is set to green (\#008A00) and cannot be altered. However, the price shown on the product details page is governed by the value set for the "PrimaryDark" property.
 
 ## Build, test, and distribute apps
@@ -228,5 +227,5 @@ For detailed information about the distribution techniques that are available fo
 
 To learn how to maintain your signing identities and certificates, refer to [What is app signing](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html). 
 
-[!NOTE]
+> [!NOTE]
 > If you are using the certificates as a part of Apple Developer Enterprise Program and you install an app manually (such as for testing), then you must also manually establish trust. For more information, see [Install custom enterprise apps on iOS](https://support.apple.com/HT204460).

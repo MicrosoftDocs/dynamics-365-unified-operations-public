@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. This procedures uses the USRT demo data company.
 
-1. Go to Retail and commerce > Channel setup > POS setup > POS profiles > Functionality profiles.
+1. Go to Retail and Commerce > Channel setup > POS setup > POS profiles > Functionality profiles.
 2. Click Edit.
 3. Expand the Functions section.
     * You can use the functionality profile settings to configure POS to automatically add the cashier's default sales group, to prompt for sales groups, and to require sales groups.  

@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
-This procedure walks through creating a new retail channel and defining channel attributes. The demo data company used to create this task is USRT. This procedure is intended for the Retail IT role.
+This procedure walks through creating a new commerce channel and defining channel attributes. The demo data company used to create this task is USRT. This procedure is intended for the Commerce IT role.
 
 
 ## Create new store

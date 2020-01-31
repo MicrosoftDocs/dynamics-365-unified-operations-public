@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade the Retail channel extension to the latest Retail SDK
-description: This topic explains how to upgrade the retail channel extension from earlier releases to the latest update of the Retail SDK. 
+description: This topic explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/21/2018
@@ -64,7 +64,7 @@ Upgrade can be completed for one of the following scenarios:
   - Upgrade your custom code.
   - Upgrade to the latest application release.
 
-The process for SDK upgrade varies between versions. With version 7.3 and higher, we sealed all of the Retail components and customizations must be completed only by using the extension points. This should result in an easier code upgrade experience. However, if you are upgrading from 7.0, 7.1, or 7.2 and if you have made inline changes, you must move the inline changes to extensions. This will require additional work.
+The process for SDK upgrade varies between versions. With version 7.3 and higher, we sealed all of the components and customizations must be completed only by using the extension points. This should result in an easier code upgrade experience. However, if you are upgrading from 7.0, 7.1, or 7.2 and if you have made inline changes, you must move the inline changes to extensions. This will require additional work.
 
 > [!NOTE] 
 > When upgrading to newer version, do not remove any of the existing Retail server, Commerce Runtime, Proxy, Hardware station, CDX, or Database extension code/APIs. Your POS client may depend on this code and removing it will cause runtime exception errors. If you want to remove it then during code upgrade, make sure that the client code is also updated to support this change, otherwise runtime failure will occur. As a best practice, extension code must be written in such a way that it is always backward compatible.
@@ -95,7 +95,7 @@ If you are completing a code upgrade, the following Retail SDK components must b
   - CommerceRuntime.Ext.config - CRT extensions.
   - CommerceRuntime.MPOSOffline.Ext.config - CRT offline extensions.
   - HardwareStation.Extension.config - Hardware station and payment extensions.
-  - RetailProxy.MPOSOffline.ext.config - Retail proxy extensions.
+  - RetailProxy.MPOSOffline.ext.config - Proxy extensions.
 
 - **Build tools:** The **Build tools** folder contains the files related to packaging, build settings and pfx, and snk files. Merge or update the following files if you have made any changes in the older versions:
 
@@ -107,7 +107,7 @@ If you are completing a code upgrade, the following Retail SDK components must b
 
 - **Online Store:** If you have an online store web project or online extension code, include it in this folder. 
   > [!NOTE]
-  > Retail deployable package will not include online store code for packaging.
+  > Deployable package will not include online store code for packaging.
 
 - **Payment externals**: Copy and paste all of your payment extension assemblies to the following **Payment assemblies** folders:
 
@@ -143,19 +143,19 @@ If you are completing a code upgrade, the following Retail SDK components must b
 
 - **Reference:** Copy all of your extension output assemblies, such as **Commerce runtime**, **Hardware station**, **proxy**, and any external assemblies, to the reference folder. Include any assemblies that you want included as part of your deployment and packaging.
 
-- **Commerce runtime (CRT) and retail server (RS) extensions:** Copy all of your CRT and RS extension projects under the **Retail SDK** folder. Make sure to include the CRT and RS extension solution file details in the dirs.proj file under the **RetailSDK folder** so that during msbuild, all of the extension project is built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
+- **Commerce runtime (CRT) and retail server (RS) extensions:** Copy all of your CRT and extension projects under the **Retail SDK** folder. Make sure to include the CRT and RS extension solution file details in the dirs.proj file under the **RetailSDK folder** so that during msbuild, all of the extension project is built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
 - **Hardware station (HWS) and payment extensions:** Copy all of your hardware station (HWS) and payment extension projects under the **Retail SDK** folder. Make sure to include the HWS and payment extension solution file details in the dirs.proj file under the **RetailSDK** folder so that during msbuild, all of the extension projects are built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
-- **Retail proxy extensions:** Copy all of your retail proxy extension projects under the **Retail SDK** folder. Make sure to include the proxy solution file details in the dirs.proj file under the **RetailSDK** folder so that during msbuild, all of the extension projects are built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
+- **Retail proxy extensions:** Copy all of your proxy extension projects under the **Retail SDK** folder. Make sure to include the proxy solution file details in the dirs.proj file under the **RetailSDK** folder so that during msbuild, all of the extension projects are built and the output path for the project assemblies is set to the *RetailSDK\\Reference* folder.
 
 > [!NOTE]
-> Run **msbuild** on the root of the Retail SDK folder. Use the Microsoft Visual Studio developer command-line tool to generate the retail deployable packages.
+> Run **msbuild** on the root of the Retail SDK folder. Use the Microsoft Visual Studio developer command-line tool to generate the  deployable packages.
 
-After you have upgraded all of the components, deploy the Retail deployable packages, validate the deployment, and add the Retail SDK files to the repository.
+After you have upgraded all of the components, deploy the Commerce deployable packages, validate the deployment, and add the Retail SDK files to the repository.
 
 ## Upgrade the Retail channel extension from 7.2 to a higher version
-The steps mentioned  in the previous section, **Upgrade the retail channel extension from 7.3 to higher versions**, will remain same for all the retail components except the Retail proxy. In 7.2, you must have completed inline changes in the retail proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
+The steps mentioned  in the previous section, **Upgrade the retail channel extension from 7.3 to higher versions**, will remain same for all the components except the Commerce proxy. In 7.2, you must have completed inline changes in the proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
 
 To upgrade your proxy to 7.3, complete the steps in the topic, [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
 

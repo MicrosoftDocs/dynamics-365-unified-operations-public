@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Store configurations for Retail statements
-description: This procedure walks through configurations for the Retail store that affect how Retail statements get created and posted. 
+description: This procedure walks through configurations for the store that affect how Commerce statements get created and posted. 
 author: jashanno
 manager: AnnBe 
 ms.date: 08/08/2019
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure walks through configurations for the Retail store that affect how Retail statements get created and posted. Financial dimensions on Retail stores are covered in another procedure. This procedure uses the USRT demo company.
+This procedure walks through configurations for the store that affect how Commerce statements get created and posted. Financial dimensions on stores are covered in another procedure. This procedure uses the USRT demo company.
 
-1. In the **Navgiation pane**, go to **Modules > Retail and commerce > Channels > Retail stores > All retail stores**.
+1. In the **Navgiation pane**, go to **Modules > Retail and Commerce > Channels > Stores > All stores**.
 2. In the list, find and select the desired record.
 3. In the list, click the link in the selected row.
 4. Click **Edit**.

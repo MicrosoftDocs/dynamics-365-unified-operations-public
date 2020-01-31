@@ -333,7 +333,7 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 
 #### Set up a Dynamics 365 POS hardware profile
 
-1. Sign in to Retail headquarters, and go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 2. Select the hardware profile to add the Dynamics 365 Payment Connector for Adyen for.
 3. Follow the steps in the [EFT service](#eft-service) and [PIN pad](#pin-pad) sections that follow.
 
@@ -373,13 +373,13 @@ After the payment terminal is onboarded, sign in to the [Adyen Customer Area](ht
 #### <a id="set-up-a-dynamics-365-register"></a>Set up a Dynamics 365 register
 
 > [!NOTE]
-> These instructions assume that there is a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that is based on Microsoft Internet Information Services (IIS), go to **Retail \> Channels \> Retail stores \> All retail stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
+> These instructions assume that there is a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that is based on Microsoft Internet Information Services (IIS), go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
 
 Payment terminals may not be used by multiple hardware stations. If a payment terminal must be shared by multiple POS devices, an IIS hardware station must be deployed to manage communications with the payment terminal. 
 
 ##### Configure the payment terminal IP address and EFT POS register number
 
-1. Sign in to Retail headquarters, and go to **Retail \> Channel setup \> POS setup \> Registers**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Channel setup \> POS setup \> Registers**.
 2. Select the register to link to the Adyen payment terminal.
 3. On the **POS Registers** page, on the **General** FastTab, in the **EFT** section, in the **EFT POS register number** field, enter a unique number. The register number must be exactly four digits long, and it must be unique across all POS registers that are under the same Adyen merchant account ID.
 4. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
@@ -412,8 +412,8 @@ To configure the Dynamics 365 Payment Connector for Adyen for call center paymen
 
 ### e-Commerce
 
-1. Sign in to Retail headquarters, and go to **Retail \> Channels \> Online stores**.
-2. Select the online store to add the Dynamics 365 Payment Connector for Adyen for.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Online stores**.
+2. Select the online store to add the Dynamics 365 Payment Connector for Adyen.
 3. On the **Online store** page, on the **Payment accounts** FastTab, select **Add**.
 4. In the **Connectors** field, select **Dynamics 365 Payment Connector for Adyen**.
 5. Enter the following additional information.
@@ -453,7 +453,7 @@ No. Adyen payment terminals are injected with the Adyen software. Therefore, exi
 
 ### Do I need a static IP address for the Adyen payment terminal?
 
-Yes. Modern POS requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the Commerce client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
+Yes. Modern POS requires a known IP address to communicate with the Adyen payment terminal. Although the IP address of the Adyen payment terminal can be changed in the client, attempts to keep up with changing IP addresses involve significant overhead and could cause business disruption.
 
 ### Can I use my merchant bank?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prorate header charges to matching sales lines
-description: This topic describes additional capabilities for calculating and applying auto-charges to Retail channel orders by using the advanced auto-charges feature.
+description: This topic describes additional capabilities for calculating and applying auto-charges to Commerce channel orders by using the advanced auto-charges feature.
 author: hhaines
 manager: annbe
 ms.date: 04/23/2019
@@ -36,17 +36,17 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the functionality for grouping header-level auto-charges and prorating them to retail sales lines. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
+This topic describes the functionality for grouping header-level auto-charges and prorating them to commerce sales lines. This functionality is available for transactions that are created at the point of sale (POS) in Retail version 10.0.1 and sales that are created in a call center in Retail version 10.0.2.
 
-This functionality is available only if the [advanced auto-charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) feature is turned on by using the option on the **Retail parameters** page. Additionally, the enhanced calculation method for auto-charges can be applied only to retail sales orders that are created through retail channels (the POS, a call center, and the Dynamics e-Commerce platform).
+This functionality is available only if the [advanced auto-charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) feature is turned on by using the option on the **Commerce parameters** page. Additionally, the enhanced calculation method for auto-charges can be applied only to sales orders that are created through commerce channels (the POS, a call center, and the Dynamics e-Commerce platform).
 
-This new functionality gives organizations more flexibility in the way that header-level auto-charges are calculated and applied to retail sales transactions.
+This new functionality gives organizations more flexibility in the way that header-level auto-charges are calculated and applied to sales transactions.
 
-In versions of Retail that are earlier than version 10.0.1, header-level auto-charges that have a specific mode of delivery relation are calculated only when there is a match with the mode of delivery that is defined on the sales order header.
+In versions the app that are earlier than version 10.0.1, header-level auto-charges that have a specific mode of delivery relation are calculated only when there is a match with the mode of delivery that is defined on the sales order header.
 
 For example, header-level auto-charges are defined for mode of delivery **99** and mode of delivery **11**. A sales order is created, and mode of delivery **99** is defined on the order header. However, some of the sale lines are set up so that they're shipped by using mode of delivery **11**. In this case, only the header-level charges that are linked to mode of delivery **99** are considered and applied to the sales order.
 
-In Retail, the header-level charges have an additional feature that lets you define a [tiered charge configuration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) that is based on the order value. For example, if the order value is between $50.00 and $200.00, an organization might want to charge a freight charge of $5.00. However, if the order value is between $200.01 and $500.00, the freight charge might be $4.00.
+In Commerce, the header-level charges have an additional feature that lets you define a [tiered charge configuration](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) that is based on the order value. For example, if the order value is between $50.00 and $200.00, an organization might want to charge a freight charge of $5.00. However, if the order value is between $200.01 and $500.00, the freight charge might be $4.00.
 
 Some organizations want the benefits of the tiered charge calculation that is provided with header-level charges. However, in scenarios that involve mixed modes of delivery, they also want to make sure that the charges that are calculated are based on a match with the mode of delivery that is defined on each sales line.
 
@@ -60,7 +60,7 @@ The following two sample scenarios outline how these charges are calculated both
 
 ### Scenario 1
 
-This scenario outlines the behavior when the **Pro-rate to matching sales lines** option is set to **No** in the auto-charge setup. (The behavior is equivalent to the behavior of header-level charges in Retail versions that are earlier than version 10.0.1.)
+This scenario outlines the behavior when the **Pro-rate to matching sales lines** option is set to **No** in the auto-charge setup. (The behavior is equivalent to the behavior of header-level charges in app versions that are earlier than version 10.0.1.)
 
 In this scenario, the organization has defined header-level charges for mode of delivery relation **99** and mode of delivery relation **11**. No auto-charges are configured for mode of delivery **21**.
 
@@ -125,17 +125,17 @@ Because the auto-charge configuration is set to prorate to matching sales lines,
 
     **Delivery mode 11**
 
-    - Total retail product value = $70
+    - Total product value = $70
     - **Charge value = $7**
 
     **Delivery mode 99**
 
-    - Total retail product value = $80
+    - Total product value = $80
     - **Charge value = $15**
 
     **Delivery mode 21**
 
-    - Total retail product value = $15
+    - Total product value = $15
     - **Charge value = $0** (No auto-charges have been configured for this combination of a customer and a mode of delivery.)
 
     ![Delivery mode 11 charges fall into the highlighted tier](media/step2mode11.png)

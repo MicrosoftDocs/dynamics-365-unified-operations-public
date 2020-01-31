@@ -43,13 +43,13 @@ Other updates are code updates. The environment page in Microsoft Dynamics Lifec
 
 ![LCS environment page](./media/17-LCS-environment-page.png)
 
-Platform code is at a very low level, and no Microsoft Dynamics 365 Commerce features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
+Platform code is at a very low level, and no Microsoft Dynamics 365 Commerce features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Commerce-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
 Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together as a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
 
 If the code merge is done correctly, the version of a binary hotfix that you take matches the version of the Microsoft-version.txt file in the Retail software development kit (SDK). Typically, binary updates are also linked to the latest platform. Therefore, when you take binary updates, you must stay up to date with the platform. Platform updates help increase the stability of the platform, and they affect build environments and test efforts to some extent.
 
-Application updates or hotfixes are delivered in X++ source code. Therefore, they aren't for the channel side but for the Microsoft Dynamics 365 side (they are either Retail-related or not Retail-related).
+Application updates or hotfixes are delivered in X++ source code. Therefore, they aren't for the channel side but for the Microsoft Dynamics 365 side (they are either Commerce-related or not Commerce-related).
 
 Note that some updates require both an application update and a binary update. For hotfix recommendations, see the next section.
 
@@ -63,7 +63,7 @@ For more details, see [Copy Database From Azure SQL to SQL Server](../../dev-itp
 
 Every time that a database that has been moved from a different environment is restored, specific links in the database can be broken. The Environment reprovisioning tool fixes all these broken links for the default database group, regardless of type of environment that is used. The general guideline is that if the database comes from a different environment, the Environment reprovisioning tool must be run.
 
-In many cases, you should reset the Retail scheduler after you update the database.
+In many cases, you should reset the Commerce scheduler after you update the database.
 
 After you've restored the database, follow these steps.
 
@@ -74,8 +74,8 @@ After you've restored the database, follow these steps.
 
 2. Make sure that the batch service is running.
 3. Run the Environment reprovisioning tool. (Find the latest version in the global Shared asset library in LCS, and then deploy it by using the **Maintain** function.)
-4. Verify that the tool succeeded, the Retail channel profile is up to date with the correct URLs, and the data synchronization jobs for the Default data group succeeded.
-5. In Microsoft Dynamics 365 Commerce, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
+4. Verify that the tool succeeded, the Commerce channel profile is up to date with the correct URLs, and the data synchronization jobs for the Default data group succeeded.
+5. In Commerce, run the **Initialize Commerce scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Commerce channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
 
 ## Taking updates frequently
 
@@ -105,7 +105,7 @@ After you download binary updates and platform updates, you can deploy them via 
 
 For the X++ code, developers just synchronize the Metadata folder and do a full build and database synchronization.
 
-If major new Retail changes have been checked in by other members of the team (for example new files, configuration changes, or a new Retail SDK), it isn't enough to synchronize and build the new files. Remember that a few web applications that are installed on the developer machine won't be updated through a compilation. Those web applications must be deployed. Use the LCS package deployment to deploy the retail package that can be produced at an MSBuild command prompt. For smaller code changes, new package deployments aren't required in order to keep the dev environments in sync if the incremental changes are dropped to the install locations. 
+If major new changes have been checked in by other members of the team (for example new files, configuration changes, or a new Retail SDK), it isn't enough to synchronize and build the new files. Remember that a few web applications that are installed on the developer machine won't be updated through a compilation. Those web applications must be deployed. Use the LCS package deployment to deploy the commerce package that can be produced at an MSBuild command prompt. For smaller code changes, new package deployments aren't required in order to keep the dev environments in sync if the incremental changes are dropped to the install locations. 
 
 ![Environment change history](./media/1-2-environment-change-history.png)
 
@@ -135,7 +135,7 @@ Finally, deploy the packages to your test environments.
 
 When all the required tests are passed, you're ready to deploy the same packages to production. After the packages have been deployed and validated in a Tier 2 or higher environment, you must mark them as Release Candidates in the LCS Asset library. You must then plan the deployment and submit it via the LCS environment page.
 
-There are many considerations when you update a production environment, such as downtime, downtime mitigation, data migration, store updates, and mass deployment. It's very important that you have a plan of all the steps that are required for an update, because Retail projects usually require more than just deployment. For some additional considerations, see the "Tips" section of this topic.
+There are many considerations when you update a production environment, such as downtime, downtime mitigation, data migration, store updates, and mass deployment. It's very important that you have a plan of all the steps that are required for an update, because Commerce projects usually require more than just deployment. For some additional considerations, see the "Tips" section of this topic.
 
 It's assumed that the planning for go-live was started much earlier. For more details, see [Implementation lifecycle](../../fin-and-ops/imp-lifecycle/implementation-lifecycle.md).
 
@@ -147,7 +147,7 @@ Immediately after deployment to production, and before any new feature work is a
 
 You should always deploy binary updates and platform updates by using LCS package deployment.
 
-Finance and Retail customization packages should not be deployed to a build environment.
+Finance and Commerce customization packages should not be deployed to a build environment.
 
 ![Environment change history build](./media/1-7-environment-change-history-build.png)
 
@@ -182,12 +182,12 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 - Production go-live procedures are important. You should consider including the following items on your Go-live checklist. Verify your Go-live checklist in a mock go-live or UAT environment. This list isn't exhaustive.
 
     - After deployment, does LCS show the expected deployment history together with the correct package names?
-    - After deployment, do the LCS environment page and Retail show the correct and expected version numbers?
-    - Can Retail Modern Point of Sale (MPOS) offline mode be used during downtime of Retail? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
+    - After deployment, do the LCS environment page and Commerce show the correct and expected version numbers?
+    - Can Retail Modern Point of Sale (MPOS) offline mode be used during downtime of Commerce? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
     - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
     - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
-    - The "Initialize Retail scheduler" job should be run.
-    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Azure Active Directory setup, Retail shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
+    - The "Initialize Commerce scheduler" job should be run.
+    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Azure Active Directory setup, Commerce shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
     - Is a synchronization of the CDX data jobs required?
     - Is a full synchronization of CDX data jobs required?
     - Does a deployment require that store components also be updated?

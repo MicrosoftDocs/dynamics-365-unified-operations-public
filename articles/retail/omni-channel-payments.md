@@ -51,7 +51,7 @@ This topic provides an overview of omni-channel payments in Dynamics 365 Commerc
 
 In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They are then recalled at the POS to charge the customer's payment card at the time of pickup. 
 
-All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Retail. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
+All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
 
 ### Prerequisites
 
@@ -71,9 +71,9 @@ The second set of APIs is named **iNamedRequestHandler**. It supports the implem
 
 The following components and setup steps are required:
 
-- **eCommerce integration:** An integration with Retail is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
+- **eCommerce integration:** An integration with Commerce is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
 - **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that topic, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
-- **Omni-channel payments configuration:** In the back office, go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
+- **Omni-channel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**.
 - **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omni-channel payments.
 - **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
 - **Payment connector availability:** When an order is recalled, the payment tender lines that are recalled together with the order include the name of the payment connector that was used to create the authorizations that are associated with that order. When the order is fulfilled, the Payments SDK tries to use the same connector that was used to create the original authorization. Therefore, a payment connector that has the same merchant properties must be available for capture. 
@@ -105,14 +105,14 @@ The following sections describe the steps for each scenario and show how to run 
 Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
-- The **Omni-channel payments** option on the **Retail shared parameters** page is set to **True**.
+- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**.
 - The Adyen payment connector is configured for the Houston POS register.
 
 Follow these steps to run the scenario.
 
 1. In the reference storefront, create an order for in-store pickup. Be sure to select the **Houston** store. 
 2. Go through the checkout steps, and pay by using a test credit card number. You can find test credit card numbers on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/test-cards/test-card-numbers/#description).
-3. In Retail, use the **Synchronize orders** batch job and the **P-001** distribution schedule to create the orders in the back office.
+3. In Commerce, use the **Synchronize orders** batch job and the **P-001** distribution schedule to create the orders in the back office.
 4. In the POS, on the welcome page, select the **Orders to pickup** operation to see the orders for in-store pickup. 
 5. Select one or more lines from the order that was created in the reference storefront, and then select **Pick up**.
 
@@ -128,7 +128,7 @@ Follow these steps to run the scenario.
 
 ### Buy in call center, pick up in store
 
-1. In Retail, on the **Customer service** page, enter **Karen Berg** in the search bar, and then select **Search**. 
+1. In Commerce, on the **Customer service** page, enter **Karen Berg** in the search bar, and then select **Search**. 
 3. Select **Karen Berg** in the search results.
 4. After Karen is loaded onto the **Customer service** page, select **New sales order**.
 5. On the new sales order page, select **Header** to view the order header. 

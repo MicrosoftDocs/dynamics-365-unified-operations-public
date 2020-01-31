@@ -33,9 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-There are several samples in the Retail SDK that demonstrate retail extensions. This topic explains how to run these samples. 
-
-
+There are several samples in the Retail SDK that demonstrate extensions. This topic explains how to run these samples.
 
 ## Run the SampleExtensions in POS
 1. Open **ModernPos.Sln** or **CloudPos.sln** from the **Retail SDK\\POS** folder.

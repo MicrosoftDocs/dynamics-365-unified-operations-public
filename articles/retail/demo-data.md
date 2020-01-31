@@ -44,9 +44,9 @@ The sample screen layouts that are included with Commerce demo data provide cont
 
 ## Anatomy of a screen layout ID
 
-To find screen layouts, go to **Retail** \> **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
+To find screen layouts, go to **Retail and Commerce** \> **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
-![Screen layouts page in Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
+![Screen layouts page](../retail/media/demo-screen-layouts-fig-2-1.png)
 
 Screen layout IDs can have a maximum of 10 characters. The ID is a string that consists of three pieces of information, in this order:
 
@@ -113,7 +113,7 @@ The following table shows the layout sizes that are provided for typical screen 
 > [!TIP]
 > POS automatically selects layout sizes, based on the closest size that is available for the screen resolution of the current app window. To find the screen layout ID and layout resolution that are currently used, in Retail Modern POS (MPOS) or Retail Cloud POS (CPOS), open the **Settings** page, and look in the **Session information** section. You can also see the actual window resolution for your current application or browser frame. After you have this information, you can find the source of the layout content by going to **Channel setup** \> **POS setup** \> **POS** \> **Screen layouts**.
 
-![Screen layouts and layout resolutions/sizes in Retail and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
+![Screen layouts and layout resolutions/sizes in Commerce and POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 
 ## Companies and brands
 
@@ -171,9 +171,9 @@ Users have been provided for the various screen layouts. By using the following 
 
 <!-- ## Reference icons and images -->
 
-<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail \> Channel setup \> POS setup \> POS \> Images**. -->
+<!-- The screen layouts, button grids, and visual profiles were created using images and icons that can be found in **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**. -->
 
-<!-- ![Images in Dynamics 365 for Retail](../retail/media/demo-screen-layouts-fig-5-1.png) -->
+<!-- ![Images in Dynamics 365 Commerce](../retail/media/demo-screen-layouts-fig-5-1.png) -->
 
 <!-- Use the [POS Icon and Image Mapping](../retail/media/POS_Icon_and_Image_Mapping.xlsx) reference spreadsheet to locate operation icons, reference photos, swap logos, or provide new images of your own that can be referenced in custom designs. -->
 

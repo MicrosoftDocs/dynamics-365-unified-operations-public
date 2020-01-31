@@ -137,7 +137,7 @@ This topic explains how to log events to [Customer Application Insights](https:/
     <add name="ext.AppInsightsKey" value="xxxxxxx"/>;
     ```
 
-6. Restart your Retail Server.
+6. Restart your Commerce Scale Unit.
 
 ## Consume the logger in the CRT extension
 
@@ -195,7 +195,7 @@ For detailed information about how to build deployable packages, see [Create ret
 
 5. In the **RetailSDK\\Packages\\RetailDeployablePackage** folder, find the retail deployable package. Go to the **content.folder** folder, and make sure that your three files are in the package (**Packages\\RetailDeployablePackage\\content.folder\\RetailServer\\Code\\bin\\ext**).
 6. Upload the deployable package to your Shared asset library in Microsoft Dynamics Lifecycle Services (LCS).
-7. In LCS, open your environment's main page, and select **Environment Features** \> **Retail** \> **Manage**.
+7. In LCS, open your environment's main page, and select **Environment Features** \> **Retail and Commerce** \> **Manage**.
 8. Select **Apply Extension**, and select the extension from your library.
 9. After the extension has been successfully deployed, open an instance of Retail Modern POS (MPOS) or Cloud POS (CPOS) that has been activated against the Retail Cloud Scale Unit (RCSU).
 10. Run the extension scenario that that uses custom Application Insights logging.

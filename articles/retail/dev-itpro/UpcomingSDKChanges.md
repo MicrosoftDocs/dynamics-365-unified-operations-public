@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Upcoming changes in the Retail SDK
 [!include [banner](../includes/banner.md)]
 
-In a future release of Dynamics 365 Commerce, a new set of features is planned to simplify the development and servicing process for retail channel customization. To uptake some of these features, you may need to upgrade, recompile, or do some minor code changes in the extensions that you've built. No changes will be required in the extension logic files or manifest that you've created. However, you will have to move your extension files to the new templates, update the packaging model, and recompile Commerce runtime, proxy, and Retail server extensions to map to the new library reference model and integrated development environment (IDE).
+In a future release of Dynamics 365 Commerce, a new set of features is planned to simplify the development and servicing process for commerce channel customization. To uptake some of these features, you may need to upgrade, recompile, or do some minor code changes in the extensions that you've built. No changes will be required in the extension logic files or manifest that you've created. However, you will have to move your extension files to the new templates, update the packaging model, and recompile Commerce runtime, proxy, and Commerce Scale Unit extensions to map to the new library reference model and integrated development environment (IDE).
 
 Microsoft is publishing this topic before the new features are released, so that you can plan and prepare to uptake them.
 
@@ -60,11 +60,11 @@ Currently, the Retail SDK samples and other templates inside the Retail SDK work
 The new templates and Retail SDK samples can be compiled only in Visual Studio 2017 or the latest supported version. **Therefore, you should plan to upgrade from Visual Studio 2015 to Visual Studio 2017 on your development virtual machines (VMs) when this new feature is released.**
 
 ## Retail SDK reference folder to NuGet Gallery
-All the reference binaries for the Commerce runtime, Retail Server, Retail proxy, commerce tool, and so on, are published in the Retail SDK\\Reference folder. Currently, your extensions reference that folder. However, Microsoft is planning to move away from this model and publish the SDK references in the NuGet Gallery instead. **Therefore, for this new model, you should change your extension project so that it references the NuGet Gallery instead of the Retail SDK\\reference folder. This change will require a reference update and recompilation in your extension project.**
+All the reference binaries for the Commerce runtime, Commerce Scale Unit, Commerce proxy, commerce tool, and so on, are published in the Retail SDK\\Reference folder. Currently, your extensions reference that folder. However, Microsoft is planning to move away from this model and publish the SDK references in the NuGet Gallery instead. **Therefore, for this new model, you should change your extension project so that it references the NuGet Gallery instead of the Retail SDK\\reference folder. This change will require a reference update and recompilation in your extension project.**
 
 This new model will simplify the update process. For example, if you require any updated references in the Retail SDK, you must currently go to Microsoft Dynamics Lifecycle Services (LCS), apply the latest binaries updates, and so on. In the NuGet approach, you can just right-click to get the updated version.
 
-## Retail packaging tool
+## Commerce packaging tool
 The channel installers are being enhanced so that you can use them to install just the extensions. You will be able to decide whether to use one combined installer for core and all extensions, or whether to install extensions and core separately.
 
 ## Retail SDK samples to GitHub

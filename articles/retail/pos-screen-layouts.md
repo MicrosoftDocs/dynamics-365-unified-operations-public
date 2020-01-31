@@ -191,7 +191,7 @@ The button grid designer lets you configure button grids that can be used on the
         > [!NOTE]
         > Retail Modern POS and Cloud POS use only the **Back color** and **Font color** values.
 
-    - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail \> Channel setup \> POS setup \> POS \> Images**.
+    - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**.
 
 ![Example button grid in the POS](../retail/media/Example-Button-Grid-In-POS.png)
 

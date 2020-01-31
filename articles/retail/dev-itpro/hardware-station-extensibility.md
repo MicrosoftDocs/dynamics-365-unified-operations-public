@@ -39,24 +39,24 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic explains how to extend Hardware Station to add support for new devices and new device types for existing devices.
 
-Retail Hardware Station overview
+Hardware Station overview
 --------------------------------
 
-Retail Hardware Station is used by Retail Modern POS and Cloud POS to connect to retail hardware peripherals such as printers, cash drawers, scanners, and payment terminals. 
+Hardware Station is used by Retail Modern POS and Cloud POS to connect to hardware peripherals, such as printers, cash drawers, scanners, and payment terminals. 
 
 [![HWS-Local-Traditional](./media/hws-local-300x236.png)](./media/hws-local.png)
 
 [![HWS-Shared](./media/hws-shared-300x224.png)](./media/hws-shared.png)
 
-## Retail Hardware Station setup
+## Hardware Station setup
 Before you start, use the information in [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md) to install Hardware Station, and to get a feel of what hardware is and how it's installed.
 
-## Retail Hardware Station architecture
+## Hardware Station architecture
 Hardware Station exposes Web API for Hardware Station application programming interfaces (APIs). Hardware Station can be extended either by implementing a new controller for a new device (for example, a cash dispenser) or by overriding an existing controller for an existing device type (for example, a new Audio Jack magnetic stripe reader (MSR) implementation).
 
 [![Hardware Station Architecture](./media/hardware-station-architecture-1024x764.png)](./media/hardware-station-architecture.png)
 
-## Retail Hardware Station extensibility scenarios
+## Hardware Station extensibility scenarios
 Extensibility in Hardware Station is achieved by using [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/dd460648(v=vs.110).aspx), which is supported by .NET. **Extensibility guideline:** Always write your extension in your own extension assembly. That way, you're writing a true extension, and upgrades will be much easier. There are two basic scenarios for extension:
 
 -   **Adding a new device** – The out-of-box Hardware Station doesn't already support the device (for example, a cash dispenser). Therefore, you must add support for the new device in Hardware Station.
@@ -96,7 +96,7 @@ For this scenario, we will add support for a cash dispenser device in Hardware S
 For this scenario, we will add support for a new device type for an existing device (an Audio Jack MSR implementation).
 
 -   The **Export** attribute string specifies the device that this controller is used for: \[Export("MSR", typeof(IHardwareStationController))\]
--   Because there will be multiple controllers for MSRs, Hardware Station uses the configuration file to determine which implementation to use at run time. For more information, see the "Retail Hardware Station extensibility configuration" section later in this article.
+-   Because there will be multiple controllers for MSRs, Hardware Station uses the configuration file to determine which implementation to use at run time. For more information, see the "Hardware Station extensibility configuration" section later in this article.
 
 <!-- -->
 
@@ -123,7 +123,7 @@ For this scenario, we will add support for a new device type for an existing dev
                 // Add controller implementation here
             }
 
-## Retail Hardware Station extensibility configuration
+## Hardware Station extensibility configuration
 ### Configuration for IIS-hosted Hardware Station
 
 Before Hardware Station can consume your extension, the **composition** section in the Hardware Station Web.config file must be updated so that it includes an entry for your extension. The order of the composition targets in the configuration file determines precedence. 

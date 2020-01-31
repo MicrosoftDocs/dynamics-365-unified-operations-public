@@ -232,7 +232,7 @@ This section describes data that is sent to the payment connector for card-not-p
 #### L2 data
 
 > [!NOTE]
-> L2 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Retail client.
+> L2 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Commerce client.
 
 | Namespace | Field | Description |
 |---|---|---|
@@ -292,7 +292,7 @@ This section describes data that is sent to the payment connector for card-not-p
 #### L3 data
 
 > [!NOTE]
-> L3 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Retail client.
+> L3 data is sent to the connector only if this behavior is explicitly configured through the corresponding connector configuration in the Commerce client.
 
 | Namespace | Field | Description |
 |---|---|---|

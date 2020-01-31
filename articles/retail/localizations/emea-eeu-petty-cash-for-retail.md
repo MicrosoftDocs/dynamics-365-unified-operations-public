@@ -2,7 +2,7 @@
 # required metadata
 
 title: Petty cash management for Retail for Eastern Europe
-description: This topic describes how to set up and use cash management features in Retail for Eastern Europe.
+description: This topic describes how to set up and use cash management features in Commerce for Eastern Europe.
 author: epopov
 manager: annbe
 ms.date: 10/03/2018
@@ -31,17 +31,17 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This article contains information about Eastern European localization specific for the Retail industry.
+This article contains information about Eastern European localization specific for the commerce industry.
 
 In accordance with the Eastern Europe accounting requirements, you can set up operations for cash accounts to automate the processes for receipts, cash documents and cash reports. For more information, go to [(EEUR) Set up parameters for cash management](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 Retailers can accept various types of payment in exchange for the products and services that they sell. Although cash is the most common form of payment, retailers can also receive payment in the form of checks, cards, or vouchers. In Retail point of sale (POS), cash, credit card receipts, and other payments are processed through a cash office.
 
-You can do the following by using Cash management in Retail:
+You can do the following by using Cash management in Commerce:
 
-- Create a cash account for the selected payment method for each retail store.
+- Create a cash account for the selected payment method for each store.
 - Use cash journals to post cash transactions and customer payments that are received at a retail POS.
-- Aggregate transactions in a statement line when you post a retail statement. You can aggregate safe drops, bank drops, voucher transactions, remove tender transactions, float entry transactions, income transactions, expense transactions, customer payments, sales transactions, and return transactions.
+- Aggregate transactions in a statement line when you post a statement. You can aggregate safe drops, bank drops, voucher transactions, remove tender transactions, float entry transactions, income transactions, expense transactions, customer payments, sales transactions, and return transactions.
 
 All transactions that take place in Retail POS are posted using a ledger journal. You can use cash payment journals, customer payment journals, and general journals to create and post the statements. For more information, go to [Create, calculate, and post statements for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
@@ -52,17 +52,17 @@ On the **Posted statements** page, on the Action Pane, you can do the following:
 
 ## Set up for cash management for Retail POS
 
-You must complete the following setup procedure before you use cash management in Retail:
+You must complete the following setup procedure before you use cash management:
 
 - Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods, see [Payment methods](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
-- Set up retail parameters for cash operations.
-- Set up a payment method for cash payments in a retail store.
+- Set up parameters for cash operations.
+- Set up a payment method for cash payments in a store.
 
-### Set up retail parameters for cash operations
+### Set up parameters for cash operations
 
-You can set up parameters to create and post cash transactions in Retail. You can use cash payment journals, customer payment journals, or general journals to post sales transactions and payment transactions in the Retail POS. You can aggregate transactions that have the same properties when you post a statement.
+You can set up parameters to create and post cash transactions in Commerce. You can use cash payment journals, customer payment journals, or general journals to post sales transactions and payment transactions in the Retail POS. You can aggregate transactions that have the same properties when you post a statement.
 
-1. Go to **Retail \> Headquarters setup \> Parameters \> Retail parameters**. In the left pane, click **Posting**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**. In the left pane, click **Posting**.
 2. In the **Posting** area, on the **Aggregation** FastTab, set **Tender remove/float** to **Yes** to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.
 3. Activate the individual parameters listed below to aggregate the transactions that are associated with a statement line when you post the statement:
 
@@ -79,12 +79,12 @@ You can set up parameters to create and post cash transactions in Retail. You ca
     - **Cash payment journal** – This journal is used to post cash payments.
     - **General journal** – This journal is used to post transactions other than cash payments and customer payments.
 
-### Set up a payment method for cash payments in a retail store
+### Set up a payment method for cash payments in a store
 
-Use the following procedure to set up a payment method for cash payments in a retail store.
+Use the following procedure to set up a payment method for cash payments in a store.
 
-1. Go to **Retail \> Channels \> Retail stores \> All retail stores**.
-2. On the **All retail stores** list page, select the store to set up a payment method for.
+1. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
+2. On the **All stores** list page, select the store to set up a payment method for.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, click **Payment methods**.
 4. On the **Payment method** page, create or select a payment method.
 5. On the **Posting** FastTab, in the **Account** field group, in the **Account type** field, select **Cash account**.

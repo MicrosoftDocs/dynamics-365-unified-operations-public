@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add custom notifications in POS. This topic applies to for Dynamics 365 for Finance and Operations and Dynamics 365 for Retail 7.3 and higher versions with latest binary fix.
+This topic explains how to add custom notifications in POS. This topic applies to Dynamics 365 for Finance and Operations and Dynamics 365 for Retail 7.3 and higher versions with latest binary fix.
 
 You can extend POS notification framework for these scenarios: 
 
@@ -43,25 +43,34 @@ You can extend POS notification framework for these scenarios:
 
 ## How it works
 
-The notification framework in POS runs periodically for the configured operation in Retail Headquarters (the frequency is configurable in Retail headquarters) and calls the notification service in commerce runtime (CRT) and Real time service in Retail Headquarters. When POS makes the call to the notification service in CRT, CRT runs the business logic and checks if there is any notification to be sent to POS for that particular operation. The operation ID is passed as a parameter to the request and the CRT notification service checks the operation ID and returns the notification details. If the notification exists then the CRT returns the response to POS reporting thjta there is a notification available. POS parses this notification and shows it in the UI. When the POS user clicks the notification the relevant operation in POS is executed, notifications are tied to an operation and inside the operation handler write the business logic to be performed.
+The notification framework in POS runs periodically for the configured operation in Headquarters (the frequency is configurable) and calls the notification service in commerce runtime (CRT) and Real time service in Headquarters. When POS makes the call to the notification service in CRT, CRT runs the business logic and checks if there is any notification to be sent to POS for that particular operation. The operation ID is passed as a parameter to the request and the CRT notification service checks the operation ID and returns the notification details. 
 
-When the CRT returns the response for the notification it returns the number of notifications, messages, and action parameters. The POS framework has built-in logic to parse the response and get the POS operation ID and call it when the user clicks the notification. You can write custom logic inside the operation on what should happen when the POS user clicks the notification, additional parameter from CRT to POS can be sent using the action property, additional properties will be available inside the operation request in POS.
+If the notification exists, then the CRT returns the response to POS reporting that there is a notification available. POS parses this notification and shows it in the UI. When the POS user clicks the notification, the relevant operation in POS is executed. Notifications are tied to an operation and inside the operation handler write the business logic to be performed.
+
+When the CRT returns the response for the notification, it returns the number of notifications, messages, and action parameters. The POS framework has built-in logic to parse the response to get the POS operation ID and call it when the user clicks the notification. 
+
+You can write custom logic inside the operation on what should happen when the POS user clicks the notification. Additional parameters from CRT to POS can be sent using the action property, and will be available inside the operation request in POS.
 
 ### Example
 To notify the POS user to prepare orders for pickup, inside CRT check if there an order for pickup. If so, update the notification response with relevant parameter. POS will parse the response and show the notification. When the POS user clicks the notification, POS calls the operation with the parameter from the notification (it’s up to the extension logic whether to send parameters or not) and inside the operation read all the pending orders for pickup and show it in the UI for the POS user to take further action.
 
 ## Steps required to enable notification for custom operation
 
-1. Create a new operation in Retail Headquarters under **Retail > Channel Setup > POS Setup > POS > POS operations**.
+1. Create a new operation in Headquarters under **Retail and Commerce > Channel Setup > POS Setup > POS > POS operations**.
+
     > [!NOTE]
     > Use an operation ID greater than 5000 for custom operation.
+    
 2. Extend the notification service.  When the scheduler for the notification service runs, it calls both the CRT and Real time transaction service extension code to get the notification message.
-3.  Extend POS. In POS write the logic inside the POS operation for what should happen when the user clicks the notification. For instructions on how to create a new pos operation, see [Add POS operations to POS layouts by using Button grid designer](add-pos-operations.md).
-4. Configure the notification service in Retail Headquarters with the custom operation. When the scheduler runs it includea the custom operation too. For instructions on to configure notification in POS, see [Add POS operations to POS layouts by using Button grid designer](../notifications-pos.md).
-    When the POS user clicks the notification, the framework calls the right operation based on the response returned form the CRT. The notification service runs for all the notification configured in retail headquarters and returns the response with the operation id and notification details. So, POS will have the context of operation ID and the framework will use this to call your operation implementation.
+
+3.  Extend POS. In POS, write the logic inside the POS operation for what should happen when the user clicks the notification. For instructions on how to create a new POS operation, see [Add POS operations to POS layouts by using Button grid designer](add-pos-operations.md).
+
+4. Configure the notification service in Headquarters with the custom operation. When the scheduler runs it, includes the custom operation. For instructions on to configure notification in POS, see [Add POS operations to POS layouts by using Button grid designer](../notifications-pos.md).
+
+    When the POS user clicks the notification, the framework calls the right operation based on the response returned form the CRT. The notification service runs for all the notifications configured in Headquarters and returns the response with the operation id and notification details. So, POS will have the context of operation ID and the framework will use this to call your operation implementation.
 
 > [!NOTE] 
-> The notification scheduler checks both CRT and Retail Headquarters to check if there are any new notifications. Depending on the scenario extend the real time transaction service in Retail Headquarters or only CRT. Scenarios where real-time processing is required for the notification then extend the Real-time transaction service method in Retail Headquarters if real-time processing is not required the extend only CRT.
+> The notification scheduler checks both CRT and Headquarters to check if there are any new notifications. Depending on the scenario, extend the real time transaction service in Headquarters or only CRT. Scenarios where real-time processing is required for the notification then extend the Real-time transaction service method in Headquarters if real-time processing is not required the extend only CRT.
 
 ## Extend the notification service in CRT
 

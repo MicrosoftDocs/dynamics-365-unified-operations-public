@@ -43,7 +43,7 @@ This procedure walks through creating financial dimensions for point of sale (PO
 9. Close the page.
 10. Click Save.
 11. Close the page.
-12. Go to Retail and commerce > Channel setup > POS setup > Registers.
+12. Go to Retail and Commerce > Channel setup > POS setup > Registers.
 13. In the list, find and select the desired record.
 14. Toggle the expansion of the Financial dimensions section.
 15. Click Edit.

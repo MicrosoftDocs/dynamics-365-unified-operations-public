@@ -45,8 +45,8 @@ Organizations often need to ensure that the links to their legal terms and priva
 
     2.  Enter the link to a page that outlines the privacy statement for your organization.
 
-    > [!NOTE]
-    > Make sure that you enter the full URL, starting with either *https* or *http*.
+        > [!NOTE]
+        > Make sure that you enter the full URL, starting with either *https* or *http*.
 
 2.  Click **Save**.
 
@@ -56,7 +56,8 @@ Organizations often need to ensure that the links to their legal terms and priva
 
     2.  Click **Run now**.
 
-4.  To verify that the job completed, go to the **Download sessions** page.
+        > [!NOTE]
+        > To verify that the job completed, go to the **Download sessions** page.
 
 ## Validate links
 

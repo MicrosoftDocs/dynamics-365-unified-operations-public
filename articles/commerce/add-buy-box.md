@@ -76,9 +76,9 @@ Buy box modules have three settings that can be configured:
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
 - **Inventory buffer** – Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. Therefore, a buffer can be defined for inventory. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, so that the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
-## Retail server interaction
+## Commerce Scale Unit interaction
 
-The buy box module retrieves product information using Retail Server APIs. The product ID from the product details page is used to retrieve all information.
+The buy box module retrieves product information using Commerce Scale Unit APIs. The product ID from the product details page is used to retrieve all information.
 
 ## Add a buy box module to a page
 

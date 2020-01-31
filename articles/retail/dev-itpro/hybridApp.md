@@ -36,7 +36,7 @@ This topic shows how to build and run the Retail POS hybrid app on Android and i
 
 ## Overview
 
-Retail hybrid app is shell built using [Xamarin](https://docs.microsoft.com/xamarin/). Inside the shell is a Web view controller that loads the cloud POS, which is based on the Retail server URL specified in the settings of this app. This is a Retail hybrid app shell for Android and iOS which will internally load the Cloud POS. For more information, see [Cloud POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/mpos-or-cpos).
+Retail hybrid app is shell built using [Xamarin](https://docs.microsoft.com/xamarin/). Inside the shell is a Web view controller that loads the cloud POS, which is based on the Commerce Scale Unit URL specified in the settings of this app. This is a Retail hybrid app shell for Android and iOS which will internally load the Cloud POS. For more information, see [Cloud POS](https://docs.microsoft.com/dynamics365/unified-operations/retail/mpos-or-cpos).
 
 ## Development tools
 The Retail hybrid app supports the Android and iOS phone platforms. The app is built by using Xamarin, which means that you must install Xamarin on your development computer. To build the iOS app, you must have a Mac that has Xamarin installed. Although you can do development for both Android and iOS on a computer that runs Microsoft Windows, you must use a Mac to complete the build for the iOS platform. If your Mac is a shared team resource, you might want to use a Mac just for the build process. You must copy the Retail software development kit (Retail SDK) on all the computers that you use for development. The Retail SDK is available in all developer VMs that are provisioned for using [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/).
@@ -60,7 +60,7 @@ After you've installed Xamarin, you must update it to the latest stable version.
       
 2.  In the Retail SDK folder, open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
-3.  Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Retail Server URL and save.
+3.  Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
   
 4.  You should be able to sign in and activate the device.
 
@@ -87,7 +87,7 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
       
          ![POS iOS app VS setting for deployment](./media/iOSSetting.png)
       
-  2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Retail Server URL.
+  2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Commerce Scale Unit URL.
       
          ![POS iOS app setting](./media/iOSApp.png)
       
@@ -114,7 +114,11 @@ Support for other payment processors and peripheral devices can be implemented b
 To enable direct hardware support for the hybrid Android app, set up a dedicated hardware station in the same way it would be set up for MPOS. Instructions for setting up the dedicated, or IPC, hardware station can be found in [Retail peripherals](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1)
 
 > [!NOTE]
-> The dedicated hardware station provided with demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment with demo data, delete the existing hardware stations and create a new dedicated hardware station. To do this, go to **Retail > Channels > Retail stores > All retail stores**. Select the store that will be used, typically "HOUSTON". In the store details form, scroll down to the **Hardware stations** FastTab. Remove the existing dedicated hardware station, then select **Add** to add a new hardware station of type **Dedicated**. A description is optional. No other details are necessary for the hardware station. 
+> The dedicated hardware station provided with demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment with demo data, delete the existing hardware stations and create a new dedicated hardware station. 
+>
+> To do this, go to **Retail and Commerce > Channels > Stores > All stores**. Select the store that will be used, typically "HOUSTON". 
+>
+> In the store details form, scroll down to the **Hardware stations** FastTab. Remove the existing dedicated hardware station, then select **Add** to add a new hardware station of type **Dedicated**. A description is optional. No other details are necessary for the hardware station. 
 
 To set up the payment connector, follow the standard setup steps noted in the [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration). Skip the section labeled "Update the Modern POS or IIS Hardware Station configuration."
 
@@ -129,7 +133,7 @@ After the Epson printer has ePOS-Print enabled, turn the printer off and turn it
 
 Payment terminals and receipt printers can be shared among Android POS clients and other MPOS devices. While peripherals can still be shared through an IIS hardware station; the addition of built-in peripheral support for Android POS enables sharing of these devices without deploying the hardware station as a web service.
 
-To share devices among Android POS clients, instead of assigning the IP and hardware profile to the register, the hardware profile should be set on the dedicated hardware station itself. To do this, go to **Retail > Channels > Retail stores > All retail stores**. Select the store and open for editing. Next, scroll down to the list of hardware stations for the store and assign the hardware profile with network payment terminal, EFT settings, and network printer directly to the hardware station itself. For this scenario, the EFT terminal ID will also need to be assigned to the hardware station at the store level.
+To share devices among Android POS clients, instead of assigning the IP and hardware profile to the register, the hardware profile should be set on the dedicated hardware station itself. To do this, go to **Retail and Commerce > Channels > Stores > All stores**. Select the store and open for editing. Next, scroll down to the list of hardware stations for the store and assign the hardware profile with network payment terminal, EFT settings, and network printer directly to the hardware station itself. For this scenario, the EFT terminal ID will also need to be assigned to the hardware station at the store level.
 
 ## Additional resources
 - [Payments FAQ](payments-retail.md)

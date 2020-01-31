@@ -48,7 +48,7 @@ The following illustration shows the parts of the Help system. The in-product He
 ## Connecting the Help system
 
 > [!NOTE]
-> The **Task guides** tab is currently not available in Dynamics 365 Talent or Commerce. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both Commerce and Talent.
+> The **Task guides** tab is currently not available in Dynamics 365 Talent or Commerce. We are currently working to enable this functionality in a future release. The Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site for both Talent and Commerce.
 
 Using the **System Parameters** page, system administrators connect the pieces of the Help system for an implementation.
 

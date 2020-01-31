@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic describes the various components that make up Dynamics 365 Commerce.
 
-Retail provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
+Commerce provides mid-market and large retailers with a complete head office and point of sale (POS) solution that includes support for online and brick-and-mortar stores. It can help retailers increase financial returns, improve service, manage growth, reach customers, and streamline efficiencies.
 
 <table>
 <thead>
@@ -48,14 +48,14 @@ Retail provides mid-market and large retailers with a complete head office and p
 </thead>
 <tbody>
 <tr>
-<td>Retail headquarters</td>
-<td>Retail headquarters for Dynamics 365 Commerce can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Retail Scheduler coordinates communication between Retail and the stores. Retail headquarters can be used with any POS or online store system that can receive and transmit the required data.
-<p><strong>Important:</strong> Building a custom POS or online store solution for Retail is a complex task that requires extensive planning, development, and testing.</p>
+<td>Headquarters</td>
+<td>Headquarters for Commerce can be used to manage a chain of stores as one enterprise. It controls daily operations and tracks sales information for every store in the chain. Commerce Scheduler coordinates communication between Commerce and the stores. Headquarters can be used with any POS or online store system that can receive and transmit the required data.
+<p><strong>Important:</strong> Building a custom POS or online store solution for Commerce is a complex task that requires extensive planning, development, and testing.</p>
 </td>
 </tr>
 <tr>
 <td>Retail POS</td>
-<td>Dynamics 365 Commerce supports two types of POS experience:
+<td>Commerce supports two types of POS experience:
 <ul>
 <li><strong>Cloud POS</strong> is a browser-based POS that can be used on mobile devices.</li>
 <li><strong>Retail Modern POS</strong> (MPOS) can be used on clients such as PCs, tablets, and phones to process sales transactions, customer orders, and daily operations, and to perform inventory management.</li>
@@ -63,12 +63,12 @@ Retail provides mid-market and large retailers with a complete head office and p
 </td>
 </tr>
 <tr>
-<td>Retail Server</td>
-<td>Retail Server provides an OData web API that lets both employees and customers access information and perform tasks by using both Retail POS clients and the online store.</td>
+<td>Commerce Scale Unit</td>
+<td>Commerce Scale Unit provides an OData web API that lets both employees and customers access information and perform tasks by using both Retail POS clients and the online store.</td>
 </tr>
 <tr>
 <td>Hardware Station</td>
-<td>Retail Hardware Station provides services that enable Retail POS clients, and peripherals such as printers, cash drawers, and payment devices to communicate with Retail Server.</td>
+<td>Retail Hardware Station provides services that enable Retail POS clients, and peripherals such as printers, cash drawers, and payment devices to communicate with Commerce Scale Unit.</td>
 </tr>
 <tr>
 <td>Retail Store Scale Unit</td>
@@ -76,14 +76,14 @@ Retail provides mid-market and large retailers with a complete head office and p
 </tr>
 <tr>
 <td>Retail Cloud Scale Unit</td>
-<td>Retail Cloud Scale Unit is a set of components that enables Retail channel operations (such as point of sale operations) in a store or e-Commerce operation. Retail Cloud Scale Unit includes Retail Server, Retail channel database, and Cloud POS. Retail Cloud Scale Unit is hosted and managed by Microsoft. Retail Cloud Scale Unit supersedes the previous iteration of cloud-hosted Retail Server, Retail channel database, and Cloud POS.</td>
+<td>Retail Cloud Scale Unit is a set of components that enables Commerce channel operations (such as point of sale operations) in a store or e-Commerce operation. Retail Cloud Scale Unit includes Retail Server, Commerce channel database, and Cloud POS. Retail Cloud Scale Unit is hosted and managed by Microsoft. Retail Cloud Scale Unit supersedes the previous iteration of cloud-hosted Retail Server, Commerce channel database, and Cloud POS.</td>
 <tr>
 <td>Commerce runtime</td>
 <td>Commerce runtime (CRT) serves as the core engine that supports the business logic across the various channels. Commerce runtime contains a data access layer, services layer, workflow layer, and an application programming interface (API) layer.</td>
 </tr>
 <tr>
 <td>Channel database</td>
-<td>A channel database holds Retail data for one or more retail channels, such as online stores or brick-and-mortar stores.</td>
+<td>A channel database holds Channel data for one or more commerce channels, such as online stores or brick-and-mortar stores.</td>
 </tr>
 <tr>
 <td>e-Commerce platform SDK</td>
@@ -91,7 +91,7 @@ Retail provides mid-market and large retailers with a complete head office and p
 </tr>
 <tr>
 <td>Retail SDK</td>
-<td>The Retail SDK contains sample source code and templates that you can use to customize the Retail system.</td>
+<td>The Retail SDK contains sample source code and templates that you can use to customize the Commerce system.</td>
 </tr>
 </tbody>
 </table>

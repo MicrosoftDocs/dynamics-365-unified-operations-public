@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance invoices for Retail for Eastern Europe
-description: This topic explains how to set up advance notices for Retail for Eastern Europe. 
+description: This topic explains how to set up advance notices for Commerce for Eastern Europe. 
 author: epopov
 manager: annbe
 ms.date: 10/23/2018
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-The information in this topic applies to the Eastern European localization and is specific to the retail industry.
+The information in this topic applies to the Eastern European localization and is specific to the commerce industry.
 
 For Poland, Hungary, and Czech Republic, when a prepayment is received from a customer via Point of Sale (POS), the prepayment must be registered for tax purposes, and it's required to generate and print an advance invoice document that includes the prepayment amount. Additionally, for Poland, advance invoice transactions must be posted in the general ledger.
 
@@ -53,7 +53,7 @@ The following scenarios are supported:
 
 ### Turn on the functionality for creating advance invoices
 
-1. Go to **Retail \> Headquarters setup \> Parameters \> Retail parameters**.
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
 2. On the **Customer orders** tab, on the **Order** FastTab, set the **Create advance invoice for deposit** option to **Yes**.
 
 ### Define the parameters for posting advance invoices
@@ -84,12 +84,12 @@ You can print advance invoices from POS on a Microsoft Windows printer that is c
 
 Follow these steps to enable documents to be printed from POS on a Windows printer that is connected to the hardware station.
 
-1. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**.
 2. Select a hardware profile that is related to the store where the printer is used.
 3. In either the **Printer** section or the **Printer 2** section, update the settings:
 
     - In the **Printer** field, select **Windows driver**.
     - In the **Device name** field, enter the name of the printer.
 
-4. Go to **Retail \> Retail IT \> Distribution schedule**.
+4. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 5. Select job **1090**, and then select **Run now**.

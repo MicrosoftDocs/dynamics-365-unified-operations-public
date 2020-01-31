@@ -43,7 +43,7 @@ This procedure demonstrates how to create and publish a new product assortment a
 4. In the Assortment name field, type a value.
 5. In the Effective date field, enter a date.
 6. In the Expiration date field, enter a date.
-7. Expand the Retail channels section.
+7. Expand the Commerce channels section.
 8. Click Add line.
 9. In the tree, select 'Contoso Retail\Electronics\Boston'.
 10. Click Add.

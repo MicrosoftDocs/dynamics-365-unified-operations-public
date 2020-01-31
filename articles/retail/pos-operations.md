@@ -47,7 +47,7 @@ The following columns specify where the operations can be invoked:
 - **Welcome screen** – The operation can be invoked from POS button grids that are configured on the POS welcome screen.
 
 > [!NOTE]
-> The operations listed below apply to the latest version of Retail. Some operations may have changed or may not be available in previous versions.
+> The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
 
 | ID | Operation | Description | Button grid | Transaction screen | Welcome screen | Available offline | Locale-specific |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

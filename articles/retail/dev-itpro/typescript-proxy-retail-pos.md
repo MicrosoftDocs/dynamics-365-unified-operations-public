@@ -2,7 +2,7 @@
 # required metadata
 
 title: Typescript and C# proxies for Retail point of sale (POS)
-description: This topic provides information about the Retail proxy and explains how to generate it.
+description: This topic provides information about the Commerce proxy and explains how to generate it.
 author: mugunthanm
 manager: AnnBe
 ms.date: 01/06/2020
@@ -33,20 +33,20 @@ ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-When you create a new controller for Retail Server application programming interfaces (APIs) or extend the existing controller, you must generate the Retail proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Retail proxy if you add a new API for the Customer entity by extending the Customer controller.
+When you create a new controller for Commerce Scale Unit application programming interfaces (APIs) or extend the existing controller, you must generate the Commerce proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Commerce proxy if you add a new API for the Customer entity by extending the Customer controller.
 
-## What is the Retail proxy used for and when should you use it?
+## What is the Commerce proxy used for and when should you use it?
 
-All the clients use the proxy API to interact with Retail Server. The Retail proxy abstracts the interface between Retail Server and the Commerce runtime (CRT). For example, you create a new entity and some business logic as request/response operations in CRT, and you add a new Retail Server API to expose that entity and those request/response operations. You now want to access the entity and the request/response operations in the point of sale (POS) to do some client logic. You can manually create all the entities and request/response metadata in the POS, and access the Retail Server by using the correct parameters. However, this approach involves lots of additional overhead, because you must duplicate the entities, manager, and request/response code in two places, and you must also write lots of code.
+All the clients use the proxy API to interact with Commerce Scale Unit. The Commerce proxy abstracts the interface between Commerce Scale Unit and the Commerce runtime (CRT). For example, you create a new entity and some business logic as request/response operations in CRT, and you add a new Commerce Scale Unit API to expose that entity and those request/response operations. You now want to access the entity and the request/response operations in the point of sale (POS) to do some client logic. You can manually create all the entities and request/response metadata in the POS, and access the Commerce Scale Unit by using the correct parameters. However, this approach involves lots of additional overhead, because you must duplicate the entities, manager, and request/response code in two places, and you must also write lots of code.
 
-The Retail proxy reduces this effort by automatically generating the proxy for all the custom entities and request/response operations that are added in Retail Server. The proxy tool generates the required interface and all the required metadata, and abstracts the actual implementation. In that way, you can include the files in the extension projects, and can access the Retail Server APIs and the entities by using the metadata and interface that are generated.
+The Commerce proxy reduces this effort by automatically generating the proxy for all the custom entities and request/response operations that are added in Commerce Scale Unit. The proxy tool generates the required interface and all the required metadata, and abstracts the actual implementation. In that way, you can include the files in the extension projects, and can access the Commerce Scale Unit APIs and the entities by using the metadata and interface that are generated.
 
 ## Proxy types
 
 There two types of proxy to support cross-platform scenarios:
 
-- **Typescript proxy** – The POS uses the Typescript proxy to access the Retail Server APIs and CRT entities. If the POS uses Retail Server, it requires the Typescript proxy. Otherwise, the POS can't communicate with the Retail Server for any operations or workflows.
-- **C# proxy** – The POS uses the C# proxy when it's offline. (When the POS is offline, it communicates directly with CRT, without using Retail Server.) The POS also uses this proxy for the Dynamics e-Commerce platform. If you want your customization to work when the POS is offline, and you want your e-Commerce client to access the Retail Server APIs, you must generate the C# proxy.
+- **Typescript proxy** – The POS uses the Typescript proxy to access the Commerce Scale Unit APIs and CRT entities. If the POS uses Commerce Scale Unit, it requires the Typescript proxy. Otherwise, the POS can't communicate with the Commerce Scale Unit for any operations or workflows.
+- **C# proxy** – The POS uses the C# proxy when it's offline. (When the POS is offline, it communicates directly with CRT, without using Commerce Scale Unit.) The POS also uses this proxy for the Dynamics e-Commerce platform. If you want your customization to work when the POS is offline, and you want your e-Commerce client to access the Commerce Scale Unit APIs, you must generate the C# proxy.
 
 The steps to generate the Typescript proxy and the C# proxy differ. The rest of this topic explains how to generate each type of proxy.
 
@@ -57,8 +57,9 @@ The steps to generate the Typescript proxy and the C# proxy differ. The rest of 
 
 Use the CommerceProxyGenerator.exe file from the Retail SDK\\Reference\\CommerceProxyGenerator.<version_number> folder to generate the typescript proxy for the POS.
 
-1. Before you generate the proxy, copy the customized Retail Server, CRT, and other dependent libraries to the **RetailSDK\\Reference** folder.
-2. Open a Command Prompt window as an administrator. Go to the **...\\RetailSDK\\Reference\CommerceProxyGenerator.<version_number>** folder and run the following command in the command prompt window to generate the proxy. The proxy files will be generated in the same folder.
+1. Before you generate the proxy, copy the customized Commerce Scale Unit, CRT, and other dependent libraries to the **Retail SDK\\Reference** folder.
+2. Open a Command Prompt window as an administrator, and go to the **...\\Retail SDK\\Reference** folder. Run the following command to generate the proxy. The proxy files will be generated in the same folder.
+
 
 ```
 CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.dll <FilePathNameForRetailServerExtensionDLL> /application:typescriptextensions
@@ -72,10 +73,10 @@ CommerceProxyGenerator.exe <Path>\Microsoft.Dynamics.Retail.RetailServerLibrary.
 Ex:
 CommerceProxyGenerator.exe C:\\RetailSDK\\References\\Microsoft.Dynamics.Retail.Proxies.ExtensionsGenerator.9.18.19299.3\\build\Microsoft.Dynamics.Retail.RetailServerLibrary.dll C:\\RetailSDK\\References\\Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll /a:typescriptextensions
 ```
-In the above command, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Retail Server extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
+In the above command, replace **Microsoft.Dynamics.RetailServer.CrossLoyaltySample.dll** with the name of your custom Commerce Scale Unit extension library. Include the generated files in your POS project. The command generates two files that are based on your extension libraries: DataServiceEntities.g.ts and DataServiceRequests.g.ts.
 
 > [!NOTE]
-> You must generate the proxy for all Retail Server extensions.
+> You must generate the proxy for all Commerce Scale Unit extensions.
 
 ## Generate the C# proxy (7.1 and 7.2)
 

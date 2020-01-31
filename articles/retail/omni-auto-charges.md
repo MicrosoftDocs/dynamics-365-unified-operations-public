@@ -2,7 +2,7 @@
 # required metadata
 
 title: Omni-channel advanced auto charges
-description: This topic describes capabilities for managing additional order charges for Retail channel orders using advanced auto charges features.
+description: This topic describes capabilities for managing additional order charges for Commerce channel orders using advanced auto charges features.
 author: hhaines
 manager: annbe
 
@@ -38,7 +38,7 @@ ms.dyn365.ops.version: 10.0
 
 This topic provides information on configuration and deployment of the advanced auto-charges feature which are available in Dynamics 365 for Retail version 10.0.
 
-When the advanced auto-charges features are enabled, orders created in any supported Retail channel (point of sale (POS), call center, and online), can take advantage of the [auto-charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
+When the advanced auto-charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto-charges](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 
 In releases prior to Retail version 10.0, [auto-charge](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations are only accessible by orders created in e-Commerce and call center channels. In versions 10.0 and later, POS-created orders can leverage the auto-charges configurations. That way, additional miscellaneous charges can systematically be added to sales transactions.
 
@@ -50,13 +50,13 @@ With the advanced auto-charges feature, POS users can have systematic calculatio
 
 ## Enabling advanced auto-charges
 
-On the **Retail \> Headquarters setup \> Parameters \> Retail parameters** page, go to the **Customer orders** tab. On the **Charges** FastTab, set **Use advanced auto-charges** to **Yes**.
+On the **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters** page, go to the **Customer orders** tab. On the **Charges** FastTab, set **Use advanced auto-charges** to **Yes**.
 
 ![Advanced Auto-Charges Parameter](media/advancedchargesparameter.png)
 
 When advanced auto-charges are enabled, users are no longer prompted to manually enter a shipping charge at the POS terminal when creating a ship-all or ship-selected customer order. POS order charges are systematically calculated and added to the POS transaction (if a corresponding auto-charges table that matches the criterion of the order being created are found). Users can also add or maintain header or line-level charges manually through newly added POS operations that can be added to the POS screen layouts.
 
-When advanced auto-charges are enabled, the existing **Retail parameters** for **Shipping charges code** and **Refund shipping charges** are no longer utilized. These parameters are only applicable if the **Use advanced auto-charges** parameter is set to **No**.
+When advanced auto-charges are enabled, the existing **Commerce parameters** for **Shipping charges code** and **Refund shipping charges** are no longer utilized. These parameters are only applicable if the **Use advanced auto-charges** parameter is set to **No**.
 
 Before you enable this feature, ensure that you have tested and trained your employees, as this will change the business process flow of how shipping or other charges are calculated and added to POS sales orders. Make sure that you understand the impact of the process flow to the creation of transactions from POS. For call center and e-Commerce orders, the impact of enabling advanced auto-charges is minimal. Call center and e-Commerce applications will continue to have the same behavior they have had historically related to the auto-charges tables to calculate additional order fees. Call center channel users will continue to have the ability to manually edit any system calculated auto-charges at the header or line level, or manually add additional miscellaneous charges at the header or line level.
 
@@ -77,13 +77,13 @@ It is important to note that the above listed POS operations can also be added t
 
 ## Use case examples
 
-In this section, sample use cases are presented to help you understand the configuration and usage of auto-charges and miscellaneous charges within the context of Retail channel orders. These examples illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
+In this section, sample use cases are presented to help you understand the configuration and usage of auto-charges and miscellaneous charges within the context of channel orders. These examples illustrate the behavior of the application when the **Use advanced auto-charges** parameter has been enabled.
 
 ### Auto-charges header charges example
 
 #### Use case scenario
 
-A retailer wants to automatically add charges for freight when transactions are created in any Retail channel that require a shipment of products to the customer. The retailer offers 2 methods of delivery: Ground and Air. If a customer chooses Ground delivery and the order value is less than $100, the retailer wants to charge the customer a freight charge of $10.00. If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any additional freight fees. If the customer chooses the Air method of delivery for all orders, regardless of their total value, will be charged a freight fee of $20.00.
+A retailer wants to automatically add charges for freight when transactions are created in any Commerce channel that require a shipment of products to the customer. The retailer offers 2 methods of delivery: Ground and Air. If a customer chooses Ground delivery and the order value is less than $100, the retailer wants to charge the customer a freight charge of $10.00. If the order is over $100 in value and the customer chooses ground shipping, the customer will not be charged any additional freight fees. If the customer chooses the Air method of delivery for all orders, regardless of their total value, will be charged a freight fee of $20.00.
 
 #### Setup and configuration
 
@@ -99,7 +99,7 @@ For the ground delivery charges, in the lines section of the **Auto-charges** pa
 
 For the air delivery charges, in the lines section of the auto-charges form, define a charge of $20.00 that will be applied to all orders (between a value of $.01 to $9,999,999).
 
-Send the changes to the Retail Server/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
+Send the changes to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
 #### Sales processing for this scenario
 
@@ -115,7 +115,7 @@ In call center scenarios, the user has control over the setting of the delivery 
 
 #### Use case scenario 
 
-A retailer wants to add an additional charge to the customer for setup fees when the customer purchases a particular model of computer. This computer requires additional non-optional setup actions that the retailer will perform for the customer. The retailer has informed customers that there will be an additional fee for this setup. The retailer prefers to manage the charges related to this fee separately from the product sales price for financial reporting purposes. A setup fee of $19.99 will be charged to the customer when this specific computer is purchased in any retail channel.
+A retailer wants to add an additional charge to the customer for setup fees when the customer purchases a particular model of computer. This computer requires additional non-optional setup actions that the retailer will perform for the customer. The retailer has informed customers that there will be an additional fee for this setup. The retailer prefers to manage the charges related to this fee separately from the product sales price for financial reporting purposes. A setup fee of $19.99 will be charged to the customer when this specific computer is purchased in any channel.
 
 #### Setup and configuration
 
@@ -127,7 +127,7 @@ Set the **Level** drop-down menu to **Line**, and create a new auto-charges reco
 
 ![Auto charges example](media/linechargesexample.png)
 
-Send the charges to the Retail Server/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
+Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
 #### Sales processing for this scenario
 
@@ -149,9 +149,9 @@ Ensure the charges code that will be used in this scenario has been properly con
 
 If the charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, set **Shipping charge** on the charges code to **Yes**. If this charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, set **Refundable** to **Yes**. The **Refundable** flag is only applicable when the **Use advanced auto-charges** parameter is set to **Yes**.
 
-Send the charges to the Retail Server/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
+Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
-The **Add header charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 141). The screen layout changes must be distributed to the retail channel as well through the distribution schedule function.
+The **Add header charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 141). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
 
 #### Sales processing of manual header charges
 
@@ -171,9 +171,9 @@ Ensure the charges code that will be used in this scenario has been properly con
 
 If the charge should be considered a "shipping" related charge for the purpose of shipping related discounts or promotions, set the **Shipping charge** on the charges code to **Yes**. If the charge is also allowed to be systematically refunded during the processing of a return transaction in the POS application, set **Refundable** to **Yes**. The **Refundable** flag is only applicable when the **Use advanced auto-charges** parameter is set to **Yes**.
 
-Send the charges to the Retail Server/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
+Send the charges to the Commerce Scale Unit/Channel DB so that the POS can utilize them by running the **1040 distribution schedule** job.
 
-The **Add line charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 140). The screen layout changes must be distributed to the retail channel as well through the distribution schedule function.
+The **Add line charge** operation must be configured in your [POS screen layout](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) so that a button that is accessible to the user from POS can call this operation (operation 140). The screen layout changes must be distributed to the channel as well through the distribution schedule function.
 
 #### Sales processing of the manual line charge
 
@@ -189,17 +189,17 @@ The **Manage charges** operation (142) should be added to the [POS screen layout
 
 On the **Manage charges** page in POS, the user can view both header and line-level charges details. The user can use the **Edit** function available on this page to make changes to the amount charged to a specific charges line. Once a charges line is overwritten manually, it will not be systematically recalculated unless the user initiates the **Recalculate charges** operation.
 
-If the **Charge override reason code** has been configured on the **Retail parameters** setup page, the user will be prompted to provide a reason code when charges have been modified in the POS application.
+If the **Charge override reason code** has been configured on the **Commerce parameters** setup page, the user will be prompted to provide a reason code when charges have been modified in the POS application.
 
-If reason codes have been captured for overwritten charges, a new report is also available to review and audit these overrides. The report can be found in **Retail \> Inquiries and reports \> Charge override history**.
+If reason codes have been captured for overwritten charges, a new report is also available to review and audit these overrides. The report can be found in **Retail and Commerce \> Inquiries and reports \> Charge override history**.
 
 ### Refunding charges on a POS return transaction
 
-If the **Use advanced auto-charges** parameter is set to **Yes**, the existing retail parameter for **Refund shipping charges** is no longer applicable. To indicate which charges should be systematically refunded to a customer when using advanced auto-charges, ensure the related charges code has been configured as **Refundable** on the **Charges code** setup page. Make sure that the settings have been synchronized to your Retail channel databases through distribution schedule processing.
+If the **Use advanced auto-charges** parameter is set to **Yes**, the existing Commerce parameter for **Refund shipping charges** is no longer applicable. To indicate which charges should be systematically refunded to a customer when using advanced auto-charges, ensure the related charges code has been configured as **Refundable** on the **Charges code** setup page. Make sure that the settings have been synchronized to your Commerce channel databases through distribution schedule processing.
 
 ### Refunding charges on a return order transaction
 
-Charges are not systematically refunded to **Return orders** created in Retail. Users are required to select the **Copy charges** option when creating the **Return order**. If **Copy charges** is not selected, charges from the original sales transaction will not be automatically refunded. If **Copy charges** is selected, all charges will be copied to the return order and the user can manually edit or remove any charges they do not want to have refunded. The call center return order process currently does not acknowledge the **Refundable** flag on the **Charges code** setup.
+Charges are not systematically refunded to **Return orders** created in Commerce. Users are required to select the **Copy charges** option when creating the **Return order**. If **Copy charges** is not selected, charges from the original sales transaction will not be automatically refunded. If **Copy charges** is selected, all charges will be copied to the return order and the user can manually edit or remove any charges they do not want to have refunded. The call center return order process currently does not acknowledge the **Refundable** flag on the **Charges code** setup.
 
 ### Configuring POS receipts to show charges
 
@@ -220,4 +220,4 @@ Some organizations may prefer to wait until the user has finished adding all of 
 
 ### Charges override reports
 
-If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report. The report can be accessed from **Retail \> Inquiries and reports \> Charge Override History**. It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ.
+If users manually override the calculated charges or add a manual charge to the transaction, this data will available for auditing in the **Charge Override History** report. The report can be accessed from **Retail and Commerce \> Inquiries and reports \> Charge Override History**. It is important to note that the data needed for this report is imported from the channel database into HQ through the "P" distribution schedule jobs. Therefore, information about overrides just performed in the POS may not be immediately available on this report until this job has uploaded the store transaction data into HQ.

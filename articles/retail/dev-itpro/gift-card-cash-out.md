@@ -37,14 +37,14 @@ The purpose of the cash out feature is to allow cashiers to cash out the remaini
 
 ## Prerequisites
 - The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
-- If the gift cards are external gift cards, the external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+- If the gift cards are external gift cards, the external gift card must be configured for both the Headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
 
 ## Scenarios
 The cash out gift card feature is applicable to a scenario where, for example, in Washington state, the cash out threshold is $5. Retailers in this case will have the option to set up an operation to cash out a gift card and set the gift card balance limits under which the cash out operation can be enabled.
 
-## Configure Retail headquarters
+## Configure Headquarters
 
-1. Open the **All retail stores** page.
+1. Open the **All stores** page.
 2. In the list, select the **Houston** store.
 3. On the **Action Pane**, select **Set up** &gt; **Payment methods**.
 4. Search for **payment methods** to open the **Payment methods** page.
@@ -98,6 +98,7 @@ The cash out gift card feature is applicable to a scenario where, for example, i
 12. Enter or scan the gift number.
 13. The line for **gift card cash out** will be added to the **Current transaction** for cash out.
 14. Select the **Cash** payment method and the drawer will open when the transaction is completed. 
+
        ![Completed button layout](./media/GiftCardCashout03.png)
 
 ## Troubleshooting 

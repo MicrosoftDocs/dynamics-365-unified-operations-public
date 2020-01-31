@@ -43,11 +43,11 @@ To use the call center order hold features, you must first define hold codes. To
 
 To specify the type of note that will be captured when users who put a sales order on hold enter optional notes, go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**, and then, on the **Sales setup** FastTab, on the **General** tab, set the **Note type** field. Use the **On Hold sales order status** field to define the color that will be used to highlight sales orders that are on hold when they are viewed on the **Customer service** page.
 
-To create an optional set of hold reason codes, go to **Retail** \> **Channel setup** \> **Info codes**. These info codes can be used as a secondary reason code to further define the main hold code. Select **New** to create a reason code set, and then select **Subcodes** to define the list of additional reasons. To link any info codes that you define to the call center channel, go to **Retail** \> **Channels** \> **Call centers** \> **All call centers**. On the **General** FastTab, set the **Hold code** field.
+To create an optional set of hold reason codes, go to **Retail and Commerce** \> **Channel setup** \> **Info codes**. These info codes can be used as a secondary reason code to further define the main hold code. Select **New** to create a reason code set, and then select **Subcodes** to define the list of additional reasons. To link any info codes that you define to the call center channel, go to **Retail and Commerce** \> **Channels** \> **Call centers** \> **All call centers**. On the **General** FastTab, set the **Hold code** field.
 
 ## Putting orders on hold
 
-Orders that call center users create in the back-office Retail program can be manually put on hold manually or automatically in specific situations.
+Orders that call center users create in the back-office Commerce program can be manually put on hold manually or automatically in specific situations.
 
 During order entry, but before order submission and confirmation, call center users might want to manually put an order on hold to prevent it from being released to the warehouse for further processing. For example, the customer who is placing the order might not be ready to commit to it, or critical data that is required in order to process the order might be missing.
 
@@ -78,7 +78,7 @@ To view the details of an individual order hold, users can open a detailed view 
 
 ### Viewing all orders that are on hold
 
-To view all orders that have been put on manual or automatic hold, go to **Retail** \> **Customers** \> **Order holds**.
+To view all orders that have been put on manual or automatic hold, go to **Retail and Commerce** \> **Customers** \> **Order holds**.
 
 The **Order holds** workbench provides a list view of all orders that are on hold because of manual or fraud-related hold actions. By taking advantage of the standard filtering and sorting options on the page, users can create views that let them work with or manage specific hold codes that they are responsible for reviewing. The **Order holds** workbench also indicates the number of days that an order has been on hold. This information can help users prioritize the queue.
 
@@ -107,4 +107,4 @@ If users want to clear a hold but make additional changes to the order before it
 
 ## Reporting options
 
-Go to **Retail** \> **Inquiries and reports** \> **Call center reports** \> **Order holds report** to run a report about order holds by date range, hold code, or other related criteria.
+Go to **Retail and Commerce** \> **Inquiries and reports** \> **Call center reports** \> **Order holds report** to run a report about order holds by date range, hold code, or other related criteria.

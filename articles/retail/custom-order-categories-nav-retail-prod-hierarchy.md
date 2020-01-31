@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-Retailers consider product discovery a primary tool for customer interaction across all retail channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.
+Retailers consider product discovery a primary tool for customer interaction across all channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.
 
 This topic explains the concepts that are related to controlling the display order for various merchandising-related entities. It also explains how to change the sort order.
 
@@ -44,11 +44,11 @@ The support for sorting various merchandising-related entities has been enhanced
 
 In versions of Retail that are earlier than version 10.0.5, the sort order for categories in the navigation hierarchy was alphabetical. The new custom sort order functionality lets merchandising managers configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
 
-## Configure the display order for categories in the retail product hierarchy
+## Configure the display order for categories in the product hierarchy
 
 Before you can complete this procedure, demo data must be installed in your environment.
 
-1. Go to **Retail \> Products and categories \> Retail product hierarchy**.
+1. Go to **Retail and Commerce \> Products and categories \> Commerce product hierarchy**.
 2. Click **Edit category hierarchy**.
 3. Click **Edit**.
 4. In the tree, expand **ALL \> Action Sports**.
@@ -56,17 +56,17 @@ Before you can complete this procedure, demo data must be installed in your envi
 6. In the **Display order** field, enter a number. (The number can be negative.)
 7. Repeat steps 4 through 6 for any additional categories that you want to change the order of.
 
-The display order for the channel navigation hierarchy will be reflected in HQ for the retail product hierarchy and released products by category.
+The display order for the channel navigation hierarchy will be reflected in HQ for the commerce product hierarchy and released products by category.
 
-![Retail product hierarchy custom sorted with negative values](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![Product hierarchy custom sorted with negative values](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Released products by category custom sorted based on the retail product hierarchy](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Released products by category custom sorted based on the product hierarchy](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## Configure the display order for categories in the channel navigation hierarchy
 
 Before you can complete this procedure, demo data must be installed in your environment.
 
-1. Go to **Retail \> Products and categories \> Channel navigation categories**.
+1. Go to **Retail and Commerce \> Products and categories \> Channel navigation categories**.
 2. In the list, select the **Fashion navigation** hierarchy.
 3. Click **Edit category hierarchy**.
 4. Click **Edit**.
@@ -82,7 +82,7 @@ Before you can complete this procedure, demo data must be installed in your envi
 11. In the **Display order** field, enter a number.
 12. Repeat for any additional categories that you want to change the order of.
 
-The display order for the channel navigation hierarchy is reflected in HQ, catalog, and retail channels.
+The display order for the channel navigation hierarchy is reflected in HQ, catalog, and channels.
 
 ![Channel navigation hierarchy custom sorted](./media/ChannelNavCustomSorted.png)
 

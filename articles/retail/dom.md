@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-In the new paradigm for retail operations, retailers strive to provide personalized customer engagement, omni-channel experiences, and frictionless interactions. Because so many choices are available, consumers will shop wherever they can have the most favorable experience. In many cases, prices and products are no longer the top deciding factors for consumers.
+In the new paradigm for commerce operations, retailers strive to provide personalized customer engagement, omni-channel experiences, and frictionless interactions. Because so many choices are available, consumers will shop wherever they can have the most favorable experience. In many cases, prices and products are no longer the top deciding factors for consumers.
 
 To help improve the customer experience, retailers must have visibility into their inventory in real time, across all their channels. A single, holistic view of all the inventory can help optimize order fulfillment, allocation, and distribution. Therefore, adoption and implementation of a distributed order management (DOM) system are becoming more imperative for retailers.
 
@@ -46,15 +46,15 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 ## Set up DOM
 
 1. Go to **System administration \> Setup \> License configuration**.
-2. On the **Configuration keys** tab, expand the **Retail** node, and then select the **Distributed Order Management** check box.
-3. Go to **Retail \> Distributed order management \> Setup \> DOM parameters**.
+2. On the **Configuration keys** tab, expand the **Commerce** node, and then select the **Distributed Order Management** check box.
+3. Go to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 4. On the **General** tab, set the following values:
 
     - **Enable distributed order management** – Set this option to **Yes**.
     - **Confirm Bing Maps usage for DOM** – Set this option to **Yes**.
 
         > [!NOTE]
-        > You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Retail shared parameters** page (**Retail \> Headquarters setup \> Parameters \> Retail shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
+        > You can set this option to **Yes** only if the **Enable Bing Maps** option on the **Bing Maps** tab of the **Commerce shared parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**) is also set to **Yes**, and if a valid key is entered in the **Bing Maps key** field.
 
     - **Retention period in days** – Specify how long the fulfillment plans that DOM runs generate are kept in the system. The **DOM fulfillment data deletion job setup** batch job will delete any fulfillment plan that is older than the number of days that you specify here.
     - **Rejection period (in days)** – Specify how much time must pass before a rejected order line can be assigned to the same location.
@@ -63,19 +63,19 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
     - **Max auto-fulfillment attempts** – Specify how many times the DOM engine will try to broker an order line to a location. If the DOM engine can't broker an order line to a location in the specified number of attempts, it will flag the order line as an exception. It will then skip that line in future runs until the status is manually reset.
     - **Local store region radius** – Enter a value. This field helps determine how locations are grouped and considered equal in terms of distance. For example, if you enter **100**, every store or distribution center within a 100-mile radius of the fulfillment address is considered equal in terms of distance.
-    - **Solver type** – Select a value. Two solver types are released with Retail: **Production Solver** and **Simplified Solver**. For all machines that will run DOM (that is, all servers that are part of the DOMBatch group), **Production Solver** must be selected. The Production Solver requires the special license key that, by default, is licensed and deployed in production environments. For non-production environments, this license key must be manually deployed. To manually deploy the license key, follow these steps:
+    - **Solver type** – Select a value. Two solver types are released with Commerce: **Production Solver** and **Simplified Solver**. For all machines that will run DOM (that is, all servers that are part of the DOMBatch group), **Production Solver** must be selected. The Production Solver requires the special license key that, by default, is licensed and deployed in production environments. For non-production environments, this license key must be manually deployed. To manually deploy the license key, follow these steps:
 
         1. In Microsoft Dynamics Lifecycle Services, open the Shared asset library, select **Model** as the asset type, and download the **DOM license** file.
         2. Start Microsoft Internet Information Services (IIS) Manager, right-click **AOSService website**, and then select **Explore**. A Windows Explorer window is opened at **\<AOS service root\>\\webroot**. Make a note of the \<AOS Service root\> path, because you will use it in the next step.
         3. Copy the configuration file in the **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** directory.
-        4. Go to the Retail Headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
+        4. Go to the Headquarters client, and open the **DOM parameters** page. On the **Solver** tab, in the **Solver type** field, select **Production solver**, and confirm that no error messages appear.
 
         > [!NOTE]
         > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
         >
         > Although the Simplified Solver provides the same set of capabilities as the Production Solver, there are limitations as to performance (the number of orders and order lines that can be handled in a run) and convergence of results (a batch of orders might not yield the best result in some scenarios).
 	 
-6. Go back to **Retail \> Distributed order management \> Setup \> DOM parameters**.
+6. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 7. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.
 
     > [!NOTE]
@@ -83,12 +83,12 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
 8. The DOM feature supports the definition of various types of DOM rules, and organizations can configure multiple rules, depending on their business needs. DOM rules can be defined for a group of locations or individual locations, and for a specific product category, product, or variant. To create the grouping of locations that must be used for the DOM rules, follow these steps:
 
-    1. Go to **Retail \> Channel setup \> Fulfillment groups**.
+    1. Go to **Retail and Commerce \> Channel setup \> Fulfillment groups**.
     2. Select **New**, and enter a name and description for the new group.
     3. Select **Save**.
     4. Select **Add line** to add a single location to the group. Alternatively, select **Add lines** to add multiple locations.
 
-9. To define rules, go to **Retail \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported:
+9. To define rules, go to **Retail and Commerce \> Distributed order management \> Setup \> Manage rules**. The following DOM rules are currently supported:
 
     - **Minimum inventory rule** – This rule type lets organizations "ring fence" a specific quantity of a product for purposes other than order fulfillment. For example, organizations might not want DOM to consider all the inventory that is available in a store for order fulfillment. Instead, they might want to reserve some inventory for walk-in customers. When this rule type is used, you can define the minimum inventory to keep for a category of products, an individual product, or a product variant per location or group of locations.
     - **Fulfillment location priority rule** – This rule type lets organizations define a hierarchy of locations to establish the priority that the DOM engine considers when it tries to identify fulfillment locations for specific products. The valid range of priorities is 1 through 10, where 1 is the highest priority and 10 is the lowest priority. Locations that have higher priority are considered before locations that have lower priority. If the rule is defined as a hard constraint rule, orders are brokered only to locations that priorities are defined for.
@@ -134,7 +134,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
 10. Fulfillment profiles are used to group a collection of rules, legal entities, sales order origins, and modes of delivery. Every DOM run is for a specific fulfillment profile. In this way, organizations can define and run a set of rules for a set of legal entities, on orders that have specific sales order origins and modes of delivery. Therefore, if different set of rules must be run for different sets of sales order origins or modes of delivery, the fulfillment profiles can be defined accordingly. To set up fulfillment profiles, follow these steps:	
 
-    1. Go to **Retail \> Distributed order management \> Setup \> Fulfillment profiles**.
+    1. Go to **Retail and Commerce \> Distributed order management \> Setup \> Fulfillment profiles**.
     2. Select **New**.
     3. Enter values in the **Profile** and **Description** fields.
     4. Set the **Auto apply result** option. If you set this option to **Yes**, the results of the DOM run for the profile will be automatically applied to the sales order lines. If you set it to **No**, the results can only be viewed in the fulfillment plan. They won't be applied to the sales order lines.
@@ -161,7 +161,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
 
 DOM will run only in a batch job. To configure the batch job for DOM runs, follow these steps.
 
-1. Go to **Retail \> Distributed order management \> Batch processing \> DOM processor job setup**.
+1. Go to **Retail and Commerce \> Distributed order management \> Batch processing \> DOM processor job setup**.
 1. On the **Parameters** FastTab, in the **Fulfillment profile** field, select a profile that DOM must be run for.
 1. On the **Run in the background** FastTab, in the **Batch group** field, select a configured batch group.
 1. In the **Task description** field, enter a name for the batch job.
@@ -172,7 +172,7 @@ At the time of processing, DOM will consider the order and order lines as descri
 
 - Order lines that meet the criteria for sales order origins, modes of delivery, and legal entity as defined in the DOM profile, and that also meet any of these criteria:
 
-    - They are created from retail channels.
+    - They are created from commerce channels.
     - They have never been brokered by DOM.
     - They have been brokered by DOM before, but they are marked as exceptions and are below the maximum threshold for attempts.
     - The mode of delivery isn't pick-up or electronic delivery.
@@ -191,7 +191,7 @@ If the fulfillment profile is set to **Auto apply**, the results of the run will
 
 To view all the fulfillment plans that are generated, follow these steps.
 
-1. Go to **Retail \> Distributed order management \> Distributed order management**.
+1. Go to **Retail and Commerce \> Distributed order management \> Distributed order management**.
 2. In the **Distributed order management** workspace, select the **Fulfillment Plans** tile.
 3. Select the ID of the relevant order fulfillment plan to view the fulfillment plan.
 
@@ -205,7 +205,7 @@ To view all the fulfillment plans that are generated, follow these steps.
 
 ## Order line actions and statuses
 
-The following describes settings on the order line. To open the order line, go to **Retail \> Customers \> All sales orders**.
+The following describes settings on the order line. To open the order line, go to **Retail and Commerce \> Customers \> All sales orders**.
 - If you set the **Exclude from DOM processing** option on the **General** tab of the sales order line to **Yes**, the order or order line will be excluded from DOM processing.
 - The **DOM status** field on the **General** tab of the sales order line can be set to one of the following values:
 
@@ -225,7 +225,7 @@ The following describes settings on the order line. To open the order line, go t
 
 As DOM processing is run, fulfillment plans are created. Over time, the system will keep numerous fulfillment plans. To manage the number of fulfillment plans that the system keeps, you can configure a batch job that deletes older fulfillment plans, based on the **Retention period in days** value.
 
-1. Go to **Retail \> Distributed order management \> Batch processing \> DOM fulfillment data deletion job setup**. 
+1. Go to **Retail and Commerce \> Distributed order management \> Batch processing \> DOM fulfillment data deletion job setup**. 
 1. In the **Batch group** field, select a configured batch group.
 1. Select **Recurrence**, and define the recurrence of the batch job.
 1. Select **OK**.
@@ -234,6 +234,6 @@ As DOM processing is run, fulfillment plans are created. Over time, the system w
 
 Here are some things to consider when you use the DOM feature:
 
-- Currently, DOM looks only at orders that are created from retail channels. Sales orders are identified as retail sales orders when the **Retail sale** option is set to **Yes**.
+- Currently, DOM looks only at orders that are created from commerce channels. Sales orders are identified as sales orders when the **Commerce sale** option is set to **Yes**.
 - Microsoft hasn't tested DOM with advanced warehouse management features. Customers and partners must be careful to determine whether DOM is compatible with the advanced warehouse management capabilities and processes that are relevant to them.
-- DOM is available only on the cloud version of Retail. It isn't supported in on-premises deployments.
+- DOM is available only on the cloud version of Commerce. It isn't supported in on-premises deployments.

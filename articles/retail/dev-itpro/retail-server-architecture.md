@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail Server architecture
-description: This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
+description: This article describes the architecture of Commerce Scale Unit. Commerce Scale Unit provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
 author: RobinARH
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,16 +34,16 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the architecture of Retail Server. Retail Server provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
+This article describes the architecture of Commerce Scale Unit. Commerce Scale Unit provides stateless services and business logic for Retail Modern Point of Sale (POS) and E-Commerce clients.
 
-Retail Server architecture
+Commerce Scale Unit architecture
 --------------------------
 
-The commerce runtime is wrapped in a Retail Server layer. Retail Server uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Retail Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Retail Server. 
+The commerce runtime is wrapped in a Commerce Scale Unit layer. Commerce Scale Unit uses a web API and OData to support thin clients both in the store and online on tablets and phones. The commerce runtime communicates with Headquarters through Commerce Data Exchange services. The following diagram shows the architecture of Commerce Scale Unit. 
 
-[![Retail server architecture diagram](./media/retailserver.png)](./media/retailserver.png) 
+[![Commerce Scale Unit architecture diagram](./media/retailserver.png)](./media/retailserver.png) 
 
-Retail Server uses the following concepts.
+Commerce Scale Unit uses the following concepts.
 
 <table>
 <thead>
@@ -92,7 +92,5 @@ Retail Server uses the following concepts.
 </tbody>
 </table>
 
-You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata. If you customize the commerce runtime, you must also customize various components in Retail Server to expose those changes to your Retail Modern POS clients.
-
-
+You can create your own entity type or complex type, extend an existing controller, add a new controller, and customize the metadata. If you customize the commerce runtime, you must also customize various components in Commerce Scale Unit to expose those changes to your Retail Modern POS clients.
 

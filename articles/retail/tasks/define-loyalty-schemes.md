@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure walks through how to define a loyalty scheme. Loyalty schemes are reward earning and redeeming rules for a loyalty program. This procedure uses the USRT demo data company.
 
-1. Go to Retail and commerce > Customers > Loyalty > Loyalty schemes.
+1. Go to Retail and Commerce > Customers > Loyalty > Loyalty schemes.
 2. Click New.
 3. In the Scheme ID field, type a value.
 4. In the Description field, type a value.

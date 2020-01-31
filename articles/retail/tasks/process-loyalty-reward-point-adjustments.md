@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. The demo data company used to create this task is USRT. This task is intended for the Retail operations manager role or a Customer service manager role.
+This procedure demonstrates how to look up loyalty card information and adjust loyalty reward points. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role or a Customer service manager role.
 
 1. Go to Loyalty cards.
 2. In the list, find and select the desired record.
