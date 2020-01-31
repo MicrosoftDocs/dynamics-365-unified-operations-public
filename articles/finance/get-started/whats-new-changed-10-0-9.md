@@ -45,12 +45,14 @@ The following features are included in this release. The feature titles link to 
 - [Daily statement of Treasures accountability ](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-finance/daily-statement-treasurers-accountability)
 
  - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
+ 
+  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
 
 ## Additional resources
 
-### Platform update 32
+### Platform update 33
 
-Microsoft Dynamics 365 Finance 10.0.8 includes Platform update 32. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Microsoft Dynamics 365 Finance 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
 
 
 ### Bug fixes 
