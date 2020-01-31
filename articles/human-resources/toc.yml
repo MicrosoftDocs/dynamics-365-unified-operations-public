@@ -38,7 +38,7 @@
       - name: Configure integration with Dayforce
         href: hr-admin-integration-dayforce.md
       - name: Create a recurring data export app
-        href: hr-admin-integration-recurring-data-export-app.md
+        href: hr-admin-integration-recurring-data-export.md
     - name: Manage features
       href: hr-admin-manage-features.md
     - name: Troubleshoot Human Resources
@@ -60,13 +60,13 @@
       - name: Save task guide to LCS
         href: hr-admin-troubleshooting-task-guide.md
       - name: Access private addresses by security role
-        href: hr-admin-troubleshooting-private-addressses.md
+        href: hr-admin-troubleshooting-private-addresses.md
       - name: Human Resources doesn't appear in Dynamics 365 apps
         href: hr-admin-troubleshooting-not-in-apps.md
       - name: Reporting options
         href: hr-admin-troubleshooting-reporting.md
       - name: Integration FAQ
-        href: hr-admin-troubleshooting-integration-faq.md
+        href: hr-admin-troubleshooting-integration.md
   - name: Developer Guide
     items:
     - name: Overview
@@ -374,7 +374,7 @@
       - name: Benefit eligibility process
         href: hr-benefits-eligibility-process.md
       - name: Define benefit eligibility rules and policies
-        href: hr-benefits-define-eligibility-rules-policies.md
+        href: hr-benefits-define-eligibility-rules.md
       - name: Deliver an employee benefits program
         href: hr-benefits-deliver-employee-benefits-program.md
       - name: Create new benefits
@@ -418,7 +418,7 @@
     - name: Develop employees
       items:
       - name: Performance management overview
-        href: hr-develop-performance-management-overview
+        href: hr-develop-performance-management-overview.md
       - name: Align workforce skills
         href: hr-develop-skills.md
       - name: Add to your performance journal
