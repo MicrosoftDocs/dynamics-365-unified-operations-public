@@ -466,7 +466,11 @@
         items:
         - name: Deploying custom Help
           href: help/deploy.md
-        - name: Language and locale descriptors in across product and Help
+        - name: Deploying help websites on Azure
+          href: help/website.md
+	- name: Connect custom help to the help pane
+          href: help/connect-help-pane.md
+	- name: Language and locale descriptors in across product and Help
           href: help/language-locale.md
         - name: Custom Help Toolkit
           href: help/custom-help-toolkit.md
@@ -474,6 +478,8 @@
           href: help/walkthrough-help-azure.md
         - name: Convert Dynamics AX custom Help for use in Dynamics 365
           href: help/migrate-dynamicsax2012.md
+        - name: Extend, customize, collaborate on the Help
+          href: help/contributor-guide.md
     - name: Develop and customize
       items:
       - name: Develop and customize home page
