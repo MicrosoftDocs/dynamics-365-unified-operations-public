@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Call Retail Server extension APIs
-description: This topic describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
+title: Call Commerce Scale Unit extension APIs
+description: This topic describes how to call Microsoft Dynamics 365 Commerce Scale Unit extension APIs from data actions or directly from module code.
 author: samjarawan
 manager: annbe
 ms.date: 01/31/2020
@@ -28,18 +28,18 @@ ms.search.validFrom: 2020-01-22
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Call Retail Server extension APIs
+# Call Commerce Scale Unit extension APIs
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to call Microsoft Dynamics 365 Retail Server extension application programming interfaces (APIs) from data actions or directly from module code.
+This topic describes how to call Microsoft Dynamics 365 Commerce Scale Unit extension application programming interfaces (APIs) from data actions or directly from module code.
 
 ## Overview
 
-Dynamics 365 Retail Server extension APIs are usually implemented and called from the Dynamics 365 Retail point of sale (POS) system. However, they can also be called from e-Commerce modules and data actions. To call the APIs in this way, you must create proxy module TypeScript (.ts) files by using a tool that is provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Retail Server extension APIs from e-Commerce modules and data actions.
+Dynamics 365 Commerce Scale Unit extension APIs are usually implemented and called from the point of sale (POS) system. However, they can also be called from e-Commerce modules and data actions. To call the APIs in this way, you must create proxy module TypeScript (.ts) files by using a tool that is provided as part of the Dynamics 365 Retail software development kit (SDK). You can then include these files in your e-Commerce configurations and use them to call the Commerce Scale Unit extension APIs from e-Commerce modules and data actions.
 
 > [!NOTE]
-> This topic doesn't explain how to create Retail Server extensions. For more information, see [Create a new Retail Server extension](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-extension).
+> This topic doesn't explain how to create Commerce Scale Unit extensions. For more information, see [Create a new Commerce Scale Unit extension](https://docs.microsoft.com/dynamics365/retail/dev-itpro/retail-server-extension).
 
 It's assumed that the following prerequisites are in place:
 
@@ -58,7 +58,7 @@ CommerceProxyGenerator.exe e:\NewSDK\RetailSDK\Code\References\Microsoft.Dynamic
 ```
 
 > [!NOTE]
-> The SDK version that is referenced in the command might differ, depending on the version of Retail Server that you're running.
+> The SDK version that is referenced in the command might differ, depending on the version of Commerce Scale Unit that you're running.
 
 The process for creating proxy files for e-Commerce is similar, but the final **/application:typescriptextensions** option is replaced by **/application:typescriptmoduleextensions**, as shown in the following example.
 
