@@ -108,6 +108,6 @@ The following image shows a sample node with product attribute groups added.
 
 ## Additional resources
 
-[Set up assortments](../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json)
+[Set up assortments](set-up-assortments.md)
 
-[Manage attributes and attribute groups](../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json)
+[Manage attributes and attribute groups](attribute-attributegroups-lifecycle.md)

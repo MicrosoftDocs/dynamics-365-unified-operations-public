@@ -54,10 +54,10 @@ The following image shows the creation of an employee address book for a retail 
 
 ## Additional resources
 
-[Info codes and info code groups](../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json)  		  
+[Info codes and info code groups](info-codes-retail.md)  		  
 
 [Retail functionality profile](retail-functionality-profile.md)	  
 
-[Screen layout overview](../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json)		  
+[Screen layout overview](pos-screen-layouts.md)		  
 
-[Configure and install Retail hardware station](../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json)  
+[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)  

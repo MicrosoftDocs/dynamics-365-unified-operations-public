@@ -79,8 +79,8 @@ Category attribute groups can also be assigned to each group as required.
 
 ## Additional resources
 
-[Retail hierarchies](../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[Retail hierarchies](retail-hierarchies.md)
 
-[Manage retail product categories and products ](../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json)
+[Manage retail product categories and products ](category-management-product-creation.md)
 
-[Change the sort order for merchandizing entities](../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+[Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)

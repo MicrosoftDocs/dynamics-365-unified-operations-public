@@ -106,12 +106,12 @@ The following image shows an example of a mode of delivery.
 
 [Channel setup prerequisites](channels-prerequisites.md)
 
-[Call center sales functionality](../retail/call-center-functionality.md?toc=/dynamics365/commerce/toc.json)
+[Call center sales functionality](call-center-functionality.md)
 
-[Set up call center order processing options](../retail/set-up-order-processing-options.md?toc=/dynamics365/commerce/toc.json)
+[Set up call center order processing options](set-up-order-processing-options.md)
 
-[Call center catalogs](../retail/call-center-catalogs.md?toc=/dynamics365/commerce/toc.json)
+[Call center catalogs](call-center-catalogs.md)
 
-[Set up and work with fraud alerts](../retail/set-up-fraud-alerts.md?toc=/dynamics365/commerce/toc.json)
+[Set up and work with fraud alerts](set-up-fraud-alerts.md)
 
-[Set up continuity programs for call centers](../retail/set-up-continuity-program.md?toc=/dynamics365/commerce/toc.json)
+[Set up continuity programs for call centers](set-up-continuity-program.md)
