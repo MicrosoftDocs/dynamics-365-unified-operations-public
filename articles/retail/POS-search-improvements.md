@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product search and customer search in the point of sale (POS)
-description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Retail. 
+description: This topic provides an overview of improvements that have been made to product and customer search functionality in Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -106,7 +106,7 @@ The traditional customer search can be time-consuming, because it searches acros
 
 
 
-To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 Retail, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
+To set search criteria as shortcuts, the admin must open the **Retail parameters** page in Microsoft Dynamics 365 Commerce, and then, on the **POS search criteria** tab, select all the criteria that should be shown as shortcuts.
 
 
 ![Configure search shortcuts](./media/ConfigureShortcutsAX.png "Configure search shortcuts")

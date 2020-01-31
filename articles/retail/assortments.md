@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assortment management
-description: This topic explains the basic concepts of assortment management in Dynamics 365 Retail and provides implementation considerations for your project.
+description: This topic explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Application update 5
 
 ## Overview
 
-Dynamics 365 Retail provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
+Dynamics 365 Commerce provides *assortments* that let you manage product availability across channels. Assortments determine which products are available at specific stores and during a specific period.
 
-In Retail, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
+In Commerce, an assortment is a mapping of one or more channels (or groups of channels, when organization hierarchies are used) to one or more products (or groups of products, when category hierarchies are used).
 
 The overall product mix of a channel is determined by the published assortments that are assigned to the channel. Therefore, you can configure multiple active assortments per channel.
 
@@ -55,7 +55,7 @@ Alternatively, you can add store 1 to assortment 2.
 
 ### Organization hierarchies
 
-In situations where multiple channels share the same product assortments, you can configure the assortments by using the Retail assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
+In situations where multiple channels share the same product assortments, you can configure the assortments by using the Commerce assortment organization hierarchy. When nodes from this hierarchy are added, all channels in that node and its child nodes will be included.
 
 ![Organization hierarchy](./media/Managing-assortments-figure4.png)
 
@@ -98,7 +98,7 @@ Assortments are date-effective. Therefore, retailers can configure when products
 
 ### Process assortments batch job
 
-Assortments that are defined in Retail must be processed before they take effect. This processing is done for the following reasons:
+Assortments that are defined in Commerce must be processed before they take effect. This processing is done for the following reasons:
 
 - Assortment definitions must be de-normalized so that channels can more easily consume them. A product mix for a channel can be defined through multiple assortments that span various date ranges. When some of this information is calculated ahead of time on the server, performance at the channel is improved.
 - The products and channels in the assortment can change outside the assortment itself. Dynamic assortments that contain references to categories or organization units must be processed periodically so that they include or exclude records, based on their current assignment.

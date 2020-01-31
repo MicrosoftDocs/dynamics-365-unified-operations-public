@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up bar codes
-description: This article describes how to use bar codes in Dynamics 365 Retail.
+description: This article describes how to use bar codes in Dynamics 365 Commerce.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to use bar codes in Dynamics 365 Retail.
+This article describes how to use bar codes in Dynamics 365 Commerce.
 
 You can use bar codes to purchase and sell products, track product variants, and set up customers and employees. You can also use bar codes to issue and endorse coupons, gift cards, and credit memos. You can set up retail products so that they have standard bar codes or custom, in-house bar codes. Products can have more than one bar code. For example, a product might have multiple bar codes if it comes from various manufacturers, or if it has variants that are based on size, style, or color. Bar codes can include the weight or price of the product. Bar code masks are templates that are used to create bar codes.
 

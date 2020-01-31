@@ -39,7 +39,7 @@ It's a common practice among retailers to release private, branded credit cards.
 
 Alternatively, retailers who don't provide branded credit cards might want to encourage customers to pay by using other tender types, such as cash, gift cards, or loyalty points. In this way, they can help reduce the expense of credit card processing fees. Therefore, retailers might provide discounts to customers who use these alternative tender types.
 
-In Microsoft Dynamics 365 Retail, retailers can configure a discount percentage that is applied to qualified lines if the customer pays by using the preferred tender type. The customer can decide whether to do a partial payment or a full payment, and Retail determines the appropriate discount amount. Note that the discount is always given on the pre-tax amount of the qualified items.
+In Microsoft Dynamics 365 Commerce, retailers can configure a discount percentage that is applied to qualified lines if the customer pays by using the preferred tender type. The customer can decide whether to do a partial payment or a full payment, and Retail determines the appropriate discount amount. Note that the discount is always given on the pre-tax amount of the qualified items.
 
 Tender-based discounts don't compete with item-based discounts, such as periodic or manual discounts. They are always compounded over the item discounts. Therefore, even if an exclusive periodic discount is applied to an item, the tender-based discount is still applied on top of the exclusive periodic discount. Likewise, if a threshold discount is applied to the transaction, and the tender-based discount reduces the total below the threshold, the threshold discount is still applied to the transaction.
 

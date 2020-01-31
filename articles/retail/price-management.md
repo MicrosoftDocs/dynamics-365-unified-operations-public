@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail sales price management
-description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Retail.
+description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 01/06/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the process of creating and managing sales prices in Dynamics 365 Retail. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
+This topic provides information about the process of creating and managing sales prices in Dynamics 365 Commerce. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
 
 ## Terminology
 

@@ -39,9 +39,9 @@ Many retailers, especially high-end specialty retailers, want their sales associ
 
 ## Client book
 
-In Microsoft Dynamics 365 Retail, retailers can use the client book functionality to help store associates form long-term relationships with key customers.
+In Microsoft Dynamics 365 Commerce, retailers can use the client book functionality to help store associates form long-term relationships with key customers.
 
-The client book includes customer cards that show contact information for each customer, together with three additional properties that are defined by the retailer and configured in Retail headquarters. Retailers can decide the three most important things that sales associates should know about customers. For example, a jewelry retailer might want to include important dates such as anniversaries or birthdays, because these dates are occasions when people might buy more jewelry. Similarly, a fashion retailer might want to include the customer's preferred shopping interests and brands.
+The client book includes customer cards that show contact information for each customer, together with three additional properties that are defined by the retailer and configured in Headquarters. Retailers can decide the three most important things that sales associates should know about customers. For example, a jewelry retailer might want to include important dates such as anniversaries or birthdays, because these dates are occasions when people might buy more jewelry. Similarly, a fashion retailer might want to include the customer's preferred shopping interests and brands.
 
 The client book also lets sale associates filter the list so that it shows only customers who meet specific criteria. For example, a new collection of shoes has arrived in the store, and an associate wants to inform customers who like to buy shoes. In this case, the associate can filter the client book to find the relevant customers and then take further action.
 
@@ -49,7 +49,7 @@ If any customers are no longer considered key customers for some reason, and the
 
 Some retailers don't want to manage customers at the sales associate level. Instead, they want to manage a list of key customers at the store level. These retailers can view customers from store client books. By using this option, retailers can view the customers from the client books of all the sales associates whose address book matches the address book of the current store. In this way, if an associate works in multiple stores of the legal entity, the client book shows the customers from all those stores. This functionality supports additional capabilities. For example, customers can be reassigned from one associate to another associate. This capability is useful when associates are transferred or leave the company.
 
-Each sales associate can have one client book per legal entity, and associates can add one or more customers to their client book. In Retail, each customer can currently be added to only one client book. However, Microsoft plans to add functionality that lets a single customer be added to multiple client books.
+Each sales associate can have one client book per legal entity, and associates can add one or more customers to their client book. In Commerce, each customer can currently be added to only one client book. However, Microsoft plans to add functionality that lets a single customer be added to multiple client books.
 
 > [!NOTE]
 > Unlike customer search, the client book doesn't filter customer records based on the store's address books.
@@ -58,16 +58,16 @@ Each sales associate can have one client book per legal entity, and associates c
 
 Online channels give retailers ways to learn about customer preferences without requiring that customers explicitly provide this information. By contrast, when customers interact with sales associates in the store, they explicitly share information about their preferences. Unfortunately, this information can be lost after the sale is over. However, if this information is recorded, it can help retailers better understand customers, and therefore help them provide better recommendations and a better overall shopping experience.
 
-To capture the critical information that customers share, sales associates can use not only the client book attributes, but also use the activities and notes functionality. Retailers can configure the activity types, such as information about the store visit, email address, phone number, and appointments. Activities that associates create can be viewed in a timeline format at the point of sale (POS). They can also be viewed on the **Activities** tab on the **All customers \> General** page in Retail headquarters.
+To capture the critical information that customers share, sales associates can use not only the client book attributes, but also use the activities and notes functionality. Retailers can configure the activity types, such as information about the store visit, email address, phone number, and appointments. Activities that associates create can be viewed in a timeline format at the point of sale (POS). They can also be viewed on the **Activities** tab on the **All customers \> General** page in Headquarters.
 
-Sales associates can also use notes to capture generic customer information that can be referenced before every interaction. These notes are saved in Retail headquarters, and can be viewed in the customer profile or on the customer details page in the call center.
+Sales associates can also use notes to capture generic customer information that can be referenced before every interaction. These notes are saved in Headquarters, and can be viewed in the customer profile or on the customer details page in the call center.
 
 > [!NOTE]
 > Currently, all notes and activities can be viewed by any sales associate who works for the legal entity and can view customer details pages. Notes and activities aren't limited to the associate who added a customer to the client book.
 
 ## Integration with Dynamics 365 Customer Insights
 
-By using the Dynamics 365 Customer Insights application, retailers can aggregate data from the various systems that customers use to interact with the retailer's brand. They can then use this data to generate a single view of the customer and derive insights. The integration of Customer Insights with Retail lets retailers select one or more measures that should be shown on the customer card in the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and define the "next best action." If these values are defined as measures, they can be shown on the customer card and can provide crucial information to sales associates. For more information about Customer Insights, see the [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview) documentation. For more information about measures, see [Measures](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+By using the Dynamics 365 Customer Insights application, retailers can aggregate data from the various systems that customers use to interact with the retailer's brand. They can then use this data to generate a single view of the customer and derive insights. The integration of Customer Insights with Commerce lets retailers select one or more measures that should be shown on the customer card in the client book. For example, retailers can use the data in Customer Insights to calculate the "churn probability" for a customer and define the "next best action." If these values are defined as measures, they can be shown on the customer card and can provide crucial information to sales associates. For more information about Customer Insights, see the [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview) documentation. For more information about measures, see [Measures](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
 
 ## Set up clienteling
 
@@ -106,7 +106,7 @@ After you've completed this procedure, sales associates can open the customer de
 
 ## Turn on the integration of Customer Insights with Retail
 
-To turn on the integration of Customer Insights with Retail, you must make sure that you have an active instance of Customer Insights in the tenant where Retail is provisioned. You must also have an Azure Active Directory (Azure AD) user account that has an Azure subscription.
+To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have an Azure Active Directory (Azure AD) user account that has an Azure subscription.
 
 Follow these steps to set up the integration.
 
@@ -117,14 +117,14 @@ Follow these steps to set up the integration.
     > Take steps so that you will remember to change the secret before it expires. Otherwise, the integration will unexpectedly stop.
 
 3. Create an Azure key vault, and save the application secret. For instructions, see [Quickstart: Set and retrieve a secret from Azure Key Vault using the Azure portal](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
-4. Turn on access to Azure Key Vault from Retail. To complete this step, you must have an application ID and secret. The application can be the same application that you created in step 1, or it can be a new application. (In other words, you can use the application that you created in step 1 for both Key Vault access and Customer Insights service access, or you can create a unique application for each type of access.) For instructions, see [Store service principal credentials in Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
-5. In Retail headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Retail can access the secrets in the key vault.
+4. Turn on access to Azure Key Vault from Commerce. To complete this step, you must have an application ID and secret. The application can be the same application that you created in step 1, or it can be a new application. (In other words, you can use the application that you created in step 1 for both Key Vault access and Customer Insights service access, or you can create a unique application for each type of access.) For instructions, see [Store service principal credentials in Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
+5. In Headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
 6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a whitelist), go to Customer Insights, and provide **View** access to the application. For instructions, see [Permissions](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
-7. In Retail, on the **Retail parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, follow these steps:
+7. In Commerce, on the **Retail parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, follow these steps:
 
     1. In the **Application ID** field, enter the application ID that you used in step 1.
     2. In the **Secret name** field, enter the name of the Key Vault secret that you created in step 5.
     3. Set the **Enable Customer Insights** option to **Yes**. If the setup is unsuccessful for any reason, you will receive an error message, and this option will be set to **No**.
     4. You can have multiple environments in Customer Insights, such as test and production environments. In the **Environment instance ID** field, enter the appropriate environment.
-    5. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Retail, the customer account number is the customer ID.)
+    5. In the **Alternate customer ID** field, enter the property in Customer Insights that is mapped to the customer account number. (In Commerce, the customer account number is the customer ID.)
     6. The remaining three properties are the measures that will be shown on the customer card in the client book. You can select up to three measures to show on the customer card. (However, you don't have to select any measures.) As was mentioned earlier, the system shows these values first, and then it shows the values for the client book attribute group.

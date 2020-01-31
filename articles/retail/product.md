@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-At its core, product Recommendations are a transformative business application that span across all retail spaces to create rich, engaging, and tailored product discovery experiences. To implement this feature on POS, follow the steps on [how to add recommendations to your POS devices.](add-recommendations-control-pos-screen.md) 
+At its core, product recommendations are a transformative business application that span across all retail spaces to create rich, engaging, and tailored product discovery experiences. To implement this feature on POS, follow the steps on [how to add recommendations to your POS devices.](add-recommendations-control-pos-screen.md) 
 
 For more information about product recommendations features, read the [product recommendations overview.](../commerce/product-recommendations.md) 
 
@@ -53,11 +53,11 @@ Product recommendations are enabled for the following POS scenarios. They are av
     - The recommendation engine suggests items based on the entire list of items in the basket that are frequently bought together.
 
     > [!NOTE]
-    > To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 for Retail. The **Recommendations** control must be dropped onto the **Transaction** page.
+    > To display recommendations on the **Transaction** page, the retailer needs to update the screen layout in Dynamics 365 Commerce. The **Recommendations** control must be dropped onto the **Transaction** page.
 
     [![Recommendations on the Transaction page](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## Configure Dynamics 365 Retail to enable POS recommendations
+## Configure Dynamics 365 Commerce to enable POS recommendations
 
 To set up product recommendations, follow these steps:
 

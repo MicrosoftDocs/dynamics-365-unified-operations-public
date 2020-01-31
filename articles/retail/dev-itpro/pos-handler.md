@@ -41,13 +41,15 @@ For example, when you sell a serial item, POS will display a dialog box where yo
 > [!NOTE]
 > Not all request handler logic is exposed for customization. If you want to customize any business logic and if that request handler is not overridable, then create a support ticket or log a request in the LCS extensibility tool.
 
-** POS request handler logic exposed for overriding **
+**POS request handler logic exposed for overriding**
 
-This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5.](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1) In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list. 
+This list is based on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1). 
+
+In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list. 
 
 **Cart extension handlers**
 
-| **Request name**                           | **Description**                                                                              |
+| Request name                           | Description                                                                              |
 |--------------------------------------------|----------------------------------------------------------------------------------------------|
 | AddTenderLineToCartClientRequestHandler    | This handler is executed when you add tender (payment) line to cart.                          |
 | GetKeyedInPriceClientRequestHandler        | This handler is executed when you add an item that has a configuration key in price during sale. |
@@ -58,9 +60,9 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 | DepositOverrideOperationRequestHandler     | Executed when you override a deposit.                                                          |
 | GetShippingChargeClientRequestHandler      | Executed when get shipping charge workflow initiated during customer order flow.                                                             |
 
-**Payment extension handler:**
+**Payment extension handler**
 
-| **Request name**                                 | **Description**                                                                                                                                   |
+| Request name                                 | Description                                                                                                                                  |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | GetGiftCardByIdServiceRequestHandler             | This handler is executed when you receive the gift card ID.                                                                                           |
 | GetPaymentCardTypeByBinRangeClientRequestHandler | This handler is executed when POS gets the card type, such as Visa or Master Card. This is based on the HQ configuration during the card tender line processing. |
@@ -141,7 +143,7 @@ This is list is based on [Microsoft Dynamics 365 for Finance and Operations - Ve
 
 
 
-**How to override a handler in POS**
+## How to override a handler in POS
 
 If you want to override any of the above POS request handler logic, you to need to use the following steps:
 
@@ -151,7 +153,7 @@ If you want to override any of the above POS request handler logic, you to need 
 
 3.  Either call the default handler or do your custom logic inside the executeAsync method and return the response.
 
-**Step by step instructions**
+## Step by step instructions
 
 The following example shows how to override the GetSerialNumberClientRequestHandler to automate the serial number entry in POS. By default, POS will display a dialog box to enter the serial number if the item is configured to ask for serial number. We want to avoid showing this dialog box and enter serial number through code.
 
@@ -167,146 +169,152 @@ The following example shows how to override the GetSerialNumberClientRequestHand
 
 6.  Add the following import statement to import the relevant entities and context in the GetSerialNumberClientRequestHandlerExt.ts file.
 
- ```Typescrip 
- import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
- import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
- import { ClientEntities } from "PosApi/Entities";
-```
+	 ```typescript
+	 import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
+	 import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
+	 import { ClientEntities } from "PosApi/Entities";
+	```
+
 7.  In the GetSerialNumberClientRequestHandlerExt.ts file, create a new class called GetSerialNumberClientRequestHandlerExtend and extend it from GetSerialNumberClientRequestHandler.
 
+    ```
     export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler { }
-
+	```
+	
 8.  Implement the executeAsync method inside the GetSerialNumberClientRequestHandlerExt class. In the executeAsync method, you can write your custom logic and return the response or call the default handler. When POS sells the serial item, it will look for executeAsync to execute the logic for the serial number, however because we are overriding it, POS will now execute this overridden executeAsync method instead of the standard method.
 
- **Sample implementation of how to override the executeAsync method**
+	**Sample implementation of how to override the executeAsync method**
 
- ```Typescrip
- public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
-	 Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
+	```typescript
+	public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
+		Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
 
- // User could implement new business logic here to process the serial number.
- // The following example sets serial number "112233" for product 82001.
+	// User could implement new business logic here to process the serial number.
+	// The following example sets serial number "112233" for product 82001.
 
- if (request.product.ItemId === "82001") {
- let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
- return Promise.resolve(<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>>{
+	if (request.product.ItemId === "82001") {
+	let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
+	return Promise.resolve(<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>>{
 
- canceled: false,
- data: response
+	canceled: false,
+	data: response
 
- });
+	});
 
- }
+	}
 
- // If you don’t want to execute custom logic on some conditions, and you just want to call the standard logic, you can call the default request, as shown below.
+	// If you don’t want to execute custom logic on some conditions, and you just want to call the standard logic, you can call the default request, as shown below.
 
- return this.defaultExecuteAsync(request);
+	return this.defaultExecuteAsync(request);
 
- }
-```
-Full sample code:
+	}
+	```
 
- ```Typescrip
- /**
- * SAMPLE CODE NOTICE
- *
- * THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
- * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
- * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
- * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
- */
+	Full sample code:
 
- import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
- import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
- import { ClientEntities } from "PosApi/Entities";
+	```typescript
+	/**
+	* SAMPLE CODE NOTICE
+	*
+	* THIS SAMPLE CODE IS MADE AVAILABLE AS IS. MICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+	* OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+	* THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+	* NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+	*/
 
- /**
- * Override request handler class for getting serial number request.
- */
+	import { GetSerialNumberClientRequestHandler } from "PosApi/Extend/RequestHandlers/ProductsRequestHandlers";
+	import { GetSerialNumberClientRequest, GetSerialNumberClientResponse } from "PosApi/Consume/Products";
+	import { ClientEntities } from "PosApi/Entities";
 
- export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler {
+	/**
+	* Override request handler class for getting serial number request.
+	*/
 
- /**
- * Executes the request handler asynchronously.
- * @param {GetSerialNumberClientRequest<GetSerialNumberClientResponse>} request The request containing the response.
- * @return {Promise<ICancelableDataResult<GetSerialNumberClientResponse>>} The cancelable promise containing the response.
- */
+	export default class GetSerialNumberClientRequestHandlerExt extends GetSerialNumberClientRequestHandler {
 
- public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
- 	Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
+	/**
+	* Executes the request handler asynchronously.
+	* @param {GetSerialNumberClientRequest<GetSerialNumberClientResponse>} request The request containing the response.
+	* @return {Promise<ICancelableDataResult<GetSerialNumberClientResponse>>} The cancelable promise containing the response.
+	*/
 
- // User could implement new business logic here to process the serial number.
- // The following example sets serial number "112233" for product 82001.
+	public executeAsync(request: GetSerialNumberClientRequest<GetSerialNumberClientResponse>):
+		Promise<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>> {
 
- if (request.product.ItemId === "82001") {
- let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
- return Promise.resolve(<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>>{
- canceled: false,
- data: response
- });
+	// User could implement new business logic here to process the serial number.
+	// The following example sets serial number "112233" for product 82001.
 
- }
- return this.defaultExecuteAsync(request);
- }
- }
+	if (request.product.ItemId === "82001") {
+	let response: GetSerialNumberClientResponse = new GetSerialNumberClientResponse("112233");
+	return Promise.resolve(<ClientEntities.ICancelableDataResult<GetSerialNumberClientResponse>>{
+	canceled: false,
+	data: response
+	});
 
-```
+	}
+	return this.defaultExecuteAsync(request);
+	}
+	}
+	```
+
 9.  Create a new json file under the POSRequestHandlerExtension folder. Name it manifest.json.
 
 10.  In the manifest.json file, copy and paste the following code. Be sure to delete the default generated code before copying this code.
 
- ```Typescrip
- {
- "$schema": "../manifestSchema.json",
- "name": "Pos_Extensibility_Samples",
- "publisher": "Microsoft",
- "version": "7.3.5.0",
- "minimumPosVersion": "7.3.5.0",
- "components": {
- "extend": {
- "requestHandlers": [
- {
- "modulePath": "Handlers/GetSerialNumberClientRequestHandlerExt"
- }
- ]
- }
- }
-}
-```
+		```typescript
+		{
+		"$schema": "../manifestSchema.json",
+		"name": "Pos_Extensibility_Samples",
+		"publisher": "Microsoft",
+		"version": "7.3.5.0",
+		"minimumPosVersion": "7.3.5.0",
+		"components": {
+		"extend": {
+		"requestHandlers": [
+		{
+		"modulePath": "Handlers/GetSerialNumberClientRequestHandlerExt"
+		}
+		]
+		}
+		}
+		}
+		```
 11.  Open the extensions.json file under the POS.Extensions project. Update it with POSRequestHandlerExtension samples, so that POS during runtime will include this extension.
  
-```Typescrip
- {
- "extensionPackages": [
-    { 
-       "baseUrl": "SampleExtensions2" 
-     }, 
-     { 
-       "baseUrl": " SampleExtensions" 
-     }, 
-     {
-      "baseUrl": "POSRequestHandlerExtension"
- }
- ]
-}
-```
-> [!NOTE]
-> The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name. For production, don’t use the sample extensions. You should add your own extension folders and remove all the samples.
+		```typescript
+		{
+		"extensionPackages": [
+		   { 
+			  "baseUrl": "SampleExtensions2" 
+			}, 
+			{ 
+			  "baseUrl": " SampleExtensions" 
+			}, 
+			{
+			 "baseUrl": "POSRequestHandlerExtension"
+			}
+		]
+		}
+		```
+
+		> [!NOTE]
+		> The extension.json file should always contain two extensions folder names, so be sure to keep the SampleExtensions folder name or your custom extension folder name. For production, don’t use the sample extensions. You should add your own extension folders and remove all the samples.
 
 12.  Open the tsconfig.json file to comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension for compilation. By default, the list contains all the excluded extensions list. If you want to compile any extension part of the POS, then you need to add the extension folder name and comment the extension from the extension list, as shown below.
 
- ```Typescrip
- "exclude": [
+		```typescript
+		"exclude": [
 
- // "SampleExtensions",
- //"SampleExtensions2",
- //"POSRequestHandlerExtension"
+		// "SampleExtensions",
+		//"SampleExtensions2",
+		//"POSRequestHandlerExtension"
 
-],
-```
+		],
+		```
+
 13.  Compile and rebuild the project.
 
-**How to test your extension**
+## How to test your extension
 
 1.  Press F5 and deploy the POS to test your customization.
 
