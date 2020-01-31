@@ -48,11 +48,11 @@ Dynamics 365 Commerce uses Microsoft Azure Cognitive Service to automatically mo
 
 To access ratings and reviews moderation features in the e-Commerce site management tool, follow these steps.
 
-1. Sign in to [Microsoft LifeCycle Services (LCS)](https://lcs.dynamics.com).
+1. Sign in to [Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com).
 1. Open the project that contains the environment where you want to initialize e-Commerce.
 1. In the **Environments** section, select the environment.
 1. Under **Environment features**, select **Retail manage**.
-1. Under **Links** on the **e-Commerce** tab, select **e-Commerce Site management tool**.
+1. On the **e-Commerce** tab under **Links**, select **e-Commerce Site management tool**.
 
 ## Read a review 
 
