@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/ax-2012/license-sizing-estimator-lcs.md",
+      "redirect_url": "https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-sizing-estimator-lcs",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/retail/dev-itpro/retail-modern-pos-offline.md",
       "redirect_url": "../pos-operations",
       "redirect_document_id": "false"

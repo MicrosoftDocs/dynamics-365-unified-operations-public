@@ -5,7 +5,7 @@ title: Recurring integrations
 description: This topic provides information about recurring integrations. The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 12/04/2019
+ms.date: 12/12/2019
 
 ms.topic: article
 ms.prod: 
@@ -35,10 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The process of data migration, and movement into and out of any enterprise system, are critical pieces that any platform must support. Lots of effort and planning go into building third-party integrations between an enterprise line of business (LOB) system and various source systems. Microsoft Dynamics AX 2012 enables these scenarios through Application Integration Framework (AIF). We have tried to simplify this process for all parties who are involved, from integration solution builders to customer users.
-
-## Architecture
-Integration does the following things:
+Recurring integration does the following things:
 
 - It builds on data entities and the Data management framework.
 - It enables the exchange of documents or files between Finance and Operations and any third-party application or service.
@@ -144,7 +141,7 @@ In cases when there was no file uploaded to the blob, the dequeue API will retur
 Use the following API.
 
 > [!NOTE]
-> The body of the response of **/enqueue** must be sent in the body of the **/ack** POST request.
+> The body of the response of **/dequeue** must be sent in the body of the **/ack** POST request.
 
 ```
 https://<base URL>/api/connector/ack/<activity ID>

@@ -98,7 +98,7 @@ Core HR entities required for your integration are not yet available, you will
 need to wait for the data entities to be made available or you will need to use
 one of the other integration technologies described below.
 > 
-> By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. It's turned on in new environments that include demo data, and the environments start to sync data when they are provisioned. After your environment is ready to sync data, you can turn on the integration on the [Common Data Service configuration page](https://docs.microsoft.com/dynamics365/talent/hr-cds-admin-form).
+> By default, the Common Data Service integration is turned off in new environments that don't include the provided demo data. It's turned on in new environments that include demo data, and the environments start to sync data when they are provisioned. After your environment is ready to sync data, you can turn on the integration. For more information, see [Common Data Service configuration](hr-common-data-service-integration.md).
 
 <sup>1</sup>For a list of Core HR entities available in Common Data Service, see [Core HR and Common Data Service](https://docs.microsoft.com/dynamics365/unified-operations/talent/corehrentities). For Attract and Onboard, all entities are available in Common Data Service.
 

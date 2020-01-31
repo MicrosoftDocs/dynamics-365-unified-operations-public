@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Preview features in Platform update 32 for Finance and Operations apps (February 2020)
+title: What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 description: This topic lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 12/05/2019
+ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -29,12 +29,11 @@ ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
 
 ---
-# Preview features in Platform update 32 for Finance and Operations apps (February 2020)
+# What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
+This topic lists features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
@@ -58,44 +57,15 @@ For more information about this feature, see [User productivity – Saved views]
 
 ### Improved responsiveness of Action Panes on smaller screens
 
-When pages that have an Action Pane are opened on a smaller screen, the Action Pane is collapsed and can't be pinned open. For more information, see [Improved experience on mobile devices – Phase 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1).
+For more information about this feature, see [Improved experience on mobile devices – Phase 1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/improved-experience-mobile-devices-phase-1).
 
 ### Ability to filter on blank values by using the filter pane and filters in grid column headers
 
-Users can now filter for blank values via the filter pane and filters in grid column headers. The syntax that is used to look for a blank value in a column is **""**.
+For more information about this feature, see [User productivity – Filtering enhancements](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-filtering-enhancements).
 
 ### Continued evolution of the new grid
 
-The new grid provides several benefits:
-
-- **Performance:** The new grid provides improved rendering speed and a faster scrolling experience.
-- **Positionally scroll:** Users can now positionally scroll in the data that has been loaded in the web browser. For example, to scroll through 10,000 rows in a grid, select the middle of the scrollbar to immediately go to record 5,000 without having to retrieve data from the server.
-- **General improvements:** In the existing grid, grid headers and data are misaligned, and the grid jumps while you scroll or create new records. The new grid eliminates these issues.
-- **Reorder columns:** Users can now reorder columns by dragging them. Hover the mouse pointer over the column header, and then drag the gripper control that appears on the left side of the column.
-- **Mathematical formulas:** Users can now enter mathematical formulas into numeric cells in a grid. For example, you can enter **=15\*4**. To make the system recognize a value as an expression, start the value with an equal sign (**=**).
-
-The new grid also enables more complex features to be built into it. These additions to the grid will be introduced and enhanced in subsequent monthly updates:
-
-- **Totals:** Business users can see totals for numeric columns in tabular grids. For example, financial users can view totals for a filtered set of transactions for a specific customer. This feature first became available as part of the new grid control feature in Platform update 29, and it will continue to evolve in subsequent platform versions.
-- **Fast data entry:** This feature lets users enter data in a grid ahead of the server. Therefore, it minimizes the need for users to wait for the server to validate one row in the grid before they move to another row. This feature first became available as part of the new grid control feature in Platform update 31, and it will continue to evolve in subsequent platform versions.
-
-Starting in Platform update 31, the new grid control can be turned on for qualified environments by using the **Feature management** workspace. (For information about how to turn on the flight, see the following procedure.) For older updates, you can make the new grid control available by adding **&debug=reactGrid** to the environment URL.
-
-To make the new grid available while this feature is in preview, follow these steps.
-
-1. Turn on the flight by using the following SQL statement.
-
-    ```
-    INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);
-    ```
-
-2. Reset Microsoft Internet Information Services (IIS) to flush the static flighting cache.
-3. In your Finance and Operations app, open the **Feature management** workspace.
-4. Select the **New grid control** feature in the list of features, and then, in the details pane, select **Enable now**.
-
-    If **New grid control** doesn't appear in the list of features, select **Check for updates**.
-
-The new grid will be available in all subsequent user sessions that are started.
+For more information about this feature, see [User productivity – New grid](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/user-productivity-new-grid).
 
 ### Priority-based scheduling for batch jobs
 Two new system batch jobs are introduced to prepare existing batch jobs and tasks for the [Priority-based scheduling for batch jobs](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/priority-based-scheduling-batch-jobs) feature. The two new system batch jobs are:

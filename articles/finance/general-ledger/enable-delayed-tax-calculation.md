@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Enable delayed tax calculation on journals
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 This topic explains how you can delay sales tax calculation on journals. This capability helps improve the performance of tax calculations when there are many journal lines.
 

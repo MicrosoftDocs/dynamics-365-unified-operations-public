@@ -3,13 +3,28 @@ title: Learning catalog for Finance and Operations
 description: Find all the training options for Finance and Operations.
 author: margoc
 ms.topic: article
-ms.date: 07/08/2019
+ms.date: 01/08/2020
 ms.author: margoc
+ms.service: dynamics-ax-applications
+
+# optional metadata
+ 
+# ms.search.form:  
+audience: Application User
+# ms.devlang: 
+ms.reviewer: margoc
+ms.search.scope: Core, Operations
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: Global
+# ms.search.industry: 
+ms.search.validFrom: 2017-12-31 
+ms.dyn365.ops.version: 7.3
+
 ---
 # Learning catalog for Finance and Operations
 
 Find the right online training, in person workshops, and events for your role as a user of Finance and Operations applications. 
-
 
 <!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
@@ -25,6 +40,7 @@ Find the right online training, in person workshops, and events for your role as
 
         :::column-end:::
     :::column:::
+
     ### Business users
 
     Did you just get a new application to use? 
@@ -46,6 +62,24 @@ Find the right online training, in person workshops, and events for your role as
 :::row:::
     :::column:::
 
+        ### Implementation Project Managers
+
+    Are you in charge of making sure your company’s implementation goes smoothly?
+
+    [Implementation Project Manager Learning Catalog](learning-catalog-project-manager.md)
+
+    [Get started](learning-catalog-project-manager.md#get-started)
+
+    [Core platform knowledge](learning-catalog-project-manager.md#core-platform-knowledge)
+
+    [Financial management](learning-catalog-project-manager.md#financial-management)
+
+    [Manufacturing](learning-catalog-project-manager.md#manufacturing)
+
+    [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
+        :::column-end:::
+    :::column:::
+
     ### Administrators
 
     Do you need to keep systems and data flowing, provisioned, and secure round-the-clock?
@@ -62,7 +96,9 @@ Find the right online training, in person workshops, and events for your role as
 
     [Testing](learning-catalog-administrator.md#testing)
 
-        :::column-end:::
+  :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
 
     ### Developers
@@ -80,28 +116,6 @@ Find the right online training, in person workshops, and events for your role as
     [Migration and upgrade](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Testing](learning-catalog-administrator.md#testing)
-
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-
-    ### Implementation Project Managers
-
-    Are you in charge of making sure your company’s implementation goes smoothly?
-
-    [Implementation Project Manager Learning Catalog](learning-catalog-project-manager.md)
-
-    [Get started](learning-catalog-project-manager.md#get-started)
-
-    [Core platform knowledge](learning-catalog-project-manager.md#core-platform-knowledge)
-
-    [Financial management](learning-catalog-project-manager.md#financial-management)
-
-    [Manufacturing](learning-catalog-project-manager.md#manufacturing)
-
-    [Supply chain managment](learning-catalog-project-manager.md#supply-chain-management)
-
         :::column-end:::
     :::column:::
 
@@ -153,7 +167,6 @@ Find the right online training, in person workshops, and events for your role as
 
     [Testing](learning-catalog-solution-architect.md#testing)
 
-    
     :::column-end:::
 :::row-end:::
 
