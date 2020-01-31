@@ -39,8 +39,9 @@ This topic describes the steps and information required to create a new e-Commer
 
 Before you can start developing your e-Commerce site, you must first establish a new site in site builder. 
 
-> [!NOTE]
-> Before you can successfully set up a new e-Commerce site, you must have at least one online store created in Dynamics 365 Commerce. 
+
+To start to develop your e-Commerce site, you must first establish a new site in the site authoring environment. Before you can create a new site, at least one online store must be created in Commerce. 
+
 
 ## Set up your site
 
