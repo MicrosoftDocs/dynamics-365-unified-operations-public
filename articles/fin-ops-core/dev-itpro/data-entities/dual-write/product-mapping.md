@@ -101,7 +101,7 @@ By default products from Finance and Operations apps are synchronized to other D
 
 Note that the synchronization of products happens from Finance and Operations apps to Common Data Service. This means that the values of the product entity fields can be changed in Common Data Service, but when the synchronization is triggered (when a product field is modified in a Finance and Operations app), this will overwrite the values in Common Data Service. 
 
-[!include [symbols](../includes/dual-write-symbols.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [products](includes/EcoResReleasedDistinctProductCDSEntity-products.md)]
 

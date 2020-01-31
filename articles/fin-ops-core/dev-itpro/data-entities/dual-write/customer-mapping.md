@@ -71,7 +71,7 @@ Payment schedule lines      | msdyn_paymentschedulelines      | Syncs payment sc
 Payment schedule            | msdyn_paymentschedules          | This template synchronizes payment schedule reference data, for both customers and vendors.
 Terms of payment            | msdyn_paymentterms              | This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors.
 
-[!include [banner](includes/dual-write-symbols.md)]
+[!include [banner](../../includes/dual-write-symbols.md)]
 
 [!include [mapping contacts contacts](includes/CDSContactsV2-contacts.md)]
 

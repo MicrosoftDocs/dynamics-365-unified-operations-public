@@ -32,7 +32,9 @@ ms.search.validFrom: 2019-07-15
 
 # Organization hierarchy in Common Data Service
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 Because Dynamics 365 Finance is a financial system, *organization* is a core concept, and system setup starts with the configuration of an organization hierarchy. Business financials can then be tracked at the organization level and also at any level in the organization hierarchy.
 
@@ -63,8 +65,6 @@ Legal entities | cdm_companies | Provides bidirectional synchronization of legal
 
 
 [!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 

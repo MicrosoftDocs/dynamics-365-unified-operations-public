@@ -53,7 +53,7 @@ Withholding tax codes	   | msdyn\_withholdingtaxcodes.md
 Withholding tax groups	 | msdyn\_withholdingtaxgroups.md
 Tax Ledger Account Group | msdyn\_taxpostinggroups	
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [banner](../../includes/dual-write-symbols.md)]
 
 [!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
 
