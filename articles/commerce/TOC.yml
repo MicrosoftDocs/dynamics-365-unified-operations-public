@@ -1972,8 +1972,6 @@
         items:
         - name: Extend a Retail Server OData controller
           href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Create a Web API controller for Retail Server
-          href: dev-itpro/odata-controllers-api.md
         - name: Retail Server customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
         - name: Extend the default Retail Server metadata controller
@@ -2042,8 +2040,6 @@
           href: dev-itpro/configure-online-store.md
         - name: Configure authentication providers
           href: dev-itpro/configure-authentication-providers.md
-        - name: e-Commerce platform
-          href: dev-itpro/ecommerce-platform.md
         - name: e-Commerce platform SDK
           href: dev-itpro/ecommerce-platform-sdk.md
       - name: Localize Retail extension resources and label files
