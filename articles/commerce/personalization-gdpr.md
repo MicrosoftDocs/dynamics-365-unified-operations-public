@@ -2,7 +2,7 @@
 # required metadata
 
 title: Opt out of personalized recommendations
-description: This topic explains how to enable customers to opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
+description: This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 manager: AnnBe
 ms.date: 01/28/2020
@@ -30,16 +30,16 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Opt-out of personalized recommendations
+# Opt out of personalized recommendations
 
 [!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
-This topic explains how to enable customers to opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
+This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
-During account creation, new customers are automatically opted in to receiving personalized recommendations. Dynamics 365 Commerce provides the ability to allow users to opt out of receiving personalized recommendations and restrict the processing of their personal data. This means that authenticated users who opt out of receiving personalized recommendations will stop seeing personalized lists immediately. Additionally, all personal data collected for personalization will be removed from personalized recommendations models. 
+During account creation, new customers are automatically set up to receive personalized recommendations. However, Dynamics 365 Commerce provides various ways for retailers to let users opt out of receiving these recommendations and restrict the processing of their personal data. Authenticated users who opt out of receiving personalized recommendations will immediately stop seeing personalized lists. Additionally, all personal data that is collected for personalization will be removed from personalized recommendations models.
 
 For more information about personalized product recommendations, see [Enable personalized recommendations](personalized-recommendations.md).
 
@@ -47,41 +47,44 @@ For more information about personalized product recommendations, see [Enable per
 
 Retailers have three ways to implement an opt-out experience.
 
-### On behalf of the user
+### Opting out on behalf of users
 
-From within **Account Management** in Commerce back office, retailers have the ability to opt out on behalf of the user.
+In Account management in Commerce back office, retailers can opt out on behalf of users.
 
-1. From the back office home page, search for **all customers**.
-1. Search for a customer, and then select the **Retail Tab**.
+1. From the back-office home page, search for **all customers**.
+1. Search for and select a customer, and then select the **Retail** FastTab.
 
-    ![Account management](./media/Disablepersonalizationpart1.png)
+    ![Retail FastTab](./media/Disablepersonalizationpart1.png)
 
-1. Under **Privacy**, for **Disable personalization** select **Yes**.
+1. Under **Privacy**, set the **Disable personalization** option to **Yes**.
 
     ![Privacy settings](./media/Disablepersonalizationpart2.png)
 
-1. Select **Save** and close the form.
+1. Select **Save**, and close the page.
 
-### Module opt-out experience
+### Module-based opt-out experience
 
-Retailers can enable authenticated users to opt out of personalized recommendations by themselves. This is accomplished by adding the user opt-out module to customer account profile pages.
+Retailers can let authenticated users opt out of personalized recommendations by themselves. To provide this opt-out experience, add the user opt-out module to customer account profile pages.
 
 ### Custom extensions
 
-Retailers wanting to create their own extensions to manage the opt-out experience for their users will need to reference the [Call Retail Server APIs](e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](e-commerce-extensibility/overview.md) documentation.
+Retailers can create their own extensions to manage the opt-out experience for users. For more information, see [Call Retail Server APIs](e-commerce-extensibility/call-retail-server-apis.md) and [Online channel extensibility](e-commerce-extensibility/overview.md).
 
 ## Obtain a digital copy of personalized recommendations data on behalf of an authenticated user
 
-Customers may want to obtain a digital copy of their personal data and also see an exported view of their recommendations results. Once asked, the retailer would need to create a customized extension that will call the Retail Server API and query for the full results from the "Picks for you" list based on the customer's Customer ID. The results can then be exported in CSV format and shared with the customer.
+Customers might want to obtain a digital copy of their personal data and also see an exported view of their recommendations results. If a customer requests this information, the retailer must create a customized extension that calls the Retail Server application programming interface (API) and queries for the full results from the **Picks for you** list, based on the customer's customer ID. The results can then be exported in comma-separated values (CSV) format and shared with the customer.
 
-An example of how a retailer could accomplish this task is outlined below.
+The following example shows how a retailer can accomplish this task.
 
-- The retailer would need to create a custom extension to pull personal recommendations data on behalf of the user. Steps on how to create modules, clone existing modules, call Retail Server APIs, and call data actions are all covered in the [Online channel extensibility](e-commerce-extensibility/overview.md) documentation.
-- The custom extension would need to make a call to the "get-recommendations" core data action and pass it the required information based on the requirements of the list. In the case of a "Picks for you" list, the extension would need to pass the data action the proper list name and Customer ID.
-    - One way a retailer might create the custom extension is to clone the existing product collection module used to return recommendations results. By cloning this existing module, a retailer could modify the existing code and add a new button to export the recommendations results to a CSV file. For more information, see [Clone a starter kit module](e-commerce-extensibility/clone-starter-module.md) and [Product collection modules](product-collection-module-overview.md). 
-    - For a full view of the Retail Server API library, see [Retail Server Customer and Consumer APIs](retail/dev-itpro/retail-server-customer-consumer-api.md).  
-- Once the custom extension is created, the retailer would be able to export a CSV file of all recommendations results based on the unique Customer ID of the authenticated user.
-- The retailer could then share the exported CSV file containing the full personalized list of recommended products with the authenticated user.
+1. The retailer creates a custom extension to pull personal recommendations data on behalf of the user. For information about how to create modules, clone existing modules, call Retail Server APIs, and call data actions, see [Online channel extensibility](e-commerce-extensibility/overview.md).
+2. The custom extension makes a call to the **get-recommendations** core data action and passes the required information to it, based on the requirements of the list. In the case of the **Picks for you** list, the extension must pass the correct list name and customer ID to the data action.
+
+    One way to create the custom extension is to clone the existing product collection module that is used to return recommendations results. By cloning this existing module, a retailer can modify the existing code and add a new button that exports the recommendations results to a CSV file. For more information, see [Clone a starter kit module](e-commerce-extensibility/clone-starter-module.md) and [Product collection modules](product-collection-module-overview.md).
+
+    For a full view of the Retail Server API library, see [Retail Server Customer and Consumer APIs](retail/dev-itpro/retail-server-customer-consumer-api.md).
+
+3. After the custom extension is created, the retailer can export a CSV file of all recommendations results, based on the unique customer ID of the authenticated user.
+4. The retailer can share the exported CSV file that contains the full personalized list of recommended products with the authenticated user.
 
 ## Additional resources
 
