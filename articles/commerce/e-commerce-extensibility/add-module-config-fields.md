@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add module configuration fields
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic describes how to add module configuration fields in Microsoft Dynamics 365 Commerce.
@@ -239,7 +238,7 @@ The following example shows how the various supported data types are used.
 
 ### css configuration type
 
-The configuration type of module configuration properties can also be declared as **"type": "css"**. Module configuration properties declared as the **css** type must specify a set of string enums of the classes that can be applied to a module. Only one of the enum options can be selected for a given module configuration property. When an enum option is selected, the selected class is appended to the list of classes that is passed down to the module in the format *propertyName\_\_propertyValue* via the **this.props.config.className** property. Note that configuration types of the **css** type can't be accessed directly from the **this.props.config** property, because they are merged into the **this.props.config.className** property. 
+The configuration type of module configuration properties can also be declared as **"type": "css"**. Module configuration properties declared as the **css** type must specify a set of string enums of the classes that can be applied to a module. Only one of the enum options can be selected for a given module configuration property. When an enum option is selected, the selected class is appended to the list of classes that is passed down to the module in the format *propertyName\_\_propertyValue* via the **this.props.config.className** property. Note that **css** configuration types can't be accessed directly from the **this.props.config** property, because they are merged into the **this.props.config.className** property. 
 
 ### className property
 
