@@ -32,14 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Extend with Power Apps and Power Automate
 
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | [Extend Talent with Power Apps and Power Automate](https://docs.microsoft.com/dynamics365/talent/extensibility-examples) |
-| Review document location | (link) |
-| Please verify | **Are these applicable to HR?** |
-
 This article describes some examples of extensibility scenarios for Microsoft Dynamics Human Resources that use Microsoft Power Apps and Microsoft Power Automate. You can import the solution package that is associated with each example into your Power Apps environment. You can then use the packages either as guidance or as starting points to implement scenarios that are applicable to your organization.
 
 > [!IMPORTANT]
