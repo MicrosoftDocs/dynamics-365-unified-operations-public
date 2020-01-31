@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Create an e-Commerce site
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes the steps and information required to create a new e-Commerce site in Dynamics 365 Commerce site builder.

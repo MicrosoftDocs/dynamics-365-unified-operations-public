@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a new Commerce product hierarchy
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create a new Commerce   product hierarchy in Microsoft Dynamics 365 Commerce.
@@ -79,8 +79,8 @@ Category attribute groups can also be assigned to each group as required.
 
 ## Additional resources
 
-[Retail hierarchies](../retail/retail-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+[Retail hierarchies](retail-hierarchies.md)
 
-[Manage retail product categories and products ](../retail/category-management-product-creation.md?toc=/dynamics365/commerce/toc.json)
+[Manage retail product categories and products ](category-management-product-creation.md)
 
-[Change the sort order for merchandizing entities](../retail/custom-order-categories-nav-retail-prod-hierarchy.md?toc=/dynamics365/commerce/toc.json)
+[Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)

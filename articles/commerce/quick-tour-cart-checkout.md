@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Overview of cart and checkout pages
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.

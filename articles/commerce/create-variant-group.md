@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a variant group
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create a size, style, or color variant group for a product in Microsoft Dynamics 365 Commerce.
@@ -73,6 +73,6 @@ The following image shows an example of a size group for "casual shirt sizes".
 
 [Product information overview](../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json)
 
-[Set up retail products](../retail/set-up-retail-products.md?toc=/dynamics365/commerce/toc.json)
+[Set up retail products](set-up-retail-products.md)
 
-[Product dimensions](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/retail/toc.json)
+[Product dimensions](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
