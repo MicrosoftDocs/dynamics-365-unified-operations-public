@@ -430,6 +430,8 @@
           href: call-center-catalogs.md
         - name: Set up call center order processing options
           href: set-up-order-processing-options.md
+        - name: Configure call center delivery modes and charges
+          href: configure-call-center-delivery.md
         - name: Set up and work with fraud alerts 
           href: set-up-fraud-alerts.md
         - name: Set up continuity programs for call centers 
