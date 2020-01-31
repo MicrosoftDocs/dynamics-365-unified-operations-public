@@ -125,6 +125,10 @@ Select the **Optional** tab to configure optional settings.
 + **Test Run Prefix** - RSAT reports test run results to Azure DevOps. Test runs are named using the following convention: **<Run ID> <Prefix> <Test Suite>**. Use this setting to set the **<Prefix>**.
 + **Test Run Timeout** - Timeout (in minutes) of a test run. All active windows are closed and pending test cases fail when this timeout is reached.
 + **Test Action Timeout** - Timeout (in minutes) of individual test steps. When a test step times out, the test case fails.
++ **Pause between steps** - Number of seconds to pause between test steps during the automated execution of a test case. Default is 0. Set this value to force a pause during test execution for auditing or investigation purposes. A pause can also be specified for an
+individual test case by changing the parameter “Pause between steps (Seconds)” in the General tab of
+the Excel parameter file of a test case.
++ **Fail test on first validation error** - By default, If a test case has multiple validation steps, and there is a validation failure, the test case will stop executing on the first failure and will be marked as failed. If you prefer that test cases keep running until all validations are completed, uncheck this option. This allows the test suite to evaluate all validations.
 
 ### Configure the test environment to trust the connection
 
