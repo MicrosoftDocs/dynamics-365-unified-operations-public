@@ -38,11 +38,11 @@ To see what's new or changed in each release of Dynamics 365 Commerce, see the f
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
-| 10.0.8  |   10.0.319          | February 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.8](whats-new-10-0-8.md) |         |                     | October 2019  | [What's new and changed in Dynamics 365 Commerce version XXX (preview)](XXX.md)
+| 10.0.8  |   10.0.319          | February 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.8](whats-new-10-0-8.md) |
 
 
 ## Releases before February 2020
-To see what's new or changed in releases before November 2019, excluding Dynamics 365 Commerce, see the following topics.
+To see what's new or changed in releases before Februry 2020, see the following topics.
 
 
  **Release**                                                           | **Version** | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                           |
