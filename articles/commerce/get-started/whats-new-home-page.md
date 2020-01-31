@@ -34,9 +34,9 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 ## Releases of Dynamics 365 Commerce
-To see what's new or changed in each release of Dynamics 365 Commerce, see the following topics.
+Dynamics 365 Commerce released to public preview October 1, 2019. To see what's new or changed in each release of Dynamics 365 Commerce, see the following topics.
 
-| Version | Build number | Auto-update availability | Learn more |
+| Version | Build number | Availability | Learn more |
 |---------|--------------|--------------|-------------|
 | 10.0.8  |   10.0.319          | February 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.8](whats-new-10-0-8.md) |
 
