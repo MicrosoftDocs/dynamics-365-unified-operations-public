@@ -43,9 +43,9 @@ For more information, see [Download Electronic reporting configurations from Lif
 
 ## Generate the Standard audit file for France
 1. Go to **General Ledger** > **Periodic tasks** > **Data export** to open the **Data export** page.
-2. In the **Format mapping** field, select *French FEC audit file*.
-3. Click **OK**.
-4. On the **Electronic report parameters** page, enter start and end dates of the period in the fields **Period - date from**, **Period - date to** and click **OK**.
+2. In the **Format mapping** field, select **French FEC audit file**.
+3. Select **OK**.
+4. On the **Electronic report parameters** page, enter start and end dates for the period in the **Period - date from** and **Period - date to** fields. Select **OK**.
 5. Review the generated file.
 
 ## Review the Standard audit file
@@ -59,9 +59,9 @@ When the Standard audit file is generated, an archive file with the following fi
 
 Consider the following information for select fields in the reports:
 
-- **JournalCode** field: Contains the text part of the voucher. If voucher series doesn't have a text part, the value will be blank. You should set up voucher series properly to have correct value in this field.
-- **JournalLib** field: 
+- **JournalCode**: Contains the text portion of the voucher. If the voucher series doesn't have a text portion, the value will be blank. Be sure to correctly set up the voucher series in order to have the correct value in this field.
+- **JournalLib**: 
 
-   - In the **Vendor balance.txt** and **Customer balance.txt** reports, it has constant value **System**.
-   - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, it has the value of the **Transaction type** field from the reports, **Vendor transaction** or **Customer transaction**. Possible values could be **Purchase order** or **Payment**.
-   - In the **FEC.txt** report, it has the value of the **Transaction type** field from the **Voucher transaction** report. If the **Transaction type** equals **General journal**, it has value in the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on **Journal names** page.
+   - In the **Vendor balance.txt** and **Customer balance.txt** reports, this needs to be the constant value **System**.
+   - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, this is the value of the **Transaction type** field from the reports, **Vendor transaction** or **Customer transaction**. Possible values could be **Purchase order** or **Payment**.
+   - In the **FEC.txt** report, this is the value of the **Transaction type** field from the **Voucher transaction** report. If the **Transaction type** equals **General journal**, this is the value in the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on the **Journal names** page.
