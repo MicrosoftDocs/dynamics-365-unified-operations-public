@@ -38,10 +38,7 @@ This topic describes the components of the Help system for Dynamics 365 Finance,
 
 ## Help architecture
 
-The following illustration shows the parts of the Help system. The in-product Help system pulls articles from https://docs.microsoft.com, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
-
-> [!NOTE]
-> The features listed in the diagram with an asterisk (\*) are planned, but are not available yet.
+The following illustration shows the parts of the Help system. The in-product Help system pulls articles from https://docs.microsoft.com and other connected websites, as well as task guides stored in Business Process Modeler in Lifecycle Services (LCS).
 
 [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
 
