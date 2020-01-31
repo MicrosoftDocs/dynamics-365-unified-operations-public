@@ -49,9 +49,9 @@ Before you can use this feature, you must make sure it's available on your syste
 - **Module** - Cost management
 - **Feature name** - Compare item price storage
 
-## Generate the Compare item prices storage report
+## Generate a Compare item prices storage report
 
-Follow these steps to generate the **Compare item prices storage** report, store the report, or export it.
+Follow these steps to generate and store a **Compare item prices storage** report:
 
 1. Go to **Cost management > Inquiries and reports > Predetermined cost reports > Compare item prices storage**.
 
@@ -92,7 +92,7 @@ After you've generated a report, you can view and explore it at any time as foll
 
 Each report that you generate is stored in the **Compare item prices** data entity. You can use the standard data management features of Supply Chain Management to export data from this entity to any supported data format, including CSV or Microsoft Excel.
 
-The following is an example of how to export the **Compare item prices storage** report:
+The following is an example of how to export a **Compare item prices storage** report:
 
 1. Go to **System administration > Workspaces > Data management**.
 
