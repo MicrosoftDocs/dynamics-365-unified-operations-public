@@ -95,7 +95,7 @@ In the following example, notice that the **slots** section contains the various
 
 In the **MODULE\_NAME.tsx** view file, you can define the HTML structure for the slots on the page.
 
-The following example shows an excerpt from a react view file (campaign-page-container.view.tsx) that takes advantage of the slots for the container.
+The following example shows an excerpt from a React view file (campaign-page-container.view.tsx) that takes advantage of the slots for the container.
 
 ```
 ...
