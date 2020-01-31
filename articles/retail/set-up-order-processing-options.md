@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up call center channels
-description: This topic provides information about how to process orders for call centers by using Dynamics 365 Retail.
+description: This topic provides information about how to process orders for call centers by using Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 01/06/2020
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-A company can define multiple call center channels in Dynamics 365 Retail. Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
+A company can define multiple call center channels in Dynamics 365 Commerce. Call center channels are configured at **Retail** \> **Channels** \> **Call centers** \> **All call centers**, and they are specific to a legal entity.
 
 When a new call center channel is created, it's systematically assigned an operating unit number. Because call centers are created as operating units, users can link the call center channel to various Retail features, such as assortments, catalogs, and specific modes of delivery.
 

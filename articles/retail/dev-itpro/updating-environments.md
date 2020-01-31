@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update code and environments for Retail projects
-description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Retail implementation projects.
+description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -43,7 +43,7 @@ Other updates are code updates. The environment page in Microsoft Dynamics Lifec
 
 ![LCS environment page](./media/17-LCS-environment-page.png)
 
-Platform code is at a very low level, and no Microsoft Dynamics 365 Retail features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
+Platform code is at a very low level, and no Microsoft Dynamics 365 Commerce features are implemented in the platform. Therefore, stand-alone platform binary updates don't require that you retest any Retail-specific code. Examples of features that are implemented in the platform are the Data Import/Export Framework (DIXF) and the batch framework.
 
 Binary updates or hotfixes include dynamic-link libraries (DLLs), scripts, and channel SQL schema changes. All channel-side hotfixes are released together as a binary update/hotfix. Because binary updates are DLLs, they are cumulative. For example, if you download a binary update on Friday, you automatically receive all binary hotfixes from Monday through Thursday.
 
@@ -75,7 +75,7 @@ After you've restored the database, follow these steps.
 2. Make sure that the batch service is running.
 3. Run the Environment reprovisioning tool. (Find the latest version in the global Shared asset library in LCS, and then deploy it by using the **Maintain** function.)
 4. Verify that the tool succeeded, the Retail channel profile is up to date with the correct URLs, and the data synchronization jobs for the Default data group succeeded.
-5. In Microsoft Dynamics 365 Retail, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
+5. In Microsoft Dynamics 365 Commerce, run the **Initialize Retail scheduler** job (select to delete old data). This step assumes that all Commerce Data Exchange (CDX) configuration changes are automated by using a resource file. If CDX configuration changes aren't automated, and if tables, subjobs, and jobs are manually created in the Retail channel schema, don't select the option to delete the existing configuration. We recommend that you automate CDX configuration changes. 
 
 ## Taking updates frequently
 

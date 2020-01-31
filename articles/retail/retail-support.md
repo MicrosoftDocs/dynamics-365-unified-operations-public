@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get support for Dynamics 365 Retail
-description: This article explains how to get help with Microsoft Dynamics 365 Retail. 
+description: This article explains how to get help with Microsoft Dynamics 365 Commerce. 
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Retail
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to get help with Dynamics 365 Retail.
+This article explains how to get help with Dynamics 365 Commerce.
 
 ## Contact support
 
@@ -54,7 +54,7 @@ To obtain support for Retail, use the resources in the following table. These re
 <tbody>
 <tr>
 <td>Ask the community.</td>
-<td>Go to the <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> community page to find help with your questions from the Dynamics community.</td>
+<td>Go to the <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a> community page to find help with your questions from the Dynamics 365 community.</td>
 </tr>
 <tr>
 <td>Use the Issue search tool.</td>

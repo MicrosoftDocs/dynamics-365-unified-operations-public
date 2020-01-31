@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up retail products
-description: This article describes how to set up retail products in Dynamics 365 Retail.
+description: This article describes how to set up retail products in Dynamics 365 Commerce.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -36,9 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to set up retail products in Dynamics 365 Retail.
+This article describes how to set up retail products in Dynamics 365 Commerce.
 
-Before you can offer products for resale in your retail channels, you must create and configure the products in Dynamics 365 Retail. Retail creates organization-wide products in the product master. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you must release the products to the legal entities where they are available. To set up the products that you sell by using retail channels, complete the following tasks.
+Before you can offer products for resale in your retail channels, you must create and configure the products in Dynamics 365 Commerce. Retail creates organization-wide products in the product master. You can create the products, define the product properties and attributes, and assign the products to retail category hierarchies. To make the products available to your retail channels and add them to an active assortment, you must release the products to the legal entities where they are available. To set up the products that you sell by using retail channels, complete the following tasks.
 
 1. Define a retail product hierarchy. By using the category hierarchy features in Retail, you can define retail category hierarchies to group and categorize the products that you distribute to your retail channels. User-defined and system attributes can be defined at the category level. Then, all products that are assigned to the category inherit those attributes. Multiple category hierarchies can be defined, and each product can be assigned to multiple hierarchies. However, in a single hierarchy, each product can be assigned to only one category.
 2. Add products and product variants to the product master. Products that are added to the product master represent a global list of products. You can add products manually, one at a time, or you can import product data from your vendors.

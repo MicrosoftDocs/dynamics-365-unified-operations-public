@@ -2,7 +2,7 @@
 # required metadata
 
 title: Merge the build systems for Retail and Finance
-description: This topic describes the steps for merging the build systems for both Dynamics 365 Retail and Dynamics 365 Finance using Azure DevOps.  
+description: This topic describes the steps for merging the build systems for both Dynamics 365 Commerce and Dynamics 365 Finance using Azure DevOps.  
 author: andreash1
 manager: AnnBe
 ms.date: 02/06/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](../../includes/banner.md)]
 
 
-This topic describes the steps for merging the build systems for Dynamics 365 Retail and Dynamics 365 Finance. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Finance and Retail components. This topic outlines the manual steps for merging both build systems using Azure DevOps. 
+This topic describes the steps for merging the build systems for Dynamics 365 Commerce and Dynamics 365 Finance. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Finance and Retail components. This topic outlines the manual steps for merging both build systems using Azure DevOps. 
 
 
 ## Enable the build system

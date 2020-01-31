@@ -176,7 +176,9 @@ To consume APIs in an extension, follow these steps:
                 });
         }
     ```
+
     The overall code should look like the following example. 
+    
     ```Typescript
     import * as Triggers from "PosApi/Extend/Triggers/TransactionTriggers";
     import { ClientEntities, ProxyEntities } from "PosApi/Entities";
@@ -336,11 +338,16 @@ To consume APIs in an extension, follow these steps:
         ]
     }
     ```
-    **Note:** The extension.json file must contain at least two extensions folder names so don’t remove the **SampleExtensions** folder name.
+    
+    > [!NOTE]
+    > The extension.json file must contain at least two extensions folder names so don’t remove the **SampleExtensions** folder name.
 
 13. Open **tsconfig.json** and comment out the extension package folders from the exclude list. POS will use this file to include or exclude the extension. By default, the list contains all the excluded extensions, if you want to include any extensions that are part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.
 
-    **Note** Comment out both SampleExtensions2 and POSAPIExtension.
+    > [!NOTE]
+    > Comment out both SampleExtensions2 and POSAPIExtension.
+    
+    
     ```Typescript
     "exclude": [
 

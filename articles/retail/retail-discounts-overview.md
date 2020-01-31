@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail discounts
-description: This topic provides an overview of the discount functionality in Dynamics 365 Retail. It explains the properties found on the various discount forms, and best practices for discount management.
+description: This topic provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: shajain
 manager: AnnBe
 ms.date: 07/07/2019
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
 [!include [banner](includes/banner.md)]
 
 ## Overview
-This topic provides an overview of the discounts functionality in the Dynamics 365 Retail. It explains the properties found on the various discount forms, and best practices for discount management. However, this topic does not cover the various discounts types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate topics created for each of these discount types.
+This topic provides an overview of the discounts functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this topic does not cover the various discounts types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate topics created for each of these discount types.
 
 Because retailers require flexible discounting, and discount styles and types vary by retail industry, there are many ways to define discounts in Retail. The discounting functionality was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. As a result, the discount types can be configured for five different entities: customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy.
 
 ## Creating discounts
 
-Each discount type has a dedicated page that you use to create and manage the discount. Dynamics 365 Retail also has an **All discounts** page and a **Pricing and discounts management** workspace, both of which you can use to create a new discount of any type.
+Each discount type has a dedicated page that you use to create and manage the discount. Dynamics 365 Commerce also has an **All discounts** page and a **Pricing and discounts management** workspace, both of which you can use to create a new discount of any type.
 
 ### Discount headers and discount lines
 
