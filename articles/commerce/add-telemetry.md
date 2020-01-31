@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add script code to site pages to support telemetry
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.

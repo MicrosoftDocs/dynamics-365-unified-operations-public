@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Help resources for Dynamics 365 Commerce
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 

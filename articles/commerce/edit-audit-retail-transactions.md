@@ -34,7 +34,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-[!include [banner](includes/preview-banner.md)]
+
 
 Dynamics 365 Commerce customers use first-party as well as third-party point of sale (POS) applications. With the first-party POS application, store transactions are pulled into Headquarters from the channels through a batch process. With third-party applications, transactions are pulled into Headquarters through integration. In both cases, after transactions are pulled into Headquarters, a consistency check process needs to be executed that runs multiple validations on the transactions so that only successfully validated transactions are pulled into the statement to be posted in Headquarters. 
 

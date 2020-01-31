@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-[!include [banner](includes/preview-banner.md)]
+
 
 In Dynamics 365 Retail versions 10.0.4 and earlier, statement posting is an end-of-day operation and all transactions are posted in the books at the end of the day. Large transactions must then be processed in a limited time window, sometimes resulting in load and locks and statement posting failures. Retailers also can't recognize revenue and payments in their books throughout the day.
 

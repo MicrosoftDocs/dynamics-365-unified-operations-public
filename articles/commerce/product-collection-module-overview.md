@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Product collection modules
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.

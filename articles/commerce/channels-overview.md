@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Channels overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic presents an overview of channels in Microsoft Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up each channel.
