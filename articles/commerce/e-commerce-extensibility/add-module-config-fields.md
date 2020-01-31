@@ -90,7 +90,7 @@ In the following example of a module definition file, an **imageAlignment** conf
 
 The **config** section of the module definition file contains a list of all the module's exposed configuration fields that will be used in the authoring tools.
 
-* **configuration name** – The local name that is used to access the configuration values from your react source code. This name is case-insensitive.
+* **configuration name** – The local name that is used to access the configuration values from your React source code. This name is case-insensitive.
 * **"friendlyName"** – The friendly name that is shown as the configuration name in the authoring tools.
 * **"description"** – The description that is shown as the configuration description in the authoring tools.
 * **"type"** – The type of the configuration. The possible values are **"string"**, **"bool"**, **"number"**, **"integer"**, **"richText"**, **"image"**, **"imageSettings"**, **"css"**, **"video"**, and **"array"**.
