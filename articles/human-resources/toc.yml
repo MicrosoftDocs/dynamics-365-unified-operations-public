@@ -45,10 +45,28 @@
       items:
       - name: Get support
         href: hr-admin-troubleshooting-support.md
-      - name: Troubleshoot data integration
-        href: hr-admin-troubleshooting-data-integration.md
-      - name: Troubleshoot Office integration
-        href: hr-admin-troubleshooting-office-integration.md
+      - name: Optimize performance with auto cleanup tasks
+        href: hr-admin-troubleshooting-batch-history.md
+      - name: Analytic reports aren't updated
+        href: hr-admin-troubleshooting-analytic-reports.md
+      - name: Can't create an environment in the Power Apps Admin center
+        href: hr-admin-troubleshooting-power-apps.md
+      - name: Client disconnects
+        href: hr-admin-troubleshooting-disconnect.md
+      - name: Avoid truncated text in position hierarchy
+        href: hr-admin-troubleshooting-truncate.md
+      - name: Run the compensation process
+        href: hr-admin-troubleshooting-compensation.md
+      - name: Save task guide to LCS
+        href: hr-admin-troubleshooting-task-guide.md
+      - name: Access private addresses by security role
+        href: hr-admin-troubleshooting-private-addressses.md
+      - name: Human Resources doesn't appear in Dynamics 365 apps
+        href: hr-admin-troubleshooting-not-in-apps.md
+      - name: Reporting options
+        href: hr-admin-troubleshooting-reporting.md
+      - name: Integration FAQ
+        href: hr-admin-troubleshooting-integration-faq.md
   - name: Developer Guide
     items:
     - name: Overview
@@ -286,23 +304,23 @@
     - name: Manage benefits
       items:
       - name: Define and manage a benefits program
-        items: hr-benefits-manage-program.md
+        href: hr-benefits-manage-program.md
       - name: Benefit eligibility policies
-        items: hr-benefits-eligibility-policies.md
+        href: hr-benefits-eligibility-policies.md
       - name: Benefit eligibility process
-        items: hr-benefits-eligibility-process.md
+        href: hr-benefits-eligibility-process.md
       - name: Define benefit eligibility rules and policies
-        items: hr-benefits-define-eligibility-rules-policies.md
+        href: hr-benefits-define-eligibility-rules-policies.md
       - name: Deliver an employee benefits program
-        items: hr-benefits-deliver-employee-benefits-program.md
+        href: hr-benefits-deliver-employee-benefits-program.md
       - name: Create new benefits
-        items: hr-benefits-create.md
+        href: hr-benefits-create.md
       - name: Enroll workers in benefits
-        items: hr-benefits-enroll-workers.md
+        href: hr-benefits-enroll-workers.md
       - name: Manage benefit expiration dates
-        items: hr-benefits-expiration-dates.md
+        href: hr-benefits-expiration-dates.md
       - name: Generate ACA reports
-        items: hr-benefits-aca-reports.md
+        href: hr-benefits-aca-reports.md
       - name: Benefits management preview feature
         items:
         - name: Benefits management overview
