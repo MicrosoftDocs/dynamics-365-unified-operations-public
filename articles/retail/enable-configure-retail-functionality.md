@@ -37,22 +37,22 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This article describes the data that's created as part of the initialization process for Dynamics 365 Commerce.
 
-After the Retail solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the retail configuration to create the basic configuration data.
+After the Commerce solution has been deployed through Microsoft Dynamics Lifecycle Services (LCS), you must initialize the Commerce configuration to create the basic configuration data.
 
 > [!IMPORTANT]
-> Before you initialize the retail configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up retail stores. This step must be completed for each legal entity that you use for retail.
+> Before you initialize the commerce configuration, make sure that you've specified a language and a postal address for each legal entity where you will set up stores. This step must be completed for each legal entity that you use for commerce.
 
-To initialize the retail configuration, follow these steps.
+To initialize the configuration, follow these steps.
 
-1. Start the Retail client.
-2. Click **Retail** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Retail parameters**.
+1. Start the Commerce client.
+2. Click **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce parameters**.
 3. Click **Initialize**.
 
 Initialization creates the following default configuration data:
 
-- Retail scheduler jobs and subjobs
-- Retail channel schema
-- Retail distribution schedules
+- Commerce scheduler jobs and subjobs
+- Commerce channel schema
+- Commerce distribution schedules
 - Default screen layouts, which include button grids, images, and themes
 - Time zone information
 - Point-of-sale (POS) operations
@@ -62,15 +62,15 @@ Initialization creates the following default configuration data:
 - Entity validation templates
 - Batch job to purge Commerce Data Exchange session history
 
-Additionally, logging that is related to the payment card industry (PCI) is enabled for the Retail database.
+Additionally, logging that is related to the payment card industry (PCI) is enabled for the Commerce database.
 
 > [!NOTE]
-> There is an option to separately configure the Retail scheduler. This option lets you reset the Retail scheduler configuration to its default settings.
+> There is an option to separately configure the Commerce scheduler. This option lets you reset the Commerce scheduler configuration to its default settings.
 
-After initialization is completed, you must configure additional retail data. Here are some examples:
+After initialization is completed, you must configure additional commerce data. Here are some examples:
 
-- Retail parameters
-- Retail scheduler parameters
-- Retail channels
+- Commerce parameters
+- Commerce scheduler parameters
+- Commerce channels
 - Registers and devices
 - Assortments

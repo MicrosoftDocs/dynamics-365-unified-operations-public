@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail capabilities that are available in on-premises deployments
-description: This topic lists the retail capabilities available in on-premises deployments.
+description: This topic lists the commerce capabilities available in on-premises deployments.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 11/01/2018
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 2017-06-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists retail capabilities that are available in on-premises deployments.
+This topic lists commerce capabilities that are available in on-premises deployments.
 
 For more information about on-premises deployments, see [On-premises deployment home page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 
@@ -40,7 +40,7 @@ For more information about on-premises deployments, see [On-premises deployment 
 | Cloud Point of Sale  | Available          |
 | Retail Point of Sale | Available          |
 | Modern Point of Sale | Available          |
-| Retail Server        | Available          |
+| Commerce Scale Unit  | Available          |
 | Channel database     | Available          |
 | Hardware station     | Not available      |
 | AX 2012 N-1 support  | Not available      |
@@ -60,7 +60,7 @@ The following table indicates which channel management components are available 
 | Devices                               | Available          |
 | POS permissions and permission groups | Available          |
 | Info codes                            | Available          |
-| Retail payment methods                | Available          |
+| Payment methods                       | Available          |
 | Email receipts                        | Available          |
 | Email notifications                   | Available          |
 | Sales tax overrides                   | Available          |
@@ -78,7 +78,7 @@ The following table indicates which pricing and discount components are availabl
 | Trade agreements                                      | Available          |
 | Channel navigation category                           | Available          |
 | Affiliation price groups                              | Available          |
-| Retail channel price groups                           | Available          |
+| Commerce channel price groups                         | Available          |
 | Pricing priorities                                    | Available          |
 | Price simulator                                       | Not available      |
 
@@ -102,9 +102,9 @@ The following table indicates which merchandising components are available in on
 | Product categories                          | Available          |
 | Channel categories and product attributes   | Available          |
 | Assortments                                 | Available          |
-| Retail catalogs                             | Available          |
-| Retail product kits                         | Available          |
-| Retail product files                        | Available          |
+| Commerce catalogs                           | Available          |
+| Commerce product kits                       | Available          |
+| Commerce product files                      | Available          |
 | Variant groups (size, color, style)         | Available          |
 | Attribute, attribute type, attribute groups | Available          |
 | Vendor catalogs                             | Available          |

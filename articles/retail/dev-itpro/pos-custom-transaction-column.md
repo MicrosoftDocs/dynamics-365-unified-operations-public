@@ -39,8 +39,8 @@ This topic explains how to add a new custom column to a POS transaction page usi
 > This topic applies to Dynamics 365 for Finance and Operations, and to Microsoft Dynamics 365 Retail with platform update 8 and Retail App update 4 hotfix.
 
 ## Add a custom column to the page
-1. Sign in to Dynamics 365 Retail.
-2. Navigate to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
+1. Sign in to Dynamics 365 Commerce.
+2. Navigate to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
 3. Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
 4. Follow the instructions if prompted to install and enter the Azure Active Directory (AAD) credentials to launch the designer.
 5. Select **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.
@@ -57,7 +57,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 12. Adjust the column width in the transaction grid using the **Screen layout** designer. Make sure the column is visible.
 13. Click the **X** button in the designer to close the designer.
 14. When prompted to **Save changes**, click **Yes**. If you click **No** the changes will not be saved.
-15. Go to **Retail** > **Retail IT** > **Distribution schedule**.
+15. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
 16. Select the **Registers (1090)** job and click **Run now**.
 
 ## Add business logic to a custom column

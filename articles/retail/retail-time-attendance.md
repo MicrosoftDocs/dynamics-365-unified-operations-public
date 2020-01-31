@@ -50,7 +50,7 @@ This topic describes the scenarios that are supported for time and attendance ma
 
 For information about the configuration steps, see [Setting up time and attendance](https://technet.microsoft.com/library/aa496971.aspx).
 
-### Retail-specific configuration
+### Commerce-specific configuration
 
 - Enable a functionality profile for Time Clock, for workers that you want to enable time registrations for. Click **POS functionality profiles** &gt; **Functions** &gt; **POS time registrations** &gt; **Enable time registrations**.
 - Configure point of sale (POS) permissions groups to enable the View timeclock entries permission. This permission lets a user view the time clock registrations of other workers in the store (and from any other store that the user is associated with, via the address book). You might want to enable this permission for a manager role but not for a cashier role. Click **POS permission groups** &gt; **View time clock entries**.
@@ -130,7 +130,7 @@ On POS:
 
 ## Process and manage time registrations
 
-A Retail user follows the workflow to calculate, approve, and transfer time registrations to payroll.
+A Commerce user follows the workflow to calculate, approve, and transfer time registrations to payroll.
 
 ### Primary operations
 

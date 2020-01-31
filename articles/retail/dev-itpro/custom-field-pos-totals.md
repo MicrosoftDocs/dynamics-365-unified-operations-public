@@ -41,7 +41,7 @@ Custom fields that you add for the **Totals** panel on the **Custom fields** pag
 
 ## Overview of the required steps
 
-First, you must complete these steps to configure Retail headquarters.
+First, you must complete these steps to configure Headquarters.
 
 1. On the **Language text** page, add the language text for the custom field.
 2. On the **Custom fields** page, add the new custom field.
@@ -52,10 +52,10 @@ You must then complete this step in the POS extension project.
 
 - Add the business logic for the custom field.
 
-## Configure Retail headquarters
+## Configure Headquarters
 
-1. Sign in to Retail.
-2. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Language text**.
+1. Sign in to Commerce.
+2. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Language text**.
 3. On the **POS** tab, select **Add** to add a new POS language text.
 
     The text that appears in the **Totals** panel can be localized. Therefore, you can create multiple texts in different languages for the same text ID. Here is an example.
@@ -66,7 +66,7 @@ You must then complete this step in the POS extension project.
     | en-UK       | 1       | Demo   |
 
 4. On the Action Pane, select **Save** to save your changes.
-5. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Custom fields**.
+5. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Custom fields**.
 6. On the Action Pane, select **New** to add a new custom field, and specify the following information: 
 
     1. In the **Name** field, enter the name of the custom field.
@@ -81,7 +81,7 @@ You must then complete this step in the POS extension project.
 
 
 7. On the Action Pane, select **Save** to save your changes.
-8. Go to **Retail \> Channel setup \> POS setup \> POS \> Screen layouts**.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Screen layouts**.
 9. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
 
     > [!NOTE]
@@ -97,7 +97,7 @@ You must then complete this step in the POS extension project.
 17. Select **OK** to save your changes and close the **Customization - Totals panel** dialog box.
 18. Select the **Close** button (**X**) in the upper-right corner to close the designer.
 19. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes aren't saved.
-20. Go to **Retail \> Retail IT \> Distribution schedule**.
+20. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 21. Select the **Registers** (**1090**) job, and then select **Run now**.
 
 ## Add business logic to the custom field
@@ -192,7 +192,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
     } }
     ```
 
-    In the manifest, note that the **fieldName** value in the **customFields** section should match the name of the custom field added in the Retail headquarters, the name you specified for the custom field in step 6 of the "Configure Retail headquarters" procedure. **modulePath** is the name of the implementation file, the implementation file name is the name of the file that you created in step 5 of "Add business logic to the custom field" procedure.
+    In the manifest, note that the **fieldName** value in the **customFields** section should match the name of the custom field added in the Headquarters, the name you specified for the custom field in step 6 of the "Configure Headquarters" procedure. **modulePath** is the name of the implementation file, the implementation file name is the name of the file that you created in step 5 of "Add business logic to the custom field" procedure.
     
     If you add multiple custom fields, you should add multiple implementation files and update the information under the custonFileds section.
 
@@ -241,7 +241,7 @@ You can find similar sample code in the Retail software development kit (SDK), a
     ```
 
 13. Compile and rebuild the project.
-14. Deploy the customized version of Retail Modern POS (MPOS) by selecting the **Local Machine** button. Make sure that the solution platform is x86. Alternatively, you can create a Retail deployable package and install MPOS from it.
+14. Deploy the customized version of Retail Modern POS (MPOS) by selecting the **Local Machine** button. Make sure that the solution platform is x86. Alternatively, you can create a deployable package and install MPOS from it.
 
     > [!NOTE]
     > Although MPOS is used in this topic, you can use either MPOS or Cloud POS.

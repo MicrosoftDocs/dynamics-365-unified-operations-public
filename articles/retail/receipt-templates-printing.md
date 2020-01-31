@@ -42,7 +42,7 @@ This article describes how to modify form layouts to control how receipts, invoi
 
 ## Set up a receipt format
 
-1. Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Receipt formats**.
+1. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Receipt formats**.
 2. On the **Receipt format** page, click **New** to create a new form layout, or select an existing form layout.
 3. In the **Receipt format** field, enter an identifier for the form layout, and then select the type of receipt that this layout is used for. You can also enter a description and a short name for the receipt in the **Title** field.
 4. On the **General** FastTab, select an option to define the print behavior:
@@ -56,11 +56,11 @@ This article describes how to modify form layouts to control how receipts, invoi
 
 Use the form layout designer to graphically create the layout of the form document. The **Receipt format designer** page has three sections: **Header**, **Lines**, and **Footer**. Some types of form layouts use elements from all three sections, whereas other types use elements from only one or two sections. To view the elements that are available for each section, click the appropriate button in the navigation pane on the left side of the page.
 
-1. Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Receipt formats**.
+1. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS** &gt; **Receipt formats**.
 2. On the **Receipt format** page, select a form layout, and then click **Designer**.
-3. Click **Run** to start to install the Retail designer host.
+3. Click **Run** to start to install the Commerce designer host.
 4. On the Notification bar that appears at the bottom of the Internet Explorer window, click **Open** to start to install the one-click designer. (The Notification bar might appear in a different location in other browsers.) The progress indicator shows the progress of the installation process.
-5. After the installation is completed, enter your Retail user name and password, and then click **Sign in** to start the designer.
+5. After the installation is completed, enter your Commerce user name and password, and then click **Sign in** to start the designer.
 6. After your credentials are validated and the designer starts, you can start to design the receipt format or modify an existing format.
 7. To create the elements of the form, select the **Header**, **Lines**, or **Footer** section, and then drag an element from that section to the workspace. Most elements contain variables that are automatically populated with data from the database. Other elements, such as **Text**, let you print custom text on the receipt.
 
@@ -82,7 +82,7 @@ Use the form layout designer to graphically create the layout of the form docume
 
 Receipt profiles are assigned directly to printers through the hardware profile.
 
-1. Open the hardware profile by clicking **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profile**.
+1. Open the hardware profile by clicking **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profile**.
 2. Select the printer, and then, in the **Receipt profile** field, assign the receipt profile to use on the register.
 
 > [!NOTE]

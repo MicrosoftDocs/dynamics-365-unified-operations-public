@@ -50,7 +50,7 @@ You must complete the following configuration to use this functionality:
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Add a customer search criterion.
-- Configure retail channel components.
+- Configure channel components.
 
 ### Set up a registration type for the lottery code
 
@@ -98,11 +98,11 @@ In the Receipt format designer, add the custom fields to the appropriate receipt
 
 You can add a customer search criterion so that customers can be searched for in POS by their fiscal codes.
 
-On the **Retail parameters** page, on the **POS search criteria** tab, add a new customer search criterion. In the **Customer search criteria** field, select **Tax registration number**. Select the **Display as shortcut** check box, but leave the **Can be refined** check box cleared. Then, on the **Distribution schedules** page, run the **1110** job.
+On the **Commerce parameters** page, on the **POS search criteria** tab, add a new customer search criterion. In the **Customer search criteria** field, select **Tax registration number**. Select the **Display as shortcut** check box, but leave the **Can be refined** check box cleared. Then, on the **Distribution schedules** page, run the **1110** job.
 
-### Configure retail channel components
+### Configure channel components
 
-To make the functionality that is specific to Italy available, you must configure extensions for retail channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
+To make the functionality that is specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
 
 ## Example scenarios
 
@@ -149,10 +149,10 @@ The following example scenarios show how to work with customer information in PO
 
 ## Deployment guidelines
 
-This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Commerce for Italy.
+This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
 > [!NOTE]
-> Some steps in these procedures vary, depending on the version of Retail that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
+> Some steps in these procedures vary, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
 >
 > If you want to enable the integration of POS with fiscal printers for Italy, and specifically if you want to print customer lottery codes on fiscal receipts, you must deploy the [fiscal printer integration sample for Italy](emea-ita-fpi-sample.md).
 
@@ -183,7 +183,7 @@ Follow these steps to update a development environment.
 
 1. Find the extension configuration file for the Commerce runtime (CRT):
 
-    - **Retail Server:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail server site location.
+    - **Commerce Scale Unit:** Find the **CommerceRuntime.Ext.config** file in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Find the **CommerceRuntime.MPOSOffline.Ext.config** file under the local CRT client broker location.
 
 1. Register the CRT extension in the extension configuration file.
@@ -237,7 +237,7 @@ Follow these steps to make the TaxRegistrationId.IT extension available.
 
 ### Update a production environment
 
-Follow these steps to create deployable packages that contain Retail components, and to apply the packages in a production environment.
+Follow these steps to create deployable packages that contain Commerce components, and to apply the packages in a production environment.
 
 1. In the **CommerceRuntime.Ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.
 

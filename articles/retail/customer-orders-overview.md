@@ -37,7 +37,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 
-In an omni-channel retail world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
+In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
 - A customer wants products to be delivered to a specific address on a specific date.
 - A customer wants to pick up products from a store or location that differs from the store or location where the customer purchased those products.
@@ -47,7 +47,7 @@ Retailers also use customer orders to minimize lost sales that stock outages mig
 
 ## Set up customer orders
 
-Here are some of the parameters that can be set on the **Retail parameters** page to define how customer orders are fulfilled:
+Here are some of the parameters that can be set on the **Commerce parameters** page to define how customer orders are fulfilled:
 
 - **Default deposit percentage** – Specify the amount that the customer must pay as a deposit before an order can be confirmed. The default deposit amount is calculated as a percentage of the order value. Depending on privileges, a store associate might be able to override the amount by using **Deposit override**.
 - **Cancellation charge percentage** – If a charge will be applied when a customer order is canceled, specify the amount of that charge.
@@ -56,7 +56,7 @@ Here are some of the parameters that can be set on the **Retail parameters** pag
 - **Refund shipping charges** – Specify whether shipping charges that are associated with a customer order are refundable.
 - **Maximum amount without approval** – If shipping charges are refundable, specify the maximum amount of shipping charge refunds across return orders. If this amount is exceeded, manager override is required in order to continue with the refund. To accommodate the following scenarios, a refund of shipping charges can exceed the amount that was originally paid:
 
-    - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all retail customers.
+    - Charges are applied at the level of the sales order header, and when some quantity of a product line is returned, the maximum refund of shipping charges that is allowed for the products and the quantity can't be determined in way that works for all customers.
     - Shipping charges are incurred for every instance of shipping. If a customer returns products multiple times, and the retailer's policy specifies that the retailer will bear the cost of return shipping charges, the return shipping charges will be more than the actual shipping charges.
 
 ## Transaction flow for customer orders
@@ -98,10 +98,10 @@ Customer orders can be created from the point of sale (POS) client in either syn
 
 ### Enable customer orders to be created in asynchronous mode
 
-1. Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profile** &gt; **Functionality profiles**.
+1. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profile** &gt; **Functionality profiles**.
 2. On the **General** FastTab, set the **Create customer order in async mode** option to **Yes**.
 
-When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Retail by Pull (P) jobs. The corresponding sales orders are created in Retail when **Synchronize orders** is run either manually or through a batch process.
+When the **Create customer order in async mode** option is set to **Yes**, customer orders are always created in asynchronous mode, even if Retail Transaction Service (RTS) is available. If you set this option to **No**, customer orders are always created in synchronous mode by using RTS. When customer orders are created in asynchronous mode, they are pulled and inserted into Commerce by Pull (P) jobs. The corresponding sales orders are created when **Synchronize orders** is run either manually or through a batch process.
 
 ## Additional resources
 

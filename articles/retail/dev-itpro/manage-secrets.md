@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to manage secrets when you're using an extension with retail channels that require access to secrets.
+This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
 
 ## Key Vault setup
 
@@ -58,13 +58,13 @@ To consume the secret in the extension, add the following request and response.
 
 | Request/response                               | Parameters                   | Description |
 |------------------------------------------------|------------------------------|-------------|
-| GetUserDefinedSecretStringValueServiceRequest  | string **secretName**        | The request class that is used to get user-defined secrets from Retail headquarters. |
-| GetUserDefinedSecretStringValueServiceResponse | string **SecretStringValue** | The response class that is used to get user-defined secrets from Retail headquarters. The response returns a **SecretStringValue** value, and extensions can type-cast this value to **X509Certificate2** or use it as string value. |
+| GetUserDefinedSecretStringValueServiceRequest  | string **secretName**        | The request class that is used to get user-defined secrets from Headquarters. |
+| GetUserDefinedSecretStringValueServiceResponse | string **SecretStringValue** | The response class that is used to get user-defined secrets from Headquarters. The response returns a **SecretStringValue** value, and extensions can type-cast this value to **X509Certificate2** or use it as string value. |
 
 To read the secret in the CRT extension, follow these steps.
 
 1. Create a new CRT extension project (C\# class library project type). Use the sample templates from the Retail software development kit (SDK) (**RetailSDK\\SampleExtensions\\CommerceRuntime**).
-2. In the CRT extension, you can create a new request/response, or you can add a pre-trigger or post-trigger for the existing CRT request, and then call it. In the following example, a trigger was added for **SaveCartRequest**. It calls **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key that is configured in Retail headquarters. You don't have to write custom code to read the secret from Retail headquarters. You can use the request and response to read the value.
+2. In the CRT extension, you can create a new request/response, or you can add a pre-trigger or post-trigger for the existing CRT request, and then call it. In the following example, a trigger was added for **SaveCartRequest**. It calls **GetUserDefinedSecretStringValueServiceRequest** to read the secret by passing the secret key that is configured in Headquarters. You don't have to write custom code to read the secret from Headquarters. You can use the request and response to read the value.
 
     ```csharp
     public class CustomSaveCartTrigger : IRequestTrigger

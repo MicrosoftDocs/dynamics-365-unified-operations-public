@@ -39,7 +39,7 @@ It's a common practice among retailers to release private, branded credit cards.
 
 Alternatively, retailers who don't provide branded credit cards might want to encourage customers to pay by using other tender types, such as cash, gift cards, or loyalty points. In this way, they can help reduce the expense of credit card processing fees. Therefore, retailers might provide discounts to customers who use these alternative tender types.
 
-In Microsoft Dynamics 365 Commerce, retailers can configure a discount percentage that is applied to qualified lines if the customer pays by using the preferred tender type. The customer can decide whether to do a partial payment or a full payment, and Retail determines the appropriate discount amount. Note that the discount is always given on the pre-tax amount of the qualified items.
+In Microsoft Dynamics 365 Commerce, retailers can configure a discount percentage that is applied to qualified lines if the customer pays by using the preferred tender type. The customer can decide whether to do a partial payment or a full payment, and Commerce determines the appropriate discount amount. Note that the discount is always given on the pre-tax amount of the qualified items.
 
 Tender-based discounts don't compete with item-based discounts, such as periodic or manual discounts. They are always compounded over the item discounts. Therefore, even if an exclusive periodic discount is applied to an item, the tender-based discount is still applied on top of the exclusive periodic discount. Likewise, if a threshold discount is applied to the transaction, and the tender-based discount reduces the total below the threshold, the threshold discount is still applied to the transaction.
 
@@ -52,7 +52,7 @@ Even though tender-based discounts reduce the subtotal of the transaction, autom
 Tender-based discounts can be applied only to sales lines where the prices aren't locked. If new sales lines are added to an order, the tender-based discount is applied to the new sales lines only during payment. While a customer order for pickup or shipment is being placed, the tender-based discount is applied only to the deposit amount. After the order is placed, during fulfillment, the prices of the sales lines are locked. Therefore, no tender-based discount is applied to any balance that is paid during pickup or authorized during shipment. The tender-based discount can be applied to the whole amount of a customer order only if the retailer collects the whole amount as a deposit while the order is being placed.
 
 > [!IMPORTANT]
-> In Retail, tender-based discounts are currently limited to two payment types: credit cards and cash.
+> In Commerce, tender-based discounts are currently limited to two payment types: credit cards and cash.
 
 ## POS user experience
 
@@ -72,7 +72,7 @@ When the user selects **Complete** during a call center order, the **Totals** sc
 
 ## Exclude items from discounts
 
-Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Retail so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Retail still applies the tender-based discount. To set up Retail in this manner, retailers must go to **Product information management > Products > Released products**, select the item, and then, on the **Retail** FastTab, set the **Prevent all discounts** and **Prevent tender based discounts** options to **No**, and the **Prevent retail discounts** and **Prevent manual discounts** options to **Yes**.
+Retailers often choose to exclude some products, such as new items or in-demand items, from discounts. However, they might still want to apply tender-based discounts. For example, a retailer configures Commerce so that it doesn't allow item-based discounts or manual discounts. However, if the customer pays by using the preferred tender, Commerce still applies the tender-based discount. To set up Commerce in this manner, retailers must go to **Product information management > Products > Released products**, select the item, and then, on the **Commerce** FastTab, set the **Prevent all discounts** and **Prevent tender based discounts** options to **No**, and the **Prevent discounts** and **Prevent manual discounts** options to **Yes**.
 
 > [!NOTE]
 > When the **Prevent all discounts** configuration is set to **Yes**, no discounts will be applied to the product. Not even tender-based discounts will be applied.

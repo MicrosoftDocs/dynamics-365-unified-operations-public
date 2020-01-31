@@ -36,9 +36,9 @@ ms.dyn365.ops.version: 10.0
 
 Returns can be made across multiple orders and invoices. 
 
-## Configure Retail to support returns across multiple customer order and invoices
+## Configure Commerce to support returns across multiple customer order and invoices
 
-1. Go to **Retail parameters \> Customer orders**.
+1. Go to **Commerce parameters \> Customer orders**.
 1. Turn on the **Enable returns for multiple orders** parameter. 
 
 ## Process returns

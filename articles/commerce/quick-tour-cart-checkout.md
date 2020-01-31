@@ -68,7 +68,7 @@ The main body of the checkout page is where all the order information is collect
 
 ### Shipping address
 
-A shipping address is required if items must be shipped. The format of shipping addresses for each locale can be configured in Commerce. For example, if the items will be shipped to the United States, the shipping address must include a street address, state, and ZIP Code. Some basic input validation is done for shipping address fields, such as validation for alphanumeric characters, maximum length, and numbers. Although the validity of the address itself isn't verified, this verification can be done by using customized third-party services.
+A shipping address is required if items must be shipped. The format of shipping addresses for each locale can be configured in Dynamics 365 Commerce. For example, if the items will be shipped to the United States, the shipping address must include a street address, state, and ZIP Code. Some basic input validation is done for shipping address fields, such as validation for alphanumeric characters, maximum length, and numbers. Although the validity of the address itself isn't verified, this verification can be done by using customized third-party services.
 
 The shipping address is applied to all items in the cart that the "ship" option is selected for. If you use the checkout flow that is provided in the online starter kit, individual cart items can't be shipped to different addresses. If you require this capability, it can be implemented through customization of the checkout modules.
 

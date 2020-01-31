@@ -90,7 +90,7 @@ You can "stop" released products for the sales process by turning on a setting i
 
 ### Blocked products
 
-In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Retail** tab of a released product. Blocked products are still assorted, but you will receive a message in the POS that states that the product can't be sold.
+In addition to stopping sales of a product, you can temporarily block sales of a product. You can configure this setting on the **Commerce** tab of a released product. Blocked products are still assorted, but you will receive a message in the POS that states that the product can't be sold.
 
 ### Date effectivity
 
@@ -105,7 +105,7 @@ Assortments that are defined in Commerce must be processed before they take effe
 
 ## Implementation considerations
 
-Consider the following implementation requirements as you plan and manage assortments for your retail implementation:
+Consider the following implementation requirements as you plan and manage assortments for your Commerce implementation:
 
 - **Data replication and database size** – Although assortments help serve the business need to manage product availability, they are also an important tool for managing the size of channel and offline databases. Well-managed assortments help reduce the amount of data that must be processed and replicated to channel and offline databases. They also help reduce the number of records that must be persisted. Fewer records in these databases will increase performance when you add items to a transaction, search, and browse for products.
 - **Date-effective/expiring assortments** – One of the most effective tools for managing the number of products in channel and offline databases is the date effectivity of assortments. If you leave open-ended (non-expiring) assortments for seasonal products or products that are at the end of their life, these databases will grow indefinitely. You can use various approaches to help manage this situation. For example, you can maintain separate assortments for seasonal products and products that are always available.

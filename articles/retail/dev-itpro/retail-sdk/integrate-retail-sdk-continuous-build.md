@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](../../includes/banner.md)]
 
 
-This topic describes the steps for merging the build systems for Dynamics 365 Commerce and Dynamics 365 Finance. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Retail SDK is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Finance and Retail components. This topic outlines the manual steps for merging both build systems using Azure DevOps. 
+This topic describes the steps for merging the build systems for Dynamics 365 Commerce and Dynamics 365 Finance. The Lifecycle Services (LCS)-integrated build experience supports both code upgrades and new projects. The Commerce software development kit (SDK) is a self-contained MSBuild-based build system. Many customizers want to make productive changes in both Microsoft Commerce and Finance components. This topic outlines the manual steps for merging both build systems using Azure DevOps. 
 
 
 ## Enable the build system
@@ -44,7 +44,7 @@ To get started, you must follow all the steps to get a full continuous build sys
 
 ### Getting the Retail SDK
 
-If you don't already have the Retail software development kit (SDK) in the same Microsoft Azure DevOps project, add it now. You will find the Retail SDK in any developer or build topology. Follow the branching documentation in [Retail software development kit (SDK) architecture](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your Retail SDK customization branch at this time. After your Retail SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Retail, you can start.
+If you don't already have the Retail SDK in the same Microsoft Azure DevOps project, add it now. You will find the SDK in any developer or build topology. Follow the branching documentation in [Retail software development kit (SDK) architecture](retail-sdk-overview.md). We recommend that you create your Retail SDK mirror and your SDK customization branch at this time. After your SDK customization branch is ready, and it has been submitted in the same Azure DevOps project as Commerce, you can start.
 
 ## Install NuGet.exe 
 
@@ -67,13 +67,13 @@ Add a new step at the beginning of the build pipeline, as shown in the following
 
 [![Adding a new build step to build the Retail SDK](./media/new-build-step-1024x527.png)](./media/new-build-step.png)
 
-## Add a copy step for binaries from the Retail SDK to the Retail build
+## Add a copy step for binaries from the Retail SDK to the Commerce build
 
-This build step enables Microsoft to copy the latest built Retail binaries to the Retail bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.
+This build step enables Microsoft to copy the latest built Commerce binaries to the Commerce bin folder, if Microsoft shares files/binaries. Make sure that you complete this step immediately after you add a build step for the Retail SDK, as described in the previous section.
 
-[![Adding a copy step for binaries from the Retail SDK to the Retail build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
+[![Adding a copy step for binaries from the Retail SDK to the Commerce build](./media/binary-drop-to-ax.png)](./media/binary-drop-to-ax.png)
 
-## Add a copy step for all Retail packages
+## Add a copy step for all Commerce packages
 
 Make sure that this step occurs after the "PowerShell: Generate packages" step (see image below). Here are the arguments.
 
@@ -81,12 +81,12 @@ Make sure that this step occurs after the "PowerShell: Generate packages" step (
 -BuildPackagePath "$(Agent.BuildDirectory)\Packages" -BuildVersion "$(Build.BuildNumber)"
 ```
 
-[![Adding a copy step for all Retail packages](./media/package-drop-1024x473.png)](./media/package-drop.png)
+[![Adding a copy step for all Commerce packages](./media/package-drop-1024x473.png)](./media/package-drop.png)
 
-## Optional: Referencing a Retail DLL from Retail
+## Optional: Referencing a Commerce DLL
 
 You must complete this task only if you must add built Retail binaries to the Retail package. In this case, you must follow these three steps:
 
-1. Use a normal AXReference in your Retail project.
+1. Use a normal AXReference in your Commerce project.
 2. Add the corresponding AXReference folder and the XML file inside it to Azure DevOps.
 3. Update the Copy-RetailBinaries.ps1 file with the appropriate file commands to get the binary file from the Retail SDK to the Retail bin folder. The Microsoft Windows PowerShell file includes a sample that copies the PricingEngine.dll file into the ApplicationSuite bin folder. Depending on the modules that you're building, the files and folders must be changed so that they are in a different location.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Phased Rollout (N-1) installation, configuration, and cutover guide
-description: This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components can work with Microsoft Dynamics 365 Retail headquarters.
+description: This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components can work with Microsoft Dynamics 365 Commerce Headquarters.
 author: jashanno
 manager: AnnBe
 ms.date: 07/31/2018
@@ -33,21 +33,21 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Retail Server, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Retail headquarters.
+This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Commerce Scale Unit, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Commerce Headquarters.
 
 ## Key terms
 | Term | Description |
 |---|---|
-| N-1 Async Server Connector Service | A component that is used to synchronize data packages between Retail headquarters and the AX 2012 R3 channel components. |
-| N-1 Real-time Service | A component that supports real-time calls from the AX 2012 R3 channel components to Retail headquarters. |
+| N-1 Async Server Connector Service | A component that is used to synchronize data packages between Headquarters and the AX 2012 R3 channel components. |
+| N-1 Real-time Service | A component that supports real-time calls from the AX 2012 R3 channel components to Headquarters. |
 
 ## Overview
-The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Retail headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
+The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
-- **[Set up Azure AD accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Azure Active Directory (Azure AD) accounts that the N-1 components use to connect to Retail headquarters.
-- **[Configure N-1 components](#configure-n-1-components)** – This section explains how to configure the N-1 components in Retail headquarters.
+- **[Set up Azure AD accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Azure Active Directory (Azure AD) accounts that the N-1 components use to connect to Headquarters.
+- **[Configure N-1 components](#configure-n-1-components)** – This section explains how to configure the N-1 components in Headquarters.
 - **[Install N-1 components](#install-n-1-components)** – This section explains how to download and install N-1 components in the existing AX 2012 R3 environment.
-- **[Cutover steps to switch to N-1](#cutover-steps-to-switch-to-n-1)** – This section explains the how to use the new N-1 components to cut an existing AX 2012 R3 environment over from the AX 2012 R3 headquarters to the Dynamics 365 Retail headquarters.
+- **[Cutover steps to switch to N-1](#cutover-steps-to-switch-to-n-1)** – This section explains the how to use the new N-1 components to cut an existing AX 2012 R3 environment over from the AX 2012 R3 headquarters to the Dynamics 365 Headquarters.
 - **[Troubleshooting steps](#troubleshooting-steps)** – This section describes troubleshooting steps for typical issues.
 - **[Required KBs for N-1](#required-kbs-for-n-1)** – This section lists the Microsoft Knowledge Base articles (KBs) that are required in order to set up an N-1 environment.
 
@@ -57,10 +57,10 @@ The following illustration shows a high-level overview of the N-1 setup.
 ![Phased Rollout (N-1) architecture](media/CDX/N-1/Overview.jpg)
 
 ## Verify that the N-1 license key is turned on
-Before you start to configure and install the N-1 components, make sure that the corresponding license key is turned on. This license key is automatically turned on during an upgrade from AX 2012 R3 to Microsoft Dynamics 365 Retail. However, because the steps that follow require this key, you should verify that it's turned on before you continue.
+Before you start to configure and install the N-1 components, make sure that the corresponding license key is turned on. This license key is automatically turned on during an upgrade from AX 2012 R3 to Microsoft Dynamics 365 Commerce. However, because the steps that follow require this key, you should verify that it's turned on before you continue.
 
-1. Sign in to Retail headquarters, and go to **System administration \> Setup \> License configuration**.
-2. On the **Configuration keys** tab, expand the **Retail** key, expand the **Retail scheduler** key, and verify that the check box for the **Retail Data Commerce Exchange backward compatibility** key is selected.
+1. Sign in to Commerce Headquarters, and go to **System administration \> Setup \> License configuration**.
+2. On the **Configuration keys** tab, expand the **Commerce** key, expand the **Commerce scheduler** key, and verify that the check box for the **Retail Data Commerce Exchange backward compatibility** key is selected.
 
     > [!NOTE]
     > If the key isn't turned on, contact Microsoft Support for help turning it on.
@@ -70,13 +70,13 @@ Before you start to configure and install the N-1 components, make sure that the
 > To help maintain a high level of security across the company, we strongly recommend that you create a new client ID and secret for this installation. This step requires a new Web App.
 
 1. Generate an Azure Web App to create a client ID and secret for Connector for Microsoft Dynamics AX. For instructions, see the "Create an Azure Active Directory application" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
-2. After you've finished creating the client ID and secret, the client ID must be accepted in Retail. Go to **System administration \> Setup \> Azure Active Directory applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+2. After you've finished creating the client ID and secret, the client ID must be accepted in Commerce. Go to **System administration \> Setup \> Azure Active Directory applications**. Enter the client ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
 ## Configure N-1 components
-Follow the steps in this section to configure the N-1 components in Retail headquarters.
+Follow the steps in this section to configure the N-1 components in Headquarters.
 
 ### Connector for Microsoft Dynamics AX
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Connector for Microsoft Dynamics AX**.
+1. Sign in to Commerce Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
 2. On the Action Pane, select **New**, and set the following fields.
 
     | Section | Field | Description | Sample value |
@@ -93,8 +93,8 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 
 3. When you've finished, select **Save**.
 
-### Retail shared parameters
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**.
+### Commerce shared parameters
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 2. On the **Security** tab, set the following fields.
 
     | Field | Description | Sample value |
@@ -103,8 +103,8 @@ Follow the steps in this section to configure the N-1 components in Retail headq
     | TS password encryption name | Enter the algorithm that is used to connect to the transaction service. You should set this field to **SHA256**. | SHA256 | 
     | Legacy device algorithm | Enter the AX 2012 R3 device algorithm. | AES |
 
-### Retail scheduler parameters
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Parameters \> Retail scheduler parameters**.
+### Commerce scheduler parameters
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**.
 2. On the **HQ Message Database** FastTab, set the following fields.
 
     | Field | Description | Sample value |
@@ -119,7 +119,7 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 > [!NOTE]
 > The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct. These values must be manually entered for environments that haven't been upgraded from AX 2012 R3.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Working folders**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Working folders**.
 2. Make sure that the following field values are set in the grid.
 
     | Field | Description | Sample Value |
@@ -135,14 +135,14 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 > [!NOTE]
 > The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct. These values must be manually entered for environments that haven't been upgraded from AX 2012 R3.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Channel database group**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**.
 2. For each physical channel database in the AX 2012 R3 environment, on the Action Pane, select **New**, and set the following fields.
 
     | Section | Field | Description | Sample value |
     |---|---|---|---|
     | Header | Name | Enter the name of the channel database group that is used for the AX 2012 R3 environment. | Default\_AX63 |
     | Header | Description | Enter a description of the channel database group that is used for the AX 2012 R3 channel environment. | Default group for AX63 channel database |
-    | **General** FastTab | Retail channel schema | Select the AX 2012 R3 schema. This field must be set to **AX2012R3**. | AX2012R3 |
+    | **General** FastTab | Channel schema | Select the AX 2012 R3 schema. This field must be set to **AX2012R3**. | AX2012R3 |
     | **General** FastTab | Working folders | Select the reference to the working folders record that is used for the synchronization of CDX data packages. You created this working folders record in the previous section. | workingfolder |
 
 3. When you've finished, select **Save**.
@@ -151,7 +151,7 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 > [!NOTE]
 > The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct. These values must be manually entered for environments that haven't been upgraded from AX 2012 R3.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Channel database**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 2. For each physical channel database in the AX 2012 R3 environment, on the Action Pane, select **New**, and set the following fields.
 
     | Section | Field | Description | Sample value |
@@ -164,7 +164,7 @@ Follow the steps in this section to configure the N-1 components in Retail headq
     | Header | Password | Enter the password to use to connect to the AX 2012 R3 channel database. | *passphrase* |
     | Header | Database name | Enter the name of the AX 2012 R3 channel database. | SampleChannelDB |
     | Header | Server name | Enter the name of the server that hosts the AX 2012 R3 channel database. | sampleserver |
-    | **Retail channel** FastTab | Channel | Select **Add** to add the list of retail channels for Phased Rollout (N-1) that are mapped to the channel database. The values should be derived from the AX 2012 R3 environment. | London |
+    | **Channel** FastTab | Channel | Select **Add** to add the list of channels for Phased Rollout (N-1) that are mapped to the channel database. The values should be derived from the AX 2012 R3 environment. | London |
 
 3. When you've finished, select **Save**.
 
@@ -175,7 +175,7 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 > [!NOTE]
 > The field values that are described here are the default values that are automatically set when environments are upgraded from AX 2012 R3. However, you should verify that they are correct. These values must be manually entered for environments that haven't been upgraded from AX 2012 R3.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Channels \> Retail stores \> All retail stores**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 2. For each Retail Server that is hosted in the N-1 environment, on the Action Pane, select **New**, and set the following fields.
 
     | Section | Field | Description | Sample value |
@@ -188,12 +188,12 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 
 3. When you've finished, select **Save**.
 
-### All retail stores
+### All stores
 > [!NOTE]
-> The field values that are described will be set if the Retail headquarters environment was upgraded from the AX 2012 R3 headquarters.
+> The field values that are described will be set if the Headquarters environment was upgraded from the AX 2012 R3 headquarters.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Channels \> Retail stores \> All retail stores**.
-2. For each store that is mapped to the N-1 environment, select the retail channel ID. Then, on the store details page, on the **General** FastTab, set the following fields.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Channels \> Stores \> All stores**.
+2. For each store that is mapped to the N-1 environment, select the channel ID. Then, on the store details page, on the **General** FastTab, set the following fields.
 
     | Field | Description | Sample value |
     |---|---|---|
@@ -202,23 +202,23 @@ Follow the steps in this section to configure the N-1 components in Retail headq
 
 3. When you've finished, select **Save**.
 
-### Initialize the AX 2012 retail scheduler
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Initialize AX 2012 retail scheduler**.
+### Initialize the AX 2012 scheduler
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize AX 2012 retail scheduler**.
 2. Select **OK**.
 
 ### Distribution schedule
 > [!NOTE]
-> The field values that are described will be set if the Retail headquarters environment was upgraded from the AX 2012 R3 headquarters.
+> The field values that are described will be set if the Headquarters environment was upgraded from the AX 2012 R3 headquarters.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Retail IT \> Distribution schedule**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.
 2. In the left pane, select each distribution schedule that has the suffix **AX63**. Then, on the **Channel database groups** FastTab, make sure that the entries that you created earlier are mapped to the distribution schedule.
 
 ### Workers
 > [!NOTE]
-> The field values that are described will be set if the Retail headquarters environment was upgraded from the AX 2012 R3 headquarters.
+> The field values that are described will be set if the Headquarters environment was upgraded from the AX 2012 R3 headquarters.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Employees \> Workers**.
-2. Select the name of each worker who will sign in to the AX 2012 R3 environment. Then, on the worker details page, on the **Retail** tab, on the **Retail** FastTab, set the **Password** field.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Employees \> Workers**.
+2. Select the name of each worker who will sign in to the AX 2012 R3 environment. Then, on the worker details page, on the **Commerce** tab, on the **Commerce** FastTab, set the **Password** field.
 
 ## Install N-1 components
 Before you run the Connector for Microsoft Dynamics AX installers, make sure that the following requirements are met:
@@ -240,12 +240,12 @@ If a system restart is required, the installer shows this requirement. Although 
 
 When you're ready, follow these steps to download and install the component.
 
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Connector for Microsoft Dynamics AX**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
 2. Select the connector that you created earlier.
 3. On the Action Pane, on the **Download** tab, select **Async Server Connector service** to download the installer file, and then select **Configuration file** below **Async Server Connector service** to download the corresponding configuration file. Make sure that the configuration file is saved next to the installer file.
 4. After the installer and configuration files are downloaded, double-click the installer file, and follow these steps:
 
-    1. Verify the Application Object Server (AOS) URL (the URL that is used to access Retail headquarters), and then select **Next**.
+    1. Verify the Application Object Server (AOS) URL (the URL that is used to access Headquarters), and then select **Next**.
     2. If a specific user is required, enter the user name and password that the service should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select **Next** to continue.
     3. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation.
     4. Select **Install**.
@@ -254,19 +254,19 @@ When you're ready, follow these steps to download and install the component.
     > - For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).
     > - When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
-5. After an application ID (client ID) and secret are created, the application ID must be accepted in Retail. Go to **Retail \> Headquarters setup \> Azure Active Directory applications**. Enter the application ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
-6. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**.
+5. After an application ID (client ID) and secret are created, the application ID must be accepted in Commerce. Go to **Retail and Commerce \> Headquarters setup \> Azure Active Directory applications**. Enter the application ID in the **Client Id** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
+6. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
 7. On the **Identity Providers** tab, select the provider that has an **Issuer** value that begins with `HTTPS://sts.windows.net/`. The values on the **Relying parties** FastTab are automatically set, based on your selection.
 8. On the **Relying parties** FastTab, select **Add**. Enter the application ID (client ID) that was created for this installation. Set the **Type** field to **Public** and the **UserType** field to **Worker**. Then, on the Action Pane, select **Save**.
 9. On the Action Pane, select **Save**.
 
 ### N-1 Real-time service
-1. Sign in to Retail headquarters, and go to **Retail \> Headquarters setup \> Retail scheduler \> Connector for Microsoft Dynamics AX**.
+1. Sign in to Headquarters, and go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
 2. Select the connector that you created earlier.
 3. On the Action Pane, on the **Download** tab, select **Real-time service for Dynamics AX 2012 R3** to download the installer file, and then select **Configuration file** below **Real-time service for Dynamics AX 2012 R3** to download the corresponding configuration file. Make sure that the configuration file is saved next to the setup file.
 3. After the installer and configuration files are downloaded, double-click the installer file, and follow these steps:
 
-    1. Verify the AOS URL (the URL that is used to access Retail headquarters), and then select **Next**.
+    1. Verify the AOS URL (the URL that is used to access Headquarters), and then select **Next**.
     2. Select a valid SSL certificate to use for HTTPS communication, and then select **Next**.
 
         The certificate must use private key storage, and server authentication must be listed in the enhanced key usage property. Additionally, the certificate must be trusted locally, and it can't be expired. It must be stored in the personal certificate store location on the local computer.
@@ -274,24 +274,24 @@ When you're ready, follow these steps to download and install the component.
     3. If a specific user is required, enter the user name and password that the application pool should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select **Next** to continue.
     4. Verify the HTTPS port that should be used, and verify that the host name of the computer is correct. Select **Next** to continue.
 
-        The HTTPS port is listed in the Store system profile. To access the Store system profile, on the **Retail store details** page, on the **Store systems** FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the fully qualified domain name (FQDN) of the system, and it must match the value that you entered on the **Connector for Microsoft Dynamics AX** page earlier in this topic.
+        The HTTPS port is listed in the Store system profile. To access the Store system profile, on the **Store details** page, on the **Store systems** FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If, for any reason, the host name must be changed for the installation, change it here. The host name must be the fully qualified domain name (FQDN) of the system, and it must match the value that you entered on the **Connector for Microsoft Dynamics AX** page earlier in this topic.
 
     5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select **Install**.
 
         This application ID and secret can be the same application ID and secret that you used in the Async Server Connector service installation. For information about how to correctly generate an Azure Web App to create a client ID and secret, see the "Basics of Registering an Application in Azure AD" section in [Create an Azure Active Directory Application](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal). When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and secret that are created are important.
 
 ## Cutover steps to switch to N-1
-This section gives the recommended step-by-step instructions to switch an existing AX 2012 R3 channel environment from the AX 2012 R3 headquarters to the Dynamics 365 Retail headquarters. Note that these instructions are generic. Different implementations will likely have to deviate from these steps to accommodate specific business or technical requirements.
+This section gives the recommended step-by-step instructions to switch an existing AX 2012 R3 channel environment from the AX 2012 R3 headquarters to the Commerce Headquarters. Note that these instructions are generic. Different implementations will likely have to deviate from these steps to accommodate specific business or technical requirements.
 
 ### Prerequisites
 Follow these steps to prepare your environment for the cutover.
 
 | Step | Details | Timeline |
 |---|---|---|
-| 1. Deploy Retail headquarters. | Retail headquarters is up and running. Microsoft Dynamics 365 Retail Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
-| 2. Install the Microsoft Dynamics 365 Retail application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
-| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Retail headquarters. | Weeks or months before the cutover |
-| 4. Configure Retail headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
+| 1. Deploy Headquarters. | Headquarters is up and running. Cloud POS (CPOS) can be used to validate functionality in the environment. | Weeks or months before the cutover |
+| 2. Install the Commerce application (X++) KBs. | Install the KBs that are listed in the [Required KBs for N-1](#required-kbs-for-n-1) section to make sure all issues that are related to N-1 are addressed. | Weeks or months before the cutover |
+| 3. Set up Azure AD accounts. | Follow the instructions in the [Set up Azure AD accounts](#set-up-azure-ad-accounts) section to create the accounts that are required for the N-1 components to authenticate against Headquarters. | Weeks or months before the cutover |
+| 4. Configure Headquarters. | Follow the instructions in the [Configure N-1 components](#configure-n-1-components) section to configure all the settings for the N-1 components before they are installed. | Weeks or months before the cutover |
 | 5. Install the N-1 components. | Follow the instructions in the [Install N-1 components](#install-n-1-components) section to install the N-1 components. Note that the N-1 Async Server Connector Service component should be installed but immediately disabled to help guarantee that AX 2012 R3 and Dynamics 365 CDX packages aren't mixed. | Weeks or months before the cutover |
 
 ### Preparation
@@ -300,7 +300,7 @@ Follow these steps to prepare a few days before the cutover is scheduled.
 | Step | Details | Timeline | How to validate that this step is done |
 |---|---|---|---|
 | 1. Stop all AX 2012 R3 download jobs. | Make sure that all AX 2012 R3 download jobs are stopped in the AX 2012 R3 headquarters. | At least a couple days before the cutover | All packages in the AX 2012 R3 network share for upload jobs are processed, and no new packages appear. |
-| 2. Do a full synchronization of all **AX63** CDX download jobs in Retail headquarters. | Run the CDX download jobs to make sure that the packages are generated and dropped in the Azure Blob storage blob, so that the N-1 Async Server Connector Service can consume them during cutover. | At least a couple days before the cutover | CDX download jobs are in the **Available** state on the **Download Sessions** page in Retail headquarters. |
+| 2. Do a full synchronization of all **AX63** CDX download jobs in Headquarters. | Run the CDX download jobs to make sure that the packages are generated and dropped in the Azure Blob storage blob, so that the N-1 Async Server Connector Service can consume them during cutover. | At least a couple days before the cutover | CDX download jobs are in the **Available** state on the **Download Sessions** page in Headquarters. |
 
 ### Cutover steps
 Follow these steps to do the actual cutover.
@@ -312,10 +312,10 @@ Follow these steps to do the actual cutover.
 | 3. Synchronize all transactional data. | Make sure that all transactional data is synchronized through the CDX upload jobs to the AX 2012 R3 headquarters. | After the previous step | All packages in the AX 2012 R3 network share for upload jobs are processed, and no new packages appear. |
 | 4. Disable AX 2012 R3 CDX upload jobs. | Make sure that all AX 2012 R3 upload jobs are disabled, so that packages are no longer being picked up. | After the previous step | Manually validate through the AX 2012 R3 headquarters UI that the CDX upload jobs are disabled. |
 | 5. Shut down the AX 2012 R3 Real-time Service. | Connect to the server that hosts the AX 2012 R3 Real-time Service, start IIS, right-click the AX 2012 R3 Real-time Service, and stop the service. | After the previous step | Manually validate in IIS that the service is stopped. |
-| 6. Run the **Reset metadata synchronization** command in Retail headquarters. | In Microsoft Dynamics AX, go to **Retail \> Headquarters setup \> Retail scheduler \> Connector for Microsoft Dynamics AX**, and select **Reset metadata synchronization** to reset the **HQMessageDB** database in the AX 2012 R3 environment for N-1 cutover. | After the previous step | Not applicable |
-| 7. Turn on the N-1 Async Server Connector Service. | Connect to the server that hosts the N-1 Async Server Connector Service, and enable the Microsoft Windows service. | After the previous step | The status of download jobs on the **Download Sessions** page in Retail headquarters changes from **Available** to **Applied**. |
+| 6. Run the **Reset metadata synchronization** command in Headquarters. | In Microsoft Dynamics AX, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**, and select **Reset metadata synchronization** to reset the **HQMessageDB** database in the AX 2012 R3 environment for N-1 cutover. | After the previous step | Not applicable |
+| 7. Turn on the N-1 Async Server Connector Service. | Connect to the server that hosts the N-1 Async Server Connector Service, and enable the Microsoft Windows service. | After the previous step | The status of download jobs on the **Download Sessions** page in Headquarters changes from **Available** to **Applied**. |
 
-The follow illustration is a visual representation of these steps.
+The following illustration is a visual representation of these steps.
 
 ![Phased Rollout (N-1) architecture overview](media/CDX/N-1/Cutover.jpg)
 
@@ -344,7 +344,7 @@ This section describes troubleshooting steps for errors that you might encounter
 |---|---|
 | Event Log | Microsoft Dynamics AX Retail : Async Client SynchClientService |
 | Sample Event Log Error Message | Unable to communicate with server for download. Please check username/password, server and database connections. Error Details: System.ServiceModel.CommunicationException: An error occurred while making the HTTP request to `https://localhost:44300/SynchService/DownloadService.svc`. This could be due to the fact that the server certificate is not configured properly with HTTP.SYS in the HTTPS case. This could also be caused by a mismatch of the security binding between the client and the server. ---\> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---\> System.IO.IOException: Authentication failed because the remote party has closed the transport stream. |
-| Troubleshooting Steps | This could have happened because of the following reasons.<br>1) The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.<br>2) The async service end point is not reachable. `https://localhost:44300/SynchService/DownloadService.svc`. To fix this issue, 1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the `Async Server connection tab -> Authentication information (case sensitive)` -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX. 2) Now click on `Test connection` in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (`Retail -> Headquarters setup -> Channel database`) in AX, update the Username and password, save. Go to `Retail scheduler parameters` in AX and click `Reset metadata synchronization`. This will populate the HQ message database with the new values. Repeat step 1 again. 3) If the async server end point (`https://localhost:44300/SynchService/DownloadService.svc`) is not reachable, check the bindings of the service and make sure there is a certificate associated. If the issue still exists, check that the `Working folders` were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
+| Troubleshooting Steps | This could have happened because of the following reasons.<br>1) The user ID and password that we provide in async client does not match with the channel database User ID and password that we provide in AX.<br>2) The async service end point is not reachable. `https://localhost:44300/SynchService/DownloadService.svc`. To fix this issue, 1) Launch the Async client configuration utility (AsyncClientConfigurationUtility.exe) from the async client install location. Under the `Async Server connection tab -> Authentication information (case sensitive)` -> Update the Channel database ID, User name and Password fields as per the values provided under N-1 channel database (`Retail and Commerce -> Headquarters setup -> Channel database`) in AX. 2) Now click on `Test connection` in the utility. If the connection is successful, restart the Async client service. If the connection fails, go to N-1 channel database (`Retail and Commerce -> Headquarters setup -> Channel database`) in AX, update the Username and password, save. Go to `Retail scheduler parameters` in AX and click `Reset metadata synchronization`. This will populate the HQ message database with the new values. Repeat step 1 again. 3) If the async server end point (`https://localhost:44300/SynchService/DownloadService.svc`) is not reachable, check the bindings of the service and make sure there is a certificate associated. If the issue still exists, check that the `Working folders` were specified for all the Channel database group’s that were linked to `AX2012R3` retail channel schema. |
 
 #### CDX jobs are successfully downloaded but aren't applied
 | Field | Value |

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure shows how to set up a loyalty program with two loyalty tiers. This procedure uses the USRT demo data company.
 
-1. Go to Retail and commerce > .. > Loyalty programs.
+1. Go to Retail and Commerce > .. > Loyalty programs.
 2. Click New.
 3. In the Name field, type a value.
 4. In the Description field, type a value.

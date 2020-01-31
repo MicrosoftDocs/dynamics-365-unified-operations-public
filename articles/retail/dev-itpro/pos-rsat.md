@@ -67,13 +67,13 @@ RSAT provides options for investigating test failures. It also decouples the tes
 
 ## Enable test recording in the Retail POS application
 
-To turn on the test recording functionality in Retail POS, follow these steps in Retail headquarters.
+To turn on the test recording functionality in Retail POS, follow these steps in Headquarters.
 
-1. Go to **Retail** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
+1. Go to **Retail and Commerce** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
 2. Select the register where the test recording functionality should be turned on.
 3. On the **Register** tab, on the **General** FastTab, set the **Enable task and test recorder** option to **Yes**.
 4. Select **Save**.
-5. Go to **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+5. Go to **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
 6. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Controlling the test recorder
@@ -245,14 +245,14 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
 3. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
 
     + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
-    + **Retail server URL** – Enter the Retail Server URL that should be used for device activation, if the device hasn't already been activated.
+    + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
-        > [!NOTE]
-        > The Cloud POS and Retail server URL can be obtained from Finance and Operations environment. Navigate to **Retail > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+> [!NOTE]
+> The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
-   + **Register number** – Enter the ID of the register number (retail channel) where the test should be run.
+   + **Register number** – Enter the ID of the register number (channel) where the test should be run.
    + **Device** – Enter the ID of the device where the test should be run.
    + **Default wait time** – Enter the wait time, in seconds, before the test case fails if any element isn't found. During test execution, the playback engine keeps trying to find the find element until this default wait time has passed. It then fails the test case and notifies you that the element that was recorded wasn't found or loaded for playback.
 
@@ -302,7 +302,7 @@ When you select **New**, test automation files are generated in your working dir
 
 ![Test parameter file in the Parameters File column](./media/RSATParameter.png)
 
-For the retail test recording files, the **Generate Test Execution files only** option is unavailable. Because Retail Cloud POS uses the Selenium web directly to do the playback, no additional script file must be generated.
+For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Retail Cloud POS uses the Selenium web directly to do the playback, no additional script file must be generated.
 
 ![Unavailable Generate Test Execution files only option](./media/RSATNewOption.png)
 

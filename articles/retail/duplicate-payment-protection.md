@@ -51,7 +51,7 @@ This topic covers the following aspects of the duplicate payment protection feat
 
 ## Prerequisites
 
-- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Retail (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- The payment connector and corresponding payment gateway or processor must support this feature. The *payment connector* is an extension which facilitates communication between Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
 - If a connector implements the corresponding duplicate payment protection interfaces, the feature is automatically enabled in Retail Modern POS. Otherwise, it is automatically turned off.
 
 <!---

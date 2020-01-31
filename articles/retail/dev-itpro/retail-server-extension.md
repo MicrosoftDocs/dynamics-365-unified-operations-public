@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new Retail Server extension
-description: This topic explains how to create a new Retail Server extension.
+description: This topic explains how to create a new Commerce Scale Unit extension.
 author: mugunthanm
 manager: AnnBe
 ms.date: 08/25/2019
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This document explains how to create a new Retail Server application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Retail Server APIs isn't supported.
+This document explains how to create a new Commerce Scale Unit application programming interface (API), and how to expose it so that POS or other clients can consume it. Modification of the existing Commerce Scale Unit APIs isn't supported.
 
-The Retail software development kit (SDK) includes only a few samples of end-to-end Retail Server extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
+The Retail software development kit (SDK) includes only a few samples of end-to-end Commerce Scale Unit extensions that include the Commerce Runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the RetailSDK\\SampleExtensions\\RetailServer folder.
 
 ## End-to-end sample repository in the Retail SDK
 
@@ -47,28 +47,28 @@ The Retail software development kit (SDK) includes only a few samples of end-to-
 | Extensions.PrintPackingSlipSample           | Extensions.PrintPackingSlipSample          |                                        |
 | Extensions.CrossLoyaltySample               | Extensions.CrossLoyaltySample              |                                        |
 
-## Create a new Retail Server extension
+## Create a new extension
 
-Follow the steps in this section to create a new Retail Server extension.
+Follow the steps in this section to create a new Commerce Scale Unit extension.
 
 ### End-to-end flow
 
 The following illustration shows the flow of the extension.
 
-![Retail Server extension flow](media/RSExtensionFlow.png)
+![Commerce Scale Unit extension flow](media/RSExtensionFlow.png)
 
-### Retail Server extension class diagram
+### Extension class diagram
 
 The following illustration shows the class structure of the extension.
 
-![Retail Server extension class diagram](media/RSClassFlow.png)
+![Commerce Scale Unit extension class diagram](media/RSClassFlow.png)
 
 ### Steps
 
-1. Before you create the Retail Server extension, create the CRT extension. Retail Server APIs should have no logic except logic that calls the CRT with the parameters.
+1. Before you create the Commerce Scale Unit extension, create the CRT extension. Commerce Scale Unit APIs should have no logic except logic that calls the CRT with the parameters.
 2. Create a new C\# class library project that uses the Microsoft .NET Framework version 4.6.1 or later as the target framework.
-3. In the Retail Server extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response. It also lets you use the entities from the Retail Server extension project.
-4. In the Retail Server extension project, create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. This controller class will contain the method that must be exposed by the Retail Server API. Inside the controller class, add methods to call the CRT request.
+3. In the Commerce Scale Unit extension project, add a reference to your CRT extension library or project. This reference lets you call the CRT request and response. It also lets you use the entities from the Commerce Scale Unit extension project.
+4. In the Commerce Scale Unit extension project, create a new controller class that extends **NonBindableOperationController** or **CommerceController**. The base class depends on your scenario. This controller class will contain the method that must be exposed by the Commerce Scale Unit API. Inside the controller class, add methods to call the CRT request.
 
     ```C#
     /// <summary>;
@@ -107,7 +107,7 @@ The following illustration shows the class structure of the extension.
     }
     ```
 
-5. Create an **EdmModelExtender** (EDM) class that extends the **IEdmModelExtender** interface. This class contains the abstract data model that is used to describe the data that a Retail Server API exposes. An Open Data Protocol (OData) Metadata Document is a representation of a service's data model that is exposed for client consumption. The central concepts in the EDM are entities, relationships, entity sets, actions, and functions.
+5. Create an **EdmModelExtender** (EDM) class that extends the **IEdmModelExtender** interface. This class contains the abstract data model that is used to describe the data that a Commerce Scale Unit API exposes. An Open Data Protocol (OData) Metadata Document is a representation of a service's data model that is exposed for client consumption. The central concepts in the EDM are entities, relationships, entity sets, actions, and functions.
 
     The **IEdmModelExtender** interface contains the abstract **ExtendModel** method. When you extend this interface, you must implement the **ExtendModel** method. Inside the **ExtendModel** method, you build the EDM entities and functions that will be exposed to the client by using the **CommerceModelBuilder** class.
 
@@ -154,7 +154,7 @@ The following illustration shows the class structure of the extension.
     ```
 
 6. Build the extension project, and drop the binary into the **\\RetailServer\\webroot\\bin\\Ext** folder.
-7. Update the Retail Server web.config file in the **\\RetailServer\\webroot** folder by adding the new Retail Server extension library name in the **extensionComposition** section.
+7. Update the Commerce Scale Unit web.config file in the **\\RetailServer\\webroot** folder by adding the new extension library name in the **extensionComposition** section.
 
     ```
     <extensionComposition>
@@ -164,13 +164,13 @@ The following illustration shows the class structure of the extension.
     </extensionComposition>
     ```
 
-8. In Microsoft Internet Information Services (IIS), restart Retail Server to load the new Retail Server extension.
-9. To verify that the extension was successfully loaded, you can browse the Retail Server metadata, and confirm that your entities and methods appear in the list.
+8. In Microsoft Internet Information Services (IIS), restart Commerce Scale Unit to load the new extension.
+9. To verify that the extension was successfully loaded, you can browse the Commerce Scale Unit metadata, and confirm that your entities and methods appear in the list.
 
-    To browse the Retail Server metadata, open a URL in the following format in a web browser:
+    To browse the metadata, open a URL in the following format in a web browser:
 
-    `https://Your Retail Server URL/Commerce/$metadata`
+    `https://Your Commerce Scale Unit URL/Commerce/$metadata`
 
-10. To call the Retail Server extension in your client, you must generate the Retail proxy. You can then use the proxy to call your new Retail Server APIs from the client.
+10. To call the Commerce Scale Unit extension in your client, you must generate the Commerce proxy. You can then use the proxy to call your new Commerce Scale Unit APIs from the client.
 
-    For information about how to generate the Retail proxy, see [Generate Retail proxy](typescript-proxy-retail-pos.md).
+    For information about how to generate the proxy, see [Generate Retail proxy](typescript-proxy-retail-pos.md).

@@ -34,7 +34,7 @@ This topic walks through setting up a continuity program (otherwise known as reo
 
 
 ## Create continuity program
-1. Go to Retail and commerce > Continuity > Continuity programs.
+1. Go to Retail and Commerce > Continuity > Continuity programs.
 2. Click New.
 3. In the Schedule ID field, type the continuity schedule ID.
 4. In the Order start field, select 'First event'.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail for IT pros and developers
-description: This page lists the resources that are available for IT pros and developers who support Retail.
+description: This page lists the resources that are available for IT pros and developers who support Commerce.
 author: RobinARH
 manager: AnnBe
 ms.date: 11/15/2019
@@ -34,19 +34,19 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This page lists the resources that are available for IT pros and developers who support Retail.
+This page lists the resources that are available for IT pros and developers who support Commerce.
 
 ## Online channel
 - [Online channel extensibility](../../commerce/e-commerce-extensibility/overview.md)
 
-## Retail components and architecture
+## Components and architecture
 -   [Retail components](../retail-components.md)
 -   [Retail Modern POS (MPOS) architecture](retail-modern-pos-architecture.md)
 -   [Retail Server architecture](retail-server-architecture.md)
 -   [Retail online store publishing architecture](retail-online-store-publishing-architecture.md)
 -   [Retail Channel Performance Power BI  content](../../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
-## Retail deployment
+## Deployment
 -   [Configure, install, and activate Retail Modern POS (MPOS)](../retail-modern-pos-device-activation.md)
 -   [Manage Retail accounts and devices from headquarters](../set-up-activation-accounts-validate-devices-hq.md)
 -   [Retail point of sale (POS) device activation](retail-device-activation.md)
@@ -85,23 +85,21 @@ This page lists the resources that are available for IT pros and developers who 
 - [Development in cloud-hosted development environments without admin access](cloud-dev-box.md)
 - [Test recorder and Regression suite automation tool for Retail Cloud POS](pos-rsat.md)
 
-## Integrating Retail
+## Integrating Commerce
 -   [Create and apply branding to the Retail Experience app](create-retail-experience-app.md)
 
-## Retail server
+## Commerce Scale Unit
 -   [Extend a Retail Server OData controller](extend-retail-server-odata-controller.md)
 -   [Extend the default Retail Server metadata controller](extend-metadata.md)
 -   [Web API and OData controllers](odata-controllers-api.md)
 -   [Retail Server customer and consumer APIs](retail-server-customer-consumer-api.md)
+-   [Retail Store Scale Unit](retail-store-system-begin.md)
+-   [Configure and install Retail Store Scale Unit](retail-store-scale-unit-configuration-installation.md)
 
-## Retail hardware station
+## Hardware station
 -   [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md)
 -   [Hardware Station extensibility](hardware-station-extensibility.md)
 -   [Integrate POS with a new hardware device](hardware-device-extension.md)
-
-## Retail Store Scale Unit
--   [Retail Store Scale Unit](retail-store-system-begin.md)
--   [Configure and install Retail Store Scale Unit](retail-store-scale-unit-configuration-installation.md)
 
 ## Commerce Runtime
 -   [Commerce runtime (CRT) architecture and configuration](commerce-runtime-overview.md)

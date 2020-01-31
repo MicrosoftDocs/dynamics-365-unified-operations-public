@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and update store hours
-description: This topic describes how to create and update store hours in Retail headquarters.
+description: This topic describes how to create and update store hours in Commerce Headquarters.
 author: josaw1
 manager: AnnBe
 ms.date: 7/30/2019
@@ -47,7 +47,7 @@ This functionality is available in Microsoft Dynamics 365 Retail versions 8.1.2 
 
 Follow these steps to configure store hours.
 
-1. Go to **Retail** \> **Channel Setup** \> **Store hours**.
+1. Go to **Retail and Commerce** \> **Channel Setup** \> **Store hours**.
 2. Select **New** to create a new store hours template. To use an existing template, select the template in the left pane.
 3. In the **Add range** dialog box, define the date range, the store hours, and any holidays that are required.
 

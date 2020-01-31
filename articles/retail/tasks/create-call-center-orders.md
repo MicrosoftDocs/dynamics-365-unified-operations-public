@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer. This procedure uses demo data company USRT and is intended for the Sales Order Clerk. Pre-requisites:  The user who completes the procedure is set up as a Call center user and the Fabrikam Semi-Annual Catalog is published with at least one Source code on it.
 
-1. Go to Retail and commerce > Customers > Customer service.
+1. Go to Retail and Commerce > Customers > Customer service.
 2. In the SearchText field, enter the search criteria to look up the customer.
     * For this example procedure type in 'karen' and press tab.  
 3. Click Search.

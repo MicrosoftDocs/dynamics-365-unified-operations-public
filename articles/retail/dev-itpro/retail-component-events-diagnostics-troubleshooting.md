@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail component events for diagnostics and troubleshooting
-description: To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Retail-specific components.
+description: To enable diagnostics and troubleshooting, all Commerce components, which include clients such as the Retail Modern POS and server components, such as Commerce Scale Unit, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Commerce-specific components.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-To enable diagnostics and troubleshooting, all Retail components, which include clients such as the Retail Modern POS and server components such as Retail Server, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Retail-specific components.
+To enable diagnostics and troubleshooting, all Commerce components, which include clients such as the Retail Modern POS and server components, such as Commerce Scale Unit, log their events locally to Event Viewer (or to the browser developer tools console, in case of Retail Cloud POS). This article explains where to find events from Commerce-specific components.
 
 Viewing events in Event Viewer
 ------------------------------
@@ -46,25 +46,25 @@ You can use Event Viewer to view events for components that are installed on com
 
 However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on Microsoft Dynamics Lifecycle Services (LCS). Log Search is discussed later in this article. This section applies to the following components:
 
--   Retail Server
+-   Commerce Scale Unit
 -   Retail Modern POS
 -   Retail Hardware Station
 
-### Find Retail-specific events in Event Viewer
+### Find Commerce-specific events in Event Viewer
 
 To start Event Viewer on a computer, right-click the **Start** button, and then click **Event Viewer**. 
 
 [![Event Viewer command on the shortcut menu for the Start button](./media/launch-event-viewer.png)](./media/launch-event-viewer.png) 
 
-All Retail-specific event logs can be found under the following path in Event Viewer: Application and Services Logs\\Microsoft\\Dynamics We provide the following Retail-specific event logs:
+All Commerce-specific event logs can be found under the following path in Event Viewer: Application and Services Logs\\Microsoft\\Dynamics We provide the following Commerce-specific event logs:
 
--   **Commerce-RetailServer** – This log contains events that are logged by the Retail Server components.
+-   **Commerce-RetailServer** – This log contains events that are logged by the Commerce Scale Unit components.
 -   **Commerce-ModernPos** – This log contains events that are logged by Retail Modern POS. These events include events from the TypeScript and C\# (CRT) layer.
--   **Commerce-LoggingProvider** – This log contains events that are logged by all other Retail components that aren't included in the list earlier in this article.
+-   **Commerce-LoggingProvider** – This log contains events that are logged by all other Commerce components that aren't included in the list earlier in this article.
 
 ### Enable debug event logs
 
-Currently, some of the events that are logged by various Retail components are sent to debug event logs. These events are verbose events that are logged at very high rates and are useful only for detailed debugging scenarios. Follow this step to enable the debug event logs in Event Viewer.
+Currently, some of the events that are logged by various components are sent to debug event logs. These events are verbose events that are logged at very high rates and are useful only for detailed debugging scenarios. Follow this step to enable the debug event logs in Event Viewer.
 
 -   Right-click a debug log, and then click **Enable Log**.
 
@@ -82,11 +82,11 @@ Because Retail Cloud POS is a browser-based component, you can use the browser d
 [![Console tab in the browser developer tools](./media/browser-console-1024x522.png)](./media/browser-console.png)
 
 ## Correlating events
-This sections explains how to correlate events from various Retail components.
+This sections explains how to correlate events from various Commerce components.
 
-### Data flow between a POS client and Retail Server
+### Data flow between a POS client and Commerce Scale Unit
 
-The diagram that follows shows the data flow between a point of sale (POS) client and the Retail Server.
+The diagram that follows shows the data flow between a point of sale (POS) client and the Commerce Scale Unit.
 
 #### POS client startup
 
@@ -96,51 +96,53 @@ When a user starts a POS client, a new AppSessionID is generated. The AppSession
 
 When a user signs in to a POS client, a new UserSessionID is generated. The UserSessionID is used to log every event that is instrumented in the POS client. All user events that are logged to Event Viewer have this ID. This ID is maintained for as long as the user is signed in. When the current user signs out and a new user sign in, a new UserSessionID is generated.
 
-#### POS client calls to Retail Server
+#### POS client calls to Commerce Scale Unit
 
-Whenever a POS client makes a call to the Retail Server, the AppSessionID and UserSessionID are sent as headers. The Retail Server then logs an event for the incoming request (Event ID 5000). This event includes those two IDs and also an ActivityID. The ActivityID is then also used for all related Retail Server events. The AppSessionID, UserSessionID, and ActivityID are available in the event log where Retail Server is hosted. They are also available in LCS Log Search.
+Whenever a POS client makes a call to the Commerce Scale Unit, the AppSessionID and UserSessionID are sent as headers. The Commerce Scale Unit then logs an event for the incoming request (Event ID 5000). This event includes those two IDs and also an ActivityID. The ActivityID is then also used for all related events. The AppSessionID, UserSessionID, and ActivityID are available in the event log where Commerce Scale Unit is hosted. They are also available in LCS Log Search.
 
-#### Request activity on Retail Server
+#### Request activity on Commerce Scale Unit
 
-Every event that is logged as part of a Retail Server request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search. 
+Every event that is logged as part of a Commerce Scale Unit request has the same ActivityID as the initial event that was logged for the initial incoming request event (Event ID 5000). These events are available in both Event Viewer and LCS Log Search. 
 
-[![Data flow between a POS client and Retail Server](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
+[![Data flow between a POS client and Commerce Scale Unit](./media/event-log-data-flow1-1018x1024.png)](./media/event-log-data-flow1.png)
 
 ### Finding Retail Modern POS events in Event Viewer
 
 Every event that is logged by Retail Modern POS includes the following data points:
 
--   **AppSessionID** – A unique ID that is generated when the app is first started. It's included with every event that is logged from Retail Modern POS.
--   **UserSessionID** – A unique ID that is generated when a user signs in to Retail Modern POS. It's included with every event that is logged from Retail Modern POS, for as long as the user remains signed in. When a new user signs in, a new UserSessionID is created.
+-   **AppSessionID** – A unique ID that is generated when the app is first started. It's included with every event that is logged.
+-   **UserSessionID** – A unique ID that is generated when a user signs in to Retail Modern POS. It's included with every event that is logged, for as long as the user remains signed in. When a new user signs in, a new UserSessionID is created.
 
 You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed. 
 
 [![Details tab in Event Viewer](./media/correlation-1024x672.png)](./media/correlation.png)
 
-### Finding incoming Retail Server request events in Event Viewer
+### Finding incoming Commerce Scale Unit request events in Event Viewer
 
-To correlate data for incoming Retail Server requests in Event Viewer, you must first enable the **Analytic** channel. To enable the Analytic channel, follow these steps.
+To correlate data for incoming Commerce Scale Unit requests in Event Viewer, you must first enable the **Analytic** channel. To enable the Analytic channel, follow these steps.
 
 1.  In Event Viewer, in the left pane, select **Commerce-RetailServer**.
 2.  Click **View** &gt; **Enable Analytic and Debug log**. A new node for the Analytic channel appears under the **Commerce-RetailServer** logging provider.
 3.  Right-click the **Analytic** node, and then click **Enable log**.
 
-In Event Viewer, all incoming Retail Server requests are logged to the Analytic channel of the Commerce-RetailServer source as event 5000. These events also have the AppSessionID and UserSessionID that were described earlier. Every event also has a unique ActivityID that is instrumented for every logged event for the same Retail Server request.
+In Event Viewer, all incoming Commerce Scale Unit requests are logged to the Analytic channel of the Commerce-RetailServer source as event 5000. These events also have the AppSessionID and UserSessionID that were described earlier. Every event also has a unique ActivityID that is instrumented for every logged event for the same request.
 
 ## Using LCS Log Search
-LCS Log Search lets you view data from all the components from a single portal. You can access events from both cloud-hosted components (such as Retail Server) and in-store components (such as Retail Modern POS and Retail Hardware Station). Event data from all cloud-hosted and in-store components flows to LCS Log Search, where it's indexed and made searchable. Data is typically available within 5 minutes after it's logged. For POS clients and Retail Hardware Station, all events are locally queued in persistent storage and then uploaded in batches after the queue is filled. This behavior enables network traffic to be optimized. It also enables events to be saved even when there is no Internet connectivity. After connectivity is restored, all pending events are uploaded. LCS Log Search is available for the HA production topology. It can be used for the following Retail components:
+LCS Log Search lets you view data from all the components from a single portal. You can access events from both cloud-hosted components (such as Commerce Scale Unit) and in-store components (such as Retail Modern POS and Retail Hardware Station). Event data from all cloud-hosted and in-store components flows to LCS Log Search, where it's indexed and made searchable. Data is typically available within 5 minutes after it's logged. For POS clients and Retail Hardware Station, all events are locally queued in persistent storage and then uploaded in batches after the queue is filled. This behavior enables network traffic to be optimized. It also enables events to be saved even when there is no Internet connectivity. After connectivity is restored, all pending events are uploaded. 
+
+LCS Log Search is available for the HA production topology. It can be used for the following Commerce components:
 
 -   Retail Modern POS
 -   Retail Cloud POS
--   Retail Server (running on Retail Cloud Scale Unit)
+-   Commerce Scale Unit (running on Retail Cloud Scale Unit)
 
-LCS Log Search does **not** include logs from the following Retail components:
+LCS Log Search does **not** include logs from the following Commerce components:
 
--   Retail layout designer
--   Retail receipt designer
+-   Commerce layout designer
+-   Commerce receipt designer
 -   Self-service installer for Retail Modern POS
 -   Self-service installer for Retail Hardware Station
--   Retail Server (running on Retail Store Scale Unit)
+-   Commerce Scale Unit (running on Retail Store Scale Unit)
 -   Retail Hardware Station
 
 ### Access LCS Log Search
@@ -154,8 +156,8 @@ To access LCS Log Search, follow these steps.
 5.  On the **Environment details** page, click **Environment Monitoring**.
 6.  On the **Environment monitoring** page, click **View raw logs**.
 7.  On the **Log Search** page, select one of the following queries:
-    -   **Retail client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Retail Server (running on Retail Cloud Scale Unit)
-    -   **All logs** query, which includes data from Retail Server, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
+    -   **Commerce client events** query, which includes events from Retail Modern POS, Retail Cloud POS, and Commerce Scale Unit (running on Retail Cloud Scale Unit)
+    -   **All logs** query, which includes data from Commerce Scale Unit, Commerce Data Exchange, and Commerce Data Exchange: Real-time Service
 
 You can filter by the following criteria to refine your query:
 

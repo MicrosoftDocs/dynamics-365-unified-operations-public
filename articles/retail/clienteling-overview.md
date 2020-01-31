@@ -2,7 +2,7 @@
 # required metadata
 
 title: Clienteling overview
-description: This topic provides an overview of new clienteling capabilities that are available in the retail store application.
+description: This topic provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
 manager: AnnBe
 ms.date: 11/01/19
@@ -75,10 +75,10 @@ To turn on the clienteling functionality in your environment, follow these steps
 
 1. In the **Feature management** workspace, filter the features by the **Retail and commerce** module.
 
-    ![Clienteling in the list of features for the Retail and commerce module](./media/Enable_clienteling.png "Clienteling in the list of features for the Retail and commerce module")
+    ![Clienteling in the list of features for the Commerce module](./media/Enable_clienteling.png "Clienteling in the list of features for the Retail and commerce module")
 
 2. Turn on the **Clienteling** feature by selecting **Enable now**.
-3. On the **Retail Parameters** page, on the **Number sequence** tab, select the **Client book identifier** row. Then, in the **Number sequence code** field, select a number sequence. The system will use this number sequence to assign an ID to client books.
+3. On the **Commerce Parameters** page, on the **Number sequence** tab, select the **Client book identifier** row. Then, in the **Number sequence code** field, select a number sequence. The system will use this number sequence to assign an ID to client books.
 4. Select **Save**.
 5. Create a new attribute group that contains the attributes that you want to capture for customers who are managed in client books. For instructions, see [Attributes and attribute groups](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
 
@@ -86,16 +86,16 @@ To turn on the clienteling functionality in your environment, follow these steps
     - Set the display order for these attributes. This display order determines which attributes should be shown on the customer card in the client book. A display order of 1 is considered higher than a display order of 2. Therefore, the attribute that has a display order of 1 will be shown before to the attribute that has a display order of 2.
 
     > [!NOTE]
-    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Turn on the integration of Customer Insights with Retail](#turn-on-the-integration-of-customer-insights-with-retail) section later in this topic.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
+    > You can make Customer Insights available from the same page. However, an Azure application ID and secret must be created, for authentication purposes. (For information about the requirements, see the [Turn on the integration of Customer Insights with Commerce](#turn-on-the-integration-of-customer-insights-with-commerce) section later in this topic.) If Customer Insights is turned on, and you select one or more measures that should be shown on the customer card, those measures will be shown first. Next, client book attribute groups will be shown, based on the display order. For example, if you select two measures from Customer Insights, those two measures and one client book attribute will be shown on the customer card. (The client book attribute that is shown will be the attribute that has the highest display order.)
 
-6. On the **Retail parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you just created.
+6. On the **Commerce parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you just created.
 
     ![Client book attribute group selected](./media/Client%20book%20attributes.png "Client book attribute group selected")
 
-7. To capture activities that occur at the POS, define the activity types on the **Activity types** page (**Retail \> Customers \> Activity types**).
+7. To capture activities that occur at the POS, define the activity types on the **Activity types** page (**Retail and Commerce \> Customers \> Activity types**).
 
     > [!NOTE]
-    > Activity types are pulled by the Retail Server when it makes a real-time call for the first time. After the activities are pulled, they are cached for a few hours. If you change the activity types, wait until the cache is no longer valid. Alternatively, for non-production environments, restart the Retail Server service.
+    > Activity types are pulled by the Commerce Scale Unit when it makes a real-time call for the first time. After the activities are pulled, they are cached for a few hours. If you change the activity types, wait until the cache is no longer valid. Alternatively, for non-production environments, restart the Commerce Scale Unit service.
 
 8. Add two buttons to the appropriate POS screen layout, so that sales associates can view their own client book and the store client book. (Store client books include clients from all client books of all associates who share an address book with the store.) The corresponding operations are named **View customers in client book** and **View customers from store client books**, respectively. Three additional operations that are related to client books are available. These operations determine which associates can add, remove, and reassign customers from the client book. They are named **Add customer to client book**, **Remove customers from client book**, and **Reassign customers to a client book**, respectively.
 9. Run the following distribution schedule jobs: 1040, 1150, 1110, and 1090.
@@ -104,7 +104,7 @@ After you've completed this procedure, sales associates can open the customer de
 
 ![Example of a client book](./media/client_book.png "Example of a client book")
 
-## Turn on the integration of Customer Insights with Retail
+## Turn on the integration of Customer Insights with Commerce
 
 To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have an Azure Active Directory (Azure AD) user account that has an Azure subscription.
 
@@ -120,7 +120,7 @@ Follow these steps to set up the integration.
 4. Turn on access to Azure Key Vault from Commerce. To complete this step, you must have an application ID and secret. The application can be the same application that you created in step 1, or it can be a new application. (In other words, you can use the application that you created in step 1 for both Key Vault access and Customer Insights service access, or you can create a unique application for each type of access.) For instructions, see [Store service principal credentials in Azure Stack Key Vault](https://docs.microsoft.com/azure-stack/user/azure-stack-key-vault-store-credentials?view=azs-1908#create-a-service-principal).
 5. In Headquarters, go to **System administration \> Setup \> Key Vault parameters**, and enter the required information for the key vault. Then, in the **Key Vault client** field, enter the application ID that you used in step 4, so that Commerce can access the secrets in the key vault.
 6. To add the application that you created in step 1 to the list of safe applications (sometimes referred to as a whitelist), go to Customer Insights, and provide **View** access to the application. For instructions, see [Permissions](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
-7. In Commerce, on the **Retail parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, follow these steps:
+7. In Commerce, on the **Commerce parameters** page, on the **Clienteling** tab, on the **Dynamics 365 Customer Insights** FastTab, follow these steps:
 
     1. In the **Application ID** field, enter the application ID that you used in step 1.
     2. In the **Secret name** field, enter the name of the Key Vault secret that you created in step 5.

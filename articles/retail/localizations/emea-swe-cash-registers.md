@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 This topic provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
-- Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one retail receipt
+- Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one receipt
 - Sweden-specific features, such as additional counters in daily POS reports
 - A sample for integration of Retail POS with Sweden-specific fiscal devices that are known as control units.
 
@@ -44,9 +44,9 @@ To learn about common POS features that are available to customers in all countr
 
 Additionally, the following POS features that were implemented for Sweden have been made available to customers in all countries or regions:
 
-- **Prohibit sales and returns from being combined on one retail receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, Cloud POS and Modern POS won't let users create a transaction that contains both positive and negative lines.
+- **Prohibit sales and returns from being combined on one receipt.** When you set the **Prohibit mixing sales and returns in one receipt** parameter in the POS functionality profile to **Yes**, Cloud POS and Modern POS won't let users create a transaction that contains both positive and negative lines.
 - **Print text fields on the receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in a receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a receipt copy in large characters.
-- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Retail headquarters. You can view the audit events on the **Audit events** page.
+- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable the printing of receipt copies and other POS audit events to be registered. The audit events are registered in the channel database and in Headquarters. You can view the audit events on the **Audit events** page.
 - **Prevent a copy of a receipt from being printed more than one time.** When the parameter **Audit** in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether receipt copies can be printed. There is also an option to prevent a copy of a receipt from being printed more than one time.
 
 ### Sweden-specific POS features
@@ -81,9 +81,9 @@ The following Sweden-specific POS features are enabled when the **ISO code** par
 ---
 
 
-## Setting up Retail for Sweden
+## Setting up Commerce for Sweden
 
-This section describes the settings that are specific to and recommended for Sweden. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the settings that are specific to and recommended for Sweden. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
 
 To use the Sweden-specific functionality, you must complete these tasks:
 
@@ -109,9 +109,9 @@ You must specify the following general settings for Sweden.
     For more information about how to set up and use sales tax, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).
 
 
-2. On the **All retail stores** page, update retail store details. Specifically, set the following parameters:
+2. On the **All stores** page, update store details. Specifically, set the following parameters:
 
-    - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default retail customer.
+    - In the **Sales tax group** field, set the sales tax group that should be used for sales to the default customer.
     - Select the **Prices include sales tax** check box.
     - Set the **Store name** field so that it includes the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-format text.
     - Set the **Tax identification number (TIN)** field so that it includes the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-format text.

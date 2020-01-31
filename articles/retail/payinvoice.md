@@ -40,7 +40,7 @@ The Pay invoice functionality in Dynamics 365 Commerce has been expanded to supp
 
 To enable these scenarios, the functionality profile for stores must be configured as outlined in below.
 
-1. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles** and select a profile that's linked to the stores that you want to make the changes for.
 2. On the **Functions** tab, configure the following parameters as needed.
 
     - **Sales order invoice** – Select **Yes** to allow users to pay one or more sales order-based invoices in a single POS transaction.

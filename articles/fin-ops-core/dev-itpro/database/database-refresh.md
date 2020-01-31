@@ -88,7 +88,7 @@ Here is the list of requirements and conditions of operation for a database refr
 - All data management framework with recurring import and export jobs must be fully processed and stopped in the target system prior to initiating the restore. In addition, we recommend that you select the database from the source after all recurring import and export jobs have been fully processed. This will ensure there are no orphaned files in Azure storage from either system. This is important because orphaned files cannot be processed after the database is restored in the target environment. After the restore, the integration jobs can be resumed.
 - Any user with a role of Project owner or Environment manager in LCS will have access to the SQL and machine credentials for all non-production environments.
 
-## Steps to complete after a database refresh for environments that use Retail functionality
+## Steps to complete after a database refresh for environments that use Commerce functionality
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
 
 ## Known issues

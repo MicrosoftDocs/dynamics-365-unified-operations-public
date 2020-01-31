@@ -33,7 +33,7 @@ ms.search.validFrom: 2017-12-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following video.
+This topic provides detailed information about India Goods and Services Tax (GST). For an overview of the tax engine using India GST examples, watch the following videos.
 
 - [Tax engine overview (YouTube video)](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 - [GST overview (Tech Talk)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-gst-gte-part-1---overview-of-features-roadmap-july-8-2019)
@@ -165,7 +165,7 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 | <li>Taxable Document.version.71.xml</li><li>Taxable Document (India).version.71.120.xml</li><li>Tax (India GST).version.71.120.225.xml</li>| Add several new fields into taxable documents, Ship from/to xxx, Product Category, Customer group, Vendor group, Prepayment 7.3 + KB#4094699 + KB#4135145 + KB#4457539 8.0 + KB#4458726 8.1.1 |
 | <li>Taxable Document.version.81.xml</li><li>Taxable Document (India).version.81.138.xml</li><li>Tax (India GST).version.81.138.247.xml</li>| Add invoice date into GST, Rate lookup Enable Non-GST, if Non-GST is marked trans tax information, GST will not be applicable  Microsoft Dynamics 365 for Finance and Operations (10.0)        |
 | <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.263.xml</li> | Solve the issue of zero tax base for tax exempt transaction Support CGST&SGST for intra-state stock transfer order between warehouses with different GST registrations Support VAT Support Tax Rate Type  Microsoft Dynamics 365 for Finance and Operations (10.0.5) |
-| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li>| Remove the tax rate type from Tax Document which should be used by retail customers who have not update their terminal to 10.0.5  Microsoft Dynamics 365 for Finance and Operations (10.0.5)         
+| <li>Taxable Document.version.82.xml</li><li>Taxable Document (India).version.82.143.xml</li><li>Tax (India GST).version.82.143.264.xml</li>| Remove the tax rate type from Tax Document which should be used by customers who have not update their terminal to 10.0.5  Microsoft Dynamics 365 for Finance and Operations (10.0.5)         
 
 ### Report configurations
 
@@ -214,7 +214,8 @@ Follow the process in the topic, [Tax engine import configuration](../general-le
 6. Complete the tasks in the **Tax setup** section to update data for the new version.
 
     > [!IMPORTANT]
-    > If the tasks in the [Tax setup](#tax-setup), section were previously completed for the old configuration version, the data is retained after you synchronize to the new configuration version. You just have to review the setup and update it according to the new changes.   
+    > If the tasks in the [Tax setup](#tax-setup), section were previously completed for the old configuration version, the data is retained after you synchronize to the new configuration version. You just have to review the setup and update it according to the new changes.
+   
 
 ## Tax setup
 

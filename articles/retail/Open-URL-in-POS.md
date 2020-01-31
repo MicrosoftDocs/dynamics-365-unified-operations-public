@@ -81,7 +81,7 @@ Before you begin, review how to configure [Screen layouts for the point of sale 
 
 To configure a URL to be opened in POS, perform the following steps.
 
-1. In head office, go to **Retail \> Channel Setup \> POS Setup \> POS \> Screen Layouts**.
+1. In head office, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS \> Screen Layouts**.
 2. Select **Button Grids \> Designer**.
 3. Create a new button.
 4. Select **Button** properties.

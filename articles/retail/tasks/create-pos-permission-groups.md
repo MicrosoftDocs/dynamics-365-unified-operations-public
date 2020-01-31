@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-This topic explains how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Retail operations manager role.
+This topic explains how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
 
-1. In the navigation pane, go to **Modules > Retail > Employees > Permission groups**.
+1. In the navigation pane, go to **Modules > Retail and Commerce > Employees > Permission groups**.
 2. Select **New**.
 3. In the **POS permission group ID** field, type a value.
 4. In the **Description** field, type a value.
@@ -42,11 +42,11 @@ This topic explains how to create a POS permission group. The demo data company 
 8. Select **Yes** in the **Allow retrieve order** field.
 9. Select **Yes** in the **Allow password change** field.
 10. Select **Yes** in the **Allow blind close** field.
-11. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels. 
+11. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to commerce channels. 
 12. In the navigation pane, go to **Modules > Human resources > Jobs > Jobs**.
 13. Next we will assign the POS permission group to a Job. In the list, find and select the desired record.
 14. Select **Edit**.
 15. Expand the **Job classification** section.
 16. In the POS permission group field, enter or select a value. All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.  
-17. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.  
+17. Select **Save**. After your changes are saved you need to run the Staff distribution schedule to push the changes to channels.  
 

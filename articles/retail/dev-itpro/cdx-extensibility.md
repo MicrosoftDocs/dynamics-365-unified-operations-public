@@ -34,31 +34,31 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 This topic explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 for Finance and Operations platform update 8 or Microsoft Dynamics 365 Retail platform update 8.
 
-CDX is a system that transfers data between Retail headquarters (Retail HQ) and retail channels, such as online stores or brick-and-mortar stores. The data transfer between Retail HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the names of the source tables and destination tables, and the transfer field mapping of those tables. There are two ways to configure the data synchronization between Retail HQ and the channel database:
+CDX is a system that transfers data between Commerce Headquarters (HQ) and channels, such as online stores or brick-and-mortar stores. The data transfer between HQ and the channel database is controlled by scheduler jobs. Each scheduler job contains a list of scheduler subjobs. The scheduler subjobs contain the names of the source tables and destination tables, and the transfer field mapping of those tables. There are two ways to configure the data synchronization between HQ and the channel database:
 
 + Configure all the custom jobs and subjobs by using the configuration user interface (UI) for CDX.
 + Extend the Commerce initialization class by using the extension points that are provided to support custom jobs and subjobs for both push and pull.
 
-The advantage of using the Commerce initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the retail CDX initialization by using the **Initialize retail scheduler** dialog box from **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
+The advantage of using the Commerce initialization class is that you don't have to configure the custom jobs in different environments (dev, test, and production). Instead, you can run the CDX initialization by using the **Initialize commerce scheduler** dialog box from **Retail and Commerce > Headquarters setup > Commerce scheduler > Initialize commerce scheduler**. Information about the custom job for the data synchronization is then automatically created in CDX.
 
-There are various scenarios for data transfer between Retail HQ and the channel database:
+There are various scenarios for data transfer between HQ and the channel database:
 
-+ Send data from a new Retail HQ table to a new channel database table by using a download job.
-+ Pull data from a new channel database table to a new Retail HQ table by using a push job.
++ Send data from a new HQ table to a new channel database table by using a download job.
++ Pull data from a new channel database table to a new HQ table by using a push job.
 
-## Send data from a new Retail HQ table to a new channel database table by using a download job
+## Send data from a new HQ table to a new channel database table by using a download job
 
 Before you push or pull data, you must understand various metadata definitions in the XML resource file. The resource file contains the custom job information that will be initialized in your environment to push and pull data. Here is a list of the resource files that you must configure:
 
 + **ChannelDBSchema** – The extension schema that you created in the channel database.
 + **TargetTableSchema** – The extension schema that you created in the channel database to add your custom tables.
 + **AxTableName** – The table name.
-+ **IsUpload** – A flag that determines whether the job is a push job or a pull job. (In other words, the flag indicates whether you want to send data from Retail HQ to the channel database or pull data from the channel database to Retail HQ). The default value is **false**, which indicates that you're sending data from Retail HQ to the channel database.
++ **IsUpload** – A flag that determines whether the job is a push job or a pull job. (In other words, the flag indicates whether you want to send data from HQ to the channel database or pull data from the channel database to HQ). The default value is **false**, which indicates that you're sending data from HQ to the channel database.
 + **ScheduledByJob** – This resource file contains one or more subjobs.
 + **Subjob** – Each table is added as a subjob, and each subjob is scheduled by one or more scheduler jobs.
 + **TargetTable** – The name of the channel database table. This table is the target table that the push job or pull job must send data to. If a value isn't specified, the system assumes that name of the target table and the name of the source table are the same.
 
-If you created a new Retail HQ table and a new channel database table, follow these steps to push the data between the two tables.
+If you created a new HQ table and a new channel database table, follow these steps to push the data between the two tables.
 
 1. Create a custom project and use the Application Object Tree (AOT) to add a custom table.
 2. Create a new resource file to add all custom job information. Here is the template for the resource file.
@@ -77,31 +77,31 @@ If you created a new Retail HQ table and a new channel database table, follow th
 
     > [!NOTE]
     > You can either add the new table as part of the existing job, or create a new job and add this table. In this case, we are creating a new job, where the job ID is **7000** and the custom table is named **ContosoRetailSeatingArrangementData**.
+    >
+    > ```
+    > <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
+    >    <Jobs>
+    >        <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
+    >    </Jobs>
+    >    <Subjobs>
+    >        <Subjob Id="ContosoRetailSeatingArrangementData" TargetTableSchema="ext" AxTableName="ContosoRetailSeatingArrangementData">
+    >            <ScheduledByJobs>
+    >                <ScheduledByJob>7000</ScheduledByJob>
+    >            </ScheduledByJobs>
+    >            <AxFields>
+    >                <Field Name="seatNumber"/>
+    >                <Field Name="capacity"/>
+    >                <Field Name="channelRecId"/>
+    >                <Field Name="RecId"/>
+    >             </AxFields>
+    >        </Subjob>
+    >    </Subjobs>
+    > </RetailCdxSeedData>
+    > ```
 
-    ```
-    <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
-        <Jobs>
-            <Job DescriptionLabelId="REX4520710" Description="Custom job" Id="7000"/>
-        </Jobs>
-        <Subjobs>
-            <Subjob Id="ContosoRetailSeatingArrangementData" TargetTableSchema="ext" AxTableName="ContosoRetailSeatingArrangementData">
-                <ScheduledByJobs>
-                    <ScheduledByJob>7000</ScheduledByJob>
-                </ScheduledByJobs>
-                <AxFields>
-                    <Field Name="seatNumber"/>
-                    <Field Name="capacity"/>
-                    <Field Name="channelRecId"/>
-                    <Field Name="RecId"/>
-                 </AxFields>
-            </Subjob>
-        </Subjobs>
-    </RetailCdxSeedData>
-    ```
+    By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Commerce side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
 
-    By default, the name of the target table isn't specified here. The system assumes the name of the target table on the channel side is the same as the name of the source table on the Retail side (**AXTableName**). However, the name of the target table on the channel side might sometimes differ from the name of the source table. In this case, in the **&lt;Subjob&gt;** node, you can use the **&lt;TargetTableName&gt;** attribute to set the name of the target table on the channel side.
-
-    Similarly, in the mapping section, only the names of fields on the Retail side are specified (**AxFields**). By default, it's assumed that the same field name is also used on the channel side. However, the field name on the corresponding channel table might sometimes differ from the field name on the Retail side. In this case, in the mapping, you can use the **ToName** attribute of the **&lt;Field&gt;** node to set the name of the field on the channel side.
+    Similarly, in the mapping section, only the names of fields on the Commerce side are specified (**AxFields**). By default, it's assumed that the same field name is also used on the channel side. However, the field name on the corresponding channel table might sometimes differ from the field name on the Commerce side. In this case, in the mapping, you can use the **ToName** attribute of the **&lt;Field&gt;** node to set the name of the field on the channel side.
 
 4. Right-click the project, and then select **Add** &gt; **New Item**.
 5. In the **Add New item** dialog box, select **Resources**, name the resource file **RetailCDXSeedDataAX7_Custom**, and then select **Add**.
@@ -124,14 +124,14 @@ If you created a new Retail HQ table and a new channel database table, follow th
     >
     > You don't have to create separate resource files for the various scenarios that are mentioned later. You can have one file that contains all the custom job information and register that file from the extension class.
     >
-    > When the Retail initialization class runs, it looks for any extension that implements this handler. If an extension is found, the runtime will also initialize the custom information that is found in the resource file.
+    > When the initialization class runs, it looks for any extension that implements this handler. If an extension is found, the runtime will also initialize the custom information that is found in the resource file.
 
-9. Go to **Retail > Headquarters setup > Retail scheduler >Initialize retail scheduler**.
-10. Run the Retail CDX initialization by clicking the OK button on **Initialize retail scheduler** dialog.
+9. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler >Initialize commerce scheduler**.
+10. Run the CDX initialization by clicking the **OK** button on **Initialize commerce scheduler** dialog.
 
-## Pull data from a new channel database table to a new Retail HQ table by using a push job
+## Pull data from a new channel database table to a new HQ table by using a push job
 
-To pull data from a new channel table to Retail HQ, you have two options:
+To pull data from a new channel table to HQ, you have two options:
 
 + Create a new resource file and add the new resource to the event handler as a second line, as shown here.
 
@@ -229,7 +229,7 @@ To move an existing subjob to another job, you can change the **ScheduledByJob**
 ## CDX sample - Pull new columns to an existing table
 In Microsoft Dynamics 365 Retail App update 5, we added a new sample in RetailSDK\Documents\SampleExtensionsInstructions\ExtensionTables, it has all the sample SQL scripts, ax project files for different CDX extension scenarios, please use it as a reference for different CDX extension scenarios.
 
-In the next sections, we discuss the steps and best practices for customizing Retail transactional tables by using extension tables. Another section shows how to customize CDX to upload the customized (extension) tables on the channel side back to Commerce. We have also included a section that describes how to test the customization.
+In the next sections, we discuss the steps and best practices for customizing transactional tables by using extension tables. Another section shows how to customize CDX to upload the customized (extension) tables on the channel side back to Commerce. We have also included a section that describes how to test the customization.
 
 ### Setup steps
 
@@ -256,9 +256,9 @@ We recommend that you implement these changes on an untouched Retail software de
 
       This step creates the extension tables and views that are required in order to customize the transactional tables. Note that the script also creates other tables that are used for other sample scenarios.
 
-### Extend the Retail data in the sample
+### Extend the data in the sample
 
-The table extension on the Retail side is already created in the sample. To create it manually, follow these steps.
+The table extension on the Commerce side is already created in the sample. To create it manually, follow these steps.
 
 1. Start Visual Studio.
 2. On the menu, select **View** > **Application Explorer**.
@@ -283,9 +283,9 @@ From the Retail SDK folder, open and run the SQL Server **ContosoRetailExtension
 
 + The **[ext].ContosoRetailTransactionTable** table that has the foreign key and custom (extension) fields is created. In addition to the extension columns that we added in the tables, the extension table on the channel side must have the same primary key columns as the original table on the channel side. Therefore, [ext].RetailTransactionTable_ContosoRetailExtension has the four primary key columns that are used in [ax].RetailTransactionTable. As a best practice, when you add the primary key columns to the extension table on the channel side, keep the names of the columns the same as the names of the primary key column on the original table. 
 
-+ CDX is configured to upload and pull the custom columns from the channel extension table back to Retail. The RetailCDXSeedDataAX7 resource contains the information for the table mapping from Retail to the channel database. CDX uses this information to create the required data transfer scheduler jobs and subjobs. To include your new extension tables or columns in the data transfer, you must provide a resource file that specifies the customization for the CDX data transfer. As a best practice, use the following naming convention to prevent conflicts: **RetailCDXSeedDataAX7_ContosoRetailExtension**. (Here, **ContosoRetail** is your unique extension.)
++ CDX is configured to upload and pull the custom columns from the channel extension table back to Commerce. The RetailCDXSeedDataAX7 resource contains the information for the table mapping from Commerce to the channel database. CDX uses this information to create the required data transfer scheduler jobs and subjobs. To include your new extension tables or columns in the data transfer, you must provide a resource file that specifies the customization for the CDX data transfer. As a best practice, use the following naming convention to prevent conflicts: **RetailCDXSeedDataAX7_ContosoRetailExtension**. (Here, **ContosoRetail** is your unique extension.)
 
-The sample CDX resource file in the Retail SDK contains additional customizations. However, for our example of RetailTransactionTable extension, the section in the following code is the only section that is required to pull data from the channel side back to Retail HQ.
+The sample CDX resource file in the Retail SDK contains additional customizations. However, for our example of RetailTransactionTable extension, the section in the following code is the only section that is required to pull data from the channel side back to HQ.
 
 ```
 <RetailCdxSeedData Name="AX7" ChannelDBSchema="ext" ChannelDBMajorVersion="7">
@@ -345,7 +345,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
     }
     ```
 
-8. The CDX extensibility framework calls this method when you select the Retail initialization. To help guarantee that the CDX extensibility module uses the CDX customization, paste the following code into the preceding method.
+8. The CDX extensibility framework calls this method when you select the Commerce initialization. To help guarantee that the CDX extensibility module uses the CDX customization, paste the following code into the preceding method.
     
     ```
     if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
@@ -358,7 +358,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
 9. To initialize or reinitialize the CDX module with the customized configuration, follow these steps:
 
-   1. Go to **Retail** > **Headquarters setup** > **Retail scheduler** > **Scheduler jobs** > **Initialize retail scheduler**.
+   1. Go to **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler** > **Scheduler jobs** > **Initialize commerce scheduler**.
    2. In the dialog box that appears, select **Delete existing configuration**.
    3. Select **OK** to start the initialization.
 
@@ -368,7 +368,7 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
 1. Verify that your customization works correctly:
 
-    1. After the initialization is completed, go to **Retail** > **Headquarters setup** > **Retail scheduler**, and then select the **Scheduler subjobs** link.
+    1. After the initialization is completed, go to **Retail and Commerce** > **Headquarters setup** > **Commerce scheduler**, and then select the **Scheduler subjobs** link.
     2. On the subjobs table, search for the **RetailTransactionTable** subjob ID.
     3. On the **Set up** FastTab, verify that the **Channel table name** field is set to **[ext].RetailTransactionTableView**.
     4. In the details section, in the **Channel field mapping** section, verify that the new custom (extension) columns are listed in the mapping.
@@ -400,12 +400,12 @@ The **AxTableName** attribute isn't specified, because the framework can already
 
         Repeat this step for the other transactions. Don't add corresponding data in [ext].[CONTOSORETAILTRANSACTIONTABLE] for some of the transactions that you created in MPOS. In this way, you can verify that the data from [ax].RetailTransactionTable is pulled and uploaded even if there is no corresponding data in the extension table.
 
-    3. Go to **Dynamics 365** > **Retail** > **Retail IT**, and then select **Distribution schedule**.
+    3. Go to **Dynamics 365** > **Retail and Commerce** > **Retail and Commerce IT**, and then select **Distribution schedule**.
     4. In the list of distribution schedules, select **P-0001**. This distribution schedule contains the RetailTransactionTable subjob that you customized.
     5. On the Action Pane, select **Run**. When the confirmation message appears, select **Yes**.
     6. On the Action Pane, select **History** to open the **History** page, where you can verify that the uploaded session was completed successfully.
     7. On the **History** page, verify that there is a new upload session record. Also verify that the status of the record is set to **Applied**, and that the **Rows Affected** value isn't **0** (zero).
 
-3. If the upload session is applied successfully, go to **Retail** > **Inquiries and reports** > **Retail store transactions**, and search for the new transactions that you just uploaded. Verify that the transactions, seat number, and server staff ID custom columns have the expected values.
+3. If the upload session is applied successfully, go to **Retail and Commerce** > **Inquiries and reports** > **Store transactions**, and search for the new transactions that you just uploaded. Verify that the transactions, seat number, and server staff ID custom columns have the expected values.
 
     Additionally, verify that the transactions that don't have a corresponding record in the [ext].ContosoRetailTransactionTable extension table on the channel side are also uploaded. Verify that these transactions have default values for the seat number and server staff ID. The seat number should be set to **0** (zero), and the server staff ID should be set to **000160**.

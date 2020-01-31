@@ -109,4 +109,4 @@ Follow these steps for every environment that was deployed under the old agreeme
 
 > [!NOTE]
 > - The movement of files that are stored in Azure Blob storage isn't supported in sandbox environments.
-> - Retail customers should be aware that extra steps are required in order for Retail components to work correctly after the move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).
+> - Commerce customers should be aware that extra steps are required in order for components to work correctly after the move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).

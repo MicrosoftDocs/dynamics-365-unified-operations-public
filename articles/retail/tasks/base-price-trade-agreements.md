@@ -32,13 +32,13 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure walks through creating channel-specific sales price trade agreements. This procedure uses the USRT demo data company.
 
-1. In the **Navigation pane**, go to **Modules > Retail and commerce > Pricing and discounts management > Price groups > All price groups**. Price groups are how trade agreements are assigned to specific channels. Using price groups to assign trade agreements to a channel enables channel-specific pricing.  
+1. In the **Navigation pane**, go to **Modules > Retail and Commerce > Pricing and discounts management > Price groups > All price groups**. Price groups are how trade agreements are assigned to specific channels. Using price groups to assign trade agreements to a channel enables channel-specific pricing.  
 2. Click **New**.
 3. In the **Price groups** field, type a value.
 4. In the **Name** field, type a value.
 5. Click **Save**.
 6. Close the page.
-7. In the **Navigation pane**, go to **Modules > Retail and commerce > Channels > Retail stores > All retail stores**.
+7. In the **Navigation pane**, go to **Modules > Retail and Commerce > Channels > Stores > All stores**.
 8. In the list, select 'New York'
 9. On the Action Pane, click **Store**.
 10. Click **Price groups**.
@@ -48,7 +48,7 @@ This procedure walks through creating channel-specific sales price trade agreeme
 14. Click **Save**.
 15. Close the page.
 16. Close the page.
-17. In the **Navigation pane**, go to **Modules > Retail and commerce > Products and categories > Released products by category**.
+17. In the **Navigation pane**, go to **Modules > Retail and Commerce > Products and categories > Released products by category**.
 18. In the list, click the link in the selected row.
 19. Click **Edit**.
 20. Expand the **Sell** fastTab.
@@ -58,7 +58,7 @@ This procedure walks through creating channel-specific sales price trade agreeme
 24. Click **Create trade agreements**.
 25. Click **New**.
 26. In the **Name** field, click the drop-down button to open the lookup.
-27. In the list, select **Retail**. In the demo data, the **Retail** journal name has the default relation of **Price (sales)**. That means all new lines created will default to sales price trade agreements.  
+27. In the list, select **Commerce**. In the demo data, the **Commerce** journal name has the default relation of **Price (sales)**. That means all new lines created will default to sales price trade agreements.  
 28. On the **Action pane**, click **Lines**.
 29. In the **Account code** field, select 'Group'.
 30. In the **Account selection** field, click the drop-down button to open the lookup.
