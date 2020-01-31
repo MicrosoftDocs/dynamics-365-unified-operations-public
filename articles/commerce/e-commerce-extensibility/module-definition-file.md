@@ -160,7 +160,7 @@ You can then access the results of the data action in your module.
 
 ## Module resource schema
 
-- **"resources"** – This property is used for localizing resources. When resources strings are defined, the localized strings are pulled from corresponding JavaScript Object Notation (JSON) files. These files are stored under the **/src/resources/modules/** directory. They include a **global.json** file for default locale values and any localized JSON files that are required, such as **fr-fr.json**.
+- **"resources"** – This property is used to localize resources. When resources strings are defined, the localized strings are pulled from corresponding JavaScript Object Notation (JSON) files. These files are stored under the **/src/resources/modules/** directory. They include a **global.json** file for default locale values and any localized JSON files that are required, such as **fr-fr.json**.
 - **"resourcekey"** – The name of the resource. Resource keys can then be accessed in code via the **this.props.resources.resourceKey** property.
 - **"comment"** – A string that identifies the purpose of the string, to help with localization.
 - **"value"** – The resource string data that will be used in the module.
