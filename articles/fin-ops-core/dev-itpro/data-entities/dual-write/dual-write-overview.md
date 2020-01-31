@@ -32,7 +32,9 @@ ms.search.validFrom: 2019-07-15
 
 # Near-real-time data integration with Common Data Service
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 In the current digital world, business ecosystems use Microsoft Dynamics 365 applications as a whole. Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops. To achieve this experience, integration between Finance and Operations apps and other Dynamics 365 applications is essential. Some applications are built on top of Common Data Service. Integration between Finance and Operations apps data with Common Data Service lets other applications communicate coherently and fluently with Finance and Operations.
 
@@ -42,14 +44,14 @@ Finance and Operations apps and Common Data Service provide near-real-time data 
 
 The following value propositions are available:
 
-+ [Organization hierarchy in Common Data Service](dual-write-organization.md)
-+ [Company concept in Common Data Service](dual-write-company.md)
-+ [Integrated customer master](dual-write-customer.md)
-+ [Integrated ledger](dual-write-ledger.md)
-+ [Unified product experience](dual-write-product.md)
-+ [Integrated vendor master](dual-write-vendor.md)
-+ [Integrated sites and warehouses](dual-write-sites-and-warehouses.md)
-+ [Integrated tax master](dual-write-tax.md)
++ [Organization hierarchy in Common Data Service](organization-mapping.md)
++ [Company concept in Common Data Service](company-data.md)
++ [Integrated customer master](customer-mapping.md)
++ [Integrated ledger](ledger-mapping.md)
++ [Unified product experience](product-mapping.md)
++ [Integrated vendor master](vendor-mapping.md)
++ [Integrated sites and warehouses](sites-warehouses-mapping.md)
++ [Integrated tax master](tax-mapping.md)
 
 ## System requirements
 
@@ -71,7 +73,7 @@ Follow these steps to set up integration between Finance and Operations apps and
     + Dynamics365FinanceCommon
     + Dynamics365SupplyChainCommon
 
-3. Follow the execution order for [synchronizing initial reference data](dual-write-initial.md).
+3. Follow the execution order for [synchronizing initial reference data](initial-sync.md).
 4. If you encounter dual-write synchronization issues, see the [Troubleshooting guide for data integration](dual-write-troubleshooting.md).
 
 > [!IMPORTANT]

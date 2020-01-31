@@ -32,7 +32,9 @@ ms.search.validFrom: 2019-08-15
 
 # Integrated sites and warehouses
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 This topic describes the integration of site and warehouse data between Finance and Operations and Common Data Service. Operational sites and warehouses are common concepts in a Supply Chain Management application. They are used to model the supply chain of your company.
 

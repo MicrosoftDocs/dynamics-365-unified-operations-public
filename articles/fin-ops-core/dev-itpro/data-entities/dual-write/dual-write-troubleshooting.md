@@ -32,9 +32,11 @@ ms.search.validFrom: 2019-07-15
 
 # Troubleshooting guide for data integration
 
-## Enable plug-in trace logs in Common Data Service and inspect the dual-write plug-in error details
+[!include [banner](../../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+[!include [preview-banner](../../includes/preview-banner.md)]
+
+## Enable plug-in trace logs in Common Data Service and inspect the dual-write plug-in error details
 
 If you experience an issue or error during dual-write synchronization, follow these steps to inspect the errors in the trace log.
 

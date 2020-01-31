@@ -62,7 +62,9 @@ Legal entities | msdyn_internalorganizations |
 Legal entities | cdm_companies | Provides bidirectional synchronization of legal entity (company) information.
 
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 [!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 

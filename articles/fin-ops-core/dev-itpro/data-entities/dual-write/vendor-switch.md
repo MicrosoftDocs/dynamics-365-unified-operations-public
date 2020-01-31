@@ -32,7 +32,8 @@ ms.search.validFrom: 2019-09-20
 
 # Switch between vendor designs
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 ## Vendor data flow 
 

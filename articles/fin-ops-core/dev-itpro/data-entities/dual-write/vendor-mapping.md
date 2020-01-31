@@ -32,7 +32,9 @@ ms.search.validFrom: 2019-07-15
 
 # Integrated vendor master
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+
+[!include [preview-banner](../../includes/preview-banner.md)]
 
 The term *vendor* refers to a supplier organization or a sole proprietor that is part of the supply chain process, and that supplies goods for the business. Although *vendor* is an established concept in Finance and Operations apps, a vendor concept doesn't exist in other Dynamics 365 apps. Instead, some businesses overload the Account entity to store both customer information and vendor information. Other businesses use a custom vendor concept. Common Data Service integration supports both these designs. Therefore, you can enable either of the designs, depending on your business scenario.
 
@@ -68,7 +70,7 @@ Payment days CDS            | msdyn_paymentdays               | The [payment day
 Terms of payment            | msdyn_paymentterms              | The [terms of payment](includes-customer.md#terms-of-payment-to-msdyn_paymentterms) template synchronizes payment terms reference data, for both customers and vendors.
 Name affixes                | msdyn_nameaffixes               | The [name affixes](includes-customer.md#name-affixes-to-msdyn_nameaffixes) template synchronizes name affixes reference data, for both customers and vendors.
 
-[!include [symbols](../includes/dual-write-symbols.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
 
 [!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
 
