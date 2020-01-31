@@ -247,6 +247,7 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
     + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
+
 > [!NOTE]
 > The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    

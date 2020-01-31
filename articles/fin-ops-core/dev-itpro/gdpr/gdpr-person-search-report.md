@@ -108,7 +108,6 @@ To use the Person search report, you must complete these tasks.
 > Documents that are attached to records are not included in the data export. Attachments must be manually downloaded and shared with the individual who requested personal data.
 
 
-
 ## Additional resources
 
 You can learn more about the GDPR on the [European Union's website](https://europa.eu/), from information on the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx) and in [General Data Protection Regulation overview](./gdpr-guide.md).
