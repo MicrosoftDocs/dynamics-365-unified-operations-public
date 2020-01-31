@@ -426,7 +426,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in the [Set up Retail for Austria](#set-up-retail-for-austria) section.
+5. Complete all the required setup tasks that are described in the [Set up Commerce for Austria](#set-up-Commerce-for-austria) section.
 
 ## Design of extensions
 
