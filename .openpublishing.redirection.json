@@ -12282,7 +12282,7 @@
     },
     {
       "source_path": "articles/talent/talent-fo-integration.md",
-      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-faq",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-integration-faq",
       "redirect_document_id": "false"
     },
     {
@@ -12522,7 +12522,7 @@
     },
     {
       "source_path": "articles/talent/manage-benefit-program.md",
-      "redirect_url": "/dynamics365/human-resources/hr-benefits-overview",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-management-overview",
       "redirect_document_id": "false"
     },
     {
