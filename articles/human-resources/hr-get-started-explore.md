@@ -47,8 +47,6 @@ Navigating Dynamics 365 Human Resources is the same as it is for all Dynamics 36
 ## See also
 
 - [Get started with Human Resources](hr-get-started.md)
-- [Expore Human Resources](hr-get-started-explore.md)
-- [Training resources](hr-get-started-training-resources.md)
+- [Admin Guide](hr-admin-overview.md)
 - [Developer Guide](hr-developer-overview.md)
-- [HR Pro Guide](hr-hrpro-overview.md)
-- [Employee Guide](hr-employee-overview.md)
+- [User Guide](hr-hrpro-overview.md)
