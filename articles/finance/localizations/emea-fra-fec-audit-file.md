@@ -3,9 +3,9 @@
 
 title: Generate the Standard Audit File for France (FEC)
 description: This topic walks you through generating the Standard Audit File for France (FEC) in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: anasyash
 manager: AnnBe
-ms.date: 11/10/2017
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,31 +34,34 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This procedure walks you through generating the Standard Audit File (FEC) for France in the electronic file format. French tax authorities require audit files that are generated in the FEC format.
 
-Before you can generate a FEC audit file, you must 
-1. Set up number sequences for vouchers properly: each voucher series must contain a text part which is considered as a JournalCode in FEC audit report.
-> For example, configure voucher series for vendor invoice journal as FRSIFACF-######## to get *JournalCode* as "FRSIFACF" in FEC.txt file.
+Before you can generate a FEC audit file, you must:
+
+1. Set up number sequences for vouchers. Each voucher series must contain a portion of text which is considered the **JournalCode** in the **FEC audit** report. For example, configure a voucher series for vendor invoice journals as **FRSIFACF-########** to get the **JournalCode**, "FRSIFACF" in the FEC.txt file.
 2. Import the latest version of the Electronic reporting configuration **French FEC audit file**. 
 For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-3. On the **Configurations** page, expand **Data export model**, select **French FEC model mapping**. Set **Default for model mapping** to **Yes**
+3. On the **Configurations** page, expand **Data export model**, select **French FEC model mapping**, and set **Default for model mapping** to **Yes**.
 
-## Generate the Standard Audit File for France
+## Generate the Standard audit file for France
 1. Go to **General Ledger** > **Periodic tasks** > **Data export** to open the **Data export** page.
 2. In the **Format mapping** field, select *French FEC audit file*.
 3. Click **OK**.
 4. On the **Electronic report parameters** page, enter start and end dates of the period in the fields **Period - date from**, **Period - date to** and click **OK**.
 5. Review the generated file.
 
-## Review the standard audit file.
-As result, an archive file with 5 reports is generated:
+## Review the Standard audit file
+When the Standard audit file is generated, an archive file with the following five reports is also generated.
+
 - FEC.txt
 - Vendor incoming.txt
 - Customer incoming.txt
 - Vendor balance.txt
 - Customer balance.txt
 
-Consider the following information about how data are filled in the reports:
-- **JournalCode**: contains the text part of the voucher. If voucher series doesn't have a text part, the value will be blank. You should set up voucher series properly to have correct value in this field
-- **JournalLib**: 
-   - In reports *Vendor balance.txt* and *Customer balance.txt*, it has constant value "System"
-   - In reports *Vendor incoming.txt* and *Customer incoming.txt*, it has the value of **Transaction type** field from **Vendor transaction** or **Customer transaction** accordingly (for example, it may have values **purchase order**, **payment**, etc...)
-   - In report *FEC.txt*, it has the value of **Transaction type** field from **Voucher transaction**. If **Transaction type** = **General journal**, it has value of the field **Description** of the ledger journal which is the source of the voucher transaction (check the value on **Journal names** page).
+Consider the following information for select fields in the reports:
+
+- **JournalCode** field: Contains the text part of the voucher. If voucher series doesn't have a text part, the value will be blank. You should set up voucher series properly to have correct value in this field.
+- **JournalLib** field: 
+
+   - In the **Vendor balance.txt** and **Customer balance.txt** reports, it has constant value **System**.
+   - In the **Vendor incoming.txt** and **Customer incoming.txt** reports, it has the value of the **Transaction type** field from the reports, **Vendor transaction** or **Customer transaction**. Possible values could be **Purchase order** or **Payment**.
+   - In the **FEC.txt** report, it has the value of the **Transaction type** field from the **Voucher transaction** report. If the **Transaction type** equals **General journal**, it has value in the **Description** field of the ledger journal, which is the source of the voucher transaction. Verify by checking the value on **Journal names** page.
