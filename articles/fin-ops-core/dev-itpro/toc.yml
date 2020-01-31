@@ -468,9 +468,9 @@
           href: help/deploy.md
         - name: Deploying help websites on Azure
           href: help/website.md
-	- name: Connect custom help to the help pane
+        - name: Connect custom help to the help pane
           href: help/connect-help-pane.md
-	- name: Language and locale descriptors in across product and Help
+        - name: Language and locale descriptors in across product and Help
           href: help/language-locale.md
         - name: Custom Help Toolkit
           href: help/custom-help-toolkit.md

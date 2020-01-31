@@ -47,7 +47,7 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 1. Fork the right repo
 
-    You cannot work directly in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo. For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
+    You cannot work directly in the repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo. For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
 
     > [!TIP]
     > You are not required to make your GitHub repos public. When you fork a public repo, you can specify in the settings for the new repo if the repo is public, private, or available only to specific GitHub accounts.
@@ -73,22 +73,6 @@ Internally at Microsoft, some authors use Code, others use Atom, and for light-w
 
 > [!IMPORTANT]
 > The [Writate](https://writage.com/) plugin for Word can be very helpful for converting existing content to MarkDown, but we recommend that you do not use it to edit MarkDown files in Word. When you save the MarkDown file, all metadata tags and some of the formatting is erased.
-
-<!--### What the GitHub repos contain
-
-Microsoft's GitHub repos for Help contain the following folders:
-
-- accountant
-
-    Contains files that are relevant for Dynami
-- invoicing
-
-    Contains files that are relevant for Microsoft Invoicing
-- media-source
-
-    Contains source files for some of the pictures that are used in
-
-<!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 
 ### Get updates from Microsoft
 
