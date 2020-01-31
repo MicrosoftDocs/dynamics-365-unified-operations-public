@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1425,8 +1425,9 @@ The located assembly's manifest definition does not match the assembly reference
 **Reason:** There is a .dll mismatch between the runtime and the application.
 
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
-## DBSync fails with PEAP APP 10.0.9 PU33
-**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service fabric explorer. When looking into the logs on the AXSF nodes's work directories the following DBSync error can be found. 
+
+## DBSync fails with PEAP version 10.0.9 Platform update 33
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
 
 Error message from DBSync:
  ```stacktrace
@@ -1452,11 +1453,4 @@ Stack trace: Invalid attempt to call  running in CIL on the client.
 DB sync failed.
 ```
 
-**Reason:** This issue happens because there is data in the SQL DatabaseLog table which conflicts with the Metadata in the package.
-
-**Resolution:** Run the following query on AXDB to clean the DatabaseLog tabel and retry the deployment.
-
-```sql
-select * into databaselog_bak from databaselog
-truncate table databaselog
-```
+**Reason:** This issue occurs because there is data in the SQL DatabaseLog table that conflicts with the metadata in the package.
