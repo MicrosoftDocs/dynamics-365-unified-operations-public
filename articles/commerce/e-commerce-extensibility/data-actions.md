@@ -44,7 +44,7 @@ Data actions offer improved performance through the following features:
 - Built-in utilities support batching to minimize the number of external requests that your application requires.
 - Automatic deduplication helps guarantee that multiple data action calls aren't duplicated.
 
-The Dynamics 365 Commerce platform includes a set of core data actions that can be called from modules to do typical retail data retrieval. For example, core data actions can return product details. You can also create custom data actions to fetch and process data that is required by modules.
+The Dynamics 365 Commerce platform includes a set of core data actions that can be called from modules to do typical data retrieval. For example, core data actions can return product details. You can also create custom data actions to fetch and process data that is required by modules.
 
 ## Anatomy of a data action
 

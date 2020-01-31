@@ -52,7 +52,7 @@ The e-Commerce platform Store Starter Kit (SSK) includes a set of data actions f
 
 ### Custom data actions
 
-You can create custom data actions and use them in your modules. Custom data actions can be globally scoped so that they can be used across multiple modules. Alternatively, they can be used in a single module. Custom data actions can call Dynamics 365 Commerce proxy application programming interfaces (APIs), or any other service provider, to get retail data. Custom business logic can be applied as required.
+You can create custom data actions and use them in your modules. Custom data actions can be globally scoped so that they can be used across multiple modules. Alternatively, they can be used in a single module. Custom data actions can call Dynamics 365 Commerce proxy application programming interfaces (APIs), or any other service provider, to get data. Custom business logic can be applied as required.
 
 ## Themes
 

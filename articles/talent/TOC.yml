@@ -8,6 +8,10 @@
     - name: What's new or changed in Talent
       href: whats-new.md
       items:
+      - name: January 21, 2020
+        href: whats-new-talent-january-21-2020.md
+      - name: January 14, 2020
+        href: whats-new-talent-january-14-2020.md
       - name: January 7, 2020
         href: whats-new-talent-january-7-2020.md
       - name: December 17, 2019
@@ -30,12 +34,12 @@
         href: whats-new-talent-october-8-2019.md
       - name: October 1, 2019
         href: whats-new-talent-october-1-2019.md
-      - name: September 17, 2019
-        href: whats-new-talent-september-17-2019.md
-      - name: September 10, 2019
-        href: whats-new-talent-september-12-2019.md
       - name: What's new archives 2019
         items: 
+        - name: September 17, 2019
+          href: whats-new-talent-september-17-2019.md
+        - name: September 10, 2019
+          href: whats-new-talent-september-12-2019.md
         - name: August 27, 2019
           href: whats-new-talent-august-28-2019.md
         - name: August 22, 2019
@@ -146,6 +150,8 @@
       href: access-preview-feature.md
     - name: Provision Onboard
       href: modular-app-tech-faq.md
+    - name: Export data from Attract and Onboard
+      href: attract-onboard-export-data.md
     - name: Embed Power Apps apps
       href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Core HR entities in Common Data Service

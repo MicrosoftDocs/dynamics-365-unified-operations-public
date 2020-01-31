@@ -5,7 +5,7 @@ title: Provision a Commerce preview environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce preview environment.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # Provision a Commerce preview environment
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to provision a Microsoft Dynamics 365 Commerce preview environment.
@@ -56,6 +56,7 @@ If you have any questions about the provisioning steps, or if you encounter any 
 The following prerequisites must be in place before you can provision your Commerce preview environment:
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
+- You are an existing Microsoft Dynamics 365 partner or customer and are able to create a Dynamics 365 Retail project.
 - You've been accepted into the Dynamics 365 Commerce Preview program.
 - You have the required permissions to create a project for **Prospective presales** or **Migrate, create solutions, and learn**.
 - You're a member of the **Environment manager** or **Project owner** role in the project where you will provision the environment.
