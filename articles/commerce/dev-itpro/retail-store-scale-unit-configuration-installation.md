@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure and install Retail Store Scale Unit
+title: Configure and install Commerce Scale Unit
 description: This topic explains how you can use self-service to configure Commerce Scale Unit in Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store.
 author: jashanno
 manager: AnnBe
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Configure and install Retail Store Scale Unit
+# Configure and install Commerce Scale Unit
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can use self-service to configure Commerce Scale Unit in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Commerce Scale Unit, and Retail Cloud point of sale (POS) components. A Commerce environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
+This topic explains how you can use self-service to configure Commerce Scale Unit in Microsoft Dynamics 365 Commerce Headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit combines the Commerce channel database, Commerce Async Client, Commerce Scale Unit, and Cloud point of sale (POS) components. A Commerce environment already provides these components. However, you can now configure them so that they work locally in a store, in either a single-computer setup (the default option) or a multiple-computer setup. This topic also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate in addition to Azure Service to Service authentication.  Both the generated Azure web application keys (Formerly called Secrets) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
@@ -46,7 +46,7 @@ This topic explains how you can use self-service to configure Commerce Scale Uni
 1. Generate a Microsoft Azure Active Directory (Azure AD) app registration to create an application ID (client ID) and key (secret). For instructions, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). This topic reviews Azure user permissions and requirements, and explains how to generate an app registration. 
 
     > [!IMPORTANT]
-    > If you are installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md).
+    > If you are installing Commerce Scale Unit for use with an on-premises environment using Active Directory Federation Services, instead of Azure, follow the instructions in the Commerce installation document for on-premises environments. For more information, see [Installation steps for Commerce channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md).
 
 2. After an application ID (client ID) and key are created for Commerce Scale Unit, the client ID must be accepted in Commerce. Go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
@@ -104,7 +104,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 
 17. On the **Profile properties** FastTab for the new channel profile, select **Add**.
 18. In the **Property key** field, select **Cloud POS URL**.
-19. In the **Property value** field, enter the URL of the Retail Cloud POS instance that should be installed for Commerce Scale Unit.
+19. In the **Property value** field, enter the URL of the Cloud POS instance that should be installed for Commerce Scale Unit.
 
     The standard format for the URL of Cloud POS is **https://&lt;Computer Name&gt;:&lt;Port&gt;/POS**. In this format, **&lt;Computer Name&gt;** is either the FQDN of the computer where Commerce Scale Unit is installed or, for systems that aren't joined to a domain, the full computer name. **&lt;Port&gt;** is the port number that should be used in the installation. The port number must be a value between 1 and 65535. If you're using the default HTTPS port (443), you don't have to specify the port number.
 
@@ -175,10 +175,10 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 
    - Commerce channel database together with Async Client
    - Commerce Scale Unit
-   - Retail Cloud POS
+   - Cloud POS
 
      > [!NOTE]
-     > - To install Retail Cloud POS, you must also select and install Commerce Scale Unit. If you will use only Retail Modern POS in the store, clear the **Retail Cloud POS** check box, and continue with installation process as it's described here.
+     > - To install Cloud POS, you must also select and install Commerce Scale Unit. If you will use only Modern POS in the store, clear the **Retail Cloud POS** check box, and continue with installation process as it's described here.
      > - By default, the installer installs all components on one computer. To install the components across multiple computers, you must complete additional manual steps. For more information, see the "Multiple-computer installation" section.
 
      After you've selected all the components to install, select **Next** to continue.
@@ -214,8 +214,8 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
     For information about how to create web applications in Azure, see [Create an Azure Active Directory application](/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application). 
     
     > [!IMPORTANT] 
-    > - When installing Commerce Scale Unit for use with an on-premises environment, Retail Cloud POS does not require an Azure or AD FS application to be configured, so it is important to unmark **Configure Retail Cloud POS**.
-    > - When installing Commerce Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Retail channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md) topic. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
+    > - When installing Commerce Scale Unit for use with an on-premises environment, Cloud POS does not require an Azure or AD FS application to be configured, so it is important to unmark **Configure Retail Cloud POS**.
+    > - When installing Commerce Scale Unit for use with an on-premises environment, the Client ID (Application ID) and Secret (Key) used will be the values generated by the PowerShell script performed in the configuration steps performed in steps 6-8 in the [Installation steps for Commerce channel components in an on-premises environment](../../dev-itpro/deployment/deploy-retail-onprem.md) topic. (Step 6 creates the Client ID and step 8 resets the Secret to be copied.)
 
     When you create the Web App, the initial URI and URL don't have to be any specific value. Only the application ID (client ID) and key (secret) that are created are important.
 
@@ -230,7 +230,7 @@ The last steps require validation and verification that the Azure application ID
 
     In Headquarters, go to **System administration** &gt; **Setup** &gt; **Azure Active Directory applications**. Enter the application ID (client ID) in the **Client ID** column, enter descriptive text in the **Name** column, and enter **RetailServiceAccount** in the **User ID** column.
 
-2. If Retail Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Commerce shared parameters** page in Commerce.
+2. If Cloud POS is configured for use, a client ID is shown at the end of the installation. You must add this client ID to the **Commerce shared parameters** page in Commerce.
 
     > [!IMPORTANT] 
     > In an on-premises environment, this step is not required to be completed.
@@ -282,11 +282,11 @@ The last steps require validation and verification that the Azure application ID
 >
 > - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Commerce Scale Unit installation (for example, CommerceScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
 > - The application ID (client ID) of the manually created web application has been added to the **Azure Active Directory applications** page in Commerce, as explained in step 1 of the preceding procedure.
-> - The Retail Cloud POS application ID (client ID) that was shown at the end of the Commerce Scale Unit installer has been added on the **Identity providers** FastTab, as explained in the final steps of the "Run the Commerce Scale Unit installer" section.
+> - The Cloud POS application ID (client ID) that was shown at the end of the Commerce Scale Unit installer has been added on the **Identity providers** FastTab, as explained in the final steps of the "Run the Commerce Scale Unit installer" section.
 
 ### Multiple-computer installation
 
-Only advanced users should install Commerce Scale Unit across multiple computers. The following set of procedures explains how to install the Commerce channel database and Async Client on one computer, and Commerce Scale Unit and Retail Cloud POS on a second computer. The instructions assume that both systems are on the same domain, and that users for the services that will be installed have already been created on both systems. It's important that you do all configuration in Headquarters.
+Only advanced users should install Commerce Scale Unit across multiple computers. The following set of procedures explains how to install the Commerce channel database and Async Client on one computer, and Commerce Scale Unit and Cloud POS on a second computer. The instructions assume that both systems are on the same domain, and that users for the services that will be installed have already been created on both systems. It's important that you do all configuration in Headquarters.
 
 #### Installation on the first computer
 
@@ -323,7 +323,7 @@ For detailed information about SQL Server and Windows Firewall, see [Configure a
 
 On the second computer, run the Commerce Scale Unit Self-service installer as described earlier in this topic, but make the following changes.
 
-1. Select only Commerce Scale Unit and Retail Cloud POS as the components to install. If only Commerce Scale Unit must to be installed, don't select Retail Cloud POS. Then select **Next** to continue with the installation.
+1. Select only Commerce Scale Unit and Cloud POS as the components to install. If only Commerce Scale Unit must to be installed, don't select Cloud POS. Then select **Next** to continue with the installation.
 2. Enter the domain user credentials (user name and password) that have permission to access SQL Server on the first computer. Then select **Next**.
 
     > [!NOTE]
@@ -351,7 +351,7 @@ On the second computer, run the Commerce Scale Unit Self-service installer as de
     1. Import the SQL Server SSL certificate that you created earlier, and add it to Trusted Root.
     2. Open a **Command Prompt** window as an administrator, type **IISRESET**, and then press Enter.
 
-10. If Retail Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Commerce shared parameters** page.
+10. If Cloud POS is configured for use, a client ID is shown. You must add this client ID to the **Commerce shared parameters** page.
 
     1. In Commerce, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
     2. Select **Identity providers**.
@@ -366,8 +366,8 @@ On the second computer, run the Commerce Scale Unit Self-service installer as de
     2. On the Action Pane, select **Full Sync** &gt; **Job 9999**. Full synchronization might require several minutes.
     3. In the Commerce Scale Unit installer, retest to verify that all functionality is working correctly.
 
-12. Start Retail Cloud POS from the computer that you're using for POS operations. (This computer is a third computer that is separate from the Commerce Scale Unit systems.)
-13. Activate the Retail Cloud POS device that you're using for this computer.
+12. Start Cloud POS from the computer that you're using for POS operations. (This computer is a third computer that is separate from the Commerce Scale Unit systems.)
+13. Activate the Cloud POS device that you're using for this computer.
 14. Do a simple sale to verify full end-to-end functionality.
 
 ### Help secure Commerce Scale Unit
