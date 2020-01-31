@@ -5,7 +5,7 @@ title: Deploy your custom Help
 description: This topic describes how you can extend the Microsoft Help to reflect your solution and then connect that to the Help pane in Finance and Operations apps. 
 author: edupont04
 manager: AnnBe
-ms.date: 01/20/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -30,28 +30,36 @@ ms.dyn365.ops.version: Operations
 
 ---
 
-# Deploying custom Help
+# Deploying custom help
 
 [!include [banner](../includes/banner.md)]
 
-You can connect solution-specific and customer-specific Help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Retail. This topic describes the main steps and decision points.  
+You can connect solution-specific and customer-specific help content with the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client if your solution is based on Dynamics 365 Finance, Supply Chain Management, or Retail. Finance and Operations apps are rarely used out-of-the-box. Rather, the solution is customized and extended to fit the organization's needs. Similarly, you can customize and extend the Help experience. This topic describes the main steps and decision points.  
 
-## Plan your Help system
+> [!NOTE]
+> Users of Finance and Operations apps can create [custom task guides](/../../fin-ops/get-started/help-connect.md#create-custom-help-with-task-guides) to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are referred to as Help and can be provided by Microsoft, partners, and the organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
+
+:::image type="content" source="../../fin-ops/get-started/media/help-architecture.png" alt-text="Diagram showing a customized help solution and the Help pane.":::
+
+## Plan the Help system
 
 Depending on the customer's solution, Help content can come from different sources. In the following, we assume that you are a consultant from a Dynamics 365 partner who wants to add custom Help to their customer's solution, and that you want to connect the customer's Help solution with the in-product Help pane.  
 
-<!--COMMENTING OUT FOR NOW
-There are at least three different scenarios for where the source content for the customer's Help experience comes from:
+For the sake of simplicity, we're assuming that the customer uses a solution based on Dynamics 365 Finance with a large module added by the partner. There are no significant customizations of the core product functionality, and the users will not create or use task guides.  
 
-- The Help pane serves content from Microsoft and one additional provider on a custom help tab  
+In this simplified scenario, the partner deploys conceptual Help for their custom module to a website and then connects that website to the in-product Help pane as illustrated in the following diagram.  
 
-- The Help pane serves content from Microsoft and multiple additional providers on a custom help tab  
+:::image type="content" source="../media/help-architecture-custom1.png" alt-text="Diagram showing the Help pane with one custom help website connected and no task guides.":::
 
-- The Help pane serves content from one provider on a custom help tab, and does not include Microsoft Help content  
+As a result, when a user opens the Help pane, they are offered links to Help from the partner's website as well as from *docs.microsoft.com*.
 
-- The Help pane serves content from multiple providers on each their custom help tab, and does not include Microsoft Help content  
+If that scenario is too simple, then let us look at a couple of variants.
 
-The choice of scenario that you support in your implementation determines whether your custom Help implementation includes Microsoft Help content, and whether you need to collaborate with other solution providers or partners to combine help from multiple solutions.  -->
+### Variant 1
+
+In the first varient, the partner makes significant customizations of the core product as well. So on top of the Help that describes their own module, they also customize Microsoft's Help and deploy that customized content to their own website.
+
+:::image type="content" source="../media/help-architecture-custom2.png" alt-text="Diagram showing the Help pane with one custom help website connected and no task guides.":::
 
 ### Help site
 
