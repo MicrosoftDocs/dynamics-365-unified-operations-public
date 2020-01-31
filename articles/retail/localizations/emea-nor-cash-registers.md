@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Application update 4
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for Norway in Dynamics 365 Retail. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+This topic provides an overview of the cash register functionality that is available for Norway in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of-sale (POS) features that are available to customers in all countries or regions. Examples include an option that lets you prevent a copy of a receipt from being printed more than one time.
 - Norway-specific features, such as digital signatures for sales transactions.
@@ -44,7 +44,7 @@ To learn about POS features that are available to customers in all countries or 
 The following POS localization features that were previously implemented and made available to customers in all countries or regions can now be used specifically for Norway:
 
 - **Print text fields on a receipt in a large font size.** You can use the **Font size** parameter in the Receipt format designer to specify that the large font size should be used for a field in the receipt format. (The large font size is approximately double the usual font size.) For example, you can use this parameter to print the "Copy" indicator on a copy of a receipt in large characters.
-- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable copies of receipts to be printed and other POS audit events to be registered. The audit events are registered in the channel database and in Retail Headquarters. You can view the audit events on the **Audit events** page.
+- **Register the printing of receipt copies in the POS audit event log.** You can use the **Audit** parameter in the POS functionality profile to enable copies of receipts to be printed and other POS audit events to be registered. The audit events are registered in the channel database and in Headquarters. You can view the audit events on the **Audit events** page.
 - **Prevent a copy of a receipt from being printed more than one time.** When the **Audit** parameter in the POS functionality profile is enabled, the **Allow printing receipt copies** POS permission controls whether copies of receipts can be printed. There is also an option that lets you prevent a copy of a receipt from being printed more than one time.
 
 Additionally, the following POS feature was implemented for Norway but made available to customers in all countries or regions:
@@ -80,9 +80,9 @@ The data that is signed is a text string that consists of the following data fie
 5. Transaction amount including tax
 6. Transaction amount excluding tax
 
-The digital signing process uses an RSA 1024-bit key that has a SHA-1 hash function (RSA-SHA1-1024). A certificate that is installed on Retail Server is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
+The digital signing process uses an RSA 1024-bit key that has a SHA-1 hash function (RSA-SHA1-1024). A certificate that is installed on Commerce Scale Unit is used for signing. The unique identifier of the certificate (footprint) is recorded together with the signature.
 
-The signature is stored in the store database and the headquarters (HQ) database together with the transaction data. You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Retail store transactions** page.
+The signature is stored in the store database and the headquarters (HQ) database together with the transaction data. You can view the transaction signature, together with the transaction data that was used to generate it, on the **Fiscal transactions** FastTab of the **Store transactions** page.
 
 #### Receipts
 
@@ -114,11 +114,11 @@ The audit file can be exported for the following scenarios:
 
 You can also send a report from one legal entity on behalf of another legal entity. In this case, you must run the export from the operating legal entity and specify the reporting legal entity as the sender of the report.
 
-The SAF-T Cash Register format is implemented at Retail Headquarters by using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
+The SAF-T Cash Register format is implemented at Headquarters by using [Electronic reporting](../../dev-itpro/analytics/general-electronic-reporting.md). 
 
-## Setting up Retail for Norway
+## Setting up Commerce for Norway
 
-This section describes the settings that are specific to and recommended for Norway. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the settings that are specific to and recommended for Norway. For more information, see [Help resources for Dynamics 365 Retail](../index.md).
 
 To use the Norway-specific functionality, you must complete these tasks:
 
@@ -211,7 +211,7 @@ The SAF-T Cash Register configuration is available for download from Microsoft D
 - **DMM Retail channel data.version.1.6** – The data model mapping configuration.
 - **NO SAF T Cash Register.version.1.15** – The format configuration.
 
-After you import the configurations, on the **Retail parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
+After you import the configurations, on the **Commerce parameters** page, on the **Electronic documents** tab, in the **SAF-T Cash register export format** field, select the name of the format configuration that was imported.
 
 You must also map required master data to predefined SAF-T standard codes. For more information, see the SAF-T Cash register documentation that is provided by the Norwegian Tax Administration. To create the mapping, you must set the new **SAF-T Cash register code** field on the following pages:
 
@@ -219,6 +219,6 @@ You must also map required master data to predefined SAF-T standard codes. For m
 - Payment methods
 - Sales tax codes
 
-### Configure Retail channel components
+### Configure channel components
 
 To enable Norway-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-nor-loc-deployment-guidelines.md).

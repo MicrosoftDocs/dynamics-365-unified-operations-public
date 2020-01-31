@@ -45,7 +45,7 @@ This procedure walks through how to create a new hardware station. A new hardwar
     * This is the standard package that comes with a new environment. The version number may vary.  
 11. Click Save.
 12. Close the page.
-13. Go to Retail and commerce > Channels > All retail stores.
+13. Go to Retail and Commerce > Channels > All stores.
 14. In the list, select row 17.
     * If you are using the USRT demo data company, this is the Houston store.  
 15. In the list, click the link in the selected row.

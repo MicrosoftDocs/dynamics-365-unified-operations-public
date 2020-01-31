@@ -68,7 +68,7 @@ If multiple lines are selected, the order line details flyout menu will only ind
 
 ## Pending order lines
 
-Unified order fulfillment includes the ability to manually accept orders. By default, orders for fulfillment at the store are already accepted. However, if business processes dictate that a worker at the store level must accept orders, manual acceptance can be turned on at the retail store level. To enable order acceptance, go to **Retail** \> **Channels** \> **Retail stores** \> **All retail stores**. Open the desired store and on the **General** tab, locate the **Order fulfillment** sub header. This sub header has a **Manual accept** option that is set to **No** by default. By setting this option to **Yes** and synchronizing the changes to the channel database, order lines can go through the acceptance process.
+Unified order fulfillment includes the ability to manually accept orders. By default, orders for fulfillment at the store are already accepted. However, if business processes dictate that a worker at the store level must accept orders, manual acceptance can be turned on at the retail store level. To enable order acceptance, go to **Retail and Commerce** \> **Channels** \> **Stores** \> **All stores**. Open the desired store and on the **General** tab, locate the **Order fulfillment** sub header. This sub header has a **Manual accept** option that is set to **No** by default. By setting this option to **Yes** and synchronizing the changes to the channel database, order lines can go through the acceptance process.
 
 Workers with the **Allow accept order** permission can open order fulfillment and select lines for acceptance. Once lines have been accepted, their state changes from **Pending** to **Accepted** and the rest of the order fulfillment process can proceed. When **Manual accept** is turned on, orders will not be processed until they have been accepted.
 
@@ -100,7 +100,7 @@ After an order has been accepted, lines can be selected and marked as **Picking*
 
 Picking lists can be printed at the point of sale to assist workers performing the picking process. A printed picking list can be carried with the worker performing picking and as products are picked, the worker would manually mark them as picked on the picking list.
 
-The picking list format is configured in Retail and added to the receipt profile. For more information about setting up receipt
+The picking list format is configured in Commerce and added to the receipt profile. For more information about setting up receipt
 profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 If lines are selected and a picking list is printed for those lines, they are automatically updated with the **Picking** status.
@@ -127,7 +127,7 @@ Order lines can be packed at any point after the order line has been accepted.
 - **Resulting status:** Packed or partially packed
 - **Resulting back office status:** Delivered or partially delivered
 
-This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Retail and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+This action marks lines as packed or partially packed and prints a packing slip. A packing slip can be printed to validate the products that have been packed together. The packing slip format is configured in Commerce and added to the receipt profile. For more information about setting up receipt profiles, see [Receipt templates and printing](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Action: Mark as packed**
 
@@ -197,7 +197,7 @@ Continuing with the above example, if 200 boards are marked as packed and shippi
 
 ## Line statuses
 
-Order lines in the point of sale have several statuses to reflect the state of the order line. Statuses in the point of sale and back office do not match in all cases. Order line status can be viewed through the point of sale using the order fulfillment operations. In the back office, order lines can be viewed from the order details. Order details can be accessed through **Retail** \> **Customers** \> **All customer orders**. Select the **Order ID** to view order details. From order details select the **Sales order** tab, then select **Detailed status** under the **View** subheader.
+Order lines in the point of sale have several statuses to reflect the state of the order line. Statuses in the point of sale and back office do not match in all cases. Order line status can be viewed through the point of sale using the order fulfillment operations. In the back office, order lines can be viewed from the order details. Order details can be accessed through **Retail and Commerce** \> **Customers** \> **All customer orders**. Select the **Order ID** to view order details. From order details select the **Sales order** tab, then select **Detailed status** under the **View** subheader.
 
 - **Pending** – Order lines that have been assigned to a store, but not yet accepted have the **Pending** status when viewed at the point of sale. Lines pending acceptance in the point of sale will have the **Order processing** status in the back office.
 - **Accepted** – Order lines that have been manually accepted or automatically accepted will have the status of **Accepted** when viewed at the point of sale. Lines with the **Accepted** status will show as **Order processing** in the back office.

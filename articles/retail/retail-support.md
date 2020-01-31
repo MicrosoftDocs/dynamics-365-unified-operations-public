@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get support for Dynamics 365 Retail
-description: This article explains how to get help with Microsoft Dynamics 365 Retail. 
+description: This article explains how to get help with Microsoft Dynamics 365 Commerce. 
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -34,15 +34,15 @@ ms.dyn365.ops.version: Retail
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to get help with Dynamics 365 Retail.
+This article explains how to get help with Dynamics 365 Commerce.
 
 ## Contact support
 
-Use the information in this article to contact Microsoft if you have technical questions about Retail.
+Use the information in this article to contact Microsoft if you have technical questions about Commerce.
 
-### Retail support
+### Commerce support
 
-To obtain support for Retail, use the resources in the following table. These resources are listed in the order that we recommend that you follow when you're troubleshooting.
+To obtain support for Commerce, use the resources in the following table. These resources are listed in the order that we recommend that you follow when you're troubleshooting.
 
 <table>
 <thead>
@@ -58,7 +58,7 @@ To obtain support for Retail, use the resources in the following table. These re
 </tr>
 <tr>
 <td>Use the Issue search tool.</td>
-<td>In <a href="https://lcs.dynamics.com/">LCS</a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues in Retail. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs">Issue search (Lifecycle Services, LCS)</a>.</td>
+<td>In <a href="https://lcs.dynamics.com/">LCS</a>, use Issue search to quickly search for Microsoft Knowledge Base (KB) articles, hotfixes, and workarounds for reported issues. You can see which reported issues are in the process of being fixed or have already been fixed for a specific functional area. For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs">Issue search (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
 <td>Use the Cloud-powered support tool.</td>
@@ -75,7 +75,7 @@ To obtain support for Retail, use the resources in the following table. These re
 <td>If you have issues when you try to submit a ticket to Microsoft from the <strong>Support</strong> tile in LCS, see <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Contact Microsoft Business Solutions Support</a> for information about to contact a Microsoft Dynamics Regional Operations Center. The support team can help you resolve the following types of technical issues:
 <ul>
 <li>Errors that occur when you use LCS or issues that occur when you try to access LCS.</li>
-<li>Errors that occur when you use Retail.</li>
+<li>Errors that occur when you use Commerce.</li>
 </ul>
 For technical questions that are related to signing in to and accessing CustomerSource, e-learning, Search, Knowledge Base, file download, and page or system errors, go to <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Website Support</a>.</td>
 </tr>

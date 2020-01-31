@@ -44,7 +44,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set default options for email receipts
 
-1. Select **Retail &gt; Headquarters setup &gt; Parameters &gt; Retail parameters**.
+1. Select **Retail and Commerce &gt; Headquarters setup &gt; Parameters &gt; Commerce parameters**.
 2. On the **Posting** tab, on the **Email receipt** FastTab, in the **Receipt option** field, select a default option:
 
     - **Standard receipt** – Print receipts from the POS register.
@@ -55,9 +55,9 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set email receipt options for a customer
 
-1. Select **Retail &gt; Customers &gt; All customers**.
+1. Select **Retail and Commerce &gt; Customers &gt; All customers**.
 2. On the **All customers** list page, select a customer, and then select **Edit**.
-3. On the customer details page, on the **Retail** FastTab, in the **Receipt option** field, select an option:
+3. On the customer details page, on the **Commerce** FastTab, in the **Receipt option** field, select an option:
 
     - **Standard receipt** – The customer will receive only printed receipts. The printed receipt is generated from the POS register.
     - **Email** – The customer will receive only email receipts.
@@ -67,7 +67,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set up an email receipt profile
 
-1. Select **Retail &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Receipt profiles**.
+1. Select **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Receipt profiles**.
 2. Press Ctrl+N to create a receipt profile.
 3. Enter values in the **Receipt profile ID** and **Description** fields.
 4. On the **General** FastTab, select **Add** to add a receipt type.
@@ -75,7 +75,7 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Add an email receipt profile to the functionality profile
 
-1. Select **Retail &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Functionality profiles**.
+1. Select **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Functionality profiles**.
 2. Select **Edit**.
 3. On the **General** FastTab, in the **Receipt profile ID** field, specify an email receipt profile.
 

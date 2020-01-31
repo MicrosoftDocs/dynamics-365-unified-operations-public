@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
-description: This topic describes how to build extensions of the Retail components to enable printing advance invoices from POS in Czech Republic, Hungary, and Poland.
+description: This topic describes how to build extensions of the Commerce components to enable printing advance invoices from POS in Czech Republic, Hungary, and Poland.
 author: anmukh
 manager: ezubov
 ms.date: 11/01/2018
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 
 
-This topic shows how to enable the Dynamics 365 Retail localization for Czech Republic, Hungary, and Poland. The localization consists of several extensions of Retail components. These extensions let you print the **Advance Invoice** report from Point of Sale (POS). For more information about the Retail localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
+This topic shows how to enable the Dynamics 365 Commerce localization for Czech Republic, Hungary, and Poland. The localization consists of several extensions of Commerce components. These extensions let you print the **Advance Invoice** report from Point of Sale (POS). For more information about localization for Czech Republic, Hungary, and Poland, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 
-The localization is part of the Retail software development kit (SDK). For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The localization is part of the Retail software development kit (SDK). For information, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 The localization consists of extensions for the Commerce runtime (CRT) and POS. To enable this localization, you must modify the CRT configuration file and modify and build POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Team Services, where no files have been changed yet.
 
@@ -45,7 +45,7 @@ Complete these procedures to set up a development environment, so that you can t
 
 1. Find the extensions configuration file for CRT.
 
-    The file is named **commerceruntime.ext.config**, and is located in the **bin\\ext** folder under the IIS Retail Server site location.
+    The file is named **commerceruntime.ext.config**, and is located in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
 
 2. Register the CRT change in the extensions configuration file.
 
@@ -96,13 +96,13 @@ Complete these procedures to set up a development environment, so that you can t
 3. Rebuild the solution.
 4. Run Cloud POS in the debugger and test the functionality.
 
-### Set up required parameters in Retail headquarters
+### Set up required parameters in Headquarters
 
 For more information, see [Advance invoices for Retail for Eastern Europe](./emea-eeu-advance-invoices-for-retail.md).
 
 ## Production environment
 
-Follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 1. Complete the steps in the **Cloud POS extension components** or **Modern POS extension components** sections earlier in this topic.
 2. Make the following change in the package configuration files under the **RetailSdk\\Assets** folder.

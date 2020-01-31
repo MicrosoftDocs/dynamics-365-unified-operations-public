@@ -84,7 +84,7 @@ The control unit integration sample for Sweden doesn't currently support custome
 
 ## Setting up the integration with control units
 
-For more information about the setup that is required for Sweden, see [Setting up Retail for Sweden](./emea-swe-cash-registers.md#setting-up-retail-for-sweden).
+For more information about the setup that is required for Sweden, see [Setting up Commerce for Sweden](./emea-swe-cash-registers.md#setting-up-commerce-for-sweden).
 
 ### Configuring Sweden–specific receipts
 

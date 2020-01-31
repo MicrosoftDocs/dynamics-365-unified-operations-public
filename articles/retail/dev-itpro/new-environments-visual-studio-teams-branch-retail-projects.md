@@ -3,7 +3,7 @@
 # required metadata
 
 title: Set up new environments, Azure DevOps, and branches for Retail projects
-description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Retail implementation projects.
+description: This topic describes recommended practices for setting up new environments, Microsoft Azure DevOps, and branches for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
 ms.date: 07/09/2018
@@ -33,17 +33,17 @@ ms.dyn365.ops.version: Retail 7.3
 
 [!include [banner](../../includes/banner.md)]
 
-Most environments for Microsoft Dynamics 365 Retail projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
+Most environments for Microsoft Dynamics 365 Commerce projects are hosted in the cloud. They are either Microsoft-hosted on a Microsoft subscription or cloud-hosted on a customer subscription. By default, environments are Microsoft-hosted. You can use cloud-hosted environments to provide more control over a development or build environment. For more details, see the [Lifecycle Services (LCS) user guide](../../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## Development Tier 1 environments
 
 Development environments are called Tier 1 environments. There are three options for hosting a development environment:
 
-+ The Retail application comes with one Sandbox Tier 1 environment. (For details, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
++ The Commerce app comes with one Sandbox Tier 1 environment. (For details, see the [Microsoft Dynamics 365, Enterprise edition, Licensing Guide](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1CkHI).)
 + A cloud-hosted environment that you run on your own Microsoft Azure subscription. This type of environment is known as "cloud-hosted" in Microsoft Dynamics Lifecycle Services (LCS).
 + A downloaded virtual machine (VM) that you host in a location of your choice.
 
-If your implementation of Retail includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges in your development environment, you won't be able to install programming tools or configure the operating system.
+If your implementation of Commerce includes code extensions, we recommend that you use a development environment where you have administrator privileges. If you don't have administrator privileges in your development environment, you won't be able to install programming tools or configure the operating system.
 
 The hosting model that you choose has a financial impact. You can reduce some of the hosting cost by using a Tier 1 environment as a simple test environment or golden configuration environment. One Tier 1 environment is free with your Microsoft Dynamics subscription. Although this approach isn't ideal, it should work for most projects.
 
@@ -95,6 +95,7 @@ Tier 2 and higher machines are multi-box environments for multiple test and veri
 
 Branching is an important practice in software development. The [Branching and Merging Primer](https://msdn.microsoft.com/library/aa730834(v=vs.80).aspx) topic describes the advantages of branching:
 
+> [!NOTE]
 > A branching and merging strategy involves a tradeoff between risk and productivity. You trade the safety of working in isolation for the increased productivity of working with other people. The productivity increases come with a cost—the additional effort required for merging software assets sometime in the future.
 >
 > Using branches provides better isolation and control of individual software assets and increases productivity, because teams or individuals can work in parallel. However, using branches also requires an increase in merge activities and therefore risk, because you must later reassemble branches into a whole.
@@ -115,9 +116,9 @@ Here is an explanation of the setup. The numbers in brackets refer to the number
 - All three branches hold both X++ code (extensions and hotfixes in Metadata folders) and a copy of the Retail software development kit (SDK) in **RetailSdk** folders \[5, 6, 7\]. The Retail SDK includes base Microsoft code and code extensions. This base code and the code extensions can differ in each branch.
 - The **RetailSdk-mirror** folder \[4\] is used to bring in Microsoft changes to the Retail SDK. It isn't used for development or build purposes. It should be updated only when a new version or hotfix is used. For a detailed description of the process, see this [cheat sheet](https://dynamicsnotes.com/dynamics-365-for-finance-and-operations-hotfix-and-deployment-cheat-sheet/).
 
-For small Retail projects, it's acceptable to have only two branches (Main = Dev branch). However, developers must be more disciplined, because any code submissions can immediately affect the quality of test builds. 
+For small projects, it's acceptable to have only two branches (Main = Dev branch). However, developers must be more disciplined, because any code submissions can immediately affect the quality of test builds. 
 
-You can build deployable packages out of multiple branches. In this case, you must have one build definition for each branch that can be built. The initial build definition is automatically created when a build environment is deployed (Main branch). You can make copies of the build for other branches. Note that you must make small additions to incorporate the Retail code.
+You can build deployable packages out of multiple branches. In this case, you must have one build definition for each branch that can be built. The initial build definition is automatically created when a build environment is deployed (Main branch). You can make copies of the build for other branches. Note that you must make small additions to incorporate the Commerce code.
 
 The following high-level steps are used to set up an environment so that development work can begin. For details about the numbers in brackets, see the previous illustration and the related information.
 
@@ -229,15 +230,15 @@ Next, you must branch to each branch. Follow the same path that the code changes
 4. Follow the same steps to branch the **RetailSdk** folder of the **Dev** branch to the **Main** branch.
 5. Follow the same steps to branch the **RetailSdk** folder of the **Main** branch to the **ProdRel1** branch.
 
-At this point, you have the code branches and code locations for the X++ and Retail extensions setup. In Source Control Explorer, the file structure should resemble the following illustration.
+At this point, you have the code branches and code locations for the X++ and Commerce extensions setup. In Source Control Explorer, the file structure should resemble the following illustration.
 
 ![Source Control Explorer](./media/11-source-control-explorer.png)
 
-You should also change the version of the Retail customization. This version should differ in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file in the **RetailSdk\\BuildTools** folder. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
+You should also change the version of the Commerce customization. This version should differ in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file in the **RetailSdk\\BuildTools** folder. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 
 ## Prepare the development environment
 
-You can now prepare the development environment for Retail development tasks. The development environment will map the code locations for both X++ and the Retail SDK in the Dev branch to local folders. The Metadata folder (X++) must be always mapped to the PackagesLocalDirectory folder. The location of the RetailSdk folder must follow these guidelines:
+You can now prepare the development environment for Commerce development tasks. The development environment will map the code locations for both X++ and the Retail SDK in the Dev branch to local folders. The Metadata folder (X++) must be always mapped to the PackagesLocalDirectory folder. The location of the RetailSdk folder must follow these guidelines:
 
 - The location should be somewhere inside the local user's folder.
 - The file path of any file is limited to 256 characters. Therefore, use a short path for the root of the Retail SDK. For example, you can use **c:\\users\\\<user name\>\\Source\\RetailSdk**.
@@ -252,7 +253,7 @@ Regardless of whether there are customizations in the code branches, the followi
 
 1. Install your favorite development tools. For information about one automated script, see [Auto-Installing most needed dev tools in 5 mins with Chocolatey](https://dynamicsnotes.com/auto-installing-most-needed-dev-tools-in-5-mins/).
 2. To help reduce the compile time, exclude the code folders from Microsoft Windows Defender.
-3. If there is already code in the **Dev/Metadata** folder, build all Retail models. Select all the models, and then select **Database sync**.
+3. If there is already code in the **Dev/Metadata** folder, build all Commerce models. Select all the models, and then select **Database sync**.
 4. To speed up the development experience, switch to Microsoft Internet Information Services (IIS). For instructions, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/). This step can be done only on the Tier 1 VM where you have administrative privileges (cloud-hosted environment).
 5. Optional: Restore a recent copy of a production database that has good data.
 
@@ -269,10 +270,10 @@ Regardless of whether there are customizations in the code branches, the followi
         select * from dbo.RETAILCHANNELPROFILEPROPERTY where ISSYSTEMRECORD = 1
         ```
 
-    9. In Retail, run the **Initialize Retail Scheduler** job to delete old data.
+    9. In Commerce, run the **Initialize Retail Scheduler** job to delete old data.
 
-6. Make sure that you now can sign in to Retail by using your user account. If you aren't the Admin user in the production database, run the Admin provisioning tool to take ownership. (This tool is in the **PackagesLocalDirectory/bin** folder.)
-7. Verify that Commerce Data Exchange (CDX) data synchronization works. In Retail, go to **Download sessions**. You should see many applied sessions. If you don't see them, select job **9999**, and run it.
+6. Make sure that you can sign in to Commerce by using your user account. If you aren't the Admin user in the production database, run the Admin provisioning tool to take ownership. (This tool is in the **PackagesLocalDirectory/bin** folder.)
+7. Verify that Commerce Data Exchange (CDX) data synchronization works. In Commerce, go to **Download sessions**. You should see many applied sessions. If you don't see them, select job **9999**, and run it.
 8. Install TypeScript version 2.2.2 from <https://www.microsoft.com/download/details.aspx?id=48593>.
 9. Do a full build of the Retail SDK from a command prompt.
 
@@ -284,15 +285,15 @@ Regardless of whether there are customizations in the code branches, the followi
 11. Install MPOS or MPOSOffline by running the installer at **...\\RetailSDK \\References\\YourCompany|Contoso.ModernPOSSetupOffline.exe**. You must complete this step one time to deploy the ClientBroker files.
 12. In Visual Studio, open **ModernPOS.sln** (as an administrator), and do a full rebuild.
 13. Press F5 to start MPOS in the debugger.
-14. In Retail, open the **Channel profiles** page, and copy the Retail Server URL for the default channel profile.
-15. Open a browser window, and paste the URL into the address bar. You should be able to browse to your local Retail Server.
-16. In Retail, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
-17. In Retail, run job **1060** (**AX/Distribution schedule**).
-18. Activate MPOS by using the same Azure Active Directory (Azure AD) user that you added in step 16. Paste the Retail Server URL, select a store and a register, and finish the activation.
+14. In Commerce, open the **Channel profiles** page, and copy the Commerce Scale Unit URL for the default channel profile.
+15. Open a browser window, and paste the URL into the address bar. You should be able to browse to your local Commerce Scale Unit.
+16. In Commerce, add external user credentials to any worker (for activation), save the password, and don't allow a password reset on first sign-in.
+17. In Commerce, run job **1060** (**AX/Distribution schedule**).
+18. Activate MPOS by using the same Azure Active Directory (Azure AD) user that you added in step 16. Paste the Commerce Scale Unit URL, select a store and a register, and finish the activation.
 
 You should now be able to run MPOS in the debugger from your local sources.
 
-The process of preparing a development environment is now completed. At this point, any extension code (X++, Commerce runtime \[CRT\], Retail Server, channel SQL, and POS) can be written, debugged, tested, and submitted to Azure DevOps.
+The process of preparing a development environment is now completed. At this point, any extension code (X++, Commerce runtime \[CRT\], Commerce Scale Unit, channel SQL, and POS) can be written, debugged, tested, and submitted to Azure DevOps.
 
 ## Optional: Deploy a second build environment for a different release branch
 
@@ -337,7 +338,7 @@ If you had multiple build branches and environments, just clone the build defini
     - Set **DeployReports** to **0**.
     - Set **SkipSourcePackageGeneration** to **1**.
 
-- Change the version of the Retail customization in each branch. The version should be different in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file under the **RetailSdk\\BuildTools** folder. You can use any kind of numbering for the file name. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
+- Change the version of the Commerce customization in each branch. The version should be different in the Dev, Main, and ProdRel1 branches. Either change the Customization.settings file, or add a new global.props file under the **RetailSdk\\BuildTools** folder. You can use any kind of numbering for the file name. For example, you can number Dev as 1.0.0.x, Main as 1.0.1.x, and ProdRel1 as 1.0.2.x.
 - For efficiency, shut down build or development environments when they aren't being used.
 - If you're using cloud-hosted Tier 1 development environments (where you have administrative privileges), you can switch from IIS Express to IIS. Using IIS for running all web application is more robust, more performant, and avoids the switching. For details, see [MSDyn365FO. How to switch from IIS Express to IIS on development VM](https://ievgensaxblog.wordpress.com/2018/04/02/msdyn365fo-how-to-switch-from-iis-express-to-iis-on-development-vm/).
 - For prototyping purposes, a developer might want to change the Retail SDK on a development VM without using Azure DevOps source control. Always keep the original Retail SDK untouched, and make a copy that you can work in temporarily. In that way, you can take the unchanged Retail SDK into your mirror branch later, if it's required.

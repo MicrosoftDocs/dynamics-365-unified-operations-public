@@ -56,7 +56,7 @@ The store's language will also be used for the main POS login screen, since the 
 
 ### Configuring the store's language setting
 
-The store's language setting is set from **All retail stores** on the **Retail Store** page under **General &gt; Regional Settings &gt; Language**. Use the drop down to choose the language for each store.
+The store's language setting is set from **All stores** on the **Store** page under **General &gt; Regional Settings &gt; Language**. Use the drop-down list to choose the language for each store.
 
 ## User interface language
 
@@ -64,7 +64,7 @@ The POS user's language setting determines the translations used in the applicat
 
 ### Configuring the user's language setting
 
-The POS user's language setting is set from **All workers** on the **Worker** page under **Retail &gt; Language**. It is not set on the main Profile tab. This setting is not used by POS. If the user's language is not set or it is set to a language where translations are not available, the POS will revert to the store's language.
+The POS user's language setting is set from **All workers** on the **Worker** page under **Retail and Commerce &gt; Language**. It is not set on the main Profile tab. This setting is not used by POS. If the user's language is not set or it is set to a language where translations are not available, the POS will revert to the store's language.
 
 |             | UI language                | Data language (products, receipt formats, line display, etc.) |
 |-------------|----------------------------|---------------------------------------------------------------|

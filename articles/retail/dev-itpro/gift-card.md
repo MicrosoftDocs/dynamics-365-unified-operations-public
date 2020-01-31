@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for external gift cards
-description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Retail.
+description: This topic provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
 ms.date: 10/10/2017
@@ -35,13 +35,13 @@ ms.dyn365.ops.version: Application update 4
 
 To provide a seamless experience for their customers, retailers want to be able to accept a wide variety of payment methods. Gift cards are one of the most frequently used payment methods after cash and credit cards. An important requirement for many retailers is the ability to accept various types of gift cards, from various providers, at the point of sale (POS).
 
-Microsoft Dynamics 365 Retail now supports external gift cards. Therefore, retailers can accept third-party gift cards from gift card providers such GiveX by using the POS. To take advantage of this functionality, you must have an account with an external gift card service provider. This functionality differs from the out-of-box gift card support that the solution offered.
+Microsoft Dynamics 365 Commerce now supports external gift cards. Therefore, retailers can accept third-party gift cards from gift card providers such GiveX by using the POS. To take advantage of this functionality, you must have an account with an external gift card service provider. This functionality differs from the out-of-box gift card support that the solution offered.
 
 The out-of-box Verifone Payment connector has also been updated so that it supports the functionality for external gift cards. The initial update enables integration with GiveX.
 
-The external gift card must be configured for both the Retail headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
+The external gift card must be configured for both the Headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
 
-## Retail headquarters configuration
+## Headquarters configuration
 
 1. Search for **hardware profile** to open the **POS hardware profile** page.
 2. On the **POS hardware profile** page, follow these steps:
@@ -66,7 +66,7 @@ The external gift card must be configured for both the Retail headquarters and t
     3. In the **Default function** field, select **Card**.
     4. Select **Save**.
 
-5. Open the **All retail stores** page.
+5. Open the **All stores** page.
 6. In the list, select the **Houston** store.
 7. On the Action Pane, select **Set up** &gt; **Payment methods**.
 8. Select **New**.
@@ -110,15 +110,15 @@ The external gift card must be configured for both the Retail headquarters and t
 24. Check the status of the job by searching for **Download sessions**.
 25. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
-## Reset IIS if you're using Retail Store Scale Unit
+## Reset IIS if you're using Commerce Scale Unit
 
-If you're using a Retail Store Scale Unit (RSSU) that is located in the store, open a Command Prompt window as an administrator, and enter **iisreset**. Otherwise, wait for the Retail Server to be updated.
+If you're using a Commerce Scale Unit that is located in the store, open a Command Prompt window as an administrator, and enter **iisreset**. Otherwise, wait for the Commerce Scale Unit to be updated.
 
 ## Update merchant properties
 
 1. In File Explorer, go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Hardware Station\\ConfigurationUtility**.
 2. Run the **HardwareStationConfigurationUtility** executable program.
-3. Configure the utility by entering the correct Retail Server URL, and then select **Install**.
+3. Configure the utility by entering the correct Commerce Scale Unit URL, and then select **Install**.
 4. To verify that the download was successful, go to **C:\\ProgramData\\Microsoft Dynamics AX\\Retail Hardware Station**, and look at the timestamp of the **MerchantInformation.xml** file. It should be very recent.
 
 ## Configure and test Retail Modern POS
@@ -144,7 +144,7 @@ If you're using a Retail Store Scale Unit (RSSU) that is located in the store, o
 1. From an elevated command prompt, open the **HardwareStationConfigurationUtility.exe.config** file in Notepad.
 2. In the file, follow these steps:
 
-    1. Replace the **DataServiceUrl** value with the correct Retail Server URL.
+    1. Replace the **DataServiceUrl** value with the correct Commerce Scale Unit URL.
     2. Verify that the **AADLogonUrl** value is correct.
 
 3. Save and close the file.
@@ -155,7 +155,7 @@ If you're using a Retail Store Scale Unit (RSSU) that is located in the store, o
 1. Exit MPOS.
 2. Go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Hardware Station\\Package**.
 3. From an elevated command prompt, open the **Web.config** file in Notepad.
-4. Replace the **RetailServer** value with the correct Retail Server value.
+4. Replace the **RetailServer** value with the correct Commerce Scale Unit value.
 5. Save and close the file.
 6. Restart MPOS.
 7. If the issue persists, exit MPOS, use Task Manager to end any instances of dllhost.exe that are running, and then do another reset of Internet Information Services (IIS).

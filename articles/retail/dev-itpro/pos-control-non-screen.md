@@ -67,6 +67,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 5. Under **ViewExtensions**, create new folder named **SimpleProductDetails**.
 6. Add a new HTML file inside the **SimpleProductDetails** folder and name it **ProductAvailabilityPanel.html**.  
 7. Open **ProductAvailabilityPanel.html** and add the following code. The code adds a POS data list control to show the product availability information and the width of the control.
+
     ```html
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -85,8 +86,10 @@ A custom control is an HTML page with the custom information to be displayed. A 
     </body>
     </html>
     ```
+    
 8. In the **SimpleProductDetails** folder, add a new typescript file and name it **ProductAvailabilityPanel.ts**.
 9. Add the following **import** statements to import the relevant entities and context.
+
     ```typescript
     import {
 
@@ -101,11 +104,15 @@ A custom control is an HTML page with the custom information to be displayed. A 
     import { ArrayExtensions } from "PosApi/TypeExtensions";
     import { DataList, SelectionMode } from "PosUISdk/Controls/DataList";
     ```
+    
 10. Create a new class named **ProductAvailabilityPanel** and extend it from **SimpleProductDetailsCustomControlBase**.
+
     ```typescript
     export default class ProductAvailabilityPanel extends SimpleProductDetailsCustomControlBase { }
     ```
+
 11. Inside the class, declare the following variables for state and data list information.
+ 
     ```typescript
     private static readonly TEMPLATE_ID: string = "Microsot_Pos_Extensibility_Samples_ProductAvailabilityPanel";
     public readonly orgUnitAvailabilities: ObservableArray<ProxyEntities.OrgUnitAvailability>;
@@ -113,7 +120,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
     public readonly title: Observable<string>;
     private _state: ISimpleProductDetailsCustomControlState;
     ```
+
 12. Add a class constructor method to initialize the data list columns.
+
     ```typescript
     constructor(id: string, context: ISimpleProductDetailsCustomControlContext) {
 
@@ -175,7 +184,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
+
 13. Add the **OnReady** method to bind the HTML control.
+
     ```typescript
     public onReady(element: HTMLElement): void {
 
@@ -189,8 +200,10 @@ A custom control is an HTML page with the custom information to be displayed. A 
         });
     }
     ```
+
 14. Add the **init** method to get the product availability details so when the page loads, the data is fetched and updated in the data list.
-    ```typescript
+ 
+     ```typescript
     public init(state: ISimpleProductDetailsCustomControlState): void {
 
         this._state = state;
@@ -216,7 +229,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
     }
     ```
+   
     The entire code example is shown below.
+   
     ```typescript
     import {
         SimpleProductDetailsCustomControlBase,
@@ -339,8 +354,11 @@ A custom control is an HTML page with the custom information to be displayed. A 
         }
     }
     ```
+
 15. Create a new .json file and under the **ProdDetailsCustomColumnExtensions** folder and name it **manifest.json**.
+
 16. In the **manifest.json** file, add the following code.
+
     ```typescript
      {
 
@@ -370,8 +388,10 @@ A custom control is an HTML page with the custom information to be displayed. A 
         }
     }
     ```
+
 17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so during runtime POS will include the extension.
-    ```typescript
+ 
+     ```typescript
      {
         "extensionPackages": [
             {
@@ -383,7 +403,9 @@ A custom control is an HTML page with the custom information to be displayed. A 
         ]
     }
     ```
+
 18. Open the **tsconfig.json** and comment out the extension package folders from the exclude list. POS uses this file to include or exclude extensions. By default, the list contains the excluded extensions list. If you want to include any extension part of the POS, then you need add the extension folder name and comment out the extension from the extension list as shown.
+ 
     ```typescript
      "exclude": [
         "AuditEventExtensionSample",
@@ -398,6 +420,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
         //"ProdDetailsCustomColumnExtensions"
     ],
     ```
+
 19. Compile and rebuild the project.
 
 ## Validate the customization

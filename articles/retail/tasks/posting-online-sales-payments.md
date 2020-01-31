@@ -34,14 +34,14 @@ This procedure walks through configuring and running a recurrent batch job to cr
 
 Posting online sales and payments is a two-stage process.
 
-- Pulling the online retail transaction data in HQ.
+- Pulling the online commerce transaction data in HQ.
 - Synchronizing orders to create sales orders in HQ.
 
-Pulling the online retail transaction data can be done either by manually running the P-job or by creating a recurrent batch job.
+Pulling the online transaction data can be done either by manually running the P-job or by creating a recurrent batch job.
 
 ### Manually running the P-job
 
-1. Go to All workspaces > Retail IT.
+1. Go to All workspaces > Retail and Commerce IT.
 2. Click Distribution schedule.
 3. Select P-0001.
 4. Adjust channel database groups, if required.
@@ -50,7 +50,7 @@ Pulling the online retail transaction data can be done either by manually runnin
 
 ### Scheduling a recurring P-job
 
-1. Go to All workspaces > Retail IT.
+1. Go to All workspaces > Retail and Commerce IT.
 2. Click Distribution schedule.
 3. Select P-0001.
 4. Click Create batch job.
@@ -68,9 +68,9 @@ Orders can be synchronized either by manually running the "Synchronize orders"-j
 
 Follow these steps to manually run "Synchronize orders" job once.
 
-1. Go to All workspaces > Retail store financials.
+1. Go to All workspaces > Store financials.
 2. Click Synchronize orders.
-3. In the Organization hierarchy field, select 'Retail Stores by Region'.
+3. In the Organization hierarchy field, select 'Stores by Region'.
     * Select either a specific online store, or select a node if you want to create the batch job for a group of stores.  
     * Click the arrow to add your selection.  
 4. Click the Run in the background tab.
@@ -85,9 +85,9 @@ Follow these steps to manually run "Synchronize orders" job once.
 
 This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. This procedure uses the USRT company in demo data.
 
-1. Go to All workspaces > Retail store financials.
+1. Go to All workspaces > Store financials.
 2. Click Synchronize orders.
-3. In the Organization hierarchy field, select 'Retail Stores by Region'.
+3. In the Organization hierarchy field, select 'Stores by Region'.
     * Select either a specific online store, or select a node if you want to create the batch job for a group of stores.  
     * Click the arrow to add your selection.  
 4. Click the Run in the background tab.

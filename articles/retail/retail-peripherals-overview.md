@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail peripherals
-description: This topic explains the concepts that are related to retail peripherals. 
+description: This topic explains the concepts that are related to commerce peripherals. 
 author: rubencdelgado
 manager: AnnBe
 ms.date: 01/16/2019
@@ -33,19 +33,19 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-This topic explains the concepts that are related to retail peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This topic explains the concepts that are related to commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Concepts
 
 ### POS registers
 
-Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. 
+Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. 
 
-The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for retail peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.
+The point of sale (POS) register is an entity that is used to define the characteristics of a specific instance of the POS. These characteristics include the hardware profile or setup for commerce peripherals that will be used at the register, the store that the register is mapped to, and the visual experience for the user who signs in to that register.
 
 ### Devices
 
-Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. 
+Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Devices**. 
 
 A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
 
@@ -73,13 +73,13 @@ POS peripherals are devices that are explicitly supported for POS functions. The
 
 ### Hardware station
 
-Navigation: Click **Retail** &gt; **Channels** &gt; **Retail stores** &gt; **All retail stores**. 
+Navigation: Click **Retail and Commerce** &gt; **Channels** &gt; **Stores** &gt; **All stores**. 
 
-Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the retail peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS program for Windows. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it can be accessed via a network.
+Select a store, and then click the **Hardware stations** FastTab. The **Hardware station** setting is a channel-level setting that is used to define instances where the commerce peripheral logic will be deployed. This setting at the channel level is used to determine characteristics of the hardware station. It's also used to list hardware stations that are available for a Modern POS instance in a given store. The hardware station is built into the Modern POS program for Windows. The hardware station can also be deployed independently as a stand-alone Microsoft Internet Information Services (IIS) program. In this case, it can be accessed via a network.
 
 ### Hardware profile
 
-Navigation: Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. 
+Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. 
 
 The hardware profile is a list of devices that are configured for a POS register or a hardware station. The hardware profile can be mapped directly to a POS register or a hardware station.
 
@@ -130,9 +130,9 @@ Payment device support is implemented through the payment connector. Payment dev
 
 ### OPOS
 
-To help guarantee that the largest range of devices can be used with Retail, the OLE for POS industry standard is the primary retail peripheral device platform that is supported. The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for retail peripheral devices. OPOS is a widely adopted implementation of the OLE for POS standard. It was developed in the mid-1990s and has been updated several times since then. OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems. OPOS controls handle communication between compatible hardware and the POS software. An OPOS control consists of two parts:
+To help guarantee that the largest range of devices can be used with Commerce, the OLE for POS industry standard is the primary commerce peripheral device platform that is supported. The OLE for POS standard was produced by the National Retail Federation (NRF), which establishes industry-standard communication protocols for commerce peripheral devices. OPOS is a widely adopted implementation of the OLE for POS standard. It was developed in the mid-1990s and has been updated several times since then. OPOS provides a device driver architecture that enables easy integration of POS hardware with Windows–based POS systems. OPOS controls handle communication between compatible hardware and the POS software. An OPOS control consists of two parts:
 
-- **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Retail. Therefore, the testing helps guarantee that, if Retail supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS. You don't have to explicitly test each device type.
+- **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. Therefore, the testing helps guarantee that, if Commerce supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS. You don't have to explicitly test each device type.
 - **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
 [![Control object and service object](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -140,21 +140,21 @@ To help guarantee that the largest range of devices can be used with Retail, the
 Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.
 
 > [!NOTE]
-> OPOS support doesn't guarantee support for all devices that have OPOS drivers. Retail must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
+> OPOS support doesn't guarantee support for all devices that have OPOS drivers. Commerce must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
 
 ### Windows
 
-Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster than printing through Windows. Therefore, it's a good idea to use OPOS, especially in retail environments where 40-column receipts are printed and transaction times must be fast. For most devices, you will use OPOS controls. However, some OPOS receipt printers also support Windows drivers. By using a Windows driver, you can access the latest fonts and network one printer for multiple registers. However, there are drawbacks to using Windows drivers. Here are some examples of these drawbacks:
+Receipt printing at the POS is optimized for OPOS. OPOS tends to be much faster than printing through Windows. Therefore, it's a good idea to use OPOS, especially in commerce environments where 40-column receipts are printed and transaction times must be fast. For most devices, you will use OPOS controls. However, some OPOS receipt printers also support Windows drivers. By using a Windows driver, you can access the latest fonts and network one printer for multiple registers. However, there are drawbacks to using Windows drivers. Here are some examples of these drawbacks:
 
 - When Windows drivers are used, images are rendered before printing occurs. Therefore, printing tends to be slower than it is on printers that use OPOS controls.
 - Devices that are connected through the printer ("daisy-chained") might not work correctly when Windows drivers are used. For example, the cash drawer might not open, or the slip printer might not word as you expect.
-- OPOS also supports a more extensive set of variables that are specific to retail receipt printers, such as paper cutting or slip printing.
+- OPOS also supports a more extensive set of variables that are specific to receipt printers, such as paper cutting or slip printing.
 
-If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Retail.
+If OPOS controls are available for the Windows printer that you're using, the printer should still work correctly with Commerce.
 
 ### Universal Windows Platform
 
-UWP, in the case of retail peripherals, is related to Windows support for Plug and Play devices. When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, and it treats that device as a speaker. No additional setup is required. In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of service UWP devices are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
+UWP, in the case of commerce peripherals, is related to Windows support for Plug and Play devices. When a Plug and Play device is connected to a Windows OS version that supports that type of device, no driver is required for the device to be used as intended. For example, if Windows detects a Bluetooth speaker device, the OS knows that the device has the **Speaker** class type. Therefore, and it treats that device as a speaker. No additional setup is required. In the case of POS devices, many USB devices can be plugged in, and Windows will recognize them as Human Interface Devices (HIDs). However, it might not be able to determine the capabilities that the device provides, because the device doesn't specify the class, or type, of device. In Windows 10, device classes for bar code scanners and MSRs have been added. Therefore, if a device declares itself to Windows 10 as a device of one of these classes, Windows will listen for events from the device at the appropriate times. Modern POS supports UWP MSRs and scanners. Therefore, when it's ready for input from one of these devices, and a device that belongs to one of these classes is connected, the device can be used. For example, if a UWP bar code scanner is plugged into a Windows 10 computer, and bar code sign-in is configured for Modern POS, the bar code scanner will become active on the sign-in screen. No additional setup is required. Additional classes of point of service UWP devices are being added to Windows. These classes include classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
 ### Keyboard wedge
 
@@ -180,11 +180,11 @@ The Interprocess Communications (IPC) hardware station is built into the Modern 
 
 ### IIS
 
-You can use the IIS or stand-alone version of the hardware station in two ways. The descriptor "IIS" implies that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When IIS is used, the retail peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows includes built-in support for retail peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. The IIS hardware station is required for all non-Windows Modern POS applications.
+You can use the IIS or stand-alone version of the hardware station in two ways. The descriptor "IIS" implies that the POS application connects to the hardware station via Microsoft Internet Information Services. The POS application connects to the IIS hardware station via web services that run on a computer where the devices are connected. When IIS is used, the commerce peripherals that are connected to a hardware station can be used by any POS register that is on the same network as the IIS hardware station. Because only Modern POS for Windows includes built-in support for commerce peripherals, all other Modern POS applications must use the IIS hardware station to communicate with POS peripherals that are configured in the hardware profile. Therefore, each instance of the IIS hardware station requires a computer that runs the web service and application that communicates with the devices. The IIS hardware station is required for all non-Windows Modern POS applications.
 
 #### Dedicated
 
-Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used. However, the **Dedicated** type can also be used for IIS hardware stations. In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS. From a retail peripherals perspective, the dedicated IIS hardware station has better retail peripheral support for traditional, fixed POS scenarios. Dedicated hardware stations support all peripherals that are supported in the hardware profile.
+Modern POS uses hardware stations of the **Dedicated** type to detect that peripherals are directly connected to the computer where the app is being used. However, the **Dedicated** type can also be used for IIS hardware stations. In a traditional, fixed POS scenario that uses Cloud POS as the POS application, the **Dedicated** hardware station type is used for IIS hardware stations that are deployed on the same computer that is running Cloud POS. From a peripherals perspective, the dedicated IIS hardware station has better peripheral support for traditional, fixed POS scenarios. Dedicated hardware stations support all peripherals that are supported in the hardware profile.
 
 #### Shared
 
@@ -202,7 +202,7 @@ The network designation for devices in the hardware profile enables cash drawers
 
 #### Modern POS for Windows
 
-You can specify IP addresses for network peripherals in two places. If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself. In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station. To assign IP addresses, select that hardware station on the **Retail stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station. For hardware stations that have only network devices, you don't have to deploy the hardware station itself. In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the retail store.
+You can specify IP addresses for network peripherals in two places. If the Modern POS Windows client is using a single set of network peripherals, you should set the IP addresses for those devices by using the **IP configuration** option on the Action Pane for the register itself. In the case of network devices that will be shared among POS registers, a hardware profile that has network devices assigned to it can be mapped directly to a shared hardware station. To assign IP addresses, select that hardware station on the **Stores** page, and then use the **IP configuration** option in the **Hardware stations** section to specify the network devices that are assigned to that hardware station. For hardware stations that have only network devices, you don't have to deploy the hardware station itself. In this case, the hardware station is required only in order to conceptually group network-addressable devices according to their location in the store.
 
 #### Modern POS for Android
 
@@ -548,12 +548,12 @@ This configuration is the most typical configuration for traditional, fixed POS 
 
 1. Create a hardware profile where all the required peripherals are configured.
 2. Map the hardware profile to the POS register.
-3. Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used. A description is optional.
+3. Create a hardware station of the **Dedicated** type for the store where the POS register will be used. A description is optional.
 
     > [!NOTE]
     > You don't have to set any other properties on the hardware station. All other required information, such as the hardware profile, will come from the register itself.
 
-4. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+4. Click **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
 5. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
 6. Select the **1070** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
 7. Install and activate Modern POS for Windows.
@@ -564,7 +564,7 @@ This configuration is the most typical configuration for traditional, fixed POS 
 This configuration can be used for all Modern POS clients that have a hardware station that is used exclusively by one POS register. To set up this configuration, follow these steps.
 
 1. Create a hardware profile where all the required peripherals are configured.
-2. Create a hardware station of the **Dedicated** type for the retail store where the POS register will be used.
+2. Create a hardware station of the **Dedicated** type for the store where the POS register will be used.
 3. On the dedicated hardware station, set the following properties:
 
     - **Host name** – The name of the host computer where the hardware station will run.
@@ -577,7 +577,7 @@ This configuration can be used for all Modern POS clients that have a hardware s
     - **EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent. This ID is provided by the credit card processor.
     - **Package name** – The hardware station package to use when the hardware station is deployed.
 
-4. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+4. Click **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
 5. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
 6. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
 7. Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
@@ -595,18 +595,18 @@ This configuration can be used for all Modern POS clients that have a hardware s
 This configuration can be used for all Modern POS clients that share hardware stations with other devices. To set up this configuration, follow these steps.
 
 1. Create a hardware profile where the required peripherals are configured.
-2. Create a hardware station of the **Shared** type for the retail store where the POS register will be used.
+2. Create a hardware station of the **Shared** type for the store where the POS register will be used.
 3. On the shared hardware station, set the following properties:
 
     - **Host name** – The name of the host computer where the hardware station will run.
     - **Description** – Text that will help identify the hardware station, such as **Returns** or **Front of store**.
     - **Port** – The port to use for the hardware station to communicate with the Modern POS client.
-    - **Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile. Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station. In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station. To set up a shared shift, click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.
+    - **Hardware profile** – For shared hardware stations, each hardware station should have a hardware profile. Hardware profiles can be shared among hardware stations, but they must be mapped to each hardware station. In addition, we recommend that you use shared shifts when multiple devices use the same shared hardware station. To set up a shared shift, click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**. For each shared hardware profile, select the cash drawer, and set the **Shared shift drawer** option to **Yes**.
     - **EFT POS number** – The EFT terminal ID to use when EFT authorizations are sent. This ID is provided by the credit card processor.
     - **Package name** – The hardware station package to use when the hardware station is deployed.
 
 4. Repeat steps 2 and 3 for each additional hardware station that is required in the store.
-5. Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.
+5. Click **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Distribution schedule**.
 6. Select the **1090** distribution schedule to sync the new hardware profile to the store. Click **Run now** to sync changes to the POS.
 7. Select the **1040** distribution schedule to sync the new hardware station to the store. Click **Run now** to sync changes to the POS.
 8. Install the hardware station on each host computer that you set up in steps 2 and 3. For more information about how to install the hardware station, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md).
@@ -621,7 +621,7 @@ This configuration can be used for all Modern POS clients that share hardware st
 17. On the hardware station selection page, click the recently selected hardware station to make it active.
 
     > [!NOTE]
-    > If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process. Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. Select the register, and then set the **Select upon tender** option to **Yes**. Use the **1090** distribution schedule to sync changes to the channel database.
+    > If devices often use different hardware stations, we recommend that you configure Modern POS to prompt cashiers to select a hardware station when they begin the tender process. Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**. Select the register, and then set the **Select upon tender** option to **Yes**. Use the **1090** distribution schedule to sync changes to the channel database.
 
 ## Extensibility
 
@@ -878,12 +878,12 @@ The following peripherals were tested by using a shared IIS hardware station tog
 
 **Solution:** Close the current batch. Changes to the cash drawer aren't updated to Modern POS until the current batch is closed.
 
-### Modern POS is reporting an issue with a retail peripheral
+### Modern POS is reporting an issue with a commerce peripheral
 
 **Solution:** Here are some typical causes of this issue:
 
 - Make sure that other device driver configuration utilities are closed. If these utilities are open, they might prevent Modern POS or the hardware station from claiming the device.
-- If the retail peripheral is shared with multiple POS devices, make sure that it belongs to one of the following categories:
+- If the peripheral is shared with multiple POS devices, make sure that it belongs to one of the following categories:
 
     - Cash drawer
     - Receipt printer

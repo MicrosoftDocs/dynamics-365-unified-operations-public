@@ -34,9 +34,9 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-In Dynamics 365 Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS). The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client. The parameters that are defined on the **Retail parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.
+In Dynamics 365 Commerce, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS). The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client. The parameters that are defined on the **Commerce parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.
 
-The following illustration shows the statement posting process. In this process, transactions that are recorded in the POS are transmitted to the client by using the Retail scheduler. After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.
+The following illustration shows the statement posting process. In this process, transactions that are recorded in the POS are transmitted to the client by using the Commerce scheduler. After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.
 
 [![Statement posting process](./media/retail-statements.png)](./media/retail-statements.png)
 
@@ -50,7 +50,7 @@ This step identifies the store that the statement is manually created for. If yo
 
 ### Calculate the statement
 
-In this step, the transaction lines are selected based on criteria that are defined for each store on the **Retail parameters** and **Stores** pages. On these pages, you define the criteria and specify how the transactions are calculated. To view a list of the transactions that are included in the statement before you calculate the statement, use the **Transactions** page.
+In this step, the transaction lines are selected based on criteria that are defined for each store on the **Commerce parameters** and **Stores** pages. On these pages, you define the criteria and specify how the transactions are calculated. To view a list of the transactions that are included in the statement before you calculate the statement, use the **Transactions** page.
 
 Statement calculation uses tender declarations from the registers as the counted amount. Alternatively, you can enter the counted amount manually. The statement shows the difference between the sales amount for the transactions and the actual counted amount in all payment methods. The statement is posted only if this difference is less than the maximum posting difference that is defined for the store.
 
@@ -86,9 +86,9 @@ If the **Post as business day** check box is cleared for the same store, separat
 
 ### Post the statement
 
-When you post a statement, sales orders and invoices are created for the retail sales in the statement.
+When you post a statement, sales orders and invoices are created for the sales in the statement.
 
 - Cash and carry sales are aggregated onto one sales order, and are invoiced for the default customer who is assigned to the store.
-- Retail sales for which a customer was added to the transaction in Retail POS generate separate sales orders and invoices, one for each unique customer.
+- Sales for which a customer was added to the transaction in Retail POS generate separate sales orders and invoices, one for each unique customer.
 
 Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.

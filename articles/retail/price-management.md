@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail sales price management
-description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Retail.
+description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 01/06/2020
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the process of creating and managing sales prices in Dynamics 365 Retail. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
+This topic provides information about the process of creating and managing sales prices in Dynamics 365 Commerce. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
 
 ## Terminology
 
@@ -47,7 +47,7 @@ The following terms are used in this topic.
 
 ## Price groups
 
-Price groups are at the heart of price and discount management in Retail. Price groups are used to assign prices and discounts to retail entities (that is, channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it's very important that you plan how you will use them before you start.
+Price groups are at the heart of price and discount management in Commerce. Price groups are used to assign prices and discounts to retail entities (that is, channels, catalogs, affiliations, and loyalty programs). Because price groups are used for all pricing and discounts, it's very important that you plan how you will use them before you start.
 
 By itself, a price group is just a name, a description, and, optionally, a pricing priority. The main point to remember about price groups is that they are used to manage the many-to-many relationships that discounts and prices have with retail entities.
 
@@ -57,7 +57,7 @@ The following illustration shows how price groups are used. In this illustration
 
 When you create price groups, you should not use a single price group for multiple types of retail entities. Otherwise, it can be difficult to determine why a specific price or discount is being applied to a transaction.
 
-As the red dashed line in the illustration shows, Retail does support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements. If you want to apply customer-specific prices, we recommend that you not set price groups directly on the customer. Instead, you should use affiliations.
+As the red dashed line in the illustration shows, Commerce does support the core Microsoft Dynamics 365 functionality of a price group that is set directly on a customer. However, in this case, you get only sales price trade agreements. If you want to apply customer-specific prices, we recommend that you not set price groups directly on the customer. Instead, you should use affiliations.
 
 The following sections provide more information about the retail entities that you can use to set distinct prices when the price groups are used. The configuration of prices and discounts for all these entities is a two-step process. These steps can be done in either order. However, the logical order is to set the price groups on the entities first, because this step is likely to be a one-time setup that is done during implementation. Then, as prices and discounts are created, you can set the price groups on those prices and discounts individually.
 
@@ -70,7 +70,7 @@ In the retail industry, it's very typical to have different prices in different 
 
 ### Affiliations
 
-The general definition of an affiliation is a link to or association with a group. In Retail, affiliations are groups of customers. Affiliations are a much more flexible tool for customer pricing and discounts than the core Microsoft Dynamics 365 concept of customer groups and discount groups. First, an affiliation can be used for both prices and discounts, whereas non-retail pricing has a different group for each type of discount and price. Next, a customer can belong to multiple affiliations but can belong to only one non-retail pricing group of each type. Finally, although affiliations can be set up so that they are linked to a customer, they don't have to be. An ad-hoc affiliation can be used for anonymous customers at the POS. A typical example of an anonymous affiliation discount is a senior or student discount, where a customer can receive a discount just by showing a group membership card.
+The general definition of an affiliation is a link to or association with a group. In Commerce, affiliations are groups of customers. Affiliations are a much more flexible tool for customer pricing and discounts than the core Microsoft Dynamics 365 concept of customer groups and discount groups. First, an affiliation can be used for both prices and discounts, whereas non-retail pricing has a different group for each type of discount and price. Next, a customer can belong to multiple affiliations but can belong to only one non-retail pricing group of each type. Finally, although affiliations can be set up so that they are linked to a customer, they don't have to be. An ad-hoc affiliation can be used for anonymous customers at the POS. A typical example of an anonymous affiliation discount is a senior or student discount, where a customer can receive a discount just by showing a group membership card.
 
 Although affiliations are most often associated with discounts, you can also use them to set differential pricing. For example, when a retailer sells to an employee, it might want to change the selling price instead of applying a discount on top of the regular price. As another example, a retailer that sells to both consumer customers and business customers might offer business customers better prices, based on their purchasing volume. Affiliations enable both these scenarios.
 
@@ -136,7 +136,7 @@ In Microsoft Dynamics 365, you can set the price of a product in three places:
 - In a sales price trade agreement
 - In a price adjustment
 
-The base price and trade agreement price are part of core Microsoft Dynamics 365, and are available even if you don't use Retail. The price adjustment functionality is available only in Retail. The next section provides more information about each of these options for setting prices and explains how the options work together.
+The base price and trade agreement price are part of core Dynamics 365, and are available even if you don't use Commerce. The price adjustment functionality is available only in Commerce. The next section provides more information about each of these options for setting prices and explains how the options work together.
 
 ## Setting prices
 
@@ -146,17 +146,17 @@ The easiest place to set the price for a product is directly on the product. The
 
 If a product has one price for everyone, the base price offers the most efficient way to manage the price of that product. Even if you use trade agreements to set prices, you might also set the base price on a product. Then, if you don't use an **All** trade agreement, you have a fallback price that is used when no trade agreement applies.
 
-If a retail channel's currency differs from the company currency, the base price in that retail channel is determined by using currency conversion on the price that is set on the product.
+If a retail channel's currency differs from the company currency, the base price in that channel is determined by using currency conversion on the price that is set on the product.
 
-Although the price unit isn't a common retail scenario, the retail pricing engine supports it. If the price unit is set to a value other than **0** (zero), the price per unit equals Price ÷ Price unit. For example, if a product's price is $10.00, and the price unit is 50, the price for a quantity of 1 is $0.20 (= $10.00 ÷ 50).
+Although the price unit isn't a common scenario, the pricing engine supports it. If the price unit is set to a value other than **0** (zero), the price per unit equals Price ÷ Price unit. For example, if a product's price is $10.00, and the price unit is 50, the price for a quantity of 1 is $0.20 (= $10.00 ÷ 50).
 
 ### Sales price trade agreement
 
 By using the trade agreement journal, you can create sales price trade agreements for each product. In Microsoft Dynamics 365, there are three customer scopes for sales price trade agreements: **Table**, **Group**, and **All**. The customer scope determines the customers that a given sales price trade agreement applies to.
 
-A **Table** sales price trade agreement is for a single customer that is set directly on the trade agreement. This scenario isn't a typical retail business-to-consumer (B2C) scenario. However, if it occurs, the retail pricing engine uses **Table** trade agreements when it determines price.
+A **Table** sales price trade agreement is for a single customer that is set directly on the trade agreement. This scenario isn't a typical retail business-to-consumer (B2C) scenario. However, if it occurs, the pricing engine uses **Table** trade agreements when it determines price.
 
-A **Group** sales price trade agreement is the type that is most often used with retail functionality. Outside Retail, **Group** sales price trade agreements are for a simple customer group. However, in Retail, the concept of a customer group has been extended so that it's a more generic retail price group. A price group can be linked to a retail channel, affiliation, loyalty program, or catalog. For detailed information about price groups, see the "Price groups" section earlier in this topic.
+A **Group** sales price trade agreement is the type that is most often used with retail functionality. Outside Commerce, **Group** sales price trade agreements are for a simple customer group. However, in Commerce, the concept of a customer group has been extended so that it's a more generic price group. A price group can be linked to a channel, affiliation, loyalty program, or catalog. For detailed information about price groups, see the "Price groups" section earlier in this topic.
 
 > [!NOTE]
 > A trade agreement price is always used before the base price.
@@ -171,9 +171,9 @@ There are three types of price adjustments: percentage off, amount off, and pric
 
 The calculation of the price and discount on a transaction uses the principle of finding the best price for the customer. According to this principle, if more than one price is found, the lowest price is used. Additionally, the combination of discounts that produces the largest discount amount for the whole transaction is used. In some cases, a smaller discount must be used on a single product, so that additional discounts can be applied to other products in the transaction.
 
-The only exception to the principle of finding the best price for the customer is an option for mix-and-match least-expensive discounts. This option enables least-expensive discounts that favor the retailer when products are selected and grouped. Therefore, when a transaction includes more products than are required to qualify for the least-expensive discount, the retail pricing engine selects the products that produce the smallest possible discount amount for the customer.
+The only exception to the principle of finding the best price for the customer is an option for mix-and-match least-expensive discounts. This option enables least-expensive discounts that favor the retailer when products are selected and grouped. Therefore, when a transaction includes more products than are required to qualify for the least-expensive discount, the pricing engine selects the products that produce the smallest possible discount amount for the customer.
 
-The retail pricing engine returns three prices for every product: the base price, the trade agreement price, and the active price.
+The pricing engine returns three prices for every product: the base price, the trade agreement price, and the active price.
 
 The base price is just the property on the product and is the same for everyone everywhere.
 
@@ -183,7 +183,7 @@ The active price is calculated by taking the trade agreement price and applying 
 
 ## Category price rules
 
-The category price rules feature in Retail gives you an easy way to create new trade agreements for all the products in a category. This feature also lets you automatically find existing trade agreements for the products in the category and expire them.
+The category price rules feature in Commerce gives you an easy way to create new trade agreements for all the products in a category. This feature also lets you automatically find existing trade agreements for the products in the category and expire them.
 
 When you select the option to expire existing trade agreements, the system creates a new trade agreement journal for the products in the category that have an active trade agreement. However, the journal must be manually posted. Additionally, the category price rules can find existing trade agreements only if you're using the same price rule (that is, if you create a new price rule that uses the same category that was before). If you aren't using the same price rule, the existing trade agreements won't be expired.
 
@@ -209,19 +209,19 @@ Microsoft SQL Server Express is often used for channel databases because of the 
 
 - If you're using trade agreements, and your prices change, you should expire the old trade agreements by setting an end date. Over time, this approach helps reduce the number of trade agreements that are kept in channel databases. It also helps reduce the amount of data that the price calculation algorithm must work with.
 - If your prices vary by product variant, consider using the product base price as the price of the most common variant. Then use trade agreements only for the variant prices that are exceptions. This approach helps reduce the number of trade agreement records. Because it's so easy to import data into Microsoft Dynamics 365, you might be tempted to import a trade agreement for every variant of every product. However, that approach can produce many trade agreements that have the same value. Therefore, it can needlessly increase the size of your data.
-- Retail processes variant-specific prices in order from most specific to least specific. If a product dimension doesn't affect the price, you don't have to define trade agreements for it. For example, a product is available in three colors and four sizes, but the price varies only by size. If you define a trade agreement for every variant, you create 12 records. Instead, you can define a trade agreement just for each size and leave the Color dimension blank. In this case, you produce only four records.
+- Commerce processes variant-specific prices in order from most specific to least specific. If a product dimension doesn't affect the price, you don't have to define trade agreements for it. For example, a product is available in three colors and four sizes, but the price varies only by size. If you define a trade agreement for every variant, you create 12 records. Instead, you can define a trade agreement just for each size and leave the Color dimension blank. In this case, you produce only four records.
 
     Alternatively, if not every value of a dimension produces a different price, you can define one trade agreement for the product master and leave all product dimensions blank. Then define a separate trade agreement just for each dimension value that produces a different price. For example, if the XXL size has a higher price, but all other sizes have the same price, you require only two trade agreements: one for the product master and one for the XXL size.
 
 ## Prices that include tax vs. prices that exclude tax
 
-When you set sales prices in Microsoft Dynamics 365, you don't specify whether the price value that you're setting includes or excludes tax. The value is just the price. However, the **Price includes sales tax** setting on retail channels lets you configure retail channels so that they either include or exclude tax from prices. This setting is set on the channel and can change even in a single company.
+When you set sales prices in Dynamics 365, you don't specify whether the price value that you're setting includes or excludes tax. The value is just the price. However, the **Price includes sales tax** setting on retail channels lets you configure channels so that they either include or exclude tax from prices. This setting is set on the channel and can change even in a single company.
 
 If you work with both inclusive and exclusive types of tax, it's very important that you set prices correctly, because the total amount that the customer pays will change if the **Price includes sales tax** setting on the channel is changed.
 
 ## Differences between retail pricing and non-retail pricing
 
-A single pricing engine is used to calculate retail prices across all channels: Call center, Retail store, and Online stores. This helps in enabling the unified commerce scenarios.
+A single pricing engine is used to calculate prices across all channels: Call center, Retail store, and Online stores. This helps in enabling the unified commerce scenarios.
 
 Retail pricing is designed to work with retail entities instead of non-retail entities. Specifically, it's designed to set prices by store, not by warehouse.
 
@@ -240,4 +240,4 @@ In addition, **only** the retail pricing engine supports the following pricing f
 
 Price is one of the most important factors that controls the buying decisions of many customers, and many customers compare prices on various sites before they make a purchase. To help ensure that they provide competitive prices, retailers carefully watch their competitors and often run promotions. To help these retailers attract customers, it's very important that product search, the browse feature, lists, and the product details page show the most accurate prices.
 
-In an upcoming release of Retail, the **GetActivePrices** application programming interface (API) will return prices that include simple discounts (for example, single-line discounts that don't depend on other items in the cart). In this way, the prices that are shown are close to the actual amount that customers will pay for items. This API will include all the types of simple discounts: affiliation-based, loyalty-based, catalog-based, and channel-based discounts. Additionally, the API will return the names and validity information for the applied discounts, so that retailers can provide a more detailed description of the price and create a sense of urgency if the discount's validity will expire soon.
+In an upcoming release of Commerce, the **GetActivePrices** application programming interface (API) will return prices that include simple discounts (for example, single-line discounts that don't depend on other items in the cart). In this way, the prices that are shown are close to the actual amount that customers will pay for items. This API will include all the types of simple discounts: affiliation-based, loyalty-based, catalog-based, and channel-based discounts. Additionally, the API will return the names and validity information for the applied discounts, so that retailers can provide a more detailed description of the price and create a sense of urgency if the discount's validity will expire soon.

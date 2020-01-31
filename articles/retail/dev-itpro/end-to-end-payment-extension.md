@@ -580,7 +580,7 @@ The following illustration shows how the merchant properties are set through the
 ![Setting merchant properties on the POS hardware profile page in the client](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesAXFlow.jpg)
 
 #### Set merchant properties on payment connector during POS sales transaction
-The following illustration shows how the merchant properties are retrieved from the database through the Retail Server and passed to the payment connector during the **BeginTransactionPaymentTerminalDeviceRequest** request.
+The following illustration shows how the merchant properties are retrieved from the database through the Commerce Scale Unit and passed to the payment connector during the **BeginTransactionPaymentTerminalDeviceRequest** request.
 
 ![Setting merchant properties on the payment connector during POS payment flows](media/PAYMENTS/PAYMENT-TERMINAL/MerchantPropertiesPOSFlow.jpg)
 

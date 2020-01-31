@@ -343,7 +343,7 @@ You can define a list of websites that a store worker (cashier) requires for nor
 
 -   Retail Cloud POS website
 -   Microsoft Azure Active Directory sign-in page
--   Retail Server website
+-   Commerce Scale Unit website
 -   Bing Maps resources
 -   Media resources
 -   Credit Card Payment acceptance page (optional)

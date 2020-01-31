@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose between Retail Modern POS (MPOS) and Cloud POS
-description: This topic explains the key differences between Retail Modern POS and Cloud POS. It also describes various factors that retailers implementing Dynamics 365 Retail should consider to help them make the best choice for their requirements.
+description: This topic explains the key differences between Retail Modern POS and Cloud POS. It also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author:  jblucher 
 manager: AnnBe
 ms.date: 10/12/2017
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Retail. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
+This topic gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
 
 ## Insights
 
-Retail provides a wide range of deployment and topology options. Therefore, retailers can choose the components and configuration that best meet their business and technology requirements. One aspect of implementation that requires careful consideration is the choice of a platform and form factor for the point of sale (POS) component.
+Commerce provides a wide range of deployment and topology options. Therefore, retailers can choose the components and configuration that best meet their business and technology requirements. One aspect of implementation that requires careful consideration is the choice of a platform and form factor for the point of sale (POS) component.
 
 ### POS platform and form factor considerations
 
-Retail supports the following POS options:
+Commerce supports the following POS options:
 
 - Retail Modern POS (MPOS) for Microsoft Windows
 - MPOS for Microsoft Windows Phone
@@ -64,7 +64,7 @@ Although MPOS and CPOS are largely the same, there are some important difference
 MPOS on a Windows, iOS, or Android device is an application that is packaged, installed, and serviced on that device.
 
 - **Windows** – The MPOS for Windows application contains all the application code and the embedded commerce runtime (CRT). 
-- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server on Microsoft Azure or the Retail Store Scale Unit (RSSU). For more information, see [Retail Store Scale Unit overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
+- **iOS/Android** – On these platforms, the application acts as a host for the CPOS application code. In other words, the application code comes from the CPOS server on Microsoft Azure or the Commerce Scale Unit. For more information, see [Retail Store Scale Unit overview](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### CPOS
 
@@ -74,19 +74,19 @@ Because CPOS runs in a browser, the application isn't installed on the device. I
 
 In addition to a platform and form factor, retailers must also choose a deployment option at the store. The following table shows the configurations that are available for each POS option.
 
-| POS application         | Retail server | Available offline |
+| POS application         | Commerce Scale Unit | Available offline |
 |-------------------------|---------------|-------------------|
 | MPOS for Windows        | Cloud or RSSU | Yes               |
 | MPOS for iOS or Android | Cloud or RSSU | No                |
 | Cloud POS               | Cloud or RSSU | No                |
 
-#### Retail server
+#### Commerce Scale Unit
 
-The Retail server is a component that hosts the CRT. The CRT contains all the business logic that the POS uses, and it provides access to the channel database. While they are online, all POS clients in the store use the Retail server. The Retail server can be deployed either in the cloud or in the store (RSSU).
+The Commerce Scale Unit is a component that hosts the CRT. The CRT contains all the business logic that the POS uses, and it provides access to the channel database. While they are online, all POS clients in the store use the Commerce Scale Unit. The Commerce Scale Unit can be deployed either in the cloud or in the store.
 
 #### Offline mode
 
-MPOS for Windows supports offline mode. In offline mode, the POS can continue to process sales even if it's disconnected from the Retail server. It can then be synchronized with the channel database when connectivity is restored. MPOS uses its own embedded instance of the CRT and temporarily uses its own local data source (offline SQL Server database). For more information about offline functionality, see [POS offline functionality](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
+MPOS for Windows supports offline mode. In offline mode, the POS can continue to process sales even if it's disconnected from the Commerce Scale Unit. It can then be synchronized with the channel database when connectivity is restored. MPOS uses its own embedded instance of the CRT and temporarily uses its own local data source (offline SQL Server database). For more information about offline functionality, see [POS offline functionality](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
 
 ### POS peripheral/hardware considerations
 
@@ -94,7 +94,7 @@ Retailers must also consider how the POS will access devices and peripherals suc
 
 ## Implementation considerations
 
-Consider the following information as you plan your POS implementation in your retail stores:
+Consider the following information as you plan your POS implementation in your stores:
 
 - **Functional requirements** – The core business processes and capabilities are the same, regardless of the platform, form factor, or deployment topology. Therefore, most retailers don't have to consider functional requirements when they plan their implementation.
 - **Connectivity** – Network availability (wide area network \[WAN\] and local area network \[LAN\]) is a major factor that requires careful consideration. Any benefits that a zero-footprint, cloud-hosted solution brings in terms of cost and simplicity are lost if the system isn't available for business-critical processes.
@@ -102,7 +102,7 @@ Consider the following information as you plan your POS implementation in your r
     Unless the connectivity for a given device is very dependable and resilient, or unless a certain amount of downtime is acceptable to the retailer, we recommend one of the following options:
 
     - Use MPOS in Windows, and enable offline mode.
-    - Deploy an on-premises RSSU.
+    - Deploy an on-premises Commerce Scale Unit.
 
     These two options aren't mutually exclusive. For the most reliable topology, retailers can deploy a local RSSU to reduce the dependency on internet connectivity or Azure availability, and they can also deploy POS registers where offline mode is enabled if there is an issue with the local server or network.
 

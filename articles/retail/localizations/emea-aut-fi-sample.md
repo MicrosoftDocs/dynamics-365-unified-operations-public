@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.1
 
 ## Introduction
 
-To meet local fiscal requirements for cash registers in Austria, the Dynamics 365 Retail functionality for Austria includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) solution from [EFSTA](https://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
+To meet local fiscal requirements for cash registers in Austria, the Dynamics 365 Commerce functionality for Austria includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) solution from [EFSTA](https://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Commerce Hardware station or a separate machine that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://efsta.org/kontakt/).
 
@@ -110,13 +110,13 @@ The fiscal registration service integration sample implements the following rule
 
 ### Limitations of the sample
 
-The fiscal registration service supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both retail stores and customers.
+The fiscal registration service supports only scenarios where sales tax is included in the price. Therefore, the **Price include sales tax** option must be set to **Yes** for both stores and customers.
 
-## Set up Retail for Austria
+## Set up Commerce for Austria
 
-This section describes the Retail settings that are specific to and recommended for Austria. For more information about how to set up Retail, see [Help resources for Dynamics 365 Retail](../index.md).
+This section describes the Commerce settings that are specific to and recommended for Austria. For more information set up information, see [Help resources for Dynamics 365 Retail](../index.md).
 
-To use the Austria-specific functionality for Retail, you must specify the following settings:
+To use the Austria-specific functionality, you must specify the following settings:
 
 - In the primary address of the legal entity, set the **Country/region** field to **AUT** (Austria).
 - In the POS functionality profile of every store that is located in Austria, set the **ISO code** field to **AT** (Austria).
@@ -131,11 +131,11 @@ You must create sales tax codes, sales tax groups, and item sales tax groups. Yo
 
 On sales receipts, you can print an abbreviated code for a sales tax code (for example, "A" or "B"). To make this functionality available, set the **Print code** field on the **Sales tax codes** page.
 
-### Set up retail stores
+### Set up stores
 
-On the **All retail stores** page, update the retail store details. Specifically, set the following parameters:
+On the **All stores** page, update the store details. Specifically, set the following parameters:
 
-- In the **Sales tax group** field, specify the sales tax group that should be used for sales to the default retail customer.
+- In the **Sales tax group** field, specify the sales tax group that should be used for sales to the default customer.
 - Set the **Prices include sales tax** option to **Yes**.
 - Set the **Name** field to the company name. This change helps guarantee that the company name appears on a sales receipt. Alternatively, you can add the company name to the sales receipt layout as free-form text.
 - Set the **Tax identification number (TIN)** field to the company identification number. This change helps guarantee that the company identification number appears on a sales receipt. Alternatively, you can add the company identification number to the sales receipt layout as free-form text.
@@ -228,7 +228,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 ## Deployment guidelines for cash registers for Austria
 
-The fiscal registration service integration sample for Austria is part of the Retail SDK. For information about how to install and use the Retail SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The fiscal registration service integration sample for Austria is part of the Retail SDK. For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 This sample consists of extensions for the CRT, Hardware station, and POS. To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Azure DevOps, where no files have been changed yet.
 
@@ -244,12 +244,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
 2. In the **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll** assembly file.
 3. Copy the assembly file to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Retail Server site location.
+    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
 4. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extension configuration file.
@@ -264,12 +264,12 @@ The CRT extension components are included in the CRT samples. To complete the fo
 2. In the **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** folder, find the **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll** assembly file.
 3. Copy the assembly file to the CRT extensions folder:
 
-    - **Retail Server:** Copy the assembly to the **\\bin\\ext** folder under the IIS Retail Server site location.
+    - **Commerce Scale Unit:** Copy the assembly to the **\\bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** Copy the assembly to the **\\ext** folder under the local CRT client broker location.
 
 4. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 5. Register the CRT change in the extension configuration file.
@@ -282,7 +282,7 @@ The CRT extension components are included in the CRT samples. To complete the fo
 
 1. Find the extension configuration file for CRT:
 
-    - **Retail Server:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Retail Server site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**, and it's in the **bin\\ext** folder under the IIS Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**, and it's under the local CRT client broker location.
 
 2. Register the CRT change in the extension configuration file.
@@ -369,26 +369,26 @@ The Hardware station extension components are included in the Hardware station s
 
 ### Set up the registration process
 
-To enable the registration process, follow these steps to set up Retail Headquarters. For more details, see [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+To enable the registration process, follow these steps to set up Headquarters. For more details, see [Set up the fiscal integration for Retail channels](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
-1. Go to **Retail \> Headquarters setup \> Parameters \> Retail shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
-2. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
-3. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configurations. The configuration files are located under **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+2. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the connector configuration. The file location is **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
+3. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the document provider configurations. The configuration files are located under **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
 
     - DocumentProviderEFRSampleAustria.xml
     - DocumentProviderNonFiscalEFRSampleAustria.xml
 
-4. Go to **Retail \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
-5. Go to **Retail \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
-6. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups, one for each connector functional profile that you created earlier.
-7. Go to **Retail \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, two fiscal registration process steps, and select the fiscal connector groups that you created earlier.
-8. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
-9. Go to **Retail \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
-10. Open the distribution schedule (**Retail \> Retail IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
+4. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create two new connector functional profiles, one for each document provider that you loaded earlier, and select the connector that you loaded earlier. Update the data mapping settings as required.
+5. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Update the connection settings as required.
+6. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**. Create two new fiscal connector groups, one for each connector functional profile that you created earlier.
+7. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, two fiscal registration process steps, and select the fiscal connector groups that you created earlier.
+8. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. To enable registration of non-fiscal events on the POS, on the **Functions** FastTab, under **POS**, set the **Audit** option to **Yes**.
+9. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Hardware profiles**. Select a hardware profile that is linked to the Hardware station that the fiscal printer will be connected to. On the **Fiscal peripherals** FastTab, select the connector technical profile that you created earlier.
+10. Open the distribution schedule (**Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**), and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Production environment
 
-The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Retail components, and to apply those packages in a production environment.
+The previous procedure enables the extensions that are components of the fiscal registration service integration sample. In addition, you must follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
 1. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
@@ -426,7 +426,7 @@ The previous procedure enables the extensions that are components of the fiscal 
 
 3. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 4. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create retail deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-5. Complete all the required setup tasks that are described in the [Set up Retail for Austria](#set-up-retail-for-austria) section.
+5. Complete all the required setup tasks that are described in the [Set up Commerce for Austria](#set-up-commerce-for-austria) section.
 
 ## Design of extensions
 
@@ -445,7 +445,7 @@ There are two request handlers for document providers:
 - **DocumentProviderEFRFiscalAUT** – This handler is used to generate fiscal documents for the fiscal registration service.
 - **DocumentProviderEFRNonFiscalAUT** – This handler is used to generate non-fiscal documents for the fiscal registration service.
 
-These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Retail Headquarters.
+These handlers are inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the connector document provider name that is specified in Headquarters.
 
 The connector supports the following requests:
 
@@ -461,7 +461,7 @@ The configuration files are located in the **Configuration** folder of the exten
 - **DocumentProviderFiscalEFRSampleAustria** – For fiscal documents.
 - **DocumentProviderNonFiscalEFRSampleAustria** – For non-fiscal documents.
 
-The purpose of these files is to enable settings for the document provider to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following setting is added:
+The purpose of these files is to enable settings for the document provider to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following setting is added:
 
 - VAT rates mapping
 
@@ -475,7 +475,7 @@ The Hardware station extension is **HardwareStation.Extension.EFRSample**. The H
 
 The **EFRHandler** request handler is the entry point for handling requests to the fiscal registration service.
 
-The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Retail Headquarters.
+The handler is inherited from the **INamedRequestHandler** interface. The **HandlerName** method is responsible for returning the name of the handler. The handler name should match the fiscal connector name that is specified in Headquarters.
 
 The connector supports the following requests:
 
@@ -485,7 +485,7 @@ The connector supports the following requests:
 
 #### Configuration
 
-The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Retail Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
+The configuration file is located in the **Configuration** folder of the extension project. The purpose of the file is to enable settings for the fiscal connector to be configured from Headquarters. The file format is aligned with the requirements for fiscal integration configuration. The following settings are added:
 
 - **Endpoint address** – The URL of the fiscal registration service.
 - **Timeout** – The amount of time, in milliseconds, that the driver will wait for a response from the fiscal registration service.

@@ -57,7 +57,7 @@ Note that silent servicing maintains all components that are currently installed
 
 ### Examples of commands for silent servicing
 
-This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Retail Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Retail Store Scale Unit.
+This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Retail Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit.
 
 #### Silently update the current installation of Retail Modern POS
 

@@ -52,7 +52,7 @@ This procedure walks through how to design the relationship between organization
 17. In the list, find and select the desired record.
 18. In the list, click the link in the selected row.
 19. Click Insert.
-20. Click Retail channel.
+20. Click Commerce channel.
 21. In the list, find and select the desired record.
 22. In the list, click the link in the selected row.
     * You can add as many organization units as is required.  

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail software development kit (SDK) extensibility samples
-description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.  
+description: The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Commerce.  
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-The Retail SDK includes extensibility samples. These samples are a good way to learn about different ways to customize Retail.
+The Retail software development kit (SDK) includes extensibility samples. These samples are a good way to learn about different ways to customize Dynamics 365 Commerce.
 
-The Retail software development kit (SDK) includes extensibility samples. You can also use these projects as boilerplate projects to get started with a specific customization. For example, to start a new commerce runtime (CRT) extension, you can just copy one of the CommerceRuntime sample projects into a new folder, adjust the project import paths, and then start working in the project. For most of the samples, additional step-by-step instructions are available in the Retail SDK\\Documents folder. The following table provides a high-level list of the samples.
+The Retail SDK includes extensibility samples. You can also use these projects as boilerplate projects to get started with a specific customization. For example, to start a new commerce runtime (CRT) extension, you can just copy one of the CommerceRuntime sample projects into a new folder, adjust the project import paths, and then start working in the project. For most of the samples, additional step-by-step instructions are available in the Retail SDK\\Documents folder. The following table provides a high-level list of the samples.
 
 <table>
 <thead>
@@ -49,17 +49,17 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 <tbody>
 <tr>
 <td>CrossLoyalty</td>
-<td>This sample includes two retailers, AdventureWorks and Contoso. The Contoso retailer accepts loyalty points that customers earn from AdventureWorks. The sample shows how to create a simple new CRT service and call it when a button in Retail Modern POS is clicked. It simulates the cross-loyalty scenario. There are changes to the configuration, CRT, Retail Server, Retail Proxy, and point of sale (POS) (both Modern POS and Cloud POS). This sample supports offline mode for Modern POS.</td>
+<td>This sample includes two retailers, AdventureWorks and Contoso. The Contoso retailer accepts loyalty points that customers earn from AdventureWorks. The sample shows how to create a simple new CRT service and call it when a button in Retail Modern POS is clicked. It simulates the cross-loyalty scenario. There are changes to the configuration, CRT, Commerce Scale Unit, Commerce Proxy, and point of sale (POS) (both Modern POS and Cloud POS). This sample supports offline mode for Modern POS.</td>
 <td>
 <ul>
-<li>Create a new CRT and Retail Server extension, or a new service.</li>
+<li>Create a new CRT and Commerce Scale Unit extension, or a new service.</li>
 <li>Create a new operation as a separate project.</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>EmailPreference</td>
-<td>This sample shows how to use extension properties to extend an entity. The extended entity is persisted in both the Microsoft Dynamics 365 Retail and channel databases, and the POS client enables access to the value. The new value is written synchronously to Retail via the RetailRealtimeTransaction service. No customization is required in the CRT or Retail Server, because extension properties flow automatically. There are changes to pages, tables, the Real-time Service (RTS) client, Commerce Data Exchange (CDX), the channel database, and the POS (both Modern POS and Cloud POS). This sample doesn't support offline mode.</td>
+<td>This sample shows how to use extension properties to extend an entity. The extended entity is persisted in both the Commerce and channel databases, and the POS client enables access to the value. The new value is written synchronously to Commerce via the RetailRealtimeTransaction service. No customization is required in the CRT or Commerce Scale Unit, because extension properties flow automatically. There are changes to pages, tables, the Real-time Service (RTS) client, Commerce Data Exchange (CDX), the channel database, and the POS (both Modern POS and Cloud POS). This sample doesn't support offline mode.</td>
 <td>
 <ul>
 <li>Modify an existing Modern POS/Cloud POS view or page.</li>
@@ -70,10 +70,10 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </tr>
 <tr>
 <td>StoreHours</td>
-<td>This sample shows how to create a new business entity (StoreHours) across both Retail and the channel. There are changes to tables, CDX, the channel database, the CRT, Retail Server, and the POS (both Modern POS and Cloud POS). This sample supports offline mode for Modern POS.</td>
+<td>This sample shows how to create a new business entity (StoreHours) across both Commerce and the channel. There are changes to tables, CDX, the channel database, the CRT, Commerce Scale Unit, and the POS (both Modern POS and Cloud POS). This sample supports offline mode for Modern POS.</td>
 <td>
 <ul>
-<li>Create a new CRT and Retail Server extension, or a new service.</li>
+<li>Create a new CRT and Commerce Scale Unit extension, or a new service.</li>
 <li>Modify an existing MPOS/Cloud POS view or page.</li>
 <li>Send the custom table data to the channel by using CDX.</li>
 </ul>
@@ -98,14 +98,14 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </tr>
 <tr>
 <td>CommerceRuntime Test Host</td>
-<td>This tool mimics a typical CRT host that resembles Retail Server. It supports simple testing of CRT extensions that doesn't require changes in Retail Server or UI clients. You just register the services that are required for the CRT and run it.
+<td>This tool mimics a typical CRT host that resembles Commerce Scale Unit. It supports simple testing of CRT extensions that doesn't require changes in Commerce Scale Unit or UI clients. You just register the services that are required for the CRT and run it.
 <p><strong>Note:</strong> RealTimeTransaction service calls that might be part of a CRT extension won't work correctly. To test these service calls, use the RetailServer Test Client sample instead.</p>
 </td>
 <td></td>
 </tr>
 <tr>
 <td>RetailServer Test Client</td>
-<td>You can use this simple application to make Retail Server calls, offline mode calls through the Retail Proxy, or both. This sample application acts as a client. It resembles the POS clients but requires no UI changes. Therefore, it supports rapid testing and development. You can use this tool to verify customizations of the channel database, RTS, CRT, and/or Retail Server before you hand them off to the UI team.</td>
+<td>You can use this simple application to make Commerce Scale Unit calls, offline mode calls through the Commerce Proxy, or both. This sample application acts as a client. It resembles the POS clients but requires no UI changes. Therefore, it supports rapid testing and development. You can use this tool to verify customizations of the channel database, RTS, CRT, and/or Commerce Scale Unit before you hand them off to the UI team.</td>
 <td></td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@ The Retail software development kit (SDK) includes extensibility samples. You ca
 </tr>
 <tr>
 <td>OpenIdConnectUtility</td>
-<td>This sample lets you call Retail Server in a customer context (C2) by using a Google Identity.</td>
+<td>This sample lets you call Commerce Scale Unit in a customer context (C2) by using a Google Identity.</td>
 <td></td>
 </tr>
 <tr>

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Screen layouts for the point of sale (POS)
-description: This topic provides information about screen layouts for Dynamics 365 Retail point of sale (POS) experiences.
+description: This topic provides information about Dynamics 365 screen layouts for Retail point of sale (POS) experiences.
 author: jblucher
 manager: AnnBe
 ms.date: 05/20/2019
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about screen layouts for Dynamics 365 Retail point of sale (POS) experiences.
+This topic provides information about Dynamics 365 screen layouts for Retail point of sale (POS) experiences.
 
 The Retail POS user interface (UI) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and/or users.
 
@@ -191,7 +191,7 @@ The button grid designer lets you configure button grids that can be used on the
         > [!NOTE]
         > Retail Modern POS and Cloud POS use only the **Back color** and **Font color** values.
 
-    - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail \> Channel setup \> POS setup \> POS \> Images**.
+    - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**.
 
 ![Example button grid in the POS](../retail/media/Example-Button-Grid-In-POS.png)
 

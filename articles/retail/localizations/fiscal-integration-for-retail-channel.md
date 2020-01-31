@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overview of fiscal integration for Retail channels
-description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. 
+description: This topic provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. 
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -33,22 +33,22 @@ ms.dyn365.ops.version: 10.0
 
 ## Introduction
 
-This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Retail. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of retail sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
+This topic is an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce. Fiscal integration includes integration with various fiscal devices and services that enable fiscal registration of sales in accordance with local fiscal laws that are aimed at preventing tax fraud in the retail industry. Here are some typical scenarios that can be covered by using fiscal integration:
 
-- Register a retail sale on a fiscal device that is connected to Retail point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
+- Register a sale on a fiscal device that is connected to Retail point of sale (POS), such as a fiscal printer, and print a fiscal receipt for the customer.
 - Securely submit information that is related to sales and returns that are completed in Retail POS to an external web-service that is operated by the tax authority.
 - Help guarantee inalterability of sales transaction data through digital signatures.
 
-The fiscal integration functionality is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Retail components and is included in the software development kit (SDK). For more information about the fiscal integration samples, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+The fiscal integration functionality is a framework that provides a common solution for further development and customization of the integration between Retail POS and fiscal devices and services. The functionality also includes fiscal integration samples that support basic retail scenarios for specific countries or regions, and that work with specific fiscal devices or services. A fiscal integration sample consists of several extensions of Commerce components and is included in the software development kit (SDK). For more information about the fiscal integration samples, see [Fiscal integration samples in the Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). For information about how to install and use the Retail SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 To support other scenarios that aren't supported by a fiscal integration sample, to integrate Retail POS with other fiscal devices or services, or to cover requirements of other countries or regions, you must either extend an existing fiscal integration sample or create a new sample by using an existing sample as an example.
 
 ## Fiscal registration process and fiscal integration samples for fiscal devices
 
-A fiscal registration process in Retail POS can consist of one or more steps. Each step involves fiscal registration of specific retail transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device that is connected to a Hardware station:
+A fiscal registration process in Retail POS can consist of one or more steps. Each step involves fiscal registration of specific transactions or events in one fiscal device or service. The following solution components participate in the fiscal registration in a fiscal device that is connected to a Hardware station:
 
-- **Commerce runtime (CRT) extension** – This component serializes retail transaction/event data in the format that is also used for interaction with the fiscal device, parses responses from the fiscal device, and stores the responses in the channel database. The extension also defines the specific transactions and events that must be registered. This component is often referred to as a *fiscal document provider*.
-- **Hardware station extension** – This component initializes the communication with the fiscal device, sends requests and direct commands to the fiscal device based on the retail transaction/event data that is extracted from the fiscal document, and receives responses from the fiscal device. This component is often referred to as a *fiscal connector*.
+- **Commerce runtime (CRT) extension** – This component serializes transaction/event data in the format that is also used for interaction with the fiscal device, parses responses from the fiscal device, and stores the responses in the channel database. The extension also defines the specific transactions and events that must be registered. This component is often referred to as a *fiscal document provider*.
+- **Hardware station extension** – This component initializes the communication with the fiscal device, sends requests and direct commands to the fiscal device based on the transaction/event data that is extracted from the fiscal document, and receives responses from the fiscal device. This component is often referred to as a *fiscal connector*.
 
 A fiscal integration sample for a fiscal device contains the CRT and Hardware station extensions for a fiscal document provider and a fiscal connector, respectively. It also contains the following component configurations:
 
@@ -62,7 +62,7 @@ The following example shows a typical fiscal registration execution flow for a f
 1. The POS requests a fiscal document from CRT.
 2. CRT determines whether the current event requires fiscal registration.
 3. Based on the fiscal registration process settings, CRT identifies a fiscal connector and corresponding fiscal document provider to use for the fiscal registration.
-4. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the retail transaction or event.
+4. CRT runs the fiscal document provider that generates a fiscal document (for example, an XML document) that represents the transaction or event.
 5. The POS sends the fiscal document that CRT prepares to a Hardware station.
 6. The Hardware station runs the fiscal connector that processes the fiscal document and communicates it to the fiscal device or service.
 7. The POS analyzes the response from the fiscal device or service to determine whether the fiscal registration was successful.
@@ -114,7 +114,7 @@ If the health check fails, the POS shows the health check dialog box. This dialo
 
 When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip** or **Mark as registered** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
 
-Fiscal transactions are transferred to Retail Headquarters by the *P-job*, together with retail transactions. On the **Fiscal transactions** FastTab of the **Retail store transactions** page, you can view the fiscal transactions that are linked to retail transactions.
+Fiscal transactions are transferred to Headquarters by the *P-job*, together with transactions. On the **Fiscal transactions** FastTab of the **Store transactions** page, you can view the fiscal transactions that are linked to transactions.
 
 A fiscal transaction stores the following details:
 
