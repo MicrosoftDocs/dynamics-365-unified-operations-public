@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Mass deployment of Retail self-service components
+title: Mass deployment of self-service components
 description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
 manager: AnnBe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
 ---
 
-# Mass deployment of Retail self-service components
+# Mass deployment of self-service components
 
 [!include [banner](../includes/banner.md)]
 
