@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Provision a Commerce preview environment
+title: Provision a Dynamics 365 ommerce preview environment
 description: This topic explains how to provision a Microsoft Dynamics 365 Commerce preview environment.
 author: psimolin
 manager: annbe
-ms.date: 01/29/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
