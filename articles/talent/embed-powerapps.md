@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Embed Power Apps apps in Dynamics 365 - Core HR
+title: Embed Power Apps apps in Dynamics 365 Human Resources
 description: This topic explains how to resolve the issue where the Microsoft Power Apps menu item has disappeared from the System administration module.
 author: andreabichsel
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Talent
 
 ---
 
-# Embed Power Apps apps in Dynamics 365 - Core HR
+# Embed Power Apps apps in Dynamics 365
 
 **Issue**
 

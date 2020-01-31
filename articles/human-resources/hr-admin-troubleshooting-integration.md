@@ -5,7 +5,7 @@ title: Integration with Finance FAQ
 description: This article explains what data is synchronized in a Human Resources and Finance integration.
 author: andreabichsel
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -25,7 +25,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2018-12-31
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -36,10 +36,7 @@ This topic answers common questions associated about what data is synchronized w
 
 ## Is all data synchronized or just some data entities?
 
-For Core HR, a subset of the data is synchronized. For a list of all
-the entities, see [Integration with Dynamics 365 Finance](hr-admin-integration-finance.md).
-
-For Attract and Onboard, all data is native to Common Data Service.
+A subset of the data is synchronized. For a list of all the entities, see [Integration with Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 ## Why don't I see any data synced to Common Data Service?
 
@@ -81,7 +78,7 @@ passing it into the destination.
 ## Can I specify which fields to send to Finance for a specific entity?
 
 Fields can be added or removed from the integration task. Not all data fields
-that exist on the Common Data Service entity will be populated from Core HR.
+that exist on the Common Data Service entity will be populated from Human Resources.
 Additional data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)

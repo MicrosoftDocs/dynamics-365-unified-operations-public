@@ -5,7 +5,7 @@ title: Get support
 description: This article explains how to get help with Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/07/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -23,7 +23,7 @@ ms.search.scope: Human Resources
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2018-09-30
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
 ---
