@@ -19,28 +19,18 @@
       href: hr-admin-system-requirements.md
     - name: Set up and manage instances
       items:
-      - name: Overview
-        href: hr-admin-setup-overview.md
-      - name: Sign up for a free trial
-        href: hr-admin-setup-trial.md
-      - name: Deploy a demo environment
-        href: hr-admin-setup-demo.md
-      - name: Update process
-        href: hr-admin-setup-update-process.md
       - name: Provision Human Resources
         href: hr-admin-setup-provision.md
       - name: Copy an instance
         href: hr-admin-setup-copy-instance.md
       - name: Remove an instance
         href: hr-admin-setup-remove-instance.md
+      - name: Update process
+        href: hr-admin-setup-update-process.md
     - name: Set up data integration
       items:
-      - name: Overview
-        href: hr-admin-integration-overview.md
       - name: Choose a data integration technology
         href: hr-admin-integration-choose-technology.md
-      - name: Integrate data with the Data Management Framework
-        href: hr-admin-integration-dmf.md
       - name: Configure Common Data Service integration
         href: hr-admin-integration-common-data-service.md
       - name: Configure integration with Finance
@@ -49,72 +39,10 @@
         href: hr-admin-integration-dayforce.md
       - name: Create a recurring data export app
         href: hr-admin-integration-recurring-data-export-app.md
-      - name: Set up number sequencing
-        href: hr-setup-number-sequencing.md
-      - name: Set up document management
-        href: hr-admin-integration-document-management.md
-      - name: Integrate with Office
-        href: hr-admin-integration-office.md
     - name: Manage features
       href: hr-admin-manage-features.md
-    - name: Disaster recovery
-      href: hr-admin-disaster-recovery.md
-    - name: Manage users
-      items:
-      - name: Overview
-        href: hr-admin-users-overview.md
-      - name: Add or delete a user
-        href: hr-admin-users-add-delete.md
-      - name: Import multiple users
-        href: hr-admin-users-bulk-import.md
-      - name: Create a user import batch job
-        href: hr-admin-users-import-batch-job.md
-      - name: Create an alert
-        href: hr-admin-users-alert.md
-      - name: Configure user options
-        href: hr-admin-users-options.md
-      - name: Manage online users
-        href: hr-admin-users-online.md
-    - name: Manage security
-      items:
-      - name: Overview
-        href: hr-admin-security-overview.md
-      - name: Configure security roles
-        href: hr-admin-security-roles.md
-      - name: Assign user roles
-        href: hr-admin-security-assign-roles.md
-      - name: Manage segregation of duties
-        href: hr-admin-security-segration-of-duties.md
-      - name: Run security diagnostics
-        href: hr-admin-security-diagnostics.md
-      - name: Run security reports
-        href: hr-admin-security-reports.md
-    - name: Manage workflows
-      href: hr-admin-workflows.md
-    - name: View electronic reporting jobs
-      href: hr-admin-electronic-reporting-jobs.md
-    - name: Manage currency exchange rates
-      href: hr-admin-exchange-rates.md
-    - name: Manage batch jobs
-      href: hr-admin-batch-jobs.md
-    - name: Import and export data
-      items:
-      - name: Overview
-        href: hr-admin-import-export-overview.md
-      - name: Create Excel workbook templates
-        href: hr-admin-import-export-excel.md
-      - name: Configure external feeds
-        href: hr-admin-import-export-external-feeds.md
-    - name: Manage work items
-      href: hr-admin-work-items.md
-    - name: Configure cases
-      href: hr-admin-cases.md
-    - name: Configure record templates
-      href: hr-admin-record-templates.md
     - name: Troubleshoot Human Resources
       items:
-      - name: Overview
-        href: hr-admin-troubleshooting-overview.md
       - name: Get support
         href: hr-admin-troubleshooting-support.md
       - name: Troubleshoot data integration
@@ -127,8 +55,6 @@
       href: hr-developer-overview.md
     - name: Extend with Power Apps and Power Automate
       href: hr-developer-power-apps.md
-    - name: Track changes in recruiting data
-      href: hr-developer-track-changes.md
     - name: Human Resources entities in Common Data Service
       href: hr-developer-entities.md
     - name: Custom fields
@@ -295,12 +221,88 @@
         href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
       - name: Date/time data and time zones
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json   
-    - name: Manage the hiring process
+    - name: Manage personnel
       items:
+      - name: Organize your workforce
+        href: hr-personnel-departments-jobs-positions.md
+      - name: Set up the components of a job
+        href: hr-personnel-jobs.md
+      - name: Define departments
+        href: hr-personnel-define-departments.md
+      - name: Add a department to a hierarchy
+        href: hr-personnel-add-department-hierarchy.md
+      - name: Define jobs
+        href: hr-personnel-define-jobs.md
+      - name: Create a working times calendar
+        href: hr-personnel-create-working-time-calendar.md
+      - name: Personnel actions FAQ
+        href: hr-personnel-actions-faq.md
+      - name: Use workflows to manage employee information
+        href: hr-workflow-manage-employee-information.md
+      - name: Modify reporting relationships for a position
+        href: hr-personnel-modify-reporting-relationships-position.md
+      - name: Enter worker information
+        href: hr-personnel-enter-worker-information.md
+      - name: Loan items to workers
+        href: hr-personnel-loan-item-worker.md
+      - name: Create loan items
+        href: hr-personnel-create-loan-items.md
+      - name: Manage loan items
+        href: hr-personnel-loan-items.md
+      - name: Develop a succession plan
+        href: hr-personnel-develop-succession-plan.md
+      - name: Enter project timesheets
+        href: hr-personnel-enter-project-timesheets.md
+      - name: Mass hire projects
+        href: hr-personnel-mass-hire-projects.md
+      - name: Create a mass hire project
+        href: hr-personnel-create-mass-hire-project.md
+      - name: Set up positions
+        href: hr-personnel-set-up-positions.md
+      - name: Set up injury and illness information
+        href: hr-personnel-set-up-injury-illness-information.md
+      - name: Maintain employee injury and illness information
+        href: hr-personnel-maintain-employee-injury-illness-information.md
     - name: Set up compensation plans
       items:
+      - name: Compensation plans overview
+        href: hr-compensation-overview.md
+      - name: Set up compensation grids
+        href: hr-compensation-grids.md
+      - name: Create fixed compensation plans
+        href: hr-compensation-fixed-plans.md
+      - name: Develop a compensation structure and plan
+        href: hr-compensation-structure.md
+      - name: Create variable compensation plans
+        href: hr-compensation-variable-plans.md
+      - name: Enroll employees in a fixed compensation plan
+        href: hr-compensation-enroll-employees-fixed.md
+      - name: Enroll employees in a variable compensation plan
+        href: hr-compensation-enroll-employees-variable.md
+      - name: Define compensation process and calculate results
+        href: hr-compensation-define-process.md
+      - name: Process compensation plans
+        href: hr-compensation-process.md
     - name: Manage benefits
       items:
+      - name: Define and manage a benefits program
+        items: hr-benefits-manage-program.md
+      - name: Benefit eligibility policies
+        items: hr-benefits-eligibility-policies.md
+      - name: Benefit eligibility process
+        items: hr-benefits-eligibility-process.md
+      - name: Define benefit eligibility rules and policies
+        items: hr-benefits-define-eligibility-rules-policies.md
+      - name: Deliver an employee benefits program
+        items: hr-benefits-deliver-employee-benefits-program.md
+      - name: Create new benefits
+        items: hr-benefits-create.md
+      - name: Enroll workers in benefits
+        items: hr-benefits-enroll-workers.md
+      - name: Manage benefit expiration dates
+        items: hr-benefits-expiration-dates.md
+      - name: Generate ACA reports
+        items: hr-benefits-aca-reports.md
       - name: Benefits management preview feature
         items:
         - name: Benefits management overview
@@ -403,17 +405,39 @@
         href: hr-employee-self-service-request-time-off.md
       - name: Create a team calendar
         href: hr-employee-self-service-calendar.md
-    - name: Create employee development plans
+    - name: Develop employees
       items:
+      - name: Performance management overview
+        href: hr-develop-performance-management-overview
+      - name: Align workforce skills
+        href: hr-develop-skills.md
+      - name: Add to your performance journal
+        href: hr-develop-add-performance-journal.md
+      - name: Create a goal
+        href: hr-develop-create-goal.md
+      - name: Create a performance review
+        href: hr-develop-create-performance-review.md
     - name: Create courses
       items:
-    - name: Manage performance
-      items:
-    - name: Create surveys
-      items:
-    - name: Manage safety and compliance
-      items:
-    - name: Run reports
-      items:
+      - name: Set up training courses
+        href: hr-learning-courses.md
+      - name: Questionnaires overview
+        href: hr-learning-questionnaires.md
+      - name: Design questionnaires
+        href: hr-learning-design-questionnaires.md
+      - name: Distribute and schedule questionnaires
+        href: hr-learning-distribute-questionnaires.md
+      - name: Distribute questionnaires using scheduling
+        href: hr-learning-distribute-questionnaires-scheduling.md
+      - name: View questionnaire results
+        href: hr-learning-evaluate-questionnaire-results.md
+      - name: Analyze questionnaire results
+        href: hr-learning-analyze-questionnaire-results.md
+      - name: Create an open-ended question
+        href: hr-learning-create-open-ended-question.md
+      - name: Create a closed-ended question
+        href: hr-learning-create-closed-ended-question.md
+      - name: Create a dependent question
+        href: hr-learning-depending-question.md
 
 
