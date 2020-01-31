@@ -165,7 +165,7 @@
               - name: Switch between vendor designs
                 href: data-entities/dual-write/vendor-switch.md
             - name: Integrated sites and warehouses
-              href: data-entities/dual-write-sites-warehouses-mapping.md
+              href: data-entities/dual-write/sites-warehouses-mapping.md
             - name: Integrated tax master
               href: data-entities/dual-write/tax-mapping.md
             - name: Initial synchronization

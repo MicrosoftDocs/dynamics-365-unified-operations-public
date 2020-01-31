@@ -30,7 +30,7 @@ ms.search.validFrom: 2019-07-15
 
 ---
 
-## Company concept in Common Data Service
+# Company concept in Common Data Service
 
 [!include [banner](../../includes/banner.md)]
 

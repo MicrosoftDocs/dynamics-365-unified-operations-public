@@ -62,13 +62,13 @@ Vendor V2               | Account | Businesses that use the Account entity to st
 Vendor V2               | Msdyn\_vendors | Businesses that use a custom solution for vendors can take advantage of the out-of-box vendor concept that is being introduced in Common Data Service because of Finance and Operations apps integration. 
 Vendor groups | msdyn_vendorgroups | This template synchronizes vendor group information.
 Vendor payment method | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information.
-CDS Contacts V2             | contacts                        | The [contacts](includes-customer.md#cds-contacts-v2-to-contacts) template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.
-Payment schedule lines      | msdyn_paymentschedulelines      | The [payment schedule lines](includes-customer.md#payment-schedule-lines-to-msdyn_paymentschedulelines) template synchronizes reference data for customers and vendors.
-Payment schedule            | msdyn_paymentschedules          | The [payment schedules](includes-customer.md#payment-schedule-to-msdyn_paymentschedules) template synchronizes payment schedule reference data, for both customers and vendors.
-Payment day lines CDS V2    | msdyn_paymentdaylines           | The [payment day lines](includes-customer.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) template synchronizes payment day lines reference data for customers and vendors.
-Payment days CDS            | msdyn_paymentdays               | The [payment days](includes-customer.md#payment-days-cds-to-msdyn_paymentdays) template synchronizes payment days reference data, for both customers and vendors.
-Terms of payment            | msdyn_paymentterms              | The [terms of payment](includes-customer.md#terms-of-payment-to-msdyn_paymentterms) template synchronizes payment terms reference data, for both customers and vendors.
-Name affixes                | msdyn_nameaffixes               | The [name affixes](includes-customer.md#name-affixes-to-msdyn_nameaffixes) template synchronizes name affixes reference data, for both customers and vendors.
+CDS Contacts V2             | contacts                        | The [contacts](customer-mapping.md#cds-contacts-v2-to-contacts) template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors.
+Payment schedule lines      | msdyn_paymentschedulelines      | The [payment schedule lines](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) template synchronizes reference data for customers and vendors.
+Payment schedule            | msdyn_paymentschedules          | The [payment schedules](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) template synchronizes payment schedule reference data, for both customers and vendors.
+Payment day lines CDS V2    | msdyn_paymentdaylines           | The [payment day lines](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) template synchronizes payment day lines reference data for customers and vendors.
+Payment days CDS            | msdyn_paymentdays               | The [payment days](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) template synchronizes payment days reference data, for both customers and vendors.
+Terms of payment            | msdyn_paymentterms              | The [terms of payment](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) template synchronizes payment terms reference data, for both customers and vendors.
+Name affixes                | msdyn_nameaffixes               | The [name affixes](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) template synchronizes name affixes reference data, for both customers and vendors.
 
 [!include [symbols](../../includes/dual-write-symbols.md)]
 

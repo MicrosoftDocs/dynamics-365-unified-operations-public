@@ -139,7 +139,7 @@ To keep track of the product dimensions that a product master can take, the foll
 
 ## Default order settings and product specific default order settings
 
-Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Common Data Service using the default order settings and product specific default order settings entity. You can read more information about the functionality in the [Default order settings topic](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
+Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Common Data Service using the default order settings and product specific default order settings entity. You can read more information about the functionality in the [Default order settings topic](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/default-order-settings).
 
 [!include [product sizes](includes/InventProductDefaultOrderSettingsEntity-msdyn-productdefaultordersetting.md)]
 
