@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -27,7 +27,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 

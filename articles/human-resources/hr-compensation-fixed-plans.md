@@ -18,7 +18,7 @@ ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEv
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 
 Fixed compensation refers to an employee's regular gross salary or wages. This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 
-Fixed compensation amounts can be calculated for your employees, based on factors such as performance, region, and budget increases. Dynamics 365 Talent supports step, grade, and band compensation types.
+Fixed compensation amounts can be calculated for your employees, based on factors such as performance, region, and budget increases. Dynamics 365 Human Resources supports step, grade, and band compensation types.
 
 ## Fixed compensation components
 ### Compensation levels

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get support for Microsoft Dynamics 365 Talent
-description: This topic explains how to get help with Microsoft Dynamics 365 Talent.
+title: Get support
+description: This topic explains how to get help with Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/07/2019
@@ -17,18 +17,18 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-09-30
-ms.dyn365.ops.version: Talent September 10, 2018 update
+ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Get support for Microsoft Dynamics 365 Talent
+# Get support
 
 This topic explains how to get help with Microsoft Dynamics 365 Human Resources.
 

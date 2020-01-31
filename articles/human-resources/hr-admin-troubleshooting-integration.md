@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
-description: This topic explains what data is synchronized in a Talent and Finance integration.
+title: Integration with Finance FAQ
+description: This topic explains what data is synchronized in a Human Resources and Finance integration.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/14/2019
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -26,18 +26,18 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
-ms.dyn365.ops.version: Talent
+ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Dynamics 365 Talent to Dynamics 365 Finance integration FAQ
+# Integration with Finance FAQ
 
-This topic answers common questions associated about what data is synchronized when Dynamics 365 Talent is integrated with Dynamics 365 Finance.
+This topic answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
 
 ## Is all data synchronized or just some data entities?
 
 For Core HR, a subset of the data is synchronized. For a list of all
-the entities, see [Integration from Dynamics 365 Talent to Dynamics 365 Finance](hr-admin-integration-finance.md).
+the entities, see [Integration with Dynamics 365 Finance](hr-admin-integration-finance.md).
 
 For Attract and Onboard, all data is native to Common Data Service.
 
@@ -51,12 +51,12 @@ Templates are the starting point. You can create your own template, but a
 template is always needed when creating an integration project. For
 more information about data integrator (DI), templates, and projects, see [Integrate data into Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-## Can I map financial dimensions to transfer between Talent and Finance?
+## Can I map financial dimensions to transfer between Human Resources and Finance?
 
 Financial dimensions aren’t currently in Common Data Service and as a result aren’t
 part of the default template. This entity is planned, but currently no release timeline is available.
 
-For data that resides in Finance but does not exist in Talent, link the two systems together by using **Configure Links** in Talent.
+For data that resides in Finance but does not exist in Human Resources, link the two systems together by using **Configure Links** in Human Resources.
 
 ![Map financial dimensions](media/MapFinancialDimensions.png)
 
@@ -86,15 +86,14 @@ Additional data can be populated via Power Apps.
 
 ![Add or remove fields to and from an integration task](media/SpecifyFieldsIncludedInIntegration.png)
 
-## I set up integration as a batch job, but Talent lost connection to the destination system. How can I send the same set of changes to the destination system?
+## I set up integration as a batch job, but Human Resources lost connection to the destination system. How can I send the same set of changes to the destination system?
 
 No special setup is required for exception handling. The Data Integrator will automatically catch and report errors which occur at the source and destination and will allow manual retries. However, it doesn’t allow manual data correction. If data updates are needed, that should happen either at the source or the destination.
 
 ## Can I set up bi-directional integration?
 
-No, integration is currently one-way (Talent to Finance and
-Operations). However, there is a default template available to send data from Talent to
-Finance.
+No, integration is currently one-way (Human Resources to Finance and
+Operations). However, there is a default template available to send data from Human Resources to Finance.
 
 ## Can I allow record deletion as part of my integration?
 
@@ -124,7 +123,7 @@ integration project in the data integration.
 
 Yes, fields can be added to or removed from the existing template. The template can be modified to include additional data from other Common Data Service entities. The entity must be in Common Data Service for it to be included in the template. 
 
-## I just created new Finance and Talent environments, and I'm getting the error "The data value violates integrity constraints." Why?
+## I just created new Finance and Human Resources environments, and I'm getting the error "The data value violates integrity constraints." Why?
 
 Reasons for this error can include:
 
@@ -156,10 +155,10 @@ the execution time in Step 2.
 
     ![Identify index](media/IdentifyIndex.png)
 
-## After integrating Talent and Finance, I don’t see my Talent data in Finance. What do I do?
+## After integrating Human Resources and Finance, I don’t see my Human Resources data in Finance. What do I do?
 
 The integration to Finance is a two-step process. First, verify
-that the Talent data is updated and available in Common Data Service. This is a near real-time
+that the Human Resources data is updated and available in Common Data Service. This is a near real-time
 sync and can be verified in Power Apps by looking at the data within the data
 entities.
 
@@ -175,14 +174,9 @@ the execution of the batch jobs. For more information about Data Management, see
 
 ## The addresses for my employees are incorrect after I import them into Finance. What should I do?
 
-The number sequence for **Location ID** uses the same pattern in both Talent and
-Finance. The number sequence needs to be unique on both sides so
-there are no address collisions when integrating data from Common Data Service to Finance and
-Operations.
+The number sequence for **Location ID** uses the same pattern in both Human Resources and Finance. The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Common Data Service to Finance and Operations.
 
-During implementation of Talent, verify that the number sequences are not the same in
-Talent and Finance. Validate that all number sequences are not
-identical where data may be maintained in both systems.
+During implementation of Human Resources, verify that the number sequences are not the same in Human Resources and Finance. Validate that all number sequences are not identical where data may be maintained in both systems.
 
 ## When creating my connection set, I am unable to see the connection in the Connection drop-down list. What do I do?
 
@@ -192,7 +186,7 @@ Make sure when creating your connections, you choose Dynamics 365 Finance and Co
 
 Ensure that you are mapping to the correct legal entities. Legal entity syncing
 is not part of the default template, so it is expected that each legal
-entity that is present in Talent and Common Data Service is also present in Finance.
+entity that is present in Human Resources and Common Data Service is also present in Finance.
 Also, make sure that you are selecting the correct legal entities for the
 associated Connection Set.
 

@@ -3,7 +3,7 @@
 # required metadata
 
 title: Avoid text truncation on the position hierarchy and export to Visio
-description: This topic explains how to resolve an issue where the names of individuals and positions are truncated when customers view the position hierarchy in Microsoft Dynamics 365 Talent. Text truncation can make it difficult to take a screenshot or print the hierarchy.
+description: This topic explains how to resolve an issue where the names of individuals and positions are truncated when customers view the position hierarchy in Microsoft Dynamics 365 Human Resources. Text truncation can make it difficult to take a screenshot or print the hierarchy.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -19,7 +19,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -27,7 +27,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
-ms.dyn365.ops.version: Talent
+ms.dyn365.ops.version: Human Resources
 
 ---
 
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Talent
 
 **Issue**
 
-When a customer views the position hierarchy in Microsoft Dynamics 365 Talent, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.
+When a customer views the position hierarchy in Microsoft Dynamics 365 Human Resources, the names of individuals and positions are truncated. Therefore, it can be difficult to take a screenshot, or to print and distribute the hierarchy.
 
 ![Position hierarchy](media/position-h.png)
 
@@ -45,11 +45,11 @@ This behavior is by design.
 
 **Resolution**
 
-Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Talent and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Talent: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Unfortunately, users can't easily change the size of the text. However, you can export the position hierarchy out of Human Resources and then import it into Microsoft Visio. Although the following article was written for Microsoft Dynamics AX 2012, the process still applies to Human Resources: [Export a position hierarchy to Microsoft Visio](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Follow these steps to export to Visio.
 
-1. In Talent, open the **Positions** list page.
+1. In Human Resources, open the **Positions** list page.
 
     To include more information in the organization structure diagram, add fields to the **Positions** list, so that they are available when you use the wizard later in this procedure.
 
@@ -110,4 +110,4 @@ Based on the fields that you selected to include in the diagram, each node shows
 
 **Additional option**
 
-In Talent, you might also be able to use the **People** workspace to view some hierarchy-related information.
+In Human Resources, you might also be able to use the **People** workspace to view some hierarchy-related information.

@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Learn how to make Finance and Operations applications work for your business, using the resources in this topic to find great content for end users, developers, and IT professionals. 
 
-Much of this content also applies to the related products: Dynamics 365 Retail and Talent. 
+Much of this content also applies to the related products: Dynamics 365 Retail and Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>

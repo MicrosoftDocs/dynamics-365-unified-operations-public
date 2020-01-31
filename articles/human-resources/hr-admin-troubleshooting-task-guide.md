@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
-ms.dyn365.ops.version: Talent
+ms.dyn365.ops.version: Human Resources
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Talent
 
 **Environment details** 
 
-Microsoft Dynamics 365 Talent, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)
+Microsoft Dynamics 365 Human Resources, which was deployed via Microsoft Dynamics Lifecycle Services (LCS)
 
 **Issue**
 
@@ -49,7 +49,7 @@ Follow these steps to save a task recording to LCS.
 3. View the page in the "Updated BPM experience."
 4. Select a library, and then select **Copy**.
 5. Enter a name for the Business process modeler (BPM) model.
-6. Sign in to Talent from LCS.
+6. Sign in to Human Resources from LCS.
 7. In the **Search** field, enter **help**. Lifecycle Services Help is opened.
 8. Select the **Refresh** button for Lifecycle Services Help configuration.
 

@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
-ms.dyn365.ops.version: Talent
+ms.dyn365.ops.version: Human Resources
 
 ---
 
@@ -49,4 +49,4 @@ Make sure that the tenant admin has assigned a valid Power Apps P2 license direc
 Note that various Microsoft Office SKUs also provide the right, together with standalone Power Apps Plan 2 SKUs. The important point is that one of these SKUs must be present.
 
 1. Go to [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
-2. Create the environments by following the instructions in [Provision Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+2. Create the environments by following the instructions in [Provision Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).

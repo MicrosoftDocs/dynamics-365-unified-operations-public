@@ -60,4 +60,4 @@ Accommodations represent changes to work environments or business operations tha
 
 ## Additional resources
 
-[Get started with Talent](../../../../talent/talent-get-started.md)
+[Get started with Human Resources](../../../../human-resources/hr-get-started.md)

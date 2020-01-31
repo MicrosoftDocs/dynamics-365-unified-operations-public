@@ -67,7 +67,7 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 1. Sign in to LCS, and select the LCS project that contains the instance that you want to copy.
 
-2. In your LCS project, select the **Talent App Management** tile.
+2. In your LCS project, select the **Human Resources App Management** tile.
 
 3. Select the instance to copy, and then select **Copy**.
 

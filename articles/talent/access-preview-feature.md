@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage features
-description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 Talent, and it lists the features that are currently enabled for preview.
+description: This topic describes how an administrator can enable preview features in Microsoft Dynamics 365 Human Resources, and it lists the features that are currently enabled for preview.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,7 +18,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent, Core
+ms.search.scope: Human Resources, Core
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -26,7 +26,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
+ms.dyn365.ops.version: AX 7.1.0, Human Resources
 
 ---
 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
 
 [!include [banner](includes/banner.md)]
 
-As part of our continuous rollout of human capital management (HCM) capabilities for Microsoft Dynamics 365 Talent, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
+As part of our continuous rollout of human capital management (HCM) capabilities for Microsoft Dynamics 365 Human Resources, we want to let customers experience new features as soon as possible. Administrators can see and use preview features in their environments. These features are almost ready for general availability and have gone through extensive testing. We're just looking for a final round of customer feedback and validation before we release them for general availability.
 
 This topic describes how you can enable preview features, and it lists the features that are currently available for preview. This list will be updated as features are released to general availability and as new features are released to preview. No notification is given when new features are released to preview. Users will just start to see the features. For more information about new features in Talent, see [What's new or changed in Dynamics 365 Talent](./whats-new.md) and [Dynamics 365 and Power Platform Release Notes](https://docs.microsoft.com/business-applications-release-notes).
 

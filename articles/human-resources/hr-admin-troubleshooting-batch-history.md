@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize performance with auto cleanup tasks
-description: This topic explains how to resolve some performance issues with Microsoft Dynamics 365 Talent by cleaning up the batch job history.
+description: This topic explains how to resolve some performance issues with Microsoft Dynamics 365 Human Resources by cleaning up the batch job history.
 author: andreabichsel
 manager: AnnBe
 ms.date: 09/23/2019
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Core, Talent
+ms.search.scope: Core, Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 24
 
 **Issue**
 
-Microsoft Dynamics 365 Talent can experience performance issues if the batch job history grows too large.
+Microsoft Dynamics 365 Human Resources can experience performance issues if the batch job history grows too large.
 
 **Cause**
 
@@ -43,7 +43,7 @@ Batch jobs that run frequently can lead to unsustainable growth of the batch job
 
 Schedule an automatic task to clean up your batch job history. We recommend setting up the task to run weekly, but you might need to run the cleanup more or less frequently, depending on your environment. The following procedure contains our recommended settings, but you can change these according to your needs.
 
-1. In Talent, select **System administration**.
+1. In Human Resources, select **System administration**.
 
 2. In the **Search** bar, enter **Batch job history clean-up**.
 

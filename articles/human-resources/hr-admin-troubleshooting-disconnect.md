@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Talent client disconnects
+title: Client disconnects
 description: This topic explains what to do if the customer is disconnected from his or her environment and doesn't know why.
 author: andreabichsel
 manager: AnnBe
@@ -18,7 +18,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: anbichse
-ms.search.scope: Talent
+ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -26,11 +26,11 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
-ms.dyn365.ops.version: Talent
+ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Talent client disconnects
+# Client disconnects
 
 **Environment details** 
 
@@ -51,7 +51,7 @@ This issue often occurs when users are in the implementation stage, are comparin
 
 **Browser types:** Google Chrome, Internet Explorer, and Microsoft Edge
 
-Microsoft Dynamics 365 Talent disconnects users when two different sessions are open at the same time for the same user and the same browser type. (For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs. If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Talent disconnects one of the sessions.
+Microsoft Dynamics 365 Human Resources disconnects users when two different sessions are open at the same time for the same user and the same browser type. (For example, user A is viewing both environment 1 and environment 2 in Chrome.) It doesn't matter whether the users open different browser windows or different tabs. If the same user credentials are used to sign in to both environment 1 and environment 2 at the same time and in the same browser type, Human Resources disconnects one of the sessions.
 
 **Solution**
 

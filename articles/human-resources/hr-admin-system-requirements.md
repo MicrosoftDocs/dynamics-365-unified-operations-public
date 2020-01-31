@@ -63,7 +63,7 @@ To find the latest release for each web browser, go to the software manufacturer
 
 ## Regional availability, languages, and localization
 
-You can download a PDF file of the countries, regions, and languages Talent supports at [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
+You can download a PDF file of the countries, regions, and languages Human Resources supports at [International availability of Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability). 
 
 > [!NOTE]
 > While the user interface is localized into other languages, all user data is stored in the language in which it was entered. You can create emails and templates in other languages, but data such as scheduling information is only available in English at this time.

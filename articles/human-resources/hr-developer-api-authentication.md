@@ -32,14 +32,6 @@ ms.dyn365.ops.version: Human Resources April 2020 update
 
 # Authentication
 
-**Notes for Reviewers**
-
-| Description | Comments |
-| --- | --- |
-| From existing topic? | [Authentication with the Talent data API](https://docs.microsoft.com/dynamics365/talent/api-odata-authentication) |
-| Review document location | (link) |
-| Please verify | Are any of the paths, comments, and labels changed to reflect the product name change? For now, I left them as is. |
-
 This article provides overview information about how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).
 
 ## Overview
@@ -97,7 +89,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
         To see specific examples for web apps or native apps, see the quickstarts in [Microsoft identity platform (formerly Azure Active Directory for developers)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
-5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics 365 for Talent**, and add the **user\_impersonation** permission to your app. The Application ID for Talent is f9be0c49-aa22-4ec6-911a-c5da515226ff. Use this ID to ensure you have chosen the correct application.
+5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics 365 Human Resources**, and add the **user\_impersonation** permission to your app. The Application ID for Human Resources is f9be0c49-aa22-4ec6-911a-c5da515226ff. Use this ID to ensure you have chosen the correct application.
 
 6. Select **Register**.
 
