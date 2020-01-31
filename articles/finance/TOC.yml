@@ -836,6 +836,8 @@
           href: general-ledger/tasks/create-journal-entry-template.md
         - name: Create ledger accrual transactions
           href: general-ledger/tasks/create-ledger-accrual-transactions.md
+        - name: Subledger  transfer to the General ledger
+          href: general-ledger/subledger-transfer.md
         - name: Publish journal lines and documents from Excel
           href: general-ledger/open-lines-excel-journals-documents.md
         - name: View journal entries and transactions
@@ -1076,6 +1078,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
       - name: Financial report components
         href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+      - name: Currency capabilities in financial reporting
+        href: general-ledger/financial-reporting-currency-capability.md        
       - name: Balance sheet financial reports
         href: general-ledger/balance-sheet-financial-reports.md
       - name: Generate financial reports
