@@ -60,6 +60,9 @@ Only an administrator can manage users. Follow these steps.
 3.  Click the **Project users** tile, and then, on the **Project users** page, click the plus sign (**+**).
 4.  Enter the user’s email address, select the correct security role, and then click **Invite**.
 
+[!Note]
+For implementation projects, you can select the implementation role for the invited user.  If you toggle the **Allow FastTrack to contact** to **Yes**, then Microsoft FastTrack team may reach out to you based on your implementation role and the stages of the implementation project.   
+
 ## Working with CustomerSource and PartnerSource
 The information in this section is intended to help you access CustomerSource or PartnerSource.
 
