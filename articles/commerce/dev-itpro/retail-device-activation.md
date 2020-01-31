@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail point of sale (POS) device activation
+title: Point of sale (POS) device activation
 description: This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 author: athinesh99
 manager: AnnBe
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail point of sale (POS) device activation
+# Point of sale (POS) device activation
 
 [!include [banner](../includes/banner.md)]
 
-This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
+This article explains the new guided device activation for Cloud POS and Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 
 Checklist to follow before activation
 -------------------------------------
@@ -66,7 +66,7 @@ Checklist to follow before activation
     ![POS Wizard, before you start page](./media/p24.png)
 
 3.  Start Cloud POS or Modern POS.
-4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Configure, install, and activate Retail Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
+4.  Use your AAD credentials to sign in. The AAD account must already be mapped. For instructions, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md). For Cloud POS, the server URL is automatically entered in the address bar. For Modern POS, you must copy and paste the server URL.
 
     [![POS Wizard, add server URL page](./media/p18.png)](./media/p18.png)
 
