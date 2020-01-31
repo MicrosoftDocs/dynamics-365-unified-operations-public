@@ -2,8 +2,6 @@
 title: Extend, customize, collaborate on the Help
 description: Tips and tricks for working with the GitHub repos and MarkDown files for Finance and Operations apps.
 author: edupont04
-ms.custom: na
-ms.reviewer: na
 ms.topic: article
 ms.service: dynamics-ax-platform
 
@@ -82,19 +80,15 @@ Microsoft's GitHub repos for Help contain the following folders:
 
 - accountant
 
-    Contains files that are relevant for Dynamics 365 — Accountant Hub
-- business-central
-
-    Contains files that are relevant for [!INCLUDE [prodshort](../developer/includes/prodshort.md)]
+    Contains files that are relevant for Dynami
 - invoicing
 
     Contains files that are relevant for Microsoft Invoicing
 - media-source
 
-    Contains source files for some of the pictures that are used in the [!INCLUDE [prodshort](../developer/includes/prodshort.md)] content
+    Contains source files for some of the pictures that are used in
 
-The repos also contain files in the root of the repos that are used internally by Microsoft for managing the content on the Docs.microsoft.com site and on GitHub. They are not relevant for the purpose of extending or customizing the content.
--->
+<!--For guidance about what the Microsoft-provided content is all about, see [User Assistance Model](../user-assistance.md).-->
 
 ### Get updates from Microsoft
 
