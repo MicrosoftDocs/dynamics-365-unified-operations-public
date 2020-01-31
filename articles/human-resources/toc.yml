@@ -1,5 +1,5 @@
 - name: Dynamics 365 Human Resources
-  href: hr-welcome.md
+  href: hr-welcome.md 
   items:
   - name: Get started
     items:
