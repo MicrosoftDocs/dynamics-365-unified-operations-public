@@ -36,7 +36,7 @@ ms.dyn365.ops.version:
 
 This topic explains how to provision a Dynamics 365 Commerce preview environment.
 
-Before you begin, we recommend that you skim through the entire topic to get an idea of what the process requires.
+Before you begin, we recommend that you take a quick scan through this topic to get an idea of what the process requires.
 
 > [!NOTE]
 > If you haven't yet been granted access to the Dynamics 365 Commerce preview, you can request preview access from the [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite).
@@ -70,7 +70,7 @@ The following prerequisites must be in place before you can provision your Comme
 These procedures explain how to provision a Commerce preview environment. After you successfully complete them, the Commerce preview environment will be ready for configuration. All the activities that are described here occur in the LCS portal.
 
 > [!IMPORTANT]
-> Preview access is tied to the LCS account and organization that you specified in your Commerce preview application. You must use the same account to provision the Commerce preview environment. If you must use a different LCS account or tenant for the Commerce preview environment, you must provide those details to Microsoft. For contact information, see the [Commerce preview environment support](#commerce-preview-environment-support) section later in this topic.
+> Preview access is tied to the LCS account and organization that you specified in your Commerce preview application. You must use the same account to provision the Commerce preview environment. If you need to use a different LCS account or tenant for the Commerce preview environment, you must provide those details to Microsoft. For contact information, see the [Commerce preview environment support](#commerce-preview-environment-support) section later in this topic.
 
 ### Confirm that preview features are available and turned on in LCS
 
@@ -166,7 +166,7 @@ The following illustration shows the actions that must be taken on the LCS **Ass
 To deploy the environment, follow these steps.
 
 > [!NOTE]
-> You might not have to complete steps 6, 7, and/or 8, because pages that have a single option are skipped. When you're in the **Environment parameters** view, confirm that the text **Dynamics 365 Commerce - Demo (10.0.*x* with Platform update *xx*)** appears directly above the **Environment name** field. See the illustration that appears after step 8.
+> You might not have to complete steps 6, 7, and/or 8, because pages that have a single option are skipped. When you're in the **Environment parameters** view, confirm that the text **Dynamics 365 Commerce - Demo (10.0.*x* with Platform update *xx*)** appears directly above the **Environment name** field. For details, see the illustration that appears after step 8.
 
 1. On the top menu, select **Cloud-hosted environments**.
 1. Select **Add** to add an environment.
@@ -210,7 +210,7 @@ To initialize CSU, follow these steps.
 1. Turn on the **Apply extension** option.
 1. In the list of extensions, select **Commerce Preview Demo Base Extension**.
 1. Select **Initialize**.
-1. On the deployment confirmation page, verify that the details are correct, and then select **Yes**. You're returned to the **Commerce management** view, where the **Commerce** tab is selected. Your CSU has been queued for provisioning.
+1. On the deployment confirmation page, verify that the details are correct, and then select **Yes**. The **Commerce management** view displays again, where the **Commerce** tab is selected. Your CSU has been queued for provisioning.
 1. Before you continue, make sure that the status of your CSU is **Success**. Initialization takes approximately two to five hours.
 
 ### Initialize e-Commerce
@@ -228,7 +228,7 @@ To initialize e-Commerce, follow these steps.
 1.	In the **AAD security group for system admin** field, enter the first few letters of the name of the security group that you want to use. Select the magnifying class icon to display the search results. Select the correct security group from the list.
 2.	In the **AAD security group for ratings and review moderator** field, enter the first few letters of the name of the security group that you want to use. Select the magnifying class icon to display the search results. Select the correct security group from the list.
 1. Leave the **Enable ratings and review service** option turned on.
-1. Select **Initialize**. You're returned to the **Commerce management** view, where the **e-Commerce** tab is selected. E-Commerce initialization has started.
+1. Select **Initialize**. The **Commerce management** view displays again, where the **e-Commerce** tab is selected. E-Commerce initialization has started.
 1. Before you continue, wait until the status of e-Commerce initialization is **Initialization successful**.
 1. Under **Links** in the lower right, make a note of the URLs for the following links:
 
