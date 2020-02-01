@@ -1,7 +1,7 @@
 ---
 
 # required metadata
-title: Retail customer invoices and return sales orders in Eastern European countries
+title: Customer invoices and return sales orders in Eastern European countries
 description: This topic describes how to set up information for customer invoices and return sales orders in Eastern European countries.
 author: epopov
 manager: annbe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Retail customer invoices and return sales orders in Eastern European countries
+# Customer invoices and return sales orders in Eastern European countries
 
 
 [!include [banner](../../includes/banner.md)]
