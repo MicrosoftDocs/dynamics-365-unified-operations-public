@@ -34,9 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 ## Overview
-The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a  Microsoft application update or applying custom code and configurations to your production environment.
-
-This tool enables functional power users to record business tasks using the Task recorder and convert these recordings into a suite of automated tests without the need to write source code. Test libraries are stored and distributed in Lifecycle Services (LCS) using the Business Process Modeler (BPM) libraries. These libraries are also fully integrated with Azure DevOps Services (Azure DevOps) for test execution, reporting and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
+The Regression suite automation tool (RSAT) significantly reduces the time and cost of user acceptance testing. User acceptance testing is typically required before taking a Microsoft application update or applying custom code and configurations to your production environment. This tool enables functional power users to record business tasks using the Task recorder and convert these recordings into a suite of automated tests without the need to write source code. For more information on Task recorder, see [this topic](../../user-interface/task-recorder.md). RSAT is fully integrated with Azure DevOps (Azure DevOps) for test execution, reporting and investigation. Test parameters are decoupled from test steps and stored in Microsoft Excel files.
 
 RSAT usage is described in these topics:
 
@@ -59,7 +57,7 @@ To learn more about this this process, see [Create and automate user acceptance 
 
 ## Lifecycle Services and BPM
 
-Using Lifecycle Services (LCS) and BPM is not required. BPM is recommended to enable management and distribution of test libraries across projects and tenants, which is especially useful for Microsoft partners and independent software vendors. BPM enables the distribution of test libraries as part of LCS solutions.
+Using the Lifecycle Services (LCS) Business Process Modeler (BPM) is not required. BPM is recommended to enable management and distribution of test libraries across projects and tenants, which is especially useful for Microsoft partners and independent software vendors. BPM enables the distribution of test libraries as part of LCS solutions.
 
 If you are not using BPM, you can manually create test cases in Azure DevOps and attach developer recording files to your Azure DevOps test cases. You can create developer recording files directly from the Task recorder pane.
 
