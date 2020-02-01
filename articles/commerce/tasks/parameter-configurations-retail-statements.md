@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Configure Retail parameters that affect retail statements
+title: Configure parameters that affect retail statements
 description: This topic demonstrates configurations for Commerce parameters that affect how statements get created and posted. 
 author: josaw1
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Configure Retail parameters that affect retail statements
+# Configure parameters that affect retail statements
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
