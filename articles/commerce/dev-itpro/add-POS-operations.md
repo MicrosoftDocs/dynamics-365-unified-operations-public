@@ -71,7 +71,7 @@ This section explains how to create a sample operation that does simplified end-
     ```
 
 3. Add a class that is named **EndOfDayOperationRequest**, and extend it from the **ExtensionOperationRequestBase** class.
-    In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal Retail POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters).
+    In this example, the operation ID in the **super** method is initialized to **5001**. However, you can use any operation ID starting from 4001. Operation IDs 0 through 4000 are reserved for internal POS operations, and no two operations should have the same operation ID. Additionally, the custom parameters field appears in Button grid designer properties only if the operation ID is 4001 or higher. (You can use custom parameters field to pass parameters to the POS operation from Retail headquarters).
 
     ```typescript
     /**
