@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail peripherals
-description: This topic explains the concepts that are related to commerce peripherals. 
+title: Peripherals
+description: This topic explains the concepts that are related to Commerce peripherals. 
 author: rubencdelgado
 manager: AnnBe
 ms.date: 01/16/2019
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail peripherals
+# Peripherals
 
 [!include [banner](includes/banner.md)]
 
-This topic explains the concepts that are related to commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This topic explains the concepts that are related to Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Concepts
 
