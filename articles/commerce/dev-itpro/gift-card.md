@@ -121,9 +121,9 @@ If you're using a Commerce Scale Unit that is located in the store, open a Comma
 3. Configure the utility by entering the correct Commerce Scale Unit URL, and then select **Install**.
 4. To verify that the download was successful, go to **C:\\ProgramData\\Microsoft Dynamics AX\\Retail Hardware Station**, and look at the timestamp of the **MerchantInformation.xml** file. It should be very recent.
 
-## Configure and test Retail Modern POS
+## Configure and test Modern POS
 
-1. Start the Retail Modern POS (MPOS) application.
+1. Start the Modern POS (MPOS) application.
 2. Sign in by using the standard credentials.
 3. When you're prompted, select **Perform a non-drawer operation**.
 4. On the main screen, select **Select hardware station**.

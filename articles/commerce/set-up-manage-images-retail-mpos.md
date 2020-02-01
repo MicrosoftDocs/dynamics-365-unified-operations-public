@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and manage images for Retail Modern POS (MPOS)
-description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).
+title: Set up and manage images for Modern POS (MPOS)
+description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Modern POS (MPOS).
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
@@ -31,15 +31,15 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Set up and manage images for Retail Modern POS (MPOS)
+# Set up and manage images for Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-This article explains the steps that are involved in setting up and managing images for the various entities that appear in Retail Modern POS (MPOS).
+This article explains the steps that are involved in setting up and managing images for the various entities that appear in Modern POS (MPOS).
 
 ## Setting up the media base URL and defining media templates to configure the format for image URLs
 
-The images that appear in Retail Modern POS (MPOS) must be hosted externally, outside of Commerce. Typically, they are hosted in a content management system, content delivery network (CDN), or media server. MPOS then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL. To fetch these externally hosted images, MPOS requires the correct URL format for the images. You can configure the required URL format for the images by setting up the **Media base URL** value in the channel profile and using the **Define media template** functionality for each entity. You can also overwrite the standard URL format for a subset of entities by using the **Edit in Excel** functionality.
+The images that appear in Modern POS (MPOS) must be hosted externally, outside of Commerce. Typically, they are hosted in a content management system, content delivery network (CDN), or media server. MPOS then fetches and displays the images for the appropriate entities, such as products and catalogs, by accessing the target URL. To fetch these externally hosted images, MPOS requires the correct URL format for the images. You can configure the required URL format for the images by setting up the **Media base URL** value in the channel profile and using the **Define media template** functionality for each entity. You can also overwrite the standard URL format for a subset of entities by using the **Edit in Excel** functionality.
 
 > [!IMPORTANT]
 > In the current version of Commerce, you can no longer set up the URL format by using the **Image** attribute XML for MPOS in the **Default** attribute group for entities. If you're familiar with Microsoft Dynamics AX 2012 R3 and are now using the current version of Commerce, make sure that you always use the new **Define media template** functionality to set up images. Don't use or modify the **Image** attribute in the **Default** attribute group for any entities, including products. Changes that you make directly in the **Default** attribute group for images won't be reflected. This option will be disabled in a future release.

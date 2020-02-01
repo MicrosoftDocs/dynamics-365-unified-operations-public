@@ -197,6 +197,6 @@ For detailed information about how to build deployable packages, see [Create ret
 6. Upload the deployable package to your Shared asset library in Microsoft Dynamics Lifecycle Services (LCS).
 7. In LCS, open your environment's main page, and select **Environment Features** \> **Retail and Commerce** \> **Manage**.
 8. Select **Apply Extension**, and select the extension from your library.
-9. After the extension has been successfully deployed, open an instance of Retail Modern POS (MPOS) or Cloud POS (CPOS) that has been activated against the Retail Cloud Scale Unit (RCSU).
+9. After the extension has been successfully deployed, open an instance of Modern POS (MPOS) or POS (CPOS) that has been activated against the Commerce Scale Unit.
 10. Run the extension scenario that that uses custom Application Insights logging.
 11. Refresh the query in Application Insights to verify that the traces from the extension are logged correctly.

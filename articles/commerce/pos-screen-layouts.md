@@ -169,7 +169,7 @@ The button grid designer lets you configure button grids that can be used on the
 - **Button properties** – You can configure button properties by right-clicking the button and using the shortcut menu.
 
     > [!IMPORTANT]
-    > Some button grid settings apply only to Enterprise POS, not to Retail Modern POS or Cloud POS.
+    > Some button grid settings apply only to Enterprise POS, not to Modern POS or Cloud POS.
 
     ![Button grid button properties](../commerce/media/Button-grid-button-properties.png)
 
@@ -189,7 +189,7 @@ The button grid designer lets you configure button grids that can be used on the
     - **Custom theme** – By default, POS buttons use the accent color from the visual profile. When you select the **Use custom theme** check box, you can specify additional colors.
 
         > [!NOTE]
-        > Retail Modern POS and Cloud POS use only the **Back color** and **Font color** values.
+        > Modern POS and Cloud POS use only the **Back color** and **Font color** values.
 
     - **Button image** – Buttons can include images or icons. Select among the available images that are specified at **Retail and Commerce \> Channel setup \> POS setup \> POS \> Images**.
 

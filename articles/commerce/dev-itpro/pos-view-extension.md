@@ -415,7 +415,7 @@ Filter extensions are also supported in **Show journal view** and **Search order
 
 Follow these steps to validate the customization.
 
-1. Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.
+1. Sign in to Modern POS by using **000160** as the operator ID and **123** as the password.
 2. Search for customer **2001** by using the search bar on the top.
 
     You should see the custom columns that you added.

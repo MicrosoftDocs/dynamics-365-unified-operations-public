@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Choose between Retail Modern POS (MPOS) and Cloud POS
-description: This topic explains the key differences between Retail Modern POS and Cloud POS. It also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
+title: Choose between Modern POS (MPOS) and Cloud POS
+description: This topic explains the key differences between Modern POS and Cloud POS. It also describes various factors that retailers implementing Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author:  jblucher 
 manager: AnnBe
 ms.date: 10/13/2017
@@ -29,7 +29,7 @@ ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Choose between Retail Modern POS (MPOS) and Cloud POS
+# Choose between Modern POS (MPOS) and Cloud POS
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ Commerce provides a wide range of deployment and topology options. Therefore, re
 
 Commerce supports the following POS options:
 
-- Retail Modern POS (MPOS) for Microsoft Windows
+- Modern POS (MPOS) for Microsoft Windows
 - MPOS for Microsoft Windows Phone
 - MPOS for Apple iPad or Google Android tablet
 - Cloud POS (CPOS), which supports the Microsoft Edge, Internet Explorer, and Google Chrome browsers

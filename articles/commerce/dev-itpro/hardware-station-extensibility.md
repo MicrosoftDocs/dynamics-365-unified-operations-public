@@ -42,7 +42,7 @@ This topic explains how to extend Hardware Station to add support for new device
 Hardware Station overview
 --------------------------------
 
-Hardware Station is used by Retail Modern POS and Cloud POS to connect to hardware peripherals, such as printers, cash drawers, scanners, and payment terminals. 
+Hardware Station is used by Modern POS and Cloud POS to connect to hardware peripherals, such as printers, cash drawers, scanners, and payment terminals. 
 
 [![HWS-Local-Traditional](./media/hws-local-300x236.png)](./media/hws-local.png)
 
