@@ -89,6 +89,6 @@ If the **Post as business day** check box is cleared for the same store, separat
 When you post a statement, sales orders and invoices are created for the sales in the statement.
 
 - Cash and carry sales are aggregated onto one sales order, and are invoiced for the default customer who is assigned to the store.
-- Sales for which a customer was added to the transaction in Retail POS generate separate sales orders and invoices, one for each unique customer.
+- Sales for which a customer was added to the transaction in POS generate separate sales orders and invoices, one for each unique customer.
 
 Payment journals are automatically created for the payments in the statement, and the inventory is updated for the POS store.
