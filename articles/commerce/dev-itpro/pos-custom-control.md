@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom controls to POS views
-description: This topic explains how you can enhance the information that appears in the Dynamics 365 Retail POS views by adding custom controls. 
+description: This topic explains how you can enhance the information that appears in the Dynamics 365 Commerce POS views by adding custom controls. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 09/15/2017
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-To enhance the information that appears in the views in Microsoft Dynamics 365 Retail POS, you can add custom controls. A custom control lets you add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework.
+To enhance the information that appears in the views in Microsoft Dynamics 365 Commerce POS, you can add custom controls. A custom control lets you add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework.
 
 In Cart view, you can add custom controls by using the POS screen layout designer. In this case, you can drag a custom control to a location of your choice, and you can also set the height and width of the control. You then write the extension logic in the extension project.
 
