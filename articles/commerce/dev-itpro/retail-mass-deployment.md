@@ -57,11 +57,11 @@ Note that silent servicing maintains all components that are currently installed
 
 ### Examples of commands for silent servicing
 
-This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Retail Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit.
+This section shows examples of commands that are used for self-service mass deployment. These commands work for all the standard self-service installers, such as the installers for Modern POS (both the installer that has offline support and the installer that doesn't have offline support), Hardware station, and Commerce Scale Unit.
 
-#### Silently update the current installation of Retail Modern POS
+#### Silently update the current installation of Modern POS
 
-The following command silently updates the current installation of Retail Modern POS. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
+The following command silently updates the current installation of Modern POS. This command has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. This command uses the configuration file that is located in the same file location as the installer, if a configuration file exists there.
 
 ```
 ModernPOSSetup_V72.exe -S
