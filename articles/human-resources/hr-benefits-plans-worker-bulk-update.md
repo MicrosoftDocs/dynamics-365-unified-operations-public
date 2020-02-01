@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Bulk update worker benefits plans
-description: 
+title: Bulk update worker benefit plans
+description: Update multiple worker benefit plans in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitPlanEmployeeAll
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Bulk update worker benefits plans
+# Bulk update worker benefit plans
 
 [!include [banner](includes/preview-feature.md)]
 
-
+This article shows you how to update multiple worker benefit plans in Dynamics 365 Human Resources.
 
 
 

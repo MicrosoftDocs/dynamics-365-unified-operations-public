@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure future life events
-description: 
+description: You can schedule future life events in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitFutureLifeEvents
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

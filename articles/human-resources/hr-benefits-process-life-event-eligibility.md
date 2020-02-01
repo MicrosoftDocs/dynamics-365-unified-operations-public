@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process life event eligibility
-description: 
+description: This article shows you how to run the process for life event eligibility.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-
+This article shows you how to run the process for life event eligibility.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Life event eligibility processing**.
 

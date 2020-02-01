@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process rate changes
-description: 
+description: Process benefit rate changes in Microsoft Dynamics 365 Human Resources when a new or existing benefit plan has a change in eligibility rule settings.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

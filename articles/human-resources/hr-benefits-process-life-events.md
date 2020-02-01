@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process life events
-description: 
+description: During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process enrollment eligibility
-description: 
+description: This article explains how to run the enrollment eligibility process.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: BenefitWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -34,6 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
+This article explains how to run the enrollment eligibility process.
 
 1. In the **Benefits management** workspace, under **Processing**, select **Enrollment eligibility processing**.
 
