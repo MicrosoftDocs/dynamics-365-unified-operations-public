@@ -36,9 +36,9 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 Most actions that user take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. Other operations are part of the main POS application, and are invoked either from on-screen buttons or as part of other workflows or processes.
 
-The following table provides details about the operations that are available in Retail Modern POS and Cloud POS. The table also specifies where in the application the operations can invoked, and whether they are available when the POS is in offline mode.
+The following table provides details about the operations that are available in Modern POS and Cloud POS. The table also specifies where in the application the operations can invoked, and whether they are available when the POS is in offline mode.
 
-Some operations aren't currently available in Retail Modern POS or Cloud POS. Some of these operations are either locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
+Some operations aren't currently available in Modern POS or Cloud POS. Some of these operations are either locale-specific operations that require additional extensions and configuration. Others are features from Microsoft Dynamics AX 2012 that aren't currently supported.
 
 The following columns specify where the operations can be invoked:
 
