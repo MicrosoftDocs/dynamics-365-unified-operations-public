@@ -78,7 +78,7 @@ The following command silently updates the current installation of Commerce Scal
 StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipPrerequisiteCheck
 ```
 
-## Mass deployment of Retail Modern POS
+## Mass deployment of Modern POS
 
 ### Before you begin
 
@@ -86,11 +86,11 @@ To use this functionality, you must be using version 7.3 or later. It's assumed 
 
 ### Examples of commands for silent mass deployment
 
-This section shows examples of commands that are used for self-service mass deployment of Retail Modern POS, even Retail Modern POS with offline and the installer without offline support. Examples of Windows PowerShell scripts are also included to help users do the installations.
+This section shows examples of commands that are used for self-service mass deployment of Modern POS, even Modern POS with offline and the installer without offline support. Examples of Windows PowerShell scripts are also included to help users do the installations.
 
-#### Silently install Retail Modern POS
+#### Silently install Modern POS
 
-The following command silently installs (or updates) Retail Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**.
+The following command silently installs (or updates) Modern POS. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**.
 
 This command uses the configuration file that is in the same location as the executable file for the installer, if a configuration file exists there. It should not be used if multiple configuration files are available.
 
@@ -99,11 +99,11 @@ ModernPOSSetup_V73.exe -S
 ```
 
 > [!NOTE]
-> A configuration file isn't required for Retail Modern POS. However, the Retail Modern POS application that is installed can't be activated in the appropriate manner unless the associated configuration file can be read from.
+> A configuration file isn't required for Modern POS. However, the Modern POS application that is installed can't be activated in the appropriate manner unless the associated configuration file can be read from.
 
-#### Silently install Retail Modern POS by using a specific configuration file
+#### Silently install Modern POS by using a specific configuration file
 
-The following command silently installs the current installation of Retail Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
+The following command silently installs the current installation of Modern POS by using a specific configuration file. This configuration file might not be in the same location as the executable file for the installer, or multiple configuration files might be available.
 
 ```
 ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
@@ -112,7 +112,7 @@ ModernPOSSetup_V72.exe -S -C "C:\Temp\ModernPOSSetup_V73_Houston-3.xml"
 #### Silently install Retail hardware station
 
 > [!NOTE]
-> The **-SkipMerchantInfo** delimiter is required to install Retail hardware station. The Merchant Account Information Utility that is opened at the end of a GUI-based installation of Hardware station no longer has to be used. Because of feature functionality, when Retail Modern POS is paired to Hardware station, it also pushes the latest merchant account information to the component.
+> The **-SkipMerchantInfo** delimiter is required to install Retail hardware station. The Merchant Account Information Utility that is opened at the end of a GUI-based installation of Hardware station no longer has to be used. Because of feature functionality, when Modern POS is paired to Hardware station, it also pushes the latest merchant account information to the component.
 
 The following command silently installs (or updates) Retail hardware station. It has the standard command structure that is used for silent servicing of components that are currently installed. The structure uses the basic values of **&lt;InstallerName&gt;.exe** and the command for silent installation, **-S**. It also uses the **-SkipMerchantInfo** delimiter to skip the download of merchant account information through the utility. This command uses the configuration file that is in the same location as the executable file for the installer.
 
