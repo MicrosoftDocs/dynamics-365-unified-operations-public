@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail capabilities that are available in on-premises deployments
-description: This topic lists the commerce capabilities available in on-premises deployments.
+title: Commerce capabilities that are available in on-premises deployments
+description: This topic lists the Commerce capabilities available in on-premises deployments.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 11/01/2018
@@ -27,11 +27,11 @@ ms.search.validFrom: July 2017 update
 ms.dyn365.ops.version: 2017-06-30 
 ---
 
-# Retail capabilities that are available in on-premises deployments
+# Commerce capabilities that are available in on-premises deployments
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists commerce capabilities that are available in on-premises deployments.
+This topic lists Commerce capabilities that are available in on-premises deployments.
 
 For more information about on-premises deployments, see [On-premises deployment home page](../dev-itpro/deployment/on-premises-deployment-landing-page.md).
 

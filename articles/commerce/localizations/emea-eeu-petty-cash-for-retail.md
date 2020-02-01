@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Petty cash management for Retail for Eastern Europe
+title: Petty cash management for Commerce for Eastern Europe
 description: This topic describes how to set up and use cash management features in Commerce for Eastern Europe.
 author: epopov
 manager: annbe
@@ -27,7 +27,7 @@ ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 ---
 
-# Petty cash management for Retail for Eastern Europe
+# Petty cash management for Commerce for Eastern Europe
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,24 +43,24 @@ You can do the following by using Cash management in Commerce:
 - Use cash journals to post cash transactions and customer payments that are received at a retail POS.
 - Aggregate transactions in a statement line when you post a statement. You can aggregate safe drops, bank drops, voucher transactions, remove tender transactions, float entry transactions, income transactions, expense transactions, customer payments, sales transactions, and return transactions.
 
-All transactions that take place in Retail POS are posted using a ledger journal. You can use cash payment journals, customer payment journals, and general journals to create and post the statements. For more information, go to [Create, calculate, and post statements for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+All transactions that take place in POS are posted using a ledger journal. You can use cash payment journals, customer payment journals, and general journals to create and post the statements. For more information, go to [Create, calculate, and post statements for a retail store](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 On the **Posted statements** page, on the Action Pane, you can do the following:
 
 - Go to **Inquiries \> Cash payment journal** to access the cash payment journals that are related to the statement.
 - Go to **Inquiries \> General journal** to access the ledger journals that are related to the statement, other than customer payments and cash payments.
 
-## Set up for cash management for Retail POS
+## Set up for cash management for POS
 
 You must complete the following setup procedure before you use cash management:
 
-- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in Retail POS. For more information about payment methods, see [Payment methods](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Set up a payment method for each payment type that the retailer accepts on the **Payment methods** page. You can use different payment methods for posting transactions in POS. For more information about payment methods, see [Payment methods](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
 - Set up parameters for cash operations.
 - Set up a payment method for cash payments in a store.
 
 ### Set up parameters for cash operations
 
-You can set up parameters to create and post cash transactions in Commerce. You can use cash payment journals, customer payment journals, or general journals to post sales transactions and payment transactions in the Retail POS. You can aggregate transactions that have the same properties when you post a statement.
+You can set up parameters to create and post cash transactions in Commerce. You can use cash payment journals, customer payment journals, or general journals to post sales transactions and payment transactions in the POS. You can aggregate transactions that have the same properties when you post a statement.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**. In the left pane, click **Posting**.
 2. In the **Posting** area, on the **Aggregation** FastTab, set **Tender remove/float** to **Yes** to aggregate the remove tender transactions or float entry transactions that are associated with a statement line when you post the statement. A remove tender transaction is created when you withdraw cash from the POS cash drawer. A float entry transaction is created when you deposit cash in the POS cash drawer.

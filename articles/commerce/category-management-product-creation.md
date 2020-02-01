@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage Retail product categories and products
+title: Manage product categories and products
 description: This topic describes how merchandising managers can use product categories to manage relationships between the Commerce product hierarchy and released product details. 
 author: ashishmsft
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---
 
-# Manage Retail product categories and products
+# Manage product categories and products
 
 [!include [banner](./includes/banner.md)]
 

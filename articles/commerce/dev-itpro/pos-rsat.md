@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Test recorder and Regression suite automation tool for Retail Cloud POS
+title: Test recorder and Regression suite automation tool for Cloud POS
 description: This topic explains how to automate user acceptance testing (UAT) by using the POS test recorder and the Regression suite automation tool (RSAT).
 author: mugunthanm
 manager: AnnBe
@@ -30,21 +30,21 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-# Test recorder and Regression suite automation tool for Retail Cloud POS
+# Test recorder and Regression suite automation tool for Cloud POS
 
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to use the new test recorder tool in Retail Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
+This topic explains how to use the new test recorder tool in Cloud POS to record business scenarios for user acceptance testing (UAT) and user interface (UI) testing. It also explains how to automate test validation by using the Regression suite automation tool (RSAT). RSAT uses the Microsoft Azure DevOps test suite to download test cases. It then reports the results, together with the test execution status, back to Azure DevOps. The test cases can be manually created in Azure DevOps, or they can be synced from the Business process modeler (BPM) tool in Microsoft Dynamics Lifecycle Services (LCS) to Azure DevOps and then to RSAT.
 
 This topic applies to Dynamics 365 Retail and Dynamics 365 Finance version 10.0.5 (October 2019) and later.
 
 > [!NOTE]
-> The test recorder is supported in Retail Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later. Currently, POS RSAT is in preview. This means that it's not available in a public download version. If you would like to try the preview version, please create a support ticket.
+> The test recorder is supported in Cloud POS only when the Google Chrome web browser is used. Support for other web browsers and device types will be added later. Currently, POS RSAT is in preview. This means that it's not available in a public download version. If you would like to try the preview version, please create a support ticket.
 
 ## Test recorder
 
-The test recorder in POS helps significantly reduce the time and cost of UAT. UAT is typically required before a Microsoft application update is applied, or before custom code and configurations are applied to your Retail POS production environments.
+The test recorder in POS helps significantly reduce the time and cost of UAT. UAT is typically required before a Microsoft application update is applied, or before custom code and configurations are applied to your POS production environments.
 
 The test recorder can record user actions in the client, and it provides exact fidelity for all controls and for all elements in the Document Object Model (DOM). In POS, the test recorder captures an event that has occurred and stores it, together with all relevant information about the corresponding user action, in real time. From this information, the test recorder can capture the type of user action (such as a button click, value entry, or navigation) and any data that is related to that user action (such as the value and type of input data, the view context, or the record context). However, password information isn't captured. During a recording session, the test recorder persists all the recorder information in memory. Then, at the end of the recording session, it generates an output file that includes enough detail so that RSAT can be used later to play back the actions just as the user performed them.
 
@@ -53,21 +53,21 @@ The test recorder can record user actions in the client, and it provides exact f
 
 ## Regression suite automation tool
 
-RSAT lets functional power users run test cases in Retail POS. It then updates the test execution results in Azure DevOps for reporting and investigation purposes.
+RSAT lets functional power users run test cases in POS. It then updates the test execution results in Azure DevOps for reporting and investigation purposes.
 
 RSAT provides options for investigating test failures. It also decouples the test parameters from test steps and stores the parameters in Microsoft Excel files. In that way, the values of test parameters can easily be edited.
 
 ## Prerequisites
 
-+ You must have a Retail POS environment.
++ You must have a POS environment.
 + Your test environment must be running binary update 10.0.5 or later.
 + RSAT must have access to your test environment via a web browser.
 + You must have Excel installed to generate and edit test parameters.
 + You must have an Azure DevOps project to store and manage your test cases, test plans, and test case results.
 
-## Enable test recording in the Retail POS application
+## Enable test recording in the POS application
 
-To turn on the test recording functionality in Retail POS, follow these steps in Headquarters.
+To turn on the test recording functionality in POS, follow these steps in Headquarters.
 
 1. Go to **Retail and Commerce** &gt; **Channel Setup** &gt; **POS Setup** &gt; **Registers**.
 2. Select the register where the test recording functionality should be turned on.
@@ -80,7 +80,7 @@ To turn on the test recording functionality in Retail POS, follow these steps in
 
 ### Open the test recorder
 
-To open the test recorder, sign in to Retail Cloud POS, and then, on the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
+To open the test recorder, sign in to Cloud POS, and then, on the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
 [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
 
@@ -168,13 +168,13 @@ To temporarily stop (pause) the recording session and continue the operation, se
 
 To resume the recording session after you've paused it, select **Recording**.
 
-## Record a test case in Retail POS
+## Record a test case in POS
 
 ### Create a recording
 
 Follow these steps to create a new recording by using the test recorder:
 
-1. Open Retail Cloud POS, and sign in.
+1. Open Cloud POS, and sign in.
 2. On the **Settings** page, in the **Task and Test recorders** section, select **Open test recorder**.
 
     [![Task and Test recorders](./media/CreateTest.png)](./media/CreateTest.png)
@@ -188,7 +188,7 @@ Follow these steps to create a new recording by using the test recorder:
 
     The test recorder enters recording mode, and the recording session begins. The test recorder pane shows information and controls that are related to the recording session.
 
-5. Perform the actions that you want to perform in the Retail POS UI.
+5. Perform the actions that you want to perform in the POS UI.
 
     > [!div class="mx-imgBorder"]
     > [![Test recorder steps](./media/Steps.png)](./media/Steps.png)
@@ -228,7 +228,7 @@ Download the Microsoft Windows Installer (MSI) package file for RSAT from [Regre
 > [!NOTE]
 > Before you run the test, you must set up Azure DevOps, and you must complete the required general settings and other required settings in RSAT. For detailed steps, see [Regression suite automation tool installation and configuration](../../dev-itpro/perf-test/rsat/rsat-overview.md).
 
-The following procedure describes the configuration that is required to run the Retail POS test cases.
+The following procedure describes the configuration that is required to run the POS test cases.
 
 If you are using the preview version of POS RSAT, after the installation of RSAT, add the following setting in the Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config configuration file. This file is located in main RSAT installation folder (usually C:\Program Files (x86)\Regression Suite Automation Tool).
 
@@ -244,7 +244,7 @@ If this setting is not used, Retail POS tab will not be shown on the **RSAT Sett
 2. Select the **Settings** button in the upper right to configure RSAT.
 3. In the **Settings** dialog box, on the **Retail POS** tab, on the **Playback environment** tab, set the following fields:
 
-    + **Cloud POS URL** – Enter the URL of the Retail Cloud POS environment where you want to run the test.
+    + **Cloud POS URL** – Enter the URL of the Cloud POS environment where you want to run the test.
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
 
@@ -303,7 +303,7 @@ When you select **New**, test automation files are generated in your working dir
 
 ![Test parameter file in the Parameters File column](./media/RSATParameter.png)
 
-For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Retail Cloud POS uses the Selenium web directly to do the playback, no additional script file must be generated.
+For the test recording files, the **Generate Test Execution files only** option is unavailable. Because Cloud POS uses the Selenium web directly to do the playback, no additional script file must be generated.
 
 ![Unavailable Generate Test Execution files only option](./media/RSATNewOption.png)
 
@@ -313,7 +313,7 @@ This section explains how to modify Excel files by specifying input and validati
 
 In RSAT, select one or more test cases to modify, and then select **Edit**. An Excel window is opened for each test case that you selected. Alternatively, you can open the Excel files directly from the working directory.
 
-In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. Retail POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
+In addition to a **Summary** tab, the Excel file includes a **Variables** tab that has the details of all the variables that were generated. POS automatically generates variables for all the input values that are entered during a recording session. You don't have to generate the variables separately. Each variable has a unique variable ID that you can pass, in order, to different test cases in a single instance of test execution. All the variables on the **Variables** tab appear in the order that they were entered in during the recording session.
 
 ### Validate expected values
 
@@ -325,7 +325,7 @@ During the recording session, turn on validation mode. Then, while the test reco
 
 ### Run
 
-In RSAT, select **Run** to run the selected test cases. You can run only test cases that automation files have been generated for. RSAT opens Retail POS and runs the tests by using the data that is entered in Excel. After the test run, the results are updated in the **Result** column in RSAT, and also in Azure DevOps.
+In RSAT, select **Run** to run the selected test cases. You can run only test cases that automation files have been generated for. RSAT opens POS and runs the tests by using the data that is entered in Excel. After the test run, the results are updated in the **Result** column in RSAT, and also in Azure DevOps.
 
 To change the order that test cases are run in, use the up arrow and down arrow buttons.
 

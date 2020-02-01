@@ -80,11 +80,11 @@
         items:
         - name: What's new or changed in Finance and Operations apps
           href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
-        - name: What's new or changed in Retail
+        - name: What's new or changed in Commerce
           items:
-          - name: What's new or changed in Retail home page
+          - name: What's new or changed in Commerce home page
             href: get-started/whats-new-home-page.md
-          - name: Retail version 10.0.8 (February 2020)
+          - name: Commerce version 10.0.8 (February 2020)
             href: get-started/whats-new-10-0-8.md
           - name: Retail version 10.0.7 (January 2020)
             href: get-started/whats-new-10-0-7.md
@@ -180,41 +180,41 @@
       items:
       - name: Architecture
         items:
-        - name: Retail components
+        - name: Commerce components
           href: retail-components.md
-        - name: Retail Server architecture
+        - name: Commerce Scale Unit architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
           href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange and retail channel communications
+        - name: Commerce Data Exchange and commerce channel communications
           href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: Retail Modern POS architecture
+        - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Retail online store publishing architecture
+        - name: Online store publishing architecture
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
         - name: Payment Application Data Security Standards (PA-DSS) certification
           href: dev-itpro/PA-DSS-Certification.md
-        - name: Retail capabilities available in on-premises deployments
+        - name: Commerce capabilities available in on-premises deployments
           href: retail-onprem.md
       - name: Deployment and hotfixes
         items:
-        - name: Retail Store Scale Unit
+        - name: Commerce Scale Unit
           href: dev-itpro/retail-store-system-begin.md
-        - name: Configure and install Retail Store Scale Unit
+        - name: Configure and install Commerce Scale Unit
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-        - name: Retail Modern POS configuration and installation
+        - name: Modern POS configuration and installation
           href: retail-modern-pos-device-activation.md
-        - name: Manage Retail accounts and devices from headquarters
+        - name: Manage accounts and devices from headquarters
           href: set-up-activation-accounts-validate-devices-hq.md
-        - name: Retail POS device activation
+        - name: POS device activation
           href: dev-itpro/retail-device-activation.md
         - name: Help secure Cloud POS in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
-        - name: Mass deployment of Retail self-service components
+        - name: Mass deployment of self-service components
           href: dev-itpro/retail-mass-deployment.md
         - name: Retail component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
@@ -248,11 +248,11 @@
           href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
-        - name: Implement Finance and Operations Retail projects
+        - name: Implement Finance and Operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-        - name: Set up new environments, Azure DevOps, and branches for Retail projects
+        - name: Set up new environments, Azure DevOps, and branches for Commerce projects
           href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-        - name: Update code and environments for Retail projects
+        - name: Update code and environments for Commerce projects
           href: dev-itpro/updating-environments.md
         - name: Testing and performance issues
           href: dev-itpro/retail-implementation-testing-performance.md
@@ -330,7 +330,7 @@
             href: MPOS-or-CPOS.md
           - name: Online and offline POS operations
             href: pos-operations.md
-          - name: Device activation of a customized Retail MPOS
+          - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
           - name: Demo data screen layouts in MPOS and Cloud POS
             href: demo-data.md
@@ -358,9 +358,9 @@
             href: task-recorder-retail-pos.md
           - name: Hardware peripherals
             items:
-            - name: Retail peripherals
+            - name: Peripherals
               href: retail-peripherals-overview.md
-            - name: Retail peripheral simulator
+            - name: Peripheral simulator
               href: dev-itpro/retail-peripheral-simulator.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
@@ -370,7 +370,7 @@
               href: demo-data.md
             - name: Screen layouts for the POS
               href: pos-screen-layouts.md
-            - name: Install the Retail POS layout designer
+            - name: Install the POS layout designer
               href: install-pos-layout-designer.md
             - name: Choose notification settings
               href: Notifications-POS.md
@@ -396,7 +396,7 @@
               href: retail-modern-pos-device-activation.md
             - name: Set up extended logon functionality for MPOS and Cloud POS
               href: extended-logon.md
-            - name: Manage Retail activation accounts and validate devices
+            - name: Manage activation accounts and validate devices
               href: set-up-activation-accounts-validate-devices-hq.md
           - name: Create financial dimensions for POS registers and configure dimension values on registers 
             href: tasks/create-financial-dimensions-pos.md
@@ -410,7 +410,7 @@
           items:
           - name: Set up and design receipt formats
             href: receipt-templates-printing.md
-          - name: Send email receipts from Retail Modern POS (MPOS)
+          - name: Send email receipts from Modern POS (MPOS)
             href: email-receipts.md           
         - name: Create functionality profiles for sales representatives 
           href: tasks/configure-functionality-profile-sales-representative.md
@@ -430,6 +430,8 @@
           href: call-center-catalogs.md
         - name: Set up call center order processing options
           href: set-up-order-processing-options.md
+        - name: Configure call center delivery modes and charges
+          href: configure-call-center-delivery.md
         - name: Set up and work with fraud alerts 
           href: set-up-fraud-alerts.md
         - name: Set up continuity programs for call centers 
@@ -448,7 +450,7 @@
           items:
           - name: Create and change store hours
             href: dev-itpro/store-hours.md
-          - name: Retail Store Scale Unit
+          - name: Commerce Scale Unit
             href: dev-itpro/retail-store-system-begin.md
         - name: Call center management 
           items:
@@ -492,9 +494,9 @@
           items:
           - name: Retail hierarchies 
             href: retail-hierarchies.md
-          - name: Create a new Commerce product hierarchy 
+          - name: Create a new product hierarchy 
             href: create-product-hierarchy.md
-          - name: Manage retail product categories and products 
+          - name: Manage product categories and products 
             href: category-management-product-creation.md
           - name: Change the sort order for merchandizing entities 
             href: custom-order-categories-nav-retail-prod-hierarchy.md
@@ -508,7 +510,7 @@
           items:
           - name: Create a new product overview
             href: create-new-product.md
-          - name: Manage retail product categories and products 
+          - name: Manage product categories and products 
             href: category-management-product-creation.md
         - name: Product attributes 
           items:
@@ -596,7 +598,7 @@
           href:	manage-reviews.md
         - name:	Configure ratings and reviews	
           href:	configure-ratings-reviews.md
-        - name:	Sync product ratings in Dynamics 365 Retail	
+        - name:	Sync product ratings
           href:	sync-product-ratings.md
       - name: Manage your inventory  
         items:
@@ -698,7 +700,7 @@
         href: statement-posting-eod.md
       - name: Improved handling of batch tracked items
         href: batch.md
-      - name: Configure Retail parameters that affect statements 
+      - name: Configure Commerce parameters that affect statements 
         href: tasks/parameter-configurations-retail-statements.md
       - name: Configure payment method settings that affect retail statements 
         href: tasks/payment-configurations-retail-statements.md
@@ -918,9 +920,9 @@
         href: set-up-rfm-analysis.md
     - name: Localization and regulatory features
       items:
-      - name: Fiscal integration overview for Retail channel
+      - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
-      - name: Set up fiscal integration for Retail channel
+      - name: Set up fiscal integration for Commerce channel
         href: localizations/setting-up-fiscal-integration-for-retail-channel.md
       - name: Austria
         items:
@@ -928,11 +930,11 @@
           href: localizations/emea-aut-fi-sample.md
       - name: Eastern Europe
         items: 
-        - name: Advance invoices for Retail for Eastern Europe
+        - name: Advance invoices for Commerce for Eastern Europe
           href: localizations/emea-eeu-advance-invoices-for-retail.md
-        - name: Petty cash management for Retail for Eastern Europe
+        - name: Petty cash management for Commerce for Eastern Europe
           href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Retail customer invoices and return sales orders in Eastern European countries
+        - name: Customer invoices and return sales orders in Eastern European countries
           href: localizations/emea-eeu-retail-invoices.md
         - name: Deployment guidelines for cash registers for Czech Republic, Hungary, and Poland
           href: localizations/emea-eeu-deployment.md
@@ -972,7 +974,7 @@
         items:
         - name: Cash register functionality
           href: localizations/emea-swe-cash-registers.md
-        - name: Sample for Retail POS integration with control units
+        - name: Sample for POS integration with control units
           href: localizations/retail-sdk-control-unit-sample.md
     - name: Intelligence
       items:
@@ -1858,7 +1860,7 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
-          - name: Call Retail Server APIs
+          - name: Call Commerce Scale Unit APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
         - name: Advanced data action topics
           items:
@@ -1898,17 +1900,17 @@
           href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Upcoming changes in the Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
-        - name: Merge the build systems for Retail and Finance and Operations
+        - name: Merge the build systems for Commerce and Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: Retail SDK extensibility samples
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-        - name: Create retail deployable packages
+        - name: Create deployable packages
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Development in cloud-hosted dev environments without admin access
           href: dev-itpro/cloud-dev-box.md
       - name: Point of sale extensibility
         items:
-        - name: Retail POS screen layouts
+        - name: POS screen layouts
           href: pos-screen-layouts.md
         - name: Open URL in POS
           href: Open-URL-in-POS.md
@@ -1916,13 +1918,13 @@
           href: install-pos-layout-designer.md
         - name: Extend the POS Dual display view
           href: dev-itpro/pos-dual-display-extension.md
-        - name: Retail Modern POS and Cloud POS trigger extensibility
+        - name: Modern POS and Cloud POS trigger extensibility
           href: dev-itpro/modern-pos-trigger-extensibility.md
         - name: Add custom controls to POS views
           href: dev-itpro/pos-custom-control.md
         - name: Add POS operations to POS layouts using Button grid designer
           href: dev-itpro/add-POS-operations.md  
-        - name: Retail POS APIs
+        - name: POS APIs
           href: dev-itpro/POS-APIs.md
         - name: POS payment extension
           href: dev-itpro/pos-payment-extension.md
@@ -1936,7 +1938,7 @@
           href: dev-itpro/pos-handler.md
         - name: View POS extension package information
           href: dev-itpro/view-pos-extension-package-details.md
-        - name: Test recorder and Regression suite automation tool for Retail Cloud POS
+        - name: Test recorder and Regression suite automation tool for Cloud POS
           href: dev-itpro/pos-rsat.md
         - name: Add custom fields to the POS Totals panel
           href: dev-itpro/custom-field-pos-totals.md
@@ -1946,17 +1948,17 @@
           href: dev-itpro/pos-app-signing-certificate.md
         - name: Extend POS views to add custom columns and app bar buttons
           href: dev-itpro/pos-view-extension.md
-        - name: Add custom controls to Retail Modern POS transaction pages
+        - name: Add custom controls to Modern POS transaction pages
           href: dev-itpro/pos-custom-transaction.md
         - name: Add custom columns to a POS transaction grid
           href: dev-itpro/pos-custom-transaction-column.md
         - name: Call POS APIs or operations from POS extensions
           href: dev-itpro/pos-api-extension.md
-        - name: Retail Modern POS triggers and printing
+        - name: Modern POS triggers and printing
           href: dev-itpro/pos-trigger-printing.md
         - name: Add custom controls to non-screen designer-based POS views
           href: dev-itpro/pos-control-non-screen.md
-        - name: Run the Retail POS samples
+        - name: Run the POS samples
           href: dev-itpro/pos-run-samples.md
         - name: Device management implementation guidance
           href: implementation-considerations-devices.md
@@ -1970,8 +1972,6 @@
         items:
         - name: Extend a Retail Server OData controller
           href: dev-itpro/extend-retail-server-odata-controller.md
-        - name: Create a Web API controller for Retail Server
-          href: dev-itpro/odata-controllers-api.md
         - name: Retail Server customer and consumer APIs
           href: dev-itpro/retail-server-customer-consumer-api.md
         - name: Extend the default Retail Server metadata controller
@@ -2040,11 +2040,9 @@
           href: dev-itpro/configure-online-store.md
         - name: Configure authentication providers
           href: dev-itpro/configure-authentication-providers.md
-        - name: e-Commerce platform
-          href: dev-itpro/ecommerce-platform.md
         - name: e-Commerce platform SDK
           href: dev-itpro/ecommerce-platform-sdk.md
-      - name: Localize Retail extension resources and label files
+      - name: Localize Commerce extension resources and label files
         href: dev-itpro/extension-resource-localization.md
   - name: Finance and Operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md

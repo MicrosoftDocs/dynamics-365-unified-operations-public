@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update code and environments for Retail projects
+title: Update code and environments for Commerce projects
 description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail 7.3
 ---
 
 
-# Update code and environments for Retail projects
+# Update code and environments for Commerce projects
 
 [!include [banner](../../includes/banner.md)]
 

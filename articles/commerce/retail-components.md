@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail components
+title: Commerce components
 description: This topic describes the various components that make up Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail components
+# Commerce components
 
 [!include [banner](includes/banner.md)]
 

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Run the Retail point of sale (POS) samples
-description: This topic explains how to run the Retail POS samples.
+title: Run the point of sale (POS) samples
+description: This topic explains how to run the POS samples.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/27/2017
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Run the Retail point of sale (POS) samples
+# Run the point of sale (POS) samples
 
 [!include [banner](../../includes/banner.md)]
 

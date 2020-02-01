@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Modern POS (MPOS) and Cloud POS trigger extensibility
+title: Modern POS (MPOS) and Cloud POS trigger extensibility
 description: This topic explains the client-side trigger functionality in Modern POS and Cloud POS.
 author: RobinARH
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail Modern POS (MPOS) and Cloud POS trigger extensibility
+# Modern POS (MPOS) and Cloud POS trigger extensibility
 
 [!include [banner](../../includes/banner.md)]
 

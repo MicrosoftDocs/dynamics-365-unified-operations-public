@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Device activation of a customized Retail Modern POS
-description: This topic explains how to configure Microsoft Dynamics 365 Headquarters so that device activation works correctly when a customized Retail Modern POS application is used. 
+title: Device activation of a customized Modern POS
+description: This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. 
 author: jashanno
 manager: AnnBe
 ms.date: 08/24/2018
@@ -27,24 +27,24 @@ ms.search.validFrom: 2017-09-31
 ms.dyn365.ops.version: Application update 3
 ---
 
-# Device activation of a customized Retail Modern POS
+# Device activation of a customized Modern POS
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This topic explains how to configure Microsoft Dynamics 365 Headquarters so that device activation works correctly when a customized Retail Modern POS application is used. It describes the steps that are required in order to obtain the customized reply address and enter that value in Headquarters.
+This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. It describes the steps that are required in order to obtain the customized reply address and enter that value in Headquarters.
 
-Retail Modern POS is a client-side component for Microsoft Dynamics 365 Commerce. To use the POS, you must perform device activation. Device activation uses Microsoft Azure Active Directory (Azure AD) to authenticate users. Enhanced functionality in this area has modified the device activation flow to take better advantage of the Web Account Manager service. As part of this enhancement, there is now enhanced security for the authentication approval process. This enhanced security requires additional configuration in Headquarters when the POS is customized, because a specific, unique value is now required for the callback URI. (The callback URI is also known as the reply URI.)
+Modern POS is a client-side component for Microsoft Dynamics 365 Commerce. To use the POS, you must perform device activation. Device activation uses Microsoft Azure Active Directory (Azure AD) to authenticate users. Enhanced functionality in this area has modified the device activation flow to take better advantage of the Web Account Manager service. As part of this enhancement, there is now enhanced security for the authentication approval process. This enhanced security requires additional configuration in Headquarters when the POS is customized, because a specific, unique value is now required for the callback URI. (The callback URI is also known as the reply URI.)
 
-By default, Retail Modern POS is already registered for this callback URI. However, when customized, the callback URI is changed. Therefore, it must be correctly configured so that it works again. This topic describes the steps that you must follow to complete this configuration. If this configuration isn't completed, you receive an error message when you try to perform device activation in the customized POS application. This error message resembles the following example:
+By default, Modern POS is already registered for this callback URI. However, when customized, the callback URI is changed. Therefore, it must be correctly configured so that it works again. This topic describes the steps that you must follow to complete this configuration. If this configuration isn't completed, you receive an error message when you try to perform device activation in the customized POS application. This error message resembles the following example:
 
 > AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' does not match the reply addresses configured for the application
 
 > [!NOTE]
-> - We recommend that you try to use the customized Retail Modern POS application one time before you configure Dynamics 365 headquarters. In this way, you can see what the error message looks like and more easily obtain the customized reply address.
+> - We recommend that you try to use the customized Modern POS application one time before you configure Dynamics 365 headquarters. In this way, you can see what the error message looks like and more easily obtain the customized reply address.
 > - The error specifies the reply address that is used for the application ID that corresponds to the POS application.
 
 ## Setup
-The following steps are required so that device activation works correctly when the customized Retail Modern POS application is used. You will create two Azure AD applications: one for Retail Modern POS and one for Commerce Scale Unit. The Commerce Scale Unit Azure AD application is required because the POS uses resources through Commerce Scale Unit. Therefore, both Azure AD applications are used when the POS is used. In this scenario, Commerce Scale Unit serves as the endpoint for protected resources that the POS requests.
+The following steps are required so that device activation works correctly when the customized Modern POS application is used. You will create two Azure AD applications: one for Modern POS and one for Commerce Scale Unit. The Commerce Scale Unit Azure AD application is required because the POS uses resources through Commerce Scale Unit. Therefore, both Azure AD applications are used when the POS is used. In this scenario, Commerce Scale Unit serves as the endpoint for protected resources that the POS requests.
 
 ### Create the Commerce Scale Unit Azure AD application
 1. In a web browser, go to <https://portal.azure.com/>.
@@ -66,7 +66,7 @@ The following steps are required so that device activation works correctly when 
 > [!NOTE]
 > Don't close the web browser window, because you will use it again later in this topic.
 
-### Update the Retail Modern POS configuration
+### Update the Modern POS configuration
 1. In File Explorer, go to **C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\Retail Modern POS\\ClientBroker**. (This path assumes that the Microsoft Windows operating system on the computer is based on the x64 architecture.)
 2. In File Explorer, select **File** \> **Open Windows PowerShell** \> **Open Windows PowerShell as administrator**.
 3. In the Microsoft Windows PowerShell window that appears, enter **notepad DLLHost.exe.config**, and then press the Enter key. (The Windows PowerShell window will already be pointed to the current file directory.)
@@ -76,12 +76,12 @@ The following steps are required so that device activation works correctly when 
 > [!NOTE]
 > Don't close the Notepad window, because you will use it again in the next section.
 
-### Create the customized Retail Modern POS Azure AD application
+### Create the customized Modern POS Azure AD application
 1. Return to the web browser window where <https://portal.azure.com/> is open, and create the Retail Modern POS Azure AD application by repeating steps 3 through 4 in the "Create the Commerce Scale Unit Azure AD application" section. However, enter the following values this time:
 
     - **Name:** Enter **Customized Retail Modern POS**. (You can enter any other unique value, but be sure to make a note of it.)
     - **Application type:** Select **Native**.
-    - **Redirect URI:** If you tried to use the customized Retail Modern POS application without configuring Dynamics 365 headquarters, as we recommended at the beginning of this topic, you received an error message. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
+    - **Redirect URI:** If you tried to use the customized Modern POS application without configuring Dynamics 365 headquarters, as we recommended at the beginning of this topic, you received an error message. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
 
         > [!NOTE]
         > - You can also see the reply address (redirect URI) in Event Viewer in Windows, under **Microsoft-Dynamics-Commerce-ModernPos/Operational**. The event ID is 40619. The error message will start with the following text: "This UWP application was assigned the following callback URI to be used while interacting with Azure AD: ms-appx-web://Microsoft.AAD.BrokerPlugIn/S-1-15-2-[...]"
@@ -108,7 +108,7 @@ The following steps are required so that device activation works correctly when 
 14. Select **File** \> **Save**.
 
 ### Configure Dynamics 365 Headquarters
-The previous steps were required so that the Retail Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a whitelist.)
+The previous steps were required so that the Modern POS application can be authenticated. You must now follow these steps to add the new Azure AD applications to the list of safe programs in Headquarters, so that the requests are authorized. (A list of safe programs is sometimes also referred to as a whitelist.)
 
 1. In a web browser, go to the Headquarters URL, and sign in by using Azure AD credentials.
 2. Go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
@@ -123,7 +123,7 @@ The previous steps were required so that the Retail Modern POS application can b
 6. On the Action Pane, select **Save**. The relying party that you just created should remain selected.
 7. In the **Server resource IDs** section, select **+ Add**, and enter the following values:
 
-    - **Server Resource Id:** Enter the URL that you copied in step 4 in the "Update the Retail Modern POS configuration" section. (You originally created this value in step 4 in the "Create the Commerce Scale Unit Azure AD application" section.)
+    - **Server Resource Id:** Enter the URL that you copied in step 4 in the "Update the Modern POS configuration" section. (You originally created this value in step 4 in the "Create the Commerce Scale Unit Azure AD application" section.)
     - **Name:** Enter a description to help users understand what this entry references.
 
 8. On the Action Pane, select **Save**.
@@ -131,7 +131,7 @@ The previous steps were required so that the Retail Modern POS application can b
 10. Select job **1110** (**Global configuration**), and then, on the Action Pane, select **Run now**. This job synchronizes the new data. However, there is a cache in Commerce Scale Unit that won't be updated for several minutes. Therefore, if you require an immediate update, the Commerce Scale Unit application pool must be recycled.
 
     > [!NOTE]
-    > For best results, verify that Retail Modern POS is closed, and that no instances of DLLHost.exe exist in Task Manager.
+    > For best results, verify that Modern POS is closed, and that no instances of DLLHost.exe exist in Task Manager.
 
-### Perform Retail Modern POS device activation
-Try to activate the Retail Modern POS device. If you still experience issues, open Event Viewer in Windows, and view the logs that correspond to Retail Modern POS. Look for warnings and errors that might help you determine which steps you missed in the previous sections.
+### Perform Modern POS device activation
+Try to activate the Modern POS device. If you still experience issues, open Event Viewer in Windows, and view the logs that correspond to Modern POS. Look for warnings and errors that might help you determine which steps you missed in the previous sections.
