@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail Server customer and consumer APIs
+title: Cloud Scale Unit customer and consumer APIs
 description: This topic provides an overview of the APIs that are available across various roles, and that can be used by various clients. The focus is on customer-facing application clients and eCommerce clients.
 author: mugunthanm
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail Server customer and consumer APIs
+# Cloud Scale Unit customer and consumer APIs
 
 [!include [banner](../includes/banner.md)]
 
