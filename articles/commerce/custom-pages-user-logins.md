@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Set up custom pages for user logins
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to build custom pages in Microsoft Dynamics 365 Commerce that handle customized sign-ins for users of Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants.

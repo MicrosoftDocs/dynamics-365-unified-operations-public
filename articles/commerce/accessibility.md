@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Accessibility features and capabilities
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.

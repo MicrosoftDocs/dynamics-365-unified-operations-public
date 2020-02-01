@@ -65,7 +65,7 @@ The following features that have infrastructure dependencies are not yet impleme
 
 | **Feature**                 | **Description**                                           |
 |-----------------------------|-----------------------------------------------------------|
-| Retail                      | Retail support is not yet enabled.                        |
+| Commerce                      | Commerce support is not yet enabled.                        |
 | Trace Parser                | Perf tools are not yet supported.                         |
 
 ### Features not intended to be implemented

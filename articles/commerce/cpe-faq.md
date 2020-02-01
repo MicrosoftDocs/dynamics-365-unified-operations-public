@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Commerce preview environment FAQ
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides answers to frequently asked questions about the Microsoft Dynamics 365 Commerce preview environment.

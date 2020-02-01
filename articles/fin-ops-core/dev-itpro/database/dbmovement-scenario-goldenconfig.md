@@ -73,7 +73,7 @@ Because of a technical limitation that is related to the certificate that is use
 | SysOAuthUserTokens.EncryptedAccessToken                  | This field is used internally by Application Object Server (AOS). It can be ignored. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | This field is used internally by AOS. It can be ignored. |
 
-### If you're running Retail components, document encrypted and environment-specific values
+### If you're running Commerce components, document encrypted and environment-specific values
 
 The values on the following pages are either environment-specific or encrypted in the database. Therefore, all the imported values will be incorrect.
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-# Microsoft Dynamics 365 Commerce Store Starter Kit (Public Preview)
+## Microsoft Dynamics 365 Commerce Store Starter Kit (Public Preview)
 
 These license terms are an agreement between you and Microsoft Corporation (or
 one of its affiliates). They apply to the software named above and any Microsoft
