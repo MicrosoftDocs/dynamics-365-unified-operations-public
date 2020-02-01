@@ -41,7 +41,7 @@ Dynamics 365 Commerce supports multiple retail channels. These retail channels i
 
 A Commerce product hierarchy is used to define the overall product hierarchy for your organization. You can use a Commerce product hierarchy for merchandising, pricing and promotions, reporting, and assortment planning. Only one Commerce product hierarchy can be assigned per organization.
 
-## Create and configure a Commerce product hierarchy
+## Create and configure a product hierarchy
 
 To create and configure a Commerce product hierarchy, follow these steps.
 
@@ -81,6 +81,6 @@ Category attribute groups can also be assigned to each group as required.
 
 [Retail hierarchies](retail-hierarchies.md)
 
-[Manage retail product categories and products ](category-management-product-creation.md)
+[Manage product categories and products ](category-management-product-creation.md)
 
 [Change the sort order for merchandizing entities](custom-order-categories-nav-retail-prod-hierarchy.md)
