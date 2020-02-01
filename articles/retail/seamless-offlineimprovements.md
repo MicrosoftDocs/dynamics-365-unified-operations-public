@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-When the point of sale loses connection with the channel database, most POS operations and transactions that are in progress may proceed after the cashier receives a warning that the channel database connection was lost. In certain cases, however, transactions may have elements that rely on the realtime service and those elements may not be supported in offline mode. Recently some improvements have been made to reduce the impact when such scenarios occur. 
+When the point of sale loses its connection with the channel database, most POS operations and transactions that are in progress may proceed after the cashier receives a warning that the channel database connection was lost. In certain cases, however, transactions may have elements that rely on the realtime service and those elements may not be supported in offline mode. Recently some improvements have been made to reduce the impact when such scenarios occur. 
 
 ## Conclude gift card transactions in offline mode
 
