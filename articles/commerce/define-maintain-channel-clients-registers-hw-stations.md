@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This topic covers how to connect peripherals to your Retail POS.
 
 > [!NOTE]
-> For specific installation instructions, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) and [Configure, install, and activate Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+> For specific installation instructions, see [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) and [Configure, install, and activate Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ## Key components
 
