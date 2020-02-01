@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create a new Commerce product hierarchy
-description: This topic describes how to create a new Commerce product hierarchy in Microsoft Dynamics 365 Commerce.
+title: Create a new product hierarchy
+description: This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -28,12 +28,12 @@ ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
 
 ---
-# Create a new Commerce product hierarchy
+# Create a new product hierarchy
 
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create a new Commerce   product hierarchy in Microsoft Dynamics 365 Commerce.
+This topic describes how to create a new product hierarchy in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
