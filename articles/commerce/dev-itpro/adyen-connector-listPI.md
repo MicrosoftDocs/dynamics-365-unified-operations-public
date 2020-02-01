@@ -61,7 +61,7 @@ The List PI capability requires the following elements:
 - A payment connector that is compatible with the List PI capability
 - A payment processor that maps unique customer IDs to the payment instruments that the customers want that payment processor to save
 
-For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Commerce for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 ## Setup
 
