@@ -204,24 +204,24 @@ The user can specify where an **Info step** should appear in the task guide. The
 > Because **Info steps** are manually specified steps and are not automatically recorded by Task recorder when the user takes an action on a control, the **Info step** does not have the capability to automatically progress when a user completes the step in the task guide. Because the **Info step** is not associated with taking an action in the client, there is no action for a task guide to detect that the user has completed in order to automatically progress to the next step.
 
 ## Download options
-After clicking **Stop**, several options are shown for downloading files related to the completed recording. Click **Download recording**, and save the task recording package to your desktop. We'll use this file later.
+After clicking **Stop**, several options are shown for saving files related to the completed recording. Click **Save to this PC**, and save the task recording package to your desktop. We'll use this file later.
 [![This image shows the optoins provided to download or save a recording after recoring as ended.](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
-### Download the task recording package
+### Save the task recording package (Save to this PC)
 
 You should download the task recording package after you finish your recording. The task recording package can be used to play a task guide, maintain the recording, or edit the recording's annotations.
 
-### Download the raw recording file (Developer recording)
+### Save the recording to an LCS library (Save to Lifecycle Services)
 
-The raw recording file (Developer recording) is useful for developer scenarios, such as test code generation and the Regression Suite Automation Tool ([RSAT](../perf-test/rsat/rsat-overview.md)).
+Saving your recording to an LCS library will publish the BPM diagram for the recording on the specified business process. If the selected LCS library is set as a Help library, then you will be able to find the task guide for this recording by searching the Help menu.
 
-### Download BPM package
+### Export as Word document
 
 The Microsoft Word document for your recording contains the recorded steps as well as any screenshots that were captured.
 
-### Save the recording to an LCS library
+### Download the raw recording file (Save as developer recording)
 
-Saving your recording to an LCS library will publish the BPM diagram for the recording on the specified business process. If the selected LCS library is set as a Help library, then you will be able to find the task guide for this recording by searching the Help menu.
+The raw recording file (Developer recording) is useful for developer scenarios, such as test code generation and the Regression Suite Automation Tool ([RSAT](../perf-test/rsat/rsat-overview.md)).
 
 ## Maintain a recording
 The **Maintain** functionality of Task recorder can automatically execute the steps of an existing recording, using the forms and values that were originally recorded. The Maintenance mode can be used to update an existing recording after making a change to the underlying application that alters the business process steps that are required for the scenario. It's important to remember that Task recorder is simultaneously re-recording the steps and playing them back when in Maintenance mode. When Maintenance is complete a new recording is produced, which contains any steps from the existing recorded that were executed, as well as any new steps which were manually performed by the user. Any steps that are not executed, whether by the user or automatically by Task recorder, are not included in this new recording. When in Maintenance mode, additional controls are added to the Task recorder Pane. To maintain an existing recording:
