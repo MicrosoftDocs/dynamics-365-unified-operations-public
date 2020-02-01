@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Saving online payment instruments with the Adyen connector
 
-[!include [banner](../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
 This topic describes the setup and functionality that are related to saving payment instruments when you use the Adyen "card not present" payment connector for the Dynmics e-Commerce platform. 
