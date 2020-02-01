@@ -2,7 +2,7 @@
 # required metadata
 
 title: Point of sale (POS) device activation
-description: This article explains the new guided device activation for Retail Cloud POS and Retail Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
+description: This article explains the new guided device activation for Cloud POS and Modern POS, and explains the client simplifications that help users easily activate devices without having to manually enter register and device ID information. 
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
