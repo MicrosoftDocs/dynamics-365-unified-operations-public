@@ -59,7 +59,7 @@ You must complete the following tasks before you can set up a store:
 11. Set up staff members.
 
     > [!NOTE]
-    > You must also assign appropriate permissions to the workers, so that they can sign in and perform tasks by using the Retail POS system.
+    > You must also assign appropriate permissions to the workers, so that they can sign in and perform tasks by using the POS system.
 
 12. Configure the POS profiles to assign to the store. This task includes many other tasks, such as setting up registers, setting up offline profiles, and setting up receipt formats and profiles.
 
@@ -77,14 +77,14 @@ After you complete the prerequisite tasks, complete these tasks to set up the de
 
 ### After you set up a store
 
-After you enter the details for the store, complete these tasks to send the new store data to Retail POS:
+After you enter the details for the store, complete these tasks to send the new store data to POS:
 
 1. Configure the POS registers for the store.
 2. Assign product assortments to the store.
 3. Process assortments to generate the list of products that are included in the assortment and to make the products available in the store.
-4. Send data such as number sequences, hardware profiles, and POS screen layouts to the Retail POS registers.
-5. Publish the store to send store data to Retail POS.
-6. Run the jobs to send the store data to Retail POS.
+4. Send data such as number sequences, hardware profiles, and POS screen layouts to the POS registers.
+5. Publish the store to send store data to POS.
+6. Run the jobs to send the store data to POS.
 
 ## Organization hierarchies
 
