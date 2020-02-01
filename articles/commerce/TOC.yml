@@ -180,41 +180,41 @@
       items:
       - name: Architecture
         items:
-        - name: Retail components
+        - name: Commerce components
           href: retail-components.md
-        - name: Retail Server architecture
+        - name: Commerce Scale Unit architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
           href: dev-itpro/retail-in-store-topology.md
-        - name: Commerce Data Exchange and retail channel communications
+        - name: Commerce Data Exchange and commerce channel communications
           href: dev-itpro/define-retail-channel-communications-cdx.md
-        - name: Retail Modern POS architecture
+        - name: Modern POS architecture
           href: dev-itpro/retail-modern-pos-architecture.md
-        - name: Retail online store publishing architecture
+        - name: Online store publishing architecture
           href: dev-itpro/retail-online-store-publishing-architecture.md
         - name: Retail Channel Performance Power BI content
           href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
         - name: Payment Application Data Security Standards (PA-DSS) certification
           href: dev-itpro/PA-DSS-Certification.md
-        - name: Retail capabilities available in on-premises deployments
+        - name: Commerce capabilities available in on-premises deployments
           href: retail-onprem.md
       - name: Deployment and hotfixes
         items:
-        - name: Retail Store Scale Unit
+        - name: Commerce Scale Unit
           href: dev-itpro/retail-store-system-begin.md
-        - name: Configure and install Retail Store Scale Unit
+        - name: Configure and install Commerce Scale Unit
           href: dev-itpro/retail-store-scale-unit-configuration-installation.md
-        - name: Retail Modern POS configuration and installation
+        - name: Modern POS configuration and installation
           href: retail-modern-pos-device-activation.md
-        - name: Manage Retail accounts and devices from headquarters
+        - name: Manage accounts and devices from headquarters
           href: set-up-activation-accounts-validate-devices-hq.md
-        - name: Retail POS device activation
+        - name: POS device activation
           href: dev-itpro/retail-device-activation.md
         - name: Help secure Cloud POS in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
         - name: Retail Hardware Station configuration and installation
           href: retail-hardware-station-configuration-installation.md
-        - name: Mass deployment of Retail self-service components
+        - name: Mass deployment of self-service components
           href: dev-itpro/retail-mass-deployment.md
         - name: Retail component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
