@@ -61,7 +61,7 @@ You must complete the following tasks before you can set up a store:
     > [!NOTE]
     > You must also assign appropriate permissions to the workers, so that they can sign in and perform tasks by using the Retail POS system.
 
-12. Configure the Retail POS profiles to assign to the store. This task includes many other tasks, such as setting up registers, setting up offline profiles, and setting up receipt formats and profiles.
+12. Configure the POS profiles to assign to the store. This task includes many other tasks, such as setting up registers, setting up offline profiles, and setting up receipt formats and profiles.
 
 Review all the tasks that are included in the prerequisites, and complete only the tasks that apply to you.
 
