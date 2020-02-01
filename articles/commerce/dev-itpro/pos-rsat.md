@@ -238,7 +238,7 @@ If you are using the preview version of POS RSAT, after the installation of RSAT
 
 If this setting is not used, Retail POS tab will not be shown on the **RSAT Settings** tab.
 
-### Configure the Retail POS settings
+### Configure the POS settings
 
 1. Open RSAT from your desktop.
 2. Select the **Settings** button in the upper right to configure RSAT.
