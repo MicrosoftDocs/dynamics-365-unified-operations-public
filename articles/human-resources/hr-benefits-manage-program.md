@@ -5,7 +5,7 @@ title: Define and manage a benefits program
 description: Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up an manage benefits.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-human-resources
@@ -25,7 +25,7 @@ ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
@@ -34,8 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 Human resources provides a set of tools that can be used to set up and maintain benefits, deductions, and workers' compensation plans that an organization offers or processes for its workers. This article provides information about how to set up and manage benefits.
 
-Benefit setup
--------------
+## Benefit setup
 
 Before workers can be enrolled in benefits, you must create the elements of each benefit. These elements combine similar benefit plans and define default settings, such as deduction rates and accounting details. Many of these settings can be adjusted when workers are later enrolled in the benefit. For each benefit plan, an organization can offer several enrollment options, or a worker can waive enrollment in the plan. 
 

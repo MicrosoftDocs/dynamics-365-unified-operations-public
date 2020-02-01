@@ -5,7 +5,7 @@ title: Process life events
 description: 
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/01/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-human-resources
@@ -25,8 +25,8 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2020-02-01
-ms.dyn365.ops.version: Human Resources April 2020 update
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Human Resources
 
 ---
 

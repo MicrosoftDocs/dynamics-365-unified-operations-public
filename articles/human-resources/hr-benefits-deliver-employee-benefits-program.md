@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Deliver employee benefits program
-description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
+description: This article shows you how to create benefit elements which will be used when creating a new benefit. 
 author: andreabichsel
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -17,20 +17,19 @@ ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBen
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
+ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2020-02-03 
+ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
+
 # Deliver employee benefits program
 
-
-
-This task will show you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
+This article shows you how to create benefit elements which will be used when creating a new benefit. The demo data company used to create this task is USMF. This task is intended for a Compensation and Benefits manager.
 
 
 ## Create benefit elements

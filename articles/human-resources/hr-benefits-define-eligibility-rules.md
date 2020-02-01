@@ -2,10 +2,10 @@
 # required metadata 
  
 title: Define benefit eligibility rules and policies
-description: This recording will show you how you can create benefit eligibility rules and policies and then assign rules to Benefits. 
+description: This article shows you how you can create benefit eligibility rules and policies and then assign rules to Benefits. 
 author: andreabichsel
 manager: AnnBe 
-ms.date: 08/29/2018
+ms.date: 02/03/2020
 ms.topic: business-process 
 ms.prod:  
 ms.service: dynamics-ax-applications 
@@ -17,20 +17,19 @@ ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, H
 audience: Application User 
 # ms.devlang:  
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations 
+ms.search.scope: Core, Operations, Human Resources
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: anbichse
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
+
 # Define benefit eligibility rules and policies
 
-
-
-This recording will show you how you can create benefit eligibility rules and policies and then assign rules to Benefits.  
+This article shows you how you can create benefit eligibility rules and policies and then assign rules to Benefits.  
 
 The demo data company used to create this recording is USMF.
 
