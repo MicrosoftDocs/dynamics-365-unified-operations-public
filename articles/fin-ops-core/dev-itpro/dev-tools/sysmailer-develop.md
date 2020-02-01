@@ -51,7 +51,7 @@ This topic describes three scenarios:
 
 The following example is taken from the **CustCollectionsEmail** class. It demonstrates multiple features of the framework, such as the ability to chain message builder calls, conditionally set the sender address ("from" address), and add attachments.
 
-```
+```xpp
 using (System.IO.Stream attachmentStream = this.generateAttachment())
 {
     var messageBuilder = new SysMailerMessageBuilder();
@@ -85,7 +85,7 @@ using (System.IO.Stream attachmentStream = this.generateAttachment())
 
 The following example is taken from the **VendRequestCompanyWorkflowManager** class. It shows how you can send a single message non-interactively.
 
-```
+```xpp
 // The vendor <vendor name> has been approved and has been added to the vendor master.
 messageText = strFmt("@SYS134393", DirPartyTable::findRec(vendRequestCompany.VendParty).Name);
 // Request
@@ -101,7 +101,7 @@ SysMailerFactory::sendNonInteractive(messageBuilder.getMessage());
 
 The following example is taken from the **UserAdAddManager** class. It shows how you can get an instance of a batch email provider before you iterate over a list of emails to send.
 
-```
+```xpp
 var mail = SysMailerFactory::getNonInteractiveMailer();
 var messageBuilder = new SysMailerMessageBuilder();
 for (i = 1; i <= conLen(_notifyCon); i++)
@@ -149,7 +149,7 @@ The first step is to specify attributes for the implementation class. The class 
 - **ExportAttribute** – The framework uses this attribute to discover the plug-in. The attribute specifies that the plug-in is an implementation of **SysIMailer** and therefore part of the SysMailer framework.
 - **ExportMetadataAttribute** – The framework uses this attribute to find specific instances of a plug-in that have specific metadata. The attribute specifies the ID of the email provider, so that a single provider can be discovered quickly. **No two email providers should ever have the same ID.**
 
-```
+```xpp
 using System.IO;
 using System.Net.Mail;
 using System.Text.RegularExpressions;
@@ -173,7 +173,7 @@ The **SysIMailer** interface includes identifiable information about an email pr
 - **getId** – This method returns the same ID that is specified in the **ExportMetadataAttribute** attribute.
 - **getDescription** – This method returns a non-technical description that indicates how the email will be sent.
 
-```
+```xpp
 public SysMailerId getId()
 {
     return #SysMailerEML_ID;
@@ -189,7 +189,7 @@ public SysMailerDescription getDescription()
 
 The **SysIMailerInteractive** and **SysIMailerNonInteractive** interfaces are very simple. They implement the **sendInteractive** and **sendNonInteractive** methods, respectively. An email provider might implement one or both methods, depending on its capabilities. Each method that is implemented takes a .NET **System.Net.Mail.MailMessage** object that you use to construct and send the email.
 
-```
+```xpp
 public boolean sendInteractive(System.Net.Mail.MailMessage _message)
 {
     using (var emlStream = this.generateEmlFile(_message))
