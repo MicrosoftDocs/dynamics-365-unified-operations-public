@@ -40,7 +40,7 @@ This topic describes how to use Task recorder to record client functions.
 
 ### The new Task recorder
 
-Task recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task recorder to auto-generate application verification tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task recorder.
+Task recorder has been re-built from the ground up with a focus on high-responsiveness, a flexible extensibility API, and seamless integrations with consumers of business process recordings. We're carrying forward Task recorder integration with the Lifecycle Services BPM tool (<https://bpm.lcs.dynamics.com>), so that users can continue to produce rich business process diagrams from recordings for analyzing and designing their applications. We're also introducing the ability for Task recorder to auto-generate application regression tests from business process recordings, as well as playback previously recorded processes. These new features also come with new gestures that allow users to take full advantage of the powerful new Task recorder. If you're reading this tutorial for the first time and wish to practice the topics as they're discussed, note that Arabic and Roman numerals indicate actionable steps that you should take. Alphabetical entries are used to indicate paragraphs with helpful details about using Task recorder.
 
 ### Architecture
 
@@ -136,7 +136,7 @@ Congratulations! You have created your first task recording. You can proceed to 
 
 ### Add validation
 
-**Add validation** enables a developer to add a placeholder step to the end of the current list of recorded steps. This placeholder step does not appear when viewing the task guide, and this placeholder step is not executed when maintaining a recording. The placeholder step is only used by the X++ code generator which allows creating an X++ test from a task recording. When generating the X++ test, the code generator will automatically add a method stub to the generated code, which the developer can add X++ code into. The code generator will also call this method, and thus execute the developers code, when the generated test is run. The method will be called according to the order in which it was added to the recording.
+**Add validation** enables the user to add a placeholder step to the end of the current list of recorded steps. This placeholder step does not appear when viewing the task guide, and this placeholder step is not executed when maintaining a recording. The placeholder step is only used by the Regression Suite Automation Tools ([RSAT](../perf-test/rsat/rsat-overview.md)) or the X++ code generator which allows creating an X++ test from a task recording. When generating the X++ test, the code generator will automatically add a method stub to the generated code, which the developer can add X++ code into. The validation will be called by the automated code when the generated test is run. The method will be called according to the order in which it was added to the recording.
 
 ## Adding annotations
 An **annotation** is any additional information that is associated with a step in a task recording. Annotations contain information that is in addition to the information that is automatically recorded by Task recorder.
@@ -189,7 +189,7 @@ There’s an additional benefit from using **Copy** and **Paste** when generatin
 
 ###  Validate
 
-This right-click gesture allows the user to insert a step that validates the value of the right-clicked control. **Validate** always uses equality to validate the control value. *Validations are not currently executed during recording playback*, they are executed only when running the generated test code. There are two kinds of validations available:
+This right-click gesture allows the user to insert a step that validates the value of the right-clicked control. **Validate** always uses equality to validate the control value. *Validations are not currently executed during recording playback*, they are executed only when running generated test code. There are two kinds of validations available:
 
 -   **Current value validation** will capture the right-clicked control’s value at the time of recording and use this value to generate an assertion in the test code. In the list of validation options in the right-click menu, Current Value is always the first.
 -   **Reference value validation** will use the value of a previously copied control when generating an assertion in the test code. This allows creating assertions that are resilient to changes in the data, since the value is not hardcoded into the test code. In the list of validation options in the right-click menu, **Reference value validation** follows the format \[AOT name of copied control: current copied value\].
@@ -211,9 +211,9 @@ After clicking **Stop**, several options are shown for downloading files related
 
 You should download the task recording package after you finish your recording. The task recording package can be used to play a task guide, maintain the recording, or edit the recording's annotations.
 
-### Download the raw recording file
+### Download the raw recording file (Developer recording)
 
-The raw recording file is useful for developer scenarios, such as test code generation.
+The raw recording file (Developer recording) is useful for developer scenarios, such as test code generation and the Regression Suite Automation Tool ([RSAT](../perf-test/rsat/rsat-overview.md)).
 
 ### Download BPM package
 
