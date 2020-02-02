@@ -48,9 +48,13 @@ In **Accounts receivable > Setup > Accounts receivable parameters**, in **Ledger
 Addiyionally, turn on **Automatic intent letter assignment** parameter if you want to activate automatic assignment of intent letters when invoicing.
 
 ![Set up AR parameters](media/emea-ita-exil-intent-AR-parm.jpg)
-## Set up Sales tax code
+## Set up Sales tax codes
 In **Tax > Indirect taxes > Sales tax > Sales tax code**, for the selected Sales tax code, in **General** section, turn on **Affect intent letters** parameter.
 ![Set up Sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
+
+## Set up Customers
+In **Accounts receivable > Customers > All customers**, for the selected Customer, in **Invoice and delivery** section, turn on **Usual exporter** parameter to specify that the customer belongs to usual exporters.
+
 
 ## Use...
 
