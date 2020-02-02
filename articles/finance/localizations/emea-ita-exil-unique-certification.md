@@ -77,10 +77,10 @@ Use **Generate** button to create the certifications for each recipient and to a
 
 Use **Generate details** button to populate the declaration with the details of vendors transactions.
 
+In **Withholding tax** section there are the amounts of each vendor certification. The amounts are calculated and sorted by the Withholding tax codes.
 
-### Post
+## Process Unique Certification
+When Unique Certification is created and populated with the data you can use **Validate** button to validate the data before generation of the output file.
 
-When you post...
+Once validated, use **Export** button to generate the output electronic file in the legally required format.
 
-> [!NOTE]
-> Warning...
