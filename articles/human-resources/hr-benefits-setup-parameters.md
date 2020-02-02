@@ -44,14 +44,14 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
 
    | Field | Description |
    | --- | --- |
-   | **Country/region** | The **Country/region** field is used when entering records for state eligibility rule configurations. |
+   | **Country/region** | The **Country/region** field determines the display order of ZIP codes/states. The selected country displays first in the dropdown list. |
    | **Enrollment reason code** | Select a default reason code to use when employee plans are created during open enrollment processing. |
    | **Cancellation reason code** | The reason code to use when an employee benefit plan is canceled. It displays in a dialog during the cancellation process. Users can change it the **Cancellation reason code** if necessary. |
    | **Reopen reason code** | The reason code to use when an employee benefit plan is reopened. It displays in a dialog during the cancellation process. Users can change the **Reopen reason code** if necessary. | 
    | **Life event reason code** | The reason code to use when a life event occurs. |
    | **Rate change reason code** | The reason code to use when canceling and reopening an employee benefit plan during the rate change update process. It indicates which records were changed by the rate change update process. |
    | **New hire eligible** | Specifies whether new hires are eligible. |
-   | **New hire enrollment period** | The period of time the new hire enrollment is allowed. | 
+   | **New hire enrollment period** | The period of time the new hire enrollment is allowed.</br></br>>[!NOTE]</br>>This setting overrides any new hire enrollment period you set on the plan eligibility rule. | 
    | **Annual salary enhancement** | Specifies whether to automatically calculate the **Annual benefit salary** amount in **Employment Benefit Details**. It's based on the employee’s **Fixed compensation pay rate**, **Average hours**, and **Payment frequency**.</br></br>**Average hours** x **Fixed pay rate** x **Payment frequency** (# of pay periods) = **Annual benefit salary** </br></br>If any of the values in the **Average hours**, **Fixed compensation pay rate**, or **Payment frequency** fields change, the system automatically recalculates the employee’s **Annual benefit salary** amount based on the changed values. The system creates a **Date effective** record to identify the exact date and time the change occurred. You can manually edit the **Annual benefit salary** amount if necessary. |
    | **Life events enabled** | Enables life events. |
    | **Real-time life events enabled** | Allows you to see information logs immediately when life event changes occur. |
