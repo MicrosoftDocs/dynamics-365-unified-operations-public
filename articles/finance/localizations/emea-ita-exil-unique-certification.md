@@ -45,12 +45,12 @@ In Italy, Withholding tax agents must electronically communicate the Unique Cert
 
 ## Setup Unique Certification
 ### Setup Unique Certification Number Sequence
-Define...
+In **General ledger > Ledger setup > General ledger parameters > Number sequences** (tab), in **Unique certification Id** field define a number sequence.
 
 ### Setup Unique Certification Revenue typology
 **Revenue typology** needs to be set up in Vendors master data, in **Invoice and delivery** section and in the **Revenue typology** field.
 
-You can import the list of possible Revenue typology values by using the **UniqueCertificationValueEntity** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+You can import the list of possible Revenue typology values by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
 
 The source data that is used to import Revenue typology values can be presented as a Microsoft Excel file that has the following column names:
 
@@ -59,6 +59,10 @@ The source data that is used to import Revenue typology values can be presented 
 - ACTIVE
 - VALUEDESCRIPTION
 
+Revenue topology values can be manually editted via **Tax > Setup > Withholding tax > Setup Unique certification values**.
+
+### Setup Unique Certification format
+In **General ledger > Ledger setup > General ledger parameters > Withholding tax** (tab), in **Unique Certification format mapping** field define the Electronic reporting format that will be used for Unique Certification report generation.
 
 ## Use...
 
