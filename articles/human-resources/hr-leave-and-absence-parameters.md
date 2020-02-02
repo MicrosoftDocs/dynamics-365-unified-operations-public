@@ -32,12 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence parameters
 
-**Notes for Reviewers**
-
-[!include [banner](includes/preview-feature.md)]
-
-| Question | Should I delete references to FMLA? |
-
 Before you set up leave and absence plans in Dynamics 365 Human Resources, it's a good idea to verify the settings for all related human resources parameters, including:
 
 - Number sequence for leave requests
@@ -60,6 +54,23 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 6. On the **Leave and absence** tab, verify the settings and change as necessary.
 
 7. Select **Save**.
+
+## Configure calendar parameters
+
+If you have enabled the Leave and absence calendar preview feature, you need to configure additional parameters. 
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+> [!NOTE]
+> For the preview release on February 3, 2020, only **Pending leave requests** are enabled.
+
+1. On the **Leave and absence** page, select the **Links** tab.
+
+2. Under **Setup**, select **Human resources parameters**.
+
+3. On the **Calendar** tab, change calendar settings as necessary.
+
+4. Select **Save**.
 
 ## See also
 

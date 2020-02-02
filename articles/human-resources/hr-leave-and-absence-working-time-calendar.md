@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Create a working time calendar
 
-[!include [banner](includes/preview-feature.md)]
-
 A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization. When an employee submits a time-off request, they don't have to worry about holidays and closures.
 
 To streamline time-off requests, configure these items for your organization:
@@ -42,7 +40,7 @@ To streamline time-off requests, configure these items for your organization:
 - Holidays and closures
 - Non-work time
 
-You can add the last two items while you're setting up a working time calender. You can also configure or update them separately.
+You can add the last two items while you're setting up a working time calendar. You can also configure or update them separately.
 
 ## Set up a working time calendar
 
@@ -56,7 +54,7 @@ Set up at least one working time calendar that shows your days and hours of oper
    - To add a holiday or closure, select the **Add** button next to **Holidays and closures**.
    - To add non-work time, like lunches or breaks, select **Add** under **NON-WORK TIME** and enter the name and time range.
 
-4. Under **Days**, select **Generate** to generate the days in your calendar. Enter the date range for your calender and then select **Generate days**.
+4. Under **Days**, select **Generate** to generate the days in your calendar. Enter the date range for your calendar and then select **Generate days**.
 
 5. To add work schedules, under **Work schedule**, select **Add** and then enter the times for each work schedule.
 
@@ -76,6 +74,13 @@ You can add or change non-work times separately from a working time calendar.
 
 2. Select **New** and enter a name and time range for the non-work time.
 
+## Leave and absence preview feature
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
+- [Configure leave and absence types](hr-leave-and-absence-types.md)

@@ -487,17 +487,13 @@
         href: hr-leave-and-absence-enroll.md
       - name: Accrue leave and absence plans
         href: hr-leave-and-absence-accrue.md
-      - name: Create an alert for leave and absence requests
-        href: hr-leave-and-absence-alert.md
       - name: View analytics for leave and absence
         href: hr-leave-and-absence-analytics.md
-      - name: Generate reports for leave and absence
-        href: hr-leave-and-absence-reports.md
       - name: Manage leave and absence requests
         href: hr-employee-self-service-manage-requests.md
       - name: Request time off
         href: hr-employee-self-service-request-time-off.md
-      - name: Create a team calendar
+      - name: View team and company calendars
         href: hr-employee-self-service-calendar.md
     - name: Develop employees
       items:

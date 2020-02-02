@@ -30,18 +30,27 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Create a team calendar
+# View team and company calendars
 
-You can view and create personal and team calendars in Dynamics 365 Human Resources.
+[!include [banner](includes/preview-feature.md)]
 
-## View your personal absence calendar
-
-1. In the **Employee self service** workspace, select **My absence and personal absence calendar**.
+You can view team and company calendars in Dynamics 365 Human Resources.
 
 ## View your team calendar
 
-1. In the **Employee self service** workspace, select **My team** and then select **Manager absence calendar**..
+Managers can view team calendars. Team calendars only display direct reports, as defined in the line hierarchy.
 
-## Create a team calendar
+1. In the **Employee self service** workspace, select **My team**.
 
+2. Select **Leave and absence**, and then select **View team calendar**.
+
+## View a company calendar
+
+People who are in Human resources roles can view company calendars. Company calendars display all employees. By default, the calendar displays today's date plus 28 days, but you can change the date range. You can also filter the calendar by **Name**, **Personnel number**, and **Leave type**.
+
+1. In the **Leave and absence** workspace, select **Links**.
+
+2. Select **Leave and absence calendar**.
+
+For information about calendar settings, see [Configure calendar parameters](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
 

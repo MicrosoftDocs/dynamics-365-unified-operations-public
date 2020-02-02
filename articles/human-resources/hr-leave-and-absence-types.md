@@ -32,12 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence types
 
-**Notes for Reviewers**
-
-[!include [banner](includes/preview-feature.md)]
-
-| Question | Is vacation and sick time considered leave, even though they're part of an accrual plan? If not, I need to remove those examples from the bulleted list below. |
-
 Leave types in Dynamics 365 Human Resources define the types of absences that employees can report. You can tailor leave types according to the needs of your organization. Examples of leave types include:
 
 - Paid time off (PTO)
@@ -69,7 +63,20 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 9. Select **Save**.
 
+## Configure preview features
+
+If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. Set rounding options for the leave type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
+
+2. Set **Holiday correction** for the leave type. When you select this option, Human Resources uses the number of holidays that fall on a work day to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
+
+   You set holidays in the working time calendar. For more information, see [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)
+
 ## See also
 
 - [Leave and absence overview](hr-leave-and-absence-overview.md)
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
+- [Create a working time calendar](hr-leave-and-absence-working-time-calendar.md)

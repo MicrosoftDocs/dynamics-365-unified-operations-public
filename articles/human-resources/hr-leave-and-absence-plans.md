@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Create a leave and absence plan
 
-[!include [banner](includes/preview-feature.md)]
-
 Define leave and absence plans in Dynamics 365 Human Resources for each type of leave you offer. Leave and absence plans can accrue at different frequencies, such as annually, monthly, or semimonthly. You can also define a plan as a grant, where a single accrual occurs on a specific date. For example, you might create a plan that grants floating holidays annually.
 
 Tiered leave plans allow employees to receive benefits based on the amount of time they've spent with an organization. Tiered plans enable automatic enrollment in additional benefit hours.
@@ -364,6 +362,19 @@ Forecasted balance (30) = Accrual amount (10 × 1) + Current balance (40) – Ca
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0.00              | 6/1/2018        | 6/1/2018   | 1.00           | 9/1/2018        | 3.00    |
 | Jay Norman          | 0.00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
+
+## Configure preview features
+
+If you've enabled preview features for Leave and absence, you need to configure settings for them, too.
+
+[!include [banner](includes/preview-feature-leave-absence.md)]
+
+1. **Preview feature: Configure multiple leave types for a single leave and absence plan**. For each record in the accrual schedule table, you can define a leave type.
+
+   > [!IMPORTANT]
+   > After you enable this feature, you can't turn it off.
+
+2. **Preview feature: Use full time equivalency**. If you enable this preview feature, Human Resources uses the full time equivalency (FTE) defined for the position to prorate an employee's accrual. For example, if the FTE is .5 and the accrual amount is 10, the employee will accrue 5. You can only use this feature if you enable multiple leave types.
 
 ## See also
 
