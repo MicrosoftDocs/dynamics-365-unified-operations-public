@@ -55,6 +55,9 @@ In **Tax > Indirect taxes > Sales tax > Sales tax code**, for the selected Sales
 ## Set up Customers
 In **Accounts receivable > Customers > All customers**, for the selected Customer, in **Invoice and delivery** section, turn on **Usual exporter** parameter to specify that the customer belongs to usual exporters.
 
+## Set up intent letters number sequence
+In **Accounts receivable > Setup > Accounts receivable parameters**, in **Number sequences** tab, in **Internal letter number** field specify the reference to the number sequence that will be used for intent letters numbering.
+
 
 ## Use...
 
