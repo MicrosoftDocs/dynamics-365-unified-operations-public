@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a channel navigation hierarchy
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create a channel navigation hierarchy in Microsoft Dynamics 365 Commerce.
@@ -108,6 +108,6 @@ The following image shows a sample node with product attribute groups added.
 
 ## Additional resources
 
-[Set up assortments](../retail/set-up-assortments.md?toc=/dynamics365/commerce/toc.json)
+[Set up assortments](set-up-assortments.md)
 
-[Manage attributes and attribute groups](../retail/attribute-attributegroups-lifecycle.md?toc=/dynamics365/commerce/toc.json)
+[Manage attributes and attribute groups](attribute-attributegroups-lifecycle.md)

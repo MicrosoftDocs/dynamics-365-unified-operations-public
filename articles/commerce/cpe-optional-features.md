@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Configure optional features for a Commerce preview environment
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce preview environment.

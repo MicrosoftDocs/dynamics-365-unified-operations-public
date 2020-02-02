@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Search engine optimization (SEO) considerations for your site
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers earch engine optimization (SEO) considerations for your site from development to production.
