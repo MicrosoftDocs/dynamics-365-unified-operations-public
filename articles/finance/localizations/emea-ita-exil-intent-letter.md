@@ -46,8 +46,8 @@ This article explains how to setup intent letters and use it during invoices iss
 In **Accounts receivable > Setup > Accounts receivable parameters**, in **Ledger and sales tax**, in **Usual exporters** section, in **Usual exporter sales tax group** field define a salex tax group specific for usual exportrs.
 
 Addiyionally, turn on **Automatic intent letter assignment** parameter if you want to activate automatic assignment of intent letters when invoicing.
-![Set up Sales tax code](media/emea-ita-exil-intent-AR-parm.jpg)
 
+![Set up AR parameters](media/emea-ita-exil-intent-AR-parm.jpg)
 ## Set up Sales tax code
 In **Tax > Indirect taxes > Sales tax > Sales tax code**, for the selected Sales tax code, in **General** section, turn on **Affect intent letters** parameter.
 ![Set up Sales tax code](media/emea-ita-exil-intent-tax-setup.jpg)
