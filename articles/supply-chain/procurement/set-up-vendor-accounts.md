@@ -93,7 +93,7 @@ You can put a vendor on hold for various transaction types. The following option
 -   **Invoice** – No invoices can be posted for the vendor.
 -   **All** – The vendor is on hold for all transaction types. These transaction types include purchase requisitions, invoices, and payments.
 -   **Payment** – No payments can be generated for the vendor.
--   **Requisition** – Purchase requisitions cannot be created for the vendor, and requisition lines already created before the vendor was set on hold cannot be converted to a purchase order. The requisition line will be cancelled when policy is configured to automatically create purchase orders
+-   **Requisition** – Purchase requisitions can't be created for the vendor, and requisition lines already created before the vendor was set on hold can't be converted to a purchase order. Requisition lines for the vendor will be cancelled if your policy is set to automatically create purchase orders.
 -   **Never** – The vendor is never put on hold for inactivity.
 
 When you put a vendor on hold, you can also specify a reason and a date when the on-hold status will end. If you don't enter an end date, the vendor's on-hold status lasts indefinitely.
