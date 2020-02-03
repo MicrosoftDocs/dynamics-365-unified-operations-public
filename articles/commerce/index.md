@@ -60,4 +60,4 @@ Select a feature area to learn more about it.
 - [Manage your financials](retail-statements.md)
 - [Manage your e-Commerce site](online-store-overview.md)
 - [Fraud protection](dev-itpro/dfp.md)
-- [Commerce development and extensibility](dev-retail-home-page.md)
+- [Commerce development and extensibility](dev-itpro/dev-retail-home-page.md)
