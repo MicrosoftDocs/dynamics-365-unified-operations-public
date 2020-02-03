@@ -80,6 +80,7 @@ When you create a new sales order or a new free text invoice for a customer who 
 
 ![New order](media/emea-ita-exil-intent-new-order.jpg)
 
+If the amount of the invoice transaction does not exceed the amount of the intent letter then it will not be the subject for Sales tax calculation. 
 
-> [!NOTE]
-> Warning...
+The details of the intent letter will be also included into a printable layout of the invoice. 
+
