@@ -2,10 +2,10 @@
 # required metadata
 
 title: Unique certification
-description: Unique certification.
+description: This topic provides information about unique certification for companies in Italy.
 author: ilkond
 manager: AnnBe
-ms.date: 11/13/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -32,7 +32,8 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../includes/banner.md)]
 
-In Italy, Withholding tax agents must electronically communicate the Unique Certification to the Revenue Agency to certify:
+In Italy, withholding tax agents must electronically communicate the Unique certification to the Revenue agency to certify the following:
+
 -	Incomes of dependent employments
 -	Self-employed incomes
 -	Commissions
@@ -40,47 +41,52 @@ In Italy, Withholding tax agents must electronically communicate the Unique Cert
 
 ## Prerequisites
 
+The following prerequisites must be met before the feature functionality can be used:
+
 - The primary address of the legal entity must be in Italy.
-- In the **Feature management** workspace, turn on the **Unique certification** feature. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+- The feature, **Unique certification** must be enabled in the **Feature management** workspace. For more information, see [Feature management overview](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
 
-## Setup Unique Certification
-### Setup Unique Certification Number Sequence
-In **General ledger > Ledger setup > General ledger parameters > Number sequences** (tab), in **Unique certification Id** field define a number sequence.
+## Set up Unique certification
 
-### Setup Unique Certification Revenue typology
-**Revenue typology** needs to be set up in Vendors master data, in **Invoice and delivery** section, in the **Revenue typology** field.
+### Set up number sequences
 
-You can import the list of possible Revenue typology values by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+1. Go to **General ledger** > **Ledger setup** >** General ledger parameters**.
+2. On the **Number sequences** tab, in the **Unique certification Id** field, define a number sequence.
 
-The source data that is used to import Revenue typology values can be presented as a Microsoft Excel file that has the following column names:
+### Set up Unique certification revenue typology
+
+**Revenue typology** must to be set up on the **Vendors** page, in the **Invoice and delivery** section, in the **Revenue typology** field.
+
+You can import the list of possible revenue typology values by using the **Setup Unique certification values** (UniqueCertificationValueEntity) entity and the Data management framework. For more information, see [Data import and export jobs overview](../../dev-itpro/data-entities/data-import-export-job.md).
+
+The source data that is used to import revenue typology values can be presented as a Microsoft Excel file that has the following column names:
 
 - FIELD
 - VALUE
 - ACTIVE
 - VALUEDESCRIPTION
 
-Revenue topology values can be manually editted via **Tax > Setup > Withholding tax > Setup Unique certification values**.
+Revenue topology values can be manually editted by going to **Tax** > **Setup** > **Withholding tax** > **Setup Unique certification values**.
 
-### Setup Unique Certification format
-In **General ledger > Ledger setup > General ledger parameters > Withholding tax** (tab), in **Unique Certification format mapping** field define the Electronic reporting format that will be used for Unique Certification generation.
+### Set up Unique certification format
 
-## Create Unique Certification
-To create a new Unique Certification declaration, in **Tax > Declarations > Withholding tax > Unique Certification** click **New** button.
+1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+2. On the **Withholding tax** tab, in the **Unique Certification format mapping** field, define the Electronic reporting format that will be used for Unique certification generation.
+
+## Create Unique certification
+
+1. To create a new Unique certification declaration, go to **Tax** > **Declarations** > **Withholding tax** > **Unique Certification**.
+2. Select **New**.
+
 > [!NOTE]
-> The reporting year of the declaration will be automatically assigned as the previous year for the current system's date.
+> The reporting year of the declaration will be automatically assigned as the previous year of the current system's date.
 
-In the **Tilte-page** section users must enter the company information and the information about the person in charge of the communication of Unique Certification to the Revenue Agency.
+3. In the **Tilte-page** section, enter the company information and the information about the person in charge of communicating the Unique certification to the Revenue agency.
+4. Select **Generate** to create the certifications for each recipient and automatically populate the other sections. The **Vendor** section contains the list of the recipients (vendors) and the informantion about vendors details. 
+5. Select **Generate details** to populate the declaration with the details of vendors transactions.
+6. In **Withholding tax** section, there are the amounts of each vendor certification. The amounts are calculated and sorted by the withholding tax codes.
 
-Use **Generate** button to create the certifications for each recipient and to automatically populate the other sections.
+## Process Unique certification
 
-**Vendor** section contains the list of the recipients (vendors) and the informantion about vendors details. 
-
-Use **Generate details** button to populate the declaration with the details of vendors transactions.
-
-In **Withholding tax** section there are the amounts of each vendor certification. The amounts are calculated and sorted by the Withholding tax codes.
-
-## Process Unique Certification
-When Unique Certification is created and populated with the data you can use **Validate** button to validate the data before generation of the output file.
-
-Once validated, use **Export** button to generate the output electronic file in the legally required format.
+When Unique certification is created and populated with data, you can select **Validate** to validate the data before the output file is generated. After the output file is validated, select **Export** to generate the output electronic file in the legally required format.
 
