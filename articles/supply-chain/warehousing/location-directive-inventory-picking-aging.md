@@ -53,7 +53,6 @@ To use this feature, your system must be set up with the following:
 
 This section provides examples for how to set up and use FIFO and LIFO strategies.
 
-
 > [!TIP]
 > This section provides two demos, one for LIFO and one for FIFO. The procedures provided here assume you will do both demos, in order. We recommend doing both so that you can experience the differences between the two strategies.
 
@@ -120,7 +119,7 @@ The LIFO strategy finds the location that contains the newest aging date and all
 Do the following:
 
 1. Set up and complete the full FIFO demo, as described in the [previous section](#fifo-demo), before you start this demo. We will reuse the wave, and most of the setup, created for that demo in this demo.
-1. Change the **63 Pick containerization** location directive to use the "Location aging LIFO" strategy, as described in the first part of the [Set up for the demos](#demo-setup) procedure.
+1. Change the **63 Pick containerization** location directive to use the "Location aging LIFO" strategy, as described in the first part of the [Set up for the demos](#demo-set-up) procedure.
 1. Go to **Warehouse management > Outbound waves > Shipment waves > All waves**.
 1. Select and open the wave containing the order you created for the FIFO demo.
 1. Open the **Work** tab and select **Cancel** to cancel the work you created for the FIFO demo.
