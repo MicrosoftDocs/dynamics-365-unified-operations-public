@@ -8,8 +8,6 @@
       href: index.md
     - name: What's new or changed
       items:
-      - name: Platform update 33 (April 2020)
-        href: get-started/whats-new-platform-update-33.md
       - name: Platform update 32 (February 2020)
         href: get-started/whats-new-platform-update-32.md
       - name: Platform update 31 (January 2020)
