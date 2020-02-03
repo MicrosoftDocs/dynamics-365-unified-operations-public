@@ -51,10 +51,13 @@ This release enables the creation of digital experiences using built-in web auth
 ## Core concepts and tasks
 
 Select a feature area to learn more about it.
-- [Configure an e-Commerce evaluation environment](provisioning-guide.md)
-- [Store starter kit overview](starter-kit-overview.md)
-- [Product recommendations overview](product-recommendations.md)
-- [Ratings and reviews overview](ratings-reviews-overview.md)
-- [Templates and layouts overview](templates-layouts-overview.md)
-- [Add and manage content](add-manage-content.md)
-- [Online channel extensibility](e-commerce-extensibility/overview.md)
+- [Configure a Commerce preview environment](provisioning-guide.md)
+- [Commerce architecture](retail-components.md)
+- [Set up your channels](channels-overview)
+- [Merchandizing your products and services](product-information.md)
+- [Manage your orders](order-fulfillment-overview.md)
+- [Manage your customers](set-up-customer-loyalty-program)
+- [Manage your financials](retail-statements.md)
+- [Manage your e-Commerce site](online-store-overview.md)
+- [Fraud protection](dev-itpro/dfp.md)
+- [Commerce development and extensibility](dev-retail-home-page.md)
