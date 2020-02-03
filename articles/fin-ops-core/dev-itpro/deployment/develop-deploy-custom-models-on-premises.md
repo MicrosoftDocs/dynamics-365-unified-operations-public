@@ -24,7 +24,7 @@ ms.custom: 107013
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 8
 
@@ -48,7 +48,7 @@ The following sections provide more information about this process.
 ## Development tools and platform
 Whether you're developing, extending, or customizing cloud applications or on-premises applications, the development platform, tools, and environments (virtual machines [VMs]) are the same. Your custom code is developed on the same development VMs, regardless of whether your target runtime environments are in a cloud environment or an on-premises environment.
 
-For detailed information about development, see the [Developer home page](../dev-tools/developer-home-page.md). For information about extensibility and customization, see the [Extensibility home page](../extensibility/extensibility-home-page.md). For information about building, testing, and continuous delivery, see the [Continuous delivery homepage](../dev-tools/continuous-delivery-home-page.md).
+For detailed information about development, see the [Develop and customize home page](../dev-tools/developer-home-page.md). For information about extensibility and customization, see the [Extensibility home page](../extensibility/extensibility-home-page.md). For information about building, testing, and continuous delivery, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md).
 
 ## Deploy development and build environments
 You can use an on-premises LCS project to deploy build and development environments on Microsoft Azure by using your own Azure subscription. Alternatively, you can download a virtual hard disk (VHD) for local development.
@@ -66,7 +66,7 @@ Then follow these steps.
 2. Select **Azure** or **Locally**. If you select **Locally**, find and download a development VHD. If you select **Azure**, you're prompted to select one of three topologies: **Build and Test**, **Demo**, or **Development**.
 3. Complete the deployment steps, and deploy a VM in your Azure subscription.
 
-For more information about how to configure a local development VHD, see [Access instances](../dev-tools/access-instances.md#vm-that-is-running-on-premises).
+For more information about how to configure a local development VHD, see [Deploy and access development environments](../dev-tools/access-instances.md#vm-that-is-running-on-premises).
 
 > [!NOTE]
 > To deploy environments in your own Azure subscription, you must set up at least one Azure Connector. To set up an Azure Connector, in LCS, open the **Project settings** page, and then click the **Azure connectors** tab. Then follow the instructions to add an Azure Connector. To complete the steps, you must be the tenant administrator of the organization.  
@@ -75,7 +75,7 @@ For more information about how to configure a local development VHD, see [Access
 ## Create and upload a deployable package to the LCS Asset library
 When you complete a phase of development, and are ready to deploy your code to a sandbox or production on-premises environment, you must create an application deployable package from your models. This process doesn't differ from the process for cloud environments.
 
-If you're using automated builds (a build environment), the build process creates an application deployable package for you. You can also create an application deployable package from Microsoft Visual Studio in your development environment. For more information on how to create an application deployable package in your development environment, see [Create and apply a deployable package](../deployment/create-apply-deployable-package.md).
+If you're using automated builds (a build environment), the build process creates an application deployable package for you. You can also create an application deployable package from Microsoft Visual Studio in your development environment. For more information on how to create an application deployable package in your development environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md).
 
 When your deployable package is ready, follow these steps to upload it to your LCS project’s Asset library.
 

@@ -51,7 +51,7 @@ The item is now attached to the service object, and any inventory dimensions spe
 
 ## See also
 
-[Service objects](service-objects.md)
+[Service objects overview](service-objects.md)
 
   
 

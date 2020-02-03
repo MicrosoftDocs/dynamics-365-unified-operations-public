@@ -31,8 +31,6 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (August 13, 2019)
 
-[!include [banner](includes/banner.md)]
-
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
@@ -60,7 +58,7 @@ A new option will let managers view the performance of both their direct reports
 
 ### Platform update 29 for Finance and Operations
 
-For more details about Platform update 29 for Finance and Operations see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29 for Finance and Operations see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
 
 ### Streamlined employee entry and navigation
 

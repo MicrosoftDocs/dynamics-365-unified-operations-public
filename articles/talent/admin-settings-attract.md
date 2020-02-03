@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure company information in Microsoft Dynamics 365 Talent - Attract
+title: Configure company information in Attract
 description: This topic explains how to configure company information and branding for Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -30,8 +30,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Configure company information
-[!include[banner](../includes/banner.md)]
+# Configure company information in Attract
+
+[!include [banner](includes/banner.md)]
 
 The Admin center in Microsoft Dynamics 365 Talent: Attract contains configuration settings, integration options, and setup options for the Attract application.
 
@@ -53,11 +54,11 @@ As new features are added, they might be released in a public preview. Public pr
 
 ## Template management
 
-A process template contains all the activities that should be included as part of the hiring process for a job. Your organization can allow either all team members or just admins to create hiring process templates. To allow team members to create their own hiring process templates, turn on the Template management functionality. For more information about process templates, see [Process templates in Attract](./process-templates-attract.md).
+A process template contains all the activities that should be included as part of the hiring process for a job. Your organization can allow either all team members or just admins to create hiring process templates. To allow team members to create their own hiring process templates, turn on the Template management functionality. For more information about process templates, see [Create a process template in Attract](./process-templates-attract.md).
 
 ## Email template settings
 
-Organizations can create email templates for various scenarios. You can select the header image to include in the email templates. The selected header will then appear in all email templates. In the template footer, you can add a link to your organization's privacy statement and terms of use for communications. For more information, see [Email templates in Attract](./email-templates.md).
+Organizations can create email templates for various scenarios. You can select the header image to include in the email templates. The selected header will then appear in all email templates. In the template footer, you can add a link to your organization's privacy statement and terms of use for communications. For more information, see [Email templates](./email-templates.md).
 
 ## Offer process
 

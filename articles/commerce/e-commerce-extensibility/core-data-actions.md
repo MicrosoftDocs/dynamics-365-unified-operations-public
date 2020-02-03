@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -41,14 +41,14 @@ This topic covers the list of core data actions that are included with the Micro
 Data action| Description
 --- | --- 
 add-address | Add a new address to an existing customer.
-checkout | Initiate checkout for a retail order.
+checkout | Initiate checkout for an order.
 delete-address | Delete an existing customer address.
 generic-data-action | A sample data action.
 get-active-cart | Get the active cart, or create an active cart if none exists.
 get-address | Return a list of customer addresses.
 get-card-payment-accept-point | Return card payment information.
-get-categories | Return a list of retail product categories.
-get-categories-hierarchy | Return a list of retail product categories as a hierarchy.
+get-categories | Return a list of product categories.
+get-categories-hierarchy | Return a list of product categories as a hierarchy.
 get-checkout-cart | Return information about the current checkout cart.
 get-current-category | Return a category hierarchy for a given category ID.
 get-customer | Return customer information for a given customer account number.
@@ -71,7 +71,20 @@ get-selected-variant | Return a specific variant for a given product.
 get-simple-products | Return a list of products together with basic information for a list of product IDs.
 get-wishlist-by-customer-id | Return a customer's wish list.
 refine-search-by-category | Return a list of products, based on the selected category.
-search-org-unit-locations | Return a list of retail store locations.
+search-org-unit-locations | Return a list of store locations.
 update-address | Update an existing customer address.
 update-line-delivery-specifications | Update delivery information for line items in the cart.
 update-primary-address | Update a customer's primary address.
+
+## Additional resources
+
+[Data actions overview](data-actions.md)
+
+[Test data actions with mocks](test-data-action-mocks.md)
+
+[Page load data actions](page-load-data-action.md)
+
+[Event-based data actions](event-based-data-actions.md)
+
+[Call Retail Server APIs](call-retail-server-apis.md)
+

@@ -5,7 +5,7 @@ title: What's new or changed in Finance and Operations version 10.0 (April 2019)
 description: This topic describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
 author: tonyafehr
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -45,7 +45,7 @@ In this release of Finance and Operations, numerous extensibility enhancements h
 ## Catch weight product processing with warehouse management
 This feature allows you to use catch weight products within warehouse management processes. This feature is only available to a limited audience for this release. 
 
-For more information, see [Catch weight product processing with warehouse management](../../supply-chain/warehousing/catch-weight-processing.md).
+For more information, see [Catch weight product processing with warehouse management](../../../supply-chain/warehousing/catch-weight-processing.md).
 
 ## Master planning stability and recovery improvements
 
@@ -61,7 +61,7 @@ The clean-up job has now been enhanced to remove data from previously failed mas
 
 ## Realize the conditional tax when postdated checks are drawn
 
-Conditional tax is cash basis value-added tax (VAT) that is required in some countries/regions. This tax can be deducted until you have paid the invoice. If the payment method is posted checks, you now have the option to realize the tax during payment or when the posted checks are drawn. To enable this option, go to **Cash and bank management parameters > Postdated checks > Realize the conditional tax when postdated checks are drawn**. For more information, see [Conditional tax](../../financials/general-ledger/indirect-taxes-overview.md#conditional-sales-tax). 
+Conditional tax is cash basis value-added tax (VAT) that is required in some countries/regions. This tax can be deducted until you have paid the invoice. If the payment method is posted checks, you now have the option to realize the tax during payment or when the posted checks are drawn. To enable this option, go to **Cash and bank management parameters > Postdated checks > Realize the conditional tax when postdated checks are drawn**. For more information, see [Conditional tax](../../../finance/general-ledger/indirect-taxes-overview.md#conditional-sales-tax). 
 
 ## Non-GST transactions for India 
 This feature allows you to create non-GST transactions with the Tax engine. To create a non-GST transaction, select the **Non-GST** check box in the **Tax information** of each taxable transaction line. You also need to make sure that there is a **Number sequence code** for **Bill of supply** in the **Reference number sequence group**. These transactions will be identified as non-GST transactions in the GST return (GSTR). 
@@ -116,7 +116,7 @@ The following updates are included in this release:
 - There is a new interface with BaiWang provider software that lets you export issued invoices in .XML format and you can import files from BaiWang software in .TXT and .XML formats.
 - We updated the structure of the issued invoice that is exported and you can import .TXT file for interface with Aisino provider software.
 
-For more information, see [Configure tax integration for China](../../financials/localizations/apac-chn-tax-integration.md).
+For more information, see [Configure tax integration for China](../../../finance/localizations/apac-chn-tax-integration.md).
 
 ## Electronic reporting (ER)
 
@@ -167,7 +167,7 @@ This functionality allows you to do the following:
 - Control the company’s cash position.
 - Maintain the company’s cash flows with centralized control.
 
-For more information, see [Cash flow management (Russia)](../../financials/localizations/rus-cash-flow.md).
+For more information, see [Cash flow management (Russia)](../../../finance/localizations/rus-cash-flow.md).
 
 ### Other incomes and expenses profit tax registers
 
@@ -191,10 +191,10 @@ Basic localization in the following two areas is available:
 For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156). 
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../financials/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ### Platform update 24
-Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new and changed in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
+Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
@@ -202,11 +202,11 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](https://docs.microsoft.com/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.

@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Reversing fixed asset transactions
+# Reversing fixed asset transactions for India
 
 [!include [banner](../includes/banner.md)]
 

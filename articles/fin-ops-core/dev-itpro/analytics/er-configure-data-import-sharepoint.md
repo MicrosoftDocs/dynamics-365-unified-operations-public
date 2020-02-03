@@ -48,7 +48,7 @@ To complete the examples in this topic, you must have the following access:
 - ER format and model configurations for 1099 payments.
 
 ### Create required ER configurations
-Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Microsoft Excel](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following set up.
+Play the **ER Import data from a Microsoft Excel file** task guides, which are part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process. These task guides walk you through the process of designing and using ER configurations to interactively import vendor transactions from Microsoft Excel files. For more information, see [Parse incoming documents in Excel format](parse-incoming-documents-excel.md). After you have completed the task guides, you will have the following set up.
 
 #### ER configurations
 
@@ -67,9 +67,9 @@ Play the **ER Import data from a Microsoft Excel file** task guides, which are p
 > The format for importing vendor transactions is selected as the default model mapping. Therefore, if you run a model mapping of the **1099 Payments model**, and that model mapping is of the **To destination** type, the model mapping runs this format to import data from external files. It then uses that data to update application tables.
 
 ## Configure access to SharePoint for file storage
-To store electronic report files in a SharePoint location, you must configure access to the SharePoint Server instance that will be used by the current company. In this example, the company is USMF. For instructions, see [Configure SharePoint storage](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+To store electronic report files in a SharePoint location, you must configure access to the SharePoint Server instance that will be used by the current company. In this example, the company is USMF. For instructions, see [Configure SharePoint storage](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Complete the steps in [Configure SharePoint storage](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+1. Complete the steps in [Configure SharePoint storage](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 2. Open the configured SharePoint site.
 3. Create the following folders where incoming electronic reporting files can be stored:
 
@@ -85,7 +85,7 @@ To store electronic report files in a SharePoint location, you must configure ac
     - Files error folder - This folder would be for files that failed to import.
 
 4. Go to **Organization administration > Document management > Document types**.
-5. Create the following document types that will be used to access the SharePoint folders that you just created. For instructions, see [Configure document types](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Create the following document types that will be used to access the SharePoint folders that you just created. For instructions, see [Configure document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Document type       | Group              | Location      | SharePoint folder      |
 |--------------------|--------------------|---------------|------------------------|

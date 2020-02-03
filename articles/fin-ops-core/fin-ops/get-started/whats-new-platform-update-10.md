@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -47,12 +47,12 @@ Dynamics 365 for Finance and Operations, Enterprise edition is a complex product
 
 ## Build and maintain mobile workspaces using X++ classes
 
-This release introduces a new model for creating and maintaining mobile workspaces through X++ classes in Microsoft Visual Studio. This allows for more flexibility and power in development, in addition to significant improvements to app performance. In this model, developers can create complex queries/structures without having to create forms. It's also possible to programmatically develop and edit the code supplying the data to the mobile workspaces. As a result, maintaining mobile workspaces is significantly improved in this new model. The App designer is still a valuable tool to quickly build mobile workspaces and can be used in combination with the new model when creating mobile workspaces. For more information, see "Server-side development" in [Mobile platform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).
+This release introduces a new model for creating and maintaining mobile workspaces through X++ classes in Microsoft Visual Studio. This allows for more flexibility and power in development, in addition to significant improvements to app performance. In this model, developers can create complex queries/structures without having to create forms. It's also possible to programmatically develop and edit the code supplying the data to the mobile workspaces. As a result, maintaining mobile workspaces is significantly improved in this new model. The App designer is still a valuable tool to quickly build mobile workspaces and can be used in combination with the new model when creating mobile workspaces. For more information, see "Server-side development" in [Mobile platform resources](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md).
 
 ## Excel add-in enables passing header context to detail records
 
 This feature will make users more productive when using the Excel add-in to create and edit transactional data, by allowing the creation of header records in addition to line records. For example, for journal entry, you can use Open Lines in Excel for a journal, publish that journal, and then create a new journal directly in Excel. This removes the need to return to the Finance and Operations client. In addition, the productive relational lookup experiences that users expect from the Excel add-in is available for header records, like journals, just as they are for the related line records, like journal lines. For more information, see [Create Open in Excel experiences](../../dev-itpro/office-integration/office-integration-edit-excel.md).
 
-## Skype support for Talent and Retail
+## Skype support for Human Resources and Retail
 
-Skype integration is now enabled in all applications that have been developed using the cloud platform. While Skype integration has been enabled in the Finance and Operations apps for some time, this feature is also available in other applications, including Talent and Retail.
+Skype integration is now enabled in all applications that have been developed using the cloud platform. While Skype integration has been enabled in the Finance and Operations apps for some time, this feature is also available in other applications, including Human Resources and Retail.

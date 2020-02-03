@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Set up parameters for SPED EFD - Contributions
+# Set up parameters for SPED EFD 
 
 [!include [banner](../includes/banner.md)]
 

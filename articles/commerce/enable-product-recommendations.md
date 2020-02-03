@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Enable product recommendations
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
@@ -47,17 +47,17 @@ Additionally, ensure that RetailSale measurements have been enabled. To Learn mo
 
 To turn on product recommendations, follow these steps.
 
-1. Go to **Retail** &gt; **Product recommendations** &gt; **Recommendation parameters**.
-1. In the list of retail shared parameters, select **Recommendation Lists**.
+1. Go to **Retail and Commerce &gt; Product recommendations &gt; Recommendation parameters**.
+1. In the list of shared parameters, select **Recommendation Lists**.
 1. Set the **Enable recommendations** option to **Yes**.
 
 ![enable product recommendations](./media/enableproductrecommendations.png)
 
 > [!NOTE]
-> This procedure starts the process of generating product recommendation lists. Up to several hours might be required before the lists are available and can be seen at the point of sale (POS) or in Dynamics 365 for Commerce.
+> This procedure starts the process of generating product recommendation lists. Up to several hours might be required before the lists are available and can be seen at the point of sale (POS) or in Dynamics 365 Commerce.
 
 ## Configure recommendation list parameters
-By default, the AI-ML-based product recommendation list provides suggested values. You can change the default suggested values to suit the flow of your business. To learn more about how to change the default parameters, go to [Modify AI-ML based product recommendation lists.](modify-product-recommendation-results.md)
+By default, the AI-ML-based product recommendation list provides suggested values. You can change the default suggested values to suit the flow of your business. To learn more about how to change the default parameters, go to [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 ## Show recommendations on POS devices
 After enabling recommendations in the back office, the recommendations pannel must be added to the control POS screen via the layout tool. To learn about this process, go [here.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen)

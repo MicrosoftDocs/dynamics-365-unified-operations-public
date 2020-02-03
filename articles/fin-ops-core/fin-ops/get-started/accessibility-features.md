@@ -5,7 +5,7 @@ title: Accessibility features
 description: This topic describes the functionality that is designed to help users who have various disabilities.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -97,6 +97,8 @@ To learn more about form patterns, see [Form styles and patterns](../../dev-itpr
 ## Responsive layout
 
 The product is designed to work on various devices and form factors, from the smallest screens to large screens that have the highest resolution. Our responsive layout engine lets users zoom in to a magnification level of 200 percent (or, in some scenarios, more than 200 percent).
+
+On smartphones and other small screens, the controls and the form layout will responsively adapt to ensure that the core data is favored. These responsive behaviors can also include reducing the number of columns in groups and tabs to a single column, hiding shell elements, and collapsing the Action Pane.
 
 ## Guidance to help developers and customers incorporate accessible thinking in their customizations
 

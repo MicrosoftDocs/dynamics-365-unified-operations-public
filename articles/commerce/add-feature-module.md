@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a feature module to a page 
+title: Feature module 
 description: This topic covers feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,9 +29,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Add a feature module to a page 
+# Feature module 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -80,3 +80,19 @@ To add a feature module to a new page and set the required properties, follow th
 1. In the **Action Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
 1. Save the page, and preview your changes.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Alert module](add-alert.md)
+
+[Carousel module](add-carousel.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Content placement module](add-content-placement-modules.md)
+
+[Hero module](add-hero-module.md)
+
+[Video player module](add-video-player.md)

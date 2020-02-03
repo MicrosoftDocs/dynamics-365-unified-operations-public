@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Run formats to use Document Management files in ER output
+title: ER Use Document Management files in format outputs (Part 4 - Run format)
 description: The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting format to use Document Management files in ER output. 
 author: NickSelin
 manager: AnnBe 
@@ -27,7 +27,7 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 
 ---
-# ER Use Document Management files in format outputs (Part 4: Run format)
+# ER Use Document Management files in format outputs (Part 4 - Run format)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

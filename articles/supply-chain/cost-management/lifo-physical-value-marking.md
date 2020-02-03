@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 Last in, First out (LIFO) is an inventory model in which the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. 
 
 In the Last in, First out (LIFO) inventory model, the last (newest) receipts are issued first. Issues from inventory are settled against the last receipts into inventory, based on the date of the inventory transaction. When you use LIFO, you don't have to use the LIFO rule. Instead you can mark inventory transactions so that a specific item issue is settled against a specific receipt. We recommend a periodic inventory closing when you use the LIFO inventory model. 
@@ -62,7 +60,9 @@ In this example, the item model group isn't marked to include physical value. Th
 -   5b. Inventory financial issue for a quantity of 1 at a cost price of USD 20.00 each (running average of financially updated transactions).
 -   6. Inventory close is performed. Based on the LIFO method, the last financially updated issue will be settled against the last financially updated receipt. An adjustment of USD 10.00 will be made on the issue transaction.
 
-The new running average cost price reflects the average of the financially updated transactions, USD 15.00. The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option isn't used. ![LIFO without Include Physical Value](./media/lifowithoutincludephysicalvalue.gif) 
+The new running average cost price reflects the average of the financially updated transactions, USD 15.00. The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option isn't used. 
+
+![LIFO without Include Physical Value](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -96,7 +96,9 @@ The illustration that follows shows these transactions:
 
 Transaction 6a will be adjusted to receipt transaction 4b. The system won't settle these transactions, because the receipt is updated physically but not financially. Instead, only an adjustment of USD 8.75 will be posted to the physical issue transaction. Transaction 5b will be adjusted to physical receipt transaction 3a. The system won't settle these transactions, because they aren't both financially updated. Instead, only an adjustment of USD –3.75 will be made to this issue transaction. The new running average cost price reflects the average of the financially and physically updated transactions, USD 20.00. 
 
-The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option is used. ![LIFO with Include Physical Value](./media/lifowithincludephysicalvalue.gif) 
+The following illustration shows the effects of the LIFO inventory model on this series of transactions when the **Include physical value** option is used. 
+
+![LIFO with Include Physical Value](./media/lifowithincludephysicalvalue.gif) 
 
 **Key to the diagram**
 
@@ -138,7 +140,9 @@ The illustration that follows shows these transactions:
 
 The new running average cost price reflects the average of the financially and physically updated transactions, USD 27.50. 
 
-The following illustration shows the effects of the LIFO inventory model on this series of transactions when marking between issues and receipts is used. ![LIFO with Marking](./media/lifowithmarking.gif) 
+The following illustration shows the effects of the LIFO inventory model on this series of transactions when marking between issues and receipts is used. 
+
+![LIFO with Marking](./media/lifowithmarking.gif) 
 
 **Key to diagram**
 
@@ -152,7 +156,4 @@ The following illustration shows the effects of the LIFO inventory model on this
 - Each vertical arrow is labeled with a sequential identifier, such as *1a*. The identifiers indicate the order of inventory transaction postings in the timeline.
 - Inventory closings are represented by a red vertical dashed line and the label *Inventory Close*.
 - Settlements that are performed by inventory close are represented by red diagonal dashed arrows that go from a receipt to an issue.
-
-
-
 

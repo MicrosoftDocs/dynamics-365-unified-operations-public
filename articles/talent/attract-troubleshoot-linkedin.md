@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Platform update 24
 ---
 
 
-# Troubleshoot integration with LinkedIn
+# Troubleshoot integration with LinkedIn and Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Use the following information to help troubleshoot issues that you might have when you try to post jobs to LinkedIn from Microsoft Dynamics 365 Talent: Attract.
 
@@ -47,18 +47,18 @@ If you're having trouble signing in to LinkedIn from Attract, try these steps:
 
 If your job hasn't appeared on LinkedIn after 24 hours, try these steps:
 
-1. Make sure that your LinkedIn Company ID maps to your LinkedIn company page and is correctly entered in the Attract Admin center. For more information about how to change LinkedIn settings in the Admin center, see [Set up integration with LinkedIn](attract-admin-linkedin.md). For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Make sure that your LinkedIn Company ID maps to your LinkedIn company page and is correctly entered in the Attract Admin center. For more information about how to change LinkedIn settings in the Admin center, see [Set up integration with LinkedIn for Microsoft Dynamics 365 Talent - Attract](attract-admin-linkedin.md). For more information about LinkedIn Company IDs, see [Associating your LinkedIn Company ID with the LinkedIn Job Board - Frequently Asked Questions](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Check the job details on LinkedIn to make sure that the address is complete. To post a job successfully, LinkedIn needs at least the city and country or region of the job.
 3. Make sure that the job doesn't duplicate another job that has been posted on LinkedIn. LinkedIn won't post jobs that are duplicates of either LinkedIn Premium Job Slots or Limited Listings from another source. Verify that another person at your company didn't already post the job manually.
 
 ## See also
 
-[LinkedIn FAQ](./attract-linkedin-faq.md)
+[Attract integration with LinkedIn FAQ](./attract-linkedin-faq.md)
 
-[Post jobs to LinkedIn from Attract](./attract-post-jobs-to-linkedin.md)
+[Post jobs to LinkedIn from Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Source candidates with LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Source candidates with LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract](./attract-linkedin-recruiter.md)
 
-[Create jobs](./creating-jobs-attract.md)
+[Create, approve, and post jobs in Attract](./creating-jobs-attract.md)
 
-[Troubleshoot integration with LinkedIn](./attract-troubleshoot-linkedin.md)
+[Troubleshooting integration with LinkedIn and Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

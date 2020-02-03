@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 You can use work order service levels to set up scheduled execution. (For more information about work order service levels, see [Service level and description](service-level-and-description.md).) Scheduled execution provides flexibility in work planning for maintenance workers, because you can set up more detailed or less detailed requirements for the interval that a work order should be completed during. For example, a maintenance worker who completes a job faster than expected in a production facility might be able to move on to another nearby job that was planned for the current week but not necessarily for the current day. This approach allows for optimization of worker planning and job completion.
 
@@ -47,4 +47,4 @@ Scheduled execution setup, which is related to work orders, can be generic or sp
 5. In the **Scheduled execution** field, select the time interval.
 6. Select **Save**.
 
-![Figure 1](media/20-setup-for-work-orders.png)
+![Scheduled execution](media/20-setup-for-work-orders.png)

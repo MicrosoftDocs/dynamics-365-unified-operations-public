@@ -34,8 +34,6 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-[!include [Retail name](../includes/retail-name.md)]
-
 Use the **Item number** field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 
 Sometimes, having too much of something is not the best situation to be in, and this is especially true if you sell a number of products that are similar, and you are trying to remember item numbers or product search names in order to find the right product to put on a sales order. You can use the **Item number** field on a sales order line or a purchase order line as a search field. You can enter any part of a product name, number, or dimension and get a lookup that displays all the items that match the search word.

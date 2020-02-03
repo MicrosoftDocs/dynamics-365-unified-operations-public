@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Class extension via method wrapping and Chain of Command (CoC)
+# Class extension - Method wrapping and Chain of Command
 
 [!include [banner](../includes/banner.md)]
 

@@ -42,7 +42,7 @@ Before you complete the procedures in this article, make sure that the following
 |                |                                                                                                                                                                 |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Category**   | **Prerequisite**                                                                                                                                                |
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
+| Required tasks | [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) |
 
 
 
@@ -86,7 +86,7 @@ To enable corporate users to access resources on the virtual machines in the Azu
 
 -   [Virtual network overview](https://msdn.microsoft.com/library/windowsazure/jj156007.aspx)
 -   [Virtual network configuration tasks](https://msdn.microsoft.com/library/jj156206.aspx)
--   [Set up a simulated hybrid cloud environment for testing](http://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
+-   [Set up a simulated hybrid cloud environment for testing](https://azure.microsoft.com/documentation/articles/virtual-networks-setup-simulated-hybrid-cloud-environment-testing/)
 -   [Site-to-site VPN in Azure virtual network using Windows Server 2012 Routing and Remote Access Service (RRAS)](https://msdn.microsoft.com/library/dn636917.aspx)
 -   [Configure a virtual network gateway in the management portal](https://msdn.microsoft.com/library/azure/jj156210.aspx)
 
@@ -126,7 +126,8 @@ An Active Directory is required in the Azure virtual network. An Active Director
 </tr>
 <tr class="odd">
 <td>&lt;DomainName&gt;DynamicsInstallUser</td>
-<td>AX 2012 R3 installation account Note: This account must have permission to join computers to the domain. To give this account permission, complete the following steps:
+<td>AX 2012 R3 installation account </br>
+    <strong>Note:</strong> This account must have permission to join computers to the domain. To give this account permission, complete the following steps:
 <ol>
 <li>Click <strong>Start</strong>, click <strong>Run</strong>, type dsa.msc, and then click <strong>OK</strong>.</li>
 <li>In the task pane, expand the domain node.</li>
@@ -215,7 +216,7 @@ Complete the following procedure to deploy a test environment on Azure.
 
 7. To customize the service accounts that will be created in the domain, click **Customize service accounts**. Service accounts and/or service account passwords may be specified through the **Advanced Settings** option for a deployment. If neither is provided, default accounts are used and random passwords are selected. Use these features when you want to maintain account naming and password rules for your corporation. Account and password rules:
    - A valid service name must be less than 20 characters with no special characters.
-   - A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\] You can’t use common passwords, such as: pass@word1
+   - A valid password must be more than 8 characters and contain uppercase letters, lowercase letters, numbers, and at least one of the following characters: \['@', '!', '=', '\*'\]. You can’t use common passwords, such as: pass@word1
 
 8. To select the version of AX 2012 R3 that you want use, click **Supported version**. By default, the AX 2012 R3 CU8 version of this environment will be deployed. If you don’t want to use the CU8 version, select **Dynamics ERP 2012 R3 RTM** from the list.
 9. To customize virtual machine names, click **Customize virtual machine names**. In order to support common IT naming guidelines, the ability to name virtual machines is provided through the **Advanced settings** option on most deployment topologies. In addition to defining the name, a starting index can be selected for each virtual machine type. The index is incremented for each instance of the virtual machine type that is deployed. Virtual machine names must be 13 characters or less. The index is separated from the machine name by a hyphen (-), followed by the index that supports a maximum of 2 digits. Example: ACustomVMName-99 When virtual machine instances are added to an environment after the initial deployment, the deployment service will start incrementing the virtual machine name where it left off. For example, if you deployed four AOS virtual machines with a starting index of 2, then the last AOS instance name will be AOS-6. If you add two more AOS instances, they will be AOS-7 and AOS-8. If one of the virtual machine types in your deployment is customized, then all of the virtual machine names must be customized. This is done to ensure that a long deployment does not occur because a virtual machine name was accidentally missed.
@@ -230,7 +231,9 @@ Complete the following procedure to deploy a test environment on Azure.
         1.  Joined this AX deployment to a VPN connected corporate domain.
         2.  Configured the RDS Gateway to accept connections from the VPN connected network.
 
-    **Note:** For both **RDS Web Access** and **RDS Farm Access**, when joining a deployment to an existing Active Directory domain you must add the RDS Farm to your AD/DNS with the IP address of the Internal Load Balancer. See the following steps:
+    > [!NOTE]
+    > For both **RDS Web Access** and **RDS Farm Access**, when joining a deployment to an existing Active Directory domain you must add the RDS Farm to your AD/DNS with the IP address of the Internal Load Balancer. See the following steps:
+  
     1.  Get the name of your RDS Farm: This can be obtained from the RDS Farm Access link in LCS. In this case, it should be **RdsFarm0c0fa75**.
 
         [![MachineName](./media/machinename-300x165.png)](./media/machinename.png)
@@ -284,8 +287,8 @@ Complete the following procedure to deploy a test environment on Azure.
 
 12. Click **Done**. The **Deploy environment** panel is redisplayed.
 13. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](https://azure.microsoft.com/pricing/details/virtual-machines/).
 
 14. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 15. Click **Next**.
@@ -296,7 +299,7 @@ Now that the environment has been deployed on Azure, you must set up and configu
 
 ### Log on to the AOS virtual machine
 
-Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+Log on to the AOS-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage AX 2012 R3 deployments on Azure](manage-2012-r3-deployment-azure.md) article.
 
 ### Compile AX 2012 R3
 
@@ -310,13 +313,14 @@ Open the AX 2012 R3 client and complete the initialization checklists. For instr
 
 If you want sample data installed in your environment, complete the following steps.
 
-1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) article.
+1.  Log on to the SQL-&lt;GUID&gt; virtual machine. Log on to the virtual machine using the DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage AX 2012 R3 deployments on Azure](manage-2012-r3-deployment-azure.md) article.
 2.  Go to the following location on the virtual machine: F:TestTransferTool
-3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
+3.  Install the Test Data Transfer Tool. For instructions, see [Install the Test Data Transfer Tool (beta)](install-test-data-transfer-tool-beta.md).
 4.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 Test Data Transfer Tool (Beta)
 5.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**Note: **The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028).
+> [!NOTE]
+> The sample data includes trial license keys for AX 2012 R3. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028).
 
 ### Give users access
 
@@ -325,7 +329,8 @@ To enable your users to access AX 2012 R3, complete the following tasks:
 -   Add each user’s domain account to the Remote Desktop Users group on the CLI-&lt;GUID&gt; virtual machine.
 -   Give users access to AX 2012 R3. For instructions, see [Create new users in Microsoft Dynamics AX](https://technet.microsoft.com/library/aa548139.aspx).
 
-**Note: **If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
+> [!NOTE]
+> If you don’t want to create a VPN connection and a domain trust, you can still give users access to AX 2012 R3. To do so, you’ll need to log on to the virtual machine that serves as the domain controller, and create domain accounts for each user. Then, you’ll need to complete the two tasks mentioned above.
 
 ### Set up and configure AX 2012 R3
 
@@ -405,10 +410,10 @@ The procedures for setting up and configuring AX 2012 R3 on Azure are the same p
 <tr class="even">
 <td>Use the Microsoft Dynamics AX web search tool</td>
 <td><ul>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=212924">Web search for developers</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=212925">Web search for system administrators</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=212922">Web search for application users</a></li>
-<li><a href="http://go.microsoft.com/fwlink/?LinkID=194311">Combined web search</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=212924">Web search for developers</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=212925">Web search for system administrators</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=212922">Web search for application users</a></li>
+<li><a href="https://go.microsoft.com/fwlink/?LinkID=194311">Combined web search</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -432,7 +437,8 @@ The following table lists the default names of the domain accounts that were cre
 | <DomainName>BCProxyUser         | The account used as the Business Connector proxy.                                                                                                                                                                                                                                                                                                        |
 | <DomainName>AXServiceUser       | The account used to run the following services on AOS-<GUID> virtual machines: Microsoft Dynamics AX Data Import/Export Framework Services and Microsoft Dynamics ERP RapidStart Connector. The account is also used to run the following services on CLI-<GUID> virtual machines: Microsoft Dynamics AX for Retail Commerce Data Exchange Async Client. |
 
-**Note:** The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
+> [!NOTE] 
+> The passwords are displayed on the Cloud-hosted environments page in [Lifecycle Services](https://lifecycleservices.dynamics.com/en/).
 
 
 

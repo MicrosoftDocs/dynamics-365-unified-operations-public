@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Security and role management in Attract
+title: Set user permissions in Attract
 description: This topic provides information about role security in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Talent October 2018 update
 
 ---
 
-# Set user permissions
+# Set user permissions in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract uses role-based security. In other words, access isn't granted to individual users, but to the security roles that users are assigned to. A user who is assigned to a security role has access to the set of privileges that is associated with that role.
 
@@ -57,7 +57,7 @@ The following sections provide a high-level description of each role. The tables
 
 ## Administrator
 
-Users who are assigned to the Administrator role can access and change all data in Attract. Admins can create, read, update, and delete data. They also have access to the Admin center, where they can configure Attract and set up user information. We recommend that at least one individual be assigned to the Administrator role. By default, the environment admin in Microsoft PowerApps is set as an admin in Attract. If you signed up for the trial version of Attract, the Administrator role is automatically assigned to you. Currently, to create jobs, users who have the Administrator role must also have either the Recruiter role or the Hiring Manager role.
+Users who are assigned to the Administrator role can access and change all data in Attract. Admins can create, read, update, and delete data. They also have access to the Admin center, where they can configure Attract and set up user information. We recommend that at least one individual be assigned to the Administrator role. By default, the environment admin in Microsoft Power Apps is set as an admin in Attract. If you signed up for the trial version of Attract, the Administrator role is automatically assigned to you. Currently, to create jobs, users who have the Administrator role must also have either the Recruiter role or the Hiring Manager role.
 
 ## Hiring Manager
 

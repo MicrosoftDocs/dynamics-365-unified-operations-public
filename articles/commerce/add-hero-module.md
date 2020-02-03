@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a hero module to a page 
+title: Hero module 
 description: This topic covers hero modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,9 +29,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Add a hero module to a page
+# Hero module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers hero modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -79,3 +79,19 @@ To add a hero module to a new page and set the required properties, follow these
 1. In the **Action Link** dialog box, add link text, a link URL, and an ARIA label for the link, and then select **OK**.
 1. Save the page, and preview your changes.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Alert module](add-alert.md)
+
+[Carousel module](add-carousel.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Content placement module](add-content-placement-modules.md)
+
+[Feature module](add-feature-module.md)
+
+[Video player module](add-video-player.md)

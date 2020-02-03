@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Make the chart of ' delimiter unique
+title: Make the chart of accounts delimiter unique
 description: This topic explains how you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade. 
 author: ryansandness
 manager: AnnBe

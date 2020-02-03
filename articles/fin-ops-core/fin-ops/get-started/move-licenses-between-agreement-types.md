@@ -5,7 +5,7 @@ title: Move licenses between agreement types
 description: This topic explains how to move licenses between agreement types.
 author: ClaudiaBetz-Haubold 
 manager: AnnBe
-ms.date: 06/05/2018
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,7 @@ Less often, a customer who originally purchased the subscriptions through a Volu
 The process of moving subscriptions from one type of agreement to another is primarily a commercial process. The technical implications for the LCS Implementation project are minimal.
 
 > [!NOTE]
-> The movement of subscriptions between agreement types isn't the same as the movement of an Azure Active Directory (Azure AD) tenant. If the contractual changes in the agreements require that an Azure AD tenant be moved, you must also follow the process that is described in [Move an LCS Implementation project to another Azure Active Directory Tenant](move-lcs-implementation-project-tenant.md).
+> The movement of subscriptions between agreement types isn't the same as the movement of an Azure Active Directory (Azure AD) tenant. If the contractual changes in the agreements require that an Azure AD tenant be moved, you must also follow the process that is described in [Move LCS implementation projects to different Azure AD tenants](move-lcs-implementation-project-tenant.md).
 
 Subscriptions come with three standard environments: one production environment, one Tier-2 Standard Acceptance Test environment, and one Tier-1 developer environment. These environments aren't affected by the movement of subscriptions between agreement types. Action might be required in LCS only if the customer has additional add-on environments. In this case, action that is related to the add-on environments requires minimal effort on the part of partner or customer resources. To streamline the movement of data between environments, you should plan in advance to determine the best sequence.
 
@@ -68,7 +68,7 @@ Before you begin the move, you must complete the following tasks:
     - **Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.
     - **Tier 2 and higher environments that are based on Azure SQL Database:** Use one of the following options:
 
-        - **Option 1:** Follow the process that is described in [Copy a database from Azure SQL Database to a SQL Server environment](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
+        - **Option 1:** Follow the process that is described in [Export a copy of the standard user acceptance testing (UAT) database](../../dev-itpro/database/dbmovement-scenario-exportuat.md).
         - **Option 2:** If you have an Azure subscription, save a copy of the Azure SQL database under that subscription.
         - **Option 3:** If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.
         - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.
@@ -109,4 +109,4 @@ Follow these steps for every environment that was deployed under the old agreeme
 
 > [!NOTE]
 > - The movement of files that are stored in Azure Blob storage isn't supported in sandbox environments.
-> - Retail customers should be aware that extra steps are required in order for Retail components to work correctly after the move. For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
+> - Commerce customers should be aware that extra steps are required in order for components to work correctly after the move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).

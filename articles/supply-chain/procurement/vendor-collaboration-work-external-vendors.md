@@ -195,7 +195,7 @@ The following table shows an example of the changes in status and version that a
 Vendors don't have to confirm a PO by using the vendor collaboration interface. They can also send an email or communicate their acceptance of a PO via other channels. You can then manually confirm the order. In this case, you receive a warning that states that the order is being confirmed even though there is no response from the vendor. The PO then appears in the confirmation history as an open confirmed order that doesn't have any responses. At this point, the vendor no longer has the option to confirm or reject the PO.
 
 > [!NOTE]
-> The version of the PO that is available to other processes in Finance and Operations is always the latest version, even if that version hasn't yet been registered in the vendor collaboration interface.
+> The version of the PO that is available to other processes in Supply Chain Management is always the latest version, even if that version hasn't yet been registered in the vendor collaboration interface.
 
 ### Versions and statuses if you use change management
 
@@ -224,7 +224,7 @@ If you're using consignment inventory, vendors can use the vendor collaboration 
 ## Working with RFQs when you use vendor collaboration
 
 This section describes the interactions between customers and vendors during the RFQ process. It also explains how information is communicated to the vendors. 
-For a basic overview of support for the RFQ process, see [Request for quotations (RFQs)](request-quotations.md).
+For a basic overview of support for the RFQ process, see [Requests for quotation (RFQs) overview](request-quotations.md).
 
 ### Alternates, attachments, amendments, and returns
 

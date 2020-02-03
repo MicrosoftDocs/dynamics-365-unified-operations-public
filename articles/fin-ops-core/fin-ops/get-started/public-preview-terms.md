@@ -5,7 +5,7 @@ title: Supplemental Terms of Use for Microsoft Dynamics 365 Previews
 description: Topic description
 author: ShellyBakke
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 12/19/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
 
 These Supplemental Terms of Use ("Terms") cover use of those Microsoft Dynamics 365 previews that link to these Terms.
 
-## General Terms
+## General terms
 
 Dynamics 365 may include preview, beta, or other pre-release features, services, or software, 
 offered by Microsoft to obtain customer feedback ("Previews").  Previews are made available to you 
@@ -44,12 +44,12 @@ use of Dynamics 365.
 PREVIEWS ARE PROVIDED "AS-IS", "WITH ALL FAULTS", AND "AS AVAILABLE", AND ARE EXCLUDED FROM
 THE SERVICE LEVEL AGREEMENTS AND LIMITED WARRANTY.  Previews may not be covered by customer
 support.  Preview may be subject to reduce or different security, compliance and privacy
-commitments, as further explained in the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=131004&clcid=0x409 "Alt text"), [Microsoft Dynamics 365 Trust Center](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Ftrust-center%2Fproduct-overview&data=02%7C01%7CShelly.Miller%40microsoft.com%7C3763e8620d084929d6bf08d746845b2f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055406584155706&sdata=39IrCNsW7Twz9LjR5ZcF%2Bknhf7TOrJJZNCdwIJ6EdCc%3D&reserved=0 "Alt text"), the [Online Services Terms](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoftvolumelicensing.com%2FDocumentSearch.aspx%3FMode%3D3%26DocumentTypeId%3D31&data=02%7C01%7CShelly.Miller%40microsoft.com%7C3763e8620d084929d6bf08d746845b2f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055406584155706&sdata=PiFUO69LanwS2uD1zXOH75Xa26vjU8nEK0z%2FBmk3m%2B0%3D&reserved=0 "Alt text"), and any additional notices provided with the Preview.
+commitments, as further explained in the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=131004&clcid=0x409 "Microsoft Privacy Statement"), [Microsoft Dynamics 365 Trust Center](https://www.microsoft.com/trust-center/product-overview "Microsoft Dynamics 365 Trust Center"), the [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31 "Online Services Terms"), and any additional notices provided with the Preview.
 
 Customers should not use Previews to process Personal Data or other data that is subject to 
 heightened compliance requirements.  In addition, Customers should not use Previews in a 'live 
 operating' or production environment.  Certain named Previews may also be subject to additional 
-terms, if any, set forth below.  We may change or discountue Previews at any time without notice.
+terms, if any, set forth below.  We may change or discontinue Previews at any time without notice.
 We also may choose not to release a Preview into "General Availability".
 
 You will provide, as your own expense, the equipment, technology, and infrastructure necessary
@@ -63,28 +63,28 @@ Previews.  You may use the Preview only if you have a valid license or subscript
 required Dynamics 365 application.  You may not access or use the Previews if you do not have the 
 required license or subscription.
 
-## Use Preview in a Production Enviroment
+## Use Preview in a Production Environment
 
 The "General Terms" section applies generally to all Previews that link to these Terms.  This 
 section contains terms that apply only if a Preview allows you to use Customer Data or Personal 
-Data (collectively "Data") in a 'live operating' or production enviroment and is in addition to 
-the General Terms.  These "Use Preview in a Production Enviroment" terms govern if there are any 
+Data (collectively "Data") in a 'live operating' or production environment and is in addition to 
+the General Terms.  These "Use Preview in a Production Environment" terms govern if there are any 
 conflicts with the "General Terms" or the "Service-Specific Terms" sections.
 
-Notwithstanding any provision to the contrary in the General Terms, Microsoft bereby grants you 
+Notwithstanding any provision to the contrary in the General Terms, Microsoft hereby grants you 
 permission to use the Preview to access or process Data in a 'live operating' or production 
 environment in connection with participating in the Preview.  By accessing or processing Data 
-in a 'live operations' or production enviorment, you consent to share your Data with external 
+in a 'live operations' or production environment, you consent to share your Data with external 
 systems outside of the geography where your production environment is deployed.
 
-## Service-Specific Terms
+## Service-specific terms
 
 The "General Terms" section applies generally to all Previews that link to these Teams.  These 
 service-specific terms are in addition to the "General Terms" and the "Use Preview in a Production 
-Enviroment" sections.  These service-specific terms govern if there are any conflicts with the 
+Environment" sections.  These service-specific terms govern if there are any conflicts with the 
 "General Terms" or the "Use Preview in a Production Environment" sections.
 
-### Dynamics 365 Commerce (Preview):
+### Dynamics 365 Commerce (Preview)
 + You must obtain your own patent license(s) from any third party H.265/HEVC patent pools or rights 
 holders before using Azure Media Services to encode or decode H.265/HEVC media.  In addition, this 
 Preview may include H.264/AVC, VC-1, MPEG-4 Part 2, and MPEG-2 visual compression technology.  
@@ -98,17 +98,17 @@ MAY BE OBTAINED FROM MPEG LA, L.L.C. REFER TO [wwww.mpegla.com](http://www.mpegl
 notice does not limit or inhibit the use of the software for normal business uses that are 
 personal to that business which do not include (i) redistribution of the software to third 
 parties, or (ii) creation of content compliant with the VIDEO STANDARDS technologies for 
-distribuion to third parties.  If there is any inconsistency between the Agreement and these 
-Perview terms of use, then to the extent of such inconsistency, these Preview terms of use will 
+distribution to third parties.  If there is any inconsistency between the Agreement and these 
+Preview terms of use, then to the extent of such inconsistency, these Preview terms of use will 
 control over the conflicting terms in the Agreement.
 
-+ **Supplemental Preview Software License Terms.**  
++ **Supplemental Preview Software License terms**  
 Microsoft will provide you with access to certain software for use in connection with this Preview. 
 Notwithstanding any provision to the contrary in the Microsoft Preview Software License Terms for 
-the Dynamics 365 Commerce [Software Development Kit](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Ffin-and-ops%2Fget-started%2FSDK-terms-conditions&data=02%7C01%7CShelly.Miller%40microsoft.com%7C3763e8620d084929d6bf08d746845b2f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055406584165663&sdata=%2BB2AJLfmOpCDAj%2BkDfhvITdnQKft7eZLC4ZHwld8ANI%3D&reserved=0 "Alt Text") ("SDK License Terms") or the Dynamics 365 
-Commerce [Store Starter Kit](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Funified-operations%2Ffin-and-ops%2Fget-started%2FRSSK-terms-conditions&data=02%7C01%7CShelly.Miller%40microsoft.com%7C3763e8620d084929d6bf08d746845b2f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637055406584165663&sdata=3y3B4h5UdKqLDIwWi12Ob98w02PJubxjqbOLfDobw98%3D&reserved=0 "Alt Text") ("Store Kit License Terms") (collectively, the "SLTs"), Microsoft hereby 
+the Dynamics 365 Commerce [Software Development Kit](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/SDK-terms-conditions "Software Development Kit") ("SDK License Terms") or the Dynamics 365 
+Commerce [Store Starter Kit](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/RSSK-terms-conditions "Store Kit License Terms") ("Store Kit License Terms") (collectively, the "SLTs"), Microsoft hereby 
 grants you permission to use the Software Development Kit and the Store Starter Kit (collectively, 
-the "software") in a 'live operating or production enviroment for Dynamics 365 Commerce.  If you 
+the "software") in a 'live operating or production environment for Dynamics 365 Commerce.  If you 
 comply with the terms and conditions in the SLTs, you may also (A) use the software to develop and 
 test your websites in a 'live operating' or production environment of Dynamics 365 Commerce; (B) 
 use the software to design and test the websites that you create with the software to conduct e-
@@ -118,14 +118,14 @@ card, monetary, or other banking transactions; and (C) deploy the websites that 
 software for third parties to access over the Internet, but only if you also comply with the 
 following:
 
-     **#1.  External Production Use:**  (i) you take adequate precautionairy measures to backup and 
-protect your data; (ii) you agree to cease such use immedidately upon notice from Microsoft; (iii) 
-you include in your website a visable notice to your users that the websites were created with or 
-rely on pre-release, time-sensitive, unsupported software that may not operate corectly; and (iv) 
+     **#1  External Production Use**  You take adequate precautionary measures to backup and 
+protect your data; (ii) you agree to cease such use immediately upon notice from Microsoft; (iii) 
+you include in your website a visible notice to your users that the websites were created with or 
+rely on pre-release, time-sensitive, unsupported software that may not operate correctly; and (iv) 
 you will not make any representations, warranties, or promises on behalf of Microsoft or with 
 respect to the software or its performance.
 
-     **#2  Hazardous Environments.**  You may not use the software to develop and test websites for 
+     **#2  Hazardous Environments**  You may not use the software to develop and test websites for 
 hazardous environments requiring fail-safe controls, including without limitation, the design, 
 construction, maintenance or operation of nuclear facilities, aircraft navigation or communication 
 systems, air traffic control, and life support or weapons systems.

@@ -31,15 +31,13 @@ ms.dyn365.ops.version: Talent
 ---
 # What's new or changed in Dynamics 365 Talent (August 20, 2019)
 
-[!include [banner](includes/banner.md)]
-
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 
 ## Changes in Attract
 
 ### Simplified apply experience for candidates 
 
-A simplified apply experience for candidates is now available in public preview. Once enabled, candidates can apply for a job using their resume, using **Apply with LinkedIn** (if enabled), or using the existing application form. With these changes, candidates can quickly submit their job application with minimal fields needing manual input. For information about how to enable this feature, see [Enable or disable preview features](./access-preview-feature.md#enable-or-disable-preview-features).
+A simplified apply experience for candidates is now available in public preview. Once enabled, candidates can apply for a job using their resume, using **Apply with LinkedIn** (if enabled), or using the existing application form. With these changes, candidates can quickly submit their job application with minimal fields needing manual input. For information about how to enable this feature, see [Access preview features in Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### View rejection comments as part of application activity
 
@@ -75,4 +73,4 @@ A new option will let managers view the performance of both their direct reports
 
 #### Platform update 29 for Finance and Operations
 
-For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+For more details about Platform update 29 for Finance and Operations, see [Preview features in Dynamics 365 Finance and Operations platform update 29 (October 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

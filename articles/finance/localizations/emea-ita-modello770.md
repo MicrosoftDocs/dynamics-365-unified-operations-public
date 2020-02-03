@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 7.3
 
 ---
 
-# Modello 770
+# Modello 770 report
 
 [!include [banner](../includes/banner.md)]
 

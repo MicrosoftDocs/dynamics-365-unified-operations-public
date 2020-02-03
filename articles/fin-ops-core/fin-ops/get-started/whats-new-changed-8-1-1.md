@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations version 
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.1. This version was released in November 2018.
 author: tonyafehr
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -49,15 +49,15 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Platform update 21
 
-Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (October 2018)](whats-new-platform-update-21.md).
+Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)](whats-new-platform-update-21.md).
 
 ## Ledger settlements
 
-Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake. For detailed information, see [Ledger settlements](../../financials/general-ledger/ledger-settlements.md).
+Ledger settlements let you match debit and credit transactions in the general ledger, and mark them as settled. In this way, you can make sure that related transactions have been cleared. You can also reverse settlements if they were made by mistake. For detailed information, see [Ledger settlements](../../../finance/general-ledger/ledger-settlements.md).
 
 ## Prevent generating offset tax transactions during tax settlement
 
-During the tax settlement process, the system will generate offset tax transactions which can cause performance issues if there are a large number of tax transactions within a specific time period. The **Prevent generating offset tax transactions** check box has been added to the **Sales tax settlement periods** page to prevent this from happening. For more information, see [Set up sales tax settlement periods](../../financials/general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
+During the tax settlement process, the system will generate offset tax transactions which can cause performance issues if there are a large number of tax transactions within a specific time period. The **Prevent generating offset tax transactions** check box has been added to the **Sales tax settlement periods** page to prevent this from happening. For more information, see [Set up sales tax settlement periods](../../../finance/general-ledger/tasks/set-up-sales-tax-settlement-periods.md).
 
 ## Extensibility enhancements
 

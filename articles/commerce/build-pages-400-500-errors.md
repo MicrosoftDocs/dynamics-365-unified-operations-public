@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Build custom response pages for 4xx/5xx status code errors
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to build custom response pages for 4xx and 5xx status code errors by using the authoring tools in Microsoft Dynamics 365 Commerce.
@@ -78,3 +78,11 @@ To set up a redirect for the status code error response page, follow these steps
 
 > [!NOTE]
 > If you're using a single status code error response page for both error categories, repeat this procedure to link an alias for the other error category to the same page.
+
+## Additional resources
+
+[Work with templates](work-with-templates.md)
+
+[Add a new site page](add-new-page.md)
+
+[Create a page URL](create-page-url.md)

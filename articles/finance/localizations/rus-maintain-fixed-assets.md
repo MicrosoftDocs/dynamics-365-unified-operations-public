@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Maintain fixed assets (Russia)
+title: Maintain fixed assets 
 description: This topic explains how to inactivate, reactivate, and update a fixed asset in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Major repair and Temporarily inactivation fixad assets (Russia)
+# Maintain fixed assets
 [!include [banner](../includes/banner.md)]
 
 If a fixed asset is closed down or inactive for more than three months, or if refurbishment of the asset is conducted for more than 12 months, calculation of depreciation is suspended. It resumes when the fixed asset is put back into operation.

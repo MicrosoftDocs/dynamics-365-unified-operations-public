@@ -50,9 +50,9 @@ To use budget control, you must set up basic budgeting. In the public sector con
 ## What do I do next?
 You may be required to set up the following Budgeting features:
 
--   [Budget analysis in the public sector](budget-analysis-public-sector.md) View revenues and expenditures by financial dimension, by using a combination of general ledger and budget control data. View summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances.
--   [Preliminary budgets and apportionments in the public sector](preliminary-budgets-apportionments-public-sector.md) Create a temporary, preliminary budget while the actual budget is being reviewed and approved. Apportionments are the portion of the original budget that have been approved for spending.
--   [Public sector posting definitions](posting-definitions-public-sector.md) Use posting definitions to create subledger journal lines for originating transactions that meet selected criteria.
+-   [Budget analysis in the public sector](budget-analysis-public-sector.md): View revenues and expenditures by financial dimension, by using a combination of general ledger and budget control data. View summarized amounts and transaction details for revised budgets, actual expenditures, encumbrances, and pre-encumbrances.
+-   [Preliminary budgets and apportionments in the public sector](preliminary-budgets-apportionments-public-sector.md): Create a temporary, preliminary budget while the actual budget is being reviewed and approved. Apportionments are the portion of the original budget that have been approved for spending.
+-   [Public sector posting definitions](posting-definitions-public-sector.md): Use posting definitions to create subledger journal lines for originating transactions that meet selected criteria.
 
 **Note** This also applies to General ledger, Accounts payable, and Accounts receivable.
 
@@ -69,7 +69,7 @@ Additional resources
 
 [Create a preliminary budget](tasks/create-preliminary-budget-public-sector.md)
 
-[Create an original budget and reverse preliminary budget entries](tasks/create-original-budget.md)
+[Create an original budget and then reverse preliminary budget entries](tasks/create-original-budget.md)
 
 
 

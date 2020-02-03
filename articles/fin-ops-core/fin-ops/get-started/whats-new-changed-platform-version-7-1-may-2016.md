@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -209,7 +209,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 </tr>
 <tr>
 <td>Take advantage of near-real-time Power BI reporting and the integration of Microsoft Cortana Intelligence Suite (CIS) with Entity store.</td>
-<td>Entity store is an extensible and rich operational data warehouse that is optimized for advanced analytic scenarios. Entity store is now deployed with every instance of Dynamics AX. An administrator or a power user can stage Dynamics AX aggregate measurements into an Entity store and configure the update schedule. Data in the Entity store can be reported on by using Power BI DirectQuery models. Therefore, near-real-time Power BI reports can be generated. Entity store is also used for integration with CIS. Dynamics AX data is sent to Microsoft Azure Machine Learning services for advanced predictions. The results are then shown in the client user interface.</td>
+<td>Entity store is an extensible and rich operational data warehouse that is optimized for advanced analytic scenarios. Entity store is now deployed with every instance of Dynamics AX. An administrator or a power user can stage Dynamics AX aggregate measurements into an Entity store and configure the update schedule. Data in the Entity store can be reported on by using Power BI DirectQuery models. Therefore, near-real-time Power BI reports can be generated. Entity store is also used for integration with CIS. Dynamics AX data is sent to Microsoft Azure Machine Learning for advanced predictions. The results are then shown in the client user interface.</td>
 </tr>
 <tr>
 <td>Take advantage of framework improvements with SQL Server Reporting Services integration.</td>
@@ -242,10 +242,10 @@ This article describes features that are either new or changed in Microsoft Dyna
 
 | What can you do? | Why is this important? |
 |------------------|------------------------|
-| Access new or updated task guides | Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. To see a list of new or updated task guides, see [New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md). |
+| Access new or updated task guides | Task guides provide a guided, interactive experience that leads you through the steps of a task or business process. You can download and customize the task guides that Microsoft provides. To see a list of new or updated task guides, see [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md). |
 
 ## Additional resources
 
-[What's new or changed](whats-new-changed.md)
+[What's new or changed in Finance and Operations home page](whats-new-changed.md)
 
-[New or updated task guides available (May 2016)](new-updated-task-guides-available-may-2016.md)
+[New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)

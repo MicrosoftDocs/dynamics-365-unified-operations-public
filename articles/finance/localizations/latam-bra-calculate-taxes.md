@@ -84,8 +84,8 @@ For a base transaction amount of BRL 1,000.00, tax rate of 18 percent, and tax r
 For sales transactions with taxation codes that have a **1. with credit/debit** fiscal value, or item sales tax groups for which the **Without tax credit** option is not selected, the actual sales tax amount is posted to the main accounts for which **Sales tax** and **Sales tax expense** are selected in the **Posting type** field on the **Accounts for automatic transactions** page. For purchase transactions with taxation codes that have a **1. with credit/debit** fiscal value, or item sales tax groups for which the **Without tax credit** option is not selected, the actual sales tax amount is posted to the main accounts for which **Sales tax** is selected in the **Posting type** field on the **Accounts for automatic transactions** page.
 
 ## Additional resources
--   [Brazilian tax attributes](latam-bra-tax-attributes.md)
--   [Brazilian tax payments](latam-bra-tax-payments.md)
+-   [Tax attributes for Brazil](latam-bra-tax-attributes.md)
+-   [Tax payments for Brazil](latam-bra-tax-payments.md)
 -   [Brazilian withholding taxes](tasks/br-00009-brazilian-withholding-taxes.md)
 
 

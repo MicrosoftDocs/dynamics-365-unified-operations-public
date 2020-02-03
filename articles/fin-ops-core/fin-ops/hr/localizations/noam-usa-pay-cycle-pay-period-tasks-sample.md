@@ -17,7 +17,7 @@ ms.search.form: PayrollPayCycle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 222624
@@ -88,7 +88,7 @@ The following table shows the number of pay periods that you enter to generate p
 
 If you don't want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see "Assign pay cycles to positions." later in this topic.
 
-You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see "Assign pay periods to payroll calculation frequencies" in [Payroll calculation frequencies tasks](noam-usa-pay-cycle-pay-period-tasks-sample.md).
+You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md).
 
 ## Optional: Modify the payment dates and statuses of pay periods
 
@@ -97,14 +97,14 @@ When you generate pay periods, the pay period status is **Open**, and a default 
 > [!TIP]
 > You might find it helpful to have a list of weekend and holiday dates before you start this task.
 
-You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see "Assign pay periods to payroll calculation frequencies" in [Payroll calculation frequencies tasks](noam-usa-pay-cycle-pay-period-tasks-sample.md).
+You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or taxes. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md).
 
 ## Assign pay cycles to positions
 
-Typically, pay cycles are assigned to positions when the positions are set up for payroll. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md). You assign the pay cycles to positions on the **Payroll** tab.
+Typically, pay cycles are assigned to positions when the positions are set up for payroll. For more information, see [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md). You assign the pay cycles to positions on the **Payroll** tab.
 
 ## Next step
 
-If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Payroll calculation frequencies tasks](noam-usa-payroll-calculation-frequencies-tasks.md).
+If you must control the specific pay periods that various payroll elements are processed in, the next step is to set up payroll calculation frequencies. For more information, see [Set up payroll calculation frequencies](noam-usa-payroll-calculation-frequencies-tasks.md).
 
-If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md).
+If you decide not to set up payroll calculation frequencies, the next step is to set up work cycles and work periods. Some earnings, such as the overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods. For more information, see [Set up work cycles and work periods](noam-usa-work-cycle-work-period-tasks.md).

@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 1
 
 This topic provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 
-The dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Symbol font](symbol-font.md). This topic discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
+The dashboard contains a set of workspace tiles to which the user has access. Each of these tiles contains an icon specific to that workspace. For out-of-the-box workspaces provided by Microsoft, the icons used on the workspace tiles generally correspond to a symbol from the [Dynamics Symbol font](symbol-font.md). This topic discusses the guidelines and recommendations for creating and assigning icons to tiles for workspaces created by Microsoft Certified Partners or individual customers.
 
 ## Implementation details
 For workspace icons, we recommend using an AOT resource for the icon. While the out-of-the-box symbols will work, we recommend creating your own so that multiple workspaces don't use the same icons. For each workspace that needs an icon, create a new image file that adheres to the guidelines below. Note that the recommended guidance for newer versions of the product has changed.
@@ -70,7 +70,7 @@ Following these recommendations ensures that your workspace icon matches the sty
 ## Example 
 Consider the following image/icon that is to be used for a new workspace. 
 
-[![newLogo3](./media/newlogo3.png)](./media/newlogo3.png) 
+[![Icon to be used for a new workspace](./media/newlogo3.png)](./media/newlogo3.png) 
 
 ### Platform update 29 or later 
 
@@ -80,11 +80,11 @@ This icon would be converted to an image with a **white background and transpare
 
 To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the new sizing recommendations.   
 
-![newIcon\_guides](./media/baseIcon_Guides_PU29.png) 
+![Workspace icon with new sizing recommendations](./media/baseIcon_Guides_PU29.png) 
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![newWorkspaceIcon](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
+[![Result on the dashboard when image used on workspace tile](./media/newWorkspaceIcon_PU29.png)](./media/newWorkspaceIcon_PU29.png)                
 
 
 ### Platform update 28 or earlier
@@ -94,11 +94,11 @@ For older versions of the product, the icon would be converted to an image with 
 
 To understand how this relates to the sizing recommendations, here is the workspace icon image overload with the previous sizing recommendations.   
 
-![newIcon\_guides](./media/newicon_guides.png) 
+![Workspace icon with previous sizing recommendations](./media/newicon_guides.png) 
 
 Using this image on a workspace tile yields the following result on the dashboard. 
 
-[![newWorkspaceIcon](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
+[![Result on the dashboard when image used on workspace tile](./media/newworkspaceicon.png)](./media/newworkspaceicon.png)                
 
 
 

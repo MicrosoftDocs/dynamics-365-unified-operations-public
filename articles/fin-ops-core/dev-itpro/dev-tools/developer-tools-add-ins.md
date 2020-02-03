@@ -24,7 +24,7 @@ ms.custom: 27521
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -44,5 +44,5 @@ A lot of great tools have been added to Microsoft Visual Studio to support devel
 To make it easier to create your own add-ins, you can select the **Dynamics Developer Tools Add-in** project type when you create a new project in Visual Studio. This project type has the infrastructure that is required to implement an add-in.
 
 For more information on add-ins, see:
-- [Form pattern add-ins](../user-interface/form-pattern-add-ins.md)
+- [Visual Studio add-ins that support form patterns](../user-interface/form-pattern-add-ins.md)
 

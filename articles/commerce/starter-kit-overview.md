@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 # Starter kit overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic presents an overview of the Microsoft Dynamics 365 Commerce starter kit.
@@ -55,3 +55,19 @@ The following types of modules are provided in the starter kit:
 - **Purchase modules** – Purchase modules include the cart module, which can be used to add items to the cart. The checkout module captures the shipping address, delivery options, and gift card, loyalty program, and credit card information, so that an order can be processed. After an order is placed, the order confirmation module can be used to show the confirmation details.
 - **Account management modules** – The sign-in module lets customers sign in to an existing account, and the sign-up module lets them create a new account. After an account is created, the order history module can be used to view recent orders, and the order details module can be used to view order details.
 - **Recommendations module** – Recommendations are shown by using the product placement module. This module supports algorithmic and editorial lists that can be showcased on any page.
+
+## Additional resources
+
+[Container module](add-container-module.md)
+
+[Buy box module](add-buy-box.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

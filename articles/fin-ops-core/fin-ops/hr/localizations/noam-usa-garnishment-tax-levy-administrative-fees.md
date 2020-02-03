@@ -17,7 +17,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, Payroll
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221144
@@ -83,7 +83,7 @@ If you can't make a deduction for a garnishment, the garnishment isn't displayed
 
 ## Why isn't the administrative fee for workers' garnishments being deducted from their pay?
 
-To deduct administrative fees from a worker's pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md). 
+To deduct administrative fees from a worker's pay, you have to create an administrative fee benefit and enroll the worker in that benefit. For more information, see [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md). 
 
 For support orders, the **Administrative fee** field on the **Maintain benefits** page is used to ensure that the amount of the deduction plus the amount of the fee does not exceed the legal maximum for support orders. For all other garnishment types, this field has no effect and is for information only.
 
@@ -93,6 +93,6 @@ Yes. For example, if 1,000.00 remains before a worker's pay reaches 0 (zero), an
 
 ## Additional resources
 
-[Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+[Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)
 
-[Garnishment and tax levy enrollment tasks](noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+[Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md)

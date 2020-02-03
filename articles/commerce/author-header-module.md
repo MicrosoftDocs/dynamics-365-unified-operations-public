@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create a header module
+title: Header module
 description: This topic covers header modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Create a header module
+# Header module
 
-[!include [banner]includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers header modules and describes how to create them in Microsoft Dynamics 365 Commerce.
@@ -51,7 +51,7 @@ A header module has multiple slots. For example, there are slots for an informat
 
 The following modules can be used in a header module:
 
-- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Dynamics 365 Retail. Configured items then appear as header navigation. In addition, static navigation links can be configured, and relative links to other pages on the e-Commerce site can be provided. The header itself can be aligned left, right, or center.
+- **Navigation menu** – The navigation menu represents the channel navigation hierarchy and other static navigation links. The channel navigation hierarchy can be configured in Commerce. Configured items then appear as header navigation. In addition, static navigation links can be configured, and relative links to other pages on the e-Commerce site can be provided. The header itself can be aligned left, right, or center.
 - **Cart icon** – The cart icon is a special icon that represents the cart. It's shown in the header and indicates the number of items in the cart. A link to the cart page should accompany the cart icon, so that customers can be redirected to the cart page when they interact with the icon.
 - **Wish list icon** – The wish list icon is shown in the header and indicates the number of items that have been added to the customer's wish list. A link to the wish list page should accompany this icon, so that customers can be redirected to the wish list page when they interact with the icon.
 - **Sign-in module** – The sign-in module is shown in the header. It lets customers either sign in to their account or sign up for an account. If the customer is already signed in, the module can be configured to show links to the account page, order history page, or another page.
@@ -75,3 +75,21 @@ To help guarantee that a header appears on every page, follow these steps on eve
 1. On the default page, add the page fragment containing the header module to the header in the main slot.
 1. Save the template. 
 1. Check in the template, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Container module](add-container-module.md)
+
+[Buy box module](add-buy-box.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

@@ -17,7 +17,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221444
@@ -45,13 +45,13 @@ If a pay statement that contains a benefit accrual is generated in one fiscal ye
 To prepare Payroll for a new fiscal year, you have to set up pay periods and work periods for the year, as described in these steps:
 
 - Verify that ledger calendars have been set up for the new year.
-- Go to [Pay cycle and pay period tasks](noam-usa-pay-cycle-pay-period-tasks-sample.md) and complete these tasks:
+- Go to [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md) and complete these tasks:
 
     1. Generate pay periods.
     2. Modify payment dates.
 
-- Go to [Payroll calculation frequencies tasks](noam-usa-payroll-calculation-frequencies-tasks.md) and complete the Associate pay periods with payroll calculation frequencies task.
-- Go to [Work cycle and work period tasks](noam-usa-work-cycle-work-period-tasks.md) and complete the Generate work periods task.
+- Go to [Set up payroll calculation frequencies](noam-usa-payroll-calculation-frequencies-tasks.md) and complete the Associate pay periods with payroll calculation frequencies task.
+- Go to [Set up work cycles and work periods](noam-usa-work-cycle-work-period-tasks.md) and complete the Generate work periods task.
 
 ## Can I adjust the balance in a benefit accrual plan?
 
@@ -100,20 +100,20 @@ Before you can make the necessary payroll changes, the worker and position infor
 
 To change the payroll settings after that is done, follow these steps:
 
-1. Go to [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md) and complete these tasks to update the worker:
+1. Go to [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md) and complete these tasks to update the worker:
 
     - Add earning codes to worker position assignments.
     - Set up worker tax regions: If the new position is in a different tax region, add the new worker tax region.
     - Assign default tax regions: A default tax region is required for each position that a worker holds.
     - Configure worker tax codes: If the new position is in a different tax region, or if it is paid by a different legal entity, you can assign additional tax codes to the worker. You must set up these tax codes before the worker can be paid.
 
-2. When you change a worker position, this also might change which benefits the worker is eligible for. Go to [Define and manage a benefit program](../../../talent/manage-benefit-program.md) and complete these tasks:
+2. When you change a worker position, this also might change which benefits the worker is eligible for. Go to Define and manage a benefits program and complete these tasks:
 
     - Create an eligibility event.
     - Process eligibility for benefits.
     - Enroll workers in benefits.
 
-3. Go to [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md) and, for each benefit that you enrolled the worker in, perform the task titled Set up payroll information for benefits.
+3. Go to [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md) and, for each benefit that you enrolled the worker in, perform the task titled Set up payroll information for benefits.
 
 ## How do I change benefits for a worker after a qualifying event?
 
@@ -121,14 +121,14 @@ When a worker has a qualifying life event that allows for a change of benefits, 
 
 To change the benefits, follow these steps:
 
-1. Go to [Define and manage a benefit program](../../../talent/manage-benefit-program.md) and complete the following:
+1. Go to Define and manage a benefits program and complete the following:
 
     - Create an eligibility event.
     - Process eligibility for benefits.
     - Enroll workers in benefits.
 
-2. Go to [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md) and, for each benefit that you enrolled the worker in, perform the task titled Set up payroll information for benefits.
-3. If the worker has moved to a new location, go to [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md) and complete these tasks:
+2. Go to [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md) and, for each benefit that you enrolled the worker in, perform the task titled Set up payroll information for benefits.
+3. If the worker has moved to a new location, go to [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md) and complete these tasks:
 
     - Set up worker tax regions.
     - Change worker residency.

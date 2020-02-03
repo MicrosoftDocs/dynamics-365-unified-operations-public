@@ -73,7 +73,7 @@ You can also look at the event logs of the instance machine, if you have access 
     - Application and Services Logs &gt; Microsoft &gt; Dynamics &gt; AX-SystemRuntime &gt; Channel:Operational (Microsoft-Dynamics-AX-SystemRuntime/Operational)
 
 ## Other approaches
-- For more information about how OAuth is configured, see [Service endpoints](services-home-page.md).
+- For more information about how OAuth is configured, see [Service endpoints overview](services-home-page.md).
 - You can also try to call the service in parallel by using your own client code. The sample code that we published is available at <https://github.com/Microsoft/Dynamics-AX-Integration>.
 - If the second method works, you can compare the JWTs from each method.
 

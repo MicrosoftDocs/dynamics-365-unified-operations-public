@@ -17,7 +17,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, Payroll
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221194
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Version 1611
 
 This topic describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Garnishments and tax levies are managed by using the benefit framework. This framework helps guarantee that the payroll impact of garnishments and tax levies is handled correctly.
 
-If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees](noam-usa-garnishment-tax-levy-administrative-fees.md).
+If you have questions about garnishments and tax levies that aren't answered in this topic, or in the [Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md) or [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md) topics, contact your legal advisors. To learn more about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md).
 
 ## Enroll a worker in a garnishment or tax levy
 
@@ -53,10 +53,10 @@ Start on the **Payroll details** FastTab. The following table shows the informat
 | Benefit              | Enter **Eligibility passed**. |
 | Paid by              | Specify the legal entity that the worker is employed by, and that pays for the worker position. By default, the current legal entity is shown. |
 | Position             | If you select a position, the deduction for the garnishment is based only on the earnings from that position. It's unlikely that a garnishment will be based on earnings from a specific position. If you don't select a position, the deductions for the garnishment are based on all the worker's earnings. |
-| Vendor               | Specify the vendor that the garnishment is paid to. Typically, this vendor is a state agency and is listed on the garnishment order. If you don't already have a vendor record for the agency, you must create it. For more information, see [Create a vendor account (Task guide)](../../../supply-chain/procurement/tasks/create-vendor-account.md). |
+| Vendor               | Specify the vendor that the garnishment is paid to. Typically, this vendor is a state agency and is listed on the garnishment order. If you don't already have a vendor record for the agency, you must create it. For more information, see [Create a vendor account](../../../../supply-chain/procurement/tasks/create-vendor-account.md). |
 | Calculation priority | The number that you enter determines the order that deductions for the garnishment are calculated in, relative to other benefits. The deductions and contributions for the benefit that has the lowest calculation priority number are calculated first. The lowest calculation priority number is 0 (zero). If multiple benefits have the same calculation priority number, the calculations for those benefits are done in alphabetical order. The calculation priority is important when the result of the calculation for one benefit is used in the calculation for another benefit. For example, in some states, the deductions for union dues and health plans reduce disposable income. To make sure that the garnishment is calculated correctly, you must make sure that union dues and health plans have a lower calculation priority number than the garnishment has. For tax levies, voluntary benefit enrollments that were in place before the tax levy typically have higher priority than the tax levy. Therefore, those benefits must have a lower calculation priority number than the tax levy.<blockquote>[!NOTE] Your legal advisors should help you determine the correct calculation priority for all benefits.</blockquote> |
 | Deduction priority   | The number that you enter determines the order that deductions for the garnishment are made in, relative to other deductions. The deduction for the benefit that has the lowest deduction priority number is made first. The lowest deduction priority number is 0 (zero). When multiple benefits have the same deduction priority number, the deductions for those benefits are made in alphabetical order. Often, garnishments must be deducted from pay before other voluntary benefits. However, some states require that specific deductions take precedence, such as union dues or term life deductions. The default value for this field is set on the **Benefit elements** page.<blockquote>[!NOTE] Your legal advisors should help you determine the correct deduction priority for all benefits.</blockquote> |
-| Rate source          | This field is automatically set to **Custom**. Because you must manually maintain the amount of a garnishment, you can't change this value. For more information, see "Setting up payroll information for benefits" in [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md). This field isn't available for tax levies. |
+| Rate source          | This field is automatically set to **Custom**. Because you must manually maintain the amount of a garnishment, you can't change this value. For more information, see "Setting up payroll information for benefits" in [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md). This field isn't available for tax levies. |
 | Basis Deduction      | The court order indicates whether the deduction should be a fixed amount (for example, 350.00 per pay period) or a percentage of earnings (for example, 15 percent of earnings). Select the basis, and then enter the deduction amount that is specified on the court order. These fields aren't available for tax levies. The tax levy deduction is calculated based on the information on the **Tax levy details** FastTab. |
 | Notes                | Enter detailed information about the garnishment order, such as the date when it was received, data that was entered, and communication with the worker. |
 
@@ -322,4 +322,4 @@ If the combined amount exceeds the maximum deduction limit, set the following va
 
 ## Additional resources
 
-[Garnishment and tax levy setup tasks](noam-usa-garnishment-tax-levy-set-up-tasks.md)
+[Set up garnishments and tax levies](noam-usa-garnishment-tax-levy-set-up-tasks.md)

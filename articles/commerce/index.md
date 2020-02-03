@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Help resources for Dynamics 365 Commerce
+title: Commerce home page
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Help resources for Dynamics 365 Commerce
+# Commerce home page
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 
@@ -40,13 +40,13 @@ Dynamics 365 Commerce—built on the proven Dynamics 365 Retail capabilities—d
 
 This release enables the creation of digital experiences using built-in web authoring and development tools to produce engaging and intelligent digital storefronts. A connected marketing and headless commerce platform further enable the seamless management of content, assets, promotions, inventory, and pricing across all channels.
 
-- Everything to build and run digital commerce: Streamline your business and end-to-end commerce solution that scales to your needs across traditional and emerging channels. Built-in web authoring and development tools enable you to create engaging intelligent digital storefronts, while a connected marketing and headless commerce platform enables seamless management of content, assets, promotions, inventory, and pricing across channels.
+- **Everything to build and run digital commerce:** Streamline your business and end-to-end commerce solution that scales to your needs across traditional and emerging channels. Built-in web authoring and development tools enable you to create engaging intelligent digital storefronts, while a connected marketing and headless commerce platform enables seamless management of content, assets, promotions, inventory, and pricing across channels.
 
-- Build loyalty and exceed customer expectations: Use clienteling tools to gain a comprehensive view of your customer and respond to their needs at every level of engagement, based on customer profile, history, and preferences that flow across physical and digital channels. Empower your employees to foster lasting relationships through AI-driven recommendations, customer insights, and loyalty programs that elevate brand appeal.
+- **Build loyalty and exceed customer expectations:** Use clienteling tools to gain a comprehensive view of your customer and respond to their needs at every level of engagement, based on customer profile, history, and preferences that flow across physical and digital channels. Empower your employees to foster lasting relationships through AI-driven recommendations, customer insights, and loyalty programs that elevate brand appeal.
 
-- Flexible and intelligent omnichannel experience: Unify physical and digital commerce by providing consistent experiences to customers across cloud search and discovery, product reviews, wish lists, inventory, gift cards, and loyalty. Allow customers to purchase when, how, and where they want, on any device—while providing choice around modern payment methods and product collection or delivery.
+- **Flexible and intelligent omnichannel experience:** Unify physical and digital commerce by providing consistent experiences to customers across cloud search and discovery, product reviews, wish lists, inventory, gift cards, and loyalty. Allow customers to purchase when, how, and where they want, on any device—while providing choice around modern payment methods and product collection or delivery.
 
-- Streamline operations using AI in the cloud: Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
+- **Streamline operations using AI in the cloud:** Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
 
 ## Sign up for the preview
 
@@ -56,9 +56,9 @@ Go to the [Dynamics 365 Commerce (Preview)](https://dynamics.microsoft.com/en-us
 
 Select a feature area to learn more about it.
 - [Configure an e-Commerce evaluation environment](provisioning-guide.md)
-- [Store starter kit](starter-kit-overview.md)
-- [Product recommendations](product-recommendations.md)
-- [Ratings and reviews](ratings-reviews-overview.md)
-- [Templates and layouts](templates-layouts-overview.md)
+- [Store starter kit overview](starter-kit-overview.md)
+- [Product recommendations overview](product-recommendations.md)
+- [Ratings and reviews overview](ratings-reviews-overview.md)
+- [Templates and layouts overview](templates-layouts-overview.md)
 - [Add and manage content](add-manage-content.md)
-- [Extensibility](e-commerce-extensibility/overview.md)
+- [Online channel extensibility](e-commerce-extensibility/overview.md)

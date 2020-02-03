@@ -7,7 +7,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Ratings and reviews overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers ratings and reviews in Microsoft Dynamics 365 Commerce.
@@ -52,3 +52,13 @@ The ratings and reviews solution in Dynamics 365 Commerce uses Azure Cognitive S
 The ratings and reviews solution provides widgets that show rating summaries in product lists, in search results, on product details page, and in other places. The widgets show complete review lists, and they also provide sorting and filtering options.
 
 The ratings and reviews solution also provides a business intelligence (BI) template that includes a set of metrics to provide insights into ratings and reviews. Ratings and reviews data can be exported for further analysis.
+
+## Additional resources
+
+[Opt in to use ratings and reviews](opt-in-ratings-reviews.md)
+
+[Manage ratings and reviews](manage-reviews.md)
+
+[Configure ratings and reviews](configure-ratings-reviews.md)
+
+[Sync product ratings in Dynamics 365 Retail](sync-product-ratings.md)

@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Apply updates and extensions to cloud hosted Retail channel components
-description: This topic shows how to apply updates and extensions to cloud-hosted Retail channel components.
+title: Apply updates and extensions to Retail Cloud Scale Unit
+description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 09/03/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -28,39 +28,39 @@ ms.dyn365.ops.version: 8.0
 ---
 
 
-# Apply updates and extensions to cloud hosted Retail channel components
+# Apply updates and extensions to Retail Cloud Scale Unit
 
 [!include[banner](../includes/banner.md)]
 
-If you are updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have enabled reduced downtime updates for Retail channel components in the cloud, you will also need to update Retail channel components. This topic shows how to apply updates and extensions to cloud-hosted Retail channel components.
+If you are updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have initialized Commerce Scale Unit, you will also need to update channel components. This topic shows how to apply updates and extensions to Commerce Scale Unit.
 
-Updates to Retail channel components are cumulative. This means that any update that you apply will include all previously released changes. Applying a Retail deployable package is also a cumulative process and will replace the previously deployed version of the extension.
+Updates to Commerce Scale Unit are cumulative. This means that any update that you apply will include all previously released changes. Applying a Commerce deployable package for extensions is also a cumulative process and will replace the previously deployed version of the extension.
 
 ## Prerequisites
 
 Before you proceed, you must first apply updates and extensions (if applicable) to the environment. For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 
-To update cloud-hosted Retail channel components, do the following:
+To update Commerce Scale Unit, run the following steps for each:
 
-1. On the **Environment details** page, go to **Environment features > Retail**.
-2. On the **Retail deployment setup** page, select **Update**.
+1. On the **Environment details** page, go to **Environment features > Retail and Commerce**.
+2. On the **Commerce deployment setup** page, select **Update**.
 3. In the selection panel, select the version to update to.
 4. You can also choose to apply an extension at the same time. 
 
-To apply an extension to a cloud-hosted Retail channel, do the following:
+To apply an extension to a Commerce Scale Unit, run the following steps:
 
-1. On the **Retail deployment setup** page, select **Apply Extension**.
+1. On the **Commerce deployment setup** page, select **Apply Extension**.
 2. In the selection panel, select the extension to apply.
 
 > [!NOTE]
-> You must first upload the Retail deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Retail deployment setup page** in LCS.
+> You must first upload the Commerce deployable package to the project asset library in Lifecycle Services (LCS), before you can select to deploy it on the **Commerce deployment setup page** in LCS.
 
-Both Apply updates and Apply extension operations will involve a downtime of up to 1 hour. During this time, the following will occur:
+Both **Apply updates** and **Apply extension** operations will involve a downtime of up to 1 hour. During this time, the following will occur:
 
-- Cloud-hosted Retail channels will not function (unless POS offline capability is enabled).
+- Cloud-hosted Commerce channels will not function (unless POS offline capability is enabled).
 - POS devices that have the offline capability feature enabled will have reduced functionality.
-- Any e-Commerce clients that are dependent on Retail Server will be disrupted.
-- Channels hosted on Retail Store Scale Units will remain unaffected.
+- Any e-Commerce clients that are dependent on Commerce Scale Unit will be disrupted.
+- Channels hosted on Commerce Scale Units will remain unaffected.
 - Head office functionality will remain unaffected.
 
 > [!NOTE]

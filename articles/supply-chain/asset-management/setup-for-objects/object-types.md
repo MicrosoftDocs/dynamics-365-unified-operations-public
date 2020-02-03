@@ -5,7 +5,7 @@ title: Asset types
 description: This topic explains how to create asset types in Asset Management. It also describes the elements that are related to asset types.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,20 +13,20 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: 
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: 
+ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
 
 ---
 
@@ -34,9 +34,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-This topic explains how to create asset types. It also describes the elements that are related to asset types. Asset types are used as general categories for assets. Examples include CNC machines, measuring equipment, and truck engines. Asset types are used to manage the job types (maintenance tasks), asset lifecycle states, asset measures, asset attributes, condition assessment templates, and asset models that can be selected for an asset. When you create an asset, you must specify the asset type.
+
+This topic explains how to create asset types. It also describes the elements that are related to asset types. Asset types are used as general categories for assets. Examples include CNC machines, measuring equipment, and truck engines. Asset types are used to manage the maintenance job types (maintenance tasks), asset lifecycle states, counters, asset attributes, condition assessment templates, and asset models that can be selected for an asset. When you create an asset, you must specify the asset type.
 
 For each asset type, variations of the asset type setup can be created. For example, if you have an asset type that is named **Trucks**, you can create variations of that asset type for different asset manufacturers and asset models. To each asset type setup, you can add the required spare parts and maintenance plans.
 
@@ -44,35 +44,35 @@ First, you set up the required asset types. Next, you create the asset models th
 
 ## Create an asset type
 
-1. Select **Asset management** \> **Setup** \> **Asset types** \> **Asset types**.
+1. Select **Asset management** > **Setup** > **Asset types** > **Asset types**.
 2. Select **New** to create an asset type.
 3. In the **Asset type** field, enter an asset type ID.
 4. In the **Name** field, enter a name.
 5. In the **Asset lifecycle model** field, select an asset lifecycle model. For more information about asset lifecycle states and asset lifecycle models, see [Asset lifecycle states](object-stages.md).
 6. Set the **Total** option to **Yes** if summarized key performance indicator (KPI) values should be calculated for assets that have this asset type.
 7. Select **Save**.
-8. On the **Job types** FastTab, select the job types that should be related to the asset type:
+8. On the **Maintenance job types** FastTab, select the maintenance job types that should be related to the asset type:
 
-    - To select a job type, select it in the **Job types remaining** field, and then select the right arrow button ![Right arrow button](media/29-setup-for-objects.png) to move it to the **Job types selected** section.
-    - To select all available job types, select the ![Forward all arrow](media/30-setup-for-objects.png) button. All job types are transferred from the **Job types remaining** field to the **Job types selected** field.
-    - To cancel the selection of a job type, select it in the **Job types selected** field, and then select the left arrow button ![Left arrow button](media/31-setup-for-objects.png) to move it to the **Job types remaining** field.
+    - To select a maintenance job type, select it in the **Maintenance job types remaining** field, and then select the right arrow button ![Right arrow button](media/29-setup-for-objects.png) to move it to the **Maintenance job types selected** section.
+    - To select all available maintenance job types, select the ![Forward all arrow](media/30-setup-for-objects.png) button. All maintenance job types are transferred from the **Maintenance job types remaining** field to the **Maintenance job types selected** field.
+    - To cancel the selection of a maintenance job type, select it in the **Maintenance job types selected** field, and then select the left arrow button ![Left arrow button](media/31-setup-for-objects.png) to move it to the **Maintenance job types remaining** field.
 
-9. You can also select the asset measures that should be related to the asset type. On the **Asset measures** FastTab, make your selections by using the methods that are described for job types in step 8. For more information about the setup of asset measures, see [Maintenance asset measures](counters.md).
-10. You can also select the attribute types that should be related to the asset type. On the **Attribute types** FastTab, make your selections by using the methods that are described for job types in step 8. Then, to create the preferred sequence of attribute types, select an attribute type in the **Attribute types selected** field, and use the up arrow and down arrow buttons to move it. The sequence of attribute types will be shown on assets that use this asset type. For more information about asset attributes, see [Maintenance attribute types](../setup-for-functional-locations/specification-types.md).
+9. You can also select the counters that should be related to the asset type. On the **Counters** FastTab, make your selections by using the methods that are described for maintenance job types in step 8. For more information about the setup of counters, see [Counters](counters.md).
+10. You can also select the attribute types that should be related to the asset type. On the **Attribute types** FastTab, make your selections by using the methods that are described for maintenance job types in step 8. Then, to create the preferred sequence of attribute types, select an attribute type in the **Attribute types selected** field, and use the up arrow and down arrow buttons to move it. The sequence of attribute types will be shown on assets that use this asset type. For more information about asset attributes, see [Maintenance attribute types](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
     > When you add new attribute types on the **Attribute types** FastTab, existing assets are automatically updated with that information.
 
-11. You can also select the condition assessment templates that should be related to the asset type. On the **Condition assessments** FastTab, make your selections by using the methods that are described for job types in step 8. For more information about condition assessment templates and registrations, see [Condition assessment](../setup-for-objects/condition-assessment.md).
+11. You can also select the condition assessment templates that should be related to the asset type. On the **Condition assessments** FastTab, make your selections by using the methods that are described for maintenance job types in step 8. For more information about condition assessment templates and registrations, see [Condition assessment](../setup-for-objects/condition-assessment.md).
 12. The **Asset model** FastTab shows all the combinations of asset manufacturers and models that are set up on the selected asset type. To see the combinations divided according to manufacturer, select **Asset model** to open the **Asset model** page.
 
     On the **Asset model** page, you can add asset model–asset type relations. Additionally, on the **Asset types** page, you can add asset manufacturer–asset model relations directly to an asset type. Finally, on the **Asset model** page (**Asset management** \> **Setup** \> **Assets** \> **Asset model**), you can create new asset manufacturer–asset model–asset type relations. Therefore, there are three ways to set up and edit asset manufacturer–asset model–asset type relations. All the available combinations are shown from different perspectives, and you can select your preferred point of entry when you work with the setup.
 
 > [!NOTE]
-> - If you select asset measures on an asset type, the selections are automatically updated on the **Asset measures** page (**Asset management** \> **Setup** \> **Assets** \> **Asset types** \> **Asset measures**).
-> - The fields in the **Details** section on the **General** FastTab show the number of job types, asset measures, attributes, and so on, that are set up on the selected asset type.
+> - If you select counters on an asset type, the selections are automatically updated on the **Counters** page (**Asset management** > **Setup** > **Assets** > **Asset types** > **Counters**).
+> - The fields in the **Details** section on the **General** FastTab show the number of maintenance job types, counters, attributes, and so on, that are set up on the selected asset type.
 
-Typically, work orders that are manually created are related to corrective maintenance, whereas work orders that are automatically created are related to preventive maintenance. When you manually create work orders, only the job types that are selected on the **Job types** FastTab of the **Asset types** page can be used. However, automatically created work orders can use all the job types you create on the **Job types** page (**Asset management** \> **Setup** \> **Jobs** \> **Job types**).
+Typically, work orders that are manually created are related to corrective maintenance, whereas work orders that are automatically created are related to preventive maintenance. When you manually create work orders, only the maintenance job types that are selected on the **maintenance job types** FastTab of the **Asset types** page can be used. However, automatically created work orders can use all the maintenance job types you create on the **Maintenance job types** page (**Asset management** \> **Setup** \> **Jobs** \> **Maintenance job types**).
 
 ## Create asset type setup lines
 

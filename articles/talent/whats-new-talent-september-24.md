@@ -29,9 +29,7 @@ ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 Talent: Core HR (September 24, 2018)
-
-[!include [banner](includes/banner.md)]
+# What's new or changed in Dynamics 365 Talent - Core HR (September 24, 2018)
 
 **Build 8.1.1015.0**
 

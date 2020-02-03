@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/01/19
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-365-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 # Get product recommendations using demo data
 This document provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 
-Omni-channel product recommendations provide a set of editorially curated or programmatically generated list of products. These lists can be used in several scenarios, depending on the business need. For more information about product recommendation lists, see [Product recommendations overview.](product-recommendations.md)
+Omni-channel product recommendations provide a set of editorially curated or programmatically generated list of products. These lists can be used in several scenarios, depending on the business need. For more information about product recommendation lists, see [Product recommendations overview](product-recommendations.md).
 
 For Tier-2 and higher Dynamics 365 environments, product recommendations are automatically computed based on customer data. Using product recommendations demo data does not disable any product recommendations solution already provisioned in the environment and any costs associated with its usage.
 
@@ -42,7 +42,7 @@ For Tier-1 environments, product recommendations are based only off the static d
 To enable product recommensations demo date, you need to deploy the Dynamics 365 Commerce Preview Demo Extension to the respective environment. Doing so automatically enables product recommendations demo data.
 
 ## Default demo data
-Each Onebox type environment comes with a preloaded set of product recommendations demo data stored in the coma separated ‘reco_demo_data.csv’ file, located on the Retail Server.
+Each Onebox type environment comes with a preloaded set of product recommendations demo data stored in the coma separated ‘reco_demo_data.csv’ file, located on the Commerce Scale Unit.
 
 The data is structured along the following columns.
 

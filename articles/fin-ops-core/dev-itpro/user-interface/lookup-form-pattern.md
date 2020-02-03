@@ -48,15 +48,15 @@ Custom lookup forms should be used when a standard framework-provided lookup (wh
 ## Wireframe
 ### Lookup basic
 
-[![LookupForm(1)](./media/lookupform1.png)](./media/lookupform1.png)
+[![Wireframe of basic lookup form](./media/lookupform1.png)](./media/lookupform1.png)
 
-### Lookup w/tabs
+### Lookup with tabs
 
-[![LookupForm(2)](./media/lookupform2.png)](./media/lookupform2.png)
+[![Wireframe of lookup form with tabs](./media/lookupform2.png)](./media/lookupform2.png)
 
-### Lookup w/preview
+### Lookup with preview
 
-[![LookupForm(3)](./media/lookupform3.png)](./media/lookupform3.png)
+[![Wireframe of lookup form with preview](./media/lookupform3.png)](./media/lookupform3.png)
 
 ## Pattern changes
 Here are the changes to this pattern since Microsoft Dynamics AX 2012:
@@ -132,19 +132,19 @@ The verification checklist shows the steps for manually verifying that the form 
 
 Form: **SysLanguageLookup** (Click **Settings** &gt; **User settings** on the navigation bar.) 
 
-[![LookupForm(4)](./media/lookupform4.png)](./media/lookupform4.png)
+[![Example of basic lookup](./media/lookupform4.png)](./media/lookupform4.png)
 
-### Lookup w/tabs
+### Lookup with tabs
 
 Form: **CaseCategoryLookup** (Click **Common** &gt; **Common** &gt; **Cases** &gt; **All cases**, and then select a case to go to the details.) 
 
-![LookupForm(5)](./media/lookupform5.png)
+![Example of lookup form with tabs](./media/lookupform5.png)
 
-### Lookup w/preview
+### Lookup with preview
 
 Form: **HcmWorkerLookup** (Click **Human resources** &gt; **Common** &gt; **Organization** &gt; **Positions** &gt; **Positions**, and then click a record to go to the details. Expand the **Worker assignment** FastTab, click **New**, and then click the drop-down arrow in the **Worker** field.) 
 
-[![LookupForm(6)](./media/lookupform6.png)](./media/lookupform6.png)
+[![Example of lookup form with preview](./media/lookupform6.png)](./media/lookupform6.png)
 
 ## Appendix
 ### Frequently asked questions
@@ -172,12 +172,12 @@ This section will have answers to frequently asked questions that are related to
 
 **SysLanguageLookup (Lookup basic)** 
 
-![LookupForm(7)](./media/lookupform7.png) 
+![Example of basic lookup form](./media/lookupform7.png) 
 
-**CaseCategoryLookup (Lookup w/tabs)** 
+**CaseCategoryLookup (Lookup with tabs)** 
 
-[![LookupForm(8)](./media/lookupform8.png)](./media/lookupform8.png) 
+[![Example of lookup form with tabs](./media/lookupform8.png)](./media/lookupform8.png) 
 
-**HcmWorkerLookup (Lookup w/preview)** 
+**HcmWorkerLookup (Lookup with preview)** 
 
-![LookupForm(9)](./media/lookupform9.png)
+![Example of lookup form with preview](./media/lookupform9.png)

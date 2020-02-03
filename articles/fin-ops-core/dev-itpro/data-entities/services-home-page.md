@@ -52,8 +52,8 @@ The following table lists all the service endpoints, and compares the endpoints 
 
 This topic describes authentication for services, and the REST Metadata service. The following links provide detailed documentation for:
 
-- [Custom services](custom-services.md)
-- [OData service](odata.md)
+- [Custom service development](custom-services.md)
+- [Open Data Protocol (OData)](odata.md)
 
 ## Authentication
 OData services, JSON-based custom services, and the REST metadata service support standard OAuth 2.0 authentication.
@@ -68,7 +68,7 @@ Two kinds of application are supported in Microsoft Azure Active Directory (AAD
 For more information, see:
 
 - [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://msdn.microsoft.com/library/azure/dn645545.aspx)
-- [Troubleshoot service authentication](troubleshoot-service-authentication.md)
+- [Troubleshoot service authentication issues](troubleshoot-service-authentication.md)
 
 The following illustration describes how authorization must be configured for Authorization code grant flow.
 
@@ -85,7 +85,7 @@ And below is the illustration describes how authorization works for Service to s
 
 **Prerequisite:** You must have an Azure subscription and admin access to Azure Active Directory (Azure AD).
 
-Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide). For specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
 
 Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
 Under **Delegated permissions**, you must select, at a minimum, the following options:

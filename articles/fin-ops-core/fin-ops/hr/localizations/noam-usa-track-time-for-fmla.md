@@ -2,10 +2,10 @@
 # required metadata
 
 title: Track time off for the Family and Medical Leave Act (FMLA)
-description: This topic explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
+description: This article explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 author: ShielaSogge
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 2741
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
+This article explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 
 ## Prerequisites
 
@@ -42,18 +42,18 @@ The following table shows the prerequisites must be in place before you start.
 
 | Category                 | Prerequisite |
 |--------------------------|--------------|
-| Task                     | Verify that the settings on the **Human resources parameters** and **Case category type security** pages are accurate. |
+| Task                     | Make sure the settings on the **Human resources parameters** and **Case category type security** pages are accurate. |
 | Knowledge and experience | Be familiar with cases and how they work. |
-| Planning                 | Determine whether you will integrate FMLA with Payroll. |
+| Planning                 | Decide whether to integrate FMLA with Payroll. |
 | Country/region           | (USA) The primary address for the legal entity must be in the United States. |
 
 ## Determine work eligibility
 
-When a worker submits a leave request, or inquires about his or her FMLA eligibility, you can easily determine how many available hours the worker has. To determine worker eligibility, follow these steps.
+You can easily determine how many available hours a worker has for leave requests. To determine worker eligibility, follow these steps.
 
 1. On the **Workers** page, select the worker to determine eligibility for, and then click **Employment** \> **FMLA** \> **FMLA eligibility**.
 2. In the **Effective date** field, enter the date when you expect eligibility to begin.
-3. Click **Calculate**. The estimated number of available hours for both standard FMLA and military FMLA is shown. This number is determined by the number of hours that the employee has worked, the length of his or her employment, and whether the employee has taken any leave that reduces his or her remaining hours.
+3. Click **Calculate**. The estimated number of available hours for both standard FMLA and military FMLA is shown. This number is determined by the number of hours worked, the length of employment, and whether the employee has taken any leave that reduces remaining hours.
 
 ## Create an FMLA case
 
@@ -62,7 +62,7 @@ FMLA uses cases to track eligibility and hours that have been taken.
 > [!NOTE]
 > Before you create an FMLA case, make sure that you have created the employment leave.
 
-This step is required for all leaves of absence, regardless of whether the leave qualifies for FMLA.
+You must perform this step for all leaves of absence, regardless of whether the leave qualifies for FMLA.
 
 To create an FMLA case, follow these steps.
 
@@ -94,14 +94,14 @@ After you create an FMLA case for a worker, you can recalculate the worker's eli
 
 ## Enter FMLA hours that have been taken (if required)
 
-After an FMLA case is approved, you can change and track the number of hours that the worker applies to his or her FMLA leave. To enter FMLA hours that have been taken, follow these steps.
+After an FMLA case is approved, you can change and track the number of hours that the worker applies to their FMLA leave. To enter FMLA hours that have been taken, follow these steps.
 
 1. On the **FMLA cases** page, open the case to log hours for.
 2. On the **Action Pane**, in the **Maintain** group, click **FMLA hours**.
 3. Click **Add line**, and enter the earning date, the number of hours that have been taken, and any applicable notes.
 
 > [!NOTE]
-> The **Source** column is always set to **Manual**. If you're using Finance and Operations and Payroll, the **Source** column can be updated automatically, based on the earning code that is used on the employee's pay statement.
+> The **Source** column is always set to **Manual**. If you're using Finance and Operations and Payroll, the **Source** column can be updated automatically, based on the earning code that is used on the employee's pay statement. To allow automatic updates from Payroll, you must set the option **To manually enter and maintain the hours worked, uncheck this box** to **No**. The default is to not allow automatic updates from Payroll.
 
 ## Set up Payroll for integration with FMLA (if required)
 

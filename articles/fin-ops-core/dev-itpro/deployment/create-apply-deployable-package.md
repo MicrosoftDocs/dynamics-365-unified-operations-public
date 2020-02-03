@@ -3,7 +3,7 @@
 
 title: Create deployable packages of models
 description: This topic describes the workflow for creating and applying a deployable package.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 09/20/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.custom: 24211
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -62,7 +62,7 @@ On a development environment, after you have completed development and testing, 
 4.  Upload the deployable package that you created earlier.
 
 ## Apply a deployable package
-To apply a deployable package to an environment, see the article [Apply a deployable package](apply-deployable-package-system.md).
+To apply a deployable package to an environment, see the article [Apply updates to cloud environments](apply-deployable-package-system.md).
 
 ## Remove a deployable package
-To uninstall or remove a deployable package from an environment, see the article [Uninstall (remove) a module (package)](uninstall-deployable-package.md).
+To uninstall or remove a deployable package from an environment, see the article [Uninstall a package](uninstall-deployable-package.md).

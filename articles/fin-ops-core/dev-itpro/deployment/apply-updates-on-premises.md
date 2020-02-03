@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Platform update 12
 This topic explains how to apply supported updates to Dynamics 365 Finance + Operations (on-premises). All updates to on-premises environments are done through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Search for and download updates
-For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates](../migration-upgrade/download-hotfix-lcs.md).
+For more information about how to find the updates that you can apply to your on-premises environment, see [Issue search in Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md). For information about how to download updates from the tiles in the **Updates** section of the **Environment details** page in LCS, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
    
 > [!NOTE]
 > When you are updating an on-premises environment, always select updates from the update tiles on the **Environment** details page. If you select updates from another location, the updates might not work. 
@@ -50,7 +50,7 @@ To apply updates to an on-premises environment after it has been deployed, in LC
 
 > [!NOTE]
 > You can apply updates after deployment only on environments that have Platform update 12 for Finance and Operations or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
-> If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy an on-premises environment](redeploy-on-prem.md).
+> If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy on-premises environments](redeploy-on-prem.md).
 
 ## Apply application or binary updates through LCS
 The following steps can be used to apply X++, All Binary, or Platform bianry updates. 
@@ -67,10 +67,10 @@ The following steps can be used to apply X++, All Binary, or Platform bianry upd
 - Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
-    - **Platform binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrade/download-hotfix-lcs.md).
-    - **Application binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates wiki](../migration-upgrade/download-hotfix-lcs.md).
-    - **Application X++ updates** – Download the required hotfix to your development environment, and then follow the steps in [Create a deployable package of your models in order to apply it to a runtime environment](create-apply-deployable-package.md).
-    - **Customizations** – Follow the steps in [Develop and deploy custom models](develop-deploy-custom-models-on-premises.md).
+    - **Platform binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+    - **Application binary updates** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+    - **Application X++ updates** – Download the required hotfix to your development environment, and then follow the steps in [Create deployable packages of models](create-apply-deployable-package.md).
+    - **Customizations** – Follow the steps in [Develop and deploy custom models to on-premises environments](develop-deploy-custom-models-on-premises.md).
 
 ### Update a sandbox environment
 1. In the LCS Asset library, upload the deployable package that was generated in the "Prerequisites" section of this topic to the **Software deployable packages** tab.
@@ -80,8 +80,8 @@ The following steps can be used to apply X++, All Binary, or Platform bianry upd
 **If you are on local agent version 2.1.0 and higher, complete the following steps.**
 1. Select the update, and then click **Prepare**. Clicking on **Prepare** will prepare your on-premises environment for servicing. 
 
->[!NOTE]
-> During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
+    >[!NOTE]
+    > During preparation, the environment state will be **Deployed** but the Deployment status field will show the progress of Preparation. Steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. 
 
 2. After the preparation is complete, you will see **Abort** and **Update Environment** buttons. To start applying the update, click **Update Environment**. If preparation fails, see the "Resolve a failed update application" section later in this topic.
 3. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
@@ -94,8 +94,8 @@ The following steps can be used to apply X++, All Binary, or Platform bianry upd
 2. In the confirmation message, select **Yes**. The servicing operation has started on this environment. This is the start of the downtime on your environment. 
 3. Environment state changes from **Deployed** to **Preparing**. 
 
->[!NOTE]
-> During preparation, steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. However, we recommend that the downtime starts when the environment enters the Preparing state.
+    >[!NOTE]
+    > During preparation, steps such formatting the package and downloading the package are executed during preparation. The environment is not directly touched during preparation and hence there is no downtime during the preparation phase. Users can continue to use the system during preparation. However, we recommend that the downtime starts when the environment enters the Preparing state.
  
 4. After preparation is complete, the environment state is changed from **Preparing** to **Deploying**. 
 5. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this topic.

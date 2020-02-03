@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience:  Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -186,3 +186,11 @@ export default createObservableDataAction({
 ```
 
 You can now use the new chain data action wherever you need both the basic product information and the product's current inventory status. In addition, the calls that exist in the chain data action are still run through the cache. They are also batched and deduplicated together with other actions that are run on the same page.
+
+## Additional resources
+
+[Batch data actions](batch-data-actions.md)
+
+[Create an observable data action](create-observable-data-action.md)
+
+[Share state across modules](share-state-across-modules.md)

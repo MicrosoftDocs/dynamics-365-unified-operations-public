@@ -42,7 +42,7 @@ When you're at this stage, the Microsoft FastTrack team will work with the proje
 
 ## What are the prerequisites to deploy a production environment?
 
-For a list of the prerequisites, see [Preparing for Go-live](prepare-go-live.md).
+For a list of the prerequisites, see [Prepare for go-live](prepare-go-live.md).
 
 ## What is a Go-live assessment/review, and why is it required?
 
@@ -53,7 +53,7 @@ If a FastTrack solution architect is assigned to your project, contact him or he
 
 ## The Production button isn't available in LCS. How do I request my production environment?
 
-The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. For more information about how to complete these phases, see [Methodology tasks and phases](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology. For more information about how to complete these phases, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > Your production environment won't be deployed until the Go-live assessment/review has been completed.
@@ -62,7 +62,7 @@ The **Production** button in LCS is available only after you've completed the **
 
 No. We will deny any request for a production environment that is on a different version than your sandbox environment. When you configure a production environment, the versions that you select must match the versions of the sandbox environment where you signed off on your solution. Therefore, you must first apply the latest update to your sandbox environment, test it, and sign off.
 
-For more information, see [Versions Update Policy](../../dev-itpro/migration-upgrade/versions-update-policy.md).
+For more information, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md).
 
 ## Our sandbox environments are deployed in the Central US datacenter, but we want our production environments to be deployed in the West US datacenter. Can I select West US as the datacenter in my production configuration?
 
@@ -109,7 +109,7 @@ To copy and restore your database, follow the instructions in the topic, [Golden
 
 Yes. In LCS, you can submit a service request to apply a deployable package to your production environment. Application of one deployable package to a production environment involves a lead time of five hours and downtime of approximately five hours.
 
-For more information, see [Apply deployable package](../../dev-itpro/deployment/apply-deployable-package-system.md).
+For more information, see [Apply updates to cloud environments](../../dev-itpro/deployment/apply-deployable-package-system.md).
 
 ## What should I do if my production environment is down?
 

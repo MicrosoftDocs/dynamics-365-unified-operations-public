@@ -42,7 +42,7 @@ Usage
 The Section PowerBI subpattern is used as part of the Operational Workspace pattern, specifically for the panorama section that contains the PowerBI control.
 
 ## Wireframe
-[![sectionPowerBIWireframe](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
+[![Section PowerBI wireframe](./media/sectionpowerbiwireframe.png)](./media/sectionpowerbiwireframe.png)
 
 ## Pattern changes for Microsoft Dynamics AX
 This pattern didn't exist for Microsoft Dynamics AX 2012.
@@ -69,15 +69,15 @@ Form: **FmClerkWorkspace** (**All workspaces** &gt; **Reservation Management**) 
 ## Appendix
 ### Related articles
 
--   [Configuring PowerBI integration for workspaces](../analytics/configure-power-bi-integration.md)
--   [Power BI Integration in Dynamics AX](../analytics/power-bi-integration.md)
+-   [Configure Power BI integration for workspaces](../analytics/configure-power-bi-integration.md)
+-   [Features and services available through Power BI integration](../analytics/power-bi-integration.md)
 
 ### Frequently asked questions
 
 This section will have answers to frequently asked questions that are related to this guideline/pattern.
 
 -   **How do I configure PowerBI for integration with my workspace?**
-    -   See the [Configuring PowerBI integration for workspaces](../analytics/configure-power-bi-integration.md) article.
+    -   See the [Configure Power BI integration for workspaces](../analytics/configure-power-bi-integration.md) article.
 
 ### Open issues
 

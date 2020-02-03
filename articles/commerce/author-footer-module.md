@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create a footer module 
+title: Footer module 
 description: This topic covers footer modules and how to author them in Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 ---
 
-# Create a footer module 
+# Footer module  
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers footer modules and describes how to create them in Microsoft Dynamics 365 Commerce.
@@ -71,3 +71,20 @@ On every page template that has been created for the site, follow these steps.
 
 By adding the page fragment to page templates, you help guarantee that the footer is rendered on every page.
 
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Container module](add-container-module.md)
+
+[Buy box module](add-buy-box.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

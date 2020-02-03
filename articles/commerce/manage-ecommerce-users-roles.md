@@ -3,28 +3,28 @@
 
 title: Manage e-Commerce users and roles
 description: This topic explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
-author: stuharg
+author: bicyclingfool
 manager: AnnBe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 ms.search.form: 
 # ROBOTS: 
-audience: Enduser
+audience: Application user
 # ms.devlang: 
-ms.reviewer: josaw
+ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry:
-ms.author: bicyclingfool
+ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Manage e-Commerce users and roles
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
@@ -64,6 +64,14 @@ When you create a new site in Commerce, you're asked to provide a security group
 After your site is created, only users who are in the security groups that are associated with the **System Administrator** and **Administrator** roles can access the authoring environment for that site. To assign users to the **Web Producer**, **RnR Moderator**, and **Reader** roles, you must assign security groups to those roles. To add a security group to a role, or to update a security group that is currently assigned to a role, follow these steps.
 
 1. Go to the site that you want to update.
-2. In **Site management**, open the **Security** page.
-3. Select the role to modify.
-4. Add security groups to roles, or remove security groups from roles.
+1. In **Site management**, open the **Security** page.
+1. Select the role to modify.
+1. Add security groups to roles, or remove security groups from roles.
+
+## Additional resources
+
+[Add script code to site pages to support telemetry](add-telemetry.md)
+
+[Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
+
+[Manage Content Security Policy (CSP)](manage-csp.md)

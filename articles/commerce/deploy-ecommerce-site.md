@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Deploy a new e-Commerce site
-description: This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
+title: Deploy a new e-Commerce tenant
+description: This topic describes how to deploy a new e-Commerce tenant by using Microsoft Dynamics Lifecycle Services (LCS).
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,15 +29,15 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Deploy a new e-Commerce site
+# Deploy a new e-Commerce tenant
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics 365 Commerce.
+This topic describes how to deploy a new e-Commerce site by using Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Overview
-	
+
 Microsoft Dynamics Lifecycle Services (LCS) is a cloud-based collaborative workspace that partners and customers can use to manage their projects and environments, view the latest information about Microsoft Dynamics products and features, and create, track, and browse support incidents. E-Commerce management features are integrated into LCS.
 
 To learn more about LCS, see the [Lifecycle Services User Guide](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -54,22 +54,22 @@ Use this procedure to initialize the e-Commerce feature in an existing environme
 
 Before you begin, make sure that you have the following required information:
 
-- The RCSU that will be used
-- The Microsoft Azure Active Directory (Azure AD) security group that will be used for system admins
-- The domains that will be associated with the environment
+- The RCSU that will be used.
+- The Microsoft Azure Active Directory security group that will be used for e-Commerce system admins.
+- The Microsoft Azure Active Directory security group that will be used for ratings and reviews moderators.
+- The domains that will be associated with the environment.
 
 In addition, you can collect the following optional information:
 
 - Azure AD business-to-consumer (B2C) information:
 
-	- Tenant Name
-	- Client ID
-	- Login Custom Domain
-	- Reply URL
-	- SignUp SignIn Policy ID
-	- Reset password Policy ID
-	- Edit Profile Policy ID
-	- The security group that will be used for moderation of ratings and reviews
+	- Tenant Name.
+	- Client ID.
+	- Login Custom Domain.
+	- Reply URL.
+	- SignUp SignIn Policy ID.
+	- Reset password Policy ID.
+	- Edit Profile Policy ID.
 
 [!NOTE]
 This information can be added later, through a service request.
@@ -85,8 +85,29 @@ After you've collected the required information, follow these steps to initializ
 1. On the next page, fill in the required information, and then submit the form. You're returned to the **e-Commerce** tab, where you should see that initialization has been started.
 1. To view the initialization status, either **Refresh** or return to the **e-Commerce** tab later.
 	
-When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is completed, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site management tool (the authoring tool).
+When e-Commerce is initialized from LCS, the system provisions several components that are required for e-Commerce and associates them with the environment. After provisioning is complete, the **e-Commerce** tab on the **Retail management** page is updated to reflect the provisioning. The page shows the latest customization deployments and the status of any other ongoing deployments. It also includes links to the e-Commerce site and the e-Commerce site builder where sites are authored.
 
-## Access the authoring environment
+## Access site builder
 
-To access the authoring environment, go to the **e-Commerce** tab on the **Retail management** page. There, you will find links to your e-Commerce site and the site management tool.
+To access site builder, go to the **e-Commerce** tab on the **Retail management** page in LCS and select the **e-Commerce site management tool** link. The site builder landing page displays a tenant-level view. From this page, you can:
+
+- Modify tenant-level settings.
+- Navigate to any site you have created, and have permission to view. 
+- Access Reviews features such as moderation and reporting.
+- Create a new site. For more information about how to create a new site, see [Create an e-Commerce site](create-ecommerce-site.md) . 
+
+## Additional resources
+
+[Configure your domain name](configure-your-domain-name.md)
+
+[Create an e-Commerce site](create-ecommerce-site.md)
+
+[Associate an online site with a channel](associate-site-online-store.md)
+
+[Manage robots.txt files](manage-robots-txt-files.md)
+
+[Set up custom pages for user logins](custom-pages-user-logins.md)
+
+[Add support for a content delivery network (CDN)](add-cdn-support.md)
+
+[Enable location-based store detection](enable-store-detection.md)

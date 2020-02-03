@@ -5,7 +5,7 @@ title: Deferred processing of warehouse work
 description: This topic describes the functionality that makes deferred processing of warehouse work put operations available in  Dynamics 365 Supply Chain Management.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -38,7 +38,6 @@ ms.dyn365.ops.version: 10.0.5
 
 This topic describes the functionality that makes deferred processing of put operations for warehouse work available in Dynamics 365 Supply Chain Management.
 
-
 The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
 
 Background processing is achieved by using the SysOperation framework. For more information, see [SysOperation Framework Overview](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
@@ -57,6 +56,8 @@ Policies are configured on the **Work processing policies** page. The following 
 | Work processing method          | The method that is used to process the work line. If the method is set to **Immediate**, the behavior resembles the behavior when no work processing policies are used to process the line. If the method is set to **Deferred**, deferred processing that uses the batch framework is used. |
 | Deferred processing threshold   | A value of **0** (zero) indicates that there is no threshold. In this case, deferred processing is used if it can be used. If the specific threshold calculation is below the threshold, the Immediate method is used. Otherwise, the Deferred method is used if it can be used. For sales and transfer-related work, the threshold is calculated as the number of associated source load lines that are being processed for the work. For replenishment work, the threshold is calculated as the number of work lines that are being replenished by the work. By setting a threshold of, for example, **5** for sales, smaller works that have fewer than five initial source load lines won't use deferred processing, but larger works will use it. The threshold has an effect only if the work processing method is set to **Deferred**. |
 | Deferred processing batch group |The batch group that is used for processing. |
+
+For deferred put-processing, the following work order types are supported: sales order, transfer order issue, and replenishment.
 
 ## Assigning the work creation policy
 
@@ -106,7 +107,7 @@ There are several scenarios where deferred put processing isn't applied even tho
 - Manual work completion is used.
 - The work is completed by using auto-completion.
 - Audit templates are used.
-- The work uses containers.
+
 
 ## Monitoring the deferred processing tasks from the Outbound work monitoring workspace
 

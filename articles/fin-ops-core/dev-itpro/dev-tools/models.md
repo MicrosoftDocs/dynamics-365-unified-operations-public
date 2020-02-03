@@ -3,7 +3,7 @@
 
 title: Models and packages
 description: This article describes the concept of models and packages. It also explains how to use the Development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 05/30/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 83351
 ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -44,7 +44,7 @@ A model is a group of elements, such as metadata and source files, that typicall
 <!--The [Packages, models, and projects](https://mix.office.com/watch/ies6lyit6773) Office Mix describes models and packages and how they relate to each other.-->
 
 ## Creating a new model
-You use the **Create model** wizard to create new models. You can access this wizard from **Model Management** on the **Dynamics 365**menu. You can create two types of models:
+You use the **Create model** wizard to create new models. You can access this wizard from **Model Management** on the **Dynamics 365** menu. You can create two types of models:
 
 -   **A model that is deployed in its own package** – You can use this type of model to create new model elements, and extend the metadata and business logic of referenced models. The wizard lets you select the referenced models. This type of model is compiled into its own assembly and binaries, and will simplify and reduce the cost of upgrades, deployment, and application lifecycle management in general.
 -   **A model that is a part of an existing package** – You can use this type of model to perform advanced customizations, such as overlayering source code and metadata.
@@ -98,11 +98,11 @@ If your model belongs to a package with multiple models (For example, MyModel1 o
 
 ## Additional resources
 
-[Development tools overview](development-tools-overview.md)
+[Development tools in Visual Studio](development-tools-overview.md)
 
-[Developer home page](developer-home-page.md)
+[Develop and customize home page](developer-home-page.md)
 
-[Distribution of models: How to export and import model files](models-export-import.md)
+[Export and import models](models-export-import.md)
 
 
 

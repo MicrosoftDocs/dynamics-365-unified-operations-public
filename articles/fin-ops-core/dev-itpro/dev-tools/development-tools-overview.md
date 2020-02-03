@@ -3,7 +3,7 @@
 
 title: Development tools in Visual Studio
 description: Visual Studio 2015 is the exclusive integrated development environment (IDE) for development.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 23401
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -45,7 +45,7 @@ In Visual Studio, the model store is represented by the Application Explorer. On
 ![Application Explorer](media/1_devotoolsconcept.png)
 
 ### The project template
-Even a simple application can have a large number of elements in its model. The **Operations Project** template has been added to Visual Studio to help you organize and manage the elements that you are working with for a model. You will use the project to design, build, and test model elements. It’s common to have several projects within a single Visual Studio solution. The following illustration shows three projects in a Visual Studio solution. For more details, see [Projects](projects.md).
+Even a simple application can have a large number of elements in its model. The **Operations Project** template has been added to Visual Studio to help you organize and manage the elements that you are working with for a model. You will use the project to design, build, and test model elements. It’s common to have several projects within a single Visual Studio solution. The following illustration shows three projects in a Visual Studio solution. For more details, see [Finance and Operations project type in Visual Studio](projects.md).
 
 ![Solution Explorer](media/2_devotoolsconcept.png)
 
@@ -55,7 +55,7 @@ The Visual Studio tools contain designers for each kind of element in the appli
 ![Element designer](media/3_devotoolsconcept.png)
 
 ### Code editor
-The X++ code is written in the code editor for Visual Studio. The standard features that a developer expects from the code editor are supported. For example, sections of code are collapsible. IntelliSense provides guidance as you write or modify code. For more details, see [Code editor](code-editor.md).
+The X++ code is written in the code editor for Visual Studio. The standard features that a developer expects from the code editor are supported. For example, sections of code are collapsible. IntelliSense provides guidance as you write or modify code. For more details, see [Code editor features](code-editor.md).
 
 ![Code editor](media/4_devotoolsconcept.png)
 

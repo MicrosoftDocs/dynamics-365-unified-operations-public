@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 ---
 
-# Add location roles and party relationship types 
+# Add location and party relationship types 
 
 [!include [banner](../includes/banner.md)]
 
@@ -46,7 +46,7 @@ There are two ways to add a new location roles for address and contact informati
 
     1.  Create an extension to the **LogisticsLocationRoleType** enum and add the new role in the extension. 
   
-        ![LogisticsLocationRoleType](media/Logistics.PNG)
+        ![Extension to LogisticsLocationRoleType enum](media/Logistics.PNG)
 
     2. Create a new resource file for the new role, and then assign a value for its properties.
      
@@ -74,7 +74,7 @@ There are two ways to add a new relationship type:
 
     2. Create an initializer for this new type. You can find several examples in the core code, one of them is  **DirRelationshipTypeChildInitialize**. This is an initializer class for party relationship type “Child”. You can start with your initializer by copying and pasting this code and then update the highlighted areas.
     
-    ![DirRelationshipChild](media/DirRelationship.PNG)
+    ![DirRelationshipChild initializer](media/DirRelationship.PNG)
 
     3.  To test populating the new relationship type, you can create a runnable class, and call DirDataPopulation::insertDirRelationshipTypes() in Main(). You should see the new relationship type in the **DirRelationshipTypeTable**, and the new relationship type will be available on the **Relationship types** page.
 

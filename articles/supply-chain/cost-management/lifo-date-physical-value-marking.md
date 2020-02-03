@@ -34,8 +34,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 Last in, First out Date (LIFO Date) is an inventory model based on the LIFO principle. Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction. By using LIFO Date, if there is no receipt before the issue, the issue is settled against any receipts that occur after the date of the issue. Several issues on the same date may be settled in the order of last issue, last receipt. 
 
 When you use the Last in, First out Date (LIFO Date) inventory model, if there is no receipt before the issue, the issue is settled against any receipts that occur after the date of the issue. Several issues on the same date can be settled in the order of last issue, last receipt. When you use LIFO Date, you don't have to use the LIFO Date rule. Instead, you can mark inventory transactions so that a specific item receipt is settled against a specific issue. 

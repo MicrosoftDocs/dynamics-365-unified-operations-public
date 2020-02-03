@@ -8,7 +8,7 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Work with templates
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
@@ -148,3 +148,9 @@ After you've previewed the changes to your template, follow one of these steps t
 
 > [!WARNING]
 > When a template, or any other content management system (CMS) item, is published, it's discoverable on the internet. Don't publish documents or assets until you're ready to make them public. Document versions that have been saved and checked in, but that haven't been published, are discoverable only to authenticated system users.
+
+## Additional resources
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with preset layouts](work-with-layouts.md)

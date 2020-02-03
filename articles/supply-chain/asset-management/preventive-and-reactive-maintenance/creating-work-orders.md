@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 When you have scheduled preventive maintenance jobs, next step is to create work orders for the jobs. This is done in one of the maintenance schedules. The scheduled jobs in a maintenance schedule can have different reference types:
 

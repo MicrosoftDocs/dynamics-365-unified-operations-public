@@ -17,7 +17,7 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 220904
@@ -63,7 +63,7 @@ Salary earnings are generated automatically during the generation process that i
 
 ## How do I generate earnings for a salaried worker who is on leave?
 
-To generate earnings for leave, you must assign a schedule to the position that the worker is taking leave from, even if that position is a salaried position. For more information, see [Work schedule and leave tasks](noam-usa-work-schedule-leave-tasks.md). If an earning code is assigned to the leave type, the scheduled lines will use the earning code from the leave type instead of the earning code from the schedule. The earning code that is on the leave type can be configured as either paid or unpaid, based on the amount or multiplier, which will be 0 (zero) for unpaid leave. If no earning code is assigned to the leave type, no lines will be created from the schedule or the leave type for the days when the worker is on leave.
+To generate earnings for leave, you must assign a schedule to the position that the worker is taking leave from, even if that position is a salaried position. For more information, see [Set up work schedules and leave](noam-usa-work-schedule-leave-tasks.md). If an earning code is assigned to the leave type, the scheduled lines will use the earning code from the leave type instead of the earning code from the schedule. The earning code that is on the leave type can be configured as either paid or unpaid, based on the amount or multiplier, which will be 0 (zero) for unpaid leave. If no earning code is assigned to the leave type, no lines will be created from the schedule or the leave type for the days when the worker is on leave.
 
 ## Can a salaried worker receive retroactive earnings?
 

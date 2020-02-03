@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -140,3 +140,12 @@ Here is an example of a resource file.
     }
 }
 ```
+## Additional resources
+
+[Request properties object](request-properties-object.md)
+
+[Extend a module definition file](extend-module-definition.md)
+
+[Cookie API overview](cookie-api-overview.md)
+
+[Globalize modules by using the CultureInfoFormatter class](globalize-modules.md)

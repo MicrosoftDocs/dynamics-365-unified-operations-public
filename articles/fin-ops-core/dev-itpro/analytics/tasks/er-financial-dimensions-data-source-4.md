@@ -26,7 +26,7 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# ER Use financial dimensions as a data source (Part 4: Run the report)
+# ER Use financial dimensions as a data source (Part 4 - Run the report)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

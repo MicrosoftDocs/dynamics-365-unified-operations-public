@@ -5,7 +5,7 @@ title: Make Entity store available as a Data Lake
 description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
 manager: AnnBe
-ms.date: 12/27/2018
+ms.date: 10/17/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -38,13 +38,13 @@ ms.dyn365.ops.version: Platform Update 23
 [!include [banner](../includes/private-preview-banner.md)]
 
 > [!IMPORTANT]
-> Access to this scenario is made available via flighting. The scenario is being released through multiple platform updates:
+> This feature is currently in public preview. This feature is comprised of the following components:
 >
-> - **Automated Entity store refresh:** Available in Platform update 23
-> - **Entity store data in Microsoft Azure Data Lake (full push):** Available in Platform update 23 (Restricted)
-> - **DataFlows for Entity store schemas on PowerBI.com:** Available in a future platform update
-> - **Entity store data in Azure Data Lake (trickle feed):** Available in a future platform update
-> - **Extend analytical workspaces by using PowerBI.com:** Available in a future platform update
+> - **Automated Entity store refresh** - Available in Platform update 23.
+> - **Entity store data in Microsoft Azure Data Lake (full push)** - Available in Platform update 26. 
+> - **DataFlows for Entity store schemas on PowerBI.com** - Available in a future platform update.
+> - **Entity store data in Azure Data Lake (trickle feed)** - Available in Platform update 28.
+> - **Extend analytical workspaces by using PowerBI.com** - Available in a future platform update.
 
 ## Automated Entity store refresh
 You need to enable automated Entity store refresh before enabling Data Lake integration. 
@@ -79,7 +79,7 @@ In addition, an admin can refresh any aggregate measurement on demand by selecti
 ## Entity store data in Azure Data Lake (full push)
 
 > [!IMPORTANT]
-> This restricted feature is turned on via flighting. This feature is available only if your environment is included in the flight.
+> This feature is currently in public preview. Do not enable this feature in production environments.
 
 When this feature is turned on, Entity store data isn't populated in the relational Entity store database in the Microsoft subscription. Instead, it's populated in an Azure Data Lake Storage Gen2 account in your own subscription. You can use the full capabilities of PowerBI.com and other Azure tools to work with Entity store.
 

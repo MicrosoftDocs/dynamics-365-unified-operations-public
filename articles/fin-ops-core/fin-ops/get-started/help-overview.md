@@ -37,9 +37,9 @@ ms.dyn365.ops.version: AX 7.0.0
 This topic provides an overview of the components of the Help system. The Help system is shared by the following products:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 You can access help from the Help pane in whichever product you are using. 
 
@@ -47,7 +47,7 @@ You can access help from the Help pane in whichever product you are using.
 
 ## Help on docs.microsoft.com
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) is the primary source of product documentation for the applications listed above. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) is the primary source of product documentation for the applications listed above. The site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 - **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
@@ -78,7 +78,7 @@ You can contribute and make edits to the documentation. To get started, click th
 
 The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
 
-For more information, refer to our [contributor's guide](https://docs.microsoft.com/en-us/contribute).
+For more information, refer to our [contributor's guide](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -87,7 +87,7 @@ For more information, refer to our [contributor's guide](https://docs.microsoft.
 
 A Task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a Task guide from the Help pane. When you first click a Task guide, the Help pane will show the step-by-step instructions for the task. Localized Task guides are available.
 
-Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Accessing Task guides from the Help pane](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
+Microsoft shipped Task guide libraries for releases through December 2017 for Dynamics 365 for Finance and Operations. The section [Help system](help-overview.md#accessing-task-guides-from-the-help-pane) describes how to find the correct Task guides for your product.
 
 ![Task guide reading view](./media/task-guide-ops.png)
 
@@ -98,7 +98,7 @@ To begin the guided, interactive experience, click **Start task guide** at the b
 > [!IMPORTANT]
 > The data that you enter when you play a Task guide is real. If you're in a production environment, the data will be entered in the company that you're currently using.
 
-You can use Task recorder to create your own custom Task guides. For more information, see [Create documentation or training by using task recordings](../../dev-itpro/user-interface/task-recorder-training-docs.md).
+You can use Task recorder to create your own custom Task guides. For more information, see [Create documentation or training with Task Recorder](../../dev-itpro/user-interface/task-recorder-training-docs.md).
 
 ## In-product Help
 
@@ -111,12 +111,12 @@ To access Help content, either click the **Help** (**?**) icon and then choose H
 From the Help pane, you can access articles that apply to the client. When you first open the Help pane and click the **Help** tab, you'll see the articles that apply to the page that you're currently on. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article.
 
 > [!IMPORTANT]
-> This section does not apply to Dynamics 365 Talent. The Help system for Talent is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Talent.
+> This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Human Resources.
 
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Managment, and Retail and configure some settings.
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Managment, and Commerce and configure some settings.
 
 > [!NOTE]
 > - In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
@@ -149,13 +149,12 @@ Translated Task guides are released in libraries with "All languages" in the tit
 
 You can create help for your users by creating custom Task guides, or connect your own website to the Help pane. For details, see:
 
-- [How to create a task recording to use as documentation or training](../../dev-itpro/user-interface/task-recorder.md).
+- [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md).
 - [Create Custom Help (white paper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## Additional resources
 
-- [Task recorder](../../dev-itpro/user-interface/task-recorder.md)
-- [Create documentation or training using task recordings](../../dev-itpro/user-interface/task-recorder.md)
+- [Task recorder resources](../../dev-itpro/user-interface/task-recorder.md)
 
 The following table lists our websites. Sites that have an asterisk (\*) next to the name require that you sign in by using an account that is associated with a service plan.
 

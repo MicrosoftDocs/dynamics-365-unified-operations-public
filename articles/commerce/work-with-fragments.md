@@ -5,10 +5,10 @@ title: Work with fragments
 description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Work with fragments 
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
@@ -122,3 +122,13 @@ To edit a fragment, follow these steps.
 1. Edit the fragment's module properties and structure as you require. The process resembles the process for editing modules are edited in the page editor view.
 
 You can also edit a fragment by selecting it on a page, in a template, or in a parent fragment, and then selecting **Edit Fragment** in the properties pane on the right.
+
+## Additional resources
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Work with templates](work-with-templates.md)
+
+[Work with preset layouts](work-with-layouts.md)
+
+[Work with publish groups](publish-groups.md)

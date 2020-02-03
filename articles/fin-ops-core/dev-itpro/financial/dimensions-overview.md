@@ -39,7 +39,7 @@ This topic provides information about dimensions, dimensions that have entities,
 The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
 
 1.  Add dimensions to the DimensionCombinationEntity or the DimensionSet entity.
-2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create open in Excel experiences](../office-integration/office-integration-edit-excel.md).
+2.  Add the dimensions to each template where you want dimensions in separate columns. For more information, see [Create Open in Excel experiences](../office-integration/office-integration-edit-excel.md).
 3. Add the [capability to look up financial dimension values in Excel](add-dimensions-excel-templates.md).
 3.  Publish the template.
 
@@ -47,6 +47,25 @@ This topic shows how to modify DimensionCombinationEntity to enable the dimensio
 
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.
+
+## Add dimensions to Dynamics 365 Finance
+
+With the November 2016 release, modifying the **DimensionCombinationEntity** has been greatly simplified with the release of the Add financial dimensions for OData Addin in Visual Studio.
+
+1. In Microsoft Visual Studio, click **Dynamics 365 > Addins > Add financial dimensions for Odata.**
+2. Type the name of the Financial dimension in the **Dimension name** column. This should be the exact name of the financial dimension. Select the **Model** that has your extensions. It should be above the AppSuite layer. Click **Apply**. 
+
+    ![financial dimensions for odata](media/financial-dimensions-odata.png).
+
+3. Compile the project, and then synchronize it with the database.
+
+    ![8](media/8-300x260.png)
+
+4. Your customization is now completed. You can test it in SQL using the following statement.
+
+    ```Sql
+    select * from DIMENSIONCOMBINATIONENTITY 
+    ```
 
 ## Add dimensions  before Dynamics 365 for Finance and Operations
 To support interactions with dimensions as columns, for example, in the Microsoft Excel integration, you must first create the dimension columns through a customization. 
@@ -61,29 +80,29 @@ To support interactions with dimensions as columns, for example, in the Microsof
 5. Create a new private static method that returns a str named **departmentValue**. 
 6. In this method, you must get the dimension's value from **DimensionAttributeValueCombination**. The final method will look something like this.
 
-```
-/// <summary>
-/// This method returns the value of Department.
-/// </summary>
-private static str departmentValue()
-{     
-    Name dimensionName = 'Department';
-    str sqlStatement;
+    ```
+    /// <summary>
+    /// This method returns the value of Department.
+    /// </summary>
+    private static str departmentValue()
+    {     
+        Name dimensionName = 'Department';
+        str sqlStatement;
 
-    DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(dimensionName);
+        DimensionAttribute dimensionAttribute = DimensionAttribute::findByName(dimensionName);
 
-    if (!dimensionAttribute)
-    {
-        sqlStatement = SysComputedColumn::returnLiteral('');
+        if (!dimensionAttribute)
+        {
+            sqlStatement = SysComputedColumn::returnLiteral('');
+        }
+        else
+        {
+            sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
+        }
+
+        return sqlStatement;
     }
-    else
-    {
-        sqlStatement = strFmt('SELECT TOP 1 T1.%1 ', dimensionAttribute.DimensionValueColumnName);
-    }
-
-    return sqlStatement;
-}
-```
+    ```
 
 7. Create a new "string unmapped field" on the entity:
 
@@ -101,16 +120,16 @@ private static str departmentValue()
 
 10. Your customization is now complete. You can test it in SQL using the following statement.
 
-```
-select * from DIMENSIONCOMBINATIONENTITY
-```
+    ```
+    select * from DIMENSIONCOMBINATIONENTITY
+    ```
 
 
 ## Additional resources
 
-[Dimension Entry control migration walkthrough](dimension-entry-control-migration.md)
+[Migrate default dimensions controls to Dimension Entry controls](dimension-entry-control-migration.md)
 
-[Dimension Entry control uptake](dimension-entry-control-uptake.md)
+[Uptake of Dimension Entry controls](dimension-entry-control-uptake.md)
 
 [Extensibility home page](../extensibility/extensibility-home-page.md)
 

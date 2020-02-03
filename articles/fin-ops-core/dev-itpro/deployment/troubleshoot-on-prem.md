@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -711,65 +711,7 @@ specified. at Microsoft.Dynamics.Integration.Service.Utility.AdapterProvider.Ref
 --- End of inner exception stack trace ---
  ```
 
- **Resolution**: 
-   1. Configure the execution of pre-deployment and post-deployment scripts. For more information, see [Local agent pre-deployment and post-deployment scripts](../lifecycle-services/pre-post-scripts.md).
-   2. Add the following code to your Predeployment.ps1 script:
-
-        ```powershell
-            $agentShare = '<Agent-share path>'  # E.g '\\LBDContosoShare\agent''
-            Write-Output "AgentShare is set to $agentShare"
-            & $agentShare\scripts\TSG_UpdateFRDeployerConfig.ps1 -agentShare $agentShare
-        ```
-   3. Create a TSG_UpdateFRDeployerConfig.ps1 script in the same folder as your Predeployment.ps1 script with the following content:
-
-        ```powershell
-            param (
-                [Parameter(Mandatory=$true)]
-                [string]
-                $agentShare = ''
-            )
-
-            $frConfig = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\Apps\FR\Deployment\FinancialReportingDeployer.exe.Config |
-                Select-Object -First 1 -Expand FullName
-
-            if( -not $frConfig)
-            {
-                Write-Output "Unable to find FinancialReportingDeployer.exe.Config"
-                return
-            }
-            Write-Output "Found config: $frConfig"
-
-            [xml]$xml = get-content $frConfig
-            $nodeList = $xml.GetElementsByTagName("loadFromRemoteSources")
-
-            if($nodeList.Count -eq 0)
-            {
-                # Create the node 
-                $newNode = $xml.CreateNode("element","loadFromRemoteSources","")
-                $newNode.SetAttribute("enabled","true")
-                # Find the parent
-                $nodeList = $xml.GetElementsByTagName("runtime")
-                $runtimeNode = $nodeList[0]
-                $runtimeNode.AppendChild($newNode)
-
-                # Save doc
-                $xml.save($frConfig)
-                Write-Output "Inserted new node: "$newNode.Name
-            }
-            else
-            {
-                $node = $nodeList[0]
-                $attribute = $node.Attributes.GetNamedItem("enabled")
-                if($attribute.Value -eq "true")
-                {
-                    Write-Output "Node already exists: "$node.Name
-                }
-                else
-                {
-                    Write-Output "Node already exists but attribute is incorrect: " $attribute.Name "is" $attribute.Value
-                }
-            }
-        ```
+**Resolution:** Use TSG\_UpdateFRDeployerConfig.ps1. For more information, see [TSG_UpdateFRDeployerConfig.ps1](onprem-tsg-implementations.md#frdeployer).
 
 ### Unable to deploy Financial Reporting Service
 
@@ -1176,7 +1118,7 @@ If you try to apply a package that is missing dependent modules, package applica
 
 To confirm the issue and find the missing dependencies, in Event Viewer, open **Application and Services**, and then go to **Microsoft** \> **Dynamics** \> **AX-SetupModuleEvents** to view events that have missing modules. For example, one of the modules that is typically missing is ApplicationFoundationFormAdaptor.
 
-To fix this issue and successfully apply the package, either add dependent modules, or remove modules that require dependent modules. To add dependent modules, you must include the dependencies when you build the package. To remove modules, you can use ModelUtil.exe to delete a module. For more information, see [Export and import a model](../dev-tools/models-export-import.md).
+To fix this issue and successfully apply the package, either add dependent modules, or remove modules that require dependent modules. To add dependent modules, you must include the dependencies when you build the package. To remove modules, you can use ModelUtil.exe to delete a module. For more information, see [Export and import models](../dev-tools/models-export-import.md).
 
 ### Package deployment works in a one-box environment but not in the sandbox environment
 
@@ -1466,3 +1408,57 @@ This issue occurs because Reporting Services has a lock on a Microsoft Dynamics 
 
 > [!NOTE]
 > You must have service pack 2 installed, and no additional cumulative updates or hotfixes must be installed.
+
+## <a name="SysClassRunner"></a>SysClassRunner doesn't run successfully
+
+**Issue:** When you try to run SysClassRunner on Platform update 29 through Platform update 31, you get the following exception:
+
+```stacktrace 
+Microsoft.Dynamics.Ax.Xpp.ClrErrorException: TypeInitializationExeption ---> 
+System.TypeInitializationException: The type inititlaizer for 'Microsoft.Dynamics.Ax.Metadata.XppCompiler.CompilerTracer' threw an exception. ---> 
+System.TypeInitializationException: The type initializer for 'Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS' threw an exception. ---> 
+System.IO.FileLoedAxception: Could not load file or assembly 'Microsoft.Diagnostics.Tracing.TraceEvent, Version=2.0.43.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. 
+The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) at Microsoft.Dynamics.Ax.DesignTime.Telemetry.OneDS.cctor() 
+--- End of inner exception stack trace ---
+```
+
+**Reason:** There is a .dll mismatch between the runtime and the application.
+
+**Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
+
+## DBSync fails with PEAP APP version 10.0.9 Platform update 33
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+
+Error message from DBSync:
+ ```stacktrace
+ Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -metadatadir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -sqluser "" -sqlserver "" -sqldatabase "" -setupmode servicesync -syncmode fullall -onprem 
+Stack trace: Invalid attempt to call  running in CIL on the client.
+   at Microsoft.Dynamics.Ax.MSIL.Interop.throwException(Int32 ExceptionValue, interpret* ip)
+   at Microsoft.Dynamics.Ax.MSIL.Interop.ThrowCQLError(IL_CQL_ERR cqlErr, String p1)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrow(Exception exception)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, String elementName)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, Int32 typeId)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.ApplicationIdBridge.LoadTableById(ApplicationIdBridge* , Int32 id, ObjectIdDelegate* cb)
+   at cqlClass.callEx(cqlClass* , Char* , interpret* )
+   at Microsoft.Dynamics.Ax.MSIL.cqlClassIL.Call(IntPtr c, String methodName, Object[] parameters, Type[] types, Object[] varargs, Type[] varargsTypes)
+   at Microsoft.Dynamics.Ax.Xpp.XppObjectBase.Call(String methodName, Object[] parameters, Type[] types, Object[] varargs)
+   at Microsoft.Dynamics.Ax.Xpp.DictTable.Supportinheritance()
+   at Dynamics.AX.Application.SysDictTable.`getRootTable(Int32 _tabid) in xppSource://Source/ApplicationPlatform\AxClass_SysDictTable.xpp:line 1498
+   at Dynamics.AX.Application.SysDictTable.getRootTable(Int32 _tabid)
+   at Dynamics.AX.Application.SysDataBaseLog.`ConfigureSqlLogging() in xppSource://Source/ApplicationPlatform\AxTable_SysDataBaseLog.xpp:line 60
+   at Dynamics.AX.Application.SysDataBaseLog.ConfigureSqlLogging()
+   at SysDataBaseLog::ConfigureSqlLogging(Object[] , Boolean& )
+   at Microsoft.Dynamics.Ax.Xpp.ReflectionCallHelper.MakeStaticCall(Type type, String MethodName, Object[] parameters)
+ 
+DB sync failed.
+```
+
+**Reason:** This issue occurs because there is data in the SQL DatabaseLog table that conflicts with the metadata in the package.
+
+**Resolution:** Run the following query on AXDB to clean the DatabaseLog table and retry the deployment.
+
+```sql
+select * into databaselog_bak from databaselog
+truncate table databaselog
+```
+

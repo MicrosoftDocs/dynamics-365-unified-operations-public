@@ -8,7 +8,7 @@ manager: AnnBe
 ms.date: 10/1/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Product recommendations FAQ
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides information about processes and tools that you can use to troubleshoot issues that are related to [product recommendations](product-recommendations.md) or their results.
@@ -50,8 +50,8 @@ We recommend that you check these steps:
 1. **Make sure that product recommendations have been enabled in HQ.** For more information about how to enable this service, see [Enable product recommendations](enable-product-recommendations.md).
 1. **Make sure that key product properties are set.** For example, product assortments must be set to **Include**.
 1. **For newly assorted products, it might take up to 3 hours before the product will start appearing in the new list.**
-1. **If a product is still not appearing in Trending, Best selling, People also like, or Frequently bought together, then that product might not have enough transactions.** In this case, you can either wait for more transactions to occur, update the default recommendation list parameters, or use manual intervention to modify the recommendation product list results. For more information about recommendation parameters, see [Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md).
-1. **Make sure that the product meets the recommendation criteria for the list.** For more information about product recommendation parameters, see [Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+1. **If a product is still not appearing in Trending, Best selling, People also like, or Frequently bought together, then that product might not have enough transactions.** In this case, you can either wait for more transactions to occur, update the default recommendation list parameters, or use manual intervention to modify the recommendation product list results. For more information about recommendation parameters, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+1. **Make sure that the product meets the recommendation criteria for the list.** For more information about product recommendation parameters, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 ## How can I prevent poor recommendation results from being returned?
 
@@ -61,21 +61,21 @@ Additionally, products that have no transactions or few transactions typically d
 
 We recommend that you follow these steps:
 1. **Make sure that the product meets the recommendation criteria for that list.** For more information about product recommendation parameters, see Modify AI-ML-based product recommendation results.
-1. **If the product is new, consider modifying a recommendation list until the product has more transactions.** For more information about how to modify recommendation list results, see [Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+1. **If the product is new, consider modifying a recommendation list until the product has more transactions.** For more information about how to modify recommendation list results, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 
-- **Make sure that the product meets the recommendation criteria for that list.** For more information about product recommendation parameters, see [Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md).
-- **If the product is new, consider modifying a recommendation list until the product has more transactions**. For more information about how to modify recommendation list results, see [Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+- **Make sure that the product meets the recommendation criteria for that list.** For more information about product recommendation parameters, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+- **If the product is new, consider modifying a recommendation list until the product has more transactions**. For more information about how to modify recommendation list results, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 ## Can I remove a product but still see it in the store?
 
-You can adjust lists that are algorithmically generated if a business need arises. However, if a product is removed from a recommendation list, the product will remain discoverable in the store. For more information about how to modify product recommendation results, see [Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md).
+You can adjust lists that are algorithmically generated if a business need arises. However, if a product is removed from a recommendation list, the product will remain discoverable in the store. For more information about how to modify product recommendation results, see [Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md).
 
 If you must block an item from being discovered in the store, you must change the **Item assortments** value to **Exclude**.
 
 ## How do I add a list to an e-Commerce page?
 
-For information about how to add product recommendation pages to your e-Commerce website, see [Add a product recommendation list to a page](add-reco-list-to-page.md).
+For information about how to add product recommendation pages to your e-Commerce website, see [Add product recommendation lists to pages](add-reco-list-to-page.md).
 
 ## How do I enable recommendations on POS?
 
@@ -87,4 +87,4 @@ After enabling product recommendations, you will need to add the recommendations
 
 [Enable product recommendations](enable-product-recommendations.md)
 
-[Modify AI-ML-based product recommendation results](modify-product-recommendation-results.md)
+[Manage AI-ML-based product recommendation results](modify-product-recommendation-results.md)

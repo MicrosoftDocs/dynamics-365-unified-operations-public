@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create an order confirmation module
+title: Order confirmation module
 description: This topic covers order confirmation modules and describes how to create them in Microsoft Dynamics 365 Commerce.
 author: anupamar
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,9 +28,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
 ---
-# Create an order confirmation module
+# Order confirmation module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers order confirmation modules and describes how to create them in Microsoft Dynamics 365 Commerce.
@@ -67,3 +67,19 @@ When an order is placed during checkout, the order confirmation number and custo
 1. In the property pane of the order confirmation module, add the heading **Order confirmation**.
 1. Below the order confirmation module, add a recommendations module, and configure it so that it uses the **New** and **Best Selling** settings.
 1. Save and preview the page, check it in, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Container module](add-container-module.md)
+
+[Buy box module](add-buy-box.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

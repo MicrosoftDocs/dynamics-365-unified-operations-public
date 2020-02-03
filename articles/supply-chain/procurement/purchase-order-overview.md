@@ -36,8 +36,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [retail name](../includes/retail-name.md)]
-
 This article provides general information about purchase orders (POs) and links to additional articles that are related to the various stages that a PO goes through.
 
 A purchase order (PO) is a document that represents an agreement with a vendor to buy goods or services. The document also helps keep track of product receipts that are made toward the order and, later, the accounting of vendor invoices that the vendor bills toward the order.  
@@ -50,8 +48,8 @@ The **Purchase order preparation** and **Purchase order receipt and follow-up** 
 
 The following articles provide an overview of the various stages that a PO goes through:
 
--   [Purchase order creation](purchase-order-creation.md)
--   [Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+-   [Create purchase orders](purchase-order-creation.md)
+-   [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 -   [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 -   [Overview of vendor invoices](../../financials/accounts-payable/vendor-invoices-overview.md)
 
@@ -91,9 +89,9 @@ The **Approval status** field is used when a PO goes through a review process or
 Additional resources
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Create purchase orders](purchase-order-creation.md)
 
-[Purchase order approval and confirmation](purchase-order-approval-confirmation.md)
+[Approve and confirm purchase orders](purchase-order-approval-confirmation.md)
 
 [Product receipt against purchase orders](product-receipt-against-purchase-orders.md)
 

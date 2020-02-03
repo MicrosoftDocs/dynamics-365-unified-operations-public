@@ -47,7 +47,7 @@ Use the **External catalogs** line action to open a page that includes all exter
 
 Depending on your permissions, change the requester, buying legal entity, and receiving operating unit. A change in those values might change the list of external catalogs that are available to a requester. The external catalogs that are available depend on the current active purchasing policies for the buying legal entity or the receiving operating unit. These policies can allow or prevent access to specific procurement categories. Therefore, the list of external catalogs that are mapped to these procurement categories can be affected.
 
-For more information about policies, see [Purchasing policies](../procurement/purchase-policies.md).
+For more information about policies, see [Purchasing policies overview](../procurement/purchase-policies.md).
 
 - To find external catalogs for specific procurement categories, enter text in the catalog search field.
 - To add products from a vendor’s external catalog on the vendor’s website, click the external catalog. Then add products to the shopping cart, and check out. The shopping cart lines will be transferred to Microsoft Dynamics 365.

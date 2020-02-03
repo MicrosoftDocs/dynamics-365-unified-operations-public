@@ -42,6 +42,8 @@
         items:
         - name: Deployment options
           href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+        - name:  Comparison of cloud and on-premises features
+          href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
         - name: System requirements for cloud deployments
@@ -59,17 +61,17 @@
         - name: Finance and Operations apps in France
           href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
       - name: What's new or changed
-        items:
-        - name: What's new or changed home page
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-        - name: Preview features in Finance and Operations apps 10.0.6 (November 2019)
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations apps 10.0.5 (October 2019)
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations 10.0.4 (July 2019)
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Finance and Operations, Enterprise edition 7.3
-          href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+        items: 
+        - name: What's new or changed in Finance and Operations apps
+          href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+        - name: What's new or changed in Supply Chain Management
+          items:
+          - name: What's new or changed in Supply Chain Management home page
+            href: get-started/whats-new-home-page.md
+          - name: Supply Chain Management version 10.0.8 (February 2020)
+            href: get-started/whats-new-scm-10-0-8.md
+          - name: Supply Chain Management version 10.0.7 (January 2020)
+            href: get-started/whats-new-scm-10-0-7.md
         - name: Removed or deprecated features
           href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
         - name: AX 2012 features that were postponed
@@ -258,7 +260,7 @@
         - name: Create assets based on purchase orders
           href: asset-management/objects/create-objects-based-on-purchase-orders.md
         - name: Asset BOM
-          href: /asset-management/objects/object-bom.md
+          href: asset-management/objects/object-bom.md
         - name: Asset event history
           href: asset-management/objects/object-timeline.md
         - name: Asset view
@@ -565,6 +567,8 @@
           href: cost-management/inventory-close.md
         - name: Adjust on-hand inventory cost values
           href: cost-management/adjust-hand-inventory-cost-values.md
+        - name: Inventory aging report
+          href: cost-management/inventory-aging-report-storage.md
       - name: Manufacturing accounting
         items:
         - name: BOM calculations
@@ -584,7 +588,7 @@
         - name: Production order cost analysis
           href: cost-management/production-order-cost-analysis.md
         - name: Production order cost estimation
-          href: /cost-management/production-order-cost-estimation.md
+          href: cost-management/production-order-cost-estimation.md
         - name: View current WIP status on a production order
           href: cost-management/tasks/view-current-wip-status-production-order.md
         - name: Compare active, estimated, and realized costs on a production order
@@ -862,7 +866,13 @@
             - name: Download configurations from the ER repository of the RCS type
               href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
             - name: Import configurations from RCS
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+              href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Tutorials
+            items: 
+            - name: Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
+              href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Configure country context dependent ER model mappings
+              href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
         - name: Use Electronic reporting solutions in Finance and Operations
           items: 
           - name: Configure the framework
@@ -897,6 +907,8 @@
             href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
           - name: Business document management overview
             href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+          - name: Add new fields to a business document template in Microsoft Excel
+            href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
         - name: ER framework API
           items: 
           - name: Extend the list of Electronic reporting functions
@@ -1045,6 +1057,22 @@
       items:
       - name: Master planning home page
         href: master-planning/master-planning-home-page.md
+      - name: Planning Optimization
+        items:
+        - name: Planning Optimization overview
+          href: master-planning/planning-optimization/planning-optimization-overview.md 
+        - name: Get started with Planning Optimization
+          href: master-planning/planning-optimization/get-started.md
+        - name: Planning Optimization fit analysis
+          href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+        - name: Apply filters to a plan
+          href: master-planning/planning-optimization/plan-filters.md
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Auto-firming with Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+        - name: Cancel a planning job
+          href: master-planning/planning-optimization/cancel-planning-job.md
       - name: Master plans
         items:
         - name: Master plans overview
@@ -1067,6 +1095,8 @@
           href: master-planning/safety-stock-replenishment.md
         - name: Delays
           href: master-planning/delays.md
+        - name: Cancel a master planning job
+          href: master-planning/cancel-master-planning-job.md
         - name: Use tracing for explosion
           href: master-planning/trace-explosion.md
         - name: Action messages
@@ -1483,6 +1513,8 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
+        - name: Use data entities
+          href: pim/data-entities.md
         - name: Product lifecycle state
           items:
           - name: Product lifecycle state overview
@@ -1687,8 +1719,6 @@
             href: production-control/register-material-consumption-hand-held-device.md
           - name: Control raw material consumption by using flushing principles
             href: production-control/flushing-principles.md
-          - name: Cross-docking from production orders to outbound docks
-            href: production-control/cross-docking-opportunities.md
           - name: Set the production output location for finished goods
             href: production-control/production-output-location.md
           - name: Report BOMs as finished
@@ -2271,6 +2301,10 @@
           href: warehousing/mobile-barcode-support.md
         - name: Set up warehouse for transfer orders
           href: warehousing/transfer-orders-warehouse.md
+      - name: Reservations in warehouse management
+        items:
+        - name: Flexible warehouse-level dimension reservation policy
+          href: warehousing/flexible-warehouse-level-dimension-reservation.md
       - name: Warehouse work policies
         items:
         - name: Warehouse work policies overview
@@ -2285,6 +2319,12 @@
           href: warehousing/manage-warehouse-workers.md
         - name: Deferred processing of warehouse work
           href: warehousing/deferred-put.md
+      - name: Cross-docking
+        items:
+        - name: Cross-docking from production orders to outbound docks
+          href: production-control/cross-docking-opportunities.md
+        - name: Auto-release shipment for cross-docking 
+          href: warehousing/auto-release-shipment-for-cross-docking.md
       - name: Partial release and partial shipment
         items:
         - name: Partial shipment of a transport load
@@ -2311,6 +2351,12 @@
           href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
         - name: Set up short picking item reallocation
           href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+        - name: Cancel warehouse work for exception handling
+          href: warehousing/cancel-warehouse-work.md
+        - name: System-directed cluster picking
+          href: warehousing/system-directed-cluster-pick.md
+        - name: Pick line grouping
+          href: warehousing/pick-line-grouping.md 
       - name: Inventory counting
         items:
         - name: Reason codes for inventory counting
@@ -2392,6 +2438,8 @@
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
     href: ../finance/index.md
+  - name: Dynamics 365 Commerce
+    href: ../commerce/index.md
   - name: Dynamics 365 Retail
-    href: ../retail/index.md
+    href: ../commerce/index.md
     

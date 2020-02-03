@@ -92,7 +92,7 @@ Use the **Fixed asset posting profiles** page to set up a posting profile for re
 
 ## Depreciate fixed assets with reduction entry posted
 
-See [Depreciate fixed assets with reduction entry posted](./tasks/depreciation-fixed-assets-reduction-entry-posted.md).
+See [Depreciation of fixed assets with reduction entry posted](./tasks/depreciation-fixed-assets-reduction-entry-posted.md).
 
 ## Create and assign a reduction entry document for a government grant subsidy
 

@@ -40,14 +40,14 @@ You can enter vendor invoices manually or receive them electronically through a 
 
 **Business processes**
 
-[![Business process](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram of business processes](./media/AP-process.PNG)](./media/AP-process.PNG)
 
 ## Set up Accounts payable
 
 Set up vendor groups, vendors, posting profiles, various payment options, and parameters regarding vendors, charges, 
 deliveries and destinations, promissory notes, and other types of Accounts payable information. 
 
-[Configure Accounts payable](accounts-payable-overview.md)
+[Configure Accounts payable overview](accounts-payable-overview.md)
 
 [Accounting distributions and subledger journal entries for vendor invoices](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
@@ -57,17 +57,17 @@ deliveries and destinations, promissory notes, and other types of Accounts payab
 
 Use Accounts payable to track invoices and outgoing expenditures to vendors.
 
-[Accounts payable invoice matching](accounts-payable-invoice-matching.md)
+[Accounts payable invoice matching overview](accounts-payable-invoice-matching.md)
 
 [Vendor posting profiles](vendor-posting-profiles.md)
 
-[Set up accounts payable invoice matching validation](tasks/set-up-accounts-payable-invoice-matching-validation.md)
+[Set up Accounts payable invoice matching validation](tasks/set-up-accounts-payable-invoice-matching-validation.md)
 
 [Three-way matching policies](three-way-matching-policies.md)
 
 [Invoice matching and intercompany purchase orders](invoice-matching-intercompany-purchase-orders.md)
 
-[Resolve discrepancies during invoice totals matching](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Resolve discrepancies during invoice totals matching overview](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Default offset accounts for vendor invoice journals and invoice approval journals](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -100,11 +100,11 @@ Payment types are optional, but they are useful when you validate electronic pay
 
 [Take a cash discount outside the cash discount period](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Electronic reporting for vendor checks](electronic-reporting-sample-vendor-checks.md)
+[Electronic reporting sample vendor checks](electronic-reporting-sample-vendor-checks.md)
 
 [Reverse a vendor payment](reverse-vendor-payment.md)
 
-[Prepayment invoices and prepayments overview](prepayments-invoices-vs-prepayments.md)
+[Prepayment invoices vs. prepayments](prepayments-invoices-vs-prepayments.md)
 
 [Centralized payments for Accounts payable](centralized-payments-accounts-payable.md)
 
@@ -114,13 +114,13 @@ The following topics provide information about settlements. Settlement is the pr
 
 [Configure settlement](../cash-bank-management/configure-settlement.md)
 
-[Settle a partial vendor payment before the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Settle a partial vendor payment before the discount date with a final payment after the discount date](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Settle a partial vendor payment that has discounts on vendor credit notes](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Settle a partial vendor payment that has multiple discount periods](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Settle a partial vendor payment or final payment before discount](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Settle a partial vendor payment and the final payment in full before the discount date](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Single voucher with multiple customer or vendor records](single-voucher-multiple-customer-vendor-records.md)
 
@@ -130,7 +130,7 @@ The following topics provide information about settlements. Settlement is the pr
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 Release Notes](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
+Go to the [Microsoft Dynamics 365 release plans](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned. 
 
 #### Blogs
 

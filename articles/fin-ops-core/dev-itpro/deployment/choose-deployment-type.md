@@ -39,7 +39,7 @@ You can deploy Finance and Operations apps in the cloud or on-premises. Cloud de
 
 The following table provides a comparison of the capabilities provided by the two deployment options.
 
-[![Deployment options table](./media/deployment-options.PNG)](./media/deployment-options.PNG)
+[![Deployment options table](./media/deployment-options.png)](./media/deployment-options.png)
 
 
 ## Why cloud
@@ -61,7 +61,7 @@ For customers who choose to run Finance and Operations apps in their own data ce
 - Stand up sandbox environments.
 - Manage their infrastructure, including scheduling operating system updates.
 
-The additional costs to deploy and manage these capabilities might lead to higher deployment costs and a greater Total Cost of Ownership (TCO). Tools for deploying the Finance and Operations apps and updates will be available to partners and customers via Lifecycle Services. Unlike the cloud deployment option, Advanced Analytics and Azure Machine Learning services are not included in the on-premises deployment option. 
+The additional costs to deploy and manage these capabilities might lead to higher deployment costs and a greater Total Cost of Ownership (TCO). Tools for deploying the Finance and Operations apps and updates will be available to partners and customers via Lifecycle Services. Unlike the cloud deployment option, Advanced Analytics and Azure Machine Learning are not included in the on-premises deployment option. 
 
 There are several features that are not yet enabled in on-premises option. These features will be available in future updates. 
 For more information, see [Features not implemented in on-premises deployments](../../fin-ops/get-started/features-not-implemented-on-prem.md).

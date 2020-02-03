@@ -77,7 +77,7 @@ Dynamics AX clients may crash upon first login after a restart or after a period
 Kernels are cumulative and the most recent kernel can be found here: <https://blogs.msdn.microsoft.com/axsupport/2012/03/29/overview-of-microsoft-dynamics-ax-build-numbers/>
 
 ## How do I monitor for storage account throttling?
-To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) topic for information about leveraging multiple Azure Connectors and/or LCS projects.
+To monitor storage account throttling, see [How to Monitor for Storage Account Throttling](https://blogs.msdn.microsoft.com/mast/2014/08/02/how-to-monitor-for-storage-account-throttling/). Alerts and notifications can be utilized to notify you when storage is being throttled. If this is happening, see the [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) topic for information about leveraging multiple Azure Connectors and/or LCS projects.
 
 ## How do I contact Support?
 If you need to contact Microsoft with licensing or technical questions, you must first determine which support team to contact. Use the information below to best identify which support team to contact.
@@ -98,7 +98,7 @@ To obtain support for Azure, use the resources listed in the following table.
 </tr>
 <tr class="even">
 <td>Get assistance with billing-related questions</td>
-<td>Go to the <a href="http://azure.microsoft.com/support/understand-your-bill/">Understand your bill</a> page to get an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period.</td>
+<td>Go to the <a href="https://azure.microsoft.com/support/understand-your-bill/">Understand your bill</a> page to get an overview of the Azure billing process, links to sample invoices, and information about how to download daily usage data for the current billing period.</td>
 </tr>
 <tr class="odd">
 <td>Ask the community</td>
@@ -147,7 +147,7 @@ To obtain support for Microsoft Dynamics AX, use the resources listed in the fol
 </tr>
 <tr class="odd">
 <td>Ask the community</td>
-<td>Go to the <a href="http://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX forum</a> page to get help with your questions from the Microsoft Dynamics AX community.</td>
+<td>Go to the <a href="https://go.microsoft.com/fwlink/?LinkId=221068">Microsoft Dynamics AX forum</a> page to get help with your questions from the Microsoft Dynamics AX community.</td>
 </tr>
 <tr class="even">
 <td>Use the Cloud-powered support tool</td>

@@ -34,12 +34,12 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.
 
 > [!NOTE]
-> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. For more information, see [Setup for maintenance requests](../setup-for-maintenance-requests/requests.md).
+> If you want to use inbound and outbound lifecycle states to manage assets that are coming in and being returned, you must set up maintenance request lifecycle states and lifecycle models to support these actions. For more information, see [Maintenance requests](../setup-for-maintenance-requests/requests.md).
 
 The setup of Asset Management determines whether you can work with inbound and outbound assets.
 
@@ -50,7 +50,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 3. Select **Update maintenance request state**.
 4. Select **Inbound** (or another lifecycle state that you've created for inbound assets), and then select **OK**.
 
-![Figure 1](media/07-manage-maintenance-requests.png)
+![Register assets as inbound](media/07-manage-maintenance-requests.png)
 
 ## Register inbound assets as received
 
@@ -59,7 +59,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 3. Select **Receive assets**.
 4. In the **Received** field, enter the date and time. Then select **OK**. The record is removed from the **Inbound assets** list page.
 
-![Figure 2](media/08-manage-maintenance-requests.png)
+![Register inbound assets as received](media/08-manage-maintenance-requests.png)
 
 ## Register assets as outbound
 

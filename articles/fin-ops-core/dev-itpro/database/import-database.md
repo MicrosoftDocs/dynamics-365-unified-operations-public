@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import a database
-description: This topic explains how to import a database for Finance and Operations applications.
+description: This topic explains how to import a database for Finance and Operations apps.
 author: LaneSwenka
 manager: AnnBe
 ms.date: 01/29/2019
@@ -23,7 +23,7 @@ ms.search.scope: Operations
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: laneswenka
-ms.search.validFrom: 2019-01-31
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 8.1.3
 
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-You can use Microsoft Dynamics Lifecycle Services (LCS) to import a database into a sandbox user acceptance testing (UAT) environment.
+You can use Microsoft Dynamics Lifecycle Services (LCS) to import a golden configuration database into a sandbox user acceptance testing (UAT) environment.
 
 ## Self-service import database
 
@@ -42,12 +42,11 @@ You can use Microsoft Dynamics Lifecycle Services (LCS) to import a database int
 
 If the import operation isn't successful, you can do a *rollback*. If you select the **Rollback** option after the initial failure of the operation, your target sandbox environment is restored to the state that it was in before the import began. The rollback operation is made available by the Microsoft Azure SQL Database point-in-time restore capability for restoring the database. Rollback is often required if a customization that is present in the target sandbox can't complete a database synchronization with the newly imported data.
 
-To determine the root cause of the failure, download the runbook logs by using the available buttons before you start the rollback operation.
-
 ### Data elements that require attention after import
 
 Specific activities must be completed when you import a database backup into a sandbox UAT environment. Here are some examples:
 
+* Make sure that the source database contains only a single record in the Partitions table.
 * Make sure that email capabilities are correctly reconfigured or turned off, according to your requirements.
 * Make sure that integration settings are turned on or off, according to your requirements.
 * Make sure that Application Object Server (AOS) servers are added back to required batch groups.
@@ -61,12 +60,6 @@ The system admin account in the target environment (**Admin** user ID) is reset 
 
 If you've used the Admin User Provisioning Tool on your environment to change the web.config file, the value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox, redeploy, and select another account. You can then do another database refresh action to restore the data.
 
-## Steps to complete after a database import for environments that use Retail functionality
+## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]
-
-## Known issues
-
-### Import is denied for environments that run Platform update 3 or earlier
-
-The import database process can't be completed if the environment is running Platform update 3 or earlier. See the list of currently supported platform updates.

@@ -40,12 +40,12 @@ For more information about the Prospect to cash integration, watch the short You
 
 In the current version, the Prospect to cash solution provides the following types of direct synchronization:
 
-- [Maintain accounts in Sales and sync them directly from Sales to Supply Chain Management](accounts-template-mapping-direct.md)
-- [Maintain products in Supply Chain Management and sync them directly to Sales](products-template-mapping-direct.md)
-- [Maintain contacts in Sales and sync them directly to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
-- [Synchronize sales quotation directly from Sales to Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
-- [Synchronize sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-- [Synchronize sales invoice directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
+- [Synchronize accounts directly from Sales to customers in Supply Chain Management](accounts-template-mapping-direct.md)
+- [Synchronize products directly from Supply Chain Management to products in Sales](products-template-mapping-direct.md)
+- [Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management](contacts-template-mapping-direct.md)
+- [Synchronize sales quotation headers and lines directly from Sales to Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
+- [Synchronization of sales orders directly between Sales and Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+- [Synchronize sales invoice headers and lines directly from Supply Chain Management to Sales](sales-invoice-template-mapping-direct.md)
 
 ## System requirements for Supply Chain Management
 Prospect to cash integration is supported on the following versions:

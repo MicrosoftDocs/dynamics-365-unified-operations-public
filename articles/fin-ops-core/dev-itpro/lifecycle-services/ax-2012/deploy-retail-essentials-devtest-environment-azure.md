@@ -43,7 +43,7 @@ Before you complete the procedures in this topic, make sure that the following p
 
 | Category       | Prerequisite                                                                                                                                                    |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Required tasks | [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md) |
+| Required tasks | [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md) |
 
 ## 1. Log on to Lifecycle Services
 Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative workspace that customers and partners can use to manage Dynamics AX projects. You’ll use this website to deploy Dynamics AX on Azure. Lifecycle Services is available to customers and partners as part of their support plans. You can access it with your CustomerSource or PartnerSource credentials, for details see [Log on to Lifecycle Services](https://lcs.dynamics.com/en/).
@@ -106,14 +106,14 @@ Complete the following procedure to deploy a Retail essentials dev/test environm
    <tr class="odd">
    <td>Create a new domain in Azure for the environment</td>
    <td><ol>
-   <li>Click <strong><span class="label">New domain</span></strong>.</li>
+   <li>Click <strong>New domain</strong>.</li>
    <li>Enter a name for the domain. By default, the domain is named <em>contoso.com</em>.</li>
    </ol></td>
    </tr>
    <tr class="even">
    <td>Add the environment to an existing domain in Azure</td>
    <td><ol>
-   <li>Click <strong><span class="label">Existing domain</span></strong>.</li>
+   <li>Click <strong>Existing domain</strong>.</li>
    <li>Enter the name of the domain. For example, <em>contoso.com</em>.</li>
    </ol></td>
    </tr>
@@ -142,23 +142,23 @@ Complete the following procedure to deploy a Retail essentials dev/test environm
     <tr class="odd">
     <td>Create a new virtual network in Azure for the environment</td>
     <td><ol>
-    <li>Click <strong><span class="label">New virtual network</span></strong>.</li>
+    <li>Click <strong>New virtual network</strong>.</li>
     <li>Enter a name for the virtual network.</li>
     </ol></td>
     </tr>
     <tr class="even">
     <td>Add the environment to an existing virtual network in Azure</td>
     <td><ol>
-    <li>Click <strong><span class="label">Existing virtual network</span></strong>.</li>
+    <li>Click <strong>Existing virtual network</strong>.</li>
     <li>Select the name of the existing virtual network that you want to use.</li>
-    <li>The <strong><span class="label">Address space</span></strong> field will automatically display the appropriate value. Select the provided value.</li>
-    <li>The <span class="label"><strong>Application subnet name</strong></span> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong><span class="label"><em>APPNET</em></span></strong> value.</li>
+    <li>The <strong>Address space</strong> field will automatically display the appropriate value. Select the provided value.</li>
+    <li>The <strong>Application subnet name</strong> field will display available options. If you are deploying to an AD that was previously deployed through Lifecycle Services, select the <strong>APPNET</strong> value.</li>
     <li>The Active Directory subnet must be entered and match the Active Directory subnet IP/Range found in the Azure management portal for the AD you want to target.
     <ol>
     <li>Log on to the <a href="https://ms.portal.azure.com/">Azure portal</a>.</li>
-    <li>In the navigation pane on the left, click <strong><span class="label">Virtual networks</span></strong>.</li>
+    <li>In the navigation pane on the left, click <strong>Virtual networks</strong>.</li>
     <li>Click the name of the virtual network that you’re going to use.</li>
-    <li>Click <strong><span class="label">Configure</span></strong>. Details about the virtual network are listed on the page.</li>
+    <li>Click <strong>Configure</strong>. Details about the virtual network are listed on the page.</li>
     </ol></li>
     </ol></td>
     </tr>
@@ -167,8 +167,8 @@ Complete the following procedure to deploy a Retail essentials dev/test environm
 
 11. Click **Done**. The **Deploy** **environment** panel is redisplayed.
 12. The number and size of each virtual machine that will be deployed is listed. Change the number and size of the virtual machines, as needed.
-    -   For information about the software installed on each virtual machine in this environment, see [Plan your Microsoft Dynamics AX 2012 R3 deployment on Azure](plan-2012-r3-deployment-azure.md).
-    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](http://azure.microsoft.com/pricing/details/virtual-machines/).
+    -   For information about the software installed on each virtual machine in this environment, see [Plan AX 2012 R3 deployments on Azure](plan-2012-r3-deployment-azure.md).
+    -   For sizing and pricing details about virtual machines, see [Virtual machines pricing details](https://azure.microsoft.com/pricing/details/virtual-machines/).
 
 13. Click **Software License Terms** to review the licensing terms and conditions. Then select the check box to indicate that you agree to the terms.
 14. Click **Next**.
@@ -179,7 +179,7 @@ Now that the Retail essentials environment has been deployed on Azure, you must 
 
 ### Log on to the Retails essentials virtual machine
 
-Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage your Microsoft Dynamics AX 2012 R3 deployment on Azure](manage-2012-r3-deployment-azure.md) topic.
+Log on to the ESSEN-&lt;GUID&gt; virtual machine using the &lt;DomainName&gt;DynamicsInstallUser account. For instructions, see the “How do I log on to a virtual machine?” section of the [Manage AX 2012 R3 deployments on Azure](manage-2012-r3-deployment-azure.md) topic.
 
 ### Compile Dynamics AX 2012 R3
 
@@ -194,11 +194,12 @@ Open the Dynamics AX 2012 R3 client and complete the initialization checklists. 
 If you want sample data installed in your environment, complete the following steps.
 
 1.  Go to the following location:F:TestTransferTool
-2.  Install the Test Data Tool. For instructions, see [Install the Test Data Transfer Tool (beta) for Microsoft Dynamics AX](install-test-data-transfer-tool-beta.md).
+2.  Install the Test Data Tool. For instructions, see [Install the Test Data Transfer Tool (beta)](install-test-data-transfer-tool-beta.md).
 3.  Open a command prompt and navigate to the following location: C:\Program Files (x86)\Microsoft Dynamics AX 2012 R3 Test Data Transfer Tool (Beta)
 4.  Run the following command: dp.exe import F:DemoData MicrosoftDynamicsAx
 
-**Note:** The sample data includes trial license keys for Dynamics AX. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028).
+> [!NOTE]
+> The sample data includes trial license keys for Dynamics AX. If you choose not to install the sample data, you can download trial license keys—for development or testing purposes—from [CustomerSource](https://mbs.microsoft.com/downloads/customer/AX/AXDemoTools/MicrosoftDynamicsAX2012R2v4DemoLicense.zip) or [MSDN](https://msdn.microsoft.com/subscriptions/securedownloads/hh442898#FileId=57028).
 
 ### Set up Retail essentials
 

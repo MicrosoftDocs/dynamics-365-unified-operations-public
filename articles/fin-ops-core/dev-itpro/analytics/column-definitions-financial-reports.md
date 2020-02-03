@@ -5,7 +5,7 @@ title: Column definitions in financial reports
 description: This article provides information about column definitions. A column definition is a report component, or building block, that defines the contents of columns on a report. Like row definitions, basic column definitions can be used on multiple reports.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -175,7 +175,7 @@ You can use the **Column Header** dialog box to add, modify, and delete the head
 
 ### Create an automatically generated header
 
-Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC** and **FD** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period @FiscalPeriod-@FiscalYear from @StartDate to @EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.
+Report designer can automatically generate column headers, based on autotext codes. Autotext codes are variables that are updated every time that a report is generated. Any column header can include these codes to specify report information that can vary, such as dates or period numbers. Therefore, you can use one column definition for multiple report definitions, time periods, and reporting trees. Because autotext codes rely on the calendar information from the detail rows of the column definition, they are supported only for **CALC** and **FD** columns. The way that an autotext code appears in the column header cell affects how that information appears on the report. In the **Column Header** dialog box, the autotext codes appear in mixed case. Therefore, the text appears in mixed case on the report. For example, in a standard calendar year, **\@CalMonthLong** resolves month **7** to **July**. If the name of the month should be uppercase (for example **JULY**), enter the autotext code in uppercase characters in the **Column header text** field. For example, enter **\@CALMONTHLONG**. You can mix codes and text. For example, you enter the following header text: **Period \@FiscalPeriod-\@FiscalYear from \@StartDate to \@EndDate**. The report heading that is generated resembles the following text: **Period 1-02 from 01/01/02 to 01/31/02**.
 
 > [!NOTE]
 > The format of some of the text, such as the long date, depends on your regional settings on the server. To change these settings, click the **Start** button, click **Control Panel**, and then click **Region and Language**. The following table lists the available autotext options for column headers.
@@ -604,6 +604,6 @@ You can divide the amount in a column by a specified number of periods. For exam
 
 ## Additional resources
 
-[Row definitions in financial reporting](row-definitions-financial-reporting.md)
+[Row definitions in financial report designer](row-definitions-financial-reporting.md)
 
 [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md)

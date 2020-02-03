@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a buy box to a page
+title: Buy box module
 description: This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a buy box to a page
+# Buy box module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -76,9 +76,9 @@ Buy box modules have three settings that can be configured:
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
 - **Inventory buffer** – Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. Therefore, a buffer can be defined for inventory. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, so that the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
-## Retail server interaction
+## Commerce Scale Unit interaction
 
-The buy box module retrieves product information using Retail Server APIs. The product ID from the product details page is used to retrieve all information.
+The buy box module retrieves product information using Commerce Scale Unit APIs. The product ID from the product details page is used to retrieve all information.
 
 ## Add a buy box module to a page
 
@@ -98,3 +98,19 @@ To add a buy box module to a new page and set the required properties, follow th
 1. In the **Main** slot of the new page, add a buy box fragment.
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
 1. Check in the page, and publish it. A buy box should appear on the product details page.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Container module](add-container-module.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

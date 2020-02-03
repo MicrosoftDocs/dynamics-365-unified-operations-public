@@ -82,10 +82,10 @@ However, if the invoice expenses are included in the order line that corresponds
 1.  Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders** and create a new sales order.
 2.  Enter information about the sales order.
 3.  Click the **Lines** tab in the lower pane. 
-4.  In the **Item number** field, select the item number, which is related to the fixed asset group. On the **Line detail > Fixed asset** tab, enter the fixed assets (Fixed asset (Russia)). If you select an item with the Service product type in the sales line you can enter several fixed assets. In this case, the quantity of fixed assets should be equal to the quantity that is specified on the sales line. You can also enter a fixed asset on the sales line if you select the item with the Item product type. To create a new item, see [Create released product](../../supply-chain/pim/tasks/create-released-product-single-company.md).
+4.  In the **Item number** field, select the item number, which is related to the fixed asset group. On the **Line detail > Fixed asset** tab, enter the fixed assets (Fixed asset (Russia)). If you select an item with the Service product type in the sales line you can enter several fixed assets. In this case, the quantity of fixed assets should be equal to the quantity that is specified on the sales line. You can also enter a fixed asset on the sales line if you select the item with the Item product type. 
 
     > [!NOTE]
-    > To create a new item, see [Create released product](../../supply-chain/pim/tasks/create-released-product-single-company.md).
+    > To create a new item, see [Create a released product for a single company](../../supply-chain/pim/tasks/create-released-product-single-company.md).
     >
     > Click **Inventory management** &gt; **Setup** &gt; **Inventory** &gt; **Item model groups**. If the **Physical negative inventory** check box is selected, then you can sell an item that is a fixed asset type without entering an inventory item. If not, you can sell an inventory asset that has a **Purchased** status.
 
@@ -95,7 +95,7 @@ However, if the invoice expenses are included in the order line that corresponds
 ## Create a free text invoice for a fixed asset
 
 1.  Click **Accounts receivable** \> **Common** \> **Free text invoices** \> **All free text invoices**.
-2.  Press CTRL+N to create a new invoice. For more information, see [Create a free text invoice](../accounts-receivable/create-free-text-invoice-template-new.md).
+2.  Press CTRL+N to create a new invoice. For more information, see [Create a free text invoice template](../accounts-receivable/create-free-text-invoice-template-new.md).
 3.  In the **Customer account** field, select a customer account.
 4.  In the **Date** field, enter an invoice date.
 5.  In the **Currency** field, select an invoice currency.

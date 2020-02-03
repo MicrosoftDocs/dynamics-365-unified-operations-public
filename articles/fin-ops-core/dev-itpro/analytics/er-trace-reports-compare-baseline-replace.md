@@ -77,9 +77,6 @@ The baseline has been added for the selected **Format to learn ER baselines** fo
 5. In the **Enter Id** field, enter **1**.
 6. Set the **Make baseline files** option to **Yes**.
 7. Select **OK**.
-
-    ![Electronic report parameters dialog box](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Screenshot of the Electronic report parameters dialog box")
-
 8. Select **Baselines**.
 
     ![Electronic reporting format baselines page](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot of the Electronic reporting format baselines page")
@@ -146,9 +143,6 @@ To complete the steps in this example, you must first complete the steps in the 
 
 1. On the **Configurations** page, on the **Replacements** FastTab, select **Select components**.
 2. In the format components tree, expand **Output**, expand **Output\\Document**, and then select the check box for **Output\\Document\\ProcessingDateTime**.
-
-    ![Select Components dialog box](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Screenshot of the Select Components dialog box")
-
 3. Select **OK**.
 
 ![Electronic reporting format baselines page](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot of the Electronic reporting format baselines page")
@@ -168,19 +162,14 @@ By setting specific ER parameters, you can suppress notifications that warn abou
 1. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, select **User parameters**.
 2. Set the **Suppress baseline warnings** option to **Yes**, and then select **OK**.
 
-![User parameters dialog box](media/GER-BaselineSample-ERUserParameters1.png "Screenshot of the User parameters dialog box")
-
 ### Review the generated baseline file
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. Select **Baselines**.
 3. Select **Attachments**.
-
-    ![Attachments page](media/GER-BaselineSample-AttachedBaselineFile.PNG "Screenshot of the Attachments page")
-
     > [!NOTE]
     > The generated file contains the processing date and time text (**"#"**) from the binding that was configured in the added baseline rule, not from the format's binding.
-
+    
 4. Close the **Attachments** page.
 
 ### Run the designed ER format and review the log to analyze the results
@@ -224,4 +213,4 @@ To import baseline settings from an XML file that is stored on the Microsoft Sha
 ## Additional resources
 
 - [Trace generated report results and compare them with baseline values](er-trace-reports-compare-baseline.md)
-- [Task recorder](../user-interface/task-recorder.md)
+- [Task recorder resources](../user-interface/task-recorder.md)

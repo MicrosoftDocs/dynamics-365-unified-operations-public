@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Maintenance request types are used to categorize maintenance requests. For example, you might have maintenance request types that are related to preventive maintenance and corrective maintenance. Or you might have a special maintenance request type that is used to manage repair of assets (depot repair).
 
@@ -49,4 +49,4 @@ A maintenance request type defines the affiliation with a maintenance request li
 
 The following illustration shows an example of the **Maintenance request types** page.
 
-![Figure 1](media/07-setup-for-requests.png)
+![Maintenance request types page](media/07-setup-for-requests.png)

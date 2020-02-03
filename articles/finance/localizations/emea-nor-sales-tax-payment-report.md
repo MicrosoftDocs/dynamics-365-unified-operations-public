@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sales tax report for Norway
+title: VAT statement for Norway
 description: This topic explains how to set up and generate the VAT statement for legal entities that have a primary address in Norway. 
 author: epodkolz
 ms.author: epodkolz
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes country-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting](emea-vat-reporting.md).
+This topic includes country-specific information about how to set up the value-added tax (VAT) statement for legal entities that have a primary address in Norway. For more information about general VAT reporting, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for a specific tax authority, you must set up the report layout for the sales tax authorities.

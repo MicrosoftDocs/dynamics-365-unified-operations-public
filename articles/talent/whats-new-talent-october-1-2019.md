@@ -29,9 +29,7 @@ ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Talent
 
 ---
-# What's new or changed in Dynamics 365 Talent (October 01, 2019)
-
-[!include [banner](includes/banner.md)]
+# What's new or changed in Dynamics 365 Talent (October 1, 2019)
 
 This topic describes features that are either new or changed in Dynamics 365 Talent.
 

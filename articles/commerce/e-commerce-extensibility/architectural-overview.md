@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -69,3 +69,9 @@ Here is a typical architectural flow when a customer requests a page from an onl
 ![Partner application architectural overview](media/architectural-overview-2.png)
 
 The compiled partner package contains both the SDK and a starter kit. The SDK isn't extensible, but starter kit modules can be cloned and completely customized. Partner customizations (modules, data actions, and themes) can be packaged by using a command-line interface (CLI) command. The package can then be uploaded by using Microsoft Dynamics Lifecycle Services (LCS). In this way, the customizations are incorporated into the partner's e-Commerce site.
+
+## Additional resources
+
+[e-Commerce components](ecommerce-components.md)
+
+[CLI command reference](cli-command-reference.md)

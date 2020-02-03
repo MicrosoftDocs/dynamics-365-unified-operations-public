@@ -56,8 +56,7 @@ ms.dyn365.ops.version: 10.0.4
 
 6. Select **OK**.
 
-    ![Tax information dialog box](media/Annotation-2019-05-15-160543.png)
-
+   
 7. On the Action Pane, on the **Purchase Requisition** tab, in the **Summary** group, select **Tax document** to review the calculated taxes.
 
     What you see might resemble the following example:

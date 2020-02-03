@@ -34,9 +34,11 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-This topic explains how to schedule work orders in Asset Management. The required number of hours for a work order is defined by the sum of forecasted hours on the work order jobs minus posted hours. If more time is required, the forecast on the work order must be adjusted accordingly. In **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**, you can view or edit forecasts on a work order by selecting the work order and clicking **Forecast** on the **Work order** tab. When work orders have been created and estimated, next step is to allocate the required maintenance workers and tools to complete the work orders.
+This topic explains how to schedule work orders in Asset Management. 
+
+The required number of hours for a work order is defined by the sum of forecasted hours minus posted hours. If more time is required, the forecast must be adjusted accordingly. In **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**, you can view or edit forecasts on a work order by selecting the work order and clicking **Forecast** on the **Work order** tab. When work orders have been created and estimated, the next step complete the work orders is to allocate the required maintenance workers and tools.
 
 Only work orders with a work order lifecycle state that allows scheduling can be scheduled. Allow scheduling is set up in **Asset management** > **Setup** > **Work orders** > **Lifecycle states** > **General** FastTab > **Allow scheduling** toggle button.
 
@@ -48,8 +50,8 @@ Only work orders with a work order lifecycle state that allows scheduling can be
 
 4. In the **Schedule work orders** dialog, you can add selections regarding expected start date and service level, if required. If the scheduling process should observe capacity limitations regarding resources already scheduled for other jobs, make sure that the **Asset**, **Tool**, and **Worker** toggle buttons are set to "Yes".
 
->[!NOTE]
->If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
+    [!NOTE]
+    If you set the **Asset**, **Tool**, and **Worker** toggle buttons to "No", existing reservations will be ignored. In the Infolog, a list of overlapping work order schedules will be shown, and you can click on the messages to open a work order and reschedule, if required.
 
 5. To see detailed information about the scheduling process, select "Yes" on the **Verbose** toggle button. This means that detailed information about the calculated scores on the work orders and maintenance workers will be shown in the Infolog.
 
@@ -115,9 +117,11 @@ The rating scores relating to calculating which maintenance workers should work 
 | Worker's start date               | For every date that the scheduled start date is later than the expected start date, the score is subtracted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 >[!NOTE]
->If a score is set to "0", that score is not calculated. This is useful if, for example, you do not want to include responsible worker in your scheduling.
+>If a score is set to "0", that score is not calculated. This is useful if, for example, you do not want to include a responsible worker in your scheduling.
 
 ## Competencies used in work order scheduling
 
-Skills and certificate requirements can be set up on maintenance job types (**Asset management** > **Setup** > **Jobs** > **Maintenance job types**) and maintenance job trades (**sset management** > **Setup** > **Jobs** > **Maintenance job trade**). Maintenance job types and maintenance job trades are selected on work order jobs. If skills or certificates have been selected on a maintenance job type or maintenance job trade, and that maintenance job type or maintenance job trade is used on a work order job, only maintenance workers with matching skills and certificates are scheduled to work on the work order.
+Skills and certificate requirements can be set up on maintenance job types (**Asset management** > **Setup** > **Jobs** > **Maintenance job types**) and maintenance job trades (**Asset management** > **Setup** > **Jobs** > **Maintenance job trade**). 
+
+Maintenance job types and maintenance job trades are selected on work order jobs. If skills or certificates have been selected on a maintenance job type or maintenance job trade, and that maintenance job type or maintenance job trade is used on a work order job, only maintenance workers with matching skills and certificates are scheduled to work on the work order.
 

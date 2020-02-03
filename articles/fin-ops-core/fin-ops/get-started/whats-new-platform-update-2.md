@@ -14,7 +14,7 @@ ms.technology:
 # optional metadata
 
 # ms.search.form: 
-# ROBOTS: 
+ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -40,7 +40,7 @@ This topic describes features that are either new or changed in Microsoft Dynami
 
 | What can you do? | Why is this important? |
 |------------------|------------------------|
-| Enable Azure Resource Manager (ARM) deployments of Dynamics AX. | This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see [Azure Resource Manager onboarding](../../dev-itpro/deployment/arm-onboarding.md). |
+| Enable Azure Resource Manager (ARM) deployments of Dynamics AX. | This feature is now in public preview. With ARM deployments, you can now take advantage of the latest features of Azure. For more information, see [Complete the Azure Resource Manager (ARM) onboarding process](../../dev-itpro/deployment/arm-onboarding.md). |
 
 ## Development and customization
 
@@ -141,4 +141,4 @@ Extensibility features are key features of the Dynamics AX platform because the 
 
 ## Additional resources
 
-[What's new or changed](whats-new-changed.md)
+[What's new or changed in Finance and Operations home page](whats-new-changed.md)

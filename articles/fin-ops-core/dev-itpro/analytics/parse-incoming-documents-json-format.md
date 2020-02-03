@@ -52,7 +52,7 @@ Before you complete the ER Create a format configuration to import data from an 
 - JSON arrays can be only nested elements of the property elements of an object.
 - JSON arrays can contain only JSON objects. They can't contain direct string/numeric values and nested arrays. Elements in these arrays will be parsed in order, as they are specified in the format. Multiplicity settings on each JSON object will be considered.
 
-Additionally, you must complete the [ER Create required configurations to import data from an external file for electronic reporting](tasks/er-required-configurations-import-data.md) task guide if you haven't already completed it. Download the following file to complete the task guide.
+Additionally, you must complete the [ER Create required configurations to import data from an external file](tasks/er-required-configurations-import-data.md) task guide if you haven't already completed it. Download the following file to complete the task guide.
 
 | Title                  | File name |
 |------------------------|-----------|

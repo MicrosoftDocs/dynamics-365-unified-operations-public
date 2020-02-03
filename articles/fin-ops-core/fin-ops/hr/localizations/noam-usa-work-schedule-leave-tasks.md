@@ -2,10 +2,10 @@
 # required metadata
 
 title: Set up work schedules and leave
-description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+description: This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/22/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: HcmLeaveType, WorkTimeTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 221494
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 
 Although you use the same page to maintain the calendars that both Payroll and Production control use, we recommend that you maintain separate calendars for each of those feature areas.
 
@@ -60,10 +60,10 @@ Repeat these steps to create additional working time templates. When you've fini
 
 ## Create working time calendars
 
-A working time calendar defines the typical schedule for a position. You can use the calendar to generate default earnings statement lines for workers who are assigned to the position. After you create working time calendars, you can assign them to positions. For more information, see [Worker and position payroll tasks](noam-usa-worker-position-payroll-tasks.md).
+A working time calendar defines the typical schedule for a position. You can use the calendar to generate default earnings statement lines for workers who are assigned to the position. After you create working time calendars, you can assign them to positions. For more information, see [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md).
 
 > [!NOTE]
-> Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+> Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
 
 > [!TIP]
 > - To set up a 24-hour calendar, enter **12:00 am** in the **From** field and **24** in the **To** field.
@@ -71,7 +71,7 @@ A working time calendar defines the typical schedule for a position. You can use
 
 ## Create leave types
 
-You use leave types to set up the types of leave that workers can take, such as medical, educational, or parental leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md). Before you create leave types that can be used to generate earnings statement lines for paid leave, you must create an earning code for each type of paid leave.
+You use leave types to set up the types of leave that workers can take, such as medical, educational, or parental leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md). Before you create leave types that can be used to generate earnings statement lines for paid leave, you must create an earning code for each type of paid leave.
 
 When a worker goes on leave, the leave type, together with the start date and end date for the leave, is recorded on the **Leave** page.
 
@@ -86,8 +86,6 @@ Repeat these steps to create additional leave types.
 
 ## Put a worker on leave
 
-Schedules are used together with leave types when a worker is on paid leave. To incorporate the leave settings when you generate earnings statements for a worker who is on paid leave, you must assign a schedule to the worker's position. This step is required even if you generate earnings for that position by salary, not from a schedule. A schedule is optional for a salaried worker who is on unpaid leave. Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
-
 To put a worker on leave, enter the following information on the **Workers** page.
 
 | Field      | Description                        |
@@ -98,6 +96,8 @@ To put a worker on leave, enter the following information on the **Workers** pag
 
 Repeat this step for any additional salaried positions that the worker holds.
 
+Time off that is part of a benefit accrual plan, such as vacation time or sick time, isn't considered leave. For more information about benefit accrual plans, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).
+
 ## Next step
 
-The next step is to set up benefit accrual plans. For more information, see [Benefit accrual plan tasks](noam-usa-benefit-accrual-plan-tasks.md).
+The next step is to set up benefit accrual plans. For more information, see [Set up benefit accrual plans](noam-usa-benefit-accrual-plan-tasks.md).

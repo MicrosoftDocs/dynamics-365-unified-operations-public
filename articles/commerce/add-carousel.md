@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a carousel module to a page 
+title: Carousel module 
 description: This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,9 +29,9 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Add a carousel module to a page
+# Carousel module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -76,3 +76,19 @@ To add a carousel module to a new page and set the required properties, follow t
 1. In the feature module, add an image, a heading, and a paragraph of text.
 1. Save and preview the page. The page should show a carousel that has two modules inside it (a hero module and a feature module). You can change additional properties for the carousel, hero, and feature modules to achieve the desired effect.
 1. Check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Alert module](add-alert.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Content placement module](add-content-placement-modules.md)
+
+[Feature module](add-feature-module.md)
+
+[Hero module](add-hero-module.md)
+
+[Video player module](add-video-player.md)

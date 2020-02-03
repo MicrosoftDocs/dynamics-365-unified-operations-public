@@ -43,7 +43,7 @@ The following illustration shows, at a high level, how the service works.
 ![How DTS works](./media/dts-overview.png "How DTS works")
 
 ## Recycling existing translations
-Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [XLIFF Translation Memory (TM)](./use-translation-service-tm.md).
+Existing linguistic assets can be recycled only when the assets are uploaded in a zip file that contains translation memory (TM) files that use Localization Interchange File Format (XLIFF). For more information, see [Translation memory files](./use-translation-service-tm.md).
 
 ## Custom-trained MT system
 DTS uses a Microsoft Translator service and a custom translator to customize Microsoft Translator’s advanced neural machine translation for Microsoft Dynamics products. The custom-trained MT system can only be used for GA languages, unless partners upload XLIFF TM files that contain more than 10,000 translation units (TUs). (A TU typically contains a source string, translation, state, state qualifier, and note.) In those cases, DTS creates a custom-trained MT system that is specific to the translation request that the XLIFF TM files are submitted for.
@@ -58,7 +58,7 @@ DTS currently supports the following product versions.
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
 | Dynamics 365 Finance and Operations apps | All versions | .label.txt | .docx, .html | .txt is the specific label format and .html is the custom help solution format. |
-| Microsoft Dynamics 365 Retail | All versions | .label.txt | .docx | |
+| Microsoft Dynamics 365 Commerce | All versions | .label.txt | .docx | |
 | Microsoft Dynamics CRM | All versions | .resx | .docx | |
 | Microsoft Dynamics NAV | All versions | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | .txt and .xml are the NAV specific format, and .xlf is the Business Central extension resource format. |
 
@@ -108,5 +108,5 @@ Two preview features are available for DTS:
 | TU | Translation unit. A TU typically contains a source string, translation, state, state qualifier, and note. |
 
 
-For more information about how to use DTS, see [Microsoft Dynamics 365 Translation Service - User interface file translation](use-translation-service.md) and [Microsoft Dynamics 365 Translation Service - Documentation file translation](use-translation-service-ua.md).
+For more information about how to use DTS, see [Translate user interface files](use-translation-service.md) and [Translate documentation files](use-translation-service-ua.md).
 

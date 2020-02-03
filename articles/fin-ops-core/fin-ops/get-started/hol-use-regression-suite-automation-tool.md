@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Use Regression suite automation tool tutorial
+title: Use the Regression suite automation tool tutorial
 description: This topic shows how to use Regression suite automation tool (RSAT). It describes various features and provides examples that use advanced scripting. 
 author: kfend
 manager: AnnBe
@@ -50,7 +50,7 @@ For information about this feature, see the [Modify an existing task recording t
 
 ### Derived test case
 
-1. Open Regression suite automation tool (RSAT), and select both the test cases that you created in [Set up and install Regression suite automation tool](./hol-set-up-regression-suite-automation-tool.md).
+1. Open Regression suite automation tool (RSAT), and select both the test cases that you created in [Set up and install Regression suite automation tool tutorial](./hol-set-up-regression-suite-automation-tool.md).
 2. Select **New \> Create derived test case**.
 
     ![Create derived test case command on the New menu](./media/use_rsa_tool_01.png)

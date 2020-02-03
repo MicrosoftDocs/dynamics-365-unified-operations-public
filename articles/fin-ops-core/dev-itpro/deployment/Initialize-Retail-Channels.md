@@ -36,6 +36,9 @@ If you're using a Tier-2 sandbox or production environment that has application 
 
 This topic describes the steps for initializing Retail Cloud Scale Unit.
 
+> [!IMPORTANT]
+> For existing customers using Retail channel functionality in the cloud, to ensure continued and uninterrupted support for your business, we require that you update your retail channels to use Cloud Scale Unit no later than January 31, 2020. There is no action required for customers who exclusively use Store Scale Unit. Contact your Microsoft FastTrack Solution Architect if you require an extension.
+
 ## Prerequisites
 
 1. Deploy a Tier-2 sandbox or production environment that has application version 8.1.2.x or later.
@@ -58,7 +61,7 @@ Please make sure the headquarters is available. This is required to register the
 
 ### Database refresh and Cloud Scale Units
 
-Before you begin, make sure you are familiar with [Steps to complete after a database refresh for environments that use Retail functionality](../database/database-refresh.md#steps-to-complete-after-a-database-refresh-for-environments-that-use-retail-functionality).
+Before you begin, make sure you are familiar with [Steps to complete after a database refresh for environments that use Retail functionality](../database/database-refresh.md#steps-to-complete-after-a-database-refresh-for-environments-that-use-commerce-functionality).
 
 The scale unit channel database records (in the Channel Database form) cannot be moved across environments as part of database refresh. This is because the records represent environment specific configuration.
 

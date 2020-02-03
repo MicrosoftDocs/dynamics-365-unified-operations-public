@@ -54,7 +54,7 @@ Before you begin the move, you must save your data.
 - **Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.
 - **Tier 2 and higher environments that are based on Azure SQL Database:** Choose one of the following options:
 
-    - **Option 1:** Follow the process that is described in [Copy a database from Azure SQL Database to a SQL Server environment](../../dev-itpro/database/copy-database-from-azure-sql-to-sql-server.md).
+    - **Option 1:** Review the processes that are listed in the [Database movement operations home page](../../dev-itpro/database/dbmovement-operations.md) topic.
     - **Option 2:** If you have an Azure subscription, save a copy of the Azure SQL database under that subscription.
     - **Option 3:** If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.
     - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.
@@ -72,12 +72,12 @@ After you've saved your data, follow these steps.
     4. After the environment is deleted, select **Configure** to redeploy the environment.
     5. In the **Geography/location** field, select the data center to use.
     6. After the environment is deployed, apply the code packages.
-    7. If the redeployed environment is used as the build environment, complete the required configurations that are described in [Deployment with continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md).
+    7. If the redeployed environment is used as the build environment, complete the required configurations that are described in [Deploy and use an environment that supports continuous build and test automation](../../dev-itpro/perf-test/continuous-build-test-automation.md).
     8. Restore the data.
 
 > [!NOTE]
 > - The movement of files that are stored in Azure Blob Storage isn't supported in sandbox environments.
-> - Retail customers should be aware that extra steps are required for Retail components to work correctly after a move. For more information, see [Data management](../../dev-itpro/data-entities/data-entities-data-packages.md).
+> - Commerce customers should be aware that extra steps are required for components to work correctly after a move. For more information, see [Data management overview](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## Move production environments
 

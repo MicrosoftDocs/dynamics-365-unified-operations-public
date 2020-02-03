@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Talent (June 25, 2019)
+title: What's new or changed in Dynamics 365 Talent (July 02, 2019)
 description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 author: Darinkramer
 manager: AnnBe
@@ -30,8 +30,6 @@ ms.dyn365.ops.version: Talent
 ---
 
 # What's new or changed in Dynamics 365 Talent (July 02, 2019)
-
-[!include [banner](includes/banner.md)]
 
 This topic describes features that are either new or changed in Microsoft Dynamics 365 Talent.
 

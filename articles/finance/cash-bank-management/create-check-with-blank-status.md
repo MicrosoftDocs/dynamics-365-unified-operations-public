@@ -33,7 +33,6 @@ ms.dyn365.ops.version: AX 10.0.5
 # Create checks that have Blank status
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 This topic explains how to create blank checks. For example, you might create a blank check to record a check that has been damaged and can't be used for payment.
 

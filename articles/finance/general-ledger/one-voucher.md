@@ -13,7 +13,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: 
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
@@ -56,7 +56,7 @@ The existing functionality for financial journals (the general journal, fixed as
 
 ## Issues with One voucher
 
-The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, financial reporting, and more. (For more information about issues that can occur during settlement, see, for example, [Single voucher with multiple customer or vendor records](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work correctly, depending on your organization's setup, there are often issues when multiple transactions are entered in one voucher.
+The One voucher functionality causes issues during settlement, tax calculation, transaction reversal, reconciliation of a subledger to the general ledger, financial reporting, and more. (For more information about issues that can occur during settlement, see, for example, [Single voucher with multiple customer or vendor records](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) To work and report correctly, these processes and reports require transaction details. Although some scenarios might still work correctly, depending on your organization's setup, there are often issues when multiple transactions are entered in one voucher.
 
 For example, you post the following multiline voucher.
 
@@ -87,6 +87,9 @@ Based on conversations with customers, Microsoft has compiled the following list
 ### Scenarios that require One voucher
 
 The following scenarios can be accomplished only by using the One voucher functionality. If your organization has any of these scenarios, you must enable multiple transactions to be entered in a voucher by changing the setting of the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page. These functional gaps will be filled through other features in later releases.
+
+> [!Note]
+> [For each of the following scenarios the **Allow multiple transactions within one voucher** field must be set to Yes in the **General** FastTab on the **General ledger parameters** page.]
 
 ### Post vendor or customer payments in summary form to a bank account
 
@@ -125,6 +128,9 @@ The following fixed asset transactions also create multiple transactions in a si
 - An asset is split.
 - A parameter to calculate depreciation on disposal is turned on, and then the asset is disposed of.
 - An asset's service date is before the acquisition date. Therefore, a depreciation adjustment is posted.
+
+> [!Note]
+> When you are entering transactions, be sure that all the transactions apply to the same fixed asset. The voucher won't be posted if it includes more than one fixed asset, even if the **New Voucher** field is set to One voucher number only on the **Journal names** page in General ledger. If you include more than one fixed asset in the voucher, the message **There can only be one fixed asset transaction per voucher** will be displayed and you won't be able to post the voucher.  
 
 ### Bills of exchange and promissory notes
 Bills of exchange and promissory notes require that One voucher be used, because the transactions move the customer or vendor balance from one Accounts receivable/Accounts payable ledger account to another, based on the state of the payment.

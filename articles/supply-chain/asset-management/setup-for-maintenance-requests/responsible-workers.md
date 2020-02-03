@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Responsible maintenance workers can be related to asset types, assets, functional locations, maintenance job type categories, maintenance job types, maintenance job type variants, and trades. They can be used on work orders and maintenance requests to indicate a preference about the maintenance workers who should be responsible for a work order. (However, those maintenance workers aren't necessarily the same workers who are scheduled to carry out the work order.) Use of this functionality is optional. For example, it can be used to select responsible workers or worker groups for specific work types or work areas.
 
@@ -58,4 +58,4 @@ Before you can set up responsible maintenance workers, you must set up the worke
 
 The following illustration shows an example of the **Responsible maintenance workers** page.
 
-![Figure 1](media/08-setup-for-requests.png)
+![Responsible maintenance workers page](media/08-setup-for-requests.png)

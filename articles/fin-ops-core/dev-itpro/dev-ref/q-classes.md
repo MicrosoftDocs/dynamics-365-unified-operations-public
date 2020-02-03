@@ -171,6 +171,7 @@ The following example creates a query object that is used to create a QueryRun o
 | public void addContains(str containsValue, \[boolean prefixSearch\])                                                                                                   |                                                                                                                                           |
 | public void resetValidTimeStateQueryType()                                                                                                                             |                                                                                                                                           |
 | public void validTimeStateDateTimeRange(\[DateTime fromDateTime\], \[DateTime toDateTime\])                                                                            |                                                                                                                                           |
+| public boolean skipAutoOrderBy(\[boolean value\])                                                                                                                           | Allows to skip the generation of an automatic Order By clause in case no Order By field was specified explicitly.                                             |
 
 ### Method addBaseQuery
 
@@ -4288,7 +4289,14 @@ sourceCursor
 
 isForward  
 
+### Method skipAutoOrderBy
 
-
-
-
+    Specifies whether an Order By clause will be generated, in case no Order By field was specified.
+    public boolean skipAutoOrderBy([boolean value])
+    
+#### Parameters
+Value
+#### Return Value
+The current value if no parameter is specified, the new value if a parameter was specified.
+#### Remarks
+SkipAutoOrderBy is false by default and available in Platform update 31 and later

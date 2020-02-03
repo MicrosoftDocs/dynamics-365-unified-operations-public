@@ -3,7 +3,7 @@
 
 title: Customize through extension and overlayering
 description: This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
-author: robadawy
+author: jorisdg
 manager: AnnBe
 ms.date: 09/25/2018
 ms.topic: article
@@ -24,7 +24,7 @@ ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -53,7 +53,7 @@ You can customize an application by using *extensions*. An extension enables you
     -   Creating event handlers to respond to event delegates that are defined by the application.
     -   Creating new plug-ins.
 
-To get started, review or complete this tutorial: [Customize model elements using extensions](customize-model-elements-extensions.md).
+To get started, review or complete this tutorial: [Customize model elements through extension](customize-model-elements-extensions.md).
 
 ## Extension models and packages
 You can create a model that contains only new model elements, new code, or extensions. This model is compiled into its own separate assembly. These assemblies, along with related metadata and runtime artifacts can be packaged (as a deployable package file) and deployed on runtime sandbox or production environment. To create an extension model, go through the Create model wizard and select **Create new package** on the second step. 
@@ -90,11 +90,11 @@ Events are raised as preceding and succeeding operations around the base methods
 
 ### Plug-ins
 
-Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the tutorial, [Customize model elements using extensions](customize-model-elements-extensions.md).
+Plug-ins are extension points that are defined by the base application. By using a class-factory pattern, plug-ins enable you to replace the base functionality. You can see how to implement a plug-in in the tutorial, [Customize model elements through extension](customize-model-elements-extensions.md).
 
 ### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes, tables and forms. For more details refer to the topic [class extensions](class-extensions.md).
+Class extensions enable you to augment a class by adding methods and variables to existing classes, tables and forms. For more details, refer to the topic [Class extension model in X++](class-extensions.md).
 
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:
@@ -222,13 +222,13 @@ You can extend a Security Role or a Security Duty to add new duties/privileges t
 ## Report extensions
 You can customize reports and business docs using extensions, below is a list of tutorials that help you learn more. 
 
-[Customizing App Suite reports using extensions](../analytics/customize-app-suite-reports-with-extensions.md): Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… 
+[Customize App Suite reports by using extensions](../analytics/customize-app-suite-reports-with-extensions.md): Customizations to reporting solutions in the standard application are fully supported using a pure ‘Extension’ model.  This article offers guidance on how to add the most common customizations to standard application reports without over-layering Application Suite artifacts.  Here are some… 
 
-[How To: Custom designs for business docs](../analytics/custom-designs-business-docs.md): This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. 
+[Create custom designs for business documents](../analytics/custom-designs-business-docs.md): This article focuses on the steps involved in crafting a custom report design for an existing application business document using a ‘pure’ extension model. Follow the steps below to associate a custom report design with an application document instance…. 
 
-[How To: Expanding App Suite report data sets](../analytics/expand-app-suite-report-data-sets.md): This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… 
+[Expand Application Suite report data sets](../analytics/expand-app-suite-report-data-sets.md): This article focuses on the expansion of an existing report data set produced using X++ business logic in a Report Data Provider (RDP) class. Use custom delegate handlers and table extensions to include additional field data and/or calculations without… 
 
-[How To: Extending report menu items](../analytics/extend-report-menu-items.md): This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
+[Extend report menu items to redirect user navigation](../analytics/extend-report-menu-items.md): This article focuses on the process of extending existing application menu items to redirect navigations with minimal code changes. Using this technique you will avoid the hassle of tracking down and replacing all references to an existing application…
 
 ## Label extensions
 You can create label extension files in order to modify the string value of a label, add new labels to the same label file or add new languages. To create a label extension file you must name it with a \_extension suffix. For example, to extend the **FLM** labels of the Fleet Management model, do the following:
@@ -329,7 +329,7 @@ Tables, form data sources, form controls, and other element types that support e
 
 ## Additional resources
 
-[Customize model elements using extensions](customize-model-elements-extensions.md)
+[Customize model elements through extension](customize-model-elements-extensions.md)
 
 
 

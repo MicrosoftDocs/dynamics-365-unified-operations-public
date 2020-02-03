@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Add a container module to a page
+title: Container module
 description: This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Add a container module to a page
+# Container module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -116,3 +116,23 @@ To add a container player module to a new page and set the required properties, 
 1. Add two more feature modules to the container module.
 1. Save and preview the page. You should now see three feature modules that appear side by side.
 1. After you've achieved the layout that you want, check in the page, and publish it.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Carousel module](add-carousel.md)
+
+[Content rich block module](add-content-rich-block.md)
+
+[Content placement module](add-content-placement-modules.md)
+
+[Buy box module](add-buy-box.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

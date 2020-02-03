@@ -24,7 +24,7 @@ ms.custom: 31621
 ms.assetid: c56d5cdf-3c01-4730-bda5-bb5f8f79e375
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: robadawy
+ms.author: jorisde
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -43,7 +43,7 @@ When an environment is first deployed, only one user account is enabled as a dev
 
 
 ## Prerequisites
-To enable a new user account to develop on the VM, the user account must be an administrator on the VM. Additionally, you must log on to the VM by using the credentials of the default developer account. If the VM is a Microsoft Azure VM, the account information is available on the environment page in LCS. If the VM is a local VM that runs on the downloaded VHD, use the local administrator account. For more information, see [Access Instances](../dev-tools/access-instances.md).
+To enable a new user account to develop on the VM, the user account must be an administrator on the VM. Additionally, you must log on to the VM by using the credentials of the default developer account. If the VM is a Microsoft Azure VM, the account information is available on the environment page in LCS. If the VM is a local VM that runs on the downloaded VHD, use the local administrator account. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ## Steps
 1.  Download the following script: ProvisionAxDeveloper.ps1, the script is available at <https://github.com/Microsoft/Dynamics-AX-Scripts>.
@@ -60,8 +60,10 @@ To enable a new user account to develop on the VM, the user account must be an a
         > ProvisionAxDeveloper.ps1 -databaseservername RDXP00DB20RAINM -users RDXP00DB20RAINM\username1,RDXP00DB20RAINM\username2
 
 4.  If more than one user account will be developing on the same version control workspace, you need to make the workspace public.
-    1.  In Visual Studio, open **Source Control Explorer**, select the workspace dropdown and select **Manage workspaces**.
-    2.  Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.[![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)
+    1.  In Visual Studio, open **Source Control Explorer**, select the workspace drop-down and select **Manage workspaces**.
+    2.  Select the application workspace, click **Edit,** then click **Advanced** and set the workspace to **Public workspace**.
+    
+    [![publicworkspace](./media/publicworkspace.png)](./media/publicworkspace.png)
 
 
 

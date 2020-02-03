@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
-# Tax interest and free-hand interest
+# Tax interest and free-hand interest for Poland
 
 [!include[banner](../includes/banner.md)]
 

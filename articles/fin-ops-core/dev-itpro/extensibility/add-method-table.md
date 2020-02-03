@@ -40,7 +40,7 @@ When you extend the business logic that is related to a table, the general codin
 
 For example, a new field that is named **MyInventLocationId** was added to the InventTable table through extension. A data event handler was also created for the **Inserting** event, and you must implement the logic of filling the new field there. To encapsulate that action, you will create a new method on InventTable and name that method **myDefaultInventLocationId**.
 
-You first create a new class in the extension model. This class will augment the InventTable table, and enable access to the table's fields and methods in a manner that is easy to read and understand. It's important that you choose the correct name for your augmentation class. This name must be unique across all types in all models that are deployed. For more information, see [Naming guidelines for model extensions](naming-guidelines-extensions.md).
+You first create a new class in the extension model. This class will augment the InventTable table, and enable access to the table's fields and methods in a manner that is easy to read and understand. It's important that you choose the correct name for your augmentation class. This name must be unique across all types in all models that are deployed. For more information, see [Naming guidelines for extensions](naming-guidelines-extensions.md).
 
 ```
 [ExtensionOf(tableStr(InventTable))]

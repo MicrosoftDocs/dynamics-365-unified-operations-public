@@ -56,12 +56,12 @@ The ER engine has the following capabilities:
 
 ER supports two types of components: **Data model** and **Format**.
 
-#### Data model components
+#### Data model and model mapping components
 
 A data model component is an abstract representation of a data structure. It's used to describe a specific business domain area with enough detail to satisfy the reporting requirements for that domain. A data model component consists of the following parts:
 
-- A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
-- A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
+- <a name="DataModelComponent"></a>A data model, as a set of domain-specific business entities and a hierarchically structured definition of relations between those entities.
+- <a name="ModelMappingComponent"></a>A model mapping that links selected application data sources to individual elements of a data model that specifies, at run time, the data flow and rules of business data population to a data model component.
 
 A business entity of a data model is represented as a container (record). Business entity properties are represented as data items (fields). Each data item has a unique name, label, description, and value. The value of each data item can be designed so that it's recognized as a string, integer, real, date, enumeration, Boolean, and so on. Additionally, it can be another record or records list.
 
@@ -76,9 +76,8 @@ A model mapping that supports outgoing electronic documents has the following ca
 
 - It can use different data types as data sources for a data model. For example, it can use tables, data entities, methods, or enums.
 - It supports user input parameters that can be defined as data sources for a data model when some data must be specified at run time.
-- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas, as shown in the following illustration. For more information, see [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md)).
+- It supports the transformation of data into required groups. It also lets you filter, sort, and sum data, and append logical calculated fields that are designed through formulas that resemble Microsoft Excel formulas. For more information, see [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)).
 
-[![Formula designer](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 A model mapping that supports incoming electronic documents has the following capabilities:
 
@@ -87,7 +86,7 @@ A model mapping that supports incoming electronic documents has the following ca
 
 A data model component is designed for each business domain that should be used as a unified data source for reporting that isolates reporting from the physical implementation of data sources. It represents domain-specific business concepts and functionalities in a form that makes a reporting format's initial design and further maintenance more efficient.
 
-#### Format components for outgoing electronic documents
+#### <a name="FormatComponentOutbound"></a>Format components for outgoing electronic documents
 
 A format component is the scheme of the reporting output that will be generated at run time. A scheme consists of the following elements:
 
@@ -113,7 +112,7 @@ The following illustration shows how the data flows for these formats.
 
 To run a single ER format configuration and generate an outgoing electronic document, you must identify the mapping of the format configuration.
 
-#### Format components for incoming electronic documents
+#### <a name="FormatComponentInbound"></a>Format components for incoming electronic documents
 A format component is the scheme of the incoming document that is imported at run time. A scheme consists of the following elements:
 
 - A format that defines the structure and content of the incoming electronic document that contains data that is imported at run time. A format component is used to parse an incoming document in various formats, such as text and XML.
@@ -150,7 +149,7 @@ Access to ER format components depends on the setting for the ISO country/region
 
 Different versions of a data format component can have different settings for ISO country/region codes.
 
-#### Configuration
+#### <a name="Configuration"></a>Configuration
 
 An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
@@ -160,13 +159,13 @@ The format configuration that is created contains a format component. The data m
 
 An ER configuration is shared for application companies.
 
-#### Provider
+#### <a name="Provider"></a>Provider
 
 The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-#### Repository
+#### <a name="Repository"></a>Repository
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
@@ -201,9 +200,7 @@ Required **LCS project**, **File system**, and **Regulatory Configuration Servic
 ## Supported scenarios
 ### Building a data model
 
-ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. The following illustration shows an example of this type of data model (the payment domain data model).
-
-[![Payment domain data model](./media/ER-overview-04.png)](./media/ER-overview-04.png)
+ER provides a model designer that you can use to build a data model for a particular business domain. All domain-specific business entities, and the relations between them, can be presented in a data model as a hierarchical structure. 
 
 To become familiar with the details of this scenario, play the **ER Design domain specific data model** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
@@ -214,24 +211,14 @@ Data model content (labels and descriptions) can be translated into other langua
 - At design time, to make the content more intelligible for format designers who speak other languages, and who will use the data model for data mapping of format components.
 - At run time, to make the content more user-friendly by presenting prompts and help for run-time parameters, and configured validation messages (errors and warnings), in the language that the currently signed-in user prefers.
 
-The following illustration shows an example where data model content is translated from English to Japanese.
-
-[![Data model content in English](./media/ER-overview-05.png)](./media/ER-overview-05.png)
-
-[![Data model content translated into Japanese](./media/ER-overview-06.png)](./media/ER-overview-06.png)
-
 ### Configuring data model mappings for outgoing documents
 
-ER provides a model mapping designer that lets users map data models that they have designed to specific application data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. The following illustration shows an example of this type of data model mapping (the **SEPA Credit Transfer** model mapping of the payment domain data model).
-
-[![Example of data model mapping](./media/ER-overview-07.png)](./media/ER-overview-07.png)
+ER provides a model mapping designer that lets users map data models that they have designed to specific application data sources. Based on the mapping, the data will be imported at run time from selected data sources into the data model. The data model is then used as an abstract data source of ER formats that generate outgoing electronic documents. 
 
 To become familiar with the details of this scenario, play the **ER Define model mapping and select data sources** and **ER Map data model to selected data sources** task guides (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Configuring data model mappings for incoming documents
-ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the updatable data components (tables, data entities, and views). Based on the mapping, the data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. The following illustration shows an example of this type of data model mapping. In this example, the **Import mapping for NETS** model mapping of the payment domain data model is used to support the import of bank statements in the NETS bank format for Norway.
-
-[![Import mapping for NETS data model example](./media/ER-overview-08.png)](./media/ER-overview-08.png)
+ER provides a model mapping designer that lets users map data models that they have designed to specific destinations. For example, data models can be mapped to the updatable data components (tables, data entities, and views). Based on the mapping, the data will be updated at run time by using the data from the data model. As abstract storage of the ER format, the data model is filled with data that is imported from an incoming electronic document. 
 
 ### Storing a designed model component as a model configuration
 
@@ -241,24 +228,18 @@ To become familiar with the details of this scenario, play the **ER Map data mod
 
 ### Building a format that uses a data model as a base
 
-ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain's data model mapping as a data source. The following illustration shows an example of this type of format (the format configuration that supports the **BACS** payment format for the United Kingdom).
-
-[![Example of a format that has a data model as a base](./media/ER-overview-09.png)](./media/ER-overview-09.png)
+ER supports a format designer that you can use to build the format of an electronic document for a selected business domain by selecting the model component as a base. The same ER format designer lets you map a format that you create to a selected domain's data model mapping as a data source. 
 
 To become familiar with the details of this scenario, play the **ER Design domain specific format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
 ### Building a configuration to generate electronic documents in OPENXML worksheet format
 
-The ER format designer can be used to build an electronic document in OPENXML worksheet format. The following illustration shows an example of this type of format (a format configuration to generate OPENXML worksheet with details of a selected payment journal).
-
-[![Pic-ER-format-Excel](./media/ER-overview-10.png)](./media/ER-overview-10.png)
+The ER format designer can be used to build an electronic document in OPENXML worksheet format. 
 
 To become familiar with the details of this scenario, play the **ER Create a configuration for reports in OPENXML format** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process). As part of the task guide step for importing a template, use the [Template of Payment Report (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) Excel file as a template.
 
 ### Building a configuration to generate electronic documents in a Word document format
 The ER format designer can be used to build an electronic document in a Word document format. The following illustration shows an example of this type of format. Note that this format reuses the existing ER configuration that was originally designed to generate the report output in OPENXML format.
-
-[![Pic-ER-format-Word](./media/ER-overview-11.png)](./media/ER-overview-11.png)
 
 To become familiar with the details of this scenario, play the ER Design a configuration for generating reports in Microsoft WORD format task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). As part of the task guide step for importing a template, use the following Word files as templates for the ER format:
 
@@ -266,11 +247,7 @@ To become familiar with the details of this scenario, play the ER Design a confi
 - [Bounded template of Payment Report (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### Building a configuration to import data from incoming electronic documents
-The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. The following illustrations show an example of this type of format and format mapping. In this example, NETS bank statements that include vendor payment details in text format are imported.
-
-[![ER-format-designer](./media/ER-overview-12.png)](./media/ER-overview-12.png)
-
-[![ER-model-mapping-designer](./media/ER-overview-13.png)](./media/ER-overview-13.png)
+The ER format designer can be used to describe an electronic document that is planned for data import in either XML or text format. The designed format is used to parse an incoming document. The ER format mapping designer can be used to define the binding of the elements of the designed format to the data model. 
 
 To become familiar with the details of this scenario, play the Create required ER configurations to import data from an external file task guide (part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process). Use the following files to play this guide:
 
@@ -285,11 +262,7 @@ ER can store a designed format together with the configured data mappings as a f
 
 ### Configuring Finance to start to use a created format internally
 
-The application can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment, as shown in the following illustrations:
-
-[![BACS (UK) format configuration](./media/ER-overview-14.png)](./media/ER-overview-14.png)
-
-[![Referencing the BACS (UK) format in a payment method](./media/ER-overview-15.png)](./media/ER-overview-15.png)
+The application can be configured to start to use a created format to generate electronic reports. The reference to the created format configuration should be defined in the settings of a specific domain. For example, to start to use an ER format configuration for electronic vendor payments in BACS format, the format configuration should be referenced in specific methods of payment.
 
 To become familiar with the details of this scenario, play the **ER Use format to generate electronic document for payments** task guide (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
@@ -394,5 +367,5 @@ ER lets you automatically adopt changes of the latest version of the base compon
 
 ## Additional resources
 
-- [Localization requirements – Create an Electronic reporting configuration](electronic-reporting-configuration.md)
-- [Manage the Electronic reporting configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
+- [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)

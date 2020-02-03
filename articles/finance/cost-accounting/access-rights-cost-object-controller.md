@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Access rights of a cost object controller
+# Define access rights for cost object controllers
 
 [!include [banner](../includes/banner.md)]
 

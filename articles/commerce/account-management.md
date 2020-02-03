@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Account management pages
-description: This topic covers account management pages in Microsoft Dynamics 365 Commerce.
+title: Account management pages and modules
+description: This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,12 +29,12 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
 ---
 
-# Account management pages
+# Account management pages and modules
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-This topic covers account management pages in Microsoft Dynamics 365 Commerce.
+This topic covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 
@@ -62,7 +62,7 @@ The order details page provides detailed information for each order and is acces
 
 ### User profile page
 
-The user profile page shows user account details, such as user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited.
+The user profile page shows user account details, such as a user's name and email address. It uses the user profile module. Although the email address can't be removed, it can be edited. The user profile page also shows user preferences that enable a user to opt in or opt out from certain features such as personalization of recommendation lists. 
 
 ### User address page
 
@@ -75,3 +75,21 @@ The wish list page shows the items that have been added to the customer's wish l
 ### Loyalty page
 
 The loyalty page lets customers join a loyalty program or, if they are already loyalty program members, view their program details. They can also view the points that they have earned and redeemed in recent transactions.
+
+## Additional resources
+
+[Starter kit overview](starter-kit-overview.md)
+
+[Container module](add-container-module.md)
+
+[Buy box module](add-buy-box.md)
+
+[Cart module](add-cart-module.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Order confirmation module](order-confirmation-module.md)
+
+[Header module](author-header-module.md)
+
+[Footer module](author-footer-module.md)

@@ -5,10 +5,10 @@ title: Document states and lifecycle
 description: This topic covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
@@ -29,14 +29,14 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Document states and lifecycle
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 
 ## Document state descriptions
 
-The [Page elements overview](page-elements-overview.md) topic lists various documents types in the content management system (CMS). These document types can have several states in the authoring tool. The document states help prevent data conflicts and enforce version control. They determine who can change the documents, when the documents can be changed, and when changes can be viewed by other people.
+The [Page elements](page-elements-overview.md) topic lists various documents types in the content management system (CMS). These document types can have several states in the authoring tool. The document states help prevent data conflicts and enforce version control. They determine who can change the documents, when the documents can be changed, and when changes can be viewed by other people.
 
 The following table shows the possible document states of page elements in Commerce.
 
@@ -50,5 +50,16 @@ The following table shows the possible document states of page elements in Comme
 
 ## Additional resources
 
-- [Add and manage content](add-manage-content.md)
+[Ways to add content](add-manage-content.md)
 
+[Page model glossary](page-elements-overview.md)
+
+[Work with publish groups](publish-groups.md)
+
+[Work with modules](work-with-modules.md)
+
+[Work with fragments](work-with-fragments.md)
+
+[Templates and layouts overview](templates-layouts-overview.md)
+
+[Customize site navigation](customize-site-navigation.md)

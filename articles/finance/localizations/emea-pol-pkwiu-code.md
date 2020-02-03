@@ -28,7 +28,7 @@ ms.search.validFrom: 2016-11-30
 
 ---
 
-# Set up and use PKWiU codes
+# Set up and use PKWiU codes for Poland
 
 [!include [banner](../includes/banner.md)]
 

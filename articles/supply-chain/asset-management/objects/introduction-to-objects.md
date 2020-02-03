@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 This topic provides an overview of assets in Asset Management. An *asset* is any type of equipment, such as a machine or a machine part, that requires maintenance, service, or repair.
 

@@ -8,13 +8,13 @@ manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-retail
+ms.service: dynamics-365-commerce
 ms.technology: 
 
 # optional metadata
 
 # ms.search.form: 
-audience: Application user
+audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -88,3 +88,9 @@ The following example shows how module layouts that have specific size values fo
 ```
 
 Default grid breakpoint settings can also be set in the theme.settings.json file (see **gridSettings** in the preceding example).
+
+## Additional resources
+
+[Theming overview](theming.md)
+
+[Create a new theme](create-theme.md)

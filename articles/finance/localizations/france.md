@@ -42,12 +42,12 @@ This topic includes information and links to resources that can help you set up 
   - [Titres de recette](emea-fra-titres-de-recette-public-sector.md)
   - [Vendor invoice payment holds](emea-fra-vendor-invoice-payment-holds-public-sector.md)
 - [Approve and post draw bill of exchange](tasks/fr-00004-approve-post-draw-bill-exchange.md)
-- [Chronological invoices vouchers](emea-fra-chronological-invoices-vouchers.md)
-- [Create Standard Audit File for France (FEC)](emea-fra-fec-audit-file.md)
+- [Chronological invoice and voucher numbers](emea-fra-chronological-invoices-vouchers.md)
 - [Customer and vendor account statements](tasks/fr-00002-customer-vendor-account-statements.md)
 - [Daily interest calculation for late payment and lump sum in the invoice and collection letter](tasks/fr-00018-daily-interest.md)
 - [Derogatory depreciation](emea-fra-derogatory-depreciation.md)
 - [French bills of exchange and promissory notes](tasks/fr-00004-french-bills-exchange-promissory-notes.md)
+- [Generate the Standard Audit File for France (FEC)](emea-fra-fec-audit-file.md)
 - [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md)
 - [Set up NAF codes and Siret numbers](tasks/fr-00003-naf-codes-siret-numbers.md)
 - [Penalties for past due customer payments](emea-fra-apply-penalty-customer-payment-past-due.md)
@@ -55,10 +55,10 @@ This topic includes information and links to resources that can help you set up 
 - [Post re-draw bill of exchange journal](tasks/fr-00004-post-re-draw-bill-exchange-journal.md)
 - [Print lump sum recovery text on a customer invoice](emea-fra-print-lump-sum-recovery-text.md)
 - [RB/SL depreciation](emea-fra-rbsl-depreciation.md)
-- [Set up method of payment](tasks/fr-00004-setup-method-payment.md)
+- [Setup method of payment](tasks/fr-00004-setup-method-payment.md)
 - [Update method of payment on customer](tasks/fr-00004-update-method-payment-customer.md)
-- Retail
-  - [Cash registers](../../retail/localizations/emea-fra-cash-registers.md)
+- Commerce
+  - [Cash register functionality](../../retail/localizations/emea-fra-cash-registers.md)
   - [Deployment guidelines for cash registers](../../retail/localizations/emea-fra-deployment.md)
 
 ## Additional resources

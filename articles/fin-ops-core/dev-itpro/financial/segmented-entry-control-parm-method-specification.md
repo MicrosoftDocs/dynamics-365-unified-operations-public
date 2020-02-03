@@ -61,13 +61,13 @@ The Segmented Entry control has multiple parm methods that influence how the con
 Additional resources
 --------
 
-[Segmented Entry control dialog support](segmented-entry-control-dialog-support.md)
+[Support for Segmented Entry controls on dialogs](segmented-entry-control-dialog-support.md)
 
-[Segmented Entry control Metadata Specification](segmented-entry-control-metadata-specification.md)
+[Design-time metadata for Segmented Entry controls](segmented-entry-control-metadata-specification.md)
 
-[Segmented Entry control migration](segmented-entry-control-conversion.md)
+[Migrate Segmented Entry controls](segmented-entry-control-conversion.md)
 
-[Segmented Entry control - Migration guidance](segmented-entry-control-migration-guidance.md)
+[Migration guidance for Segmented Entry controls](segmented-entry-control-migration-guidance.md)
 
 
 

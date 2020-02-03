@@ -36,9 +36,13 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic describes how to create and use classes in X++.
 
-A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. *Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
+A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object. 
 
-You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [Static class members](xpp-static-classes.md).
+*Variables* contain the data for the class. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables*. 
+
+Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance variables). By default, methods are declared to operate on the instance variables of the class. These methods are known as *instance methods* or *object methods*. 
+
+You can declare *static methods* and *static fields*, that do not have access to *instance variables*. These are described in [X++ static classes](xpp-static-classes.md).
 
 ## Declare a class
 
@@ -52,11 +56,11 @@ All classes are public. If you remove the **public** modifier, the system still 
 
 ## Variables
 
-Instance variables are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify and instance variable declaration by using the **private**, **protected**, or **public** keywords. 
+Instance variables are **protected** by default. This means that they can only be accessed in the same class or [a derived class](xpp-inheritance.md). You can modify an instance variable declaration by using the **private**, **protected**, or **public** keywords. 
 
 The following example shows how to use accessor methods to make the variable data public. The variable **firstName** is protected, so accessor (get and set) methods are implemented to allow access to the protected variable. The variable **lastName** is public, so code can directly get and set the value of the variable.
 
-```X++
+```xpp
 // This is the class definition.
 public class HasAFirstName
 {
@@ -95,7 +99,7 @@ To create an instance of a class, you must instantiate it by using a *constructo
 
 The following examples defines a parameterless constructor in the **Point** class.
 
-```X++
+```xpp
 class Point
 {
 
@@ -122,7 +126,7 @@ Following is information about how to create a clean inheritance model and minim
 
 A class constructor can instantiate other objects in addition to creating an instance of the class. For example, the following code declares a **Rectangle** class that uses two **Point** objects to define its bounds. In this case, the **Point** class has a constructor that has two **real** parameters.
 
-```X++
+```xpp
 
 class Point
 {
@@ -168,7 +172,7 @@ info(any2Str(customRectangle.lowerLeft.y));
 
 The constructor, **new**, returns a new instance of the class. The following code example creates two instances of the Point class.
 
-```X++
+```xpp
 // Declare a variable to refer to a Point instance.
 Point myPoint;
 
@@ -191,7 +195,7 @@ Use the **finalize** method to explicitly destroy an object. There are no implic
 
 The following example shows the basic structure for a call to the **finalize** method.
 
-```X++
+```xpp
 // From any method in a class.
 if (condition)
 {
@@ -204,7 +208,7 @@ if (condition)
 
 Set the reference variable to **null** to terminate an object. This approach destroys an object only if no other variables point to that object. You should verify that other code isn't using the variable. The following example creates an reference variable and then sets it to **null**.
 
-```X++
+```xpp
 Point myPoint = new Point();
 myPoint = null;
 ```
@@ -215,7 +219,7 @@ myPoint = null;
 
 Instance methods are embedded in each instance that is created from the class. You must instantiate the object before you can use the method. The following code shows how to define an instance method and call it from an instance.
 
-```X++
+```xpp
 class Square
 {
 
@@ -240,19 +244,21 @@ info(int2Str(area));
 
 ### Static methods
 
-Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. You use the following syntax to call static methods.
+Static methods, which are also known as *class methods*, belong to a class and are created by using the keyword **static**. You don't have to instantiate an object before you use static methods. Static methods are often used to work with data that is stored in tables. Member variables can't be used in a static method. 
 
-```X++
-    ClassName::methodName();
+You use the following syntax to call static methods.
+
+```xpp
+ClassName::methodName();
 ```
 
-If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [Static class members](xpp-static-classes.md).
+If you convert an instance method to a static method, you must restart the client. Otherwise, the compiler doesn't detect the change. After you've converted an instance method to a static method, you can no longer call the method from the instance of the class. Instead, you must call the method from the class itself. For more information about static methods, see [X++ static classes](xpp-static-classes.md).
 
 ### main methods
 
 A **main** method is a class method that is run directly from a menu option. The method should only create an instance of the object and then call the required member methods. The **\_args** parameter lets you transfer data to the method.
 
-```X++
+```xpp
 static void main (Args _args)
 {
     // Your code here.
@@ -265,19 +271,21 @@ Method declarations consist of a header and a body. The method header declares t
 
 ### Return type
 
-A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type. The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
+A return type is required for each method. If a method doesn't return anything, use the **void** keyword as the return type. 
 
-```X++
-    void methodNameNoReturnValue()
-    {
-        // Your code here.
-    }
+The following example shows two methods. One method has a return type, but the other method doesn't have a return type.
 
-    // If a method returns something, you must specify the return type and include a return statement.
-    int methodNameIntegerReturnValue()
-    {
-        return 1;
-    }
+```xpp
+void methodNameNoReturnValue()
+{
+    // Your code here.
+}
+
+// If a method returns something, you must specify the return type and include a return statement.
+int methodNameIntegerReturnValue()
+{
+    return 1;
+}
 ```
 
 ### Syntax
@@ -286,7 +294,9 @@ Method declaration = *Heading*  *Body* Heading = **\[** *Modifiers* **\]**  *Ret
 
 Modifiers = **\[client\] \[server\] \[edit | display | public | protected | private\] \[static | abstract | final \]** 
 
-ReturnType = *Datatype*  **| void | anytype** MethodName = *Identifier* 
+ReturnType = *Datatype*  **| void | anytype** 
+
+MethodName = *Identifier* 
 
 ParameterList = **\[** *Parameter*  **{ ,**  *Parameter*  **}\]** 
 
@@ -300,7 +310,7 @@ If you use the **anytype** return type, the method can return any data type.
 
 ### Example of a method that doesn't have a return type
 
-```X++
+```xpp
 void update ()
 {   
     // Variable declared and initialized
@@ -326,7 +336,7 @@ void update ()
 
 In the following example, the **checkAccountBlocked** method returns a Boolean value and acts on the **amountCur** parameter.
 
-```X++
+```xpp
 boolean checkAccountBlocked(AmountCur amountCur)
 {
     if (this.blocked == CustVendorBlocked::All 
@@ -340,7 +350,9 @@ boolean checkAccountBlocked(AmountCur amountCur)
 ## Method modifiers
 Several modifiers can be applied to method declarations. Some of the modifiers can be combined (for example, **final static**). Here are the method modifier keywords:
 
--   **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
+-   **abstract**: The method is declared but isn't implemented in a parent class. The method must be overridden in subclasses. If you try to create an object from a subclass where one or more abstract methods that belong to the parent class haven't been overridden, you receive a compiler error. 
+
+    Classes can also be abstract. Sometimes, a class should not be instantiated even though it represents an abstract concept. Only subclasses should be instantiated. Base classes of this type can be declared as **abstract**. For example, you want to model the concept of an account. Accounts are abstract, because only derived classes (ledger accounts and so on) exist in the real world. This examples describes a clear case where you should declare the **Account** class as **abstract**.
 -   **display**: The method's return value should be shown on a page or a report. The value can't be modified on the page or report. Typically, the return value is a calculated value, such as a sum.
 -   **edit**: The method's return type should be used to provide information for a field that is used on a page. The value in the field can be modified.
 -   **final**: The method can't be overridden in any class that derives from its class.
@@ -353,7 +365,7 @@ Several modifiers can be applied to method declarations. Some of the modifiers c
 
 The following examples show only the method headers.
 
-```X++
+```xpp
 // A method that cannot be overridden
 final int dontAlterMe() 
 
@@ -392,7 +404,7 @@ Parameters can be initialized in the method declaration. In this case, the param
 ### Examples of optional parameters
 
 The following code example shows a class with a default parameter.
-```X++
+```xpp
 // This is an example of a function being used as the default.
 public class Person 
 {
@@ -428,7 +440,7 @@ info("Age in years: " + num2str(person.CalculateAgeAsOfDate(2\1\2044),2,0,0,0));
 
 This is an example of how you cannot skip to a second optional parameter. The first method has two optional parameters. The second method is a caller of the first method. The caller wants to override only the \_i3 default value, but the compiler requires that all prior optional parameters also be overridden in the call. 
 
-```X++
+```xpp
 public class Additions 
 {
     static public int AddThreeInts(int _i1, int _i2 = 2,int _i3 = 3)
@@ -452,7 +464,7 @@ info(int2Str(Additions::AddThreeInts(1, 2, 99)));
 
 Class variables are protected by default. By hiding details of the internal implementation of a class, you can change the implementation of the class later without breaking any code that uses that class. To access the data from reference variables, you must create accessor methods. The following example defines a **Point** class that uses accessor methods to access the variables **x** and **y**.
 
-```X++
+```xpp
 class Point
 {
     // Instance variables
@@ -491,7 +503,7 @@ class Point
 
 These method declarations show how the **Point** class provides access to its variables from the outside world. Other objects can manipulate the instance variables of **Point** objects by using the accessor methods.
 
-```X++
+```xpp
 Point myPoint = new Point();
 // Set the x variable using the accessor method.
 myPoint.setX(4.0);
@@ -520,7 +532,7 @@ You can declare functions inside a method. These are called local functions. Whi
 
 The following example shows valid declarations of two local functions, **localFunctionA** and **localFunctionB**. Calls to the local functions occur after the function declarations in the example, as is required.
 
-```X++
+```xpp
 static void StaticFunction()
 {
     int number = 654;
