@@ -39,8 +39,8 @@ When inventory is first received/created in the warehouse, the system updates th
 
 Before you can use this feature, you must enable it on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
-- **Module**: Warehouse management
-- **Feature name**: Warehouse location status
+- **Module** - Warehouse management
+- **Feature name** - Warehouse location status
 
 ## Feature requirements
 
@@ -53,11 +53,15 @@ To use this feature, your system must be set up with the following:
 
 This section provides examples for how to set up and use FIFO and LIFO strategies.
 
+
+> [!TIP]
+> This section provides two demos, one for LIFO and one for FIFO. The procedures provided here assume you will do both demos, in order. We recommend doing both so that you can experience the differences between the two strategies.
+
 ### Enable sample data
 
 To work through these demos using the sample records and values specified here, you must be on a system with the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) installed, and you must select the **USMF** legal entity before you begin.
 
-You can also use these demos as guidance for how to use this feature when working on a production system, but you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
+You can also use these demos as guidance for how to use this feature when working on a production system, but then you must then substitute your own values, and you may be missing some types of required records that would otherwise be provided by the standard demo data.
 
 <a name="demo-set-up"></a>
 
@@ -65,6 +69,7 @@ You can also use these demos as guidance for how to use this feature when workin
 
 Do the following to create the inventory data required to work through the FIFO and/or LIFO demo:
 
+1. If you haven't already done so, sign into a system with demo data installed and select the **USMF** legal entity. 
 1. Go to **Warehouse management** > **Setup** > **Location directives**.
 1. Select **63 Pick containerization**.
 1. Select **Edit**  to put the page into edit mode.
@@ -86,23 +91,27 @@ Do the following to create the inventory data required to work through the FIFO 
 
 This setup leaves inventory in two locations. In the demo data, location FL-001 has an aging date of 4/15/2017, while location FL-002 has an aging date of 1/29/2017. Both locations contain item A0001. <!-- KAMAYBAC: How does the above procedure result in this setup? None of these values are mentioned in the procedure. -->
 
+<a name="fifo-demo"></a>
+
 ### Demo 1: Set up and use FIFO location aging
 
 The FIFO strategy finds the location that contains the oldest aging date and allocates picking based on that.
 
-Before your run the FIFO demo, follow the complete procedure provided in [Set up for the demos](#demo-setup) and be sure to select the the "Location aging FIFO" strategy for the **63 Pick containerization** location directive.  
-
 Do the following:
 
+1. If you haven't already done so, then [prepare the sample data](#demo-set-up) needed for this demo.
 1. Go to **Sales and marketing** > **Sales order** > **All sales orders**.
 1. Select **New** to open the **Create sales order** pane.
 1. In the **Create sales order** pane, make the following settings:
     - On the **Customer** FastTab, set **Customer account** to "US-001".
     - ON the **General** FastTab, set **Warehouse** to "63".
 1. Select **OK** to create the sales order and close the pane.
-1. Your new sales order opens. Select **Add line** in the **Sales order lines** section to add a new line to the table here. For the new line, set **Item number** to "A0001", **Quantity** to "1" and **Unit** to "Pcs".
-1. Reserve the order line and release to warehouse. <!-- KAMAYBAC: How do I do this? I think we need a bit more detail here. -->
-1. In the **Sales order lines** section, open the **Warehouse** drop-down list and select **Work details** to open the work item created for this sales order. Notice that the pick location for the work is FL-002, which is the location containing the license plate with the oldest aging date.
+1. Your new sales order opens. It includes a new, empty row in the **Sales order lines** table. For this order line, set **Item number** to "A0001", **Quantity** to "1" and **Unit** to "Pcs".
+1. Open the **Inventory** drop-down list at the top of the **Sales order lines** table and select **Reservation** to open the **Reservation** page.
+1. Select **Reserve lot** to reserve the ordered quantity of this item from inventory at the selected warehouse.
+1. Close the **Reservation** page.
+1. Open the **Warehouse** tab and select **Actions** > **Release to warehouse**. The system creates a shipment, adds it to a new load, and creates the required work.
+1. In the **Sales order lines** section, open the **Warehouse** drop-down list and select **Work details** to open the work created for this sales order. Note that the **Pick** line for this work shows a **Location** of "FL-002", which is the location containing the license plate with the oldest aging date
 
 ### Demo 2: Set up and use LIFO location aging
 
@@ -110,11 +119,10 @@ The LIFO strategy finds the location that contains the newest aging date and all
 
 Do the following:
 
-1. Set up and complete the full FIFO demo, as described in the previous section, before you start the LIFO demo. We will reuse the wave, and most of the setup, created for that demo in this demo.
-1. Cancel the work you created for the FIFO example
+1. Set up and complete the full FIFO demo, as described in the [previous section](#fifo-demo), before you start this demo. We will reuse the wave, and most of the setup, created for that demo in this demo.
 1. Change the **63 Pick containerization** location directive to use the "Location aging LIFO" strategy, as described in the first part of the [Set up for the demos](#demo-setup) procedure.
-1. Go to **Warehouse management** > **Outbound waves** > **All waves**.
-1. Select the wave containing the order you created for the FIFO demo.
-1. Select Click on "Process" in the WAVE – WAVE section of the ribbon.
-
-Click on "Work" in the WAVE – RELATED INFORMATION section of the ribbon. Notice that the pick location of the work is FL-001, as that is the location containing the license plate with the newest aging date.
+1. Go to **Warehouse management > Outbound waves > Shipment waves > All waves**.
+1. Select and open the wave containing the order you created for the FIFO demo.
+1. Open the **Work** tab and select **Cancel** to cancel the work you created for the FIFO demo.
+1. Open the **Wave** tab and select **Process** from the **Wave** section of the tab.
+1. Select **Work** from the **Related information** section of the **Wave** tab to open the work created for this wave. Note that the **Pick** line for this work shows a **Location** of "FL-001", which is the location containing the license plate with the newest aging date.
