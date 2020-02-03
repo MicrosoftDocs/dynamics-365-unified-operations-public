@@ -55,7 +55,7 @@ Follow these steps to generate and store a **Compare item prices storage** repor
 
 1. Go to **Cost management > Inquiries and reports > Predetermined cost reports > Compare item prices storage**.
 
-1. Select **New** to open the **Compare item prices** panel. Set the following options to define which prices to compare in your report:
+1. Select **New** to open the **Compare item prices** pane. Set the following options to define which prices to compare in your report:
 
     - On the **Parameters** FastTab, give the report a unique **Name** and use the fields in the **Pending prices to compare** and **Prices used for comparison** sections to define which prices and dates to compare.
     - On the **Records to include** FastTab, set up filters and constraints to define which data to include in the report.
@@ -63,7 +63,7 @@ Follow these steps to generate and store a **Compare item prices storage** repor
     > [!NOTE]
     > This report is always executed as part of a batch job.
 
-1. Select **OK** to apply your settings and close the panel.
+1. Select **OK** to apply your settings and close the pane.
 
 1. After the batch job is completed, it will be listed on the **Compare item prices storage** page. You may need to refresh the page to see the report.
 
@@ -83,7 +83,7 @@ After you've generated a report, you can view and explore it at any time as foll
 1. After the selected view opens, you can do the following:
 
     - Select almost any column heading to sort or filter the table by values in that column, just as with most standard forms in Supply Chain Management. Note, you can't sort or filter the **Net change price %** column because it's a calculated field.
-    - Select **Dimension display** to open a panel where you can choose which dimension column to include on the form. Set **Save setup** to **Yes** if you'd like to save these settings so they will be preserved the next time you open the report. Select **OK** to apply your settings and close.
+    - Select **Dimension display** to open a pane where you can choose which dimension column to include on the form. Set **Save setup** to **Yes** if you'd like to save these settings so they will be preserved the next time you open the report. Select **OK** to apply your settings and close.
     - Select any row in the form and then select **View details** to see more information about the selected item. You'll be able to drill down into the data from here.
     - Select any row in the form and then select **View comparison chart** to see an interactive graphical representation of your results as they relate to your selected item. You can explore these results by selecting various graphical elements in the chart and chart legend.
     - Select any row in the form and then select **View calculation details** to see more information about calculations related to the selected item. You'll be able to drill down into the data from here.
@@ -107,7 +107,7 @@ The following is an example of how to export a **Compare item prices storage** r
 
 1. Select **Add** to add the new row and then select **Close** to close the dialog box.
 
-1. Usually you'll export one report at a time. To do this, select the icon in the **Filter** column for the row you just added to the **Inquiry** panel. This will let you define which reports from the **Compare item prices** entity that you want to include in your export. Set the following options to export a single report:
+1. Usually you'll export one report at a time. To do this, select the icon in the **Filter** column for the row you just added to the **Inquiry** pane. This will let you define which reports from the **Compare item prices** entity that you want to include in your export. Set the following options to export a single report:
 
     - On the **Range** tab, select **Add** to add a new row.
     - Set **Table** to **Compare item prices**.
