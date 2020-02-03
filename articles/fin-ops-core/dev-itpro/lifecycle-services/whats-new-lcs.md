@@ -41,14 +41,14 @@ To get started using Lifecycle Services, see the [Lifecycle Services (LCS) user 
 > [!IMPORTANT]
 > Lifecycle Services will no longer announce features or service changes via blog post.  Features that are shipping in a given LCS release will be added here, and new features will also be added to the [Release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
-## January 2020 - Wave 1
+## January 2020 wave 1
 
 | **Area** | **Feature**   | **Release plan**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Admin APIs | Database movement RESTful APIs in Lifecycle Services | [2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/planned-features#cloud-operations-and-lifecycle-services) |
 
-## Legacy announcements
-The following link provides the legacy LCS release notes blog that was published in previous years.
+## Earlier announcements
+The following link provides the LCS release notes blog that was used in previous years for announcements.
 
 - [Lifecycle Services Blog](https://cloudblogs.microsoft.com/dynamics365/author/lifecycle-services-team/)
 
