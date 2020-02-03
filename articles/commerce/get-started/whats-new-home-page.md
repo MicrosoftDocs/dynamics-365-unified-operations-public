@@ -38,8 +38,8 @@ Dynamics 365 Commerce released to public preview in October 2019. To see what's 
 
 | Version | Build number | Availability | Learn more |
 |---------|--------------|--------------|-------------|
-| 10.0.9  |   10.0.319          | April 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.8](whats-new-10-0-8.md) |
-| 10.0.8  |   10.0.383          | February 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.9](whats-new-10-0-9.md) |
+| 10.0.9  |   10.0.383          | April 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.9](whats-new-10-0-9.md) |
+| 10.0.8  |   10.0.319          | February 2020 | [What's new and changed in Dynamics 365 Commerce version 10.0.8](whats-new-10-0-8.md) |
 
 
 ## Releases before February 2020
