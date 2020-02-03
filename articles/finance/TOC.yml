@@ -302,6 +302,18 @@
       items:
       - name: Accounts receivable home page
         href: accounts-receivable/accounts-receivable.md
+      - name: Establish customer payment terms
+        href: general-ledger/tasks/establish-customer-payment-terms.md
+      - name: Establish customer method of payment
+        href: accounts-receivable/tasks/establish-customer-method-payment.md
+      - name: Establish customer payment fees
+        href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer posting profiles
+        href: accounts-receivable/customer-posting-profiles.md
+      - name: Copy customers by using shared number sequences
+        href: accounts-receivable/copy-customer.md
+      - name: Customer workflow
+        href: accounts-receivable/customer-workflow.md
       - name: Credit and collections in Accounts receivable
         href: accounts-receivable/collections-credit-accounts-receivable.md
       - name: Configure Accounts receivables and credit and collections
@@ -332,60 +344,46 @@
         href: accounts-receivable/credit-card-authorizations.md
       - name: Create a free text invoice
         href: accounts-receivable/create-free-text-invoice-new.md
+      - name: Accounting distributions and subledger journal entries for free text invoices
+        href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
       - name: Create a free text invoice template
         href: accounts-receivable/create-free-text-invoice-template-new.md  
       - name: Correct a free text invoice
         href: accounts-receivable/correct-free-text-invoice.md
       - name: Assign a free text invoice template to a customer
         href: accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+      - name: Set up and process recurring invoices
+        href: accounts-receivable/set-up-process-recurring-invoices.md
       - name: Generate and post recurring free text invoices
         href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
       - name: Create sales order invoices
         href: accounts-receivable/tasks/create-sales-order-invoices.md
-      - name: Set up interest rates for an interest code
-        href: accounts-receivable/set-up-interest-rates-interest-code.md
-      - name: Waive, reinstate, or reverse interest fees
-        href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
-      - name: Process interest
-        href: accounts-receivable/tasks/process-interest.md
       - name: Create a customer invoice
         href: accounts-receivable/configure-customer-invoices.md
-      - name: Deposit customer payments
-        href: accounts-receivable/tasks/deposit-customer-payments.md
-      - name: Establish customer payment terms
-        href: general-ledger/tasks/establish-customer-payment-terms.md
-      - name: Establish customer method of payment
-        href: accounts-receivable/tasks/establish-customer-method-payment.md
-      - name: Establish customer payment fees
-        href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer transactions list page
+        href: accounts-receivable/customer-transactions-list-page.md
       - name: Set up bills of exchange
         href: accounts-receivable/set-up-bills-exchange.md
       - name: Close Accounts receivable
         href: accounts-receivable/close-accounts-receivable.md
-      - name: Create a collection letter sequence
-        href: accounts-receivable/tasks/create-collection-letter-sequence.md
-      - name: Process collection letters
-        href: accounts-receivable/tasks/process-collection-letters.md
-      - name: Create a direct debit mandate for a customer
-        href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
-      - name: Create an interest code with a range
-        href: accounts-receivable/tasks/create-interest-code-range.md
-      - name: Create a write-off journal for a customer
-        href: accounts-receivable/tasks/create-write-off-journal-customer.md
-      - name: Set up and generate accounts receivable aging information
-        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-      - name: Copy customers by using shared number sequences
-        href: accounts-receivable/copy-customer.md
-      - name: Customer workflow
-        href: accounts-receivable/customer-workflow.md
       - name: Payments and settlements
         items:
+        - name: Revenue recognition overview
+          href: accounts-receivable/revenue-recognition-overview.md
         - name: Customer payment overview
           href: cash-bank-management/tasks/customer-payment-overview.md
-        - name: Use a customer payment to settle multiple invoices that span multiple discount periods
-          href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Centralized payments for Accounts receivable
           href: accounts-receivable/centralized-payments-accounts-receivable.md
+        - name: Deposit customer payments
+          href: accounts-receivable/tasks/deposit-customer-payments.md
+        - name: SEPA direct debit overview
+          href: accounts-receivable/sepa-direct-debit-overview.md
+        - name: SEPA direct debit mandate
+          href: accounts-receivable/sepa-direct-debit-mandate.md
+        - name: Create a direct debit mandate for a customer
+          href: accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+        - name: Use a customer payment to settle multiple invoices that span multiple discount periods
+          href: accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
         - name: Settle partial customer payment or final payment before discount
           href: accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md
         - name: Settle a partial customer payment before the discount date with a final payment after the discount date
@@ -398,8 +396,48 @@
           href: accounts-receivable/reimburse-customers.md
         - name: Customer payments for a partial amount
           href: accounts-receivable/customer-payments-partial-amount.md
-        - name: Customer transactions list page
-          href: accounts-receivable/customer-transactions-list-page.md
+      - name: Credit and collections
+        items:
+        - name: Credit and collections overview
+          href: accounts-receivable/cm-credit-and-collections-overview.md
+        - name: Credit management setup
+          href: accounts-receivable/cm-credit-mgmt-setup.md
+        - name: Credit management setup information
+          href: accounts-receivable/cm-setup-information.md
+        - name: Add credit management information for a customer
+          href: accounts-receivable/cm-add-credit-mgmt-information-customer.md
+        - name: Customer credit groups
+          href: accounts-receivable/cm-customer-credit-groups.md
+        - name: Credit limit adjustments
+          href: accounts-receivable/cm-credit-limit-adjustments.md
+        - name: Credit holds for sales orders
+          href: accounts-receivable/cm-sales-order-credit-holds.md
+        - name: Periodic credit management tasks
+          href: accounts-receivable/cm-periodic-tasks.md
+        - name: Collections management key concepts
+          href: accounts-receivable/cm-collections-concepts.md
+        - name: Configure Accounts receivables and credit and collections
+          href: accounts-receivable/accounts-receivables-set-up-overview.md
+        - name: Set up credit and collections
+          href: accounts-receivable/set-up-collections.md
+      - name: Set up interest rates for an interest code
+        href: accounts-receivable/set-up-interest-rates-interest-code.md
+      - name: Create an interest code with a range
+        href: accounts-receivable/tasks/create-interest-code-range.md
+      - name: Waive, reinstate, or reverse interest fees
+        href: accounts-receivable/waive-reinstate-reverse-interest-fees.md
+      - name: Process interest
+        href: accounts-receivable/tasks/process-interest.md
+      - name: Review collections information
+        href: accounts-receivable/tasks/review-collections-information.md
+      - name: Create a collection letter sequence
+        href: accounts-receivable/tasks/create-collection-letter-sequence.md
+      - name: Process collection letters
+        href: accounts-receivable/tasks/process-collection-letters.md
+      - name: Set up and generate accounts receivable aging information
+        href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+      - name: Create a write-off journal for a customer
+        href: accounts-receivable/tasks/create-write-off-journal-customer.md
     - name: Budgeting
       items:
       - name: Budgeting home page
