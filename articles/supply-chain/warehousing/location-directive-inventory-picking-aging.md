@@ -71,13 +71,13 @@ Do the following to create the inventory data required to work through the FIFO 
 1. On the **Location directive actions** FastTab, find the line with **Sequence number** "1" and do one of the following:
     - If you are setting up a FIFO demo, then change the **Strategy** to "Location aging FIFO".
     - If you are setting up a LIFO demo, then change the **Strategy** to "Location aging LIFO".
-1. Select the **Edit query** button on the **Location directive actions** FastTab to open a panel.
-1. On the **Range** tab of the panel, select **Add** to add a new line and then make the following settings for the new line: <!-- KAMAYBAC: What are we setting up here? What do these settings do? -->
+1. Select the **Edit query** button on the **Location directive actions** FastTab to open a new pane.
+1. On the **Range** tab of the pane, select **Add** to add a new line and then make the following settings for the new line: <!-- KAMAYBAC: What are we setting up here? What do these settings do? -->
     - **Table** - Locations
     - **Derived table** - Locations
     - **Field** - Zone ID
     - **Criteria** - FLOOR
-1. Select **OK** to apply your settings and close the panel.
+1. Select **OK** to apply your settings and close the pane.
 1. On a mobile device, do the following:<!-- KAMAYBAC: I don't have enough information to do any of this. Can we give more detail here? What are doing here? -->
     - Sign in to warehouse 63.
     - Go to **Quality** > **Scrap**.
@@ -95,11 +95,11 @@ Before your run the FIFO demo, follow the complete procedure provided in [Set up
 Do the following:
 
 1. Go to **Sales and marketing** > **Sales order** > **All sales orders**.
-1. Select **New** to open the **Create sales order** panel.
-1. In the **Create sales order** panel, make the following settings:
+1. Select **New** to open the **Create sales order** pane.
+1. In the **Create sales order** pane, make the following settings:
     - On the **Customer** FastTab, set **Customer account** to "US-001".
     - ON the **General** FastTab, set **Warehouse** to "63".
-1. Select **OK** to create the sales order and close the panel.
+1. Select **OK** to create the sales order and close the pane.
 1. Your new sales order opens. Select **Add line** in the **Sales order lines** section to add a new line to the table here. For the new line, set **Item number** to "A0001", **Quantity** to "1" and **Unit** to "Pcs".
 1. Reserve the order line and release to warehouse. <!-- KAMAYBAC: How do I do this? I think we need a bit more detail here. -->
 1. In the **Sales order lines** section, open the **Warehouse** drop-down list and select **Work details** to open the work item created for this sales order. Notice that the pick location for the work is FL-002, which is the location containing the license plate with the oldest aging date.
