@@ -40,4 +40,6 @@ For more information about upcoming features or the update process for Human Res
 
 - [Update process](hr-admin-setup-update-process.md)
 
+- [Manage features](hr-admin-manage-features.md)
+
 ## See also
