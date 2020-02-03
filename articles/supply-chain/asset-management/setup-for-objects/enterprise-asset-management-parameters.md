@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
- 
 In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up. This topic explains how to set them up. Select **asset management** > **Setup** > **Asset management parameters** to open the form.
 
-The **Create data wizard** button can be used to automatically create setup data for test or demo data purposes in a company in Dynamics 365 Supply Chain Management. Refer to the white paper "Set up Test Data in Asset Management" for information on how to use the wizard.
+> [!NOTE]
+> If you'd like to set up a system that includes demo data for experimenting with Asset Management features, see [Deploy a demo environment](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for instructions.
 
 **Assets** link
 
