@@ -34,13 +34,13 @@ ms.dyn365.ops.version: Platform update 33
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the preview features that are new or changed for Platform update 33 for Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This topic lists the preview features that are new or changed for Platform update 33 for Finance and Operations apps. This version has a build number of 7.0.5559 and is available on the following schedule:
 
 - **Preview release:** February 2020
 - **General availability (self-update):** March 2020
 - **Auto-update:** April 2020
 
-For more information about Platform update 33, see [Additional resources](whats-new-platform-update-32.md#additional-resources).
+For more information about Platform update 33, see [Additional resources](whats-new-platform-update-33.md#additional-resources).
 
 ## Features included in this release
 
@@ -75,7 +75,7 @@ To read a description of this feature, see [Finance and Operations licensing](ht
 
 ### Platform update 33 bug fixes
 
-For information about the bug fixes that are included in each update that is part of Platform update 32, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=400369&dbType=3&qc=30ab94ba46d00083bda800e9a50600fa1fdf63a47c33e8e83f74774b6d245f27).
+For information about the bug fixes that are included in each update that is part of Platform update 32, sign in to LCS, and view [this KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=415033&dbType=3&qc=f7859b6f64b35924c4b067d8264f80b2d56abb8e1af2491c2c27a1f56b7f9bfb).
 
 ### Dynamics 365: 2020 release wave 1 plan
 
