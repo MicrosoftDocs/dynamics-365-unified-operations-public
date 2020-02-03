@@ -58,7 +58,9 @@ You can provide direct feedback or report issues to:  D365BenefitsPreview@micros
 
 When processing life events, the user will receive an error:
 
-Coverage start date must be between <beginning of plan period> and <end of plan period>. The life event will continue to process as expected.
+Coverage start date must be between *beginning of plan period* and *end of plan period*.
+
+The life event will continue to process as expected.
 
 ### Eligibility processing
 
