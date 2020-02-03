@@ -3253,6 +3253,20 @@
             items: 
             - name: Destinations overview
               href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
+            - name: Destination types
+              items:
+                - name: Archive destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-archive.md
+                - name: Email destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-email.md
+                - name: File destination
+                  href:  ../fin-ops-core/dev-itpro/analytics/er-destination-type-file.md
+                - name: Power BI destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-powerbi.md
+                - name: Printer destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md
+                - name: Screen destination
+                  href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md
             - name: Configure destinations
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
           - name: Set up a reference to an ER format
