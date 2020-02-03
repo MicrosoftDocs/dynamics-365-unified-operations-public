@@ -45,12 +45,16 @@ Dynamics 365 Human Resources provides the workforce insights you need to build d
 
 Human Resources connects people and operations data to help you optimize workforce costs and take care of your employees.
 
-To help you get up and running quickly, check out the following links:
+## What's new
 
-| Guide | Description |
-| --- | --- |
-| [Get started](hr-get-started.md) | Find out what's new in Human Resources and familiarize yourself with the app. |
-| [Administrator Guide](hr-admin-overview.md) | Learn about system requirements, how to set up and manage environments, and how to integrate with other apps. |
-| [Developer Guide](hr-developer-overview.md) | Extend Human Resources and learn about fields and entities in Human Resources. |
-| [User Guide](hr-hrpro-overview.md) | Set up and use Human Resources. |
+[What's new or changed in Human Resources](hr-admin-whats-new.md)
+
+## Administrator Guide
+
+
+## Developer Guide
+
+
+## User Guide
+
 
