@@ -54,7 +54,7 @@ Select a feature area to learn more about it.
 - [Configure a Commerce preview environment](provisioning-guide.md)
 - [Commerce architecture](retail-components.md)
 - [Set up your channels](channels-overview.md)
-- [Merchandizing your products and services](product-information.md)
+- [Merchandizing your products and services](set-up-retail-products.md)
 - [Manage your orders](order-fulfillment-overview.md)
 - [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)
