@@ -2509,7 +2509,7 @@
       items:
       - name: Human resources overview
         href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-      - name: Set up Human Resources
+      - name: Set up Human resources
         items:
         - name: Configure Human resources parameters
           href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json

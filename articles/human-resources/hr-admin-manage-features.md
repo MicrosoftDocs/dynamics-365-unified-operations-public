@@ -72,12 +72,9 @@ Benefits management replaces functionality in the **Benefits** workspace. When y
 
 You can view the information in these forms in read-only mode. If you want to edit the information, you must first disable the Benefits management preview feature.
 
-## Preview feature: Leave and absence
+## Preview features in Leave and absence
 
-You can try out the following preview features in Leave and absence:
-
-- [Create leave rules to meet company and regulatory policies](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/create-leave-rules-meet-company-regulatory-policies)
-- [Leave calendar views](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/leave-calendar-views)
+You can also enable and try out preview features for Leave and absence.
 
 ## Feedback
 
