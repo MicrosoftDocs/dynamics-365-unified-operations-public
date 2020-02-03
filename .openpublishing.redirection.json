@@ -12246,6 +12246,398 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/talent/hr-copy-instance.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-setup-copy-instance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/remove-talent-environment.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-setup-remove-instance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/data-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-choose-technology",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/hr-common-data-service-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-common-data-service",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-financeandoperations-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-finance",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/configure-payroll-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-dayforce",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/tutorial-integration-recurring-export.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-integration-recurring-data-export",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-fo-integration.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-integration-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-batch-history-cleanup.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-batch-history",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/analytic-reports-not-updated.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-analytic-reports",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-envi-powerapps-admin-ctr.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-power-apps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/client-disconnects.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-disconnect",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/avoid-text-truncation-position-hierarchy-visio.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-truncate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/run-compensation-process.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-compensation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/save-play-task-guides-lcs.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-task-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/security-roles-addresses.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-private-addresses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-not-in-home-cds.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-not-in-apps",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/talent-reporting-options.md",
+      "redirect_url": "/dynamics365/human-resources/hr-admin-troubleshooting-reporting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/corehrentities.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-entities",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/corehr-custom-fields.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-custom-fields",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/api-odata-authentication.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-api-authentication",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/api-myleaverequests-overview.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-api-myleaverequests-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/api-myleaverequests-submit.md",
+      "redirect_url": "/dynamics365/human-resources/hr-developer-api-myleaverequests-submit",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/set-up-company-specific-hr-parameters.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-parameters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/set-up-hr-parameters-across-legal-entities.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-shared-parameters",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/workflow-manage-employee-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-workflows",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/date-time-fields-in-talent.md",
+      "redirect_url": "/dynamics365/human-resources/hr-setup-date-time-fields",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/departments-jobs-positions.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-departments-jobs-positions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-job.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-jobs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-new-departments.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-define-departments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-department-add-department-hierarchy.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-add-department-hierarchy",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-new-jobs.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-define-jobs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-calendar-working-times.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-create-working-time-calendar",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/personnel-actions-faq.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-actions-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/modify-reporting-relationships-position.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-modify-reporting-relationships-position",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enter-worker-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-enter-worker-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/loan-item-worker.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-loan-item-worker",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-loan-items.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-create-loan-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/loan-items.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-loan-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/develop-succession-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-develop-succession-plan",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enter-project-timesheets.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-enter-project-timesheets",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/mass-hire-projects.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-mass-hire-projects",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-mass-hire-project.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-create-mass-hire-project",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/set-up-positions.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-set-up-positions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/set-up-injury-illness-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-set-up-injury-illness-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/maintain-employee-injury-illness-information.md",
+      "redirect_url": "/dynamics365/human-resources/hr-personnel-maintain-employee-injury-illness-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/compensation-plans.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/set-up-compensation-grids.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-grids",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-fixed-compensation-plans.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-fixed-plans",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/develop-salary-compensation-structure-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-structure",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/create-variable-compensation-plans.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-variable-plans",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enroll-employee-fixed-compensation-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-enroll-employees-fixed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enroll-employee-variable-compensation-plan.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-enroll-employees-variable",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-compensation-process-calculate-results.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-define-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/process-compensation.md",
+      "redirect_url": "/dynamics365/human-resources/hr-compensation-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/manage-benefit-program.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-management-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/benefit-eligibility-policies.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-eligibility-policies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/benefit-eligibility-process.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-eligibility-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/define-benefit-eligibility-rules-policies.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-define-eligibility-rules",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/deliver-employee-benefits-program.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-deliver-employee-benefits-program",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-new-benefit.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-create",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/enroll-remove-benefits-workers.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-enroll-workers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/manage-benefit-expiration-dates.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-expiration-dates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/generate-aca-reports.md",
+      "redirect_url": "/dynamics365/human-resources/hr-benefits-aca-reports",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/performance-management-overview.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-performance-management-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/skills.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-skills",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/add-your-performance-journal-send-praise-someone.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-add-performance-journal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-goal.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-create-goal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-performance-review.md",
+      "redirect_url": "/dynamics365/human-resources/hr-develop-create-performance-review",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/courses.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-courses",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/questionnaires.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-questionnaires",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/design-questionnaires.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-design-questionnaires",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/distribute-questionnaires.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-distribute-questionnaires",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/distribute-questionnaires-scheduling.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-distribute-questionnaires-scheduling",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/talent/evaluate-questionnaire-results.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-evaluate-questionnaire-results",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/analyze-questionnaire-results.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-analyze-questionnaire-results",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-open-ended-question.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-create-open-ended-question",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/create-closed-ended-question.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-create-closed-ended-question",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/hr/tasks/make-question-dependent-answer-previous-question.md",
+      "redirect_url": "/dynamics365/human-resources/hr-learning-depending-question",
       "source_path": "articles/retail/add-recommendations-control-pos-screen.md",
       "redirect_url": "/dynamics365/commerce/add-recommendations-control-pos-screen",
       "redirect_document_id": "false"
