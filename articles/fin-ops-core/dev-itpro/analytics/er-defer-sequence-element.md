@@ -5,7 +5,7 @@ title: Defer the execution of sequence elements in ER formats
 description: This topic explains how to defer the execution of a sequence element in an Electronic reporting (ER) format.
 author: NickSelin
 manager: kfend
-ms.date: 1/16/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -63,7 +63,7 @@ To complete this example, you must have access to the **USMF** company in Financ
 - Electronic reporting functional consultant
 - System administrator
 
-If you haven't yet completed the example in the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example) topic, download the following [configurations](general-electronic-reporting.md/#Configuration) of the sample ER solution.
+If you haven't yet completed the example in the [Defer the execution of XML elements in ER formats](er-defer-xml-element.md#Example) topic, download the following [configurations](general-electronic-reporting.md#Configuration) of the sample ER solution.
 
 | Content description            | File name |
 |--------------------------------|-----------|
