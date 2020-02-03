@@ -46,7 +46,7 @@ The following features are included in this release. The feature titles link to 
 
  - [Update bank balances when posting transactions using advanced ledger entry](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/update-bank-balances-when-posting-transactions-using-advanced-ledger-entry)
  
-  - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
+ - [Vendor bidding – RFQ questions from vendors and summarized responses](https://docs.microsoft.com/en-us/business-applications-release-notes/april19/dynamics365-finance-operations/vendor-bidding)
 
 ## Additional resources
 
