@@ -34,15 +34,15 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Set up a Commerce preview environment
+      - name: Set up a Dynamics 365 Commerce preview environment
         items:
-        - name: Commerce preview environment overview
+        - name: Dynamics 365 Commerce preview environment overview
           href: cpe-overview.md
-        - name: Provision a Commerce preview environment
+        - name: Provision a Dynamics 365 Commerce preview environment
           href: provisioning-guide.md
-        - name: Configure a Commerce preview environment
+        - name: Configure a Dynamics 365 Commerce preview environment
           href: cpe-post-provisioning.md
-        - name: Configure optional features for a Commerce preview environment
+        - name: Configure optional features for a Dynamics 365 Commerce preview environment
           href: cpe-optional-features.md
         - name: Commerce preview environment FAQ
           href: cpe-faq.md
