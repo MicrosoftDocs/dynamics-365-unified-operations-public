@@ -33,9 +33,9 @@ ms.dyn365.ops.version: Human Resources
 
 This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.2809. The numbers in parentheses in some headings refer to support numbers in Microsoft Dynamics Lifecycle Services (LCS).
 
-## Can't remove activities from the Review form (403542)
+## Can't remove activities from Performance review form (403542)
 
-You can now delete selected activities by using the **Remove** button on the **Performance review** page.
+You can now delete selected activities by using the **Remove** button on the **Performance review** form.
 
 ## In preview
 
