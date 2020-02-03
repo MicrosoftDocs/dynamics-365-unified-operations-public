@@ -3,7 +3,7 @@
 
 title: Reset receipt numbers 
 description: This topic describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
-author: Shalabh Jain
+author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
