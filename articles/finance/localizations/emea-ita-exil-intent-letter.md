@@ -60,8 +60,12 @@ In **Accounts receivable > Setup > Accounts receivable parameters**, in **Number
 
 ## Create intent letters
 You can create a new intent letter for a selected customer. In **Accounts receivable > Customers > All customers**, for the selected Customer, in **Sell** menu section, select **Setup > Intent letters**.
+
 ![Intent letter](media/emea-ita-exil-intent-new-cust.jpg)
-Then click on **New** button.
+
+Then click on **New** button and enter the data of a new intent letter.
+![New intent letter](media/emea-ita-exil-intent-new-cust2.jpg)
+
 Alternatively, you can create a new intent letter for any applicable customer in **Accounts receivable > Intent letters > Intent letters**.
 
 ### Post
