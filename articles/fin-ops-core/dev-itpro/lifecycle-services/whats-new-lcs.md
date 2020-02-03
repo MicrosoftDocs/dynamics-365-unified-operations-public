@@ -39,21 +39,13 @@ Microsoft Dynamics Lifecycle Services (LCS) provides a cloud-based collaborative
 To get started using Lifecycle Services, see the [Lifecycle Services (LCS) user guide](lcs-user-guide.md).
 
 > [!IMPORTANT]
-> Lifecycle Services will no longer announce features or service changes via blog post.  All major announcements will be added here, and new features will also be added to the [Release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
+> Lifecycle Services will no longer announce features or service changes via blog post.  Features that are shipping in a given LCS release will be added here, and new features will also be added to the [Release plans](https://go.microsoft.com/fwlink/?linkid=2010158).
 
-## January 2020
+## January 2020 - Wave 1
 
-### Environment actions
-
-| **Change category** | **Sub-area**   | **Description**                          |
+| **Area** | **Feature**   | **Release plan**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Announcement | Database Movement | Starting in February 2020, the ability to perform Database Movement Operations (Refresh, Import, Export, Point-in-time Restore) will require a minimum of Platform Update 20.  This change will help support the stability of the service. |
-
-### Admin APIs
-
-| **Change category** | **Sub-area**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Feature | Database Movement | The RESTful APIs to perform database refresh are now generally available.  For more information, visit [the documentation](../database/api/dbmovement-api-overview.md). |
+| Admin APIs | Database movement RESTful APIs in Lifecycle Services | [2019 release wave 2](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/planned-features#cloud-operations-and-lifecycle-services) |
 
 ## Legacy announcements
 The following link provides the legacy LCS release notes blog that was published in previous years.
