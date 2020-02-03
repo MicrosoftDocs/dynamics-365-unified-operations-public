@@ -107,7 +107,7 @@ The following is an example of how to export a **Compare item prices storage** r
 
 1. Select **Add** to add the new row and then select **Close** to close the dialog box.
 
-1. Usually you'll export one report at a time. To do this, select the icon in the **Filter** column for the row you just added to the **Inquiry** pane. This will let you define which reports from the **Compare item prices** entity that you want to include in your export. Set the following options to export a single report:
+1. Usually you'll export one report at a time. To do this, set up a **Filter** for the row you just added to the **Inquiry** pane. This will let you define which reports from the **Compare item prices** entity that you want to include in your export. Set the following filter options to export a single report:
 
     - On the **Range** tab, select **Add** to add a new row.
     - Set **Table** to **Compare item prices**.
