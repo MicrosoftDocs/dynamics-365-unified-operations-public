@@ -115,7 +115,7 @@
         href: hr-admin-troubleshooting-truncate.md
       - name: Run the compensation process
         href: hr-admin-troubleshooting-compensation.md
-      - name: Save task guide to LCS
+      - name: Save a task guide to LCS
         href: hr-admin-troubleshooting-task-guide.md
       - name: Access private addresses by security role
         href: hr-admin-troubleshooting-private-addresses.md
@@ -367,10 +367,10 @@
         href: hr-compensation-overview.md
       - name: Set up compensation grids
         href: hr-compensation-grids.md
-      - name: Create fixed compensation plans
-        href: hr-compensation-fixed-plans.md
       - name: Develop a compensation structure and plan
         href: hr-compensation-structure.md
+      - name: Create fixed compensation plans
+        href: hr-compensation-fixed-plans.md
       - name: Create variable compensation plans
         href: hr-compensation-variable-plans.md
       - name: Enroll employees in a fixed compensation plan
