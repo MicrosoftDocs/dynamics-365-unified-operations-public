@@ -43,7 +43,7 @@ The following preview features are available on February 3, 2020:
 
 - **Leave and absence preview features** - For more information, see [Leave and absence preview features](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Benefits management preview feature** - For more information, see [Benefits management overview](hr-benefits-management-overview.md).
+- **Benefits management preview feature** - For more information, including known issues, see [Benefits management overview](hr-benefits-management-overview.md).
 
 ## Coming soon
 
