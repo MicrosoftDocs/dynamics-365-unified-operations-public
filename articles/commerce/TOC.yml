@@ -1802,6 +1802,8 @@
           items:
           - name: Module definition file
             href: e-commerce-extensibility/module-definition-file.md
+          - name: Module React component file
+            href: e-commerce-extensibility/module-react-file.md
           - name: Module view file
             href: e-commerce-extensibility/module-view-file.md
           - name: Module data file
@@ -1862,6 +1864,8 @@
             href: e-commerce-extensibility/core-data-actions.md
           - name: Call Commerce Scale Unit APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
+          - name: Call Commerce Scale Unit extension APIs
+            href: e-commerce-extensibility/call-retail-extension-api.md
         - name: Advanced data action topics
           items:
           - name: Chain data actions
