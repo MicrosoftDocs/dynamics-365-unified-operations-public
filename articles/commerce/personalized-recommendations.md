@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Enable personalized recommendations
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
