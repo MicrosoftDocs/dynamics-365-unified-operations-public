@@ -32,7 +32,6 @@ ms.dyn365.ops.version: 10.0.5
 
 # Opt out of personalized recommendations
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce.
