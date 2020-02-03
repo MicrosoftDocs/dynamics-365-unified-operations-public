@@ -3251,6 +3251,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/finance/toc.json
             - name: Configure destinations
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
+          - name: Set up a reference to an ER format
+            href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
           - name: Automatically validate generated reports
             items: 
             - name: Trace generated report results and compare them with baseline values
