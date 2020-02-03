@@ -260,4 +260,3 @@ The following illustration shows an example of a template mapping in Data Integr
 ![Template Mapping](./media/IntegrationMapping.png)
 
 
-## See also

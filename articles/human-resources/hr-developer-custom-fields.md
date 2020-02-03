@@ -47,5 +47,3 @@ The following entities in Common Data Service support custom fields created in H
 - Position type
 
 Be sure to enable any custom fields that you create so you can use them in Common Data Service. For more information, see [Exposing custom fields on data entities](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
-
-## See also

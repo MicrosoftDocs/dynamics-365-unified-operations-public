@@ -804,5 +804,3 @@ The following Human Resources entities are available in Common Data Service.
 
 ### Work Calendar
 ![Work Calendar](./media/HCMCommon-work-calendar-entity-diagram.png)
-
-## See also

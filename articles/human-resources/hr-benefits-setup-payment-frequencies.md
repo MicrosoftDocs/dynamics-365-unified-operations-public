@@ -62,5 +62,3 @@ The conversion factors fields identify the conversion factor from the payment fr
    | Daily conversion factor | The annual conversion factor for the payment frequency. For example, the annual conversion factor for the monthly pay frequency is: </br></br>(12 monthly payments / 365 days) = 0.032877 |
 
 4. Select **Save**. 
-
-## See also

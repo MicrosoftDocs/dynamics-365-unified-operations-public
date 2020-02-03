@@ -77,7 +77,3 @@ To remove a Human Resources environment from an existing Power Apps environment,
 6. In your LCS project, select the **Human Resources App Management** tile. 
 7. Select the instance you would like to remove, which should be marked with a Deployment status of **Failed**.
 8. Select **Remove instance** and confirm your decision. 
-
-
-
-## See also

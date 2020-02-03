@@ -118,6 +118,3 @@ In addition, the following statuses change when you copy an instance:
 All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the target environment. If you aren't, you won't be able to sign in to the target sandbox environment after the copy has completed.
 
 All non-Administrator users in the target sandbox environment are disabled to prevent unwanted sign-ins in the sandbox environment. Administrators can reenable users if needed.
-
-
-## See also

@@ -55,5 +55,3 @@ This article shows you how to run the process for life event eligibility.
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
-
-## See also

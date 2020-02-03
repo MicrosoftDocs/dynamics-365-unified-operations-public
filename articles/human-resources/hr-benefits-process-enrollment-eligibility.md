@@ -58,6 +58,3 @@ This article explains how to run the enrollment eligibility process.
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
-
-
-## See also

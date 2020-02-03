@@ -101,5 +101,3 @@ You can also use double tiers. If you select **Double tier** for the **Use tiers
    | Flex credit smoker rate | The number of flex credits the benefit costs, based on the calculation defined for the tier level for smokers. |
 
 5. Select **Save**. 
-
-## See also

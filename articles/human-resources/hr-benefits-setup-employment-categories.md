@@ -43,5 +43,3 @@ Set up employment categories in Dynamics 365 Human Resources to match your worke
 3. Specify values for **Worker type**, **Employment category**, and **Description**.
 
 4. Select **Save**. 
-
-## See also

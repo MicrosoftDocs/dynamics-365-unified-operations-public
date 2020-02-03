@@ -48,5 +48,3 @@ Dynamics 365 Human Resources uses reason codes to explain why an employee’s be
    | Description | A description of the reason code. |
 
 4. Select **Save**. 
-
-## See also

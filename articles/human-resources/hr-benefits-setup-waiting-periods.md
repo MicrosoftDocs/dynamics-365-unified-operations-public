@@ -52,5 +52,3 @@ In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to
    | Waiting day | Select the waiting day to use to calculate the waiting date. |
 
 4. Select **Save**.
-
-## See also

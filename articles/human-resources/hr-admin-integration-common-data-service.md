@@ -115,4 +115,3 @@ Use this procedure if changes from Common Data Service are taking too long to ap
 [![Running a full synchronization](./media/hr-common-data-service-configuration-sync-now.png)](./media/hr-common-data-service-configuration-sync-now.png)
 
 
-## See also

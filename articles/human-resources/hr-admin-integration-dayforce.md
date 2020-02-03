@@ -681,5 +681,3 @@ Employees can declare passport information. This information is of the **Passpor
 
 Employees can declare multiple identification numbers of the **Passport** identification type. However, only the current active passport entry is integrated into Dayforce. If all passport entries are expired, the passport that was most recently issued is integrated into Dayforce.
 
-
-## See also

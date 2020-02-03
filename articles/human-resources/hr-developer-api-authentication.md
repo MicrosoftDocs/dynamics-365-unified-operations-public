@@ -190,5 +190,3 @@ namespace TalentODataPoC
 ```
 
 Once you've retrieved an access token, you'll pass the token in the Authorization header as a bearer token with each request you send to the data API, as described above.
-
-## See also

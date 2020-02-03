@@ -64,5 +64,3 @@ For example, if today is February 1, and on February 14 worker Joe Smith is sche
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.
-
-## See also

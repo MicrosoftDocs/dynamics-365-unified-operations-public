@@ -68,11 +68,3 @@ Skill-mapping profiles allow you to find current employees or candidates with qu
 You can create a skill profile analysis to view a list of the competencies of a worker, applicant, or contact person as of a specific date. You can create a skill gap analysis to compare a person’s skills and the skills that are required for a specific job.  
 
 
-
-Additional resources
---------
-
-[Human resources](index.yml)
-
-
-

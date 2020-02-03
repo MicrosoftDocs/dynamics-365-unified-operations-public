@@ -41,6 +41,3 @@ To get support for Human Resources, use the resources in the following table. Th
 | Get in-app support. | Select the **Help** button (**?**) in the upper-right corner of the page. Select **Support**. Issues are reported on the **Active issues** tab in LCS, where an admin can determine whether to provide in-house support or submit the issues to Microsoft. |
 | Get help with questions about Human Resources licensing. | Contact your partner or Microsoft sales representative. |
 | Request new features and functionality in Human Resources. | In Human Resources, select the **Help** button (**?**), and then select **Ideas**. You can also visit [Dynamics 365 Application Ideas](https://experience.dynamics.com/ideas/) to view, search, or vote for existing ideas, or to add new ideas. |
-
-
-## See also

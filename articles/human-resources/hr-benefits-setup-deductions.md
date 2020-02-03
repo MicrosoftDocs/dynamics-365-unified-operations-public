@@ -59,5 +59,3 @@ Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, 
 4. To track and maintain changes to the benefit rate setup, select **Actions**, and then select **Maintain versions**.
 
 5. Select **Save**. 
-
-## See also

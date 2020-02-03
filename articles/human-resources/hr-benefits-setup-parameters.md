@@ -70,5 +70,3 @@ Before you can set up leave plans in Microsoft Dynamics 365 Human Resources, you
    | **Auto select designees** | Specifies whether to automatically select dependents and beneficiaries based on their eligibility for plan options. |
 
 3. Select **Save**.
-
-## See also

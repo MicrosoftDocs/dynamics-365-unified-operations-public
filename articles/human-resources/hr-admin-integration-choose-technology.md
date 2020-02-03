@@ -49,6 +49,7 @@ have for data integration with Human Resources.
 Historically, integrating data between multiple systems has been difficult.
 Microsoft is taking steps to make data integration easier, and a large step
 toward that goal is realized through [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
+
 Going forward, Human Resources is making Common Data Service the preferred
 public interface for Human Resources data. Over time, we expect that all the most important data managed by Human Resources will be exposed in Common Data Service. We recommend Common Data Service as the technology of choice for most integrating applications. While we realize that not all data your application may require is currently present in Common Data Service, and that your project timelines may require an alternative technology, please let us know when Common Data Service does not meet your integration needs.
 
@@ -198,4 +199,3 @@ if it is hard to use the data for your specific purposes (such as reporting, dat
 mashups, or custom applications). Dynamics 365 Human Resources provides several
 technologies for working with your data outside of the Human Resources application's user interface (UI), allowing integrating applications access to the data. This topic has described the available integration technologies and some of their key characteristics. This information should help you make better decisions on which approaches to leverage for your integration projects.
 
-## See also
