@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculate the delivery date for a line, based on the lead time
-description: This topic explains how to calculate a delivery date for a line, based on a vendor's lead time and your organization's working days calendar.
+description: This topic describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar. 
 author: velofog
 manager: AnnBe
 ms.date: 09/03/2019
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes how to calculate a delivery date for a line, based on a vendor's lead time and your organization's working days calendar (on the **Quotation** tab of the **Request for quotation reply** page). Vendors can specify a lead time for each line. Then, when a purchase order is confirmed, a delivery date for a line is calculated from the confirmation date, based on the lead time and the working days calendar. If no lead time is specified, the confirmation date is used as the delivery date, unless the delivery date is automatically calculated.
+This topic describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar, as they are specified on the **Quotation** tab of the **Request for quotation reply** page. Vendors can specify a lead time for each line. Then, when a purchase order is confirmed, a delivery date for a line is calculated from the confirmation date, based on the lead time and the working days calendar. If no lead time is specified, the confirmation date is used as the delivery date, unless the delivery date is automatically calculated.
 
 The lead time details for a line are available on the following pages: **Request for quotation reply**, **Purchase requisitions**, **Purchase agreements**, and **Purchase order**.
 
@@ -84,7 +84,7 @@ Lead time details that a vendor enters for a line on the **Request for quotation
 Lead time details that are entered for a line on the **Purchase requisition** page appear in the **Lead time** section for a purchase agreement. You can edit an existing unapproved purchase agreement or include the lead time details in a new purchase agreement. The lead time values for the purchase agreement lines are carried over when a purchase order is created.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> Purchase agreements**.
-2. On the **Purchase agreements** list page, select a purchase agreement in the list. Alternatively, select **New**, and include this information when you enter a new purchase agreement.
+2. On the **Purchase agreements** list page, select a purchase agreement in the list. Alternatively, select **New**.' (as in step 2 of the 'Purchase requisition' procedure' above).
 3. On the **Purchase agreement details** page, on the Action Pane, on the **Maintain** tab, select **Edit**.
 4. On the **Purchase agreements** FastTab, select the purchase agreement line.
 5. On the **Line details** FastTab, on the **General** tab, in the **Lead time** section, update the calculated delivery date.
@@ -99,7 +99,7 @@ Lead time details that are entered for a line on the **Purchase requisition** pa
 Lead time details that are entered for a line on the **Purchase agreement** and **Purchase requisition** pages appear in the **Lead time** section for a purchase order. You can edit lead time details for an unconfirmed purchase order.
 
 1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders**.
-2. On the **All purchase orders** list page, select a purchase order in the list. Alternatively, select **New**, and include this information when you create a new purchase order.
+2. On the **All purchase orders** list page, select a purchase order in the list. Alternatively, select **New**.' (as in step 2 of the 'Purchase requisition' procedure' above).
 2. On the **Purchase order** page, on the Action Pane, on the **Maintain** tab, select **Edit**.
 3. On the **Line details** FastTab, on the **Delivery** tab, in the **Lead time** section, in the **Delivery date** field, view the calculated delivery date.
 4. In the **Lead time** field, edit the number of days that are required for lead time.
