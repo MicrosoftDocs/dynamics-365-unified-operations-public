@@ -71,8 +71,6 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 3. Select the instance to copy, and then select **Copy**.
 
-   ![[Copy an instance](./media/copy-instance-copy-button.png)](./media/copy-instance-copy-button.png)
-
 4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the value of the **Copy status** field to be updated to **Completed**.
 
    ![[Select instance to overwrite](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
