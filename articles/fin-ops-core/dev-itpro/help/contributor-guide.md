@@ -20,13 +20,13 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.date: 01/31/2020
+ms.date: 02/03/2020
 ms.author: edupont
 ---
 
 # Extend, Customize, and Collaborate on the Help
 
-The source files for the Help for the base application is available in public GitHub repos so that you can easily extend and customize the content for your customers. In this section, you can learn about working with the GitHub repos and MarkDown files.  
+The source files for the Help for the Microsoft's Finance and Operations apps are available in public GitHub repos so that administrators can easily extend and customize the content for specific solutions. In this section, you can learn about working with the GitHub repos and MarkDown files.  
 
 You can also find guidance in the [Docs Contributor Guide](/contribute/).  
 
@@ -47,7 +47,7 @@ To join Microsoft in the world of GitHub and MarkDown, there are new terminology
 
 1. Fork the right repo
 
-    You cannot work directly in the repos in the MicrosoftDocs GitHub org, such as the dynamics365smb-docs repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/dynamics365smb-docs repo. For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
+    You cannot work directly in the repos in the MicrosoftDocs GitHub org, such as the Dynamics-365-Unified-Operations-public repo, so the first thing you need to do is create a fork of the repo under your GitHub account. A fork basically is copy of this repo that lets you work freely on the content without affecting the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo. For more information, see [Set up your GitHub account](/contribute/get-started-setup-github) and [Set up Git repository locally for documentation](/contribute/get-started-setup-local) in the Docs Authoring Guide.
 
     > [!TIP]
     > You are not required to make your GitHub repos public. When you fork a public repo, you can specify in the settings for the new repo if the repo is public, private, or available only to specific GitHub accounts.
@@ -88,7 +88,7 @@ For more information, see [Custom Help Toolkit](custom-help-toolkit.md).
 
 ### Contributing
 
-A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the dynamics365smb-docs repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/dynamics365smb-docs repo, you create what is called a *pull request* from your repo to the MicrosoftDocs/dynamics365smb-docs repo. The Microsoft team will then review the request and include the changes as appropriate.
+A benefit of GitHub is the ability for you to contribute to the core content that the Microsoft team provides in the Dynamics-365-Unified-Operations-public repo. For example, you might have a new article that you think would be beneficial or you might have a correction to an existing article. If you would like to contribute to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo, you create what is called a *pull request* from your repo to the MicrosoftDocs/Dynamics-365-Unified-Operations-public repo. The Microsoft team will then review the request and include the changes as appropriate.
 
 ### Contribute to the documentation
 
