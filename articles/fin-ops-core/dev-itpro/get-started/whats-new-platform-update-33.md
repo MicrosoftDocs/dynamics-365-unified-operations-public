@@ -5,7 +5,7 @@ title: Preview features in Platform update 33 for Finance and Operations apps (A
 description: This topic lists the features that are in preview in Platform update 33 for Finance and Operations apps. 
 author: sericks007
 manager: AnnBe
-ms.date: 01/17/2020
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -44,30 +44,20 @@ For more information about Platform update 33, see [Additional resources](whats-
 
 ## Features included in this release
 
-### Feature name (must match the name of the feature found in the release plan)
-To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
-
-To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
-- [Title of content](URL of content)
-- [Title of content](URL of content)
-
 ### (Preview) Saved views
-In 10.0.9 / Platform update 33, the Saved views feature is now public preview, with one significant functional addition -- the ability to publish views to users as the default view. To read the full description of the Saved views feature, see [User productivity - Saved views - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) in the release plan.  
+In version 10.0.9 Platform update 33, the Saved views feature is now public preview, with one significant functional addition - the ability to publish views to users as the default view. To read the full description of the Saved views feature, see [User productivity - Saved views - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=abfdf192-d91d-ea11-a811-000d3a8f0f1e) in the release plan.  
 
-To learn even more about saved views, see: 
-- [Saved views](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/saved-views)
+To learn more about saved views, see [Saved views](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views).
 
 ### (Preview) New grid control 
-In 10.0.9 / Platform update 33, the new grid control is now public preview. For more information about what's included in this feature, read the description of this feature at [User productivity - New grid control - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ebd342bc-d91d-ea11-a811-000d3a8f0f1e) in the release plan.
+In version 10.0.9 Platform update 33, the new grid control is now public preview. For more information about what's included in this feature, read the description of this feature at [User productivity - New grid control - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ebd342bc-d91d-ea11-a811-000d3a8f0f1e) in the release plan.
 
-To learn even more about this feature, see: 
-- [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md)
+To learn more about this feature, see [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### (Preview) Grouping in grids 
 To read a description of this feature, see [Grouping in grids](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=bc751b0a-83ca-e911-a96a-000d3a4f36ce) in the release plan.
 
-To learn more about the feature, see: 
-- [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md)
+To learn more about the feature, see [Grid capabilities](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jasongre-update33/articles/fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### (Preview) Embed third-party apps  
 To read a description of this feature, see [Embed third-party apps - Phase 2](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=ec26b6a7-db1d-ea11-a811-000d3a8f0f1e) in the release plan.
@@ -80,13 +70,6 @@ To read a description of this feature, see [New task recorder capabilities for R
 
 ### (Preview) Branding changes for updated Finance and Operations licensing
 To read a description of this feature, see [Finance and Operations licensing](https://successhub.crm.dynamics.com/main.aspx?appid=0fe9f79a-a1f6-4064-af95-ded6c5e7bd5c&pagetype=entityrecord&etn=rn_releasenote&id=a49e05d7-df1d-ea11-a811-000d3a8f022a) in the release plan.
-
-### Feature name (must match the name of the feature found in the release plan)
-To read a description of this feature, see [Feature name](URL to feature description in release plan) in the release plan.
-
-To learn more about the feature, see: (remove this bulleted list if you don't have any other content published)
-- [Title of content](URL of content)
-- [Title of content](URL of content)
 
 ## Additional resources
 
