@@ -131,7 +131,7 @@ Now, when you develop this module, you will have access to the product informati
 
 ## Register a core data action
 
-The Dynamics 365 Commerce online SDK contains a set of core data actions for performing typical retail data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in your MODULE\_data.ts file.
+The Dynamics 365 Commerce online SDK contains a set of core data actions for performing typical data tasks. Interfaces for core data actions can be found under the \\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib directory. To register a core data action so that you can use it inside your module, use the following format in your MODULE\_data.ts file.
 
 ```typescript
 import { SimpleProduct } from '@msdyn365-commerce/commerce-entities';

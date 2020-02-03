@@ -36,10 +36,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Users of the following products can get access to context-sensitive Help and other content based on the same Help system:
 
-- Dynamics 365 Finance
-- Dynamics 365 Retail
+- Dynamics 365 Finance 
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 You can access product-specific help from the Help pane in whichever product you are using.  
 
@@ -47,7 +47,7 @@ You can access product-specific help from the Help pane in whichever product you
 
 ## Help on docs.microsoft.com
 
-The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) is the primary source of product documentation for the applications listed above. The site offers the following features:
+The docs.microsoft.com site ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) is the primary source of product documentation for the applications listed above. The site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives us a faster and more flexible way to create, deliver, and update product documentation. Therefore, it helps to ensure that you have access to the latest technical information.
 - **Content that is written by experts** – The site provides a richer set of product documentation that can be enhanced by community members both inside and outside Microsoft.
@@ -114,12 +114,12 @@ To access Help content, either click the **Help** (**?**) icon and then choose H
 From the Help pane, you can access articles that apply to the client. When you first open the Help pane and click the **Help** tab, you'll see the articles that apply to the page that you're currently on. If no articles are found, you can enter keywords to refine your search. When you click an article in the Help pane, a new tab opens in your browser and displays the article.
 
 > [!IMPORTANT]
-> This section does not apply to Dynamics 365 Talent. The Help system for Talent is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Talent.
+> This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to Task guides for the product. Also, you cannot create custom Task guides for Human Resources.
 
 
 ### Accessing Task guides from the Help pane
 
-Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Management, and Retail and configure some settings.
+Before you can access Task guides from the Help pane, a System administrator has to go to the **System parameters** page in Finance, Supply Chain Management, and Commerce and configure some settings.
 
 > [!NOTE]
 > - In order to configure help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.

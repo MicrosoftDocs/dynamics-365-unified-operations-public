@@ -5,7 +5,7 @@ title: Troubleshoot on-premises deployments
 description: This topic provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: sarvanisathish
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod:
 ms.service: dynamics-ax-platform
@@ -1425,3 +1425,40 @@ The located assembly's manifest definition does not match the assembly reference
 **Reason:** There is a .dll mismatch between the runtime and the application.
 
 **Resolution:** Use TSG\_SysClassRunner.ps1. For more information, see [TSG_SysClassRunner.ps1](onprem-tsg-implementations.md#sysclassrunner).
+
+## DBSync fails with PEAP APP version 10.0.9 Platform update 33
+**Issue:** During deployment of the APP 10.0.9 PU33 PEAP-package, the deployment fails with the AXSF applications staying in "InBuild" status in Service Fabric explorer. When reviewing the logs on the AXSF nodes's work directories, the following DBSync error can be found. 
+
+Error message from DBSync:
+ ```stacktrace
+ Microsoft.Dynamics.AX.Deployment.Setup.exe -bindir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -metadatadir "C:\ProgramData\SF\LBDEN08FS1AOS03\Fabric\work\Applications\AXSFType_App398\AXSF.Code.1.0.20200123151456\Packages" -sqluser "" -sqlserver "" -sqldatabase "" -setupmode servicesync -syncmode fullall -onprem 
+Stack trace: Invalid attempt to call  running in CIL on the client.
+   at Microsoft.Dynamics.Ax.MSIL.Interop.throwException(Int32 ExceptionValue, interpret* ip)
+   at Microsoft.Dynamics.Ax.MSIL.Interop.ThrowCQLError(IL_CQL_ERR cqlErr, String p1)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrow(Exception exception)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, String elementName)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.LogOrRethrowFormattedMessage(Exception exception, String typeName, Int32 typeId)
+   at Microsoft.Dynamics.AX.Kernel.ApplicationId.ApplicationIdBridge.LoadTableById(ApplicationIdBridge* , Int32 id, ObjectIdDelegate* cb)
+   at cqlClass.callEx(cqlClass* , Char* , interpret* )
+   at Microsoft.Dynamics.Ax.MSIL.cqlClassIL.Call(IntPtr c, String methodName, Object[] parameters, Type[] types, Object[] varargs, Type[] varargsTypes)
+   at Microsoft.Dynamics.Ax.Xpp.XppObjectBase.Call(String methodName, Object[] parameters, Type[] types, Object[] varargs)
+   at Microsoft.Dynamics.Ax.Xpp.DictTable.Supportinheritance()
+   at Dynamics.AX.Application.SysDictTable.`getRootTable(Int32 _tabid) in xppSource://Source/ApplicationPlatform\AxClass_SysDictTable.xpp:line 1498
+   at Dynamics.AX.Application.SysDictTable.getRootTable(Int32 _tabid)
+   at Dynamics.AX.Application.SysDataBaseLog.`ConfigureSqlLogging() in xppSource://Source/ApplicationPlatform\AxTable_SysDataBaseLog.xpp:line 60
+   at Dynamics.AX.Application.SysDataBaseLog.ConfigureSqlLogging()
+   at SysDataBaseLog::ConfigureSqlLogging(Object[] , Boolean& )
+   at Microsoft.Dynamics.Ax.Xpp.ReflectionCallHelper.MakeStaticCall(Type type, String MethodName, Object[] parameters)
+ 
+DB sync failed.
+```
+
+**Reason:** This issue occurs because there is data in the SQL DatabaseLog table that conflicts with the metadata in the package.
+
+**Resolution:** Run the following query on AXDB to clean the DatabaseLog table and retry the deployment.
+
+```sql
+select * into databaselog_bak from databaselog
+truncate table databaselog
+```
+

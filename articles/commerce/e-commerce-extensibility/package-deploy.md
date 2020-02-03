@@ -73,7 +73,7 @@ To upload a site configuration package by using LCS, follow these steps.
     ![LCS options when scrolling to the right](media/lcs-deploy-4.png)
 
 1. To upload the package, in the **More tools** section, select the **Asset Library** tile.
-1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Retail representative to obtain the required code.
+1. On the **Asset library** page, in the left pane, select the **e-Commerce package** tab. If you don't see the **e-Commerce package** tab, you must enable e-Commerce features. Contact your Microsoft Commerce representative to obtain the required code.
 
     ![LCS asset library](media/lcs-deploy-5.png)
 

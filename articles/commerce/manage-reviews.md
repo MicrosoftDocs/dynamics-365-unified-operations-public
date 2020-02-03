@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Manage ratings and reviews
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to manage ratings and reviews by using the Microsoft Dynamics 365 Commerce ratings and reviews moderation tool.

@@ -51,7 +51,7 @@ Task recorder is able to record user actions in the client with exact fidelity. 
 Task recorder is pre-installed and users are able to begin recording business processes immediately after opening the client for the first time. Task recorder supports Microsoft Edge, Internet Explorer 11, and the latest version of Google Chrome.
 
 > [!IMPORTANT]
-> The **Task guides** tab is currently available for Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Task guides in the Getting Started experience in Talent remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/en-us/dynamics365/](../../fin-ops/index.md)) for both Retail and Talent.
+> The **Task guides** tab is currently not available in Commerce or Human Resources. We are currently working to enable this functionality in a future release. Task guides in the Getting Started experience in Human Resources remain available to cover basic functionality. Procedural help is also available on the docs.microsoft.com site ([https://docs.microsoft.com/en-us/dynamics365/](../../fin-ops/index.md)) for both Commerce and Human Resources.
 
 ## Create a recording
 The following steps show the process for creating a new recording using Task recorder.
@@ -64,6 +64,7 @@ The following steps show the process for creating a new recording using Task rec
     4.  Go back to the **Dashboard** by clicking the product name in the navigation bar.
 
 3.  Go to **Settings &gt; Task recorder**.
+    
     ![This image shows the location of the Task recorder menu button, which is used to open Task recorder.](./media/taskrecorderguide-taskrecordermenubutton.png)
     
 4.  The **Task recorder pane** opens. The user may click the "**X**" in the upper-right corner to close the **Task recorder pane** before beginning a new recording. The pane can be reopened by following the previous steps.
@@ -76,7 +77,8 @@ The following steps show the process for creating a new recording using Task rec
     [![This image shows the Task recorder toolbar button which allows opening the Task recorder pane while recording.](./media/taskrecorderguide-taskrecordertoolbarclose.png)](./media/taskrecorderguide-taskrecordertoolbarclose.png)
 
 7.  The **Task recorder** enters **Recording Mode.** The pane now shows information and controls related to the process of recording. For more information about how to use the buttons shown, see the [section on using the recording controls](#recording-controls).
-[![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
+
+    [![This image shows what the Task recorder toolbar and Task recorder pane look like during recording.](./media/taskrecorderguide-taskrecorderrecordingmode.png)](./media/taskrecorderguide-taskrecorderrecordingmode.png)
 
 Now you're ready to record a business process using Task recorder. If you're following this guide as a first-time user, you may complete the following Fleet Management scenario as an example. Otherwise, you can record your own application scenario.
 
@@ -205,6 +207,7 @@ The user can specify where an **Info step** should appear in the task guide. The
 
 ## Download options
 After clicking **Stop**, several options are shown for downloading files related to the completed recording. Click **Download recording**, and save the task recording package to your desktop. We'll use this file later.
+
 [![This image shows the optoins provided to download or save a recording after recoring as ended.](./media/taskrecorderguide-taskrecorderdownloadoptions.png)](./media/taskrecorderguide-taskrecorderdownloadoptions.png)
 
 ### Download the task recording package
@@ -260,15 +263,15 @@ You can find these features on the **Settings &gt; Task recorder &gt; Edit recor
 ### Insert steps without re-recording the entire file
 
 You can now add a step anywhere in a task guide without playing back or re-recording the entire file.
- 1.  Select the step after which you want the new step to be inserted. Make sure the step is highlighted.
+1.  Select the step after which you want the new step to be inserted. Make sure the step is highlighted.
+ 
+    In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn’t open. 
 
-   In order for task recorder to insert a step, you must have the correct page open. The correct page is the page on which the new step occurs. Task recorder has a mechanism that determines what the active page is, and will disable the functionality if the correct page isn’t open. 
+    [![Insert step feature](./media/taskguide1.png)](./media/taskguide1.png)
 
-   [![Insert step feature](./media/taskguide1.png)](./media/taskguide1.png)
+    When you are on the correct page, **Insert step** becomes available.
 
-   When you are on the correct page, **Insert step** becomes available.
-
-   [![Insert step available on correct page](./media/taskguide2-231x300.png)](./media/taskguide2.png)
+    [![Insert step available on correct page](./media/taskguide2-231x300.png)](./media/taskguide2.png)
 
 2.  Click **Insert step**.
 
@@ -283,15 +286,19 @@ You can now add a step anywhere in a task guide without playing back or re-recor
 ### Move steps under a sub-task without re-recording the entire file
 
 You can move steps under a sub-task without playing back or re-recording the entire file. You can also move the sub-task step or the end sub-task step if you want to group an existing block of steps.
+
 1.  Select the step or sub-task step that you want to move. Make sure that the step is highlighted.
+
 2.  Click **… &gt; Move step after**.
 
     [![Example of Move step after](./media/taskguide3.png)](./media/taskguide3.png)
 
 3.  Select the step or sub-task step that you want to move the step or sub-task step after. Task recorder will move the step.
+
 4.  To move the end sub-task step, select it, click **… &gt; Move step after**, and then select the step after which you want the end sub-task step to be.
 
-If you want the first step in the task guide to be within a sub-task, create a sub-task step as the second step, and then move the first step into it. You can add or move as many steps or sub-tasks as needed.
+    If you want the first step in the task guide to be within a sub-task, create a sub-task step as the second step, and then move the first step into it. You can add or move as many steps or sub-tasks as needed.
+
 5.  When you are done editing the task guide, click **Done editing**, and then choose one of the options to save or publish the task guide.
 
 ### Collapse recording name and description
@@ -304,11 +311,15 @@ You can expand and collapse the **Recording name** and **Recording description**
 
 ### Advanced grid row selection
 
-In order for Task recorder to reliably select the correct grid rows during test playback, it needs the user to explicitly define filtering criteria that produce only the intended records. Task recorder can’t reliably use mechanisms like the grid row index or recID, as these can vary between environments and between test executions. While recording, after opening a form that contains a grid and selecting a record in the grid, the **Task recorder grid row selection dialog** will appear. The dialog will look similar to the filter pane, and will be pre-populated with Task recorder's "best guess" as to which filter criteria uniquely identify the row that you have selected. After verifying Task recorder's "best guess", press **Apply** to have Task recorder remember the filter criteria and select the specified row in the grid. There are some cases in which Task recorder will fail to find filter criteria that uniquely identifies the row you've clicked. When these situations occur, the list of filters will be empty when the dialog appears. The user can manually define filters that uniquely identify the row, or the user can choose to have row selection recorded based on the row’s index in the grid.
+In order for Task recorder to reliably select the correct grid rows during test playback, it needs the user to explicitly define filtering criteria that produce only the intended records. Task recorder can’t reliably use mechanisms like the grid row index or recID, as these can vary between environments and between test executions. 
+
+While recording, after opening a form that contains a grid and selecting a record in the grid, the **Task recorder grid row selection dialog** will appear. The dialog will look similar to the filter pane, and will be pre-populated with Task recorder's "best guess" as to which filter criteria uniquely identify the row that you have selected. 
+
+After verifying Task recorder's "best guess", press **Apply** to have Task recorder remember the filter criteria and select the specified row in the grid. There are some cases in which Task recorder will fail to find filter criteria that uniquely identifies the row you've clicked. When these situations occur, the list of filters will be empty when the dialog appears. The user can manually define filters that uniquely identify the row, or the user can choose to have row selection recorded based on the row’s index in the grid.
 
 ### Rollback changes to business data
 
-The **Rollback changes to business data** option will revert any business data that is created during recording when the recording is completed. This option is primarily for enabling developer scenarios related to creating task recordings to be used as tests. The **Rollback** mechanism will only rollback records that are created during the recording session. It will not rollback changes made to existing recordings, nor will it rollback deletions made to existing records. In addition, because of security concerns the **Rollback** mechanism is only available for use on non-production systems where the Test tools, including the Test models, have been installed.
+The **Rollback changes to business data** option will revert any business data that is created during recording when the recording is completed. This option is primarily for enabling developer scenarios related to creating task recordings to be used as tests. The **Rollback** mechanism will only rollback records that are created during the recording session. It will not rollback changes made to existing recordings, nor will it rollback deletions made to existing records. In addition, because of security concerns, the **Rollback** mechanism is only available for use on non-production systems where the Test tools, including the Test models, have been installed.
 
 ### Playing a task guide
 
@@ -327,7 +338,12 @@ When a user is completing a task guide, the client behaves in the same manner, w
 
 ### The "On-rails" feature of task guides
 
-By default, when a user begins a task guide, they are placed "on-rails". These "rails" prevent the user from *clicking* on elements other than the element the task guide is pointing to. When the user tries to click on something outside of the UI element that the task guide is pointing to, the task guide pop-up will animate to let the user know that they cannot progress until they complete the current step of the task guide. While a user is prohibited from *clicking* on other elements, the user is not prevented from tabbing through the other controls on the form, and the user is not prevented from using keyboard shortcuts. This is by design, as the "on-rails" feature is designed for and targeted at first-time users, who are expected to primarily use the mouse as they become familiar with the application. More advanced/experienced users are able to turn off the "on-rails" feature when they complete a task guide. At any time during the task guide, the "rails" can be taken off by clicking the "Unlock" button that appears in the Task recorder toolbar at the top of the page. You can also use this button to restore the "rails" at any point during the task guide. The "on-rails" feature may be turned off automatically by the task guide under certain circumstances. When the rails are off, the user is able to click on UI elements in the same manner as when the task guide is not running. The "on-rails" feature may be turned off automatically in the following cases:
+By default, when a user begins a task guide, they are placed "on-rails". These "rails" prevent the user from *clicking* on elements other than the element the task guide is pointing to. When the user tries to click on something outside of the UI element that the task guide is pointing to, the task guide pop-up will animate to let the user know that they cannot progress until they complete the current step of the task guide. 
+
+While a user is prohibited from *clicking* on other elements, the user is not prevented from tabbing through the other controls on the form, and the user is not prevented from using keyboard shortcuts. This is by design, as the "on-rails" feature is designed for and targeted at first-time users, who are expected to primarily use the mouse as they become familiar with the application. 
+
+More advanced/experienced users are able to turn off the "on-rails" feature when they complete a task guide. At any time during the task guide, the "rails" can be taken off by clicking the "Unlock" button that appears in the Task recorder toolbar at the top of the page. You can also use this button to restore the "rails" at any point during the task guide. The "on-rails" feature may be turned off automatically by the task guide under certain circumstances. When the rails are off, the user is able to click on UI elements in the same manner as when the task guide is not running. The "on-rails" feature may be turned off automatically in the following cases:
+
 -   The user is being directed to navigate to form using the Navigation Menu or the Search bar
     -   Because the user is free to use either entry point, the task guide does not point to a specific entry point, and does not prevent the user from use either entry point.
 -   The task guide enters an Error state (see below for a list of error states).
@@ -355,11 +371,14 @@ In some cases, the task guide pop-up will not mention the form by name. This is 
 
 ### Next & previous step
 
-These buttons appear on the task guide pop-up and allow a user to manually control the flow of the task guide. When clicking the Next or Previous step, the task guide will move to the next or previous step in the guide. The task guide does not check whether the user has completed a step before going to the next or previous step. The task guide also ***never*** automatically completes any step for the user, even when using the Next and Previous Step options. Using the Next and Previous step buttons can result in producing an error state, if the previous or next step refers to a UI element that is on the current form. When the user is completing an Informational Step, the only way to proceed is to use the Next step button. This is required because an Informational Step does not represent an action that was recorded on any UI element. Since no action was recorded in the task recording, the task guide does not have the information necessary to know what action to expect the user to complete.
+These buttons appear on the task guide pop-up and allow a user to manually control the flow of the task guide. When clicking the Next or Previous step, the task guide will move to the next or previous step in the guide. The task guide does not check whether the user has completed a step before going to the next or previous step. 
+
+The task guide also ***never*** automatically completes any step for the user, even when using the Next and Previous Step options. Using the Next and Previous step buttons can result in producing an error state, if the previous or next step refers to a UI element that is on the current form. When the user is completing an Informational Step, the only way to proceed is to use the Next step button. This is required because an Informational Step does not represent an action that was recorded on any UI element. Since no action was recorded in the task recording, the task guide does not have the information necessary to know what action to expect the user to complete.
 
 ### The "See more" button
 
 Clicking this button will expand the task guide pop-up to show additional information related to the step. The additional information is often optional reading material that is not required for the user to successfully complete the step. In the additional information, the user may see:
+
 -   An **Example** value
     -   The Example value is the value that was originally used when the task recording was created.
     -   Example values only appear for steps that use non-lookup fields. This includes text fields, number fields, date fields combo boxes, and check boxes.
@@ -372,14 +391,16 @@ Clicking this button will expand the task guide pop-up to show additional inform
 
 Using a **pre-release** Chrome extension, Task recorder is able to take screenshots of the browser as a user records a business process. After the user completes the recording, Task recorder can then use these screenshots to generate Microsoft Word documents. To enable this functionality, follow the steps below to install the pre-release Google Chrome extension that enables Task recorder to capture screenshots during recording.
 
-1.  Open Google Chrome
+1.  Open Google Chrome.
 2.  Go to **Menu &gt; More tools &gt; Extensions**. 
 
     ![This image shows the location of the Extensions menu in Google Chrome.](./media/taskrecorderguide-googlechromeextensionsmenu.png) 
 
 3.  Select the **Developer mode** box.
 4.  Click **Load unpacked extension**.
-5.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**. The extension is loaded. Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
+5.  Browse to the folder containing the Task recorder extension, select the folder, and click **OK**. The extension is loaded. 
+
+    Ensure that the **Enabled** box is selected to turn the extension on. With a locally hosted developer machine, the extension should be located at &lt;local disk&gt;FMLabTaskRecorderScreenshot. Otherwise, you can download the FMLab folder which contains the extension from GitHub at<https://github.com/Microsoft/FMLab>.
 
 6.  Restart Chrome.
 
