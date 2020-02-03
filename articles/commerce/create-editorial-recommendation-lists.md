@@ -32,7 +32,6 @@ ms.dyn365.ops.version: Version 1611
 
 # Create curated product recommendation lists
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic explains how merchandizers can create and manage manual product lists for Microsoft Dynamics 365 Commerce customers.
