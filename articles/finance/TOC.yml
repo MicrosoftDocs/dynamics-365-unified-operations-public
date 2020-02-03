@@ -1608,6 +1608,8 @@
           href: localizations/emea-tax-directives.md
         - name: Update how amounts are displayed on reports and documents
           href: localizations/emea-amount-printing-forms.md
+        - name: Use fiscal data from an invoice account
+          href: localizations/use-fiscal-data-from-invoice-account.md
         - name: Value Added Tax (VAT)
           items:
           - name: Set up VAT ID
