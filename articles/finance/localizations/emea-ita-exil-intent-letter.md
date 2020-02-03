@@ -83,4 +83,5 @@ When you create a new sales order or a new free text invoice for a customer who 
 If the amount of the invoice transaction does not exceed the amount of the intent letter then it will not be the subject for Sales tax calculation. 
 
 The details of the intent letter will be also included into a printable layout of the invoice. 
+![Print invoice](media/emea-ita-exil-intent-inv-print.jpg)
 
