@@ -54,7 +54,7 @@ To find the latest release for each web browser, go to the software manufacturer
 > * Bandwidth requirements for Human Resources depend on your scenario. Most typical scenarios require a bandwidth of more than 50 kilobytes per second (KBps).
 > 
 > [!WARNING]
-> Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a trial version of Human Resources. For more information about trial versions, see [Sign up for a free trial](hr-admin-setup-trial.md).
+> Don't compute bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements. The concurrent usage of a given location is very difficult to calculate. For customers who are concerned about bandwidth requirements, use a trial version of Human Resources.
 
 ## Supported Microsoft Office applications
 

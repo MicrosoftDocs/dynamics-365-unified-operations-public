@@ -57,9 +57,7 @@ Before creating leave plans for your workers, you need to create leave and absen
 - [Create a leave and absence plan](hr-leave-and-absence-plans.md)
 - [Assign workers to a leave plan](hr-leave-and-absence-enroll.md)
 - [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)
-- [Create an alert for leave and absence requests](hr-leave-and-absence-alert.md)
 - [View analytics for leave and absence](hr-leave-and-absence-analytics.md)
-- [Generate reports for leave and absence](hr-leave-and-absence-reports.md)
 
 ## Request time off and manage requests
 

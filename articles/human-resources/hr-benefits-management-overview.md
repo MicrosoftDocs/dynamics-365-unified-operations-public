@@ -83,7 +83,6 @@ These articles show how to create benefit plans, including bundles and flex cred
 
 - [Set up benefit plans](hr-benefits-plans-setup.md)
 - [Create worker benefit plans](hr-benefits-plans-worker.md)
-- [Bulk update worker benefits plans](hr-benefits-plans-worker-bulk-update.md)
 - [Set up flex credit programs](hr-benefits-plans-flex-credit-programs.md)
 - [Configure future life events](hr-benefits-plans-future-life-events.md)
 

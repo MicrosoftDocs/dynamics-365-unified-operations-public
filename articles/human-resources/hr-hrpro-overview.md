@@ -106,7 +106,7 @@ The Dynamics 365 Human Resources User Guide provides you with instructions on se
 [Assign workers to a leave plan](hr-leave-and-absence-enroll.md)</br>
 [Accrue leave and absence plans](hr-leave-and-absence-accrue.md)</br>
 [View analytics for leave and absence](hr-leave-and-absence-analytics.md)</br>
-[Manage leave and absence requests](h)r-employee-self-service-manage-requests.md)</br>
+[Manage leave and absence requests](hr-employee-self-service-manage-requests.md)</br>
 [Request time off](hr-employee-self-service-request-time-off.md)</br>
 [View team and company calendars](hr-employee-self-service-calendar.md)</br>
 

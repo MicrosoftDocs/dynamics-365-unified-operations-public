@@ -121,7 +121,7 @@ When a worker has a qualifying life event that allows for a change of benefits, 
 
 To change the benefits, follow these steps:
 
-1. Go to [Define and manage a benefits program](../../../../human-resources/hr-benefits-manage-program.md) and complete the following:
+1. Go to Define and manage a benefits program and complete the following:
 
     - Create an eligibility event.
     - Process eligibility for benefits.

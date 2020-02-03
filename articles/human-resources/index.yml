@@ -24,5 +24,3 @@ productDirectory:
       links:
         - url: hr-welcome.md
           text: Welcome to Dynamics 365 Human Resources
-        - url: hr-get-started.md
-          text: Get started
