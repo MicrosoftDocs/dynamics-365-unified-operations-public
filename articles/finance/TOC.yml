@@ -994,6 +994,8 @@
           href: public-sector/tasks/create-billing-classification-public-sector.md
         - name: Create a billing code for the public sector
           href: public-sector/tasks/create-billing-code-public-sector.md
+        - name: Calculate the delivery date for a line, based on the lead time
+          href: public-sector/po-delivery-date.md
         - name: Settlement priority in the public sector
           href: public-sector/settlement-priority-public-sector.md
         - name: Free text invoices in the public sector
