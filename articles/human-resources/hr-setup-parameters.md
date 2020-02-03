@@ -32,9 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure Human resources parameters
 
-[!include [applies-to-both](/includes/applies-to-both.md)]</br>
-[!include [banner](../includes/banner.md)]
-
 The settings of some Human resources (HR) parameters are shared across companies, whereas the settings of other parameters are company-specific. This article explains how to set up company-specific HR parameters.
 
 Two pages are used to set Human resources (HR) parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page. On the **Human resources parameters** page, the settings are divided among six tabs:
