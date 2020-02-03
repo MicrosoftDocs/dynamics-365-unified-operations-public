@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Modify an existing site page
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.

@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Key invoice data in AP system using vendor invoice
+title: Key invoice data in AP using a vendor invoice
 description: This task guide will help you create a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching). 
 author: abruer
 manager: AnnBe 
@@ -26,7 +26,7 @@ ms.author: abruer
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
-# Key invoice data in AP system using vendor invoice
+# Key invoice data in AP using a vendor invoice
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Add a logo
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.

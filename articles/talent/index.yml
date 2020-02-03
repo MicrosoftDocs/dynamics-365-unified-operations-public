@@ -12,20 +12,13 @@ metadata:
   author: buck1ey #Required; your GitHub user alias, with correct capitalization.
   ms.author: buckg #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
+  audience: Application User
   hide_bc: false
 
 # productDirectory section (optional)
 productDirectory:
   items:
     # Card
-    - title: "Dynamics 365 Talent: Core HR"
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /dynamics365/images/CoreHR_color.svg
-      links:
-        - url: talent-welcome.md
-          text: Overview
-        - url: talent-get-started.md
-          text: Get started
     - title: "Dynamics 365 Talent: Attract"
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /dynamics365/images/Attract_color.svg
