@@ -74,3 +74,5 @@ The file upload control accepts the file and upload strategy in the client, and 
 [![File upload sequence diagram](./media/fileuploadcontrolusageanddesign1.png)](./media/fileuploadcontrolusageanddesign1.png)
 
 
+
+
