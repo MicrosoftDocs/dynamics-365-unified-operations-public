@@ -35,7 +35,6 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../../includes/banner.md)]
 
  
-
 In Asset Management, general parameters relating to assets, work orders, and work order scheduling must be set up. This topic explains how to set them up. Select **asset management** > **Setup** > **Asset management parameters** to open the form.
 
 The **Create data wizard** button can be used to automatically create setup data for test or demo data purposes in a company in Dynamics 365 Supply Chain Management. Refer to the white paper "Set up Test Data in Asset Management" for information on how to use the wizard.
@@ -48,8 +47,8 @@ The **Create data wizard** button can be used to automatically create setup data
 - **Default request type** is the standard maintenance request type, which is automatically selected when you create a new request.  
 - If you want to create projects that relate to assets, project relations regarding selection of **Main project**, **Project hierarchy**, and the option to **Auto create projects** are set up in **Asset management parameters**.  
 - In the **Work order project mask** field, you define the number of sub projects allowed for work orders and sub assets. A work order mask is used to define how many work orders can be created on an asset and used on the related work order job project. The work order mask is set up in the **Related Work order mask** field in **Asset management parameters** (**Asset management** > **Setup** > **Asset management parameters** > **Work orders**).  
->[!NOTE]
->The format for a related work order mask is a number of hash signs (#), depending on the maximum number of work orders you expect to create on an asset. Example: ## allows you to create up to 99 sub-projects.  
+    >[!NOTE]
+    >The format for a related work order mask is a number of hash signs (#), depending on the maximum number of work orders you expect to create on an asset. Example: ## allows you to create up to 99 sub-projects.  
 - Forecasts on job types are stored on the project selected in the **Forecast project** field. For each job type, a new activity is automatically created on the forecast project. Forecasts on the job type are then saved on the forecast project.  
 - In the **Model** field, select the forecast model used on job type and work order forecasts.  
 
@@ -64,13 +63,13 @@ The **Create data wizard** button can be used to automatically create setup data
 - Journals used when posting consumption on a work order can be selected on the **General** FastTab in the **Hour**, **Item**, and **Expense** fields.  
 - In the **Product language source** field, select which language to use for product names in Asset management reports. You can select the language set up on the company account, or the language set up for the user currently logged in.  
 - Select "Yes" on the **Real time update** toggle button if you want to automatically update changes to job type defaults, maintenance plans, and maintenance rounds.
-> - If you select "No", changes to job type defaults, maintenance plans, and maintenance rounds are not updated automatically in Asset Management  
-> - Select "No" on the toggle button if you have large amounts of data being synchronized, for example, many assets or functional locations set up on maintenance plans or maintenance rounds, or a large number of maintenance plans or rounds.  
-> - If you make changes to job type defaults or maintenance plans or maintenance rounds, and you have selected "No" to real time update, a warning may not be shown if the changes influence:
->   - functional locations set up on maintenance plans or rounds  
->   - objects set up on maintenance plans or rounds  
->   - maintenance plans setup  
->   - maintenance rounds setup  
+  - If you select "No", changes to job type defaults, maintenance plans, and maintenance rounds are not updated automatically in Asset Management.
+  - Select "No" on the toggle button if you have large amounts of data being synchronized, for example, many assets or functional locations set up on maintenance plans or maintenance rounds, or a large number of maintenance plans or rounds.  
+  - If you make changes to job type defaults or maintenance plans or maintenance rounds, and you have selected "No" to real time update, a warning may not be shown if the changes influence:
+    - functional locations set up on maintenance plans or rounds  
+    - objects set up on maintenance plans or rounds  
+    - maintenance plans setup  
+    - maintenance rounds setup  
 - On the **Category** FastTab, default categories relating to consumption on work orders can be defined.  
 
 
