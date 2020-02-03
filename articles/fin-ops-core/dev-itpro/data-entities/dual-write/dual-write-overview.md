@@ -77,4 +77,4 @@ Follow these steps to set up integration between Finance and Operations apps and
 4. If you encounter dual-write synchronization issues, see the [Troubleshooting guide for data integration](dual-write-troubleshooting.md).
 
 > [!IMPORTANT]
-> You can’t run dual-write and [Prospect to cash](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) side-by-side. If you're running the Prospect to cash solution, you must uninstall it. You must also disable the customer and vendor dual-write templates that are part of the Prospect to cash solution.
+> You can’t run dual-write and [Prospect to cash](../../../../supply-chain/sales-marketing/prospect-to-cash.md) side-by-side. If you're running the Prospect to cash solution, you must uninstall it. You must also disable the customer and vendor dual-write templates that are part of the Prospect to cash solution.
