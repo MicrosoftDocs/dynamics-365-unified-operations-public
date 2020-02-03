@@ -662,6 +662,8 @@
           href: payment-methods-restrictions.md
         - name: Return items across multiple customer orders and invoices
           href: multireturn.md	
+        - name: Create and update a returns and refunds policy for a channel
+          href: refund_policy_returns.md
     - name: Manage your customers  
       items:
       - name: Clienteling
