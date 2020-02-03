@@ -142,8 +142,6 @@
       href: talent-updates.md
     - name: Provision Talent
       href: provisioning-talent.md
-    - name: Remove Talent environments
-      href: remove-talent-environment.md
     - name: Manage features
       href: access-preview-feature.md
     - name: Provision Onboard
@@ -242,7 +240,7 @@
       href: process-auditing.md
     - name: Extensibility in Attract
       href: extensibility-attract.md
-  - name: Troubleshoot Talent 
+  - name: Troubleshoot Attract and Onboard
     items:
     - name: Troubleshoot posting jobs to LinkedIn
       href: attract-troubleshoot-linkedin.md
