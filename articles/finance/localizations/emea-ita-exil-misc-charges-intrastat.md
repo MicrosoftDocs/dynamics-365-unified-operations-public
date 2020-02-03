@@ -32,8 +32,6 @@ ms.dyn365.ops.version: 10.0.8
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Intrastat is the system that is used to collect information and generate statistics about the trade of goods among countries and regions in the European Union (EU). For more information, see [Intrastat overview](emea-intrastat.md).
 
 Among other reporting elements, an Intrastat declaration contains information about miscellaneous charges. Miscellaneous charges are usually calculated as a percentage of the invoice amount. However, in Italy, they are often calculated by multiplying the cost of each kilogram and the weight of goods in kilograms.

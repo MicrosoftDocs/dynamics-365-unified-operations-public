@@ -38,3 +38,4 @@ This topic provides links to documentation resources for Lithuania.
 - [Generate a fixed asset transfer between warehouses document](tasks/lt-00003-fixed-asset-transfer.md)
 - [Invoice and packing slip numbering](emea-invoices-packing-slips-numbering.md)
 - [VAT statement details](emea-ltu-vat-statement-details.md)
+- [i.SAF reporting](emea-ltu-isaf.md)

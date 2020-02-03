@@ -32,7 +32,7 @@ ms.dyn365.ops.version:
 
 # Manage AI-ML-based product recommendation results
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to tailor product recommendation results based on artificial intelligence-machine learning (AI-ML) to your business. 
@@ -63,8 +63,8 @@ The **Best selling** product list has one parameter that can be changed:
 
 ### For New, Trending, or Best selling
 
-1.	Go to **Retail** > **Product recommendations** > **Recommendation parameters**.
-1.	In the list of retail shared parameters, select **Recommendation lists**.
+1.	Go to **Retail and Commerce** > **Product recommendations** > **Recommendation parameters**.
+1.	In the list of shared parameters, select **Recommendation lists**.
 1.	Select the list add or remove products from.
 1.	To add products to the table, select **Add line.** 
 1.	Under the Product column, search for a product by **Name** or **Product number.**

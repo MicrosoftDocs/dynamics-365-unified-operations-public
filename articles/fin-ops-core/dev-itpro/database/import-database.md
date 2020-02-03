@@ -60,6 +60,6 @@ The system admin account in the target environment (**Admin** user ID) is reset 
 
 If you've used the Admin User Provisioning Tool on your environment to change the web.config file, the value might not match the value in LCS. If you require that a different account be used, you must deallocate and delete the target sandbox, redeploy, and select another account. You can then do another database refresh action to restore the data.
 
-## Steps to complete after a database import for environments that use Retail functionality
+## Steps to complete after a database import for environments that use Commerce functionality
 
 [!include [environment-reprovision](../includes/environment-reprovision.md)]

@@ -1,7 +1,7 @@
-When copying a database between environments, you will need to run the environment re-provisioning tool before the copied database is fully functional, to ensure that all Retail components are up-to-date.
+When copying a database between environments, you will need to run the environment re-provisioning tool before the copied database is fully functional, to ensure that all Commerce components are up-to-date.
 
 > [!IMPORTANT]
-> We recommend that you run this procedure whether you are using Retail components or not, because Retail functionality is included in all environments. 
+> We recommend that you run this procedure whether you are using Commerce components or not, because Commerce functionality is included in all environments. 
 
 Before you continue, you must make sure that the following prerequisites are met:
 1. If you are upgrading to the July 2017 release (also known as 7.2) 7.2.11792.56024, apply the following application X++ hotfixes in the destination environment before running the data upgrade in that environment. These will prevent various errors occurring during the data upgrade:

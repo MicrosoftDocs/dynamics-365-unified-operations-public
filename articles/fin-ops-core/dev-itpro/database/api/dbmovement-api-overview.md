@@ -41,7 +41,7 @@ The Database Movement API exposes RESTful endpoints for the following Dynamics 3
 
 * Dynamics 365 Finance
 * Dynamics 365 Supply Chain Management
-* Dynamics 365 Retail
+* Dynamics 365 Commerce
 
 ## Next steps
 

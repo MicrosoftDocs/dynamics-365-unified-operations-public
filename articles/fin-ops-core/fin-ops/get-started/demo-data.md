@@ -38,7 +38,7 @@ This topic provides an overview of the demo data that is available.
 
 Demo data is the base data set that is released for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
-- Retail
+- Commerce
 - Distribution
 - Service Industries
 - Public Sector

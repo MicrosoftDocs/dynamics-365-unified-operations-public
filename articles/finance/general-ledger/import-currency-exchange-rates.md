@@ -2,10 +2,10 @@
 # required metadata
 
 title: Import currency exchange rates
-description: If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
+description: This topic provides information about the requirements for importing foreign exchange reference rates that are published by exchange rate providers.
 author: EvgenyPopovMBS
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,7 +17,7 @@ ms.search.form: ExchangeRateProviderConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 # ms.tgt_pltfrm: 
 ms.custom: 261374
@@ -25,8 +25,8 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: epopov
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: 10.0.9
 
 ---
 
@@ -34,7 +34,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-If a legal entity has received invoices in foreign currencies, it’s necessary to convert the foreign currency into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the required settings and processing for importing foreign exchange reference rates published over the Internet by the exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
+[!include [banner](../includes/banner.md)]
+
+If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This topic provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as the European Central Bank and the Central Bank of Russia.
 
 The following sections describe the flow of information that is used for setting up and processing the import of foreign exchange rates.
 
@@ -45,23 +47,19 @@ Before you can import exchange rates, you must set up the information that is re
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Field** | **Description**                                                                                                                                                                                                             |
 | **Name**  | The name of the exchange rate provider.                                                                                                                                                                                     |
-| **Key**   | The unique identifier for each piece of configuration information that is required by the provider. This information is automatically added for each exchange rate provider that you add when you click the **Add** button. |
-| **Value** | Information for each key. This information is added for each exchange rate provider that you add when you click the **Add** button.                                                                                         |
+| **Key**   | The unique identifier for each piece of configuration information that is required by the provider. This information is automatically added for each exchange rate provider that you add. |
+| **Value** | Information for each key. This information is added for each exchange rate provider that you add.                                                                                         |
 
 ## Import currency exchange rates
-You can import exchange rates from the exchange rate providers source, and set them up in the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions the fields that are required to successfully complete the import process.
+You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                                             |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Field**                              | **Description**                                                                                                                                                                                                                                                                                                                                                             |
 | **Exchange rate type**                 | An exchange rate type.                                                                                                                                                                                                                                                                                                                                                      |
 | **Exchange rate provider**             | An exchange rate provider.                                                                                                                                                                                                                                                                                                                                                  |
-| **Import as of**                       | This parameter manages whether to import as of today’s date or for a date range. If you want to use a date range, enter or select starting and ending dates.                                                                                                                                                                                                                |
+| **Import as of**                       | This parameter manages whether to import as of the current date or for a specific date range. If you want to use a date range, enter or select the start and end dates.                                                                                                                                                                                                                |
 | **Create necessary currency pairs**    | This check box manages the automatic creation of currency pairs, if the currency pairs that are imported do not exist. This option might not be available for some providers.                                                                                                                                                                                               |
 | **Override existing exchange rates**   | This check box manages the update of the existing exchange rate for a currency pair when the exchange rate for a specific date already exists. If you do not select this check box, the exchange rate for the specific dates is not imported if another exchange rate already exists.                                                                                       |
-| **Prevent import on national holiday** | This check box manages the import of the exchange rate for a date that is a public holiday. For example, if you select this check box and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
-
-
-
-
-
+| **Prevent import on national holiday** | This check box manages the import of the exchange rate for public holiday's date. For example, if you select this check box and use the European Central Bank as the exchange rate provider, the system will not update the exchange rate on a public holiday that is related to the current legal entity. This option might not be available for some providers. |
+| **Rate from the previous day** | This check box is available if you enable **ECB import on the current or previous date** feature on the **Feature management** page. This check box is only available for the provider, *Central Bank of Europe*. Select this check box to import the currency exchange rate that is published by the European Central Bank on the previous working day at approximately 16:00 CET. By default, the check box is selected. Clear this check box to import the currency exchange rate that is published on the same working day.  |
