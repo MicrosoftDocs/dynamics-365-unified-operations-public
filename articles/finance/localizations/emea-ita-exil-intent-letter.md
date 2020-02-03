@@ -68,9 +68,18 @@ Then click on **New** button and enter the data of a new intent letter.
 
 Alternatively, you can create a new intent letter for any applicable customer in **Accounts receivable > Intent letters > Intent letters**.
 
-### Post
+The following actions are available for existing intent letters:
+-	Close intent letter - will close an open intent letter;
+-	Cancel intent letter - will cancel an intent letter. This operation will require to enter a reason of cancellation;
+-	Update sales orders - user can update existing applicable sales orders with the reference to the intent letter;
+-	Open intent letter  - will open a close intent letter;
+-	Posted sales tax - will show the Sales tax transactions related to the selected intent letter.
 
-When you post...
+## Use intent letters
+When you create a new sales order or a new free text invoice for a customer who is categorized as usual exporter and the creation date is whithin the intent letter validity period then **Usual exporter Sales Tax Group** will be used in the order/invoice and the intent letter number will be populated if automatic intent letters assignment parameter is activated.
+
+![New order](media/emea-ita-exil-intent-new-order.jpg)
+
 
 > [!NOTE]
 > Warning...
