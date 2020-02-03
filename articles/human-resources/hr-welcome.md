@@ -51,33 +51,33 @@ Human Resources connects people and operations data to help you optimize workfor
 
 ## Administrator Guide
 
-[Overview](hr-admin-overview.md)
-[System requirements](hr-admin-system-requirements.md)
-[Set up and manage instances](hr-admin-setup-provision.md)
-[Set up data integration](hr-admin-integration-choose-technology.md)
-[Manage features](hr-admin-manage-features.md)
-[Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
-[Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
-[Troubleshoot Human Resources](hr-admin-troubleshooting-support.md)
+[Overview](hr-admin-overview.md)</br>
+[System requirements](hr-admin-system-requirements.md)</br>
+[Set up and manage instances](hr-admin-setup-provision.md)</br>
+[Set up data integration](hr-admin-integration-choose-technology.md)</br>
+[Manage features](hr-admin-manage-features.md)</br>
+[Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+[Documentation resources](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)</br>
+[Troubleshoot Human Resources](hr-admin-troubleshooting-support.md)</br>
 
 ## Developer Guide
 
-[Overview](hr-developer-overview.md)
-[Extend with Power Apps and Power Automate](hr-developer-power-apps.md)
-[Human Resources entities in Common Data Service](hr-developer-entities.md)
-[Custom fields](hr-developer-custom-fields.md)
-[Set up data integration](hr-admin-integration-choose-technology.md)
+[Overview](hr-developer-overview.md)</br>
+[Extend with Power Apps and Power Automate](hr-developer-power-apps.md)</br>
+[Human Resources entities in Common Data Service](hr-developer-entities.md)</br>
+[Custom fields](hr-developer-custom-fields.md)</br>
+[Set up data integration](hr-admin-integration-choose-technology.md)</br>
 [Entity API reference](hr-developer-api-authentication.md)
 
 ## User Guide
 
-[Overview](hr-hrpro-overview.md)
-[Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
-[Set up Human Resources](hr-setup-parameters.md)
-[Configure organization settings](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)
-[Manage personnel](hr-personnel-departments-jobs-positions.md)
-[Set up compensation plans](hr-compensation-overview.md)
-[Manage benefits](hr-benefits-management-overview.md)
-[Manage leave and absence](hr-leave-and-absence-overview.md)
-[Develop employees](hr-develop-performance-management-overview.md)
+[Overview](hr-hrpro-overview.md)</br>
+[Explore the user interface](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)</br>
+[Set up Human Resources](hr-setup-parameters.md)</br>
+[Configure organization settings](../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/human-resources/toc.json)</br>
+[Manage personnel](hr-personnel-departments-jobs-positions.md)</br>
+[Set up compensation plans](hr-compensation-overview.md)</br>
+[Manage benefits](hr-benefits-management-overview.md)</br>
+[Manage leave and absence](hr-leave-and-absence-overview.md)</br>
+[Develop employees](hr-develop-performance-management-overview.md)</br>
 [Create courses](hr-learning-courses.md)
