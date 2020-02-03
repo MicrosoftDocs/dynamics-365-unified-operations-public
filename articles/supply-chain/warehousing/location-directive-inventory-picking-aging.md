@@ -47,7 +47,7 @@ Before you can use this feature, you must enable it on your system. Administrato
 To use this feature, your system must be set up with the following:
 
 - The [location profiles](tasks/create-location-profile.md) used to store inventory must have **Enable location status** set to **Yes**.
-- You must run a consistency check to ensure the data is accurate. <!-- KAMAYBAC: Does this really belong here? Can we give a link for more info? -->
+- You must run a consistency check to ensure the data is accurate. <!-- KAMAYBAC: I don't understand this. Does it really belong here? Can we give a link for more info? -->
 
 ## Feature demos
 
@@ -83,7 +83,7 @@ Do the following to create the inventory data required to work through the FIFO 
     - **Field** - Zone ID
     - **Criteria** - FLOOR
 1. Select **OK** to apply your settings and close the pane.
-1. On a mobile device, do the following:<!-- KAMAYBAC: I don't have enough information to do any of this. Can we give more detail here? What are doing here? -->
+1. On a mobile device, do the following:<!-- KAMAYBAC: I don't have enough information to do any of this, so I couldn't confirm. Can we give more detail here? What are doing here? -->
     - Sign in to warehouse 63.
     - Go to **Quality** > **Scrap**.
     - Enter "LP 63_1".
