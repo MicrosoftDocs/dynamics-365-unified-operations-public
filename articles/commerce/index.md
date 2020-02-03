@@ -53,10 +53,10 @@ This release enables the creation of digital experiences using built-in web auth
 Select a feature area to learn more about it.
 - [Configure a Commerce preview environment](provisioning-guide.md)
 - [Commerce architecture](retail-components.md)
-- [Set up your channels](channels-overview)
+- [Set up your channels](channels-overview.md)
 - [Merchandizing your products and services](product-information.md)
 - [Manage your orders](order-fulfillment-overview.md)
-- [Manage your customers](set-up-customer-loyalty-program)
+- [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)
 - [Manage your e-Commerce site](online-store-overview.md)
 - [Fraud protection](dev-itpro/dfp.md)
