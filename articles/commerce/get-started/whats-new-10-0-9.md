@@ -40,12 +40,10 @@ This topic lists features that are either new or changed in Microsoft Dynamics 3
 - **General availability (self-update):** March 2020
 - **Auto-update:** April 2020
 
-The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/index).
+The following features are included in this release. The feature titles link to additional information on the [Release plans site](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/).
 
-- [Invoke Dynamics 365 Fraud Protection during e-commerce checkout](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-retail/invoke-dynamics-365-fraud-protection-during-e-commerce-checkout)
-- [Recommendations](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-commerce/recommendations)
-- [Product recommendations in POS](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-retail/product-recommendations-pos)
-- [Azure Active Directory business to customer tenant per channel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-commerce/azure-active-directory-business-customer-tenant-per-channel)
+- [Enable resetting of receipt numbers at the beginning of the fiscal year](https://docs.microsoft.com/en-us/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
+
 
 
 ## Additional resources
