@@ -50,7 +50,7 @@ The following features are included in this release. The feature titles link to 
 
 ### Platform update 33
 
-Microsoft Dynamics 365 Commerce 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 32](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
+Microsoft Dynamics 365 Commerce 10.0.9 includes Platform update 33. To learn more, see [Preview features in Platform update 33](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-33.md).
 
 
 ### Bug fixes 
