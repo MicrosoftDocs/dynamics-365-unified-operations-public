@@ -44,7 +44,7 @@ The **Compare item prices storage** report is helpful in cases where the output 
 
 ## Enable compare item prices storage
 
-Before you can use this feature, you must make sure it's available on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
+Before you can use this feature, you must enable it on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the feature status and enable it if needed. Here, the feature is listed as:
 
 - **Module** - Cost management
 - **Feature name** - Compare item price storage
