@@ -640,6 +640,8 @@
         href: expense-management/expense-workflows.md
       - name: Expense management workflow
         href: expense-management/expense-workflow.md
+      - name: Manage expense delegation
+        href: expense-management/manage-expense-delegation.md
       - name: Expense receipt processing
         href: expense-management/expense-receipt-processing.md
       - name: Import and maintain credit card transactions
