@@ -41,3 +41,7 @@ For more information about upcoming features or the update process for Human Res
 - [Update process](hr-admin-setup-update-process.md)
 
 - [Manage features](hr-admin-manage-features.md)
+
+## What's new weekly releases
+
+[What's new February 3, 2020](hr-whats-new-2020-02-03.md)
