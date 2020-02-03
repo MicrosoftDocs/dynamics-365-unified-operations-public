@@ -40,13 +40,7 @@ You can set up rounding rules in Dynamics 365 Human Resources to meet the needs 
 
 2. Select **New**.
 
-3. Specify values for the following fields:
-
-   | Field | Description |
-   | --- | --- |
-   | Round to the nearest |  |
-   | Scenario |  |
-   | Rounding form |  |
+3. Specify values for **Round to the nearest**, **Scenario**, and **Rounding form**.
 
 4. Select **Save**. 
 

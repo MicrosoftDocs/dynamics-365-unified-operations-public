@@ -45,11 +45,11 @@ You can schedule future life events in Dynamics 365 Human Resources.
    | Field | Description |
    | --- | --- |
    | Life event date | The system processes all events during the enrollment period that occur up until this date. |
-   | Life event logged |  |
-   | Log type |  |
+   | Life event logged | Date and time when the life event is logged. |
+   | Log type | Shows whether the action is one of the following:</br></br>- **Update** – a change to an existing record that is tracking life events</br></br>- **Insert** – the creation of a new life event record |
    | Life event type ID | The life event type unique identifier. |
    | Life event type | A catalyst to updating an employee’s benefits enrollment. For more details, see the Life event triggers section. |
-   | Status |  |
+   | Status | Whether the life event has been processed or not. |
    | Line | The line number of the future life event. |
 
 4. Select **Save**. 

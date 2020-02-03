@@ -40,13 +40,7 @@ Set up employment categories in Dynamics 365 Human Resources to match your worke
 
 2. Select **New**.
 
-3. Specify values for the following fields:
-
-   | Field | Description |
-   | --- | --- |
-   | Worker type |  |
-   | Employment category |  |
-   | Description | A description of the employment category. |
+3. Specify values for **Worker type**, **Employment category**, and **Description**.
 
 4. Select **Save**. 
 

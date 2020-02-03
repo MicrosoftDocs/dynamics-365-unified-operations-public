@@ -48,9 +48,9 @@ Once the coverage options are defined, attach the coverage options to a benefit 
    | --- | --- |
    | **Coverage option** | A unique coverage option name. |
    | **Description** | A description of the coverage option. |
-   | **Coverage code** | Microsoft Dynamics 365 for Finance and Operations provides some coverage option codes for which a predefined minimum and maximum amount are assigned for each eligible covered person type. Benefit coverage codes are used to validate enrollments against a total number of eligible covered persons (employee, dependent, or beneficiary). For example, a coverage code that allows enrollment of the employee plus one dependent. |
+   | **Coverage code** | Coverage codes assign minimum and maximum amounts for each eligible covered person type. A coverage code indicates who is covered or the amount of coverage allowed for a plan type. You can express the amount of coverage as a dollar amount or a percentage. For example:</br></br>- **Emp+1** – to be qualified, the employee must have one dependent selected (if more than one is selected, they no longer qualify).</br></br>- **Emp+family** – to be qualified, the employee must have at least two dependents selected. |
    | **Maximum number** | The maximum number of dependents. |
-   | Status | The status of the coverage option. If the Coverage option status is set to Inactive, the Coverage option can’t be selected on plan types. |
+   | **Status** | The status of the coverage option. If the Coverage option status is set to Inactive, the Coverage option can’t be selected on plan types. |
    | **Percent** | The percent amount. This field is only active if % x Salary was selected in the Coverage code field. |
    | **Divisor** | The divisor to use in the calculation when you select the coverage code % x salary. |
    | **Percent minimum** | The minimum percentage when you select the Percentage coverage code. |

@@ -49,7 +49,7 @@ Use deductions in Microsoft Dynamics 365 Human Resources to determine how much, 
    | Effective | The start date. The default value is the current system date. |
    | Expiration | The end date. The default value is 12/31/2154, which signifies never. |
    | Heading | The heading code from the payroll system that this deduction will use for the employee portion of the deduction when processing the benefits to payroll. This is used when you use a third party payroll provider. |
-   | EE payroll deduction reference | The deduction code from the payroll system that this deduction will use for the employee portion of the deduction when processing the benefits to payroll. |
+   | Employee payroll deduction reference | The deduction code from the payroll system that this deduction will use for the employee portion of the deduction when processing the benefits to payroll. |
    | Amount heading | The heading code from the payroll system that this deduction amount will use for the employee portion of the deduction when processing the benefits to payroll. This is normally used when you use a third party payroll provider. |
    | Can delete | Specifies whether an exported value from Dynamics 365 for Finance and Operations can cause the value to be deleted in the payroll system. |
    | Paired columns | Specifies whether to export heading and deduction amount in paired adjacent columns to the payroll system. |

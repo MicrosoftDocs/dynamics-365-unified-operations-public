@@ -38,7 +38,7 @@ During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each em
 
 Before you can process life events, you must have already run open enrollment at least once during a hiring time frame. In the United States, open enrollment is typically once per year. Outside the United States, open enrollment may be run at the time of hire. A worker does not need to select a benefit plan in order for life events to be processed, but they need to have been included in open enrollment processing. 
 
-Use life event processing when you have workers who have life events that take place on a future date. This event will process all life events that have not been processed (like future life events, or life events that have been added that are not specific to any one worker – one example is a new benefit). If Real time life events is not selected in the Parameters form, you need to run this manually to update life events.
+Use life event processing when you have workers who have life events that take place on a future date. This event will process all life events that have not been processed (like future life events, or life events that have been added that are not specific to any one worker – one example is a new benefit). Real time life events are hidden.
 
 For example, if today is February 1, and on February 14 worker Joe Smith is scheduled to change legal entities, if you run life event processing for February 15, the system processes all events up until February 15. 
 

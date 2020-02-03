@@ -63,7 +63,7 @@ This article shows you how to set up benefit plans in Dynamics 365 Human Resourc
    | Medical (Medical, Dental, Vision, HMO) | HIPAA | Specifies whether the plan is HIPAA (Health Insurance Portability and Accountability Act) eligible. |
    | <ul><li>Medical (Medical, Dental, Vision, HMO)</li><li>Other (PTO, Fitness)</li><li>Other</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Pretax eligible | Specifies whether contributions can be made to the plan before taxes are applied. |
    | <ul><li>Medical (Medical, Dental, Vision, HMO)</li><li>Other (PTO, Fitness)</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Post tax eligible | Specifies whether contributions can be made to the plan after taxes are applied. |
-   | <ul><li>Other (PTO, Fitness)</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Contributor | Specifies who contributes to the plan – the employee, the employer, or both. |
+   | <ul><li>Medical (Medical, Dental, Vision, HMO)</li><li>Other (PTO, Fitness)</li><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Contributor | Specifies who contributes to the plan – the employee, the employer, or both. |
    | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Minimum coverage | The minimum amount of insurance coverage required for the plan. |
    | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Maximum coverage | The maximum amount of insurance coverage required for the plan. |
    | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Use coverage increments | Specifies whether to validate that the coverage amount matches a valid incremental amount. |
@@ -71,8 +71,8 @@ This article shows you how to set up benefit plans in Dynamics 365 Human Resourc
    | <ul><li>Long term disability</li><li>ADD (Basic life, Voluntary life)</li></ul> | Incremental direction | Specifies the direction to round – either up or down – when the coverage amount doesn’t satisfy the incremental amount value. |
    | ADD (Basic life, Voluntary life) | Evidence of insurability | Specifies whether an employee must provide evidence of insurability. |
    | ADD (Basic life, Voluntary life) | Amount | The amount in accounting currency. This field is only active if the Evidence of insurability check box is selected. |
-   | <ul><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Minimum annual contribution | The minimum amount of insurance coverage required for the plan. |
-   | <ul><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Maximum annual contribution | The maximum amount of insurance coverage required for the plan. |
+   | <ul><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Minimum annual contribution | The minimum contribution amount required for the plan. |
+   | <ul><li>Savings (for example, 401(k))</li><li>FSA</li></ul> | Maximum annual contribution | The maximum contribution amount required for the plan. |
    | Savings (for example, 401(k)) | Employer maximum annual amount | The maximum amount an employer is allowed to contribute toward an employee savings plan during a benefit period. You must select the Employer match check box to use this field. |
    | Savings (for example, 401(k)) | Employer match | Specifies whether the employer contributes to an employee savings plan. |
    | Savings (for example, 401(k)) | Employer match percent | The percentage of an employee contribution that the employer will match. |
@@ -131,7 +131,7 @@ You can view the workers who are enrolled in a selected benefit plan.
 
 ## Attach coverage options
 
-You can add coverage options to the selected benefits plan.
+You can add coverage options to the selected benefits plan. Attaching coverage options brings the rate and deduction setup together for a coverage option.  Example:  For a medical plan, the user would select a Family coverage option.  They would then need to select the Family rate for the associated plan (set in Rate setup) and the deduction for the associated plan (set in rate setup). This provides the cost for the employer and employee for a selected coverage. Then you would repeat the process for an Employee+1 coverage or Employee coverage.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 
@@ -155,7 +155,7 @@ You can see a list of the available benefits periods.
 
 ## View plan information
 
-You can provide a description of the plan to help employees with their benefits selections.
+You can provide a description of the plan to help employees with their benefits selections. The plan information you enter here displays in Employee self service when hovering on the plan in the coverage options list.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 

@@ -61,11 +61,7 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Use employment category** | Specifies whether to use the employee’s **Employment category** value as part of the benefit eligibility rule. | 
    | **Employment category** | The employee’s employment category if the **Use employment category** toggle is set to **Yes**. |
    | **Use new hire rule** | Specifies whether to use a new hire’s new hire period value as part of the benefits eligibility rule. |
-   | **Enrollment period** | The time period when new hire enrollment is allowed. |
-   | **User former employment status** | Specifies whether the eligibility rule depends on a change in employee status. For example, you can have an eligibility rule for employees who are currently set to **Temporary leave of absence**, but have a former employment status of **Employed** within the last 30 days. This field is used in conjunction with the fields that follow it. | 
-   | **Status** | The former status to use for the eligibility rule. In the preceding example, the value would be **Employed**. |
-   | **From** | A value from the Waiting days form that is used to indicate the effective date of the status change time frame. If the ‘From’ date is set to 0 and the ‘To’ date is set to 365, the system will search for a time lapse of 365 days between statuses. | 
-   | **To** | Indicates the expiration date of the status change time frame. If you set. From** to 0 and **To** to 365, the system will search for a time lapse of 365 days between statuses. |
+   | **Enrollment period** | The time period when new hire enrollment is allowed. If you also set this in parameters, the parameters setting takes precedence over this one. |
 
 4. Under **Additional criteria**, select the following options and add information as necessary:
 
@@ -74,18 +70,17 @@ During open enrollment, employees can select benefit plans. If they become ineli
    | **Eligible age** | Specifies the age range or ranges required to satisfy the eligibility rule. |
    | **Eligible department** | Specifies the department or departments an employee must be in to satisfy the eligibility rule. |
    | **Eligible employment type** | Specifies the employment type or types an employee must be categorized as to satisfy the eligibility rule. For example, full time or part time. |
-   | **Eligible job** | Specifies the job or jobs that satisfy the eligibility rule. Jobs are associated with positions, and positions are filled by employees. | 
+   | **Eligible job** | Specifies the job or jobs that satisfy the eligibility rule. Jobs are associated with positions, and positions are filled by employees. |
    | **Eligible job function** | Specifies the job function or functions that satisfy an eligibility rule. For example, sales workers or technicians. |
    | **Eligible job type** | Specifies the job type or types that satisfy the eligibility rule. For example, clerical or executive. |
    | **Eligible legal entity** | Specifies the legal entity or legal entities that are valid for the eligibility rule. For example, Contoso Entertainment System USA. |
-   | **Eligible office location** | Specifies the employee location that satisfies the eligibility rule. For example, central US. |
-   | **Eligible office location** | Specifies the employee’s office location that satisfies the eligibility rule. For example, New Jersey office. |
+   | **Eligible compensation region** | Specifies the employee location that satisfies the eligibility rule. For example, central US. |
    | **Eligible position** | Specifies the position or positions that satisfy the eligibility rule. For example, HR Assistant or HR Manager. |
    | **Eligible position type** | Specifies the position type or types that satisfy the eligibility rule. For example, full time. |
-   | **Eligible state** | Specifies the states or provinces that satisfy the eligibility rule. For example, North Dakota USA or British Columbia, Canada. If the employee has multiple primary addresses, the eligibility rule checks all of them to assess eligibility. |
+   | **Eligible state** | Specifies the states or provinces that satisfy the eligibility rule. For example, North Dakota USA or British Columbia, Canada. |
    | **Eligible terms of employment** | Specifies the terms of employment that satisfy the eligibility rule. For example, at will or group contract. |
    | **Eligible union** | Specifies the labor union memberships that satisfy the eligibility rule. For example, Forklift Drivers of America. </br></br>When using a union-based eligibility rule, the worker’s union record must have the end date populated. You can’t leave it blank. |
-   | **Eligible ZIP/postal code** | Specifies the ZIP/postal codes that satisfy the eligibility rule. For example, 58104. If the employee has multiple primary addresses, the eligibility rule will check all of them to assess eligibility. |
+   | **Eligible ZIP/postal code** | Specifies the ZIP/postal codes that satisfy the eligibility rule. For example, 58104. |
 
 5. Under **Additional detail**, you can view the following additional details:
 
@@ -100,7 +95,11 @@ During open enrollment, employees can select benefit plans. If they become ineli
 
 ## Configure bundles
 
-Bundles are a set of related benefit plans. You can use benefits bundles to group benefit plans that an employee must choose in order to enroll in certain benefit plans that may be dependent on other benefit plan enrollments. For example, a health bundle or savings bundle. 
+Bundles are a set of related benefit plans. You can use benefits bundles to group benefit plans that an employee must choose in order to enroll in certain benefit plans that may be dependent on other benefit plan enrollments. Examples of when you might want to use a bundle include:
+
+- A health plan bundle that includes high-deductible health insurance with an associated health savings account (HSA).
+
+- A life insurance plan with a mandatory employee life insurance plan bundled with a dependent life plan. This would ensure an employee can't select dependent life coverage without signing up for the employee coverage.
 
 1. In the **Benefits management** workspace, under **Setup**, select **Eligibility rules and options**.
 
@@ -164,11 +163,11 @@ You can use flex credit programs to enroll employees in benefits according to a 
 
 ## Configure programs
 
-Programs are a set of benefit plans that share a common set of eligibility rules. You can define eligibility rules for the entire program instead of for each individual plan. For example, a Contoso Canada FTE program or Contoso Europe contractor program. 
+Programs are a set of benefit plans that share a common set of eligibility rules. You can define eligibility rules for the entire program instead of for each individual plan. For example, a Contoso Canada FTE program or Contoso Europe executive-level program. 
 
 1. In the **Benefits management** workspace, under **Setup**, select **Eligibility rules and options**.
 
-2. In the **Programs** tab, select **New** to create a program. To make exceptions for employees who don't meet the eligibility rule requirements, select **Eligibility rule override**. To see plans that are associated with a bundle, select **Attached plans**.
+2. In the **Programs** tab, select **New** to create a program. To make exceptions for employees who don't meet the eligibility rule requirements, select **Eligibility rule override**. To see plans that are associated with a program, select **Attached plans**.
 
 3. Specify values for the following fields:
 

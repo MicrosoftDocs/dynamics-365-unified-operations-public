@@ -49,11 +49,10 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | Tile ID | The unique identifier for the tile. |
    | Tile label text | The text that will appear for the tile on Self-service. |
    | Description | A description of the tile. |
-   | Internet address | The URL of the page you go to when you click the tile. |
+   | Internet address | Enter the URL to the employee self service page. |
    | Tile size | The size of the tile: Small, Medium, or Large. |
    | Target | Specifies whether the page should open in a new window or the current window. |
    | Tile background image | The URL of the image to use for the tile (optional). |
-   | Select a color | The background color of the tile. Click the dropdown to select a color from the Color form. |
    | Start | The beginning date and time the tile should be available. |
    | End | The end date and time the tile should be available. |
 
@@ -72,11 +71,10 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | Tile ID | The unique identifier for the tile. |
    | Tile label text | The text that will appear for the tile on Self-service. |
    | Description | A description of the tile. |
-   | Internet address | The URL of the page you go to when you click the tile. |
+   | Internet address | Enter the URL to the employee self service page. |
    | Tile size | The size of the tile: Small, Medium, or Large. |
    | Target | Specifies whether the page should open in a new window or the current window. |
    | Tile background image | The URL of the image to use for the tile (optional). |
-   | Select a color | The background color of the tile. Click the dropdown to select a color from the Color form. |
    | Start | The beginning date and time the tile should be available. |
    | End | The end date and time the tile should be available. |
 
@@ -95,11 +93,10 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
    | Tile ID | The unique identifier for the tile. |
    | Tile label text | The text that will appear for the tile on Self-service. |
    | Description | A description of the tile. |
-   | Internet address | The URL of the page you go to when you click the tile. |
+   | Internet address | Enter the URL to the employee self service page. |
    | Tile size | The size of the tile: Small, Medium, or Large. |
    | Target | Specifies whether the page should open in a new window or the current window. |
    | Tile background image | The URL of the image to use for the tile (optional). |
-   | Select a color | The background color of the tile. Click the dropdown to select a color from the Color form. |
    | Start | The beginning date and time the tile should be available. |
    | End | The end date and time the tile should be available. |
 

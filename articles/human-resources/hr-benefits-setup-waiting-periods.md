@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](includes/preview-feature.md)]
 
-In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans. For example, three months from hire date, the first of each month, or every six months.   
+In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans. For example, three months from hire date, the first of each month, or six months.   
 
 1. In the **Benefits management** workspace, under **Setup**, select **Waiting periods**.
 
