@@ -55,7 +55,7 @@ Select a feature area to learn more about it.
 - [Commerce architecture](retail-components.md)
 - [Set up your channels](channels-overview.md)
 - [Merchandizing your products and services](set-up-retail-products.md)
-- [Manage your orders](order-fulfillment-overview.md)
+- [Manage your orders](Order-fulfillment-overview.md)
 - [Manage your customers](set-up-customer-loyalty-program.md)
 - [Manage your financials](retail-statements.md)
 - [Manage your e-Commerce site](online-store-overview.md)
