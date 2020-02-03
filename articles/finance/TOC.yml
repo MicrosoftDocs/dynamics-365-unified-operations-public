@@ -1969,6 +1969,8 @@
           href: localizations/emea-ita-exil-goods-for-free.md
         - name: Improved inquiry on debit or credit settlements
           href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+        - name: General ledger simulations (Italy)
+          href: localizations/emea-ita-exil-general-ledger-simulations.md
       - name: Japan
         items:
         - name: Japan overview
