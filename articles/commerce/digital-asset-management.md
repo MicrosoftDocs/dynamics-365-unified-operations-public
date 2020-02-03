@@ -43,7 +43,7 @@ The e-Commerce feature of the Microsoft Dynamics 365 Commerce product offers ric
 
 Digital assets are channel-specific with the exception of omni-channel assets which are e-Commerce environment wide by default. Digital assets and the management features can be located from under the "Assets"-tab within a site.
 
-# How to upload an image
+## How to upload an image
 To upload an image, first navigate to the "Assets"-tab. Assets for selected site, channel and locale are shown in the middle pane.
 
 ![Assets tab](./media/dam-screenshot1.png)
@@ -73,6 +73,17 @@ After entering the information, click OK. Image upload will start. If you are up
 After the upload completes, you will see the images appear in the middle pane and you can start using them.
 
 Note: You should always upload the version of the image with highest resolution and quality. The image resizer component will automatically optimize the image for different viewports/breakpoints.
+
+## How to upload a folder of images
+
+In order to bulk upload a folder of images, perform the following steps:
+1. Navigate to the "Assets"-tab of the site
+1. Click "Upload" from the action bar, then choose "Upload folder"
+1. Select the folder you want to upload, then click "Upload"
+1. Confirmation dialog will appear. Press "Upload"
+1. After validation, you are asked to enter the common metadata for the images. Click "Ok" to proceed
+1. Folder upload will start and you will be shown a progress bar while waiting
+1. After upload has finished, you are sent back to the "Assets"-view
 
 ## Omni-channel image naming
 
