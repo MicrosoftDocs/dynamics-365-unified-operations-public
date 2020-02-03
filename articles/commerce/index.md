@@ -5,7 +5,7 @@ title: Commerce home page
 description: Home page for Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -47,10 +47,6 @@ This release enables the creation of digital experiences using built-in web auth
 - **Flexible and intelligent omnichannel experience:** Unify physical and digital commerce by providing consistent experiences to customers across cloud search and discovery, product reviews, wish lists, inventory, gift cards, and loyalty. Allow customers to purchase when, how, and where they want, on any device—while providing choice around modern payment methods and product collection or delivery.
 
 - **Streamline operations using AI in the cloud:** Drive omnichannel commerce experiences and integrated, optimized back-office operations through ingrained, pervasive, and context-aware cloud intelligence. Use advanced merchandising, inventory management, distributed order management, and pricing and promotion to innovate and stay ahead of competition. Derive insights by visualizing and analyzing comprehensive and consistent data across all aspects of your business. Use AI-driven technologies to provide accessible websites, protect your business against payment fraud, and efficiently moderate user-generated content like ratings and reviews. 
-
-## Sign up for the preview
-
-Go to the [Dynamics 365 Commerce (Preview)](https://dynamics.microsoft.com/en-us/commerce/overview/) page to fill out an application to join the preview. Existing Dynamics 365 Retail customers will be able to update to Commerce once it becomes generally available. 
 
 ## Core concepts and tasks
 
