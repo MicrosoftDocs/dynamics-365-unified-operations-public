@@ -1381,6 +1381,8 @@
           href: procurement/tasks/create-scoring-method-rfqs.md
         - name: Create solicitation types and scoring criteria for RFQs
           href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+        - name: Responding to vendor questions on Request for quotations
+          href: procurement/rfq-question.md
         - name: Enter and compare RFQ bids and award contracts
           href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
       - name: Purchase orders
