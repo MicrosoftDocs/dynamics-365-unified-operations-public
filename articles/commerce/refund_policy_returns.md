@@ -30,8 +30,8 @@ ms.dyn365.ops.version: Retail 10.0.9 update
 
 # Create and update a returns and refunds policy for a channel
 
-[!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 
 ## Overview
@@ -62,11 +62,11 @@ Follow these steps to configure a return policy for a retail store or online ret
 
 2. Select **New** to create a new return policy template. To use an existing template, select the template in the left pane. For new templates, add a name and description that will help you identify the policy when it is being applied to the channel.
 
-   ![Add new return policy](../dev-itpro/media/Return-policy-page1.png "Add new return rolicy")
+   ![Add new return policy](media/Return-policy-page1.png "Add new return rolicy")
      
    
 3. In the **Allowed refund payment methods** section, define **Allowed** return payment tenders that are specific to each payment method.
-   ![Add payment methods](../dev-itpro/media/Return-policy-page2.PNG "Set allowed payment methods per payment type")
+   ![Add payment methods](media/Return-policy-page2.PNG "Set allowed payment methods per payment type")
    
     > [!IMPORTANT]
     > - The payment methods are derived from the payment methods set for the organization.
@@ -79,7 +79,7 @@ Follow these steps to configure a return policy for a retail store or online ret
     - Use the arrow buttons to select stores, regions, or organizations.
     - The effective date on the policy will be the date on which the policies are applied to the channels and the channel jobs are run. 
 
-    ![Choose organization nodes dialog box](../dev-itpro/media/Return-policy-page3.PNG "Choose organization nodes dialog box")
+    ![Choose organization nodes dialog box](media/Return-policy-page3.PNG "Choose organization nodes dialog box")
 
 5. On the **Distribution schedule** page, run the **1070** job to make the channel return policy available to the POS.
 
@@ -105,8 +105,8 @@ Follow the steps in either of the following examples to view the allowed return 
 - If the payment tender selected is not allowed, an error message is displayed.
 - Select **Amount Due** to display a list of all the allowed return tender types.
 
-![Refund not allowed](../dev-itpro/media/Return-policy-page6.png "Refund type not allowed")
+![Refund not allowed](media/Return-policy-page6.png "Refund type not allowed")
 
 
 
-![List of payment methods](../dev-itpro/media/Return-policy-page5.PNG "Refund types allowed")
+![List of payment methods](media/Return-policy-page5.PNG "Refund types allowed")
