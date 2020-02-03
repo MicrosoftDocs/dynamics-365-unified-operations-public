@@ -45,7 +45,7 @@ This article explains how to setup intent letters and use it during invoices iss
 ## Set up Accounts receivable parameters
 In **Accounts receivable > Setup > Accounts receivable parameters**, in **Ledger and sales tax**, in **Usual exporters** section, in **Usual exporter sales tax group** field define a salex tax group specific for usual exportrs.
 
-Addiyionally, turn on **Automatic intent letter assignment** parameter if you want to activate automatic assignment of intent letters when invoicing.
+Additionally, turn on **Automatic intent letter assignment** parameter if you want to activate automatic assignment of intent letters when invoicing.
 
 ![Set up AR parameters](media/emea-ita-exil-intent-AR-parm.jpg)
 ## Set up Sales tax codes
@@ -58,8 +58,11 @@ In **Accounts receivable > Customers > All customers**, for the selected Custome
 ## Set up intent letters number sequence
 In **Accounts receivable > Setup > Accounts receivable parameters**, in **Number sequences** tab, in **Internal letter number** field specify the reference to the number sequence that will be used for intent letters numbering.
 
-
-## Use...
+## Create intent letters
+You can create a new intent letter for a selected customer. In **Accounts receivable > Customers > All customers**, for the selected Customer, in **Sell** menu section, select **Setup > Intent letters**.
+![Intent letter](media/emea-ita-exil-intent-new-cust.jpg)
+Then click on **New** button.
+Alternatively, you can create a new intent letter for any applicable customer in **Accounts receivable > Intent letters > Intent letters**.
 
 ### Post
 
