@@ -46,8 +46,6 @@ As competition for resources increases, you must offer a rich set of benefits to
 
 - Qualified life event processing integrates with Employee self service, and also supports future life events.
 
-For more information, see [Benefits management overview](https://docs.microsoft.com/dynamics365/human-resources/hr-benefits-management-overview).
-
 If you would like to access the demo data, you will need to re-deploy your sandbox environment.
 
 You can provide direct feedback or report issues to:  D365BenefitsPreview@microsoft.com.
