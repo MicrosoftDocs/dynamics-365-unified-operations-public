@@ -44,7 +44,7 @@
           href: cpe-post-provisioning.md
         - name: Configure optional features for a Dynamics 365 Commerce preview environment
           href: cpe-optional-features.md
-        - name: Commerce preview environment FAQ
+        - name: Dynamics 365 Commerce preview environment FAQ
           href: cpe-faq.md
       - name: Deployment considerations
         items:
