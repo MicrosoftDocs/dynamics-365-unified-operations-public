@@ -117,7 +117,7 @@ Follow these steps to add business logic that initializes the report viewer cont
 2. Press F7 to access the code behind the code definition.
 3. Add the following X++ code.
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -162,7 +162,7 @@ You've now completed the task of adding business logic to initialize the embedde
 This section provides information about the helper class that is used to embed a Power BI report (.pbix resource) in a form group control.
 
 #### Syntax
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,
