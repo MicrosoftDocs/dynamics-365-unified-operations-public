@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Carousel module
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -84,10 +83,6 @@ To add a carousel module to a new page and set the required properties, follow t
 [Alert module](add-alert.md)
 
 [Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
-
-[Feature module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
 
