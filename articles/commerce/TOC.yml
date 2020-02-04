@@ -34,17 +34,17 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Set up a Commerce preview environment
+      - name: Set up a Dynamics 365 Commerce preview environment
         items:
-        - name: Commerce preview environment overview
+        - name: Dynamics 365 Commerce preview environment overview
           href: cpe-overview.md
-        - name: Provision a Commerce preview environment
+        - name: Provision a Dynamics 365 Commerce preview environment
           href: provisioning-guide.md
-        - name: Configure a Commerce preview environment
+        - name: Configure a Dynamics 365 Commerce preview environment
           href: cpe-post-provisioning.md
-        - name: Configure optional features for a Commerce preview environment
+        - name: Configure optional features for a Dynamics 365 Commerce preview environment
           href: cpe-optional-features.md
-        - name: Commerce preview environment FAQ
+        - name: Dynamics 365 Commerce preview environment FAQ
           href: cpe-faq.md
       - name: Deployment considerations
         items:
@@ -1808,6 +1808,8 @@
           items:
           - name: Module definition file
             href: e-commerce-extensibility/module-definition-file.md
+          - name: Module React component file
+            href: e-commerce-extensibility/module-react-file.md
           - name: Module view file
             href: e-commerce-extensibility/module-view-file.md
           - name: Module data file
@@ -1866,8 +1868,10 @@
             href: e-commerce-extensibility/event-based-data-actions.md
           - name: Core data actions
             href: e-commerce-extensibility/core-data-actions.md
-          - name: Call Commerce Scale Unit APIs
+          - name: Call Retail Server APIs
             href: e-commerce-extensibility/call-retail-server-apis.md
+          - name: Call Retail Server extension APIs
+            href: e-commerce-extensibility/call-retail-extension-api.md
         - name: Advanced data action topics
           items:
           - name: Chain data actions
