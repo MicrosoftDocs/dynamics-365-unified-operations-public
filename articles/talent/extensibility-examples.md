@@ -62,9 +62,9 @@ To download the **Power Automate – Form Connect** template and Custom Entity S
 
 ## Integration with Office 365
 
-The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract employee Identification types. Manger can check  expiration dates of employee identification types and can send reminder if employee identification type is expiring. Identification types include Drivers License, Passport etc.,
+The **Integration with Office 365** app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract employee identification types. Managers can check  expiration dates of employee identification types and can send a reminder if the employee identification type is expiring. Identification types include driver's license, passport, and other acceptable forms of ID.
 
-This app can be extended so that it can be used for other scenarios. For example, it can be used to show team vacation information, calendar events, and any team-specific events.
+You can extend this app for other scenarios. For example, you can use it to show team vacation information, calendar events, and any team-specific events.
 
 To download the **Integration with Office 365** app , go to [Integration with Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) on the Microsoft Download Center.
 
