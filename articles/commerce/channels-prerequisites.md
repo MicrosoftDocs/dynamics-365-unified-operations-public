@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Channel setup prerequisites
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic presents an overview of channel setup prerequisites in Microsoft Dynamics 365 Commerce.

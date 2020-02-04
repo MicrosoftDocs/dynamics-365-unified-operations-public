@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Dynamics 365 Commerce preview environment overview
 
+
 [!include [banner](includes/banner.md)]
 
 This topic gives an overview of the Microsoft Dynamics 365 Commerce preview environment.

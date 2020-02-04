@@ -115,8 +115,8 @@ To obtain the latest data upgrade deployable package for a target environment th
 
 > [!NOTE]
 > If you are upgrading a database on a development environment, you can instead execute the data upgrade package directly from the LCS environment page, using the **Maintain > Apply Updates** servicing functionality. This does not require the user to be a local Administrator on the development VM. This is available as of the [February](https://blogs.msdn.microsoft.com/lcs/2018/02/13/lcs-february-2018-release-1-release-notes/) release of LCS. 
-
-> This will upgrade your Finance and Operations database, Retail channel database, and reset the Financial reporting database.
+>
+> This will upgrade your Finance and Operations database, channel database, and reset the Financial reporting database.
 
 ## Re-enable SQL change tracking
 

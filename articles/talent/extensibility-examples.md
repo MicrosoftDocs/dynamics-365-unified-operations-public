@@ -83,7 +83,7 @@ The **Power Automate – Email Notification** template can be used for email not
 
 This template can be extended to track changes to the candidate stage throughout the recruiting process, and to send notifications to the hiring team and candidate.
 
-In general, for entities that are stored in Common Data Service, flows can be set up to send notifications for events that occur in Core HR, Attract, or Onboard.
+In general, for entities that are stored in Common Data Service, flows can be set up to send notifications for events that occur in Human Resources.
 
 To download the **Power Automate – Email Notification** template, go to [Power Automate – Email Notification](https://go.microsoft.com/fwlink/?linkid=2082103) on the Microsoft Download Center.
 

@@ -47,9 +47,8 @@ After your **Implementation project** workspace is provisioned in Microsoft Dyna
 
 | FastTrack program | Revenue | TechTalks | Workshops | Workshop follow-ups | Dedicated FastTrack engineering resources |
 | --- | --- | --- | --- | --- | --- |
-| **Dynamics 365 FastTrack** <br></br> **Business process applications** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Talent\* | Combined annual adjusted revenue of $300,000 or more | All included | All included | All included | Included |
-| **FastTrack Essentials** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Talent\* | Combined annual adjusted revenue < $300,000 | All included | Pre go-live assessment | Not included | Not included |
-| \* Core HR capabilities only | | | | | |
+| **Dynamics 365 FastTrack** <br></br> **Business process applications** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources\* | Combined annual adjusted revenue of $300,000 or more | All included | All included | All included | Included |
+| **FastTrack Essentials** <br></br> Dynamics 365 Finance <br></br> Dynamics 365 Supply Chain Management <br></br> Dynamics 365 Retail <br></br> Dynamics 365 Human Resources | Combined annual adjusted revenue < $300,000 | All included | Pre go-live assessment | Not included | Not included |
 
 We will announce FastTrack coverage later this year for these applications:
 
