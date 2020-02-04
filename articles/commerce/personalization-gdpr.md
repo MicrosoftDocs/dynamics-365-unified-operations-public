@@ -80,7 +80,7 @@ The following example shows how a retailer can accomplish this task.
 
     One way to create the custom extension is to clone the existing product collection module that is used to return recommendations results. By cloning this existing module, a retailer can modify the existing code and add a new button that exports the recommendations results to a CSV file. For more information, see [Clone a starter kit module](e-commerce-extensibility/clone-starter-module.md) and [Product collection modules](product-collection-module-overview.md).
 
-    For a full view of the Retail Server API library, see [Retail Server Customer and Consumer APIs](retail/dev-itpro/retail-server-customer-consumer-api.md).
+    For a full view of the Retail Server API library, see [Retail Server Customer and Consumer APIs](dev-itpro/retail-server-customer-consumer-api.md).
 
 3. After the custom extension is created, the retailer can export a CSV file of all recommendations results, based on the unique customer ID of the authenticated user.
 4. The retailer can share the exported CSV file that contains the full personalized list of recommended products with the authenticated user.
@@ -95,6 +95,6 @@ The following example shows how a retailer can accomplish this task.
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
 
-[Add recommendations panel to POS devices](.../retail/add-recommendations-control-pos-screen)
+[Add recommendations panel to POS devices](add-recommendations-control-pos-screen)
 
 [Product collection module overview](product-collection-module-overview.md)
