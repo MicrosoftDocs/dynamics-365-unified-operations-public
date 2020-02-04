@@ -574,10 +574,18 @@
         items:
         - name:	Product recommendations overview	
           href:	product-recommendations.md	
+        - name:	Enable ADLS in a Dynamics 365 Commerce environment	
+          href:	enable-ADLS-environment.md	
         - name:	Add product recommendation lists to e-Commerce pages	
           href:	add-reco-list-to-page.md
         - name:	Enable product recommendations
           href:	enable-product-recommendations.md
+        - name: Personalized recommendations
+          items:
+          - name: Enable personalized recommendations
+            href: personalized-recommendations.md
+          - name: Opt out of personalized recommendations 
+            href: personalization-gdpr.md
         - name: Create curated product recommendation lists		
           href:	create-editorial-recommendation-lists.md
         - name:	Manage AI-ML-based product recommendation results	
