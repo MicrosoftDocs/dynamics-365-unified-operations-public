@@ -15,7 +15,7 @@ ms.technology:
 
 ms.search.form: 
 # ROBOTS: 
-audience: Enduser
+audience: Application user
 # ms.devlang: 
 ms.reviewer: v-chgri
 ms.search.scope: Core, Operations, Retail
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Add a logo
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a logo to your site in Microsoft Dynamics 365 Commerce.
@@ -66,6 +66,8 @@ After you publish the updated header fragment, all site pages that use the templ
 ## Additional resources
 
 [Select a site theme](select-site-theme.md)
+
+[Work with CSS override files](css-override-files.md)
 
 [Add a favicon](add-favicon.md)
 

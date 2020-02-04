@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-When a company wants to utilize the complement and compensation of the ICMS-ST for the 2020 calendar year, they need to start registering the ICMS-ST information during the receipt of electronic fiscal documents model 55 starting January 1, 2020.
+When a company wants to utilize the complement and compensation of the ICMS-ST for the 2020 calendar year, they need to start registering the additional ICMS-ST information during the receipt of electronic fiscal documents model 55 starting January 1, 2020.
 
 For Dynamics 365 Finance only, this feature must be enabled using Feature Management. Complete the following steps to enable this feature.
 

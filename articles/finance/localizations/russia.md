@@ -73,6 +73,7 @@ This topic provides information about functionality that supports Russian regula
 
 ## Fixed assets (Russia)
 - [Fixed assets (Russia)](rus-fixed-assets.md)
+- [Fixed assets overview](rus-fixed-assets-overview.md)
 - [Set up fixed assets](rus-set-up-fixed-assets.md)
 - [Acquiring fixed assets and putting them into operation](rus-fixed-asset-acquisition.md)
 - [Register fixed assets acquisitions](rus-register-acquisition.md)
@@ -111,6 +112,7 @@ This topic provides information about functionality that supports Russian regula
 - [Assessed tax declaration](rus-assessed-tax-declaration.md)
 - [Transport tax declaration](rus-transport-tax-declaration.md)
 - [Land tax declaration](rus-land-tax-declaration.md)
+- [Profit tax declaration](rus-profit-tax-declaration.md)
 
 ## Organization administration
 

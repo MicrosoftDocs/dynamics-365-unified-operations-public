@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Manage SEO metadata
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage search engine optimization (SEO) metadata in Microsoft Dynamics 365 Commerce.
@@ -102,3 +102,4 @@ To modify page metadata, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)

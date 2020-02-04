@@ -5,7 +5,7 @@ title: Ways to add content
 description: This topic provides information about how to add and manage content on your Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Ways to add content
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides information about how to add and manage content on your Microsoft Dynamics 365 Commerce site.
@@ -50,6 +50,8 @@ The following topics provide detailed information about how to add and manage si
 [Page model glossary](page-elements-overview.md)
 
 [Document states and lifecycle](document-states-overview.md)
+
+[Work with publish groups](publish-groups.md)
 
 [Work with modules](work-with-modules.md)
 

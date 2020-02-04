@@ -38,7 +38,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This topic provides information about product information management. Product information management works with a shared product definition, categorization, and identifiers across all legal entities, and also specific configurations of a product, to fit into the business processes. 
 
-Product information is the backbone of supply chain and retail applications across all industries. It refers to processes and technologies that focus on centrally managing information about products (for example, across supply chains). It's crucial that shared product definitions, documentation, attributes, and identifiers be used. In the various modules of a business solution, product-specific information and configuration are required in order to manage the business processes that are related to specific products, product families, or product categories.
+Product information is the backbone of supply chain and commerce applications across all industries. It refers to processes and technologies that focus on centrally managing information about products (for example, across supply chains). It's crucial that shared product definitions, documentation, attributes, and identifiers be used. In the various modules of a business solution, product-specific information and configuration are required in order to manage the business processes that are related to specific products, product families, or product categories.
 
 ## Product definition
 

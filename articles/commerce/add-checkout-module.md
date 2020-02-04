@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Checkout module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a checkout module to a page and set the required properties.
@@ -58,7 +58,7 @@ A checkout module shows an order summary and provides the functionality for plac
 - **Contact information** – This module lets a customer add or change the contact information (email address) for an order.
 - **Text block** – This module contains any messaging that is driven by the content management system (CMS). For example, it might contain a message that states, "For issues with your order, contact 1-800-Fabrikam." 
 
-## Retail server interaction
+## Commerce Scale Unit interaction
 
 Most of the checkout information, such as the shipping address and shipping method, is stored in the cart and processed as part of the order. The only exception is the credit card information. This information is processed directly by using the Adyen payment connector. The payment is authorized but isn't charged.
 

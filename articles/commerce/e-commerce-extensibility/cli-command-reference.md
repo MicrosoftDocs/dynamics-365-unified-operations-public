@@ -5,7 +5,7 @@ title: CLI command reference
 description: This topic covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 manager: annbe
-ms.date: 10/07/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # CLI command reference
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
@@ -69,12 +68,44 @@ yarn msdyn365 add-data-action getMyData
 yarn msdyn365 add-module <module-name>
 ```
 
-This command adds a module to the root/src/modules folder.
+This command adds a module to the root/src/modules folder. Note that module names are case-insensitive. 
 
 **Example**
 
 ``` bash
-yarn msdyn365 add-module campaignBanner
+yarn msdyn365 add-module product-feature
+```
+
+## add-theme
+
+**Usage**
+
+``` bash
+yarn msdyn365 add-theme <theme-name>
+```
+
+This command adds a theme to the root/src/themes folder.
+
+**Example**
+
+``` bash
+yarn msdyn365 add-theme spring-theme
+```
+
+## add-view-extension
+
+**Usage**
+
+``` bash
+yarn msdyn365 add-view-extension <theme-name> <Module-name>
+```
+
+This command adds a module view extension to the root/src/themes/\<theme-name\>/views folder. The theme can then add more module definition items, such as configurations, resources, and slots.
+
+**Example**
+
+``` bash
+yarn msdyn365 add-view-extension spring-theme product-feature
 ```
 
 ## clone
@@ -90,7 +121,7 @@ This command creates a renamed copy of a starter kit module and adds the source 
 **Example**
 
 ``` bash
-yarn msdyn365 clone hero myHero
+yarn msdyn365 clone content-block super-content-block
 ```
 
 ## pack

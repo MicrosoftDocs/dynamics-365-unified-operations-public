@@ -5,7 +5,7 @@ title: What's new or changed in Dynamics 365 for Finance and Operations, Enterpr
 description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 8. This version was released in June 2017.
 author: tonyafehr
 manager: AnnBe
-ms.date: 06/26/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -42,7 +42,7 @@ Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find suppleme
 
 ## Introducing Dynamics 365 for Finance and Operations, Enterprise edition
 
-Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 Talent will now appear as "Dynamics 365 Unified Operations."
+Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations, Enterprise edition") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 Human Resources will now appear as "Dynamics 365 Unified Operations."
 
 ## Development and customization – Changing the extended data type (EDT) on a table field using table extensions
 
@@ -68,7 +68,7 @@ Some organizations are not ready to store their company's mission critical data 
 
 This deployment option supports running your business processes on-premises, supporting local transactions and storage of local business data, without replication of your business data to the Microsoft cloud. In these cases, the typical replication of business data in the Microsoft cloud (referenced in the cloud and edge scenario) is simply switched off.
 
-Cloud synchronization of data enables Microsoft to embed intelligence into business processes – embedded analytics, machine learning, and a vast range of capabilities are best served from the Microsoft cloud. With this option, customers now have a choice – an option to turn on or turn off cloud synchronization of their business data. If customers turn off cloud synchronization, no business data leaves their trustee's boundaries. Also, functions like embedded Power BI, Aggregated Views, and Azure Machine Learning services-based efficiencies are not available when cloud data synchronization is turned off. Customers can choose to take advantage of the embedded intelligence functions by simply turning on data synchronization to the cloud.
+Cloud synchronization of data enables Microsoft to embed intelligence into business processes – embedded analytics, machine learning, and a vast range of capabilities are best served from the Microsoft cloud. With this option, customers now have a choice – an option to turn on or turn off cloud synchronization of their business data. If customers turn off cloud synchronization, no business data leaves their trustee's boundaries. Also, functions like embedded Power BI, Aggregated Views, and Azure Machine Learning are not available when cloud data synchronization is turned off. Customers can choose to take advantage of the embedded intelligence functions by simply turning on data synchronization to the cloud.
 
 An environment with both on-premises business data and cloud data synchronization is referred to as a Cloud + Edge deployment option. Refer to the table for a closer comparison of differences between these options.
 

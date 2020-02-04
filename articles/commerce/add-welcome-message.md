@@ -5,7 +5,7 @@ title: Add a welcome message
 description: This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Add a welcome message
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to add a welcome message to your Microsoft Dynamics 365 Commerce website.
@@ -64,6 +64,8 @@ The welcome message will now appear at the top of every site page that uses the 
 [Add a logo](add-logo.md)
 
 [Select a site theme](select-site-theme.md)
+
+[Work with CSS override files](css-override-files.md)
 
 [Add a favicon](add-favicon.md)
 

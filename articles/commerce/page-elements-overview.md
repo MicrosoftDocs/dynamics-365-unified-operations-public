@@ -5,7 +5,7 @@ title: Page model glossary
 description: This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Page model glossary
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
@@ -55,6 +55,8 @@ The following table provides a summary of terms that you should be familiar with
 [Ways to add content](add-manage-content.md)
 
 [Document states and lifecycle](document-states-overview.md)
+
+[Work with publish groups](publish-groups.md)
 
 [Work with modules](work-with-modules.md)
 

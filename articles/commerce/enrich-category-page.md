@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Enrich a category landing page
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers the enrichment of category pages in Dynamics 365 Commerce.
@@ -69,3 +69,5 @@ To enrich a category page, do the following.
 [Save, preview, and publish a page](save-preview-publish-page.md)
 
 [Enrich a product page](enrich-product-page.md)
+
+[Verify page content accessibility](verify-accessibility.md)

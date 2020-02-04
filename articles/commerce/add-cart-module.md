@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Cart module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -61,9 +61,9 @@ Cart modules have the following settings that can be configured at **Site Settin
 - **Inventory buffer** – This property is used to specify a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 - **Back to shopping** – This property is used to specify the route for the **Back to shopping** link. This route can be configured at the site level. This configuration lets retailers take the customer back to the home page or any other page on the site.
 
-## Retail Server interaction
+## Commerce Scale Unit interaction
 
-The cart module retrieves product information by using Retail Server APIs. The cart ID from the browser cookie is used to retrieve all the product information from Retail Server.
+The cart module retrieves product information by using Commerce Scale Unit APIs. The cart ID from the browser cookie is used to retrieve all the product information from Commerce Scale Unit.
 
 ## Add a cart module to a page
 

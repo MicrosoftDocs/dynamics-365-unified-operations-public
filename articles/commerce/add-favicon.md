@@ -5,7 +5,7 @@ title: Add a favicon
 description: This topic explains how to add a favicon to your site.
 author: bicyclingfool
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Add a favicon
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic explains how to add a favicon to your site.
@@ -68,6 +68,8 @@ To add a favicon to your site, use the same procedure that is used to add any ty
 [Add a logo](add-logo.md)
 
 [Select a site theme](select-site-theme.md)
+
+[Work with CSS override files](css-override-files.md)
 
 [Add a welcome message](add-welcome-message.md)
 

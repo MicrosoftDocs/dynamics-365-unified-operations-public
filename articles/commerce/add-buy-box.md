@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Buy box module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers buy box modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -73,9 +73,9 @@ Buy box modules have three settings that can be configured at **Site Settings \>
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
 - **Inventory buffer** – This property is used to specify a buffer number for inventory. Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, and the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
-## Retail server interaction
+## Commerce Scale Unit interaction
 
-The buy box module retrieves product information using Retail Server APIs. The product ID from the product details page is used to retrieve all information.
+The buy box module retrieves product information using Commerce Scale Unit APIs. The product ID from the product details page is used to retrieve all information.
 
 ## Add a buy box module to a page
 

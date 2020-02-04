@@ -84,5 +84,4 @@ While most forms will work well with saved views, there are some areas that may 
      -  To avoid user confusion between form caption (such as “All customers”) and view name (such as “My customers”), consider renaming form captions to simply be the name of the corresponding entity. For example, instead of a form caption of “All customers” or “All sales orders”, the form caption would be modified to “Customers” and “Sales orders”. 
 
 ## Known issues
-- The QuickFilter condition is not being saved to the view definition.
 - Filtering done via custom filters, advanced filters, or sort (on pages where filters are supported on views) will not currently cause the view to appear dirty. However, if you filter via the grid column header or Filter pane, or if you perform an explicit personalization and then save your view, the custom filter, advanced filter, or sort query conditions will be saved to the view.  

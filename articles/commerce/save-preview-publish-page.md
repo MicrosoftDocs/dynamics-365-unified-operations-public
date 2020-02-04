@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Save, preview, and publish a page
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to save, preview, and publish a page in Microsoft Dynamics 365 Commerce.
@@ -105,3 +105,4 @@ To publish a URL, follow these steps.
 
 [Enrich a category landing page](enrich-category-page.md)
 
+[Verify page content accessibility](verify-accessibility.md)

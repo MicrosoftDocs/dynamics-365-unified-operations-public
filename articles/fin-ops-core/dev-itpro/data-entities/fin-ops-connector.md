@@ -5,7 +5,7 @@ title: Application Connector
 description: This topic provides information about the Application Connector for Microsoft Power Automate and Logic Apps.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/05/2019
+ms.date: 01/09/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -31,6 +31,9 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 
 The application connector allows Microsoft Power Automate, Power Apps, Data Integrator, and Logic Apps to integrate with Finance and Operations. An external application can use the available trigger and actions to integrate with them.
+
+> [!IMPORTANT]
+> The Application Connector cannot be used for integrations with Dynamics 365 Finance + Operations (on-premises) instances.
 
 ## Prerequisites
 We recommend that you read the following topics as a prerequisite to familiarize yourself with connectors before proceeding further
