@@ -32,12 +32,11 @@ ms.dyn365.ops.version: Version 1611
 
 # Create curated product recommendation lists
 
-
 [!include [banner](includes/banner.md)]
 
 This topic explains how merchandizers can create and manage manual product lists for Microsoft Dynamics 365 Commerce customers.
 
-Curated lists are collections of individual content created and curated by people.  
+Curated lists are collections of individual content, created and curated by people.  
 
 ## Create a new list
 
@@ -64,3 +63,5 @@ To create a curated product recommendation list, follow these steps.
 [Enable product recommendations](enable-product-recommendations.md)
 
 [Add product recommendation lists to pages](add-reco-list-to-page.md)
+
+[Product collection module overview](product-collection-module-overview.md)
