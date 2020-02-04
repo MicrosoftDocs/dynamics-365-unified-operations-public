@@ -130,7 +130,7 @@ For more information about how to set up electronic messaging functionality, see
     | Field name       | Description                 | Field value |
     |------------------|-----------------------------|-------------|
     | CorrectionNumber | Номер коррекции             | Enter the number of the correction for a corrective declaration. |
-    | ReportingDate    | Отчетная дата для коррекции | Enter the reporting date for a corrective declaration. The calculation of cells on financial reports considers transactions of the base period and all later transactions, up to the reporting date, that correct the base period. |
+    | ReportingDate    | Отчетная дата для коррекции | Enter the reporting date for a corrective declaration. The calculation of cells on financial reports considers transactions of the base period and all later transactions, up through the reporting date, that correct the base period. |
 
 7. On the **Messages** FastTab, select **Update status**.
 8. In the **Run processing** dialog box, select **OK**.
