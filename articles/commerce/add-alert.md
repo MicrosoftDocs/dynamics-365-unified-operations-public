@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Alert module
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic covers alert modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -79,10 +78,6 @@ To add an alert module to a page and set the required properties, follow these s
 [Carousel module](add-carousel.md)
 
 [Content rich block module](add-content-rich-block.md)
-
-[Content placement module](add-content-placement-modules.md)
-
-[Feature module](add-feature-module.md)
 
 [Hero module](add-hero-module.md)
 
