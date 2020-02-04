@@ -31,7 +31,6 @@ ms.dyn365.ops.version:
 
 # Provision a Dynamics 365 Commerce preview environment
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 This topic explains how to provision a Dynamics 365 Commerce preview environment.
