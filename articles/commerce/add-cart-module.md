@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Cart module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic covers cart modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
@@ -70,9 +70,9 @@ Cart modules have three settings that can be configured:
 - **Inventory check** – When the value is set to **True**, an item is added to the cart only after the buy box module makes sure that it's in stock. This inventory check is done both for scenarios where the item will be shipped and for scenarios where it will be picked up in the store. If the value is set to **False**, no inventory check is done before an item is added to the cart and the order is placed.
 - **Inventory buffer** – Inventory is maintained in real time, and when many customers place orders, it can be difficult to maintain an accurate inventory count. Therefore, a buffer can be defined for inventory. When an inventory check is done, if the inventory is less than the buffer amount, the product is treated as out of stock. Therefore, when sales occur quickly through several channels, so that the inventory count isn't fully synced, there is less risk that an item that is out of stock will be sold.
 
-## Retail Server interaction
+## Commerce Scale Unit interaction
 
-The cart module retrieves product information by using Retail Server APIs. The cart ID from the browser cookie is used to retrieve all the product information from Retail Server.
+The cart module retrieves product information by using Commerce Scale Unit APIs. The cart ID from the browser cookie is used to retrieve all the product information from Commerce Scale Unit.
 
 ## Add a cart module to a page
 

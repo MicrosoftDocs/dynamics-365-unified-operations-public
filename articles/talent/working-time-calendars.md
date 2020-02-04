@@ -2,7 +2,7 @@
 # required metadata
 
 title: Working time calendars
-description: This topic describes working time calendars in Dynamics 365 Talent - Core HR as well as how to set up calendars.
+description: This topic describes working time calendars in Dynamics 365 Human Resources as well as how to set up calendars.
 author: andreabichsel
 manager: AnnBe
 ms.date: 09/12/2018

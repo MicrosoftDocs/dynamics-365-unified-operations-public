@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create a retail functionality profile
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to create a retail functionality profile in Microsoft Dynamics 365 Commerce.
@@ -61,10 +61,10 @@ The following image shows an example retail functionality profile.
 
 ## Additional resources
 
-[Info codes and info code groups](../retail/info-codes-retail.md?toc=/dynamics365/commerce/toc.json)  		  
+[Info codes and info code groups](info-codes-retail.md)  		  
 
 [Create new address book](new-address-book.md) 
 
-[Screen layout overview](../retail/pos-screen-layouts.md?toc=/dynamics365/commerce/toc.json)		  
+[Screen layout overview](pos-screen-layouts.md)		  
 
-[Configure and install Retail hardware station](../retail/retail-hardware-station-configuration-installation.md?toc=/dynamics365/commerce/toc.json) 
+[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) 

@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> This functionality is available to targeted users as part of a preview release. The content and functionality are subject to change. For more information about preview features, see [Manage features](../hr-admin-manage-features.md).

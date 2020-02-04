@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Ways to add content
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic provides information about how to add and manage content on your Microsoft Dynamics 365 Commerce site.
