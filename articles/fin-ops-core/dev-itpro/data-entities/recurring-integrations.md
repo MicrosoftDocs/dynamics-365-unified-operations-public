@@ -104,7 +104,7 @@ The following set of APIs is used to exchange data between the integration clien
 ### API for import (enqueue)
 Make an HTTP POST call against the following URL.
 
-```
+```Console
 https://<base URL>/api/connector/enqueue/<activity ID>?entity=<entity name>
 ```
 
@@ -112,7 +112,7 @@ In the message body, you can the pass the data as a memory stream.
 
 **Example**
 
-```
+```Console
 POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/enqueue/%7B6D31E09F-0249-459F-94F0-AAD9C2C47B64%7D?entity=Customer%20Groups
 ```
 
@@ -123,13 +123,13 @@ To get the activity ID, on the **Manage scheduled data jobs** page, in the **ID*
 ### API for export (dequeue)
 To return a data package that contains all the data entities that were defined in the data project, and that the client application can unzip and consume, use the following structure.
 
-```
+```Console
 https://<base URL>/api/connector/dequeue/<activity ID>
 ```
 
 **Example**
 
-```
+```Console
 GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
 ```
 
@@ -143,13 +143,13 @@ Use the following API.
 > [!NOTE]
 > The body of the response of **/dequeue** must be sent in the body of the **/ack** POST request.
 
-```
+```Console
 https://<base URL>/api/connector/ack/<activity ID>
 ```
 
 **Example**
 
-```
+```Console
 POST https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/ack/%7BC03BB937-09ED-46DE-86EE-4520D7D7E373%7D
 ```
 > [!NOTE] 
@@ -160,7 +160,7 @@ The API to get the status of a message is available as of hotfix KB 4058074 for 
 
 **Example**
 
-```
+```Console
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetMessageStatus
 BODY
 {
@@ -188,12 +188,10 @@ The following table lists the possible status values.
 ### API to get the list of execution errors
 GetExecutionErrors can be used to get the list of errors in a job execution. The API takes the Execution ID as the parameter, and returns a set of error messages in a JSON list.
 
-```
-
+```Console
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionErrors
 BODY
 {"executionId":"<executionId>"}
-
 ```
 
 ## Tips and tricks
