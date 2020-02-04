@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail peripherals
-description: This topic explains the concepts that are related to commerce peripherals. 
+title: Peripherals
+description: This topic explains the concepts that are related to Commerce peripherals. 
 author: rubencdelgado
 manager: AnnBe
 ms.date: 01/16/2019
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Version 1611
 
 ---
 
-# Retail peripherals
+# Peripherals
 
 [!include [banner](includes/banner.md)]
 
-This topic explains the concepts that are related to commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This topic explains the concepts that are related to Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Concepts
 
@@ -49,9 +49,9 @@ Navigation: Click **Retail and Commerce** &gt; **Channel setup** &gt; **POS setu
 
 A device is an entity that represents a physical instance of a device that is mapped to a POS register. When a device is created, it's mapped to a POS register. The device entity tracks information about when a POS register is activated, the type of client that is being used, and the application package that has been deployed to a specific device. 
 
-Devices can be mapped to the following application types: Retail Modern POS, Retail Cloud POS, Retail Modern POS – Windows Phone, Retail Modern POS – Android, and Retail Modern POS – iOS.
+Devices can be mapped to the following application types: Modern POS, Cloud POS, Modern POS – Windows Phone, Modern POS – Android, and Modern POS – iOS.
 
-### Retail Modern POS
+### Modern POS
 
 Modern POS is the POS program for Microsoft Windows. It can be deployed on Windows 10 operating systems (OSs).
 

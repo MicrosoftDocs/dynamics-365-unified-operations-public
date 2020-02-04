@@ -65,7 +65,7 @@ This field is labeled **Discount** and holds a unique ID for each discount. It's
 
 ### Discount name
 
-This field is a short free text field that is used to describe the discount. The string value in this field is shown in the MPOS and CPOS cart line and printed on Retail Modern Point of Sale (MPOS) and Cloud POS (CPOS) customer receipts. Therefore, your cashiers and end customers will see this description. It is the primary means for MPOS/CPOS users and customers to know which discount was applied.
+This field is a short free text field that is used to describe the discount. The string value in this field is shown in the MPOS and CPOS cart line and printed on Modern Point of Sale (MPOS) and Cloud POS (CPOS) customer receipts. Therefore, your cashiers and end customers will see this description. It is the primary means for MPOS/CPOS users and customers to know which discount was applied.
 
 ### Discount type
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce Data Exchange and retail channel communications
+title: Commerce Data Exchange and commerce channel communications
 description: This topic provides an overview of Commerce Data Exchange and its components. It explains the part that each component plays in the transfer of data between Microsoft Dynamics 365 Commerce Headquarters and channels.
 author: athinesh99
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Commerce Data Exchange and retail channel communications
+# Commerce Data Exchange and commerce channel communications
 
 [!include [banner](../includes/banner.md)]
 

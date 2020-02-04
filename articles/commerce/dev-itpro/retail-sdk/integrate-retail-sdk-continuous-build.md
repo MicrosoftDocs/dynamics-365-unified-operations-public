@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Merge the build systems for Retail and Finance
+title: Merge the build systems for Commerce and Finance
 description: This topic describes the steps for merging the build systems for both Dynamics 365 Commerce and Dynamics 365 Finance using Azure DevOps.  
 author: andreash1
 manager: AnnBe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Merge the build systems for Retail and Finance
+# Merge the build systems for Commerce and Finance
 
 [!include [banner](../../includes/banner.md)]
 

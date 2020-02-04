@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Advance invoices for Retail for Eastern Europe
+title: Advance invoices for Commerce for Eastern Europe
 description: This topic explains how to set up advance notices for Commerce for Eastern Europe. 
 author: epopov
 manager: annbe
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 ---
 
-# Advance invoices for Retail for Eastern Europe
+# Advance invoices for Commerce for Eastern Europe
 
 [!include [banner](../includes/banner.md)]
 

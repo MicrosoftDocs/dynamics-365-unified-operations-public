@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Update code and environments for Retail projects
+title: Update code and environments for Commerce projects
 description: This topic describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail 7.3
 ---
 
 
-# Update code and environments for Retail projects
+# Update code and environments for Commerce projects
 
 [!include [banner](../../includes/banner.md)]
 
@@ -183,7 +183,7 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
     - After deployment, does LCS show the expected deployment history together with the correct package names?
     - After deployment, do the LCS environment page and Commerce show the correct and expected version numbers?
-    - Can Retail Modern Point of Sale (MPOS) offline mode be used during downtime of Commerce? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
+    - Can Modern Point of Sale (MPOS) offline mode be used during downtime of Commerce? Package deployments will cause downtime. If MPOS offline mode can be used, have you tested the procedure? (To test the procedure, go offline, deploy, go online, synchronize offline transactions, and update MPOS.)
     - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
     - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
     - The "Initialize Commerce scheduler" job should be run.
@@ -196,6 +196,6 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
 ## Additional resources
 
-[Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
+[Set up new environments, Azure DevOps, and branches for Commerce projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
 [Testing and performance issues](./retail-implementation-testing-performance.md)

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Add custom controls to Retail Modern POS (MPOS) transaction pages
+title: Add custom controls to Modern POS (MPOS) transaction pages
 description: This topic explains how to add a new custom control on a transaction page by using the screen layout designer.
 author: mugunthanm
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Add custom controls to Retail Modern POS (MPOS) transaction pages
+# Add custom controls to Modern POS (MPOS) transaction pages
 
 [!include [banner](../../includes/banner.md)]
 
@@ -41,7 +41,7 @@ You can add more information to a transaction page by using custom controls. You
 ## Add a new custom control
 
 1. Sign in to Dynamics 365 Commerce.
-2. Select **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+2. Select **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
 3. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
 4. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
 5. If you're prompted to install the designer tool, select **Open**, and follow the installation instructions.
@@ -59,7 +59,7 @@ You can add more information to a transaction page by using custom controls. You
 
 10. Close the designer by selecting the **Close** button (**X**).
 11. When you're prompted to save your changes, select **Yes**. If you select **No**, your changes won't be saved.
-12. Select **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+12. Select **Retail** > **Retail IT** > **Distribution schedule**.
 13. Select the **Registers (1090)** job, and then select **Run now**.
 
 ## Add business logic to the custom control
@@ -405,7 +405,7 @@ You can add more information to a transaction page by using custom controls. You
 
 ## Validate the customization
 
-1. Sign in to Retail Modern POS by using **000160** as the operator ID and **123** as the password.
+1. Sign in to Modern POS by using **000160** as the operator ID and **123** as the password.
 2. On the **Welcome** screen, select the **Current transaction** button.
 3. Add any item to the transaction, and then select the line item that you added.
 

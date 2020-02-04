@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Retail Modern POS (MPOS) triggers and printing
-description: You can use triggers to capture events that occur before and after any Retail Modern POS operations. 
+title: Modern POS (MPOS) triggers and printing
+description: You can use triggers to capture events that occur before and after any Modern POS operations. 
 author: mugunthanm
 manager: AnnBe
 ms.date: 01/17/2020
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 ---
 
-# Retail Modern POS (MPOS) triggers and printing
+# Modern POS (MPOS) triggers and printing
 
 [!include [banner](../../includes/banner.md)]
 

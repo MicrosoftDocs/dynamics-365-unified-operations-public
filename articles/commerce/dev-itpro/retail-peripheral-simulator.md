@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Peripheral simulator for Retail
+title: Peripheral simulator for Commerce
 description: This topic describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
 author: rubencdelgado
 manager: AnnBe
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 ---
 
-# Peripheral simulator for Retail
+# Peripheral simulator for Commerce
 
 [!include [banner](../includes/banner.md)]
 
@@ -151,7 +151,7 @@ Several operations at the POS can cause the cash drawer to open. Most operations
 The peripheral simulator provides robust support for virtual MSR operations by working in either OPOS mode or keyboard wedge mode. OPOS mode requires that the MSR be configured in the hardware profile to work as an OPOS device. Keyboard wedge mode just sends keyboard wedge data events to Microsoft Windows. Besides differences in setup, OPOS and keyboard wedge modes differ in the following ways:
 
 - The POS client enables OPOS MSR devices for specific scenarios, such as scenarios that allow for magnetic stripe data for loyalty or gift card entry.
-- In keyboard wedge mode, the peripheral simulator sends keyboard wedge data to the field that is active when the data is sent. This behavior resembles the behavior that occurs if the data is entered by using a keyboard. To use the MSR as a keyboard wedge, the user must switch to Retail Modern POS (MPOS) to make sure that data is received in the correct field. Therefore, you can configure a delay, so that the user has time to make sure that the data will be sent to the correct field.
+- In keyboard wedge mode, the peripheral simulator sends keyboard wedge data to the field that is active when the data is sent. This behavior resembles the behavior that occurs if the data is entered by using a keyboard. To use the MSR as a keyboard wedge, the user must switch to Modern POS (MPOS) to make sure that data is received in the correct field. Therefore, you can configure a delay, so that the user has time to make sure that the data will be sent to the correct field.
 
 #### Testing gift and payment card swipes
 

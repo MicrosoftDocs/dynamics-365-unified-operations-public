@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create retail deployable packages
-description: This topic explains how to create a retail deployable package for Microsoft Dynamics 365 Commerce.
+title: Create deployable packages
+description: This topic explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 manager: AnnBe
 ms.date: 01/06/2020
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Create retail deployable packages
+# Create deployable packages
 
 [!include [banner](../../includes/banner.md)]
 

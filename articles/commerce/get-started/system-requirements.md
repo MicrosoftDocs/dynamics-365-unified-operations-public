@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# System requirements for Retail client components
+# System requirements for cloud deployments
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,9 +51,9 @@ To find the latest release for each web browser, go to the software manufacturer
 > - The Workflow Editor and Report Designer for Financial reporting are started as ClickOnce applications. They require a 64-bit-compatible operating system. Only Microsoft Edge and Internet Explorer (on a supported version of Microsoft Windows) support ClickOnce applications out of the box. If you're using Chrome, you must install a ClickOnce extension, such as [Meta4](https://chrome.google.com/webstore/detail/meta4-clickonce-launcher/jkncabbipkgbconhaajbapbhokpbgkdc) to use ClickOnce applications. If you use Chrome in incognito mode, make sure that the ClickOnce extension is also enabled for incognito mode.
 > - To preview PDF files, we recommend that you use browsers such as Microsoft Edge (latest publicly available version) on Windows 10, or Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet.
 
-### Supported web browsers for Retail Cloud POS
+### Supported web browsers for Cloud POS
 
-Retail Cloud point of sale (POS) can run in any of the following web browsers that run on the specified operating systems:
+Cloud point of sale (POS) can run in any of the following web browsers that run on the specified operating systems:
 
 - Microsoft Edge (latest publicly available version) on Windows 10
 - Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7
@@ -84,34 +84,34 @@ The following Microsoft Office applications are supported:
 
 It is critical to perform proper performance testing prior to going live in production. The following are considered minimum system requirements for applications to function. To achieve desired performance, consider concepts like data volumes, transactional load per hour, and customization impact. Proper performance testing both early into implementation and again prior to final testing will allow for any necessary performance improvements to be made and to validate that the base solution meets the expected operation times required.
 
-## Retail Modern POS for Windows requirements
+## Modern POS for Windows requirements
 
 > [!NOTE]
-> - If Retail Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available. It is recommended to have no less than 20 GB of disk space available. An offline database for Retail Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
-> - Starting August 1, 2019, Retail Modern POS and other client-side components require that the Microsoft .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
+> - If Modern POS will use an offline database, the computer must meet all system requirements for Microsoft SQL Server and the system must have no less than 10 GB of disk space available. It is recommended to have no less than 20 GB of disk space available. An offline database for Modern POS requires SQL Server 2014 with Service Pack 3 or later, SQL Server 2016 with Service Pack 2, SQL Server 2017, or newer. The SQL Server version used must have the Full-Text Search feature installed. We recommend that you always use the latest version that is available, and that you install all the latest service packs. By following these recommendations, you can help to ensure both compatibility and security.
+> - Starting August 1, 2019, Modern POS and other client-side components require that the Microsoft .NET Framework version 4.7.1 or later be installed. For installation instructions, see [Install the .NET Framework for developers](https://msdn.microsoft.com/library/5a4x27ek(v=vs.110).aspx).
 
 ### Supported Windows operating systems
 
-- Retail Modern POS is a 32-bit application, but it will run on both x86 and x64 architectures.
-- Retail Modern POS is supported on Windows Server 2016, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise Long Term Service Branch (LTSB), and Windows 10 IOT Enterprise editions. At a minimum, the Windows 10 Anniversary Update (version 1607), build 14393, must be installed.
-- It is not recommended to use Retail Modern POS and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
-- It is not recommended to use Retail Modern POS and any other Commerce component together on the same computer.
+- Modern POS is a 32-bit application, but it will run on both x86 and x64 architectures.
+- Modern POS is supported on Windows Server 2016, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise Long Term Service Branch (LTSB), and Windows 10 IOT Enterprise editions. At a minimum, the Windows 10 Anniversary Update (version 1607), build 14393, must be installed.
+- It is not recommended to use Modern POS and other Commerce components on Windows 10 Pro unless within a domain as Windows 10 Pro doesn't allow for advanced management of updates to the operating system.
+- It is not recommended to use Modern POS and any other Commerce component together on the same computer.
 
 ### Minimum system requirements
 
 - The minimum supported effective resolution for POS Full layout (PCs and tablets) is 1,024 × 768 (recommended 1366 x 768 or greater)
 - The minimum supported effective resolution for POS Compact layout (phones and small tablets) is 320 x 568 (recommended 360x640 or greater)
-- The computer that Retail Modern POS runs on must meet these requirements:
+- The computer that Modern POS runs on must meet these requirements:
 
     - It must have, at a minimum, a dual-core processor that runs at no less than 2 gigahertz (GHz).
     - It must have, at a minimum, 3 gigabytes (GB) of random-access memory (RAM). When combining with SQL Server for offline, no less than 4 GB of RAM is required.
     - It must have internet access.
 
-## Retail Modern POS for Apple iPhone or iPad requirements
+## Modern POS for Apple iPhone or iPad requirements
 
 - iOS 11 or later
 
-## Retail Modern POS for Android phone or tablet requirements
+## Modern POS for Android phone or tablet requirements
 
 - Android OS 6.0 or later
 

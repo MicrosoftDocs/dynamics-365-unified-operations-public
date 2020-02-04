@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Customer orders in Retail Modern POS (MPOS)
-description: This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
+title: Customer orders in Modern POS (MPOS)
+description: This topic provides information about customer orders in Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Customer orders in Retail Modern POS (MPOS)
+# Customer orders in Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about customer orders in Retail Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
+This topic provides information about customer orders in Modern POS (MPOS). Customer orders are also known as special orders. The topic includes a discussion of related parameters and transaction flows.
 
 In an omni-channel commerce world, many retailers provide the option of customer orders, or special orders, to meet various product and fulfillment requirements. Here are some typical scenarios:
 
@@ -61,7 +61,7 @@ Here are some of the parameters that can be set on the **Commerce parameters** p
 
 ## Transaction flow for customer orders
 
-### Create a customer order in Retail Modern POS
+### Create a customer order in Modern POS
 
 1. Add a customer to the transaction.
 2. Add products to the cart.

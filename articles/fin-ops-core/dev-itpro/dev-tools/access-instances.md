@@ -237,7 +237,7 @@ After the user is provisioned as an administrator, that user can access the inst
 
 The URL of the POS app is: <https://usnconeboxax1pos.cloud.onebox.dynamics.com/> 
 
-The URL of the Retail Cloud POS app is: `https://usnconeboxax1pos.cloud.onebox.dynamics.com` After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a Retail POS device in this environment.
+The URL of the Cloud POS app is: `https://usnconeboxax1pos.cloud.onebox.dynamics.com` After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a POS device in this environment.
 
 -   Cashier user ID: **000160**
 -   Cashier password: **123**

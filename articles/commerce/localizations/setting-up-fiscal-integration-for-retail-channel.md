@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up the fiscal integration for Retail channels
+title: Set up the fiscal integration for Commerce channels
 description: This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
 author: josaw
 manager: annbe
@@ -27,13 +27,13 @@ ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
 
 ---
-# Set up the fiscal integration for Retail channels
+# Set up the fiscal integration for Commerce channels
 
 [!include [banner](../includes/banner.md)]
 
 ## Introduction
 
-This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. For more information about the fiscal integration, see [Overview of fiscal integration for Retail channels](fiscal-integration-for-retail-channel.md).
+This topic provides guidelines for setting up the fiscal integration functionality for Commerce channels. For more information about the fiscal integration, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md).
 
 The process of setting up the fiscal integration includes the following tasks:
 

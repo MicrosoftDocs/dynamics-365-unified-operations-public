@@ -82,7 +82,7 @@ This topic explains how to configure, download, and install Retail hardware stat
 5. In the **Hardware station type** field, select **Shared** to indicate that this hardware station is an Internet Information Services (IIS), installed hardware station that will be used by external point of sale (POS) systems.
 
     > [!NOTE]
-    > The value **Shared** signifies that the installation is a truly shared hardware station installation, and that it works through HTTPS communication. By contrast, the value **Dedicated** signifies that the hardware station is a part of Retail Modern POS, and that it works through inter-process communication.
+    > The value **Shared** signifies that the installation is a truly shared hardware station installation, and that it works through HTTPS communication. By contrast, the value **Dedicated** signifies that the hardware station is a part of Modern POS, and that it works through inter-process communication.
 
 6. Follow one of these steps, depending on the version that you're running:
 
@@ -204,11 +204,11 @@ Current security standards state that the following options should be set in a p
 
 ## Troubleshooting
 
-### Retail Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
+### Modern POS can detect the hardware station in its list for selection, but it can't complete the pairing
 
 **Solution:** Verify the following list of potential failure points:
 
-- The computer that is running Retail Modern POS trusts the certificate that is used on the computer that runs Retail hardware station.
+- The computer that is running Modern POS trusts the certificate that is used on the computer that runs Retail hardware station.
 
     - To verify this setup, in a web browser, go to the following URL: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
     - This URL uses a ping to verify that the computer can be accessed, and the browser indicates whether the certificate is trusted. (For example, in Internet Explorer, a lock symbol appears in the address bar. When you select this symbol, Internet Explorer verifies whether the certificate is currently trusted. You can install the certificate on the local computer by viewing the details of the certificate that is shown.)
@@ -216,11 +216,11 @@ Current security standards state that the following options should be set in a p
 - On the computer that runs Retail hardware station, the port that will be used by the hardware station is opened in the firewall.
 - Retail hardware station has properly installed merchant account information through the Install merchant information tool that runs at the end of the Retail hardware station installer.
 
-### Retail Modern POS can't detect the hardware station in its list for selection
+### Modern POS can't detect the hardware station in its list for selection
 
 **Solution:** Any one of the following factors can cause this issue:
 
-- Retail hardware station hasn't been set up correctly in Retail headquarters. Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.
+- Retail hardware station hasn't been set up correctly in Commerce headquarters. Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.
 - The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
 - The hardware station isn't accessible from that computer. Verify that the hardware station URL ping test is accessible from a web browser. This URL can be found at the end of the hardware station installer and is in the following form: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
 

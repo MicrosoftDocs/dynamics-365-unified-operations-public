@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Retail components
+title: Commerce components
 description: This topic describes the various components that make up Dynamics 365 Commerce.
 author: sericks007
 manager: AnnBe
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
-# Retail components
+# Commerce components
 
 [!include [banner](includes/banner.md)]
 
@@ -54,11 +54,11 @@ Commerce provides mid-market and large retailers with a complete head office and
 </td>
 </tr>
 <tr>
-<td>Retail POS</td>
+<td>Point of sale (POS)</td>
 <td>Commerce supports two types of POS experience:
 <ul>
 <li><strong>Cloud POS</strong> is a browser-based POS that can be used on mobile devices.</li>
-<li><strong>Retail Modern POS</strong> (MPOS) can be used on clients such as PCs, tablets, and phones to process sales transactions, customer orders, and daily operations, and to perform inventory management.</li>
+<li><strong>Modern POS</strong> (MPOS) can be used on clients such as PCs, tablets, and phones to process sales transactions, customer orders, and daily operations, and to perform inventory management.</li>
 </ul>
 </td>
 </tr>

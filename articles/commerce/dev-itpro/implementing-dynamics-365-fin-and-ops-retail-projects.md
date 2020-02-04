@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Implement Retail projects
+title: Implement Commerce projects
 description: This topic describes recommended practices for Microsoft Dynamics 365 Commerce implementation projects.
 author: Andreash1
 manager: AnnBe
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Retail 7.3
 ---
 
 
-# Implement Retail projects
+# Implement Commerce projects
 
 [!include [banner](../../includes/banner.md)]
 
@@ -41,6 +41,6 @@ The information focuses on implementations of Finance and Operations apps that i
 
 [Set up new environments, Azure DevOps, and branches for Retail projects](./new-environments-visual-studio-teams-branch-retail-projects.md)
 
-[Update code and environments for Retail projects](./updating-environments.md)
+[Update code and environments for Commerce projects](./updating-environments.md)
 
 [Testing and performance issues](./retail-implementation-testing-performance.md)

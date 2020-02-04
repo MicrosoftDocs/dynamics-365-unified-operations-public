@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Saving online payment instruments with the Adyen connector
 
-[!include [banner](../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
 This topic describes the setup and functionality that are related to saving payment instruments when you use the Adyen "card not present" payment connector for the Dynmics e-Commerce platform. 
@@ -61,7 +61,7 @@ The List PI capability requires the following elements:
 - A payment connector that is compatible with the List PI capability
 - A payment processor that maps unique customer IDs to the payment instruments that the customers want that payment processor to save
 
-For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Retail for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+For more information about how to implement payment connectors and the software development kit (SDK) in general, visit the [Commerce for IT pros and developers home page](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 ## Setup
 

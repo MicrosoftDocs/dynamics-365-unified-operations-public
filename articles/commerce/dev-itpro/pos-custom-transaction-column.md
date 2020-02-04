@@ -40,7 +40,7 @@ This topic explains how to add a new custom column to a POS transaction page usi
 
 ## Add a custom column to the page
 1. Sign in to Dynamics 365 Commerce.
-2. Navigate to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
+2. Navigate to **Retail** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**. Or, search for **Screen layout** in the search bar.
 3. Select the **F3MGR** screen layout ID and click the **Designer** button in the action bar.
 4. Follow the instructions if prompted to install and enter the Azure Active Directory (AAD) credentials to launch the designer.
 5. Select **1440x960 – Full layout** from the layout sizes and click the **Layout designer** button.

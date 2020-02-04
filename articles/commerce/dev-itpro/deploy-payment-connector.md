@@ -51,7 +51,7 @@ A payment provider or a payment ISV creates a payment connector. The payment con
 
 -   **IPaymentProcessor Assemblies** – This folder contains the assembly that implements the IPaymentProcessor interface, and its dependent assemblies.
 -   **Payment Web Files** – This folder contains the callback HTML, JavaScript, or CSS files that are required in order to enable the payment accepting page. Payment connector developers will provide these web files if their payment accepting page requires them.
--   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies. These assemblies are used in Hardware station and Retail Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don't have a payment terminal device, you don't need these files.
+-   **IPaymentDevice Assemblies** – This folder contains the assembly that implements the IPaymentDevice interface and payment request handlers, and the interface's dependent assemblies. These assemblies are used in Hardware station and Modern Point of Sale (Modern POS) to communicate with payment terminal devices, such as VeriFone MX925. If you don't have a payment terminal device, you don't need these files.
 
 To package the payment connector files, the payment provider or payment ISV must copy the payment assemblies to the correct folder in ...\\RetailSDK\\PaymentExternals. After the payment assemblies are copied, use **msbuild** from the root of the Retail SDK folder to generate the deployable packages. After the **msbuild** operation is completed, you can find the following deployable package in ...\\RetailSDK\\Packages\\RetailDeployablePackage. In versions that are earlier than AX 7.0, the deployable package will be in \\RetailSDK\\Packages\\.
 
@@ -101,7 +101,7 @@ After you've uploaded your deployable packages to the LCS asset library, you can
 
 #### Download and run installers on client computers
 
-The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Configure, install, and activate Retail Modern POS (MPOS)](../retail-modern-pos-device-activation.md).
+The self-service package contains the installers for both Hardware station and Modern POS. After your deployable packages have been applied to your environment, you can download the updated Hardware station and Modern POS installers. For information about how to download Hardware station and Modern POS, and install them on client computers, see [Configure, install, and activate Modern POS (MPOS)](../retail-modern-pos-device-activation.md).
 
 ## Manual deployment
 This section describes how to manually deploy a payment connector. You can use a manual deployment to test locally in a developer environment. This developer environment can be either cloud-hosted or on a downloadable virtual hard disk (VHD).

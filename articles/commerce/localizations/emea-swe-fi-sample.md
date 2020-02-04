@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.7
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This sample fiscal integration functionality replaces the earlier [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the current sample, see the [Migrating from the earlier integration sample](#migrating-from-the-earlier-integration-sample) section.
+> This sample fiscal integration functionality replaces the earlier [Sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the current sample, see the [Migrating from the earlier integration sample](#migrating-from-the-earlier-integration-sample) section.
 
 ## Introduction
 
@@ -359,7 +359,7 @@ The configuration file is in the **Configuration** folder of the extension proje
 
 ## Migrating from the earlier integration sample
 
-If you're using the earlier [Sample for Retail POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you might have to migrate from it to the current integration sample. To uptake the change and receive timely updates for the features for Sweden in the future, you might have to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The earlier integration sample and your customizations will continue to work if no changes are made from your side. Therefore, you can plan, prepare for, and do the uptake for your environment.
+If you're using the earlier [Sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md), you might have to migrate from it to the current integration sample. To uptake the change and receive timely updates for the features for Sweden in the future, you might have to upgrade, make minor code and configuration adjustments in the extensions that you built, and rebuild your solutions. No major changes are required in the extension logic that you created. The earlier integration sample and your customizations will continue to work if no changes are made from your side. Therefore, you can plan, prepare for, and do the uptake for your environment.
 
 ### Migration process
 

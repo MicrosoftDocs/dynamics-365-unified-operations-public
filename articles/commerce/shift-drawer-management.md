@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shift and cash drawer management
-description: This topic explains how to set up and use shifts in retail point of sale (POS).
+description: This topic explains how to set up and use shifts in Commerce point of sale (POS).
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to set up and use shifts in retail point of sale (POS).
+This topic explains how to set up and use shifts in Commerce point of sale (POS).
 
 In Dynamics 365 Commerce, the term *shift* describes the collection of POS transactional data and activities between two points in time. For each shift, the amount of money that is expected is compared against the amount that was counted and declared.
 
@@ -75,7 +75,7 @@ For shared shifts to be used in a store, the cash drawer must be configured as a
 
 ## Shift and drawer operations
 
-Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Retail Modern POS and Cloud POS.
+Various operations can be performed to change the state of a shift, or to increase or decrease the amount of money in the cash drawer. This section describes these shift operations for Modern POS and Cloud POS.
 
 ### Open shift
 
