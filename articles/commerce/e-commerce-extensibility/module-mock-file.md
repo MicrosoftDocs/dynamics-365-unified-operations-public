@@ -5,7 +5,7 @@ title: Module mock file
 description: This topic covers the module mock file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-commerce
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: Release 10.0.5
 ---
 # Module mock file
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 This topic covers the module mock file in Microsoft Dynamics 365 Commerce.
@@ -45,20 +44,25 @@ Here is an example of a mock file.
 
 ```
 {
-    "id": "R1Module1",
-    "config": {
-        "imageAlignment": "left",
-        "productTitle": "Ethiopian Natural Limu",
-        "productDetails": "Every 12 oz bag of our coffee is small batch roasted per order to guarantee freshness. Available in a light or medium-dark roast.",
-        "productImage": {
-            "src" : "https://bit.ly/2LupO8u",
-            "altText" : "Ethiopian Natural Limu"
-        },
-        "buttonText": "Buy Now",
-        "productIds": "22565430170"
-    },
-    "typeName": "productFeature"
-}
+	"id": "R1Module1",
+	"config": {
+	    "imageAlignment": "left",
+	    "productTitle": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses",
+	    "productDetails": "High-quality and pioneered with the perfect blend of timeless classic and modern technology with hint of old school glamor.",
+	    "productImage": {
+		    "src": "https://bit.ly/33cMGxr",
+		    "altText": "Retro Horn Rimmed Keyhole Nose Bridge Round Sunglasses"
+	    },
+	    "buttonText": "Buy Now",
+	    "productIds": "68719498121"
+	},
+	"data": {
+	    "actionResponse": {
+		    "text": "Sample Action Response"
+	    }
+	},
+	"typeName": "product-feature"
+} 
 ```
 
 Several configuration properties are used to set values for configuration fields that are set in the module definition file. When modules are run on a production server, this data comes from the Microsoft Dynamics content management system (CMS) database, as configured by the page authors, instead of a mock file.
@@ -78,6 +82,8 @@ To render a module by using a different mock file, run the **yarn start** comman
 ## Additional resources
 
 [Module definition file](module-definition-file.md)
+
+[Module React component file](module-react-file.md)
 
 [Module view file](module-view-file.md)
 

@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 # Manage robots.txt files
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic describes how to manage robots.txt files in Microsoft Dynamics 365 Commerce.

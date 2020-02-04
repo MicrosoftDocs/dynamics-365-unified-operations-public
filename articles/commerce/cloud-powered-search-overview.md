@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 # Cloud-powered search overview
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.

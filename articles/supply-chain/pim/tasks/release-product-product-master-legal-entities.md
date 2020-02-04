@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure walks through how to release a product or product master into one or more legal entities. The demo data company used to create this task is USRT, and the task is intended for the Merchandising Manager and Product Designer.
 
-1. Go to Retail and commerce > .. > Products by category.
+1. Go to Retail and Commerce > .. > Products by category.
 2. In the list, mark the selected row.
 3. Click Release products.
 4. Click Next.

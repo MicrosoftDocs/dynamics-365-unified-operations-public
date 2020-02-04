@@ -53,7 +53,7 @@ This procedure shows how to find the price and/or discount for a product which i
 10. Close the page.
 
 ## Find the applicable discount
-    * Make sure the Customer account field contains customer number US-001   
+Make sure the Customer account field contains customer number US-001   
 1. In the Item number field, type 'T0012'.
     * Make sure the Quantity field is set to 1.  
     * The following pricing details shown for product T0012 come from one or more trade agreements: The unit price is 1,000 CAD and the discount percentage is 5.  

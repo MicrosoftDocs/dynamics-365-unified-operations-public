@@ -55,7 +55,7 @@ The developer experience is based on modern tooling using Visual Studio and .NET
 For more information, see [Develop and customize home page](dev-tools/developer-home-page.md).
 
 ## Administrator experience and Lifecycle Services
-Finance, Supply Chain Management, and Retail are cloud-hosted. As an IT professional, you can use Dynamics Lifecycle Services (LCS) to monitor and tune your environments, deploy features, and stay up to date with recent hotfixes. Within your deployment, you can configure security, and manage when processes run. You can also use LCS when you are called on to support business intelligence and reporting, mobile apps, Office, and other integrations. 
+Finance, Supply Chain Management, and Commerce are cloud-hosted. As an IT professional, you can use Dynamics Lifecycle Services (LCS) to monitor and tune your environments, deploy features, and stay up to date with recent hotfixes. Within your deployment, you can configure security, and manage when processes run. You can also use LCS when you are called on to support business intelligence and reporting, mobile apps, Office, and other integrations. 
 
 ## BI & reporting
 Finance and Operations provides five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
