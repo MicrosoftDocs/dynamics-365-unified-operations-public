@@ -2,7 +2,7 @@
 # required metadata
 
 title: Before you buy
-description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 for Finance and Operations.  
+description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
 author: kfend
 manager: AnnBe
 ms.date: 09/20/2019
@@ -33,15 +33,15 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 [!include [banner](../includes/banner.md)]
 
-New to Dynamics 365 for Finance and Operations? We've put together step-by-step guidance whether you're still evaluating Finance and Operations or ready to make a purchase.
+New to Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynmaics 365 Commerce? We've put together step-by-step guidance whether you're still evaluating or ready to make a purchase.
 
 ## Step one: Try out Finance and Operations free for 30 days
 
-You can try Dynamics 365 for Finance and Operations for 30 days through a simple email signup. The trial version of Finance and Operations includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
+You can try Dynamics 365 for Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce for 30 days through a simple email signup. The trial version of Finance and Operations applications includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [www.microsoft.com/dynamics365/operations](https://www.microsoft.com/dynamics365/operations).
 
 ## Step two: Choose a deployment option
 
-You can now deploy Microsoft Dynamics 365 for Finance and Operations in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
+You can now deploy Finance and Operations applications in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
 
 The following considerations must be taken when you choose on-premises as a deployment option:
 
@@ -51,7 +51,7 @@ The following considerations must be taken when you choose on-premises as a depl
 - [System requirements for on-premises deployments](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
-> On-premises deployments of Microsoft Dynamics 365 for Finance and Operations are not supported on any public cloud infrastructure, including Azure.
+> On-premises deployments of Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management or Dynamics 365 Commerce are not supported on any public cloud infrastructure, including Azure.
 
 For more information, see [Deployment options](../../dev-itpro/deployment/choose-deployment-type.md).
 
@@ -59,7 +59,7 @@ For more information, see [Deployment options](../../dev-itpro/deployment/choose
 
 To explore subscription options, go to the [Dynamics 365](https://www.microsoft.com/dynamics365/pricing) pricing page. This page includes several different plans to fit your organization's needs.
 
-There are many ways to buy a subscription of Dynamics 365 for Finance and Operations:
+There are many ways to buy a subscription:
 
 - Buy through a partner, and use volume licensing (cloud or on-premises)
 - Buy through a Cloud solution provider (cloud only)
@@ -71,7 +71,7 @@ There are two ways to buy a subscription for an on-premises deployment
 
 If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-In Volume Licensing, Finance and Operations is available through:
+In Volume Licensing, Finance and Operations applications are available through:
 
 - Enterprise Agreement
 - Enterprise Agreement Subscription
