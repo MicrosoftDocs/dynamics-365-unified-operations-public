@@ -247,13 +247,13 @@ To continue the process of provisioning and configuring your Commerce preview en
 
 ## Additional resources
 
-[Commerce preview environment overview](cpe-overview.md)
+[Dynamics 365 Commerce preview environment overview](cpe-overview.md)
 
-[Configure a Commerce preview environment](cpe-post-provisioning.md)
+[Configure a Dynamics 365 Commerce preview environment](cpe-post-provisioning.md)
 
-[Configure optional features for a Commerce preview environment](cpe-optional-features.md)
+[Configure optional features for a Dynamics 365 Commerce preview environment](cpe-optional-features.md)
 
-[Commerce preview environment FAQ](cpe-faq.md)
+[Dynamics 365 Commerce preview environment FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -263,4 +263,3 @@ To continue the process of provisioning and configuring your Commerce preview en
 
 [Dynamics 365 Commerce website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Help resources for Dynamics 365 Retail](../retail/index.md)
