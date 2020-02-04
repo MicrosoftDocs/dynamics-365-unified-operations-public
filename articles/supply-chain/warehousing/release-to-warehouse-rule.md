@@ -72,7 +72,7 @@ On activating the feature, each of your warehouses will have an initial setting 
 
 ## Try out the feature
 
-This section provides two demo scripts, which you can work through to get a feel for what this feature does and how to work with it.
+This section provides two demo scripts that you can work through to get a feel for what this feature does and how to work with it.
 
 ### Enable sample data
 
