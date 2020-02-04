@@ -125,8 +125,6 @@ To add a container player module to a new page and set the required properties, 
 
 [Content rich block module](add-content-rich-block.md)
 
-[Content placement module](add-content-placement-modules.md)
-
 [Buy box module](add-buy-box.md)
 
 [Cart module](add-cart-module.md)
